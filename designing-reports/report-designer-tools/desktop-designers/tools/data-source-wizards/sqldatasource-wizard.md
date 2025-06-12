@@ -5,7 +5,7 @@ description: "Learn more about the SqlDataSource Wizard of the Telerik Reporting
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview
 tags: overview
 published: True
-position: 1
+position: 10
 previous_url: /sqlDataSource-wizard,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview
 ---
 
@@ -37,4 +37,6 @@ The __SQL Data Source Wizard__ allows you to create a new or edit an existing __
 
 	> Specifying design time values for the parameters is necessary because the designer might need to execute the __SQL__ query or stored procedure of the data source to populate the schema displayed in the __Data Explorer__ tool window and the __Edit Expression__ dialog. These values do not affect the execution of the __SQL__ query at runtime, however.
 
-1. __Preview Data Source Results__ You can preview the result set returned by the __SqlDataSource__ before completing the wizard. Click *Execute Query* to execute the __SQL__ query or stored procedure and display the retrieved data. If the data source has parameters, the wizard displays a popup dialog before each preview, which allows you to enter the parameter values. This is the last step of the wizard. After pressing *"Finish"* the wizard will configure the __SqlDataSource__ component with the specified settings and close.
+1. __Preview Data Source Results__ You can preview the result set returned by the __SqlDataSource__ before completing the wizard. Click *Execute Query* to execute the __SQL__ query or stored procedure and display the retrieved data. If the data source has parameters, the wizard displays a popup dialog before each preview, which allows you to enter the parameter values.
+
+	By default, the preview grid shows the first few records of the data. In case the whole result set must be examined, this page provides an option to download the raw data from the provided data connection and save it in a  CSV format. This is the last step of the wizard. After pressing *"Finish"* the wizard will configure the __SqlDataSource__ component with the specified settings and close.

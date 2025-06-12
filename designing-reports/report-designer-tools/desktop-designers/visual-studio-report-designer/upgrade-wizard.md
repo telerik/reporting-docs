@@ -5,7 +5,7 @@ description: "Learn how the Upgrade Wizard can be used to upgrade a .NET Framewo
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard
 tags: upgrade,wizard
 published: True
-position: 3
+position: 31
 previous_url: /ui-upgrade-wizard
 ---
 

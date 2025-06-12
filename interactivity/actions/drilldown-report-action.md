@@ -5,7 +5,7 @@ description: "Learn how to allow end-users to dynamically hide or show report co
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action
 tags: drilldown,report,action
 published: True
-position: 2
+position: 20
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action, /designing-reports-interactivity-drill-down, /designing-reports-interactivity-how-to-add-drilldown-action 
 ---
 

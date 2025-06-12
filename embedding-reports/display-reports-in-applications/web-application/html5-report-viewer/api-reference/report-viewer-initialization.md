@@ -71,17 +71,16 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - `jQuery.fn.telerik_ReportVi
 
 ## Examples
 
-To create a ReportViewer:
+To initialize the HTML5 Report Viewer, you need to set at least a `serviceUrl` and a `reportSource` object:
 
 ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({
 	serviceUrl: "api/reports",
-	templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
 	reportSource: { report: "Product Catalog.trdp" }
 });
 ````
 
-To get the __ReportViewer__ object from the HTML element:
+To get the __ReportViewer__ object from the DOM, the following code may be used:
 
 ````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
@@ -89,5 +88,5 @@ var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})

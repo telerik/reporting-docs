@@ -13,7 +13,7 @@ previous_url: /asp-net-report-viewer, /embedding-reports/display-reports-in-appl
 
 This document provides a brief overview of the *legacy* ASP.NET WebForms Report Viewer.
 
-> Starting with the 2024 Q4 release, the ASP.NET WebForms Report Viewer will no longer be distributed with Telerik Reporting. We strongly recommend using its successor - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}), which includes the latest features, performance enhancements, and security improvements offered by both Microsoft and Telerik.
+> Starting with the [2024 Q4 release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the ASP.NET WebForms Report Viewer will no longer be distributed with Telerik Reporting. We strongly recommend using its successor - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}), which includes the latest features, performance enhancements, and security improvements offered by both Microsoft and Telerik.
 
 ## Purpose and Features
 
@@ -27,12 +27,12 @@ The ASP.NET Report Viewer has the following useful features:
 
 * Navigate back in history
 * Navigate forward in history
-* Go to first page
-* Go to previous page
+* Go to the first page
+* Go to the previous page
 * Go to a specific page
 * Total number of pages
-* Go to next page
-* Go to last page
+* Go to the next page
+* Go to the last page
 * Export: see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) for available export formats.
 * Refresh
 * Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.
@@ -44,7 +44,7 @@ The ASP.NET Report Viewer has the following useful features:
 
 The ASP.NET ReportViewer control is a composite of standard ASP.NET Web Server controls.
 
-> The ASP.NET ReportViewer comes with four predefined skins: `Default`, `WebBlue`, `Original` and `Office2007`. The ASP.NET ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer, you can use the ASP.NET ReportViewer [Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api%}).
+> The ASP.NET ReportViewer comes with four predefined skins: `Default`, `WebBlue`, `Original`, and `Office2007`. The ASP.NET ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer, you can use the ASP.NET ReportViewer [Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api%}).
 
 The purpose of the ASP.NET ReportViewer control is to display Telerik Reports and allow the user to interact with them. Reports are processed and rendered on the server. Reports and their content are delivered to the client through the `Telerik.ReportViewer.axd` handler.
 

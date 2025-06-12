@@ -1,11 +1,11 @@
 ---
-title: Failed to load API definition is displayed on the Swagger Generation page
-description: Swagger requires actions to have unique methods/paths.
+title: Swagger UI Generation Page Displays Errors
+description: "Learn why the Swagger UI generation tools such as NSwag and Swashbuckle may require special settings for Telerik Reporting."
 type: troubleshooting
-page_title: Conflicting method/path combination for actions in Swagger Generation
+page_title: Swagger UI Generation Conflicting method/path combination for Actions
 slug: conflicting-actions-error-in-swagger-generation-net-core
 position: 
-tags: .NET 5.0, .NET Core, WebReportDesigner
+tags: .NET 6.0, .NET Core, WebReportDesigner
 ticketid: 1543912
 res_type: kb
 ---
@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-`Failed to load API definition.` message is displayed on the Swagger Generation page(usually `localhost:port/swagger`). 
+A `Failed to load API definition.` message is displayed on the Swagger UI Generation page(usually at `https://localhost:port/swagger`). 
 
 There may also be a short error on the page about being unable to fetch `swagger.json`.
 
@@ -71,81 +71,40 @@ System.InvalidOperationException: The method 'get' on path '/api/ReportDesignerC
 
 ## Cause
 
-There is a confliction method/path in ReportDesignerController. Swagger requires actions to have unique methods/paths.
+There are conflicting methods/paths in the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) and [ReportDesignerController](/api/telerik.webreportdesigner.services.controllers.reportdesignercontrollerbase) controllers, as well as some `Obsolete` Actions. Swagger requires actions to have unique methods/paths, and by default - no `Obsolete` actions are accepted.
 
 ## Solution
 
 ### Swashbuckle
 
-- For .NET Core 3.1 and .NET 5, configure the Swagger Generation in **Startup.cs**:
+Configure the following Swagger UI Generation configuration in the **Program.cs**/**Startup.cs** file of the project:
 
 ````CSharp
-public void ConfigureServices(IServiceCollection services)
-{
-...
-	services.AddSwaggerGen(c => {
-		c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-		c.IgnoreObsoleteActions();
-		c.IgnoreObsoleteProperties();
-		c.CustomSchemaIds(type => type.FullName);
-		});
-		...
-}
-````
-
-- For .NET 6+, configure the Swagger Generation in **Program.cs**
-
-````CSharp
-builder.Services.AddSwaggerGen(c => {
-	c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-	c.IgnoreObsoleteActions();
-	c.IgnoreObsoleteProperties();
-	c.CustomSchemaIds(type => type.FullName);
+builder.Services.AddSwaggerGen(options => {
+	options.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+	options.IgnoreObsoleteActions();
+	options.IgnoreObsoleteProperties();
+	options.CustomSchemaIds(type => type.FullName);
 });
 ````
 
 ### NSwag
 
-Implement the `NSwag.Generation.Processors.IOperationProcessor` interface as follows and then use it in the `AddSwaggerGen` configuration:
+The [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) should work normally with **NSwag**. However, if the [ReportDesignerController](/api/telerik.webreportdesigner.services.controllers.reportdesignercontrollerbase) is used, it should be ignored by the Swagger generation tool by attaching to it the `[ApiExplorerSettings(IgnoreApi = true)]` attribute:  
 
 ````CSharp
-public class IncludeControllersInSwagger : IOperationProcessor
+[ApiExplorerSettings(IgnoreApi = true)]
+[Route("api/reportdesigner")]
+public class ReportDesignerController : ReportDesignerControllerBase
 {
-	public bool Process(OperationProcessorContext context)
-	{
-	return ShouldIncludeController(context.ControllerType);
-	}
-
-	bool ShouldIncludeController(System.Type type)
-	{
-		return !(type.AssemblyQualifiedName == typeof(Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase).AssemblyQualifiedName);
-	}
+    public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
+        : base(reportDesignerServiceConfiguration, reportServiceConfiguration)
+    {
+    }
 }
-````
-
-- For .NET Core 3.1 and .NET 5, configure the Swagger Generation in **Startup.cs**:
-
-````CSharp
-public void ConfigureServices(IServiceCollection services)
-{
-...
-	services.AddSwaggerGen(c => {
-	c.IgnoreObsoleteProperties = true;
-	c.OperationProcessors.Add(new IncludeControllersInSwagger());
-		});
-		...
-}
-````
-
-- For .NET 6+, configure the Swagger Generation in **Program.cs**
-
-````CSharp
-builder.Services.AddSwaggerGen(c => {
-		c.IgnoreObsoleteProperties = true;
-		c.OperationProcessors.Add(new IncludeControllersInSwagger());
-});
 ````
 
 ## See Also
 
-[NSwag filter namespace](https://stackoverflow.com/questions/52337355/nswag-filter-namespace)
+* [Get started with NSwag and ASP.NET Core]([https://stackoverflow.com/questions/52337355/nswag-filter-namespace](https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag)
+* [Get started with Swashbuckle and ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle)

@@ -85,12 +85,56 @@ namespace CSharp.MvcDemo.Controllers
 	}
 ````
 
+	````VB.NET
+Imports System.IO
+	Imports Telerik.Reporting.Services
+	Imports Telerik.WebReportDesigner.Services
+	Imports Telerik.WebReportDesigner.Services.Controllers
+
+	'The class name determines the service URL.
+	Public Class ReportDesignerController
+		Inherits ReportDesignerControllerBase
+
+		Shared ReadOnly configurationInstance As ReportServiceConfiguration
+		Shared ReadOnly designerConfigurationInstance As ReportDesignerServiceConfiguration
+
+		Shared Sub New()
+			'This is the folder that contains the report definitions
+			'In this case this is the Reports folder
+			Dim appPath = HttpContext.Current.Server.MapPath("~/")
+			Dim reportsPath = Path.Combine(appPath, "Reports")
+			'Add report source resolver for trdx/trdp report definitions,
+			'then add resolver for class report definitions as fallback resolver;
+			'finally create the resolver and use it in the ReportServiceConfiguration instance.
+			Dim resolver = New UriReportSourceResolver(reportsPath).AddFallbackResolver(New TypeReportSourceResolver())
+
+			Dim reportServiceConfiguration As New ReportServiceConfiguration()
+			reportServiceConfiguration.HostAppId = "Html5App"
+			reportServiceConfiguration.ReportSourceResolver = resolver
+			reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
+			configurationInstance = reportServiceConfiguration
+
+			Dim designerServiceConfiguration As New ReportDesignerServiceConfiguration()
+			designerServiceConfiguration.DefinitionStorage = New FileDefinitionStorage(reportsPath)
+			designerServiceConfiguration.SettingsStorage = New FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+			designerConfigurationInstance = designerServiceConfiguration
+		End Sub
+
+		Public Sub New()
+			'nitialize the service configuration
+			Me.ReportServiceConfiguration = configurationInstance
+			Me.ReportDesignerServiceConfiguration = designerConfigurationInstance
+
+		End Sub
+	End Class
+````
+
 
 ## Adding the Web Report Designer:
 
-1. Navigate to `Views` -> `Home` and add a new CSHTML Page for the Web Report Designer. Name the file `Index.cshtml`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
+1. Navigate to `Views` -> `Home` and add a new CSHTML Page for the Web Report Designer. Name the file `Index.cshtml`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-	````HTML
+	````cshtml
 @using Telerik.Reporting
 	@{
 		Layout = null;
@@ -107,7 +151,7 @@ namespace CSharp.MvcDemo.Controllers
 		<div id="webReportDesigner">
 			loading...
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}//js/kendo.all.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
@@ -127,11 +171,48 @@ namespace CSharp.MvcDemo.Controllers
 	</html>
 ````
 
+	````vbhtml
+@Imports Telerik.Reporting
+	@Code
+		Layout = Nothing
+	End Code
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Telerik Web Report Designer Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="webReportDesigner">
+			loading...
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://kendo.cdn.telerik.com/2022.3.913//js/kendo.all.min.js"></script>
+		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
+		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#webReportDesigner").telerik_WebReportDesigner({
+					persistSession: false,
+					toolboxArea: {
+						layout: "list"
+					},
+					serviceUrl: "/api/reportdesigner/",
+					report: "SampleReport.trdp"
+				}).data("telerik_WebDesigner");
+			});
+		</script>
+	</body>
+	</html>
+````	
+
 	The *ReportDesignerController* we added above is configured to search for its reports in a sub-folder named `Reports`. The Report Designer widget we just configured will try to load a report named `SampleReport.trdp`. Add a new folder named `Reports` to the solution and add an existing report named `SampleReport.trdp` to it.
 
 1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in the `Application_Start()` method of the `Global.asax` file. It is important to register them before the default routes as shown below:
 
-	````HTML
+	````C#
 protected void Application_Start()
 	{
 		AreaRegistration.RegisterAllAreas();
@@ -141,6 +222,25 @@ protected void Application_Start()
 		RouteConfig.RegisterRoutes(RouteTable.Routes);
 		BundleConfig.RegisterBundles(BundleTable.Bundles);
 	}
+````
+
+	````VB.NET
+Imports System.Web.Optimization
+	
+	Public Class MvcApplication
+		Inherits System.Web.HttpApplication
+
+		Sub Application_Start()
+			AreaRegistration.RegisterAllAreas()
+			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters)
+
+			Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration)
+			Telerik.WebReportDesigner.Services.WebApi.ReportDesignerControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration)
+
+			RouteConfig.RegisterRoutes(RouteTable.Routes)
+			BundleConfig.RegisterBundles(BundleTable.Bundles)
+		End Sub
+	End Class
 ````
 
 

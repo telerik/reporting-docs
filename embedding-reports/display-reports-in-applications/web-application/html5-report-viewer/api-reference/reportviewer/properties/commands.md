@@ -25,7 +25,7 @@ table th:nth-of-type(3) {
 
 The report viewer exposes all its available commands through the __commands__ collection:
 
-Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the __exec()__ method being the one that actually triggers the command. The other two methods, __enabled()__ and __checked()__ return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be.
+Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the __exec()__ method being the one that actually triggers the command. The other two methods, __enabled()__ and __checked()__ return a bool value and can be used before executing a command or to find in what state the UI for the command should be.
 
 ````JavaScript
 $('#printButton').click(function () {
@@ -63,4 +63,4 @@ The following table is a list of all commands:
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

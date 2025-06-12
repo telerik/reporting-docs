@@ -24,14 +24,14 @@ Below is a list of all options available during initialization.
 
 ## How to configure the options
 
-The options can be set from the `.HTML`/`.TS` component file or both(combined):
+The report viewer options can be set from the `.HTML`/`.TS` component file or both(combined):
 
 ````HTML
 <tr-viewer #viewer1
 	[containerStyle]="viewerContainerStyle"
-	[serviceUrl]="'http://localhost:59655/api/reports/'"
+	[serviceUrl]="'http://localhost:59657/api/reports/'"
 	[reportSource]="{
-		report: 'Report2.trdp',
+		report: 'Report1.trdp',
 		parameters: {}
 	}"
 	[viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
@@ -41,8 +41,6 @@ The options can be set from the `.HTML`/`.TS` component file or both(combined):
 ````TypeScript
 export class ReportViewerComponent implements AfterViewInit {
 	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-
-	...
 
 	title = "Report Viewer";
 	viewerContainerStyle = {

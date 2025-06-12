@@ -3,7 +3,7 @@ title: Custom Parameter Editors
 page_title: Creating and Using Custom Parameter Editors in HTML5 ReportViewer
 description: "Learn How to Create and use Custom Parameter Editors in the HTML5 ReportViewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor
-tags: how,to,create,a,custom,parameter,editor
+tags: how,create,custom,parameter,editor
 published: True
 position: 3
 previous_url: /html5-report-viewer-howto-custom-parameter-editor
@@ -26,7 +26,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 ````JavaScript
 {
 	match: function (parameter) {
-		// Here you can use all of the parameter properties in order to
+		// Here you can use all of the parameter properties to
 		// create a more specific editor
 		return Boolean(parameter.availableValues) && !parameter.multivalue;
 	},
@@ -97,5 +97,5 @@ Passing the parameter editor to the viewer:
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Passing Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters%})

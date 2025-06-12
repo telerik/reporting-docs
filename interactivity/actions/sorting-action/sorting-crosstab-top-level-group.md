@@ -5,7 +5,7 @@ description: "Learn how to order the Crosstab's Top-Level group in Telerik Repor
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-top-level-group
 tags: sorting,crosstab,top-level,group
 published: True
-position: 3
+position: 30
 previous_url: /interactive-sorting-action-crosstab-top-level
 ---
 

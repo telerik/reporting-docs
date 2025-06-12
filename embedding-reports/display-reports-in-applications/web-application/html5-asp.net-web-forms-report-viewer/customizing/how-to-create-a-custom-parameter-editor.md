@@ -13,7 +13,7 @@ previous_url: /html5-webforms-report-viewer-customizing-custom-parameter-editor
 
 The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.
 
-Custom parameter editors are defined through the ParameterEditors element when creating the report viewer control. Check out the following list with the available parameter editors:
+Custom parameter editors are defined through the `ParameterEditors` element when creating the report viewer control. Check out the following list with the available parameter editors:
 
 * SingleSelectEditor
 * MultiSelectEditor
@@ -25,7 +25,7 @@ Custom parameter editors are defined through the ParameterEditors element when c
 * DefaultEditor
 * CustomEditors
 
-The following example illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values:
+The following example illustrates how to use the [Kendo DropDownList](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget for a single parameter value parameter editor which also has available values:
 
 ````JavaScript
 function createSingleSelectEditor(placeholder, options) {
@@ -54,18 +54,16 @@ function createSingleSelectEditor(placeholder, options) {
 ````
 ````XML
 </telerik:ReportViewer>
-	....
 	<ParameterEditors SingleSelectEditor="createSingleSelectEditor"/>
 </telerik:ReportViewer>
 ````
 
-The viewer is using a special Kendo subset that contains only the required widgets and the DropDownList widget is not part of the subset, additionally the viewer adds jQuery but this happens late in the viewer initialisation. Thus add the following tags to the web page head element as shown in the following code snippet:
+The viewer is using a special Kendo subset that contains only the required widgets and the [DropDownList](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget is not part of the subset, additionally the viewer adds jQuery but this happens late in the viewer initialization. Thus, add the following tags to the web page head element as shown in the following code snippet:
 
-````XML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js" /script>
-<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
-<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
+````HTML
+<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
 ````
 
 If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor. Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__ and __CreateEditorFunction__.
@@ -112,7 +110,6 @@ Passing the parameter editor to the viewer:
 
 ````XML
 </telerik:ReportViewer>
-....
 	<ParameterEditors>
 		<CustomEditors>
 			<telerik:CustomParameterEditor MatchFunction="customMatch" CreateEditorFunction="createCustomEditor"></telerik:CustomParameterEditor>

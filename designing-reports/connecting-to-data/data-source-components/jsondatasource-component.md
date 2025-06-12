@@ -5,7 +5,7 @@ description: "Learn more about the JsonDataSource Component in Telerik Reporting
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component
 tags: jsondatasource,component
 published: True
-position: 2
+position: 7
 previous_url: /jsondatasource-component
 ---
 <style>
@@ -46,5 +46,5 @@ __Inline Data String Configuration:__
 ## Supported developer platforms
 
 * .NET Framework 4.6.2 and above
-* .NET 6 and above
+* .NET {{site.mindotnetversion}} and above
 * .NET Standard 2.0 and above

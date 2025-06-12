@@ -5,7 +5,7 @@ description: "Learn more about the ObjectDataSource Wizard of the Telerik Report
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard
 tags: objectdatasource,wizard
 published: True
-position: 5
+position: 60
 previous_url: /objectDataSource-Wizard
 ---
 

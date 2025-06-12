@@ -34,7 +34,7 @@ The issue is due to type restriction changes introduced in Telerik Reporting ver
 
 ## Error Message
 
-```
+````
 Telerik.Reporting.Utils.TypePermissionException: The type "Telerik.Reporting.UserReportBook" contained in assembly "Telerik.Reporting, Version=18.2.24.924, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" cannot be loaded. 
 To help improve the application's security, the reporting engine prevents loading types that are not essentially needed or listed as trusted by the user. If you consider particular types or assemblies as trusted include them in the corresponding TypeReferences or AssemblyReferences element of the 'Telerik.Reporting' configuration section in the application's configuration file.
    at Telerik.Reporting.TypeValidation.TypeValidator.ValidateSerializationType(Type type)
@@ -53,7 +53,8 @@ To help improve the application's security, the reporting engine prevents loadin
    at Telerik.ReportDesigner.Packages.ReportDesigner.Serialization.PackageDocDataHandler.UploadReportDocument(IDesignerLoaderHost targetHost)
    at Telerik.ReportDesigner.Packages.ReportDesigner.Serialization.DocData.UploadReportDocument(IDesignerLoaderHost host)
    at Telerik.ReportDesigner.Packages.ReportDesigner.Serialization.ReportDocumentDesignerLoader.PerformLoad(IDesignerSerializationManager serializationManager)
-```
+````
+
 
 ## Solution
 
@@ -86,7 +87,7 @@ To resolve this issue and use Report Books with version `18.2.24.924`, register 
 
 This configuration explicitly declares the `Telerik.Reporting.UserReportBook` type as trusted, allowing the Telerik Reporting engine to load it without triggering the security exception.
 
-> If the exception occurs when opening the Report Book within the Standalone Report Designer, register the type in its `.config` file which is in the same directory as the executable.
+> If the exception occurs when opening the Report Book within the Standalone Report Designer, register the type in its `.config` file, which is in the same directory as the executable.
 
 ## See Also
 

@@ -34,17 +34,17 @@ The steps to accomplish the installation of the Telerik Reporting controls and s
 
 ## Step 2: Create, Populate, and Style the Sample Report
 
-The steps to create, populate with data and style the report are fully described in the steps 2 to 5 from the article [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report).
+Next, create the report that you will integrate in your web application. The steps required to create, populate with data, and style the report are described in the [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report).
 
-In addition, you will only need to save the report as `DemoReport.trdp`.
+Once you have your report, save it as `DemoReport.trdp`. In the next step, you will integrate the TRDP report in the application.
 
 ## Step 3: Integrate and Display the Report
 
-In this final step, you'll integrate your report in an ASP.NET Core web application in .NET 6 and display the project with the HTML5 Report Viewer.
+In this final step, you'll integrate your report in an ASP.NET Core web application in .NET {{site.mindotnetversion}} and display the project with the HTML5 Report Viewer.
 
 1. Open __Visual Studio 2022__. From the __Start__ window, choose __Create a new project__.
 
-1. Select __ASP.NET Core Web App__ and name it __TelerikWebApp__. In the __Additional information__ window, select __.NET6.0(Long-term support)__ and leave the rest of the settings as default. Click __Create__.
+1. Select __ASP.NET Core Web App__ and name it __TelerikWebApp__. In the __Additional information__ window, select __.NET{{site.mindotnetversion}}.0 (Long-term support)__ and leave the rest of the settings as default. Click __Create__.
 
 1. Right-click the project. Select __Add__ > __New Item__ > __Telerik HTML5 Report Viewer Page [version]__. Name the file `index.html`.
 

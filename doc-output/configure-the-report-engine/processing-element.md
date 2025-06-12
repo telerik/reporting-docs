@@ -26,10 +26,8 @@ The Processing element specifies the configuration settings that will be applied
 
 |   |   |
 | ------ | ------ |
-|Attributes|__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.|
-|Child elements|__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.|
-|Child elements|__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.|
-|Child elements|__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.|
+|Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **verbose** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the application base path. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
+|Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.|</li></ul>
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
 ### Example
@@ -53,7 +51,7 @@ XML-based configuration file:
 		</resourceResolver>-->
 		<!-- The element below represents a custom implementation of resource resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<resourceResolver provider="custom">
 			<parameters>
 				<parameter name="typeName" value="Namespace.CustomResourceResolverClass, AssemblyName" />
@@ -62,7 +60,7 @@ XML-based configuration file:
 		</resourceResolver>
 		<!-- The element below represents a custom implementation of a sharedDataSourcer resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<sharedResourceResolver provider="custom">
 			<parameters>
 				<parameter name="typeName" value="Namespace.CustomSharedDataSourceResolverClass, AssemblyName" />
@@ -94,7 +92,7 @@ JSON-based configuration file:
 			//]
 			// The element below represents a custom implementation of a resource resolver
 			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 			"parameters": [
 				{
@@ -119,7 +117,7 @@ JSON-based configuration file:
 
 			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider
 			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 				"parameters": [
 				{
@@ -142,7 +140,7 @@ Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats
 
 ### Graphics Engine
 
-The __graphicsEngine__ element was introduced with the Skia graphics engine in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010). It sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET 7 or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
+The __graphicsEngine__ element was introduced with the Skia graphics engine in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010). It sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET {{site.mindotnetversion}} or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
 
 If the __graphicsEngine__ element is not present in the configuration file, the *PlatformDependent* value will be used.
 Skia implementation is not available in applications that target .NET Framework. They can only work with the GDI graphics engine.

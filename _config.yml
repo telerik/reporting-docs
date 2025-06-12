@@ -12,9 +12,15 @@ exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd
 exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application","designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application","embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs","embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/*"]
 navigation:
 ## List your directory names and order here, like this:
+    licensing:
+          position: 25
+          title: "Licensing"
     getting-started:
         position: 10
         title: "Getting Started"
+    ide-integration:
+        position: 15
+        title: "IDE Integration"
     security:
         position: 20
         title: "Security"
@@ -222,6 +228,9 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
         position: 15
         title: "Design Considerations for Out-proc Session State"
+    embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder:
+        position: 8
+        title: "Styling with ThemeBuilder" 
     embedding-reports/display-reports-in-applications/windows-forms-application:
         position: 11
         title: "Windows Forms Application"
@@ -328,34 +337,37 @@ navigation:
         position: 10
         title: "Data Source Components"
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
-        position: 10
+        position: 5
         title: "SqlDataSource Component"
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers:
         position: 10
         title: "Using Data Providers"
-    designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
-        position: 11
-        title: "CsvDataSource Component"
     designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
-        position: 12
+        position: 11
         title: "WebServiceDataSource Component"
-    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+    designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
+        position: 12
+        title: "CsvDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/graphqldatasource-component:
         position: 13
+        title: "GraphQLDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+        position: 14
         title: "ObjectDataSource Component"
     designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
         position: 15
         title: "How To"
     designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
-        position: 14
+        position: 24
         title: "EntityDataSource Component"
     designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
-        position: 15
+        position: 25
         title: "OpenAccessDataSource Component"
     designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
-        position: 16
+        position: 26
         title: "CubeDataSource Component"
     designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
-        position: 17
+        position: 27
         title: "OpenClientDataSource Component"
     designing-reports/connecting-to-data/data-items:
         position: 11
@@ -441,14 +453,18 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "2024 Q4"
-buildversion: "18.3.24.1218"
-reportserverversion: "10.3.24.1218"
-spaviewerversion: "24.24.1218"
+suiteversion: "2025 Q2"
+buildversion: "19.1.25.521"
+reportserverversion: "11.1.25.521"
+spaviewerversion: "26.25.521"
 nodeversion: "16.0.0"
-angularsubsetversion: "16.1.0"
-kendosubsetversion: "2022.3.913"
-blazoruiversion: "6.2.0"
+angularsubsetversion: "17.2.0"
+kendosubsetversion: "2025.1.227"
+kendothemeversion: "10.2.0"
+blazoruiversion: "7.1.0"
+mindotnetversion: "8"
+mindotnetoutputdir: "\\bin\\Debug\\net8.0"
+dotnetversions: ".NET 8 and .NET 9"
 
 # Feedback Form Product code
 productCode: REPORTING

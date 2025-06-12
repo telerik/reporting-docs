@@ -1,7 +1,7 @@
 ---
 title: Adding Report Parameters
 page_title: Adding Report Parameters Explained
-description: "Learn about the different approaches for adding Report Parameters in Telerik Reporting, and how to set up AvailableValues values when needed"
+description: "There are several ways to add a report parameter to the report depending on the preferred designer. Learn more!"
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters
 tags: how,to,add,report,parameters,availablevalues
 published: True
@@ -11,7 +11,13 @@ previous_url: /designing-reports-parameters-adding-parameters
 
 # Approaches for Adding Report Parameters
 
-Report parameters typically filter report data that is retrieved from a data source. Filtering data at the data source can improve performance for processing and viewing a report. For the times when you cannot filter data at the source, you can use parameters to filter report data after it is retrieved. You can also sort and group data in a report based on report parameters.
+## What is a Report Parameter?
+
+[Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) allow you to control the report's content, connect related reports, or use them as arguments in functions. They typically filter report data that is retrieved from a [data source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}). Filtering data at the data source can improve performance for processing and viewing a report. 
+
+For the times when you cannot filter data at the source, you can use parameters to [filter report data after it is retrieved]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}#client-side-filtering). You can also sort and group data in a report based on report parameters.
+
+Report Parameters can also be used to allow for user-input data when the report is displayed in a report viewer.
 
 ## Add a Report Parameter using Report Designer
 

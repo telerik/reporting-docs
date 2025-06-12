@@ -5,7 +5,7 @@ description: "Learn which data source components support parameters and the basi
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects
 tags: using,parameters,with,data,source,objects,basic,principles
 published: True
-position: 12
+position: 1
 previous_url: /connecting-to-data-using-parameters
 ---
 

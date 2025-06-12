@@ -19,13 +19,12 @@ To attach an event handler to the viewer, specify the name of your function when
 
 ````HTML
 <tr-viewer
-	...
 	[ready]="myReadyHandler"
 	[viewerToolTipOpening]="myViewerToolTipOpeningHandler">
 </tr-viewer>
 ````
 
-Then we create the event handler functions in the component where the viewer is used: 
+Then, we can create the event handler functions in the component where the viewer is used: 
 
 ````TypeScript
 export class AppComponent {
@@ -38,4 +37,6 @@ export class AppComponent {
 }
 ````
 
-For a complete list of event handler options please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}).
+## See Also
+
+* [Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})

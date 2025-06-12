@@ -154,7 +154,7 @@ public IActionResult Report()
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>>
 		<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
 		<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
 		<!-- the required Kendo subset is located in {Telerik Reporting installation path}\Html5\ReportViewer\js -->

@@ -11,11 +11,15 @@ previous_url: /installation-system-requirements, /installation-installing-from-m
 
 # Installation Approaches for Telerik Reporting
 
-Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget)(adds assemblies to the project, no design time support).
+Telerik Reporting provides options for installing the product by using [the Control Panel](#using-the-control-panel), by [the MSI installer file](#using-the-msi-file), or [NuGet](#installing-with-nuget). The NuGet packages add the Reporting assemblies to the project, but do not provide design time support.
 
-## Downloading the Control Panel
+>note After installing the product, you will need to [download and activate/update your Telerik Reporting License Key]({%slug license-key%}).
+
+## Using the Control Panel
 
 You can install Telerik Reporting by downloading the Control Panel. For the complete instructions, refer to the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction) online documentation.
+
+The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine. For details, check the article [Setting Up Telerik Reporting License Key]({%slug license-key%}).
 
 ## Using the MSI File
 
@@ -39,7 +43,7 @@ During the MSI installation process, consider the following:
 
 To install Telerik Reporting through the MSI automatic installer file:
 
-1. Log into your [Telerik account](https://www.telerik.com/account). Click the __Downloads__ tab to view the available trial and commercial products and select __Telerik Reporting__.
+1. Log into your [Telerik account](https://www.telerik.com/account). Click the __Downloads__ tab to view the available products and select __Telerik Reporting__.
 1. From the next page, download the MSI installation and the documentation files and download the automatic installation MSI file. The source code is available for download only for commercial license holders.
 1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog that appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
 
@@ -85,22 +89,6 @@ To configure the Telerik NuGet Feed in Visual Studio:
 1. Enter a **Name** for the new package source, for example, **Telerik NuGet**.
 1. Add the `https://nuget.telerik.com/v3/index.json` URL as a **Source**. Make sure the URL does not have a trailing slash. Click **OK**.
 
-### Handling Special Characters in Password
-
-If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand `&`, but it can be as unique as the section character `§`. There are two ways to handle this.
-
-1. Change the password so that it only includes characters that do not need to be escaped
-1. HTML encodes the password so the special characters are escaped (e.g. `my§uper&P@§§word` becomes `my&sect;uper&amp;P@&sect;&sect;word`).
-
-We strongly discourage entering your password into an online encoder utility, use Powershell instead. Here's one example:
-
-	Add-Type -AssemblyName System.Web
-	[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
-
-Result:
-
-![Powershell Encoding of a Password containing special characters](images/PowerShellEncodingNugetPassword.png)
-
 ### Installing Telerik Reporting
 
 After you have successfully added the Telerik NuGet feed as a package source, you need to authenticate your local NuGet instance and install Telerik Reporting:
@@ -108,6 +96,9 @@ After you have successfully added the Telerik NuGet feed as a package source, yo
 1. Create a new Reporting project or open an existing one.
 1. Go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution...**. Select the Telerik NuGet **Package source** from the drop-down list on the left.
 1. Select the **Browse** tab to see the available packages. Enter your Telerik credentials in the Windows Authentication dialog.
+
+	> You may need to escape some [special characters in the password]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}#handling-special-characters-in-password)
+	
 1. Select Telerik Reporting and click **Install**.
 
 ## See Also

@@ -1,7 +1,7 @@
 ---
-title: About Telerik Reporting
+title: Basic Concepts in Telerik Reporting
 page_title: Basic Concepts and Logic
-description: "Learn more about the concepts and logic behind Telerik Reporting. Get general knowledge on what Telerik Report is, how you may create reports, connect them to data, and preview the results."
+description: "Learn more about the concepts and logic behind Telerik Reporting. Get general knowledge on what Telerik Reporting is, how you may create reports, connect them to data, and preview the results."
 slug: on-telerik-reporting
 tags: telerik, reporting, basic, concepts, explanations, logic
 published: True
@@ -11,9 +11,7 @@ position: 0
 
 # Basic Concepts in Telerik Reporting
 
-Telerik Reporting is an [embedded tool](https://www.telerik.com/products/reporting/embedded-reporting.aspx) for creating and displaying reports in a visually structured and logically grouped way.
-
-Telerik reports can be created for web or desktop applications that operate within various web and desktop frameworks.
+Telerik Reporting is an <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">embedded tool</a> for creating and displaying reports in a visually structured and logically grouped way. You can integrate the Telerik reports in virtually any web or desktop application regardless of the underlying framework.
 
 ## Scenarios for Using Telerik Reporting
 
@@ -25,17 +23,17 @@ However, it's more likely that you'll need the full potential of Telerik Reporti
 
 ## Creating Reports with Report Designers
 
-The milestone during the report authoring is the designing of the report, which happens in the Report Designer. The Report Designer is a tool for creating and configuring reports.
+A key milestone in report authoring is designing the report, which takes place in a report designer. A report designer is a tool that allows users to create and configure reports.
 
 ### Report Designers
 
-Telerik Reporting supports the following report designers:
+Telerik Reporting provides three distinct report designers to accommodate any use case:
 
-* [Standalone Report Designer (Overview)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
-* [Web Report Designer (Overview)]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Integrated Report Designer for Visual Studio (Overview)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
+* [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
+* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Integrated Report Designer for Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
-All three Telerik Report Designers provide options for:
+All three Telerik report designers provide options for:
 
 * Defining the required report layout by dragging and dropping various report items from a toolbox onto the designer's surface. These items can vary from simple text blocks to complex widgets that visualize data relations like graphs and maps.
 * Connecting the report to data by configuring different data source components. These components can connect to relational, multi-dimensional, ORM, or custom data-layer-based data sources, web services, or static data files like CSV or JSON.

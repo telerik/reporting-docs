@@ -5,7 +5,7 @@ description: "Learn how multiple report items and/or groups can be ordered at th
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-multiple-items-groups
 tags: sorting,multiple,items/groups,action,interactivity
 published: True
-position: 6
+position: 60
 previous_url: /interactive-sorting-action-multiple-items
 ---
 

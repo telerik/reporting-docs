@@ -42,8 +42,7 @@ var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase())
 	: telerikReportViewer.PrintModes.FORCE_PDF_FILE;
 $("#reportViewer1")
 	.telerik_ReportViewer({
-		serviceUrl: "../api/reports/",
-		templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+		serviceUrl: "api/reports/",
 		reportSource: { report: "product catalog.trdp" },
 		printMode: printMode
 	});
@@ -51,5 +50,5 @@ $("#reportViewer1")
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Troubleshooting TelerikReportViewer execCommand JavaScript Error]({%slug troubleshooting-telerikreportviewer-execcommand-javascript-error-edge%})

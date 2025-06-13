@@ -56,7 +56,9 @@ The following short video illustrates how to add a List, bind it to an already e
 
 >caption Displaying Data in a List 
 
-![Displaying Data in a List ><](images/wrd-components-tray-tables-list.gif)     
+<!-- ![Displaying Data in a List ><](images/wrd-components-tray-tables-list.gif)      -->
+
+<iframe width="560" height="315" src="https://youtu.be/Uic4kbnS0Mk" title="Populating an empty List with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Table 
 
@@ -68,7 +70,9 @@ When added from a report designer, the Table contains three columns with a table
 
 The following short video illustrates how to add an empty Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), add the necessary TextBox report items for the column headers and for the data records displaying the First/Last Names:
 
-![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-table-data-popuating-from-scratch.gif)        
+<!-- ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-table-data-popuating-from-scratch.gif)         -->
+
+<iframe width="560" height="315" src="https://youtu.be/EPhtxsILsg8" title="Populating an empty Table with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Crosstab 
 
@@ -80,7 +84,9 @@ When added from a report designer, the [Crosstab]({%slug telerikreporting/design
 
 The following short video illustrates how to add an empty Crosstab report item, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), bind the generated empty Column/Row groups and map the necessary TextBox report items for the column/row group and for the data records displaying the total sum of Freight for the respective OrderID:
 
-![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-crosstab-data-populating-from-scratch.gif)        
+<!-- ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-crosstab-data-populating-from-scratch.gif)         -->
+
+<iframe width="560" height="315" src="https://youtu.be/ih65r8IVSFQ" title="Populating an empty Crosstab with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Table Wizard
 
@@ -92,7 +98,9 @@ By clicking the [Table Wizard]({%slug telerikreporting/designing-reports/report-
 
 The following short video illustrates how to add a Table report item with the wizard, bind it to an already existing [Web Service Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and arrange the desired fields for displaying the name and localized name of the data records:
 
-![Displaying Data in a Table ><](images/wrd-components-tray-tables-table-wizard-data-popuating.gif)      
+<!-- ![Displaying Data in a Table ><](images/wrd-components-tray-tables-table-wizard-data-popuating.gif)       -->
+
+<iframe width="560" height="315" src="https://youtu.be/5AjBvKyavss" title="Table Wizard in Web Report Designer - Populating Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Crosstab Wizard
  
@@ -104,7 +112,9 @@ By clicking the [Crosstab Wizard]({%slug telerikreporting/designing-reports/repo
 
 The following short video illustrates how to add a [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) report item with the wizard, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item populated with Northwind.Orders table and arrange the desired fields for displaying the OrderID as rows and total sum of Freight of the data records:
 
-![Displaying Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard-data-popuating.gif)     
+<!-- ![Displaying Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard-data-popuating.gif)      -->
+
+<iframe width="560" height="315" src="https://youtu.be/lJhavGM3da8" title="Crosstab Wizard in Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## See Also
 

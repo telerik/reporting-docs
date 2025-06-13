@@ -1,9 +1,9 @@
 ---
-title: Refreshing Telerik Native Blazor Report Viewer with New Parameters
-description: Learn how to refresh the Telerik Native Blazor Report Viewer with new parameter values programmatically by creating a new ReportSourceOptions object.
+title: Change the Parameters Programmatically in Telerik Native Blazor Report Viewer
+description: Learn how to change the Telerik Native Blazor Report Viewer parameter values programmatically by creating a new ReportSourceOptions object.
 type: how-to
-page_title: How to Update Telerik Native Blazor Report Viewer with Changed Parameters
-slug: refresh-telerik-native-blazor-report-viewer-new-parameters
+page_title: How to Change the Parameters Programmatically
+slug: change-telerik-native-blazor-report-viewer-parameters-values-programmatically
 tags: telerik reporting, reportviewer, parameters, native blazor, onparameterssetasync, reportsourceoptions
 res_type: kb
 ticketid: 1690218
@@ -12,16 +12,16 @@ ticketid: 1690218
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>19.1.25.521</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td>Product</td>
+            <td>Progress® Telerik® Reporting</td>
+        </tr>
+        <tr>
+            <td>Version</td>
+            <td>19.1.25.521</td>
+        </tr>
+    </tbody>
 </table>
 
 ## Description
@@ -31,9 +31,9 @@ I cannot get the Telerik Native Blazor Report Viewer to refresh the report based
 However, if I use the parameter input area in the Report Viewer interface, the report refreshes properly with the updated values. I need a way to programmatically pass new parameters and redisplay the report with these values.
 
 This knowledge base article also answers the following questions:
-- How do I refresh Telerik Native Blazor Report Viewer with new parameters?
-- Why doesn't the Telerik Native Blazor Report Viewer reflect parameter changes programmatically?
-- How can I pass changed parameters to Telerik Native Blazor Report Viewer?
+* How do I refresh Telerik Native Blazor Report Viewer with new parameters?
+* Why doesn't the Telerik Native Blazor Report Viewer reflect parameter changes programmatically?
+* How can I pass changed parameters to Telerik Native Blazor Report Viewer?
 
 ## Solution
 
@@ -43,7 +43,7 @@ To refresh the Telerik Native Blazor Report Viewer programmatically, ensure that
 
 Use the following code snippet in the `OnParametersSetAsync` method:
 
-```csharp
+````C#
 protected override async Task OnParametersSetAsync()
 {
     // Create a new ReportSourceOptions object with the updated parameters
@@ -61,15 +61,14 @@ protected override async Task OnParametersSetAsync()
 
     await base.OnParametersSetAsync();
 }
-```
+````
 
 ### Key Points
 1. Always create a new `ReportSourceOptions` object when updating the `ReportSource` property.
-2. Assign the updated parameter values to the `Parameters` dictionary within the new object.
-3. Ensure the `ReportSource` property references the new object to trigger the refresh.
+1. Assign the updated parameter values to the `Parameters` dictionary within the new object.
+1. Ensure the `ReportSource` property references the new object to trigger the refresh.
 
 ## See Also
 
-- [Native Blazor Report Viewer Documentation](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
-- [Embedding Reports in Blazor Applications](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/setup)
-- [API Reference for ReportSourceOptions](https://docs.telerik.com/reporting/api/telerik.reporting.reportsourceoptions)
+* [Native Blazor Report Viewer Documentation]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
+* [Embedding Reports in Blazor Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%})

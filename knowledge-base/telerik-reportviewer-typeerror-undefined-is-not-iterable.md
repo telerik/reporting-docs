@@ -1,6 +1,6 @@
 ---
-title: TypeError undefined is not iterable in Telerik ReportViewer
-description: Resolving the 'TypeError undefined is not iterable' error when previewing a report with Telerik ReportViewer.
+title: TypeError undefined is not iterable in HTML5-based report viewers
+description: Learn how to resolve the 'TypeError undefined is not iterable' error when previewing a report in HTML5-based report viewers.
 type: troubleshooting
 page_title: Fix TypeError undefined is not iterable in HTML5-based report viewer
 slug: telerik-reportviewer-typeerror-undefined-is-not-iterable
@@ -33,11 +33,11 @@ When attempting to preview a report using an HTML5-based report viewer, the foll
 
 ## Cause
 
-This issue occurs due to a breaking change in the latest version, where the report viewer is no longer fully initialized immediately after the `$("#reportViewer1").telerik_ReportViewer` call. As a result, subsequent calls like `reportViewer.reportSource()` immediately after initialization do not behave as expected.
+This issue occurs due to a breaking change in the 19.1.25.521 version, where the report viewer is no longer fully initialized immediately after the `$("#reportViewer1").telerik_ReportViewer` call. As a result, subsequent calls like `reportViewer.reportSource()` immediately after it do not behave as expected.
 
 ## Solution
 
-Use the `ready` event to ensure the report viewer is fully initialized before setting the report source. For example, in the HTML5 report viewer, this would look as follows:
+Place logic that relies on the report viewer being fully initialized, such as the `reportViewer.reportSource()` calls, inside the `ready` event instead. For example, in the [HTML5 report viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), this would look as follows:
 
 ````javascript
     $("#reportViewer1")

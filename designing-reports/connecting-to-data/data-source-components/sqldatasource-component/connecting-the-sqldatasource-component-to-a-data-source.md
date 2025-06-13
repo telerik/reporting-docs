@@ -30,7 +30,7 @@ The following example shows how to connect to the __SQL Server AdventureWorks__ 
 </configuration>
 ````
 
-Configuration files in XML format are used in .NET Framework applications. In .NET Core and .NET applications, the configuration file usually is in JSON-format and is called `appsettings.json`. The configuration of connection strings section is explained in the following documentation article: [How to Host Reports Service in ASP.NET Core in .NET {{site.mindotnetversion}}]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
+Configuration files in XML format are used in .NET Framework applications. In .NET Core and .NET 6+ applications, the configuration file usually is in JSON-format and is called `appsettings.json`. The configuration of connection strings section is explained in the following documentation article: [How to Host Reports Service in ASP.NET Core in .NET {{site.mindotnetversion}}]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
 
 When the connection string is stored in the configuration file, you need to specify the name of the configuration element as a value for the `ConnectionString` property of `SqlDataSource`. Specifying a value for the `ProviderName` property is no longer necessary, since that information is already present in the configuration element itself.
 

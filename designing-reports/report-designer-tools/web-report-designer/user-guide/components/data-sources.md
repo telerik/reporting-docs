@@ -133,7 +133,6 @@ If you want to skip the further settings steps, click the `Finish` button to con
 
 ![Preview Web Service Data ><](images/wrd-components-tray-data-sources-preview-web-service-data-source.png)
 
-
 ## GraphQL Data Source
 
 By clicking the `GraphQL Data Source` item in the **Components** tray, the [GraphQL Data Source configuration wizard]({%slug desktop-graphqldatasource-wizard%}) appears allowing you to create new or edit an existing [GraphQLDataSource]({%slug graphqldatasource%}) component.
@@ -143,9 +142,46 @@ The wizard allows you to setup one of the options:
 * Reference an external data file.
 * Use inline data string containing the data (required if Service URL or external data file is not set).
 
->caption Setup GraphQL Request with Parameters
+|Wizard step|Description|
+|----|----|
+|1. |.|
+|2. |.|
+|3. |.|
+|4. |.|
+|5. |.| 
 
-![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request.png)  
+The following screenshots illustrates how to setup the **GraphQL Service URL** (e.g. https://buybutton.store/graphql) and a sample **query** for data retrieval:
+
+```SQL
+query paginateProducts($cursor: String) {
+  site {
+    products(first: 5, after: $cursor) {
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+      edges {
+        node {
+          entityId
+          name
+        }
+      }
+    }
+  }
+}
+```
+
+>caption Setup GraphQL Service URL and Configure the Query
+
+![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)  
+
+The wizard allows you to specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
+
+![GraphQL Request Parameters><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)   
+
+As a final step, you can **Preview** the result:
+
+![GraphQL Preview Data><](images/wrd-components-tray-data-sources-graphql-preview-data.png)   
 
 ## JSON Data Source 
 
@@ -185,6 +221,16 @@ By clicking the `Object Data Source` item in the **Components** tray, the [Objec
 >caption Preview Data 
 
 ![Preview Data from Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-preview.png)  
+
+## Data Source General Settings
+
+Once a DataSource component is configured, it can be modified later by selecting it in the **Explorer** tab:
+
+![GraphQL Data Source Settings><](images/wrd-components-tray-data-sources-graphql-data-source-selected-in-explorer.png)    
+
+On the right-hand side the **General** settings (dependent on the specific Data Source item) are loaded and the user can further modify them:
+
+![GraphQL Data Source Settings><](images/wrd-components-tray-data-sources-graphql-data-source-settings.png)   
 
 ## See Also
 

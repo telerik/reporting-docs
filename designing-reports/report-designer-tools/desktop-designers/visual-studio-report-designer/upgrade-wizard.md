@@ -40,27 +40,31 @@ This wizard will upgrade the following:
 
 1. On the first step the wizard provides basic update process information:
 
-  ![First Step in Upgrade Wizard](images/first-step-upgrade-wizard.png)  
+	![First Step in Upgrade Wizard](images/first-step-upgrade-wizard.png)  
 
 1. On the next step, the wizard lists all projects from the solution, which use Telerik Reporting. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to.
 
-  ![Choose Project in Upgrade Wizard](images/choose-project-step-upgrade-wizard.png)   
+	![Choose Project in Upgrade Wizard](images/choose-project-step-upgrade-wizard.png)   
 
 1. The next screen allows you to create a backup for the project.
 
-  ![Backup in Upgrade Wizard](images/backup-step-upgrade-wizard.png)    
+	![Backup in Upgrade Wizard](images/backup-step-upgrade-wizard.png)    
 
 1. Review the changes.
 
-  ![Review Changes in Upgrade Wizard](images/review-step-upgrade-wizard.png)   
+	![Review Changes in Upgrade Wizard](images/review-step-upgrade-wizard.png)   
 
 1. The Complete step indicates whether the upgrade process is completed for all the projects successfully. It also indicates if any errors occured and the user is promped to decide whether to proceed or revert the changes:
 
-  ![Errors in Upgrade Wizard](images/errors-in-upgrade-wizard.png)   
+	![Errors in Upgrade Wizard](images/errors-in-upgrade-wizard.png)   
+
+1. The Licensing step was added with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release of the product. It allows for seemlessly downloading the license key from your [Telerik account](https://www.telerik.com/account/) and putting it in the `%AppData%\Telerik` directory.
+
+	![The Licensing step of the Reporting extension's Upgrade Wizard](images/licensing-step-upgrade-wizard.png)
 
 1. Finally, the wizard shows a log file with the changes:
 
-  ![Log in Upgrade Wizard](images/log-in-upgrade-wizard.png)    
+	![Log in Upgrade Wizard](images/log-in-upgrade-wizard.png)    
 
 The Upgrade Wizard works only with project items. It is registered in Visual Studio and keeps track of Telerik Reporting installation folders on the machine. Telerik Reporting references are updated by using the selected in the wizard version and the installation folder registered for that version. If Telerik Reporting assemblies are referenced from a custom location, not the installation folder, the Upgrade Wizard will not update the content of the custom folder and references will be pointed to the installation folder.
 
@@ -91,4 +95,5 @@ This wizard __will not__ change any of your current code. As a result __you may 
 Feel free to contact us via the [support ticketing system](https://www.telerik.com/account/support-center/contact-us/technical-support) in case you still experience problems after the upgrade, and we will help you resolve any remaining issues. It will be faster and easier if you package your solution/project as a _ZIP_ file and send it to Telerik, together with information on the errors/warnings you see.
 
 ## See Also
+
 * [Missing Telerik menu in Visual Studio]({%slug missing-telerik-menu-in-visual-studio%})

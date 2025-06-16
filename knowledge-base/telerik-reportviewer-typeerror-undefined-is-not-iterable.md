@@ -33,7 +33,7 @@ When attempting to preview a report using an HTML5-based report viewer, the foll
 
 ## Cause
 
-This issue occurs due to a breaking change in the 19.1.25.521 version, where the report viewer is no longer fully initialized immediately after the `$("#reportViewer1").telerik_ReportViewer` call. As a result, subsequent calls like `reportViewer.reportSource()` immediately after it do not behave as expected.
+This issue occurs due to a breaking change in the 19.1.25.521 version, where the report viewer is no longer fully initialized immediately after the `$("#reportViewer1").telerik_ReportViewer` call. As a result, subsequent calls like `reportViewer.reportSource()` will fail because the viewer instance is not yet ready.
 
 ## Solution
 

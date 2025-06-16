@@ -1,9 +1,9 @@
 ---
 title: Setting up in .NET
-page_title: Embedding the Web Report Designer in .NET {{site.mindotnetversion}}+
-description: "Learn how to set up the Telerik Web Report Designer in .NET {{site.mindotnetversion}} and higher applications via the Visual Studio Item Templates or Manually."
+page_title: Embedding the Web Report Designer in .NET 8+
+description: "Learn how to set up the Telerik Web Report Designer in .NET 8 and higher applications via the Visual Studio Item Templates or Manually."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
-tags: how,to,set,up,in,.net,{{site.mindotnetversion}},applications
+tags: how,to,set,up,in,.net,8,applications
 published: True
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications

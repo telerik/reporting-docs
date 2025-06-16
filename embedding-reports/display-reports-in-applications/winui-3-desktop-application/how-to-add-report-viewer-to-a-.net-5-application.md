@@ -1,9 +1,9 @@
 ---
-title: Using in a .NET {{site.mindotnetversion}} application
-page_title: Integrating the WinUI Report Viewer in a .NET {{site.mindotnetversion}} application
-description: "Learn how to start using the Telerik Reporting WinUI Report Viewer in .NET {{site.mindotnetversion}} applications with this tutorial."
+title: Using in a .NET 8 application
+page_title: Integrating the WinUI Report Viewer in a .NET 8 application
+description: "Learn how to start using the Telerik Reporting WinUI Report Viewer in .NET 8 applications with this tutorial."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application
-tags: how,to,add,winui,report,viewer,to,a,.net,{{site.mindotnetversion}},application
+tags: how,to,add,winui,report,viewer,to,a,.net,8,application
 published: True
 position: 1
 previous_url: /winui-report-viewer-how-to-add-in-net5-app

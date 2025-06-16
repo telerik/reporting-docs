@@ -1,7 +1,7 @@
 ---
 title: Setting up Designer and Creating Basic Report
-page_title: Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report
-description: "Learn how to set up the Telerik Web Report Designer in .NET {{site.mindotnetversion}} applications via the Visual Studio Item Templates and how to create a report with Logo and Graph in this step by step tutorial."
+page_title: Embedding the Web Report Designer in .NET 8 and Creating Your First Report
+description: "Learn how to set up the Telerik Web Report Designer in .NET 8 applications via the Visual Studio Item Templates and how to create a report with Logo and Graph in this step by step tutorial."
 slug: telerikreporting/getting-started/web-designer/set-up-and-create-basic-report
 tags: how,configure,.net,applications,web,designer,report
 published: True

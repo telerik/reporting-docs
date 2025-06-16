@@ -37,7 +37,7 @@ This issue occurs due to a breaking change in the 19.1.25.521 version, where the
 
 ## Solution
 
-Place logic that relies on the report viewer being fully initialized, such as the `reportViewer.reportSource()` calls, inside the `ready` event instead. For example, in the [HTML5 report viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), this would look as follows:
+Place logic that relies on the report viewer being fully initialized, such as the `reportViewer.reportSource()` calls, inside the `ready` event handler instead. For example, in the [HTML5 report viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), this would look as follows:
 
 ````javascript
     $("#reportViewer1")

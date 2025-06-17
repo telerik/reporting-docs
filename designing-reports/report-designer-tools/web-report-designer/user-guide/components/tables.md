@@ -31,7 +31,7 @@ The **Web Report Designer** offers a **Tables** section inside the **Components*
     </tr>
     <tr>
       <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#table">Table</a></td>
-      <td>Displays report data in cells that are organized into rows and columns..</td>
+      <td>Displays report data in cells that are organized into rows and columns.</td>
     </tr>
     <tr>
       <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#crosstab">Crosstab</a></td>
@@ -58,7 +58,7 @@ The following short video illustrates how to add a List, bind it to an already e
 
 <!-- ![Displaying Data in a List ><](images/wrd-components-tray-tables-list.gif)      -->
 
-<iframe width="560" height="315" src="https://youtu.be/Uic4kbnS0Mk" title="Populating an empty List with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/Uic4kbnS0Mk" title="Populating an empty List with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Table 
 
@@ -72,7 +72,7 @@ The following short video illustrates how to add an empty Table report item, bin
 
 <!-- ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-table-data-popuating-from-scratch.gif)         -->
 
-<iframe width="560" height="315" src="https://youtu.be/EPhtxsILsg8" title="Populating an empty Table with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/EPhtxsILsg8" title="Populating an empty Table with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Crosstab 
 
@@ -86,7 +86,7 @@ The following short video illustrates how to add an empty Crosstab report item, 
 
 <!-- ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-crosstab-data-populating-from-scratch.gif)         -->
 
-<iframe width="560" height="315" src="https://youtu.be/ih65r8IVSFQ" title="Populating an empty Crosstab with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/ih65r8IVSFQ" title="Populating an empty Crosstab with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Table Wizard
 
@@ -100,7 +100,7 @@ The following short video illustrates how to add a Table report item with the wi
 
 <!-- ![Displaying Data in a Table ><](images/wrd-components-tray-tables-table-wizard-data-popuating.gif)       -->
 
-<iframe width="560" height="315" src="https://youtu.be/5AjBvKyavss" title="Table Wizard in Web Report Designer - Populating Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/5AjBvKyavss" title="Table Wizard in Web Report Designer - Populating Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; web-share" allowfullscreen></iframe>
 
 ## Crosstab Wizard
  
@@ -114,7 +114,7 @@ The following short video illustrates how to add a [Crosstab]({%slug telerikrepo
 
 <!-- ![Displaying Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard-data-popuating.gif)      -->
 
-<iframe width="560" height="315" src="https://youtu.be/lJhavGM3da8" title="Crosstab Wizard in Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/lJhavGM3da8" title="Crosstab Wizard in Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## See Also
 

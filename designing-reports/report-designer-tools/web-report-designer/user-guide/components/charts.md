@@ -76,12 +76,52 @@ The **Web Report Designer** offers a **Charts** section inside the **Components*
   </table>
 </div>
 
+Before adding a chart, first, you need to select the **Details** section of the report. Then, you can select the desired chart type from the **Components** tray and configure it with the desired data source.
 
 ## Bar Charts
 
-By dragging the `Bar` item from the **Components** tray and dropping it onto the **Details** section of the report, you are ready to build the desired chart and use an already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}).
+By clicking the `Bar` item from the **Components** tray, while the **Details** section of the report is initially selected, a new tab will appear on the right-hand side of the **Web Report Designer**: 
 
+![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.png)        
 
+You are ready to build the desired chart and use an already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}). The following short video shows how to feed the chart with data from the already existing SQL Data Source that displays the total **Freight** for each **Country**:
+
+>caption Populating Bar Chart with Orders' Freight by ShipCountry
+
+![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.gif)    
+
+In case of having multiple series per category in the chart, it is possible to fine-tune the *combine mode* for the bar series for better illustration of the data. Telerik Reporting supports the following Bar chart types:
+
+![Bar Chart Type ><](images/wrd-components-tray-charts-configure-bar-chart--type.png)    
+
+Let's have the following sample CSV data that will be used for the example:
+
+```
+Category, Year, Value
+Accessories, 2003,230
+Accessories,2004,340
+Bikes, 2001, 150
+Bikes, 2002, 195
+Bikes, 2003, 340
+Bikes, 2004, 265
+Clothing, 2002, 80
+Clothing, 2003, 120
+Clothing, 2004, 110
+Components, 2001, 230
+Components, 2002, 140
+Components, 2003, 280
+Components, 2004, 310
+```
+
+Now, we will create a Bar Chart that uses the **Year** column for the categories, the **Category** column for the series and the **Value** column for the values. According to the selected Bar Chart Type, the following charts will be displayed:
+
+|Chart Type||
+|----|----|
+|**Clustered Bar**|![Clustered Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-clustered-type.png)| 
+|**Stacked Bar**|![Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-stacked-type.png) |
+|**100% Stacked Bar**|![100% Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-100-stacked-type.png) |
+
+## Line Charts 
 
 
 ## See Also

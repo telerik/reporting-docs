@@ -54,7 +54,7 @@ Replace the `.trv-report-viewer` selector with the ID of your report viewer elem
 Ensure that a Sass-based Kendo UI theme is referenced in your project. For example, include the Default Ocean Blue theme with the following tag:
 
 ````html
-    <link rel="stylesheet" href ="https://unpkg.com/@@progress/kendo-theme-default@10.2.0/dist/default-ocean-blue.css"/>
+    <link rel="stylesheet" href ="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css"/>
 ````
 
 ## See Also

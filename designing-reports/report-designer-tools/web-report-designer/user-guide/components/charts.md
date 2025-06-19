@@ -49,52 +49,38 @@ The **Web Report Designer** offers a **Charts** section inside the **Components*
       <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/pie#pie-chart-variations">Doughnut Chart</a></td>
       <td>Similar to the Pie Chart which has an open space in the center.</td>
     </tr>
-    <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/polar">Polar Chart</a></td>
-      <td>Displays series as sets of data points that are grouped by category on a 360-degree circle and represent the values by the distance of the point as measured from the center of the circle.</td>
-    </tr>
-    <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/range">Range Chart</a></td>
-      <td>Displays sets of data points, each of which is defined by multiple values for the same category, and emphasizes the distance between the two values.</td>
-    </tr>
-    <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/scatter">Scatter (Point) Chart</a></td>
-      <td>Shows correlations between two sets of values, enables users to observe the dependence of one value to another, and is often used for scientific data modeling.</td>
-    </tr>
-    <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/scatter#types">Bubble Chart</a></td>
-      <td>Represents a variation of the Scatter charts in which the data points are replaced with bubbles. This chart type displays the differences between data points based on the size of the bubble. The larger the bubble is, the larger the difference between the two data points is.</td>
-    </tr>
-    <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/sparklines">Sparkline Chart</a></td>
-      <td>Commonly used in tables. Sparklines and data bars are small, simple charts that convey a lot of information in a little space, often inline with text.</td>
-    </tr>
-    <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/ohlc">OHLC Chart</a></td>
-      <td>Displays a series of candlestick or bar markers that represent information about the price movement of a stock over a period of time. The price movement is determined by the open, high, low, and close mark values of the stock price which create the layout of the marker.</td>
-    </tr>
   </table>
 </div>
 
-Before adding a chart, first, you need to select the **Details** section of the report. Then, you can select the desired chart type from the **Components** tray and configure it with the desired data source.
+Before adding a Chart report item, first, you need to select the **Details** section of the report. Then, you can select the desired chart type from the **Components** tray and configure it with the desired data source.
 
 ## Bar Charts
 
-By clicking the `Bar` item from the **Components** tray, while the **Details** section of the report is initially selected, a new tab will appear on the right-hand side of the **Web Report Designer**: 
+By clicking the `Bar` item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**: 
 
-![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.png)        
+> caption Configuration Settings
 
-You are ready to build the desired chart and use an already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}). The following short video shows how to feed the chart with data from the already existing SQL Data Source that displays the total **Freight** for each **Country**:
+![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.png)    
+
+>note The *Configuration pane* is identical for all chart types, allowing the end-user to specify the Data Source and configure the Categories, Series and Values groups.
+
+You are ready to build the desired chart and use an already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}). According to the data that should be displayed, it is possible to configure **Categories**, **Series** and **Values** groups. The following short video shows how to feed the chart with data from the already existing SQL Data Source that displays the total **Freight** for each **Country**:
 
 >caption Populating Bar Chart with Orders' Freight by ShipCountry
 
-![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.gif)    
+<!-- ![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.gif)     -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PD8RnyexfvQ?si=-sUhyCqDy0FC54O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Combine Mode
 
 In case of having multiple series per category in the chart, it is possible to fine-tune the *combine mode* for the bar series for better illustration of the data. Telerik Reporting supports the following Bar chart types:
 
-![Bar Chart Type ><](images/wrd-components-tray-charts-configure-bar-chart--type.png)    
+![Bar Chart Type ><](images/wrd-components-tray-charts-configure-bar-chart-type.png)    
 
 Let's have the following sample CSV data that will be used for the example:
+
+>caption CSV Data Source
 
 ```
 Category, Year, Value
@@ -113,16 +99,87 @@ Components, 2003, 280
 Components, 2004, 310
 ```
 
-Now, we will create a Bar Chart that uses the **Year** column for the categories, the **Category** column for the series and the **Value** column for the values. According to the selected Bar Chart Type, the following charts will be displayed:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ypQHSpXnJkw?si=_pjCxfXAIfKoWBa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-|Chart Type||
+Now, we will create a Bar Chart that uses the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*. According to the selected Bar Chart Type, the following charts will be displayed:
+
+|Bar Chart Type||
 |----|----|
 |**Clustered Bar**|![Clustered Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-clustered-type.png)| 
 |**Stacked Bar**|![Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-stacked-type.png) |
 |**100% Stacked Bar**|![100% Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-100-stacked-type.png) |
 
+## Column Charts
+
+By clicking the `Column` item from the **Components** tray, a similar tab (like the one shown in the *Configuration Settings* above) will appear on the right-hand side of the **Web Report Designer**. The **Column** chart type is very similar to the **Bar** chart (which displays series as sets of horizontal bars) and to the **Range** Column chart (which displays series as sets of vertical bars with varying beginning and end points).
+
+We will use the same *CSV Data Source* and configure the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*:
+
+>caption Populating Column Chart
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ePCehcujGnU?si=iQ5SDFrLaJeatsgl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+According to the selected Column Chart Type, the following charts will be displayed: 
+
+|Column Chart Type||
+|----|----|
+|**Clustered Column**|![Clustered Column Chart Type ](images/wrd-components-tray-charts-configure-column-chart-clustered-type.png)|  
+|**Stacked Column**|![Stacked Column Type ](images/wrd-components-tray-charts-configure-column-chart-stacked-type.png) |
+|**100% Stacked Column**|![100% Stacked Column Chart Type ](images/wrd-components-tray-charts-configure-column-chart-100-stacked-type.png) |
+
+
+## Area Charts
+
+By clicking the `Area` item from the **Components** tray, the *Configuration Settings* pane will appear on the right-hand side of the **Web Report Designer**. We will use the same *CSV Data Source* and configure the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*:
+
+>caption Populating Area Chart
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1F4df2B3TTw?si=SskFAdk4lDTmijfr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+According to the selected **Area Chart Type**, the following charts will be displayed: 
+
+![Area Chart Type ><](images/wrd-components-tray-charts-configure-area-chart-types.png) 
+
+|Area Chart Type||
+|----|----|
+|**Area**|![Area Chart Type ](images/wrd-components-tray-charts-configure-area-chart-type.png)|   
+|**Stacked Area**|![Stacked Area Type ](images/wrd-components-tray-charts-configure-stacked-area-type.png) |
+|**100% Stacked Area**|![100% Stacked Area Type ](images/wrd-components-tray-charts-configure-area-100-stacked-type.png) | 
+
 ## Line Charts 
 
+By clicking the `Line` item from the **Components** tray, the *Configuration Settings* pane will appear on the right-hand side of the **Web Report Designer**. We will use the same *CSV Data Source* and configure the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*:
+
+>caption Populating Line Chart
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FVBqHGrqYvQ?si=MBSYV08JWm7KEhUJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+According to the selected **Line Chart Type**, the following charts will be displayed: 
+
+![Line Chart Type ><](images/wrd-components-tray-charts-configure-line-chart-types.png)  
+
+|Chart Type|Line|Line with Markers|
+|----|----|----|
+|**Line**|![Line Chart Type ](images/wrd-components-tray-charts-configure-line-chart-type.png)| ![Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-chart-type.png) | 
+|**Stacked Line**|![Stacked Line Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-type.png) | ![Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-with-markers-type.png)|
+|**100% Stacked Line**|![100% Stacked Line Chart Type ](images/wrd-components-tray-charts-configure-line-100-stacked-type.png) | ![100% Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-100-stacked-type.png) 
+
+## Pie Charts
+
+By clicking the `Pie` item from the **Components** tray, the *Configuration Settings* pane will appear on the right-hand side of the **Web Report Designer**. We will use the same *CSV Data Source* and configure the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*:
+
+>caption Populating Pie Chart
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U9HMcfjAofc?si=3OCMV8NEyz8VwmaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+According to the selected **Pie Chart Type**, the following charts will be displayed: 
+
+![Pie Chart Type ><](images/wrd-components-tray-charts-configure-pie-chart-types.png) 
+
+|Pie Chart Type||
+|----|----|
+|**Pie**|![Area Chart Type ](images/wrd-components-tray-charts-configure-pie-chart-type.png)|   
+|**Doughnut**|![Doughnut Chart Type ](images/wrd-components-tray-charts-configure-doughnut-chart-type.png) | 
 
 ## See Also
 

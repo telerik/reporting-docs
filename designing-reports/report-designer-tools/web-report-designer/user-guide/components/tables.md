@@ -59,7 +59,7 @@ The following short video illustrates how to add a List, bind it to an already e
 
 ![Displaying Data in a List ><](images/wrd-components-tray-tables-list.gif)      
 
-<iframe width="560" height="315" src="https://youtu.be/Uic4kbnS0Mk" title="Populating an empty List with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2P50WiOqq7M?si=QhoQr_gPoX2oR_PF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Table 
 
@@ -73,7 +73,7 @@ The following short video illustrates how to add an empty Table report item, bin
 
 ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-table-data-popuating-from-scratch.gif)   
 
-<iframe width="560" height="315" src="https://youtu.be/EPhtxsILsg8" title="Populating an empty Table with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fBmSktuKgHA?si=-PjTxgYIAQVbphyf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Crosstab 
 
@@ -87,7 +87,7 @@ The following short video illustrates how to add an empty Crosstab report item, 
 
 ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-crosstab-data-populating-from-scratch.gif)         
 
-<iframe width="560" height="315" src="https://youtu.be/ih65r8IVSFQ" title="Populating an empty Crosstab with data - Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+>caution Upload youtube video
 
 ## Table Wizard
 
@@ -99,9 +99,7 @@ By clicking the [Table Wizard]({%slug telerikreporting/designing-reports/report-
 
 The following short video illustrates how to add a Table report item with the wizard, bind it to an already existing [Web Service Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and arrange the desired fields for displaying the name and localized name of the data records:
 
-![Displaying Data in a Table ><](images/wrd-components-tray-tables-table-wizard-data-popuating.gif)
-
-<iframe width="560" height="315" src="https://youtu.be/5AjBvKyavss" title="Table Wizard in Web Report Designer - Populating Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YYdyeCW2XSg?si=Dksa5GK_ZkfszicP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Crosstab Wizard
  
@@ -115,7 +113,7 @@ The following short video illustrates how to add a [Crosstab]({%slug telerikrepo
 
 ![Displaying Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard-data-popuating.gif)  
 
-<iframe width="560" height="315" src="https://youtu.be/lJhavGM3da8" title="Crosstab Wizard in Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+>caution Upload youtube video
 
 ## See Also
 

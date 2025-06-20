@@ -5,7 +5,7 @@ description: Explore the available Chart report components offered by the Web Re
 slug: web-report-designer-user-guide-components-charts
 tags: web, report, design, report, components, chart, bar, line, area, column, pie, doughnut, polar, range, scatter, bubble, sparkline, ohlc
 published: True
-position: 2
+position: 5
 ---
 List
 <style>

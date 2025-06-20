@@ -1,6 +1,6 @@
 ---
 title: Charts
-page_title: Web Report Designer offers different Chart Components that can be used to visualize the data records in the reports.
+page_title: Charts
 description: Explore the available Chart report components offered by the Web Report Designer.
 slug: web-report-designer-user-guide-components-charts
 tags: web, report, design, report, components, chart, bar, line, area, column, pie, doughnut, polar, range, scatter, bubble, sparkline, ohlc
@@ -176,10 +176,9 @@ According to the selected **Pie Chart Type**, the following charts will be displ
 
 ![Pie Chart Type ><](images/wrd-components-tray-charts-configure-pie-chart-types.png) 
 
-|Pie Chart Type||
+|Pie Chart|Doughnut Chart|
 |----|----|
-|**Pie**|![Area Chart Type ](images/wrd-components-tray-charts-configure-pie-chart-type.png)|   
-|**Doughnut**|![Doughnut Chart Type ](images/wrd-components-tray-charts-configure-doughnut-chart-type.png) | 
+|![Area Chart Type ](images/wrd-components-tray-charts-configure-pie-chart-type.png)|![Doughnut Chart Type ](images/wrd-components-tray-charts-configure-doughnut-chart-type.png) | 
 
 ## See Also
 

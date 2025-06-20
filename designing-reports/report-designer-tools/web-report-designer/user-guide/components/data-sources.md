@@ -1,7 +1,7 @@
 ---
 title: Data Sources
-page_title: Web Report Designer offers different Data Source Components that can be used in the reports.
-description: Explore the available Data Source report components offered by the Web Report Designer.
+page_title: Data Sources
+description: Web Report Designer offers different Data Source Components that can be used in the reports.
 slug: web-report-designer-user-guide-components-data-sources
 tags: web, report, design, report, components, data, source
 published: True

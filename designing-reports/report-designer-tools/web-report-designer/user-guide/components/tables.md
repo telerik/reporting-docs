@@ -1,7 +1,7 @@
 ---
 title: Tables
-page_title: Web Report Designer offers different Table Components that can be used to visualize the data records in the reports.
-description: Explore the available Table report components offered by the Web Report Designer.
+page_title: Tables
+description: Web Report Designer offers different Table Components that can be used to visualize the data records in the reports.
 slug: web-report-designer-user-guide-components-tables
 tags: web, report, design, report, components, table, list, crosstab
 published: True

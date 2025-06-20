@@ -58,7 +58,7 @@ Before adding a Chart report item, first, you need to select the **Details** sec
 
 By clicking the `Bar` item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**: 
 
-> caption Configuration Settings
+>caption Configuration Settings
 
 ![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.png)    
 

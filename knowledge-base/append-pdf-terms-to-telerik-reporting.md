@@ -1,8 +1,8 @@
 ---
 title: Adding More Content to a PDF Report
-description: Learn how to append a PDF with terms and conditions to the last page of a Telerik Reporting report using Telerik Reporting and Telerik Document Processing.
+description: "Learn how to append a PDF with terms and conditions to the last page of an exported into PDF report using Telerik Reporting and Telerik Document Processing."
 type: how-to
-page_title: How to Append More Content to a PDF Report
+page_title: How to Append More Content to a PDF Report Document
 slug: append-pdf-terms-to-telerik-reporting
 tags: telerik, reporting, pdf, pdfprocessing, append 
 res_type: kb
@@ -18,28 +18,29 @@ ticketid: 1690348
 
 ## Description
 
-This article demonstrates how to append a PDF, containing general terms and conditions, to the last page of my Telerik Reporting report (.trdp files exported as PDF documents). The terms and conditions PDF should always appear at the end, regardless of the report's content.
+This article demonstrates how to append a PDF, containing general terms and conditions, to the last page of a PDF document produced by exporting a Telerik Report(*.trdp/.trdx files exported as PDF documents*). The terms and conditions PDF should always appear at the end, regardless of the report's content.
 
 ## Solution
 
+### Requirements and Steps
+
 To achieve this functionality, use:
 
-* [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}) to generate reports.
+* [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}) to generate PDF reports.
 * [Telerik Document Processing](https://docs.telerik.com/devtools/document-processing/introduction) to manipulate the PDF and add some extra content.
 
 Follow these steps:
 
 1. **Generate the Report PDF using Telerik Reporting**  
    Use Telerik Reporting to render the report as a PDF file. Refer to the [Generating Reports Locally with Code]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) article for more details on generating reports locally.
-
-2. **Import and Modify the PDF Report using Telerik Document Processing**  
-   Use Telerik Document Processing's [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library to [import](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#import) the generated PDF, append a new page with the terms and conditions, and export the final document. Refer to [RadPdfProcessing documentation](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) for additional details.
+1. **Import and Modify the PDF Report using Telerik Document Processing**  
+   Use Telerik Document Processing's [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library to [import](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#import) the generated PDF, append a new page with the terms and conditions and export the final document. 
 
 ### Example Code
 
 Below is a complete example demonstrating how to generate the report PDF and append a new page:
 
-```csharp
+````C#
 using System.Diagnostics;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf;
 using Telerik.Windows.Documents.Fixed.Model;
@@ -128,14 +129,16 @@ namespace GeneratePDFReportsAndUpdate
         }
     }
 }
-```
+````
 
 ### Key Steps Explained:
+
 1. **Generate a PDF**: Use Telerik Reporting's `ReportProcessor` to render the `.trdp` file as a PDF.
-2. **Import the PDF**: Use `PdfFormatProvider` from RadPdfProcessing to load the generated PDF.
-3. **Add a Page**: Create a new page and use `FixedContentEditor` to add the terms and conditions text.
-4. **Export the Modified PDF**: Save the final PDF with the appended terms and conditions.
+1. **Import the PDF**: Use `PdfFormatProvider` from RadPdfProcessing to load the generated PDF.
+1. **Add a Page**: Create a new page and use `FixedContentEditor` to add the terms and conditions text.
+1. **Export the Modified PDF**: Save the final PDF with the appended terms and conditions.
 
 ## See Also
-- [RadPdfProcessing Overview](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
-- [PDF Format Provider]([https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#import](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider))
+
+* [RadPdfProcessing Overview](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
+* [PDF Format Provider](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider)

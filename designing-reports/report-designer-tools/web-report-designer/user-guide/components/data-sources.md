@@ -142,46 +142,44 @@ The wizard allows you to setup one of the options:
 * Reference an external data file.
 * Use inline data string containing the data (required if Service URL or external data file is not set).
 
-|Wizard step|Description|
-|----|----|
-|1. |.|
-|2. |.|
-|3. |.|
-|4. |.|
-|5. |.| 
+You are expected to see the following steps:
 
-The following screenshots illustrates how to setup the **GraphQL Service URL** (e.g. https://buybutton.store/graphql) and a sample **query** for data retrieval:
+1. Setup the **GraphQL Service URL** (e.g. https://buybutton.store/graphql) 
 
-```SQL
-query paginateProducts($cursor: String) {
-  site {
-    products(first: 5, after: $cursor) {
-      pageInfo {
-        endCursor
-        hasNextPage
-      }
-      edges {
-        node {
-          entityId
-          name
+1. Provide the **Query** for data retrieval:  
+
+    ```SQL
+    query paginateProducts($cursor: String) {
+      site {
+      products(first: 5, after: $cursor) {
+          pageInfo {
+            endCursor
+            hasNextPage
+          }
+          edges {
+            node {
+              entityId
+              name
+            }
+          }
         }
       }
     }
-  }
-}
-```
+    ```
 
->caption Setup GraphQL Service URL and Configure the Query
+    >caption Setup GraphQL Service URL and Configure the Query
 
-![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)  
+    ![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)  
 
-The wizard allows you to specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
+1. Specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
 
-![GraphQL Request Parameters><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)   
+    ![GraphQL Request Parameters><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)   
 
-As a final step, you can **Preview** the result:
+1. Configure Authentication settings (occurs only if an authentication method is selected in the first step): Transmits credentials as username/password pairs, encoded using base64.
 
-![GraphQL Preview Data><](images/wrd-components-tray-data-sources-graphql-preview-data.png)   
+1. As a final step, you can **Preview** the result:
+
+    ![GraphQL Preview Data><](images/wrd-components-tray-data-sources-graphql-preview-data.png)   
 
 ## JSON Data Source 
 

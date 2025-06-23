@@ -26,23 +26,23 @@ The **Web Report Designer** offers a **Tables** section inside the **Components*
       <th style="width:30%">Data Source</th><th>Description</th>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#list">List</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables#list">List</a></td>
       <td>Displays data from a set of Business Objects creating a free-form data layout. You are not limited to a grid layout, you can freely place fields inside the List.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#table">Table</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables#table">Table</a></td>
       <td>Displays report data in cells that are organized into rows and columns.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#crosstab">Crosstab</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables#crosstab">Crosstab</a></td>
       <td>Displays aggregated data summaries that are grouped in rows and columns. The number of rows and columns for groups is determined by the number of unique values for each row and column groups.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard">Table Wizard</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables#table-wizard">Table Wizard</a></td>
       <td>The Table wizard guides you through the process of adding a Table item to a report.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard">Crosstab Wizard</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables#crosstab-wizard">Crosstab Wizard</a></td>
       <td>The Crosstab wizard guides you through the process of adding a Crosstab item to a report.</td>
     </tr>
   </table>
@@ -81,13 +81,11 @@ By dragging the `Crosstab` item from the **Components** tray and dropping it ont
 
 When added from a report designer, the [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) contains a column group, a row group and a body for crosstab data:
 
-![Empty Table ><](images/wrd-components-tray-tables-crosstab-empty.png)     
+![Empty Crosstab ><](images/wrd-components-tray-tables-crosstab-empty.png)     
 
 The following short video illustrates how to add an empty Crosstab report item, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), bind the generated empty Column/Row groups and map the necessary TextBox report items for the column/row group and for the data records displaying the total sum of Freight for the respective OrderID:
 
-![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-crosstab-data-populating-from-scratch.gif)         
-
->caution Upload youtube video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ntf3DDlczmg?si=shL9Z4HNJSevq_Gx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Table Wizard
 
@@ -111,9 +109,7 @@ By clicking the [Crosstab Wizard]({%slug telerikreporting/designing-reports/repo
 
 The following short video illustrates how to add a [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) report item with the wizard, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item populated with Northwind.Orders table and arrange the desired fields for displaying the OrderID as rows and total sum of Freight of the data records:
 
-![Displaying Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard-data-popuating.gif)  
-
->caution Upload youtube video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E6O9eiyBJcQ?si=uC4PyMfkC3E5V3Uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

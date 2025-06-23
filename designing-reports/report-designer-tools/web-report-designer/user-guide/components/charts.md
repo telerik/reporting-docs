@@ -26,27 +26,27 @@ The **Web Report Designer** offers a **Charts** section inside the **Components*
       <th style="width:30%">Chart Type</th><th>Description</th>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/bar">Bar Chart</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#bar-charts">Bar Chart</a></td>
       <td>Displays data series as sets of horizontal bars, graphically summarizes and renders data categories, and enables users to easily compare amounts or values between different categories.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/line">Line Chart</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#line-charts">Line Chart</a></td>
       <td>Displays series as sets of points connected by a single line and represents large amounts of data that occur over a continuous period of time.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/area">Area Chart</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#area-charts">Area Chart</a></td>
       <td>Displays a series as a set of points connected by a line with the whole area filled in under the line.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/column">Column Chart</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#column-charts">Column Chart</a></td>
       <td>Displays data series as sets of vertical bars that are grouped by category.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/pie">Pie Chart</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#pie-charts">Pie Chart</a></td>
       <td>Displays the contribution of fractional parts to a whole and is most commonly used to make comparisons between groups.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/report-items/graph/chart-types/pie#pie-chart-variations">Doughnut Chart</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#pie-charts">Doughnut Chart</a></td>
       <td>Similar to the Pie Chart which has an open space in the center.</td>
     </tr>
   </table>

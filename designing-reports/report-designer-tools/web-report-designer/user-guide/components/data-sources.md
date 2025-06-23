@@ -37,27 +37,27 @@ The **Web Report Designer** offers a **Data Sources** section inside the **Compo
       <th style="width:30%">Data Source</th><th>Description</th>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview">SQL Data Source</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#sql-data-source">SQL Data Source</a></td>
       <td>Enables data items to display data located in a relational database, including <a href="https://www.microsoft.com/en-us/sql-server">Microsoft SQL Server</a> and Oracle databases, as well as OLE DB and ODBC data sources, using little or no code.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview">CSV Data Source</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#csv-data-source">CSV Data Source</a></td>
       <td>Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview">Web Service Data Source</a></td>
-      <td>Enables data items to display data located on a service in <a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data">JSON format</a>.</td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#web-service-data-source">Web Service Data Source</a></td>
+      <td>Enables data items to display data located on a service in JSON format.</td>
     </tr>
   <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview">GraphQL Data Source</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#graphql-data-source">GraphQL Data Source</a></td>
       <td>Enables data items to retrieve data in JSON format from a GraphQL service.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component">JSON Data Source</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#json-data-source">JSON Data Source</a></td>
       <td>Enables data items to display JSON data located in a local file or saved directly into the report.</td>
     </tr>
     <tr>
-      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview">Object Data Source</a></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#object-data-source">Object Data Source</a></td>
       <td>Provides a way to bind the Data Report Items to a middle-tier business object.</td>
     </tr>
   </table>

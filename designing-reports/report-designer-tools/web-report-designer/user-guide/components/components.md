@@ -30,7 +30,7 @@ Each report is constructed by [report items]({%slug telerikreporting/designing-r
     </tr>
     <tr>
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables">Tables</a></td>
-      <td>The Table report item is a generalized layout report item that displays report data in cells that are organized into rows and columns.|<ul><li>List</li><li>Table</li><li>Crosstab</li><li>Table Wizard</li><li>Crosstab Wizard</li></ul></td>
+      <td>The Table report item is a generalized layout report item that displays report data in cells that are organized into rows and columns.<ul><li>List</li><li>Table</li><li>Crosstab</li><li>Table Wizard</li><li>Crosstab Wizard</li></ul></td>
     </tr>
     <tr>
       <td><a href="Link to Report article">Report</a></td>

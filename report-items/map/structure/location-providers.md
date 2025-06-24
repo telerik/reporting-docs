@@ -26,6 +26,8 @@ The map supports the following location providers:
 
 * [`BingLocationProvider`](/api/Telerik.Reporting.BingLocationProvider)&mdash;Uses the [Bing™ Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.
 
+* [`AzureLocationProvider`](/api/Telerik.Reporting.AzureLocationProvider)&mdash;Uses the [Azure Maps Search Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.
+
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

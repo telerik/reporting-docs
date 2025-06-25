@@ -38,7 +38,7 @@ Configure the HTTP request properties used to retrieve data from the GraphQL ser
 | ------ | ------ |
 |Service URL|The URL the request is sent to. Returns the data from the GraphQL service.|
 |Authentication Type|The authentication type. Supported options are Basic and 2-Step authentication.|
-|Response Encoding|Data encoding. Default is UTF-8.|
+|Response Encoding|Data encoding. The default is UTF-8.|
 
 ### Configure Data Retrieval: Part 2
 
@@ -48,7 +48,7 @@ Define the GraphQL query to be sent to the service. You can write a static query
 
 ### Configure Request Parameters
 
-Define parameters for the HTTP request. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({% slug graphqldatasource-parameters %}).
+Define parameters for the HTTP request. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({%slug graphqldatasource-parameters%}).
 
 !["Configure request parameters" window of the GraphQLDataSource Wizard. Includes 5 pre-configured parameters: a header parameter for the HTTP header "Authorization" and three inline parameters, named "data", "status", and "name".](images/graphqldatasource/configure-request-parameters.png)
 
@@ -77,7 +77,7 @@ Set up the settings for the 2-step (Bearer) authentication.
 | ------ | ------ |
 |Login URL|Returns the authentication token or session key. Required.|
 |Login Body|The body of the login HTTP request.|
-|Username|The username used to authenticate. Needed only if Login URL uses Basic Authentication.|
+|Username|The username used to authenticate. Needed only if the Login URL uses Basic Authentication.|
 |Password|The password used to authenticate.|
 |Token Path|A regular expression to retrieve the authentication or session key from the response.|
 |Logout URL|Called if the resource features a lockout for too many sessions.|
@@ -101,13 +101,13 @@ Choose the source of design-time data (used, for example, to display available d
 
 !["Choose design-time data" window of the GraphQLDataSource Wizard. Includes three buttons with the options "Use real data while designing the report", "Upload JSON file", and "Use JSON inline as hard-coded data while designing the report". The default one is "Use real data while designing the report".](images/graphqldatasource/choose-design-time-data.png)
 
->tip Use an external JSON file or hard-coded data if the GraphQLDataSource component relies on token that needs to be updated dynamically through report parameters. Report parameters can be used only at runtime.
+>tip Use an external JSON file or hard-coded data if the GraphQLDataSource component relies on a token that needs to be updated dynamically through report parameters. Report parameters can be used only at runtime.
 
 ### Preview Data Source Results
 
 Preview the data returned based on the current configuration. Optionally, specify a JSONPath expression to filter the result.
 
-!["Preview data source results" window of the GraphQLDataSource Wizard. On the left, there is a "Preview" button, responsible for displaying the data, along with the GraphQL query configured in step 2 of the wizard. On the right, there is a text box allowing to configure the JSONPath data selector to further filter the result. Below it is the JSON result from the GraphQL query.](images/graphqldatasource/preview-data-source-results.png)
+!["Preview data source results" window of the GraphQLDataSource Wizard. On the left, there is a "Preview" button, responsible for displaying the data, along with the GraphQL query configured in step 2 of the wizard. On the right, there is a text box allowing to configure the JSONPath data selector to further filter the result. Below is the JSON result from the GraphQL query.](images/graphqldatasource/preview-data-source-results.png)
 
 | Setting | Description |
 | ------ | ------ |

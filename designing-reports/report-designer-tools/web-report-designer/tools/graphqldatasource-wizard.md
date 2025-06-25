@@ -18,7 +18,7 @@ table th:nth-of-type(2) {
 
 # GraphQLDataSource Wizard Overview
 
-The GraphQLDataSource Wizard allows you to create new or edit existing [GraphQLDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview%}) in the [Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}).
+The GraphQLDataSource Wizard allows you to create new or edit existing [GraphQLDataSource components]({%slug graphqldatasource%}) in the [Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}).
 
 ## Wizard Flow Summary
 
@@ -111,7 +111,7 @@ Preview the data returned based on the current configuration. Optionally, specif
 
 | Setting | Description |
 | ------ | ------ |
-|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
+|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}).|
 
 ## See Also
 

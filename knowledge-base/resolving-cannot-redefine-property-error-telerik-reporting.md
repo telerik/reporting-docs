@@ -38,7 +38,11 @@ This knowledge base article also answers the following questions:
 
 ## Solution
 
-To resolve this issue, modify the JavaScript code to scope element selection to each report viewer's parent container. Use the `$element.find` method to ensure that each toolbar element is properly scoped within its specific report viewer instance. Additionally, fix the export functionality to avoid it being disabled across multiple viewers.
+To resolve this issue, update the source code of `telerikReportViewer-19.1.25.521.js` used in your project to scope element selection to each report viewer's parent container. Use the `$element.find` method to ensure that each toolbar element is properly scoped within its specific report viewer instance. Additionally, fix the export functionality to avoid it being disabled across multiple viewers.
+
+If you are using the `.min.js` version of the report viewer, you need to switch to the unminified version located at `C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q2\Html5\ReportViewer\js\telerikReportViewer-19.1.25.521.js` to follow the steps from this article.
+
+For WebForms projects, the JavaScript file is embedded in a DLL. To resolve the issue in this case, copy the JavaScript file from the above location, modify it as outlined in the upcoming steps, add it to your project, and reference it with a script tag immediately after the last closing `</telerik:ReportViewer>` tag.
 
 ### Fixing Toolbar Element Initialization
 
@@ -55,7 +59,6 @@ if (pageCountLabelEl) {
     new PageCountLabel(pageCountLabelEl, this._options);
 }
 ````
-
 
 ### Fixing Export Functionality
 
@@ -84,7 +87,7 @@ const $element = $(this._element);
     if (!kendoExportDropDown) {
         return;
     }
-    ````
+````
 
 
 ### Summary

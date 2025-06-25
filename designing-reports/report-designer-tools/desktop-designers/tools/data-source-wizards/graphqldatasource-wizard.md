@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 The __GraphQL Data Source Wizard__ allows you to create new or edit existing __GraphQLDataSource__ components based on several settings. After the wizard appears, you have to perform the following steps:
 
-1. __Configure data retrieval__: Setup the properties of the HTTP request which will retrieve data from the GraphQL service: 
+1. __Configure data retrieval__: Setup the properties of the HTTP request that will retrieve data from the GraphQL service: 
 
 	!["Use GraphQL Request" tab of the "Configure data retrieval" window of the GraphQLDataSource Wizard. Includes the configurable options "GraphQL Service URL", "Authentication Type", and "Encoding".](images/DataSources/graphql/data-retrieval-graphql-request.png)
 
@@ -29,7 +29,7 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 	| ------ | ------ |
 	|Service URL|The URL the request is sent to. Returns the data from the GraphQL service. Required.|
 	|Authentication Type|The authentication type. The supported options are Basic and 2-step authentications.|
-	|Encoding|Data encoding. Default is UTF-8.|
+	|Encoding|Data encoding. The default is UTF-8.|
 
 	And/or enter data inline:
 
@@ -37,7 +37,7 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 
 	| Setting | Description |
 	| ------ | ------ |
-	|Source|The inline data string containing the data. Required if Service URL or external data file is not set.|
+	|Source|The inline data string containing the data. Required if the Service URL or external data file is not set.|
 
 	And/or reference an external data file:
 
@@ -45,13 +45,13 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 
 	| Setting | Description |
 	| ------ | ------ |
-	|Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if Service URL or inline data string is not set.|
+	|Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if the Service URL or inline data string is not set.|
 
 1. __Configure GraphQL Query__: Allows you to define the actual GraphQL query that will be sent to the service. You can write a static query or use inline parameters to dynamically inject values into the query string.
 
 	!["Configure GraphQL Query" window of the GraphQLDataSource Wizard. Includes a pre-configured query that utilizes inline parameters.](images/DataSources/graphql/configure-graphql-query.png)
 
-1. __Configure request parameters__: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({% slug graphqldatasource-parameters %}).
+1. __Configure request parameters__: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({%slug graphqldatasource-parameters%}).
 
 	!["Configure request parameters" window of the GraphQLDataSource Wizard. Includes 5 pre-configured parameters: a header parameter for the HTTP header "Authorization" and four inline parameters, named "data", "status", "name", and "endpoint".](images/DataSources/graphql/configure-request-parameters.png)
 
@@ -79,15 +79,15 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 	|Logout Body|The body of the logout HTTP request.|
 
 
-1. __2-Step Authentication Parameters__: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields with an expression result or static value.
+1. __2-Step Authentication Parameters__: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields with an expression result or static value.
 
 1. __Preview data source results__: Allows you to preview the result from the configurations you have applied so far.
 
-	!["Preview data source results" window of the GraphQLDataSource Wizard. On the left, there is a "Download" button, responsible for displaying the data. On the right, there is a text box allowing to configure the JSONPath data selector to further filter the result.](images/DataSources/graphql/preview-data-source-results.png)
+	!["Preview data source results" window of the GraphQLDataSource Wizard. On the left, there is a "Download" button, responsible for displaying the data. On the right, there is a text box allowing you to configure the JSONPath data selector to further filter the result.](images/DataSources/graphql/preview-data-source-results.png)
 
 	| Setting | Description |
 	| ------ | ------ |
-	|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}).|
+	|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string, which will be used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}).|
 
 
 ## See Also

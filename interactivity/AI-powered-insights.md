@@ -86,7 +86,7 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
 ````
 The following screenshot shows the UI of the AI system after configuration.
 
-![the UI of the AI system after configuration](images/UIOfTheAI.png)
+![The UI of the AI system after configuration.](images/UIOfTheAI.png)
 
 ## Extensibility
 

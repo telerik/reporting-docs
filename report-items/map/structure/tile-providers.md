@@ -22,6 +22,36 @@ The [`BingMapsTileProvider`](/api/Telerik.Reporting.BingMapsTileProvider) uses t
 
 The `BingMapsTileProvider` provides the **Aerial**, **Road**, and **Aerial with Labels** (an Aerial imagery with a road overlay) types of imagery sets that are mapped to the predefined values of the [`ImagerySet`](/api/Telerik.Reporting.ImagerySet) property (`Aerial`, `Road`, `Hybrid`). Changing the imagery set causes the `BingTileProvider` to request images from a different tile set, thus changing the look of the map. The tile server requires a Bing Maps Key client token for authentication which you can obtain from the [Bing Maps website](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
 
+>caution Microsoft has announced the deprecation of **Bing Maps for Enterprise**:
+> * `Free (Basic)` accounts can use Bing Maps services until June 30, 2025.
+> * `Enterprise` accounts can continue until June 30, 2028.
+> The official Microsoft recommendation is for users to migrate to [Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/) prior to these periods to avoid service distruptions.
+> Telerik Reporting introduced support for Azure Maps through dedicated providers in Q2 2025 to address the deprecation of Bing Maps for Enterprise.
+
+## Azure Maps Tile Provider
+
+The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Get Map Tiles Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom level, tile sizes, and coordinates.
+
+The `AzureMapsTileProvider` supports a variety of tilesets that let you customize the appearance and data shown on your map. Available tilesets include:
+
+* **BaseRoad** – Basic road map (default style)
+* **BaseHybridRoad** – Road map overlaid on satellite imagery
+* **BaseLabelsDarkGray** – Labels styled for dark gray base maps
+* **BaseLabelsRoad** – Adds road labels to the base map
+* **BaseDarkGrey** – Dark-themed base map, ideal for night mode or data overlays
+* **BaseHybridDarkGrey** – Hybrid of satellite imagery with dark gray overlays and labels
+* **Imagery** – Raw satellite imagery without overlays
+* **TerraMain** – Terrain-focused map with elevation and natural features
+* **TrafficAbsoluteMain** – Shows absolute traffic speeds
+* **TrafficDelayMain** – Highlights delays compared to normal traffic
+* **TrafficReducedMain** – Indicates reduced traffic flow
+* **TrafficRelativeDark** – Relative congestion styled for dark maps
+* **TrafficRelativeMain** – Relative congestion levels on standard maps
+* **WeatherInfraredMain** – Infrared satellite imagery for weather monitoring
+* **WeatherRadarMain** – Real-time radar data showing precipitation and storms
+
+To use this provider, an Azure Maps subscription key is required. You can obtain a key by [creating an Azure Maps account through the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#create-an-azure-maps-account). For more information on how to access the key, refer to [Get the subscription key for your account](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#get-the-subscription-key-for-your-account).
+
 ## Generic Tile Provider
 
 The [`GenericTileProvider`](/api/Telerik.Reporting.GenericTileProvider) requires the user to manually provide a template to the server URL, the subdomain names if needed, the application user agent, the attribution text, and the URL.

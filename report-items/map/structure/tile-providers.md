@@ -30,13 +30,27 @@ The `BingMapsTileProvider` provides the **Aerial**, **Road**, and **Aerial with 
 
 ## Azure Maps Tile Provider
 
-The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Render Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom level, tile sizes, and coordinates.
+The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Get Map Tiles Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom level, tile sizes, and coordinates.
 
-The AzureMapsTileProvider supports multiple tilesets, such as:
+The `AzureMapsTileProvider` supports a variety of tilesets that let you customize the appearance and data shown on your map. Available tilesets include:
 
-* **BaseRoad** - Basic road map
+* **BaseRoad** – Basic road map (default style)
+* **BaseHybridRoad** – Road map overlaid on satellite imagery
+* **BaseLabelsDarkGray** – Labels styled for dark gray base maps
+* **BaseLabelsRoad** – Adds road labels to the base map
+* **BaseDarkGrey** – Dark-themed base map, ideal for night mode or data overlays
+* **BaseHybridDarkGrey** – Hybrid of satellite imagery with dark gray overlays and labels
+* **Imagery** – Raw satellite imagery without overlays
+* **TerraMain** – Terrain-focused map with elevation and natural features
+* **TrafficAbsoluteMain** – Shows absolute traffic speeds
+* **TrafficDelayMain** – Highlights delays compared to normal traffic
+* **TrafficReducedMain** – Indicates reduced traffic flow
+* **TrafficRelativeDark** – Relative congestion styled for dark maps
+* **TrafficRelativeMain** – Relative congestion levels on standard maps
+* **WeatherInfraredMain** – Infrared satellite imagery for weather monitoring
+* **WeatherRadarMain** – Real-time radar data showing precipitation and storms
 
-To use this provider, an Azure Maps subscription key is required. You can obtain a key by creating an Azure Maps account through the Azure Portal. The key is used to authenticate requests to the Azure Maps services.
+To use this provider, an Azure Maps subscription key is required. You can obtain a key by [creating an Azure Maps account through the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#create-an-azure-maps-account). For more information on how to access the key, refer to [Get the subscription key for your account](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#get-the-subscription-key-for-your-account).
 
 ## Generic Tile Provider
 

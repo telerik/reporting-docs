@@ -54,7 +54,7 @@ Define parameters for the HTTP request. The supported types are Query, Header, C
 
 ### Configure Basic Authentication (Optional)
 
-> This step is skipped unless you choose `Basic` authentication in the first step of the wizard.
+>note This step is skipped unless you choose `Basic` authentication in the first step of the wizard.
 
 Enter the credentials for basic authentication.
 
@@ -89,7 +89,7 @@ Set up the settings for the 2-step (Bearer) authentication.
 
 Specify parameters for the authentication HTTP request. The supported types are Query, Header, Cookie, and Inline, like in the [Configure Request Parameters step](#configure-request-parameters).
 
-!["Configure authentication parameters" window of the GraphQLDataSource Wizard. Features a grid showcasing the current parameters, as well as a "plus" icon for adding new ones.](images/graphqldatasource/configure-2-step-authentication.png)
+!["Configure authentication parameters" window of the GraphQLDataSource Wizard. Features a grid showcasing the current parameters, as well as a "plus" icon for adding new ones.](images/graphqldatasource/configure-authentication-parameters.png)
 
 ### Choose Design-Time Data
 
@@ -99,9 +99,9 @@ Choose the source of design-time data (used, for example, to display available d
 * **Upload JSON file** – Use an external JSON file for the data. The URI can be relative or absolute.
 * **Use JSON inline as hard-coded data while designing the report** - Use a hard-coded JSON string.
 
-!["Choose design-time data" window of the GraphQLDataSource Wizard. Includes three buttons with the options "Use real data while designing the report", "Upload JSON file", and "Use JSON inline as hard-coded data while designing the report". The default one is "Use real data while designing the report".](images/graphqldatasource/choose-design-time-data.png)
-
 >tip Use an external JSON file or hard-coded data if the GraphQLDataSource component relies on a token that needs to be updated dynamically through report parameters. Report parameters can be used only at runtime.
+
+!["Choose design-time data" window of the GraphQLDataSource Wizard. Includes three buttons with the options "Use real data while designing the report", "Upload JSON file", and "Use JSON inline as hard-coded data while designing the report". The default one is "Use real data while designing the report".](images/graphqldatasource/choose-design-time-data.png)
 
 ### Preview Data Source Results
 

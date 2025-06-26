@@ -65,7 +65,7 @@ In the **Available data sources** list, you will see the data source you've alre
 
 1. On the __Choose a location provider__ page, select the location provider that will be used to geocode the __State__ field that was dragged in the **Categories (location)** box on the previous page.
 
-	Currently, the supported providers are [`MapQuestOpenAPILocationProvider`](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider), [`MapQuestLocationProvider`](/reporting/api/Telerik.Reporting.MapQuestLocationProvider) and [`BingLocationProvider`](/reporting/api/Telerik.Reporting.BingLocationProvider). They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item. Once you have obtained the key, paste it in the **Client token** box:
+	Currently, the supported providers are [`MapQuestOpenAPILocationProvider`](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider), [`MapQuestLocationProvider`](/reporting/api/Telerik.Reporting.MapQuestLocationProvider), [`BingLocationProvider`](/reporting/api/Telerik.Reporting.BingLocationProvider), and [`AzureLocationProvider`](/reporting/api/Telerik.Reporting.AzureLocationProvider). They all require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item. Once you have obtained the key, paste it in the **Client token** box:
 
 	![Choose A Location Provider page of the Standalone Report Designer Map Wizard](images/ChooseALocationProvider.png)
 

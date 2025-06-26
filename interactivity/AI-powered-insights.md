@@ -18,6 +18,44 @@ The AI-powered insights during report preview provide comprehensive capabilities
 
 * Output: This feature generates outputs from the AI, including summaries, highlights, and other predefined commands, enhancing the overall productivity and efficiency of the report viewer.
 
+## Feature Concept
+
+Enable users to get quick answers from reports without external tools, enhancing productivity. To do that, integrate GenAI into report previews, offering predefined and custom prompts for summaries and answers.
+
+1. Prompt UI Implementation:
+
+* Integrate prompt UI into the Web report viewer first, followed by other viewers
+* Offer predefined summary prompts to enhance productivity
+* Request end-user consent for data sharing with GenAI
+* Allow context selection (whole document, page number, range of pages)
+
+1. Backend:
+
+* Abstract the backend to enable client developers to hook a GenAI service of choice
+* Provide implementations for `OpenAI`, `Azure AI Inference`, `Azure OpenAI`, `Ollama`, and `OpenAI`.
+* Test and provide implementation for local LLM models for zero cost and data safety
+
+1. Acceptance Criteria:
+
+* Extract text from whole documents or page ranges in a suitable format for GenAI
+* Abstract GenAI calls using MS semantic kernel or similar
+* Support `OpenAI`/`Azure OpenAI` and other built-in services
+* Enable use of local LLMs like Syncfusion
+* Configure viewer UI to show prompt UI only if the backend is set up
+* Reuse `Kendo`/`Telerik` components for prompt UI
+* Allow predefined and custom prompts
+* Request end-user consent for data sharing
+* Configure report viewer model for predefined prompts, custom prompts, and data sharing consent
+
+1. Viewer Support:
+
+* Ensure support for `jQuery`, `Angular`, `Blazor`, `WPF`, and `WinForms` report viewers.
+* UX design for Insights pane
+
+## User Consent for AI Summaries
+
+Before using the AI Prompt Dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
+
 ## Configure the AI
 
 | Setting | Description |
@@ -107,3 +145,9 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 ````
 
  > The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.
+
+## See Also
+
+* [Overview of the AI Interactivity]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/ai-interactivity%})
+* [AIClient Element Overview]({%slug telerikreporting/aiclient-element%})
+* [Interface IClient](https://docs.telerik.com/reporting/api/telerik.reporting.ai.iclient)

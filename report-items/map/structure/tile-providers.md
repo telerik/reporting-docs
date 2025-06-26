@@ -30,9 +30,11 @@ The `BingMapsTileProvider` provides the **Aerial**, **Road**, and **Aerial with 
 
 ## Azure Maps Tile Provider
 
-The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Render Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom levels, tile sizes, and attribution information using metadata from the Azure Maps platform.
+The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Render Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom level, tile sizes, and coordinates.
 
-The AzureMapsTileProvider supports multiple imagery styles, including **Road**, **Satellite**, and **Hybrid** (satellite imagery with labels), which are mapped to the predefined values of the ImagerySet property. Changing the imagery set causes the provider to request tiles from a different Azure Maps layer, altering the visual appearance of the map.
+The AzureMapsTileProvider supports multiple tilesets, such as:
+
+* **BaseRoad** - Basic road map
 
 To use this provider, an Azure Maps subscription key is required. You can obtain a key by creating an Azure Maps account through the Azure Portal. The key is used to authenticate requests to the Azure Maps services.
 

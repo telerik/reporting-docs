@@ -32,7 +32,7 @@ The `BingMapsTileProvider` provides the **Aerial**, **Road**, and **Aerial with 
 
 The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Get Map Tiles Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom level, tile sizes, and coordinates.
 
-The `AzureMapsTileProvider` supports a variety of tilesets that let you customize the appearance and data shown on your map. Available tilesets include:
+The `AzureMapsTileProvider` supports a variety of tilesets that let you customize the appearance and data shown on your map. The available tilesets include:
 
 * **BaseRoad** – Basic road map (default style)
 * **BaseHybridRoad** – Road map overlaid on satellite imagery

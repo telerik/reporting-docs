@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-After upgrading to version 19.1.25.521, parameter editors implemented for the [HTML5 Report Viewer](https://docs.telerik.com/reporting/html5-report-viewer) no longer appear as intended. The underlying code is not executed, causing the parameter editors to revert to the default implementation.
+After upgrading to version 19.1.25.521, parameter editors implemented for the HTML5 Report Viewer no longer appear as intended. The underlying code is not executed, causing the parameter editors to revert to the default implementation.
 
 ## Cause
 

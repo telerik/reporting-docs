@@ -36,7 +36,7 @@ To create a timeline graphic, use a combination of [PictureBox]({%slug telerikre
 
 	Add a PictureBox to the report to display the fixed time scale from 12 am to 12 am. Here is a sample one:
 	
-	![A sample scale for the TimeLine Chart.](images/scale.png)
+	![A sample scale for the Timeline Chart.](images/scale.png)
 
 1. **Prepare Data Source**:
 
@@ -115,9 +115,12 @@ To create a timeline graphic, use a combination of [PictureBox]({%slug telerikre
 
 1. **Align Lists to Scale**:
 
-	Position the Lists below the PictureBox to ensure alignment with the time scale. The total "Length" is always 24, hence the multiplier `0.25` should be used with PictureBox/Scale that is `24*0.25 in = 6 in` long.
+	Position the Lists below the PictureBox to ensure alignment with the time scale. The total "Length" is always 24, hence the multiplier `0.25` should be used with PictureBox/Scale that is `24*0.25 in = 6 in` long. For other sizes use the corresponding multiplier.
 
 
+## Download Sample
+
+A sample report may be downloaded from our Reporting-Samples repo [TimeLineChart.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/TimeLineChart.trdx)
 
 ## See Also
 

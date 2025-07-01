@@ -121,5 +121,5 @@ To create a timeline graphic, use a combination of [PictureBox]({%slug telerikre
 
 ## See Also
 
-* [PictureBox Documentation](https://docs.telerik.com/reporting/report-items/picturebox)
-* [List Item Documentation](https://docs.telerik.com/reporting/report-items/list)
+* [PictureBox Documentation]({%slug telerikreporting/designing-reports/report-structure/picturebox%})
+* [List Item Documentation]({%slug table_template_items%}#list)

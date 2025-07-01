@@ -12,16 +12,16 @@ res_type: kb
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>19.1.25.521</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr>
+         <td>Product</td>
+         <td>Progress® Telerik® Reporting</td>
+      </tr>
+      <tr>
+         <td>Version</td>
+         <td>19.1.25.521</td>
+      </tr>
+   </tbody>
 </table>
 
 ## Description
@@ -40,17 +40,15 @@ To resolve this issue, modify the `telerikReportViewer-19.1.25.521.js` file to i
 
    Find the `telerikReportViewer-19.1.25.521.js` file in the installation directory:
 
-   ````
-   C:\Program Files (x86)\Progress\Telerik Reporting R3 2025\Html5\ReportViewer\js\telerikReportViewer-19.1.25.521.js
-   ````
+   `C:\Program Files (x86)\Progress\Telerik Reporting R3 2025\Html5\ReportViewer\js\telerikReportViewer-19.1.25.521.js`
 
    Copy this file to your project's directory.
 
-2. **Find the ParameterEditors array**
+1. **Find the ParameterEditors array**
 
    Open the copied file and search for the `ParameterEditors` array definition.
 
-3. **Customize the editor logic**
+1. **Customize the editor logic**
 
    Choose one of the following approaches based on your requirements:
 
@@ -59,7 +57,7 @@ To resolve this issue, modify the `telerikReportViewer-19.1.25.521.js` file to i
    If you want to override the editor for a specific type (e.g., DateTime), locate the existing entry (for example, the entry with `match: parameterEditorsMatch.DateTime`) and replace the `createEditor` function with your own implementation:
 
    ````javascript
-   var ParameterEditors = [
+var ParameterEditors = [
        // ...existing editors...
        {
            match: parameterEditorsMatch.DateTime,
@@ -67,26 +65,27 @@ To resolve this issue, modify the `telerikReportViewer-19.1.25.521.js` file to i
        },
        // ...remaining editors...
    ];
-   ````
+````
 
    **Option B: Add a new custom editor**
 
    If you want to use your own matching logic, add a new entry to the end of the `ParameterEditors` array:
 
    ````javascript
-   var ParameterEditors = [
+var ParameterEditors = [
        // ...existing editors...
        {
            match: customMatch,
            createEditor: createCustomEditor
        }
    ];
-   ````
+````
 
-4. **Update your project references**
+
+1. **Update your project references**
 
    Replace the reference to the original `telerikReportViewer-19.1.25.521.js`/`telerikReportViewer-19.1.25.521.min.js` file with the path to your modified version.
 
-5. **Test the implementation**
+1. **Test the implementation**
 
    Test the implementation to verify that the custom parameter editor renders correctly and functions as expected.

@@ -10,20 +10,21 @@ ticketid: 1691259
 ---
 
 ## Environment
+
 <table>
-<tbody>
-<tr>
-<td> Product </td>
-<td> Progress® Telerik® Reporting </td>
-</tr>
-</tbody>
+	<tbody>
+		<tr>
+			<td> Product </td>
+			<td> Progress® Telerik® Reporting </td>
+		</tr>
+	</tbody>
 </table>
 
 ## Description
 
 I need to create a timeline graphic with the Report Designer that displays time detail and attendance. The timeline should visually showcase mismatches between entered attendance and hours clocked by employees. It needs to include a scale from 12 am to 12 am and use visual elements to represent time, attendance, and mismatches with distinct colors.
 
-This knowledge base article also answers the following questions:
+This knowledge-base article also answers the following questions:
 - How to replicate a timeline design in Telerik Reporting?
 - How to use PictureBox and List items to build a timeline in Telerik Reporting?
 - How to visualize mismatches between time and attendance in Telerik Reporting?

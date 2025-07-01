@@ -1,11 +1,10 @@
 ---
-title: Creating a Timeline in Progress® Telerik® Reporting Designer
-description: Learn how to create a timeline graphic in Progress® Telerik® Reporting Designer using PictureBox and List items.
+title: Creating a Timeline Chart
+description: Learn how to create a timeline graphic in Telerik Reporting Designer using PictureBox and List items.
 type: how-to
 page_title: How to Create Timeline Graphics in Telerik Reporting Designer
-meta_title: How to Create Timeline Graphics in Telerik Reporting Designer
 slug: create-timeline-telerik-reporting
-tags: telerik, reporting, timeline, linear-gauge, picturebox, list, bar-chart, ohlc-chart
+tags: telerik, reporting, timeline, picturebox, list
 res_type: kb
 ticketid: 1691259
 ---
@@ -17,16 +16,12 @@ ticketid: 1691259
 <td> Product </td>
 <td> Progress® Telerik® Reporting </td>
 </tr>
-<tr>
-<td> Version </td>
-<td> 19.1.25.521 </td>
-</tr>
 </tbody>
 </table>
 
 ## Description
 
-I need to create a timeline graphic in Progress® Telerik® Reporting Designer that displays time detail and attendance. The timeline should visually showcase mismatches between entered attendance and hours clocked by employees. It needs to include a scale from 12 am to 12 am and use visual elements to represent time, attendance, and mismatches with distinct colors.
+I need to create a timeline graphic with the Report Designer that displays time detail and attendance. The timeline should visually showcase mismatches between entered attendance and hours clocked by employees. It needs to include a scale from 12 am to 12 am and use visual elements to represent time, attendance, and mismatches with distinct colors.
 
 This knowledge base article also answers the following questions:
 - How to replicate a timeline design in Telerik Reporting?
@@ -35,78 +30,94 @@ This knowledge base article also answers the following questions:
 
 ## Solution
 
-To create a timeline graphic, use either the [Linear Gauge](https://docs.telerik.com/reporting/report-items/gauge/linear-gauge) or a combination of [PictureBox](https://docs.telerik.com/reporting/report-items/picturebox) and List items. Below are the steps to achieve the desired result:
+To create a timeline graphic, use a combination of [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) and [List]({%slug table_template_items%}#list) items. Below are the steps to achieve the desired result:
 
-### Using PictureBox and List Items
+1. **Create PictureBox for Scale**:
+
+	Add a PictureBox to the report to display the fixed time scale from 12 am to 12 am.
 
 1. **Prepare Data Source**:
-   Convert the existing data source to include numerical representation for mismatches. Use a structure like this:
-   ```json
-   [{
-       "Details":[
-           {
-               "Index": 0,
-               "Color": "Blue",
-               "Length": 6
-           },
-           {
-               "Index": 1,
-               "Color": "Green",
-               "Length": 4
-           },
-           {
-               "Index": 2,
-               "Color": "Red",
-               "Length": 2
-           }
-       ],
-       "Attendance":[
-           {
-               "Index": 0,
-               "Color": "Blue",
-               "Length": 4
-           },
-           {
-               "Index": 1,
-               "Color": "Green",
-               "Length": 6
-           },
-           {
-               "Index": 2,
-               "Color": "Red",
-               "Length": 2
-           }
-       ]
-   }]
-   ```
-   Ensure the `Index` field is unique for each array item.
 
-2. **Create PictureBox for Scale**:
-   Add a PictureBox to the report to display the fixed time scale from 12 am to 12 am.
+	Convert the existing data source to include numerical representation for the entered attendance ("Attendance" in the JSON below) and hours clocked by employees ("Details" in the JSON below). Both should include the following activities:
+	
+	* actual attendance hours (colors Green for "Details" and Blue for "Attendance")
+	* mismatches (Red color)
+	* hours without attendance (White color)
+	
+	Each array may contain multiple items for each activity type. Use a structure like this:
 
-3. **Configure List for Bars**:
-   - Add two Lists—one for "Time Detail" and one for "Attendance".
-   - Bind each List to its respective field (`Details` and `Attendance`) from the data source.
-   - Set the List's `RowGrouping` to a constant value (e.g., `1`) to ensure a single row.
-   - Configure `ColumnGrouping` to the `Index` field for dynamic column generation based on the data.
+	````JSON
+[{
+		"Details":[
+			{
+				"Index": 0,
+				"Color": "White",
+				"Length": 6
+			},
+			{
+				"Index": 1,
+				"Color": "Green",
+				"Length": 10
+			},
+			{
+				"Index": 2,
+				"Color": "Red",
+				"Length": 2
+			},
+			{
+				"Index": 3,
+				"Color": "White",
+				"Length": 6
+			}
+		],
+		"Attendance":[
+			{
+				"Index": 0,
+				"Color": "White",
+				"Length": 8
+			},
+			{
+				"Index": 1,
+				"Color": "Blue",
+				"Length": 8
+			},
+			{
+				"Index": 2,
+				"Color": "Red",
+				"Length": 2
+			},
+			{
+				"Index": 3,
+				"Color": "White",
+				"Length": 6
+			}
+		]
+	}]
+````
 
-4. **Style Panels in List**:
-   - Set the background color of each panel dynamically using binding: `= Fields.Color`.
-   - Adjust the width of each panel dynamically using binding: `= Fields.Length * 0.25 + "in"`. Modify the multiplier `0.25` to match the scale length.
+	* Ensure the `Index` field is unique for each array item. This is essential for the List column groups to be introduced later.
+	* The total sum of all "Length" fields in each array should be 24.
 
-5. **Align Lists to Scale**:
-   Position the Lists below the PictureBox to ensure alignment with the time scale.
+1. **Configure Lists for the Timeline Bars**:
 
-### Alternative Using Charts
+	* Add two Lists—one for "Detail" and one for "Attendance".
+	* Ensure the Lists have the smallest possible Width as they can only grow in runtime.
+	* [Bind]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) each List DataSource to its respective field (`Details` and `Attendance`) from the main data source.
+	* Set the List's `RowGrouping` to a constant value (e.g., `1`) to ensure a single row.
+	* Configure `ColumnGrouping` to the `Index` field for dynamic column generation based on the data. Since each Index is unique, there will be as many columns as records in the "Detail" and "Attendance".
 
-You can use [Bar Charts](https://docs.telerik.com/reporting/report-items/graph/chart-types/bar) or [OHLC Charts](https://docs.telerik.com/reporting/report-items/graph/chart-types/ohlc):
-- Remove unnecessary elements like legends, X-axis, and labels.
-- Adjust the chart width to match the fixed scale in the PictureBox.
-- Use multiple series to represent mismatches, attendance, and time.
+1. **Style Panels in List**:
+
+	* Set the background color of each panel dynamically using binding: `= Fields.Color`.
+	* Adjust the width of each panel dynamically using binding: `= Fields.Length * 0.25 + "in"`. Modify the multiplier `0.25` to match the scale length.
+
+1. **Align Lists to Scale**:
+
+	Position the Lists below the PictureBox to ensure alignment with the time scale. The total "Length" is always 24, hence the multiplier `0.25` should be used with PictureBox/Scale that is `24*0.25 in = 6 in` long.
+
+
 
 ## See Also
-- [Linear Gauge Documentation](https://docs.telerik.com/reporting/report-items/gauge/linear-gauge)
-- [PictureBox Documentation](https://docs.telerik.com/reporting/report-items/picturebox)
-- [List Item Documentation](https://docs.telerik.com/reporting/report-items/list)
-- [Bar Chart Documentation](https://docs.telerik.com/reporting/report-items/graph/chart-types/bar)
-- [OHLC Chart Documentation](https://docs.telerik.com/reporting/report-items/graph/chart-types/ohlc)
+
+* [PictureBox Documentation](https://docs.telerik.com/reporting/report-items/picturebox)
+* [List Item Documentation](https://docs.telerik.com/reporting/report-items/list)

@@ -5,7 +5,7 @@ description: "Learn how to import type (CSharp or Visual Basic) report definitio
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer
 tags: how,to,import,reports,created,with,the,vs,report,designer
 published: True
-position: 6
+position: 7
 previous_url: /standalone-report-designer-import-clr-reports
 ---
 

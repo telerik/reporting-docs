@@ -20,38 +20,38 @@ In this article, we will explain and visually demonstrate how the Standalone Rep
 
 Just as one would open a **TRDP/TRDX** file, now the **.CS/.VB** files will also be openable from the standard open file menu of the Standalone Report Designer for .NET.
 
-1. Upon selecting a .NET type report to open, the `Import Cide File Wizard` will start, and it will automatically populate the necessary inputs:
+1. Upon selecting a .NET type report to open, the `Import Code File Wizard` will start, and it will automatically populate the necessary inputs:
 
 	![The first step of the Import Code File Wizard where the paths to the report files are shown.](./images/srd-net-type-reports/srd-net-open-type-report.png)
 
-	> At this step, it is important to ensure that the .NET project that will be used to build the report targets `.NET`. A project that targets the older `.NET Framework` would produce an assembly that is not compatible with the Standalone Report Designer for .NET.
+	> At this step, it is important to ensure that the project that will be used to build the report targets `.NET`. A project that targets the older `.NET Framework` would produce an assembly that is not compatible with the Standalone Report Designer for .NET.
 
-1. The next step is building the project. This step will create a new folder in the same directory as the executable file of the Standalone Report Designer for .NET whose name will be the *name of type report*.
+1. The next step is building the project. This step will create a new folder in the same directory as the executable file of the Standalone Report Designer for .NET whose name will be the *name of the Type Report*.
 
 	![The second step of the Import Code File Wizard where the project is built and the build information is outputed to the GUI.](./images/srd-net-type-reports/srd-net-build-type-report-project.png)
 
 ## Working with the .NET Type Report in the Report Designer
 
-Once the **Import Code File Wizard** is complete, the imported report will be automatically opened in a new tab in the Standalone Report Designer for .NET application.
+Once the **Import Code File Wizard** is completed, the imported report will be automatically opened in a new tab in the Standalone Report Designer for .NET application.
 
 When a .NET Type Report is opened in the application, and this is the currently focused tab, a new tab will appear in the toolbar menu - `.NET Report Tools`.
 
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
-- `Rebuild` - This button will trigger a rebuild of the project that was initially used to import the report. The newly generated assemblies of the built project(s) will be copied to the specifically created directory for the type report in the folder with the Standalone Report Designer for .NET executable.
+- `Rebuild` - This button will trigger a rebuild of the project that was initially used to import the report. The newly generated assemblies of the built project(s) will be copied to the dedicated directory for the type report.
 - `Preview with code behind` - This button will trigger a preview of the .NET Type Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
 
 > Be advised that our algorithm mimics the Visual Studio one only semantically. This means that the initial report modification will introduce significant changes in the serialized code, but the component tree will be preserved. Please use versioning for your reports to have clear tracking of the changes. The non-designer partial class files stay intact, so custom code is preserved and ready to work alongside the generated design logic.
 
 ## Internal Logic for .NET Type Reports in the Report Designer
 
-While it will appear that the .NET Type Report is being rendered by the Standalone Report Designer for .NET, internally we read and display the report definition as a `TRDP` file.
+While it will appear that the .NET Type Report is being rendered by the Standalone Report Designer for .NET, internally, we read and display the report definition as a `TRDP` file.
 
 When the .NET Type Report is initially imported, the designer creates a dedicated folder based on the type name of the report class. This folder contains the following files and subfolders:
 
-![The imported .NET Type Report's automatically created folder with its contents.](./images/srd-net-type-reports/srd-net-preview-options.png)
+![The imported .NET Type Report's automatically created folder with its contents.](./images/srd-net-type-reports/srd-net-type-report-folder.png)
 
-- `bin` - Contains the assembly of the built project of the report and all of its dependant assemblies.
+- `bin` - Contains the assembly of the built project of the report and all of its dependent assemblies.
 - `{ReportName}.Designer.cs|.vb` - A backup of the `.designer` file that can be used in case our logic fails and the original file is wrongly edited by the application.
 - `{ReportName}.json` - A `JSON` file containing the report's type name, the loaded full type, paths to the project file, the designer file, etc.
 - `{ReportName}.trdp` - The actual report definition file loaded and displayed by the Standalone Report Designer for .NET. When editing the .NET Type Report from the tab in the designer application, behind-the-scenes, this is the actual file that is being changed, and its contents are later serialized from `XML` to `C#/VB` code in the `.designer` file through the [CodeDOM APIs](https://learn.microsoft.com/en-us/dotnet/api/system.codedom?view=windowsdesktop-9.0). Our code keeps the two files - the original `.designer` and the `TRDP` files in live-sync.

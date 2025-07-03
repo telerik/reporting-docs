@@ -100,6 +100,32 @@ echo "Copying $(telerikLicense.secureFilePath) to $(Build.Repository.LocalPath)/
 Copy-Item -Path $(telerikLicense.secureFilePath) -Destination "$(Build.Repository.LocalPath)/telerik-license.txt" -Force
 ````
 
+### Using TelerikLicensing.Register method
+
+As of version **1.6.7** [ Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) offers the parameterless **TelerikLicensing.Register()** method and the **TelerikLicensing.Register(…script key…)** method allowing the developers to validate the Telerik license when running [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions, plugins, or a class library that uses Telerik Reporting consumed by any third-party software. It is necessary to upgrade Telerik.Licensing NuGet package at least to **1.6.7** and call the *Register* method in the body of the function. Thus, the Telerik license will be validated, and the watermark should not be printed (for licensed users) in the generated document:
+
+````C#
+namespace LicensingInLambda;
+ 
+public class Function
+{
+    public string FunctionHandler(string input, ILambdaContext context)
+    {
+        // Lambda function entry point
+ 
+        // This requires Telerik.Licensing to be added to the function project
+        TelerikLicensing.Register();
+ 
+        // TODO: Reporting - generate PDF here
+ 
+        var entryAssembly = Assembly.GetEntryAssembly();
+        var name = entryAssembly?.GetName();
+ 
+        return $"Entry assembly: {entryAssembly?.GetName()} ... {Class1.DoYourMagic()}";
+    }
+}
+````
+
 ## See Also
 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})

@@ -10,7 +10,9 @@ position: 1
 
 # AI-Powered Insights Overview
 
-The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
+The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands. The following screenshot shows the UI of the AI system after configuration.
+
+![The UI of the AI system after configuration.](images/UIOfTheAI.png)
 
 ## AI Features
 
@@ -28,6 +30,8 @@ Enable users to get quick answers from reports without external tools, enhancing
 * Offer predefined summary prompts to enhance productivity
 * Request end-user consent for data sharing with GenAI
 * Allow context selection (whole document, page number, range of pages)
+
+![Image of the Prompt UI](images/AskAIPrompt.png)
 
 1. Backend:
 
@@ -55,6 +59,8 @@ Enable users to get quick answers from reports without external tools, enhancing
 ## User Consent for AI Summaries
 
 Before using the AI Prompt Dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
+
+![User Consent for AI Summaries](images/UserConsentForAI.png)
 
 ## Configure the AI
 
@@ -122,9 +128,6 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
      </AIClient>
  </Telerik.Reporting>
 ````
-The following screenshot shows the UI of the AI system after configuration.
-
-![The UI of the AI system after configuration.](images/UIOfTheAI.png)
 
 ## Extensibility
 

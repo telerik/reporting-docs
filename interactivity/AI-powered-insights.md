@@ -10,7 +10,7 @@ position: 1
 
 # AI-Powered Insights Overview
 
-The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands. The following screenshot shows the UI of the AI system after configuration.
+The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
 
 ![The UI of the AI system after configuration.](images/UIOfTheAI.png)
 

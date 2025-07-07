@@ -26,35 +26,31 @@ Enable users to get quick answers from reports without external tools, enhancing
 
 1. Prompt UI Implementation:
 
-* Integrate prompt UI into the Web report viewer first, followed by other viewers
-* Offer predefined summary prompts to enhance productivity
-* Request end-user consent for data sharing with GenAI
-* Allow context selection (whole document, page number, range of pages)
+	* Integrate prompt UI into the Web report viewer first, followed by other viewers
+	* Offers predefined summary prompts to enhance productivity
+	* Request end-user consent for data sharing with GenAI
+	* Allow context selection (whole document, page number, range of pages)
 
-![Image of the Prompt UI](images/AskAIPrompt.png)
+	![Image of the Prompt UI](images/AskAIPrompt.png)
 
 1. Backend:
 
-* Abstract the backend to enable client developers to hook a GenAI service of choice
-* Provide implementations for `OpenAI`, `Azure AI Inference`, `Azure OpenAI`, `Ollama`, and `OpenAI`.
-* Test and provide implementation for local LLM models for zero cost and data safety
+	* Abstract the backend to enable client developers to hook a GenAI service of choice
+	* Provide implementations for `OpenAI`, `Azure AI Inference`, `Azure OpenAI`, `Ollama`, and `OpenAI`.
+	* Test and provide implementation for local LLM models for zero cost and data safety
 
 1. Acceptance Criteria:
 
-* Extract text from whole documents or page ranges in a suitable format for GenAI
-* Abstract GenAI calls using MS semantic kernel or similar
-* Support `OpenAI`/`Azure OpenAI` and other built-in services
-* Enable use of local LLMs like Syncfusion
-* Configure viewer UI to show prompt UI only if the backend is set up
-* Reuse `Kendo`/`Telerik` components for prompt UI
-* Allow predefined and custom prompts
-* Request end-user consent for data sharing
-* Configure report viewer model for predefined prompts, custom prompts, and data sharing consent
+	* Extract text from whole documents or page ranges in a suitable format for GenAI
+	* Abstract GenAI calls using MS semantic kernel or similar
+	* Support `OpenAI`/`Azure OpenAI` and other built-in services
+	* Enable usage of local LLMs
+	* Configure the viewer UI to show the prompt only if the backend is set up
+	* Reuse `Kendo`/`Telerik` components for prompt UI
+	* Allow predefined and custom prompts
+	* Request end-user consent for data sharing
+	* Configure report viewer model for predefined prompts, custom prompts, and data sharing consent
 
-1. Viewer Support:
-
-* Ensure support for `jQuery`, `Angular`, `Blazor`, `WPF`, and `WinForms` report viewers.
-* UX design for Insights pane
 
 ## User Consent for AI Summaries
 
@@ -147,7 +143,7 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 }
 ````
 
- > The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.
+ >note The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.
 
 ## See Also
 

@@ -12,11 +12,39 @@ position: 1
 
 The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
 
-## AI Features
+![The UI of the AI system after configuration.](images/UIOfTheAI.png)
 
-* Ask AI: This window allows users to ask questions to the AI, facilitating dynamic responses based on the document context.
+## Feature Concept
 
-* Output: This feature generates outputs from the AI, including summaries, highlights, and other predefined commands, enhancing the overall productivity and efficiency of the report viewer.
+To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing a **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
+
+>note The **AI Prompt** functionality will be made available for the other [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) as well, in the releases to come. 
+
+### Key Features:
+
+- **Predefined Summary Prompts**  
+  Users can choose from a set of **predefined prompts** tailored for common tasks like summarization, explanation, and data insights—boosting efficiency with minimal effort.
+
+- **Custom AI Prompts**
+  Besides the predefined prompts, you can choose to allow custom prompts to be made by the end-users of the application.
+
+- **End-User Consent for Data Sharing**  
+  To ensure transparency and compliance, the **AI Prompt** will **request explicit consent** from users before sharing any data with GenAI services.
+
+- **Flexible Context Selection**  
+  Users can define the scope of the prompt by selecting:
+  
+  * The **entire document**
+  * A **specific page**
+  * A **range of pages**
+
+![Image of the Prompt UI](images/AskAIPrompt.png)
+
+## User Consent for AI Summaries
+
+Before using the AI Prompt Dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
+
+![User Consent for AI Summaries](images/UserConsentForAI.png)
 
 ## Configure the AI
 
@@ -103,4 +131,10 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 }
 ````
 
- > The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.
+ >note The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.
+
+## See Also
+
+* [Overview of the AI Interactivity]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/ai-interactivity%})
+* [AIClient Element Overview]({%slug telerikreporting/aiclient-element%})
+* [Interface IClient](https://docs.telerik.com/reporting/api/telerik.reporting.ai.iclient)

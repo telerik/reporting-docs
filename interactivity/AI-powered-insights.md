@@ -33,13 +33,12 @@ Enable users to get quick answers from reports without external tools, enhancing
 
 	![Image of the Prompt UI](images/AskAIPrompt.png)
 
-1. Backend:
+1. Easy Integration with Generative AI Services:
 
-	* Abstract the backend to enable client developers to hook a GenAI service of choice
-	* Provide implementations for `OpenAI`, `Azure AI Inference`, `Azure OpenAI`, `Ollama`, and `OpenAI`.
-	* Test and provide implementation for local LLM models for zero cost and data safety
+	* Easily connect to your preferred GenAI service, including OpenAI, Azure AI Inference, Azure OpenAI, and Ollama
+	* To ensure maximum data security and zero costs, we offer solutions for using local Large Language Models (LLMs)
 
-1. Acceptance Criteria:
+1. Simplified Text Extraction and GenAI Integration:
 
 	* Extract text from whole documents or page ranges in a suitable format for GenAI
 	* Abstract GenAI calls using MS semantic kernel or similar

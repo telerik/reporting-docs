@@ -71,11 +71,15 @@ To learn more about working with the HtmlTextBox item, see the [HtmlTextBox arti
 
 The PictureBox displays images within a report. It is ideal for product images, logos, barcodes, or any visual content in reports. The PictureBox supports various image formats, including Base64-encoded images, SVG, and common raster formats like BMP, GIF, JPEG, PNG, EXIF, and TIFF. It provides flexible data binding and layout options to fit various reporting needs.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_HXkVfOO66g?si=9aCvjaz43jLqvMas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 To learn more about working with the PictureBox item, see the [PictureBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/picturebox %}).
 
 ## CheckBox Report Item
 
 The Checkbox displays a check mark alongside text in a report. It visually represents boolean or multi-state data (such as approved/disapproved) and can be customized to match various data field values. Its main uses include displaying status indicators, approval states, or any scenario where a visual check mark is needed in a report. The item supports both static and data-driven content.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ab9VzzOq6YE?si=z1IxeMd7z_wC-WnB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the CheckBox item, see the [CheckBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/checkbox %}).
 
@@ -83,11 +87,15 @@ To learn more about working with the CheckBox item, see the [CheckBox article in
 
 The Barcode item allows you to automatically generate barcodes from numeric or character data within a report. It supports both 1D and 2D barcodes. The Barcode Report Item is ideal for adding machine-readable codes to reports, such as product labels, inventory sheets, tickets, or any scenario where barcodes are needed for scanning and automation.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3XjY_m84OHE?si=SBOnX-IzdxKgiL66" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 To learn more about working with the Barcode item, see the [Barcode article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/barcode/overview %}).
 
 ## Shape Report Item
 
 The Shape item displays a single, predefined geometric shape (such as lines, arrows, stars, or polygons) within a report. It also allows you to create custom shapes. The Shape item is ideal for adding visual elements, separators, highlights, or decorative graphics to reports, which lets you enhance readability and visual appeal. It can also be used to represent flow, direction, or status using arrows and other shapes.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lfhB-kZDfY8?si=Y8fqI0Iwfy7A8iix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Shape item, see the [Shape article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/shape %}).
 
@@ -95,13 +103,9 @@ To learn more about working with the Shape item, see the [Shape article in the m
 
 The Panel is a container used to group or separate multiple report items for layout and organizational purposes. It is not bound to data and does not affect the data context of its contents. The Panel is perfect for structuring complex report layouts, grouping related items, and applying shared properties or visibility rules to multiple items at once.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5e1NoMNfX6Y?si=yMNsbyJ_O7gQ9rK3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 To learn more about working with the Panel item, see the [Panel article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/panel %}).
-
-## Graph Report Item
-
-The Graph is a powerful tool for visualizing large volumes of aggregated data using various chart types. It is designed to create advanced OLAP and Pivot charts and supports multiple chart series and coordinate systems within a single chart. The Graph report item is ideal for creating dashboards, analytical reports, and any scenario where visual representation of data trends, comparisons, or summaries is needed.
-
-To learn more about working with the Graph item, see the [Graph article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/graph/overview %}).
 
 ## Gauge Report Item
 

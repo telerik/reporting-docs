@@ -14,8 +14,6 @@ The [`TileProvider`](/api/Telerik.Reporting.TileProvider) class requests and dow
 
 The tile provider requires you to configure a valid set of URLs to request the tiles, defined directly or through a URL template.
 
-The [Map](/api/Telerik.Reporting.Map) supports the [`BingMapsTileProvider`](/api/Telerik.Reporting.BingMapsTileProvider) and [`GenericTileProvider`](/api/Telerik.Reporting.GenericTileProvider) types of tile providers.
-
 ## Azure Maps Tile Provider
 
 The [`AzureMapsTileProvider`](/api/Telerik.Reporting.AzureMapsTileProvider) uses the [Azure Maps Get Map Tiles Request](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile) to get map imagery tiles based on the specified map extent. The provider automatically sets tile request URL, zoom level, tile sizes, and coordinates.

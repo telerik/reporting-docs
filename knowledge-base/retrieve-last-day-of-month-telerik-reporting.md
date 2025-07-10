@@ -27,21 +27,25 @@ ticketid: 1690706
 
 ## Description
 
-To obtain the last day of the month for a given date parameter, use the following formula. For instance, if the parameter date is `"2025-06-17"`, the formula will return `"2025-06-30"`.
+To obtain the last day of the month for a given [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) parameter, use the following formula. For instance, if the parameter date is `"2025-06-17"`, the formula will return `"2025-06-30"`.
 
 ## Solution
 
 To calculate the last day of the month for a specified date parameter (`Parameter1`), use the following formula:
 
-```plaintext
-= Parameters.Parameter1.Value.AddDays(CDbl(1 - Parameters.Parameter1.Value.Day)).AddMonths(0).AddMonths(1).AddDays(CDbl(-1))
-```
+`= Parameters.Parameter1.Value.AddDays(CDbl(1 - Parameters.Parameter1.Value.Day)).AddMonths(0).AddMonths(1).AddDays(CDbl(-1))`
 
-### Explanation:
+>note The fields of the data source component can also be used in the expression as long as they are a [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime).
+
+### Explanation
+
 1. Replace `Today()` with your parameter value, such as `Parameters.Parameter1.Value`, in the formula.
 1. The formula calculates the first day of the next month and subtracts one day to get the last day of the current month.
 
-### Example:
+### Example
+
 Suppose the parameter `Parameter1` has a value of `"2025-06-17"`. The formula will produce `"2025-06-30"`. 
 
-Refer to the official documentation on [Date and Time Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%}) for additional details on DateTime functions.
+## See Also
+
+* [Date and Time Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%})

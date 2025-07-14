@@ -37,8 +37,8 @@ Each report is constructed by [report items]({%slug telerikreporting/designing-r
       <td><ul><li>SubReport</li></ul></td>
     </tr>
     <tr>
-      <td><a href="Link to Maps article in the user guide"">Maps</a></td>
-      <td><ul><li></li><li></li></ul></td>
+      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/maps">Maps</a></td>
+      <td>The Map report item is a native Telerik Reporting item which enables you to visualize an aggregated business data in a geographical manner.<ul><li>Map types: Point, Pie, Column</li><li>Choropleth</li></ul></td>
     </tr>
     <tr>
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts">Charts</a></td>

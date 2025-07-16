@@ -1,9 +1,9 @@
 ---
-title: Renaming and Repositioning Preview Button in HTML5 ASP.NET Web Forms Report Viewer
-description: Learn how to rename and move the Preview button in the parameters section of the HTML5 ASP.NET Web Forms Report Viewer.
+title: Renaming and Repositioning Preview Button in HTML5-based Report Viewers
+description: "Learn how to rename and move the Preview button in the parameters section of the HTML5-based Report Viewers."
 type: how-to
-page_title: Changing and Moving the Preview Button in HTML5 ASP.NET Report Viewer
-meta_title: Changing and Moving the Preview Button in HTML5 ASP.NET Report Viewer
+page_title: Changing and Moving the Preview Button in HTML5 Report Viewer
+meta_title: Changing and Moving the Preview Button in HTML5 Report Viewer
 slug: rename-move-preview-button-html5-asp-net-report-viewer
 tags: html5, reportviewer, preview-button, parameters, localization
 res_type: kb
@@ -19,41 +19,53 @@ ticketid: 1690422
             <td> Progress® Telerik® Reporting </td>
         </tr>
         <tr>
-            <td> Version </td>
-            <td> 16.2.22.1109 </td>
+            <td> Viewer </td>
+            <td> HTML5-based Report Viewers </td>
         </tr>
     </tbody>
 </table>
 
 ## Description
 
-I want to rename the Preview button in the HTML5 ASP.NET Web Forms Report Viewer to match my custom requirements. Additionally, I want to reposition the Preview button to the top of the parameters area instead of its default position at the bottom.
+I want to rename the **Preview** button in the HTML5 Report Viewer or one of its wrappers to match my custom requirements. Additionally, I want to reposition the **Preview** button to the top of the parameters area instead of its default position at the bottom.
 
 ## Solution
 
 ### Renaming the Preview Button
 
-1. Locate the `telerikReportViewer.stringResources-19.1.25.521.js` file in the installation folder:  
-   `C:\Program Files (x86)\Progress\Telerik Reporting <Release>\Html5\ReportViewer\js`.
-
+1. Locate the `telerikReportViewer.stringResources-{{site.buildversion}}.js` file in the installation folder - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`.
 1. Open the file and replace the `parametersAreaPreviewButton: "Preview"` value with your desired button name.
+1. Copy the updated `telerikReportViewer.stringResources-{{site.buildversion}}.js`  file to your project's `Scripts` folder(*or any folder that you provide local files from such as __wwwroot__*).
 
-1. Copy the updated `.js` file to your project's `Scripts` folder. If the folder doesn't exist, create one.
+    ![The stringResource script file placed in a local directory inside the project](images/ScriptFolderWebForms.png)
 
-![Script Folder in WebForms.png](images/ScriptFolderWebForms.png)
+1. Reference the updated script file on the page with the HTML5-based Report Viewer before the `telerikReportViewer` script. For example:
+   
+    ````HTML
+<script src="/Scripts/telerikReportViewer.stringResources-19.1.25.521.js"></script>
+<script src="/api/reports/resources/js/telerikReportViewer"></script>
+````
 
-1. Reference the updated script in the `.aspx` file before the `telerikReportViewer` script. For example:
-    ```html
-    <script src="/Scripts/telerikReportViewer.stringResources-19.1.25.521.js"></script>
-    <script src="/api/reports/resources/js/telerikReportViewer"></script>
-    ```
-
-1. If the changes don't reflect, replace the entire content of the `stringResources` file with the localization snippet from [Localization of the HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).
 
 1. Compile and run your project to verify the updated button name.
 
 ### Moving the Preview Button to the Top
 
-1. Follow the instructions provided in [Move Preview Button at the Top of Parameters Area]({%slug how-to-move-preview-button-at-the-top-of-parameters-area%}).
+Use the followig CSS to move the **Preview** button to the top of the parameters area:
 
-1. Implement the required changes to reposition the Preview button within your project.
+````CSS
+        .trv-parameters-area.preview .trv-parameters-area-footer {
+            top: 0;
+        }
+
+        .trv-report-viewer .trv-parameters-area.preview .trv-parameters-area-content {
+            top: 3em;
+            bottom: 0;
+        }
+````
+
+
+## See Also
+
+* [Localization of the HTML5 Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%})
+* [Move Preview Button at the Top of Parameters Area]({%slug how-to-move-preview-button-at-the-top-of-parameters-area%})

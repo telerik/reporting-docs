@@ -1,6 +1,6 @@
 ---
-title: Resolving "This Implementation Is Not Part of the Windows Platform FIPS Validated Cryptographic Algorithms" Error When Exporting to Excel
-description: Learn how to resolve the error encountered when exporting reports to Excel with FIPS mode enabled.
+title: FIPS Implementation Error When Exporting to Excel(XLS)
+description: "Learn how to resolve the error encountered when exporting reports to Excel(97-2003) with FIPS mode enabled."
 type: how-to
 page_title: Fixing FIPS Error When Exporting Reports to Excel in Telerik Reporting
 meta_title: Fixing FIPS Error When Exporting Reports to Excel in Telerik Reporting
@@ -19,25 +19,39 @@ ticketid: 1692320
             <td> Progress® Telerik® Reporting </td>
         </tr>
         <tr>
-            <td> Version </td>
-            <td> 19.0.25.313 </td>
+            <td> Rendering Format </td>
+            <td> Excel 97-2003(XLS) </td>
         </tr>
     </tbody>
 </table>
 
 ## Description
 
-When exporting reports to Excel, the error message `'This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms'` may appear. This issue occurs in environments with FIPS mode enabled, as the Excel 97-2003 (XLS) export renderer utilizes cryptographic algorithms that are not FIPS-compliant. Due to company policies, modifying Windows Registry entries or disabling FIPS is not an option.
+When exporting reports to Excel 97-2003(XLS), the error message `'This implementation is not part of the Windows Platform FIPS validated cryptographic algorithms'` may appear. This issue occurs in environments with `FIPS` mode enabled, as the Excel 97-2003(XLS) export renderer utilizes cryptographic algorithms that are not FIPS-compliant. 
 
 ## Solution
 
-To resolve the issue, switch to the XLSX format for exporting reports. The XLSX renderer does not rely on the same cryptographic routines as the XLS renderer and is fully compatible with FIPS-enabled environments. Follow these steps:
+To resolve the issue, render the reports into the Excel 2007(XLSX) format instead. The `XLSX` renderer does not rely on the same cryptographic routines as the `XLS` renderer and is fully compatible with **FIPS-enabled environments**. Follow these steps to enable the `XLSX` export format in your application:
 
-1. Install the required dependencies for OpenXML formats (DOCX, XLSX, PPTX). Refer to the [OpenXML and XPS options missing]({%slug missing-docx-xlsx-pptx-xps-export-options%}) article for instructions on enabling OpenXML formats.
+1. Install the required dependencies for **OpenXML** formats (DOCX, XLSX, PPTX). Refer to the [OpenXML and XPS options missing]({%slug missing-docx-xlsx-pptx-xps-export-options%}) article for instructions on enabling **OpenXML** formats.
+1. (*Optional*) Configure the report export settings to hide the **XLS** format through the [extension element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}) so that users cannot trigger an export in that format.
 
-1. Configure the report export settings to use XLSX instead of XLS. Update the renderer settings to prioritize XLSX export.
+    ````XML
+<configuration>
+    <configSections>
+        <section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+    </configSections>
+    <Telerik.Reporting>
+        <extensions>
+            <render>
+                <extension name="XLS" visible="false">
+                </extension>
+            </render>
+        </extensions>
+    </Telerik.Reporting>
+</configuration>
+````
 
-1. Test the export functionality to ensure reports are successfully exported in the XLSX format without triggering FIPS-related errors.
 
 ## See Also
 

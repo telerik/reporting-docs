@@ -65,7 +65,7 @@ Starting from `19.1.25.521`, the HTML5-based report viewers rely on the browser'
 	
 		const headers = new Headers(init?.headers || {});
 	
-		if (typeof input === "string" && input.includes('api/reports')) {
+		if (typeof input === 'string' && input.includes('api/reports')) {
 			headers.set('X-Custom-Header', 'YourHeaderValue');
 		}
 	
@@ -80,11 +80,11 @@ Starting from `19.1.25.521`, the HTML5-based report viewers rely on the browser'
 ````JavaScript
 	const originalFetch = window.fetch;
 	
-	window.fetch = async function (input, init?) {
+	window.fetch = async function (input, init) {
 	
 		const headers = new Headers(init?.headers || {});
 	
-		if (typeof input === "string" && input.includes('api/reports')) {
+		if (typeof input === 'string' && input.includes('api/reports')) {
 			headers.set('X-Custom-Header', 'YourHeaderValue');
 		}
 	
@@ -102,18 +102,18 @@ Starting from `19.1.25.521`, the HTML5-based report viewers rely on the browser'
 Before the [2025 Q2 release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521), the report viewer implementation relied on jQuery-based requests. To add custom HTTP headers in this scenario, you can use jQuery's [ajaxSetup()](https://api.jquery.com/jquery.ajaxsetup/) function: 
 
 ````TypeScript
-	const $: any = (window as any)["jQuery"];
+	const $: any = (window as any)['jQuery'];
 
 	$.ajaxSetup({
 		beforeSend: function (xhr: XMLHttpRequest) {
-			xhr.setRequestHeader('X-Custom-Header', "CustomValue");
+			xhr.setRequestHeader('X-Custom-Header', 'CustomValue');
 		}
 	});
 ````
 ````JavaScript
 	$.ajaxSetup({
 		beforeSend: function (xhr: XMLHttpRequest) {
-			xhr.setRequestHeader('X-Custom-Header', "CustomValue");
+			xhr.setRequestHeader('X-Custom-Header', 'CustomValue');
 		}
 	});
 ````

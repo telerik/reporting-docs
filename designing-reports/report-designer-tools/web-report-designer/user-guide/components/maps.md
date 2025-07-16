@@ -5,9 +5,9 @@ description: Explore the available Maps report components offered by the Web Rep
 slug: web-report-designer-user-guide-components-maps
 tags: web, report, design, report, components, map
 published: True
-position: 3
+position: 4
 ---
-List
+
 <style>
 img[alt$="><"] {
   border: 1px solid lightgrey;
@@ -37,22 +37,25 @@ The **Web Report Designer** offers a **Maps** section inside the **Components** 
   </table>
 </div>
 
-## Prerequisites
 
-The **Map Report item** requires one Data Source collection for loading the visual (e.g. geographical) map data and one separate Data Source for the data itself storing the values that correspond to the respective location. 
+The **Map Report item** requires one source collection for loading the visual (e.g. geographical) map data (provided by a Location and Tile providers) and one separate Data Source for the data itself storing the values that correspond to the respective location (displayed as small charts on the map).
+
+![Azure Map with Pie Chart ><](images/wrd-components-tray-maps-azure-map-wit-pie-charts.png) 
+
+### Prerequisites
 
 Before creating the Map Report item, it is necessary to obtain a valid **Location Provider** key (e.g. Azure key) to authenticate the requests, so the user has to fill it in in the **ClientToken** property. Alternaively, provide the geographical coordinates of your points yourself and set up the MapSeries accordingly.
 
-## Location and Tile Providers
+### Location and Tile Providers
 
 The **Location Provider** matches the addresses or locations with geographical coordinates. The Map Report item provides support for the following location providers:
 
 |Location Provider|Description|
 |----|----|
-|Bing|The BingLocationProvider *(Deprecated)* uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
 |Azure| The AzureLocationProvider uses the [Azure Maps Get Geocoding Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.|
-|MapQuestOpenAPI|The MapQuestOpenAPILocationProvider uses the [MapQuest Geocoding Open API]() geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
-|MapQuest|The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
+|Bing |The BingLocationProvider *(Deprecated)* uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
+|MapQuestOpenAPI|The MapQuestOpenAPILocationProvider (Obsolete) uses the [MapQuest Geocoding Open API]() geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
+|MapQuest|The MapQuestLocationProvider (Obsolete) uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
 
 >caution Microsoft has announced the deprecation of **Bing Maps for Enterprise**:
 > * `Free (Basic)` accounts can use Bing Maps services until June 30, 2025.
@@ -65,7 +68,7 @@ The **Tile Provider** requests and downloads the imagery data for the specified 
 |TileProvider|Description|
 |----|----|
 |AzureMapsTileProvider|Supports a variety of tile sets that let you customize the appearance and data shown on your map.|
-|BingMapsTileProvider|*(Deprecated)* Uses the [Bing Maps REST Services](https://learn.microsoft.com/en-us/bingmaps/rest-services/) to request metadata information that is needed to resolve the tile requests URLs, zoom levels, tile sizes and attribution information such as the text or logo that will be displayed on the map.|
+|BingMapsTileProvider |*(Deprecated)* Uses the [Bing Maps REST Services](https://learn.microsoft.com/en-us/bingmaps/rest-services/) to request metadata information that is needed to resolve the tile requests URLs, zoom levels, tile sizes and attribution information such as the text or logo that will be displayed on the map.|
 |MapQuestTileProvider| *(Obsolete)* Uses the [`MapQuest`](https://www.mapquest.com/) tile servers that provides the tiles in the **OpenStreetMap Tiles** and the **MapQuest Open Aerial Tiles** imagery sets.|
 
 ## Map
@@ -125,6 +128,10 @@ Select the location provider (e.g. Azure) that will be used to geocode the **Sta
 ![Defining the Location and Tile Providers  ><](images/wrd-components-tray-maps-location-tile-providers.png)  
 
 A detailed video is available covering the complete process:
+
+//TODO
+
+Link to the video without Telerik banners https://progresssoftware-my.sharepoint.com/:v:/g/personal/dyordano_progress_com/EW8_Mc_Lwn9Kto9LL6rYqVMByDjXOKc9oGeUCGHznlQSQA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QuXvN9 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VGeM_g7Ieqg?si=6mGUiz4yEIV3Opnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

@@ -61,9 +61,13 @@ This tutorial will guide you through your first steps of creating a report from 
 
     ![Table Style ><](images/wrd-table-style.png)   
 
-7. Congratulations! Click the **Preview** button at the top right corner to see your first report with a table, populated with data coming from a web service. The tollbar allows you to easily export the report to the desired [format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}):
+7. Click the **Preview** button at the top right corner to see your first report with a table, populated with data coming from a web service. The tollbar allows you to easily export the report to the desired [format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}):
 
     ![Preview Report ><](images/wrd-preview-report.png)  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=h-Eu4paNlOkJkGF6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DXKlgq-MYIU?si=ezqIjyrUTPLziUXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

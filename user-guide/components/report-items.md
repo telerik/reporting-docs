@@ -121,16 +121,12 @@ The Gauge visualizes key performance indicators (KPIs) and progress toward goals
 
 ### Linear Gauge
 
-The linear gauge is represented by a horizontal or vertical scale and displays its value as a a percentage of the total scale's length. By clicking the **Linear Gauge Wizard** from the **Components tray**, the **Configure Linear Gauge** pane appears on the right side:  
+The Linear Gauge is represented by a horizontal or vertical scale and displays its value as a percentage of the total scale's length. To add a Linear Gauge, click the **Linear Gauge Wizard** in the **Components** tab, and then use the **Configure Linear Gauge** pane to adjust the settings.
+
+Depending on the gauge's orientation and range, you can create horizontal, vertical, single-range, and multi-range linear gauges.
 
 
-![Linear Gauge Wizard ><](images/wrd-report-items-linear-gauge-wizard.png)    
-According to the selected **Linear gauge type**, one of the following linear gauges can be created:
 
-|Type|Single-Range|Multi-Range|
-|----|----|----|
-|Horizontal|![Single Horizontal Linear Gauge](images/wrd-report-items-linear-gauge-single-horizontal.png)|![Multiple Horizontal Linear Gauge](images/wrd-report-items-linear-gauge-multiple-horizontal.png)| 
-|Vertical|![Single Vertical Linear Gauge](images/wrd-report-items-linear-gauge-single-vertical.png)|![Multiple Vertical Linear Gauge](images/wrd-report-items-linear-gauge-multiple-vertical.png)|  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cV10F3Hiky8?si=paPYNuf8TVI7WQwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

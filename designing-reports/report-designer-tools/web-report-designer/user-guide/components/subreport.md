@@ -19,7 +19,7 @@ img[alt$="><"] {
 
 The **Web Report Designer** offers a **Report** section inside the **Components** tray allowing the end-user to add a **SubReport** item which enables you to display reports within reports and serves as a container, similar to the report sections, growing in size depending on its children.
 
-![SubReport ><](images/wrd-components-subreport.png)   
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TDRZETEWtSk?si=Lgm3HkxytrWh0zTB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Creating Master-Detail Reports with SubReports
 
@@ -56,7 +56,11 @@ FROM [dbo].[Products]
 
 ![Report DataSource ><](images/wrd-components-subreport-report-data-source.png)    
 
-4\. From the **Components tray** drag two **TextBox** report items to the Details section and set the **Value** property to be bound to the **ProductName** and **UnitPrice** fields respectively:
+4\. From the **Components tray** drag two **TextBox** report items to the Details section:
+
+4\.1 Select each of the TextBoxes </br>
+4\.2 Set the **Value** property to be bound to the **ProductName** and **UnitPrice** fields respectively</br>
+4\.3 Use the Expression dialog for setting the desired field</br>
 
 ![Bind Product Fields ><](images/wrd-components-subreport-bind-product-fields.png)     
 
@@ -117,17 +121,15 @@ FROM [dbo].[Categories]
 
 ![Setup UriReportSource ><](images/wrd-components-subreport-urireportsource.png)   
 
-7\. Adjust the Parameters and link the SubReport parameter (ProductCategoryID) with the master report's **CategoryID** field:
+7\. Setup the relation between the parent anc child reports:</br>
+7\.1 Adjust the Parameters</br>
+7\.2 Link the SubReport parameter (ProductCategoryID) with the master report's **CategoryID** field</br>
 
 ![Setup ProductCategoryID Report Parameter ><](images/wrd-components-subreport-setup-productcategoryid-report-parameter.png)   
 
 8\. Save the changes and preview the master report. You will see all categories listed with the respective products for each category: 
 
 ![Master-Detail hierarchy ><](images/wrd-components-subreport-master-detail-hierarchy.png)    
-
-A detailed video is available covering the complete process:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TDRZETEWtSk?si=Lgm3HkxytrWh0zTB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

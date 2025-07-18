@@ -13,8 +13,14 @@ img[alt$="><"] {
   border: 1px solid lightgrey;
 }
 
+table th:first-of-type {
+	width: 20%;
+}
+table th:nth-of-type(2) {
+	width: 80%;
+}
 </style>
-
+ 
 # Maps 
 
 The **Web Report Designer** offers a **Maps** section inside the **Components** tray allowing the end-user to visualize aggregated business data in a geographical manner.
@@ -23,7 +29,7 @@ The **Web Report Designer** offers a **Maps** section inside the **Components** 
   <img alt="><" title="Components tray" src="images/wrd-components-tray-maps.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
   <table style="width:100%; height:100%;"> 
     <tr>
-      <th style="width:30%">Map Type</th><th>Description</th>
+      <th style="width:15%">Map Type</th><th>Description</th> 
     </tr>
     <tr>
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/maps#map">Map</a></td>
@@ -33,14 +39,11 @@ The **Web Report Designer** offers a **Maps** section inside the **Components** 
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/maps#choropleth">Choropleth</a></td>
       <td>The <a href="https://en.wikipedia.org/wiki/Choropleth_map">Choropleth map</a> type is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area.</td>
     </tr>
-    
+    <tr><td colspan=2 align=center><img alt="><" title="Components tray" src="images/wrd-components-tray-maps-azure-map-wit-pie-charts-small.png" /></td></tr>
   </table>
-</div>
-
+</div> 
 
 The **Map Report item** requires one source collection for loading the visual (e.g. geographical) map data (provided by a Location and Tile providers) and one separate Data Source for the data itself storing the values that correspond to the respective location (displayed as small charts on the map).
-
-![Azure Map with Pie Chart ><](images/wrd-components-tray-maps-azure-map-wit-pie-charts.png) 
 
 ### Prerequisites
 
@@ -111,13 +114,26 @@ AND PC.Name = 'Bikes'
 
 2\. Setup GeoLocationMapGroup for the **State** field:
 
+ 2\.1 Create a new GeoLocationMapGroup</br>
+ 2\.2 Add a new Grouping item</br>
+ 2\.3 Set the Expression to the **State** field</br>
+
 ![Adding a GeoLocationMapGroup ><](images/wrd-components-tray-maps-geolocationmapgroup.png)
 
 3\. Setup the Series Group using the **ProductSubCategory** field:
 
-![Adding a Series Map group ><](images/wrd-components-tray-maps-series-map-group.png) 
+ 3\.1 Create a new SeriesGroup</br>
+ 3\.2 Add a new Child Group item</br>
+ 3\.3 Add a new Grouping
+ 4\. Set the Expression to the **ProductSubCategory** field</br>
 
-4\. Setup the Series Type - Under the Presentation section add a new PieMapSeries, specify the LegendItem's Value, series' Size and all other properties that the dialog offers:
+![Adding a Series Map group ><](images/wrd-components-tray-maps-series-map-group.png)  
+
+4\. Setup the Series Type under the **Presentation** section:
+
+4\.1 Add a new **PieMapSeries**</br>
+4\.2 Specify the LegendItem's Value</br>
+4\.3 Specify the series' Size and all other properties that the dialog offers</br>
 
 ![Adding a PieGraphMapSeries ><](images/wrd-components-tray-maps-piegraph-mapseries.png)  
 
@@ -125,7 +141,7 @@ AND PC.Name = 'Bikes'
 
 Select the location provider (e.g. Azure) that will be used to geocode the **State** field. Once you obtain the key, paste it in the **ClientToken** box:
 
-![Defining the Location and Tile Providers  ><](images/wrd-components-tray-maps-location-tile-providers.png)  
+![Defining the Location and Tile Providers  ><](images/wrd-components-tray-maps-location-tile-providers.png)   
 
 A detailed video is available covering the complete process:
 
@@ -147,6 +163,8 @@ The choropleth below shows the 100 most populated countries:
 
 The video demonstrates how to create and set up a Choropleth map that will show the world population for each country and coloring its area depending on the population density value.
 
+Download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder. 
+
 The essential steps in the setup are:
 
 **Setting up Data Binding**:
@@ -157,7 +175,7 @@ The essential steps in the setup are:
 
 **Configuring the Map**:
 
-* Presentation >> Series >> You will use a CSV Data Source for the analytical data and an [ESRI Shapefile](https://en.wikipedia.org/wiki/Shapefile) for the spatial data: use a Shapefile bundle which consists of the **world.shp** and **world.dbf** files. The files are located in the `\Resources` subfolder of the directory where the `PopulationDensity.zip` file is extracted.
+* Presentation >> Series >> We will use a CSV Data Source for the analytical data and an [ESRI Shapefile](https://en.wikipedia.org/wiki/Shapefile) for the spatial data: use a Shapefile bundle which consists of the **world.shp** and **world.dbf** files. The files are located in the `\Resources` subfolder of the directory where the `PopulationDensity.zip` file is extracted.
 
 ![Choropleth map step 1 ><](images/wrd-components-tray-choropleth-map-step-1.png)  
 

@@ -12,11 +12,10 @@ List
 img[alt$="><"] {
   border: 1px solid lightgrey;
 }
-
 </style>
 
 # Charts 
-
+ 
 The **Web Report Designer** offers a **Charts** section inside the **Components** tray allowing the end-user to visualize the data records from different [Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) storages: 
 
 <div style="display: flex; align-items: flex-start; gap: 24px;">
@@ -56,7 +55,7 @@ Before adding a Chart report item, first, you need to select the **Details** sec
 
 ## Bar Charts
 
-By clicking the `Bar` item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**: 
+By clicking the `Bar` item from the **Components** tray (step 1.), a new tab will appear on the right-hand side of the **Web Report Designer** (step 2.): 
 
 >caption Configuration Settings
 
@@ -64,11 +63,9 @@ By clicking the `Bar` item from the **Components** tray, a new tab will appear o
 
 >note The *Configuration pane* is identical for all chart types, allowing the end-user to specify the Data Source and configure the Categories, Series and Values groups.
 
-You are ready to build the desired chart and use an already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}). According to the data that should be displayed, it is possible to configure **Categories**, **Series** and **Values** groups. The following short video shows how to feed the chart with data from the already existing SQL Data Source that displays the total **Freight** for each **Country**:
+Build the desired chart and use an already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}). According to the data that should be displayed, it is possible to configure **Categories**, **Series** and **Values** groups. The following short video shows how to feed the chart with data from the already existing SQL Data Source that displays the total **Freight** for each **Country**:
 
 >caption Populating Bar Chart with Orders' Freight by ShipCountry
-
-<!-- ![Configure Bar Chart ><](images/wrd-components-tray-charts-configure-bar-chart.gif)     -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PD8RnyexfvQ?si=-sUhyCqDy0FC54O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -101,13 +98,11 @@ Components, 2004, 310
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ypQHSpXnJkw?si=_pjCxfXAIfKoWBa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Now, we will create a Bar Chart that uses the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*. According to the selected Bar Chart Type, the following charts will be displayed:
+Create a Bar Chart that uses the **Year** column for the *Categories*, the **Category** column for the *Series* and the **Value** column for the *Values*. According to the selected Bar Chart Type, the following charts will be displayed:
 
-|Bar Chart Type||
-|----|----|
-|**Clustered Bar**|![Clustered Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-clustered-type.png)| 
-|**Stacked Bar**|![Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-stacked-type.png) |
-|**100% Stacked Bar**|![100% Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-100-stacked-type.png) |
+|**Clustered Bar**|**Stacked Bar**|**100% Stacked Bar**|
+|----|----|----|
+|![Clustered Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-clustered-type.png)|![Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-stacked-type.png)|![100% Stacked Bar Chart Type ](images/wrd-components-tray-charts-configure-bar-chart-100-stacked-type.png) |
 
 ## Column Charts
 
@@ -121,12 +116,9 @@ We will use the same *CSV Data Source* and configure the **Year** column for the
 
 According to the selected Column Chart Type, the following charts will be displayed: 
 
-|Column Chart Type||
-|----|----|
-|**Clustered Column**|![Clustered Column Chart Type ](images/wrd-components-tray-charts-configure-column-chart-clustered-type.png)|  
-|**Stacked Column**|![Stacked Column Type ](images/wrd-components-tray-charts-configure-column-chart-stacked-type.png) |
-|**100% Stacked Column**|![100% Stacked Column Chart Type ](images/wrd-components-tray-charts-configure-column-chart-100-stacked-type.png) |
-
+|**Clustered Column**|**Stacked Column**|**100% Stacked Column**|
+|----|----|----|
+|![Clustered Column Chart Type ](images/wrd-components-tray-charts-configure-column-chart-clustered-type.png)|![Stacked Column Type ](images/wrd-components-tray-charts-configure-column-chart-stacked-type.png)|  ![100% Stacked Column Chart Type ](images/wrd-components-tray-charts-configure-column-chart-100-stacked-type.png) |
 
 ## Area Charts
 
@@ -140,11 +132,9 @@ According to the selected **Area Chart Type**, the following charts will be disp
 
 ![Area Chart Type ><](images/wrd-components-tray-charts-configure-area-chart-types.png) 
 
-|Area Chart Type||
-|----|----|
-|**Area**|![Area Chart Type ](images/wrd-components-tray-charts-configure-area-chart-type.png)|   
-|**Stacked Area**|![Stacked Area Type ](images/wrd-components-tray-charts-configure-stacked-area-type.png) |
-|**100% Stacked Area**|![100% Stacked Area Type ](images/wrd-components-tray-charts-configure-area-100-stacked-type.png) | 
+|**Area**|**Stacked Area**|**100% Stacked Area**|
+|----|----|----|
+|![Area Chart Type ](images/wrd-components-tray-charts-configure-area-chart-type.png)|![Stacked Area Type ](images/wrd-components-tray-charts-configure-stacked-area-type.png)|![100% Stacked Area Type ](images/wrd-components-tray-charts-configure-area-100-stacked-type.png) | 
 
 ## Line Charts 
 
@@ -158,11 +148,15 @@ According to the selected **Line Chart Type**, the following charts will be disp
 
 ![Line Chart Type ><](images/wrd-components-tray-charts-configure-line-chart-types.png)  
 
-|Chart Type|Line|Line with Markers|
+The table illustrates how each of the chart types is expected to look:
+
+|**Line**|**Stacked Line**|**100% Stacked Line**|
 |----|----|----|
-|**Line**|![Line Chart Type ](images/wrd-components-tray-charts-configure-line-chart-type.png)| ![Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-chart-type.png) | 
-|**Stacked Line**|![Stacked Line Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-type.png) | ![Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-with-markers-type.png)|
-|**100% Stacked Line**|![100% Stacked Line Chart Type ](images/wrd-components-tray-charts-configure-line-100-stacked-type.png) | ![100% Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-100-stacked-type.png) 
+|![Line Chart Type ](images/wrd-components-tray-charts-configure-line-chart-type.png)|![Stacked Line Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-type.png) |![100% Stacked Line Chart Type ](images/wrd-components-tray-charts-configure-line-100-stacked-type.png)|
+
+|**Line with Markers**|**Stacked Line with Markers**|**100% Stacked Line with Markers**|
+|----|----|----|
+|![Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-chart-type.png)|![Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-with-markers-type.png)|![100% Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-100-stacked-type.png)|
 
 ## Pie Charts
 

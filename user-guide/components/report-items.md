@@ -125,9 +125,6 @@ The Linear Gauge is represented by a horizontal or vertical scale and displays i
 
 Depending on the gauge's orientation and range, you can create horizontal, vertical, single-range, and multi-range linear gauges.
 
-
-
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cV10F3Hiky8?si=paPYNuf8TVI7WQwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Gauge item, see the [Gauge article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/gauge/overview %}).

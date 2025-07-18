@@ -8,6 +8,12 @@ published: True
 position: 10
 ---
 
+<style>
+img[alt$="><"] {
+  border: 1px solid lightgrey;
+}
+</style>
+
 # Report Items in the Web Report Designer
 
 The Report Items are visual elements used to display and organize content within a report.
@@ -110,5 +116,15 @@ To learn more about working with the Panel item, see the [Panel article in the m
 ## Gauge Report Item
 
 The Gauge visualizes key performance indicators (KPIs) and progress toward goals. It supports both radial (circular, like speedometers) and linear (horizontal or vertical bars) gauges. You can incorporate the Gauge in dashboards and reports where you need to visualize KPIs, progress, or performance metrics at a glance, such as sales targets, speed, or completion percentages.
+
+### Radial Gauge
+
+### Linear Gauge
+
+The Linear Gauge is represented by a horizontal or vertical scale and displays its value as a percentage of the total scale's length. To add a Linear Gauge, click the **Linear Gauge Wizard** in the **Components** tab, and then use the **Configure Linear Gauge** pane to adjust the settings.
+
+Depending on the gauge's orientation and range, you can create horizontal, vertical, single-range, and multi-range linear gauges.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cV10F3Hiky8?si=paPYNuf8TVI7WQwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Gauge item, see the [Gauge article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/gauge/overview %}).

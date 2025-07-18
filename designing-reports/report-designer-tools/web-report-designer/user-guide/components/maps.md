@@ -112,27 +112,34 @@ AND PC.Name = 'Bikes'
 
 1\. Select the Details section of the report and from the **Components area** add a **Map report item**. Set the SqlDataSource you have already created the **DataSource** property. 
 
-2\. Setup GeoLocationMapGroup for the **State** field:
+2\. Setup GeoLocationMapGroup for the **State** field:</br>
 
  2\.1 Create a new GeoLocationMapGroup</br>
+
  2\.2 Add a new Grouping item</br>
+
  2\.3 Set the Expression to the **State** field</br>
 
 ![Adding a GeoLocationMapGroup ><](images/wrd-components-tray-maps-geolocationmapgroup.png)
 
-3\. Setup the Series Group using the **ProductSubCategory** field:
+3\. Setup the Series Group using the **ProductSubCategory** field:</br>
 
  3\.1 Create a new SeriesGroup</br>
+
  3\.2 Add a new Child Group item</br>
- 3\.3 Add a new Grouping
- 4\. Set the Expression to the **ProductSubCategory** field</br>
+
+ 3\.3 Add a new Grouping</br>
+
+ 4\.4 Set the Expression to the **ProductSubCategory** field</br>
 
 ![Adding a Series Map group ><](images/wrd-components-tray-maps-series-map-group.png)  
 
-4\. Setup the Series Type under the **Presentation** section:
+4\. Setup the Series Type under the **Presentation** section:</br>
 
 4\.1 Add a new **PieMapSeries**</br>
+
 4\.2 Specify the LegendItem's Value</br>
+
 4\.3 Specify the series' Size and all other properties that the dialog offers</br>
 
 ![Adding a PieGraphMapSeries ><](images/wrd-components-tray-maps-piegraph-mapseries.png)  

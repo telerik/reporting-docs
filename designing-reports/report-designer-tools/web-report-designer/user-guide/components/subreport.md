@@ -56,10 +56,12 @@ FROM [dbo].[Products]
 
 ![Report DataSource ><](images/wrd-components-subreport-report-data-source.png)    
 
-4\. From the **Components tray** drag two **TextBox** report items to the Details section:
+4\. From the **Components tray** drag two **TextBox** report items to the Details section:</br>
 
 4\.1 Select each of the TextBoxes </br>
+
 4\.2 Set the **Value** property to be bound to the **ProductName** and **UnitPrice** fields respectively</br>
+
 4\.3 Use the Expression dialog for setting the desired field</br>
 
 ![Bind Product Fields ><](images/wrd-components-subreport-bind-product-fields.png)     
@@ -122,7 +124,9 @@ FROM [dbo].[Categories]
 ![Setup UriReportSource ><](images/wrd-components-subreport-urireportsource.png)   
 
 7\. Setup the relation between the parent anc child reports:</br>
+
 7\.1 Adjust the Parameters</br>
+
 7\.2 Link the SubReport parameter (ProductCategoryID) with the master report's **CategoryID** field</br>
 
 ![Setup ProductCategoryID Report Parameter ><](images/wrd-components-subreport-setup-productcategoryid-report-parameter.png)   

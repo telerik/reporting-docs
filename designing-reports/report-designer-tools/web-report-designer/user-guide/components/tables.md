@@ -97,8 +97,6 @@ By clicking the [Table Wizard]({%slug telerikreporting/designing-reports/report-
 
 2\. Show the **Configure Table** pane on the right side
 
->caption Table Wizard
-
 ![Launching Data in a Table ><](images/wrd-components-tray-tables-table-wizard.png)      
 
 The following short video illustrates how to add a Table report item with the wizard, bind it to an already existing [Web Service Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and arrange the desired fields for displaying the name and localized name of the data records:
@@ -112,8 +110,6 @@ By clicking the [Crosstab Wizard]({%slug telerikreporting/designing-reports/repo
 1\. Click the Crosstab Wizard from the Components tray
 
 2\. Show the **Configure Crosstab** pane on the right side
-
->caption Crosstab Wizard
 
 ![Launching Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard.png)  
 

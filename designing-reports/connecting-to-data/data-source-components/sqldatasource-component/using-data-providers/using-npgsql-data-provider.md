@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# Using Npgsql in Reporting
 
 [Npgsql](https://www.npgsql.org/) is an open-source ADO.NET Data Provider for PostgreSQL, it allows programs written in C#, Visual Basic, and F# to access the PostgreSQL database server and execute queries to it.
 

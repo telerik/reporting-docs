@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Overview
+# Using Microsoft.Data.SqlClient in Reporting
 
 The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace?view=sql-server-ver16) namespace is essentially a new version of the [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=net-8.0) namespace and can thus be used for connecting to Microsoft SQL Databases.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Overview
+# Using SQLite in Reporting
 
 The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider for [SQLite](https://www.sqlite.org/). SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle, PostgreSQL, or SQL Server and instead focuses on providing local data storage for individual applications and devices.
 

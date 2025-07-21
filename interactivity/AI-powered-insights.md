@@ -38,13 +38,13 @@ To bring the power of Generative AI (GenAI) into reporting workflows, we are int
   * A **specific page**
   * A **range of pages**
 
-![Image of the Prompt UI](images/AskAIPrompt.png)
+<img src="images/AskAIPrompt-updated.png" style="border: 1px solid lightgray" alt="Image of the Prompt UI" />
 
 ## User Consent for AI Summaries
 
 Before using the AI Prompt Dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
 
-![User Consent for AI Summaries](images/UserConsentForAI.png)
+<img src="images/UserConsentForAI-updated.png" style="border: 1px solid lightgray" alt="User Consent for AI Summaries" />
 
 ## Configure the AI
 

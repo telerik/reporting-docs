@@ -19,7 +19,7 @@ img[alt$="><"] {
 Each report is constructed by [report items]({%slug telerikreporting/designing-reports/report-structure/overview%}) organized in different groups in the **Components** tab based on their purpose. 
  
 <div style="display: flex; align-items: flex-start; gap: 24px;">
-  <img alt="><" title="Components tray" src="images/wrd-components-tray.gif" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
+ 
   <img alt="><" title="Components tray" src="images/wrd-components-tray.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
   <table style="width:100%; height:100%;">
     <tr>
@@ -55,6 +55,11 @@ Each report is constructed by [report items]({%slug telerikreporting/designing-r
     </tr>
   </table>
 </div>
+
+## Next Steps
+
+* [Report Items]({%slug user-guide/components/report-items%})
+* [Configuring DataSources]({%slug web-report-designer-user-guide-components-data-sources%})
 
 ## See Also
 

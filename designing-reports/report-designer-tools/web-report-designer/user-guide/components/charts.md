@@ -48,6 +48,9 @@ The **Web Report Designer** offers a **Charts** section inside the **Components*
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/charts#pie-charts">Doughnut Chart</a></td>
       <td>Similar to the Pie Chart which has an open space in the center.</td>
     </tr>
+    </tr>
+        <tr><td colspan=2 align=center><img alt="><" title="Components tray" src="images/wrd-components-tray-charts-small.png" /></td> 
+    </tr> 
   </table>
 </div>
 

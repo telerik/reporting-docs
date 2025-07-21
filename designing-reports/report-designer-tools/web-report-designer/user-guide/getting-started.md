@@ -17,11 +17,20 @@ img[alt$="><"] {
 
 This tutorial will guide you through your first steps of creating a report from scratch using the Web Report Designer.
 
+## Before You Start
+
+Make sure you have access to:
+
+* Your company's instance of the Telerik Web Report Designer.
+* A data source that will feed the report with data. For the purpose of this tutorial, you can utilize a data source provided by Telerik. However, you can use virtually any data source, for example, a web service, SQL, CSV, GraphQL, [and more]({%slug web-report-designer-user-guide-components-data-sources%}).
+
+## Creating the Report and Connecting It to Data
+
 1. Create a new empty Report:
 
     ![Create New Report ><](images/wrd-create-new-report.gif)   
 
-2. In the **Components** tab, under the **Data Sources** group, select the **Web Service Data Source** option:
+2. In the **Components** tab, under the [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}) group, select the **Web Service Data Source** option:
 
     ![Create Web Service Data Source ><](images/wrd-create-web-service-data-source.png)  
 
@@ -64,6 +73,8 @@ This tutorial will guide you through your first steps of creating a report from 
 7. Click the **Preview** button at the top right corner to see your first report with a table, populated with data coming from a web service. The tollbar allows you to easily export the report to the desired [format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}):
 
     ![Preview Report ><](images/wrd-preview-report.png)  
+
+## Video Tutorials
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=h-Eu4paNlOkJkGF6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

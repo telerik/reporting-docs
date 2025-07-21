@@ -34,7 +34,7 @@ The **Web Report Designer** offers a **Data Sources** section inside the **Compo
   <img alt="><" title="Components tray" src="images/wrd-components-tray-data-sources.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
   <table style="width:100%; height:100%;">
     <tr>
-      <th style="width:30%">Data Source</th><th>Description</th>
+      <th style="width:30%">Data Source</th><th>Description</th> 
     </tr>
     <tr>
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#sql-data-source">SQL Data Source</a></td>

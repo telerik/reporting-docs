@@ -45,6 +45,8 @@ The **Web Report Designer** offers a **Tables** section inside the **Components*
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/tables#crosstab-wizard">Crosstab Wizard</a></td>
       <td>The Crosstab wizard guides you through the process of adding a Crosstab item to a report.</td>
     </tr>
+        <tr><td colspan=2 align=center><img alt="><" title="Components tray" src="images/wrd-components-tray-tables-small.png" /></td>
+    </tr> 
   </table>
 </div>
 

@@ -5,26 +5,50 @@ description: Explore the Web Report Designer's panes and discover the features i
 slug: user-guide/app-tour
 tags: web, report, design, tool, create, report, web, structure 
 published: True
-position: 5
+position: 1
 ---
 
 # App Tour of the Web Report Designer
 
 The fastest way to explore the Web Report Designer and to learn its basics is to start the built-in onboarding tour, which walks you through the Report Designer's main tools.
 
-The app tour starts automatically the first time you open an application with an embedded Telerik Web Report Designer. To start the app tour manually, type `Start onboarding` in the search box.
+## Structure of Web Report Designer 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xO7Vg01JRnk?si=MZlV9FJECadFcRxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+You are expected to see the sample report and the first time a user loads the Web report designer, they will see the **onboarding guide** which walks you through the main tools in the designer:
 
-As illustrated by the video above, the main elements of the Web Report Designer's user interface are:
+![Onboarding Guide Popup ><](images/wrd-onboarding-guide-welcome.png)    
 
-* An interactive **Design surface** where you  create and style your report.
-* A **Components tray** which contains all of the items that you can add to the report.
-* An **Explorer** providing a tree-based structure of everything that is already in the report, including the data structure.
-* A **Properties area** which shows the properties and values for the currently selected component.
-* A **Main menu** which lets you open, save, and interact with reports on a global level along with the **Asset Manager** which is where you store all of your.
-* A **Preview** button which shows an exact representation of the designed report.
-* A **Search box** which allows you to search the report instance for any property value, component data source, and so on.
+
+1. **Design surface** - Represents the interactive design surface where you actually create and style your report.
+
+    ![Onboarding Guide Popup ><](images/wrd-design-surface-cropped.png)    
+
+
+2. **Components tray** - Contains all of the items that you can add to the report.
+
+    ![Components Tray ><](images/wrd-components-tray-cropped.png)   
+
+3. **Explorer** - Provides a tree-based structure of everything that is already in the report including data structure.
+
+    ![Explorer ><](images/wrd-explorer-cropped.png)    
+
+4. **Properties area** - Area on the right side which will show you all of the properties and set values for the currently selected component:
+
+    ![Properties Area ><](images/wrd-properties-area-cropped.png)    
+
+5. **Main menu** - At the top left, the menu allows you to open, save and interact with all of your reports on a global level along with the **Asset Manager** which is where you store all of your reports assets.
+
+    ![Main Menu ><](images/wrd-main-menu-cropped.png)   
+
+    ![Asset Manager ><](images/wrd-asset-manager-cropped.png)   
+
+6. **Preview** - Represents a `Preview` button which shows you a pixel perfect rendering of what the report will look like:
+
+    ![Report Preview ><](images/wrd-preview-button-cropped.png)   
+
+7. **Search box** - At the top we have a global **Search box** which allows you to search the report instance for any property value, component data source, etc.:
+
+    ![Global Search ><](images/wrd-global-search-cropped.png)  
 
 ## See Also
 

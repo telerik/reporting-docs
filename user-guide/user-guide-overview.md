@@ -5,18 +5,29 @@ description: "Explore the Web Report Designer user guide and discover how to app
 slug: user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
 published: True
-position: 1
+position: 0
 ---
+<style>
+    img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
+</style>
 
 # Web Report Designer User Guide: An Overview
 
-The Web Report Designer User Guide is intended to assist the users of business applications with integrated Telerik Reporting. This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide are business application users.
+The [Web Report Designer's]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) User Guide is intended to assist the end-users of business applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide are business application users.
 
 > If you are a developer who integrates Telerik Reporting into web applications, see the [developer-oriented technical section]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) of the Web Report Designer documentation or the [Getting Started tutorial]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}). 
 
 ## What is the Web Report Designer?
 
 The Web Report Designer is a tool developed to let business application users design, create, and export reports directly in their web browser without needing any additional software. The reports can source their data from various databases, for example, relational, multi-dimensional, ORM, or custom data-layer-based data sources.
+
+![Ninja Looking ><](images/ninja_looking.png) 
 
 ![Main areas and functionalities of the Telerik Web Report Designer](./images/wrd-components-callouts.png)
 
@@ -34,6 +45,7 @@ This user guide includes articles that describe common scenarios related to the 
 
 ## Next Steps
 
+* [App Tour]({%slug user-guide/app-tour%})
 * [Create a Simple Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd%})
 * [Explore the Structure of a Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/report-structure%})
 

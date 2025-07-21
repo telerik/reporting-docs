@@ -5,7 +5,7 @@ description: "Learn about report items in Telerik Reporting, their types, purpos
 slug: user-guide/components/report-items
 tags: telerik, reporting, report, items, components, building blocks, visualization
 published: True
-position: 10
+position: 1
 ---
 
 <style>

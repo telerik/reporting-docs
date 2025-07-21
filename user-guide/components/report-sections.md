@@ -5,7 +5,7 @@ description: "Learn about report sections in Telerik Reporting, their types, pur
 slug: user-guide/components/report-sections
 tags: telerik, reporting, report, sections, components, building blocks, layout
 published: True
-position: 11
+position: 6
 ---
 
 # Report Sections in the Web Report Designer

@@ -1,6 +1,6 @@
 ---
 title: Resolving Greyed-Out "Create New REST Service" While Adding Native ReportViewer
-description: Learn how to address the issue where the "Create new REST service" option is unavailable in a Blazor WebAssembly project when adding the native ReportViewer.
+description: Learn how to address the issue where the "Create new REST service" option is unavailable in a Blazor WebAssembly project when adding the Native ReportViewer.
 type: how-to
 page_title: Fixing Greyed-Out REST Service Option in Blazor ReportViewer
 meta_title: Fixing Greyed-Out REST Service Option in Blazor ReportViewer
@@ -11,6 +11,7 @@ ticketid: 1693265
 ---
 
 ## Environment
+
 <table>
     <tbody>
         <tr>

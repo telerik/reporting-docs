@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Overview
+# Using Oracle Data Provider for .NET in Reporting
 
 The [Oracle Data Provider for .NET (ODP.NET)](https://www.oracle.com/database/technologies/appdev/dotnet/odp.html) features optimized ADO.NET data access to Oracle databases.
 

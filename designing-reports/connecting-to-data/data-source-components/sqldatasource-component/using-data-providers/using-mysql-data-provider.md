@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Overview
+# # Using MySQL Connector in Reporting
 
 The `MySQL Connector/NET` is a fully managed ADO.NET data provider written in pure C# which can be used to connect to [MySQL](https://www.mysql.com/), [MariaDB](https://mariadb.org/), etc. databases.
 

@@ -135,7 +135,7 @@ If you want to skip the further settings steps, click the `Finish` button to con
 
 ## GraphQL Data Source
 
-By clicking the `GraphQL Data Source` item in the **Components** tray, the [GraphQL Data Source configuration wizard]({%slug desktop-graphqldatasource-wizard%}) appears allowing you to create new or edit an existing [GraphQLDataSource]({%slug graphqldatasource%}) component.
+By clicking the `GraphQL Data Source` item in the **Components** tray, the [GraphQL Data Source configuration wizard](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard) appears allowing you to create new or edit an existing [GraphQLDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview) component.
 
 The wizard allows you to setup one of the options:
 * Setup the properties of the HTTP request which will retrieve data from the GraphQL service. 
@@ -232,7 +232,6 @@ On the right-hand side the **General** settings (dependent on the specific Data 
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Using Parameters with the GraphQLDataSource Component]({%slug graphqldatasource-parameters%})
+* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) 
 
 

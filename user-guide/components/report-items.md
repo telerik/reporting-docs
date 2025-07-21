@@ -18,7 +18,7 @@ img[alt$="><"] {
 
 The Report Items are visual elements used to display and organize content within a report.
 
-Like the other [report components]({%slug user-guide/components%}) in the Web Report Designer, they are building blocks that make up the structure and layout of a report, with each item serving a specific purpose depending on the type of data being displayed.
+Like the other [report components]({%slug web-report-designer-user-guide-components%}) in the Web Report Designer, they are building blocks that make up the structure and layout of a report, with each item serving a specific purpose depending on the type of data being displayed.
 
 Report items can reside inside report sections or other report components such as Panels, Tables, Lists, and so on. The arrangement of these items creates the overall layout and visual presentation of your report.
 

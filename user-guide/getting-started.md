@@ -66,7 +66,7 @@ Make sure you have access to:
 
     ![Table Wizard Usage ><](images/wrd-table-wizard-usage.gif)  
 
-6. Style the Table using the [Properties Area]({%slug web-report-designer-user-guide-structure%}):
+6. Style the Table using the [Properties Area]({%slug user-guide/app-tour%}):
 
     ![Table Style ><](images/wrd-table-style.png)   
 

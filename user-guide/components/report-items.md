@@ -28,15 +28,14 @@ Report items can reside inside report sections or other report components such a
 
 Telerik Web Report Designer provides various report items, each designed for specific data visualization needs:
 
-* TextBox—Displays static or data-bound text with various formatting options.
-* HtmlTextBox—Inserts HTML-formatted text with styling and formatting.
-* PictureBox—Shows images from various sources (binary, URIs, Base64, SVG).
-* CheckBox—Shows both text and a check mark for boolean data.
-* Barcode—Renders various barcode types for labeling and identification.
-* Shape—Displays predefined shapes like lines, arrows, and geometric figures.
-* Panel—Acts as a container to group or separate multiple report items.
-* Graph—Creates various chart types to visualize data relationships.
-* Gauge—Visualizes key performance indicators (KPIs) in radial or linear formats.
+* [TextBox](#textbox-report-item)—Displays static or data-bound text with various formatting options.
+* [HtmlTextBox](#htmltextbox-report-item)—Inserts HTML-formatted text with styling and formatting.
+* [PictureBox](#picturebox-report-item)—Shows images from various sources (binary, URIs, Base64, SVG).
+* [CheckBox](#checkbox-report-item)—Shows both text and a check mark for boolean data.
+* [Barcode](#barcode-report-item)—Renders various barcode types for labeling and identification.
+* [Shape](#shape-report-item)—Displays predefined shapes like lines, arrows, and geometric figures.
+* [Panel](#panel-report-item)—Acts as a container to group or separate multiple report items.
+* [Gauge](#gauge-report-item)—Visualizes key performance indicators (KPIs) in radial or linear formats.
 
 ## Adding Report Items
 

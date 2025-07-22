@@ -41,19 +41,14 @@ The Web Report Designer is a tool developed to let business application users de
 
 ## What's in this User Guide?
 
-This user guide includes articles that describe common scenarios related to the design and configuration of reports. In addition, you will also find conceptual information that illustrates basic reporting principles, for example, how to [structure a report]({%slug user-guide/report-structure%}).
+This user guide includes articles that describe common scenarios related to the design and configuration of reports. In addition, you will also find conceptual information and videos that illustrates basic reporting principles, for example, how to [structure a report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/report-structure%}).
 
 ## Next Steps
 
-* [App Tour]({%slug user-guide/app-tour%})
-* [Create a Simple Report]({%slug web-report-designer-user-guide-getting-started%})
-* [Explore the Structure of a Report]({%slug user-guide/report-structure%})
+* [Take an App Tour]({%slug user-guide/app-tour%})
+* [Create a Simple Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd%})
+* [Explore the Structure of a Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/report-structure%})
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
 {% endif %}
-
-## See Also
-
-* [Reference 1]()
-* [Reference 2]()

@@ -28,62 +28,50 @@ Make sure you have access to:
 
 1. Create a new empty Report:
 
-    ![Create New Report ><](images/wrd-create-new-report.gif)   
+    ![Create New Report ><](images/wrd-create-new-report.gif)
 
-2. In the **Components** tab, under the [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}) group, select the **Web Service Data Source** option:
+2. On the **Components** tab, go to [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}) and select **Web Service Data Source**:
 
     ![Create Web Service Data Source ><](images/wrd-create-web-service-data-source.png)  
 
-3. Using the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), we will add a new [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) that will be used for the data population in our first report.
+3. On the **Configure Data Retrieval** screen, enter the URL of the web service providing the data for your report, for example, `https://demos.telerik.com/reporting/api/reports/formats` and click **Finish**.
 
-    * Enter directly the *Service URL*, e.g. *https://demos.telerik.com/reporting/api/reports/formats*, and display data located on a service in JSON format while using no code.
+Now you have a bank report that is connected to data.
     
-    ![Web Service Data Source Wizard Step 1 ><](images/wrd-create-web-service-data-source-wizard-step1.png)   
+    ![Web Service Data Source Wizard Step 1 ><](images/wrd-create-web-service-data-source-wizard-step1.png)
 
-    * You can **Finish** the wizard or go through the **Next** steps if other fine-tuning is necessary:
+## Adding Items to Your Report
 
-        * Configure request parameters (if such are required)
+Next, design the report by adding a Table report item:
 
-        ![Web Service Data Source Wizard Step 2 ><](images/wrd-create-web-service-data-source-wizard-step2.png) 
+1. Click the report's Detail Section to enable the adding of report items.
 
-        * Choose desing-time data - select the *Use real data while designing the report* option
+1. Select the **Components** tab, and then click the [**Table Wizard**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}) button:  
 
-        ![Web Service Data Source Wizard Step 6 ><](images/wrd-create-web-service-data-source-wizard-step6.png)  
+    ![Table Wizard ><](images/wrd-table-wizard.png)
 
-        * Preview data source results - It is expected to see the data preview in JSON format:
-
-        ![Web Service Data Source Wizard Step 7 ><](images/wrd-create-web-service-data-source-wizard-step7.png)  
-
-    Once the wizard is completed, the Web Service Data Source object should be available in the **Explorer** tab under the **Inline DataSources** group:
-
-    ![Web Service Data Source Wizard Step Instance ><](images/wrd-create-web-service-data-instance.png) 
-
-4. Go back to the **Components** tab, select the report's **Detail section** and trigger the [Table Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}) option:  
-
-    ![Table Wizard ><](images/wrd-table-wizard.png) 
-
-5. Configure the Table:
+1. Configure the Table as illustrated below:
 
     ![Table Wizard Usage ><](images/wrd-table-wizard-usage.gif)  
 
-6. Style the Table using the [Properties Area]({%slug user-guide/app-tour%}):
+1. Style the Table using the Properties Area:
 
-    ![Table Style ><](images/wrd-table-style.png)   
+    ![Table Style ><](images/wrd-table-style.png)
 
-7. Click the **Preview** button at the top right corner to see your first report with a table, populated with data coming from a web service. The tollbar allows you to easily export the report to the desired [format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}):
+1. Click the **Preview** button at the top right corner to see your first report with a table populated with data coming from a web service.
 
     ![Preview Report ><](images/wrd-preview-report.png)  
 
 ## Video Tutorials
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=h-Eu4paNlOkJkGF6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+If you prefer video, check out the Getting Started tutorial below. It demonstrates how to create a report and add a Chart. Feel free to skip the setup in Visual Studio and start with the creation of the report.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DXKlgq-MYIU?si=ezqIjyrUTPLziUXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 
+* [Getting Started Tutorial Part 1](https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188)
+* [Getting Started Tutorial Part 2]()
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
 * [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})
-
-

@@ -34,7 +34,7 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
 			"requireConsent": false,
 			"allowCustomPrompts": false,
 			"predefinedPrompts": [
-				{ "text": "Can you summarise the repor for me?" }
+				{ "text": "Can you summarise the report for me?" }
 			]
 		}
 	}
@@ -50,7 +50,7 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
 		requireConsent="false"
 		allowCustomPrompts="false">
 		<predefinedPrompts>
-			<add text="Can you summarise the repor for me?" />
+			<add text="Can you summarise the report for me?" />
 		</predefinedPrompts>
 	</AIClient>
 </Telerik.Reporting>

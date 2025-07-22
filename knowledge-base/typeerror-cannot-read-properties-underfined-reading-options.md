@@ -38,9 +38,11 @@ The issue likely occurs due to an incompatibility between the report viewer and 
 
 1. Open the browser console on the page containing the report viewer.
 1. Execute the following command:
-   ````javascript
-    kendo.version
-   ````
+
+	````javascript
+kendo.version
+````
+
 
 ### Step 2: Determine Required Kendo UI Version
 
@@ -60,7 +62,7 @@ Update your Kendo UI for jQuery reference to the compatible version based on the
 If your page does not use other Kendo UI components, replace the Kendo UI script reference with the subset provided by the Reporting REST service:
 
 ````html
-    <script src="api/reports/resources/js/telerikReportViewer-kendo"></script>
+	<script src="api/reports/resources/js/telerikReportViewer-kendo"></script>
 ````
 
 >note This approach ensures compatibility when the report viewer and Reporting REST service versions match.

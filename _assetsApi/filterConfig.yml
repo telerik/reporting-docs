@@ -14,3 +14,6 @@ apiRules:
 - exclude:
     uidRegex: ^OpenAccessRuntime
     type: Namespace
+- exclude:
+    uidRegex: ^Telerik\.Licensing
+    type: Namespace

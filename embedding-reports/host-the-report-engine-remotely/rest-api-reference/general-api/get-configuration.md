@@ -48,13 +48,11 @@ A configuration object that includes details about version, license status, and 
                 "actionLink": null,
                 "actionMessage": null,
                 "expiration": "2026-01-01T05:00:00"
-        },
+            },
             "options": [
                 {
-                "name": "ai-insights",
-                "requireConsent": false,
-                "allowCustomPrompts": false,
-                "isAvailable": false
+                    "name": "ai-insights",
+                    "isAvailable": true
                 }
             ]
         }

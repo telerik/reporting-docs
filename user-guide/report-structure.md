@@ -5,7 +5,7 @@ description: "Learn which elements build the structure of the reports created in
 slug: user-guide/report-structure
 tags: telerik, reporting, report, structure, groups, sections, items
 published: True
-position: 8
+position: 10
 ---
 
 # The Basic Structure of a Report
@@ -16,18 +16,18 @@ Each report consists of sections that divide the report vertically and [report i
 
 By default, every new report you create has three sections:
 
-* Page Header
-* Page Footer
-* Detail section (the main content area of the report)
+* [Page Header](#page-header)
+* [Page Footer](#page-footer)
+* [Detail section](#detail-section) (the main content area of the report)
 
 In addition to the default sections above, you can also add:
 
-* Table of Contents (TOC)
-* Report Header
-* Report Footer
-* Report Groups
-* Group Header
-* Group Footer
+* [Table of Contents (TOC)](#table-of-contents)
+* [Report Header](#report-header)
+* [Report Footer](#report-footer)
+* [Report Groups](#report-groups)
+* [Group Header](#group-header)
+* [Group Footer](#group-footer)
 
 ## Page Header
 

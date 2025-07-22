@@ -1,11 +1,11 @@
 ---
-title: Getting Started
+title: Getting Started - Create You First Report
 page_title: Web Report Designer - Getting Started
 description: Creating a report from scratch with the Web report Designer offered by Telerik Reporting.
 slug: web-report-designer-user-guide-getting-started
 tags: web, report, design, tool, create, report, web, started 
 published: True
-position: 3
+position: 8
 ---
 <style>
 img[alt$="><"] {
@@ -34,11 +34,11 @@ Make sure you have access to:
 
     ![Create Web Service Data Source ><](images/wrd-create-web-service-data-source.png)  
 
-3. On the **Configure Data Retrieval** screen, enter the URL of the web service providing the data for your report, for example, `https://demos.telerik.com/reporting/api/reports/formats` and click **Finish**.
+3. On the **Configure Data Retrieval** screen, enter the URL of the web service providing the data for your report, for example, `https://demos.telerik.com/reporting/api/reports/formats`, and then click **Finish**.
+
+    ![Web Service Data Source Wizard Step 1 ><](images/wrd-create-web-service-data-source-wizard-step1.png)
 
 Now you have a bank report that is connected to data.
-    
-    ![Web Service Data Source Wizard Step 1 ><](images/wrd-create-web-service-data-source-wizard-step1.png)
 
 ## Adding Items to Your Report
 
@@ -54,7 +54,7 @@ Next, design the report by adding a Table report item:
 
     ![Table Wizard Usage ><](images/wrd-table-wizard-usage.gif)  
 
-1. Style the Table using the Properties Area:
+1. If desired, style the Table using **APPEARANCE** options in the Properties pane:
 
     ![Table Style ><](images/wrd-table-style.png)
 
@@ -64,14 +64,14 @@ Next, design the report by adding a Table report item:
 
 ## Video Tutorials
 
-If you prefer video, check out the Getting Started tutorial below. It demonstrates how to create a report and add a Chart. Feel free to skip the setup in Visual Studio and start with the creation of the report.
+If you prefer video, check out the Getting Started tutorial below. It demonstrates how to create a report and add a Chart. Make sure to skip the setup in Visual Studio and start with the creation of the report at [3:08](https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 
 * [Getting Started Tutorial Part 1](https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188)
-* [Getting Started Tutorial Part 2]()
+* [Getting Started Tutorial Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU)
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
 * [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})

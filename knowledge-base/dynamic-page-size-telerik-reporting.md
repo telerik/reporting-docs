@@ -18,10 +18,6 @@ ticketid: 1693152
             <td>Product</td>
             <td>Reporting</td>
         </tr>
-        <tr>
-            <td>Version</td>
-            <td>14.2.20.1021</td>
-        </tr>
     </tbody>
 </table>
 
@@ -33,17 +29,14 @@ I need to dynamically adjust the page size of a Telerik report based on a report
 
 To adjust the page size dynamically based on the report parameter, use a binding expression that passes the parameter value as a string. Follow these steps:
 
-1. Ensure the report parameter, such as `sizeParameter`, is of type string.
-
+1. Ensure the report parameter, such as `sizeParameter`, is of type String.
 1. Set up the binding expression for the `PageSettings.PageSize` property using the parameter value.
 
-![Dynamic Page Size](images/DynamicPageSize.png)
+    ![Dynamic Page Size](images/DynamicPageSize.png)
 
-Or you can use an expression like below, but the parameter should be a string:
+Or you can use an expression like below, but the parameter should be a String:
 
-```text
-= Parameters.sizeParameter.Value
-```
+`= Parameters.sizeParameter.Value`
 
 When this expression is used, the `PageSettings.PageSize` property will dynamically adjust based on the parameter values provided by the user.
 

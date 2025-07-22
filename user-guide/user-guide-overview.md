@@ -5,20 +5,31 @@ description: "Explore the Web Report Designer user guide and discover how to app
 slug: user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
 published: True
-position: 1
+position: 0
 ---
+<style>
+    img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
+</style>
 
 # Web Report Designer User Guide: An Overview
 
-The Web Report Designer User Guide is intended to assist the users of business applications with integrated Telerik Reporting. This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide are business application users.
+The Web Report Designer User Guide is intended to assist the end-users of business applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide are business application users.
 
-> If you are a developer who integrates Telerik Reporting into web applications, see the [developer-oriented technical section]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) of the Web Report Designer documentation or the [Getting Started tutorial]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}). 
+> If you are a developer who integrates Telerik Reporting into web applications, see the [application developer section]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) of the Web Report Designer documentation or the [Getting Started tutorial]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}). 
 
 ## What is the Web Report Designer?
 
 The Web Report Designer is a tool developed to let business application users design, create, and export reports directly in their web browser without needing any additional software. The reports can source their data from various databases, for example, relational, multi-dimensional, ORM, or custom data-layer-based data sources.
 
-![Main areas and functionalities of the Telerik Web Report Designer](./images/wrd-components-callouts.png)
+![Ninja Looking ><](images/ninja_looking.png)
+
+![UI Overview of the Telerik Web Report Designer](./images/wrd-components-callouts.png)
 
 1. Main menu—allows you to open or close reports, create new ones, access workspace-related preferences and more.
 1. Components tab—provides access to all components that you can include in you report, for example, items, tables, charts, sections and others.

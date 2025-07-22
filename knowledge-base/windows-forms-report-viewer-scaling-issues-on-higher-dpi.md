@@ -54,7 +54,7 @@ The recommended approach is to set the `dpiAware` element in your application to
 
 * .NET:
 
-	Ensure Windows 10 compatibility in the manifest file added from Visual Studio, as elaborated in the Microsoft article [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms):
+	Ensure Windows 10 compatibility in the manifest file, as elaborated in the Microsoft article [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms):
 
 	````XML
 <?xml version="1.0" encoding="utf-8"?>

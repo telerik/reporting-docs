@@ -21,6 +21,19 @@ Each report is constructed by [report items]({%slug user-guide/components/report
 <div style="display: flex; align-items: flex-start; gap: 24px;">
  
   <img alt="><" title="Components tray" src="images/wrd-components-tray.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
+
+   |Group|Report Items|
+   |----|----|
+   |[Report Items]({%slug user-guide/components/report-items%}) - The main building parts  used in the report depending on the data that will be displayed, e.g. a TextBox item for static or data-bound text, a PictureBox for displaying images, a Barcode for showing barcode in a label report, etc.|TextBox </br> HtmlTextBox </br> PictureBox </br> CheckBox </br> Barcode </br> Shape </br> Panel</br> Radial Gauge Wizard</br> Linear Gauge Wizard|
+   |[Tables]({%slug web-report-designer-user-guide-components-tables%}) - The Table report item is a generalized layout report item that displays report data in cells that are organized into rows and columns.||
+
+</div>
+
+
+
+<div style="display: flex; align-items: flex-start; gap: 24px;">
+ 
+  <img alt="><" title="Components tray" src="images/wrd-components-tray.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
   <table style="width:100%; height:100%;">
     <tr>
       <th style="width:40%">Group</th><th>Report Items</th>   

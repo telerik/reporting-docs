@@ -18,16 +18,21 @@ img[alt$="><"] {
 
 Each report is constructed by [report items]({%slug user-guide/components/report-items%}) organized in different groups in the **Components** tab based on their purpose. 
  
-<div style="display: flex; align-items: flex-start; gap: 24px;">
+
  
-  <img alt="><" title="Components tray" src="images/wrd-components-tray.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
+  
 
-   |Group|Report Items|
-   |----|----|
-   |[Report Items]({%slug user-guide/components/report-items%}) - The main building parts  used in the report depending on the data that will be displayed, e.g. a TextBox item for static or data-bound text, a PictureBox for displaying images, a Barcode for showing barcode in a label report, etc.|TextBox </br> HtmlTextBox </br> PictureBox </br> CheckBox </br> Barcode </br> Shape </br> Panel</br> Radial Gauge Wizard</br> Linear Gauge Wizard|
-   |[Tables]({%slug web-report-designer-user-guide-components-tables%}) - The Table report item is a generalized layout report item that displays report data in cells that are organized into rows and columns.||
+   |Components Tray|Group|Report Items|
+   |----|----|----|
+   <td rowspan=3>![Setup Mat DataSource ><](images/wrd-components-tray.png)</td>|[Report Items]({%slug user-guide/components/report-items%}) - The main building parts  used in the report depending on the data that will be displayed, e.g. a TextBox item for static or data-bound text, a PictureBox for displaying images, a Barcode for showing barcode in a label report, etc.|TextBox </br> HtmlTextBox </br> PictureBox </br> CheckBox </br> Barcode </br> Shape </br> Panel</br> Radial Gauge Wizard</br> Linear Gauge Wizard|
+   ||[Tables]({%slug web-report-designer-user-guide-components-tables%}) - The Table report item is a generalized layout report item that displays report data in cells that are organized into rows and columns.|
+   ||Report - The SubReport item enables you to display reports within reports and serves as a container, similar to the report sections, growing in size depending on its children.|
+   ||Maps - The Map report item is a native Telerik Reporting item which enables you to visualize an aggregated business data in a geographical manner.|
+   ||Charts - The Graph report item is a native Telerik Reporting item that allows you to generate different Chart types (objects) and visually present large volumes of aggregated information.|
+   ||Report Sections - A Telerik report consists of different sections that may contain report items. Each report section represents a specific area on the report page and defines the rendering of its report items.|
+   ||DataSources - Data Source components are used to connect data items to different types of data without writing any code.|
 
-</div>
+ 
 
 
 

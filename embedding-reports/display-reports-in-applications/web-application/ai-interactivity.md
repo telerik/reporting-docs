@@ -70,9 +70,9 @@ Before any user can use this feature, upon opening the AI Prompt Dialog, they wi
 
 ### Ask AI Prompt
 
-After consent is given, the prompt for asking the AI questions will appears in the top-right corner of the report viewer. The UI will change depending on whether custom questions are allowed.
+After consent is given, the prompt for asking the AI questions will appear in the top-right corner of the report viewer. The UI will change depending on whether custom questions are allowed.
 
-- Default **Ask AI** Rrompt Dialog with enabled custom questions and two predefined ones
+- Default **Ask AI** Prompt Dialog with enabled custom questions and two predefined ones
 
 	![An Image of how the Ask AI Prompt will look with enabled custom questions and two predefined ones in the HTML5-based Report Viewers](images/HTML5ReportViewer/ai-prompt.png)
 

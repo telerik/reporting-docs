@@ -28,5 +28,5 @@ As illustrated by the video above, the main elements of the Web Report Designer'
 
 ## See Also
 
-* [Create a Simple Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd%})
+* [Create a Simple Report]({%slug web-report-designer-user-guide-getting-started%})
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})

@@ -59,9 +59,9 @@ Update your Kendo UI for jQuery reference to the compatible version based on the
 
 If your page does not use other Kendo UI components, replace the Kendo UI script reference with the subset provided by the Reporting REST service:
 
-```html
-<script src="api/reports/resources/js/telerikReportViewer-kendo"></script>
-```
+````html
+    <script src="api/reports/resources/js/telerikReportViewer-kendo"></script>
+````
 
 >note This approach ensures compatibility when the report viewer and Reporting REST service versions match.
 

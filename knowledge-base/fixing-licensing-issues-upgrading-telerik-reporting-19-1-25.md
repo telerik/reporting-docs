@@ -43,10 +43,10 @@ To resolve the issue, follow these steps:
 
 To avoid similar problems for end-users after deployment, use a cache-busting technique by appending a query string (e.g., version or timestamp) to the script URLs. For example:
 
-```html
+````html
 <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js?v=1.1"></script>
 <script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js?v=1.1"></script>
-```
+````
 
 This forces browsers to reload the updated files.
 

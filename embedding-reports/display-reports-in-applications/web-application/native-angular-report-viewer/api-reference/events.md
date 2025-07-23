@@ -657,7 +657,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 ### reportVersionMismatch
 
-The `reportVersionMismatch` event will be emitted when there is mismatch between the version of the viewer and the reporting service.
+The `reportVersionMismatch` event will be emitted when there is a mismatch between the version of the viewer and the reporting service.
 
 ````HTML
 <reporting-angular-viewer

@@ -20,7 +20,7 @@ The license activation process in a CI/CD environment involves the following ste
 
 ## Creating an Environment Variable
 
-The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables. Each CI/CD platform has a different process for setting environment variables and this article lists only some of the most popular examples.
+The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables. Each CI/CD platform has a different process for setting environment variables, and this article lists only some of the most popular examples.
 
 > If your CI/CD service is not listed in this article, don’t hesitate to contact the Telerik technical support.
 
@@ -80,11 +80,11 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 
 1. Add a "Download secure file" task and set the output variable's name to `telerikLicense`.
 
-![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
+	![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
 
 1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable:
 
-![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
+	![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
 
 The script to set the environment variable is quoted below:
 
@@ -126,8 +126,9 @@ public class Function
 }
 ````
 
+
 ## See Also
 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-* [Setting Up Your License Key]({%slug license-key%}))
+* [Setting Up Your License Key]({%slug license-key%})
 * [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})

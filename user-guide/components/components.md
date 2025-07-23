@@ -41,12 +41,7 @@ Each report is constructed by [report items]({%slug user-guide/components/report
 ||[Report Sections]({%slug user-guide/components/report-sections%}) - A Telerik report consists of different sections that may contain report items. Each report section represents a specific area on the report page and defines the rendering of its report items.|<ul><li>Page Header</li><li>Page Footer</li><li>Report Header</li><li>Report Footer</li><li>Table of Contents</li></ul>|
 ||[DataSources]({%slug web-report-designer-user-guide-components-data-sources%}) - Data Source components are used to connect data items to different types of data without writing any code.|<ul><li>SQL Data Source</li><li>CSV Data Source</li><li>Web Service Data Source</li><li>GraphQL Data Source</li><li>JSON Data Source</li><li>Object Data Source</li></ul>|
 
-
-
-
-
-
-<div style="display: flex; align-items: flex-start; gap: 24px;">
+<!-- <div style="display: flex; align-items: flex-start; gap: 24px;">
  
   <img alt="><" title="Components tray" src="images/wrd-components-tray.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
   <table style="width:100%; height:100%;">
@@ -82,7 +77,7 @@ Each report is constructed by [report items]({%slug user-guide/components/report
       <td><ul><li>SQL Data Source</li><li>CSV Data Source</li><li>Web Service Data Source</li><li>GraphQL Data Source</li><li>JSON Data Source</li><li>Object Data Source</li></ul></td>
     </tr>
   </table>
-</div>
+</div> -->
 
 ## Next Steps
 

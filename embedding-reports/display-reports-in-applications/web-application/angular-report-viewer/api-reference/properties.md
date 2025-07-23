@@ -47,6 +47,7 @@ The following table is a list of all commands:
 | ------ | ------ | ------ |
 |historyBack|none|Goes back to the previously rendered report from history.|
 |historyForward|none|Goes forward to the previously rendered report from history.|
+|stopRendering|none|Stop the rendering of the current report at the first possible moment.|
 |refresh|none|Refreshes the report.|
 |goToFirstPage|none|Goes to the first page of the report.|
 |goToPrevPage|none|Goes to the previous page of the report.|
@@ -64,3 +65,5 @@ The following table is a list of all commands:
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog.|
+|toggleSendEmailDialog|none|Shows or hides the Send Email dialog.|
+|toggleAiPromptDialog|none|Shows or hides the AI Prompt dialog.|

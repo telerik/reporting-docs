@@ -1,5 +1,5 @@
 ---
-title: 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'
+title: Telerik.Blazor.Components.TelerikWindow does not have a property matching the name Centered
 description: Learn how to address the error thrown by Blazor Native Viewer Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'
 type: how-to
 page_title: Blazor Native Viewer throws Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'

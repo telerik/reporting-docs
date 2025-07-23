@@ -657,7 +657,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 ### reportVersionMismatch
 
-The `reportVersionMismatch` event will be emitted when there is mismatch between the version of the viewer and the reporting service.
+The `reportVersionMismatch` event will be emitted when there is a mismatch between the version of the viewer and the reporting service.
 
 ````HTML
 <reporting-angular-viewer
@@ -730,6 +730,162 @@ import { ReportParameterInfo } from '@progress/telerik-common-report-viewer'
 		parametersLoaded(e: ReportParameterInfo[]) {
 			console.log("An array of the parameter values is sent via the event object.", e);
 			console.log("This event will be emitted after the Get Report Parameters request is made.");
+		};
+	}
+````
+
+
+### scaleChanged
+
+The `scaleChanged` event will be emitted when the scale property of the report viewer is changed.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(scaleChanged)="scaleChanged()">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		scaleChanged() {
+			console.log("This event will be emitted when the scale property of the report viewer is changed.");
+		};
+	}
+````
+
+
+### scaleModeChanged
+
+The `scaleModeChanged` event will be emitted when the scaleMode property of the report viewer is changed.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(scaleModeChanged)="scaleModeChanged()">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		scaleModeChanged() {
+			console.log("This event will be emitted when the scaleMode property of the report viewer is changed.");
+		};
+	}
+````
+
+
+### viewModeChanged
+
+The `viewModeChanged` event will be emitted when the viewMode property of the report viewer is changed.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(viewModeChanged)="viewModeChanged()">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		viewModeChanged() {
+			console.log("This event will be emitted when the viewMode property of the report viewer is changed.");
+		};
+	}
+````
+
+
+### missingOrInvalidParameters
+
+The `missingOrInvalidParameters` event will be emitted when the previewed report requires parameters that have missing or invalid values.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(missingOrInvalidParameters)="missingOrInvalidParameters()">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		missingOrInvalidParameters() {
+			console.log("This event will be emitted when the previewed report requires parameters that have missing or invalid values.");
 		};
 	}
 ````

@@ -139,6 +139,15 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 			</td>
 		</tr>
 		<tr>
+			<td>AiPrompt</td>
+			<td>
+				None
+			</td>
+			<td>
+				Shows or hides the AI prompt dialog.
+			</td>
+		</tr>
+		<tr>
 			<td>SetAuthenticationToken</td>
 			<td>
 				The token string

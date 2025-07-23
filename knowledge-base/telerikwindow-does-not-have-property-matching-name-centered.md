@@ -1,16 +1,17 @@
 ---
-title: Resolving Error After Upgrading to 19.1.25.716 with Blazor Native Viewer
-description: Learn how to address the error thrown by Blazor Native Viewer after upgrading to Telerik Reporting version 19.1.25.716.
+title: 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'
+description: Learn how to address the error thrown by Blazor Native Viewer Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'
 type: how-to
-page_title: Fixing the Blazor Native Viewer Error After Upgrade to 19.1.25.716
-meta_title: Fixing the Blazor Native Viewer Error After Upgrade to 19.1.25.716
-slug: fixing-blazor-native-viewer-error-after-upgrade-to-19-1-25-716
+page_title: Blazor Native Viewer throws Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'
+meta_title: Blazor Native Viewer throws Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'
+slug: telerikwindow-does-not-have-property-matching-name-centered
 tags: reporting,blazor-native-viewer,error,telerik-ui-for-blazor,telerikwindow,centered
 res_type: kb
 ticketid: 1693434
 ---
 
 ## Environment
+
 <table>
     <tbody>
         <tr>
@@ -26,15 +27,15 @@ ticketid: 1693434
 
 ## Description
 
-I upgraded my project to Telerik Reporting version 19.1.25.716, which uses the [Blazor Native Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}). After the upgrade, I encountered the following error:
+I upgraded my Telerik Reporting project, which uses the [Blazor Native Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}). After the upgrade, I encountered the following error:
 
-```
+````
 System.InvalidOperationException: Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'.
    at Microsoft.AspNetCore.Components.Reflection.ComponentProperties.ThrowForUnknownIncomingParameterName(Type targetType, String parameterName)
    at Microsoft.AspNetCore.Components.Reflection.ComponentProperties.SetProperties(ParameterView& parameters, Object target)
    at Telerik.Blazor.Components.TelerikWindow.SetParametersAsync(ParameterView parameters)
    at Microsoft.AspNetCore.Components.Rendering.ComponentState.SupplyCombinedParameters(ParameterView directAndCascadingParameters)
-```
+````
 
 This error occurs because the Blazor Native Viewer depends on version `7.1.0` of the Telerik UI for Blazor components and tries to access the `Centered` parameter of the TelerikWindow component. This parameter was removed in version `9.0.0`. Compatibility issues arise due to the dependency mismatch.
 
@@ -44,19 +45,15 @@ To resolve this issue, choose one of the following approaches:
 
 ### Downgrade Telerik UI for Blazor
 
-1. Downgrade the `Telerik.UI.for.Blazor` package in your project to version `7.1.0`.
-1. Ensure compatibility between the Blazor Native Viewer and the Telerik UI for Blazor components.
+Downgrade the `Telerik.UI.for.Blazor` package in your project to version `7.1.0` to ensure compatibility between the Blazor Native Viewer and the Telerik UI for Blazor components.
 
 ### Switch to Blazor Report Viewer
 
-1. Use the [Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) instead of the Blazor Native Viewer.
-1. The Blazor Report Viewer acts as a wrapper for the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and does not depend on Telerik UI for Blazor components.
-1. Replace the Blazor Native Viewer in your project with the Blazor Report Viewer to avoid conflicts.
+Use the [Blazor HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) instead of the Blazor Native Viewer. The Blazor Report Viewer acts as a wrapper for the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and does not depend on Telerik UI for Blazor components.
 
 ### Wait for Updated Dependencies
 
-1. The Reporting team plans to update the `Telerik.UI.for.Blazor` dependency in the Q3 2025 release.
-1. Monitor the release notes for updates addressing this issue.
+The Reporting team plans to update the `Telerik.UI.for.Blazor` dependency in the Q3 2025 release. Monitor the release notes for updates addressing this issue.
 
 ## See Also
 

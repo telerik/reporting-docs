@@ -9,7 +9,7 @@ position: 1
 
 # Setting Up Your Telerik Reporting License Key
 
-Starting with the [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) release, Telerik Reporting requires activation through a license key (trial or commercial). This article describes how to download or update your personal license key and use it to activate the Telerik Reporting product.
+Starting with the [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) release, Telerik Reporting requires activation using a license key — this applies to both the trial and commercial versions of the product. This article describes how to download or update your personal license key and use it to activate the Telerik Reporting product.
 
 An invalid license results in [errors and warnings]({%slug license-errors-and-warnings%}) during build and run-time indicators such as watermarks and banners.
 

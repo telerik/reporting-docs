@@ -118,6 +118,12 @@ The Gauge visualizes key performance indicators (KPIs) and progress toward goals
 
 ### Radial Gauge
 
+A radial gauge is a circular visual element that looks similar to a speedometer in a car. It shows values along a curved scale, usually in the shape of a full or partial circle. The pointer on the gauge is often a needle, but it can also be a marker or a bar. This pointer moves to show the current value. 
+
+Radial gauges are especially useful when you want to show data that feels like speed or progress, such as how fast something is going or how much of a goal has been reached.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pi4ikiZi4bE?si=WzPcyATa1SGD_qwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Linear Gauge
 
 The Linear Gauge is represented by a horizontal or vertical scale and displays its value as a percentage of the total scale's length. To add a Linear Gauge, click the **Linear Gauge Wizard** in the **Components** tab, and then use the **Configure Linear Gauge** pane to adjust the settings.

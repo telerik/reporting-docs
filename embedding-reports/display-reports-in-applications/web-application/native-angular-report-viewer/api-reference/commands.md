@@ -104,6 +104,7 @@ export class AppComponent {
 		{ name: 'setAuthenticationToken', commandName: 'setAuthenticationToken', commandValue: 'Sample Authentication Token'  },
 		{ name: 'printReport', commandName: 'printReport' },
 		{ name: 'toggleSearchWindow', commandName: 'toggleSearchWindow' },
+		{ name: 'toggleAiPromptWindow', commandName: 'toggleAiPromptWindow' },
 	]
 
 	public execute(commandName: string, commandValue?: any): void {
@@ -132,5 +133,6 @@ export class AppComponent {
 |toggleDocumentMap|none|Shows or hides the document map.|
 |toggleParametersSection|none|Shows or hides the parameters area.|
 |toggleSearchWindow|none|Shows or hides the search dialog.|
+|toggleAiPromptWindow|none|Shows or hides the AI prompt dialog.|
 |zoomIn|none|Zoom-in the report.|
 |zoomOut|none|Zoom-out the report.|

@@ -25,9 +25,11 @@ table th:nth-of-type(2) {
 
 The **Web Report Designer** offers a **Maps** section inside the **Components** tray allowing the end-user to visualize aggregated business data in a geographical manner.
 
-<div style="display: flex; align-items: flex-start; gap: 24px;">
-  <img alt="><" title="Components tray" src="images/wrd-components-tray-maps.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
-  <table style="width:100%; height:100%;"> 
+|Components Tray|Map Report Item|
+|----|----|
+|![Setup Mat DataSource ><](images/wrd-components-tray-maps.png) |![Setup Mat DataSource ><](images/wrd-components-tray-maps-azure-map-wit-pie-charts.png)|
+
+<table style="width:100%; height:100%;"> 
     <tr>
       <th style="width:15%">Map Type</th><th>Description</th> 
     </tr>
@@ -38,10 +40,8 @@ The **Web Report Designer** offers a **Maps** section inside the **Components** 
     <tr>
       <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/maps#choropleth">Choropleth</a></td>
       <td>The <a href="https://en.wikipedia.org/wiki/Choropleth_map">Choropleth map</a> type is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area.</td>
-    </tr>
-    <tr><td colspan=2 align=center><img alt="><" title="Components tray" src="images/wrd-components-tray-maps-azure-map-wit-pie-charts-small.png" /></td></tr>
-  </table>
-</div> 
+    </tr> 
+  </table> 
 
 The **Map Report item** requires one source collection for loading the visual (e.g. geographical) map data (provided by a Location and Tile providers) and one separate Data Source for the data itself storing the values that correspond to the respective location (displayed as small charts on the map).
 

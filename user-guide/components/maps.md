@@ -13,35 +13,26 @@ img[alt$="><"] {
   border: 1px solid lightgrey;
 }
 
-table th:first-of-type {
+/* table th:first-of-type {
 	width: 20%;
 }
 table th:nth-of-type(2) {
 	width: 80%;
-}
+} */
 </style>
  
 # Maps 
 
 The **Web Report Designer** offers a **Maps** section inside the **Components** tray allowing the end-user to visualize aggregated business data in a geographical manner.
 
-<div style="display: flex; align-items: flex-start; gap: 24px;">
-  <img alt="><" title="Components tray" src="images/wrd-components-tray-maps.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
-  <table style="width:100%; height:100%;"> 
-    <tr>
-      <th style="width:15%">Map Type</th><th>Description</th> 
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/maps#map">Map</a></td>
-      <td>The data may be presented in different formats that is determined by the chosen Map Type: Point, Pie, Column. </td>
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/maps#choropleth">Choropleth</a></td>
-      <td>The <a href="https://en.wikipedia.org/wiki/Choropleth_map">Choropleth map</a> type is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area.</td>
-    </tr>
-    <tr><td colspan=2 align=center><img alt="><" title="Components tray" src="images/wrd-components-tray-maps-azure-map-wit-pie-charts-small.png" /></td></tr>
-  </table>
-</div> 
+
+![Maps Group ><](images/wrd-components-tray-maps-design-mode.png)
+
+|Map Type|Description|
+|----|----|
+|[Map]({%slug web-report-designer-user-guide-components-maps%}#map)|The data may be presented in different formats that is determined by the chosen Map Type: Point, Pie, Column. |
+|[Choropleth]({%slug web-report-designer-user-guide-components-maps%}#choropleth)|The [Choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) type is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area.|
+ 
 
 The **Map Report item** requires one source collection for loading the visual (e.g. geographical) map data (provided by a Location and Tile providers) and one separate Data Source for the data itself storing the values that correspond to the respective location (displayed as small charts on the map).
 
@@ -56,9 +47,9 @@ The **Location Provider** matches the addresses or locations with geographical c
 |Location Provider|Description|
 |----|----|
 |Azure| The AzureLocationProvider uses the [Azure Maps Get Geocoding Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.|
-|Bing |The BingLocationProvider *(Deprecated)* uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
-|MapQuestOpenAPI|The MapQuestOpenAPILocationProvider (Obsolete) uses the [MapQuest Geocoding Open API]() geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
-|MapQuest|The MapQuestLocationProvider (Obsolete) uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
+|Bing *(Deprecated)*|The BingLocationProvider uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
+|MapQuestOpenAPI (Obsolete)|The MapQuestOpenAPILocationProvider uses the [MapQuest Geocoding Open API]() geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
+|MapQuest  (Obsolete) |The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
 
 >caution Microsoft has announced the deprecation of **Bing Maps for Enterprise**:
 > * `Free (Basic)` accounts can use Bing Maps services until June 30, 2025.
@@ -71,12 +62,14 @@ The **Tile Provider** requests and downloads the imagery data for the specified 
 |TileProvider|Description|
 |----|----|
 |AzureMapsTileProvider|Supports a variety of tile sets that let you customize the appearance and data shown on your map.|
-|BingMapsTileProvider |*(Deprecated)* Uses the [Bing Maps REST Services](https://learn.microsoft.com/en-us/bingmaps/rest-services/) to request metadata information that is needed to resolve the tile requests URLs, zoom levels, tile sizes and attribution information such as the text or logo that will be displayed on the map.|
-|MapQuestTileProvider| *(Obsolete)* Uses the [`MapQuest`](https://www.mapquest.com/) tile servers that provides the tiles in the **OpenStreetMap Tiles** and the **MapQuest Open Aerial Tiles** imagery sets.|
+|BingMapsTileProvider *(Deprecated)*|Uses the [Bing Maps REST Services](https://learn.microsoft.com/en-us/bingmaps/rest-services/) to request metadata information that is needed to resolve the tile requests URLs, zoom levels, tile sizes and attribution information such as the text or logo that will be displayed on the map.|
+|MapQuestTileProvider *(Obsolete)*|Uses the [`MapQuest`](https://www.mapquest.com/) tile servers that provides the tiles in the **OpenStreetMap Tiles** and the **MapQuest Open Aerial Tiles** imagery sets.|
 
-## Map
+## Creating a Report with the Map Report Item
 
 The following tutorial aims to list all the necessary steps for creating a Map which will present the sales distribution by products among several states using the Adventure Works sample database. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VGeM_g7Ieqg?si=6mGUiz4yEIV3Opnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Since it uses the **AzureLocationProvider**, an Azure Maps subscription key is **required**. You can obtain a key by [creating an Azure Maps account through the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#create-an-azure-maps-account). For more information on how to access the key, refer to [Get the subscription key for your account](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#get-the-subscription-key-for-your-account).
 
@@ -149,10 +142,6 @@ AND PC.Name = 'Bikes'
 Select the location provider (e.g. Azure) that will be used to geocode the **State** field. Once you obtain the key, paste it in the **ClientToken** box:
 
 ![Defining the Location and Tile Providers  ><](images/wrd-components-tray-maps-location-tile-providers.png)   
-
-A detailed video is available covering the complete process:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VGeM_g7Ieqg?si=6mGUiz4yEIV3Opnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Choropleth
 

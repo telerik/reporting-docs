@@ -1,7 +1,7 @@
 ---
-title: Getting Started - Create You First Report
+title: Create Your First Report
 page_title: Web Report Designer - Getting Started
-description: Creating a report from scratch with the Web report Designer offered by Telerik Reporting.
+description: Creating a report from scratch with the Web Report Designer offered by Telerik Reporting.
 slug: web-report-designer-user-guide-getting-started
 tags: web, report, design, tool, create, report, web, started 
 published: True

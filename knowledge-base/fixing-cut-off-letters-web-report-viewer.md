@@ -1,9 +1,9 @@
 ---
-title: Resolving Letters Being Cut Off in the Web Report Viewer
-description: Explains how to resolve the issue of letters being cut off in the Web Report Viewer, which does not occur in the standalone viewer or printed reports.
-type: how-to
-page_title: Fixing Cut-Off Letters in Web Report Viewer
-meta_title: Fixing Cut-Off Letters in Web Report Viewer
+title: Resolving Letters Being Cut Off in Web Report Viewers
+description: "Learn how to resolve the issue of letters being cut off in the Web Report Viewers, which does not occur in the Standalone Report Designer or printed reports."
+type: troubleshooting
+page_title: Fixing Cut-Off Letters in HTML5 Report Viewers
+meta_title: Fixing Cut-Off Letters in HTML5 Report Viewers
 slug: fixing-cut-off-letters-web-report-viewer
 tags: reporting, textbox, web-report-viewer, text-cut-off, properties, can-shrink, measurement-units
 res_type: kb
@@ -19,33 +19,32 @@ ticketid: 1693245
             <td> Reporting </td>
         </tr>
         <tr>
-            <td> Version </td>
-            <td> 19.1.25.716 </td>
+            <td> Viewer</td>
+            <td> Web Report Viewers </td>
         </tr>
     </tbody>
 </table>
 
 ## Description
 
-I noticed that some letters are cut off when viewing reports in the Web Report Viewer. The report displays correctly in the Standalone designer and when printed. Testing the issue in an empty project showed the same behavior, indicating it is not related to custom styling.
+I noticed that some letters are cut off when viewing reports in the Web Report Viewers. The report displays correctly in the Standalone Report Designer and when printed. For example:
 
-Web Report Viewer:
+- Web Report Viewer:
 
-![Cut-Off Letters in Web Report Viewer](images/CutLettersWebViewer.png)
+    ![Cut-Off Letters in Web Report Viewers](images/CutLettersWebViewer.png)
 
-Standalone Designer:
+- Standalone Report Designer:
 
-![Cut-Off Letters in Standalone Designer](images/CutLettersStandaloneDesigner.png)
+    ![Cut-Off Letters in Standalone Designer](images/CutLettersStandaloneDesigner.png)
 
 ## Solution
 
 To resolve the issue, adjust the size and properties of the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) controls in your report:
 
+1. Switch the measurement units for your report to pixels (`px`). Using pixels minimizes inaccuracies that can occur when switching between units at runtime.
 1. Increase the size of each `TextBox` element to ensure adequate space for text rendering.
 1. Set the `CanShrink` property of each `TextBox` to `False`. This prevents the control from shrinking beyond the required dimensions for proper text display.
-1. Switch the measurement units for your report to pixels (`px`) instead of millimeters (`mm`). Using pixels minimizes inaccuracies that can occur when switching between units.
-1. Convert the `RowHeight` from millimeters to pixels using a unit-conversion tool like [Convert Millimeter to Pixel (X)](https://www.unitconverters.net/typography/millimeter-to-pixel-x.htm).
-
+   
 ## See Also
 
 * [TextBox Documentation]({%slug telerikreporting/designing-reports/report-structure/textbox%})

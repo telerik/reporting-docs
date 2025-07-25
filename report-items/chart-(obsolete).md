@@ -14,6 +14,7 @@ previous_url: /report-items-chart, /featuressplineareas
 >* The Chart report item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item. The Graph is most often used for building powerful OLAP and Pivot charts. 
 >* The Chart report item is not supported in .NET Core projects and in projects deployed on Azure. 
 >* The complete Chart report item documentation is available as a `CHM` file up to Telerik Reporting version 8.2.14.1204, and can be downloaded from [your Telerik account](https://www.telerik.com/account/downloads/product-download?product=REPORTING).
+>* If your reports utilize the Chart item, you need to add a [typeReference]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) in your configuration to explicitly allow the element to be processed: `<add typeName="Telerik.Reporting.Processing.Chart" assemblyName="Telerik.Reporting" publicKeyToken="a9d7983dfcc261be" />`. This is required due to vulnerabilities in the item code.
 
 The Chart report item is used to display a chart on a report. 
 

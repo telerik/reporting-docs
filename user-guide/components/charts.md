@@ -21,11 +21,11 @@ The **Web Report Designer** offers a **Charts** section inside the **Components*
 ![Maps Group ><](images/wrd-components-tray-charts-design-mode.png) 
 
 The available Chart types are:
-* [Bar Chart]({%slug web-report-designer-user-guide-components-charts%}#bar) - Displays data series as sets of horizontal bars, graphically summarizes and renders data categories, and enables users to easily compare amounts or values between different categories. 
-* [Line Chart]({%slug web-report-designer-user-guide-components-charts%}#line-charts) - Displays series as sets of points connected by a single line and represents large amounts of data that occur over a continuous period of time. 
-* [Area Chart]({%slug web-report-designer-user-guide-components-charts%}#column-charts) - Displays a series as a set of points connected by a line with the whole area filled in under the line. 
-* [Column Chart]({%slug web-report-designer-user-guide-components-charts%}#area-charts) - Displays data series as sets of vertical bars that are grouped by category.</td>
-* [Pie Chart]({%slug web-report-designer-user-guide-components-charts%}#pie-charts) - Displays the contribution of fractional parts to a whole and is most commonly used to make comparisons between groups. 
+* [Bar Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-bar-chart) - Displays data series as sets of horizontal bars, graphically summarizes and renders data categories, and enables users to easily compare amounts or values between different categories. 
+* [Line Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-line-chart) - Displays series as sets of points connected by a single line and represents large amounts of data that occur over a continuous period of time. 
+* [Area Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-column-chart) - Displays a series as a set of points connected by a line with the whole area filled in under the line. 
+* [Column Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-an-area-chart) - Displays data series as sets of vertical bars that are grouped by category.</td>
+* [Pie Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart) - Displays the contribution of fractional parts to a whole and is most commonly used to make comparisons between groups. 
 * [Doughnut Chart]({%slug web-report-designer-user-guide-components-charts%}#pie-charts) - Similar to the Pie Chart which has an open space in the center. 
 Before adding a Chart report item, first, you need to select the **Details** section of the report. Then, you can select the desired chart type from the **Components** tray and configure it with the desired data source.
 

@@ -25,14 +25,12 @@ table th:nth-of-type(2) {
 
 The **Web Report Designer** offers a **Maps** section inside the **Components** tray allowing the end-user to visualize aggregated business data in a geographical manner.
 
-
 ![Maps Group ><](images/wrd-components-tray-maps-design-mode.png)
 
-|Map Type|Description|
-|----|----|
-|[Map]({%slug web-report-designer-user-guide-components-maps%}#map)|The data may be presented in different formats that is determined by the chosen Map Type: Point, Pie, Column. |
-|[Choropleth]({%slug web-report-designer-user-guide-components-maps%}#choropleth)|The [Choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) type is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area.|
- 
+
+* [Map]({%slug web-report-designer-user-guide-components-maps%}#map) - The data may be presented in different formats that is determined by the chosen Map Type: Point, Pie, Column. 
+* [Choropleth]({%slug web-report-designer-user-guide-components-maps%}#choropleth) - The [Choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) type is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area.
+
 
 The **Map Report item** requires one source collection for loading the visual (e.g. geographical) map data (provided by a Location and Tile providers) and one separate Data Source for the data itself storing the values that correspond to the respective location (displayed as small charts on the map).
 

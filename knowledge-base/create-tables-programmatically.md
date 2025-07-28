@@ -1,144 +1,161 @@
 ---
 title: How to Create Tables Programmatically in Telerik Reporting
-description: Learn how to create tables at runtime using a dynamic SQL query in Telerik Reporting.
+description: Learn how to create tables from scratch at runtime using Telerik Reporting.
 type: how-to
 page_title: How to Create Tables Programmatically in Telerik Reporting
 meta_title: How to Create Tables Programmatically in Telerik Reporting
 slug: generating-runtime-tables-telerik-reporting
-tags: telerik reporting, runtime report creation, sql query, programmatic report, report generation
+tags: telerik reporting, runtime report creation, programmatic report, report generation, dynamic table
 res_type: kb
-ticketid: 1692210
 ---
 
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td> Product </td>
-<td>
-Progress® Telerik® Reporting
-</td>
-</tr>
-<tr>
-<td> Version </td>
-<td> 19.1.25.521 </td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td> Product </td>
+            <td> Progress® Telerik® Reporting </td>
+        </tr>
+        <tr>
+            <td> Version </td>
+            <td> 19.1.25.521 </td>
+        </tr>
+    </tbody>
 </table>
 
 ## Description
 
-I want to generate tables programmatically using static (or dynamically retrieved) data.
+This article demonstrates how to create tables programmatically in Telerik Reporting. While this approach offers full control over table structure and data binding, it is generally recommended to start with a designer-generated table and modify it programmatically if needed. The Telerik Report Designer handles complex layout and grouping logic, making it easier to maintain and extend reports.
+
+## Prerequisites
+
+Before creating a table programmatically, ensure you have a valid `Telerik.Reporting.Report` object with a predefined structure and a data source ready be set to the table. If not, follow the steps below to create them programmatically.
+
+### 1. Initializing the Report
+
+Create a new report object and configure its basic settings:
+
+````csharp
+Telerik.Reporting.Report report = new Telerik.Reporting.Report();
+report.Name = "Report1";
+report.PageSettings.Margins = new Telerik.Reporting.Drawing.MarginsU(Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D));
+report.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+report.Width = Telerik.Reporting.Drawing.Unit.Cm(17D);
+````
+
+### 2. Adding Report Sections
+
+Most reports include three main sections:
+
+- **PageHeaderSection**: Appears at the top of each page.
+- **DetailSection**: Contains the main content, such as tables or charts.
+- **PageFooterSection**: Appears at the bottom of each page.
+
+````csharp
+var pageHeaderSection = new Telerik.Reporting.PageHeaderSection();
+pageHeaderSection.Height = Telerik.Reporting.Drawing.Unit.Cm(2.5D);
+pageHeaderSection.Name = "pageHeaderSection";
+
+var detailSection = new Telerik.Reporting.DetailSection();
+detailSection.Height = Telerik.Reporting.Drawing.Unit.Cm(5D);
+detailSection.Name = "detail";
+
+var pageFooterSection = new Telerik.Reporting.PageFooterSection();
+pageFooterSection.Height = Telerik.Reporting.Drawing.Unit.Cm(2.5D);
+pageFooterSection.Name = "pageFooterSection";
+
+report.Items.AddRange(new Telerik.Reporting.ReportItemBase[] { pageHeaderSection, detailSection, pageFooterSection });
+````
+
+### 3. Preparing the Data Source
+
+Telerik Reporting supports various data sources including JSON, CSV, SQL, business objects, and others. For more information, check the article [Data Source Components at a Glance]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) This example uses an [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}):
+
+````csharp
+string selectCommand = "SELECT * FROM production.productphoto;";
+string connectionString = "server=localhost\\sqlexpress;database=AdventureWorks2022;trusted_connection=true;";
+var sqlDataSource = new Telerik.Reporting.SqlDataSource(connectionString, selectCommand);
+sqlDataSource.Name = "sqlDataSource";
+sqlDataSource.ProviderName = "System.Data.SqlClient";
+````
 
 ## Solution
 
-To generate reports dynamically at runtime based on a SQL query, use the Telerik Reporting API to define the report structure programmatically. Below is a code example demonstrating how to create such reports and save them as `.trdp` files for further use in report viewers.
+Once the report structure and data source are ready, you can proceed with creating the table.
 
-### Steps
+### 1. Create the Table
 
-1. Define the SQL query and connection string to your database.
-2. Create the report structure programmatically, including headers, footers, and a detail section.
-3. Use `SqlDataSource` to retrieve data from the database and bind it to a dynamically generated table.
-4. Populate the table with columns and rows based on the retrieved data.
-5. Package the report into a `.trdp` file for use in Telerik Reporting viewers.
+Instantiate a `Telerik.Reporting.Table` object, assign the pre-created data source, and add the table to the detail section:
 
-### Code Example
+````csharp
+var table = new Telerik.Reporting.Table();
+table.Name = "table";
+table.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(1.5D), Telerik.Reporting.Drawing.Unit.Cm(1.5D));
+table.DataSource = sqlDataSource;
+detailSection.Items.Add(table);
+````
 
-```csharp
-namespace RuntimeReportExample
+### 2. Add a Detail Row Group
+
+Add a detail row group and a body row.
+
+````csharp
+var rowGroup = new Telerik.Reporting.TableGroup();
+rowGroup.Name = "detailTableGroup";
+rowGroup.Groupings.Add(new Telerik.Reporting.Grouping(null));
+table.RowGroups.Add(rowGroup);
+table.Body.Rows.Add(new Telerik.Reporting.TableBodyRow(Telerik.Reporting.Drawing.Unit.Cm(0.609D)));
+````
+
+>note Adding a detail row group is mandatory for the table to display data. When using a report designer, this group is created automatically. To mark the group as a detail group programmatically, use a null grouping as shown above.
+
+### 3. Add Columns Dynamically Based on Data
+
+The method for obtaining field names for your table columns depends on the type of data source you are using. In this example, since an `SqlDataSource` is utilized, the code demonstrates how to extract column names directly from an SQL database. If your data source is a CSV, JSON, or another format, you will need to adjust the logic to extract field names appropriately and create the string collection named `columnNames`. Once you have the field names, the process for dynamically generating table columns remains consistent with the below code snippet.
+
+````csharp
+using (var connection = new System.Data.SqlClient.SqlConnection(connectionString))
 {
-    internal class Program
+    // retrieve the column names from the data source
+    var command = new System.Data.SqlClient.SqlCommand(selectCommand, connection);
+    connection.Open();
+    var reader = command.ExecuteReader();
+    var dataTable = new System.Data.DataTable();
+    dataTable.Load(reader);
+    var columnNames = dataTable.Columns.Cast<System.Data.DataColumn>().Select(c => c.ColumnName);
+
+    // for each column name
+    int colIndex = 0;
+    foreach (string columnName in columnNames)
     {
-        static void Main(string[] args)
-        {
-            string selectCommand = "SELECT * FROM production.productphoto;";
-            string connectionString = "server=localhost\\sqlexpress;database=AdventureWorks2022;trusted_connection=true;";
+        // add column
+        var column = new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Cm(2.99D));
+        table.Body.Columns.Add(column);
 
-            // Initialize the report
-            Telerik.Reporting.Report report = new Telerik.Reporting.Report();
+        // add column header
+        var headerTextBox = new Telerik.Reporting.TextBox();
+        headerTextBox.Name = columnName + "TextBoxHeader";
+        headerTextBox.Value = columnName;
+        headerTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.99D), Telerik.Reporting.Drawing.Unit.Cm(0.609D));
 
-            // Define header, footer, and detail sections
-            var pageHeaderSection = new Telerik.Reporting.PageHeaderSection { Height = Telerik.Reporting.Drawing.Unit.Cm(2.5D), Name = "pageHeaderSection1" };
-            var pageFooterSection = new Telerik.Reporting.PageFooterSection { Height = Telerik.Reporting.Drawing.Unit.Cm(2.5D), Name = "pageFooterSection1" };
-            var detailSection = new Telerik.Reporting.DetailSection { Height = Telerik.Reporting.Drawing.Unit.Cm(5D), Name = "detail" };
+        var columnGroup = new Telerik.Reporting.TableGroup();
+        columnGroup.Name = columnName;
+        columnGroup.ReportItem = headerTextBox;
+        table.ColumnGroups.Add(columnGroup);
 
-            // Define the table and its data source
-            var sqlDataSource = new Telerik.Reporting.SqlDataSource(connectionString, selectCommand)
-            {
-                Name = "sqlDataSource1",
-                ProviderName = "System.Data.SqlClient"
-            };
-            var table = new Telerik.Reporting.Table { DataSource = sqlDataSource, Name = "table1" };
+        // add column body
+        var bodyTextBox = new Telerik.Reporting.TextBox();
+        bodyTextBox.Name = columnName + "TextBoxBody";
+        bodyTextBox.Value = "= Fields." + columnName;
+        bodyTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.99D), Telerik.Reporting.Drawing.Unit.Cm(0.609D));
+        table.Body.SetCellContent(0, colIndex, bodyTextBox);
 
-            // Create rows and columns dynamically based on retrieved data
-            var dataTable = new DataTable();
-            using (var connection = new SqlConnection(connectionString))
-            {
-                var command = new SqlCommand(selectCommand, connection);
-                connection.Open();
-                var reader = command.ExecuteReader();
-                dataTable.Load(reader);
-
-                table.Body.Rows.Add(new TableBodyRow(Telerik.Reporting.Drawing.Unit.Cm(0.609D)));
-
-                int colIndex = 0;
-                foreach (DataColumn column in dataTable.Columns)
-                {
-                    table.Body.Columns.Add(new TableBodyColumn(Telerik.Reporting.Drawing.Unit.Cm(2.99D)));
-                    var columnGroup = new TableGroup();
-
-                    var headerTextBox = new TextBox
-                    {
-                        Value = column.ColumnName,
-                        Name = column.ColumnName + "TextBoxHeader",
-                        Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.99D), Telerik.Reporting.Drawing.Unit.Cm(0.609D)),
-                    };
-                    columnGroup.Name = column.ColumnName;
-                    columnGroup.ReportItem = headerTextBox;
-                    table.ColumnGroups.Add(columnGroup);
-
-                    var bodyTextBox = new TextBox
-                    {
-                        Value = "= Fields." + column.ColumnName,
-                        Name = column.ColumnName + "TextBoxBody",
-                        Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.99D), Telerik.Reporting.Drawing.Unit.Cm(0.609D))
-                    };
-
-                    table.Body.SetCellContent(0, colIndex, bodyTextBox);
-                    table.Items.AddRange(new ReportItemBase[] { bodyTextBox, headerTextBox });
-                    colIndex++;
-                }
-            }
-
-            detailSection.Items.AddRange(new ReportItemBase[] { table });
-
-            // Finalize the report structure
-            report.Name = "Report1";
-            report.PageSettings.Margins = new Telerik.Reporting.Drawing.MarginsU(Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D));
-            report.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
-            report.Width = Telerik.Reporting.Drawing.Unit.Cm(17D);
-            report.Items.AddRange(new ReportItemBase[] { pageHeaderSection, detailSection, pageFooterSection });
-
-            // Package the report as a TRDP file
-            var reportPackager = new ReportPackager();
-            using (var targetStream = System.IO.File.Create("DynamicReport.trdp"))
-            {
-                reportPackager.Package(report, targetStream);
-            }
-        }
+        colIndex++;
     }
 }
-```
+````
 
-### Notes
+## Demo
 
-- Use the [Telerik Reporting API](https://docs.telerik.com/reporting/embedding-reports/program-the-report-definition/create-report-programmatically) to modify existing `.trdp` files, which reduces boilerplate code.
-- To modify an existing report, unpack the `.trdp` file, make changes, and repackage it. Refer to [Packaging and Unpacking Reports](https://docs.telerik.com/reporting/embedding-reports/program-the-report-definition/package-report-definition#packaging-clr-report-definition).
-
-## See Also
-
-- [Creating Reports Programmatically](https://docs.telerik.com/reporting/embedding-reports/program-the-report-definition/create-report-programmatically)
-- [ObjectDataSource Component](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source)
-- [Packaging and Unpacking Reports](https://docs.telerik.com/reporting/embedding-reports/program-the-report-definition/package-report-definition#packaging-clr-report-definition)
----
+You can find a sample console application that demonstrates the above approach at [reporting-samples/ProgrammaticTableGeneration](https://github.com/telerik/reporting-samples/tree/master/ProgrammaticTableGeneration).

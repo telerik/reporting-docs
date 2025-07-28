@@ -22,10 +22,10 @@ The **Web Report Designer** offers a **Tables** section inside the **Components*
 ![Tables Group ><](images/wrd-components-tray-tables-design.png)
 
 * [List]({%slug web-report-designer-user-guide-components-tables%}#adding-a-list) - Displays data from a set of Business Objects creating a free-form data layout (e.g. composed of multiple simpler items per list data item). You are not limited to a grid layout, you can freely place fields inside the List. 
-* [Table]({%slug web-report-designer-user-guide-components-tables%}#adding-a-table) - Displays report data in cells that are organized into rows and columns.</td>|
+* [Table]({%slug web-report-designer-user-guide-components-tables%}#adding-a-table) - Displays report data in cells that are organized into rows and columns.
 * [Crosstab]({%slug web-report-designer-user-guide-components-tables%}#adding-a-crosstab) - Displays aggregated data summaries that are grouped in rows and columns in a similar way to a pivot grid. The number of rows and columns for groups is determined by the number of unique values for each row and column groups.
 * [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard) - The Table wizard guides you through the process of adding a Table item to a report.
-* [Crosstab Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-crosstab-wizard)|The Crosstab wizard guides you through the process of adding a Crosstab item to a report.
+* [Crosstab Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-crosstab-wizard) - The Crosstab wizard guides you through the process of adding a Crosstab item to a report.
 
 Before adding a Table report item, first, you need to select the Details section of the report. Then, you can select the desired table item type from the Components tray and configure it with the desired data source. The following sections illustrate what are the available table item types:
 

@@ -134,7 +134,7 @@ To add a `GraphQL Data Source`:
 
 1. Click the `GraphQL Data Source` item in the **Components** tray.
 
-2. The [GraphQL Data Source configuration wizard]({%slug desktop-graphqldatasource-wizard%}) appears allowing you to create new or edit an existing [GraphQLDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview) component.
+2. The [GraphQL Data Source configuration wizard](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard) appears allowing you to create new or edit an existing [GraphQLDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview) component.
 
     The wizard allows you to setup one of the options:
     * Setup the properties of the HTTP request which will retrieve data from the GraphQL service. 

@@ -30,48 +30,35 @@ table th:nth-of-type(2) {
 
 The **Web Report Designer** offers a **Data Sources** section inside the **Components** tray allowing the end-user to fetch data from different storages: 
 
-<div style="display: flex; align-items: flex-start; gap: 24px;">
-  <img alt="><" title="Components tray" src="images/wrd-components-tray-data-sources.png" style="max-width:240px; height:auto; border:1px solid lightgrey;" />
-  <table style="width:100%; height:100%;">
-    <tr>
-      <th style="width:30%">Data Source</th><th>Description</th> 
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#sql-data-source">SQL Data Source</a></td>
-      <td>Enables data items to display data located in a relational database, including <a href="https://www.microsoft.com/en-us/sql-server">Microsoft SQL Server</a> and Oracle databases, as well as OLE DB and ODBC data sources, using little or no code.</td>
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#csv-data-source">CSV Data Source</a></td>
-      <td>Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.</td>
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#web-service-data-source">Web Service Data Source</a></td>
-      <td>Enables data items to display data located on a service in JSON format.</td>
-    </tr>
-  <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#graphql-data-source">GraphQL Data Source</a></td>
-      <td>Enables data items to retrieve data in JSON format from a GraphQL service.</td>
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#json-data-source">JSON Data Source</a></td>
-      <td>Enables data items to display JSON data located in a local file or saved directly into the report.</td>
-    </tr>
-    <tr>
-      <td><a href="https://testdocs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/user-guide/components/data-sources#object-data-source">Object Data Source</a></td>
-      <td>Provides a way to bind the Data Report Items to a middle-tier business object.</td>
-    </tr>
-  </table>
-</div>
+![Tables Group ><](images/wrd-components-tray-data-sources-design.png)
+ 
+ * [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#sql-data-source) - Enables data items to display data located in a relational database, including <a href="https://www.microsoft.com/en-us/sql-server">Microsoft SQL Server</a> and Oracle databases, as well as OLE DB and ODBC data sources, using little or no code. 
+ 
+ * [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#csv-data-source) - Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.
+ 
+ * [Web Service Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#web-service-data-source) - Enables data items to display data located on a service in JSON format.
+ 
+ * [GraphQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#graphql-data-source) - Enables data items to retrieve data in JSON format from a GraphQL service.
+ 
+ * [JSON Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#json-data-source) - Enables data items to display JSON data located in a local file or saved directly into the report.
+ 
+ * [Object Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#object-data-source) - Provides a way to bind the Data Report Items to a middle-tier business object.
 
 ## SQL Data Source
 
-By clicking the `SQL Data Source` item in the **Components** tray, the [SQL Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}) appears allowing you to use either an *existing* connection or build a *new* one by providing a `connection string` to connect to the database and define the SQL statement or the stored procedure to retrieve the data:
+To add a new `SQL Data Source`:
+
+1. Click the `SQL Data Source` item in the **Components** tray.
+
+2. The [SQL Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}) appears allowing you to use either an *existing* connection or build a *new* one by providing a `connection string` to connect to the database and define the SQL statement or the stored procedure to retrieve the data:
 
 >caption Existing vs New SQL Connection
 
 ![Existing vs New SQL Connection ><](images/wrd-components-tray-data-sources-sql-choose-data-connection.png)   
 
-If you want to skip any further fine-tuning, click the `Finish` button to confirm the configured connection and close the wizard. Otherwise, you can continue with the wizard steps and apply the desired settings:
+If you want to skip any further fine-tuning, click the `Finish` button to confirm the configured connection and close the wizard. Otherwise, you can continue with the wizard steps and apply the desired settings. 
+
+>note Depending on the user's configuration at a specific step, you may be navigated to one step or another according to the user journey. The following table lists all the steps that the wizard offers:
 
 |Wizard step|Description|
 |----|----|
@@ -88,7 +75,11 @@ If you want to skip any further fine-tuning, click the `Finish` button to confir
 
 ## CSV Data Source
 
-By clicking the `CSV Data Source` item in the **Components** tray, the [CSV Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}) appears allowing you to use either an existing or a new CSV file, or use inline CSV text with the data: 
+To add a new `CSV Data Source`: 
+
+1. Click the `CSV Data Source` item in the **Components** tray.
+
+2. The [CSV Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}) appears allowing you to use either an existing or a new CSV file, or use inline CSV text with the data: 
 
 >caption Upload a CSV Source vs Inline
 
@@ -111,7 +102,11 @@ If you want to skip any further fine-tuning, click the `Finish` button to confir
 
 ## Web Service Data Source
 
-By clicking the `Web Service Data Source` item in the **Components** tray, the [Web Service Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}) appears allowing you to create new or edit an existing  [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) component.
+To add a `Web Service Data Source`:
+
+1. Click the `Web Service Data Source` item in the **Components** tray.
+
+2. The [Web Service Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}) appears allowing you to create new or edit an existing  [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) component.
 
 >caption Setup Web Service Data Source
 
@@ -135,51 +130,55 @@ If you want to skip the further settings steps, click the `Finish` button to con
 
 ## GraphQL Data Source
 
-By clicking the `GraphQL Data Source` item in the **Components** tray, the [GraphQL Data Source configuration wizard](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard) appears allowing you to create new or edit an existing [GraphQLDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview) component.
+To add a `GraphQL Data Source`:
 
-The wizard allows you to setup one of the options:
-* Setup the properties of the HTTP request which will retrieve data from the GraphQL service. 
-* Reference an external data file.
-* Use inline data string containing the data (required if Service URL or external data file is not set).
+1. Click the `GraphQL Data Source` item in the **Components** tray.
 
-You are expected to see the following steps:
+2. The [GraphQL Data Source configuration wizard]({%slug desktop-graphqldatasource-wizard%}) appears allowing you to create new or edit an existing [GraphQLDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview) component.
 
-1. Setup the **GraphQL Service URL** (e.g. https://buybutton.store/graphql) 
+    The wizard allows you to setup one of the options:
+    * Setup the properties of the HTTP request which will retrieve data from the GraphQL service. 
+    * Reference an external data file.
+    * Use inline data string containing the data (required if Service URL or external data file is not set).
 
-1. Provide the **Query** for data retrieval:  
+    You are expected to see the following steps:
+  
+    1. Setup the **GraphQL Service URL** (e.g. https://buybutton.store/graphql) 
 
-    ```SQL
-    query paginateProducts($cursor: String) {
-      site {
-      products(first: 5, after: $cursor) {
-          pageInfo {
-            endCursor
-            hasNextPage
-          }
-          edges {
-            node {
-              entityId
-              name
+    1. Provide the **Query** for data retrieval:  
+
+        ```SQL
+        query paginateProducts($cursor: String) {
+          site {
+          products(first: 5, after: $cursor) {
+              pageInfo {
+                endCursor
+                hasNextPage
+              }
+              edges {
+                node {
+                  entityId
+                  name
+                }
+              }
             }
           }
         }
-      }
-    }
-    ```
+        ```
 
-    >caption Setup GraphQL Service URL and Configure the Query
+       >caption Setup GraphQL Service URL and Configure the Query
 
-    ![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)  
+        ![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)  
 
-1. Specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
+    1. Specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
 
-    ![GraphQL Request Parameters><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)   
+       ![GraphQL Request Parameters><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)   
 
-1. Configure Authentication settings (occurs only if an authentication method is selected in the first step): Transmits credentials as username/password pairs, encoded using base64.
+    1. Configure Authentication settings (occurs only if an authentication method is selected in the first step): Transmits credentials as username/password pairs, encoded using base64.
 
-1. As a final step, you can **Preview** the result:
+    1. As a final step, you can **Preview** the result:
 
-    ![GraphQL Preview Data><](images/wrd-components-tray-data-sources-graphql-preview-data.png)   
+       ![GraphQL Preview Data><](images/wrd-components-tray-data-sources-graphql-preview-data.png)   
 
 ## JSON Data Source 
 
@@ -199,7 +198,11 @@ By clicking the `JSON Data Source` item in the **Components** tray, the [JSON Da
 
 ## Object Data Source
 
-By clicking the `Object Data Source` item in the **Components** tray, the [Object Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard%}) appears allowing you to use a business object or any other class (that was already defined) for data retrieval in the report:
+To add an `Object Data Source`:
+
+1. Click the `Object Data Source` item in the **Components** tray.
+
+2. The [Object Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard%}) appears allowing you to use a business object or any other class (that was already defined) for data retrieval in the report:
 
 * Select Business object 
 
@@ -209,6 +212,7 @@ By clicking the `Object Data Source` item in the **Components** tray, the [Objec
 
    ![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-data-member.png)
 
+The following table lists all the steps offered by the wizard for configuring the ObjectDataSource:
 |Wizard step|Description|
 |----|----|
 |1. Choose a business object|The selected business object type's assembly-qualified name will be stored in the data source component's DataSource property.|
@@ -220,15 +224,10 @@ By clicking the `Object Data Source` item in the **Components** tray, the [Objec
 
 ![Preview Data from Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-preview.png)  
 
-## Data Source General Settings
+## Modifying Already Configured Data Sources
 
-Once a DataSource component is configured, it can be modified later by selecting it in the **Explorer** tab:
-
-![GraphQL Data Source Settings><](images/wrd-components-tray-data-sources-graphql-data-source-selected-in-explorer.png)    
-
-On the right-hand side the **General** settings (dependent on the specific Data Source item) are loaded and the user can further modify them:
-
-![GraphQL Data Source Settings><](images/wrd-components-tray-data-sources-graphql-data-source-settings.png)   
+Once a DataSource component is configured, it can be modified later by selecting it in the **Explorer** tab. On the right-hand side the **General** settings (dependent on the specific Data Source item) are loaded and the user can further modify them:
+![GraphQL Data Source Settings><](images/wrd-components-tray-data-sources-graphql-data-source-selected-in-explorer-common.png)   
 
 ## See Also
 

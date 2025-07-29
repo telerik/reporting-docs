@@ -37,7 +37,7 @@ Before creating a table programmatically, ensure you have a valid `Telerik.Repor
 Create a new report object and configure its basic settings:
 
 ````csharp
-Telerik.Reporting.Report report = new Telerik.Reporting.Report();
+var report = new Telerik.Reporting.Report();
 report.Name = "Report1";
 report.PageSettings.Margins = new Telerik.Reporting.Drawing.MarginsU(Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D), Telerik.Reporting.Drawing.Unit.Mm(20D));
 report.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;

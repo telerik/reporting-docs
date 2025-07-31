@@ -8,11 +8,18 @@ published: True
 position: 6
 ---
 
+<style>
+img[alt$="><"] {
+  border: 1px solid lightgrey;
+}
+
+</style>
+
 # Report Sections in the Web Report Designer
 
 Report sections divide the report vertically and define specific areas on the report page where content is rendered. Each section represents a distinct area with its own rendering behavior and determines how the report items within it are processed and displayed. The Web Report Designer provides five key sections that control the structure and layout of your reports.
 
-![Report Sections - Web Report Designer User Guide - Telerik Reporting](../images/wrd-report-sections.png)
+![Report Sections - Web Report Designer User Guide - Telerik Reporting](./images/wrd-components-report-sections.png)
 
 ## Adding Report Sections
 
@@ -39,3 +46,5 @@ The Report Footer section appears only once at the very end of the report. If th
 ## Table of Contents Section
 
 The Table of Contents (TOC) section provides navigational links to report items and displays the page numbers where they can be found. Users can click on TOC entries to navigate directly to the corresponding report page. The TOC section can be positioned before or after the Report Header or Report Footer sections based on your preferences.
+
+For a sample report with a TOC, see the [Product Catalog Report Demo](https://demos.telerik.com/reporting/product-catalog).

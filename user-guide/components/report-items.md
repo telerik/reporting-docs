@@ -24,7 +24,7 @@ Report items can reside inside report sections or other report components such a
 
 ![Report Items - Web Report Designer User Guide - Telerik Reporting](../images/wrd-report-items-crop.png)
 
-## Types of Report Items
+## Report Item Types
 
 Telerik Web Report Designer provides various report items, each designed for specific data visualization needs:
 
@@ -56,7 +56,7 @@ Once you add the desired Report Items, the **Properties** panel allows you to:
 * Apply styling and conditional formatting
 * Configure interactivity options
 
-## TextBox Report Item
+## TextBox
 
 The TextBox is used for titles, labels, and within tables. It can display both static and dynamic text, including expressions and database fields. The TextBox's flexible properties allow you to control its size and text orientation.
 
@@ -64,7 +64,7 @@ The TextBox is used for titles, labels, and within tables. It can display both s
 
 To learn more about working with the TextBox item, see the [TextBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/textbox %}).
 
-## HtmlTextBox Report Item
+## HtmlTextBox
 
 The HtmlTextBox allows you to insert and display HTML-formatted text within a report. The HtmlTextBox item is ideal for scenarios where you need rich text formatting, dynamic content, or templated text in your reports. You can set its content at design time using a WYSIWYG editor, an ezxpression editor, or dynamically from a data source.
 
@@ -72,7 +72,7 @@ The HtmlTextBox allows you to insert and display HTML-formatted text within a re
 
 To learn more about working with the HtmlTextBox item, see the [HtmlTextBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview %}).
 
-## PictureBox Report Item
+## PictureBox
 
 The PictureBox displays images within a report. It is ideal for product images, logos, barcodes, or any visual content in reports. The PictureBox supports various image formats, including Base64-encoded images, SVG, and common raster formats like BMP, GIF, JPEG, PNG, EXIF, and TIFF. It provides flexible data binding and layout options to fit various reporting needs.
 
@@ -80,7 +80,7 @@ The PictureBox displays images within a report. It is ideal for product images, 
 
 To learn more about working with the PictureBox item, see the [PictureBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/picturebox %}).
 
-## CheckBox Report Item
+## CheckBox
 
 The Checkbox displays a check mark alongside text in a report. It visually represents boolean or multi-state data (such as approved/disapproved) and can be customized to match various data field values. Its main uses include displaying status indicators, approval states, or any scenario where a visual check mark is needed in a report. The item supports both static and data-driven content.
 
@@ -88,7 +88,7 @@ The Checkbox displays a check mark alongside text in a report. It visually repre
 
 To learn more about working with the CheckBox item, see the [CheckBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/checkbox %}).
 
-## Barcode Report Item
+## Barcode
 
 The Barcode item allows you to automatically generate barcodes from numeric or character data within a report. It supports both 1D and 2D barcodes. The Barcode Report Item is ideal for adding machine-readable codes to reports, such as product labels, inventory sheets, tickets, or any scenario where barcodes are needed for scanning and automation.
 
@@ -96,7 +96,7 @@ The Barcode item allows you to automatically generate barcodes from numeric or c
 
 To learn more about working with the Barcode item, see the [Barcode article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/barcode/overview %}).
 
-## Shape Report Item
+## Shape
 
 The Shape item displays a single, predefined geometric shape (such as lines, arrows, stars, or polygons) within a report. It also allows you to create custom shapes. The Shape item is ideal for adding visual elements, separators, highlights, or decorative graphics to reports, which lets you enhance readability and visual appeal. It can also be used to represent flow, direction, or status using arrows and other shapes.
 
@@ -104,7 +104,7 @@ The Shape item displays a single, predefined geometric shape (such as lines, arr
 
 To learn more about working with the Shape item, see the [Shape article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/shape %}).
 
-## Panel Report Item
+## Panel
 
 The Panel is a container used to group or separate multiple report items for layout and organizational purposes. It is not bound to data and does not affect the data context of its contents. The Panel is perfect for structuring complex report layouts, grouping related items, and applying shared properties or visibility rules to multiple items at once.
 
@@ -112,7 +112,7 @@ The Panel is a container used to group or separate multiple report items for lay
 
 To learn more about working with the Panel item, see the [Panel article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/panel %}).
 
-## Gauge Report Item
+## Gauge
 
 The Gauge visualizes key performance indicators (KPIs) and progress toward goals. It supports both radial (circular, like speedometers) and linear (horizontal or vertical bars) gauges. You can incorporate the Gauge in dashboards and reports where you need to visualize KPIs, progress, or performance metrics at a glance, such as sales targets, speed, or completion percentages.
 

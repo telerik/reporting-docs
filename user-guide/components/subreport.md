@@ -1,9 +1,9 @@
 ---
 title: SubReport
 page_title: SubReport
-description: Web Report Designer offers different Table Components that can be used to visualize the data records in the reports.
-slug: web-report-designer-user-guide-components-tables
-tags: web, report, design, report, components, subreport, hierarchy, master, detail
+description: Learn how to use SubReports in the Web Report Designer to embed reports within other reports for creating master-detail hierarchies and reusable report components.
+slug: web-report-designer-user-guide-components-subreport
+tags: web, report, design, components, subreport, hierarchy, master, detail
 published: True
 position: 3
 ---
@@ -17,127 +17,141 @@ img[alt$="><"] {
 
 # SubReport
 
-The **Web Report Designer** offers a **Report** section inside the **Components** tray allowing the end-user to add a **SubReport** item which enables you to display reports within reports and serves as a container, similar to the report sections, growing in size depending on its children.
+A SubReport is a report component that allows you to embed one report inside another report. This lets you create complex report layouts, display hierarchical data relationships, and build reusable report components that can be shared across multiple reports.
+
+SubReports act as containers that automatically adjust their size based on the content of the embedded report. You can use SubReports to create:
+
+* Master-detail relationships&mdash;Display related data in a parent-child format (for example, customers and their orders).
+* Reusable components&mdash;Create shared headers, footers, or report sections that can be used across multiple reports.
+* Complex layouts&mdash;Combine different data sources and report structures within a single report.
+* Hierarchical data&mdash;Show nested data relationships with proper grouping and organization.
+
+The next video demonstrates how to [create master-detail](#) reports by using SubReports in the Telerik Web Report Designer:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TDRZETEWtSk?si=Lgm3HkxytrWh0zTB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Prerequisites
+
+Before working with SubReports, ensure you have:
+
+* Created and configured [data sources]({%slug web-report-designer-user-guide-components-data-sources%}) for both master and child reports.
+* Planned your data relationships and report hierarchy.
+
 ## Creating Master-Detail Reports with SubReports
 
-The following example shows how to achieve a master-detail report using a SubReport Item. The master report (e.g. *CategoriesProductsSubreport.trdp*) contains a table filled with the Northwind.**Categories** table. The **SubReport** item (*ProductsReport.trdp*) shows the Northwind.**Products** records filtered by the respective **CategoryID**.
+The following example demonstrates how to create a master-detail report using SubReports. The master report (*CategoriesProducts.trdp*) contains a table with Northwind **Categories** data. The SubReport (*ProductsReport.trdp*) displays Northwind **Products** records filtered by the respective `CategoryID`.
 
-The report is achieved by using the following steps:
+> To follow along with the steps below, you need access to an instance of the [Northwind](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs) database for [Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver17).
 
-### Building the Child Report
+### Step 1: Building the Child Report
 
-1. Start with a blank report (*ProductsReport.trdp*) that will be used for the child report, select its header/footer section and delete them.
+1. Start with a blank report (*ProductsReport.trdp*) that will serve as the child report. Select the header and footer sections and delete them.
 
-	![SubReport ><](images/wrd-components-subreport-new-report.png)   
+    ![SubReport ><](images/wrd-components-subreport-new-report.png)
 
-2. Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) populated with the Northwind.Products table:
+1. Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) populated with the `Northwind.Products` table:
 
-	Here is the SQL query that selects the respective data:
+    Here is the SQL query that selects the respective data:
 
-	```SQL
-	SELECT
-		[dbo].[Products].[ProductID], 
-		[dbo].[Products].[ProductName], 
-		[dbo].[Products].[Discontinued], 
-		[dbo].[Products].[SupplierID], 
-		[dbo].[Products].[CategoryID], 
-		[dbo].[Products].[QuantityPerUnit], 
-		[dbo].[Products].[UnitPrice], 
-		[dbo].[Products].[UnitsInStock], 
-		[dbo].[Products].[UnitsOnOrder], 
-		[dbo].[Products].[ReorderLevel]
-	FROM [dbo].[Products]
-	```
+    ```SQL
+    SELECT
+        [dbo].[Products].[ProductID], 
+        [dbo].[Products].[ProductName], 
+        [dbo].[Products].[Discontinued], 
+        [dbo].[Products].[SupplierID], 
+        [dbo].[Products].[CategoryID], 
+        [dbo].[Products].[QuantityPerUnit], 
+        [dbo].[Products].[UnitPrice], 
+        [dbo].[Products].[UnitsInStock], 
+        [dbo].[Products].[UnitsOnOrder], 
+        [dbo].[Products].[ReorderLevel]
+    FROM [dbo].[Products]
+    ```
 
-3. Set the **DataSource** of the Report using the created SQLDataSource with the Products:
+1. Set the **DataSource** of the report using the created SQLDataSource:
 
-	![Report DataSource ><](images/wrd-components-subreport-report-data-source.png)    
+    ![Report DataSource ><](images/wrd-components-subreport-report-data-source.png)
 
-4. From the **Components tray** drag two **TextBox** report items to the Details section:</br>
+1. From the **Components** tab, drag two **TextBox** report items to the Detail section:
 
-	4.1 Select each of the TextBoxes </br>
+    4.1. Select each of the TextBoxes.
 
-	4.2 Set the **Value** property to be bound to the **ProductName** and **UnitPrice** fields respectively</br>
+    4.2. Bind the the **Value** property of the TextBoxes to the `ProductName` and `UnitPrice` fields respectively.
 
-	4.3 Use the Expression dialog for setting the desired field</br>
+    4.3. Use the **Expression** dialog to set the desired field.
 
-	![Bind Product Fields ><](images/wrd-components-subreport-bind-product-fields.png)     
+    ![Bind Product Fields ><](images/wrd-components-subreport-bind-product-fields.png)
 
-5. Preview the report to see that all Products are listed.
+1. Preview the report to verify that all Products are listed.
 
-6. Add an integer report parameter **ProductCategoryID** which will be used for filtering the products:
+1. Add an integer report parameter called `ProductCategoryID` which you will use to filter by product:
 
-	![Create Report Parameter ><](images/wrd-components-subreport-create-report-parameter.png)   
+    ![Create Report Parameter ><](images/wrd-components-subreport-create-report-parameter.png)
 
-7. Update the SELECT query of the added SQLDataSource and add a WHERE clause using a SQL parameter (which is mapped to the previously created report parameter):
+1. Update the `SELECT` query of the added SQLDataSource and add a `WHERE` clause using an SQL parameter (which is mapped to the previously created report parameter):
 
-	```SQL 
-	SELECT
-		[dbo].[Products].[ProductID], 
-		[dbo].[Products].[ProductName], 
-		[dbo].[Products].[Discontinued], 
-		[dbo].[Products].[SupplierID], 
-		[dbo].[Products].[CategoryID], 
-		[dbo].[Products].[QuantityPerUnit], 
-		[dbo].[Products].[UnitPrice], 
-		[dbo].[Products].[UnitsInStock], 
-		[dbo].[Products].[UnitsOnOrder], 
-		[dbo].[Products].[ReorderLevel]
-	FROM [dbo].[Products]
-	WHERE [dbo].[Products].[CategoryID]=@sqlParamCategoryId
-	```
+    ```SQL
+    SELECT
+        [dbo].[Products].[ProductID], 
+        [dbo].[Products].[ProductName], 
+        [dbo].[Products].[Discontinued], 
+        [dbo].[Products].[SupplierID], 
+        [dbo].[Products].[CategoryID], 
+        [dbo].[Products].[QuantityPerUnit], 
+        [dbo].[Products].[UnitPrice], 
+        [dbo].[Products].[UnitsInStock], 
+        [dbo].[Products].[UnitsOnOrder], 
+        [dbo].[Products].[ReorderLevel]
+    FROM [dbo].[Products]
+    WHERE [dbo].[Products].[CategoryID]=@sqlParamCategoryId
+    ```
 
-	![Update SQL Select ><](images/wrd-components-subreport-update-sql-select.png)    
+    ![Update SQL Select ><](images/wrd-components-subreport-update-sql-select.png)
 
-8. Save the report (*ProductsReport.trdp*). This would be used as our sub-report.
+1. Save the report (*ProductsReport.trdp*). You will use it as a child report.
 
-### Building the Master Report
+### Step 2: Building the Master Report
 
 1. Create a new blank report (*CategoriesProducts.trdp*).
 
-2. Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) filled with the Northwind.Categories table:
+1. Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) filled with the `Northwind.Categories` table:
 
-	```SQL
-	SELECT
-		[dbo].[Categories].[CategoryID], 
-		[dbo].[Categories].[CategoryName], 
-		[dbo].[Categories].[Description], 
-		[dbo].[Categories].[Picture]
-	FROM [dbo].[Categories]
-	```
+    ```SQL
+    SELECT
+        [dbo].[Categories].[CategoryID], 
+        [dbo].[Categories].[CategoryName], 
+        [dbo].[Categories].[Description], 
+        [dbo].[Categories].[Picture]
+    FROM [dbo].[Categories]
+    ```
 
-3. Select the report's Detail section and use the [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}) to add a table bound to the just added SQLDataSource:
+1. Select the report's Detail section and use the [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}) to add a table bound to the just added SQLDataSource:
 
-	![Create Categories Table ><](images/wrd-components-subreport-create-categories-table.png)   
+    ![Create Categories Table ><](images/wrd-components-subreport-create-categories-table.png)
 
-4. Select the "Picture" header and change its text to "Products".
+1. Select the **Picture** header and change its text to **Products**.
 
-5. Select the "Picture" data row >> the cell bound to the Picture field and add a **SubReport** item by selecting the respective report item from the Components tray:
+1. Select the data cell bound to the `Picture` field (`[=Fields.Picture]`) and add a **SubReport** item by selecting it from the **Components** tab:
 
-	![Adding SubReport ><](images/wrd-components-subreport-adding-subreport.png)   
+    ![Adding SubReport ><](images/wrd-components-subreport-adding-subreport.png)
 
-6. Specify the **Inner Report** for the **SubReport** item and select the Uri option that refers to the previously created ProductsReport.trdp:
+1. Specify the **Inner Report** for the **SubReport** item and select the Uri option that refers to the previously created `ProductsReport.trdp`:
 
-	![Setup UriReportSource ><](images/wrd-components-subreport-urireportsource.png)   
+    ![Setup UriReportSource ><](images/wrd-components-subreport-urireportsource.png)
 
-7. Setup the relation between the parent anc child reports:
-	
-	7.1 Adjust the Parameters
+1. Set up the relation between the parent and child reports:
 
-	7.2 Link the SubReport parameter (ProductCategoryID) with the master report's **CategoryID** field
+    7.1. Adjust the parameters.
 
-	![Setup ProductCategoryID Report Parameter ><](images/wrd-components-subreport-setup-productcategoryid-report-parameter.png)   
+    7.2. Link the SubReport parameter (`ProductCategoryID`) with the master report's `CategoryID` field.
 
-8. Save the changes and preview the master report. You will see all categories listed with the respective products for each category: 
+    ![Setup ProductCategoryID Report Parameter ><](images/wrd-components-subreport-setup-productcategoryid-report-parameter.png)
 
-	![Master-Detail hierarchy ><](images/wrd-components-subreport-master-detail-hierarchy.png)    
+1. Save the changes and preview the master report. You will see all categories listed with the respective products for each category:
+
+    ![Master-Detail hierarchy ><](images/wrd-components-subreport-master-detail-hierarchy.png)
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) 
-* [DataSources]({%slug web-report-designer-user-guide-components-data-sources%}) 
-
-
+* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})

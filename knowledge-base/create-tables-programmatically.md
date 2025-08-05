@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-This article demonstrates how to create tables programmatically in Telerik Reporting. While this approach offers full control over table structure and data binding, it is generally recommended to start with a designer-generated table and modify it programmatically if needed. The Telerik Report Designer handles complex layout and grouping logic, making it easier to maintain and extend reports.
+This article demonstrates how to create tables programmatically in Telerik Reporting. While this approach offers full control over table structure and data binding, it is recommended to start with a table generated in one of the Telerik Report Designer tools and then modify it programmatically if needed. The Telerik Report Designer handles complex layout and grouping logic, making it easier to maintain and extend reports.
 
 ## Prerequisites
 

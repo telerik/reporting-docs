@@ -1,6 +1,6 @@
 ---
 title: Create a Calendar with Telerik Report Designer
-description: Learn how to add a calendar to Telerik Report and display multiple calendars for different positions using List items.
+description: Learn how to add a calendar to Telerik Report using List items.
 type: how-to
 page_title: Creating Calendars in Telerik Report
 meta_title: Creating Calendars in Telerik Report
@@ -22,38 +22,33 @@ ticketid: 1695126
 
 ## Description
 
-I need to create a calendar within a Telerik Report that visually represents data for specific positions. I want to display a calendar per position, showing only the days relevant to that position. Currently, I convert a CSS-based calendar into an image and pass it into the report, but this approach is insufficient for handling multiple calendars. I need a more dynamic solution that allows the report to generate the calendar directly.
-
-This knowledge base article also answers the following questions:
-- How to create a calendar in Telerik Report using Crosstab or List?
-- How to display multiple calendars dynamically in a report?
-- How to generate a calendar for each position in a Telerik Report?
+I need to create a calendar within a Telerik Report that visually represents special days like Holidays. 
 
 ## Solution
 
-To generate a calendar layout in Telerik Report, use a **Crosstab**, **Table**, or **List** item. Each cell represents a day, with weeks laid out as rows and days as columns.
+To generate a calendar layout in Telerik Report, use a **List** item with the approach described in the KB article [Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%}). Each cell represents a day, with weeks laid out as rows. 
 
-### Using Crosstab or Table
+Additionally, you may create an outer grid with the Months of the Year using the same approach and an outer List, which detail section will host the Months.
 
-1. Add a [Table or Crosstab item](https://docs.telerik.com/reporting/table-working-with-table-cross-table-list-items) to your report.
-2. Set the column headers as weekdays (e.g., Sun, Mon, Tue).
-3. Bind each cell to the specific date data.
-4. Style cells to visually differentiate selected days using **Bindings**.
-
-### Using List for Multi-Column Layout
+### Using List for a single Month Calendar
 
 1. Use a [List item](https://docs.telerik.com/reporting/knowledge-base/how-to-create-multi-column-report---across-the-page-and-then-down) to create a calendar layout.
-2. Set the number of columns to 7 (days in a week).
-3. Use an expression to set weekday headers. For example:
-   ```
-   = Switch(Fields.Index % 7, 0, "Sun", 1, "Mon", 2, "Tue", 3, "Wed", 4, "Thu", 5, "Fri", 6, "Sat")
-   ```
-4. Place the calendar list inside an outer list to repeat multiple calendars across and down the page.
-
-### Highlighting Selected Days
-
+1. Set the number of columns to 7 (days in a week).
 1. Use the **Bindings** feature to dynamically change the text and background color for selected days.
-2. Bind the List or Crosstab DataSource to its parent data to display multiple calendars dynamically.
+1. Add a new parent Row Group (Outside Group > Above) to the List for a Row Header with the Weekdays names.
+1. Use the following expression to set lthe weekday headers starting with Monday. You may change it accordingly if you prefer the Calendar to start with Sunday or another day:
+
+	= Switch(Fields.Index % 7, 0, "Mon", 1, "Tue", 2, "Wed", 3, "Thu", 4, "Fri", 5, "Sat", "Sun")
+
+Here is a sample of how the January 2025 calendar looks like:
+
+![Monthly calendar for January 2025 achieved with a List in Telerik Reporting]()
+
+### Using an outer List for a Year Calendar
+
+1. Place the calendar list inside an outer list detail Panel and apply the same 'across and then down' approach for the outer list. Set the number of columns as preferred. For example, if you want three months horizontally and four vertically, the number of columns should be 3.
+1. Use Panels on the sides and below the Month list to ensure the months in the Year calendar are separated.
+1. 
 
 ### Resources
 

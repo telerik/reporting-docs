@@ -48,7 +48,7 @@ report.Width = Telerik.Reporting.Drawing.Unit.Cm(17D);
 
 Most reports include three main sections:
 
-- **PageHeaderSection**: Appears at the top of each page.
+- `PageHeaderSection`: Appears at the top of each page.
 - **DetailSection**: Contains the main content, such as tables or charts.
 - **PageFooterSection**: Appears at the bottom of each page.
 

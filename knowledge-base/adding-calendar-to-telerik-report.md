@@ -48,11 +48,11 @@ Here is a sample of how the January 2025 calendar looks:
 
 1. Place the calendar list inside an outer list detail Panel and apply the same 'across and then down' approach for the outer list. Set the number of columns as preferred. For example, if you want three months horizontally and four vertically, the number of columns should be 3.
 1. Use Panels on the sides and below the Month list to ensure the months in the Year calendar are separated.
-1. If you want to show also Month names, you should add a middle List between the Month and Year lists.
+1. If you want to show also the Month names, you should add a middle List between the Month and Year lists.
 	* The detail section should contain both the Month list with its side panels, and above it the Month name in a TextBox or HtmlTextBox.
-	* The TextBox/HtmlTextBox with month name should be Docked to the top of its parent Panel. This ensures the month name will be displayed above the whole week.
+	* The TextBox/HtmlTextBox with the month name should be docked to the top of its parent Panel. This ensures the month name will be displayed above the whole week.
 
-This is the whole 2025 calendar created with the above approach. You may downloas the demo report [Calendar.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Calendar.trdx) from the reporting-samples repo:
+This is the whole 2025 calendar created with the above approach. You may download the demo report [Calendar.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Calendar.trdx) from the reporting-samples repo:
 
 ![Calendar for the year 2025 achieved with nested Lists in Telerik Reporting](images/Calendar-2025.png)
 

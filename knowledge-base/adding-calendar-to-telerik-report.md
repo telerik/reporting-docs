@@ -52,20 +52,11 @@ Here is a sample of how the January 2025 calendar looks:
 	* The detail section should contain both the Month list with its side panels, and above it the Month name in a TextBox or HtmlTextBox.
 	* The TextBox/HtmlTextBox with month name should be Docked to the top of its parent Panel. This ensures the month name will be displayed above the whole week.
 
-This is the whole 2025 calendar created with the above approach. You may downloas the demo report from the reporting-samples repo :
+This is the whole 2025 calendar created with the above approach. You may downloas the demo report [Calendar.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Calendar.trdx) from the reporting-samples repo:
 
 ![Calendar for the year 2025 achieved with nested Lists in Telerik Reporting](images/Calendar-2025.png)
 
-### Resources
-
-Refer to the following resources for detailed examples:
-- [Creating a Calendar Report with Telerik Reporting](https://www.telerik.com/blogs/creating-a-calendar-report-with-telerik-reporting)
-- [Designing a Calendar/Schedule Report](https://www.telerik.com/forums/designing-a-calendar-schedule-report)
-- [Multi-Column Report - Across the Page and Then Down](https://docs.telerik.com/reporting/knowledge-base/how-to-create-multi-column-report---across-the-page-and-then-down)
-- [Using Expressions and Bindings](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
-
 ## See Also
 
-- [Table and Crosstab Overview](https://docs.telerik.com/reporting/table-working-with-table-cross-table-list-items)
-- [Multi-Column Report Example](https://docs.telerik.com/reporting/knowledge-base/how-to-create-multi-column-report---across-the-page-and-then-down)
-- [Expressions and Bindings](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
+* [Multi-Column Report Example](https://docs.telerik.com/reporting/knowledge-base/how-to-create-multi-column-report---across-the-page-and-then-down)
+* [Expressions and Bindings](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)

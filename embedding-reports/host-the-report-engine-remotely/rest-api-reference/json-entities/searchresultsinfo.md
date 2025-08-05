@@ -5,7 +5,7 @@ description: "Learn more about the SearchResultsInfo JSON Entity in Telerik Repo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo
 tags: searchresultsinfo
 published: True
-position: 10
+position: 11
 previous_url: /telerik-reporting-rest-json-entities-searchresultsinfo,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo
 ---
 

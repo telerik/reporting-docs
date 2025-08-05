@@ -5,7 +5,7 @@ description: "Learn more about the Parameter JSON Entity in Telerik Reporting RE
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter
 tags: parameter
 published: True
-position: 5
+position: 7
 previous_url: /telerik-reporting-rest-json-entities-parameter,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter
 ---
 

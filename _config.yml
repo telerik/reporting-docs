@@ -282,11 +282,14 @@ navigation:
     embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api:
         position: 13
         title: "Documents API"
-    embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api:
         position: 14
+        title: "Features API"
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api:
+        position: 15
         title: "General API"
     embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities:
-        position: 15
+        position: 16
         title: "JSON Entities"
     designing-reports:
         position: 40

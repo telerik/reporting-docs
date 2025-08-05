@@ -28,19 +28,19 @@ I need to create a calendar within a Telerik Report that visually represents spe
 
 To generate a calendar layout in Telerik Report, use a **List** item with the approach described in the KB article [Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%}). Each cell represents a day, with weeks laid out as rows. 
 
-Additionally, you may create an outer grid with the Months of the Year using the same approach and an outer List, which detail section will host the Months.
+Additionally, you may create an outer grid with the Months of the Year using the same approach and an outer List, whose detail section will host the Months.
 
-### Using List for a single Month Calendar
+### Using a List for a single Month Calendar
 
 1. Use a [List item](https://docs.telerik.com/reporting/knowledge-base/how-to-create-multi-column-report---across-the-page-and-then-down) to create a calendar layout.
 1. Set the number of columns to 7 (days in a week).
 1. Use the **Bindings** feature to dynamically change the text and background color for selected days.
-1. Add a new parent Row Group (Outside Group > Above) to the List for a Row Header with the Weekdays names.
-1. Use the following expression to set lthe weekday headers starting with Monday. You may change it accordingly if you prefer the Calendar to start with Sunday or another day:
+1. Add a new parent Row Group (Outside Group > Above) to the List for a Row Header with the Weekday names.
+1. Use the following expression to set the weekday headers starting with Monday. You may change it accordingly if you prefer the Calendar to start with Sunday or another day:
 
 	= Switch(Fields.Index % 7, 0, "Mon", 1, "Tue", 2, "Wed", 3, "Thu", 4, "Fri", 5, "Sat", "Sun")
 
-Here is a sample of how the January 2025 calendar looks like:
+Here is a sample of how the January 2025 calendar looks:
 
 ![Monthly calendar for January 2025 achieved with a List in Telerik Reporting]()
 

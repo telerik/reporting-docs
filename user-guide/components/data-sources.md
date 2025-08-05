@@ -115,7 +115,7 @@ To add a Web Service Data Source:
 
 1. Click the **Web Service Data Source** item in the **Components** tab.
 
-1. The [Web Service Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/webservicedatasource-wizard%}) appears allowing you to create new or edit an existing [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) component.
+1. The [Web Service Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}) appears allowing you to create new or edit an existing [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) component.
 
 >caption Setup Web Service Data Source
 

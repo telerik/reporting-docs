@@ -81,7 +81,7 @@ Components, 2003, 280
 Components, 2004, 310
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ypQHSpXnJkw?si=_pjCxfXAIfKoWBa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d34jlpfD94Q?si=jCgcgEMH9y2AQGOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 After adding the data source to you report, continue by adding the desired chart type.
 
@@ -99,7 +99,7 @@ To create a Bar Chart, follow the steps below. See the video after the steps for
 
 >caption Adding a Bar Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PD8RnyexfvQ?si=-sUhyCqDy0FC54O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qhwjAFFhWBA?si=Upx8VrzC_SRxj2vz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Bar Chart type that you select during the configuration, one of the following charts will be displayed:
 

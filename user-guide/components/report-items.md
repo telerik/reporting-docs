@@ -14,7 +14,7 @@ img[alt$="><"] {
 }
 </style>
 
-# Report Items in the Web Report Designer
+# Report Items
 
 The Report Items are visual elements used to display and organize content within a report.
 
@@ -122,7 +122,7 @@ A radial gauge is a circular visual element that looks similar to a speedometer 
 
 Radial gauges are especially useful when you want to show data that feels like speed or progress, such as how fast something is going or how much of a goal has been reached.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pi4ikiZi4bE?si=WzPcyATa1SGD_qwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QrUAtdgFsM0?si=AJrUJEfiMAGbEbw9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Linear Gauge
 
@@ -130,6 +130,6 @@ The Linear Gauge is represented by a horizontal or vertical scale and displays i
 
 Depending on the gauge's orientation and range, you can create horizontal, vertical, single-range, and multi-range linear gauges.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cV10F3Hiky8?si=paPYNuf8TVI7WQwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9Aw-w0yn4Pw?si=M_8bMIEVOFEv12Z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Gauge item, see the [Gauge article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/gauge/overview %}).

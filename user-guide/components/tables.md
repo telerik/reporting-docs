@@ -3,7 +3,7 @@ title: Tables
 page_title: Tables
 description: Web Report Designer offers different Table Components that can be used to visualize the data records in the reports.
 slug: web-report-designer-user-guide-components-tables
-tags: web, report, design, report, components, table, list, crosstab
+tags: web, report, design, components, table, list, crosstab
 published: True
 position: 2
 ---
@@ -16,87 +16,109 @@ img[alt$="><"] {
 </style>
 
 # Tables
- 
-The **Web Report Designer** offers a **Tables** section inside the **Components** tray allowing the end-user to visualize the data records from different [Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) storages: 
+
+Tables are data-bound components that organize and display information from your data sources in structured layouts. The Web Report Designer provides several table types to meet different data presentation needs, from simple lists to complex cross-tabulated summaries.
+
+## Table Types
+
+The **Components** tab offers a **Tables** section that allows users to visualize data records from different [data sources]({%slug web-report-designer-user-guide-components-data-sources%}):
 
 ![Tables Group ><](images/wrd-components-tray-tables-design.png)
 
-* [List]({%slug web-report-designer-user-guide-components-tables%}#adding-a-list) - Displays data from a set of Business Objects creating a free-form data layout (e.g. composed of multiple simpler items per list data item). You are not limited to a grid layout, you can freely place fields inside the List. 
-* [Table]({%slug web-report-designer-user-guide-components-tables%}#adding-a-table) - Displays report data in cells that are organized into rows and columns.
-* [Crosstab]({%slug web-report-designer-user-guide-components-tables%}#adding-a-crosstab) - Displays aggregated data summaries that are grouped in rows and columns in a similar way to a pivot grid. The number of rows and columns for groups is determined by the number of unique values for each row and column groups.
-* [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard) - The Table wizard guides you through the process of adding a Table item to a report.
-* [Crosstab Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-crosstab-wizard) - The Crosstab wizard guides you through the process of adding a Crosstab item to a report.
+* [List]({%slug web-report-designer-user-guide-components-tables%}#adding-a-list)&mdash;Displays data records in a free-form layout where you can arrange fields anywhere within each list item. Ideal for creating custom layouts like address cards or product catalogs.
+* [Table]({%slug web-report-designer-user-guide-components-tables%}#adding-a-table)&mdash;Displays report data in a traditional grid format with rows and columns. Best for tabular data like invoices, reports, or data lists.
+* [Crosstab]({%slug web-report-designer-user-guide-components-tables%}#adding-a-crosstab)&mdash;Displays aggregated data summaries grouped in rows and columns, similar to a pivot table. Perfect for cross-referencing data like sales by region and product.
+* [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard)&mdash;Guides you through creating a Table with an easy step-by-step wizard.
+* [Crosstab Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-crosstab-wizard)&mdash;Guides you through creating a Crosstab with an easy step-by-step wizard.
 
-Before adding a Table report item, first, you need to select the Details section of the report. Then, you can select the desired table item type from the Components tray and configure it with the desired data source. The following sections illustrate what are the available table item types:
+## Prerequisites
+
+Before adding any table component, ensure you have:
+
+* Selected the **Detail section** of your report (required for table placement).
+* Created and configured a [data source]({%slug web-report-designer-user-guide-components-data-sources%}) for your report.
+* Planned your data layout and which fields you want to display.
 
 ## Adding a List
 
-1. Drag the `List` item from the **Components** tray and drop it onto the **Details** section of the report.
-2. Build the desired layout with report items like TextBoxes and use the already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}).
+The List component provides the most flexibility for custom data layouts. Use Lists when you need complete control over how data appears or want to create non-tabular presentations.
 
-The following short video illustrates how to add a List, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and adding a TextBox report item for displaying the FirstName of the data records:     
+1. Drag the **List** item from the **Components** tab and drop it onto the **Detail** section of the report.
+1. Bind the List to your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
+1. Build your custom layout by adding report items like TextBoxes inside the List.
+1. Configure the individual report items to display specific data fields.
+
+This video demonstrates creating a List, binding it to an SQL data source, and adding a TextBox to display customer names:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2P50WiOqq7M?si=QhoQr_gPoX2oR_PF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Adding a Table 
+## Adding a Table
 
-By dragging the `Table` item from the **Components** tray and dropping it onto the **Details** section of the report, you are ready to build the desired layout with report items like TextBoxes and use the already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}).
+Tables organize data in a traditional row-and-column format that you can use for structured data like invoices, reports, or any tabular information.
 
-When added from a report designer, the Table contains three columns with a table header row and a details row for the data:
+1. Drag the **Table** item from the **Components** tab and drop it onto the **Detail** section of the report.
+1. Bind the Table to your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
+1. Configure the table structure by adding or removing columns and rows as needed.
+1. Add TextBox report items to cells and bind their value to the relevant fields in your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
 
-1. Drag a Table report item 
+When you add a new Table, it starts with three columns, a header row, and a data row:
 
-2. Drop it onto the Details section
+![Empty Table ><](images/wrd-components-tray-tables-table-empty.png)
 
-![Empty Table ><](images/wrd-components-tray-tables-table-empty.png)      
-
-The following short video illustrates how to add an empty Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), add the necessary TextBox report items for the column headers and for the data records displaying the First/Last Names:
+This video shows how to add a Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), and add the necessary TextBox report items for the column headers and the data records.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fBmSktuKgHA?si=-PjTxgYIAQVbphyf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Adding a Crosstab  
+## Adding a Crosstab
 
-By dragging the `Crosstab` item from the **Components** tray and dropping it onto the **Details** section of the report, you are ready to build the desired layout with the generated empty column/row groups and body parts. 
+Crosstabs let you display aggregated data summaries with row and column groupings, similar to pivot tables. Use Crosstabs when you need to analyze data across multiple dimensions.
 
-When added from a report designer, the [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) contains a column group, a row group and a body for crosstab data:
+1. Drag the **Crosstab** item from the **Components** tab and drop it onto the **Detail** section of the report.
+1. Bind the Crosstab to your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
+1. Configure the row groups and column groups.
+1. Bind the value of the data cells to the relevant fields in your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
+1. Configure the data aggregation in the designated cells.
 
-1. Drag a Crosstab report item 
+When you add a Crosstab, it includes a column group area, row group area, and data body:
 
-2. Drop it onto the Details section
+![Empty Crosstab ><](images/wrd-components-tray-tables-crosstab-empty.png)
 
-![Empty Crosstab ><](images/wrd-components-tray-tables-crosstab-empty.png)     
-
-The following short video illustrates how to add an empty Crosstab report item, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), bind the generated empty Column/Row groups and map the necessary TextBox report items for the column/row group and for the data records displaying the total sum of Freight for the respective OrderID:
+This video demonstrates creating a Crosstab, binding it to SQL data, and configuring row/column groups with aggregated data:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntf3DDlczmg?si=shL9Z4HNJSevq_Gx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the Table Wizard
 
-By clicking the [Table Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard%}) item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**:
+The Table Wizard provides a faster way to create tables by guiding you through the setup process step-by-step. Use the wizard when you want to quickly create a table with minimal manual configuration.
 
-1. Click the Table Wizard from the Components tray
+1. Click the **Table Wizard** from the **Components** tab.
+1. The **Configure Table** pane appears on the right side of the Web Report Designer.
+1. Follow the wizard steps to select your data source, choose fields, and configure the table layout.
 
-2. Show the **Configure Table** pane on the right side
+![Launching Data in a Table ><](images/wrd-components-tray-tables-table-wizard.png)
 
-![Launching Data in a Table ><](images/wrd-components-tray-tables-table-wizard.png)      
-
-The following short video illustrates how to add a Table report item with the wizard, bind it to an already existing [Web Service Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and arrange the desired fields for displaying the name and localized name of the data records:
+This video shows how to use the Table Wizard to create a table with a Web Service data source and configure field selection:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YYdyeCW2XSg?si=Dksa5GK_ZkfszicP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the Crosstab Wizard
- 
-By clicking the [Crosstab Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard%}) item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**:
 
-1. Click the Crosstab Wizard from the Components tray
+The Crosstab Wizard simplifies creating complex cross-tabulated reports by walking you through the grouping and aggregation setup.
 
-2. Show the **Configure Crosstab** pane on the right side
+1. Click the **Crosstab Wizard** from the **Components** tab.
+1. The **Configure Crosstab** pane appears on the right side of the Web Report Designer.
+1. Follow the wizard steps to define row groups, column groups, and data aggregation.
 
-![Launching Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard.png)  
+![Launching Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard.png)
 
-The following short video illustrates how to add a [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) report item with the wizard, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item populated with Northwind.Orders table and arrange the desired fields for displaying the OrderID as rows and total sum of Freight of the data records:
+This video demonstrates using the Crosstab Wizard with SQL data to create a cross-tabulated report showing OrderID and Freight totals:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E6O9eiyBJcQ?si=uC4PyMfkC3E5V3Uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Next Steps
+
+* Add [report sections]({%slug user-guide/components/report-sections%}) to organize your report layout
+* Explore other [report components]({%slug user-guide/components%}) to enhance your reports
 
 ## See Also
 
@@ -104,5 +126,3 @@ The following short video illustrates how to add a [Crosstab]({%slug telerikrepo
 * [Getting Started with the Crosstab]({%slug crosstab_item_get_started%})
 * [DataSources]({%slug web-report-designer-user-guide-components-data-sources%})
 * [Template Variations of the Table Report Item]({%slug table_template_items%})
-
-

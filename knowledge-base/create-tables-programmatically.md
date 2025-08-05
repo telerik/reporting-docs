@@ -112,7 +112,9 @@ table.Body.Rows.Add(new Telerik.Reporting.TableBodyRow(Telerik.Reporting.Drawing
 
 ### 3. Add Columns Dynamically Based on Data
 
-The method for obtaining field names for your table columns depends on the type of data source you are using. In this example, since an `SqlDataSource` is utilized, the code demonstrates how to extract column names directly from an SQL database. If your data source is a CSV, JSON, or another format, you will need to adjust the logic to extract field names appropriately and create the string collection named `columnNames`. Once you have the field names, the process for dynamically generating table columns remains consistent with the below code snippet.
+The method for obtaining field names for your table columns depends on the type of data source you are using. In this example, since an `SqlDataSource` is utilized, the code below demonstrates how to extract column names directly from an SQL database. 
+
+> If your data source is a CSV, JSON, or another format, adjust the logic to extract field names and create the string collection named `columnNames`. Once you have the field names, the process for dynamically generating table columns remains consistent with the code snippet below.
 
 ````csharp
 using (var connection = new System.Data.SqlClient.SqlConnection(connectionString))

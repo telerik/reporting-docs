@@ -6,7 +6,6 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: aithread
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-json-entities-bookmarknode,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/aithread
 ---
 
 <style>

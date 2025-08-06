@@ -121,7 +121,7 @@ To create a Column Chart, follow the steps below. See the video after the steps 
 
 >caption Adding a Column Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ePCehcujGnU?si=iQ5SDFrLaJeatsgl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RGJa5FLZ5A8?si=vxsKE8GwK2jFFnIv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Column Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -143,7 +143,7 @@ To create an Area Chart, follow the steps below. See the video after the steps f
 
 >caption Adding an Area Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1F4df2B3TTw?si=SskFAdk4lDTmijfr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Eygyvp6y1zk?si=ObaAThjMoEajmB6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Column Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -165,7 +165,7 @@ To create a Line Chart, follow the steps below. See the video after the steps fo
 
 >caption Adding a Line Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FVBqHGrqYvQ?si=MBSYV08JWm7KEhUJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jEP0YrFUG68?si=N5VuLs9tUHQ0I4CW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Line Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -191,7 +191,7 @@ To create a Pie Chart, follow the steps below. See the video after the steps for
 
 >caption Adding a Pie Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U9HMcfjAofc?si=3OCMV8NEyz8VwmaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SPLPy_jAsJM?si=iYhK6Tm_W0DujcwD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Pie Chart type that you select during the configuration, one of the following charts will be displayed:
 

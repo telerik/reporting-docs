@@ -164,23 +164,21 @@ Select the location provider (for example, Azure) that will be used to geocode t
 
 ## Choropleth
 
-A Choropleth map is a thematic map where areas are shaded or colored in proportion to a statistical variable (like population density, income levels, or voting results). This specialized map component colors geographical areas according to the data values they represent.
+A **Choropleth** map is a thematic map where areas are shaded or colored in proportion to a statistical variable (like population density, income levels, or voting results). This specialized map component colors geographical areas according to the data values they represent.
 
 The Choropleth below shows the 100 most populated countries:
 
->caption World population density
-
 ![Choropleth map ><](images/wrd-components-tray-choropleth-map.png)
 
-The video demonstrates how to create and set up a Choropleth map that shows the world population for each country and colors its area depending on the population density value.
+>important Currently, the Web Report Designer allows only **displaying an already created** report (e.g. with the Standalone Report Designer) that contains a Choropleth report item and simple fine-tuning. It is not possible to 
 
-Download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder.
+Download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder. You can use the [Population Density](https://demos.telerik.com/reporting/population-density) report and show it in the designer.
 
-The essential steps in the setup are:
+<!-- The essential steps for setting up a Choropleth:
 
 1. Set up the data binding:
 
-   * Bind your map to a data source containing values for each region, for example, [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}). Use the sample [CSV data population](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its content to a folder.
+   * Bind your map to a data source containing values for each region, for example, [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}). Use the sample [PopulationData.csv](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its content to a folder.
 
    * Configure a color scale based on your data values.
 
@@ -190,14 +188,12 @@ The essential steps in the setup are:
 
 ![Choropleth map step 1 ><](images/wrd-components-tray-choropleth-map-step-1.png)
 
-![Choropleth map step 3 ><](images/wrd-components-tray-choropleth-map-step-3.png)
+![Choropleth map step 3 ><](images/wrd-components-tray-choropleth-map-step-3.png) -->
 
-//TODO 
-
-Source Type [bug](https://github.com/telerik/reporting/issues/5129)
 
 ## See Also
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Map Overview]({%slug map_report_item_overview%})
 * [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Adding Choropleth Maps to the Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})

@@ -194,7 +194,7 @@ The following configuration steps are available:
 
 ## JSON Data Source
 
-By clicking the `JSON Data Source` item in the **Components** tab, the JSON Data Source configuration wizard appears allowing you to use a new or an existing JSON file, or directly enter inline JSON content:
+By clicking the **JSON Data Source** item in the **Components** tab, the JSON Data Source configuration wizard appears, allowing you to use a new or an existing JSON file, or directly enter inline JSON content:
 
 >caption Upload a new JSON file vs Inline JSON data
 
@@ -212,7 +212,7 @@ By clicking the `JSON Data Source` item in the **Components** tab, the JSON Data
 
 To add an `Object Data Source`:
 
-1. Click the `Object Data Source` item in the **Components** tab.
+1. Click the **Object Data Source** item in the **Components** tab.
 
 1. The Object Data Source configuration wizard appears allowing you to use a business object or any other class (that was already defined) for data retrieval in the report:
 

@@ -172,7 +172,7 @@ The Choropleth below shows the 100 most populated countries:
 
 >important Currently, the Web Report Designer allows only **displaying an already created** report (for example, using the Standalone Report Designer) that contains a Choropleth report item and simple fine-tuning. It is not possible to build a Choropleth from scratch in the Web Report Designer.
 
-If you need to create a report with a Choropleth, download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder. You can use it as a starting point for your own report. You can also use the [Population Density](https://demos.telerik.com/reporting/population-density) report and show it in the designer.
+<!-- If you need to create a report with a Choropleth, download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder. You can use it as a starting point for your own report.  -->
 
 <!-- The essential steps for setting up a Choropleth:
 
@@ -197,3 +197,4 @@ If you need to create a report with a Choropleth, download the [`PopulationData.
 * [Map Overview]({%slug map_report_item_overview%})
 * [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
 * [Adding Choropleth Maps to the Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
+* [Population Density Demo Report with Choropleth](https://demos.telerik.com/reporting/population-density)

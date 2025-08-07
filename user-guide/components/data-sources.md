@@ -57,7 +57,7 @@ To add a new SQL Data Source:
 
 1. Click the **SQL Data Source** item in the **Components** tab.
 
-1. The [SQL Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}) appears allowing you to use either an existing connection or build a new one by providing a `connection string` to connect to the database and define the SQL statement or the stored procedure to retrieve the data:
+1. The SQL Data Source configuration wizard appears allowing you to use either an existing connection or build a new one by providing a `connection string` to connect to the database and define the SQL statement or the stored procedure to retrieve the data:
 
 >caption Existing vs New SQL Connection
 
@@ -86,7 +86,7 @@ To add a new CSV Data Source:
 
 1. Click the **CSV Data Source** item in the **Components** tab.
 
-1. The [CSV Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}) appears allowing you to use either an existing or a new CSV file, or use inline CSV text with the data:
+1. The CSV Data Source configuration wizard appears allowing you to use either an existing or a new CSV file, or use inline CSV text with the data:
 
 >caption Upload a CSV Source vs Inline
 
@@ -115,7 +115,7 @@ To add a Web Service Data Source:
 
 1. Click the **Web Service Data Source** item in the **Components** tab.
 
-1. The [Web Service Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}) appears allowing you to create new or edit an existing [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) component.
+1. The Web Service Data Source configuration wizard appears allowing you to create new or edit an existing WebServiceDataSource component.
 
 >caption Setup Web Service Data Source
 
@@ -145,7 +145,7 @@ To add a GraphQL Data Source:
 
 1. Click the **GraphQL Data Source** item in the **Components** tab.
 
-1. The [GraphQL Data Source configuration wizard](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard) appears allowing you to create new or edit an existing [GraphQLDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview) component.
+1. The GraphQL Data Source configuration wizard appears allowing you to create new or edit an existing GraphQLDataSource component.
 
 The wizard allows you to set up one of the following options:
 
@@ -194,7 +194,7 @@ The following configuration steps are available:
 
 ## JSON Data Source
 
-By clicking the `JSON Data Source` item in the **Components** tab, the [JSON Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard%}) appears allowing you to use a new or an existing JSON file, or directly enter inline JSON content:
+By clicking the `JSON Data Source` item in the **Components** tab, the JSON Data Source configuration wizard appears allowing you to use a new or an existing JSON file, or directly enter inline JSON content:
 
 >caption Upload a new JSON file vs Inline JSON data
 
@@ -214,7 +214,7 @@ To add an `Object Data Source`:
 
 1. Click the `Object Data Source` item in the **Components** tab.
 
-1. The [Object Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard%}) appears allowing you to use a business object or any other class (that was already defined) for data retrieval in the report:
+1. The Object Data Source configuration wizard appears allowing you to use a business object or any other class (that was already defined) for data retrieval in the report:
 
 * Select Business object
 

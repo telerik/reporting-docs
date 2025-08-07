@@ -15,7 +15,7 @@ img[alt$="><"] {
 
 </style>
 
-# Report Sections in the Web Report Designer
+# Report Sections
 
 Report sections divide the report vertically and define specific areas on the report page where content is rendered. Each section represents a distinct area with its own rendering behavior and determines how the report items within it are processed and displayed. The Web Report Designer provides five key sections that control the structure and layout of your reports.
 

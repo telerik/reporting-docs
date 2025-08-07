@@ -50,7 +50,7 @@ The List component provides the most flexibility for custom data layouts. Use Li
 
 This video demonstrates creating a List, binding it to an SQL data source, and adding a TextBox to display customer names:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2P50WiOqq7M?si=QhoQr_gPoX2oR_PF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/__7ELxOjqm0?si=IYqKnn0jLf3x00Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Adding a Table
 
@@ -67,7 +67,7 @@ When you add a new Table, it starts with three columns, a header row, and a data
 
 This video shows how to add a Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), and add the necessary TextBox report items for the column headers and the data records.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fBmSktuKgHA?si=-PjTxgYIAQVbphyf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fGJ_76wbZPI?si=isspSoVFKM1iC6cX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Adding a Crosstab
 
@@ -85,7 +85,7 @@ When you add a Crosstab, it includes a column group area, row group area, and da
 
 This video demonstrates creating a Crosstab, binding it to SQL data, and configuring row/column groups with aggregated data:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ntf3DDlczmg?si=shL9Z4HNJSevq_Gx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zurckEvEy_M?si=KRaJRxXpKg4-Y5vW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the Table Wizard
 
@@ -99,7 +99,7 @@ The Table Wizard provides a faster way to create tables by guiding you through t
 
 This video shows how to use the Table Wizard to create a table with a Web Service data source and configure field selection:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YYdyeCW2XSg?si=Dksa5GK_ZkfszicP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RegNPfOvUTY?si=WoveEgyxM1dV2akA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the Crosstab Wizard
 
@@ -113,12 +113,12 @@ The Crosstab Wizard simplifies creating complex cross-tabulated reports by walki
 
 This video demonstrates using the Crosstab Wizard with SQL data to create a cross-tabulated report showing OrderID and Freight totals:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E6O9eiyBJcQ?si=uC4PyMfkC3E5V3Uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RGaz3iQ9S-g?si=E5Zy8_io9h4p0GsS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next Steps
 
 * Add [report sections]({%slug user-guide/components/report-sections%}) to organize your report layout
-* Explore other [report components]({%slug user-guide/components%}) to enhance your reports
+* Explore other [report components]({%slug web-report-designer-user-guide-components%}) to enhance your reports
 
 ## See Also
 

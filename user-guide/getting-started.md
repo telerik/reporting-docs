@@ -54,7 +54,7 @@ Next, design the report by adding a Table report item to display your data.
 
 1. Click the report's **Detail Section** to enable adding report items.
 
-1. Select the **Components** tab, and then click the [**Table Wizard**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}) button:  
+1. Select the **Components** tab, and then click the [**Table Wizard**]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard) button:  
 
     ![Table Wizard ><](images/wrd-table-wizard.png)
 

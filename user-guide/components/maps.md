@@ -46,7 +46,7 @@ The Web Report Designer provides two main types of map components:
 
 Because of its architecture, the Map component requires two types of data sources. When adding a Map component to your report, both data sources must be available:
 
-* Visual map data&mdash;Geographical information provided by location and tile providers that render the actual map imagery.
+* Visual map data&mdash;Geographical information provided by **Location** and **Tile** providers that render the actual map imagery.
 * Business data&mdash;Your analytical data stored in a separate data source, with values that correspond to specific locations (displayed as charts on the map).
 
 ## Prerequisites
@@ -63,7 +63,7 @@ The **Location Provider** matches the addresses or locations with geographical c
 |Location Provider|Description|
 |----|----|
 |Azure| The AzureLocationProvider uses the [Azure Maps Get Geocoding Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.|
-|Bing *(Deprecated)*|The BingLocationProvider uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
+|Bing (Deprecated)|The BingLocationProvider uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
 |MapQuestOpenAPI (Obsolete)|The MapQuestOpenAPILocationProvider uses the MapQuest Geocoding Open API geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
 |MapQuest  (Obsolete) |The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
 
@@ -79,8 +79,8 @@ The **Tile Provider** requests and downloads the imagery data for the specified 
 |TileProvider|Description|
 |----|----|
 |AzureMapsTileProvider|Supports a variety of tile sets that let you customize the appearance and data shown on your map.|
-|BingMapsTileProvider *(Deprecated)*|Uses the [Bing Maps REST Services](https://learn.microsoft.com/en-us/bingmaps/rest-services/) to request metadata information that is needed to resolve the tile requests URLs, zoom levels, tile sizes and attribution information such as the text or logo that will be displayed on the map.|
-|MapQuestTileProvider *(Obsolete)*|Uses the [`MapQuest`](https://www.mapquest.com/) tile servers that provides the tiles in the **OpenStreetMap Tiles** and the **MapQuest Open Aerial Tiles** imagery sets.|
+|BingMapsTileProvider (Deprecated)|Uses the [Bing Maps REST Services](https://learn.microsoft.com/en-us/bingmaps/rest-services/) to request metadata information that is needed to resolve the tile requests URLs, zoom levels, tile sizes and attribution information such as the text or logo that will be displayed on the map.|
+|MapQuestTileProvider (Obsolete)|Uses the [`MapQuest`](https://www.mapquest.com/) tile servers that provides the tiles in the **OpenStreetMap Tiles** and the **MapQuest Open Aerial Tiles** imagery sets.|
 
 ## Creating a Report with the Map Component
 

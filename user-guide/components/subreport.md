@@ -26,7 +26,7 @@ SubReports act as containers that automatically adjust their size based on the c
 * Complex layouts&mdash;Combine different data sources and report structures within a single report.
 * Hierarchical data&mdash;Show nested data relationships with proper grouping and organization.
 
-The next video demonstrates how to [create master-detail](#) reports by using SubReports in the Telerik Web Report Designer:
+The next video demonstrates how to [create master-detail](#creating-master-detail-reports-with-subreports) reports by using SubReports in the Telerik Web Report Designer:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AH2XdSDDiEs?si=ys2b1ROAXh5qs3Aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

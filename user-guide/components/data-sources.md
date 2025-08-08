@@ -137,7 +137,7 @@ The following table lists all the steps that the wizard offers:
 
 >caption Preview Data from the Web Service Data Source
 
-![Preview Web Service Data](images/wrd-components-tray-data-sources-preview-web-service-data-source.png)
+![Preview Web Service Data ><](images/wrd-components-tray-data-sources-preview-web-service-data-source.png)
 
 ## GraphQL Data Source
 
@@ -180,17 +180,17 @@ The following configuration steps are available:
 
     >caption Set up GraphQL Service URL and Configure the Query
 
-    ![GraphQL Data Source](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)
+    ![GraphQL Data Source ><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)
 
 1. Specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
 
-    ![GraphQL Request Parameters](images/wrd-components-tray-data-sources-graphql-request-parameters.png)
+    ![GraphQL Request Parameters ><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)
 
 1. Configure Authentication settings (occurs only if an authentication method is selected in the first step): Transmits credentials as username/password pairs, encoded using base64.
 
 1. As a final step, you can **Preview** the result:
 
-    ![GraphQL Preview Data](images/wrd-components-tray-data-sources-graphql-preview-data.png)
+    ![GraphQL Preview Data ><](images/wrd-components-tray-data-sources-graphql-preview-data.png)
 
 ## JSON Data Source
 
@@ -198,7 +198,7 @@ By clicking the **JSON Data Source** item in the **Components** tab, the JSON Da
 
 >caption Upload a new JSON file vs Inline JSON data
 
-![Inline JSON Data Source](images/wrd-components-tray-data-sources-inline-vs-upload-file-json-data-source.png)
+![Inline JSON Data Source ><](images/wrd-components-tray-data-sources-inline-vs-upload-file-json-data-source.png)
 
 >note The **Data selector** (e.g. `$.store.book[?(@.price<10)]`) is a [JSONPath](https://goessner.net/articles/JsonPath/) string which will be used to query the data.
 
@@ -218,11 +218,11 @@ To add an `Object Data Source`:
 
 * Select Business object
 
-    ![Object Data Source](images/wrd-components-tray-data-sources-object-data-source.png)
+    ![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source.png)
 
 * Specify the Data member
 
-    ![Object Data Source](images/wrd-components-tray-data-sources-object-data-source-data-member.png)
+    ![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-data-member.png)
 
 The following table lists all the steps that the wizard offers:
 
@@ -235,13 +235,13 @@ The following table lists all the steps that the wizard offers:
 
 >caption Preview Data
 
-![Preview Data from Object Data Source](images/wrd-components-tray-data-sources-object-data-source-preview.png)
+![Preview Data from Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-preview.png)
 
 ## Modifying Already Configured Data Sources
 
 Once a Data Source component is configured, it can be modified later by selecting it in the **Explorer** tab. On the right-hand side the **General** settings (dependent on the specific Data Source item) are loaded and users can further modify them:
 
-![GraphQL Data Source Settings](images/wrd-components-tray-data-sources-graphql-data-source-selected-in-explorer-common.png)
+![GraphQL Data Source Settings ><](images/wrd-components-tray-data-sources-graphql-data-source-selected-in-explorer-common.png)
 
 ## See Also
 

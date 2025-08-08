@@ -94,7 +94,7 @@ Since this tutorial uses the **AzureLocationProvider**, an Azure Maps subscripti
 
 ### Step 1: Adding the Data Source
 
-Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item with a connection to the AdventureWorks database and paste the following query in the `SELECT` statement box:
+Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item with a connection to the AdventureWorks database. This data will be used to create the Pie Charts that are positioned on the map. Paste the following query in the `SELECT` statement box:
 
 ```SQL
 SELECT
@@ -122,13 +122,13 @@ AND PC.Name = 'Bikes'
 
 ### Step 2: Building the Map Charts
 
-1. Select the **Detail** section of the report and from the **Components** tab add a **Map** component. Set the SQL data source you have already created as the **Data source** property.
+1. Select the **Detail** section of the report and from the **Components** tab add a **Map** component. Set the SQL data source you have already created as the **Data source** property. This data source provides the data required to build the Charts.
 
-1. Set up GeoLocationMapGroup for the `State` field:
+1. Set up GeoLocationMapGroup. The Gelocation grouping you create defines the Chart locations&mdash;where the Charts appear on the Map. Using the `State` field in the data source will place the Chart on the corresponding federal state on the map. 
 
     2.1 Create a new GeoLocationMapGroup.
 
-    2.2 Add a new Grouping item.
+    2.2 Add a new Grouping item. This lets you specify which data source field to use for generating the Chart's categories.
 
     2.3 Set the Expression to the `State` field.
 
@@ -138,27 +138,33 @@ AND PC.Name = 'Bikes'
 
     3.1 Create a new SeriesGroup.
 
-    3.2 Add a new Child Group item.
+    3.2 Add a new **ChildGroup** item. You use the **ChildGroup** type, as you define how to **subdivide** the data within each Pie Chart on the map.
 
-    3.3 Add a new Grouping.
+    3.3 Add a new Grouping. In the **Groupings**, you specify the data source field for generating the Chart's series (the slices in the Pie).
 
     3.4 Set the Expression to the `ProductSubCategory` field.
 
     ![Adding a Series Map group ><](images/wrd-components-tray-maps-series-map-group.png)
 
-1. Set up the **Series** type under the **PRESENTATION** section:
+   Now that you've defined the data for the Pie Chart, you can continue by configuring the presentation of the data in the next step.
+
+1. Set up the **Series** type under the **PRESENTATION** section. The **Series** item will generate the pie slices.
 
     4.1 Add a new **PieMapSeries**.
 
     4.2 Specify the LegendItem's Value.
 
-    4.3 Specify the series' Size and all other properties that the dialog offers.
+    4.3 Specify the series' **Size** and all other properties that the dialog offers. The **Size** property lets you adjust the dimensions of the generated Pie Charts.
 
     ![Adding a PieGraphMapSeries ><](images/wrd-components-tray-maps-piegraph-mapseries.png)
 
 ### Step 3: Defining the Location and Tile Providers
 
-Select the location provider (for example, Azure) that will be used to geocode the `State` field. Once you obtain the key, paste it in the **ClientToken** box:
+1. Select the **Location provider** (for example, Azure) that will be used to geocode the `State` field. The location provider will allow the report to place the Pie Chart on the correct geographical location.
+
+1. Add your **ClientToken** by pasting it in the **ClientToken** box. This token authenticates your requests to Azure.
+
+1. Repeat the previous two steps for the **Tile provider**.
 
 ![Defining the Location and Tile Providers ><](images/wrd-components-tray-maps-location-tile-providers.png)
 

@@ -100,7 +100,14 @@ JSON-based configuration file:
 		"predefinedPrompts": [
 			{ "text": "Generate an executive summary of this report." },
 			{ "text": "Translate the document into German." }
-		]
+		],
+		"ragSettings": {
+			"tokenizationEncoding": "Set Encoding Name Here",
+			"modelMaxInputTokenLimit": 15000,
+			"maxNumberOfEmbeddingsSent": 15,
+			"maxTokenSizeOfSingleEmbedding": 0,
+			"splitTables": true
+		}
 	}
 }
 ````

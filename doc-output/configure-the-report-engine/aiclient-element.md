@@ -31,6 +31,15 @@ __`<AIClient>` element__
 |Child Elements|<ul><li>__predefinedPrompts__ - Optional element. Defines a list of predefined prompts that the AI client can use.</li></ul>|
 |Parent Element|__Telerik.Reporting__ - Configures all settings that the Telerik Reporting Engine uses.|
 
+__`<ragSettings>` element__
+
+>important The `ragSettings` element is valid only in .NET and .NET Standard. It is not supported in the .NET Framework.
+
+|   |   |
+| ------ | ------ |
+|Attributes|<ul><li>__tokenizationEncoding__ - Optional string attribute. If set, specifies the tokenization encoding used for Retrieval-Augmented Generation (RAG). By default, the encoding is determined automatically.</li><li>__modelMaxInputTokenLimit__ - Optional integer attribute. If set, specifies the maximum number of input tokens allowed by the RAG model. The default value is 15000.</li><li>__maxNumberOfEmbeddingsSent__ - Optional integer attribute. If set, specifies the maximum number of embeddings that can be sent in a single RAG request. The default value is 15.</li><li>__maxTokenSizeOfSingleEmbedding__ - Optional integer attribute. If set, specifies the maximum token size allowed for a single embedding in RAG. A value of 0 means there is no limit. The default value is 0.</li><li>__splitTables__ - Optional boolean attribute _(true by default)_. Indicates whether tables should be split during Retrieval-Augmented Generation (RAG) processing. When the splitting is allowed, only the relevant table cells will be taken into account, significantly reducing the number of tokens</li></ul>|
+|Parent Element|__AIClient__|
+
 __`<predefinedPrompts>` element__
 
 |   |   |

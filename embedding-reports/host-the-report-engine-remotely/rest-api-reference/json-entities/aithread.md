@@ -9,17 +9,13 @@ position: 0
 ---
 
 <style>
-table th:first-of-type {
-	width: 10%;
+table {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
 }
-table th:nth-of-type(2) {
-	width: 10%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 70%;
+
+thead, tbody, tr {
+  display: contents;
 }
 </style>
 

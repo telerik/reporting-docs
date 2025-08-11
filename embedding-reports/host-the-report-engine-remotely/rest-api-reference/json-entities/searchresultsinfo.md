@@ -10,14 +10,13 @@ previous_url: /telerik-reporting-rest-json-entities-searchresultsinfo,/embedding
 ---
 
 <style>
-table th:first-of-type {
-	width: 15%;
+table {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr;
 }
-table th:nth-of-type(2) {
-	width: 15%;
-}
-table th:nth-of-type(3) {
-	width: 70%;
+
+thead, tbody, tr {
+  display: contents;
 }
 </style>
 

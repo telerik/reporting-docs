@@ -10,17 +10,13 @@ previous_url: /telerik-reporting-rest-json-entities-documentinfo,/embedding-repo
 ---
 
 <style>
-table th:first-of-type {
-	width: 20%;
+table {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
 }
-table th:nth-of-type(2) {
-	width: 10%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 60%;
+
+thead, tbody, tr {
+  display: contents;
 }
 </style>
 

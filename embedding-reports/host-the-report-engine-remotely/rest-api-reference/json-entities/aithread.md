@@ -44,7 +44,7 @@ An AI thread that can be used to start a conversation with an AI assistant.
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
-|`threadId`|String|true|Unique identifier for the AI thread.|
+|`threadId`|String|true|The unique identifier of the AI thread.|
 |`predefinedPrompts`|Array|true|A list of predefined prompt strings that can be used to interact with the AI assistant.|
 |`requireConsent`|Boolean|true|Indicates whether user consent is required before using the AI functionality.|
 |`consentMessage`|String|true|The message shown to the user to obtain consent for processing data. May include links to privacy policies.|

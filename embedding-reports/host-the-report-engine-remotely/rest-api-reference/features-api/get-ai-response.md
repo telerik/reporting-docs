@@ -21,9 +21,9 @@ __Path parameters__
 | Name | Type | Description |
 | ------ | ------ | ------ |
 |`clientId`|String|The ID of the service client that started the AI thread. Returned by [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
-|`instanceId`|String|ID of the report instance used for the AI thread. Returned from [Resolve Report Instance]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance%}).|
-|`documentId`|String|ID of the generated report document that is summarized. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
-|`threadId`|String|ID of the AI thread for the current conversation. Returned from [Create AI Thread]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/create-ai-thread%}).|
+|`instanceId`|String|ID of the report instance used for the AI thread. Returned by [Resolve Report Instance]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance%}).|
+|`documentId`|String|ID of the generated report document that is summarized. Returned by [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
+|`threadId`|String|ID of the AI thread for the current conversation. Returned by [Create AI Thread]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/create-ai-thread%}).|
 
 __Request Body__
 

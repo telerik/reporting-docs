@@ -100,6 +100,7 @@ JSON-based configuration file:
 		"credential": "...",
 		"requireConsent": true,
 		"allowCustomPrompts": false,
+		"allowRAG": true,
 		"predefinedPrompts": [
 			{ "text": "Generate an executive summary of this report." },
 			{ "text": "Translate the document into German." }

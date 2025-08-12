@@ -14,7 +14,7 @@ Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https:/
 
 >note The feature is in **Preview** state and will be further developed in the coming releases.
 
-In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET type (.CS/.VB) reports, and will also share what the designer does behind the scenes to handle the previously unsupported format.
+In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET type (.CS/.VB) reports, and we will also share what the designer does behind the scenes to handle the previously unsupported format.
 
 ## Import Code File Wizard
 
@@ -26,7 +26,7 @@ Just as one would open a **TRDP/TRDX** file, now the **.CS/.VB** files will also
 
 	> At this step, it is important to ensure that the project that will be used to build the report targets `.NET`. A project that targets the older `.NET Framework` would produce an assembly that is not compatible with the Standalone Report Designer for .NET.
 
-1. The next step is building the project. This step will create a new folder in the same directory as the executable file of the Standalone Report Designer for .NET whose name will be the *name of the Type Report*.
+1. The next step is building the project. This step will create a new folder in the same directory as the executable file of the Standalone Report Designer for .NET, whose name will be the *name of the Type Report*.
 
 	![The second step of the Import Code File Wizard where the project is built and the build information is outputed to the GUI.](./images/srd-net-type-reports/srd-net-build-type-report-project.png)
 
@@ -38,8 +38,9 @@ When a .NET Type Report is opened in the application, and this is the currently 
 
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
-- `Rebuild` - This button will trigger a rebuild of the project that was initially used to import the report. The newly generated assemblies of the built project(s) will be copied to the dedicated directory for the type report.
-- `Preview with code behind` - This button will trigger a preview of the .NET Type Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
+- `Build & Preview` - This button will trigger a preview of the .NET Type Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
+- `Build` - This button will trigger a build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. If the 
+- `Clean Up`
 
 > Be advised that our algorithm mimics the Visual Studio one only semantically. This means that the initial report modification will introduce significant changes in the serialized code, but the component tree will be preserved. Please use versioning for your reports to have clear tracking of the changes. The non-designer partial class files stay intact, so custom code is preserved and ready to work alongside the generated design logic.
 

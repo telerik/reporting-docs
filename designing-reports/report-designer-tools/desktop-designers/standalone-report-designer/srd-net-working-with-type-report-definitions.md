@@ -1,7 +1,7 @@
 ---
 title: Working with Type Reports
 page_title: Using the Standalone Report Designer for .NET for Type Reports
-description: "Learn how to use the Standalone Report Designer for .NET to load, design, and preview Type(.CS/.VB) Reports."
+description: "Learn how to use the Standalone Report Designer for .NET to load, design, and preview Type(.CS) Reports."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions
 tags: designing,using,loading,importing,previewing,type,reports,standalone,report,designer,for,net
 published: True
@@ -60,9 +60,9 @@ When the .NET Type Report is initially imported, the designer creates a dedicate
 ![The imported .NET Type Report's automatically created folder with its contents.](./images/srd-net-type-reports/srd-net-type-report-folder.png)
 
 - `bin` - Contains the assembly of the built project of the report and all of its dependent assemblies.
-- `{ReportName}.Designer.cs|.vb` - A backup of the `.designer` file that can be used in case our logic fails and the original file is wrongly edited by the application.
+- `{ReportName}.Designer.cs` - A backup of the `.designer` file that can be used in case our logic fails and the original file is wrongly edited by the application.
 - `{ReportName}.json` - A `JSON` file containing the report's type name, the loaded full type, paths to the project file, the designer file, etc.
-- `{ReportName}.trdp` - The actual report definition file loaded and displayed by the Standalone Report Designer for .NET. When editing the .NET Type Report from the tab in the designer application, behind-the-scenes, this is the actual file that is being changed, and its contents are later serialized from `XML` to `C#/VB` code in the `.designer` file through the [CodeDOM APIs](https://learn.microsoft.com/en-us/dotnet/api/system.codedom?view=windowsdesktop-9.0). Our code keeps the two files - the original `.designer` and the `TRDP` files in live-sync.
+- `{ReportName}.trdp` - The actual report definition file loaded and displayed by the Standalone Report Designer for .NET. When editing the .NET Type Report from the tab in the designer application, behind-the-scenes, this is the actual file that is being changed, and its contents are later serialized from `XML` to `CS` code in the `.designer` file through the [CodeDOM APIs](https://learn.microsoft.com/en-us/dotnet/api/system.codedom?view=windowsdesktop-9.0). Our code keeps the two files - the original `.designer` and the `TRDP` files in live-sync.
 
 ## See Also
 

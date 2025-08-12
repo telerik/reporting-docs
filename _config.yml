@@ -341,37 +341,37 @@ navigation:
         title: "Data Source Components"
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
         position: 5
-        title: "SqlDataSource Component"
+        title: "SqlDataSource"
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers:
         position: 10
         title: "Using Data Providers"
     designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
         position: 11
-        title: "WebServiceDataSource Component"
+        title: "WebServiceDataSource"
     designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
         position: 12
-        title: "CsvDataSource Component"
+        title: "CsvDataSource"
     designing-reports/connecting-to-data/data-source-components/graphqldatasource-component:
         position: 13
-        title: "GraphQLDataSource Component"
+        title: "GraphQLDataSource"
     designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
         position: 14
-        title: "ObjectDataSource Component"
+        title: "ObjectDataSource"
     designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
         position: 15
         title: "How To"
     designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
         position: 24
-        title: "EntityDataSource Component"
+        title: "EntityDataSource"
     designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
         position: 25
-        title: "OpenAccessDataSource Component"
+        title: "OpenAccessDataSource"
     designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
         position: 26
-        title: "CubeDataSource Component"
+        title: "CubeDataSource"
     designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
         position: 27
-        title: "OpenClientDataSource Component"
+        title: "OpenClientDataSource"
     designing-reports/connecting-to-data/data-items:
         position: 11
         title: "Data Items"

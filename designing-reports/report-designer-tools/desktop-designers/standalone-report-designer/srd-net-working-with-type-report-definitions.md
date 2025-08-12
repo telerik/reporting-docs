@@ -10,15 +10,15 @@ position: 6
 
 # Type Reports in the Standalone Report Designer for .NET
 
-Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release, the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) supports loading, designing, and previewing Type Report definitions hosted in CS or VB projects targeting .NET.
+Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release, the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) supports loading, designing, and previewing Type Report definitions hosted in CS projects targeting .NET.
 
 >note The feature is in **Preview** state and will be further developed in the coming releases.
 
-In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET type (.CS/.VB) reports, and we will also share what the designer does behind the scenes to handle the previously unsupported format.
+In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET type (.CS/) reports, and we will also share what the designer does behind the scenes to handle the previously unsupported format.
 
 ## Import Code File Wizard
 
-Just as one would open a **TRDP/TRDX** file, now the **.CS/.VB** files will also be openable from the standard open file menu of the Standalone Report Designer for .NET.
+Just as one would open a **TRDP/TRDX** file, now the **.CS** files will also be openable from the standard open file menu of the Standalone Report Designer for .NET.
 
 1. Upon selecting a .NET type report to open, the `Import Code File Wizard` will start, and it will automatically populate the necessary inputs:
 
@@ -38,14 +38,14 @@ When a .NET Type Report is opened in the application, and this is the currently 
 
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
-- `Build & Preview` - This button will trigger a preview of the .NET Type Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
-- `Build` - This button will trigger a new build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. The dependencies already added to the folder will be reused, making the action faster. Use the 'Clean Up' button to trigger a complete rebuild.
+- `Build & Preview` - This button will trigger a build of the project (like the button 'Build') and a preview of the .NET Type Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
+- `Build` - This button will trigger a new build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. The dependencies already added to the folder by a previous build will be reused, making the process faster. Use the 'Clean Up' button to trigger a complete rebuild.
 
-	The report project will be rebuilt entirely from the modified code. If there is a problem, you may see the following error:
+	The report project will be rebuilt entirely from the modified code. If there is a problem, you will see the build errors, as shown below:
 
-	![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-build-error.png)
+	![Error thrown by a failing build in the .NET Report Tools tab in the Standalone Report Designer for .NET.](./images/srd-net-type-reports/srd-net-build-error.png)
 
-- `Clean Up` - Clean all the DLLs generated and copied with the build process of the opened CS/VB report. If you build the report afterwards, it will be built from scratch, as during the initial build.
+- `Clean Up` - Clean all the assets generated and copied with the build process of the opened CS report. If you build the report afterwards, it will be built from scratch, as during the initial build, and all the assets will be regenerated.
 
 	![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-clean-up.png)
 

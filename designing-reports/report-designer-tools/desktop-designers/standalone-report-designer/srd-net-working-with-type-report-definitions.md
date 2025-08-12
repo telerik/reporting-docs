@@ -47,7 +47,7 @@ When a .NET Type Report is opened in the application, and this is the currently 
 
 - `Clean Up` - Cleans all the assets generated and copied with the build process of the opened CS report. This includes all the assemblies and resources, all meta files, and the cached XML report definition. If you build the report after cleaning up, all the assets will be regenerated.
 
-	![The message in the .NET Report Tools tab in the Standalone Report Designer for .NET's after cleaning up.](./images/srd-net-type-reports/srd-net-clean-up.png)
+	![The warning message in the .NET Report Tools tab in the Standalone Report Designer for .NET's when clicking on the Clean Up button.](./images/srd-net-type-reports/srd-net-clean-up.png)
 
 > Be advised that our algorithm mimics the Visual Studio one only semantically. This means that the initial report modification will introduce significant changes in the serialized code, but the component tree will be preserved. Please use versioning for your reports to have clear tracking of the changes. The non-designer partial class files stay intact, so custom code is preserved and ready to work alongside the generated design logic.
 

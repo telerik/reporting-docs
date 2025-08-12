@@ -45,9 +45,9 @@ When a .NET Type Report is opened in the application, and this is the currently 
 
 	![Error thrown by a failing build in the .NET Report Tools tab in the Standalone Report Designer for .NET.](./images/srd-net-type-reports/srd-net-build-error.png)
 
-- `Clean Up` - Clean all the assets generated and copied with the build process of the opened CS report. If you build the report afterwards, it will be built from scratch, as during the initial build, and all the assets will be regenerated.
+- `Clean Up` - Cleans all the assets generated and copied with the build process of the opened CS report. This includes all the assemblies and resources, all meta files, and the cached XML report definition. If you build the report after cleaning up, all the assets will be regenerated.
 
-	![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-clean-up.png)
+	![The message in the .NET Report Tools tab in the Standalone Report Designer for .NET's after cleaning up.](./images/srd-net-type-reports/srd-net-clean-up.png)
 
 > Be advised that our algorithm mimics the Visual Studio one only semantically. This means that the initial report modification will introduce significant changes in the serialized code, but the component tree will be preserved. Please use versioning for your reports to have clear tracking of the changes. The non-designer partial class files stay intact, so custom code is preserved and ready to work alongside the generated design logic.
 

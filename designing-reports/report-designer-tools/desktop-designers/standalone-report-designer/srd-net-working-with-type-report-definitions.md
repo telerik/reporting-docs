@@ -14,6 +14,8 @@ Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https:/
 
 >note The feature is in **Preview** state and will be further developed in the coming releases.
 
+> The feature is available only for CS reports due to specifics in the CodeDOM Serialization in VB.NET.
+
 In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET type (.CS/) reports, and we will also share what the designer does behind the scenes to handle the previously unsupported format.
 
 ## Import Code File Wizard

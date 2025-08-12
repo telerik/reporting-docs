@@ -27,9 +27,21 @@ __`<AIClient>` element__
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__friendlyName__ - Required string attribute. Specifies the name that corresponds to the type of AI client to be used. The names of the currently supported AI client types are: `MicrosoftExtensionsAzureAIInference`, `MicrosoftExtensionsAzureOpenAI`, `MicrosoftExtensionsOllama`, and `MicrosoftExtensionsOpenAI`.</li><li>__model__ - Required string attribute. Specifies the AI model to be used for generating responses. For example, setting the model to "gpt-4o-mini" indicates that the GPT-4o mini model variant is being utilized.</li><li>__endpoint__ - Optional string attribute. If set, specifies the URL of the AI service endpoint.</li><li>__credential__ - Optional string attribute. If set, specifies the authentication credentials used to access the AI service.</li><li>__requireConsent__ - Optional boolean attribute _(true by default)_. Determines whether users must explicitly consent to the use of AI services before the AI report insights features can be utilized within the application.</li><li>__allowCustomPrompts__ - Optional boolean attribute _(true by default)_. Determines whether users are allowed to freely communicate with the AI model. If set to false, custom queries are forbidden and only the predefined prompts can be used.</li></ul>|
+|Attributes|<ul><li>__friendlyName__ - Required string attribute. Specifies the name that corresponds to the type of AI client to be used. The names of the currently supported AI client types are: `MicrosoftExtensionsAzureAIInference`, `MicrosoftExtensionsAzureOpenAI`, `MicrosoftExtensionsOllama`, and `MicrosoftExtensionsOpenAI`.</li><li>__model__ - Required string attribute. Specifies the AI model to be used for generating responses. For example, setting the model to "gpt-4o-mini" indicates that the GPT-4o mini model variant is being utilized.</li><li>__endpoint__ - Optional string attribute. If set, specifies the URL of the AI service endpoint.</li><li>__credential__ - Optional string attribute. If set, specifies the authentication credentials used to access the AI service.</li><li>__requireConsent__ - Optional boolean attribute _(true by default)_. Determines whether users must explicitly consent to the use of AI services before the AI report insights features can be utilized within the application.</li><li>__allowRAG__ - Optional boolean attribute _(true by default)_. Allows the Retrieval-Augmented Generation (RAG). The _ragSettings_ will be respected only when _allowRAG_ is _true_.</li><li>__allowCustomPrompts__ - Optional boolean attribute _(true by default)_. Determines whether users are allowed to freely communicate with the AI model. If set to false, custom queries are forbidden and only the predefined prompts can be used.</li></ul>|
 |Child Elements|<ul><li>__predefinedPrompts__ - Optional element. Defines a list of predefined prompts that the AI client can use.</li></ul>|
 |Parent Element|__Telerik.Reporting__ - Configures all settings that the Telerik Reporting Engine uses.|
+
+__`<ragSettings>` element__
+
+>important The `ragSettings` element is valid only in .NET and .NET Standard. It is not supported in the .NET Framework.
+
+
+> The _ragSettings_ will be respected only when _allowRAG_ is _true_
+
+|   |   |
+| ------ | ------ |
+|Attributes|<ul><li>__tokenizationEncoding__ - Optional string attribute. If set, specifies the tokenization encoding used for Retrieval-Augmented Generation (RAG). By default, the encoding is determined automatically.</li><li>__modelMaxInputTokenLimit__ - Optional integer attribute. If set, specifies the maximum number of input tokens allowed by the RAG model. The default value is 15000.</li><li>__maxNumberOfEmbeddingsSent__ - Optional integer attribute. If set, specifies the maximum number of embeddings that can be sent in a single RAG request. The default value is 15.</li><li>__maxTokenSizeOfSingleEmbedding__ - Optional integer attribute. If set, specifies the maximum token size allowed for a single embedding in RAG. A value of 0 means there is no limit. The default value is 0.</li><li>__splitTables__ - Optional boolean attribute _(true by default)_. Indicates whether tables should be split during Retrieval-Augmented Generation (RAG) processing. When the splitting is allowed, only the relevant table cells will be taken into account, significantly reducing the number of tokens</li></ul>|
+|Parent Element|__AIClient__|
 
 __`<predefinedPrompts>` element__
 
@@ -88,10 +100,18 @@ JSON-based configuration file:
 		"credential": "...",
 		"requireConsent": true,
 		"allowCustomPrompts": false,
+		"allowRAG": true,
 		"predefinedPrompts": [
 			{ "text": "Generate an executive summary of this report." },
 			{ "text": "Translate the document into German." }
-		]
+		],
+		"ragSettings": {
+			"tokenizationEncoding": "Set Encoding Name Here",
+			"modelMaxInputTokenLimit": 15000,
+			"maxNumberOfEmbeddingsSent": 15,
+			"maxTokenSizeOfSingleEmbedding": 0,
+			"splitTables": true
+		}
 	}
 }
 ````

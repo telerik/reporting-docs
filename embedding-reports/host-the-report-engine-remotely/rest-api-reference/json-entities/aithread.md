@@ -9,14 +9,18 @@ position: 0
 ---
 
 <style>
-table {
-  display: grid;
-  grid-template-columns: min-content min-content min-content 1fr;
-}
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
 
-thead, tbody, tr {
-  display: contents;
-}
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
 </style>
 
 # AiThread Overview
@@ -40,8 +44,8 @@ An AI thread that can be used to start a conversation with an AI assistant.
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
-|`threadId`|String|true|The unique identifier of the AI thread.|
-|`predefinedPrompts`|Array|true|A list of predefined prompt strings that can be used to interact with the AI assistant.|
-|`requireConsent`|Boolean|true|Indicates whether user consent is required before using the AI functionality.|
-|`consentMessage`|String|true|The message shown to the user to obtain consent for processing data. May include links to privacy policies.|
-|`allowCustomPrompts`|Boolean|true|Specifies if users are allowed to enter their own custom prompts in addition to the predefined ones.|
+|`threadId`|`String`|`true`|The unique identifier of the AI thread.|
+|`predefinedPrompts`|`Array`|`true`|A list of predefined prompt strings that can be used to interact with the AI assistant.|
+|`requireConsent`|`Boolean`|`true`|Indicates whether user consent is required before using the AI functionality.|
+|`consentMessage`|`String`|`true`|The message shown to the user to obtain consent for processing data. May include links to privacy policies.|
+|`allowCustomPrompts`|`Boolean`|`true`|Specifies if users are allowed to enter their own custom prompts in addition to the predefined ones.|

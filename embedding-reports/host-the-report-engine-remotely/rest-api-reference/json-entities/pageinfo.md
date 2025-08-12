@@ -10,14 +10,18 @@ previous_url: /telerik-reporting-rest-json-entities-pageinfo,/embedding-reports/
 ---
 
 <style>
-table {
-  display: grid;
-  grid-template-columns: min-content min-content min-content 1fr;
-}
+	table {
+		display: grid;
+		grid-template-columns: min-content min-content min-content 1fr;
+	}
 
-thead, tbody, tr {
-  display: contents;
-}
+	thead, tbody, tr {
+		display: contents;
+	}
+
+	th {
+		white-space: nowrap;
+	}
 </style>
 
 # PageInfo Overview

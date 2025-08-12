@@ -10,14 +10,18 @@ previous_url: /telerik-reporting-rest-json-entities-parametervalue,/embedding-re
 ---
 
 <style>
-table {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content 2fr;
-}
+	table {
+		display: grid;
+		grid-template-columns: min-content 1fr min-content 2fr;
+	}
 
-thead, tbody, tr {
-  display: contents;
-}
+	thead, tbody, tr {
+		display: contents;
+	}
+
+	th {
+		white-space: nowrap;
+	}
 </style>
 
 # ParameterValue Overview

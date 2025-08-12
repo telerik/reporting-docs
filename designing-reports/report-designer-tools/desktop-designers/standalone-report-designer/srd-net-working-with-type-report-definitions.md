@@ -39,8 +39,15 @@ When a .NET Type Report is opened in the application, and this is the currently 
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
 - `Build & Preview` - This button will trigger a preview of the .NET Type Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
-- `Build` - This button will trigger a build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. If the 
-- `Clean Up`
+- `Build` - This button will trigger a new build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. The dependencies already added to the folder will be reused, making the action faster. Use the 'Clean Up' button to trigger a complete rebuild.
+
+	The report project will be rebuilt entirely from the modified code. If there is a problem, you may see the following error:
+
+	![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-build-error.png)
+
+- `Clean Up` - Clean all the DLLs generated and copied with the build process of the opened CS/VB report. If you build the report afterwards, it will be built from scratch, as during the initial build.
+
+	![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-clean-up.png)
 
 > Be advised that our algorithm mimics the Visual Studio one only semantically. This means that the initial report modification will introduce significant changes in the serialized code, but the component tree will be preserved. Please use versioning for your reports to have clear tracking of the changes. The non-designer partial class files stay intact, so custom code is preserved and ready to work alongside the generated design logic.
 

@@ -5,22 +5,18 @@ description: "Learn more about the DocumentInfo JSON Entity in Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo
 tags: documentinfo
 published: True
-position: 1
+position: 2
 previous_url: /telerik-reporting-rest-json-entities-documentinfo,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo
 ---
 
 <style>
-table th:first-of-type {
-	width: 20%;
+table {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
 }
-table th:nth-of-type(2) {
-	width: 10%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 60%;
+
+thead, tbody, tr {
+  display: contents;
 }
 </style>
 

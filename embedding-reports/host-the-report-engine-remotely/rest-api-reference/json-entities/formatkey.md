@@ -5,22 +5,18 @@ description: "Learn more about the FormatKey JSON Entity in Telerik Reporting RE
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey
 tags: formatkey
 published: True
-position: 3
+position: 4
 previous_url: /telerik-reporting-rest-json-entities-formatkey,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey
 ---
 
 <style>
-table th:first-of-type {
-	width: 10%;
+table {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
 }
-table th:nth-of-type(2) {
-	width: 10%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 70%;
+
+thead, tbody, tr {
+  display: contents;
 }
 </style>
 

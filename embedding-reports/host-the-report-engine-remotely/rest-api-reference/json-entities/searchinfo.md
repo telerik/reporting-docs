@@ -5,22 +5,18 @@ description: "Learn more about the SearchInfo JSON Entity in Telerik Reporting R
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo
 tags: searchinfo
 published: True
-position: 9
+position: 10
 previous_url: /telerik-reporting-rest-json-entities-searchinfo,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo
 ---
 
 <style>
-table th:first-of-type {
-	width: 20%;
+table {
+  display: grid;
+  grid-template-columns: min-content min-content min-content 1fr;
 }
-table th:nth-of-type(2) {
-	width: 10%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 60%;
+
+thead, tbody, tr {
+  display: contents;
 }
 </style>
 

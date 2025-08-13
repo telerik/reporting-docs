@@ -454,9 +454,9 @@ defaults:
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 suiteversion: "2025 Q3"
-buildversion: "19.2.25.812"
-reportserverversion: "11.2.25.812"
-spaviewerversion: "27.25.812"
+buildversion: "19.2.25.813"
+reportserverversion: "11.2.25.813"
+spaviewerversion: "27.25.813"
 nodeversion: "16.0.0"
 angularsubsetversion: "17.2.0"
 kendosubsetversion: "2025.1.227"

@@ -22,7 +22,7 @@ In this article, we will explain and visually demonstrate how the Standalone Rep
 
 Just as one would open a **TRDP/TRDX** file, now the **.CS** files will also be openable from the standard open file menu of the Standalone Report Designer for .NET.
 
-1. Upon selecting a .NET type report to open, the `Import Code File Wizard` will start, and it will automatically populate the necessary inputs:
+1. Upon selecting a .NET type report to open, the `Open Code File Wizard` will start, and it will automatically populate the necessary inputs:
 
 	![The first step of the Import Code File Wizard where the paths to the report files are shown.](./images/srd-net-type-reports/srd-net-open-type-report.png)
 
@@ -30,11 +30,11 @@ Just as one would open a **TRDP/TRDX** file, now the **.CS** files will also be 
 
 1. The next step is building the project. This step will create a new folder in the same directory as the executable file of the Standalone Report Designer for .NET, whose name will be the *name of the Type Report*.
 
-	![The second step of the Import Code File Wizard where the project is built and the build information is outputed to the GUI.](./images/srd-net-type-reports/srd-net-build-type-report-project.png)
+	![The second step of the Open Code File Wizard where the project is built and the build information is outputted to the GUI.](./images/srd-net-type-reports/srd-net-build-type-report-project.png)
 
 ## Working with the .NET Type Report in the Report Designer
 
-Once the **Import Code File Wizard** is completed, the imported report will be automatically opened in a new tab in the Standalone Report Designer for .NET application.
+Once the **Open Code File Wizard** is completed, the report will be automatically opened in a new tab in the Standalone Report Designer for .NET application.
 
 When a .NET Type Report is opened in the application, and this is the currently focused tab, a new tab will appear in the toolbar menu - `.NET Report Tools`.
 
@@ -57,7 +57,7 @@ When a .NET Type Report is opened in the application, and this is the currently 
 
 While it will appear that the .NET Type Report is being rendered by the Standalone Report Designer for .NET, internally, we read and display the report definition as a `TRDP` file.
 
-When the .NET Type Report is initially imported, the designer creates a dedicated folder based on the type name of the report class. This folder contains the following files and subfolders:
+When the .NET Type Report is initially opened, the designer creates a dedicated folder based on the type name of the report class. This folder contains the following files and subfolders:
 
 ![The imported .NET Type Report's automatically created folder with its contents.](./images/srd-net-type-reports/srd-net-type-report-folder.png)
 

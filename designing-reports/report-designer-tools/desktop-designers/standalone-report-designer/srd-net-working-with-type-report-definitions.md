@@ -30,7 +30,7 @@ Just as one would open a **TRDP/TRDX** file, now the **.CS** files will also be 
 
 1. The next step is building the project. This step will create a new folder in the same directory as the executable file of the Standalone Report Designer for .NET, whose name will be the *name of the Type Report*.
 
-	![The second step of the Open Code File Wizard where the project is built and the build information is outputed to the GUI.](./images/srd-net-type-reports/srd-net-build-type-report-project.png)
+	![The second step of the Open Code File Wizard where the project is built and the build information is outputted to the GUI.](./images/srd-net-type-reports/srd-net-build-type-report-project.png)
 
 ## Working with the .NET Type Report in the Report Designer
 

@@ -97,7 +97,7 @@ Starting from `19.1.25.521`, the HTML5-based report viewers rely on the browser'
 };
 ````
 
-### Telerik Reporting Q1 2025 Or Older
+### Telerik Reporting Q1 2025 or Older
 
 Before the [2025 Q2 release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521), the report viewer implementation relied on jQuery-based requests. To add custom HTTP headers in this scenario, you can use jQuery's [ajaxSetup()](https://api.jquery.com/jquery.ajaxsetup/) function: 
 

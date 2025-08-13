@@ -16,7 +16,11 @@ Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https:/
 
 > The feature is available only for CS reports due to specifics in the CodeDOM Serialization in VB.NET.
 
-In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET type (.CS/) reports, and we will also share what the designer does behind the scenes to handle the previously unsupported format.
+In this article, we will explain and visually demonstrate how the Standalone Report Designer for .NET can be used to open, edit, and preview .NET coded (.CS/) reports, and we will also share what the designer does behind the scenes to handle the previously unsupported format.
+
+## Prerequisites
+ 
+The designer's functionality for working with Coded Reports relies on MSBuild version 15 or higher. If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
 
 ## Import Code File Wizard
 
@@ -55,7 +59,7 @@ When a .NET Type Report is opened in the application, and this is the currently 
 
 ## Internal Logic for .NET Type Reports in the Report Designer
 
-While it will appear that the .NET Type Report is being rendered by the Standalone Report Designer for .NET, internally, we read and display the report definition as a `TRDP` file.
+While it will appear that the .NET Coded Report is being rendered by the Standalone Report Designer for .NET, internally, we read and display the report definition as a `TRDP` file.
 
 When the .NET Type Report is initially opened, the designer creates a dedicated folder based on the type name of the report class. This folder contains the following files and subfolders:
 

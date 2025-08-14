@@ -32,7 +32,7 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 ````
  
 
-* Update the `cproj` file with the DLL reference:
+* Update the `.csproj` file with the DLL reference:
 
 	````XML
 <Reference Include="Telerik.Licensing, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
@@ -43,7 +43,7 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 
 ### .NET project types
 
-Update the `cproj` file like below:
+Update the `.csproj` file like below:
 
 ````XML
 <PackageReference Include="Telerik.Licensing" Version="1.*" />

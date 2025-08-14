@@ -5,7 +5,7 @@ description: "Learn how to create, open, edit, lock, save, publish, and revert r
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports
 tags: working,with,report,server,reports,edit,create,publish,revert,lock
 published: True
-position: 5
+position: 6
 previous_url: /standalone-report-designer-working-with-server-reports
 ---
 

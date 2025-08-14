@@ -22,6 +22,13 @@ To bring the power of Generative AI (GenAI) into reporting workflows, we are int
 
 ### Key Features:
 
+- **Retrieval-Augmented Generation (RAG)**  
+  When enabled, the option helps produce more accurate, up-to-date, and relevant responses by referencing authoritative knowledge bases outside of the training data sources. By default, the feature is enabled.
+
+  When enabled, you may configure the RAG through the [AIClient ragSettings element]({%slug telerikreporting/aiclient-element%}##attributes-and-elements).
+
+  Alternatively, you may disable the feature by setting the _AIClient allowRAG_ attribute to _false_.
+  
 - **Predefined Summary Prompts**  
   Users can choose from a set of **predefined prompts** tailored for common tasks like summarization, explanation, and data insights—boosting efficiency with minimal effort.
 

@@ -8,17 +8,17 @@ published: True
 position: 2
 ---
 
-# # Using MySQL Connector in Reporting
+# Using MySQL Connector in Reporting
 
-The `MySQL Connector/NET` is a fully managed ADO.NET data provider written in pure C# which can be used to connect to [MySQL](https://www.mysql.com/), [MariaDB](https://mariadb.org/), etc. databases.
+The `MySQL Connector/NET` is a fully managed ADO.NET data provider written in pure C#, which can be used to connect to [MySQL](https://www.mysql.com/), [MariaDB](https://mariadb.org/), etc. databases.
 
 ## Setting up the MySQL Connector/NET Data Provider in the .NET Standalone Report Designer
 
 1. Create a new [.NET 8 Console Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
 1. Install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package to it and `build` the project.
 1. Navigate to the `bin/Debug/net8.0` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
-1. Paste the assemblies in the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
-1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `MySQL` data provider should now be listed among the rest of the data providers when building a new connection.
+1. Paste the assemblies in the .NET Standalone Report Designer installation directory, e.g., `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
+1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}), which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `MySQL` data provider should now be listed among the rest of the data providers when building a new connection.
 
 ## Setting up the MySQL Connector/NET Data Provider in the .NET Framework Standalone Report Designer
 
@@ -43,13 +43,13 @@ The [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/) 
 	</system.data>
 ````
 
-	> The example was made with version `9.0.0` of the MySQL data provider, correct the version number in the above snippet if a newer/older version was downloaded instead.
+	> The example was made with version `9.0.0` of the MySQL data provider; correct the version number in the above snippet if a newer/older version was downloaded instead.
 
 ## Setting up the MySQL Connector/NET Data Provider in .NET Applications
 
 The [MySQL Connector/NET](https://dev.mysql.com/doc/connector-net/en/) data provider is automatically registered in the `Telerik.Reporting.Processing.Data.DbProviderFactories`. To use this data provider, it should be enough to install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package to the project.
 
-If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
+If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
 ````JSON
 {

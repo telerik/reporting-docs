@@ -1,18 +1,16 @@
 ---
-title: Working with Coded Reports
+title: Coded Report Definition
 page_title: Using the Standalone Report Designer for .NET for Coded Reports
 description: "Learn how to use the Standalone Report Designer for .NET to load, design, and preview Coded(.CS) Reports."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions
 tags: designing,using,loading,importing,previewing,type,reports,standalone,report,designer,for,net
 published: True
-position: 6
+position: 5
 ---
 
 # Coded Reports in the Standalone Report Designer for .NET
 
-Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release, the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) supports loading, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET.
-
->note The feature is in **Preview** state and will be further developed in the coming releases.
+Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) supports loading, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET.
 
 > The feature is available only for CS reports due to specifics in the CodeDOM Serialization in VB.NET.
 
@@ -22,7 +20,7 @@ In this article, we will explain and visually demonstrate how the Standalone Rep
  
 The designer's functionality for working with Coded Reports relies on MSBuild version 15 or higher. If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
 
-## Import Code File Wizard
+## Opening Coded Reports
 
 Just as one would open a **TRDP/TRDX** file, now the **.CS** files will also be openable from the standard open file menu of the Standalone Report Designer for .NET.
 

@@ -16,7 +16,7 @@ The AI-powered insights during report preview provide comprehensive capabilities
 
 ## Feature Concept
 
-To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing a **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
+To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing a **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
 
 >note The **AI Prompt** functionality will be made available for the other [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) as well, in the releases to come. 
 
@@ -57,6 +57,8 @@ Before using the AI Prompt Dialog, users must give consent for the AI to process
 |requireConsent|A boolean configuration option that determines whether users must explicitly consent to the use of AI models before the AI report insights features can be utilized within the application.|
 |allowCustomPrompts|This setting is set to true by default. If you set it to `false`, users will only be able to use the predefined prompts and will not be allowed to ask custom prompts.|
 |predefinedPrompts|This setting specifies a list of predefined prompts that the AI client can use. Each prompt is defined by a text attribute, which contains the prompt's content.|
+|allowRAG|This setting specifies whether the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) is allowed. The default value is _true_. Available only on projects targeting .NET and .NET Standard.|
+|ragSettings|These settings specify the configuration of the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) when allowed by the _allowRAG_ setting. Available only on projects targeting .NET and .NET Standard.|
 
 __AI clients__
 
@@ -88,10 +90,18 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
 			"credential": "...",
 			"requireConsent": false,
 			"allowCustomPrompts": false,
+			"allowRAG": true,
 			"predefinedPrompts": [
 				{ "text": "Prompt 1" },
 				{ "text": "Prompt 2" }
-			]
+			],
+			"ragSettings": {
+				"tokenizationEncoding": "Set Encoding Name Here",
+				"modelMaxInputTokenLimit": 15000,
+				"maxNumberOfEmbeddingsSent": 15,
+				"maxTokenSizeOfSingleEmbedding": 0,
+				"splitTables": true
+			}
 		}
 	}
 }

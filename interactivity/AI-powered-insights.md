@@ -57,8 +57,8 @@ Before using the AI Prompt Dialog, users must give consent for the AI to process
 |requireConsent|A boolean configuration option that determines whether users must explicitly consent to the use of AI models before the AI report insights features can be utilized within the application.|
 |allowCustomPrompts|This setting is set to true by default. If you set it to `false`, users will only be able to use the predefined prompts and will not be allowed to ask custom prompts.|
 |predefinedPrompts|This setting specifies a list of predefined prompts that the AI client can use. Each prompt is defined by a text attribute, which contains the prompt's content.|
-|allowRAG|This setting specifies whether the Retrieval-Augmented Generation (RAG) is allowed. The default value is _true_. Available only on projects targeting .NET and .NET Standard.|
-|ragSettings|These settings specify the configuration of the Retrieval-Augmented Generation (RAG) when allowed by the _allowRAG_ setting. Available only on projects targeting .NET and .NET Standard.|
+|allowRAG|This setting specifies whether the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) is allowed. The default value is _true_. Available only on projects targeting .NET and .NET Standard.|
+|ragSettings|These settings specify the configuration of the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) when allowed by the _allowRAG_ setting. Available only on projects targeting .NET and .NET Standard.|
 
 __AI clients__
 

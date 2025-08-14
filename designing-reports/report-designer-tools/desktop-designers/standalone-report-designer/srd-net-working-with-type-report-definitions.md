@@ -10,7 +10,7 @@ position: 5
 
 # Coded Reports in the Standalone Report Designer for .NET
 
-Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) supports loading, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET.
+Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) supports loading, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET.
 
 > The feature is available only for CS reports due to specifics in the CodeDOM Serialization in VB.NET.
 

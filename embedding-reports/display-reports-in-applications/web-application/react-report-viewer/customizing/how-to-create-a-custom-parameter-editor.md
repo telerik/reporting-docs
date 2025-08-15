@@ -87,10 +87,12 @@ let viewer;
 					report: 'MyReport.trdp',
 					parameters: {}
 				}}
-				parameterEditors={{
-					match: match,
-					createEditor: createEditor
-				}} />
+				parameterEditors={[
+					{
+						match: match,
+						createEditor: createEditor
+					}
+				]} />
 		
 			</div>) : null;
 		}

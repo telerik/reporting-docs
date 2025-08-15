@@ -18,7 +18,7 @@ In this article, we will explain and visually demonstrate how the Standalone Rep
 
 ## Prerequisites
  
-The designer's functionality for working with Coded Reports relies on MSBuild version 15 or higher. If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
+The designer's functionality for working with Coded Reports relies on [MSBuild](https://github.com/dotnet/msbuild) version 15 or higher. If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
 
 ## Opening Coded Reports
 
@@ -43,13 +43,13 @@ When a .NET Coded Report is opened in the application, and this is the currently
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
 - `Build & Preview` - This button will trigger a build of the project (like the button 'Build') and a preview of the .NET Coded Report with any custom code behind included. For example, custom code written in [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) should be respected when previewing through this button.
-- `Build` - This button will trigger a new build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. The dependencies already added to the folder by a previous build will be reused, making the process faster. Use the 'Clean Up' button to trigger a complete rebuild.
+- `Build` - This button will trigger a new build of the project that was used to import the report. The generated assemblies of the built project(s) will be copied to the dedicated directory for the type report. The dependencies already added to the folder by a previous build will be reused, making the process faster.
 
 	The report project will be rebuilt entirely from the modified code. If there is a problem, you will see the build errors, as shown below:
 
 	![Error thrown by a failing build in the .NET Report Tools tab in the Standalone Report Designer for .NET.](./images/srd-net-type-reports/srd-net-build-error.png)
 
-- `Clean Up` - Cleans all the assets generated and copied with the build process of the opened CS report. This includes all the assemblies and resources, all meta files, and the cached XML report definition. If you build the report after cleaning up, all the assets will be regenerated.
+- `Clean Up` - Cleans all the assets generated and copied with the build process of the opened CS report from the Standalone Report Designer for .NET and *closes* the report. This includes all the assemblies and resources, all meta files, and the cached XML report definition. If you open the report again after cleanup, the build logic will initiate, and a new set of assets will be created.
 
 	![The warning message in the .NET Report Tools tab in the Standalone Report Designer for .NET's when clicking on the Clean Up button.](./images/srd-net-type-reports/srd-net-clean-up.png)
 

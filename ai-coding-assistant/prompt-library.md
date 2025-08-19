@@ -9,7 +9,16 @@ position: 3
 ---
 
 # Telerik Reporting AI Prompt Library
-
-<pre><code>
-Can I pass a List object from my API controller directly to a report’s DataSource?
+<body>
+	<table>
+		<tr>
+			<th>
+				<pre><code>
+					Can I pass a List object from my API controller directly to a report’s DataSource?
 				</code></pre>
+			</th>
+   			<th>
+				<pre><code>
+					I want to add a custom indicator in the UI when an error is encountered in the report viewer.
+					</code></pre>
+   			</th>

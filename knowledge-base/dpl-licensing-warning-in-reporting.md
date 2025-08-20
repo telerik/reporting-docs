@@ -18,7 +18,7 @@ ticketid: 1696546
 
 ## Description  
 
-After upgrading to **Q3 2025** a licensing warning, related to [Telerik Document Processing Libraries](https://docs.telerik.com/devtools/document-processing/introduction), occurs while using Telerik Reporting. A valid Telerik Reporting license is available but the Telerik Document Processing Libraries is not explicitly used in the project.  
+After upgrading to **Q3 2025**, a licensing warning, related to [Telerik Document Processing Libraries](https://docs.telerik.com/devtools/document-processing/introduction), occurs while using Telerik Reporting. A valid Telerik Reporting license is available, but the Telerik Document Processing Libraries is not explicitly used in the project.  
 
 Possible warning messages:
 
@@ -35,13 +35,14 @@ The possible solution is to ignore the warning. If the project treats warnings a
 Follow the steps: 
 
 1. Ignore the warning if you are not explicitly using Telerik Document Processing Libraries outside of the Report Viewer.  
-2. If your project treats warnings as errors, add an exception to the rule in the `.csproj` file. Use the following configuration:  
+1. If your project treats warnings as errors, add an exception to the rule in the `.csproj` file. Use the following configuration:  
 
-```xml  
+````XML  
 <PropertyGroup>  
   <TreatWarningsAsErrors>true</TreatWarningsAsErrors>  
-  <NoWarn>TKL102</NoWarn>  
+  <NoWarn>TKL102;TKL004</NoWarn>  
 </PropertyGroup>  
-```  
-This configuration suppresses the specific warning `TKL102` related to the Telerik Document Processing Libraries license.  
+````
+
+>note This configuration suppresses the specific warnings `TKL102` and `TKL004` related to the Telerik Document Processing Libraries license not being found.  
 

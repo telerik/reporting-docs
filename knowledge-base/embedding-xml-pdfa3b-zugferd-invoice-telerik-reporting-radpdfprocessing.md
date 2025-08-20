@@ -36,7 +36,7 @@ The recommended workflow is:
 
 Here is a code snippet that demonstrates the process:
 
-```csharp
+````C#
 using System.Diagnostics; 
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export;
@@ -93,8 +93,9 @@ foreach (string reportFilePath in reportFiles)
 
     Process.Start(new ProcessStartInfo { FileName = exportedFileName, UseShellExecute = true });
 }
-```
+````
 
 ## See Also
-- [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
-- [Embedding ZUGFeRD Invoices](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/embedded-file-streams/embedded-file-streams#creating-an-embedded-electronic-zugferd-invoice)
+
+* [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
+* [Embedding ZUGFeRD Invoices](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/embedded-file-streams/embedded-file-streams#creating-an-embedded-electronic-zugferd-invoice)

@@ -14,7 +14,6 @@ Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https:/
 
 While this workflow is fully supported, we recommend using declarative (XML-based) report definitions for most scenarios. Declarative reports offer broader tooling support, easier maintenance, and easier integration across Telerik Reporting tools.
 
-
 > This feature is only available for C# reports due to limitations in VB.NET's CodeDOM serialization.
 
 This article explains and visually demonstrates how to open, edit, and preview .NET coded (.CS) reports using the Standalone Report Designer for .NET.
@@ -39,8 +38,7 @@ Without it, SRD.NET will fail to compile the project.
 
 In addition to **TRDP/TRDX** files, **.CS** files can now be opened directly from the standard Open File menu in the Standalone Report Designer for .NET. 
 
-The designer requires a compiled version of the report to initiate the design workflow. 
-A dedicated wizard facilitates this process and is triggered only once—during the initial opening of the report.
+The designer requires a compiled version of the report to initiate the design workflow. A dedicated wizard facilitates this process and is triggered only once, during the initial opening of the report.
 Subsequent sessions load the design surface directly without recompilation. 
 
 1. Upon opening a .NET type report, the `Open Code File Wizard` launches and attempts to auto-populate the required inputs: the corresponding **designer.cs** file and the nearest .NET project file. You can adjust these paths if needed.
@@ -93,7 +91,7 @@ public partial class SampleReport : Telerik.Reporting.Report
 	public SampleReport()
 	{
 		//
-		// Required for telerik Reporting designer support
+		// Required for Telerik Reporting designer support
 		//
 		InitializeComponent();
 	}
@@ -114,11 +112,11 @@ public partial class SampleReport : Telerik.Reporting.Report
 
 	![An image demonstrating where to set the event hanlder function in the report designer](./images/srd-net-type-reports/coded-reports-set-event-handler-in-designer.png)
 
-1. Open the **Options** view o the Standalone Report Designer for .NET, and allow the class library assembly by adding it to the **Assembly References** list:
+1. Open the **Options** view in the Standalone Report Designer for .NET, and allow the class library assembly by adding it to the **Assembly References** list:
 
 	![An image demonstrating how to allow the custom assembly in the report designer](./images/srd-net-type-reports/coded-reports-whitelist-assembly.png)
 
-1. Use the `Build & Preview` button to build a new copy of the assembly, which contains the new event hanlder method, and preview the report with it.
+1. Use the `Build & Preview` button to build a new copy of the assembly, which contains the new event handler method, and preview the report with it.
 
 	![An image showcasing the 'Build & Preview' button in the .NET Report Tools](./images/srd-net-type-reports/coded-reports-build-and-preview-button.png)
 
@@ -135,7 +133,7 @@ public partial class SampleReport : Telerik.Reporting.Report
 	public SampleReport()
 	{
 		//
-		// Required for telerik Reporting designer support
+		// Required for Telerik Reporting designer support
 		//
 		InitializeComponent();
 	}
@@ -149,28 +147,25 @@ public partial class SampleReport : Telerik.Reporting.Report
 ````
 
 
-1. To invoke this custom function, set the following expression to a `textBox` or `htmlTextBox` rport item - `= MyDateFunctions.GetLastDayOfMonth()`.
-1. Open the **Options** view o the Standalone Report Designer for .NET, and allow the class library assembly by adding it to the **Assembly References** list:
+1. To invoke this custom function, set the following expression to a `textBox` or `htmlTextBox` report item - `= MyDateFunctions.GetLastDayOfMonth()`.
+1. Open the **Options** view in the Standalone Report Designer for .NET, and allow the class library assembly by adding it to the **Assembly References** list:
 
 	![An image demonstrating how to allow the custom assembly in the report designer](./images/srd-net-type-reports/coded-reports-whitelist-assembly.png)
 
-1. Use the `Build & Preview` button to build a new copy of the assembly, which contains the new event hanlder method, and preview the report with it.
+1. Use the `Build & Preview` button to build a new copy of the assembly, which contains the new event handler method, and preview the report with it.
 
 	![An image showcasing the 'Build & Preview' button in the .NET Report Tools](./images/srd-net-type-reports/coded-reports-build-and-preview-button.png)
 
 
-## Integration in the Visual Studio / Visual Studio Code
-
-**TODO:** Instructions to add the SRD.NET executable to VS and to VS Code as external tools so that it gets opened on double click of the file.
-
 ## Migrate from .NET Framework Report library to .NET (Core) Report library
 
-Migrating a `.NET Framework` report library to a .NET (Core or .NET 8+) report library involves several steps to ensure compatibility and modernization. Here's a short list of the main steps to focuc on for the migration process:
+Migrating a `.NET Framework` report library to a .NET (Core or .NET 8+) report library involves several steps to ensure compatibility and modernization. Here's a short list of the main steps to focus on for the migration process:
+
 1. Create a new .NET SDK style Class Library project - [Create a .NET class library using Visual Studio](https://learn.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio). 
-1. Copy all the report files (incliuding the `.designer.cs` and the `.resx` files) to the new .NET project. 
+1. Copy all the report files (including the `.designer.cs` and the `.resx` files) to the new .NET project. 
 1. Ensure all reports are included in the new project and build it in Visual Studio/Visual Studio Code.
 1. Open at least one report in the Standalone Report Designer for .NET and make sure it builds successfully. 
-1. Apply changes, save the file and use the `Build & Preview` button to preview the type report with code-begind.
+1. Apply changes, save the file, and use the `Build & Preview` button to preview the type report with code-begind.
 
 ## Workflow (Advanced)
 
@@ -202,7 +197,7 @@ They may change in future product releases without notice. Developers should avo
 ## See Also
 
 * [.NET Coded Report Design, No IDE Strings Attached](https://www.telerik.com/blogs/net-coded-report-design-no-ide-strings-attached)
-* [How to use the Visual Studio Report Designer (.NET Framwework) to edit CS/VB Reports in .NET Core Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})
+* [How to use the Visual Studio Report Designer (.NET Framework) to edit CS/VB Reports in .NET Core Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})
 * [Extending Report Designer to Recognize Custom Assemblies]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 * [Using event handlers in the Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd%})
 * [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})

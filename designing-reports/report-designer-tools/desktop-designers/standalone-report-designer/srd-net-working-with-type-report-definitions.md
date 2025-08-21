@@ -123,7 +123,7 @@ public partial class SampleReport : Telerik.Reporting.Report
 
 ## Creating and Using Custom Functions
 
-For demonstration purposes, the following steps will assume that a type report has already been created inside a [.NET Class Library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries), the report is named "SampleReport" and the goal is to implement a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that returns the last day of the month..
+For demonstration purposes, the following steps will assume that a type report has already been created inside a [.NET Class Library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries), the report is named "SampleReport" and the goal is to implement a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that returns the last day of the month.
 
 1. In the report class, create a new **public static** method that looks as follows:
 
@@ -152,7 +152,7 @@ public partial class SampleReport : Telerik.Reporting.Report
 
 	![An image demonstrating how to allow the custom assembly in the report designer](./images/srd-net-type-reports/coded-reports-whitelist-assembly.png)
 
-1. Use the `Build & Preview` button to build a new copy of the assembly, which contains the new event handler method, and preview the report with it.
+1. Use the `Build & Preview` button to build a new copy of the assembly, which contains the new custom function, and preview the report with it.
 
 	![An image showcasing the 'Build & Preview' button in the .NET Report Tools](./images/srd-net-type-reports/coded-reports-build-and-preview-button.png)
 
@@ -167,7 +167,7 @@ Migrating a `.NET Framework` report library to a .NET (Core or .NET 8+) report l
 1. Open at least one report in the Standalone Report Designer for .NET and make sure it builds successfully. 
 1. Apply changes, save the file, and use the `Build & Preview` button to preview the type report with code-begind.
 
-## Workflow (Advanced)
+## .NET Reports Design Workflow Explained (Advanced)
 
 To edit a report, the designer needs a live object model. For declarative formats (XML/JSON), this is loaded via parsing, while for `.CS` files, the Standalone Report Designer for .NET compiles the project, loads the resulting assembly, and instantiates the report object.
 
@@ -197,7 +197,6 @@ They may change in future product releases without notice. Developers should avo
 ## See Also
 
 * [.NET Coded Report Design, No IDE Strings Attached](https://www.telerik.com/blogs/net-coded-report-design-no-ide-strings-attached)
-* [How to use the Visual Studio Report Designer (.NET Framework) to edit CS/VB Reports in .NET Core Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})
 * [Extending Report Designer to Recognize Custom Assemblies]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 * [Using event handlers in the Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd%})
 * [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})

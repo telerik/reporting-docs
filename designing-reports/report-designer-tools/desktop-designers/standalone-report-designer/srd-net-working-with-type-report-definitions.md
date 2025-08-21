@@ -66,13 +66,11 @@ Use the standard `Home`->`Preview` tool to view the report based on the **.desig
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
 - `Build & Preview`: Builds the C# project and previews the report with custom code-behind logic (e.g., [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%})).
-- `Build`: Builds only the report project and updates the assembly in the assets folder. Dependencies are reused from the initial build. 
-
-> **Implication:** If you modify a dependency project, use **Clean up** and restart the design session to reflect changes.
-
-	If build errors occur, they are displayed in the UI:
+- `Build`: Builds only the report project and updates the assembly in the assets folder. Dependencies are reused from the initial build. If build errors occur, they are displayed in the UI:
 
 	![Error thrown by a failing build in the .NET Report Tools tab in the Standalone Report Designer for .NET.](./images/srd-net-type-reports/srd-net-build-error.png)
+
+> **Implication:** If you modify a dependency project, use **Clean up** and restart the design session to reflect changes.
 
 - `Clean Up` - Closes the report and deletes temporary design assets. Save your work before using this tool. When reopening the report, the initial build process will run again.
 

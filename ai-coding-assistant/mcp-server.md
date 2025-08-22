@@ -20,6 +20,10 @@ In addition to the [prerequisites for the AI Coding Assistant]({%slug ai-coding-
 
 * [Node.js](https://nodejs.org/en) 18 or newer.
 * An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
+* A [Telerik user account](https://www.telerik.com/account/).
+* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
+* An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
+
 
 ## Installation
 
@@ -47,7 +51,7 @@ Add your [Telerik license key]({%slug license-key%}) as an environment parameter
 
 * Option 1: License File Path (Recommended)
 
-	```json
+````json
 "env": {
 	"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
 }
@@ -56,7 +60,7 @@ Add your [Telerik license key]({%slug license-key%}) as an environment parameter
 
 * Option 2: Direct License Key
 
-	````json
+````json
 "env": {
 	"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
 }

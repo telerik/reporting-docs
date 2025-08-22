@@ -1,5 +1,5 @@
 ---
-title: AI Assistent Overview
+title: AI Assistant Overview
 page_title: Telerik Reporting AI Tooling Overview
 description: "Learn about the Telerik ReportingAI-powered developer tools that integrate with your IDE or code editor for greater productivity and enhanced developer experience."
 slug: ai-coding-assistant
@@ -37,8 +37,9 @@ The major differences between these tools are:
 To use the Telerik Reporting AI Coding Assistant, you need:
 
 * A [Telerik user account](https://www.telerik.com/account/).
-* An active [Telerik license](https://www.telerik.com/purchase.aspx?filter=web) that includes Telerik Reporting.
+* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
 * An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
+* A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited number of requests per year.
 
 ## Number of Requests
 
@@ -56,10 +57,19 @@ The Reporting AI Coding Assistant allows the following maximum number of request
 
 The Telerik Reporting AI Coding Assistant operates under strict privacy guidelines:
 
-Data Access:
+### Data Access:
 
-* No access to your workspace and application code.
+* The Assistant has no access to your workspace and application code.
 * Exception: when using the Telerik MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
+
+### Data Usage:
+* Your prompts are not used to train Telerik AI models.
+* The Assistant does not generate or alter the responses returned by the selected LLM. 
+* The Assistant enhances the context that helps your selected LLM (for example, GPT, Gemini, Claude) generate more relevant and accurate responses.
+* Your prompts are not linked to your Telerik user account. They are anonymized and stored only for statistical analysis and troubleshooting purposes.
+* The Assistant stores metrics about how often and how much you use it in order to ensure compliance with the allowed number of requests that correspond to your current license.
+
+Please make sure to get familiar with the terms and privacy policy of your selected AI model and AI client.
  
 ## Next Steps
 

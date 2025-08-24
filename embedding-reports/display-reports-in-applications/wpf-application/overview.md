@@ -32,6 +32,8 @@ The toolbar of the WPF Report Viewer provides basic functionality for interactin
 * Show/Hide document map
 * Show/Hide parameters area
 * Zooming
+* Search in report contents
+* Show/Hide the AI Prompt Dialog. Currently supported only when the viewer is connected to a remote Telerik Reporting REST Service that has the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality enabled.
 
 To use the WPF Report Viewer, you need a WPF application. To create such, you need the following tools installed:
 

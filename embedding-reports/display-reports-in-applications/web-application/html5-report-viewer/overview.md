@@ -45,16 +45,12 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 			<th>Purpose</th>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
-			<td>Opens/Closes the AI Prompt Dialog when the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality has been enabled.</td>
-		</tr>
-		<tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path></svg></td>
-			<td>Navigate Backward</td>
+			<td>Navigates Backward</td>
 		</tr>
 		<tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path></svg></td>
-			<td>Navigate Forward</td>
+			<td>Navigates Forward</td>
 		</tr>
 		<tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path></svg></td>
@@ -106,15 +102,19 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 		</tr>
 		<tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M448 480V96h-32v352H128c-17.6 0-32-14.4-32-32s14.4-32 32-32h256V32H128c-35.2 0-64 28.8-64 64v320c0 23.6 12.9 44.2 32 55.3 9.4 5.5 20.4 8.7 32 8.7zM128 64h224v288H128zm192 64H160V96h160zm0 128H160v-32h160zm-32-64H160v-32h128z"></path></svg></td>
-			<td>Toggle the Document Map</td>
+			<td>Toggles the Document Map</td>
 		</tr>
 		<tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path></svg></td>
-			<td>Toggle the Parameters Area</td>
+			<td>Toggles the Parameters Area</td>
 		</tr>
         <tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3L365.3 320zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192z"></path></svg></td>
-			<td>Open the Search Dialog</td>
+			<td>Opens the Search Dialog</td>
+		</tr>
+		<tr>
+			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
+			<td>Toggles the AI Prompt Dialog when the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality has been enabled.</td>
 		</tr>
 	</table>
 </body>

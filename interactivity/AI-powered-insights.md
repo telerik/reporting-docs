@@ -10,15 +10,18 @@ position: 1
 
 # AI-Powered Insights Overview
 
-The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
+**AI Insights** is an AI-powered feature available during the report preview. It enables users to execute predefined or custom prompts on the core data of the previewed report, uncovering valuable insights, generating summaries, or answering specific questions. The feature also supports fine-tuning of the embedded Retrieval-Augmented Generation (RAG) algorithms, optimizing them to deliver accurate responses while minimizing token consumption.
 
-![The UI of the AI system after configuration.](images/UIOfTheAI.png)
+![The UI of the AI system after configuration.](images/angular-report-viewer-with-ai-insights.png)
 
 ## Feature Concept
 
-To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing a **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
+To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing a **AI Prompt** dialog that integrates seamlessly in the report viewers. The dialog provides a convenient UI for sending predefined or custom prompts to an AI model, configured in the Reporting REST Service. The prompts and responses returned from the AI model are displayed in the Output panel of the dialog, allowing for easier tracking of the conversation.
 
->note The **AI Prompt** functionality will be made available for the other [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) as well, in the releases to come. 
+
+**TODO**: explain about the context that is kept within one report and is cleared when changing the report parameters or navigating to another report.
+
+The feature is supported by all [web report viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and by the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) connected to a remote Reporting REST Service.
 
 ### Key Features:
 
@@ -130,6 +133,27 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
  </Telerik.Reporting>
 ````
 
+
+## Customization
+The workflow of instantiating the AI Client and passing a request to it can be customized by overriding the following methods of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class:
+* [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) - called when the AI Prompt dialog is to be displayed. In this method the AI Client is instantiated either using the settings provided in the application configuration file, or by using the AIClientFactory instance provided with the Reporting REST Service Configuration (see [Extensibility]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}#extensibility) below. Providing custom logic in the method allows to control the UI properties of the AI Prompt dialog: changing or disabling the consent message, enabling/disabling custom prompts, etc. This logic can be based on the currently previewed report, represented by the property **ClientReportSource**.
+
+{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsController_CreateAIThread_CheckReportSource}}
+
+
+* [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) - called internally during the execution of **CreateAIThread()** method. Provides easier access to the predefined prompts, allowing to alter or disable them based on a custom logic like the role of the currently logged user, or on the currently previewed report, represented by the property **ClientReportSource**.
+
+{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsController_CreateAIThread_UpdateAIPrompts}}
+
+
+* [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetAIResponse_System_String_System_String_System_String_System_String_Telerik_Reporting_Services_Engine_AIQueryArgs_) - called every time when a prompt is sent to the AI model. Allows for examining or altering the prompt sent from the client, inspecting the state of the RAG optimization, or checking the estimated amount of tokens that the prompt will consume, by implementing a callback function assigned to the [ConfirmationCallback](/api/telerik.reporting.services.engine.aiqueryargs#collapsible-Telerik_Reporting_Services_Engine_AIQueryArgs_ConfirmationCallBack) property.
+
+{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsController_CreateAIThread_ModifyPrompt}}
+
+{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsController_CreateAIThread_ConfirmationCallback_TokenCount}}
+
+{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsController_CreateAIThread_ConfirmationCallback_RAGOptimization}}
+
 ## Extensibility
 
 If necessary, the Reporting engine can use a custom `Telerik.Reporting.AI.IClient` implementation, which can be registered in the Reporting REST Service configuration:
@@ -148,7 +172,6 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 }
 ````
 
- >note The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.
 
 ## See Also
 

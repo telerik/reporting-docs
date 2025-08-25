@@ -31,119 +31,217 @@ Quick Start Guide:
 
 ## Report Viewer Prompts
 
-### HTML5 Report Viewer
+### Blazor Report Viewers
 
 <table>
-		<tr>
-			<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to connect the HTML5 Report Viewer to a Telerik Report Server?
-				</code></pre>
-<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to pass a bearer token through the HTML5 Report Viewer?
-					</code></pre>
-<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to to show ComboBox editors for the report parameters in the HTML5 Report Viewer?
-					</code></pre>
-<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to change the displayed report on a button click in the HTML5 Report Viewer?
-					</code></pre>
-<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to move the parameters area inside the HTML5 Report Viewer to be on the left side instead of the right?
-					</code></pre>
-		</tr>
-</table> 
-
-### Native Blazor Report Viewer
-
-</table> 
-		<tr>
-			<pre style="width: 75%;"><code>
+	<tr>
+		<th>Blazor Report Viewer</th>
+		<th>Native Blazor Report Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to connect the Blazor Report Viewer to a Telerik Report Server?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to change the displayed report on a button click in the Native Blazor Report Viewer?
-				</code></pre>
-				<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to pass a bearer token through the Blazor Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to change the culture of the rendered report in the Native Blazor Report Viewer?
-				</code></pre>
-				<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to to show ComboBox editors for the report parameters in the Blazor Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to change the date format in the displayed report in the Native Blazor Report Viewer?
-				</code></pre>
-				<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to change the displayed report on a button click in the Blazor Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to connect the Native Blazor Report Viewer to a Telerik Report Server?
-				</code></pre>
-				<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to move the parameters area inside the Blazor Report Viewer to be on the left side instead of the right?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to hide the export button in the Native Blazor Report Viewer's toolbar?
-				</code></pre>
-		</tr>
-</table>  
+			</code></pre>
+		</td>
+	</tr> 	
+</table>
 
-### Angular Report Viewer
-
-<table>
-		<tr>
-			<th>
-			<pre style="width: 75%;"><code>
-I want to hide the export button in the report viewer's toolbar.
-				</code></pre>
-	<pre style="width: 75%;"><code>
-How to print the report using client-side code?
-				</code></pre>
-	<pre style="width: 75%;"><code>
-How to use dropdowns for report filters?
-				</code></pre>
-	<pre style="width: 75%;"><code>
-I want to show combo box editors for report parameters
-				</code></pre>
-	<pre style="width: 75%;"><code>
-The filters of my report viewer display only the date and not the time. How can I change this?
-				</code></pre>
-	</th>
-</table> 
-
-### Native Angular Report Viewer
+### Angular Report Viewers
 
 <table>
-		<tr>
-			<th>
-			<pre style="width: 75%;"><code>
-#telerik_reporting_assistant I want to hide the export button in the report viewer's toolbar.
-				</code></pre>
-	<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to print the report using client-side code?
-				</code></pre>
-	<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to use dropdowns for report filters?
-				</code></pre>
-	<pre style="width: 75%;"><code>
-#telerik_reporting_assistant I want to show combo box editors for report parameters
-				</code></pre>
-	<pre style="width: 75%;"><code>
-#telerik_reporting_assistant The filters of my report viewer display only the date and not the time. How can I change this?
-				</code></pre>
-	</th>
-</table> 
+	<tr>
+		<th>Angular Report Viewer</th>
+		<th>Native Angular Report Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to connect the HTML5 Report Viewer to a Telerik Report Server?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to change the displayed report on a button click in the Native Blazor Report Viewer?
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to pass a bearer token through the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to change the culture of the rendered report in the Native Blazor Report Viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to to show ComboBox editors for the report parameters in the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to change the date format in the displayed report in the Native Blazor Report Viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to change the displayed report on a button click in the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to connect the Native Blazor Report Viewer to a Telerik Report Server?
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to move the parameters area inside the HTML5 Report Viewer to be on the left side instead of the right?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to hide the export button in the Native Blazor Report Viewer's toolbar?
+			</code></pre>
+		</td>
+	</tr> 	
+</table>
 
-### React Report Viewer
+### HTML5 & React Report Viewers
 
 <table>
-<pre style="width: 75%;"><code>
+	<tr>
+		<th>HTML5 Report Viewer</th>
+		<th>React Report Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to connect the HTML5 Report Viewer to a Telerik Report Server?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to change the displayed report on a button click in the React Report Viewer?
-				</code></pre>
-	<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to pass a bearer token through the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to add a custom indicator in the UI when an error is encountered in the React Report Viewer?
-				</code></pre>
-	<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to to show ComboBox editors for the report parameters in the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant How to connect the React Report Viewer to a Telerik Report Server?
-				</code></pre>
-	<pre style="width: 75%;"><code>
-#telerik_reporting_assistant How to show ComboBox editors for report parameters in the React Report Viewer?.
-		</code></pre>
-	<pre style="width: 75%;"><code>
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to change the displayed report on a button click in the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to show ComboBox editors for report parameters in the React Report Viewer?
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant How to move the parameters area inside the HTML5 Report Viewer to be on the left side instead of the right?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
 #telerik_reporting_assistant The document map panel is missing in the React Report Viewer, how to display it?
-				</code></pre>
-</table>  
+			</code></pre>
+		</td>
+	</tr> 	
+</table>
+
 
 ## Reporting Service Prompts
 
-
+lorem ipsum
 
 ## See Also
 

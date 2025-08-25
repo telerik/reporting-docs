@@ -79,7 +79,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 1. Add `.mcp.json` to your solution folder (mind the leading dot '.'):
 
-````json
+	````json
 {
 	"servers": {
 		"telerikReportingAssistant": {
@@ -115,7 +115,7 @@ The basic setup in Visual Studio Code follows these steps:
 1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
 2. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup):
 
-````json
+	````json
 {
 	"servers": {
 		"telerik-reporting-assistant": {
@@ -132,11 +132,12 @@ The basic setup in Visual Studio Code follows these steps:
 }
 ````
 
-This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
+
+	This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 
 3. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
-````json
+	````json
 {
 	"chat.mcp.discovery.enabled": true
 }

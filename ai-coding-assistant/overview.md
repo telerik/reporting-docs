@@ -1,7 +1,7 @@
 ---
 title: AI Assistant Overview
 page_title: Telerik Reporting AI Tooling Overview
-description: "Learn about the Telerik ReportingAI-powered developer tools that integrate with your IDE or code editor for greater productivity and enhanced developer experience."
+description: "Learn about the Telerik Reporting AI-powered developer tools that integrate with your IDE or code editor for greater productivity and enhanced developer experience."
 slug: ai-coding-assistant
 tags: ai, telerik, reporting, coding, assistant
 published: True
@@ -10,40 +10,42 @@ position: 0
 
 # Telerik Reporting AI Coding Assistant
 
-Telerik Reporting offers an **AI Coding Assistant** which will leverage AI to enhance productivity, reduce guesswork, and ensure compliance with security standards when building applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
+Telerik Reporting offers an **AI Coding Assistant**, which leverages AI to enhance productivity, reduce guesswork, and ensure compliance with security standards when building applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
 
 
-## Available Tools
+The **AI Coding Assistant** is available through:
 
-The **AI Coding Assistant** is represented by:
+* [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
 
-* GenAI-powered Embeddability [Copilot Extension]({%slug ai-copilot-extension%})
+* [Telerik Reporting MCP server]({%slug ai-mcp-server%})
 
-* [MCP server]({%slug ai-mcp-server%})
+You can combine both integrations for even more powerful results.
 
-### Key Differences
-
-The major differences between these tools are:
-
-| Feature| MCP Server| GitHub Copilot Extension|
-|-----|----|----|
-|Prompt Handling|Handles complex, multi-step prompts| Offers shorter, focused code snippets|
-|Client Compatibility|Works with MCP-enabled clients (e.g., Cursor, Copilot Agent mode)|Integrated as a Copilot extension|
-|Code Suggestions|Can directly suggest changes and rebuild applications to verify code|Provides detailed explanations alongside code suggestions|
-|Response Focus|Primarily code-focused|Better for learning and understanding implementation|
-
-## Prerequisites for the AI Coding Assistant
+## Getting Started
 
 To use the Telerik Reporting AI Coding Assistant, you need:
 
 * A [Telerik user account](https://www.telerik.com/account/).
-* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
-* An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
+* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web), or a [Telerik Reporting trial](https://www.telerik.com/reporting).
+* An application that uses [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
 * A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited number of requests per year.
+
+## Intended Use
+
+>warning Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
+
+You can use the AI Coding Assistant for:
+
+* **Initial code generation:** Quickly add Report Viewer to your app to speed up the initial development. The Assistant can produce the necessary code for both front-end and back-end modules of your application. 
+* **Basic component configuration:** Enable or disable specific features, or fine tune the configuration through prompting. More complex configurations are possible but may require additional manual work to be production-ready.
+* **Step-by-step explanations:** Understand the solutions provided by the AI Coding Assistant through the detailed explanations (depends on the tool, mode, and model used). To further develop your knowledge, check the respective documentation.
+* **Preliminary troubleshooting:** Resolve obvious and easy-to-solve issues affecting your code. For more complex issues, look for assistance from the community or contact the support team.
+
+> The AI Coding Assistant is not intended for designing reports or applying changes during the report processing and rendering stages.
 
 ## Number of Requests
 
-The Reporting AI Coding Assistant allows the following maximum number of requests based on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
+The Reporting AI Coding Assistant allows the following maximum number of requests depending on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
 
 | License Type | Request Limit |
 |--------------|---------------|
@@ -69,9 +71,9 @@ The Telerik Reporting AI Coding Assistant operates under strict privacy guidelin
 * Your prompts are not linked to your Telerik user account. They are anonymized and stored only for statistical analysis and troubleshooting purposes.
 * The Assistant stores metrics about how often and how much you use it in order to ensure compliance with the allowed number of requests that correspond to your current license.
 
-Please make sure to get familiar with the terms and privacy policy of your selected AI model and AI client.
+Please make sure you are familiar with the terms and privacy policy of your selected AI model and AI client.
  
 ## Next Steps
 
-* Install the [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
-* Configure the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client
+* Install the [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}).
+* Configure the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client.

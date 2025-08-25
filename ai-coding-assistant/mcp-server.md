@@ -1,7 +1,7 @@
 ---
 title: MCP Server
 page_title: Telerik Reporting MCP Server
-description: "Learn how to add and use the Telerik Reporting MCP Server as a .NET Document Processing AI coding assistant and code generator for better developer productivity."
+description: "Learn how to add and use the Telerik Reporting MCP Server as a .NET Telerik Reporting AI coding assistant and code generator for increased developer productivity."
 slug: ai-mcp-server
 tags: telerik, reporting, ai, server, mcp, dotnet,coding assistant
 published: True
@@ -77,9 +77,9 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 ### Workspace-Specific Setup:
 
-1. Add `.mcp.json` to your solution folder:
+1. Add `.mcp.json` to your solution folder (mind the leading dot '.'):
 
-	````json
+````json
 {
 	"servers": {
 		"telerikReportingAssistant": {
@@ -113,9 +113,9 @@ For complete setup instructions, see [Use MCP servers in Visual Studio Code](htt
 The basic setup in Visual Studio Code follows these steps:
 
 1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
-1. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup):
+2. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup):
 
-	````json
+````json
 {
 	"servers": {
 		"telerik-reporting-assistant": {
@@ -132,17 +132,18 @@ The basic setup in Visual Studio Code follows these steps:
 }
 ````
 
+This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 
 3. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
-	````json
+````json
 {
 	"chat.mcp.discovery.enabled": true
 }
 ````
 
 
-1. Restart Visual Studio Code.
+4. Restart Visual Studio Code.
 
 ## Cursor
 
@@ -167,24 +168,27 @@ Create `.cursor/mcp.json` in your workspace root (or user folder for global setu
 }
 ````
 
+This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
+
+
 ## Usage
 
-To use the Telerik MCP Server:
+To use the Telerik Reporting MCP Server:
 
-1. Start your prompt with one of these triggers:
+1. Choose your preferred mode and model.<br/>At the time of publishing, **Claude Sonnet 4** and **GPT-5** produce optimal results.
 
-	- `/telerik` / `@telerik` / `#telerik`
-	- `/telerikreporting` / `@telerikreporting` / `#telerikreporting`
-	- `#telerik-reporting-assistant`
+2. Start your prompt with `#telerik-reporting-assistant` (or with '#' followed by your [custom MCP server name](#configuration), if set):
 
-1. Verify server activation by looking for these messages:
+3. Inspect the output and verify that the MCP server is used. Look for messages similar to the ones below:
 
 	- Visual Studio: `Running telerikReportingAssistant`
 	- Visual Studio Code: `Running telerik-reporting-assistant`
 	- Cursor: `Calling MCP tool telerikReportingAssistant`
 
-1. Grant permissions when prompted (per session, workspace, or always).
-1. Start fresh sessions for unrelated prompts to avoid context pollution.
+4. If the Telerik Reporting MCP server is not used even though it's installed and enabled, double-check the server name in your configuration and try rephrasing your prompt.
+5. If requested, grant the Telerik Reporting MCP Server permissions to run for this session, workspace, or always.
+
+6. Start fresh sessions for unrelated prompts to avoid context pollution.
 
 ### Improving Server Usage
 
@@ -197,8 +201,10 @@ To increase the likelihood of the Telerik MCP server being used, add custom inst
 
 The following examples demonstrate useful prompts for the Telerik Reporting MCP Server:
 
-* "`/telerik` text"
-* "`/telerikreporting` text"
+* "`#telerik-reporting-assistant` Add a Telerik Report Viewer to my native Angular application."
+* "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
+
+>tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
 
 ## Number of Requests
 
@@ -218,3 +224,6 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 
 * [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * [AI Coding Assistant Overview]({%slug ai-coding-assistant%})
+* [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
+* For applications using [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) see the [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server) article.
+* For applications using [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) see the [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server) article.

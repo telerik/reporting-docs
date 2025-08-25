@@ -14,12 +14,12 @@ The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontext
 
 This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about Reporting, request specific implementations, and generate comprehensive code solutions.
 
-## Prerequisites for the MCP Server
+## Prerequisites
 
-In addition to the [prerequisites for the AI Coding Assistant]({%slug ai-coding-assistant%}#prerequisites-for-the-ai-coding-assistant), To use the Telerik Reporting MCP server, you need:
+To use the Telerik Reporting MCP Server, you need:
 
 * [Node.js](https://nodejs.org/en) 18 or newer.
-* An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
+* An [MCP-compatible client (IDE, code editor, or app)](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
 * A [Telerik user account](https://www.telerik.com/account/).
 * An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
 * An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
@@ -43,7 +43,7 @@ Use these settings when configuring the server in your MCP client:
 | Type | `stdio` (standard input/output transport) |
 | Command | `npx` |
 | Arguments | `-y` |
-| Server Name | `telerikReportingAssistant` (customizable) |
+| Server Name | `telerik-reporting-assistant` (customizable) |
 
 ### License Configuration
 
@@ -195,7 +195,24 @@ To use the Telerik Reporting MCP Server:
 
 ### Improving Server Usage
 
-To increase the likelihood of the Telerik MCP server being used, add custom instructions to your AI tool:
+* **Determining the Reporting Area**: To better specify the context for each prompt, the MCP Server will attempt to determine the Telerik Reporting Area the prompt relates to. These areas represent the supported web frameworks and backend technologies, as listed below as pairs consisting of identifier and description:
+   - AngularWrapper - _Angular Report Viewer (wrapper of the HTML5 Report Viewer)_
+   - NativeAngular - _Native Angular Report Viewer (built with Kendo UI for Angular)_
+   - BlazorWrapper- _Blazor Report Viewer (wrapper of the HTML5 Report Viewer)_
+   - NativeBlazor - _Native Blazor Report Viewer (built with Telerik UI for Blazor)_
+   - HTML5 - _HTML5 Report Viewer (built with Kendo UI for jQuery)_
+   - React - _React Report Viewer (wrapper of the HTML5 Report Viewer)_
+   - RESTService - _Reporting REST Service for .NET Framework_
+   - RESTServiceCore - _Reporting REST Service for .NET Core/.NET 8+_
+   - General - _General question_
+
+  If the Reporting Area cannot be determined automatically, the MCP Server will display a dialog asking to pick the corresponding area in which the prompt falls in:
+  ![alt text](images/mcp-server-reporting-area-prompt.png)
+
+  After clicking on 'Respond' button, the MCP Server will display a drop-down list with all the areas and wait for selecting the corresponding Reporting Area. If there is no applicable entry, please select 'General' entry at the end of the list.
+  ![alt text](images/mcp-server-select-reporting-area.png)
+ 
+* **Custom Instructions**: To increase the likelihood of the Telerik MCP server being used, or to call it without the need to mention "telerik-reporting" explicitly, add custom instructions to your AI tool:
 
 - [GitHub Copilot custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-repository-custom-instructions-for-github-copilot-chat)
 - [Cursor rules](https://docs.cursor.com/context/rules)

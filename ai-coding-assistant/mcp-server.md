@@ -145,6 +145,8 @@ This enables you to call the MCP Server with the `#telerik-reporting-assistant` 
 
 4. Restart Visual Studio Code.
 
+![Installed Reporting MCP Server in VS Code](images/installed-reporting-mcp-server-in-vs-code.png)
+
 ## Cursor
 
 For complete setup instructions, see [Model Context Protocol](https://docs.cursor.com/context/mcp).

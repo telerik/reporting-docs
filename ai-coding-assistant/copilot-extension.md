@@ -32,8 +32,14 @@ In addition to the [prerequisites for the AI Coding Assistant]({%slug ai-coding-
 Follow these steps to install and configure the Telerik Reporting Copilot extension:
 
 1. Go to the [Telerik Reporting GitHub App](https://github.com/apps/telerikreporting) page and click the **Install** button.
+
+	![Install the Telerik Reporting GitHub App](images/ai-copilot-extension-install.png)
+
 1. You will see a list that includes your GitHub account and all GitHub organizations that you are part of. **Select your GitHub account**.
 1. Click the **Install & Authorize** button. This will allow the GitHub Copilot extension to integrate with your GitHub account.
+
+	![Authorize the Telerik Reporting GitHub App](images/copilot-extension-authorize.png)
+
 1. Enter your GitHub password when prompted.
 1. You will be redirected to **telerik.com**. Enter your **Telerik account** credentials if prompted. This step links the GitHub Copilot extension with your Telerik account.
 1. Upon successful Telerik authentication, you will be redirected to a confirmation page that confirms the Copilot extension has been installed successfully.
@@ -49,11 +55,11 @@ To use the Telerik Reporting Copilot extension:
 1. Ensure you are in **Chat** mode and not in **Edit** or **Agent** mode. The Edit and Agent modes do not use the Telerik Copilot extension. However, the Agent mode can use the [Telerik Reporting MCP server]({%slug ai-mcp-server%}).
 1. Start your prompt with `@telerikreporting` and type your request. Verify that `@telerikreporting` is recognized and highlighted; otherwise the extension may not have been properly installed.
 
-	![Recognized TelerikReporting](images/a.png)    
+	![Recognized the TelerikReporting Assistant](images/ai-copilot-extension-recognized.png)    
 
 1. Look for a status label such as **Telerik Reporting working...** or **Telerik Reporting generating response...** in the output to confirm the extension is active.
 
-	![TelerikReporting generating response](images/a.png)    
+	![TelerikReporting Assistant is generating a response](images/ai-copilot-extension-generating-response.png)    
 
 1. Grant permission to the Telerik Reporting extension to read your workspace files when prompted.
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.

@@ -12,7 +12,6 @@ position: 0
 
 Telerik Reporting offers an **AI Coding Assistant**, which leverages AI to enhance productivity, reduce guesswork, and ensure compliance with security standards when building web applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
 
-
 The **AI Coding Assistant** is integrated in:
 
 * [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}) - A Copilot add-on for fast initial code generation, widget configuration, and detailed explanations within Copilot-enabled IDEs.
@@ -88,4 +87,4 @@ Please make sure you are familiar with the terms and privacy policy of your sele
 * Install the [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}).
 * Configure the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client.
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
-* 
+ 

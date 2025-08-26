@@ -24,6 +24,9 @@ navigation:
     security:
         position: 20
         title: "Security"
+    ai-coding-assistant:
+        position: 21
+        title: "AI Coding Assistant"
     getting-started/web-designer:
         position: 5
         title: "Web Report Designer"

@@ -10,7 +10,7 @@ position: 0
 
 # Telerik Reporting AI Coding Assistant
 
-Telerik Reporting offers an **AI Coding Assistant**, which leverages AI to enhance productivity, reduce guesswork, and ensure compliance with security standards when building applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
+Telerik Reporting offers an **AI Coding Assistant**, which leverages AI to enhance productivity, reduce guesswork, and ensure compliance with security standards when building web applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
 
 
 The **AI Coding Assistant** is integrated in:

@@ -13,12 +13,8 @@ position: 1
 
 The Telerik Reporting [GitHub Copilot](https://github.com/features/copilot) extension is an AI-powered coding assistant that provides specialized knowledge about [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
 
-This extension enhances GitHub Copilot with proprietary context about Telerik Reporting, helping you:
+It enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about integrating Telerik Reporting into web applications, request specific implementations, and receive comprehensive code solutions.
 
-* Generate code snippets using Telerik Reporting APIs.
-* Get contextual suggestions for report item properties and methods.
-* Access best practices and implementation patterns.
-* Speed up development with AI-powered code completion.
 
 ## Prerequisites for the GitHub Copilot Extension
 

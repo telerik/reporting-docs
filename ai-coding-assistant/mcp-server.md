@@ -10,9 +10,9 @@ position: 2
 
 # Telerik Reporting MCP Server
 
-The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik Reporting libraries.
+The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik Reporting.
 
-This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about Reporting, request specific implementations, and generate comprehensive code solutions.
+This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about integrating Telerik Reporting in web applications, request specific implementations, and generate comprehensive code solutions.
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 	````json
 {
 		"servers": {
-			"telerikReportingAssistant": {
+			"telerik_reporting_assistant": {
 			"type": "stdio",
 			"command": "npx",
 			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
@@ -98,7 +98,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 
 1. Restart Visual Studio.
-1. Enable the `telerikReportingAssistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+1. Enable the `telerik_reporting_assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 ### Global Setup:
 
@@ -157,7 +157,7 @@ Create `.cursor/mcp.json` in your workspace root (or user folder for global setu
 ````json
 {
 	"mcpServers": {
-		"telerikReportingAssistant": {
+		"telerik_reporting_assistant": {
 		"type": "stdio",
 		"command": "npx",
 		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],

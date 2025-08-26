@@ -81,19 +81,19 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 	````json
 {
-	"servers": {
-		"telerikReportingAssistant": {
-		"type": "stdio",
-		"command": "npx",
-		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-		"env": {
-			"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-			// or
-			"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-		}
+		"servers": {
+			"telerikReportingAssistant": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+			"env": {
+					"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+					// or
+					"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+				}
+			}
 		}
 	}
-}
 ````
 
 
@@ -117,19 +117,19 @@ The basic setup in Visual Studio Code follows these steps:
 
 	````json
 {
-	"servers": {
-		"telerik-reporting-assistant": {
-		"type": "stdio",
-		"command": "npx",
-		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-		"env": {
-			"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-			// or
-			"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-		}
+		"servers": {
+			"telerik-reporting-assistant": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+			"env": {
+					"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+					// or
+					"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+				}
+			}
 		}
 	}
-}
 ````
 
 
@@ -162,10 +162,10 @@ Create `.cursor/mcp.json` in your workspace root (or user folder for global setu
 		"command": "npx",
 		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
 		"env": {
-			"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-			// or
-			"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-		}
+				"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+				// or
+				"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+			}
 		}
 	}
 }
@@ -195,24 +195,27 @@ To use the Telerik Reporting MCP Server:
 
 ### Improving Server Usage
 
-* **Determining the Reporting Area**: To better specify the context for each prompt, the MCP Server will attempt to determine the Telerik Reporting Area the prompt relates to. These areas represent the supported web frameworks and backend technologies, as listed below as pairs consisting of identifier and description:
-   - AngularWrapper - _Angular Report Viewer (wrapper of the HTML5 Report Viewer)_
-   - NativeAngular - _Native Angular Report Viewer (built with Kendo UI for Angular)_
-   - BlazorWrapper- _Blazor Report Viewer (wrapper of the HTML5 Report Viewer)_
-   - NativeBlazor - _Native Blazor Report Viewer (built with Telerik UI for Blazor)_
-   - HTML5 - _HTML5 Report Viewer (built with Kendo UI for jQuery)_
-   - React - _React Report Viewer (wrapper of the HTML5 Report Viewer)_
-   - RESTService - _Reporting REST Service for .NET Framework_
-   - RESTServiceCore - _Reporting REST Service for .NET Core/.NET 8+_
-   - General - _General question_
+**Determining the Reporting Area**: To better specify the context for each prompt, the MCP Server will attempt to determine the Telerik Reporting Area the prompt relates to. These areas represent the supported web frameworks and backend technologies, as listed below as pairs consisting of identifier and description:
 
-  If the Reporting Area cannot be determined automatically, the MCP Server will display a dialog asking to pick the corresponding area in which the prompt falls in:
-  ![alt text](images/mcp-server-reporting-area-prompt.png)
+- AngularWrapper - _Angular Report Viewer (wrapper of the HTML5 Report Viewer)_
+- NativeAngular - _Native Angular Report Viewer (built with Kendo UI for Angular)_
+- BlazorWrapper- _Blazor Report Viewer (wrapper of the HTML5 Report Viewer)_
+- NativeBlazor - _Native Blazor Report Viewer (built with Telerik UI for Blazor)_
+- HTML5 - _HTML5 Report Viewer (built with Kendo UI for jQuery)_
+- React - _React Report Viewer (wrapper of the HTML5 Report Viewer)_
+- RESTService - _Reporting REST Service for .NET Framework_
+- RESTServiceCore - _Reporting REST Service for .NET Core/.NET 8+_
+- General - _General question_
 
-  After clicking on 'Respond' button, the MCP Server will display a drop-down list with all the areas and wait for selecting the corresponding Reporting Area. If there is no applicable entry, please select 'General' entry at the end of the list.
-  ![alt text](images/mcp-server-select-reporting-area.png)
- 
-* **Custom Instructions**: To increase the likelihood of the Telerik MCP server being used, or to call it without the need to mention "telerik-reporting" explicitly, add custom instructions to your AI tool:
+If the Reporting Area cannot be determined automatically, the MCP Server will display a dialog asking to pick the corresponding area in which the prompt falls in:
+
+![A notification requesting input for the Reporting Area of the asked question](images/mcp-server-reporting-area-prompt.png)
+
+ After clicking on 'Respond' button, the MCP Server will display a drop-down list with all the areas and wait for selecting the corresponding Reporting Area. If there is no applicable entry, please select 'General' entry at the end of the list.
+
+![Select a Reporing Area from the dropdown](images/mcp-server-select-reporting-area.png)
+
+**Custom Instructions**: To increase the likelihood of the Telerik MCP server being used, or to call it without the need to mention "telerik-reporting" explicitly, add custom instructions to your AI tool:
 
 - [GitHub Copilot custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-repository-custom-instructions-for-github-copilot-chat)
 - [Cursor rules](https://docs.cursor.com/context/rules)

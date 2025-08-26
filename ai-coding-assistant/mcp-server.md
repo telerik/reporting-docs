@@ -5,7 +5,7 @@ description: "Learn how to add and use the Telerik Reporting MCP Server as a .NE
 slug: ai-mcp-server
 tags: telerik, reporting, ai, server, mcp, dotnet,coding assistant
 published: True
-position: 2
+position: 1
 ---
 
 # Telerik Reporting MCP Server
@@ -21,7 +21,7 @@ To use the Telerik Reporting MCP Server, you need:
 * [Node.js](https://nodejs.org/en) 18 or newer.
 * An [MCP-compatible client (IDE, code editor, or app)](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
 * A [Telerik user account](https://www.telerik.com/account/).
-* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
+* An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
 * An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
 
 
@@ -250,5 +250,5 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 * [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * [AI Coding Assistant Overview]({%slug ai-coding-assistant%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
-* For applications using [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) see the [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server) article.
-* For applications using [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) see the [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server) article.
+* [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server)
+* [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server) article.

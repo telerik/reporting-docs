@@ -8,6 +8,18 @@ published: True
 position: 3
 ---
 
+<style>
+	code {
+		font-size: 1rem @important;
+		font-weight: 700 !important;
+	}
+	
+	th {
+		font-weight: 700 !important;
+		font-size: large !important;
+	}
+</style>
+
 # AI Prompt Library
 
 The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or the [MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
@@ -18,8 +30,6 @@ You can also use the prompts with any AI-powered tool of your choice. However, t
 
 The list of prompts is not exhaustive, and the Telerik Reporting team is constantly working on adding more prompts to the library.
 
->caution Always double-check the code and solutions proposed by an AI-powered tool before applying them to your project.
-
 ## How to Use This Library
 
 Quick Start Guide:
@@ -29,9 +39,11 @@ Quick Start Guide:
 1. Paste it in your IDE with the AI Assistant
 1. Customize the prompt for your specific use case.
 
+>caution Always double-check the code and solutions proposed by an AI-powered tool before applying them to your project.
+
 ## Report Viewer Prompts
 
-### Blazor Report Viewers
+#### Blazor Report Viewers
 
 <table>
 	<tr>
@@ -100,7 +112,7 @@ Quick Start Guide:
 	</tr> 	
 </table>
 
-### Angular Report Viewers
+#### Angular Report Viewers
 
 <table>
 	<tr>
@@ -169,7 +181,7 @@ Quick Start Guide:
 	</tr> 	
 </table>
 
-### HTML5 & React Report Viewers
+#### HTML5 & React Report Viewers
 
 <table>
 	<tr>
@@ -248,21 +260,21 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Core projects that targets .NET 9?..
+#telerik_reporting_assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Core projects that targets .NET 9?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Framework projects that targets .NET Framework 4.8?.
+#telerik_reporting_assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Framework projects that targets .NET Framework 4.8?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant I want to email the report as an email attachment, how do I do that? Explain it step-by-step..
+#telerik_reporting_assistant I want to email the report as an email attachment, how do I do that? Explain it step-by-step.
 			</code></pre>
 		</td>
 	</tr>
@@ -280,6 +292,13 @@ Quick Start Guide:
 			</code></pre>
 		</td>
 	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik_reporting_assistant Can I use a database as a storage for my report files in the Reporting REST service? Show me an example.
+			</code></pre>
+		</td>
+	</tr>
 </table>
 
 
@@ -288,3 +307,5 @@ Quick Start Guide:
 * [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
 * [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
 * [Telerik Reporting Copilot Extension]({%slug ai-copilot-extension%})
+* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
+* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

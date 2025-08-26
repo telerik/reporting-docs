@@ -43,7 +43,7 @@ Use these settings when configuring the server in your MCP client:
 | Type | `stdio` (standard input/output transport) |
 | Command | `npx` |
 | Arguments | `-y` |
-| Server Name | `telerik-reporting-assistant` (customizable) |
+| Server Name | `telerik_reporting_assistant` (customizable) |
 
 ### License Configuration
 
@@ -118,7 +118,7 @@ The basic setup in Visual Studio Code follows these steps:
 	````json
 {
 		"servers": {
-			"telerik-reporting-assistant": {
+			"telerik_reporting_assistant": {
 			"type": "stdio",
 			"command": "npx",
 			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
@@ -133,7 +133,7 @@ The basic setup in Visual Studio Code follows these steps:
 ````
 
 
-	This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
+	This enables you to call the MCP Server with the `#telerik_reporting_assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 
 3. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
@@ -171,7 +171,7 @@ Create `.cursor/mcp.json` in your workspace root (or user folder for global setu
 }
 ````
 
-This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
+This enables you to call the MCP Server with the `#telerik_reporting_assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 
 
 ## Usage
@@ -182,12 +182,12 @@ To use the Telerik Reporting MCP Server:
 
 1. Choose your preferred mode and model.<br/>At the time of publishing, **Claude Sonnet 4** and **GPT-5** produce optimal results.
 
-2. Start your prompt with `#telerik-reporting-assistant` (or with '#' followed by your [custom MCP server name](#configuration), if set):
+2. Start your prompt with `#telerik_reporting_assistant` (or with '#' followed by your [custom MCP server name](#configuration), if set):
 
 3. Inspect the output and verify that the MCP server is used. Look for messages similar to the ones below:
 
 	- Visual Studio: `Running telerikReportingAssistant`
-	- Visual Studio Code: `Running telerik-reporting-assistant`
+	- Visual Studio Code: `Running telerik_reporting_assistant`
 	- Cursor: `Calling MCP tool telerikReportingAssistant`
 
 4. If the Telerik Reporting MCP server is not used even though it's installed and enabled, double-check the server name in your configuration and try rephrasing your prompt.
@@ -226,8 +226,8 @@ If the Reporting Area cannot be determined automatically, the MCP Server will di
 
 The following examples demonstrate useful prompts for the Telerik Reporting MCP Server:
 
-* "`#telerik-reporting-assistant` Add a Telerik Report Viewer to my native Angular application."
-* "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
+* "`#telerik_reporting_assistant` Add a Telerik Report Viewer to my native Angular application."
+* "`#telerik_reporting_assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
 >tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
 

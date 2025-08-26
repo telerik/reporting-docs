@@ -229,7 +229,7 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 * "`#telerik_reporting_assistant` Add a Telerik Report Viewer to my native Angular application."
 * "`#telerik_reporting_assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
->tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
+>tip Visit the [Telerik Reporting Prompt Library]({%slug ai-prompt-library%) for more sample prompts.
 
 ## Usage Limits
 
@@ -251,4 +251,4 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 * [AI Coding Assistant Overview]({%slug ai-coding-assistant%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
 * [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server)
-* [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server) article.
+* [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server)

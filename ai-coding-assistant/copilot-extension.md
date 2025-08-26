@@ -1,11 +1,11 @@
 ---
-title: Reporting Copilot Extension
+title: Copilot Extension
 page_title: Telerik Reporting Copilot Extension
 description: "Learn how to add and use the Telerik Reporting GitHub Copilot Extension as a Telerik Reporting AI coding assistant and code generator for increased developer productivity."
 slug: ai-copilot-extension
 tags: ai, reporting, coding, assistant, getting, started, extension, copilot
 published: True
-position: 1
+position: 2
 ---
 
 
@@ -15,14 +15,13 @@ The Telerik Reporting [GitHub Copilot](https://github.com/features/copilot) exte
 
 It enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about integrating Telerik Reporting into web applications, request specific implementations, and receive comprehensive code solutions.
 
-
 ## Prerequisites for the GitHub Copilot Extension
 
 In addition to the [prerequisites for the AI Coding Assistant]({%slug ai-coding-assistant%}#prerequisites-for-the-ai-coding-assistant), before using the Telerik Reporting GitHub Copilot extension, ensure you have:
 
 * An active [GitHub Copilot](https://github.com/features/copilot) subscription. You can enable or configure GitHub Copilot on the [Copilot Settings page in your GitHub account](https://github.com/settings/copilot).
 * A [Telerik user account](https://www.telerik.com/account/).
-* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
+* An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
 * An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
 * (Recommended) The latest version of your [Copilot-enabled app](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions#supported-clients-and-ides) (for example, Visual Studio or Visual Studio Code).
 
@@ -65,7 +64,7 @@ To use the Telerik Reporting Copilot extension:
 1. Grant permission to the Telerik Reporting extension to read your workspace files when prompted.
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.
 
->caption Using the Copilot Extension along with the MCP Server>
+>caption Using the Copilot Extension along with the MCP Server
 If you have both the extension and the [MCP Server]({%slug ai-mcp-server%}) installed, you can use the `#telerik_reporting_assistant` handle. The handle works in both **Ask** and **Agent** modes and triggers responses from the MCP Server instead of the extension.
 
 ### Sample Prompts
@@ -81,20 +80,11 @@ The following examples demonstrate useful prompts for the Telerik Reporting exte
 
 A Telerik [Subscription license](https://www.telerik.com/purchase.aspx?filter=web) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a [limited number of requests per year]({%slug ai-coding-assistant%}#number-of-requests).
 
-## Troubleshooting
-
-If you encounter issues:
-
-* Ensure the `@telerikreporting` mention is properly highlighted in your prompt.
-* Verify that you have an active GitHub Copilot subscription.
-* Restart your IDE after installation.
-* Check that you're in Chat mode, not Edit or Agent mode.
-
 ## See Also 
 
 * [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
 * [GitHub Copilot Tutorials](https://github.com/features/copilot/tutorials)
 * [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
-* For applications using [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) see the [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension) article.
-* For applications using [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) see the [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension) article.
+* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
+* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

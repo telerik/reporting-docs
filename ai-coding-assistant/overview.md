@@ -10,14 +10,15 @@ position: 0
 
 # Telerik Reporting AI Coding Assistant
 
-Telerik Reporting offers an **AI Coding Assistant**, which leverages AI to enhance productivity, reduce guesswork, and ensure compliance with security standards when building web applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
+Telerik Reporting offers an **AI Coding Assistant** that leverages AI to enhance developer experience and boost productivity when building web applications with [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}) integration.
 
+The AI Coding Assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
 
 The **AI Coding Assistant** is integrated in:
 
-* [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}) - A Copilot add-on for fast initial code generation, widget configuration, and detailed explanations within Copilot-enabled IDEs.
-
 * [Telerik Reporting MCP server]({%slug ai-mcp-server%}) - A powerful tool for running complex or multi-step prompts that integrates with any MCP-enabled client.
+
+* [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}) - A Copilot add-on for fast initial code generation, widget configuration, and detailed explanations within Copilot-enabled IDEs.
 
 You can combine both integrations for even more powerful results.
 
@@ -49,22 +50,38 @@ Consider the following recommendations when working with the AI Coding Assistant
 * When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
 * At the time of publishing, Claude Sonnet 4 and GPT-5 produce optimal results.
 
+## Support
+
+#### Report Viewers
+
+- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
+- [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
+- [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
+- [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%})
+- [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
+
+#### Services
+
+- [Telerik Reporting REST Service - ASP.NET Core Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
+- [Telerik Reporting REST Service - ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%})
+
 ## Usage Limits
 
 Access to the AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
 
-### Subscription License
+#### Subscription License
 
 * A Subscription is the primary license that grants full access to the AI Coding Assistant.
 * Includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day.
 * Best for ongoing and high-volume usage.
 
-### Perpetual License (Limited Access)
+#### Perpetual License (Limited Access)
 * Perpetual licenses include limited access of 50 requests per year.
 * Intended for exploring and trying out the AI Coding Assistant.
 * For continued or higher-volume access, upgrade to a Subscription license.
 
-### Trial License
+#### Trial License
 * Trial licenses include 300 requests per trial per year.
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
@@ -85,7 +102,15 @@ Please make sure you are familiar with the terms and privacy policy of your sele
  
 ## Next Steps
 
-* Install the [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}).
-* Configure the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client.
+* [Install the  Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
+* [Configure the Telerik Reporting MCP Server]({%slug ai-mcp-server%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
-* 
+ 
+## See Also
+
+* [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+* [GitHub Copilot Tutorials](https://github.com/features/copilot/tutorials)
+* [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
+* [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
+* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
+* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

@@ -176,6 +176,8 @@ This enables you to call the MCP Server with the `#telerik-reporting-assistant` 
 
 ## Usage
 
+> When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
+ 
 To use the Telerik Reporting MCP Server:
 
 1. Choose your preferred mode and model.<br/>At the time of publishing, **Claude Sonnet 4** and **GPT-5** produce optimal results.
@@ -229,11 +231,11 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 
 >tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
 
-## Number of Requests
+## Usage Limits
 
 A Telerik [Subscription license](https://www.telerik.com/purchase.aspx?filter=web) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a [limited number of requests per year]({%slug ai-coding-assistant%}#number-of-requests).
 
-## Local AI Model Integration
+## Connect to Local AI Model
 
 You can use the Telerik Reporting MCP server with local large language models (LLMs):
 

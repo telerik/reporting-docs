@@ -25,7 +25,10 @@ This extension enhances GitHub Copilot with proprietary context about Telerik Re
 In addition to the [prerequisites for the AI Coding Assistant]({%slug ai-coding-assistant%}#prerequisites-for-the-ai-coding-assistant), before using the Telerik Reporting GitHub Copilot extension, ensure you have:
 
 * An active [GitHub Copilot](https://github.com/features/copilot) subscription. You can enable or configure GitHub Copilot on the [Copilot Settings page in your GitHub account](https://github.com/settings/copilot).
-* The latest version of your [Copilot-enabled app](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions#supported-clients-and-ides) (for example, Visual Studio or Visual Studio Code).
+* A [Telerik user account](https://www.telerik.com/account/).
+* An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
+* An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
+* (Recommended) The latest version of your [Copilot-enabled app](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions#supported-clients-and-ides) (for example, Visual Studio or Visual Studio Code).
 
 ## Installation
 
@@ -48,6 +51,8 @@ Follow these steps to install and configure the Telerik Reporting Copilot extens
 
 ## Usage
 
+> When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
+
 To use the Telerik Reporting Copilot extension:
 
 1. Choose your preferred mode and model.<br/>At the time of publishing, **Claude Sonnet 4** and **GPT-5** produce optimal results.
@@ -65,7 +70,7 @@ To use the Telerik Reporting Copilot extension:
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.
 
 >caption Using the Copilot Extension along with the MCP Server>
-If you have both the extension and the [MCP Server](slug:ai-mcp-server) installed, you can use the `#telerik-reporting-assistant` handle. The handle works in both **Ask** and **Agent** modes and triggers responses from the MCP Server instead of the extension.
+If you have both the extension and the [MCP Server]({%slug ai-mcp-server%}) installed, you can use the `#telerik-reporting-assistant` handle. The handle works in both **Ask** and **Agent** modes and triggers responses from the MCP Server instead of the extension.
 
 ### Sample Prompts
 
@@ -74,9 +79,9 @@ The following examples demonstrate useful prompts for the Telerik Reporting exte
 * "`@telerikreporting` Add a Telerik Report Viewer to my native Angular application."
 * "`@telerikreporting` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
->tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
+>tip Visit the [Telerik Reporting Prompt Library]({%slug ai-prompt-library%}) for more sample prompts.
 
-## Number of Requests
+## Usage Limits
 
 A Telerik [Subscription license](https://www.telerik.com/purchase.aspx?filter=web) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a [limited number of requests per year]({%slug ai-coding-assistant%}#number-of-requests).
 

@@ -49,13 +49,25 @@ Consider the following recommendations when working with the AI Coding Assistant
 * When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
 * At the time of publishing, Claude Sonnet 4 and GPT-5 produce optimal results.
 
-## Number of Requests
+## Usage Limits
 
-The Reporting AI Coding Assistant allows the following maximum number of requests depending on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
+Access to the AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
 
-* Perpetual licenses—Includes 50 requests per year to let you explore and try out the AI Coding Assistant. If you’d like ongoing, higher-volume access, you’ll need to switch to a subscription license.
-* Subscription licenses—Virtually unlimited number of requests with a fair use threshold of 300 requests per day.
-* Trial licenses—300 requests per trial per year. Activating the same trial for a new release does not grant additional 300 requests.
+### Subscription License
+
+* A Subscription is the primary license that grants full access to the AI Coding Assistant.
+* Includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day.
+* Best for ongoing and high-volume usage.
+
+### Perpetual License (Limited Access)
+* Perpetual licenses include limited access of 50 requests per year.
+* Intended for exploring and trying out the AI Coding Assistant.
+* For continued or higher-volume access, upgrade to a Subscription license.
+
+### Trial License
+* Trial licenses include 300 requests per trial per year.
+* Reactivating the same trial for a new release does not grant additional requests.
+* Designed for evaluating the feature before purchasing.
 
 > All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik Copilot extension]({%slug ai-copilot-extension%}) and [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
 
@@ -63,17 +75,11 @@ The Reporting AI Coding Assistant allows the following maximum number of request
 
 The Telerik Reporting AI Coding Assistant operates under the following conditions:
 
-### Data Access:
-
-* The Assistant has no access to your workspace and application code.
-* Exception: when using the Telerik MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
-
-### Data Usage:
-* Your prompts are not used to train Telerik AI models.
-* The Assistant does not generate or alter the responses returned by the selected LLM. 
-* The Assistant enhances the context that helps your selected LLM (for example, GPT, Gemini, Claude) generate more relevant and accurate responses.
-* Your prompts are not associated with your Telerik user account. They are anonymized and stored only for statistical analysis and troubleshooting purposes.
-* The Assistant stores metrics about how often and how much you use it in order to ensure compliance with the allowed number of requests that correspond to your current license.
+* The Assistant has no access to your workspace and application code. Note that when using the Telerik Reporting MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
+* The Assistant does not use your prompts train Telerik AI models.
+* The Assistant does not generate the actual responses and has no access to them. The Assistant only enhances the context that helps your selected LLM (for example, GPT, Gemini, Claude) generate more relevant and accurate responses.
+* The Assistant does not associate your prompts with your Telerik user account. Your prompts and generated context are anonymized and stored only for statistical analysis and troubleshooting purposes.
+* The Assistant stores metrics about how often and how much you use it in order to ensure compliance with the [allowed number of requests that correspond to your current license](#usage-limits).
 
 Please make sure you are familiar with the terms and privacy policy of your selected AI model and AI client.
  

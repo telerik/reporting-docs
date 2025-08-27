@@ -18,9 +18,9 @@ The AI-powered insights during report preview provide comprehensive capabilities
 
 ## Feature Concept
 
-To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing an **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
+To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing an **AI Prompt** that integrates seamlessly with our web-based report viewers and the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) (supported only when the viewer is connected to a remote Telerik Reporting REST Service). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
 
->note The **AI Prompt** functionality will be made available for the other [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) as well, in the releases to come. 
+>note The **AI Prompt** functionality will be made available for the other [report viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) as well, in the releases to come. 
 
 ### Key Features:
 
@@ -32,19 +32,19 @@ To bring the power of Generative AI (GenAI) into reporting workflows, we are int
   Alternatively, you may disable the feature by setting the _AIClient allowRAG_ attribute to _false_.
   
 - **Predefined Summary Prompts**  
-  Users can choose from a set of **predefined prompts** tailored for common tasks like summarization, explanation, and data insights—boosting efficiency with minimal effort.
+  Users can choose from a set of predefined prompts tailored for common tasks like summarization, explanation, and data insights—boosting efficiency with minimal effort.
 
 - **Custom AI Prompts**
   Besides the predefined prompts, you can choose to allow custom prompts to be made by the end-users of the application.
 
 - **End-User Consent for Data Sharing**  
-  To ensure transparency and compliance, the **AI Prompt** will **request explicit consent** from users before sharing any data with GenAI services.
+  To ensure transparency and compliance, the AI Prompt requests explicit consent from users before sharing any data with GenAI services.
 
 <img src="images/AskAIPrompt-updated.png" style="border: 1px solid lightgray" alt="Image of the Prompt UI" />
 
 ## User Consent for AI-Powered Insights
 
-Before using the AI Prompt Dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
+Before using the AI Prompt dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
 
 <img src="images/UserConsentForAI-updated.png" style="border: 1px solid lightgray" alt="User Consent for AI Summaries" />
 

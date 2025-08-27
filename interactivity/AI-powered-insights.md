@@ -42,13 +42,13 @@ The feature is supported by all [web report viewers]({%slug telerikreporting/usi
 - **End-User Consent for Data Sharing**  
   To ensure transparency and compliance, the AI Prompt requests explicit consent from users before sharing any data with GenAI services.
 
-<img src="images/AskAIPrompt-updated.png" style="border: 1px solid lightgray" alt="Image of the Prompt UI" />
+<img src="images/predefined-prompts.png" style="border: 1px solid lightgray; width: 500px" alt="Image of the Prompt UI" />
 
 ## User Consent
 
 Before using the AI Prompt dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
 
-<img src="images/UserConsentForAI-updated.png" style="border: 1px solid lightgray" alt="User Consent for AI Summaries" />
+<img src="images/user-consent.png" style="border: 1px solid lightgray; width: 500px" alt="User Consent for AI Summaries" />
 
 ## Configuration
 
@@ -124,8 +124,8 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
          requireConsent="false"
          allowCustomPrompts="false">
          <predefinedPrompts>
-             <add text="Prompt 1" />
-             <add text="Prompt 2" />
+             <add text="Generate a summary of the report." />
+             <add text="Translate the report into German." />
          </predefinedPrompts>
      </AIClient>
  </Telerik.Reporting>

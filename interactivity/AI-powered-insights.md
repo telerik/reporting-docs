@@ -12,11 +12,13 @@ position: 1
 
 The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
 
+>tip For a working example of this functionality, check the [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights).
+
 ![The UI of the AI system after configuration.](images/UIOfTheAI.png)
 
 ## Feature Concept
 
-To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing a **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
+To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing an **AI Prompt** that integrates seamlessly with our [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}). This feature is designed to enhance productivity and user experience by enabling intelligent interactions with report content.
 
 >note The **AI Prompt** functionality will be made available for the other [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) as well, in the releases to come. 
 
@@ -38,22 +40,17 @@ To bring the power of Generative AI (GenAI) into reporting workflows, we are int
 - **End-User Consent for Data Sharing**  
   To ensure transparency and compliance, the **AI Prompt** will **request explicit consent** from users before sharing any data with GenAI services.
 
-- **Flexible Context Selection**  
-  Users can define the scope of the prompt by selecting:
-  
-  * The **entire document**
-  * A **specific page**
-  * A **range of pages**
-
 <img src="images/AskAIPrompt-updated.png" style="border: 1px solid lightgray" alt="Image of the Prompt UI" />
 
-## User Consent for AI Summaries
+## User Consent for AI-Powered Insights
 
 Before using the AI Prompt Dialog, users must give consent for the AI to process their provided text. This ensures transparency and user control over their data.
 
 <img src="images/UserConsentForAI-updated.png" style="border: 1px solid lightgray" alt="User Consent for AI Summaries" />
 
-## Configure the AI
+## Configuration
+
+To enable the AI-powered insights functionality, you must provide a valid configuration that defines the AI client, model, and other essential details such as authentication credentials. This configuration also allows you to customize various aspects of the AI functionality, including user consent requirements, custom prompt permissions, and Retrieval-Augmented Generation (RAG) settings. The AI configuration is managed through the [report engine configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}). For a complete list of available settings, check the table below. For an example configuration, refer to [Example Configuration](#example-configuration).
 
 | Setting | Description |
 | ------ | ------ |
@@ -65,7 +62,7 @@ Before using the AI Prompt Dialog, users must give consent for the AI to process
 |allowCustomPrompts|This setting is set to true by default. If you set it to `false`, users will only be able to use the predefined prompts and will not be allowed to ask custom prompts.|
 |predefinedPrompts|This setting specifies a list of predefined prompts that the AI client can use. Each prompt is defined by a text attribute, which contains the prompt's content.|
 |allowRAG|This setting specifies whether the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) is allowed. The default value is _true_. Available only on projects targeting .NET and .NET Standard.|
-|ragSettings|These settings specify the configuration of the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) when allowed by the _allowRAG_ setting. Available only on projects targeting .NET and .NET Standard.|
+|ragSettings|These settings specify the configuration of the [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) when allowed by the _allowRAG_ setting. Available only on projects targeting .NET8 or higher.|
 
 __AI clients__
 
@@ -84,6 +81,8 @@ Depending on which option will be used, a corresponding `Telerik.Reporting.Teler
 - `Telerik.Reporting.AI.Microsoft.Extensions.AzureOpenAI`
 - `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`
 - `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI`
+
+### Example Configuration
 
 Below is an example of how to configure the project for the `AzureOpenAI` option.
 
@@ -152,6 +151,6 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 
 ## See Also
 
-* [Overview of the AI Interactivity]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/ai-interactivity%})
+* [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)
 * [AIClient Element Overview]({%slug telerikreporting/aiclient-element%})
 * [Interface IClient](https://docs.telerik.com/reporting/api/telerik.reporting.ai.iclient)

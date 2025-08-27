@@ -47,7 +47,7 @@ export function ReportViewer() {
 		const [language, setLanguage] = useState(navigator.language);
 		
 		useEffect(() => {
-			if (viewerRef) {
+			if (viewerRef.current) {
 			const { viewerObject } = viewerRef.current;
 			switch (language) {
 					case "ja":

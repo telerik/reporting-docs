@@ -36,8 +36,8 @@ The feature is supported by all [web report viewers]({%slug telerikreporting/usi
 - **Predefined Summary Prompts**  
   Users can choose from a set of predefined prompts tailored for common tasks like summarization, explanation, and data insights—boosting efficiency with minimal effort.
 
-- **Custom AI Prompts**
-  Besides the predefined prompts, you can choose to allow custom prompts to be made by the end-users of the application.
+- **Custom AI Prompts**  
+  Besides the predefined prompts, users can create and use custom prompts through the UI.
 
 - **End-User Consent for Data Sharing**  
   To ensure transparency and compliance, the AI Prompt requests explicit consent from users before sharing any data with GenAI services.

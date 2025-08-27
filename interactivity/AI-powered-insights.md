@@ -50,7 +50,7 @@ Before using the AI Prompt dialog, users must give consent for the AI to process
 
 ## Configuration
 
-To enable the AI-powered insights functionality, you must provide a valid configuration that defines the AI client, model, and other essential details such as authentication credentials. This configuration also allows you to customize various aspects of the AI functionality, including user consent requirements, custom prompt permissions, and Retrieval-Augmented Generation (RAG) settings. The AI configuration is managed through the [report engine configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}). For a complete list of available settings, check the table below. For an example configuration, check the [Example](#example-configuration) section.
+To enable the AI-powered insights functionality, you must provide a valid configuration that defines the AI client, model, and other essential details such as authentication credentials. This configuration also allows you to customize various aspects of the AI functionality, including user consent requirements, custom prompt permissions, and Retrieval-Augmented Generation (RAG) settings. The AI configuration is managed through the [report engine configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}). For a complete list of available settings, check the table below. For an example configuration, check the [Example](#example) section.
 
 | Setting | Description |
 | ------ | ------ |

@@ -48,7 +48,7 @@ This happens because the `RollForward` property is set to **Major**, and the fra
 
 Start SRD.NET while setting the `RollForward` option to **LatestMajor** from the command prompt:
 
-`"C:\Program Files (x86)\Progress\Telerik Reporting {Release}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe" --roll-forward LatestMajor`
+`"C:\Program Files (x86)\Progress\Telerik Reporting {Release}\Report Designer\.NET\Telerik.ReportDesigner.Net.exe" --roll-forward LatestMajor`
 
 As explained in the ["Values" section of the aforementioned Microsoft documentation article](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#values), the **LatestMajor** option will enforce the use of the latest .NET runtime, even if the targeted .NET 8 runtime is available.
 

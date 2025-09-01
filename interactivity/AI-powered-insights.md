@@ -27,7 +27,7 @@ The feature is supported by all [web report viewers]({%slug telerikreporting/usi
 ### Key Features:
 
 - **Retrieval-Augmented Generation (RAG)**  
-  When enabled, the option helps produce more accurate, up-to-date, and relevant responses by referencing authoritative knowledge bases outside of the training data sources. By default, the feature is enabled.
+  When enabled, the option helps produce more accurate and relevant responses by referencing authoritative knowledge bases outside of the training data sources. By default, the feature is enabled.
 
   When enabled, you may configure the RAG through the [AIClient ragSettings element]({%slug telerikreporting/aiclient-element%}##attributes-and-elements).
 

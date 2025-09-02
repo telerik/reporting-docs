@@ -3,6 +3,7 @@ title: Overview
 page_title: HTML5 Report Viewer at a Glance
 description: "HTML5 Report Viewer is an HTML5/JavaScript/CSS3 jQuery-based widget that displays Telerik reports in an HTML page."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview
+reporting_area: HTML5
 tags: overview
 published: True
 position: 0

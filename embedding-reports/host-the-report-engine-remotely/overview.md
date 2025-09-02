@@ -3,6 +3,7 @@ title: Overview
 page_title: Telerik Reporting REST Services Explained Briefly
 description: "Learn the basics about the Telerik Reporting REST Services, including what it is, how it works and how to configure it."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview
+reporting_area: RESTService, RESTServiceCore
 tags: overview,rest,service,configure,reporting,basics
 published: True
 position: 0

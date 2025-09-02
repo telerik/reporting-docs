@@ -23,9 +23,9 @@ table th:nth-of-type(2) {
 
 # Components Overview
 
-Each report is constructed from [report items]({%slug user-guide/components/report-items%}). All report items that you can add to your report design are organized in different groups (categories) in the **Components** tab.
+Each report is constructed from [report items]({%slug user-guide/components/report-items%}). All report items that you can add to your report are organized in different groups (categories) in the **Components** tab.
 
-The Components tab lists the available report components that you can add to your report design. The items are organized in groups based on their type and functionality. The tab supports two layout modes&mdash;grid and list. The list view is the default mode.
+The **Components** tab lists the available report components that you can add to your report design. The items are organized in groups based on their type and functionality. The tab supports two layout modes&mdash;grid and list. The list view is the default mode.
 
 ## How to Use Components
 

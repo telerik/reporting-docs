@@ -65,7 +65,7 @@ The **Location Provider** matches the addresses or locations with geographical c
 |Azure| The AzureLocationProvider uses the [Azure Maps Get Geocoding Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.|
 |Bing (Deprecated)|The BingLocationProvider uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
 |MapQuestOpenAPI (Obsolete)|The MapQuestOpenAPILocationProvider uses the MapQuest Geocoding Open API geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
-|MapQuest  (Obsolete) |The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
+|MapQuest |The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
 
 >caution Microsoft has announced the deprecation of Bing Maps for Enterprise:
 > * `Free (Basic)` accounts can use Bing Maps services until June 30, 2025.

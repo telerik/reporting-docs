@@ -24,7 +24,7 @@ position: 3
 
 The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or the [MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
 
-You can use the provided prompts as they are or modify them to fit your use case. Make sure to start your prompt with the required prefix (`@telerikreporting` for the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or `#telerik_reporting_assistant ` for the [MCP Server]({%slug ai-mcp-server%}) handle).
+You can use the provided prompts as they are or modify them to fit your use case. Make sure to start your prompt with the required prefix (`@telerikreporting` for the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or `#telerik-reporting-assistant ` for the [MCP Server]({%slug ai-mcp-server%}) handle).
 
 You can also use the prompts with any AI-powered tool of your choice. However, the Telerik Reporting AI Coding Assistant is developed to provide highly accurate results based extensively on the documentation, APIs, and community knowledge for Telerik Reporting. Running the prompts outside the AI Coding Assistant may not produce as relevant results.
 
@@ -53,60 +53,60 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to connect the Blazor Report Viewer to a Telerik Report Server?
+#telerik-reporting-assistant How to connect the Blazor Report Viewer to a Telerik Report Server?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to change the displayed report on a button click in the Native Blazor Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to pass a bearer token through the Blazor Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to change the culture of the rendered report in the Native Blazor Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to to show ComboBox editors for the report parameters in the Blazor Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to change the date format in the displayed report in the Native Blazor Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to change the displayed report on a button click in the Blazor Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to connect the Native Blazor Report Viewer to a Telerik Report Server?
+#telerik-reporting-assistant How to change the displayed report on a button click in the Native Blazor Report Viewer?
 			</code></pre>
 		</td>
 	</tr> 
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to move the parameters area inside the Blazor Report Viewer to be on the left side instead of the right?
+#telerik-reporting-assistant How to pass a bearer token through the Blazor Report Viewer?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to hide the export button in the Native Blazor Report Viewer's toolbar?
+#telerik-reporting-assistant How to change the culture of the rendered report in the Native Blazor Report Viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to to show ComboBox editors for the report parameters in the Blazor Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the date format in the displayed report in the Native Blazor Report Viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the displayed report on a button click in the Blazor Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to connect the Native Blazor Report Viewer to a Telerik Report Server?
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to move the parameters area inside the Blazor Report Viewer to be on the left side instead of the right?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to hide the export button in the Native Blazor Report Viewer's toolbar?
 			</code></pre>
 		</td>
 	</tr> 	
@@ -122,60 +122,60 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to connect the Angular Report Viewer to a Telerik Report Server?
+#telerik-reporting-assistant How to connect the Angular Report Viewer to a Telerik Report Server?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to use dropdown for the the report parameters of the Native Angular Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to pass a bearer token through the Angular Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to hide the export button from the Native Angular Report Viewer's toolbar?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to to show DateTimePicker editors for report parameters of type DateTime in the Angular Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to print the report from the Native Angular Report Viewer using client-side code?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to change the displayed report on a button click in the Angular Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to display a custom indicator in the UI when an error is encountered in the Native Angular Report Viewer?
+#telerik-reporting-assistant How to use dropdown for the the report parameters of the Native Angular Report Viewer?
 			</code></pre>
 		</td>
 	</tr> 
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to move the parameters area inside the Angular Report Viewer to be on the left side instead of the right?
+#telerik-reporting-assistant How to pass a bearer token through the Angular Report Viewer?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to set the reportSource of the Native Angular Report Viewer?
+#telerik-reporting-assistant How to hide the export button from the Native Angular Report Viewer's toolbar?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to to show DateTimePicker editors for report parameters of type DateTime in the Angular Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to print the report from the Native Angular Report Viewer using client-side code?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the displayed report on a button click in the Angular Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to display a custom indicator in the UI when an error is encountered in the Native Angular Report Viewer?
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to move the parameters area inside the Angular Report Viewer to be on the left side instead of the right?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to set the reportSource of the Native Angular Report Viewer?
 			</code></pre>
 		</td>
 	</tr> 	
@@ -191,60 +191,60 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to connect the HTML5 Report Viewer to a Telerik Report Server?
+#telerik-reporting-assistant How to connect the HTML5 Report Viewer to a Telerik Report Server?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to change the displayed report on a button click in the React Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to pass a bearer token through the HTML5 Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to add a custom indicator in the UI when an error is encountered in the React Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to to show ComboBox editors for the report parameters in the HTML5 Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to connect the React Report Viewer to a Telerik Report Server?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to change the displayed report on a button click in the HTML5 Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
-#telerik_reporting_assistant How to show ComboBox editors for report parameters in the React Report Viewer?
+#telerik-reporting-assistant How to change the displayed report on a button click in the React Report Viewer?
 			</code></pre>
 		</td>
 	</tr> 
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How to move the parameters area inside the HTML5 Report Viewer to be on the left side instead of the right?
+#telerik-reporting-assistant How to pass a bearer token through the HTML5 Report Viewer?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik_reporting_assistant The document map panel is missing in the React Report Viewer, how to display it?
+#telerik-reporting-assistant How to add a custom indicator in the UI when an error is encountered in the React Report Viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to to show ComboBox editors for the report parameters in the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to connect the React Report Viewer to a Telerik Report Server?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the displayed report on a button click in the HTML5 Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to show ComboBox editors for report parameters in the React Report Viewer?
+			</code></pre>
+		</td>
+	</tr> 
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to move the parameters area inside the HTML5 Report Viewer to be on the left side instead of the right?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant The document map panel is missing in the React Report Viewer, how to display it?
 			</code></pre>
 		</td>
 	</tr> 	
@@ -260,42 +260,42 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Core projects that targets .NET 9?
+#telerik-reporting-assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Core projects that targets .NET 9?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Framework projects that targets .NET Framework 4.8?
+#telerik-reporting-assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Framework projects that targets .NET Framework 4.8?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant I want to email the report as an email attachment, how do I do that? Explain it step-by-step.
+#telerik-reporting-assistant I want to email the report as an email attachment, how do I do that? Explain it step-by-step.
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant Can I pass a List object from my Web API controller directly to a report’s DataSource? Explain how and give me an example.
+#telerik-reporting-assistant Can I pass a List object from my Web API controller directly to a report’s DataSource? Explain how and give me an example.
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant In production, the report viewer displays `Client with ID 'xxxxxx' not found. Expired `. In local environment, it loads the reports as expected. How could I resolve this?
+#telerik-reporting-assistant In production, the report viewer displays `Client with ID 'xxxxxx' not found. Expired `. In local environment, it loads the reports as expected. How could I resolve this?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik_reporting_assistant Can I use a database as a storage for my report files in the Reporting REST service? Show me an example.
+#telerik-reporting-assistant Can I use a database as a storage for my report files in the Reporting REST service? Show me an example.
 			</code></pre>
 		</td>
 	</tr>

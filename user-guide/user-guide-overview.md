@@ -31,13 +31,13 @@ The Web Report Designer is a tool developed to let business application users de
 
 ![UI Overview of the Telerik Web Report Designer](./images/wrd-components-callouts.png)
 
-1. Main menu — allows you to open or close reports, create new ones, access designer assets, adjust workspace preferences, and more.
-1. Components tab — provides access to all components that you can include in you report, for example, text boxes, tables, charts, sections and others.
-1. Currently opened report — lets you to switch between the opened reports.
-1. Explorer tab — represents the structure of the currently opened report.
-2. Search box — allows for quickly accessing the report components and modifying their properties.
-3. Design surface — represents the layout of the report where you can visually arrange the report components.
-4. Properties area — provides access to the properties of the currently selected report component.
+1. Main menu—allows you to open or close reports, create new ones, access designer assets, adjust workspace preferences, and more.
+1. Components tab—provides access to all components that you can include in your report, for example, text boxes, tables, charts, sections, and others.
+1. Currently opened report—lets you switch between the opened reports.
+1. Explorer tab—represents the structure of the currently opened report.
+1. Search box—allows for quickly accessing the report components and modifying their properties.
+1. Design surface—represents the layout of the report where you can visually arrange the report components.
+1. Properties area—provides access to the properties of the currently selected report component.
 
 ## What's in this User Guide?
 

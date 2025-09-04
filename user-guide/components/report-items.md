@@ -74,7 +74,7 @@ To learn more about working with the HtmlTextBox item, see the [HtmlTextBox arti
 
 ## PictureBox
 
-The PictureBox displays images within a report. It is ideal for product images, logos, barcodes, or any visual content in reports. The PictureBox supports various image formats, including Base64-encoded images, SVG, and common raster formats like BMP, GIF, JPEG, PNG, EXIF, and TIFF. It provides flexible data binding and layout options to fit various reporting needs.
+The PictureBox displays images within a report. It is ideal for product images, logos, barcodes, or any visual content in reports. The PictureBox supports various image formats, including Base64-encoded images, SVG, and common raster formats like BMP, GIF, JPEG, PNG, EXIF, and TIFF. It provides flexible data binding and layout options to fit various reporting needs. You can also reference images directly from the Assets Manager.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_HXkVfOO66g?si=9aCvjaz43jLqvMas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -114,7 +114,7 @@ To learn more about working with the Panel item, see the [Panel article in the m
 
 ## Gauge
 
-The Gauge visualizes key performance indicators (KPIs) and progress toward goals. It supports both radial (circular, like speedometers) and linear (horizontal or vertical bars) gauges. You can incorporate the Gauge in dashboards and reports where you need to visualize KPIs, progress, or performance metrics at a glance, such as sales targets, speed, or completion percentages.
+The Gauge visualizes a single value on a scale. It supports both radial (circular, like speedometers) and linear (horizontal or vertical bars) gauges. You can incorporate the Gauge in dashboards and reports where you need to visualize KPIs, progress, or performance metrics at a glance, such as sales targets, speed, or completion percentages.
 
 ### Radial Gauge
 

@@ -37,7 +37,7 @@ Before adding any table component, ensure you have:
 
 * Selected the **Detail section** of your report (required for table placement).
 * Created and configured a [data source]({%slug web-report-designer-user-guide-components-data-sources%}) for your report.
-* Planned your data layout and which fields you want to display.
+* Planned your data layout and identified the fields you want to display.
 
 ## Adding a List
 
@@ -77,7 +77,7 @@ Crosstabs let you display aggregated data summaries with row and column grouping
 1. Bind the Crosstab to your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
 1. Configure the row groups and column groups.
 1. Bind the value of the data cells to the relevant fields in your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
-1. Configure the data aggregation in the designated cells.
+1. Set up aggregation functions (e.g., Sum(), Count()) in the designated data cells.
 
 When you add a Crosstab, it includes a column group area, row group area, and data body:
 
@@ -117,8 +117,8 @@ This video demonstrates using the Crosstab Wizard with SQL data to create a cros
 
 ## Next Steps
 
-* Add [report sections]({%slug user-guide/components/report-sections%}) to organize your report layout
-* Explore other [report components]({%slug web-report-designer-user-guide-components%}) to enhance your reports
+* Add [report sections]({%slug user-guide/components/report-sections%}) to organize your report layout.
+* Explore other [report components]({%slug web-report-designer-user-guide-components%}) to enhance your reports.
 
 ## See Also
 

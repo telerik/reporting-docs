@@ -42,6 +42,8 @@ The Web Report Designer provides two main types of map components:
 * [Map]({%slug web-report-designer-user-guide-components-maps%}#map)&mdash;Displays data in various formats determined by the chosen Map Type: Point, Pie, or Column charts positioned on geographical locations.
 * [Choropleth]({%slug web-report-designer-user-guide-components-maps%}#choropleth)&mdash;A [thematic map](https://en.wikipedia.org/wiki/Choropleth_map) that uses graded color differences to display a measure over predefined regions or areas, making it one of the most popular ways to visualize how a measure varies across a geographic area.
 
+>important Currently, the Web Report Designer allows only **displaying an already created** report (for example, using the Standalone Report Designer) that contains a Choropleth report item and simple fine-tuning. It is not possible to build a Choropleth from scratch in the Web Report Designer.
+
 ## Required Data Sources
 
 Because of its architecture, the Map component requires two types of data sources. When adding a Map component to your report, both data sources must be available:
@@ -65,7 +67,7 @@ The **Location Provider** matches the addresses or locations with geographical c
 |Azure| The AzureLocationProvider uses the [Azure Maps Get Geocoding Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.|
 |Bing (Deprecated)|The BingLocationProvider uses the [Bing Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.|
 |MapQuestOpenAPI (Obsolete)|The MapQuestOpenAPILocationProvider uses the MapQuest Geocoding Open API geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
-|MapQuest  (Obsolete) |The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
+|MapQuest |The MapQuestLocationProvider uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/api/geocoding/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.|
 
 >caution Microsoft has announced the deprecation of Bing Maps for Enterprise:
 > * `Free (Basic)` accounts can use Bing Maps services until June 30, 2025.
@@ -175,8 +177,6 @@ A **Choropleth** map is a thematic map where areas are shaded or colored in prop
 The Choropleth below shows the 100 most populated countries:
 
 ![Choropleth map ><](images/wrd-components-tray-choropleth-map.png)
-
->important Currently, the Web Report Designer allows only **displaying an already created** report (for example, using the Standalone Report Designer) that contains a Choropleth report item and simple fine-tuning. It is not possible to build a Choropleth from scratch in the Web Report Designer.
 
 <!-- If you need to create a report with a Choropleth, download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder. You can use it as a starting point for your own report.  -->
 

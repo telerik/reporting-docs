@@ -33,12 +33,12 @@ You can use Charts to represent:
 
 The Web Report Designer provides the following chart types:
 
-* [Bar Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-bar-chart)—Displays data series as sets of horizontal bars, ideal for comparing amounts or values between different categories
-* [Line Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-line-chart)—Displays series as sets of points connected by lines, perfect for showing trends over continuous periods
-* [Area Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-an-area-chart)—Shows data as filled areas under lines, emphasizing volume and cumulative totals
-* [Column Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-column-chart)—Displays data series as sets of vertical bars that are grouped by category
-* [Pie Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart)—Shows the contribution of fractional parts to a whole, commonly used for proportion comparisons
-* [Doughnut Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart)—Similar to Pie Chart but with an open space in the center, allowing for additional information display
+* [Bar Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-bar-chart)—Displays data series as sets of horizontal bars, ideal for comparing amounts or values between different categories.
+* [Line Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-line-chart)—Displays series as sets of points connected by lines, perfect for showing trends over continuous periods.
+* [Area Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-an-area-chart)—Shows data as filled areas under lines, emphasizing volume and cumulative totals.
+* [Column Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-column-chart)—Displays data series as sets of vertical bars that are grouped by category.
+* [Pie Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart)—Shows the contribution of fractional parts to a whole, commonly used for proportion comparisons.
+* [Doughnut Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart)—Similar to Pie Chart but with an open space in the center, allowing for additional information display.
 
 ## Chart Categories
 
@@ -46,11 +46,11 @@ The Web Report Designer supports two main chart categories:
 
 * **Cartesian Charts** (Bar, Line, Column, Area)—Use the Cartesian coordinate system to plot data points in chart series. The X and Y axes define how each point's coordinates in the plot area are calculated. Cartesian charts provide a mechanism for combining data points that reside in different series but have the same category. The combine mode can be:
 
-  * **Cluster**—Data points in the same category are positioned close together
-  * **Stack**—Data points are plotted on top of each other
-  * **Stack100**—Values of one series are presented as a percentage of the other series
+  * **Cluster**—Data points in the same category are positioned close together.
+  * **Stack**—Data points are plotted on top of each other.
+  * **Stack100**—Values of one series are presented as a percentage of the other series.
 
-* **Pie Charts** (Pie, Doughnut)—Use the Radial coordinate system to plot each point as an arc segment where the arc's length represents the percentage this point's value is from the total sum
+* **Pie Charts** (Pie, Doughnut)—Use the Radial coordinate system to plot each point as an arc segment where the arc's length represents the percentage this point's value is from the total sum.
 
 The following sections demonstrate how to add different chart types and illustrate how CSV data is presented in each chart.
 
@@ -65,25 +65,25 @@ The next sections in this article demonstrate how to add each of the available [
 For this tutorial, use the following sample CSV data to create a CSV Data Source that will be used throughout this article:
 
 ```csv
-Category, Year, Value
-Accessories, 2003,230
+Category,Year,Value
+Accessories,2003,230
 Accessories,2004,340
-Bikes, 2001, 150
-Bikes, 2002, 195
-Bikes, 2003, 340
-Bikes, 2004, 265
-Clothing, 2002, 80
-Clothing, 2003, 120
-Clothing, 2004, 110
-Components, 2001, 230
-Components, 2002, 140
-Components, 2003, 280
-Components, 2004, 310
+Bikes,2001,150
+Bikes,2002,195
+Bikes,2003,340
+Bikes,2004,265
+Clothing,2002,80
+Clothing,2003,120
+Clothing,2004,110
+Components,2001,230
+Components,2002,140
+Components,2003,280
+Components,2004,310
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d34jlpfD94Q?si=jCgcgEMH9y2AQGOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-After adding the data source to you report, continue by adding the desired chart type.
+After adding the data source to your report, continue by adding the desired chart type.
 
 ### Adding a Bar Chart
 

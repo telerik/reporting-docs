@@ -32,6 +32,8 @@ You can add components to your report in two ways:
 * Drag and drop&mdash;Click the report's design surface and drag a component from the Components tab onto the report.
 * Click to add&mdash;Click the desired location in your report, then click the component in the Components tab.
 
+You can edit already added components by clicking the respective report item on the design surface of the report. To edit multiple items simultaneously, select them by holding the `Ctrl` or `Cmd` key. Once the item is selected, you can edit its properties in the pane on the right.
+
 ![Components tray in List Mode ><](images/wrd-components-tray-design-mode.png)
  
 |Group (Category)|Report Items|

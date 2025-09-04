@@ -65,7 +65,7 @@ To use the Telerik Reporting Copilot extension:
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.
 
 >caption Using the Copilot Extension along with the MCP Server
-If you have both the extension and the [MCP Server]({%slug ai-mcp-server%}) installed, you can use the `#telerik_reporting_assistant` handle. The handle works in both **Ask** and **Agent** modes and triggers responses from the MCP Server instead of the extension.
+If you have both the extension and the [MCP Server]({%slug ai-mcp-server%}) installed, you can use the `#telerik-reporting-assistant` handle. The handle works in both **Ask** and **Agent** modes and triggers responses from the MCP Server instead of the extension.
 
 ### Sample Prompts
 

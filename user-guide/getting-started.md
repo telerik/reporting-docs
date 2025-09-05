@@ -68,7 +68,7 @@ Next, design the report by adding a Table report item to display your data.
 
 1. Click the **Preview** button in the top-right corner to see your completed report with a table populated with data from the web service:
 
-    ![Preview Report ><](images/wrd-preview-report.png)
+    ![Preview Report ><](images/wrd-preview-report.png) 
 
 Congratulations! You have successfully created your first report with the Web Report Designer.
 

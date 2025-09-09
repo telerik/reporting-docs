@@ -312,7 +312,7 @@ The workflow of instantiating the AI client and passing a request to it can be c
 	````
 
 
-		````.NET Framework
+		````C#
 	/// <summary>
 	/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 	/// </summary>
@@ -335,7 +335,7 @@ The workflow of instantiating the AI client and passing a request to it can be c
 	````
 
 
-		````.NET Framework
+		````C#
 	/// <summary>
 	/// Examines whether the RAG optimization is applied for the current prompt.
 	/// </summary>

@@ -138,8 +138,8 @@ The workflow of instantiating the AI client and passing a request to it can be c
 
 	* .NET
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Overrides the default <see cref="CreateAIThread(string, string, ClientReportSource)"/>, adding verification depending on the passed <see cref="ClientReportSource"/> parameter.
 	/// </summary>
 	/// <returns></returns>
@@ -158,16 +158,16 @@ The workflow of instantiating the AI client and passing a request to it can be c
 				}
 			);
 		}
-
+	
 		return base.CreateAIThread(clientID, instanceID, reportSource);
 	}
-	````
+````
 
 
 	* .NET Framework
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Overrides the default <see cref="CreateAIThread(string, string, ClientReportSource)"/>, adding verification depending on the passed <see cref="ClientReportSource"/> parameter.
 	/// </summary>
 	/// <returns></returns>
@@ -187,16 +187,16 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		}
 		
 		return base.CreateAIThread(clientID, instanceID, reportSource);
-	}
-	````
+}
+````
 
 
 * [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) - called internally during the execution of the `CreateAIThread()` method. Provides easier access to the predefined prompts, allowing to alter or disable them based on custom logic like the role of the currently logged user, or on the currently previewed report, represented by the property `ClientReportSource`.
 
 	* .NET
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
 	/// </summary>
 	/// <param name="reportSource"></param>
@@ -210,13 +210,13 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		base.UpdateAIPrompts(reportSource, aiThreadInfo);
 	}
-	````
+````
 
 
 	* .NET Framework
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
 	/// </summary>
 	/// <param name="reportSource"></param>
@@ -229,16 +229,16 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		}
 		
 		base.UpdateAIPrompts(reportSource, aiThreadInfo);
-	}
-	````
+}
+````
 
 
 * [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetAIResponse_System_String_System_String_System_String_System_String_Telerik_Reporting_Services_Engine_AIQueryArgs_) - called every time when a prompt is sent to the AI model. Allows for examining or altering the prompt sent from the client, inspecting the state of the RAG optimization, or checking the estimated amount of tokens that the prompt will consume, by implementing a callback function assigned to the [ConfirmationCallback](/api/telerik.reporting.services.engine.aiqueryargs#collapsible-Telerik_Reporting_Services_Engine_AIQueryArgs_ConfirmationCallBack) property. Below, you will find several examples of how to override the `GetAIResponse` method to handle different scenarios.
 
 	* .NET
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Modifies the prompt sent from the client before passing it to the LLM.
 	/// </summary>
 	/// <returns></returns>
@@ -248,11 +248,11 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 	}
-	````
+````
 
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 	/// </summary>
 	/// <returns></returns>
@@ -271,11 +271,11 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 	}
-	````
+````
 
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Examines whether the RAG optimization is applied for the current prompt.
 	/// </summary>
 	/// <returns></returns>
@@ -293,13 +293,13 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 	}
-	````
+````
 
 
 	* .NET Framework
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Modifies the prompt sent from the client before passing it to the LLM.
 	/// </summary>
 	/// <returns></returns>
@@ -309,11 +309,11 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 	}
-	````
+````
 
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 	/// </summary>
 	/// <returns></returns>
@@ -332,11 +332,11 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 	}
-	````
+````
 
 
-		````C#
-	/// <summary>
+	````C#
+/// <summary>
 	/// Examines whether the RAG optimization is applied for the current prompt.
 	/// </summary>
 	/// <returns></returns>
@@ -354,7 +354,8 @@ The workflow of instantiating the AI client and passing a request to it can be c
 		
 		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 	}
-	````
+````
+
 
 ## Extensibility
 
@@ -364,16 +365,16 @@ If necessary, the Reporting engine can use a custom `Telerik.Reporting.AI.IClien
 
 	````C#
 builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
-{
-    HostAppId = "MyApp",
-    AIClientFactory = GetCustomAIClient,
-    // ...
-});
-
-static Telerik.Reporting.AI.IClient GetCustomAIClient()
-{
-    return new MyCustomAIClient(...);
-}
+	{
+		HostAppId = "MyApp",
+		AIClientFactory = GetCustomAIClient,
+		// ...
+	});
+	
+	static Telerik.Reporting.AI.IClient GetCustomAIClient()
+	{
+		return new MyCustomAIClient(...);
+	}
 ````
 
 
@@ -381,25 +382,26 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 
 	````C#
 public class CustomResolverReportsController : ReportsControllerBase
-{
-    static ReportServiceConfiguration configurationInstance;
-
-    static CustomResolverReportsController()
-    {
-        configurationInstance = new ReportServiceConfiguration
-        {
-            HostAppId = "MyApp",
-            AIClientFactory = GetCustomAIClient,
-            // ...
-        };
-    }
-}
-
-static Telerik.Reporting.AI.IClient GetCustomAIClient()
-{
-    return new MyCustomAIClient(...);
-}
+	{
+		static ReportServiceConfiguration configurationInstance;
+	
+		static CustomResolverReportsController()
+		{
+			configurationInstance = new ReportServiceConfiguration
+			{
+				HostAppId = "MyApp",
+				AIClientFactory = GetCustomAIClient,
+				// ...
+			};
+		}
+	}
+	
+	static Telerik.Reporting.AI.IClient GetCustomAIClient()
+	{
+		return new MyCustomAIClient(...);
+	}
 ````
+
 
 ## See Also
 

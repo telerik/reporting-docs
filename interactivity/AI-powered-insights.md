@@ -16,15 +16,15 @@ position: 1
 
 ![The UI of the AI system after configuration.](images/angular-report-viewer-with-ai-insights.png)
 
-## Feature Concept
+## How Does It Work?
 
-To bring the power of Generative AI (GenAI) into reporting workflows, we are introducing an **AI Prompt** dialog that integrates seamlessly in the report viewers. The dialog provides a convenient UI for sending predefined or custom prompts to an AI model, configured in the Reporting REST Service. The prompts and responses returned from the AI model are displayed in the Output panel of the dialog, allowing for easier tracking of the conversation.
+To bring the power of Generative AI (GenAI) into Reporting workflows, we are introducing an **AI Prompt** dialog that integrates seamlessly in the report viewers. The dialog provides a convenient UI for sending predefined or custom prompts to an external AI model, configured in the Reporting REST Service. The prompts and responses returned from the AI model are displayed in the Output panel of the dialog, allowing for easier tracking of the conversation.
 
 The AI conversation maintains context throughout user's interaction with a specific report. All previous questions and responses are preserved and sent to the AI model as context, enabling more coherent and contextually relevant conversations. However, this context is automatically cleared when report parameters are changed or when navigating to a different report, ensuring that each report session starts with a fresh conversation thread.
 
 The feature is supported by all [web report viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and by the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) connected to a remote Reporting REST Service.
 
-### Key Features:
+### Key Features
 
 - **Retrieval-Augmented Generation (RAG)**  
   When enabled, the option activates an algorithm that filters out the irrelevant report data, producing accurate responses with reduced token usage. By default, the feature is enabled.
@@ -134,11 +134,9 @@ Below is an example of how to configure the project for the `AzureOpenAI` option
 ## Customization
 
 The workflow of instantiating the AI client and passing a request to it can be customized by overriding the following methods of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class:
-* [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) - called when the AI Prompt dialog is to be displayed. In this method, the AI client is instantiated either using the settings provided in the application configuration file, or by using the `AIClientFactory` instance provided with the Reporting REST Service Configuration (see [Extensibility]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}#extensibility) below). Providing custom logic in the method allows to control the UI properties of the AI Prompt dialog: changing or disabling the consent message, enabling/disabling custom prompts, etc. This logic can be based on the currently previewed report, represented by the property `ClientReportSource`.
+* [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) - called when the AI Prompt dialog is to be displayed. In this method, the AI client is instantiated either using the settings provided in the application configuration file, or by using the `AIClientFactory` instance provided with the Reporting REST Service Configuration (see [Extensibility]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}#extensibility) below). Providing custom logic in the method allows to control the UI properties of the AI Prompt dialog: changing or disabling the consent message, enabling/disabling custom prompts, etc. This logic can be based on the currently previewed report, represented by the property `ClientReportSource`, as you can see in the below example where the AI insights funtctionality is disabled for a specific report:
 
-	* .NET
-
-	````C#
+	````.NET
 /// <summary>
 	/// Overrides the default <see cref="CreateAIThread(string, string, ClientReportSource)"/>, adding verification depending on the passed <see cref="ClientReportSource"/> parameter.
 	/// </summary>
@@ -158,202 +156,187 @@ The workflow of instantiating the AI client and passing a request to it can be c
 				}
 			);
 		}
-	
+
 		return base.CreateAIThread(clientID, instanceID, reportSource);
 	}
 ````
-
-
-	* .NET Framework
-
-	````C#
+````.NET·Framework
 /// <summary>
-	/// Overrides the default <see cref="CreateAIThread(string, string, ClientReportSource)"/>, adding verification depending on the passed <see cref="ClientReportSource"/> parameter.
-	/// </summary>
-	/// <returns></returns>
-	public override HttpResponseMessage CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
+/// Overrides the default <see cref="CreateAIThread(string, string, ClientReportSource)"/>, adding verification depending on the passed <see cref="ClientReportSource"/> parameter.
+/// </summary>
+/// <returns></returns>
+public override HttpResponseMessage CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
+{
+	if (reportSource.Report == "SampleReport.trdp")
 	{
-		if (reportSource.Report == "SampleReport.trdp")
+		var errorResponse = new
 		{
-			var errorResponse = new
-			{
-				message = "An error has occurred.",
-				exceptionMessage = "AI Insights functionality is not allowed for this report.",
-				exceptionType = "Exception",
-				stackTrace = (string)null
-			};
-		
-			return this.Request.CreateResponse(HttpStatusCode.Forbidden, errorResponse);
-		}
-		
-		return base.CreateAIThread(clientID, instanceID, reportSource);
+			message = "An error has occurred.",
+			exceptionMessage = "AI Insights functionality is not allowed for this report.",
+			exceptionType = "Exception",
+			stackTrace = (string)null
+		};
+
+		return this.Request.CreateResponse(HttpStatusCode.Forbidden, errorResponse);
+	}
+
+	return base.CreateAIThread(clientID, instanceID, reportSource);
 }
 ````
 
 
-* [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) - called internally during the execution of the `CreateAIThread()` method. Provides easier access to the predefined prompts, allowing to alter or disable them based on custom logic like the role of the currently logged user, or on the currently previewed report, represented by the property `ClientReportSource`.
+* [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) - called internally during the execution of the `CreateAIThread()` method. Provides easier access to the predefined prompts, allowing you to alter or disable them based on custom logic (for example, the role of the currently logged user or the currently previewed report represented by `ClientReportSource`). The example below shows how to add a Markdown-specific predefined prompt only for a particular report.
 
-	* .NET
-
-	````C#
+````.NET
 /// <summary>
-	/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
-	/// </summary>
-	/// <param name="reportSource"></param>
-	/// <param name="aiThreadInfo"></param>
-	protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
+/// </summary>
+/// <param name="reportSource"></param>
+/// <param name="aiThreadInfo"></param>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+	if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
 	{
-		if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
-		{
-			aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
-		}
-		
-		base.UpdateAIPrompts(reportSource, aiThreadInfo);
+		aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
 	}
+
+	base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
 ````
-
-
-	* .NET Framework
-
-	````C#
+````.NET·Framework
 /// <summary>
-	/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
-	/// </summary>
-	/// <param name="reportSource"></param>
-	/// <param name="aiThreadInfo"></param>
-	protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
+/// </summary>
+/// <param name="reportSource"></param>
+/// <param name="aiThreadInfo"></param>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+	if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
 	{
-		if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
-		{
-			aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
-		}
-		
-		base.UpdateAIPrompts(reportSource, aiThreadInfo);
+		aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
+	}
+
+	base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
 ````
 
 
-* [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetAIResponse_System_String_System_String_System_String_System_String_Telerik_Reporting_Services_Engine_AIQueryArgs_) - called every time when a prompt is sent to the AI model. Allows for examining or altering the prompt sent from the client, inspecting the state of the RAG optimization, or checking the estimated amount of tokens that the prompt will consume, by implementing a callback function assigned to the [ConfirmationCallback](/api/telerik.reporting.services.engine.aiqueryargs#collapsible-Telerik_Reporting_Services_Engine_AIQueryArgs_ConfirmationCallBack) property. Below, you will find several examples of how to override the `GetAIResponse` method to handle different scenarios.
+* [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetAIResponse_System_String_System_String_System_String_System_String_Telerik_Reporting_Services_Engine_AIQueryArgs_) - called every time a prompt is sent to the AI model. Some common use cases include:
 
-	* .NET
+	* Modifying or enriching the outgoing prompt before it reaches the AI model:
 
-	````C#
+	````.NET
 /// <summary>
-	/// Modifies the prompt sent from the client before passing it to the LLM.
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
-	{
-		args.Query += $"{Environment.NewLine}Keep your response concise.";
-		
-		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-	}
+/// Modifies the prompt sent from the client before passing it to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+	args.Query += $"{Environment.NewLine}Keep your response concise.";
+
+	return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+````
+````.NET·Framework
+/// <summary>
+/// Modifies the prompt sent from the client before passing it to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+	args.Query += $"{Environment.NewLine}Keep your response concise.";
+
+	return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
 ````
 
 
-	````C#
+	*  Validating the token usage before sending the prompt to the AI model:
+
+	````.NET
 /// <summary>
-	/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+	const int MAX_TOKEN_COUNT = 500;
+	args.ConfirmationCallBack = (AIRequestInfo info) =>
 	{
-		const int MAX_TOKEN_COUNT = 500;
-		args.ConfirmationCallBack = (AIRequestInfo info) =>
+		if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
 		{
-			if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
-			{
-				return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
-			}
-		
-			return ConfirmationResult.ContinueResult();
-		};
-		
-		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-	}
+			return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
+		}
+
+		return ConfirmationResult.ContinueResult();
+	};
+
+	return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
 ````
-
-
-	````C#
+````.NET·Framework
 /// <summary>
-	/// Examines whether the RAG optimization is applied for the current prompt.
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+	const int MAX_TOKEN_COUNT = 500;
+	args.ConfirmationCallBack = (AIRequestInfo info) =>
 	{
-		args.ConfirmationCallBack = (AIRequestInfo info) =>
+		if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
 		{
-			if (info.Origin == AIRequestInfo.AIRequestOrigin.Client)
-			{
-				System.Diagnostics.Trace.TraceInformation($"RAG optimization is {info.RAGOptimization} for this prompt.");
-			}
-		
-			return ConfirmationResult.ContinueResult();
-		};
-		
-		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-	}
+			return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
+		}
+
+		return ConfirmationResult.ContinueResult();
+	};
+
+	return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
 ````
 
+	*  Inspecting whether RAG optimization is applied for the prompt.
 
-	* .NET Framework
-
-	````C#
+	````.NET
 /// <summary>
-	/// Modifies the prompt sent from the client before passing it to the LLM.
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+/// Examines whether the RAG optimization is applied for the current prompt.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+	args.ConfirmationCallBack = (AIRequestInfo info) =>
 	{
-		args.Query += $"{Environment.NewLine}Keep your response concise.";
-		
-		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-	}
-````
-
-
-	````C#
-/// <summary>
-	/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
-	{
-		const int MAX_TOKEN_COUNT = 500;
-		args.ConfirmationCallBack = (AIRequestInfo info) =>
+		if (info.Origin == AIRequestInfo.AIRequestOrigin.Client)
 		{
-			if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
-			{
-				return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
-			}
-		
-			return ConfirmationResult.ContinueResult();
-		};
-		
-		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-	}
+			System.Diagnostics.Trace.TraceInformation($"RAG optimization is {info.RAGOptimization} for this prompt.");
+		}
+
+		return ConfirmationResult.ContinueResult();
+	};
+
+	return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
 ````
-
-
-	````C#
+````.NET·Framework
 /// <summary>
-	/// Examines whether the RAG optimization is applied for the current prompt.
-	/// </summary>
-	/// <returns></returns>
-	public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+/// Examines whether the RAG optimization is applied for the current prompt.
+/// </summary>
+/// <returns></returns>
+public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+	args.ConfirmationCallBack = (AIRequestInfo info) =>
 	{
-		args.ConfirmationCallBack = (AIRequestInfo info) =>
+		if (info.Origin == AIRequestInfo.AIRequestOrigin.Client)
 		{
-			if (info.Origin == AIRequestInfo.AIRequestOrigin.Client)
-			{
-				System.Diagnostics.Trace.TraceInformation($"RAG optimization is {info.RAGOptimization} for this prompt.");
-			}
-		
-			return ConfirmationResult.ContinueResult();
-		};
-		
-		return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-	}
+			System.Diagnostics.Trace.TraceInformation($"RAG optimization is {info.RAGOptimization} for this prompt.");
+		}
+
+		return ConfirmationResult.ContinueResult();
+	};
+
+	return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
 ````
 
 
@@ -361,9 +344,7 @@ The workflow of instantiating the AI client and passing a request to it can be c
 
 If necessary, the Reporting engine can use a custom `Telerik.Reporting.AI.IClient` implementation, which can be registered in the Reporting REST Service configuration:
 
-* .NET
-
-	````C#
+````.NET
 builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
 	{
 		HostAppId = "MyApp",
@@ -376,11 +357,7 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportSe
 		return new MyCustomAIClient(...);
 	}
 ````
-
-
-* .NET Framework
-
-	````C#
+````.NET·Framework
 public class CustomResolverReportsController : ReportsControllerBase
 	{
 		static ReportServiceConfiguration configurationInstance;

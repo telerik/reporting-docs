@@ -11,15 +11,12 @@ ticketid: 1698535
 ---
 
 ## Environment
+
 <table>
    <tbody>
       <tr>
          <td> Product </td>
          <td> Reporting </td>
-      </tr>
-      <tr>
-         <td> Version </td>
-         <td> 19.1.25.521 </td>
       </tr>
    </tbody>
 </table>
@@ -33,14 +30,13 @@ I need page numbering based on a specific group using Standalone Designer. Inste
 To implement group-specific page numbering, follow these steps:
 
 ### Using Built-in Page Functions
+
 1. Open the report in the Standalone Designer.
 1. Define a group for the desired field (e.g., `ResidentID`) at the report level if not already done.
 1. Add a TextBox to the page footer.
 1. Use the following expression to display page numbering within the group:
 
-   ```
-   ="Page " + PageNumber("residentGroup", Fields.ResidentID) + " of " + PageCount("residentGroup", Fields.ResidentID)
-   ```
+   `= "Page " + PageNumber("residentGroup", Fields.ResidentID) + " of " + PageCount("residentGroup", Fields.ResidentID)`
    
    - Replace `"residentGroup"` with your group's name.
    - Replace `Fields.ResidentID` with the key field of the group.

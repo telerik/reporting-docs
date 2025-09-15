@@ -49,6 +49,6 @@ This user guide contains articles that describe common scenarios related to desi
 * [Create a Simple Report]({%slug web-report-designer-user-guide-getting-started%})
 * [Explore the Structure of a Report]({%slug user-guide/report-structure%})
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
+{% if false == true %}
+{% include cta-panel-small.html %}
 {% endif %}

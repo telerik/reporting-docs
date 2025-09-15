@@ -42,7 +42,13 @@ Make sure you have access to:
 
     ![Create Web Service Data Source ><](images/wrd-create-web-service-data-source.png)  
 
-1. On the **Configure Data Retrieval** screen, enter the URL of the web service providing the data for your report: `https://demos.telerik.com/reporting/api/reports/formats`, and then click **Finish**.
+    Alternatively, you can type "Web Service Data Source" in the **Search box** to let the designer locate the tool for you.
+
+1. On the **Configure Data Retrieval** screen, enter the URL of the web service providing the data for your report and then click **Finish**.
+
+    ````
+    https://demos.telerik.com/reporting/api/data/productsales
+    ````
 
     ![Web Service Data Source Wizard Step 1 ><](images/wrd-create-web-service-data-source-wizard-step1.png)
 
@@ -52,7 +58,7 @@ Now you have a blank report that is connected to data.
 
 Next, design the report by adding a Table report item to display your data.
 
-1. Click the report's **Detail Section** to enable adding report items.
+1. Click the report's **Detail Section** to select it as a container which allows adding report items. The default selection is the report itself, which cannot parent tables directly.
 
 1. Select the **Components** tab, and then click the [**Table Wizard**]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard) button:  
 
@@ -85,7 +91,7 @@ Now that you've created your first report, you can:
 
 For a visual walkthrough, watch this video tutorial that demonstrates creating a report with a chart. The video covers the Visual Studio setup initially, but the Web Report Designer portion starts at the 3:08 mark:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=286" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

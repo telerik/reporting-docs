@@ -28,7 +28,7 @@ table th:nth-of-type(2) {
 
 # Data Sources
 
-The Data Source components allow users to connect to and retrieve data from various storage and database systems. Data Sources serve as the foundation for all report components, providing the data that powers your tables, charts, maps, and other report elements.
+The Data Source components allow users to connect to and retrieve data from various storage and database systems. Data Sources serve as the foundation for all report components, providing the data that powers your tables, charts, maps, and other report elements. 
 
 Data Sources are essential for:
 
@@ -50,6 +50,8 @@ The Web Report Designer provides the following data source types:
 * [GraphQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#graphql-data-source)—Connects to GraphQL services to retrieve structured JSON data.
 * [JSON Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#json-data-source)—Processes JSON data from local files or embedded content within reports.
 * [Object Data Source]({%slug web-report-designer-user-guide-components-data-sources%}#object-data-source)—Binds report items to .NET business objects and custom data providers.
+
+>note Web Report Designer offers a **SharedDataSource** component which enables report designers to easily create and reuse a data source component across multiple reports. Existing data source components can be configured into SharedDataSource components via the **Explorer tab** in the Web Report Designer. Left-clicking the data source component will open the context menu from which the option *Save As Shared Data Source* can be chosen.
 
 ## SQL Data Source
 

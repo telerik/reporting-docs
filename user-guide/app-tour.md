@@ -22,9 +22,9 @@ As illustrated by the video above, the main elements of the Web Report Designer'
 * A **Components tray** which contains all of the items that you can add to the report.
 * An **Explorer** providing a tree-based structure of everything that is already in the report, including the data structure.
 * A **Properties area** which shows the properties and values for the currently selected component.
-* A **Main menu** which lets you open, save, and interact with reports on a global level along with the **Asset Manager** which is where you store all of your.
+* A **Main menu** which lets you open, save, and interact with reports on a global level along with the **Asset Manager** which is where you store all of your assets.
 * A **Preview** button which shows an exact representation of the designed report.
-* A **Search box** which allows you to search the report instance for any property value, component data source, and so on.
+* A **Search box** which allows you to search the report instance for any properties (i.e., their names), component data source, and so on. The Search box also allows locating tools, like the components that can be added on top of searching in the report instance.
 
 To view the app tour again, type `Start onboarding` in the search box.
 

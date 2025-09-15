@@ -31,6 +31,8 @@ The **Components** tab offers a **Tables** section that allows users to visualiz
 * [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard)&mdash;Guides you through creating a Table with an easy step-by-step wizard.
 * [Crosstab Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-crosstab-wizard)&mdash;Guides you through creating a Crosstab with an easy step-by-step wizard.
 
+Using the wizards and following manual tuning as needed is the recommended approach to configure tables and crosstabs. It also offers a smoother user experience.
+
 ## Prerequisites
 
 Before adding any table component, ensure you have:
@@ -59,7 +61,7 @@ Tables organize data in a traditional row-and-column format that you can use for
 1. Drag the **Table** item from the **Components** tab and drop it onto the **Detail** section of the report.
 1. Bind the Table to your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
 1. Configure the table structure by adding or removing columns and rows as needed.
-1. Add TextBox report items to cells and bind their value to the relevant fields in your [data source]({%slug web-report-designer-user-guide-components-data-sources%}).
+1. Add TextBox report items to cells and bind their value to the relevant fields in your [data source]({%slug web-report-designer-user-guide-components-data-sources%}). Note that the empty-appearing table already consists of text boxes according to the applied data source and the available fields (just their value is empty). You can add new items if you want to have other item types instead, e.g., HtmlTextBox, Barcode, etc.
 
 When you add a new Table, it starts with three columns, a header row, and a data row:
 

@@ -66,7 +66,7 @@ To learn more about working with the TextBox item, see the [TextBox article in t
 
 ## HtmlTextBox
 
-The HtmlTextBox allows you to insert and display HTML-formatted text within a report. The HtmlTextBox item is ideal for scenarios where you need rich text formatting, dynamic content, or templated text in your reports. You can set its content at design time using a WYSIWYG editor, an ezxpression editor, or dynamically from a data source.
+The HtmlTextBox allows you to insert and display HTML-formatted text within a report. The HtmlTextBox item is ideal for scenarios where you need rich text formatting, dynamic content, or templated text in your reports. You can set its content at design time using a WYSIWYG editor, an expression editor, or dynamically from a data source.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7O-zB9QjkyU?si=HoHpwrcJ6ZDMwCxx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

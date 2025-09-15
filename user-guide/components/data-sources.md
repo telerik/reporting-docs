@@ -159,7 +159,7 @@ The following configuration steps are available:
 
 1. Provide the **Query** for data retrieval:
 
-        ```SQL
+        ````SQL
         query paginateProducts($cursor: String) {
           site {
           products(first: 5, after: $cursor) {
@@ -176,7 +176,7 @@ The following configuration steps are available:
             }
           }
         }
-        ```
+       ````
 
     >caption Set up GraphQL Service URL and Configure the Query
 

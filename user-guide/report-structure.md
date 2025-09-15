@@ -8,11 +8,18 @@ published: True
 position: 10
 ---
 
+<style>
+img[alt$="><"] {
+  border: 1px solid lightgrey;
+}
+
+</style>
+
 # The Basic Structure of a Report
 
 Each report consists of sections that divide the report vertically and [report items](#report-items) that you place in each section. A report section represents a specific area on the report page and defines what items can be placed in that area and how these items will appear.
 
-![Report Sections - Web Report Designer User Guide - Telerik Reporting](./images/wrd-report-sections-callouts.png)
+![Report Sections - Web Report Designer User Guide - Telerik Reporting ><](./images/wrd-report-sections-callouts.png)
 
 By default, every new report you create has three sections:
 

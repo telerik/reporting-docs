@@ -32,7 +32,7 @@ You can add components to your report in two ways:
 * Drag and drop&mdash;Click the report's design surface and drag a component from the Components tab onto the report.
 * Click to add&mdash;Click the desired location in your report, then click the component in the Components tab.
 
-The **Search box** allows you to locate components quickly by typing.
+To quickly locate report components, use the **Search box** and type the component's name.
 
 You can edit already added components by clicking the respective report item on the design surface of the report. To edit multiple items simultaneously, select them by holding the `Ctrl` or `Cmd` key. Once the item is selected, you can edit its properties in the pane on the right.
 

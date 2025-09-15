@@ -48,7 +48,7 @@ The Page Footer section appears at the end of every page. Use the Page Footer to
 
 ## Detail Section
 
-The Detail section displays the detailed information and is printed once for every row in the data source if the report itself is bound to a data source. If not (e.g., data is bound to a table item or a chart item instead), the detail section is static and it is rendered once. This is where you place the report items that constitute the main body of the report.
+The Detail section is where you place the report items that constitute the main body of the report. This section displays the detailed information and is printed once for every row in the data source (if the report itself is bound to a data source). If the report is not bound to a data source (for example, data is bound to a table item or a chart item instead), the detail section is static and rendered once.
 
 ## Report Items
 

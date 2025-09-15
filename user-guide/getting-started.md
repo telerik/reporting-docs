@@ -58,7 +58,7 @@ Now you have a blank report that is connected to data.
 
 Next, design the report by adding a Table report item to display your data.
 
-1. Click the report's **Detail Section** to select it as a container which allows adding report items. The default selection is the report itself, which cannot parent tables directly.
+1. Click the report's **Detail Section** to select it as a target container for adding report items. The default selection is the report itself, which doesn't allow adding tables directly, causing the **Table** item and **Table Wizard** to be grayed out.
 
 1. Select the **Components** tab, and then click the [**Table Wizard**]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard) button:  
 

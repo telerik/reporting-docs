@@ -31,7 +31,7 @@ The **Components** tab offers a **Tables** section that allows users to visualiz
 * [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard)&mdash;Guides you through creating a Table with an easy step-by-step wizard.
 * [Crosstab Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-crosstab-wizard)&mdash;Guides you through creating a Crosstab with an easy step-by-step wizard.
 
-Using the wizards and following manual tuning as needed is the recommended approach to configure tables and crosstabs. It also offers a smoother user experience.
+The recommended approach for configuring tables and crosstabs is to use the corresponding wizard. If additional tuning is needed, do this manually after closing the wizard.
 
 ## Prerequisites
 

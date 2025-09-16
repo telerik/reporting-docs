@@ -28,14 +28,14 @@ Report items can reside inside report sections or other report components such a
 
 Telerik Web Report Designer provides various report items, each designed for specific data visualization needs:
 
-* [TextBox](#textbox-report-item)—Displays static or data-bound text with various formatting options.
-* [HtmlTextBox](#htmltextbox-report-item)—Inserts HTML-formatted text with styling and formatting.
-* [PictureBox](#picturebox-report-item)—Shows images from various sources (binary, URIs, Base64, SVG).
-* [CheckBox](#checkbox-report-item)—Shows both text and a check mark for boolean data.
-* [Barcode](#barcode-report-item)—Renders various barcode types for labeling and identification.
-* [Shape](#shape-report-item)—Displays predefined shapes like lines, arrows, and geometric figures.
-* [Panel](#panel-report-item)—Acts as a container to group or separate multiple report items.
-* [Gauge](#gauge-report-item)—Visualizes key performance indicators (KPIs) in radial or linear formats.
+* [TextBox](#textbox)—Displays static or data-bound text with various formatting options.
+* [HtmlTextBox](#htmltextbox)—Inserts HTML-formatted text with styling and formatting.
+* [PictureBox](#picturebox)—Shows images from various sources (binary, URIs, Base64, SVG).
+* [CheckBox](#checkbox)—Shows both text and a check mark for boolean data.
+* [Barcode](#barcode)—Renders various barcode types for labeling and identification.
+* [Shape](#shape)—Displays predefined shapes like lines, arrows, and geometric figures.
+* [Panel](#panel)—Acts as a container to group or separate multiple report items.
+* [Gauge](#gauge)—Visualizes key performance indicators (KPIs) in radial or linear formats.
 
 ## Adding Report Items
 

@@ -37,8 +37,8 @@ The Web Report Designer provides the following chart types:
 * [Line Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-line-chart)—Displays series as sets of points connected by lines, perfect for showing trends over continuous periods.
 * [Area Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-an-area-chart)—Shows data as filled areas under lines, emphasizing volume and cumulative totals.
 * [Column Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-column-chart)—Displays data series as sets of vertical bars that are grouped by category.
-* [Pie Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart)—Shows the contribution of fractional parts to a whole, commonly used for proportion comparisons.
-* [Doughnut Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-chart)—Similar to Pie Chart but with an open space in the center, allowing for additional information display.
+* [Pie Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-or-doughnut-chart)—Shows the contribution of fractional parts to a whole, commonly used for proportion comparisons.
+* [Doughnut Chart]({%slug web-report-designer-user-guide-components-charts%}#adding-a-pie-or-doughnut-chart)—Similar to Pie Chart but with an open space in the center, allowing for additional information display.
 
 ## Chart Categories
 
@@ -177,9 +177,9 @@ Based on the Line Chart type that you select during the configuration, one of th
 |----|----|----|
 |![Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-chart-type.png)|![Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-stacked-line-with-markers-type.png)|![100% Stacked Line with Markers Chart Type ](images/wrd-components-tray-charts-configure-line-with-markers-100-stacked-type.png)|
 
-### Adding a Pie Chart
+### Adding a Pie or Doughnut Chart
 
-To create a Pie Chart, follow the steps below. See the video after the steps for a detailed walk-through.
+To create a Pie or Doughnut Chart, follow the steps below. See the videos after the steps for a detailed walk-through.
 
 1. Click the **Pie** item from the **Components** tab and configure the chart using the Configuration pane on the right-hand side of the Web Report Designer.
 
@@ -187,17 +187,21 @@ To create a Pie Chart, follow the steps below. See the video after the steps for
 
 1. Design the Chart by configuring the **Categories**, **Series**, and **Values** groups based on the data you need to display.
 
-1. Optionally, change the Chart type.
-
->caption Adding a Pie Chart and populating it with data
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SPLPy_jAsJM?si=iYhK6Tm_W0DujcwD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+1. Optionally, change the Chart type (Pie or Doughnut).
 
 Based on the Pie Chart type that you select during the configuration, one of the following charts will be displayed:
 
 |Pie Chart|Doughnut Chart|
 |----|----|
 |![Pie Chart Type ](images/wrd-components-tray-charts-configure-pie-chart-type.png)|![Doughnut Chart Type ](images/wrd-components-tray-charts-configure-doughnut-chart-type.png)|
+
+>caption Adding a Pie Chart and populating it with data
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SPLPy_jAsJM?si=iYhK6Tm_W0DujcwD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+>caption Adding a Doughnut Chart and populating it with data
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-udr8lSSSCg?si=gBuPnvgRwdyIJ8vq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

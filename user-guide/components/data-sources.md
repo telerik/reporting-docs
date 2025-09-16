@@ -161,24 +161,24 @@ The following configuration steps are available:
 
 1. Provide the **Query** for data retrieval:
 
-        ````SQL
-        query paginateProducts($cursor: String) {
-          site {
-          products(first: 5, after: $cursor) {
-              pageInfo {
-                endCursor
-                hasNextPage
-              }
-              edges {
-                node {
-                  entityId
-                  name
-                }
-              }
-            }
+  ````SQL
+  query paginateProducts($cursor: String) {
+    site {
+    products(first: 5, after: $cursor) {
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        edges {
+          node {
+            entityId
+            name
           }
         }
-       ````
+      }
+    }
+  }
+  ````
 
     >caption Set up GraphQL Service URL and Configure the Query
 

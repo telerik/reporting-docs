@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-implementing-http-service,/embedding-repor
 
 # Implementing the ReportsController in an ASP.NET Application
 
-The Telerik Reporting REST Web API service is represented by the abstract [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class. This abstract class requires  [IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) and [IStorage](/api/Telerik.Reporting.Cache.Interfaces.IStorage) implementations. In order to add the reports controller to your application follow the steps:
+The Telerik Reporting REST Web API service is represented by the abstract [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class. This abstract class requires  [IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) and [IStorage](/api/Telerik.Reporting.Cache.Interfaces.IStorage) implementations. To add the reports controller to your application, follow the steps:
 
 1. Add references to the following Telerik Reporting assemblies (required) and set their __Copy Local__ properties to true in Visual Studio:
 
@@ -20,12 +20,12 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 
 1. Add references to the following Telerik Reporting assemblies (optional) and set their __Copy Local__ properties to true in Visual Studio:
 
-	+ Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended. For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}). The assembly has dependencies on Telerik Data Access which can be checked in the version corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});
+	+ Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended. For more details, check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}). The assembly has dependencies on Telerik Data Access, which can be checked in the version corresponding to [Upgrade article]({%slug telerikreporting/upgrade/overview%});
 	+ Telerik.Reporting.OpenXmlRendering - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
 	+ Telerik.Reporting.XpsRendering - required if you need to export in XPS format;
 	+ Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports. The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll* v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
 
-	>Without setting Telerik Reporting references' _Copy Local_ to true the assemblies may not be loaded correctly on running the application.
+	>Without setting Telerik Reporting references' _Copy Local_ to true, the assemblies may not be loaded correctly when running the application.
 
 1. Inherit this base class in your hosting application (usually in the Controllers folder of an MVC application).
 
@@ -36,7 +36,7 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementation}}
 		
-		>note Starting with the [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-(18-3-24-1112)), it is possible to define the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) with less code using the `AddTelerikReporting` extension method:
+		>note Starting with the [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), it is possible to define the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) with less code using the `AddTelerikReporting` extension method:
 		
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementationMinimal}}
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementationMinimal}}

@@ -4,7 +4,7 @@ description: "Learn how to retrieve and save inline images embedded in a Picture
 type: how-to
 page_title: How to Extract and Save Inline Images from a PictureBox in Telerik Reporting TRDP Templates
 slug: extract-inline-images-picturebox-telerik-reporting
-tags: progress® telerik® reporting, report, picturebox, image, extract, save, trdp
+tags: progress, telerik, reporting, report, picturebox, image, extract, save, trdp
 res_type: kb
 ticketid: 1674786
 ---
@@ -42,6 +42,5 @@ To extract and save the original image embedded in a PictureBox within a Telerik
 
 ## See Also
 
-- [Telerik Reporting Documentation](https://docs.telerik.com/reporting/overview)
-- [Managing Report Resources](https://docs.telerik.com/reporting/designing-reports-managing-report-resources)
-- [How to Add a PictureBox to a Report](https://docs.telerik.com/reporting/picturebox)
+- [Telerik Reporting Documentation]({%slug telerikreporting/welcome-to-telerik-reporting!%})
+- [How to Add a PictureBox to a Report]({%slug telerikreporting/designing-reports/report-structure/picturebox%})

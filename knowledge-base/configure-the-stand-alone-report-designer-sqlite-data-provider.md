@@ -28,7 +28,7 @@ res_type: kb
 
 > Visit the updated [Integrating the SQLite Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider%}) article for a how-to on connecting to SQLite Databases.
 
-Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the below steps to get this working.
+Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the steps below to get this working.
 
 ## Solutions
 
@@ -69,8 +69,8 @@ The Telerik Reporting directory will look like the following:
 
 **Step 2** Unpackage the zip with the binaries and copy the `System.Data.Sqlite.dll` file to the .NET Report Designer installation directory.
 
-**Step 3** Download SQLite binaries built for `.NET Framework.4.X` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) page, for example [sqlite-netFx40-binary-x64-2010-1.0.117.0.zip](https://system.data.sqlite.org/downloads/1.0.117.0/sqlite-netFx40-binary-x64-2010-1.0.117.0.zip). Then unpackage the archive and copy the `SQLite.Interop.dll` assembly to the . NET Report Designer installation directory.
-
+**Step 3** Download SQLite binaries built for `.NET Framework.4.X` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) page. Then, unpackage the archive and copy the `SQLite.Interop.dll` assembly to the .NET Report Designer installation directory.
+ 
 ![sqlite net designer install folder](resources/sqlite_net_designer_install.png)
 
 The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is no need to edit the configuration of the .NET Report Designer - [Differences between the .NET and .NET Framework designers' functionality]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#differences-between-the-net-and-net-framework-designers-functionality)

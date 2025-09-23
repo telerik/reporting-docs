@@ -1,6 +1,7 @@
 ---
 title: Errors and Warnings
 page_title: "Learn about Errors and Warnings in Telerik Reporting Licensing."
+description: "Learn about Errors and Warnings in Telerik Reporting Licensing after the 2025 Q1 (19.0.25.211) release."
 slug: license-errors-and-warnings
 tags: license, telerik, reporting, questions, errors, warnings
 published: True

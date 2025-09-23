@@ -3,7 +3,7 @@ title: Improving Basic Report
 page_title: Improving Your First Report
 description: "Learn how to edit reports in the Telerik Web Report Designer, add SharedDataSources and Actions, copy content between reports, and more in this step-by-step tutorial."
 slug: telerikreporting/getting-started/web-designer/improving-basic-report
-tags: how,web,designer,report,navigate,action,shareddatasource
+tags: web,designer,report,navigate,action,shareddatasource
 published: True
 position: 2
 ---
@@ -12,8 +12,8 @@ position: 2
 
 In this step-by-step tutorial, we will improve the basic report created in the previous tutorial [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}) by adding a common business requirement to click a data series to show more details in a child report.
 
-* First, we will create a second report to display the details data.
-* Then, we will learn how to add a [SharedDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}) to share data source between reports.
+* First, we will create a second report to display the detailed data.
+* Then, we will learn how to add a [SharedDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}) to share a data source between reports.
 * Next, we will add and configure a [PieChart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}) to the detailed report.
 * Finally, we will learn how to add a [Drillthrough/Navigate To Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) to the master report Column Chart.
 * At the end, we will have a master report able to navigate to a child report with detailed data for the selected **Product Category**.
@@ -93,7 +93,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 			![Adding an existing shared data source to the child report from the Assets manager.](images/add-existing-shared-data-source.png)
 
-		1. In the popped-up `Browse For Folder` dialog select `Shared Data Sources` on the left and choose the `productSalesData.sdsx` file, which is our shared data source that we just saved from the main report.
+		1. In the popped-up `Browse For Folder` dialog, select `Shared Data Sources` on the left and choose the `productSalesData.sdsx` file, which is our shared data source that we just saved from the main report.
 
 			![Selecting an existing shared data source SDSX file from the 'Browse For Folder' dialog in the child report.](images/select-existing-shared-data-source.png)
 
@@ -131,7 +131,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 			* Check the `DataPointLabelConnectorStyle` > `Visible` property.
 			* Set `DataPointLabelOffset` to `5mm`.
-			* For `DataPointLabelAlignment` use `OutsideColumn` from the dropdown.
+			* For `DataPointLabelAlignment`, use `OutsideColumn` from the dropdown.
 			* Click `Save`.
 
 		![Styling the pie chart series' data point labels in the child report.](images/pie-chart-series-datapointlabelalignment.png)
@@ -144,10 +144,10 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 	1. Navigate to the main report.
 	1. Search for `category group` in the Search box and select the `productCategoryGroup1`.
-	1. In the `Edit Item` dialog go to `Action` and select `Navigate to report` from the dropdown.
+	1. In the `Edit Item` dialog, go to `Action` and select `Navigate to report` from the dropdown.
 	1. Set the _Report source_ `Type` to __UriReportSource__.
 	1. Open the Assets manager from the icon next to `Uri` and select the `SalesBySubcategory.trdp` report from the `Demo` folder.
-	1. Add a new Parameter to the `Parameters` collection of the _Report source_ with `Name` corresponding to the child report's parameter, i.e. `Category`, and `Value` being the value of the current product category field, i.e. `=Fields.ProductCategory`.
+	1. Add a new Parameter to the `Parameters` collection of the _Report source_ with `Name` corresponding to the child report's parameter, i.e., `Category`, and `Value` being the value of the current product category field, i.e., `=Fields.ProductCategory`.
 	1. Click `Save` to preserve the configuration.
 
 	![The column chart in the main report with configured Navigate to Report action.](images/navigate-to-report-action-in-main-report-chart.png)
@@ -166,7 +166,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
 * [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
-* [Web Report Designer](%{slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 * [Reporting Forums](https://www.telerik.com/forums/reporting)

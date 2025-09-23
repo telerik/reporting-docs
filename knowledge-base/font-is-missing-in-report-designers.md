@@ -36,7 +36,7 @@ In this article, we will explain why a font may be missing in the Report Designe
 
 The Telerik Reporting engine uses the **GDI+** library and depends on the fonts that **GDI+** supports.
 
-In this line of thought, .NET supports **only** TrueType fonts. Thus, you can not use **OpenType** fonts with Telerik Reporting. If applicable. you can convert the OpenType font to **TrueType** using a [free online converter](http://www.freefontconverter.com/).
+In this line of thought, .NET supports **only** TrueType fonts. Thus, you can not use **OpenType** fonts with Telerik Reporting. If applicable. you can convert the OpenType font to **TrueType** using a [free online converter](https://www.fontconverter.org/).
 
 > If the font is TrueType, check if the font is installed in **%windir%\fonts**.
 

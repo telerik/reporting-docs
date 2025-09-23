@@ -1,6 +1,7 @@
 ---
 title: FAQs
 page_title: "Frequently Asked Questions about Telerik Reporting Licensing."
+description: "Learn the answers to the most Frequently Asked Questions about the Telerik Reporting License Key required after the 2025 Q1 (19.0.25.211) release."
 slug: license-frequently-asked-questions
 tags: license, telerik, reporting, faq, questions
 published: True

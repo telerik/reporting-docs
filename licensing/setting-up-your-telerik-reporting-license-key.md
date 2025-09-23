@@ -1,6 +1,7 @@
 ---
 title: Setting Up Telerik Reporting License Key
 page_title: "Learn how to set up the Telerik Reporting License Key."
+description: "Learn how to set up the required Telerik Reporting License Key after the 2025 Q1 (19.0.25.211) release."
 slug: license-key
 tags: license, key, telerik, reporting, licensing
 published: True

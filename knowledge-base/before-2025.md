@@ -13,7 +13,7 @@ previous_url: /installation-trial-license-limitation
 
 Before Q2 2025, Telerik Reporting was distributed in two versions: Trial and Developer (commercial), each having its own assets. Starting with Q2 2025, Telerik Reporting comes in a unified installation package regardless of whether you have a developer (commercial) or a trial license.
 
-> Starting with [Telerik Reporting version Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), you must activate the product through a [license key]({%slug setting-up-license-key%}) (trial or commercial). To upgrade from a Trial to a Developer (or commercial) license, purchase a license and then download a new license key, without re-installing the product.
+> Starting with [Telerik Reporting version Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), you must activate the product through a [license key]({%slug license-key%}) (trial or commercial). To upgrade from a Trial to a Developer (or commercial) license, purchase a license and then download a new license key, without re-installing the product.
 
 ## Trial Licenses
 
@@ -39,7 +39,7 @@ For more information on the commercial terms, refer to the pricing list of the [
 
 To upgrade the trial version of your license to a developer license:
 
-1. Back up your Telerik Reporting files and folders especially if your project uses the settings that are included in them.
+1. Back up your Telerik Reporting files and folders, especially if your project uses the settings that are included in them.
 1. Uninstall the __Trial__ version either by using the __Start Menu__ shortcut or the __Add/Remove Programs__ dialog.
 1. Obtain the new __Dev__ installer and [install Telerik Reporting]({%slug telerikreporting/installation%}).
 
@@ -47,18 +47,18 @@ To upgrade the trial version of your license to a developer license:
 
 ## .NET Licensing Mechanism
 
-As of Q2 2015, Telerik Reporting uses the [standard .NET licensing mechanism](https://learn.microsoft.com/bg-bg/dotnet/framework/tools/lc-exe-license-compiler), which means that using the tool in design-time causes Visual Studio to add a `license.licx` to the solution. This file is used only in design-mode and is not needed for deployment explicitly. The .NET framework (`lc.exe`) will embed it in the assembly when your web application is built for deployment.
+As of Q2 2015, Telerik Reporting uses the [standard .NET licensing mechanism](https://learn.microsoft.com/bg-bg/dotnet/framework/tools/lc-exe-license-compiler), which means that using the tool in design-time causes Visual Studio to add a `license.licx` to the solution. This file is used only in design mode and is not needed for deployment explicitly. The .NET Framework (`lc.exe`) will embed it in the assembly when your web application is built for deployment.
 
-The `license.licx` file is maintained by Visual Studio and contains information about all licensed components in the application, including non-Telerik products. The availability of this license file is not expected to cause any performance or compilation issues and you can ignore it.
+The `license.licx` file is maintained by Visual Studio and contains information about all licensed components in the application, including non-Telerik products. The availability of this license file is not expected to cause any performance or compilation issues, and you can ignore it.
 
 * If your project build fails with errors pointing to the license file, you can delete it and rebuild the project. Alternatively, you can clear its contents and mark it as `Read Only`.
-* If you are working under source control, once the file is created, it will be detected as a change by your source control system. It is recommended that you check in this file initially. When the files is checked out again during your work,	it is up to you to decide whether to check it in or discard the changes.
+* If you are working under source control, once the file is created, it will be detected as a change by your source control system. It is recommended that you check in this file initially. When the file is checked out again during your work,	it is up to you to decide whether to check it in or discard the changes.
 
 ## Redistribution
 
 Your purchase of Telerik Reporting includes a run-time royalty-free license to redistribute the reports in your own solutions. You can freely use and redistribute any reports that you build in your own projects, and your end users are not required to purchase their own licenses for the reports.
 
-Some potential uses of the reports require further discussion with the sales team as listed in the following table.
+Some potential uses of the reports require further discussion with the sales team, as listed in the following table.
 
 |Use|Examples
 |:---|:---

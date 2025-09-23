@@ -38,7 +38,7 @@ To wrap text in data labels for a Column chart in the Graph Report Item, use the
 
   This function replaces spaces with a new line character, effectively wrapping the text.
 
-Additionally, consider extending expressions for more complex formatting needs. For more details, refer to the [Extending Expressions](%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%) section in the documentation.
+Additionally, consider extending expressions for more complex formatting needs. For more details, refer to the [Extending Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%}) section in the documentation.
 
 An alternative approach is to **rotate** the labels and center the text to fit the data labels within the column's width.
 
@@ -58,4 +58,4 @@ An alternative approach is to **rotate** the labels and center the text to fit t
 * [Graph Report Item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) 
 * [Column Chart Type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})
 * [Text Functions in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) 
-* [Extending Expressions Overview](%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%)
+* [Extending Expressions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%})

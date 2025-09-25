@@ -39,6 +39,12 @@ navigation:
     styling:
         position: 70
         title: "Styles & Appearance"
+    user-guide:
+        position: 85
+        title: "Web Report Designer - User Guide"
+    user-guide/components:
+        position: 15
+        title: "Report Components"
     styling/rendering-and-paging:
         position: 8
         title: "Rendering and Paging"

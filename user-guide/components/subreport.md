@@ -28,7 +28,7 @@ SubReports act as containers that automatically adjust their size based on the c
 
 The next video demonstrates how to [create master-detail](#creating-master-detail-reports-with-subreports) reports by using SubReports in the Telerik Web Report Designer:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AH2XdSDDiEs?si=ys2b1ROAXh5qs3Aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AH2XdSDDiEs?si=ys2b1ROAXh5qs3Aw" title="Adding a SubReport Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prerequisites
 

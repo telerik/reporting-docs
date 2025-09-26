@@ -40,11 +40,11 @@ To align legend items vertically so that each item appears on a separate line, f
 
 Here is the Graph layout with the default legend:
 
-![BarChart Graph with its default legend with multiple items on the same line.](images\graph-legend-default-alignment.png)
+![BarChart Graph with its default legend with multiple items on the same line.](images/graph-legend-default-alignment.png)
 
 And the steps and the layout after applying the non-breaking spaces:
 
-![BarChart Graph with legend items tailed with non-breaking spaces, having a single item per line.](images\graph-legend-nnbsp-alignment.png)
+![BarChart Graph with legend items tailed with non-breaking spaces, having a single item per line.](images/graph-legend-nnbsp-alignment.png)
 
 ### Creating a Custom Legend
 

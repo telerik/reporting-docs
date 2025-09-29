@@ -22,7 +22,7 @@ To create a grouping expression, you add Grouping objects to the __Grouping__ co
 Depending on the grouping expressions, groups may be static, dynamic, or detailed:
 
 * __Static groups__ are defined by an empty (no) expression or expression that evaluates to the same value, disregarding the data (ex., `=1 + 2`). Static groups always produce a single member that contains all the data.
-* __Dynamic groups__ are defined by expressions that produce different results according to the current data (ex., =Fields.County). This way, the items of the data source are partitioned into groups according to the values of the grouping expressions.
+* __Dynamic groups__ are defined by expressions that produce different results according to the current data (ex., `=Fields.County`). This way, the items of the data source are partitioned into groups according to the values of the grouping expressions.
 * __Details groups__ are defined by a single __Grouping__ object that has no expression (empty __Grouping__ ) and produces one member for each item of the data source. Detail groups can be applied to __Table__, __Crosstab__ or __List__ items; *for backward compatibility reasons, the Report item treats the detail groups as static groups*.
 
 Groups support filtering and sorting that allows you to limit and order the members of the group according to your needs. For more information see [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) and [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%}).

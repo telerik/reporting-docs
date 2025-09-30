@@ -21,6 +21,33 @@ enable-tabbed-code-blocks: true
 img-max-width: 100%
 table-layout: fixed
 
+markdown-replacements:
+  # pointing (/api) links to the live api reference
+  - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
+    replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
+  # pointing (/reporting/api) links to the live api reference
+  - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
+    replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
+  # removing code snippets on build until the replacement tool is ready
+  - pattern: \{\{source=.*?\}\}
+    replacement: "code snippets"
+
+liquid-output-delimiter-left: "{{"
+liquid-output-delimiter-right: "}}"
+liquid:
+  suiteversion: "2025 Q3"
+  buildversion: "19.2.25.813"
+  reportserverversion: "11.2.25.813"
+  spaviewerversion: "27.25.813"
+  nodeversion: "16.0.0"
+  angularsubsetversion: "17.2.0"
+  kendosubsetversion: "2025.1.227"
+  kendothemeversion: "10.2.0"
+  blazoruiversion: "9.1.0"
+  mindotnetversion: "8"
+  mindotnetoutputdir: "\\bin\\Debug\\net8.0"
+  dotnetversions: ".NET 8 and .NET 9"
+
 meta:
   # Reporting Documentation Main Nodes:
   introduction:

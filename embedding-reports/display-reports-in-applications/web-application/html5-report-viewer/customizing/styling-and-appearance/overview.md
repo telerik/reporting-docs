@@ -33,7 +33,7 @@ For reference, you can use the templates located in **%programfiles(x86)%\Progre
 The template relies on the [Kendo UI SASS Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to provide layout settings and the color schema for the HTML5 Report Viewer:
 
 ```HTML
-<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
 ```
 
 The default report viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display. For the media queries to be activated properly, the browser’s viewport needs to be configured as follows:

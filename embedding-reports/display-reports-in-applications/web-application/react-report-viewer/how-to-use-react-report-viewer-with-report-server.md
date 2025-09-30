@@ -57,23 +57,29 @@ export function ReportViewer() {
 
 	let viewer;
 
+	const reportServer = {
+					url: 'https://localhost:83/',
+					username: 'myusername',
+					password: 'mypass'
+				};
+
+	const reportSource = {
+					report: 'Samples/Dashboard.trdp',
+					parameters: {}
+				};
+
+	const viewerContainerStyle = {
+					position: 'absolute',
+					inset: '5px'
+				};
+
 	return (
 	<>
 		<TelerikReportViewer
 				ref={el => viewer = el}
-				reportServer={{
-					url: 'https://localhost:83/',
-					username: 'myusername',
-					password: 'mypass'
-				}}
-				reportSource={{
-					report: 'Samples/Dashboard.trdp',
-					parameters: {}
-				}}
-				viewerContainerStyle={{
-					position: 'absolute',
-					inset: '5px'
-				}}
+				reportServer={reportServer}
+				reportSource={reportSource}
+				viewerContainerStyle={viewerContainerStyle}
 				viewMode="INTERACTIVE"
 				scaleMode="SPECIFIC"
 				scale={1.0}

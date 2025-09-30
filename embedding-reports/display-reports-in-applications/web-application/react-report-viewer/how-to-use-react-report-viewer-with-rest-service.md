@@ -85,19 +85,23 @@ export function ReportViewer() {
 
 	let viewer;
 
+	const reportSource = {
+					report: 'Report Catalog.trdp',
+					parameters: {}
+				};
+
+	const viewerContainerStyle = {
+					position: 'absolute',
+					inset: '5px'
+				};
+
 	return (
 	<>
 		<TelerikReportViewer
 				ref={el => viewer = el}
 				serviceUrl="http://localhost:59657/api/reports/"
-				reportSource={{
-					report: 'Report Catalog.trdp',
-					parameters: {}
-				}}
-				viewerContainerStyle={{
-					position: 'absolute',
-					inset: '5px'
-				}}
+				reportSource={reportSource}
+				viewerContainerStyle={viewerContainerStyle}
 				viewMode="INTERACTIVE"
 				scaleMode="SPECIFIC"
 				scale={1.0}

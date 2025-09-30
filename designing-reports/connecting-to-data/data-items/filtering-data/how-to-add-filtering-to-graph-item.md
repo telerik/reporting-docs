@@ -1,6 +1,6 @@
 ---
 title: Filtering the Graph
-page_title:  Filtering the Graph Item At a Glance
+page_title: Filtering the Graph Item At a Glance
 description: "Learn how to add filtering to the Graph item with the Report Designers or dynamically with custom code."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item
 tags: how,to,add,filtering,to,graph,item,designer,programatically,code,report
@@ -17,14 +17,14 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 
 ## Adding filters to Graph using Report Designer
 
-1. Open a report in __Design__ view.
-1. Left-click a __Graph__ item to select it.
-1. Click __Filters__ ellipsis in the property grid. This displays the current list of filters. By default, the list is empty.
-1. Click __New__. A new blank filter equation appears.
-1. In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the `<Expression>` option.
-1. In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
-1. In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
-1. Click __OK__.
+1. Open a report in **Design** view.
+1. Left-click a **Graph** item to select it.
+1. Click **Filters** ellipsis in the property grid. This displays the current list of filters. By default, the list is empty.
+1. Click **New**. A new blank filter equation appears.
+1. In **Expression**, type or select the expression for the field to filter. To open the **Edit Expression** Dialog, select the `<Expression>` option.
+1. In the **Operator** box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
+1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in Expression.
+1. Click **OK**.
 
 ## Adding filters to Graph programatically
 
@@ -35,7 +35,7 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 
 ## See Also
 
-* [Graph](/api/telerik.reporting.graph)
-* [Filter](/api/Telerik.Reporting.Filter)
-* [FilterCollection](/api/Telerik.Reporting.FilterCollection)
-* [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
+- [Graph](/api/telerik.reporting.graph)
+- [Filter](/api/Telerik.Reporting.Filter)
+- [FilterCollection](/api/Telerik.Reporting.FilterCollection)
+- [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})

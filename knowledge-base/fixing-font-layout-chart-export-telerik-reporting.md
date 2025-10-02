@@ -1,6 +1,6 @@
 ---
-title: Resolving Font and Style Differences in Chart Exports to PPTX and Excel
-description: Learn how to address font and layout issues for charts exported from Telerik Reporting to PPTX and Excel.
+title: Resolving Font and Style Differences in Graph Charts Exported to PPTX and XLSX
+description: Learn how to address font and layout issues for charts exported from Telerik Reporting to PowerPoint and Excel.
 type: how-to
 page_title: Fixing Font and Layout Issues for Chart Exports in Telerik Reporting
 meta_title: Fixing Font and Layout Issues for Chart Exports in Telerik Reporting
@@ -17,10 +17,6 @@ ticketid: 1693248
          <td> Product </td>
          <td> Reporting </td>
       </tr>
-      <tr>
-         <td> Version </td>
-         <td> 19.1.25.521 </td>
-      </tr>
    </tbody>
 </table>
 
@@ -33,7 +29,7 @@ When exporting charts from Telerik Reporting to PPTX or Excel, the font and layo
 To resolve font and layout differences in chart exports:
 
 1. **Ensure Font Availability on Target Systems**:
-   * PPTX and Excel rely on the target system to have the specified fonts (e.g., Calibri) installed. If the font is unavailable, a fallback font is used.
+   * The OpenXML formats (PPTX, XLSX, and DOCX) rely on the target system to have the specified fonts (e.g., Calibri) installed. If the font is unavailable, a fallback font is used.
    * Verify that Calibri is installed on the machine where the exported files are opened. For more details, refer to [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%}).
 
 1. **Embed Fonts in PPTX Files**:
@@ -55,4 +51,4 @@ To resolve font and layout differences in chart exports:
 
 * [Text Truncated after Exporting to PowerPoint](https://www.onepager.com/support/faq.php?id=104) 
 * [Telerik Reporting Overview]({%slug telerikreporting/welcome-to-telerik-reporting!%})
-* [Graph Item API Reference](https://docs.telerik.com/reporting/api/telerik.reporting.graph)
+* [Graph Item API Reference](/api/telerik.reporting.graph)

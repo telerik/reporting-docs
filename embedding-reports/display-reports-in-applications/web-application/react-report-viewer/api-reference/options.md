@@ -5,6 +5,7 @@ description: "Find a list of all options available during the initialization of 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
 tags: react, report, viewer, api, options
 published: True
+reporting_area: React
 position: 0
 previous_url: /react-report-viewer-api-reference-options, /embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference/
 ---

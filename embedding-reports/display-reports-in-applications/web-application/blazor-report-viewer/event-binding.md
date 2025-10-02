@@ -5,6 +5,7 @@ description: "Learn about what are the events exposed by the Telerik Reporting B
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/event-binding
 tags: event,binding
 published: True
+reporting_area: BlazorWrapper
 position: 2
 previous_url: /blazor-report-viewer-event-binding
 ---

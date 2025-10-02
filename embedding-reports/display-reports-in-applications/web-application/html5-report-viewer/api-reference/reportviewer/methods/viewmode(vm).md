@@ -5,6 +5,7 @@ description: "Learn more about the viewMode(vm) method of the Telerik Reporting 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)
 tags: viewmode(vm)
 published: True
+reporting_area: HTML5
 position: 19
 previous_url: /html5-report-viewer-reportviewer-methods-viewmode-vm
 ---

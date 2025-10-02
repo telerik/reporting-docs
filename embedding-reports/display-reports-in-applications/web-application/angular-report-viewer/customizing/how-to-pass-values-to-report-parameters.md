@@ -5,6 +5,7 @@ description: "Learn how to pass/update the values of the Report Parameters in th
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,to,pass,values,to,report,parameters,in,angular,report,viewer
 published: True
+reporting_area: AngularWrapper
 position: 0
 previous_url: /angular-report-viewer-howto-custom-parameters, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing/
 ---

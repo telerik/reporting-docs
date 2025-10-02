@@ -5,6 +5,7 @@ description: "Learn more about the pageCount() method of the Telerik Reporting H
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagecount()
 tags: pagecount()
 published: True
+reporting_area: HTML5
 position: 8
 previous_url: /html5-report-viewer-reportviewer-methods-pagecount
 ---

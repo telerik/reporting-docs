@@ -5,6 +5,7 @@ description: "Learn how the styling and appearance of the HTML5 Report Viewer ca
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview
 tags: overview
 published: True
+reporting_area: HTML5
 position: 0
 previous_url: /html5-report-viewer-styling-and-appearance, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/
 ---

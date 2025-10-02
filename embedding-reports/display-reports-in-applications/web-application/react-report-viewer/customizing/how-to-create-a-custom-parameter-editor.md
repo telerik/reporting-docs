@@ -5,6 +5,7 @@ description: "Understand how to change the default editors for visible parameter
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: react, report, viewer, how, to, create, custom, parameter, editor
 published: True
+reporting_area: React
 position: 1
 previous_url: /react-report-viewer-custom-parameter-editor, /embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing/
 ---

@@ -5,6 +5,7 @@ description: "Learn how to configure and use the Telerik Reporting HTML5 Report 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server
 tags: how,use,html5,report,viewer,report,server
 published: True
+reporting_area: HTML5
 position: 3
 previous_url: /html5-report-viewer-howto-use-it-with-reportserver
 ---

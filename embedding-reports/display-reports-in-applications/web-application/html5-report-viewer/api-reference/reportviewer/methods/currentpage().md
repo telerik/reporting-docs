@@ -5,6 +5,7 @@ description: "Learn more about the currentPage() method of the Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/currentpage()
 tags: currentpage()
 published: True
+reporting_area: HTML5
 position: 6
 previous_url: /html5-report-viewer-reportviewer-methods-currentpage
 ---

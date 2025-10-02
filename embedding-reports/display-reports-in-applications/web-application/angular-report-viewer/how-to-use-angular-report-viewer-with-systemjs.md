@@ -5,6 +5,7 @@ description: "Learn how the Angular Report Viewer can be used in an Angular Syst
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs
 tags: how,to,use,angular,report,viewer,with,systemjs
 published: True
+reporting_area: AngularWrapper
 position: 2
 previous_url: /angular-report-how-to-use-with-systemjs
 ---

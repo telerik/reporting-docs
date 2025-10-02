@@ -5,6 +5,7 @@ description: "Learn about the requirements of the Native Angular Report Viewer, 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview
 tags: angular,native,report,viewer,overview
 published: True
+reporting_area: NativeAngular
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/
 ---

@@ -5,6 +5,7 @@ description: "Learn more about the commands of the Telerik Reporting HTML5 Repor
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands
 tags: commands
 published: True
+reporting_area: HTML5
 position: 0
 previous_url: /html5-report-viewer-reportviewer-properties-commands, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/
 ---

@@ -5,6 +5,7 @@ description: "Learn about what are the properties exposed by the Angular Report 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties
 tags: properties
 published: True
+reporting_area: AngularWrapper
 position: 3
 previous_url: /angular-report-viewer-api-properties
 ---

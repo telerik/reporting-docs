@@ -5,6 +5,7 @@ description: "Learn what the command represents in the Telerik Reporting HTML5 R
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command
 tags: command
 published: True
+reporting_area: HTML5
 position: 7
 previous_url: /html5-report-viewer-api-command
 ---

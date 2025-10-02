@@ -5,6 +5,7 @@ description: "Learn more about the accessibilityKeyMap(keyMap) method of the Tel
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)
 tags: accessibilitykeymap(keymap)
 published: True
+reporting_area: HTML5
 position: 2
 previous_url: /html5-report-viewer-reportviewer-methods-accessibility-keymap-km
 ---

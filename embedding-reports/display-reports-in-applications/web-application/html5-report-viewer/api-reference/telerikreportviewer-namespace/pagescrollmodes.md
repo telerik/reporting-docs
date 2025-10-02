@@ -5,6 +5,7 @@ description: "Learn about the PageScrollModes of the telerikReportViewer object 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/pagescrollmodes
 tags: pagescrollmodes
 published: True
+reporting_area: HTML5
 position: 2
 previous_url: /html5-report-viewer-api-pagescrollmodes
 ---

@@ -5,6 +5,7 @@ description: "Learn what the prerequisites are and how to configure and use the 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service
 tags: how,use,html5,report,viewer,rest,service
 published: True
+reporting_area: HTML5
 position: 2
 previous_url: /html5-report-viewer-quick-start
 ---

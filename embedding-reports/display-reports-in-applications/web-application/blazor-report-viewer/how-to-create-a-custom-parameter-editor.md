@@ -5,6 +5,7 @@ description: "Learn how to create and use a custom Parameter Editor in the Teler
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-create-a-custom-parameter-editor
 tags: how,create,custom,parameter,editor,blazor,html5,report,viewer
 published: True
+reporting_area: BlazorWrapper
 position: 4
 ---
 

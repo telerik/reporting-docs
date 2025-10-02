@@ -22,13 +22,13 @@ The project has a preconfigured implementation of reports controller that uses t
 
 ## Manually configuring Telerik.Reporting REST Service on IIS
 
-###To host and configure the Telerik.Reporting REST Service on IIS follow the steps below:
+### To host and configure the Telerik.Reporting REST Service on IIS follow the steps below:
 
 1. In Visual Studio, create the hosting project. That might be one of the following project templates: ASP.NET Empty Web Application, ASP.NET Web Forms Application, ASP.NET MVC Web Application.
 1. (Only for Empty Web Application / Web Forms Application) Install the [Microsoft.AspNet.WebApi.WebHost 4.0.30506](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.WebHost/4.0.30506) NuGet package. Besides the required assemblies this will add the necessary handlers for version 4.0.30506 to the Web.config:
 
 	````XML
-<handlers>
+	<handlers>
 		<remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
 		<remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
 		<remove name="ExtensionlessUrlHandler-Integrated-4.0" />
@@ -36,13 +36,12 @@ The project has a preconfigured implementation of reports controller that uses t
 		<add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness64" responseBufferLimit="0" />
 		<add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
 	</handlers>
-````
+	````
 
 	>The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use __newer version of Microsoft.AspNet.WebApi.WebHost (e.g. WebAPI 2)__ you have to redirect the `System.Web.Http` and `System.Net.Http.Formatting` to their newer version. To do this, add the following binding redirects to your web.config and replace `5.1.0.0` with the exact version: 
 	>
 	>````XML
-<?xml version="1.0" encoding="utf-8" ?>
-	...
+	<?xml version="1.0" encoding="utf-8" ?>
 	<configuration>
 		<runtime>
 			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
@@ -57,7 +56,7 @@ The project has a preconfigured implementation of reports controller that uses t
 			</assemblyBinding>
 		</runtime>
 	</configuration>
-````
+	````
 
 	>[Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) will add the required binding redirects automatically, if you use it to update the NuGet packages.
 
@@ -91,22 +90,22 @@ The project has a preconfigured implementation of reports controller that uses t
 	1. Add __Microsoft.AspNet.WebApi.Cors__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.
 	1. Add the following code at the beginning of the `Global.Application_Start` (__Global.asax__) method:
 
-		````C#
-GlobalConfiguration.Configuration.EnableCors();
-````
-		````VB
-GlobalConfiguration.Configuration.EnableCors();
-````
+	````C#
+	GlobalConfiguration.Configuration.EnableCors();
+	````
+	````VB
+	GlobalConfiguration.Configuration.EnableCors();
+	````
 
 
 	1. Add the following attribute to the `ReportsController` class (requires reference to `System.Web.Http.Cors`):
 
-		````C#
-[EnableCors(origins:"*", headers:"*", methods:"*")]
-````
-		````VB
-<EnableCors(origins:"*", headers:"*", methods:"*")>
-````
+	````C#
+	[EnableCors(origins:"*", headers:"*", methods:"*")]
+	````
+	````VB
+	<EnableCors(origins:"*", headers:"*", methods:"*")>
+	````
 
 
 ## See Also

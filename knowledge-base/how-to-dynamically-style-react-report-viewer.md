@@ -4,13 +4,14 @@ description: How to Dynamically Style the React Report Viewer
 type: how-to
 page_title: How to Dynamically Style the React Report Viewer
 slug: how-to-dynamically-style-react-report-viewer
-position: 
+position:
 tags: Web, React, ReactJS, Style, Styling
 ticketid: 1578385
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -24,7 +25,6 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
 In certain cases, one might want to change the styling of the React Report Viewer widget dynamically.
@@ -37,20 +37,18 @@ Then, whenever we update the styles state, the page will be updated and the new 
 
 For example, we can hide the report viewer through a button with the following code:
 
-````TypeScript
+```TypeScript
 import React, { useState } from 'react';
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer/dist/cjs/main';
 
 export function ReportViewer() {
 
 	let viewer;
+	const reportSource = { report: 'Barcodes Report.trdp' };
 
 	const [styles, setStyles] = useState({
 		position: 'absolute',
-		left: '5px',
-		right: '5px',
-		top: '40px',
-		bottom: '5px',
+		inset: "5px",
 		overflow: 'hidden',
 		clear: 'both',
 		fontFamily: 'ms sans serif'
@@ -61,9 +59,7 @@ export function ReportViewer() {
 			<TelerikReportViewer
 				ref={el => viewer = el}
 				serviceUrl="http://localhost:59655/api/reports/"
-				reportSource={{
-					report: 'Barcodes Report.trdp',
-				}}
+				reportSource={reportSource}
 				viewerContainerStyle={styles}
 				viewMode="INTERACTIVE"
 				scaleMode="SPECIFIC"
@@ -73,8 +69,8 @@ export function ReportViewer() {
 		</>
 	)
 }
-````
+```
 
 ## See Also
 
-* [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+- [Using the State Hook](https://reactjs.org/docs/hooks-state.html)

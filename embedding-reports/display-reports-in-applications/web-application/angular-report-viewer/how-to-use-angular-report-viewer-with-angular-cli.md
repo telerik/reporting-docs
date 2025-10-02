@@ -5,6 +5,7 @@ description: "Learn how the Angular Report Viewer can be used in an Angular CLI 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli
 tags: how,to,use,angular,report,viewer,with,angular,cli
 published: True
+reporting_area: AngularWrapper
 position: 1
 previous_url: /angular-report-how-to-use-with-angular-cli
 ---

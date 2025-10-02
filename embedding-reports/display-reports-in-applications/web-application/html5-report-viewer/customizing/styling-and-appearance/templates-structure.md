@@ -5,6 +5,7 @@ description: "Learn more about the detailed structure of the HTML5 Report Viewer
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure
 tags: templates,structure
 published: True
+reporting_area: HTML5
 position: 2
 previous_url: /html5-report-viewer-templates
 ---

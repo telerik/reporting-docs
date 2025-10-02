@@ -5,6 +5,7 @@ description: "Learn about what are the events exposed by the Angular Report View
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/event-binding
 tags: event,binding
 published: True
+reporting_area: AngularWrapper
 position: 3
 previous_url: /angular-report-viewer-event-binding
 ---

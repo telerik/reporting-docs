@@ -5,6 +5,7 @@ description: "Learn how to dynamically localize the Telerik Reporting Angular Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization
 tags: localization
 published: True
+reporting_area: AngularWrapper
 position: 1
 previous_url: /angular-report-viewer-localization
 ---

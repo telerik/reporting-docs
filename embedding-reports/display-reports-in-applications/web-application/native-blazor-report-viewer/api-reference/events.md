@@ -5,6 +5,7 @@ description: "Learn about the events exposed by the Native Blazor Report Viewer 
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events
 tags: event,events,emit,fire,throw,execute,method,methods,blazor,native,report,viewer,api
 published: True
+reporting_area: NativeBlazor
 position: 2
 ---
 

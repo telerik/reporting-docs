@@ -5,6 +5,7 @@ description: "Find a list of all of the available React Report Viewer properties
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/properties
 tags: react, report, viewer, properties, commands
 published: True
+reporting_area: React
 position: 3
 previous_url: /react-report-viewer-api-reference-properties
 ---

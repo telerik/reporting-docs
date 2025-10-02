@@ -5,6 +5,7 @@ description: "Learn what the parameterEditorFactory of the Telerik Reporting HTM
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditorfactory
 tags: parametereditorfactory
 published: True
+reporting_area: HTML5
 position: 5
 previous_url: /html5-report-viewer-api-parametereditorfactory
 ---

@@ -5,6 +5,7 @@ description: "Learn what is the ReportViewer Object in the Telerik Reporting HTM
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview
 tags: overview
 published: True
+reporting_area: HTML5
 position: 0
 previous_url: /html5-report-viewer-reportviewer, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/
 ---

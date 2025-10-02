@@ -5,6 +5,7 @@ description: "Understand how the template of the React Report Viewer component w
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/custom-report-viewer-template
 tags: react, custom, report, viewer, template
 published: True
+reporting_area: React
 position: 0
 previous_url: /react-report-viewer-template
 ---

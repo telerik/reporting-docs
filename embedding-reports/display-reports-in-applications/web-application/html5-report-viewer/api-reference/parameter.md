@@ -5,6 +5,7 @@ description: "Learn what is the parameter of the Telerik Reporting HTML5 Report 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parameter
 tags: parameter
 published: True
+reporting_area: HTML5
 position: 4
 previous_url: /html5-report-viewer-api-parameter
 ---

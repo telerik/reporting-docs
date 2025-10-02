@@ -5,6 +5,7 @@ description: "Learn more about the error(e, args) Event of the Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)
 tags: error,args
 published: True
+reporting_area: HTML5
 position: 1
 previous_url: /html5-report-viewer-reportviewer-events-error
 ---

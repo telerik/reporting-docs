@@ -5,6 +5,7 @@ description: "Learn about the requirements and browser support of the Telerik Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview
 tags: overview
 published: True
+reporting_area: BlazorWrapper
 position: 0
 previous_url: /blazor-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview, /embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/
 ---

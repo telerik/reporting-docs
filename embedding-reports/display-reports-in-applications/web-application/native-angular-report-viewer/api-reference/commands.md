@@ -5,6 +5,7 @@ description: "Learn about what are the commands exposed by the Native Angular Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands
 tags: commands
 published: True
+reporting_area: NativeAngular
 position: 1
 ---
 

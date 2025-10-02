@@ -5,6 +5,7 @@ description: "Learn how the Angular Report Viewer can be used as an external vie
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-report-server
 tags: how,to,use,angular,report,viewer,with,report,server
 published: True
+reporting_area: AngularWrapper
 position: 3
 previous_url: /angular-report-viewer-with-report-server
 ---

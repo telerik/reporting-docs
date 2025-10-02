@@ -5,6 +5,7 @@ description: "Learn how to provide Custom Templates for changing the layout of t
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates
 tags: providing,custom,templates
 published: True
+reporting_area: HTML5
 position: 3
 previous_url: /html5-report-viewer-customizing-providing-template
 ---

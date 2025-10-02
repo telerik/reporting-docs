@@ -5,6 +5,7 @@ description: "Learn how to bind to and unbind from Client Events in the HTML5 Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/event-binding
 tags: event,binding
 published: True
+reporting_area: HTML5
 position: 9
 previous_url: /html5-report-viewer-event-binding
 ---

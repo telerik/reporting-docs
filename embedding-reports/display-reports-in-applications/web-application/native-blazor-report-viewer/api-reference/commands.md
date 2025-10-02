@@ -5,6 +5,7 @@ description: "Learn about the commands exposed by the Native Blazor Report Viewe
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands
 tags: command,commands,method,methods,blazor,native,report,viewer,api
 published: True
+reporting_area: NativeBlazor
 position: 1
 ---
 

@@ -5,6 +5,7 @@ description: "Learn more about the pageMode() method of the Telerik Reporting HT
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()
 tags: pagemode()
 published: True
+reporting_area: HTML5
 position: 9
 previous_url: /html5-report-viewer-reportviewer-methods-pagemode
 ---

@@ -5,6 +5,7 @@ description: "Learn more about the sendEmailBegin(e, args) Event of the Telerik 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)
 tags: sendemailbegin,args
 published: True
+reporting_area: HTML5
 position: 4
 previous_url: /html5-report-viewer-reportviewer-events-sendemailbegin
 ---

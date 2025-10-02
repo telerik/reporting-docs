@@ -7,16 +7,20 @@ slug: exporting-reports-excel-not-working-after-upgrade
 tags: exporting, reports, Excel, patch, upgrade, Word, Telerik Reporting
 res_type: kb
 ---
-# Environment
-| Product | 
-|---------|
-| Progress Telerik Reporting | 
 
-# Description
+## Environment
 
-After upgrading to the latest DocumentFormat.OpenXml version, Telerik Reporting application fails to export a report to MS OpenXML formats like XLSX and DOCX. This issue started after upgrading to the new version and rolling back to the previous version confirmed the problem. The error message displayed when attempting to export to OpenXML is as follows:
+| Product                    |
+| -------------------------- |
+| Progress Telerik Reporting |
 
-````
+## Description
+
+After upgrading to the latest [DocumentFormat.OpenXml](https://www.nuget.org/packages/documentformat.openxml) version(3.0.0+), Telerik Reporting application fails to export a report to the MS OpenXML formats like XLSX and DOCX.
+
+## Error
+
+```
 CSharp.Net7.Html5IntegrationDemo Error: 0 : System.TypeInitializationException: The type initializer for 'Telerik.Reporting.OpenXmlRendering.Wordprocessing.DocumentHelper' threw an exception.
  ---> System.TypeLoadException: Could not load type 'DocumentFormat.OpenXml.Packaging.ImagePartType' from assembly 'Telerik.Reporting.OpenXmlRendering.2.7.2, Version=17.2.23.1114, Culture=neutral, PublicKeyToken=a9d7983dfcc261be' due to value type mismatch.
    at Telerik.Reporting.OpenXmlRendering.Wordprocessing.DocumentHelper..cctor()
@@ -62,9 +66,9 @@ CSharp.Net7.Html5IntegrationDemo Error: 0 : An error occurred while rendering th
    at Telerik.Reporting.Services.Engine.ReportRenderer.Render(ReportRendererArgs args)
    at Telerik.Reporting.Services.Engine.Rendering.RenderWithCulture(ReportRendererArgs args)
    at Telerik.Reporting.Services.Engine.Rendering.ThreadFunc(Object o)
-````
+```
 
-# Solution
+## Solution
 
-- If you are using version of Telerik Reporting prior to 2024 Q1 (18.0.24.130), you need to ensure that the 'DocumentFormat.OpenXml' version referenced in the project is 2.7.2 or higher, but lower than 3.0.0.
-- If you are using version of Telerik Reporting version 18.0.24.130 or newer, please reference 'Telerik.Reporting.OpenXmlRendering.3.0.1' which works with 'DocumentFormat.OpenXml' version 3.0.1 or newer.
+- If you are using version of Telerik Reporting prior to 2024 Q1 (18.0.24.130), you need to ensure that the `DocumentFormat.OpenXml` version referenced in the project is **2.7.2 or higher**, but lower than **3.0.0**.
+- If you are using version of Telerik Reporting version 18.0.24.130 or newer, please reference `Telerik.Reporting.OpenXmlRendering.3.0.1` which works with `DocumentFormat.OpenXml` version **3.0.0 or newer**.

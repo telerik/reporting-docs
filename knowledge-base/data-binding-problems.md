@@ -27,7 +27,7 @@ This article lists common issues on binding data to Telerik Reports and nested d
 
 ## Overview
 
-Data can be visualized by [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}). Each data item has its own DataSource property and creates a separate [Expression scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}).
+Data can be visualized by [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}). Each data item has its own DataSource property and creates a separate [Expression scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope%}).
 
 ## Repeating data
 
@@ -35,11 +35,11 @@ If both a report and its nested data item are bound to the same data source, eac
 
 ## Changing a report's DataSource at run-time leads to no changes or no data on displaying the report.
 
-To change data at run-time, you need to iterate all data items and to modify their DataSource properties e.g. [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%}). You can also use the  [ReportItemBase.ItemCollection.Find Method](/api/Telerik.Reporting.ReportItemBase.ItemCollection#Telerik_Reporting_ReportItemBase_ItemCollection_Find_System_String_System_Boolean_) to get the data item visualizing data, and to change its DataSource property's value.
+To change data at run-time, you need to iterate all data items and to modify their DataSource properties e.g. [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%}). You can also use the [ReportItemBase.ItemCollection.Find Method](/api/Telerik.Reporting.ReportItemBase.ItemCollection#Telerik_Reporting_ReportItemBase_ItemCollection_Find_System_String_System_Boolean_) to get the data item visualizing data, and to change its DataSource property's value.
 
 ## See Also
 
-* [Do I need to use a Data Source component?]({%slug do-i-need-to-use-a-data-source-component%})
-* [Data Explorer does not show all or any data fields]({%slug data-explorer-does-not-show-all-or-any-data-fields%})
-* [How to show 'No Data Message' or hide an item in case of No data]({%slug how-to-show-no-data-message-or-hide-an-item-in-case-of-no-data%})
-* [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%})
+- [Do I need to use a Data Source component?]({%slug do-i-need-to-use-a-data-source-component%})
+- [Data Explorer does not show all or any data fields]({%slug data-explorer-does-not-show-all-or-any-data-fields%})
+- [How to show 'No Data Message' or hide an item in case of No data]({%slug how-to-show-no-data-message-or-hide-an-item-in-case-of-no-data%})
+- [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%})

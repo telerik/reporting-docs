@@ -8,6 +8,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -17,28 +18,28 @@ res_type: kb
 		<td>Version</td>
 		<td>R3 2016 and later</td>
 	</tr>
-</table> 
+</table>
 
-# Cause\Possible Cause(s)
+## Cause\Possible Cause(s)
 
 A Section's **Height** is set to 0(zero).
 
 ## Error Message
 
-*Property value is not valid.*
+_Property value is not valid._
 
 ## Description
 
-Setting a section's **Height** property via binding or code to 0 or *tending* to 0 leads to an error after upgrading to **Telerik Reporting R3 2016**.
-  
-## Solution  
+Setting a section's **Height** property via binding or code to 0 or _tending_ to 0 leads to an error after upgrading to **Telerik Reporting R3 2016**.
 
-In older versions, a commonly used workaround for shrinking sections was to set the sections' **Height** property via binding or in code behind to 0 or *tending* to 0 (zero) units. We recommend changing the manually set **Height** to **at least 1px.**  
+## Solution
+
+In older versions, a commonly used workaround for shrinking sections was to set the sections' **Height** property via binding or in code behind to 0 or _tending_ to 0 (zero) units. We recommend changing the manually set **Height** to **at least 1px.**
 
 ## Notes
-  
-As of **R3 2016**, sections and Panel items have a **CanShrink properties** that should be used instead of setting manually their **Height properties**. 
- 
+
+As of **R3 2016**, sections and Panel items have a **CanShrink properties** that should be used instead of setting manually their **Height properties**.
+
 ## See Also
 
-[Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}).  
+- [Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}).

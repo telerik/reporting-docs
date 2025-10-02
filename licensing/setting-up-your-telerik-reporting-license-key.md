@@ -20,18 +20,20 @@ Note that future updates of the product may restrict or disable some features wh
 
 Your projects have to reference the package `Telerik.Licensing`. We recommend using the [NuGet Package Manager in Visual Studio](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio). It automatically adds all the required code to your project files.
 
->tip We recommend using `Telerik Reporting` NuGet packages in your projects rather than direct assembly references. The main reason is that the packages automatically add all dependencies, whereas when using references, you need to add them manually. The `Telerik.Licensing` package will be added automatically as a dependency for the `Telerik.Reporting` package.
+> tip We recommend using `Telerik Reporting` NuGet packages in your projects rather than direct assembly references. The main reason is that the packages automatically add all dependencies, whereas when using references, you need to add them manually. The `Telerik.Licensing` package will be added automatically as a dependency for the `Telerik.Reporting` package.
 
 Here are the changes the Visual Studio NuGet Package Manager will make, depending on the project type:
 
 ### The older .NET Framework project types
 
-* Add package reference to the `packages.config` file:
+- Add package reference to the `packages.config` file:
 
-	````XML
-<package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
-````
- 
+      ````XML
+
+  <package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
+
+`````
+
 
 * Update the `.csproj` file with the DLL reference:
 
@@ -39,16 +41,15 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 <Reference Include="Telerik.Licensing, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
 		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.dll</HintPath>
 	</Reference>
-````
-
+`````
 
 ### .NET project types
 
 Update the `.csproj` file like below:
 
-````XML
+```XML
 <PackageReference Include="Telerik.Licensing" Version="1.*" />
-````
+```
 
 We strongly recommend adding the above package for licensing. If adding the package is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
 
@@ -59,9 +60,9 @@ To download a license key for Telerik Reporting, you must have either a develope
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 1. Click the **Download License Key** button.
 
-	![Download License Key](images/download-license-key.png)
+   ![Download License Key](images/download-license-key.png)
 
->note The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine.
+> note The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine.
 
 You may automatically download and store your license key in your home directory also from the Visual Studio Extensions of Telerik Reporting:
 
@@ -73,9 +74,9 @@ To activate Telerik Reporting:
 
 1. Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer.
 
-	+ For Windows: `%AppData%\Telerik\telerik-license.txt`
-	+ For Mac/Linux: `~/.telerik/telerik-license.txt`
-	+ Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
+   - For Windows: `%AppData%\Telerik\telerik-license.txt`
+   - For Mac/Linux: `~/.telerik/telerik-license.txt`
+   - Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
 
 1. Add the `Telerik.Licensing` package from [NuGet.org](https://www.nuget.org/) as a project dependency: `<PackageReference Include="Telerik.Licensing" Version="1.*" />`
 
@@ -90,9 +91,9 @@ Telerik strongly recommends the use of NuGet packages whenever possible. Only in
 If you cannot use NuGet packages in your project, add the license as a code snippet:
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
-1. On the Telerik Reporting row, click the __View key__ link in the __SCRIPT KEY__ column. 
+1. On the Telerik Reporting row, click the **View key** link in the **SCRIPT KEY** column.
 
-	![Download Product Key](images/download-product-key.png)
+   ![Download Product Key](images/download-product-key.png)
 
 1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.
 1. Add the `TelerikLicense.cs` file to your project.
@@ -103,10 +104,10 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 Whenever you purchase a new Telerik Reporting license or renew an existing one, always [download](#downloading-the-license-key) and install a new license key. The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate Telerik Report](#activating-telerik-reporting).
 
-# See Also
+## See Also
 
-* [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-* [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
-* [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
-* [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version]({%slug upgrade-q1-2025-trial-to-q2-2025-purchase-license%})
-* [Licensing before 2025]({%slug telerikreporting/licensing%})
+- [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
+- [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
+- [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
+- [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version]({%slug upgrade-q1-2025-trial-to-q2-2025-purchase-license%})
+- [Licensing before 2025]({%slug telerikreporting/licensing%})

@@ -39,7 +39,7 @@ Quick Start Guide:
 1. Paste it in your IDE with the AI Assistant
 1. Customize the prompt for your specific use case.
 
->caution Always double-check the code and solutions proposed by an AI-powered tool before applying them to your project.
+> caution Always double-check the code and solutions proposed by an AI-powered tool before applying them to your project.
 
 ## Report Viewer Prompts
 
@@ -250,7 +250,6 @@ Quick Start Guide:
 	</tr> 	
 </table>
 
-
 ## Reporting Service Prompts
 
 <table>
@@ -301,11 +300,10 @@ Quick Start Guide:
 	</tr>
 </table>
 
-
 ## See Also
 
-* [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
-* [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
-* [Telerik Reporting Copilot Extension]({%slug ai-copilot-extension%})
-* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
-* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)
+- [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant %})
+- [Telerik Reporting MCP Server]({%slug ai-mcp-server %})
+- [Telerik Reporting Copilot Extension]({%slug ai-copilot-extension %})
+- [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
+- [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

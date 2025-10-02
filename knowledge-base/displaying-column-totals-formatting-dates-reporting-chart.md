@@ -1,5 +1,5 @@
 ---
-title: Displaying Column Totals and Formatting Date in Column Chart
+title: Displaying Column Totals and Formatting Dates in Column Chart
 description: Learn how to display monthly totals at the top of columns and format dates at the bottom of the X-axis in a Column Chart.
 type: how-to
 page_title: How to Show Monthly Totals and Format Dates in Reporting Chart
@@ -18,10 +18,6 @@ ticketid: 1699481
          <td> Product </td>
          <td> Reporting </td>
       </tr>
-      <tr>
-         <td> Version </td>
-         <td> 18.2.24.806 </td>
-      </tr>
    </tbody>
 </table>
 
@@ -35,15 +31,13 @@ To display the monthly totals at the top of each column and format the X-axis da
 
 1. Change the `DataPointStyle` property to make it visible. This ensures that the total values appear above the columns.
 
-   ![Setting the DataPointStyle property to True](images/DataPointStyleVisible.png)
+   ![Setting the DataPointStyle property to True.](images/DataPointStyleVisible.png)
 
 1. Use the `Label` property of the category group to format the month and year display on the X-axis. Set the property to the following expression:
 
-   ```
-   = Fields.CastDate.ToString("MMMM yyyy")
-   ```
+   `= Fields.CastDate.ToString("MMMM yyyy")`
 
-   ![To display the dates at the bottom use the Label property](images/LabelPropertyCategoryGroups.png)
+   ![To display the dates at the bottom use the Label property.](images/LabelPropertyCategoryGroups.png)
 
 These steps ensure that the monthly totals appear at the top of each column and the X-axis displays the formatted month and year.
 

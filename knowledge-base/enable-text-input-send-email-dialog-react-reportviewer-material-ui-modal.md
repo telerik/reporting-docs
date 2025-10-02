@@ -87,7 +87,6 @@ export default function BasicModal() {
             scaleMode="SPECIFIC"
             scale={1.0}
             enableAccessibility={false}
-            sendEmail={{ enabled: true }}
           />
         </Box>
       </Modal>

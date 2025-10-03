@@ -24,7 +24,7 @@ The following articles will guide you on [how to use the new Native Blazor Repor
 
 The Native Blazor Report Viewer item template allows you to quickly and easily add the Native Blazor Report Viewer to your application.
 
-Suppose you wish to connect the Report Viewer to a Reporting REST service. In that case, you can analogously follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
+Suppose you wish to connect the Report Viewer to a Reporting REST service. In that case, you can analogically follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
 
 Just make sure that you select __Native Blazor Report Viewer page__, instead of __HTML5 Report Viewer page__ when adding a new item to your project, and follow the steps in the __'Add new Report Viewer'__ dialog.
 
@@ -43,19 +43,23 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1. (Optional) The [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) depends on version **9.1.0** of the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) product. If [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) is already used in your Blazor application, this step can be skipped. Otherwise, add the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) JS and its [Kendo theme](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) dependencies to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_Layout.cshtml}}
+	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_UIAssets.cshtml}}
+
 
 1. Add the  [Native Blazor Report Viewer's]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) JS and CSS dependencies to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App).
 
-	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_AddTheme.cshtml}}
+	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_ReportingAssets.cshtml}}
+
 
 1. Configure the project to recognize all Telerik components without explicit __@using__ statements on every __.razor__ file by adding the following code to your __~/_Imports.razor__:
 
 	{{source=CodeSnippets\BlazorAppSnippets\Components\Native_Imports.razor}}
 
+
 1. Wrap the content of the main layout file(by default, the __~/Shared/MainLayout.razor__ file in the Blazor project) with a razor component called __TelerikLayout.razor__:
 
-	
+	{{source=CodeSnippets\BlazorAppSnippets\Components\Native_TelerikLayout.razor}}
+
 
 1. If the report viewer should connect to a Reporting REST service (either locally hosted or in another application), use the following snippet to place the viewer component in a **.razor** page like __Pages/Index.razor__. Note that when referencing the Reporting REST service from another application, the `ServiceUrl` setting should be the absolute URL to the service.
 
@@ -66,6 +70,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 1. If you need to display the reports from a Report Server instance, use the following snippet to place the viewer component in a **.razor** page like __Pages/Index.razor__. Remember to set the actual __ReportServer__ and __ReportSource__ settings:
 
 	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_Viewer_ReportServer.razor}}
+
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to set up its appearance and behavior as desired.
 1. Finally, run the project to see the rendered report.

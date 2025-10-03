@@ -28,20 +28,17 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 
 - Add package reference to the `packages.config` file:
 
-      ````XML
-
+  ```XML
   <package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
-
-`````
-
+  ```
 
 * Update the `.csproj` file with the DLL reference:
 
-	````XML
-<Reference Include="Telerik.Licensing, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
-		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.dll</HintPath>
-	</Reference>
-`````
+  ```XML
+   <Reference Include="Telerik.Licensing, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
+  	<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.dll</HintPath>
+  </Reference>
+  ```
 
 ### .NET project types
 

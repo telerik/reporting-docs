@@ -76,28 +76,25 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 1.  Add `.mcp.json` to your solution folder (mind the leading dot '.'):
 
-        ````json
-
+    ```json
     {
-    "servers": {
-    "telerik-reporting-assistant": {
-    "type": "stdio",
-    "command": "npx",
-    "args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-    "env": {
-    "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-    // or
-    "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+      "servers": {
+        "telerik-reporting-assistant": {
+          "type": "stdio",
+          "command": "npx",
+          "args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+          "env": {
+            "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+            // or
+            "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+          }
+        }
+      }
     }
-    }
-    }
-    }
+    ```
 
-`````
-
-
-1. Restart Visual Studio.
-1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+1.  Restart Visual Studio.
+1.  Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 ### Global Setup:
 
@@ -114,35 +111,32 @@ The basic setup in Visual Studio Code follows these steps:
 1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
 2. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup):
 
-	````json
-{
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-			"env": {
-					"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-					// or
-					"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-				}
-			}
-		}
-	}
-`````
+   ```json
+   {
+     "servers": {
+       "telerik-reporting-assistant": {
+         "type": "stdio",
+         "command": "npx",
+         "args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+         "env": {
+           "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+           // or
+           "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+         }
+       }
+     }
+   }
+   ```
 
-    This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
+   This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 
-3.  For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
+3. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
-        ````json
-
-    {
-    "chat.mcp.discovery.enabled": true
-    }
-
-`````
-
+   ```json
+   {
+     "chat.mcp.discovery.enabled": true
+   }
+   ```
 
 4. Restart Visual Studio Code.
 
@@ -154,22 +148,22 @@ For complete setup instructions, see [Model Context Protocol](https://docs.curso
 
 Create `.cursor/mcp.json` in your workspace root (or user folder for global setup):
 
-````json
+```json
 {
-	"mcpServers": {
-		"telerik-reporting-assistant": {
-		"type": "stdio",
-		"command": "npx",
-		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-		"env": {
-				"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-				// or
-				"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-			}
-		}
-	}
+  "mcpServers": {
+    "telerik-reporting-assistant": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+      "env": {
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+        // or
+        "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+      }
+    }
+  }
 }
-`````
+```
 
 This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 

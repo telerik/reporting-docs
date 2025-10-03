@@ -1,7 +1,7 @@
 ---
 title: .NET Support
 page_title: Using Telerik Reporting with .NET or .NET Standard
-description:  "Learn how to use Telerik Reporting in .NET 8/9 or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
+description: "Learn how to use Telerik Reporting in .NET 8/9 or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation
@@ -19,35 +19,35 @@ The assemblies target .NET Standard 2.0 and the desktop viewers target .NET {{si
 
 ## Requirements
 
-__.NET {{site.mindotnetversion}}__ or above.
+**.NET {{site.mindotnetversion}}** or above.
 
 To use NuGet, you are required to provide the following NuGet packages. Note that when using the Telerik NuGet packages, the required dependencies are resolved automatically. Otherwise, you need to add them manually to the project.
 
-| Package Name | Version |
-| ------ | ------ |
-|`Microsoft.Extensions.Configuration`|2.1.2001|
-|`Microsoft.Extensions.Configuration.Binder`|2.1.2001|
-|`Microsoft.Extensions.Configuration.Json`|2.1.2001|
-|`System.Configuration.ConfigurationManager`|4.5.2000|
-|`System.Data.Common`|4.3.2000|
-|`System.Data.SqlClient`|4.6.2000|
-|`System.Drawing.Common`|4.5.2001|
-|`System.IO.Packaging`|4.5.2000|
-|`System.Reflection.Emit`|4.3.2000|
-|`System.Reflection.Emit.Lightweight`|4.3.2000|
-|`System.Runtime.Loader`|4.3.2000|
-|`System.Security.Cryptography.Pkcs`|4.5.2001|
-|`System.Security.Permissions`|4.5.2000|
-|`System.Text.Encoding.CodePages`|4.5.2000|
-|`System.Threading.AccessControl`|4.5.2000|
-|`sqlite-net-pcl`|1.8.116|
+| Package Name                                | Version  |
+| ------------------------------------------- | -------- |
+| `Microsoft.Extensions.Configuration`        | 2.1.2001 |
+| `Microsoft.Extensions.Configuration.Binder` | 2.1.2001 |
+| `Microsoft.Extensions.Configuration.Json`   | 2.1.2001 |
+| `System.Configuration.ConfigurationManager` | 4.5.2000 |
+| `System.Data.Common`                        | 4.3.2000 |
+| `System.Data.SqlClient`                     | 4.6.2000 |
+| `System.Drawing.Common`                     | 4.5.2001 |
+| `System.IO.Packaging`                       | 4.5.2000 |
+| `System.Reflection.Emit`                    | 4.3.2000 |
+| `System.Reflection.Emit.Lightweight`        | 4.3.2000 |
+| `System.Runtime.Loader`                     | 4.3.2000 |
+| `System.Security.Cryptography.Pkcs`         | 4.5.2001 |
+| `System.Security.Permissions`               | 4.5.2000 |
+| `System.Text.Encoding.CodePages`            | 4.5.2000 |
+| `System.Threading.AccessControl`            | 4.5.2000 |
+| `sqlite-net-pcl`                            | 1.8.116  |
 
 ## Features and Limitations
 
 On Windows, the reporting engine still relies on the GDI+ library because it provides the fastest and most convenient way to process text, which is essential to the product.
 
-* For Windows, .NET runtime natively resolves the GDI+ calls.
-* For Linux and macOS, you need to install the set of libraries listed below.
+- For Windows, .NET runtime natively resolves the GDI+ calls.
+- For Linux and macOS, you need to install the set of libraries listed below.
 
 Most of the processing and rendering features that work on Windows and use .NET Framework 4 or later are also supported in .NET projects with the new .NET Standard assemblies.
 
@@ -57,35 +57,35 @@ Also, you can use these classes as runtime-created report instances. You can use
 
 Telerik Reporting supports the following functionalities:
 
-* All rendering extensions except MHTML (HTML archive), XPS (XML Paper Specification), and XLS (Microsoft Excel 97 - 2003).
-* HTML, PDF, and OpenXML-based renderings are supported on Linux and macOS. Due to graphics library incompatibilities, in some cases, Graph-based items in the OpenXML renderings are incorrectly displayed.
-* All report items except the obsolete Chart item are supported.
-* The supported report definition types are `TRDX`, `TRDP`, and report classes created in Visual Studio without the VS designer-specific code.
-* Telerik Reporting supports the following Data Source components:
+- All rendering extensions except MHTML (HTML archive), XPS (XML Paper Specification), and XLS (Microsoft Excel 97 - 2003).
+- HTML, PDF, and OpenXML-based renderings are supported on Linux and macOS. Due to graphics library incompatibilities, in some cases, Graph-based items in the OpenXML renderings are incorrectly displayed.
+- All report items except the obsolete Chart item are supported.
+- The supported report definition types are `TRDX`, `TRDP`, and report classes created in Visual Studio without the VS designer-specific code.
+- Telerik Reporting supports the following Data Source components:
 
-	+ [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
-	+ [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%})
-	+ [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
-	+ [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})
-	+ [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
+  - [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
+  - [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%})
+  - [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
+  - [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})
+  - [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 
-* The [JSON-based reporting configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) is also supported. For CLI projects, the JSON configuration has precedence over the current XML-based reporting configuration.
+- The [JSON-based reporting configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) is also supported. For CLI projects, the JSON configuration has precedence over the current XML-based reporting configuration.
 
 ## Deploying on Linux
 
 ### Using `SkiaSharp`
 
-Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the __engineName__ element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 When using SkiaSharp, reference the `Telerik.Drawing.Skia` NuGet package or assembly.
 
 The next libraries should also be referenced when using SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
-````
+```bash
 sudo apt-get update
 sudo apt-get install -y libfreetype6
 sudo apt-get install -y libfontconfig1
-````
+```
 
 ### Using System.Drawing(`libgdiplus`)
 
@@ -95,14 +95,13 @@ When deploying to a Linux machine, make sure you have the [libgdiplus](https://w
 
 The following snippet demonstrates how to update and install the necessary libraries on Ubuntu or Debian:
 
-````
+```bash
 sudo apt-get update
 sudo apt-get install libc6-dev
 sudo apt-get install libgdiplus
-````
+```
 
-
->note The library [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) returns as a Family Font Name the `Preferred Family` rather than the `Family` name from the font meta information. Details may be found in [Font.Name returns incorrect results on Linux](https://github.com/mono/libgdiplus/issues/617). The two names may be different in the general case. In such a scenario, the font should be referenced with its `Family` name for Windows and `Preferred Family` name for Linux.
+> note The library [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) returns as a Family Font Name the `Preferred Family` rather than the `Family` name from the font meta information. Details may be found in [Font.Name returns incorrect results on Linux](https://github.com/mono/libgdiplus/issues/617). The two names may be different in the general case. In such a scenario, the font should be referenced with its `Family` name for Windows and `Preferred Family` name for Linux.
 >
 > In the rare case when the `Preferred Family` name of two fonts coincide and the `Family` names are different, on Linux, only the second font registered as private would be respected, as it will override the first one.
 
@@ -112,16 +111,16 @@ Since the `libgdiplus` and `SkiaSharp` libraries are not perfect replacements fo
 
 The following JSON configuration snippet hides the Image rendering extension from the list of available rendering extensions:
 
-````JSON
+```JSON
 "telerikReporting": {
 	"extensions": [
 		{
-			"name": "IMAGE",
-			"visible": "false"
+		 "name": "IMAGE",
+		 "visible": "false"
 		}
 	]
 }
-````
+```
 
 On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element.
 
@@ -129,7 +128,7 @@ On the Linux machine, you also need to install the fonts you use in the reports.
 
 ### Using `SkiaSharp`
 
-Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the __engineName__ element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 To use .NET on macOS:
 
@@ -140,7 +139,9 @@ To use .NET on macOS:
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
 
-	`dotnet build`
+   ```zsh
+   dotnet build
+   ```
 
 ### Using System.Drawing(`libgdiplus`)
 
@@ -151,14 +152,18 @@ To use .NET on macOS:
 1. Install [.NET for macOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos).
 1. Install [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) by using [Homebrew](https://brew.sh/).
 
-	`brew install mono-libgdiplus`
+   ```zsh
+   brew install mono-libgdiplus
+   ```
 
 1. Create your .NET application or copy an existing one from a Windows machine.
 1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
 
-	`dotnet build`
+   ```zsh
+   dotnet build
+   ```
 
 ## Using Container Platforms
 
@@ -168,31 +173,31 @@ To use Telerik Reporting in a Windows container, target a Windows-based image wi
 
 The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ graphics library. However, their size is significantly bigger than the size of the .NET runtime in a Linux container. Such a container requires you to install only the libgdiplus library and its accompanying libraries.
 
->tip Some Docker Containers are created with __invariant culture__. This means that the locales like currency symbol ('$' in 'en-US') may appear unexpected. Use the following code in the Dockerfile to add your culture ('en-US' in the example) to the container:
+> tip Some Docker Containers are created with **invariant culture**. This means that the locales like currency symbol ('$' in 'en-US') may appear unexpected. Use the following code in the Dockerfile to add your culture ('en-US' in the example) to the container:
 >
 > `ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8`
 >
-> __LC_ALL__ stands for all locales, and __LANG__ stands for the language.
+> **LC_ALL** stands for all locales, and **LANG** stands for the language.
 
 ### Linux Docker Container with `SkiaSharp`
 
-Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the __engineName__ element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 When using SkiaSharp, reference the `Telerik.Drawing.Skia` NuGet package or assembly.
 
 The next libraries should also be referenced when using SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
-````
+```DOCKERFILE
 FROM microsoft/dotnet:7.0-runtime AS base
 RUN apt-get update && \
     apt-get install -y libfreetype6 libfontconfig1
-````
+```
 
 ### Linux Docker Container with System.Drawing(`libgdiplus`)
 
 The following `dockerfile` snippet demonstrates how to achieve the desired outcome. When these three libraries are installed, Telerik Reporting will run on the produced Docker image.
 
-````
+```DOCKERFILE
 FROM microsoft/dotnet:6.0-runtime AS base
 RUN apt-get update \
 	&& apt-get install -y --allow-unauthenticated \
@@ -200,7 +205,7 @@ RUN apt-get update \
 		libgdiplus \
 		libx11-dev \
 	&& rm -rf /var/lib/apt/lists/*
-````
+```
 
 ### Windows Docker Container with System.Drawing
 
@@ -214,13 +219,13 @@ You need to select it from the pop-up configuration window:
 
 Here is sample code from the autogenerated Docker file:
 
-````
+```DOCKERFILE
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-windowsservercore-ltsc2022 AS base
 WORKDIR /app
 EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:windowsservercore-ltsc2022 AS build
 # ...
-````
+```
 
 ## Sample Projects
 
@@ -232,9 +237,9 @@ Sample projects are available in the subfolders with the corresponding framework
 
 With [2024 Q2 (18.1.24.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q2-18-1-24-514), we started distributing sample Docker files for deploying the Telerik Reporting Web Examples for .NET with Skia Sharp Graphics Engine on Linux Docker containers. The distributed Docker files should be used to build the Docker image from the terminal. They are unsuitable for use with Visual Studio due to the specific folder structure of the Reporting examples. The Visual Studio projects use, by default, TRDP reports deployed in a folder that cannot be accessed by the Docker file when run from Visual Studio.
 
-The Docker files may be found in the folder of the corresponding project. For example, the `Dockerfile` for the .NET 8 Telerik Reporting REST Service project with enabled CORS may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET {{site.mindotnetversion}}\ReportingRestServiceCorsDemo`. The Dockerfile starts with instructions for building the image and running the Docker container. Replace the placeholders in the curly brackets with the corresponding details: __TelerikNuGetApiKey__, __Telerik Reporting Installation Folder__, and __Connection String to AdventureWorks Database Accessible From the Docker Container__. Here is a sample of the file's content. The deployed Reporting REST Service project with enabled CORS will run on `localhost:4040` in the browser:
+The Docker files may be found in the folder of the corresponding project. For example, the `Dockerfile` for the .NET 8 Telerik Reporting REST Service project with enabled CORS may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET {{site.mindotnetversion}}\ReportingRestServiceCorsDemo`. The Dockerfile starts with instructions for building the image and running the Docker container. Replace the placeholders in the curly brackets with the corresponding details: **TelerikNuGetApiKey**, **Telerik Reporting Installation Folder**, and **Connection String to AdventureWorks Database Accessible From the Docker Container**. Here is a sample of the file's content. The deployed Reporting REST Service project with enabled CORS will run on `localhost:4040` in the browser:
 
-````
+```DOCKERFILE
 # command to BUILD docker IMAGE from the Windows Terminal:
 # docker image build -f "{Replace With Installation Folder}\Examples\CSharp\.NET {{site.mindotnetversion}}\ReportingRestServiceCorsDemo\Dockerfile" -t net8reportingrestservicecorsdemo --build-arg TelerikNugetServerApiKey={Replace With Your TelerikNuGetApiKey} "{Replace With Installation Folder}"
 
@@ -277,10 +282,10 @@ WORKDIR /app/Examples/CSharp/NET8/ReportingRestServiceCorsDemo
 COPY --from=publish /app/publish .
 COPY --from=build ["/src/Reports", "/app/Report Designer/Examples"]
 ENTRYPOINT ["dotnet", "CSharp.Net8.ReportingRestServiceCorsDemo.dll"]
-````
+```
 
 ## See Also
 
-* [ASP.NET Core Web API Implementation Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
-* [Adding Report Viewers to Windows Forms .NET Projects]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
-* [Adding Report Viewers to WPF .NET Projects]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
+- [ASP.NET Core Web API Implementation Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
+- [Adding Report Viewers to Windows Forms .NET Projects]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
+- [Adding Report Viewers to WPF .NET Projects]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})

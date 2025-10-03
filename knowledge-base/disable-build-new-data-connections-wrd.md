@@ -1,5 +1,5 @@
 ---
-title: How to Disable "Build new data connections" in the SqlDataSource wizard of the Web Report Designer
+title: How to Disable "Build new data connections" in the SqlDataSource Wizard of the Web Report Designer
 description: Learn how to restrict the "Build new data connections" option in the "Choose data connection" window of the SqlDataSource wizard of the Web Report Designer while allowing users to select from existing data connections.
 type: how-to
 page_title: How to Disable "Build New Data Connections" in Web Report Designer

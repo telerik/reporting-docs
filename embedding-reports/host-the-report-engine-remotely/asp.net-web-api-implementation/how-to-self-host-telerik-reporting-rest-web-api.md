@@ -26,23 +26,22 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 	>The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2)__ you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version. To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version:
 	>
 	>````XML
-	<?xml version="1.0" encoding="utf-8" ?>
-	<configuration>
-		<runtime>
-			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-				<dependentAssembly>
-					<assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
-					<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
-				</dependentAssembly>
-				<dependentAssembly>
-					<assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
-					<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
-				</dependentAssembly>
-			</assemblyBinding>
-		</runtime>
-	</configuration>
-	````
-
+	><?xml version="1.0" encoding="utf-8" ?>
+	><configuration>
+	>	<runtime>
+	>		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+	>			<dependentAssembly>
+	>				<assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
+	>				<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
+	>			</dependentAssembly>
+	>			<dependentAssembly>
+	>				<assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
+	>				<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
+	>			</dependentAssembly>
+	>		</assemblyBinding>
+	>	</runtime>
+	></configuration>
+	>````
 	>[Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget)can add the required binding redirects automatically, if you update NuGet packages through it.
 
 1. Make sure that the project have the following assembly references:

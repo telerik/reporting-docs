@@ -22,7 +22,7 @@ res_type: kb
       <td>19.2.25.1001</td>
       <td>8.12.2 or earlier</td>
     </tr>
-  <tbody>
+  </tbody>
 </table>
 
 ## Description

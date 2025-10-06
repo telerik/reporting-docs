@@ -355,6 +355,14 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace:
     position: 12
     title: "telerikReportViewer Namespace"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-applicationn:
+    position: 13
+    title: "How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 Application"
+    hidden: true
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application:
+    position: 14
+    title: "How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 Application"
+    hidden: true
 
   embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer:
     position: 2

@@ -10,6 +10,10 @@ position: 1
 ---
 
 <style>
+table {
+	color: var(--text-secondary) !important;
+}
+
 table th:first-of-type {
 	width: 20%;
 }
@@ -30,15 +34,15 @@ The Native Blazor Report Viewer exposes **commands** that allow it to control it
 
 To execute a command, it is required to first get a reference to the report viewer object using the `@ref` attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
 
-````C#
+```C#
 void ExecuteCommand(string commandName, string commandValue(optional))
-````
+```
 
 All commands, except for the `Export` command, require a single argument for this method, which is the `commandName`. The `commandValue` is used only by the `Export` command to specify the exporting format.
 
 For example, the `Refresh` and `Export` commands of the current report can be triggered like this:
 
-````C#
+```RAZOR
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="Export">Export Report to PDF</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="UpdateToken">Update Authentication Token</button>
@@ -65,7 +69,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 		ViewerInstance.ExecuteCommand("SetAuthenticationToken", "SAMPLE_TOKEN");
 	}
 }
-````
+```
 
 ## Commands List
 
@@ -261,4 +265,4 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 
 ## See Also
 
-* [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})
+- [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})

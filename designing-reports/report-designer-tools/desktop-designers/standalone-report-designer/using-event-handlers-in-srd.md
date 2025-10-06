@@ -21,14 +21,14 @@ Provided you have a report created with the Standalone Report Designer, the step
 1.  Create a new class that inherits the [`Telerik.Reporting.Report`](/api/telerik.reporting.report) class and ensure its name matches the `(Name)` property of your report.
 1.  Add a handler method for the `NeedDataSource` event.
 
-    ```CSharp
+    ```C#
     namespace ClassLibrary
     {
     	public class CityReport : Telerik.Reporting.Report
     	{
     		private void CityReport_NeedDataSource(object sender, System.EventArgs e)
     		{
-    			Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
+    			var processingReport = (Telerik.Reporting.Processing.Report)sender;
     			processingReport.DataSource = new string[] { "Sofia", "London", "Tokyo" };
     		}
     	}

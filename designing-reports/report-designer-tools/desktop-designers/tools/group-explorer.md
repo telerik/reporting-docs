@@ -35,16 +35,16 @@ You can also change the Layout of the Groups pane by switching between Horizonta
 
 Each group type has a distinct group icon:
 
-* Detail group:
+- Detail group:
 
-	![Group Explorer Detail group Icon](images/GroupExplorerDetailIcon.png)
+  ![Group Explorer Detail group Icon](images/GroupExplorerDetailIcon.png)
 
-* Dynamic group:
+- Dynamic group:
 
-	![Group Explorer Dynamic group Icon](images/GroupExplorerDynamicIcon.png)
+  ![Group Explorer Dynamic group Icon](images/GroupExplorerDynamicIcon.png)
 
-* Static group:
+- Static group:
 
-	![Group Explorer Static group Icon](images/GroupExplorerStaticIcon.png)
+  ![Group Explorer Static group Icon](images/GroupExplorerStaticIcon.png)
 
 Groups without a name assigned to them will have the text `<n/a>` displayed in the group's Name field.

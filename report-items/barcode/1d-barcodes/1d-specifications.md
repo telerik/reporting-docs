@@ -9,6 +9,12 @@ published: True
 position: 1
 ---
 
+<style>
+    table {
+        width: 50% !important;
+    } 
+</style>
+
 # Specifications of the One-dimensional Barcode Items
 
 One-dimensional (1D) barcodes are made up of lines and spaces of various widths that create specific patterns.
@@ -46,28 +52,29 @@ However, certain applications may require you to manually insert certain control
 The following table lists all Code128 control characters and their corresponding Unicode values:
 
 | Control Character | Hexadecimal | Decimal |
-| ------ | ------ | ------ |
-|Code A|F4|244|
-|Code B|F5|245|
-|Code C|F6|246|
-|FNC1|F7|247|
-|FNC2|F8|248|
-|FNC3|F9|249|
-|FNC4|FA|250|
-|Shift|FB|251|
-|Start A|FC|252|
-|Start B|FD|253|
-|Start C|FE|254|
-|Stop|FF|255|
+| ----------------- | ----------- | ------- |
+| Code A            | F4          | 244     |
+| Code B            | F5          | 245     |
+| Code C            | F6          | 246     |
+| FNC1              | F7          | 247     |
+| FNC2              | F8          | 248     |
+| FNC3              | F9          | 249     |
+| FNC4              | FA          | 250     |
+| Shift             | FB          | 251     |
+| Start A           | FC          | 252     |
+| Start B           | FD          | 253     |
+| Start C           | FE          | 254     |
+| Stop              | FF          | 255     |
 
 For example, the following code inserts the FNC4 control character in the middle of a Barcode:
 
-````CSharp
+```CSharp
 this.Barcode1.Value = "ABCD" + "\u00FA" + "1234";
-````
-````VB.NET
+```
+
+```VB.NET
 Me.Barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
-````
+```
 
 ## GS1-128 Specifics
 
@@ -75,16 +82,16 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and Co
 
 If you have a multi-part GS1-128 barcode which requires the FNC1 control character as a delimiter between the different parts, you have to insert it manually.
 
-````C#
+```C#
 this.Barcode1.Value = "1234" + "\u00F7" + "5678";
-````
-````VB.NET
-Me.Barcode1.Value = "1234" & ChrW(&HF7) & "5678"
-````
+```
 
+```VB.NET
+Me.Barcode1.Value = "1234" & ChrW(&HF7) & "5678"
+```
 
 ## See Also
 
-* [(API) Telerik.Reporting.Barcode](/api/Telerik.Reporting.Barcode)
-* [(API) Telerik.Reporting.Barcodes.Encoder1D](/api/Telerik.Reporting.Barcodes.Encoder1D)
-* [(API) ShowText](/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)
+- [(API) Telerik.Reporting.Barcode](/api/Telerik.Reporting.Barcode)
+- [(API) Telerik.Reporting.Barcodes.Encoder1D](/api/Telerik.Reporting.Barcodes.Encoder1D)
+- [(API) ShowText](/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)

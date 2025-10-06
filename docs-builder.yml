@@ -168,6 +168,10 @@ meta:
   designing-reports/report-designer-tools/web-report-designer:
     position: 10
     title: "Web Report Designer"
+  designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application:
+    position: 10
+    title: "Set Up in .NET Core 2.1"
+    hidden: true
   designing-reports/report-designer-tools/web-report-designer/tools:
     position: 10
     title: "Tools"

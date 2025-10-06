@@ -26,23 +26,22 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider
 1. Download the SQLite installer for `.NET Framework 4.6` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page.
 1. Copy the `System.Data.Sqlite.dll` and `SQLite.Interop.dll` assemblies from the System.Data.Sqlite installation directory to the directory with the .NET Framework Standalone Report Designer - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\`.
 
-	SQLite Installation: `C:\Program Files\System.Data.SQLite\2015\bin`
-	Telerik Reporting Installation: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`
+   SQLite Installation: `C:\Program Files\System.Data.SQLite\2015\bin`
+   Telerik Reporting Installation: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`
 
 1. Add the DbProvider Factory declaration to the appropriate Standalone Report Designer configuration file. `Telerik.ReportDesigner.exe.config` is for 64-bit (x64) and `Telerik.ReportDesigner.x86.exe.config` is for 32-bit (x86).
 
-	>note When updating the configuration file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
+   > note When updating the configuration file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
 
-	````XML
-<system.data>
-		<DbProviderFactories>
-			<remove invariant="System.Data.SQLite" />
-			<add name="SQLite Data Provider" invariant="System.Data.SQLite" description=".NET Framework Data Provider for SQLite"
-				type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139" />
-		</DbProviderFactories>
-	</system.data>
-````
-
+   ```XML
+   <system.data>
+   	<DbProviderFactories>
+   		<remove invariant="System.Data.SQLite" />
+   		<add name="SQLite Data Provider" invariant="System.Data.SQLite" description=".NET Framework Data Provider for SQLite"
+   			type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139" />
+   	</DbProviderFactories>
+   </system.data>
+   ```
 
 ## Setting up the System.Data.Sqlite Data Provider in .NET Applications
 
@@ -50,7 +49,7 @@ The [System.Data.Sqlite](https://system.data.sqlite.org/) data provider is autom
 
 If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
-````JSON
+```JSON
 {
 	"ConnectionStrings":{
 		"sqlite":{
@@ -59,10 +58,10 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 		}
 	}
 }
-````
+```
 
 ## See Also
 
-* [How to configure SQLite ADO.NET Provider for Standalone Report Designer]({%slug configure-the-stand-alone-report-designer-sqlite-data-provider%})
-* [Integrating SQLite Databases with Telerik Web Report Designer]({%slug integrate-sqlite-databases-telerik-web-report-designer%})
-* [SQLite connection strings](https://www.connectionstrings.com/sqlite/)
+- [How to configure SQLite ADO.NET Provider for Standalone Report Designer]({%slug configure-the-stand-alone-report-designer-sqlite-data-provider%})
+- [Integrating SQLite Databases with Telerik Web Report Designer]({%slug integrate-sqlite-databases-telerik-web-report-designer%})
+- [SQLite connection strings](https://www.connectionstrings.com/sqlite/)

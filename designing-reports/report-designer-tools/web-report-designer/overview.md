@@ -22,14 +22,14 @@ The Web Report Designer consists of the following areas:
 
 ![Highlighting the Web Report Designer's main areas and functionalities.](images/Designer/wrd-sass-theming.png)
 
-* `Design surface` - shows the web design report layout. Provides tools for selecting, moving, resizing, and editing the report items.
-* `Menu area` - provides buttons for creating a new report and opening, saving, or previewing an already existing one. Also, allows switching between loaded reports and shows their saved state.
-* `Properties area` - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words, properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order.
-* `Components` - lists the available report components that can be added to the web design report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. The list is the default view.
-* `Explorer` - represents the web design report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties.
-* `Assets Manager` - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
-* `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item, or change a property value with just a few keystrokes.
-* `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
+- `Design surface` - shows the web design report layout. Provides tools for selecting, moving, resizing, and editing the report items.
+- `Menu area` - provides buttons for creating a new report and opening, saving, or previewing an already existing one. Also, allows switching between loaded reports and shows their saved state.
+- `Properties area` - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words, properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order.
+- `Components` - lists the available report components that can be added to the web design report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. The list is the default view.
+- `Explorer` - represents the web design report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties.
+- `Assets Manager` - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
+- `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item, or change a property value with just a few keystrokes.
+- `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
 
 ## How it works
 
@@ -37,26 +37,26 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated into ASP.NET Web Applications, both under `.NET Framework 4.6.2+` or `.NET {{site.mindotnetversion}}+`.
-* The following NuGet packages are required:
+- The Web Report Designer can be integrated into ASP.NET Web Applications, both under `.NET Framework 4.6.2+` or `.NET {{site.mindotnetversion}}+`.
+- The following NuGet packages are required:
 
-	+ Telerik.Reporting
-	+ Telerik.WebReportDesigner.Services
+  - Telerik.Reporting
+  - Telerik.WebReportDesigner.Services
 
 ## Prerequisites:
 
-* Web browser that supports [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher; Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
-* [jQuery](https://jquery.com/download/) __3.7.1__ or later.
-* [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) __{{site.kendosubsetversion}}__ or later.
-* Telerik Report Viewer script. By default, it is requested from the service.
-* Web Report Designer script. By default, it is requested from the service.
-* All other scripts and styles will be provided by the Web Report Designer service when the designer widget is loaded. The list of loaded resources:
+- Web browser that supports [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher; Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
+- [jQuery](https://jquery.com/download/) **3.7.1** or later.
+- [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) **{{site.kendosubsetversion}}** or later.
+- Telerik Report Viewer script. By default, it is requested from the service.
+- Web Report Designer script. By default, it is requested from the service.
+- All other scripts and styles will be provided by the Web Report Designer service when the designer widget is loaded. The list of loaded resources:
 
-	+ [jQuery UI](https://jqueryui.com/) __1.12.1__ library. We recommend using the version of jQuery UI subset that is served by the Web Report Designer service because it includes a fix related to the dragging and dropping components. The subset includes Draggable, Droppable, Resizable and their dependencies.
-	+ webReportDesigner.min.css stylesheet.
-	+ webReportDesignerTheme.css stylesheet.
+  - [jQuery UI](https://jqueryui.com/) **1.12.1** library. We recommend using the version of jQuery UI subset that is served by the Web Report Designer service because it includes a fix related to the dragging and dropping components. The subset includes Draggable, Droppable, Resizable and their dependencies.
+  - webReportDesigner.min.css stylesheet.
+  - webReportDesignerTheme.css stylesheet.
 
-* The web report designer in our example is stylized using [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your preference can be added before creating the Web Designer widget on the page.
+- The web report designer in our example is stylized using [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your preference can be added before creating the Web Designer widget on the page.
 
 ## Kendo Widgets Requirements
 
@@ -66,45 +66,45 @@ Below you can find the list of widgets that the Web Report Designer requires in 
 
 Required widgets:
 
-* Kendo MVVM
-* Kendo Button
-* Kendo ButtonGroup
-* Kendo ComboBox
-* Kendo DateInput
-* Kendo DatePicker
-* Kendo DateTimePicker
-* Kendo DropDown
-* Kendo TreeGrid
-* Kendo Editor
-* Kendo FileManager
-* Kendo ListBox
-* Kendo ListView
-* Kendo Menu
-* Kendo MultiSelect
-* Kendo PanelBar
-* Kendo Slider
-* Kendo Splitter
-* Kendo TabStrip
-* Kendo Tooltip
-* Kendo TreeView
-* Kendo Upload
-* Kendo Window
-* Kendo Touch
-* Kendo Autocomplete
-* Kendo Stepper
+- Kendo MVVM
+- Kendo Button
+- Kendo ButtonGroup
+- Kendo ComboBox
+- Kendo DateInput
+- Kendo DatePicker
+- Kendo DateTimePicker
+- Kendo DropDown
+- Kendo TreeGrid
+- Kendo Editor
+- Kendo FileManager
+- Kendo ListBox
+- Kendo ListView
+- Kendo Menu
+- Kendo MultiSelect
+- Kendo PanelBar
+- Kendo Slider
+- Kendo Splitter
+- Kendo TabStrip
+- Kendo Tooltip
+- Kendo TreeView
+- Kendo Upload
+- Kendo Window
+- Kendo Touch
+- Kendo Autocomplete
+- Kendo Stepper
 
 The subset may be built with the following command:
 
-````
+```bash
 gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete,stepper
-````
+```
 
 ## Learn More
 
-* [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
-* [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
+- [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
+- [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
 
 ## See Also
 
-* [How to set up in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
-* [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
+- [How to set up in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
+- [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})

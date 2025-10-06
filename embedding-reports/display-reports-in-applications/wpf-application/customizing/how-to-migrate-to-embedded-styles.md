@@ -5,6 +5,7 @@ description: "Learn how to migrate to using the embedded XAML styling with the W
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-migrate-to-embedded-styles
 tags: how,to,migrate,to,embedded,styles
 published: True
+reporting_area: WPF
 position: 3
 previous_url: /wpf-report-viewer-migrate-to-embedded-styles, /embedding-reports/display-reports-in-applications/wpf-application/how-to-migrate-to-embedded-styles
 ---

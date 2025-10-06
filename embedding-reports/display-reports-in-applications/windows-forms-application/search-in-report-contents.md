@@ -5,6 +5,7 @@ description: "Learn how to use the Windows Forms Report Viewer control to search
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/search-in-report-contents
 tags: search, in, report, contents
 published: True
+reporting_area: WinForms
 position: 10
 previous_url: /winforms-report-viewer-search
 ---

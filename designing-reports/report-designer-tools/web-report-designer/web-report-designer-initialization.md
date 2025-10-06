@@ -12,7 +12,13 @@ position: 7
 <style>
 table th:first-of-type {
 	width: 28%;
+	text-align: center !important;
 }
+
+table td:first-of-type {
+	text-align: center;
+}
+
 table th:nth-of-type(2) {
 	width: 72%;
 }
@@ -20,7 +26,7 @@ table th:nth-of-type(2) {
 
 # Web Report Designer Initialization
 
-The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebReportDesigner(options)`. Below is a list of all options available during initialization.
+The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebReportDesigner(options)`. Below is a list of all options available during initialization
 
 ## Options
 
@@ -47,9 +53,8 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 		<tr>
 			<td><strong>reportViewerOptions</strong></td>
 			<td><i>json</i>, <i>optional</i>; 
-			
-			Sets the options of the embedded Report Viewer used when previewing the reports.<br />
-			
+			Sets the options of the embedded Report Viewer used when previewing the reports.
+			<br />
 			Here are the currently available options:
 			<ul>
 				<li>templateUrl</li>
@@ -59,8 +64,8 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 				<li>viewMode</li>
 				<li>reportSourceParameters</li>
 			</ul>
-			
-			Additional information about how these options affect the embedded Report Viewer can be found at the <a href="{%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}">HTML5 Report Viewer Initialization</a> documentation article.</td>
+			Additional information about how these options affect the embedded Report Viewer can be found at the <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization %}">HTML5 Report Viewer Initialization</a> documentation article.
+			</td>
 		</tr>
 		<tr>
 			<td><strong>persistSession</strong></td>
@@ -93,13 +98,13 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 	<tbody>
 </table>
 
-
 ## Events
 
 ### `error` Event
 
 The `error` event will be fired when an error occurs while using `design` mode in the Web Report Designer. The event was introduced with the [R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) release.
-````JavaScript
+
+```JavaScript
 $(document).ready(function () {
 	$("#webReportDesigner").telerik_WebReportDesigner({
 		persistSession: false,
@@ -119,20 +124,20 @@ function onError(e, args) {
 	// args: IErrorEventArgs ->
 		// message: error message, string;
 		// error: JS's Error instance.
-	
+
 	if (args.error) {
 		console.log(`An error occurred! Message: ${args.message}; Error type: ${args.error.constructor.name}`);
 	} else {
 		console.log(`An error occurred! Message: ${args.message};`);
 	}
 }
-````
+```
 
 ### `notificationShowing` Event
 
 The `notificationShowing` event will be fired when the user should be notified of an error, warning, etc. while using `design` mode in the Web Report Designer. The event was introduced with the [R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) release.The event may be used to disable the notification pop-up or even display a custom message in the console.
 
-````JavaScript
+```JavaScript
 $(document).ready(function () {
 	$("#webReportDesigner").telerik_WebReportDesigner({
 		persistSession: false,
@@ -162,7 +167,7 @@ function onNotificationShowing(e, args) {
 			// disable the notification pop-up.
 			args.cancel = true;
 			break;
-		
+
 		case "error":
 			if (args.error) {
 				console.log(`Error message: ${args.message}; Error type: ${args.error.constructor.name}`);
@@ -172,13 +177,13 @@ function onNotificationShowing(e, args) {
 			break;
 	}
 }
-````
+```
 
 ### `viewerInitializing` Event
 
 The `viewerInitializing` event will be fired when the Web Report Designer widget is first initialized on the page. The event may be used to further modify the viewer options and attach event handlers to the events of the report viewer.
 
-````JavaScript
+```JavaScript
 $(document).ready(function () {
 	$("#webReportDesigner").telerik_WebReportDesigner({
 		persistSession: false,
@@ -215,13 +220,13 @@ function onViewerRenderingBegin(e) {
 function onViewerRenderingEnd(e) {
 	console.log('TRV rendering end');
 }
-````
+```
 
 ### `viewerLoading` Event
 
 The `viewerLoading` event will be fired whenever the Web Report Designer widget switches to `preview` mode and the internal report viewer widget starts loading the current report. The event may be used to set specific viewer options/parameters for a given report, etc.
 
-````JavaScript
+```JavaScript
 $(document).ready(function () {
 	$("#webReportDesigner").telerik_WebReportDesigner({
 		persistSession: false,
@@ -268,11 +273,11 @@ function setReportOptions(reportViewerOptions) {
 		reportViewerOptions.viewMode = telerikReportViewer.ViewModes.PRINT_PREVIEW;
 	}
 }
-````
+```
 
 ## Initialization Example with Full Settings
 
-````JavaScript
+```JavaScript
 $(document).ready(function () {
 	window.TelerikWebReportDesignerDebugMode = true;
 	$("#webReportDesigner").telerik_WebReportDesigner({
@@ -305,7 +310,7 @@ function onError(e, args) {
 	// args: IErrorEventArgs ->
 		// message: error message, string;
 		// error: JS's Error instance.
-	
+
 	if (args.error) {
 		console.log(`An error occurred! Message: ${args.message}; Error type: ${args.error.constructor.name}`);
 	} else {
@@ -323,12 +328,12 @@ function onNotificationShowing(e, args) {
 	switch (args.type) {
 		case "success":
 		case "info":
-		case "warning":                    
+		case "warning":
 			console.log(`Message: ${args.message}`);
 			// disable the notification pop-up.
 			args.cancel = true;
 			break;
-		
+
 		case "error":
 			if (args.error) {
 				console.log(`Error message: ${args.message}; Error type: ${args.error.constructor.name}`);
@@ -395,5 +400,4 @@ function onViewerRenderingBegin(e) {
 function onViewerRenderingEnd(e) {
 	console.log('TRV rendering end');
 }
-````
-
+```

@@ -21,13 +21,13 @@ You can create a custom component, inheriting a Telerik Reporting Data Source co
 1. In the __Add New Item__ dialog box, choose a __Component Class__  and click __Add__. The new file is added to the project and automatically opened in Visual Studio.
 1. Change the base class from `Component` to the appropriate Telerik Reporting Data Source component (`Telerik.Reporting.SqlDataSource`, `Telerik.Reporting.ObjectDataSource`, `Telerik.Reporting.EntityDataSource`, `Telerik.Reporting.OpenAccessDataSource`) as shown in the following code snippet:
 
-	````CSharp
-public partial class Component1 : Telerik.Reporting.SqlDataSource
-````
+	````C#
+	public partial class Component1 : Telerik.Reporting.SqlDataSource
+	````
 	````VB
-Partial Class Component1
+	Partial Class Component1
 	Inherits Telerik.Reporting.SqlDataSource
-````
+	````
 
 
 1. __Save__ and __Rebuild__ the project.

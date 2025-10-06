@@ -5,6 +5,7 @@ description: "Learn how to make the Apply Interactive Action on Document request
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/apply-interactive-action-on-document
 tags: apply,interactive,action,on,document
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 6
 previous_url: /telerik-reporting-rest-documents-api-apply-interactive-action,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/apply-interactive-action-on-document
 ---

@@ -5,6 +5,7 @@ description: "Learn how to Host the Telerik Reporting REST Service ASP.NET Web A
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api
 tags: how,to,self,host,telerik,reporting,rest,web,api
 published: True
+reporting_area: RESTService
 position: 3
 previous_url: /telerik-reporting-rest-host-http-service-using-self-hosting,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api
 ---

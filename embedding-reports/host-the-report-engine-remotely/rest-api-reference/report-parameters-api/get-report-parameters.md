@@ -5,6 +5,7 @@ description: "Learn how to make the Get Report Parameters request to the Telerik
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters
 tags: get,report,parameters
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-report-parameters-api-get-report-parameters,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api/
 ---

@@ -5,6 +5,7 @@ description: "Learn more about the Telerik Reporting ServiceStack Implementation
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview
 tags: overview
 published: True
+reporting_area: RESTService
 position: 0
 previous_url: /telerik-reporting-rest-service-service-stack,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview, /embedding-reports/host-the-report-engine-remotely/servicestack-implementation/
 ---

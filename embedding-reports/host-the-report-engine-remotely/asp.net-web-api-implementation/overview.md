@@ -5,6 +5,7 @@ description: "Learn more about the ASP.NET Web API Implementation of Telerik Rep
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview
 tags: overview
 published: True
+reporting_area: RESTService
 position: 0
 previous_url: /telerik-reporting-rest-service-web-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview, /embedding-reports/host-the-report-engine-remotely/asp.net-web-api-implementation/
 ---

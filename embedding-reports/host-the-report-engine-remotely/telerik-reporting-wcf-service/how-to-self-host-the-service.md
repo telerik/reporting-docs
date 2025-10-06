@@ -5,6 +5,7 @@ description: "Learn how to Self Host the WCF Service in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-self-host-the-service
 tags: how,to,self,host,the,service
 published: True
+reporting_area: RESTService
 position: 2
 previous_url: /self-hosted-telerik-reporting-wcf-service
 ---

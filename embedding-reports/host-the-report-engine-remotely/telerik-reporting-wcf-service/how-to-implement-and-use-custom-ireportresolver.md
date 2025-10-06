@@ -5,6 +5,7 @@ description: "Learn How to Implement and use a custom IReportResolver in Telerik
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver
 tags: how,to,implement,and,use,custom,ireportresolver
 published: True
+reporting_area: RESTService
 position: 4
 previous_url: /WCF-report-service-How-to-add-custom-report-resolver
 ---

@@ -5,6 +5,7 @@ description: "Learn more about the Telerik Reporting REST Service ReportSource R
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview
 tags: overview,report,reportsource,resolver,implementation,built-in,rest,service
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-service-report-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview, /embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver/
 ---

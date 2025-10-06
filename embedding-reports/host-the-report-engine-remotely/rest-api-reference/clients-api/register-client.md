@@ -5,6 +5,7 @@ description: "Learn how to make the Register Client request to the Telerik Repor
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client
 tags: register,client
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-api-register-client,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/clients-api/
 ---

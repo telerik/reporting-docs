@@ -5,6 +5,7 @@ description: "Learn more about the ReportSource JSON Entity in Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource
 tags: reportsource
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 9
 previous_url: /telerik-reporting-rest-json-entities-reportsource,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities/
 ---

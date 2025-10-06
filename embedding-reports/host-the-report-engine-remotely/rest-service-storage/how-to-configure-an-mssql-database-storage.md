@@ -5,6 +5,7 @@ description: "Learn how to Configure an MSSQL Database Storage for the Telerik R
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage
 tags: how,to,configure,an,mssql,database,storage,tutorial
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-howto-use-mssql-storage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage
 ---

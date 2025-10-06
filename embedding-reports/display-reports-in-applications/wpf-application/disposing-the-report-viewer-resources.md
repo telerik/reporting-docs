@@ -5,6 +5,7 @@ description: "Learn how to dispose of the WPF Report Viewer Resources when displ
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/disposing-the-report-viewer-resources
 tags: disposing,the,wpf,report,viewer,resources
 published: True
+reporting_area: WPF
 position: 4
 previous_url: /wpf-report-viewer-disposing-resources
 ---

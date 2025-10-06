@@ -5,6 +5,7 @@ description: Creating a report from scratch with the Web Report Designer offered
 slug: web-report-designer-user-guide-getting-started
 tags: web, report, design, tool, create, started 
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 8
 ---
 <style>

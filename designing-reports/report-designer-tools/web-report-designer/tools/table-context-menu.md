@@ -5,6 +5,7 @@ description: "Learn about the major items in the Context Menu of the Table item 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-context-menu
 tags: context, menu, web, designer
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 9
 ---
 

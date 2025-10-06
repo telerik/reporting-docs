@@ -5,6 +5,7 @@ description: "Learn more about the available accessibility features in the Windo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/accessibility
 tags: windows, forms, accessibility
 published: True
+reporting_area: WinForms
 position: 6
 previous_url: /winforms-report-viewer-accessibility
 ---

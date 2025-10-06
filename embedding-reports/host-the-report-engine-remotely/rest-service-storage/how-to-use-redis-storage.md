@@ -5,6 +5,7 @@ description: "Learn how to Configure and Use a Redis Storage for the Telerik Rep
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage
 tags: how,to,use,redis,storage,tutorial
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 2
 previous_url: /telerik-reporting-rest-howto-use-redis-storage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage
 ---

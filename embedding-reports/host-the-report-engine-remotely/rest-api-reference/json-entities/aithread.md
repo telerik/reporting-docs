@@ -5,6 +5,7 @@ description: "Learn more about the AiThread JSON Entity in Telerik Reporting RES
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/aithread
 tags: aithread
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 0
 ---
 

@@ -5,6 +5,7 @@ description: "Learn How to configure and use the HTML5 ASP.NET Web Forms Report 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service
 tags: how,to,use,html5,asp.net,web,forms,report,viewer,with,rest,service
 published: True
+reporting_area: WebFormsWrapper
 position: 1
 previous_url: /webforms-report-viewer-controls-embedding
 ---

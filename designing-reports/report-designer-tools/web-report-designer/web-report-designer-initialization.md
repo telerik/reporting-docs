@@ -5,6 +5,7 @@ description: "Learn more about the initialization options of the Telerik Web Rep
 slug: telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization
 tags: report,webreportdesigner,initialization
 published: True
+reporting_area: WRDHTML5
 position: 7
 ---
 

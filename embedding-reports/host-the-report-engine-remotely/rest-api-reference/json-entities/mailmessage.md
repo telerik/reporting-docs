@@ -5,6 +5,7 @@ description: "Learn more about the MailMessage JSON Entity in Telerik Reporting 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage
 tags: mailmessage
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 5
 previous_url: /telerik-reporting-rest-json-entities-mailmessage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage
 ---

@@ -5,6 +5,7 @@ description: "Learn how the default parameter editors can be changed from the in
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-change-parameter-editors-type
 tags: how,to,change,parameter,editors,type
 published: True
+reporting_area: MVCWrapper
 position: 3
 previous_url: /html5-mvc-report-viewer-change-parameters-editors-type
 ---

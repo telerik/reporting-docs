@@ -5,6 +5,7 @@ description: "Learn which elements build the structure of the reports created in
 slug: user-guide/report-structure
 tags: telerik, reporting, report, structure, groups, sections, items
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 10
 ---
 

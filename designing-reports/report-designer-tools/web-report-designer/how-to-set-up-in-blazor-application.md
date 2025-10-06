@@ -5,6 +5,7 @@ description: "Learn how to set up the Blazor Web Report Designer and the require
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application
 tags: how,to,set,up,web,report,designer,in,a,blazor,webapp,wasm,webassembly,server,application
 published: True
+reporting_area: WRDBlazorWrapper, WRDRestServiceCore
 position: 2
 previous_url: /how-to-blazor-web-report-designer
 ---

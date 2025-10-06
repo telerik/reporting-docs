@@ -5,6 +5,7 @@ description: "Learn how to make the Create AI Thread request to the Telerik Repo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/create-ai-thread
 tags: create,ai,thread
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 1
 ---
 

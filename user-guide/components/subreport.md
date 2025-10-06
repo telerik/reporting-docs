@@ -5,6 +5,7 @@ description: Learn how to use SubReports in the Web Report Designer to embed rep
 slug: web-report-designer-user-guide-components-subreport
 tags: web, report, design, components, subreport, hierarchy, master, detail
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 3
 ---
 

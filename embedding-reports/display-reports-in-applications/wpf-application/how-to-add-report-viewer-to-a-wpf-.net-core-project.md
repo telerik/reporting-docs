@@ -5,6 +5,7 @@ description: "Learn how to start using the Telerik Reporting WPF Report Viewer i
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project
 tags: how,to,add,report,viewer,to,a,wpf,.net,core,project
 published: True
+reporting_area: WPF
 position: 2
 previous_url: /wpf-report-viewer-add-to-net-core-project
 ---

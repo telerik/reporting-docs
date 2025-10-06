@@ -5,6 +5,7 @@ description: "Learn how to start using the WPF Report Viewer in.NET Framework th
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project
 tags: how,to,add,report,viewer,to,a,wpf,.net,framework,project
 published: True
+reporting_area: WPF
 position: 1
 previous_url: /wpf-report-viewer-embedding-the-viewer
 ---

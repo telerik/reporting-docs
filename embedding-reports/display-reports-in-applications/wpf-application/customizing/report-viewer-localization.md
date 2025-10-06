@@ -5,6 +5,7 @@ description: "Learn how the Telerik Reporting WPF Report Viewer can be localized
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/report-viewer-localization
 tags: report,viewer,localization
 published: True
+reporting_area: WPF
 position: 1
 previous_url: /report-viewer-localization2, /embedding-reports/display-reports-in-applications/wpf-application/report-viewer-localization
 ---

@@ -5,6 +5,7 @@ description: "Learn more about the DocumentInfo JSON Entity in Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo
 tags: documentinfo
 published: True
+reporting_area: RESTService, RESTServiceCore
 position: 2
 previous_url: /telerik-reporting-rest-json-entities-documentinfo,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo
 ---

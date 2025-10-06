@@ -5,6 +5,7 @@ description: "Learn how to change the corner radius of the WPF Report Viewer in 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/customizing/how-to-use-rounded-corners
 tags: how,to,use,rounded,corners,border,radius
 published: True
+reporting_area: WPF
 position: 0
 ---
 

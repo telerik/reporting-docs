@@ -5,6 +5,7 @@ description: "Learn how the HTML5 MVC Report Viewer client events can be handled
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/client-events
 tags: client,events
 published: True
+reporting_area: MVCWrapper
 position: 6
 previous_url: /html5-mvc-report-viewer-customizing-client-events
 ---

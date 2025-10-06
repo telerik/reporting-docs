@@ -15,11 +15,11 @@ The Native Blazor Report Viewer exposes **events** that will be emitted at vario
 
 ## OnRenderingBegin
 
-Occurs before rendering the report. *The event is triggered only on preview. The export operation has a dedicated event.*
+Occurs before rendering the report. _The event is triggered only on preview. The export operation has a dedicated event._
 
-This event has one argument of type `RenderingBeginEventArgs` which represents the device information settings that will be used for the rendering of the report in the `HTML5`/`HTML5Interactive` format.  Sample usage:
+This event has one argument of type `RenderingBeginEventArgs` which represents the device information settings that will be used for the rendering of the report in the `HTML5`/`HTML5Interactive` format. Sample usage:
 
-````CSHTML
+```RAZOR
 <ReportViewer @ref="reportViewer1"
 	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
 	@bind-ReportSource="@ReportSource"
@@ -27,27 +27,27 @@ This event has one argument of type `RenderingBeginEventArgs` which represents t
 	Height="800px"
 	Width="100%"
 	OnRenderingBegin="@RenderingBegin"></ReportViewer>
-	
+
 @code {
 	ReportViewer reportViewer1;
 	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-	
+
 	void RenderingBegin(RenderingBeginEventArgs args)
 	{
 		// Enable search in the rendered document
 		args.EnableSearch = true; //default value
 	}
 }
-````
+```
 
 ## OnRenderingEnd
 
-Occurs after the rendering of the report finishes. *The event is triggered only on preview. The export operation has a dedicated event.*
-This event has one argument of type `RenderingEndEventArgs` which represents the returned [DocumentInfo entity]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo%}) at the end of the report rendering. 
+Occurs after the rendering of the report finishes. _The event is triggered only on preview. The export operation has a dedicated event._
+This event has one argument of type `RenderingEndEventArgs` which represents the returned [DocumentInfo entity]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo%}) at the end of the report rendering.
 
-Sample usage: 
+Sample usage:
 
-````CSHTML
+```RAZOR
 <ReportViewer @ref="reportViewer1"
 	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
 	@bind-ReportSource="@ReportSource"
@@ -55,18 +55,18 @@ Sample usage:
 	Height="800px"
 	Width="100%"
 	OnRenderingEnd="@RenderingEnd"></ReportViewer>
-	
+
 @code {
 	ReportViewer reportViewer1;
 	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-	
+
 	async Task RenderingEnd(RenderingEndEventArgs args)
 	{
 		// Display alert with the page count of the rendered report
 		await JsRuntime.InvokeVoidAsync("alert", $"The total page count of rendered report is: {args.PageCount}");
 	}
 }
-````
+```
 
 ## OnExportStart
 
@@ -76,9 +76,9 @@ Occurs before exporting the report. This event has one argument of type `ExportS
 - Format - The document format of the exported report.
 - IsCancelled - Prevents the default render and export operation. Default value: `false`.
 
-Sample usage: 
+Sample usage:
 
-````CSHTML
+```RAZOR
 <ReportViewer @ref="reportViewer1"
 	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
 	@bind-ReportSource="@ReportSource"
@@ -86,11 +86,11 @@ Sample usage:
 	Height="800px"
 	Width="100%"
 	OnExportStart="@ExportStart"></ReportViewer>
-	
+
 @code {
 	ReportViewer reportViewer1;
 	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-	
+
 	async Task ExportStart(ExportStartEventArgs args)
 	{
 		// Cancel CSV exporting
@@ -101,8 +101,7 @@ Sample usage:
 		}
 	}
 }
-````
-
+```
 
 ## OnExportEnd
 
@@ -113,9 +112,9 @@ Occurs after exporting the report. This event has one argument of type `ExportEn
 - Handled - Prevents the default export operation. Default value: `false`.
 - WindowOpenTarget - Changes the `target` attribute specifying where to open the browser window. Default value is `self`.
 
-Sample usage: 
+Sample usage:
 
-````CSHTML
+```RAZOR
 <ReportViewer @ref="reportViewer1"
 	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
 	@bind-ReportSource="@ReportSource"
@@ -123,11 +122,11 @@ Sample usage:
 	Height="800px"
 	Width="100%"
 	OnExportEnd="@ExportEnd"></ReportViewer>
-	
+
 @code {
 	ReportViewer reportViewer1;
 	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-	
+
 	void ExportEnd(ExportEndEventArgs args)
 	{
 		// Change the window's open target
@@ -137,10 +136,9 @@ Sample usage:
 		}
 	}
 }
-````
-
+```
 
 ## See Also
 
-* [Blazor Basics: Blazor Event Callbacks](https://www.telerik.com/blogs/blazor-basics-event-callbacks)
-* [ASP.NET Core Blazor event handling](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling)
+- [Blazor Basics: Blazor Event Callbacks](https://www.telerik.com/blogs/blazor-basics-event-callbacks)
+- [ASP.NET Core Blazor event handling](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/event-handling)

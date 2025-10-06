@@ -26,15 +26,15 @@ Considering the variety of types of report parameters, we have created a `Parame
 - `ParameterSingleSelectTemplate` - Can be used for single-value report parameter with `AvailableValues`. Applied to every report parameter that has `AvailableValues`, regardless of its underlying type (string, long, etc.)
 - `ParameterMultiSelectTemplate` - Can be used for multiple-values report parameter with `AvailableValues`. Applied to every report parameter that has `AvailableValues` and can have multiple selected values, regardless of its underlying type (string, long, etc.)
 
->note A Report Parameter can have multiple selectable values when its [MultiValue](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_MultiValue) property is `True`.
+> note A Report Parameter can have multiple selectable values when its [MultiValue](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_MultiValue) property is `True`.
 
 ## Examples of setting the parameter editor for each type with the default widgets
 
-A custom editor can be set for one or more parameter templates. Each parameter template has access to a parameter named `context`. This is the `ReportParameterContext` object of the current report parameter. The `context` is the place where all information for the report parameter is stored. 
+A custom editor can be set for one or more parameter templates. Each parameter template has access to a parameter named `context`. This is the `ReportParameterContext` object of the current report parameter. The `context` is the place where all information for the report parameter is stored.
 
 The following examples use the default editors that we ship the report viewer with.
 
-````CSHTML
+```RAZOR
 <ReportViewer
 	ServiceUrl="/api/reports"
 	@bind-ReportSource="@ReportSource"
@@ -79,7 +79,7 @@ The following examples use the default editors that we ship the report viewer wi
 	</ParameterSingleSelectTemplate>
 	<ParameterMultiSelectTemplate>
 		@{ var selectedValue = ((IEnumerable)context.Parameter.Value).Cast<object>().ToList(); }
-	
+
 		<TelerikMultiSelect Data="@context.Parameter.AvailableValues"
 							Value="@selectedValue"
 							Filterable="true"
@@ -93,15 +93,15 @@ The following examples use the default editors that we ship the report viewer wi
 		</TelerikMultiSelect>
 	</ParameterMultiSelectTemplate>
 </ReportViewer>
-````
+```
 
->note The example serves to give example for each parameter template, since these are the default editors that we already ship with, there is no need to implement this.
+> note The example serves to give example for each parameter template, since these are the default editors that we already ship with, there is no need to implement this.
 
-## How to use a custom parameter editor - Blazor UI ListView 
+## How to use a custom parameter editor - Blazor UI ListView
 
 Let's try to use a widget that the Native Blazor Report Viewer is not able to use out of the box. For this example, we will use the Telerik Blazor UI's [`ListView`](https://demos.telerik.com/blazor-ui/listview/overview) widget. The code is as follows:
 
-````CSHTML
+```RAZOR
 <ReportViewer
 	ServiceUrl="/api/reports"
 	@bind-ReportSource="@ReportSource"
@@ -154,10 +154,10 @@ Let's try to use a widget that the Native Blazor Report Viewer is not able to us
 		reportParameterContext.Value = selectedValue;
 	}
 }
-````
+```
 
 In this example, we set the `ListView` widget to be used for both the `ParameterSingleSelectTemplate` and `ParameterMultiSelectTemplate` templates which means that all report parameters with available values will be rendered using the `ListView` widget, regardless of the type of the report parameter(string, DateTime, etc.)
 
 ## See Also
 
-* [Blazor UI ListView Templates](https://docs.telerik.com/blazor-ui/components/listview/templates)
+- [Blazor UI ListView Templates](https://docs.telerik.com/blazor-ui/components/listview/templates)

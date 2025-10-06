@@ -30,7 +30,7 @@ I need to prevent users from creating new database connections in the Web Report
 
 ## Solution
 
-To achieve this behavior, use a middleware to intercept the `/api/reportdesigner/connectionspermissions` request and modify the response. By returning an empty JSON or an object with all values set to `false`, you can disable the "Build new data connections" option.
+To stop users from creating new SQL database connections, use a middleware to intercept the `/api/reportdesigner/connectionspermissions` request and modify the response. By returning an empty JSON or an object with all values set to `false`, you can disable the "Build new data connections" option.
 
 ```csharp
 app.Use(async (context, next) =>

@@ -5,6 +5,7 @@ description: "Learn about report sections in Telerik Reporting, their types, pur
 slug: user-guide/components/report-sections
 tags: telerik, reporting, report, sections, components, building blocks, layout
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 6
 ---
 

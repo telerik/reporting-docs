@@ -5,6 +5,7 @@ description: "Learn what Telerik Web Report Designer is, its dependencies, and h
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview
 tags: overview,web,report,designer,tool,design,create,report,web reporting
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 0
 previous_url: /web-report-designer, /designing-reports/report-designer-tools/web-report-designer/
 ---

@@ -5,6 +5,7 @@ description: "Learn how to connect your business object with Telerik Reports thr
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard
 tags: objectdatasource,wizard
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 3
 previous_url: /web-report-designer-tools-objectdatasource-wizard
 ---

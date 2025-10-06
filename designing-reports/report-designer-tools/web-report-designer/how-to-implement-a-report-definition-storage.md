@@ -5,6 +5,7 @@ description: "Learn how to implement a custom report definition storage for the 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage
 tags: how,to,implement,a,report,definition,storage
 published: True
+reporting_area: WRDRestService, WRDRestServiceCore
 position: 5
 previous_url: /how-to-implement-a-report-definition-storage
 ---

@@ -5,6 +5,7 @@ description: Web Report Designer offers different Table Components that can be u
 slug: web-report-designer-user-guide-components-tables
 tags: web, report, design, components, table, list, crosstab
 published: True
+reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 2
 ---
 

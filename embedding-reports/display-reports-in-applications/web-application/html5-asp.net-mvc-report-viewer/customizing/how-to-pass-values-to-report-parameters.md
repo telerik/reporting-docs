@@ -5,6 +5,7 @@ description: "Learn how the values of the HTML5 MVC Report Viewer report paramet
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,to,pass,values,to,report,parameters
 published: True
+reporting_area: MVCWrapper
 position: 5
 previous_url: /mvc-report-viewer-howto-custom-parameters
 ---

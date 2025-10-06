@@ -5,6 +5,7 @@ description: "Learn about the requirements of the HTML5 ASP.NET MVC Report Viewe
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview
 tags: overview
 published: True
+reporting_area: MVCWrapper
 position: 0
 previous_url: /mvc-report-viewer-extension-overview, /embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/
 ---

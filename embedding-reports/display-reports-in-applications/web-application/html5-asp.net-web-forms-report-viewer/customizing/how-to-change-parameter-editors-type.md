@@ -5,6 +5,7 @@ description: "Learn How to Change Parameter Editors Type of the HTML5 ASP.NET We
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-change-parameter-editors-type
 tags: how,to,change,parameter,editors,type
 published: True
+reporting_area: WebFormsWrapper
 position: 3
 previous_url: /html5-webforms-report-viewer-change-parameters-editors-type
 ---

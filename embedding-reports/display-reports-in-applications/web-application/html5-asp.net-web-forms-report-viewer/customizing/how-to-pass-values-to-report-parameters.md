@@ -5,6 +5,7 @@ description: "Learn How to pass Values to Report Parameters from Components Loca
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,to,pass,values,to,report,parameters
 published: True
+reporting_area: WebFormsWrapper
 position: 5
 previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 ---

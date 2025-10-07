@@ -41,93 +41,88 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1.  Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET {{site.mindotnetversion}}+ is used) can serve static files:
 
-        ````CSharp
-
+    ```C#
     app.UseStaticFiles();
+    ```
 
-`````
+1.  Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-
-1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
-
-	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	@* For Reports service hosted in the same project: *@
-	<script src="/api/reports/resources/js/telerikReportViewer"></script>
-	@* For Reports service hosted in another application / Report Server use absolute URI: *@
-	@*<script src="https://demos.telerik.com/report-server/api/reports/resources/js/telerikReportViewer"></script>*@
-`````
+    ```HTML
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    @* For Reports service hosted in the same project: *@
+    <script src="/api/reports/resources/js/telerikReportViewer"></script>
+    @* For Reports service hosted in another application / Report Server use absolute URI: *@
+    @*<script src="https://demos.telerik.com/report-server/api/reports/resources/js/telerikReportViewer"></script>*@
+    ```
 
 1.  Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the **@** symbol as **@@**:
 
-        ````HTML
-
+    ```HTML
     <link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
+    ```
 
-`````
+1.  Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-
-1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
-
-	````HTML
-<script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
-`````
+    ```HTML
+    <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
+    ```
 
 1.  When using the Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
-        >note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service.
+    > note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service.
 
-        ````CSHTML
-
+    ```RAZOR
     @page "/"
     @_ For Blazor Web Apps, an interactive render mode should be used, for example: _@
     @_ @rendermode InteractiveServer _@
     @using Telerik.ReportViewer.Blazor
+
     <style>
-    #rv1 {
-    position: relative;
-    width: 1200px;
-    height: 600px;
-    }
+        #rv1 {
+            position: relative;
+            width: 1200px;
+            height: 600px;
+        }
     </style>
+
     <ReportViewer ViewerId="rv1"
-    ServiceUrl="/api/reports"
-    ReportSource="@(new ReportSourceOptions()
-    {
-    Report = "SampleReport.trdp"
-    })"
-    Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
-    ScaleMode="@(ScaleMode.Specific)"
-    Scale="1.0" />
+        ServiceUrl="/api/reports"
+        ReportSource="@(new ReportSourceOptions()
+        {
+            Report = "SampleReport.trdp"
+        })"
+        Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
+        ScaleMode="@(ScaleMode.Specific)"
+        Scale="1.0" />
+    ```
 
-`````
+1.  When displaying reports from a Report Server instance, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
+    ```RAZOR
+    @page "/"
+    @* For Blazor Web Apps, an interactive render mode should be used, for example: *@
+    @* @rendermode InteractiveServer *@
+    @using Telerik.ReportViewer.Blazor
+    <style>
+    	#rv1 {
+    		position: relative;
+    		width: 1200px;
+    		height: 600px;
+    	}
+    </style>
+    <ReportViewer
+        ViewerId="rv1"
+        ReportServer="@(new ReportServerOptions {
+                     Url = "https://demos.telerik.com/report-server/",
+                     Username = "demouser",
+                     Password = "demopass"
+                    })"
+        ReportSource="@(new ReportSourceOptions() { Report = "Published/Dashboard" })"
+        ScaleMode="@(ScaleMode.Specific)"
+        Scale="1.0" />
+    ```
 
-1. When displaying reports from a Report Server instance, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
-
-	````CSHTML
-@page "/"
-	@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-	@* @rendermode InteractiveServer *@
-	@using Telerik.ReportViewer.Blazor
-	<style>
-		#rv1 {
-			position: relative;
-			width: 1200px;
-			height: 600px;
-		}
-	</style>
-	<ReportViewer ViewerId="rv1"
-				  ReportServer="@(new ReportServerOptions {  Url = "https://demos.telerik.com/report-server/", Username = "demouser", Password = "demopass" })"
-				  ReportSource="@(new ReportSourceOptions()
-								  {
-										Report = "Published/Dashboard"
-								  })"
-				  ScaleMode="@(ScaleMode.Specific)"
-				  Scale="1.0" />
-`````
-
-1. Finally, run the project to see the rendered report.
+1.  Finally, run the project to see the rendered report.
 
 ## See Also
 

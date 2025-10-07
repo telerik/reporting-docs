@@ -18,31 +18,31 @@ This topic explains how to update the report parameters with values passed from 
 
 1. Add the custom UI in your application. For example:
 
-	````HTML
-<button (click)="onButtonClick(value)">Update parameter value</button>
-````
+   ```HTML
+   <button (click)="onButtonClick(value)">Update parameter value</button>
+   ```
 
 1. Declare the variable for the viewer and update the viewer's report source with a new parameter value:
 
-	````TypeScript
-import { Component, ViewChild } from '@angular/core';
-	import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
+   ```TypeScript
+   import { Component, ViewChild } from '@angular/core';
+   import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
 
-	export class AppComponent {
-		@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+   export class AppComponent {
+   	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
 
-		onButtonClick(param: string) {
-			var rs = {
-				report: 'Invoice.trdp',
-				parameters: { OrderNumber: param }
-			};
-			this.viewer.setReportSource(rs);
-		}
-	}
-````
+   	onButtonClick(param: string) {
+   		var rs = {
+   			report: 'Invoice.trdp',
+   			parameters: { OrderNumber: param }
+   		};
+   		this.viewer.setReportSource(rs);
+   	}
+   }
+   ```
 
-	The `setReportSource(rs)` method will automatically refresh the report with the new parameter values.
+   The `setReportSource(rs)` method will automatically refresh the report with the new parameter values.
 
 ## See Also
 
-* [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
+- [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})

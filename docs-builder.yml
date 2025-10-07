@@ -59,6 +59,9 @@ meta:
   ai-coding-assistant:
     position: 11
     title: "AI Coding Assistant"
+  user-guide:
+    position: 12
+    title: "Web Designer - User Guide"
   ide-integration:
     position: 15
     title: "IDE Integration"

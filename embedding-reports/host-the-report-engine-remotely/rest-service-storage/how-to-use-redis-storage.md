@@ -16,7 +16,7 @@ This article explains how to use [Redis Storage](https://redis.io/) for the Repo
 
 ## Adding the necessary dependencies
 
-The `Telerik.Reporting.Cache.StackExchangeRedis` assembly is required for Telerik Reporting to access a Redis database. This assembly uses the __StackExchange.Redis__ client library.
+The `Telerik.Reporting.Cache.StackExchangeRedis` assembly is required for Telerik Reporting to access a Redis database. This assembly uses the **StackExchange.Redis** client library.
 
 ### Using the Telerik NuGet repository:
 
@@ -26,16 +26,19 @@ Add a NuGet package reference to the `Telerik.Reporting.Cache.StackExchangeRedis
 
 1. In your application project add reference to the [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis) NuGet package with version 2.8.16 or greater. This will add a dll reference to StackExchange.Redis.dll.
 
-	>When using greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced dll version.
+   > When using greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced dll version.
 
 1. Add а reference to the `Telerik.Reporting.Cache.StackExchangeRedis` library located in the `{Telerik Reportng installation folder}/Bin` or `{Telerik Reportng installation folder}/Bin/netstandard2.0` folder, depending on whether you have a .NET Framework or a .NET project respectively.
 
 ## Using the Redis storage
 
-Where needed in your application create an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) class. It takes as a parameter an __StackExchange.Redis.ConnectionMultiplexer__ object which should be reused for the application lifetime. See [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md) for more information.
+Where needed in your application create an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) class. It takes as a parameter an **StackExchange.Redis.ConnectionMultiplexer** object which should be reused for the application lifetime.
+
+See [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md) for more information.
 
 ## See Also
 
-* [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
-* [REST Report Service Configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
-* [Binding Redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element)
+- [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md)
+- [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
+- [REST Report Service Configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+- [Binding Redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element)

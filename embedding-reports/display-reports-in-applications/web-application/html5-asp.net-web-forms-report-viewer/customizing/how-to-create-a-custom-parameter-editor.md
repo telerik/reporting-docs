@@ -53,8 +53,7 @@ function createSingleSelectEditor(placeholder, options) {
 	};
 }
 ```
-
-```XML
+```HTML
 </telerik:ReportViewer>
 	<ParameterEditors SingleSelectEditor="createSingleSelectEditor"/>
 </telerik:ReportViewer>
@@ -109,7 +108,7 @@ function createCustomEditor(placeholder, options) {
 
 Passing the parameter editor to the viewer:
 
-```XML
+```HTML
 </telerik:ReportViewer>
 	<ParameterEditors>
 		<CustomEditors>

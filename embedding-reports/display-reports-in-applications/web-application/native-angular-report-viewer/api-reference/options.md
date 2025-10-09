@@ -11,8 +11,15 @@ previous_url: /embedding-reports/display-reports-in-applications/web-application
 ---
 
 <style>
+
+table {
+	color: var(--text-secondary) !important;
+	margin: auto;
+}
+
 table th:first-of-type {
 	width: 30%;
+	text-align: center !important;
 }
 table th:nth-of-type(2) {
 	width: 70%;

@@ -1,5 +1,5 @@
 ---
-title: Integration with Reporting REST Service
+title: Using Reporting REST Service
 page_title: Using Native Angular Report Viewer with a Reporting REST Service
 description: "Learn how the Native Angular Report Viewer can be implemented in an Angular application that connects to a Reporting service with a few simple steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service
@@ -26,15 +26,15 @@ The following list describes the prerequisites for completing the tutorial:
 1.  Create a new Angular application using the [Angular CLI](https://angular.io/cli).
 1.  Install the Native Angular Report Viewer NPM package with the following command:
 
-        ````powershell
-        npm install @progress/telerik-angular-native-report-viewer
-        ````
+    ```powershell
+    npm install @progress/telerik-angular-native-report-viewer
+    ```
 
-        >If you receive a *403 Forbidden Error*, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
-        >
-        >````powershell
-        >npm login --registry=https://registry.npmjs.org --scope=@progress
-		>````
+    > If you receive a _403 Forbidden Error_, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
+    >
+    > ```powershell
+    > npm login --registry=https://registry.npmjs.org --scope=@progress
+    > ```
 
 1.  Once installed, import the `ReportingAngularViewerModule` in [your application root module](https://angular.io/guide/ngmodules#!#angular-modularity):
 

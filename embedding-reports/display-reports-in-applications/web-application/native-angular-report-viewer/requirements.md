@@ -10,6 +10,11 @@ position: 1
 ---
 
 <style>
+table {
+	color: var(--text-secondary) !important;
+	margin: auto;
+}
+
 table th:first-of-type {
 	width: 10%;
 }

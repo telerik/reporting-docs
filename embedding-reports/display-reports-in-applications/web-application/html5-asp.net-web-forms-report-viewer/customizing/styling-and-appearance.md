@@ -18,15 +18,15 @@ The required stylesheets are provided automatically through a `HTTPHandler` via 
 
 Below is an example of how to do that:
 
-```XML
+```HTML
 <head>
 	<!--kendo.all.min.js can be used as well instead of kendo.web.min.js, kendo.mobile.min.js or telerikReportViewer-kendo-->
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js"> </script>
 	<!--kendo.mobile.min.js - optional, if gestures/touch support is required-->
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.min.js"> </script>
 
 	<!--telerikReportViewer-kendo - optional, if you need to use a theme different from the default one-->
-	<script src="/api/reports/resources/js/telerikReportViewer-kendo" /script>
+	<script src="/api/reports/resources/js/telerikReportViewer-kendo"> </script>
 
 	<!-- the required Kendo styles -->
 	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />

@@ -27,10 +27,10 @@ The following list describes the prerequisites for this tutorial:
 
   ```XML
   <connectionStrings>
-  		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-  					connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-  					providerName="System.Data.SqlClient" />
-  	</connectionStrings>
+    <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+        connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+        providerName="System.Data.SqlClient" />
+  </connectionStrings>
   ```
 
   **appsettings.json** file:
@@ -38,10 +38,10 @@ The following list describes the prerequisites for this tutorial:
   ```JSON
   {
   	"ConnectionStrings": [
-  		{
-  			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-  			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-  			"providerName": "System.Data.SqlClient"
+  	    {
+  		 "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+  		 "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+  		 "providerName": "System.Data.SqlClient"
   		}
   	]
   }
@@ -72,22 +72,15 @@ The following list describes the prerequisites for this tutorial:
 
 1.  Add the React Report Viewer to the React component:
 
-    ```JavaScript
+    ```JSX
     export function ReportViewer() {
 
     let viewer;
-    const reportSource = {
-    				report: 'Report Catalog.trdp',
-    				parameters: {}
-    			};
-    const viewerContainerStyle = {
-    				position: 'absolute',
-    				inset: '5px'
-    			};
+    const reportSource = { report: 'Report Catalog.trdp', parameters: {} };
+    const viewerContainerStyle = { position: 'absolute', inset: '5px' };
 
-    return (
-    <>
-    	<TelerikReportViewer
+    return (<>
+    	    <TelerikReportViewer
     			ref={el => viewer = el}
     			serviceUrl="http://localhost:59657/api/reports/"
     			reportSource={reportSource}
@@ -96,9 +89,9 @@ The following list describes the prerequisites for this tutorial:
     			scaleMode="SPECIFIC"
     			scale={1.0}
     			enableAccessibility={false} />
-    	<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-    	<button onClick={ () => viewer.commands.print.exec() }>Print</button>
-    <>)
+    	    <button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
+    	    <button onClick={ () => viewer.commands.print.exec() }>Print</button>
+        </>)
     }
     ```
 

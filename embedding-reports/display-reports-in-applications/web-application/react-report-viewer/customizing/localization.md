@@ -40,34 +40,25 @@ The article elaborates on how to localize the messages displayed by the React Re
 
 3. Use the [useEffect hook](https://reactjs.org/docs/hooks-effect.html) to extend the viewer object with the string resources for the desired culture after the component has mounted:
 
-   ```TypeScript
+   ```JSX
    export function ReportViewer() {
 
    	const viewerRef = useRef(null);
    	const [language, setLanguage] = useState(navigator.language);
-   	const reportSource = {
-   			report: 'Dashboard.trdx',
-   			parameters: {}
-   		};
-   	const viewerContainerStyle = {
-   			position: 'absolute',
-   			inset: '5px',
-   			overflow: 'hidden',
-   			clear: 'both',
-   			fontFamily: 'ms sans serif'
-   		};
+   	const reportSource = { report: 'Dashboard.trdx', parameters: {} };
+   	const viewerContainerStyle = { position: 'absolute', inset: '5px', fontFamily: 'ms sans serif' };
 
    	useEffect(() => {
-   		if (viewerRef) {
+   	 	if (viewerRef) {
    		const { viewerObject } = viewerRef.current;
    		switch (language) {
-   				case "ja":
-   					viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.japanese);
-   					break;
-   				default:
-   					viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.english);
-   					break;
-   				}
+   		 case "ja":
+   			viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.japanese);
+   			break;
+   		 default:
+   			viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.english);
+   			break;
+   		 }
    		}
    	}, [language])
 

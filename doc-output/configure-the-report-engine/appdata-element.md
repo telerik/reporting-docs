@@ -32,36 +32,38 @@ __`<appData>` element__
 
 ## Example
 
-Windows-based example:
-    
+### Windows
+
 ````XML
 <configuration>
-    …
+  <configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
     <Telerik.Reporting>
-        <appData path="c:\temp" />
+        <appData path="C:\temp" />
     </Telerik.Reporting>
-    …
 </configuration>
-````    
+````
 ````JSON
 "telerikReporting": {
   "appData": {
-    "path": "c:\\temp"
+    "path": "C:\\temp"
   }
 }
 ````
 
-Unix-based example:
+### Unix(Linux/Mac):
 
 ````XML
 <configuration>
-    …
+	<configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
     <Telerik.Reporting>
         <appData path="/tmp/reportingAppData" />
     </Telerik.Reporting>
-    …
 </configuration>
-````    
+````
 ````JSON
 "telerikReporting": {
   "appData": {

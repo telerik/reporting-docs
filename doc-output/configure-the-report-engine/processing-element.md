@@ -32,8 +32,6 @@ The Processing element specifies the configuration settings that will be applied
 
 ### Example
 
-XML-based configuration file:
-
 ````XML
 <Telerik.Reporting>
 	<processing cacheDefinitionProperties="false">
@@ -70,9 +68,6 @@ XML-based configuration file:
 	</processing>
 </Telerik.Reporting>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"processing": {

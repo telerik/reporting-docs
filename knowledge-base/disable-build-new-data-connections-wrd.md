@@ -48,5 +48,5 @@ app.Use(async (context, next) =>
 
 ## See Also
 
-* [Web Report Designer Overview]({%slug web-report-designer/overview%})
+* [Web Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [SqlDataSource Wizard Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%})

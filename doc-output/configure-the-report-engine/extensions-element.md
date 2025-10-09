@@ -73,11 +73,11 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 
 ## Example
 
-XML-based configuration file:
-    
 ````XML
 <configuration>
-    …
+    <configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
     <Telerik.Reporting>
         <extensions>
             <render>
@@ -89,12 +89,8 @@ XML-based configuration file:
             </render>
         </extensions>
     </Telerik.Reporting>
-    …
 </configuration>
 ````
-
-JSON-based configuration file:
-    
 ````JSON
 "telerikReporting": {
 	"extensions": [
@@ -120,8 +116,6 @@ You should also specify the `description` attribute of the Extension element. Th
 
 The following example illustrates how to use the default Image rendering extension (which produces `TIFF` output) alongside a second instance that outputs reports in `EMF`. Notice that the extension name distinguishes one instance from the other: 
 
-XML-based configuration file:
-    
 ````XML
 <Telerik.Reporting>
     <extensions>
@@ -137,9 +131,6 @@ XML-based configuration file:
     </extensions>
 </Telerik.Reporting>
 ````
-
-JSON-based configuration file:
-    
 ````JSON
 "telerikReporting": {
 	"extensions": [

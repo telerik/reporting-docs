@@ -35,13 +35,9 @@ XML-based configuration file:
 
 ````XML
 <Telerik.Reporting>
-	...
 	<dpiAware dpiAwareness="PROCESS_SYSTEM_DPI_AWARE"></dpiAware>
 </Telerik.Reporting>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"dpiAware": {

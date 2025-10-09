@@ -62,8 +62,6 @@ __`<ragSettings>` element__
 
 The following code example demonstrates how to configure the Reporting engine with an Azure OpenAI client that uses the GPT-4o mini model variant. In addition, the AI functionality is limited to a few predefined prompts that enable it to summarize and translate the report.
 
-XML-based configuration file:
-
 ````XML
 <?xml version="1.0"?>
 <configuration>
@@ -84,12 +82,8 @@ XML-based configuration file:
 			</predefinedPrompts>
 		</AIClient>
 	</Telerik.Reporting>
-...
 </configuration>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"AIClient": {

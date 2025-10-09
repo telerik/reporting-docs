@@ -53,12 +53,12 @@ The following sections describe attributes, child elements, and parent elements.
 
 The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares which folder will be used for font resolving. 
 
-XML-based configuration file: 
-    
 ````XML
 <?xml version="1.0"?>
 <configuration>
-...
+	<configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
     <Telerik.Reporting>
 		<fontLibrary useDefaultLocations ="false">
 			<fontLocations>
@@ -66,12 +66,8 @@ XML-based configuration file:
 			</fontLocations>
 		</fontLibrary>
   </Telerik.Reporting>
-...
 </configuration>
 ````
-
-JSON-based configuration file:
-    
 ````JSON
 "telerikReporting": {
 	"fontLibrary": {

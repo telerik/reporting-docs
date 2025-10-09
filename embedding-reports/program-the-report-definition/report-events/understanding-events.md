@@ -15,11 +15,11 @@ Delivering a Telerik Report to the end user is a process involving several stage
 
 ## Report Definition
 
-The Report Definition is created during the first stage of the life cycle. This is the actual.NET class that represents the report. It is an instance of __Telerik.Reporting.Report__ or an instance of a subclass of the __Telerik.Reporting.Report__ and contains information about report items and their properties. Each item contained in the report gets added to a tree structure formed from the Items property of the Report (the root) and the Items properties of its child items. Additionally, if you are using the Visual Studio Report Designer, for each added report item, by default the newly added item is also added as a private field of the report definition class, in order to be easily accessible after the InitializeComponent method call.
+The Report Definition is created during the first stage of the life cycle. This is the actual.NET class that represents the report. It is an instance of **Telerik.Reporting.Report** or an instance of a subclass of the **Telerik.Reporting.Report** and contains information about report items and their properties. Each item contained in the report gets added to a tree structure formed from the Items property of the Report (the root) and the Items properties of its child items. Additionally, if you are using the Visual Studio Report Designer, for each added report item, by default the newly added item is also added as a private field of the report definition class, in order to be easily accessible after the InitializeComponent method call.
 
 Let's illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
 
-> The __InitializeComponent__ method initializes (creates) a Report and its child items. It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
+> The **InitializeComponent** method initializes (creates) a Report and its child items. It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
 
 This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example [Telerik.Reporting.TextBox](/api/Telerik.Reporting.TextBox.html).
 
@@ -27,15 +27,17 @@ In order to programmatically change the report definition before rendering a rep
 
 ## Report Processing
 
-The second stage of the report life cycle involves combining the __report definition__ with the __data source__. The processing engine performs all grouping, sorting and filtering calculations and iterates over all records from the data source and creates the appropriate __processing items__ based on the item definitions created earlier and the actual data. Based on the original item definition (e.g. Telerik.Reporting.TextBox) and the actual data in the current record a new item instance is created. This item is called a __processing item__ (e.g. Telerik.Reporting.Processing.TextBox) and bears all characteristics of its definition item, but it is bound to the respective data field from the current record. While the definition TextBox's Value property may contain something like "=Fields.FirstName", the processing item's Value property will be equal to "John".
+The second stage of the report life cycle involves combining the **report definition** with the **data source**. The processing engine performs all grouping, sorting and filtering calculations and iterates over all records from the data source and creates the appropriate **processing items** based on the item definitions created earlier and the actual data.
 
-The Processing Engine provides the developer a way to intervene in this process. Just before the processing item is bound to data, the __ItemDataBinding__ event of its corresponding definition item is raised. By subscribing a listener for this event, the developer can modify the newly created processing item before it gets data-bound (i.e., definition expressions processed and result applied to the processing item). The __processing item instance__ is exposed to the event handler methods as the __sender__ parameter.
+Based on the original item definition (e.g. Telerik.Reporting.TextBox) and the actual data in the current record a new item instance is created. This item is called a **processing item** (e.g. Telerik.Reporting.Processing.TextBox) and bears all characteristics of its definition item, but it is bound to the respective data field from the current record. While the definition TextBox's Value property may contain something like "=Fields.FirstName", the processing item's Value property will be equal to "John".
 
-In the __ItemDataBinding__ event handler you may change any property of the processing instance of the item (e.g., positioning, stylization, item specific properties). Note that during the subsequent data binding the changed value will get overridden if there is an expression defined to be applied on the property in question.
+The Processing Engine provides the developer a way to intervene in this process. Just before the processing item is bound to data, the **ItemDataBinding** event of its corresponding definition item is raised. By subscribing a listener for this event, the developer can modify the newly created processing item before it gets data-bound (i.e., definition expressions processed and result applied to the processing item). The **processing item instance** is exposed to the event handler methods as the **sender** parameter.
 
-After the processing item has been data bound the __ItemDataBound__ event is raised. The purpose of this event is mainly to read the processing item instance property values, which result from expressions evaluation. You might also change values of the processing item instance properties, but for complex items this modification might not make effect as they are laid out and their inner content is already generated.
+In the **ItemDataBinding** event handler you may change any property of the processing instance of the item (e.g., positioning, stylization, item specific properties). Note that during the subsequent data binding the changed value will get overridden if there is an expression defined to be applied on the property in question.
 
-> Report Events are not intended to be used as a place/time to modify the report definition. As of  __Q3 2016__ any changes on the report items' definitions in processing stage events will not make effective change in the resulting report. Report definition properties are read and cached when the report processing gets started. In previous versions changes may take effect, resulting in changed output for all processing items processed after the event handler execution.
+After the processing item has been data bound the **ItemDataBound** event is raised. The purpose of this event is mainly to read the processing item instance property values, which result from expressions evaluation. You might also change values of the processing item instance properties, but for complex items this modification might not make effect as they are laid out and their inner content is already generated.
+
+> Report Events are not intended to be used as a place/time to modify the report definition. As of **Q3 2016** any changes on the report items' definitions in processing stage events will not make effective change in the resulting report. Report definition properties are read and cached when the report processing gets started. In previous versions changes may take effect, resulting in changed output for all processing items processed after the event handler execution.
 
 ## Report Rendering
 
@@ -43,4 +45,4 @@ After processing is over, the processed report is ready for rendering in one of 
 
 ## See Also
 
-* [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})
+- [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})

@@ -101,6 +101,7 @@ meta:
   knowledge-base:
     position: 200
     title: "Knowledge Base"
+    hideChildren: true
   api:
     position: 300
     title: "API Reference"

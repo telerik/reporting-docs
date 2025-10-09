@@ -12,14 +12,13 @@ previous_url: /telerik-reporting-rest-using-custom-report-resolver-and-document-
 
 # Implementing Custom ReportSource and ReportDocument Resolvers To Fully Control the Report in Run Time
 
-Most of [Telerik Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}), utilize [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}). They rely entirely on the latter to prepare and send the requested report documents. The Reporting engine is exposed by the REST Service and all the work related to report processing and rendering is done by the engine. The purpose of this article is to elaborate on how the report source information sent by the viewer is resolved to an object that can be processed by the Reporting engine, and where and how the developer may customize this process.
+Most of [Telerik Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}), utilize [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}). They rely entirely on the latter to prepare and send the requested report documents. 
+
+The Reporting engine is exposed by the REST Service and all the work related to report processing and rendering is done by the engine. The purpose of this article is to elaborate on how the report source information sent by the viewer is resolved to an object that can be processed by the Reporting engine, and where and how the developer may customize this process.
 
 > We recommend using the built-in tools for report customization that Telerik Reporting offers. These are 
-
 >* [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
-
 >* [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
-
 >* [Conditional Formattings]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 
 >The above tools allow you to use a variety of [Global Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) inside the report definition to modify its appearance in run-time. For example, based on the incoming data, [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) values and logged-in user. In most of the reporting scenarios, these tools should let you achieve your goals without custom code.
@@ -76,7 +75,9 @@ After this short introduction to the ReportSource resolver concept, we may demon
 
 ## How to assign data source dynamically to a report and one of its data items
 
-A common scenario that requires a custom ReportSource resolver is when you need to assign a data source dynamically to the report or other [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}). In this case, it is necessary to instantiate the report definition, set the data source to the report (and/or other data items), and return the modified report definition instance wrapped in an [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource). Here is a sample code that demonstrates the approach:
+A common scenario that requires a custom ReportSource resolver is when you need to assign a data source dynamically to the report or other [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}). In this case, it is necessary to instantiate the report definition, set the data source to the report (and/or other data items), and return the modified report definition instance wrapped in an [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource). 
+
+Here is a sample code that demonstrates the approach:
 
 ````C#
 using System.Collections.Generic;
@@ -118,7 +119,9 @@ namespace MyReportSourceResolverDemo
 }
 ````
 
-For the particular scenario, we pass the reports folder in the constructor of the custom ReportSource resolver so that the latter may find the report definitions. We assume that the *reportId* is the report name, for example, 'MyReportName.trdp' that should be looked for in this folder. We unpackage the report definition and on the proper request add the data source to the report and to its table. The server-side ReportSource that we return is *InstanceReportSource* with the modified report object. What deserves to be acknowledged here is that data source assignment, hence the data fetching happens only when needed.
+For the particular scenario, we pass the reports folder in the constructor of the custom ReportSource resolver so that the latter may find the report definitions. We assume that the *reportId* is the report name, for example, 'MyReportName.trdp' that should be looked for in this folder. We unpackage the report definition and on the proper request add the data source to the report and to its table. 
+
+The server-side ReportSource that we return is *InstanceReportSource* with the modified report object. What deserves to be acknowledged here is that data source assignment, hence the data fetching happens only when needed.
 
 ## What happens next?
 
@@ -132,7 +135,9 @@ The [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource) holds di
 
 And the [XmlReportSource](/api/Telerik.Reporting.XmlReportSource) has the XML of the report definition in its *Xml* property. This is the same XML that describes the report and can be found also in the TRDX report definition and inside the TRDP archive in the *definition.xml* file.
 
-From this reference to the report definition, the Reporting engine needs to extract an instance of the corresponding report. For example, from the Uri to the TRDP file it needs to make a *Telerik.Reporting.Report* object. For this reason, it utilizes the [IReportDocumentResolver](/api/Telerik.Reporting.Services.IReportDocumentResolver) interface. There is a default implementation for each of the above ReportSource types. For example, the document resolver for the *UriReportSource* utilizes the [ReportPackager](/api/Telerik.Reporting.ReportPackager) to instantiate the TRDP reports, and [ReportXmlSerializer](/api/Telerik.Reporting.XmlSerialization.ReportXmlSerializer) to deserialize the TRDX reports.
+From this reference to the report definition, the Reporting engine needs to extract an instance of the corresponding report. For example, from the Uri to the TRDP file it needs to make a *Telerik.Reporting.Report* object. For this reason, it utilizes the [IReportDocumentResolver](/api/Telerik.Reporting.Services.IReportDocumentResolver) interface. There is a default implementation for each of the above ReportSource types. 
+
+For example, the document resolver for the *UriReportSource* utilizes the [ReportPackager](/api/Telerik.Reporting.ReportPackager) to instantiate the TRDP reports, and [ReportXmlSerializer](/api/Telerik.Reporting.XmlSerialization.ReportXmlSerializer) to deserialize the TRDX reports.
 
 In the REST Service, you may specify your own *IReportDocumentResolver* implementation. It should be set to the property __ReportDocumentResolver__ of the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration). Why did we introduce it?
 
@@ -205,6 +210,6 @@ namespace MyReportSourceResolverDemo
 }
 ````
 
-Note that we set the data source for the main report in the *IReportSourceResolver* implementation. The reason is that we can do this only once when generating the report document. Remember that the *Resolve* method of the *IReportSourceResolver* gets called several times during the communication between the viewer and the service. In each of them, the *IReportDocumentResolver* is also called when resolving the main report. Hence, if we set its data source in the *IReportDocumentResolver.Resolve* method, the data source would be set every time, which is overhead.
-
-The resolving of the *SubReport.ReportSource*, on the other hand, happens once while processing the main report, and requires a single call to its *IReportDocumentResolver*. For that reason, we may set the subreport data source in the latter without worrying this may decrease the performance. Note that since we assumed the *SubReport.ReportSource* is a *UriReportSource* in the main report definition, we need to fetch its XML based on the *Uri* property, deserialize it, set the data sources if necessary, and return the final modified report instance.
+>note We set the data source for the main report in the *IReportSourceResolver* implementation. The reason is that we can do this only once when generating the report document. Remember that the *Resolve* method of the *IReportSourceResolver* gets called several times during the communication between the viewer and the service. In each of them, the *IReportDocumentResolver* is also called when resolving the main report. Hence, if we set its data source in the *IReportDocumentResolver.Resolve* method, the data source would be set every time, which is overhead.
+>
+>The resolving of the *SubReport.ReportSource*, on the other hand, happens once while processing the main report, and requires a single call to its *IReportDocumentResolver*. For that reason, we may set the subreport data source in the latter without worrying this may decrease the performance. Note that since we assumed the *SubReport.ReportSource* is a *UriReportSource* in the main report definition, we need to fetch its XML based on the *Uri* property, deserialize it, set the data sources if necessary, and return the final modified report instance.

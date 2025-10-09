@@ -345,6 +345,10 @@ meta:
     position: 199
     title: "ASP.NET Web Forms Report Viewer"
     hidden: true
+  embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview:
+    position: 200
+    title: "Telerik Reporting WCF Service"
+    hidden: true
 
   ### Displaying Reports subsection:
   embedding-reports/display-reports-in-applications/web-application:

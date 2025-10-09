@@ -1,5 +1,5 @@
 ---
-title: Pass Values to Report Parameters
+title: Report Parameter Values
 page_title: Passing Values to Report Parameters from a custom UI
 description: "Understand how to update the report parameters with values passed from a custom UI instead of using the report viewer's default parameters area, using the provided code snippets."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/how-to-pass-values-to-report-parameters
@@ -38,7 +38,7 @@ ReactDOM.render(
 
 **ReportViewer.js**:
 
-```JavaScript
+```JSX
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 import { React, useRef} from 'react';
@@ -47,18 +47,8 @@ import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
 
 export function ReportViewer() {
 	const viewerRef = useRef(null);
-
-	const reportSource = {
-			report: 'Invoice.trdx',
-			parameters: {}
-			};
-
-	const viewerContainerStyle = {
-			position: 'absolute',
-			inset: "5px",
-			overflow: 'hidden',
-			clear: 'both'
-			};
+	const reportSource = { report: 'Invoice.trdx', parameters: {} };
+	const viewerContainerStyle = { position: 'absolute', inset: "5px" };
 
 	return (
 		<>

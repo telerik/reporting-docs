@@ -22,12 +22,12 @@ img-max-width: 100%
 table-layout: fixed
 
 markdown-replacements:
-  # pointing (/api) links to the live api reference
-  - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
-    replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
-  # pointing (/reporting/api) links to the live api reference
-  - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
-    replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
+  # # pointing (/api) links to the live api reference
+  # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
+  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
+  # # pointing (/reporting/api) links to the live api reference
+  # - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
+  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
   # removing code snippets on build until the replacement tool is ready
   - pattern: \{\{source=.*?\}\}
     replacement: "code snippets"
@@ -100,7 +100,9 @@ meta:
     title: "Upgrade"
   knowledge-base:
     position: 200
+    res_type: kb
     title: "Knowledge Base"
+    relativeUrl: /knowledge-base
     hideChildren: true
   api:
     position: 300
@@ -113,6 +115,11 @@ meta:
   getting-started/installation:
     position: 6
     title: "Download & Installation"
+
+  ## User Guide section:
+  user-guide/components:
+    position: 1
+    title: "Components"
 
   ## Report Items section:
   report-items/barcode:
@@ -327,6 +334,9 @@ meta:
   embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities:
     position: 15
     title: "JSON Entities"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api:
+    position: 16
+    title: "Features API"
 
   ### Hidden From TOC
   embedding-reports/display-reports-in-applications/silverlight-application:

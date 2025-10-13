@@ -150,8 +150,7 @@ Below is a list of all options available during the initialization of the native
   			<ul>
   				<li><strong>ViewMode.Interactive</strong> - enables drill-down interactivity, etc;</li>
   				<li><strong>ViewMode.PrintPreview</strong> - the report is paged according to the page settings;
-  					For more information please see [Interactive vs. Print Layout]({% slug
-  					telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout %}).
+  					For more information please see <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout %}" target="_blank">Interactive vs. Print Layout</a>.
   					<br />
   					Default value is: <strong>ViewMode.Interactive</strong>
   				</li>
@@ -175,8 +174,7 @@ Below is a list of all options available during the initialization of the native
   	<tr>
   		<td>PrintMode</td>
   		<td>
-  			<p>Specifies how the viewer should [print reports]({% slug
-  			telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports %}).</p>
+  			<p>Specifies how the viewer should <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports %}" target="_blank">print reports</a>.</p>
   			<p>The available values are:</p>
   			<ul>
   				<li><strong>PrintMode.AutoSelect</strong> - specifies that the viewer should automatically decide
@@ -242,7 +240,7 @@ Below is a list of all options available during the initialization of the native
   		<td>
   			<p><i>List&lt;IReportViewerTool&gt;, optional;</i></p>
   			<p>A collection of tools that will be displayed in the toolbar.</p>
-  			<p>By default populates <strong>all available tools</strong> as listed in the [Customize the Toolbar of the Blazor Native Report Viewer]({% slug native-blazor-report-viewer/toolbar-customization %}) article.</p>
+  			<p>By default populates <strong>all available tools</strong> as listed in the <a href="{% slug native-blazor-report-viewer/toolbar-customization %}" target="_blank">Customize the Toolbar of the Blazor Native Report Viewer</a> article.</p>
   		</td>
   	</tr>
   	<tr>

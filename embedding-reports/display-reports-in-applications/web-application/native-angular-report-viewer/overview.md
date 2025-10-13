@@ -113,7 +113,7 @@ table th:nth-of-type(2) {
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
-		<td>Toggles the AI Prompt Dialog when the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality has been enabled.</td>
+		<td>Toggles the AI Prompt Dialog when the <a href="{% slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights %}" target="_blank">AI-Powered Insights</a> functionality has been enabled.</td>
 	</tr>	
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M448 32H32v448h448V32h-32zm0 416H64V64h384v384zM96 96h96v320H96z"></path></svg></td>

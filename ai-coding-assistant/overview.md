@@ -31,6 +31,10 @@ To use the Telerik Reporting AI Coding Assistant, you need:
 * An application that uses [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
 * A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited number of requests per year.
 
+> [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
+>
+> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers]({%slug ai-mcp-server%}). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
+
 ## Intended Use
 
 >warning Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.

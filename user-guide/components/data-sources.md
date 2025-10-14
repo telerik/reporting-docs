@@ -205,7 +205,7 @@ By clicking the **JSON Data Source** item in the **Components** tab, the JSON Da
 
 >note The **Data selector** (e.g. `$.store.book[?(@.price<10)]`) is a [JSONPath](https://goessner.net/articles/JsonPath/) string which will be used to query the data.
 
-|Wizard step|Description|
+|Wizard step|Description| 
 |----|----|
 |1. Choose a JSON source|Specify the JSON source that should be retrieved.|
 |2. Modify your JSON file|You can make the selected file inline and modify its content (relevant when using a JSON file in step 1).|

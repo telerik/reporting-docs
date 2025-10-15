@@ -15,6 +15,10 @@ The Telerik Reporting [GitHub Copilot](https://github.com/features/copilot) exte
 
 It enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about integrating Telerik Reporting into web applications, request specific implementations, and receive comprehensive code solutions.
 
+> [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
+>
+> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers]({%slug ai-mcp-server%}). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
+
 ## Prerequisites for the GitHub Copilot Extension
 
 In addition to the [prerequisites for the AI Coding Assistant]({%slug ai-coding-assistant%}#prerequisites-for-the-ai-coding-assistant), before using the Telerik Reporting GitHub Copilot extension, ensure you have:

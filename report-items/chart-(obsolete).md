@@ -65,12 +65,12 @@ To customize the Chart, right-click the item and select **Properties** from the
 
 * Marked zones&mdash;PlotArea marked zones are ranges that you can label and fill with color to highlight areas of the Chart or to visually group data. By default, the `MarkedZones` property displays behind the chart series. You can create any number of members for the `MarkedZones` collection and each marked zone is defined by a starting and ending X and Y value pairs. You can also control the labeling and appearance for each zone independently.
 
-* Styling&mdash;The Chart offers a set of [properties to modify the look and feel of its elements](/reporting/api/Telerik.Reporting.Chart).
+* Styling&mdash;The Chart offers a set of [properties to modify the look and feel of its elements](slug:Telerik.Reporting.Charting.Chart).
 
 ## Next Steps
 
 * [Telerik UI for ASP.NET AJAX Chart Documentation](https://docs.telerik.com/devtools/aspnet-ajax/controls/chart/overview)
-* [(API) Chart](/reporting/api/Telerik.Reporting.Chart)
+* [(API) Chart](/reporting/api/Telerik.Reporting.Charting.Chart)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 

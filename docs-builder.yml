@@ -22,6 +22,11 @@ img-max-width: 100%
 table-layout: fixed
 
 markdown-replacements:
+  - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
+    replacement: "[$1](/api/$2)"
+  - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
+    replacement: "[$1](slug:$2)"
+  ## LOCAL DEV API REF REPLACEMENT
   # # pointing (/api) links to the live api reference
   # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
   #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
@@ -107,6 +112,9 @@ meta:
   api:
     position: 300
     title: "API Reference"
+  api/*:
+    res_type: api
+    hideCta: true
 
   ## Getting Started section:
   getting-started/web-designer:
@@ -343,7 +351,7 @@ meta:
     position: 99
     title: "Silverlight Application"
     hidden: true
-  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-applicationn:
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application:
     position: 13
     title: "How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 Application"
     hidden: true

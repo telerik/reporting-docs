@@ -32,7 +32,7 @@ In Telerik Reporting, adjusting the position of the legend markers relative to t
 
 ### Using the Map Legend Styling and Formatting
 
-We may use the [Position](/api/telerik.reporting.graphlegend#Telerik_Reporting_GraphLegend_Position) property of the [GraphLegend](/api/telerik.reporting.graphlegend) to adjust the position of the Graph Legend: 
+We may use the [`Position`](slug:telerik.reporting.graphlegend#telerik_reporting_graphlegend_position) property of the [GraphLegend](slug:telerik.reporting.graphlegend) to adjust the position of the Graph Legend:
 
 ![Image of how to set the Position of the Graph Legend](images/GraphLegendPosition.png)
 
@@ -46,5 +46,5 @@ This image demonstrates how to customize the left padding of the legend item's s
 
 ## See Also
 
-* [API Reference: GraphSeriesBase.LegendItem Property](/api/telerik.reporting.graphseriesbase#collapsible-Telerik_Reporting_GraphSeriesBase_LegendItem)
-* [Formatting a Map Legend in Telerik Reporting]({%slug telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend%})
+- [API Reference: GraphSeriesBase.LegendItem Property](/api/telerik.reporting.graphseriesbase#collapsible-Telerik_Reporting_GraphSeriesBase_LegendItem)
+- [Formatting a Map Legend in Telerik Reporting]({%slug telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend%})

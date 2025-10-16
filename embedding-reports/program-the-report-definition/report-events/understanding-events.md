@@ -21,7 +21,7 @@ Let's illustrate this with an example. While in design-time, if you add a TextBo
 
 > The **InitializeComponent** method initializes (creates) a Report and its child items. It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
 
-This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example [Telerik.Reporting.TextBox](/api/Telerik.Reporting.TextBox.html).
+This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example [Telerik.Reporting.TextBox](slug:Telerik.Reporting.TextBox).
 
 In order to programmatically change the report definition before rendering a report you need to place your code in the constructor of the report, right after the InitializeComponent call (if present).
 

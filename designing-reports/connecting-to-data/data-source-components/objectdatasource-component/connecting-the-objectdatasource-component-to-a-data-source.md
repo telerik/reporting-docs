@@ -11,7 +11,7 @@ previous_url: /objectdatasource-connecting
 
 # Connecting the ObjectDataSource Component to a Data Source
 
-The purpose of the ObjectDataSource component is to provide business object data to data items in a declarative manner. The [ObjectDataSource.DataSource](/api/telerik.reporting.objectdatasource.html#Telerik_Reporting_ObjectDataSource_DataSource) property should be the [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0#System_Type_AssemblyQualifiedName) or the Type of the data access layer (class), where the reporting engine will use _System.Reflection_ to create the instance of the class by using its default constructor, and to execute its method specified by the `ObjectDataSource.DataMember` property.
+The purpose of the ObjectDataSource component is to provide business object data to data items in a declarative manner. The [ObjectDataSource.DataSource](/api/telerik.reporting.objectdatasource#Telerik_Reporting_ObjectDataSource_DataSource) property should be the [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0#System_Type_AssemblyQualifiedName) or the Type of the data access layer (class), where the reporting engine will use _System.Reflection_ to create the instance of the class by using its default constructor, and to execute its method specified by the `ObjectDataSource.DataMember` property.
 
 When you configure the ObjectDataSource component the settings below are obligatory to avoid runtime errors due to failed data retrieval:
 

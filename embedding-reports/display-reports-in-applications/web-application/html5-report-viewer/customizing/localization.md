@@ -73,6 +73,8 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
     menuPreviousPageTitle: "Previous Page",
     menuNextPageTitle: "Next Page",
     menuPageNumberTitle: "Page Number Selector",
+	menuPageText: "Page",
+    menuPageOfText: "of",
     menuDocumentMapTitle: "Toggle Document Map",
     menuParametersAreaTitle: "Toggle Parameters Area",
     menuZoomInTitle: "Zoom In",

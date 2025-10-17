@@ -193,7 +193,6 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
     };
     window.telerikReportViewer ||= {};
     window.telerikReportViewer.sr ||= sr;
-
 })();
 ````
 

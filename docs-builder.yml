@@ -3,40 +3,42 @@ path-prefix: /products/reporting/documentation
 product-id: 521
 product-name: Telerik Reporting
 product-url: https://www.telerik.com/products/reporting
+product-code: REPORTING
+product-trial-url: https://www.telerik.com/try/reporting
+contribute-url: https://github.com/telerik/reporting-docs/edit/master
 search-engine-id: 001595215763381649090:zzabynuukmu
 cta-overview: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out sign up for a free 30-day trial."
 cta-intro: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out sign up for a free 30-day trial."
 default-title-prefix: Telerik Reporting
+
+# images
 avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
+pdf-cover-png-path: ./images/pdf-cover.png
+img-max-width: 100%
+
+# tables and colors
 primary-color:
   light: "#1D8800"
   dark: "#68BF51"
-
-product-code: REPORTING
-product-trial-url: https://www.telerik.com/try/reporting
-contribute-url: https://github.com/telerik/reporting-docs/edit/master
 enable-tabbed-code-blocks: true
-#pdf-cover-png-path: ./images/pdf-cover.png
-img-max-width: 100%
 table-layout: fixed
 
+# regex replacements for markdown files
 markdown-replacements:
   - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
     replacement: "[$1](/api/$2)"
   - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
     replacement: "[$1](slug:$2)"
-  ## LOCAL DEV API REF REPLACEMENT
-  # # pointing (/api) links to the live api reference
-  # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
-  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
-  # # pointing (/reporting/api) links to the live api reference
-  # - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
-  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
   # removing code snippets on build until the replacement tool is ready
   - pattern: \{\{source=.*?\}\}
     replacement: "code snippets"
+  ## LOCAL DEV API REF REPLACEMENT
+  ##  pointing (/api) links to the live api reference
+  # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
+  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
 
+# liquid variables
 liquid-output-delimiter-left: "{{"
 liquid-output-delimiter-right: "}}"
 liquid:
@@ -53,6 +55,7 @@ liquid:
   mindotnetoutputdir: "\\bin\\Debug\\net8.0"
   dotnetversions: ".NET 8 and .NET 9"
 
+# table of contents and navigation
 meta:
   # Reporting Documentation Main Nodes:
   introduction:
@@ -363,9 +366,17 @@ meta:
     position: 199
     title: "ASP.NET Web Forms Report Viewer"
     hidden: true
-  embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview:
+  embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service:
     position: 200
     title: "Telerik Reporting WCF Service"
+    hidden: true
+  embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/host-reports-service-in-.net-core-2.1-and-2.2:
+    position: 210
+    title: "Host Reports Service in .NET Core 2.1 and 2.2"
+    hidden: true
+  embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1:
+    position: 220
+    title: "How to Host Reports Service in ASP.NET Core 3.1"
     hidden: true
 
   ### Displaying Reports subsection:

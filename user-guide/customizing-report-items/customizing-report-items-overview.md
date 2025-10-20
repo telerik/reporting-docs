@@ -1,6 +1,6 @@
 ---
-title: Styling Overview
-page_title: Web Report Designer - Styling Overview
+title: Overview
+page_title: Web Report Designer - Customizing Report Items Overview
 description: Learn how to customize the visuals of your report using the fine-grained, built-in styling model, similar to the Cascading Style Sheets (CSS) model.
 slug: web-report-designer-customizing-report-items
 tags: web, report, design, customize, style, condition, formatting, properties, area 
@@ -13,40 +13,50 @@ img[alt$="><"] {
 }
 </style>
 
-# Customizing Report Items
+# Customizing Report Items - Overview
 
 A well-styled report looks professional and polished. Styling report items serves both, functional and aesthetic, purposes. Visual consistency (e.g., using a theme or style rules) improves user experience and brand alignment. It allows you to improve readability and clarity in your reports. Applying different colors or fonts distinguishes separate sections or highlight key information.
 To customize or style report items in the Telerik Web Report Designer, you can use its built-in CSS-like styling model and the Properties panel.
 
-## Properties Area
+## Properties Area - What Is It For
 
-The **Properties Area** on the right side of the Web Report Designer **dynamically** displays the properties of the **currently selected** report item - such as a TextBox, Table, Chart, or Panel.
+The **Properties Area** lets you control how each report item looks and behaves. Whether you are working with a TextBox, Table, Chart, or Image, this panel gives you access to all the relevant settings in one place:
+
+* **Style your items**: Change fonts, colors, borders, background, padding, and more.
+* **Set data bindings**: Connect report items to fields or expressions from your data source.
+* **Adjust layout**: Modify size, position, alignment, and visibility.
+* **Apply conditional formatting**: Dynamically change appearance based on data values.
+* **Configure behavior**: Set actions like navigation, visibility rules, or interactivity.
 
 ![Customizing Report Items Properties Area ><](images/wrd-customizing-report-items-properties-area.png)  
 
-Key Features of the Properties Area are:
+## What Makes the Properties Area So Useful
 
-* **Categorized** and **Alphabetical** Views for easier navigation:
+The Properties Area in the Web Report Designer is designed to make customizing your report items smooth and intuitive. Here’s how it helps you work smarter:
+
+* **Switch Between Views That Work for You**: Choose the layout that fits your style:
+
+  * **Categorized View**: Groups properties by function (like Appearance, Layout, Data), making it easier to find what you need.
+  * **Alphabetical View**: Lists everything in order - perfect if you know exactly what you're looking for.
 
 |Categorized|Alphabetical|
 |----|----|
 |![Properties Area Categorized View ><](images/wrd-properties-area-categorized-area.png) |![Properties Area Alphabetical View><](images/wrd-properties-area-alphabetical-view.png)|
 
-* **Indent Line Guides**: These help visualize the hierarchy of nested properties, improving clarity: 
+* **Visualize Property Hierarchies with Indent Guides**: In case of nested properties Indent Line Guides help you see how settings are structured, so you can navigate complex items with confidence: 
 
 ![Indent Line Guides in Properties Area ><](images/wrd-properties-area-indent-line-guides.png)  
 
-* **Global Search**: A search bar at the top allows you to quickly find specific properties or editors.
+* **Find What You Need Fast**: Use the Global Search bar at the top to instantly locate any property or editor. No more scrolling through long lists!
 
 ![Properties Area Global Search ><](images/wrd-properties-area-global-search.gif)   
 
 
-### Reset Button in the Properties Area
+### Reset with a Click
 
-Each editable property in the Properties Area has a small square button next to it - this is the **Reset** button. It reverts the property to its `default` value which is useful when you have applied multiple changes and want to undo a specific one without affecting others. The Reset button helps maintain consistency, especially when working with styles or templates.
+If you have made a change you want to undo, note that each editable property has a `Reset button` next to it. Just click it to revert that setting to its default - without affecting anything else.
 
 ![Properties Area Reset Button ><](images/wrd-properties-area-reset-button.gif)    
-
 
 ## See Also
 

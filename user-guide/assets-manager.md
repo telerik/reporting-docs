@@ -15,11 +15,11 @@ img[alt$="><"] {
 
 # Sharing Resources with Assets Manager
 
-To share resources (like company logo, data files) when crafting reports in the [Web Report Designer](https://demos.telerik.com/reporting/designer), Telerik Reporting offers the **Assets Manager** tool. It is designed to help report authors manage shared resources used across multiple reports. It provides centralized resource management which allows uploading, organizing, renaming, and deleting various types of assets directly on the server. The **Assets Manager** reduces the time spent for managing resources individually for each report, ensures a unified consistent look and feel across reports and enables teams to work together - data experts can manage sources, while designers focus on presentation.
+To share resources (like company logo, data files) when crafting reports in the [Web Report Designer](https://demos.telerik.com/reporting/designer), Telerik Reporting offers the **Assets Manager** tool. It is designed to help report authors manage shared resources used across multiple reports. It provides centralized resource management which allows uploading, organizing, renaming, and deleting various types of assets directly on the server. The **Assets Manager** ensures a unified consistent look and feel across reports and enables teams to work together - data experts can manage sources, while designers focus on presentation.
  
 ![Assets Manager ><](images/wrd-assets-manager.png) 
 
-## What Resources Can Be Shared
+## What Resources You Can Share
 
 You can share and reuse:
 
@@ -35,29 +35,7 @@ You can share and reuse:
 
 Once uploaded, assets can be reused in multiple reports, ensuring consistency and reducing duplication. For example, updating a company logo in the Assets Manager updates it across all reports using that asset.
 
-## What Enhanced UI Features Can Be Used
-
-The Assets Manager in the Telerik Web Report Designer offers a rich set of UI features designed to help users manage the shared resources easily.
-
-* **Grid and List views**: Resources can be displayed in either grid or list layout. Grid view supports column resizing for better visibility.
-
-    |Grid View|List View|
-    |----|----|
-    |![Assets Manager Grid View><](images/wrd-assets-manager-grid-view.png) |![Assets Manager List View><](images/wrd-assets-manager-list-view.png) |
-
-* **File Operations**: Upload, download, rename, move, and delete files and folders. Supports drag-and-drop for uploads.
-
-* **Details panel**: Allows inspecting asset metadata: Once an asset is selected, its details are displayed in the panel on the right side if the `View Details` button is toggled.
-
-    ![Assets Manager View Details><](images/wrd-assets-manager-view-details.gif) 
-
-* **Recent assets**: Tracking for quick access.
-
-    ![Assets Manager Recently Used><](images/wrd-assets-manager-recently-used.png)  
-
-* **Report Book Integration**: Assets Manager also helps in selecting and organizing reports when creating a Report Book (a combined report made of multiple individual reports).
-
-## Getting Started with Assets Manager
+## Getting Started with Resource Sharing
 
 To invoke the Assets Manager in the Telerik Web Report Designer, follow these steps:
 
@@ -69,7 +47,7 @@ To invoke the Assets Manager in the Telerik Web Report Designer, follow these st
 
     ![Assets Manager Main Menu><](images/wrd-assets-manager-main-menu.png)  
 
-You can also invoke the Assets Manager contextually - for example, when setting the Value of a PictureBox, clicking the asset picker will open the Assets Manager directly to select an image:
+You do not always need to go through the menu. When you are editing a report item like a PictureBox, just click the asset picker next to the `Value` field. This will instantly open the Assets Manager so you can select an image right away:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/krtf6XxVKfE?si=vHgJ6gwSYen7Y1ML" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -94,6 +72,30 @@ The `Reports` folder is a dedicated folder for storing report definitions which 
 ### Shared Data Sources
 
 The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-guide%}) folder within the Assets Manager contains reusable data source definitions (.sdsx files) that can be shared across multiple reports. Each .sdsx file encapsulates the configuration for a data source, including: Connection strings, Queries or endpoints, Parameters, Metadata (e.g., name, description).
+
+## What Enhanced UI Features Can Be Used
+
+To help you manage your shared resources with ease and flexibility the Assets Manager is packed with a rich set of UI intuitive features:
+
+* **Choose Your View: Grid or List**
+
+    Prefer a visual layout or a compact list? You can switch between Grid View and List View depending on your workflow. Grid View even supports column resizing for better visibility.
+
+    |Grid View|List View|
+    |----|----|
+    |![Assets Manager Grid View><](images/wrd-assets-manager-grid-view.png) |![Assets Manager List View><](images/wrd-assets-manager-list-view.png) |
+
+* **Manage Files Effortlessly**: Upload, download, rename, move, or delete files and folders - all in one place. You can even drag and drop files directly into the manager for quick uploads.
+
+* **View Asset Details Instantly**: Want to see more info about a file? Just select an asset and toggle the `View Details` button. A panel on the right will show metadata like file name, type, and size:
+
+    ![Assets Manager View Details><](images/wrd-assets-manager-view-details.gif) 
+
+* **Quick Access to Recent Assets**: No need to search for files you just used - your recently accessed assets are tracked and easily accessible.
+
+    ![Assets Manager Recently Used><](images/wrd-assets-manager-recently-used.png)  
+
+* **Organize Reports for Report Books**: If you are creating a Report Book, use the Assets Manager to select and organize individual reports into a cohesive, multi-report document.
 
 ## See Also
 

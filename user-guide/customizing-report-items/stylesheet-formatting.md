@@ -15,9 +15,12 @@ img[alt$="><"] {
 
 # StyleSheet Formatting
 
+To keep your report design clean, consistent, and easy to manage StyleSheets in the Web Report Designer let you apply centralized, reusable styles - just like CSS in web development.
+
+
 To apply formatting via external stylesheets, you can use a CSS-like styling model that allows centralized and reusable styling across multiple report items. 
 
-## Creating a StyleSheet
+## How to Create a StyleSheet
 
 In the Web Report Designer:
 
@@ -29,7 +32,7 @@ In the Web Report Designer:
 
 1. Click Add to create a new StyleRule.
 
-1.Define the Style (e.g., background color, font, borders).
+1. Define the Style (e.g., background color, font, borders).
 
 1. Add Selectors to target specific items (e.g., all TextBox, PictureBox items).
 
@@ -37,17 +40,16 @@ The following tutorial shows how to define a StyleRule in the report's StyleShee
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HIjkZc48abM?si=aUZKq7TlyfuwBIp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Applying Formatting via External Stylesheets
+## Using External StyleSheets
 
-
-An external StyleSheet is an XML file that contains StyleRules. These rules define how report items should look - similar to CSS in web development. You can apply styles based on:
+If you want to keep your styles in a separate file, use an external StyleSheet (XML format) to define and apply styles across reports. An external StyleSheet is an XML file that contains StyleRules. These rules define how report items should look - similar to CSS in web development. You can apply styles based on:
 
 * **TypeSelector**: Applies to all items of a specific type (e.g., all TextBox items).
 * **AttributeSelector**: Applies to items with specific attributes.
 * **StyleSelector**: Applies to items with a specific StyleName.
 * **DescendantSelector**: Applies to items nested within others.
 
-In the Web Report Designer:
+To add an External StyleSheet in the Web Report Designer:
 
 1. Select the **Report** object.
 
@@ -55,14 +57,16 @@ In the Web Report Designer:
 
 1. Click the `+` button to add an external StyleSheet.
 
-An external style sheet can be define with:
+You can define an external style sheet with:
 
 * **Absolute** Path/URL: for example *C:\Application1\StyleSheets\StyleSheet1.xml* or *https://www.mysite.com/Application1/StyleSheets/StyleSheet1.xml*
 * **Relative** Path/URL: for example *.\StyleSheets\StyleSheet1.xml* or *~/StyleSheets/StyleSheet1.xml*
 
 ![Apply External StyleSheet ><](images/wrd-apply-external-stylesheet.png) 
 
-A sample rule is demonstrated below. This rule applies to all TextBox items and sets a light gray background, dark blue text, and bold Arial font.
+## Sample StyleRule
+
+Here's an example that styles all TextBox items with a light gray background, dark blue text, and bold Arial font:
 
 ```XML
 
@@ -84,10 +88,9 @@ A sample rule is demonstrated below. This rule applies to all TextBox items and 
 </StyleSheet>
 
 ```
-Once applied to a report, the preview looks like: 
+And here'’'s how it looks in the report preview:
 
 ![Preview External StyleSheet ><](images/wrd-preview-external-stylesheet.png)  
-
 
 ## See Also
 

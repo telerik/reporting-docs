@@ -88,7 +88,7 @@ Here's an example that styles all TextBox items with a light gray background, da
 </StyleSheet>
 
 ```
-And here'’'s how it looks in the report preview:
+And here's how it looks in the report preview:
 
 ![Preview External StyleSheet ><](images/wrd-preview-external-stylesheet.png)  
 

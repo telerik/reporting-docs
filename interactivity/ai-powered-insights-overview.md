@@ -1,5 +1,5 @@
 ---
-title: AI-Powered Insights
+title: AI-Powered Insights Overview
 page_title: AI-Powered Insights in Report Preview
 description: "Learn about the AI insights feature of Reporting, which allow users to execute predefined or custom prompts on the core data of the previewed report, receiving responses from an AI model."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights

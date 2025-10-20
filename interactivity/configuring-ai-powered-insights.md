@@ -1,5 +1,5 @@
 ---
-title: Customizing the AI-Powered Insights
+title: Customizing AI-Powered Insights
 page_title: How to Customize the AI-Powered Insights
 description: "Learn how to configure the AI-powered insights functionality to handle common and not so much use cases."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights
@@ -8,7 +8,9 @@ published: True
 position: 3
 ---
 
-This article outlines the different ways to customize the AI-powered insights functionality to handle different use cases. They are listed as follows:
+# Customizing AI-Powered Insights
+
+This article explains how to customize the AI-powered insights functionality for different use cases. There are two distinct ways to achieve this:
 - [Configuring the Report Engine](#configuring-the-report-engine) - Declarative configuration through application settings.
 - [Overriding ReportsControllerBase Methods](#overriding-reportscontrollerbase-methods) - Programmatic customization with custom logic.
 
@@ -45,7 +47,7 @@ This is a base configuration, but it can be further extended to handle specific 
 
 By default, the **AI Prompt** dialog requests explicit consent from users before sending prompts to the AI model. This ensures transparency about data being sent to external AI services and gives users control over their data privacy
 
-	<img src="images/user-consent.png" style="border: 1px solid lightgray; width: 500px" alt="User Consent for AI Summaries" />
+<img src="images/user-consent.png" style="border: 1px solid lightgray; width: 500px" alt="User Consent for AI Summaries" />
 
 In enterprise environments where AI usage policies are already established or when working with trusted internal models, you may want to streamline the user experience by disabling this consent requirement. In these cases, you can set the `requireConsent` option to `false`:
 
@@ -70,9 +72,9 @@ In enterprise environments where AI usage policies are already established or wh
 
 ### Prompts Configuration
 
-By default, users can create their own custom prompts to ask any questions about their reports. While this provides maximum flexibility, it can lead to unpredictable token usage costs and potentially inconsistent results. In these cases, you might want to provide the users with predefined prompts that are designed to handle specific tasks.
+By default, users can create their own custom prompts to ask any questions about their reports. While this provides maximum flexibility, it can lead to unpredictable token usage costs and potentially inconsistent results. In these cases, you can provide the users with predefined prompts that are designed to handle specific tasks.
 
-To restrict users to predefined prompts only, you can set `allowCustomPrompts` to `false` and add the predefined prompts through the `predefinedPrompts` option:
+To restrict users to predefined prompts only, you set `allowCustomPrompts` to `false` and add the predefined prompts through the `predefinedPrompts` option:
 
 ````JSON
 {
@@ -392,47 +394,6 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
 {
     args.Query += $"{Environment.NewLine}Keep your response concise.";
-
-    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-}
-````
-````Token·Usage·Validation
-/// <summary>
-/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
-/// </summary>
-/// <returns></returns>
-public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
-{
-    const int MAX_TOKEN_COUNT = 500;
-    args.ConfirmationCallBack = (AIRequestInfo info) =>
-    {
-        if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
-        {
-            return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
-        }
-
-        return ConfirmationResult.ContinueResult();
-    };
-
-    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-}
-````
-````RAG·Optimization·Monitoring
-/// <summary>
-/// Examines whether the RAG optimization is applied for the current prompt.
-/// </summary>
-/// <returns></returns>
-public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
-{
-    args.ConfirmationCallBack = (AIRequestInfo info) =>
-    {
-        if (info.Origin == AIRequestInfo.AIRequestOrigin.Client)
-        {
-            System.Diagnostics.Trace.TraceInformation($"RAG optimization is {info.RAGOptimization} for this prompt.");
-        }
-
-        return ConfirmationResult.ContinueResult();
-    };
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }

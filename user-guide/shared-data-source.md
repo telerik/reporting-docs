@@ -8,6 +8,11 @@ published: True
 reporting_area: WRDHTML5, WRDBlazorWrapper
 position: 10
 ---
+<style>
+img[alt$="><"] {
+  border: 1px solid lightgrey;
+}
+</style>
 
 # Sharing and Reusing a Data Source
 
@@ -26,17 +31,17 @@ You can easily connect your reports to a variety of data sources — giving you 
 1. Once your report is ready, open it in the Web Report Designer.
 1. To create a `Shared Data Source`, locate an existing data source in the Web Report Designer. Click the ellipsis button (...) next to the data source and select "Save as Shared Data Source" from the context menu.
 
- ![Saving a data source as Shared](images/CreatingSharedDataSource.png)
+   ![Saving a data source as Shared ><](images/CreatingSharedDataSource.png)
 
 1. After saving a data source as shared, the Web Report Designer generates a .sdsx file. This file represents the shared data source definition and can be opened directly in the designer for further configuration.
 
- ![Creating a SDSX file](images/CreatingSdsxFile.png)
+   ![Creating a SDSX file ><](images/CreatingSdsxFile.png)
 
 1.To view all Shared Data Sources, open the [`Assets Manager`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager) from the main menu.
 
- ![Use Assets Manager to view your Shared Data Sources](images/AllSharedDataSources.png)
+   ![Use Assets Manager to view your Shared Data Sources ><](images/AllSharedDataSources.png)
 
- ###Creating Shared Data Source
+ ### Creating Shared Data Source
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/iLBt_8EyxBI?si=kx6LnA1m_FC-r3xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

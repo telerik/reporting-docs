@@ -37,7 +37,7 @@ You can easily connect your reports to a variety of data sources — giving you 
 
    ![Creating a SDSX file ><](images/CreatingSdsxFile.png)
 
-1.To view all Shared Data Sources, open the [`Assets Manager`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager) from the main menu.
+1. To view all Shared Data Sources, open the [`Assets Manager`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager) from the main menu.
 
    ![Use Assets Manager to view your Shared Data Sources ><](images/AllSharedDataSources.png)
 

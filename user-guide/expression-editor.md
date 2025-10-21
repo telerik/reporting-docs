@@ -17,3 +17,10 @@ img[alt$="><"] {
 # Customize Report Behavior Using the Expression Editor
 
 Instead of manually entering fixed values, you can use expressions to make your report items smarter and more dynamic. This means your reports can automatically adapt to changing data or conditions—saving you time and reducing errors. The expression editor helps you build these expressions easily, offering ready-to-use elements and clear descriptions so you can focus on getting the result you need without digging through documentation.
+
+Quickly build your pricing logic by combining database fields with custom values—just type your formula or double-click elements to add them. This helps you calculate extended prices effortlessly and accurately.
+
+![](images/)
+
+##
+

@@ -44,7 +44,7 @@ Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
 1. (_optional_) If you make a call to the method `TelerikLicensing.Register()`, do this after enabling diagnostics with the above code line.
 1. Load a page with Telerik Report Viewer, then collect the content of the aggregated licensing log in Telerik.Licensing.TelerikLicensing.Diagnostics.
 
-# See Also
+## See Also
 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Setting Up Your License Key]({%slug license-key%})

@@ -10,11 +10,11 @@ position: 8
 
 # Troubleshoot License Problems
 
-In rare scenarios clients keep getting Licensing watermarks in some environments, while when build the project everything has been verified to work correctly:
+In rare scenarios, clients keep getting Licensing watermarks in some environments, while when building the project, everything has been verified to work correctly:
 
  - There is a proper `telerik-license.txt` file.
  - Build logs show our product has been detected.
- - At runtime the Report Viewers still show a Licensing watermark.
+ - At runtime, the Report Viewers still show a Licensing watermark.
 
 ## Telerik Licensing Diagnostics
 
@@ -23,7 +23,7 @@ Starting with __Telerik.Licensing__ version 1.6.24, we provide a utility that do
 
 1. Install Telerik.Licensing library 1.6.24 or later from NuGet. We recommend the latest version of the package.
 
-	>If your project targets the `.NET Framework` you may need to add a BindingRedirect to your configuration file. If you use a newer version, change the code accordingly:
+	>If your project targets the `.NET Framework`, you may need to add a binding redirect to your configuration file. If you use a newer version, change the code accordingly:
 	>
 	>````XML
 <dependentAssembly>

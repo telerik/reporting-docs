@@ -19,122 +19,122 @@ To enable a custom AI client implementation, follow these steps:
 1. Create a class that implements the `Telerik.Reporting.AI.IClient` interface. The following example demonstrates an Azure OpenAI integration for illustration purposes, though you can use any LLM provider:
 
     ````C#
-    using Azure.AI.OpenAI;
-    using Microsoft.Extensions.AI;
-    using System.ClientModel;
-    using Telerik.Reporting.AI;
+using Azure.AI.OpenAI;
+using Microsoft.Extensions.AI;
+using System.ClientModel;
+using Telerik.Reporting.AI;
 
-    namespace WebApplication1.AI;
+namespace WebApplication1.AI;
 
-    public class CustomAIClient : IClient
+public class CustomAIClient : IClient
+{
+    public string Model { get; } = "gpt-4o-mini";
+
+    public bool SupportsSystemPrompts => false;
+
+    private readonly IChatClient chatClient;
+
+    public CustomAIClient()
     {
-        public string Model { get; } = "gpt-4o-mini";
+        string endpoint = "https://ai-explorations.openai.azure.com/";
+        string credential = "YOUR_API_KEY";
+        string model = "gpt-4o-mini";
 
-        public bool SupportsSystemPrompts => false;
-
-        private readonly IChatClient chatClient;
-
-        public CustomAIClient()
-        {
-            string endpoint = "https://ai-explorations.openai.azure.com/";
-            string credential = "YOUR_API_KEY";
-            string model = "gpt-4o-mini";
-
-            chatClient = new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(credential))
-                .GetChatClient(model)
-                .AsIChatClient();
-        }
-
-        public async Task<IReadOnlyCollection<IMessage>> GetResponseAsync(IReadOnlyCollection<IMessage> query, CancellationToken cancellationToken)
-        {
-            // Convert Telerik.Reporting.AI IMessage to Microsoft.Extensions.AI ChatMessage
-            var chatMessages = new List<ChatMessage>();
-            foreach (var message in query)
-            {
-                ChatRole chatRole = message.Role switch
-                {
-                    MessageRole.System => ChatRole.System,
-                    MessageRole.Assistant => ChatRole.Assistant,
-                    MessageRole.User => ChatRole.User,
-                    _ => throw new ArgumentException($"Invalid MessageRole: {message.Role}")
-                };
-
-                // Convert text contents from Telerik.Reporting.AI TO Microsoft.Extensions.AI
-                var textContents = message.Contents
-                    .OfType<Telerik.Reporting.AI.TextContent>()
-                    .Select(textContent => new Microsoft.Extensions.AI.TextContent(textContent.Text))
-                    .Cast<AIContent>()
-                    .ToList();
-
-                chatMessages.Add(new ChatMessage(chatRole, textContents));
-            }
-
-            // Call Azure OpenAI
-            var response = await chatClient.GetResponseAsync(chatMessages, new ChatOptions(), cancellationToken);
-
-            // Convert response back to Telerik.Reporting.AI IMessage
-            var resultMessages = new List<IMessage>();
-            foreach (var responseMessage in response.Messages)
-            {
-                MessageRole messageRole = responseMessage.Role.Value switch
-                {
-                    "system" => MessageRole.System,
-                    "assistant" => MessageRole.Assistant,
-                    "user" => MessageRole.User,
-                    _ => throw new ArgumentException($"Invalid ChatRole: {responseMessage.Role}")
-                };
-
-                // Convert back to Telerik.Reporting.AI content
-                var contents = responseMessage.Contents
-                    .OfType<Microsoft.Extensions.AI.TextContent>()
-                    .Select(tc => new Telerik.Reporting.AI.TextContent(tc.Text))
-                    .Cast<IContent>()
-                    .ToList();
-
-                resultMessages.Add(new Message(messageRole, contents));
-            }
-
-            return resultMessages;
-        }
-
-        public static IClient GetCustomAIClient()
-        {
-            return new CustomAIClient();
-        }
+        chatClient = new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(credential))
+            .GetChatClient(model)
+            .AsIChatClient();
     }
-    ````
+
+    public async Task<IReadOnlyCollection<IMessage>> GetResponseAsync(IReadOnlyCollection<IMessage> query, CancellationToken cancellationToken)
+    {
+        // Convert Telerik.Reporting.AI IMessage to Microsoft.Extensions.AI ChatMessage
+        var chatMessages = new List<ChatMessage>();
+        foreach (var message in query)
+        {
+            ChatRole chatRole = message.Role switch
+            {
+                MessageRole.System => ChatRole.System,
+                MessageRole.Assistant => ChatRole.Assistant,
+                MessageRole.User => ChatRole.User,
+                _ => throw new ArgumentException($"Invalid MessageRole: {message.Role}")
+            };
+
+            // Convert text contents from Telerik.Reporting.AI TO Microsoft.Extensions.AI
+            var textContents = message.Contents
+                .OfType<Telerik.Reporting.AI.TextContent>()
+                .Select(textContent => new Microsoft.Extensions.AI.TextContent(textContent.Text))
+                .Cast<AIContent>()
+                .ToList();
+
+            chatMessages.Add(new ChatMessage(chatRole, textContents));
+        }
+
+        // Call Azure OpenAI
+        var response = await chatClient.GetResponseAsync(chatMessages, new ChatOptions(), cancellationToken);
+
+        // Convert response back to Telerik.Reporting.AI IMessage
+        var resultMessages = new List<IMessage>();
+        foreach (var responseMessage in response.Messages)
+        {
+            MessageRole messageRole = responseMessage.Role.Value switch
+            {
+                "system" => MessageRole.System,
+                "assistant" => MessageRole.Assistant,
+                "user" => MessageRole.User,
+                _ => throw new ArgumentException($"Invalid ChatRole: {responseMessage.Role}")
+            };
+
+            // Convert back to Telerik.Reporting.AI content
+            var contents = responseMessage.Contents
+                .OfType<Microsoft.Extensions.AI.TextContent>()
+                .Select(tc => new Telerik.Reporting.AI.TextContent(tc.Text))
+                .Cast<IContent>()
+                .ToList();
+
+            resultMessages.Add(new Message(messageRole, contents));
+        }
+
+        return resultMessages;
+    }
+
+    public static IClient GetCustomAIClient()
+    {
+        return new CustomAIClient();
+    }
+}
+````
 
 1. Register the custom client in your `ReportServiceConfiguration`:
 
     * .NET
 
     ````C#
-    builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
+builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
+{
+    HostAppId = "MyApp",
+    AIClientFactory = WebApplication1.AI.CustomAIClient.GetCustomAIClient,
+    // ...
+});
+````
+
+* .NET Framework
+
+````C#
+public class CustomResolverReportsController : ReportsControllerBase
+{
+    static ReportServiceConfiguration configurationInstance;
+
+    static CustomResolverReportsController()
     {
-        HostAppId = "MyApp",
-        AIClientFactory = WebApplication1.AI.CustomAIClient.GetCustomAIClient,
-        // ...
-    });
-    ````
-
-    * .NET Framework
-
-    ````C#
-    public class CustomResolverReportsController : ReportsControllerBase
-    {
-        static ReportServiceConfiguration configurationInstance;
-
-        static CustomResolverReportsController()
+        configurationInstance = new ReportServiceConfiguration
         {
-            configurationInstance = new ReportServiceConfiguration
-            {
-                HostAppId = "MyApp",
-                AIClientFactory = WebApplication1.AI.CustomAIClient.GetCustomAIClient,
-                // ...
-            };
-        }
+            HostAppId = "MyApp",
+            AIClientFactory = WebApplication1.AI.CustomAIClient.GetCustomAIClient,
+            // ...
+        };
     }
-    ````
+}
+````
 
 You can further customize the AI client to enable additional features like RAG optimization, predefined prompts, and user consent settings. For more details, refer to [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}).
 
@@ -142,14 +142,14 @@ You can further customize the AI client to enable additional features like RAG o
 
 The `Telerik.Reporting.AI.IClient` interface defines the contract for AI service integration:
 
-```csharp
+````C#
 public interface IClient
 {
     string Model { get; }
     bool SupportsSystemPrompts { get; }
     Task<IReadOnlyCollection<IMessage>> GetResponseAsync(IReadOnlyCollection<IMessage> query, CancellationToken cancellationToken);
 }
-```
+````
 
 ### Key Properties and Methods
 

@@ -41,28 +41,28 @@ To enable the AI-powered insights, follow these steps:
 
 1. Add the [AIClient element]({%slug telerikreporting/aiclient-element%}) to the report engine configuration in your application's configuration file. This element allows you to specify the AI model, endpoint, and authentication credentials. The following example demonstrates a basic Azure OpenAI configuration:
 
-    ````JSON
-    {
-        "telerikReporting": {
-            "AIClient": {
-                "friendlyName": "MicrosoftExtensionsAzureOpenAI",
-                "model": "gpt-4o-mini",
-                "endpoint": "https://ai-explorations.openai.azure.com/",
-                "credential": "YOUR_API_KEY"
-            }
+````JSON
+{
+    "telerikReporting": {
+        "AIClient": {
+            "friendlyName": "MicrosoftExtensionsAzureOpenAI",
+            "model": "gpt-4o-mini",
+            "endpoint": "https://ai-explorations.openai.azure.com/",
+            "credential": "YOUR_API_KEY"
         }
     }
-    ````
-    ````XML
-    <Telerik.Reporting>
-        <AIClient
-            friendlyName="MicrosoftExtensionsAzureOpenAI"
-            model="gpt-4o-mini"
-            endpoint="https://ai-explorations.openai.azure.com/"
-            credential="YOUR_API_KEY">
-        </AIClient>
-    </Telerik.Reporting>
-    ````
+}
+````
+````XML
+<Telerik.Reporting>
+    <AIClient
+        friendlyName="MicrosoftExtensionsAzureOpenAI"
+        model="gpt-4o-mini"
+        endpoint="https://ai-explorations.openai.azure.com/"
+        credential="YOUR_API_KEY">
+    </AIClient>
+</Telerik.Reporting>
+````
 
 >tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
 

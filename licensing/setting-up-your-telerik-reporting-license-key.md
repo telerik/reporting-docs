@@ -29,14 +29,14 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 * Add package reference to the `packages.config` file:
 
 	````XML
-<package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
+<package id="Telerik.Licensing.Runtime.dll" version="1.*" targetFramework="net4*" />
 ````
  
 
 * Update the `.csproj` file with the DLL reference:
 
 	````XML
-<Reference Include="Telerik.Licensing, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
+<Reference Include="Telerik.Licensing.Runtime.dll, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
 		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.dll</HintPath>
 	</Reference>
 ````
@@ -47,7 +47,7 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 Update the `.csproj` file like below:
 
 ````XML
-<PackageReference Include="Telerik.Licensing" Version="1.*" />
+<PackageReference Include="Telerik.Licensing.Runtime.dll" Version="1.*" />
 ````
 
 We strongly recommend adding the above package for licensing. If adding the package is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).

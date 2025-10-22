@@ -3,7 +3,7 @@ title: Report Templates
 page_title: Report Templates in Web Report Designer
 description: Learn more about Report Templates in the Telerik Reporting Web Report Designer, how to create and reuse them.
 slug: web-report-designer-report-templates
-tags: how,to,set,up,in,.net,8,applications
+tags: web, report, designer, wrd, report, template, trtx
 published: True 
 position: 1 
 ---
@@ -81,18 +81,66 @@ The file extensions **.trdp**, **.trdx**, and **.trtx** are used in Telerik Repo
 
 |Format| Description| Use Case|Designer Compatibility|
 |----|----|----|----|
-|.trdp|Full report with resources. XML-based, editable|Ideal for packaging a report with its assets (images, styles, etc.).|Used in both Web Report Designer and Standalone Report Designer.|
-|.trdx|Report definition only. Packaged binary (ZIP)|Better for deployment and performance|Supported in Standalone Report Designer and Web Report Designer.|
-|.trtx|XML file used as a template|Used to create new reports based on a predefined layout or style|Primarily used in Web Report Designer.|
+|.trdp|**T**elerik **R**eport **D**efinition **P**ackage - Full report with resources. XML-based, editable|Ideal for packaging a report with its assets (images, styles, etc.).|Used in both Web Report Designer and Standalone Report Designer.|
+|.trdx|**T**elerik **R**eport **D**efinition **X**ML - Report definition only. Packaged binary (ZIP)|Better for deployment and performance|Supported in Standalone Report Designer and Web Report Designer.|
+|.trtx|**T**elerik **R**eport **T**emplate **X**ML - XML file used as a template|Used to create new reports based on a predefined layout or style|Primarily used in Web Report Designer.|
+|.trbp|**T**elerik **R**eport **B**ook **P**ackage - Stores a report book - a collection of multiple reports|Used when you want to combine several reports into one document (e.g., for printing or exporting)|Standalone Report Designer (and programmatically)|
 
 It stands for Telerik Report Definition XML and contains the structure, layout, data bindings, and styling of a report. Unlike .trdp (which is a packaged format), .trdx is plain XML, making it easier to version control, edit manually, or generate dynamically.
 
-## Configure Templates Folder
+## Configure Report Templates Folder
+
+The [ReportDesignerServiceConfiguration]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#add-configuration-settings-in-the-startupcs-file) class provides a configuration setting for specifying the **TemplateDefinitionStorage**. Thus, you can navigate to a specific folder that stores all report templates:
+
+````CSharp
+services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
+{
+	TemplateDefinitionStorage = new FileTemplateDefinitionStorage("templates_folder_path", new[] { "sub_folder_to_exclude" }),
+});
+````
+
+>note Report templates (.trtx files) can be stored only in the configured `Report Templates` folder. Other file formats are not allowed in the folder.
 
 ## Managing Permissions
 
+To restrict specific actions or features for users on the client side, for example to restrict `Report Templates`, the [DeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) setting of the **ReportDesignerServiceConfiguration** can be used. It allows developers to customize the designer experience by disabling certain tools, components, or capabilities based on application logic or user roles.
 
+>note You can override the [GetDeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) method in your custom implementation of the reporting service to apply different restrictions based on the logged-in user or other conditions.
+
+#### Restricting the Templates Folder
+
+````CSharp
+services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
+{
+    DeniedPermissions = ReportDesignerPermissionsBuilder.Build(
+        Permission.Commands_AssetsManager_ReportTemplates
+        )
+}));
+````
+
+Once the end-user is not granted permissions for the Report Templates, the following actions are available:
+
+* Create a New Report from a Template - The **From Template** option is still *visible* but *restricted*. The restricted user is not allowed to create new or upload templates, delete or edit any existing templates. However, consuming the already existing templates is allowed.
+
+|Restricted User|Default User|
+|----|----|
+|![Restricted User From Template ><](images/web-report-designer-report-templates-restricted-user.png)|![Allowed User From Template ><](images/web-report-designer-report-templates-allowed-user.png)| 
+
+* **Assets manager** - When a *restricted* user opens the Assets Manager, the `Report Templates` folder is invisible:
+
+|Restricted User|Default User|
+|----|----|
+|![Restricted User Assets Manager ><](images/web-report-designer-report-templates-restricted-user-assets-manager.png)|![Allowed User Assets Manager ><](images/web-report-designer-report-templates-allowed-user-assets-manager.png)|     
+
+* **Save Report As** - The *restricted* end-user can only save as a **Report**. The option for saving as a **Template** is hidden.
+
+|Restricted User|Default User|
+|----|----|
+|![Restricted User Assets Manager ><](images/web-report-designer-report-templates-restricted-user-save-as.png)|![Allowed User Assets Manager ><](images/web-report-designer-report-templates-allowed-user-save-as.png)|    
 
 ## See Also
 
+* [How to Edit a Report Template]({%slug web-report-designer-how-to-edit-a-report-template%})
+* [Setting up the Web Report Designer in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
+* [Web Report Designer Customization]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%})
 * [Report Templates in Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%})

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-page_title: "Learn how to Troubleshoot problems with Licensing in Telerik Reporting."
+page_title: "Learn how to troubleshoot problems with Licensing in Telerik Reporting."
 description: "Learn about Troubleshooting License problems in Telerik Reporting after the 2025 Q1 (19.0.25.211) release."
 slug: license-troubleshoot
 tags: license, telerik, reporting, problems, troubleshoot
@@ -20,27 +20,35 @@ In rare scenarios, clients keep getting Licensing watermarks in some environment
 
 Starting with __Telerik.Licensing__ version 1.6.24, we provide a utility that does runtime diagnostics.
 
-
-1. Install Telerik.Licensing library 1.6.24 or later from NuGet. We recommend the latest version of the package.
+1. Install `Telerik.Licensing` library __1.6.24__ or later from [NuGet](https://www.nuget.org/packages/Telerik.Licensing). We recommend the latest version of the package.
 
 	>If your project targets the `.NET Framework`, you may need to add a binding redirect to your configuration file. If you use a newer version, change the code accordingly:
 	>
 	>````XML
 <dependentAssembly>
-	<assemblyIdentity name="Telerik.Licensing.Runtime" publicKeyToken="98BB5B04E55C09EF" culture="neutral"/>
+	<assemblyIdentity name="Telerik.Licensing.Runtime" publicKeyToken="98bb5b04e55c09ef" culture="neutral"/>
 	<bindingRedirect oldVersion="0.0.0.0-1.6.24.0" newVersion="1.6.24.0"/>
 </dependentAssembly>
 ````
 
 
-1. To enable the runtime diagnostics, please add the following line of code as early as possible before loading your Telerik Report Viewers:
+1. To enable the runtime diagnostics, please call the method `Telerik.Licensing.TelerikLicensing.EnableDiagnostics()` as early as possible before loading your Telerik Report Viewers:
+
+	For example, you may add the code in the startup file of the project. In ASP.NET projects, you may use the `Application_Start` event handler in the `Global.asax` file. Here is a sample code:
 
 	````CSharp
-Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
+protected void Application_Start(object sender, EventArgs e)
+	{
+	    string logPath = Server.MapPath("~/TelerikLicensing.log");
+	    var writer = File.AppendText(logPath);
+	    writer.AutoFlush = true;
+	    Console.SetOut(writer);
+	    Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
+	}
 ````
 
-	For example, you may add the code in the startup file of the project. In ASP.NET projects, you may use the `Application_Start` event handler in the `Global.asax` file.
-	
+	The above code will add the Licensing validation logs to the file 'TelerikLicensing.log' in your application's main folder.
+
 1. (_optional_) If you make a call to the method `TelerikLicensing.Register()`, do this after enabling diagnostics with the above code line.
 1. Load a page with Telerik Report Viewer, then collect the content of the aggregated licensing log in Telerik.Licensing.TelerikLicensing.Diagnostics.
 

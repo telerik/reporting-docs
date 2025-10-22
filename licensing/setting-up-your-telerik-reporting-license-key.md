@@ -37,7 +37,7 @@ Here are the changes the Visual Studio NuGet Package Manager will make, dependin
 
 	````XML
 <Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
-		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.dll</HintPath>
+		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
 	</Reference>
 ````
 

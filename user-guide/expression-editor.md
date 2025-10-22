@@ -38,6 +38,8 @@ Build flexible expressions with minimal effort by using predefined components, e
 | `Report Parameters` | User-defined inputs that control report content, filtering, or layout—often used to pass values, filter data, or link related reports |
 | `Reporting Constants` | Predefined values used to control report layout and styling—such as alignment, borders, image sizing, and page behavior |
 
+## Video
+
 >tip You may add a new line as a string in the Expression with the `Edit Expression` dialog.
 >
 >````
@@ -46,3 +48,9 @@ Build flexible expressions with minimal effort by using predefined components, e
 >````
 >
 >The result will be the values of the two fiels being displayed one above the other in the corresponding report item.
+
+## See Also
+
+* [Functions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%})
+* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}#web-report-designer)

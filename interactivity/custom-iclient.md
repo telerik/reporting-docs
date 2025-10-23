@@ -18,6 +18,8 @@ To enable a custom AI client implementation, follow these steps:
 
 1. Create a class that implements the `Telerik.Reporting.AI.IClient` interface. The following example demonstrates an Azure OpenAI integration for illustration purposes, though you can use any LLM provider:
 
+    * .NET
+
     ````C#
 using Azure.AI.OpenAI;
     using Microsoft.Extensions.AI;
@@ -104,6 +106,119 @@ using Azure.AI.OpenAI;
     }
 ````
 
+
+    . NET Framework
+
+    ````C#
+using Azure.AI.OpenAI;
+    using Microsoft.Extensions.AI;
+    using System;
+    using System.ClientModel;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using System.Web.UI.WebControls;
+    using Telerik.Reporting.AI;
+
+    namespace WebApplication1.AI
+    {
+        public class CustomAIClient : IClient
+        {
+            public string Model { get; } = "gpt-4o-mini";
+
+            public bool SupportsSystemPrompts => false;
+
+            private readonly IChatClient chatClient;
+
+            public CustomAIClient()
+            {
+                string endpoint = "https://ai-explorations.openai.azure.com/";
+                string credential = "YOUR_API_KEY";
+                string model = "gpt-4o-mini";
+
+                chatClient = new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(credential))
+                    .GetChatClient(model)
+                    .AsIChatClient();
+            }
+
+            public async Task<IReadOnlyCollection<Telerik.Reporting.AI.IMessage>> GetResponseAsync(IReadOnlyCollection<Telerik.Reporting.AI.IMessage> query, CancellationToken cancellationToken)
+            {
+                // Convert Telerik.Reporting.AI IMessage to Microsoft.Extensions.AI ChatMessage
+                var chatMessages = new List<ChatMessage>();
+                foreach (var message in query)
+                {
+                    ChatRole chatRole;
+                    switch (message.Role)
+                    {
+                        case MessageRole.System:
+                            chatRole = ChatRole.System;
+                            break;
+                        case MessageRole.Assistant:
+                            chatRole = ChatRole.Assistant;
+                            break;
+                        case MessageRole.User:
+                            chatRole = ChatRole.User;
+                            break;
+                        default:
+                            throw new ArgumentException($"Invalid MessageRole: {message.Role}");
+                    }
+
+                    // Convert text contents from Telerik.Reporting.AI TO Microsoft.Extensions.AI
+                    var textContents = message.Contents
+                        .OfType<Telerik.Reporting.AI.TextContent>()
+                        .Select(textContent => new Microsoft.Extensions.AI.TextContent(textContent.Text))
+                        .Cast<AIContent>()
+                        .ToList();
+
+                    chatMessages.Add(new ChatMessage(chatRole, textContents));
+                }
+
+                // Call Azure OpenAI
+                var response = await chatClient.GetResponseAsync(chatMessages, new ChatOptions(), cancellationToken);
+
+                // Convert response back to Telerik.Reporting.AI IMessage
+                var resultMessages = new List<Telerik.Reporting.AI.IMessage>();
+                foreach (var responseMessage in response.Messages)
+                {
+                    MessageRole messageRole;
+                    switch (responseMessage.Role.Value)
+                    {
+                        case "system":
+                            messageRole = MessageRole.System;
+                            break;
+                        case "assistant":
+                            messageRole = MessageRole.Assistant;
+                            break;
+                        case "user":
+                            messageRole = MessageRole.User;
+                            break;
+                        default:
+                            throw new ArgumentException($"Invalid ChatRole: {responseMessage.Role}");
+                    }
+
+                    // Convert back to Telerik.Reporting.AI content
+                    var contents = responseMessage.Contents
+                        .OfType<Microsoft.Extensions.AI.TextContent>()
+                        .Select(tc => new Telerik.Reporting.AI.TextContent(tc.Text))
+                        .Cast<IContent>()
+                        .ToList();
+
+                    resultMessages.Add(new Telerik.Reporting.AI.Message(messageRole, contents));
+                }
+
+                return resultMessages;
+            }
+
+            public static IClient GetCustomAIClient()
+            {
+                return new CustomAIClient();
+            }
+        }
+    }
+````
+
+    > This Azure OpenAI example uses `Azure.AI.OpenAI` version `2.2.0-beta.4` and `Microsoft.Extensions.AI.OpenAI` version `9.4.3-preview.1.25230.7` for demonstration purposes. For your implementation, you will typically use different packages specific to your LLM provider. Focus on the implementation structure, which is further detailed in the [Implementation Details](#implementation-details) section.
 
 1. Register the custom client in your `ReportServiceConfiguration`:
 

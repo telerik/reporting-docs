@@ -109,7 +109,7 @@ You can also add predefined prompts without disabling custom ones, giving users 
 
 ### Retrieval-Augmented Generation (RAG) Configuration
 
-By default, the AI-powered insights functionality uses [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) algorithm to filter out the irrelevant report data before sending it to the AI model. This approach significantly improves the accuracy and relevance of the AI-generated response while optimizing token usage.
+By default, the AI-powered insights functionality uses a [Retrieval-Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) algorithm to filter out the irrelevant report data before sending it to the AI model. This approach significantly improves the accuracy and relevance of the AI-generated response while optimizing token usage.
 
 > RAG is available only in .NET and .NET Standard. Therefore, the options that are listed below are not supported in .NET Framework configurations.
 

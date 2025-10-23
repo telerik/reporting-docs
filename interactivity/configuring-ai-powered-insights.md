@@ -147,7 +147,7 @@ For a complete reference of all available `AIClient` options, check the article 
 
 ## Overriding ReportsControllerBase Methods
 
-While declarative configuration handles most common scenarios, some advanced use cases require programmatic customization. You can achieve this by overriding specific methods of the [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase) class in your `ReportsController`. This approach allows you to implement dynamic logic based on user context, report properties, or business rules.
+While the [declarative configuration](#configuring-the-report-engine) handles most common scenarios, some advanced use cases require programmatic customization. You can achieve this by overriding specific methods of the [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase) class in your `ReportsController`. This approach allows you to implement dynamic logic based on user context, report properties, or business rules.
 
 The following methods can be overridden to customize different aspects of the AI-powered insights workflow:
 

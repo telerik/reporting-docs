@@ -107,7 +107,7 @@ using Azure.AI.OpenAI;
 ````
 
 
-    . NET Framework
+    * . NET Framework
 
     ````C#
 using Azure.AI.OpenAI;
@@ -218,7 +218,7 @@ using Azure.AI.OpenAI;
     }
 ````
 
-    > This Azure OpenAI example uses `Azure.AI.OpenAI` version `2.2.0-beta.4` and `Microsoft.Extensions.AI.OpenAI` version `9.4.3-preview.1.25230.7` for demonstration purposes. For your implementation, you will typically use different packages specific to your LLM provider. Focus on the implementation structure, which is further detailed in the [Implementation Details](#implementation-details) section.
+    > This Azure OpenAI example uses `Azure.AI.OpenAI` version `2.2.0-beta.4` and `Microsoft.Extensions.AI.OpenAI` version `9.4.3-preview.1.25230.7` for demonstration purposes. For your implementation, you will typically use different packages specific to your LLM provider. Focus on the implementation structure, which is further detailed in the [Understanding the IClient Interface](#understanding-the-iclient-interface) section.
 
 1. Register the custom client in your `ReportServiceConfiguration`:
 

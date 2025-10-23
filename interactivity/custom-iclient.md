@@ -234,7 +234,7 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportSe
 ````
 
 
-* .NET Framework
+    * .NET Framework
 
     ````C#
 public class CustomResolverReportsController : ReportsControllerBase

@@ -38,6 +38,16 @@ The feature is supported by all [web report viewers]({%slug telerikreporting/usi
 
 	<img src="images/user-consent.png" style="border: 1px solid lightgray; width: 500px" alt="User Consent for AI Summaries" />
 
+## Next Steps
+
+To enable AI-Powered Insights in your application, explore these configuration options:
+
+- Set up the REST service configuration—Configure your Telerik Reporting REST service with an AI client for supported providers (Azure OpenAI, OpenAI, Azure AI Foundry, or Ollama) by following the [Using AI-Powered Insights with a REST service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service%}) guide.
+
+- Create a custom AI client implementation (advanced)—If you need to connect to unsupported LLM providers or implement custom logic (like token usage tracking) to supported ones, refer to [Creating Custom AI Client Implementation]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation%}).
+
+- Customize the experience (optional)—For fine-tune settings like user consent, predefined prompts, and RAG optimization, check the [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}) article.
+
 ## See Also
 
 * [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

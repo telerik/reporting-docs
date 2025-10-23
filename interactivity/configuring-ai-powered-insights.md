@@ -11,8 +11,8 @@ position: 3
 # Customizing AI-Powered Insights
 
 This article explains how to customize the AI-powered insights functionality for different use cases. There are two distinct ways to achieve this:
-- [Configuring the Report Engine](#configuring-the-report-engine) - Declarative configuration through application settings.
-- [Overriding ReportsControllerBase Methods](#overriding-reportscontrollerbase-methods) - Programmatic customization with custom logic.
+- [Configuring the Report Engine](#configuring-the-report-engine)&mdash;Declarative configuration through application settings.
+- [Overriding ReportsControllerBase Methods](#overriding-reportscontrollerbase-methods)&mdash;Programmatic customization with custom logic.
 
 ## Configuring the Report Engine
 
@@ -116,11 +116,11 @@ By default, the AI-powered insights functionality uses a [Retrieval-Augmented Ge
 If needed, you can disable this algorithm by setting `allowRAG` to `false`.
 
 You can also configure the RAG behavior through the `ragSettings` option:
-- `modelMaxInputTokenLimit` - Limits the maximum input tokens the AI model can process in a single request. The default value is `15000`.
-- `maxNumberOfEmbeddingsSent` - Limits how many embeddings (chunks of retrieved content) are sent to the model in a single request. The default value is `15`.
-- `maxTokenSizeOfSingleEmbedding` - Limits token size of each individual embedding, which prevents large chunks from dominating the prompt. The default value is `0` (no limit).
-- `tokenizationEncoding` - Specifies tokenization scheme used to estimate the tokens usage before sending the request to the LLM model. By default, the encoding is determined automatically based on the specified model, which is recommended to ensure accurate token counting. Incorrect encoding may lead to miscalculations in token limits, causing either premature truncation of context or exceeding the model’s input capacity.
-- `splitTables` - Indicates whether tables should be split during Retrieval-Augmented Generation (RAG) processing. When the splitting is allowed, only the relevant table cells will be taken into account, significantly reducing the number of tokens. The default value is `true`.
+- `modelMaxInputTokenLimit`&mdash;Limits the maximum input tokens the AI model can process in a single request. The default value is `15000`.
+- `maxNumberOfEmbeddingsSent`&mdash;Limits how many embeddings (chunks of retrieved content) are sent to the model in a single request. The default value is `15`.
+- `maxTokenSizeOfSingleEmbedding`&mdash;Limits token size of each individual embedding, which prevents large chunks from dominating the prompt. The default value is `0` (no limit).
+- `tokenizationEncoding`&mdash;Specifies tokenization scheme used to estimate the tokens usage before sending the request to the LLM model. By default, the encoding is determined automatically based on the specified model, which is recommended to ensure accurate token counting. Incorrect encoding may lead to miscalculations in token limits, causing either premature truncation of context or exceeding the model’s input capacity.
+- `splitTables`&mdash;Indicates whether tables should be split during Retrieval-Augmented Generation (RAG) processing. When the splitting is allowed, only the relevant table cells will be taken into account, significantly reducing the number of tokens. The default value is `true`.
 
 Below is an example that takes advantage of the table splitting and automatic encoding inference, but reduces the token limits:
 
@@ -394,6 +394,27 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
 {
     args.Query += $"{Environment.NewLine}Keep your response concise.";
+
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+````
+````Token·Usage·Validation
+/// <summary>
+/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    const int MAX_TOKEN_COUNT = 500;
+    args.ConfirmationCallBack = (AIRequestInfo info) =>
+    {
+        if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
+        {
+            return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
+        }
+
+        return ConfirmationResult.ContinueResult();
+    };
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }

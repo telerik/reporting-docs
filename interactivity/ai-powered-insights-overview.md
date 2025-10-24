@@ -40,19 +40,19 @@ The feature is supported by all [web report viewers]({%slug telerikreporting/usi
 
 ## Next Steps
 
-To enable AI-Powered Insights in your application, start by choosing one of these implementation approaches:
+To enable AI-Powered Insights in your application, choose one of these two implementation approaches:
 
-- Set up the REST service configuration—Configure your Telerik Reporting REST service with an AI client for supported providers (Azure OpenAI, OpenAI, Azure AI Foundry, or Ollama) by following the [Using AI-Powered Insights with a REST service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service%}) guide.
+- Use built-in AI client—For supported LLM providers (Azure OpenAI, OpenAI, Azure AI Foundry, or Ollama), follow the [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%}) guide.
 
-- Create a custom AI client implementation (advanced)—If you need to connect to unsupported LLM providers or implement custom logic (like token usage tracking) for any provider, refer to [Creating Custom AI Client Implementation]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation%}).
+- Create custom AI client—For unsupported LLM providers or when you need custom logic (like token usage tracking), refer to [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
 
-Once you have chosen your implementation approach, you can optionally:
+Once you have enabled the functionality, you can optionally:
 
-- Customize the experience—Fine-tune settings like user consent, predefined prompts, and RAG optimization using the [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}) article.
+- Customize the experience—Fine-tune settings like user consent, predefined prompts, and RAG optimization using the [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}) article.
 
 ## See Also
 
 * [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)
-* [Using AI-Powered Insights with a REST service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service%})
-* [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
-* [Creating Custom AI Client Implementation]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation%})
+* [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
+* [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
+* [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})

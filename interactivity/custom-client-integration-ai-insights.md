@@ -1,16 +1,25 @@
 ---
-title: Creating Custom AI Client Implementation
-page_title: How to Create a Custom AI Client Implementation
-description: "Learn how to create a custom IClient implementation to integrate unsupported LLM providers with Telerik Reporting AI-powered insights."
-slug: telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation
+title: Enable AI-Powered Insights with Custom AI Client
+page_title: How to Enable AI-Powered Insights with Custom AI Client
+description: "Learn how to enable AI-powered insights by creating a custom IClient implementation to integrate unsupported LLM providers or implement custom logic."
+slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client
 tags: telerik, reporting, ai, custom, implementation
 published: True
-position: 4
+position: 3
 ---
 
-# Creating Custom AI Client Implementation
+# Enable AI-Powered Insights with Custom AI Client
 
-While Telerik Reporting provides built-in support for popular LLM providers like Azure OpenAI, OpenAI, and Ollama, you may need to integrate with other AI services or implement custom logic. This article shows how to create a custom `IClient` implementation to connect any LLM provider to the AI-powered insights functionality.
+While Telerik Reporting provides built-in support for popular LLM providers like Azure OpenAI, OpenAI, Azure AI Foundry, and Ollama, you may need to integrate with other AI services or implement custom logic, such as token usage tracking. This article shows how to enable AI-powered insights by creating a custom `IClient` implementation to connect any LLM provider.
+
+## Prerequisites
+
+To follow the steps from this tutorial, you must have:
+
+- A running application that hosts a Reporting REST service.
+- A report viewer connected to that REST service.
+
+>tip If you haven't set up a Telerik Reporting REST service yet, check the article [Telerik Reporting REST Services Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to get started.
 
 ## Enabling Custom AI Client
 
@@ -254,7 +263,7 @@ public class CustomResolverReportsController : ReportsControllerBase
 ````
 
 
-You can further customize the AI client to enable additional features like RAG optimization, predefined prompts, and user consent settings. For more details, refer to [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}).
+You can further customize the AI client to enable additional features like RAG optimization, predefined prompts, and user consent settings. For more details, refer to [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}).
 
 ## Understanding the IClient Interface
 
@@ -293,6 +302,6 @@ When RAG is disabled, the method is called only once without the report metadata
 ## See Also
 
 * [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-* [Using AI-Powered Insights with a REST service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service%})
-* [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
+* [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
+* [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
 * [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

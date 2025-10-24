@@ -5,7 +5,7 @@ description: "Learn how to configure the AI-powered insights functionality to ha
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights
 tags: telerik, reporting, ai, configuration
 published: True
-position: 3
+position: 4
 ---
 
 # Customizing AI-Powered Insights
@@ -16,36 +16,13 @@ This article explains how to customize the AI-powered insights functionality for
 
 ## Configuring the Report Engine
 
-As the [Using AI-Powered Insights with a REST service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service%}) article explains, to enable the AI-powered insights functionality, you need to configure the [AIClient element]({%slug telerikreporting/aiclient-element%}) within the report engine configuration in your application's config file. This step is essential for the report engine to connect to the LLM provider. For instance, here is a sample configuration for Azure OpenAI:
+The declarative configuration approach handles most common customization scenarios through the [AIClient element]({%slug telerikreporting/aiclient-element%}) in your application's configuration file. It allows you to customize user consent, custom and predefined prompts, and RAG optimization without writing any code.
 
-````JSON
-{
-    "telerikReporting": {
-        "AIClient": {
-            "friendlyName": "MicrosoftExtensionsAzureOpenAI",
-            "model": "gpt-4o-mini",
-            "endpoint": "https://ai-explorations.openai.azure.com/",
-            "credential": "YOUR_API_KEY"
-        }
-    }
-}
-````
-````XML
-<Telerik.Reporting>
-    <AIClient
-        friendlyName="MicrosoftExtensionsAzureOpenAI"
-        model="gpt-4o-mini"
-        endpoint="https://ai-explorations.openai.azure.com/"
-        credential="YOUR_API_KEY">
-    </AIClient>
-</Telerik.Reporting>
-````
-
-This is a base configuration, but it can be further extended to handle specific scenarios, as explained in the upcoming sections.
+>tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
 
 ### User Consent Configuration
 
-By default, the **AI Prompt** dialog requests explicit consent from users before sending prompts to the AI model. This ensures transparency about data being sent to external AI services and gives users control over their data privacy
+By default, the **AI Prompt** dialog requests explicit consent from users before sending prompts to the AI model. This ensures transparency about data being sent to external AI services and gives users control over their data privacy.
 
 <img src="images/user-consent.png" style="border: 1px solid lightgray; width: 500px" alt="User Consent for AI Summaries" />
 
@@ -55,7 +32,6 @@ In enterprise environments where AI usage policies are already established or wh
 {
     "telerikReporting": {
         "AIClient": {
-            // ...base configuration...
             "requireConsent": false
         }
     }
@@ -64,7 +40,6 @@ In enterprise environments where AI usage policies are already established or wh
 ````XML
 <Telerik.Reporting>
     <AIClient
-        <!-- ...base configuration... -->
         requireConsent="false">
     </AIClient>
 </Telerik.Reporting>
@@ -80,8 +55,6 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
 {
     "telerikReporting": {
         "AIClient": {
-            // ...base configuration...
-            "requireConsent": false,
             "allowCustomPrompts": false,
             "predefinedPrompts": [
                 { "text": "Generate a summary of the report." },
@@ -94,8 +67,6 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
 ````XML
 <Telerik.Reporting>
     <AIClient
-        <!-- ...base configuration... -->
-        requireConsent="false"
         allowCustomPrompts="false">
         <predefinedPrompts>
             <add text="Generate a summary of the report." />
@@ -127,13 +98,6 @@ Below is an example that takes advantage of the table splitting and automatic en
 ````JSON
 "telerikReporting": {
 	"AIClient": {
-        // ...base configuration...
-		"requireConsent": false,
-		"allowCustomPrompts": false,
-		"predefinedPrompts": [
-			{ "text": "Generate an executive summary of this report." },
-			{ "text": "Translate the document into German." }
-		],
 		"ragSettings": {
 			"modelMaxInputTokenLimit": 12000,
 			"maxNumberOfEmbeddingsSent": 10,
@@ -153,11 +117,11 @@ You can override the methods described in the following sections and customize d
 
 ### CreateAIThread(string, string, ClientReportSource)
 
-The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) method is called when the AI Prompt dialog is about to be displayed. You can override this method to control the UI properties of the dialog, such as configuring the user consent message, as well as setting up custom and predefined prompts. You can also override this method to disable the AI-powered insights functionality entirely. The logic can be tailored based on the currently previewed report, which is represented by the `ClientReportSource` property, which allows for dynamic adjustments outside of the basic configuration. Below, you can find some examples based on common use cases.
+The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) method is called when the AI Prompt dialog is about to be displayed. You can override this method to disable the AI-powered insights functionality entirely. The logic can be tailored based on the currently previewed report, which is represented by the `ClientReportSource` argument. For modifying dialog properties like consent messages or predefined prompts, use the [UpdateAIPrompts](#updateaipromptsclientreportsource-aithreadinfo) method instead, which provides direct access to the `AIThreadInfo` object.
 
 #### .NET
 
-````Disabling·AI·Insights·Dynamically
+````C#
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
 /// </summary>
@@ -181,47 +145,11 @@ public override IActionResult CreateAIThread(string clientID, string instanceID,
     return base.CreateAIThread(clientID, instanceID, reportSource);
 }
 ````
-````Changing·Consent·Message
-/// <summary>
-/// Overrides the default user consent message.
-/// </summary>
-/// <returns></returns>
-public override IActionResult CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
-{
-    var result = base.CreateAIThread(clientID, instanceID, reportSource);
-
-    if (result is JsonResult jsonResult && jsonResult.Value is AIThreadInfo aiThreadInfo)
-    {
-        aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
-    }
-
-    return result;
-}
-````
-````Setting·Predefined·Prompts·Dynamically
-/// <summary>
-/// Sets predefined prompts dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
-/// </summary>
-/// <returns></returns>
-public override IActionResult CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
-{
-    var result = base.CreateAIThread(clientID, instanceID, reportSource);
-
-    if (reportSource.Report == "report-suitable-for-markdown-output.trdp" &&
-        result is JsonResult jsonResult &&
-        jsonResult.Value is AIThreadInfo aiThreadInfo)
-    {
-        aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
-    }
-
-    return result;
-}
-````
 
 
 #### .NET Framework
 
-````Disabling·AI·Insights·Dynamically
+````C#
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
 /// </summary>
@@ -244,52 +172,30 @@ public override HttpResponseMessage CreateAIThread(string clientID, string insta
     return base.CreateAIThread(clientID, instanceID, reportSource);
 }
 ````
-````Changing·Consent·Message
-/// <summary>
-/// Overrides the default user consent message.
-/// </summary>
-/// <returns></returns>
-public override HttpResponseMessage CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
-{
-    var result = base.CreateAIThread(clientID, instanceID, reportSource);
-
-    if (result.TryGetContentValue(out AIThreadInfo aiThreadInfo))
-    {
-        aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
-    }
-
-    return result;
-}
-````
-````Setting·Predefined·Prompts·Dynamically
-/// <summary>
-/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
-/// </summary>
-/// <returns></returns>
-public override HttpResponseMessage CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
-{
-    var result = base.CreateAIThread(clientID, instanceID, reportSource);
-
-    if (reportSource.Report == "report-suitable-for-markdown-output.trdp" &&
-        result.TryGetContentValue(out AIThreadInfo aiThreadInfo))
-    {
-        aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
-    }
-
-    return result;
-}
-````
 
 
 ### UpdateAIPrompts(ClientReportSource, AIThreadInfo)
 
-The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) method is called internally during the execution of the `CreateAIThread()`. It provides easier access to the `AIThreadInfo` object, which allows you to change the predefined prompts directly. The example below demonstrate how to add a Markdown-specific predefined prompt only for a particular report.
+The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) method is called internally during the execution of `CreateAIThread()`. This is the recommended method for modifying dialog properties like consent messages and predefined prompts, as it provides direct access to the `AIThreadInfo` object without requiring type casting or result checking.
 
 #### .NET
 
-````C#
+````Changing·Consent·Message
 /// <summary>
-/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
+/// Overrides the default user consent message.
+/// </summary>
+/// <param name="reportSource"></param>
+/// <param name="aiThreadInfo"></param>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+````
+````Setting·Predefined·Prompts·Dynamically
+/// <summary>
+/// Modifies the collection of predefined prompts.
 /// </summary>
 /// <param name="reportSource"></param>
 /// <param name="aiThreadInfo"></param>
@@ -306,9 +212,22 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
 #### .NET Framework
 
-````C#
+````Changing·Consent·Message
 /// <summary>
-/// Modifies the collection of predefined prompts before displaying it in the AI Insights dialog.
+/// Overrides the default user consent message.
+/// </summary>
+/// <param name="reportSource"></param>
+/// <param name="aiThreadInfo"></param>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+````
+````Setting·Predefined·Prompts·Dynamically
+/// <summary>
+/// Modifies the collection of predefined prompts.
 /// </summary>
 /// <param name="reportSource"></param>
 /// <param name="aiThreadInfo"></param>
@@ -386,6 +305,8 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 
 #### .NET Framework
 
+> The RAG Optimization Monitoring example is not included in this section because RAG functionality is available only in .NET and .NET Standard configurations.
+
 ````Modifying·Outgoing·Prompts
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
@@ -423,6 +344,6 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 ## See Also
 
 * [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-* [Using AI-Powered Insights with a REST service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service%})
-* [Creating Custom AI Client Implementation]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation%})
+* [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
+* [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
 * [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

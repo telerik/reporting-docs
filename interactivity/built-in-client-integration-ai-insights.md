@@ -1,16 +1,16 @@
 ---
-title: Using AI-Powered Insights with a REST service
-page_title: How to Use AI-Powered Insights with a REST service
-description: "Learn how to implement an AI-powered prompt UI as part of any web-based report viewer."
-slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-rest-service
+title: Enable AI-Powered Insights with Built-in AI Client
+page_title: How to Enable AI-Powered Insights with Built-in AI Client
+description: "Learn how to enable AI-powered insights using built-in support for popular LLM providers like Azure OpenAI, OpenAI, Azure AI Foundry, and Ollama."
+slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client
 tags: telerik, reporting, ai, rest
 published: True
 position: 2
 ---
 
-# Using AI-Powered Insights With a REST Service
+# Enable AI-Powered Insights with Built-in AI Client
 
-This tutorial shows how to enable and configure AI-powered insights with a [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) so that end users can run predefined or custom prompts against the data behind the currently previewed report and receive responses from an LLM.
+This tutorial shows how to enable and configure AI-powered insights using built-in support for popular LLM providers, such as Azure OpenAI, OpenAI, Azure AI Foundry, and Ollama, so that end users can run predefined or custom prompts against the data behind the currently previewed report and receive responses from an LLM.
 
 > If you use a [Telerik Report Server](https://docs.telerik.com/report-server/introduction) instead of a standalone Telerik Reporting REST service, check the Report Server article [AI-Powered Features Settings](https://docs.telerik.com/report-server/implementer-guide/configuration/ai-settings) instead.
 
@@ -78,6 +78,6 @@ In this case, the `friendlyName` attribute identifies the LLM provider to the re
 ## See Also
 
 * [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-* [Configuring the AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
-* [Creating Custom AI Client Implementation]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation%})
+* [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
+* [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
 * [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

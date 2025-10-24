@@ -16,10 +16,9 @@ While Telerik Reporting provides built-in support for popular LLM providers like
 
 To follow the steps from this tutorial, you must have:
 
-- A running application that hosts a Reporting REST service.
+- A running application that hosts a [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
 - A report viewer connected to that REST service.
-
->tip If you haven't set up a Telerik Reporting REST service yet, check the article [Telerik Reporting REST Services Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to get started.
+- An active subscription (or local runtime) for an LLM model provider with API access.
 
 ## Enabling Custom AI Client
 

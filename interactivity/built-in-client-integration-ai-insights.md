@@ -18,7 +18,7 @@ This tutorial shows how to enable and configure AI-powered insights using built-
 
 To follow the steps from this tutorial, you must have:
 
-- A running application that hosts a Reporting REST service.
+- A running application that hosts a [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
 - A report viewer connected to that REST service.
 - An active subscription (or local runtime) for an LLM model provider with API access. The supported out of the box ones are:
     - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/deployments-overview)
@@ -26,7 +26,7 @@ To follow the steps from this tutorial, you must have:
     - [OpenAI](https://platform.openai.com/docs/models)
     - [Ollama](https://docs.ollama.com/quickstart)
 
->tip You can also connect to LLM providers that are not supported out of the box. To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. For more details, refer to the article [Creating Custom AI Client Implementation]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/custom-iclient-implementation%}).
+>tip You can also connect to LLM providers that are not supported out of the box. To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
 
 ## Using AI-Powered Insights with a REST service
 

@@ -117,7 +117,7 @@ You can override the methods described in the following sections and customize d
 
 ### CreateAIThread(string, string, ClientReportSource)
 
-The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) method is called when the AI Prompt dialog is about to be displayed. You can override this method to disable the AI-powered insights functionality entirely. The logic can be tailored based on the currently previewed report, which is represented by the `ClientReportSource` argument. For modifying dialog properties like consent messages or predefined prompts, use the [UpdateAIPrompts](#updateaipromptsclientreportsource-aithreadinfo) method instead, which provides direct access to the `AIThreadInfo` object.
+The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) method is called when the AI Prompt dialog is about to be displayed. You can override this method to disable the AI-powered insights functionality entirely. The logic can be tailored based on the currently previewed report, which is represented by the `ClientReportSource` parameter. For modifying dialog properties like consent messages or predefined prompts, use the [UpdateAIPrompts](#updateaipromptsclientreportsource-aithreadinfo) method instead, which provides direct access to the `AIThreadInfo` object.
 
 #### .NET
 
@@ -184,8 +184,6 @@ The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.s
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
-/// <param name="reportSource"></param>
-/// <param name="aiThreadInfo"></param>
 protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
 {
     aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
@@ -197,8 +195,6 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
-/// <param name="reportSource"></param>
-/// <param name="aiThreadInfo"></param>
 protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
 {
     if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
@@ -216,8 +212,6 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
-/// <param name="reportSource"></param>
-/// <param name="aiThreadInfo"></param>
 protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
 {
     aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
@@ -229,8 +223,6 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
-/// <param name="reportSource"></param>
-/// <param name="aiThreadInfo"></param>
 protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
 {
     if (reportSource.Report == "report-suitable-for-markdown-output.trdp")

@@ -18,6 +18,28 @@ In rare scenarios, clients keep getting Licensing watermarks in some environment
 
 ## Telerik Licensing Diagnostics
 
+### Build Diagnostics
+
+Use the `TelerikLicensingVerbosity` configuration in your project file to enable detailed licensing diagnostics during build. A sample configuration of the proj file is shown below:
+
+````XML
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>MyProjNamespace</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TelerikLicensingVerbosity>diagnostic</TelerikLicensingVerbosity>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Telerik.Reporting" Version="19.3.25.1001" />
+  </ItemGroup>
+</Project>
+````
+			
+### Runtime Diagnostics
+
 Starting with __Telerik.Licensing__ version 1.6.24, we provide a utility that does runtime diagnostics.
 
 1. Install `Telerik.Licensing` library __1.6.24__ or later from [NuGet](https://www.nuget.org/packages/Telerik.Licensing). We recommend the latest version of the package.

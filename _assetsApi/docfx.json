@@ -5,6 +5,9 @@
         {
           "files": [
             "Bin/**.dll"
+          ],
+          "exclude": [
+            "Bin/Telerik.Reporting.GraphQL.Client.dll"
           ]
         }
       ],

@@ -30,7 +30,7 @@ The same JavaScript client can be written as a .NET client that executes request
 
 ## Solution
 
-1. Use the [Report Server API Client](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/report-server-api-client) for the .NET Framework we distribute with the installation of the Telerik Reporting product. The client's API reference can be found in [Telerik.ReportServer.HttpClient](slug:telerik.reportserver.httpclient).
+1. Use the [Report Server API Client](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/report-server-api-client) for the .NET Framework we distribute with the installation of the Telerik Reporting product.
 1. Create a custom .NET Framework, .NET Core or .NET client. The following solution demonstrates:
 
    - How to Login to the Report Server through the .NET client;

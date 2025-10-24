@@ -34,7 +34,7 @@ To cover these scenarios we will implement a `Custom Report Source Resolver` tha
 The general idea behind this solution is the following:
 
 1. Find all report sources that point to reports, residing in the Report Server instance.
-1. Retrieve the report definitions from the Server using the [`ReportServerClient`](/api/telerik.reportserver.httpclient.reportserverclient) class, and wrap them in an [InstanceReportSource](/api/telerik.reporting.instancereportsource).
+1. Retrieve the report definitions from the Server using the `ReportServerClient` class, and wrap them in an [InstanceReportSource](/api/telerik.reporting.instancereportsource).
 1. Replace the original report sources _(as they are invalid outside of the Report Server environment)_ with the InstanceReportSources created in the previous step.
 1. Repeat the above for every nested report _(SubReport/Report Book member)_.
 

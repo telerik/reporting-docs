@@ -31,7 +31,7 @@ If you wish to connect the Report Viewer to a REST service, you can follow the s
 
 If you wish to connect the Report Viewer to a Report Server instance, refer to the article section [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates).
 
-## Manual Configuration of the HTML5 Report Viewer
+## Manual Configuration in Razor Pages Apps
 
 1.  This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
 1.  Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:

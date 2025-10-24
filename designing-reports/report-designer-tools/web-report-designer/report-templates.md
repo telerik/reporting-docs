@@ -35,7 +35,7 @@ The main purpose of using report templates in the Telerik Web Report Designer is
 
 ## How Templates Work in Web Report Designer
 
-When creating a new report, instead of beginning with a **Blank Report**, you can start with a .trtx **Template** file. 
+When creating a new report, instead of beginning from scratch with a **Blank Report**, you can start with a .trtx **Template** file. 
 
 |Create a Blank Report|Create From a Template|
 |----|----|
@@ -55,7 +55,7 @@ This makes it easy to maintain a consistent look across multiple reports.
 
 	![Create a Report ><](images/wrd-create-menu-option.png)   
 
-1. Select an existing Template: When creating a new report, you can choose a template from the available list. The designer loads the layout and styles, and you can then customize the content and data bindings.
+1. Select an existing `Template`: When creating a new report, you can choose a template from the available list. The designer loads the layout and styles, and you can then customize the content and data bindings.
 	
 	![Load a Template ><](images/web-report-designer-report-templates-load-template.png) 
 
@@ -77,18 +77,20 @@ The end-user is presneted the option to save the report either as a `Report` (.t
  
 ### Report File Formats
 
-The file extensions **.trdp**, **.trdx**, and **.trtx** are used in Telerik Reporting to represent different types of report files. Here's a breakdown of what each one is for:
+The file extensions **.trdp**, **.trdx**, **.trtx** and **.trbp** are used in Telerik Reporting to represent different types of report files. Here's a breakdown of what each one is for:
 
 |Format| Description| Use Case|Designer Compatibility|
 |----|----|----|----|
 |.trdp|**T**elerik **R**eport **D**efinition **P**ackage - Full report with resources. XML-based, editable|Ideal for packaging a report with its assets (images, styles, etc.).|Used in both Web Report Designer and Standalone Report Designer.|
 |.trdx|**T**elerik **R**eport **D**efinition **X**ML - Report definition only. Packaged binary (ZIP)|Better for deployment and performance|Supported in Standalone Report Designer and Web Report Designer.|
-|.trtx|**T**elerik **R**eport **T**emplate **X**ML - XML file used as a template|Used to create new reports based on a predefined layout or style|Primarily used in Web Report Designer.|
+|.trtx|**T**elerik **R**eport **T**emplate **X**ML - XML file used as a template|Used to create new reports based on a predefined layout or style|Supported in Standalone Report Designer and Web Report Designer.|
 |.trbp|**T**elerik **R**eport **B**ook **P**ackage - Stores a report book - a collection of multiple reports|Used when you want to combine several reports into one document (e.g., for printing or exporting)|Standalone Report Designer (and programmatically)|
 
-It stands for Telerik Report Definition XML and contains the structure, layout, data bindings, and styling of a report. Unlike .trdp (which is a packaged format), .trdx is plain XML, making it easier to version control, edit manually, or generate dynamically.
+The report template format **.trtx** stands for Telerik Report Definition XML and contains the structure, layout, data bindings, and styling of a report. Unlike .trdp (which is a packaged format), .trdx is plain XML, making it easier to version control, edit manually, or generate dynamically.
 
 ## Configure Report Templates Folder
+
+If your application doesn't have a specific **Report Templates** folder setup, a default one will be created at root level of your project. You can also navigate to a specific custom folder that contains all the report templates you wish to use.
 
 The [ReportDesignerServiceConfiguration]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#add-configuration-settings-in-the-startupcs-file) class provides a configuration setting for specifying the **TemplateDefinitionStorage**. Thus, you can navigate to a specific folder that stores all report templates:
 

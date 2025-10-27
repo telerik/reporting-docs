@@ -33,7 +33,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Manual Configuration in Razor Pages Apps
 
-1.  This tutorial relies on having already created aх **ASP.NET Core Razor Pages** application. If such is not present, follow the [Get started with Razor Pages in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start) as the first step.
+1.  This tutorial relies on having already created an **ASP.NET Core Razor Pages** application. If such is not present, follow the [Get started with Razor Pages in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start) as the first step.
 1.  Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
 	````C#

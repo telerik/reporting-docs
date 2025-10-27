@@ -33,7 +33,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Manual Configuration in Razor Pages Apps
 
-1.  This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
+1.  This tutorial relies on having already created aх **ASP.NET Core Razor Pages** application. If such is not present, follow the [Get started with Razor Pages in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start) as the first step.
 1.  Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
 	````C#
@@ -43,7 +43,7 @@ app.UseStaticFiles();
 
 1. Add a new razor page to the **Pages** directory of the *Razor Pages* application, and create a `ReportSourceModel` class in the `.cshtml.cs` file, which will be used to provide the report name and parameters.
 
-    ````C#
+	````C#
 public class ReportSourceModel : PageModel
 	{
 		private static readonly JsonSerializerOptions serializerOptions = new JsonSerializerOptions()
@@ -77,12 +77,12 @@ public class ReportSourceModel : PageModel
 
 1. In the razor page's `.cshtml` file, initialize the HTML5 Report Viewer and pass the `ReportSourceModel` from the `@model`:
 
-    ````HTML
+	````HTML
 @page
 @model ReportSourceModel
 @{
 	ViewData["Title"] = "Telerik HTML5 Report Viewer Demo";
-	Model.Report = "SampleReport.trdp";
+	Model.Report = "Barcodes Report.trdp";
 	//Model.Parameters.Add("ParameterName", ParameterValue);
 }
 
@@ -91,9 +91,7 @@ public class ReportSourceModel : PageModel
 		<title>Teleirk HTML5 Report Viewer in ASP.NET Core Razor Pages App</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" />
-
 		<script src="/api/reports/resources/js/telerikReportViewer"s"></script> 
-
 		<style>
 			body {
 				font-family: Verdana, Arial, sans-serif;

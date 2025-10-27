@@ -46,7 +46,7 @@ Telerik Reporting provides the following report viewers:
 
 * [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
 
-	The ReactJS Report Viewer provides a component which wraps the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).
+	The ReactJS Report Viewer provides a component that wraps the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).
 
 * [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
 
@@ -62,8 +62,4 @@ Telerik Reporting provides the following report viewers:
 
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
-	The WPF Report Viewer is suitable for WPF and WinForms projects. The viewer is built with Telerik UI for WPF controls providing a better look, feel, and functionality. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).
-
-* [ASP.NET WebForms Report Viewer (obsolete)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
-
-	The old ASP.NET WebForms Report Viewer is a server-side control suitable for ASP.NET WebForms projects. The viewer is obsolete as of Q3 2015 and we recommend using the [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).
+	The WPF Report Viewer is suitable for WPF and WinForms projects. The viewer is built with Telerik UI for WPF controls, providing a better look, feel, and functionality. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).

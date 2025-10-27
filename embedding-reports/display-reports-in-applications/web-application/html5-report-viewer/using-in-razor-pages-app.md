@@ -79,58 +79,58 @@ public class ReportSourceModel : PageModel
 
 	````HTML
 @page
-@model ReportSourceModel
-@{
-	ViewData["Title"] = "Telerik HTML5 Report Viewer Demo";
-	Model.Report = "Barcodes Report.trdp";
-	//Model.Parameters.Add("ParameterName", ParameterValue);
-}
-
-@section Scripts {
-	<head>
-		<title>Teleirk HTML5 Report Viewer in ASP.NET Core Razor Pages App</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" />
-		<script src="/api/reports/resources/js/telerikReportViewer"s"></script> 
-		<style>
-			body {
-				font-family: Verdana, Arial, sans-serif;
-				margin: 5px;
+	@model ReportSourceModel
+	@{
+		ViewData["Title"] = "Telerik HTML5 Report Viewer Demo";
+		Model.Report = "Barcodes Report.trdp";
+		//Model.Parameters.Add("ParameterName", ParameterValue);
+	}
+	
+	@section Scripts {
+		<head>
+			<title>Teleirk HTML5 Report Viewer in ASP.NET Core Razor Pages App</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" />
+			<script src="/api/reports/resources/js/telerikReportViewer"s"></script> 
+			<style>
+				body {
+					font-family: Verdana, Arial, sans-serif;
+					margin: 5px;
+				}
+	
+				#reportViewer1 {
+					position: absolute;
+					left: 5px;
+					right: 5px;
+					top: 50px;
+					bottom: 5px;
+					overflow: hidden;
+					clear: both;
+				}
+			</style>
+		</head>
+		<body>
+			<div id="reportViewer1">
+				loading...
+			</div>
+	
+			@{
+				var reportSourceModel = Html.Raw(Model.Serialize());
 			}
-
-			#reportViewer1 {
-				position: absolute;
-				left: 5px;
-				right: 5px;
-				top: 50px;
-				bottom: 5px;
-				overflow: hidden;
-				clear: both;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="reportViewer1">
-			loading...
-		</div>
-
-		@{
-			var reportSourceModel = Html.Raw(Model.Serialize());
-		}
-
-		<script type="text/javascript">
-			$(document).ready(function () {
-				$("#reportViewer1")
-					.telerik_ReportViewer({
-						id: "reportviewer1",
-						serviceUrl: "/api/reports",
-						reportSource: @reportSourceModel,
-						enableAccessibility: false,
-					});
-			});
-		</script>
-	</body>
-}
+	
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#reportViewer1")
+						.telerik_ReportViewer({
+							id: "reportviewer1",
+							serviceUrl: "/api/reports",
+							reportSource: @reportSourceModel,
+							enableAccessibility: false,
+						});
+				});
+			</script>
+		</body>
+	}
 ````
 
 

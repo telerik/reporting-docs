@@ -77,7 +77,7 @@ public class ReportSourceModel : PageModel
 
 1. In the razor page's `.cshtml` file, initialize the HTML5 Report Viewer and pass the `ReportSourceModel` from the `@model`:
 
-	````HTML
+	````CSHTML
 @page
 	@model ReportSourceModel
 	@{
@@ -85,7 +85,6 @@ public class ReportSourceModel : PageModel
 		Model.Report = "Barcodes Report.trdp";
 		//Model.Parameters.Add("ParameterName", ParameterValue);
 	}
-	
 	@section Scripts {
 		<head>
 			<title>Teleirk HTML5 Report Viewer in ASP.NET Core Razor Pages App</title>
@@ -97,7 +96,6 @@ public class ReportSourceModel : PageModel
 					font-family: Verdana, Arial, sans-serif;
 					margin: 5px;
 				}
-	
 				#reportViewer1 {
 					position: absolute;
 					left: 5px;
@@ -113,11 +111,9 @@ public class ReportSourceModel : PageModel
 			<div id="reportViewer1">
 				loading...
 			</div>
-	
 			@{
 				var reportSourceModel = Html.Raw(Model.Serialize());
 			}
-	
 			<script type="text/javascript">
 				$(document).ready(function () {
 					$("#reportViewer1")

@@ -42,10 +42,10 @@ markdown-replacements:
 liquid-output-delimiter-left: "{{"
 liquid-output-delimiter-right: "}}"
 liquid:
-  suiteversion: "2025 Q3"
-  buildversion: "19.2.25.813"
-  reportserverversion: "11.2.25.813"
-  spaviewerversion: "27.25.813"
+  suiteversion: "2025 Q4"
+  buildversion: "19.3.25.1112"
+  reportserverversion: "11.3.25.1112"
+  spaviewerversion: "28.25.1112"
   nodeversion: "16.0.0"
   angularsubsetversion: "17.2.0"
   kendosubsetversion: "2025.1.227"
@@ -53,7 +53,7 @@ liquid:
   blazoruiversion: "9.1.0"
   mindotnetversion: "8"
   mindotnetoutputdir: "\\bin\\Debug\\net8.0"
-  dotnetversions: ".NET 8 and .NET 9"
+  dotnetversions: ".NET 8, .NET 9 and .NET 10"
 
 # table of contents and navigation
 meta:
@@ -528,4 +528,120 @@ meta:
 redirects:
   - from: "^/?$"
     to: "/introduction"
+    type: Permanent
+
+  - from: "/licensing/?$"
+    to: "/licensing/setting-up-your-telerik-reporting-license-key"
+    type: Permanent
+
+  - from: "/r-project-reporting"
+    to: "/api"
+    type: Permanent
+
+  - from: "/knowledgebase"
+    to: "/knowledge-base"
+    type: Permanent
+
+  - from: "/designing-reports-report-globalization"
+    to: "/globalization/overview"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/export-and-configure/configure-the-export-formats/(.*)$"
+    to: "/doc-output/configure-the-export-formats/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/export-and-configure/configure-the-report-engine/(.*)$"
+    to: "/doc-output/configure-the-report-engine/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/display-reports-in-applications/(.*)$"
+    to: "/embedding-reports/display-reports-in-applications/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/host-the-report-engine-remotely/(.*)$"
+    to: "/embedding-reports/host-the-report-engine-remotely/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/program-the-report-definition/(.*)$"
+    to: "/embedding-reports/program-the-report-definition/$1"
+    type: Permanent
+
+  - from: "/designing-reports/adding-interactivity-to-reports/(.*)$"
+    to: "/interactivity/$1"
+    type: Permanent
+
+  - from: "/designing-reports/report-structure/(.*)$"
+    to: "/report-items/$1"
+    type: Permanent
+
+  - from: "/designing-reports/rendering-and-paging/(.*)$"
+    to: "/styling/rendering-and-paging/$1"
+    type: Permanent
+
+  - from: "/designing-reports/styling-reports/(.*)$"
+    to: "/styling/styling-reports/$1"
+    type: Permanent
+
+  - from: "/designing-reports/converting-reports-from-other-reporting-solutions/(.*)$"
+    to: "/importing-reports/$1"
+    type: Permanent
+
+    # external redirects
+  - from: "/personal-data-collection"
+    to: "https://www.progress.com/legal/privacy-policy"
+    type: Permanent
+  - from: "/copyright"
+    to: "https://www.progress.com/legal/documentation-copyright"
+    type: Permanent
+
+    # Hashtag redirects
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action"
+    to: "/interactivity/actions/bookmark-action#how-to-add-a-bookmark-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action"
+    to: "/interactivity/actions/drillthrough-report-action#how-to-add-a-drillthroughnavigate-to-report-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action"
+    to: "/interactivity/actions/hyperlink-action#how-to-add-a-hyperlink-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action"
+    to: "/interactivity/actions/drilldown-report-action#how-to-add-a-drilldowntoggle-visibility-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action"
+    to: "/interactivity/actions/custom-action#how-to-add-a-custom-action"
+    type: Permanent
+
+  # KB Redirects
+  - from: "/knowledge-base/oracle-error-ora-01008-on-report-preview "
+    to: "/knowledge-base/oracle-error-ora-01008-on-report-preview"
+    type: Permanent
+  - from: "/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-connect-to-google-books-apis"
+    to: "/knowledge-base/how-to-connect-to-google-books-apis"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-show-the-page-scroll-mode-button"
+    to: "/knowledge-base/how-to-show-the-page-scroll-mode-button"
+    type: Permanent
+  - from: "/troubleshooting/design-time"
+    to: "/knowledge-base/cannot-find-telerik-namespace-build-error"
+    type: Permanent
+  - from: "/troubleshooting/installation"
+    to: "/knowledge-base/installer-fails"
+    type: Permanent
+  - from: "/troubleshooting/run-time"
+    to: "/knowledge-base/cannot-create-objects-from-string-representations"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting/silverlight-reportviewer-troubleshooting"
+    to: "/knowledge-base/silverlight-viewer-not-visible-on-running-app"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/asp.net-webforms-reportviewer-troubleshooting"
+    to: "/knowledge-base/webforms-viewer-report-unavailable-session-expired"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/html5-viewer-troubleshooting"
+    to: "/knowledge-base/cannot-load-html5-viewer-templates-error"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/windows-forms-application/troubleshooting/winforms-reportviewer-troubleshooting"
+    to: "/knowledge-base/winforms-viewer-does-not-display-report"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting"
+    to: "/knowledge-base/wpf-viewer-not-visible-on-running-app"
     type: Permanent

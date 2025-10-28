@@ -7,7 +7,10 @@
             "Bin/**.dll"
           ],
           "exclude": [
-            "Bin/Telerik.Reporting.GraphQL.Client.dll"
+            "Bin/Telerik.Reporting.GraphQL.Client.dll",
+            "Bin/WpfViewerDependencies/Net8/*.dll",
+            "Bin/WpfViewerDependencies/Framework/*.dll",
+            "Bin/WinUIViewerDependencies/Desktop/WinUI60/Telerik.WinUI.Controls.dll"
           ]
         }
       ],

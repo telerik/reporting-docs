@@ -41,7 +41,7 @@ Now, how to migrate the existing ASP.NET Core project from full .NET Framework b
 
 	The above setting is for .NET Core 2.2. Change it correspondingly for the other target frameworks.
 
-1. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages]({%slug telerikreporting/installation%}#installing-telerik-reporting).
+1. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages]({%slug telerikreporting/installation%}#step-3-installing-telerik-reporting).
 1. Update `Microsoft.AspNetCore` libraries to newer version (if needed).
 1. Application configuration in ASP.NET Core uses the new SDK-style project and utilizes `appsettings.json` as a configuration file. The `ConnectionStrings` setting should be configured in JSON-based format like for example:
 

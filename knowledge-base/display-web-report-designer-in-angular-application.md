@@ -85,7 +85,7 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	  constructor() {}
 
 	  ngOnInit() {
-	    this.designer = $("#webReportDesigner").telerik_WebReportDesigner({
+	    $("#webReportDesigner").telerik_WebReportDesigner({
 	      serviceUrl: "https://localhost:5000/api/reportdesigner/", // Replace with your service URL
 	      report: "SampleReport.trdp" // Replace with your report file
 	    }).data("telerik_WebDesigner");

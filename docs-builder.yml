@@ -33,7 +33,7 @@ markdown-replacements:
   # removing code snippets on build until the replacement tool is ready
   - pattern: \{\{source=.*?\}\}
     replacement: "code snippets"
-  ## LOCAL DEV API REF REPLACEMENT
+  ## API REF REPLACEMENT
   ##  pointing (/api) links to the live api reference
   # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
   #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
@@ -644,4 +644,9 @@ redirects:
     type: Permanent
   - from: "/using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting"
     to: "/knowledge-base/wpf-viewer-not-visible-on-running-app"
+    type: Permanent
+
+  # API Reference redirects
+  - from: "^/(e-|f-|events-t-|fields-t-|methods-t-|properties-t-|constructors-t-|t-|m-|p-|overload-|ctor-)telerik-.*"
+    to: "/api/"
     type: Permanent

@@ -48,9 +48,9 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	````HTML
 	<head>
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js"></script>
+		<script src="https://code.jquery.com/jquery-{{jqueryversion}}.min.js"></script>
 		<!-- Kendo UI for jQuery -->
-		<script src="https://localhost:5000/js/webReportDesigner.kendo-{{site.buildversion}}.min.js"></script>
+		<script src="https://localhost:5000/js/webReportDesigner.kendo-{{buildversion}}.min.js"></script>
 		<!-- Telerik Reporting resources -->
 		<script src="https://localhost:5000/api/reports/resources/js/telerikReportViewer"></script>
 		<script src="https://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner"></script>

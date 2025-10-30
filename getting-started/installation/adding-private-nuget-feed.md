@@ -13,7 +13,23 @@ position: 5
 
 Telerik maintains a publicly accessible NuGet server, providing a collection of NuGet packages to authenticated users. You can add the NuGet feed to your system by using [Visual Studio's NuGet package manager](#setup-in-visual-studio) or the [NuGet CLI](#setup-with-nuget-cli).
 
-To access the NuGet server, you need an active license for Telerik Reporting (trial or commercial).
+To access the NuGet server, you need an active license for Telerik Reporting (trial or commercial) and an API key that you will use instead of a password.
+
+## Generate an API Key
+
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI]({% slug using-nuget-keys %}#using-only-cli-commands) or the [`NuGet.Config` file]({% slug using-nuget-keys %}#using-a-nugetconfig-file-with-your-projects).
+
+1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+1. Click **Generate New Key +**.
+
+   ![Manage API Keys](./images/account-generate-api-key.png)
+
+1. In the **Key Note** field, add a note that describes the API key.
+1. Click **Generate Key**.
+1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
+1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
+
+>API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
 ## Setup in Visual Studio
 
@@ -28,13 +44,12 @@ To access the NuGet server, you need an active license for Telerik Reporting (tr
 1. Create or load your project.
 1. Go to __Tools__ > __NuGet Package Manager__ > __Manage NuGet Packages for solution__.
 1. In the upper right-hand corner of the __Manage Packages for Solution__ window, select the Telerik __Package source__ that you just added.
-1. Depending on your Visual Studio version, choose the __Online__ or __Browse__ list of packages.
-1. In the Windows **Authentication** dialog, enter your Telerik credentials. For example, **user: my.name@my.company.com** and **password: myPassPhraseForTelerikDotCom**.
-1. Enter your credentials only once by selecting the __Remember my password__ checkbox. You may need to escape some [special characters in the password](#handling-special-characters-in-password).
+1. Click the **Browse** tab to see the available packages.
+1. In the authentication window, enter `api-key` in the **User name** field and the [generated API key](#generate-an-api-key) in the **Password** field.
 
 	>caption Enter your Telerik.com credentials to access the Telerik NuGet feed
 
-	![Telerik.com credentials form to access the Telerik NuGet Feed](images/nuget-credentials.png)
+	![Telerik.com credentials form to access the Telerik NuGet Feed](images/vs-nuget-auth-window.png)
 
 After adding the Telerik server, all packages licensed to the authenticated user become available in the Visual Studio NuGet package manager.
 
@@ -44,47 +59,21 @@ If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set
 
 1. Download the latest [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 1. Open a Command Prompt and change the path to the `nuget.exe` location.
-1. The command from the example below stores a token in the `%AppData%\NuGet\NuGet.config` file. Your original credentials cannot be obtained from this token.
+1. The command from the example below stores your API key in the `%AppData%\NuGet\NuGet.config` file.
 
 	````powershell
 NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-	-UserName "your login email" -Password "your password"
-````
-
-	If you are unable to connect to the feed by using encrypted credentials, store your credentials in clear text.
-
-	````powershell
-NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-	-UserName "your login email" -Password "your password" ^
+	-UserName "api-key" -Password "YOUR-API-KEY" ^
 	-StorePasswordInClearText
 ````
 
-	> Encrypted passwords are only supported on Windows.
-
-	If you have already stored a token instead of storing the credentials as clear text, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command:
+To update expired or invalid login credentials, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command:
 
 	````powershell
 NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-	-UserName "your login email" -Password "your password" ^
+	-UserName "api-key" -Password "YOUR-API-KEY" ^
 	-StorePasswordInClearText
 ````
-
-
-## Handling Special Characters in Password
-
-If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand (`&`), but it can be as unique as the section character (`§`). There are two ways to handle this.
-
-1. Change the password so that it only includes characters that do not need to be escaped
-1. HTML encodes the password so the special characters are escaped (e.g. `my§uper&P@§§word` becomes `my&sect;uper&amp;P@&sect;&sect;word`).
-
-We strongly discourage entering your password into an online encoder utility, use Powershell instead. Here's one example:
-
-	Add-Type -AssemblyName System.Web
-	[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
-
-Result:
-
-![Powershell Encoding of a Password containing special characters](images/PowerShellEncodingNugetPassword.png)
 
 ## See Also
 

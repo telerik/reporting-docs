@@ -61,7 +61,7 @@ If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set
 1. Open a Command Prompt and change the path to the `nuget.exe` location.
 1. The command from the example below stores your API key in the `%AppData%\NuGet\NuGet.config` file.
 
-````powershell
+	````powershell
 NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
 	-UserName "api-key" -Password "YOUR-API-KEY" ^
 	-StorePasswordInClearText
@@ -69,7 +69,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 
 To update expired or invalid login credentials, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command:
 
-````powershell
+	````powershell
 NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
 	-UserName "api-key" -Password "YOUR-API-KEY" ^
 	-StorePasswordInClearText

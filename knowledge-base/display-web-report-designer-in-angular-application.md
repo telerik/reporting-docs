@@ -32,6 +32,8 @@ res_type: kb
 
 The Telerik Web Report Designer is a jQuery-based HTML5/JavaScript/CSS3 widget that allows you to integrate a report designer into your Angular web applications. While currently there is no dedicated Angular wrapper of the component, you can still integrate the jQuery version in your application, as explained in this article.
 
+>tip A native Angular wrapper for the Web Report Designer is currently under consideration for future development. If you would like to see this feature implemented, vote for the feature request [Web Report Designer in Angular](https://feedback.telerik.com/reporting/1462933-web-report-designer-in-angular) to help prioritize its development.
+
 ## Prerequisites
 
 To follow the steps from this tutorial, you must have:

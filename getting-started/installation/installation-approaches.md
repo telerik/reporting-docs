@@ -77,7 +77,7 @@ You can add Telerik Reporting to a project by installing NuGet packages hosted o
 
 Installing the Telerik Reporting NuGet packages involves three steps:
 
-1. [Generating an API key required fot the NuGet authentication](#step-1-generating-an-api-key).
+1. [Generating an API key required for the NuGet authentication](#step-1-generating-an-api-key).
 1. [Adding the Telerik NuGet server to Visual Studio](#step-2-adding-the-telerik-nuget-package-source-to-visual-studio).
 1. [Installing the Telerik Reporting NuGet packages](#step-3-installing-telerik-reporting).
 

@@ -46,38 +46,39 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 1. Add references to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites) in your main HTML page (`index.html`). Replace `https://localhost:5000` with your actual ASP.NET application URL:
 
 	````HTML
-	<head>
+<head>
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-{{jqueryversion}}.min.js"></script>
+		<script src="https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js"></script>
 		<!-- Kendo UI for jQuery -->
-		<script src="https://localhost:5000/js/webReportDesigner.kendo-{{buildversion}}.min.js"></script>
+		<script src="https://localhost:5000/js/webReportDesigner.kendo-{{site.buildversion}}.min.js"></script>
 		<!-- Telerik Reporting resources -->
 		<script src="https://localhost:5000/api/reports/resources/js/telerikReportViewer"></script>
 		<script src="https://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 	</head>
-	````
-
+````
 
 	> The `webReportDesigner.kendo-{{site.buildversion}}.min.js` file is not served automatically by the Report Designer REST service. You need to copy this file from your Telerik Reporting installation directory (`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportDesigner\js\`) to your ASP.NET Core application's `wwwroot/js/` folder and reference it as shown above. This approach uses the Kendo UI subset included with your Telerik Reporting license instead of requiring a separate Kendo UI license.
 
 1. Generate a new Angular component for the report designer:
 
 	````bash
-	$ ng generate component report-designer
-	````
+$ ng generate component report-designer
+````
 
 
 1. In your `report-designer.component.html`, add a container element for the designer:
 
 	````HTML
-	<div id="webReportDesigner"></div>
-	````
+<div id="webReportDesigner"></div>
+````
 
 
 1. In your `report-designer.component.js(ts)`, declare jQuery and initialize the designer:
 
+	* JavaScript
+
 	````JavaScript
-	import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 	@Component({
 	  selector: 'app-report-designer',
@@ -94,9 +95,13 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	    }).data("telerik_WebDesigner");
 	  }
 	}
-	````
+````
+
+
+	* TypeScript
+
 	````TypeScript
-	import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 	declare var $: any;
 
@@ -115,7 +120,7 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	    }).data("telerik_WebDesigner");
 	  }
 	}
-	````
+````
 
 
 ## Additional Resources

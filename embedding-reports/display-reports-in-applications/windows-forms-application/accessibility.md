@@ -65,3 +65,4 @@ For example, if a report contains a __TextBox__ with `Value = "Sorts by Category
 
 * When a disabled toolbar button is selected, its accessible properties are not output to the screen reader.
 * When the focus is within a multiselect parameter, the current item state (checked/unchecked) is not output to the screen reader.
+

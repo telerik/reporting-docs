@@ -38,3 +38,4 @@ For example, refresh and print of the current report can be triggered like this:
 	}
 }
 ````
+

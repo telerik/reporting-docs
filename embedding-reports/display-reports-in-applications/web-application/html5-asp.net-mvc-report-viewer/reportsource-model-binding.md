@@ -76,3 +76,4 @@ Finally, on the server side, your [custom IReportSourceResolver]({%slug telerikr
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
 {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}
+

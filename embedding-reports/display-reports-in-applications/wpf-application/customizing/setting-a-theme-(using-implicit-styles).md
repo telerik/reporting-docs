@@ -95,3 +95,4 @@ We will apply implicit styles for the `Vista` theme in our example project. Havi
 	 </Application.Resources>
 	</Application>
 ````
+

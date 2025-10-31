@@ -5,7 +5,7 @@ description: "Learn how the Telerik Reporting HTML5 MVC Report Viewer using Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server
 tags: how,to,use,html5,asp.net,mvc,report,viewer,with,report,server
 published: True
-reporting_area: MVCWrapper
+reportingArea: MVCWrapper
 position: 2
 previous_url: /mvc-report-viewer-howto-use-it-with-reportserver
 ---

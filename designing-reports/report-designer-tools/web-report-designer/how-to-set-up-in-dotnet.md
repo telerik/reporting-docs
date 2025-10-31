@@ -5,7 +5,7 @@ description: "Learn how to set up the Telerik Web Report Designer in .NET 8 and 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 tags: how,to,set,up,in,.net,8,applications
 published: True
-reporting_area: WRDHTML5, WRDRestServiceCore
+reportingArea: WRDHTML5, WRDRestServiceCore
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 ---

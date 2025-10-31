@@ -5,7 +5,7 @@ description: "Learn how to setup manually the Telerik Reporting HTML5 ASP.NET We
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/manual-setup
 tags: manual,setup
 published: True
-reporting_area: WebFormsWrapper
+reportingArea: WebFormsWrapper
 position: 3
 previous_url: /html5-webforms-report-viewer-manual-setup
 ---
@@ -180,4 +180,3 @@ The following steps produce a view with settings similar to these of the local `
 	</body>
 	</html>
 ````
-

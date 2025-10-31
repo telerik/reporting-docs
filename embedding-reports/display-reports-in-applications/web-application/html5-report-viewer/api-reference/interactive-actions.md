@@ -5,7 +5,7 @@ description: "Learn what interactive action properties you may access in the int
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/interactive-actions
 tags: interactive,actions
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 8
 previous_url: /html5-report-viewer-interactiveactions
 ---

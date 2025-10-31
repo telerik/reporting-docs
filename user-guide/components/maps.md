@@ -5,7 +5,7 @@ description: Explore the available Maps report components offered by the Web Rep
 slug: web-report-designer-user-guide-components-maps
 tags: web, report, design, components, map
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 4
 ---
 

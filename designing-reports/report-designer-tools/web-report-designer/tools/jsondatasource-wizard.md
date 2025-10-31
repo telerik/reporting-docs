@@ -5,7 +5,7 @@ description: "Learn how to use JSON data in Telerik Reports through the dedicate
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard
 tags: jsondatasource,wizard
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 2
 ---
 

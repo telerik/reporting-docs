@@ -5,7 +5,7 @@ description: "Learn about what are the initialization options exposed by the Ang
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 tags: options
 published: True
-reporting_area: AngularWrapper
+reportingArea: AngularWrapper
 position: 0
 previous_url: /angular-report-viewer-api-options, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference/
 ---

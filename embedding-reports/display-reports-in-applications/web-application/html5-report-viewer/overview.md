@@ -5,7 +5,7 @@ description: "HTML5 Report Viewer is an HTML5/JavaScript/CSS3 jQuery-based widge
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview
 tags: overview
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/, /embedding-reports/display-reports-in-applications/web-application/
 ---

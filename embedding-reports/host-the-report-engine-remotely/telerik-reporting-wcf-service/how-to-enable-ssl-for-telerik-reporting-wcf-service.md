@@ -5,7 +5,7 @@ description: "Learn How to Enable SSL for Telerik Reporting WCF service."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-enable-ssl-for-telerik-reporting-wcf-service
 tags: how,to,enable,ssl,for,telerik,reporting,wcf,service
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 3
 previous_url: /silverlight-enable-ssl-for-telerik-reporting-wcf-service
 ---

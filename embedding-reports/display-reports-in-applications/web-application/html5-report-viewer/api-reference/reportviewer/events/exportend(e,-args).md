@@ -5,7 +5,7 @@ description: "Learn more about the exportEnd(e, args) Event of the Telerik Repor
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportend(e,-args)
 tags: exportend(e,,args)
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 3
 previous_url: /html5-report-viewer-reportviewer-events-exportend
 ---

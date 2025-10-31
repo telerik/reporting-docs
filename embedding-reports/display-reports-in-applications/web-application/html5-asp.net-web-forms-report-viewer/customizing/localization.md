@@ -5,7 +5,7 @@ description: "Learn how to Localize the HTML5 ASP.NET WebForms ReportViewer for 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/localization
 tags: localization
 published: True
-reporting_area: WebFormsWrapper
+reportingArea: WebFormsWrapper
 position: 2
 previous_url: /html5-webforms-report-viewer-customizing-localization
 ---

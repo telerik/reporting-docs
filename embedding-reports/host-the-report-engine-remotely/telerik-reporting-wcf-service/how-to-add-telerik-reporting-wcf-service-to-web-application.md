@@ -5,7 +5,7 @@ description: "Learn how to Add Telerik Reporting WCF Service to Web Application.
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application
 tags: how,to,add,telerik,reporting,wcf,service,to,web,application
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 1
 previous_url: /silverlight-hosting-in-iis
 ---

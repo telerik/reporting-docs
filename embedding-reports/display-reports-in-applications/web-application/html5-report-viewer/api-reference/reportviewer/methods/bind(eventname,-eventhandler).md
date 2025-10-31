@@ -5,7 +5,7 @@ description: "Learn more about the bind(eventName, eventHandler) method of the T
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname,-eventhandler)
 tags: bind(eventname,,eventhandler)
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 4
 previous_url: /html5-report-viewer-reportviewer-methods-bind-en-eh
 ---

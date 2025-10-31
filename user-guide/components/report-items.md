@@ -5,7 +5,7 @@ description: "Learn about report items in Telerik Reporting, their types, purpos
 slug: user-guide/components/report-items
 tags: telerik, reporting, report, items, components, building blocks, visualization
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 1
 ---
 

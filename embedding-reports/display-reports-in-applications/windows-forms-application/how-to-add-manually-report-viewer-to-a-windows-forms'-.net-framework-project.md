@@ -5,7 +5,7 @@ description: "Learn how to add the Windows Forms Report Viewer control to a Wind
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project
 tags: how, to, add, manually, report, viewer, to, a, windows, forms, .net, framework, project
 published: True
-reporting_area: WinForms
+reportingArea: WinForms
 position: 3
 previous_url: /winforms-report-viewer-manual-setup
 ---

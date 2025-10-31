@@ -5,7 +5,7 @@ description: "Learn how the WPF Report Viewer can be manually set up in a .NET F
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project
 tags: how,add,,manually,report,viewer,wpf,.net,framework,project
 published: True
-reporting_area: WPF
+reportingArea: WPF
 position: 3
 previous_url: /wpf-report-viewer-manual-setup
 ---

@@ -5,7 +5,7 @@ description: "Learn about the PrintModes of the telerikReportViewer object in th
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/printmodes
 tags: printmodes
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 3
 previous_url: /html5-report-viewer-api-printmodes
 ---

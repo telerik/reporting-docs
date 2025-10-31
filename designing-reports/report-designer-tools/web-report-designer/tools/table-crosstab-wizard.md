@@ -5,7 +5,7 @@ description: "Learn how to display tables in Telerik Reports via the dedicated W
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard
 tags: table/crosstab,wizard
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 2
 previous_url: /web-report-designer-table-crosstab-wizard
 ---

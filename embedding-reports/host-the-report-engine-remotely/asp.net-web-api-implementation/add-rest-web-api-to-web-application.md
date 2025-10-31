@@ -5,7 +5,7 @@ description: "Learn how to configure the Telerik Reporting REST Service in an AS
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application
 tags: how,to,add,telerik,reporting,rest,web,api,to,web,application
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 2
 previous_url: /telerik-reporting-rest-host-http-service-using-web-hosting,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/add-rest-web-api-to-web-application
 ---

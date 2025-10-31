@@ -5,7 +5,7 @@ description: "Learn how to Add Telerik Reporting REST ServiceStack to ASP.NET We
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application
 tags: how,to,add,telerik,reporting,rest,servicestack,to,web,application
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 2
 previous_url: /telerik-reporting-rest-servicestack-hosting-iis,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/add-rest-servicestack-to-web-application
 ---

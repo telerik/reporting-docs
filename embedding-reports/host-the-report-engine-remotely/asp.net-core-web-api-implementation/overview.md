@@ -5,7 +5,7 @@ description: "Learn more about the ASP.NET Core Web API Implementation of Teleri
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview
 tags: overview
 published: True
-reporting_area: RESTServiceCore
+reportingArea: RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-service-aspnetcore-mvc,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview, /embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/
 ---

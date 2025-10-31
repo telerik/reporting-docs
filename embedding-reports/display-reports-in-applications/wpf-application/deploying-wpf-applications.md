@@ -5,7 +5,7 @@ description: "Learn about the required and optional assemblies/packages needed f
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/deploying-wpf-applications
 tags: deploying,wpf,applications
 published: True
-reporting_area: WPF
+reportingArea: WPF
 position: 7
 previous_url: /installation-deploying-on-wpf-application
 ---

@@ -5,7 +5,7 @@ description: "Explore the Web Report Designer user guide and discover how to app
 slug: user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 0
 ---
 <style>

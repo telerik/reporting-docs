@@ -5,7 +5,7 @@ description: "Learn how to set up the WPF Report Viewer to use a Reporting REST 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service
 tags: how,to,use,wpf,report,viewer,with,rest,service
 published: True
-reporting_area: WPF
+reportingArea: WPF
 position: 10
 previous_url: /wpf-report-viewer-howto-use-it-with-rest-service
 ---

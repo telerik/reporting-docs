@@ -5,7 +5,7 @@ description: "Learn about what are the Telerik Reporting native Blazor Report Vi
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options
 tags: options,blazor,native,report,viewer,api,initialization
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/
 ---

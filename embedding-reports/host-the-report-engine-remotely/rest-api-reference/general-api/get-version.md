@@ -5,7 +5,7 @@ description: "Learn how to make the Get Version request to the Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version
 tags: get,version
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 2
 previous_url: /embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api/
 ---

@@ -5,7 +5,7 @@ description: "Learn how to make the Unregister Client request to the Telerik Rep
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/unregister-client
 tags: unregister,client
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-api-unregister-client,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/unregister-client
 ---

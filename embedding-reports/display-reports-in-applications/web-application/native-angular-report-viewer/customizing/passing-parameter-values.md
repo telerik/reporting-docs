@@ -5,7 +5,7 @@ description: "Learn how to pass/update the values of the Report Parameters or lo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/passing-parameter-values
 tags: how,to,pass,values,to,report,parameters,in,native,angular,report,viewer
 published: True
-reporting_area: NativeAngular
+reportingArea: NativeAngular
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/
 ---

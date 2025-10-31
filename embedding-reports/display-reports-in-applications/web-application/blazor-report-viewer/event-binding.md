@@ -1,7 +1,7 @@
 ---
 title: Event Binding
 page_title: Handling Blazor Report Viewer Events
-description: "Learn about what are the events exposed by the Telerik Reporting Blazor Report Viewer and how to attach event handlers to said events."
+description: "Learn about the events exposed by the Telerik Reporting Blazor Report Viewer and how to attach event handlers to said events."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/event-binding
 tags: event,binding
 published: True
@@ -45,3 +45,4 @@ Then, we can create the event handler functions in the **wwwroot/index.html** (B
 	}
 </script>
 ````
+

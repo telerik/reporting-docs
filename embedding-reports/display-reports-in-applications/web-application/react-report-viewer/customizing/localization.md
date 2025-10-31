@@ -5,7 +5,7 @@ description: "Undertand how to localize the messages displayed by the React Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/localization
 tags: react, report, viewer, localization
 published: True
-reporting_area: React
+reportingArea: React
 position: 2
 previous_url: /react-report-viewer-localization
 ---
@@ -83,4 +83,3 @@ export function ReportViewer() {
 		)
 	}
 ````
-

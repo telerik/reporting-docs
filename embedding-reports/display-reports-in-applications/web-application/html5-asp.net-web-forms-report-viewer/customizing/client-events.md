@@ -5,7 +5,7 @@ description: "Learn what are the Client Events exposed by the HTML5 ASP.NET WebF
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/client-events
 tags: client,events
 published: True
-reporting_area: WebFormsWrapper
+reportingArea: WebFormsWrapper
 position: 6
 previous_url: /html5-webforms-report-viewer-customizing-client-api
 ---

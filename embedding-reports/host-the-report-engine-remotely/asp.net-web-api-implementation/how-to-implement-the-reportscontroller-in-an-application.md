@@ -5,7 +5,7 @@ description: "Learn how to implement the ReportsController of the Telerik Report
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application
 tags: reports, controller, aspnet
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 4
 previous_url: /telerik-reporting-rest-implementing-http-service,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application
 ---

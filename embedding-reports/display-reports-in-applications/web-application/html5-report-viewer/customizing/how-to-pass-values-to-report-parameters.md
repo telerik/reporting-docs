@@ -5,7 +5,7 @@ description: "Learn How to pass Values to Report Parameters from Components Loca
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,pass,values,report,parameters
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 4
 previous_url: /html5-report-viewer-howto-custom-parameters
 ---

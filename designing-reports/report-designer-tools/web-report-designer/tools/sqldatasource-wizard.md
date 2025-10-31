@@ -5,7 +5,7 @@ description: "Learn how to connect Telerik Reports to SQL databases through the 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard
 tags: sqldatasource,wizard
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 0
 previous_url: /web-report-designer-tools-sqldatasource-wizard
 ---

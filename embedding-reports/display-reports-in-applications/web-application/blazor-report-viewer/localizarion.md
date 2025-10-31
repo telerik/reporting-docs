@@ -5,7 +5,7 @@ description: "Learn how the Blazor HTML5 Report Viewer can be localized for mult
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/localization
 tags: localization, blazor, html5, report, viewer
 published: True
-reporting_area: BlazorWrapper
+reportingArea: BlazorWrapper
 position: 5
 ---
 

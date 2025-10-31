@@ -5,7 +5,7 @@ description: "Learn how to configure the web report designer and its controller 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application
 tags: how,to,set,up,in,.net,framework,application
 published: True
-reporting_area: WRDHTML5, WRDRestService
+reportingArea: WRDHTML5, WRDRestService
 position: 4
 previous_url: /web-report-designer-setup-in-dot-net-framework
 ---

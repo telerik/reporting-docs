@@ -5,7 +5,7 @@ description: "Learn how to make the Send Document request to the Telerik Reporti
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/send-document
 tags: send,document
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 3
 previous_url: /telerik-reporting-rest-documents-api-send-document,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/send-document
 ---

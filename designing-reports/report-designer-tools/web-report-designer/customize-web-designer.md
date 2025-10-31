@@ -5,7 +5,7 @@ description: "Learn more about the customization capabilities of the Telerik Web
 slug: telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization
 tags: report,webreportdesigner,customization
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 8
 ---
 

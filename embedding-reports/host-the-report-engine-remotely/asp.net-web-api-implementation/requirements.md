@@ -5,7 +5,7 @@ description: "Learn what are the basic Requirements for using Telerik Reporting 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements
 tags: requirements,rest,webapi,api,asp.net,application
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 1
 previous_url: /telerik-reporting-rest-service-web-api-system-requirements,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements
 ---

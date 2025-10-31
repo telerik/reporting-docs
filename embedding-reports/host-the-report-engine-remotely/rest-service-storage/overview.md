@@ -5,7 +5,7 @@ description: "Learn more about the Telerik Reporting REST Service Storage, what 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview
 tags: overview,rest,storage,scenario,implementation,service,reporting
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-service-storage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview, /embedding-reports/host-the-report-engine-remotely/rest-service-storage/
 ---

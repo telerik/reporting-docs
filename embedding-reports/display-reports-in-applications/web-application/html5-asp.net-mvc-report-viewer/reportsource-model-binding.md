@@ -5,7 +5,7 @@ description: "Learn how the ReportSource Model can be bound with various client 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/reportsource-model-binding
 tags: reportsource,model,binding
 published: True
-reporting_area: MVCWrapper
+reportingArea: MVCWrapper
 position: 4
 previous_url: /mvc-report-viewer-reportsource-model-binding
 ---
@@ -76,4 +76,3 @@ Finally, on the server side, your [custom IReportSourceResolver]({%slug telerikr
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
 {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}
-

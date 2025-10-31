@@ -5,7 +5,7 @@ description: "Learn more about the updateUi(e) Event of the Telerik Reporting HT
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
 tags: updateui,viewer,html5
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 11
 previous_url: /html5-report-viewer-reportviewer-events-updateui
 ---

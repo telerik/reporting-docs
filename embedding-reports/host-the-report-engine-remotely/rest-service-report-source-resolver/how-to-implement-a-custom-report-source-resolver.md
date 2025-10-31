@@ -5,7 +5,7 @@ description: "Learn how to implement a Custom ReportSource Resolver for the Tele
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 tags: how,to,implement,a,custom,report,source,resolver
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-custom-report-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 ---

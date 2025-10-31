@@ -5,7 +5,7 @@ description: "Learn how the HTML5 MVC Report Viewer can be localized for multipl
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/localization
 tags: localization
 published: True
-reporting_area: MVCWrapper
+reportingArea: MVCWrapper
 position: 2
 previous_url: /html5-mvc-report-viewer-customizing-localization
 ---

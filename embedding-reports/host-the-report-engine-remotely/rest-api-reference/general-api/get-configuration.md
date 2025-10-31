@@ -5,7 +5,7 @@ description: "Learn how to make the Get Configuration request to the Telerik Rep
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration
 tags: get,configuration
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 1
 ---
 

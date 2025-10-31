@@ -5,7 +5,7 @@ description: "Learn How to Create and use Custom Parameter Editors in the HTML5 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: how,create,custom,parameter,editor
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 3
 previous_url: /html5-report-viewer-howto-custom-parameter-editor
 ---

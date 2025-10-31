@@ -5,7 +5,7 @@ description: Telerik Reporting WCF Service Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview
 tags: overview
 published: True
-reporting_area: RESTService
+reportingArea: RESTService
 position: 0
 previous_url: /silverlight-wcf-service-overview, /embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/, /silverlight-wcf-service
 ---

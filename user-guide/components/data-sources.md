@@ -5,7 +5,7 @@ description: Web Report Designer offers different Data Source Components that ca
 slug: web-report-designer-user-guide-components-data-sources
 tags: web, report, design, components, data, source
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 7
 ---
 

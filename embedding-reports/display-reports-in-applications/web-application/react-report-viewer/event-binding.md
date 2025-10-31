@@ -5,7 +5,7 @@ description: "Learn how to bind to the different events exposed by the React Rep
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/event-binding
 tags: react, report, viewer, event, binding
 published: True
-reporting_area: React
+reportingArea: React
 position: 3
 previous_url: /react-report-viewer-event-binding
 ---

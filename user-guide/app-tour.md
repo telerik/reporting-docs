@@ -5,7 +5,7 @@ description: Explore the Web Report Designer's panes and discover the features i
 slug: user-guide/app-tour
 tags: web, report, design, tool, create, report, web, structure 
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 5
 ---
 

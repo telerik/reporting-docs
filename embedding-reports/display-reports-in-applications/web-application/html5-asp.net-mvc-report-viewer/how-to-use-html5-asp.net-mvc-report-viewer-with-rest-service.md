@@ -5,7 +5,7 @@ description: "Learn how the Telerik Reporting HTML5 MVC Report Viewer can integr
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service
 tags: how,to,use,html5,asp.net,mvc,report,viewer,with,rest,service
 published: True
-reporting_area: MVCWrapper
+reportingArea: MVCWrapper
 position: 1
 previous_url: /mvc-report-viewer-extension-embedding
 ---

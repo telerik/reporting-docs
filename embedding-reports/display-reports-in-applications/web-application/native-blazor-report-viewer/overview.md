@@ -5,7 +5,7 @@ description: "Learn more about the Telerik Native Blazor Report Viewer requireme
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview
 tags: overview
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/
 ---

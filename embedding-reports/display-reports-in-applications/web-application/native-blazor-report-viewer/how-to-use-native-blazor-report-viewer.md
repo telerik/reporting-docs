@@ -5,7 +5,7 @@ description: "Learn how to configure and integrate the Native Blazor Report View
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer
 tags: how, to, use, native, blazor, report, viewer, server, webassembly
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 1
 ---
 

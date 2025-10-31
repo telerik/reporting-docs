@@ -5,7 +5,7 @@ description: "Learn about what are the events exposed by the Native Angular Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events
 tags: events,angular,report,viewer
 published: True
-reporting_area: NativeAngular
+reportingArea: NativeAngular
 position: 2
 ---
 
@@ -734,4 +734,3 @@ import { ReportParameterInfo } from '@progress/telerik-common-report-viewer'
 		};
 	}
 ````
-

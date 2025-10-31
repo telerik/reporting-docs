@@ -5,7 +5,7 @@ description: Explore the available Chart report components offered by the Web Re
 slug: web-report-designer-user-guide-components-charts
 tags: web, report, design, components, chart, bar, line, area, column, pie, doughnut, polar, range, scatter, bubble, sparkline, ohlc
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 5
 ---
 

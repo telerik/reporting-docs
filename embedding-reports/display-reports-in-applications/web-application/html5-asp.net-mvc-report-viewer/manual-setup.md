@@ -5,7 +5,7 @@ description: "Learn how the Telerik Reporting HTML5 MVC Report Viewer can be man
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/manual-setup
 tags: manual,setup
 published: True
-reporting_area: MVCWrapper
+reportingArea: MVCWrapper
 position: 3
 previous_url: /html5-mvc-report-viewer-embedding
 ---

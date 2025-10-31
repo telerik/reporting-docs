@@ -5,7 +5,7 @@ description: "Understand the prerequisites and steps necessary to add the React 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service
 tags: how, to, use, react, report, viewer, with, rest, service
 published: True
-reporting_area: React
+reportingArea: React
 position: 1
 previous_url: /react-report-viewer-with-rest-service
 ---

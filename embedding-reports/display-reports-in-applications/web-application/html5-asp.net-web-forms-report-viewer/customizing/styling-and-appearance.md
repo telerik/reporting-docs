@@ -5,7 +5,7 @@ description: "Learn how the styling and appearance of the HTML5 ASP.NET WebForms
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/styling-and-appearance
 tags: styling,and,appearance
 published: True
-reporting_area: WebFormsWrapper
+reportingArea: WebFormsWrapper
 position: 1
 previous_url: /html5-webforms-report-viewer-customizing-styling
 ---

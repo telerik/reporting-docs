@@ -22,26 +22,9 @@ The article explains how to set up the HTML5 Report Viewer to work with the Tele
 
 ## Configuring the HTML5 Report Viewer to work with the Report Server for .NET
 
-Follow the below steps to set up your HTML5 Report Viewer to work with the Telerik Report Server for .NET as a backend.
+Follow the steps below to set up your HTML5 Report Viewer to work with the Telerik Report Server for .NET as a backend instead of [using a Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).
 
-1. Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working. Examine the produced HTML page and especially the section that configures the viewer:
-
-	````JavaScript
-$("#reportViewer1")
-		.telerik_ReportViewer({
-			serviceUrl: "/api/reports/",
-			templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
-			reportSource: {
-				report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-				parameters: {
-					CultureID: "en"
-				}
-			}
-		});
-````
-
-
-1. Locate the line that sets the service URL: `serviceUrl: "/api/reports/",`. Comment it out or replace it with the following code:
+1. Use the following code instead of `serviceUrl: "/api/reports/",` to connect to the Report Server for .NET rather than to a Reporting REST Service:
 
 	````JavaScript
 reportServer: {
@@ -52,13 +35,13 @@ reportServer: {
 	},
 ````
 
+	>caution The `serviceUrl` option shouldn't be present, or the viewer would default to no authentication scheme utilizing the Report Server for .NET as a regular Reporting REST Service.
+
 	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance along with the port if needed.
 
-	The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user that is logging in to the Report Server for .NET.
+	The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET.
 
-	>caution The `serviceUrl` option shouldn't be present or the viewer would default to no authentication scheme utilizing the Report Server for .NET as a regular Reporting REST Service.
-
-	(_not recommended_) Alternatively, you may use hardcoded username and password instead of Token authentication. We do not recommed this for security reasons:
+	(_not recommended_) Alternatively, you may use a hardcoded username and password instead of Token authentication. We do not recommend this for security reasons:
 
 	````JavaScript
 reportServer: {
@@ -68,9 +51,8 @@ reportServer: {
 	},
 ````
 
-	>caution The Guest User may connect to the Report Server for .NET only with a Token. It doesn't have a password and cannot connect to the Report Server for .NET with Null credentials as the Report Server for .NET Framework 4.6.2.
+	>caution The Guest User may connect to the Report Server for .NET only with a Token. It doesn't have a password and cannot connect to the Report Server for .NET with Null credentials, as the Report Server for .NET Framework 4.6.2.
 
-1. If you have modified the Telerik Report Viewer Template HTML file, you can leave the `templateUrl` option intact. Otherwise, it is recommended to delete the line `templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html'`, so the template will be downloaded automatically from the server.
 1. Locate the lines that set the report source's report definition (it should start with `report: "...`). Replace them with the following line: `report: "{Category}/{ReportName}"`, where `{Category}` and `{ReportName}` are the actual names of the category and report that can be accessed by the User you have provided Token or login credentials for. Set up the report parameters if needed.
 1. The initialization should look like the following: 
 
@@ -83,7 +65,6 @@ $("#reportViewer1")
 					return Promise.resolve("<personal-access-token>");
 				}
 			},
-			//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
 			reportSource: {
 				// The report value should contain the Category and ReportName in the following format
 				// {Category/ReportName}
@@ -96,7 +77,7 @@ $("#reportViewer1")
 ````
 
 
-1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer.
+1. Run the project, and you should see the report configured in the previous step appearing in the Report Viewer.
 
 ## See Also
 

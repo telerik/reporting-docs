@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powe
 tags: telerik, reporting, ai
 published: True
 position: 1
-previous_url: /ai-powered-insights
+previous_url: /interactivity/ai-powered-insights
 ---
 
 # AI-Powered Insights Overview

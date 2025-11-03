@@ -615,8 +615,8 @@ import { CurrentPageChangedEventArgs } from '@progress/telerik-common-report-vie
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		currentPageChanged(currentPageChangedEventArgs: CurrentPageChangedEventArgs) {
-        	console.log("The page number and document id.", currentPageChangedEventArgs);
-        	console.log("This event will be emitted when the viewer changes its currently displayed page.");
+		console.log("The page number and document id.", currentPageChangedEventArgs);
+		console.log("This event will be emitted when the viewer changes its currently displayed page.");
     	};
 	}
 ````

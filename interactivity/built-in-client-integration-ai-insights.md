@@ -39,6 +39,8 @@ To enable the AI-powered insights, follow these steps:
     - `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI`&mdash;for OpenAI
     - `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`&mdash;for Ollama
 
+    > These packages depend on other NuGet packages that are currently in prerelease versions. .NET Framework projects using the `packages.config` format cannot automatically resolve prerelease dependencies, which may cause installation errors. To resolve this, first manually install the required prerelease packages using the NuGet Package Manager UI with the ["Include prerelease" option enabled](https://learn.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages), then install the Telerik Reporting AI package.
+
 1. Add the [AIClient element]({%slug telerikreporting/aiclient-element%}) to the report engine configuration in your application's configuration file. This element allows you to specify the AI model, endpoint, and authentication credentials. The following example demonstrates a basic Azure OpenAI configuration:
 
 

@@ -779,7 +779,7 @@ import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
 
 		toolTipOpening(tooltipEventArgs: TooltipEventArgs) {
         	console.log("The tooltip arguments.", tooltipEventArgs);
-        	console.log("This event will be emitted when a tooltip is opened.");
+		console.log("This event will be emitted when a tooltip is opened.");
     	};
 	}
 ````

@@ -217,7 +217,7 @@ import { ExportDocumentReadyEventArgs } from '@progress/telerik-common-report-vi
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		exportDocumentReady(exportDocumentReadyEventArgs: ExportDocumentReadyEventArgs) {
-        	console.log("This event will be emitted after the viewer finishes exporting the report.", exportDocumentReadyEventArgs);
+		console.log("This event will be emitted after the viewer finishes exporting the report.", exportDocumentReadyEventArgs);
     	};
 	}
 ````

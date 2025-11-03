@@ -656,9 +656,9 @@ import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		interactiveActionEnter(interactiveActionArgs: PageActionEventArgs) {
-        	console.log("The interactive action arguments.", interactiveActionArgs);
-        	console.log("This event will be emitted when the cursor hovers over an interactive action.");
-    	};
+			console.log("The interactive action arguments.", interactiveActionArgs);
+			console.log("This event will be emitted when the cursor hovers over an interactive action.");
+		};
 	}
 ````
 

@@ -819,9 +819,9 @@ import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		toolTipClosing(tooltipEventArgs: TooltipEventArgs) {
-        	console.log("The tooltip arguments.", tooltipEventArgs);
-       		console.log("This event will be emitted when a tooltip is closed.");
-    	};
+			console.log("The tooltip arguments.", tooltipEventArgs);
+			console.log("This event will be emitted when a tooltip is closed.");
+		};
 	}
 ````
 

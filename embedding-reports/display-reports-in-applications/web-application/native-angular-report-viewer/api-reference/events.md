@@ -137,8 +137,8 @@ import { PrintDocumentReadyEventArgs } from '@progress/telerik-common-report-vie
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		printDocumentReady(printDocumentReadyEventArgs: PrintDocumentReadyEventArgs) {
-        	console.log("This event will be emitted after the viewer finishes printing the report.", printDocumentReadyEventArgs);
-    	};
+			console.log("This event will be emitted after the viewer finishes printing the report.", printDocumentReadyEventArgs);
+		};
 	}
 ````
 

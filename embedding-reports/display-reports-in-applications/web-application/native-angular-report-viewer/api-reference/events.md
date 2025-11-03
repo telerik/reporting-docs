@@ -737,9 +737,9 @@ import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		interactiveActionLeave(interactiveActionArgs: PageActionEventArgs) {
-        	console.log("The interactive action arguments.", interactiveActionArgs);
-        	console.log("This event will be emitted when the cursor leaves the interactive action area.");
-    	};
+			console.log("The interactive action arguments.", interactiveActionArgs);
+			console.log("This event will be emitted when the cursor leaves the interactive action area.");
+		};
 	}
 ````
 

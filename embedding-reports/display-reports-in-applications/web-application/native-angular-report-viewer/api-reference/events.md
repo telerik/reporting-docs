@@ -697,7 +697,7 @@ import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		interactiveActionExecuting(pageActionEventArgs: PageActionEventArgs) {
-        	console.log("This event will be emitted before an interactive action is executed.", pageActionEventArgs);
+			console.log("This event will be emitted before an interactive action is executed.", pageActionEventArgs);
     	};
 	}
 ````

@@ -97,8 +97,8 @@ import { PrintStartedEventArgs } from '@progress/telerik-common-report-viewer'
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		printStarted(printStartedEventArgs: PrintStartedEventArgs) {
-        	console.log("This event will be emitted when the printing starts.", printStartedEventArgs);
-    	};
+			console.log("This event will be emitted when the printing starts.", printStartedEventArgs);
+		};
 	}
 ````
 

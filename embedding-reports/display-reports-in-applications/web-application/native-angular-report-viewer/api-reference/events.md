@@ -177,7 +177,7 @@ import { ExportStartedEventArgs } from '@progress/telerik-common-report-viewer'
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
 		exportStarted(exportStartedEventArgs: ExportStartedEventArgs) {
-        	console.log("This event will be emitted when an export operation is triggered.", exportStartedEventArgs);
+			console.log("This event will be emitted when an export operation is triggered.", exportStartedEventArgs);
     	};
 	}
 ````

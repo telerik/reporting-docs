@@ -476,7 +476,7 @@ kendothemeversion: "10.2.0"
 blazoruiversion: "9.1.0"
 mindotnetversion: "8"
 mindotnetoutputdir: "\\bin\\Debug\\net8.0"
-dotnetversions: ".NET 8 and .NET 9"
+dotnetversions: ".NET 8, .NET 9 and .NET 10"
 
 # Feedback Form Product code
 productCode: REPORTING

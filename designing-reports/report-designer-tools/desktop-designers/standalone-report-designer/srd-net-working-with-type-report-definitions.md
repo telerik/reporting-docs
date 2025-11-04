@@ -31,7 +31,7 @@ The designer's functionality for working with Coded Reports relies on [MSBuild](
 If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
 
 > The .NET SDK corresponding to your project’s target framework must also be installed. 
-For example, if your report library targets .NET 8, ensure the .NET 8 SDK is present.
+For example, if your report library targets .10, ensure the .NET 10 SDK is present.
 Without it, SRD.NET will fail to compile the project.
 
 ## Opening Coded Reports

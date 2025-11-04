@@ -133,7 +133,7 @@ The following code example shows the default `Telerik.ReportDesigner.exe.config`
 ````
 
 
-## Default Configuration for the .NET 8 Standalone Report Designer
+## Default Configuration for the .NET 10 Standalone Report Designer
 
 The following code example shows the default `Telerik.ReportDesigner.Net.dll.config` file that is distributed with the Report Designer for .NET. A major difference with the designer for .NET Framework is that the Trace Listener for .NET is in the `Telerik.Reporting` section rather than in the `system.diagnostics` section as in .NET Framework.
 

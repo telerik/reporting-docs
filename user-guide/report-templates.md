@@ -25,15 +25,15 @@ A **report template** is a reusable design that defines the layout, styling, and
 
 Whether you are building dashboards, invoices, or summaries, report templates help you start with a solid foundation—saving time and ensuring visual and structural consistency across your reporting projects. Using templates offers:
 
-* **Increased Productivity**—Templates provide a ready-made layout and structure, so you can focus on your data and content rather than design.
+* **Increased Productivity**—Templates offer a ready-made layout and structure, so you can focus on your data instead of design.
 
-* **Ensure Consistency**—Using templates helps maintain a uniform look and feel across multiple reports - especially useful for teams or organizations.
+* **Ensure Consistency**—Maintain a uniform look and feel across multiple reports - especially useful for teams or organizations.
 
 * **Simplify Design for Non-Designers**—Even if you're not familiar with styling or layout best practices, templates give you a polished starting point.
 
-* **Customize and Reuse**—You can modify a template to suit your needs and reuse it across different projects or departments.
+* **Customize and Reuse**—Easily adapt templates to fit different projects or departments, and reuse them to stay efficient.
 
-* **Standardize Branding**—Templates can include your company’s logo, colors, fonts, and layout preferences - ensuring every report aligns with your brand.
+* **Support Branding**—Include your company’s logo, colors, and fonts to ensure every report aligns with your brand identity.
 
 ## Working with Report Templates
 
@@ -80,7 +80,7 @@ If you want to start from a predefined report template with a ready-to-use desig
 	
 	![Load a Template ><](images/web-report-designer-report-templates-load-template.png) 
 
-1. Enter `File Name` and `Format`: Once the template is selected, enter an appropriate name for the report you are creating from the template and choose the `Format`:
+1. Enter `File Name` and `Format`—After selecting a template, give your new report a meaningful name and choose the desired output format.:
 
 	![Report From a Template ><](images/web-report-designer-report-templates-report-from-template.png) 
 

@@ -18,15 +18,13 @@ img[alt$="><"] {
 
 Instead of manually entering fixed values, you can use expressions to make your report items smarter and more dynamic. This means your reports can automatically adapt to changing data or conditions—saving you time and reducing errors. The expression editor helps you build these expressions easily, offering ready-to-use elements and clear descriptions so you can focus on getting the result you need without digging through documentation.
 
-Quickly build your pricing logic by combining database fields with custom values—just type your formula or double-click elements to add them. This helps you calculate extended prices effortlessly and accurately.
+With expressions, you can quickly build your pricing logic by combining database fields with custom values—just type your formula or double-click elements to add them.
 
 ![How to create an Expression Editor ><](images/CreatingExpressionEditorWRD.png)
 
 ## Designing Expressions with Built-in Elements
 
-Build flexible expressions with minimal effort by using predefined components, eliminating the need for manual coding.
-
-![How the built-in elements in the Expression Editor look ><](images/Built-inElementsExpressionEditorWRD.png)
+By using the predefined expression components in the Web Report Designers, you can build flexible expressions with minimal effort, eliminating the need for coding or manual calculations.
 
 | Name | Description |
 | ------ | ------ |
@@ -34,22 +32,20 @@ Build flexible expressions with minimal effort by using predefined components, e
 | `Fields – mainDataSource` | Represent the actual data columns from your connected data source |
 | `Functions` | Predefined formulas that perform calculations or logic using values like fields, constants, or other functions to create dynamic expressions |
 | `Global Objects` | Built-in objects that provide access to report-wide information such as current user identity, execution time, page numbers, rendering format, and environment details |
-| `Operators` | Symbols used in expressions to perform calculations, comparisons, logic, or string operations—like +, =, AND, or LIKE. |
+| `Operators` | Symbols used in expressions to perform calculations, comparisons, logic, or string operations—like '+', '=', 'AND', or 'LIKE'. |
 | `Report Parameters` | User-defined inputs that control report content, filtering, or layout—often used to pass values, filter data, or link related reports |
 | `Reporting Constants` | Predefined values used to control report layout and styling—such as alignment, borders, image sizing, and page behavior |
 
-### Using the Expression Editor
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mDMxH0uJJk8?si=TQvK4rxpGw6OGkz7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
->tip You may add a new line as a string in the Expression with the `Edit Expression` dialog.
+>tip You can add a new line as a string in the Expression with the `Edit Expression` dialog.
 >
 >````
 >= Fields.FirstLine + "
 >" + Fields.SecondLine
 >````
 >
->The result will be the values of the two fiels being displayed one above the other in the corresponding report item.
+>The result will be the values of the two fiedls being displayed one above the other in the corresponding report item.
 
 ## See Also
 

@@ -39,7 +39,7 @@ reportServer: {
 
 	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance along with the port if needed.
 
-	The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET.
+	(__recommended__) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET.
 
 	(_not recommended_) Alternatively, you may use a hardcoded username and password instead of Token authentication. We do not recommend this for security reasons:
 

@@ -17,9 +17,9 @@ This document gives a brief overview of the available Report Designers.
 
 ## Standalone Report Designer
 
-[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) is a standalone desktop application that features an easy-to-use environment. It is available for the .NET Framework and .NET 8:
+[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) is a standalone desktop application that features an easy-to-use environment. It is available for the .NET Framework and .NET 10:
 
-* The executable file starting the application is `Telerik.ReportDesigner.exe` for the .NET Framework and `Telerik.ReportDesigner.Net.exe` for .NET 8. By default, it will be deployed upon product installation in the '(*Telerik Reporting installation folder*)\Report Designer' folder. For example, 'C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer'. The .NET 8 version is in the '\.NET' subfolder.
+* The executable file starting the application is `Telerik.ReportDesigner.exe` for the .NET Framework and `Telerik.ReportDesigner.Net.exe` for .NET 10. By default, it will be deployed upon product installation in the '(*Telerik Reporting installation folder*)\Report Designer' folder. For example, 'C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer'. The .NET 10 version is in the '\.NET' subfolder.
 * Does not require Visual Studio;
 * Works with XML report definitions packaged in a zip archive `.TRDP` or in the plain legacy format `.TRDX`:
 

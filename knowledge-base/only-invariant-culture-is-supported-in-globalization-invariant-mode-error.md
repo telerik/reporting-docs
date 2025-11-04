@@ -4,7 +4,7 @@ description: "Learn how to resolve the error message 'Only invariant culture is 
 type: troubleshooting
 page_title: Only invariant culture is supported in globalization-invariant mode
 slug: only-invariant-culture-is-supported-in-globalization-invariant-mode-error
-tags: .NET 6, .NET 7, .NET 8, .NET 9
+tags: .NET 7, .NET 8, .NET 9, and .NET 10
 res_type: kb
 ---
 

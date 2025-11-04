@@ -1,7 +1,7 @@
 ---
 title: .NET Support
 page_title: Using Telerik Reporting with .NET or .NET Standard
-description:  "Learn how to use Telerik Reporting in .NET 8/9 or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
+description:  "Learn how to use Telerik Reporting in .NET 8+ or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation

@@ -39,7 +39,7 @@ Whether you are building dashboards, invoices, or summaries, report templates he
 
 When creating a new report by clicking the `New Report` option in the main menu, you are presented two options:
 
-  * Beginning from scratch with a **Blank Report**—Give you en empty report.
+  * Beginning from scratch with a **Blank Report**—Gives you en empty report.
   * Starting from a **Template** (.trtx file)—Gives you a ready-made layout and structure to build on, making the report creation faster and more consistent.
     
 |Create a Blank Report|Create From a Template|

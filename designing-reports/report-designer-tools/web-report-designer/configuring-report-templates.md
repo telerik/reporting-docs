@@ -53,21 +53,25 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 }));
 ````
 
-Once the end-user is not granted permissions for the Report Templates, the following actions are available:
+Once the end-user is **not** granted permissions for the Report Templates, the following actions are available:
 
-* Create a New Report from a Template - The **From Template** option is still *visible* but *restricted*. The restricted user is not allowed to create new or upload templates, delete or edit any existing templates. However, consuming the already existing templates is allowed.
+* Create a New Report from a Template - The **From Template** option remains visible even when the user lacks permissions to manage templates. In this restricted mode:
+
+  * Users **cannot** create or upload new templates.
+  * Users **cannot** delete or edit existing templates.
+  * Users **can** still create new reports using the available templates.
 
 |Restricted User|Default User|
 |----|----|
 |![Restricted User From Template ><](images/web-report-designer-report-templates-restricted-user.png)|![Allowed User From Template ><](images/web-report-designer-report-templates-allowed-user.png)| 
 
-* **Assets manager** - When a *restricted* user opens the Assets Manager, the `Report Templates` folder is invisible:
+* **Assets manager** - When a *restricted* user opens the Assets Manager, the `Report Templates` folder is invisible and inaccessible:
 
 |Restricted User|Default User|
 |----|----|
 |![Restricted User Assets Manager ><](images/web-report-designer-report-templates-restricted-user-assets-manager.png)|![Allowed User Assets Manager ><](images/web-report-designer-report-templates-allowed-user-assets-manager.png)|     
 
-* **Save Report As** - The *restricted* end-user can only save as a **Report**. The option for saving as a **Template** is hidden. 
+* **Save Report As** - The *restricted* end-user can **only** save as a **Report**. The option for saving as a **Template** is hidden. 
 
 |Restricted User|Default User|
 |----|----|

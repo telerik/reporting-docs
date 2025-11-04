@@ -25,7 +25,7 @@ Starting with [R3 2022 (16.2.22.914)](https://www.telerik.com/support/whats-new/
 
 ## Differences between the .NET and .NET Framework designers' functionality
 
-This section explains the differences between both versions of Standalone Report Designer - for .NET Framework and .NET 8. Although lots of code was shared between the versions, the .NET induced some changes that are listed below.
+This section explains the differences between both versions of Standalone Report Designer - for .NET Framework and .NET 10. Although lots of code was shared between the versions, the .NET induced some changes that are listed below.
 
 * __Open, Design, and Preview Coded Reports__ - Starting with the [2025 Q3](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the Standalone Report Designer for .NET can open, design, and preview coded reports. This is the recommended designer for editing coded(type) reports that are part of [.NET-based](https://dotnet.microsoft.com/en-us/) solutions - [Coded Reports in the Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions%}).
 * __Preview and Export using Skia Graphics Engine__ - The Standalone Report Designer for .NET can switch between GDI+ and Skia graphics engines when previewing, printing, and exporting reports. This functionality, introduced with 2024 Q3 (18.2.24.806), is useful for report authors who design their reports on Windows machines but the target platform for their application is Linux or macOS, where the Skia library is used for processing and rendering. Since Skia does not support EMF format (vector drawing for image rendering), the previewed image may look blurry when zoomed in or out. Switching the state is applied to the Print Preview, Print, and Export functionalities. It affects all reports currently loaded in the Standalone Report Designer for .NET.
@@ -63,7 +63,7 @@ This section explains the differences between both versions of Standalone Report
 	1. The Standalone Report Designer opens, and you can create or open a report.
 
 * __Starting Standalone Report Designer using the latest installed .NET runtime:__
-The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If it is necessary to run the application against STS (Standard-Term-Support) .NET versions like .NET 9, or a pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
+The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If it is necessary to run the application against STS (Standard-Term-Support) .NET versions like .NET 10, or a pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
 
 	````powershell
 C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"

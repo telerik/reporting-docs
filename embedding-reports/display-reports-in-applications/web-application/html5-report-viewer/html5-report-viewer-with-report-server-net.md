@@ -37,7 +37,7 @@ reportServer: {
 
 	>caution The `serviceUrl` option shouldn't be present, or the viewer would default to no authentication scheme utilizing the Report Server for .NET as a regular Reporting REST Service.
 
-	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance along with the port if needed.
+	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance, along with the port if needed.
 
 	(__recommended__) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
@@ -51,7 +51,7 @@ reportServer: {
 	},
 ````
 
-	Server-side, you may configure the endpoint, like shown below after ensuring the EnvironmentVariable 'RS_NET_TOKEN' is set up correctly. We strongly recommend to secure the endpoint:
+	Server-side, you may configure the endpoint, as shown below, after ensuring the EnvironmentVariable 'RS_NET_TOKEN' is set up correctly. We strongly recommend securing the endpoint:
 
 	````C#
 app.MapGet("/rs-token", (HttpContext context) =>

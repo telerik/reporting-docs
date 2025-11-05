@@ -100,14 +100,12 @@ using Microsoft.AspNetCore.Mvc;
 
 	````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+	<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 	<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
 ````
 
-
-	The `kendo.all.min.js` script from the Kendo CDN includes all Kendo UI for jQuery components and requires a valid Kendo UI license, which may display license warnings. To avoid this, Telerik Reporting includes a license-free subset containing only the Kendo UI components required by the Web Report Designer. You can copy this file from your installation directory at `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportDesigner\js\webReportDesigner.kendo-{{site.buildversion}}.min.js` and reference it locally in your project instead of the CDN version.
 
 1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or in `App Razor` (Blazor Web App):
 

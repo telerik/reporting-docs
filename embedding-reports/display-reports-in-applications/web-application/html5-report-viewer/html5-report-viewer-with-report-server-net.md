@@ -11,7 +11,7 @@ position: 3
 
 # Using the HTML5 Report Viewer with the Report Server for .NET
 
-The article explains how to set up the HTML5 Report Viewer to work with the Telerik Report Server for .NET. This may be any User, including the Guest User, provided there is an enabled Token in its [Tokens](https://docs.telerik.com/report-server/dotnet-docs/token-authentication) collection. 
+The article explains how to set up the HTML5 Report Viewer to work with the Telerik Report Server for .NET. The user account that will authenticate with the Report Server may be any User, including the Guest User, provided there is an enabled Token in its [Tokens](https://docs.telerik.com/report-server/dotnet-docs/token-authentication) collection.
 
 ## Prerequisites
 

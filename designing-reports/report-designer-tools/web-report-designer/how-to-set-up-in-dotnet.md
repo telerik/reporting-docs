@@ -175,7 +175,7 @@ Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports")
 			loading...
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer/"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
 		<script type="text/javascript">
@@ -193,7 +193,6 @@ Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports")
 	</html>
 ````
 
-	The `kendo.all.min.js` script from the Kendo CDN includes all Kendo UI for jQuery components and requires a valid Kendo UI license, which may display license warnings. To avoid this, Telerik Reporting includes a license-free subset containing only the Kendo UI components required by the Web Report Designer. You can copy this file from your installation directory at `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportDesigner\js\webReportDesigner.kendo-{{site.buildversion}}.min.js` and reference it locally in your project instead of the CDN version.
 
 1. To set up the `index.html` as a startup page check [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the _launchUrl_ to _index.html_ in `launchSettings.json`.
 1. Finally, run the project to preview the web designer.

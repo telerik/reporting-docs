@@ -56,7 +56,9 @@ Consider the following recommendations when working with the AI Coding Assistant
 
 ## Support
 
-#### Report Viewers
+In this section, you may find the lists with the _Report Viewers_, _Reporting Services_, and _Web Report Designers_ supported currently by the AI Coding Assistant.
+
+### Report Viewers
 
 - [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 - [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
@@ -69,14 +71,14 @@ Consider the following recommendations when working with the AI Coding Assistant
 - [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 - [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 
-#### Services
+### Services
 
 - [Telerik Reporting REST Service - ASP.NET Core Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
 - [Telerik Reporting REST Service - ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%})
 - [Web Report Designer REST Service - ASP.NET Core Web API Implementation]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#setting-up-the-report-designer-rest-service)
 - [Web Report Designer REST Service - ASP.NET Web API Implementation]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}#setting-up-the-report-designer-rest-service)
 
-#### Web Report Designers
+### Web Report Designers
 
 - [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#adding-the-web-report-designer)
 - [Blazor Wrapper of the Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application%}#adding-the-blazor-web-report-designer-component)
@@ -85,18 +87,18 @@ Consider the following recommendations when working with the AI Coding Assistant
 
 Access to the AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
 
-#### Subscription License
+### Subscription License
 
 * A Subscription is the primary license that grants full access to the AI Coding Assistant.
 * Includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day.
 * Best for ongoing and high-volume usage.
 
-#### Perpetual License (Limited Access)
+### Perpetual License (Limited Access)
 * Perpetual licenses include limited access of 50 requests per year.
 * Intended for exploring and trying out the AI Coding Assistant.
 * For continued or higher-volume access, upgrade to a Subscription license.
 
-#### Trial License
+### Trial License
 * Trial licenses include 300 requests per trial per year.
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
@@ -108,7 +110,7 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 The Telerik Reporting AI Coding Assistant operates under the following conditions:
 
 * The Assistant has no access to your workspace and application code. Note that when using the Telerik Reporting MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
-* The Assistant does not use your prompts train Telerik AI models.
+* The Assistant does not use your prompts to train Telerik AI models.
 * The Assistant does not generate the actual responses and has no access to them. The Assistant only enhances the context that helps your selected LLM (for example, GPT, Gemini, Claude) generate more relevant and accurate responses.
 * The Assistant does not associate your prompts with your Telerik user account. Your prompts and generated context are anonymized and stored only for statistical analysis and troubleshooting purposes.
 * The Assistant stores metrics about how often and how much you use it in order to ensure compliance with the [allowed number of requests that correspond to your current license](#usage-limits).

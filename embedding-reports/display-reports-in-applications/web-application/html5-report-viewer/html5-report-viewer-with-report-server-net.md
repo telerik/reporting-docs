@@ -89,7 +89,7 @@ $("#reportViewer1")
 			reportSource: {
 				// The report value should contain the Category and ReportName in the following format
 				// {Category/ReportName}
-				report: "Samples/Dashboard"
+				report: "Samples/Dashboard",
 				parameters: {
 					ReportYear: 2004
 				}

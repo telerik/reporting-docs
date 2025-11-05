@@ -11,8 +11,6 @@ tags:
 res_type: kb
 ---
 
-# How to Edit a Report Template in Web Report Designer
-
 |Minimum Version:|Q4 2025|
 |----|----|
 

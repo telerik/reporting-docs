@@ -19,7 +19,7 @@ img[alt$="><"] {
 |Minimum Version:|Q4 2025|
 |----|----|
 
-Web Report Designer offers functionality for working with report templates. It allows the developers to configure a specific folder for storing the report templates and to manage the access to this specific folder for certain users.
+Web Report Designer offers functionality for working with report templates. A **report template** is a reusable design that defines the layout, styling, and data structure of a report. It allows the developers to configure a specific folder for storing the report templates and to manage the access to this specific folder for certain users.
 
 ## Configure Report Templates Folder
 
@@ -38,11 +38,11 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 
 ## Managing Permissions
 
-To restrict specific actions or features for users on the client side, for example to restrict `Report Templates`, the [DeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) setting of the **ReportDesignerServiceConfiguration** can be used. It allows developers to customize the designer experience by disabling certain tools, components, or capabilities based on application logic or user roles.
+To restrict specific actions or features for users on the client side, for example to restrict `Report Templates`, the [DeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) setting of the `ReportDesignerServiceConfiguration` can be used. It allows developers to customize the designer experience by disabling certain tools, components, or capabilities based on application logic or user roles.
 
 >note You can override the [GetDeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) method in your custom implementation of the reporting service to apply different restrictions based on the logged-in user or other conditions.
 
-#### Restricting the Templates Folder
+### Restricting the Templates Folder
 
 ````CSharp
 services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
@@ -61,11 +61,15 @@ Once the end-user is **not** granted permissions for the Report Templates, the f
   * Users **cannot** delete or edit existing templates.
   * Users **can** still create new reports using the available templates.
 
-|Restricted User|Default User|
-|----|----|
-|![Restricted User From Template ><](images/web-report-designer-report-templates-restricted-user.png)|![Allowed User From Template ><](images/web-report-designer-report-templates-allowed-user.png)| 
+>caption Restricted User
 
-* **Assets manager** - When a *restricted* user opens the Assets Manager, the `Report Templates` folder is invisible and inaccessible:
+![Restricted User From Template ><](images/web-report-designer-report-templates-restricted-user.png)
+
+>caption Default User
+
+![Allowed User From Template ><](images/web-report-designer-report-templates-allowed-user.png)
+
+* Opening the **Assets manager** - When a *restricted* user opens the Assets Manager, the `Report Templates` folder is invisible and inaccessible:
 
 |Restricted User|Default User|
 |----|----|
@@ -81,3 +85,4 @@ Once the end-user is **not** granted permissions for the Report Templates, the f
 
 * [How to Edit a Report Template]({%slug web-report-designer-how-to-edit-a-report-template%})
 * [Working with Report Templates]({%slug web-report-designer-report-templates%})
+* [Report Templates in Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%})

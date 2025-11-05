@@ -1,6 +1,6 @@
 ---
-title: Creating and Using Report Templates 
-page_title: Creating and Using Report Templates in Web Report Designer
+title: Configuring Report Templates
+page_title: Configuring Report Templates in Web Report Designer
 description: Learn more about Report Templates in the Telerik Reporting Web Report Designer, how to create and reuse them.
 slug: web-report-designer-report-templates
 tags: web, report, designer, wrd, report, template, trtx

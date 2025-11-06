@@ -22,7 +22,7 @@ The **AI Coding Assistant** is integrated in:
 
 You can combine both integrations for even more powerful results.
 
-> We recommend the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) for **Agent** mode when using Visual Studio or Visual Studio Code.
+>tip We recommend the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) for **Agent** mode when using Visual Studio or Visual Studio Code.
 
 ## Getting Started
 

@@ -10,14 +10,14 @@ position: 4
 
 # AI Coding Assistant Changelog
 
-Learn about the latest changes, improvements and bug fixes in the Telerik Reporting AI Coding Assistant. The updates are structured in a chronological order with the newest ones appearing first.
+Learn about the latest changes, improvements, and bug fixes in the Telerik Reporting AI Coding Assistant. The updates are structured in chronological order, with the newest ones appearing first.
 
 ## November, 2025 Changelog
 
 ### Highlights
 
 - Refined the mcp tool's output formatting to better align with Claude Sonnet 4/4.5 and GPT-5 best practices, improving the LLM's ability to follow the exact provided instructions more closely.
-- Added support for the HTML5 MVC, HTML5 WebForms, WinForms and WPF Report Viewers.
+- Added support for the HTML5 MVC, HTML5 WebForms, WinForms, and WPF Report Viewers.
 - Added support for the Web Report Designer, its Blazor wrapper, and the Designer REST service.
 
 ## August, 2025 Changelog
@@ -25,7 +25,7 @@ Learn about the latest changes, improvements and bug fixes in the Telerik Report
 ### Highlights
 
 - Initial launch of the AI Coding Assistant for Telerik Reporting.
-- Provides intelligent code suggestions, context-aware documentation, and quick access to APIs.for the HTML5, React, Blazor Wrapper and Native, Angular Wrapper and Native Report Viewers.
+- Provides intelligent code suggestions, context-aware documentation, and quick access to APIs for the HTML5, React, Blazor Wrapper and Native, Angular Wrapper and Native Report Viewers.
 - Support for implementing and enhancing the Reporting REST Service in ASP.NET Core and ASP.NET Framework projects.
 
 ## See Also

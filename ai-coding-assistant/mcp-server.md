@@ -19,7 +19,8 @@ This MCP server enables AI-powered IDEs and tools to generate more accurate, tai
 To use the Telerik Reporting MCP Server, you need:
 
 * [Node.js](https://nodejs.org/en) 18 or newer.
-* An [MCP-compatible client (IDE, code editor, or app)](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
+* An [MCP-compatible client (IDE, code editor, or app)](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended). For example, the latest [Visual Studio Code](https://code.visualstudio.com/).
+* [.NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0).
 * A [Telerik user account](https://www.telerik.com/account/).
 * An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
 * An application that uses the [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).

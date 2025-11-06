@@ -25,7 +25,7 @@ Learn about the latest changes, improvements, and bug fixes in the Telerik Repor
 ### Highlights
 
 - Initial launch of the AI Coding Assistant for Telerik Reporting.
-- Provides intelligent code suggestions, context-aware documentation, and quick access to APIs for the HTML5, React, Blazor Wrapper and Native, Angular Wrapper and Native Report Viewers.
+- Provided intelligent code suggestions, context-aware documentation, and quick access to APIs for the HTML5, React, Blazor Wrapper and Native, Angular Wrapper and Native Report Viewers.
 - Support for implementing and enhancing the Reporting REST Service in ASP.NET Core and ASP.NET Framework projects.
 
 ## See Also

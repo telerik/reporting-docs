@@ -16,7 +16,7 @@ Learn about the latest changes, improvements, and bug fixes in the Telerik Repor
 
 ### Highlights
 
-- Refined the mcp tool's output formatting to better align with Claude Sonnet 4/4.5 and GPT-5 best practices, improving the LLM's ability to follow the exact provided instructions more closely.
+- Refined the MCP tool's output formatting to better align with Claude Sonnet 4/4.5 and GPT-5 best practices, improving the LLM's ability to follow the exact provided instructions more closely.
 - Added support for the HTML5 MVC, HTML5 WebForms, WinForms, and WPF Report Viewers.
 - Added support for the Web Report Designer, its Blazor wrapper, and the Designer REST service.
 

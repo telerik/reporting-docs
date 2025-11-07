@@ -82,30 +82,30 @@ const reportServer = {
 	````JS
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer';
 
-export function ReportViewer() {
-
-	const reportServer = { 
-		url: 'http://reportServerUrl:port/',
-		getPersonalAccessToken: () => fetch('/rs-token').then(response => response.text())
-	}
-
-	const reportSource = {
-		report: 'Samples/Dashboard',
-		parameters: {}
-	}
-
-	const viewerContainerStyle = {
-		position: 'absolute',
-		inset: '5px'
-	}
+	export function ReportViewer() {
 	
-	return (
-			<TelerikReportViewer
-				reportServer={reportServer}
-				reportSource={reportSource}
-				viewerContainerStyle={viewerContainerStyle} />
-	)
-}
+		const reportServer = { 
+			url: 'http://reportServerUrl:port/',
+			getPersonalAccessToken: () => fetch('/rs-token').then(response => response.text())
+		}
+	
+		const reportSource = {
+			report: 'Samples/Dashboard',
+			parameters: {}
+		}
+	
+		const viewerContainerStyle = {
+			position: 'absolute',
+			inset: '5px'
+		}
+		
+		return (
+				<TelerikReportViewer
+					reportServer={reportServer}
+					reportSource={reportSource}
+					viewerContainerStyle={viewerContainerStyle} />
+		)
+	}
 ````
 
 

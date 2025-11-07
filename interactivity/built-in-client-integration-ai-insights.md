@@ -57,14 +57,23 @@ To enable the AI-powered insights, follow these steps:
 }
 ````
 ````XML
-<Telerik.Reporting>
-    <AIClient
-        friendlyName="MicrosoftExtensionsAzureOpenAI"
-        model="gpt-4o-mini"
-        endpoint="https://ai-explorations.openai.azure.com/"
-        credential="YOUR_API_KEY">
-    </AIClient>
-</Telerik.Reporting>
+<configuration>
+    <configSections>
+        <section
+            name="Telerik.Reporting"
+            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+            allowLocation="true"
+            allowDefinition="Everywhere"/>
+    </configSections>
+    <Telerik.Reporting>
+        <AIClient
+            friendlyName="MicrosoftExtensionsAzureOpenAI"
+            model="gpt-4o-mini"
+            endpoint="https://ai-explorations.openai.azure.com/"
+            credential="YOUR_API_KEY">
+        </AIClient>
+    </Telerik.Reporting>
+</configuration>
 ````
 
 

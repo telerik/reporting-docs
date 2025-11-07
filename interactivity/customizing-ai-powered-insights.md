@@ -38,11 +38,20 @@ In enterprise environments where AI usage policies are already established or wh
 }
 ````
 ````XML
-<Telerik.Reporting>
-    <AIClient
-        requireConsent="false">
-    </AIClient>
-</Telerik.Reporting>
+<configuration>
+    <configSections>
+        <section
+            name="Telerik.Reporting"
+            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+            allowLocation="true"
+            allowDefinition="Everywhere"/>
+    </configSections>
+    <Telerik.Reporting>
+        <AIClient
+            requireConsent="false">
+        </AIClient>
+    </Telerik.Reporting>
+</configuration>
 ````
 
 ### Prompts Configuration
@@ -65,15 +74,24 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
 }
 ````
 ````XML
-<Telerik.Reporting>
-    <AIClient
-        allowCustomPrompts="false">
-        <predefinedPrompts>
-            <add text="Generate a summary of the report." />
-            <add text="Translate the report into German." />
-        </predefinedPrompts>
-    </AIClient>
-</Telerik.Reporting>
+<configuration>
+    <configSections>
+        <section
+            name="Telerik.Reporting"
+            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+            allowLocation="true"
+            allowDefinition="Everywhere"/>
+    </configSections>
+    <Telerik.Reporting>
+        <AIClient
+            allowCustomPrompts="false">
+            <predefinedPrompts>
+                <add text="Generate a summary of the report." />
+                <add text="Translate the report into German." />
+            </predefinedPrompts>
+        </AIClient>
+    </Telerik.Reporting>
+</configuration>
 ````
 
 You can also add predefined prompts without disabling custom ones, giving users both curated options and the flexibility to create their own queries.

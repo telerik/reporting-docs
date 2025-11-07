@@ -23,7 +23,7 @@ position: 5
 
 ## Adding the Blazor Report Viewer component using an item template
 
-The Blazor Report Viewer item template allows you to quickly and [add the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-modern-ui-report-viewer-demo) and [embed the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-sdk-report-server-dynamic-duo) to your application.
+The Blazor Report Viewer item template allows you to quickly [add the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-modern-ui-report-viewer-demo) and [embed the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-sdk-report-server-dynamic-duo) to your application.
 
 Make sure that you select __Blazor Report Viewer page__, instead of __HTML5 Report Viewer page__ when adding a new item to your project, and follow the steps in the __'Add new Report Viewer'__ dialog.
 

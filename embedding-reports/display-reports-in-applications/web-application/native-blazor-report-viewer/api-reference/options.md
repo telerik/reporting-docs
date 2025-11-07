@@ -98,7 +98,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 								authenticating with the report server.</li>
 							<li><strong>Password</strong> - (string, required) Defines the Password to be used for
 								authenticating with the report server.</li>
-							<li><strong>GetPersonalAccessToken</strong> (`Task<string>`, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance as a *string* wrapper in a [Task](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task). </li>
+							<li><strong>GetPersonalAccessToken</strong> (`Task<string>`, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance as a *string* wrapped in a [Task](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task). </li>
 						</ul>
 					</li>
 					<li><strong>SendEmailDialogSettings</strong> - Represents the predefined settings for the Send Email

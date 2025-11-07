@@ -87,7 +87,7 @@ export function ReportViewer() {
 
 	const reportServer = { 
 		url: 'http://reportServerUrl:port/',
-		getPersonalAccessToken: () => Promise.resolve(process.env.REACT_APP_RS_TOKEN)
+		getPersonalAccessToken: () => fetch('/rs-token').then(response => response.text())
 	}
 
 	const reportSource = {

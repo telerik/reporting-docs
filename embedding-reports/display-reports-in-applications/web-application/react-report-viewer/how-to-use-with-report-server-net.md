@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how, to, use, react, report, viewer, with, report, server. net
 published: True
 reportingArea: React
-position: 4
+position: 2
 ---
 
 # How to Use React Report Viewer with Report Server for .NET
@@ -79,8 +79,7 @@ const reportServer = {
 
 1. In the same file, import the `TelerikReportViewer` component from `@progress/telerik-react-report-viewer` so that the objects that we defined above can be passed to the viewer:
 
-	````JSX
-import React from 'react';
+	````JS
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer';
 
 export function ReportViewer() {
@@ -107,7 +106,6 @@ export function ReportViewer() {
 				viewerContainerStyle={viewerContainerStyle} />
 	)
 }
-
 ````
 
 

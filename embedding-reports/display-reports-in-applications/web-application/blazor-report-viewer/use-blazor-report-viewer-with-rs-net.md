@@ -65,7 +65,7 @@ app.UseStaticFiles();
 
 ## Connect to the Report Server for .NET instance
 
-The Report Server for .NET provides two approaches for authenticating from the Telerik Report Viewers. We strongly recommned using the Token authentication as more secure.
+The Report Server for .NET provides two approaches for authenticating from the Telerik Report Viewers. We strongly recommend using the Token authentication as more secure.
 
 ### Token Authentication
 

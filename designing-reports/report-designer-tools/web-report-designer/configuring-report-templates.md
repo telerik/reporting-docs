@@ -19,7 +19,9 @@ img[alt$="><"] {
 |Minimum Version:|Q4 2025|
 |----|----|
 
-Web Report Designer offers functionality for working with report templates. A **report template** is a reusable design that defines the layout, styling, and data structure of a report. It allows the developers to configure a specific folder for storing the report templates and to manage the access to this specific folder for certain users.
+The Web Report Designer lets you create report templates that simplify and streamline the report creation process. A **report template** is a reusable design that defines the layout, styling, and data structure of a report.
+
+To control how application users utilize templates, developers can configure specific folders for storing report templates and manage user access to these folders.
 
 ## Configure Report Templates Folder
 

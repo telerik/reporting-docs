@@ -7,6 +7,7 @@ previous_url: /report-items/barcode/barcode-types/2d-barcodes/qr-code/overview, 
 tags: telerik, reporting, report, items, barcode, 2d, qr, code, overview
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Configuring the Barcode QR Code in Reports

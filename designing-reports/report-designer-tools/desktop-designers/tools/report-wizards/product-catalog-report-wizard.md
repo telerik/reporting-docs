@@ -7,6 +7,7 @@ tags: product,catalog,report,wizard
 published: True
 position: 5
 previous_url: /ProductCatalogWizardWalkthrough
+reportingArea: General
 ---
 
 # Product Catalog Report Wizard of the Report Designer

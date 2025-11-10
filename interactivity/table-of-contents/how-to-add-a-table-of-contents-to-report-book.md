@@ -7,6 +7,7 @@ tags: how,to,add,a,table,of,contents,to,report,book
 published: True
 position: 4
 previous_url: /table-of-contents-report-book
+reportingArea: General
 ---
 
 # How to Add a Table of Contents to Report Book

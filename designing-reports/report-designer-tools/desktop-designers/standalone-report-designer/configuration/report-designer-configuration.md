@@ -7,6 +7,7 @@ tags: report,designer,configuration
 published: True
 position: 1
 previous_url: /standalone-report-designer-default-configuration
+reportingArea: General
 ---
 
 # Standalone Report Designer Configuration Sections

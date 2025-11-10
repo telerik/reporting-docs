@@ -7,6 +7,7 @@ tags: data,explorer,calculated,fields,report,designer
 published: True
 position: 4
 previous_url: /ui-data-explorer
+reportingArea: General
 ---
 
 # Data Explorer of the Report Designer

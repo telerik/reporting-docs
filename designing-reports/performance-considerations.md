@@ -7,6 +7,7 @@ tags: performance,considerations,reporting
 published: True
 position: 14
 previous_url: /designing-performance
+reportingArea: General
 ---
 
 # Factors Affecting Report Performance

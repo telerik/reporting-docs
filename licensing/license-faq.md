@@ -6,6 +6,7 @@ slug: license-frequently-asked-questions
 tags: license, telerik, reporting, faq, questions
 published: True
 position: 9
+reportingArea: General
 ---
 
 # Frequently Asked Questions

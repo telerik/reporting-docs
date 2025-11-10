@@ -7,6 +7,7 @@ tags: overview,object,business,component,.NET,types,requirements
 published: True
 position: 0
 previous_url: /ObjectDataSource, /designing-reports/connecting-to-data/data-source-components/objectdatasource-component/
+reportingArea: General
 ---
 
 # ObjectDataSource Component Overview

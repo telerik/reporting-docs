@@ -7,6 +7,7 @@ tags: how,to,connect,to,an,oracle,database
 published: False
 position: 4
 previous_url: /how-to-sqlDataSource-oracle
+reportingArea: General
 ---
 
 # How to Connect to an Oracle Database

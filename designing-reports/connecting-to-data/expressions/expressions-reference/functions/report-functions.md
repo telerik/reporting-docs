@@ -7,6 +7,7 @@ tags: report,functions
 published: True
 position: 8
 previous_url: /expressions-report-functions
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

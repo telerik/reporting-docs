@@ -7,6 +7,7 @@ tags: configure,.net,applications,web,designer,report
 published: True
 position: 1
 previous_url: /getting-started/web-designer/
+reportingArea: General
 ---
 
 # Configure Web Report Designer and Create a Basic Report

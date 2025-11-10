@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Available .NET Support for Operating Systems and Docker Containers

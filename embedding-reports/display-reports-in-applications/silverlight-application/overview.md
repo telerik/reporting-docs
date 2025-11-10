@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /silverlight-report-viewer-intro, /embedding-reports/display-reports-in-applications/silverlight-application/, /silverlight-report-viewer
+reportingArea: General
 ---
 
 # Silverlight Application Overview

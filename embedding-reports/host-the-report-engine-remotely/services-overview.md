@@ -7,6 +7,7 @@ tags: telerik, reporting, embedding, reports, host, engine, generate, remotely, 
 published: False
 position: 0
 previous_url: /telerik-reporting-services
+reportingArea: General
 ---
 
 # Generating Reports Remotely Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: styling,html5,viewer,themebuilder
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Styling HTML5-Based Report Viewers with ThemeBuilder

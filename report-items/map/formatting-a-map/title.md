@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/t
 tags: telerik, reporting, map, report, item, title, configure, style, format
 previous_url: /MapFormattingTitle, /report-items/map/formatting-a-map/
 published: True
+reportingArea: General
 ---
 
 # Configuring the Map Title

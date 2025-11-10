@@ -7,6 +7,7 @@ tags: upgrade,wizard
 published: True
 position: 31
 previous_url: /ui-upgrade-wizard
+reportingArea: General
 ---
 
 # Upgrade Wizard Overview

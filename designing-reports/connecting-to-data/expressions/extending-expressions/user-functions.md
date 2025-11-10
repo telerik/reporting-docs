@@ -7,6 +7,7 @@ tags: user,functions,expressions,create,report
 published: True
 position: 1
 previous_url: /expressions-user-functions
+reportingArea: General
 ---
 
 # Custom User Functions Overview

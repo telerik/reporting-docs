@@ -7,6 +7,7 @@ tags: overview,report,parameters
 published: True
 position: 0
 previous_url: /designing-reports-parameters, /designing-reports/connecting-to-data/report-parameters/
+reportingArea: General
 ---
 
 # Report Parameters Overview

@@ -7,6 +7,7 @@ tags: member,access,function,object,global,report
 published: True
 position: 4
 previous_url: /expressions-member-access
+reportingArea: General
 ---
 
 # Accessing Members

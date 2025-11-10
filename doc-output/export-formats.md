@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/export-and-configure/export-formats
 tags: telerik, reporting, export, formats, document, output, overview
 published: True
 position: 0
+reportingArea: General
 ---
 
 <style>

@@ -7,6 +7,7 @@ tags: cache,element
 published: True
 position: 2
 previous_url: /configuring-telerik-reporting-cache
+reportingArea: General
 ---
 
 <style>

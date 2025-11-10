@@ -7,6 +7,7 @@ previous_url: /designing-reports/report-structure/design-considerations-for-repo
 tags: telerik, reporting, report, items, design, considerations, layout, creating, reports
 published: True
 position: 15
+reportingArea: General
 ---
 
 # Basic Design Considerations for Report Items

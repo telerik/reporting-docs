@@ -7,6 +7,7 @@ tags: how,to,add,sorting,to,table,item,and,crosstab,item
 published: True
 position: 2
 previous_url: /data-items-how-to-add-sorting-to-table-item-and-crosstab-item
+reportingArea: General
 ---
 
 # Add Sorting to Table and Crosstab Items

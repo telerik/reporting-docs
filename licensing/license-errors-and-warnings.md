@@ -6,6 +6,7 @@ slug: license-errors-and-warnings
 tags: license, telerik, reporting, questions, errors, warnings
 published: True
 position: 7
+reportingArea: General
 ---
 
 # License Activation Errors and Warnings

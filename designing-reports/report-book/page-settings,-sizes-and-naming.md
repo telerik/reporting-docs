@@ -7,6 +7,7 @@ tags: page,settings,,sizes,and,naming
 published: True
 position: 4
 previous_url: /designing-reports-reportbook-settings
+reportingArea: General
 ---
 
 # Page Settings, Sizes and Naming in ReportBooks

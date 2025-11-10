@@ -7,6 +7,7 @@ tags: how,to,connect,to,mysql,database
 published: False
 position: 5
 previous_url: /how-to-sqlDataSource-mySql
+reportingArea: General
 ---
 
 # How to Connect to MySQL Database

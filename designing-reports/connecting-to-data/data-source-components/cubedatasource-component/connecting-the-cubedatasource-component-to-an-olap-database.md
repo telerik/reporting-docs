@@ -7,6 +7,7 @@ tags: connecting,the,cubedatasource,component,to,an,olap,database
 published: True
 position: 2
 previous_url: /cubedatasource-connecting-to-database
+reportingArea: General
 ---
 
 # Connecting the CubeDataSource Component to an OLAP Database

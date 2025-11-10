@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, types
 previous_url: /MapChartTypes, /report-items/map/map-types, /report-items/map/map-types/
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Map Types Overview

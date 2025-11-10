@@ -7,6 +7,7 @@ previous_url: /report-items/how-to/how-to-create-a-multi-column-report, /advance
 tags: telerik, reporting, report, items, item, creating, multi, column, reports
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Creating Multi-Column Reports

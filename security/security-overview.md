@@ -6,6 +6,7 @@ slug: security-overview
 tags: telerik, security, dpl, document, processing, redistributing, report
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Security

@@ -7,6 +7,7 @@ tags: excel, excel-2007, excel-97-2003, rendering, design, considerations
 published: True
 position: 4
 previous_url: /designing-reports-considerations-excel
+reportingArea: General
 ---
 
 <style>

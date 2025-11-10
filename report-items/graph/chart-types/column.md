@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/colu
 tags: telerik, reporting, report, items, graph, column, chart, overview, creating
 previous_url: /ColumnCharts, /GraphHowToCreateColumnChart, /report-items/graph/chart-types/column-charts/overview, /report-items/graph/chart-types/column-charts/how-to-create-column-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing Column Charts

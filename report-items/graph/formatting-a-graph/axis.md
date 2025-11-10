@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: telerik, reporting, report, items, graph, styling, formatting, axes, validate
 published: True
 previous_url: /GraphFormattingAxis
+reportingArea: General
 ---
 
 # Axes of the Graph

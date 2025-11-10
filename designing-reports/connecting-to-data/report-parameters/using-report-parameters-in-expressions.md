@@ -7,6 +7,7 @@ tags: using,report,parameters,in,expressions
 published: True
 position: 2
 previous_url: /designing-reports-parameters-expressions
+reportingArea: General
 ---
 
 # Using Report Parameters in Expressions

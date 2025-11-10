@@ -7,6 +7,7 @@ tags: create, report, items, programmatically, code
 published: True
 position: 3
 previous_url: /programmatic-creating-controls
+reportingArea: General
 ---
 
 # Create Report Items Programmatically

@@ -7,6 +7,7 @@ tags: format,builder,dialog
 published: True
 position: 14
 previous_url: /ui-format-builder
+reportingArea: General
 ---
 
 # Format Builder Dialog of the Report Designer

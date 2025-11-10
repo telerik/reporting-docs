@@ -7,6 +7,7 @@ tags: telerik, reporting, importing, reports, crystal, reports, converter
 published: True
 position: 1
 previous_url: /crystal-reports-converter
+reportingArea: General
 ---
 
 # Converting SAP Crystal Reports

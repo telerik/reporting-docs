@@ -7,6 +7,7 @@ previous_url: /report-items/how-to/how-to-add-remove-report-header---footer-sect
 tags: telerik, reporting, report, items, item, report, header, footer, section
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Report Headers and Footers Overview

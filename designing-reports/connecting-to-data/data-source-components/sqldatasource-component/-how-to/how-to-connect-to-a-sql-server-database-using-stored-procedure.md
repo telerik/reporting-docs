@@ -7,6 +7,7 @@ tags: how,to,connect,to,a,sql,server,database,using,stored,procedure
 published: False
 position: 1
 previous_url: /how-to-sqlDataSource-sct-storedProcedure
+reportingArea: General
 ---
 
 # How to Connect to a SQL Server Database Using Stored Procedure

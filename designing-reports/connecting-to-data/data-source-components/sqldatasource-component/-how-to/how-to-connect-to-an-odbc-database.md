@@ -7,6 +7,7 @@ tags: how,to,connect,to,an,odbc,database
 published: False
 position: 3
 previous_url: /how-to-sqlDataSource-odbc
+reportingArea: General
 ---
 
 # How to Connect to an ODBC Database

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line
 tags: telerik, reporting, report, items, graph, line, chart, overview, creating
 previous_url: /LineCharts, /GraphHowToCreateLineChart, /report-items/graph/chart-types/line-charts/overview, /report-items/graph/chart-types/line-charts/how-to-create-line-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing Line Charts

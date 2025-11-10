@@ -6,6 +6,7 @@ slug: license-key-ci-services
 tags: license, key, telerik, reporting, ci, cd
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Adding the License Key to CI/CD Services

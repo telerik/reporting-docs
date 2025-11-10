@@ -7,6 +7,7 @@ tags: how,to,add,report,viewer,to,a,web,page
 published: True
 position: 1
 previous_url: /asp-net-report-viewer-embedding
+reportingArea: General
 ---
 
 # Using the ASP.NET WebForms Report Viewer

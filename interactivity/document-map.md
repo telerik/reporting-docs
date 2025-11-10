@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/documen
 tags: overview,document,map,bookmark 
 published: True
 previous_url: /designing-reports-document-map, /designing-reports-interactivity-how-to-add-document-map, /interactivity/
+reportingArea: General
 ---
 
 # Document Map Overview

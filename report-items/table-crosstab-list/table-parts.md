@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, templates, under
 previous_url: /table-understanding-cells-rows-columns, /report-items/table-crosstab-list/understanding-table-cells,-rows-and-columns
 published: True
 position: 6
+reportingArea: General
 ---
 
 # Table Cells, Rows, and Columns

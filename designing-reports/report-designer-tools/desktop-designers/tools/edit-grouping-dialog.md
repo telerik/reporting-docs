@@ -7,6 +7,7 @@ tags: edit,grouping,dialog
 published: True
 position: 10
 previous_url: /ui-edit-grouping
+reportingArea: General
 ---
 
 # Edit Grouping Dialog of the Report Designer

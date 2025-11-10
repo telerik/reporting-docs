@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, structure, elements, overview
 previous_url: /MapStructure, /report-items/map/structure/
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Overview of the Map Structure and Elements

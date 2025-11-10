@@ -7,6 +7,7 @@ tags: mhtml, device, information, settings, options
 published: True
 position: 9
 previous_url: /device-information-settings-mhtml
+reportingArea: General
 ---
 
 # Device Information Settings for the MHTML rendering format

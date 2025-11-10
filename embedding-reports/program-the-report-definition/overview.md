@@ -7,6 +7,7 @@ tags: telerik, reporting, embedding, reports, managing, reports, programmaticall
 published: True
 position: 0
 previous_url: /programmatic-control-of-reports, /embedding-reports/program-the-report-definition/
+reportingArea: General
 ---
 
 # Managing Reports Programmatically

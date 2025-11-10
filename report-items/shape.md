@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, shape, types, arrows, lines, stars
 published: True
 position: 11
 previous_url: /report-items-shape
+reportingArea: General
 ---
 
 # Shape Report Item Overview

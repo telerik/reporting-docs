@@ -7,6 +7,7 @@ previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subr
 tags: telerik, reporting, report, items, subreport
 published: True
 position: 12
+reportingArea: General
 ---
 
 # SubReport Item Overview

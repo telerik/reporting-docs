@@ -6,6 +6,7 @@ slug: barcode_item_get_started
 tags: telerik, reporting, report, items, barcode, getting, started
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Getting Started with the Barcode Report Item

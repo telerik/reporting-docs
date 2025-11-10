@@ -6,6 +6,7 @@ slug: ai-mcp-server
 tags: telerik, reporting, ai, server, mcp, dotnet,coding assistant
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Telerik Reporting MCP Server

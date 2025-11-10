@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc
 tags: telerik, reporting, report, items, graph, ohlc, chart, overview, candlestick, creating
 previous_url: /OhlcCharts, /GraphHowToCreateOhlcChart, /report-items/graph/chart-types/ohlc-charts/overview, /report-items/graph/chart-types/ohlc-charts/how-to-create-ohlc-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing OHLC Charts

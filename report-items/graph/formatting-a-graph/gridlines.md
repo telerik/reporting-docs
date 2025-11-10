@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: telerik, reporting, report, items, graph, styling, formatting, gridlines, adding, removing
 published: True
 previous_url: /GraphFormattingGridLines
+reportingArea: General
 ---
 
 # Gridlines of the Graph

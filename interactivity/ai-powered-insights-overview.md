@@ -7,6 +7,7 @@ tags: telerik, reporting, ai
 published: True
 position: 1
 previous_url: /interactivity/ai-powered-insights
+reportingArea: General
 ---
 
 # AI-Powered Insights Overview

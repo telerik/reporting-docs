@@ -7,6 +7,7 @@ previous_url: /report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code/over
 tags: telerik, reporting, report, items, barcode, 2d, swiss, qr, code, overview
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Configuring the Swiss QR Code in Reports

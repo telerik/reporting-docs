@@ -7,6 +7,7 @@ tags: report,explorer
 published: True
 position: 2
 previous_url: /ui-report-explorer
+reportingArea: General
 ---
 
 # Report Explorer of the Report Designer

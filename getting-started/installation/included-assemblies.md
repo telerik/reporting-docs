@@ -6,6 +6,7 @@ slug: included-assemblies
 tags: telerik, reporting, included, assemblies, installation
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Assemblies and Assets Included in the Installation

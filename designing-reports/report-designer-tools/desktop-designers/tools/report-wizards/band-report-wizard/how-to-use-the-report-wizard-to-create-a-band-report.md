@@ -7,6 +7,7 @@ tags: how,to,use,the,report,wizard,to,create,a,band,report
 published: True
 position: 1
 previous_url: /quick-start-create-simple-report
+reportingArea: General
 ---
 
 # Using the Report Wizard to Create a Band Report

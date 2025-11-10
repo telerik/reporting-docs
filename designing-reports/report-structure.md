@@ -7,6 +7,7 @@ tags: telerik, reporting, report, structure, groups, sections, items
 published: True
 previous_url: /report-items/understanding-report-sections-\(obsolete\), /designing-reports-understanding-report-sections
 position: 1
+reportingArea: General
 ---
 
 # The Basic Structure of the Report

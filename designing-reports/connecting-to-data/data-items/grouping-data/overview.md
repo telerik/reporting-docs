@@ -7,6 +7,7 @@ tags: overview,data,item,report,group
 published: True
 position: 0
 previous_url: /data-items-grouping-data, /designing-reports/connecting-to-data/data-items/grouping-data/
+reportingArea: General
 ---
 
 # Grouping Data Overview

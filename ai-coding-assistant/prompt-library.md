@@ -6,6 +6,7 @@ slug: ai-prompt-library
 tags: ai, telerik, reporting, prompt, library
 published: True
 position: 3
+reportingArea: General
 ---
 
 <style>

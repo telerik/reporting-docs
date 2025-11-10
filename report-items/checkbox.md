@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, checkbox, expanding, shrinking, embedde
 published: True
 position: 2
 previous_url: /report-items-checkbox
+reportingArea: General
 ---
 
 # Checkbox Report Item Overview

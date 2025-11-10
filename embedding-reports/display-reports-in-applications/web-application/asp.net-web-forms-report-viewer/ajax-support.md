@@ -7,6 +7,7 @@ tags: ajax,support
 published: True
 position: 5
 previous_url: /asp-net-report-viewer-ajax
+reportingArea: General
 ---
 
 # AJAX Support Overview

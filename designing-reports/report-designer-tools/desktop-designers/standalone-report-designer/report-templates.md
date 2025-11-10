@@ -7,6 +7,7 @@ tags: report,templates
 published: True
 position: 1
 previous_url: /standalone-report-designer-report-templates
+reportingArea: General
 ---
 
 <style>

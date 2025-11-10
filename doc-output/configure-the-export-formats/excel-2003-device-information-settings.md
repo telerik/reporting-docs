@@ -7,6 +7,7 @@ tags: excel, 2003, xls, device, information, settings, options
 published: True
 position: 5
 previous_url: /device-information-settings-excel
+reportingArea: General
 ---
 
 <style>

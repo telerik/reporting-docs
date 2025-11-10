@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: designing,using,opening,importing,previewing,type,reports,standalone,report,designer,for,net
 published: True
 position: 5
+reportingArea: General
 ---
 
 # Coded Reports in the Standalone Report Designer for .NET

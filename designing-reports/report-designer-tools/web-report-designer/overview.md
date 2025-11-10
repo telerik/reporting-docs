@@ -31,6 +31,21 @@ The Web Report Designer consists of the following areas:
 * `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item, or change a property value with just a few keystrokes.
 * `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
 
+	The guide by default starts with the optional `Help us improve!` dialog asking the web designer user for agreement to collect non-personal usage data.
+
+	![The Help us improve dialog in the Web Report Designer Onboarding Guide.](images/web-report-designer-onboarding-help-us-improve.png)
+
+	The purpose of this analytical data is to gather general details on the usage of the designer's components and wizards/tools. The reason we want to analyse this data is to improve the designer based on its actual usage feedback.
+
+	For example, here is part of the data we collect for the [SqlDataSource] and its wizard:
+	+ How often the report creators use the _SqlDataSource_ and [its wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}).
+	+ How much time the users spend working with the wizard: the time between the opening and closing of the wizard. Too much time may mean the wizard is not very intuitive and needs adjustments to facilitate data source creation.
+	+ Did the wizard complete successfully, i.e. with click on _Finish_ (successfully) or _Cancel_ (failure). Frequient failures in particular step may indicate a need to improve it.
+
+	By default, the `Help us improve!` window is allowed. The developers may disallow it by setting the [option]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization%})) __skip__ to __true__ (the default is _false_). The setting will force the onboarding guide to skip this window.
+
+	The user may start/stop providing analytical data at any time. The current state of the agreement is kept by the general option __Collect non-personal usage data__ of the _Workspace Preferences_ menu item. Unchecking the option stops the collection of analytical data.
+
 ## How it works
 
 The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for storage operations like creating, opening, or saving web design report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific web reporting scenario.

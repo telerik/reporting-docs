@@ -9,7 +9,7 @@ reportingArea: BlazorWrapper
 position: 5
 ---
 
-# Integrating the Blazor Report Viewer
+# Connecting the Blazor Report Viewer with the Report Server for .NET
 
 > The following article will guide you on [how to use the Blazor Report Viewer](https://www.telerik.com/blogs/embed-reporting-everywhere) in a web application and connect it to the [Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview).
 
@@ -18,7 +18,7 @@ position: 5
 * [Visual Studio 2019+](https://visualstudio.microsoft.com/vs/)
 * Existing .NET {{site.mindotnetversion}} and higher Blazor Server App or .NET {{site.mindotnetversion}} and higher hosted Blazor WebAssembly App
 * An installed and running [Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview).
-* Report Server for .NET's User that will connect from the viewer should have at least one enabled Token.
+* Report Server for .NET's User that will connect from the viewer should have at least one enabled [Token](https://docs.telerik.com/report-server/dotnet-docs/token-authentication).
 * Report Server for .NET should contain at least one report that can be accessed by the User account.
 
 ## Adding the Blazor Report Viewer component using an item template
@@ -29,7 +29,7 @@ Make sure that you select __Blazor Report Viewer page__, instead of __HTML5 Repo
 
 Refer to the [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates) section in the [How to Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}) documentation article, again, making sure that you select the __Blazor Report Viewer page__ in the [Add New Item](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)) dialog box.
 
-After creating the Blazor Report Viewer and connect it to a Report Server, we need some manual adjustments to make it work with the Report Server for .NET as explained in [Connect to the Report Server for .NET instance](#connect-to-the-report-server-for-.net-instance).
+After creating the Blazor Report Viewer, we need some manual adjustments to make it work with the Report Server for .NET as explained in the section [Connect to the Report Server for .NET instance](#connect-to-the-report-server-for-net-instance).
 
 ## Adding the Blazor Report Viewer component manually
 
@@ -65,13 +65,13 @@ app.UseStaticFiles();
 
 ## Connect to the Report Server for .NET instance
 
-The Report Server for .NET provides two approaches for authenticating from the Telerik Report Viewers. We strongly recommend using the Token authentication as more secure.
+The Report Server for .NET provides two approaches for authenticating from the Telerik Report Viewers. We strongly recommend using the __Token authentication__ as more secure.
 
 ### Token Authentication
 
-This is the __recommended__ approach.
+>tip This is the __recommended__ approach.
 
-Use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`:
+Use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`:
 
 ````CSHTML
 @page "/"
@@ -99,7 +99,7 @@ Use the following snippet to place the viewer component in a razor page like `Pa
 
 Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance, along with the port if needed.
 
-The `GetPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
+The `GetPersonalAccessToken` option should be set to a function returning the Token of the User who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
 ````JavaScript
 window.trvCallbacks = {
@@ -110,7 +110,7 @@ window.trvCallbacks = {
 }
 ````
 
-Server-side, you may configure the endpoint, as shown below, after ensuring the EnvironmentVariable 'RS_NET_TOKEN' is set up correctly. We strongly recommend securing the endpoint:
+Server-side, you may configure the endpoint '/rs-token', as shown below, after ensuring the EnvironmentVariable "RS_NET_TOKEN" is set up correctly. We strongly recommend securing the endpoint:
 
 ````C#
 app.MapGet("/rs-token", (HttpContext context) =>
@@ -122,9 +122,9 @@ app.MapGet("/rs-token", (HttpContext context) =>
 
 ### Username and Password Authentication
 
-We don't recommend this approach for security reasons.
+>tip We recommend avoiding this approach for security reasons.
 
-If you prefer to use hardcoded credentials, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
+If you prefer to use hardcoded credentials, use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`.
 
 ````CSHTML
 @page "/"
@@ -148,7 +148,7 @@ If you prefer to use hardcoded credentials, use the following snippet to place t
 			  Scale="1.0" />
 ````
 
->caution The Guest User may connect to the Report Server for .NET only with a Token. It doesn't have a password and cannot connect to the Report Server for .NET with Null credentials, as the Report Server for .NET Framework 4.6.2.
+>caution The __Guest User__ may connect to the Report Server for .NET only with a __Token__. It doesn't have a password and cannot connect to the Report Server for .NET with Null credentials, as the Report Server for .NET Framework 4.6.2.
 
 ## See Also
 

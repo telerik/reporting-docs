@@ -110,7 +110,7 @@ window.trvCallbacks = {
 }
 ````
 
-Server-side, you may configure the endpoint '/rs-token', as shown below, after ensuring the EnvironmentVariable "RS_NET_TOKEN" is set up correctly. We strongly recommend securing the endpoint:
+Server-side, you may configure the endpoint '/rs-token', as shown below, after ensuring the environment variable "RS_NET_TOKEN" is set up correctly. We strongly recommend securing the endpoint:
 
 ````C#
 app.MapGet("/rs-token", (HttpContext context) =>

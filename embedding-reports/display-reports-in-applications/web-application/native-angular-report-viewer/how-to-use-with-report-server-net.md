@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how, to, use, native, angular, report, viewer, with, report, server. net
 published: True
 reportingArea: NativeAngular
-position: 5
+position: 3
 ---
 
 # How to use the Native Angular Report Viewer with Report Server for .NET
@@ -72,7 +72,7 @@ npm install --save @progress/kendo-theme-default
 ````
 
 
-1. Reference the theme in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
+1. Reference the theme in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration, which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
 
 	````JSON
 "styles": [
@@ -82,7 +82,7 @@ npm install --save @progress/kendo-theme-default
 ````
 
 
-1. In the class of the component(e.g. `AppComponent`) where the viewer will be displayed, define a `reportSource` object property specifying the category and the name of the report that will be displaued. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
+1. In the class of the component(e.g. `AppComponent`) where the viewer will be displayed, define a `reportSource` object property specifying the category and the name of the report that will be displayed. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
 
 	````TypeScript
 reportSource = {
@@ -92,7 +92,7 @@ reportSource = {
 ````
 
 
-1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and `getPersonalAccessToken` callback, which will be executed when the the report viewer request from the server to render the report.
+1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and `getPersonalAccessToken` callback, which will be executed when the report viewer requests from the server to render the report.
 
 	````JS
 reportServer = { 
@@ -106,7 +106,7 @@ reportServer = {
 	This is the **recommended** approach, but if an endpoint cannot be exposed, the token can be hardcoded in the callback: `getPersonalAccessToken: () => Promise.resolve('TOKEN_STRING')`
 
 
-1. In the HTML template of the component, define the `<reporting-angular-viewer>` element, and pass the defined properties to their corresponding properties of the Native Angular Report Viewer::
+1. In the HTML template of the component, define the `<reporting-angular-viewer>` element, and pass the defined properties to their corresponding properties of the Native Angular Report Viewer:
 
 	````HTML
 <reporting-angular-viewer

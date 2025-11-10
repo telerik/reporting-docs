@@ -1,5 +1,5 @@
 ---
-title: Using the Blazor Report Viewer with Report Server for .NET
+title: Using with Report Server for .NET
 page_title: Connect the Telerik Reporting Blazor Report Viewer with Report Server for .NET
 description: "Learn how the Telerik Reporting Blazor HTML5 Report Viewer can work with the Report Server for .NET."
 slug: use-blazor-report-viewer-with-rs-net
@@ -122,7 +122,7 @@ app.MapGet("/rs-token", (HttpContext context) =>
 
 ### Username and Password Authentication
 
->tip We recommend avoiding this approach for security reasons.
+>caution Avoid this approach for security reasons.
 
 If you prefer to use hardcoded credentials, use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`.
 

@@ -39,7 +39,9 @@ reportServer: {
 
 	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance, along with the port if needed.
 
-	(__recommended__) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
+	To authenticate against the Report Server for .NET you have the following options:
+
+	* (__recommended__) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
 	````JavaScript
 reportServer: {
@@ -62,7 +64,7 @@ app.MapGet("/rs-token", (HttpContext context) =>
 ````
 
 
-	(_not recommended_) Alternatively, you may use a hardcoded username and password instead of Token authentication. We do not recommend this for security reasons:
+	* (_not recommended_) Alternatively, you may use a hardcoded _username_ and _password_ instead of Token authentication. We do not recommend this for security reasons:
 
 	````JavaScript
 reportServer: {

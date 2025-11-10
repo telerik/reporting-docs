@@ -80,7 +80,7 @@ To start creating your report by using a predefined report template with a ready
 	
 	![Load a Template ><](images/web-report-designer-report-templates-load-template.png) 
 
-1. Enter `File Name` and `Format`—After selecting a template, give your new report a meaningful name and choose the desired output format.:
+1. Enter a file name and select the format for your new report:
 
 	![Report From a Template ><](images/web-report-designer-report-templates-report-from-template.png) 
 

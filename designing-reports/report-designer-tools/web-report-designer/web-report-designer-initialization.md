@@ -68,7 +68,7 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 		</tr>
 		<tr>
 			<td><strong>keepClientAlive</strong></td>
-			<td><i>boolean, optional</i>; Sets a value indicating whether the client will be kept alive. When set to true a request will be sent to the server to stop the client from expiring, determined by the ClientSessionTimeout server configuration. <br/> When set to false, the client will be left to expire;</td>
+			<td><i>boolean, optional</i>; Sets a value indicating whether the client will be kept alive. When set to true, a request will be sent to the server to stop the client from expiring, determined by the ClientSessionTimeout server configuration. <br/> When set to false, the client will be left to expire;</td>
 		</tr>
 		<tr>
 			<td><strong>promptOnDiscardingModifiedReport</strong></td>
@@ -84,7 +84,11 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 		</tr>
 		<tr>
 			<td><strong>skipOnboarding</strong></td>
-			<td><i>boolean, optional</i>; Sets a value indicating whether the <i>Onboarding Guide</i> should be skipped on startup. If not set or set to false, the Onboarding Guide will check whether it has been run before and if not, it will start after the designer surface has loaded. If the guide has been run before, nothing will happen.</td>
+			<td><i>boolean, optional</i>; Sets a value indicating whether the <i>Onboarding Guide</i> should be skipped on startup. If not set or set to false, the Onboarding Guide will check whether it has been run before, and if not, it will start after the designer surface has loaded. If the guide has been run before, nothing will happen.</td>
+		</tr>
+		<tr>
+			<td><strong>skipCollectingUsageDataPrompt</strong></td>
+			<td><i>boolean, optional</i>; Sets a value indicating whether the <i>Onboarding Guide</i> should start with the __Help us improve!__ dialog. If not set or set to false, the Onboarding Guide will start with the dialog. It asks whether the user agrees for the designer to collect non-personal usage data. This analytical data gives the Telerik Reporting team feedback used to improve the Web Report Designer.<br/>The user may start/stop providing analytical data at any time. The current state of the agreement is kept by the general option __Collect non-personal usage data__ of the _Workspace Preferences_ menu item.</td>
 		</tr>
 		<tr>
 			<td><strong>startMode</strong></td>
@@ -130,7 +134,7 @@ function onError(e, args) {
 
 ### `notificationShowing` Event
 
-The `notificationShowing` event will be fired when the user should be notified of an error, warning, etc. while using `design` mode in the Web Report Designer. The event was introduced with the [R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) release.The event may be used to disable the notification pop-up or even display a custom message in the console.
+The `notificationShowing` event will be fired when the user should be notified of an error, warning, etc., while using `design` mode in the Web Report Designer. The event was introduced with the [R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) release.The event may be used to disable the notification pop-up or even display a custom message in the console.
 
 ````JavaScript
 $(document).ready(function () {

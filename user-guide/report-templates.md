@@ -70,7 +70,7 @@ When creating a new report by clicking the `New Report` option in the main menu,
 
 To start creating your report by using a predefined report template with a ready-to-use design, use the report template option.
 
-1. Select the `New Report` option from the Menu:
+1. Select the **New Report** option from the Menu:
 
 	![Create a Report ><](images/wrd-create-menu-option.png)   
 

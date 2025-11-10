@@ -40,7 +40,15 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 
 ## Managing Permissions
 
-To restrict specific actions or features for users on the client side, for example to restrict `Report Templates`, the [DeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) setting of the `ReportDesignerServiceConfiguration` can be used. It allows developers to customize the designer experience by disabling certain tools, components, or capabilities based on application logic or user roles.
+To restrict specific actions or features for users on the client side, for example, to limit access to the `Report Templates` folder, use the [`DeniedPermissions`]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) setting of the `ReportDesignerServiceConfiguration`. This setting allows developers to customize the designer experience by disabling certain tools, components, or capabilities based on application logic or user roles.
+
+````CSharp
+services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
+{
+    DeniedPermissions = ReportDesignerPermissionsBuilder.Build(
+        Permission.Commands_AssetsManager_ReportTemplates
+        )
+}));
 
 >note You can override the [GetDeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) method in your custom implementation of the reporting service to apply different restrictions based on the logged-in user or other conditions.
 

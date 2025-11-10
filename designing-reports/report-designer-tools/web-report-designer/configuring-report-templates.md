@@ -27,7 +27,7 @@ To control how application users utilize templates, developers can configure spe
 
 All report templates are stored in a specific **Report Templates** folder. A default folder will be created at root level of your project. You can also navigate to a specific custom folder that contains all the report templates you wish to use.
 
-The [ReportDesignerServiceConfiguration]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#add-configuration-settings-in-the-startupcs-file) class provides a configuration setting for specifying the **TemplateDefinitionStorage**. Thus, you can navigate to a specific folder that stores all report templates:
+The [`ReportDesignerServiceConfiguration`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#add-configuration-settings-in-the-startupcs-file) class provides a configuration setting for specifying the `TemplateDefinitionStorage`. Thus, you can navigate to a specific folder that stores all report templates:
 
 ````CSharp
 services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration

@@ -52,7 +52,7 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 
 >note You can override the [GetDeniedPermissions]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) method in your custom implementation of the reporting service to apply different restrictions based on the logged-in user or other conditions.
 
-### Restricting the Templates Folder
+## Allowed Operations for Restricted Users
 
 ````CSharp
 services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration

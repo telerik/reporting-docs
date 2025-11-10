@@ -76,7 +76,7 @@ To start creating your report by using a predefined report template with a ready
 
 1. Create a report from an existing template by selecting the **From Template** option.
 
-1. Navigate to the existing template (.trtx) file—When creating a new report, you can choose a template from the available list. The designer loads the layout and styles, and you can then customize the content and data bindings.
+1. Navigate to the existing template (`.trtx`) file—When creating a new report, you can choose a template from the available list. The designer loads the layout and styles, and you can then customize the content and data bindings.
 	
 	![Load a Template ><](images/web-report-designer-report-templates-load-template.png) 
 

@@ -68,7 +68,7 @@ When creating a new report by clicking the `New Report` option in the main menu,
 
 ### Using Report Templates
 
-If you want to start from a predefined report template with a ready-to-use design, the report template option is the right choice.
+To start creating your report by using a predefined report template with a ready-to-use design, use the report template option.
 
 1. Select the `New Report` option from the Menu:
 

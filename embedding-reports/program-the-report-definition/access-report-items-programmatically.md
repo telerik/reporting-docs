@@ -7,6 +7,7 @@ tags: access, report, items, programmatically, code
 published: True
 position: 5
 previous_url: /faq-accessing-items
+reportingArea: General
 ---
 
 # Access Report Items Programmatically

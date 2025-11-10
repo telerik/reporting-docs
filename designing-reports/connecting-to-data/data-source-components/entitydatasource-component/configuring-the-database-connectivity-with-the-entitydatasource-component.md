@@ -7,6 +7,7 @@ tags: configuring,the,database,connectivity,with,the,entitydatasource,component
 published: True
 position: 3
 previous_url: /entitydatasource-configuring-the-database-connectivity
+reportingArea: General
 ---
 
 # Configuring the Database Connectivity with the EntityDataSource Component

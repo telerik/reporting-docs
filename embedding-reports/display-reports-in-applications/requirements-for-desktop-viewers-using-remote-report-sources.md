@@ -7,6 +7,7 @@ tags: requirements,for,desktop,viewers,using,remote,report,sources
 published: True
 position: 6
 previous_url: /requirements-for-desktop-viewers-using-remote-report-sources
+reportingArea: General
 ---
 
 # Requirements For the Desktop Viewers Connecting to a Reporting Engine hosted in a Remote Service

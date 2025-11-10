@@ -6,6 +6,7 @@ slug: manual_adjustment_crosstab
 tags: telerik, reporting, report, items, crosstab, manual, configuration, config, adjust
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Manually Adjusting the Crosstab

@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /standalone-report-designer, /designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/, /designing-reports/report-designer-tools/desktop-designers/
+reportingArea: General
 ---
 
 # Standalone Report Designer Overview

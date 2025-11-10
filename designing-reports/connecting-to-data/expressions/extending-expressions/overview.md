@@ -7,6 +7,7 @@ tags: overview,functions,expressions,report,extend,aggregate
 published: True
 position: 0
 previous_url: /expressions-extending-expressions, /designing-reports/connecting-to-data/expressions/extending-expressions/
+reportingArea: General
 ---
 
 # Extending Expressions Overview

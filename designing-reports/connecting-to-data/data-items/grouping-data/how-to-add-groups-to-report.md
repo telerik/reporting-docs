@@ -7,6 +7,7 @@ tags: how,add,groups,report,edit,delete,remove,programmatically,designer
 published: True
 position: 2
 previous_url: /data-items-how-to-add-groups-to-report-item, /designing-reports-create-grouping
+reportingArea: General
 ---
 
 # Adding Groups to Report

@@ -6,6 +6,7 @@ slug: system-requirements
 tags: telerik, reporting, prerequisites, system, requirements
 published: True
 position: 1
+reportingArea: General
 ---
 
 # List of Prerequisites

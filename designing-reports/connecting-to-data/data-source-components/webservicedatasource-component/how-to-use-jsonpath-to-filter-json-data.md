@@ -7,6 +7,7 @@ tags: how,use,jsonpath,to,filter,json,data,web,service,source
 published: True
 position: 1
 previous_url: /how-to-use-jsonpath
+reportingArea: General
 ---
 
 # Using JSONPath to Filter JSON data

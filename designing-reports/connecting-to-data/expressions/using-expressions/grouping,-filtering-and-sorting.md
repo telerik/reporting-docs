@@ -7,6 +7,7 @@ tags: grouping,,filtering,and,sorting
 published: True
 position: 5
 previous_url: /expressions-grouping-filtering-sorting
+reportingArea: General
 ---
 
 # Grouping, Filtering and Sorting with Expressions

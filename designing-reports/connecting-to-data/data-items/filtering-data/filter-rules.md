@@ -7,6 +7,7 @@ tags: filter,rules
 published: True
 position: 1
 previous_url: /designing-reports-filtering
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

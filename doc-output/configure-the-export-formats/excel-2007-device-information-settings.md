@@ -7,6 +7,7 @@ tags: excel, 2007, xlsx, device, information, settings, options
 published: True
 position: 4
 previous_url: /device-information-settings-excel-2007
+reportingArea: General
 ---
 
 <style>

@@ -7,6 +7,7 @@ tags: creating, style, rules, step, by, step, designer, programmatically
 published: True
 position: 2
 previous_url: /style-creating-style-rules
+reportingArea: General
 ---
 
 # Creating Style Rules

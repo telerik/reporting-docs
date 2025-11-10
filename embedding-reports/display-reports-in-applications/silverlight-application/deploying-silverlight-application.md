@@ -7,6 +7,7 @@ tags: deploying,silverlight,application
 published: True
 position: 5
 previous_url: /installation-deploying-on-silverlight-application
+reportingArea: General
 ---
 
 # Deploying Silverlight Application

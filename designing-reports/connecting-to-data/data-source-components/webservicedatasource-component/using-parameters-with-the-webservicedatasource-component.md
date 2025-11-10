@@ -7,6 +7,7 @@ tags: using,parameters,with,the,webservicedatasource,component,inline,query,head
 published: True
 position: 3
 previous_url: /web-service-data-source-using-parameters
+reportingArea: General
 ---
 
 # Using Parameters with the WebServiceDataSource Component

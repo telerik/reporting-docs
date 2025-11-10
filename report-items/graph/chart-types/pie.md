@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-
 tags: telerik, reporting, report, items, graph, pie, chart, overview, creating
 previous_url: /PieCharts, /GraphHowToCreatePieChart, /report-items/graph/chart-types/pie-charts/overview, /report-items/graph/chart-types/pie-charts/how-to-create-pie-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing Pie Charts

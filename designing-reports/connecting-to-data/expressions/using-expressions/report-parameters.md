@@ -7,6 +7,7 @@ tags: report,parameters
 published: True
 position: 6
 previous_url: /expressions-report-parameters
+reportingArea: General
 ---
 
 # Expressions in Report Parameters

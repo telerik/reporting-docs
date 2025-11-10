@@ -7,6 +7,7 @@ tags: bookmark,action
 published: True
 position: 40
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action, /designing-reports-interactivity-bookmark-action, /designing-reports-interactivity-how-to-add-bookmark
+reportingArea: General
 ---
 
 # Bookmark Action Overview

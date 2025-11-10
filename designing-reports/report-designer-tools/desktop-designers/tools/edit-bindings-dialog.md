@@ -7,6 +7,7 @@ tags: edit,bindings,dialog,designer,report,expression,property
 published: True
 position: 11
 previous_url: /ui-edit-bindings
+reportingArea: General
 ---
 
 # Edit Bindings Dialog of the Report Designer

@@ -7,6 +7,7 @@ tags: connecting,objectdatasource,component,data,source
 published: True
 position: 1
 previous_url: /objectdatasource-connecting
+reportingArea: General
 ---
 
 # Connecting the ObjectDataSource Component to a Data Source

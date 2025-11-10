@@ -6,6 +6,7 @@ slug: ai-copilot-extension
 tags: ai, reporting, coding, assistant, getting, started, extension, copilot
 published: True
 position: 2
+reportingArea: General
 ---
 
 

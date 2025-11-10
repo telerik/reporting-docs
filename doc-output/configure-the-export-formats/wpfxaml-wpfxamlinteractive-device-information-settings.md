@@ -7,6 +7,7 @@ tags: wpfxaml/wpfxamlinteractive, device, information, settings, options
 published: True
 position: 14
 previous_url: /device-information-settings-wpfxamlinteractive
+reportingArea: General
 ---
 
 <style>

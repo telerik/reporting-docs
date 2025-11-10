@@ -7,6 +7,7 @@ tags: date,and,time,functions,expressions,report
 published: True
 position: 4
 previous_url: /expressions-date-time-functions
+reportingArea: General
 ---
 
 # Date and Time Functions Overview

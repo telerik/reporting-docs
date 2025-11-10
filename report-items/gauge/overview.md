@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, radial, linear, gauge, properties
 published: True
 position: 1
 previous_url: /report-items/gauge/
+reportingArea: General
 ---
 
 # Gauge Report Item Overview

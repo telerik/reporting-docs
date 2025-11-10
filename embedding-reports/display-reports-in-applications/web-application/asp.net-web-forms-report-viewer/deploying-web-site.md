@@ -7,6 +7,7 @@ tags: deploying,web,site
 published: True
 position: 8
 previous_url: /installation-deploying-on-web-site
+reportingArea: General
 ---
 
 # Deploying Web Site Projects

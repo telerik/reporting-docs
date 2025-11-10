@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pola
 tags: telerik, reporting, report, items, graph, polar, chart, overview, creating
 previous_url: /PolarCharts, /GraphHowToCreatePolarChart, /report-items/graph/chart-types/polar-charts/overview, /report-items/graph/chart-types/polar-charts/how-to-create-polar-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing Polar Charts

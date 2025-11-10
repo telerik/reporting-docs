@@ -7,6 +7,7 @@ tags: search
 published: True
 position: 11
 previous_url: /html5-report-viewer-search
+reportingArea: General
 ---
 
 # Search in the HTML5-based Report Viewers

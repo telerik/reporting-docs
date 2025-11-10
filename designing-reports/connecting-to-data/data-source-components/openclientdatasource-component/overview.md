@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /OpenClientDataSource, /designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/
+reportingArea: General
 ---
 
 # OpenClientDataSource Component Overview

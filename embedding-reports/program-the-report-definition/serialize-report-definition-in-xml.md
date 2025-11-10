@@ -7,6 +7,7 @@ tags: serialize, deserialize, report, definition, xml, ReportXmlSerializer
 published: True
 position: 7
 previous_url: /programmatic-xml-serialization
+reportingArea: General
 ---
 
 # Serializing and Deserializing Report Definitions

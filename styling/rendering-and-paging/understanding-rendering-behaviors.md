@@ -7,6 +7,7 @@ tags: understanding, rendering, behaviors
 published: True
 position: 1
 previous_url: /designing-reports-page-layout-rendering-understanding-rendering-behaviors
+reportingArea: General
 ---
 
 # Understanding Rendering Behaviors

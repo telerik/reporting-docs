@@ -7,6 +7,7 @@ tags: selecting,data,with,the,sqldatasource,component,query,stored procedure
 published: True
 position: 2
 previous_url: /sql-data-source-selecting-data, /how-to-sqldatasource-sct-storedprocedure
+reportingArea: General
 ---
 
 # Selecting Data with the SqlDataSource Component

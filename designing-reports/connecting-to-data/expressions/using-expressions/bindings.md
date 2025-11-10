@@ -7,6 +7,7 @@ tags: bindings
 published: True
 position: 3
 previous_url: /expressions-bindings
+reportingArea: General
 ---
 
 # Bindings Overview

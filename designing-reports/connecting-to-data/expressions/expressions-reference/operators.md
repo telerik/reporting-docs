@@ -7,6 +7,7 @@ tags: operators,report,expression,use
 published: True
 position: 2
 previous_url: /expressions-operators
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

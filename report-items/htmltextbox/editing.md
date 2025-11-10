@@ -6,6 +6,7 @@ slug: htmltextbox_editing
 tags: telerik, reporting, report, items, htmltextbox, editing, inplace, designtime, editor
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Editing in HtmlTextBox

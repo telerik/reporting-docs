@@ -6,6 +6,7 @@ slug: htmltextbox_embedded_expressions
 tags: telerik, reporting, report, items, htmltextbox, embedded, expressions, mail, merge, functionality
 published: True
 position: 6
+reportingArea: General
 ---
 
 # Embedded Expressions in HtmlTextBox

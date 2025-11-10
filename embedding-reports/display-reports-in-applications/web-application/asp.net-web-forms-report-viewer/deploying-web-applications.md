@@ -7,6 +7,7 @@ tags: deploying,web,applications
 published: True
 position: 7
 previous_url: /installation-deploying-on-web-application
+reportingArea: General
 ---
 
 # Deploying Web Application Projects

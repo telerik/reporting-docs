@@ -7,6 +7,7 @@ previous_url: /report-items/how-to/how-to-layout-report-items, /designing-report
 tags: telerik, reporting, report, items, overview
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Working With Report Items

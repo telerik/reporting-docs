@@ -7,6 +7,7 @@ tags: telerik, reporting, graph, report, item, visual, structure, elements
 published: True
 position: 3
 previous_url: /GraphStructure
+reportingArea: General
 ---
 
 # Composition and Functionality of the Graph Report Item

@@ -6,6 +6,7 @@ slug: license-troubleshoot
 tags: license, telerik, reporting, problems, troubleshoot
 published: True
 position: 8
+reportingArea: General
 ---
 
 # Troubleshoot License Problems

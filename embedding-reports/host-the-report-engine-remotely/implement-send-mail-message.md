@@ -7,6 +7,7 @@ tags: implement,send,mail,message
 published: True
 position: 7
 previous_url: /telerik-reporting-rest-implement-send-mail-message,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message
+reportingArea: General
 ---
 
 # Implementing Send Mail Message

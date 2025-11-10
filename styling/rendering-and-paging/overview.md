@@ -7,6 +7,7 @@ tags: rendering, extensions, renderers, paging
 published: True
 position: 0
 previous_url: /designing-reports-page-layout-rendering, /styling/rendering-and-paging/, /styling/
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

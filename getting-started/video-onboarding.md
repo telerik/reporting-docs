@@ -6,6 +6,7 @@ slug: getting-started/video-onboarding
 tags: get,started,video,onboarding,classroom,course,learning
 published: true
 position: 3
+reportingArea: General
 ---
 
 # Video Onboarding for Telerik Reporting

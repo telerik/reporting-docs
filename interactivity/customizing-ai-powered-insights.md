@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/configu
 tags: telerik, reporting, ai, configuration
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Customizing AI-Powered Insights

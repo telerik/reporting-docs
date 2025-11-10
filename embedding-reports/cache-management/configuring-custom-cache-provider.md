@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/export-and-configure/cache-manageme
 tags: telerik, reporting, embedding, reports, cache, management, configuring, custom, provider
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Configuring Custom Cache Providers

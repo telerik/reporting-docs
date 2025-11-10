@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /CubeDataSource, /designing-reports/connecting-to-data/data-source-components/cubedatasource-component/
+reportingArea: General
 ---
 
 # CubeDataSource Component Overview

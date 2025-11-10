@@ -7,6 +7,7 @@ tags: create, report, programmatically, code
 published: True
 position: 1
 previous_url: /programmatic-creating-report
+reportingArea: General
 ---
 
 # Create a Report Programmatically

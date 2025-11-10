@@ -7,6 +7,7 @@ tags: configuring,your,project,for,using,microsoft,analysis,services
 published: True
 position: 1
 previous_url: /cubedatasource-configuring-project
+reportingArea: General
 ---
 
 # Configurations for using Microsoft Analysis Services

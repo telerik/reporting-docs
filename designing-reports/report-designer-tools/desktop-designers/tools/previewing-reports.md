@@ -7,6 +7,7 @@ tags: previewing,reports,data,designer,viewer
 published: True
 position: 18
 previous_url: /installation-previewing-report
+reportingArea: General
 ---
 
 # Previewing Reports with Real Data

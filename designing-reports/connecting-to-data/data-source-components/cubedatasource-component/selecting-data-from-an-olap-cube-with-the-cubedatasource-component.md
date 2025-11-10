@@ -7,6 +7,7 @@ tags: selecting,data,from,an,olap,cube,with,the,cubedatasource,component
 published: True
 position: 3
 previous_url: /cubedatasource-selecting-data
+reportingArea: General
 ---
 
 # Selecting Data from an OLAP Cube with the CubeDataSource Component

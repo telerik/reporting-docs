@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, overview
 published: True
 position: 0
 previous_url: /report-items/map/, /mapoverview
+reportingArea: General
 ---
 
 # Map Overview

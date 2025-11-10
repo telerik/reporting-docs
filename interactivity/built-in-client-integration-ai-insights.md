@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powe
 tags: telerik, reporting, ai, rest
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Enable AI-Powered Insights with Built-in AI Client

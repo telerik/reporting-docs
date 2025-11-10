@@ -6,6 +6,7 @@ slug: desktop-graphqldatasource-wizard
 tags: graphqldatasource,wizard
 published: True
 position: 50
+reportingArea: General
 ---
 
 <style>

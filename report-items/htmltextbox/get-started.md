@@ -6,6 +6,7 @@ slug: htmltextbox_item_get_started
 tags: telerik, reporting, report, items, htmltextbox, getting, started, designer
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Getting Started with the HtmlTextBox

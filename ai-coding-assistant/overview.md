@@ -6,6 +6,7 @@ slug: ai-coding-assistant
 tags: ai, telerik, reporting, coding, assistant
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Telerik Reporting AI Coding Assistant

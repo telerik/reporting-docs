@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /report-designers, /designing-reports/report-designer-tools/, /uireportdesigner
+reportingArea: General
 ---
 
 # Report Designer Tools Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: crating,using,event,handlers,standalone,report,designer
 published: True
 position: 8
+reportingArea: General
 ---
 
 # Using event handlers in the Standalone Report Designer

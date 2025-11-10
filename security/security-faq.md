@@ -6,6 +6,7 @@ slug: security-faq
 tags: telerik, security, reporting, faq
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Frequently Asked Questions (FAQ)

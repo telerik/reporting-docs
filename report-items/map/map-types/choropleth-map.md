@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setu
 tags: telerik, reporting, map, report, item, add, choropleth, with, designers, wizard
 previous_url: /ChoroplethHowToSetupAChoroplethWithCsvAndShapefile, /report-items/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard, /knowledge-base/map-add-choropleth-with-map-wizard-to-reports
 position: 1
+reportingArea: General
 ---
 
 # Adding Choropleth Maps to Reports with the Choropleth Wizard

@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/reference-report-definitions-in-app
 tags: telerik, reporting, embedding, reports, referencing, report, definitions, in, applications
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Referencing Report Definitions in Applications

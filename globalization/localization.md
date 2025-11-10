@@ -7,6 +7,7 @@ previous_url: /designing-reports/localizing-reports, /advanced-localizing-report
 tags: localizing,reports
 published: True
 position: 12
+reportingArea: General
 ---
 
 # Localizing Reports Overview

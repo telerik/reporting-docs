@@ -7,6 +7,7 @@ tags: how,to,add,sorting,to,report
 published: True
 position: 1
 previous_url: /data-items-how-to-add-sorting-to-report-item
+reportingArea: General
 ---
 
 # Adding Sortings to Report

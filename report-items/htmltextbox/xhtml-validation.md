@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, xhtml, validation
 previous_url: /report-items-html-text-box-validation
 published: True
 position: 2
+reportingArea: General
 ---
 
 # XHTML Validation in HtmlTextBox

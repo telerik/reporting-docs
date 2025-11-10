@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, designing, reports, automatic, layout, 
 previous_url: /designing-reports/report-structure/automatic-layout-\(dock-and-anchor\), /report-items/automatic-layout-\(dock-and-anchor\), /designing-reports-dynamic-layout
 published: True
 position: 16
+reportingArea: General
 ---
 
 # Automatic Layout for Report Items

@@ -7,6 +7,7 @@ tags: using,parameters,with,the,entitydatasource,component
 published: True
 position: 2
 previous_url: /entitydatasource-using-parameters
+reportingArea: General
 ---
 
 # Using Parameters with the EntityDataSource Component

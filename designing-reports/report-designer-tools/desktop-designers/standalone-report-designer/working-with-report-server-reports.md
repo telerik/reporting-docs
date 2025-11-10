@@ -7,6 +7,7 @@ tags: working,with,report,server,reports,edit,create,publish,revert,lock
 published: True
 position: 6
 previous_url: /standalone-report-designer-working-with-server-reports
+reportingArea: General
 ---
 
 # Working with Reports Stored in the Telerik Report Server

@@ -7,6 +7,7 @@ tags: drilldown,report,action
 published: True
 position: 20
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action, /designing-reports-interactivity-drill-down, /designing-reports-interactivity-how-to-add-drilldown-action 
+reportingArea: General
 ---
 
 # Drilldown Report Action Overview

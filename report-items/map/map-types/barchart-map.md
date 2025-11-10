@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-crea
 tags: telerik, reporting, map, report, item, create, barchart, series, using, csv, data, source, advanced
 previous_url: /How-to-create-map-with-BarChart-series-using-CSV-data-source, /report-items/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source, /knowledge-base/map-create-with-barchart-series-and-csv-data-source
 position: 4
+reportingArea: General
 ---
 
 # Creating Advanced Maps with BarChart Series

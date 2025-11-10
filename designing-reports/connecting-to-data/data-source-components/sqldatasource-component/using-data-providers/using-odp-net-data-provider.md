@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: ODP.NET,data,provider,Oracle
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Using Oracle Data Provider for .NET in Reporting

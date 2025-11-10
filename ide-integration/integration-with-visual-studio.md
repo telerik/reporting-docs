@@ -6,6 +6,7 @@ slug: reporting-integration-with-visual-studio
 tags: integration,visual,studio,reporting,configure,wizard, extension
 published: True
 position: 0
+reportingArea: General
 ---
 # Visual Studio Extensions
 

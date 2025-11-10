@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/l
 tags: telerik, reporting, map, report, item, legend, customize, style, format
 previous_url: /MapFormattingLegend, /MapFormattingAMap, /report-items/map/formatting-a-map/overview 
 published: True
+reportingArea: General
 ---
 
 # Customizing Map Legend

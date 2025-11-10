@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: Npgsql,data,provider,PostgreSQL
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Using Npgsql in Reporting

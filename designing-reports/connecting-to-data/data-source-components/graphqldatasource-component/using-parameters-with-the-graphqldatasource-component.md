@@ -6,6 +6,7 @@ slug: graphqldatasource-parameters
 tags: using,parameters,with,the,graphqldatasource,component,inline,query,header,cookie,fiddler,configure
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Using Parameters with the GraphQLDataSource Component

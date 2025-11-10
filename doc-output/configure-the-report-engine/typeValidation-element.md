@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: typeValidation,element,type,validation,security
 published: True
 position: 12
+reportingArea: General
 ---
 
 <style>

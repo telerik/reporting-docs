@@ -7,6 +7,7 @@ tags: using, styles, to, customize, reports
 published: True
 position: 0
 previous_url: /style-using-styles-to-customize-reports, /styling/styling-reports/
+reportingArea: General
 ---
 
 # Customizing Reports using Styles

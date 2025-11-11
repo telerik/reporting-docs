@@ -88,7 +88,7 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 		</tr>
 		<tr>
 			<td><strong>skipCollectingUsageDataPrompt</strong></td>
-			<td><i>boolean, optional</i>; Sets a value indicating whether the <i>Onboarding Guide</i> should start with the __Help us improve!__ dialog. If not set or set to false, the Onboarding Guide will start with the dialog. It asks whether the user agrees for the designer to collect non-personal usage data. This analytical data gives the Telerik Reporting team feedback used to improve the Web Report Designer.<br/>The user may start/stop providing analytical data at any time. The current state of the agreement is kept by the general option __Collect non-personal usage data__ of the _Workspace Preferences_ menu item.</td>
+			<td><i>boolean, optional</i>; Sets a value indicating whether the <i>Onboarding Guide</i> should start with the <strong>Help us improve!</strong> dialog. If not set or set to <i>false</i>, the Onboarding Guide will start with the dialog.<br/>The dialog asks whether the user agrees for the designer to collect non-personal usage data. This analytical data gives the Telerik Reporting team a valuable feedback helping to improve the Web Report Designer.<br/>The user may start/stop providing analytical data at any time. The current state of the agreement is kept by the <i>General</i> option <strong>Collect non-personal usage data</strong> of the <i>Workspace Preferences</i> menu item.</td>
 		</tr>
 		<tr>
 			<td><strong>startMode</strong></td>

@@ -41,9 +41,9 @@ npm install @progress/telerik-react-report-viewer
 <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
 ````
 
-	>note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
+	>note To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
 
-1. In the `.JSX` file where the report viewer will be used, create a `reportSource` object specifying the category and the name of the report that will be displaued. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
+1. In the `.JSX` file where the report viewer will be used, create a `reportSource` object specifying the category and the name of the report that will be displayed. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
 
 	````JS
 const reportSource = {
@@ -63,7 +63,7 @@ const viewerContainerStyle = {
 ````
 
 
-1. In the same file, define a `reportServer` object with a `url` string pointing to the Report Server for .NET, and `getPersonalAccessToken` callback, which will be executed when the the report viewer request from the server to render the report.
+1. In the same file, define a `reportServer` object with a `url` string pointing to the Report Server for .NET, and a `getPersonalAccessToken` callback, which will be executed when the report viewer requests from the server to render the report.
 
 	````JS
 const reportServer = { 

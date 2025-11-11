@@ -92,7 +92,7 @@ reportSource = {
 ````
 
 
-1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and `getPersonalAccessToken` callback, which will be executed when the report viewer requests from the server to render the report.
+1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and a `getPersonalAccessToken` callback, which will be executed when the report viewer requests from the server to render the report.
 
 	````JS
 reportServer = { 

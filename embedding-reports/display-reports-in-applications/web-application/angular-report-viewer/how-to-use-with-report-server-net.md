@@ -30,7 +30,7 @@ The user account that will authenticate with the Report Server may be any User, 
 npm install @progress/telerik-angular-report-viewer
 ````
 
-	>If you receive a *403 Forbidden Error*, you need to register and login at [npmjs.com](https://www.npmjs.com/) before performing this step.
+	>If you receive a *403 Forbidden Error*, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
 	>
 	>````powershell
 npm login --registry=https://registry.npmjs.org --scope=@progress
@@ -58,7 +58,7 @@ import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer'
 <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
 ````
 
-	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
+	>To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
 
 	If you use the __styleUrls__ attribute to reference the CSS, it is required to set the view encapsulation to __None__:
 
@@ -83,7 +83,7 @@ export class AppComponent {
 ````
 
 
-1. In the same component class, define a `reportSource` object property specifying the category and the name of the report that will be displaued. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
+1. In the same component class, define a `reportSource` object property specifying the category and the name of the report that will be displayed. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
 
 	````TypeScript
 reportSource = {
@@ -93,7 +93,7 @@ reportSource = {
 ````
 
 
-1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and `getPersonalAccessToken` callback, which will be executed when the the report viewer request from the server to render the report.
+1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and a `getPersonalAccessToken` callback, which will be executed when the report viewer requests from the server to render the report.
 
 	````JS
 reportServer = { 
@@ -107,7 +107,7 @@ reportServer = {
 	This is the **recommended** approach, but if an endpoint cannot be exposed, the token can be hardcoded in the callback: `getPersonalAccessToken: () => Promise.resolve('TOKEN_STRING')`
 
 
-1. In the HTML template of the component, define the `<tr-viewer>` element, and pass the defined properties to their corresponding properties of the Angular Wrapper Report Viewer::
+1. In the HTML template of the component, define the `<tr-viewer>` element, and pass the defined properties to their corresponding properties of the Angular Wrapper Report Viewer:
 
 	````HTML
 <tr-viewer

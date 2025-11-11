@@ -67,7 +67,7 @@ The user account that will authenticate with the Report Server may be any User, 
 ````
 
 
-1. Set up an endpoint on the server that will securily return the token used by the Report Server for .NET to authorize. For example, creaate an environment variable in `launchSettins.json`**named 'RS_NET_TOKEN**, and store the token in it. Then, the endpoint can be configured to read and return the value of the environment variable:
+1. Set up an endpoint on the server that will securely return the token used by the Report Server for .NET to authorize. For example, create an environment variable in the `launchSettins.json` file named **'RS_NET_TOKEN**, and store the token in it. Then, the endpoint can be configured to read and return the value of the environment variable:
 
 	````C#
 app.MapGet("/rs-token", () =>
@@ -79,14 +79,14 @@ app.MapGet("/rs-token", () =>
 
 	For Blazor Web Assembly applications where the server is not available, the token can be injected on the `.RAZOR` page at build-time. Use `appsettings.{Environment}.json` files (they are bundled at build time), and read the token from the configuration.
 
-1. Configure an `HttpClient` in the `Program.cs` file that will be ibjected on the `.RAZOR` page on the next step when we make a HTTP request to get the token from the server.
+1. Configure an `HttpClient` in the `Program.cs` file that will be injected on the `.RAZOR` page on the next step when we make an HTTP request to get the token from the server.
 
 	````C#
 builder.Services.AddHttpClient();
 ````
 
 
-1. Create a method in the `RAZOR` or `RAZOR.CS` file of the Blazor component that return a `Task<string>` with the retrieved from the server token:
+1. Create a method in the `RAZOR` or `RAZOR.CS` file of the Blazor component that returns a `Task<string>` with the token retrieved from the Report Server:
 
 	````C#
 @inject HttpClient Http

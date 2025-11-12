@@ -53,7 +53,7 @@ Next, make sure the configuration in your `mcp.json` is [correct](#configuring-m
 
 ### Configuring mcp.json
 
-Use the settings in the following table to configure the Telerik MAUI MCP server in the [`mcp.json` file](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) of your code editor. Select the correct value based on your development environment.
+Use the settings in the following table to configure the Telerik Reporting MCP server in the [`mcp.json` file](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) of your code editor. Select the correct value based on your development environment.
 
 | Setting Name | .NET 10 Value | .NET 8/9 Value | Node.js Value |
 |---------|---------------|-----------------------|---------------|
@@ -67,7 +67,7 @@ Use the settings in the following table to configure the Telerik MAUI MCP server
 
 An active Telerik Reporting license is required to use the Telerik Reporting MCP server.
 
-* When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file]({%slug license-key%}) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux.). No additional action is required.
+* When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file]({%slug license-key%}) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux). No additional action is required.
 * When using the .NET tooling, but your [license key file]({%slug license-key%}) is not in the default directory, use one of the options below to configure your license.
 * When using Node.js, add your [license key file]({%slug license-key%}) as an environment variable in your `mcp.json` file using one of the options below:
 
@@ -156,7 +156,7 @@ The steps below describe the sample procedure for configuring the Telerik Report
 
 ## Visual Studio Code
 
-> * Visual Studio Code 1.102.1 or later is required to use the Telerik MAUI MCP Server.
+> * Visual Studio Code 1.102.1 or later is required to use the Telerik Reporting MCP Server.
 > * For complete setup instructions, see [Use MCP servers in Visual Studio Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
 The basic setup in Visual Studio Code involves the following steps:

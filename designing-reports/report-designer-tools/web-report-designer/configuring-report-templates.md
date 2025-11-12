@@ -5,7 +5,7 @@ description: Learn more about Report Templates in the Telerik Reporting Web Repo
 slug: web-report-designer-report-templates
 tags: web, report, designer, wrd, report, template, trtx
 published: True 
-position: 9 
+position: 6
 ---
 
 <style>
@@ -19,13 +19,13 @@ img[alt$="><"] {
 |Minimum Version:|Q4 2025|
 |----|----|
 
-The Web Report Designer lets you create report templates that simplify and streamline the report creation process. A **report template** is a reusable design that defines the layout, styling, and data structure of a report.
+The Web Report Designer lets you [create report templates]({%slug web-report-designer-report-templates%}) that simplify and streamline the report creation process. A **report template** is a reusable design that defines the layout, styling, and data structure of a report.
 
 To control how application users utilize templates, developers can configure specific folders for storing report templates and manage user access to these folders.
 
 ## Configure Report Templates Folder
 
-All report templates are stored in a specific **Report Templates** folder. A default folder will be created at root level of your project. You can also navigate to a specific custom folder that contains all the report templates you wish to use.
+All report templates are stored in a specific **Report Templates** folder. A default folder will be created at root level of your project. You can also navigate to a specific custom folder (or [custom storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%})) that contains all the report templates you wish to use.
 
 The [`ReportDesignerServiceConfiguration`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#add-configuration-settings-in-the-startupcs-file) class provides a configuration setting for specifying the `TemplateDefinitionStorage`. Thus, you can navigate to a specific folder that stores all report templates:
 
@@ -49,6 +49,7 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
         Permission.Commands_AssetsManager_ReportTemplates
         )
 }));
+````
 
 >note You can override the [`GetDeniedPermissions`]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%}) method in your custom implementation of the reporting service and apply different restrictions based on the currently logged-in user or other conditions.
 

@@ -33,23 +33,24 @@ Depending on your environment, you can install the Telerik Reporting MCP server 
 
 	* .NET 10:
 
-	````bash
+		````bash
 dnx Telerik.Reporting.MCP
 ````
 
 
 	* .NET 8 and .NET 9:
 
-	````bash
+		````bash
 dotnet tool install Telerik.Reporting.MCP
 ````
 
 
 * By using npm:
 
-````bash
-	npm i @progress/telerik-reporting-mcp
+	````bash
+npm i @progress/telerik-reporting-mcp
 ````
+
 
 Next, make sure the configuration in your `mcp.json` is [correct](#configuring-mcp-json), and then [add your Telerik license](#configuring-your-license).
 
@@ -75,7 +76,7 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 
 	* As a license file path (recommended):
 
-	````JSON
+		````JSON
 "env": {
 			"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
 		}
@@ -84,7 +85,7 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 
 	* As a license key value:
 
-	````JSON
+		````JSON
 "env": {
 			"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
 		}
@@ -109,51 +110,51 @@ The steps below describe the sample procedure for configuring the Telerik Report
 
 	* In .NET 10:
 
-	````JSON
+		````JSON
 {
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dnx",
-			"args": ["Telerik.Reporting.MCP", "--yes"],
+			"servers": {
+				"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dnx",
+				"args": ["Telerik.Reporting.MCP", "--yes"],
+				}
 			}
 		}
-	}
 ````
 
 
 	* In .NET 8 and .NET 9:
 
-	````JSON
+		````JSON
 {
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dotnet",
-			"args": ["tool", "run", "telerik-reporting-assistant"],
+			"servers": {
+				"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dotnet",
+				"args": ["tool", "run", "telerik-reporting-assistant"],
+				}
 			}
 		}
-	}
 ````
 
 
 	* In Node.js:
 
-	````JSON
+		````JSON
 {
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-			"env": {
-					"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-					// or
-					"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+			"servers": {
+				"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "npx",
+				"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+				"env": {
+						"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+						// or
+						"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+					}
 				}
 			}
 		}
-	}
 ````
 
 
@@ -172,51 +173,51 @@ The basic setup in Visual Studio Code involves the following steps:
 
 	* In .NET 10:
 
-	````JSON
+		````JSON
 {
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dnx",
-			"args": ["Telerik.Reporting.MCP", "--yes"],
+			"servers": {
+				"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dnx",
+				"args": ["Telerik.Reporting.MCP", "--yes"],
+				}
 			}
 		}
-	}
 ````
 
 
 	* In .NET 8 and .NET 9:
 
-	````JSON
+		````JSON
 {
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dotnet",
-			"args": ["tool", "run", "telerik-reporting-assistant"],
+			"servers": {
+				"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dotnet",
+				"args": ["tool", "run", "telerik-reporting-assistant"],
+				}
 			}
 		}
-	}
 ````
 
 
 	* In Node.js:
 
-	````JSON
+		````JSON
 {
-		"servers": {
-			"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-			"env": {
-					"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-					// or
-					"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+			"servers": {
+				"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "npx",
+				"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
+				"env": {
+						"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
+						// or
+						"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+					}
 				}
 			}
 		}
-	}
 ````
 
 
@@ -311,7 +312,7 @@ To use the Telerik Reporting MCP Server:
 
 ### Improving Server Usage
 
-**Determining the Reporting Area**: To better specify the context for each prompt, the MCP Server will attempt to determine the Telerik Reporting Area the prompt relates to. These areas represent the supported web frameworks and backend technologies, as listed below as pairs consisting of identifier and description:
+**Determining the Reporting Area**: To better specify the context for each prompt, the MCP Server will attempt to determine the Telerik Reporting Area the prompt relates to. These areas represent the supported web frameworks and backend technologies, as listed below as pairs consisting of an identifier and a description:
 
 - AngularWrapper - _Angular Report Viewer (wrapper of the HTML5 Report Viewer)_
 - NativeAngular - _Native Angular Report Viewer (built with Kendo UI for Angular)_
@@ -327,7 +328,7 @@ If the Reporting Area cannot be determined automatically, the MCP Server will di
 
 ![A notification requesting input for the Reporting Area of the asked question](images/mcp-server-reporting-area-prompt.png)
 
- After clicking on 'Respond' button, the MCP Server will display a drop-down list with all the areas and wait for selecting the corresponding Reporting Area. If there is no applicable entry, please select 'General' entry at the end of the list.
+ After clicking on the 'Respond' button, the MCP Server will display a drop-down list with all the areas and wait for selecting the corresponding Reporting Area. If there is no applicable entry, please select the 'General' entry at the end of the list.
 
 ![Select a Reporing Area from the dropdown](images/mcp-server-select-reporting-area.png)
 

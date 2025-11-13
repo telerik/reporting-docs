@@ -29,6 +29,10 @@ This knowledge base article also answers the following questions:
 - How to position the data point label at the top of the horizontal bar in a graph?
 - How to format and hide series labels in bar graphs?
 
+Here is the desired output:
+
+![The desired Bar Chart with DataPoint labels on top of the series.](images/Graph/bar-graph-with-datapoint-label-on-top-of-series.png)
+
 ## Solution
 
 To achieve the desired vertical alignment of the data point label at the top of the horizontal bar, use a workaround with a dummy series to simulate the label position. Follow these steps:

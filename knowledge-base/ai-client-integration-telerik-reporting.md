@@ -53,7 +53,7 @@ After configuring the `<AIClient>` element in the `web.config` file and adding t
 ````
 
 
-* I ensured the following packages are referenced in my Reporting project:
+* I ensured the following packages are referenced in my Reporting project with the correct versions:
 
 	- Telerik.Reporting.AI.Microsoft.Extensions.OpenAI
 	- Telerik.Reporting.AI.Microsoft.Extensions.Abstractions
@@ -63,13 +63,13 @@ After configuring the `<AIClient>` element in the `web.config` file and adding t
 
 ## Cause
 
-The issue may be related to assembly binding conflicts in the .NET Framework project. The NuGet Package Manager of Visual Studio may fail to add the required binding redirects automatically when you use NuGet packages in the .NET Framework projects, causing runtime errors.
+The issue may be related to assembly binding conflicts in the .NET Framework project. The above packages have inner dependencies that would be added by the NuGet Package Manager of Visual Studio automatically to the project. The package manager may fail to add the required binding-redirects when you use NuGet packages in the .NET Framework projects, causing runtime errors.
 
 ## Solution
 
 Here are the suggested approaches for troubleshooting:
 
-*. Attach a [Trace Listener](https://learn.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) to the project hosting the Reporting Engine. Fix the AI-related errors if any.
+* Attach a [Trace Listener](https://learn.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) to the project hosting the Reporting Engine. Fix the AI-related errors if any.
 
 The Telerik Reporting code handles some of the errors, and they may not appear in the trace log. The errors handled in the code appear as First-chance exceptions in the Visual Studio output. Such errors may occur due to mismatched assembly versions or missing assemblies in the Global Assembly Cache (GAC).
 

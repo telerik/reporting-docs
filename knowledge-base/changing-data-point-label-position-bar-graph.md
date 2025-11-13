@@ -37,7 +37,7 @@ Here is the desired output:
 
 To achieve the desired vertical alignment of the data point label at the top of the horizontal bar, use a workaround with a dummy series to simulate the label position. Follow these steps:
 
-1. Duplicate the original series to create a new series specifically for the data point label. Name this series, for example, `TextSeries`.
+1. Duplicate the original series to create a new dummy series specifically for the data point label. Name this series, for example, `TextSeries`.
 1. Apply [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) to make the dummy series transparent:
 
 	- Set the `BackgroundColor` property of the dummy series to `Transparent`:

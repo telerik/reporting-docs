@@ -38,19 +38,19 @@ To achieve the desired vertical alignment of the data point label at the top of 
 
 	- Set the `BackgroundColor` property of the dummy series to `Transparent`:
 
-	![Set the BackgroundColor of the DataPoint of the dummy series to `Transparent` with Conditional Formatting in the Standalone Designer.](/images/Graph/bar-series-datapoint-conditional-formatting-background.png)
+	![Set the BackgroundColor of the DataPoint of the dummy series to `Transparent` with Conditional Formatting in the Standalone Designer.](images/Graph/bar-series-datapoint-conditional-formatting-background.png)
 
 1. Add similar Conditional Formatting to hide the label on the original series:
 
 	- This ensures the original series does not display overlapping labels.
 
-	![Hide the DataPointLabel of the main series with Conditional Formatting in the Standalone Designer.](/images/Graph/hide-bar-series-datapoint-label-conditional-formatting.png)
+	![Hide the DataPointLabel of the main series with Conditional Formatting in the Standalone Designer.](images/Graph/hide-bar-series-datapoint-label-conditional-formatting.png)
 
 1. Hide the dummy series from the legend:
 
 	- Use Conditional Formatting to exclude the dummy series from appearing in the graph's legend.
 
-	![Hide the Legend of the dummy series with Conditional Formatting in the Standalone Designer.](/images/Graph/hide-dummy-series-legend-conditional-formatting.png)
+	![Hide the Legend of the dummy series with Conditional Formatting in the Standalone Designer.](images/Graph/hide-dummy-series-legend-conditional-formatting.png)
 
 By following these steps, the dummy series will display the data point labels aligned at the top of the bar, while the original series will remain unaffected.
 

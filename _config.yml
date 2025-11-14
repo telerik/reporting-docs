@@ -45,8 +45,11 @@ navigation:
     user-guide/components:
         position: 15
         title: "Report Components"
+    user-guide/customizing-report-items:
+        position: 15
+        title: "Customizing Report Items"
     styling/rendering-and-paging:
-        position: 8
+        position: 20
         title: "Rendering and Paging"
     styling/rendering-and-paging/design-considerations-for-report-rendering:
         position: 15

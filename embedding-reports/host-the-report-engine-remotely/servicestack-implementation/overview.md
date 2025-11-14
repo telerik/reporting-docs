@@ -5,7 +5,6 @@ description: "Learn more about the Telerik Reporting ServiceStack Implementation
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview
 tags: overview
 published: True
-reportingArea: RESTService
 position: 0
 previous_url: /telerik-reporting-rest-service-service-stack,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview, /embedding-reports/host-the-report-engine-remotely/servicestack-implementation/
 ---
@@ -18,7 +17,7 @@ In order to utilize the service, you have to create a new class that inherits fr
 
 The service can be hosted on [IIS]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%}) or self-hosted.
 
-As Telerik Reporting ServiceStack REST service is a pure HTTP web service it can be accessed with any HTTP-capable client. For example, you can create one of the following clients in order to utilize the service:
+As Telerik Reporting ServiceStack REST service is a pure HTTP web service, it can be accessed with any HTTP-capable client. For example, you can create one of the following clients in order to utilize the service:
 
 * JavaScript client
 * C# client

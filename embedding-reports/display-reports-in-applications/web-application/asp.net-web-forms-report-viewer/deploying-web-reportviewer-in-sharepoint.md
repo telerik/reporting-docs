@@ -7,7 +7,6 @@ tags: deploying,web,reportviewer,in,sharepoint
 published: True
 position: 4
 previous_url: /asp-net-report-viewer-deploying-web-reportViewer-in-MOSS
-reportingArea: General
 ---
 
 # Deploying on SharePoint Overview

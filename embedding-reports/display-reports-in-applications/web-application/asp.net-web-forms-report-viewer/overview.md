@@ -7,7 +7,6 @@ tags: overview
 published: True
 position: 0
 previous_url: /asp-net-report-viewer, /embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/, /asp-net-report-viewer-overview
-reportingArea: General
 ---
 
 # ASP.NET Web Forms Report Viewer Overview

@@ -7,7 +7,6 @@ tags: client-side,api
 published: True
 position: 6
 previous_url: /asp-net-report-viewer-clientAPI
-reportingArea: General
 ---
 
 <style>

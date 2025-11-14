@@ -7,7 +7,6 @@ tags: overview
 published: False
 position: 0
 previous_url: /asp-net-report-viewer-outproc
-reportingArea: General
 ---
 
 # Using Out-proc Session State Overview

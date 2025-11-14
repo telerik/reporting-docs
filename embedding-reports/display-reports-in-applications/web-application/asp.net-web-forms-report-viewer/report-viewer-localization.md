@@ -7,7 +7,6 @@ tags: report,viewer,localization
 published: True
 position: 2
 previous_url: /report-viewer-localization1
-reportingArea: General
 ---
 
 # Localization Overview

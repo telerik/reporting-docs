@@ -7,7 +7,6 @@ tags: report,viewer,localization
 published: True
 position: 3
 previous_url: /report-viewer-localization3
-reportingArea: General
 ---
 
 # Silverlight Report Viewer Localization

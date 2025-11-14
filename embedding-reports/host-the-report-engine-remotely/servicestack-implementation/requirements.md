@@ -5,7 +5,6 @@ description: "Learn what are the Basic Requirements for hosting the Telerik Repo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/requirements
 tags: requirements
 published: True
-reportingArea: RESTService
 position: 1
 previous_url: /telerik-reporting-rest-service-service-stack-system-requirements,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/requirements
 ---

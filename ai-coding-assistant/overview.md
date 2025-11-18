@@ -83,20 +83,20 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 ### Subscription License
 
 * A Subscription is the primary license that grants full access to the AI Coding Assistant.
-* Includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day.
-* Best for ongoing and high-volume usage.
+* Intended for ongoing and high-volume usage within a fair use threshold.
 
 ### Perpetual License (Limited Access)
-* Perpetual licenses include limited access of 50 requests per year.
-* Intended for exploring and trying out the AI Coding Assistant.
-* For continued or higher-volume access, upgrade to a Subscription license.
+* Perpetual licenses have no access to the AI Coding Assistants. Start a trial license in order to use the AI coding tools.
 
 ### Trial License
-* Trial licenses include 300 requests per trial per year.
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
 
-> All Telerik AI tools share a single request quota for your Telerik account. Complex prompts in the MCP server may consume multiple requests.
+### New users
+* New users will get a license for trying out the AI coding tools automatically when a trial for the selected product is activated.
+
+> All Telerik AI tools share a common 30-day trial and a single request quota for your Telerik account. Complex prompts in the MCP server may consume multiple requests.
+
 
 ## Privacy
 

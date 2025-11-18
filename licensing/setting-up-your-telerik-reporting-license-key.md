@@ -87,12 +87,12 @@ If Telerik Reporting cannot be activated automatically:
 <package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
 ````
 
-		2. Update the `.csproj` file with the DLL reference:
+		1. Update the `.csproj` file with the DLL reference:
 
 			````XML
 <Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
-		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
-	</Reference>
+				<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
+			</Reference>
 ````
 
 When you build the project, the `Telerik.Licensing` NuGet package locates the license file and uses it to activate Telerik Reporting.

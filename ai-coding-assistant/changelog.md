@@ -14,6 +14,8 @@ Learn about the latest changes, improvements, and bug fixes in the Telerik Repor
 
 ## November, 2025 Changelog
 
+> [Microsoft sunset GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
+
 ### Highlights
 
 - Added support for the HTML5 MVC, HTML5 WebForms, WinForms, and WPF Report Viewers.

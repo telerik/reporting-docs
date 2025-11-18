@@ -1,11 +1,12 @@
 ---
-title: MCP Server
-page_title: Telerik Reporting MCP Server
-description: "Learn how to add and use the Telerik Reporting MCP Server as a .NET Telerik Reporting AI coding assistant and code generator for increased developer productivity."
+title: Getting Started
+page_title: Getting Started with the Telerik Reporting AI Coding Assistant
+description: "Learn how to add and use the Telerik Reporting MCP Server as a Reporting AI coding assistant and code generator for better developer productivity. The Telerik Reporting MCP server provides proprietary context about Telerik Reporting to AI-powered software."
 slug: ai-mcp-server
 tags: telerik, reporting, ai, server, mcp, dotnet,coding assistant
 published: True
 position: 1
+previous_url: /ai-coding-assistant/copilot-extension
 reportingArea: General
 ---
 
@@ -362,7 +363,6 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 
 ## See Also
 
-* [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * [AI Coding Assistant Overview]({%slug ai-coding-assistant%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
 * [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server)

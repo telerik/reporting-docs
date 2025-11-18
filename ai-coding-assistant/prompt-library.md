@@ -23,7 +23,7 @@ reportingArea: General
 
 # AI Prompt Library
 
-The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [Teleirk Reporting MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
+The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
 
 You can use the provided prompts as they are or modify them to fit your use case. For consistency and accurate handling, all prompts must be prefixed with the required identifier(`#telerik-reporting-assistant `).
 

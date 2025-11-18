@@ -23,9 +23,9 @@ reportingArea: General
 
 # AI Prompt Library
 
-The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or the [MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
+The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the the [Teleirk Reporting MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
 
-You can use the provided prompts as they are or modify them to fit your use case. Make sure to start your prompt with the required prefix (`@telerikreporting` for the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or `#telerik-reporting-assistant ` for the [MCP Server]({%slug ai-mcp-server%}) handle).
+You can use the provided prompts as they are or modify them to fit your use case. For consistency and accurate handling, all prompts must be prefixed with the required identifier(`#telerik-reporting-assistant `).
 
 You can also use the prompts with any AI-powered tool of your choice. However, the Telerik Reporting AI Coding Assistant is developed to provide highly accurate results based extensively on the documentation, APIs, and community knowledge for Telerik Reporting. Running the prompts outside the AI Coding Assistant may not produce as relevant results.
 
@@ -307,6 +307,3 @@ Quick Start Guide:
 
 * [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
 * [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
-* [Telerik Reporting Copilot Extension]({%slug ai-copilot-extension%})
-* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
-* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

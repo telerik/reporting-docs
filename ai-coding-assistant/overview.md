@@ -15,13 +15,7 @@ Telerik Reporting offers an **AI Coding Assistant** that leverages AI to enhance
 
 The AI Coding Assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
 
-The **AI Coding Assistant** is integrated in:
-
-* [Telerik Reporting MCP server]({%slug ai-mcp-server%}) - A powerful tool for running complex or multi-step prompts that integrates with any MCP-enabled client.
-
-* [Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%}) - A Copilot add-on for fast initial code generation, widget configuration, and detailed explanations within Copilot-enabled IDEs.
-
-You can combine both integrations for even more powerful results.
+The **AI Coding Assistant** is integrated in the [Telerik Reporting MCP server]({%slug ai-mcp-server%}) - A powerful tool for running complex or multi-step prompts that integrates with any MCP-enabled client.
 
 >tip We recommend the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) for **Agent** mode when using Visual Studio or Visual Studio Code.
 
@@ -33,10 +27,6 @@ To use the Telerik Reporting AI Coding Assistant, you need:
 * An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web), or a [Telerik Reporting trial](https://www.telerik.com/reporting).
 * An application that uses [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
 * A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited number of requests per year.
-
-> [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
->
-> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers]({%slug ai-mcp-server%}). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
 
 ## Intended Use
 
@@ -106,7 +96,7 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
 
-> All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik Copilot extension]({%slug ai-copilot-extension%}) and [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
+> All Telerik AI tools share a single request quota for your Telerik account. Complex prompts in the MCP server may consume multiple requests.
 
 ## Privacy
 
@@ -122,15 +112,10 @@ Please make sure you are familiar with the terms and privacy policy of your sele
  
 ## Next Steps
 
-* [Install the  Telerik Reporting GitHub Copilot Extension]({%slug ai-copilot-extension%})
-* [Configure the Telerik Reporting MCP Server]({%slug ai-mcp-server%})
+* [Getting Started with the Telerik Reporting MCP Server]({%slug ai-mcp-server%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
  
 ## See Also
 
-* [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
-* [GitHub Copilot Tutorials](https://github.com/features/copilot/tutorials)
-* [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
+* [Telerik Reporting AI Coding Assistant Getting Started]({%slug ai-mcp-server%})
 * [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
-* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
-* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

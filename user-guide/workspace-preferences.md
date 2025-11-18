@@ -24,6 +24,8 @@ To start the Preferences panel:
 
     <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-main-menu.png" alt="Workspace Preferences" /> 
 
+The Workspace Preferences offer the following main categories of settings:
+
 ## Snapping
 
 * **Snap to grid lines** (*Currently Not Supported*)—Snapping to grid lines means that when you move or resize report items (like TextBoxes, Tables, Charts) on the design surface, their edges automatically align to the nearest grid line. 
@@ -34,7 +36,6 @@ To start the Preferences panel:
     * Resizing an item → Edges align with grid lines.
 
     When disabled: You can freely position items without restrictions.
-
 
 * **Snap to snap lines**—Helps you position elements relative to each other (e.g., aligning text boxes, charts, or tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.
 

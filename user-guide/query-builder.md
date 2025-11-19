@@ -52,7 +52,25 @@ The following sections describe the function of each area
 
 ### Database View Pane
 
+On the left side of the screen, you’ll see the Database View. It shows details about the database items you’re allowed to access, based on your login. The items are organized in a tree structure by category. Click a category to see its tables and views, and click a table or view to see its columns.
+
+When you check a column in this pane, it will automatically move to the Selected Fields pane. If you check a table, all its columns will be added to the Selected Fields pane. If you check more than one table, the Relationship Editor pane will open automatically.
+
 ### Selected Fields Pane
+
+The Selected Fields pane shows the columns you chose to include in your query. These columns become the set of fields used for your report. You can use these fields to display data in tables, charts, and other report elements when viewing the report.
+
+The following columns are displayed:
+
+| Name | Description |
+| ------ | ------ |
+| Column name | Shows the names of the selected fields, grouped by the table or view they come from |
+| Alias | If the last added field name is already used, an alias will be created automatically. You can also change or add aliases manually. |
+| Grouped | Shows a checkbox that lets you choose if the field should be used for grouping |
+| Aggregate |  |
+| Sorting type |  |
+| Sort order |  |
+| Remove |  |
 
 ### Relationships Pane
 

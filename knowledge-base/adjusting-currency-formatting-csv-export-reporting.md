@@ -18,10 +18,6 @@ ticketid: 1703567
             <td>Product</td>
             <td>Reporting</td>
         </tr>
-        <tr>
-            <td>Version</td>
-            <td>19.3.25.1111</td>
-        </tr>
     </tbody>
 </table>
 
@@ -38,28 +34,24 @@ To ensure numeric values are recognized correctly in CSV export, programmaticall
 
 Here is an example implementation:
 
-```csharp
-
-  private void GenerateReport(string format)
-        {
-            ...
-            if (format == "CSV")
-            {
-                var textBox2 = report.Items.Find("textBox2", true).FirstOrDefault();
+````CSharp
+private void GenerateReport(string format)
+{
+	//...
+	if (format == "CSV")
+	{
+		var textBox2 = report.Items.Find("textBox2", true).FirstOrDefault();
 		(textBox2 as Telerik.Reporting.TextBox).Format = null;
-            }
-            ...
-        }
-
-```
+	}
+	//...
+}
+````
 
 To apply this approach to multiple textbox items in similar scenarios, modify the code that locates the items as needed. For example:
 
-```csharp
-
+````CSharp
 var textBoxItems = report.Items.Find(typeof(Telerik.Reporting.TextBox), true).ToList();
-
-```
+````
 
 This approach removes formatting applied to the TextBox items, ensuring the exported CSV contains raw numeric values.
 

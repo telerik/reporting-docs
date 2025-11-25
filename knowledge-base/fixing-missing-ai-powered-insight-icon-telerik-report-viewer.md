@@ -15,8 +15,8 @@ ticketid: 1702866
 <table>
     <tbody>
         <tr>
-            <td> Product </td>
-            <td> Reporting Report Viewer </td>
+            <td> Area </td>
+            <td> HTML5-based Report Viewers </td>
         </tr>
         <tr>
             <td> Version </td>
@@ -68,7 +68,7 @@ Override the AI icon class in your custom CSS file. Use the following code to ma
 Embed the SVG of the AI icon directly in your CSS with the following syntax:
    
 ````css  
-.k-svg-i-sparkles::before {
+    .k-svg-i-sparkles::before {
         content: "";
         display: inline-block;
         width: 24px;

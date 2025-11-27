@@ -15,6 +15,7 @@ default-title-prefix: Telerik Reporting
 avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
 pdf-cover-png-path: ./images/pdf-cover.png
+code-snippets-basePath: ../reporting
 img-max-width: 100%
 
 # tables and colors
@@ -31,8 +32,8 @@ markdown-replacements:
   - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
     replacement: "[$1](slug:$2)"
   # removing code snippets on build until the replacement tool is ready
-  - pattern: \{\{source=.*?\}\}
-    replacement: "code snippets"
+  # - pattern: \{\{source=.*?\}\}
+  #   replacement: "code snippets"
   ## API REF REPLACEMENT
   ##  pointing (/api) links to the live api reference
   # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
@@ -115,6 +116,7 @@ meta:
   api:
     position: 300
     title: "API Reference"
+    pdfHidden: true
   api/*:
     res_type: api
     hideCta: true

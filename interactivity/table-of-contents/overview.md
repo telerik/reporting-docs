@@ -60,11 +60,15 @@ You can add levels and configure them by clicking on the ellipsis button of the 
 
 ## Adding Content to the TOC Section
 
-All [Report Items]({%slug telerikreporting/designing-reports/report-structure/overview%}), including the [Report itself]({%slug report_item%}); [Report Sections]({%slug report_structure_groups_sections%}#report-sections); [Report Groiups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and [Table Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}) expose the property `TocText`. Its default value is null/empty string. You need to set this property to a valid [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) if you want it to appear in the Report Table of Contents.
+All [Report Items]({%slug telerikreporting/designing-reports/report-structure/overview%}), including the [Report itself]({%slug report_item%}); [Report Sections]({%slug report_structure_groups_sections%}#report-sections); [Report Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and [Table Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}) expose the property `TocText`. Its default value is null/empty string. You need to set this property to a valid [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) if you want it to appear in the Report Table of Contents.
 
 ### Adding a Report Section to the Table of Contents
 
-Set the TocText of the Report Header and Footer sections to generate a single Table of Contents item at the beginning and at the end, respectively.
+The Report Sections generate TOC entries on the first level of the Report Table of Contents. The Report items with configured `TocText` within sections generate child levels under the corresponding Report section TOC entry.
+ 
+Set the `TocText` of the [Report Header and Footer sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) to generate an entry on the first level at the beginning (for the header) and at the end (for the footer) of the table of contents.
+
+The Detail section is generated for each Report DataSource record. Therefore, when you set the `TocText` of a detail section, the Reporting Engine generates an entry for each data record in the table of contents. Use proper data fields in the Expression for the TOC entries.
 
 >note Although the [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%}) expose the property TocText, they won't appear in the Table of Contents.
 

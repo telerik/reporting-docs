@@ -54,6 +54,8 @@ All [Report Items]({%slug telerikreporting/designing-reports/report-structure/ov
 
 ### Adding a Report Section to the Table of Contents
 
+Set the TocText of the Report Header and Footer sections to generate a single Table of Contents item at the beginning and at the end, respectively.
+
 >note Although the [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%}) expose the property TocText, they won't appear in the Table of Contents.
 
 ### Adding a Report Item to the Table of Contents

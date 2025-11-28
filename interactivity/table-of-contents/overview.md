@@ -54,14 +54,16 @@ All [Report Items]({%slug telerikreporting/designing-reports/report-structure/ov
 
 ### Adding a Report Section to the Table of Contents
 
-The Report Sections generate TOC entries on the first level of the Report table of contents. The inner Report items with configured `TocText` generate child entries in the TOC.
+The Report Sections generate TOC entries on the first level of the Report table of contents.
  
-Set the `TocText` of the [Report Header and Footer sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) to generate an entry on the first level at the beginning (for the header) and at the end (for the footer) of the table of contents.
+Set the `TocText` of the [Report Header and Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) to generate an entry on the first level at the beginning (for the header) and at the end (for the footer) of the table of contents.
 
-The Detail section is generated for each Report DataSource record. Therefore, when you set the `TocText` of a detail section, the Reporting Engine generates an entry for each data record in the table of contents. Use proper data fields in the Expression for the TOC entries.
+The Detail Section is generated for each Report DataSource record. Therefore, when you set the `TocText` of a detail section, the Reporting Engine generates a Detail Section entry for each data record in the TOC.
 
 >note Although the [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%}) expose the property TocText, they won't appear in the Table of Contents.
 
+The inner Report items with configured `TocText` generate child entries that appear on the next level in the TOC entry of the corresponding Report section.
+ 
 ### Adding a Report Item to the Table of Contents
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.

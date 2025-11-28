@@ -50,7 +50,7 @@ When adding a TOC section to the report for the first time, the [Levels](/api/Te
 
 ## Adding Content to the TOC Section
 
-All [Report Items]({%slug telerikreporting/designing-reports/report-structure/overview%}), including the [Report itself]({%slug report_item%}); [Report Sections]({%slug report_structure_groups_sections%}#report-sections); [Report Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and [Table Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}) expose the property `TocText`. Its default value is null/empty string. You need to set this property to a valid [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) if you want it to appear in the Report Table of Contents.
+All [Report Sections]({%slug report_structure_groups_sections%}#report-sections); [Report Items]({%slug telerikreporting/designing-reports/report-structure/overview%}), including the [Report itself]({%slug report_item%}); [Report Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}); and [Table Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}) expose the property `TocText`. Its default value is null/empty string. You need to set this property to a valid [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) if you want it to appear in the Report Table of Contents.
 
 ### Adding a Report Section to the Table of Contents
 

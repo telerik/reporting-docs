@@ -54,7 +54,7 @@ All [Report Items]({%slug telerikreporting/designing-reports/report-structure/ov
 
 ### Adding a Report Section to the Table of Contents
 
-The Report Sections generate TOC entries on the first level of the Report Table of Contents. The Report items with configured `TocText` within sections generate child levels under the corresponding Report section TOC entry.
+The Report Sections generate TOC entries on the first level of the Report table of contents. The inner Report items with configured `TocText` generate child entries in the TOC.
  
 Set the `TocText` of the [Report Header and Footer sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) to generate an entry on the first level at the beginning (for the header) and at the end (for the footer) of the table of contents.
 
@@ -96,7 +96,7 @@ You can add a table of contents to the report and click on entries in the table 
 1. In __Design view__, right-click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
 1. Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the __Group Explorer__ shows the respective groups.
 1. Select a group you want to add to the table of contents, right-click it, and select __Group Properties__. The properties for the selected group appear in the __Edit Table Group__ dialog.
-1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
+1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an expression that evaluates to a text. Typically, for a group, the expression you type should match the group expression.
 1. Click __OK__.
 1. Repeat steps 1-5 for every group you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.

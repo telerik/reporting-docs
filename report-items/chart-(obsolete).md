@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, chart, obsolete
 published: True
 position: 50
 previous_url: /report-items-chart, /featuressplineareas
+reportingArea: General
 ---
 
 # (Obsolete) Chart Report Item Overview

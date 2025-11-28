@@ -7,6 +7,7 @@ tags: understanding, events
 published: True
 position: 1
 previous_url: /understanding-events
+reportingArea: General
 ---
 
 # Understanding Report Events

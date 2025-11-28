@@ -7,6 +7,7 @@ previous_url: /report-items/graph/formatting-a-graph/overview, /style-resolving-
 tags: telerik, reporting, report, items, graph, styling, formatting, style, resolving, fallback, algorithm, propagation
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Propagation of the Graph Series Styles

@@ -7,6 +7,7 @@ tags: calculated,fields,report,use,create
 published: True
 position: 2
 previous_url: /datasource-calculated-fields
+reportingArea: General
 ---
 
 # Calculated Fields Overview

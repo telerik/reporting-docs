@@ -5,7 +5,7 @@ description: "Learn more about the purpose of the Custom ReportSource Resolver a
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver
 tags: how,custom,report,source,resolver,document,modify,dynamically
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 2
 previous_url: /telerik-reporting-rest-using-custom-report-resolver-and-document-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/use-custom-report-source-and-document-resolvers
 ---

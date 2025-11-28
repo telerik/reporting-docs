@@ -5,7 +5,7 @@ description: "Learn how to make the Release Document request to the Telerik Repo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document
 tags: release,document
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 8
 previous_url: /telerik-reporting-rest-documents-api-destroy-document,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document
 ---

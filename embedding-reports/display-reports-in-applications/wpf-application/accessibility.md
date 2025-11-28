@@ -5,7 +5,7 @@ description: "Learn about the supported accessibility features in the WPF Report
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/accessibility
 tags: accessibility
 published: True
-reporting_area: WPF
+reportingArea: WPF
 position: 8
 previous_url: /wpf-report-viewer-accessibility
 ---

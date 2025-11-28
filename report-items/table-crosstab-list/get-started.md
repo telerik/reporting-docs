@@ -6,6 +6,7 @@ slug: crosstab_item_get_started
 tags: telerik, reporting, report, items, crosstab, getting, started, table
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Getting Started with the Crosstab

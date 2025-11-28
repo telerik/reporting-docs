@@ -5,7 +5,7 @@ description: "Learn about report sections in Telerik Reporting, their types, pur
 slug: user-guide/components/report-sections
 tags: telerik, reporting, report, sections, components, building blocks, layout
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 6
 ---
 
@@ -26,7 +26,7 @@ Report sections divide the report vertically and define specific areas on the re
 
 The Web Report Designer automatically creates Page Header, Detail, and Page Footer sections when you create a new report. To add a Report Header, Report Footer, and a Table of Contents, select the **Components** tab, go to **REPORT SECTIONS** and click the desired section.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9xOgNOHyZa0?si=QccKBDQKWfnY7c5N" title="Adding Report Sections" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9xOgNOHyZa0?si=QccKBDQKWfnY7c5N&rel=0" title="Adding Report Sections" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Page Header Section
 

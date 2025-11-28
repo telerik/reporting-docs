@@ -7,6 +7,7 @@ tags: protecting,telerik,reporting,binaries,when,redistributed,as,part,of,a,pack
 published: False
 position: 10
 previous_url: /installation-protecting-assemblies
+reportingArea: General
 ---
 
 # Protecting Telerik Reporting binaries when redistributed as part of a packaged product

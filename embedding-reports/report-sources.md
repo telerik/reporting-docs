@@ -7,6 +7,7 @@ slug: telerikreporting/designing-reports/report-sources/overview
 tags: telerik, reporting, embedding, reports, report, sources, overview
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Report Sources Overview

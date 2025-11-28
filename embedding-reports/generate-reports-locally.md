@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/call-the-report-engine-via-apis/emb
 tags: telerik, reporting, embedding, reports, embedded, engine, generate, locally
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Generating Reports Locally with Code

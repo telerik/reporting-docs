@@ -6,6 +6,7 @@ slug: desktop-reporting
 tags: telerik, reporting, reports, desktop, net
 published: True
 position: 95
+reportingArea: General
 ---
 
 # Developing Desktop Reporting Applications

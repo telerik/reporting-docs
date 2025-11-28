@@ -7,6 +7,7 @@ tags: dpiaware,element
 published: True
 position: 9
 previous_url: /configuring-telerik-reporting-dpiaware
+reportingArea: General
 ---
 
 # dpiAware Element Overview

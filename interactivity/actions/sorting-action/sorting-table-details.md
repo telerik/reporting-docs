@@ -7,6 +7,7 @@ tags: sorting,table,details
 published: True
 position: 10
 previous_url: /interactive-sorting-action-table-details
+reportingArea: General
 ---
 
 # Ordering the Table Details

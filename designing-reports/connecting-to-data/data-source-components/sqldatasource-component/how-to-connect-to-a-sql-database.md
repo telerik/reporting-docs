@@ -7,6 +7,7 @@ tags: how,to,connect,to,a,sql,database
 published: True
 position: 4
 previous_url: /how-to-sqldatasource-connect-sql-database
+reportingArea: General
 ---
 
 # Connecting the SqlDataSource Component to a SQL Database

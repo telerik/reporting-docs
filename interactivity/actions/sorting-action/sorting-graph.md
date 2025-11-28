@@ -7,6 +7,7 @@ tags: sorting,graph
 published: True
 position: 40
 previous_url: /interactive-sorting-action-graph
+reportingArea: General
 ---
 
 # Ordering the Graph Report Item

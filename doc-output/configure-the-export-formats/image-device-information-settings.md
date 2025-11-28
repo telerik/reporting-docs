@@ -7,6 +7,7 @@ tags: image, device, information, settings, options
 published: True
 position: 1
 previous_url: /device-information-settings-image
+reportingArea: General
 ---
 
 <style>

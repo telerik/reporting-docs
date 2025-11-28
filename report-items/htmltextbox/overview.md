@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, overview, key, features
 previous_url: /report-items-html-text-box, /report-items/htmltextbox/
 published: True
 position: 0
+reportingArea: General
 ---
 
 # HtmlTextBox Overview

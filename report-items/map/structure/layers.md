@@ -5,6 +5,7 @@ description: "Learn how to build the layers and hierarchy of the Telerik Reporti
 slug: telerikreporting/designing-reports/report-structure/map/connecting-to-data
 tags: telerik, reporting, map, report, item, layers, hierarchy, geolocation, shapemapgroup, seriesgroups
 published: True
+reportingArea: General
 ---
 
 # Layers and Hierarchy of the Map

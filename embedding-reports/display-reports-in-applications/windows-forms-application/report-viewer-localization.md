@@ -5,7 +5,7 @@ description: "Find out more about how the Windows Forms Report Viewer localizati
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization
 tags: windows, forms, report, viewer, localization
 published: True
-reporting_area: WinForms
+reportingArea: WinForms
 position: 4
 previous_url: /report-viewer-localization
 ---

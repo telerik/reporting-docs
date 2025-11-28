@@ -7,6 +7,7 @@ tags: maintaining,the,lifecycle,of,the,context,with,the,entitydatasource,compone
 published: True
 position: 4
 previous_url: /entitydatasource-maintaining-the-lifecycle-of-the-objectContext
+reportingArea: General
 ---
 
 # Maintaining the Lifecycle of the Context with the EntityDataSource Component

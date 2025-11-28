@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, item, overview
 published: True
 position: 0
 previous_url: /report-items/report-item/
+reportingArea: General
 ---
 
 # Report Item Overview

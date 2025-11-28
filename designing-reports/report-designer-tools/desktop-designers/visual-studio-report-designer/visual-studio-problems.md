@@ -7,6 +7,7 @@ tags: visual,studio,report,designer,problems
 published: True
 position: 41
 previous_url: /troubleshooting-visual-studio-problems
+reportingArea: General
 ---
 
 # Troubleshooting Visual Studio Report Designer

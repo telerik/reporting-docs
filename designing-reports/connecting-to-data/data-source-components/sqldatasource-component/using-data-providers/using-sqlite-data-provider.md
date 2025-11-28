@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: System.Data.Sqlite,sqlite,data,provider
 published: True
 position: 5
+reportingArea: General
 ---
 
 # Using SQLite in Reporting

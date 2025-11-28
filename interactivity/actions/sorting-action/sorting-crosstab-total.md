@@ -7,6 +7,7 @@ tags: sorting,crosstab,total
 published: True
 position: 20
 previous_url: /interactive-sorting-action-crosstab-total
+reportingArea: General
 ---
 
 # Ordering the Crosstab Total

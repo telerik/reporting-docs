@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/gauge/radial-gauge
 tags: telerik, reporting, report, items, radial, gauge, properties
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Using the Radial Gauge Report Item

@@ -6,6 +6,7 @@ slug: asp-net-core-reporting
 tags: telerik, reporting, reports, web, asp, net, core
 published: True
 position: 90
+reportingArea: General
 ---
 
 # Embedding Telerik Reporting in ASP.NET Core Reporting Applications

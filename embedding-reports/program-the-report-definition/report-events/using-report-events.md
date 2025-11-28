@@ -7,6 +7,7 @@ tags: using, report, events, ItemDataBinding, NeedDataSource, ItemDataBound
 published: True
 position: 2
 previous_url: /using-report-events
+reportingArea: General
 ---
 
 # Using Events of the Report

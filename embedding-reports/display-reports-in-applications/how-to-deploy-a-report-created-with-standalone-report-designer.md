@@ -7,6 +7,7 @@ tags: how,to,deploy,a,report,created,with,standalone,report,designer
 published: True
 position: 3
 previous_url: /standalone-report-designer-display-report-viewer
+reportingArea: General
 ---
 
 # Deploying Reports Created with the Standalone and Web Report Designers

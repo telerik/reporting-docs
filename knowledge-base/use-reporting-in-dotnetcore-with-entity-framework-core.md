@@ -39,7 +39,7 @@ Use an `ObjectDataSource` component instead, which supports the [Entity Framewor
 
 - Standalone Report Designer for .NET
 
-	The [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) is built on `.NET 8` and can thus resolve assemblies built targeting .NET Core up to .NET 8, or .NET Standard.
+	The [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) is built on `.NET 10` and can thus resolve assemblies built targeting .NET Core up to .NET 10, or .NET Standard.
 
 It is necessary to register the assembly in the designer's configuration file as explained in the [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}) article.
 

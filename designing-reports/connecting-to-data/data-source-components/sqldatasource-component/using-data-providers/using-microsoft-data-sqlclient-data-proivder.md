@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: Microsoft.Data.SqlClient,data,provider
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Using Microsoft.Data.SqlClient in Reporting

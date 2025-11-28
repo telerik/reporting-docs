@@ -7,6 +7,7 @@ tags: graph,item,actions
 published: True
 position: 60
 previous_url: /designing-reports-interactivity-graph-item
+reportingArea: General
 ---
 
 # Graph Item Actions Overview

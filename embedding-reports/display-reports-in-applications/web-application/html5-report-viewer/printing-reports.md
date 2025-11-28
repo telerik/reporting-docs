@@ -5,7 +5,7 @@ description: "Learn how the Printing works in Telerik Reporting HTML5 Report Vie
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports
 tags: printing,reports
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 8
 previous_url: /html5-report-viewer-direct-print
 ---

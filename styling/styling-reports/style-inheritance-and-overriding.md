@@ -7,6 +7,7 @@ tags: style,inheritance,overriding
 published: True
 position: 3
 previous_url: /style-style-inheritence-priorty-overriding
+reportingArea: General
 ---
 
 # Style Inheritance and Overriding

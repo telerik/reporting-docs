@@ -7,6 +7,7 @@ tags: aggregate,functions,report,expression
 published: True
 position: 1
 previous_url: /expressions-aggregate-functions
+reportingArea: General
 ---
 
 # Aggregate Functions Overview

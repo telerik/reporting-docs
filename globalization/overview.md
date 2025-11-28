@@ -7,6 +7,7 @@ previous_url: /designing-reports/report-globalization, /globalization/
 tags: report,globalization,culture
 published: True
 position: 11
+reportingArea: General
 ---
 
 # Report Globalization Overview

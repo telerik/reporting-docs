@@ -7,6 +7,7 @@ tags: entitydatasource,wizard,designer,data,item
 published: True
 position: 80
 previous_url: /entitydatasource-wizard
+reportingArea: General
 ---
 
 # EntityDataSource Wizard of the Report Designer

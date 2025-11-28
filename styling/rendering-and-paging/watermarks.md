@@ -7,6 +7,7 @@ tags: watermarks,report,pagesettings,design,text,image
 published: True
 position: 3
 previous_url: /designing-reports-watermarks
+reportingArea: General
 ---
 
 # Report Watermarks

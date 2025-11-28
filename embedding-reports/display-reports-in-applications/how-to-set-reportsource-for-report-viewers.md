@@ -7,6 +7,7 @@ tags: how,to,set,reportsource,for,report,viewers
 published: True
 position: 1
 previous_url: /report-sources-viewers
+reportingArea: General
 ---
 
 # Setting ReportSource to Report Viewers Overview

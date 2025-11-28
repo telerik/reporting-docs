@@ -9,7 +9,7 @@ has_cta_panels: true
 
 # Exclude files that should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,TodorReadme.txt,report-designer-translations,_assetsApi]
-exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application","designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application","embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs","embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/*"]
+exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application","designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application","embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs","embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/*","embedding-reports/host-the-report-engine-remotely/servicestack-implementation/*"]
 navigation:
 ## List your directory names and order here, like this:
     licensing:
@@ -110,7 +110,7 @@ navigation:
         title: "Configuring the Output Formats"
     interactivity:
         position: 80
-        title: "Interactivity"
+        title: "Interactivity & AI"
     interactivity/bookmarks:
         position: 10
         title: "Bookmarks"
@@ -465,10 +465,10 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "2025 Q3"
-buildversion: "19.2.25.1001"
-reportserverversion: "11.2.25.1001"
-spaviewerversion: "27.25.1001"
+suiteversion: "2025 Q4"
+buildversion: "19.3.25.1111"
+reportserverversion: "11.3.25.1111"
+spaviewerversion: "28.25.1111"
 nodeversion: "16.0.0"
 angularsubsetversion: "17.2.0"
 kendosubsetversion: "2025.1.227"
@@ -476,7 +476,7 @@ kendothemeversion: "10.2.0"
 blazoruiversion: "9.1.0"
 mindotnetversion: "8"
 mindotnetoutputdir: "\\bin\\Debug\\net8.0"
-dotnetversions: ".NET 8 and .NET 9"
+dotnetversions: ".NET 8, .NET 9 and .NET 10"
 
 # Feedback Form Product code
 productCode: REPORTING

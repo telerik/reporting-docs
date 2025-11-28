@@ -7,6 +7,7 @@ tags: assemblyreferences, element, user, function, ObjectDataSource
 published: True
 position: 4
 previous_url: /configuring-telerik-reporting-assemblyreferences
+reportingArea: General
 ---
 
 <style>

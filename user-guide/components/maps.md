@@ -5,7 +5,7 @@ description: Explore the available Maps report components offered by the Web Rep
 slug: web-report-designer-user-guide-components-maps
 tags: web, report, design, components, map
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 4
 ---
 
@@ -91,7 +91,7 @@ The following tutorial demonstrates how to create a Map that presents sales dist
 
 > To follow along with the steps below, you need access to an instance of the [Adventure Works](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) database for [Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver17).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o4LzrlBu1TU?si=I59bkzgld_iTCpDT" title="Adding a Map Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o4LzrlBu1TU?si=I59bkzgld_iTCpDT&rel=0" title="Adding a Map Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Since this tutorial uses the **AzureLocationProvider**, an Azure Maps subscription key is required. You can obtain a key by [creating an Azure Maps account through the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#create-an-azure-maps-account). For more information on how to access the key, refer to [Get the subscription key for your account](https://learn.microsoft.com/en-us/azure/azure-maps/quick-demo-map-app#get-the-subscription-key-for-your-account).
 

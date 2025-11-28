@@ -5,7 +5,7 @@ description: "Understand how to update the report parameters with values passed 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: react, report, viewer, pass, values, to, report, parameters
 published: True
-reporting_area: React
+reportingArea: React
 position: 3
 previous_url: /react-report-viewer-how-to-pass-values-to-report-parameters
 ---

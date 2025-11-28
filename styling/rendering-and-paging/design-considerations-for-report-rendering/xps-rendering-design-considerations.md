@@ -7,6 +7,7 @@ tags: xps, rendering, design, considerations
 published: True
 position: 7
 previous_url: /designing-reports-considerations-xps
+reportingArea: General
 ---
 
 # Design Considerations for the XPS Rendering

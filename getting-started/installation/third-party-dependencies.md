@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/third-party-dependencies, /installa
 tags: third-party,dependencies
 published: True
 position: 7
+reportingArea: General
 ---
 
 # External Dependencies for Enriched Functionality

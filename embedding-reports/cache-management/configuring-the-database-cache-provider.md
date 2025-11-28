@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/export-and-configure/cache-manageme
 tags: telerik, reporting, embedding, reports, cache, management, configuring, database, provider
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Configuring the Database Cache Provider

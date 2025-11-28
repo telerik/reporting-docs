@@ -7,6 +7,7 @@ tags: html, rendering, design, considerations
 published: True
 position: 1
 previous_url: /designing-reports-considerations-html
+reportingArea: General
 ---
 
 # Design Considerations for the HTML Rendering

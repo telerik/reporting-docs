@@ -6,6 +6,7 @@ slug: telerikreporting/aiclient-element
 tags: aiclient,element,ai
 published: True
 position: 13
+reportingArea: General
 ---
 
 <style>

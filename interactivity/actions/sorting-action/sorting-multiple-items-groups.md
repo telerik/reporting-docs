@@ -7,6 +7,7 @@ tags: sorting,multiple,items/groups,action,interactivity
 published: True
 position: 60
 previous_url: /interactive-sorting-action-multiple-items
+reportingArea: General
 ---
 
 # Ordering Multiple Items/Groups

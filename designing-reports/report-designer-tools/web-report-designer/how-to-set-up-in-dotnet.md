@@ -5,7 +5,7 @@ description: "Learn how to set up the Telerik Web Report Designer in .NET 8 and 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 tags: how,to,set,up,in,.net,8,applications
 published: True
-reporting_area: WRDHTML5, WRDRestServiceCore
+reportingArea: WRDHTML5, WRDRestServiceCore
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 ---
@@ -87,28 +87,32 @@ To activate JSON file configuration with a different name, for example, `reporti
 
 1. Add the required services in the `ConfigureServices` method
 
-   ```C#
-   public void ConfigureServices(IServiceCollection services)
-   {
-   	services.AddControllers().AddNewtonsoftJson();
-   	services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-   		new ReportServiceConfiguration
-   		{
-   			ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-   			HostAppId = "ReportingCoreApp",
-   			Storage = new FileStorage(),
-   			ReportSourceResolver = new TypeReportSourceResolver().AddFallbackResolver
-   								   (new UriReportSourceResolver(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")))
-   		});
-   	services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
-   	{
-   		DefinitionStorage = new FileDefinitionStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports"), new[] { "Resources", "Shared Data Sources" }),
-   		ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Resources")),
-   		SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
-   		SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
-   	});
-   }
-   ```
+1. Add the required services in the `ConfigureServices` method 
+
+	````C#
+	public void ConfigureServices(IServiceCollection services)
+	{
+		services.AddControllers().AddNewtonsoftJson();
+		services.TryAddSingleton<IReportServiceConfiguration>(sp =>
+			new ReportServiceConfiguration
+			{
+				ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
+				HostAppId = "ReportingCoreApp",
+				Storage = new FileStorage(),
+				ReportSourceResolver = new TypeReportSourceResolver().AddFallbackResolver
+									   (new UriReportSourceResolver(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")))
+			});
+		services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
+		{
+			TemplateDefinitionStorage = new FileTemplateDefinitionStorage("templates_folder_path", new[] { "sub_folder_to_exclude" }), // introduced in Q4 2025
+			DefinitionStorage = new FileDefinitionStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports"), new[] { "Resources", "Shared Data Sources" }),
+			ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Resources")),
+			SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
+			SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+		});
+	}
+	````
+
 
 ## Setting up the Report Designer REST service:
 
@@ -152,39 +156,40 @@ The REST service works as a backend and is responsible for storage operations li
 
    and corresponds to the folder _Reports_ in the _wwwroot_ folder. Add the latter to the main application folder if it doesn't exist. You may add to the _Reports_ folder one of our demo reports that can be found by default in _{Telerik Reporting installation path}\Report Designer\Examples_.
 
-1. Add a new HTML Page for the Web Report Designer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file `index.html`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
+1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot* and __Add > New Item... > HTML Page__. Name the file `index.html`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-   ```HTML
-   <!DOCTYPE html>
-   <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-   	<title>Telerik Web Report Designer</title>
-   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-   </head>
-   <body>
-   	<div id="webReportDesigner">
-   		loading...
-   	</div>
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
-   	<script src="/api/reportdesigner/resources/js/telerikReportViewer/"></script>
-   	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
-   	<script type="text/javascript">
-   		$(document).ready(function () {
-   			$("#webReportDesigner").telerik_WebReportDesigner({
-   				toolboxArea: {
-   					layout: "list" //Change to "grid" to display the contents of the Components area in a flow grid layout.
-   				},
-   				serviceUrl: "/api/reportdesigner",
-   				report: "Barcodes Report.trdp"
-   			}).data("telerik_WebDesigner");
-   		});
-   	</script>
-   </body>
-   </html>
-   ```
+	````HTML
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Telerik Web Report Designer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="webReportDesigner">
+			loading...
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
+		<script src="/api/reportdesigner/resources/js/telerikReportViewer/"></script>
+		<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#webReportDesigner").telerik_WebReportDesigner({
+					toolboxArea: {
+						layout: "list" // Change to "grid" to display the contents of the Components area in a flow grid layout.
+					},
+					serviceUrl: "/api/reportdesigner",
+					report: "Barcodes Report.trdp"
+				}).data("telerik_WebDesigner");
+			});
+		</script>
+	</body>
+	</html>
+	````
+
 
 1. To set up the `index.html` as a startup page check [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the _launchUrl_ to _index.html_ in `launchSettings.json`.
 1. Finally, run the project to preview the web designer.

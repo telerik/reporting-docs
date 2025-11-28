@@ -7,6 +7,7 @@ tags: create, sections, programmatically, code
 published: True
 position: 2
 previous_url: /programmatic-creating-sections
+reportingArea: General
 ---
 
 # Create Sections Programmatically

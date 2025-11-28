@@ -7,11 +7,12 @@ tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, 
 published: True
 position: 2
 previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation, /getting-started/installation/, /installation-deploying-on-server
+reportingArea: General
 ---
 
 # Installation Approaches for Telerik Reporting
 
-Telerik Reporting provides options for installing the product by using [the Control Panel](#using-the-control-panel), by [the MSI installer file](#using-the-msi-file), or [NuGet](#installing-with-nuget). The NuGet packages add the Reporting assemblies to the project, but do not provide design time support.
+Telerik Reporting provides options for installing the product by using [the Control Panel](#using-the-control-panel), by [the MSI installer file](#using-the-msi-file), or [NuGet](#using-nuget-packages). The NuGet packages add the Reporting assemblies to the project, but do not provide design time support.
 
 >note After installing the product, you will need to [download and activate/update your Telerik Reporting License Key]({%slug license-key%}).
 
@@ -70,36 +71,56 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 ## Using NuGet Packages
 
-You can add Telerik Reporting to a project by using the [Telerik Reporting NuGet packages](https://nuget.telerik.com/v3/index.json). The NuGet packages are a single ZIP file with the `.nupkg` extension.
+You can add Telerik Reporting to a project by installing NuGet packages hosted on the Telerik NuGet server: `https://nuget.telerik.com/v3/index.json`.
 
 * The `.nupkg` file contains the libraries for .NET Core projects, the Reporting Engine, and the implementation of the [Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages with the standard .NET 4.6.1 framework.
 * The Telerik Reporting NuGet packages do not include design-time support.
-* The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure to switch to the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. For more information on how to add a NuGet feed, refer to the [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume).
 
-### Adding the Telerik NuGet Feed
+Installing the Telerik Reporting NuGet packages involves three steps:
 
-To install the Telerik Reporting NuGet packages, add the Telerik NuGet feed to Visual Studio and install the product. The following video demonstrates the steps for adding the Telerik NuGet feed to Visual Studio. If you prefer, however, you can follow the steps that are listed in writing after the video.
+1. [Generating an API key required for the NuGet authentication](#step-1-generating-an-api-key).
+1. [Adding the Telerik NuGet server to Visual Studio](#step-2-adding-the-telerik-nuget-package-source-to-visual-studio).
+1. [Installing the Telerik Reporting NuGet packages](#step-3-installing-telerik-reporting).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Step 1: Generating an API Key
 
-To configure the Telerik NuGet Feed in Visual Studio:
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI]({% slug using-nuget-keys %}#using-only-cli-commands) or the [`NuGet.Config` file]({% slug using-nuget-keys %}#using-a-nugetconfig-file-with-your-projects).
 
-1. Open Visual Studio and go to **Tools** > **NuGet Package Manager** > **Package Manager Settings**.
-1. Select **Package Sources** and then click the `+` button to add a new package source.
-1. Enter a **Name** for the new package source, for example, **Telerik NuGet**.
-1. Add the `https://nuget.telerik.com/v3/index.json` URL as a **Source**. Make sure the URL does not have a trailing slash. Click **OK**.
+1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+1. Click **Generate New Key +**.
 
-### Installing Telerik Reporting
+   ![Manage API Keys](./images/account-generate-api-key.png)
+
+1. In the **Key Note** field, add a note that describes the API key.
+1. Click **Generate Key**.
+1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
+1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
+
+>API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+
+### Step 2: Adding the Telerik NuGet Package Source to Visual Studio
+
+To configure the Telerik NuGet feed in Visual Studio:
+
+1. Open Visual Studio.
+1. Go to **Tools > NuGet Package Manager > Package Manager Settings**.
+1. Select **Package Sources**, and then click the + button.
+1. In the **Source** field, enter `https://nuget.telerik.com/v3/index.json`. If you use a locally available NuGet package downloaded from <a href="https://www.telerik.com/account/" target="_blank">your account</a>, add the path to the local package instead of the URL.
+1. Click **Update** and then **OK**.
+
+You have successfully added the Telerik NuGet feed as a Package source.
+
+For more information on how to add a NuGet feed, refer to the [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume).
+
+### Step 3: Installing Telerik Reporting
 
 After you have successfully added the Telerik NuGet feed as a package source, you need to authenticate your local NuGet instance and install Telerik Reporting:
 
 1. Create a new Reporting project or open an existing one.
 1. Go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution...**. Select the Telerik NuGet **Package source** from the drop-down list on the left.
-1. Select the **Browse** tab to see the available packages. Enter your Telerik credentials in the Windows Authentication dialog.
-
-	> You may need to escape some [special characters in the password]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}#handling-special-characters-in-password)
-	
-1. Select Telerik Reporting and click **Install**.
+1. Select the **Browse** tab to see the available packages.
+1. In the authentication window, enter `api-key` in the **User name** field and the [generated API key](#step-1-generating-an-api-key) in the **Password** field.
+1. Select the desired Telerik Reporting NuGet package and click **Install**.
 
 ## See Also
 

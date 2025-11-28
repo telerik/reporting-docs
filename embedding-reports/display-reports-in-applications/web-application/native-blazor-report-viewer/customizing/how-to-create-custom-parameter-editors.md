@@ -5,7 +5,7 @@ description: "Learn how to create and use custom parameter editors with the Nati
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-create-custom-parameter-editors
 tags: custom,editor,widget,parameter,blazor
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 3
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing/
 ---

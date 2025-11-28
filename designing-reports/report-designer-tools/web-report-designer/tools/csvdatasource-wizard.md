@@ -5,7 +5,7 @@ description: "Learn how to integrate CSV data in Telerik Reporting Report with t
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard
 tags: csvdatasource,wizard
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 1
 previous_url: /web-report-designer-tools-csvdatasource-wizard
 ---

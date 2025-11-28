@@ -6,6 +6,7 @@ slug: htmltextbox_grow_and_shrink
 tags: telerik, reporting, report, items, htmltextbox, growing, shrinking, accommodate, content
 published: True
 position: 5
+reportingArea: General
 ---
 
 # Growing and Shrinking of HtmlTextBox

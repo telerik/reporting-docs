@@ -7,6 +7,7 @@ tags: report, events, overview
 published: True
 position: 0
 previous_url: /report-events, /embedding-reports/program-the-report-definition/report-events/
+reportingArea: General
 ---
 
 # Report Events

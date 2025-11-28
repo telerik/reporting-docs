@@ -5,7 +5,7 @@ description: "Learn how the Telerik Reporting Blazor Report Viewer can be integr
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer
 tags: how,to,use,blazor,report,viewer
 published: True
-reporting_area: BlazorWrapper
+reportingArea: BlazorWrapper
 position: 1
 previous_url: /blazor-report-viewer-how-to-use
 ---

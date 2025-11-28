@@ -5,7 +5,7 @@ description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core i
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements,and,controllers
 published: True
-reporting_area: RESTServiceCore
+reportingArea: RESTServiceCore
 position: 3
 ---
 

@@ -6,6 +6,7 @@ slug: installation-telerik-reporting-preview-releases
 tags: using,the,hotfix, lib, latest, internal, build, preview
 published: True
 position: 8
+reportingArea: General
 ---
 
 # Preview Release

@@ -5,7 +5,7 @@ description: Explore the available Chart report components offered by the Web Re
 slug: web-report-designer-user-guide-components-charts
 tags: web, report, design, components, chart, bar, line, area, column, pie, doughnut, polar, range, scatter, bubble, sparkline, ohlc
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 5
 ---
 
@@ -82,7 +82,7 @@ Components,2003,280
 Components,2004,310
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TNRInBruNOk?si=2k43jJPrsFnrBGNX" title="Adding a CSV Data Source in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TNRInBruNOk?si=2k43jJPrsFnrBGNX&rel=0" title="Adding a CSV Data Source in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 After adding the data source to your report, continue by adding the desired chart type.
 
@@ -100,7 +100,7 @@ To create a Bar Chart, follow the steps below. See the video after the steps for
 
 >caption Adding a Bar Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bhIneoDEBXU?si=WcObuCAjMRJSBm5e" title="Adding a Bar Chart in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bhIneoDEBXU?si=WcObuCAjMRJSBm5e&rel=0" title="Adding a Bar Chart in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Bar Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -122,7 +122,7 @@ To create a Column Chart, follow the steps below. See the video after the steps 
 
 >caption Adding a Column Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RgVfMLUncKw?si=hmCXXqQ7D-Ppswi3" title="Adding a Column Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RgVfMLUncKw?si=hmCXXqQ7D-Ppswi3&rel=0" title="Adding a Column Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Column Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -144,7 +144,7 @@ To create an Area Chart, follow the steps below. See the video after the steps f
 
 >caption Adding an Area Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U97Owe9zvpU?si=Rlo5Pr8hOLKaWd96" title="Adding an Area Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U97Owe9zvpU?si=Rlo5Pr8hOLKaWd96&rel=0" title="Adding an Area Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Column Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -166,7 +166,7 @@ To create a Line Chart, follow the steps below. See the video after the steps fo
 
 >caption Adding a Line Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dw6n3CkTVeU?si=Z5KdY9j2umlEdX0h" title="Adding a Line Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dw6n3CkTVeU?si=Z5KdY9j2umlEdX0h&rel=0" title="Adding a Line Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Based on the Line Chart type that you select during the configuration, one of the following charts will be displayed:
 
@@ -198,11 +198,11 @@ Based on the Pie Chart type that you select during the configuration, one of the
 
 >caption Adding a Pie Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ElQV0buJNAs?si=FEwxcaoeHFvkMI2c" title="Adding a Pie Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ElQV0buJNAs?si=FEwxcaoeHFvkMI2c&rel=0" title="Adding a Pie Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 >caption Adding a Doughnut Chart and populating it with data
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qBct12O4tNA?si=Y9HhCT0NSI7c0ZBv" title="Adding a Doughnut Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qBct12O4tNA?si=Y9HhCT0NSI7c0ZBv&rel=0" title="Adding a Doughnut Chart Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

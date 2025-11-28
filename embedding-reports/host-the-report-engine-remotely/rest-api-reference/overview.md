@@ -5,7 +5,7 @@ description: "Find out which are the requests exposed by the Telerik Reporting R
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview
 tags: overview,rest,api,uri,http,service,reporting,request
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/, /telerik-reporting-rest-json-entities
 ---

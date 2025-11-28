@@ -7,6 +7,7 @@ tags: overview, exporting
 published: True
 position: 0
 previous_url: /device-information-settings, /doc-output/configure-the-export-formats/
+reportingArea: General
 ---
 
 # Configure the Export Formats Overview

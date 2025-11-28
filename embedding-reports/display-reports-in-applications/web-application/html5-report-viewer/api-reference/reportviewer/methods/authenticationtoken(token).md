@@ -5,7 +5,7 @@ description: "Learn more about the authenticationToken(token) method of the Tele
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)
 tags: authenticationtoken(token)
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 3
 previous_url: /html5-report-viewer-reportviewer-methods-authenticationtoken
 ---

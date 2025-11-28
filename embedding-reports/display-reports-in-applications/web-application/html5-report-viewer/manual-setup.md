@@ -5,7 +5,7 @@ description: "Learn how to set up manually the Telerik Reporting HTML5 Report Vi
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup
 tags: manual,setup
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 4
 previous_url: /html5-report-viewer-embedding
 ---

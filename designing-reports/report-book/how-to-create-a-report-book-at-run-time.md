@@ -7,6 +7,7 @@ tags: how,create,instantiate,report,book,runtime
 published: True
 position: 6
 previous_url: /designing-reports-reportbook-creating-reportbook-run-time
+reportingArea: General
 ---
 
 # How to Create a Report Book at Runtime

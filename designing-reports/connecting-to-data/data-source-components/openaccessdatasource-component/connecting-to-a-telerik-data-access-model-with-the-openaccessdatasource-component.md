@@ -7,6 +7,7 @@ tags: connecting,to,a,telerik,data,access,model,with,the,openaccessdatasource,co
 published: True
 position: 1
 previous_url: /openaccessdatasource-connecting-to-an-openaccess-model
+reportingArea: General
 ---
 
 # Connecting to a Telerik Data Access Model with the OpenAccessDataSource Component

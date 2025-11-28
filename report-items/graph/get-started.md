@@ -7,6 +7,7 @@ previous_url: /report-items/graph/how-to/how-to-add-graph-to-report, /AddGraphTo
 tags: telerik, reporting, report, items, graph, getting, started
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Getting Started with the Graph Report Item

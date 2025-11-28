@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, picturebox, set, value, bind, binary, i
 published: True
 position: 9
 previous_url: /report-items-picture-box, /designing-reports/report-structure/picturebox
+reportingArea: General
 ---
 
 <style>

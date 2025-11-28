@@ -7,6 +7,7 @@ tags: how,to,cascade,parameters,with,applied,filtering,on,data,source,level
 published: True
 position: 6
 previous_url: /designing-reports-parameters-cascading-paramerets-filtering-database-level
+reportingArea: General
 ---
 
 # Cascade Parameters with Applied Filtering on Data Source Level

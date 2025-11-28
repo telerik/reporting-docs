@@ -7,6 +7,7 @@ tags: how,to,add,filtering,to,graph,item,designer,programatically,code,report
 published: True
 position: 4
 previous_url: /data-items-how-to-add-filtering-to-chart-item
+reportingArea: General
 ---
 
 # Adding Filtering to Graph Item

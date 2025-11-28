@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, 2D, barcodes, overview, matrix, two-dim
 published: True
 position: 0
 previous_url: /report-items/barcode/2d-barcodes/
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

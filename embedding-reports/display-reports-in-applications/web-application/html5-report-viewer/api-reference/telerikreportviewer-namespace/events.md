@@ -5,7 +5,7 @@ description: "Learn about the Events of the telerikReportViewer object in the Te
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events
 tags: events
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-api-events, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/
 ---

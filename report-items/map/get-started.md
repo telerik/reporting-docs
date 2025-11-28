@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, map, getting, started, configure
 published: True
 previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard, /knowledge-base/map-set-up-with-the-map-wizard, /mapconnectingtodata, /maphowtoaddseriestothemapitem
 position: 1
+reportingArea: General
 ---
 
 # Getting Started with the Map Report Item

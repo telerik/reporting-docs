@@ -5,7 +5,7 @@ description: "Learn how to Localize the HTML5 ReportViewer for use with multiple
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization
 tags: localization
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 2
 previous_url: /html5-report-viewer-localization
 ---

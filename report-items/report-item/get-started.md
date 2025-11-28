@@ -6,6 +6,7 @@ slug: report_item_get_started
 tags: telerik, reporting, report, items, item, getting, started
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Getting Started with the Report Item

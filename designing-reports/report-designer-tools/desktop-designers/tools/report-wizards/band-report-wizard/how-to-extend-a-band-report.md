@@ -7,6 +7,7 @@ tags: how,to,extend,a,band,report
 published: True
 position: 2
 previous_url: /quick-start-class-lib-extending
+reportingArea: General
 ---
 
 # Extending a Band Report in Few Easy Steps

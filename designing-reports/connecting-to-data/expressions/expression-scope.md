@@ -7,6 +7,7 @@ tags: expression,scope,data,report,design
 published: True
 position: 1
 previous_url: /expressions-scope
+reportingArea: General
 ---
 
 # Expression Scope

@@ -7,6 +7,7 @@ tags: standalone,report,designer,problems
 published: True
 position: 9
 previous_url: /Troubleshooting-Standalone-Report-Designer-problems, troubleshooting-design-time
+reportingArea: General
 ---
 
 # Troubleshooting Standalone Report Designer

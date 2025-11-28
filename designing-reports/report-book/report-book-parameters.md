@@ -7,6 +7,7 @@ tags: report,book,parameters
 published: True
 position: 1
 previous_url: /designing-reports-reportbook-report-parameters
+reportingArea: General
 ---
 
 # Report Book Parameters Overview

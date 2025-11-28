@@ -5,7 +5,7 @@ description: "Learn how to dynamically localize the Telerik Reporting native Bla
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/localization
 tags: localization,blazor
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 2
 ---
 

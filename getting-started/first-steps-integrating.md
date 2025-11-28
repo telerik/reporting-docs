@@ -6,6 +6,7 @@ slug: first-steps-integrating-reports
 tags: telerik, reporting, first, steps, guide, integrate, a, report, in, application
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Integrating Your Telerik Report in Web Applications

@@ -5,7 +5,7 @@ description: Web Report Designer offers different Table Components that can be u
 slug: web-report-designer-user-guide-components-tables
 tags: web, report, design, components, table, list, crosstab
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 2
 ---
 
@@ -53,7 +53,7 @@ The List component provides the most flexibility for custom data layouts. Use Li
 
 This video demonstrates creating a List, binding it to an SQL data source, and adding a TextBox to display customer names:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XsXN3rHeWco?si=eYIZ2BOr9mDsSBAJ" title="Adding a List Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XsXN3rHeWco?si=eYIZ2BOr9mDsSBAJ&rel=0" title="Adding a List Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Adding a Table
 
@@ -70,7 +70,7 @@ When you add a new Table, it starts with three columns, a header row, and a data
 
 This video shows how to add a Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), and add the necessary TextBox report items for the column headers and the data records.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ji7sebHP-Qg?si=y64vCeXESIcSpUzP" title="Adding a Table Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ji7sebHP-Qg?si=y64vCeXESIcSpUzP&rel=0" title="Adding a Table Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Adding a Crosstab
 
@@ -88,7 +88,7 @@ When you add a Crosstab, it includes a column group area, row group area, and da
 
 This video demonstrates creating a Crosstab, binding it to SQL data, and configuring row/column groups with aggregated data:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FrpZGoF2BX0?si=SDBfOJpSVE1YjaQ_" title="Adding a Crosstab Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FrpZGoF2BX0?si=SDBfOJpSVE1YjaQ_&rel=0" title="Adding a Crosstab Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the Table Wizard
 
@@ -102,7 +102,7 @@ The Table Wizard provides a faster way to create tables by guiding you through t
 
 This video shows how to use the Table Wizard to create a table with a Web Service data source and configure field selection:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7IdkFry_Ii4?si=hPWPt_WIsCysoHhh" title="Using the Table Wizard in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7IdkFry_Ii4?si=hPWPt_WIsCysoHhh&rel=0" title="Using the Table Wizard in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the Crosstab Wizard
 
@@ -116,7 +116,7 @@ The Crosstab Wizard simplifies creating complex cross-tabulated reports by walki
 
 This video demonstrates using the Crosstab Wizard with SQL data to create a cross-tabulated report showing OrderID and Freight totals:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/63TW4eB8B5U?si=ejl-uWJ9ay4YKi2y" title="Using the Crosstab Wizard in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/63TW4eB8B5U?si=ejl-uWJ9ay4YKi2y&rel=0" title="Using the Crosstab Wizard in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next Steps
 

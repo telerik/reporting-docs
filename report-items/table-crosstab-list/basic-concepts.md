@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, templates, basic
 previous_url: /table-understanding-table-items
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Basic Concepts when Working with Tables

@@ -7,6 +7,7 @@ tags: table,header,freezing,columnheader,rowheader
 published: True
 position: 5
 previous_url: /table-headers-freezing
+reportingArea: General
 ---
 
 # Table Header Freezing Overview

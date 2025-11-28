@@ -7,6 +7,7 @@ previous_url: /report-items/barcode/barcode-types/1d-barcodes, /report-items-bar
 tags: telerik, reporting, report, items, 1d, barcodes, specifications, settings, linear, one-dimensional
 published: True
 position: 1
+reportingArea: General
 ---
 
 <style>

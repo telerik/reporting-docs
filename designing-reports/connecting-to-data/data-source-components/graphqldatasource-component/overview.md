@@ -5,6 +5,7 @@ description: "Learn how to use the GraphQLDataSource Component in Telerik Report
 slug: graphqldatasource
 published: True
 position: 0
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

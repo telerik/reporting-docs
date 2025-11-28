@@ -7,6 +7,7 @@ tags: processing,element
 published: True
 position: 3
 previous_url: /configuring-telerik-reporting-cacheDefinitionProperties
+reportingArea: General
 ---
 
 <style>

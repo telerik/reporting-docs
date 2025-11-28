@@ -7,6 +7,7 @@ tags: overview,data,item,report,table,crosstab,subreport,map,graph
 published: True
 position: 0
 previous_url: /data-items, /designing-reports/connecting-to-data/data-items/
+reportingArea: General
 ---
 
 # Data Items Overview

@@ -7,6 +7,7 @@ tags: appdata,element
 published: True
 position: 8
 previous_url: /configuring-telerik-reporting-appdata
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

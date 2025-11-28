@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/gauge/linear-gauge
 tags: telerik, reporting, report, items, Linear, gauge, properties
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Using the Linear Gauge Report Item

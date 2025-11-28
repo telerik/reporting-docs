@@ -5,7 +5,7 @@ description: "Learn how to make the Get Document Page request to the Telerik Rep
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-page
 tags: get,document,page
 published: True
-reporting_area: RESTService, RESTServiceCore
+reportingArea: RESTService, RESTServiceCore
 position: 4
 previous_url: /telerik-reporting-rest-documents-api-get-document-page,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-page
 ---

@@ -5,7 +5,7 @@ description: "Learn how to enable the Send Mail Message button of the Native Bla
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/send-mail-message
 tags: send,email,message,blazor,viewer
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 3
 ---
 

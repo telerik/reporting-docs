@@ -5,7 +5,7 @@ description: "Learn how to configure the web report designer and its controller 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application
 tags: how,to,set,up,in,.net,framework,application
 published: True
-reporting_area: WRDHTML5, WRDRestService
+reportingArea: WRDHTML5, WRDRestService
 position: 4
 previous_url: /web-report-designer-setup-in-dot-net-framework
 ---
@@ -152,7 +152,7 @@ The REST service works as a backend and is responsible for storage operations li
 			loading...
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}//js/kendo.all.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 		<script type="text/javascript">
@@ -188,7 +188,7 @@ The REST service works as a backend and is responsible for storage operations li
 			loading...
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://kendo.cdn.telerik.com/2022.3.913//js/kendo.all.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 		<script type="text/javascript">
@@ -205,7 +205,8 @@ The REST service works as a backend and is responsible for storage operations li
 		</script>
 	</body>
 	</html>
-	````	
+	````
+
 
 	The *ReportDesignerController* we added above is configured to search for its reports in a sub-folder named `Reports`. The Report Designer widget we just configured will try to load a report named `SampleReport.trdp`. Add a new folder named `Reports` to the solution and add an existing report named `SampleReport.trdp` to it.
 

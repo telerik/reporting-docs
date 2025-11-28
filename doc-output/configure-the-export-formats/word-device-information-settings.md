@@ -7,6 +7,7 @@ tags: word, docx, device, information, settings, options
 published: True
 position: 12
 previous_url: /device-information-settings-word
+reportingArea: General
 ---
 
 <style>

@@ -5,7 +5,7 @@ description: "Learn how to change the icons display on the toolbar of the native
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/toolbar-icons
 tags: native, angular, report, viewer, toolbar, svg, icons
 published: True
-reporting_area: NativeAngular
+reportingArea: NativeAngular
 position: 1
 ---
 

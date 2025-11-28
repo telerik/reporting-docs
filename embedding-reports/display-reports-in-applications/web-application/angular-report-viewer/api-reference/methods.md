@@ -5,7 +5,7 @@ description: "Learn about what are the methods exposed by the Angular Report Vie
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
 tags: methods,angular,report,viewer
 published: True
-reporting_area: AngularWrapper
+reportingArea: AngularWrapper
 position: 2
 previous_url: /angular-report-viewer-api-methods
 ---

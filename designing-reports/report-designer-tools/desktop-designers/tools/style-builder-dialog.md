@@ -7,6 +7,7 @@ tags: style,builder,dialog,designer,report,custom
 published: True
 position: 17
 previous_url: /ui-style-builder
+reportingArea: General
 ---
 
 # Style Builder Dialog of the Report Designer

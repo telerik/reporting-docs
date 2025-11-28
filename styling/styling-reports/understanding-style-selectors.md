@@ -7,6 +7,7 @@ tags: understanding, style, selectors
 published: True
 position: 1
 previous_url: /style-understanding-style-selectors
+reportingArea: General
 ---
 
 # Understanding the Style Selectors

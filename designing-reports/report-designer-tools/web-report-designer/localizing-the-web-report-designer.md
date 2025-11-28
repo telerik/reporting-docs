@@ -16,11 +16,10 @@ This article elaborates on how to localize the strings used and displayed by the
 
 1. **Include script containing strings**. Create a JavaScript file in your application, in a location where it can be referenced by the HTML page/View containing the Web Report Designer initialization script. This can for example be inside the `Scripts` folder of your website. You may use the resource file that gets deployed with the installation of the product in the subfolder, for example: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportDesigner\js\WebReportDesignerStringsBase-{{site.buildversion}}.js` or the following code snippet:
 
-   {{source=CodeSnippets\WRD\WebReportDesignerStringsBase}}
-
    ```JavaScript
-   export class WebReportDesignerStringsBase  {
-   	constructor() {
+   	export class WebReportDesignerStringsBase  {
+
+   	  constructor() {
    		this.Report = "Report";
    		this.CombinedReport = "Combined Report";
    		this.SharedDataSource = "Shared Data Source";

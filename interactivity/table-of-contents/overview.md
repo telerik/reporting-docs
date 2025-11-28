@@ -64,7 +64,7 @@ All [Report Items]({%slug telerikreporting/designing-reports/report-structure/ov
 
 ### Adding a Report Section to the Table of Contents
 
-The Report Sections generate TOC entries on the first level of the Report Table of Contents. The Report items with configured `TocText` within sections generate child levels under the corresponding Report section TOC entry.
+The Report Sections generate TOC entries on the first level of the Report table of contents. The inner Report items with configured `TocText` generate child entries in the TOC.
  
 Set the `TocText` of the [Report Header and Footer sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) to generate an entry on the first level at the beginning (for the header) and at the end (for the footer) of the table of contents.
 

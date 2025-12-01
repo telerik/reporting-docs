@@ -199,7 +199,7 @@ The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.s
 
 #### .NET
 
-````Changing·Consent·Message
+````C# Changing·Consent·Message
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
@@ -210,7 +210,7 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
 ````
-````Setting·Predefined·Prompts·Dynamically
+````C# Setting·Predefined·Prompts·Dynamically
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
@@ -227,7 +227,7 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
 #### .NET Framework
 
-````Changing·Consent·Message
+````C# Changing·Consent·Message
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
@@ -238,7 +238,7 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
 ````
-````Setting·Predefined·Prompts·Dynamically
+````C# Setting·Predefined·Prompts·Dynamically
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
@@ -260,7 +260,7 @@ The [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.re
 
 #### .NET
 
-````Modifying·Outgoing·Prompts
+````C# Modifying·Outgoing·Prompts
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
 /// </summary>
@@ -272,7 +272,7 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
 ````
-````Token·Usage·Validation
+````C# Token·Usage·Validation
 /// <summary>
 /// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 /// </summary>
@@ -293,7 +293,7 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
 ````
-````RAG·Optimization·Monitoring
+````C# RAG·Optimization·Monitoring
 /// <summary>
 /// Examines whether the RAG optimization is applied for the current prompt.
 /// </summary>
@@ -318,7 +318,7 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 
 > The RAG Optimization Monitoring example is not included in this section because RAG functionality is available only in .NET and .NET Standard configurations.
 
-````Modifying·Outgoing·Prompts
+````C# Modifying·Outgoing·Prompts
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
 /// </summary>
@@ -330,7 +330,7 @@ public override async Task<HttpResponseMessage> GetAIResponse(string clientID, s
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
 ````
-````Token·Usage·Validation
+````C# Token·Usage·Validation
 /// <summary>
 /// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 /// </summary>

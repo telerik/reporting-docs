@@ -103,7 +103,9 @@ Copy-Item -Path $(telerikLicense.secureFilePath) -Destination "$(Build.Repositor
 
 ### Using TelerikLicensing.Register method
 
-As of version **1.6.7**, [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) offers the parameterless `TelerikLicensing.Register()` method and the `TelerikLicensing.Register(…script key…)` method allowing the developers to validate the Telerik license when running in [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions, plugins, or a class library that uses Telerik Reporting consumed by any third-party software. It is necessary to upgrade the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing/1.6.7) NuGet package to **1.6.7 or newer** version and call the `Register` method in the body of the function. Thus, the Telerik license will be validated, and the watermark should not be printed (for licensed users) in the generated document:
+As of version **1.6.7**, [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) offers the parameterless `TelerikLicensing.Register()` method and the `TelerikLicensing.Register(…script key…)` methods allowing the developers to validate the Telerik license when running in [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions, plugins, or [class libraries]() that use Telerik Reporting consumed by any third-party software.
+
+Invoke the `Register` method in the body of the function where Telerik Reporting code will be executed. This way, the Telerik license will be validated, and the watermark should not be printed (for licensed users) in the generated document:
 
 ```C#
 namespace LicensingInLambda;

@@ -31,8 +31,8 @@ The two tools that automatically download your Telerik license key file are the 
 
 To install your Telerik License key by using the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), start the application. It automatically downloads the `telerik-license.txt` license key file to your home directory:
 
-* On Windows: `%AppData%\Telerik` or `C:\Users\[windows_username]\%AppData%\Roaming\Telerik`.
-* On Mac/Linux: `~/.telerik/`.
+- On Windows: `%AppData%\Telerik` or `C:\Users\[windows_username]\%AppData%\Roaming\Telerik`.
+- On Mac/Linux: `~/.telerik/`.
 
 #### Using the Visual Studio Extensions
 
@@ -42,7 +42,7 @@ To install your Telerik License key by using the Visual Studio extensions for Te
 
 1. Go to **Extensions** > **Telerik** > **Licensing** and select **Download Key**.
 
-	![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
+   ![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
 
 The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you may have used another [installation method]({%slug telerikreporting/installation%}) or deselected them during the setup.
 
@@ -73,27 +73,27 @@ If Telerik Reporting cannot be activated automatically:
 
 1. Add the `Telerik.Licensing` package from [NuGet.org](https://www.nuget.org/) as a project dependency:
 
-	* For **.NET projects**, edit the `.csproj` and add the following line:
+   - For **.NET projects**, edit the `.csproj` and add the following line:
 
-		````XML
-<PackageReference Include="Telerik.Licensing" Version="*" />
-````
+     ```XML
+     <PackageReference Include="Telerik.Licensing" Version="*" />
+     ```
 
-	* For older **.NET Framework projects**:
+   - For older **.NET Framework projects**:
 
-		1. Add package reference to the `packages.config` file:
+     1. Add package reference to the `packages.config` file:
 
-			````XML
-<package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
-````
+        ```XML
+        <package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
+        ```
 
-		1. Update the `.csproj` file with the DLL reference:
+     1. Update the `.csproj` file with the DLL reference:
 
-			````XML
-<Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
-				<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
-			</Reference>
-````
+        ```XML
+        <Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
+        	<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
+        </Reference>
+        ```
 
 When you build the project, the `Telerik.Licensing` NuGet package locates the license file and uses it to activate Telerik Reporting.
 
@@ -101,14 +101,14 @@ When you build the project, the `Telerik.Licensing` NuGet package locates the li
 
 ## Adding a License Key to Projects without NuGet References
 
->caution Telerik strongly recommends the use of the `Telerik.Reporting` NuGet package whenever possible&mdash;it will add all required dependencies, such as `Telerik.Licensing`. Only include the license key as a code snippet (demonstrated in this section) when NuGet packages are not an option.
+> caution Telerik strongly recommends the use of the `Telerik.Reporting` NuGet package whenever possible&mdash;it will add all required dependencies, such as `Telerik.Licensing`. Only include the license key as a code snippet (demonstrated in this section) when NuGet packages are not an option.
 
 If you cannot use NuGet packages in your project, add the license as a code snippet:
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
-1. On the Telerik Reporting row, click the __View key__ link in the __SCRIPT KEY__ column.
+1. On the Telerik Reporting row, click the **View key** link in the **SCRIPT KEY** column.
 
-	![Download Product Key](images/download-script-key.png)
+   ![Download Product Key](images/download-script-key.png)
 
 1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.
 1. Add the `TelerikLicense.cs` file to your project.
@@ -118,7 +118,11 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 ## Updating Your License Key
 
-Whenever you purchase a new Telerik Reporting license or renew an existing one, always [download](#downloading-the-license-key) and install a new license key. The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate Telerik Reporting](#activating-telerik-reporting-automatically).
+Whenever you purchase a new Telerik Reporting license or renew an existing one, always [download](#downloading-the-license-key) and install a new license key.
+
+The new license key includes information about all previous license purchases. This process is referred to as a license key update.
+
+Once you have the new license key, use it to [activate Telerik Reporting](#activating-telerik-reporting-automatically).
 
 ## See Also
 

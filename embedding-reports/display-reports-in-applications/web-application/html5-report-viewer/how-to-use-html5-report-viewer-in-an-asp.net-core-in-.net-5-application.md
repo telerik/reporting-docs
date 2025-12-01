@@ -46,7 +46,11 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
     app.UseStaticFiles();
     ```
 
-1.  Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below. By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
+1.  Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization.
+
+    For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
+
+    By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
 
     ```HTML
     <!DOCTYPE html>

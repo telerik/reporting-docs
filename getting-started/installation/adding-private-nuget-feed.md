@@ -30,27 +30,27 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
 1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
 
->API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+> API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
 ## Setup in Visual Studio
 
 1. Open Visual Studio.
-1. Go to __Tools__ > __NuGet Package Manager__ > __Package Manager Settings__, select __Package Manager Sources__ and click the __+__ button.
-1. Choose the feed __Name__, set the feed __URL__ to __https://nuget.telerik.com/v3/index.json__ and click __OK__.
+1. Go to **Tools** > **NuGet Package Manager** > **Package Manager Settings**, select **Package Manager Sources** and click the **+** button.
+1. Choose the feed **Name**, set the feed **URL** to **https://nuget.telerik.com/v3/index.json** and click **OK**.
 
-	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed
+   > caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed
 
-	![Telerik Nuget Feed in Visual Studio NuGet Package Manager](images/nuged-feed-in-npm.png)
+   ![Telerik Nuget Feed in Visual Studio NuGet Package Manager](images/nuged-feed-in-npm.png)
 
 1. Create or load your project.
-1. Go to __Tools__ > __NuGet Package Manager__ > __Manage NuGet Packages for solution__.
-1. In the upper right-hand corner of the __Manage Packages for Solution__ window, select the Telerik __Package source__ that you just added.
+1. Go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for solution**.
+1. In the upper right-hand corner of the **Manage Packages for Solution** window, select the Telerik **Package source** that you just added.
 1. Click the **Browse** tab to see the available packages.
 1. In the authentication window, enter `api-key` in the **User name** field and the [generated API key](#generate-an-api-key) in the **Password** field.
 
-	>caption Enter your Telerik.com credentials to access the Telerik NuGet feed
+   > caption Enter your Telerik.com credentials to access the Telerik NuGet feed
 
-	![Telerik.com credentials form to access the Telerik NuGet Feed](images/vs-nuget-auth-window.png)
+   ![Telerik.com credentials form to access the Telerik NuGet Feed](images/vs-nuget-auth-window.png)
 
 After adding the Telerik server, all packages licensed to the authenticated user become available in the Visual Studio NuGet package manager.
 
@@ -62,22 +62,24 @@ If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set
 1. Open a Command Prompt and change the path to the `nuget.exe` location.
 1. The command from the example below stores your API key in the `%AppData%\NuGet\NuGet.config` file.
 
-	````powershell
-NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-	-UserName "api-key" -Password "YOUR-API-KEY" ^
-	-StorePasswordInClearText
-````
+   ```powershell
+   NuGet Sources Add ^
+   -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
+   -UserName "api-key" -Password "YOUR-API-KEY" ^
+   -StorePasswordInClearText
+   ```
 
-To update expired or invalid login credentials, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command:
+   - To update expired or invalid login credentials, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command:
 
-	````powershell
-NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-	-UserName "api-key" -Password "YOUR-API-KEY" ^
-	-StorePasswordInClearText
-````
+   ```powershell
+    NuGet Sources Update ^
+   -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
+    -UserName "api-key" -Password "YOUR-API-KEY" ^
+    -StorePasswordInClearText
+   ```
 
 ## See Also
 
-* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
-* [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({%slug nuget-feed-returned-unexpected-401-status-error%})
-* [Setup a Local NuGet Package Feed]({%slug setup-local-nuget-feed%})
+- [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
+- [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({%slug nuget-feed-returned-unexpected-401-status-error%})
+- [Setup a Local NuGet Package Feed]({%slug setup-local-nuget-feed%})

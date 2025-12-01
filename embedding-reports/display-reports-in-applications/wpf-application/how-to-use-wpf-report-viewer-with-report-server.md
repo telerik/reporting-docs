@@ -5,6 +5,7 @@ description: "Learn how to set up the WPF Report Viewer to use a Telerik Report 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server
 tags: how,to,use,wpf,report,viewer,with,telerik,report,server
 published: True
+reportingArea: WPF
 position: 9
 previous_url: /wpf-report-viewer-howto-use-it-with-reportserver
 ---

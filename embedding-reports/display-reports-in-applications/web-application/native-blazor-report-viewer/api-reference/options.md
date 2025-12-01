@@ -5,7 +5,7 @@ description: "Learn about what are the Telerik Reporting native Blazor Report Vi
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options
 tags: options,blazor,native,report,viewer,api,initialization
 published: True
-reporting_area: NativeBlazor
+reportingArea: NativeBlazor
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/
 ---
@@ -98,6 +98,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 								authenticating with the report server.</li>
 							<li><strong>Password</strong> - (string, required) Defines the Password to be used for
 								authenticating with the report server.</li>
+							<li><strong>GetPersonalAccessToken</strong> (`Task<string>`, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance as a *string* wrapped in a [Task](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task). </li>
 						</ul>
 					</li>
 					<li><strong>SendEmailDialogSettings</strong> - Represents the predefined settings for the Send Email

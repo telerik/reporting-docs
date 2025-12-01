@@ -5,7 +5,7 @@ description: "Learn more about the interactiveActionEnter(e, args) Event of the 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)
 tags: interactiveactionenter(e,,args)
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 13
 previous_url: /html5-report-viewer-reportviewer-events-interactiveactionenter
 ---

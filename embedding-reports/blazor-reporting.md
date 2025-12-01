@@ -6,6 +6,7 @@ slug: blazor-reporting
 tags: telerik, reporting, reports, web, blazor
 published: True
 position: 91
+reportingArea: General
 ---
 
 # Embedding Reporting in Blazor Applications

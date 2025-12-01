@@ -7,6 +7,7 @@ tags: edit,sorting,dialog
 published: True
 position: 9
 previous_url: /ui-sort
+reportingArea: General
 ---
 
 # Edit Sorting Dialog of the Report Designer

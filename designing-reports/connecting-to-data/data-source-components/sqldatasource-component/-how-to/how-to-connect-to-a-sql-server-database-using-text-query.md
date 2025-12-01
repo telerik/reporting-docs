@@ -7,6 +7,7 @@ tags: how,to,connect,to,a,sql,server,database,using,text,query
 published: False
 position: 0
 previous_url: /how-to-sqlDataSource-sct-Text
+reportingArea: General
 ---
 
 # How to Connect to a SQL Server Database Using Text Query

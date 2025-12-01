@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /band-report-wizard, /designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/
+reportingArea: General
 ---
 
 <style>

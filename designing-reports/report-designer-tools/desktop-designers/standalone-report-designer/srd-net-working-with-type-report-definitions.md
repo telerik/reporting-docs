@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: designing,using,opening,importing,previewing,type,reports,standalone,report,designer,for,net
 published: True
 position: 5
+reportingArea: General
 ---
 
 # Coded Reports in the Standalone Report Designer for .NET
@@ -31,7 +32,7 @@ The designer's functionality for working with Coded Reports relies on [MSBuild](
 If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
 
 > The .NET SDK corresponding to your project’s target framework must also be installed. 
-For example, if your report library targets .NET 8, ensure the .NET 8 SDK is present.
+For example, if your report library targets .10, ensure the .NET 10 SDK is present.
 Without it, SRD.NET will fail to compile the project.
 
 ## Opening Coded Reports

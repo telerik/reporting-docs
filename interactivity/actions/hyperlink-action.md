@@ -7,6 +7,7 @@ tags: hyperlink,action
 published: True
 position: 50
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action, /designing-reports-interactivity-hyperlinks, /designing-reports-interactivity-how-to-add-hyperlink
+reportingArea: General
 ---
 
 # Hyperlink Action Overview

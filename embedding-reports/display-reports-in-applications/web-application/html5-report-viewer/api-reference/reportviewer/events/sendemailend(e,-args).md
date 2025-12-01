@@ -5,7 +5,7 @@ description: "Learn more about the sendEmailEnd(e, args) Event of the Telerik Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
 tags: sendemailend,args
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 5
 previous_url: /html5-report-viewer-reportviewer-events-sendemailend
 ---

@@ -7,6 +7,7 @@ tags: specifying,query,parameters,with,the,cubedatasource,component
 published: True
 position: 4
 previous_url: /cubedatasource-specifying-parameters
+reportingArea: General
 ---
 
 # Specifying Query Parameters with the CubeDataSource Component

@@ -7,6 +7,7 @@ tags: connecting,objectdatasource,component,data,source
 published: True
 position: 1
 previous_url: /objectdatasource-connecting
+reportingArea: General
 ---
 
 # Connecting the ObjectDataSource Component to a Data Source
@@ -26,7 +27,7 @@ When you configure the ObjectDataSource component the settings below are obligat
 	Framework 4.0__. For that reason, it cannot load and resolve classes from assemblies built 
 	against .NET Standard 2.1 or .NET {{site.mindotnetversion}}+. You can see the [.NET Standard compatibility chart](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) which explains how and when the assemblies can be loaded in different framework versions.
 
-	>The new [.NET Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) is built for .NET 8 and can resolve assemblies built with `.NET Standard`, `.NET {{site.mindotnetversion}}` and later.
+	>The new [.NET Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net) is built for .NET 10 and can resolve assemblies built with `.NET Standard`, `.NET {{site.mindotnetversion}}` and later.
 
 1. Add the following piece of code from [Bind to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).
 

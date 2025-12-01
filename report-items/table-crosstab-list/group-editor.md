@@ -6,6 +6,7 @@ slug: table_group_editor
 tags: telerik, reporting, report, items, table, crosstab, list, group, editor
 published: True
 position: 8
+reportingArea: General
 ---
 
 # Group Editor of the Table

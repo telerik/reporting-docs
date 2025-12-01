@@ -27,6 +27,8 @@ res_type: kb
 
 ## Description
 
+> From Q4 2025, the Standalone Report Designer for .NET is built with .NET 10
+
 This article describes How to load `.NET 9` assemblies in the Standalone Report Designer for .NET *(**SRD.NET** for short)*.
 
 It is important to state that SRD.NET is targeting **.NET 8** instead of .NET 9 because .NET 8 is a **Major** release while .NET 9 is not. Major releases happen once a year, even-numbered versions are the long-term supported (LTS) releases.

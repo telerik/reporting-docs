@@ -5,6 +5,7 @@ description: "Learn how to make the Search in a Document request to the Telerik 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/search-in-a-document
 tags: search,in,a,document
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 7
 previous_url: /telerik-reporting-rest-documents-api-search-in-document,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/search-in-a-document
 ---

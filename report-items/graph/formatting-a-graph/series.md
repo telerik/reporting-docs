@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: telerik, reporting, report, items, graph, styling, formatting, series
 published: True
 previous_url: /GraphFormatSeries
+reportingArea: General
 ---
 
 # Series of the Graph

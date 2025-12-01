@@ -7,6 +7,7 @@ tags: telerik, reporting, importing, reports, converting, overview
 published: True
 position: 0
 previous_url: /faq-available-converters, /importing-reports/
+reportingArea: General
 ---
 
 # Importing Reports Overview

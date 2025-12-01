@@ -6,6 +6,7 @@ slug: telerikreporting/getting-started/installation/cdn-assets
 tags: how,to,add,the,telerik,cdn,reportviewer,script
 published: True
 position: 9
+reportingArea: General
 ---
 
 # HTML5 Report Viewer and Web Report Designer Assets

@@ -5,7 +5,7 @@ description: "Learn more about the printBegin(e, args) Event of the Telerik Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)
 tags: printbegin,args
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 7
 previous_url: /html5-report-viewer-reportviewer-events-printbegin
 ---

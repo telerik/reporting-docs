@@ -7,6 +7,7 @@ tags: how,to,construct,a,string,to,connect,to,report,engine
 published: True
 position: 8
 previous_url: /report-engine-connectionstring
+reportingArea: General
 ---
 
 <style>

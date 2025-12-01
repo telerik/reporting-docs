@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/export-and-configure/cache-manageme
 tags: telerik, reporting, embedding, reports, cache, management, configuring, file, provider
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Configuring the File Cache Provider

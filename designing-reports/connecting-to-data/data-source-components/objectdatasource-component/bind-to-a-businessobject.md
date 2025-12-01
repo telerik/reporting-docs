@@ -7,6 +7,7 @@ tags: how,to,bind,to,a,businessobject
 published: True
 position: 10
 previous_url: /object-data-source-how-to-bind-to-business-object
+reportingArea: General
 ---
 
 # Binding ObjectDataSource Component to a BusinessObject

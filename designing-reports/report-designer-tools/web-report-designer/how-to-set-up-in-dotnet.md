@@ -5,6 +5,7 @@ description: "Learn how to set up the Telerik Web Report Designer in .NET 8 and 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 tags: how,to,set,up,in,.net,8,applications
 published: True
+reportingArea: WRDHTML5, WRDRestServiceCore
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 ---
@@ -105,10 +106,11 @@ public void ConfigureServices(IServiceCollection services)
 			});
 		services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
 		{
+			TemplateDefinitionStorage = new FileTemplateDefinitionStorage("templates_folder_path", new[] { "sub_folder_to_exclude" }), // introduced in Q4 2025
 			DefinitionStorage = new FileDefinitionStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports"), new[] { "Resources", "Shared Data Sources" }),
 			ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Resources")),
 			SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
-				SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+			SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
 		});
 	}
 ````
@@ -174,14 +176,14 @@ Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports")
 			loading...
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer/"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$("#webReportDesigner").telerik_WebReportDesigner({
 					toolboxArea: {
-						layout: "list" //Change to "grid" to display the contents of the Components area in a flow grid layout.
+						layout: "list" // Change to "grid" to display the contents of the Components area in a flow grid layout.
 					},
 					serviceUrl: "/api/reportdesigner",
 					report: "Barcodes Report.trdp"

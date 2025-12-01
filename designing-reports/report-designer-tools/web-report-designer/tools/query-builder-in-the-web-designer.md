@@ -5,6 +5,7 @@ description: "Learn more about the Query Builder in the Web Report Designer and 
 slug: web-report-designer-query-builder
 tags: query,builder,web,report,designer
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 0
 ---
 

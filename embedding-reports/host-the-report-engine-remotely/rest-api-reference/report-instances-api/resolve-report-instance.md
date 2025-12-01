@@ -5,6 +5,7 @@ description: "Learn how to make the Resolve Report Instance request to the Teler
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance
 tags: resolve,report,instance
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-report-instances-api-create-report-instance,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-instances-api/
 ---

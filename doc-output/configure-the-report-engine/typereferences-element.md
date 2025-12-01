@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: typeReferences, element, user, function, ObjectDataSource
 published: True
 position: 11
+reportingArea: General
 ---
 
 <style>

@@ -7,6 +7,7 @@ tags: how,to,add,groups,to,table,item,and,crosstab,item
 published: True
 position: 3
 previous_url: /data-items-how-to-add-groups-to-table-item-and-crosstab-item
+reportingArea: General
 ---
 
 # Adding Groups to Table and Crosstab Items

@@ -7,6 +7,7 @@ tags: reportparameter,collection,editor,report,parameter,designer
 published: True
 position: 16
 previous_url: /ui-edit-report-parameters
+reportingArea: General
 ---
 
 # ReportParameter Collection Editor of the Report Designer

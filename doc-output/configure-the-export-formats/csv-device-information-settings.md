@@ -7,6 +7,7 @@ tags: csv, device, information, settings, options
 published: True
 position: 6
 previous_url: /device-information-settings-csv, /using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings
+reportingArea: General
 ---
 
 <style>

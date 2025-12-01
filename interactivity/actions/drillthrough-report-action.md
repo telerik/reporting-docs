@@ -7,6 +7,7 @@ previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-navi
 tags: drillthrough,report,action
 published: True
 position: 30
+reportingArea: General
 ---
 
 # Drillthrough/Navigate To Report Action

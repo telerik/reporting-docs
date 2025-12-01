@@ -5,6 +5,7 @@ description: Creating a report from scratch with the Web Report Designer offered
 slug: web-report-designer-user-guide-getting-started
 tags: web, report, design, tool, create, started 
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 8
 ---
 <style>
@@ -91,7 +92,7 @@ Now that you've created your first report, you can:
 
 For a visual walkthrough, watch this video tutorial that demonstrates creating a report with a chart. The video covers the Visual Studio setup initially, but the Web Report Designer portion starts at the 3:08 mark:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=286" title="Getting Started with the Web Report Designer: Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=286&rel=0" title="Getting Started with the Web Report Designer: Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

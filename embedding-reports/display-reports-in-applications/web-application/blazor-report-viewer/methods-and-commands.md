@@ -5,7 +5,7 @@ description: "Learn about what are the methods and commands exposed by the Teler
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/methods-and-commands
 tags: methods,and,commands,blazor,report,viewer
 published: True
-reporting_area: BlazorWrapper
+reportingArea: BlazorWrapper
 position: 3
 previous_url: /blazor-report-viewer-methods-and-commands
 ---

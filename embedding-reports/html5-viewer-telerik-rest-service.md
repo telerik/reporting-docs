@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/export-and-configure/cache-manageme
 tags: telerik, reporting, embedding, reports, html5, report, viewer, reporting, rest, service
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Telerik Report Viewer and Telerik Reporting REST Service

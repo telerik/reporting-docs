@@ -5,6 +5,7 @@ description: "Learn how to configure the Telerik Reporting REST Service in an AS
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2
 tags: how,to,host,reports,service,in,asp.net,core,2.1,and,2.2
 published: True
+reportingArea: RESTServiceCore
 position: 10
 previous_url: /telerik-reporting-rest-service-aspnetcore-mvc-core2,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-core-2.1-and-2.2
 sitemap: false

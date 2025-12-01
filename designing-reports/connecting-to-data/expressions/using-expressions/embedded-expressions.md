@@ -7,6 +7,7 @@ tags: embedded,expressions,reports
 published: True
 position: 2
 previous_url: /expressions-embedded
+reportingArea: General
 ---
 
 # Embedded Expressions Overview

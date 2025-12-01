@@ -7,6 +7,7 @@ tags: powerpoint, pptx, device, information, settings, options
 published: True
 position: 13
 previous_url: /device-information-settings-powerpoint
+reportingArea: General
 ---
 
 <style>

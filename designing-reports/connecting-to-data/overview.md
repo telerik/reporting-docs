@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /designing-reports-connecting-data-to-report, /designing-reports/connecting-to-data/
+reportingArea: General
 ---
 
 # Connecting to Data Overview

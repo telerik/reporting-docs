@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/overview, /use-reports-in-applicati
 tags: telerik, reporting, embedding, reports, overview
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Embedding Reports Overview

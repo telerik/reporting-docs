@@ -5,6 +5,7 @@ description: "Learn how the ReportSource Model can be bound with various client 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/reportsource-model-binding
 tags: reportsource,model,binding
 published: True
+reportingArea: MVCWrapper
 position: 4
 previous_url: /mvc-report-viewer-reportsource-model-binding
 ---

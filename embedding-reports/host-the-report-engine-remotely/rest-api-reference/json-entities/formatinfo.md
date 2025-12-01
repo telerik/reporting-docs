@@ -5,6 +5,7 @@ description: "Learn more about the FormatInfo JSON Entity in Telerik Reporting R
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo
 tags: formatinfo
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 3
 previous_url: /telerik-reporting-rest-json-entities-formatinfo,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo
 ---

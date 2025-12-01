@@ -5,6 +5,7 @@ description: "Learn how to search in the content of a report displayed in the WP
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/search-in-report-contents
 tags: search,in,report,contents,wpf,report,viewer
 published: True
+reportingArea: WPF
 position: 13
 previous_url: /wpf-report-viewer-search
 ---

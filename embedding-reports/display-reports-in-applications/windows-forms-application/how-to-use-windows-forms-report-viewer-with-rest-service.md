@@ -5,6 +5,7 @@ description: "Understand how to integrate the Windows Forms Report Viewer contro
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service
 tags: how, to, use, windows, forms, report, viewer, with, rest, service
 published: True
+reportingArea: WinForms
 position: 8
 previous_url: /winforms-viewer-howto-use-it-with-rest-service
 ---

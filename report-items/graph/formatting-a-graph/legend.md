@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: telerik, reporting, report, items, graph, styling, formatting, legend, filter, order, sort, position
 published: True
 previous_url: /GraphFormattingLegend
+reportingArea: General
 ---
 
 # Legend of the Graph

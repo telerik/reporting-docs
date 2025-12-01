@@ -5,7 +5,7 @@ description: "Learn about the requirements of the Native Angular Report Viewer d
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements
 tags: angular,native,report,viewer,requirements
 published: True
-reporting_area: NativeAngular
+reportingArea: NativeAngular
 position: 1
 ---
 
@@ -46,13 +46,13 @@ To check your Node.js version, run `node --version` in a terminal or console win
 
 ## Angular
 
-The Native Angular Report Viewer is built with the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) suite and as such, the Angular versions that it can be used on depend on the supported versions of said components - [Kendo UI for Angular Supported Versions](https://www.telerik.com/kendo-angular-ui/components/installation/requirements/#toc-angular).
+The Native Angular Report Viewer is built with the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) suite, and as such, the Angular versions that it can be used on depend on the supported versions of said components - [Kendo UI for Angular Supported Versions](https://www.telerik.com/kendo-angular-ui/components/installation/requirements/#toc-angular).
 
-The currently used version of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) is v[{{site.angularsubsetversion}}](https://www.telerik.com/kendo-angular-ui/components/changelogs/kendo-angular-ui/#v{{site.angularsubsetversion}}) and it requires **Angular 16 or newer**.
+The currently used version of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) is v[{{site.angularsubsetversion}}](https://www.telerik.com/kendo-angular-ui/components/changelogs/kendo-angular-ui/#v{{site.angularsubsetversion}}) and it requires **Angular 16-19**.
 
 ## Kendo UI for Angular
 
-The Native Angular Report Viewer is built using the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) component library and thus using the viewer requires a license for said product - [Buy Kendo UI](https://www.telerik.com/purchase/kendo-ui).
+The Native Angular Report Viewer is built using the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) component library, and thus using the viewer requires a license for said product - [Buy Kendo UI](https://www.telerik.com/purchase/kendo-ui).
 
 The Native Angular Report Viewer is built with version [{{site.angularsubsetversion}}](https://www.telerik.com/kendo-angular-ui/components/changelogs/kendo-angular-ui/#v{{site.angularsubsetversion}}) of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) and will not support older versions.
 

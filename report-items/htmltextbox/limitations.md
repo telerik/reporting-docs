@@ -6,6 +6,7 @@ slug: htmltextbox_known_limitations
 tags: telerik, reporting, report, items, htmltextbox, considerations, known, limitations
 published: True
 position: 20
+reportingArea: General
 ---
 
 # Known Limitations of the HtmlTextBox

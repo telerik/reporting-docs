@@ -7,6 +7,7 @@ tags: edit,filter,dialog
 published: True
 position: 8
 previous_url: /ui-edit-filter
+reportingArea: General
 ---
 
 # Edit Filter Dialog of the Report Designer

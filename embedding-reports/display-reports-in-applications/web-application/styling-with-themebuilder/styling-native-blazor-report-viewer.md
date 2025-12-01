@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: styling,native,blazor,viewer,themebuilder
 published: True
 position: 5
+reportingArea: General
 ---
 
 # Styling the Native Blazor Report Viewer with ThemeBuilder

@@ -5,7 +5,7 @@ description: "Learn more about the unbind(eventName) method of the Telerik Repor
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname)
 tags: unbind(eventname)
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 16
 previous_url: /html5-report-viewer-reportviewer-methods-unbind-en
 ---

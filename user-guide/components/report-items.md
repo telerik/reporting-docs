@@ -5,6 +5,7 @@ description: "Learn about report items in Telerik Reporting, their types, purpos
 slug: user-guide/components/report-items
 tags: telerik, reporting, report, items, components, building blocks, visualization
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 1
 ---
 
@@ -60,7 +61,7 @@ Once you add the desired Report Items, the **Properties** panel allows you to:
 
 The TextBox is used for titles, labels, and within tables. It can display both static and dynamic text, including expressions and database fields. The TextBox's flexible properties allow you to control its size and text orientation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v0XprGTvnDk?si=k5ShFO8XfMbPGxCn" title="Adding a TextBox Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y9cbOmE_FvI?si=8ON7egqC8JxYosjh&rel=0" title="Adding a TextBox Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the TextBox item, see the [TextBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/textbox %}).
 
@@ -68,7 +69,7 @@ To learn more about working with the TextBox item, see the [TextBox article in t
 
 The HtmlTextBox allows you to insert and display HTML-formatted text within a report. It is ideal for scenarios where you need rich text formatting, dynamic content, or templated text in your reports. You can set its content at design time using a WYSIWYG editor, an expression editor, or dynamically from a data source.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7O-zB9QjkyU?si=HoHpwrcJ6ZDMwCxx" title="Adding an HtmlTextBox Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LPROFL_R0wc?si=faI9cLYYoyy-aSO2&rel=0" title="Adding an HtmlTextBox Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the HtmlTextBox item, see the [HtmlTextBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview %}).
 
@@ -76,7 +77,7 @@ To learn more about working with the HtmlTextBox item, see the [HtmlTextBox arti
 
 The PictureBox displays images within a report. It is ideal for product images, logos, barcodes, or any visual content in reports. The PictureBox supports various image formats, including Base64-encoded images, SVG, and common raster formats like BMP, GIF, JPEG, PNG, EXIF, and TIFF. It provides flexible data binding and layout options to fit various reporting needs. You can also reference images directly from the Assets Manager.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_HXkVfOO66g?si=9aCvjaz43jLqvMas" title="Adding a PictureBox in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IjvThILDWnY?si=75If-CbYw6fJg8M1&rel=0" title="Adding a PictureBox in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the PictureBox item, see the [PictureBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/picturebox %}).
 
@@ -84,7 +85,7 @@ To learn more about working with the PictureBox item, see the [PictureBox articl
 
 The Checkbox displays a check mark alongside text in a report. It visually represents boolean or multi-state data (such as approved/disapproved) and can be customized to match various data field values. Its main uses include displaying status indicators, approval states, or any scenario where a visual check mark is needed in a report. The item supports both static and data-driven content.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ab9VzzOq6YE?si=z1IxeMd7z_wC-WnB" title="Adding a Table with Checkboxes in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GIugyCC2iAo?si=Uzbzpn5IpWT7bB6R&rel=0" title="Adding a Table with Checkboxes in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the CheckBox item, see the [CheckBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/checkbox %}).
 
@@ -92,7 +93,7 @@ To learn more about working with the CheckBox item, see the [CheckBox article in
 
 The Barcode item allows you to automatically generate barcodes from numeric or character data within a report. It supports both 1D and 2D barcodes. The Barcode Report Item is ideal for adding machine-readable codes to reports, such as product labels, inventory sheets, tickets, or any scenario where barcodes are needed for scanning and automation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3XjY_m84OHE?si=SBOnX-IzdxKgiL66" title="Adding a Barcode Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dyOEeuXXUdI?si=6FkSmFJJ4je_i6xo&rel=0" title="Adding a Barcode Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Barcode item, see the [Barcode article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/barcode/overview %}).
 
@@ -100,7 +101,7 @@ To learn more about working with the Barcode item, see the [Barcode article in t
 
 The Shape item displays a single, predefined geometric shape (such as lines, arrows, stars, or polygons) within a report. It also allows you to create custom shapes. The Shape item is ideal for adding visual elements, separators, highlights, or decorative graphics to reports, which lets you enhance readability and visual appeal. It can also be used to represent flow, direction, or status using arrows and other shapes.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lfhB-kZDfY8?si=Y8fqI0Iwfy7A8iix" title="Adding a Shape Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5sc9UoACoD0?si=bkcmfEvn-selVzkX&rel=0" title="Adding a Shape Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Shape item, see the [Shape article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/shape %}).
 
@@ -108,7 +109,7 @@ To learn more about working with the Shape item, see the [Shape article in the m
 
 The Panel is a container used to group or separate multiple report items for layout and organizational purposes. It is not bound to data and does not affect the data context of its contents. The Panel is perfect for structuring complex report layouts, grouping related items, and applying shared properties or visibility rules to multiple items at once.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5e1NoMNfX6Y?si=yMNsbyJ_O7gQ9rK3" title="Adding a Panel Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TB6YbXP377c?si=Dmydual09-hLW4U8&rel=0" title="Adding a Panel Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Panel item, see the [Panel article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/panel %}).
 
@@ -122,7 +123,7 @@ A radial gauge is a circular visual element that looks similar to a speedometer 
 
 Radial gauges are especially useful when you want to show data that feels like speed or progress, such as how fast something is going or how much of a goal has been reached.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QrUAtdgFsM0?si=AJrUJEfiMAGbEbw9" title="Adding a Radial Gauge Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RXoEC2nohSY?si=-mZ3MzbnlF1RYmJd&rel=0" title="Adding a Radial Gauge Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Linear Gauge
 
@@ -130,6 +131,6 @@ The Linear Gauge is represented by a horizontal or vertical scale and displays i
 
 Depending on the gauge's orientation and range, you can create horizontal, vertical, single-range, and multi-range linear gauges.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9Aw-w0yn4Pw?si=M_8bMIEVOFEv12Z1" title="Adding a Linear Gauge Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jeH5TNl2Ok0?si=Kgn7voJ5sLzZxzEN&rel=0" title="Adding a Linear Gauge Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the Gauge item, see the [Gauge article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/gauge/overview %}).

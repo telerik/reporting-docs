@@ -7,6 +7,7 @@ previous_url: /report-items/barcode/barcode-types/2d-barcodes/data-matrix/settin
 tags: telerik, reporting, report, items, barcode, 2d, data, matrix, overview, settings
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Using the Data Matrix Barcode Item

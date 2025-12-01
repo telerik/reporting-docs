@@ -5,6 +5,7 @@ description: "Learn how to use the Get AI Response endpoint of the Telerik Repor
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/get-ai-response
 tags: get,ai,response
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 2
 ---
 

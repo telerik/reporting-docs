@@ -5,7 +5,7 @@ description: "Learn what the parameterEditor of the Telerik Reporting HTML5 Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditor
 tags: parametereditor
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 6
 previous_url: /html5-report-viewer-api-parametereditor
 ---

@@ -7,6 +7,7 @@ tags: how,to,import,reports,created,with,standalone,report,designer,trdp,trdx
 published: True
 position: 11
 previous_url: /how-to-import-reports-created-with-standalone-report-designer
+reportingArea: General
 ---
 
 # Importing Reports Created with the Standalone or Web Report Designer

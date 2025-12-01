@@ -6,6 +6,7 @@ slug: included-assemblies
 tags: telerik, reporting, included, assemblies, installation
 published: True
 position: 3
+reportingArea: General
 ---
 
 # Assemblies and Assets Included in the Installation
@@ -18,7 +19,7 @@ The assemblies come sorted in several folders so that you can use the ones you n
 
 * If you target `.NET Framework`, use the assemblies from the `Bin` folder.
 * If you target `.NET Standard`, use the assemblies from the `\Bin\netstandard2.0` folder.
-* If you target `.NET 8`, use the assemblies from the `\Bin\net8.0` and `\Bin\net8.0-windows` folders.
+* If you target `.NET 8` or later, use the assemblies from the `\Bin\net8.0` and `\Bin\net8.0-windows` folders.
 
 ## Main Assemblies
 

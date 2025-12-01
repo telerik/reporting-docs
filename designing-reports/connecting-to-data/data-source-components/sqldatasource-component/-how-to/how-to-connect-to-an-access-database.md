@@ -7,6 +7,7 @@ tags: how,to,connect,to,an,access,database
 published: False
 position: 2
 previous_url: /how-to-sqlDataSource-access
+reportingArea: General
 ---
 
 # How to Connect to an Access Database

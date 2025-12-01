@@ -6,6 +6,7 @@ slug: report_item_properties_settings
 tags: telerik, reporting, report, item, properties, settings
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Major Properties and Settings of Report Item

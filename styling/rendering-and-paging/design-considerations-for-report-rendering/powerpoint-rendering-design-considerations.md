@@ -7,6 +7,7 @@ tags: powerpoint, pptx, rendering, design, considerations
 published: True
 position: 9
 previous_url: /designing-reports-considerations-powerpoint
+reportingArea: General
 ---
 
 # Design Considerations for the PowerPoint Rendering

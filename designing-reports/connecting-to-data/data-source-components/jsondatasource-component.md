@@ -7,6 +7,7 @@ tags: jsondatasource,component
 published: True
 position: 7
 previous_url: /jsondatasource-component
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

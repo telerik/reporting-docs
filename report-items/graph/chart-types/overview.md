@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, graph, chart, types, overview
 published: True
 position: 0
 previous_url: /ChartTypes, /report-items/graph/chart-types/
+reportingArea: General
 ---
 
 # Chart Types Overview

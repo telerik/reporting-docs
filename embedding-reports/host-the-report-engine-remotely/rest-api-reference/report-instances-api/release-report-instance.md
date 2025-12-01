@@ -5,6 +5,7 @@ description: "Learn how to make the Release Report Instance request to the Teler
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/release-report-instance
 tags: release,report,instance
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-report-instances-api-destroy-report-instance,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/release-report-instance
 ---

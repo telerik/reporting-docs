@@ -7,6 +7,7 @@ tags: sorting,report,details
 published: True
 position: 50
 previous_url: /interactive-sorting-action-report-details
+reportingArea: General
 ---
 
 # Ordering the Report Details

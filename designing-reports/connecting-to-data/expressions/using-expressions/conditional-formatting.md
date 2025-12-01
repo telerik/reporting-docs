@@ -7,6 +7,7 @@ tags: conditional,formatting
 published: True
 position: 4
 previous_url: /expressions-conditional-formatting
+reportingArea: General
 ---
 
 # Conditional Formatting Overview

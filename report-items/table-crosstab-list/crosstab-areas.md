@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, templates, under
 previous_url: /table-understanding-crosstab-areas, /report-items/table-crosstab-list/understanding-crosstab-areas
 published: True
 position: 5
+reportingArea: General
 ---
 
 # Overview of the Crosstab Areas

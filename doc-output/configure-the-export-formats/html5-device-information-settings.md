@@ -7,6 +7,7 @@ tags: html5, device, information, settings, options
 published: True
 position: 10
 previous_url: /device-information-settings-html
+reportingArea: General
 ---
 
 <style>

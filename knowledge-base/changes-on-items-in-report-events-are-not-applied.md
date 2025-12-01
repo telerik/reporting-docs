@@ -81,7 +81,7 @@ If you have many legacy reports and changing the code in events in all of them i
 	<configSections>
 		<section
 			name="Telerik.Reporting"
-			type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting.Configuration, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
+			type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
 			allowLocation="true"
 			allowDefinition="Everywhere"/>
 	</configSections>

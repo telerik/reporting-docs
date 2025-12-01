@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, graph, sparklines, chart, overview
 published: True
 position: 90
 previous_url: /SparklinesAndDataBars
+reportingArea: General
 ---
 
 # Sparklines Charts Overview

@@ -5,7 +5,7 @@ description: "Learn what the data attributes represent in the Telerik Reporting 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
 tags: data,attributes
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 2
 previous_url: /html5-report-viewer-data-attributes
 ---

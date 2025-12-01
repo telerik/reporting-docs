@@ -7,6 +7,7 @@ tags: conditional,formatting,rules,dialog
 published: True
 position: 6
 previous_url: /ui-conditional-formatting
+reportingArea: General
 ---
 
 # Conditional Formatting Rules Dialog Overview

@@ -7,6 +7,7 @@ tags: word, rendering, design, considerations
 published: True
 position: 8
 previous_url: /designing-reports-considerations-word
+reportingArea: General
 ---
 
 # Design Considerations for the Word Rendering

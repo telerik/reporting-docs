@@ -7,6 +7,7 @@ tags: how,to,bind,to,a,dataset
 published: True
 position: 14
 previous_url: /object-data-source-how-to-bind-to-data-set
+reportingArea: General
 ---
 
 # Binding ObjectDataSource Component to a DataSet

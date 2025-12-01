@@ -7,6 +7,7 @@ tags: user,aggregate,functions,expressions,create,report
 published: True
 position: 2
 previous_url: /expressions-user-aggregate-functions
+reportingArea: General
 ---
 
 # Custom User Aggregate Functions

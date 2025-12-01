@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-
 tags: telerik, reporting, report, items, graph, bar, chart, overview, creating
 previous_url: /BarCharts, /GraphHowToCreateBarChart, /report-items/graph/chart-types/bar-charts/overview, /report-items/graph/chart-types/bar-charts/how-to-create-bar-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing Bar Charts

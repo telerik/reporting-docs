@@ -7,6 +7,7 @@ tags: keyboard,support,and,shortcuts
 published: True
 position: 2
 previous_url: /standalone-report-designer-keyboard-shortcuts
+reportingArea: General
 ---
 
 # Keyboard Support and Shortcuts Overview

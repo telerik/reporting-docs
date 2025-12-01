@@ -7,6 +7,7 @@ tags: overview,reportbook,reportsource,report
 published: True
 position: 0
 previous_url: /designing-reports-general-explanation, /designing-reports/report-book/
+reportingArea: General
 ---
 
 # Report Book Overview

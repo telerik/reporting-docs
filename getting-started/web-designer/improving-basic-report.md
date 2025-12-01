@@ -6,6 +6,7 @@ slug: telerikreporting/getting-started/web-designer/improving-basic-report
 tags: web,designer,report,navigate,action,shareddatasource
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Implement a Common Master-Detail Report Scenario

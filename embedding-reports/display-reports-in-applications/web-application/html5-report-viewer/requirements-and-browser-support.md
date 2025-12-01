@@ -5,7 +5,7 @@ description: "Learn what the requirements are for integrating the Telerik Report
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support
 tags: requirements,browser,support
 published: True
-reporting_area: HTML5
+reportingArea: HTML5
 position: 1
 previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support, /html5-report-viewer-widget-requirements
 ---

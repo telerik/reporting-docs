@@ -5,6 +5,7 @@ description: "Learn about what are the minimum requirements to use the Telerik R
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview
 tags: overview
 published: True
+reportingArea: WPF
 position: 0
 previous_url: /wpf-report-viewer-intro, /embedding-reports/display-reports-in-applications/wpf-application/, /wpf-report-viewer
 ---

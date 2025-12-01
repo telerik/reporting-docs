@@ -5,6 +5,7 @@ description: "Learn how to make the Get Document Info request to the Telerik Rep
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info
 tags: get,document,info
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-documents-api-get-document-info,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info
 ---

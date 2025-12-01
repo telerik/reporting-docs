@@ -7,6 +7,7 @@ tags: fontlibrary,element
 published: True
 position: 7
 previous_url: /configuring-telerik-reporting-fontlibrary
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

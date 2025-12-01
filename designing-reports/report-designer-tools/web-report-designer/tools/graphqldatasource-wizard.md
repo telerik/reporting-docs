@@ -5,6 +5,7 @@ description: "Learn how to connect your GraphQL endpoints to Telerik reports thr
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/graphqldatasource-wizard
 tags: graphqldatasource,wizard
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 5
 ---
 <style>

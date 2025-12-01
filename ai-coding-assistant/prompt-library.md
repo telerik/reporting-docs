@@ -6,6 +6,7 @@ slug: ai-prompt-library
 tags: ai, telerik, reporting, prompt, library
 published: True
 position: 3
+reportingArea: General
 ---
 
 <style>
@@ -22,9 +23,9 @@ position: 3
 
 # AI Prompt Library
 
-The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or the [MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
+The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
 
-You can use the provided prompts as they are or modify them to fit your use case. Make sure to start your prompt with the required prefix (`@telerikreporting` for the [GitHub Copilot Extension]({%slug ai-copilot-extension%}) or `#telerik-reporting-assistant ` for the [MCP Server]({%slug ai-mcp-server%}) handle).
+You can use the provided prompts as they are or modify them to fit your use case. For consistency and accurate handling, all prompts must be prefixed with the required identifier(`#telerik-reporting-assistant `).
 
 You can also use the prompts with any AI-powered tool of your choice. However, the Telerik Reporting AI Coding Assistant is developed to provide highly accurate results based extensively on the documentation, APIs, and community knowledge for Telerik Reporting. Running the prompts outside the AI Coding Assistant may not produce as relevant results.
 
@@ -77,7 +78,7 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How to to show ComboBox editors for the report parameters in the Blazor Report Viewer?
+#telerik-reporting-assistant How to show ComboBox editors for the report parameters in the Blazor Report Viewer?
 			</code></pre>
 		</td>
 		<td>
@@ -127,7 +128,7 @@ Quick Start Guide:
 		</td>
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How to use dropdown for the the report parameters of the Native Angular Report Viewer?
+#telerik-reporting-assistant How to use a DropDown editor for the report parameters of the Native Angular Report Viewer?
 			</code></pre>
 		</td>
 	</tr> 
@@ -146,7 +147,7 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How to to show DateTimePicker editors for report parameters of type DateTime in the Angular Report Viewer?
+#telerik-reporting-assistant How to show DateTimePicker editors for report parameters of type DateTime in the Angular Report Viewer?
 			</code></pre>
 		</td>
 		<td>
@@ -215,7 +216,7 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How to to show ComboBox editors for the report parameters in the HTML5 Report Viewer?
+#telerik-reporting-assistant How to display ComboBox editors for the report parameters in the HTML5 Report Viewer?
 			</code></pre>
 		</td>
 		<td>
@@ -244,7 +245,7 @@ Quick Start Guide:
 		</td>
 		<td>
 			<pre><code>
-#telerik-reporting-assistant The document map panel is missing in the React Report Viewer, how to display it?
+#telerik-reporting-assistant The document map panel is missing in the React Report Viewer. How to display it?
 			</code></pre>
 		</td>
 	</tr> 	
@@ -260,14 +261,14 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Core projects that targets .NET 9?
+#telerik-reporting-assistant How do I set up the Telerik Reporting REST Service in an ASP.NET Core project that targets .NET 9?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How do I set up the Telerik Reporting REST Srevice in an ASP.NET Framework projects that targets .NET Framework 4.8?
+#telerik-reporting-assistant How do I set up the Telerik Reporting REST Service in an ASP.NET Framework project that targets .NET Framework 4.8?
 			</code></pre>
 		</td>
 	</tr>
@@ -288,7 +289,7 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant In production, the report viewer displays `Client with ID 'xxxxxx' not found. Expired `. In local environment, it loads the reports as expected. How could I resolve this?
+#telerik-reporting-assistant In production, the report viewer displays `Client with ID 'xxxxxx' not found. Expired `. In a local environment, it loads the reports as expected. How could I resolve this?
 			</code></pre>
 		</td>
 	</tr>
@@ -306,6 +307,3 @@ Quick Start Guide:
 
 * [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
 * [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
-* [Telerik Reporting Copilot Extension]({%slug ai-copilot-extension%})
-* [Kendo UI for Angular GitHub Copilot Extension](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/copilot-extension)
-* [Telerik Blazor GitHub Copilot Extension](https://www.telerik.com/blazor-ui/documentation/ai/copilot-extension)

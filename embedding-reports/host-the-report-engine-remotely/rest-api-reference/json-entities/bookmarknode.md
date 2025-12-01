@@ -5,6 +5,7 @@ description: "Learn more about the BookmarkNode JSON Entity in Telerik Reporting
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/bookmarknode
 tags: bookmarknode
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-json-entities-bookmarknode,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/bookmarknode
 ---

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: styling,native,angular,viewer,themebuilder
 published: True
 position: 10
+reportingArea: General
 ---
 
 # Styling the Native Angular Report Viewer with ThemeBuilder

@@ -5,6 +5,7 @@ description: "Learn how to create and then use custom Parameter Editors with the
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: how,to,create,a,custom,parameter,editor
 published: True
+reportingArea: MVCWrapper
 position: 4
 previous_url: /html5-mvc-report-viewer-customizing-custom-parameters-editor
 ---

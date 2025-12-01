@@ -6,6 +6,7 @@ slug: vb-reporting
 tags: telerik, reporting, reports, vb, net
 published: True
 position: 99
+reportingArea: General
 ---
 
 # Developing VB.NET Reporting Applications

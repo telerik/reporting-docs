@@ -7,6 +7,7 @@ tags: connecting,the,sqldatasource,component,to,a,data,source
 published: True
 position: 1
 previous_url: /sql-data-source-connecting-to-data
+reportingArea: General
 ---
 
 # Connecting the SqlDataSource Component to Data Source

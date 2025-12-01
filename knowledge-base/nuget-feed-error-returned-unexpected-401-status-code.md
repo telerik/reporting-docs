@@ -33,12 +33,9 @@ After changing my Telerik password, I get a Telerik NuGet V2 feed error about a 
 
 After changing your Telerik password, you need to reset your credentials in the `NuGet.config` file. 
 
-## Solution 
+## Solution
 
-To fix this issue, open a Command Prompt and run the following command: 
-    
-````powershell
-NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "your login email" -Password "your new password"
-````
+Update your credentials and use an API key instead of a password. Using an API key instead of a password is a more secure approach:
 
-
+1. [Generate an API key]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}#generate-an-api-key).
+1. Update the credentials for the Telerik NuGet feed by running `NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key" -Password "YOUR-API-KEY" -StorePasswordInClearText`

@@ -7,6 +7,7 @@ tags: label,report,wizard,designer,create
 published: True
 position: 2
 previous_url: /label-report-wizard
+reportingArea: General
 ---
 
 <style>

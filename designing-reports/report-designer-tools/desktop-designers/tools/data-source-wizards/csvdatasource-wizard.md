@@ -7,6 +7,7 @@ tags: csvdatasource,wizard
 published: True
 position: 30
 previous_url: /csvdatasource-wizard
+reportingArea: General
 ---
 
 # CsvDataSource Wizard of the Report Designer

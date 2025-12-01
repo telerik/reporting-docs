@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /expressions-functions, /designing-reports/connecting-to-data/expressions/expressions-reference/functions/
+reportingArea: General
 ---
 
 # Functions Overview

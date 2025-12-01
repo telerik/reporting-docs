@@ -7,6 +7,7 @@ tags: how, set, configure, data, message, report, item, nested
 published: True
 position: 6
 previous_url: /report-structure-dataitem-set-no-data-message
+reportingArea: General
 ---
 
 # Setting a No Data Message

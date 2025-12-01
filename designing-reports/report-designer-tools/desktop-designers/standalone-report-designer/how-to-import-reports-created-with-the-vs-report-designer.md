@@ -7,6 +7,7 @@ tags: how,import,reports,vs,report,designer
 published: True
 position: 7
 previous_url: /standalone-report-designer-import-clr-reports
+reportingArea: General
 ---
 
 # Importing reports created with the VS Report Designer

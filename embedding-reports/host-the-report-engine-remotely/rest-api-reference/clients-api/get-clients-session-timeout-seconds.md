@@ -5,6 +5,7 @@ description: "Learn how to make the Get Clients Session Timeout Seconds request 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds
 tags: get,clients,session,timeout,seconds
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 3
 previous_url: /telerik-reporting-rest-api-get-clients-session-timeout-seconds,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds
 ---

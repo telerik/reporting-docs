@@ -5,6 +5,7 @@ description: Explore the Web Report Designer's panes and discover the features i
 slug: user-guide/app-tour
 tags: web, report, design, tool, create, report, web, structure 
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 5
 ---
 
@@ -12,9 +13,15 @@ position: 5
 
 The fastest way to explore the Web Report Designer and to learn its basics is to start the built-in onboarding tour, which walks you through the Report Designer's main tools.
 
+The guide, by default, starts with the optional `Help us improve!` dialog asking the web designer user for agreement to collect non-personal usage data.
+
+![Web Report Designer Analytics Looking ><](images/wrd-analytics.png) 
+
+> The purpose of this analytical data is to gather general details on the usage of the designer's components and wizards/tools. The reason we want to analyse this data is to improve the web designer based on its actual usage feedback.
+
 The app tour starts automatically the first time you open an application with an embedded Telerik Web Report Designer.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xO7Vg01JRnk?si=MZlV9FJECadFcRxI" title="Web Report Designer: An App Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5333a5ZHC_g?si=8n6kfCvDem4s9bfv&rel=0" title="Web Report Designer: An App Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 As illustrated by the video above, the main elements of the Web Report Designer's user interface are:
 

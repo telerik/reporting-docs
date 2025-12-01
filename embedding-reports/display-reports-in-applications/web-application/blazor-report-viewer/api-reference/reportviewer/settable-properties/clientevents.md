@@ -1,0 +1,40 @@
+---
+title: ClientEvents
+page_title: ClientEvents property
+description: "Gets or sets the viewer's event handler function names as strings. The function name should be fully qualified, e.g. \"window.trvEventHandlers.exportBegin\", or just \"trvEventHandlers.exportBegin\" (\"window\" qualifier is optional). The event handler functions should be implemented inside wwwroot/index.html (Blazor WebAssembly) or Pages/_Host.cshtml (Blazor Server). The JavaScript API of the event handlers is available in  https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/settable-properties/clientevents
+published: True
+reportingArea: BlazorWrapper
+---
+
+# ClientEvents
+
+Gets or sets the viewer's event handler function names as strings. The function name should be fully qualified, e.g. "window.trvEventHandlers.exportBegin", or just "trvEventHandlers.exportBegin" ("window" qualifier is optional). The event handler functions should be implemented inside wwwroot/index.html (Blazor WebAssembly) or Pages/_Host.cshtml (Blazor Server). The JavaScript API of the event handlers is available in  https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready.
+
+## Type
+
+`Telerik.ReportViewer.Blazor.ClientEventsOptions`
+
+## Examples
+
+````JavaScript
+<ReportViewer ClientEvents="@(new ClientEventsOptions
+              {
+                  Ready = "onReady",
+                  Error = "onError"
+              })" />
+
+<script>
+    function onReady() {
+        console.log("Ready");
+    }
+    function onError(e, args) {
+        console.log("Error:", e);
+        console.log(args);
+    }
+</script>
+````
+
+## See Also
+
+* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

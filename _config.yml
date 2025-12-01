@@ -300,6 +300,24 @@ navigation:
     embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities:
         position: 16
         title: "JSON Entities"
+    embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
     designing-reports:
         position: 40
         title: "Creating Reports"

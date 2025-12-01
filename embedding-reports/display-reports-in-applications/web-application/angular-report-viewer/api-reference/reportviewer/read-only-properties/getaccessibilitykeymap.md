@@ -1,0 +1,36 @@
+---
+title: getAccessibilityKeyMap
+page_title: getAccessibilityKeyMap property
+description: "Gets the shortcut keys used when the report viewer is in accessible mode. The keys in the key map are: - CONFIRM_KEY: Key used to trigger actions (default: 13, Enter) - MENU_AREA_KEY: Key to focus the menu area, if visible (default: 77, 'm') - CONTENT_AREA_KEY: Key to focus the content area, if visible (default: 67, 'c') - PARAMETERS_AREA_KEY: Key to focus the parameters area, if visible (default: 80, 'p') - DOCUMENT_MAP_AREA_KEY: Key to focus the map area, if visible (default: 68, 'd') JSON object containing accessibility key mappings"
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/read-only-properties/getaccessibilitykeymap
+published: True
+reportingArea: AngularWrapper
+---
+
+# getAccessibilityKeyMap
+
+Gets the shortcut keys used when the report viewer is in accessible mode.
+The keys in the key map are:
+
+- CONFIRM_KEY: Key used to trigger actions (default: 13, Enter)
+- MENU_AREA_KEY: Key to focus the menu area, if visible (default: 77, 'm')
+- CONTENT_AREA_KEY: Key to focus the content area, if visible (default: 67, 'c')
+- PARAMETERS_AREA_KEY: Key to focus the parameters area, if visible (default: 80, 'p')
+- DOCUMENT_MAP_AREA_KEY: Key to focus the map area, if visible (default: 68, 'd')
+JSON object containing accessibility key mappings
+
+## Type
+
+`any`
+
+## Examples
+
+````typescript
+const keyMap = viewer.getAccessibilityKeyMap();
+console.log(keyMap.CONFIRM_KEY); // Default: 13 (Enter)
+console.log(keyMap.MENU_AREA_KEY); // Default: 77 ('m')
+````
+
+## See Also
+
+* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

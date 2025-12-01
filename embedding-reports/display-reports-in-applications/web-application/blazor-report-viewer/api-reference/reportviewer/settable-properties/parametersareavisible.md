@@ -1,0 +1,26 @@
+---
+title: ParametersAreaVisible
+page_title: ParametersAreaVisible property
+description: "Gets or sets a value indicating whether the viewer's parameters area is initially visible."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/settable-properties/parametersareavisible
+published: True
+reportingArea: BlazorWrapper
+---
+
+# ParametersAreaVisible
+
+Gets or sets a value indicating whether the viewer's parameters area is initially visible.
+
+## Type
+
+`System.Boolean`
+
+## Examples
+
+````JavaScript
+<ReportViewer ParametersAreaVisible="true" />
+````
+
+## See Also
+
+* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -1,0 +1,26 @@
+---
+title: authenticationToken
+page_title: authenticationToken property
+description: "If provided, a Bearer token will be set in the Authorization header for every request to the REST service."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/settable-properties/authenticationtoken
+published: True
+reportingArea: React
+---
+
+# authenticationToken
+
+If provided, a Bearer token will be set in the Authorization header for every request to the REST service.
+
+## Type
+
+`string`
+
+## Examples
+
+````JavaScript
+// Set authentication tokenconst token = "YOUR_AUTH_TOKEN";// Use with component: authenticationToken={token}
+````
+
+## See Also
+
+* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

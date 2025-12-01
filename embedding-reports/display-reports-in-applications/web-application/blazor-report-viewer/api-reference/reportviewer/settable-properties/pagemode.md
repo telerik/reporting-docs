@@ -1,0 +1,26 @@
+---
+title: PageMode
+page_title: PageMode property
+description: "Gets or sets the page mode. SinglePage - Displays a single report page. ContinuousScroll - Displays multiple report pages. Pages are loaded on-demand while scrolling."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/settable-properties/pagemode
+published: True
+reportingArea: BlazorWrapper
+---
+
+# PageMode
+
+Gets or sets the page mode. SinglePage - Displays a single report page. ContinuousScroll - Displays multiple report pages. Pages are loaded on-demand while scrolling.
+
+## Type
+
+`Telerik.ReportViewer.Blazor.PageMode`
+
+## Examples
+
+````JavaScript
+<ReportViewer PageMode="PageMode.SinglePage" />
+````
+
+## See Also
+
+* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

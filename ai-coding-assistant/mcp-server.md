@@ -345,7 +345,7 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 * "`#telerik-reporting-assistant` Add a Telerik Report Viewer to my native Angular application."
 * "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
->tip Visit the [Telerik Reporting Prompt Library]({%slug ai-prompt-library%) for more sample prompts.
+>tip Visit the [Telerik Reporting Prompt Library]({%slug ai-prompt-library%}) for more sample prompts.
 
 ## Usage Limits
 

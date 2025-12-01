@@ -1,5 +1,5 @@
 ---
-title: Workspace Preferences
+title: Adjusting User Preferences
 page_title: Web Report Designer - Workspace Preferences
 description: The Workspace Preferences section is designed to let users customize the look and behavior of their design environment for better productivity and comfort.
 slug: web-report-designer-user-guide-workspace-preferences
@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Workspace Preferences in Web Report Designer
+# Adjusting User Preferences in Web Report Designer
 
 The **Workspace Preferences** section provides options to personalize the designer interface without affecting the actual report content. These settings are user-specific and typically stored in the browser or session.
 

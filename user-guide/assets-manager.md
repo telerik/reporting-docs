@@ -79,7 +79,7 @@ To help you manage your shared resources with ease and flexibility, the Assets M
 
 * **Manage Files**&mdash;Upload, download, rename, move, or delete files and folders&mdash;all in one place. You can also drag and drop files directly into the manager for quick uploads.
 
-* **View Asset Details Instantly**: Want to see more info about a file? Just select an asset and toggle the `View Details` button. A panel on the right will show metadata like file name, type, and size:
+* **View Asset Details**&mdash;Selecting an asset and toggling the **View Details** button brings up a panel on the right that shows metadata like file name, type, and size:
     
      <img style="border: 1px solid gray;" src="images/wrd-assets-manager-view-details.gif" alt="Assets Manager View Details" />
 

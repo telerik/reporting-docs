@@ -24,7 +24,9 @@ To start the Preferences panel:
 
     <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-main-menu.png" alt="Workspace Preferences" /> 
 
-The Workspace Preferences offer the following main categories of settings:
+The Workspace Preferences are split into two categories:
+* [Snapping](#snapping)&mdash;this category lists the options related to the automatic alignment of objects on the design surface of the Web Report Designer.
+* [General](#general)&mdash;this category list options related to the behavior of the Web Report Designer.
 
 ## Snapping
 

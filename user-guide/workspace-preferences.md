@@ -14,7 +14,7 @@ The **Workspace Preferences** section provides options to personalize the design
 
 <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences.png" alt="Workspace Preferences" caption="Workspace Preferences" />
 
-To start the Preferences panel:
+To open the **Preferences** panel:
 
 1. Open the Web Report Designer in your browser.
 

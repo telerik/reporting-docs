@@ -1,10 +1,12 @@
 {
   "metadata": [
     {
+      "codeSourceBasePath": "../../reporting",
       "src": [
         {
           "files": [
-            "Bin/**.dll"
+            "Bin/**.dll",
+            "Bin/**.xml"
           ],
           "exclude": [
             "Bin/Telerik.Reporting.GraphQL.Client.dll",

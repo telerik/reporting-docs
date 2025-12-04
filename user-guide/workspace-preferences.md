@@ -37,7 +37,7 @@ The Workspace Preferences offer the following main categories of settings:
 
     When disabled: You can freely position items without restrictions.
 
-* **Snap to snap lines**—Helps you position elements relative to each other (e.g., aligning text boxes, charts, or tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.
+* **Snap to snap lines**—Helps you position elements relative to each other (for example, aligning TextBoxes, Charts, or Tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.
 
 <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-snap-to-snap-lines.gif" alt="Snap to snap lines" /> 
 

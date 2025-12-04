@@ -20,7 +20,7 @@ To start the Preferences panel:
 
 1. Click the **Main Menu** at the top left corner.
 
-1. Select "Workspace Preferences" from the menu options:
+1. Select **Workspace Preferences** from the menu options:
 
     <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-main-menu.png" alt="Workspace Preferences" /> 
 

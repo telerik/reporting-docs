@@ -36,7 +36,7 @@ To share a resource (e.g. an image), you need to invoke the **Assets Manager** i
 
 1. Click the **Main Menu** at the top left corner.
 
-1. Select "Assets Manager" from the menu options:
+1. Select **Assets Manager** from the menu options:
  
     <img style="border: 1px solid gray;" src="images/wrd-assets-manager-main-menu.png" alt="Assets Manager Main Menu" />
 

@@ -35,7 +35,6 @@ The Workspace Preferences offer the following main categories of settings:
     * Moving an item → It jumps to the nearest grid intersection.
     * Resizing an item → Edges align with grid lines.
 
-    When disabled: You can freely position items without restrictions.
 
 * **Snap to snap lines**—Helps you position elements relative to each other (for example, aligning TextBoxes, Charts, or Tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.
 

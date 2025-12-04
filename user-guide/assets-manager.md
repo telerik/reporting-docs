@@ -16,7 +16,7 @@ To share resources (like company logos, data files) when crafting reports in the
 
 You can share and reuse:  
 
-* **Images** (e.g., logos, backgrounds): Suitable for using a company logo accross multiple reports when the logo is stored at one centralized place.
+* **Images** (for example, logos, backgrounds): Suitable for using a company logo across multiple reports when the logo is stored at one centralized place.
 
 * **Data files** (for example, CSV, JSON, shapefiles): Share common data that can be reused across multiple users.
 

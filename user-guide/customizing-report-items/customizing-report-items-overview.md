@@ -39,7 +39,7 @@ To facilitate the easier styling of your report, the Properties Panel offers sev
 
 * **Different Views**: Choose the layout that fits your style:
 
-  * **Categorized View**: Groups properties by function (like Appearance, Layout, Data), making it easier to find what you need.
+  * **Categorized view**: Groups properties by function (like Appearance, Layout, Data), making it easier to find what you need.
   * **Alphabetical View**: Lists everything in order - perfect if you know exactly what you're looking for.
 
 |Categorized|Alphabetical|

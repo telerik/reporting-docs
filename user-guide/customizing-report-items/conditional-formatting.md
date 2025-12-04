@@ -23,7 +23,11 @@ To visually highlight important data, **Conditional formatting** lets you automa
   
 ## Formatting a Single Item
 
-Watch this quick tutorial to learn how to apply conditional formatting to a LineTotal TextBox in a table - changing its color to red when the *value is less than 50*:
+[Your text explaining when to use conditional formatting for a single item].
+
+[Simplified step-by-step instructions].
+
+The quick video tutorial below shows how to apply conditional formatting to a LineTotal TextBox in a table by changing its color to red when a value is less than 50.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sfcIkSI-Opo?si=MWpCD6GUSH1M_cVd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

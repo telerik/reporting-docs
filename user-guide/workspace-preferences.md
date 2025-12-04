@@ -47,7 +47,7 @@ The Workspace Preferences offer the following main categories of settings:
 ## General
 
 
-* **Preserve open reports on exit**—Controls whether the designer remembers which reports you had open when you close the application and restores them the next time you start it. Useful for continuing work without manually reopening each report.
+* **Preserve open reports on exit**—Controls whether the designer remembers which reports were open when you closed the application and automatically restores them at the next launch.
 
 * **Collect non-personal usage data**—Controls whether to collect non-personal usage data. The data contains usage information about the software's screens and tools and is being used to improve its functionality.
 

@@ -83,7 +83,7 @@ To help you manage your shared resources with ease and flexibility, the Assets M
     
      <img style="border: 1px solid gray;" src="images/wrd-assets-manager-view-details.gif" alt="Assets Manager View Details" />
 
-* **Quick Access to Recent Assets**: No need to search for files you just used - your recently accessed assets are tracked and easily accessible.
+* **Quick Access to Recent Assets**&mdash;Your recently accessed assets are tracked and easily accessible.
 
      <img style="border: 1px solid gray;" src="images/wrd-assets-manager-recently-used.png" alt="Assets Manager Recently Used" />
 

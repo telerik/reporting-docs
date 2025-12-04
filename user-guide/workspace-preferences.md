@@ -42,7 +42,7 @@ The Workspace Preferences offer the following main categories of settings:
 <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-snap-to-snap-lines.gif" alt="Snap to snap lines" /> 
 
 
->tip Snap to grid uses a static grid on the canvas, while snap lines are dynamic and context-sensitive, appearing only when items are near each other.
+>tip Snap to grid uses a static grid on the canvas, while snap lines are dynamic and context-sensitive, appearing only when items are close enough.
 
 ## General
 

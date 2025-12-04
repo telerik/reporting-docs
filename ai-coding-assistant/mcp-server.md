@@ -102,12 +102,12 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 
 The steps below describe the sample procedure for configuring the Telerik Reporting MCP server in Visual Studio.
 
-1. Add an `mcp.json` file to either of the following locations:
+1. Add an `.mcp.json` file to either of the following locations:
 
 	* For a workspace-specific setup, add the file to the solution's folder.
 	* For a global setup, add the file to your user directory, `%USERPROFILE%` (for example, `C:\Users\YourName\.mcp.json`).
 
-1. Add the following configuration to the `mcp.json` file:
+1. Add the following configuration to the `.mcp.json` file:
 
 	* In .NET 10:
 

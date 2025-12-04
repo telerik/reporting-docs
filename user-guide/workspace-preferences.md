@@ -28,6 +28,8 @@ The Workspace Preferences offer the following main categories of settings:
 
 ## Snapping
 
+Snapping is a feature that detects alignment opportunities while designing the report. You can configure the following snapping options:
+
 * **Snap to grid lines** (*Currently Not Supported*)—When enabled and you move or resize report items (like TextBoxes, Tables, Charts) on the design surface, their edges automatically align to the nearest grid line on the underlying grid system. When disabled, you can freely position items without restrictions.
 
 

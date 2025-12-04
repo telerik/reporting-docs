@@ -6,7 +6,7 @@ slug: wrd-user-guide-create-nested-hierarchy-with-subreport
 tags: web, report, design, components, subreport, hierarchy, master, detail, nested
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-position: 1
+position: 2
 ---
 
 # Creating Nested Hierarchy with SubReports

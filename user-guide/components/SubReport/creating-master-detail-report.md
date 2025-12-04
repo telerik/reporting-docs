@@ -6,7 +6,7 @@ slug: web-report-designer-user-guide-creating-master-detail-report
 tags: web, report, design, components, subreport, hierarchy, master, detail
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-position: 0
+position: 1
 ---
 
 <style>

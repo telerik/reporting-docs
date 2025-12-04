@@ -54,7 +54,7 @@ The main root folder contains three predefined subfolders:
 
 * `Images`&mdash;Contains image files used in PictureBox items, backgrounds, logos, and so on.
 
-* **Styles** (Holds stylesheets (e.g., .trdx, .css) used for consistent styling across reports.
+* `Styles`&mdash;Holds stylesheets (for example, `.trdx`, `.css`) used for consistent styling across reports.
 
 Users can create subfolders within these categories to better organize their assets. Developers can configure different predefined folders on the backend if needed.
 

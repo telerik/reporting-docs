@@ -49,7 +49,7 @@ The Workspace Preferences offer the following main categories of settings:
 
 * **Preserve open reports on exit**—Controls whether the designer remembers which reports you had open when you close the application and restores them the next time you start it. Useful for continuing work without manually reopening each report.
 
-* **Collect non-personal usage data**—Controls whether to collect non-personal usage data on the usage of the designer's components and wizards/tools. The reason we want to analyse this data is to improve the web designer based on its actual usage feedback.
+* **Collect non-personal usage data**—Controls whether to collect non-personal usage data. The data contains usage information about the software's screens and tools and is being used to improve its functionality.
 
 ## See Also
 

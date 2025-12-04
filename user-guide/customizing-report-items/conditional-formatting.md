@@ -34,7 +34,6 @@ The quick video tutorial below shows how to apply conditional formatting to a Li
 ## Formatting Multiple Items 
 
 If you want to apply the same rule to the entire row with data, it requires you to apply rules **individually** to each item:
-* Add the same conditional formatting rule manually.
 
 >tip To save time, you can group items inside a Panel and apply the conditional formatting to the panel itself. This way, all nested items inherit the style based on the condition. This approach is shown in the following video: 
 

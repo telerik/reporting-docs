@@ -33,7 +33,7 @@ The Workspace Preferences offer the following main categories of settings:
     The design surface has an invisible or visible grid. When snapping is enabled:
 
     * Moving an item → It jumps to the nearest grid intersection.
-    * Resizing an item → Edges align with grid lines.
+    * Resizing an item makes its edges align with the grid lines.
 
 
 * **Snap to snap lines**—Helps you position elements relative to each other (for example, aligning TextBoxes, Charts, or Tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.

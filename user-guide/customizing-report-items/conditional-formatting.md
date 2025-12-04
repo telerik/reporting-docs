@@ -13,7 +13,7 @@ img[alt$="><"] {
 }
 </style>
 
-# Conditional Formatting 
+# Using Conditional Formatting 
 
 To visually highlight important data, **Conditional formatting** lets you automatically style report items based on the values they display. This makes your reports more dynamic and easier to read. For example, you can set a TextBox showing revenue to turn red if the value drops below 10,000. This helps you draw attention to numbers that need review or action.
  

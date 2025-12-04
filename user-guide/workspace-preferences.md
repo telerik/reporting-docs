@@ -30,7 +30,6 @@ The Workspace Preferences offer the following main categories of settings:
 
 * **Snap to grid lines** (*Currently Not Supported*)—Snapping to grid lines means that when you move or resize report items (like TextBoxes, Tables, Charts) on the design surface, their edges automatically align to the nearest grid line. 
 
-    The design surface has an invisible or visible grid. When snapping is enabled:
 
     * Moving an item makes it jump to the nearest grid intersection.
     * Resizing an item makes its edges align with the grid lines.

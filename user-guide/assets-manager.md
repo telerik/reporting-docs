@@ -18,7 +18,7 @@ You can share and reuse:
 
 * **Images** (e.g., logos, backgrounds): Suitable for using a company logo accross multiple reports when the logo is stored at one centralized place.
 
-* **Data files** (e.g., CSV, JSON, shapefiles): Share common data that can be reused accross multiple users.
+* **Data files** (for example, CSV, JSON, shapefiles): Share common data that can be reused across multiple users.
 
 * **Stylesheets** (for consistent report styling): Styles created in a report can be exported and then used in other reports. 
 

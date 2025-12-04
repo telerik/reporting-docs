@@ -72,7 +72,6 @@ To help you manage your shared resources with ease and flexibility, the Assets M
 
 * **Choose Your View: Grid or List**&mdash;You can switch between Grid View and List View depending on your workflow. The Grid View also supports column resizing for better visibility.
 
-    Prefer a visual layout or a compact list? You can switch between Grid View and List View depending on your workflow. Grid View even supports column resizing for better visibility.
 
     |Grid View|List View|
     |----|----|

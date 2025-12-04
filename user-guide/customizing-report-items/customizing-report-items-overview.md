@@ -13,7 +13,7 @@ img[alt$="><"] {
 }
 </style>
 
-# Customizing Report Items - Overview
+# Customizing Report Items: Overview
 
 Styling report items serves both, functional and aesthetic, purposes. Visual consistency (e.g., using a theme or style rules) improves user experience and brand alignment. It allows you to improve readability and clarity in your reports. Applying different colors or fonts distinguishes separate sections or highlight key information.
 To customize or style report items in the Telerik Web Report Designer, you can use its

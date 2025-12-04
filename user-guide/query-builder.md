@@ -1,5 +1,5 @@
 ---
-title: Query Builder
+title: Building SQL Queries
 page_title: Query Builder in the Web Report Designer
 description: "Learn more about the Query Builder in the Web Report Designer and how to use it to create basic queries easily in Telerik Reporting."
 slug: user-guide/query-builder
@@ -16,9 +16,11 @@ img[alt$="><"] {
 
 </style>
 
-# Web Report Designer – Query Builder for Easy Data Selection
+# Building SQL Queries the Easy Way
 
-The Web Report Designer gives you two easy ways to build queries: a visual tool (where you click and select options) and a text tool (where you type the query). A query is just a set of instructions that tells the system what data you want from a database. This data is used by something called a SqlDataSource, which connects your report to the database. The Query Builder works with most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
+The Web Report Designer lets you build SQL queries in two ways: by using a visual tool (where you click and select options) or a text tool (where you type the query).
+
+A query is just a set of instructions that tells the system what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
 
 ![The Graphical SQL Query Builder Form of the Web Report Designer ><](images/QueryBuilderWRD.png)
 
@@ -26,7 +28,7 @@ The graphical query builder helps you find information in a database without wri
 
 ## Schema Restrictions
 
-As of 2025 Q1, the Web Report Designer’s Query Builder has a new option called [Schema Restrictions](/api/telerik.reporting.sqldatasource#Telerik_Reporting_SqlDataSource_SchemaRestrictions). This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
+As of 2025 Q1, the Web Report Designer’s Query Builder has a new option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
 
 ````
 null,Production,ProductCategory

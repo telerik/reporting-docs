@@ -70,7 +70,7 @@ The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-gui
 
 To help you manage your shared resources with ease and flexibility, the Assets Manager provides several intuitive features:
 
-* **Choose Your View: Grid or List**
+* **Choose Your View: Grid or List**&mdash;You can switch between Grid View and List View depending on your workflow. The Grid View also supports column resizing for better visibility.
 
     Prefer a visual layout or a compact list? You can switch between Grid View and List View depending on your workflow. Grid View even supports column resizing for better visibility.
 

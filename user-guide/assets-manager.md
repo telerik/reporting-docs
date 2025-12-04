@@ -87,7 +87,7 @@ To help you manage your shared resources with ease and flexibility, the Assets M
 
      <img style="border: 1px solid gray;" src="images/wrd-assets-manager-recently-used.png" alt="Assets Manager Recently Used" />
 
-* **Organize Reports for Report Books**: If you are creating a Report Book, use the Assets Manager to select and organize individual reports into a cohesive, multi-report document.
+* **Organize Reports for Report Books**&mdash;If you are creating a Report Book, use the Assets Manager to select and organize individual reports into a cohesive, multi-report document.
 
 ## See Also
 

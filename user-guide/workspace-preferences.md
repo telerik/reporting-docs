@@ -32,7 +32,7 @@ The Workspace Preferences offer the following main categories of settings:
 
     The design surface has an invisible or visible grid. When snapping is enabled:
 
-    * Moving an item → It jumps to the nearest grid intersection.
+    * Moving an item makes it jump to the nearest grid intersection.
     * Resizing an item makes its edges align with the grid lines.
 
 

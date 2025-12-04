@@ -52,7 +52,7 @@ The main root folder contains three predefined subfolders:
 
 * `Data`&mdash;Stores data files like `.csv`, `.json`, and shapefiles used in Map items)
 
-* **Images** (Contains image files used in PictureBox items, backgrounds, logos, etc.)
+* `Images`&mdash;Contains image files used in PictureBox items, backgrounds, logos, and so on.
 
 * **Styles** (Holds stylesheets (e.g., .trdx, .css) used for consistent styling across reports.
 

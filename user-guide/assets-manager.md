@@ -68,7 +68,7 @@ The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-gui
 
 ## Enhanced UI Features
 
-To help you manage your shared resources with ease and flexibility the Assets Manager is packed with a rich set of UI intuitive features:
+To help you manage your shared resources with ease and flexibility, the Assets Manager provides several intuitive features:
 
 * **Choose Your View: Grid or List**
 

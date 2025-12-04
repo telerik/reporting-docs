@@ -10,7 +10,7 @@ position: 9
 
 # Adjusting User Preferences in Web Report Designer
 
-The **Workspace Preferences** section provides options to personalize the designer interface without affecting the actual report content. These settings are user-specific and typically stored in the browser or session.
+The **Workspace Preferences** provide options for personalizing the Web Report Designer interface without affecting the actual report content. These settings are user-specific and typically stored in the browser.
 
 <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences.png" alt="Workspace Preferences" caption="Workspace Preferences" />
 

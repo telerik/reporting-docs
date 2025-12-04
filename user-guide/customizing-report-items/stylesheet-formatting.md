@@ -1,6 +1,6 @@
 ---
 title: Using Style Sheets
-page_title: Web Report Designer - StyleSheet Formatting
+page_title: Web Report Designer - Using Style Sheets
 description: Learn how to customize the visuals of your report using the fine-grained, built-in styling model, similar to the Cascading Style Sheets (CSS) model.
 slug: wrd-stylesheet-formatting
 tags: web, report, design, customize, style, condition, formatting, properties, area 

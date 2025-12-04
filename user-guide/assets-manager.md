@@ -10,7 +10,7 @@ position: 8
 
 # Sharing Resources with Assets Manager
 
-To share resources (like company logo, data files) when crafting reports in the [Web Report Designer](https://demos.telerik.com/reporting/designer), Telerik Reporting offers the **Assets Manager** tool. It is designed to help report authors manage shared resources used across multiple reports. It provides centralized resource management which allows uploading, organizing, renaming, and deleting various types of assets directly on the server. The **Assets Manager** ensures a unified consistent look and feel across reports and enables teams to work together - data experts can manage sources, while designers focus on presentation.
+To share resources (like company logos, data files) when crafting reports in the [Web Report Designer](https://demos.telerik.com/reporting/designer), use the **Assets Manager**, which helps you manage shared resources used across multiple reports. It provides centralized resource management, allowing users to upload, organize, rename, and delete various types of assets directly on the server. Shared report resources ensure a unified, consistent look and feel across reports and enable teams to work together&mdash;data experts can manage sources, while designers focus on presentation.
 
 <img style="border: 1px solid gray;" src="images/wrd-assets-manager.png" alt="Assets Manager" />
 

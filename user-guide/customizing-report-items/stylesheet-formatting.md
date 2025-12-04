@@ -13,7 +13,7 @@ img[alt$="><"] {
 }
 </style>
 
-# StyleSheet Formatting
+# Using Style Sheets in Reports
 
 To keep your report design clean, consistent, and easy to manage StyleSheets in the Web Report Designer let you apply centralized, reusable styles - just like CSS in web development.
 

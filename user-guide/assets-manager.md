@@ -26,7 +26,7 @@ You can share and reuse:
 
 * **Report Templates** (.trtx file): Offer initial report layout and styling, and allow creating reports with consistent look and feel. Read more in [Creating and Using Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%}).
 
-Once uploaded, assets can be reused in multiple reports, ensuring consistency and reducing duplication. For example, updating a company logo in the Assets Manager updates it across all reports using that asset.
+Once uploaded, you can reuse the assets in multiple reports, ensuring consistency and reducing duplication. For example, updating a company logo in the Assets Manager updates it across all reports using that asset.
 
 ## Sharing a Resource
 

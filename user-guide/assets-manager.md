@@ -60,7 +60,7 @@ You can create subfolders within these categories to better organize their asset
 
 ### Reports
 
-The `Reports` folder is a dedicated folder for storing report definitions which includes all available reports on the server. It is possible to organize them into subfolders, grouping the reports by category, department, or purpose. Shared reports that can be reused as SubReports in other designs.
+The `Reports` folder is a dedicated folder for storing report definitions, which includes all available reports on the server. It is possible to organize them into subfolders, grouping the reports by category, department, or purpose. Shared reports that can be reused as SubReports in other designs.
 
 ### Shared Data Sources
 

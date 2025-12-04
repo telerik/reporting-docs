@@ -50,7 +50,7 @@ Several default folders that help organizing shared resources for usage across m
 
 The main root folder contains three predefined subfolders: 
 
-* **Data** (Stores data files like .csv, .json, and shapefiles used in Map items)
+* `Data`&mdash;Stores data files like `.csv`, `.json`, and shapefiles used in Map items)
 
 * **Images** (Contains image files used in PictureBox items, backgrounds, logos, etc.)
 

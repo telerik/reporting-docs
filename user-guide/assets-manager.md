@@ -56,7 +56,7 @@ The main root folder contains three predefined subfolders:
 
 * `Styles`&mdash;Holds stylesheets (for example, `.trdx`, `.css`) used for consistent styling across reports.
 
-Users can create subfolders within these categories to better organize their assets. Developers can configure different predefined folders on the backend if needed.
+You can create subfolders within these categories to better organize their assets.
 
 ### Reports
 

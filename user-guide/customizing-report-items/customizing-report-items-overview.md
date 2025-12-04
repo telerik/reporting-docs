@@ -35,7 +35,7 @@ The **Properties Area** represents the section on the right-side where you can v
 
 ### Key Features
 
-The Properties Area in the Web Report Designer is designed to make customizing your report items smooth and intuitive. Here’s how it helps you work smarter:
+To facilitate the easier styling of your report, the Properties Panel offers several features that simplify access to the built-in styling tools:
 
 * **Different Views**: Choose the layout that fits your style:
 

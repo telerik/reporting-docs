@@ -16,7 +16,7 @@ The **Workspace Preferences** section provides options to personalize the design
 
 To start the Preferences panel:
 
-1. Launch the Web Report Designer in your browser.
+1. Open the Web Report Designer in your browser.
 
 1. Click the **Main Menu** at the top left corner.
 

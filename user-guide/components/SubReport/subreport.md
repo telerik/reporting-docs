@@ -26,6 +26,7 @@ SubReports act as containers that automatically adjust their size based on the c
 * Reusable components&mdash;Create shared headers, footers, or report sections that can be used across multiple reports.
 * Complex layouts&mdash;Combine different data sources and report structures within a single report.
 * [Hierarchical data]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%})&mdash;Show nested data relationships with proper grouping and organization.
+* [Organization Structure]({%slug wrd-user-guide-create-org-hierarchy-with-subreport%})&mdash;Use recursive SubReports and a self-referencing flat data source. The hierarchy is achieved by having the main report reference itself as a SubReport, passing a parameter that filters child records based on the parent’s ID.
 
 ## Prerequisites
 

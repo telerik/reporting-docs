@@ -473,10 +473,10 @@ nodeversion: "16.0.0"
 angularsubsetversion: "17.2.0"
 kendosubsetversion: "2025.1.227"
 kendothemeversion: "10.2.0"
-blazoruiversion: "9.1.0"
+blazoruiversion: "12.0.0"
 mindotnetversion: "8"
 mindotnetoutputdir: "\\bin\\Debug\\net8.0"
-dotnetversions: ".NET 8, .NET 9 and .NET 10"
+dotnetversions: ".NET 8, .NET 9, and .NET 10"
 
 # Feedback Form Product code
 productCode: REPORTING

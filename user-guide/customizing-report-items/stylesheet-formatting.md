@@ -18,7 +18,9 @@ img[alt$="><"] {
 Using style sheets in the Web Report Designer lets you apply centralized, reusable styles to multiple report items, similar to CSS in web development. 
 
 
-To apply formatting via external stylesheets, you can use a CSS-like styling model that allows centralized and reusable styling across multiple report items. 
+The Web Report Designer allows you to use two types of style sheets: 
+* Quick style sheets that you create for each report and that live within each report
+* External style sheets that live in a separate file and that you can reuse across reports
 
 ## How to Create a StyleSheet
 

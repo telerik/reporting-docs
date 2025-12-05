@@ -42,7 +42,9 @@ The following tutorial shows how to define a StyleRule in the report's StyleShee
 
 ## Using External StyleSheets
 
-If you want to keep your styles in a separate file, use an external StyleSheet (XML format) to define and apply styles across reports. An external StyleSheet is an XML file that contains StyleRules. These rules define how report items should look - similar to CSS in web development. You can apply styles based on:
+External style sheets (XML files) allow you to reuse style rules across multiple reports. This type of style sheets are external to each report and this allows you to reference them from an arbitrary number of reports. Each style sheets file contains one or more style rules that define how report items must look.
+
+You can apply styles based on:
 
 * **TypeSelector**: Applies to all items of a specific type (e.g., all TextBox items).
 * **AttributeSelector**: Applies to items with specific attributes.

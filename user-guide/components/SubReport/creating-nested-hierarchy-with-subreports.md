@@ -21,7 +21,7 @@ The main benefits of this approach are:
 
 The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. To illustrate the hierarchical structure of the data used in the tutorial, see the JSON data below. It represents a collection of Categories, where each category contains a **nested** list of its Products.
 
-Let's have the sample [JSON data]({%slug wrd-nested-json-data-categories-products%}) representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure.
+Let's have the sample [JSON data](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Data%20Files/Categories-Products-Nested-Data.json) representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure.
 
 A complete step-by-step video is available here:
 

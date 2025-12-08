@@ -99,7 +99,7 @@ To design a report that represents a hierarchy:
 
     <img style="border: 1px solid gray;" src="images/sub-report-default-table.png" alt="Categories Products Default Table" caption="Categories Products Default Table" /> 
 
-1. Select the generated TextBox for the Products field (e.g. the TextBox bound to Fields.Products)
+1. Select the generated TextBox for the Products field (the TextBox bound to Fields.Products).
 
 1. Navigate to the Components tab and click SubReport. Thus, the TextBox item is replaced by a SubReport item.
 

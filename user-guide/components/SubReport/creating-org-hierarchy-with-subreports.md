@@ -90,7 +90,7 @@ To create the Organizational Hierarchy, follow the steps:
 
 1. Click the **Preview** button. You will see only the CEO (Alice Johnson) because the `ManagerID=0` and only the CEO meets the filter criterion. 
 
-1. Add a **SubReport** item and specify the `Report source Type` to **UriReportSource** using the same OrgStructure.trdp as `Uri`:
+1. Add a **SubReport** item and set the **Report source** **Type** to `UriReportSource` using the same `OrgStructure.trdp` as **Uri**:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-uri-report-source.png" alt="Org Hierarchy Uri Report Source" caption="Org Hierarchy Uri Report Source" />  
 

@@ -68,7 +68,7 @@ To create the Organizational Hierarchy, follow the steps:
 
 1. Toggle the option **This CSV has header row**.
 
-1. Specify **Integer** type for the `EmployeeID` and `ManagerID` columns.
+1. For the `EmployeeID` and `ManagerID` columns, use the `Integer` type.
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-data-columns-type.png" alt="Org Hierarchy Flat Data Columns Type" caption="Org Hierarchy Flat Data Columns Type" />  
 

@@ -72,7 +72,7 @@ To create the Organizational Hierarchy, follow the steps:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-data-columns-type.png" alt="Org Hierarchy Flat Data Columns Type" caption="Org Hierarchy Flat Data Columns Type" />  
 
-1. Set the Report's DataSource to the just created CSVDataSource.
+1. Set the Report's data source to the just created CSV data source.
 
 1. Create an Integer report parameter (e.g. reportParameterManagerID) with Value=0.
 

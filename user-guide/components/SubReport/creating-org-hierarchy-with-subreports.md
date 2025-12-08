@@ -33,7 +33,7 @@ The approach demonstrated here uses a recursive SubReport to construct an hierar
 
 To create the Organizational Hierarchy, follow the steps:
 
-1. Create a new report (e.g. OrgStructure.trdp) which will be used as our report for displaying Employees.
+1. Create a new report (`OrgStructure.trdp`), which you will use as a report to show the employees.
 
 1. Delete the Header and Footer. Leave only the [DetailSection]({%slug user-guide/components/report-sections%}).
 

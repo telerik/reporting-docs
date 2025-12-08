@@ -88,7 +88,7 @@ To create the Organizational Hierarchy, follow the steps:
     = Fields.ManagerID = = Parameters.reportParameterManagerID.Value
     ```
 
-1. Click the `Preview` button and you are expected to see only the CEO (Alice Johnson) because its ManagerID=0 and it meets the filter criterion. 
+1. Click the **Preview** button. You will see only the CEO (Alice Johnson) because the `ManagerID=0` and only the CEO meets the filter criterion. 
 
 1. Add a **SubReport** item and specify the `Report source Type` to **UriReportSource** using the same OrgStructure.trdp as `Uri`:
 

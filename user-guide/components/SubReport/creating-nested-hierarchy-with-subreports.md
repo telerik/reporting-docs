@@ -109,7 +109,7 @@ To design a report that represents a hierarchy:
 
 1. Navigate to the **INNER REPORT** section and select the **UriReportSource** Type. Now, you need to create a separate report that will be used as a container for the products for each category.
 
-1. Create another report (e.g. ProductsReport.trdp) and add two TextBox items.
+1. Create another report (`ProductsReport.trdp`) and add two TextBox items.
  
 1. Using the searchbox, navigate to the **Value** field and bind to **=Fields.ProductName** and **=Fields.Price** respectively. Save the child report.
 

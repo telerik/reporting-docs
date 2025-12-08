@@ -66,7 +66,7 @@ To create the Organizational Hierarchy, follow the steps:
   
     <img style="border: 1px solid gray;" src="images/org-hierarchy-data.png" alt="Org Hierarchy Flat Data" caption="Org Hierarchy Flat Data" />   
 
-1. Toggle the *"This CSV has header row"* option.
+1. Toggle the option **This CSV has header row**.
 
 1. Specify **Integer** type for the `EmployeeID` and `ManagerID` columns.
 

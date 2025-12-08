@@ -20,7 +20,7 @@ img[alt$="><"] {
 
 Using SubReports in the Web Report Designer allows you to embed reports within other reports for creating master-detail hierarchies and reusable report components.
 
-The next video demonstrates how to create master-detail reports by using SubReports in the Telerik Web Report Designer following the below steps:
+The next video demonstrates how to create master-detail reports by using SubReports in the Telerik Web Report Designer.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GnZi9PP9EK8?si=qaBfIZnbUu1fQzyK&rel=0" title="Adding a SubReport Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

@@ -117,7 +117,7 @@ To design a report that represents a hierarchy:
 
     <img style="border: 1px solid gray;" src="images/sub-report-products-uri-report.png" alt="Specify Uri report" caption="Specify Uri report" />  
 
-1. Click the Preview button and see the products for each category group:
+1. Click the **Preview** button. In the report, you will see the products for each category group.
     
     <img style="border: 1px solid gray;" src="images/sub-report-preview-categories-products.png" alt="Preview Categories Products" caption="Preview Categories Products" />   
 

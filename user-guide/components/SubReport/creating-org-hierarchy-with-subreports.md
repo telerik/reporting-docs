@@ -74,7 +74,7 @@ To create the Organizational Hierarchy, follow the steps:
 
 1. Set the Report's data source to the just created CSV data source.
 
-1. Create an Integer report parameter (e.g. reportParameterManagerID) with Value=0.
+1. Create a report parameter (`reportParameterManagerID`) of type `Integer` with **Value** `0`.
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-report-parameter.png" alt="Org Hierarchy Report Parameter" caption="Org Hierarchy Flat Report Parameter" />  
 

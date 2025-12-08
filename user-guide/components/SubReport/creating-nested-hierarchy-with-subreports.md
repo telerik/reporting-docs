@@ -14,7 +14,7 @@ position: 2
 The Web Report Designer provides an alternative approach to parameter binding for hierarchical data using the **DataSource** property of the **SubReport** item. This method is cleaner when your detail report is fully data-bound (not just a table inside it) and works well for hierarchical nested data scenarios.
 
 Using a DataSource in the SubReport item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reducing parameter code.
-The main benefits with this approach are:
+The main benefits of this approach are:
 
 * No need to define and pass parameters manually.
 * Works naturally with hierarchical object models or JSON data.

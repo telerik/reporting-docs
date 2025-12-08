@@ -103,7 +103,7 @@ To design a report that represents a hierarchy:
 
 1. Navigate to the Components tab and click **SubReport**. Thus, the TextBox item is replaced by a SubReport item.
 
-1. Using the searchbox, navigate to the `Bindings` section and add a new binding for the **DataSource** field and setting the **Expression** to "=Fields.Products". Thus, the SubReport item will be mapped to the Products list of the respective category record.
+1. Using the search box, navigate to the **Bindings** section and add a new binding for the **DataSource** field and set the **Expression** to `"=Fields.Products"`. Thus, the SubReport item will be mapped to the Products list of the respective category record.
 
     <img style="border: 1px solid gray;" src="images/sub-report-datasource-binding.png" alt="DataSource Binding" caption="DataSource Binding" /> 
 

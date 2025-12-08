@@ -42,7 +42,7 @@ The following tutorial shows how to define a StyleRule in the report's StyleShee
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HIjkZc48abM?si=aUZKq7TlyfuwBIp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Using External StyleSheets
+## Using External Style Sheets
 
 External style sheets (XML files) allow you to reuse style rules across multiple reports. This type of style sheets are external to each report and this allows you to reference them from an arbitrary number of reports. Each style sheets file contains one or more style rules that define how report items must look.
 

@@ -111,7 +111,7 @@ To design a report that represents a hierarchy:
 
 1. Create another report (`ProductsReport.trdp`) and add two TextBox items.
  
-1. Using the searchbox, navigate to the **Value** field and bind to **=Fields.ProductName** and **=Fields.Price** respectively. Save the child report.
+1. Using the search box, navigate to the **Value** field and bind to `=Fields.ProductName` and `=Fields.Price` respectively. Save the child report.
 
 1. Go back to the `CategoriesReport.trdp` report and set the newly created `ProductsReport.trdp` as **Uri** for the **UriReportSource**.
 

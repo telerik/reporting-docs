@@ -11,7 +11,9 @@ position: 3
 
 # Creating Organization Hierarchy with SubReports
 
-An organizational hierarchy is a structured way of arranging roles, responsibilities, and authority within an organization. It defines who reports to whom and how decision-making flows across different levels. This article shows a step-by-step tutorial how to build a similar Org Hierarchy structure as illustrated below:
+An organizational hierarchy represents roles, responsibilities, and authority within an organization in a structured way. It represents both the chain of command (who reports to whom) and the mechanism by which decisions flow through the different organizational levels.
+
+This article is a step-by-step tutorial on building a report representing an Org Hierarchy structure similar to the one below:
 
 <pre>
 CEO

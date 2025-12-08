@@ -22,7 +22,7 @@ The Web Report Designer allows you to use two types of style sheets:
 * Quick style sheets that you create for each report and that live within each report
 * External style sheets that live in a separate file and that you can reuse across reports
 
-## How to Create a StyleSheet
+## Creating a Style Sheet in a Report
 
 In the Web Report Designer:
 

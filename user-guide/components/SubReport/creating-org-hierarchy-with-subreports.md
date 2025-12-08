@@ -78,7 +78,7 @@ To create the Organizational Hierarchy, follow the steps:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-report-parameter.png" alt="Org Hierarchy Report Parameter" caption="Org Hierarchy Flat Report Parameter" />  
 
-1. Add two TextBox items and bind their values to the Name and JobTitle fields respectively:
+1. Add two TextBox items and bind their values to the `Name` and `JobTitle` fields respectively:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-textbox-items.png" alt="Org Hierarchy TextBox Items" caption="Org Hierarchy Flat TextBox Items" />  
 

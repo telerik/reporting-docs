@@ -82,7 +82,7 @@ To create the Organizational Hierarchy, follow the steps:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-textbox-items.png" alt="Org Hierarchy TextBox Items" caption="Org Hierarchy Flat TextBox Items" />  
 
-1. Now, we need to filter the CSV data based on the ManagerID. Add a Filter based on the ManagerID field using the report parameter's value:
+1. Now, filter the CSV data based on the `ManagerID`. Add a Filter based on the `ManagerID` field using the report parameter's value:
 
     ```
     = Fields.ManagerID = = Parameters.reportParameterManagerID.Value

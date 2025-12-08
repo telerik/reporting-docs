@@ -20,7 +20,7 @@ The main benefits of this approach are:
 * Works naturally with hierarchical object models or JSON data.
 * Cleaner and more maintainable for multi-level hierarchies.
 
-The following example is purposed to show nested data relationships with proper grouping and organization.
+The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. To illustrate the hierarchical structure of the data used in the tutorial, see the JSON data below. It represents a collection of Categories, where each category contains a nested list of its Products.
 
 Let's have JSON data representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure:
 

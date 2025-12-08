@@ -89,7 +89,9 @@ Let's have JSON data representing a collection of Categories. Each category cont
     }
 ```
 
-1. Create a new report (e.g. CategoriesReport.trdp) which will be used as our main report for displaying Categories.
+To design a report that represents a hierarchy:
+
+1. Create a new report (for example, `CategoriesReport.trdp`). You will use it as the main (parent) report to display categories.
 
 1. Create a [JSONDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#json-data-source) item using the nested JSON collection for Categories and Products.
 

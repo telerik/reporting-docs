@@ -107,7 +107,7 @@ To design a report that represents a hierarchy:
 
     <img style="border: 1px solid gray;" src="images/sub-report-datasource-binding.png" alt="DataSource Binding" caption="DataSource Binding" /> 
 
-1. Navigate to the `Inner Report` section and select the **UriReportSource** Type. Now, we will need a separate report that will be used as a container for the products for each category.
+1. Navigate to the **INNER REPORT** section and select the **UriReportSource** Type. Now, you need to create a separate report that will be used as a container for the products for each category.
 
 1. Create another report (e.g. ProductsReport.trdp) and add two TextBox items.
  

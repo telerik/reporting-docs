@@ -35,7 +35,7 @@ To create the Organizational Hierarchy, follow the steps:
 
 1. Create a new report (`OrgStructure.trdp`), which you will use as a report to show the employees.
 
-1. Delete the Header and Footer. Leave only the [DetailSection]({%slug user-guide/components/report-sections%}).
+1. Delete the Header and Footer. Leave only the [Detail Section]({%slug user-guide/components/report-sections%}).
 
 1. Create a [CSVDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#csv-data-source) item using the self-referencing flat data for Employees:
 

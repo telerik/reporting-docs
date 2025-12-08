@@ -98,7 +98,7 @@ To create the Organizational Hierarchy, follow the steps:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-inner-report-parameter.png" alt="Org Hierarchy Inner Report Parameter" caption="Org Hierarchy Inner Report Parameter" />   
 
-1. `Preview` the report and you will see the Organization Hierarchy:
+1. Preview the report to see the organization hierarchy:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-preview.png" alt="Org Hierarchy Preview" caption="Org Hierarchy Preview" />   
 

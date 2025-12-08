@@ -4,9 +4,10 @@ page_title: Sample Nested JSON Data
 description: Use the Categories-Products nested JSON data for building hierarchies in the Web Report Designer.
 slug: wrd-nested-json-data-categories-products
 tags: web, report, subreport, hierarchy, master, detail, nested, data, sample
-published: false
+published: true
 reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 0
+toc: false
 ---
 
 # Sample Nested JSON Data

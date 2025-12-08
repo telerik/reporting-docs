@@ -38,7 +38,7 @@ In the Web Report Designer:
 
 1. Add Selectors to target specific items (e.g., all TextBox, PictureBox items).
 
-The following tutorial shows how to define a StyleRule in the report's StyleSheet and apply the style to multiple items using selectors (e.g., by item name or type):
+The following tutorial shows how to define a style rule in the report's style sheet and apply the style to multiple items by using selectors (for example, by item name or type):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HIjkZc48abM?si=aUZKq7TlyfuwBIp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

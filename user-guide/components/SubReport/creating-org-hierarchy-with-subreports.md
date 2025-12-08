@@ -26,7 +26,7 @@ CEO
  │    │    ├── Accountants
 </pre>
 
-The approach uses a recursive SubReport to build an hierarchy from flat data. The main report references itself in a SubReport item, and each subreport filters its data using a Report Parameter passed from the parent. This creates a hierarchical structure until no more child items exist. 
+The approach demonstrated here uses a recursive SubReport to construct an hierarchy from flat data. The main report references itself in a SubReport item, and each SubReport filters its data using a report parameter passed from its parent. This process continues recursively, building the hierarchy until no more child items remain:
 
 The next video demonstrates how to create Org Hierarchy reports by using SubReports in the Telerik Web Report Designer:
 

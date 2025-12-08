@@ -23,6 +23,10 @@ The example in this tutorial shows how to present and organize a report when the
 
 Let's have the sample [JSON data]({%slug wrd-nested-json-data-categories-products%}) representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure.
 
+A complete step-by-step video is available here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V3QxZimw19I?si=VdlqSxquqYvgEakX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 To design a report that represents a hierarchy:
 
 1. Create a new report (for example, `CategoriesReport.trdp`). You will use it as the main (parent) report to display categories.
@@ -54,10 +58,6 @@ To design a report that represents a hierarchy:
 1. Click the **Preview** button. In the report, you will see the products for each category group.
     
     <img style="border: 1px solid gray;" src="images/sub-report-preview-categories-products.png" alt="Preview Categories Products" caption="Preview Categories Products" />   
-
-A complete step-by-step video is available here:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V3QxZimw19I?si=VdlqSxquqYvgEakX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

@@ -94,7 +94,7 @@ To create the Organizational Hierarchy, follow the steps:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-uri-report-source.png" alt="Org Hierarchy Uri Report Source" caption="Org Hierarchy Uri Report Source" />  
 
-1. Create a parameter (e.g. reportParameterManagerID) which value is bound to the EmloyeeID. Thus, the current EmployeeID will be passed as a value for the ManagerID for the SubReport.
+1. Create a parameter (`reportParameterManagerID`) whose value is bound to the `EmloyeeID`. Thus, the current `EmployeeID` will be passed as a value for the `ManagerID` for the SubReport.
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-inner-report-parameter.png" alt="Org Hierarchy Inner Report Parameter" caption="Org Hierarchy Inner Report Parameter" />   
 

@@ -22,10 +22,10 @@ A SubReport is a report component that allows you to embed one report inside ano
 
 SubReports act as containers that automatically adjust their size based on the content of the embedded report. You can use SubReports to create:
 
-* [Master-detail relationships]({%slug web-report-designer-user-guide-creating-master-detail-report%})&mdash;Display related data in a parent-child format (for example, customers and their orders).
+* [Master-detail relationships]({%slug web-report-designer-user-guide-creating-master-detail-report%})&mdash;Display related data in a parent-child format (for example, categories and their products). The master report with categories passes a report parameter (CategoryID) to the child report with products to filter the relevant hierarchical data.
 * Reusable components&mdash;Create shared headers, footers, or report sections that can be used across multiple reports.
 * Complex layouts&mdash;Combine different data sources and report structures within a single report.
-* [Hierarchical data]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%})&mdash;Show nested data relationships with proper grouping and organization.
+* [Hierarchical data]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%})&mdash;Show nested data relationships with proper grouping and organization. The Web Report Designer provides an alternative approach to parameter binding for hierarchical data using the **DataSource** property of the **SubReport** item. This method is cleaner when your detail report is fully data-bound (not just a table inside it) and works well for hierarchical nested data scenarios.
 * [Organization Structure]({%slug wrd-user-guide-create-org-hierarchy-with-subreport%})&mdash;Use recursive SubReports and a self-referencing flat data source. The hierarchy is achieved by having the main report reference itself as a SubReport, passing a parameter that filters child records based on the parent’s ID.
 
 ## Prerequisites

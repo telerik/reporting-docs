@@ -11,83 +11,17 @@ position: 2
 
 # Creating Nested Hierarchy with SubReports
 
-The Web Report Designer provides an alternative approach to parameter binding for hierarchical data using the **DataSource** property of the **SubReport** item. This method is cleaner when your detail report is fully data-bound (not just a table inside it) and works well for hierarchical nested data scenarios.
+Using a **DataSource** in the [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reducing parameter code.
 
-Using a DataSource in the SubReport item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reducing parameter code.
 The main benefits of this approach are:
 
-* No need to define and pass parameters manually.
+* No need to define and pass parameters manually. All the data is available in the parent report.
 * Works naturally with hierarchical object models or JSON data.
 * Cleaner and more maintainable for multi-level hierarchies.
 
-The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. To illustrate the hierarchical structure of the data used in the tutorial, see the JSON data below. It represents a collection of Categories, where each category contains a nested list of its Products.
+The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. To illustrate the hierarchical structure of the data used in the tutorial, see the JSON data below. It represents a collection of Categories, where each category contains a **nested** list of its Products.
 
-Let's have JSON data representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure:
-
-```JSON
-    {
-      "CategoryID": 1,
-      "CategoryName": "Electronics",
-      "Products": [
-        {
-          "ProductID": 100,
-          "ProductName": "Electronics Item 100",
-          "Price": 146.34,
-        },
-        {
-          "ProductID": 101,
-          "ProductName": "Electronics Item 101",
-          "Price": 1470.37,
-        },
-        {
-          "ProductID": 102,
-          "ProductName": "Electronics Item 102",
-          "Price": 934.91,
-        },
-        {
-          "ProductID": 103,
-          "ProductName": "Electronics Item 103",
-          "Price": 334.59,
-        }
-      ]
-    },
-    {
-      "CategoryID": 2,
-      "CategoryName": "Home Appliances",
-      "Products": [
-        {
-          "ProductID": 104,
-          "ProductName": "Home Appliances Item 104",
-          "Price": 1019.39,
-        },
-        {
-          "ProductID": 105,
-          "ProductName": "Home Appliances Item 105",
-          "Price": 1374.47,
-           },
-        {
-          "ProductID": 106,
-          "ProductName": "Home Appliances Item 106",
-          "Price": 1128.34,
-        },
-        {
-          "ProductID": 107,
-          "ProductName": "Home Appliances Item 107",
-          "Price": 1009.11,
-        },
-        {
-          "ProductID": 108,
-          "ProductName": "Home Appliances Item 108",
-          "Price": 1355.37,
-          },
-        {
-          "ProductID": 109,
-          "ProductName": "Home Appliances Item 109",
-          "Price": 386.92,
-        }
-      ]
-    }
-```
+Let's have the sample [JSON data]({%slug wrd-nested-json-data-categories-products%}) representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure.
 
 To design a report that represents a hierarchy:
 

@@ -42,9 +42,9 @@ To resolve the invalid license watermark issue:
 
 1. Add a `TelerikLicense.vb`/`TelerikLicense.cs` file to your project. For Website projects, place the `TelerikLicense.vb`/`TelerikLicense.cs` file in the `App_Code` folder.
 
-![The TelerikLicense.vb location in the Website project><](images/TelerikLicenseFile.png)
+    ![The TelerikLicense.vb location in the Website project><](images/TelerikLicenseFile.png)
 
-> The image shows where the TelerikLicense file (TelerikLicense.vb or TelerikLicense.cs) is located in the Website project
+    > The image shows where the TelerikLicense file (TelerikLicense.vb or TelerikLicense.cs) is located in the Website project
 
 1. Use the `EvidenceAttribute` for each Telerik product requiring licensing. Add the Reporting script key downloaded from your [Telerik account's License Keys page](https://www.telerik.com/account/your-licenses/license-keys).
 

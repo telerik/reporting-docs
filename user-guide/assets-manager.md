@@ -58,13 +58,17 @@ The main root folder contains three predefined subfolders:
 
 You can create subfolders within these categories to better organize their assets.
 
-### Reports
+## Reports
 
 The `Reports` folder is a dedicated folder for storing report definitions, which includes all available reports on the server. It is possible to organize them into subfolders, grouping the reports by category, department, or purpose. Shared reports that can be reused as SubReports in other designs.
 
-### Shared Data Sources
+## Shared Data Sources
 
 The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-guide%}) folder within the Assets Manager contains reusable data source definitions (.sdsx files) that can be shared across multiple reports. Each .sdsx file encapsulates the configuration for a data source, including: Connection strings, Queries or endpoints, Parameters, Metadata (e.g., name, description).
+
+## Report Templates
+
+The report templates enable rapid, consistent report creation by providing reusable layouts, styling, and structure. Read more in [Creating and Using Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%}).
 
 ## Enhanced UI Features
 

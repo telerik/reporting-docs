@@ -17,18 +17,15 @@ img[alt$="><"] {
 
 Using style sheets in the Web Report Designer lets you apply centralized, reusable styles to multiple report items, similar to CSS in web development. 
 
-
 The Web Report Designer allows you to use two types of style sheets: 
 * Quick style sheets that you create for each report and that live within each report
 * External style sheets that live in a separate file and that you can reuse across reports
 
 ## Creating a Style Sheet in a Report
 
-In the Web Report Designer:
+In the Web Report Designer after selecting the **Report** object:
 
-1. Select the **Report** object.
-
-1. Go to the StyleSheet property.
+1. Navigate to the **Style sheet** property using the search box at the top.
 
 1. Click the `+` button to open the **StyleRule Collection Editor**.
 

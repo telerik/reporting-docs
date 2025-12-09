@@ -55,6 +55,10 @@ Ensure that your data includes the X and Y position and size values. These value
 
 ![Layered Background Rendering for Overlapping Date Ranges](images/rendering-layered-date-range-backgrounds.png)
 
+## Sample Report
+
+* [rendering-layered-date-range-backgrounds.trdp](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/RenderingLayeredDateRangeBackgrounds/rendering-layered-date-range-backgrounds.trdp)
+
 ## See Also
 
 * [Telerik Reporting Crosstab Overview]({%slug crosstab_item_get_started%})

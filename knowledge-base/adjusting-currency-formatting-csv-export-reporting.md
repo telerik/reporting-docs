@@ -27,7 +27,17 @@ When exporting reports to CSV with the ReportProcessor class in Telerik Reportin
 
 ## Solution
 
-To ensure numeric values are recognized correctly in CSV export, programmatically remove the `Format` property from the relevant TextBox items before exporting the report. Follow these steps:
+To ensure numeric values are recognized correctly in CSV export, programmatically remove the `Format` property from the relevant TextBox items before exporting the report. The following examples demonstrate different approaches to resolving this issue:
+
+Example 1:
+
+Consider using data binding for the `Format` property:
+
+```
+= RenderingFormat.Name = "CSV" ? Null : "{0:C2}"
+```
+
+Example 2:
 
 1. Locate the TextBox items in the report.
 1. Clear the `Format` property of the TextBox items programmatically before the export operation.

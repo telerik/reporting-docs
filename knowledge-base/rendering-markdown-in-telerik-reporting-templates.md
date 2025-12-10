@@ -36,6 +36,67 @@ Telerik Reporting does not have native support for rendering markdown syntax dir
 1. Pass the converted HTML content to the HtmlTextBox report item in your Telerik Reporting template.
 1. Ensure that the HTML content uses only the supported tags and CSS attributes. Unsupported tags will not be rendered.
 
+To implement a Markdown-to-HTML converter, start by creating a [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that accepts Markdown input and returns the corresponding HTML output. You may refer to the sample code below as a guideline.
+
+> To use the Markdown.ToHtml function, install the following NuGet package - [Markdig](https://www.nuget.org/packages/Markdig/0.44.0?_src=template)
+
+````C#
+
+namespace UserFunc
+{
+    public class Class1
+    {
+        public static string ConvertMarkdownToHtml(string markdown)
+        {
+            if (string.IsNullOrEmpty(markdown))
+                return string.Empty;
+
+            return Markdown.ToHtml(markdown);
+        }
+  
+````
+
+````
+Input:
+
+# Hello World
+
+This is a **bold** statement and this is *italic*.
+
+## Features
+
+- Item 1
+- Item 2
+- Item 3
+
+Visit [Google](https://google.com) for more info.
+
+> This is a blockquote.
+
+---
+
+Done!
+````
+
+````
+Output:
+
+<h1>Hello World</h1>
+<p>This is a <strong>bold</strong> statement and this is <em>italic</em>.</p>
+<h2>Features</h2>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<p>Visit <a href="https://google.com">Google</a> for more info.</p>
+<blockquote>
+<p>This is a blockquote.</p>
+</blockquote>
+<hr />
+<p>Done!</p>
+````
+
 Refer to [Styling and Formatting the HtmlTextBox Report Item]({%slug htmltextbox_formatting_and_styling%}) for a list of supported HTML tags and CSS attributes.
 
 ## See Also

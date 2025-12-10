@@ -7,6 +7,7 @@ tags: user,functions,expressions,create,report
 published: True
 position: 1
 previous_url: /expressions-user-functions
+reportingArea: General
 ---
 
 # Custom User Functions Overview
@@ -44,6 +45,12 @@ As of 2025 Q1 (19.0.25.211), the __User Function__ resolution behavior has been 
 * If at least one public static method in the assembly(ies) is decorated with the `Function` attribute and has its [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) property set to `True` _(true by default)_, only public static methods with the same configuration will be loaded. Public static methods that are not decorated with the `Function` attribute or have their [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) properties set to `False`, will not be loaded.
 * If a type is decorated with the `Function` attribute and has its [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) property set to `False`, none of the methods in this class will be loaded.
 * If a type is decorated with the `Function` attribute and has its [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) property set to `True`, all methods in it, except for the ones decorated with `IsVisible = False`, will be loaded.
+
+## User Function Discovery
+
+The automatic user function discovery applies only to assemblies that are explicitly configured through [assemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) or [typeReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) in the application configuration. This behavior prevents potential security vulnerabilities where malicious actors could exploit report definitions to invoke unintended methods from the host application.
+
+Even functions defined directly in the executing assembly are not automatically discovered. This behavior is intentional to prevent issues in scenarios where the Reporting engine is embedded in applications with many publicly accessible classes and methods. For example, in applications that host the Web Report Designer, automatically loading all functions from the executing assembly could clutter the function list with unintended methods.
 
 ## Providing metadata for functions
 

@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /webservicedatasource-component, /designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/
+reportingArea: General
 ---
 <style>
 table th:first-of-type {
@@ -96,7 +97,7 @@ It is possible to leverage the 2-step Authentication mechanism above to retrieve
 ## Supported developer platforms
 
 * .NET Framework 4.6.2 and above
-* .NET 6 and above
+* .NET {{site.mindotnetversion}} and above
 * .NET Standard 2.0 and above
 
 ## See Also

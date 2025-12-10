@@ -1,25 +1,26 @@
 ---
 title: Using the SQLite Data Provider
 page_title: Integrating the SQLite Data Provider
-description: "Learn more about how the SQLite data provider can be used by the SqlDataSource component to connect to local data storages in Telerik Reporting."
+description: "Learn more about how the SQLite data provider can be used by the SqlDataSource component to connect to local data storage in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider
 tags: System.Data.Sqlite,sqlite,data,provider
 published: True
 position: 5
+reportingArea: General
 ---
 
-# Overview
+# Using SQLite in Reporting
 
 The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider for [SQLite](https://www.sqlite.org/). SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle, PostgreSQL, or SQL Server and instead focuses on providing local data storage for individual applications and devices.
 
 ## Setting up the System.Data.Sqlite Data Provider in the .NET Standalone Report Designer
 
 1. Download the **SQLite Binaries** built for `.NET Standard 2.0` or `.NET Standard 2.1` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page.
-1. Unpackage the zip with the binaries and copy the `System.Data.Sqlite.dll` file to the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
-1. Download SQLite binaries built for `.NET Framework.4.X` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) page, for example [sqlite-netFx40-binary-x64-2010-1.0.117.0.zip](https://system.data.sqlite.org/downloads/1.0.117.0/sqlite-netFx40-binary-x64-2010-1.0.117.0.zip).
-1. Unpackage the archive and copy the `SQLite.Interop.dll` assembly to the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
+1. Unpackage the zip with the binaries and copy the `System.Data.Sqlite.dll` file to the .NET Standalone Report Designer installation directory, e.g., `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
+1. Download SQLite binaries built for `.NET Framework.4.X` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) page.
+1. Unpackage the archive and copy the `SQLite.Interop.dll` assembly to the .NET Standalone Report Designer installation directory, e.g., `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
 1. Restart the designer if you have previously opened it.
-1. Add a new SqlDataSource and you should see that the `Sqlite` Data Provider is in the dropdown.
+1. Add a new SqlDataSource, and you should see that the `Sqlite` Data Provider is in the dropdown.
 
 ## Setting up the System.Data.Sqlite Data Provider in the .NET Framework Standalone Report Designer
 
@@ -48,7 +49,7 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider
 
 The [System.Data.Sqlite](https://system.data.sqlite.org/) data provider is automatically registered in the `Telerik.Reporting.Processing.Data.DbProviderFactories`. To use this data provider, it should be enough to install the [System.Data.SQLite](https://www.nuget.org/packages/System.Data.SQLite/) NuGet package to the project.
 
-If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
+If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
 ````JSON
 {

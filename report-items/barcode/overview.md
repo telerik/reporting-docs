@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, barcode, overview
 published: True
 position: 0
 previous_url: /report-items-barcode-general, /report-items/barcode/
+reportingArea: General
 ---
 
 # Barcode Report Item Overview

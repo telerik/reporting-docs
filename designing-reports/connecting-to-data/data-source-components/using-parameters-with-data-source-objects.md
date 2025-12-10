@@ -7,6 +7,7 @@ tags: using,parameters,with,data,source,objects,basic,principles
 published: True
 position: 1
 previous_url: /connecting-to-data-using-parameters
+reportingArea: General
 ---
 
 # Using Parameters with Data Source Objects

@@ -7,6 +7,7 @@ tags: localization
 published: True
 position: 6
 previous_url: /telerik-reporting-rest-service-localization,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/localization
+reportingArea: General
 ---
 
 # Localization Overview

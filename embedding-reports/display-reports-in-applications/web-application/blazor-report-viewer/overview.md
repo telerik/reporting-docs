@@ -5,6 +5,7 @@ description: "Learn about the requirements and browser support of the Telerik Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview
 tags: overview
 published: True
+reportingArea: BlazorWrapper
 position: 0
 previous_url: /blazor-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview, /embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/
 ---
@@ -19,7 +20,7 @@ The Blazor Viewer is a component that can be used in Blazor applications. It is 
 
 1. Required Application Version:
 
-	+ Blazor 3.1+ application
+	+ [Blazor Client or Server](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) Application
 
 1. Required Service:
 
@@ -27,14 +28,16 @@ The Blazor Viewer is a component that can be used in Blazor applications. It is 
 
 1. Required JavaScript libraries:
 
-	+ [jQuery 3.2.1+](https://jquery.com/download/)
+	+ [jQuery 3.7.1+](https://jquery.com/download/)
 
-1. References to [Telerik Kendo UI SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview). (Alternatively, the [LESS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) can be used instead, but they are not compatible with Telerik UI for Blazor.)
+1. Required Stylesheets:
+
+	+ [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) 
 
 ## Browser Support
 
-The Blazor viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus the client browser should conform to the HTML5 Report Viewer [Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#browser-support).
+The Blazor Report Viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus it has the same [Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#browser-support) as the HTML5 Report Viewer.
 
-## Demo Project
+## Demo Projects
 
-The complete example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting __Release__\Examples\CSharp\. 
+Navigate to the installation folder of Telerik Reporting - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp` to find the Blazor-related projects. 

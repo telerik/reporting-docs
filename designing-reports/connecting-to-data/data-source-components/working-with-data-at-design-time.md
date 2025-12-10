@@ -7,6 +7,7 @@ tags: working,with,data,at,design,time
 published: True
 position: 30
 previous_url: /connecting-to-data-working-with-data-at-design-time
+reportingArea: General
 ---
 
 # Working With Data at Design Time

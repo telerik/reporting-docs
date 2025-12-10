@@ -7,6 +7,7 @@ tags: image, device, information, settings, options
 published: True
 position: 1
 previous_url: /device-information-settings-image
+reportingArea: General
 ---
 
 <style>
@@ -23,7 +24,7 @@ table th:nth-of-type(3) {
 
 # Device Information Settings for the Image Rendering Formats
 
-The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.
+The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__, and __IMAGEPrint__ formats.
 
 ## Available Image Device Information settings
 
@@ -31,19 +32,19 @@ The following table lists the device information settings for rendering in __IMA
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
-|OutputFormat|String|Defines the output format of the produced image. Supported formats are: __BMP__, __EMF__, __EMFPLUS__, __GIF__, __JPEG__, __PNG__, or __TIFF__. The default value for __IMAGE__ rendering extension is __TIFF__. The default value for __IMAGEPrint__ and __IMAGEPrintPreview__ rendering extensions is __EMF__.|
+|OutputFormat|String|Defines the output format of the produced image. Supported formats are: __BMP__, __EMF__, __EMFPLUS__, __GIF__, __JPEG__, __PNG__, or __TIFF__. The default value for __IMAGE__ rendering extension is __TIFF__. The default value for __IMAGEPrint__ and __IMAGEPrintPreview__ rendering extensions is __EMF__. If you provide an invalid 'OutputFormat', for example, 'PDF', the extension will fall back to __BMP__.|
 |StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
 |EndPage|Integer|The last page of the report to render.|
-|DpiX|Integer|The resolution of the output image in x-direction. The default value is __96__.|
-|DpiY|Integer|The resolution of the output image in y-direction. The default value is __96__.|
+|DpiX|Integer|The resolution of the output image in the x-direction. The default value is __96__.|
+|DpiY|Integer|The resolution of the output image in the y-direction. The default value is __96__.|
 |TiffCompression|String|Specifies the compression scheme of the output TIFF file. Respected only when __OutputFormat__ is set to __TIFF__. Supported compression kinds are: __LZW__, __CCITT3__, __CCITT4__, __RLE__, or __NONE__. The default value is __LZW__.|
-|TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.text.textrenderinghint?view=dotnet-plat-ext-7.0) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://learn.microsoft.com/en-us/typography/cleartype/) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting. If text rendering hinting is not supported, the __SystemDefault__ value will be used.|
+|TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.text.textrenderinghint?view=dotnet-plat-ext-7.0) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://learn.microsoft.com/en-us/typography/cleartype/) enabled, then __ClearTypeGridFit__ will be used. Otherwise, the rendering algorithm will use __AntiAliasGridFit__ hinting. If text rendering hinting is not supported, the __SystemDefault__ value will be used.|
 
 For a detailed example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}). 
 
 ## Example
 
-The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.
+The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__, and __IMAGEPrint__ formats.
 
 XML-based configuration file:
 

@@ -5,6 +5,7 @@ description: "Learn how the HTML5 MVC Report Viewer client events can be handled
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/client-events
 tags: client,events
 published: True
+reportingArea: MVCWrapper
 position: 6
 previous_url: /html5-mvc-report-viewer-customizing-client-events
 ---
@@ -19,9 +20,9 @@ previous_url: /html5-mvc-report-viewer-customizing-client-events
 
 # Client Events Overview
 
-This article explains how to attach client event handlers to an MVC ReportViewer instance.
+This article explains how to attach client event handlers to an HTML5 MVC Report Viewer instance.
 
-To attach a client event handler you have to set the appropriate `ClientEvents` widget method as shown below:
+To attach a client event handler you have to set the proper `ClientEvents` widget method as shown below:
 
 ````HTML
 <script>

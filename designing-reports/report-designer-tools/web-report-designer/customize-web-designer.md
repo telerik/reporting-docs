@@ -5,7 +5,8 @@ description: "Learn more about the customization capabilities of the Telerik Web
 slug: telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization
 tags: report,webreportdesigner,customization
 published: True
-position: 8
+reportingArea: WRDHTML5, WRDBlazorWrapper
+position: 9
 ---
 
 # Web Report Designer Customization
@@ -27,7 +28,6 @@ The customization options like denied permissions may be configured for all user
 ````CSharp
 services.TryAddSingleton((Func<IServiceProvider, IReportDesignerServiceConfiguration>)(sp => new ReportDesignerServiceConfiguration
 {
-	//...
 	DeniedPermissions = ReportDesignerPermissionsBuilder.Build(
 		Permission.Create_Components_ReportItems_PictureBox,
 		Permission.Create_Components_ReportItems_HTMLTextBox
@@ -66,4 +66,4 @@ The code above denies the users (all in this case) to add _PictureBox_ and _HTML
 
 ## See Also
 
-- [Customizing Report Parameters Area in Web Report Designer using CSS and JavaScript]({%slug customize-report-parameters-area-web-report-designer%})
+* [Customizing Report Parameters Area in Web Report Designer using CSS and JavaScript]({%slug customize-report-parameters-area-web-report-designer%})

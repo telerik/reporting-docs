@@ -5,6 +5,7 @@ description: "Find out more about deploying Windows Forms applications that use 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/deploying-windows-forms-applications
 tags: deploying, windows, forms, applications
 published: True
+reportingArea: WinForms
 position: 5
 previous_url: /installation-deploying-on-windows-forms
 ---

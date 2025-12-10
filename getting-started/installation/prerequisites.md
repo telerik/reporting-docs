@@ -6,6 +6,7 @@ slug: system-requirements
 tags: telerik, reporting, prerequisites, system, requirements
 published: True
 position: 1
+reportingArea: General
 ---
 
 # List of Prerequisites
@@ -16,7 +17,7 @@ This article lists the system requirements that include operating system, .NET, 
 * [.NET and IIS support](https://www.telerik.com/products/reporting/system-requirements)
 * [IDE support](https://www.telerik.com/products/reporting/system-requirements)
 
-The SkiaSharp-based graphics engine introduced with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) may be embedded in cross-platform applications targeting .NET 6.0 or higher.
+The SkiaSharp-based graphics engine introduced with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) may be embedded in cross-platform applications targeting .NET {{site.mindotnetversion}}.0 or higher.
 
 To ensure the smooth functioning of the Telerik Reporting features when deploying ADOMD.NET and Open XML, refer to the article on [Telerik Reporting third-party dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}).
 

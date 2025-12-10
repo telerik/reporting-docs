@@ -5,6 +5,7 @@ description: "Undertand how to localize the messages displayed by the React Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/localization
 tags: react, report, viewer, localization
 published: True
+reportingArea: React
 position: 2
 previous_url: /react-report-viewer-localization
 ---
@@ -42,6 +43,7 @@ import { StringResources } from './stringResources';
 
 	````TypeScript
 export function ReportViewer() {
+
 		const viewerRef = useRef(null);
 		const [language, setLanguage] = useState(navigator.language);
 		
@@ -49,13 +51,13 @@ export function ReportViewer() {
 			if (viewerRef) {
 			const { viewerObject } = viewerRef.current;
 			switch (language) {
-				case "ja":
-				viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.japanese);
-				break;
-				default:
-				viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.english);
-				break;
-			}
+					case "ja":
+						viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.japanese);
+						break;
+					default:
+						viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.english);
+						break;
+					}
 			}
 		}, [language])
 		
@@ -69,10 +71,7 @@ export function ReportViewer() {
 			}}
 			viewerContainerStyle = {{
 				position: 'absolute',
-				left: '5px',
-				right: '5px',
-				top: '40px',
-				bottom: '5px',
+				inset: '5px',
 				overflow: 'hidden',
 				clear: 'both',
 				fontFamily: 'ms sans serif'

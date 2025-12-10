@@ -1,10 +1,12 @@
 ---
 title: Add License Key to CI Services
 page_title: "Learn how to add your License Key to CI/CD Services."
+description: "Learn how to add the required Telerik Reporting License Key to CI/CD Services after the 2025 Q1 (19.0.25.211) release."
 slug: license-key-ci-services
 tags: license, key, telerik, reporting, ci, cd
 published: True
 position: 2
+reportingArea: General
 ---
 
 # Adding the License Key to CI/CD Services
@@ -20,7 +22,7 @@ The license activation process in a CI/CD environment involves the following ste
 
 ## Creating an Environment Variable
 
-The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables. Each CI/CD platform has a different process for setting environment variables and this article lists only some of the most popular examples.
+The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables. Each CI/CD platform has a different process for setting environment variables, and this article lists only some of the most popular examples.
 
 > If your CI/CD service is not listed in this article, don’t hesitate to contact the Telerik technical support.
 
@@ -80,11 +82,11 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 
 1. Add a "Download secure file" task and set the output variable's name to `telerikLicense`.
 
-![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
+	![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
 
 1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable:
 
-![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
+	![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
 
 The script to set the environment variable is quoted below:
 
@@ -100,8 +102,35 @@ echo "Copying $(telerikLicense.secureFilePath) to $(Build.Repository.LocalPath)/
 Copy-Item -Path $(telerikLicense.secureFilePath) -Destination "$(Build.Repository.LocalPath)/telerik-license.txt" -Force
 ````
 
+### Using TelerikLicensing.Register method
+
+As of version **1.6.7**, [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) offers the parameterless `TelerikLicensing.Register()` method and the `TelerikLicensing.Register(…script key…)`  method allowing the developers to validate the Telerik license when running in [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions, plugins, or a class library that uses Telerik Reporting consumed by any third-party software. It is necessary to upgrade the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing/1.6.7) NuGet package to **1.6.7 or newer** version and call the `Register` method in the body of the function. Thus, the Telerik license will be validated, and the watermark should not be printed (for licensed users) in the generated document:
+
+````C#
+namespace LicensingInLambda;
+ 
+public class Function
+{
+    public string FunctionHandler(string input, ILambdaContext context)
+    {
+        // Lambda function entry point
+ 
+        // This requires Telerik.Licensing to be added to the function project
+        TelerikLicensing.Register();
+ 
+        // TODO: Reporting - generate PDF here
+ 
+        var entryAssembly = Assembly.GetEntryAssembly();
+        var name = entryAssembly?.GetName();
+ 
+        return $"Entry assembly: {entryAssembly?.GetName()} ... {Class1.DoYourMagic()}";
+    }
+}
+````
+
+
 ## See Also
 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-* [Setting Up Your License Key]({%slug license-key%}))
+* [Setting Up Your License Key]({%slug license-key%})
 * [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})

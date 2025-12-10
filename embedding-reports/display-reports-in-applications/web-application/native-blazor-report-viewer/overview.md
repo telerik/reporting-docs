@@ -5,6 +5,7 @@ description: "Learn more about the Telerik Native Blazor Report Viewer requireme
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview
 tags: overview
 published: True
+reportingArea: NativeBlazor
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/
 ---
@@ -48,6 +49,7 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 |__Zoom Out__|Allows the user to decrease the zoom level of the report content.
 |__Switch the Scale mode__|Switches the report view scale mode between fitting the report to the entire page view port or to the viewer's view port.
 |__Search__|Allows searching in the report content.
+|__AI Prompt__|Toggles the AI Prompt Dialog when the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality has been enabled.
 
 ## Requirements
 

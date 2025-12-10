@@ -5,6 +5,7 @@ description: "Find a list of all of the available React Report Viewer methods an
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/methods
 tags: react, report, viewer, methods
 published: True
+reportingArea: React
 position: 2
 previous_url: /react-report-viewer-api-reference-methods
 ---
@@ -25,12 +26,10 @@ Each method can be called using a reference to the report viewer component.
 ````JavaScript
 let viewer;
 ReactDOM.render(
-	<div>
-		<TelerikReportViewer
-		...
-		/>
+	<>
+		<TelerikReportViewer />
 		<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-	</div>,
+	</>,
 	document.getElementById('root')
 );
 ````

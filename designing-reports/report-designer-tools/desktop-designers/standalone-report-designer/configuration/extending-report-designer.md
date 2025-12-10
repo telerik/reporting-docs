@@ -7,6 +7,7 @@ tags: extending,report,designer
 published: True
 position: 2
 previous_url: /standalone-report-designer-extending-configuration
+reportingArea: General
 ---
 
 # Extending Report Designer to Recognize Custom Assemblies

@@ -7,6 +7,7 @@ tags: edit,action,dialog
 published: True
 position: 13
 previous_url: /ui-action-dialog
+reportingArea: General
 ---
 
 # Edit Action Dialog of the Report Designer

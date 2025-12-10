@@ -5,6 +5,7 @@ description: "Learn how to make the Get Report Parameters request to the Telerik
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters
 tags: get,report,parameters
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-report-parameters-api-get-report-parameters,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api/
 ---
@@ -31,7 +32,7 @@ __Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-|`clientId`|String|ID of the service client. Returned from [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
+|`clientId`|String|ID of the service client. Returned by [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
 
 __Request Body__
 

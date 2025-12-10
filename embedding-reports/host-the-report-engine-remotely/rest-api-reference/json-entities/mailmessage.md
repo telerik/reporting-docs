@@ -5,23 +5,24 @@ description: "Learn more about the MailMessage JSON Entity in Telerik Reporting 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage
 tags: mailmessage
 published: True
-position: 8
+reportingArea: RESTService, RESTServiceCore
+position: 5
 previous_url: /telerik-reporting-rest-json-entities-mailmessage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage
 ---
 
 <style>
-table th:first-of-type {
-	width: 10%;
-}
-table th:nth-of-type(2) {
-	width: 10%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 70%;
-}
+	table {
+		display: grid;
+		grid-template-columns: min-content min-content min-content 1fr;
+	}
+
+	thead, tbody, tr {
+		display: contents;
+	}
+
+	th {
+		white-space: nowrap;
+	}
 </style>
 
 # MailMessage Overview

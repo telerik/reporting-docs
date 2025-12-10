@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /data-items-filtering-data, /designing-reports/connecting-to-data/data-items/filtering-data/
+reportingArea: General
 ---
 
 # Filtering Data Overview

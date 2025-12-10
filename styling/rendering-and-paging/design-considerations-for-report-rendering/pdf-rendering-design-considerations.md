@@ -7,6 +7,7 @@ tags: pdf, rendering, design, considerations
 published: True
 position: 3
 previous_url: /designing-reports-considerations-pdf
+reportingArea: General
 ---
 
 <style>

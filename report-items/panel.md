@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, panel, organize, layout, accommodate, c
 published: True
 position: 8
 previous_url: /report-items-panel, /reportitemspanel
+reportingArea: General
 ---
 
 # Panel Report Item Overview

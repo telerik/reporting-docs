@@ -5,6 +5,7 @@ description: "The getReportParameters() method of the Telerik Reporting HTML5 Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/getreportparameters()
 tags: getreportparameters()
 published: True
+reportingArea: HTML5
 position: 7
 ---
 

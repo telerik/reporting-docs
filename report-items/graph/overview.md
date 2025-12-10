@@ -7,6 +7,7 @@ tags: telerik, reporting, graph, report, item, overview
 published: True
 position: 0
 previous_url: /GraphOverview, /designing-reports/report-structure/graph/overview, /report-items/graph/
+reportingArea: General
 ---
 
 # Overview of the Graph Report Item

@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /standalone-report-designer-configuration, /designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/
+reportingArea: General
 ---
 
 # Standalone Report Designer Configuration File
@@ -133,7 +134,7 @@ The following code example shows the default `Telerik.ReportDesigner.exe.config`
 ````
 
 
-## Default Configuration for the .NET 8 Standalone Report Designer
+## Default Configuration for the .NET 10 Standalone Report Designer
 
 The following code example shows the default `Telerik.ReportDesigner.Net.dll.config` file that is distributed with the Report Designer for .NET. A major difference with the designer for .NET Framework is that the Trace Listener for .NET is in the `Telerik.Reporting` section rather than in the `system.diagnostics` section as in .NET Framework.
 
@@ -161,14 +162,14 @@ The following code example shows the default `Telerik.ReportDesigner.Net.dll.con
 	<Telerik.ReportDesigner DefaultWorkingDir="Examples">
 	</Telerik.ReportDesigner>
 	<Telerik.Reporting>
-	<!-- Add assembly references (in .NET6 and later assemblies are resolved by file name) -->
+	<!-- Add assembly references (in .NET8 and later assemblies are resolved by file name) -->
 	<!--
 		<AssemblyReferences>
 			<add name="MyUserFunctions" />
 			<add name="MyBusinessObjects" />
 		</AssemblyReferences>
 	-->
-	<!-- Add trace listeners (in .NET6 and later assemblies that contain custom listeners are resolved by file name)-->
+	<!-- Add trace listeners (in .NET8 and later assemblies that contain custom listeners are resolved by file name)-->
 	<!--
 		<traceListeners>
 			<add name="myCustomListener" type="CustomListenersNamespace.CustomListener, CustomListenersAssembly"  initializeData="Telerik.ReportDesigner.custom.log" />

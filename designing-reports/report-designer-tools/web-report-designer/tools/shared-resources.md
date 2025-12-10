@@ -5,7 +5,8 @@ description: "Learn how to add and reference shared resources like images and da
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources
 tags: resources,Assets Manager,sharing
 published: True
-position: 5
+reportingArea: WRDHTML5, WRDBlazorWrapper
+position: 6
 previous_url: /designing-reports/report-designer-tools/web-report-designer/tools/
 ---
 

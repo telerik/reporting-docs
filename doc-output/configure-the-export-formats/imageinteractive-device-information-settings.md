@@ -7,6 +7,7 @@ tags: imageinteractive, device, information, settings, options
 published: True
 position: 2
 previous_url: /device-information-settings-imageinteractive
+reportingArea: General
 ---
 
 <style>

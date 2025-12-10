@@ -5,6 +5,7 @@ description: "Learn about what are the methods exposed by the Angular Report Vie
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
 tags: methods,angular,report,viewer
 published: True
+reportingArea: AngularWrapper
 position: 2
 previous_url: /angular-report-viewer-api-methods
 ---
@@ -24,7 +25,7 @@ Each method can be called using a reference to the report viewer component.
 
 ````HTML
 <tr-viewer #viewer1 />
-...
+
 <button (click)="viewer1.refreshReport()">Refresh</button>
 ````
 

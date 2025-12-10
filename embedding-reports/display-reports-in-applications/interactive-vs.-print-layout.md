@@ -7,6 +7,7 @@ tags: interactive,vs.,print,layout
 published: True
 position: 2
 previous_url: /report-viewers-interactive-print-view
+reportingArea: General
 ---
 
 # Interactive and Print Layouts Overview

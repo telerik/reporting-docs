@@ -6,6 +6,7 @@ slug: htmltextbox_formatting_and_styling
 tags: telerik, reporting, report, items, htmltextbox, styling, formatting, html, tags, css, attributes 
 published: True
 position: 4
+reportingArea: General
 ---
 
 # Styling and Formatting HtmlTextBox

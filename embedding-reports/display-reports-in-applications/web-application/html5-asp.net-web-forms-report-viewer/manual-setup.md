@@ -5,6 +5,7 @@ description: "Learn how to setup manually the Telerik Reporting HTML5 ASP.NET We
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/manual-setup
 tags: manual,setup
 published: True
+reportingArea: WebFormsWrapper
 position: 3
 previous_url: /html5-webforms-report-viewer-manual-setup
 ---
@@ -14,7 +15,7 @@ previous_url: /html5-webforms-report-viewer-manual-setup
 ## Prerequisites
 
 * Review the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
-* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__ in the folder used by the  [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service implementation.
+* Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file of the project hosting the Reporting REST service:
 
 	````XML
@@ -26,27 +27,27 @@ previous_url: /html5-webforms-report-viewer-manual-setup
 ````
 
 
-* (Optional) Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via [Kendo UI CDN service](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service). You must load only one version of Telerik Kendo UI styles and scripts on the page. For more information see [Kendo Widgets Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#kendo-widgets-requirements). If Kendo UI is not provided HTTPHandler will provide the required Kendo UI styles and scripts.
+* (Optional) [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service]({%slug telerikreporting/getting-started/installation/cdn-assets%}). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#kendo-widgets-requirements).
 
 ## Using HTML5 ASP.NET Web Forms Report Viewer in a web application
 
-The following steps produce a view with settings similar to these of the local WebFormsDemo project, installed by default under __[TelerikReporting_InstallDir]\Examples__. The structure used in this tutorial is a WebForm that does not use a Master page. 
+The following steps produce a view with settings similar to these of the local `WebFormsIntegrationDemo` project, installed by default in the directory - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET Framework\WebFormsIntegrationDemo`.  
 
 > All path references in the described steps should be adapted according to your project setup. For more information please refer to the Microsoft article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)).
 
-1. Create new ASP.NET Web Forms Application.
-1. Add new WebForm that does not use a Master page.
-1. Add references to the following assemblies and set their __Copy Local__ properties to true in Visual Studio:
+1. Create a new [ASP.NET Web Forms](https://learn.microsoft.com/en-us/aspnet/web-forms/) Application.
+1. Add new `WebForm` that does not use a `Master` page.
+1. Add references to the following assemblies and set their __Copy Local__ properties to `true` in Visual Studio:
 
 	+ __Telerik.Reporting__
 	+ __Telerik.ReportViewer.Html5.WebForms__
 	+ __Newtonsoft.Json, Version 13.0.0.0 or higher__
 
-	The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__.
+	The Telerik Reporting assemblies are available by default in the folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Bin`.
 
 	>Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
-1. To ensure that the browser will start in the latest rendering mode verify the page is using the following DOCTYPE directive:
+1. To ensure that the browser will start in the latest rendering mode verify the page is using the following `DOCTYPE` directive:
 
 	````HTML
 <!DOCTYPE html>
@@ -67,18 +68,22 @@ The following steps produce a view with settings similar to these of the local W
 1. (Optional) The default viewer implementation depends externally on __jQuery__. Add link to jQuery in the `<head>` element:
 
 	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 ````
 
 
 	>jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded. 
 
-1. (Optional) Add references to Telerik Kendo UI scripts and styles in the `<head>` element: 
+1. Add a reference to a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) in the `<head>` element:
 
 	````HTML
-<!-- the required Kendo styles -->
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+````
+
+
+1. (Optional) Add references to the [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) scripts in the `<head>` element: 
+
+	````HTML
 	<!--If Kendo CDN is prefered here are the required Kendo widgets and bundles
 	The minimum required widgets:
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.core.min.js"></script>>
@@ -120,14 +125,14 @@ The following steps produce a view with settings similar to these of the local W
 ````
 
 
-1. Switch to the Design view of the Web Form and drag the viewer from Visual Studio Toolbox onto the designer surface. The ReportsController will be automatically added to your project, along with references to the required Telerik Reporting assemblies.
-1. Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual Studio Property Grid. For this you can use the "Product Catalog.trdp" report file (Prerequisites).
+1. Switch to the `Design` view of the Web Form and drag the viewer from Visual Studio Toolbox onto the designer surface. The [ReportsController]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%}) will be automatically added to your project, along with references to the required **Telerik Reporting** assemblies.
+1. Configure the HTML5 ASP.NET Web Forms Report Viewer's `ReportSource` using Visual Studio Property Grid. For this, you can use the "Product Catalog.trdp" report file.
 
-	>If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the folder used by the [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service implementation.
+	>If you use an `UriReportSource`, the `Identifier` must point to a TRDP/TRDX file's path that will be mapped to the folder used by the [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service implementation.
 
 	>note Verify the modified settings are written in the markup. If not, the viewer will use the default settings visible in Visual Studio Property Grid.
 
-1. Set the viewer width and height.
+1. Set the report viewer `Width` and `Height`.
 1. (Optional) If you set the viewer's __Deferred__ to __true__, render the deferred initialization statement for the Report Viewer (remember that they must be rendered after jQuery):
 
 	````XML
@@ -135,7 +140,7 @@ The following steps produce a view with settings similar to these of the local W
 ````
 
 
-1. Finally the WebForm should look like this (note that the Report Parameter 'CultureID' value will be modified as passed from the viewer):
+1. Finally, the `WebForm` may look like the following:
 
 	````HTML
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
@@ -143,17 +148,15 @@ The following steps produce a view with settings similar to these of the local W
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head runat="server">
 		<title>Telerik HTML5 Web Forms Report Viewer Demo</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
-		<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-		<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+		<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.8.1/jquery.min.js"></script>>
+
 		<style>
 			#reportViewer1
 			{
 				position: absolute;
-				left: 5px;
-				right: 5px;
-				top: 5px;
-				bottom: 5px;
+				inset: 5px;
 				overflow: hidden;
 				font-family: Verdana, Arial;
 			}

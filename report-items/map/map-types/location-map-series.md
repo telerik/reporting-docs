@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-
 tags: telerik, reporting, map, report, item, add, locationmapseries, instance
 previous_url: /MapHowToAddLocationMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-locationmapseries-to-the-map-item, /knowledge-base/map-add-locationmapseries, /maphowtoaddpointmapseries
 position: 3
+reportingArea: General
 ---
 
 # Adding LocationMapSeries Instances to the Map

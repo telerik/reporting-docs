@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: raw,data,action
 published: True
 position: 80
+reportingArea: General
 ---
 
 # Download Raw Data

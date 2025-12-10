@@ -5,6 +5,7 @@ description: "Learn about what are the events exposed by the Native Angular Repo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events
 tags: events,angular,report,viewer
 published: True
+reportingArea: NativeAngular
 position: 2
 ---
 
@@ -76,12 +77,13 @@ The `printStarted` event will be emitted when the printing starts.
 	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
 	viewMode="interactive"
 	[keepClientAlive]="true"
-	(printStarted)="printStarted()">
+	(printStarted)="printStarted($event)">
 </reporting-angular-viewer>
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { PrintStartedEventArgs } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -94,8 +96,8 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 	
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
-		printStarted() {
-			console.log("This event will be emitted when the printing starts.");
+		printStarted(printStartedEventArgs: PrintStartedEventArgs) {
+			console.log("This event will be emitted when the printing starts.", printStartedEventArgs);
 		};
 	}
 ````
@@ -115,12 +117,13 @@ The `printDocumentReady` event will be emitted after the viewer finishes printin
 	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
 	viewMode="interactive"
 	[keepClientAlive]="true"
-	(printDocumentReady)="printDocumentReady()">
+	(printDocumentReady)="printDocumentReady($event)">
 </reporting-angular-viewer>
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { PrintDocumentReadyEventArgs } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -133,8 +136,8 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 	
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
-		printDocumentReady() {
-			console.log("This event will be emitted after the viewer finishes printing the report.");
+		printDocumentReady(printDocumentReadyEventArgs: PrintDocumentReadyEventArgs) {
+			console.log("This event will be emitted after the viewer finishes printing the report.", printDocumentReadyEventArgs);
 		};
 	}
 ````
@@ -154,12 +157,13 @@ The `exportStarted` event will be emitted when an export operation is triggered.
 	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
 	viewMode="interactive"
 	[keepClientAlive]="true"
-	(exportStarted)="exportStarted()">
+	(exportStarted)="exportStarted($event)">
 </reporting-angular-viewer>
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { ExportStartedEventArgs } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -172,9 +176,9 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 	
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
-		exportStarted() {
-			console.log("This event will be emitted when an export operation is triggered.");
-		};
+		exportStarted(exportStartedEventArgs: ExportStartedEventArgs) {
+			console.log("This event will be emitted when an export operation is triggered.", exportStartedEventArgs);
+    	};
 	}
 ````
 
@@ -193,12 +197,13 @@ The `exportDocumentReady` event will be emitted after the viewer finishes export
 	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
 	viewMode="interactive"
 	[keepClientAlive]="true"
-	(exportDocumentReady)="exportDocumentReady()">
+	(exportDocumentReady)="exportDocumentReady($event)">
 </reporting-angular-viewer>
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { ExportDocumentReadyEventArgs } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -211,9 +216,9 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 	
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
-		exportDocumentReady() {
-			console.log("This event will be emitted after the viewer finishes exporting the report.");
-		};
+		exportDocumentReady(exportDocumentReadyEventArgs: ExportDocumentReadyEventArgs) {
+		console.log("This event will be emitted after the viewer finishes exporting the report.", exportDocumentReadyEventArgs);
+    	};
 	}
 ````
 
@@ -596,6 +601,7 @@ The `currentPageChanged` event will be emitted when the viewer changes its curre
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { CurrentPageChangedEventArgs } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -608,9 +614,50 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 	
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
-		currentPageChanged(e: { page number, reportDocumentId: string }) {
-			console.log("The page number and document id", e)
-			console.log("This event will be emitted when the viewer changes its currently displayed page.");
+		currentPageChanged(currentPageChangedEventArgs: CurrentPageChangedEventArgs) {
+		console.log("The page number and document id.", currentPageChangedEventArgs);
+		console.log("This event will be emitted when the viewer changes its currently displayed page.");
+    	};
+	}
+````
+
+
+### interactiveActionEnter
+
+The `interactiveActionEnter` event will be emitted when the cursor hovers over an interactive action.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(interactiveActionEnter)="interactiveActionEnter($event)">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		interactiveActionEnter(interactiveActionArgs: PageActionEventArgs) {
+			console.log("The interactive action arguments.", interactiveActionArgs);
+			console.log("This event will be emitted when the cursor hovers over an interactive action.");
 		};
 	}
 ````
@@ -630,12 +677,13 @@ The `interactiveActionExecuting` event will be emitted before an interactive act
 	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
 	viewMode="interactive"
 	[keepClientAlive]="true"
-	(interactiveActionExecuting)="interactiveActionExecuting()">
+	(interactiveActionExecuting)="interactiveActionExecuting($event)">
 </reporting-angular-viewer>
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -648,8 +696,131 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 	
 		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 
-		interactiveActionExecuting() {
-			console.log("This event will be emitted before an interactive action is executed.");
+		interactiveActionExecuting(pageActionEventArgs: PageActionEventArgs) {
+			console.log("This event will be emitted before an interactive action is executed.", pageActionEventArgs);
+    	};
+	}
+````
+
+
+### interactiveActionLeave
+
+The `interactiveActionLeave` event will be emitted when the cursor leaves the interactive action area.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(interactiveActionLeave)="interactiveActionLeave($event)">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		interactiveActionLeave(interactiveActionArgs: PageActionEventArgs) {
+			console.log("The interactive action arguments.", interactiveActionArgs);
+			console.log("This event will be emitted when the cursor leaves the interactive action area.");
+		};
+	}
+````
+
+
+### toolTipOpening
+
+The `toolTipOpening` event will be emitted when a tooltip is opened.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(toolTipOpening)="toolTipOpening($event)">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		toolTipOpening(tooltipEventArgs: TooltipEventArgs) {
+        	console.log("The tooltip arguments.", tooltipEventArgs);
+		console.log("This event will be emitted when a tooltip is opened.");
+    	};
+	}
+````
+
+
+### toolTipClosing
+
+The `toolTipClosing` event will be emitted when a tooltip is closed.
+
+````HTML
+<reporting-angular-viewer
+	#viewer
+	[reportSource]="{
+		report: 'Dashboard.trdx', 
+		parameters: { ReportYear: 2004 }
+	}"
+	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
+	viewMode="interactive"
+	[keepClientAlive]="true"
+	(toolTipClosing)="toolTipClosing($event)">
+</reporting-angular-viewer>
+````
+````TypeScript
+import { Component, ViewChild } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
+import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
+	
+	@Component({
+		selector: 'app-root',
+		templateUrl: './app.component.html',
+		styleUrls: ['./app.component.scss']
+	})
+	
+	export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+	
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+
+		toolTipClosing(tooltipEventArgs: TooltipEventArgs) {
+			console.log("The tooltip arguments.", tooltipEventArgs);
+			console.log("This event will be emitted when a tooltip is closed.");
 		};
 	}
 ````
@@ -657,7 +828,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 ### reportVersionMismatch
 
-The `reportVersionMismatch` event will be emitted when there is mismatch between the version of the viewer and the reporting service.
+The `reportVersionMismatch` event will be emitted when there is a mismatch between the version of the viewer and the reporting service.
 
 ````HTML
 <reporting-angular-viewer

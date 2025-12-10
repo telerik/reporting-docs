@@ -7,6 +7,7 @@ tags: report,templates
 published: True
 position: 1
 previous_url: /standalone-report-designer-report-templates
+reportingArea: General
 ---
 
 <style>
@@ -40,3 +41,8 @@ The Telerik Report Designer searches for and automatically loads templates from 
 
 * The default template directory located in the Telerik Report Designer’s default working directory. The default working directory is located in the user documents folder named Telerik Report Designer.
 * The template directory located in the application folder. The application folder is where the Telerik Report Designer executable is located.
+
+
+## See Also
+
+* [Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%})

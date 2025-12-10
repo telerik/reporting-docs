@@ -7,6 +7,7 @@ tags: interactive,action,events
 published: True
 position: 100
 previous_url: /designing-reports-interactive-action-events
+reportingArea: General
 ---
 
 # Interactive Action Events Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/structure/location
 tags: telerik, reporting, map, report, item, location, providers
 previous_url: /MapLocationProviders
 published: True
+reportingArea: General
 ---
 
 # Location Providers in the Map
@@ -25,6 +26,8 @@ The map supports the following location providers:
 	The query arguments order is of a huge significance. In the example above, if you switch the query arguments to **Austria, Vienna**, the service will return **Vienna, Dooly County, GA, USA**.
 
 * [`BingLocationProvider`](/api/Telerik.Reporting.BingLocationProvider)&mdash;Uses the [Bing™ Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.
+
+* [`AzureLocationProvider`](/api/Telerik.Reporting.AzureLocationProvider)&mdash;Uses the [Azure Maps Get Geocoding Request](https://learn.microsoft.com/en-us/rest/api/maps/search/get-geocoding) to get location information about the requested address. This provider was introduced in Q2 2025 as part of the transition from Bing Maps to Azure Maps.
 
 ## See Also
 

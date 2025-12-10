@@ -5,6 +5,7 @@ description: "Learn more about the exportBegin(e, args) Event of the Telerik Rep
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportbegin(e,-args)
 tags: exportbegin(e,,args)
 published: True
+reportingArea: HTML5
 position: 2
 previous_url: /html5-report-viewer-reportviewer-events-exportbegin
 ---

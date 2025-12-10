@@ -27,6 +27,8 @@ res_type: kb
 
 ## Description
 
+> From Q4 2025, the Standalone Report Designer for .NET is built with .NET 10
+
 This article describes How to load `.NET 9` assemblies in the Standalone Report Designer for .NET *(**SRD.NET** for short)*.
 
 It is important to state that SRD.NET is targeting **.NET 8** instead of .NET 9 because .NET 8 is a **Major** release while .NET 9 is not. Major releases happen once a year, even-numbered versions are the long-term supported (LTS) releases.
@@ -48,7 +50,7 @@ This happens because the `RollForward` property is set to **Major**, and the fra
 
 Start SRD.NET while setting the `RollForward` option to **LatestMajor** from the command prompt:
 
-`C:\Program Files (x86)\Progress\Telerik Reporting {Release}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"`
+`"C:\Program Files (x86)\Progress\Telerik Reporting {Release}\Report Designer\.NET\Telerik.ReportDesigner.Net.exe" --roll-forward LatestMajor`
 
 As explained in the ["Values" section of the aforementioned Microsoft documentation article](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#values), the **LatestMajor** option will enforce the use of the latest .NET runtime, even if the targeted .NET 8 runtime is available.
 

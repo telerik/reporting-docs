@@ -1,10 +1,12 @@
 ---
 title: FAQs
 page_title: "Frequently Asked Questions about Telerik Reporting Licensing."
+description: "Learn the answers to the most Frequently Asked Questions about the Telerik Reporting License Key required after the 2025 Q1 (19.0.25.211) release."
 slug: license-frequently-asked-questions
 tags: license, telerik, reporting, faq, questions
 published: True
 position: 9
+reportingArea: General
 ---
 
 # Frequently Asked Questions
@@ -24,60 +26,16 @@ You will need to obtain and install a new license key after starting a trial, re
 
 ## Will the product function with an expired license key?
 
-This depends on your license type.
+This depends on the Telerik Reporting [license type (perpetual, subscription, or trial)](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing):
 
-* __Perpetual licenses__ will continue to function normally with an expired license key. 
+* *Perpetual licenses* function normally with an expired license key, as long as the application is using a Telerik Reporting version that was released before the expiration date of the license.
+* *Subscription licenses* function normally in already deployed applications, but you cannot rebuild and republish the app.
+* *Trial licenses* function normally only within the 30-day trial period.
 
-	However, the following will happen if you update or install a package version that is released after the expiration date of the license:
+If none of the above conditions are met, the following behaviors occur:
 
-	- A watermark appears on each report document page
-	- A warning message similar to the one shown below is logged in the build log
-
-* __Subscription licenses__ used in deployed applications will continue to function normally.
-
-	However, the following will happen if you rebuild the application with an expired subscription license:
-	
-	- A watermark appears on each report document page
-	- A warning message similar to the one shown below is logged in the build log
-		
-* __Trial licenses__ will prevent the applications from functioning normally once the trial period has expired.
-
-	The following will happen if you try to build or run the application:
-
-	- A watermark appears on each report document page.
-	- A warning message similar to the following one is logged in the build log:
-	
-````
-Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License file found.
-Telerik and Kendo UI Licensing warning TKL002: The following locations were searched:
-Telerik and Kendo UI Licensing warning TKL002:  * TELERIK_LICENSE (EnvironmentVariable)
-Telerik and Kendo UI Licensing warning TKL002:  * KENDO_UI_LICENSE (EnvironmentVariable)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\CSharp\.NET 6\WinFormsIntegrationDemo\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\CSharp\.NET 6\WinFormsIntegrationDemo\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\CSharp\.NET 6\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\CSharp\.NET 6\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\CSharp\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\CSharp\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Examples\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\telerik-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\kendo-ui-license.txt (RecursiveFilePath)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Users\user1\AppData\Roaming\Telerik\telerik-license.txt (UserDirectory)
-Telerik and Kendo UI Licensing warning TKL002:  * C:\Users\user1\AppData\Roaming\Telerik\kendo-ui-license.txt (UserDirectory)
-Telerik and Kendo UI Licensing warning TKL002: Activate a License Key file at https://prgress.co/3PBSVoC
-Telerik and Kendo UI Licensing warning TKL101: Telerik Reporting is not listed in your current license file.
-Telerik and Kendo UI Licensing warning TKL004: Unable to locate licenses for all products.
-````
-
-See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
-
-Note that future updates of Telerik Reporting may restrict or disable some features when no valid license is present.
+* A watermark appears on each report document page.
+* A [warning message]({%slug license-errors-and-warnings%}) appears in the application's build log.
 
 ## I updated the version of the Telerik Reporting packages in my project and the invalid license errors have appeared. What is the cause of this behavior?
 
@@ -117,7 +75,7 @@ To enforce the use of the license key file, unset the environment variable.
 
 ## Are earlier versions of Telerik Reporting affected?
 
-No, versions released prior to __January 2025__ do not require a license key.
+No, versions released prior to January 2025 do not require a license key.
 
 ## What happens if I make a change to non-Telerik parts of the code after the subscription expires?
 

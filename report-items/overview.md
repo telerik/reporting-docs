@@ -7,6 +7,7 @@ previous_url: /report-items/how-to/how-to-layout-report-items, /designing-report
 tags: telerik, reporting, report, items, overview
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Working With Report Items
@@ -17,7 +18,7 @@ Every report item is an instance of the [`ReportItemBase`](/api/Telerik.Reportin
 
 ## Arranging Report Items
 
-The report content is displayed in the report items. To use report items, select them from the **Toolbox** and place them on your report.
+The report's content is displayed in the report items. To use a report item, place it on your report.
 
 ### In Visual Studio
 

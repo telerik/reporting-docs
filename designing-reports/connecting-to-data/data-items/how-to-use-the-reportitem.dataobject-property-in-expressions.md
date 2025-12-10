@@ -7,6 +7,7 @@ tags: how,to,use,the,reportitem.dataobject,property,in,expressions
 published: True
 position: 6
 previous_url: /data-items-how-to-use-data-object
+reportingArea: General
 ---
 
 # Expressions with ReportItem.DataObject

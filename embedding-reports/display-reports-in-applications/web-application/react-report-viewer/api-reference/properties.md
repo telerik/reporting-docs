@@ -5,6 +5,7 @@ description: "Find a list of all of the available React Report Viewer properties
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/properties
 tags: react, report, viewer, properties, commands
 published: True
+reportingArea: React
 position: 3
 previous_url: /react-report-viewer-api-reference-properties
 ---
@@ -32,12 +33,10 @@ Each [command]({%slug telerikreporting/using-reports-in-applications/display-rep
 ````JavaScript
 let viewer;
 ReactDOM.render(
-	<div>
-		<TelerikReportViewer
-		...
-		/>
+	<>
+		<TelerikReportViewer />
 		<button onClick={ () => viewer.commands.print.exec() }>Print</button>
-	</div>
+	</>
 ````
 
 The example above creates a Print button and in the click event handler invokes report viewer __print__ command. Note that the __exec()__ method of the command needs to be called. For more information please check the [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) article.
@@ -48,6 +47,7 @@ The following table is a list of all commands:
 | ------ | ------ | ------ |
 |historyBack|none|Goes back to the previously rendered report from history.|
 |historyForward|none|Goes forward to the previously rendered report from history.|
+|stopRendering|none|Stop the rendering of the current report at the first possible moment.|
 |refresh|none|Refreshes the report.|
 |goToFirstPage|none|Goes to the first page of the report.|
 |goToPrevPage|none|Goes to the previous page of the report.|
@@ -65,3 +65,5 @@ The following table is a list of all commands:
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog.|
+|toggleSendEmailDialog|none|Shows or hides the Send Email dialog.|
+|toggleAiPromptDialog|none|Shows or hides the AI Prompt dialog.|

@@ -5,6 +5,7 @@ description: "Learn more about the viewerToolTipOpening(e, args) Event of the Te
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)
 tags: viewertooltipopening,args
 published: True
+reportingArea: HTML5
 position: 15
 previous_url: /html5-report-viewer-reportviewer-events-viewertooltipopening
 ---

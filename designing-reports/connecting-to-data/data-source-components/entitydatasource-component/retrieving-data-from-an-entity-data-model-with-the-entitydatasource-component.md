@@ -7,6 +7,7 @@ tags: retrieving,data,from,an,entity,data,model,with,the,entitydatasource,compon
 published: True
 position: 5
 previous_url: /entitydatasource-retrieving-data-from-an-entity-data-model
+reportingArea: General
 ---
 
 # Retrieving Data from an Entity Data Model with the EntityDataSource Component

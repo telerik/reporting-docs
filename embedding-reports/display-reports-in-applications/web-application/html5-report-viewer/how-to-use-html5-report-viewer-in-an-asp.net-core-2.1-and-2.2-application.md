@@ -5,6 +5,7 @@ description: "Learn How to Use the Telerik Reporting HTML5 Report Viewer in ASP.
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application
 tags: how,to,use,html5,report,viewer,in,an,asp.net,core,2.1,and,2.2,application
 published: True
+reportingArea: HTML5
 position: 6
 previous_url: /html5-report-viewer-asp-net-core-2, /manual-setup-of-html5-report-viewer-in-asp-net-core-2
 sitemap: false
@@ -45,7 +46,7 @@ app.UseStaticFiles();
 	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core</title>
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>>
 	  <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
 	  <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
 	  <script src="/api/reports/resources/js/telerikReportViewer"></script>>

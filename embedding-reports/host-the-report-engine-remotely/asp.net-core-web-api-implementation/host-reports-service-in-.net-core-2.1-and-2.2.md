@@ -5,6 +5,7 @@ description: "Learn how to configure the Telerik Reporting REST Service in an AS
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2
 tags: how,to,host,reports,service,in,asp.net,core,2.1,and,2.2
 published: True
+reportingArea: RESTServiceCore
 position: 10
 previous_url: /telerik-reporting-rest-service-aspnetcore-mvc-core2,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-core-2.1-and-2.2
 sitemap: false
@@ -45,8 +46,8 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 This guide applies the recommended NuGet package references approach to add the dependencies:
 
-1. Reference the __Telerik.Reporting.Services.AspNetCore__ (or __Telerik.Reporting.Services.AspNetCore.Trial__) package.
-1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the __Telerik.Reporting.OpenXmlRendering__ (or __Telerik.Reporting.OpenXmlRendering.Trial__) NuGet package.
+1. Reference the __Telerik.Reporting.Services.AspNetCore__ package.
+1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the __Telerik.Reporting.OpenXmlRendering__ NuGet package.
 
 > The Telerik Reporting engine and services assemblies are built against __.NET Standard 2.0 framework__ where applicable, which ensures compatibility with a greater variety of frameworks and applications. The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add all indirect dependencies to your project bringing easier dependency management. Alternatively, the assemblies are available in the `\Bin\netstandard2.0\` folder of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Core Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/). Note that you need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.
 

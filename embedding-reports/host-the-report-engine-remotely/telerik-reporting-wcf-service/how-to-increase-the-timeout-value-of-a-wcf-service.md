@@ -5,6 +5,7 @@ description: "Learn How to Increase the timeout value of the WCF service in Tele
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-increase-the-timeout-value-of-a-wcf-service
 tags: how,to,increase,the,timeout,value,of,a,wcf,service
 published: True
+reportingArea: RESTService
 position: 5
 previous_url: /wcf-report-service-increasing-timeout
 ---

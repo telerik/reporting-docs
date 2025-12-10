@@ -5,6 +5,7 @@ description: "Learn how the Tooltips of the Native Blazor Report Viewer work in 
 slug: native-blazor-report-viewer/tooltips-customization
 tags: custom,editor,widget,blazor,tooltips
 published: True
+reportingArea: NativeBlazor
 position: 4
 ---
 

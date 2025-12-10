@@ -5,6 +5,7 @@ description: "Learn how to use the GraphQLDataSource Component in Telerik Report
 slug: graphqldatasource
 published: True
 position: 0
+reportingArea: General
 ---
 <style>
 table th:first-of-type {
@@ -19,7 +20,7 @@ table th:nth-of-type(2) {
 
 The data source is introduced in [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211).
 
-The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%}) in the [Standalone]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) and the [Visual Studio Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview %}). As of now, the [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}) does not feature a wizard, but the data source can be configured through the [Properties Area]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements). At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
+The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%}). At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise, no data will be shown.
 
@@ -90,7 +91,7 @@ It is possible to leverage the 2-step Authentication mechanism above to retrieve
 ## Supported developer platforms
 
 * .NET Framework 4.6.2 and above
-* .NET 6 and above
+* .NET {{site.mindotnetversion}} and above
 * .NET Standard 2.0 and above
 
 ## See Also

@@ -7,6 +7,7 @@ previous_url: /table-working-with-table-cross-table-list-items, /report-items/ta
 tags: telerik, reporting, report, items, table, crosstab, list, templates, overview
 published: True
 position: 0
+reportingArea: General
 ---
 
 # Table Overview

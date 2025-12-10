@@ -7,6 +7,7 @@ tags: expressions,values,item,properties
 published: True
 position: 1
 previous_url: /expressions-property-values
+reportingArea: General
 ---
 
 # Expressions as Values of Item Properties

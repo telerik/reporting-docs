@@ -5,6 +5,7 @@ description: "Learn more about the dispose() method of the Telerik Reporting HTM
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/dispose()
 tags: dispose()
 published: True
+reportingArea: HTML5
 position: 7
 previous_url: /html5-report-viewer-reportviewer-methods-dispose-en
 ---

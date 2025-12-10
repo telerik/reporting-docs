@@ -5,6 +5,7 @@ description: "Find out which are the requests exposed by the Telerik Reporting R
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview
 tags: overview,rest,api,uri,http,service,reporting,request
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 0
 previous_url: /telerik-reporting-rest-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/, /telerik-reporting-rest-json-entities
 ---
@@ -53,4 +54,7 @@ The API represents resources as hierarchical URIs to force the clients to use ce
 | [Search in a Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/search-in-a-document%})|POST|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search|
 | [Release Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document%})|DELETE|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}|
 | [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})|GET|/api/reports/formats|
-| [Get Version]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%})|GET|/api/reports/version|
+| [Get Version (Deprecated)]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%})|GET|/api/reports/version|
+| [Get Configuration]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration%})|GET|/api/reports/configuration|
+| [Create AI Thread]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/create-ai-thread%})|POST|/api/reports/clients/{clientId}/instances/{instanceId}/ai|
+| [Get AI Response]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/get-ai-response%})|POST|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/ai/{threadId}/query|

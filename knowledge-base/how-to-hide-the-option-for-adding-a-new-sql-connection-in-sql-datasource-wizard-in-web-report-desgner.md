@@ -17,13 +17,17 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+        <tr>
+		    <td>Product Version</td>
+		    <td>15.1.21.512</td>
+	    </tr>
 	</tbody>
 </table>
-
 
 ## Description
 This article demonstrates how to hide the option for adding a new SQL connection in the SQL DataSource Wizard in the Web Report Designer.
 
+> In newer versions, it is possible to intercept the `/api/reportdesigner/connectionspermissions` request and modify the response returned from it to hide this option. For more information, check [How to Disable "Build new data connections" in the SqlDataSource Wizard of the Web Report Designer]({%slug restricting-build-new-data-connections-report-designer%}).
 
 ## Suggested Workarounds
 Currently, such functionality can be achieved through a workaround. You can add some extra JS and Jquery code that hides the option to create a new SQL connection. 
@@ -74,4 +78,4 @@ It does not hide the step entirely, but the only option showing is to use existi
  </script>
 ```
 
-Note that experienced users can look through the raw HTML and find the hidden DIV tag. But until the Web Designer gets the added features of customizing the UI, this is the closest solution.
+Note that experienced users can look through the raw HTML and find the hidden DIV tag.

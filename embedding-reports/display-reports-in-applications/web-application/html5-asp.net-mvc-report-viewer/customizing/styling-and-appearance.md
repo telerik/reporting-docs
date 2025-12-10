@@ -5,6 +5,7 @@ description: "Learn how the styling and appearance of the HTML5 MVC Report Viewe
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/styling-and-appearance
 tags: styling,and,appearance
 published: True
+reportingArea: MVCWrapper
 position: 1
 previous_url: /html5-mvc-report-viewer-customizing-styling-and-appearance
 ---

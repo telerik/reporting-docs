@@ -7,6 +7,7 @@ tags: telerik,reporting,menu
 published: True
 position: 21
 previous_url: /ui-telerik-reporting-menu
+reportingArea: General
 ---
 
 # Telerik Reporting Menu Overview

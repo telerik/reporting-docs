@@ -5,6 +5,7 @@ description: "Understand how to update the report parameters with values passed 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: react, report, viewer, pass, values, to, report, parameters
 published: True
+reportingArea: React
 position: 3
 previous_url: /react-report-viewer-how-to-pass-values-to-report-parameters
 ---
@@ -51,15 +52,19 @@ export function ReportViewer() {
 		<>
 		<div id="invoiceIdSelector">
 			<label htmlFor="invoiceId">Invoices</label>
+			
 			<select defaultValue="SO51081" id="invoiceId" onChange={(e => {
-			const { viewerObject } = viewerRef.current;
-			viewerObject.reportSource({ report: viewerObject.reportSource().report, parameters: { OrderNumber: e.target.value } })
+				const { viewerObject } = viewerRef.current;
+				viewerObject.reportSource({ report: viewerObject.reportSource().report, parameters: { OrderNumber: e.target.value } })
 			})} title="Select the Invoice ID">
-			<option value="SO51081">SO51081</option>
-			<option value="SO51082">SO51082</option>
-			<option value="SO51083">SO51083</option>
+			
+				<option value="SO51081">SO51081</option>
+				<option value="SO51082">SO51082</option>
+				<option value="SO51083">SO51083</option>
+			
 			</select>
 		</div>
+		
 		<TelerikReportViewer
 			ref={viewerRef}
 			serviceUrl="https://demos.telerik.com/reporting/api/reports/"

@@ -7,6 +7,7 @@ tags: how,to,bind,to,a,datatable
 published: True
 position: 11
 previous_url: /object-data-source-how-to-bind-to-data-table
+reportingArea: General
 ---
 
 # Binding ObjectDataSource Component to a DataTable

@@ -1,9 +1,9 @@
 ---
-title: Add Custom Headers to Angular Report Viewer REST API Calls
-description: "Learn How to Pass Custom Headers Along with the Telerik Report Viewer REST API Calls from an Angular Application."
+title: Add HTTP Headers to HTML5-Based Report Viewer REST API Calls
+description: "Learn how to attach HTTP headers, such as authorization tokens, to REST API requests made by Telerik HTML5-based report viewers."
 type: how-to
-page_title: Pass Custom Headers with the Angular Viewer REST API Calls
-slug: custom-headers-with-reportviewer-rest-api-calls
+page_title: Add HTTP Headers to HTML5-Based Report Viewer REST API Requests
+slug: http-headers-with-reportviewer-rest-api-calls
 position: 
 tags: 
 ticketid: 1474331
@@ -19,8 +19,8 @@ res_type: kb
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>Report Viewer</td>
-			<td>Angular</td>
+			<td>Version</td>
+			<td>Any</td>
 		</tr>
 	</tbody>
 </table>
@@ -28,26 +28,95 @@ res_type: kb
 
 ## Description
 
-I need to provide custom headers with every API call made by the Angular Report Viewer. My goal is to add an authorization token. I add the custom header via the interceptor `token-http-interceptor.service.ts`. However, the header is not added to the calls made by the Angular Report Viewer.
+This article explains how to include HTTP headers—such as authorization tokens—in the REST API requests made by HTML5-based report viewers.
 
-## Solution
+It applies to the following viewers:
 
-The Angular Report Viewer is a wrapper of the HTML5 Report Viewer, which is a jQuery widget and not a native Angular component. That's why you cannot add custom headers the Angular way - via the HTTP interceptor. In this article, we suggest two possible solutions.
+- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
+- [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+- [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
+- [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
+- [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
 
-### Solution 1
+## Solution 1
 
-The Angular Report Viewer comes with out-of-the-box support for an [*authenticationToken* option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}). This option adds an `Authorization` header for every request to the REST service.
+All HTML5-based report viewers support an authentication token configuration option that automatically appends a `Bearer` token to the `Authorization` header of each request sent to the Telerik Reporting REST service. For example, the HTML5 Report Viewer includes an [`authenticationToken` option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). 
 
-### Solution 2
+>note The exact casing or naming of this option may vary across different viewer implementations. For accurate usage, refer to the specific documentation for the viewer you are integrating.
 
-The second solution is to add the custom headers to the REST API calls of the Angular Report Viewer with *jQuery's* [ajaxSetup](https://api.jquery.com/jquery.ajaxsetup/) function: 
+## Solution 2
 
-The following code represents one possible approach that can be used in the component with the Angular report viewer:
+>note In both cases, ensure that the TS/JS code is executed before the report viewer is initialized, so that the overridden fetch logic takes effect during the initialization process.
 
+The second solution is to add custom headers to the REST API calls of the HTML5 report viewer. Based on the version you are on, you can follow either of these approaches:
+
+### Telerik Reporting Q2 2025+
+
+Starting from `19.1.25.521`, the HTML5-based report viewers rely on the browser's built-in [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) to issue their requests to the Reporting REST service. To add custom HTTP headers to the requests, you can override the [window.fetch() method](https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch) as follows:
+
+````TypeScript
+	const originalFetch = window.fetch;
+	
+	window.fetch = async function (
+		input: RequestInfo | URL,
+		init?: RequestInit
+	): Promise<Response> {
+		const headers = new Headers(init?.headers || {});
+	
+		if (typeof input === 'string' && input.includes('api/reports')) {
+			headers.set('X-Custom-Header', 'YourHeaderValue');
+		}
+	
+		const modifiedInit: RequestInit = {
+			...init,
+			headers
+		};
+	
+		return originalFetch(input, modifiedInit);
+	};
+````
 ````JavaScript
-ngOnInit(): void {
-	let $: any = (window as any)["jQuery"];
-	$.ajaxSetup({xhrFields: { withCredentials: true } });
-}
+	const originalFetch = window.fetch;
+	
+	window.fetch = async function (input, init) {
+		const headers = new Headers(init?.headers || {});
+	
+		if (typeof input === 'string' && input.includes('api/reports')) {
+			headers.set('X-Custom-Header', 'YourHeaderValue');
+		}
+	
+		const modifiedInit = {
+			...init,
+			headers
+		};
+	
+		return originalFetch(input, modifiedInit);
+	};
 ````
 
+### Telerik Reporting Q1 2025 or Earlier
+
+Before the [2025 Q2 release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521), the report viewer implementation relied on jQuery-based requests. To add custom HTTP headers in this scenario, you can use jQuery's [ajaxSetup()](https://api.jquery.com/jquery.ajaxsetup/) function: 
+
+````TypeScript
+	const $: any = (window as any)['jQuery'];
+
+	$.ajaxSetup({
+		beforeSend: function (xhr: XMLHttpRequest) {
+			xhr.setRequestHeader('X-Custom-Header', 'CustomValue');
+		}
+	});
+````
+````JavaScript
+	$.ajaxSetup({
+		beforeSend: function (xhr: XMLHttpRequest) {
+			xhr.setRequestHeader('X-Custom-Header', 'CustomValue');
+		}
+	});
+````
+
+
+## See Also
+
+* [Add Custom Headers to Responses of the Reporting REST Service]({%slug add-custom-headers-to-responses-of-rests-service%})

@@ -5,6 +5,7 @@ description: "Learn more about the Query Builder in the Web Report Designer and 
 slug: web-report-designer-query-builder
 tags: query,builder,web,report,designer
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 0
 ---
 
@@ -28,7 +29,7 @@ Behind the scenes, the Reporting engine calls the [ADO.NET GetSchema method](htt
 null,Production,ProductCategory
 ````
 
-> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .Net 6+.
+> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .NET {{site.mindotnetversion}}+.
 
 ![Image of the SQL Data Source wizard showing the schema restrictions field and the query builder dialog](images/wrd-sqlds-wzrd-schema-restrictions.png)
 

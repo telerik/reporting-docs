@@ -1,25 +1,26 @@
 ---
 title: Setting up in .NET
-page_title: Embedding the Web Report Designer in .NET 6+
-description: "Learn how to set up the Telerik Web Report Designer in .NET 6 and higher applications via the Visual Studio Item Templates or Manually."
+page_title: Embedding the Web Report Designer in .NET 8+
+description: "Learn how to set up the Telerik Web Report Designer in .NET 8 and higher applications via the Visual Studio Item Templates or Manually."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
-tags: how,to,set,up,in,.net,6,7,8,applications
+tags: how,to,set,up,in,.net,8,applications
 published: True
+reportingArea: WRDHTML5, WRDRestServiceCore
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 ---
 
 # Setting up the Web Report Designer in .NET applications
 
-This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET 6+` applications.
+This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET {{site.mindotnetversion}}+` applications.
 
-The quickest way to add the web report designer to a web project is with the __Telerik Web Report Designer__ item template in Visual Studio. The item template is compatible with projects targetting `.NET 6+`. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "*Telerik Web Report Designer*" and select the item template which corresponds to your project type.
+The quickest way to add the web report designer to a web project is with the __Telerik Web Report Designer__ item template in Visual Studio. The item template is compatible with projects targetting `.NET {{site.mindotnetversion}}+`. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "*Telerik Web Report Designer*" and select the item template which corresponds to your project type.
 
 For full control, instead of using the item template, you can manually configure the REST service and add the web report designer as elaborated in the rest of this article.
 
 ## Prerequisites
 
-1. Create a sample ASP.NET Core Project targeting .NET 6 or higher. It may be an empty Web project or a Web API project.
+1. Create a sample ASP.NET Core Project targeting .NET {{site.mindotnetversion}}+ or higher. It may be an empty Web project or a Web API project.
 1. Add the required dependencies:
 
 	* `Telerik.WebReportDesigner.Services`
@@ -35,7 +36,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 ## Add Required Settings in the `Startup.cs` file
 
->note Some of the Visual Studio template projects, like the .NET 6 Web API project, have the required settings already added by default. In the empty .NET Web projects, you may need to add manually the settings.
+>note Some of the Visual Studio template projects, like the .NET {{site.mindotnetversion}}+ Web API project, have the required settings already added by default. In the empty .NET Web projects, you may need to add manually the settings.
 
 1. The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer Service functionality. Make sure the application is configured for WebAPI controllers and call the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson?view=aspnetcore-7.0) to place the __NewtonsoftJson__ serialization:
 
@@ -50,7 +51,6 @@ services.AddControllers().AddNewtonsoftJson();
 app.UseEndpoints(endpoints =>
 	{
 		endpoints.MapControllers();
-		//...
 	});
 ````
 
@@ -106,10 +106,11 @@ public void ConfigureServices(IServiceCollection services)
 			});
 		services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
 		{
+			TemplateDefinitionStorage = new FileTemplateDefinitionStorage("templates_folder_path", new[] { "sub_folder_to_exclude" }), // introduced in Q4 2025
 			DefinitionStorage = new FileDefinitionStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports"), new[] { "Resources", "Shared Data Sources" }),
 			ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Resources")),
 			SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
-				SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+			SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
 		});
 	}
 ````
@@ -174,15 +175,15 @@ Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports")
 		<div id="webReportDesigner">
 			loading...
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer/"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$("#webReportDesigner").telerik_WebReportDesigner({
 					toolboxArea: {
-						layout: "list" //Change to "grid" to display the contents of the Components area in a flow grid layout.
+						layout: "list" // Change to "grid" to display the contents of the Components area in a flow grid layout.
 					},
 					serviceUrl: "/api/reportdesigner",
 					report: "Barcodes Report.trdp"

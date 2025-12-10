@@ -5,7 +5,8 @@ description: "Learn how to use report event handlers in declarattive report defi
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd
 tags: crating,using,event,handlers,standalone,report,designer
 published: True
-position: 7
+position: 8
+reportingArea: General
 ---
 
 # Using event handlers in the Standalone Report Designer

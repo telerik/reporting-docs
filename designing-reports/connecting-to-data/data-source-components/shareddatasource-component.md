@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: shareddatasource,component,shared,data,source,designer,report
 published: True
 position: 3
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

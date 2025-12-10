@@ -5,6 +5,7 @@ description: "Learn about the commands exposed by the Native Blazor Report Viewe
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands
 tags: command,commands,method,methods,blazor,native,report,viewer,api
 published: True
+reportingArea: NativeBlazor
 position: 1
 ---
 
@@ -136,6 +137,15 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 			</td>
 			<td>
 				Shows or hides the search dialog.
+			</td>
+		</tr>
+		<tr>
+			<td>AiPrompt</td>
+			<td>
+				None
+			</td>
+			<td>
+				Shows or hides the AI prompt dialog.
 			</td>
 		</tr>
 		<tr>

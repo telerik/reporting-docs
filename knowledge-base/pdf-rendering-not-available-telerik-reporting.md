@@ -26,7 +26,7 @@ ticketid: 1659555
 
 ## Description
 
-After upgrading an ASP.NET Core application to .NET 8  the PDF rendering format becomes unavailable.  The error message encountered is `Telerik.Reporting.Processing.RendererNotAvailableException: PDF rendering format is not available`.
+After upgrading an ASP.NET Core application to .NET 8+  the PDF rendering format becomes unavailable.  The error message encountered is `Telerik.Reporting.Processing.RendererNotAvailableException: PDF rendering format is not available`.
 
 ## Cause
 

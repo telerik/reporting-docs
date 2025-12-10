@@ -7,6 +7,7 @@ tags: search
 published: True
 position: 11
 previous_url: /html5-report-viewer-search
+reportingArea: General
 ---
 
 # Search in the HTML5-based Report Viewers
@@ -21,9 +22,9 @@ If the __searchMetadataOnDemand__ property is set to __true__, the processing en
 
 ## Search dialog
 
-![The search dialog in the Html5 Report Viewer showing 7 results found for the word bottle](images/HTML5ReportViewer/html5-viewer-search-dialog.png)
+![The search dialog in the Html5 Report Viewer showing results found for the word 'report'](images/HTML5ReportViewer/html5-sass-viewer-search-window.png)
 
-The search dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when the search dialog is shown. The dialog can be closed with the close button in the top right corner or using the __search__ button on the toolbar.
+The search dialog is a [Kendo Window](https://demos.telerik.com/kendo-ui/window/index) Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when the search dialog is shown. The dialog can be closed with the close button in the top right corner or using the __search__ button on the toolbar.
 
 The dialog consists of the following components:
 

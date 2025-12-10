@@ -5,6 +5,7 @@ description: "Learn how the Native Angular Report Viewer can be implemented in a
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-standalone-components
 tags: how,to,use,native,angular,report,viewer,with,standalone,components
 published: True
+reportingArea: NativeAngular
 position: 5
 ---
 

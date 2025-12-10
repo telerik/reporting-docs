@@ -5,6 +5,7 @@ description: "Learn more about the Methods of the HTML5 Report Viewer and how yo
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview
 tags: overview
 published: True
+reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-reportviewer-methods, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/
 ---

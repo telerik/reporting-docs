@@ -5,6 +5,7 @@ description: "Learn how to set up the Telerik Web Report Designer in an ASP.NET 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application
 tags: how,to,set,up,in,.net,core,2.1+,application
 published: True
+reportingArea: WRDHTML5, WRDRestServiceCore
 position: 3
 previous_url: /web-report-designer-setup-in-net-core
 ---
@@ -185,7 +186,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 		<div id="webReportDesigner">
 			loading...
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}//js/kendo.all.min.js"></script>
 		<script src="api/reportdesigner/resources/js/telerikReportViewer"></script>
 		<script src="api/reportdesigner/designerresources/js/webReportDesigner"></script>

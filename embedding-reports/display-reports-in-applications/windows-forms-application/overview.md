@@ -5,6 +5,7 @@ description: "Learn how to display Telerik report documents in WinForms applicat
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview
 tags: windows, forms, report, viewer, overview
 published: True
+reportingArea: WinForms
 position: 0
 previous_url: /winforms-report-viewer, /embedding-reports/display-reports-in-applications/windows-forms-application/, /winforms-report-viewer-overview
 ---
@@ -53,7 +54,7 @@ The Windows Forms Report Viewer renders buttons and inputs in the dedicated tool
 
 * Visual Studio 2012 or later.
 * .NET Framework 4 or above (.NET Framework 4 __Client Profile__ is not supported)
-* .NET 6+
+* .NET {{site.mindotnetversion}}+
 
 ## How It Works
 
@@ -83,6 +84,19 @@ It is recommended that you declare a DPI-aware application by adding a `dpiAware
 	</asmv3:windowsSettings>
 	</asmv3:application>
 </assembly>
+````
+
+For .NET applications, you need to ensure Windows 10 compatibility in the manifest file, as elaborated in the Microsoft article [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms):
+
+````XML
+<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+	<application>
+		<!-- Other Windows distributions may be added -->
+		
+		<!-- Windows 10 -->
+		<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />	
+	</application>
+</compatibility>
 ````
 
 As of Windows 10 Anniversary Update, the Windows runtime has improved the UX for Windows Forms applications that are not DPI-aware. However, this behavior may lead to incorrect calculations of the interactive item positions and it is recommended that you always declare the Windows Forms application as DPI-aware. For more information about DPI-aware desktop applications, refer to the [High DPI Desktop Application Development on Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows) MSDN article.

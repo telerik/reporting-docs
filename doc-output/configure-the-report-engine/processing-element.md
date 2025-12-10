@@ -7,6 +7,7 @@ tags: processing,element
 published: True
 position: 3
 previous_url: /configuring-telerik-reporting-cacheDefinitionProperties
+reportingArea: General
 ---
 
 <style>
@@ -51,7 +52,7 @@ XML-based configuration file:
 		</resourceResolver>-->
 		<!-- The element below represents a custom implementation of resource resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<resourceResolver provider="custom">
 			<parameters>
 				<parameter name="typeName" value="Namespace.CustomResourceResolverClass, AssemblyName" />
@@ -60,7 +61,7 @@ XML-based configuration file:
 		</resourceResolver>
 		<!-- The element below represents a custom implementation of a sharedDataSourcer resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<sharedResourceResolver provider="custom">
 			<parameters>
 				<parameter name="typeName" value="Namespace.CustomSharedDataSourceResolverClass, AssemblyName" />
@@ -92,7 +93,7 @@ JSON-based configuration file:
 			//]
 			// The element below represents a custom implementation of a resource resolver
 			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 			"parameters": [
 				{
@@ -117,7 +118,7 @@ JSON-based configuration file:
 
 			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider
 			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 				"parameters": [
 				{
@@ -140,7 +141,7 @@ Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats
 
 ### Graphics Engine
 
-The __graphicsEngine__ element was introduced with the Skia graphics engine in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010). It sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET 7 or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
+The __graphicsEngine__ element was introduced with the Skia graphics engine in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010). It sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET {{site.mindotnetversion}} or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
 
 If the __graphicsEngine__ element is not present in the configuration file, the *PlatformDependent* value will be used.
 Skia implementation is not available in applications that target .NET Framework. They can only work with the GDI graphics engine.
@@ -149,7 +150,7 @@ Skia implementation is not available in applications that target .NET Framework.
 
 |   |   |
 | ------ | ------ |
-|Attributes| __engineName__ – required string attribute. Determines the type of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) used in the application. Available values:<ul><li>__PlatformDependent__ - the default value. On the Windows platform, the application will use the GDI graphics engine. On non-Windows platforms, the application will use the Skia graphics engine.</li><li>__Gdi__ - the application will use GDI graphics engine. On non-Windows platforms in applications that target .NET 7 or higher, this will cause runtime exceptions of type __PlatformNotSupported__ to be thrown. For .NET 6 and lower frameworks, this setting will require installing __libgdiplus__ library that handles GDI calls.</li><li>__Skia__ - the application will use the Skia graphics engine through the SkiaSharp implementation. Can be used on Windows and non-Windows platforms in applications that target .NET 6 or higher framework.</li></ul>|
+|Attributes| __engineName__ – required string attribute. Determines the type of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) used in the application. Available values:<ul><li>__PlatformDependent__ - the default value. On Windows platform, the application will use the GDI graphics engine. On non-Windows platforms, the application will use the Skia graphics engine.</li><li>__Gdi__ - the application will use GDI+ graphics engine. On non-Windows platforms this will cause runtime exceptions of type __PlatformNotSupported__ to be thrown. Available for applications that target either .NET Framework or .NET</li><li>__Skia__ - uses SkiaSharp for rendering. Can be used on Windows and non-Windows platforms in applications that target .NET (.NET Framework is not supported).</li></ul>|
 
 
 ### ResourceResolver

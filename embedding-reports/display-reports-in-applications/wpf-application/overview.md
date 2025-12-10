@@ -5,6 +5,7 @@ description: "Learn about what are the minimum requirements to use the Telerik R
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview
 tags: overview
 published: True
+reportingArea: WPF
 position: 0
 previous_url: /wpf-report-viewer-intro, /embedding-reports/display-reports-in-applications/wpf-application/, /wpf-report-viewer
 ---
@@ -32,6 +33,8 @@ The toolbar of the WPF Report Viewer provides basic functionality for interactin
 * Show/Hide document map
 * Show/Hide parameters area
 * Zooming
+* Search in report contents
+* Show/Hide the AI Prompt Dialog. Currently supported only when the viewer is connected to a remote Telerik Reporting REST Service that has the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality enabled.
 
 To use the WPF Report Viewer, you need a WPF application. To create such, you need the following tools installed:
 
@@ -39,7 +42,7 @@ To use the WPF Report Viewer, you need a WPF application. To create such, you ne
 
 * Visual Studio 2012 or later.
 * .NET Framework 4 or above (.NET Framework 4 __Client Profile__ is not supported)
-* .NET 6+
+* .NET {{site.mindotnetversion}}+
 * (optional) Expression Blend
 
 ## How it works

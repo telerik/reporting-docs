@@ -1,11 +1,12 @@
 ---
-title: TypeReferences Element
-page_title: TypeReferences Element Configuration
-description: "Learn how to set up the TypeReferences Element, allowing you to use custom user functions in the report and create ObjectDataSource components."
+title: typeReferences Element
+page_title: typeReferences Element Configuration
+description: "Learn how to set up the typeReferences Element, allowing you to use custom user functions in the report and create ObjectDataSource components."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element
-tags: typeReferences,element, user, function, ObjectDataSource
+tags: typeReferences, element, user, function, ObjectDataSource
 published: True
 position: 11
+reportingArea: General
 ---
 
 <style>
@@ -17,32 +18,28 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# TypeReferences Element Overview
+# typeReferences Element Overview
 
 >note This element was first introduced in the [2024 Q1 (18.0.24.305)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q1-(18-0-24-305)) Reporting version.
 
-Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in the `TypeReferences` section are loaded into the application domain if the type is successfully resolved, so it's not necessary to also declare the assembly in the `assemblyReferences` section.
+Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in the typeReferences section are loaded into the application domain if the type is successfully resolved, so it's not necessary to declare the assembly also in the AssemblyReferences section.
 
 XML-based configuration file:
 
 ````XML
-<TypeReferences>
+<typeReferences>
 	<add />
 	<clear />
 	<remove />
-</TypeReferences>
+</typeReferences>
 ````
 
 JSON-based configuration file:
 
 ````JSON
-"TypeReferences": [
+"typeReferences": [
 ],
 ````
-
-The `TypeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` element.
-
-If you want to allow all the types from a DLL, use the [assemblyReferences element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}). instead.
 
 ## Attributes and Elements
 
@@ -50,11 +47,11 @@ The following sections describe attributes, child elements, and parent elements.
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__typeName__ – mandatory string attribute. Specifies the full name of the type, i.e. namespace and class name.</li><li>__assemblyName__ – mandatory string attribute. Specifies the name of the assembly that contains the type.</li><li>__publicKeyToken__ – optional string attribute. Specifies the public key token of the assembly. Can be omitted or can have empty or null value.</li></ul>|
+|Attributes|<ul><li>__typeName__ – mandatory string attribute. Specifies the full name of the type, i.e., namespace and class name.</li><li>__assemblyName__ – mandatory string attribute. Specifies the name of the assembly that contains the type.</li><li>__publicKeyToken__ – optional string attribute. Specifies the public key token of the assembly. Can be omitted or can have an empty or null value.</li></ul>|
 |Child Elements|<ul><li>__add__ - Optional element. Adds a type reference to the collection.</li><li>__clear__ - Optional element. Removes all references to inherited type names, allowing only the references that are added by the current add element.</li><li>__remove__ - Optional element. Removes a reference to an inherited type name from the collection.</li></ul>|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 
-When providing the Public Key Token, the Reporting Engine will try to match it with the Public Key Token of the found DLL. It will not load an assembly with the same name and a different Public Key Token and will throw an exception instead. If the Public Key Token is omitted in the configuration, the Reporting Engine will load the first DLL, which name matches the provided Assembly Name. Potentially, this may allow bad agents to replace trusted assemblies with malicious ones and constitutes a security vulnerability. Since the Public Key Token provides an extra security layer to your application, we advise to always include it in the configuration file.
+When providing the Public Key Token, the Reporting Engine will try to match it with the Public Key Token of the found DLL. It will not load an assembly with the same name and a different Public Key Token and will throw an exception instead. If the Public Key Token is omitted in the configuration, the Reporting Engine will load the first DLL, whose name matches the provided Assembly Name. Potentially, this may allow bad agents to replace trusted assemblies with malicious ones and constitutes a security vulnerability. Since the Public Key Token provides an extra security layer to your application, we advise always including it in the configuration file.
 
 ## Example
 
@@ -69,9 +66,9 @@ XML-based configuration file:
 		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
 	</configSections>
 	<Telerik.Reporting>
-		<TypeReferences>
+		<typeReferences>
 			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken="my-assembly-public-key-token" />
-		</TypeReferences>
+		</typeReferences>
 	</Telerik.Reporting>
 ...
 </configuration>
@@ -81,7 +78,7 @@ JSON-based configuration file:
 
 ````JSON
 "telerikReporting": {
-	"TypeReferences": [
+	"typeReferences": [
 		{
 			"typeName": "MyNamespace.MyClassName",
 			"assemblyName": "MyAssemblyName",
@@ -91,7 +88,7 @@ JSON-based configuration file:
 }
 ````
 
-> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
+> When adding the `Telerik.Reporting` section manually, do not forget to register it in the `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
 
 ## See Also
 

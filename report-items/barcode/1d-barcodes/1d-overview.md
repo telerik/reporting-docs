@@ -7,6 +7,7 @@ previous_url: /report-items/barcode/barcode-types/supported-types, /report-items
 tags: telerik, reporting, report, items, 1d, barcodes, overview, linear, one-dimensional
 published: True
 position: 0
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

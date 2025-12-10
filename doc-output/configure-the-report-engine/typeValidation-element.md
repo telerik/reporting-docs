@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: typeValidation,element,type,validation,security
 published: True
 position: 12
+reportingArea: General
 ---
 
 <style>
@@ -21,7 +22,7 @@ table th:nth-of-type(2) {
 
 >note This element was first introduced in the 2024 Q3 (18.2.24.924) Reporting version.
 
-As Telerik Reporting consumes report definitions, they are a potential attack vector and a malicious actor could utilize a modified report to execute an attack against a system that uses Telerik Reporting. To prevent that, the Reporting engine validates the serialization types of the report definition and the expression types used in the report. The `typeValidation` element defines the configuration settings for this validation.
+As Telerik Reporting consumes report definitions, they are a potential attack vector, and a malicious actor could utilize a modified report to execute an attack against a system that uses Telerik Reporting. To prevent that, the Reporting engine validates the serialization types of the report definition and the expression types used in the report. The `typeValidation` element defines the configuration settings for this validation.
 
 XML-based configuration file:
 
@@ -44,14 +45,14 @@ The following sections describe attributes and parent elements.
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__validateExpressionTypes__ – optional boolean attribute. Specifies whether expression types should be validated by the Reporting engine. True by default. You can disable the validation of expression types if the expressions in your reports are input by a trusted external source.</li><li>__validateSerializationTypes__ – optional boolean attribute. Specifies whether serialization types should be validated by the Reporting engine. True by default. If the report definitions consumed by your application are from a trusted source, you can disable the validation of serialization types.</li></ul>|
+|Attributes|<ul><li>__validateExpressionTypes__ – optional boolean attribute. Specifies whether expression types should be validated by the Reporting engine. _True_, by default. You can disable the validation of expression types if the expressions in your reports are input by a trusted external source.</li><li>__validateSerializationTypes__ – optional boolean attribute. Specifies whether serialization types should be validated by the Reporting engine. _True_, by default. If the report definitions consumed by your application are from a trusted source, you can disable the validation of serialization types.</li></ul>|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 
 ## Example
 
 The following code example demonstrates how to disable the type validation performed by the Reporting Engine.
 
->warning The type validation of the Reporting engine is an important security feature and disabling it can make you vulnerable to attacks! Proceed at your own risk, only if you are confident in the security of your environment.
+>warning The type validation of the Reporting engine is an important security feature, and disabling it can make you vulnerable to attacks! Proceed at your own risk, only if you are confident in the security of your environment.
 
 XML-based configuration file:
 

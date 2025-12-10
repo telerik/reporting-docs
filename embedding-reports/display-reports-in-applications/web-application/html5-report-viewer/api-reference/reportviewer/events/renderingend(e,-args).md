@@ -5,6 +5,7 @@ description: "Learn more about the renderingEnd(e, args) Event of the Telerik Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)
 tags: renderingend,args
 published: True
+reportingArea: HTML5
 position: 10
 previous_url: /html5-report-viewer-reportviewer-events-renderingend
 ---

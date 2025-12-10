@@ -5,6 +5,7 @@ description: "Learn more about the commands of the Telerik Reporting HTML5 Repor
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands
 tags: commands
 published: True
+reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-reportviewer-properties-commands, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/
 ---
@@ -34,7 +35,7 @@ $('#printButton').click(function () {
 });
 ````
 
-The example above selects an HTML element with the __printButton__ id using jQuery and in the click event handler invokes report viewer __print__ command. Note that the __exec()__ method of the command needs to be called. For more information please check the command article.
+The example above selects an HTML element with the __printButton__ id using jQuery and, in the click event handler, invokes the report viewer __print__ command. Note that the __exec()__ method of the command needs to be called. For more information, please check the command article.
 
 The following table is a list of all commands:
 
@@ -60,6 +61,8 @@ The following table is a list of all commands:
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog.|
+|toggleSendEmailDialog|none|Shows or hides the Send Email dialog.|
+|toggleAiPromptDialog|none|Shows or hides the AI Prompt dialog.|
 
 ## See Also
 

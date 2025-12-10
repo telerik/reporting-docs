@@ -5,6 +5,7 @@ description: "Learn about what are the properties exposed by the Angular Report 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties
 tags: properties
 published: True
+reportingArea: AngularWrapper
 position: 3
 previous_url: /angular-report-viewer-api-properties
 ---
@@ -27,11 +28,13 @@ The report viewer exposes various commands via the `commands` property.
 
 ## Commands
 
-Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the `exec()` method being the one that actually triggers the command. The other two methods, `enabled()` and `checked()` return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be.
+Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the `exec()` method being the one that triggers the command. 
+
+The other two methods, `enabled()` and `checked()` return a boolean value and can be used before executing a command or to find in what state the UI for the command should be.
 
 ````HTML
 <tr-viewer #viewer1 />
-...
+
 <button (click)="viewer1.commands.print.exec()">Print</button>
 ````
 
@@ -45,6 +48,7 @@ The following table is a list of all commands:
 | ------ | ------ | ------ |
 |historyBack|none|Goes back to the previously rendered report from history.|
 |historyForward|none|Goes forward to the previously rendered report from history.|
+|stopRendering|none|Stop the rendering of the current report at the first possible moment.|
 |refresh|none|Refreshes the report.|
 |goToFirstPage|none|Goes to the first page of the report.|
 |goToPrevPage|none|Goes to the previous page of the report.|
@@ -62,3 +66,5 @@ The following table is a list of all commands:
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog.|
+|toggleSendEmailDialog|none|Shows or hides the Send Email dialog.|
+|toggleAiPromptDialog|none|Shows or hides the AI Prompt dialog.|

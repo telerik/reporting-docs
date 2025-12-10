@@ -5,6 +5,7 @@ description: "Learn more about the renderingBegin(e, args) Event of the Telerik 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)
 tags: renderingbegin,args
 published: True
+reportingArea: HTML5
 position: 9
 previous_url: /html5-report-viewer-reportviewer-events-renderingbegin
 ---

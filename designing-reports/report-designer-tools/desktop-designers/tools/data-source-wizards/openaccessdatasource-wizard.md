@@ -7,6 +7,7 @@ tags: openaccessdatasource,wizard
 published: True
 position: 70
 previous_url: /openaccessdatasource-wizard
+reportingArea: General
 ---
 
 # OpenAccessDataSource Wizard of the Report Designer

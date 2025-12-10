@@ -7,6 +7,8 @@
 .ruby-version
 /.asset-cache/
 /_assets/
+/_assetsApi/Bin/
+/_assetsApi/metadata/
 /_build/
 /_buildApi/
 /_includes/
@@ -20,7 +22,6 @@
 /favicon.ico
 /fonts/
 /styles/
-CODEOWNERS
 Dockerfile
 Gemfile
 Gemfile.lock

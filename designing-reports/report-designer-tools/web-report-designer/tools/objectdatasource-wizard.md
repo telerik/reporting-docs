@@ -5,6 +5,7 @@ description: "Learn how to connect your business object with Telerik Reports thr
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard
 tags: objectdatasource,wizard
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 3
 previous_url: /web-report-designer-tools-objectdatasource-wizard
 ---
@@ -93,7 +94,7 @@ Now you have the project with data. The next step is to make the configurations 
 
 ## Configuring the DataSource in the WebReportDesigner
 
-When started, the application that hosts the Web Report Designer will try to resolve the registered assemblies in the configuration folder of the project. Resolving them means that the .NET runtime will try to load the assemblies into the application domain. For example, the `\bin\Debug\net6.0` folder.
+When started, the application that hosts the Web Report Designer will try to resolve the registered assemblies in the configuration folder of the project. Resolving them means that the .NET runtime will try to load the assemblies into the application domain. For example, the `{{site.mindotnetoutputdir}}` folder.
 
 1. You need to add the assembly as a reference to the project or copy it through a post-build action to the output directory of the application. Note that if the assembly depends on other assemblies, you will also have to add the dependent assemblies to the working folder.
 1. In order to use the custom assembly for ObjectDataSource, it needs to be registered in the application's configuration file.

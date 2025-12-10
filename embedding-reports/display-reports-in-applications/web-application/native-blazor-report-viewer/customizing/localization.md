@@ -5,6 +5,7 @@ description: "Learn how to dynamically localize the Telerik Reporting native Bla
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/localization
 tags: localization,blazor
 published: True
+reportingArea: NativeBlazor
 position: 2
 ---
 
@@ -88,10 +89,10 @@ builder.Services.AddLocalization(options => options.ResourcesPath = "Resources")
 3. Create a custom localizer, that implements the `ITelerikReportingStringLocalizer` Interface. The localizer must provide strings based on keys. For this example, with `Messages.resx`, the localizer implementation might look as follows
 
 	````C#
-using CSharp.Net6.BlazorNativeIntegrationDemo.Resources;
+using CSharp.Net8.BlazorNativeIntegrationDemo.Resources;
 	using Telerik.ReportViewer.BlazorNative.Services;
 
-	namespace CSharp.Net6.BlazorNativeIntegrationDemo
+	namespace CSharp.Net8.BlazorNativeIntegrationDemo
 	{
 		public class CustomStringLocalizer : ITelerikReportingStringLocalizer
 		{

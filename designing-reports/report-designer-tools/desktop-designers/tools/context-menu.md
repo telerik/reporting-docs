@@ -7,6 +7,7 @@ tags: context,menu
 published: True
 position: 5
 previous_url: /ui-context-menu
+reportingArea: General
 ---
 
 # Report Designer Context Menu

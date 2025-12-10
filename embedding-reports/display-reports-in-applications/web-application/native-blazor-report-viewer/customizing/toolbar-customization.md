@@ -5,6 +5,7 @@ description: "Learn what tools are used in the Toolbar of the Telerik Reporting 
 slug: native-blazor-report-viewer/toolbar-customization
 tags: custom,editor,widget,blazor,toolbar,menu
 published: True
+reportingArea: NativeBlazor
 position: 4
 ---
 

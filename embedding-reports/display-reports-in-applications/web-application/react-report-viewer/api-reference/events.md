@@ -5,6 +5,7 @@ description: "Find a list of all of the available React Report Viewer events. Un
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events
 tags: react, report, viewer, events
 published: True
+reportingArea: React
 position: 1
 previous_url: /react-report-viewer-api-reference-events
 ---

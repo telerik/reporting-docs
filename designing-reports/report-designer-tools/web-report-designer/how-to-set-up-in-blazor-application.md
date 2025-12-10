@@ -5,6 +5,7 @@ description: "Learn how to set up the Blazor Web Report Designer and the require
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application
 tags: how,to,set,up,web,report,designer,in,a,blazor,webapp,wasm,webassembly,server,application
 published: True
+reportingArea: WRDBlazorWrapper, WRDRestServiceCore
 position: 2
 previous_url: /how-to-blazor-web-report-designer
 ---
@@ -19,8 +20,8 @@ Alternatively, instead of using the item template, the Designer REST service and
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/)
-* Existing .NET 6 or higher `Blazor Web App/Server/ WebAssembly` application
+* [Visual Studio 2022](https://visualstudio.microsoft.com/) or later version.
+* Existing .NET {{site.mindotnetversion}} or higher `Blazor Web App/Server/ WebAssembly` application
 * The designer consumes reports generated and served from a running REST Service. Such can be referenced from another application or it can be hosted locally in the Blazor application as described below.
 
 ## Adding the Report Designer REST Service and Configuration
@@ -98,8 +99,8 @@ using Microsoft.AspNetCore.Mvc;
 1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
 	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 	<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
@@ -110,8 +111,6 @@ using Microsoft.AspNetCore.Mvc;
 
 	````HTML
 <script src="_content/Telerik.WebReportDesigner.Blazor/telerikWebReportDesignerInterop.js" defer></script>
-	@* Or this one if using the Telerik.WebReportDesigner.Blazor.Trial package *@
-	@*<script src="_content/Telerik.WebReportDesigner.Blazor.Trial/telerikWebReportDesignerInterop.js" defer></script>*@
 ````
 
 

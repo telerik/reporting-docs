@@ -7,6 +7,7 @@ tags: privatefonts,element
 published: True
 position: 6
 previous_url: /configuring-telerik-reproting-privatefonts
+reportingArea: General
 ---
 
 <style>

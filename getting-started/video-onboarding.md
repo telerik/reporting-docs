@@ -6,23 +6,24 @@ slug: getting-started/video-onboarding
 tags: get,started,video,onboarding,classroom,course,learning
 published: true
 position: 3
+reportingArea: General
 ---
 
 # Video Onboarding for Telerik Reporting
 
-Telerik Reporting has its own [video getting started course](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) available to both users with an active trial license and users with an active commercial license. The training course in Telerik's [Virtual Classroom](https://learn.telerik.com/learn) is developed to help you get started with the Telerik Reporting set of services and features. It aims to put you in the shoes of a report designer and an engineer who is integrating a reporting solution into an existing application.
+Telerik Reporting has its own [video getting started course](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) available to users with an active license. The training course in Telerik's [Virtual Classroom](https://learn.telerik.com/learn) is developed to help you get started with the Telerik Reporting set of services and features. It aims to put you in the shoes of a report designer and an engineer who is integrating a reporting solution into an existing application.
 
 In this course, you will use ASP.NET Core with Blazor and your job is to add a dynamic report page to a public tracking application that has already been developed. You will design and develop a report by using the Telerik Reporting Standalone Report designer. Then, you will incorporate that report into an existing app by using the Telerik Report Viewer for Blazor. You will also try different configuration options that come out of the box for Telerik Reporting, like communication between the report server and the web app, as well as hosting the report APIs in the app itself.
 
 ## Course Overview
 
 The next video shares a glimpse of the format and structure of the whole training and provides a brief overview of what will be accomplished through the steps.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3hrlUfmTzSI" title="Telerik Reporting - Overview of the Onboarding Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3hrlUfmTzSI?rel=0" title="Telerik Reporting - Overview of the Onboarding Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Project Overview
 
 This video explains the details around the project you will be modifying&mdash;what it is, what needs to be added, and what the accomplished state will look like.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G60E03Cs5I8" title="Telerik Reporting - Project Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G60E03Cs5I8?rel=0" title="Telerik Reporting - Project Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Onboarding Modules
 

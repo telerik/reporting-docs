@@ -7,6 +7,7 @@ tags: query,designer,standalone,designer
 published: True
 position: 99
 previous_url: /sql-datasource-query-designer,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer
+reportingArea: General
 ---
 
 # Standalone Designer's Query Designer
@@ -43,7 +44,7 @@ Behind the scenes, the Reporting engine calls the [ADO.NET GetSchema method](htt
 null,Production,ProductCategory
 ````
 
-> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .Net 6+
+> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .NET {{site.mindotnetversion}}+.
  
 ![Image of the SQL Data Source wizard showing the schema restrictions field and the query builder dialog](images/srd-sqlds-wzrd-schema-restrictions.png)
 

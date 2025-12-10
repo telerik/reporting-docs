@@ -62,9 +62,9 @@ The Report Designers are responsible for the designing process.
 
 |Report Designer|Specifics
 |:---|:---
-|Standalone desktop designer|<ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>
-|Web report designer|<ul><li>An HTML-, CSS-, JavaScript-and-jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
-|Designer for Visual Studio|<ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET Framework only.</li></ul>
+|[Standalone desktop designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})|<ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>
+|[Web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})|<ul><li>An HTML-, CSS-, JavaScript-and-jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
+|[Designer for Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})|<ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET Framework only.</li></ul>
 
 ### Report Viewers
 
@@ -91,7 +91,7 @@ The Report Viewers are UI components that are tailored to a specific technology.
 
 The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provides a set of pre-built live demos designed to demonstrate the Telerik Reporting capabilities. The demos use the HTML5-based web report viewers.
 
-The sample reports are also available in Visual Studio and the examples contain applications for all supported platforms. To open the projects:
+If you install Telerik Reporting by using the [MSI file or the Control Panel]({%slug telerikreporting/installation%}), the sample reports will also be available as Visual Studio projects. The examples for Visual Studio contain applications for all supported platforms. To open the projects:
 
 1. Navigate to the **Start** menu.
 1. Select __Telerik__ > __Reporting__ > __Visual Studio Examples__ > __C#/VB.NET Solution__.
@@ -102,7 +102,7 @@ For any issues you might come across while working with Telerik Reporting, use a
 
 Note that sharing quality feedback and ideas will not only benefit the community and improve the products but may also win you [Telerik points](https://www.telerik.com/community/telerik-points).
 
-* Telerik Reporting license holders and anyone in an active trial can take advantage of the Telerik Reporting outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Telerik Reporting support system](https://www.telerik.com/account/support-tickets).
+* Telerik Reporting license holders can take advantage of the Telerik Reporting outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Telerik Reporting support system](https://www.telerik.com/account/support-tickets).
 * The [Telerik Reporting forum](https://www.telerik.com/forums/reporting) is part of the free support you can get from the community and from the Telerik Reporting team on all kinds of general issues.
 * [Telerik Reporting feedback portal](https://feedback.telerik.com/reporting) and [Telerik Reporting roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap) provide information on the features in discussion and also the planned ones for release.
 * For any features that have already been released, visit the [Telerik Reporting Release History](https://www.telerik.com/support/whats-new/reporting/release-history) page.
@@ -122,4 +122,5 @@ Note that sharing quality feedback and ideas will not only benefit the community
 ## Next Steps
 
 * [First Steps with Telerik Reporting]({%slug telerikreporting/getting-started/first-steps%})
-* [Trial and Commercial Telerik Reporting License and License Agreement]({%slug telerikreporting/licensing%})
+* [Setting Up Your Telerik Reporting License Key]({%slug license-key%})
+* [Licensing Frequently Asked Questions]({%slug license-frequently-asked-questions%})

@@ -5,6 +5,7 @@ description: "Learn about what are the initialization options exposed by the Nat
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options
 tags: options
 published: True
+reportingArea: NativeAngular
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/
 ---
@@ -72,6 +73,21 @@ import { ReportSourceOptions } from '@progress/telerik-common-report-viewer'
 				<ul>
 					<li><strong>REST</strong> - Telerik Reporting REST Service</li>
 					<li><strong>reportServer</strong> - Telerik Report Server</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>reportServer</td>
+			<td>
+				<p><i>object, optional;</i></p>
+			<p>Sets the configuration details for Telerik Report Server. </p>
+			<br/>
+			Available properties: 
+				<ul>
+					<li>__url__ (*string*, *required*) - the URL to the Telerik Report Server instance.</li>
+					<li>__getPersonalAccessToken__ (*callback function*, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).</li>
+					<li>__username__ (*string*, *optional*) - a registered username in the Report Server that will be used to get access to the reports. If omitted when connecting to the Report Server for .NET Framework 4.6.2, the built-in __Guest__ account will be used;</li>
+					<li>__password__ (*string*, *optional*) - the password for the provided username. Can be omitted only when connecting with the __Guest__ account of the Report Server for .NET Framework 4.6.2.</li>
 				</ul>
 			</td>
 		</tr>

@@ -5,6 +5,7 @@ description: "Learn How to Change Parameter Editors Type of the HTML5 ASP.NET We
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-change-parameter-editors-type
 tags: how,to,change,parameter,editors,type
 published: True
+reportingArea: WebFormsWrapper
 position: 3
 previous_url: /html5-webforms-report-viewer-change-parameters-editors-type
 ---
@@ -19,7 +20,6 @@ The following example illustrates how to set the Parameters method to the Teleri
 
 ````XML
 <telerik:ReportViewer EnableAccessibility="false" ID="reportViewer1" runat="server">
-	...
 	<Parameters>
 		<Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
 	</Parameters>
@@ -27,7 +27,7 @@ The following example illustrates how to set the Parameters method to the Teleri
 ````
 
 
-> The Telerik Report Viewer Parameters element is optional. If it is not used, the Telerik Report Viewer will fall back to the default values.
+> The Telerik Report Viewer `Parameters` element is optional. If not used, the Telerik Report Viewer will fall back to the default values.
 
 ## See Also
 

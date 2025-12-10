@@ -5,6 +5,7 @@ description: "Learn more about the reportSource() method of the Telerik Reportin
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()
 tags: reportsource()
 published: True
+reportingArea: HTML5
 position: 12
 previous_url: /html5-report-viewer-reportviewer-methods-reportsource
 ---

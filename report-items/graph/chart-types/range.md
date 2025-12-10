@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/rang
 tags: telerik, reporting, report, items, graph, range, chart, overview, creating
 previous_url: /RangeCharts, /GraphHowToCreateRangeChart, /report-items/graph/chart-types/range-charts/overview, /report-items/graph/chart-types/range-charts/how-to-create-range-chart
 published: True
+reportingArea: General
 ---
 
 # Creating and Customizing Range Area Charts

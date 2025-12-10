@@ -7,6 +7,7 @@ tags: overview
 published: True
 position: 0
 previous_url: /configuring-telerik-reporting, /doc-output/configure-the-report-engine/, /configuring-overview
+reportingArea: General
 ---
 
 <style>

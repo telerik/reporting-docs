@@ -5,6 +5,7 @@ description: "Learn how to add the Native Angular Report Viewer to an Angular ap
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/integrating-with-project-item-generator
 tags: how,to,use,native,angular,report,viewer,with,angular,cli
 published: True
+reportingArea: NativeAngular
 position: 2
 ---
 

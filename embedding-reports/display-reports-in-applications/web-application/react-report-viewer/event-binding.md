@@ -5,6 +5,7 @@ description: "Learn how to bind to the different events exposed by the React Rep
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/event-binding
 tags: react, report, viewer, event, binding
 published: True
+reportingArea: React
 position: 3
 previous_url: /react-report-viewer-event-binding
 ---
@@ -19,12 +20,11 @@ To attach an event handler to the viewer, specify the name of your function when
 
 ````HTML
 <TelerikReportViewer
-	...
 	ready='myReadyHandler'
 	viewerToolTipOpening='myViewerToolTipOpeningHandler' />
 ````
 
-Then we create the event handler functions in the component where the viewer is used:
+Then, we create the event handler functions in the component where the viewer is used:
 
 ````JavaScript
 export class AppComponent {
@@ -37,4 +37,7 @@ export class AppComponent {
 }
 ````
 
-For a complete list of event handler options please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}).
+
+## See Also
+
+* [React Report Viwer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})

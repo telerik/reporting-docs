@@ -5,6 +5,7 @@ description: "JSONPath filters JSON data by allowing you to select specific elem
 slug: graphqldatasource-filter-json-data
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Using JSONPath to Filter JSON data

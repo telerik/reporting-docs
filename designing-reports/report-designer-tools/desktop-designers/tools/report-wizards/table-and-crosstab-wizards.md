@@ -7,6 +7,7 @@ tags: table,and,crosstab,wizards
 published: True
 position: 0
 previous_url: /ui-crosstab-table-wizard
+reportingArea: General
 ---
 
 # Table and CrossTab Wizards of the Report Designer

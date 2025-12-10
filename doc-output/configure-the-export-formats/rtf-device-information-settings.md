@@ -7,6 +7,7 @@ tags: rtf, device, information, settings, options
 published: True
 position: 7
 previous_url: /device-information-settings-rtf
+reportingArea: General
 ---
 
 <style>

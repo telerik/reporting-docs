@@ -7,6 +7,7 @@ tags: how,to,configure,the,openclientdatasource,component
 published: True
 position: 1
 previous_url: /openclient-data-source-how-to-configure
+reportingArea: General
 ---
 
 # Configuring the OpenClientDataSource Component

@@ -5,8 +5,9 @@ description: "Learn more about the recommended approaches for troubleshooting th
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/standalone-report-designer-problems
 tags: standalone,report,designer,problems
 published: True
-position: 8
+position: 9
 previous_url: /Troubleshooting-Standalone-Report-Designer-problems, troubleshooting-design-time
+reportingArea: General
 ---
 
 # Troubleshooting Standalone Report Designer

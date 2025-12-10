@@ -5,6 +5,7 @@ description: "Learn how to implement a Custom ReportSource Resolver for the Tele
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 tags: how,to,implement,a,custom,report,source,resolver
 published: True
+reportingArea: RESTService, RESTServiceCore
 position: 1
 previous_url: /telerik-reporting-rest-custom-report-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 ---
@@ -39,7 +40,7 @@ This article explains how to create a custom report source resolver for the __Te
 				// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
 				ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 
-				HostAppId = "ReportingNet6",
+				HostAppId = "ReportingNet8",
 				Storage = new FileStorage(),
 				ReportSourceResolver = new TypeReportSourceResolver()
 					.AddFallbackResolver(new UriReportSourceResolver(reportsPath)
@@ -111,7 +112,7 @@ USE [master]
 				// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
 				ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 
-				HostAppId = "ReportingNet6",
+				HostAppId = "ReportingNet8",
 				Storage = new FileStorage(),
 				ReportSourceResolver = new CustomReportSourceResolverWithFallBack(new TypeReportSourceResolver()
 					.AddFallbackResolver(new UriReportSourceResolver(reportsPath)));

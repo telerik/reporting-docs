@@ -5,6 +5,7 @@ description: "Learn how the Printing works in Telerik Reporting HTML5 Report Vie
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports
 tags: printing,reports
 published: True
+reportingArea: HTML5
 position: 8
 previous_url: /html5-report-viewer-direct-print
 ---
@@ -42,8 +43,7 @@ var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase())
 	: telerikReportViewer.PrintModes.FORCE_PDF_FILE;
 $("#reportViewer1")
 	.telerik_ReportViewer({
-		serviceUrl: "../api/reports/",
-		templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+		serviceUrl: "api/reports/",
 		reportSource: { report: "product catalog.trdp" },
 		printMode: printMode
 	});

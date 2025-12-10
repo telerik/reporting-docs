@@ -5,7 +5,8 @@ description: "Learn how to Localize the Telerik Web Report Designer menus, butto
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/localizing-the-web-report-designer
 tags: localizing,web,report,designer
 published: True
-position: 6
+reportingArea: WRDHTML5
+position: 7
 previous_url: /web-report-designer-localization
 ---
 

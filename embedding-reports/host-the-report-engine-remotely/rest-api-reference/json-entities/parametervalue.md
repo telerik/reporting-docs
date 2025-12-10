@@ -5,23 +5,24 @@ description: "Learn more about the ParameterValue JSON Entity in Telerik Reporti
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parametervalue
 tags: parametervalue
 published: True
-position: 6
+reportingArea: RESTService, RESTServiceCore
+position: 8
 previous_url: /telerik-reporting-rest-json-entities-parametervalue,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parametervalue
 ---
 
 <style>
-table th:first-of-type {
-	width: 10%;
-}
-table th:nth-of-type(2) {
-	width: 30%;
-}
-table th:nth-of-type(3) {
-	width: 10%;
-}
-table th:nth-of-type(4) {
-	width: 50%;
-}
+	table {
+		display: grid;
+		grid-template-columns: min-content 1fr min-content 2fr;
+	}
+
+	thead, tbody, tr {
+		display: contents;
+	}
+
+	th {
+		white-space: nowrap;
+	}
 </style>
 
 # ParameterValue Overview

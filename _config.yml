@@ -9,7 +9,7 @@ has_cta_panels: true
 
 # Exclude files that should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,TodorReadme.txt,report-designer-translations,_assetsApi]
-exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application","designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application","embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs","embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/*"]
+exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application","designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application","embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs","embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/*","embedding-reports/host-the-report-engine-remotely/servicestack-implementation/*"]
 navigation:
 ## List your directory names and order here, like this:
     licensing:
@@ -24,6 +24,9 @@ navigation:
     security:
         position: 20
         title: "Security"
+    ai-coding-assistant:
+        position: 21
+        title: "AI Coding Assistant"
     getting-started/web-designer:
         position: 5
         title: "Web Report Designer"
@@ -36,6 +39,12 @@ navigation:
     styling:
         position: 70
         title: "Styles & Appearance"
+    user-guide:
+        position: 85
+        title: "Web Report Designer - User Guide"
+    user-guide/components:
+        position: 15
+        title: "Report Components"
     styling/rendering-and-paging:
         position: 8
         title: "Rendering and Paging"
@@ -101,7 +110,7 @@ navigation:
         title: "Configuring the Output Formats"
     interactivity:
         position: 80
-        title: "Interactivity"
+        title: "Interactivity & AI"
     interactivity/bookmarks:
         position: 10
         title: "Bookmarks"
@@ -228,6 +237,9 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
         position: 15
         title: "Design Considerations for Out-proc Session State"
+    embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder:
+        position: 8
+        title: "Styling with ThemeBuilder" 
     embedding-reports/display-reports-in-applications/windows-forms-application:
         position: 11
         title: "Windows Forms Application"
@@ -279,11 +291,14 @@ navigation:
     embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api:
         position: 13
         title: "Documents API"
-    embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api:
         position: 14
+        title: "Features API"
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api:
+        position: 15
         title: "General API"
     embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities:
-        position: 15
+        position: 16
         title: "JSON Entities"
     designing-reports:
         position: 40
@@ -335,37 +350,37 @@ navigation:
         title: "Data Source Components"
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
         position: 5
-        title: "SqlDataSource Component"
+        title: "SqlDataSource"
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers:
         position: 10
         title: "Using Data Providers"
     designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
         position: 11
-        title: "WebServiceDataSource Component"
+        title: "WebServiceDataSource"
     designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
         position: 12
-        title: "CsvDataSource Component"
+        title: "CsvDataSource"
     designing-reports/connecting-to-data/data-source-components/graphqldatasource-component:
         position: 13
-        title: "GraphQLDataSource Component"
+        title: "GraphQLDataSource"
     designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
         position: 14
-        title: "ObjectDataSource Component"
+        title: "ObjectDataSource"
     designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
         position: 15
         title: "How To"
     designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
         position: 24
-        title: "EntityDataSource Component"
+        title: "EntityDataSource"
     designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
         position: 25
-        title: "OpenAccessDataSource Component"
+        title: "OpenAccessDataSource"
     designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
         position: 26
-        title: "CubeDataSource Component"
+        title: "CubeDataSource"
     designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
         position: 27
-        title: "OpenClientDataSource Component"
+        title: "OpenClientDataSource"
     designing-reports/connecting-to-data/data-items:
         position: 11
         title: "Data Items"
@@ -450,14 +465,18 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "2025 Q1"
-buildversion: "19.0.25.313"
-reportserverversion: "11.0.25.313"
-spaviewerversion: "25.25.313"
+suiteversion: "2025 Q4"
+buildversion: "19.3.25.1111"
+reportserverversion: "11.3.25.1111"
+spaviewerversion: "28.25.1111"
 nodeversion: "16.0.0"
 angularsubsetversion: "17.2.0"
-kendosubsetversion: "2022.3.913"
-blazoruiversion: "7.1.0"
+kendosubsetversion: "2025.1.227"
+kendothemeversion: "10.2.0"
+blazoruiversion: "12.0.0"
+mindotnetversion: "8"
+mindotnetoutputdir: "\\bin\\Debug\\net8.0"
+dotnetversions: ".NET 8, .NET 9, and .NET 10"
 
 # Feedback Form Product code
 productCode: REPORTING

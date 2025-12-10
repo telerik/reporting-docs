@@ -7,6 +7,7 @@ tags: csvdatasource,escape,formats
 published: True
 position: 2
 previous_url: /csvdatasource-escape-formats
+reportingArea: General
 ---
 <style>
 table th:first-of-type {

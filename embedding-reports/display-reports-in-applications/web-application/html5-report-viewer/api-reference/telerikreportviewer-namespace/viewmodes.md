@@ -5,6 +5,7 @@ description: "Learn about the ViewModes of the telerikReportViewer object in the
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/viewmodes
 tags: viewmodes
 published: True
+reportingArea: HTML5
 position: 1
 previous_url: /html5-report-viewer-api-viewmodes
 ---

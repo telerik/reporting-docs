@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/bookmar
 tags: bookmarks,overview,internal,navigation,reports,links
 published: True
 previous_url: /designing-reports-interactivity-bookmarks
+reportingArea: General
 ---
 
 # Bookmarks Overview

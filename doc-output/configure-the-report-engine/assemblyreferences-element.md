@@ -3,10 +3,11 @@ title: assemblyReferences Element
 page_title: assemblyReferences Element Configuration
 description: "Learn how to set up the assemblyReferences Element to use custom user functions in the report and create ObjectDataSource components"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element
-tags: assemblyreferences,element, user, function, ObjectDataSource
+tags: assemblyreferences, element, user, function, ObjectDataSource
 published: True
 position: 4
 previous_url: /configuring-telerik-reporting-assemblyreferences
+reportingArea: General
 ---
 
 <style>

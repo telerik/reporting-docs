@@ -5,6 +5,7 @@ description: "Learn about what are the events exposed by the Angular Report View
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
 tags: events,angular,report,viewer
 published: True
+reportingArea: AngularWrapper
 position: 1
 previous_url: /angular-report-viewer-api-events
 ---
@@ -27,7 +28,7 @@ table th:nth-of-type(2) {
 	````TypeScript
 export class ReportViewerComponent implements AfterViewInit {
 		@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-		...
+
 		ready() {
 			console.log('ready');
 		}
@@ -41,7 +42,7 @@ export class ReportViewerComponent implements AfterViewInit {
 1. In the `.HTML` component file, assing the handler to the corresponding event:
 
 	````HTML
-<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59657/api/reports/'"
 		[reportSource]="{
 			report: 'Report1.trdp',
 			parameters: {}

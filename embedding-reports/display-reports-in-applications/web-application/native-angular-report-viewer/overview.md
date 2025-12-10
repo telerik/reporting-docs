@@ -5,6 +5,7 @@ description: "Learn about the requirements of the Native Angular Report Viewer, 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview
 tags: angular,native,report,viewer,overview
 published: True
+reportingArea: NativeAngular
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/
 ---
@@ -35,11 +36,11 @@ The Native Angular Report Viewer is a native Angular component built with [Kendo
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path></svg></td>
-		<td>Navigate Backward</td>
+		<td>Navigates Backward</td>
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path></svg></td>
-		<td>Navigate Forward</td>
+		<td>Navigates Forward</td>
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32zm128 306.7L338.7 384 256 301.3 173.3 384 128 338.7l82.7-82.7-82.7-82.7 45.3-45.3 82.7 82.7 82.7-82.7 45.3 45.3-82.7 82.7 82.7 82.7z"></path></svg></td>
@@ -91,15 +92,19 @@ The Native Angular Report Viewer is a native Angular component built with [Kendo
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3L365.3 320zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192z"></path></svg></td>
-		<td>Open the Search Dialog</td>
+		<td>Opens the Search Dialog</td>
 	</tr>
 	<tr>
+		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
+		<td>Toggles the AI Prompt Dialog when the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality has been enabled.</td>
+	</tr>	
+	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M448 32H32v448h448V32h-32zm0 416H64V64h384v384zM96 96h96v320H96z"></path></svg></td>
-		<td>Show/hide the Document Map</td>
+		<td>Toggles the Document Map</td>
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M64 480h416V32H32v448h32zm0-416h384v384H64V64zm256 32h96v320h-96z"></path></svg></td>
-		<td>Show/hide the Parameters Area</td>
+		<td>Toggles the Parameters Area</td>
 	</tr>
 </table>
 

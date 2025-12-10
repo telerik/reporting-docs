@@ -6,6 +6,7 @@ slug: integration-with-vs-code
 tags: integration, vscode, report, viewer, angular
 published: True
 position: 1
+reportingArea: General
 ---
 
 # Visual Studio Code Integration

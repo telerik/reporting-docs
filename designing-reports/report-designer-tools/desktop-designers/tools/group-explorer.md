@@ -7,6 +7,7 @@ tags: group,explorer,report,designer,item
 published: True
 position: 3
 previous_url: /ui-group-explorer
+reportingArea: General
 ---
 
 # Group Explorer of the Report Designer

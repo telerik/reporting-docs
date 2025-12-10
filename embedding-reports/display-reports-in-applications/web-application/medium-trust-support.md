@@ -7,6 +7,7 @@ tags: medium,trust,support
 published: True
 position: 16
 previous_url: /asp-net-medium-trust-support
+reportingArea: General
 ---
 
 # Medium Trust Support Overview

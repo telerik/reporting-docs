@@ -7,6 +7,7 @@ previous_url: /using-reports-in-applications/export-and-configure/cache-manageme
 tags: telerik, reporting, embedding, reports, cache, management, configuring
 published: True
 position: 1
+reportingArea: General
 ---
 
 <style>

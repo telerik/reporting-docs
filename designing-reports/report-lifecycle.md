@@ -7,6 +7,7 @@ previous_url: designing-reports/understanding-the-report-lifecycle, /designing-r
 tags: understanding,the,report,lifecycle
 published: True
 position: 2
+reportingArea: General
 ---
 
 # The Lifecycle of the Report

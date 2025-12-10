@@ -5,6 +5,7 @@ description: "Learn what the data attributes represent in the Telerik Reporting 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
 tags: data,attributes
 published: True
+reportingArea: HTML5
 position: 2
 previous_url: /html5-report-viewer-data-attributes
 ---
@@ -20,30 +21,28 @@ table th:nth-of-type(2) {
 
 # The `data attributes` of the HTML5 Report Viewer
 
-Behavior can be added to HTML DOM elements either with *data-* attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer.
+Behavior can be added to HTML DOM elements either with `data-` attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer.
 
-The *data-* attributes give a lot of flexibility to the application since commands can be attached to HTML elements only by adding a *data-command* attribute along with a *data-target-report-viewer* to target the specific report viewer (since there can exist multiple report viewers on a single page):
+The `data-` attributes allow for adding flexibility to the application since commands can be attached to HTML elements only by adding a `data-command` attribute along with a `data-target-report-viewer` to target the specific report viewer (since there can exist multiple report viewers on a single page):
 
 ````HTML
 <button id="printButton" data-command="telerik_ReportViewer_print" data-target-report-viewer="#reportViewer1">Print report</button>
 ````
 
+When initializing the report viewer, the selector used in `data-target-report-viewer` has to be explicitly provided as an option:
 
-When initializing the report viewer the selector used in *data-target-report-viewer* has to be explicitly provided as an option:
-
-````HTML
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "../api/reports/",
-	templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
-	reportSource: { report: "product catalog.trdx" },
+	serviceUrl: "api/reports/",
+	reportSource: { report: "Product Catalog.trdx" },
 	selector: '#reportViewer1'
 });
 ````
 
 
-The button above will simply print the report currently displayed. Elements do not need to exist before the viewer initialization - they can be created on the fly and as soon as they have the *data-command* and *data-target-report-viewer* attributes the command can be executed.
+The button above will print the currently displayed report. Elements do not need to exist before the viewer initialization - they can be created on the fly, and as soon as they have the `data-command` and `data-target-report-viewer` attributes, the command can be executed.
 
-The following table is a list of all available commands for the *data-command* attribute:
+The following table is a list of all available commands for the `data-command` attribute:
 
 | Command | Description |
 | ------ | ------ |
@@ -66,7 +65,7 @@ The following table is a list of all available commands for the *data-command* a
 | __telerik_ReportViewer_toggleSideMenu__ |Show or hide the side menu|
 | __telerik_ReportViewer_toggleSearchDialog__ |Show or hide the search dialog|
 
-\* The export command requires one additional parameter, *data-command-parameter*, which will specify the export format. The full list of all allowed *data-command-parameter* values:
+The export command requires one additional parameter, `data-command-parameter`, which will specify the export format. The full list of all allowed `data-command-parameter` values is as follows:
 
 | Label | Command Parameter |
 | ------ | ------ |
@@ -81,7 +80,7 @@ The following table is a list of all available commands for the *data-command* a
 | __Word Document__ |DOCX|
 | __XPS Document__ |XPS|
 
-Depending on the report and the history of browsed reports some of the buttons might be disabled and others toggled. The commands automatically keep track of their state, but if custom widgets are used this state will not be displayed properly. Therefore a disabledButtonClass and checkedButtonClass can be provided to the report viewer upon initialization - these classes will be added when the custom button is disabled or toggled, respectively.
+Depending on the report and the history of browsed reports, some of the buttons may be disabled, and others may be toggled. The commands automatically keep track of their state, but if custom widgets are used, this state will not be displayed properly. Therefore, a `disabledButtonClass` and `checkedButtonClass` can be provided to the report viewer upon initialization - these classes will be added when the custom button is disabled or toggled, respectively.
 
 ## See Also
 

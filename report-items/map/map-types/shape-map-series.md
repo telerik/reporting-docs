@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-
 tags: telerik, reporting, map, report, item, add, shapemapseries, instance
 previous_url: /MapHowToAddShapeMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-shapemapseries-to-the-map-item, /knowledge-base/map-add-shapemapseries
 position: 2
+reportingArea: General
 ---
 
 # Adding ShapeMapSeries Instances to the Map

@@ -7,6 +7,7 @@ tags: conditional, formatting
 published: True
 position: 6
 previous_url: /styling-conditional-formatting
+reportingArea: General
 ---
 
 # Conditional Formatting Overview

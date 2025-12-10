@@ -7,6 +7,7 @@ tags: send,mail,message
 published: True
 position: 12
 previous_url: /html5-report-viewer-send-mail
+reportingArea: General
 ---
 
 # Send Mail Message in the HTML5-based Report Viewers
@@ -21,7 +22,7 @@ By default, the send mail message button is hidden. This is because the [SendMai
 
 ## Send Mail Message Dialog
 
-![The Send Mail Message Dialog in the Html5 Report Viewer showing a filled form ready to be sent](images/HTML5ReportViewer/send-mail-msg-dialog.png)
+![The Send Mail Message Dialog in the Html5 Report Viewer showing a filled form ready to be sent](images/HTML5ReportViewer/html5-sass-viewer-send-mail-dialog.png)
 
 The Send Mail Message dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when this dialog is shown. The dialog can be closed with the close button in the top right corner or using the __Send Mail Message__ button on the toolbar.
 

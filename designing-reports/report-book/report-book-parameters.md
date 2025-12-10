@@ -7,11 +7,14 @@ tags: report,book,parameters
 published: True
 position: 1
 previous_url: /designing-reports-reportbook-report-parameters
+reportingArea: General
 ---
 
 # Report Book Parameters Overview
 
 Often, one or more reports that are part of a report book will contain report parameters. The report book is shown as a single document in the report viewer, and the parameters area represents the visible report parameters defined in all child reports.
+
+The described behavior is valid when you pass the Report Parameter values in the ReportSource wrapping the entire ReportBook, and when you pass them separately, with each report's ReportSource added to the ReportBook's ReportSources collection.
 
 Telerik Reporting provides a mechanism known as parameter merging. If the [`Name`](/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Name) and [`Type`](/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Type) of two (or more) parameters from different reports are the same, then they are considered equivalent and are displayed as a single parameter in the viewer's Parameters Area.
 

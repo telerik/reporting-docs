@@ -5,6 +5,7 @@ description: "Learn how to provide Custom Templates for changing the layout of t
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates
 tags: providing,custom,templates
 published: True
+reportingArea: HTML5
 position: 3
 previous_url: /html5-report-viewer-customizing-providing-template
 ---
@@ -13,43 +14,46 @@ previous_url: /html5-report-viewer-customizing-providing-template
 
 The article elaborates on how to use a customized HTML template for the HTML5 Report Viewer.
 
-> All path references in the article should be adapted according to your project setup. For more information please refer to the MSDN article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)). The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation - [Installation Directories]({%slug telerikreporting/installation%}#directories-and-asemblies).
-
-If you have a custom HTML template you should provide it to the telerik_ReportViewer plugin’s options:
+Once you create a custom HTML template, you can provide it to the HTML5 Report through the `templateUrl` property:
 
 ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "../api/reports/",
-	templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate.html',
-	reportSource: { report: "product catalog.trdp" }
+	serviceUrl: "api/reports/",
+	templateUrl: '/custom-template-directory/telerikReportViewerTemplate.html',
+	reportSource: { 
+		report: "Product Catalog.trdp" 
+		}
 });
 ````
 
-The HTML template file is an HTML page while the templates are HTML document fragments inside HTML5 __template__ elements:
+The HTML template file is essentially a page that includes HTML document fragments nested inside __template__ tags. For example, this is what the report parameter template looks like:
 
 ````HTML
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Telerik HTML5 Report Viewer Templates</title>
-	</head>
-	<body>
-		<template id="trv-report-viewer">
-			<div class="trv-report-viewer" >
-			...
-			</div>
-		</template>
-	</body>
-</html>
+    <template id="trv-parameter">
+        <div class="trv-parameter-container k-card">
+            <div class="trv-parameter-header k-card-header">
+                <div class="trv-parameter-title k-card-title"></div>
+            </div>
+            <div class="trv-parameter-error k-notification k-notificaiton-error">
+                <span class="k-notification-status k-icon k-i-x-outline"></span>
+                <span class="trv-parameter-error-message k-notification-content"></span>
+            </div>
+            <div class="trv-parameter-value k-card-body"></div>
+        </div>
+    </template>
 ````
 
-The templates are loaded during the initialization of the __telerik_ReportViewer__ widget. Since this is an asynchronous network operation(the template HTML is loaded with an HTTP GET request) that takes an unpredictable amount of time, the widget is not operational until it is successful; to find when the viewer is completely loaded provide a callback function to the __telerik_ReportViewer__ widget:
+The templates are loaded during the initialization of the __telerik_ReportViewer__ widget. Since this is an asynchronous network operation(the template HTML is loaded with an `HTTP GET` request) that takes an unpredictable amount of time, the widget is not functional until the template is loaded successfully. 
+
+To find when the report viewer is loaded, provide an event handler function for the __telerik_ReportViewer__ widget's [ready()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready()%}) event:
 
 ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "../api/reports/",
-	templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate',
-	reportSource: { report: "product catalog.trdp" },
+	serviceUrl: "api/reports/",
+	templateUrl: '/custom-template-directory/telerikReportViewerTemplate.html',
+	reportSource: { 
+		report: "Product Catalog.trdp" 
+		},
 	ready: function() {
 		// report viewer is now ready for action
 	}

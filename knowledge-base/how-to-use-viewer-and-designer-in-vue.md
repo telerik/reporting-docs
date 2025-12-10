@@ -57,7 +57,7 @@ npm init vue@latest
 1. Then, add the default Kendo SASS theme again in `index.html`, inside the `head` element, to style the report viewer and designer:
 
 	````HTML
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/5.9.0/default/default-main.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" />
 ````
 
 

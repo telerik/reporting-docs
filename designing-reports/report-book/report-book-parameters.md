@@ -11,7 +11,7 @@ previous_url: /designing-reports-reportbook-report-parameters
 
 # Report Book Parameters Overview
 
-Often, one or more reports that are part of a report book will contain report parameters. The report book is shown as a single document in the report viewer and the parameters area represents the visible report parameters defined in all child reports.
+Often, one or more reports that are part of a report book will contain report parameters. The report book is shown as a single document in the report viewer, and the parameters area represents the visible report parameters defined in all child reports.
 
 Telerik Reporting provides a mechanism known as parameter merging. If the [`Name`](/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Name) and [`Type`](/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Type) of two (or more) parameters from different reports are the same, then they are considered equivalent and are displayed as a single parameter in the viewer's Parameters Area.
 
@@ -25,7 +25,7 @@ You can control parameter merging via the [`Mergeable`](/api/Telerik.Reporting.I
 
 ## How to set a value for a report parameter in ReportBook
 
-In the sample pictures below, you will see in few steps how to set a value for a report parameter in ReportBook using Standalone Designer. For this example, the **Dashboard.trdp** and **Product Sales.trpd** reports are used, which can be found in the installation folder - **C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Report Designer\Examples**.
+In the sample pictures below, you will see in a few steps how to set a value for a report parameter in ReportBook using Standalone Designer. For this example, the **Dashboard.trdp** and **Product Sales.trpd** reports are used, which can be found in the installation folder - **C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Report Designer\Examples**.
 
 ### In Standalone Designer
 
@@ -39,7 +39,7 @@ In the sample pictures below, you will see in few steps how to set a value for a
 ### Web Report Designer
 
 1. Open the ReportBook (Combined Report).
-1. In Report Sources, click on the `uriReportSources1 `
+1. In Report Sources, click on the `uriReportSources1 `.
 1. Next to Parameters, you will see a plus sign(+). Click on it.
 1. In the `Add New Item` window, you will be able to set the name and value of the parameter.
 
@@ -52,13 +52,11 @@ In the sample pictures below, you will see in few steps how to set a value for a
 * __When report parameters have unique names or the target parameters are merged:__ If a parameter is distinguishable by its Name property or the Name denotes several merged parameters, refer to the parameter directly by the value of its Name property.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
 
 * __When report parameters have repeating names but they are not merged:__ In this case, you need to refer to the individual occurrence of the parameter in a particular report. This is done by denoting the target report by its zero-based index inside the report book.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
 
 >note If you do not use the specified syntax and you refer to the report parameter directly by the `Name` property's value, the value will be set only for the _first_ occurrence of the report parameter in the report book.

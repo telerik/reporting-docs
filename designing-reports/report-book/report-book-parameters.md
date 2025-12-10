@@ -38,7 +38,7 @@ In the sample pictures below, you will see in few steps how to set a value for a
 
 ### Web Report Designer
 
-1. Open the ReportBooks (Combined Reports).
+1. Open the ReportBook (Combined Report).
 1. In Report Sources, click on the `uriReportSources1 `
 1. Next to Parameters, you will see a plus sign(+). Click on it.
 1. In the `Add New Item` window, you will be able to set the name and value of the parameter.

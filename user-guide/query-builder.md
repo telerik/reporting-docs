@@ -26,9 +26,15 @@ A query is just a set of instructions that tells the system what data you want f
 
 The graphical query builder helps you find information in a database without writing code. You can click to choose the tables and columns you need, and then see the results. If you use more than one table, you need to show how the tables are connected.
 
+### Advantages of Using the Query Builder
+
+1. __Intuitive Query Creation__ - The graphical interface lets you create SQL queries by clicking and selecting options instead of writing code. This makes it simple to use and helps avoid mistakes.
+1. __Faster Development__ - You can create even complicated queries easily by dragging and dropping items. The system will automatically create the necessary JOIN relationships between related tables, so you don’t need to set them up manually
+1. __Immediate Result Preview__ - The Query Builder lets you see the results of your query before you add them to the report. This helps you make sure everything looks correct and saves time.
+
 ## Schema Restrictions
 
-As of 2025 Q1, the Web Report Designer’s Query Builder has a new option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
+The Web Report Designer’s Query Builder has an option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
 
 ````
 null,Production,ProductCategory
@@ -77,6 +83,8 @@ The following columns are displayed:
 ### Relationships Pane
 
 The Relationships pane shows how the selected tables are linked together, using SQL JOIN statements (which are instructions that tell the database how to combine data from different tables).
+
+![Image of the Relationship Pane ><](images/wrd-query-builder-relationship-pane.png)
 
 The following option is available:
 

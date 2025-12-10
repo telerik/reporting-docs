@@ -29,6 +29,7 @@ In the sample pictures below, you will see in few steps how to set a value for a
 
 ### In Standalone Designer
 
+1. Open the Report Book 
 1. Click on the **Dashboard.trdp**
 1. From the Toolbar, click on the **Parameters**
 1. The **Edit Parameter** window will open, then select New
@@ -49,56 +50,14 @@ In the sample pictures below, you will see in few steps how to set a value for a
 
 * __When report parameters have unique names or the target parameters are merged:__ If a parameter is distinguishable by its Name property or the Name denotes several merged parameters, refer to the parameter directly by the value of its Name property.
 
-````C#
-#region Set_Values_For_Unique_Or_Mergable_ReportParameters_UriReportSource
-var UriReportSource = new Telerik.Reporting.UriReportSource();
-UriReportSource.Uri = "MyReportBook.trbp";
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
 
-// Passing a value for a unique or repeating report parameter that should have one and the same value
-// for all reports part of the report book through the report source
-UriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("ProductCategory", "Bikes"));
-#endregion
-````
-````VB.NET
-'#Region Set_Values_For_Unique_Or_Mergable_ReportParameters_UriReportSource
-Dim UriReportSource As New Telerik.Reporting.UriReportSource()
-UriReportSource.Uri = "MyReportBook.trbp"
-
-' Passing a value for unique Or repeating report parameter that should have one And the same value
-' for all reports part of the report book through the report source
-UriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("ProductCategory", "Bikes"))
-'#End Region
-````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
 
 * __When report parameters have repeating names but they are not merged:__ In this case, you need to refer to the individual occurrence of the parameter in a particular report. This is done by denoting the target report by its zero-based index inside the report book.
 
-````C#
-#region Set_Values_For_NotMergable_ReportParameters_In_UriReportSource_Snippet
-var UriReportSource = new Telerik.Reporting.UriReportSource();
-UriReportSource.Uri = "MyReportBook.trbp";
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
 
-// Passing a value for not mergeable report parameter targeting the FIRST report in the report book
-//through the report source
-UriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("reports(0).ClientID", 102));
-
-// Passing a value for not mergeable report parameter targeting the SECOND report in the report book
-//through the report source
-UriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("reports(1).ClientID", 103));
-#endregion
-````
-````VB.NET
-'#Region Set_Values_For_NotMergable_ReportParameters_In_UriReportSource_Snippet
-Dim UriReportSource As New Telerik.Reporting.UriReportSource()
-UriReportSource.Uri = "MyReportBook.trbp"
-
-' Passing a value for Not mergeable report parameter targeting the FIRST report in the report book
-' through the report source
-UriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("reports(0).ClientID", 102))
-
-' Passing a value for Not mergeable report parameter targeting the SECOND report in the report book
-' through the report source
-UriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("reports(1).ClientID", 103))
-'#End Region
-````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
 
 >note If you do not use the specified syntax and you refer to the report parameter directly by the `Name` property's value, the value will be set only for the _first_ occurrence of the report parameter in the report book.

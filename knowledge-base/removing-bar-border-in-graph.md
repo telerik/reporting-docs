@@ -1,6 +1,6 @@
 ---
-title: Removing Bar Border in Graph
-description: Learn how to remove the darker border around bars in a graph within Telerik Reporting.
+title: Removing Bar Border in Bar and Column Graphs
+description: "Learn how to remove the darker border around bars in a graph within Telerik Reporting."
 type: how-to
 page_title: How to Remove Graph Bar Borders in Telerik Reporting
 meta_title: How to Remove Graph Bar Borders in Telerik Reporting

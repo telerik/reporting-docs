@@ -33,9 +33,7 @@ Example 1:
 
 Consider using data binding for the `Format` property:
 
-```
-= RenderingFormat.Name = "CSV" ? Null : "{0:C2}"
-```
+`= RenderingFormat.Name = "CSV" ? Null : "{0:C2}"`
 
 Example 2:
 

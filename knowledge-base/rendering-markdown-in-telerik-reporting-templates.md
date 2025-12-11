@@ -1,6 +1,6 @@
 ---
-title: Rendering Markdown in Telerik Reporting Templates
-description: Learn how to use and render markdown content in Telerik Reporting templates by converting it to HTML.
+title: Use Markdown in Telerik Reporting
+description: "Learn how to use and render markdown content in Telerik Reporting by converting it to HTML, which can be displayed via the HtmlTextBox item."
 type: how-to
 page_title: Using Markdown in Telerik Reporting via HTML Conversion
 meta_title: Using Markdown in Telerik Reporting via HTML Conversion
@@ -11,37 +11,37 @@ ticketid: 1703063
 ---
 
 ## Environment
+
 <table>
   <tbody>
     <tr>
       <td> Product </td>
       <td> Reporting </td>
     </tr>
-    <tr>
-      <td> Version </td>
-      <td> 18.2.24.924 </td>
-    </tr>
   </tbody>
 </table>
 
 ## Description
 
-I want to use markdown content from Azure DevOps wiki pages in Telerik Reporting templates. Markdown is not directly supported in Telerik Reporting, and I need to display the content within a report template.
+I want to use [Markdown](https://en.wikipedia.org/wiki/Markdown) content from Azure DevOps wiki pages in Telerik reports. Markdown is not directly supported in Telerik Reporting, and I need a way to display the content within the report somehow.
 
 ## Solution
 
 Telerik Reporting does not have native support for rendering markdown syntax directly. However, you can use the [HtmlTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) report item to display HTML content, which supports a limited set of HTML tags and CSS attributes. Follow these steps:
 
-1. Use an external markdown-to-HTML converter to transform your markdown content from Azure DevOps wiki into HTML format.
-1. Pass the converted HTML content to the HtmlTextBox report item in your Telerik Reporting template.
-1. Ensure that the HTML content uses only the supported tags and CSS attributes. Unsupported tags will not be rendered.
+### Externally Convert to HTML 
 
-To implement a Markdown-to-HTML converter, start by creating a [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that accepts Markdown input and returns the corresponding HTML output. You may refer to the sample code below as a guideline.
+1. Use an external MD -> HTML converter(e.g. [Convert Markdown to HTML](https://markdowntohtml.com/)) to transform the `MD` content into `HTML`.
+1. Pass the converted HTML content to the [HtmlTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) report item in your Telerik report.
+1. Ensure that the HTML content uses only the [supported HTML tags and CSS attributes]({%slug htmltextbox_formatting_and_styling%}).
 
-> To use the Markdown.ToHtml function, install the following NuGet package - [Markdig](https://www.nuget.org/packages/Markdig/0.44.0?_src=template)
+### Convert to HTML via User Functions
+
+If the `MD` content cannot be converted to `HTML` beforehand, create a [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that accepts the Markdown input and returns the corresponding HTML output. You may refer to the sample code below as a guideline.
+
+> To use the `Markdown.ToHtml` function, install the following NuGet package in the project with the user function - [Markdig](https://www.nuget.org/packages/Markdig/0.44.0?_src=template)
 
 ````C#
-
 namespace UserFunc
 {
     public class Class1
@@ -56,9 +56,9 @@ namespace UserFunc
   
 ````
 
-````
-Input:
+- Input:
 
+````
 # Hello World
 
 This is a **bold** statement and this is *italic*.
@@ -78,8 +78,7 @@ Visit [Google](https://google.com) for more info.
 Done!
 ````
 
-````
-Output:
+- Output:
 
 <h1>Hello World</h1>
 <p>This is a <strong>bold</strong> statement and this is <em>italic</em>.</p>
@@ -97,10 +96,7 @@ Output:
 <p>Done!</p>
 ````
 
-Refer to [Styling and Formatting the HtmlTextBox Report Item]({%slug htmltextbox_formatting_and_styling%}) for a list of supported HTML tags and CSS attributes.
-
 ## See Also
 
 * [HtmlTextBox Overview]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})
 * [Styling and Formatting the HtmlTextBox Report Item]({%slug htmltextbox_formatting_and_styling%})
-* [Telerik Reporting Documentation](https://docs.telerik.com/reporting) 

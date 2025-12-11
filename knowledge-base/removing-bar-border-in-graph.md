@@ -9,6 +9,7 @@ tags: reporting, graph, series, datapointstyle, linewidth
 res_type: kb
 ticketid: 1702817
 ---
+
 <style> img[alt$="><"] { border: 1px solid lightgrey; } </style>
 
 ## Environment
@@ -19,16 +20,12 @@ ticketid: 1702817
       <td>Product</td>
       <td>Reporting</td>
     </tr>
-    <tr>
-      <td>Version</td>
-      <td>18.3.24.1112</td>
-    </tr>
   </tbody>
 </table>
 
 ## Description
 
-I want to remove the darker, solid border around bars in a graph with a bar series. The border is more visible in the HTML viewer and overlaps the grid lines. The bars use a semi-transparent yellow color palette which allows grid lines to show through. The goal is to eliminate the darker border while maintaining the semi-transparent fill effect.
+I want to remove the darker, solid border around bars in a graph with a bar series. The border is more visible in the HTML5 Report Viewer and overlaps the grid lines. The bars use a semi-transparent yellow color palette, which allows grid lines to show through. The goal is to eliminate the darker border while maintaining the semi-transparent fill effect.
 
 ![Showing the Borders Around the Bars ><](images/BarBordersAroundBars.png)
 
@@ -36,10 +33,10 @@ I want to remove the darker, solid border around bars in a graph with a bar seri
 
 To remove the darker border around the bars:
 
-1. Select the graph in the Telerik Reporting designer.
-1. Expand the 'Series' property.
-1. Locate and expand the 'DataPointStyle' property.
-1. Set the 'LineWidth' property to `0pt`.
+1. Select the graph in the [Report Designer tool]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}) of choice.
+1. Expand the **Series** property.
+1. Locate and expand the [DataPointStyle](/api/telerik.reporting.graphseriesbase#Telerik_Reporting_GraphSeriesBase_DataPointStyle) property of the [GraphSeries](/api/telerik.reporting.graphseries).
+1. Set the **LineWidth** property to **0pt**.
 
 ![Using LineWidth Property To Remove the Borders Around the Bars ><](images/UsingLineWidthPropertyBarGraph.png)
 

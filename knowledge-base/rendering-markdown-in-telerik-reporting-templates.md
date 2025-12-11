@@ -80,6 +80,7 @@ Done!
 
 - Output:
 
+````HTML
 <h1>Hello World</h1>
 <p>This is a <strong>bold</strong> statement and this is <em>italic</em>.</p>
 <h2>Features</h2>

@@ -61,7 +61,7 @@ namespace UserFunc
 ````
 # Hello World
 
-This is a **bold** statement and this is *italic*.
+This is a **bold** statement, and this is *italic*.
 
 ## Features
 

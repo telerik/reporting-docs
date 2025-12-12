@@ -11,7 +11,7 @@ position: 2
 
 The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package. 
 
-Beginning with **.NET 10** it can be executed directly via the `dnx` command. For **.NET 8 and .NET 9** (where `dnx` is not available) you can [install it as a local dotnet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install) and invoke its executable.
+Beginning with **.NET 10** it can be executed directly via the `dnx` command. For **.NET 8 and .NET 9** (where `dnx` is not available) you can [install it as a global dotnet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install) and invoke its executable.
 
 ## Prerequisites
 

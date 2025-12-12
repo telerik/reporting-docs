@@ -11,7 +11,7 @@ position: 2
 
 The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package. 
 
-Beginning with **.NET 10** it can be executed directly via the `dnx` command. For **.NET 8 and .NET 9** (where `dnx` is not available) you can [install it as a global dotnet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install) and invoke its executable.
+Beginning with **.NET 10**, it can be executed directly via the `dnx` command. For **.NET 8 and .NET 9** (where `dnx` is not available), you can [install it as a global dotnet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install) and invoke its executable.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Additional requirements:
 | Availability of `dnx` | Not available | Available |
 | Install Command | `dotnet tool install Telerik.Reporting.MCP` | None (resolved on demand) |
 | .mcp.json Command | `dotnet` | `dnx` |
-| .mcp.json Args | `tool`, `run`, `telerik-reporting-assistant` | `Telerik.Reporting.MCP`, `--yes` |
+| .mcp.json Args | `telerik-reporting-assistant` | `Telerik.Reporting.MCP`, `--yes` |
 | Update Version | Re-run tool install with `--version` or `tool update` | Handled by latest package resolved by `dnx` |
 | Offline Use | Requires prior tool install | Requires prior NuGet cache warm-up |
 
@@ -114,7 +114,7 @@ Use these settings when configuring the server in your MCP client:
 ```
 
 
-You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (*see [License Configuration](#license-configuration) section below for details and recommendations*). The `inputs` array is optional and not required for current functionality.
+You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (*see [License Configuration](#license-configuration) section below for details and recommendations*). The `inputs` array is optional and not required for the current functionality.
 
 After saving the file, restart Visual Studio and enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 

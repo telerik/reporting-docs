@@ -194,5 +194,5 @@ Examples you can try:
 
 ## See Also
 
-* [AI Coding Assistant Overview]({%slug ai-overview%})
+* [AI Coding Assistant Overview]({%slug ai-coding-assistant%})
 * [npm-based Telerik Reporting MCP Server]({%slug ai-mcp-server%})

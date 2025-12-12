@@ -160,7 +160,7 @@ __Option 2: Direct License Key__
 }
 ```
 
-> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key]({%slug license-key%}##updating-your-license-key) when necessary.
+> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key]({%slug license-key%}#updating-your-license-key) when necessary.
 
 ## Visual Studio Usage
 

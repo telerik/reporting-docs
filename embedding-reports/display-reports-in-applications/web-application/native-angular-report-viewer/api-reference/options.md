@@ -201,7 +201,8 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 			<td>parametersAreaVisible</td>
 			<td>
 				<p><i>boolean, optional;</i></p>
-				<p>Determines whether the viewer's parameters area is displayed if any parameter editor exists.</p>
+				<p>Determines whether the viewer's parameters area is initially displayed if any parameter editor exists. The user can expand the parameters area even if it is hidden initially, either through the splitter control or from the toolbar menu. Additionally, the property determines only whether the element, with the *visible* report parameters, will be visible on the page. Even when the setting is **False**, and the parameters area is not visible on the page, it would still be rendered to the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
+				For that reason, if you have a report parameter that contains sensitive information that must not be accessible publicly, set its [Visible](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible) property to **False** instead. This way, the report parameter will not be rendered in the DOM regardless of the __parametersAreaVisible__ setting.</p>
 				<p>Default value: <strong>true</strong></p>
 			</td>
 		</tr>

@@ -124,3 +124,7 @@ Note that sharing quality feedback and ideas will not only benefit the community
 * [First Steps with Telerik Reporting]({%slug telerikreporting/getting-started/first-steps%})
 * [Setting Up Your Telerik Reporting License Key]({%slug license-key%})
 * [Licensing Frequently Asked Questions]({%slug license-frequently-asked-questions%})
+
+## See Also
+
+* [Web Report Designer User Guide]({%slug user-guide/overview%})

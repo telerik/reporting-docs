@@ -150,3 +150,4 @@ Our next goal is to create a brand new report with the just configured Web Repor
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+* [Web Report Designer User Guide]({%slug user-guide/overview%})

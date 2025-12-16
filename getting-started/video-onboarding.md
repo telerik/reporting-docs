@@ -36,3 +36,7 @@ The Telerik Reporting technical online training has an approximate duration of 2
 * **Chapter 5: Styling the Reports** (Custom Styles, Header and Footer, Reusing Style Sheets)
 
 If you wish to learn more and continue with the video onboarding, [enroll in the training](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) from the [Virtual Classroom](https://learn.telerik.com/learn).
+
+## See Also
+
+* [Web Report Designer User Guide]({%slug user-guide/overview%})

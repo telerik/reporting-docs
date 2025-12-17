@@ -19,7 +19,7 @@ The main benefits of this approach are:
 * Works naturally with hierarchical object models or JSON data.
 * Cleaner and more maintainable for multi-level hierarchies.
 
-The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. Let's have the sample [JSON data](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Data%20Files/Categories-Products-Nested-Data.json) representing a collection of Categories. Each category contains a **nested** list of its Products. 
+The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. The [JSON data for this report](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Data%20Files/Categories-Products-Nested-Data.json) represents a collection of Categories. Each category contains a **nested** list of its Products. 
 
 A complete step-by-step video is available here:
 

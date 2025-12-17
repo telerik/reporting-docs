@@ -39,7 +39,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 ## Adding SubReports to Your Main Report
 
-1. Create a new report that will be the main report.
+1. Create a new report that will serve as the main report.
 
 1. Select the Details section and add a SubReport item.
 

@@ -50,7 +50,8 @@ To create a query using the Query Builder in the Web Report Designer:
           [Production].[ProductCategory].[Name]
           FROM [Production].[ProductCategory]
   ````
-6. (Optional) Apply any [Schema restrictions](#schema-restrictions) that apply to your chosen SQL Data Source.
+
+6. (Optional) Apply any [Schema restrictions](schema-restrictions) that apply to your chosen SQL Data Source.
 7. Click the **Query Builder** button.
 8. In the new window, build your SELECT statement:
    
@@ -74,7 +75,7 @@ To create a query using the Query Builder in the Web Report Designer:
   
 [Video Link]
 
-## Query Builder Structure
+## Query Builder Sections
 
 The following sections describe the function of each area
 
@@ -86,9 +87,11 @@ The following sections describe the function of each area
 | [Filters](#filters-pane) | Displays a list of options you can use to filter tables or views |
 | [Result](#result-pane) | Displays example data for the query that was created automatically |
 
+![Query Builder Sections.png ><](images/QueryBuilderSections.png)
+
 ### Database View Pane
 
-On the left side of the screen, you’ll see the Database View. It shows details about the database items you’re allowed to access, based on your login. The items are organized in a tree structure by category. Click a category to see its tables and views, and click a table or view to see its columns.
+On the left side of the screen is the Database View. This area displays the database items available to the user based on login permissions. The items are arranged in a hierarchical tree structure, grouped by category. Each category contains related tables and views, and these tables or views include their respective columns.
 
 When you check a column in this pane, it will automatically move to the Selected Fields pane. If you check a table, all its columns will be added to the Selected Fields pane. If you check more than one table, the Relationship Editor pane will open automatically.
 

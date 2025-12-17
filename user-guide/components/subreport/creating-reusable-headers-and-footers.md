@@ -11,7 +11,7 @@ position: 4
 
 # Creating Reusable Headers and Footers with SubReport
 
-The SubReport item is a perfect fit if you need to build reusable parts of a Report that can be integrated into other bigger reports later.
+The SubReport item is perfect for creating reusable report components that can be embedded in larger reports later.
 
 Here's a step-by-step tutorial for creating a reusable part of a report (for example, header and footer) using a SubReport:
 

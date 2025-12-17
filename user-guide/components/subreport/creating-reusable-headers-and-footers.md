@@ -43,7 +43,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Select the Details section and add a SubReport item.
 
-1. Navigate to the `INNER REPORT` section and select the **UriReportSource** option.
+1. Navigate to the **INNER REPORT** section and select the **UriReportSource** option.
 
 1. For the **Uri** field select the HeaderReport.trdp.
 

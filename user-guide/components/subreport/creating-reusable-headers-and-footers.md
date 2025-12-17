@@ -23,7 +23,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Remove the default header and footer.
 
-1. Add elements like company logo, report title, etc. in the Page Header section:
+1. Add elements like company logos and report titles in the Page Header section.
 
 1. Preview and save this report as a standalone file. This will serve as your reusable header part of a bigger report.
 

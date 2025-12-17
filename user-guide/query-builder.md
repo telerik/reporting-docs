@@ -26,39 +26,55 @@ A query is just a set of instructions that tells the system what data you want f
 
 The graphical query builder helps you find information in a database without writing code. You can click to choose the tables and columns you need, and then see the results. If you use more than one table, you need to show how the tables are connected.
 
-Advantages of Using the Query Builder
+The graphical Query Builder in the Web Report Designer has the following advantages:
 
-* __Intuitive Query Creation__ - The graphical interface lets you create SQL queries by clicking and selecting options instead of writing code. This makes it simple to use and helps avoid mistakes.
-* __Faster Development__ - You can create even complicated queries easily by dragging and dropping items. The system will automatically create the necessary JOIN relationships between related tables, so you don’t need to set them up manually
-* __Immediate Result Preview__ - The Query Builder lets you see the results of your query before you add them to the report. This helps you make sure everything looks correct and saves time.
+* __Intuitive Query Creation__&mdash;The graphical interface lets you create SQL queries by clicking and selecting options instead of writing code. This makes it simple to use and helps avoid mistakes.
+* __Faster Development__&mdash;You can create even complicated queries easily by dragging and dropping items. The system will automatically create the necessary JOIN relationships between related tables, so you don’t need to set them up manually
+* __Immediate Result Preview__&mdash;The Query Builder lets you see the results of your query before you add them to the report. This helps you make sure everything looks correct and saves time.
 
-## Steps to Create a Query Builder
+## Building Your First Query
 
-1. __Select the SQL Data Source__ - In the `Select Statement` section, choose the SQL Data Source you want to use.
-1. __Apply Schema Restrictions__ - Next, select the [Schema restriction]({%slug user-guide/query-builder%}#schema-restrictions) that applies to your chosen SQL Data Source.
-1. __Open the Query Builder__ - Click the `Query Builder` button. A new window will open where you can build your SELECT statement. Inside this window, you will find four main sections:
-    * [Selected Fields]({%slug user-guide/query-builder%}#selected-fields-pane)
-    * [Relationships]({%slug user-guide/query-builder%}#relationships-pane)
-    * [Filters]({%slug user-guide/query-builder%}#filters-pane)
-    * [Result]({%slug user-guide/query-builder%}#result-pane)
+To create a query using the Query Builder in the Web Report Designer:
+
+1. [Create]({%slug web-report-designer-user-guide-getting-started%}) an new report.
+2. Add an [SQL Data Source item]({%slug web-report-designer-user-guide-components-data-sources%}#sql-data-source).
+3. Connect to the desired SQL Data Source.
+
+   > To follow along the steps below, use the AdventureWorks database.
+
+5. In the **Select statement** section, use the following query:
+
+  ````SQL
+     SELECT
+          [Production].[ProductCategory].[ProductCategoryID],
+          [Production].[ProductCategory].[Name]
+          FROM [Production].[ProductCategory]
+  ````
+6. (Optional) Apply any [Schema restrictions](#schema-restrictions) that apply to your chosen SQL Data Source.
+7. Click the **Query Builder** button.
+8. In the new window, build your SELECT statement:
+   
+   8.1. In the left pane (the DataBase view), select the `Name` field from the `ProductCategory` and the `ProductSubcategory` tables.
+   
+   8.2. In the **Add relationship** window, select the fields (`ProductCategoryID`) that link the two tables and click **Save**.
+   
+   8.3. Select the `Name` field from the `Product` table.
+   
+   8.4. Define the relationship between the `ProductSubcategory` and `Product` tables through the `ProductCategoryID` fields and then click **Save**.
+   
+   8.5. Select the `ListPrice` field from the `Product` table.
+   
+   8.6. Set the alias (display name) for each column.
+   
+   8.7. To reduce the number of records that will be displayed, add a filter. For example, products with list price between 100 and 500.
+
+9. To preview the query and the resulting data, expand the **RESULT** section and click **Preview**.
+
+10. Click **Save** to confirm your query.
   
-Video
+[Video Link]
 
-### Schema Restrictions
-
-The Web Report Designer’s Query Builder has an option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
-
-````
-null,Production,ProductCategory
-````
-
-> Schema restrictions are sensitive to uppercase and lowercase letters, and empty values are allowed. If you need to set a value to nothing, use the word null as shown in the example. These rules only work with .NET 8 or newer.
-
-![Image of the SQL Data Source wizard showing the schema restrictions field ><](images/SchemaRestrictionsQueryBuilderWDR_1.png)
-
-![Image of the SQL Data Source wizard showing the query builder dialog ><](images/SchemaRestrictionsQueryBuilderWDR_2.png)
-
-## Query Builder Areas
+## Query Builder Structure
 
 The following sections describe the function of each area
 
@@ -156,6 +172,20 @@ The following options are available:
 When you click Save, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) Select Statement will be replaced by the new SQL query that was generated.
 
 The Query Builder keeps your current settings. But if you change the SQL query manually and then use the Query Builder again, it will replace your changes with its own version.
+
+### Schema Restrictions
+
+The Web Report Designer’s Query Builder has an option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
+
+````
+null,Production,ProductCategory
+````
+
+> Schema restrictions are sensitive to uppercase and lowercase letters, and empty values are allowed. If you need to set a value to nothing, use the word null as shown in the example. These rules only work with .NET 8 or newer.
+
+![Image of the SQL Data Source wizard showing the schema restrictions field ><](images/SchemaRestrictionsQueryBuilderWDR_1.png)
+
+![Image of the SQL Data Source wizard showing the query builder dialog ><](images/SchemaRestrictionsQueryBuilderWDR_2.png)
 
 ## See Also
 

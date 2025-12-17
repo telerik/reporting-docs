@@ -19,9 +19,7 @@ The main benefits of this approach are:
 * Works naturally with hierarchical object models or JSON data.
 * Cleaner and more maintainable for multi-level hierarchies.
 
-The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. To illustrate the hierarchical structure of the data used in the tutorial, see the JSON data below. It represents a collection of Categories, where each category contains a **nested** list of its Products.
-
-Let's have the sample [JSON data](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Data%20Files/Categories-Products-Nested-Data.json) representing a collection of Categories. Each category contains a nested list of its Products. This is a piece of the JSON content to better understand the Categories-Products hierarchical structure.
+The example in this tutorial shows how to present and organize a report when the used data has a nested (hierarchical) structure. The [JSON data for this report](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/Data%20Files/Categories-Products-Nested-Data.json) represents a collection of Categories. Each category contains a **nested** list of its Products. 
 
 A complete step-by-step video is available here:
 
@@ -47,7 +45,9 @@ To design a report that represents a hierarchy:
 
 1. Navigate to the **INNER REPORT** section and select the **UriReportSource** Type. Now, you need to create a separate report that will be used as a container for the products for each category.
 
-1. Create another report (`ProductsReport.trdp`) and add two TextBox items.
+1. Create another report (`ProductsReport.trdp`).
+
+1. Remove the default header/footer and add two TextBox items (or other Report items according to the data you need to display).
  
 1. Using the search box, navigate to the **Value** field and bind to `=Fields.ProductName` and `=Fields.Price` respectively. Save the child report.
 

@@ -29,7 +29,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 ## Creating the Footer Report
 
-1. Create a new report (for example, FooterReport.trdp).
+1. Create a new report (for example, `FooterReport.trdp`).
 
 1. Remove the default header and footer.
 

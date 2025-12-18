@@ -18,7 +18,10 @@ img[alt$="><"] {
 
 # Building SQL Queries the Easy Way
 
-The Web Report Designer lets you build SQL queries in two ways: by using a visual tool (where you click and select options) or a text tool (where you type the query).
+The Web Report Designer lets you build SQL queries in two ways: 
+
+* By using a visual tool (where you click and select options)
+* By using a text tool (where you type the query)
 
 A query is just a set of instructions that tells the system what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
 
@@ -73,7 +76,7 @@ To create a query using the Query Builder in the Web Report Designer:
 
 10. Click **Save** to confirm your query.
   
-[Video Link]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hv8w7E1mKSg?si=S7VHYN1lneZOT0-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Query Builder Sections
 
@@ -81,11 +84,11 @@ The following sections describe the function of each area
 
 | Name | Description |
 | ------ | ------ |
-| [Database View](#database-view-pane) | Displays a structured list of tables and views grouped by database sections |
-| [Selected Fields](#selected-fields-pane) | Displays the list of field names from the selected items in the database view |
-| [Relationships](#relationships-pane) | Displays how the selected tables are connected |
-| [Filters](#filters-pane) | Displays a list of options you can use to filter tables or views |
-| [Result](#result-pane) | Displays example data for the query that was created automatically |
+| [1. Database View](#database-view-pane) | Displays a structured list of tables and views grouped by database sections |
+| [2. Selected Fields](#selected-fields-pane) | Displays the list of field names from the selected items in the database view |
+| [3. Relationships](#relationships-pane) | Displays how the selected tables are connected |
+| [4. Filters](#filters-pane) | Displays a list of options you can use to filter tables or views |
+| [5. Result](#result-pane) | Displays example data for the query that was created automatically |
 
 ![Query Builder Sections.png ><](images/QueryBuilderSections.png)
 
@@ -167,8 +170,6 @@ The following options are available:
 * __Preview button__ Preview the query created from your selections or see the data it will return
 
 * __SQL/Data switch__ Choose whether to preview the SQL query that was created for you or the data it will return.
-
-![How to use the Query Builder ><](images/wrd-using-query-builder.gif)
 
 ## Query Builder State
 

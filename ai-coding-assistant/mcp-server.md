@@ -237,7 +237,7 @@ The basic setup in Visual Studio Code involves the following steps:
 
 ## Cursor
 
-> For complete setup instructions, see [Model Context Protocol](https://docs.cursor.com/context/mcp).
+> For complete setup instructions, see [Model Context Protocol](https://cursor.com/docs/context/mcp).
 
 Create a `.cursor/mcp.json` file in your workspace root (or user folder for global setup):
 

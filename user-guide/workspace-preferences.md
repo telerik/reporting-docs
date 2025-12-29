@@ -30,24 +30,15 @@ The Workspace Preferences are split into two categories:
 
 ## Snapping
 
-Snapping is a feature that detects alignment opportunities while designing the report. You can configure the following snapping options:
-
-* **Snap to grid lines** (*Currently Not Supported*)—When enabled and you move or resize report items (like TextBoxes, Tables, Charts) on the design surface, their edges automatically align to the nearest grid line on the underlying grid system. When disabled, you can freely position items without restrictions.
-
-
-    * Moving an item makes it jump to the nearest grid intersection.
-    * Resizing an item makes its edges align with the grid lines.
-
+Snapping is a feature that detects alignment opportunities while designing the report. You can enable or disable the following snapping option:
 
 * **Snap to snap lines**—Helps you position elements relative to each other (for example, aligning TextBoxes, Charts, or Tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.
 
 <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-snap-to-snap-lines.gif" alt="Snap to snap lines" /> 
 
-
->tip Snap to grid uses a static grid on the canvas, while snap lines are dynamic and context-sensitive, appearing only when items are close enough.
-
 ## General
 
+The `GENERAL` settings section provides options that control how the application behaves on startup and how it collects usage data to enhance functionality. You can configure the following options:
 
 * **Preserve open reports on exit**—Controls whether the designer remembers which reports were open when you closed the application and automatically restores them at the next launch.
 

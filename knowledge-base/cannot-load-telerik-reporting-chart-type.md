@@ -44,7 +44,7 @@ To help improve the application's security, the reporting engine prevents loadin
 
 The Chart report item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item. It is highly recommended to migrate your reports from the obsolete Chart item to the Graph item.
 
-If you need to continue using the obsolete Chart item, explicitly register the type by adding a [typeReference]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) in your application's configuration file.
+If you need to continue using the obsolete Chart item, explicitly register the type by adding a [typeReference]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) in your application's configuration file:
 
 ````xml
 <configuration>
@@ -58,24 +58,6 @@ If you need to continue using the obsolete Chart item, explicitly register the t
     </typeReferences>
   </Telerik.Reporting>
 </configuration>
-````
-````json
-{
-  "telerikReporting": {
-    "typeReferences": [
-      {
-        "typeName": "Telerik.Reporting.Processing.Chart",
-        "assemblyName": "Telerik.Reporting",
-        "publicKeyToken": "a9d7983dfcc261be"
-      },
-      {
-        "typeName": "Telerik.Reporting.Chart",
-        "assemblyName": "Telerik.Reporting",
-        "publicKeyToken": "a9d7983dfcc261be"
-      }
-    ]
-  }
-}
 ````
 
 After adding this configuration, the Chart item should render without the type loading error. However, be aware that this explicitly allows a type with known security vulnerabilities.

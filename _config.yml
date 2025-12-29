@@ -45,7 +45,7 @@ navigation:
     user-guide/components:
         position: 15
         title: "Report Components"
-    user-guide/components/subreport:
+    user-guide/components/subreport-item:
         position: 3
         title: "SubReport"
     user-guide/customizing-report-items:

@@ -56,13 +56,17 @@ A potential solution is to place the viewer outside of the form element if your 
 
 * For HTML5 ASP.NET WebForms report viewer
 
-````C#
-@(Html.TelerikReporting().ReportViewer()
-    .Id("reportViewer1")
-    .ServiceUrl(Url.Content("~/api/reports"))
-    .ReportSource(new UriReportSource() { Uri = "SampleReport.trdp" })
-    .TemplateUrl("/custom-report-viewer-template.html")
-)
+````XML
+<telerik:ReportViewer
+    ID="reportViewer1"
+    ServiceUrl="api/reports"
+    Width="1300px"
+    Height="900px"
+    TemplateUrl="/custom-report-viewer-template.html"
+    runat="server">
+    <ReportSource IdentifierType="UriReportSource" Identifier="SampleReport.trdp">
+    </ReportSource>
+</telerik:ReportViewer>
 ````
 
 

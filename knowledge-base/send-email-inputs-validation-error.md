@@ -68,7 +68,7 @@ A potential solution is to place the viewer outside of the form element if your 
 
 * For HTML5 report viewer
 
-```C#
+````HTML
 <div id="reportViewer1"></div>
 <script>
     $(document).ready(function() {
@@ -81,7 +81,7 @@ A potential solution is to place the viewer outside of the form element if your 
         });
     });
 </script>
-```
+````
 
 By using a custom template without the "Send Email" input elements, the form validation error will no longer occur, and your form submissions will work as expected.
 

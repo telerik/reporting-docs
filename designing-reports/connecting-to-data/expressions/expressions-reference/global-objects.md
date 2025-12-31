@@ -100,3 +100,5 @@ For information regarding the available child properties, check out the [UserIde
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each report rendering service by overriding the corresponding GetUserIdentity method.
 
 When exporting a report programmatically the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
+
+When generating a preview from the Report Server, the Reporting Engine uses the identity of the currently logged-in user. However, for scheduled tasks and data alerts, the Reporting Engine runs as a Windows service under a system identity that is shared across all tasks and alerts. As a result, the identity is not tied to the user who created the task or the recipient of the report email. In these cases, the UserIdentity value is `Null`.

@@ -18,6 +18,3 @@ Represents the built-in buttons from the report viewer's toolbar. Allows users t
 | CommandName | `System.String` | Gets or sets the command name associated with the ButtonTool. |
 | Icon | `Telerik.SvgIcons.ISvgIcon` | Gets or sets the icon for the ButtonTool. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

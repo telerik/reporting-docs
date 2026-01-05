@@ -104,6 +104,5 @@ Sets the report source as a string identifier and provides parameter values for 
 
 ## See Also
 
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})
 * [TypeReportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types/typereportsource%})
 * [UriReportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types/urireportsource%})

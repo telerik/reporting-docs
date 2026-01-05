@@ -33,5 +33,4 @@ Sets the key mappings used in accessibility mode for keyboard navigation. Custom
 
 ## See Also
 
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})
 * [AccessibilityKeyMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types/accessibilitykeymap%})

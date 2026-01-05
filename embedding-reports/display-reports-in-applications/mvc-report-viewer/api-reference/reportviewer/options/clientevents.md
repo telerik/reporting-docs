@@ -36,7 +36,3 @@ Provides a fluent way to configure the client-side event handlers of the report 
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})
-* [Telerik.ReportViewer.Mvc.IClientEventsBuilder](https://docs.telerik.com/reporting/api/telerik.reportviewer.mvc.iclienteventsbuilder)

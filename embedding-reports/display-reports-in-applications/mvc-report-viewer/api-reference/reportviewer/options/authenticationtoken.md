@@ -28,6 +28,3 @@ Sets the encoded authentication token used to authenticate requests to the repor
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

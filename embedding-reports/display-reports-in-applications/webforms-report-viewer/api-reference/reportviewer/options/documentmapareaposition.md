@@ -45,5 +45,4 @@ Gets or sets the positioning of the document map area within the HTML5 viewer in
 
 ## See Also
 
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})
 * [DocumentMapAreaPosition]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations/documentmapareaposition%})

@@ -26,6 +26,3 @@ table th:nth-of-type(2) {
 | [ExecuteCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/methods/executecommand%})|Executes a predefined command with an additional value argument.<br>The available commands are:<br>'SetAuthenticationToken' - Sets the token that will be used in the Authorization header of the requests made by the viewer.<br>'Export' - Exports the report, using the respective rendering extension name, such as 'PDF'.|
 | [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/methods/getreportparameters%})|Retrieves the report parameters for the currently loaded report.|
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

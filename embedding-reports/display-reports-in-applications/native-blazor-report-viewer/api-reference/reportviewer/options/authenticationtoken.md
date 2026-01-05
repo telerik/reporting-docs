@@ -23,6 +23,3 @@ Gets or sets the authentication (bearer) token that is passed in the Authorizati
 </ReportViewer>
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

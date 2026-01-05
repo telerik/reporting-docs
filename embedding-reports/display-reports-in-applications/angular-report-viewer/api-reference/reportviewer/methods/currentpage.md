@@ -21,7 +21,3 @@ console.log(`Current page: ${currentPageNum}`);
 ````
 
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
-

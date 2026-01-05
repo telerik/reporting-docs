@@ -35,6 +35,3 @@ Represents a custom parameter editor configuration for the MVC Report Viewer, en
 }
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

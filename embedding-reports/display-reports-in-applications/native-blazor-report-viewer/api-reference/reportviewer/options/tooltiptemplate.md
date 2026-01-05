@@ -28,6 +28,3 @@ Gets or sets the template for rendering tooltips in the ReportViewer.
 </ReportViewer>
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

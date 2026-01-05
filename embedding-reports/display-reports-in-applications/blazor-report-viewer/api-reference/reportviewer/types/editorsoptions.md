@@ -18,6 +18,3 @@ Specifies the settings for the different types of configurable report parameter 
 | MultiSelect | [`Telerik.ReportViewer.Blazor.EditorType`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/editortype%}) | Gets or sets the editor type for report parameters with available values and multivalue set to true. |
 | SingleSelect | [`Telerik.ReportViewer.Blazor.EditorType`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/editortype%}) | Gets or sets the editor type for report parameters with available values and multivalue set to false. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -43,6 +43,3 @@ table th:nth-of-type(2) {
 | [unbind]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/unbind%})|Unbinds an event handler from the specified event.|
 | [unbindAll]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/unbindall%})|Unbinds all event handlers from the specified event.|
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

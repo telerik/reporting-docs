@@ -17,6 +17,3 @@ Specifies the options for the two parameter editors types - `Telerik.ReportViewe
 | ------ | ------ | ------ |
 | Editors | [`Telerik.ReportViewer.Blazor.EditorsOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/editorsoptions%}) | Gets or sets the [`Telerik.ReportViewer.Blazor.EditorType`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/editortype%}) to be used for the different types of report parameters. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -30,7 +30,3 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
 ````
 
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
-

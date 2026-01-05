@@ -22,6 +22,3 @@ Represents the API of a parameter editor instance returned by createEditor.
 | clearPendingChange | `function` | Invoked when parameter changes (optional, not present on all editors). |
 | destroy | `function` | Invoked to destroy the parameter editor (optional, not present on all editors). |
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

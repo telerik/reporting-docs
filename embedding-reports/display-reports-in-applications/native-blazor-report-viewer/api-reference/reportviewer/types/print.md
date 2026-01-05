@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Prints the current report displayed in the viewer.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

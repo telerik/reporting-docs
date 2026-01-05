@@ -42,5 +42,4 @@ Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug tel
 
 ## See Also
 
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})
 * [ReportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/reportsource%})

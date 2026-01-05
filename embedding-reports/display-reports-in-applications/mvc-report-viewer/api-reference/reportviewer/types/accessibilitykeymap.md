@@ -39,6 +39,3 @@ Provides a class for the key mapping used when report viewer accessibility is en
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

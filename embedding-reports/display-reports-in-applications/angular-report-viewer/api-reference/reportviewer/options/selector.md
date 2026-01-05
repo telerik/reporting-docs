@@ -27,6 +27,3 @@ A selector used in conjunction with the data attributes. Required when commands 
 selector: string = ".my-custom-selector";
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

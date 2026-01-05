@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Represents comprehensive information about a report document's state during rendering and when the rendering ends. The information in this object is used internally by the report viewer to manage how reports are displayed and interacted with.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

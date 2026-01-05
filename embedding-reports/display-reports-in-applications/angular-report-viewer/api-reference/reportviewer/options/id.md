@@ -22,6 +22,3 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 </tr-viewer>
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

@@ -33,6 +33,3 @@ For a complete list of commands, see [Commands Overview]({%slug telerikreporting
 
 For a complete list of types, see [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types/overview%}).
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

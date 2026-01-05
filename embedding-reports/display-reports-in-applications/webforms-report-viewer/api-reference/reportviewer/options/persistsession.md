@@ -42,6 +42,3 @@ Gets or sets a value indicating whether the HTML5 viewer's client state is persi
 </html>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

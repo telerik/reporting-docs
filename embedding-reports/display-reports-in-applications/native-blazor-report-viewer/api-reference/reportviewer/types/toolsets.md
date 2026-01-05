@@ -17,6 +17,3 @@ Predefined collections of ReportViewer tools.
 | ------ | ------ | ------ |
 | Default | `System.Collections.Generic.List{Telerik.ReportViewer.BlazorNative.Tools.IReportViewerTool}` | The default set of all available tools. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

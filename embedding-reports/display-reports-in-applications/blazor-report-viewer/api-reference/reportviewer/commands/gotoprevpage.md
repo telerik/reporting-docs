@@ -11,6 +11,3 @@ reportingArea: BlazorWrapper
 
 Gets the GoToPrevPage command. Execute to go to the previous page of the report.
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

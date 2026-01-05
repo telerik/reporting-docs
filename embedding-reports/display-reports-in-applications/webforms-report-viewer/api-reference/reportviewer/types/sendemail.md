@@ -57,6 +57,3 @@ Provides configuration options for the send email functionality within the HTML5
 </html>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

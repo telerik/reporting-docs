@@ -35,5 +35,4 @@ Configures the report parameters display and interaction options. Controls how r
 
 ## See Also
 
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})
 * [Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types/parameters%})

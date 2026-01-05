@@ -20,7 +20,3 @@ Gets the viewer’s current page that is displayed.
 ````
 
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-

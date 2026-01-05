@@ -11,6 +11,3 @@ reportingArea: BlazorWrapper
 
 Gets the Zoom command. Execute to zoom the report with a specified ratio.
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -24,6 +24,3 @@ Configuration object that identifies the report to be displayed and provides ini
 // Example: Using ReportSource with the React Report Viewer<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{    report: "InventoryReport",    parameters: {      Category: "Electronics",      InStock: true    }  }}/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

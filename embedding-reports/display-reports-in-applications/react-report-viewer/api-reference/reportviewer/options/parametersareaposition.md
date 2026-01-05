@@ -21,6 +21,3 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 // Place parameters area on the left<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  parametersAreaPosition="LEFT"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

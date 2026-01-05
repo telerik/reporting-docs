@@ -24,6 +24,3 @@ Each command is an object with the following methods:
 | enabled | `function` | Returns whether the command is currently enabled. |
 | checked | `function` | Returns whether the command is in a checked state (for toggle commands). |
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

@@ -19,6 +19,3 @@ Specifies the identifier type options used in the HTML5 WebForms ReportViewer Re
 | TypeReportSource | Indicates that the identifier represents a report type for creating TypeReportSource instances.<br>Used when the identifier is a fully qualified type name that references a report class for strongly-typed report loading. |
 | UriReportSource | Indicates that the identifier represents a URI pointing to a .trdp/.trdx report file for creating UriReportSource instances.<br>Used when the identifier is a file path or URI that points to a report definition file stored on disk or accessible via URL. |
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

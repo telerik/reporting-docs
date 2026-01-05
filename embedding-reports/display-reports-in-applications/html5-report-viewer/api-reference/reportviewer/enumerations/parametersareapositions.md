@@ -20,6 +20,3 @@ Enum for the available positions of the parameters area in the viewer.
 | TOP | Parameters area on the top. |
 | BOTTOM | Parameters area on the bottom. |
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

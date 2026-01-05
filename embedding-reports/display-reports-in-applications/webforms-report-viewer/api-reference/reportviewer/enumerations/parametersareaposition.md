@@ -20,6 +20,3 @@ Specifies the positioning options for the Parameters Area within the HTML5 WebFo
 | Right | Positions the Parameters Area on the right side of the report content area.<br>Displays the parameter input controls as a panel on the right side of the HTML5 viewer interface. |
 | Top | Positions the Parameters Area at the top of the report content area.<br>Displays the parameter input controls as a horizontal panel above the HTML5 viewer interface. |
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

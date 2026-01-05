@@ -32,6 +32,3 @@ Defines the report source for the viewer, specifying which report to load and an
 // Example: Using ReportSource with the Report Viewer initialization$("#reportViewer").telerik_ReportViewer({  reportSource: {    report: "InventoryReport",    parameters: {      Category: "Electronics",      InStock: true    }  }});
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

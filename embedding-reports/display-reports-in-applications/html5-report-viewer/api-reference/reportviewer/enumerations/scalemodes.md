@@ -19,6 +19,3 @@ Enum for the available scale modes in the report viewer.
 | FIT_PAGE | Fit the entire page to the viewer. |
 | SPECIFIC | Use a specific zoom scale. |
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

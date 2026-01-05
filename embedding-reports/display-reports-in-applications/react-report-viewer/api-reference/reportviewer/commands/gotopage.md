@@ -25,6 +25,3 @@ Goes to a specific page of the report. Accepts a page number as parameter: exec(
 // Check if the command is checkedconst isChecked = viewer.commands.goToPage.checked();
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

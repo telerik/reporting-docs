@@ -27,6 +27,3 @@ A bearer token to be added in the Authorization header of each request. Used for
 authenticationToken: string = "Bearer your-authentication-token";
 ````
 
-## See Also
-
-* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

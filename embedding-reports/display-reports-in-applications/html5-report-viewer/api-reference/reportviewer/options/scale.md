@@ -21,6 +21,3 @@ The zoom scale (1.0 = 100%).
 // Set zoom to 150%$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The zoom scale (1.0 = 100%)  scale: 1.5});
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

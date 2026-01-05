@@ -21,6 +21,3 @@ Sets if the report is displayed in interactive mode or in print preview. Availab
 // Set view mode to print preview<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  viewMode="PRINT_PREVIEW"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

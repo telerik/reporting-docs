@@ -58,6 +58,3 @@ Specifies the configuration details for connecting to a Telerik Report Server in
 </ReportViewer>
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

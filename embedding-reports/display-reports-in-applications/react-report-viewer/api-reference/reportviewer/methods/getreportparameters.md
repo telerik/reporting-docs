@@ -20,7 +20,3 @@ Returns an immutable array of name-value objects representing the current evalua
 ````
 
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-

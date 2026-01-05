@@ -14,7 +14,3 @@ position: 2
 Renders the HTML5 ReportViewer control for design-time display in Visual Studio designer. Generates a simplified HTML representation of the HTML5 viewer for Visual Studio design surface display, showing the control dimensions and identification.
 
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})
-

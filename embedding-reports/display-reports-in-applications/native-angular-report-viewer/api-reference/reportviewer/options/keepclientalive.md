@@ -27,6 +27,3 @@ Determines whether to keep the client session alive. When true, prevents the ses
 keepClientAlive: boolean = true;
 ````
 
-## See Also
-
-* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

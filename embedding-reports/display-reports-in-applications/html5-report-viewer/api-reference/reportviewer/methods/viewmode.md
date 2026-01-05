@@ -24,7 +24,3 @@ Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).
 ````
 
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-

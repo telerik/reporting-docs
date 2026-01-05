@@ -29,7 +29,3 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 ````
 
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
-

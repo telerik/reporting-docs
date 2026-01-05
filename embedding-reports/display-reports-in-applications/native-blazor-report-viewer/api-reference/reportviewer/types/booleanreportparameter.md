@@ -17,6 +17,3 @@ Represents a boolean parameter editor for the Telerik Reporting Native Blazor Re
 | ------ | ------ | ------ |
 | SelectedValue | `System.Nullable{System.Boolean}` | Gets or sets the selected value of the Boolean report parameter. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

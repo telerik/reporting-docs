@@ -43,6 +43,3 @@ table th:nth-of-type(2) {
 | [unbind]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/unbind%})|Unbinds a specific event handler from a report viewer event.|
 | [unbindAll]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/unbindall%})|Unbinds all event handlers from a specific report viewer event.|
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

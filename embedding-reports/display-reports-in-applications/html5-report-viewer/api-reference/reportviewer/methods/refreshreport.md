@@ -24,7 +24,3 @@ Refreshes the currently loaded report. Forces the viewer to reload the report fr
 ````
 
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-

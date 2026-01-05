@@ -27,6 +27,3 @@ Sets the page display mode of the viewer.
 pageMode: PageMode = 'singlePage';
 ````
 
-## See Also
-
-* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

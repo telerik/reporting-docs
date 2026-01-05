@@ -28,6 +28,3 @@ Sets the CSS class to be applied to buttons when they are in disabled state. All
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

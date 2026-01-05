@@ -20,6 +20,3 @@ Specifies the positioning options for the Parameters Area within the MVC Report 
 | Right | Positions the Parameters Area on the right side of the report content area.<br>Default positioning that displays the parameters panel as a collapsible area on the right side of the viewer. |
 | Top | Positions the Parameters Area above the report content area.<br>Horizontal positioning that displays the parameters panel as a collapsible area at the top of the viewer for wide screen layouts. |
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

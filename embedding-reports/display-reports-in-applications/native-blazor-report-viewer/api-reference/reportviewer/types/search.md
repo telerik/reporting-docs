@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Opens the viewer's search window which allows users to search for a specified term within the report and highlights any occurrences.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

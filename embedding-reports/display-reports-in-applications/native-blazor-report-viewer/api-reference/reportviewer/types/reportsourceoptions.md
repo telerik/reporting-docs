@@ -33,6 +33,3 @@ Specifies a report and initial report parameter values.
 }
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

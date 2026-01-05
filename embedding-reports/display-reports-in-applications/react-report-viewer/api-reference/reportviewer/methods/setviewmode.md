@@ -20,7 +20,3 @@ Sets the view mode and automatically reloads the current report (if any) into th
 ````
 
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-

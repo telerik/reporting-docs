@@ -25,5 +25,4 @@ Sets if the report is displayed in Single page or Continuous scroll mode.
 
 ## See Also
 
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
 * [PageMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations/pagemode%})

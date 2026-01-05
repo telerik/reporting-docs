@@ -18,6 +18,3 @@ Specifies where the Document Map Area should be displayed.
 | Left | Displays Document Map Area on the <strong>left</strong> of the page view. |
 | Right | Displays Document Map Area on the <strong>right</strong> of the page view. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -41,6 +41,3 @@ Represents a report source that loads a report document from a URI. The URI must
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

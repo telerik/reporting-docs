@@ -31,6 +31,3 @@ Sets whether the client session will be kept alive by sending periodic requests 
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

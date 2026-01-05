@@ -39,7 +39,3 @@ Provides a fluent way to configure custom parameter editors for the report viewe
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})
-* [Telerik.ReportViewer.Mvc.IParameterEditorsBuilder](https://docs.telerik.com/reporting/api/telerik.reportviewer.mvc.iparametereditorsbuilder)

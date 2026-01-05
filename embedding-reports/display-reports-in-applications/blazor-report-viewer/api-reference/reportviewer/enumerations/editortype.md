@@ -18,6 +18,3 @@ Specifies the available built-in editor types.
 | ComboBox | Represents the Kendo UI for jQuery ComboBox widget. |
 | ListView | Represents the Kendo UI for jQuery ListView widget. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

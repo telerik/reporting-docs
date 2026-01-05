@@ -27,6 +27,3 @@ The image URL for the PageArea background image. Used only when parameter values
 initialPageAreaImageUrl: string = "https://site.com/path/initialPageAreaImage.png";
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

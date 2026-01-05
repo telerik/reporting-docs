@@ -14,7 +14,3 @@ position: 2
 Executes a predefined command with an additional value argument. The available commands are: 'SetAuthenticationToken' - Sets the token that will be used in the Authorization header of the requests made by the viewer. 'Export' - Exports the report, using the respective rendering extension name, such as 'PDF'.
 
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
-

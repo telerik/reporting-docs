@@ -37,6 +37,3 @@ Defines a renderfragment that contains all settings for the Report Viewer.
 </ReportViewer>
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

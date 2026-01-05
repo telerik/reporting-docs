@@ -25,6 +25,3 @@ Goes to the previous page of the report.
 // Check if goToPrevPage is checkedif (rv.commands.goToPrevPage.checked()) {}
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

@@ -18,6 +18,3 @@ Specifies the display mode options for the MVC Report Viewer control to determin
 | Interactive | Displays the report in its original dimensions with full interactivity enabled and no automatic pagination.<br>Enables drill-through actions, sorting, toggles, and other interactive features while showing the report in its natural size. |
 | PrintPreview | Displays the report in paginated format as it would appear when printed on paper with interactivity disabled.<br>Optimizes the display for print layout preview with proper page breaks and margins but without interactive functionality. |
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

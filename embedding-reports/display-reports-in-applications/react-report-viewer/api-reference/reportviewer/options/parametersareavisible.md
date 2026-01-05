@@ -21,6 +21,3 @@ Determines whether the viewer's parameters area is displayed if any parameter ed
 // Hide parameters area<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  parametersAreaVisible={false}/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

@@ -19,6 +19,3 @@ Specifies the scaling strategy options for the HTML5 WebForms ReportViewer contr
 | FitPageWidth | Automatically scales the report to match the viewer width by zooming to align report width with the available display width.<br>Optimizes horizontal readability in the HTML5 viewer by ensuring report width matches viewer width, potentially requiring vertical scrolling for tall reports. |
 | Specific | Uses a custom scale value to control report magnification for precise scaling control independent of viewer dimensions.<br>Requires a specific zoom percentage to be set separately in the HTML5 viewer, providing exact control over report magnification for custom viewing requirements. |
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

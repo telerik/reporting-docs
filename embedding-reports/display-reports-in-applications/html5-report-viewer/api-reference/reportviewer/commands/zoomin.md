@@ -25,6 +25,3 @@ Zooms in the report.
 // Check if zoomIn is checkedif (rv.commands.zoomIn.checked()) {}
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

@@ -31,7 +31,3 @@ Retrieves the report parameters for the currently loaded report.
 ````
 
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
-

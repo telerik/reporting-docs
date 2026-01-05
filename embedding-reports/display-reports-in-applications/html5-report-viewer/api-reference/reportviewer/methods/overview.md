@@ -40,6 +40,3 @@ table th:nth-of-type(2) {
 | [unbind]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind%})|Unbinds an event handler from a viewer event.|
 | [viewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode%})|Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).|
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

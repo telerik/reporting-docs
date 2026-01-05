@@ -55,6 +55,3 @@ Authentication options:
 // Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication$("#reportViewer").telerik_ReportViewer({  reportServer: {    url: "https://my-report-server-net/",    getPersonalAccessToken: function() {      return Promise.resolve("<personal-access-token>");    }  },  reportSource: {    report: "Samples/Dashboard",    parameters: {      ReportYear: 2004    }  }});
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

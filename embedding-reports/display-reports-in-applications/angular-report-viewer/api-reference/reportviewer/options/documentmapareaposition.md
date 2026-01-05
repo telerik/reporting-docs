@@ -27,6 +27,3 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 documentMapAreaPosition: string = "RIGHT";
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

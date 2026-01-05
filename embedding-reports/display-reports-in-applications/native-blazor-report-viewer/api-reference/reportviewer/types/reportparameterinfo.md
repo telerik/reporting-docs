@@ -30,6 +30,3 @@ Represents detailed information about a report parameter.
 | Type | `System.String` | Gets the type of the report parameter.<br>Valid types are: Boolean, DateTime, Integer, Float, and String |
 | Value | `System.Object` | The value of the report parameter. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

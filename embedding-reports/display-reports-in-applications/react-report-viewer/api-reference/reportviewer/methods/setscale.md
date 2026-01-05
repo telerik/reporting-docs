@@ -20,7 +20,3 @@ Sets the scale factor and scale mode.
 ````
 
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-

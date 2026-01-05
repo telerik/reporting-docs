@@ -21,6 +21,3 @@ Sets the scale factor for the report pages. The scale takes effect when scaleMod
 // Set zoom to 150%<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  scale={1.5}  scaleMode="SPECIFIC"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

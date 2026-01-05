@@ -19,6 +19,3 @@ Represents the event arguments for the ExportStart event in the Telerik ReportVi
 | Format | `System.String` | Gets or sets the format the report should be exported to. |
 | IsCancelled | `System.Boolean` | Gets or sets a value indicating whether the export operation has been canceled. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

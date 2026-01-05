@@ -33,6 +33,3 @@ For a complete list of types, see [Types Overview]({%slug telerikreporting/using
 
 For a complete list of enumerations, see [Enumerations Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations/overview%}).
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

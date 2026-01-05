@@ -27,6 +27,3 @@ Determines whether search metadata will be delivered on demand (true) or by defa
 searchMetadataOnDemand: boolean = true;
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

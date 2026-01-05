@@ -21,6 +21,3 @@ Gets the current report's document map nodes if any. an array of DocumentMapNode
 console.log("Document map nodes:", JSON.stringify(this.viewer.getDocumentMapNodes));
 ````
 
-## See Also
-
-* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

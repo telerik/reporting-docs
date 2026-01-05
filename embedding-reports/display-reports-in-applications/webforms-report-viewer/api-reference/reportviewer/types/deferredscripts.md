@@ -19,6 +19,3 @@ Represents a WebForms control that renders deferred JavaScript initialization sc
 | RenderContents(System.Web.UI.HtmlTextWriter) | - | Renders the JavaScript content of the control by writing the deferred scripts to the specified HTML writer.<br>Retrieves and renders all deferred JavaScript scripts that have been collected during the page lifecycle for HTML5 ReportViewer components. |
 | ToString | `System.String` | Converts the deferred scripts collection into an HTML string containing the JavaScript initialization statements.<br>Retrieves all scripts that were stashed during the page lifecycle and formats them as HTML script elements for execution in the browser. |
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

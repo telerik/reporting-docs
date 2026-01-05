@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Represents the built-in toggle buttons from the report viewer's toolbar. This tool allows users to switch between two states, typically used for enabling or disabling a certain feature within the viewer.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

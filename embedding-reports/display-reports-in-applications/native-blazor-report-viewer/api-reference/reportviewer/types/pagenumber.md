@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Allows navigating to a specific page in the report by typing it into a numeric textbox.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

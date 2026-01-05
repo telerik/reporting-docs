@@ -25,6 +25,3 @@ Shows or hides the parameters area.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleParametersArea.checked();
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

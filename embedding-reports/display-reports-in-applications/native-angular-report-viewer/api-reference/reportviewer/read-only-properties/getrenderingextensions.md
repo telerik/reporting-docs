@@ -21,6 +21,3 @@ Gets the current report's rendering extensions. an array of RenderingExtension o
 console.log("Rendering extensions:", JSON.stringify(this.viewer.getRenderingExtensions));
 ````
 
-## See Also
-
-* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

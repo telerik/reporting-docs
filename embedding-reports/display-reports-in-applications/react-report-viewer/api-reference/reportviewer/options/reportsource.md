@@ -29,6 +29,3 @@ Sets the report and initial report parameter values for the viewer to be display
 // Report Server format<TelerikReportViewer  reportServer={{ url: "https://myserver/" }}  reportSource={{ report: "Finance/MonthlyReport" }}/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

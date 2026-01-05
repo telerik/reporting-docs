@@ -21,6 +21,3 @@ The image URL for the PageArea background image. Used only when the parameter va
 // Set a background image for empty page area<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  initialPageAreaImageUrl="/images/reportBackground.png"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

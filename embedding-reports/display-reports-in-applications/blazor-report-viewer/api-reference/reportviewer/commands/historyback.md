@@ -11,6 +11,3 @@ reportingArea: BlazorWrapper
 
 Gets the HistoryBack command. Execute to go back to the previously rendered report from history.
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

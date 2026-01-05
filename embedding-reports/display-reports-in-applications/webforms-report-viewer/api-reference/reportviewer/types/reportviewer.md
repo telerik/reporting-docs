@@ -82,6 +82,3 @@ Represents the HTML5 WebForms ReportViewer control that provides comprehensive r
         </telerik:ReportViewer>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

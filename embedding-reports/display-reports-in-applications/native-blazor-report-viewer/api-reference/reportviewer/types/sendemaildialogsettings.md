@@ -39,6 +39,3 @@ Represents the settings for the Send Email dialog in the Telerik Reporting Nativ
 </ReportViewer>
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

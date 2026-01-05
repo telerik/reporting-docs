@@ -21,6 +21,3 @@ Gets or sets a value indicating whether the viewer's client state will be persis
 <ReportViewer PersistSession="true" />
 ````
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -32,6 +32,3 @@ Specifies the viewer's event options. Each option can be assigned an event handl
 | UpdateUi | `System.String` | Gets or sets the viewer's updateUi event handler function name.<br>Occurs when the UI state of the viewer changes. |
 | ViewerToolTipOpening | `System.String` | Gets or sets the viewer's viewerToolTipOpening event handler function name.<br>The event occurs before a tooltip is opened, providing the ability to cancel its opening. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

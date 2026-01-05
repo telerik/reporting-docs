@@ -25,6 +25,3 @@ Goes back to the previously rendered report from history.
 // Check if the command is checkedconst isChecked = viewer.commands.historyBack.checked();
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

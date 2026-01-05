@@ -25,6 +25,3 @@ When set to false, the client will be left to be expired
 <ReportViewer KeepClientAlive="true" />
 ````
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -20,7 +20,3 @@ Stops sending keep alive requests to the server, if keep client alive was enable
 ````
 
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-

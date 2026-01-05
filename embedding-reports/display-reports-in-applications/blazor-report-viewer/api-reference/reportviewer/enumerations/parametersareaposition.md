@@ -20,6 +20,3 @@ Specifies where the Parameters Area should be displayed.
 | Right | Displays Parameters Area on the <strong>right</strong> of the page view. |
 | Top | Displays Parameters Area on the <strong>top</strong> of the page view. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

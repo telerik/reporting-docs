@@ -17,6 +17,3 @@ Represents a long report parameter in the Telerik Reporting Native Blazor Report
 | ------ | ------ | ------ |
 | SelectedValue | `System.Nullable{System.Int64}` | Gets or sets the selected value of the LongReportParameter. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

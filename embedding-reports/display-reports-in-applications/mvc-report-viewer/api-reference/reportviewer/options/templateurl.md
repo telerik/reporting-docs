@@ -29,6 +29,3 @@ Sets the URL for the custom report viewer template that defines the viewer's UI 
 )
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

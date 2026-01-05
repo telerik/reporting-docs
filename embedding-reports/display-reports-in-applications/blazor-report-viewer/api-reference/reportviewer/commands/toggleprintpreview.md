@@ -11,6 +11,3 @@ reportingArea: BlazorWrapper
 
 Gets the TogglePrintPreview command. Execute to toggle between Print Preview and Interactive view modes.
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

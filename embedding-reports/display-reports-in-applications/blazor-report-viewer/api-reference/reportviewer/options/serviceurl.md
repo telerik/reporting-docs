@@ -21,6 +21,3 @@ Gets or sets the URL of the service which will provide the report viewer with re
 <ReportViewer ServiceUrl="/api/reports" />
 ````
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

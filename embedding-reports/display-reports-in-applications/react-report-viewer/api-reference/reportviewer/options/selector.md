@@ -21,6 +21,3 @@ A selector used in conjunction with the data- attributes. Whenever a command is 
 // Set a custom selector for external commands// Use with component: selector="#customToolbar"
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

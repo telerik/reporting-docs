@@ -43,6 +43,3 @@ Represents the collection of tools available in the report viewer's toolbar. All
 }
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

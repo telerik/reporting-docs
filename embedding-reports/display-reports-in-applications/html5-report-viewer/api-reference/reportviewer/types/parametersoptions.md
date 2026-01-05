@@ -25,6 +25,3 @@ Configuration options for report parameter editors and behavior.
 // Specify editor types for parameters{  editors: {    singleSelect: "COMBO_BOX",    multiSelect: "LIST_VIEW"  }}
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

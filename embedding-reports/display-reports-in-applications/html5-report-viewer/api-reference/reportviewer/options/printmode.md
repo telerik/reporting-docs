@@ -21,6 +21,3 @@ The print mode. See [PrintModes]({%slug telerikreporting/using-reports-in-applic
 // Set print mode to force PDF file using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The print mode  printMode: telerikReportViewer.PrintModes.FORCE_PDF_FILE});
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

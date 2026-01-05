@@ -21,6 +21,3 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 // Place document map on the right<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  documentMapAreaPosition="RIGHT"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

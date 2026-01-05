@@ -33,6 +33,3 @@ Gets or sets the URL for the report viewer template. The template can be edited 
 </form>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

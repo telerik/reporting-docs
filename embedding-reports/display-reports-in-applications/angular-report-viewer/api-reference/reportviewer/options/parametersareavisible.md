@@ -27,6 +27,3 @@ Determines whether the viewer's parameters area is displayed by default when par
 parametersAreaVisible: boolean = false;
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

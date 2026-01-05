@@ -18,6 +18,3 @@ Represents the value of a report parameter in the viewer.
 | Name | `System.String` | The name of the report parameter. |
 | Value | `System.Object` | The value of the report parameter. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

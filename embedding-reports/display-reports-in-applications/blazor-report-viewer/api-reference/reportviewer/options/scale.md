@@ -21,6 +21,3 @@ Gets or sets zoom ratio of the report. ScaleMode needs to be set to Specific for
 <ReportViewer Scale="1.5" />
 ````
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -23,6 +23,3 @@ Gets or sets zoom ratio of the report. 1.0 is equal to 100%, i.e. the original s
 </ReportViewer>
 ````
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

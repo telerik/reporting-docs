@@ -21,6 +21,3 @@ A class used in conjunction with the data- attributes. Whenever a command is in 
 // Custom disabled button styling// Use with component: disabledButtonClass="btn-disabled"
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

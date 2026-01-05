@@ -19,6 +19,3 @@ Enum for the available print modes in the report viewer.
 | FORCE_PDF_PLUGIN | Force using the PDF plugin for printing. |
 | FORCE_PDF_FILE | Force downloading a PDF file for printing. |
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

@@ -41,6 +41,3 @@ Gets or sets a value indicating whether search metadata is delivered on-demand o
 </html>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

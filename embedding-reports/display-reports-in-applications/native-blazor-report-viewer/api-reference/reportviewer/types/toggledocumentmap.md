@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Toggles the visibility of the document map in the report viewer if available.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

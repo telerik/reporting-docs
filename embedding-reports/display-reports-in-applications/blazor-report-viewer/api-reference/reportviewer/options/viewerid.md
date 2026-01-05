@@ -21,6 +21,3 @@ Gets or sets the unique identifier of the ReportViewer instance.
 <ReportViewer ViewerId="MyReportViewer1" />
 ````
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

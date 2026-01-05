@@ -25,6 +25,3 @@ Toggles between Print Preview and Interactive view modes.
 // Check if togglePrintPreview is checkedif (rv.commands.togglePrintPreview.checked()) {}
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

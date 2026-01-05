@@ -43,6 +43,3 @@ Gets or sets a value indicating whether the HTML5 viewer client session is kept 
 </html>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

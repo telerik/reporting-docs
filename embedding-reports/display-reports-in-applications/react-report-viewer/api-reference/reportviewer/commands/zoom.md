@@ -25,6 +25,3 @@ Zoom with a specified ratio. Accepts a zoom ratio as parameter: exec(1.5).
 // Check if the command is checkedconst isChecked = viewer.commands.zoom.checked();
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

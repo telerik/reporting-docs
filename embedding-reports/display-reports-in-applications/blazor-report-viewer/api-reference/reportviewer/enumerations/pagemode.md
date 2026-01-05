@@ -18,6 +18,3 @@ Specifies the page mode for the ReportViewer control.
 | ContinuousScroll | Displays large amount of report pages by appending additional pages on demand. |
 | SinglePage | Displays only one report page in the PageArea container. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

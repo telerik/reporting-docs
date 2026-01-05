@@ -29,6 +29,3 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 // Enable Send Email with default values and PDF as the default formatvar sendEmailOptions = {  enabled: true,  from: "reports@company.com",  to: "recipient@domain.com",  cc: "manager@domain.com",  subject: "Monthly Sales Report",  body: "Please find the attached monthly sales report.",  format: "PDF"};
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

@@ -18,6 +18,3 @@ Specifies the display mode options for the HTML5 WebForms ReportViewer control t
 | Interactive | Displays the report in its original dimensions with full interactivity enabled and no automatic pagination.<br>Enables drill-through actions, sorting, toggles, and other interactive features while showing the report in its natural size within the HTML5 viewer interface. |
 | PrintPreview | Displays the paginated report as it would appear when printed on paper with interactivity disabled.<br>Optimizes the display for print layout preview with proper page breaks and margins but without interactive functionality in the HTML5 viewer environment. |
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

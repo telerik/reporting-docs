@@ -33,6 +33,3 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 // Basic email configuration with minimal options<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  sendEmail={{    enabled: true,    from: "noreply@company.com"  }}/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

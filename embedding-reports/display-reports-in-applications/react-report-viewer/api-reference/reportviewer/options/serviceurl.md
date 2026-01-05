@@ -21,6 +21,3 @@ Sets the address of the Report REST Service. Required if reportServer is not pro
 // Set the service URL for the report viewer<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

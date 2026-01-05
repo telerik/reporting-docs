@@ -24,6 +24,3 @@ Each command is an object with the following methods:
 | enabled | `function` | Returns true if the command can currently be executed. |
 | checked | `function` | Returns true if the command is in a checked/active state. |
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

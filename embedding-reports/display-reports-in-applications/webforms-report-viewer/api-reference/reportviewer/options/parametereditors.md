@@ -44,5 +44,4 @@ Gets or sets the parameter editors configuration that defines JavaScript functio
 
 ## See Also
 
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})
 * [ParameterEditors]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/parametereditors%})

@@ -27,6 +27,3 @@ Sets the scale factor for the report pages. Takes effect when scaleMode is set t
 scale: number = 1.5;
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

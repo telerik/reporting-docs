@@ -41,6 +41,3 @@ Gets or sets the zoom level of the report where 1.0 equals 100% of the original 
 </html>
 ````
 
-## See Also
-
-* [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})

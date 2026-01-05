@@ -27,6 +27,3 @@ Sets the address of the Report REST Service. Required when not using reportServe
 serviceUrl: string = 'https://demos.telerik.com/reporting/api/reports';
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

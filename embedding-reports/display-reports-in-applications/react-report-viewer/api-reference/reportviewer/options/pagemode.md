@@ -21,6 +21,3 @@ Sets if the report is displayed in Single page or Continuous scroll mode. Availa
 // Set page mode to single page<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  pageMode="SINGLE_PAGE"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

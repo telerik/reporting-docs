@@ -17,6 +17,3 @@ Represents a parameter editor for double report parameters in the Telerik Report
 | ------ | ------ | ------ |
 | SelectedValue | `System.Nullable{System.Double}` | Gets or sets the currently selected value for the DoubleReportParameter. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

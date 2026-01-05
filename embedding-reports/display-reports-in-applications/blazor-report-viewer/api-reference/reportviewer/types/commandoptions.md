@@ -35,6 +35,3 @@ Exposes the available report viewer commands.
 | ZoomIn | [`Telerik.ReportViewer.Blazor.Command`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/command%}) | Gets the ZoomIn command. Execute to zoom the report in. |
 | ZoomOut | [`Telerik.ReportViewer.Blazor.Command`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/command%}) | Gets the ZoomOut command. Execute to zoom the report out. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

@@ -27,6 +27,3 @@ Controls the visibility of the parameters area if the report has parameters.
 parametersAreaVisible: boolean = false;
 ````
 
-## See Also
-
-* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

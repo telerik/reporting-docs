@@ -23,6 +23,3 @@ Represents the device information settings sent to the server by the viewer when
 | ImmediatePrint | `System.Boolean` | Represents the device information related to immediate printing capabilities. |
 | UseSVG | `System.Boolean` | A flag specifying whether to render Map and Graph items as SVG or Bitmap images.<br>The default value is true. |
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

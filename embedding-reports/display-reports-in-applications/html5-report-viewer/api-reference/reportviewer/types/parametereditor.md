@@ -32,6 +32,3 @@ Describes a parameter editor for the Telerik Report Viewer parameter panel.
 // Example: Registering the custom ParameterEditorParameterEditors.push({  match: match,  createEditor: createEditor});
 ````
 
-## See Also
-
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

@@ -18,6 +18,3 @@ Specifies the positioning options for the Document Map Area within the MVC Repor
 | Left | Positions the Document Map Area on the left side of the report content area.<br>Default positioning that displays the document map as a collapsible panel on the left side of the viewer. |
 | Right | Positions the Document Map Area on the right side of the report content area.<br>Alternative positioning that displays the document map as a collapsible panel on the right side of the viewer. |
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

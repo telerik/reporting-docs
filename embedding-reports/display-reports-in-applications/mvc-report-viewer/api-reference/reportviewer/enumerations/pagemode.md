@@ -18,6 +18,3 @@ Specifies the page display mode options for the MVC Report Viewer control. Used 
 | ContinuousScroll | Displays multiple report pages in a continuous scrolling view with on-demand page loading for improved performance.<br>Enables seamless scrolling through large reports by progressively loading additional pages as needed. |
 | SinglePage | Displays only one report page at a time within the page area container for focused page-by-page viewing.<br>Provides traditional page navigation with discrete page display for precise page control and smaller memory footprint. |
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

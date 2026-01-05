@@ -35,6 +35,3 @@ Represents a container for deferred JavaScript initialization statements for MVC
 }
 ````
 
-## See Also
-
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/overview%})

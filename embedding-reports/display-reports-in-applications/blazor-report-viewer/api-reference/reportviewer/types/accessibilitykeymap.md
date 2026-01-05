@@ -22,6 +22,3 @@ Provides a class for the key mapping used when report viewer accessibility is en
 | MENU_AREA_KEY | `System.Byte` | Gets or sets the key code for navigating to menu area, when pressed together with CTRL + ALT. |
 | PARAMETERS_AREA_KEY | `System.Byte` | Gets or sets the key code for navigating to parameters area, when pressed together with CTRL + ALT. |
 
-## See Also
-
-* [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})

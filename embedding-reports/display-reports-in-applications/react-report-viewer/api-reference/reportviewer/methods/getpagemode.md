@@ -20,7 +20,3 @@ Gets the current page mode of the viewer.
 ````
 
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-

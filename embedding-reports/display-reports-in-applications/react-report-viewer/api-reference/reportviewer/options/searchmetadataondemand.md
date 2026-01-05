@@ -21,6 +21,3 @@ Determines whether the search metadata will be delivered on demand (true) or by 
 // Enable search metadata on demand<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  searchMetadataOnDemand={true}/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

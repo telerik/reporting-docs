@@ -27,6 +27,3 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 parametersAreaPosition: string = "LEFT";
 ````
 
-## See Also
-
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})

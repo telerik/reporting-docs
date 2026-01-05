@@ -21,6 +21,3 @@ Sets whether the viewer's client session is persisted between page refreshes (e.
 // Enable session persistence<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  persistSession={true}  id="myConstantId"/>
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

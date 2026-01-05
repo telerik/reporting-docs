@@ -25,6 +25,3 @@ Goes to the next page of the report.
 // Check if the command is checkedconst isChecked = viewer.commands.goToNextPage.checked();
 ````
 
-## See Also
-
-* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})

@@ -11,6 +11,3 @@ reportingArea: NativeBlazor
 
 Exports the report viewer content to a specified format.
 
-## See Also
-
-* [Native Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})

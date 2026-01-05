@@ -2,8 +2,8 @@
 title: Resolving Invalid License Watermark When Using Telerik Reporting in Website Projects
 description: "Learn how to resolve the invalid license watermark issue when using Telerik Reporting in Website projects, even after following licensing steps such as downloading the license key, using NuGet packages, and VB/CS script files."
 type: how-to
-page_title: Fixing Invalid License Watermark in Telerik Reporting Output
-meta_title: Fixing Invalid License Watermark in Telerik Reporting Output
+page_title: Fixing Invalid License Watermark in Website Projects
+meta_title: Fixing Invalid License Watermark in Website Projects
 slug: resolving-invalid-license-watermark-telerik-reporting
 tags: licensing, reporting, license-key, watermark, telerik-reporting
 res_type: kb

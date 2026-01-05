@@ -1,0 +1,26 @@
+---
+title: pageCount
+page_title: The pageCount method of the React Report Viewer explained
+description: "Learn more about the pageCount method of the React Report Viewer and how to use it to customize the viewer's behavior."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/pagecount
+tags: pagecount
+published: True
+reportingArea: React
+position: 8
+---
+
+# The `pageCount` method of the React Report Viewer
+
+Gets the total page count of viewer’s currently displayed report.
+
+## Example
+
+````JavaScript
+// Get total page countconst totalPages = reportViewerRef.current.pageCount();console.log("Total pages:", totalPages);
+````
+
+
+## See Also
+
+* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
+

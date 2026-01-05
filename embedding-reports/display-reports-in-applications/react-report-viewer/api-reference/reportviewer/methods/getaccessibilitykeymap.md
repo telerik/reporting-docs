@@ -1,0 +1,26 @@
+---
+title: getAccessibilityKeyMap
+page_title: The getAccessibilityKeyMap method of the React Report Viewer explained
+description: "Learn more about the getAccessibilityKeyMap method of the React Report Viewer and how to use it to customize the viewer's behavior."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/getaccessibilitykeymap
+tags: getaccessibilitykeymap
+published: True
+reportingArea: React
+position: 11
+---
+
+# The `getAccessibilityKeyMap` method of the React Report Viewer
+
+Gets the shortcut keys used when the report viewer is in accessible mode (enableAccessibility=true).
+
+## Example
+
+````JavaScript
+// Get accessibility key mapconst keyMap = reportViewerRef.current.getAccessibilityKeyMap();if (keyMap) {  console.log("Accessibility key map:", keyMap);}
+````
+
+
+## See Also
+
+* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
+

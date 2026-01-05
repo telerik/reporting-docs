@@ -156,6 +156,12 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/html5-report-viewer:
         position: 1
         title: "HTML5 Report Viewer"
+    embedding-reports/display-reports-in-applications/html5-report-viewer:
+        position: 1
+        title: "HTML5 Report Viewer"
+    embedding-reports/display-reports-in-applications/html5-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing:
         position: 10
         title: "Customizing"
@@ -186,12 +192,24 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
         position: 15
         title: "Customizing"
+    embedding-reports/display-reports-in-applications/mvc-report-viewer:
+        position: 6
+        title: "MVC Report Viewer"
+    embedding-reports/display-reports-in-applications/mvc-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
         position: 7
         title: "HTML5 ASP.NET Web Forms Report Viewer" 
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
         position: 15
         title: "Customizing"
+    embedding-reports/display-reports-in-applications/webforms-report-viewer:
+        position: 7
+        title: "WebForms Report Viewer"
+    embedding-reports/display-reports-in-applications/webforms-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer:
         position: 4
         title: "Native Angular Report Viewer"
@@ -201,6 +219,12 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing:
         position: 14
         title: "Customizing"
+    embedding-reports/display-reports-in-applications/native-angular-report-viewer:
+        position: 4
+        title: "Native Angular Report Viewer"
+    embedding-reports/display-reports-in-applications/native-angular-report-viewer/api-reference:
+        position: 15
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
         position: 5
         title: "Angular Report Viewer"
@@ -208,6 +232,12 @@ navigation:
         position: 12
         title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/angular-report-viewer:
+        position: 5
+        title: "Angular Report Viewer"
+    embedding-reports/display-reports-in-applications/angular-report-viewer/api-reference:
         position: 14
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
@@ -219,9 +249,21 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference:
         position: 14
         title: "API Reference"
+    embedding-reports/display-reports-in-applications/react-report-viewer:
+        position: 5
+        title: "React Report Viewer"
+    embedding-reports/display-reports-in-applications/react-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer:
         position: 3
         title: "Blazor Report Viewer"
+    embedding-reports/display-reports-in-applications/blazor-report-viewer:
+        position: 3
+        title: "Blazor Report Viewer"
+    embedding-reports/display-reports-in-applications/blazor-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer:
         position: 2
         title: "Native Blazor Report Viewer"
@@ -229,6 +271,12 @@ navigation:
         position: 12
         title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/native-blazor-report-viewer:
+        position: 2
+        title: "Native Blazor Report Viewer"
+    embedding-reports/display-reports-in-applications/native-blazor-report-viewer/api-reference:
         position: 14
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:

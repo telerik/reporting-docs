@@ -1,0 +1,23 @@
+---
+title: ParameterEditorTypes
+page_title: ParameterEditorTypes Enumeration
+description: "Enum for the available parameter editor types in the report viewer."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/parametereditortypes
+published: True
+reportingArea: HTML5
+---
+
+# The `ParameterEditorTypes` enumeration of the HTML5 Report Viewer
+
+Enum for the available parameter editor types in the report viewer.
+
+## Values
+
+| Value | Description |
+| ------ | ------ |
+| COMBO_BOX | Combo box editor for parameters. |
+| LIST_VIEW | List view editor for parameters. |
+
+## See Also
+
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

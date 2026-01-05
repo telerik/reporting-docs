@@ -1,0 +1,24 @@
+---
+title: PrintModes
+page_title: PrintModes Enumeration
+description: "Enum for the available print modes in the report viewer."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/printmodes
+published: True
+reportingArea: HTML5
+---
+
+# The `PrintModes` enumeration of the HTML5 Report Viewer
+
+Enum for the available print modes in the report viewer.
+
+## Values
+
+| Value | Description |
+| ------ | ------ |
+| AUTO_SELECT | Automatically select the print method. |
+| FORCE_PDF_PLUGIN | Force using the PDF plugin for printing. |
+| FORCE_PDF_FILE | Force downloading a PDF file for printing. |
+
+## See Also
+
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

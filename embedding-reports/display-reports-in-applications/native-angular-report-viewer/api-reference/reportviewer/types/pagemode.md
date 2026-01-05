@@ -1,0 +1,26 @@
+---
+title: types.PageMode
+page_title: types.PageMode Type
+description: "Page display mode options for the Native Angular Report Viewer. The available page modes are: - 'continuousScroll': Pages are displayed in a continuous scroll mode, allowing users to scroll through the report without page breaks. - 'singlePage': Pages are displayed one at a time, with each page taking up the full viewport."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types/pagemode
+published: True
+reportingArea: NativeAngular
+---
+
+# The `PageMode` type of the Native Angular Report Viewer
+
+Page display mode options for the Native Angular Report Viewer.
+The available page modes are:
+
+- 'continuousScroll': Pages are displayed in a continuous scroll mode, allowing users to scroll through the report without page breaks.
+- 'singlePage': Pages are displayed one at a time, with each page taking up the full viewport.
+
+## Type Definition
+
+````typescript
+type PageMode = "continuousScroll" | "singlePage";
+````
+
+## See Also
+
+* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/native-angular-report-viewer-overview%})

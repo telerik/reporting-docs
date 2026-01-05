@@ -41,3 +41,4 @@ Gets or sets the keyboard mappings used when accessibility mode is enabled in th
 ## See Also
 
 * [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})
+* [AccessibilityKeyMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/accessibilitykeymap%})

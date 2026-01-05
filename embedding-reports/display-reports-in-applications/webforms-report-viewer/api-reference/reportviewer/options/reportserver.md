@@ -38,3 +38,4 @@ Gets or sets the connection data of the report server that hosts the report. The
 ## See Also
 
 * [HTML5 ASP.NET WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/overview%})
+* [ReportServer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/reportserver%})

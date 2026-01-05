@@ -2,7 +2,7 @@
 title: API Reference Overview
 page_title: Angular Report Viewer API Reference Overview
 description: Complete API reference for the Angular Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/overview
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/overview
 tags: api,reference
 published: True
 reportingArea: AngularWrapper

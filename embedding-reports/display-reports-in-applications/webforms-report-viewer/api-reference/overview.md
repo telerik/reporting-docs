@@ -2,7 +2,7 @@
 title: API Reference Overview
 page_title: HTML5 ASP.NET WebForms Report Viewer API Reference Overview
 description: Complete API reference for the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/overview
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/overview
 tags: api,reference
 published: True
 reportingArea: WebForms

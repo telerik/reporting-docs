@@ -4,8 +4,8 @@ description: "Learn how to resolve the invalid license watermark issue when usin
 type: how-to
 page_title: Fixing Invalid License Watermark in Website Projects
 meta_title: Fixing Invalid License Watermark in Website Projects
-slug: resolving-invalid-license-watermark-telerik-reporting
-tags: licensing, reporting, license-key, watermark, telerik-reporting
+slug: aspnet-webforms-website-resolving-invalid-license-watermark
+tags: licensing, reporting, license-key, watermark, aspnet, webforms, telerik-reporting
 res_type: kb
 ticketid: 1704846
 ---

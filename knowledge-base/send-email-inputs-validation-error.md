@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-When the HTML5 Report Viewer is rendered inside an HTML form, and a button in that form triggers a form submission, the browser throws a validation error:
+When the HTML5 Report Viewer, or one of its wrappers, is rendered inside an HTML form, and a button in that form triggers a form submission, the browser throws a validation error:
 
 ````
 An invalid form control with name='from' is not focusable. 
@@ -44,19 +44,16 @@ The HTML5-based report viewers include input fields for the "Send Email" dialog 
 
 A potential solution is to place the viewer outside of the form element if your application structure allows it. However, if this is not feasible, the workaround is to use a custom HTML template that excludes the "Send Email" input elements from the viewer's HTML output. Follow these steps:
 
-1. Locate the default template: Inspect the Network tab in your browser's developer tools. When the report viewer loads, you will see a request for the default template file (typically named something like `telerikReportViewerTemplate-x.x.x.x.html`).
-
-2. Copy the template locally: Copy the content of the default template response and save it as an HTML file in your project (for example, `custom-report-viewer-template.html`).
-
-3. Remove the Send Email dialog: In your local template file, locate and remove the `div` element with the `trv-send-email-dialog` class. This element contains all the problematic input fields related to the "Send Email" functionality.
-
-4. Configure the viewer to use your custom template: Pass the path to your custom template through the `TemplateUrl` option (or `templateUrl` in camelCase depending on the viewer) when initializing the viewer.
+1. Locate the default template: Open the **Telerik Reporting installation directory** -> **Html5** -> **ReportViewer** -> **templates**. For example, the absolute path may look like this - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\templates`.
+1. Copy the template locally: Copy the content of the default template response and save it as an HTML file in your project (for example, `custom-report-viewer-template.html`).
+1. Remove the Send Email dialog: In your local template file, locate and remove the `div` element with the `trv-send-email-dialog` class. This element contains all the problematic input fields related to the "Send Email" functionality.
+1. Configure the viewer to use your custom template: Pass the path to your custom template through the `TemplateUrl` option (or `templateUrl` in camelCase depending on the viewer) when initializing the viewer.
 
 ### Examples
 
-* For HTML5 ASP.NET WebForms report viewer
+* HTML5 ASP.NET WebForms Report Viewer
 
-````C#
+````HTML
 <telerik:ReportViewer
     ID="reportViewer1"
     ServiceUrl="api/reports"
@@ -70,7 +67,7 @@ A potential solution is to place the viewer outside of the form element if your 
 ````
 
 
-* For HTML5 report viewer
+* HTML5 Report Viewer
 
 ````HTML
 <div id="reportViewer1"></div>

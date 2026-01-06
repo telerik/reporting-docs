@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called every time 
 
 ## Example
 
-    ````XML
+````XML
 <!-- Example demonstrating the use of the UpdateUi property in <telerik:ReportViewer>
 The UpdateUi property specifies the JavaScript function to call on UI updates. -->
 
@@ -43,5 +43,4 @@ The UpdateUi property specifies the JavaScript function to call on UI updates. -
 </body>
 </html>
 ````
-
 

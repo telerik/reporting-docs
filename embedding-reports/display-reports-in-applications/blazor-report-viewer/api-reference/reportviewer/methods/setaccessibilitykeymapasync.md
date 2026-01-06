@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikrepor
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetKeyMap">Set Accessibility Key Map</button>
 

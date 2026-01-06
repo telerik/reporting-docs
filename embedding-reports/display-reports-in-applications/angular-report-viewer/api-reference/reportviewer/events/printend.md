@@ -13,19 +13,17 @@ Callback function executed when the print document (PDF) is ready for download, 
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [printEnd]="printEnd">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 printEnd(e: any, args: any) {
   console.log('Print has ended:', args);
 }
 ````
-
 
 ## Event Binding
 

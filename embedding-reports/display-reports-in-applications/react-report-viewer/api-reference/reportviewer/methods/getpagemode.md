@@ -30,6 +30,6 @@ Gets the current page mode of the viewer.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get current page modeconst pageMode = reportViewerRef.current.getPageMode();console.log("Current page mode:", pageMode);
 ````

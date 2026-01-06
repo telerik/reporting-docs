@@ -37,11 +37,10 @@ Unbinds an event handler from the specified event.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Unbind specific handlerreportViewerRef.current.unbind("error", myErrorHandler);
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Unbind all handlers for an eventreportViewerRef.current.unbind("pageReady");
 ````

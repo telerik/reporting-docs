@@ -13,19 +13,17 @@ Callback function executed after the report is exported and before the email mes
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [sendEmailEnd]="sendEmailEnd">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 sendEmailEnd(e: any, args: any) {
   console.log('Send email has ended:', args);
 }
 ````
-
 
 ## Event Binding
 

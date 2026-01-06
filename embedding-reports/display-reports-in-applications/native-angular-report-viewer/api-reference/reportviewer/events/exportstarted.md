@@ -13,17 +13,15 @@ Event emitted when an export operation is triggered. Fired at the start of any r
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (exportStarted)="exportStarted($event)">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 exportStarted(exportStartedEventArgs: ExportStartedEventArgs) {
  console.log("This event will be emitted when an export operation is triggered.", exportStartedEventArgs);
 };
 ````
-
 

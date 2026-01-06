@@ -13,10 +13,9 @@ Called before printing the report. Receives two parameters: `e` (the event objec
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Print begin handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  printBegin={(e, args) => {    console.log("About to print the report.");  }}/>
 ````
-
 
 ## Event Binding
 

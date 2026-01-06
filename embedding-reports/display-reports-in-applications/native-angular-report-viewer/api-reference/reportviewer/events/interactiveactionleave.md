@@ -13,18 +13,16 @@ Event emitted when the cursor leaves the interactive action area. Provides an ob
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (interactiveActionLeave)="interactiveActionLeave($event)">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 interactiveActionLeave(interactiveActionArgs: PageActionEventArgs) {
  console.log("The interactive action arguments.", interactiveActionArgs);
  console.log("This event will be emitted when the cursor leaves the interactive action area.");
 };
 ````
-
 

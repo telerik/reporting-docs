@@ -36,7 +36,7 @@ Sets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetScaleMode">Set Scale Mode to Fit Page Width</button>
 

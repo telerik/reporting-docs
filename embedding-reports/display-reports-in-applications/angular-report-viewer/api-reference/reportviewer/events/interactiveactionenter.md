@@ -13,19 +13,17 @@ Callback function executed when the mouse cursor enters the area of an interacti
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [interactiveActionEnter]="interactiveActionEnter">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 interactiveActionEnter(e: any, args: any) {
   console.log('Hovering over interactive action area:', args);
 }
 ````
-
 
 ## Event Binding
 

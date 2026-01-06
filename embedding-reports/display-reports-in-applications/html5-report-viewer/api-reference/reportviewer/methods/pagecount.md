@@ -30,6 +30,6 @@ Gets the total page count of the viewer’s currently displayed report.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get the total number of pages in the current reportvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var totalPages = viewer.pageCount();
 ````

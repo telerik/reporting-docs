@@ -13,10 +13,9 @@ Called after rendering the report. Receives two parameters: `e` (the jQuery.Even
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  renderingEnd: function(e, args) {    // This event handler will be called after rendering the report.    // 'e.data.sender' is the report viewer instance.    // 'args.documentReady' is true if the report is ready.    // 'args.pageCount' is the number of pages.    // 'args.documentMapAvailable' is true if document map is available.    // 'args.bookmarkNodes' is an array of bookmark nodes.    console.log("The rendered report is " + (args.documentReady ? "" : "not ") + "ready.");    console.log("The rendered report has " + args.pageCount + " pages.");    console.log("The rendered report " + (args.documentMapAvailable ? "has" : "does not have") + " document map.");    console.log("The rendered report has " + args.bookmarkNodes.length + " nodes");  }});
 ````
-
 
 ## Event Binding
 

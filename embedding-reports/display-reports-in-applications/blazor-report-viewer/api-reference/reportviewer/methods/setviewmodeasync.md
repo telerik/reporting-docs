@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetViewMode">Set View Mode to Print Preview</button>
 

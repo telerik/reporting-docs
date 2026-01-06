@@ -13,17 +13,15 @@ Event emitted after the viewer finishes exporting the report. Triggered when an 
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (exportDocumentReady)="exportDocumentReady($event)">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 exportDocumentReady(exportDocumentReadyEventArgs: ExportDocumentReadyEventArgs) {
  console.log("This event will be emitted after the viewer finishes exporting the report.", exportDocumentReadyEventArgs);
 };
 ````
-
 

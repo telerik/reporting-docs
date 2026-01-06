@@ -36,16 +36,14 @@ Gets or sets the report source for the viewer. When called with an argument, set
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get the current report sourcevar viewer = $("#reportViewer1").data("telerik_ReportViewer");var currentSource = viewer.reportSource();
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Set a new report sourcevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.reportSource({  report: "MyReport",  parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }});
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Clear the report sourcevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.reportSource(null);
 ````

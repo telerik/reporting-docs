@@ -30,7 +30,7 @@ Gets the page number of the report page currently displayed in the viewer.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetCurrentPage">Get Current Page</button>
 <p>Current Page: @currentPage</p>

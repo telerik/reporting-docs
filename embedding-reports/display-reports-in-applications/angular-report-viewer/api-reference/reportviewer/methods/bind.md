@@ -37,7 +37,7 @@ Binds an event handler to a report viewer event.
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.bind('ready', () => {
   console.log('Report viewer is ready');
 });

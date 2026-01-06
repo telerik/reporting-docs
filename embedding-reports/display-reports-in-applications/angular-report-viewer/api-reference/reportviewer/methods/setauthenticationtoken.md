@@ -36,6 +36,6 @@ Sets the authentication token for REST service requests. The current ReportViewe
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.setAuthenticationToken("your-authentication-token");
 ````

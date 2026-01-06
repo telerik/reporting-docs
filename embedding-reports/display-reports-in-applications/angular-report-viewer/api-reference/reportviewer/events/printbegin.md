@@ -13,19 +13,17 @@ Callback function executed prior to starting the print report command. The event
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [printBegin]="printBegin">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 printBegin(e: any, args: any) {
   console.log('Print is about to begin:', args);
 }
 ````
-
 
 ## Event Binding
 

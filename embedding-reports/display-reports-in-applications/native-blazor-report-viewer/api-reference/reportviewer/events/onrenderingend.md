@@ -13,7 +13,7 @@ Occurs when the rendering of the report has ended. This event can be used to per
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer 
     OnRenderingEnd="@OnRenderingEnd">
 </ReportViewer>
@@ -24,5 +24,4 @@ Occurs when the rendering of the report has ended. This event can be used to per
     }
 }
 ````
-
 

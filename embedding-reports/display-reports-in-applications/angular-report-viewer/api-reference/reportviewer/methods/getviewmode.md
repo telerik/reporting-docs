@@ -30,6 +30,6 @@ Gets the current view mode. The current view mode string ("INTERACTIVE" or "PRIN
 
 ## Example
 
-    ````typescript
+````typescript
 console.log(viewer.getViewMode());
 ````

@@ -30,7 +30,7 @@ Gets the viewer's scale factor and scale mode. Object with scale and scaleMode p
 
 ## Example
 
-    ````typescript
+````typescript
 const scaleInfo = viewer.getScale();
 console.log(scaleInfo.scale); // e.g., 1.0
 console.log(scaleInfo.scaleMode); // e.g., "SPECIFIC"

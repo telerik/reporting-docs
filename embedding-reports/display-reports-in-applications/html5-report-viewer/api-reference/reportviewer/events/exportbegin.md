@@ -13,10 +13,9 @@ Called before exporting the report. Receives two parameters: `e` (the jQuery.Eve
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  exportBegin: function(e, args) {    // This event handler will be called before exporting the report.    // 'e.data.sender' is the report viewer instance.    // 'args.format' is the export format.    console.log("Exporting report in format: " + args.format);  }});
 ````
-
 
 ## Event Binding
 

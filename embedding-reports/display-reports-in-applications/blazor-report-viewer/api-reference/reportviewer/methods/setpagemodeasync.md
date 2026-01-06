@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetPageMode">Set Page Mode to Single Page</button>
 

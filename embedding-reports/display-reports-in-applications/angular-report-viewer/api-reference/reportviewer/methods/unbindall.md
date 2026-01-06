@@ -36,6 +36,6 @@ Unbinds all event handlers from a specific report viewer event.
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.unbindAll('ready');
 ````

@@ -13,10 +13,9 @@ Called after a page of the report is ready. Receives two parameters: `e` (the jQ
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  pageReady: function(e, args) {    // This event handler will be called after a page of the report is ready.    // 'e.data.sender' is the report viewer instance.    // 'args.pageContent' is the content of the rendered page.    console.log("The content of the page is: " + args.pageContent);  }});
 ````
-
 
 ## Event Binding
 

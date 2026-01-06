@@ -30,6 +30,6 @@ Returns an immutable array of name-value objects representing the current evalua
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get current report parametersconst parameters = reportViewerRef.current.getReportParameters();parameters.forEach(param => {  console.log(`Parameter ${param.name}: ${param.value}`);});
 ````

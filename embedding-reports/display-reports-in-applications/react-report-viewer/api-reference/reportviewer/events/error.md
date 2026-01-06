@@ -13,10 +13,9 @@ Called when an error occurs. Receives two parameters: `e` (the event object) and
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Error handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  error={(e, args) => {    console.log("The error message is: " + args);  }}/>
 ````
-
 
 ## Event Binding
 

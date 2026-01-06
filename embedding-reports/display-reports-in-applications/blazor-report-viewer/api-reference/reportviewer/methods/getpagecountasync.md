@@ -30,7 +30,7 @@ Gets the total page count of the report displayed in the viewer.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetPageCount">Get Page Count</button>
 <p>Page Count: @pageCount</p>

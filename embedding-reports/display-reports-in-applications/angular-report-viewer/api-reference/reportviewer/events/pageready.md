@@ -13,19 +13,17 @@ Callback function executed every time a page from the report is rendered and rea
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [pageReady]="pageReady">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 pageReady(e: any, args: any) {
   console.log('Page is ready:', args);
 }
 ````
-
 
 ## Event Binding
 

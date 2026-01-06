@@ -30,7 +30,7 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetParameters">Get Report Parameters</button>
 

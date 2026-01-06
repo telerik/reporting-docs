@@ -37,6 +37,6 @@ Unbinds an event handler from a viewer event.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Unbind all handlers from the 'error' eventvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.unbind(telerikReportViewer.Events.ERROR);
 ````

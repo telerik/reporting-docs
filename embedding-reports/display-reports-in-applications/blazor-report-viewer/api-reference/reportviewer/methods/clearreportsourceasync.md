@@ -30,7 +30,7 @@ Clears the current reportSource from the viewer internal state and from its pers
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="ClearSource">Clear Report Source</button>
 

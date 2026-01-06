@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
 
 ## Example
 
-    ````XML
+````XML
 <!--Example demonstrating how to set the InteractiveActionLeave property of ClientEvents in the Telerik HTML5 WebForms ReportViewer. -->
 
 <!DOCTYPE html>
@@ -44,5 +44,4 @@ Gets or sets the name of the JavaScript function that will be called when the mo
 </body>
 </html>
 ````
-
 

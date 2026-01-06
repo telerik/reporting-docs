@@ -30,6 +30,6 @@ Clears the current report source from the viewer's internal state and from its p
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.clearReportSource();
 ````

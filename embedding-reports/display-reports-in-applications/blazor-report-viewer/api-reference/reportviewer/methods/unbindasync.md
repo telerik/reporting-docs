@@ -37,7 +37,7 @@ Unbinds event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`](
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="UnbindEvent">Unbind Event Handler</button>
 

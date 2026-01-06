@@ -37,11 +37,10 @@ Binds an event handler to the specified event.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Bind to pageReady eventreportViewerRef.current.bind("pageReady", (e, args) => {  console.log("Page is ready!", args);});
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Bind to error eventreportViewerRef.current.bind("error", (e, args) => {  console.error("Report viewer error:", args);});
 ````

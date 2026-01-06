@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ## Example
 
-    ````XML
+````XML
 // Example demonstrating the usage of Telerik.ReportViewer.Html5.WebForms.ClientEvents.RenderingBegin property
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSharp.NetFramework.WebFormsIntegrationDemo.Default" %>
 
@@ -44,5 +44,4 @@ Gets or sets the name of the JavaScript function that will be called when the re
 </body>
 </html>
 ````
-
 

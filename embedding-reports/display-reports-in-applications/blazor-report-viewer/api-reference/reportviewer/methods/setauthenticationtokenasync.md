@@ -36,7 +36,7 @@ Sets the authentication token.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetToken">Set Authentication Token</button>
 

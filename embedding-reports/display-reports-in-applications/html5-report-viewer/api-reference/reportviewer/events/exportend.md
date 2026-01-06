@@ -13,10 +13,9 @@ Called after exporting the report. Receives two parameters: `e` (the jQuery.Even
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  exportEnd: function(e, args) {    // This event handler will be called after exporting the report.    // 'e.data.sender' is the report viewer instance.    // 'args.url' is the exported report resource URL.    args.windowOpenTarget = "_blank";    console.log("The exported report can be found at " + args.url);  }});
 ````
-
 
 ## Event Binding
 

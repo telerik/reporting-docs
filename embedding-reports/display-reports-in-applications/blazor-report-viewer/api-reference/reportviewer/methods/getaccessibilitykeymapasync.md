@@ -30,7 +30,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug tele
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetKeyMap">Get Accessibility Key Map</button>
 

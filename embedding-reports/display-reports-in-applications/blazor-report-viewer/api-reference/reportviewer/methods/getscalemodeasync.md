@@ -30,7 +30,7 @@ Gets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetScaleMode">Get Scale Mode</button>
 <p>Scale Mode: @scaleMode</p>

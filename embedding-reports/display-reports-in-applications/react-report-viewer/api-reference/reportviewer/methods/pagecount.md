@@ -30,6 +30,6 @@ Gets the total page count of viewer’s currently displayed report.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get total page countconst totalPages = reportViewerRef.current.pageCount();console.log("Total pages:", totalPages);
 ````

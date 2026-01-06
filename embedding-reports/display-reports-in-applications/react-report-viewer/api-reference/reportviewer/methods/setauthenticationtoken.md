@@ -36,6 +36,6 @@ Sets the authentication token.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Set authentication tokenreportViewerRef.current.setAuthenticationToken("YOUR_AUTH_TOKEN");
 ````

@@ -13,19 +13,17 @@ Callback function executed before an interactive action is executed, providing t
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [interactiveActionExecuting]="interactiveActionExecuting">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 interactiveActionExecuting(e: any, args: any) {
   console.log('Interactive action is executing:', args);
 }
 ````
-
 
 ## Event Binding
 

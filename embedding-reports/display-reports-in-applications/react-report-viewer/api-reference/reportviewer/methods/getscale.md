@@ -30,6 +30,6 @@ Gets the viewer’s scale factor and scale mode.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get current scale and scale modeconst scaleInfo = reportViewerRef.current.getScale();console.log("Scale:", scaleInfo.scale, "Scale mode:", scaleInfo.scaleMode);
 ````

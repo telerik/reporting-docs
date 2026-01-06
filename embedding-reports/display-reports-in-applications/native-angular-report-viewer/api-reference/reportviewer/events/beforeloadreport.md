@@ -13,17 +13,15 @@ Event emitted before the rendering of a report begins. Provides an opportunity t
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (beforeLoadReport)="beforeLoadReport()">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 beforeLoadReport() {
  console.log("This event will be emitted before the rendering of a report begins.");
 };
 ````
-
 

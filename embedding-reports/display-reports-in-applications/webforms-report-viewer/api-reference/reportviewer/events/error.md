@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called when an err
 
 ## Example
 
-    ````XML
+````XML
 <!--Example: Using ClientEvents Error with the ReportViewer-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -40,5 +40,4 @@ Gets or sets the name of the JavaScript function that will be called when an err
     }
 </script>
 ````
-
 

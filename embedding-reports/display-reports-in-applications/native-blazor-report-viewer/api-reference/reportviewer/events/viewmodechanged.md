@@ -13,7 +13,7 @@ Gets or sets a value for the callback that will be called when the value of View
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer
     ViewModeChanged="@OnViewModeChanged">
 </ReportViewer>
@@ -24,5 +24,4 @@ Gets or sets a value for the callback that will be called when the value of View
     }
 }
 ````
-
 

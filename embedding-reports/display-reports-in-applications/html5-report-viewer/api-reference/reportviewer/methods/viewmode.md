@@ -36,11 +36,10 @@ Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get the current view modevar viewer = $("#reportViewer1").data("telerik_ReportViewer");var mode = viewer.viewMode();
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Set the view mode to Print Previewvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.viewMode(telerikReportViewer.ViewModes.PRINT_PREVIEW);
 ````

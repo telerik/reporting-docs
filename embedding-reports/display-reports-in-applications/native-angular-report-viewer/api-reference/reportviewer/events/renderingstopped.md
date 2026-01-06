@@ -13,17 +13,15 @@ Event emitted when report rendering is stopped. Triggered when the user stops an
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (renderingStopped)="renderingStopped()">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 renderingStopped() {
  console.log("This event will be emitted when report rendering is cancelled.");
 };
 ````
-
 

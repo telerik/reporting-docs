@@ -30,7 +30,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetReportSource">Get Report Source</button>
 

@@ -13,7 +13,7 @@ Gets or sets a value for the callback that will be called when the value of Scal
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer 
     ScaleModeChanged="@OnScaleModeChanged">
 </ReportViewer>
@@ -24,5 +24,4 @@ Gets or sets a value for the callback that will be called when the value of Scal
     }
 }
 ````
-
 

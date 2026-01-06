@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ## Example
 
-    ````XML
+````XML
 <!-- Example demonstrating how to set the ClientEvents.Ready property to specify a JavaScript function -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -39,5 +39,4 @@ Gets or sets the name of the JavaScript function that will be called when the re
 </body>
 </html>
 ````
-
 

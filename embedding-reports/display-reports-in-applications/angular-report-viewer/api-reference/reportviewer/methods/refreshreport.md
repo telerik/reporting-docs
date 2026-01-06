@@ -30,6 +30,6 @@ Reloads/refreshes the current report. The current ReportViewer object
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.refreshReport();
 ````

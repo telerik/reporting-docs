@@ -36,7 +36,7 @@ Sets the report viewer's scale factor.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetScale">Set Scale to 150%</button>
 

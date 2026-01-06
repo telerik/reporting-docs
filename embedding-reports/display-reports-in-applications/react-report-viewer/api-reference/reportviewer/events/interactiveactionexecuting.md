@@ -13,10 +13,9 @@ Called before an interactive action executes, allowing cancellation. Receives tw
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Interactive action executing handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  interactiveActionExecuting={(e, args) => {    if (args.action.Type === "navigateToUrl") {      const url = args.action.Value.Url;      const target = args.action.Value.Target;    }  }}/>
 ````
-
 
 ## Event Binding
 

@@ -13,18 +13,16 @@ Event emitted when a report page is ready. Provides information about the render
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (pageReady)="pageReady($event)">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 pageReady(pageInfo: PageInfo) {
  console.log("The current page information such as the page number, the page content, etc.", pageInfo);
  console.log("This event will be emitted when the viewer content has been loaded from the template and is ready to display reports or perform any other operations on it.");
 };
 ````
-
 

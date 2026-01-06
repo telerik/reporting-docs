@@ -30,7 +30,7 @@ Gets the current report source (report and parameters). Object containing report
 
 ## Example
 
-    ````typescript
+````typescript
 const source = viewer.getReportSource();
 console.log(source.report); // Report identifier
 console.log(source.parameters); // Report parameters

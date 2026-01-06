@@ -36,7 +36,7 @@ Sets the scale factor and scale mode. The current ReportViewer object
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.setScale({
   scale: 1.5,
   scaleMode: 'SPECIFIC'

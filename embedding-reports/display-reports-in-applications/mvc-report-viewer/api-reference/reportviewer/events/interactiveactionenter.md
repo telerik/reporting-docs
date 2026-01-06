@@ -13,7 +13,7 @@ Attaches an event handler that will be called when the mouse cursor enters the a
 
 ## Example
 
-    ````C#
+````C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -42,5 +42,4 @@ Attaches an event handler that will be called when the mouse cursor enters the a
     </script>
 }
 ````
-
 

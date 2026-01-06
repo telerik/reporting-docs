@@ -30,6 +30,6 @@ Gets the current ReportSource - report and parameters.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get current report sourceconst reportSource = reportViewerRef.current.getReportSource();console.log("Current report:", reportSource.report);console.log("Current parameters:", reportSource.parameters);
 ````

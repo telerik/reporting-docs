@@ -30,6 +30,6 @@ Stops sending keep alive requests to the server and performs cleanup. Called aut
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.dispose();
 ````

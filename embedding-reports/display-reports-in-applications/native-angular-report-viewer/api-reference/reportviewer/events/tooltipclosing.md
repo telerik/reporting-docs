@@ -13,18 +13,16 @@ Event emitted when a tooltip is closed. Provides an object containing informatio
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (toolTipClosing)="toolTipClosing($event)">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 toolTipClosing(tooltipEventArgs: TooltipEventArgs) {
  console.log("The tooltip arguments.", tooltipEventArgs);
  console.log("This event will be emitted when a tooltip is closed.");
 };
 ````
-
 

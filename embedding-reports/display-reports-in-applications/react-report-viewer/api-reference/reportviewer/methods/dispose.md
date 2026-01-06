@@ -30,6 +30,6 @@ Stops sending keep alive requests to the server, if keep client alive was enable
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Manually dispose the viewerreportViewerRef.current.dispose();
 ````

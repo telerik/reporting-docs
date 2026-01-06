@@ -13,10 +13,9 @@ Called after exporting the report. Receives two parameters: `e` (the event objec
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Export end handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  exportEnd={(e, args) => {    args.windowOpenTarget = "_blank";    console.log("The exported report can be found at " + args.url);  }}/>
 ````
-
 
 ## Event Binding
 

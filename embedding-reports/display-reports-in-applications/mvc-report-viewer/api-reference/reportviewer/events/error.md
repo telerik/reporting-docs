@@ -13,7 +13,7 @@ Attaches an event handler that will be called when an error occurs. The error ev
 
 ## Example
 
-    ````C#
+````C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example of using the Error method to handle report viewer errors *@
@@ -30,5 +30,4 @@ Attaches an event handler that will be called when an error occurs. The error ev
     }
 </script>
 ````
-
 

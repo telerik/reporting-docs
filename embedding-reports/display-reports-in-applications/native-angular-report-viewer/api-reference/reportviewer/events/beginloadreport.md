@@ -13,17 +13,15 @@ Event emitted after the rendering of a report begins. Indicates that the report 
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (beginLoadReport)="beginLoadReport()">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 beginLoadReport() {
  console.log("This event will be emitted after the rendering of a report begins.");
 };
 ````
-
 

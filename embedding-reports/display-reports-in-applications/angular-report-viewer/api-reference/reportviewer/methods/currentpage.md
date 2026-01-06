@@ -30,7 +30,7 @@ Gets the viewer's current page that is displayed. The current page number
 
 ## Example
 
-    ````typescript
+````typescript
 const currentPageNum = viewer.currentPage();
 console.log(`Current page: ${currentPageNum}`);
 ````

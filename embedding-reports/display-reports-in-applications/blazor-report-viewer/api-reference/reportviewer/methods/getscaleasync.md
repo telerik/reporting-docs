@@ -30,7 +30,7 @@ Gets the report viewer's scale factor.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetScale">Get Scale</button>
 <p>Scale: @scale</p>

@@ -13,19 +13,17 @@ Callback function executed when a tooltip is being opened. The event handler rec
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [viewerToolTipOpening]="viewerToolTipOpening">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 viewerToolTipOpening(e: any, args: any) {
   console.log('Opening tooltip:', args);
 }
 ````
-
 
 ## Event Binding
 

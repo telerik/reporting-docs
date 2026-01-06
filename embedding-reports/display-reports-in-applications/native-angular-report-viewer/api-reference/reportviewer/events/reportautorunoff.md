@@ -13,18 +13,16 @@ Event emitted when report auto-run is disabled. Triggered when the report requir
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (reportAutoRunOff)="reportAutoRunOff()">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 reportAutoRunOff() {
  console.log("This event can be emitted once the report parameters are loaded.");
  console.log("This event is emitted if and only if the report's AutoRun setting is set to false.");
 };
 ````
-
 

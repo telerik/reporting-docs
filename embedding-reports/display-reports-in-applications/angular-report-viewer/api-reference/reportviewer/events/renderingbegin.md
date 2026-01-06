@@ -13,14 +13,13 @@ Callback function executed when the rendering of the report begins. The event ha
 
 ## Example
 
-    ````html
+````html
 <tr-viewer
   [renderingBegin]="renderingBegin">
 </tr-viewer>
 ````
 
-
-    ````typescript
+````typescript
 renderingBegin(e: any, args: any) {
   // The deviceInfo property can be used to pass a specific culture to the REST Service so it renders the report with it.
   const culture = "yourCulture";
@@ -29,7 +28,6 @@ renderingBegin(e: any, args: any) {
   console.log('Rendering has begun:', args);
 }
 ````
-
 
 ## Event Binding
 

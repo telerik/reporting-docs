@@ -13,7 +13,7 @@ Attaches an event handler that will be called prior to starting the report expor
 
 ## Example
 
-    ````C#
+````C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -40,5 +40,4 @@ Attaches an event handler that will be called prior to starting the report expor
     </script>
 }
 ````
-
 

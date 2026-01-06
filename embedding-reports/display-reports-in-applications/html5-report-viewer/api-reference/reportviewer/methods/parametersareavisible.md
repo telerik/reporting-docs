@@ -36,11 +36,10 @@ Shows or hides the parameters area in the viewer UI.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Show the parameters areavar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.parametersAreaVisible(true);
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Hide the parameters areavar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.parametersAreaVisible(false);
 ````

@@ -30,7 +30,7 @@ Returns an immutable array of name-value objects representing the current evalua
 
 ## Example
 
-    ````typescript
+````typescript
 const params = viewer.getReportParameters();
 params.forEach(param => {
   console.log(`${param.name}: ${param.value}`);

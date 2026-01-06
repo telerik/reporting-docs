@@ -13,17 +13,15 @@ Event emitted when an interactive action is being executed. Triggered for action
 
 ## Example
 
-    ````html
+````html
 <reporting-angular-viewer
  (interactiveActionExecuting)="interactiveActionExecuting($event)">
 </reporting-angular-viewer>
 ````
 
-
-    ````typescript
+````typescript
 interactiveActionExecuting(pageActionEventArgs: PageActionEventArgs) {
  console.log("This event will be emitted before an interactive action is executed.");
 };
 ````
-
 

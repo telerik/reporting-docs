@@ -36,6 +36,6 @@ Unbinds all event handlers from the specified event.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Unbind all error handlersreportViewerRef.current.unbindAll("error");
 ````

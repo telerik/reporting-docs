@@ -44,7 +44,7 @@ The keys in the key map are:
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.setAccessibilityKeyMap({
   CONFIRM_KEY: 13,
   MENU_AREA_KEY: 77,

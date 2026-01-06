@@ -30,7 +30,7 @@ Retrieves the report parameters for the currently loaded report.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer 
     @ref="reportViewer">
 </ReportViewer>

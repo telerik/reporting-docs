@@ -37,11 +37,10 @@ Binds event handlers to the specified event.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Bind to the 'pageReady' eventvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.bind(telerikReportViewer.Events.PAGE_READY, function(e, args) {  console.log("Page is ready!", args);});
 ````
 
-
-    ````JavaScript
+````JavaScript
 // Bind to the 'error' eventvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.bind(telerikReportViewer.Events.ERROR, function(e, args) {  alert("An error occurred: " + args);});
 ````

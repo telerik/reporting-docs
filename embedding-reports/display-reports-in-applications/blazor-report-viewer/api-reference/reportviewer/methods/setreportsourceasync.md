@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetReportSource">Set New Report Source</button>
 

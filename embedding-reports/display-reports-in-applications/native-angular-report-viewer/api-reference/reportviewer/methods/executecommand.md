@@ -59,6 +59,6 @@ Available commands:
 
 ## Example
 
-    ````typescript
+````typescript
 this.viewer.executeCommand('exportReport', 'pdf'); // Export the report as PDF
 ````

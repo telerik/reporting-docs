@@ -30,6 +30,6 @@ Gets the current view mode.
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Get current view modeconst viewMode = reportViewerRef.current.getViewMode();console.log("Current view mode:", viewMode);
 ````

@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
 
 ## Example
 
-    ````XML
+````XML
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -40,5 +40,4 @@ Gets or sets the name of the JavaScript function that will be called prior to st
 </body>
 </html>
 ````
-
 

@@ -30,7 +30,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreportin
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetViewMode">Get View Mode</button>
 <p>View Mode: @viewMode</p>

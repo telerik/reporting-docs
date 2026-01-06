@@ -36,7 +36,7 @@ Sets the report source (report and parameters). Automatically reloads the report
 
 ## Example
 
-    ````typescript
+````typescript
 viewer.setReportSource({
   report: 'NewReport.trdp',
   parameters: { param1: 'value1' }

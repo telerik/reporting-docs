@@ -30,7 +30,7 @@ Reloads/refreshes the current report.
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="RefreshReport">Refresh Report</button>
 

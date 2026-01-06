@@ -13,10 +13,9 @@ Called before the report is exported and the E-mail message is sent. Receives tw
 
 ## Example
 
-    ````JavaScript
+````JavaScript
 // Send email begin handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  sendEmailBegin={(e, args) => {    console.log("About to export and send report in format: " + args.format);  }}/>
 ````
-
 
 ## Event Binding
 

@@ -37,7 +37,7 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="BindEvent">Bind Event Handler</button>
 

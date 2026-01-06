@@ -13,7 +13,7 @@ Occurs when the report rendering process begins, allowing for custom actions or 
 
 ## Example
 
-    ````C#
+````C#
 <ReportViewer
     OnRenderingBegin="@OnRenderingBegin">
 </ReportViewer>
@@ -24,5 +24,4 @@ Occurs when the report rendering process begins, allowing for custom actions or 
     }
 }
 ````
-
 

@@ -1,6 +1,6 @@
 ---
-title: Creating Organization Hierarchy
-page_title: Creating Organization Hierarchy
+title: Creating Recursive Org Hierarchy 
+page_title: Creating Recursive Org Hierarchy 
 description: Learn how to use SubReports in the Web Report Designer to create organization self-reference hierarchy.
 slug: wrd-user-guide-create-org-hierarchy-with-subreport
 tags: web, report, design, components, subreport, hierarchy, master, detail, self, reference, org
@@ -9,7 +9,7 @@ reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 3
 ---
 
-# Creating Organization Hierarchy with SubReports
+# Creating Recursive Org Hierarchy with SubReports
 
 An organizational hierarchy represents roles, responsibilities, and authority within an organization in a structured way. It represents both the chain of command (who reports to whom) and the mechanism by which decisions flow through the different organizational levels.
 
@@ -26,7 +26,7 @@ CEO
  │    │    ├── Accountants
 </pre>
 
-The approach demonstrated here uses a recursive [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) to construct an hierarchy from flat data. The main report references itself in a SubReport item, and each SubReport filters its data using a report parameter passed from its parent. This process continues recursively, building the hierarchy until no more child items remain:
+The approach demonstrated here uses a recursive [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) to construct a hierarchy from flat data. The main report references itself in a SubReport item, and each SubReport filters its data using a report parameter passed from its parent. This process continues recursively, building the hierarchy until no more child items remain:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pzGIhgwfwZk?si=Cl3zj-v9Cuy4DJDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -36,7 +36,7 @@ To create the Organizational Hierarchy, follow the steps:
 
 1. Delete the Header and Footer. Leave only the [Detail Section]({%slug user-guide/components/report-sections%}).
 
-1. Create a [CSV data source]({%slug web-report-designer-user-guide-components-data-sources%}#csv-data-source) item using the self-referencing flat data for the employees:
+1. Create a [CSV data source]({%slug web-report-designer-user-guide-components-data-sources%}#csv-data-source) item using the self-referencing flat data for the employees. Every data record contains own EmployeeID and the ID of the manager this person reports to, forming the chain-of-command up to the company CEO:
 
     ```CSV
     EmployeeID,Name,JobTitle,ManagerID,Department,Location
@@ -93,7 +93,7 @@ To create the Organizational Hierarchy, follow the steps:
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-uri-report-source.png" alt="Org Hierarchy Uri Report Source" caption="Org Hierarchy Uri Report Source" />  
 
-1. Create a parameter (`reportParameterManagerID`) whose value is bound to the `EmloyeeID`. Thus, the current `EmployeeID` will be passed as a value for the `ManagerID` for the SubReport.
+1. Create a parameter (`reportParameterManagerID`) whose value is bound to the `EmployeeID`. Thus, the current `EmployeeID` will be passed as a value for the `ManagerID` for the SubReport.
 
     <img style="border: 1px solid gray;" src="images/org-hierarchy-inner-report-parameter.png" alt="Org Hierarchy Inner Report Parameter" caption="Org Hierarchy Inner Report Parameter" />   
 

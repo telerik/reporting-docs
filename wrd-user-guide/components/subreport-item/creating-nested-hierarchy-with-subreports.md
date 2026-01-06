@@ -11,7 +11,7 @@ position: 2
 
 # Creating Nested Hierarchy with SubReports
 
-Using a **DataSource** in the [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reducing parameter code.
+Using a **DataSource** in the [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reduces using parameters for building the hierarchical structure. This approach of implementing a master-detail report scenario does not use different data sources in both reports, as demonstrated in the [Creating Master-Detail Reports]({%slug web-report-designer-user-guide-creating-master-detail-report%}) article. 
 
 The main benefits of this approach are:
 

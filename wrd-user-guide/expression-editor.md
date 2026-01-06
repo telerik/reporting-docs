@@ -5,7 +5,7 @@ description: "Learn more about the Expression editor in Web Report Designer, whe
 slug: expression-editor-web-report-designer-user-guide
 tags: expression,editor,web,report,designer,design,create,report,web
 published: True
-reporting_area: WRDHTML5, WRDBlazorWrapper
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 100
 ---
 <style>
@@ -45,7 +45,7 @@ By using the predefined expression components in the Web Report Designers, you c
 >" + Fields.SecondLine
 >````
 >
->The result will be the values of the two fiedls being displayed one above the other in the corresponding report item.
+>The result will be the values of the two fields being displayed one above the other in the corresponding report item.
 
 ## See Also
 

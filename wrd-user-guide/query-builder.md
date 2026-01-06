@@ -32,7 +32,7 @@ The graphical query builder helps you find information in a database without wri
 The graphical Query Builder in the Web Report Designer has the following advantages:
 
 * __Intuitive Query Creation__&mdash;The graphical interface lets you create SQL queries by clicking and selecting options instead of writing code. This makes it simple to use and helps avoid mistakes.
-* __Faster Development__&mdash;You can create even complicated queries easily by dragging and dropping items. The system will automatically create the necessary JOIN relationships between related tables, so you don’t need to set them up manually
+* __Faster Development__&mdash;You can create even complicated queries easily with a few steps. The user interface also allows you to create the necessary JOIN relationships between related tables in an intuitive manner. 
 * __Immediate Result Preview__&mdash;The Query Builder lets you see the results of your query before you add them to the report. This helps you make sure everything looks correct and saves time.
 
 ## Building Your First Query
@@ -80,7 +80,7 @@ To create a query using the Query Builder in the Web Report Designer:
 
 ## Query Builder Sections
 
-The following sections describe the function of each area
+The following sections describe the function of each area:
 
 | Name | Description |
 | ------ | ------ |
@@ -120,7 +120,7 @@ The Relationships pane shows how the selected tables are linked together, using 
 
 ![Image of the Relationship Pane ><](images/wrd-query-builder-relationship-pane.png)
 
-The following option is available:
+The following options are available:
 
 * __Add new relationship__ Opens the relationship editor, which lets you set up connections between tables or views. These relationships tell the system how to combine data. When using multiple relationships in a query, each new table must be related to one that is already included.
 

@@ -1,7 +1,7 @@
 ---
 title: Creating Reusable Headers and Footers
 page_title: Creating Reusable Headers and Footers
-description: Learn how to use SubReports in the Web Report Designer to create reusable header and footers.
+description: Learn how to use SubReports in the Web Report Designer to create reusable headers and footers.
 slug: creating-reusable-headers-and-footers
 tags: web, report, design, components, subreport, header, footer, reuse
 published: True
@@ -23,7 +23,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Remove the default header and footer.
 
-1. Add elements like company logos and report titles in the Page Header section.
+1. Add elements like company logos and report titles in the Detail section.
 
 1. Preview and save this report as a standalone file. This will serve as your reusable header part of a bigger report.
 
@@ -33,7 +33,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Remove the default header and footer.
 
-1. Add elements like information text or any other meaningful content to the footer part of a report.
+1. Add elements like information text or any other meaningful content to the Detail section of a report.
 
 1. Preview and save this report as a standalone file. This will serve as your reusable footer part of a bigger report.
 
@@ -55,7 +55,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. For the **Uri** field, select the `FooterReport.trdp`.
 
-
+Thus, you can create separate reports that serve as stanalone report parts and can be reused in multiple reports according to the specific requirements. 
 
 ## See Also
 

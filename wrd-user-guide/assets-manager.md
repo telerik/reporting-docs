@@ -50,7 +50,7 @@ Several default folders that help organizing shared resources for usage across m
 
 The main root folder contains three predefined subfolders: 
 
-* `Data`&mdash;Stores data files like `.csv`, `.json`, and shapefiles used in Map items)
+* `Data`&mdash;Stores data files like `.csv`, `.json`, and shapefiles used in Map items.
 
 * `Images`&mdash;Contains image files used in PictureBox items, backgrounds, logos, and so on.
 
@@ -60,11 +60,11 @@ You can create subfolders within these categories to better organize their asset
 
 ## Reports
 
-The `Reports` folder is a dedicated folder for storing report definitions, which includes all available reports on the server. It is possible to organize them into subfolders, grouping the reports by category, department, or purpose. Shared reports that can be reused as SubReports in other designs.
+The `Reports` folder is a dedicated folder for storing report definitions, which includes all available reports on the server. It is possible to organize them into subfolders, grouping the reports by category, department, or purpose. Shared reports can be reused as SubReports in other designs.
 
 ## Shared Data Sources
 
-The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-guide%}) folder within the Assets Manager contains reusable data source definitions (.sdsx files) that can be shared across multiple reports. Each .sdsx file encapsulates the configuration for a data source, including: Connection strings, Queries or endpoints, Parameters, Metadata (e.g., name, description).
+The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-guide%}) folder within the Assets Manager contains reusable data source definitions (.sdsx files) that can be shared across multiple reports. Each .sdsx file encapsulates the configuration for a data source, including: connection strings, queries or endpoints, parameters, metadata (e.g., name, description).
 
 ## Report Templates
 
@@ -91,7 +91,7 @@ To help you manage your shared resources with ease and flexibility, the Assets M
 
      <img style="border: 1px solid gray;" src="images/wrd-assets-manager-recently-used.png" alt="Assets Manager Recently Used" />
 
-* **Organize Reports for Report Books**&mdash;If you are creating a Report Book, use the Assets Manager to select and organize individual reports into a cohesive, multi-report document.
+>note Some users might not see the Assets Manager menu item if they don't have such permissions (configured by the app developer).
 
 ## See Also
 

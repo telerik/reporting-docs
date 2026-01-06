@@ -5,6 +5,7 @@ description: Learn how to customize the visuals of your report using the fine-gr
 slug: wrd-stylesheet-formatting
 tags: web, report, design, customize, style, condition, formatting, properties, area 
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 3
 ---
 <style>
@@ -41,7 +42,7 @@ The following tutorial shows how to define a style rule in the report's style sh
 
 ## Using External Style Sheets
 
-External style sheets (XML files) allow you to reuse style rules across multiple reports. This type of style sheets are external to each report and this allows you to reference them from an arbitrary number of reports. Each style sheets file contains one or more style rules that define how report items must look.
+External style sheets (XML files) allow you to reuse style rules across multiple reports. This type of style sheet is external to each report and this allows you to reference them from an arbitrary number of reports. Each style sheets file contains one or more style rules that define how report items must look.
 
 You can apply styles based on:
 

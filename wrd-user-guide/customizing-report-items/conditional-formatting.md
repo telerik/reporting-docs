@@ -5,6 +5,7 @@ description: Learn how to apply conditional formatting in Telerik Web Report Des
 slug: wrd-conditional-formatting
 tags: web, report, design, customize, style, condition, formatting, properties, area 
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 1
 ---
 <style>
@@ -33,9 +34,7 @@ The quick video tutorial below shows how to apply conditional formatting to a Li
 
 ## Formatting Multiple Items 
 
-If you want to apply the same rule to the entire row with data, it requires you to apply rules **individually** to each item:
-
->tip To save time, you can group items inside a Panel and apply the conditional formatting to the panel itself. This way, all nested items inherit the style based on the condition. This approach is shown in the following video: 
+If you want to apply the same rule to the entire row with data, it requires you to apply rules **individually** to each item one by one. However, to save time, you can group items inside a Panel and apply the conditional formatting to the panel itself. This way, the Panel (and everything inside it) will be styled based on your condition. This approach is shown in the following video: 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rqkDyZl-CMY?si=HMyMJ49AucGHJst7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

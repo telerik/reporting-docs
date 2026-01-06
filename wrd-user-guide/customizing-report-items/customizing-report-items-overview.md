@@ -5,6 +5,7 @@ description: Learn how to customize the visuals of your report using the fine-gr
 slug: web-report-designer-customizing-report-items
 tags: web, report, design, customize, style, condition, formatting, properties, area 
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 0
 ---
 <style>
@@ -15,10 +16,16 @@ img[alt$="><"] {
 
 # Customizing Report Items: Overview
 
-Styling report items serves both, functional and aesthetic, purposes. Visual consistency (e.g., using a theme or style rules) improves user experience and brand alignment. It allows you to improve readability and clarity in your reports. Applying different colors or fonts distinguishes separate sections or highlight key information.
+Customization of report items involves changing their properties to achieve both functional and aesthetic goals. These changes can be applied in two ways:
+
+- Static customization: Properties are set once and remain unchanged throughout the report’s lifecycle.
+- Dynamic customization: Properties adjust based on data or variables, such as the current date or logged-in user (see [Expressions]({%slug expression-editor-web-report-designer-user-guide%})).
+
+The most important aspect of customization is styling. Styling report items ensures visual consistency (e.g., using themes or style rules), which improves readability, clarity, and brand alignment. Applying different colors, fonts, or layouts can distinguish sections and highlight key information, making reports more engaging and easier to interpret.
+
 To customize or style report items in the Telerik Web Report Designer, you can use its
 
-* [Confitional Formatting]({%slug wrd-conditional-formatting%}) option
+* [Conditional Formatting]({%slug wrd-conditional-formatting%}) options
 * Built-in CSS-like [styling model]({%slug wrd-stylesheet-formatting%})
 * Properties Area.
 
@@ -40,13 +47,13 @@ To facilitate the easier styling of your report, the Properties Panel offers sev
 * **Different Views**: Choose the layout that fits your style:
 
   * **Categorized view**: Groups properties by function (like Appearance, Layout, Data), making it easier to find what you need.
-  * **Alphabetical view**: Lists everything in order&mdash;perfect when you know exactly what you're looking for.
+  * **Alphabetical view**: Lists everything in alphbetical order&mdash;perfect when you know exactly what you're looking for.
 
 |Categorized|Alphabetical|
 |----|----|
 |![Properties Area Categorized View ><](images/wrd-properties-area-categorized-area.png) |![Properties Area Alphabetical View><](images/wrd-properties-area-alphabetical-view.png)|
 
-* **Indent Guides**: In case of nested properties Indent Line Guides help you see how settings are structured, so you can navigate complex items with confidence: 
+* **Indent Guides**: When showing nested properties Indent Line Guides help you see how settings are structured, so you can navigate complex items with confidence: 
 
 ![Indent Line Guides in Properties Area ><](images/wrd-properties-area-indent-line-guides.png)  
 

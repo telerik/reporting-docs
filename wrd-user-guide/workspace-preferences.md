@@ -5,6 +5,7 @@ description: The Workspace Preferences section is designed to let users customiz
 slug: web-report-designer-user-guide-workspace-preferences
 tags: web, report, design, workspace, settings, preferences 
 published: True
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 9
 ---
 
@@ -26,7 +27,7 @@ To open the **Preferences** panel:
 
 The Workspace Preferences are split into two categories:
 * [Snapping](#snapping)&mdash;this category lists the options related to the automatic alignment of objects on the design surface of the Web Report Designer.
-* [General](#general)&mdash;this category list options related to the behavior of the Web Report Designer.
+* [General](#general)&mdash;this category lists options related to the behavior of the Web Report Designer.
 
 ## Snapping
 
@@ -42,7 +43,9 @@ The `GENERAL` settings section provides options that control how the application
 
 * **Preserve open reports on exit**—Controls whether the designer remembers which reports were open when you closed the application and automatically restores them at the next launch.
 
-* **Collect non-personal usage data**—Controls whether to collect non-personal usage data. The data contains usage information about the software's screens and tools and is being used to improve its functionality.
+* **Collect non-personal usage data**—Determines whether non-personal usage data is collected. This data includes information about how the web designer's interface and tools are used and helps us improve its functionality. 
+
+>note Some users might not see the Workspace Preferences menu item if they don't have such permissions (configured by the app developer).
 
 ## See Also
 

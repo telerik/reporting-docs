@@ -61,7 +61,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
     4.1. Select each of the TextBoxes.
 
-    4.2. Bind the the **Value** property of the TextBoxes to the `ProductName` and `UnitPrice` fields respectively.
+    4.2. Bind the **Value** property of the TextBoxes to the `ProductName` and `UnitPrice` fields respectively.
 
     4.3. Use the **Expression** dialog to set the desired field.
 
@@ -69,7 +69,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
 1. Preview the report to verify that all Products are listed.
 
-1. Add an integer report parameter called `ProductCategoryID` which you will use to filter by product:
+1. Add an integer report parameter called `ProductCategoryID` that you will use to filter by product:
 
     ![Create Report Parameter ><](images/wrd-components-subreport-create-report-parameter.png)
 

@@ -86,7 +86,7 @@ Now you can set the **SeriesGropus** hierarchy of the Bar chart:
 1. Open the __SeriesGroups__ collection editor and click __Add__.
 1. Set the __Groupings__ to `=Fields.Category`.
 1. Set the __Sortings__ to `=Fields.Category`.
-1. Set the __Filter__ to `=Fields.Category ```<>``` Bikes`.
+1. Set the __Filter__ to `=Fields.Category <> Bikes`.
 1. Set the __Name__ to `seriesGroup1`.
 
 ### 3. Set the CategoryGroups Hierarchy

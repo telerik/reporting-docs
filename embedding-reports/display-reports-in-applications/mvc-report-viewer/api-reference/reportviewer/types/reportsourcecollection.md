@@ -9,7 +9,7 @@ reportingArea: MVCWrapper
 
 # The `ReportSourceCollection` type of the HTML5 ASP.NET MVC Report Viewer
 
-Represents a collection of  [`ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/methods/reportsource%}) objects.
+Represents a collection of  [`Telerik.Reporting.InstanceReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types/reportsource%}) objects.
 
 ## Properties
 

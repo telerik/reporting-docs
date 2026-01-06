@@ -1,7 +1,7 @@
 ---
 title: pageMode
 page_title: pageMode property
-description: "The page mode. See [PageModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/pagemodes%})."
+description: "The page mode. See [PageModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/pagemodes%})."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/pagemode
 published: True
 reportingArea: HTML5
@@ -9,7 +9,7 @@ reportingArea: HTML5
 
 # The `pageMode` option of the HTML5 Report Viewer
 
-The page mode. See [PageModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/pagemodes%}).
+The page mode. See [PageModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/pagemodes%}).
 
 ## Type
 

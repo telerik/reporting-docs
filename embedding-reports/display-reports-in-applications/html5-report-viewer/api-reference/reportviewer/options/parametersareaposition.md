@@ -1,7 +1,7 @@
 ---
 title: parametersAreaPosition
 page_title: parametersAreaPosition property
-description: "The position of the parameters area. See [ParametersAreaPositions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/parametersareapositions%})."
+description: "The position of the parameters area. See [ParametersAreaPositions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/parametersareapositions%})."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/parametersareaposition
 published: True
 reportingArea: HTML5
@@ -9,7 +9,7 @@ reportingArea: HTML5
 
 # The `parametersAreaPosition` option of the HTML5 Report Viewer
 
-The position of the parameters area. See [ParametersAreaPositions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/parametersareapositions%}).
+The position of the parameters area. See [ParametersAreaPositions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/parametersareapositions%}).
 
 ## Type
 

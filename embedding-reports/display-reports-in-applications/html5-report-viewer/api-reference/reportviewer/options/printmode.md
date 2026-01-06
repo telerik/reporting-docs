@@ -1,7 +1,7 @@
 ---
 title: printMode
 page_title: printMode property
-description: "The print mode. See [PrintModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/printmodes%})."
+description: "The print mode. See [PrintModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/printmodes%})."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/printmode
 published: True
 reportingArea: HTML5
@@ -9,7 +9,7 @@ reportingArea: HTML5
 
 # The `printMode` option of the HTML5 Report Viewer
 
-The print mode. See [PrintModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/printmodes%}).
+The print mode. See [PrintModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/printmodes%}).
 
 ## Type
 

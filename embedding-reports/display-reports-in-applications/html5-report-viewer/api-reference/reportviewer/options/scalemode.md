@@ -1,7 +1,7 @@
 ---
 title: scaleMode
 page_title: scaleMode property
-description: "The scale mode. See [ScaleModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/scalemodes%})."
+description: "The scale mode. See [ScaleModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/scalemodes%})."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/scalemode
 published: True
 reportingArea: HTML5
@@ -9,7 +9,7 @@ reportingArea: HTML5
 
 # The `scaleMode` option of the HTML5 Report Viewer
 
-The scale mode. See [ScaleModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/scalemodes%}).
+The scale mode. See [ScaleModes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/scalemodes%}).
 
 ## Type
 

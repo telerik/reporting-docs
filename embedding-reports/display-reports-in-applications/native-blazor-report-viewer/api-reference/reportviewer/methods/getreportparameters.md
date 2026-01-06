@@ -9,13 +9,28 @@ reportingArea: NativeBlazor
 position: 3
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetReportParameters` method of the Native Blazor Report Viewer
 
 Retrieves the report parameters for the currently loaded report.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer 
     @ref="reportViewer">
 </ReportViewer>
@@ -29,5 +44,3 @@ Retrieves the report parameters for the currently loaded report.
     }
 }
 ````
-
-

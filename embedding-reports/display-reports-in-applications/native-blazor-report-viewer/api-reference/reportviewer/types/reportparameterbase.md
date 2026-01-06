@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportParameterBase` type of the Native Blazor Report Viewer
 
 Represents the base class for all report parameter editors in the Telerik Reporting Blazor Native Report Viewer.

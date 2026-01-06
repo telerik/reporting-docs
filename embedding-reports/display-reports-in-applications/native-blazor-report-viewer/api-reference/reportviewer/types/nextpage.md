@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `NextPage` type of the Native Blazor Report Viewer
 
 Navigates to the next page in the report viewer.

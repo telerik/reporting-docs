@@ -13,9 +13,10 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the ev
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Update UI handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  updateUi={(e) => {    console.log("Viewer UI state changed.");  }}/>
 ````
+
 
 ## Event Binding
 

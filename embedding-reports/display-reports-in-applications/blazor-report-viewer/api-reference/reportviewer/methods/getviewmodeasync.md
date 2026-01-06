@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 11
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetViewModeAsync` method of the Blazor Report Viewer
 
 Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/viewmode%}).
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetViewMode">Get View Mode</button>
 <p>View Mode: @viewMode</p>
@@ -30,5 +45,3 @@ Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreportin
     }
 }
 ````
-
-

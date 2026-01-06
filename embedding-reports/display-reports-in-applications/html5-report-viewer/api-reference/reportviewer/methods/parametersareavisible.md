@@ -9,18 +9,38 @@ reportingArea: HTML5
 position: 10
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `parametersAreaVisible` method of the HTML5 Report Viewer
 
 Shows or hides the parameters area in the viewer UI.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| visible | `boolean` | No | True to show, false to hide the parameters area. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Show the parameters areavar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.parametersAreaVisible(true);
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Hide the parameters areavar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.parametersAreaVisible(false);
 ````
-
-

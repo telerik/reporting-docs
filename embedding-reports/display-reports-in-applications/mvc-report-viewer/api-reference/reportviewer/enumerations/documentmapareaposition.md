@@ -7,6 +7,21 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `DocumentMapAreaPosition` enumeration of the HTML5 ASP.NET MVC Report Viewer
 
 Specifies the positioning options for the Document Map Area within the MVC Report Viewer interface. Used to configure the placement of the document map navigation panel relative to the report content area. The Document Map Area provides hierarchical navigation through report bookmarks and sections.

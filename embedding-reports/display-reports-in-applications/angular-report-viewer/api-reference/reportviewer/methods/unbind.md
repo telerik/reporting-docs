@@ -9,14 +9,34 @@ reportingArea: AngularWrapper
 position: 14
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `unbind` method of the Angular Report Viewer
 
 Unbinds a specific event handler from a report viewer event.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| eventName | `string` | No | The name of the event to unbind from |
+| eventHandler | `Function` | No | The specific function to remove |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.unbind('ready', this.readyHandler);
 ````
-
-

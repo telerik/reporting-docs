@@ -13,9 +13,10 @@ Called after the report is exported and before the E-mail message is sent. Recei
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Send email end handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  sendEmailEnd={(e, args) => {    args.format = "XLS";    console.log("The exported report can be found at " + args.url);  }}/>
 ````
+
 
 ## Event Binding
 

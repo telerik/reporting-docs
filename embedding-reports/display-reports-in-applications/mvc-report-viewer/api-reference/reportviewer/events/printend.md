@@ -13,7 +13,7 @@ Attaches an event handler that will be called when the print document (Adobe PDF
 
 ## Example
 
-````C#
+    ````C#
 @using Telerik.ReportViewer.Mvc
 
 <!--
@@ -35,4 +35,5 @@ Attaches an event handler that will be called when the print document (Adobe PDF
     </script>
 }
 ````
+
 

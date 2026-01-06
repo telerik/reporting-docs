@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `SendEmail` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Provides configuration options for the send email functionality within the HTML5 WebForms ReportViewer. Used to configure email settings including enabled state, preselected rendering format, and default email addresses for report sharing via email. Contains email message configuration properties that enable users to send reports directly from the HTML5 viewer toolbar with customizable default values.

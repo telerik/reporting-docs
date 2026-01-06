@@ -13,15 +13,17 @@ Event emitted when the state of the viewer changes. This event is triggered duri
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (updateUI)="updateUI()">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 updateUI() {
  console.log("This event handler will be called when the state of the viewer changes.");
 };
 ````
+
 

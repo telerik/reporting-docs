@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `Refresh` type of the Native Blazor Report Viewer
 
 Refreshes the report viewer, reloading the current report and updating the displayed content.

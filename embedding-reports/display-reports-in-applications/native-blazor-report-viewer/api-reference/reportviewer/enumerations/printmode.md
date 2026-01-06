@@ -7,6 +7,21 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `PrintMode` enumeration of the Native Blazor Report Viewer
 
 Specifies the printing behavior of the report viewer.

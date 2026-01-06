@@ -9,17 +9,36 @@ reportingArea: AngularWrapper
 position: 3
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setReportSource` method of the Angular Report Viewer
 
 Sets the report source (report and parameters). Automatically reloads the report into the view. The current ReportViewer object
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| rs | `any` | No | Object with report and parameters properties |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.setReportSource({
   report: 'NewReport.trdp',
   parameters: { param1: 'value1' }
 });
 ````
-
-

@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportServer` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Provides a class for the report server data. Contains the URL to the report server instance, a valid username and password. Connecting to Telerik Report Server for .NET is not supported.

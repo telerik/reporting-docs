@@ -7,6 +7,17 @@ published: True
 reportingArea: React
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportSource` type of the React Report Viewer
 
 Configuration object that identifies the report to be displayed and provides initial parameter values.

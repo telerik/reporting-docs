@@ -13,16 +13,18 @@ Event emitted when a tooltip is opened. Provides an object containing informatio
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (toolTipOpening)="toolTipOpening($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 toolTipOpening(tooltipEventArgs: TooltipEventArgs) {
  console.log("The tooltip arguments.", tooltipEventArgs);
  console.log("This event will be emitted when a tooltip is opened.");
 };
 ````
+
 

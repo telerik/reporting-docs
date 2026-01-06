@@ -13,7 +13,7 @@ Attaches an event handler that will be called when a tooltip is being opened. Th
 
 ## Example
 
-````C#
+    ````C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -44,4 +44,5 @@ Attaches an event handler that will be called when a tooltip is being opened. Th
     </script>
 }
 ````
+
 

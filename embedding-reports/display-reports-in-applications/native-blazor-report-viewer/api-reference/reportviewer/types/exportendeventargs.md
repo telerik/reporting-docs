@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ExportEndEventArgs` type of the Native Blazor Report Viewer
 
 Provides data for the ExportEnd event in the Telerik Report Viewer.

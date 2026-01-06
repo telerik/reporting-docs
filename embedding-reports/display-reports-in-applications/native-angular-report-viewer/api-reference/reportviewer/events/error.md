@@ -15,10 +15,11 @@ Event emitted when an error occurs in the viewer. Provides error message details
 
 ## Example
 
-````typescript
+    ````typescript
 error(message: string) {
  console.log("The error message.", message);
  console.log("This event will be emitted when viewer encounters an error.");
 };
 ````
+
 

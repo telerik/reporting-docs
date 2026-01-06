@@ -9,14 +9,27 @@ reportingArea: React
 position: 16
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getPageMode` method of the React Report Viewer
 
 Gets the current page mode of the viewer.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get current page modeconst pageMode = reportViewerRef.current.getPageMode();console.log("Current page mode:", pageMode);
 ````
-
-

@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `DeferredScripts` type of the HTML5 ASP.NET MVC Report Viewer
 
 Represents a container for deferred JavaScript initialization statements for MVC Report Viewer components. Used to collect and render JavaScript initialization code at a specific location in the HTML document for optimal performance and loading behavior. Implements IHtmlString to enable direct rendering in MVC views and provides control over script tag generation for flexible script placement.

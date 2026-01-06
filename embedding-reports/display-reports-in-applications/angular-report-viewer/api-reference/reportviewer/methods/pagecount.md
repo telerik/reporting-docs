@@ -9,15 +9,28 @@ reportingArea: AngularWrapper
 position: 8
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `pageCount` method of the Angular Report Viewer
 
 Gets the total page count of the currently displayed report. The total number of pages
 
 ## Example
 
-````typescript
+    ````typescript
 const totalPages = viewer.pageCount();
 console.log(`Total pages: ${totalPages}`);
 ````
-
-

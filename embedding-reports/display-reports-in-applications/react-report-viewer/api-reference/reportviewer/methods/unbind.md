@@ -9,18 +9,39 @@ reportingArea: React
 position: 14
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `unbind` method of the React Report Viewer
 
 Unbinds an event handler from the specified event.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| eventName | `string` | No | The name of the event to unbind from. |
+| eventHandler | `function` | Yes | The handler function to remove. If omitted, all handlers are removed. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Unbind specific handlerreportViewerRef.current.unbind("error", myErrorHandler);
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Unbind all handlers for an eventreportViewerRef.current.unbind("pageReady");
 ````
-
-

@@ -9,14 +9,27 @@ reportingArea: AngularWrapper
 position: 16
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getPageMode` method of the Angular Report Viewer
 
 Gets the viewer's current page mode. The current page mode string ("SINGLE_PAGE" or "CONTINUOUS_SCROLL")
 
 ## Example
 
-````typescript
+    ````typescript
 viewer.getPageMode();
 ````
-
-

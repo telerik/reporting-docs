@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `DeferredScripts` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Represents a WebForms control that renders deferred JavaScript initialization scripts for HTML5 ReportViewer components. Used to collect and output JavaScript initialization code at a specific location in the HTML document for optimal performance and loading behavior. Provides a way to defer script execution until a controlled point in the page rendering process, improving page load performance by separating script registration from script execution.

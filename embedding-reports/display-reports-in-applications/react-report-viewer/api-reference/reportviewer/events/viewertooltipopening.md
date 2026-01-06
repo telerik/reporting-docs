@@ -13,9 +13,10 @@ Called before a tooltip is opened, allowing cancellation. Receives two parameter
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Viewer tooltip opening handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  viewerToolTipOpening={(e, args) => {    // Example: disable tooltip if title contains '2004'    args.cancel = (/2004/i.test(args.toolTip.title));  }}/>
 ````
+
 
 ## Event Binding
 

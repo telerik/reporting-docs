@@ -7,6 +7,21 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ScaleMode` enumeration of the HTML5 ASP.NET MVC Report Viewer
 
 Specifies the scale mode options for the MVC Report Viewer control to determine how reports are sized within the viewer area. Used to configure the automatic sizing behavior and zoom level management for optimal report display and readability. Controls the report sizing strategy to optimize readability and user experience based on viewer dimensions and content requirements.

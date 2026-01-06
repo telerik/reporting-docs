@@ -7,6 +7,17 @@ published: True
 reportingArea: React
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ParametersOptions` type of the React Report Viewer
 
 Defines options for configuring report parameter editors in the React Report Viewer.

@@ -9,14 +9,34 @@ reportingArea: HTML5
 position: 15
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `unbind` method of the HTML5 Report Viewer
 
 Unbinds an event handler from a viewer event.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| eventName | `string` | No | The name of the event to unbind from. |
+| eventHandler | `function` | Yes | The handler function to remove. If omitted, all handlers for the event are removed. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Unbind all handlers from the 'error' eventvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.unbind(telerikReportViewer.Events.ERROR);
 ````
-
-

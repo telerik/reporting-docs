@@ -9,17 +9,36 @@ reportingArea: AngularWrapper
 position: 7
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setScale` method of the Angular Report Viewer
 
 Sets the scale factor and scale mode. The current ReportViewer object
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| scale | `any` | No | Object with scale and scaleMode properties |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.setScale({
   scale: 1.5,
   scaleMode: 'SPECIFIC'
 });
 ````
-
-

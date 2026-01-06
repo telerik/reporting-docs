@@ -9,6 +9,21 @@ reportingArea: AngularWrapper
 position: 11
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getAccessibilityKeyMap` method of the Angular Report Viewer
 
 Gets the shortcut keys used when the report viewer is in accessible mode.
@@ -23,10 +38,8 @@ JSON object containing accessibility key mappings
 
 ## Example
 
-````typescript
+    ````typescript
 const keyMap = viewer.getAccessibilityKeyMap();
 console.log(keyMap.CONFIRM_KEY); // Default: 13 (Enter)
 console.log(keyMap.MENU_AREA_KEY); // Default: 77 ('m')
 ````
-
-

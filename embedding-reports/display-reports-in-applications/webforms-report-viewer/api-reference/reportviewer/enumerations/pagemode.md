@@ -7,6 +7,21 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `PageMode` enumeration of the HTML5 ASP.NET WebForms Report Viewer
 
 Specifies the page display mode options for the HTML5 WebForms ReportViewer control to determine how report pages are presented and navigated. Used to configure whether the viewer displays reports in continuous scrolling mode with progressive loading or single page mode for focused viewing. Controls the page rendering behavior and user navigation experience within the HTML5 report viewer interface.

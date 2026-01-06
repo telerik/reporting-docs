@@ -10,12 +10,18 @@ position: 0
 ---
 
 <style>
-table th:first-of-type {
-	width: 35%;
-}
-table th:nth-of-type(2) {
-	width: 65%;
-}
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
 </style>
 
 # Methods of the HTML5 Report Viewer

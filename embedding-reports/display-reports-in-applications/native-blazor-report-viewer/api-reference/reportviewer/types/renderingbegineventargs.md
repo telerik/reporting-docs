@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `RenderingBeginEventArgs` type of the Native Blazor Report Viewer
 
 Represents the event arguments for the RenderingBegin event in the Telerik Report Viewer.

@@ -9,14 +9,33 @@ reportingArea: React
 position: 12
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setAccessibilityKeyMap` method of the React Report Viewer
 
 Sets the shortcut keys used when the report viewer is in accessible mode. It is recommended to set the new key map when the report rendering is complete, because the accessibility routines require the report viewer template to be loaded.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| keyMap | `Object` | No | The key map object with keyboard shortcuts. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set custom accessibility key mapreportViewerRef.current.setAccessibilityKeyMap({  CONFIRM_KEY: 13,  MENU_AREA_KEY: 77,  CONTENT_AREA_KEY: 67,  PARAMETERS_AREA_KEY: 80,  DOCUMENT_MAP_AREA_KEY: 68});
 ````
-
-

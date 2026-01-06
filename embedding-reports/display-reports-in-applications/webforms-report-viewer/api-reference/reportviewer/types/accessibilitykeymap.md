@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `AccessibilityKeyMap` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Provides a class for the key mapping used when report viewer accessibility is enabled.

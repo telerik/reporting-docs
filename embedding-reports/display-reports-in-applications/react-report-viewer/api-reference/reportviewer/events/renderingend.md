@@ -13,9 +13,10 @@ Called after rendering the report. Receives two parameters: `e` (the event objec
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Rendering end handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  renderingEnd={(e, args) => {    console.log("The rendered report is " + (args.documentReady ? "" : "not ") + "ready.");    console.log("The rendered report has " + args.pageCount + " pages.");  }}/>
 ````
+
 
 ## Event Binding
 

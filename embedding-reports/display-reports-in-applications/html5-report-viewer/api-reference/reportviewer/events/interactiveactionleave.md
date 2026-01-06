@@ -13,9 +13,10 @@ Called when leaving an interactive action area.   Receives two parameters: `e` (
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  interactiveActionLeave: function(e, args) {    // args.action is an InteractiveAction object    if (args.action.Type === "toggleVisibility") {      // Custom logic for toggleVisibility action    }  }});
 ````
+
 
 ## Event Binding
 

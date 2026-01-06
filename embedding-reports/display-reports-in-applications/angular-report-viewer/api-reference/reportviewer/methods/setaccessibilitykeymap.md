@@ -9,6 +9,21 @@ reportingArea: AngularWrapper
 position: 12
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setAccessibilityKeyMap` method of the Angular Report Viewer
 
 Sets the shortcut keys used when the report viewer is in accessible mode.
@@ -21,14 +36,18 @@ The keys in the key map are:
 - PARAMETERS_AREA_KEY: Key to focus the parameters area, if visible (default: 80, 'p')
 - DOCUMENT_MAP_AREA_KEY: Key to focus the map area, if visible (default: 68, 'd')
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| keyMap | `any` | No | JSON object with key mappings |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.setAccessibilityKeyMap({
   CONFIRM_KEY: 13,
   MENU_AREA_KEY: 77,
   CONTENT_AREA_KEY: 67
 });
 ````
-
-

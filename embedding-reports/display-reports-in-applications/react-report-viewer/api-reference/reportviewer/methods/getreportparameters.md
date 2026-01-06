@@ -9,14 +9,27 @@ reportingArea: React
 position: 20
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getReportParameters` method of the React Report Viewer
 
 Returns an immutable array of name-value objects representing the current evaluated report parameters.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get current report parametersconst parameters = reportViewerRef.current.getReportParameters();parameters.forEach(param => {  console.log(`Parameter ${param.name}: ${param.value}`);});
 ````
-
-

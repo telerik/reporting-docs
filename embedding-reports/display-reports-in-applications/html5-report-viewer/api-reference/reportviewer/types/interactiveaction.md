@@ -7,6 +7,17 @@ published: True
 reportingArea: HTML5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `InteractiveAction` type of the HTML5 Report Viewer
 
 Describes an interactive action triggered by the user in the report viewer. The shape of the `Value` property depends on the action `Type`.

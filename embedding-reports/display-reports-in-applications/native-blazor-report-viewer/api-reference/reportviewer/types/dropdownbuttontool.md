@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `DropDownButtonTool` type of the Native Blazor Report Viewer
 
 Represents the built-in drop-down buttons from the report viewer's toolbar. This tool allows users to select options from a list, enhancing the interactivity of the report viewer.

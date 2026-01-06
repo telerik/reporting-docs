@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ParameterEditors` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Represents a configuration class that provides properties for initializing parameter editors of the HTML5 WebForms ReportViewer. Used to specify JavaScript function names that will handle different types of report parameters and create appropriate input controls in the HTML5 viewer interface. Enables customization of parameter editing experience by allowing assignment of specific JavaScript editors for different parameter types and scenarios.

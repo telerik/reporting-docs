@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `SendEmailDialogSettings` type of the Native Blazor Report Viewer
 
 Represents the settings for the Send Email dialog in the Telerik Reporting Native Blazor Report Viewer.

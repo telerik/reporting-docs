@@ -13,17 +13,19 @@ Callback function executed when the mouse cursor leaves the area of an interacti
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [interactiveActionLeave]="interactiveActionLeave">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 interactiveActionLeave(e: any, args: any) {
   console.log('Leaving interactive action area:', args);
 }
 ````
+
 
 ## Event Binding
 

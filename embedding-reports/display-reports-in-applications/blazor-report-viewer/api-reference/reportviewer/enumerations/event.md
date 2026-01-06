@@ -7,6 +7,21 @@ published: True
 reportingArea: BlazorWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `Event` enumeration of the Blazor Report Viewer
 
 Specifies the available built-in events that can be used with [`BindAsync`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/bindasync%}) and [`UnbindAsync`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/unbindasync%}).

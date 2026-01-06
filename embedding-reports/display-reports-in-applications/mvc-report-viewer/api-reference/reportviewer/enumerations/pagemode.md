@@ -7,6 +7,21 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `PageMode` enumeration of the HTML5 ASP.NET MVC Report Viewer
 
 Specifies the page display mode options for the MVC Report Viewer control. Used to configure how report pages are presented and navigated within the viewer interface. Controls the page rendering behavior and user navigation experience within the report viewer.

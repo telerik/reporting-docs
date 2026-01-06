@@ -7,6 +7,21 @@ published: True
 reportingArea: BlazorWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `DocumentMapAreaPosition` enumeration of the Blazor Report Viewer
 
 Specifies where the Document Map Area should be displayed.

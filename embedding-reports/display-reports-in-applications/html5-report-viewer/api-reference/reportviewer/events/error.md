@@ -13,9 +13,10 @@ Called when an error occurs. Receives two parameters: `e` (the jQuery.Event obje
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  error: function(e, args) {    // This event handler will be called when an error occurs.    // 'e.data.sender' is the report viewer instance.    console.log("The error message is: " + args);  }});
 ````
+
 
 ## Event Binding
 

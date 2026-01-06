@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 2
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ClearReportSourceAsync` method of the Blazor Report Viewer
 
 Clears the current reportSource from the viewer internal state and from its persisted session in the browser.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="ClearSource">Clear Report Source</button>
 
@@ -29,5 +44,3 @@ Clears the current reportSource from the viewer internal state and from its pers
     }
 }
 ````
-
-

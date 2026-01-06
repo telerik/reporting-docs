@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportViewer` type of the Native Blazor Report Viewer
 
 Represents the Telerik Reporting Native Blazor Report Viewer component that allows users to display and interact with reports in a web application.

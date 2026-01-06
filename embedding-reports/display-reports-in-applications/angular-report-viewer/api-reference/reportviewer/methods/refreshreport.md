@@ -9,14 +9,27 @@ reportingArea: AngularWrapper
 position: 1
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `refreshReport` method of the Angular Report Viewer
 
 Reloads/refreshes the current report. The current ReportViewer object
 
 ## Example
 
-````typescript
+    ````typescript
 viewer.refreshReport();
 ````
-
-

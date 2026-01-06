@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 12
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `RefreshReportAsync` method of the Blazor Report Viewer
 
 Reloads/refreshes the current report.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="RefreshReport">Refresh Report</button>
 
@@ -27,5 +42,3 @@ Reloads/refreshes the current report.
     }
 }
 ````
-
-

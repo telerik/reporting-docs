@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `Editors` type of the HTML5 ASP.NET MVC Report Viewer
 
 Provides configuration options for parameter editor types used in the MVC Report Viewer. Used to specify which input control types should be used for single-select and multi-select parameter scenarios. Controls the visual appearance and interaction behavior of parameter input controls based on parameter configuration.

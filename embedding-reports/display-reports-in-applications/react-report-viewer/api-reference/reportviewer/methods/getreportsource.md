@@ -9,14 +9,27 @@ reportingArea: React
 position: 2
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getReportSource` method of the React Report Viewer
 
 Gets the current ReportSource - report and parameters.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get current report sourceconst reportSource = reportViewerRef.current.getReportSource();console.log("Current report:", reportSource.report);console.log("Current parameters:", reportSource.parameters);
 ````
-
-

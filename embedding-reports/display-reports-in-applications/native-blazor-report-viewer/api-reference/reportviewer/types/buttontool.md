@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ButtonTool` type of the Native Blazor Report Viewer
 
 Represents the built-in buttons from the report viewer's toolbar. Allows users to interact with reports through buttons in the toolbar.

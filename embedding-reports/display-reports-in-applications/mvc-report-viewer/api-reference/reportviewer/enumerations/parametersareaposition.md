@@ -7,6 +7,21 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ParametersAreaPosition` enumeration of the HTML5 ASP.NET MVC Report Viewer
 
 Specifies the positioning options for the Parameters Area within the MVC Report Viewer interface. Used to configure the placement of the parameters panel relative to the report content area for optimal user experience and interface layout. Controls the visual placement of the parameters input panel to accommodate different screen sizes and layout preferences.

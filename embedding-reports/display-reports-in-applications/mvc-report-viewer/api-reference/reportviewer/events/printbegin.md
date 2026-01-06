@@ -13,7 +13,7 @@ Attaches an event handler that will be called prior to starting the print report
 
 ## Example
 
-````C#
+    ````C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -37,4 +37,5 @@ Attaches an event handler that will be called prior to starting the print report
     @(Html.TelerikReporting().DeferredScripts())
 }
 ````
+
 

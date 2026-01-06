@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `Parameters` type of the HTML5 ASP.NET MVC Report Viewer
 
 Provides configuration options for report parameters display and behavior within the MVC Report Viewer. Used to customize how parameter input controls are rendered and how users interact with report parameters. Contains editor configuration settings that control the appearance and functionality of parameter input controls.

@@ -9,17 +9,30 @@ reportingArea: AngularWrapper
 position: 20
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getReportParameters` method of the Angular Report Viewer
 
 Returns an immutable array of name-value objects representing the current evaluated report parameters. Array containing the name and value of each report parameter
 
 ## Example
 
-````typescript
+    ````typescript
 const params = viewer.getReportParameters();
 params.forEach(param => {
   console.log(`${param.name}: ${param.value}`);
 });
 ````
-
-

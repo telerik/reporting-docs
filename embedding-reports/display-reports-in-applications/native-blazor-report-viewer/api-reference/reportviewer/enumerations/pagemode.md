@@ -7,6 +7,21 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `PageMode` enumeration of the Native Blazor Report Viewer
 
 Sets if the report is displayed in Single page or Continuous scroll mode.

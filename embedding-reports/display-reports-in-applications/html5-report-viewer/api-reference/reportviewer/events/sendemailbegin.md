@@ -13,9 +13,10 @@ Called before the report is exported and the E-mail message is sent. Receives tw
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  sendEmailBegin: function(e, args) {    // This event handler will be called before exporting the report and sending the E-mail message.    // 'e.data.sender' is the report viewer instance.    // 'args.format' is the export format.    console.log("About to export and send report in format: " + args.format);  }});
 ````
+
 
 ## Event Binding
 

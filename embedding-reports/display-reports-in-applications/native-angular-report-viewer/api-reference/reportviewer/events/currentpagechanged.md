@@ -13,16 +13,18 @@ Event emitted when the current page changes. Provides information about the new 
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (currentPageChanged)="currentPageChanged($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 currentPageChanged(currentPageChangedEventArgs: CurrentPageChangedEventArgs) {
  console.log("The page number and document id.", currentPageChangedEventArgs);
  console.log("This event will be emitted when the viewer changes its currently displayed page.");
 };
 ````
+
 

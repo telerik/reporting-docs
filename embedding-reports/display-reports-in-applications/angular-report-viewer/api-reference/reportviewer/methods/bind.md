@@ -9,16 +9,36 @@ reportingArea: AngularWrapper
 position: 13
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `bind` method of the Angular Report Viewer
 
 Binds an event handler to a report viewer event.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| eventName | `string` | No | The name of the event to bind to |
+| eventHandler | `Function` | No | The function to execute when the event occurs |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.bind('ready', () => {
   console.log('Report viewer is ready');
 });
 ````
-
-

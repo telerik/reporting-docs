@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportServer` type of the HTML5 ASP.NET MVC Report Viewer
 
 Provides configuration data for connecting to a Telerik Report Server instance from the MVC Report Viewer. Used to establish authenticated connections to Report Server for centralized report management and deployment scenarios. Connecting to Telerik Report Server for .NET is not supported. Contains connection details including server URL and authentication credentials for Report Server integration.

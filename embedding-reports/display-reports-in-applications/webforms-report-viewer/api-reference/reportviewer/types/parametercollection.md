@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ParameterCollection` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Represents a collection of [`Telerik.ReportViewer.Html5.WebForms.Parameter`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/parameter%}) objects used for configuring report parameters in the HTML5 WebForms ReportViewer. Used to manage parameter values that are passed to reports during initialization and processing. The collection prevents duplicate parameter names by updating existing parameter values when adding parameters with matching names.

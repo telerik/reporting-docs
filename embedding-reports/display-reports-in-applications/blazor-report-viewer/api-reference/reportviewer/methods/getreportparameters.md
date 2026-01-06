@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 7
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetReportParameters` method of the Blazor Report Viewer
 
 Gets the report viewer's current parameters as a dictionary of parameter name and value pairs.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetParameters">Get Report Parameters</button>
 
@@ -28,5 +43,3 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
     }
 }
 ````
-
-

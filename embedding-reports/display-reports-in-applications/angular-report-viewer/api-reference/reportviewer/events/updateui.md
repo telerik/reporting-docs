@@ -13,17 +13,19 @@ Callback function executed every time the UI needs an update. Can be used for ch
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [updateUi]="updateUi">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 updateUi(e: any) {
   console.log('Update UI:', e);
 }
 ````
+
 
 ## Event Binding
 

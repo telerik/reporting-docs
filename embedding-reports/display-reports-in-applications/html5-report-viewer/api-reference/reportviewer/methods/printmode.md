@@ -9,18 +9,38 @@ reportingArea: HTML5
 position: 6
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `printMode` method of the HTML5 Report Viewer
 
 Gets or sets the print mode for the viewer.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| pm | `PrintModes` | Yes | The print mode to set. If omitted, returns the current print mode. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get the current print modevar viewer = $("#reportViewer1").data("telerik_ReportViewer");var printMode = viewer.printMode();
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Set the print mode to Force PDF Filevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.printMode(telerikReportViewer.PrintModes.FORCE_PDF_FILE);
 ````
-
-

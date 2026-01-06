@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeAngular
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `PrintMode` type of the Native Angular Report Viewer
 
 Print mode options for the Native Angular Report Viewer.

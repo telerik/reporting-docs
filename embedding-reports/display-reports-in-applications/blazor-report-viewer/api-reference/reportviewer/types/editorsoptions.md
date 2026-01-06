@@ -7,6 +7,17 @@ published: True
 reportingArea: BlazorWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `EditorsOptions` type of the Blazor Report Viewer
 
 Specifies the settings for the different types of configurable report parameter editors.

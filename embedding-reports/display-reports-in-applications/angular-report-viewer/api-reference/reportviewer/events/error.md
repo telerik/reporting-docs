@@ -13,17 +13,19 @@ Callback function executed when an error occurs in the report viewer. The event 
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [error]="error">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 error(e: any, args: any) {
   console.error('Report viewer error:', args);
 }
 ````
+
 
 ## Event Binding
 

@@ -13,9 +13,10 @@ Called before rendering the report (preview only, not for export or print). Rece
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Rendering begin handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  renderingBegin={(e, args) => {    // The deviceInfo property can be used to pass a specific culture to the REST Service so it renders the report with it.    const culture = "yourCulture";    args.deviceInfo["CurrentCulture"] = culture;    args.deviceInfo["CurrentUICulture"] = culture;    console.log("About to render the report.");  }}/>
 ````
+
 
 ## Event Binding
 

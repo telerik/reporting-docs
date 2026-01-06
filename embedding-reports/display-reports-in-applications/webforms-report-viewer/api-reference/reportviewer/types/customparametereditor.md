@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `CustomParameterEditor` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Represents a custom parameter editor configuration with JavaScript function references for parameter matching and editor creation in the HTML5 WebForms ReportViewer. Used to define custom parameter editors that provide specialized input controls for specific parameter types or scenarios. Enables extensibility of the parameter editing experience by allowing custom JavaScript functions to determine parameter applicability and create custom editor interfaces.

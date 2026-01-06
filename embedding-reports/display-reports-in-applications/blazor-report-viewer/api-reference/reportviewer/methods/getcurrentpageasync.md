@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 4
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetCurrentPageAsync` method of the Blazor Report Viewer
 
 Gets the page number of the report page currently displayed in the viewer.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetCurrentPage">Get Current Page</button>
 <p>Current Page: @currentPage</p>
@@ -30,5 +45,3 @@ Gets the page number of the report page currently displayed in the viewer.
     }
 }
 ````
-
-

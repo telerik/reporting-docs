@@ -9,18 +9,38 @@ reportingArea: HTML5
 position: 16
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `accessibilityKeyMap` method of the HTML5 Report Viewer
 
 Gets or sets the accessibility key map for keyboard navigation. Allows customization of keyboard shortcuts for accessibility features.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| keyMap | `Object` | Yes | The key map object to set. If omitted, acts as a getter. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get the current accessibility key mapvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var keyMap = viewer.accessibilityKeyMap();
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Set a custom accessibility key mapvar reportViewer = $("#reportViewer1").data("telerik_ReportViewer");reportViewer.accessibilityKeyMap({    CONFIRM_KEY: 32,    CONTENT_AREA_KEY: 82, //R    DOCUMENT_MAP_AREA_KEY: 77, //M    MENU_AREA_KEY: 85, //U    PARAMETERS_AREA_KEY: 80 //P});
 ````
-
-

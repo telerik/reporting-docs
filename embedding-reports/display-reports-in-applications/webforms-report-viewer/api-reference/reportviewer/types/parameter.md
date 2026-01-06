@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `Parameter` type of the HTML5 ASP.NET WebForms Report Viewer
 
 A parameter passed to the `Telerik.Reporting.IReportDocument` object when initialized Contains automatic type conversion capabilities to ensure parameter values are properly formatted for report processing.

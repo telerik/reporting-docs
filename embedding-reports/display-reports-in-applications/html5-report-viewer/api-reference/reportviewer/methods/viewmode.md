@@ -9,18 +9,38 @@ reportingArea: HTML5
 position: 4
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `viewMode` method of the HTML5 Report Viewer
 
 Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| vm | `ViewModes` | Yes | The view mode to set. If omitted, returns the current view mode. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get the current view modevar viewer = $("#reportViewer1").data("telerik_ReportViewer");var mode = viewer.viewMode();
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Set the view mode to Print Previewvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.viewMode(telerikReportViewer.ViewModes.PRINT_PREVIEW);
 ````
-
-

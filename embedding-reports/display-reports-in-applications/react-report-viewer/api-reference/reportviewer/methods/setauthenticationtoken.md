@@ -9,14 +9,33 @@ reportingArea: React
 position: 10
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setAuthenticationToken` method of the React Report Viewer
 
 Sets the authentication token.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| token | `string` | No | The authentication token to set. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set authentication tokenreportViewerRef.current.setAuthenticationToken("YOUR_AUTH_TOKEN");
 ````
-
-

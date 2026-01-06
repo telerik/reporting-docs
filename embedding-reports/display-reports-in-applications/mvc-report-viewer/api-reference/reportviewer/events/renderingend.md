@@ -13,7 +13,7 @@ Attaches an event handler that will be called when the rendering of the report e
 
 ## Example
 
-````C#
+    ````C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -39,4 +39,5 @@ Attaches an event handler that will be called when the rendering of the report e
     @(Html.TelerikReporting().DeferredScripts())
 }
 ````
+
 

@@ -13,10 +13,11 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the jQ
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  updateUi: function(e) {    // This event handler will be called when the state of the viewer changes.    // 'e.data.sender' is the report viewer instance.    console.log("Viewer UI state changed.");  }});
  /**
 ````
+
 
 ## Event Binding
 

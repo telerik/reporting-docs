@@ -9,13 +9,28 @@ reportingArea: WebForms
 position: 1
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetReportParameters` method of the HTML5 ASP.NET WebForms Report Viewer
 
 Gets the processed report parameters as a dictionary of parameter names and string values. Provides access to the current parameter values that have been processed and applied to the report in the HTML5 viewer.
 
 ## Example
 
-````C#
+    ````C#
 namespace CSharp.NetFramework.WebFormsIntegrationDemo
 {
     using System;
@@ -40,5 +55,3 @@ namespace CSharp.NetFramework.WebFormsIntegrationDemo
     }
 }
 ````
-
-

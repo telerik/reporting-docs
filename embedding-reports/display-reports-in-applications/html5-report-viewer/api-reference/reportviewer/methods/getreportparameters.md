@@ -9,14 +9,27 @@ reportingArea: HTML5
 position: 11
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getReportParameters` method of the HTML5 Report Viewer
 
 Returns an object with properties, the names of which are the report parameters’ IDs, and values - the report parameters’ values. The values of multivalue parameters include their display and value members.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get all report parameters and log themvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var parameters = viewer.getReportParameters();console.log(parameters);
 ````
-
-

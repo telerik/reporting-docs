@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `CustomParameterEditor` type of the HTML5 ASP.NET MVC Report Viewer
 
 Represents a custom parameter editor configuration for the MVC Report Viewer, enabling custom UI components for report parameter input. Both functions are executed in the client-side JavaScript context of the MVC Report Viewer.

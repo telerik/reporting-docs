@@ -13,15 +13,17 @@ Event emitted when printing starts. Triggered at the beginning of a print operat
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (printStarted)="printStarted($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 printStarted(printStartedEventArgs: PrintStartedEventArgs) {
  console.log("This event will be emitted when the printing starts.", printStartedEventArgs);
 };
 ````
+
 

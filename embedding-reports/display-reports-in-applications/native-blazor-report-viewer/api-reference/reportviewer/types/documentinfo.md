@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `DocumentInfo` type of the Native Blazor Report Viewer
 
 Represents comprehensive information about a report document's state during rendering and when the rendering ends. The information in this object is used internally by the report viewer to manage how reports are displayed and interacted with.

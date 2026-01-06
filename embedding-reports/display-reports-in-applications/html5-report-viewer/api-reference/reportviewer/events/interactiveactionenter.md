@@ -13,9 +13,10 @@ Called when entering an interactive action area.   Receives two parameters: `e` 
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  interactiveActionEnter: function(e, args) {    // args.action is an InteractiveAction object    if (args.action.Type === "sorting") {      // Custom logic for sorting action    }  }});
 ````
+
 
 ## Event Binding
 

@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportSource` type of the HTML5 ASP.NET MVC Report Viewer
 
 Provides the base class for a report source. This is an abstract class that contains only a collection of parameter values that are passed to the `Telerik.Reporting.IReportDocument` object when its instance is initialized.

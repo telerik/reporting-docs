@@ -9,14 +9,27 @@ reportingArea: React
 position: 4
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getViewMode` method of the React Report Viewer
 
 Gets the current view mode.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get current view modeconst viewMode = reportViewerRef.current.getViewMode();console.log("Current view mode:", viewMode);
 ````
-
-

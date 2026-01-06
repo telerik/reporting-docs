@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportSource` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Provides a configuration class for the report source used in the HTML5 WebForms ReportViewer. Contains the collection of parameter values, report identifier, and identifier type for configuring report loading and processing. Used to specify which report to display and provide parameter values for report initialization in HTML5 viewer scenarios.

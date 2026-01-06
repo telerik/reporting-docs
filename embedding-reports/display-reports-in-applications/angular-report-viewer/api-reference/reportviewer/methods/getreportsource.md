@@ -9,16 +9,29 @@ reportingArea: AngularWrapper
 position: 2
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getReportSource` method of the Angular Report Viewer
 
 Gets the current report source (report and parameters). Object containing report and parameters properties
 
 ## Example
 
-````typescript
+    ````typescript
 const source = viewer.getReportSource();
 console.log(source.report); // Report identifier
 console.log(source.parameters); // Report parameters
 ````
-
-

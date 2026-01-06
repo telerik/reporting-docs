@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetPageCountAsync` method of the Blazor Report Viewer
 
 Gets the total page count of the report displayed in the viewer.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetPageCount">Get Page Count</button>
 <p>Page Count: @pageCount</p>
@@ -30,5 +45,3 @@ Gets the total page count of the report displayed in the viewer.
     }
 }
 ````
-
-

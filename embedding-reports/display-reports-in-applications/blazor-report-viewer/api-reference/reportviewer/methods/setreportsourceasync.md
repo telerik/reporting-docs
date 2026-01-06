@@ -9,13 +9,34 @@ reportingArea: BlazorWrapper
 position: 16
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `SetReportSourceAsync` method of the Blazor Report Viewer
 
 Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/reportsourceoptions%}) and reloads the report.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| reportSourceOptions | `Telerik.ReportViewer.Blazor.ReportSourceOptions` | No | - |
+
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetReportSource">Set New Report Source</button>
 
@@ -30,5 +51,3 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
     }
 }
 ````
-
-

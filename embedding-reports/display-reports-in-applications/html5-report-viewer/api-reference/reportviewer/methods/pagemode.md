@@ -9,18 +9,38 @@ reportingArea: HTML5
 position: 5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `pageMode` method of the HTML5 Report Viewer
 
 Gets or sets the page mode (e.g., Single Page or Continuous Scroll).
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| psm | `PageModes` | Yes | The page mode to set. If omitted, returns the current page mode. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get the current page modevar viewer = $("#reportViewer1").data("telerik_ReportViewer");var pageMode = viewer.pageMode();
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Set the page mode to Single Pagevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
 ````
-
-

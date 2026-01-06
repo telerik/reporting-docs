@@ -13,9 +13,10 @@ Called before exporting the report. Receives two parameters: `e` (the event obje
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Export begin handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  exportBegin={(e, args) => {    console.log("Exporting report in format: " + args.format);  }}/>
 ````
+
 
 ## Event Binding
 

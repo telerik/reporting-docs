@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportParameterContext` type of the Native Blazor Report Viewer
 
 Represents the context for report parameters in the Telerik Native Blazor Report Viewer.

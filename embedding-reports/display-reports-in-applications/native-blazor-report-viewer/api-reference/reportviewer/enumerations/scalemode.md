@@ -7,6 +7,21 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ScaleMode` enumeration of the Native Blazor Report Viewer
 
 Sets the scale mode of the viewer.

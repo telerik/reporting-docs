@@ -7,6 +7,17 @@ published: True
 reportingArea: React
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportServer` type of the React Report Viewer
 
 Configuration for connecting to a Telerik Report Server instance.

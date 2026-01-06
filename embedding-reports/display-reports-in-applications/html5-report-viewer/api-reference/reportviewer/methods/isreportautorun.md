@@ -9,14 +9,27 @@ reportingArea: HTML5
 position: 12
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `isReportAutoRun` method of the HTML5 Report Viewer
 
 Returns whether auto-run is enabled for the report (i.e., whether the report runs automatically when parameters change).
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Check if auto-run is enabled for the reportvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var isReportAutoRun = viewer.isReportAutoRun();
 ````
-
-

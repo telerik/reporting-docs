@@ -7,6 +7,21 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ScaleMode` enumeration of the HTML5 ASP.NET WebForms Report Viewer
 
 Specifies the scaling strategy options for the HTML5 WebForms ReportViewer control to determine how reports are sized and displayed within the viewer area. Used to configure automatic sizing behavior and zoom level management for optimal report display and readability in HTML5 viewing scenarios. Controls the report sizing strategy to optimize readability and user experience based on viewer dimensions and content requirements in HTML5 environments.

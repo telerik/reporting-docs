@@ -7,6 +7,21 @@ published: True
 reportingArea: HTML5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ViewModes` enumeration of the HTML5 Report Viewer
 
 Enum for the available view modes in the report viewer.

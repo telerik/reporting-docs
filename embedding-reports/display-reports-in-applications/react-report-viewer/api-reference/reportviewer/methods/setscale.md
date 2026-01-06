@@ -9,14 +9,33 @@ reportingArea: React
 position: 7
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setScale` method of the React Report Viewer
 
 Sets the scale factor and scale mode.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| scale | `Object` | No | The scale object to set. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set scale to 150% and mode to SPECIFICreportViewerRef.current.setScale({ scale: 1.5, scaleMode: "SPECIFIC" });
 ````
-
-

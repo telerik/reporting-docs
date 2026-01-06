@@ -13,17 +13,19 @@ Callback function executed prior to starting the report export command. The even
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [exportBegin]="exportBegin">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 exportBegin(e: any, args: any) {
   console.log('Export is about to begin:', args);
 }
 ````
+
 
 ## Event Binding
 

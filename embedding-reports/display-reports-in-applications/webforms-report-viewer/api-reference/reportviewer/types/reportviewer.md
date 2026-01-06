@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportViewer` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Represents the HTML5 WebForms ReportViewer control that provides comprehensive report viewing capabilities with modern HTML5-based rendering and interactive user interface. Used to display Telerik Reporting reports within ASP.NET WebForms applications with full JavaScript-based client-side functionality for report interaction, navigation, and management. Provides a complete HTML5-based report viewing solution with responsive design, client-side processing, and extensive customization options for modern web applications.

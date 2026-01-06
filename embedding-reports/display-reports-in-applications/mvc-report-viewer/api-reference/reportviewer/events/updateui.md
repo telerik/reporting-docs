@@ -13,7 +13,7 @@ Attaches an event handler that will be called every time the UI needs an update;
 
 ## Example
 
-````C#
+    ````C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -38,4 +38,5 @@ Attaches an event handler that will be called every time the UI needs an update;
     </script>
 }
 ````
+
 

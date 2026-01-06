@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `EditorsContainer` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Provides configuration container for parameter editor types used in single-select and multi-select scenarios within the HTML5 WebForms ReportViewer. Used to specify the visual presentation style for different parameter selection scenarios. Controls the editor type selection for parameters with available values in the HTML5 viewer interface.

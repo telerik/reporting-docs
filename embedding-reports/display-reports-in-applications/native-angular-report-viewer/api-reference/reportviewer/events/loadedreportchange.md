@@ -13,15 +13,17 @@ Event emitted when the loaded report changes. Triggered during navigation betwee
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (loadedReportChange)="loadedReportChange()">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 loadedReportChange() {
  console.log("This event will be emitted when the loaded report is changed.");
 };
 ````
+
 

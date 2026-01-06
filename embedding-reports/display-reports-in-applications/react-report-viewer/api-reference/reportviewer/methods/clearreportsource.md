@@ -9,14 +9,27 @@ reportingArea: React
 position: 18
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `clearReportSource` method of the React Report Viewer
 
 Clears the current reportSource from the viewer internal state and from its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on the next postback.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Clear report source before setting a new onereportViewerRef.current.clearReportSource();reportViewerRef.current.setReportSource({ report: "NewReport" });
 ````
-
-

@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `UriReportSource` type of the HTML5 ASP.NET MVC Report Viewer
 
 Represents a report source that loads a report document from a URI. The URI must point to a physical TRDX, TRDP or TRBP file.

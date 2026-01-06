@@ -13,16 +13,18 @@ Event emitted after each successful Get Document Info request until report rende
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (reportLoadProgress)="reportLoadProgress($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 reportLoadProgress(documentInfo: DocumentInfo) {
  console.log("The documentInfo parameter will contain the current information for the report rendering progress.", documentInfo);
  console.log("This event will be emitted after each successful Get Document Info request until the report rendering is complete.");
 };
 ````
+
 

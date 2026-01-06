@@ -13,9 +13,10 @@ Called when leaving an interactive action area. Receives two parameters: `e` (th
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Interactive action leave handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  interactiveActionLeave={(e, args) => {    if (args.action.Type === "toggleVisibility") {      // Custom logic for toggleVisibility action    }  }}/>
 ````
+
 
 ## Event Binding
 

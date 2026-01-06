@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `XmlReportSource` type of the HTML5 ASP.NET MVC Report Viewer
 
 Represents a report source that contains the XML markup of a report document.

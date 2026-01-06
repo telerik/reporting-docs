@@ -9,14 +9,33 @@ reportingArea: AngularWrapper
 position: 10
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setAuthenticationToken` method of the Angular Report Viewer
 
 Sets the authentication token for REST service requests. The current ReportViewer object
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| token | `string` | No | The authentication token string |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.setAuthenticationToken("your-authentication-token");
 ````
-
-

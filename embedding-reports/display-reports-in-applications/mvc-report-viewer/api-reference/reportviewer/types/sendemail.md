@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `SendEmail` type of the HTML5 ASP.NET MVC Report Viewer
 
 Provides a class for the send e-mail message options. Contains the enabled property, the preselected rendering Format, from and to e-mail addresses.

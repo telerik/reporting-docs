@@ -13,16 +13,18 @@ Event emitted when there's a version mismatch between the viewer and REST servic
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (reportVersionMismatch)="reportVersionMismatch($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 reportVersionMismatch(restVersion: string) {
  console.log("REST Service version.", restVersion);
  console.log("This event will be emitted when there is mismatch between the version of the viewer and the reporting service.");
 };
 ````
+
 

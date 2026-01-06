@@ -13,7 +13,7 @@ Gets or sets the name of the JavaScript function that will be called when an int
 
 ## Example
 
-````XML
+    ````XML
 <!--Example demonstrating how to set the InteractiveActionExecuting property of ClientEvents in the Telerik HTML5 WebForms ReportViewer.
 This property specifies the name of the JavaScript function to be called when an interactive action is executed. -->
 
@@ -42,4 +42,5 @@ This property specifies the name of the JavaScript function to be called when an
 </body>
 </html>
 ````
+
 

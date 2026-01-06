@@ -13,16 +13,18 @@ Event emitted when the cursor hovers over an interactive action. Provides an obj
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (interactiveActionEnter)="interactiveActionEnter($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 interactiveActionEnter(interactiveActionArgs: PageActionEventArgs) {
  console.log("The interactive action arguments.", interactiveActionArgs);
  console.log("This event will be emitted when the cursor hovers over an interactive action.");
 };
 ````
+
 

@@ -9,14 +9,33 @@ reportingArea: React
 position: 3
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setReportSource` method of the React Report Viewer
 
 Sets the report source - report and parameters. Automatically reloads the report (if any) into the view.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| rs | `Object` | No | The report source object to set. Object with properties: report (string) and parameters (JSON). |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set a new report sourcereportViewerRef.current.setReportSource({  report: "SalesReport",  parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }});
 ````
-
-

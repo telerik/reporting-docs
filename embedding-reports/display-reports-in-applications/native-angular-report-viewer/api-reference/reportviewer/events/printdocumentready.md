@@ -13,15 +13,17 @@ Event emitted after the viewer finishes printing the report. Indicates that the 
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (printDocumentReady)="printDocumentReady($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 printDocumentReady(printDocumentReadyEventArgs: PrintDocumentReadyEventArgs) {
  console.log("This event will be emitted after the viewer finishes printing the report.", printDocumentReadyEventArgs);
 };
 ````
+
 

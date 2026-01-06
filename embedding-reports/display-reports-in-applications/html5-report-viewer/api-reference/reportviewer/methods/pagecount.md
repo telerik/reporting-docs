@@ -9,14 +9,27 @@ reportingArea: HTML5
 position: 9
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `pageCount` method of the HTML5 Report Viewer
 
 Gets the total page count of the viewer’s currently displayed report.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get the total number of pages in the current reportvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var totalPages = viewer.pageCount();
 ````
-
-

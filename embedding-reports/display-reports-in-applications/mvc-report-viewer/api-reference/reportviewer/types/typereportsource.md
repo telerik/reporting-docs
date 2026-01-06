@@ -7,6 +7,17 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `TypeReportSource` type of the HTML5 ASP.NET MVC Report Viewer
 
 Represents a report source that allows a report document to be instantiated from an `System.Type.AssemblyQualifiedName`.

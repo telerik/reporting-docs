@@ -9,14 +9,33 @@ reportingArea: HTML5
 position: 13
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `authenticationToken` method of the HTML5 Report Viewer
 
 Sets the authentication token. Used for service requests.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| token | `string` | Yes | The authentication token to set. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set the authentication token for the viewervar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.authenticationToken("YOUR_AUTH_TOKEN");
 ````
-
-

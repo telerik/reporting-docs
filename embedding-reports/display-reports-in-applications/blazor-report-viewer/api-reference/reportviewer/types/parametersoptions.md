@@ -7,6 +7,17 @@ published: True
 reportingArea: BlazorWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ParametersOptions` type of the Blazor Report Viewer
 
 Specifies the options for the two parameter editors types - `Telerik.ReportViewer.Blazor.EditorsOptions.SingleSelect` and `Telerik.ReportViewer.Blazor.EditorsOptions.MultiSelect`.

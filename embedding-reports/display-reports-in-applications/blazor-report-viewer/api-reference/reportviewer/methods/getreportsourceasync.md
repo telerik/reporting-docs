@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 8
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetReportSourceAsync` method of the Blazor Report Viewer
 
 Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/reportsourceoptions%}) containing the report identifier and report parameters values.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetReportSource">Get Report Source</button>
 
@@ -28,5 +43,3 @@ Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
     }
 }
 ````
-
-

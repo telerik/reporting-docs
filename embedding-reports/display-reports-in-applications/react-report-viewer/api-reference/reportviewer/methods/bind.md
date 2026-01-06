@@ -9,18 +9,39 @@ reportingArea: React
 position: 13
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `bind` method of the React Report Viewer
 
 Binds an event handler to the specified event.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| eventName | `string` | No | The name of the event to bind to. |
+| eventHandler | `function` | No | The handler function to invoke when the event occurs. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Bind to pageReady eventreportViewerRef.current.bind("pageReady", (e, args) => {  console.log("Page is ready!", args);});
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Bind to error eventreportViewerRef.current.bind("error", (e, args) => {  console.error("Report viewer error:", args);});
 ````
-
-

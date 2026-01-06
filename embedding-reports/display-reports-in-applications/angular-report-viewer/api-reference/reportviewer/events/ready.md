@@ -13,17 +13,19 @@ Callback function executed when the viewer content has been loaded and is ready.
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [ready]="ready">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 ready() {
   console.log('Report viewer is ready');
 }
 ````
+
 
 ## Event Binding
 

@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `MultiSelectReportParameter` type of the Native Blazor Report Viewer
 
 Represents a multi-select report parameter in the Telerik Reporting Native Blazor Report Viewer. This parameter allows users to select multiple values from a predefined list.

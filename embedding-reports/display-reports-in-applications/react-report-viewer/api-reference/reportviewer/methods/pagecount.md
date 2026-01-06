@@ -9,14 +9,27 @@ reportingArea: React
 position: 8
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `pageCount` method of the React Report Viewer
 
 Gets the total page count of viewer’s currently displayed report.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get total page countconst totalPages = reportViewerRef.current.pageCount();console.log("Total pages:", totalPages);
 ````
-
-

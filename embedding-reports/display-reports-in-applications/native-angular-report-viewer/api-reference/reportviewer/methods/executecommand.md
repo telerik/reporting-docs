@@ -9,6 +9,21 @@ reportingArea: NativeAngular
 position: 1
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `executeCommand` method of the Native Angular Report Viewer
 
 Executes a command on the report viewer.
@@ -35,10 +50,15 @@ Available commands:
 - 'zoomOut': Zoom-out the report.
 - 'stopRendering': Stops the current rendering operation.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| commandName | `string` | No | The name of the command to execute |
+| commandValue | `any` | No | Optional value/parameters for the command |
+
 ## Example
 
-````typescript
+    ````typescript
 this.viewer.executeCommand('exportReport', 'pdf'); // Export the report as PDF
 ````
-
-

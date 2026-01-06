@@ -7,6 +7,17 @@ published: True
 reportingArea: React
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportParameters` type of the React Report Viewer
 
 An object where each property name corresponds to a report parameter's name, and the value is the value assigned to that parameter as used in the report definition.

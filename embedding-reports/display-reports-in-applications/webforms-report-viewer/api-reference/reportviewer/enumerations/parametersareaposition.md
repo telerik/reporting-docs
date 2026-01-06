@@ -7,6 +7,21 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ParametersAreaPosition` enumeration of the HTML5 ASP.NET WebForms Report Viewer
 
 Specifies the positioning options for the Parameters Area within the HTML5 WebForms ReportViewer interface. Used to configure the placement of the parameter input controls relative to the report content area for optimal user experience and interface layout. Controls the visual placement of the parameters panel to accommodate different screen sizes and layout preferences in HTML5 report viewing scenarios.

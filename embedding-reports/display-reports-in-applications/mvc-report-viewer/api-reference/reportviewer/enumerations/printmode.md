@@ -7,6 +7,21 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `PrintMode` enumeration of the HTML5 ASP.NET MVC Report Viewer
 
 Specifies the printing method options for the MVC Report Viewer control. Used to configure how the report viewer handles print operations and determines the optimal printing mechanism based on browser capabilities and requirements. Controls the printing behavior to ensure optimal print experience across different browsers and environments.

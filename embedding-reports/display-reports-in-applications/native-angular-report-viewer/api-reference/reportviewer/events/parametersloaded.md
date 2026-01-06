@@ -13,16 +13,18 @@ Event emitted when report parameters are loaded. Provides an array of parameter 
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (parametersLoaded)="parametersLoaded($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 parametersLoaded(parameterInfos: ParameterInfo[]) {
  console.log("An array of the parameter values is sent via the parameterInfos object.", parameterInfos);
  console.log("This event will be emitted after the Get Report Parameters request is made.");
 };
 ````
+
 

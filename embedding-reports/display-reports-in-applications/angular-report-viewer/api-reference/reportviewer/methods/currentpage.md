@@ -9,15 +9,28 @@ reportingArea: AngularWrapper
 position: 9
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `currentPage` method of the Angular Report Viewer
 
 Gets the viewer's current page that is displayed. The current page number
 
 ## Example
 
-````typescript
+    ````typescript
 const currentPageNum = viewer.currentPage();
 console.log(`Current page: ${currentPageNum}`);
 ````
-
-

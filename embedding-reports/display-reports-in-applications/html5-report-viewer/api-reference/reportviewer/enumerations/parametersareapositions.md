@@ -7,6 +7,21 @@ published: True
 reportingArea: HTML5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `ParametersAreaPositions` enumeration of the HTML5 Report Viewer
 
 Enum for the available positions of the parameters area in the viewer.

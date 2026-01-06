@@ -9,14 +9,33 @@ reportingArea: React
 position: 17
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setPageMode` method of the React Report Viewer
 
 Sets the page mode of the viewer.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| psm | `string` | No | The page mode to set (use PageModes constants). |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set page mode to single pagereportViewerRef.current.setPageMode("SINGLE_PAGE");
 ````
-
-

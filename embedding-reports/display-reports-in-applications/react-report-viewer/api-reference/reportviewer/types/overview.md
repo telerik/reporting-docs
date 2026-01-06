@@ -9,6 +9,21 @@ reportingArea: React
 position: 0
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # Types of the React Report Viewer
 
 | Type | Description |

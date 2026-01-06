@@ -7,6 +7,21 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `IdentifierType` enumeration of the HTML5 ASP.NET WebForms Report Viewer
 
 Specifies the identifier type options used in the HTML5 WebForms ReportViewer ReportSource configuration. Used to determine how report identifiers are interpreted and resolved when loading reports in the HTML5 viewer. Controls the report resolution strategy based on the type of identifier provided, enabling support for different report source configurations in HTML5 viewing scenarios.

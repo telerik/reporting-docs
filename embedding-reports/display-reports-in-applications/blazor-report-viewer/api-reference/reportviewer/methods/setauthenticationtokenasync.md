@@ -9,13 +9,34 @@ reportingArea: BlazorWrapper
 position: 14
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `SetAuthenticationTokenAsync` method of the Blazor Report Viewer
 
 Sets the authentication token.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| token | `System.String` | No | - |
+
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetToken">Set Authentication Token</button>
 
@@ -27,5 +48,3 @@ Sets the authentication token.
     }
 }
 ````
-
-

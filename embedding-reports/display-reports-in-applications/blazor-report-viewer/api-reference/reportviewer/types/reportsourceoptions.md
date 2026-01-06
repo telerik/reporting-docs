@@ -7,6 +7,17 @@ published: True
 reportingArea: BlazorWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ReportSourceOptions` type of the Blazor Report Viewer
 
 Specifies the report and initial report parameter values to be displayed in the report viewer.

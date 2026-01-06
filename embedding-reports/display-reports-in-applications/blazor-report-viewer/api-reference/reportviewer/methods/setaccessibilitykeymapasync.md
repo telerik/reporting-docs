@@ -9,13 +9,34 @@ reportingArea: BlazorWrapper
 position: 13
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `SetAccessibilityKeyMapAsync` method of the Blazor Report Viewer
 
 Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/accessibilitykeymap%}), used when the report viewer is in accessible mode.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| keyMap | `Telerik.ReportViewer.Blazor.AccessibilityKeyMap` | No | - |
+
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetKeyMap">Set Accessibility Key Map</button>
 
@@ -28,5 +49,3 @@ Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikrepor
     }
 }
 ````
-
-

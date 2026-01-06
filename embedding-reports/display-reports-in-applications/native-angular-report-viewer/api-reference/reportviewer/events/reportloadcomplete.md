@@ -13,16 +13,18 @@ Event emitted after the rendering of a report ends. Provides complete document i
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (reportLoadComplete)="reportLoadComplete($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 reportLoadComplete(documentInfo: DocumentInfo) {
  console.log("The document information such as the page count, whether it has a document map, etc. will be sent via the documentInfo object.", documentInfo);
  console.log("This event will be emitted after the rendering of a report ends.");
 };
 ````
+
 

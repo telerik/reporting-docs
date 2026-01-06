@@ -9,14 +9,27 @@ reportingArea: AngularWrapper
 position: 19
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `dispose` method of the Angular Report Viewer
 
 Stops sending keep alive requests to the server and performs cleanup. Called automatically when the component is destroyed.
 
 ## Example
 
-````typescript
+    ````typescript
 viewer.dispose();
 ````
-
-

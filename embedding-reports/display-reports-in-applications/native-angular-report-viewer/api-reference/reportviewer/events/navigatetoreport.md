@@ -13,16 +13,18 @@ Event emitted when navigating to a different report. Triggered by interactive ac
 
 ## Example
 
-````html
+    ````html
 <reporting-angular-viewer
  (navigateToReport)="navigateToReport($event)">
 </reporting-angular-viewer>
 ````
 
-````typescript
+
+    ````typescript
 navigateToReport(reportSourceOptions: ReportSourceOptions) {
  console.log("The report source object of the newly loaded report.", reportSourceOptions);
  console.log("This event will be emitted when the viewer navigates to a new report through the Drillthrough/Navigate To Report action.");
 };
 ````
+
 

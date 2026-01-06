@@ -7,6 +7,21 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `PrintMode` enumeration of the HTML5 ASP.NET WebForms Report Viewer
 
 Specifies the print handling strategy options for the HTML5 WebForms ReportViewer control. Used to determine how the viewer processes print commands and handles PDF generation for optimal printing experience across different browsers and environments. Controls the print workflow strategy to accommodate different browser capabilities and user preferences for PDF handling in HTML5 report viewing scenarios.

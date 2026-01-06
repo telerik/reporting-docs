@@ -7,6 +7,21 @@ published: True
 reportingArea: MVCWrapper
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `EditorTypes` enumeration of the HTML5 ASP.NET MVC Report Viewer
 
 Specifies the available parameter editor types for rendering parameter input controls in the MVC Report Viewer. Used to define the visual style and interaction behavior of parameter input controls. Each editor type provides different user experience and visual presentation for parameter value selection.

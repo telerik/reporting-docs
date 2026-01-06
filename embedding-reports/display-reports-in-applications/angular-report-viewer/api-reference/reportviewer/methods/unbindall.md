@@ -9,14 +9,33 @@ reportingArea: AngularWrapper
 position: 15
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `unbindAll` method of the Angular Report Viewer
 
 Unbinds all event handlers from a specific report viewer event.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| eventName | `string` | No | The name of the event to unbind all handlers from |
+
 ## Example
 
-````typescript
+    ````typescript
 viewer.unbindAll('ready');
 ````
-
-

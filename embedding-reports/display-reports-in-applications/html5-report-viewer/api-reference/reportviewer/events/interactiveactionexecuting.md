@@ -13,9 +13,10 @@ Called before an interactive action executes, allowing cancellation.   Receives 
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({  interactiveActionExecuting: function(e, args) {    // args.action is an InteractiveAction object    if (args.action.Type === "navigateToUrl") {      var url = args.action.Value.Url;      var target = args.action.Value.Target;    }    if (args.action.Type === "navigateToReport") {      var report = args.action.Value.report;      var parameters = args.action.Value.parameters;    }  }});
 ````
+
 
 ## Event Binding
 

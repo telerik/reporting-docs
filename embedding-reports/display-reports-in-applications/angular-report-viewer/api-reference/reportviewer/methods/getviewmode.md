@@ -9,14 +9,27 @@ reportingArea: AngularWrapper
 position: 4
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getViewMode` method of the Angular Report Viewer
 
 Gets the current view mode. The current view mode string ("INTERACTIVE" or "PRINT_PREVIEW")
 
 ## Example
 
-````typescript
+    ````typescript
 console.log(viewer.getViewMode());
 ````
-
-

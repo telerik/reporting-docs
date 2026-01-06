@@ -9,18 +9,38 @@ reportingArea: HTML5
 position: 1
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `refreshReport` method of the HTML5 Report Viewer
 
 Refreshes the currently loaded report. Forces the viewer to reload the report from the server. Optionally ignores the cache.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| ignoreCache | `boolean` | Yes | If true, the report is reloaded from the server, bypassing any cached data. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Refresh the report, ignoring cache (default)var viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.refreshReport();
 ````
 
-````JavaScript
+
+    ````JavaScript
 // Refresh the report, using cache if availablevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.refreshReport(false);
 ````
-
-

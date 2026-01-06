@@ -7,6 +7,17 @@ published: True
 reportingArea: WebForms
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ClientEvents` type of the HTML5 ASP.NET WebForms Report Viewer
 
 Represents a configuration class that provides properties for initializing client-side event handlers of the HTML5 WebForms ReportViewer control. Used to specify JavaScript function names that will be executed in response to various report viewer events during report rendering, printing, exporting, and user interaction. All event handler properties should contain JavaScript function names (without parentheses) that will be called when the corresponding events occur in the HTML5 ReportViewer.

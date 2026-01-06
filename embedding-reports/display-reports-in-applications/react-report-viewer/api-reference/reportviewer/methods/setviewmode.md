@@ -9,14 +9,33 @@ reportingArea: React
 position: 5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `setViewMode` method of the React Report Viewer
 
 Sets the view mode and automatically reloads the current report (if any) into the new view.
 
+## Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| vm | `string` | No | The view mode to set. |
+
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Set view mode to print previewreportViewerRef.current.setViewMode("PRINT_PREVIEW");
 ````
-
-

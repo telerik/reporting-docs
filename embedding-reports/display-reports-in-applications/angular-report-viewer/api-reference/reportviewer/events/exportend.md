@@ -13,17 +13,19 @@ Callback function executed when the exported document is ready for download, but
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [exportEnd]="exportEnd">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 exportEnd(e: any, args: any) {
   console.log('Export has ended:', args);
 }
 ````
+
 
 ## Event Binding
 

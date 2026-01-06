@@ -9,6 +9,21 @@ reportingArea: HTML5
 position: 0
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # Events of the HTML5 Report Viewer
 
 | Event | Description |

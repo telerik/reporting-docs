@@ -7,6 +7,17 @@ published: True
 reportingArea: NativeBlazor
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ToggleButtonTool` type of the Native Blazor Report Viewer
 
 Represents the built-in toggle buttons from the report viewer's toolbar. This tool allows users to switch between two states, typically used for enabling or disabling a certain feature within the viewer.

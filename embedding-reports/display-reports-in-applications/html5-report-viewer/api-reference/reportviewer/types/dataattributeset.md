@@ -7,6 +7,17 @@ published: True
 reportingArea: HTML5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `DataAttributeSet` type of the HTML5 Report Viewer
 
 Describes the available data attributes that can be used to control the Report Viewer from HTML elements. They are executed by adding data-command and data-target-report-viewer attributes to HTML elements.

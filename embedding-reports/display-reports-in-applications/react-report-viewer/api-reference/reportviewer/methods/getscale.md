@@ -9,14 +9,27 @@ reportingArea: React
 position: 6
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `getScale` method of the React Report Viewer
 
 Gets the viewer’s scale factor and scale mode.
 
 ## Example
 
-````JavaScript
+    ````JavaScript
 // Get current scale and scale modeconst scaleInfo = reportViewerRef.current.getScale();console.log("Scale:", scaleInfo.scale, "Scale mode:", scaleInfo.scaleMode);
 ````
-
-

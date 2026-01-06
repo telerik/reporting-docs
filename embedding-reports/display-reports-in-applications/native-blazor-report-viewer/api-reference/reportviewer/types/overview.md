@@ -9,6 +9,21 @@ reportingArea: NativeBlazor
 position: 0
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # Types of the Native Blazor Report Viewer
 
 | Type | Description |

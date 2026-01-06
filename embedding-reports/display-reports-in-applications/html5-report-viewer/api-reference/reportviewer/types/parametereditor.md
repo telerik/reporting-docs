@@ -7,6 +7,17 @@ published: True
 reportingArea: HTML5
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+</style>
+
 # The `ParameterEditor` type of the HTML5 Report Viewer
 
 Describes a parameter editor for the Telerik Report Viewer parameter panel.

@@ -13,17 +13,19 @@ Callback function executed when the rendering of the report ends. The event hand
 
 ## Example
 
-````html
+    ````html
 <tr-viewer
   [renderingEnd]="renderingEnd">
 </tr-viewer>
 ````
 
-````typescript
+
+    ````typescript
 renderingEnd(e: any, args: any) {
   console.log('Rendering has ended:', args);
 }
 ````
+
 
 ## Event Binding
 

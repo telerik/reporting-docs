@@ -9,13 +9,28 @@ reportingArea: BlazorWrapper
 position: 9
 ---
 
+<style>
+    table {
+        display: grid;
+        grid-template-columns: min-content min-content min-content 1fr;
+    }
+
+    thead, tbody, tr {
+        display: contents;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+</style>
+
 # The `GetScaleAsync` method of the Blazor Report Viewer
 
 Gets the report viewer's scale factor.
 
 ## Example
 
-````C#
+    ````C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetScale">Get Scale</button>
 <p>Scale: @scale</p>
@@ -30,5 +45,3 @@ Gets the report viewer's scale factor.
     }
 }
 ````
-
-

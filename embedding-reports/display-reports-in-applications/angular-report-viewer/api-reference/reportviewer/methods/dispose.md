@@ -22,6 +22,10 @@ position: 19
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `dispose` method of the Angular Report Viewer

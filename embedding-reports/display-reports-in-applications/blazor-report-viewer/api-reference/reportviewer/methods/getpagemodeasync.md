@@ -22,6 +22,10 @@ position: 6
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `GetPageModeAsync` method of the Blazor Report Viewer

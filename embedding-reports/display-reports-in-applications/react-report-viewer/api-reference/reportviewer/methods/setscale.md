@@ -22,6 +22,10 @@ position: 7
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `setScale` method of the React Report Viewer

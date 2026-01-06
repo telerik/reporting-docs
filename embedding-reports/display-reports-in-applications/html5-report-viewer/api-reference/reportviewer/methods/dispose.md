@@ -22,6 +22,10 @@ position: 17
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `dispose` method of the HTML5 Report Viewer

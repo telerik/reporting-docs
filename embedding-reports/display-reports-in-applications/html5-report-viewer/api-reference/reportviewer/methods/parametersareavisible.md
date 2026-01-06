@@ -22,6 +22,10 @@ position: 10
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `parametersAreaVisible` method of the HTML5 Report Viewer

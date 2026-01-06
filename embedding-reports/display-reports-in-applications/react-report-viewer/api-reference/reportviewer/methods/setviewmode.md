@@ -22,6 +22,10 @@ position: 5
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `setViewMode` method of the React Report Viewer

@@ -20,6 +20,10 @@ reportingArea: NativeBlazor
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `PrintMode` enumeration of the Native Blazor Report Viewer

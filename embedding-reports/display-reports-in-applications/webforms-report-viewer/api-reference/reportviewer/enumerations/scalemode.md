@@ -20,6 +20,10 @@ reportingArea: WebForms
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `ScaleMode` enumeration of the HTML5 ASP.NET WebForms Report Viewer

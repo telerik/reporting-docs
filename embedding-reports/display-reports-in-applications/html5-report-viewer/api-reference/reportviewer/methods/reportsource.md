@@ -22,6 +22,10 @@ position: 2
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `reportSource` method of the HTML5 Report Viewer

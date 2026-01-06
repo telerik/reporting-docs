@@ -22,6 +22,10 @@ position: 14
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `unbind` method of the Angular Report Viewer

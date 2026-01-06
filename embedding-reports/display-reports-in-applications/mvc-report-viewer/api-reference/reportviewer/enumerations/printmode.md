@@ -20,6 +20,10 @@ reportingArea: MVCWrapper
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `PrintMode` enumeration of the HTML5 ASP.NET MVC Report Viewer

@@ -22,6 +22,10 @@ position: 11
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `getAccessibilityKeyMap` method of the React Report Viewer

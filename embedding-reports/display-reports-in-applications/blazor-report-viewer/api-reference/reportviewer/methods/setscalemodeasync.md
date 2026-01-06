@@ -22,6 +22,10 @@ position: 18
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `SetScaleModeAsync` method of the Blazor Report Viewer

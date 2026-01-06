@@ -22,6 +22,10 @@ position: 15
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `unbind` method of the HTML5 Report Viewer

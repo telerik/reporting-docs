@@ -22,6 +22,10 @@ position: 3
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `GetAccessibilityKeyMapAsync` method of the Blazor Report Viewer

@@ -22,6 +22,10 @@ position: 14
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `bind` method of the HTML5 Report Viewer

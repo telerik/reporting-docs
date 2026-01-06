@@ -22,6 +22,10 @@ position: 21
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `UnbindAsync` method of the Blazor Report Viewer

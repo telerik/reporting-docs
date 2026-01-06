@@ -22,6 +22,10 @@ position: 15
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `unbindAll` method of the React Report Viewer

@@ -22,6 +22,10 @@ position: 10
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `setAuthenticationToken` method of the Angular Report Viewer

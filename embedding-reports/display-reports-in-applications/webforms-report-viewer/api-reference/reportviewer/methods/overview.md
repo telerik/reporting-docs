@@ -22,6 +22,10 @@ position: 0
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # Methods of the HTML5 ASP.NET WebForms Report Viewer

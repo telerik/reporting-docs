@@ -20,6 +20,10 @@ reportingArea: BlazorWrapper
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `EditorType` enumeration of the Blazor Report Viewer

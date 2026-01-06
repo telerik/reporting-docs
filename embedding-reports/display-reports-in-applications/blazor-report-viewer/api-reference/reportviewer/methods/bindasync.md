@@ -22,6 +22,10 @@ position: 1
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `BindAsync` method of the Blazor Report Viewer

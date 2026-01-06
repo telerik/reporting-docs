@@ -20,6 +20,10 @@ reportingArea: HTML5
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `ParameterEditorTypes` enumeration of the HTML5 Report Viewer

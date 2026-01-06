@@ -22,6 +22,10 @@ position: 1
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `executeCommand` method of the Native Angular Report Viewer

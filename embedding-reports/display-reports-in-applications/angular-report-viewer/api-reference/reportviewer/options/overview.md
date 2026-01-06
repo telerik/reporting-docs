@@ -22,6 +22,10 @@ position: 0
     th {
         white-space: nowrap;
     }
+
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # Options of the Angular Report Viewer

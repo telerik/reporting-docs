@@ -25,3 +25,5 @@ Stops the rendering of the current report.
 // Check if stopRendering is checkedif (rv.commands.stopRendering.checked()) {}
 ````
 
+
+

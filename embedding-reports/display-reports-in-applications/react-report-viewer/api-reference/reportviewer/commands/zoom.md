@@ -25,3 +25,5 @@ Zoom with a specified ratio. Accepts a zoom ratio as parameter: exec(1.5).
 // Check if the command is checkedconst isChecked = viewer.commands.zoom.checked();
 ````
 
+
+

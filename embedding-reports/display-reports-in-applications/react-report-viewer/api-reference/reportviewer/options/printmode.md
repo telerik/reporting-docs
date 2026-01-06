@@ -21,3 +21,5 @@ Specifies how the viewer should print reports. Available values: "AUTO_SELECT" (
 // Force PDF file for printing// Use with component: printMode="FORCE_PDF_FILE"
 ````
 
+
+

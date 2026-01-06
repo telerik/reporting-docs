@@ -27,3 +27,5 @@ Sets the scale factor for the report pages. The scale takes effect when the scal
 scale: number = 1.5 // 150% scale
 ````
 
+
+

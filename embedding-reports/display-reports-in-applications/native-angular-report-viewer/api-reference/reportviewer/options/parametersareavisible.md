@@ -27,3 +27,5 @@ Controls the visibility of the parameters area if the report has parameters.
 parametersAreaVisible: boolean = false;
 ````
 
+
+

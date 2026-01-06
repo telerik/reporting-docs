@@ -25,3 +25,5 @@ Shows or hides the send email dialog.
 // Check if toggleSendEmailDialog is checkedif (rv.commands.toggleSendEmailDialog.checked()) {}
 ````
 
+
+

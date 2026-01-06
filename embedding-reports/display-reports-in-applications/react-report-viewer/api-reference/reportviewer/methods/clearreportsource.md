@@ -33,3 +33,4 @@ Clears the current reportSource from the viewer internal state and from its pers
 ````JavaScript
 // Clear report source before setting a new onereportViewerRef.current.clearReportSource();reportViewerRef.current.setReportSource({ report: "NewReport" });
 ````
+

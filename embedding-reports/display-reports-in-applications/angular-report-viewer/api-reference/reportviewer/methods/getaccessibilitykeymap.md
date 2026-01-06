@@ -43,3 +43,4 @@ const keyMap = viewer.getAccessibilityKeyMap();
 console.log(keyMap.CONFIRM_KEY); // Default: 13 (Enter)
 console.log(keyMap.MENU_AREA_KEY); // Default: 77 ('m')
 ````
+

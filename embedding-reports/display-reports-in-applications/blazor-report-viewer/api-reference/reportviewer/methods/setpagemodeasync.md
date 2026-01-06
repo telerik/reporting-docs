@@ -48,3 +48,4 @@ Sets the [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-
     }
 }
 ````
+

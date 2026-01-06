@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the GoToPage command. Execute to go to a specific page of the report.
 
+
+

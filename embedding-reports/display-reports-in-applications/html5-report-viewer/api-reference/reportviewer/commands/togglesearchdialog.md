@@ -25,3 +25,5 @@ Shows or hides the search dialog.
 // Check if toggleSearchDialog is checkedif (rv.commands.toggleSearchDialog.checked()) {}
 ````
 
+
+

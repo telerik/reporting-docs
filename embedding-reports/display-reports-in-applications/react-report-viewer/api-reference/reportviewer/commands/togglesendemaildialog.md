@@ -25,3 +25,5 @@ Shows or hides the send email dialog.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleSendEmailDialog.checked();
 ````
 
+
+

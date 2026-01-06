@@ -31,3 +31,5 @@ Configures the send email functionality options for the report viewer. Enables u
 ## See Also
 
 * [SendEmail]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types/sendemail%})
+
+

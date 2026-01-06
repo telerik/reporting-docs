@@ -33,3 +33,4 @@ Gets the viewer's current page mode. The current page mode string ("SINGLE_PAGE"
 ````typescript
 viewer.getPageMode();
 ````
+

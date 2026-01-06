@@ -25,3 +25,5 @@ Shows or hides the parameters area.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleParametersArea.checked();
 ````
 
+
+

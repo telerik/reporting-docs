@@ -44,3 +44,4 @@ Binds an event handler to the specified event.
 ````JavaScript
 // Bind to error eventreportViewerRef.current.bind("error", (e, args) => {  console.error("Report viewer error:", args);});
 ````
+

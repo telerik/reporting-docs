@@ -32,3 +32,5 @@ Gets or sets the default send e-mail message options.
 ## See Also
 
 * [SendEmailOptions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/sendemailoptions%})
+
+

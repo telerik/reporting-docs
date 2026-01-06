@@ -40,3 +40,4 @@ Unbinds a specific event handler from a report viewer event.
 ````typescript
 viewer.unbind('ready', this.readyHandler);
 ````
+

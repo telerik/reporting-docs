@@ -24,3 +24,5 @@ Gets or sets the key shortcuts map, used when the report viewer is in accessible
 ## See Also
 
 * [AccessibilityKeyMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/accessibilitykeymap%})
+
+

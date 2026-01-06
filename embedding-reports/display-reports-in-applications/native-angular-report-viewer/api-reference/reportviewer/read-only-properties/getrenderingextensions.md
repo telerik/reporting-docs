@@ -21,3 +21,5 @@ Gets the current report's rendering extensions. an array of RenderingExtension o
 console.log("Rendering extensions:", JSON.stringify(this.viewer.getRenderingExtensions));
 ````
 
+
+

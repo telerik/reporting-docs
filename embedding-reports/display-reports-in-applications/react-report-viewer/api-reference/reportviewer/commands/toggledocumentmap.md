@@ -25,3 +25,5 @@ Shows or hides the document map.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleDocumentMap.checked();
 ````
 
+
+

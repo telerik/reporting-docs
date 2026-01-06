@@ -30,3 +30,5 @@ Sets if the report is displayed in interactive mode or print preview.
 viewMode: string = "PRINT_PREVIEW";
 ````
 
+
+

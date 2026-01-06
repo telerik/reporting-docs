@@ -39,3 +39,4 @@ Sets the page mode and automatically reloads the current report. The current Rep
 ````typescript
 viewer.setPageMode("SINGLE_PAGE");
 ````
+

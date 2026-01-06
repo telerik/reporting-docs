@@ -27,3 +27,5 @@ Sets the address of the Report REST Service. Required when not using reportServe
 serviceUrl: string = 'https://demos.telerik.com/reporting/api/reports';
 ````
 
+
+

@@ -44,3 +44,5 @@ position: 0
 | [SendEmailEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/events/sendemailend%})|Gets or sets the viewer's sendEmailEnd event handler function name.<br>Occurs after the report is exported and before the e-mail message is sent.|
 | [UpdateUi]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/events/updateui%})|Gets or sets the viewer's updateUi event handler function name.<br>Occurs when the UI state of the viewer changes.|
 | [ViewerToolTipOpening]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/events/viewertooltipopening%})|Gets or sets the viewer's viewerToolTipOpening event handler function name.<br>The event occurs before a tooltip is opened, providing the ability to cancel its opening.|
+
+

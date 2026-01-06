@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the ToggleParametersArea command. Execute to show or hide the parameters area.
 
+
+

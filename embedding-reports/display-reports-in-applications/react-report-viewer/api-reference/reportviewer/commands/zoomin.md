@@ -25,3 +25,5 @@ Zoom-in the report.
 // Check if the command is checkedconst isChecked = viewer.commands.zoomIn.checked();
 ````
 
+
+

@@ -21,3 +21,5 @@ URL for a custom viewer template.
 // Use a custom template$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // URL for a custom viewer template  templateUrl: "/templates/customViewer.html"});
 ````
 
+
+

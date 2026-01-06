@@ -21,3 +21,5 @@ Determines whether the client will be kept alive.
 // Keep client alive$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  keepClientAlive: true});
 ````
 
+
+

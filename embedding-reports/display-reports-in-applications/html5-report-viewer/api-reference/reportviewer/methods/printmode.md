@@ -43,3 +43,4 @@ Gets or sets the print mode for the viewer.
 ````JavaScript
 // Set the print mode to Force PDF Filevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.printMode(telerikReportViewer.PrintModes.FORCE_PDF_FILE);
 ````
+

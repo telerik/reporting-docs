@@ -42,3 +42,4 @@ viewer.setScale({
   scaleMode: 'SPECIFIC'
 });
 ````
+

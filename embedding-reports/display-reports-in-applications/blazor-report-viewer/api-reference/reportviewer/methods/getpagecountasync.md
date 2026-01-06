@@ -45,3 +45,4 @@ Gets the total page count of the report displayed in the viewer.
     }
 }
 ````
+

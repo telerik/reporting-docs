@@ -33,3 +33,4 @@ Returns an object with properties, the names of which are the report parametersâ
 ````JavaScript
 // Get all report parameters and log themvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var parameters = viewer.getReportParameters();console.log(parameters);
 ````
+

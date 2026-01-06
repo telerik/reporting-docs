@@ -21,3 +21,5 @@ Determines whether the viewer's parameters area is displayed if any parameter ed
 // Hide parameters area$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  parametersAreaVisible: false});
 ````
 
+
+

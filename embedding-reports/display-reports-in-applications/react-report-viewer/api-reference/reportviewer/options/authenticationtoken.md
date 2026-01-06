@@ -21,3 +21,5 @@ If provided, a Bearer token will be set in the Authorization header for every re
 // Set authentication tokenconst token = "YOUR_AUTH_TOKEN";// Use with component: authenticationToken={token}
 ````
 
+
+

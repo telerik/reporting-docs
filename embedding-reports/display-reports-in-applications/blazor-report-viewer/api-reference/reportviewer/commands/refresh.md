@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the Refresh command. Execute to refresh the report.
 
+
+

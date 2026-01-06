@@ -25,3 +25,5 @@ Goes back to the previously rendered report from history.
 // Check if the command is checkedconst isChecked = viewer.commands.historyBack.checked();
 ````
 
+
+

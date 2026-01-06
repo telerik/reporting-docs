@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the ToggleZoomMode command. Execute to change the zoom mode of the report.
 
+
+

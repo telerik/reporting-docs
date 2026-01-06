@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the GoToPrevPage command. Execute to go to the previous page of the report.
 
+
+

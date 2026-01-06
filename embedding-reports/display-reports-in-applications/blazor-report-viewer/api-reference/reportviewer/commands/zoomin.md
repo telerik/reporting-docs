@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the ZoomIn command. Execute to zoom the report in.
 
+
+

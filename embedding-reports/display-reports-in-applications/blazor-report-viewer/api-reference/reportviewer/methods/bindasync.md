@@ -49,3 +49,4 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
     }
 }
 ````
+

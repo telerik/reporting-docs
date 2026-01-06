@@ -25,3 +25,5 @@ Exports the report, using the respective rendering extension name. Accepts a ren
 // Check if the command is checkedconst isChecked = viewer.commands.export.checked();
 ````
 
+
+

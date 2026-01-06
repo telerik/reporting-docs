@@ -27,3 +27,5 @@ Sets the view mode of the report viewer.
 viewMode: ViewMode = 'printPreview';
 ````
 
+
+

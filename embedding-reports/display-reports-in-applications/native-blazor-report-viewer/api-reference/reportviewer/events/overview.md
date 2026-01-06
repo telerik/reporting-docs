@@ -38,3 +38,5 @@ position: 0
 | [ScaleChanged]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events/scalechanged%})|Gets or sets a value for the callback that will be called when the value of Scale changes.|
 | [ScaleModeChanged]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events/scalemodechanged%})|Gets or sets a value for the callback that will be called when the value of ScaleMode changes.|
 | [ViewModeChanged]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events/viewmodechanged%})|Gets or sets a value for the callback that will be called when the value of ViewMode changes.|
+
+

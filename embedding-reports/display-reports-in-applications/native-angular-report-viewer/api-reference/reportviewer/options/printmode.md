@@ -27,3 +27,5 @@ Sets the print mode for the report viewer.
 printMode: PrintMode = 'forcePDFFile';
 ````
 
+
+

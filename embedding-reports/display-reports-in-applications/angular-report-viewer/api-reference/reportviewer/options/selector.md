@@ -27,3 +27,5 @@ A selector used in conjunction with the data attributes. Required when commands 
 selector: string = ".my-custom-selector";
 ````
 
+
+

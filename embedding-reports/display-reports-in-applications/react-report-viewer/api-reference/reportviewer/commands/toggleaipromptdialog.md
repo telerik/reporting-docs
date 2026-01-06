@@ -25,3 +25,5 @@ Shows or hides the AI prompt dialog.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleAiPromptDialog.checked();
 ````
 
+
+

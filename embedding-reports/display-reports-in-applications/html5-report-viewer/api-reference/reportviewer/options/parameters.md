@@ -21,3 +21,5 @@ Allows the user to define parameter options for the report parameters. Propertie
 // Custom parameter editors$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // Custom editors for report parameters  parameters: { editors: { MyParam: MyCustomEditor } }});
 ````
 
+
+

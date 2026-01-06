@@ -27,3 +27,5 @@ Sets the width of the report viewer container.
 width: string = '800px';
 ````
 
+
+

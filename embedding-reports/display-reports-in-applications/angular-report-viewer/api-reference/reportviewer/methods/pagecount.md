@@ -34,3 +34,4 @@ Gets the total page count of the currently displayed report. The total number of
 const totalPages = viewer.pageCount();
 console.log(`Total pages: ${totalPages}`);
 ````
+

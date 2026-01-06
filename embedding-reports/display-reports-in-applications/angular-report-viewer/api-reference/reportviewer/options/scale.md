@@ -27,3 +27,5 @@ Sets the scale factor for the report pages. Takes effect when scaleMode is set t
 scale: number = 1.5;
 ````
 
+
+

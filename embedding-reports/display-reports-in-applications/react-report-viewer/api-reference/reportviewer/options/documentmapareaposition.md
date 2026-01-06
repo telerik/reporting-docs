@@ -21,3 +21,5 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 // Place document map on the right<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  documentMapAreaPosition="RIGHT"/>
 ````
 
+
+

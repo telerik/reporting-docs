@@ -33,3 +33,4 @@ Clears the current reportSource from the viewer's internal state and its persist
 ````JavaScript
 // Clear the report source and force the viewer to respect a new reportSource on postbackvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.clearReportSource();
 ````
+

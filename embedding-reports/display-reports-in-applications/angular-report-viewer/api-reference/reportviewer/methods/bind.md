@@ -42,3 +42,4 @@ viewer.bind('ready', () => {
   console.log('Report viewer is ready');
 });
 ````
+

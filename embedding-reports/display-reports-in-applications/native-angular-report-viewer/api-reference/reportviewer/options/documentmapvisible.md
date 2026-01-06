@@ -27,3 +27,5 @@ Controls the visibility of the document map panel if a document map is available
 documentMapVisible: boolean = false;
 ````
 
+
+

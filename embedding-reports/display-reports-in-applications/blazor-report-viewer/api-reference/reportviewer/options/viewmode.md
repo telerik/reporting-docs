@@ -27,3 +27,5 @@ Gets or sets the view mode.
 ## See Also
 
 * [ViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/viewmode%})
+
+

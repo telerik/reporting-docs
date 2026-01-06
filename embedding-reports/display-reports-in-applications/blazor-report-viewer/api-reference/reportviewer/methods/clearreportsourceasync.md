@@ -44,3 +44,4 @@ Clears the current reportSource from the viewer internal state and from its pers
     }
 }
 ````
+

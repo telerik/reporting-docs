@@ -21,3 +21,5 @@ CSS styles to apply to the viewer container div.
 // Set container styles<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  viewerContainerStyle={{    width: '100%',    height: '600px',    border: '1px solid #ccc'  }}/>
 ````
 
+
+

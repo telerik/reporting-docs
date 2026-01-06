@@ -31,3 +31,5 @@ Sets how the report pages should be scaled.
 scaleMode: string = "SPECIFIC";
 ````
 
+
+

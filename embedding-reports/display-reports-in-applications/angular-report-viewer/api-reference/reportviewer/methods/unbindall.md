@@ -39,3 +39,4 @@ Unbinds all event handlers from a specific report viewer event.
 ````typescript
 viewer.unbindAll('ready');
 ````
+

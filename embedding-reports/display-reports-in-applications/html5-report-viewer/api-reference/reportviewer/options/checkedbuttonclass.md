@@ -21,3 +21,5 @@ A class used for checked state buttons.
 // Use a custom class for checked buttons$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // Custom class for checked state buttons  checkedButtonClass: "my-checked"});
 ````
 
+
+

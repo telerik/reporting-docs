@@ -27,3 +27,5 @@ CSS class added to buttons when a command is in a disabled state. Used with data
 disabledButtonClass: string = "my-disabled-button-class";
 ````
 
+
+

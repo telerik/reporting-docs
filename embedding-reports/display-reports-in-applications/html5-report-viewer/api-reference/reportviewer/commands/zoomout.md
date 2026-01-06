@@ -25,3 +25,5 @@ Zooms out the report.
 // Check if zoomOut is checkedif (rv.commands.zoomOut.checked()) {}
 ````
 
+
+

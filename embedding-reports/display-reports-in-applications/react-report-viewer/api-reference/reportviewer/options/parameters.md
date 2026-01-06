@@ -21,3 +21,5 @@ Allows the user to define parameter options for the report parameters.
 // Configure parameter editors<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  parameters={{    editors: {      singleSelect: "COMBO_BOX",      multiSelect: "LIST_VIEW"    }  }}/>
 ````
 
+
+

@@ -29,3 +29,5 @@ Gets or sets the print mode of the viewer.
 ## See Also
 
 * [PrintMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/printmode%})
+
+

@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the HistoryForward command. Execute to go forward to the previously rendered report from history.
 
+
+

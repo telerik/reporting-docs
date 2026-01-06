@@ -25,3 +25,5 @@ Goes forward to the next rendered report from history.
 // Check if historyForward is checkedif (rv.commands.historyForward.checked()) {}
 ````
 
+
+

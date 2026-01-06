@@ -27,3 +27,5 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 documentMapAreaPosition: string = "RIGHT";
 ````
 
+
+

@@ -33,3 +33,5 @@ Configuration for Telerik Report Server. Report Server for .NET supports Token (
 // Use Report Server for .NET Framework 4.6.2 with Guest account.$("#reportViewer1").telerik_ReportViewer({  // Configuration for Telerik Report Server for .NET Framework 4.6.2 (Guest must be enabled on server)  reportServer: {    url: "https://myserver/"  }});
 ````
 
+
+

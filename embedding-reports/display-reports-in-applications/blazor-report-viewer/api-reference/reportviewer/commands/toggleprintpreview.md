@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the TogglePrintPreview command. Execute to toggle between Print Preview and Interactive view modes.
 
+
+

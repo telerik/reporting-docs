@@ -39,3 +39,4 @@ Sets the authentication token.
 ````JavaScript
 // Set authentication tokenreportViewerRef.current.setAuthenticationToken("YOUR_AUTH_TOKEN");
 ````
+

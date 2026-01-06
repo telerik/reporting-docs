@@ -39,3 +39,4 @@ Sets the view mode and automatically reloads the current report. The current Rep
 ````typescript
 viewer.setViewMode('PRINT_PREVIEW');
 ````
+

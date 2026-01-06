@@ -33,3 +33,4 @@ Gets the viewer’s current page that is displayed.
 ````JavaScript
 // Get current page numberconst currentPage = reportViewerRef.current.currentPage();console.log("Current page:", currentPage);
 ````
+

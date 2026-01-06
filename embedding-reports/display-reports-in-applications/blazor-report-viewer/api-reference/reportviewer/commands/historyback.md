@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the HistoryBack command. Execute to go back to the previously rendered report from history.
 
+
+

@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the Zoom command. Execute to zoom the report with a specified ratio.
 
+
+

@@ -48,3 +48,4 @@ Sets the report viewer's scale factor.
     }
 }
 ````
+

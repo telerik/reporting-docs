@@ -38,3 +38,5 @@ Gets or sets the viewer's event handler function names as strings. The function 
 ## See Also
 
 * [ClientEventsOptions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/clienteventsoptions%})
+
+

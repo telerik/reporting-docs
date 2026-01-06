@@ -25,3 +25,5 @@ Goes forward to the next rendered report from history.
 // Check if the command is checkedconst isChecked = viewer.commands.historyForward.checked();
 ````
 
+
+

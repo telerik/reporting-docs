@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the Print command. Execute to print the report.
 
+
+

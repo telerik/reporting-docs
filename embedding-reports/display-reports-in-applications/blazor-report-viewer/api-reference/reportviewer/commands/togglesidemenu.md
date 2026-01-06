@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the ToggleSideMenu command. Execute to show or hide the side menu.
 
+
+

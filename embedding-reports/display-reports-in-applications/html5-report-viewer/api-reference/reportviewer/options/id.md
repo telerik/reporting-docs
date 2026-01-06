@@ -21,3 +21,5 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 // Set a custom viewer ID$("#reportViewer1").telerik_ReportViewer({ serviceUrl: "api/reports/", reportSource: { report: "Dashboard.trdp" }, id: "myViewer1"});
 ````
 
+
+

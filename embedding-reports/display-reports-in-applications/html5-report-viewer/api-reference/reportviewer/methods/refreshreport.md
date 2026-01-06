@@ -43,3 +43,4 @@ Refreshes the currently loaded report. Forces the viewer to reload the report fr
 ````JavaScript
 // Refresh the report, using cache if availablevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.refreshReport(false);
 ````
+

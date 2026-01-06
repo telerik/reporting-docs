@@ -44,3 +44,4 @@ Binds event handlers to the specified event.
 ````JavaScript
 // Bind to the 'error' eventvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.bind(telerikReportViewer.Events.ERROR, function(e, args) {  alert("An error occurred: " + args);});
 ````
+

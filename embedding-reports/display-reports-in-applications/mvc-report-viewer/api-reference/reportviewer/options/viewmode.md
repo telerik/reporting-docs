@@ -39,3 +39,5 @@ This example demonstrates how to set the ViewMode of the Telerik Report Viewer t
 ## See Also
 
 * [ViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations/viewmode%})
+
+

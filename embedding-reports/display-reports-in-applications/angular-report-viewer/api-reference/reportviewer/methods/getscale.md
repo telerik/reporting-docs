@@ -35,3 +35,4 @@ const scaleInfo = viewer.getScale();
 console.log(scaleInfo.scale); // e.g., 1.0
 console.log(scaleInfo.scaleMode); // e.g., "SPECIFIC"
 ````
+

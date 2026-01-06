@@ -30,3 +30,5 @@ Sets if the report is displayed in single page or continuous scroll mode.
 pageMode: string = "SINGLE_PAGE";
 ````
 
+
+

@@ -47,3 +47,5 @@ position: 0
 | [toggleZoomMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/togglezoommode%})|Changes the zoom mode of the report.|
 | [zoomIn]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/zoomin%})|Zooms in the report.|
 | [zoomOut]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/zoomout%})|Zooms out the report.|
+
+

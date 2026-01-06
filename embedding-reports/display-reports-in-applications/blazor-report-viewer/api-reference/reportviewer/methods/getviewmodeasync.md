@@ -45,3 +45,4 @@ Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreportin
     }
 }
 ````
+

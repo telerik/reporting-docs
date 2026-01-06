@@ -21,3 +21,5 @@ If provided, a Bearer token will be set in the Authorization header for requests
 // Set authentication token$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // Bearer token for REST service requests  authenticationToken: "YOUR_AUTH_TOKEN"});
 ````
 
+
+

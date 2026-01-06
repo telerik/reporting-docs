@@ -21,3 +21,5 @@ A class used for disabled state buttons.
 // Use a custom class for disabled buttons$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  disabledButtonClass: "my-disabled"});
 ````
 
+
+

@@ -25,3 +25,5 @@ Stops the rendering of the current report.
 // Check if the command is checkedconst isChecked = viewer.commands.stopRendering.checked();
 ````
 
+
+

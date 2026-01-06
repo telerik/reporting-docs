@@ -43,3 +43,4 @@ Shows or hides the parameters area in the viewer UI.
 ````JavaScript
 // Hide the parameters areavar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.parametersAreaVisible(false);
 ````
+

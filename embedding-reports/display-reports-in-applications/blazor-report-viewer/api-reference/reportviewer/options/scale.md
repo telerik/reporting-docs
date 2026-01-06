@@ -21,3 +21,5 @@ Gets or sets zoom ratio of the report. ScaleMode needs to be set to Specific for
 <ReportViewer Scale="1.5" />
 ````
 
+
+

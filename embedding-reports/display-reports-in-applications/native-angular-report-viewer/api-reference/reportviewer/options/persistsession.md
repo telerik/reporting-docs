@@ -27,3 +27,5 @@ Determines whether to persist the viewer session across browser sessions.
 persistSession: boolean = true;
 ````
 
+
+

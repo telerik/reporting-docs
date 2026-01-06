@@ -27,3 +27,5 @@ Sets how the report pages are scaled.
 scaleMode: ScaleMode = 'fitPageWidth';
 ````
 
+
+

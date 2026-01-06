@@ -25,3 +25,5 @@ Refreshes the report.
 // Check if the command is checkedconst isChecked = viewer.commands.refresh.checked();
 ````
 
+
+

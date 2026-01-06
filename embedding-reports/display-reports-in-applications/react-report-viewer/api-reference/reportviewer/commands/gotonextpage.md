@@ -25,3 +25,5 @@ Goes to the next page of the report.
 // Check if the command is checkedconst isChecked = viewer.commands.goToNextPage.checked();
 ````
 
+
+

@@ -47,3 +47,4 @@ Gets or sets the report source for the viewer. When called with an argument, set
 ````JavaScript
 // Clear the report sourcevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.reportSource(null);
 ````
+

@@ -21,3 +21,5 @@ Sets whether the viewer's client session is persisted between page refreshes (e.
 // Enable session persistence<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  persistSession={true}  id="myConstantId"/>
 ````
 
+
+

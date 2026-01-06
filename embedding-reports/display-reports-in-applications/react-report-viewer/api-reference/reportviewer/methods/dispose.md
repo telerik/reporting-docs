@@ -33,3 +33,4 @@ Stops sending keep alive requests to the server, if keep client alive was enable
 ````JavaScript
 // Manually dispose the viewerreportViewerRef.current.dispose();
 ````
+

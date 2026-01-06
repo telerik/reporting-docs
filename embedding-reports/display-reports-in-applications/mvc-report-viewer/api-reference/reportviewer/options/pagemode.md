@@ -35,3 +35,5 @@ Specifies whether the viewer is in Continuous scroll or Single page mode.
 ## See Also
 
 * [PageMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations/pagemode%})
+
+

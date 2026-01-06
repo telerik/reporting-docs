@@ -47,3 +47,5 @@ position: 0
 | [Zoom]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/zoom%})|Gets the Zoom command. Execute to zoom the report with a specified ratio.|
 | [ZoomIn]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/zoomin%})|Gets the ZoomIn command. Execute to zoom the report in.|
 | [ZoomOut]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/zoomout%})|Gets the ZoomOut command. Execute to zoom the report out.|
+
+

@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the ToggleSearchDialog command. Execute to show or hide the search dialog.
 
+
+

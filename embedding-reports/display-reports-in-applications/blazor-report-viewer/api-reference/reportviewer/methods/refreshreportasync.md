@@ -42,3 +42,4 @@ Reloads/refreshes the current report.
     }
 }
 ````
+

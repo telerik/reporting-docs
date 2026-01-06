@@ -21,3 +21,5 @@ Gets the total number of pages in the current report. The total page count of th
 console.log("The total number of pages in the current report are.", this.viewer.totalPages);
 ````
 
+
+

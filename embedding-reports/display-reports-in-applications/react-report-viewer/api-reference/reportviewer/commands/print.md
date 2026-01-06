@@ -25,3 +25,5 @@ Triggers the report printing.
 // Check if the command is checkedconst isChecked = viewer.commands.print.checked();
 ````
 
+
+

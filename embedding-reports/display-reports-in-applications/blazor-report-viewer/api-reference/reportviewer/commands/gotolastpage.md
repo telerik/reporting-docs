@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the GoToLastPage command. Execute to go to the last page of the report.
 
+
+

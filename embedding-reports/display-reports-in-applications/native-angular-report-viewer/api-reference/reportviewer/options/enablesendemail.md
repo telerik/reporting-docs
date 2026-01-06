@@ -27,3 +27,5 @@ Enables or disables the send email functionality.
 enableSendEmail: boolean = true;
 ````
 
+
+

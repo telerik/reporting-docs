@@ -27,3 +27,5 @@ Sets the address of the HTML page that contains the viewer templates. If omitted
 templateUrl: string = "https://site.com/path/reportViewerTemplate.html";
 ````
 
+
+

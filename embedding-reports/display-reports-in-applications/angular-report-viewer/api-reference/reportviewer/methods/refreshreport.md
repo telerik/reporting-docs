@@ -33,3 +33,4 @@ Reloads/refreshes the current report. The current ReportViewer object
 ````typescript
 viewer.refreshReport();
 ````
+

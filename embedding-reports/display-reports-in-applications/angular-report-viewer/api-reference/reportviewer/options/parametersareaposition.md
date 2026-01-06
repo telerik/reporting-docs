@@ -27,3 +27,5 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 parametersAreaPosition: string = "LEFT";
 ````
 
+
+

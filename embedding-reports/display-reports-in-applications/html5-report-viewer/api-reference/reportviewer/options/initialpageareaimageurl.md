@@ -21,3 +21,5 @@ The image URL for the PageArea background image.
 // Set a background image$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  initialPageAreaImageUrl: "/images/bg.png"});
 ````
 
+
+

@@ -45,3 +45,4 @@ Gets the report viewer's scale factor.
     }
 }
 ````
+

@@ -27,3 +27,5 @@ CSS class added to buttons when a command is in a checked state. Used with data 
 checkedButtonClass: string = "my-checked-button-class";
 ````
 
+
+

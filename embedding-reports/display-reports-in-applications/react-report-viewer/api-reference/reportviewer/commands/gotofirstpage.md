@@ -25,3 +25,5 @@ Goes to the first page of the report.
 // Check if the command is checkedconst isChecked = viewer.commands.goToFirstPage.checked();
 ````
 
+
+

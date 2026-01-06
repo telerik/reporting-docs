@@ -11,3 +11,5 @@ reportingArea: BlazorWrapper
 
 Gets the GoToNextPage command. Execute to go to the next page of the report.
 
+
+

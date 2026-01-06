@@ -21,3 +21,5 @@ Sets how the report pages are scaled. Available options: "FIT_PAGE_WIDTH" (pages
 // Fit page width<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  scaleMode="FIT_PAGE_WIDTH"/>
 ````
 
+
+

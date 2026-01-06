@@ -25,3 +25,5 @@ Changes the zoom mode of the report.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleZoomMode.checked();
 ````
 
+
+

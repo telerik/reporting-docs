@@ -43,3 +43,4 @@ Gets or sets the page mode (e.g., Single Page or Continuous Scroll).
 ````JavaScript
 // Set the page mode to Single Pagevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
 ````
+

@@ -25,3 +25,5 @@ Shows or hides the search dialog.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleSearchDialog.checked();
 ````
 
+
+

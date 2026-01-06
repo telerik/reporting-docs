@@ -21,3 +21,5 @@ Gets the current report's document map nodes if any. an array of DocumentMapNode
 console.log("Document map nodes:", JSON.stringify(this.viewer.getDocumentMapNodes));
 ````
 
+
+

@@ -35,3 +35,4 @@ const source = viewer.getReportSource();
 console.log(source.report); // Report identifier
 console.log(source.parameters); // Report parameters
 ````
+

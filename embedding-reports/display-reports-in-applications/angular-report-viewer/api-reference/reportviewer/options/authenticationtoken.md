@@ -27,3 +27,5 @@ If provided, a Bearer token will be set in the Authorization header for every re
 authenticationToken: string = "your-authentication-token";
 ````
 
+
+

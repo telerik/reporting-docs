@@ -25,3 +25,5 @@ Changes the zoom mode of the report.
 // Check if toggleZoomMode is checkedif (rv.commands.toggleZoomMode.checked()) {}
 ````
 
+
+

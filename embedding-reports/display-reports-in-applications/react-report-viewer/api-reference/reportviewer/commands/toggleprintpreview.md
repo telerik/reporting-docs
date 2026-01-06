@@ -25,3 +25,5 @@ Toggles between Print Preview and Interactive view modes.
 // Check if the command is checkedconst isChecked = viewer.commands.togglePrintPreview.checked();
 ````
 
+
+

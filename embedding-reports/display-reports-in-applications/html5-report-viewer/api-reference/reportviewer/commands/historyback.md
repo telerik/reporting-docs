@@ -25,3 +25,5 @@ Goes back to the previously rendered report from history.
 // Check if historyBack is checkedvar rv = $("#reportViewer1").data("telerik_ReportViewer");if (rv.commands.historyBack.checked()) {}
 ````
 
+
+

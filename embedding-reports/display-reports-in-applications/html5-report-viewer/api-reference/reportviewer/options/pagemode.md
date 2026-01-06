@@ -21,3 +21,5 @@ The page mode. See [PageModes]({%slug telerikreporting/using-reports-in-applicat
 // Set page mode to single page using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The page mode  pageMode: telerikReportViewer.PageModes.SINGLE_PAGE});
 ````
 
+
+

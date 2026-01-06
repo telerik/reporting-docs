@@ -27,3 +27,5 @@ Sets the page display mode of the viewer.
 pageMode: PageMode = 'singlePage';
 ````
 
+
+

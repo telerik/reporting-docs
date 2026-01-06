@@ -50,3 +50,5 @@ position: 0
 | [zoom]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/zoom%})|Zoom with a specified ratio. Accepts a zoom ratio as parameter: exec(1.5).|
 | [zoomIn]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/zoomin%})|Zoom-in the report.|
 | [zoomOut]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/zoomout%})|Zoom-out the report.|
+
+

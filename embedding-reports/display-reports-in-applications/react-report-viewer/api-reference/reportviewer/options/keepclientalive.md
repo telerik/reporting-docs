@@ -21,3 +21,5 @@ Determines whether the client will be kept alive. Default value is true.
 // Keep client alive<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  keepClientAlive={true}/>
 ````
 
+
+

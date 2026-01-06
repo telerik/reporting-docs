@@ -41,3 +41,5 @@ Example: Set the print mode of the Telerik Reporting HTML5 MVC Report Viewer to 
 ## See Also
 
 * [PrintMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations/printmode%})
+
+

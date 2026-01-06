@@ -25,3 +25,5 @@ Shows or hides the side menu.
 // Check if the command is checkedconst isChecked = viewer.commands.toggleSideMenu.checked();
 ````
 
+
+

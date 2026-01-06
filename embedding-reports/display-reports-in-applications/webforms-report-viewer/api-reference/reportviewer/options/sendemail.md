@@ -44,3 +44,5 @@ Gets or sets the email functionality configuration including enabled state, form
 ## See Also
 
 * [SendEmail]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/sendemail%})
+
+

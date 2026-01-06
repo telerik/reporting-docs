@@ -5,6 +5,7 @@ type: how-to
 page_title: The legacy Telerik Reporting ASP.NET WebForms Report Viewer is vulnerable to cross-site scripting (XSS)
 slug: cross-site-scripting-(xss)-and-the-legacy-telerik-reporting-asp.net-webforms-report-viewer
 res_type: kb
+previous_url: /knowledge-base/cross-site-scripting-(xss)-and-the-legacy-telerik-reporting-asp.net-webforms-report-viewer
 ---
 
 ## Environment

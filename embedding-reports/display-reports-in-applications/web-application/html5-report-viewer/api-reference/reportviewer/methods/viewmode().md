@@ -7,7 +7,7 @@ tags: viewmode()
 published: True
 reportingArea: HTML5
 position: 18
-previous_url: /html5-report-viewer-reportviewer-methods-viewmode
+previous_url: /html5-report-viewer-reportviewer-methods-viewmode, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode()
 ---
 
 # The `viewMode()` method of the HTML5 Report Viewer

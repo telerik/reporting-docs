@@ -7,7 +7,7 @@ tags: printbegin,args
 published: True
 reportingArea: HTML5
 position: 7
-previous_url: /html5-report-viewer-reportviewer-events-printbegin
+previous_url: /html5-report-viewer-reportviewer-events-printbegin, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)
 ---
 
 <style>

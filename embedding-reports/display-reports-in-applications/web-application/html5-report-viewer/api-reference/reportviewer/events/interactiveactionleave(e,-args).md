@@ -7,7 +7,7 @@ tags: interactiveactionleave(e,,args)
 published: True
 reportingArea: HTML5
 position: 14
-previous_url: /html5-report-viewer-reportviewer-events-interactiveactionleave
+previous_url: /html5-report-viewer-reportviewer-events-interactiveactionleave, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)
 ---
 
 <style>

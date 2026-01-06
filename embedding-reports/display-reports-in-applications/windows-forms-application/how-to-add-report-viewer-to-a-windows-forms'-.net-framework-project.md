@@ -7,7 +7,7 @@ tags: how, to, add, report, viewer, to, a, windows, forms , .net, framework, pro
 published: True
 reportingArea: WinForms
 position: 1
-previous_url: /winforms-report-viewer-embedding
+previous_url: /winforms-report-viewer-embedding, /embedding-reports/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project
 ---
 
 # Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project

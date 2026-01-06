@@ -7,7 +7,7 @@ tags: setting,theme,implicit,styles
 published: True
 reportingArea: WPF
 position: 2
-previous_url: /wpf-report-viewer-implicit-styles, /embedding-reports/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)
+previous_url: /wpf-report-viewer-implicit-styles, /embedding-reports/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles), /embedding-reports/display-reports-in-applications/wpf-application/customizing/setting-a-theme-(using-implicit-styles)
 ---
 
 # Setting a Theme (Using Implicit Styles)

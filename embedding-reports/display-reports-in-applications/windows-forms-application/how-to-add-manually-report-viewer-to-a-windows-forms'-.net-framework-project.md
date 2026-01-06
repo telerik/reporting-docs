@@ -7,7 +7,7 @@ tags: how, to, add, manually, report, viewer, to, a, windows, forms, .net, frame
 published: True
 reportingArea: WinForms
 position: 3
-previous_url: /winforms-report-viewer-manual-setup
+previous_url: /winforms-report-viewer-manual-setup, /embedding-reports/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project
 ---
 
 # Adding Manually the WinForms Report Viewer to a Windows Forms .NET Framework Project

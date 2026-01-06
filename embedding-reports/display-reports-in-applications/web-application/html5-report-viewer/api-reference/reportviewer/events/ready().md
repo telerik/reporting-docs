@@ -7,7 +7,7 @@ tags: ready,viewer,html5
 published: True
 reportingArea: HTML5
 position: 0
-previous_url: /html5-report-viewer-reportviewer-events-ready, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/
+previous_url: /html5-report-viewer-reportviewer-events-ready, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready()
 ---
 
 # The `ready()` Event of the HTML5 Report Viewer

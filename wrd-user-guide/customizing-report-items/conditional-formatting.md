@@ -24,7 +24,7 @@ To visually highlight important data, **Conditional formatting** lets you automa
   
 ## Formatting a Single Item
 
-If you want to format a single cell value according to a specific condition, for example **LineTotal &lt; 50**, follow the steps:
+To format a single cell value based on a specific condition, for example, **LineTotal &lt; 50**:
 
 1. Select the desired TextBox item (for example, LineTotal).
 

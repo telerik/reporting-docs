@@ -7,7 +7,7 @@ tags: error,args
 published: True
 reportingArea: HTML5
 position: 1
-previous_url: /html5-report-viewer-reportviewer-events-error, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)
+previous_url: /html5-report-viewer-reportviewer-events-error, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e%2c-args)
 ---
 <style>
 table th:first-of-type {

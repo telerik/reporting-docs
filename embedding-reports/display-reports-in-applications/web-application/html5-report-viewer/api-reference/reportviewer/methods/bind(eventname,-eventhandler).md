@@ -7,7 +7,7 @@ tags: bind(eventname,,eventhandler)
 published: True
 reportingArea: HTML5
 position: 4
-previous_url: /html5-report-viewer-reportviewer-methods-bind-en-eh, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname,-eventhandler)
+previous_url: /html5-report-viewer-reportviewer-methods-bind-en-eh, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname%2c-eventhandler)
 ---
 
 # The `bind(eventName, eventHandler)` method of the HTML5 Report Viewer

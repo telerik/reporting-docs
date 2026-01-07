@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-book/page-settings,-sizes-and-na
 tags: page,settings,,sizes,and,naming
 published: True
 position: 4
-previous_url: /designing-reports-reportbook-settings, /designing-reports/report-book/page-settings,-sizes-and-naming
+previous_url: /designing-reports-reportbook-settings, /designing-reports/report-book/page-settings%2c-sizes-and-naming
 reportingArea: General
 ---
 

@@ -7,7 +7,7 @@ tags: viewertooltipopening,args
 published: True
 reportingArea: HTML5
 position: 15
-previous_url: /html5-report-viewer-reportviewer-events-viewertooltipopening, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)
+previous_url: /html5-report-viewer-reportviewer-events-viewertooltipopening, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e%2c-args)
 ---
 
 <style>

@@ -7,7 +7,7 @@ tags: pageready(e,,args)
 published: True
 reportingArea: HTML5
 position: 6
-previous_url: /html5-report-viewer-reportviewer-events-pageready, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)
+previous_url: /html5-report-viewer-reportviewer-events-pageready, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e%2c-args)
 ---
 
 <style>

@@ -14,15 +14,24 @@ Zoom-out the report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.zoomOut.exec()}>Zoom Out</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.zoomOut.exec()}>Zoom Out</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.zoomOut.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.zoomOut.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.zoomOut.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.zoomOut.checked();
 ````
 
 

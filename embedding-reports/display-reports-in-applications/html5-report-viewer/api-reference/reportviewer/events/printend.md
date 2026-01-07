@@ -14,7 +14,18 @@ Called after printing the report. Receives two parameters: `e` (the jQuery.Event
 ## Example
 
 ````JavaScript
-$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  printEnd: function(e, args) {    // This event handler will be called after printing the report.    // 'e.data.sender' is the report viewer instance.    // 'args.url' is the printed report resource URL.    console.log("The printed report can be found at " + args.url);  }});
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: {
+    report: "Dashboard.trdp"
+  },
+  printEnd: function(e, args) {
+    // This event handler will be called after printing the report.
+    // 'e.data.sender' is the report viewer instance.
+    // 'args.url' is the printed report resource URL.
+    console.log("The printed report can be found at " + args.url);
+  }
+});
 ````
 
 ## Event Binding

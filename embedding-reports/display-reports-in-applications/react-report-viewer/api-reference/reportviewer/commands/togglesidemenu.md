@@ -14,15 +14,24 @@ Shows or hides the side menu.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleSideMenu.exec()}>Toggle Side Menu</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleSideMenu.exec()}>Toggle Side Menu</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleSideMenu.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleSideMenu.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleSideMenu.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleSideMenu.checked();
 ````
 
 

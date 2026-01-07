@@ -14,15 +14,24 @@ Changes the zoom mode of the report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleZoomMode.exec()}>Toggle Zoom Mode</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleZoomMode.exec()}>Toggle Zoom Mode</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleZoomMode.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleZoomMode.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleZoomMode.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleZoomMode.checked();
 ````
 
 

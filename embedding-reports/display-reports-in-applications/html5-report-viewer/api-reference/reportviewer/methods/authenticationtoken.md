@@ -41,6 +41,8 @@ Sets the authentication token. Used for service requests.
 ## Example
 
 ````JavaScript
-// Set the authentication token for the viewervar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.authenticationToken("YOUR_AUTH_TOKEN");
+// Set the authentication token for the viewer
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+viewer.authenticationToken("YOUR_AUTH_TOKEN");
 ````
 

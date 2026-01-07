@@ -14,7 +14,14 @@ Called after printing the report. Receives two parameters: `e` (the event object
 ## Example
 
 ````JavaScript
-// Print end handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  printEnd={(e, args) => {    console.log("The printed report can be found at " + args.url);  }}/>
+// Print end handler
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  printEnd={(e, args) => {
+    console.log("The printed report can be found at " + args.url);
+  }}
+/>
 ````
 
 ## Event Binding

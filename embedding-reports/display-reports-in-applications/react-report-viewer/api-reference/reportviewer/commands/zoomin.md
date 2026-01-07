@@ -14,15 +14,24 @@ Zoom-in the report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.zoomIn.exec()}>Zoom In</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.zoomIn.exec()}>Zoom In</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.zoomIn.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.zoomIn.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.zoomIn.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.zoomIn.checked();
 ````
 
 

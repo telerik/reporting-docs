@@ -14,15 +14,24 @@ Toggles between Print Preview and Interactive view modes.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.togglePrintPreview.exec()}>Toggle Print Preview</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.togglePrintPreview.exec()}>Toggle Print Preview</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.togglePrintPreview.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.togglePrintPreview.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.togglePrintPreview.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.togglePrintPreview.checked();
 ````
 
 

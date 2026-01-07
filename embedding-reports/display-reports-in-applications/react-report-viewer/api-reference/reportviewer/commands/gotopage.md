@@ -14,15 +14,24 @@ Goes to a specific page of the report. Accepts a page number as parameter: exec(
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.goToPage.exec(5)}>Go to Page 5</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.goToPage.exec(5)}>Go to Page 5</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.goToPage.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.goToPage.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.goToPage.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.goToPage.checked();
 ````
 
 

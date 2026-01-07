@@ -14,15 +14,24 @@ Triggers the report printing.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.print.exec()}>Print</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.print.exec()}>Print</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.print.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.print.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.print.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.print.checked();
 ````
 
 

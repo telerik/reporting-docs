@@ -35,6 +35,8 @@ Disposes the viewer instance, cleaning up resources and event handlers. After ca
 ## Example
 
 ````JavaScript
-// Dispose the viewer instance when it is no longer neededvar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.dispose();
+// Dispose the viewer instance when it is no longer needed
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+viewer.dispose();
 ````
 

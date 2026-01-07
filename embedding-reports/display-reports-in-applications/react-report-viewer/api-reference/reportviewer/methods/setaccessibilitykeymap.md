@@ -41,6 +41,13 @@ Sets the shortcut keys used when the report viewer is in accessible mode. It is 
 ## Example
 
 ````JavaScript
-// Set custom accessibility key mapreportViewerRef.current.setAccessibilityKeyMap({  CONFIRM_KEY: 13,  MENU_AREA_KEY: 77,  CONTENT_AREA_KEY: 67,  PARAMETERS_AREA_KEY: 80,  DOCUMENT_MAP_AREA_KEY: 68});
+// Set custom accessibility key map
+reportViewerRef.current.setAccessibilityKeyMap({
+  CONFIRM_KEY: 13,
+  MENU_AREA_KEY: 77,
+  CONTENT_AREA_KEY: 67,
+  PARAMETERS_AREA_KEY: 80,
+  DOCUMENT_MAP_AREA_KEY: 68
+});
 ````
 

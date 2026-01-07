@@ -41,6 +41,7 @@ Sets the scale factor and scale mode.
 ## Example
 
 ````JavaScript
-// Set scale to 150% and mode to SPECIFICreportViewerRef.current.setScale({ scale: 1.5, scaleMode: "SPECIFIC" });
+// Set scale to 150% and mode to SPECIFIC
+reportViewerRef.current.setScale({ scale: 1.5, scaleMode: "SPECIFIC" });
 ````
 

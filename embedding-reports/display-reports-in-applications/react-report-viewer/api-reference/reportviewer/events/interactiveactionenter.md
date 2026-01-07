@@ -14,7 +14,16 @@ Called when entering an interactive action area. Receives two parameters: `e` (t
 ## Example
 
 ````JavaScript
-// Interactive action enter handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  interactiveActionEnter={(e, args) => {    if (args.action.Type === "sorting") {      // Custom logic for sorting action    }  }}/>
+// Interactive action enter handler
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  interactiveActionEnter={(e, args) => {
+    if (args.action.Type === "sorting") {
+      // Custom logic for sorting action
+    }
+  }}
+/>
 ````
 
 ## Event Binding

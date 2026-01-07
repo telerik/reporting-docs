@@ -14,7 +14,22 @@ Called before rendering the report (preview only, not for export or print). Rece
 ## Example
 
 ````JavaScript
-$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  renderingBegin: function(e, args) {    // This event handler will be called before rendering the report (preview).    // 'e.data.sender' is the report viewer instance.    // 'args.deviceInfo' contains the render device info.    // The deviceInfo property can be used to pass a specific culture to the REST Service so it renders the report with it.    const culture = "yourCulture";    args.deviceInfo["CurrentCulture"] = culture;    args.deviceInfo["CurrentUICulture"] = culture;    console.log("About to render the report.");  }});
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: {
+    report: "Dashboard.trdp"
+  },
+  renderingBegin: function(e, args) {
+    // This event handler will be called before rendering the report (preview).
+    // 'e.data.sender' is the report viewer instance.
+    // 'args.deviceInfo' contains the render device info.
+    // The deviceInfo property can be used to pass a specific culture to the REST Service so it renders the report with it.
+    const culture = "yourCulture";
+    args.deviceInfo["CurrentCulture"] = culture;
+    args.deviceInfo["CurrentUICulture"] = culture;
+    console.log("About to render the report.");
+  }
+});
 ````
 
 ## Event Binding

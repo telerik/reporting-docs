@@ -14,7 +14,14 @@ Called after a page of the report is ready. Receives two parameters: `e` (the ev
 ## Example
 
 ````JavaScript
-// Page ready handler<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  pageReady={(e, args) => {    console.log("The content of the page is: " + args.pageContent);  }}/>
+// Page ready handler
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  pageReady={(e, args) => {
+    console.log("The content of the page is: " + args.pageContent);
+  }}
+/>
 ````
 
 ## Event Binding

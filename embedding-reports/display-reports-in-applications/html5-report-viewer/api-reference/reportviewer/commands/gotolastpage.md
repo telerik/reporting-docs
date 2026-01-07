@@ -14,15 +14,19 @@ Goes to the last page of the report.
 ## Example
 
 ````JavaScript
-// Execute the goToLastPage commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.goToLastPage.exec();
+// Execute the goToLastPage command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.goToLastPage.exec();
 ````
 
 ````JavaScript
-// Check if goToLastPage is enabledif (rv.commands.goToLastPage.enabled()) {}
+// Check if goToLastPage is enabled
+if (rv.commands.goToLastPage.enabled()) {}
 ````
 
 ````JavaScript
-// Check if goToLastPage is checkedif (rv.commands.goToLastPage.checked()) {}
+// Check if goToLastPage is checked
+if (rv.commands.goToLastPage.checked()) {}
 ````
 
 

@@ -41,10 +41,14 @@ Gets or sets the page mode (e.g., Single Page or Continuous Scroll).
 ## Example
 
 ````JavaScript
-// Get the current page modevar viewer = $("#reportViewer1").data("telerik_ReportViewer");var pageMode = viewer.pageMode();
+// Get the current page mode
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+var pageMode = viewer.pageMode();
 ````
 
 ````JavaScript
-// Set the page mode to Single Pagevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
+// Set the page mode to Single Page
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+viewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
 ````
 

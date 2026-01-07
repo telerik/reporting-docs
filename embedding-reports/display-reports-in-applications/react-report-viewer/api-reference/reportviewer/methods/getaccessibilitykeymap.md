@@ -35,6 +35,10 @@ Gets the shortcut keys used when the report viewer is in accessible mode (enable
 ## Example
 
 ````JavaScript
-// Get accessibility key mapconst keyMap = reportViewerRef.current.getAccessibilityKeyMap();if (keyMap) {  console.log("Accessibility key map:", keyMap);}
+// Get accessibility key map
+const keyMap = reportViewerRef.current.getAccessibilityKeyMap();
+if (keyMap) {
+  console.log("Accessibility key map:", keyMap);
+}
 ````
 

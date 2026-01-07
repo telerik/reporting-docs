@@ -14,15 +14,19 @@ Zooms in the report.
 ## Example
 
 ````JavaScript
-// Execute the zoomIn commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.zoomIn.exec();
+// Execute the zoomIn command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.zoomIn.exec();
 ````
 
 ````JavaScript
-// Check if zoomIn is enabledif (rv.commands.zoomIn.enabled()) {}
+// Check if zoomIn is enabled
+if (rv.commands.zoomIn.enabled()) {}
 ````
 
 ````JavaScript
-// Check if zoomIn is checkedif (rv.commands.zoomIn.checked()) {}
+// Check if zoomIn is checked
+if (rv.commands.zoomIn.checked()) {}
 ````
 
 

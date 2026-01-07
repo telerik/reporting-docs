@@ -14,15 +14,19 @@ Shows or hides the search dialog.
 ## Example
 
 ````JavaScript
-// Execute the toggleSearchDialog commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.toggleSearchDialog.exec();
+// Execute the toggleSearchDialog command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.toggleSearchDialog.exec();
 ````
 
 ````JavaScript
-// Check if toggleSearchDialog is enabledif (rv.commands.toggleSearchDialog.enabled()) {}
+// Check if toggleSearchDialog is enabled
+if (rv.commands.toggleSearchDialog.enabled()) {}
 ````
 
 ````JavaScript
-// Check if toggleSearchDialog is checkedif (rv.commands.toggleSearchDialog.checked()) {}
+// Check if toggleSearchDialog is checked
+if (rv.commands.toggleSearchDialog.checked()) {}
 ````
 
 

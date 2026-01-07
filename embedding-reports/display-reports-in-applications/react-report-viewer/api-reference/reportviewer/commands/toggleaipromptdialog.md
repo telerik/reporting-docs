@@ -14,15 +14,24 @@ Shows or hides the AI prompt dialog.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleAiPromptDialog.exec()}>Toggle AI Prompt</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleAiPromptDialog.exec()}>Toggle AI Prompt</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleAiPromptDialog.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleAiPromptDialog.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleAiPromptDialog.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleAiPromptDialog.checked();
 ````
 
 

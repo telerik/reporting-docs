@@ -14,7 +14,18 @@ Called before printing the report. Receives two parameters: `e` (the jQuery.Even
 ## Example
 
 ````JavaScript
-$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  printBegin: function(e, args) {    // This event handler will be called before printing the report.    // 'e.data.sender' is the report viewer instance.    // 'args.deviceInfo' contains the print device info.    console.log("About to print the report.");  }});
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: {
+    report: "Dashboard.trdp"
+  },
+  printBegin: function(e, args) {
+    // This event handler will be called before printing the report.
+    // 'e.data.sender' is the report viewer instance.
+    // 'args.deviceInfo' contains the print device info.
+    console.log("About to print the report.");
+  }
+});
 ````
 
 ## Event Binding

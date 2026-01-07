@@ -14,15 +14,24 @@ Goes to the first page of the report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.goToFirstPage.exec()}>First Page</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.goToFirstPage.exec()}>First Page</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.goToFirstPage.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.goToFirstPage.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.goToFirstPage.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.goToFirstPage.checked();
 ````
 
 

@@ -14,15 +14,19 @@ Shows or hides the document map.
 ## Example
 
 ````JavaScript
-// Execute the toggleDocumentMap commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.toggleDocumentMap.exec();
+// Execute the toggleDocumentMap command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.toggleDocumentMap.exec();
 ````
 
 ````JavaScript
-// Check if toggleDocumentMap is enabledif (rv.commands.toggleDocumentMap.enabled()) {}
+// Check if toggleDocumentMap is enabled
+if (rv.commands.toggleDocumentMap.enabled()) {}
 ````
 
 ````JavaScript
-// Check if toggleDocumentMap is checkedif (rv.commands.toggleDocumentMap.checked()) {}
+// Check if toggleDocumentMap is checked
+if (rv.commands.toggleDocumentMap.checked()) {}
 ````
 
 

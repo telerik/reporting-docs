@@ -41,6 +41,7 @@ Sets the authentication token.
 ## Example
 
 ````JavaScript
-// Set authentication tokenreportViewerRef.current.setAuthenticationToken("YOUR_AUTH_TOKEN");
+// Set authentication token
+reportViewerRef.current.setAuthenticationToken("YOUR_AUTH_TOKEN");
 ````
 

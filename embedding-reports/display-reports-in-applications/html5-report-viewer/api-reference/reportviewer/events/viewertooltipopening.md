@@ -14,7 +14,20 @@ Called before a tooltip is opened, allowing cancellation. Receives two parameter
 ## Example
 
 ````JavaScript
-$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  viewerToolTipOpening: function(e, args) {    // This event handler will be called before a tooltip is opened.    // 'e.data.sender' is the report viewer instance.    // 'args.toolTip.title' is the tooltip title.    // 'args.cancel' can be set to true to cancel the tooltip.    // Example: disable tooltip if title contains '2004'    args.cancel = (/2004/i.test(args.toolTip.title));  }});
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: {
+    report: "Dashboard.trdp"
+  },
+  viewerToolTipOpening: function(e, args) {
+    // This event handler will be called before a tooltip is opened.
+    // 'e.data.sender' is the report viewer instance.
+    // 'args.toolTip.title' is the tooltip title.
+    // 'args.cancel' can be set to true to cancel the tooltip.
+    // Example: disable tooltip if title contains '2004'
+    args.cancel = (/2004/i.test(args.toolTip.title));
+  }
+});
 ````
 
 ## Event Binding

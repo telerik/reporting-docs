@@ -41,6 +41,7 @@ Sets the view mode and automatically reloads the current report (if any) into th
 ## Example
 
 ````JavaScript
-// Set view mode to print previewreportViewerRef.current.setViewMode("PRINT_PREVIEW");
+// Set view mode to print preview
+reportViewerRef.current.setViewMode("PRINT_PREVIEW");
 ````
 

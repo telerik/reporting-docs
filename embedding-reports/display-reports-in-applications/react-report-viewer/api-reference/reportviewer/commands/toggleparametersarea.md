@@ -14,15 +14,24 @@ Shows or hides the parameters area.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleParametersArea.exec()}>Toggle Parameters</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleParametersArea.exec()}>Toggle Parameters</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleParametersArea.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleParametersArea.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleParametersArea.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleParametersArea.checked();
 ````
 
 

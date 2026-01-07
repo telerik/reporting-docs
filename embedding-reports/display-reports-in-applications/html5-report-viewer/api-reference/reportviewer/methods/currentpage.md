@@ -35,6 +35,8 @@ Gets the viewer’s current page that is displayed.
 ## Example
 
 ````JavaScript
-// Get the current page numbervar viewer = $("#reportViewer1").data("telerik_ReportViewer");var page = viewer.currentPage();
+// Get the current page number
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+var page = viewer.currentPage();
 ````
 

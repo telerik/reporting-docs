@@ -14,15 +14,19 @@ Goes to the next page of the report.
 ## Example
 
 ````JavaScript
-// Execute the goToNextPage commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.goToNextPage.exec();
+// Execute the goToNextPage command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.goToNextPage.exec();
 ````
 
 ````JavaScript
-// Check if goToNextPage is enabledif (rv.commands.goToNextPage.enabled()) {}
+// Check if goToNextPage is enabled
+if (rv.commands.goToNextPage.enabled()) {}
 ````
 
 ````JavaScript
-// Check if goToNextPage is checkedif (rv.commands.goToNextPage.checked()) {}
+// Check if goToNextPage is checked
+if (rv.commands.goToNextPage.checked()) {}
 ````
 
 

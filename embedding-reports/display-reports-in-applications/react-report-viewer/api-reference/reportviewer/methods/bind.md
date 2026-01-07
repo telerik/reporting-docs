@@ -42,10 +42,16 @@ Binds an event handler to the specified event.
 ## Example
 
 ````JavaScript
-// Bind to pageReady eventreportViewerRef.current.bind("pageReady", (e, args) => {  console.log("Page is ready!", args);});
+// Bind to pageReady event
+reportViewerRef.current.bind("pageReady", (e, args) => {
+  console.log("Page is ready!", args);
+});
 ````
 
 ````JavaScript
-// Bind to error eventreportViewerRef.current.bind("error", (e, args) => {  console.error("Report viewer error:", args);});
+// Bind to error event
+reportViewerRef.current.bind("error", (e, args) => {
+  console.error("Report viewer error:", args);
+});
 ````
 

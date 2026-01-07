@@ -14,15 +14,21 @@ Goes back to the previously rendered report from history.
 ## Example
 
 ````JavaScript
-// Execute the historyBack commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.historyBack.exec();
+// Execute the historyBack command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.historyBack.exec();
 ````
 
 ````JavaScript
-// Check if historyBack is enabledvar rv = $("#reportViewer1").data("telerik_ReportViewer");if (rv.commands.historyBack.enabled()) { }
+// Check if historyBack is enabled
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+if (rv.commands.historyBack.enabled()) { }
 ````
 
 ````JavaScript
-// Check if historyBack is checkedvar rv = $("#reportViewer1").data("telerik_ReportViewer");if (rv.commands.historyBack.checked()) {}
+// Check if historyBack is checked
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+if (rv.commands.historyBack.checked()) {}
 ````
 
 

@@ -41,6 +41,10 @@ Sets the report source - report and parameters. Automatically reloads the report
 ## Example
 
 ````JavaScript
-// Set a new report sourcereportViewerRef.current.setReportSource({  report: "SalesReport",  parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }});
+// Set a new report source
+reportViewerRef.current.setReportSource({
+  report: "SalesReport",
+  parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }
+});
 ````
 

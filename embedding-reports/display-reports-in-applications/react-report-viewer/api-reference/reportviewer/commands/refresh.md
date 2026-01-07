@@ -14,15 +14,24 @@ Refreshes the report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.refresh.exec()}>Refresh</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.refresh.exec()}>Refresh</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.refresh.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.refresh.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.refresh.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.refresh.checked();
 ````
 
 

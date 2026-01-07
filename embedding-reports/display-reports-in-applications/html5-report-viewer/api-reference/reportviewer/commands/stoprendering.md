@@ -14,15 +14,19 @@ Stops the rendering of the current report.
 ## Example
 
 ````JavaScript
-// Execute the stopRendering commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.stopRendering.exec();
+// Execute the stopRendering command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.stopRendering.exec();
 ````
 
 ````JavaScript
-// Check if stopRendering is enabledif (rv.commands.stopRendering.enabled()) {}
+// Check if stopRendering is enabled
+if (rv.commands.stopRendering.enabled()) {}
 ````
 
 ````JavaScript
-// Check if stopRendering is checkedif (rv.commands.stopRendering.checked()) {}
+// Check if stopRendering is checked
+if (rv.commands.stopRendering.checked()) {}
 ````
 
 

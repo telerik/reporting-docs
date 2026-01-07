@@ -14,15 +14,19 @@ Refreshes the report.
 ## Example
 
 ````JavaScript
-// Execute the refresh commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.refresh.exec();
+// Execute the refresh command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.refresh.exec();
 ````
 
 ````JavaScript
-// Check if refresh is enabledif (rv.commands.refresh.enabled()) {}
+// Check if refresh is enabled
+if (rv.commands.refresh.enabled()) {}
 ````
 
 ````JavaScript
-// Check if refresh is checkedif (rv.commands.refresh.checked()) {}
+// Check if refresh is checked
+if (rv.commands.refresh.checked()) {}
 ````
 
 

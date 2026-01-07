@@ -14,15 +14,24 @@ Shows or hides the document map.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleDocumentMap.exec()}>Toggle Document Map</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleDocumentMap.exec()}>Toggle Document Map</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleDocumentMap.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleDocumentMap.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleDocumentMap.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleDocumentMap.checked();
 ````
 
 

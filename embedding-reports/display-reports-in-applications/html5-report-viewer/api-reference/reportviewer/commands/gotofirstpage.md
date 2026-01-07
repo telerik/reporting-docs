@@ -14,15 +14,19 @@ Goes to the first page of the report.
 ## Example
 
 ````JavaScript
-// Execute the goToFirstPage commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.goToFirstPage.exec();
+// Execute the goToFirstPage command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.goToFirstPage.exec();
 ````
 
 ````JavaScript
-// Check if goToFirstPage is enabledif (rv.commands.goToFirstPage.enabled()) {}
+// Check if goToFirstPage is enabled
+if (rv.commands.goToFirstPage.enabled()) {}
 ````
 
 ````JavaScript
-// Check if goToFirstPage is checkedif (rv.commands.goToFirstPage.checked()) {}
+// Check if goToFirstPage is checked
+if (rv.commands.goToFirstPage.checked()) {}
 ````
 
 

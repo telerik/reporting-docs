@@ -14,15 +14,24 @@ Goes forward to the next rendered report from history.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.historyForward.exec()}>Forward</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.historyForward.exec()}>Forward</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.historyForward.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.historyForward.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.historyForward.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.historyForward.checked();
 ````
 
 

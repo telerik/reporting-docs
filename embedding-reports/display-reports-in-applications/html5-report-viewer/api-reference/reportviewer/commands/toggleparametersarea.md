@@ -14,15 +14,19 @@ Shows or hides the parameters area.
 ## Example
 
 ````JavaScript
-// Execute the toggleParametersArea commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.toggleParametersArea.exec();
+// Execute the toggleParametersArea command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.toggleParametersArea.exec();
 ````
 
 ````JavaScript
-// Check if toggleParametersArea is enabledif (rv.commands.toggleParametersArea.enabled()) {}
+// Check if toggleParametersArea is enabled
+if (rv.commands.toggleParametersArea.enabled()) {}
 ````
 
 ````JavaScript
-// Check if toggleParametersArea is checkedif (rv.commands.toggleParametersArea.checked()) {}
+// Check if toggleParametersArea is checked
+if (rv.commands.toggleParametersArea.checked()) {}
 ````
 
 

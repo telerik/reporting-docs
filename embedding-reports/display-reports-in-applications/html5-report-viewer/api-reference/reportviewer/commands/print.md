@@ -14,15 +14,19 @@ Triggers the report printing.
 ## Example
 
 ````JavaScript
-// Execute the print commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.print.exec();
+// Execute the print command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.print.exec();
 ````
 
 ````JavaScript
-// Check if print is enabledif (rv.commands.print.enabled()) {}
+// Check if print is enabled
+if (rv.commands.print.enabled()) {}
 ````
 
 ````JavaScript
-// Check if print is checkedif (rv.commands.print.checked()) {}
+// Check if print is checked
+if (rv.commands.print.checked()) {}
 ````
 
 

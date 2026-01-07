@@ -14,15 +14,24 @@ Goes to the last page of the report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.goToLastPage.exec()}>Last Page</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.goToLastPage.exec()}>Last Page</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.goToLastPage.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.goToLastPage.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.goToLastPage.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.goToLastPage.checked();
 ````
 
 

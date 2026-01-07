@@ -14,7 +14,15 @@ A callback function that is called when the viewer content has been loaded from 
 ## Example
 
 ````JavaScript
-$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: {    report: "Dashboard.trdp"  },  ready: function() {    // 'this' refers to the ReportViewer instance  }});
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: {
+    report: "Dashboard.trdp"
+  },
+  ready: function() {
+    // 'this' refers to the ReportViewer instance
+  }
+});
 ````
 
 ## Event Binding

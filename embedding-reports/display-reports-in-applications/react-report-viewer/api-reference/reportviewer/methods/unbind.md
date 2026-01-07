@@ -42,10 +42,12 @@ Unbinds an event handler from the specified event.
 ## Example
 
 ````JavaScript
-// Unbind specific handlerreportViewerRef.current.unbind("error", myErrorHandler);
+// Unbind specific handler
+reportViewerRef.current.unbind("error", myErrorHandler);
 ````
 
 ````JavaScript
-// Unbind all handlers for an eventreportViewerRef.current.unbind("pageReady");
+// Unbind all handlers for an event
+reportViewerRef.current.unbind("pageReady");
 ````
 

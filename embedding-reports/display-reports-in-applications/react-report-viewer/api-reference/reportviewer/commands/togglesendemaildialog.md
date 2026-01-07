@@ -14,15 +14,24 @@ Shows or hides the send email dialog.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleSendEmailDialog.exec()}>Toggle Send Email</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleSendEmailDialog.exec()}>Toggle Send Email</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleSendEmailDialog.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleSendEmailDialog.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleSendEmailDialog.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleSendEmailDialog.checked();
 ````
 
 

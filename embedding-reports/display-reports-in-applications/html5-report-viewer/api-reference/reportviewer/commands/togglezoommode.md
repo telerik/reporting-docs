@@ -14,15 +14,19 @@ Changes the zoom mode of the report.
 ## Example
 
 ````JavaScript
-// Execute the toggleZoomMode commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.toggleZoomMode.exec();
+// Execute the toggleZoomMode command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.toggleZoomMode.exec();
 ````
 
 ````JavaScript
-// Check if toggleZoomMode is enabledif (rv.commands.toggleZoomMode.enabled()) {}
+// Check if toggleZoomMode is enabled
+if (rv.commands.toggleZoomMode.enabled()) {}
 ````
 
 ````JavaScript
-// Check if toggleZoomMode is checkedif (rv.commands.toggleZoomMode.checked()) {}
+// Check if toggleZoomMode is checked
+if (rv.commands.toggleZoomMode.checked()) {}
 ````
 
 

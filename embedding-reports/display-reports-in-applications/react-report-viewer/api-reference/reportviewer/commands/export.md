@@ -14,15 +14,24 @@ Exports the report, using the respective rendering extension name. Accepts a ren
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.export.exec('PDF')}>Export PDF</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.export.exec('PDF')}>Export PDF</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.export.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.export.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.export.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.export.checked();
 ````
 
 

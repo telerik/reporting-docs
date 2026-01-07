@@ -41,6 +41,7 @@ Sets the page mode of the viewer.
 ## Example
 
 ````JavaScript
-// Set page mode to single pagereportViewerRef.current.setPageMode("SINGLE_PAGE");
+// Set page mode to single page
+reportViewerRef.current.setPageMode("SINGLE_PAGE");
 ````
 

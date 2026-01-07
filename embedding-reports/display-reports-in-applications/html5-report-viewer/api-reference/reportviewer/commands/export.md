@@ -14,15 +14,19 @@ Exports the report, using the respective rendering extension name.
 ## Example
 
 ````JavaScript
-// Execute the export command as PDFvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.export.exec("PDF");
+// Execute the export command as PDF
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.export.exec("PDF");
 ````
 
 ````JavaScript
-// Check if export is enabledif (rv.commands.export.enabled()) {}
+// Check if export is enabled
+if (rv.commands.export.enabled()) {}
 ````
 
 ````JavaScript
-// Check if export is checkedif (rv.commands.export.checked()) {}
+// Check if export is checked
+if (rv.commands.export.checked()) {}
 ````
 
 

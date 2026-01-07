@@ -41,10 +41,21 @@ Gets or sets the accessibility key map for keyboard navigation. Allows customiza
 ## Example
 
 ````JavaScript
-// Get the current accessibility key mapvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var keyMap = viewer.accessibilityKeyMap();
+// Get the current accessibility key map
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+var keyMap = viewer.accessibilityKeyMap();
 ````
 
 ````JavaScript
-// Set a custom accessibility key mapvar reportViewer = $("#reportViewer1").data("telerik_ReportViewer");reportViewer.accessibilityKeyMap({    CONFIRM_KEY: 32,    CONTENT_AREA_KEY: 82, //R    DOCUMENT_MAP_AREA_KEY: 77, //M    MENU_AREA_KEY: 85, //U    PARAMETERS_AREA_KEY: 80 //P});
+// Set a custom accessibility key map
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+reportViewer.accessibilityKeyMap(
+{
+    CONFIRM_KEY: 32,
+    CONTENT_AREA_KEY: 82, //R
+    DOCUMENT_MAP_AREA_KEY: 77, //M
+    MENU_AREA_KEY: 85, //U
+    PARAMETERS_AREA_KEY: 80 //P
+});
 ````
 

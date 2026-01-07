@@ -14,15 +14,19 @@ Zooms out the report.
 ## Example
 
 ````JavaScript
-// Execute the zoomOut commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.zoomOut.exec();
+// Execute the zoomOut command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.zoomOut.exec();
 ````
 
 ````JavaScript
-// Check if zoomOut is enabledif (rv.commands.zoomOut.enabled()) {}
+// Check if zoomOut is enabled
+if (rv.commands.zoomOut.enabled()) {}
 ````
 
 ````JavaScript
-// Check if zoomOut is checkedif (rv.commands.zoomOut.checked()) {}
+// Check if zoomOut is checked
+if (rv.commands.zoomOut.checked()) {}
 ````
 
 

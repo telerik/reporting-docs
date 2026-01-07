@@ -14,15 +14,19 @@ Goes to the previous page of the report.
 ## Example
 
 ````JavaScript
-// Execute the goToPrevPage commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.goToPrevPage.exec();
+// Execute the goToPrevPage command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.goToPrevPage.exec();
 ````
 
 ````JavaScript
-// Check if goToPrevPage is enabledif (rv.commands.goToPrevPage.enabled()) {}
+// Check if goToPrevPage is enabled
+if (rv.commands.goToPrevPage.enabled()) {}
 ````
 
 ````JavaScript
-// Check if goToPrevPage is checkedif (rv.commands.goToPrevPage.checked()) {}
+// Check if goToPrevPage is checked
+if (rv.commands.goToPrevPage.checked()) {}
 ````
 
 

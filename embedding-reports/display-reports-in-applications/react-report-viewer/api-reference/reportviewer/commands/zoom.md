@@ -14,15 +14,24 @@ Zoom with a specified ratio. Accepts a zoom ratio as parameter: exec(1.5).
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.zoom.exec(1.5)}>Zoom 150%</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.zoom.exec(1.5)}>Zoom 150%</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.zoom.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.zoom.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.zoom.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.zoom.checked();
 ````
 
 

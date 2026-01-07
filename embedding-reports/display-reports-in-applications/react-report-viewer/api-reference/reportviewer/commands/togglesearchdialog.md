@@ -14,15 +14,24 @@ Shows or hides the search dialog.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.toggleSearchDialog.exec()}>Toggle Search</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.toggleSearchDialog.exec()}>Toggle Search</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.toggleSearchDialog.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.toggleSearchDialog.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.toggleSearchDialog.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.toggleSearchDialog.checked();
 ````
 
 

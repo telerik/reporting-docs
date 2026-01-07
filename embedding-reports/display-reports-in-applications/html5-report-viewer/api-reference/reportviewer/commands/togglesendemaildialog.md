@@ -14,15 +14,19 @@ Shows or hides the send email dialog.
 ## Example
 
 ````JavaScript
-// Execute the toggleSendEmailDialog commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.toggleSendEmailDialog.exec();
+// Execute the toggleSendEmailDialog command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.toggleSendEmailDialog.exec();
 ````
 
 ````JavaScript
-// Check if toggleSendEmailDialog is enabledif (rv.commands.toggleSendEmailDialog.enabled()) {}
+// Check if toggleSendEmailDialog is enabled
+if (rv.commands.toggleSendEmailDialog.enabled()) {}
 ````
 
 ````JavaScript
-// Check if toggleSendEmailDialog is checkedif (rv.commands.toggleSendEmailDialog.checked()) {}
+// Check if toggleSendEmailDialog is checked
+if (rv.commands.toggleSendEmailDialog.checked()) {}
 ````
 
 

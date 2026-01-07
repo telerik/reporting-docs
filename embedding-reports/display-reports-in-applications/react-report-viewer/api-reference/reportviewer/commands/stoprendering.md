@@ -14,15 +14,24 @@ Stops the rendering of the current report.
 ## Example
 
 ````JavaScript
-// Execute the commandlet viewer;ReactDOM.render(    <>        <TelerikReportViewer />        <button onClick={() => viewer.commands.stopRendering.exec()}>Stop Rendering</button>    </>);
+// Execute the command
+let viewer;
+ReactDOM.render(
+    <>
+        <TelerikReportViewer />
+        <button onClick={() => viewer.commands.stopRendering.exec()}>Stop Rendering</button>
+    </>
+);
 ````
 
 ````JavaScript
-// Check if the command is enabledconst isEnabled = viewer.commands.stopRendering.enabled();
+// Check if the command is enabled
+const isEnabled = viewer.commands.stopRendering.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checkedconst isChecked = viewer.commands.stopRendering.checked();
+// Check if the command is checked
+const isChecked = viewer.commands.stopRendering.checked();
 ````
 
 

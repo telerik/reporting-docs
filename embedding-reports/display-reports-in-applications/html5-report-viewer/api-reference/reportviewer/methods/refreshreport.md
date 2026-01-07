@@ -41,10 +41,14 @@ Refreshes the currently loaded report. Forces the viewer to reload the report fr
 ## Example
 
 ````JavaScript
-// Refresh the report, ignoring cache (default)var viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.refreshReport();
+// Refresh the report, ignoring cache (default)
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+viewer.refreshReport();
 ````
 
 ````JavaScript
-// Refresh the report, using cache if availablevar viewer = $("#reportViewer1").data("telerik_ReportViewer");viewer.refreshReport(false);
+// Refresh the report, using cache if available
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+viewer.refreshReport(false);
 ````
 

@@ -14,7 +14,12 @@ A callback function that is called when the viewer content has been loaded from 
 ## Example
 
 ````JavaScript
-// Ready callback<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  ready={() => console.log("Report viewer is ready")}/>
+// Ready callback
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  ready={() => console.log("Report viewer is ready")}
+/>
 ````
 
 ## Event Binding

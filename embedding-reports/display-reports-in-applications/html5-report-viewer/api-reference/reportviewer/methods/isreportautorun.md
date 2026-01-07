@@ -35,6 +35,8 @@ Returns whether auto-run is enabled for the report (i.e., whether the report run
 ## Example
 
 ````JavaScript
-// Check if auto-run is enabled for the reportvar viewer = $("#reportViewer1").data("telerik_ReportViewer");var isReportAutoRun = viewer.isReportAutoRun();
+// Check if auto-run is enabled for the report
+var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+var isReportAutoRun = viewer.isReportAutoRun();
 ````
 

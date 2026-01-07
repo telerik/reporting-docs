@@ -14,15 +14,19 @@ Shows or hides the AI prompt dialog.
 ## Example
 
 ````JavaScript
-// Execute the toggleAiPromptDialog commandvar rv = $("#reportViewer1").data("telerik_ReportViewer");rv.commands.toggleAiPromptDialog.exec();
+// Execute the toggleAiPromptDialog command
+var rv = $("#reportViewer1").data("telerik_ReportViewer");
+rv.commands.toggleAiPromptDialog.exec();
 ````
 
 ````JavaScript
-// Check if toggleAiPromptDialog is enabledif (rv.commands.toggleAiPromptDialog.enabled()) {}
+// Check if toggleAiPromptDialog is enabled
+if (rv.commands.toggleAiPromptDialog.enabled()) {}
 ````
 
 ````JavaScript
-// Check if toggleAiPromptDialog is checkedif (rv.commands.toggleAiPromptDialog.checked()) {}
+// Check if toggleAiPromptDialog is checked
+if (rv.commands.toggleAiPromptDialog.checked()) {}
 ````
 
 

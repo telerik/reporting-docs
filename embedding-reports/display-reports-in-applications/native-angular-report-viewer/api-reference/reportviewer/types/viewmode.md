@@ -40,6 +40,6 @@ type ViewMode = "interactive" | "printPreview";
 ## See Also
 
 * [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types/overview%})
-* [executeCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/commands/executecommand%})
+* [executeCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/methods/executecommand%})
 * [viewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/options/viewmode%})
 

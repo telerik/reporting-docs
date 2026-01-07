@@ -73,5 +73,5 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 ## See Also
 
 * [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types/overview%})
-* [sendEmail]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/sendemail%})
+* [sendEmail]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/sendemail%})
 

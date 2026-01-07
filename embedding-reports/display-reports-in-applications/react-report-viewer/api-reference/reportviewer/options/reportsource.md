@@ -18,15 +18,30 @@ Sets the report and initial report parameter values for the viewer to be display
 ## Examples
 
 ````JavaScript
-// Basic report source<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}/>
+// Basic report source
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+/>
 ````
 
 ````JavaScript
-// Report source with parameters<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{    report: "SalesReport.trdp",    parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }  }}/>
+// Report source with parameters
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{
+    report: "SalesReport.trdp",
+    parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }
+  }}
+/>
 ````
 
 ````JavaScript
-// Report Server format<TelerikReportViewer  reportServer={{ url: "https://myserver/" }}  reportSource={{ report: "Finance/MonthlyReport" }}/>
+// Report Server format
+<TelerikReportViewer
+  reportServer={{ url: "https://myserver/" }}
+  reportSource={{ report: "Finance/MonthlyReport" }}
+/>
 ````
 
 

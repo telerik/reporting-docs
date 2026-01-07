@@ -18,7 +18,11 @@ Sets the address of the Report REST Service. Required if reportServer is not pro
 ## Examples
 
 ````JavaScript
-// Set the service URL for the report viewer<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}/>
+// Set the service URL for the report viewer
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+/>
 ````
 
 

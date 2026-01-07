@@ -18,7 +18,13 @@ The position of the parameters area. See [ParametersAreaPositions]({%slug teleri
 ## Examples
 
 ````JavaScript
-// Place parameters area on the left using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The position of the parameters area  parametersAreaPosition: telerikReportViewer.ParametersAreaPositions.LEFT});
+// Place parameters area on the left using the enum value
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // The position of the parameters area
+  parametersAreaPosition: telerikReportViewer.ParametersAreaPositions.LEFT
+});
 ````
 
 

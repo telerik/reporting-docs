@@ -18,7 +18,13 @@ URL for a custom viewer template.
 ## Examples
 
 ````JavaScript
-// Use a custom template$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // URL for a custom viewer template  templateUrl: "/templates/customViewer.html"});
+// Use a custom template
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // URL for a custom viewer template
+  templateUrl: "/templates/customViewer.html"
+});
 ````
 
 

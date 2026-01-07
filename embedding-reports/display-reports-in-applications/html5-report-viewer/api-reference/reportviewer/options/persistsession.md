@@ -18,7 +18,11 @@ Sets whether the viewer’s client session is persisted between page refreshes.
 ## Examples
 
 ````JavaScript
-$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  persistSession: true});
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  persistSession: true
+});
 ````
 
 

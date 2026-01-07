@@ -32,14 +32,45 @@ Describes a parameter editor for the Telerik Report Viewer parameter panel.
 ## Example
 
 ````JavaScript
-// Example: Custom match function for single-select parametersvar match = function(parameter) {  // Use parameter properties to determine if this editor should be used  return Boolean(parameter.availableValues) && !parameter.multivalue;};
+// Example: Custom match function for single-select parameters
+var match = function(parameter) {
+  // Use parameter properties to determine if this editor should be used
+  return Boolean(parameter.availableValues) && !parameter.multivalue;
+};
 ````
 
 ````JavaScript
-// Example: Custom createEditor function using Kendo DropDownListvar createEditor = function(placeholder, options) {  var dropDownElement = $(placeholder).html('<div></div>');  var parameter;  var valueChangedCallback = options.parameterChanged;  var dropDownList;  function onChange() {    var val = dropDownList.value();    valueChangedCallback(parameter, val);  }  return {    beginEdit: function(param) {      parameter = param;      $(dropDownElement).kendoDropDownList({        dataTextField: "name",        dataValueField: "value",        value: parameter.value,        dataSource: parameter.availableValues,        change: onChange      });      dropDownList = $(dropDownElement).data("kendoDropDownList");    }  };};
+// Example: Custom createEditor function using Kendo DropDownList
+var createEditor = function(placeholder, options) {
+  var dropDownElement = $(placeholder).html('<div></div>');
+  var parameter;
+  var valueChangedCallback = options.parameterChanged;
+  var dropDownList;
+  function onChange() {
+    var val = dropDownList.value();
+    valueChangedCallback(parameter, val);
+  }
+  return {
+    beginEdit: function(param) {
+      parameter = param;
+      $(dropDownElement).kendoDropDownList({
+        dataTextField: "name",
+        dataValueField: "value",
+        value: parameter.value,
+        dataSource: parameter.availableValues,
+        change: onChange
+      });
+      dropDownList = $(dropDownElement).data("kendoDropDownList");
+    }
+  };
+};
 ````
 
 ````JavaScript
-// Example: Registering the custom ParameterEditorParameterEditors.push({  match: match,  createEditor: createEditor});
+// Example: Registering the custom ParameterEditor
+ParameterEditors.push({
+  match: match,
+  createEditor: createEditor
+});
 ````
 

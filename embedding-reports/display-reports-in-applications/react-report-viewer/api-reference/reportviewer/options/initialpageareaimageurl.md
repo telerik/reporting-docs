@@ -18,7 +18,12 @@ The image URL for the PageArea background image. Used only when the parameter va
 ## Examples
 
 ````JavaScript
-// Set a background image for empty page area<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  initialPageAreaImageUrl="/images/reportBackground.png"/>
+// Set a background image for empty page area
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  initialPageAreaImageUrl="/images/reportBackground.png"
+/>
 ````
 
 

@@ -18,7 +18,13 @@ The print mode. See [PrintModes]({%slug telerikreporting/using-reports-in-applic
 ## Examples
 
 ````JavaScript
-// Set print mode to force PDF file using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The print mode  printMode: telerikReportViewer.PrintModes.FORCE_PDF_FILE});
+// Set print mode to force PDF file using the enum value
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // The print mode
+  printMode: telerikReportViewer.PrintModes.FORCE_PDF_FILE
+});
 ````
 
 

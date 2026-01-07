@@ -18,19 +18,50 @@ Configuration for Telerik Report Server. Report Server for .NET supports Token (
 ## Examples
 
 ````JavaScript
-// Use Report Server for .NET with Token authentication.$("#reportViewer1").telerik_ReportViewer({  // Configuration for Telerik Report Server for .NET with Token  reportServer: {    url: "https://myserver/",    getPersonalAccessToken: function() {      return Promise.resolve("<personal-access-token>");    }  }});
+// Use Report Server for .NET with Token authentication.
+$("#reportViewer1").telerik_ReportViewer({
+  // Configuration for Telerik Report Server for .NET with Token
+  reportServer: {
+    url: "https://myserver/",
+    getPersonalAccessToken: function() {
+      return Promise.resolve("<personal-access-token>");
+    }
+  }
+});
 ````
 
 ````JavaScript
-// Use Report Server for .NET with username/password.$("#reportViewer1").telerik_ReportViewer({  // Configuration for Telerik Report Server for .NET with username/password  reportServer: {    url: "https://myserver/",    username: "user",    password: "pass"  }});
+// Use Report Server for .NET with username/password.
+$("#reportViewer1").telerik_ReportViewer({
+  // Configuration for Telerik Report Server for .NET with username/password
+  reportServer: {
+    url: "https://myserver/",
+    username: "user",
+    password: "pass"
+  }
+});
 ````
 
 ````JavaScript
-// Use Report Server for .NET Framework 4.6.2 with username/password.$("#reportViewer1").telerik_ReportViewer({  // Configuration for Telerik Report Server for .NET Framework 4.6.2  reportServer: {    url: "https://myserver/",    username: "user",    password: "pass"  }});
+// Use Report Server for .NET Framework 4.6.2 with username/password.
+$("#reportViewer1").telerik_ReportViewer({
+  // Configuration for Telerik Report Server for .NET Framework 4.6.2
+  reportServer: {
+    url: "https://myserver/",
+    username: "user",
+    password: "pass"
+  }
+});
 ````
 
 ````JavaScript
-// Use Report Server for .NET Framework 4.6.2 with Guest account.$("#reportViewer1").telerik_ReportViewer({  // Configuration for Telerik Report Server for .NET Framework 4.6.2 (Guest must be enabled on server)  reportServer: {    url: "https://myserver/"  }});
+// Use Report Server for .NET Framework 4.6.2 with Guest account.
+$("#reportViewer1").telerik_ReportViewer({
+  // Configuration for Telerik Report Server for .NET Framework 4.6.2 (Guest must be enabled on server)
+  reportServer: {
+    url: "https://myserver/"
+  }
+});
 ````
 
 

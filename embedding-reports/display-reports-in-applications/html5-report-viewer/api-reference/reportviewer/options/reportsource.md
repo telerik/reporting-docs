@@ -18,7 +18,13 @@ The report source configuration.
 ## Examples
 
 ````JavaScript
-// Set a report source// Set a report source$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  // The report source configuration  reportSource: { report: "MyReport" }});
+// Set a report source
+// Set a report source
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  // The report source configuration
+  reportSource: { report: "MyReport" }
+});
 ````
 
 

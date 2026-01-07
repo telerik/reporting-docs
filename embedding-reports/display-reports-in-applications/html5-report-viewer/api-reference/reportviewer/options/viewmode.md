@@ -18,7 +18,13 @@ The view mode. See [ViewModes]({%slug telerikreporting/using-reports-in-applicat
 ## Examples
 
 ````JavaScript
-// Set view mode to print preview using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The view mode  viewMode: telerikReportViewer.ViewModes.PRINT_PREVIEW});
+// Set view mode to print preview using the enum value
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // The view mode
+  viewMode: telerikReportViewer.ViewModes.PRINT_PREVIEW
+});
 ````
 
 

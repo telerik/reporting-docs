@@ -18,7 +18,13 @@ The scale mode. See [ScaleModes]({%slug telerikreporting/using-reports-in-applic
 ## Examples
 
 ````JavaScript
-// Fit page width using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The scale mode  scaleMode: telerikReportViewer.ScaleModes.FIT_PAGE_WIDTH});
+// Fit page width using the enum value
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // The scale mode
+  scaleMode: telerikReportViewer.ScaleModes.FIT_PAGE_WIDTH
+});
 ````
 
 

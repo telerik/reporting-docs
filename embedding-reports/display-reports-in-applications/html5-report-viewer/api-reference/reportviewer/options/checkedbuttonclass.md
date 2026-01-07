@@ -18,7 +18,13 @@ A class used for checked state buttons.
 ## Examples
 
 ````JavaScript
-// Use a custom class for checked buttons$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // Custom class for checked state buttons  checkedButtonClass: "my-checked"});
+// Use a custom class for checked buttons
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // Custom class for checked state buttons
+  checkedButtonClass: "my-checked"
+});
 ````
 
 

@@ -18,7 +18,13 @@ Determines whether the viewer should provide support for accessibility features.
 ## Examples
 
 ````JavaScript
-// Enable accessibility features// Use with component: enableAccessibility={true}<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  enableAccessibility={true}/>
+// Enable accessibility features
+// Use with component: enableAccessibility={true}
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  enableAccessibility={true}
+/>
 ````
 
 

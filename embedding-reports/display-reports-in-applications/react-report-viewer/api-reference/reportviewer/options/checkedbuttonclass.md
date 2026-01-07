@@ -18,7 +18,8 @@ A class used in conjunction with the data- attributes. Whenever a command is in 
 ## Examples
 
 ````JavaScript
-// Custom checked button styling// Use with component: checkedButtonClass="btn-active"
+// Custom checked button styling
+// Use with component: checkedButtonClass="btn-active"
 ````
 
 

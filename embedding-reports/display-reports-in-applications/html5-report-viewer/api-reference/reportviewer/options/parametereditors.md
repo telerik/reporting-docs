@@ -18,7 +18,18 @@ Allows the user to define array of custom editors for the report parameters.
 ## Examples
 
 ````JavaScript
-// Register a custom parameter editor for a specific parameter$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // Custom parameter editors array  parameterEditors: [    {      match: function(param) { return param.name === "MyParam"; },      editor: MyCustomEditor    }  ]});
+// Register a custom parameter editor for a specific parameter
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // Custom parameter editors array
+  parameterEditors: [
+    {
+      match: function(param) { return param.name === "MyParam"; },
+      editor: MyCustomEditor
+    }
+  ]
+});
 ````
 
 

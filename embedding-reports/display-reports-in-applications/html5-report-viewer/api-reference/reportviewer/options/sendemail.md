@@ -18,7 +18,13 @@ Email sending options. Properties: enabled (bool), from (string), to (string), c
 ## Examples
 
 ````JavaScript
-// Enable send email with default values$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // Email sending options  sendEmail: { enabled: true, from: "me@company.com", to: "you@company.com" }});
+// Enable send email with default values
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // Email sending options
+  sendEmail: { enabled: true, from: "me@company.com", to: "you@company.com" }
+});
 ````
 
 

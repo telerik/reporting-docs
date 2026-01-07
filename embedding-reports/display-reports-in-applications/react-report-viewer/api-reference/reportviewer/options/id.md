@@ -18,7 +18,12 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 ## Examples
 
 ````JavaScript
-// Set a custom viewer ID<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  id="myUniqueViewer"/>
+// Set a custom viewer ID
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  id="myUniqueViewer"
+/>
 ````
 
 

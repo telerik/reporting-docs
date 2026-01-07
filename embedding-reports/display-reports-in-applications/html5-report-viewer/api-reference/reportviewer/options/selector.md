@@ -18,7 +18,12 @@ A selector used in conjunction with the data- attributes.
 ## Examples
 
 ````JavaScript
-// Set a custom selector$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  selector: "#myViewer"});
+// Set a custom selector
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  selector: "#myViewer"
+});
 ````
 
 

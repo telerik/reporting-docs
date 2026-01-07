@@ -33,6 +33,12 @@ Configuration options for report parameter editors and behavior.
 ## Example
 
 ````JavaScript
-// Specify editor types for parameters{  editors: {    singleSelect: "COMBO_BOX",    multiSelect: "LIST_VIEW"  }}
+// Specify editor types for parameters
+{
+  editors: {
+    singleSelect: "COMBO_BOX",
+    multiSelect: "LIST_VIEW"
+  }
+}
 ````
 

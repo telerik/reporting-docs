@@ -18,7 +18,12 @@ A class used for disabled state buttons.
 ## Examples
 
 ````JavaScript
-// Use a custom class for disabled buttons$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  disabledButtonClass: "my-disabled"});
+// Use a custom class for disabled buttons
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  disabledButtonClass: "my-disabled"
+});
 ````
 
 

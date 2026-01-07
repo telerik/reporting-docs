@@ -33,6 +33,17 @@ Defines options for configuring report parameter editors in the React Report Vie
 ## Example
 
 ````JavaScript
-// React: Specify editor types for report parameters<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  parameters={{    editors: {      singleSelect: "COMBO_BOX",      multiSelect: "LIST_VIEW"    }  }}/>
+// React: Specify editor types for report parameters
+
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  parameters={{
+    editors: {
+      singleSelect: "COMBO_BOX",
+      multiSelect: "LIST_VIEW"
+    }
+  }}
+/>
 ````
 

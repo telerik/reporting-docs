@@ -18,7 +18,8 @@ A selector used in conjunction with the data- attributes. Whenever a command is 
 ## Examples
 
 ````JavaScript
-// Set a custom selector for external commands// Use with component: selector="#customToolbar"
+// Set a custom selector for external commands
+// Use with component: selector="#customToolbar"
 ````
 
 

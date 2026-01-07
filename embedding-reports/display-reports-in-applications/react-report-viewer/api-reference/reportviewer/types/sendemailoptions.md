@@ -37,10 +37,31 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 ## Example
 
 ````JavaScript
-// Enable Send Email with default values and PDF as the default format<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  sendEmail={{    enabled: true,    from: "reports@company.com",    to: "recipient@domain.com",    cc: "manager@domain.com",    subject: "Monthly Sales Report",    body: "Please find the attached monthly sales report.",    format: "PDF"  }}/>
+// Enable Send Email with default values and PDF as the default format
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  sendEmail={{
+    enabled: true,
+    from: "reports@company.com",
+    to: "recipient@domain.com",
+    cc: "manager@domain.com",
+    subject: "Monthly Sales Report",
+    body: "Please find the attached monthly sales report.",
+    format: "PDF"
+  }}
+/>
 ````
 
 ````JavaScript
-// Basic email configuration with minimal options<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  sendEmail={{    enabled: true,    from: "noreply@company.com"  }}/>
+// Basic email configuration with minimal options
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  sendEmail={{
+    enabled: true,
+    from: "noreply@company.com"
+  }}
+/>
 ````
 

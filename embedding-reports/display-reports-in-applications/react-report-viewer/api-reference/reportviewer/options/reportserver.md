@@ -18,11 +18,28 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
 ## Examples
 
 ````JavaScript
-// Use Report Server authentication with Token (recommended for RS.NET)<TelerikReportViewer  reportServer={{    url: "https://yourReportServerUrl:port",    getPersonalAccessToken: function() {      return Promise.resolve("<personal-access-token>");    }  }}  reportSource={{ report: "Samples/Dashboard" }}/>
+// Use Report Server authentication with Token (recommended for RS.NET)
+<TelerikReportViewer
+  reportServer={{
+    url: "https://yourReportServerUrl:port",
+    getPersonalAccessToken: function() {
+      return Promise.resolve("<personal-access-token>");
+    }
+  }}
+  reportSource={{ report: "Samples/Dashboard" }}
+/>
 ````
 
 ````JavaScript
-// Use Report Server authentication with username/password (not recommended)<TelerikReportViewer  reportServer={{    url: "https://myserver.com/",    username: "reportuser",    password: "password123"  }}  reportSource={{ report: "Finance/Dashboard" }}/>
+// Use Report Server authentication with username/password (not recommended)
+<TelerikReportViewer
+  reportServer={{
+    url: "https://myserver.com/",
+    username: "reportuser",
+    password: "password123"
+  }}
+  reportSource={{ report: "Finance/Dashboard" }}
+/>
 ````
 
 

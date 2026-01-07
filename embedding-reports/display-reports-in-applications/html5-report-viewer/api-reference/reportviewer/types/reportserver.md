@@ -39,30 +39,76 @@ Authentication options:
 ## Example
 
 ````JavaScript
-// Example: Report Server for .NET - Token authentication (recommended)var reportServer = {  url: "https://my-report-server-net/",  getPersonalAccessToken: function() {    return Promise.resolve("<personal-access-token>");  }};
+// Example: Report Server for .NET - Token authentication (recommended)
+var reportServer = {
+  url: "https://my-report-server-net/",
+  getPersonalAccessToken: function() {
+    return Promise.resolve("<personal-access-token>");
+  }
+};
 ````
 
 ````JavaScript
-// Example: Report Server for .NET - Token authentication with a secure endpointvar reportServer = {  url: "https://my-report-server-net/",  getPersonalAccessToken: function() {    return fetch('/rs-token')      .then(response => response.text());  }};
+// Example: Report Server for .NET - Token authentication with a secure endpoint
+var reportServer = {
+  url: "https://my-report-server-net/",
+  getPersonalAccessToken: function() {
+    return fetch('/rs-token')
+      .then(response => response.text());
+  }
+};
 ````
 
 ````JavaScript
-// Example: Report Server for .NET - Token authentication with Guest user tokenvar reportServer = {  url: "https://my-report-server-net/",  getPersonalAccessToken: function() {    return Promise.resolve("<guest-user-token>");  }};
+// Example: Report Server for .NET - Token authentication with Guest user token
+var reportServer = {
+  url: "https://my-report-server-net/",
+  getPersonalAccessToken: function() {
+    return Promise.resolve("<guest-user-token>");
+  }
+};
 ````
 
 ````JavaScript
-// Example: Report Server for .NET - Username/password authenticationvar reportServer = {  url: "https://my-report-server-net/",  username: "myUser",  password: "myPassword"};
+// Example: Report Server for .NET - Username/password authentication
+var reportServer = {
+  url: "https://my-report-server-net/",
+  username: "myUser",
+  password: "myPassword"
+};
 ````
 
 ````JavaScript
-// Example: Report Server for .NET Framework 4.6.2 - Username/password authenticationvar reportServer = {  url: "https://my-report-server-framework/",  username: "myUser",  password: "myPassword"};
+// Example: Report Server for .NET Framework 4.6.2 - Username/password authentication
+var reportServer = {
+  url: "https://my-report-server-framework/",
+  username: "myUser",
+  password: "myPassword"
+};
 ````
 
 ````JavaScript
-// Example: Report Server for .NET Framework 4.6.2 - Guest account (requires Guest enabled on server)var reportServer = {  url: "https://my-report-server-framework/"};
+// Example: Report Server for .NET Framework 4.6.2 - Guest account (requires Guest enabled on server)
+var reportServer = {
+  url: "https://my-report-server-framework/"
+};
 ````
 
 ````JavaScript
-// Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication$("#reportViewer").telerik_ReportViewer({  reportServer: {    url: "https://my-report-server-net/",    getPersonalAccessToken: function() {      return Promise.resolve("<personal-access-token>");    }  },  reportSource: {    report: "Samples/Dashboard",    parameters: {      ReportYear: 2004    }  }});
+// Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication
+$("#reportViewer").telerik_ReportViewer({
+  reportServer: {
+    url: "https://my-report-server-net/",
+    getPersonalAccessToken: function() {
+      return Promise.resolve("<personal-access-token>");
+    }
+  },
+  reportSource: {
+    report: "Samples/Dashboard",
+    parameters: {
+      ReportYear: 2004
+    }
+  }
+});
 ````
 

@@ -18,7 +18,12 @@ Allows the user to define custom editors for the report parameters.
 ## Examples
 
 ````JavaScript
-// Register custom parameter editorsconst customEditors = [{  match: function(param) { return param.name === "MyParam"; },  createEditor: function(placeholder, options) { return {}; }}];// Use with component: parameterEditors={customEditors}
+// Register custom parameter editors
+const customEditors = [{
+  match: function(param) { return param.name === "MyParam"; },
+  createEditor: function(placeholder, options) { return {}; }
+}];
+// Use with component: parameterEditors={customEditors}
 ````
 
 

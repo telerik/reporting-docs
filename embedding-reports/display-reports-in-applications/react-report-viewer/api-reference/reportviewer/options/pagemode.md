@@ -18,7 +18,12 @@ Sets if the report is displayed in Single page or Continuous scroll mode. Availa
 ## Examples
 
 ````JavaScript
-// Set page mode to single page<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  pageMode="SINGLE_PAGE"/>
+// Set page mode to single page
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  pageMode="SINGLE_PAGE"
+/>
 ````
 
 

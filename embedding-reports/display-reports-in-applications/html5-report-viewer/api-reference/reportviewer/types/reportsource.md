@@ -32,14 +32,34 @@ Defines the report source for the viewer, specifying which report to load and an
 ## Example
 
 ````JavaScript
-// Example: Minimal report source with only the report namevar reportSource = {  report: "MyReport"};
+// Example: Minimal report source with only the report name
+var reportSource = {
+  report: "MyReport"
+};
 ````
 
 ````JavaScript
-// Example: Report source with parametersvar reportSource = {  report: "SalesReport",  parameters: {    StartDate: "2024-01-01",    EndDate: "2024-12-31",    Region: "North America"  }};
+// Example: Report source with parameters
+var reportSource = {
+  report: "SalesReport",
+  parameters: {
+    StartDate: "2024-01-01",
+    EndDate: "2024-12-31",
+    Region: "North America"
+  }
+};
 ````
 
 ````JavaScript
-// Example: Using ReportSource with the Report Viewer initialization$("#reportViewer").telerik_ReportViewer({  reportSource: {    report: "InventoryReport",    parameters: {      Category: "Electronics",      InStock: true    }  }});
+// Example: Using ReportSource with the Report Viewer initialization
+$("#reportViewer").telerik_ReportViewer({
+  reportSource: {
+    report: "InventoryReport",
+    parameters: {
+      Category: "Electronics",
+      InStock: true
+    }
+  }
+});
 ````
 

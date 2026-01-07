@@ -37,6 +37,15 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 ## Example
 
 ````JavaScript
-// Enable Send Email with default values and PDF as the default formatvar sendEmailOptions = {  enabled: true,  from: "reports@company.com",  to: "recipient@domain.com",  cc: "manager@domain.com",  subject: "Monthly Sales Report",  body: "Please find the attached monthly sales report.",  format: "PDF"};
+// Enable Send Email with default values and PDF as the default format
+var sendEmailOptions = {
+  enabled: true,
+  from: "reports@company.com",
+  to: "recipient@domain.com",
+  cc: "manager@domain.com",
+  subject: "Monthly Sales Report",
+  body: "Please find the attached monthly sales report.",
+  format: "PDF"
+};
 ````
 

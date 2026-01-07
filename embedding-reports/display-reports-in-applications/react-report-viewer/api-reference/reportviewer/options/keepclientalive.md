@@ -18,7 +18,12 @@ Determines whether the client will be kept alive. Default value is true.
 ## Examples
 
 ````JavaScript
-// Keep client alive<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  keepClientAlive={true}/>
+// Keep client alive
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  keepClientAlive={true}
+/>
 ````
 
 

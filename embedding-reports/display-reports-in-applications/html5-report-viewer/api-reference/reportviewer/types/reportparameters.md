@@ -25,6 +25,10 @@ An object where each property name corresponds to a report parameter's name, and
 ## Example
 
 ````JavaScript
-{  "StartDate": "2024-01-01",  "EndDate": "2024-12-31",  "Category": "Books"}
+{
+  "StartDate": "2024-01-01",
+  "EndDate": "2024-12-31",
+  "Category": "Books"
+}
 ````
 

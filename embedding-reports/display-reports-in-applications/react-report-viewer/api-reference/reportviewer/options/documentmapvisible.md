@@ -18,7 +18,12 @@ Determines whether the viewer's document map is displayed if any bookmark is def
 ## Examples
 
 ````JavaScript
-// Show document map<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  documentMapVisible={true}/>
+// Show document map
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  documentMapVisible={true}
+/>
 ````
 
 

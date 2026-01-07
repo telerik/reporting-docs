@@ -18,7 +18,13 @@ The position of the document map area. See [DocumentMapAreaPositions]({%slug tel
 ## Examples
 
 ````JavaScript
-// Place document map on the right using the enum value$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The position of the document map area  documentMapAreaPosition: telerikReportViewer.DocumentMapAreaPositions.RIGHT});
+// Place document map on the right using the enum value
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // The position of the document map area
+  documentMapAreaPosition: telerikReportViewer.DocumentMapAreaPositions.RIGHT
+});
 ````
 
 

@@ -32,6 +32,16 @@ Configuration object that identifies the report to be displayed and provides ini
 ## Example
 
 ````JavaScript
-// Example: Using ReportSource with the React Report Viewer<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{    report: "InventoryReport",    parameters: {      Category: "Electronics",      InStock: true    }  }}/>
+// Example: Using ReportSource with the React Report Viewer
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{
+    report: "InventoryReport",
+    parameters: {
+      Category: "Electronics",
+      InStock: true
+    }
+  }}
+/>
 ````
 

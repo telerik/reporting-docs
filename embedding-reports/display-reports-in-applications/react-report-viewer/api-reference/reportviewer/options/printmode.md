@@ -18,7 +18,8 @@ Specifies how the viewer should print reports. Available values: "AUTO_SELECT" (
 ## Examples
 
 ````JavaScript
-// Force PDF file for printing// Use with component: printMode="FORCE_PDF_FILE"
+// Force PDF file for printing
+// Use with component: printMode="FORCE_PDF_FILE"
 ````
 
 

@@ -18,7 +18,12 @@ Enables accessibility features.
 ## Examples
 
 ````JavaScript
-// Enable accessibility$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  enableAccessibility: true});
+// Enable accessibility
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  enableAccessibility: true
+});
 ````
 
 

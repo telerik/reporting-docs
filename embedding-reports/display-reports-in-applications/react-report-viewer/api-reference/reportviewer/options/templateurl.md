@@ -18,7 +18,12 @@ Sets the address of the html page that contains the viewer templates. If omitted
 ## Examples
 
 ````JavaScript
-// Use a custom template<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  templateUrl="/templates/customViewer.html"/>
+// Use a custom template
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  templateUrl="/templates/customViewer.html"
+/>
 ````
 
 

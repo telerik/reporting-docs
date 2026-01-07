@@ -18,7 +18,12 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 ## Examples
 
 ````JavaScript
-// Place parameters area on the left<TelerikReportViewer  serviceUrl="api/reports/"  reportSource={{ report: "Dashboard.trdp" }}  parametersAreaPosition="LEFT"/>
+// Place parameters area on the left
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  parametersAreaPosition="LEFT"
+/>
 ````
 
 

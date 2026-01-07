@@ -18,7 +18,13 @@ The zoom scale (1.0 = 100%).
 ## Examples
 
 ````JavaScript
-// Set zoom to 150%$("#reportViewer1").telerik_ReportViewer({  serviceUrl: "api/reports/",  reportSource: { report: "Dashboard.trdp" },  // The zoom scale (1.0 = 100%)  scale: 1.5});
+// Set zoom to 150%
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "api/reports/",
+  reportSource: { report: "Dashboard.trdp" },
+  // The zoom scale (1.0 = 100%)
+  scale: 1.5
+});
 ````
 
 

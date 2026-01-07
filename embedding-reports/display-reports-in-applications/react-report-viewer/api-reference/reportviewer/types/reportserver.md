@@ -38,6 +38,20 @@ The authentication method depends on the Report Server version:
 ## Example
 
 ````JavaScript
-// Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication<TelerikReportViewer  reportServer={{    url: "https://my-report-server-net/",    getPersonalAccessToken: function() {      return Promise.resolve("<personal-access-token>");    }  }}  reportSource={{    report: "Samples/Dashboard",    parameters: {      ReportYear: 2004    }  }}/>
+// Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication
+<TelerikReportViewer
+  reportServer={{
+    url: "https://my-report-server-net/",
+    getPersonalAccessToken: function() {
+      return Promise.resolve("<personal-access-token>");
+    }
+  }}
+  reportSource={{
+    report: "Samples/Dashboard",
+    parameters: {
+      ReportYear: 2004
+    }
+  }}
+/>
 ````
 

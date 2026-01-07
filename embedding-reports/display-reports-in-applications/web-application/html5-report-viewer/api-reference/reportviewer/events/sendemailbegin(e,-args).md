@@ -7,7 +7,9 @@ tags: sendemailbegin,args
 published: True
 reportingArea: HTML5
 position: 4
-previous_url: /html5-report-viewer-reportviewer-events-sendemailbegin, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e%2c-args)
+previous_url:
+- /html5-report-viewer-reportviewer-events-sendemailbegin
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)
 ---
 
 <style>

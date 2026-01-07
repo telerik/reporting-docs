@@ -7,7 +7,9 @@ tags: interactiveactionenter(e,,args)
 published: True
 reportingArea: HTML5
 position: 13
-previous_url: /html5-report-viewer-reportviewer-events-interactiveactionenter, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e%2c-args)
+previous_url:
+- /html5-report-viewer-reportviewer-events-interactiveactionenter
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)
 ---
 
 <style>

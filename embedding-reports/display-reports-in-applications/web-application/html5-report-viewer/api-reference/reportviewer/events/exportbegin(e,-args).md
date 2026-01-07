@@ -7,7 +7,9 @@ tags: exportbegin(e,,args)
 published: True
 reportingArea: HTML5
 position: 2
-previous_url: /html5-report-viewer-reportviewer-events-exportbegin, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportbegin(e%2c-args)
+previous_url:
+- /html5-report-viewer-reportviewer-events-exportbegin
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportbegin(e,-args)
 ---
 <style>
 table th:first-of-type {

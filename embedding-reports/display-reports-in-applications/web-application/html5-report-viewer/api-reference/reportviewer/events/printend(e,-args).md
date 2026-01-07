@@ -7,7 +7,9 @@ tags: printend,args
 published: True
 reportingArea: HTML5
 position: 8
-previous_url: /html5-report-viewer-reportviewer-events-printend, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printend(e%2c-args)
+previous_url:
+- /html5-report-viewer-reportviewer-events-printend
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printend(e,-args)
 ---
 
 <style>

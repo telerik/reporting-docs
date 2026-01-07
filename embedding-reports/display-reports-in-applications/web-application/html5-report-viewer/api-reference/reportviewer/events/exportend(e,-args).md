@@ -7,7 +7,9 @@ tags: exportend(e,,args)
 published: True
 reportingArea: HTML5
 position: 3
-previous_url: /html5-report-viewer-reportviewer-events-exportend, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportend(e%2c-args)
+previous_url:
+- /html5-report-viewer-reportviewer-events-exportend
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportend(e,-args)
 ---
 
 <style>

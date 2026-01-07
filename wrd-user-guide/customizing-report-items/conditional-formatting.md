@@ -24,9 +24,15 @@ To visually highlight important data, **Conditional formatting** lets you automa
   
 ## Formatting a Single Item
 
-[Your text explaining when to use conditional formatting for a single item].
+If you want to format a single cell value according to a specific condition, for example **LineTotal &lt; 50**, follow the steps:
 
-[Simplified step-by-step instructions].
+1. Select the desired TextBox item (for example, LineTotal).
+
+1. Type "Conditional formatting" in the search box.
+
+1. Add a new formatting rule with the desired expression (for example, "=Fields.LineTotal LessThan 50").
+
+1. Apply the desired style settings for the added rule (for example, red background).
 
 The quick video tutorial below shows how to apply conditional formatting to a LineTotal TextBox in a table by changing its color to red when a value is less than 50.
 

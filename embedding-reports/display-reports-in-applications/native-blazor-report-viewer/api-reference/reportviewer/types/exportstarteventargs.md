@@ -16,6 +16,11 @@ reportingArea: NativeBlazor
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `ExportStartEventArgs` type of the Native Blazor Report Viewer

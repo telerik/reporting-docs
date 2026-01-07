@@ -19,10 +19,7 @@ position: 18
         display: contents;
     }
 
-    th {
-        white-space: nowrap;
-    }
-
+    th,
     td:not(:last-child) {
         white-space: nowrap;
     }

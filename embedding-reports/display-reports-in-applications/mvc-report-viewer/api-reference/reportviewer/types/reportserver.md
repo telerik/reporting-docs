@@ -16,6 +16,11 @@ reportingArea: MVCWrapper
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `ReportServer` type of the HTML5 ASP.NET MVC Report Viewer

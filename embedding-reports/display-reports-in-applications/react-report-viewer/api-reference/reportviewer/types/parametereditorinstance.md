@@ -16,6 +16,11 @@ reportingArea: React
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `ParameterEditorInstance` type of the React Report Viewer

@@ -16,6 +16,11 @@ reportingArea: HTML5
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `DataAttributeSet` type of the HTML5 Report Viewer

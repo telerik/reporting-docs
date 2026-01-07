@@ -16,6 +16,11 @@ reportingArea: BlazorWrapper
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `AccessibilityKeyMap` type of the Blazor Report Viewer

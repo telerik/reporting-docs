@@ -16,6 +16,11 @@ reportingArea: WebForms
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `ReportSource` type of the HTML5 ASP.NET WebForms Report Viewer

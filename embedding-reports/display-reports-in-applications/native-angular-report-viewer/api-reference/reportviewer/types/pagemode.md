@@ -16,6 +16,11 @@ reportingArea: NativeAngular
     thead, tbody, tr {
         display: contents;
     }
+
+    th,
+    td:not(:last-child) {
+        white-space: nowrap;
+    }
 </style>
 
 # The `PageMode` type of the Native Angular Report Viewer

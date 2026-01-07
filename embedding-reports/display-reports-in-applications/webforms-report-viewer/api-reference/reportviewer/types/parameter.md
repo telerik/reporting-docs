@@ -34,3 +34,10 @@ A parameter passed to the `Telerik.Reporting.IReportDocument` object when initia
 | Name | `System.String` | Gets or sets the name of the parameter that identifies it within the report's parameter collection.<br>Must match the parameter name defined in the report to ensure proper parameter binding during report processing. |
 | Value | `System.Object` | Gets or sets the value of the parameter with automatic type conversion for proper report processing.<br>Supports automatic conversion of string values to appropriate data types including integers, decimals, DateTime, TimeSpan, and boolean values for HTML5 report processing. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/overview%})
+* [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/getreportparameters%})
+* [RenderDesignTimeHtml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/renderdesigntimehtml%})
+* [ToString]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/tostring%})
+

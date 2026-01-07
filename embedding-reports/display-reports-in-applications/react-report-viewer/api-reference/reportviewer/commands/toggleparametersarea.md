@@ -34,5 +34,9 @@ const isEnabled = viewer.commands.toggleParametersArea.enabled();
 const isChecked = viewer.commands.toggleParametersArea.checked();
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/overview%})
+* [togglePrintPreview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/toggleprintpreview%})
+* [toggleSearchDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglesearchdialog%})
 

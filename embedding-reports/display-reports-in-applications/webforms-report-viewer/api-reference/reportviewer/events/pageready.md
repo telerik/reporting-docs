@@ -41,5 +41,9 @@ Gets or sets the name of the JavaScript function that will be called every time 
 </html>
 ````
 
+## See Also
 
+* [Events Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events/overview%})
+* [PrintBegin]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events/printbegin%})
+* [PrintEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events/printend%})
 

@@ -25,6 +25,8 @@ Specifies the type of service the ReportViewer is using.
 
 ## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [ServiceUrl]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/serviceurl%})
+* [Tools]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/tools%})
 * [ReportViewerServiceType]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations/reportviewerservicetype%})
-
 

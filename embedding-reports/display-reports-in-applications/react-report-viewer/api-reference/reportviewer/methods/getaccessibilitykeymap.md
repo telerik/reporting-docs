@@ -39,3 +39,9 @@ if (keyMap) {
 }
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/overview%})
+* [getPageMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/getpagemode%})
+* [getReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/getreportparameters%})
+

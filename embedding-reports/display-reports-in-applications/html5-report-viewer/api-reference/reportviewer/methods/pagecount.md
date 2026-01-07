@@ -37,3 +37,9 @@ var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var totalPages = viewer.pageCount();
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview%})
+* [pageMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode%})
+* [parametersAreaVisible]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/parametersareavisible%})
+

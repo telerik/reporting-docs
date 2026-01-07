@@ -28,6 +28,8 @@ Gets or sets the scale mode of the viewer.
 
 ## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [SearchMetadataOnDemand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/searchmetadataondemand%})
+* [Selector]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/selector%})
 * [ScaleMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/scalemode%})
-
 

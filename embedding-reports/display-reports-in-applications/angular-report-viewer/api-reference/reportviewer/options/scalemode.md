@@ -31,5 +31,9 @@ Sets how the report pages should be scaled.
 scaleMode: string = "SPECIFIC";
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/options/overview%})
+* [searchMetadataOnDemand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/options/searchmetadataondemand%})
+* [selector]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/options/selector%})
 

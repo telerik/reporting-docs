@@ -40,5 +40,9 @@ Attaches an event handler that will be called when the rendering of the report e
 }
 ````
 
+## See Also
 
+* [Events Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/events/overview%})
+* [UpdateUi]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/events/updateui%})
+* [ViewerToolTipOpening]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/events/viewertooltipopening%})
 

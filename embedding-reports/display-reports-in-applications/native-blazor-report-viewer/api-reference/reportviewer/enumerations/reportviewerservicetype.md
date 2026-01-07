@@ -34,3 +34,10 @@ Specifies the type of service the ReportViewer is using.
 | REST | Specifies that the viewer is using a REST API service. |
 | ReportServer | Specifies that the viewer is using a ReportServer instance. |
 
+## See Also
+
+* [Enumerations Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations/overview%})
+* [ExecuteCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/commands/executecommand%})
+* [ExecuteCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/commands/executecommand%})
+* [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/getreportparameters%})
+

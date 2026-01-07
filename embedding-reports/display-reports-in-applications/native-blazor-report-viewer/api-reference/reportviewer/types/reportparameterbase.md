@@ -34,3 +34,10 @@ Represents the base class for all report parameter editors in the Telerik Report
 | OnChange | `System.Func{System.Object,System.Threading.Tasks.Task}` | Function that is invoked when the value of the report parameter changes. |
 | Parameter | [`Telerik.ReportViewer.BlazorNative.ReportParameterInfo`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/types/reportparameterinfo%}) | Represents a parameter in a report, providing functionality to manage its properties and values. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/types/overview%})
+* [ExecuteCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/commands/executecommand%})
+* [ExecuteCommand]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/commands/executecommand%})
+* [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/getreportparameters%})
+

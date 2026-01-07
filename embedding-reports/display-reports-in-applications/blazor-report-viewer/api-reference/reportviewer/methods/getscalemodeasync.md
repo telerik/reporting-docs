@@ -47,3 +47,9 @@ Gets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 }
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/overview%})
+* [GetViewModeAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/getviewmodeasync%})
+* [RefreshReportAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/refreshreportasync%})
+

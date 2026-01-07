@@ -45,3 +45,9 @@ console.log(keyMap.CONFIRM_KEY); // Default: 13 (Enter)
 console.log(keyMap.MENU_AREA_KEY); // Default: 77 ('m')
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/overview%})
+* [getPageMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/getpagemode%})
+* [getReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/getreportparameters%})
+

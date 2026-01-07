@@ -45,3 +45,9 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
 }
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/overview%})
+* [GetReportSourceAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/getreportsourceasync%})
+* [GetScaleAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods/getscaleasync%})
+

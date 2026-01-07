@@ -49,3 +49,9 @@ var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview%})
+* [parametersAreaVisible]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/parametersareavisible%})
+* [printMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/printmode%})
+

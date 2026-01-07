@@ -25,5 +25,9 @@ Gets or sets a value for the callback that will be called when the value of Scal
 }
 ````
 
+## See Also
 
+* [Events Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events/overview%})
+* [ViewModeChanged]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events/viewmodechanged%})
+* [DocumentMapVisibleChanged]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events/documentmapvisiblechanged%})
 

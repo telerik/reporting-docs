@@ -37,3 +37,9 @@ const pageMode = reportViewerRef.current.getPageMode();
 console.log("Current page mode:", pageMode);
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/overview%})
+* [getReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/getreportparameters%})
+* [getReportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/getreportsource%})
+

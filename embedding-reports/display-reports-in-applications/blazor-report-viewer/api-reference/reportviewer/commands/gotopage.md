@@ -11,5 +11,9 @@ reportingArea: BlazorWrapper
 
 Gets the GoToPage command. Execute to go to a specific page of the report.
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/overview%})
+* [GoToPrevPage]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/gotoprevpage%})
+* [HistoryBack]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/historyback%})
 

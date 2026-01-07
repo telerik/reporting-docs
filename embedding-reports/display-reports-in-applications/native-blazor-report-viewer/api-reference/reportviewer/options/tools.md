@@ -43,5 +43,9 @@ Represents the collection of tools available in the report viewer's toolbar. All
 }
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [TooltipTemplate]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/tooltiptemplate%})
+* [ViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options/viewmode%})
 

@@ -34,5 +34,9 @@ const isEnabled = viewer.commands.togglePrintPreview.enabled();
 const isChecked = viewer.commands.togglePrintPreview.checked();
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/overview%})
+* [toggleSearchDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglesearchdialog%})
+* [toggleSendEmailDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglesendemaildialog%})
 

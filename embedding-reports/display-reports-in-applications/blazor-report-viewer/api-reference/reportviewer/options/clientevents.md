@@ -37,6 +37,8 @@ Gets or sets the viewer's event handler function names as strings. The function 
 
 ## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/commands%})
+* [DisabledButtonClass]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/disabledbuttonclass%})
 * [ClientEventsOptions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/clienteventsoptions%})
-
 

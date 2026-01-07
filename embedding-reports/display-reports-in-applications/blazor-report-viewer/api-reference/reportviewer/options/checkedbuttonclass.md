@@ -21,5 +21,9 @@ Gets or sets the class to be used by buttons in the checked state.
 <ReportViewer CheckedButtonClass="btn-checked" />
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [ClientEvents]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/clientevents%})
+* [Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/commands%})
 

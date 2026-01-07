@@ -43,3 +43,10 @@ Represents a collection of [`Telerik.ReportViewer.Html5.WebForms.Parameter`]({%s
 | SetItem(System.Int32,Telerik.ReportViewer.Html5.WebForms.Parameter) | - | Sets the parameter at the specified index, or updates an existing parameter if one with the same name already exists.<br>If a parameter with the same name already exists at a different index, the existing parameter's value is updated instead of setting at the specified index. |
 | ToString | `System.String` | Returns a string representation of the ParameterCollection containing all parameter information.<br>Provides a compact string representation of all parameters for debugging and logging purposes. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/overview%})
+* [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/getreportparameters%})
+* [RenderDesignTimeHtml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/renderdesigntimehtml%})
+* [ToString]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/tostring%})
+

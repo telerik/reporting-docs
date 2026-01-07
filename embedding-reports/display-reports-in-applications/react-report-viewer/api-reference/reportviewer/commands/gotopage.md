@@ -34,5 +34,9 @@ const isEnabled = viewer.commands.goToPage.enabled();
 const isChecked = viewer.commands.goToPage.checked();
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/overview%})
+* [goToPrevPage]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/gotoprevpage%})
+* [historyBack]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/historyback%})
 

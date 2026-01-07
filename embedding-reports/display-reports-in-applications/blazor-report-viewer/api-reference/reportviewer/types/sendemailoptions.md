@@ -39,3 +39,10 @@ Specifies the send email option settings.
 | Subject | `System.String` | Gets or sets the MailMessage Subject value. |
 | To | `System.String` | Gets or sets the e-mail address used for the MailMessage TO value. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/overview%})
+* [BindAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/events/bindasync%})
+* [ClearReportSourceAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/clearreportsourceasync%})
+* [GetAccessibilityKeyMapAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/getaccessibilitykeymapasync%})
+

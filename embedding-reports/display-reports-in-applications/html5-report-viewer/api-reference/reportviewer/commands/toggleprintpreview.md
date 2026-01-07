@@ -29,5 +29,9 @@ if (rv.commands.togglePrintPreview.enabled()) {}
 if (rv.commands.togglePrintPreview.checked()) {}
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/overview%})
+* [toggleSearchDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/togglesearchdialog%})
+* [toggleSendEmailDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/togglesendemaildialog%})
 

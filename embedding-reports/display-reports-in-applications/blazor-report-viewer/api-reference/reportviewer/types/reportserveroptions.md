@@ -36,3 +36,10 @@ Specifies the configuration details for connecting to a Telerik Report Server in
 | Url | `System.String` | Gets or sets the URL to the Report Server instance.<br>Required for both Report Server for .NET and Report Server for .NET Framework 4.6.2. |
 | Username | `System.String` | Gets or sets a registered username in the Report Server.<br>Supported by both Report Server for .NET and Report Server for .NET Framework 4.6.2.<br>If omitted when connecting to Report Server for .NET Framework 4.6.2 with Guest enabled, the built-in Guest account will be used.<br>Optional. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/overview%})
+* [BindAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/events/bindasync%})
+* [ClearReportSourceAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/clearreportsourceasync%})
+* [GetAccessibilityKeyMapAsync]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/getaccessibilitykeymapasync%})
+

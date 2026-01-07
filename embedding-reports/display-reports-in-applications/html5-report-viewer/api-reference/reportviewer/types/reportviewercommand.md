@@ -40,3 +40,10 @@ Each command is an object with the following methods:
 | enabled | `function` | Returns true if the command can currently be executed. |
 | checked | `function` | Returns true if the command is in a checked/active state. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/overview%})
+* [historyBack]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/historyback%})
+* [historyForward]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/historyforward%})
+* [stopRendering]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/stoprendering%})
+

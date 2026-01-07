@@ -35,3 +35,9 @@ Renders the HTML5 ReportViewer control for design-time display in Visual Studio 
 |-----------|------|----------|-------------|
 | writer | `System.Web.UI.HtmlTextWriter` | No | The HtmlTextWriter object that receives the design-time HTML output. |
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods/overview%})
+* [ToString]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods/tostring%})
+* [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods/getreportparameters%})
+

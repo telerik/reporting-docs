@@ -34,5 +34,9 @@ const isEnabled = viewer.commands.stopRendering.enabled();
 const isChecked = viewer.commands.stopRendering.checked();
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/overview%})
+* [toggleAiPromptDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/toggleaipromptdialog%})
+* [toggleDocumentMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/toggledocumentmap%})
 

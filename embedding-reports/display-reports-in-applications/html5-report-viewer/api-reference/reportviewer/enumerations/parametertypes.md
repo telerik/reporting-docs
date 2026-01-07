@@ -37,3 +37,7 @@ Enum for the supported parameter types in the report viewer.
 | DATETIME | DateTime parameter type. |
 | BOOLEAN | Boolean parameter type. |
 
+## See Also
+
+* [Enumerations Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/overview%})
+

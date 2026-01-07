@@ -39,3 +39,8 @@ and whether the PDF plug-in is available or not.
 type PrintMode = "autoSelect" | "forcePDFPlugin" | "forcePDFFile";
 ````
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types/overview%})
+* [printMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/options/printmode%})
+

@@ -51,3 +51,7 @@ Describes the available data attributes that can be used to control the Report V
 | toggleSendEmailDialog | `Object` | Show or hide the send email dialog |
 | toggleAiPromptDialog | `Object` | Show or hide the AI prompt dialog |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/overview%})
+

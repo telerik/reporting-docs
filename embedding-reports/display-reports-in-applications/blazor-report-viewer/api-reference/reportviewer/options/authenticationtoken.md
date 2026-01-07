@@ -21,5 +21,9 @@ Gets or sets the encoded authentication token used to authenticate the requests.
 <ReportViewer AuthenticationToken="your-token-here" />
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [CheckedButtonClass]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/checkedbuttonclass%})
+* [ClientEvents]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/clientevents%})
 

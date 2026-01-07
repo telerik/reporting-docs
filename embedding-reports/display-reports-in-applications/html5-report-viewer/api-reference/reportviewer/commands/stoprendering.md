@@ -29,5 +29,9 @@ if (rv.commands.stopRendering.enabled()) {}
 if (rv.commands.stopRendering.checked()) {}
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/overview%})
+* [toggleAiPromptDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/toggleaipromptdialog%})
+* [toggleDocumentMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/toggledocumentmap%})
 

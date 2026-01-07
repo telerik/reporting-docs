@@ -46,5 +46,7 @@ viewer.commands.refresh.exec(); // Refresh report
 viewer.commands.goToPage.exec(3); // Go to page 3
 ````
 
+## See Also
 
+* [Read-Only Properties Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/read-only-properties/overview%})
 

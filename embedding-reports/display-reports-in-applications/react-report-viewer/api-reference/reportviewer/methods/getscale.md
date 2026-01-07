@@ -37,3 +37,9 @@ const scaleInfo = reportViewerRef.current.getScale();
 console.log("Scale:", scaleInfo.scale, "Scale mode:", scaleInfo.scaleMode);
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/overview%})
+* [getViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/getviewmode%})
+* [pageCount]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/pagecount%})
+

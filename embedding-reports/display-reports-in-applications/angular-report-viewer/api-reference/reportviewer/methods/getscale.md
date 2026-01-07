@@ -37,3 +37,9 @@ console.log(scaleInfo.scale); // e.g., 1.0
 console.log(scaleInfo.scaleMode); // e.g., "SPECIFIC"
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/overview%})
+* [getViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/getviewmode%})
+* [pageCount]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods/pagecount%})
+

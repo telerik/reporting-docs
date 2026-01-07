@@ -22,5 +22,9 @@ A class used in conjunction with the data- attributes. Whenever a command is in 
 // Use with component: disabledButtonClass="btn-disabled"
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/overview%})
+* [documentMapAreaPosition]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/documentmapareaposition%})
+* [documentMapVisible]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/documentmapvisible%})
 

@@ -11,5 +11,9 @@ reportingArea: BlazorWrapper
 
 Gets the ToggleSearchDialog command. Execute to show or hide the search dialog.
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/overview%})
+* [ToggleSideMenu]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/togglesidemenu%})
+* [ToggleZoomMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/togglezoommode%})
 

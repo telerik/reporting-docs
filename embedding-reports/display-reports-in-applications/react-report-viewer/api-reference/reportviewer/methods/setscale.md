@@ -42,3 +42,9 @@ Sets the scale factor and scale mode.
 reportViewerRef.current.setScale({ scale: 1.5, scaleMode: "SPECIFIC" });
 ````
 
+## See Also
+
+* [Methods Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/overview%})
+* [setViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/setviewmode%})
+* [unbind]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/methods/unbind%})
+

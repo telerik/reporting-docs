@@ -31,5 +31,9 @@ var rv = $("#reportViewer1").data("telerik_ReportViewer");
 if (rv.commands.historyBack.checked()) {}
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/overview%})
+* [historyForward]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/historyforward%})
+* [print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/print%})
 

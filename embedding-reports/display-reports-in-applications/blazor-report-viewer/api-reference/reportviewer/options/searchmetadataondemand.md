@@ -21,5 +21,9 @@ Gets or sets a value indicating whether the search metadata will be delivered on
 <ReportViewer SearchMetadataOnDemand="true" />
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [Selector]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/selector%})
+* [SendEmail]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/sendemail%})
 

@@ -22,5 +22,9 @@ A selector used in conjunction with the data- attributes. Whenever a command is 
 // Use with component: selector="#customToolbar"
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/overview%})
+* [sendEmail]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/sendemail%})
+* [serviceUrl]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/serviceurl%})
 

@@ -42,3 +42,7 @@ The available export options are:
 type ExportFormat = "pdf" | "csv" | "xlsx" | "pptx" | "rtf" | "image" | "docx";
 ````
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types/overview%})
+

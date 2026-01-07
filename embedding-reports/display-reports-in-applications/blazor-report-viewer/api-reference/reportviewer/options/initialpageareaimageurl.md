@@ -21,5 +21,9 @@ Gets or sets the image URL for the PageArea background image. Used only when the
 <ReportViewer InitialPageAreaImageUrl="/images/loading-background.png" />
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [KeepClientAlive]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/keepclientalive%})
+* [PageMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/pagemode%})
 

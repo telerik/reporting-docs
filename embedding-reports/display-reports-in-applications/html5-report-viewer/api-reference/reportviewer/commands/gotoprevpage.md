@@ -29,5 +29,9 @@ if (rv.commands.goToPrevPage.enabled()) {}
 if (rv.commands.goToPrevPage.checked()) {}
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/overview%})
+* [historyBack]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/historyback%})
+* [historyForward]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands/historyforward%})
 

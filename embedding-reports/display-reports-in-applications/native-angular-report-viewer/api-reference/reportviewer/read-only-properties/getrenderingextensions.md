@@ -21,5 +21,9 @@ Gets the current report's rendering extensions. an array of RenderingExtension o
 console.log("Rendering extensions:", JSON.stringify(this.viewer.getRenderingExtensions));
 ````
 
+## See Also
 
+* [Read-Only Properties Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/overview%})
+* [hasLazyParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/haslazyparameters%})
+* [isAiPromptWindowOpen]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/isaipromptwindowopen%})
 

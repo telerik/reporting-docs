@@ -11,5 +11,9 @@ reportingArea: BlazorWrapper
 
 Gets the ToggleSideMenu command. Execute to show or hide the side menu.
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/overview%})
+* [ToggleZoomMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/togglezoommode%})
+* [Zoom]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/commands/zoom%})
 

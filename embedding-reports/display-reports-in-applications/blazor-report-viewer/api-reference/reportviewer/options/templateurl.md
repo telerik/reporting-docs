@@ -21,5 +21,9 @@ Gets or sets the url for the report viewer template. A customized template can b
 <ReportViewer TemplateUrl="/custom-report-template.html" />
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [ViewerId]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/viewerid%})
+* [ViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/viewmode%})
 

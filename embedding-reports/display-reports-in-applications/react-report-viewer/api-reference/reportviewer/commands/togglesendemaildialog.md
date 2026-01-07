@@ -34,5 +34,9 @@ const isEnabled = viewer.commands.toggleSendEmailDialog.enabled();
 const isChecked = viewer.commands.toggleSendEmailDialog.checked();
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/overview%})
+* [toggleSideMenu]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglesidemenu%})
+* [toggleZoomMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglezoommode%})
 

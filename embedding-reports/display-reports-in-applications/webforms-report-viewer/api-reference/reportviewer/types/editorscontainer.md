@@ -34,3 +34,10 @@ Provides configuration container for parameter editor types used in single-selec
 | MultiSelect | [`Telerik.ReportViewer.Html5.WebForms.EditorTypes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations/editortypes%}) | Gets or sets the editor type used for multi-select parameter scenarios.<br>Determines the visual style for parameters that allow multiple value selection from available options. |
 | SingleSelect | [`Telerik.ReportViewer.Html5.WebForms.EditorTypes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations/editortypes%}) | Gets or sets the editor type used for single-select parameter scenarios.<br>Determines the visual style for parameters that allow only single value selection from available options. |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types/overview%})
+* [GetReportParameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/getreportparameters%})
+* [RenderDesignTimeHtml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/renderdesigntimehtml%})
+* [ToString]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options/tostring%})
+

@@ -35,3 +35,10 @@ Specifies the printing method options for the MVC Report Viewer control. Used to
 | ForcePDFFile | Forces export of the report to PDF format with embedded print script for automatic printing when the PDF is opened.<br>Generates a PDF file with print script that triggers printing when opened, providing compatibility across all browsers. |
 | ForcePDFPlugin | Forces the use of the browser's PDF plugin for printing regardless of browser version, settings, or plugin availability.<br>Ensures PDF plugin usage but may fail if the plugin is not available or properly configured in the user's browser. |
 
+## See Also
+
+* [Enumerations Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations/overview%})
+* [AccessibilityKeyMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/options/accessibilitykeymap%})
+* [AuthenticationToken]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/options/authenticationtoken%})
+* [CheckedButtonClass]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/options/checkedbuttonclass%})
+

@@ -38,3 +38,7 @@ Represents the API of a parameter editor instance returned by createEditor.
 | clearPendingChange | `function` | Invoked when parameter changes (optional, not present on all editors). |
 | destroy | `function` | Invoked to destroy the parameter editor (optional, not present on all editors). |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types/overview%})
+

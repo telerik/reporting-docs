@@ -21,5 +21,9 @@ Gets the total number of pages in the current report. The total page count of th
 console.log("The total number of pages in the current report are.", this.viewer.totalPages);
 ````
 
+## See Also
 
+* [Read-Only Properties Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/overview%})
+* [autoRunEnabled]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/autorunenabled%})
+* [displayDocumentMap]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/displaydocumentmap%})
 

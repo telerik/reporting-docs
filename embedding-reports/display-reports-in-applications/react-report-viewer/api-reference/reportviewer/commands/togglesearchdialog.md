@@ -34,5 +34,9 @@ const isEnabled = viewer.commands.toggleSearchDialog.enabled();
 const isChecked = viewer.commands.toggleSearchDialog.checked();
 ````
 
+## See Also
 
+* [Commands Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/overview%})
+* [toggleSendEmailDialog]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglesendemaildialog%})
+* [toggleSideMenu]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/commands/togglesidemenu%})
 

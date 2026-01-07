@@ -37,3 +37,7 @@ An object where each property name corresponds to a report parameter's name, and
 }
 ````
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/overview%})
+

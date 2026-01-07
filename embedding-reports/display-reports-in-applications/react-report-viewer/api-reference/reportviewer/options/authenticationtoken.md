@@ -23,5 +23,9 @@ const token = "YOUR_AUTH_TOKEN";
 // Use with component: authenticationToken={token}
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/overview%})
+* [checkedButtonClass]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/checkedbuttonclass%})
+* [disabledButtonClass]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/options/disabledbuttonclass%})
 

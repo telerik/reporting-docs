@@ -21,5 +21,9 @@ Gets or sets a value indicating whether the accessibility features of the report
 <ReportViewer EnableAccessibility="true" />
 ````
 
+## See Also
 
+* [Options Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/overview%})
+* [InitialPageAreaImageUrl]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/initialpageareaimageurl%})
+* [KeepClientAlive]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/options/keepclientalive%})
 

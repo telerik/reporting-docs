@@ -36,3 +36,10 @@ Describes an interactive action triggered by the user in the report viewer. The 
 | ReportItemName | `string` | The name of the report item associated with the action. |
 | Value | `Object` | Additional data for the action, depending on the Type:<br>  - For "navigateToUrl": { Url: string, Target: "NewWindow"|"SameWindow" }<br>  - For "navigateToBookmark": string (the target bookmark)<br>  - For "navigateToReport": { report: string, parameters: Object }<br>  - For "customAction": { Parameters: Object } |
 
+## See Also
+
+* [Types Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/overview%})
+* [interactiveActionExecuting]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/interactiveactionexecuting%})
+* [interactiveActionEnter]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/interactiveactionenter%})
+* [interactiveActionLeave]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/options/interactiveactionleave%})
+

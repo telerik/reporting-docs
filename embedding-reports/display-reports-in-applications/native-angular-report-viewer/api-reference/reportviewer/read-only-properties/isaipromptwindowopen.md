@@ -23,5 +23,9 @@ if (this.viewer.isAiPromptWindowOpen) {
 }
 ````
 
+## See Also
 
+* [Read-Only Properties Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/overview%})
+* [isDocumentMapAvailable]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/isdocumentmapavailable%})
+* [isInPrintViewMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/read-only-properties/isinprintviewmode%})
 

@@ -95,10 +95,10 @@ table th:nth-of-type(3) {
 Installs the 32-bit SQL Server and Oracle drivers to the target path and outputs "OK" if installation succeeds.
 
 ```powershell
-/mode uninstall /platform x86 /drivers "SQLS,ORA" /successToken "OK"` - uninstalls the 32-bit  SQL Server and Oracle drivers and outputs "OK"
+/mode uninstall /platform x86 /drivers "SQLS,ORA" /successToken "OK"
 ```
 
-If uninstallation succeeds.
+Uninstalls the 32-bit  SQL Server and Oracle drivers and outputs "OK" if uninstallation succeeds.
 
 ## Graphical User Interface Installer
 

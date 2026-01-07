@@ -36,7 +36,7 @@ Gets or sets the print mode for the viewer.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| pm | `PrintModes` | Yes | The print mode to set. If omitted, returns the current print mode. |
+| pm | [`PrintModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/printmodes%}) | Yes | The print mode to set. If omitted, returns the current print mode. |
 
 ## Example
 

@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| reportSourceOptions | `Telerik.ReportViewer.Blazor.ReportSourceOptions` | No | - |
+| reportSourceOptions | [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/reportsourceoptions%}) | No | - |
 
 ## Example
 

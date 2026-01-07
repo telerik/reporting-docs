@@ -36,7 +36,7 @@ Sets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| scaleMode | `Telerik.ReportViewer.Blazor.ScaleMode` | No | - |
+| scaleMode | [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/scalemode%}) | No | - |
 
 ## Example
 

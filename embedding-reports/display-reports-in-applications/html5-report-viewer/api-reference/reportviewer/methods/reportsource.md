@@ -36,7 +36,7 @@ Gets or sets the report source for the viewer. When called with an argument, set
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| rs | `ReportSource` | Yes | The report source object to set, or null to clear. If omitted, acts as a getter. |
+| rs | [`ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types/reportsource%}) | Yes | The report source object to set, or null to clear. If omitted, acts as a getter. |
 
 ## Example
 

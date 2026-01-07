@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| viewMode | `Telerik.ReportViewer.Blazor.ViewMode` | No | - |
+| viewMode | [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/viewmode%}) | No | - |
 
 ## Example
 

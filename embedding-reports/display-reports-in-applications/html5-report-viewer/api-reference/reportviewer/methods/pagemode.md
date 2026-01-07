@@ -36,7 +36,7 @@ Gets or sets the page mode (e.g., Single Page or Continuous Scroll).
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| psm | `PageModes` | Yes | The page mode to set. If omitted, returns the current page mode. |
+| psm | [`PageModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/pagemodes%}) | Yes | The page mode to set. If omitted, returns the current page mode. |
 
 ## Example
 

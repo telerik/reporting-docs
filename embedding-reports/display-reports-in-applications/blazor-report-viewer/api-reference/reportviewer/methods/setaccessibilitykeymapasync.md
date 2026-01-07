@@ -36,7 +36,7 @@ Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikrepor
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| keyMap | `Telerik.ReportViewer.Blazor.AccessibilityKeyMap` | No | - |
+| keyMap | [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types/accessibilitykeymap%}) | No | - |
 
 ## Example
 

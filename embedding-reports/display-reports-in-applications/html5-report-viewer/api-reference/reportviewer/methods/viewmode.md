@@ -36,7 +36,7 @@ Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| vm | `ViewModes` | Yes | The view mode to set. If omitted, returns the current view mode. |
+| vm | [`ViewModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/viewmodes%}) | Yes | The view mode to set. If omitted, returns the current view mode. |
 
 ## Example
 

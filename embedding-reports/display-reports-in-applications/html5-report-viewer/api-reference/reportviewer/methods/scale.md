@@ -38,7 +38,7 @@ Gets or sets the scale and scale mode for the viewer.
 |-----------|------|----------|-------------|
 | args | `Object` | Yes | The scale settings to apply. Should contain 'scale' (number) and 'scaleMode' (string). |
 | args.scale | `number` | Yes | The zoom scale (e.g., 1.0 for 100%). |
-| args.scaleMode | `ScaleModes` | Yes | The scale mode (e.g., 'FIT_PAGE', 'FIT_PAGE_WIDTH', 'SPECIFIC'). |
+| args.scaleMode | [`ScaleModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations/scalemodes%}) | Yes | The scale mode (e.g., 'FIT_PAGE', 'FIT_PAGE_WIDTH', 'SPECIFIC'). |
 
 ## Example
 

@@ -36,7 +36,7 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| eventName | `Telerik.ReportViewer.Blazor.Event` | No | - |
+| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations/event%}) | No | - |
 | eventHandlerName | `System.String` | No | - |
 
 ## Example

@@ -116,7 +116,7 @@ The Telerik Reporting MCP server is available as Nuget package: https://www.nuge
 	* For `Server ID` use _telerik-reporting-assistant_.
 	* Select _stdio_ as `Type`.
 	* The `Command (with optional arguments)` field should contain _dnx Telerik.Reporting.MCP --yes_.
-	* Click on the `Save` button to preserver the configuration.
+	* Click on the `Save` button to preserve the configuration.
 
 	![Steps to configure the MCP server in the Visual Studio](images/vs-autoinstall-configure-msp-server.png)
 

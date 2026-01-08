@@ -118,7 +118,7 @@ The Telerik Reporting MCP server is available as Nuget package: https://www.nuge
 	* The `Command (with optional arguments)` field should contain _dnx Telerik.Reporting.MCP --yes_.
 	* Click on the `Save` button to preserve the configuration.
 
-	![Steps to configure the MCP server in the Visual Studio](images/vs-autoinstall-configure-msp-server.png)
+	![Steps to configure the MCP server in the Visual Studio](images/vs-autoinstall-configure-mcp-server.png)
 
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 

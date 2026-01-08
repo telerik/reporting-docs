@@ -112,7 +112,7 @@ The Telerik Reporting MCP server is available as Nuget package: https://www.nuge
 	![Steps to open the Configure MCP server menu in the Visual Studio GitHub Copilot Chat](images/vs-autoinstall-open-mcp-configuration-menu.png)
 
 1. Use the following values for the configuration fields:
-	* In `Destination` select either _Gloabal-Avaliable in all solutions_ or _Solution-Avaliable in this solution_.
+	* In `Destination` select either _Global-Available in all solutions_ or _Solution-Available in this solution_.
 	* For `Server ID` use _telerik-reporting-assistant_.
 	* Select _stdio_ as `Type`.
 	* The `Command (with optional arguments)` field should contain _dnx Telerik.Reporting.MCP --yes_.

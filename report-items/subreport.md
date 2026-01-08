@@ -14,7 +14,7 @@ reportingArea: General
 
 The SubReport item enables you to display reports within reports and serves as a container, similar to the report sections, growing in size depending on its children.
 
-The following screenshot shows a SubReport item at design time, allowing you to compose complex reports from various report sources. The data for each SubReport can be completely different, for example, you can combine a product listing, a sales summary, and a list of salespeople each in their own sub-report with each sub-report drawing its data from a different source. You can also pass parameters to the SubReport by using the **Edit Parameters** collection editor.
+The following screenshot shows a SubReport item at design time, allowing you to compose complex reports from various report sources. The data for each SubReport can be completely different; for example, you can combine a product listing, a sales summary, and a list of salespeople, each in its own subreport, with each subreport drawing its data from a different source. You can also pass parameters to the SubReport by using the **Edit Parameters** collection editor.
 
 ![SubReport report item in the Report Designer](images/Subreport.png)
 
@@ -22,13 +22,13 @@ The following screenshot shows a SubReport item at design time, allowing you to 
 
 To set up the SubReport:
 
-1. Click the report item you want to change. The selected SubReport properties are listed in the **Property Browser**.
-1. In the `ReportSource` property, click the **Edit Collection (…)** button. As a result, the **Load a Report From** window opens.
-1. Click the **Edit Parameters** button to add a parameter. As a result, the **Edit Parameters** window opens.
-1. Click the **New** button to add a new parameter mapping.
-1. Assuming you have assigned the `ReportSource` property, the **Parameter Name** drop-down list will contain the names of parameters defined in the sub-report. Select a **Parameter Name** from the combo box to set the target for this parameter.
-1. The **Parameter Value** combo-box allows you to directly enter the value, and create an `<Expression>` or a `<New Report Parameter>`.
-1. When you are done, click **OK**.
+1. Click the report item you want to change. The selected SubReport properties are listed in the __Property Browser__.
+1. In the `ReportSource` property, click the __Edit Collection (…)__ button. As a result, the __Load a Report From__ window opens.
+1. Click the __Edit Parameters__ button to add a parameter. As a result, the __Edit Parameters__ window opens.
+1. Click the __New__ button to add a new parameter mapping.
+1. Assuming you have assigned the `ReportSource` property, the __Parameter Name__ drop-down list will contain the names of parameters defined in the subreport. Select a __Parameter Name__ from the combo box to set the target for this parameter.
+1. The __Parameter Value__ combo-box allows you to directly enter the value, and create an `<Expression>` or a `<New Report Parameter>`.
+1. When you are done, click __OK__.
 
 The following image shows the end result.
 
@@ -36,16 +36,16 @@ The following image shows the end result.
 
 ## Setting the Report Source
 
-To specify a sub-report for a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}), you need a [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
+To specify a subreport for a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}), you need a [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
 
 The SubReport enables you to set up the report source either by using a Telerik Report Designer tool or programmatically.
 
-When using relative path to the report in the **UriReportSource** of the SubReport, it gets resolved by default as follows:
+When using a relative path to the report in the __UriReportSource__ of the SubReport, it gets resolved by default as follows:
 
-- In the Standalone Report Designer, Reporting REST Services and Report Viewers with respect to the main report that calls the subreport;
-- In custom applications rendering reports programmatically with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor) with respect to the application starting point.
+* In the Standalone Report Designer, Reporting REST Services, and Report Viewers with respect to the main report that calls the subreport;
+* In custom applications, rendering reports programmatically with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor) with respect to the application starting point.
 
-> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) ensure using the _[CategoryName]/[ReportName]_ path for the URI as specified in the article [Working with Report Server Reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}).
+> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction), ensure you use the *[CategoryName]/[ReportName]* path for the URI as specified in the article [Working with Report Server Reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}).
 
 ### Using a Report Designer
 
@@ -68,7 +68,7 @@ Due to the format of the produced reports, the [Standalone Report Designer]({%sl
 
 The [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) provides the [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) options.
 
-If you are using the HTML5 Report Viewer to preview the report, the main report will be rendered in HTML and loaded on the client. The sub-report is considered as part of the main report content and its report source will be internally resolved without additional calls to the Reporting REST service.
+If you are using the HTML5 Report Viewer to preview the report, the main report will be rendered in HTML and loaded on the client. The subreport is considered part of the main report content, and its report source will be internally resolved without additional calls to the Reporting REST service.
 
 ## The property DataSource of the SubReport item
 
@@ -80,24 +80,25 @@ All the [data sources]({%slug telerikreporting/designing-reports/connecting-to-d
 
 A common scenario would be to feed the inner report with data coming from the data context of the `SubReport` item. To do this, define a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to bind the `DataSource` property to a data field.
 
-For example, define a `Binding` with `Path` `DataSource` and `Expression` `=Fields.InvoiceRows` to link the inner report DataSource to the collection with the invoice rows from the main report DataSource.
+For example, define a `Binding` with `Path`: `DataSource`, and `Expression`: `= Fields.InvoiceRows` to link the inner report DataSource to the collection with the invoice rows from the main report DataSource.
 
 ## Considerations and Known Limitations
 
 When working with the SubReport item, mind the following:
 
-- Page sections are not related to the report itself, but are relative to the paper or screen. Therefore, page sections of nested or detail reports are ignored and only the page sections of the main report are visible.
-- To render page sections that appear on each page, similar to page sections, consider using an unbound group (no grouping criteria specified) and set the [`PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#Telerik_Reporting_GroupSection_PrintOnEveryPage) property of its sections to `True`. Note that you cannot use the `PageCount` and `PageNumber` global objects in group sections.
-- The [Table of Contents (TOC) section]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%}) is designed to be displayed at the top/bottom of the entire report document. For that reason, the TOC section of the subreport is ignored.
-- To remove blank vertical space in the detail section of a SubReport, set the `Height` of the `SubReport.ReportSource` `DetailSection` to the height of the highest item.
-- Sections can grow to accommodate their children but cannot shrink to hide empty spaces. To make the detail section shrink only at runtime, set the `Height` property of the `DetailSection` in the report constructor. Place the `Height` property assignment code right after the `IntializeComponent()` method call.
-- The default styles used in the subreports may be overridden by inherited styles from their parent reports.
+* Page sections are not related to the report itself, but are relative to the paper or screen. Therefore, page sections of nested or detail reports are ignored, and only the page sections of the main report are visible.
+* The `PageSettings` are not related to the report itself, but are relative to the paper or screen. For that reason, they are ignored, and properties as `ColumnCount` won't be respected for the subreport.
+* To render page sections that appear on each page, similar to page sections, consider using an unbound group (no grouping criteria specified) and set the [`PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#Telerik_Reporting_GroupSection_PrintOnEveryPage) property of its sections to `True`. Note that you cannot use the `PageCount` and `PageNumber` global objects in group sections.
+* The [Table of Contents (TOC) section]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%}) is designed to be displayed at the top/bottom of the entire report document. For that reason, the TOC section of the subreport is ignored.
+* To remove blank vertical space in the detail section of a SubReport, set the `Height` of the `SubReport.ReportSource` `DetailSection` to the height of the highest item.
+* Sections can grow to accommodate their children, but cannot shrink to hide empty spaces. To make the detail section shrink only at runtime, set the `Height` property of the `DetailSection` in the report constructor. Place the `Height` property assignment code right after the `InitializeComponent()` method call.
+* The default styles used in the subreports may be overridden by inherited styles from their parent reports.
 
-  When Report items and sections use default styles (i.e. their styles are not set explicitly), they will inherit the Styles from their parents. This is valid for the SubReport item and the corresponding subreport specified by its ReportSource. This may lead to inconsistencies when rendering the subreport as a separate report and in a main report. Here is an example for clarity:
+	When Report items and sections use default styles (i.e., their styles are not set explicitly), they will inherit the Styles from their parents. This is valid for the SubReport item and the corresponding subreport specified by its ReportSource. This may lead to inconsistencies when rendering the subreport as a separate report and in a main report. Here is an example for clarity:
 
-  Let's have a report definition (referenced below as _subreport_) that doesn't have a Font specified. It will be rendered with Font size `10pt` which is a default value, which is not explicitly set. If you have a TextBox in this report, with default Font, the text will be rendered with `10pt` when you render the _subreport_ as a separate report.
+	Let's have a report definition (referenced below as _subreport_) that doesn't have a Font specified. It will be rendered with Font size `10pt`, which is a default value, and is not explicitly set. If you have a TextBox in this report, with the default Font, the text will be rendered with `10pt` when you render the _subreport_ as a separate report.
 
-  Let's consider a main report, with Font size set explicitly to `20pt`. If we use the above _subreport_ in our main report, the _subreport_ text will inherit the Font size from the main report and the same text will appear with size `20pt`.
+	Let's consider a main report, with Font size set explicitly to `20pt`. If we use the above _subreport_ in our main report, the _subreport_ text will inherit the Font size from the main report, and the same text will appear with size `20pt`.
 
 ## Next Steps
 

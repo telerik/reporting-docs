@@ -178,6 +178,10 @@ That was it! Now you are ready to deep-dive into Telerik Reporting and take full
 
 ## Next Steps
 
-- [First Steps Guide: Integrating Reports in Applications]({% slug first-steps-integrating-reports %})
-- [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview %})
-- [About Telerik Reporting]({% slug on-telerik-reporting %})
+* [First Steps Guide: Integrating Reports in Applications]({% slug first-steps-integrating-reports %})
+* [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview %})
+* [About Telerik Reporting]({% slug on-telerik-reporting %})
+
+## See Also
+
+* [Web Report Designer User Guide]({%slug user-guide/overview%})

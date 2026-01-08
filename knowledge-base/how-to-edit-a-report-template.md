@@ -5,8 +5,8 @@ description: Learn more about Report Templates in the Telerik Reporting Web Repo
 type: how-to
 slug: web-report-designer-how-to-edit-a-report-template
 tags: web, report, designer, wrd, report, template, trtx, edit
-published: True
-position:
+published: True 
+position: 
 res_type: kb
 ---
 

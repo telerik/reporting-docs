@@ -99,12 +99,12 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 
 The steps below describe the sample procedure for configuring the Telerik Reporting MCP server in Visual Studio.
 
-1. Add an `mcp.json` file to either of the following locations:
+1. Add an `.mcp.json` file to either of the following locations:
 
    - For a workspace-specific setup, add the file to the solution's folder.
    - For a global setup, add the file to your user directory, `%USERPROFILE%` (for example, `C:\Users\YourName\.mcp.json`).
 
-1. Add the following configuration to the `mcp.json` file:
+1. Add the following configuration to the `.mcp.json` file:
 
    - In .NET 10:
 
@@ -215,7 +215,7 @@ The basic setup in Visual Studio Code involves the following steps:
 
 1. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
-   ```json
+   ```JSON
    {
      "chat.mcp.discovery.enabled": true
    }
@@ -227,7 +227,7 @@ The basic setup in Visual Studio Code involves the following steps:
 
 ## Cursor
 
-> For complete setup instructions, see [Model Context Protocol](https://docs.cursor.com/context/mcp).
+> For complete setup instructions, see [Model Context Protocol](https://cursor.com/docs/context/mcp).
 
 Create a `.cursor/mcp.json` file in your workspace root (or user folder for global setup):
 
@@ -332,7 +332,7 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 - "`#telerik-reporting-assistant` Add a Telerik Report Viewer to my native Angular application."
 - "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
-> tip Visit the [Telerik Reporting Prompt Library]({%slug ai-prompt-library %}) for more sample prompts.
+> tip Visit the [Telerik Reporting Prompt Library]({%slug ai-prompt-library%}) for more sample prompts.
 
 ### Usage Limits
 

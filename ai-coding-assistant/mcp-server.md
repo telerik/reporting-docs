@@ -100,6 +100,13 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 > * Early Visual Studio 17.14 versions require the Copilot Chat window to be open when a solution loads for the MCP server to work properly.
 > * For complete setup instructions, see [Use MCP servers in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers).
 
+### Automatic Configuration
+
+
+Finally, enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+
+### Manual Configuration
+
 The steps below describe the sample procedure for configuring the Telerik Reporting MCP server in Visual Studio.
 
 1. Add an `.mcp.json` file to either of the following locations:

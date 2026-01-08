@@ -100,7 +100,7 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 > * Early Visual Studio 17.14 versions require the Copilot Chat window to be open when a solution loads for the MCP server to work properly.
 > * For complete setup instructions, see [Use MCP servers in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers).
 
-The Telerik Reporting MCP server is available as Nuget package: https://www.nuget.org/packages/Telerik.Reporting.MCP.
+The Telerik Reporting MCP server is available as NuGet package: https://www.nuget.org/packages/Telerik.Reporting.MCP.
 
 ### Automatic Configuration through the Visual Studio UI
 

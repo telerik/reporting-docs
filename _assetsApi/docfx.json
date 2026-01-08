@@ -5,8 +5,8 @@
       "src": [
         {
           "files": [
-            "Bin/**.dll",
-            "Bin/**.xml"
+            "Bin/*.dll",
+            "Bin/*.xml"
           ],
           "exclude": [
             "Bin/Telerik.Reporting.GraphQL.Client.dll",

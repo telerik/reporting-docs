@@ -24,19 +24,18 @@ res_type: kb
 
 - Windows Azure Activity log shows:
 
-	`Instance 0 of role WebRole1 is cycling.`
+  `Instance 0 of role WebRole1 is cycling.`
 
 - Server Explorer shows:
 
-	`Windows Azure > Cloud Services > [service name] > [environment] > [WebRole1] > Instance 0 (Cycling Role)`
+  `Windows Azure > Cloud Services > [service name] > [environment] > [WebRole1] > Instance 0 (Cycling Role)`
 
 - Windows Azure Portal shows:
 
-	````
-One or more role instances are unhealthy. 
-	1 Instance: 1 Unhealthy
-````
-
+  ```TEXT
+  One or more role instances are unhealthy.
+  	1 Instance: 1 Unhealthy
+  ```
 
 ## Cause
 
@@ -56,25 +55,25 @@ After deploying a WebRole which utilizes Telerik Reporting WebAPI REST Service t
 - Set its **Copy to Output Directory** property to **Copy always**.
 - Add the following assembly binding redirects:
 
-	````XML
-<?xml version="1.0"?>
-	<configuration>
-		<runtime>
-			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"> 
-				<dependentAssembly>
-					<assemblyIdentity name="System.Web.Http" publicKeyToken="31bf3856ad364e35"/>
-					<bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0"/>
-				</dependentAssembly>
-				<dependentAssembly>
-					<assemblyIdentity name="System.Net.Http.Formatting" publicKeyToken="31bf3856ad364e35"/>
-					<bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0"/>
-				</dependentAssembly>
-			</assemblyBinding>
-		</runtime>
-	</configuration>
-````
+  ```XML
+  <?xml version="1.0"?>
+  <configuration>
+  	<runtime>
+  		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+  			<dependentAssembly>
+  				<assemblyIdentity name="System.Web.Http" publicKeyToken="31bf3856ad364e35"/>
+  				<bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0"/>
+  			</dependentAssembly>
+  			<dependentAssembly>
+  				<assemblyIdentity name="System.Net.Http.Formatting" publicKeyToken="31bf3856ad364e35"/>
+  				<bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0"/>
+  			</dependentAssembly>
+  		</assemblyBinding>
+  	</runtime>
+  </configuration>
+  ```
 
-	> Check the exact versions of the referenced `System.Web.Http` and `System.Net.Nttp.Formatting` assemblies in order to setup the binding redirects correctly.
+  > Check the exact versions of the referenced `System.Web.Http` and `System.Net.Nttp.Formatting` assemblies in order to setup the binding redirects correctly.
 
 - Publish the solution to Windows Azure.
 
@@ -84,5 +83,5 @@ Keep in mind that Windows Azure Web Apps (in **Free** and **Shared** modes) rest
 
 ## See Also
 
-* [OutOfMemoryException on exporting or printing Telerik report from Azure Web Apps]({%slug outofmemoryexception-on-exporting-or-printing-telerik-report-from-azure-webapps%})
-* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})
+- [OutOfMemoryException on exporting or printing Telerik report from Azure Web Apps]({%slug outofmemoryexception-on-exporting-or-printing-telerik-report-from-azure-webapps%})
+- [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

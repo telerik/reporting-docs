@@ -10,6 +10,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
     <tbody>
         <tr>
@@ -18,7 +19,6 @@ res_type: kb
         </tr>
     </tbody>
 </table>
-
 
 ## Description
 
@@ -45,12 +45,11 @@ Change the type of the `ObjectDataSource` Parameters using `MultiValue` to `Obje
 - Through the [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%})
 - Through the code behind:
 
-	````CSharp
-new Telerik.Reporting.ObjectDataSourceParameter("UserNames", typeof(object[]), "= Parameters.UserNames.Value"),
-````
-
+  ```C#
+    new Telerik.Reporting.ObjectDataSourceParameter("UserNames", typeof(object[]), "= Parameters.UserNames.Value"),
+  ```
 
 ## See Also
 
-* [Using Parameters with the ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component%})
-* [Using Multivalue Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%})
+- [Using Parameters with the ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component%})
+- [Using Multivalue Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%})

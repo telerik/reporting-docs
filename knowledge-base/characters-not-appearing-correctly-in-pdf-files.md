@@ -30,47 +30,52 @@ To produce a PDF that visualizes content correctly via Telerik Reporting, the re
 
 ## Possible Causes
 
-* The used font is not TrueType.
-* The used font does not support the characters you need to display.
-* The used font is not available on the server and/or the client machines.
-* The font author has restricted font embedding _(see [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%}))_.
+- The used font is not TrueType.
+- The used font does not support the characters you need to display.
+- The used font is not available on the server and/or the client machines.
+- The font author has restricted font embedding _(see [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%}))_.
 
 ## Solution
 
-* If the text contains special characters like **custom glyphs, icons**, you need to check if the font supports them. You may need to switch to a font with **Unicode characters support** e.g. Arial Unicode MS.
-* If the **font cannot be installed on the server machine**, where reports are processed and rendered, you can use [Telerik Reporting privateFonts settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}). The settings are applicable only through the configuration file of the application. You will need to declare a [Telerik.Reporting section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first.
-* If the **font is not available on the client machine**, you can fully embed the fonts in the PDF file during its generation _(will not work if font embedding is restricted)_. You will need to declare a [Telerik.Reporting section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first. Then you need to configure the PDF extension and the `FontEmbedding` parameter of its [Device Information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}):
+- If the text contains special characters like **custom glyphs, icons**, you need to check if the font supports them. You may need to switch to a font with **Unicode characters support** e.g. Arial Unicode MS.
+- If the **font cannot be installed on the server machine**, where reports are processed and rendered, you can use [Telerik Reporting privateFonts settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}).
 
-	````HTML
-<Telerik.Reporting>
-		<extensions>
-		<render>
-			<extension name="PDF" >
-			<parameters>
-				<parameter name="FontEmbedding" value="Full"/>
-			</parameters>
-			</extension>
-		</render>
-		</extensions>
-	</Telerik.Reporting>
-````
-	````JSON
-"telerikReporting": {
-		"extensions": [
-		{
-			"name": "PDF",
-			"description":  "PDF Description",
-			"parameters": [
-			{
-				"Name": "FontEmbedding",
-				"Value": "Full"
-			}
-			]
-		}
-		]
-	}
-````
+  The settings are applicable only through the configuration file of the application. You will need to declare a [Telerik.Reporting section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first.
 
+- If the **font is not available on the client machine**, you can fully embed the fonts in the PDF file during its generation _(will not work if font embedding is restricted)_.
+
+  You will need to declare a [Telerik.Reporting section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first.
+  Then you need to configure the PDF extension and the `FontEmbedding` parameter of its [Device Information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}):
+
+  ```XML
+  <Telerik.Reporting>
+  	<extensions>
+  	<render>
+  		<extension name="PDF" >
+  		<parameters>
+  			<parameter name="FontEmbedding" value="Full"/>
+  		</parameters>
+  		</extension>
+  	</render>
+  	</extensions>
+  </Telerik.Reporting>
+  ```
+  ```JSON
+  "telerikReporting": {
+  	"extensions": [
+  	{
+  		"name": "PDF",
+  		"description":  "PDF Description",
+  		"parameters": [
+  		{
+  			"Name": "FontEmbedding",
+  			"Value": "Full"
+  		}
+  		]
+  	}
+  	]
+  }
+  ```
 
 ## Notes
 
@@ -78,5 +83,5 @@ The settings can be edited in code if you export programmatically - [Set renderi
 
 ## See Also
 
-* [PDF Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%})
-* [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%})
+- [PDF Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%})
+- [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%})

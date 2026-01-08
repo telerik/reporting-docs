@@ -16,7 +16,9 @@ res_type: kb
 
 ## Description
 
-A common scenario is to set a [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})'s **DataSource** property to a custom Business object. Depending on the underlying data structure [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}), [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%}), etc. components can be used to expose the properties of the Business object to the report. However, if the data schema is **not flat** and some of the properties represent child (nested) data collections, you may need to bind a report to the hierarchical data.
+A common scenario is to set a [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})'s **DataSource** property to a custom Business object. 
+
+Depending on the underlying data structure [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}), [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%}), etc. components can be used to expose the properties of the Business object to the report. However, if the data schema is **not flat** and some of the properties represent child (nested) data collections, you may need to bind a report to the hierarchical data.
 
 To use hierarchical data, you can take advantage of the [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) functionality. It lets you bind declaratively the data item's [DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property to a given collection property from your business object and the data item will display all collection items.
 
@@ -28,8 +30,8 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 
 1. Create a **ClassLibrary** project with the following definition:
 
-	````CSharp
-public class ContactsCollection
+	````C#
+	public class ContactsCollection
 	{
 		BindingList<Contact> _contacts;
 		public ContactsCollection()
@@ -67,8 +69,7 @@ public class ContactsCollection
 		}
 		public string Number { get; set; }
 	}
-````
-
+	````
 
 1. Build the project to ensure that **ContactsClassLibrary.dll** is produced in the **bin** folder.
 1. [Extend the Report Designer to Recognize the Custom Assembly]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})

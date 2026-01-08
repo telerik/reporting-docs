@@ -28,7 +28,6 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
 I need to be able to dynamically load a report and its report parameters through the current URL's query parameters, how can I achieve this with the Native Blazor Report Viewer?
@@ -39,50 +38,47 @@ For the below example, we will be using the Dashboard report - [Dashboard Report
 
 ## Solution
 
-1. To catch the query string, we may use the [SupplyParameterFromQuery](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.supplyparameterfromqueryattribute?view=aspnetcore-7.0) attribute with the [Parameter](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.parameterattribute?view=aspnetcore-7.0) attribute to specify that a component parameter of a routable component can come from the query string. For example:
+1. To catch the query string, we may use the [SupplyParameterFromQuery](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.supplyparameterfromqueryattribute) attribute with the [Parameter](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.parameterattribute) attribute to specify that a component parameter of a routable component can come from the query string. For example:
 
-	````CSharp
-[Parameter]
-	[SupplyParameterFromQuery(Name = "ReportName")]
-	public string? ReportName { get; set; }
+   ```C#
+   [Parameter]
+   [SupplyParameterFromQuery(Name = "ReportName")]
+   public string? ReportName { get; set; }
 
-	[Parameter]
-	[SupplyParameterFromQuery(Name = "ReportYear")]
-	public int? ReportYear { get; set; }
-````
-
+   [Parameter]
+   [SupplyParameterFromQuery(Name = "ReportYear")]
+   public int? ReportYear { get; set; }
+   ```
 
 1. Since we can use those values only once the parameters have been set, we need to use an empty report source initially:
 
-	````CSharp
-<ReportViewer @ref=rv1 ServiceUrl="/api/reports"
-		@bind-ReportSource="@ReportSource"
-		ServiceType="@ReportViewerServiceType.REST"
-		Height="800px"
-		Width="100%">
-	</ReportViewer>
+   ```RAZOR
+   <ReportViewer @ref=rv1 ServiceUrl="/api/reports"
+   	@bind-ReportSource="@ReportSource"
+   	ServiceType="@ReportViewerServiceType.REST"
+   	Height="800px"
+   	Width="100%">
+   </ReportViewer>
 
 
-	@code {
-		public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions();
-	}
-````
-
+   @code {
+   	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions();
+   }
+   ```
 
 1. [After parameters are set (OnParametersSet{Async})](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-7.0#after-parameters-are-set-onparameterssetasync), we may update the `ReportSource` property:
 
-	````CSharp
-protected override Task OnParametersSetAsync()
-	{
-		ReportSource.Report = ReportName ?? "Dashboard.trdp";
-		ReportSource.Parameters.Add("ReportYear", ReportYear ?? 2002);
+   ```C#
+   protected override Task OnParametersSetAsync()
+   {
+   	ReportSource.Report = ReportName ?? "Dashboard.trdp";
+   	ReportSource.Parameters.Add("ReportYear", ReportYear ?? 2002);
 
-		return base.OnParametersSetAsync();
-	}
-````
-
+   	return base.OnParametersSetAsync();
+   }
+   ```
 
 ## See Also
 
-* [Integrating Native Blazor Viewer in Blazor Server or WebAssembly App]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer%})
-* [ASP.NET Core Blazor routing and navigation](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing)
+- [Integrating Native Blazor Viewer in Blazor Server or WebAssembly App]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer%})
+- [ASP.NET Core Blazor routing and navigation](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing)

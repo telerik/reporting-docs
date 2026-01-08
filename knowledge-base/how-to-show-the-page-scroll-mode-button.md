@@ -45,29 +45,29 @@ To achieve the required scenario, accomplish the following steps. Note that you 
 
 1. Add buttons elements in your local template. The following elements have to be added:
 
-  * (For desktop screens, default template) Copy the following element in the `ul` element with the `trv-main-menu-ul` id attribute.
+    * (For desktop screens, default template) Copy the following element in the `ul` element with the `trv-main-menu-ul` id attribute.
 
-      ````html
-<li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i></a></li>
-````
+    ````html
+    <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i></a></li>
+    ````
 
-   * (For desktop screens, Font Awesome template) Copy the following element in the `ul` element with the `trv-main-menu-ul` id attribute.
+    * (For desktop screens, Font Awesome template) Copy the following element in the `ul` element with the `trv-main-menu-ul` id attribute.
 
-      ````html
-<li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i></a></li>
-````
+    ````html
+    <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i></a></li>
+    ````
 
-  * (For mobile `screensCopy`, default template) Copy the following element in the `ul` element with the `trv-side-menu-ul` id attribute.
+    * (For mobile `screensCopy`, default template) Copy the following element in the `ul` element with the `trv-side-menu-ul` id attribute.
 
-      ````html
-<li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i><span>menuContinuousScrollText</span></a></li>
-````
+    ````html
+    <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i><span>menuContinuousScrollText</span></a></li>
+    ````
 
-  * (For mobile `screensCopy`, Font Awesome template) Copy the following element in the `ul` element with the `trv-side-menu-ul` id attribute.
+    * (For mobile `screensCopy`, Font Awesome template) Copy the following element in the `ul` element with the `trv-side-menu-ul` id attribute.
 
-      ````html
-<li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i><span>menuContinuousScrollText</span></a></li>
-````
+    ````html
+    <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i><span>menuContinuousScrollText</span></a></li>
+    ````
 
 ## See Also
 

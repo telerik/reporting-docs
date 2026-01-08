@@ -4,13 +4,14 @@ description: ASP.NET Core 3+ versions use a different Json Serializer. Read this
 type: how-to
 page_title: Serializer Settings Must Be of Type System.Text.Json.JsonSerializerOptions
 slug: jsonresult-serializersettings-must-be-an-instance-of-type-systemtextjson-jsonserializeroptions
-position: 
-tags: 
+position:
+tags:
 ticketid: 1460827
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -34,16 +35,15 @@ If the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in
 
 ## Solution
 
-1. Add the NuGet Package, *Microsoft.AspNetCore.Mvc.NewtonsoftJson*
+1. Add the NuGet Package, _Microsoft.AspNetCore.Mvc.NewtonsoftJson_
 1. Append `.AddNewtonsoftJson()` to any of the following services configurations:
 
-	````C#
-services.AddControllers().AddNewtonsoftJson();
-	services.AddControllersWithViews().AddNewtonsoftJson();
-	services.AddRazorPages().AddNewtonsoftJson();
-````
-
+   ```C#
+   services.AddControllers().AddNewtonsoftJson();
+   services.AddControllersWithViews().AddNewtonsoftJson();
+   services.AddRazorPages().AddNewtonsoftJson();
+   ```
 
 ## See Also
 
-* [ASP.NET Core 3.0+ Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%})
+- [ASP.NET Core 3.0+ Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%})

@@ -25,7 +25,7 @@ This tutorial shows how to configure and use the [ObjectDataSource]({%slug teler
 1. Extend the Visual Studio Report Designer by adding an AssemblyReferences in Telerik.Reporting section of the application configuration file. The **'devenv.exe.config'** file resides in *'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE'* by default (it is recommended to create a backup copy before modifying it). 
 
 	````XML
-<?xml version="1.0"?>
+	<?xml version="1.0"?>
 	<configuration>
 		<configSections>
 			<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
@@ -38,7 +38,7 @@ This tutorial shows how to configure and use the [ObjectDataSource]({%slug teler
 		</Telerik.Reporting>
 	...
 	</configuration>
-````
+	````
 
 >important Do not forget to close the Visual Studio instance before modifying its configuration file. Run `Notepad` (or other editing tool) as an administrator to perform the changes.
 

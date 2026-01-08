@@ -64,15 +64,11 @@ This section explains the differences between both versions of Standalone Report
   1.  The Standalone Report Designer opens, and you can create or open a report.
 
 * __Starting Standalone Report Designer using the latest installed .NET runtime:__
-The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If it is necessary to run the application against STS (Standard-Term-Support) .NET versions like .NET 10, or a pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
+    The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If it is necessary to run the application against STS (Standard-Term-Support) .NET versions like .NET 10, or a pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
 
-	````powershell
-C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"
-````
-
-```powershell
-C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"
-```
+    ```powershell
+    C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"
+    ```
 
 For further information about controlling the `RollForward` behavior at runtime, check the related Microsoft documentation article section [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
 

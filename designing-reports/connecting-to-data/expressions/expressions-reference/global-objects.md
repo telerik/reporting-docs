@@ -111,6 +111,6 @@ To access the user identity in Telerik Reports, you can leverage the UserIdentit
 | ------ | ------ |
 | AuthenticationType | Indicates the type of authentication used. Gets or sets a string value that specifies the authentication mechanism applied for the current user session (e.g., Cookie for server-based login or Bearer for token-based authentication) |
 | Context | Provides access to the context collection for storing and retrieving user-specific objects |
-| Current | Gets or sets the UserIdentity context that defines the user-specific information used during report processing and expression evaluation. |
+| Current | Gets or sets the UserIdentity context that defines the user-specific information used during report processing and expression evaluation. For server viewer technologies, the value is resolved automatically. Developers can override this behavior. It can be accessed either through the static member or by using an expression like =UserIdentity.Name.|
 | IsAuthenticated | Indicates whether the user has been authenticated |
 | Name | It will return the name of the user |

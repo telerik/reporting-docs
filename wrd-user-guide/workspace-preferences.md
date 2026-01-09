@@ -33,7 +33,7 @@ The Workspace Preferences are split into two categories:
 
 Snapping is a feature that detects alignment opportunities while designing the report. You can enable or disable the following snapping option:
 
-* **Snap to snap lines**—Helps you position elements relative to each other (for example, aligning TextBoxes, Charts, or Tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items.
+* **Snap to snap lines**—Helps you position elements relative to each other (for example, aligning TextBoxes, Charts, or Tables). Snap lines appear temporarily as you drag items and they are based on the edges or centers of nearby items:
 
 <img style="border: 1px solid gray;" src="images/wrd-workspace-preferences-snap-to-snap-lines.gif" alt="Snap to snap lines" /> 
 

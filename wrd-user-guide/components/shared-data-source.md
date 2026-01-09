@@ -20,7 +20,7 @@ Instead of configuring a data connection every time you build a report, the Shar
 
 Here are the key benefits of using Shared Data Sources in Telerik's Web Report Designer:
 
-* Reusability—Shared Data Sources enable you to define a data connection once and use it in many reports. This ensures consistency and simplifies maintenance—update the data source in one location, and all dependent reports automatically pick up the change
+* Reusability—Shared Data Sources enable you to define a data connection once and use it in many reports. This ensures consistency and simplifies maintenance—update the data source in one location, and all dependent reports automatically pick up the change.
 
 * Separation of Roles & Collaboration—A data professional can define and maintain Shared Data Sources, while a report designer can focus on the visual layout and content—without needing to manage connection details.
 
@@ -49,13 +49,13 @@ After saving a data source as shared, the Web Report Designer generates an `.sds
 
    ![Creating a SDSX file ><](images/CreatingSdsxFile.png)
 
-To view all existing Shared Data Sources, open the [Assets Manager]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager) from the main menu.
+To view all existing Shared Data Sources, open the [Assets Manager]({%slug web-report-designer-user-guide-assets-manager%) from the main menu.
 
    ![Use Assets Manager to view your Shared Data Sources ><](images/AllSharedDataSources.png)
 
 The next video demonstrates how to create a Shared Data Source from an existing report.
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/iLBt_8EyxBI?si=kx6LnA1m_FC-r3xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yaeql2tl3tA?si=EaOahE2CMqzPQi8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Differences between Shared Data Source and Data Source
 

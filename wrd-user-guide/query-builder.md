@@ -23,7 +23,7 @@ The Web Report Designer lets you build SQL queries in two ways:
 * By using a visual tool (where you click and select options)
 * By using a text tool (where you type the query)
 
-A query is just a set of instructions that tells the system what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
+A query is just a set of instructions that tells the system what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with the most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
 
 ![The Graphical SQL Query Builder Form of the Web Report Designer ><](images/QueryBuilderWRD.png)
 
@@ -45,7 +45,7 @@ To create a query using the Query Builder in the Web Report Designer:
 
    > To follow along the steps below, use the AdventureWorks database.
 
-5. In the **Select statement** section, use the following query:
+4. In the **Select statement** section, use the following query:
 
   ````SQL
      SELECT
@@ -54,27 +54,29 @@ To create a query using the Query Builder in the Web Report Designer:
           FROM [Production].[ProductCategory]
   ````
 
-6. (Optional) Apply any [Schema restrictions](schema-restrictions) that apply to your chosen SQL Data Source.
-7. Click the **Query Builder** button.
-8. In the new window, build your SELECT statement:
+5. (Optional) Apply any schema restrictions that apply to your chosen SQL Data Source.
+6. Click the **Query Builder** button.
+7. In the new window, build your SELECT statement:
    
-   8.1. In the left pane (the DataBase view), select the `Name` field from the `ProductCategory` and the `ProductSubcategory` tables.
+   7.1. In the left pane (the DataBase view), select the `Name` field from the `ProductCategory` and the `ProductSubcategory` tables.
    
-   8.2. In the **Add relationship** window, select the fields (`ProductCategoryID`) that link the two tables and click **Save**.
+   7.2. In the **Add relationship** window, select the fields (`ProductCategoryID`) that link the two tables and click **Save**.
    
-   8.3. Select the `Name` field from the `Product` table.
+   7.3. Select the `Name` field from the `Product` table.
    
-   8.4. Define the relationship between the `ProductSubcategory` and `Product` tables through the `ProductCategoryID` fields and then click **Save**.
+   7.4. Define the relationship between the `ProductSubcategory` and `Product` tables through the `ProductCategoryID` fields and then click **Save**.
    
-   8.5. Select the `ListPrice` field from the `Product` table.
+   7.5. Select the `ListPrice` field from the `Product` table.
    
-   8.6. Set the alias (display name) for each column.
+   7.6. Set the alias (display name) for each column.
    
-   8.7. To reduce the number of records that will be displayed, add a filter. For example, products with list price between 100 and 500.
+   7.7. To reduce the number of records that will be displayed, add a filter. For example, products with list price between 100 and 500.
 
-9. To preview the query and the resulting data, expand the **RESULT** section and click **Preview**.
+8. To preview the query and the resulting data, expand the **RESULT** section and click **Preview**.
 
-10. Click **Save** to confirm your query.
+9. Click **Save** to confirm your query.
+
+The following video shows a step-by-step guide of the described scenario above:
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hv8w7E1mKSg?si=S7VHYN1lneZOT0-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -140,7 +142,7 @@ The following columns are available:
 
 The Filters pane shows the conditions used to narrow down the data you see. These conditions help the system choose only the rows that match and create a rule for finding them.
 
-The following option is available:
+The following options are available:
 
 | Name | Description |
 | ------ | ------ |
@@ -167,9 +169,9 @@ The report does not store the actual data. The data is only fetched when the rep
 
 The following options are available:
 
-* __Preview button__ Preview the query created from your selections or see the data it will return
+* __Preview button__&mdash;Preview the query created from your selections or see the data it will return
 
-* __SQL/Data switch__ Choose whether to preview the SQL query that was created for you or the data it will return.
+* __SQL/Data switch__&mdash;Choose whether to preview the SQL query that was created for you or the data it will return.
 
 ## Query Builder State
 

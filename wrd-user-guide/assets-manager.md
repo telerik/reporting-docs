@@ -22,7 +22,7 @@ You can share and reuse:
 
 * **Stylesheets** (for consistent report styling): Styles created in a report can be exported and then used in other reports. 
 
-* **Shared Data Sources** (predefined connections to data): Enable report designers to easily create and reuse a data source component across multiple reports. Read more in [Shared Data Source]({%slug shared-data-source-web-report-designer-user-guide%})
+* **Shared Data Sources** (predefined connections to data): Enable report designers to easily create and reuse a data source component across multiple reports. Read more in [Shared Data Source]({%slug shared-data-source-web-report-designer-user-guide%}).
 
 * **Report Templates** (.trtx file): Offer initial report layout and styling, and allow creating reports with consistent look and feel. Read more in [Creating and Using Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%}).
 
@@ -42,7 +42,7 @@ To share a resource (e.g. an image), you need to invoke the **Assets Manager** i
 
 You do not always need to go through the menu. When you are editing a report item like a PictureBox, just click the asset picker next to the `Value` field. This will instantly open the Assets Manager so you can select an image right away:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/urU2a-d6Saw?si=YJZziPWrtOxDYci3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0gJMwg4zixI?si=sTYKnHU9nXpyzB2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Resource Folders
 
@@ -54,7 +54,7 @@ The main root folder contains three predefined subfolders:
 
 * `Images`&mdash;Contains image files used in PictureBox items, backgrounds, logos, and so on.
 
-* `Styles`&mdash;Holds stylesheets (for example, `.trdx`, `.css`) used for consistent styling across reports.
+* `Styles`&mdash;Holds stylesheets (for example, `.xml`, `.css`) used for consistent styling across reports.
 
 You can create subfolders within these categories to better organize their assets.
 
@@ -75,7 +75,6 @@ The report templates enable rapid, consistent report creation by providing reusa
 To help you manage your shared resources with ease and flexibility, the Assets Manager provides several intuitive features:
 
 * **Choose Your View: Grid or List**&mdash;You can switch between Grid View and List View depending on your workflow. The Grid View also supports column resizing for better visibility.
-
 
     |Grid View|List View|
     |----|----|

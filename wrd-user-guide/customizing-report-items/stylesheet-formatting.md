@@ -38,7 +38,7 @@ In the Web Report Designer after selecting the **Report** object:
 
 The following tutorial shows how to define a style rule in the report's style sheet and apply the style to multiple items by using selectors (for example, by item name or type):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HIjkZc48abM?si=aUZKq7TlyfuwBIp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hKDmiZVCiKo?si=PGDvqXsQUZacXOLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using External Style Sheets
 

@@ -15,7 +15,7 @@ The SubReport item is perfect for creating reusable report components that can b
 
 Here's a step-by-step tutorial for creating a reusable part of a report (for example, header and footer) using a SubReport:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sMgP2iNkvvM?si=A7g7W7pBGyzlEt9y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8c05DV2Kk94?si=yqZS-Rz0W81POE7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Creating the Header Report
 

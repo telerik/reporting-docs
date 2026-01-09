@@ -24,7 +24,7 @@ With expressions, you can quickly build your pricing logic by combining database
 
 ## Designing Expressions with Built-in Elements
 
-By using the predefined expression components in the Web Report Designers, you can build flexible expressions with minimal effort, eliminating the need for coding or manual calculations.
+By using the predefined expression components in the Web Report Designers, you can build flexible expressions with minimal effort, eliminating the need for coding or manual calculations. The available built-in elements are:
 
 | Name | Description |
 | ------ | ------ |
@@ -35,6 +35,8 @@ By using the predefined expression components in the Web Report Designers, you c
 | `Operators` | Symbols used in expressions to perform calculations, comparisons, logic, or string operations—like '+', '=', 'AND', or 'LIKE'. |
 | `Report Parameters` | User-defined inputs that control report content, filtering, or layout—often used to pass values, filter data, or link related reports |
 | `Reporting Constants` | Predefined values used to control report layout and styling—such as alignment, borders, image sizing, and page behavior |
+
+The following video shows how to build expressions in an easy way using the built-in elements: 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mDMxH0uJJk8?si=TQvK4rxpGw6OGkz7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

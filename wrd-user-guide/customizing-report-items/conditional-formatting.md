@@ -26,6 +26,8 @@ To visually highlight important data, **Conditional formatting** lets you automa
 
 To format a single cell value based on a specific condition, for example, **LineTotal &lt; 50**:
 
+1. Populate a Table report item with data to format.
+
 1. Select the desired TextBox item (for example, LineTotal).
 
 1. Type "Conditional formatting" in the search box.
@@ -36,13 +38,13 @@ To format a single cell value based on a specific condition, for example, **Line
 
 The quick video tutorial below shows how to apply conditional formatting to a LineTotal TextBox in a table by changing its color to red when a value is less than 50.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sfcIkSI-Opo?si=MWpCD6GUSH1M_cVd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/85fy2jnM824?si=LjzAEceqot2RGwPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Formatting Multiple Items 
 
 If you want to apply the same rule to the entire row with data, it requires you to apply rules **individually** to each item one by one. However, to save time, you can group items inside a Panel and apply the conditional formatting to the panel itself. This way, the Panel (and everything inside it) will be styled based on your condition. This approach is shown in the following video: 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rqkDyZl-CMY?si=HMyMJ49AucGHJst7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JM1OOUEqU6s?si=RyRjGmd39YLANaEd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Alternating Row Style
 
@@ -58,7 +60,7 @@ This is done by setting the following conditional formatting rule to one single 
  
 The following video shows how to achieve alternating row style which prevents misreading values by visually separating rows, which is critical for accuracy in data-heavy reports.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nsOPRTNkQkw?si=IU3YD6IATz1yQC1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aD_LtZDaX7o?si=5qJvKHTTiE3Z0Nb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## See Also
 

@@ -93,25 +93,15 @@ For information regarding the available Report definition properties, check out 
 
 ## UserIdentity
 
-[UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) provides structured information about the user, such as Name, AuthenticationType, and authentication status, and offers a Context dictionary for custom data. 
+[UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) provides structured information about the user, such as Name, AuthenticationType, and authentication status, and offers a Context dictionary for custom data. This property is designed to be used in web projects that utilize the Telerik Reporting REST API. It returns the main identity for this user, such as their username or authentication type. 
 
-The UserIdentity property is designed to be used in web projects that utilize the Telerik Reporting REST API. It returns the main identity for this user, such as their username or authentication type. 
-
-When you use Telerik Reporting in a web application (ASP.NET Core or MVC), reports are usually served through a ReportsController. This controller handles HTTP requests from the report viewer (HTML5 Viewer, Blazor Viewer, etc.) to render and deliver the report.
+In a web application (ASP.NET Core or MVC), reports are usually served through a ReportsController, which handles HTTP requests from the report viewer (HTML5 Viewer, Blazor Viewer, etc.) to render and deliver the report.
 
 The ReportsController receives an HTTP request from the client asking for a report. Inside this controller, Telerik calls GetUserIdentity() to determine who is making the request. By default, GetUserIdentity() uses HttpContext.User. HttpContext is the object representing the current HTTP request and response. Telerik converts that into a UserIdentity object.
-
-
-
-Represents the current user identity in which context the expression is evaluated.
-
-For information regarding the available child properties, check out the [UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) API reference or use the Expression Builder dialog.
 
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each report rendering service by overriding the corresponding GetUserIdentity method.
 
 When exporting a report programmatically, the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
-
-When generating a preview from the Report Server, the Reporting Engine uses the identity of the currently logged-in user. However, for scheduled tasks and data alerts, the Reporting Engine runs as a Windows service under a system identity that is shared across all tasks and alerts. As a result, the identity is not tied to the user who created the task or the recipient of the report email. In these cases, the UserIdentity value is `Null`.
 
 ### UserIdentity Properties
 

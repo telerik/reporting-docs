@@ -93,6 +93,8 @@ For information regarding the available Report definition properties, check out 
 
 ## UserIdentity
 
+The UserIdentity property is design to be used in a web projects that utilize Telerik Reporting REST API.
+
 Represents the current user identity in which context the expression is evaluated.
 
 For information regarding the available child properties, check out the [UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) API reference or use the Expression Builder dialog.
@@ -100,3 +102,15 @@ For information regarding the available child properties, check out the [UserIde
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each report rendering service by overriding the corresponding GetUserIdentity method.
 
 When exporting a report programmatically the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
+
+### UserIdentity Properties
+
+To access the user identity in Telerik Reports, you can leverage the UserIdentity class provided by Telerik Reporting. This allows you to retrieve details such as the user's `name`, `authentication` status, and other `context-specific` information.
+
+| Name | Description |
+| ------ | ------ |
+| AuthenticationType | Indicates the type of authentication used. Gets or sets a string value that specifies the authentication mechanism applied for the current user session (e.g., Cookie for server-based login or Bearer for token-based authentication) |
+| Context | Provides access to the context collection for storing and retrieving user-specific objects |
+| Current | Gets or sets the UserIdentity context that defines the user-specific information used during report processing and expression evaluation. |
+| IsAuthenticated | Indicates whether the user has been authenticated |
+| Name | It will return the name of the user |

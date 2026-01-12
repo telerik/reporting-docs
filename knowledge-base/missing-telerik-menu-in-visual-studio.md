@@ -34,8 +34,8 @@ If the above does not help solving your problem, please follow these steps to ge
 2.	Execute the following command that will start Visual Studio and create logs on your Desktop: 
 
 	````
-devenv /log %userprofile%\desktop\ActivityLog.xml
-````
+	devenv /log %userprofile%\desktop\ActivityLog.xml
+	````
 
 
 3.	Reproduce the problem 

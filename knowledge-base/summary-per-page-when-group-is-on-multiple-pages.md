@@ -326,34 +326,34 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 	The problem in this approach would be when there is only one (1) page in the report, for example in the Interactive view. In this case, the condition (currentPage > page) won't be met, hence we need to define a separate result for this case. The result for a single page though can be taken with the built-in function PageExec. Here is a new sample Expression: 
 
 	````
-= IIF(PageCount = 1, PageExec("detailSection1", Sum(CDbl(Fields.value))), 
-		IIF(
-		PageExec("detailSection1", Last(Fields.account)) <> IsNull(PageExec("groupFooterSection", Last(Fields.account)), "N/A"),     
-		Format("Account {0} continues on next page. Value transitioning to next page: {1}", PageExec("detailSection1", Last(Fields.account)), 
-		PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account, ReportDefinition, PageNumber))),
-		"")
-	)
-````
+	= IIF(PageCount = 1, PageExec("detailSection1", Sum(CDbl(Fields.value))), 
+			IIF(
+			PageExec("detailSection1", Last(Fields.account)) <> IsNull(PageExec("groupFooterSection", Last(Fields.account)), "N/A"),     
+			Format("Account {0} continues on next page. Value transitioning to next page: {1}", PageExec("detailSection1", Last(Fields.account)), 
+			PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account, ReportDefinition, PageNumber))),
+			"")
+		)
+	````
 
 	The same problem may occur also with the function _PageHeaderSumFromPrevPage_, for example, when the report has only one group. The reason for this would be that the _result_ is reset only when the group changes. To overcome this, we may apply the same approach. Here is the needed modification in the Accumulate method of the implementation: 
 
 	````C#
-//...
-	var page = (int)values[2];
-
-	// Skip the second pass through the report
-	if (currentPage > page)
-	{
-		result = 0;
-		currentPage = -1;
-		currentPageValues.Clear();
-	}
-
-	if (page > currentPage)
-	{
-		currentPage = page;
-		//...
-````
+	//...
+		var page = (int)values[2];
+	
+		// Skip the second pass through the report
+		if (currentPage > page)
+		{
+			result = 0;
+			currentPage = -1;
+			currentPageValues.Clear();
+		}
+	
+		if (page > currentPage)
+		{
+			currentPage = page;
+			//...
+	````
 
 
 ## See Also

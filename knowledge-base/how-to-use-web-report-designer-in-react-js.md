@@ -40,10 +40,10 @@ The following guide assumes previous knowledge of React:
 1. Start by creating a new React application using the following CLI commands:
 
 	````
-npx create-react-app my-app
-	cd my-app
-	npm run start
-````
+	npx create-react-app my-app
+		cd my-app
+		npm run start
+	````
 
 
 	>note You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.

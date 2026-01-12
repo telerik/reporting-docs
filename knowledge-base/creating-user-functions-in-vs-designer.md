@@ -79,8 +79,8 @@ It can be invoked from an expression by its name, specifying the necessary param
 1. You can type the expression by specifying the full name of the function and passing a parameter of the expected type. 
 
 	````
-= MyFunctions.GetImageFromURL("image url")
-````
+	= MyFunctions.GetImageFromURL("image url")
+	````
 
 The custom function accepts an image url and returns an Image object that can be assigned to a PictureBox:
 

@@ -67,15 +67,15 @@ public ActionResult Index()
 6. Go to the page of the report viewer and add the model under the list with usings. For example: 
 
 	````
-@model PassParameter.Models.ReportModel
-````
+	@model PassParameter.Models.ReportModel
+	````
 
 
 7. Change the **ReportSource** in the initialization of the report viewer as follows:
 
 	````
-.ReportSource(Model.ReportName, Model.Parameters)
-````
+	.ReportSource(Model.ReportName, Model.Parameters)
+	````
 
 
 8. You can also query the report name and parameters in the URL by adding the following **Action** in the **HomeController**: 

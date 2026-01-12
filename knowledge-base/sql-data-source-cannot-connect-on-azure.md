@@ -42,12 +42,12 @@ The problem is with Azure deployment, where it works without issue for general d
 * Red Error Message in the Report
 
 	````
-Unable to establish a connection to the database. Please verify that your connection string is valid. In case you use a 
-	named connection string from the application configuration file, make sure the name is correct and the connection string 
-	settings are present in the configuration file of your application.
-	------------- InnerException -------------
-	Invalid value for key 'authentication'
-````
+	Unable to establish a connection to the database. Please verify that your connection string is valid. In case you use a 
+		named connection string from the application configuration file, make sure the name is correct and the connection string 
+		settings are present in the configuration file of your application.
+		------------- InnerException -------------
+		Invalid value for key 'authentication'
+	````
 
 
 * Full Stack Trace of the Error
@@ -55,36 +55,36 @@ Unable to establish a connection to the database. Please verify that your connec
 	See [how to attach a trace listener to the .NET Framework application](https://learn.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) to get the below log:
 
 	````
-Telerik.Reporting.Processing.Data.SqlDataSourceException: Unable to establish a connection to the database. Please verify that your connection string is valid. In case you use a named connection string from the application configuration file, make sure the name is correct and the connection string settings are present in the configuration file of your application. ---> System.ArgumentException: Invalid value for key 'authentication'.
-
-		at System.Data.Common.DbConnectionStringBuilderUtil.ConvertToAuthenticationType(String keyword, Object value)
-		at System.Data.SqlClient.SqlConnectionString.ConvertValueToAuthenticationType()
-		at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-		at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-		at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-		at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-		at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-		at Telerik.Reporting.Processing.Data.SqlCommandProvider.CreateConnection(String connectionString)
-		at Telerik.Reporting.Processing.Data.SqlQueryProvider.CreateConnection()
-		--- End of inner exception stack trace ---
-		at Telerik.Reporting.Processing.Data.SqlQueryProvider.CreateConnection()
-		at Telerik.Reporting.Processing.Data.SqlDataEnumerable.<GetEnumerator>d__2.MoveNext()
-		at Telerik.Reporting.Processing.Data.LazyList`1.LazyListEnumerator.MoveNext()
-		at Telerik.Reporting.Processing.Data.SeedDataAdapter.GroupData(IEnumerable`1 rawData)
-		at Telerik.Reporting.Processing.Data.SeedDataAdapter.Execute(IEnumerable`1 data)
-		at Telerik.Reporting.Processing.Data.ResultSetAdapter.Execute(IEnumerable`1 data)
-		at Telerik.Reporting.Processing.Data.MultidimentionalDataProvider.Execute(MultidimensionalQuery query)
-		at Telerik.Reporting.Processing.DataItemResolveDataAlgorithm.GetDataCore(IDataSource dataSource, MultidimensionalQuery query, IServiceProvider serviceProvider, EvalObject expressionContext, IProcessingContext processingContext)
-		at Telerik.Reporting.Processing.DataItem.GetDataCore(IDataSource dataSource, MultidimensionalQuery query)
-		at Telerik.Reporting.Processing.DataItem.<>c__DisplayClass42_0.<ResolveData>b__0()
-		at Telerik.Reporting.Processing.DataItemResolveDataAlgorithm.ResolveData(String processingId, InMemoryState inMemoryState, MultidimensionalQuery query, Func`1 getDataCore, EvalObject expressionContext)
-		at Telerik.Reporting.Processing.DataItem.ResolveData()
-		at Telerik.Reporting.Processing.DataItem.ProcessItem()
-		at Telerik.Reporting.Processing.Table.ProcessItem()
-		at Telerik.Reporting.Processing.ReportItemBase.ProcessElement()
-		at Telerik.Reporting.Processing.DataItem.ProcessElement()
-		at Telerik.Reporting.Processing.ProcessingElement.Process(IDataMember dataContext)
-````
+	Telerik.Reporting.Processing.Data.SqlDataSourceException: Unable to establish a connection to the database. Please verify that your connection string is valid. In case you use a named connection string from the 	application configuration file, make sure the name is correct and the connection string settings are present in the configuration file of your application. ---> System.ArgumentException: Invalid value for key 	'authentication'.
+	
+			at System.Data.Common.DbConnectionStringBuilderUtil.ConvertToAuthenticationType(String keyword, Object value)
+			at System.Data.SqlClient.SqlConnectionString.ConvertValueToAuthenticationType()
+			at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+			at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+			at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+			at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+			at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+			at Telerik.Reporting.Processing.Data.SqlCommandProvider.CreateConnection(String connectionString)
+			at Telerik.Reporting.Processing.Data.SqlQueryProvider.CreateConnection()
+			--- End of inner exception stack trace ---
+			at Telerik.Reporting.Processing.Data.SqlQueryProvider.CreateConnection()
+			at Telerik.Reporting.Processing.Data.SqlDataEnumerable.<GetEnumerator>d__2.MoveNext()
+			at Telerik.Reporting.Processing.Data.LazyList`1.LazyListEnumerator.MoveNext()
+			at Telerik.Reporting.Processing.Data.SeedDataAdapter.GroupData(IEnumerable`1 rawData)
+			at Telerik.Reporting.Processing.Data.SeedDataAdapter.Execute(IEnumerable`1 data)
+			at Telerik.Reporting.Processing.Data.ResultSetAdapter.Execute(IEnumerable`1 data)
+			at Telerik.Reporting.Processing.Data.MultidimentionalDataProvider.Execute(MultidimensionalQuery query)
+			at Telerik.Reporting.Processing.DataItemResolveDataAlgorithm.GetDataCore(IDataSource dataSource, MultidimensionalQuery query, IServiceProvider serviceProvider, EvalObject expressionContext, IProcessingContext 	processingContext)
+			at Telerik.Reporting.Processing.DataItem.GetDataCore(IDataSource dataSource, MultidimensionalQuery query)
+			at Telerik.Reporting.Processing.DataItem.<>c__DisplayClass42_0.<ResolveData>b__0()
+			at Telerik.Reporting.Processing.DataItemResolveDataAlgorithm.ResolveData(String processingId, InMemoryState inMemoryState, MultidimensionalQuery query, Func`1 getDataCore, EvalObject expressionContext)
+			at Telerik.Reporting.Processing.DataItem.ResolveData()
+			at Telerik.Reporting.Processing.DataItem.ProcessItem()
+			at Telerik.Reporting.Processing.Table.ProcessItem()
+			at Telerik.Reporting.Processing.ReportItemBase.ProcessElement()
+			at Telerik.Reporting.Processing.DataItem.ProcessElement()
+			at Telerik.Reporting.Processing.ProcessingElement.Process(IDataMember dataContext)
+	````
 
 
 The stack trace of the error suggests that the SqlDataSource uses the old data provider `System.Data.SqlClient`. This means that it is referenced somewhere else, for example in Azure portal as explained in the Stack Overflow thread [EF6 with AAD auth works locally, but not on deployed app in Azure](https://stackoverflow.com/questions/75243421/ef6-with-aad-auth-works-locally-but-not-on-deployed-app-in-azure). In the last update from the author in that thread, he mentions that in Azure, his connection string was being configured in the Azure portal which was resulting in the old data provider being used.

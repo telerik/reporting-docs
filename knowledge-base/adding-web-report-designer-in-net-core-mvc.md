@@ -201,14 +201,14 @@ public class Startup
 1. If you are using [SQL DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Named/Shared connection string, add the connection string in the `appsettings.json` file. Here is a sample for the MSSQL database:
 
 	````
-"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-````
+	"ConnectionStrings": [
+			{
+				"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+				"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+				"providerName": "System.Data.SqlClient"
+			}
+		]
+	````
 
 
 ## Demo Application

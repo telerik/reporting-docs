@@ -37,41 +37,41 @@ The following guide assumes previous knowledge of React:
 1. Start by creating a new React application using following CLI commands:
 
 	````
-npx create-react-app my-app
-	cd my-app
-	npm start
-````
+	npx create-react-app my-app
+		cd my-app
+		npm start
+	````
 
 	>note You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.
 
 1. The viewer depends on **jQuery**. Add a CDN link to jQuery library in `public/index.html`:
 
 	````HTML
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-````
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	````
 
 
 1. Add the desired [Kendo UI Less-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) to `index.html` in order to style the viewer:
 
 	````HTML
-<head>
-		<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-		<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default.min.css" rel="stylesheet" />
-````
+	<head>
+			<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
+			<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default.min.css" rel="stylesheet" />
+	````
 
 
 1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:
 
 	````HTML
-<script src="/assets/telerikReportViewer-{{buildversion}}.min.js"></script>
-````
+	<script src="/assets/telerikReportViewer-{{buildversion}}.min.js"></script>
+	````
 
 
 1. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.kendo-{{site.buildversion}}.min.js` and can be copied to the React application's `public/assets` folder. Then reference it in `index.html`:
 
 	````HTML
-<script src="/assets/telerikReportViewer.kendo-{{buildversion}}.min.js"></script>
-````
+	<script src="/assets/telerikReportViewer.kendo-{{buildversion}}.min.js"></script>
+	````
 
 
 1. Create a new report viewer component (`components/ReportViewer.js`) and configure the routes accordingly. The new component would contain the following template, scripts, and styles:
@@ -147,8 +147,8 @@ body {
 1. Run
 
 	````
-npm run start
-````
+	npm run start
+	````
 
 
 ![HTML5 Report Viewer in React application showing the Report Catalog demo](resources/report-viewer-in-react-app.png)

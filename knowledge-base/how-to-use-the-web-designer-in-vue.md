@@ -36,32 +36,32 @@ The solution we are about to examine is a very basic approach to create a new Vu
 - Start by [creating a new Vue application](https://vuejs.org/guide/quick-start.html) using the following CLI command:
 
 	````
-npm init vue@latest
-````
+	npm init vue@latest
+	````
 
 
 - Add a reference to jQuery in `index.html`:
 
 	````HTML
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-````
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	````
 
 
 - Add a reference to the Kendo JS library in `index.html`:
 
 
 	````HTML
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
-````	
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
+	````	
 
 
 - Add references to the Web Report Designer and Report Viewer JS resources, again to `index.html`:
 
 
 	````HTML
-<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
+	<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
 	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
-````
+	````
 
 
 - Create a new web report designer component and configure the routes accordingly. The new component contains a `div` element to hold the web report designer object and applies CSS to this element. The component calls the `telerik_webReportDesiger` method to initialize the web report designer widget with the specified configuration options. It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}). How to implement this service is described in the article [How to Host Reports Service in ASP.NET Core 3.1]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}).
@@ -103,8 +103,8 @@ npm init vue@latest
 - Run the app
 
 	````
-npm run dev
-````
+	npm run dev
+	````
 
 
 ## See Also

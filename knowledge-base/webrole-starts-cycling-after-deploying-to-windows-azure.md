@@ -33,9 +33,9 @@ res_type: kb
 - Windows Azure Portal shows:
 
 	````
-One or more role instances are unhealthy. 
-	1 Instance: 1 Unhealthy
-````
+	One or more role instances are unhealthy. 
+		1 Instance: 1 Unhealthy
+	````
 
 
 ## Cause

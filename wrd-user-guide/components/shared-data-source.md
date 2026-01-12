@@ -49,7 +49,7 @@ After saving a data source as shared, the Web Report Designer generates an `.sds
 
    ![Creating a SDSX file ><](images/CreatingSdsxFile.png)
 
-To view all existing Shared Data Sources, open the [Assets Manager]({%slug web-report-designer-user-guide-assets-manager%) from the main menu.
+To view all existing Shared Data Sources, open the [Assets Manager]({%slug web-report-designer-user-guide-assets-manager%}) from the main menu.
 
    ![Use Assets Manager to view your Shared Data Sources ><](images/AllSharedDataSources.png)
 

@@ -35,7 +35,7 @@ SELECT * from HumanResources.Department
 	WHERE (COALESCE(@SelectedValues,Null) IS NULL) OR DepartmentID IN (@SelectedValues)
 ````
 
-On configuring SqlDataSource component with the above Text command, you can map directly the @SelectedValues SQL parameter to a multivalue report parameter - [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}#wizard) (step 4).
+	On configuring SqlDataSource component with the above Text command, you can map directly the @SelectedValues SQL parameter to a multivalue report parameter - [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}#wizard) (step 4).
 
 	> The *COALESCE* function is used as the multivalue parameter cannot be evaluated directly against NULL.
 

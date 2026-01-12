@@ -1,6 +1,6 @@
 ---
-title: Expression editor
-page_title: Expression editor - Web Report Designer User Guide
+title: Using the Expression Editor
+page_title: Expression Editor - Web Report Designer User Guide
 description: "Learn more about the Expression editor in Web Report Designer, where and how you may configure and use it in your Reports."
 slug: expression-editor-web-report-designer-user-guide
 tags: expression,editor,web,report,designer,design,create,report,web

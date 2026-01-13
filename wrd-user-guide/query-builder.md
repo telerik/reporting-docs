@@ -78,7 +78,7 @@ To create a query using the Query Builder in the Web Report Designer:
 
 The following video shows a step-by-step guide of the described scenario above:
   
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hv8w7E1mKSg?si=S7VHYN1lneZOT0-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pO04CTt6Q68?si=ZPVZJBpJi6bvvSSH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Query Builder Sections
 

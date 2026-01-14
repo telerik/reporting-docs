@@ -31,7 +31,7 @@ When the report renders, the expression is evaluated and assigned to the bound p
 |--------------|------------------------|-------------|
 | `Style.BackgroundColor` | `=IIF(Fields.Amount > 1000, 'Red', 'Green')` | Change background color based on value |
 | `Visible` | `=Fields.ShowDetails` | Show/hide items based on data |
-| `DataSource` | `=Fields.NestedData` | Dynamically assign nested data from a JSON |
+| `DataSource` | `=Fields.NestedData` | Dynamically assign nested data from a JSON field |
 | `Style.Font.Bold` | `=Fields.IsHighlight` | Conditionally format text |
 | `DocumentMapText` | `=Fields.CategoryName` | Set document map entries |
 

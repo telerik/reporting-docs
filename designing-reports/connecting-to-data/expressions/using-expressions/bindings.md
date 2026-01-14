@@ -12,21 +12,39 @@ reportingArea: General
 
 # Bindings Overview
 
-By default only a certain number of report items and properties can handle expression values. The simple binding between the other properties of a report item and an expression is accomplished by adding Binding objects to the Bindings collection.
+Bindings allow you to dynamically set report item properties using expressions. While only certain properties support expressions natively (like the TextBox `Value` property), bindings extend this capability to any write-enabled property.
 
-For example, you can bind the `Style.BackgroundColor` property of a TextBox item to an expression `=Fields.CarColor` that when evaluated returns an object of type appropriate for the property, _System.Drawing.Color_ in this case. In certain cases using user-defined functions to perform appropriate type conversions should be considered.
+When the report renders, the expression is evaluated and assigned to the bound property. For example, you can bind `Style.BackgroundColor` to `=Fields.CarColor` to set colors dynamically from your data.
 
-When constructing a Binding instance with Binding constructor, you must specify:
+### Bindings vs. Other Approaches
 
-* the `Name` of the property to bind; alternatively a period-delimited navigation path can be used to reference a property down the object hierarchy. For example the following navigation paths define valid properties:
+| Scenario | Use This | Reason |
+|--------------|--------------|------------|
+| Displaying field values in text boxes | Value expressions (e.g., `=Fields.Total`) | The `Value` property supports expressions natively. |
+| Styling multiple properties based on conditions | [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) | User-friendly interface, one rule can set multiple style properties. |
+| Complex expressions for styling. | Bindings | Full expression flexibility, cleaner for complex logic like `IIF(Fields.Amount > 1000, 'Red', 'Green')`. |
+| Setting DataSource, Visible, or other properties without native expression support | Bindings | Only bindings can dynamically set these properties. |
 
-	+ `DataSource`
-	+ `Style.BackgroundColor`
-	+ `Style.Font.Name` Only write-enabled properties can be set through binding expressions, so read-only properties are not suitable for data-binding.
+## Common Binding Scenarios
 
-	>tip Not all item properties support expression bindings. Please refer to the [Reporting API Reference](/api/) to check if a property supports binding.
+| Property | Expression Example | Purpose |
+|--------------|------------------------|-------------|
+| `Style.BackgroundColor` | `=IIF(Fields.Amount > 1000, 'Red', 'Green')` | Change background color based on value |
+| `Visible` | `=Fields.ShowDetails` | Show/hide items based on data |
+| `DataSource` | `=Fields.NestedData` | Dynamically assign nested data from a JSON |
+| `Style.Font.Bold` | `=Fields.IsHighlight` | Conditionally format text |
+| `DocumentMapText` | `=Fields.CategoryName` | Set document map entries |
 
-* an [`Expression`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that will return the value for the property when evaluated at runtime.
+## How to Create a Binding
+
+1. Select the report item and locate the `Bindings` property in the **Properties** window.
+1. Click the ellipsis button **[...]** to open the **Edit Bindings** dialog.
+1. Click **New** to add a new binding.
+1. From the **Property path** dropdown, select the property to bind (for example, `DataSource`). Only write-enabled properties can be bound.
+1. Enter the expression in the **Expression** field. The expression must return a value compatible with the property type.
+1. Click **OK** to apply the bindings.
+
+>tip Not all item properties support expression bindings. Refer to the [Reporting API Reference](/api/) to verify if a specific property supports binding.
 
 ![Edit Bindings Wizard](images/UI/Bindings.png)
 

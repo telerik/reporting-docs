@@ -45,8 +45,8 @@ The figure below shows TextBox items for `Name` and `Summary` fields, the detail
 
 	````
 	Name
-		Name
-		Summary
+  Name
+  Summary
 	````
 
 	The data for the first row Name field is blanked out. The output with `CanShrink = true` for Name and `CanGrow = true` for Summary shows the Name property TextBox has shrunk and the Summary information takes its place:

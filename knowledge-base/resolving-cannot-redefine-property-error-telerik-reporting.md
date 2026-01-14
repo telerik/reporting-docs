@@ -69,12 +69,12 @@ Modify the code in the `Toolbar` class to ensure that export functionality works
     Update the `beginLoadReport` event handler:
 
     ````javascript
-.on('beginLoadReport', () => {
-        const $element = $(this._element);
-        const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
-        kendoExportDropDown?.enable(false);
-    })
-````
+    .on('beginLoadReport', () => {
+            const $element = $(this._element);
+            const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
+            kendoExportDropDown?.enable(false);
+        })
+    ````
 
 
 1. **Update Export Dropdown Items**
@@ -82,12 +82,12 @@ Modify the code in the `Toolbar` class to ensure that export functionality works
     Update the `updateExportDropdownItems` method:
 
     ````javascript
-const $element = $(this._element);
-    const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
-    if (!kendoExportDropDown) {
-        return;
-    }
-````
+    const $element = $(this._element);
+        const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
+        if (!kendoExportDropDown) {
+            return;
+        }
+    ````
 
 
 ### Summary

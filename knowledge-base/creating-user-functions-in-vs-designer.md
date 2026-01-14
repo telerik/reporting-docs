@@ -84,7 +84,7 @@ It can be invoked from an expression by its name, specifying the necessary param
 
 The custom function accepts an image url and returns an Image object that can be assigned to a PictureBox:
 
-![User Function in External assembly](images/user-function-in-external-assembly.gif)   
+<!-- ![User Function in External assembly](images/user-function-in-external-assembly.gif)    -->
 
 ## See Also
 

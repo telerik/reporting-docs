@@ -3,7 +3,7 @@ title: Troubleshoot Report Definitions
 page_title: Tips for troubleshooting your reports
 description: "Learn how to troubleshoot report structure problems when working with the Telerik Reporting Report Designer tools."
 slug: troubleshoot-report-definition-tips
-tags: telerik, reporting, creating, designing, reports, troubleshoot, tips
+tags: telerik, reporting, creating, designing, reports, troubleshooting, tips
 published: True
 position: 20
 reportingArea: General
@@ -20,7 +20,7 @@ For example, the following image shows the tooltip of the warning stating that "
 
 To fix the above warning, you may:
 *Decrease the Report `Width`
-*Increase the Report Page Width in one of the following manners:
+*Increase the Report Page Width in one of the following ways:
 	+ Change the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperKind` to a bigger one that will accommodate the content;
 	+ Inrease the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperSize` > `Width` for `Custom` paper kind;
 	+ Decrease the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `Margins` > `Left` and/or `Right`.
@@ -29,7 +29,10 @@ Check for [Bindings]({%slug telerikreporting/designing-reports/connecting-to-dat
 
 ## Troubleshooting Report Layout
 
-Use different __Styles__, for example, `Background Color` and `Borders`, to easily distinguish between report sections and items and identify which one is responsible for the observed inconsistency in the report layout. For complex reports, with many nested items, start by coloring the top-level containers first, and then dig deeper by coloring that container's nested items as well, until you find the item responsible for the issues. 
+Use different __Styles__, for example, `Background Color` and `Borders`, to easily distinguish between report sections and items and identify which one is responsible for the observed inconsistency in the report layout. For complex reports, with many nested items, start by coloring the top-level containers first, and then dig deeper by coloring that container's nested items as well, until you find the item responsible for the issues.
+
+Here is an example with the detail section and the Panel inside it easily distinguishable due to the background colors:
+![Report with detail section in light green and a panel in light blue in the Standalone Report Designer.](images/colored-detail-section-and-panel-standalone-designer.png)
 
 ### Unexpected Page Breaks
 
@@ -55,9 +58,9 @@ Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/design
 
 The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) automatically generates the code for the CS/VB reports and stores it in the `InitializeComponent` method of the file `_ReportName_.designer.cs/_ReportName_.Designer.vb`. Check the file for errors if the report cannot be opened in the report designer.
 
-
 ## See Also
 
 * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
+

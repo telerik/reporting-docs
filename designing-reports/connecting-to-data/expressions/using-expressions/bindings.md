@@ -16,7 +16,7 @@ Bindings allow you to dynamically set report item properties using expressions. 
 
 When the report renders, the expression is evaluated and assigned to the bound property. For example, you can bind `Style.BackgroundColor` to `=Fields.CarColor` to set colors dynamically from your data.
 
-### Bindings vs. Other Approaches
+>caption Bindings vs. Other Approaches
 
 | Scenario | Use This | Reason |
 |--------------|--------------|------------|

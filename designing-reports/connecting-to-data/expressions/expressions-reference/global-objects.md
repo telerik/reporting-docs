@@ -97,7 +97,7 @@ For information regarding the available Report definition properties, check out 
 
 In a web application (ASP.NET Core or MVC), reports are usually served through a ReportsController, which handles HTTP requests from the report viewer (HTML5 Viewer, Blazor Viewer, etc.) to render and deliver the report.
 
-The ReportsController receives an HTTP request from the client asking for a report. Inside this controller, Telerik calls GetUserIdentity() to determine who is making the request. By default, GetUserIdentity() uses HttpContext.User. HttpContext is the object representing the current HTTP request and response. Telerik converts that into a UserIdentity object.
+The ReportsController receives an HTTP request from the client asking for a report. Inside the controller, the method "GetUserIdentity()" is invoked to retrieve information about the user, currently logged into the web application. By default, this method obtains the user details from the HttpContext.User.Identity instance. Since the HttpContext provides access to the current HTTP request and response, the controller logic uses the identity information from the request to populate a UserIdentity instance. The method is declared as virtual, allowing the developers to override it and provide a custom implementation if needed.
 
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each report rendering service by overriding the corresponding GetUserIdentity method.
 
@@ -113,4 +113,4 @@ To access the user identity in Telerik Reports, you can leverage the UserIdentit
 | Context | Provides access to the context collection for storing and retrieving user-specific objects |
 | Current | Gets or sets the UserIdentity context that defines the user-specific information used during report processing and expression evaluation. For server viewer technologies, the value is resolved automatically. Developers can override this behavior. It can be accessed either through the static member or by using an expression like =UserIdentity.Name.|
 | IsAuthenticated | Indicates whether the user has been authenticated |
-| Name | It will return the name of the user |
+| Name | Returns the name of the user |

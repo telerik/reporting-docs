@@ -50,23 +50,31 @@ For the purposes of the suggested solution, use either the [Standalone Telerik R
 	On the **Configure Data Source Command** page, paste the following SQL query in the **Select Statement** window: 
 
 	````SQL
-SELECT
-	PC.Name AS ProductCategory
-	, PS.Name AS ProductSubCategory
-	, P.Name AS ProductName
-	, SOD.LineTotal
-	, SOH.OrderDate
+	SELECT
+		PC.Name AS ProductCategory
+		, PS.Name AS ProductSubCategory
+		, P.Name AS ProductName
+		, SOD.LineTotal
+		, SOH.OrderDate
 	FROM
-	Production.Product AS P
-	INNER JOIN Production.ProductSubcategory AS PS
-	INNER JOIN Production.ProductCategory AS PC
-	ON PS.ProductCategoryID = PC.ProductCategoryID
-	ON P.ProductSubcategoryID = PS.ProductSubcategoryID
-	INNER JOIN Sales.SalesOrderDetail AS SOD
-	ON P.ProductID = SOD.ProductID
-	INNER JOIN Sales.SalesOrderHeader AS SOH
-	ON SOD.SalesOrderID = SOH.SalesOrderID
-````
+		Production.Product AS P
+	INNER JOIN 
+		Production.ProductSubcategory AS PS
+	INNER JOIN 
+		Production.ProductCategory AS PC
+	ON 
+		PS.ProductCategoryID = PC.ProductCategoryID
+	ON 
+		P.ProductSubcategoryID = PS.ProductSubcategoryID
+	INNER JOIN
+		Sales.SalesOrderDetail AS SOD
+	ON 
+		P.ProductID = SOD.ProductID
+	INNER JOIN 
+		Sales.SalesOrderHeader AS SOH
+	ON 
+		SOD.SalesOrderID = SOH.SalesOrderID
+	````
 
 	Click **Next** and, then, the __Execute Query...__ button to make sure that everything is fine with your data connection and that the data is fetched from the database. Click __Finish__ when ready to close the SqlDataSource Wizard. 
 

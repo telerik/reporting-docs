@@ -35,78 +35,76 @@ The solution we are about to examine is a very basic approach to create a new Vu
 
 - Start by [creating a new Vue application](https://vuejs.org/guide/quick-start.html) using the following CLI command:
 
-	````
-	npm init vue@latest
-	````
-
+  ```bash
+  npm init vue@latest
+  ```
 
 - Add a reference to jQuery in `index.html`:
 
-	````HTML
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	````
-
+  ```HTML
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  ```
 
 - Add a reference to the Kendo JS library in `index.html`:
 
-
-	````HTML
-	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
-	````	
-
+  ```HTML
+  <script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
+  ```
 
 - Add references to the Web Report Designer and Report Viewer JS resources, again to `index.html`:
 
+  ```HTML
+  <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
+  <script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
+  ```
 
-	````HTML
-	<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
-	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
-	````
+- Create a new web report designer component and configure the routes accordingly. The new component contains a `div` element to hold the web report designer object and applies CSS to this element.
 
+  The component calls the `telerik_webReportDesiger` method to initialize the web report designer widget with the specified configuration options.
 
-- Create a new web report designer component and configure the routes accordingly. The new component contains a `div` element to hold the web report designer object and applies CSS to this element. The component calls the `telerik_webReportDesiger` method to initialize the web report designer widget with the specified configuration options. It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}). How to implement this service is described in the article [How to Host Reports Service in ASP.NET Core 3.1]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}).
+  It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}).
 
-	````HTML
-<template>
-	  <div id="wrd1">...</div>
-	</template>
+  How to implement this service is described in the article [How to Host Reports Service in ASP.NET Core 3.1]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}).
 
-	<script>
-	export default {
-	  name: "WebReportDesigner",
-	  mounted() {
-		this.$nextTick(function () {
-		  $("#wrd1")
-			.telerik_WebReportDesigner({
-			  toolboxArea: {
-				layout: "list", //Change to "grid" to display the contents of the Components area in a flow grid layout.
-			  },
-			  serviceUrl: "https://demos.telerik.com/reporting/api/reportdesigner/",
-			  report: "Barcodes Report.trdx",
-			})
-			.data("telerik_WebDesigner");
-		});
-	  },
-	};
-	</script>
+  ```HTML
+  <template>
+    <div id="wrd1">...</div>
+  </template>
 
-	<!-- Add "scoped" attribute to limit CSS to this component only -->
-	<style scoped>
-	#wrd1 {
-	  position: relative;
-	  height: 880px;
-	}
-	</style>
-````
+  <script>
+  export default {
+    name: "WebReportDesigner",
+    mounted() {
+  	this.$nextTick(function () {
+  	  $("#wrd1")
+  		.telerik_WebReportDesigner({
+  		  toolboxArea: {
+  			layout: "list", //Change to "grid" to display the contents of the Components area in a flow grid layout.
+  		  },
+  		  serviceUrl: "https://demos.telerik.com/reporting/api/reportdesigner/",
+  		  report: "Barcodes Report.trdx",
+  		})
+  		.data("telerik_WebDesigner");
+  	});
+    },
+  };
+  </script>
 
+  <!-- Add "scoped" attribute to limit CSS to this component only -->
+  <style scoped>
+  #wrd1 {
+    position: relative;
+    height: 880px;
+  }
+  </style>
+  ```
 
 - Run the app
 
-	````
-	npm run dev
-	````
-
+  ```bash
+  npm run dev
+  ```
 
 ## See Also
 
-* [Download the final Vue.js application](resources/reporting-vue.zip)
+- [Download the final Vue.js application](resources/reporting-vue.zip)

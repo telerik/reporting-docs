@@ -22,7 +22,7 @@ When the report renders, the expression is evaluated and assigned to the bound p
 |--------------|--------------|------------|
 | Displaying field values in text boxes | Value expressions (e.g., `=Fields.Total`) | The `Value` property supports expressions natively. |
 | Styling multiple properties based on conditions | [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) | User-friendly interface, one rule can set multiple style properties. |
-| Complex expressions for styling. | Bindings | Full expression flexibility, cleaner for complex logic like `IIF(Fields.Amount > 1000, 'Red', 'Green')`. |
+| Complex expressions for styling | Bindings | Full expression flexibility, cleaner for complex logic like `IIF(Fields.Amount > 1000, 'Red', 'Green')`. |
 | Setting DataSource, Visible, or other properties without native expression support | Bindings | Only bindings can dynamically set these properties. |
 
 ## Common Binding Scenarios

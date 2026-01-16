@@ -27,8 +27,8 @@ The Processing element specifies the configuration settings that will be applied
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **verbose** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the application base path. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
-|Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.|</li></ul>
+|Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **verbose** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the application base path. When enabled, only UNC (network) paths listed in the _externalReportPaths_ child element would be allowed. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
+|Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.|</li><li>__externalReportPaths__ - optional element. A collection of explicitly allowed root UNC (network) paths for report document resolution. It is taken into account only when the optional attribute _validateReportPaths_ is enabled (default).</li></ul>
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
 ### Example
@@ -44,6 +44,12 @@ XML-based configuration file:
 		<graphicsEngine engineName="PlatformDependent">
 		</graphicsEngine>
 
+		<!--The element below represents a collection of explicitly allowed root UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):-->
+		<externalReportPaths>
+			<add value="\\fileserver\reports" />
+			<add value="\\backupserver\shared\reporting" />
+		</externalReportPaths>
+	  
 		<!--The element below represents a Path resource resolver:-->
 		<!--<resourceResolver provider="path">
 			<parameters>
@@ -59,7 +65,7 @@ XML-based configuration file:
 				<parameter name="constructorParameter1" value="constructorParameterValue1" />
 			</parameters>
 		</resourceResolver>
-		<!-- The element below represents a custom implementation of a sharedDataSourcer resolver-->
+		<!-- The element below represents a custom implementation of a sharedDataSource resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<sharedResourceResolver provider="custom">
@@ -77,10 +83,15 @@ JSON-based configuration file:
 ````JSON
 "telerikReporting": {
 	"processing": {
-			// The element below sets the graphics engine used for measurement and rendering. Available values for engineName: "Skia", "Gdi", "PlatformDependent". Default value: PlatformDependent.
+		// The element below sets the graphics engine used for measurement and rendering. Available values for engineName: "Skia", "Gdi", "PlatformDependent". Default value: PlatformDependent.
 		"graphicsEngine": {
-        	"engineName": "PlatformDependent" 
-      	},
+			"engineName": "PlatformDependent" 
+		},
+		// The element below represents a collection of explicitly allowed root UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):
+		"externalReportPaths": [
+			"\\\\fileserver\\reports",
+			"\\\\backupserver\\shared\\reporting"
+		],
 		"cacheDefinitionProperties": "false",
 		"resourceResolver": {
 			// The element below represents a Path resource resolver:

@@ -163,6 +163,13 @@ Skia implementation is not available in applications that target .NET Framework.
 | ------ | ------ |
 |Attributes| __engineName__ – required string attribute. Determines the type of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) used in the application. Available values:<ul><li>__PlatformDependent__ - the default value. On Windows platform, the application will use the GDI graphics engine. On non-Windows platforms, the application will use the Skia graphics engine.</li><li>__Gdi__ - the application will use GDI+ graphics engine. On non-Windows platforms this will cause runtime exceptions of type __PlatformNotSupported__ to be thrown. Available for applications that target either .NET Framework or .NET</li><li>__Skia__ - uses SkiaSharp for rendering. Can be used on Windows and non-Windows platforms in applications that target .NET (.NET Framework is not supported).</li></ul>|
 
+### Validate Report Paths
+
+By default, the declarative report definitions (TRDP, TRDX and TRBP files) can be resolved only from paths within the application hosting the Reporting Engine and those specified in the __externalReportPaths__ element. The attribute __validateReportPaths__ lets you allow all external paths by setting it to _false_ (the default is _true_).
+
+### `<externalReportPaths>` element
+
+Add external UNC (network) paths for report document resolution. The collection is taken into account only when the optional attribute _validateReportPaths_ is _enabled_ (default).
 
 ### ResourceResolver
 

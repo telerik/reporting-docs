@@ -28,7 +28,7 @@ The Processing element specifies the configuration settings that will be applied
 |   |   |
 | ------ | ------ |
 |Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **verbose** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the application base path. When enabled, only UNC (network) paths listed in the _externalReportPaths_ child element would be allowed. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
-|Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.</li><li>__externalReportPaths__ - optional element. A collection of explicitly allowed root UNC (network) paths for report document resolution. It is taken into account only when the optional attribute _validateReportPaths_ is enabled (default).</li></ul>|
+|Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.</li><li>__externalReportPaths__ - optional element. A collection of explicitly allowed UNC (network) paths for report document resolution. The collection is taken into account only when the optional attribute _validateReportPaths_ is _enabled_ (default).</li></ul>|
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
 ### Example
@@ -44,7 +44,7 @@ XML-based configuration file:
 		<graphicsEngine engineName="PlatformDependent">
 		</graphicsEngine>
 
-		<!--The element below represents a collection of explicitly allowed root UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):-->
+		<!--The element below represents a collection of explicitly allowed UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):-->
 		<externalReportPaths>
 			<add value="\\fileserver\reports" />
 			<add value="\\backupserver\shared\reporting" />
@@ -87,7 +87,7 @@ JSON-based configuration file:
 		"graphicsEngine": {
 			"engineName": "PlatformDependent" 
 		},
-		// The element below represents a collection of explicitly allowed root UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):
+		// The element below represents a collection of explicitly allowed UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):
 		"externalReportPaths": [
 			"\\\\fileserver\\reports",
 			"\\\\backupserver\\shared\\reporting"

@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 # processing Element Overview
 
-The Processing element specifies the configuration settings that will be applied during the processing of the report. 
+The Processing element specifies the configuration settings that will be applied during the processing of the report.
 
 ## `<processing>` element
 

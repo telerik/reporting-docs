@@ -94,3 +94,7 @@ Report Viewers are UI components that allow you to display a report document in 
 Showing a report in a Telerik Report Viewer is fairly easy, especially when you use the Telerik Reporting Item Templates that will be set up in your Visual Studio by the Telerik Reporting installer. The Item Templates provide a Wizard-like interface that handles the configuration of the Report Viewer and adds the NuGet or binary assembly references that are needed to run the Telerik Reporting engine.
 
 The Report Viewer usually needs only a Report Source that points to your report definition, and some configuration details that determine whether a remote (in web applications) or an embedded (in desktop applications) reporting engine will be used to process and render the report.
+
+## See Also
+
+* [Web Report Designer User Guide]({%slug user-guide/overview%})

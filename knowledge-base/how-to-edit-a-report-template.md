@@ -7,7 +7,6 @@ slug: web-report-designer-how-to-edit-a-report-template
 tags: web, report, designer, wrd, report, template, trtx, edit
 published: True 
 position: 
-tags:
 res_type: kb
 ---
 

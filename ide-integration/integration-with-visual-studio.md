@@ -18,6 +18,16 @@ Make sure that the extension is installed first:
 
 The extensions handle the following major points in the development process:
 
+## Setting up the Telerik Reporting MCP Server
+
+Starting with the [Progress® Telerik® Reporting 2025 Q4 (19.3.25.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q4-19-3-25-1111) release, the [Telerik Reporting MCP Server]({%slug ai-mcp-server-as-a-nuget%}) can now be set up using the [Telerik Reporting Visual Studio Extension]({%slug reporting-integration-with-visual-studio%}).
+
+![An image showcasing the available MCP-related functionalities of the Telerik Reporting VS extension](images/vs-reporting-mcp-extension.png)
+
+- The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds  the Telerik server entry.
+- The `Configure MCP Server for Solution` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) the  `.mcp.json` file in the solution directory.
+- The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (*or updates if existing*) a [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) file in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
+
 ## Project Templates
 
 After [installing Telerik Reporting]({%slug telerikreporting/installation%}), the extensions add several project templates to the **New Project** dialog of Visual Studio:

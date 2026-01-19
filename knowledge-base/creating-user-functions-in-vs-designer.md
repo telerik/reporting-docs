@@ -27,7 +27,7 @@ Let's start with creating a Class library (**.NET Framework**) project and add a
 
 If your custom user function as a **public static** (**Public Shared** in *VB.NET*) method is a part of the current Report class:
 
-````CSharp
+````C#
 public partial class Report1 : Telerik.Reporting.Report
 {
     public Report1()
@@ -45,9 +45,7 @@ public partial class Report1 : Telerik.Reporting.Report
 
 It can be invoked from an expression by its name, specifying the necessary parameters in the braces, e.g., setting the **Value** of a **TextBox** to:
 
-````
-= Greet("Dess")
-````
+`= Greet("Dess")`
 
 ![User Function in Report class](images/user-function-in-report.gif)   
 
@@ -60,7 +58,7 @@ It can be invoked from an expression by its name, specifying the necessary param
 	>important Do not forget to close the Visual Studio instance before modifying its configuration file. Run `Notepad` (or other editing tool) as an administrator to perform the changes.
 
 	````XML
-<configSections>
+	<configSections>
 			<section
 				name="Telerik.Reporting"
 				type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
@@ -72,19 +70,17 @@ It can be invoked from an expression by its name, specifying the necessary param
 			<add name="MyFunctions" />
 		</AssemblyReferences>
 	</Telerik.Reporting>
-````
+	````
 
 
 1. Copy the custom assembly in the same folder as the devenv.exe.config.
-1. You can type the expression by specifying the full name of the function and passing a parameter of the expected type. 
+1. You can type the expression by specifying the full name of the function and passing a parameter of the expected type. - `= MyFunctions.GetImageFromURL("image url")`
 
-	````
-= MyFunctions.GetImageFromURL("image url")
-````
+The custom function accepts an image URL and returns an Image object that can be assigned to a PictureBox item.
 
-The custom function accepts an image url and returns an Image object that can be assigned to a PictureBox:
-
+<!-- COMMENTED BECAUSE OF MISSING GIF
 ![User Function in External assembly](images/user-function-in-external-assembly.gif)   
+-->
 
 ## See Also
 

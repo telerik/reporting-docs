@@ -2,7 +2,7 @@
 title: Using with Report Server for .NET
 page_title: Using the Native Angular Report Viewer with a Report Server for .NET instance
 description: "Understand the prerequisites and steps necessary to add the Native Angular Report Viewer component to a new Angular application. Learn how to display a report coming from a Telerik Report Server for .NET."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-with-report-server-net
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server-net
 tags: how, to, use, native, angular, report, viewer, with, report, server. net
 published: True
 reportingArea: NativeAngular

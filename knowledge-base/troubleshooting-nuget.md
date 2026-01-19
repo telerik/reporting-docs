@@ -37,7 +37,7 @@ After changing your Telerik password, you get `[Telerik Nuget] The V2 feed at '.
 Update your credentials and use an API key instead of a password. Using an API key instead of a password is a more secure approach:
 
 1. [Generate an API key]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}#generate-an-api-key).
-1. Update the credentials for the Telerik NuGet feed by running `NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key" -Password "YOUR-API-KEY" -StorePasswordInClearText`
+1. Update the credentials for the Telerik NuGet feed by running `dotnet nuget update source "TelerikNuget" --source "https://nuget.telerik.com/v3/index.json" --username "api-key" --password "YOUR-API-KEY" --store-password-in-clear-text`. Ensure updating the name of the Nuget source "TelerikNuget" and the api key "YOUR-API-KEY".
 
 As an alternative, you can [reset your Telerik NuGet Feed credentials from the Windows Credentials Manager](#solution-2-windows-credentials-manager)
 

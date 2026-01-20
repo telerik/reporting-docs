@@ -71,7 +71,7 @@ Consider reordering the items the way they must appear when using Accessibility 
 
 ## Type Reports in Visual Studio Report Designer
 
-The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) automatically generates the code for the CS/VB reports and stores it in the `InitializeComponent` method of the file `_ReportName_.designer.cs/_ReportName_.Designer.vb`. Check the file for errors if the report cannot be opened in the report designer.
+The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) automatically generates the code for the CS/VB reports and stores it in the `InitializeComponent` method of the file `ReportName.designer.cs`/`ReportName.Designer.vb`. Check the file for errors if the report cannot be opened in the report designer.
 
 ## See Also
 
@@ -79,5 +79,6 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
+
 
 

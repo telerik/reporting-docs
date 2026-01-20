@@ -34,6 +34,20 @@ Use different __Styles__, for example, `Background Color` and `Borders`, to easi
 Here is an example with the detail section and the Panel inside it easily distinguishable due to the background colors:
 ![Report with detail section in light green and a panel in light blue in the Standalone Report Designer.](images/colored-detail-section-and-panel-standalone-designer.png)
 
+### Data is Missing at Runtime
+
+Ensure you have assigned the `DataSource` property of your Report or other [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), for example, [Table]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) or [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}):
+
+![The sample Report 'ProductCatalog.trdp' with its DataSource property set to sqlDataSource1 in the Standalone Report Designer.](images/report-datasource-property-set-standalone-designer.png)
+
+Alternatively, you may use [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `DataSource` property to display the data only at runtime. With this approach, the Binding will override the `DataSource` property Value at runtime.
+
+When displaying data in a TextBox or other report item, ensure it is in the correct [data scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}). This means that its parent data item should have as DataSource the corresponding source of data, for example, [DataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
+
+### Expression Values
+
+Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) or [report section]({%slug report_structure_groups_sections%}#report-sections), ensuring the same [scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) to display the actually evaluated content in the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}), [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) or other [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}).
+
 ### Unexpected Page Breaks
 
 * Page Break Properties:
@@ -48,12 +62,7 @@ Here is an example with the detail section and the Panel inside it easily distin
 
 ### Report Items Order in Accessibility
 
-When enabling the [Accessibility feature]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) of your reports, the items will be read according to their logical item order. This order may be seen and changed in the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%})] in the [report designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). 
-
-### Expression Values
-
-Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) or [report section]({%slug report_structure_groups_sections%}#report-sections), ensuring the same [scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) to display the actually evaluated content in the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}), [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) or other [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}).
-
+When enabling the [Accessibility feature]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) of your reports, the items will be read according to their logical item order. This order may be seen and changed in the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%})] in the [report designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
 ## Type Reports in Visual Studio Report Designer
 
 The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) automatically generates the code for the CS/VB reports and stores it in the `InitializeComponent` method of the file `_ReportName_.designer.cs/_ReportName_.Designer.vb`. Check the file for errors if the report cannot be opened in the report designer.

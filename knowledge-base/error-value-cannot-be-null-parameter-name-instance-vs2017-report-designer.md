@@ -40,7 +40,7 @@ at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.D
 
 ## Solutions
 
-[The error]({%slug report-cannot-be-built-and-opened-in-vs-report-designer%}) indicates that the project uses a version of __Telerik Reporting__ that is not registered in the corresponding Visual Studio. This might be due to Telerik Reporting being installed before the installation of the Visual Studio.
+[The error]({%slug report-cannot-be-built-and-opened-in-vs-report-designer%}) indicates that the project uses a version of __Telerik Reporting__ that is not registered in the corresponding Visual Studio. This might be due to Telerik Reporting being installed before the installation of Visual Studio.
 
 ### Solution 1 - Upgrade Wizard
 
@@ -68,7 +68,7 @@ You can download the `MSI` file to install Telerik Reporting as described in the
 
 	`msiexec /i Telerik_Reporting_R1_2023_SP1_DEV.msi PRODUCTDIR="C:\Program Files\Microsoft Visual Studio\2022\Professional"`
 
-In the code above the parameters are as follows:
+In the code above, the parameters are as follows:
 
 1. `[installer_file_name].msi` - the exact name of the installer, and should look like `Telerik_Reporting_R1_2023_SP1_DEV.msi`.
 1. `[version]` - the Visual Studio version - `2017`, `2019`, `2022`, or `2026`.
@@ -81,6 +81,6 @@ Once Telerik Reporting is installed with support for the specific Visual Studio,
 * The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to [R1 2017 (11.0.17.118)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r1-2017-(version-11-0-17-118)).
 * The VS Report Designer is not fully functional in VS2019 for version of Telerik Reporting prior to [R2 2019 (13.1.19.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2019-13-1-19-514).
 * The VS Report Designer is not fully functional in VS2022 for version of Telerik Reporting prior to [R3 2021 SP1 (15.2.21.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2021-sp1-15-2-21-1110).
-* The VS Report Designer is not fully functional in VS2022 for version of Telerik Reporting prior to [2025 Q4 (19.3.25.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q4-19-3-25-1111)
+* The VS Report Designer is not fully functional in VS2026 for version of Telerik Reporting prior to [2025 Q4 (19.3.25.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q4-19-3-25-1111)
 
 Therefore, our recommendation is to [upgrade]({%slug telerikreporting/upgrade/overview%}) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).

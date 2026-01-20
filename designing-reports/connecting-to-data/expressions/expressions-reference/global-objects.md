@@ -79,9 +79,9 @@ The `ReportItem` is an __object__ passed from each item to its children. The `Re
 
 When the child is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), it passes as `ReportItem.DataObject` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent to its children.
 
-For example, the `Fields` from a Table DataSource are passed as `ReportItem.DataObject` to its cells' items, e.g. TexBoxes. Therefore, in these no-data items, the Expression `=Fields.fieldName` is equivalent to the Expression `=ReportItem.DataObject.fieldName`.
+For example, the `Fields` from a Table DataSource are passed as `ReportItem.DataObject` to its cells' items, e.g. TextBoxes. Therefore, in these no-data items, the Expression `=Fields.fieldName` is equivalent to the Expression `=ReportItem.DataObject.fieldName`.
 
-On the Table item though, the `ReportItem.DataObject` comes from its parent, for example, from the Report item. For that reason, `=ReportItem.DataObject.fieldName` is different from `=Fields.fieldName` in the Table. The `Fields` __function__ represents the Table DataSource, whereas the `ReportItem.DataObject` __object__ represents its parent (e.g. Report) DataSource.
+On the Table item, though, the `ReportItem.DataObject` comes from its parent, for example, from the Report item. For that reason, `=ReportItem.DataObject.fieldName` is different from `=Fields.fieldName` in the Table. The `Fields` __function__ represents the Table DataSource, whereas the `ReportItem.DataObject` __object__ represents its parent (e.g. Report) DataSource.
 
 For information regarding the available processing ReportItem properties, check out the corresponding processing item API reference.
 
@@ -93,10 +93,24 @@ For information regarding the available Report definition properties, check out 
 
 ## UserIdentity
 
-Represents the current user identity in which context the expression is evaluated.
+[UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) provides structured information about the user, such as Name, AuthenticationType, and authentication status, and offers a Context dictionary for custom data. This property is designed to be used in web projects that utilize the Telerik Reporting REST API. It returns the main identity for this user, such as their username or authentication type. 
 
-For information regarding the available child properties, check out the [UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) API reference or use the Expression Builder dialog.
+In a web application (ASP.NET Core or MVC), reports are usually served through a ReportsController, which handles HTTP requests from the report viewer (HTML5 Viewer, Blazor Viewer, etc.) to render and deliver the report.
+
+The ReportsController receives an HTTP request from the client asking for a report. Inside the controller, the method "GetUserIdentity()" is invoked to retrieve information about the user, currently logged into the web application. By default, this method obtains the user details from the HttpContext.User.Identity instance. Since the HttpContext provides access to the current HTTP request and response, the controller logic uses the identity information from the request to populate a UserIdentity instance. The method is declared as virtual, allowing the developers to override it and provide a custom implementation if needed.
 
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each report rendering service by overriding the corresponding GetUserIdentity method.
 
-When exporting a report programmatically the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
+When exporting a report programmatically, the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
+
+### UserIdentity Properties
+
+To access the user identity in Telerik Reports, you can leverage the UserIdentity class provided by Telerik Reporting. This allows you to retrieve details such as the user's `name`, `authentication` status, and other `context-specific` information.
+
+| Name | Description |
+| ------ | ------ |
+| AuthenticationType | Indicates the type of authentication used. Gets or sets a string value that specifies the authentication mechanism applied for the current user session (e.g., Cookie for server-based login or Bearer for token-based authentication) |
+| Context | Provides access to the context collection for storing and retrieving user-specific objects |
+| Current | Gets or sets the UserIdentity context that defines the user-specific information used during report processing and expression evaluation. For server viewer technologies, the value is resolved automatically. Developers can override this behavior. It can be accessed either through the static member or by using an expression like =UserIdentity.Name.|
+| IsAuthenticated | Indicates whether the user has been authenticated |
+| Name | Returns the name of the user |

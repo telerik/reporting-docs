@@ -28,7 +28,7 @@ You can control parameter merging via the [`Mergeable`](/api/Telerik.Reporting.I
 
 ## How to set a value for a report parameter in ReportBook
 
-In the sample pictures below, you will see in a few steps how to set a value for a report parameter in ReportBook using Standalone Designer. For this example, the **Dashboard.trdp** and **Product Sales.trpd** reports are used, which can be found in the installation folder - **C:\Program Files (x86)\Progress\Telerik Reporting 2025 Q1\Report Designer\Examples**.
+In the sample pictures below, you will see in a few steps how to set a value for a report parameter in ReportBook using Standalone Designer. For this example, the **Dashboard.trdp** and **Product Sales.trpd** reports are used, which can be found in the installation folder - **C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples**.
 
 ### In Standalone Designer
 

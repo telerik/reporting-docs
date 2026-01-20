@@ -40,7 +40,7 @@ The suggestions in this section are the responsibility of the developer embeddin
 
 #### WebServiceDataSource Security Best Practices
 
-When using reports that contain WebServiceDataSource components, follow these recommendations to ensure secure operation:
+When using reports that contain [WebServiceDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}), follow these recommendations to ensure secure operation:
 
 * __Review Reports from External Sources__:	Before deploying reports from third parties or external sources, review their WebServiceDataSource configurations to verify that they access only the expected API endpoints. Reports can be configured to make HTTP requests to various destinations, so it's important to confirm these align with your security policies.
 * __Inspect Service URLs__:	Check that Service URLs in WebServiceDataSource components point to approved API endpoints. Pay attention to reports that use parameter placeholders in URLs (indicated by {@parameterName} syntax) combined with user-editable Report Parameters, as this pattern allows the URL to be modified at runtime based on user input.
@@ -93,4 +93,5 @@ When using the [Report Converters]({%slug telerikreporting/designing-reports/con
 * [Security FAQ]({%slug security-faq%})
 * [Introduction to Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%})
 * [System Requirements](https://www.telerik.com/products/reporting/system-requirements)
+
 

@@ -19,8 +19,8 @@ For example, the following image shows the tooltip of the warning stating that "
 ![Warning triangle in the Standalone Report Designer with the tooltip explaining that the report is too wide.](images/warning-triangle-standalone-designer.png)
 
 To fix the above warning, you may:
-*Decrease the Report `Width`
-*Increase the Report Page Width in one of the following ways:
+* Decrease the Report `Width`
+* Increase the Report Page Width in one of the following ways:
 	+ Change the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperKind` to a bigger one that will accommodate the content;
 	+ Inrease the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperSize` > `Width` for `Custom` paper kind;
 	+ Decrease the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `Margins` > `Left` and/or `Right`.

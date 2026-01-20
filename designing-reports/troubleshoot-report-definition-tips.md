@@ -57,7 +57,7 @@ Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/design
 	When the property value is `True`, the Reporting Engine tries to render the entire item/section/group content on the same page. If it doesn't fit, it attempts to move the whole content to a new page. When the content fits on the new page, the previous page may remain partly blank. If this is not the desired outcome, ensure the corresponding report items/sections/groups have their keep together values set to false.
 
 * Horizontal Pagination:
-	Generally, the [Report items]({%slug telerikreporting/designing-reports/report-structure/overview%}) grow only vertically to accommodate larger content. Only [Crosstabs and Tables/Lists with column gouping]({%slug table_template_items%}), _rotated Tables_ and [SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%}) may grow horizontally. In case of unexpected horizontal page breaks, inspect the items' runtime content.
+	Generally, the [Report items]({%slug telerikreporting/designing-reports/report-structure/overview%}) grow only vertically to accommodate larger content. Only [Crosstabs and Tables/Lists with column grouping]({%slug table_template_items%}), _rotated Tables_ and [SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%}) may grow horizontally. In case of unexpected horizontal page breaks, inspect the items' runtime content.
 
 ### Report Items Order in Accessibility
 

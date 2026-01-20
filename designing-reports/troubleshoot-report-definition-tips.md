@@ -37,7 +37,6 @@ Here is an example with the detail section and the Panel inside it easily distin
 ### Data is Missing at Runtime
 
 Ensure you have assigned the `DataSource` property of your Report or other [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), for example, [Table]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) or [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}):
-
 ![The sample Report 'ProductCatalog.trdp' with its DataSource property set to sqlDataSource1 in the Standalone Report Designer.](images/report-datasource-property-set-standalone-designer.png)
 
 Alternatively, you may use [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `DataSource` property to display the data only at runtime. With this approach, the Binding will override the `DataSource` property Value at runtime.
@@ -63,6 +62,9 @@ Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/design
 ### Report Items Order in Accessibility
 
 When enabling the [Accessibility feature]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) of your reports, the items will be read according to their logical item order. This order may be seen and changed in the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%})] in the [report designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
+By default, the [Report Items]({%slug telerikreporting/designing-reports/report-structure/overview%}) appear in the Report Explorer in the order they have been added to the report definition. Therefore, if you place an item added later at the top of the report, it may be shown in the Report Explorer before items appearing lower in the report section, but being added before. Consider reordering the items the way they must appear when using Accessibility by dragging the items in the Report Explorer:
+![Reordering items in the Report Explorer of the Standalone Report Designer.](images/reorder-items-in-report-explorer-standalone-designer.gif)
+
 ## Type Reports in Visual Studio Report Designer
 
 The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) automatically generates the code for the CS/VB reports and stores it in the `InitializeComponent` method of the file `_ReportName_.designer.cs/_ReportName_.Designer.vb`. Check the file for errors if the report cannot be opened in the report designer.

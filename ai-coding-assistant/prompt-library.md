@@ -261,24 +261,24 @@ Quick Start Guide:
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant Add report viewer
+#telerik-reporting-assistant Add Report Viewer.
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik-reporting-assistant Can I use the report viewer without Reporting REST Service?
+#telerik-reporting-assistant Can I use the report viewer without the Reporting REST Service?
 			</code></pre>
 		</td>
 	</tr>
 	<tr>  
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How do I set the report source of Report Viewer?
+#telerik-reporting-assistant How do I set the report source of the Report Viewer?
 			</code></pre>
 		</td>
 		<td>
 			<pre><code>
-#telerik-reporting-assistant How do I localize the report viewer?
+#telerik-reporting-assistant How do I localize the Report Viewer?
 			</code></pre>
 		</td>
 	</tr>
@@ -290,7 +290,7 @@ Quick Start Guide:
 		</td>
 		<td>
 			<pre><code>
-#telerik-reporting-assistant I want to hide the export button in the report viewer's toolbar.
+#telerik-reporting-assistant I want to hide the export button in the Report Viewer's toolbar.
 			</code></pre>
 		</td>
 	</tr>
@@ -303,6 +303,63 @@ Quick Start Guide:
 		<td>
 			<pre><code>
 #telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
+			</code></pre>
+		</td>
+	</tr>	
+</table>
+
+#### WinForms & WPF Viewers
+
+<table>
+	<tr>
+		<th>WinForms Viewer</th>
+		<th>WPF Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Add Telerik Report Viewer to my application. Generate the code that embeds the viewer and uses the local Reporting engine.
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the displayed report on a button click?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use the report viewer without the Reporting REST Service?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I localize the Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to connect the Report Viewer to Telerik Report Server.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I set the report source of the Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant The document map panel is missing in the Report Viewer.
 			</code></pre>
 		</td>
 	</tr>	

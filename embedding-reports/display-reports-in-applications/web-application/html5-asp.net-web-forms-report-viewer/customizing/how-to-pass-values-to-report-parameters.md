@@ -12,17 +12,17 @@ previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 
 # Passing Values to Report Parameters from Components Outside the HTML5 WebForms Report Viewer
 
-This topic explains how to use custom parameters UI to update the report parameters instead of using the HTML5 Web Forms report viewer's default implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
+This topic explains how to use the custom parameters UI to update the report parameters instead of using the HTML5 Web Forms report viewer's default implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
 
-To give an example we will use the Invoice report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI.
+To give an example, we will use the Invoice report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI.
 
 ## Pass values to report parameters
 
-> All path references in the described steps should be adapted according to your project setup. For more information please refer to the Microsoft article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140))
+> All path references in the described steps should be adapted according to your project setup. For more information, please refer to the Microsoft article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140))
 
-1. Create a new ASP.NET Web Forms Empty Project. We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it *Charp|VB.ReportLibrary*, add the existing __Invoice.cs__/__Invoice.vb__ report and its subreport __SalesOrderDetails.cs__/__SalesOrderDetails.vb__ from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples\CSharp|VB` folder and built the *Charp|VB.ReportLibrary* project. Add reference to the `ReportLibrary` project in the Web Forms project.
+1. Create a new ASP.NET Web Forms Empty Project. We are going to use one of our demo Visual Studio reports. For this purpose, add a new Telrik Report Library project to the solution from the VS item templates, name it *CSharp|VB.ReportLibrary*, add the existing __Invoice.cs__/__Invoice.vb__ report and its subreport __SalesOrderDetails.cs__/__SalesOrderDetails.vb__ from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples\CSharp|VB` folder and built the *CSharp|VB.ReportLibrary* project. Add a reference to the `ReportLibrary` project in the Web Forms project.
 1. Then use the [HTML5 Web Forms Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%}) and name the web page with the viewer __InvoiceParameters.aspx__. On __'Configure report source'__ step select __'Existing report definition'__, then select __'Select type report definition created in Visual Studio'__ and browse *Invoice* report class. Finish the wizard.
-1. Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's `web.config` file. For example:
+1. Add a connectionStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's `web.config` file. For example:
 
 	````XML
 <connectionStrings>
@@ -32,7 +32,7 @@ To give an example we will use the Invoice report from our examples and will upd
 	</connectionStrings>
 ````
 
-	At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at __[host]/InvoiceParameters.aspx__ without any modifications.
+	At this point, you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at __[host]/InvoiceParameters.aspx__ without any modifications.
 
 1. Add code for updating the `ReportSource.Parameters` collection in the code behind:
 
@@ -94,7 +94,7 @@ Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Han
 
 	````JavaScript
 <telerik:ReportViewer ID="reportViewer1" Width="1300px" Height="900px" EnableAccessibility="false" runat="server">
-		<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, Charp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+		<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
 		</ReportSource>
 	</telerik:ReportViewer>
 ````
@@ -113,7 +113,7 @@ $('#invoiceId').change(function () {
 ````
 
 
-1. The HTML page that we have just created should looks like this:
+1. The HTML page that we have just created should look like this:
 
 	````HTML
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvoiceParameters.aspx.cs" Inherits="WebFormsDocumentation.InvoiceParameters" %>
@@ -152,7 +152,7 @@ $('#invoiceId').change(function () {
 				Height="900px"
 				EnableAccessibility="false"
 				runat="server">
-				<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, Charp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+				<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
 				</ReportSource>
 			</telerik:ReportViewer>
 		</form>

@@ -87,6 +87,7 @@ JSON-based configuration file:
 		"graphicsEngine": {
 			"engineName": "PlatformDependent" 
 		},
+
 		// The element below represents a collection of explicitly allowed UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):
 		"externalReportPaths": [
 			"\\\\fileserver\\reports",

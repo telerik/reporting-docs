@@ -365,6 +365,96 @@ Quick Start Guide:
 	</tr>	
 </table>
 
+#### WRD API - NET 462 & WRD API - .NET 8
+
+<table>
+	<tr>
+		<th>WRD API - NET 462</th>
+		<th>WRD API - .NET 8</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use a database as a storage for my Web Report Designer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use a database as a storage for my Web Report Designer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How can I pass pre-defined SQL connections to the web report designer so that users can use them when setting up SQLDataSource components?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to change the directory for where my reports are stored to Telerik-Reports.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to change the directory for where my reports are stored to Telerik-Reports.
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to prevent users from creating new SQLDataSource components.
+			</code></pre>
+		</td>
+	</tr>
+</table>
+
+#### WRD Blazor & WRD HTML 5
+
+<table>
+	<tr>
+		<th>WRD Blazor</th>
+		<th>WRD HTML 5</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the size of the Web Report Designer widget?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the size of the Web Report Designer widget?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to dynamically set the initially loaded report in the Blazor Web Report Designer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to disable the onboarding experience in the Web Report Designer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to start the Blazor Web Report Designer in preview mode?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to dynamically set the initially loaded report in the Web Report Designer?
+			</code></pre>
+		</td>
+	</tr>
+</table>
+
 ## Reporting Service Prompts
 
 <table>

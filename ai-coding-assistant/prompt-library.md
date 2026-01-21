@@ -251,6 +251,62 @@ Quick Start Guide:
 	</tr> 	
 </table>
 
+#### MVC & WebForms Viewers
+
+<table>
+	<tr>
+		<th>MVC Viewer</th>
+		<th>WebForms Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Add report viewer
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use the report viewer without Reporting REST Service?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I set the report source of Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I localize the report viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to print the report using client-side code?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to hide the export button in the report viewer's toolbar.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to use dropdowns for report parameters?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
+			</code></pre>
+		</td>
+	</tr>	
+</table>
 
 ## Reporting Service Prompts
 

@@ -79,23 +79,23 @@ protected void Application_Start(object sender, EventArgs e)
 Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
 ````
 
-	For example, if you use a Web Report Viewer in .NET 10, you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
+	For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}), you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
 	
 	````CSharp
 // ...
-	// Enable the runtime licensing diagnostics
+	// Enable the runtime Telerik Licensing diagnostics
 	string logPath = "TelerikLicensing.log";
 	var writer = File.AppendText(logPath);
 	writer.AutoFlush = true;
 	Console.SetOut(writer);
 	Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
 	// ...
-	// Set up the Reporting REST Service
+	// Configure the Telerik Reporting REST Service with Minimal API
 	builder.Services.AddRazorPages()
 	                .AddNewtonsoftJson()
 	                .AddTelerikReporting("ReportingNet10", reportsPath);
 
-	// Collect the content of the aggregated licensing log
+	// Collect the content of the aggregated Telerik Licensing log
 	Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
 	// ...
 ````

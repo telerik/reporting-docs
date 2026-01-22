@@ -79,7 +79,27 @@ protected void Application_Start(object sender, EventArgs e)
 Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
 ````
 
-	For example, if you use a Web Report Viewer, you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+	For example, if you use a Web Report Viewer in .NET 10, you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
+	
+	````CSharp
+// ...
+	// Enable the runtime licensing diagnostics
+	string logPath = "TelerikLicensing.log";
+	var writer = File.AppendText(logPath);
+	writer.AutoFlush = true;
+	Console.SetOut(writer);
+	Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
+	// ...
+	// Set up the Reporting REST Service
+	builder.Services.AddRazorPages()
+	                .AddNewtonsoftJson()
+	                .AddTelerikReporting("ReportingNet10", reportsPath);
+
+	// Collect the content of the aggregated licensing log
+	Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
+	// ...
+````
+
 
 1. 	Read the Licensing validation logs in the file 'TelerikLicensing.log' in your application's main folder.
 

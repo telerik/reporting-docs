@@ -73,7 +73,15 @@ protected void Application_Start(object sender, EventArgs e)
 	The above code will add the Licensing validation logs to the file 'TelerikLicensing.log' in your application's main folder.
 
 1. (_optional_) If you make a call to the method `TelerikLicensing.Register()`, do this after enabling diagnostics with the above code line.
-1. Load a page with Telerik Report Viewer, then collect the content of the aggregated licensing log in Telerik.Licensing.TelerikLicensing.Diagnostics.
+1. Set up the Reporting Engine, then collect the content of the aggregated licensing log in `Telerik.Licensing.TelerikLicensing.Diagnostics`:
+
+	````CSharp
+Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
+````
+
+	For example, if you use a Web Report Viewer, you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+
+1. 	Read the Licensing validation logs in the file 'TelerikLicensing.log' in your application's main folder.
 
 ## See Also
 

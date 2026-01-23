@@ -41,7 +41,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Create a new report that will serve as the main report.
 
-1. Remove the default **page** header and page footer.
+1. Remove the default **page** header and **page** footer if not needed.
 
 1. Add a **report** header and a **report** footer.
 
@@ -122,3 +122,4 @@ Here are the steps to pass a title from the main report to a TextBox in the SubR
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Report Sections]({%slug user-guide/components/report-sections%})

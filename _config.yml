@@ -39,14 +39,20 @@ navigation:
     styling:
         position: 70
         title: "Styles & Appearance"
-    user-guide:
+    wrd-user-guide:
         position: 85
         title: "Web Report Designer - User Guide"
-    user-guide/components:
+    wrd-user-guide/components:
         position: 15
         title: "Report Components"
+    wrd-user-guide/components/subreport-item:
+        position: 3
+        title: "SubReport"
+    wrd-user-guide/customizing-report-items:
+        position: 15
+        title: "Customizing Report Items"
     styling/rendering-and-paging:
-        position: 8
+        position: 20
         title: "Rendering and Paging"
     styling/rendering-and-paging/design-considerations-for-report-rendering:
         position: 15

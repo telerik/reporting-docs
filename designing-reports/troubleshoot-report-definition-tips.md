@@ -59,6 +59,15 @@ In scenarios, where you need the same DataSource to be used in the Report and an
 	+ Use [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item%}) to ensure the Table displays relevant data for the group or parent detail section.
 	+ Use [Binding to the parent data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%}#binding-to-data-from-the-parent-data-item) in the Table's DataSource. In a Report Group this will ensure the data in the Table is relevant to the group. In Report detail section, the Binding will let the Table display only the current detail data record.
 
+### DataSource (SQL) Parameter Values are not Applied
+
+The DataSource components expose [DataSource parameters]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%}) that may be used to [filter the data server-side]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}#server-side-filtering). The values of DataSource parameters must be set to a valid [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}), including the available [Global Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}).
+
+For example, the [SqlDataSource paramters]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%}) can be used as SQL query parameters in _Select commands_ and _Stored Procedures_. In the most common scenario, the SqlDataSource parameters are linked with [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}):
+![Linking a SqlDataSource parameter with Report Parameter in the sample Report 'ProductCatalog.trdp' in the Standalone Report Designer.](images/link-sql-data-source-parameter-with-report-parameter.png)
+
+If the SQL query parameters are not passed correctly to the database, ensure the above link with a Report Parameter/Expression is correct.
+
 ### Expression Values
 
 Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) or [report section]({%slug report_structure_groups_sections%}#report-sections), ensuring the same [scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) to display the actually evaluated content in the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}), [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) or other [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}).

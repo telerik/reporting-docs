@@ -46,6 +46,8 @@ If you want to apply the same rule to the entire row with data, it requires you 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JM1OOUEqU6s?si=RyRjGmd39YLANaEd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+>note Some style properties are inherited (for example, font-related properties). These would be inherited by each item in the container (panel in this case). Others are not inherited (for example, borders). If you want to apply borders to multiple items, select each item and edit the conditional formatting for the respective item.
+
 ## Alternating Row Style
 
 To make it easier for users to distinguish between rows, especially in large tables or lists, applying alternating background colors (e.g., white and orange) improves readability. 
@@ -56,7 +58,11 @@ This is done by setting the following conditional formatting rule to one single 
 
 |Expression|Operator| Value|
 |----|----|----|
-|= RowNumber()%2|Equal|1|
+|= RowNumber() % 2|Equal|1|
+
+>note `%` (or `Mod`) performs the modulo operation and it means remainder after division. `RowNumber() % 2` returns:
+>* 0 for even rows (2, 4, 6, 8…): 8 % 4 → remainder is 0 (because 8 divides evenly by 4)
+>* 1 for odd rows (1, 3, 5, 7…): 5 % 2 → remainder is 1
  
 The following video shows how to achieve alternating row style which prevents misreading values by visually separating rows, which is critical for accuracy in data-heavy reports.
 

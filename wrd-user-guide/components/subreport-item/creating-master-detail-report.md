@@ -1,7 +1,7 @@
 ---
 title: Creating Master-Detail Reports
 page_title: Creating Master-Detail Reports
-description: Learn how to use SubReports in the Web Report Designer to embed reports within other reports for creating master-detail hierarchies and reusable report components.
+description: Learn how to use SubReports in the Web Report Designer to embed reports within other reports for creating master-detail with a pair of related plain data sets.
 slug: web-report-designer-user-guide-creating-master-detail-report
 tags: web, report, design, components, subreport, hierarchy, master, detail
 published: True

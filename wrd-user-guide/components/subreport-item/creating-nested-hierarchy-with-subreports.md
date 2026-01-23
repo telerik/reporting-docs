@@ -1,7 +1,7 @@
 ---
 title: Creating Nested Hierarchy
 page_title: Creating Nested Hierarchy
-description: Learn how to use SubReports in the Web Report Designer to create nested hierarchy.
+description: Learn how to use SubReports in the Web Report Designer to create master-detail with a single hierarchical (nested) data set.
 slug: wrd-user-guide-create-nested-hierarchy-with-subreport
 tags: web, report, design, components, subreport, hierarchy, master, detail, nested
 published: True

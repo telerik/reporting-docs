@@ -18,8 +18,6 @@ img[alt$="><"] {
 
 Instead of manually entering fixed values, you can use expressions to make your report items smarter and more dynamic. This means your reports can automatically adapt to changing data or conditions—saving you time and reducing errors. The expression editor helps you build these expressions easily, offering ready-to-use elements and clear descriptions so you can focus on getting the result you need without digging through documentation.
 
-With expressions, you can quickly build your pricing logic by combining database fields with custom values—just type your formula or double-click elements to add them.
-
 ![How to create an Expression Editor ><](images/CreatingExpressionEditorWRD.png)
 
 ## Designing Expressions with Built-in Elements
@@ -33,7 +31,7 @@ By using the predefined expression components in the Web Report Designers, you c
 | `Functions` | Predefined formulas that perform calculations or logic using values like fields, constants, or other functions to create dynamic expressions |
 | `Global Objects` | Built-in objects that provide access to report-wide information such as current user identity, execution time, page numbers, rendering format, and environment details |
 | `Operators` | Symbols used in expressions to perform calculations, comparisons, logic, or string operations—like '+', '=', 'AND', or 'LIKE'. |
-| `Report Parameters` | User-defined inputs that control report content, filtering, or layout—often used to pass values, filter data, or link related reports |
+| `Report Parameters` | Report-level inputs that control report content, filtering, or layout—often used to pass values, filter data, or link related reports |
 | `Reporting Constants` | Predefined values used to control report layout and styling—such as alignment, borders, image sizing, and page behavior |
 
 The following video shows how to build expressions in an easy way using the built-in elements: 
@@ -48,6 +46,20 @@ The following video shows how to build expressions in an easy way using the buil
 >````
 >
 >The result will be the values of the two fields being displayed one above the other in the corresponding report item.
+
+## Embedded Expressions
+
+Embedded expressions allow you to mix **static text** and **dynamic values** (expressions) inside the same string property. They are used when you want a textbox, HTML textbox, parameter label, or other string-capable property to display text that includes field values, parameter values, or expression results.
+
+An embedded expression is written by enclosing the expression in **curly braces { }** inside a string literal:
+
+`Hi Mr. {Fields.LastName}, {Fields.FirstName}!`
+
+At run-time, the reporting engine evaluates the expressions and constructs a final string:
+
+`Hi Mr. Smith, John!`
+
+>note If you need literal **{** or **}**, you must escape them with double braces: **{{** or **}}**.
 
 ## See Also
 

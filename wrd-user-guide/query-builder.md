@@ -23,7 +23,7 @@ The Web Report Designer lets you build SQL queries in two ways:
 * By using a visual tool (where you click and select options)
 * By using a text tool (where you type the query)
 
-A query is just a set of instructions that tells the system what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with the most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
+A query is just a set of instructions that specify what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with the most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
 
 ![The Graphical SQL Query Builder Form of the Web Report Designer ><](images/QueryBuilderWRD.png)
 

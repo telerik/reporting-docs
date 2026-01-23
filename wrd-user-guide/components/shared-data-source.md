@@ -67,6 +67,7 @@ In the Web Report Designer, both Data Source and Shared Data Source are used to 
 | Cannot be reused across other reports | Can be reused across multiple reports |
 | Changes to the data source affect only the report where it is defined | Changes to the shared data source affect all reports that reference it |
 | Suitable for simple or one-off reports | Ideal for centralized data management and large-scale reporting solutions |
+|Expose sensitive information (like connection strings)|Secure sensitive information (like connection strings)|
 
 ## See Also
 

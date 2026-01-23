@@ -57,11 +57,11 @@ To facilitate the easier styling of your report, the Properties Panel offers sev
 
 ![Indent Line Guides in Properties Area ><](images/wrd-properties-area-indent-line-guides.png)  
 
-* **Search Box**: Use the Global Search bar at the top to instantly locate any property or editor. No more scrolling through long lists!
+* **Search Box**: Use the Global Search bar at the top to instantly locate any property or editor.
 
 ![Properties Area Global Search ><](images/wrd-properties-area-global-search.gif)   
 
-* **Reset Value**: If you have made a change you want to undo, note that each editable property has a `Reset button` next to it. Just click it to revert that setting to its default - without affecting anything else.
+* **Reset Value**: If you have made a change you want to undo, note that each editable property has a `Reset button` next to it. Click it to revert that setting to its default - without affecting anything else.
 
 ![Properties Area Reset Button ><](images/wrd-properties-area-reset-button.gif)    
 

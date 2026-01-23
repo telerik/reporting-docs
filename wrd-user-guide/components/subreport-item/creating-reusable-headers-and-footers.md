@@ -1,6 +1,6 @@
 ---
-title: Creating Reusable Headers and Footers
-page_title: Creating Reusable Headers and Footers
+title: Creating Reusable Report Headers and Footers
+page_title: Creating Reusable Report Headers and Footers
 description: Learn how to use SubReports in the Web Report Designer to create reusable headers and footers.
 slug: creating-reusable-headers-and-footers
 tags: web, report, design, components, subreport, header, footer, reuse
@@ -9,9 +9,9 @@ reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 4
 ---
 
-# Creating Reusable Headers and Footers with SubReport
+# Creating Reusable Report Headers and Footers with SubReport
 
-The SubReport item is perfect for creating reusable report components that can be embedded in larger reports later.
+The SubReport item is perfect for creating reusable report components that can be embedded in larger reports later. It can be useful for creating, for example, **report** or **group** headers and footers.
 
 Here's a step-by-step tutorial for creating a reusable part of a report (for example, header and footer) using a SubReport:
 
@@ -21,7 +21,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Create a new report (for example, `HeaderReport.trdp`).
 
-1. Remove the default page header and footer.
+1. Remove the default **page** header and footer.
 
 1. Add elements like company logos and report titles in the Detail section.
 
@@ -31,7 +31,7 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Create a new report (for example, `FooterReport.trdp`).
 
-1. Remove the default page header and footer.
+1. Remove the default **page** header and footer.
 
 1. Add elements like information text or any other meaningful content to the Detail section of a report.
 
@@ -41,9 +41,9 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 
 1. Create a new report that will serve as the main report.
 
-1. Remove the default page header and page footer.
+1. Remove the default **page** header and page footer.
 
-1. Add a report header and a report footer.
+1. Add a **report** header and a **report** footer.
 
 1. Select the Report Header section and add a SubReport item.
 
@@ -62,6 +62,61 @@ Here's a step-by-step tutorial for creating a reusable part of a report (for exa
 1. Preview the report which contains reusable header and footer subreports.
 
 Thus, you can create separate reports that serve as standalone report parts and can be reused in multiple reports according to the specific requirements. 
+
+## Passing Data to SubReports
+
+Instead of using fixed data in the report headers/footers, it is possible to pass a title (or any text) from a main report to a TextBox in a SubReport, using the parameter‑passing mechanism. The above example can be further extended by replacing the "Telerik Reporting" text in the HeaderReport.trdp with a value coming from the main report. 
+
+Here are the steps to pass a title from the main report to a TextBox in the SubReport:
+
+1. Define a parameter in the SubReport
+
+    1.1. Open the SubReport report (HeaderReport.trdp) in the Report Designer.
+
+    1.2. Go to Report >> Data >> Report Parameters.
+
+    <img style="border: 1px solid gray;" src="images/subreport-title-report-parameter.png" /> 
+
+    1.3. Add a new parameter:
+
+    * Name: "title_parameter"
+
+    * Type: String
+
+    * Allow null: Yes (optional)
+
+    <img style="border: 1px solid gray;" src="images/add-title-report-parameter.png" /> 
+
+2. Bind a TextBox in the SubReport to that parameter
+
+    2.1. Select the TextBox inside the SubReport report where the title should appear.
+
+    2.2. Set its Value to: 
+
+    ```
+    =Parameters.title_parameter.Value
+    ```
+    Now, the TextBox displays whatever the main report passes in.
+
+3. Map the main report value to the SubReport parameter
+
+    3.1. Open the main report and select the SubReport header item.
+
+    3.2. Go to Inner Report and add a new parameter:
+
+    * Name: "title_parameter"
+
+    * Value: "Your custom title"
+
+    <img style="border: 1px solid gray;" src="images/add-title-report-paramete-in-main-report.png" />  
+
+
+    <img style="border: 1px solid gray;" src="images/custom-title.png" />  
+
+4. Preview the report with your custom title:
+
+    <img style="border: 1px solid gray;" src="images/preview-custom-title.png" />      
+
 
 ## See Also
 

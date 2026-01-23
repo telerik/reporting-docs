@@ -41,29 +41,29 @@ Ensure you have assigned the `DataSource` property of your Report or other [data
 
 Alternatively, you may use [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `DataSource` property to display the data only at runtime. With this approach, the Binding will override the `DataSource` property Value at runtime.
 
-When displaying data in a TextBox or other report item, ensure it is in the correct [data scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}). This means that its parent data item should have as DataSource the corresponding source of data, for example, [DataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
+When displaying data in a TextBox or other report item, ensure it is in the correct [data scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}). This means that its parent data item should have as a DataSource the corresponding source of data, for example, [DataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
 
 ### Data is Multiplying at Runtime
 
-The problem may occur if you have set the `DataSource` property of the [Report item]({%slug report_item%}) an inner data item (e.g., Table) in its detail section to the same value, for example, to the same DataSource component.
+The problem may occur if you have set the `DataSource` property of the [Report item]({%slug report_item%}), an inner data item (e.g., Table) in its detail section to the same value, for example, to the same DataSource component.
 
 The reason for the issue is that the detail section of the data items (e.g., the Report) is rendered as many times as there are records in its data source. Therefore, when you place a Table in the Report detail section, it gets rendered as many times as the Report DataSource records. When the Table and the Report have the same DataSource, the Table will be rendered multiple times.
 
 For fixing the problem, remove/reset the DataSource property value of the Report (parent data item).
 
-In scenarios, where you need the same DataSource to be used in the Report and an inner data item (e.g., Table), consider the following approaches to avoid data multiplication:
+In scenarios where you need the same DataSource to be used in the Report and an inner data item (e.g., Table), consider the following approaches to avoid data multiplication:
 
 * Place the inner data item (Table) in a [Report Header/Footer]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) section. These sections are generated once per report.
 * [Introduce a Report Group]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and place the inner data item (Table) in the [Group Header or Footer section](({%slug report_structure_groups_sections%}#group-header). These sections are generated once per group. Therefore, the Table will be displayed once per group.
 * Limit inner data item (Table) data:
 	+ Use [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item%}) to ensure the Table displays relevant data for the group or parent detail section.
-	+ Use [Binding to the parent data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%}#binding-to-data-from-the-parent-data-item) in the Table's DataSource. In a Report Group this will ensure the data in the Table is relevant to the group. In Report detail section, the Binding will let the Table display only the current detail data record.
+	+ Use [Binding to the parent data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%}#binding-to-data-from-the-parent-data-item) in the Table's DataSource. In a Report Group, this will ensure the data in the Table is relevant to the group. In the Report detail section, the Binding will let the Table display only the current detail data record.
 
 ### DataSource (SQL) Parameter Values are not Applied
 
 The DataSource components expose [DataSource parameters]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%}) that may be used to [filter the data server-side]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}#server-side-filtering). The values of DataSource parameters must be set to a valid [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}), including the available [Global Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}).
 
-For example, the [SqlDataSource paramters]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%}) can be used as SQL query parameters in _Select commands_ and _Stored Procedures_. In the most common scenario, the SqlDataSource parameters are linked with [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}):
+For example, the [SqlDataSource parameters]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%}) can be used as SQL query parameters in _Select commands_ and _Stored Procedures_. In the most common scenario, the SqlDataSource parameters are linked with [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}):
 ![Linking a SqlDataSource parameter with Report Parameter in the sample Report 'ProductCatalog.trdp' in the Standalone Report Designer.](images/link-sql-data-source-parameter-with-report-parameter.png)
 
 If the SQL query parameters are not passed correctly to the database, ensure the above link with a Report Parameter/Expression is correct.
@@ -104,3 +104,4 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
+

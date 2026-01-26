@@ -365,12 +365,12 @@ Quick Start Guide:
 	</tr>	
 </table>
 
-#### WRD API - NET 462 & WRD API - .NET 8
+#### WRD API - .NET Framework & WRD API - .NET
 
 <table>
 	<tr>
-		<th>WRD API - NET 462</th>
-		<th>WRD API - .NET 8</th>
+		<th>WRD API - .NET Framework</th>
+		<th>WRD API - .NET</th>
 	</tr>
 	<tr>  
 		<td>

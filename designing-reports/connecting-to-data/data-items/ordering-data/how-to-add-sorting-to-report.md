@@ -12,7 +12,7 @@ reportingArea: General
 
 # Adding Sortings to Report
 
-1. Click the Report selector button located in the upper left hand of the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
+1. Click the Report selector button located in the upper left-hand of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 1. Click the Sorting ellipsis.
 1. For each sort expression, follow these steps:
 
@@ -24,8 +24,8 @@ reportingArea: General
 
 ## Adding sorting to Report Group using Report Designer
 
-1. Open the[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
-1. Click the Report selector button located in the upper left corner of the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
+1. Open the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
+1. Click the Report selector button located in the upper left corner of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 1. Choose a Report Group and click its Sorting ellipsis.
 1. For each sort expression, follow these steps:
 

@@ -31,9 +31,9 @@ This article describes the steps required to host the **Telerik Reporting Servic
    - `Telerik.Reporting.XpsRendering.dll` - required if you need to export in XPS format;
    - `Telerik.Reporting.Adomd.dll` - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports. The assembly has dependencies on _Microsoft.AnalysisServices.AdomdClient.dll_ v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
 
-1. Create a new class which derives from [ReportsHostBase](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase). It could be called _ReportsHost_ for example:
+1. Create a new class which derives from`ReportsHostBas`. It could be called _ReportsHost_ for example:
 
-   - Set the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property. The **ReportSourceResolver** and **Storage** configuration settings are required. See the [IReportServiceConfiguration](/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details.
+   - Set the `ReportServiceConfiguration` property. The **ReportSourceResolver** and **Storage** configuration settings are required. See the [IReportServiceConfiguration](/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details.
 
      Here is a sample implementation with the setup:
 
@@ -83,7 +83,7 @@ This article describes the steps required to host the **Telerik Reporting Servic
 
    - Alternatively, you may **configure the Telerik Reporting REST service from the application configuration file**.
 
-     If you prefer this approach, set the value of the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property to an instance of the [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
+     If you prefer this approach, set the value of the `ReportServiceConfiguration` property to an instance of the [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
 
      ```C#
      public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase

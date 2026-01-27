@@ -32,65 +32,63 @@ Sometimes it is more convenient to refer the Themes for the WPF Report Viewer fr
 
 ## Solution
 
-Add a folder (e.g. __Themes__) in the WPF Viewer project and copy the XAML files with the Themes there. The themes are distributed with Telerik Reporting and can be found in `{Telerik Reporting installation folder}\Wpf\Themes`, for example `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Wpf\Themes`.
+Add a folder (e.g. **Themes**) in the WPF Viewer project and copy the XAML files with the Themes there. The themes are distributed with Telerik Reporting and can be found in `{Telerik Reporting installation folder}\Wpf\Themes`, for example `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Wpf\Themes`.
 
 The themes can be referred directly in the `App.xaml` file, or alternatively in the _code behind_.
 
 1. In the `App.xaml` instead of content of the `<ResourceDictionary.MergedDictionaries>` element from step 4 in the [WPF Report Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}) article use the following (the example uses the _Material_ theme):
 
-	````XML
-<Application.Resources >
-	//....
-	<ResourceDictionary>
-		<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="Themes/Material/System.Windows.xaml" />
-		<ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.xaml" />
-		<ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Input.xaml" />
-		<ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Navigation.xaml" />
-		<ResourceDictionary Source="Themes/Material/Telerik.ReportViewer.Wpf.xaml" />
-		</ResourceDictionary.MergedDictionaries>
+   ```XML
+   <Application.Resources >
+   //....
+   <ResourceDictionary>
+   	<ResourceDictionary.MergedDictionaries>
+   	<ResourceDictionary Source="Themes/Material/System.Windows.xaml" />
+   	<ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.xaml" />
+   	<ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Input.xaml" />
+   	<ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Navigation.xaml" />
+   	<ResourceDictionary Source="Themes/Material/Telerik.ReportViewer.Wpf.xaml" />
+   	</ResourceDictionary.MergedDictionaries>
 
-		// YOU MAY ADD OTHER STYLES IN THE <ResourceDictionary> TAG :
-		//....
-	</ResourceDictionary>
-	//....
-	</Application.Resources>
-````
-
+   	// YOU MAY ADD OTHER STYLES IN THE <ResourceDictionary> TAG :
+   	//....
+   </ResourceDictionary>
+   //....
+   </Application.Resources>
+   ```
 
 1. In the code behind use the following code that first clears the already merged dictionaries (if any), and then adds the new ones:
 
-	````CSharp
-public partial class ReportViewerWindow1 : Window
-	{
-	static readonly string[] dictionaries = new[]
-			{
-				"Themes/{0}/System.Windows.xaml",
-				"Themes/{0}/Telerik.Windows.Controls.xaml",
-				"Themes/{0}/Telerik.Windows.Controls.Input.xaml",
-				"Themes/{0}/Telerik.Windows.Controls.Navigation.xaml",
-				"Themes/{0}/Telerik.ReportViewer.Wpf.xaml"
-			};
+   ```C#
+   public partial class ReportViewerWindow1 : Window
+   {
+   static readonly string[] dictionaries = new[]
+   		{
+   			"Themes/{0}/System.Windows.xaml",
+   			"Themes/{0}/Telerik.Windows.Controls.xaml",
+   			"Themes/{0}/Telerik.Windows.Controls.Input.xaml",
+   			"Themes/{0}/Telerik.Windows.Controls.Navigation.xaml",
+   			"Themes/{0}/Telerik.ReportViewer.Wpf.xaml"
+   		};
 
-		public ReportViewerWindow1()
-		{
-			InitializeComponent();
-			MergeResourceDictionaries("Material"); // Set the required theme name here
-		}
+   	public ReportViewerWindow1()
+   	{
+   		InitializeComponent();
+   		MergeResourceDictionaries("Material"); // Set the required theme name here
+   	}
 
-		static void MergeResourceDictionaries(string theme)
-		{
-			var mergedDictionaries = Application.Current.Resources.MergedDictionaries;
-			mergedDictionaries.Clear();
-			foreach (var dictionary in dictionaries)
-			{
-				var uri = string.Format(dictionary, theme);
-				mergedDictionaries.Add(new ResourceDictionary()
-				{
-					Source = new Uri(uri, UriKind.RelativeOrAbsolute)
-				});
-			}
-		}
-	}
-````
-
+   	static void MergeResourceDictionaries(string theme)
+   	{
+   		var mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+   		mergedDictionaries.Clear();
+   		foreach (var dictionary in dictionaries)
+   		{
+   			var uri = string.Format(dictionary, theme);
+   			mergedDictionaries.Add(new ResourceDictionary()
+   			{
+   				Source = new Uri(uri, UriKind.RelativeOrAbsolute)
+   			});
+   		}
+   	}
+   }
+   ```

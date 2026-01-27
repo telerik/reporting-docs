@@ -8,6 +8,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -19,7 +20,7 @@ res_type: kb
 
 ## Description
 
-This article lists the required steps for printing a report directly on the client-side without displaying it in a report viewer.  
+This article lists the required steps for printing a report directly on the client-side without displaying it in a report viewer.
 
 The existing print functionality in web viewers is based on the following:
 
@@ -28,7 +29,7 @@ The existing print functionality in web viewers is based on the following:
 1. The PDF file is sent to the client in the browser in a hidden frame, where the browser must have properly configured and enabled PDF plugin to load the PDF file in the browser window;
 1. Once the PDF is loaded in the browser, hidden from the user, the PDF plugin used as a PDF reader shows its Print dialog.
 
-In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions). For more details, please check [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).
+In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions).
 
 To export the report in a PDF file, you can use a [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) in code instead of a viewer.
 
@@ -38,56 +39,54 @@ Here is sample approach you can use to achieve the above in an ASP.NET Core appl
 
 1. Creating a controller endpoint that returns the report exported in PDF format.
 
-	````C#
-public class HomeController : Controller
-	{
-		private IWebHostEnvironment _environment;
-	
-		public HomeController(IWebHostEnvironment environment)
-		{
-			_environment = environment;
-		}
-	
-		public IActionResult GenerateReportPDF(string reportName)
-		{
-			ReportProcessor reportProcessor = new ReportProcessor();
-			Telerik.Reporting.UriReportSource uriReportSource = new Telerik.Reporting.UriReportSource();
-			uriReportSource.Uri = Path.Combine(_environment.ContentRootPath, "Reports", reportName);
-			RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
-			
-			return File(result.DocumentBytes, result.MimeType);
-		}
-	}
-````
+   ```C#
+   public class HomeController : Controller
+   {
+   	private IWebHostEnvironment _environment;
 
+   	public HomeController(IWebHostEnvironment environment)
+   	{
+   		_environment = environment;
+   	}
+
+   	public IActionResult GenerateReportPDF(string reportName)
+   	{
+   		ReportProcessor reportProcessor = new ReportProcessor();
+   		Telerik.Reporting.UriReportSource uriReportSource = new Telerik.Reporting.UriReportSource();
+   		uriReportSource.Uri = Path.Combine(_environment.ContentRootPath, "Reports", reportName);
+   		RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
+
+   		return File(result.DocumentBytes, result.MimeType);
+   	}
+   }
+   ```
 
 1. Loading the generated PDF file within a hidden iframe and opening the browser's print dialog.
 
-	````JavaScript
-function printReport() {
-		fetch("/Home/GenerateReportPDF?reportName=Barcodes Report.trdp")
-			.then(res => {
-				if (res.status === 200) {
-					return res.blob();
-				} else {
-					console.log("Could not retrieve PDF document.");
-				}
-			})
-			.then(blob => {
-				let objectURL = URL.createObjectURL(blob);
-				
-				var iframe = document.createElement("iframe");
-				iframe.style.display = "none";
-				iframe.src = objectURL;
-				iframe.onload = function () {
-					iframe.contentWindow.print();
-				}
-				
-				document.body.appendChild(iframe);
-			});
-	}
-````
+   ```JavaScript
+   function printReport() {
+   	fetch("/Home/GenerateReportPDF?reportName=Barcodes Report.trdp")
+   		.then(res => {
+   			if (res.status === 200) {
+   				return res.blob();
+   			} else {
+   				console.log("Could not retrieve PDF document.");
+   			}
+   		})
+   		.then(blob => {
+   			let objectURL = URL.createObjectURL(blob);
 
+   			var iframe = document.createElement("iframe");
+   			iframe.style.display = "none";
+   			iframe.src = objectURL;
+   			iframe.onload = function () {
+   				iframe.contentWindow.print();
+   			}
+
+   			document.body.appendChild(iframe);
+   		});
+   }
+   ```
 
 You can download the [ASP.NET Core Client Print Example](https://github.com/telerik/reporting-samples/tree/master/PrintReportDirectlyAtClientSide) to see the full solution.
 
@@ -101,8 +100,8 @@ The result PDF file rendered on the server is returned with **Content-Dispositio
 
 ## See Also
 
-* [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
-* [ASP.NET Core Client Print Example](https://github.com/telerik/reporting-samples/tree/master/PrintReportDirectlyAtClientSide)
-* [MVC WebForms Client Print Example](resources/mvc-webforms-clientprint.zip)
-* [VB Client Print Example](resources/clientprintingvb.zip)
-* [ReportProcessor](/api/telerik.reporting.processing.reportprocessor)
+- [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
+- [ASP.NET Core Client Print Example](https://github.com/telerik/reporting-samples/tree/master/PrintReportDirectlyAtClientSide)
+- [MVC WebForms Client Print Example](resources/mvc-webforms-clientprint.zip)
+- [VB Client Print Example](resources/clientprintingvb.zip)
+- [ReportProcessor](/api/telerik.reporting.processing.reportprocessor)

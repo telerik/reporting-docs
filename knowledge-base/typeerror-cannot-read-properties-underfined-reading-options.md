@@ -26,7 +26,11 @@ res_type: kb
 
 ## Description
 
-After updating Telerik Reporting from version `19.0.25.313` to `19.1.25.521`, the export functionality (for example, downloading to Excel) no longer works. The button fails to initiate the download, and there is a `TypeError: Cannot read properties of undefined (reading 'options')` error in the browser console. The initial REST service responses are successful, suggesting a frontend issue.
+After updating Telerik Reporting from version `19.0.25.313` to `19.1.25.521`, the export functionality (for example, downloading to Excel) no longer works.
+
+The button fails to initiate the download, and there is a `TypeError: Cannot read properties of undefined (reading 'options')` error in the browser console.
+
+The initial REST service responses are successful, suggesting a frontend issue.
 
 ## Cause
 
@@ -39,10 +43,9 @@ The issue likely occurs due to an incompatibility between the report viewer and 
 1. Open the browser console on the page containing the report viewer.
 1. Execute the following command:
 
-	````javascript
-kendo.version
-````
-
+   ```JavaScript
+   kendo.version
+   ```
 
 ### Step 2: Determine Required Kendo UI Version
 
@@ -61,12 +64,16 @@ Update your Kendo UI for jQuery reference to the compatible version based on the
 
 If your page does not use other Kendo UI components, replace the Kendo UI script reference with the subset provided by the Reporting REST service:
 
-````html
-	<script src="api/reports/resources/js/telerikReportViewer-kendo"></script>
-````
+```html
+<script src="api/reports/resources/js/telerikReportViewer-kendo"></script>
+```
 
->note This approach ensures compatibility when the report viewer and Reporting REST service versions match.
+> note This approach ensures compatibility when the report viewer and Reporting REST service versions match.
 
 ## Further Steps
 
-If you continue to experience issues after verifying the Kendo UI version, consider [capturing a HAR file](https://support.google.com/admanager/answer/10358597?hl=en#capture-your-http-network-session) using your browser's DevTools. Then, attach this file to a support ticket via the [Telerik Reporting support system](https://www.telerik.com/account/support-center/contact-us/technical-support). This will help the support team review the JavaScript files requested by your application and provide more targeted assistance.
+If you continue to experience issues after verifying the Kendo UI version, consider [capturing a HAR file](https://support.google.com/admanager/answer/10358597?hl=en#capture-your-http-network-session) using your browser's DevTools.
+
+Then, attach this file to a support ticket via the [Telerik Reporting support system](https://www.telerik.com/account/support-center/contact-us/technical-support).
+
+This will help the support team review the JavaScript files requested by your application and provide more targeted assistance.

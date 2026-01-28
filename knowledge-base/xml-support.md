@@ -1,12 +1,10 @@
 ---
-title: Does Telerik Reporting support XML as a datasource?
-description: Does Telerik Reporting support XML as a datasource?
+title: Does Telerik Reporting support XML as a DataSource?
+description: "Learn about whether Telerik Reporting supports using XML data in reports out-of-the-box, and what alternatives are available in case it is not officially supported."
 type: troubleshooting
-page_title: Does Telerik Reporting support XML as a datasource?
+page_title: Does Telerik Reporting support XML as a DataSource?
 slug: xml-support
-position: 
-tags: 
-ticketid: 
+tags: telerik, reporting, xml, data, source
 res_type: kb
 ---
 

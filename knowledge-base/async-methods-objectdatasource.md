@@ -45,20 +45,16 @@ public class MyData
         return GetDataAsync().GetAwaiter().GetResult();
     }
 
-    static async Task<List<MyData>> GetDataAsync()
+    static Task<List<MyData>> GetDataAsync()
     {
-        List<MyData> resultList = null;
-        await Task.Run(() =>
+        var resultList = new List<MyData>
         {
-            resultList = new List<MyData>()
-            {
-                new MyData() { Id = 1, Name = "One" },
-                new MyData() { Id = 2, Name = "Two" },
-                new MyData() { Id = 3, Name = "Three" },
-            };
-        });
+            new MyData { Id = 1, Name = "One" },
+            new MyData { Id = 2, Name = "Two" },
+            new MyData { Id = 3, Name = "Three" },
+        };
 
-        return resultList;
+        return Task.FromResult(resultList);
     }
 }
 ````

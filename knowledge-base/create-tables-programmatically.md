@@ -132,7 +132,7 @@ groupedTableRowCell.Value = "= Fields.ModifiedDate";
 groupedTableHeader.Name = "groupedTableHeader";
 groupedTableHeader.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(0.2D));
 groupedTableHeader.StyleName = "Normal.TableHeader";
-groupedTableHeader.Value = "Test";
+groupedTableHeader.Value = "Grouped Mod Date";
 
  // add a parent row group based on a field
 Telerik.Reporting.TableGroup parentRowGroup = new Telerik.Reporting.TableGroup();

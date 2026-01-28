@@ -42,7 +42,7 @@ public class MyData
 
     public static List<MyData> GetData()
     {
-        return GetDataAsync().Result;
+        return GetDataAsync().GetAwaiter().GetResult();
     }
 
     static async Task<List<MyData>> GetDataAsync()

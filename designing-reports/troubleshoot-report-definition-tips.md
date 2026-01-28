@@ -13,7 +13,7 @@ reportingArea: General
 
 ## Fixing Report Designer Warnings
 
-Ensure there are no yellow triangle warnings shown in design time when editing your report definitions in the report designers. Hover the corresponding warning triangle to check the exact problem described in the tooltip.
+Ensure there are no yellow triangle warnings shown in design time when editing your [report definitions]({%slug on-telerik-reporting%}#report-definition) in the report designers. Hover the corresponding warning triangle to check the exact problem described in the tooltip.
 
 For example, the following image shows the tooltip of the warning stating that "Report is too wide to horizontally fit on a single page.":
 ![Warning triangle in the Standalone Report Designer with the tooltip explaining that the report is too wide.](images/warning-triangle-standalone-designer.png)
@@ -49,7 +49,7 @@ The problem may occur if you have set the `DataSource` property of the [Report i
 
 The reason for the issue is that the detail section of the data items (e.g., the Report) is rendered as many times as there are records in its data source. Therefore, when you place a Table in the Report detail section, it gets rendered as many times as the Report DataSource records. When the Table and the Report have the same DataSource, the Table will be rendered multiple times.
 
-For fixing the problem, remove/reset the DataSource property value of the Report (parent data item).
+To fix the problem, remove/reset the DataSource property value of the Report (parent data item).
 
 In scenarios where you need the same DataSource to be used in the Report and an inner data item (e.g., Table), consider the following approaches to avoid data multiplication:
 
@@ -86,13 +86,23 @@ Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/design
 
 ### Report Items Order in Accessibility
 
-When enabling the [Accessibility feature]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) of your reports, the items will be read according to their logical item order. This order may be seen and changed in the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%})] in the [report designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
+When enabling the [Accessibility feature]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) of your reports, the items will be read according to their logical item order. This order may be seen and changed in the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) in the [report designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
 
 By default, the [Report Items]({%slug telerikreporting/designing-reports/report-structure/overview%}) appear in the Report Explorer in the order they have been added to the report definition. Therefore, if you place an item added later at the top of the report, it may be shown in the Report Explorer before items appearing lower in the report section, despite being added before. 
 
 Consider reordering the items the way they must appear when using Accessibility by dragging the items in the Report Explorer:
 
 ![Reordering items in the Report Explorer of the Standalone Report Designer.](images/reorder-items-in-report-explorer-standalone-designer.gif)
+
+## Troubleshoot Report Definitions Created or Modified Dynamically with Code
+
+If you manipulate or create a report definition with code before rendering the report, the result may differ from the expected layout.
+
+To investigate, consider saving the final report template with code to a `TRDX` or `TRDP` file before passing it to the _ReportProcessor_ if you render programmatically, or before returning it from the _Custom ReportSource Resolver_ if you use a _Reporting REST Service_. Use the serialization functionality Telerik Reporting provides out-of-the-box:
+* Produce `TRDX` report from the report instance as explained in the article section [Serializing and Deserializing Report Definitions: Serialize to XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#serialize-to-xml)
+* Generate `TRDP` file from the report instance: [Packaging and Unpackaging Report Definitions: Packaging CLR report definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}#packaging-clr-report-definition)
+
+Check the generated TRDX/TRDP file in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) for the cause of the unexpected appearance.
 
 ## Type Reports in Visual Studio Report Designer
 
@@ -104,4 +114,5 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
+
 

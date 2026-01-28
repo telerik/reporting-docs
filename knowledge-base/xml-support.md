@@ -97,7 +97,7 @@ The XML data above can be integrated in the report by programmatically reading i
 
 1. [Create a .NET 10 Class Library](https://learn.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio) where the XML data is read programmatically with the [DataSet.ReadXml](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset.readxml) method. The method that reads the data and returns a `DataSet` from it should be `public`, so that it can be invoked from within the reporting engine.
 
-	For example, the following class contains methods that will read the XML and XSD files from a given path, and return a `DataSet` object.
+	For example, the following class contains methods that will read the XML and XSD files from a given path and return a `DataSet` object.
 
 	````C#
 using System;
@@ -194,9 +194,9 @@ namespace XmlToDataSet
 1. Build the project, and then reference its assembly in the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net). Follow [Update the Designer Configuration File through the UI]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}#update-the-designer-configuration-file-through-the-ui) for instructions on how to reference the assembly.
 1. Start the [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%}) and select one of three methods to invoke and pull the data. If the wizard finishes successfully, you will be able to continue designing the report with the XML data being parsed programmatically.
 
-	![Choosing a Data Member in the ObjectDataSource Wizard]()
+	![Choosing a Data Member in the ObjectDataSource Wizard](./kb-xml-reader-choose-data-member.png)
 
- 	![Configuring Data Source Parameters in the ObjectDataSource Wizard]()
+ 	![Configuring Data Source Parameters in the ObjectDataSource Wizard](./kb-xml-reader-configure-parameters.png)
 
 
 ## See Also

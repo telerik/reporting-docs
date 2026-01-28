@@ -141,15 +141,15 @@ parentRowGroup.ChildGroups.Add(detailsGroup);
 // add the detail group as a child of the parent group
 parentRowGroup.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.ModifiedDate"));
 parentRowGroup.Name = "modifiedDate";
-parentRowGroup.ReportItem = textBox1;
+parentRowGroup.ReportItem = groupedTableRowCell;
 parentRowGroup.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.ModifiedDate", Telerik.Reporting.SortDirection.Asc));
 
 table.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
-                textBox1,
-                textBox2
+                groupedTableRowCell,
+                groupedTableHeader
             });
 
-table.Corner.SetCellContent(0, 0, textBox2);
+table.Corner.SetCellContent(0, 0, groupedTableHeader);
 table.RowGroups.Add(parentRowGroup);
 table.Body.Rows.Add(new Telerik.Reporting.TableBodyRow(Telerik.Reporting.Drawing.Unit.Cm(0.609D)));
 ````

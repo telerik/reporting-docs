@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-When configuring an [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) with an async method that returns a `Task<T>`, the ObjectDataSource wizard displays `Task` members (such as `AsyncState`, `CreationOptions`, `IsCanceled`, etc.) instead of the actual data properties.
+When configuring an [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) with an **async** method that returns a `Task<T>`, the ObjectDataSource wizard displays `Task` members (such as `AsyncState`, `CreationOptions`, `IsCanceled`, etc.) instead of the actual data properties.
 
 ## Cause
 
@@ -59,8 +59,10 @@ public class MyData
 }
 ````
 
-In the ObjectDataSource configuration, use the synchronous `GetData()` method instead of `GetDataAsync()`.
+In the ObjectDataSource configuration or [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%}), use the synchronous `GetData()` method instead of `GetDataAsync()`.
 
 ## See Also
 
+* [Update the Designer Configuration File through the UI]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}#update-the-designer-configuration-file-through-the-ui)
+* [Connecting the ObjectDataSource Component to a Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
 * [ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})

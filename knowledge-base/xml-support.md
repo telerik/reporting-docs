@@ -1,8 +1,8 @@
 ---
-title: Does Telerik Reporting support XML as a DataSource?
+title: How to Use XML as a DataSource in Telerik Reporting
 description: "Learn about whether Telerik Reporting supports using XML data in reports out-of-the-box, and what alternatives are available in case it is not officially supported."
 type: troubleshooting
-page_title: Does Telerik Reporting support XML as a DataSource?
+page_title: How to Use XML as a DataSource in Telerik Reporting
 slug: xml-support
 tags: telerik, reporting, xml, data, source
 res_type: kb
@@ -59,9 +59,9 @@ Let's imagine that you have a **BooksData.xml** file with the following content:
 </BooksDataSet>
 ````
 
-The XML data above can be integrated in the report by programmatically reading it and creating a [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset) object from it, which can be used via the ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}). To implement such a solution, you may follow the steps below:
+The XML data above can be integrated in the report by programmatically reading it and creating a [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset) object from it, which can be used via the [ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}). To implement such a solution, you may follow the steps below:
 
-1. (Recommended) Create a *typed DataSet*(in other wods -  `.xsd` file) from your XML. This is recommended to do because, otherwise, all of the fields in the data will be treated as **strings**, and conversion functions would need to be used in the report(s). For example, the following `Books.xsd` file can be created for the XML data above:
+1. (Recommended) Create a *typed DataSet*(in other words, an `.xsd` file) from your XML. This is recommended to do because, otherwise, all of the fields in the data will be treated as **strings**, and conversion functions would need to be used in the report(s). For example, the following `Books.xsd` file can be created for the XML data above:
 
 	````xml
 <xs:schema id="BooksDataSet"

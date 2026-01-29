@@ -187,7 +187,7 @@ Me.Barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 
 ## See Also
 
-* [1D Barcode Overview]
+* [1D Barcode Overview]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types%})
 * [(API) Telerik.Reporting.Barcode](/api/Telerik.Reporting.Barcode)
 * [(API) Telerik.Reporting.Barcodes.Encoder1D](/api/Telerik.Reporting.Barcodes.Encoder1D)
 * [(API) ShowText](/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)

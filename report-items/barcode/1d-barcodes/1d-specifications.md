@@ -37,7 +37,7 @@ Code 128 is a high-density barcode symbology that supports three character subse
 Code 128 uses three subsets optimized for different types of data:
 
 | Subset | Characters Supported | Best For |
-|--------|---------------------|----------|
+|-------- |---------------------|----------|
 | **Code A** | Uppercase letters (A-Z), digits (0-9), punctuation, ASCII control characters (NUL-US) | Uppercase text, control characters |
 | **Code B** | Uppercase letters (A-Z), lowercase letters (a-z), digits (0-9), punctuation | Mixed-case text |
 | **Code C** | Numeric pairs only (00-99) | Long numeric sequences (encodes 2 digits per symbol) |

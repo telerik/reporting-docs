@@ -1,6 +1,6 @@
 ---
-title: Method 'CLIMessage' in type 'RuntimeInvalidLicenseStatus' does not have an implementation
-description: "Resolving the "Method 'CLIMessage' in type 'RuntimeInvalidLicenseStatus' does not have an implementation" error when using Telerik Reporting and Telerik.Licensing."
+title: Method CLIMessage in type RuntimeInvalidLicenseStatus does not have an implementation
+description: "Resolving the Method 'CLIMessage' in type 'RuntimeInvalidLicenseStatus' does not have an implementation error when using Telerik Reporting and Telerik.Licensing."
 type: troubleshooting
 page_title: Resolving TypeLoadException in Telerik Reporting Related to Telerik.Licensing
 meta_title: Resolving TypeLoadException in Telerik Reporting Related to Telerik.Licensing

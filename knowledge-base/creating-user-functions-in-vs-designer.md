@@ -43,9 +43,7 @@ public partial class Report1 : Telerik.Reporting.Report
 }
 ````
 
-It can be invoked from an expression by its name, specifying the necessary parameters in the braces, e.g., setting the **Value** of a **TextBox** to:
-
-`= Greet("Dess")`
+It can be invoked from an expression by its name, specifying the necessary parameters in the braces, e.g., setting the **Value** of a **TextBox** to `= Greet("Dess")`
 
 ![User Function in Report class](images/user-function-in-report.gif)   
 
@@ -74,13 +72,13 @@ It can be invoked from an expression by its name, specifying the necessary param
 
 
 1. Copy the custom assembly in the same folder as the devenv.exe.config.
-1. You can type the expression by specifying the full name of the function and passing a parameter of the expected type. 
+1. You can type the expression by specifying the full name of the function and passing a parameter of the expected type - `= MyFunctions.GetImageFromURL("image url")`
 
-	`= MyFunctions.GetImageFromURL("image url")`
+The custom function accepts an image URL and returns an Image object that can be assigned to a PictureBox item.
 
-The custom function accepts an image url and returns an `Image` object that can be assigned to a PictureBox:
-
-<!-- ![User Function in External assembly](images/user-function-in-external-assembly.gif)    -->
+<!-- COMMENTED BECAUSE OF MISSING GIF
+![User Function in External assembly](images/user-function-in-external-assembly.gif)   
+-->
 
 ## See Also
 

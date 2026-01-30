@@ -110,7 +110,52 @@ table.Body.Rows.Add(new Telerik.Reporting.TableBodyRow(Telerik.Reporting.Drawing
 
 >note Adding a detail row group is mandatory for the table to display data. When using a report designer, this group is created automatically. To mark the group as a detail group programmatically, use a null grouping as shown above.
 
-### 3. Add Columns Dynamically Based on Data
+### (Optional) 3. Add a Detail and Parent Row Group
+
+You may want to group the data in the table by a given parameter, such as when the data was last modified(e.g. `Fields.ModifiedDate`). In this case, replace the code from the previous section with the following code snippet:
+
+````csharp
+// add a detail row group to the table
+var detailsGroup = new Telerik.Reporting.TableGroup();
+detailsGroup.Name = "detailTableGroup";
+detailsGroup.Groupings.Add(new Telerik.Reporting.Grouping(null));
+
+// grouped textbox items
+var groupedTableRowCell = new Telerik.Reporting.TextBox();
+var groupedTableHeader = new Telerik.Reporting.TextBox();
+
+groupedTableRowCell.Name = "groupedTableRowCell";
+groupedTableRowCell.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(0.2D));
+groupedTableRowCell.StyleName = "";
+groupedTableRowCell.Value = "= Fields.ModifiedDate";
+
+groupedTableHeader.Name = "groupedTableHeader";
+groupedTableHeader.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(0.2D));
+groupedTableHeader.StyleName = "Normal.TableHeader";
+groupedTableHeader.Value = "Grouped Mod Date";
+
+ // add a parent row group based on a field
+Telerik.Reporting.TableGroup parentRowGroup = new Telerik.Reporting.TableGroup();
+parentRowGroup.ChildGroups.Add(detailsGroup);
+
+// add the detail group as a child of the parent group
+parentRowGroup.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.ModifiedDate"));
+parentRowGroup.Name = "modifiedDate";
+parentRowGroup.ReportItem = groupedTableRowCell;
+parentRowGroup.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.ModifiedDate", Telerik.Reporting.SortDirection.Asc));
+
+table.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+                groupedTableRowCell,
+                groupedTableHeader
+            });
+
+table.Corner.SetCellContent(0, 0, groupedTableHeader);
+table.RowGroups.Add(parentRowGroup);
+table.Body.Rows.Add(new Telerik.Reporting.TableBodyRow(Telerik.Reporting.Drawing.Unit.Cm(0.609D)));
+````
+
+
+### 4. Add Columns Dynamically Based on Data
 
 The method for obtaining field names for your table columns depends on the type of data source you are using. In this example, since an `SqlDataSource` is utilized, the code below demonstrates how to extract column names directly from an SQL database. 
 

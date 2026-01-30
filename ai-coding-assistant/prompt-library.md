@@ -251,6 +251,210 @@ Quick Start Guide:
 	</tr> 	
 </table>
 
+#### MVC & WebForms Viewers
+
+<table>
+	<tr>
+		<th>MVC Viewer</th>
+		<th>WebForms Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Add Report Viewer.
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use the report viewer without the Reporting REST Service?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I set the report source of the Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I localize the Report Viewer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to print the report using client-side code?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to hide the export button in the Report Viewer's toolbar.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to use dropdowns for report parameters?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
+			</code></pre>
+		</td>
+	</tr>	
+</table>
+
+#### WinForms & WPF Viewers
+
+<table>
+	<tr>
+		<th>WinForms Viewer</th>
+		<th>WPF Viewer</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Add Telerik Report Viewer to my application. Generate the code that embeds the viewer and uses the local Reporting engine.
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the displayed report on a button click?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use the report viewer without the Reporting REST Service?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I localize the Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to connect the Report Viewer to Telerik Report Server.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How do I set the report source of the Report Viewer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant The document map panel is missing in the Report Viewer.
+			</code></pre>
+		</td>
+	</tr>	
+</table>
+
+#### WRD API - .NET Framework & WRD API - .NET
+
+<table>
+	<tr>
+		<th>WRD API - .NET Framework</th>
+		<th>WRD API - .NET</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use a database as a storage for my Web Report Designer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant Can I use a database as a storage for my Web Report Designer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How can I pass pre-defined SQL connections to the web report designer so that users can use them when setting up SQLDataSource components?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to change the directory for where my reports are stored to Telerik-Reports.
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to change the directory for where my reports are stored to Telerik-Reports.
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant I want to prevent users from creating new SQLDataSource components.
+			</code></pre>
+		</td>
+	</tr>
+</table>
+
+#### WRD Blazor & WRD HTML 5
+
+<table>
+	<tr>
+		<th>WRD Blazor</th>
+		<th>WRD HTML 5</th>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the size of the Web Report Designer widget?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to change the size of the Web Report Designer widget?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to dynamically set the initially loaded report in the Blazor Web Report Designer?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to disable the onboarding experience in the Web Report Designer?
+			</code></pre>
+		</td>
+	</tr>
+	<tr>  
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to start the Blazor Web Report Designer in preview mode?
+			</code></pre>
+		</td>
+		<td>
+			<pre><code>
+#telerik-reporting-assistant How to dynamically set the initially loaded report in the Web Report Designer?
+			</code></pre>
+		</td>
+	</tr>
+</table>
+
 ## Reporting Service Prompts
 
 <table>

@@ -3,7 +3,7 @@ title: Getting Started
 page_title: Getting Started with the Telerik Reporting AI Coding Assistant
 description: "Learn how to add and use the Telerik Reporting MCP Server as a Reporting AI coding assistant and code generator for better developer productivity. The Telerik Reporting MCP server provides proprietary context about Telerik Reporting to AI-powered software."
 slug: ai-mcp-server
-tags: telerik, reporting, ai, server, mcp, dotnet,coding assistant
+tags: telerik, reporting, ai, server, mcp, dotnet, coding assistant
 published: True
 position: 1
 previous_url: /ai-coding-assistant/copilot-extension
@@ -96,6 +96,34 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 
 > - Early Visual Studio 17.14 versions require the Copilot Chat window to be open when a solution loads for the MCP server to work properly.
 > - For complete setup instructions, see [Use MCP servers in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers).
+
+The Telerik Reporting MCP server is available as a NuGet package: https://www.nuget.org/packages/Telerik.Reporting.MCP.
+
+### Automatic Configuration through the Visual Studio UI
+
+1. Open the Configure MCP server menu in Visual Studio
+	* Open the [Visual Studio GitHub Copilot Chat](https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-get-started?view=vs-2022) 
+	* Click on the button at the bottom right corner to open the _Select tools_ context menu.
+	* Click on the `+` button at the top right corner of the menu to open the _Configure MCP server_ menu.
+
+	![Steps to open the Configure MCP server menu in the Visual Studio GitHub Copilot Chat](images/vs-autoinstall-open-mcp-configuration-menu.png)
+
+1. Use the following values for the configuration fields:
+	* In `Destination` select either _Global-Available in all solutions_ or _Solution-Available in this solution_.
+	* For `Server ID` use _telerik-reporting-assistant_.
+	* Select _stdio_ as `Type`.
+	* The `Command (with optional arguments)` field should contain _dnx Telerik.Reporting.MCP --yes_.
+	* Click on the `Save` button to preserve the configuration.
+
+	![Steps to configure the MCP server in the Visual Studio](images/vs-autoinstall-configure-mcp-server.png)
+
+1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+
+	The `telerik-reporting-assistant` tool should now appear in the _Select tools_ context menu. Check it to enable the Telerik Reporting AI Coding Assistant:
+	
+	![Enable the just added `telerik-reporting-assistant` tool in the Visual Studio](images/vs-autoinstall-enable-reporting-assistant.png)
+
+### Manual Configuration
 
 The steps below describe the sample procedure for configuring the Telerik Reporting MCP server in Visual Studio.
 
@@ -336,7 +364,7 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 
 ### Usage Limits
 
-A Telerik [Subscription license](https://www.telerik.com/purchase.aspx?filter=web) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions.
+A Telerik [Subscription license](https://www.telerik.com/purchase.aspx?filter=web) is recommended to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a [limited number of requests per year]({%slug ai-coding-assistant%}#number-of-requests).
 
 Perpetual license holders and trial users can make a [limited number of requests per year]({%slug ai-coding-assistant%}#number-of-requests).
 

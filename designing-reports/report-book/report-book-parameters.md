@@ -26,7 +26,31 @@ You can control parameter merging via the [`Mergeable`](/api/Telerik.Reporting.I
 
 ![An image showing how the values of the Report Parameters of multiple Reports with same names keep their individual values when Mergeable is false](images/ReportBook4_MergedParameters2.png)
 
-## Passing Values for Report Parameters in a Reportbook through ReportSource
+## How to set a value for a report parameter in ReportBook
+
+In the sample pictures below, you will see in a few steps how to set a value for a report parameter in ReportBook using Standalone Designer. For this example, the **Dashboard.trdp** and **Product Sales.trpd** reports are used, which can be found in the installation folder - **C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples**.
+
+### In Standalone Designer
+
+1. Open the Report Book 
+1. Click on the **Dashboard.trdp**
+1. From the Toolbar, click on the **Parameters**
+1. The **Edit Parameter** window will open, then select New
+
+![How to set a value for a report parameter using Standalone Designer](images/SetValueForReportParameterInReportBookStandaloneDesigner.png)
+
+### Web Report Designer
+
+1. Open the ReportBook (Combined Report).
+1. In Report Sources, click on the `uriReportSources1 `.
+1. Next to Parameters, you will see a plus sign(+). Click on it.
+1. In the `Add New Item` window, you will be able to set the name and value of the parameter.
+
+![How to set a value for a report parameter using Web Report Designer](images/HowToSetValueForReportParameterWebReportDesigner.png)
+
+![How to set the name and value of the parameter](images/HowToSetTheNameAndValueOfTheParameter.png)
+
+## Passing Values for Report Parameters in a Reportbook through ReportSource Programatically
 
 * __When report parameters have unique names or the target parameters are merged:__ If a parameter is distinguishable by its Name property or the Name denotes several merged parameters, refer to the parameter directly by the value of its Name property.
 

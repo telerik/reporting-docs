@@ -27,7 +27,7 @@ The Processing element specifies the configuration settings that will be applied
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **verbose** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the base path specified in the [UriReportSourceResolver when using Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}), or the base application path when using embedded Reporting Engine or [rendering with the ReportProcessor]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}). When enabled, only UNC (network) paths listed in the _externalReportPaths_ child element would be allowed. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
+|Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **verbose** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the base path specified in the [UriReportSourceResolver when using Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}), or the base application path when using embedded Reporting Engine or [rendering with the ReportProcessor]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}). When enabled, only [UNC (network) paths](https://learn.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) listed in the _externalReportPaths_ child element would be allowed. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
 |Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default SharedDataSource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.</li><li>__externalReportPaths__ - optional element. A collection of explicitly allowed UNC (network) paths for report document resolution. The collection is taken into account only when the optional attribute _validateReportPaths_ is _enabled_ (default).</li></ul>|
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
@@ -57,7 +57,7 @@ XML-based configuration file:
 			</parameters>
 		</resourceResolver>-->
 		<!-- The element below represents a custom implementation of resource resolver-->
-		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<resourceResolver provider="custom">
 			<parameters>
@@ -66,7 +66,7 @@ XML-based configuration file:
 			</parameters>
 		</resourceResolver>
 		<!-- The element below represents a custom implementation of a sharedDataSource resolver-->
-		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<sharedResourceResolver provider="custom">
 			<parameters>
@@ -104,7 +104,7 @@ JSON-based configuration file:
 			//	}
 			//]
 			// The element below represents a custom implementation of a resource resolver
-			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 			"parameters": [
@@ -129,7 +129,7 @@ JSON-based configuration file:
 			//],
 
 			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider
-			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 				"parameters": [
@@ -149,14 +149,14 @@ We provide a mechanism for caching the report definition properties that boost p
 
 The [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) are not intended to be used to modify the report definition, as explained in the [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) article. For that reason, in [R3 2016 (10.2.16.914)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)), we introduced a change - `cacheDefinitionProperties` which caches the report definition properties, so such modifications are not respected. Setting the _cacheDefinitionProperties_ to _false_ will skip the definition item properties caching, which will allow the report definition to be changed in the report events. This may result in a performance penalty, though.
 
-Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109) `CacheDefinitionProperties` was exposed as a Report definition property in the `ReportEngineSettings` properties collection, so that you may specify it per Report. The property value may be set to `Default`, `True`, or `False`. The `Default`, which is the default value, lets you specify that the Reporting engine should respect the _cacheDefinitionProperties_ set in its configuration on the project level.
+Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), `CacheDefinitionProperties` was exposed as a Report definition property in the `ReportEngineSettings` properties collection, so that you may specify it per Report. The property value may be set to `Default`, `True`, or `False`. The `Default`, which is the default value, lets you specify that the Reporting engine should respect the _cacheDefinitionProperties_ set in its configuration on the project level.
 
 ### Graphics Engine
 
 The __graphicsEngine__ element was introduced with the Skia graphics engine in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010). It sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET {{site.mindotnetversion}} or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element, which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
 
 If the __graphicsEngine__ element is not present in the configuration file, the *PlatformDependent* value will be used.
-Skia implementation is not available in applications that target .NET Framework. They can only work with the GDI graphics engine.
+Skia implementation is not available in applications that target the .NET Framework. They can only work with the GDI graphics engine.
 
 ### `<graphicsEngine>` element
 
@@ -166,7 +166,7 @@ Skia implementation is not available in applications that target .NET Framework.
 
 ### Validate Report Paths
 
-By default, the declarative report definitions (TRDP, TRDX, and TRBP files) can be resolved only from paths within the application hosting the Reporting Engine and those specified in the __externalReportPaths__ element. The attribute __validateReportPaths__ lets you allow all external paths by setting it to _false_ (the default is _true_).
+By default, the declarative report definitions (TRDP, TRDX, and TRBP files) can be resolved only from paths within the application hosting the Reporting Engine when using ReportProcessor or embedded Reporting Engine with the desktop viewers; the `UriReportSourceResolver` when using Reporting REST Services; and those specified in the __externalReportPaths__ element. The attribute __validateReportPaths__ lets you allow all external paths by setting it to _false_ (the default is _true_).
 
 ### `<externalReportPaths>` element
 

@@ -45,61 +45,61 @@ Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that do
 
 1. Install `Telerik.Licensing` library **1.6.24** or later from [NuGet](https://www.nuget.org/packages/Telerik.Licensing). We recommend the latest version of the package.
 
-  > If your project targets the `.NET Framework`, you may need to add a binding redirect to your configuration file. If you use a newer version, change the code accordingly:
-  >
-  >```XML
-  ><dependentAssembly>
-  > <assemblyIdentity name="Telerik.Licensing.Runtime" publicKeyToken="98bb5b04e55c09ef" culture="neutral"/>
-  > <bindingRedirect oldVersion="0.0.0.0-1.6.31.0" newVersion="1.6.31.0"/>
-  ></dependentAssembly>
-  >```
+   > If your project targets the `.NET Framework`, you may need to add a binding redirect to your configuration file. If you use a newer version, change the code accordingly:
+   >
+   > ```XML
+   > <dependentAssembly>
+   >  <assemblyIdentity name="Telerik.Licensing.Runtime" publicKeyToken="98bb5b04e55c09ef" culture="neutral"/>
+   >  <bindingRedirect oldVersion="0.0.0.0-1.6.31.0" newVersion="1.6.31.0"/>
+   > </dependentAssembly>
+   > ```
 
 1. To enable the runtime diagnostics, please call the method `Telerik.Licensing.TelerikLicensing.EnableDiagnostics()` as early as possible before loading your Telerik Report Viewers:
 
-  For example, you may add the code in the startup file of the project. In ASP.NET projects, you may use the `Application_Start` event handler in the `Global.asax` file. 
-  
-  Here is a sample code:
+   For example, you may add the code in the _startup file_ of the project. In ASP.NET projects, you may use the `Application_Start` event handler in the `Global.asax` file.
 
-  ````C#
-  protected void Application_Start(object sender, EventArgs e)
-  {
-      string logPath = Server.MapPath("~/TelerikLicensing.log");
-      var writer = File.AppendText(logPath);
-      writer.AutoFlush = true;
-      Console.SetOut(writer);
-      Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
-  }
-  ````
+   Here is a sample code:
 
-  The above code will add the Licensing validation logs to the file 'TelerikLicensing.log' in your application's main folder.
+   ```C#
+   protected void Application_Start(object sender, EventArgs e)
+   {
+       string logPath = Server.MapPath("~/TelerikLicensing.log");
+       var writer = File.AppendText(logPath);
+       writer.AutoFlush = true;
+       Console.SetOut(writer);
+       Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
+   }
+   ```
+
+   The above code will add the Licensing validation logs to the file 'TelerikLicensing.log' in your application's main folder.
 
 1. (_optional_) If you make a call to the method `TelerikLicensing.Register()`, do this after enabling diagnostics with the above code line.
 1. Set up the Reporting Engine, then collect the content of the aggregated licensing log in `Telerik.Licensing.TelerikLicensing.Diagnostics`:
 
-	````C#
-  Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
-  ````
+   ```C#
+   Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
+   ```
 
-  For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}), you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
-	
-  ````C#
-  // ...
-	// Enable the runtime Telerik Licensing diagnostics
-	string logPath = "TelerikLicensing.log";
-	var writer = File.AppendText(logPath);
-	writer.AutoFlush = true;
-	Console.SetOut(writer);
-	Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
-	// ...
-	// Configure the Telerik Reporting REST Service with Minimal API
-	builder.Services.AddRazorPages()
-	                .AddNewtonsoftJson()
-	                .AddTelerikReporting("ReportingNet10", reportsPath);
+   For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}), you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
 
-	// Collect the content of the aggregated Telerik Licensing log
-	Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
-	// ...
-  ````
+   ```C#
+   // ...
+   // Enable the runtime Telerik Licensing diagnostics
+   string logPath = "TelerikLicensing.log";
+   var writer = File.AppendText(logPath);
+   writer.AutoFlush = true;
+   Console.SetOut(writer);
+   Telerik.Licensing.TelerikLicensing.EnableDiagnostics();
+   // ...
+   // Configure the Telerik Reporting REST Service with Minimal API
+   builder.Services.AddRazorPages()
+                   .AddNewtonsoftJson()
+                   .AddTelerikReporting("ReportingNet10", reportsPath);
+
+   // Collect the content of the aggregated Telerik Licensing log
+   Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
+   // ...
+   ```
 
 1. Read the Licensing validation logs in the file 'TelerikLicensing.log' in your application's main folder.
 

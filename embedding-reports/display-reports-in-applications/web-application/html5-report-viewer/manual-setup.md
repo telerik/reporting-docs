@@ -65,7 +65,7 @@ The following steps produce an HTML page with settings similar to these in the i
 1. Add references to the Kendo UI Sass styles in the `<head>` element:
 
 	````HTML
-<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/themes/12.3.0/default/default-ocean-blue.css" rel="stylesheet" />
 ````
 
 
@@ -161,7 +161,7 @@ The following steps produce an HTML page with settings similar to these in the i
 ````
 
 
-	> The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use *position:relative* and provide width and height values.
+	> The above CSS rule will be applied to the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use *position:relative* and provide width and height values.
 
 1. The HTML page that we have just created should look like this:
 
@@ -172,7 +172,7 @@ The following steps produce an HTML page with settings similar to these in the i
 		<title>Telerik HTML5 Report Viewer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-		<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+		<link href="https://kendo.cdn.telerik.com/themes/12.3.0/default/default-ocean-blue.css" rel="stylesheet" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="/api/reports/resources/js/telerikReportViewer"></script>

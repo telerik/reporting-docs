@@ -122,6 +122,3 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
-
-
-

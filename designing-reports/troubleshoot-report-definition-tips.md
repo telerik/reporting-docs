@@ -72,6 +72,14 @@ If the SQL query parameters are not passed correctly to the database, ensure the
 
 Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) or [report section]({%slug report_structure_groups_sections%}#report-sections), ensuring the same [scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) to display the actually evaluated content in the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}), [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) or other [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}).
 
+### Inconsistent Borders
+
+If you see inconsistent border width, for example, among table cells:
+* Ensure all cells have the same `Style` > `BorderStyle`, `Style` > `BorderColor`, and `Style` > `BorderWidth` set to the corresponding parts (Left/Right/Top/Bottom).
+* The different background color of the cells may result in a visible difference in border widths. For example, the white background color may make the borders around it look thinner than the transparent (default) background color. Ensure all cells forming the grid have the same background color.
+* If both the Table and its edge cells have their Borders set, the overlapping may cause, in some renderings and zoom levels, the common border to appear thicker than expected. Switch off one of the overlapping borders to correct the layout.
+* In the [HTML Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}) the lines thinner than `1px` may not be rendered consistently. Therefore, borders of width near or less than `1px` may not appear in the Web Report Viewers.
+
 ### Unexpected Page Breaks
 
 * Page Break Properties:
@@ -114,5 +122,6 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
+
 
 

@@ -60,6 +60,8 @@ The following steps produce an HTML page with settings similar to these in the i
 
     > jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
+    > jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
+
 1.  Add references to the Kendo UI Sass styles in the `<head>` element:
 
     ```HTML
@@ -155,7 +157,7 @@ The following steps produce an HTML page with settings similar to these in the i
 
     > The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use _position:relative_ and provide width and height values.
 
-1.  The HTML page that we have just created should look like this:
+    > The above CSS rule will be applied to the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use _position:relative_ and provide width and height values.
 
     ```HTML
     <!DOCTYPE html>
@@ -165,9 +167,6 @@ The following steps produce an HTML page with settings similar to these in the i
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    	<script src="/api/reports/resources/js/telerikReportViewer"></script>
 
     	<style>
     		#reportViewer1 {

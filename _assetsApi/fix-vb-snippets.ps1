@@ -148,6 +148,31 @@ function Get-CodeFromRegion {
         return $null
     }
     
+    # Normalize indentation: Remove the base indentation from all lines
+    # Find the indentation string of the first non-empty line
+    $baseIndentString = ""
+    foreach ($line in $codeLines) {
+        if ($line -match '^(\s+)' -and $line -notmatch '^\s*$') {
+            $baseIndentString = $Matches[1]
+            break
+        }
+    }
+    
+    # Remove base indentation from all lines
+    if ($baseIndentString.Length -gt 0) {
+        $normalizedLines = @()
+        foreach ($line in $codeLines) {
+            if ($line.StartsWith($baseIndentString)) {
+                # Remove the exact base indentation prefix
+                $normalizedLines += $line.Substring($baseIndentString.Length)
+            } else {
+                # Line doesn't start with base indent, keep as-is
+                $normalizedLines += $line
+            }
+        }
+        $codeLines = $normalizedLines
+    }
+    
     # Join the lines and return
     return $codeLines -join "`n"
 }
@@ -234,10 +259,42 @@ function Fix-EmptyVBSnippets {
                         $indent = if ($line -match '^(\s+)') { $Matches[1] } else { '' }
                         
                         # Build the replacement with proper indentation
+                        # First line inline with <code> tag, remaining lines indented
                         $codeLines = $code -split "`n"
-                        $indentedCode = ($codeLines | ForEach-Object { $_ }) -join "`n$indent"
                         
-                        $replacement = "${indent}<pre><code class=`"lang-vb`">$indentedCode</code></pre>"
+                        if ($codeLines.Length -eq 0) {
+                            $replacement = "${indent}<pre><code class=`"lang-vb`"></code></pre>"
+                        } else {
+                            $firstLine = $codeLines[0]
+                            $remainingLines = $codeLines[1..($codeLines.Length - 1)]
+                            
+                            $indentedRemaining = $remainingLines | ForEach-Object {
+                                if ($_.Trim().Length -eq 0) {
+                                    ""  # Keep blank lines truly empty
+                                } else {
+                                    $indentedLine = "$indent$_"
+                                    # Add extra newlines before and after comment lines
+                                    if ($_.Trim().StartsWith("'")) {
+                                        "`n$indentedLine`n"
+                                    } else {
+                                        $indentedLine
+                                    }
+                                }
+                            }
+                            # Check first line for comment too (only add newline after, not before)
+                            if ($firstLine.Trim().StartsWith("'")) {
+                                $firstLine = "$firstLine`n"
+                            }
+                            $remainingCode = $indentedRemaining -join "`n"
+                            
+                            # First line inline, rest indented, closing tag on new line with indent
+                            if ($remainingLines.Length -gt 0) {
+                                $replacement = "${indent}<pre><code class=`"lang-vb`">$firstLine`n$remainingCode`n${indent}</code></pre>"
+                            } else {
+                                $replacement = "${indent}<pre><code class=`"lang-vb`">$firstLine</code></pre>"
+                            }
+                        }
+                        
                         $lines[$i] = $replacement
                         $modified = $true
                         $fixCount++

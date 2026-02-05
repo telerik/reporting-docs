@@ -23,8 +23,47 @@ The following `HtmlTextBoxVarious` formatting options are available and provide 
 * HyperLink (`<a href target>`).
 * Lists (`<ol>`, `<ul>`, and `<li>`).
 * Text organization in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, and `<center>`).
+* Images (`<img>`) - for embedding inline images within HTML content.
 
-While the HtmlTextBox does not support the `table` and `img` tags, you can use the native Telerik Reporting [Table, Crrostab, and List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead of `table`, and the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item instead of `img`.
+While the HtmlTextBox does not support the `table` tag, you can use the native Telerik Reporting [Table, Crosstab, and List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead.
+
+### Image Support
+
+>tip The `<img>` tag support was introduced in the 2026 Q1 release.
+
+The HtmlTextBox supports the `<img>` tag for embedding images inline within HTML content. The following attributes and styling options are supported:
+
+#### Supported `<img>` Attributes
+
+* `src` - Specifies the image source. Supports:
+  * Absolute URLs (for example, `https://example.com/image.png`)
+  * Relative URLs (for example, `../images/logo.png`)
+  * Data URIs (for example, `data:image/png;base64,...`)
+  * Embedded expressions for data-driven images (for example, `<img src='= Fields.ImageUrl' />`)
+* `width` - Specifies the image width in pixels or percentage (for example, `width="100"` or `width="50%"`)
+* `height` - Specifies the image height in pixels or percentage (for example, `height="100"` or `height="50%"`)
+* `alt` - Specifies alternative text for the image
+
+#### Supported `<img>` CSS Styling
+
+The `<img>` tag supports the following CSS properties:
+
+* `text-align` - Aligns the image within its container (`left`, `center`, `right`, `justify`)
+* `padding`, `padding-bottom`, `padding-top`, `padding-right`, `padding-left` - Adds spacing around the image
+* `margin`, `margin-bottom`, `margin-top`, `margin-right`, `margin-left` - Adds spacing outside the image
+* `display` - Controls the image display behavior (for example, `block`, `inline`)
+
+#### Example Usage
+
+````html
+<img src="https://example.com/logo.png" width="200" height="100" alt="Company Logo" style="text-align: center; padding: 10px;" />
+````
+
+For data-driven images:
+
+````html
+<img src='= Fields.ProductImage' width='150' alt='= Fields.ProductName' style='padding: 5px;' />
+````
 
 ## Supported CSS Attributes
 

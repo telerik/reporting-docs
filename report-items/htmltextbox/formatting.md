@@ -62,7 +62,7 @@ The `<img>` tag supports the following CSS properties:
 For data-driven images:
 
 ````html
-<img src='= Fields.ProductImage' width='150' alt='= Fields.ProductName' style='padding: 5px;' />
+<img src="= Fields.ProductImage" width="150" alt="= Fields.ProductName" style="padding: 5px;" />
 ````
 
 ## Supported CSS Attributes

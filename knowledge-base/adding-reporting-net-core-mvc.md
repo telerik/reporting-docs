@@ -15,14 +15,14 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>14.0.20.115+</td>
+			<td>14.0.20.115</td>
 		</tr>
 		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>.Net Framework</td>
+			<td>.NET Framework</td>
 			<td>.NET Core 3.1</td>
 		</tr>
 	</tbody>

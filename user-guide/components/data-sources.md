@@ -202,7 +202,7 @@ By clicking the **JSON Data Source** item in the **Components** tab, the JSON Da
 
 ![Inline JSON Data Source ><](images/wrd-components-tray-data-sources-inline-vs-upload-file-json-data-source.png)
 
->note The **Data selector** (e.g. `$.store.book[?(@.price<10)]`) is a [JSONPath](https://goessner.net/articles/JsonPath/) string which will be used to query the data.
+>note The **Data selector** (e.g. `$.store.book[?(@.price<10)]`) is a [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the data.
 
 |Wizard step|Description| 
 |----|----|

@@ -1,7 +1,7 @@
 ---
-title: Table and Crosstab Groups
-page_title: Table and Crosstab Groups at a Glance
-description: "Learn how to Add, Edit, Filter and Remove different types of Table Groups in Telerik Reporting with the Report Designers and programmatically."
+title: Table Groups
+page_title: Table Groups at a Glance
+description: "Learn how to add, edit, filter and remove different types of table groups in Telerik Reporting with the report designers and programmatically."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item
 tags: how,to,add,groups,to,table,item,and,crosstab,item
 published: True
@@ -18,7 +18,9 @@ Use the [Group Explorer]({%slug telerikreporting/designing-reports/report-design
 
 > The instructions in this article apply to all three template variations: Table, Crosstab, and List items.
 
-## Add a Parent or Child Row/Column Group Using the Report Designer
+## Add a Row/Column Group Using the Report Designer
+
+### Add a Parent or Child Group
 
 To add a parent or child row/column group:
 
@@ -35,7 +37,7 @@ To add a parent or child row/column group:
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) hierarchy, and the corresponding rows or columns are added to the data item on the design surface.
 
-## Add an Adjacent Row/Column Group Using the Report Designer
+### Add an Adjacent Group
 
 To add an adjacent row/column group:
 
@@ -51,6 +53,8 @@ To add an adjacent row/column group:
 1. Click **OK**.
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) at the specified position, and the corresponding rows or columns are added to the data item on the design surface.
+
+>important Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
 ## Add a Details Group Using the Report Designer
 
@@ -108,6 +112,7 @@ To delete a group:
 
 ## See Also
 
-* [Table](/api/Telerik.Reporting.Table) 
+* [Table Group Dialog (Desktop Designers)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog%})
+* [Table Group Dialog (Web Report Designer)]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-group-dialog%})
 * [ColumnGroups](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_ColumnGroups)
 * [RowGroups](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_RowGroups)

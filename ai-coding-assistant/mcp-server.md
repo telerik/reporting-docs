@@ -184,7 +184,7 @@ The steps below describe the sample procedure for configuring the Telerik Report
 1. Restart Visual Studio.
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
->warning Known Issue: Hanging tool calls in Visual Studio
+>warning **Known Issue: Hanging tool calls in Visual Studio**
 >
 > When using Telerik AI tools in Visual Studio, GitHub Copilot may:
 >

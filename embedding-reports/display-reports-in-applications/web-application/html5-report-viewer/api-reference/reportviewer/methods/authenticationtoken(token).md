@@ -7,7 +7,7 @@ tags: authenticationtoken(token)
 published: True
 reportingArea: HTML5
 position: 3
-previous_url: /html5-report-viewer-reportviewer-methods-authenticationtoken
+previous_url: /html5-report-viewer-reportviewer-methods-authenticationtoken, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)
 ---
 
 <style>

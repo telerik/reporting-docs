@@ -17,8 +17,8 @@ This article lists the answers to the most frequently asked questions (FAQs) abo
 
 Yes, the license key expires at the end of your support subscription:
 
-* For trial users, this is at the end of your 30-day trial.
-* For commercial license holders, this is when your subscription term expires.
+- For trial users, this is at the end of your 30-day trial.
+- For commercial license holders, this is when your subscription term expires.
 
 You will need to obtain and install a new license key after starting a trial, renewing a license, or upgrading a license.
 
@@ -28,14 +28,14 @@ You will need to obtain and install a new license key after starting a trial, re
 
 This depends on the Telerik Reporting [license type (perpetual, subscription, or trial)](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing):
 
-* *Perpetual licenses* function normally with an expired license key, as long as the application is using a Telerik Reporting version that was released before the expiration date of the license.
-* *Subscription licenses* function normally in already deployed applications, but you cannot rebuild and republish the app.
-* *Trial licenses* function normally only within the 30-day trial period.
+- _Perpetual licenses_ function normally with an expired license key, as long as the application is using a Telerik Reporting version that was released before the expiration date of the license.
+- _Subscription licenses_ function normally in already deployed applications, but you cannot rebuild and republish the app.
+- _Trial licenses_ function normally only within the 30-day trial period.
 
 If none of the above conditions are met, the following behaviors occur:
 
-* A watermark appears on each report document page.
-* A [warning message]({%slug license-errors-and-warnings%}) appears in the application's build log.
+- A watermark appears on each report document page.
+- A [warning message]({%slug license-errors-and-warnings%}) appears in the application's build log.
 
 ## I updated the version of the Telerik Reporting packages in my project and the invalid license errors have appeared. What is the cause of this behavior?
 
@@ -70,8 +70,8 @@ To enforce the use of the license key file, unset the environment variable.
 
 ## My team has more than one license holder. Which key do we have to use?
 
-* To activate Telerik Reporting on your development machine, use the key associated with your personal account.
-* To activate Telerik Reporting in a CI/CD environment, use any of the license keys in your team.
+- To activate Telerik Reporting on your development machine, use the key associated with your personal account.
+- To activate Telerik Reporting in a CI/CD environment, use any of the license keys in your team.
 
 ## Are earlier versions of Telerik Reporting affected?
 
@@ -81,11 +81,11 @@ No, versions released prior to January 2025 do not require a license key.
 
 This depends on your license:
 
-* If you have a perpetual license, you can build the application with Telerik Reporting.
-* If you have an expired subscription license, the build will generate warnings.
+- If you have a perpetual license, you can build the application with Telerik Reporting.
+- If you have an expired subscription license, the build will generate warnings.
 
-# See Also
+## See Also
 
-* [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-* [Setting Up Your License Key]({%slug license-key%}))
-* [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
+- [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
+- [Setting Up Your License Key]({%slug license-key%}))
+- [Adding the License Key to CI Services]({%slug license-key-ci-services%}))

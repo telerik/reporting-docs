@@ -7,7 +7,9 @@ tags: renderingend,args
 published: True
 reportingArea: HTML5
 position: 10
-previous_url: /html5-report-viewer-reportviewer-events-renderingend
+previous_url:
+- /html5-report-viewer-reportviewer-events-renderingend
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)
 ---
 
 <style>

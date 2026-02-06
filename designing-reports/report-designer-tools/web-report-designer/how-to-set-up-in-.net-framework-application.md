@@ -34,7 +34,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Inherit the [ReportDesignerControllerBase](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase)  type and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage. This is the class, responsible for opening, saving etc. the report definitions. This is how a basic implementation of the controller should look like:
 
 	````C#
-namespace CSharp.MvcDemo.Controllers
+	namespace CSharp.MvcDemo.Controllers
 	{
 		using System;
 		using System.IO;
@@ -84,10 +84,9 @@ namespace CSharp.MvcDemo.Controllers
 			}
 		}
 	}
-````
-
-	````VB.NET
-Imports System.IO
+	````
+	````VB
+	Imports System.IO
 	Imports Telerik.Reporting.Services
 	Imports Telerik.WebReportDesigner.Services
 	Imports Telerik.WebReportDesigner.Services.Controllers
@@ -128,15 +127,15 @@ Imports System.IO
 
 		End Sub
 	End Class
-````
+	````
 
 
 ## Adding the Web Report Designer:
 
 1. Navigate to `Views` -> `Home` and add a new CSHTML Page for the Web Report Designer. Name the file `Index.cshtml`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-	````cshtml
-@using Telerik.Reporting
+	````CSHTML
+	@using Telerik.Reporting
 	@{
 		Layout = null;
 	}
@@ -170,10 +169,9 @@ Imports System.IO
 		</script>
 	</body>
 	</html>
-````
-
-	````vbhtml
-@Imports Telerik.Reporting
+	````
+	````VBHTML
+	@Imports Telerik.Reporting
 	@Code
 		Layout = Nothing
 	End Code
@@ -207,7 +205,7 @@ Imports System.IO
 		</script>
 	</body>
 	</html>
-````
+	````
 
 
 	The *ReportDesignerController* we added above is configured to search for its reports in a sub-folder named `Reports`. The Report Designer widget we just configured will try to load a report named `SampleReport.trdp`. Add a new folder named `Reports` to the solution and add an existing report named `SampleReport.trdp` to it.
@@ -215,7 +213,7 @@ Imports System.IO
 1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in the `Application_Start()` method of the `Global.asax` file. It is important to register them before the default routes as shown below:
 
 	````C#
-protected void Application_Start()
+	protected void Application_Start()
 	{
 		AreaRegistration.RegisterAllAreas();
 		FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -224,10 +222,9 @@ protected void Application_Start()
 		RouteConfig.RegisterRoutes(RouteTable.Routes);
 		BundleConfig.RegisterBundles(BundleTable.Bundles);
 	}
-````
-
-	````VB.NET
-Imports System.Web.Optimization
+	````
+	````VB
+	Imports System.Web.Optimization
 	
 	Public Class MvcApplication
 		Inherits System.Web.HttpApplication
@@ -243,7 +240,7 @@ Imports System.Web.Optimization
 			BundleConfig.RegisterBundles(BundleTable.Bundles)
 		End Sub
 	End Class
-````
+	````
 
 
 1. In case the reports shown in the viewer need access to a database, add the necessary connection strings to the `web.config` file.

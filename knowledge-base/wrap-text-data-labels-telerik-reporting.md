@@ -27,9 +27,9 @@ To wrap text in data labels for a Column chart in the Graph Report Item, use the
 1. Set the `DataPointLabel` with the appropriate `Replace` function to insert a new line character where needed. For example:
 
   ````
-= Replace(Fields.CategoryNamePlusPercent, ' ', '
-')
-````
+  = Replace(Fields.CategoryNamePlusPercent, ' ', '
+  ')
+  ````
 
 
   ![Set Replace Expression](images/replace-expression-data-point-labels.png)    

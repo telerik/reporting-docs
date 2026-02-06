@@ -41,63 +41,66 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1.  This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
 1.  Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
-	````C#
-app.UseStaticFiles();
-````
 
+    ```C#
+    app.UseStaticFiles();
+    ```
 
-1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot* and __Add > New Item... > HTML Page__. Name the file __index.html__ and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below. By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
+1.  Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization.
 
-	````HTML
-<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET {{site.mindotnetversion}}+</title>
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
 
-	  <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+    By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
 
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
-	  <script src="/api/reports/resources/js/telerikReportViewer"> </script>
+    ```HTML
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET {{site.mindotnetversion}}+</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	  <style>
-		  #reportViewer1 {
-			  position: absolute;
-			  inset: 5px;
-			  overflow: hidden;
-			  font-family: Verdana, Arial;
-		  }
-	  </style>
-	</head>
-	<body>
-	  <div id="reportViewer1">
-		  loading...
-	  </div>
-	  <script>
-		  $(document).ready(function () {
-			  $("#reportViewer1")
-			   .telerik_ReportViewer({
-					  serviceUrl: "api/reports/",
-					  reportSource: {
-						  report: "Barcodes Report.trdp",
-						  parameters: {}
-					  },
-					  viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
-					  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
-					  scale: 1.0,
-					  enableAccessibility: false,
-					  sendEmail: { enabled: true }
-				  });
-		  });
-	  </script>
-	</body>
-	</html>
-````
+      <link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+      <script src="/api/reports/resources/js/telerikReportViewer"> </script>
 
-1. Set the _launchSettings.json_ `launchUrl` to the new HTML page.
-1. Finally, run the project to see the report.
+      <style>
+    	  #reportViewer1 {
+    		  position: absolute;
+    		  inset: 5px;
+    		  overflow: hidden;
+    		  font-family: Verdana, Arial;
+    	  }
+      </style>
+    </head>
+    <body>
+      <div id="reportViewer1">
+    	  loading...
+      </div>
+      <script>
+    	  $(document).ready(function () {
+    		  $("#reportViewer1")
+    		   .telerik_ReportViewer({
+    				  serviceUrl: "api/reports/",
+    				  reportSource: {
+    					  report: "Barcodes Report.trdp",
+    					  parameters: {}
+    				  },
+    				  viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
+    				  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
+    				  scale: 1.0,
+    				  enableAccessibility: false,
+    				  sendEmail: { enabled: true }
+    			  });
+    	  	});
+      </script>
+    </body>
+    </html>
+    ```
+
+1.  Set the _launchSettings.json_ `launchUrl` to the new HTML page.
+1.  Finally, run the project to see the report.
 
 ## Demo project
 
@@ -105,5 +108,5 @@ A full example can be found in the installation folder of Telerik Reporting, by 
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-* [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)
+- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)

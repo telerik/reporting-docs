@@ -1,19 +1,34 @@
 apiRules:
-- exclude:
-    uidRegex: ^GoogleAnalytics
-    type: Namespace
-- exclude:
-    uidRegex: ^Newtonsoft\.Json
-    type: Namespace
-- exclude:
-    uidRegex: ^System
-    type: Namespace
-- exclude:
-    uidRegex: ^antlr
-    type: Namespace
-- exclude:
-    uidRegex: ^OpenAccessRuntime
-    type: Namespace
-- exclude:
-    uidRegex: ^Telerik\.Licensing
-    type: Namespace
+  - exclude:
+      uidRegex: ^GoogleAnalytics
+      type: Namespace
+  - exclude:
+      uidRegex: ^Newtonsoft\.Json
+      type: Namespace
+  - exclude:
+      uidRegex: ^System
+      type: Namespace
+  - exclude:
+      uidRegex: ^antlr
+      type: Namespace
+  - exclude:
+      uidRegex: ^OpenAccessRuntime
+      type: Namespace
+  - exclude:
+      uidRegex: ^Telerik\.Licensing
+      type: Namespace
+  - exclude:
+      uidRegex: ^Telerik\.Windows
+      type: Namespace
+  - exclude:
+      uidRegex: ^Telerik\.UI
+      type: Namespace
+  - exclude:
+      uidRegex: ^Telerik\.CallHome
+      type: Namespace
+  - exclude:
+      uidRegex: ^Telerik\.Core
+      type: Namespace
+  - exclude:
+      uidRegex: ^Controls\.
+      type: Namespace

@@ -12,26 +12,26 @@ previous_url: /html5-report-viewer-api-events, /embedding-reports/display-report
 
 # telerikReportViewer.Events
 
-|   |
-| ------ |
-| Member name |
-| ------ |
-|EXPORT_BEGIN|
-|EXPORT_END|
-|PRINT_BEGIN|
-|PRINT_END|
-|RENDERING_BEGIN|
-|RENDERING_END|
-|PAGE_READY|
-|ERROR|
-|UPDATE_UI|
-|INTERACTIVE_ACTION_EXECUTING|
-|INTERACTIVE_ACTION_ENTER|
-|INTERACTIVE_ACTION_LEAVE|
-|VIEWER_TOOLTIP_OPENING|
-|SEND_EMAIL_BEGIN|
-|SEND_EMAIL_END|
+|                              |
+| ---------------------------- |
+| Member name                  |
+| ------                       |
+| EXPORT_BEGIN                 |
+| EXPORT_END                   |
+| PRINT_BEGIN                  |
+| PRINT_END                    |
+| RENDERING_BEGIN              |
+| RENDERING_END                |
+| PAGE_READY                   |
+| ERROR                        |
+| UPDATE_UI                    |
+| INTERACTIVE_ACTION_EXECUTING |
+| INTERACTIVE_ACTION_ENTER     |
+| INTERACTIVE_ACTION_LEAVE     |
+| VIEWER_TOOLTIP_OPENING       |
+| SEND_EMAIL_BEGIN             |
+| SEND_EMAIL_END               |
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

@@ -7,7 +7,7 @@ tags: refreshreport()
 published: True
 reportingArea: HTML5
 position: 11
-previous_url: /html5-report-viewer-reportviewer-methods-refreshreport
+previous_url: /html5-report-viewer-reportviewer-methods-refreshreport, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/refreshreport()
 ---
 
 # The `refreshReport()` method of the HTML5 Report Viewer

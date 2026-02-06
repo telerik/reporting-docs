@@ -10,6 +10,12 @@ position: 1
 reportingArea: General
 ---
 
+<style>
+    table {
+        width: 50% !important;
+    } 
+</style>
+
 # Specifications of the One-dimensional Barcode Items
 
 One-dimensional (1D) barcodes are made up of lines and spaces of various widths that create specific patterns.
@@ -54,6 +60,21 @@ For example, the string `"NUTMUF57156950013302"` is automatically encoded as:
 - **Code A** for `"NUTMUF"` (uppercase letters)
 - **Code C** for `"57156950013302"` (numeric pairs for shorter output)
 
+| Control Character | Hexadecimal | Decimal |
+| ----------------- | ----------- | ------- |
+| Code A            | F4          | 244     |
+| Code B            | F5          | 245     |
+| Code C            | F6          | 246     |
+| FNC1              | F7          | 247     |
+| FNC2              | F8          | 248     |
+| FNC3              | F9          | 249     |
+| FNC4              | FA          | 250     |
+| Shift             | FB          | 251     |
+| Start A           | FC          | 252     |
+| Start B           | FD          | 253     |
+| Start C           | FE          | 254     |
+| Stop              | FF          | 255     |
+
 > When both Code A and Code B can encode a character (e.g., uppercase letters, digits, punctuation), the automatic algorithm prefers Code A.
 
 ### Explicit Encoding
@@ -90,38 +111,38 @@ You don't need to worry about this distinction—just use the same control chara
 
 By default, uppercase letters use Code A. To force Code B:
 
-````CSharp
+````C#
 // Automatic: encodes "NUTMUF" as Code A, digits as Code C
 barcode.Value = "NUTMUF57156950013302";
 
-// Explicit: encodes "NUTMUF" as Code B, digits as Code C  
+// Explicit: encodes "NUTMUF" as Code B, digits as Code C
 barcode.Value = "\u00FD" + "NUTMUF" + "\u00FE" + "57156950013302";
 ````
 
 ##### Force Code A Explicitly
 
-````CSharp
+````C#
 // Explicit Code A for letters, then Code C for digits
 barcode.Value = "\u00FC" + "NUTMUF" + "\u00FE" + "57156950013302";
 ````
 
 ##### Multiple Mode Switches
 
-````CSharp
+````C#
 // Code B → Code C → Code B
 barcode.Value = "\u00FD" + "Order" + "\u00FE" + "123456" + "\u00FD" + "Complete";
 ````
 
 ##### Mixed Case Text (Code B Required)
 
-````CSharp
+````C#
 // Code B is required for lowercase letters
 barcode.Value = "\u00FD" + "Hello World";
 ````
 
 ##### Pure Numeric (Code C)
 
-````CSharp
+````C#
 // Force Code C for maximum compression of numeric data
 barcode.Value = "\u00FE" + "1234567890";
 ````
@@ -177,13 +198,12 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and Co
 
 If you have a multi-part GS1-128 barcode that requires the FNC1 control character as a delimiter between the different parts, you have to insert it manually.
 
-````C#
+```C#
 this.Barcode1.Value = "1234" + "\u00F7" + "5678";
-````
-````VB.NET
+```
+```VB
 Me.Barcode1.Value = "1234" & ChrW(&HF7) & "5678"
-````
-
+```
 
 ## See Also
 

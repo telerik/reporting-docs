@@ -27,18 +27,24 @@ Defines a collection of type references used by the Reporting Engine to resolve 
 XML-based configuration file:
 
 ````XML
-<typeReferences>
-	<add />
-	<clear />
-	<remove />
-</typeReferences>
+<configuration>
+	<configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
+	<Telerik.Reporting>
+		<typeReferences>
+			<add />
+			<clear />
+			<remove />
+		</typeReferences>
+	</Telerik.Reporting>	
+</configuration>
 ````
-
-JSON-based configuration file:
-
 ````JSON
-"typeReferences": [
-],
+"telerikReporting": {
+	"typeReferences": [
+	],
+}
 ````
 
 ## Attributes and Elements
@@ -55,9 +61,9 @@ When providing the Public Key Token, the Reporting Engine will try to match it w
 
 ## Example
 
-The following code example demonstrates how to configure the Reporting Engine to use the `MyNamespace.MyClassName` type from the `MyAssemblyName` assembly, which has a public key token with the value `my-assembly-public-key-token`. If the type is correctly resolvable at runtime, it will be permitted to be used as a source for the ObjectDataSource's data retrieval. This configuration element also allows listing custom types that are allowed in the report definition.
+The following code example demonstrates how to configure the Reporting Engine to use the `MyNamespace.MyClassName` type from the `MyAssemblyName` assembly, which has a public key token with the value `my-assembly-public-key-token`. 
 
-XML-based configuration file:
+If the type is correctly resolvable at runtime, it will be permitted to be used as a source for the ObjectDataSource's data retrieval. This configuration element also allows listing custom types that are allowed in the report definition.
 
 ````XML
 <?xml version="1.0"?>
@@ -70,12 +76,8 @@ XML-based configuration file:
 			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken="my-assembly-public-key-token" />
 		</typeReferences>
 	</Telerik.Reporting>
-...
 </configuration>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"typeReferences": [

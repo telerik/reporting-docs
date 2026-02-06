@@ -41,95 +41,95 @@ The steps below can be used as an example of creating an assembly with custom us
 1. Add a reference to `Telerik.Reporting.dll`. When the assembly is used in the Report Designer its version will be resolved according to the Report Designer version of Telerik Reporting assemblies.
 1. Create your custom objects:
 
-	````C#
-namespace MyAssembly
-	{
-		using System.Collections;
-		using System.Collections.Generic;
+   ```C#
+   namespace MyAssembly
+   {
+   	using System.Collections;
+   	using System.Collections.Generic;
 
-		public class Car
-		{
-			string model;
-			int year;
+   	public class Car
+   	{
+   		string model;
+   		int year;
 
-			public Car(string model, int year)
-			{
-				this.model = model;
-				this.year = year;
-			}
+   		public Car(string model, int year)
+   		{
+   			this.model = model;
+   			this.year = year;
+   		}
 
-			public string Model
-			{
-				get { return this.model; }
-				set { this.model = value; }
-			}
-		
-			public int Year
-			{
-				get { return this.year; }
-				set { this.year = value; }
-			}
-		}
+   		public string Model
+   		{
+   			get { return this.model; }
+   			set { this.model = value; }
+   		}
 
-		public class Cars: List<Car>
-		{
-			public Cars()
-			{
-				Car car;
-				car = new Car("Honda NSX GT", 2003);
-				this.Add(car);
-		
-				car = new Car("Nissan Skyline R34 GT-R", 2005);
-				this.Add(car);
-			}
-		}
-	}
-````
-	````VB
-Imports System.Collections
-	Imports System.Collections.Generic
+   		public int Year
+   		{
+   			get { return this.year; }
+   			set { this.year = value; }
+   		}
+   	}
 
-	Public Class Car
-		Private m_model As String
-		Private m_year As Integer
+   	public class Cars: List<Car>
+   	{
+   		public Cars()
+   		{
+   			Car car;
+   			car = new Car("Honda NSX GT", 2003);
+   			this.Add(car);
 
-		Public Sub New(model As String, year As Integer)
-			Me.m_model = model
-			Me.m_year = year
-		End Sub
+   			car = new Car("Nissan Skyline R34 GT-R", 2005);
+   			this.Add(car);
+   		}
+   	}
+   }
+   ```
 
-		Public Property Model() As String
-			Get
-				Return Me.m_model
-			End Get
-			Set(value As String)
-				Me.m_model = value
-			End Set
-		End Property
+   ```VB
+   Imports System.Collections
+   Imports System.Collections.Generic
 
-		Public Property Year() As Integer
-			Get
-				Return Me.m_year
-			End Get
-			Set(value As Integer)
-				Me.m_year = value
-			End Set
-		End Property
-	End Class
+   Public Class Car
+   	Private m_model As String
+   	Private m_year As Integer
 
-	Public Class Cars
-		Inherits List(Of Car)
-		Public Sub New()
-			Dim car As Car
-			car = New Car("Honda NSX GT", 2003)
-			Me.Add(car)
+   	Public Sub New(model As String, year As Integer)
+   		Me.m_model = model
+   		Me.m_year = year
+   	End Sub
 
-			car = New Car("Nissan Skyline R34 GT-R", 2005)
-			Me.Add(car)
-		End Sub
-	End Class
-````
+   	Public Property Model() As String
+   		Get
+   			Return Me.m_model
+   		End Get
+   		Set(value As String)
+   			Me.m_model = value
+   		End Set
+   	End Property
 
+   	Public Property Year() As Integer
+   		Get
+   			Return Me.m_year
+   		End Get
+   		Set(value As Integer)
+   			Me.m_year = value
+   		End Set
+   	End Property
+   End Class
+
+   Public Class Cars
+   	Inherits List(Of Car)
+   	Public Sub New()
+   		Dim car As Car
+   		car = New Car("Honda NSX GT", 2003)
+   		Me.Add(car)
+
+   		car = New Car("Nissan Skyline R34 GT-R", 2005)
+   		Me.Add(car)
+   	End Sub
+   End Class
+   ```
 
 1. Build your project.
 
@@ -140,55 +140,50 @@ Once the assembly with our custom logic is built, it should be placed in the fol
 1. Locate the Telerik Report Designer executable and its configuration file on your machine (`Telerik.ReportDesigner.exe` and `Telerik.ReportDesigner.exe.config`)
 1. Place `MyAssembly.dll` into the folder or a subfolder where `Telerik.ReportDesigner.exe` resides.
 
-	![Standalone Report Designer's folder with added MyAssembly.dll.](./resources/myAssembly.png)
+   ![Standalone Report Designer's folder with added MyAssembly.dll.](./resources/myAssembly.png)
 
 1. Open the Report Designer’s configuration file with a text editor and navigate to the `<AssemblyReferences>` element.
 1. Uncomment the section and change the name attribute to MyAssembly. Notice that the assembly is referred to only by its name without specifying the extension:
 
-	````
-<!-- Add assembly references -->
+   ```XML
+   <Telerik.Reporting>
+   	<AssemblyReferences>
+   		<add name="MyAssembly" version="1.0.0.0" />
+   	</AssemblyReferences>
+   </Telerik.Reporting>
+   ```
 
-	<!--
-	<Telerik.Reporting>
-		<AssemblyReferences>
-			<add name="MyAssembly" version="1.0.0.0" />
-		</AssemblyReferences>
-	</Telerik.Reporting>
-	-->
-````
+   > Additionally you can add `culture` and `publicKeyToken` attributes to identify the assembly in the `<add>` element if necessary.
 
+   Here is a possible configuration extending the Report Designer with the functionality in `MyAssembly.dll` assembly:
 
-	> Additionally you can add `culture` and `publicKeyToken` attributes to identify the assembly in the `<add>` element if necessary.
+   ```XML
+   <configuration>
+   	<runtime>
+   		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+   			<probing privatePath="MySubDir; MySubDir\SubDir"/>
+   		</assemblyBinding>
+   	</runtime>
 
-	Here is a possible configuration extending the Report Designer with the functionality in `MyAssembly.dll` assembly:
+   	<Telerik.Reporting>
+   		<AssemblyReferences>
+   			<add name="MyAssembly" version="1.0.0.0"/>
+   		</AssemblyReferences>
+   	</Telerik.Reporting>
+   </configuration>
+   ```
 
-	````XML
-<configuration>
-		...
-		<runtime>
-			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-				<probing privatePath="MySubDir; MySubDir\SubDir"/>
-			</assemblyBinding>
-		</runtime>
-		
-		<Telerik.Reporting>
-			<AssemblyReferences>
-				<add name="MyAssembly" version="1.0.0.0"/>
-			</AssemblyReferences>
-		</Telerik.Reporting>
-		...
-	</configuration>
-````
-
-	The Standalone Report Designer will look for `MyAssembly.dll` in its own folder (where the `Telerik.ReportDesigner.exe` resides) and in `MySubDir` and `MySubDir\SubDir` (using the specified relative paths in the [.NET Framework `<probing>` element](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/823z9h8w(v=vs.80))).
+   The Standalone Report Designer will look for `MyAssembly.dll` in its own folder (where the `Telerik.ReportDesigner.exe` resides) and in `MySubDir` and `MySubDir\SubDir` (using the specified relative paths in the [.NET Framework `<probing>` element](<https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/823z9h8w(v=vs.80)>)).
 
 1. Reopen the Standalone Report Designer and explore the extended functionality.
 
-	![Use object from MyAssembly.dll in the Standalone Report Designer.](./resources/useObjectFromMyAssembly.png)
+   ![Use object from MyAssembly.dll in the Standalone Report Designer.](./resources/useObjectFromMyAssembly.png)
 
 ### Use Assembly Located in non-Relative Path
 
-Telerik.Reporting `AssemblyReferences` section is trying to load the assemblies according to the .NET Framework rules. Thus, in order to use a signed assembly located in a directory different from the application directory or GAC, you have to add a `dependentAssembly` section to point to the .NET Framework where to look for your assembly. For more information check out the [CodeBase Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Microsoft article.
+Telerik.Reporting `AssemblyReferences` section is trying to load the assemblies according to the .NET Framework rules. Thus, in order to use a signed assembly located in a directory different from the application directory or GAC, you have to add a `dependentAssembly` section to point to the .NET Framework where to look for your assembly.
+
+For more information check out the [CodeBase Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Microsoft article.
 
 ## Notes
 
@@ -200,8 +195,8 @@ Use the .NET version of the Standalone Designer when your custom assemblies targ
 
 ## See Also
 
-* [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
-* [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
-* [AssemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
-* [Deploying trdx (XML report definition) that uses external assembly]({%slug deploying-trdx-(xml-report-definition)-that-uses-external-assembly%})
-* [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]({%slug how-to-load-dot-net-7-assemblies-in-srd-dot-net%})
+- [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
+- [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+- [AssemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
+- [Deploying trdx (XML report definition) that uses external assembly]({%slug deploying-trdx-(xml-report-definition)-that-uses-external-assembly%})
+- [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]({%slug how-to-load-dot-net-7-assemblies-in-srd-dot-net%})

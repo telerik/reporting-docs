@@ -7,7 +7,7 @@ tags: viewmode(vm)
 published: True
 reportingArea: HTML5
 position: 19
-previous_url: /html5-report-viewer-reportviewer-methods-viewmode-vm
+previous_url: /html5-report-viewer-reportviewer-methods-viewmode-vm, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)
 ---
 
 <style>

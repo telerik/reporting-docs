@@ -40,7 +40,7 @@ Quick Start Guide:
 1. Paste it in your IDE with the AI Assistant
 1. Customize the prompt for your specific use case.
 
->caution Always double-check the code and solutions proposed by an AI-powered tool before applying them to your project.
+> caution Always double-check the code and solutions proposed by an AI-powered tool before applying them to your project.
 
 ## Report Viewer Prompts
 
@@ -504,7 +504,6 @@ Quick Start Guide:
 		</td>
 	</tr>
 </table>
-
 
 ## See Also
 

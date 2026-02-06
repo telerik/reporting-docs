@@ -7,7 +7,7 @@ tags: clearreportsource()
 published: True
 reportingArea: HTML5
 position: 5
-previous_url: /html5-report-viewer-reportviewer-methods-clearreportsource
+previous_url: /html5-report-viewer-reportviewer-methods-clearreportsource, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/clearreportsource()
 ---
 
 # The `clearReportSource()` method of the HTML5 Report Viewer

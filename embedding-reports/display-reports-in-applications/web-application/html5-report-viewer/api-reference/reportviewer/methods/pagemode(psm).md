@@ -7,7 +7,7 @@ tags: pagemode(psm)
 published: True
 reportingArea: HTML5
 position: 10
-previous_url: /html5-report-viewer-reportviewer-methods-pagemode-psm
+previous_url: /html5-report-viewer-reportviewer-methods-pagemode-psm, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode(psm)
 ---
 
 <style>

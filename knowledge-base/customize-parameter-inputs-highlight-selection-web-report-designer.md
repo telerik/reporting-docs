@@ -25,74 +25,74 @@ This knowledge base article explains how to customize the parameters area in the
 
 Let's start with a sample report that offers **IsActive** and **IsChecked** Boolean report parameters. They are presented as checkboxes in the Web Report Designer:
 
-![Default CheckBox Parameter Style](images/wrd-default-checkbox-style.png)  
+![Default CheckBox Parameter Style](images/wrd-default-checkbox-style.png)
 
 However, the checkmark is displayed below the header text. If you want to align horizontally the checkmark next to the text, it is necessary to:
 
 1. Modify the **webReportDesigner.html** and insert the following JavaScript in the `<script type="text/javascript">` section. This script utilizes the `viewerInitializing` event to apply [CSS Flex Container](https://www.w3schools.com/css/css3_flexbox_container.asp) styling to CheckBox parameters.
 
-        The **viewerInitializing** event is used to add the `reportViewerOptions.pageReady` event handler that accesses the checkboxes by using the style class ".trv-parameter-editor-boolean" and apply the CSS Flex Container: 
+    The **viewerInitializing** event is used to add the `reportViewerOptions.pageReady` event handler that accesses the checkboxes by using the style class ".trv-parameter-editor-boolean" and apply the CSS Flex Container: 
 
-        ````JavaScript
-<script type="text/javascript">
-                function onViewerInitializing(e, args) {
-                    args.reportViewerOptions.pageReady = (e, args) => {   
-                        $(".trv-parameter-editor-boolean").parent().parent().parent().css("display", "flex"); 
-                    };
-                }
-                $(document).ready(function () {
-         
-                    // For a complete overview over all the options used to initialize Web Report Designer, check:
-                    // https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/web-report-designer-initialization
-                    $("#webReportDesigner").telerik_WebReportDesigner({
-                        toolboxArea: {
-                            layout: "list" //Change to "grid" to display the contents of the Components area in a flow grid layout.
-                        },
-                        serviceUrl: "api/reportdesigner/",
-                        report: "Reportbool.trdp",
-                        viewerInitializing: onViewerInitializing,
-                        startMode: "design", // Change to "preview" to start the designer in a preview mode
-                    }).data("telerik_WebDesigner");
-                });
-        </script>
-        ````
+    ````HTML
+  <script type="text/javascript">
+          function onViewerInitializing(e, args) {
+              args.reportViewerOptions.pageReady = (e, args) => {   
+                  $(".trv-parameter-editor-boolean").parent().parent().parent().css("display", "flex"); 
+              };
+          }
+          $(document).ready(function () {
+    
+              // For a complete overview over all the options used to initialize Web Report Designer, check:
+              // https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/web-report-designer-initialization
+              $("#webReportDesigner").telerik_WebReportDesigner({
+                  toolboxArea: {
+                      layout: "list" //Change to "grid" to display the contents of the Components area in a flow grid layout.
+                  },
+                  serviceUrl: "api/reportdesigner/",
+                  report: "Reportbool.trdp",
+                  viewerInitializing: onViewerInitializing,
+                  startMode: "design", // Change to "preview" to start the designer in a preview mode
+              }).data("telerik_WebDesigner");
+          });
+  </script>
+````
 
-        Now, the checkmark is displayed on the same horizontal line: 
+    Now, the checkmark is displayed on the same horizontal line: 
 
-        ![Flex Display Applied](images/wrd-flex-display-checkbox-style.png)   
+    ![Flex Display Applied](images/wrd-flex-display-checkbox-style.png)
 
 1. To bring the CheckBox closer to its header text, add the following CSS in the `<head>` of your HTML file for the Web Report Designer:
 
-        ````CSS
+    ````HTML
 <style>
-            #webReportDesigner .trv-parameter-header {
-                width: auto;
-                margin-right: 15px;
-            }
-        </style>
-        ````
+    #webReportDesigner .trv-parameter-header {
+        width: auto;
+        margin-right: 15px;
+    }
+</style>
+````
 
-        ![Text Checkmark Margin Applied](images/wrd-text-margin-checkbox-style.png)    
+    ![Text Checkmark Margin Applied](images/wrd-text-margin-checkbox-style.png)    
 
 1. To highlight the selected listview items, extend the CSS style further:
 
-        ````CSS
+    ````HTML
 <style>
-            #webReportDesigner .trv-parameter-header {
-                width: auto;
-                margin-right: 15px;
-            }
-            #webReportDesigner .trv-listviewitem.k-listview-item.k-selected {
-                background-color: rgba(255, 99, 88, 0.25); /* Adjust the RGB color as desired */
-            }
-        </style>
-        ````
+    #webReportDesigner .trv-parameter-header {
+        width: auto;
+        margin-right: 15px;
+    }
+    #webReportDesigner .trv-listviewitem.k-listview-item.k-selected {
+        background-color: rgba(255, 99, 88, 0.25); /* Adjust the RGB color as desired */
+    }
+</style>
+````
 
-        ![List Item Selection Highlight Applied](images/wrd-selection-highlight-list-item-style.png)   
+    ![List Item Selection Highlight Applied](images/wrd-selection-highlight-list-item-style.png)
 
 To identify the CSS class, feel free to inspect the respective HTML element on the page:
 
-![Inspect CSS Class](images/wrd-inspect-css-class-style.png)    
+![Inspect CSS Class](images/wrd-inspect-css-class-style.png)
 
 >note Replace `#webReportDesigner` with the actual ID of your Web Report Designer element if it differs.
 

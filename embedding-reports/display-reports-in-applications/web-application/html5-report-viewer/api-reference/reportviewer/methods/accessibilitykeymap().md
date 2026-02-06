@@ -7,7 +7,7 @@ tags: accessibilitykeymap()
 published: True
 reportingArea: HTML5
 position: 1
-previous_url: /html5-report-viewer-reportviewer-methods-accessibility-keymap
+previous_url: /html5-report-viewer-reportviewer-methods-accessibility-keymap, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap()
 ---
 
 # The `accessibilityKeyMap()` method of the HTML5 Report Viewer

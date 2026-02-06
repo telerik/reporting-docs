@@ -2,7 +2,7 @@
 title: Scope
 page_title: Expression/Data Scope Explained
 description: "Learn what is Expression or Data Scope in Telerik Reporting and how you may determine it when designing reports."
-slug: telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-
+slug: telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope
 tags: expression,scope,data,report,design
 published: True
 position: 1
@@ -18,8 +18,8 @@ Data scopes are defined by the data items and groups. Data items contain all dat
 
 The [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) change the data scope. This means that all report items on the same report hierarchy level as the data item, including the latter, live in the scope of their parent. The data scope of the items within the data item is switched by the latter and is determined by the `DataSource` of the data item. This results in some data item specifics that you may observe on the surface of a data item:
 
-* The `Fields` [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) represents the parent data scope when used with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) and [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}). The inner fields of the data item DataSource cannot be accessed in them.
-* The properties [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%}), [Grouping]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}), and [Sorting]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report%}) recognize as `Fields` the fields from the current data item DataSource. In this property, you may access the parent data scope through the `ReportItem.DataObject` Global Object.
+- The `Fields` [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) represents the parent data scope when used with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) and [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}). The inner fields of the data item DataSource cannot be accessed in them.
+- The properties [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%}), [Grouping]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}), and [Sorting]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report%}) recognize as `Fields` the fields from the current data item DataSource. In this property, you may access the parent data scope through the `ReportItem.DataObject` Global Object.
 
 The report processor evaluates the expressions in a named scope or the default scope. The default scope depends on the report item property that the report processor is evaluating.
 
@@ -31,4 +31,4 @@ By default, all non-aggregating functions are usually evaluated in the default s
 
 Aggregate functions always operate over the entire set of data defined by their scope. If the current scope is a detail section or a detail group, the calculations are performed over a single item of the data source.
 
->note You can set the scope of the expression evaluation by using the built-in `Exec` function.
+> note You can set the scope of the expression evaluation by using the built-in `Exec` function.

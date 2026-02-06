@@ -4,8 +4,8 @@ description: "Learn how to resize the HTML5 Report Viewer and its MVC wrapper to
 type: how-to
 page_title: Resize the HTML5 Viewer and its MVC wrapper to accommodate its content
 slug: how-to-resize-the-report-viewer-to-accommodate-its-content
-position: 
-tags: 
+position:
+tags:
 res_type: kb
 ---
 
@@ -38,81 +38,75 @@ The default behavior of the viewer can be changed so the viewer is resized autom
 
 1. Remove the default report viewer container styles if they are present in your application:
 
-	````CSS
-#reportViewer1 {
-		position: absolute;
-		left: 5px;
-		right: 5px;
-		top: 40px;
-		bottom: 5px;
-		overflow: hidden;
-		clear: both;
-	}
-````
-
+   ```CSS
+   #reportViewer1 {
+   	position: absolute;
+   	inset: 5px;
+   	overflow: hidden;
+   	clear: both;
+   }
+   ```
 
 1. Add the following styles to the page:
 
-	````CSS
-#reportViewer1 {
-		height: 600px;
-	}
+   ```CSS
+   #reportViewer1 {
+   	height: 600px;
+   }
 
-	#reportViewer1 .k-splitter .k-scrollable {
-		overflow: hidden;
-	}
-````
-
+   #reportViewer1 .k-splitter .k-scrollable {
+   	overflow: hidden;
+   }
+   ```
 
 1. Set the viewer page mode to the single page.
 
-	````JavaScript
-$(document).ready(function () {
-		$("#reportViewer1")
-			.telerik_ReportViewer({
-				serviceUrl: "api/reports/",
-				reportSource: {
-					report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary"
-				},
-				pageMode: telerikReportViewer.PageModes.SINGLE_PAGE,
-			});
-	});
-````
-
+   ```JavaScript
+   $(document).ready(function () {
+   	$("#reportViewer1")
+   		.telerik_ReportViewer({
+   			serviceUrl: "api/reports/",
+   			reportSource: {
+   				report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary"
+   			},
+   			pageMode: telerikReportViewer.PageModes.SINGLE_PAGE,
+   		});
+   });
+   ```
 
 1. Subscribe to the viewer's `pageReady` event and set the Viewer hight based on the report page content:
 
-	````JavaScript
-$(document).ready(function () {
-		$("#reportViewer1")
-			.telerik_ReportViewer({
-				serviceUrl: "api/reports/",
-				reportSource: {
-					report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary"
-				},
-				//Resize the viewer when the page is ready
-				pageReady: function (e, args) {
-					resizeViewer();
-				}
-			});
-		
-		function resizeViewer() {
-			var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calculate the report page height
-				viewer = $("#reportViewer1"),
-				viewerHeight = viewer.height();
-		
-			if (viewerHeight !== pageHeight ) {
-				viewer.height(pageHeight);
-				var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
-				documentMapSplitter.resize(true);
-		
-				var parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
-				parameterSplitter.resize(true);
-			}
-		}
-	});
-````
+   ```JavaScript
+   $(document).ready(function () {
+   	$("#reportViewer1")
+   		.telerik_ReportViewer({
+   			serviceUrl: "api/reports/",
+   			reportSource: {
+   				report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary"
+   			},
+   			//Resize the viewer when the page is ready
+   			pageReady: function (e, args) {
+   				resizeViewer();
+   			}
+   		});
 
+   	function resizeViewer() {
+   		let pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2;
+   		// Calculate the report page height
+   		let viewer = $("#reportViewer1");
+   		let viewerHeight = viewer.height();
+
+   		if (viewerHeight !== pageHeight ) {
+   			viewer.height(pageHeight);
+   			let documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
+   			documentMapSplitter.resize(true);
+
+   			let parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
+   			parameterSplitter.resize(true);
+   		}
+   	}
+   });
+   ```
 
 ### Steps for the MVC wrapper for HTML5 Report Viewer
 
@@ -120,49 +114,48 @@ $(document).ready(function () {
 1. The same as for the pure HTML5 Report Viewer
 1. Set the viewer's page mode to the single page:
 
-	````C#
-@(Html.TelerikReporting().ReportViewer()
-		.Id("reportViewer1")
-		//...
-		.PageMode(PageMode.SinglePage)
-	)
-````
-
+   ```C#
+   @(Html.TelerikReporting().ReportViewer()
+   	.Id("reportViewer1")
+   	//...
+   	.PageMode(PageMode.SinglePage)
+   )
+   ```
 
 1. Subscribe to the viewer's `pageReady` event and set the viewer's height based on the report page content:
 
-	````C#
-@(Html.TelerikReporting().ReportViewer()
-		.Id("reportViewer1")
-		//...
-		.PageMode(PageMode.SinglePage)
-		.ClientEvents(
-			events => events
-						.PageReady("onPageReady")
-		)
-	)
-````
+   ```C#
+   @(Html.TelerikReporting().ReportViewer()
+   	.Id("reportViewer1")
+   	//...
+   	.PageMode(PageMode.SinglePage)
+   	.ClientEvents(
+   		events => events
+   					.PageReady("onPageReady")
+   	)
+   )
+   ```
 
-	````JavaScript
-<script type="text/javascript">
-		function onPageReady() {
-			resizeViewer();
-		}
+   ```HTML
+   <script type="text/javascript">
+   	function onPageReady() {
+   		resizeViewer();
+   	}
 
-		function resizeViewer() {
-			var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calculate the report page height
-				viewer = $("#reportViewer1"),
-				viewerHeight = viewer.height();
-		
-			if (viewerHeight !== pageHeight ) {
-				viewer.height(pageHeight);
-				var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
-				documentMapSplitter.resize(true);
-		
-				var parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
-				parameterSplitter.resize(true);
-			}
-		}
-	</script>
-````
+   	function resizeViewer() {
+   		var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2;
+   		// Calculate the report page height
+   		let	viewer = $("#reportViewer1");
+   		let	viewerHeight = viewer.height();
 
+   		if (viewerHeight !== pageHeight ) {
+   			viewer.height(pageHeight);
+   			var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
+   			documentMapSplitter.resize(true);
+
+   			var parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
+   			parameterSplitter.resize(true);
+   		}
+   	}
+   </script>
+   ```

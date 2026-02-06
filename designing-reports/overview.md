@@ -34,8 +34,8 @@ Telerik Reporting supports the following declarative report definitions:
 
 Telerik Reporting supports the following programmatic report definitions:
 
-* CS/VB Report is a custom class that inherits from [`Telerik.Reporting.Report`](/api/Telerik.Reporting.Report).
-* CS/VB Report Book is a custom class that inherits from [`Telerik.Reporting.ReportBook`](/api/Telerik.Reporting.ReportBook).
+* CS/VB Report is a custom class that inherits from [`Telerik.Reporting.Report`](/api/telerik.reporting.report).
+* CS/VB Report Book is a custom class that inherits from [`Telerik.Reporting.ReportBook`](/api/telerik.reporting.reportbook).
 
 ## Basic Tips for Working with Data
 

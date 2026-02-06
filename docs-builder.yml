@@ -1,0 +1,650 @@
+top-navigation-product: reporting
+path-prefix: /products/reporting/documentation
+product-id: 521
+product-name: Telerik Reporting
+product-url: https://www.telerik.com/products/reporting
+product-code: REPORTING
+product-trial-url: https://www.telerik.com/try/reporting
+contribute-url: https://github.com/telerik/reporting-docs/edit/master
+search-engine-id: 001595215763381649090:zzabynuukmu
+cta-overview: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out sign up for a free 30-day trial."
+cta-intro: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out sign up for a free 30-day trial."
+default-title-prefix: Telerik Reporting
+
+# images
+avatar-path: ./images/avatar-ninja.svg
+no-results-image-path: ./images/ninja-no-results.svg
+pdf-cover-png-path: ./images/pdf-cover.png
+code-snippets-basePath: ../reporting
+img-max-width: 100%
+
+# tables and colors
+primary-color:
+  light: "#1D8800"
+  dark: "#68BF51"
+enable-tabbed-code-blocks: true
+table-layout: fixed
+
+# regex replacements for markdown files
+markdown-replacements:
+  - pattern: \[(?:`?(.*?)`?)\]\(\/reporting\/api\/([^)]+)\)
+    replacement: "[$1](/api/$2)"
+  - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
+    replacement: "[$1](slug:$2)"
+  # removing code snippets on build until the replacement tool is ready
+  # - pattern: \{\{source=.*?\}\}
+  #   replacement: "code snippets"
+  ## API REF REPLACEMENT
+  ##  pointing (/api) links to the live api reference
+  # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
+  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
+
+# liquid variables
+liquid-output-delimiter-left: "{{"
+liquid-output-delimiter-right: "}}"
+liquid:
+  suiteversion: "2025 Q4"
+  buildversion: "19.3.26.121"
+  reportserverversion: "11.3.26.121"
+  spaviewerversion: "28.26.121"
+  nodeversion: "16.0.0"
+  angularsubsetversion: "21.1.0"
+  kendosubsetversion: "2025.4.1111"
+  kendothemeversion: "12.3.0"
+  blazoruiversion: "9.1.0"
+  mindotnetversion: "8"
+  mindotnetoutputdir: "\\bin\\Debug\\net8.0"
+  dotnetversions: ".NET 8, .NET 9, and .NET 10"
+
+# table of contents and navigation
+meta:
+  # Reporting Documentation Main Nodes:
+  introduction:
+    position: 0
+    title: "Introduction to Reporting"
+  getting-started:
+    position: 10
+    title: "Getting Started"
+  ai-coding-assistant:
+    position: 11
+    title: "AI Coding Assistant"
+  user-guide:
+    position: 12
+    title: "Web Designer - User Guide"
+  ide-integration:
+    position: 15
+    title: "IDE Integration"
+  security:
+    position: 20
+    title: "Security"
+  licensing:
+    position: 25
+    title: "Licensing"
+  report-items:
+    position: 30
+    title: "Report Items"
+  designing-reports:
+    position: 40
+    title: "Creating Reports"
+  embedding-reports:
+    position: 50
+    title: "Embedding Reports"
+  importing-reports:
+    position: 60
+    title: "Importing Reports"
+  styling:
+    position: 70
+    title: "Styles & Appearance"
+  interactivity:
+    position: 80
+    title: "Interactivity"
+  globalization:
+    position: 90
+    title: "Globalization"
+  doc-output:
+    position: 100
+    title: "Document Output"
+  upgrade:
+    position: 110
+    title: "Upgrade"
+  knowledge-base:
+    position: 200
+    res_type: kb
+    title: "Knowledge Base"
+    relativeUrl: /knowledge-base
+    hideChildren: true
+  api:
+    position: 300
+    title: "API Reference"
+    pdfHidden: true
+  api/*:
+    res_type: api
+    hideCta: true
+
+  ## Getting Started section:
+  getting-started/web-designer:
+    position: 5
+    title: "Web Report Designer"
+  getting-started/installation:
+    position: 6
+    title: "Download & Installation"
+
+  ## User Guide section:
+  user-guide/components:
+    position: 1
+    title: "Components"
+
+  ## Report Items section:
+  report-items/barcode:
+    position: 1
+    title: "Barcode"
+  ### Barcode subsection:
+  report-items/barcode/1d-barcodes:
+    position: 20
+    title: "1D Barcodes"
+  report-items/barcode/2d-barcodes:
+    position: 30
+    title: "2D Barcodes"
+
+  report-items/gauge:
+    position: 4
+    title: "Gauge"
+  report-items/graph:
+    position: 5
+    title: "Graph"
+  ### Graph subsection:
+  report-items/graph/chart-types:
+    position: 10
+    title: "Chart Types"
+  report-items/graph/formatting-a-graph:
+    position: 20
+    title: "Styling and Formatting"
+
+  report-items/htmltextbox:
+    position: 6
+    title: "HtmlTextBox"
+  report-items/map:
+    position: 7
+    title: "Map"
+  ### Map subsection:
+  report-items/map/map-types:
+    position: 10
+    title: "Types and Customization"
+  report-items/map/structure:
+    position: 15
+    title: "Structure and Elements"
+  report-items/map/formatting-a-map:
+    position: 20
+    title: "Styling and Formatting"
+
+  report-items/report-item:
+    position: 10
+    title: "Report"
+  report-items/table-crosstab-list:
+    position: 13
+    title: "Table"
+
+  ## Creating Reports section:
+  designing-reports/report-designer-tools:
+    position: 4
+    title: "Report Designers"
+  ### Report Designers subsection:
+  designing-reports/report-designer-tools/web-report-designer:
+    position: 10
+    title: "Web Report Designer"
+  designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application:
+    position: 10
+    title: "Set Up in .NET Core 2.1"
+    hidden: true
+  designing-reports/report-designer-tools/web-report-designer/tools:
+    position: 10
+    title: "Tools"
+  designing-reports/report-designer-tools/desktop-designers:
+    position: 11
+    title: "Desktop Designers"
+  designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
+    position: 10
+    title: "Standalone Report Designer"
+  designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration:
+    position: 10
+    title: "Configuration"
+  designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer:
+    position: 11
+    title: "Visual Studio Report Designer"
+  designing-reports/report-designer-tools/desktop-designers/tools:
+    position: 12
+    title: "Tools"
+  designing-reports/report-designer-tools/desktop-designers/tools/report-wizards:
+    position: 10
+    title: "Report Wizards"
+  designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard:
+    position: 10
+    title: "Band Report Wizard"
+  designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards:
+    position: 11
+    title: "Data Source Wizards"
+
+  ### Connecting to Data subsection:
+  designing-reports/connecting-to-data:
+    position: 5
+    title: "Connecting to Data"
+  designing-reports/connecting-to-data/data-source-components:
+    position: 10
+    title: "Data Source Components"
+  designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
+    position: 5
+    title: "SqlDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers:
+    position: 10
+    title: "Using Data Providers"
+  designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
+    position: 11
+    title: "WebServiceDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
+    position: 12
+    title: "CsvDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/graphqldatasource-component:
+    position: 13
+    title: "GraphQLDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+    position: 14
+    title: "ObjectDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
+    position: 24
+    title: "EntityDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
+    position: 25
+    title: "OpenAccessDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
+    position: 26
+    title: "CubeDataSource Component"
+  designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
+    position: 27
+    title: "OpenClientDataSource Component"
+  designing-reports/connecting-to-data/data-items:
+    position: 11
+    title: "Data Items"
+  designing-reports/connecting-to-data/data-items/filtering-data:
+    position: 10
+    title: "Filtering Data"
+  designing-reports/connecting-to-data/data-items/ordering-data:
+    position: 11
+    title: "Ordering Data"
+  designing-reports/connecting-to-data/data-items/grouping-data:
+    position: 12
+    title: "Grouping Data"
+  designing-reports/connecting-to-data/expressions:
+    position: 12
+    title: "Expressions"
+  designing-reports/connecting-to-data/expressions/using-expressions:
+    position: 10
+    title: "Using Expressions"
+  designing-reports/connecting-to-data/expressions/expressions-reference:
+    position: 11
+    title: "Expressions Reference"
+  designing-reports/connecting-to-data/expressions/expressions-reference/functions:
+    position: 15
+    title: "Functions"
+  designing-reports/connecting-to-data/expressions/extending-expressions:
+    position: 12
+    title: "Extending Expressions"
+  designing-reports/connecting-to-data/report-parameters:
+    position: 13
+    title: "Report Parameters"
+  ### Report Book subsection:
+  designing-reports/report-book:
+    position: 6
+    title: "Report Book"
+
+  ## Embedding Reports section:
+  embedding-reports/host-the-report-engine-remotely:
+    position: 50
+    title: "Generating Reports Remotely"
+  embedding-reports/display-reports-in-applications:
+    position: 60
+    title: "Displaying Reports"
+  embedding-reports/cache-management:
+    position: 70
+    title: "Cache Management"
+  embedding-reports/program-the-report-definition:
+    position: 80
+    title: "Managing Reports Programmatically"
+
+  ### Generating Reports Remotely subsection:
+  embedding-reports/host-the-report-engine-remotely/asp.net-web-api-implementation:
+    position: 10
+    title: "ASP.NET Web API Implementation"
+  embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation:
+    position: 11
+    title: "ASP.NET Core Web API Implementation"
+  embedding-reports/host-the-report-engine-remotely/servicestack-implementation:
+    position: 12
+    title: "ServiceStack Implementation"
+  embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver:
+    position: 13
+    title: "REST Service Report Source Resolver"
+  embedding-reports/host-the-report-engine-remotely/rest-service-storage:
+    position: 14
+    title: "REST Service Storage"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference:
+    position: 15
+    title: "REST API Reference"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/clients-api:
+    position: 10
+    title: "Clients API"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api:
+    position: 11
+    title: "Report Parameters API"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-instances-api:
+    position: 12
+    title: "Report Instances API"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api:
+    position: 13
+    title: "Documents API"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api:
+    position: 14
+    title: "General API"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities:
+    position: 15
+    title: "JSON Entities"
+  embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api:
+    position: 16
+    title: "Features API"
+
+  ### Hidden From TOC
+  embedding-reports/display-reports-in-applications/silverlight-application:
+    position: 99
+    title: "Silverlight Application"
+    hidden: true
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application:
+    position: 13
+    title: "How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 Application"
+    hidden: true
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application:
+    position: 14
+    title: "How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 Application"
+    hidden: true
+  embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
+    position: 199
+    title: "ASP.NET Web Forms Report Viewer"
+    hidden: true
+  embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service:
+    position: 200
+    title: "Telerik Reporting WCF Service"
+    hidden: true
+  embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/host-reports-service-in-.net-core-2.1-and-2.2:
+    position: 210
+    title: "Host Reports Service in .NET Core 2.1 and 2.2"
+    hidden: true
+  embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1:
+    position: 220
+    title: "How to Host Reports Service in ASP.NET Core 3.1"
+    hidden: true
+
+  ### Displaying Reports subsection:
+  embedding-reports/display-reports-in-applications/web-application:
+    position: 10
+    title: "Web Application"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer:
+    position: 1
+    title: "HTML5 Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing:
+    position: 10
+    title: "Customizing"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance:
+    position: 15
+    title: "Styling and Appearance"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference:
+    position: 12
+    title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "ReportViewer"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events:
+    position: 10
+    title: "Events"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods:
+    position: 11
+    title: "Methods"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties:
+    position: 12
+    title: "Properties"
+  embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace:
+    position: 12
+    title: "telerikReportViewer Namespace"
+
+  embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer:
+    position: 2
+    title: "Native Blazor Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing:
+    position: 12
+    title: "Customizing"
+  embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference:
+    position: 14
+    title: "API Reference"
+
+  embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer:
+    position: 3
+    title: "Blazor Report Viewer"
+
+  embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer:
+    position: 4
+    title: "Native Angular Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
+    position: 15
+    title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing:
+    position: 14
+    title: "Customizing"
+
+  embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
+    position: 5
+    title: "Angular Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
+    position: 12
+    title: "Customizing"
+  embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
+    position: 14
+    title: "API Reference"
+
+  embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
+    position: 5
+    title: "React Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing:
+    position: 12
+    title: "Customizing"
+  embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference:
+    position: 14
+    title: "API Reference"
+
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
+    position: 6
+    title: "HTML5 ASP.NET MVC Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
+    position: 15
+    title: "Customizing"
+
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
+    position: 7
+    title: "HTML5 ASP.NET Web Forms Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
+    position: 15
+    title: "Customizing"
+
+  embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder:
+    position: 8
+    title: "Styling with ThemeBuilder"
+
+  embedding-reports/display-reports-in-applications/windows-forms-application:
+    position: 11
+    title: "Windows Forms Application"
+  embedding-reports/display-reports-in-applications/wpf-application:
+    position: 12
+    title: "WPF Application"
+  embedding-reports/display-reports-in-applications/wpf-application/customizing:
+    position: 23
+    title: "Customizing"
+  embedding-reports/display-reports-in-applications/winui-3-desktop-application:
+    position: 1150
+    title: "WinUI 3 Desktop Application"
+
+  ### Managing Reports Programmatically subsection:
+  embedding-reports/program-the-report-definition/report-events:
+    position: 15
+    title: "Report Events"
+
+  ## Styles & Appearance section:
+  styling/styling-reports:
+    position: 1
+    title: "Styling"
+  styling/rendering-and-paging:
+    position: 8
+    title: "Rendering and Paging"
+
+  ### Rendering and Paging subsection:
+  styling/rendering-and-paging/design-considerations-for-report-rendering:
+    position: 15
+    title: "Design Considerations for Report Rendering"
+
+  ## Interactivity section:
+  interactivity/actions:
+    position: 11
+    title: "Actions"
+  interactivity/table-of-contents:
+    position: 13
+    title: "Table of Contents"
+
+  ### Actions subsection:
+  interactivity/actions/sorting-action:
+    position: 11
+    title: "Sorting Action"
+
+  # Document Output section:
+  doc-output/configure-the-report-engine:
+    position: 10
+    title: "Configuring the Report Engine"
+  doc-output/configure-the-export-formats:
+    position: 11
+    title: "Configuring the Output Formats"
+
+redirects:
+  - from: "^/?$"
+    to: "/introduction"
+    type: Permanent
+
+  - from: "/licensing/?$"
+    to: "/licensing/setting-up-your-telerik-reporting-license-key"
+    type: Permanent
+
+  - from: "/r-project-reporting"
+    to: "/api"
+    type: Permanent
+
+  - from: "/knowledgebase"
+    to: "/knowledge-base"
+    type: Permanent
+
+  - from: "/designing-reports-report-globalization"
+    to: "/globalization/overview"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/export-and-configure/configure-the-export-formats/(.*)$"
+    to: "/doc-output/configure-the-export-formats/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/export-and-configure/configure-the-report-engine/(.*)$"
+    to: "/doc-output/configure-the-report-engine/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/display-reports-in-applications/(.*)$"
+    to: "/embedding-reports/display-reports-in-applications/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/host-the-report-engine-remotely/(.*)$"
+    to: "/embedding-reports/host-the-report-engine-remotely/$1"
+    type: Permanent
+
+  - from: "/using-reports-in-applications/program-the-report-definition/(.*)$"
+    to: "/embedding-reports/program-the-report-definition/$1"
+    type: Permanent
+
+  - from: "/designing-reports/adding-interactivity-to-reports/(.*)$"
+    to: "/interactivity/$1"
+    type: Permanent
+
+  - from: "/designing-reports/rendering-and-paging/(.*)$"
+    to: "/styling/rendering-and-paging/$1"
+    type: Permanent
+
+  - from: "/designing-reports/styling-reports/(.*)$"
+    to: "/styling/styling-reports/$1"
+    type: Permanent
+
+  - from: "/designing-reports/converting-reports-from-other-reporting-solutions/(.*)$"
+    to: "/importing-reports/$1"
+    type: Permanent
+
+    # external redirects
+  - from: "/personal-data-collection"
+    to: "https://www.progress.com/legal/privacy-policy"
+    type: Permanent
+  - from: "/copyright"
+    to: "https://www.progress.com/legal/documentation-copyright"
+    type: Permanent
+
+    # Hashtag redirects
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action"
+    to: "/interactivity/actions/bookmark-action#how-to-add-a-bookmark-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action"
+    to: "/interactivity/actions/drillthrough-report-action#how-to-add-a-drillthroughnavigate-to-report-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action"
+    to: "/interactivity/actions/hyperlink-action#how-to-add-a-hyperlink-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action"
+    to: "/interactivity/actions/drilldown-report-action#how-to-add-a-drilldowntoggle-visibility-action"
+    type: Permanent
+  - from: "/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action"
+    to: "/interactivity/actions/custom-action#how-to-add-a-custom-action"
+    type: Permanent
+
+  # KB Redirects
+  - from: "/knowledge-base/oracle-error-ora-01008-on-report-preview "
+    to: "/knowledge-base/oracle-error-ora-01008-on-report-preview"
+    type: Permanent
+  - from: "/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-connect-to-google-books-apis"
+    to: "/knowledge-base/how-to-connect-to-google-books-apis"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-show-the-page-scroll-mode-button"
+    to: "/knowledge-base/how-to-show-the-page-scroll-mode-button"
+    type: Permanent
+  - from: "/troubleshooting/design-time"
+    to: "/knowledge-base/cannot-find-telerik-namespace-build-error"
+    type: Permanent
+  - from: "/troubleshooting/installation"
+    to: "/knowledge-base/installer-fails"
+    type: Permanent
+  - from: "/troubleshooting/run-time"
+    to: "/knowledge-base/cannot-create-objects-from-string-representations"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting/silverlight-reportviewer-troubleshooting"
+    to: "/knowledge-base/silverlight-viewer-not-visible-on-running-app"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/asp.net-webforms-reportviewer-troubleshooting"
+    to: "/knowledge-base/webforms-viewer-report-unavailable-session-expired"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/html5-viewer-troubleshooting"
+    to: "/knowledge-base/cannot-load-html5-viewer-templates-error"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/windows-forms-application/troubleshooting/winforms-reportviewer-troubleshooting"
+    to: "/knowledge-base/winforms-viewer-does-not-display-report"
+    type: Permanent
+  - from: "/using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting"
+    to: "/knowledge-base/wpf-viewer-not-visible-on-running-app"
+    type: Permanent
+
+  # API Reference redirects
+  - from: "^/(e-|f-|events-t-|fields-t-|methods-t-|properties-t-|constructors-t-|t-|m-|p-|overload-|ctor-)telerik-.*"
+    to: "/api/"
+    type: Permanent

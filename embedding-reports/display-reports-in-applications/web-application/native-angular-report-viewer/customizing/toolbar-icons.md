@@ -10,14 +10,36 @@ position: 1
 ---
 
 <style>
+
+table {
+	color: var(--text-secondary) !important;
+	margin: auto;
+}
+
+table svg {
+	fill: var(--text-secondary) !important;
+}
+
 table th:first-of-type {
 	width: 15%;
+	text-align: center !important;
 }
 table th:nth-of-type(2) {
 	width: 25%;
+	text-align: center !important;
 }
+
+table td:first-of-type {
+	text-align: center !important;
+}
+table td:nth-of-type(2) {
+	text-align: center !important;
+}
+
 table th:nth-of-type(3) {
 	width: 60%;
+	text-align: left !important;
+	padding-left: 10px;
 }
 </style>
 

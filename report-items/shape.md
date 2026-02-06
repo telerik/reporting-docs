@@ -32,7 +32,7 @@ The following table lists the `ShapeType` property modes supported by the Shape.
 ||||Octagon 
 ||||Cross 
 
-The Shape enables you to create custom shapes programmatically. The following code snippet shows how to inherit the [`ShapeBase`](/api/Telerik.Reporting.Drawing.Shapes.ShapeBase) class and provide a custom set of `PointF` arrays that will form the Shape. The coordinates of the points are relative and do not depend on the size or position of the item in the report.
+The Shape enables you to create custom shapes programmatically. The following code snippet shows how to inherit the [`ShapeBase`](/api/telerik.reporting.drawing.shapes.shapeBase) class and provide a custom set of `PointF` arrays that will form the Shape. The coordinates of the points are relative and do not depend on the size or position of the item in the report.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CustomShapeClassDeclarationSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CustomShapeClassDeclarationSnippet}}

@@ -5,6 +5,7 @@ type: how-to
 page_title: Preview report definition, which uses an external assembly with user-defined functions or CLR objects
 slug: deploying-trdx-(xml-report-definition)-that-uses-external-assembly
 res_type: kb
+previous_url: /knowledge-base/deploying-trdx-(xml-report-definition)-that-uses-external-assembly
 ---
 
 ## Environment

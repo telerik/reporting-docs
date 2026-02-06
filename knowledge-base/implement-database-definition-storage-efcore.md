@@ -558,8 +558,7 @@ In this article, we will demonstrate how the report definitions can be stored in
 
    // Add services to the container.
    builder.Services.AddControllers();
-   builder.Services.AddRazorPages()
-   				.AddNewtonsoftJson();
+   builder.Services.AddRazorPages();
 
    // Add the custom resolvers and storages
    builder.Services.AddDbContext<SqlDefinitionStorageContext>();

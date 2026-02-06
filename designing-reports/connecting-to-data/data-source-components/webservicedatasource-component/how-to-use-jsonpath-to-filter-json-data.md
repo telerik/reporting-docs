@@ -18,9 +18,9 @@ In this article, we discuss using JSONPath expressions in the Data Selector to q
 
 Very often the JSON data returned from a web service contains a single parent object that wraps child objects and/or arrays. If the parent object is used directly the report will not display any detail records. Therefore it is more convenient to return an array of the child objects or a particular nested array using a JSONPath expression.
 
->caption Example
+> caption Example
 
-````JSON
+```JSON
 {
 	"store": {
 		"book": [
@@ -39,15 +39,15 @@ Very often the JSON data returned from a web service contains a single parent ob
 		]
 	}
 }
-````
+```
 
->caption JSONPath
+> caption JSONPath
 
 `$.store.book`
 
->caption Result
+> caption Result
 
-````JSON
+```JSON
 [
 	{
 		"category": "reference",
@@ -62,15 +62,15 @@ Very often the JSON data returned from a web service contains a single parent ob
 		"price": 12.99
 	}
 ]
-````
+```
 
 ## JSONPath Filter Arrays
 
 In other scenarios, it might be useful to filter the JSON data to display only objects matching specific criteria.
 
->caption Example
+> caption Example
 
-````JSON
+```JSON
 {
 	"store": {
 		"book": [
@@ -89,23 +89,37 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 		]
 	}
 }
-````
+```
 
->caption JSONPath
+> caption JSONPath
 
 `$.store.book[?(@.price<10)]`
 
->caption Result
+> caption Result
 
-````JSON
-[
-	{
-		"category": "reference",
-		"author": "Nigel Rees",
-		"title": "Sayings of the Century",
-		"price": 8.95
-	}
-]
-````
+```JSON
+{
+   "store":{
+      "book":[
+         {
+            "category":"reference",
+            "price":8.95
+         },
+         {
+            "category":"fiction",
+            "price":12.99
+         },
+         {
+            "category":"fiction",
+            "price":5.99
+         },
+         {
+            "category":"fiction",
+            "price":9.50
+         }
+      ]
+   }
+}
+```
 
->tip When testing for equality in JSONPath filter, use `==` for equality and `!=` for inequality.
+> tip When testing for equality in JSONPath filter, use `==` for equality and `!=` for inequality.

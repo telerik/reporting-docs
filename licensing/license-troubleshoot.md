@@ -93,7 +93,6 @@ Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that do
    // ...
    // Configure the Telerik Reporting REST Service with Minimal API
    builder.Services.AddRazorPages()
-                   .AddNewtonsoftJson()
                    .AddTelerikReporting("ReportingNet10", reportsPath);
 
    // Collect the content of the aggregated Telerik Licensing log

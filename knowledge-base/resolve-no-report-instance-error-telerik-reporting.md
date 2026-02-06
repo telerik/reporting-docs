@@ -26,6 +26,8 @@ ticketid: 1670454
 
 ## Description
 
+> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+
 After upgrading a project to use the [Progress® Telerik® Reporting 2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112) version of the Telerik Reporting assemblies, the reports fail to load with a console error stating `No report instance` was found.
 
 ## Cause

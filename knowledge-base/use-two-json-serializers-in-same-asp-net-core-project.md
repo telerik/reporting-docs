@@ -17,10 +17,18 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Version</td>
+			<td>Up to 19.3.26.121(including)</td>
+		</tr>
 	</tbody>
 </table>
 
 ## Description
+
+> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+> <br/>
+> If you need to use `NewtonsoftJson` in non-reporting controllers, that would still be possible with the [Local](#local) approach demonstrated below. See [The type or namespace name NewtonsoftJsonOutputFormatter could not be found](slug:type-or-namespace-newtonsoftjsonoutputformatter-could-not-be-found) for more information on the topic.
 
 A common requirement is to use [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-7.0) for serialization, instead of the required by the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) serialization package [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/).
 
@@ -38,7 +46,7 @@ To ensure that the approach works, you may put break points in the conditional s
 
 Here is the code of the class that is not implemented in the Stackoverflow thread:
 
-````CSharp
+```C#
 internal class MySuperJsonOutputFormatter : TextOutputFormatter
 {
 	public MySuperJsonOutputFormatter()
@@ -75,7 +83,7 @@ internal class MySuperJsonOutputFormatter : TextOutputFormatter
 		await formatter.WriteResponseBodyAsync(context, selectedEncoding);
 	}
 }
-````
+```
 
 ### Local
 
@@ -85,12 +93,12 @@ If you don't want to configure serialization options globally, you can create `S
 
 It will take the result object of any endpoint, use the Newtonsoft serializer to produce a JSON string, and replace the endpoint result with that.
 
-````CSharp
-public class ToNewtonsoftActionFilter : IAsyncResultFilter 
+```C#
+public class ToNewtonsoftActionFilter : IAsyncResultFilter
 {
-	public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next) 
+	public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
 	{
-		if (context.Result is JsonResult jsonResult) 
+		if (context.Result is JsonResult jsonResult)
 		{
 			string jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(jsonResult.Value, (Newtonsoft.Json.JsonSerializerSettings?)jsonResult.SerializerSettings ?? new Newtonsoft.Json.JsonSerializerSettings {
 				ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver { NamingStrategy = new Newtonsoft.Json.Serialization.CamelCaseNamingStrategy() }
@@ -102,20 +110,19 @@ public class ToNewtonsoftActionFilter : IAsyncResultFilter
 		await next().ConfigureAwait(false);
 	}
 }
-````
+```
 
-
-````CSharp
+```C#
 [ServiceFilter(typeof(ToNewtonsoftActionFilter))]
 public class ReportDesignerControllerSTJBase : ReportDesignerControllerBase
-````
+```
 
 You would also need to create `ModelBinderAttribute` attached which will cause the objects to be deserialized by Newtonsoft.
 
-````CSharp
-public class NewtonsoftJsonModelBinder : IModelBinder 
+```C#
+public class NewtonsoftJsonModelBinder : IModelBinder
 {
-	public async Task BindModelAsync(ModelBindingContext bindingContext) 
+	public async Task BindModelAsync(ModelBindingContext bindingContext)
 	{
 		if (bindingContext == null) throw new ArgumentNullException(nameof(bindingContext));
 
@@ -126,23 +133,22 @@ public class NewtonsoftJsonModelBinder : IModelBinder
 		bindingContext.Result = ModelBindingResult.Success(value);
 	}
 }
-````
+```
 
-
-````CSharp
+```C#
 public virtual new IActionResult GetMembers([ModelBinder(typeof(NewtonsoftJsonModelBinder))] TypeInfoWithFilter input) => base.GetMembers(input);
-````
+```
 
-Finally, you would need to register ToNewtonsoftActionFilter as a Singleton service in the Program.cs but the usage is completely confined to the specific controllers. 
+Finally, you would need to register ToNewtonsoftActionFilter as a Singleton service in the Program.cs but the usage is completely confined to the specific controllers.
 
-````CSharp
+```C#
 builder.Services.AddSingleton<ToNewtonsoftActionFilter>();
-````
+```
 
 The sample project may be downloaded from our `reporting-samples` Github repository [Two Json Serializers Local](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializersLocal).
 
 ## See Also
 
-* [Migrate to System.Text.Json for serialization, instead of using Newtonsoft.Json](https://feedback.telerik.com/reporting/1506593-migrate-to-system-text-json-for-serialization-instead-of-using-newtonsoft-json)
-* [How to configure two JSON serializers and select the correct one based on the route](https://stackoverflow.com/questions/59650907/how-to-configure-two-json-serializers-and-select-the-correct-one-based-on-the-ro)
-* [Two Json Serializers](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializers)
+- [Migrate to System.Text.Json for serialization, instead of using Newtonsoft.Json](https://feedback.telerik.com/reporting/1506593-migrate-to-system-text-json-for-serialization-instead-of-using-newtonsoft-json)
+- [How to configure two JSON serializers and select the correct one based on the route](https://stackoverflow.com/questions/59650907/how-to-configure-two-json-serializers-and-select-the-correct-one-based-on-the-ro)
+- [Two Json Serializers](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializers)

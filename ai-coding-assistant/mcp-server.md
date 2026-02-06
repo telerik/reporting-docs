@@ -190,6 +190,23 @@ The steps below describe the sample procedure for configuring the Telerik Report
 1. Restart Visual Studio.
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
+>warning Known Issue: Hanging tool calls in Visual Studio
+>
+> When using Telerik AI tools in Visual Studio, GitHub Copilot may:
+>
+> - **hang** during tool invocation;
+> - show UI for a successful tool response, but actually **fail silently**;
+> - continue generation without waiting for **parallel tool calls**.
+>
+> In these cases, the response may be generated but not provided to the Copilot Agent UI.
+>
+> This is a known issue in Visual Studio Copilot, not related to Telerik MCP servers or AI tools, and does not reproduce in VS Code.
+>
+> For more details, see the related Visual Studio Developer Community issue:  
+> https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456
+>
+> Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
+
 ## Visual Studio Code
 
 > * Visual Studio Code 1.102.1 or later is required to use the Telerik Reporting MCP Server.
@@ -203,7 +220,7 @@ The basic setup in Visual Studio Code involves the following steps:
 	* In .NET 10:
 
 		````JSON
-{
+		{
 			"servers": {
 				"telerik-reporting-assistant": {
 				"type": "stdio",
@@ -212,13 +229,12 @@ The basic setup in Visual Studio Code involves the following steps:
 				}
 			}
 		}
-````
-
+		````
 
 	* In .NET 8 and .NET 9:
 
 		````JSON
-{
+		{
 			"servers": {
 				"telerik-reporting-assistant": {
 				"type": "stdio",
@@ -227,13 +243,12 @@ The basic setup in Visual Studio Code involves the following steps:
 				}
 			}
 		}
-````
-
+		````
 
 	* In Node.js:
 
 		````JSON
-{
+		{
 			"servers": {
 				"telerik-reporting-assistant": {
 				"type": "stdio",
@@ -247,17 +262,15 @@ The basic setup in Visual Studio Code involves the following steps:
 				}
 			}
 		}
-````
-
+		````
 
 1. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
 	````json
-{
+	{
 		"chat.mcp.discovery.enabled": true
 	}
-````
-
+	````
 
 1. Restart Visual Studio Code.
 
@@ -272,7 +285,7 @@ Create a `.cursor/mcp.json` file in your workspace root (or user folder for glob
 * In .NET 10:
 
 	````JSON
-{
+	{
 		"mcpServers": {
 			"telerik-reporting-assistant": {
 			"type": "stdio",
@@ -281,13 +294,12 @@ Create a `.cursor/mcp.json` file in your workspace root (or user folder for glob
 			}
 		}
 	}
-````
-
+	````
 
 * In .NET 8 and .NET 9:
 
 	````JSON
-{
+	{
 		"mcpServers": {
 			"telerik-reporting-assistant": {
 			"type": "stdio",
@@ -296,13 +308,12 @@ Create a `.cursor/mcp.json` file in your workspace root (or user folder for glob
 			}
 		}
 	}
-````
-
+	````
 
 * In Node.js:
 
 	````JSON
-{
+	{
 		"mcpServers": {
 			"telerik-reporting-assistant": {
 			"type": "stdio",
@@ -316,8 +327,7 @@ Create a `.cursor/mcp.json` file in your workspace root (or user folder for glob
 			}
 		}
 	}
-````
-
+	````
 
 This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 

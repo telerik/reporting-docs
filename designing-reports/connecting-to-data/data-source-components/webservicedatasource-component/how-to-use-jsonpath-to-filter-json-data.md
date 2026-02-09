@@ -107,10 +107,6 @@ In other scenarios, it might be useful to filter the JSON data to display only o
          },
          {
             "category":"fiction",
-            "price":12.99
-         },
-         {
-            "category":"fiction",
             "price":5.99
          },
          {

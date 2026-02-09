@@ -20,7 +20,6 @@ res_type: kb
 	    	<td>Project Type</td>
 	    	<td>HTML5 Application, ASP.NET MVC, ASP.NET WebForms</td>
 	    </tr>
-      <tr>		
 		<tr>
 			<td>Target Framework</td>
 			<td>.NET Framework</td>
@@ -49,4 +48,3 @@ In our case study, the `Newtonsoft.Json.dll` copied in the **\bin** folder was t
 Although, the _packages.config_ contains the correct target framework for the **Newtonsoft.Json** package, the NuGet package manager fails to overwrite it.
 
 The solution is to delete the `Newtonsoft.Json.dll` manually and rebuild the solution, so the NuGet package manager will download the correct assembly.
-

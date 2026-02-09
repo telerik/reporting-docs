@@ -126,7 +126,7 @@ Finally, you would need to register `ToNewtonsoftActionFilter` as a [Singleton](
 builder.Services.AddSingleton<ToNewtonsoftActionFilter>();
 ```
 
-## See Alo
+## See Also
 
 - [How to configure two JSON serializers and select the correct one based on the route](https://stackoverflow.com/questions/59650907/how-to-configure-two-json-serializers-and-select-the-correct-one-based-on-the-ro)
 - [Use Both 'System.Text.Json' and 'Newtonsoft.Json' for Serialization in ASP.NET Core](slug:use-two-json-serializers-in-same-asp-net-core-project)

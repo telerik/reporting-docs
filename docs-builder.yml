@@ -68,7 +68,7 @@ meta:
   ai-coding-assistant:
     position: 11
     title: "AI Coding Assistant"
-  user-guide:
+  wrd-user-guide:
     position: 12
     title: "Web Designer - User Guide"
   ide-integration:
@@ -130,7 +130,7 @@ meta:
     title: "Download & Installation"
 
   ## User Guide section:
-  user-guide/components:
+  wrd-user-guide/components:
     position: 1
     title: "Components"
 
@@ -582,6 +582,47 @@ redirects:
 
   - from: "/designing-reports/converting-reports-from-other-reporting-solutions/(.*)$"
     to: "/importing-reports/$1"
+    type: Permanent
+
+  # User Guide redirects
+  - from: "/user-guide/user-guide-overview"
+    to: "/wrd-user-guide/user-guide-overview"
+    type: Permanent
+  - from: "/user-guide/app-tour"
+    to: "/wrd-user-guide/app-tour"
+    type: Permanent
+  - from: "/user-guide/getting-started"
+    to: "/wrd-user-guide/getting-started"
+    type: Permanent
+  - from: "/user-guide/report-templates"
+    to: "/wrd-user-guide/report-templates"
+    type: Permanent
+  - from: "/user-guide/report-structure"
+    to: "/wrd-user-guide/report-structure"
+    type: Permanent
+  - from: "/user-guide/components/components"
+    to: "/wrd-user-guide/components/components"
+    type: Permanent
+  - from: "/user-guide/components/report-items"
+    to: "/wrd-user-guide/components/report-items"
+    type: Permanent
+  - from: "/user-guide/components/tables"
+    to: "/wrd-user-guide/components/tables"
+    type: Permanent
+  - from: "/user-guide/components/subreport"
+    to: "/wrd-user-guide/components/subreport-item/overview"
+    type: Permanent
+  - from: "/user-guide/components/maps"
+    to: "/wrd-user-guide/components/maps"
+    type: Permanent
+  - from: "/user-guide/components/charts"
+    to: "/wrd-user-guide/components/charts"
+    type: Permanent
+  - from: "/user-guide/components/report-sections"
+    to: "/wrd-user-guide/components/report-sections"
+    type: Permanent
+  - from: "/user-guide/components/data-sources"
+    to: "/wrd-user-guide/components/data-sources"
     type: Permanent
 
     # external redirects

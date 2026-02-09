@@ -64,7 +64,7 @@ This guide applies the recommended NuGet package references approach to add the 
 
    The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management.
 
-   Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/) and [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
+   Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
    > note You need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the [GDI+ API](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) which is available on the Windows OS. On Linux and macOS we use the [SkiaSharp](https://github.com/mono/SkiaSharp) 2D Graphics Library based on Google's [Skia](https://skia.org/) Graphics Library.
 
@@ -72,10 +72,10 @@ This guide applies the recommended NuGet package references approach to add the 
 
 Modify the `Program.cs` file in the project to enable the Reports Service functionality.
 
-1. Make sure the application is configured for WebAPI controllers using the [AddControllers()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addcontrollers) extension method and call the [AddNewtonsoftJson](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object to enable the **NewtonsoftJson** serialization:
+1. Make sure the application is configured for WebAPI controllers using the [AddControllers()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addcontrollers) extension method:
 
    ```C#
-   builder.Services.AddControllers().AddNewtonsoftJson();
+   builder.Services.AddControllers();
    ```
 
 1. Add the dedicated [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object needed from the Reports Service in the dependency container. Note how the report source resolver will target the `Reports` folder we created earlier.

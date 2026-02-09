@@ -28,7 +28,7 @@ One way to achieve this is by creating a custom class that internally uses the [
 
 ### .NET Framework
 
-1. First, we will need to create the models for the response data. We may use Newtonsoft.Json.JsonProperty to annotate the properties:
+1. First, we will need to create the models for the response data. We may use the `Newtonsoft.Json.JsonProperty` attribute to annotate the properties:
 
    ```C#
    public class ClientIDModel
@@ -303,7 +303,13 @@ One way to achieve this is by creating a custom class that internally uses the [
    }
    ```
 
-1. The [ReadAsAsync](<https://learn.microsoft.com/en-us/previous-versions/aspnet/hh835763(v=vs.118)>) method utilized in `.NET Framework` example above is a `.NET Standard` extension that is shared between ASP.NET Core and ASP.NET Web Api (via a NuGet library). However, it uses `JSON.NET` to do the deserialization, and as of .NET Core 3.0, ASP.NET Core now uses [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json) instead. As such, this library (and the extension it contains) is not included in the `.NET Core 3.0+` framework because doing so would require including the JSON.NET library in addition to System.Text.Json. Thus, instead of adding the `Microsoft.AspNet.WebApi.Client` (and `Newtonsoft.Json` along with it), we can implement the extension method ourselves using:
+1. The [ReadAsAsync](<https://learn.microsoft.com/en-us/previous-versions/aspnet/hh835763(v=vs.118)>) method utilized in `.NET Framework` example above is a `.NET Standard` extension that is shared between ASP.NET Core and ASP.NET Web Api (via a NuGet library).
+
+   However, it uses `JSON.NET` to do the deserialization, and as of .NET Core 3.0, ASP.NET Core now uses [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json) instead.
+
+   As such, this library (and the extension it contains) is not included in the `.NET Core 3.0+` framework because doing so would require including the JSON.NET library in addition to System.Text.Json.
+
+   Thus, instead of adding the `Microsoft.AspNet.WebApi.Client` (and `Newtonsoft.Json` along with it), we can implement the extension method ourselves using:
 
    ```C#
    public static class HttpContentExtensions
@@ -315,7 +321,7 @@ One way to achieve this is by creating a custom class that internally uses the [
 
 1. The `ReportClient` class will be mostly the same as in the `.NET Framework` with the addition of the [async/await](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/) syntax.
 
-   ```CSharp
+   ```C#
    public class ReportClient : IDisposable
    {
    	public string BaseAddress { get; set; }

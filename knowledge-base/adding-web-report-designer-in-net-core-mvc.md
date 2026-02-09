@@ -14,14 +14,14 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>14.0.20.115+</td>
+			<td>14.1.20.618</td>
 		</tr>
 		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>.Net Framework</td>
+			<td>.NET Framework</td>
 			<td>.NET Core 3.1</td>
 		</tr>
 	</tbody>
@@ -41,7 +41,6 @@ The same approach can be applied for `.NET Core MVC 3.0` project.
 ## Solution
 
 1. Add the following NuGet packages:
-
    - `Telerik.Reporting.Services.AspNetCore`
    - `Telerik.WebReportDesigner.Services`
    - `Microsoft.AspNetCore.Mvc.NewtonsoftJson`
@@ -201,7 +200,9 @@ The same approach can be applied for `.NET Core MVC 3.0` project.
    }
    ```
 
-1. If you are using [SQL DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Named/Shared connection string, add the connection string in the `appsettings.json` file. Here is a sample for the MSSQL database:
+1. If you are using [SQL DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Named/Shared connection string, add the connection string in the `appsettings.json` file.
+
+   Here is a sample for the MSSQL database:
 
    ```JSON
    "ConnectionStrings": [

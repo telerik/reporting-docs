@@ -29,14 +29,14 @@ Alternatively, instead of using the item template, the Designer REST service and
 > note If **Blazor WebAssembly** project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core with Top-Level Statements Explained`]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
 
 1. Use the NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
-1. Add the required settings in the **Program.cs** file. Make sure the application is configured for WebAPI controllers and call the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method to enable the required **NewtonsoftJson** serialization:
+1. Add the required settings in the **Program.cs** file. Make sure the application is configured for WebAPI controllers:
 
    ```C#
-   builder.Services.AddRazorPages().AddNewtonsoftJson();
+   builder.Services.AddRazorPages();
    builder.Services.AddControllers();
    ```
 
-1. Add the required services in the **Program.cs** file as well. The sample configuration below uses a `Reports` folder located at the root of the project(thus the usage of the [ContentRootPath](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment.contentrootpath) property, to open and save report definitions. It is required to create the `Reports` folder manually in the root of the project, and optionally, add some report definitions inside.
+1. Add the required services in the **Program.cs** file as well. The sample configuration below uses a `Reports` folder located at the root of the project, thus the usage of the [ContentRootPath](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment.contentrootpath) property, to open and save report definitions. It is required to create the `Reports` folder manually in the root of the project, and optionally, add some report definitions inside.
 
    ```C#
    builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration

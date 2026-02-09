@@ -55,7 +55,7 @@ To view all existing Shared Data Sources, open the [Assets Manager]({%slug web-r
 
 The next video demonstrates how to create a Shared Data Source from an existing report.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yaeql2tl3tA?si=EaOahE2CMqzPQi8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1aBHsasO4fo?si=B3zJfzHi_p8Bnl8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Differences between Shared Data Source and Data Source
 

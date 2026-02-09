@@ -23,7 +23,7 @@ The example in this tutorial shows how to present and organize a report when the
 
 A complete step-by-step video is available here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kL7piTIm5qI?si=eVIrFvw-Ejbvilpy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NnG8SSPuJWg?si=6DorXM_7uV_-0lrj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To design a report that represents a hierarchy:
 

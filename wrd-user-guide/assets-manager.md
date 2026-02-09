@@ -42,7 +42,7 @@ To share a resource (e.g. an image), you need to invoke the **Assets Manager** i
 
 You do not always need to go through the menu. When you are editing a report item like a PictureBox, click the asset picker next to the `Value` field. This will instantly open the Assets Manager so you can select an image right away:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0gJMwg4zixI?si=sTYKnHU9nXpyzB2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LQndIgOzb90?si=lvlq13vAtKLU_oMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Resource Folders
 

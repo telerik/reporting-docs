@@ -28,7 +28,7 @@ CEO
 
 The approach demonstrated here uses a recursive [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) to construct a hierarchy from flat data. The main report references itself in a SubReport item, and each SubReport filters its data using a report parameter passed from its parent. This process continues recursively, building the hierarchy until no more child items remain:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qq5nTwmFgm8?si=30jdsmUlh9yBbY0N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LqzBHDsm2UY?si=ExWqRqawzTKRVL8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To create the Organizational Hierarchy, follow the steps:
 

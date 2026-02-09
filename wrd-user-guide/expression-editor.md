@@ -36,7 +36,7 @@ By using the predefined expression components in the Web Report Designers, you c
 
 The following video shows how to build expressions in an easy way using the built-in elements: 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fQ5WTemVgXo?si=HRWedyIWAUDlgHIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V9pPYD3nDT0?si=vjX_Zj4WrJqT--34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 >tip You can add a new line as a string in the Expression with the `Edit Expression` dialog.
 >

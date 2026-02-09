@@ -50,7 +50,7 @@ Starting with the **Progress® Telerik® Reporting 2026 Q1(20.0.26.210)** releas
 
 No additional setup will be needed to use the Reporting controllers, simply remove the [AddNewtonsoftJson()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method calls from the application startup file(`Program.cs`/`Startup.cs`).
 
-If the [Minimal API](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api) setup is used for the Reporting REST Service, it won't be affected even if the [AddNewtonsoftJson()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) is not removed.
+If the [Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api) setup is used for the Reporting REST Service, it won't be affected even if the [AddNewtonsoftJson()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) is not removed.
 
 ### Case 2
 

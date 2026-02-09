@@ -133,6 +133,12 @@ meta:
   wrd-user-guide/components:
     position: 1
     title: "Components"
+  wrd-user-guide/components/subreport-item:
+    position: 1
+    title: "SubReport"
+  wrd-user-guide/customizing-report-items:
+    position: 2
+    title: "Customizing Report Items"
 
   ## Report Items section:
   report-items/barcode:

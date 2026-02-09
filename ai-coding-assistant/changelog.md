@@ -4,6 +4,7 @@ page_title: Telerik Reporting AI Coding Assistant Changelog
 description: "Find out about the latest changes and improvements in the Telerik Reporting AI Coding Assistant."
 slug: ai-coding-assistant-changelog
 tags: ai, telerik, reporting, coding, assistant, changelog, release, notes
+tag: updated
 published: True
 position: 4
 ---
@@ -32,4 +33,4 @@ Learn about the latest changes, improvements, and bug fixes in the Telerik Repor
 
 ## See Also
 
-* [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
+- [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})

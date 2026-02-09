@@ -4,6 +4,7 @@ page_title: Hosting the Reporting REST Service in ASP.NET Core with Main Method
 description: "Learn how to configure the Telerik Reporting REST Service in an ASP.NET Core application in .NET through the Visual Studio project template or manually when providing the Reporting configuration in Startup.cs."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5
 tags: how,to,host,reports,service,in,asp.net,core,in,.net
+tag: updated
 published: True
 reportingArea: RESTServiceCore
 position: 3
@@ -14,7 +15,7 @@ previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports
 
 This article guides you on how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project.
 
-If you prefer to use [top level statements introduced with .NET 6](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements), refer to the article [Hosting in .NET {{site.mindotnetversion}}+ with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
+If you prefer to use [top level statements introduced with .NET 6](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements), refer to the article [Hosting in .NET {{site.mindotnetversion}}+ with Top-Level Statements]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%}).
 
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step.
 
@@ -174,4 +175,4 @@ app.UseCors("ReportingRestPolicy");
 
 - [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
 - [ASP.NET Core Web API Implementation Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
-- [Hosting in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
+- [Hosting in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})

@@ -5,6 +5,7 @@ description: "Learn more about the Shared Data Source Component in Web Report De
 slug: shared-data-source-web-report-designer-user-guide
 tags: shared,data,source,web,report,designer,design,create,report,web
 published: True
+tag: new
 reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 8
 ---

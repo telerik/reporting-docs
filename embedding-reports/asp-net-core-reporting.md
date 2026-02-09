@@ -38,9 +38,9 @@ The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-a
 
 There are different methods for configuring the Telerik Reporting REST Service in an ASP.NET Core Reporting project:
 
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}} with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
-* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
+- [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
+- [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}} with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
+- [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
 
 ## Displaying Reports in ASP.NET Core Web Reporting Applications
 
@@ -56,9 +56,9 @@ The article [Using the HTML5 Report Viewer in an ASP.NET Core application in .NE
 
 ## See Also
 
-* [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})
-* [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
-* [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
-* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
-* [Developing Blazor Reporting Applications]({%slug blazor-reporting%})
-* [Developing Single Page Web Reporting Applications]({%slug spa-reporting%})
+- [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})
+- [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
+- [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
+- [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+- [Developing Blazor Reporting Applications]({%slug blazor-reporting%})
+- [Developing Single Page Web Reporting Applications]({%slug spa-reporting%})

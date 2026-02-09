@@ -33,9 +33,9 @@ The warning appears specifically on pages that contain only the Report Viewer or
 
 Example CDN reference in `_Layout.cshtml`:
 
-````HTML
+```HTML
 <script src="https://kendo.cdn.telerik.com/2025.1.227/js/kendo.all.min.js"></script>
-````
+```
 
 ## Cause
 
@@ -48,13 +48,15 @@ Telerik Reporting includes a special Kendo UI for jQuery subset that contains on
 
 These subset files include only the Kendo UI components required by the Report Viewer and Web Report Designer, which is why they do not require license validation but have limited capabilities compared to the full Kendo UI for jQuery library.
 
-When you reference the full Kendo UI for jQuery library, it requires license validation. Telerik UI for ASP.NET Core includes Kendo UI for jQuery as part of the product and performs this validation automatically by detecting Telerik UI for ASP.NET Core components on the page. Since Telerik Reporting is a separate product with its own licensing, the Report Viewer and Web Report Designer do not automatically trigger the Telerik UI for ASP.NET Core license validation mechanism when they are the only components on the page.
+When you reference the full Kendo UI for jQuery library, it requires license validation. Telerik UI for ASP.NET Core includes Kendo UI for jQuery as part of the product and performs this validation automatically by detecting Telerik UI for ASP.NET Core components on the page.
+
+Since Telerik Reporting is a separate product with its own licensing, the Report Viewer and Web Report Designer do not automatically trigger the Telerik UI for ASP.NET Core license validation mechanism when they are the only components on the page.
 
 ## Solution
 
 Add the `ActivateKendoScripts()` helper method to pages that contain the Report Viewer or Web Report Designer. This method acts as a placeholder component that activates the Kendo UI for jQuery license validation.
 
-````CSHTML
+```CSHTML
 @(Html.Kendo().ActivateKendoScripts())
 
 <div id="reportViewer1"></div>
@@ -72,7 +74,7 @@ Add the `ActivateKendoScripts()` helper method to pages that contain the Report 
         });
     });
 </script>
-````
+```
 
 After adding `ActivateKendoScripts()`, the Telerik UI for ASP.NET Core license validation mechanism will detect a component on the page and properly activate the Kendo UI for jQuery license, eliminating the warning.
 
@@ -84,6 +86,6 @@ After adding `ActivateKendoScripts()`, the Telerik UI for ASP.NET Core license v
 
 ## See Also
 
-* [HTML5 Report Viewer in ASP.NET Core]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer-in-asp.net-core%})
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Host Reports Service in ASP.NET Core]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%})
+- [HTML5 Report Viewer in ASP.NET Core](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application)
+- [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)

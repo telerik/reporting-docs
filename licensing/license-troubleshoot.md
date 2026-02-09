@@ -4,6 +4,7 @@ page_title: "Learn how to troubleshoot problems with Licensing in Telerik Report
 description: "Learn about Troubleshooting License problems in Telerik Reporting after the 2025 Q1 (19.0.25.211) release."
 slug: license-troubleshoot
 tags: license, telerik, reporting, problems, troubleshoot
+tag: updated
 published: True
 position: 8
 reportingArea: General
@@ -80,7 +81,7 @@ Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that do
    Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
    ```
 
-   For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}), you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
+   For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%}), you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
 
    ```C#
    // ...

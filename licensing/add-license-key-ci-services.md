@@ -4,6 +4,7 @@ page_title: "Learn how to add your License Key to CI/CD Services."
 description: "Learn how to add the required Telerik Reporting License Key to CI/CD Services after the 2025 Q1 (19.0.25.211) release."
 slug: license-key-ci-services
 tags: license, key, telerik, reporting, ci, cd
+tag: updated
 published: True
 position: 2
 reportingArea: General

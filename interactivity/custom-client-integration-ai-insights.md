@@ -4,6 +4,7 @@ page_title: How to Enable AI-Powered Insights with Custom AI Client
 description: "Learn how to enable AI-powered insights by creating a custom IClient implementation to integrate unsupported LLM providers or implement custom logic."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client
 tags: telerik, reporting, ai, custom, implementation
+tag: new
 published: True
 position: 3
 reportingArea: General
@@ -26,7 +27,6 @@ To follow the steps from this tutorial, you must have:
 To enable a custom AI client implementation, follow these steps:
 
 1. Create a class that implements the `Telerik.Reporting.AI.IClient` interface. The following example demonstrates an Azure OpenAI integration for illustration purposes, though you can use any LLM provider:
-
    - .NET
 
    ```C#
@@ -229,7 +229,6 @@ To enable a custom AI client implementation, follow these steps:
    > This Azure OpenAI example uses `Azure.AI.OpenAI` version `2.2.0-beta.4` and `Microsoft.Extensions.AI.OpenAI` version `9.4.3-preview.1.25230.7` for demonstration purposes. For your implementation, you will typically use different packages specific to your LLM provider. Focus on the implementation structure, which is further detailed in the [Understanding the IClient Interface](#understanding-the-iclient-interface) section.
 
 1. Register the custom client in your `ReportServiceConfiguration`:
-
    - .NET
 
    ```C#

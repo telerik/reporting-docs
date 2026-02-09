@@ -4,6 +4,7 @@ page_title: Telerik Reporting AI Prompt Library Overview
 description: "Learn about the Telerik Reporting AI Prompt Library  – a collection of reusable prompts to boost productivity and output quality."
 slug: ai-prompt-library
 tags: ai, telerik, reporting, prompt, library
+tag: updated
 published: True
 position: 3
 reportingArea: General
@@ -507,5 +508,5 @@ Quick Start Guide:
 
 ## See Also
 
-* [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
-* [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
+- [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
+- [Telerik Reporting MCP Server]({%slug ai-mcp-server%})

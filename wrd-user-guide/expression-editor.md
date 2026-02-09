@@ -5,6 +5,7 @@ description: "Learn more about the Expression editor in Web Report Designer, whe
 slug: expression-editor-web-report-designer-user-guide
 tags: expression,editor,web,report,designer,design,create,report,web
 published: True
+tag: new
 reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 100
 ---
@@ -59,7 +60,7 @@ At run-time, the reporting engine evaluates the expressions and constructs a fin
 
 `Hi Mr. Smith, John!`
 
->note If you need literal **{** or **}**, you must escape them with double braces: **{{** or **}}**.
+>note If you need literal **{** or **}**, you must escape them with double braces: **\{\{** or **\}\}**.
 
 ## See Also
 

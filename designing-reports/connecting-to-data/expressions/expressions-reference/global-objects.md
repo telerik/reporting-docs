@@ -4,6 +4,7 @@ page_title: Global Objects Explained
 description: "Learn what are the Global Objects in Telerik Reporting and how you may use them in the expressions in reports."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects
 tags: global,objects
+tag: updated
 published: True
 position: 3
 previous_url: /expressions-global-objects

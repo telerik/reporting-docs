@@ -4,6 +4,7 @@ page_title: Table Groups at a Glance
 description: "Learn how to add, edit, filter and remove different types of table groups in Telerik Reporting with the report designers and programmatically."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item
 tags: how,to,add,groups,to,table,item,and,crosstab,item
+tag: updated
 published: True
 position: 3
 previous_url: /data-items-how-to-add-groups-to-table-item-and-crosstab-item

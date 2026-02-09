@@ -4,6 +4,7 @@ page_title: Table Group Dialog at a Glance
 description: "Learn about the Table Group Dialog in the Telerik Reporting Desktop Designers and how to configure row and column groups for Table, Crosstab, and List items."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog
 tags: table,group,dialog,crosstab,list
+tag: new
 published: True
 position: 14
 reportingArea: General

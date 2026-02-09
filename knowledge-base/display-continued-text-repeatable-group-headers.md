@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-When a table group spans multiple pages, you may want to indicate on subsequent pages that the group is continued from a previous page. For example, displaying "Category Name........." instead of just "Category Name" helps readers understand they are viewing the continuation of a group.
+When a table group spans multiple pages, you may want to indicate on subsequent pages that the group is continued from a previous page. For example, displaying "*Category Name.........*" instead of just "*Category Name*" helps readers understand they are viewing the continuation of a group.
 
 This article demonstrates how to create a table group with a repeatable header and conditionally display different content based on whether the header appears for the first time or as a repeated instance.
 
@@ -52,15 +52,11 @@ At this point, the header will repeat on every page, but it will show the same c
 
 ### Step 3: Display Different Content for Repeated Headers
 
-To add visual indication when the header is repeated:
+To add a visual indication when the header is repeated:
 
 1. Select the TextBox in the group header.
-1. Modify the `Value` expression to:
-
-	```
-	=Fields.Category + IIf(ReportItem.IsRepeated, ".........", "")
-	```
-
+1. Modify the `Value` expression to `=Fields.Category + IIf(ReportItem.IsRepeated, ".........", "")`
+	
 Now, the first occurrence of the header displays "Category Name", while subsequent pages display "Category Name.........".
 
 ## Example Report

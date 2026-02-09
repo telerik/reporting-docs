@@ -16,7 +16,7 @@ Table, Crosstab, and List items are template variations of the same Table data i
 
 Use the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) to add and manage groups in table items. You can create parent, child, adjacent, or details groups, and configure filtering, sorting, and aggregation settings for each group.
 
-> The instructions in this article apply to all three template variations: Table, Crosstab, and List items.
+>tip The instructions in this article apply to all three template variations: Table, Crosstab, and List items.
 
 ## Add a Row/Column Group Using the Report Designer
 
@@ -54,7 +54,7 @@ To add an adjacent row/column group:
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) at the specified position, and the corresponding rows or columns are added to the data item on the design surface.
 
->important Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
+>caution Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
 ## Add a Details Group Using the Report Designer
 
@@ -100,7 +100,7 @@ To delete a group:
 1. In the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), right-click the group, and then click **Delete Group**.
 1. In the **Delete Group** dialog box, select one of the following options:
 
-	+ **Delete group and related rows and columns**&mdash;Choose this option to delete the group definition and all related rows that display group data. For the details group, if the same row belongs to both detail and group data, only the detail data rows are deleted.
+	+ **Delete group and related rows and columns**&mdash;Choose this option to delete the group definition and all related rows and columns that display group data. For the details group, if the same row or column belongs to both detail and group data, only the detail data rows and columns are deleted.
 	+ **Delete group only**&mdash;Choose this option to keep the structure of the data item and delete only the group definition.
 
 1. Click **OK**.

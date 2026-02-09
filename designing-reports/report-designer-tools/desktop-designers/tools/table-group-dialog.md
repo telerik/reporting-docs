@@ -65,7 +65,7 @@ Configure whether and how the group footer appears.
 | **Add Footer** | Adds a group footer row (for row groups) or column (for column groups). The footer displays once at the end of each group. |
 | **Repeat On Every Page** | Repeats the group footer on every page where the group appears. This option is only enabled when **Add Footer** is selected. |
 
->important Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
+>caution Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
 ## See Also
 

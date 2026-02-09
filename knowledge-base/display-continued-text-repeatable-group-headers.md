@@ -15,8 +15,8 @@ res_type: kb
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
 	<tr>
-		<td>Report Items</td>
-		<td>Table, Crosstab, List</td>
+		<td>Release</td>
+		<td>2026 Q1</td>
 	</tr>
 </table>
 
@@ -27,8 +27,6 @@ When a table group spans multiple pages, you may want to indicate on subsequent 
 This article demonstrates how to create a table group with a repeatable header and conditionally display different content based on whether the header appears for the first time or as a repeated instance.
 
 ## Solution
-
->important Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
 ### Step 1: Add a Group with Repeatable Header
 
@@ -42,6 +40,8 @@ This article demonstrates how to create a table group with a repeatable header a
 1. Click **OK**.
 
 The group is added with a header that will repeat on every page where the group data appears.
+
+>caution Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
 ### Step 2: Configure the Group Header Content
 
@@ -62,22 +62,6 @@ To add visual indication when the header is repeated:
 	```
 
 Now, the first occurrence of the header displays "Category Name", while subsequent pages display "Category Name.........".
-
-### Alternative Approaches
-
-Instead of dots, you can display "(continued)" text:
-
-```
-=Fields.Category + IIf(ReportItem.IsRepeated, " (continued)", "")
-```
-
-Or hide certain elements on repeated instances by setting the `Visible` property:
-
-```
-=Not ReportItem.IsRepeated
-```
-
-This hides the item when the header is repeated.
 
 ## Example Report
 

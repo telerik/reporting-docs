@@ -4,8 +4,6 @@ description: Error registering the viewer with the service. An error has occurre
 type: troubleshooting
 page_title: Upgrading to version after R2 2018 causes error "The 'ObjectContent`1' type failed to serialize the response body for content type 'application/json; charset=utf-8'"
 slug: error-after-update-to-R2-2018-due-to-old-newtonsoft-json-version
-position:
-tags:
 ticketid: 1175890
 res_type: kb
 ---

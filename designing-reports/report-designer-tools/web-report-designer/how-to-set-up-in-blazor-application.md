@@ -32,7 +32,7 @@ Alternatively, instead of using the item template, the Designer REST service and
 1. Add the required settings in the **Program.cs** file. Make sure the application is configured for WebAPI controllers:
 
    ```C#
-   builder.Services.AddRazorPages().
+   builder.Services.AddRazorPages();
    builder.Services.AddControllers();
    ```
 

@@ -76,11 +76,13 @@ public class ToNewtonsoftActionFilter : IAsyncResultFilter
 		{
 			string jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(jsonResult.Value,
 				(Newtonsoft.Json.JsonSerializerSettings?)jsonResult.SerializerSettings
-				?? new Newtonsoft.Json.JsonSerializerSettings {
-					ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver {
-					NamingStrategy = new Newtonsoft.Json.Serialization.CamelCaseNamingStrategy()
-				}
-			});
+				?? new Newtonsoft.Json.JsonSerializerSettings
+				{
+					ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver
+					{
+						NamingStrategy = new Newtonsoft.Json.Serialization.CamelCaseNamingStrategy()
+					}
+				});
 
 			context.Result = new ContentResult { Content = jsonStr, ContentType = "application/json" };
 		}

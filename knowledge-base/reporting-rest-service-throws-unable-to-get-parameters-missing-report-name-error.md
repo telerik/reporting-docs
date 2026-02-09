@@ -24,7 +24,7 @@ res_type: kb
 	    </tr>
       <tr>		
 		<tr>
-			<td>Taget Framework</td>
+			<td>Target Framework</td>
 			<td>.NET Framework</td>
 		</tr>
 	</tbody>

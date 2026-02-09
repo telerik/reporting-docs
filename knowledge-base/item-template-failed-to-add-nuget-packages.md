@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-Visual Studio item templates for adding HTML5 Report Viewer fail to add the dependant NuGet packages.
+Visual Studio item templates for adding HTML5 Report Viewer fail to add the dependent NuGet packages.
 
 ## Error Message
 

@@ -1,7 +1,7 @@
 ---
 title: JsonResult.SerializerSettings Must Be of Type Newtonsoft.Json.JsonSerializerSettings
-description: "Learn about why you may be getting the error 'Property JsonResult.SerializerSettings must be an instance of type Newtonsoft.Json.JsonSerializerSettings after upgrade to Telerik Reporting 2026 Q1, and how to resolve it."
-type: troubleshoot
+description: "Learn why you may be getting the error 'Property JsonResult.SerializerSettings must be an instance of type Newtonsoft.Json.JsonSerializerSettings' after upgrading to Telerik Reporting 2026 Q1, and how to resolve it."
+type: troubleshooting
 page_title: JsonResult.SerializerSettings Must Be of Type Newtonsoft.Json.JsonSerializerSettings
 slug: jsonresult-serializersettings-must-be-an-instance-of-type-newtonsoftjson-jsonserializersettings
 tags: json, serializer, settings, newtonsoftjson, jsonresult

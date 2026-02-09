@@ -44,16 +44,6 @@ The following HTML attributes control the image source, dimensions, and accessib
 
 >caution Em units are not supported for `width` and `height` attributes.
 
-### Supported `<img>` CSS Styling
-
-The `<img>` tag supports the following CSS properties:
-
-* `margin`, `margin-top`, `margin-right`, `margin-bottom`, `margin-left` (supports `auto` for centering)
-* `padding`, `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
-* `display` (`block`, `inline`, `inline-block`, `none`)
-* `float` (`left`, `right`, `none`)
-* `clear` (`left`, `right`, `both`, `none`)
-
 ### Example Usage
 
 Basic image with dimensions and styling:
@@ -93,11 +83,10 @@ The HtmlTextBox supports the following CSS attributes for styling text elements:
 The following CSS attributes are supported for `<img>` tags:
 
 * `margin`, `margin-top`, `margin-right`, `margin-bottom`, `margin-left` (supports `auto` for centering)
+* `padding`, `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
 * `display` (`block`, `inline`, `inline-block`, `none`)
 * `float` (`left`, `right`, `none`)
 * `clear` (`left`, `right`, `both`, `none`)
-* `border`, `border-color`, `border-width`, `border-style`
-* `padding`, `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
 
 ## See Also
 

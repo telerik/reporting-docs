@@ -4,7 +4,6 @@ description: Error problem occurred while trying to install the NuGet package wh
 type: troubleshooting
 page_title: Error occurred while adding HTML5 Report Viewer when using Visual Studio item templates
 slug: item-template-failed-to-add-nuget-packages
-position:
 tags: itemtemplates,html5viewer
 ticketid: 1157878
 res_type: kb

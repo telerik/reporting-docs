@@ -5,6 +5,7 @@ description: Learn more about Report Templates in the Telerik Reporting Web Repo
 slug: user-guide-web-report-designer-report-templates
 tags: web, report, designer, wrd, report, template, trtx
 published: True 
+reportingArea: WRDHTML5, WRDBlazorWrapper
 position: 9 
 ---
 
@@ -37,7 +38,7 @@ Whether you are building dashboards, invoices, or summaries, report templates he
 
 ## Working with Report Templates
 
-When creating a new report by clicking the `New Report` option in the main menu, you are presented two options:
+When creating a new report by clicking the `New Report` option in the main menu, you are with presented two options:
 
   * Beginning from scratch with a **Blank Report**—Gives you an empty report.
   * Starting **From Template** (.trtx file)—Gives you a ready-made layout and structure to build on, making the report creation faster and more consistent.
@@ -58,7 +59,7 @@ When creating a new report by clicking the `New Report` option in the main menu,
 
     ![Save As Formats ><](images/wrd-save-as-menu-option.png)  
 
-    The end-user is presented the option to save the report either as a `Report` (.trdp or .trdx file format), or as a `Template` (.trtx file format).
+    The end-user is presented with the option to save the report either as a `Report` (.trdp or .trdx file format), or as a `Template` (.trtx file format).
 
     Select the **Template** option:
 
@@ -85,6 +86,8 @@ To start creating your report by using a predefined report template with a ready
 	![Report From a Template ><](images/web-report-designer-report-templates-report-from-template.png) 
 
 Now, you are ready to continue crafting your report loaded from a template.
+
+>note Some users might not see the Report Templates options if they don't have such permissions (configured by the app developer).
 
 ## See Also
 

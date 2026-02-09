@@ -4,8 +4,6 @@ description: HTML5 Report Viewer shows Invalid value of report parameter error
 type: troubleshooting
 page_title: Invalid Value of Report Parameter Error displayed in HTML5 Report Viewer
 slug: invalid-value-of-report-parameter-error
-position:
-tags:
 ticketid: 1459089
 res_type: kb
 ---

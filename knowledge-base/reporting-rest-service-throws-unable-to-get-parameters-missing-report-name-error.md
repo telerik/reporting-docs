@@ -4,8 +4,6 @@ description: A report viewer, connected to a Reporting REST service, cannot load
 type: troubleshooting
 page_title: Report Viewer, connected to a REST service, shows "Unable to get parameters. Missing report name" message
 slug: reporting-rest-service-throws-unable-to-get-parameters-missing-report-name-error
-position:
-tags:
 ticketid: 1475185
 res_type: kb
 ---
@@ -51,3 +49,4 @@ In our case study, the `Newtonsoft.Json.dll` copied in the **\bin** folder was t
 Although, the _packages.config_ contains the correct target framework for the **Newtonsoft.Json** package, the NuGet package manager fails to overwrite it.
 
 The solution is to delete the `Newtonsoft.Json.dll` manually and rebuild the solution, so the NuGet package manager will download the correct assembly.
+

@@ -4,8 +4,6 @@ description: "Learn how to host Telerik Reporting and Telerik UI for ASP.NET Cor
 type: how-to
 page_title: Host Telerik Reporting and Telerik UI for ASP.NET Core in the same project
 slug: reporting-and-telerik-ui-for-asp-net-core
-position:
-tags:
 ticketid: 1594935
 res_type: kb
 ---

@@ -82,7 +82,7 @@ If **NewtonsoftJson** is used only in the Reporting-related controllers, you can
 
 If you need to keep the **NewtonsoftJson** because it is used in other controllers in the project, you can remove the Reporting controllers, and you can instead implement the Telerik Reporing Service as a _minimal API_.
 
-Please refer to the [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api) article for instructions on how to do that.
+Please refer to the [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api) article for instructions on how to do that.
 
 > Our Reporting REST Service will use **System.Text.Json** despite that. This approach only allows to keep using **NewtonsoftJson** globally in the project without affecting the reporting service.
 
@@ -94,5 +94,5 @@ In this case, you would need to remove **NewtonsoftJson** globally, and use it o
 
 ## See Also
 
-- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api)
+- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
 - [Serializing with both 'System.Text.Json' and 'Newtonsoft.Json' in the same ASP.NET Core project](slug:use-two-json-serializers-in-same-asp-net-core-project#local)

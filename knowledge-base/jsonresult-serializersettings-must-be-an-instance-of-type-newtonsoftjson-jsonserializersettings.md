@@ -21,7 +21,7 @@ res_type: kb
 			<td>20.0.26.210+</td>
 		</tr>
 		<tr>
-			<td>.NET Framework</td>
+			<td>Target Framework</td>
 			<td>.NET 8+</td>
 		</tr>
 	</tbody>

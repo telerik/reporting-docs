@@ -84,8 +84,8 @@ The following CSS attributes are supported for `<img>` tags:
 
 * `margin`, `margin-top`, `margin-right`, `margin-bottom`, `margin-left` (supports `auto` for centering)
 * `padding`, `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
-* `display` (`block`, `inline`, `inline-block`, `none`)
-* `float` (`left`, `right`, `none`)
+* `display` (`block`, `inline`, `inline-block`)
+* `float` (`left`, `right`)
 * `clear` (`left`, `right`, `both`, `none`)
 
 ## See Also

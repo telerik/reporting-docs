@@ -8,7 +8,12 @@ published: True
 position: 3
 reportingArea: General
 ---
-
+<style>
+img[alt="The HtmlTextBox Design View in the Expression editor of the Report Designer"],
+img[alt="The HtmlTextBox Html View in the Expression editor of the Report Designer"] {
+  width: 75%;
+}
+</style>
 # Editing in HtmlTextBox
 
 The HtmlTextBox supports data-driven inline fields that are editable in-place or through a design-time editor.
@@ -37,14 +42,15 @@ The design-time editor is available in the Telerik Reporting Visual Studio and S
 
 	Pressing the `Enter` key inserts a new paragraph or a new list item depending on the current context. Note that it does not insert a `<br />` (new line) element. To insert a new line, use the button on the toolbar.
 
-	<img src="images/HtmlTextBox_DesignView-v2.png" alt="The HtmlTextBox Design View in the Expression editor of the Report Designer" style="width: 75%" />
+
+	![The HtmlTextBox Design View in the Expression editor of the Report Designer](images/HtmlTextBox_DesignView-v2.png)
 
 * Expression (__Html view__)&mdash;Enables the user to enter raw HTML tags and text into the source editor. The value can be an expression or text, which contains embedded expressions. The user can switch to the __Design view__ anytime unless the value is an expression.
 
 	The `MultiLine` and `TextWrap` concepts are always true for the HtmlTextBox. You can nest the subscript and superscript tags, for example `<sub>subscript1<sub>subscript2</sub></sub>`, which will result in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggle the subscript or superscript feature and if you need nested tags, you need to manually add the appropriate code by using the __Html view__ of the editor.
 	>tip Starting with the 2026 Q1 release, you can embed images in the HTML content using the `<img>` tag. Use the __Html view__ to add image tags with `src`, `width`, `height`, `alt` attributes, and CSS styling. For more information, see [Image Support]({%slug htmltextbox_formatting_and_styling%}#image-support).
 
-	<img src="images/HtmlTextBox_HtmlView-v2.png" alt="The HtmlTextBox Html View in the Expression editor of the Report Designer" style="width: 75%" />
+	![The HtmlTextBox Html View in the Expression editor of the Report Designer](images/HtmlTextBox_HtmlView-v2.png)
 
 ## See Also
 

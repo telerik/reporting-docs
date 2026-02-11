@@ -10,6 +10,12 @@ position: 0
 reportingArea: General
 ---
 
+<style>
+img[alt="The HtmlTextBox Editor Design View"] {
+  width: 75%;
+}
+</style>
+
 # HtmlTextBox Overview
 
 The HtmlTextBox report item enables you to insert HTML-formatted text into a report.
@@ -18,7 +24,7 @@ You can specify the HTML value at design time either through a WYSIWYG editor or
 
 |Design View of the HtmlTextBox Editor|
 |:---:|
-|<img src="images/HtmlTextBox_DesignView-v2.png" alt="The HtmlTextBox Editor Design View" style="width: 75%" />|
+|![The HtmlTextBox Editor Design View](images/HtmlTextBox_DesignView-v2.png)|
 
 ## Key Features
 

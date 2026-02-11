@@ -18,7 +18,7 @@ You can specify the HTML value at design time either through a WYSIWYG editor or
 
 |Design View of the HtmlTextBox Editor|
 |:---:|
-|![The HtmTextBox Editor Design View](images/HtmlTextBox_DesignView-v2.png)|
+|<img src="images/HtmlTextBox_DesignView-v2.png" alt="The HtmlTextBox Editor Design View" style="width: 75%" />|
 
 ## Key Features
 

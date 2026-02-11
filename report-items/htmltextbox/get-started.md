@@ -15,6 +15,7 @@ This guide shows how to create and use the Telerik Reporting HtmlTextBox report 
 
 - First, you will add an HtmlTextBox item in an empty Report created with the Standalone Designer.
 - Then, you will fill the HtmlTextBox with some styled content.
+- Finally, you will add an image to the HtmlTextBox.
 
 After the completion of this guide, you will also be able to configure the HtmlTextBox in the Standalone Designer and achieve the following result:
 
@@ -34,17 +35,17 @@ The following image shows the result:
 
 ## Adding Some Styled Content
 
-The HtmlTextBox you have just created contains the default text that is the item name. When this HtmTextBox is the first HtmlTextBox you add to your report, its default value will be **htmlTextBox1**.
+The HtmlTextBox you have just created contains the default text that is the item name. When this HtmlTextBox is the first HtmlTextBox you add to your report, its default value will be **htmlTextBox1**.
 
-Now, you'll add some styled content to your HtmlTextBox report item:
+Now, you will add some styled content to your HtmlTextBox report item:
 
 1. Change the HtmlTextBox content by either of the following ways:
 
    - Go to the property `Value` of the item in the **Properties** pane and click the ellipses.
 
-   - Right-click the item and select `Expression...` form the popped-up context menu.
+   - Right-click the item and select `Expression...` from the popped-up context menu.
 
-   As a result, the **Edit Expression** dialog of the HtmTextBox will open in the **Design** view.
+   As a result, the **Edit Expression** dialog of the HtmlTextBox will open in the **Design** view.
 
 1. In the **Design** view of the editor, type **Telerik Reporting**.
 
@@ -54,7 +55,7 @@ Now, you'll add some styled content to your HtmlTextBox report item:
 
    ![Add styled content with hyperlink to the HtmlTextBox with the Expression editor of the Report Designer](images/HtmlTextBox-ContentWithLink.png)
 
-1. Switch to the **Html** view of the editor to see the generated HTML code. The code will look like he following:
+1. Switch to the **Html** view of the editor to see the generated HTML code. The code will look like the following:
 
    ```HTML
    <span style="background-color: #ff8000"><a href="https://demos.telerik.com/reporting/">Telerik Reporting</a></span>
@@ -63,6 +64,27 @@ Now, you'll add some styled content to your HtmlTextBox report item:
 1. Click **OK** to close the HtmlTextBox editor dialog.
 
 1. Preview the report and test the link by clicking the **Telerik Reporting** orange text.
+
+## Adding an Image
+
+You can also embed images in the HtmlTextBox using the `<img>` tag. To add an image:
+
+1. Right-click the HtmlTextBox and select `Expression...` to open the editor.
+
+1. Switch to the **Html** view.
+
+1. Add an image tag to your content. For example, you can modify the existing HTML to include an image:
+
+   ```html
+   <span style="background-color: #ff8040"><a href="https://demos.telerik.com/reporting/">Telerik Reporting</a></span>
+   <div><img style="margin: 10px auto; display: block" alt="Telerik Reporting Support Logo" src="https://demos.telerik.com/reporting/images/reporting-icons/reporting-icons_support-recources.png" width="100" height="100"/></div>
+   ```
+
+1. Click **OK** and preview the report to see the image displayed under the text.
+
+![Preview mode of the Standalone Report Designer where a hypertext and an image are visible.](images/HtmlTextBox-ContentWithImage.png)
+
+>tip For more information about image support including supported attributes and CSS styling options, see [Image Support]({%slug htmltextbox_formatting_and_styling%}#image-support).
 
 ## Next Steps
 

@@ -18,14 +18,14 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>20.0.26.210+</td>
+			<td>20.0.26.211+</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Description
 
-After upgrading the Telerik Reporting packages to version **20.0.26.210(2026 Q1) or newer**, I can no longer build the project due to the errors mentioned further down below.
+After upgrading the Telerik Reporting packages to version **20.0.26.211(2026 Q1) or newer**, I can no longer build the project due to the errors mentioned further down below.
 
 I use one of the approaches from the [Use Both 'System.Text.Json' and 'Newtonsoft.Json' for Serialization in ASP.NET Core](slug:use-two-json-serializers-in-same-asp-net-core-project) article, so that I can use **NewtonsoftJson** for the Reporting REST Service, and **System.Text.Json** for everything else.
 
@@ -36,7 +36,7 @@ I use one of the approaches from the [Use Both 'System.Text.Json' and 'Newtonsof
 
 ## Cause
 
-Starting with the **Progress® Telerik® Reporting 2026 Q1(20.0.26.210)** release, the .NET implementation of the Reporting REST Service for the web based report viewer and report designer no longer depends on the [Microsoft.AspNetCore.Mvc.NewtonsoftJson](https://www.nuget.org/packages/microsoft.aspnetcore.mvc.newtonsoftjson/) package.
+Starting with the **Progress® Telerik® Reporting 2026 Q1(20.0.26.211)** release, the .NET implementation of the Reporting REST Service for the web based report viewer and report designer no longer depends on the [Microsoft.AspNetCore.Mvc.NewtonsoftJson](https://www.nuget.org/packages/microsoft.aspnetcore.mvc.newtonsoftjson/) package.
 
 Because of this change, after the Telerik Reporting packages are updated, the **NewtonsoftJson** assembly will no longer be available, and the types that depend on it will not be resolvable.
 
@@ -46,7 +46,7 @@ Because of this change, after the Telerik Reporting packages are updated, the **
 
 If the workarounds. demonstrated in the [Use Both 'System.Text.Json' and 'Newtonsoft.Json' for Serialization in ASP.NET Core](slug:use-two-json-serializers-in-same-asp-net-core-project) article, were used only due to the dependency on **NewtonsoftJson** that the Reporting REST Service had previously, then you no longer need them, and they can be removed.
 
-Starting with the **Progress® Telerik® Reporting 2026 Q1(20.0.26.210)** release, the Telerik Reporting packages, when used in **.NET Standard 2.0+/.NET 8+** projects, will instead depend on the [System.Text.Json](https://www.nuget.org/packages/System.Text.json) package.
+Starting with the **Progress® Telerik® Reporting 2026 Q1(20.0.26.211)** release, the Telerik Reporting packages, when used in **.NET Standard 2.0+/.NET 8+** projects, will instead depend on the [System.Text.Json](https://www.nuget.org/packages/System.Text.json) package.
 
 No additional setup will be needed to use the Reporting controllers, simply remove the [AddNewtonsoftJson()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method calls from the application startup file(`Program.cs`/`Startup.cs`).
 

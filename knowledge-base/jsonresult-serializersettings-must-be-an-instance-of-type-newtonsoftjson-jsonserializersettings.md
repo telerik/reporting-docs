@@ -18,7 +18,7 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Product Version</td>
-			<td>20.0.26.210+</td>
+			<td>20.0.26.211+</td>
 		</tr>
 		<tr>
 			<td>Target Framework</td>
@@ -29,7 +29,7 @@ res_type: kb
 
 ## Description
 
-I have updated my project to the **Progress® Telerik® Reporting 2026 Q1(20.0.26.210)** release, and when I try to open the Web Report Designer or any of the web-based Report Viewers, I see the mentioned error in the console.
+I have updated my project to the **Progress® Telerik® Reporting 2026 Q1(20.0.26.211)** release, and when I try to open the Web Report Designer or any of the web-based Report Viewers, I see the mentioned error in the console.
 
 ## Error Message
 

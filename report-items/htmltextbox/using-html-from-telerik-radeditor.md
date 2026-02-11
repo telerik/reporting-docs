@@ -124,7 +124,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
    		_removeHtmlTags: function (initContent) {
    			var cleanContent;
    			//Perform the necessary REGEX replacement to remove unsupported HTML tags.
-   			//The supported Telerik Reporting HTML tags are FONT, STRONG, B, EM, I, U, A, OL, UL, LI, DIV, SPAN, P, BR, CENTER, and IMG.
+   			//The supported Telerik Reporting HTML tags are font, strong, b, em, i, u, a, ol, ul, li, div, span, p, br, center, and img.
    			//The HTML must be valid XHTML too. However, the Editor already provides that filter.
    			//The following REGEX will remove all HTML tags EXCEPT those explicitly listed.
    			cleanContent = initContent.replace(new RegExp("<(?!\/?(font|strong|b|em|i|img|u|a|ol|ul|li|div|span|p|br|center)(?=>|\s?.*>))\/?.*?>", "ig"), "");

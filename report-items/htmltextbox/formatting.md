@@ -55,7 +55,7 @@ Basic image with dimensions and styling:
 Data-driven image with embedded expressions:
 
 ````html
-<img src='{Fields.ProductImage}' width="150" alt='{Fields.ProductName}' style="margin: 10px;" />
+<img src="{Fields.ProductImage}" width="150" alt="{Fields.ProductName}" style="margin: 10px;" />
 ````
 
 ## Supported CSS Attributes
@@ -86,7 +86,6 @@ The following CSS attributes are supported for `<img>` tags:
 * `padding`, `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
 * `display` (`block`, `inline`, `inline-block`)
 * `float` (`left`, `right`)
-* `clear` (`left`, `right`, `both`, `none`)
 
 ## See Also
 

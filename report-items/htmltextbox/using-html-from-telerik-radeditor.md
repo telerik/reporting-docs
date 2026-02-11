@@ -96,7 +96,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 1. Strip the HTML formatting from the pasted content, because users may paste content that is badly formatted and thus break the HtmlTextBox and its PDF export feature. To achieve this behavior, set the `StripFormattingOptions` property to `All` or to `AllExceptNewLines`.
 1. Use the following custom content filter, which will remove unsupported HTML tags.
 
-   The supported tags are `FONT`, `STRONG`, `B`, `EM`, `I`, `U`, `A`, `OL`, `UL`, `SUB`, `SUP`, `LI`, `DIV`, `SPAN`, `P`, `BR`, `CENTER`.
+   The supported tags are `font`, `strong`, `b`, `em`, `i`, `u`, `a`, `ol`, `ul`, `li`, `sub`, `sup`, `div`, `span`, `p`, `br`, `center`, `img`.
 
    ```XML
    <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
@@ -124,10 +124,10 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
    		_removeHtmlTags: function (initContent) {
    			var cleanContent;
    			//Perform the necessary REGEX replacement to remove unsupported HTML tags.
-   			//The supported Telerik Reporting HTML tags are FONT, STRONG, B, EM, I, U, A, OL, UL, LI, DIV, SPAN, P, BR, and CENTER.
+   			//The supported Telerik Reporting HTML tags are font, strong, b, em, i, u, a, ol, ul, li, div, span, p, br, center, and img.
    			//The HTML must be valid XHTML too. However, the Editor already provides that filter.
    			//The following REGEX will remove all HTML tags EXCEPT those explicitly listed.
-   			cleanContent = initContent.replace(new RegExp("<(?!\/?(font|strong|b|em|(i(?!mg))|u|a|ol|ul|li|div|span|p|br|center)(?=>|\s?.*>))\/?.*?>", "ig"), "");
+   			cleanContent = initContent.replace(new RegExp("<(?!\/?(font|strong|b|em|i|img|u|a|ol|ul|li|div|span|p|br|center)(?=\\s|>|\/))\/?.*?>", "ig"), "");
    			return cleanContent;
    		}
    	}

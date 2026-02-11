@@ -20,7 +20,7 @@ Specifically, the HtmlTextBox supports the following approaches for validating i
 
 * [Using the `IsValidXhtml` method in an expression](#using-the-isvalidxhtml-method-in-expression).
 * [Using an event and the `IsValidXhtml` method](#using-events-and-the-isvalidxhtml-method).
-* [Using and event and the `ValueError` exception](#using-events-and-the-valueerror-exception).
+* [Using events and the `ValueError` exception](#using-events-and-the-valueerror-exception).
 
 ## Using the IsValidXhtml Method in Expression
 

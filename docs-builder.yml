@@ -446,6 +446,10 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
     position: 5
     title: "Angular Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs:
+    position: 10
+    title: "Integrating with SystemJS"
+    hidden: true
   embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
     position: 12
     title: "Customizing"

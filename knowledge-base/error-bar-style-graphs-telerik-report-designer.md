@@ -37,7 +37,7 @@ To create an error bar style graph, customize the OHLC chart:
 1. Use three separate `LineSeries` for the High, Low, and Middle/Average values.
 1. Set the `DataPointMarker` property to `Minus` for High/Low and `Circle` for Middle.
 1. Ensure only the data markers are displayed by setting `DataPointStyle.Visible` to `True` and `LineStyle.Visible` to `False`. Example:
-   ![Set ColorPalette, LineStyle, and DataPointStyle in the GraphSeries Collection Editor of the Standalone Report Designer.]()
+   ![Set ColorPalette, LineStyle, and DataPointStyle in the GraphSeries Collection Editor of the Standalone Report Designer.](images/graph-series-collection-editor.png)
 1. Optionally, set the `ColorPalette` for all Series to `Monochromatic > Black` or any other desired palette to ensure all data points are the same color.
 
 ## See Also

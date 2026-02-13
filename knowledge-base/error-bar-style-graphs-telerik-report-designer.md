@@ -40,6 +40,10 @@ To create an error bar style graph, customize the OHLC chart:
    ![Set ColorPalette, LineStyle, and DataPointStyle in the GraphSeries Collection Editor of the Standalone Report Designer.](images/graph-series-collection-editor.png)
 1. Optionally, set the `ColorPalette` for all Series to `Monochromatic > Black` or any other desired palette to ensure all data points are the same color.
 
+## Download Sample
+
+Test the [ErrorBarStyleGraphReport.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/ErrorBarStyleGraphReport.trdx) sample report from our samples repository.
+
 ## See Also
 
 - [OHLC Chart Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})

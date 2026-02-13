@@ -23,7 +23,11 @@ ticketid: 1709755
 
 ## Description
 
-I am trying to create an error bar style graph in Telerik Report Designer using markers with a vertical bar in the middle and horizontal bars at the top and bottom. When using `MarkerStyle = candlestick`, I cannot remove the left and right vertical lines, and with `MarkerStyle = bar`, the horizontal bars extend only one way each. 
+I am trying to create an error bar style graph in Telerik Report Designer using markers with a vertical bar in the middle and horizontal bars at the top and bottom:
+
+![The final layout of the error bar style graph in the Standalone Report Designer.](images/error-bar-style-graph-designer.png)
+
+When using an OHLC chart with `MarkerStyle = CandleStick`, I cannot remove the left and right vertical lines, and with `MarkerStyle = Bar`, the horizontal bars extend only one way each. 
 
 This knowledge base article also answers the following questions:
 - How to customize OHLC charts for specific marker styles in Telerik Report Designer?

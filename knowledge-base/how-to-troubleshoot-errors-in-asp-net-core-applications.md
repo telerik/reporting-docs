@@ -35,7 +35,7 @@ Consider the following steps when experiencing problems while working with Teler
 - **Try reproducing the crash on another machine** to exclude machine-specific problems. For example:
 	+ Corrupted Telerik Reporting installation on Windows;
 	+ Missing basic functionality, for example, incomplete GDI+ or Skia graphics engines, or fonts on specific Windows Server or Linux distributions;
-	+ Insufficient User permissions for machine resources, databases, etc.
+	+ Insufficient user permissions for machine resources, databases, etc.
 - **Hard refresh the browser** to ensure there are no cached Report Viewer resources with older versions.
 	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running same version.` In this particular case, you may have upgraded successfully the viewer and the service from `19.3.26.121` to `20.0.26.211`. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
 - **Record a server-side log** file containing detailed information about the error:

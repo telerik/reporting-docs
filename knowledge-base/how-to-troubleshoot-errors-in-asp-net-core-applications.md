@@ -50,7 +50,7 @@ Consider the following steps when experiencing problems while working with Teler
 	```
 
 	Upon running the project and reproducing the error, it will generate an `aspnetcoredemo.log` file at the application root folder with the tracing information about the exceptions and performance. For example:
-	+ Server-side failures with stack traces, including refused or timeouted database connection, insufficient permissions to access local paths or resources, etc;
+	+ Server-side failures with stack traces, including refused or timed-out database connection, insufficient permissions to access local paths or resources, etc;
 	+ Time to process and render reports;
 	+ Font substitutions.
 

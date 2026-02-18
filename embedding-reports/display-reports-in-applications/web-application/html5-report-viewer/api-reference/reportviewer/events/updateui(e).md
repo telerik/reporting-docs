@@ -7,7 +7,7 @@ tags: updateui,viewer,html5
 published: True
 reportingArea: HTML5
 position: 11
-previous_url: /html5-report-viewer-reportviewer-events-updateui
+previous_url: /html5-report-viewer-reportviewer-events-updateui, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
 ---
 
 <style>

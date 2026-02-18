@@ -18,9 +18,11 @@ The `ObjectDataSource` component may be configured in the [Telerik Report Design
 
 ## Remarks
 
-The business object exposes several methods which return different data types. They represent only part of the data types which are supported by __Telerik Reporting__ and can be used to feed an item with data. Additionally, methods with arguments are implemented which can be also invoked from the `ObjectDataSource` component. When the data method contains parameters the `Parameters` collection of the `ObjectDataSource` should be used to pass values to them at runtime. To successfully invoke the data method, the parameters number, their names and types should match. The order of the parameters in the `Parameters` collection is not important. If there is a discrepancy between `ObjectDataSource` parameters and the method parameters you will receive a runtime exception that the method cannot be resolved.
+The business object exposes several methods which return different data types. They represent only part of the data types which are supported by **Telerik Reporting** and can be used to feed an item with data. Additionally, methods with arguments are implemented which can be also invoked from the `ObjectDataSource` component. When the data method contains parameters the `Parameters` collection of the `ObjectDataSource` should be used to pass values to them at runtime.
 
-The business object is marked with the `DataObjectAttribute` which indicates that the object is suitable for data binding. Objects marked with this attribute will be shown in the `ObjectDataSource` wizard when "*Show only data components*" checkbox is checked. Respectively the methods used for data retrieval are marked with the `DataObjectMethod` attribute.
+To successfully invoke the data method, the parameters number, their names and types should match. The order of the parameters in the `Parameters` collection is not important. If there is a discrepancy between `ObjectDataSource` parameters and the method parameters you will receive a runtime exception that the method cannot be resolved.
+
+The business object is marked with the `DataObjectAttribute` which indicates that the object is suitable for data binding. Objects marked with this attribute will be shown in the `ObjectDataSource` wizard when "_Show only data components_" checkbox is checked. Respectively the methods used for data retrieval are marked with the `DataObjectMethod` attribute.
 
 ## Example
 
@@ -31,5 +33,5 @@ The business object is marked with the `DataObjectAttribute` which indicates tha
 
 ## See Also
 
-* [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
-* [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
+- [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
+- [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})

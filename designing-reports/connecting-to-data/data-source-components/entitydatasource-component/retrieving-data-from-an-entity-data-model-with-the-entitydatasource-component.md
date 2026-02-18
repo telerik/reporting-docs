@@ -37,7 +37,7 @@ Another common problem is related to the lazy loading feature of the  [ADO.NET E
 
 The above expression relies upon the built-in lazy loading mechanism to obtain the `ProductSubcategory` entity for the current `Product` entity via the corresponding relation property, and then the `ProductCategory` entity for the current `ProductSubcategory` entity. While convenient, lazy loading requires additional round-trips to the database for the entities that are not present in memory. If this happens frequently it might significantly impact the performance of the report. To overcome this you can try performing eager loading of the entities instead. For example, the following statement uses the Include method to preload the `ProductSubcategory` and the `ProductCategory` entities while retrieving the `Product` entities:
 
-````CSharp
+````C#
 this.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList();
 ````
 ````VB

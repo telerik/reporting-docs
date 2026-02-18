@@ -29,9 +29,9 @@ VB reports are supported also in .NET. The Visual Studio Report Designer is not 
 
 The Telerik Reporting product provides the following Desktop Report Viewers:
 
-* [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
-* [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
-* [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%})
+- [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+- [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+- [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%})
 
 #### Implementation
 
@@ -41,46 +41,46 @@ The Desktop Report Viewers may be embedded in .NET Framework and .NET Visual Bas
 
 Here are the Desktop Report Viewers that may be embedded in VB desktop projects targeting the .NET Framework through the Visual Studio templates we provide, or manually:
 
-* [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
-* [Integrating the WPF Report Viewer in .NET Framework]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+- [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
+- [Integrating the WPF Report Viewer in .NET Framework]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
 
 ##### Implementing in VB projects targeting .NET {{site.mindotnetversion}}.0 and above
 
 The following Desktop Report Viewers may be configured manually in VB desktop projects targeting .NET. There are no Visual Studio Reporting templates available for Visual Basic projects targeting .NET:
 
-* [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
+- [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
 
-    The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
+  The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
 
-    ````VB.NET
-Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim reportSource1 As UriReportSource = New UriReportSource()
-        reportSource1.Uri = "Reports\SampleReport.trdp"
-        reportSource1.Parameters.Add("Parameter1_Name", "Parameter1_Value")
-        reportSource1.Parameters.Add("Parameter2_Name", "Parameter2_Value")
-    
-        Dim reportViewer = New Telerik.ReportViewer.WinForms.ReportViewer()
-        reportViewer.ReportSource = reportSource1
-        reportViewer.Dock = System.Windows.Forms.DockStyle.Fill
-        reportViewer.Name = "reportViewer1"
-        reportViewer.TabIndex = 1
-        reportViewer.RefreshReport()
-    
-        Me.Controls.Add(reportViewer)
-    End Sub
-````
+  ```VB
+  Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+      Dim reportSource1 As UriReportSource = New UriReportSource()
+      reportSource1.Uri = "Reports\SampleReport.trdp"
+      reportSource1.Parameters.Add("Parameter1_Name", "Parameter1_Value")
+      reportSource1.Parameters.Add("Parameter2_Name", "Parameter2_Value")
 
-    >important Sample Windows Forms project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8).
+      Dim reportViewer = New Telerik.ReportViewer.WinForms.ReportViewer()
+      reportViewer.ReportSource = reportSource1
+      reportViewer.Dock = System.Windows.Forms.DockStyle.Fill
+      reportViewer.Name = "reportViewer1"
+      reportViewer.TabIndex = 1
+      reportViewer.RefreshReport()
 
-* [Integrating the WPF Report Viewer in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
+      Me.Controls.Add(reportViewer)
+  End Sub
+  ```
 
-    The WPF Viewer may be configured entirely with XAML which may be found in the above article and used in VB projects.
+  > important Sample Windows Forms project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8).
 
-    >important Sample WPF project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8).
+- [Integrating the WPF Report Viewer in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
 
-* [Integrating the WinUI Report Viewer in .NET {{site.mindotnetversion}}]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
+  The WPF Viewer may be configured entirely with XAML which may be found in the above article and used in VB projects.
 
-    Microsoft doesn't provide VB templates for WinUI - [Create your first WinUI 3 (Windows App SDK) project](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app). Technically, it should be possible to use also VB for WinUI projects, however, this may be much more complicated without using the Visual Studio templates.
+  > important Sample WPF project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8).
+
+- [Integrating the WinUI Report Viewer in .NET {{site.mindotnetversion}}]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
+
+  Microsoft doesn't provide VB templates for WinUI - [Create your first WinUI 3 (Windows App SDK) project](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app). Technically, it should be possible to use also VB for WinUI projects, however, this may be much more complicated without using the Visual Studio templates.
 
 ### Generating Reports in VB Desktop Reporting Applications
 
@@ -106,7 +106,7 @@ The VB Web Report Designer requires a Report Designer REST service, whose fully 
 
 The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer jQuery widget and its REST Service in ASP.NET Web Reporting projects.
 
->important A sample project may be found in the Telerik GitHub Reporting Samples repository - [VB Reporting-WebDesignerNetFramework](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WebDesignerNetFramework).
+> important A sample project may be found in the Telerik GitHub Reporting Samples repository - [VB Reporting-WebDesignerNetFramework](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WebDesignerNetFramework).
 
 ### Generating Reports in VB Web Reporting Applications in .NET Framework
 
@@ -122,8 +122,8 @@ The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/
 
 Telerik Reporting provides also dedicated wrappers of the pure HTML5 Report Viewer for the most popular ASP.NET MVC and Web Forms frameworks:
 
-* [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
-* [HTML5 ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+- [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
+- [HTML5 ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
 #### Implementation in .NET Framework
 
@@ -131,8 +131,8 @@ The article [Using the HTML5 Report Viewer with REST Service]({%slug telerikrepo
 
 The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are as follows:
 
-* [Using HTML5 ASP.NET MVC Report Viewer With Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
-* [Using the HTML5 ASP.NET Web Forms Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
+- [Using HTML5 ASP.NET MVC Report Viewer With Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
+- [Using the HTML5 ASP.NET Web Forms Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 
 ## VB.NET Web Reporting Applications in .NET {{site.mindotnetversion}}.0 and above
 
@@ -152,7 +152,7 @@ The HTML5 Report Viewer requires a Reporting REST service, whose fully functiona
 
 ## See Also
 
-* [Report Definitions]({%slug on-telerik-reporting%}#report-definition)
-* [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})
-* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
-* [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
+- [Report Definitions]({%slug on-telerik-reporting%}#report-definition)
+- [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})
+- [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+- [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})

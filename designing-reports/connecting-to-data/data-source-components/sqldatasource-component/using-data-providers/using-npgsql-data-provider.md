@@ -29,7 +29,7 @@ reportingArea: General
 1. Add **SQL Data Source** -> **Build new data connection** -> select **Npgsql Data Provider**;
 1. Add the **Connection string** in the field. For example:
 
-	`Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=myUsername;Password=myPassword;`
+   `Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=myUsername;Password=myPassword;`
 
 1. Click **Next** -> fill in the **Select Statement** or use the **Query Builder** -> **Finish**.
 
@@ -42,60 +42,59 @@ reportingArea: General
 1. Open the `App.config` file of the application and copy the binding redirects;
 1. Open the configuration file of the Standalone designer (`Telerik.ReportDesigner.exe.config`) and add the binding redirects:
 
-	````XML
-<?xml version="1.0" encoding="utf-8"?>
-	<configuration>
-		<configSections>
-			<section
-					name="Telerik.Reporting"
-					type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-					allowLocation="true"
-					allowDefinition="Everywhere"/>
-		</configSections>
+   ```XML
+   <?xml version="1.0" encoding="utf-8"?>
+   <configuration>
+   	<configSections>
+   		<section
+   				name="Telerik.Reporting"
+   				type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+   				allowLocation="true"
+   				allowDefinition="Everywhere"/>
+   	</configSections>
 
-		<runtime>
-			<dependentAssembly>
-				<assemblyIdentity name="Npgsql" culture="neutral" publicKeyToken="5d8b90d52f46fda7"/>
-				<bindingRedirect oldVersion="0.0.0.0-8.0.4.0" newVersion="8.0.4.0" />
-			</dependentAssembly>
-			<dependentAssembly>
-				<assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-				<bindingRedirect oldVersion="0.0.0.0-8.0.0.0" newVersion="8.0.0.0" />
-			</dependentAssembly>
-			<dependentAssembly>
-				<assemblyIdentity name="System.Numerics.Vectors" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
-				<bindingRedirect oldVersion="0.0.0.0-4.1.4.0" newVersion="4.1.4.0" />
-			</dependentAssembly>
-			<dependentAssembly>
-				<assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
-				<bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
-			</dependentAssembly>
-			<dependentAssembly>
-				<assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-				<bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
-			</dependentAssembly>
-			<dependentAssembly>
-				<assemblyIdentity name="System.Threading.Tasks.Extensions" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-				<bindingRedirect oldVersion="0.0.0.0-4.2.0.1" newVersion="4.2.0.1" />
-			</dependentAssembly>
-			<dependentAssembly>
-				<assemblyIdentity name="System.ValueTuple" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-				<bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
-			</dependentAssembly>
-			</assemblyBinding>
-		</runtime>
+   	<runtime>
+   		<dependentAssembly>
+   			<assemblyIdentity name="Npgsql" culture="neutral" publicKeyToken="5d8b90d52f46fda7"/>
+   			<bindingRedirect oldVersion="0.0.0.0-8.0.4.0" newVersion="8.0.4.0" />
+   		</dependentAssembly>
+   		<dependentAssembly>
+   			<assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+   			<bindingRedirect oldVersion="0.0.0.0-8.0.0.0" newVersion="8.0.0.0" />
+   		</dependentAssembly>
+   		<dependentAssembly>
+   			<assemblyIdentity name="System.Numerics.Vectors" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+   			<bindingRedirect oldVersion="0.0.0.0-4.1.4.0" newVersion="4.1.4.0" />
+   		</dependentAssembly>
+   		<dependentAssembly>
+   			<assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+   			<bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+   		</dependentAssembly>
+   		<dependentAssembly>
+   			<assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+   			<bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+   		</dependentAssembly>
+   		<dependentAssembly>
+   			<assemblyIdentity name="System.Threading.Tasks.Extensions" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+   			<bindingRedirect oldVersion="0.0.0.0-4.2.0.1" newVersion="4.2.0.1" />
+   		</dependentAssembly>
+   		<dependentAssembly>
+   			<assemblyIdentity name="System.ValueTuple" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+   			<bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+   		</dependentAssembly>
+   		</assemblyBinding>
+   	</runtime>
 
-		<system.data>
-			<DbProviderFactories>
-				<add name="Npgsql Data Provider"
-					invariant="Npgsql"
-					description=".NET Framework Data Provider for Postgresql Server"
-					type="Npgsql.NpgsqlFactory, Npgsql, Version=8.0.4.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7" />
-			</DbProviderFactories>
-		</system.data>
-	<configuration>
-````
-
+   	<system.data>
+   		<DbProviderFactories>
+   			<add name="Npgsql Data Provider"
+   				invariant="Npgsql"
+   				description=".NET Framework Data Provider for Postgresql Server"
+   				type="Npgsql.NpgsqlFactory, Npgsql, Version=8.0.4.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7" />
+   		</DbProviderFactories>
+   	</system.data>
+   <configuration>
+   ```
 
 ## Setting up the Npgsql Data Provider in .NET Applications
 
@@ -103,7 +102,7 @@ The [Npgsql](https://www.npgsql.org/) data provider is automatically registered 
 
 If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
-````JSON
+```JSON
 {
 	"ConnectionStrings":{
 		"postgres":{
@@ -112,9 +111,9 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 		}
 	}
 }
-````
+```
 
 ## See Also
 
-* [PostgreSQL connection strings](https://www.connectionstrings.com/postgresql/)
-* [Connecting to PostgreSQL DB]({%slug configuring-postgres-with-npgsql%})
+- [PostgreSQL connection strings](https://www.connectionstrings.com/postgresql/)
+- [Connecting to PostgreSQL DB]({%slug configuring-postgres-with-npgsql%})

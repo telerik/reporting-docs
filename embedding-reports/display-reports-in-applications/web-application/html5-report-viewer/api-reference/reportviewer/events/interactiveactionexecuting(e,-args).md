@@ -7,7 +7,9 @@ tags: interactiveactionexecuting(e,,args)
 published: True
 reportingArea: HTML5
 position: 12
-previous_url: /html5-report-viewer-reportviewer-events-interactiveactionexecuting
+previous_url:
+- /html5-report-viewer-reportviewer-events-interactiveactionexecuting
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)
 ---
 
 <style>

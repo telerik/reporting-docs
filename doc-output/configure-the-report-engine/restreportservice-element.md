@@ -25,7 +25,7 @@ The `restReportService` element specifies the configuration settings for the Rep
 
 For example, initializing the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this:
 
-````CSharp
+````C#
 configurationInstance = new ConfigSectionReportServiceConfiguration
 {
 	HostAppId = "Html5DemoApp",
@@ -64,11 +64,11 @@ __`<storage>` element__
 
 ## Examples
 
-XML-based configuration file:
-
 ````XML
 <configuration>
-…
+	<configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
 	<Telerik.Reporting>
 		<restReportService hostAppId="Application1" workerCount="4" reportSharingTimeout="10" clientSessionTimeout="10" exceptionsVerbosity="detailed">
 			<reportResolver provider="type" />
@@ -91,12 +91,8 @@ XML-based configuration file:
 			</storage>-->
 		</restReportService>
 	</Telerik.Reporting>
-…
 </configuration>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"restReportService": {
@@ -120,7 +116,6 @@ JSON-based configuration file:
 	},
 }
 ````
-
 
 ## See Also
 

@@ -1,15 +1,16 @@
 ---
-title: Report Viewer Blank Screen in Progress Telerik Reporting Version 19.1.25.521  
-description: Resolving the issue of a blank report viewer screen after updating to version 19.1.25.521 in Progress Telerik Reporting.  
-type: troubleshooting  
-page_title: Blank Report Viewer Screen in Version 19.1.25.521 of Telerik Reporting  
-slug: report-viewer-blank-screen-version-19-1-25-521  
-tags: reporting, report viewer, blank screen, css selectors, sass themes  
-res_type: kb  
+title: Report Viewer Blank Screen in Progress Telerik Reporting Version 19.1.25.521
+description: Resolving the issue of a blank report viewer screen after updating to version 19.1.25.521 in Progress Telerik Reporting.
+type: troubleshooting
+page_title: Blank Report Viewer Screen in Version 19.1.25.521 of Telerik Reporting
+slug: report-viewer-blank-screen-version-19-1-25-521
+tags: reporting, report viewer, blank screen, css selectors, sass themes
+res_type: kb
 ticketid: 1689024
 ---
 
 ## Environment
+
 <table>
 <tbody>
 <tr>
@@ -39,23 +40,26 @@ To resolve the issue, use an appropriate CSS selector to apply the necessary sty
 
 Replace the `.trv-report-viewer` selector with the ID of your report viewer element (e.g., `#rv1`). Update your CSS as follows:
 
-````html
+```html
 <style>
-    #rv1 {
-        width: 100%;
-        height: 1000px;
-        padding-right: 50px;
-    }
+  #rv1 {
+    width: 100%;
+    height: 1000px;
+    padding-right: 50px;
+  }
 </style>
-````
+```
 
 ### Step 2: Include a Sass-Based Kendo UI Theme
 
 Ensure that a Sass-based Kendo UI theme is referenced in your project. For example, include the Default Ocean Blue theme with the following tag:
 
-````html
-    <link rel="stylesheet" href ="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css"/>
-````
+```html
+<link
+  rel="stylesheet"
+  href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css"
+/>
+```
 
 ## See Also
 

@@ -34,590 +34,585 @@ In this article, we will demonstrate how the report definitions can be stored in
 
 ## Solution
 
-1. The first step is to create Entity Framework Core models for the Report definitions and their Folders. These models will be used later to create database tables. 
+1. The first step is to create Entity Framework Core models for the Report definitions and their Folders. These models will be used later to create database tables.
 
-	````CSharp
-public class Report
-	{
-		[Column("Id")]
-		[Required]
-		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		[Key]
-		public string Id { get; set; }
+   ```C#
+   public class Report
+   {
+   	[Column("Id")]
+   	[Required]
+   	[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+   	[Key]
+   	public string Id { get; set; }
 
-		[Column("Name")]
-		[Required]
-		public string Name { get; set; }
+   	[Column("Name")]
+   	[Required]
+   	public string Name { get; set; }
 
-		[Column("Bytes")]
-		[Required]
-		public byte[] Bytes { get; set; }
+   	[Column("Bytes")]
+   	[Required]
+   	public byte[] Bytes { get; set; }
 
-		[Column("CreatedOn")]
-		[Required]
-		public DateTime CreatedOn { get; set; }
+   	[Column("CreatedOn")]
+   	[Required]
+   	public DateTime CreatedOn { get; set; }
 
-		[Column("ModifiedOn")]
-		public DateTime ModifiedOn { get; set; }
+   	[Column("ModifiedOn")]
+   	public DateTime ModifiedOn { get; set; }
 
-		[Column("Size")]
-		public float Size { get; set; }
+   	[Column("Size")]
+   	public float Size { get; set; }
 
-		[Column("ParentUri")]
-		public string ParentUri { get; set; }
+   	[Column("ParentUri")]
+   	public string ParentUri { get; set; }
 
-		[Column("Uri")]
-		public string Uri { get; set; }
-	}
-````
+   	[Column("Uri")]
+   	public string Uri { get; set; }
+   }
+   ```
 
-	````CSharp
-public class ReportFolder
-	{
+   ```C#
+   public class ReportFolder
+   {
 
-		[Column("Id")]
-		[Required]
-		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		[Key]
-		public string Id { get; set; }
+   	[Column("Id")]
+   	[Required]
+   	[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+   	[Key]
+   	public string Id { get; set; }
 
-		[Column("Name")]
-		[Required]
-		public string Name { get; set; }
+   	[Column("Name")]
+   	[Required]
+   	public string Name { get; set; }
 
-		[Column("ParentUri")]
-		[Required]
-		public string ParentUri { get; set; }
-	
-		[Column("HasSubFolders")]
-		public bool HasSubFolders { get; set; }
+   	[Column("ParentUri")]
+   	[Required]
+   	public string ParentUri { get; set; }
 
-		[Column("Uri")]
-		public string Uri { get; set; }
+   	[Column("HasSubFolders")]
+   	public bool HasSubFolders { get; set; }
 
-		[Column("CreatedOn")]
-		[Required]
-		public DateTime CreatedOn { get; set; }
+   	[Column("Uri")]
+   	public string Uri { get; set; }
 
-		[Column("ModifiedOn")]
-		public DateTime ModifiedOn { get; set; }
-	}
-````
+   	[Column("CreatedOn")]
+   	[Required]
+   	public DateTime CreatedOn { get; set; }
 
+   	[Column("ModifiedOn")]
+   	public DateTime ModifiedOn { get; set; }
+   }
+   ```
 
-1. Next, we will create the custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) that the will be used for querying and saving the data from inside the definition storage implementation. Additionally, we can have our `Report` and `ReportFolder` table created automatically:
+1. Next, we will create the custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) that the will be used for querying and saving the data from inside the definition storage implementation.
 
-	````CSharp
-using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
-	using Microsoft.EntityFrameworkCore;
+   Additionally, we can have our `Report` and `ReportFolder` table created automatically:
 
-	namespace CSharp.Net7.Html5IntegrationDemo.EFCore
-	{
-		public class SqlDefinitionStorageContext : DbContext
-		{
-			public DbSet<Report> Reports { get; set; }
+   ```C#
+   using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
+   using Microsoft.EntityFrameworkCore;
 
-			public DbSet<ReportFolder> ReportFolders { get; set; }
+   namespace CSharp.Net7.Html5IntegrationDemo.EFCore
+   {
+   	public class SqlDefinitionStorageContext : DbContext
+   	{
+   		public DbSet<Report> Reports { get; set; }
 
-			public SqlDefinitionStorageContext(DbContextOptions<SqlDefinitionStorageContext> options) : base(options) { }
+   		public DbSet<ReportFolder> ReportFolders { get; set; }
 
-			protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-			{
-				if (!optionsBuilder.IsConfigured)
-				{
-					var connenctionString = @"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;";
-					optionsBuilder.UseSqlServer(connectionString);
-				}
-			}
-		}
-	}
-````
+   		public SqlDefinitionStorageContext(DbContextOptions<SqlDefinitionStorageContext> options) : base(options) { }
 
+   		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+   		{
+   			if (!optionsBuilder.IsConfigured)
+   			{
+   				var connenctionString = @"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;";
+   				optionsBuilder.UseSqlServer(connectionString);
+   			}
+   		}
+   	}
+   }
+   ```
 
 1. We will need to convert the data of the database model to the [Telerik.WebReportDesigner.Services.Models](/api/telerik.webreportdesigner.services.models), and for that reason, it will be handy to have an _extension_ class handling those conversions for us. For example:
 
-	````CSharp
-using System;
-	using Telerik.WebReportDesigner.Services.Models;
+   ```C#
+   using System;
+   using Telerik.WebReportDesigner.Services.Models;
 
-	namespace CSharp.Net7.Html5IntegrationDemo.EFCore.Models
-	{
-		public static class DbModelExtensions
-		{
-			public static ResourceFileModel ToResourceFileModel(this EFCore.Models.Report dbReportModel)
-			{
-				if (dbReportModel == null)
-				{
-					return null;
-				}
+   namespace CSharp.Net7.Html5IntegrationDemo.EFCore.Models
+   {
+   	public static class DbModelExtensions
+   	{
+   		public static ResourceFileModel ToResourceFileModel(this EFCore.Models.Report dbReportModel)
+   		{
+   			if (dbReportModel == null)
+   			{
+   				return null;
+   			}
 
-				return new ResourceFileModel()
-				{
-					FileName = dbReportModel.Name,
-					ParentPath = dbReportModel.ParentUri,
-					Uri = dbReportModel.Uri,
-					Size = dbReportModel.Bytes.Length / 1024f,
-					CreatedOn = dbReportModel.CreatedOn,
-					ModifiedOn = dbReportModel.ModifiedOn,
-				};
-			}
+   			return new ResourceFileModel()
+   			{
+   				FileName = dbReportModel.Name,
+   				ParentPath = dbReportModel.ParentUri,
+   				Uri = dbReportModel.Uri,
+   				Size = dbReportModel.Bytes.Length / 1024f,
+   				CreatedOn = dbReportModel.CreatedOn,
+   				ModifiedOn = dbReportModel.ModifiedOn,
+   			};
+   		}
 
-			public static ResourceFolderModel ToResourceFolderModel(this EFCore.Models.ReportFolder dbReportFolderModel)
-			{
-				if (dbReportFolderModel == null)
-				{
-					return null;
-				}
+   		public static ResourceFolderModel ToResourceFolderModel(this EFCore.Models.ReportFolder dbReportFolderModel)
+   		{
+   			if (dbReportFolderModel == null)
+   			{
+   				return null;
+   			}
 
-				return new ResourceFolderModel()
-				{
-					Name = dbReportFolderModel.Name,
-					ParentUri = dbReportFolderModel.ParentUri,
-					HasSubFolders = dbReportFolderModel.HasSubFolders,
-					CreatedOn = dbReportFolderModel.CreatedOn,
-					ModifiedOn = dbReportFolderModel.ModifiedOn,
-					Uri = dbReportFolderModel.Uri
-				};
-			}
+   			return new ResourceFolderModel()
+   			{
+   				Name = dbReportFolderModel.Name,
+   				ParentUri = dbReportFolderModel.ParentUri,
+   				HasSubFolders = dbReportFolderModel.HasSubFolders,
+   				CreatedOn = dbReportFolderModel.CreatedOn,
+   				ModifiedOn = dbReportFolderModel.ModifiedOn,
+   				Uri = dbReportFolderModel.Uri
+   			};
+   		}
 
-			public static EFCore.Models.ReportFolder ToDbReportFolderModel(this CreateFolderModel createFolderModel)
-			{
-				return new EFCore.Models.ReportFolder() {
-					Name = createFolderModel.Name,
-					ParentUri = createFolderModel.ParentUri,
-					Uri = (string.IsNullOrEmpty(createFolderModel.ParentUri) 
-						? createFolderModel.ParentUri 
-						: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
-					CreatedOn = DateTime.Now,
-					ModifiedOn = DateTime.Now
-				};
-			}
+   		public static EFCore.Models.ReportFolder ToDbReportFolderModel(this CreateFolderModel createFolderModel)
+   		{
+   			return new EFCore.Models.ReportFolder() {
+   				Name = createFolderModel.Name,
+   				ParentUri = createFolderModel.ParentUri,
+   				Uri = (string.IsNullOrEmpty(createFolderModel.ParentUri)
+   					? createFolderModel.ParentUri
+   					: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
+   				CreatedOn = DateTime.Now,
+   				ModifiedOn = DateTime.Now
+   			};
+   		}
 
-			public static EFCore.Models.Report ToDbReportModel(this SaveResourceModel saveResourceModel, byte[] data)
-			{
-				return new Models.Report()
-				{
-					Name = saveResourceModel.Name,
-					Bytes = data,
-					ParentUri = saveResourceModel.ParentUri,
-					Uri = (string.IsNullOrEmpty(saveResourceModel.ParentUri) 
-						? saveResourceModel.ParentUri 
-						: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
-					Size = data.Length,
-					CreatedOn = DateTime.Now,
-					ModifiedOn = DateTime.Now
-				};
-			}
-		}
-	}
-````
-
+   		public static EFCore.Models.Report ToDbReportModel(this SaveResourceModel saveResourceModel, byte[] data)
+   		{
+   			return new Models.Report()
+   			{
+   				Name = saveResourceModel.Name,
+   				Bytes = data,
+   				ParentUri = saveResourceModel.ParentUri,
+   				Uri = (string.IsNullOrEmpty(saveResourceModel.ParentUri)
+   					? saveResourceModel.ParentUri
+   					: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
+   				Size = data.Length,
+   				CreatedOn = DateTime.Now,
+   				ModifiedOn = DateTime.Now
+   			};
+   		}
+   	}
+   }
+   ```
 
 1. With all of the above prepared, we can now proceed with implementing the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface:
 
-	````CSharp
-using CSharp.Net7.Html5IntegrationDemo.EFCore;
-	using Microsoft.EntityFrameworkCore;
-	using System.Linq;
-	using System.Collections.Generic;
-	using System.Threading.Tasks;
-	using Telerik.WebReportDesigner.Services;
-	using Telerik.WebReportDesigner.Services.Models;
-	using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
-	using Microsoft.Extensions.DependencyInjection;
-	using System;
+   ```C#
+   using CSharp.Net7.Html5IntegrationDemo.EFCore;
+   using Microsoft.EntityFrameworkCore;
+   using System.Linq;
+   using System.Collections.Generic;
+   using System.Threading.Tasks;
+   using Telerik.WebReportDesigner.Services;
+   using Telerik.WebReportDesigner.Services.Models;
+   using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
+   using Microsoft.Extensions.DependencyInjection;
+   using System;
 
-	namespace CSharp.Net7.Html5IntegrationDemo
-	{
-		public class CustomDefinitionStorage : IDefinitionStorage
-		{
-			private SqlDefinitionStorageContext _dbContext { get; }
-		
-			public CustomDefinitionStorage(SqlDefinitionStorageContext context)
-			{
-				this._dbContext = context;
-			}
+   namespace CSharp.Net7.Html5IntegrationDemo
+   {
+   	public class CustomDefinitionStorage : IDefinitionStorage
+   	{
+   		private SqlDefinitionStorageContext _dbContext { get; }
 
-			public Task<ResourceFolderModel> CreateFolderAsync(CreateFolderModel model)
-			{
+   		public CustomDefinitionStorage(SqlDefinitionStorageContext context)
+   		{
+   			this._dbContext = context;
+   		}
 
-				if(this._dbContext.ReportFolders.Any(f => f.Uri == model.ParentUri + "\\" + model.Name)) {
-					throw new ResourceFolderAlreadyExistsException();
-				}
+   		public Task<ResourceFolderModel> CreateFolderAsync(CreateFolderModel model)
+   		{
 
-				var entityEntry = this._dbContext.ReportFolders.Add(model.ToDbReportFolderModel());
+   			if(this._dbContext.ReportFolders.Any(f => f.Uri == model.ParentUri + "\\" + model.Name)) {
+   				throw new ResourceFolderAlreadyExistsException();
+   			}
 
-				if (!string.IsNullOrEmpty(model.ParentUri))
-				{
-					var parentFolder = this._dbContext.ReportFolders
-					.FirstOrDefault(f => f.Uri == model.ParentUri);
+   			var entityEntry = this._dbContext.ReportFolders.Add(model.ToDbReportFolderModel());
 
-					if (parentFolder != null)
-					{
-						parentFolder.HasSubFolders = true;
-					}
-				}
+   			if (!string.IsNullOrEmpty(model.ParentUri))
+   			{
+   				var parentFolder = this._dbContext.ReportFolders
+   				.FirstOrDefault(f => f.Uri == model.ParentUri);
 
-				this._dbContext.SaveChanges();
+   				if (parentFolder != null)
+   				{
+   					parentFolder.HasSubFolders = true;
+   				}
+   			}
 
-				return Task.FromResult(entityEntry.Entity.ToResourceFolderModel());
-			}
+   			this._dbContext.SaveChanges();
 
-			public Task DeleteAsync(string uri)
-			{
-				var report = this._dbContext.Reports
-						.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
-				this._dbContext.Reports.Remove(report);
-				this._dbContext.SaveChanges();
-				return Task.CompletedTask;
-			}
+   			return Task.FromResult(entityEntry.Entity.ToResourceFolderModel());
+   		}
 
-			public Task DeleteFolderAsync(string uri)
-			{
-				try
-				{
-					var folderForDeletion = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == uri);
-					var parentUri = folderForDeletion.ParentUri;
-					if (folderForDeletion != null)
-					{
-						DeleteFolder(folderForDeletion);
-						this._dbContext.SaveChanges();
-						var subFoldersCount = this._dbContext.ReportFolders.Count(f => f.ParentUri == parentUri);
-						if (subFoldersCount > 0)
-						{
-							var parentFolderName = parentUri.Split("\\").Last();
-							var parentFolder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Name == parentFolderName);
-								if(parentFolder != null) parentFolder.HasSubFolders = false;
-							this._dbContext.SaveChanges();
-						}
-						return Task.CompletedTask;
-					}
-					return Task.FromException(new ResourceFolderNotFoundException());
-				}
-				catch (Exception)
-				{
-					throw;
-				}
+   		public Task DeleteAsync(string uri)
+   		{
+   			var report = this._dbContext.Reports
+   					.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
+   			this._dbContext.Reports.Remove(report);
+   			this._dbContext.SaveChanges();
+   			return Task.CompletedTask;
+   		}
 
-			}
+   		public Task DeleteFolderAsync(string uri)
+   		{
+   			try
+   			{
+   				var folderForDeletion = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == uri);
+   				var parentUri = folderForDeletion.ParentUri;
+   				if (folderForDeletion != null)
+   				{
+   					DeleteFolder(folderForDeletion);
+   					this._dbContext.SaveChanges();
+   					var subFoldersCount = this._dbContext.ReportFolders.Count(f => f.ParentUri == parentUri);
+   					if (subFoldersCount > 0)
+   					{
+   						var parentFolderName = parentUri.Split("\\").Last();
+   						var parentFolder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Name == parentFolderName);
+   							if(parentFolder != null) parentFolder.HasSubFolders = false;
+   						this._dbContext.SaveChanges();
+   					}
+   					return Task.CompletedTask;
+   				}
+   				return Task.FromException(new ResourceFolderNotFoundException());
+   			}
+   			catch (Exception)
+   			{
+   				throw;
+   			}
 
-			public Task<byte[]> GetAsync(string resourceName)
-			{
-				var reportBytes = this.GetDbReportModel(this.PrepareResourceUri(resourceName))?.Bytes;
-				return reportBytes == null ? throw new ReportNotFoundException() : Task.FromResult(reportBytes);
-			}
+   		}
 
-			public Task<ResourceFolderModel> GetFolderAsync(string uri)
-			{
-				// it is not necessar to implement this one
-				var folder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == uri);
-				return folder == null 
-					? throw new ResourceFolderNotFoundException() 
-					: Task.FromResult(folder.ToResourceFolderModel());
-			}
+   		public Task<byte[]> GetAsync(string resourceName)
+   		{
+   			var reportBytes = this.GetDbReportModel(this.PrepareResourceUri(resourceName))?.Bytes;
+   			return reportBytes == null ? throw new ReportNotFoundException() : Task.FromResult(reportBytes);
+   		}
 
-			public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
-			{
-				uri = (uri ?? string.Empty);
+   		public Task<ResourceFolderModel> GetFolderAsync(string uri)
+   		{
+   			// it is not necessar to implement this one
+   			var folder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == uri);
+   			return folder == null
+   				? throw new ResourceFolderNotFoundException()
+   				: Task.FromResult(folder.ToResourceFolderModel());
+   		}
 
-				var reps = this._dbContext.Reports
-					.Where(r => r.ParentUri == uri)
-					.Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
-				
-				var folders = this._dbContext.ReportFolders
-					.Where(f => f.ParentUri == uri)
-					.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
+   		public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
+   		{
+   			uri = (uri ?? string.Empty);
 
-				var result = folders.Union(reps);
+   			var reps = this._dbContext.Reports
+   				.Where(r => r.ParentUri == uri)
+   				.Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
 
-				return Task.FromResult<IEnumerable<ResourceModelBase>>(result);
-			}
+   			var folders = this._dbContext.ReportFolders
+   				.Where(f => f.ParentUri == uri)
+   				.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
 
-			public Task<ResourceFileModel> GetModelAsync(string uri)
-			{
-				return Task.FromResult(
-					this.GetDbReportModel(uri)
-							.ToResourceFileModel());
-			}
+   			var result = folders.Union(reps);
 
-			public Task<ResourceFileModel> RenameAsync(RenameResourceModel model)
-			{
-				string oldName = model.OldUri.Split("\\").Last();
-				var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(model.OldUri));
-				if (report != null)
-				{
-					report.Name = model.Name;
-					report.Uri = report.Uri.Replace(oldName, model.Name);
-					report.ModifiedOn = DateTime.Now;
+   			return Task.FromResult<IEnumerable<ResourceModelBase>>(result);
+   		}
 
-					this._dbContext.SaveChanges();
+   		public Task<ResourceFileModel> GetModelAsync(string uri)
+   		{
+   			return Task.FromResult(
+   				this.GetDbReportModel(uri)
+   						.ToResourceFileModel());
+   		}
 
-					return Task.FromResult(report.ToResourceFileModel());
-				}
-				throw new ResourceNotFoundException();
-			}
+   		public Task<ResourceFileModel> RenameAsync(RenameResourceModel model)
+   		{
+   			string oldName = model.OldUri.Split("\\").Last();
+   			var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(model.OldUri));
+   			if (report != null)
+   			{
+   				report.Name = model.Name;
+   				report.Uri = report.Uri.Replace(oldName, model.Name);
+   				report.ModifiedOn = DateTime.Now;
 
-			public async Task<ResourceFolderModel> RenameFolderAsync(RenameFolderModel model)
-			{
-				var folder = this._dbContext.ReportFolders.FirstOrDefault(r => r.Uri == model.OldUri);
-				if (folder != null)
-				{
-					await RenameFolderAndSubFolders(folder, model);
-					folder.ModifiedOn = DateTime.Now;
-					this._dbContext.SaveChanges();
+   				this._dbContext.SaveChanges();
 
-					return folder.ToResourceFolderModel();
-				}
-				throw new ResourceFolderNotFoundException();
-			}
+   				return Task.FromResult(report.ToResourceFileModel());
+   			}
+   			throw new ResourceNotFoundException();
+   		}
 
-			public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resource)
-			{
-				var entity = this._dbContext.Reports.FirstOrDefault(r => r.Uri == model.ParentUri + model.Name);
+   		public async Task<ResourceFolderModel> RenameFolderAsync(RenameFolderModel model)
+   		{
+   			var folder = this._dbContext.ReportFolders.FirstOrDefault(r => r.Uri == model.OldUri);
+   			if (folder != null)
+   			{
+   				await RenameFolderAndSubFolders(folder, model);
+   				folder.ModifiedOn = DateTime.Now;
+   				this._dbContext.SaveChanges();
 
-				if (entity != null)
-				{
-					entity.Bytes = resource;
-					entity.ModifiedOn = DateTime.Now;
-					this._dbContext.SaveChanges();
-					return Task.FromResult(entity.ToResourceFileModel());
-				}
+   				return folder.ToResourceFolderModel();
+   			}
+   			throw new ResourceFolderNotFoundException();
+   		}
 
-				var entityEntry = this._dbContext.Reports.Add(model.ToDbReportModel(resource));
-				this._dbContext.SaveChanges();
+   		public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resource)
+   		{
+   			var entity = this._dbContext.Reports.FirstOrDefault(r => r.Uri == model.ParentUri + model.Name);
 
-				return Task.FromResult(entityEntry.Entity.ToResourceFileModel());
-			}
+   			if (entity != null)
+   			{
+   				entity.Bytes = resource;
+   				entity.ModifiedOn = DateTime.Now;
+   				this._dbContext.SaveChanges();
+   				return Task.FromResult(entity.ToResourceFileModel());
+   			}
 
-			string PrepareResourceUri(string resourceName)
-			{
-				resourceName = (resourceName ?? string.Empty);
-				resourceName = resourceName.Replace("/", "\\");
+   			var entityEntry = this._dbContext.Reports.Add(model.ToDbReportModel(resource));
+   			this._dbContext.SaveChanges();
 
-				return resourceName;
-			}
+   			return Task.FromResult(entityEntry.Entity.ToResourceFileModel());
+   		}
 
-			EFCore.Models.Report GetDbReportModel(string uri)
-			{
-				if (_dbContext.Reports.Any())
-				{
-					return this._dbContext.Reports.FirstOrDefault(r => r.Uri == uri);
-				}
+   		string PrepareResourceUri(string resourceName)
+   		{
+   			resourceName = (resourceName ?? string.Empty);
+   			resourceName = resourceName.Replace("/", "\\");
 
-				return null;
-			}
+   			return resourceName;
+   		}
 
-			void DeleteReportsInFolder(ReportFolder folder)
-			{
-				var reports = this._dbContext.Reports.Where(r => r.ParentUri == folder.Uri).ToList();
-				if (reports.Count > 0)
-				{
-					reports.ForEach(r =>
-					{
-						this._dbContext.Reports.Remove(r);
-						this._dbContext.SaveChanges();
-					});
-				}
-			}
+   		EFCore.Models.Report GetDbReportModel(string uri)
+   		{
+   			if (_dbContext.Reports.Any())
+   			{
+   				return this._dbContext.Reports.FirstOrDefault(r => r.Uri == uri);
+   			}
 
-			void DeleteFolder(ReportFolder folder)
-			{
-				DeleteReportsInFolder(folder);
+   			return null;
+   		}
 
-				var subfolders = this._dbContext.ReportFolders.Where(f => f.ParentUri == folder.Uri).ToList();
-				this._dbContext.ReportFolders.Remove(folder);
+   		void DeleteReportsInFolder(ReportFolder folder)
+   		{
+   			var reports = this._dbContext.Reports.Where(r => r.ParentUri == folder.Uri).ToList();
+   			if (reports.Count > 0)
+   			{
+   				reports.ForEach(r =>
+   				{
+   					this._dbContext.Reports.Remove(r);
+   					this._dbContext.SaveChanges();
+   				});
+   			}
+   		}
 
-				if (subfolders.Count == 0)
-				{
-					return;
-				}
+   		void DeleteFolder(ReportFolder folder)
+   		{
+   			DeleteReportsInFolder(folder);
 
-				foreach (var subfolder in subfolders)
-				{
-					DeleteFolder(subfolder);
-				}
-			}
+   			var subfolders = this._dbContext.ReportFolders.Where(f => f.ParentUri == folder.Uri).ToList();
+   			this._dbContext.ReportFolders.Remove(folder);
 
-			async Task UpdateReportParentUriAfterFolderRename(string oldName, RenameFolderModel model)
-			{
-				await this._dbContext.Reports.ForEachAsync(r =>
-				{
-					if (r.ParentUri.Contains(model.OldUri))
-					{
-						r.Uri = r.Uri.Replace(oldName, model.Name);
-						r.ParentUri = r.ParentUri.Replace(oldName, model.Name);
-					}
-				});
-			}
+   			if (subfolders.Count == 0)
+   			{
+   				return;
+   			}
 
-			async Task RenameFolderAndSubFolders(ReportFolder folder, RenameFolderModel model)
-			{
-				string oldName = model.OldUri.Split("\\").Last();
+   			foreach (var subfolder in subfolders)
+   			{
+   				DeleteFolder(subfolder);
+   			}
+   		}
 
-				await UpdateReportParentUriAfterFolderRename(oldName, model);
+   		async Task UpdateReportParentUriAfterFolderRename(string oldName, RenameFolderModel model)
+   		{
+   			await this._dbContext.Reports.ForEachAsync(r =>
+   			{
+   				if (r.ParentUri.Contains(model.OldUri))
+   				{
+   					r.Uri = r.Uri.Replace(oldName, model.Name);
+   					r.ParentUri = r.ParentUri.Replace(oldName, model.Name);
+   				}
+   			});
+   		}
 
-				folder.Name = model.Name;
-				folder.Uri = folder.Uri.Replace(oldName, model.Name);
+   		async Task RenameFolderAndSubFolders(ReportFolder folder, RenameFolderModel model)
+   		{
+   			string oldName = model.OldUri.Split("\\").Last();
 
-				if (!folder.HasSubFolders)
-				{
-					return;
-				}
+   			await UpdateReportParentUriAfterFolderRename(oldName, model);
 
-				await this._dbContext.ReportFolders
-					.Where(f => f.ParentUri.Contains(model.OldUri))
-					.ForEachAsync(f =>
-					{
-						f.Uri = f.Uri.Replace(oldName, model.Name);
-						f.ParentUri = f.ParentUri.Replace(oldName, model.Name);
-					});
-			}
-		}
-	}
-````
+   			folder.Name = model.Name;
+   			folder.Uri = folder.Uri.Replace(oldName, model.Name);
 
+   			if (!folder.HasSubFolders)
+   			{
+   				return;
+   			}
+
+   			await this._dbContext.ReportFolders
+   				.Where(f => f.ParentUri.Contains(model.OldUri))
+   				.ForEachAsync(f =>
+   				{
+   					f.Uri = f.Uri.Replace(oldName, model.Name);
+   					f.ParentUri = f.ParentUri.Replace(oldName, model.Name);
+   				});
+   		}
+   	}
+   }
+   ```
 
 1. In order to be able to preview the reports stored in the database, the [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) interface also has to be implemented. Since we already have the `DbContext`, that will be pretty straightforward:
 
-	````CSharp
-public class CustomReportSourceResolver : IReportSourceResolver
-	{
+   ```C#
+   public class CustomReportSourceResolver : IReportSourceResolver
+   {
 
-		private SqlDefinitionStorageContext _dbContext { get; }
-		public CustomReportSourceResolver(SqlDefinitionStorageContext context)
-		{
-			this._dbContext = context;
-		}
+   	private SqlDefinitionStorageContext _dbContext { get; }
+   	public CustomReportSourceResolver(SqlDefinitionStorageContext context)
+   	{
+   		this._dbContext = context;
+   	}
 
-		public ReportSource Resolve(string uri, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
-		{
-			var reportPackager = new ReportPackager();
-			var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == uri.Replace("/", "\\"));
+   	public ReportSource Resolve(string uri, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
+   	{
+   		var reportPackager = new ReportPackager();
+   		var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == uri.Replace("/", "\\"));
 
-			if (report == null)
-			{
-				throw new FileNotFoundException();
-			}
+   		if (report == null)
+   		{
+   			throw new FileNotFoundException();
+   		}
 
-			MemoryStream stream = new(report.Bytes);
-			Telerik.Reporting.Report report1 = (Telerik.Reporting.Report)reportPackager.UnpackageDocument(stream);
+   		MemoryStream stream = new(report.Bytes);
+   		Telerik.Reporting.Report report1 = (Telerik.Reporting.Report)reportPackager.UnpackageDocument(stream);
 
-			var instanceReportSource = new InstanceReportSource
-			{
-				ReportDocument = report1
-			};
+   		var instanceReportSource = new InstanceReportSource
+   		{
+   			ReportDocument = report1
+   		};
 
-			return instanceReportSource;
-		}
-	}
-````
-
+   		return instanceReportSource;
+   	}
+   }
+   ```
 
 1. The custom `ReportSourceResolver` defined above will be sufficient for most scenario, however, when there are [`SubReports`]({%slug telerikreporting/designing-reports/report-structure/subreport%}) inserted in the report or when the [`NavigateToReport`]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) action is triggered, the engine will try to resolve those reports using the default `ReportDocumentResolver` which will try to resolve them by URI. That won't work in our case because the reports are stored in the database, thus, we need a custom implementation that may look as follows:
 
+   ```CSharp
+   using Microsoft.EntityFrameworkCore;
+   using SqlDefinitionStorageExample.EFCore;
+   using System;
+   using System.IO;
+   using System.Linq;
+   using Telerik.Reporting;
+   using Telerik.Reporting.Services;
 
-	````CSharp
-using Microsoft.EntityFrameworkCore;
-	using SqlDefinitionStorageExample.EFCore;
-	using System;
-	using System.IO;
-	using System.Linq;
-	using Telerik.Reporting;
-	using Telerik.Reporting.Services;
-	
-	namespace SqlDefinitionStorageExample
-	{
-		public class CustomReportDocumentResolver : IReportDocumentResolver
-		{
-			public IReportDocument Resolve(ReportSource reportSource)
-			{
-				// The main report is wrapped in an InstanceReportSource by CustomReportSourceResolver
-				if (reportSource is InstanceReportSource)
-				{
-					return (reportSource as InstanceReportSource).ReportDocument;
-				}
-				// the subreport is resolved in the context of the main report SubReport
-				else if (reportSource is UriReportSource)
-				{
-					var reportPackager = new ReportPackager();
-					var uri = (reportSource as UriReportSource).Uri.Replace(AppDomain.CurrentDomain.BaseDirectory, string.Empty);
-					var optionsBuilder = new DbContextOptionsBuilder<SqlDefinitionStorageContext>();
-	
-					// It is necessary to initialize a new dbContent because this code will be executed in a new thread
-					using SqlDefinitionStorageContext dbContext = new(optionsBuilder.Options);
-					var report = dbContext.Reports.FirstOrDefault(r => r.Uri == uri) ?? throw new FileNotFoundException();
-					MemoryStream stream = new(report.Bytes);
-					return reportPackager.UnpackageDocument(stream);
-				}
-				return null;
-			}
-		}
-	}
-````
+   namespace SqlDefinitionStorageExample
+   {
+   	public class CustomReportDocumentResolver : IReportDocumentResolver
+   	{
+   		public IReportDocument Resolve(ReportSource reportSource)
+   		{
+   			// The main report is wrapped in an InstanceReportSource by CustomReportSourceResolver
+   			if (reportSource is InstanceReportSource)
+   			{
+   				return (reportSource as InstanceReportSource).ReportDocument;
+   			}
+   			// the subreport is resolved in the context of the main report SubReport
+   			else if (reportSource is UriReportSource)
+   			{
+   				var reportPackager = new ReportPackager();
+   				var uri = (reportSource as UriReportSource).Uri.Replace(AppDomain.CurrentDomain.BaseDirectory, string.Empty);
+   				var optionsBuilder = new DbContextOptionsBuilder<SqlDefinitionStorageContext>();
 
+   				// It is necessary to initialize a new dbContent because this code will be executed in a new thread
+   				using SqlDefinitionStorageContext dbContext = new(optionsBuilder.Options);
+   				var report = dbContext.Reports.FirstOrDefault(r => r.Uri == uri) ?? throw new FileNotFoundException();
+   				MemoryStream stream = new(report.Bytes);
+   				return reportPackager.UnpackageDocument(stream);
+   			}
+   			return null;
+   		}
+   	}
+   }
+   ```
 
 1. Lastly, the [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration) should be set to use the `CustomDefinitionStorage` class as well as the `CustomReportSourceResolver` and the `CustomReportDocumentResolver`:
 
-	````CSharp
-var builder = WebApplication.CreateBuilder(args);
+   ```C#
+   var builder = WebApplication.CreateBuilder(args);
 
-	// Add services to the container.
-	builder.Services.AddControllers();
-	builder.Services.AddRazorPages()
-					.AddNewtonsoftJson();
+   // Add services to the container.
+   builder.Services.AddControllers();
+   builder.Services.AddRazorPages();
 
-	// Add the custom resolvers and storages
-	builder.Services.AddDbContext<SqlDefinitionStorageContext>();
-	builder.Services.AddScoped<IDefinitionStorage, CustomDefinitionStorage>();
-	builder.Services.AddScoped<IReportSourceResolver, CustomReportSourceResolver>();
-	builder.Services.AddScoped<IReportDocumentResolver, CustomReportDocumentResolver>();
+   // Add the custom resolvers and storages
+   builder.Services.AddDbContext<SqlDefinitionStorageContext>();
+   builder.Services.AddScoped<IDefinitionStorage, CustomDefinitionStorage>();
+   builder.Services.AddScoped<IReportSourceResolver, CustomReportSourceResolver>();
+   builder.Services.AddScoped<IReportDocumentResolver, CustomReportDocumentResolver>();
 
-	var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "..", "..", "..", "..", "Report Designer", "Examples");
+   var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "..", "..", "..", "..", "Report Designer", "Examples");
 
-	// Configure dependencies for ReportsController.
-	builder.Services.TryAddScoped<IReportServiceConfiguration>(sp =>
-		new ReportServiceConfiguration
-		{
-			// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
-			ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
+   // Configure dependencies for ReportsController.
+   builder.Services.TryAddScoped<IReportServiceConfiguration>(sp =>
+   	new ReportServiceConfiguration
+   	{
+   		// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
+   		ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 
-			// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
-			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-			HostAppId = "SqlDefinitionStorageExample",
-			Storage = new FileStorage(),
-			// Using the custom resolver implementations
-			ReportSourceResolver = sp.GetRequiredService<IReportSourceResolver>(),
-			ReportDocumentResolver = sp.GetRequiredService<IReportDocumentResolver>()
-		});
+   		// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
+   		//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
+   		HostAppId = "SqlDefinitionStorageExample",
+   		Storage = new FileStorage(),
+   		// Using the custom resolver implementations
+   		ReportSourceResolver = sp.GetRequiredService<IReportSourceResolver>(),
+   		ReportDocumentResolver = sp.GetRequiredService<IReportDocumentResolver>()
+   	});
 
-	// Configure dependencies for ReportDesignerController.
-	builder.Services.TryAddScoped<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
-	{
-		DefinitionStorage =sp.GetRequiredService<IDefinitionStorage>(),
-		ResourceStorage = new ResourceStorage(Path.Combine(reportsPath, "Resources")),
-		SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(reportsPath, "Shared Data Sources")),
-		SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
-	});
+   // Configure dependencies for ReportDesignerController.
+   builder.Services.TryAddScoped<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
+   {
+   	DefinitionStorage =sp.GetRequiredService<IDefinitionStorage>(),
+   	ResourceStorage = new ResourceStorage(Path.Combine(reportsPath, "Resources")),
+   	SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(reportsPath, "Shared Data Sources")),
+   	SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+   });
 
-	var app = builder.Build();
+   var app = builder.Build();
 
-	using (var serviceScope = app.Services.CreateScope())
-	{
-		serviceScope.ServiceProvider
-			.GetService<SqlDefinitionStorageContext>()
-			.Database
-			.EnsureCreated();
-	}
-````
-
+   using (var serviceScope = app.Services.CreateScope())
+   {
+   	serviceScope.ServiceProvider
+   		.GetService<SqlDefinitionStorageContext>()
+   		.Database
+   		.EnsureCreated();
+   }
+   ```
 
 ## Notes
 
 Since there will be no data in the database, initially, the [ReportNotFoundException](/api/telerik.webreportdesigner.services.reportnotfoundexception) will be thrown a couple of times, you can safely `Continue` until you see the Web Report Designer loaded with no report. At this point, you can now create a new report from the main menu.
 
-One way to avoid this would be to, manually, insert a sample report when the application is started if the database table for the reports is empty. For this, the following extension class `ReportsInitializer` can be created:
+One way to avoid this would be to, manually, insert a sample report when the application is started if the database table for the reports is empty.
 
-````CSharp
+For this, the following extension class `ReportsInitializer` can be created:
+
+```C#
 public static class ReportsInitializer
 	{
 		public static WebApplication Seed(this WebApplication app)
@@ -650,22 +645,22 @@ public static class ReportsInitializer
 			}
 		}
 	}
-````
+```
 
 The operation can be triggered in the initialization of the application, for example, in `Program.cs`:
 
-````CSharp
+```C#
 // Add initial data to database
 	app.Seed();
 
 	app.Run();
-````
+```
 
 ## Sample Project
 
-* [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample)
+- [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample)
 
 ## See Also
 
-* [Using Custom Report Definition Storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%})
-* [Implementing Custom ReportSource and ReportDocument Resolvers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})
+- [Using Custom Report Definition Storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%})
+- [Implementing Custom ReportSource and ReportDocument Resolvers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})

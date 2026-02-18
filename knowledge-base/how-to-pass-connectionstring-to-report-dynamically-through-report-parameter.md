@@ -28,7 +28,7 @@ The requirement can be achieved without writing additional code, **_directly in 
 1. In the report definition [introduce a new Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
 1. In the Report or another [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (Table, List, etc.) where the connection string is supposed to be changed dynamically, introduce a new [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) as shown below:  
 
-	```XML
+	```TEXT
 	Property path                   |   Expression
 
 	DataSource.ConnectionString     |   = Parameters.ConnectionStringParameter.Value

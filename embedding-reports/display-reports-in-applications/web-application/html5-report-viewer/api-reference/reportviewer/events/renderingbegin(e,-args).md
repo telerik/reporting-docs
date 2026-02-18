@@ -7,7 +7,9 @@ tags: renderingbegin,args
 published: True
 reportingArea: HTML5
 position: 9
-previous_url: /html5-report-viewer-reportviewer-events-renderingbegin
+previous_url:
+- /html5-report-viewer-reportviewer-events-renderingbegin
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)
 ---
 
 <style>

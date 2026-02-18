@@ -1,6 +1,6 @@
 ---
 title: Telerik Reporting Documentation Repository
-publish: false
+published: false
 ---
 
 

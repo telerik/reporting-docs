@@ -7,7 +7,7 @@ tags: pagecount()
 published: True
 reportingArea: HTML5
 position: 8
-previous_url: /html5-report-viewer-reportviewer-methods-pagecount
+previous_url: /html5-report-viewer-reportviewer-methods-pagecount, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagecount()
 ---
 
 # The `pageCount()` method of the HTML5 Report Viewer

@@ -22,148 +22,140 @@ To give an example we will use the [Invoice](https://demos.telerik.com/reporting
 
 1.  Setup the HTML5 Report Viewer dependencies on the page:
 
-	````HTML
-<!DOCTYPE html>
+    ```HTML
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    	<head>
+        	<title>Telerik HTML5 Report Viewer</title>
+        	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
 
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Telerik HTML5 Report Viewer</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        	<script src="/api/reports/resources/js/telerikReportViewer"></script>
 
-		<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+        	<style>
+        		#reportViewer1 {
+        			position: absolute;
+        			inset: 5px;
+        			font-family: 'segoe ui', 'ms sans serif';
+        			overflow: hidden;
+        		}
+        	</style>
+        </head>
+    ```
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="/api/reports/resources/js/telerikReportViewer"></script>
+1.  Display the custom parameter UI with a selector such as the [select element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select) with a few values :
 
-		<style>
-			#reportViewer1 {
-				position: absolute;
-				inset: 5px;
-				font-family: 'segoe ui', 'ms sans serif';
-				overflow: hidden;
-			}
-		</style>
-	</head>
-````
+    ```HTML
+    <div id="invoiceIdSelector">
+    	<label for="invoiceId">Invoices</label>
 
-
-1. Display the custom parameter UI with a selector such as the [<select> element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select) with a few values :
-
-	````HTML
-<div id="invoiceIdSelector">
-		<label for="invoiceId">Invoices</label>
-
-		<select id="invoiceId" title="Select the Invoice ID">
-			<option value="SO51081">SO51081</option>
-			<option value="SO51082" selected="selected">SO51082</option>
-			<option value="SO51083">SO51083</option>
-		</select>
-	</div>
-````
-
+    	<select id="invoiceId" title="Select the Invoice ID">
+    		<option value="SO51081">SO51081</option>
+    		<option value="SO51082" selected="selected">SO51082</option>
+    		<option value="SO51083">SO51083</option>
+    	</select>
+    </div>
+    ```
 
 1.  Add the ReportViewer placeholder element:
 
-	````HTML
-<div id="reportViewer1">
-	loading...
-</div>
-````
+    ```HTML
+    <div id="reportViewer1">
+    	loading...
+    </div>
+    ```
 
+1.  Now, initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Note that the value from the custom UI is used to set the **OrderNumber** report parameter initially:
 
-1. Now, initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Note that the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
-
-	````JavaScript
-$(document).ready(function () {
-		$("#reportViewer1").telerik_ReportViewer({
-			serviceUrl: "api/reports/",
-			reportSource: {
-				report: "Invoice.trdp",
-				parameters: {
-					OrderNumber: $('#invoiceId option:selected').val()
-					}
-			}
-		});
-	});
-````
-
+    ```JavaScript
+    $(document).ready(function () {
+    	$("#reportViewer1").telerik_ReportViewer({
+    		serviceUrl: "api/reports/",
+    		reportSource: {
+    			report: "Invoice.trdp",
+    			parameters: {
+    				OrderNumber: $('#invoiceId option:selected').val()
+    				}
+    		}
+    	});
+    });
+    ```
 
 1.  Add code that updates the `ReportSource` parameters collection with the selected **Invoice Id** from the dropdown selector:
 
-	````JavaScript
-$('#invoiceId').change(function () {
-	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-	reportViewer.reportSource({
-		report: reportViewer.reportSource().report,
-		parameters: { OrderNumber: $(this).val() }
-		});
-	});
-````
+    ```JavaScript
+    $('#invoiceId').change(function () {
+    	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+    	reportViewer.reportSource({
+    		report: reportViewer.reportSource().report,
+    		parameters: { OrderNumber: $(this).val() }
+    	});
+    });
+    ```
 
+1.  The HTML page that we have just created should look like this:
 
-1. The HTML page that we have just created should look like this:
+    ```HTML
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<title>Telerik HTML5 Report Viewer Demo With Custom Parameter</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	````HTML
-<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Telerik HTML5 Report Viewer Demo With Custom Parameter</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
 
-		<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    	<script src="/api/reports/resources/js/telerikReportViewer"></script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="/api/reports/resources/js/telerikReportViewer"></script>
+    	<style>
+    		#reportViewer1 {
+    			position: absolute;
+    			inset: 5px;
+    			overflow: hidden;
+    			font-family: Verdana, Arial;
+    		}
+    	</style>
+    </head>
+    <body>
+    	<div id="invoiceIdSelector">
+    		<label for="invoiceId">Invoices</label>
 
-		<style>
-			#reportViewer1 {
-				position: absolute;
-				inset: 5px;
-				overflow: hidden;
-				font-family: Verdana, Arial;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="invoiceIdSelector">
-			<label for="invoiceId">Invoices</label>
+    		<select id="invoiceId" title="Select the Invoice ID">
+    			<option value="SO51081">SO51081</option>
+    			<option value="SO51082" selected="selected">SO51082</option>
+    			<option value="SO51083">SO51083</option>
+    		</select>
+    	</div>
 
-			<select id="invoiceId" title="Select the Invoice ID">
-				<option value="SO51081">SO51081</option>
-				<option value="SO51082" selected="selected">SO51082</option>
-				<option value="SO51083">SO51083</option>
-			</select>
-		</div>
+    	<div id="reportViewer1">
+    		loading...
+    	</div>
 
-		<div id="reportViewer1">
-			loading...
-		</div>
+    	<script type="text/javascript">
+    		$(document).ready(function () {
+    			$("#reportViewer1").telerik_ReportViewer({
+    					serviceUrl: "api/reports/",
+    					reportSource: {
+    						report: "Invoice.trdp",
+    						parameters: { OrderNumber: $('#invoiceId option:selected').val() }
+    					},
+    			});
+    		});
 
-		<script type="text/javascript">
-			$(document).ready(function () {
-				$("#reportViewer1").telerik_ReportViewer({
-						serviceUrl: "api/reports/",
-						reportSource: {
-							report: "Invoice.trdp",
-							parameters: { OrderNumber: $('#invoiceId option:selected').val() }
-						},
-				});
-			});
-
-			$('#invoiceId').change(function () {
-				var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-				reportViewer.reportSource({
-					report: reportViewer.reportSource().report,
-					parameters: { OrderNumber: $(this).val() }
-				});
-			});
-		</script>
-	</body>
-	</html>
-````
-
+    		$('#invoiceId').change(function () {
+    			var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+    			reportViewer.reportSource({
+    				report: reportViewer.reportSource().report,
+    				parameters: { OrderNumber: $(this).val() }
+    			});
+    		});
+    	</script>
+    </body>
+    </html>
+    ```
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-* [Custom Parameter Editors]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [Custom Parameter Editors]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

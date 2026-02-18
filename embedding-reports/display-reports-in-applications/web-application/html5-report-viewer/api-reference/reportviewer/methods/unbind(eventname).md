@@ -7,7 +7,7 @@ tags: unbind(eventname)
 published: True
 reportingArea: HTML5
 position: 16
-previous_url: /html5-report-viewer-reportviewer-methods-unbind-en
+previous_url: /html5-report-viewer-reportviewer-methods-unbind-en, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname)
 ---
 
 # The `unbind(eventName)` method of the HTML5 Report Viewer

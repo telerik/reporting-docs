@@ -36,15 +36,15 @@ The [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/) 
 1. Copy all of the content in the `v4.6.2` directory to the directory with the .NET Framework Standalone Report Designer - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\`.
 1. Open the `Telerik.ReportDesigner.exe.config` file in a text editor and add the following XML to register the MySQL data provider without installing
 
-	````XML
-<system.data>
-		<DbProviderFactories>
-			<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" 			type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
-		</DbProviderFactories>
-	</system.data>
-````
+   ```XML
+   <system.data>
+   	<DbProviderFactories>
+   		<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" 			type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
+   	</DbProviderFactories>
+   </system.data>
+   ```
 
-	> The example was made with version `9.0.0` of the MySQL data provider; correct the version number in the above snippet if a newer/older version was downloaded instead.
+   > The example was made with version `9.0.0` of the MySQL data provider; correct the version number in the above snippet if a newer/older version was downloaded instead.
 
 ## Setting up the MySQL Connector/NET Data Provider in .NET Applications
 
@@ -52,7 +52,7 @@ The [MySQL Connector/NET](https://dev.mysql.com/doc/connector-net/en/) data prov
 
 If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
-````JSON
+```JSON
 {
 	"ConnectionStrings":{
 		"mysql":{
@@ -61,7 +61,7 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 		}
 	}
 }
-````
+```
 
 ## Web Report Designer
 
@@ -73,8 +73,8 @@ The workaround is to avoid using the SQL DataSource wizard and edit the data sou
 
 ## See Also
 
-* [Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Desginer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
-* [MySQL connection strings](https://www.connectionstrings.com/mysql/)
-* [Installing Connector/NET on Windows](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-windows.html)
-* [Installing Connector/NET Using the Standalone Installer](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-binary-windows-installer.html)
-* [Installing Connector/NET from Source](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-source.html)
+- [Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Desginer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
+- [MySQL connection strings](https://www.connectionstrings.com/mysql/)
+- [Installing Connector/NET on Windows](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-windows.html)
+- [Installing Connector/NET Using the Standalone Installer](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-binary-windows-installer.html)
+- [Installing Connector/NET from Source](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-source.html)

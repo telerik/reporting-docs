@@ -11,17 +11,16 @@ previous_url: /telerik-reporting-rest-json-entities-searchinfo,/embedding-report
 ---
 
 <style>
-	table {
-		display: grid;
-		grid-template-columns: min-content min-content min-content 1fr;
+    table th:nth-of-type(2) {
+		width: 10%;
 	}
 
-	thead, tbody, tr {
-		display: contents;
+    table th:nth-of-type(3) {
+		width: 10%;
 	}
 
-	th {
-		white-space: nowrap;
+    table th:nth-of-type(4) {
+		width: 60%;
 	}
 </style>
 

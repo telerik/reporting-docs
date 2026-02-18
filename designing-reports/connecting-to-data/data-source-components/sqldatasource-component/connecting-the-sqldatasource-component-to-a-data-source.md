@@ -12,16 +12,16 @@ reportingArea: General
 
 # Connecting the SqlDataSource Component to Data Source
 
-When you configure the `SqlDataSource` component, you set the `ProviderName` property to the type of database (the default is `System.Data.SqlClient` ) and the `ConnectionString` property to a connection string that includes information required to connect to the database. The contents of a connection string differ depending on what type of database the data source component is accessing. For example, the `System.Data.SqlClient` provider requires a server name, database (catalog) name, and information about how to authenticate the user when connecting to __SQL Server__. For information on valid connection strings, see the `ConnectionString` property topics for the `SqlConnection`, `OracleConnection`, `OleDbConnection`, and `OdbcConnection` classes.
+When you configure the `SqlDataSource` component, you set the `ProviderName` property to the type of database (the default is `System.Data.SqlClient` ) and the `ConnectionString` property to a connection string that includes information required to connect to the database. The contents of a connection string differ depending on what type of database the data source component is accessing. For example, the `System.Data.SqlClient` provider requires a server name, database (catalog) name, and information about how to authenticate the user when connecting to **SQL Server**. For information on valid connection strings, see the `ConnectionString` property topics for the `SqlConnection`, `OracleConnection`, `OleDbConnection`, and `OdbcConnection` classes.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=ConnectionStringSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=ConnectionStringSnippet}}
 
-Instead of setting connection strings at design time as property settings in the `SqlDataSource` component, you can store them centrally as part of your application's configuration settings using the `connectionStrings` configuration element. This enables you to manage connection strings independently of your reports, including encrypting them using __Protected Configuration__.
+Instead of setting connection strings at design time as property settings in the `SqlDataSource` component, you can store them centrally as part of your application's configuration settings using the `connectionStrings` configuration element. This enables you to manage connection strings independently of your reports, including encrypting them using **Protected Configuration**.
 
-The following example shows how to connect to the __SQL Server AdventureWorks__ sample database using a connection string which stored in the `connectionStrings` configuration element named `MyAdventureWorksDB`:
+The following example shows how to connect to the **SQL Server AdventureWorks** sample database using a connection string which stored in the `connectionStrings` configuration element named `MyAdventureWorksDB`:
 
-````XML
+```XML
 <configuration>
 	<connectionStrings>
 		<add name="MyAdventureWorksDB"
@@ -29,9 +29,9 @@ The following example shows how to connect to the __SQL Server AdventureWorks__ 
 			providerName="System.Data.SqlClient" />
 	</connectionStrings>
 </configuration>
-````
+```
 
-.NET Framework applications use configuration files in XML format, while .NET Core and .NET applications usually have a JSON-based configuration file, called `appsettings.json`. The configuration of the connection strings section in .NET is explained in the following documentation article: [How to Host Reports Service in ASP.NET Core in .NET {{site.mindotnetversion}}]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
+.NET Framework applications use configuration files in XML format, while .NET Core and .NET applications usually have a JSON-based configuration file, called `appsettings.json`. The configuration of the connection strings section in .NET is explained in the following documentation article: [How to Host Reports Service in ASP.NET Core in .NET {{site.mindotnetversion}}]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%}).
 
 When the connection string is stored in the configuration file, you need to specify the name of the configuration element as a value for the `ConnectionString` property of `SqlDataSource`. Specifying a value for the `ProviderName` property is no longer necessary, since that information is already present in the configuration element itself.
 
@@ -40,8 +40,8 @@ When the connection string is stored in the configuration file, you need to spec
 
 The `SqlDataSource` component retrieves data using a SQL statement defined through the `SelectCommand` property. If the data source component connects to a database that supports stored procedures, you can specify the name of a stored procedure in place of the SQL statement. You can create parameterized commands that include placeholders for values to be supplied at run time. The following example shows a typical parameterized SQL select command:
 
-````SQL
+```SQL
 SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
-````
+```
 
 You can create parameter objects that specify where the command should get parameter values from at run time. You can also use expressions which values will be evaluated when processing the report or pass specific values programmatically.

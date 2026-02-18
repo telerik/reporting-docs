@@ -32,14 +32,14 @@ When a new Telerik report is added to a project, it is initially divided into `P
 
 The Telerik report contains the following report sections:
 
-* [`Page Header`]
-* [`Table of Contents (TOC)`]
-* [`Report Header`]
-* [`Group Header`]
-* [`Detail`]
-* [`Group Footer`]
-* [`Report Footer`]
-* [`Page Footer`]
+- [`Page Header`]
+- [`Table of Contents (TOC)`]
+- [`Report Header`]
+- [`Group Header`]
+- [`Detail`]
+- [`Group Footer`]
+- [`Report Footer`]
+- [`Page Footer`]
 
 ### Page Header
 
@@ -47,14 +47,14 @@ The Page Header section is printed at the top of every page. For example, you ca
 
 Since the paging of a report strongly depends on the format it is rendered to, this section and its items are processed by the corresponding rendering extension after the report data has been processed. This approach has the following implications:
 
-* The built-in [`PageNumber` and `PageCount` objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}), which contain the current page number and the total report pages count, can be used in this section. All [Page Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) can also be used in this section.
-* It is possible to suppress the printing of the Page Header section on the first (set `PrintOnFirstPage`) and last (set `PrintOnLastPage`) page of a report, or hide it by using [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}). In this case, the occupied space will be used from the rest of the report content. It is not possible to use the `= (PageNumber = PageCount)` expressions to hide the `PageHeader` or `PageFooter` on the last page. This is a known limitation due to the fact that the resulting page count depends on the visibility of the `PageHeader` and `PageFooter` sections as this modifies the available space for the rest of the report content. At the same time, the above expression sets the visibility of the page sections to depend on the page count. This leads to uncertainty and the page count cannot be properly estimated.
-* The Height of the section may be changed at runtime through [`Bindings`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). It is recommended that you set the default height of the section to the maximal expected one. Then, you may reduce the height of each Page section with a proper Binding. The reason behind this approach is to assure that the available height of the page after rendering the Page Header and Footer will be positive, so that some detailed content can be placed on the page. If the combined height of the Page Header and Page Footer is bigger than the page height, the Page sections will be ignored and only the content will be rendered. The [behavior of the `KeepTogether` property]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}#Pagination1) may also change due to the extra expansion of Page sections. Setting the Page section height with a Binding to a larger value than the default one may result in other unpredictable behavior. The height of the Page section must not depend on the data rendered on the page. The logic behind is that the Page Section height is estimated prior to evaluating the corresponding page data as the Reporting engine needs to calculate the available space on each page before rendering the data on it.
+- The built-in [`PageNumber` and `PageCount` objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}), which contain the current page number and the total report pages count, can be used in this section. All [Page Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) can also be used in this section.
+- It is possible to suppress the printing of the Page Header section on the first (set `PrintOnFirstPage`) and last (set `PrintOnLastPage`) page of a report, or hide it by using [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}). In this case, the occupied space will be used from the rest of the report content. It is not possible to use the `= (PageNumber = PageCount)` expressions to hide the `PageHeader` or `PageFooter` on the last page. This is a known limitation due to the fact that the resulting page count depends on the visibility of the `PageHeader` and `PageFooter` sections as this modifies the available space for the rest of the report content. At the same time, the above expression sets the visibility of the page sections to depend on the page count. This leads to uncertainty and the page count cannot be properly estimated.
+- The Height of the section may be changed at runtime through [`Bindings`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). It is recommended that you set the default height of the section to the maximal expected one. Then, you may reduce the height of each Page section with a proper Binding. The reason behind this approach is to assure that the available height of the page after rendering the Page Header and Footer will be positive, so that some detailed content can be placed on the page. If the combined height of the Page Header and Page Footer is bigger than the page height, the Page sections will be ignored and only the content will be rendered. The [behavior of the `KeepTogether` property]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}#Pagination1) may also change due to the extra expansion of Page sections. Setting the Page section height with a Binding to a larger value than the default one may result in other unpredictable behavior. The height of the Page section must not depend on the data rendered on the page. The logic behind is that the Page Section height is estimated prior to evaluating the corresponding page data as the Reporting engine needs to calculate the available space on each page before rendering the data on it.
 
-	>note If the contents of the Page Header or Footer grows beyond its boundaries, the contents are clipped. Any report item that doesn't fit entirely in the section is removed, i.e. not rendered at all.
+  > note If the contents of the Page Header or Footer grows beyond its boundaries, the contents are clipped. Any report item that doesn't fit entirely in the section is removed, i.e. not rendered at all.
 
-* It is not possible to use [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) in this section.
-* [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in this section are evaluated against the report [Data Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) defined by the data source of the report after the data has been filtered. To work with data from the current page, only you have to use the [`PageExec`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) function or the other Page functions with a specified scope.
+- It is not possible to use [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) in this section.
+- [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in this section are evaluated against the report [Data Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope%}) defined by the data source of the report after the data has been filtered. To work with data from the current page, only you have to use the [`PageExec`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) function or the other Page functions with a specified scope.
 
 ### Table of Contents
 
@@ -66,8 +66,8 @@ The TOC section can be displayed before or after the Report Header or Report Foo
 
 The Report Header section is printed just once, at the beginning of the report.
 
-* If there is a Page Header on the first page, the Report Header will be rendered after it.
-* If there is a TOC section, you may specify its position with respect to Report Header (for example, `Before` or `After`).
+- If there is a Page Header on the first page, the Report Header will be rendered after it.
+- If there is a TOC section, you may specify its position with respect to Report Header (for example, `Before` or `After`).
 
 Use the report header for information that might normally appear on a cover page, such as a logo, a title, or a date. In the Report Header section, all data fields must be aggregated, even if the data source returns only one row. Typically, you must use the `FIRST()` function for character and date data and the `SUM()` function for numeric data. When you place a data-bound report item that uses an aggregate function in the report header, it is calculated for the entire report data.
 
@@ -89,8 +89,8 @@ The Group Footer section is printed at the end of each group of records. Use a g
 
 The Report Footer section is printed just once, at the end of the report.
 
-* If there is Page Footer on the last page, the Report Footer will be rendered before it.
-* If there is a TOC section, you may specify its position with respect to Report Footer (for example, `Before` or `After`).
+- If there is Page Footer on the last page, the Report Footer will be rendered before it.
+- If there is a TOC section, you may specify its position with respect to Report Footer (for example, `Before` or `After`).
 
 Use the report footer to print report totals or other summary information for the entire report. Similar to the Report Header section, you must always use aggregate functions for the data-bound items that are calculated for the entire report data.
 

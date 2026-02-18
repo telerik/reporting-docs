@@ -32,7 +32,7 @@ The .NET 6 and .NET 7 Reporting projects run correctly in Windows environment. T
 
 ## Error Message
 
-````
+````TEXT
 System.AggregateException: One or more errors occurred. (Type: Telerik.Reporting.ReportSerialization.Current.ReportSerializable'1[Telerik.Reporting.Report])
 	---> System.MissingMethodException: Type: Telerik.Reporting.ReportSerialization.Current.ReportSerializable'1[Telerik.Reporting.Report]
 	---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
@@ -63,12 +63,12 @@ The reason for the problem is described in the Microsoft article [System.Drawing
 	Add a file named `runtimeconfig.template.json` with the following content in the folder with the `.csproj` file:
 
 	````JSON
-{
+	{
 		"configProperties": {
 			"System.Drawing.EnableUnixSupport": true
 		}
 	}
-````
+	````
 
 	For more details, check the Microsoft article section [runtimeconfig.json](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/#runtimeconfigjson).
 

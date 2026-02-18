@@ -4,6 +4,7 @@ page_title: Global Objects Explained
 description: "Learn what are the Global Objects in Telerik Reporting and how you may use them in the expressions in reports."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects
 tags: global,objects
+tag: updated
 published: True
 position: 3
 previous_url: /expressions-global-objects
@@ -82,6 +83,10 @@ When the child is a [data item]({%slug telerikreporting/designing-reports/connec
 For example, the `Fields` from a Table DataSource are passed as `ReportItem.DataObject` to its cells' items, e.g. TextBoxes. Therefore, in these no-data items, the Expression `=Fields.fieldName` is equivalent to the Expression `=ReportItem.DataObject.fieldName`.
 
 On the Table item, though, the `ReportItem.DataObject` comes from its parent, for example, from the Report item. For that reason, `=ReportItem.DataObject.fieldName` is different from `=Fields.fieldName` in the Table. The `Fields` __function__ represents the Table DataSource, whereas the `ReportItem.DataObject` __object__ represents its parent (e.g. Report) DataSource.
+
+The `ReportItem.IsRepeated` property is available for report items (such as TextBoxes) placed within Table, Crosstab, and List group headers or footers. It indicates whether the group containing the item is being repeated on a page (for example, when a group header or footer is configured to repeat on every page). This property returns `True` when the group is repeated, and `False` otherwise. This is useful for conditionally displaying content based on whether the group appears for the first time or as a repeated instance.
+
+For example, `=Fields.ProductCategory + IIf(ReportItem.IsRepeated, ".........", "")` displays "Category Name........." when the group header is repeated. For detailed instructions on implementing this functionality, see [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
 
 For information regarding the available processing ReportItem properties, check out the corresponding processing item API reference.
 

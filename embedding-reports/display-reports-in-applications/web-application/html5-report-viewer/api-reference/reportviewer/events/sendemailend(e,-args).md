@@ -7,7 +7,9 @@ tags: sendemailend,args
 published: True
 reportingArea: HTML5
 position: 5
-previous_url: /html5-report-viewer-reportviewer-events-sendemailend
+previous_url:
+- /html5-report-viewer-reportviewer-events-sendemailend
+- /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
 ---
 
 <style>

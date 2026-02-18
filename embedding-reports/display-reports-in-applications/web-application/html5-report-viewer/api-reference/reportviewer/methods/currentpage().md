@@ -7,7 +7,7 @@ tags: currentpage()
 published: True
 reportingArea: HTML5
 position: 6
-previous_url: /html5-report-viewer-reportviewer-methods-currentpage
+previous_url: /html5-report-viewer-reportviewer-methods-currentpage, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/currentpage()
 ---
 
 # The `currentPage()` method of the HTML5 Report Viewer

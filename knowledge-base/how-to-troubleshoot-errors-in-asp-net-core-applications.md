@@ -54,7 +54,7 @@ Consider the following steps when experiencing problems while working with Teler
 	+ Time to process and render reports;
 	+ Font substitutions.
 
-	Here is a sample Trace Listener log from the Telerik Reporting REST Service that contains warning about font substitution:
+	Here is a sample Trace Listener log from the Telerik Reporting REST Service that contains a warning about font substitution:
 
 	```
 	CSharp.Net10.Html5IntegrationDemo Information: 0 : Worker rendering threads count: 20

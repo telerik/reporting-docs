@@ -104,7 +104,7 @@ Consider the following steps when experiencing problems while working with Teler
 	```
 
 - **Use [Fiddler Everywhere Reporter](https://www.telerik.com/fiddler/fiddler-everywhere-reporter) or another proxy tool to capture the web traffic** and check the requests, responses, and statuses.
-	In the generated logs, check the failing requests from the Reporting REST Service endpoint. Usually, the Reporting service requests start with `{mainServiceUrl}/api/reports/`. Here is a sample log of successfully passed requests between the HTML5 Report Viewer and the Service:
+	In the captured traffic, check the failing requests from the Reporting REST Service endpoint. Usually, the Reporting service requests start with `{mainServiceUrl}/api/reports/`. Here is a sample log of successfully passed requests between the HTML5 Report Viewer and the Service:
 	
 	![The traffic between the HTML5 Report Viewer and the Reporting REST Service captured with Fiddler Everywhere.](images/fiddler-capture-reporting.png)
 	

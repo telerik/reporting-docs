@@ -11,6 +11,15 @@ reportingArea: General
 ---
 
 <style>
+
+table {
+	color: var(--text-secondary) !important;
+}
+
+table td:first-of-type {
+    text-align: center;
+}
+	
 table th:first-of-type {
 	width: 20%;
 }
@@ -196,14 +205,14 @@ Below is a list of the available styling options alongside short summaries of wh
 
 ## Notes
 
-* Some of the style properties behave differently in specific scenarios.
+- Some of the style properties behave differently in specific scenarios.
 
-	For example, in the graph series' [DataPointStyle](/api/telerik.reporting.graphseriesbase), instead of using the BorderColor/BorderStyle/BorderWidth properties to style the graph's data points, you should use the LineColor/LineWidth/LineStyle properties.
+  For example, in the graph series' [DataPointStyle](/api/telerik.reporting.graphseriesbase), instead of using the BorderColor/BorderStyle/BorderWidth properties to style the graph's data points, you should use the LineColor/LineWidth/LineStyle properties.
 
-* Consider using numerical codes as (A)RGB or HEX when setting style colors. Using color names is not guaranteed to work in all scenarios.
+- Consider using numerical codes as (A)RGB or HEX when setting style colors. Using color names is not guaranteed to work in all scenarios.
 
-	For example, the color name '_ControlDarkDark_' corresponds to [SystemColors.ControlDarkDark](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.systemcolors.controldarkdark) is translated to [ThreeDDarkShadow](https://www.w3.org/wiki/CSS/Properties/color/keywords) color, which is an obsolete CSS2 color and is rendered as RGB (0,0,0) by modern browsers.
+  For example, the color name '_ControlDarkDark_' corresponds to [SystemColors.ControlDarkDark](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.systemcolors.controldarkdark) is translated to [ThreeDDarkShadow](https://www.w3.org/wiki/CSS/Properties/color/keywords) color, which is an obsolete CSS2 color and is rendered as RGB (0,0,0) by modern browsers.
 
 ## See Also
 
-* [Style Class](/api/telerik.reporting.drawing.style)
+- [Style Class](/api/telerik.reporting.drawing.style)

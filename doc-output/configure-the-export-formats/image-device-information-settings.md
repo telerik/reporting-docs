@@ -46,11 +46,11 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__, and __IMAGEPrint__ formats.
 
-XML-based configuration file:
-
 ````XML
 <configuration>
-…
+	<configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
 	<Telerik.Reporting>
 		<extensions>
 			<render>
@@ -76,12 +76,8 @@ XML-based configuration file:
 			</render>
 		</extensions>
 	</Telerik.Reporting>
-…
 </configuration>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"extensions": [
@@ -128,7 +124,7 @@ JSON-based configuration file:
 		},
 	]
 	}
-	]
+  ]
 }
 ````
 

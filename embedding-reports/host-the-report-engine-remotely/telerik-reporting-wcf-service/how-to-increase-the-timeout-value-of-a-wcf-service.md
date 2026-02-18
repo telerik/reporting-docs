@@ -18,7 +18,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 ## Timeouts on server binding
 
-````XML
+```XML
 <bindings>
 	<basicHttpBinding>
 		<binding name="BasicHttpsBindingConfig" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"
@@ -27,13 +27,13 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 		</binding>
 	</basicHttpBinding>
 </bindings>
-````
+```
 
 > The number 2,147,483,647 is the max value of a 32 bit signed integer.
 
 ## Timeouts on client binding
 
-````C#
+```C#
 ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
 {
 	var binding = new BasicHttpBinding() // or BasicHttpBinding(BasicHttpSecurityMode.Transport) overload if SSL is used
@@ -46,19 +46,18 @@ ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
 	var endpointAddress = new EndpointAddress(remoteAddress);
 	return new ReportServiceClient(binding, endpointAddress);
 }
-````
+```
 
 For more information, see [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%}).
 
 ## Timeouts when hosted in ASP.NET
 
-When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request: [ExecutionTimeout](/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout).
+When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request: [ExecutionTimeout](https://learn.microsoft.com/en-us/dotnet/api/system.web.configuration.httpruntimesection.executiontimeout).
 
-````XML
+```XML
 <configuration>
 	<system.web>
 		<httpRuntime executionTimeout="600"/>
 	</system.web>
 </configuration>
-````
-
+```

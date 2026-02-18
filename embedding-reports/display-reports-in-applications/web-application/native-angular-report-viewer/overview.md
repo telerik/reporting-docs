@@ -11,19 +11,36 @@ previous_url: /embedding-reports/display-reports-in-applications/web-application
 ---
 
 <style>
+
+table {
+	color: var(--text-secondary) !important;
+	margin: auto;
+}
+
+table svg {
+	fill: var(--text-secondary) !important;
+}
+
 table th:first-of-type {
 	width: 20%;
 }
+
+table td:first-of-type {
+	text-align: center !important;
+}
+
 table th:nth-of-type(2) {
 	width: 80%;
+	text-align: left !important;
+	padding-left: 10px;
 }
 </style>
 
 # Native Angular Report Viewer Overview
 
 > The current Native Angular Report Viewer version is `{{site.spaviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
-> 
-The Native Angular Report Viewer is a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components. It was introduced with [Telerik Reporting R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010).
+>
+> The Native Angular Report Viewer is a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components. It was introduced with [Telerik Reporting R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010).
 
 ![The preview of the demo report 'Report Catalog' in the Native Angular Report Viewer in the Microsoft Edge browser](../images/NativeAngularReportViewer/angular-report-viewer-overview.png)
 
@@ -96,7 +113,7 @@ The Native Angular Report Viewer is a native Angular component built with [Kendo
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
-		<td>Toggles the AI Prompt Dialog when the [AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}) functionality has been enabled.</td>
+		<td>Toggles the AI Prompt Dialog when the <a href="{% slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights %}" target="_blank">AI-Powered Insights</a> functionality has been enabled.</td>
 	</tr>	
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M448 32H32v448h448V32h-32zm0 416H64V64h384v384zM96 96h96v320H96z"></path></svg></td>
@@ -128,9 +145,9 @@ A complete example with the native Angular Report Viewer can be found in the ins
 
 ## See Also
 
-* [How to Use the Native Angular Report Viewer with Reporting Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service%})
-* [How to Use the Native Angular Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server%})
-* [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
-* [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
-* [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-* [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})
+- [How to Use the Native Angular Report Viewer with Reporting Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service%})
+- [How to Use the Native Angular Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server%})
+- [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
+- [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
+- [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
+- [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})

@@ -7,7 +7,7 @@ tags: reportsource()
 published: True
 reportingArea: HTML5
 position: 12
-previous_url: /html5-report-viewer-reportviewer-methods-reportsource
+previous_url: /html5-report-viewer-reportviewer-methods-reportsource, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()
 ---
 
 <style>

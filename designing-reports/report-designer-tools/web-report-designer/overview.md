@@ -52,26 +52,26 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated into ASP.NET Web Applications, both under `.NET Framework 4.6.2+` or `.NET {{site.mindotnetversion}}+`.
-* The following NuGet packages are required:
+- The Web Report Designer can be integrated into ASP.NET Web Applications, both under `.NET Framework 4.6.2+` or `.NET {{site.mindotnetversion}}+`.
+- The following NuGet packages are required:
 
-	+ Telerik.Reporting
-	+ Telerik.WebReportDesigner.Services
+  - Telerik.Reporting
+  - Telerik.WebReportDesigner.Services
 
 ## Prerequisites:
 
-* Web browser that supports [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher; Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
-* [jQuery](https://jquery.com/download/) __3.7.1__ or later.
-* [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) __{{site.kendosubsetversion}}__ or later.
-* Telerik Report Viewer script. By default, it is requested from the service.
-* Web Report Designer script. By default, it is requested from the service.
-* All other scripts and styles will be provided by the Web Report Designer service when the designer widget is loaded. The list of loaded resources:
+- Web browser that supports [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher; Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
+- [jQuery](https://jquery.com/download/) **3.7.1** or later.
+- [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) **{{site.kendosubsetversion}}** or later.
+- Telerik Report Viewer script. By default, it is requested from the service.
+- Web Report Designer script. By default, it is requested from the service.
+- All other scripts and styles will be provided by the Web Report Designer service when the designer widget is loaded. The list of loaded resources:
 
 	+ [jQuery UI](https://jqueryui.com/) __1.12.1__ library. We recommend using the version of jQuery UI subset that is served by the Web Report Designer service because it includes a fix related to the dragging and dropping components. The subset includes Draggable, Droppable, Resizable, and their dependencies.
 	+ webReportDesigner.min.css stylesheet.
 	+ webReportDesignerTheme.css stylesheet.
 
-* The web report designer in our example is stylized using [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your preference can be added before creating the Web Designer widget on the page.
+- The web report designer in our example is stylized using [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your preference can be added before creating the Web Designer widget on the page.
 
 ## Kendo Widgets Requirements
 
@@ -81,45 +81,45 @@ Below you can find the list of widgets that the Web Report Designer requires in 
 
 Required widgets:
 
-* Kendo MVVM
-* Kendo Button
-* Kendo ButtonGroup
-* Kendo ComboBox
-* Kendo DateInput
-* Kendo DatePicker
-* Kendo DateTimePicker
-* Kendo DropDown
-* Kendo TreeGrid
-* Kendo Editor
-* Kendo FileManager
-* Kendo ListBox
-* Kendo ListView
-* Kendo Menu
-* Kendo MultiSelect
-* Kendo PanelBar
-* Kendo Slider
-* Kendo Splitter
-* Kendo TabStrip
-* Kendo Tooltip
-* Kendo TreeView
-* Kendo Upload
-* Kendo Window
-* Kendo Touch
-* Kendo Autocomplete
-* Kendo Stepper
+- Kendo MVVM
+- Kendo Button
+- Kendo ButtonGroup
+- Kendo ComboBox
+- Kendo DateInput
+- Kendo DatePicker
+- Kendo DateTimePicker
+- Kendo DropDown
+- Kendo TreeGrid
+- Kendo Editor
+- Kendo FileManager
+- Kendo ListBox
+- Kendo ListView
+- Kendo Menu
+- Kendo MultiSelect
+- Kendo PanelBar
+- Kendo Slider
+- Kendo Splitter
+- Kendo TabStrip
+- Kendo Tooltip
+- Kendo TreeView
+- Kendo Upload
+- Kendo Window
+- Kendo Touch
+- Kendo Autocomplete
+- Kendo Stepper
 
 The subset may be built with the following command:
 
-````
+```bash
 gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete,stepper
-````
+```
 
 ## Learn More
 
-* [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
-* [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
+- [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
+- [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
 
 ## See Also
 
-* [How to set up in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
-* [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
+- [How to set up in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
+- [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})

@@ -17,7 +17,7 @@ The Report item contains several specific properties that control the design-tim
 
 The [`DocumentName`](/api/telerik.reporting.report#Telerik_Reporting_Report_DocumentName) specifies the default document name when exporting from a Report Viewer. The Standalone Report Designer won't use `DocumentName` when exporting. It will rather use the Report `Name`.
 
-The `DocumentName` may be set to an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) containing [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) and other [Gloabal Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}). The DataSource fields are not accessible at this Report level and cannot be used - see [Expression Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) for more details.
+The `DocumentName` may be set to an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) containing [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) and other [Gloabal Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}). The DataSource fields are not accessible at this Report level and cannot be used - see [Expression Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope%}) for more details.
 
 ## Paging
 
@@ -39,64 +39,64 @@ The [Report parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
 For more detailed information, refer to the following articles:
 
-* [Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
-* [Using Report Parameters in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%})
-* [Using Multi-Value Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%})
-* [Cascading Parameters with Applied Filtering on Report Level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-report-level%})
-* [Cascading Parameters with Applied Filtering on Data Source Level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
+- [Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
+- [Using Report Parameters in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%})
+- [Using Multi-Value Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%})
+- [Cascading Parameters with Applied Filtering on Report Level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-report-level%})
+- [Cascading Parameters with Applied Filtering on Data Source Level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
 
 ## Rendering and Processing
 
 The Report item exposes a set of properties that allow you to control some aspects of its processing and rendering.
 
-* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the report author can control the initial automatic report rendering process by using the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
+- `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the report author can control the initial automatic report rendering process by using the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
 
-	When `AutoRun=True`, the report loading behavior does not change: the report is automatically loaded if all parameters have valid values, or waits until all parameter values are valid.
-	
-	When `AutoRun=False`:
-	
-	- The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have [`AutoRefresh`](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
-	
-	- If all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have valid values, the Report Viewer does not trigger report rendering and displays prompt message in the Report Area to the end user with information on how they may trigger the rendering(*by clicking on the Preview button*).
-	
-* `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [`SkipBlankPages`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
+  When `AutoRun=True`, the report loading behavior does not change: the report is automatically loaded if all parameters have valid values, or waits until all parameter values are valid.
 
-	For example, `SkipBlankPages` may be kept `True` to remove the empty pages due to horizontal page breaks. For more information, refer to the articles on [horizontal paging]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}#horizontal-paging) and on [skipping blank pages in the rendered report]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#skip-blank-pages-in-the-rendered-report).
+  When `AutoRun=False`:
 
-* `RuntimeSettings`&mdash; As of [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify [device information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) per particular report as part of its definition by configuring the [`RuntimeSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
+  - The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have [`AutoRefresh`](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
 
-	Apart from setting the export parameters for a particular extension, `RuntimeSettings` allows you to hide it and change its description when listed to the end-user.
+  - If all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have valid values, the Report Viewer does not trigger report rendering and displays prompt message in the Report Area to the end user with information on how they may trigger the rendering(_by clicking on the Preview button_).
 
-* `ReportEngineSettings`&mdash; As of [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), you can set the property [CacheDefinitionProperties](/api/Telerik.Reporting.ReportEngineSettings#Telerik_Reporting_ReportEngineSettings_CacheDefinitionProperties) per particular report as part of its definition by configuring it as an element of the [`ReportEngineSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportEngineSettings) report property.
+- `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [`SkipBlankPages`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
 
-	The available values are described in the API Reference in [Enum CacheDefinitionProperties](/api/Telerik.Reporting.CacheDefinitionProperties). Setting the property to `Yes`/`No` would force the Reporting engine to enable/disable the property for the specific report. Selecting `Default` would let the Reporting engine use the 'cacheDefinitionProperties' key in the 'processing' element from the application configuration file - [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}).
+  For example, `SkipBlankPages` may be kept `True` to remove the empty pages due to horizontal page breaks. For more information, refer to the articles on [horizontal paging]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}#horizontal-paging) and on [skipping blank pages in the rendered report]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#skip-blank-pages-in-the-rendered-report).
 
-* `Localizable`&mdash;To start localizing the report, set the `Localizable` property to `True`. For more information about the localization procedure, refer to the article on [localizing reports]({%slug telerikreporting/designing-reports/localizing-reports%}).
+- `RuntimeSettings`&mdash; As of [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify [device information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) per particular report as part of its definition by configuring the [`RuntimeSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
 
-	> If at any point the `Localizable` property is set to `False`, all resource files are deleted and the report property values are filled with the currently selected language values.
+  Apart from setting the export parameters for a particular extension, `RuntimeSettings` allows you to hide it and change its description when listed to the end-user.
+
+- `ReportEngineSettings`&mdash; As of [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), you can set the property [CacheDefinitionProperties](/api/Telerik.Reporting.ReportEngineSettings#Telerik_Reporting_ReportEngineSettings_CacheDefinitionProperties) per particular report as part of its definition by configuring it as an element of the [`ReportEngineSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportEngineSettings) report property.
+
+  The available values are described in the API Reference in [Enum CacheDefinitionProperties](/api/Telerik.Reporting.CacheDefinitionProperties). Setting the property to `Yes`/`No` would force the Reporting engine to enable/disable the property for the specific report. Selecting `Default` would let the Reporting engine use the 'cacheDefinitionProperties' key in the 'processing' element from the application configuration file - [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}).
+
+- `Localizable`&mdash;To start localizing the report, set the `Localizable` property to `True`. For more information about the localization procedure, refer to the article on [localizing reports]({%slug telerikreporting/designing-reports/localizing-reports%}).
+
+  > If at any point the `Localizable` property is set to `False`, all resource files are deleted and the report property values are filled with the currently selected language values.
 
 ## Styling and Design
 
 The Report item exposes a set of properties that allow you to control styling and other design-time-related processes.
 
-* `StyleSheet`&mdash; Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as `Type`, `Attribute`, `Style`, and `Descendent`.
+- `StyleSheet`&mdash; Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as `Type`, `Attribute`, `Style`, and `Descendent`.
 
-	For more information about the process, refer to the following articles:
+  For more information about the process, refer to the following articles:
 
-	+ [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
-	+ [Creating Style Rules]({%slug telerikreporting/designing-reports/styling-reports/creating-style-rules%})
-	+ [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
-	+ [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
+  - [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+  - [Creating Style Rules]({%slug telerikreporting/designing-reports/styling-reports/creating-style-rules%})
+  - [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
+  - [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
 
-* `ExternalStyleSheets`&mdash; Imports StyleSheets previously created and stored in XML files. For more information, refer to the article on [exporting and reusing stylesheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}).
+- `ExternalStyleSheets`&mdash; Imports StyleSheets previously created and stored in XML files. For more information, refer to the article on [exporting and reusing stylesheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}).
 
-* `UnitOfMeasure`&mdash; Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to *cm*, otherwise - *inch*.
+- `UnitOfMeasure`&mdash; Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to _cm_, otherwise - _inch_.
 
-* `SnapGridSize`&mdash; Controls the step of the `Rulers` in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+- `SnapGridSize`&mdash; Controls the step of the `Rulers` in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
 
 ## See Also
 
-* [Getting Started with the Report Item]({%slug report_item_get_started%})
-* [Page Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
-* [Report Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%})
-* [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})
+- [Getting Started with the Report Item]({%slug report_item_get_started%})
+- [Page Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
+- [Report Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%})
+- [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})

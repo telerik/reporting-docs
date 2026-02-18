@@ -3,7 +3,8 @@ title: Sharing Resources
 page_title: Web Report Designer - Assets Manager
 description: To share resources when crafting reports in Telerik Reporting and the Web Report Designer, you can use the Assets Manager.
 slug: web-report-designer-user-guide-assets-manager
-tags: web, report, design, tool, create, started 
+tags: web, report, design, tool, create, started
+tag: new 
 published: True
 position: 8
 ---

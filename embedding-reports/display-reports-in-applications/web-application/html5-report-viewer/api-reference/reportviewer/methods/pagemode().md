@@ -7,7 +7,7 @@ tags: pagemode()
 published: True
 reportingArea: HTML5
 position: 9
-previous_url: /html5-report-viewer-reportviewer-methods-pagemode
+previous_url: /html5-report-viewer-reportviewer-methods-pagemode, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()
 ---
 
 # The `pageMode()` method of the HTML5 Report Viewer

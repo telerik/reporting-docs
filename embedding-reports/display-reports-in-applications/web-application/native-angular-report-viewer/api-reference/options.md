@@ -11,8 +11,15 @@ previous_url: /embedding-reports/display-reports-in-applications/web-application
 ---
 
 <style>
+
+table {
+	color: var(--text-secondary) !important;
+	margin: auto;
+}
+
 table th:first-of-type {
 	width: 30%;
+	text-align: center !important;
 }
 table th:nth-of-type(2) {
 	width: 70%;
@@ -158,8 +165,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 				<ul>
 					<li><strong>interactive</strong> - enables drill-down interactivity, etc;</li>
 					<li><strong>printPreview</strong> - the report is paged according to the page settings;
-						For more information please see [Interactive vs. Print Layout]({%slug
-						telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).
+						For more information please see <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout %}" target="_blank">Interactive vs. Print Layout</a>.
 						<br />
 						Default value is: <strong>interactive</strong>
 					</li>
@@ -183,8 +189,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 		<tr>
 			<td>printMode</td>
 			<td>
-				<p>Specifies how the viewer should [print reports]({%slug
-				telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).</p>
+				<p>Specifies how the viewer should <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports %}" target="_blank">print reports</a>.</p>
 				<p>The available values are:</p>
 				<ul>
 					<li><strong>autoSelect</strong> - specifies that the viewer should automatically decide
@@ -250,7 +255,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 			<td>authenticationToken</td>
 			<td>
 				<p><i>string, optional;</i></p>
-				<p> If provided, a `Bearer` token will be set in the `Authorization` header for requests to the Reporting REST service. The token is not sent only when requesting [document resources]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource%}). The reason is that resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
+				<p> If provided, a `Bearer` token will be set in the `Authorization` header for requests to the Reporting REST service. The token is not sent only when requesting <a href="{% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource %}" target="_blank">document resources</a>. The reason is that resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
 			</td>
 		</tr>
 	</table>

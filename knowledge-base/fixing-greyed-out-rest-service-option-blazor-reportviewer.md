@@ -39,11 +39,11 @@ While adding the native ReportViewer to a Blazor WebAssembly project, the "Creat
 To resolve this issue, host the Reporting REST Service in a separate project. Follow these steps:
 
 1. Create a new ASP.NET Core project for the Reports Web Service.
-1. Implement the Reporting REST Service in the new project using Minimal API. Refer to the article [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
+1. Implement the Reporting REST Service in the new project using Minimal API. Refer to the article [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%}).
 1. Integrate the separately hosted Reporting REST Service with your Blazor WebAssembly project.
 
 ## See Also
 
-* [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
-* [Blazor WebAssembly vs. Server](https://docs.telerik.com/blazor-ui/introduction#blazor-webassembly-vs-server)
-* [Embedding Reports in Applications]({%slug telerikreporting/using-reports-in-applications/overview%})
+- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
+- [Blazor WebAssembly vs. Server](https://docs.telerik.com/blazor-ui/introduction#blazor-webassembly-vs-server)
+- [Embedding Reports in Applications]({%slug telerikreporting/using-reports-in-applications/overview%})

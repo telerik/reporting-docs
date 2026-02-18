@@ -1,6 +1,6 @@
 ---
 title: Download Raw Data Action
-page_title: Configuring the Download Raw Data Action 
+page_title: Configuring the Download Raw Data Action
 description: "Learn more about setting up a Download Raw Data Report Action and how to utilize the Report Viewer interactive action event handler for data downloading."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/download-rawdata-action
 tags: raw,data,action
@@ -19,7 +19,7 @@ In contrast with the other interactive actions, the 'Download Raw Data' action i
 
 ![An image showing the download-raw-data action on a graph item.](../images/download-raw-data-action-preview-on-graph.png)
 
-When triggered, the 'Download Raw Data' action will open a Save File dialog, asking for a location where the data will be saved. Upon confirmation, the data used for the data item's binding will be fetched from its data context and exported to the specified location in CSV format. 
+When triggered, the 'Download Raw Data' action will open a Save File dialog, asking for a location where the data will be saved. Upon confirmation, the data used for the data item's binding will be fetched from its data context and exported to the specified location in CSV format.
 
 Downloading data from the items' data context means that it respects the same rules used for data binding. If a data item, e.g. a Table, is connected to a SqlDataSource instance, the 'Download Raw Data' action will fetch all the data in the data source. If a data item has its DataSource set with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to a parent item's data context, the downloaded data will contain only the subset applied on the item.
 
@@ -35,10 +35,10 @@ The export logic of the action is reused in features available during the design
 
 ![An image showing the download-raw-data action on a graph item at design-time.](../images/download-raw-data-action-designer-context-menu.png)
 
-# See Also
+## See Also
 
- * [Actions Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) 
- * [Interactive Action Events]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events%}) 
- * [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
- * [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
- * [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})
+- [Actions Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
+- [Interactive Action Events]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events%})
+- [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
+- [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
+- [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})

@@ -4,14 +4,15 @@ description: Export report in Silverlight by accessing the report engine via API
 type: how-to
 page_title: Export Report in Silverlight using API
 slug: how-to-export-report-in-silverlight
-position: 
+position:
 tags: silverlight,export,report
-ticketid: 
+ticketid:
 res_type: kb
 sitemap: false
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -26,22 +27,20 @@ sitemap: false
 > The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
 
 ## Description
-In the following article are presented steps for exporting a report in Silverlight application by accessing the report engine via API.
 
+In the following article are presented steps for exporting a report in Silverlight application by accessing the report engine via API.
 
 ## Solution
 
-To export a Telerik report from a Silverlight application without a Silverligh Report Viewer you have to instantiate the 
-[Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/api/telerik.reporting.service.silverlightclient.reportserviceclient) class, 
+To export a Telerik report from a Silverlight application without a Silverligh Report Viewer you have to instantiate the
+`Telerik.Reporting.Service.SilverlightClient.ReportServiceClient` class,
 which plays the role of proxy to the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).
 
-To specify that you want to render the report we use the [ReportServiceClient.RenderAsync](/api/telerik.reporting.service.silverlightclient.reportserviceclient#collapsible-Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderAsync_System_String_System_String_Telerik_Reporting_Service_NameValueDictionary_Telerik_Reporting_Service_NameValueDictionary_) 
-method of the ReportServiceClient, which invokes the respective method on the server (remember that it serves as proxy) that would return the rendered report.
+To specify that you want to render the report we use the `RenderAsync` method of the `Telerik.Reporting.Service.SilverlightClient.ReportServiceClient`, which invokes the respective method on the server (remember that it serves as proxy) that would return the rendered report.
 
-Since we’ve used an asynchronous method and we do not know when the render would finish, we need to handle the [ReportServiceClient.RenderCompleted](/api/telerik.reporting.service.silverlightclient.reportserviceclient#collapsible-Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderCompleted) 
-event. In the RenderCompleted event we get the result from the rendering and decide what to do with it - in this case write down the report.
+Since we’ve used an asynchronous method and we do not know when the render would finish, we need to handle the `Telerik.Reporting.Service.SilverlightClient.ReportServiceClient.RenderCompleted` event. In the `RenderCompleted` event we get the result from the rendering and decide what to do with it - in this case write down the report.
 
->The [ShowDialog](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.showdialog(VS.95).aspx) method is invoked prior to having the rendered report, because the dialog box, can only be called from user-initiated code, such as a button Click event. If ShowDialog is called from code that is not user-initiated, a SecurityException is thrown.
+> The [ShowDialog](<http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.showdialog(VS.95).aspx>) method is invoked prior to having the rendered report, because the dialog box, can only be called from user-initiated code, such as a button Click event. If ShowDialog is called from code that is not user-initiated, a SecurityException is thrown.
 
 ```C#
 public partial class MainPage : UserControl
@@ -54,7 +53,7 @@ public partial class MainPage : UserControl
     Stream file;
 
     private void Button_Click(object sender, RoutedEventArgs e)
-    { 
+    {
         var fileDlg = new SaveFileDialog();
         fileDlg.Filter = "PDF files|*.pdf|All files|*.*";
 
@@ -67,9 +66,9 @@ public partial class MainPage : UserControl
 
             this.file = fileDlg.OpenFile();
             var serviceClient = new ReportServiceClient(new Uri(App.Current.Host.Source, "../ReportService.svc"));
-            serviceClient.RenderAsync("PDF", 
-                "ClassLibrary1.Report1, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", 
-                deviceInfo, 
+            serviceClient.RenderAsync("PDF",
+                "ClassLibrary1.Report1, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                deviceInfo,
                 parameters);
             serviceClient.RenderCompleted += new EventHandler<RenderEventArgs>(serviceClient_RenderCompleted);
         }
@@ -88,6 +87,3 @@ public partial class MainPage : UserControl
     }
 }
 ```
-
-## See Also
-[Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/api/telerik.reporting.service.silverlightclient.reportserviceclient)

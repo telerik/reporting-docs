@@ -4,6 +4,7 @@ page_title: How to Customize the AI-Powered Insights
 description: "Learn how to configure the AI-powered insights functionality to handle common and not so much use cases."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights
 tags: telerik, reporting, ai, configuration
+tag: new
 published: True
 position: 4
 reportingArea: General
@@ -12,6 +13,7 @@ reportingArea: General
 # Customizing AI-Powered Insights
 
 This article explains how to customize the AI-powered insights functionality for different use cases. There are two distinct ways to achieve this:
+
 - [Configuring the Report Engine](#configuring-the-report-engine)&mdash;Declarative configuration through application settings.
 - [Overriding ReportsControllerBase Methods](#overriding-reportscontrollerbase-methods)&mdash;Programmatic customization with custom logic.
 
@@ -19,7 +21,7 @@ This article explains how to customize the AI-powered insights functionality for
 
 The declarative configuration approach handles most common customization scenarios through the [AIClient element]({%slug telerikreporting/aiclient-element%}) in your application's configuration file. It allows you to customize user consent, custom and predefined prompts, and RAG optimization without writing any code.
 
->tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
+> tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
 
 ### User Consent Configuration
 
@@ -29,7 +31,7 @@ By default, the **AI Prompt** dialog requests explicit consent from users before
 
 In enterprise environments where AI usage policies are already established or when working with trusted internal models, you may want to streamline the user experience by disabling this consent requirement. In these cases, you can set the `requireConsent` option to `false`:
 
-````JSON
+```JSON
 {
     "telerikReporting": {
         "AIClient": {
@@ -37,8 +39,9 @@ In enterprise environments where AI usage policies are already established or wh
         }
     }
 }
-````
-````XML
+```
+
+```XML
 <configuration>
     <configSections>
         <section
@@ -53,7 +56,7 @@ In enterprise environments where AI usage policies are already established or wh
         </AIClient>
     </Telerik.Reporting>
 </configuration>
-````
+```
 
 ### Prompts Configuration
 
@@ -61,7 +64,7 @@ By default, users can create their own custom prompts to ask any questions about
 
 To restrict users to predefined prompts only, you set `allowCustomPrompts` to `false` and add the predefined prompts through the `predefinedPrompts` option:
 
-````JSON
+```JSON
 {
     "telerikReporting": {
         "AIClient": {
@@ -73,8 +76,9 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
         }
     }
 }
-````
-````XML
+```
+
+```XML
 <configuration>
     <configSections>
         <section
@@ -93,7 +97,7 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
         </AIClient>
     </Telerik.Reporting>
 </configuration>
-````
+```
 
 You can also add predefined prompts without disabling custom ones, giving users both curated options and the flexibility to create their own queries.
 
@@ -106,6 +110,7 @@ By default, the AI-powered insights functionality uses a [Retrieval-Augmented Ge
 If needed, you can disable this algorithm by setting `allowRAG` to `false`.
 
 You can also configure the RAG behavior through the `ragSettings` option:
+
 - `modelMaxInputTokenLimit`&mdash;Limits the maximum input tokens the AI model can process in a single request. The default value is `15000`.
 - `maxNumberOfEmbeddingsSent`&mdash;Limits how many embeddings (chunks of retrieved content) are sent to the model in a single request. The default value is `15`.
 - `maxTokenSizeOfSingleEmbedding`&mdash;Limits token size of each individual embedding, which prevents large chunks from dominating the prompt. The default value is `0` (no limit).
@@ -114,7 +119,7 @@ You can also configure the RAG behavior through the `ragSettings` option:
 
 Below is an example that takes advantage of the table splitting and automatic encoding inference, but reduces the token limits:
 
-````JSON
+```JSON
 "telerikReporting": {
 	"AIClient": {
 		"ragSettings": {
@@ -124,7 +129,7 @@ Below is an example that takes advantage of the table splitting and automatic en
 		}
 	}
 }
-````
+```
 
 For a complete reference of all available `AIClient` options, check the article [AIClient Element Overview]({%slug telerikreporting/aiclient-element%}).
 
@@ -140,7 +145,7 @@ The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.
 
 #### .NET
 
-````C#
+```C#
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
 /// </summary>
@@ -163,12 +168,11 @@ public override IActionResult CreateAIThread(string clientID, string instanceID,
 
     return base.CreateAIThread(clientID, instanceID, reportSource);
 }
-````
-
+```
 
 #### .NET Framework
 
-````C#
+```C#
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
 /// </summary>
@@ -190,8 +194,7 @@ public override HttpResponseMessage CreateAIThread(string clientID, string insta
 
     return base.CreateAIThread(clientID, instanceID, reportSource);
 }
-````
-
+```
 
 ### UpdateAIPrompts(ClientReportSource, AIThreadInfo)
 
@@ -199,7 +202,7 @@ The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.s
 
 #### .NET
 
-````Changing·Consent·Message
+```C# Changing·Consent·Message
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
@@ -209,8 +212,9 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
-````
-````Setting·Predefined·Prompts·Dynamically
+```
+
+```C# Setting·Predefined·Prompts·Dynamically
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
@@ -223,11 +227,11 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
-````
+```
 
 #### .NET Framework
 
-````Changing·Consent·Message
+```C# Changing·Consent·Message
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
@@ -237,8 +241,9 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
-````
-````Setting·Predefined·Prompts·Dynamically
+```
+
+```C# Setting·Predefined·Prompts·Dynamically
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
@@ -251,8 +256,7 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
-````
-
+```
 
 ### GetAIResponse(string, string, string, string, AIQueryArgs)
 
@@ -260,7 +264,7 @@ The [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.re
 
 #### .NET
 
-````Modifying·Outgoing·Prompts
+```C# Modifying·Outgoing·Prompts
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
 /// </summary>
@@ -271,8 +275,9 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
-````
-````Token·Usage·Validation
+```
+
+```C# Token·Usage·Validation
 /// <summary>
 /// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 /// </summary>
@@ -292,8 +297,9 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
-````
-````RAG·Optimization·Monitoring
+```
+
+```C# RAG·Optimization·Monitoring
 /// <summary>
 /// Examines whether the RAG optimization is applied for the current prompt.
 /// </summary>
@@ -312,13 +318,13 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
-````
+```
 
 #### .NET Framework
 
 > The RAG Optimization Monitoring example is not included in this section because RAG functionality is available only in .NET and .NET Standard configurations.
 
-````Modifying·Outgoing·Prompts
+```C# Modifying·Outgoing·Prompts
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
 /// </summary>
@@ -329,8 +335,9 @@ public override async Task<HttpResponseMessage> GetAIResponse(string clientID, s
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
-````
-````Token·Usage·Validation
+```
+
+```C# Token·Usage·Validation
 /// <summary>
 /// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 /// </summary>
@@ -350,11 +357,11 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
-````
+```
 
 ## See Also
 
-* [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-* [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
-* [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
-* [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)
+- [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
+- [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
+- [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
+- [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

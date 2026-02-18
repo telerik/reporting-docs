@@ -30,8 +30,8 @@ The Web Report Designer requires a Report Designer REST service, whose fully fun
 
 The following tutorials elaborate on embedding the web report designer jQuery widget into SPA Reporting projects. The jQuery web designer widget requires a Web Report Designer REST service:
 
-* [Integrate the Web Report Designer in Angular]({%slug display-web-report-designer-in-angular-application%})
-* [How to use Web Report Designer in React Application]({%slug how-to-use-web-report-designer-in-react-js%})
+- [Integrate the Web Report Designer in Angular]({%slug display-web-report-designer-in-angular-application%})
+- [How to use Web Report Designer in React Application]({%slug how-to-use-web-report-designer-in-react-js%})
 
 ## Generating Reports for Single Page Web Reporting Applications
 
@@ -41,25 +41,24 @@ The Single Page Applications hosting a Telerik Report Viewer require a [Telerik 
 
 There are different methods for configuring the Telerik Reporting REST Service in an ASP.NET Core or Blazor Server Reporting project:
 
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}} with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
-* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
+- [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
+- [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}} with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
+- [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
 
 ## Displaying Reports in SPA Web Reporting Applications
 
 The Telerik Reporting product comes with ready-to-use Report Viewers for the following SPA Frameworks:
 
-* [Angular](https://angular.dev/overview)
+- [Angular](https://angular.dev/overview)
 
-	You may find two Report Viewer implementations for the Angular framework:
-	
-	+ The [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) is a wrapper of the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. The Angular Report Viewer does not use [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components and doesn't require a subscription for this suite.
+  You may find two Report Viewer implementations for the Angular framework:
+  - The [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) is a wrapper of the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. The Angular Report Viewer does not use [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components and doesn't require a subscription for this suite.
 
-	+ The [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) is a native Angular widget built on top of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components and as such requires subscription for this suite.
+  - The [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) is a native Angular widget built on top of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components and as such requires subscription for this suite.
 
-* [React](https://react.dev/)
+- [React](https://react.dev/)
 
-	The [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) is a wrapper of the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript.
+  The [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) is a wrapper of the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript.
 
 ### Requirements
 
@@ -67,22 +66,20 @@ The [globalization-invariant mode](https://learn.microsoft.com/en-us/dotnet/core
 
 ### Implementation
 
-* Angular
+- Angular
+  - The article [Integrating the Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%}) is s step-by-step tutorial on integrating the Angular HTML5 Report Viewer in an [Angular CLI application](https://angular.dev/tools/cli.
 
-	+ The article [Integrating the Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%}) is s step-by-step tutorial on integrating the Angular HTML5 Report Viewer in an [Angular CLI application](https://angular.dev/tools/cli.
+  - Use the article [Integrating the Native Angular Report Viewer with the Reporting Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service%}) as a tutorial for embedding the Native Angular Report Viewer into your Angular Single Page Application.
 
-	+ Use the article [Integrating the Native Angular Report Viewer with the Reporting Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service%}) as a tutorial for embedding the Native Angular Report Viewer into your Angular Single Page Application.
+- React
 
-* React
-
-	Follow the instructions in [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%}).
+  Follow the instructions in [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%}).
 
 ## See Also
 
-* [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})
-* [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
-* [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
-* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
-* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
-* [Embedding Telerik Reporting in Blazor Reporting Applications]({%slug blazor-reporting%})
-
+- [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})
+- [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
+- [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
+- [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
+- [Embedding Telerik Reporting in Blazor Reporting Applications]({%slug blazor-reporting%})

@@ -25,17 +25,15 @@ This article explains how to attach client event handlers to an `WebForms` wrapp
 
 To attach a client event handler you have to set the proper `ClientEvents` tag as shown below:
 
-````XML
+````HTML
 <telerik:ReportViewer ID="reportViewer1" runat="server">
 	<ClientEvents RenderingBegin="onRenderingBegin" />
 </telerik:ReportViewer>
 ````
 ````JavaScript
-<script>
-	function onRenderingBegin() {
-		console.log("rendering begin!");
-	}
-</script>
+function onRenderingBegin() {
+	console.log("rendering begin!");
+}
 ````
 
 

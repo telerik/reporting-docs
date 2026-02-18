@@ -14,8 +14,8 @@ reportingArea: General
 When working with the Telerik Reporting HtmlTextBox report item, note the following design considerations and known limitations.
 
 * The HtmlTextBox respects only inline styles.
-* The HtmlTextBox works with the text-formatting options only.
-* The HtmlTextbox is rendered as plain text with no formatting in Excel.
+* The HtmlTextBox works with text-formatting options and images (using the `<img>` tag).
+* The HtmlTextBox is rendered as plain text with no formatting in Excel. Images are not displayed in Excel exports.
 * The HtmlTextBox doesn't support RTL (Right-to-Left) rendering.
 * The HyperLink HTML tag (`<a>`) is interactive (acts as an actual hyperlink) only under an HTML rendering extension.
 

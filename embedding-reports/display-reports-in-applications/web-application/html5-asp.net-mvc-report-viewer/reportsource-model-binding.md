@@ -23,7 +23,7 @@ In case all you need is a report viewer that is used to display various reports,
 ````C#
 @model Telerik.Reporting.UriReportSource
 ````
-````VB.NET
+````VB
 @ModelType Telerik.Reporting.UriReportSource
 ````
 

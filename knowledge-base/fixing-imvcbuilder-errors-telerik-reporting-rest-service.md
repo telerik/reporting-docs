@@ -20,12 +20,14 @@ ticketid: 1706442
       </tr>
       <tr>
          <td> Version </td>
-         <td> 19.3.25.1119 </td>
+         <td> 19.3.26.121 or older </td>
       </tr>
    </tbody>
 </table>
 
 ## Description
+
+> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
 
 I encountered a build error when configuring the Telerik Reporting REST Service in ASP.NET Core with Minimal API.
 
@@ -37,41 +39,38 @@ I encountered a build error when configuring the Telerik Reporting REST Service 
 
 To resolve the error, ensure that the `AddTelerikReporting` method is applied to an `IMvcBuilder` object, as this extension method is defined for the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) interface. Follow these steps:
 
-### Option 1: Add an `IMvcBuilder`  to the IServiceCollection
+### Option 1: Add an `IMvcBuilder` to the IServiceCollection
 
 1. Add services for pages to the specified [IServiceCollection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection):
-   
-   ````C#
-var service = builder.Services.AddRazorPages();
-````
 
-   
+   ```C#
+   var service = builder.Services.AddRazorPages();
+   ```
+
 1. Add **Newtonsoft.Json** to the service:
 
-   ````C#
-service.AddNewtonsoftJson();
-````
-
+   ```C#
+   service.AddNewtonsoftJson();
+   ```
 
 1. Define the reports path and add Telerik Reporting:
 
-   ````C#
-var reportsPath = System.IO.Path.Combine(builder.Environment.ContentRootPath, "Reports");
+   ```C#
+   var reportsPath = System.IO.Path.Combine(builder.Environment.ContentRootPath, "Reports");
    service.AddTelerikReporting("TelerikReportingRestServiceMinimalApi", reportsPath);
-````
-
+   ```
 
 ### Option 2: Chain the extension methods
 
 Alternatively, chain the `AddRazorPages`, `AddNewtonsoftJson`, and `AddTelerikReporting` methods directly:
 
-````C#
+```C#
 builder.Services.AddMvc().AddNewtonsoftJson().AddTelerikReporting("TelerikReportingRestServiceMinimalApi", reportsPath);
-````
+```
 
 > Replace `"TelerikReportingRestServiceMinimalApi"` and the reports path with your specific configuration values.
 
 ## See Also
 
-* [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
-* [IMvcBuilder Interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder?view=aspnetcore-9.0)
+- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
+- [IMvcBuilder Interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder?view=aspnetcore-9.0)

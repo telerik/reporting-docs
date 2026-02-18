@@ -43,7 +43,9 @@ XML-based configuration file:
 
 ````XML
 <configuration>
-…
+	<configSections>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+	</configSections>
 	<Telerik.Reporting>
 		<extensions>
 			<render>
@@ -56,12 +58,8 @@ XML-based configuration file:
 			</render>
 		</extensions>
 	</Telerik.Reporting>
-…
 </configuration>
 ````
-
-JSON-based configuration file:
-
 ````JSON
 "telerikReporting": {
 	"extensions": [

@@ -10,8 +10,8 @@ res_type: kb
 
 ## Environment
 
-| Property | Value |
-|----------|-------|
+| Property | Value             |
+| -------- | ----------------- |
 | Product  | Telerik Reporting |
 
 ## Description
@@ -33,25 +33,24 @@ To display a triangle matrix table design, follow these steps:
 1. Add a Row Footer to the Crosstab to display the sizes at the bottom of the matrix. Right-click on the last Crosstab row and select 'Insert Row > Outside Group > Below'. Set the Default Border Style of the new row's right cell to `Solid`.
 1. For the detail cell of the Crosstab (middle row/right column) with the value '= Fields.Value', use a Binding to set the `Style.BorderStyle.Default` property as follows. The Expression ensures borders are displayed only for the cells with content, i.e. that are part of the desired triangle matrix:
 
-	`= (Fields.Value is Null) Or (Fields.Value = "") ? "None" : "Solid"`
+   `= (Fields.Value is Null) Or (Fields.Value = "") ? "None" : "Solid"`
 
 1. You can also use a second Binding for the same cell to set the font color (Style.Color) based on the value. For example, you can set different colors based on specific ranges of values like in the referenced sample report:
 
-	````Expression
-= (Fields.Value is Null) Or (Fields.Value = "") ? "white" : Ifs(
-		Fields.Value < 150, "green", 
-		Fields.Value < 250, "red", 
-		Fields.Value < 350, "yellow",
-		Fields.Value < 450, "blue",
-		Fields.Value < 550, "brown",
-		Fields.Value < 650, "pink",
-		Fields.Value < 750, "black",
-		Fields.Value < 850, "light green",
-		Fields.Value < 950, "violet",
-		"gray")
-````
-
+   ```Expression
+   = (Fields.Value is Null) Or (Fields.Value = "") ? "white" : Ifs(
+   	Fields.Value < 150, "green",
+   	Fields.Value < 250, "red",
+   	Fields.Value < 350, "yellow",
+   	Fields.Value < 450, "blue",
+   	Fields.Value < 550, "brown",
+   	Fields.Value < 650, "pink",
+   	Fields.Value < 750, "black",
+   	Fields.Value < 850, "light green",
+   	Fields.Value < 950, "violet",
+   	"gray")
+   ```
 
 ## Sample Report
 
-* [TriangleMatrix.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/TriangleMatrix.trdx)
+- [TriangleMatrix.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/TriangleMatrix.trdx)

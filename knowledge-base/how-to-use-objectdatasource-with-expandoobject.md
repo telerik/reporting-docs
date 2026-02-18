@@ -4,13 +4,14 @@ description: Fix The expression contains object 'PropertyName' that is not defin
 type: how-to
 page_title: How to use one ObjectDataSource with multiple properties with ExpandoObject
 slug: how-to-use-objectdatasource-with-expandoobject
-position: 
+position:
 tags: olapdataengine, databinding
 ticketid: 1153025
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -18,16 +19,17 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
-When binding [ObjectDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) to a collection of [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx) instances the Reporting engine expects the collection to contain a list of business objects with *known properties*.
+
+When binding [ObjectDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) to a collection of [ExpandoObject](<https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx>) instances the Reporting engine expects the collection to contain a list of business objects with _known properties_.
 As ExpandoObject uses an internal dictionary of string and object (IDictionary<string,object>) to store the dynamically added properties the engine is not able to find them and throws an error:
-*"The expression contains object 'PropertyName' that is not defined in the current context".*
+_"The expression contains object 'PropertyName' that is not defined in the current context"._
 
 ## Solution
+
 In order to expose ExpandoObject properties to Reporting engine, a custom TypeDescriptor needs to be provided that will determine the actual properties of the object.
 
-```CSharp
+```C#
 	public class ExpandoObjectTypeDescriptionProvider : TypeDescriptionProvider
     {
         private static readonly TypeDescriptionProvider m_Default = TypeDescriptor.GetProvider(typeof(ExpandoObject));
@@ -153,12 +155,12 @@ In order to expose ExpandoObject properties to Reporting engine, a custom TypeDe
                 get { return string.Empty; }
             }
         }
-    }     
+    }
 ```
 
 Custom provider can be attached to a single instance or to all instances of ExpandoObject type:
 
-```CSharp
+```C#
 //attach to a single instance
 dynamic newObj = new ExpandoObject();
 TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), newObj);
@@ -167,9 +169,10 @@ TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), typeof(Ex
 ```
 
 ## Suggested Workarounds
-In case if you want to add a second data item with a second list of ExpandoObjects (having different properties) it shows error: "The expression contains object 'ProperyName' that is not defined in the current context." on the second one. 
 
-Note that the Telerik Reporting engine expects the *ObjectDataSource* collection to include a list of business objects with *known properties* and there is no out-of-the-box functionality to contain collection of *ExpandoObject*. So, only the first ExpandoObject properties that are added to a collection would be available in the report to feed the ObjectDataSource.
+In case if you want to add a second data item with a second list of ExpandoObjects (having different properties) it shows error: "The expression contains object 'ProperyName' that is not defined in the current context." on the second one.
+
+> The Telerik Reporting engine expects the _ObjectDataSource_ collection to include a list of business objects with _known properties_ and there is no out-of-the-box functionality to contain collection of _ExpandoObject_. So, only the first ExpandoObject properties that are added to a collection would be available in the report to feed the ObjectDataSource.
 
 However, the possible workaround is available by following these steps:
 
@@ -177,10 +180,10 @@ However, the possible workaround is available by following these steps:
 2. Add it to a collection (make sure that it is the first item in the collection);
 3. Register the ExpandoObject type in the application Main method using the following code:
 
-	```CSharp
-	TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), typeof(ExpandoObject));
-	```
+   ```C#
+   TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), typeof(ExpandoObject));
+   ```
+
 4. Bind an ObjectDataSource to the created collection from step 2;
 5. In the report create a Data Item with property Visible = false;
 6. Set the DataSource of the hidden data item to be the newly created ObjectDataSource.
-

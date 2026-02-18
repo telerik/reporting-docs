@@ -44,7 +44,7 @@ The **Silverlight report viewer** lives entirely on the *client* side, while the
    
 - **URL rewriting and load balancing scenarios**  
 
-Other reason for missing images in the rendered in XAML report is the usage of URL rewriting or load balancing where the Reporting WCF Service URL is not the same as the displayed in browser. In such scenarios inherit the report service and override its property [BaseAddress](/api/telerik.reporting.service.reportservicebase#collapsible-Telerik_Reporting_Service_ReportServiceBase_BaseAddress) which is the Uri used from the XamlRendering for the resources address (e.g., images).
+Other reason for missing images in the rendered in XAML report is the usage of URL rewriting or load balancing where the Reporting WCF Service URL is not the same as the displayed in browser. In such scenarios inherit the report service and override its property `Telerik.Reporting.Service.ReportServiceBase.BaseAddress` which is the Uri used from the XamlRendering for the resources address (e.g., images).
    
 Example:  
 

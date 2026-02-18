@@ -21,46 +21,41 @@ table th:nth-of-type(2) {
 
 # Report Engine Configuration Overview
 
-Particular settings can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called `app.config`, for __ASP.NET Framework applications__ – `web.config`. This configuration file is XML-based and its content is divided into sections.
+Particular settings can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For **Windows and WPF applications** the configuration file is called `app.config`, for **ASP.NET Framework applications** – `web.config`. This configuration file is XML-based and its content is divided into sections.
 
-On the other hand, __.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named `appsettings.json`. For __.NET Core console applications__ both configuration types are supported, but __appsettings.json__ has precedence over __app.config__. __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported [key-value-based files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0).
+On the other hand, **.NET Core applications** provide another way of storing configuration - a key-value JSON-based file named `appsettings.json`. For **.NET Core console applications** both configuration types are supported, but **appsettings.json** has precedence over **app.config**. **ASP.NET Core applications** no longer use _web.config_ so the configuration should be set to any of the supported [key-value-based files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0).
 
-> For more information about configuring a __.NET__ application, see [Configuring Apps by using Configuration Files](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/).
+> For more information about configuring a **.NET** application, see [Configuring Apps by using Configuration Files](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/).
 
 ## Telerik Reporting Configuration Layout
 
-__Telerik Reporting root element__ 
+**Telerik Reporting root element**
 
 The root element of the configuration is named `<Telerik.Reporting>` in XML-based configuration files and `"telerikReporting"` in JSON-based configuration files. All the settings of the Reporting engine are nested in this root element.
 
-|   |   |
-| ------ | ------ |
-|Attributes|No attributes are defined for this element|
-|Child elements| [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})- specifies a collection of extensions, for which the configuration is applied<br/>[cache Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element%})- specifies the configuration settings for the cache management system which is utilized by the viewers to store and cache rendered pages and resources.<br/>[restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})- specifies the configuration settings for the REST report service.<br/>[assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})- specifies a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions.<br/>[privateFonts Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})- specifies a collection that allows the Reporting Engine to use a private version of a font without installing the font on the host machine. This element is __mandatory__ for rendering PDF files on Linux in a .Net Core application.<br/>[appData Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element%})- specifies the configuration settings for the temporary application data stored on the machine.<br/>[dpiAware Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element%})- specifies the application's DPI awareness setting which affects the reports rendering.|
-|Parent element| __Configuration__ - Specifies the required root element in every configuration file that is used by the common language runtime and the .NET Framework applications. Only one Telerik.Reporting element can be used in the Configuration element.|
+|                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Attributes     | No attributes are defined for this element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Child elements | [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})- specifies a collection of extensions, for which the configuration is applied<br/>[cache Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element%})- specifies the configuration settings for the cache management system which is utilized by the viewers to store and cache rendered pages and resources.<br/>[restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})- specifies the configuration settings for the REST report service.<br/>[assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})- specifies a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions.<br/>[privateFonts Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})- specifies a collection that allows the Reporting Engine to use a private version of a font without installing the font on the host machine. This element is **mandatory** for rendering PDF files on Linux in a .Net Core application.<br/>[appData Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element%})- specifies the configuration settings for the temporary application data stored on the machine.<br/>[dpiAware Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element%})- specifies the application's DPI awareness setting which affects the reports rendering. |
+| Parent element | **Configuration** - Specifies the required root element in every configuration file that is used by the common language runtime and the .NET Framework applications. Only one Telerik.Reporting element can be used in the Configuration element.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 ## XML-based Configuration
 
 The snippets in this section show the `<Telerik.Reporting>` configuration used in XML-based configuration files like `app.config` and `web.config`.
 
-The settings for the Telerik Reporting engine are stored in a custom configuration section called `Telerik.Reporting`. The declaration of this section has to be included in a `<configSections>` element which should be the __first child element__ of `<configuration>`, like this:
+The settings for the Telerik Reporting engine are stored in a custom configuration section called `Telerik.Reporting`. The declaration of this section has to be included in a `<configSections>` element which should be the **first child element** of `<configuration>`, like this:
 
-````XML
+```XML
 <configuration>
 	<configSections>
-		<section
-				name="Telerik.Reporting"
-				type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
-				allowLocation="true"
-				allowDefinition="Everywhere"/>
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
 	</configSections>
-	…
 </configuration>
-````
+```
 
 The custom configuration section's content:
 
-````XML
+```XML
 <Telerik.Reporting>
 	<extensions>
 		<render>
@@ -71,6 +66,7 @@ The custom configuration section's content:
 			</extension>
 		</render>
 	</extensions>
+
 	<cache>
 		<providers>
 			<provider>
@@ -80,6 +76,7 @@ The custom configuration section's content:
 			</provider>
 		</providers>
 	</cache>
+
 	<processing>
 		<graphicsEngine>
 		</graphicsEngine>
@@ -94,6 +91,7 @@ The custom configuration section's content:
 			</parameters>
 		</sharedResourceResolver>
 	</processing>
+
 	<restReportService>
 		<reportResolver/>
 		<storage>
@@ -102,28 +100,33 @@ The custom configuration section's content:
 			</parameters>
 		</storage>
 	</restReportService>
+
 	<assemblyReferences>
 		<add />
 		<clear />
 		<remove />
 	</assemblyReferences>
+
 	<privateFonts>
 		<add />
 	</privateFonts>
+
 	<fontLibrary>
 	</fontLibrary>
+
 	<dpiAware>
 	</dpiAware>
+
 	<appData>
 	</appData>
 </Telerik.Reporting>
-````
+```
 
 ## JSON-based Configuration
 
 The JSON-based configuration structure used in `appsettings.json` or other key-value-based files looks like the following:
 
-````JSON
+```JSON
 "telerikReporting": {
 	"extensions": [
 		{
@@ -232,9 +235,9 @@ The JSON-based configuration structure used in `appsettings.json` or other key-v
 		"Path": null
 	}
 }
-````
+```
 
 ## See Also
 
-* [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
-* [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
+- [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+- [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})

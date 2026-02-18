@@ -38,10 +38,10 @@ To change the text orientation in a TextBox item, use the [`Angle`](/api/Telerik
 
 The layout of the tilted text starts from the corner of the client item rectangle and fits the text until finished. This behavior produces short initial text lines, which can be avoided, if desired, by adding some empty lines at the beginning of the text or expression:
 
-````CSharp
+````C#
 this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
 ````
-````VB.NET
+````VB
 Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
 ````
 

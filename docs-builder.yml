@@ -6,9 +6,12 @@ product-url: https://www.telerik.com/products/reporting
 product-code: REPORTING
 product-trial-url: https://www.telerik.com/try/reporting
 contribute-url: https://github.com/telerik/reporting-docs/edit/master
+
 search-engine-id: 001595215763381649090:zzabynuukmu
-cta-overview: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out sign up for a free 30-day trial."
-cta-intro: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out sign up for a free 30-day trial."
+search-provider: nuclia
+
+cta-overview: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out, sign up for a free 30-day trial."
+cta-intro: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out, sign up for a free 30-day trial."
 default-title-prefix: Telerik Reporting
 
 # images

@@ -15,11 +15,11 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
-	<tr>
+		<tr>
 			<td>Rendering Format</td>
 			<td>DOCX, XLSX, PPTX, XPS</td>
 		</tr>
-	<tr>
+		<tr>
 			<td>Report Viewer</td>
 			<td>All</td>
 		</tr>
@@ -42,35 +42,64 @@ where {X} is DOCX, XLSX, PPTX, or XPS.
 
 ## Possible Cause
 
-Usually, this is related to not having Telerik Reporting rendering format specific assemblies not being referenced in the project or the rendering format being unavailable altogether due limitations in .NET Core projects - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
+Usually, this is related to not having the Telerik Reporting rendering format specific assemblies referenced in the project or the rendering format being unavailable altogether due to limitations in .NET Core projects - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
 
 ## Solution
 
 ### XPS
 
-The `XPS` rendering extension requires the `Telerik.Reporting.XpsRendering.dll` assembly.
+The `XPS` rendering extension requires the `Telerik.Reporting.XpsRendering.dll` assembly. This format is only available for .NET Framework projects.
 
 ### DOCX/PPTX/XLSX
 
-`DOCX/PPTX/XLSX` rendering extensions are OpenXML formats and they require `Telerik.Reporting.OpenXmlRendering.dll` and [Open XML SDK 2.0 for Microsoft Office]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (`DocumentFormat.OpenXml.dll v.2.0.5022.0` or above).
+The `DOCX/PPTX/XLSX` rendering extensions are OpenXML formats and require two components:
 
-If you are using `DocumentFormat.OpenXml` of version `2.5.5631.0`, you will need binding redirect for the `DocumentFormat.OpenXml.dll` assembly - [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%}).
+1. A Telerik Reporting OpenXML rendering assembly
+1. The [Open XML SDK]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (`DocumentFormat.OpenXml.dll`)
 
-In newer versions of the `DocumentFormat.OpenXml` assembly the `PublicKeyToken` is changed. Thus, if you are using `DocumentFormat.OpenXml` of version `2.7.2.0` or newer you have to reference `Telerik.Reporting.OpenXmlRendering.2.7.2.` or `Telerik.Reporting.OpenXmlRendering.3.0.1.`
+The specific assembly/package you need depends on your project type and the version of `DocumentFormat.OpenXml` you are using.
 
-**Note:** `Telerik.Reporting.OpenXmlRendering.3.0.1.` is introduced in Telerik Reporting 2024 Q1 (18.0.24.130)
+#### NuGet Packages (Recommended)
 
-> For even newer versions, also add the required `binding redirect`.
+To resolve the issue, you can use one of the following NuGet packages:
 
-The assembly references must be added in the project that handles reports:
+| NuGet Package | Contains Assembly | Compatible DocumentFormat.OpenXml Version |
+|---------------|-------------------|-------------------------------------------|
+| `Telerik.Reporting.OpenXmlRendering` | `Telerik.Reporting.OpenXmlRendering.2.7.2.dll` | 2.7.2 and above (up to 3.0.0) |
+| `Telerik.Reporting.OpenXmlRendering3` | `Telerik.Reporting.OpenXmlRendering.3.0.1.dll` | 3.0.1 and above |
 
-* If the project uses [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) instance, assembly references must be added in that project's configuration file;
-* If the project uses a viewer that operates via [Telerik Reporting Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), the assembly references must be added in the service project's configuration file;
-* If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}), assembly references must be added in the viewer project's configuration file;
-* If you are testing the design-time preview in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), it is configured to let export in DOCX, PPTX, XLSX and XPS without additional settings;
-* If you are testing the design-time preview in [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), you may not have all export options, unless OpenXML SDK 2.0 is installed on the machine, or if OpenXML SDK 2.5 or greater is installed and you manually add a binding redirect for `DocumentFormat.OpenXml.dll` assembly in the corresponding `devenev.exe.config` file (Visual Studio configuration file). During the [installation]({%slug telerikreporting/installation%}), Telerik Reporting assemblies are automatically registered in the machine's GAC and the design-preview will load them automatically.
+> The `Telerik.Reporting.OpenXmlRendering3` package was introduced in Telerik Reporting 2024 Q1 (18.0.24.130).
 
-## Notes
+Choose the package that matches your `DocumentFormat.OpenXml` version. For example, if your project uses `DocumentFormat.OpenXml` version 3.x, install the `Telerik.Reporting.OpenXmlRendering3` NuGet package.
 
-* If you do not want to install OpenXML SDK, copy `DocumentFormat.OpenXml.dll` next to the corresponding `devenv.exe` (the Visual Studio executable).
-* On deploying the application, verify that the above-listed assemblies are copied in the `bin` folder. For this purpose, select the references in Visual Studio and set their `CopyLocal` to `true`.
+#### Direct Assembly References (Manual)
+
+You can also reference assemblies directly, which is common in .NET Framework projects when you manage dependencies manually. The following assemblies are available:
+
+| Assembly | Compatible DocumentFormat.OpenXml Version |
+|----------|-------------------------------------------|
+| `Telerik.Reporting.OpenXmlRendering.dll` | 2.0.5022.0 and 2.5.5631.0 |
+| `Telerik.Reporting.OpenXmlRendering.2.7.2.dll` | 2.7.2.0 and later (up to 3.0.0.0) |
+| `Telerik.Reporting.OpenXmlRendering.3.0.1.dll` | 3.0.1.0 and later |
+
+> The base `Telerik.Reporting.OpenXmlRendering.dll` assembly (without version suffix) is only available for .NET Framework projects and is not distributed via NuGet.
+
+#### Binding Redirects (.NET Framework)
+
+Binding redirects apply to .NET Framework apps that load assemblies via `app.config` or `web.config`. If your `DocumentFormat.OpenXml` version differs from the one the Telerik assembly was compiled against, add a binding redirect. See [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%}) for details.
+
+### Where to Add References
+
+Add the assembly/package references to the project that handles report processing:
+
+* If the project uses [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) instance, add the references to that project.
+* If the project uses a viewer that operates via [Telerik Reporting Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), add the references to the service project.
+* If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}), add the references to the viewer project.
+
+On deploying the application, verify that the above-listed assemblies are copied in the `bin` folder. For this purpose, select the references in Visual Studio and set their `CopyLocal` to `true`.
+
+## See Also
+
+* [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})
+* [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%})
+* [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})

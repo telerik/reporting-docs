@@ -37,7 +37,7 @@ Consider the following steps when experiencing problems while working with Teler
 	+ Missing basic functionality, for example, incomplete GDI+ or Skia graphics engines, or fonts on specific Windows Server or Linux distributions;
 	+ Insufficient user permissions for machine resources, databases, etc.
 - **Hard refresh the browser** to ensure there are no cached Report Viewer resources with older versions.
-	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running the same version.` In this particular case, you may have upgraded successfully the viewer and the service from `19.3.26.121` to `20.0.26.211`. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
+	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running the same version.` In this particular case, you may have upgraded successfully, the viewer and the service from `19.3.26.121` to `20.0.26.211`. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
 - **Record a server-side log** file containing detailed information about the error:
 	To create the log file, go to the project that hosts the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), add the below method, and then call it from the startup point of the application, for example, the `Program.cs` file:
 
@@ -56,7 +56,7 @@ Consider the following steps when experiencing problems while working with Teler
 
 	Here is a sample Trace Listener log from the Telerik Reporting REST Service that contains a warning about font substitution:
 
-	```
+	```TEXT
 	CSharp.Net10.Html5IntegrationDemo Information: 0 : Worker rendering threads count: 20
 	CSharp.Net10.Html5IntegrationDemo Information: 0 : License check for assembly Telerik.Reporting, Version=20.0.26.211, Culture=neutral, PublicKeyToken=a9d7983dfcc261be: True
 	CSharp.Net10.Html5IntegrationDemo Information: 0 : Cache Cleanup (2/18/2026 3:11:26 PM): 'Delete expired cache assets' should be performed as of 2/18/2026 1:11:25 PM, as it is not performed since 2/18/2026 12:49:29 PM and the check period is 00:05:00
@@ -110,4 +110,4 @@ Consider the following steps when experiencing problems while working with Teler
 	
 	If you need help, please send us the generated SAZ file in case you use Fiddler; [HAR file](https://docs.cloud.google.com/support/docs/capture-browser-trace) if you capture the traffic in the Chrome browser, etc.
 
-> After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps to reproduce the issue, a sample report with data, or a runnable project.
+> important After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps to reproduce the issue, a sample report with data, or a runnable project.

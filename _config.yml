@@ -429,6 +429,81 @@ navigation:
     api:
         position: 300
         title: "API Reference"
+    api-ref:
+        position: 120
+        title: "API Reference"
+    api-ref/html5-report-viewer:
+        position: 10
+        title: "HTML5 Report Viewer"
+    api-ref/html5-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/html5-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/angular-report-viewer:
+        position: 20
+        title: "Angular Report Viewer"
+    api-ref/angular-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/angular-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/native-angular-report-viewer:
+        position: 30
+        title: "Native Angular Report Viewer"
+    api-ref/native-angular-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/native-angular-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/react-report-viewer:
+        position: 40
+        title: "React Report Viewer"
+    api-ref/react-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/react-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/blazor-report-viewer:
+        position: 50
+        title: "Blazor Report Viewer"
+    api-ref/blazor-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/blazor-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/native-blazor-report-viewer:
+        position: 60
+        title: "Native Blazor Report Viewer"
+    api-ref/native-blazor-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/native-blazor-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/mvc-report-viewer:
+        position: 70
+        title: "ASP.NET MVC Report Viewer"
+    api-ref/mvc-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/mvc-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    api-ref/webforms-report-viewer:
+        position: 80
+        title: "ASP.NET WebForms Report Viewer"
+    api-ref/webforms-report-viewer/api-reference:
+        position: 10
+        title: "API Reference"
+    api-ref/webforms-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
 ## The application virtual path
 baseurl: /reporting
 

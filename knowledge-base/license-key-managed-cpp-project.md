@@ -49,7 +49,7 @@ Make sure your project references `Telerik.Licensing.Runtime.dll`.
 
 Create a new file named `TelerikLicense.cpp` in your project with the following content:
 
-```CPP
+```cpp
 using namespace Telerik::Licensing;
 
 [assembly:EvidenceAttribute("YOUR_LICENSE_KEY_HERE")];

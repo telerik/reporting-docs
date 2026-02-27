@@ -33,7 +33,7 @@ The following table lists the device information settings for rendering in Excel
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
 |UseNativePageHeader|Boolean|Specifies whether to render the report’s page header in the native Excel page header section. When __false__ (default value), the page header is rendered as a sequence of frozen rows at the top of the worksheet.|
-|UseNativePageFooter|Boolean|Specifies whether to render the report’s page footer in the native Excel page footer section. When false, the footer is rendered as a sequence of Excel cells. Default value is __true__.|
+|UseNativePageFooter|Boolean|Specifies whether to render the report’s page footer in the native Excel page footer section. When __false__, the footer is rendered as a sequence of Excel cells. Default value is __true__.|
 |ShowGridlines|Boolean|Specifies whether Excel Gridlines are visible. Default value is __false__.|
 |UseMetafile|Boolean|A flag specifying whether to render Graph, Map, and Barcode items as [Metafile (EMF)](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-metafiles-about) or [Bitmap](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-types-of-bitmaps-about) images. The default value is __true__.|
 |UseExtendedFormatting|Boolean|Format strings used throughout the report will be hard-coded with "Custom Format" in Excel, which includes the locale information of the server. This way, the formatting from the report definition is preserved and does not depend on the client machine's locale where the document is opened. The custom format information can be omitted by setting __UseExtendedFormatting = false__. Default value is __true__.|

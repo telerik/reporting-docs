@@ -74,6 +74,5 @@ The key addition is `&& !event.request.url.includes('/api/reports/')`, which ens
 
 ## See Also
 
-- [Troubleshooting HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/troubleshooting%})
 - [How to Change the Reporting REST Web API Routes]({%slug how-to-change-reporting-rest-web-api-routes-registered-by-default%})
 - [Hosting the Reporting REST Service in ASP.NET Core]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})

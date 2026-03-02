@@ -40,8 +40,8 @@ Use Math functions to manipulate the numeric values of your data. Math functions
 | `Log10(number)` |Returns the base 10 logarithm of a specified number.|
 | `Pow(number, power)` |Returns a specified number raised to the specified power.|
 | `Random()` |Returns a 32-bit signed integer greater than or equal to zero .|
-| `Round(number)` |Rounds a decimal or a double-precision floating-point number to the nearest integral value.|
-| `Round(number, digits)` |Rounds a decimal or a double-precision floating-point number to the specified number of fractional digits.|
+| `Round(number)` |Rounds a decimal or a double-precision floating-point number to the nearest integral value. Uses **ToEven** (banker's) midpoint rounding: when a value is exactly halfway between two integers, it rounds to the nearest even number (e.g., `2.5` → `2`, `3.5` → `4`).|
+| `Round(number, digits)` |Rounds a decimal or a double-precision floating-point number to the specified number of fractional digits. Uses **ToEven** (banker's) midpoint rounding: when a value is exactly halfway, it rounds to the nearest even digit (e.g., `2.25` rounded to 1 digit → `2.2`, `2.35` → `2.4`).|
 | `Sign(number)` |Returns a value (-1, 0, 1) indicating the sign of a number.|
 | `Sin(angle)` |Returns the sine of the specified angle.|
 | `Sqrt(number)` |Returns the hyperbolic sine of the specified angle.|

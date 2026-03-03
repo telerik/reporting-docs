@@ -40,7 +40,7 @@ You pass data into a SubReport using ParameterBindings. Inside the SubReport, =F
 
 ## Inheriting Data Context
 
-The Data Context is inherited between report items. Items inside larger items inherit the data of their parent automatically. This means you often don’t have to manually connect each item to a database. The designer passes data downward for you. Every report starts with a top‑level data source. When the report runs, this data becomes the parent data context.
+When the item does not specify a DataSource, the data context is inherited between report items. Items inside larger items inherit the data of their parent automatically. This is the default behavior for most textboxes, panels, etc. This means you often don’t have to manually connect each item to a database. The designer passes data downward for you. Every report starts with a top‑level data source. When the report runs, this data becomes the parent data context.
 If you add items inside other items (for example, a table inside a report section), each nested item automatically receives the data of its parent. This behavior is defined as the ability to reuse the data from the parent, instead of creating a new data source.
 
 <img style="border: 1px solid gray;" src="images/inherited-data-context.png" /> 
@@ -48,6 +48,23 @@ If you add items inside other items (for example, a table inside a report sectio
 >note Data context does not flow “sideways”&mdash;Items next to each other (e.g., two sibling panels) do not share context unless they share the same parent data item.</br>
 
 ## Own Data Context
+
+When a data item sets its own DataSource, this creates an independent scope for that item. The item’s children inherit its data context.
+Typical patterns:
+
+1. Master-Detail (Parent-Child)
+    * Parent Table uses **DataSource A**
+    * Inside the detail row, a child Table/List/Graph sets its own **DataSource B** that filters by parent key:
+        * Pass parent fields to DataSource parameters: e.g., =ReportItem.DataObject.CustomerId or =Fields.CustomerId
+        * Result: the child item shows only rows linked to the current parent row.
+
+1. SubReport
+    * SubReport is designed to be independent. You pass parameters from the parent (e.g., OrderId) and the subreport uses its own data source filtered by that parameter.
+    * This is ideal if the subreport is reused in multiple parent reports.
+
+>note See the [Creating Master-Detail Reports]({%slug  web-report-designer-user-guide-creating-master-detail-report%}) tutorial.
+
+By using own DatSource the child item’s data is unaffected by the parent’s filtering/grouping. Thus, SubReports and self-contained tables/graphs can be dropped into other reports.
 
 <img style="border: 1px solid gray;" src="images/own-data-context.png" /> 
 
@@ -72,9 +89,9 @@ Monitor,Electronics,300
 
 1. Create a new report in the Web Report Designer.
 
-1. Add a CSV Data Source to the report with the above data. Now your report has a `Report-level` data scope, containing all rows returned. It defines the outermost scope.
+1. Add a CSV Data Source to the report with the above data. Now, your report has a `Report-level` data scope, containing all rows returned. It defines the outermost scope.
 
-1. Add a Table: From the Toolbox drag a Table onto the design surface and bind it to your data source. A Table is a data item, so it switches scope to its own data source (`Data item-level` scope). Everything inside its detail section is evaluated per row.
+1. Add a Table: From the Components pane drag a Table onto the design surface and bind it to your data source. A Table is a data item, so it switches scope to its own data source (`Data item-level` scope). Everything inside its detail section is evaluated per row.
 
 1. Add fields to columns: 
     * Column 1: =Fields.Product
@@ -94,7 +111,7 @@ Monitor,Electronics,300
     <img style="border: 1px solid gray;" src="images/table-context-menu.png" />  
     <img style="border: 1px solid gray;" src="images/table-add-group.png" /> 
 
-1. Save the group. This creates a new `Group-level` scope (subset of rows that share Category). Here, default scope = current group instance, so all fields refer to that group’s first record unless aggregated.
+1. Save the group. This creates a new `Group-level` scope (subset of rows that share the same Category). Here, default scope = current group instance, so all fields refer to that group’s first record unless aggregated.
 
     <img style="border: 1px solid gray;" src="images/table-group-scope.png" />  
 

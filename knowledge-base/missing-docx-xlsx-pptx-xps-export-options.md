@@ -1,6 +1,6 @@
 ---
 title: Missing Export Options in Viewers or Rendering Format Not Available
-description: "Learn why the viewers may not show the DOCX, XLSX, PPTX, and XPS export options or when trying to export a report to a rendering format it is failing due to that rendering format not being available."
+description: "Learn why the viewers may not show the DOCX, XLSX, PPTX, and XPS export options, or when trying to export a report to a rendering format, it is failing due to that rendering format not being available."
 type: how-to
 page_title: OpenXML and XPS options not visible. Unavailable rendering format
 slug: missing-docx-xlsx-pptx-xps-export-options
@@ -36,7 +36,7 @@ Trying to export a report to a rendering format is failing due to that rendering
 
 If you export programmatically, the error message will be: 
 
-`{X} rendering format is not available`
+`{X} rendering format is not available.`
 
 where {X} is DOCX, XLSX, PPTX, or XPS.
 
@@ -68,9 +68,9 @@ To resolve the issue, you can use one of the following NuGet packages:
 | `Telerik.Reporting.OpenXmlRendering` | `Telerik.Reporting.OpenXmlRendering.2.7.2.dll` | 2.7.2 and above (up to 3.0.0) |
 | `Telerik.Reporting.OpenXmlRendering3` | `Telerik.Reporting.OpenXmlRendering.3.0.1.dll` | 3.0.1 and above |
 
-> The `Telerik.Reporting.OpenXmlRendering3` package was introduced in Telerik Reporting 2024 Q1 (18.0.24.130).
+> The `Telerik.Reporting.OpenXmlRendering3` package was introduced in **Telerik Reporting 2024 Q1 (18.0.24.130)**.
 
-Choose the package that matches your `DocumentFormat.OpenXml` version. For example, if your project uses `DocumentFormat.OpenXml` version 3.x, install the `Telerik.Reporting.OpenXmlRendering3` NuGet package.
+Choose the package that matches your `DocumentFormat.OpenXml` version. For example, if your project uses [DocumentFormat.OpenXml](https://www.nuget.org/packages/documentformat.openxml) version **3.x**, install the `Telerik.Reporting.OpenXmlRendering3` NuGet package.
 
 #### Direct Assembly References (Manual)
 
@@ -86,7 +86,9 @@ You can also reference assemblies directly, which is common in .NET Framework pr
 
 #### Binding Redirects (.NET Framework)
 
-Binding redirects apply to .NET Framework apps that load assemblies via `app.config` or `web.config`. If your `DocumentFormat.OpenXml` version differs from the one the Telerik assembly was compiled against, add a binding redirect. See [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%}) for details.
+Binding redirects apply to .NET Framework apps that load assemblies via `app.config` or `web.config`. If your `DocumentFormat.OpenXml` version differs from the one the Telerik assembly was compiled against, add a binding redirect. 
+
+See [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%}) for details.
 
 ### Where to Add References
 
@@ -96,7 +98,7 @@ Add the assembly/package references to the project that handles report processin
 * If the project uses a viewer that operates via [Telerik Reporting Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), add the references to the service project.
 * If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}), add the references to the viewer project.
 
-On deploying the application, verify that the above-listed assemblies are copied in the `bin` folder. For this purpose, select the references in Visual Studio and set their `CopyLocal` to `true`.
+> important When deploying the application, verify that the above-listed assemblies are copied into the `bin` folder. For this purpose, select the references in Visual Studio and set their `CopyLocal` to `true`.
 
 ## See Also
 

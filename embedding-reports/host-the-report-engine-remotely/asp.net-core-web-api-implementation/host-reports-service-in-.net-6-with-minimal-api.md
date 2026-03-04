@@ -78,7 +78,7 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
    ```C#
    var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
-   builder.Services.AddTelerikReporting("ReportingNet", reportsPath);
+   builder.Services.AddRazorPages().AddTelerikReporting("ReportingNet", reportsPath);
    ```
 
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method:
@@ -152,8 +152,8 @@ builder.Services.AddCors(corsOption => corsOption.AddPolicy(
 	corsBuilder =>
 	{
 		corsBuilder.AllowAnyOrigin()
-			.AllowAnyMethod()
-			.AllowAnyHeader();
+				   .AllowAnyMethod()
+			       .AllowAnyHeader();
 	}
 ));
 ```

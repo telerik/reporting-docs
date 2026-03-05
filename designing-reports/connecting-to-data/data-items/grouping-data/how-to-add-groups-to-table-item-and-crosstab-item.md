@@ -38,7 +38,7 @@ To add a parent or child row/column group:
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) hierarchy, and the corresponding rows or columns are added to the data item on the design surface.
 
->tip When using **Repeat On Every Page**, you can display different content for repeated instances of the header or footer. Use the `ReportItem.IsRepeated` property in expressions to conditionally modify the displayed content, for example, appending "(continued)" text. For more details, see [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
+>tip When using **Repeat On Every Page**, you can display different content for repeated instances of the header or footer. Use the [`ReportItem.IsRepeated`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportitem) property in expressions to conditionally modify the displayed content, for example, appending "(continued)" text. For more details, see [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
 
 ### Add an Adjacent Group
 
@@ -57,7 +57,7 @@ To add an adjacent row/column group:
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) at the specified position, and the corresponding rows or columns are added to the data item on the design surface.
 
->tip When using **Repeat On Every Page**, you can display different content for repeated instances of the header or footer. Use the `ReportItem.IsRepeated` property in expressions to conditionally modify the displayed content, for example, appending "(continued)" text. For more details, see [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
+>tip When using **Repeat On Every Page**, you can display different content for repeated instances of the header or footer. Use the [`ReportItem.IsRepeated`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportitem) property in expressions to conditionally modify the displayed content, for example, appending "(continued)" text. For more details, see [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
 
 >caution Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
@@ -118,7 +118,7 @@ To change the repeat behavior after group creation:
 1. Set `PrintOnEveryPage` to `True` to repeat the header/footer on every page, or `False` to disable repeating.
 1. Click **OK**.
 
->tip To control the content displayed in repeated headers or footers, use the `ReportItem.IsRepeated` property in expressions. For example, you can append "(continued)" text to repeated headers. See [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
+>tip To control the content displayed in repeated headers or footers, use the [`ReportItem.IsRepeated`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportitem) property in expressions. For example, you can append "(continued)" text to repeated headers. See [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
 
 ## Delete a Group Using the Report Designer
 

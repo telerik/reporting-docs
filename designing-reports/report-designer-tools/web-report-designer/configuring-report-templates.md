@@ -19,7 +19,7 @@ img[alt$="><"] {
 |Minimum Version:|Q4 2025|
 |----|----|
 
-The Web Report Designer lets you [create report templates]({%slug web-report-designer-report-templates%}) that simplify and streamline the report creation process. A **report template** is a reusable design that defines the layout, styling, and data structure of a report.
+The Web Report Designer lets you [create report templates]({%slug user-guide-web-report-designer-report-templates%}) that simplify and streamline the report creation process. A **report template** is a reusable design that defines the layout, styling, and data structure of a report.
 
 To control how application users utilize templates, developers can configure specific folders for storing report templates and manage user access to these folders.
 

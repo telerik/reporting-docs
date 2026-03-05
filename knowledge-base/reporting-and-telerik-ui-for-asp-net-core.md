@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+> important Starting with version `20.0.26.211`, the .NET-based Reporting services now use [`System.Text.Json`](https://www.nuget.org/packages/System.Text.json).
 
 I created a new **Telerik ASP.NET Core MVC Application** with a Telerik Grid and it worked as expected.
 
@@ -35,7 +35,7 @@ The report was displayed successfully when I ran the project. However, when I we
 
 ## Solution
 
-The issue is due to the [Microsoft.AspNetCore.Mvc.NewtonsoftJson](https://www.nuget.org/packages/microsoft.aspnetcore.mvc.newtonsoftjson/) package that is required by the **Telerik Reporting REST Service**. By default, the **Telerik UI for ASP.NET Core** product uses alternative JSON serialization.
+The issue is due to the [`Microsoft.AspNetCore.Mvc.NewtonsoftJson`](https://www.nuget.org/packages/microsoft.aspnetcore.mvc.newtonsoftjson/) package that is required by the **Telerik Reporting REST Service**. By default, the **Telerik UI for ASP.NET Core** product uses alternative JSON serialization.
 
 In order to use `Newtonsoft.Json` for the serialization in **Telerik UI for ASP.NET Core**, the following serializer settings must be set in the `AddNewtonsoftJson` constructor:
 

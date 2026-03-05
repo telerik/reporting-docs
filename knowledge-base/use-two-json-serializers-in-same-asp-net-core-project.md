@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+> important Starting with version `20.0.26.211`, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
 > <br/>
 > If you need to use `NewtonsoftJson` in non-reporting controllers, that would still be possible with the [Local](#local) approach demonstrated below. See [The type or namespace name NewtonsoftJsonOutputFormatter could not be found](slug:type-or-namespace-newtonsoftjsonoutputformatter-could-not-be-found) for more information on the topic.
 

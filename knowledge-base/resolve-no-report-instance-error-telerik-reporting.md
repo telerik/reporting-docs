@@ -26,13 +26,13 @@ ticketid: 1670454
 
 ## Description
 
-> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+> important Starting with version `20.0.26.211`, the .NET-based Reporting services now use [`System.Text.Json`](https://www.nuget.org/packages/System.Text.json).
 
 After upgrading a project to use the [Progress® Telerik® Reporting 2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112) version of the Telerik Reporting assemblies, the reports fail to load with a console error stating `No report instance` was found.
 
 ## Cause
 
-The problem is most commonly caused by custom [JsonSerializerSettings](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm) specified in the `AddNewtonsoftJson` method which interferes with the serialization process required for the Telerik Reporting to function properly.
+The problem is most commonly caused by custom [`JsonSerializerSettings`](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm) specified in the `AddNewtonsoftJson` method which interferes with the serialization process required for the Telerik Reporting to function properly.
 
 ## Solution
 
@@ -40,7 +40,7 @@ To resolve the `No report instance` error, consider one of the following approac
 
 ### Using Default JsonSerializerSettings
 
-Update the [AddNewtonsoftJson](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) method in the `Program.cs` file of the project to use the default [JsonSerializerSettings](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm):
+Update the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) method in the `Program.cs` file of the project to use the default [`JsonSerializerSettings`](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm):
 
 ```C#
 var builder = WebApplication.CreateBuilder(args);
@@ -50,9 +50,9 @@ builder.Services.AddNewtonsoftJson();
 
 ### Creating an Action Filter for custom JsonSerializerSettings
 
-If using the default serializer settings is not an option due to application requirements, create an [ActionFilter](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute) to customize the [JsonSerializerSettings](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm) for the reports controller:
+If using the default serializer settings is not an option due to application requirements, create an [`ActionFilter`](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute) to customize the [`JsonSerializerSettings`](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm) for the reports controller:
 
-1. Implement the `JsonConfigFilterAttribute` [ActionFilter](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute):
+1. Implement the `JsonConfigFilterAttribute` [`ActionFilter`](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute):
 
    ```C#
    using Microsoft.AspNetCore.Mvc;

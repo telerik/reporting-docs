@@ -15,8 +15,8 @@ res_type: kb
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
 	<tr>
-		<td>Release</td>
-		<td>2026 Q1</td>
+		<td>Version</td>
+		<td>20.0.26.211</td>
 	</tr>
 </table>
 

@@ -34,6 +34,7 @@ To add a parent or child row/column group:
 1. (Optional) Select **Repeat On Every Page** to repeat the header on each page.
 1. (Optional) Select **Add Footer** to add a group footer row or column.
 1. (Optional) Select **Repeat On Every Page** to repeat the footer on each page.
+>tip The **Repeat On Every Page** functionality for group headers and footers was introduced in version `20.0.26.211`.
 1. Click **OK**.
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) hierarchy, and the corresponding rows or columns are added to the data item on the design surface.
@@ -51,6 +52,7 @@ To add an adjacent row/column group:
 1. (Optional) Select **Repeat On Every Page** to repeat the header on each page.
 1. (Optional) Select **Add Footer** to add a group footer row or column.
 1. (Optional) Select **Repeat On Every Page** to repeat the footer on each page.
+>tip The **Repeat On Every Page** functionality for group headers and footers was introduced in version `20.0.26.211`.
 1. Click **OK**.
 
 The group is added to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) at the specified position, and the corresponding rows or columns are added to the data item on the design surface.

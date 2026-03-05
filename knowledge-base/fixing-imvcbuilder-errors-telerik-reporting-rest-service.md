@@ -27,7 +27,7 @@ ticketid: 1706442
 
 ## Description
 
-> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+> important Starting with version `20.0.26.211`, the .NET-based Reporting services now use [`System.Text.Json`](https://www.nuget.org/packages/System.Text.json).
 
 I encountered a build error when configuring the Telerik Reporting REST Service in ASP.NET Core with Minimal API.
 

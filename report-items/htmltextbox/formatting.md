@@ -29,7 +29,7 @@ While the HtmlTextBox does not support the `table` tag, you can use the native T
 
 ## Image Support
 
->tip The `<img>` tag support was introduced in the 2026 Q1 release.
+>tip The `<img>` tag support was introduced in version `20.0.26.211`.
 
 The HtmlTextBox supports the `<img>` tag for embedding images inline within HTML content.
 

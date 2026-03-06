@@ -46,7 +46,7 @@ Define how data is organized within the group.
 
 Configure whether and how the group header appears.
 
->tip The **Repeat On Every Page** functionality for group headers and footers was introduced in the 2026 Q1 release.
+>tip The **Repeat On Every Page** functionality for group headers and footers was introduced in version `20.0.26.211`.
 
 ![Table Group Dialog showing Add Header and Repeat On Every Page options](images/table-group-dialog-header.png)
 

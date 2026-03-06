@@ -29,7 +29,7 @@ res_type: kb
 
 ## Description
 
-> important Starting with the **Progress® Telerik® Reporting 2026 Q1** release, the .NET-based Reporting services now use [System.Text.Json](https://www.nuget.org/packages/System.Text.json).
+> important Starting with version `20.0.26.211`, the .NET-based Reporting services now use [`System.Text.Json`](https://www.nuget.org/packages/System.Text.json).
 
 HTML5 Report Viewer fails to load a report and displays the error saying that the value of report parameter is invalid.
 
@@ -45,14 +45,14 @@ Invalid value of report parameter 'X'
 
 ## Cause\Possible Cause(s)
 
-The values of report parameters are submitted from the client(viewer) to the server in JSON format where the formatting is done by the **Newtonsoft.Json** package.
+The values of report parameters are submitted from the client(viewer) to the server in JSON format where the formatting is done by the `Newtonsoft.Json` package.
 
-It is possible that using the outdated **Newtonsoft.Json** package might result in the incorrect transfer of the
+It is possible that using the outdated `Newtonsoft.Json` package might result in the incorrect transfer of the
 parameter values.
 
 ## Solution
 
-Update the [Newtonsoft.Json](https://www.nuget.org/packages/newtonsoft.json/) package using the NuGet package manager in Visual Studio according to the version of Telerik Reporting that you are using - [Upgrading Projects](slug:telerikreporting/upgrade/overview).
+Update the [`Newtonsoft.Json`](https://www.nuget.org/packages/newtonsoft.json/) package using the NuGet package manager in Visual Studio according to the version of Telerik Reporting that you are using - [Upgrading Projects](slug:telerikreporting/upgrade/overview).
 
 ## See Also
 

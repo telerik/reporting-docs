@@ -114,7 +114,7 @@ To change the repeat behavior after group creation:
 
 	To find the correct leaf: start from the dynamic group whose header or footer you want to change → select its first child (header) or last child (footer) static group → keep following the child chain until you reach one with no children. That is the leaf to edit.
 
-	For example, the sample report [`RepeatableTableGroupHeadersDemo.trdx`](https://github.com/telerik/reporting-samples/blob/master/RepeatableTableGroupHeadersFootersDemo/RepeatableTableGroupHeadersFootersDemo.trdx) has a *productCategory* group containing a nested *productSubCategory* group. The resulting row group hierarchy in Extended Mode is:
+	For example, the sample report [`RepeatableTableGroupHeadersFootersDemo.trdx`](https://github.com/telerik/reporting-samples/blob/master/RepeatableTableGroupHeadersFootersDemo/RepeatableTableGroupHeadersFootersDemo.trdx) has a *productCategory* group containing a nested *productSubCategory* group. The resulting row group hierarchy in Extended Mode is:
 
 	```
 	productCategory (dynamic)

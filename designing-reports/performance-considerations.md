@@ -39,6 +39,12 @@ You will first want to determine the purpose of these reports and whether a larg
 
 Some common problems with these large reports are that they contain data fields that are not used in the report, or they contain duplicate datasets. Often, users retrieve more data than they need. To significantly reduce the load placed on your reporting environment, create summary reports that use aggregates and include only the necessary columns.
 
+### Consider Report Books for Large Data
+
+When you need to generate report documents with big data, you may consider the [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%}). The idea is to split the data between multiple identical reports. They will still be combined into a single document with page breaks between the reports. Each report generation will take less RAM and time, and the temporary resources will be released after generating each report. This should reduce the total amount of resources, e.g., RAM, taken at a time.
+
+For example, you may use the same report definition with different values for a [filtering Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) that splits the data between the [ReportBook ReportSources](/api/telerik.reporting.reportbook#telerik_reporting_reportbook_reportsources). Note that the filtering parameter should have its `Mergeable` property set to `False`, as each report will have a different value: [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%}).
+
 ### Use Telerik Reporting REST Service Cache
 
 If you have reports that do not need to have live execution, set the service ReportSharingTimeout to an appropriate value. For more information see: [HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})

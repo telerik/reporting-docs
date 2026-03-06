@@ -85,7 +85,7 @@ To edit an existing group's properties, including grouping expressions, sorting,
 
 	+ **GroupKeepTogether**&mdash;Specify the keep together options to control whether group content stays together across page breaks.
 	+ **PageBreak**&mdash;Specify where page breaks occur relative to the group.
-	+ **PrintOnEveryPage**&mdash;Controls whether the corresponding header or footer row/column repeats on every page. This property is available only on static groups. See [Edit the Repeat On Every Page Behavior](#edit-the-repeat-on-every-page-behavior) for details.
+	+ **PrintOnEveryPage**&mdash;Controls whether the corresponding header or footer row/column repeats on every page. This property is respected only on static groups. See [Edit the Repeat On Every Page Behavior](#edit-the-repeat-on-every-page-behavior) for details.
 	+ **Visible**&mdash;Control the visibility of the group.
 	+ **Filters**&mdash;Click the ellipsis to configure filters. Click **New** to add a filter, then specify the **Expression**, **Operator**, and **Value**.
 	+ **Groupings**&mdash;Click the ellipsis to add or modify grouping expressions. Click **New** to add additional expressions. All expressions are combined using a logical AND.
@@ -99,7 +99,7 @@ To edit an existing group's properties, including grouping expressions, sorting,
 
 ### Edit the Repeat On Every Page Behavior
 
-When you enable **Repeat On Every Page** in the [Table Group Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog%}), the reporting engine creates a **static group** for the header or footer row/column and sets its `PrintOnEveryPage` property to `True`. Static groups have no grouping expressions&mdash;they represent fixed structural rows or columns such as group headers and footers.
+When you enable **Repeat On Every Page** for a header and/or footer while creating a [dynamic group]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview%}) in the [Table Group Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog%}), the designer sets the `PrintOnEveryPage` property to `True` on the corresponding [static group]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview%}). Static groups have no grouping expressions&mdash;they represent fixed structural rows or columns that serve as group headers and footers.
 
 To change the repeat behavior after group creation:
 
@@ -108,13 +108,33 @@ To change the repeat behavior after group creation:
 
 	![A screenshot of the Group Explorer of the Standalone Report Designer, highlighting the Extended Mode option.](images/extended-mode-group-explorer.png)
 
-1. Locate the static group that represents the header or footer. Static groups appear with a distinct icon and gray text. The correct group to edit depends on its position in the hierarchy:
+1. Locate the leaf static group that represents the header or footer you want to modify. Static groups appear with a distinct icon and gray text.
 
-	+ **Header:** the leaf static groups appearing above the detail group. Reading the hierarchy top-to-bottom, headers for outer groups appear higher up, and headers for inner groups appear just above the detail group.
-	+ **Footer:** the leaf static group positioned immediately **after** its parent dynamic group's children. Footers for inner groups appear just below the detail group, and footers for outer groups appear further down.
-	+ A **leaf** static group is one with no child groups. In a nested hierarchy each dynamic group has its own pair of leaf static groups for its header and footer. `PrintOnEveryPage` is only respected on leaf static groups — setting it on a non-leaf static group has no effect.
+	Each dynamic group owns its header as the **first child** static group and its footer as the **last child** static group. However, when groups are nested, outer dynamic groups produce a chain of static groups rather than a single one: there is a non-leaf static group at the outer level wrapping a leaf at the inner level. `PrintOnEveryPage` is only respected on the **leaf** at the end of that chain.
 
-1. Double-click the static group to open the **Group Properties** editor.
+	To find the correct leaf: start from the dynamic group whose header or footer you want to change → select its first child (header) or last child (footer) static group → keep following the child chain until you reach one with no children. That is the leaf to edit.
+
+	For example, the sample report [`RepeatableTableGroupHeadersDemo.trdx`](https://github.com/telerik/reporting-samples/blob/master/RepeatableTableGroupHeadersFootersDemo/RepeatableTableGroupHeadersFootersDemo.trdx) has a *productCategory* group containing a nested *productSubCategory* group. The resulting row group hierarchy in Extended Mode is:
+
+	```
+	productCategory (dynamic)
+	├── group1 (static, non-leaf)          ← Category header chain start
+	│   └── group2 (static, leaf) ✔        ← set PrintOnEveryPage here for Category header
+	├── productSubCategory (dynamic)
+	│   ├── group (static, leaf) ✔          ← set PrintOnEveryPage here for Subcategory header
+	│   ├── detail
+	│   └── group3 (static, leaf) ✔         ← set PrintOnEveryPage here for Subcategory footer
+	└── group4 (static, non-leaf)          ← Category footer chain start
+	    └── group5 (static, leaf) ✔         ← set PrintOnEveryPage here for Category footer
+	```
+
+	The outer *productCategory* header and footer each have a two-level static chain (`group1→group2` and `group4→group5`), while the inner *productSubCategory* header and footer are direct leaf children.
+
+	The screenshot below shows this hierarchy in the Group Explorer alongside the corresponding table rows on the design surface:
+
+	![A screenshot of the Group Explorer of the Standalone Report Designer in Extended Mode, and a table selected in the design view.](images/extended-mode-group-explorer-table.png)
+
+1. Double-click the leaf static group to open the **Group Properties** editor.
 1. Set `PrintOnEveryPage` to `True` to repeat the header/footer on every page, or `False` to disable repeating.
 1. Click **OK**.
 
@@ -142,6 +162,7 @@ To delete a group:
 
 * [Table Group Dialog (Desktop Designers)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog%})
 * [Table Group Dialog (Web Report Designer)]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-group-dialog%})
+* [Grouping Data Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview%})
 * [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%})
 * [ColumnGroups](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_ColumnGroups)
 * [RowGroups](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_RowGroups)

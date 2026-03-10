@@ -40,11 +40,11 @@ To resolve the issue:
 
 1. Locate the `Telerik.Licensing.Runtime.dll` file in your Telerik Reporting installation. For example:
 ```
-C:\Program Files (x86)\Progress\Telerik Reporting {RELEASE_VERSION}\Bin\netstandard2.0\Telerik.Licensing.Runtime.dll
+C:\Program Files (x86)\Progress\Telerik Reporting {RELEASE_VERSION}\Bin\Telerik.Licensing.Runtime.dll
 ```
 1. Copy the `Telerik.Licensing.Runtime.dll` assembly and paste it into the Visual Studio installation directory that contains the `devenv.exe.config` file:
     - Visual Studio 2022: `C:\Program Files\Microsoft Visual Studio\2022\<Edition>\Common7\IDE\devenv.exe.config`
-    - Visual Studio 2026: `C:\Program Files\Microsoft Visual Studio\2026\<Edition>\Common7\IDE\devenv.exe.config`
+    - Visual Studio 2026: `C:\Program Files\Microsoft Visual Studio\18\<Edition>\Common7\IDE\devenv.exe.config`
 1. Restart Visual Studio so that the designer can load the licensing assembly and validate the installed license.
 
 After completing these steps, exporting reports from the Visual Studio Report Designer should no longer display a license watermark.

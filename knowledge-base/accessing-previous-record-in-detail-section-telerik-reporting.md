@@ -50,6 +50,10 @@ To achieve this functionality, use the `Exec` function combined with the `Previo
 * Ensure the group name in the `Exec` function matches your report design.
 * The `Previous` function retrieves the previous detail section's value by default.
 
+## Sample Report
+
+* [PreviousRecord.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/PreviousRecord.trdx)
+
 ## See Also
 
 * [Previous and Exec functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%})

@@ -42,8 +42,6 @@ This article explains how to configure an MSSQL Database for the Reporting REST 
 				{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
 				{{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
 
-			>important The properties from the initialization block would override the values obtained from the configuration file.
-
 			1. Set the corresponding property values in the REST Service XML configuration file:
 
 				{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfig.xml region=ReportsControllerConfigSection}}
@@ -54,15 +52,21 @@ This article explains how to configure an MSSQL Database for the Reporting REST 
 
 			The **ReportSourceResolver** and **Storage** configuration settings are required. See the [IReportServiceConfiguration](/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details.
 
-			{{source=CodeSnippets\Blazor\Docs\Program.cs region=ReportsControllerConfigSectionImplementation}}
+			{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestConfigImplementation}}
 
 		- Through a configuration file:
 
-			Set the corresponding property values in the REST Service JSON configuration file:
+			1. You need to pass a [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) instance to the REST Service:
 
-			{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ReportsControllerConfigSection}}
+				{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
 
-> Since the **Telerik Reporting Q1 2025** release, the MSSQL storage relies on `System.Data.SqlClient` to connect to the provided database in .NET Framework applications, and on `Microsoft.Data.SqlClient` in .NET applications. In previous versions, the `System.Data.SqlClient` data provider was used for each target framework.
+			1. Set the corresponding property values in the REST Service JSON configuration file:
+
+				{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ReportsControllerConfigSection}}
+
+	>important The properties from the `ConfigSectionReportServiceConfiguration` initialization block would override the values obtained from the configuration file.
+
+> Since the [2025 Q1 (19.0.25.211) release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211), the MSSQL storage relies on `System.Data.SqlClient` to connect to the provided database in .NET Framework applications, and on `Microsoft.Data.SqlClient` in .NET applications. In previous versions, the `System.Data.SqlClient` data provider was used for each target framework.
 
 ## See Also
 

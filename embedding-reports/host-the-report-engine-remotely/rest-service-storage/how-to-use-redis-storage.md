@@ -22,7 +22,7 @@ The `Telerik.Reporting.Cache.StackExchangeRedis` assembly is required for Teleri
 
 Add a NuGet package reference to the `Telerik.Reporting.Cache.StackExchangeRedis` package from the https://nuget.telerik.com/v3/index.json package source, which requires a [Telerik NuGet key](https://www.telerik.com/blogs/announcing-nuget-keys).
 
-For instuctions on how to set up and use the Telerik NuGet feed, please check [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+For instructions on how to set up and use the Telerik NuGet feed, please check [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
 #### Using the Telerik Reporting installation bin folder:
 

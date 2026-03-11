@@ -53,7 +53,7 @@ Download sample report from here -
 
 **For Subreport:**
 
-You can display a 'No Data' message in a sub report by using the same approach as for a Report.
+You can display a 'No Data' message in a sub-report by using the same approach as for a Report.
 If you want to hide the SubReport item and its content, then you can add a binding in the textbox item's `Bindings` collection like:
 
 ```TEXT
@@ -65,7 +65,7 @@ The Property path has to be typed manually, where the `Parent` keyword can be us
 
 ## Sample Report
 
-* [DisplayNoDataMessage.trdp](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/DisplayNoDataMessage.trdp)
+* [DisplayNoDataMessage.trdp](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/DisplayNoDataMessage.trdx)
 
 ## See Also
 

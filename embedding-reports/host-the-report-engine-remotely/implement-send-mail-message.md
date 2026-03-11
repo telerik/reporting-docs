@@ -46,7 +46,7 @@ public static HttpStatusCode MyMailSender(MailMessage message)
 }
 ```
 
-Then, this method can be given alongside the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) of the Reporting REST Service when adding it in `Program.cs`:
+Then, this method can be passed alongside the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) of the Reporting REST Service when adding it in `Program.cs`:
 
 ```C#
 var mailContext = new MailContext(MyMailSender);

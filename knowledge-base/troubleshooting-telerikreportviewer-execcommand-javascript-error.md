@@ -16,11 +16,15 @@ res_type: kb
 
 ## Description
 
-When I try to print a report using any of the [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}), the print dialog does not open and instead, errors are displayed in the browser console.
+When I try to print a report using any of the [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}), the print dialog does not open, and instead, errors are displayed in the browser console.
 
 ## Error Message
 
 `TypeError: Cannot read properties of null (reading 'execCommand')`
+
+## Possible Cause
+
+The issue may occur if the browser is configured to always download PDF files instead of opening them directly in the built‑in PDF viewer.
 
 ## Solution
 
@@ -172,3 +176,4 @@ $("#reportViewer1")
 ## See Also
 
 * [Printing Reports from the HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
+

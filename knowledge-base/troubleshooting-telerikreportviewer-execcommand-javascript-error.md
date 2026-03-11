@@ -24,7 +24,11 @@ When I try to print a report using any of the [HTML5-based Report Viewers]({%slu
 
 ## Solution
 
-### For a Browser
+You can resolve the problem in either of the following ways:
+* [By configuring the browser](#configuring-the-browser)
+* [By creating an Endpoint](#creating-an-endpoint)
+
+### Configuring the Browser
 
 - For the Edge browser, navigate to `edge://settings/content/pdfDocuments`
 - For the Google Chrome browser, navigate to `chrome://settings/content/pdfDocuments`

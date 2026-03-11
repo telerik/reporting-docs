@@ -43,6 +43,10 @@ To implement group-specific page numbering, follow these steps:
  
 1. Assign the data source directly to the report to ensure the group scope functions correctly.
 
+## Sample Report
+
+* [GroupPageNumbering.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/GroupPageNumbering.trdx)
+
 ## See Also
 
 * [Page Functions Explained - Telerik Reporting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%})

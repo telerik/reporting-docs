@@ -30,9 +30,9 @@ For instructions on how to set up and use the Telerik NuGet feed, please check [
 
    > When using greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced DLL version.
 
-1. Add а reference to the `Telerik.Reporting.Cache.StackExchangeRedis` assembly, which you can get from the following location:
-   - .NET Framework projects - `{Telerik Reportng installation folder}/Bin`.
-   - .NET/.NET Standard projects - `{Telerik Reportng installation folder}/Bin/netstandard2.0`.
+1. Add a reference to the `Telerik.Reporting.Cache.StackExchangeRedis` assembly, which you can get from the following location:
+   - .NET Framework projects - `{Telerik Reporting installation folder}/Bin`.
+   - .NET/.NET Standard projects - `{Telerik Reporting installation folder}/Bin/netstandard2.0`.
 
 ### Using the RedisStorage
 

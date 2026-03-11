@@ -76,7 +76,7 @@ Use a temporary `TextBox` in the same [data item]({%slug telerikreporting/design
 
 When previewing your report, you may see the red error message stating `The expression contains object 'ObjectName' that is not defined in the current context.`
 
-![The red error message in the Standalone Report Designer stating that the expression contains object MyObject that is not defined in the current context.](images/red_error_object_is_not_defined_in_current_context.png)
+![The red error message in the Standalone Report Designer stating that the expression contains object MyObject that is not defined in the current context.](images/red-error-object-is-not-defined-in-current-context.png)
 
 If you cannot find the _ObjectName_ in the report definition opened in the report designer, consider saving the report as a `TRDX` file, which is an XML. You may open it in a text editor like Notepad++ and search for the _ObjectName_. When you find the occurrences, you may delete them from the corresponding report items through the report designer.
 
@@ -130,5 +130,6 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
+
 
 

@@ -38,7 +38,7 @@ This KB article gives a brief description of how to show "No Data" message when 
    ```
 
 4. Go to `Style` of the formatting rule -> uncheck the `Visible` box -> click `OK` -> select again the Style of the rule -> check `Visible` -> `OK` (This step is required because the designer needs to determine that a change has been introduced so that it re-serializes the report, otherwise the message will not change its visibility).
-5. Add a filter to the report itself so that the report can properly detect when there is no data and show the “No data” message. Configure the filter as follows:
+5. (Optional) Add a filter to the report itself so that the report can properly detect when there is no data and show the “No data” message. Configure the filter as follows:
 
  	```TEXT
   	Expression: = Fields.Column1
@@ -48,8 +48,6 @@ This KB article gives a brief description of how to show "No Data" message when 
   * Replace Column1 with your actual field name
   * The Value should be something that does not exist in your data source, such as a random letter like "b"
   * Click OK to apply the filter
-
-Download sample report from here - 
 
 **For Subreport:**
 

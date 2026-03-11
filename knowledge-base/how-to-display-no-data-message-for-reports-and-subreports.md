@@ -38,6 +38,18 @@ This KB article gives a brief description of how to show "No Data" message when 
    ```
 
 4. Go to `Style` of the formatting rule -> uncheck the `Visible` box -> click `OK` -> select again the Style of the rule -> check `Visible` -> `OK` (This step is required because the designer needs to determine that a change has been introduced so that it re-serializes the report, otherwise the message will not change its visibility).
+5. Add a filter to the report itself so that the report can properly detect when there is no data and show the “No data” message. Configure the filter as follows:
+
+ 	```TEXT
+  	Expression: = Fields.Column1
+	Operator: =
+	Value: b
+	```
+  * Replace Column1 with your actual field name
+  * The Value should be something that does not exist in your data source, such as a random letter like "b"
+  * Click OK to apply the filter
+
+Download sample report from here - 
 
 **For Subreport:**
 
@@ -51,6 +63,10 @@ Expression: = Count(1)>0
 
 The Property path has to be typed manually, where the `Parent` keyword can be used as many times as needed to get the item in the Main Report, which you want to hide.
 
+## Sample Report
+
+* [DisplayNoDataMessage.trdp](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/DisplayNoDataMessage.trdp)
+
 ## See Also
 
-- [How to: Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})
+* [How to: Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})

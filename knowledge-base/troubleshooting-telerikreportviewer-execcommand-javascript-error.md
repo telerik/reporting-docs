@@ -30,8 +30,13 @@ The issue may occur if the browser is configured to always download PDF files in
 
 You can resolve the problem in either of the following ways:
 
-* For the Edge browser, navigate to `edge://settings/content/pdfDocuments`
-* For the Google Chrome browser, navigate to `chrome://settings/content/pdfDocuments`
+### Solution 1: Change the setting in Microsoft Edge
+
+Navigate to `edge://settings/content/pdfDocuments`
+
+### Solution 2: Change the setting in Google Chrome
+
+Navigate to `chrome://settings/content/pdfDocuments`
 
 Then, disable the `Download PDFs` setting so that the PDF documents are not automatically downloaded. This is required since the printing functionality of the web viewers is based on rendering the report in PDF format with special settings, so when the PDF file opens in a browser, the PDF plug-in's `Print dialog` is directly invoked.
 
@@ -176,4 +181,5 @@ $("#reportViewer1")
 ## See Also
 
 * [Printing Reports from the HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
+
 

@@ -21,15 +21,15 @@ res_type: kb
 
 ## Description
 
-This KB article gives a brief description of how to show "No Data" message when a report or a subreport has no data source or when the data source is empty.
+This KB article gives a brief description of how to show a **"No Data"** message when a report or a subreport has no data source or when the data source is empty.
 
 ## Solution
 
 **For Report:**
 
-1. Insert a textbox in the `Report Header` section with value: "No data".
+1. Insert a textbox in the `Report Header` section with the value: "No data".
 2. Set the textbox property of `Visible` to `False`.
-3. Add a new Conditional Formatting Rule. In the Filters section set the fields as follows:
+3. Add a new Conditional Formatting Rule. In the Filters section, set the fields as follows:
 
    ```TEXT
    Expression: =Count(1)
@@ -45,8 +45,9 @@ This KB article gives a brief description of how to show "No Data" message when 
 	Operator: =
 	Value: b
 	```
-  * Replace Column1 with your actual field name
-  * The Value should be something that does not exist in your data source, such as a random letter like "b"
+  
+  * Replace **Column1** with your actual field name
+  * The **Value** should be something that does not exist in your data source, such as a random letter like "N"
   * Click OK to apply the filter
 
 **For Subreport:**
@@ -63,7 +64,7 @@ The Property path has to be typed manually, where the `Parent` keyword can be us
 
 ## Sample Report
 
-* [DisplayNoDataMessage.trdp](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/DisplayNoDataMessage.trdx)
+* [Download DisplayNoDataMessage](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/DisplayNoDataMessage.trdx)
 
 ## See Also
 

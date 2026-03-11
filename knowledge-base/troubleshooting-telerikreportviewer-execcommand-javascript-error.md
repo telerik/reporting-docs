@@ -25,23 +25,19 @@ When I try to print a report using any of the [HTML5-based Report Viewers]({%slu
 ## Solution
 
 You can resolve the problem in either of the following ways:
-* [By configuring the browser](#configuring-the-browser)
-* [By creating an Endpoint](#creating-an-endpoint)
 
-### Configuring the Browser
+* For the Edge browser, navigate to `edge://settings/content/pdfDocuments`
+* For the Google Chrome browser, navigate to `chrome://settings/content/pdfDocuments`
 
-- For the Edge browser, navigate to `edge://settings/content/pdfDocuments`
-- For the Google Chrome browser, navigate to `chrome://settings/content/pdfDocuments`
-
-Then, disable the `Download PDFs` setting so that the PDF documents are not automatically downloaded. This is required since the printing functionality of the web viewers is based on rendering the report in PDF format with special settings so when the PDF file opens in a browser, the PDF plug-in's `Print dialog` is directly invoked.
+Then, disable the `Download PDFs` setting so that the PDF documents are not automatically downloaded. This is required since the printing functionality of the web viewers is based on rendering the report in PDF format with special settings, so when the PDF file opens in a browser, the PDF plug-in's `Print dialog` is directly invoked.
 
 ![Image displaying the PDF Document settings view in the Microsoft Edge browser](images/browser-pdfsettings.png)
 
-### By Creating an Endpoint
+### Creating an Endpoint
 
-Use the [printBegin(e, args)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)%}) event to manually handle scenarios where the user has configured their PDF document settings to Download PDFs.
+Use the [`printBegin(e, args)`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)%}) event to manually handle scenarios where the user has configured the browser's PDF document settings to download PDFs.
 
-There is no direct JavaScript API to check this setting. However, the [navigator.pdfViewerEnabled](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/pdfViewerEnabled) property toggles between true and false when the setting changes. To handle scenarios where the PDF viewer is disabled, you can create a custom endpoint for rendering reports as PDFs, following the approach described in the [Exporting a report to PDF Programmatically]({%slug exporting-a-report-to-pdf-programmatically%}) article in Telerik Reporting. This endpoint is invoked manually whenever the PDF viewer is disabled.
+There is no direct JavaScript API to control this setting. However, the [`navigator.pdfViewerEnabled`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/pdfViewerEnabled) property toggles between `true` and `false` when the setting changes. To handle scenarios where the PDF viewer is disabled, you can create a custom endpoint for rendering reports as PDFs, following the approach described in the [Exporting a report to PDF Programmatically]({%slug exporting-a-report-to-pdf-programmatically%}) article in Telerik Reporting. This endpoint is invoked manually whenever the PDF viewer is disabled.
 
 ````C#
 
@@ -176,4 +172,3 @@ $("#reportViewer1")
 ## See Also
 
 * [Printing Reports from the HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
-

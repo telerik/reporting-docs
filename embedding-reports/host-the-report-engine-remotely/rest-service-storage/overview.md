@@ -12,11 +12,11 @@ previous_url: /telerik-reporting-rest-service-storage,/embedding-reports/host-th
 
 # REST Service Storage Overview
 
-When configuring the REST Reporting Service you must provide an [IStorage](/api/Telerik.Reporting.Cache.Interfaces.IStorage) interface implementation.
+When configuring the REST Reporting Service, you must provide an [IStorage](/api/Telerik.Reporting.Cache.Interfaces.IStorage) interface implementation.
 
 An instance of the provided implementation will be used from the service to store its internal state (like active clients, interactivity state, and rendered reports).
 
-The interface also exposes a method called [AcquireLock](/api/Telerik.Reporting.Cache.Interfaces.IStorage#Telerik_Reporting_Cache_Interfaces_IStorage_AcquireLock_System_String_) which is used from the service to enforce serialized access to all stored resources from each thread of the application, and between the instances of the application, in case of multi-instance environment (i.e., Web Farm).
+The interface also exposes a method called [AcquireLock](/api/Telerik.Reporting.Cache.Interfaces.IStorage#Telerik_Reporting_Cache_Interfaces_IStorage_AcquireLock_System_String_) which is used from the service to enforce serialized access to all stored resources from each thread of the application, and between the instances of the application, in case of a multi-instance environment (i.e., Web Farm).
 
 This requires selecting a suitable interface implementation when embedding the Reporting REST Service within your application.
 
@@ -26,17 +26,17 @@ The following implementations of the IStorage interface allow service multiple i
 
 - [MsSqlServerStorage](/api/Telerik.Reporting.Cache.MsSqlServerStorage) - [How to Configure an MSSQL Database Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage%}).
 
-  It supports storage server side locks to achieve inter-machine resources serialized access by its Sql Server transactions feature.
+  It supports storage server-side locks to achieve inter-machine resources serialized access by its Sql Server transactions feature.
 
 - [RedisStorage](/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) - [How to Use Redis storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage%}).
 
-  It supports storage server side locks to achieve inter-machine resources serialized access by its distributed locks feature.
+  It supports storage server-side locks to achieve inter-machine resources serialized access by its distributed locks feature.
 
-## Simgle Instance-Only Support
+## Single Instance-Only Support
 
 The following implementations of the IStorage interface support the service to be deployed as a single instance only.
 
-For the locking mechanism, they use OS-specific synchronization primitives which only enable inter-thread serialized resources access in the boundaries of a single machine.
+For the locking mechanism, they use OS-specific synchronization primitives, which only enable inter-thread serialized resources access in the boundaries of a single machine.
 
 - [FileStorage](/api/Telerik.Reporting.Cache.File.FileStorage) - Use the [FileStorage constructor](/api/Telerik.Reporting.Cache.File.FileStorage#Telerik_Reporting_Cache_File_FileStorage_#ctor) to create a storage instance.
 
@@ -46,9 +46,9 @@ For the locking mechanism, they use OS-specific synchronization primitives which
 
 - [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) - Use the [DatabaseStorage constructor](/api/Telerik.Reporting.Cache.Database.DatabaseStorage#Telerik_Reporting_Cache_Database_DatabaseStorage_#ctor) to create a storage instance.
 
-  This storage option requires reference to **Telerik.Reporting.Cache.Database.dll** that has dependencies on **Telerik Data Access** which can be checked in the version corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%}).
+  This storage option requires reference to **Telerik.Reporting.Cache.Database.dll** that has dependencies on **Telerik Data Access**, which can be checked in the version corresponding to the [Upgrade article]({%slug telerikreporting/upgrade/overview%}).
 
-> note If one of those storages is used in a multi-instance(e.g. multiple [PODs](https://kubernetes.io/docs/concepts/workloads/pods/)) environments, ensure that connections from a particular client are passed to the same Pod each time by configuring [Session affinity](https://kubernetes.io/docs/reference/networking/virtual-ips/#session-affinity)(in other words - **Sticky Sessions**) based on the client's IP address.
+> note If one of those storages is used in a multi-instance(e.g., multiple [PODs](https://kubernetes.io/docs/concepts/workloads/pods/)) environment, ensure that connections from a particular client are passed to the same Pod each time by configuring [Session affinity](https://kubernetes.io/docs/reference/networking/virtual-ips/#session-affinity)(in other words - **Sticky Sessions**) based on the client's IP address.
 
 ## Cleaning the Reporting REST Service Storage
 
@@ -56,7 +56,7 @@ For the locking mechanism, they use OS-specific synchronization primitives which
 
 The REST Service Storage keeps all the information about the registered clients/viewers.
 
-For example, the generated report documents, the images embedded in the reports, etc. Therefore, with each generated report the occupied storage space increases.
+For example, the generated report documents, the images embedded in the reports, etc. Therefore, with each generated report, the occupied storage space increases.
 
 ### Preventing Storage Size Increases
 
@@ -70,14 +70,14 @@ When a viewer gets closed, there is no notification, and the service does not kn
 
 ### Storage Structure
 
-The assets cached when a report gets rendered are generated in hierarchical manner with each resource holding reference to its parent resource.
+The assets cached when a report gets rendered are generated in a hierarchical manner, with each resource holding a reference to its parent resource.
 
-To release a particular resource, the system counts the child resources that depend on this resource and if there are none, it is considered as expired and gets released.
+To release a particular resource, the system counts the child resources that depend on this resource, and if there are none, it is considered expired and gets released.
 
 Here are the resources from child to parent:
 
 - **client session** - Kept for `ClientSessionTimeout` minutes (15 by default) after the last request from the originating client. The client session keeps the requested _document refreshes_ alive.
-- **document refresh** - A representation of report document rendered at particular moment in time. Contains the actual rendering assets like pages, images, docs (for the export format). Keeps the originating _report instance_ alive
+- **document refresh** - A representation of the report document rendered at a particular moment in time. Contains the actual rendering assets like pages, images, and docs (for the export format). Keeps the originating _report instance_ alive
 - **report instance** - this is the report definition with particular report parameter values, i.e., the report address.
 
 ### Reusing Rendered Documents

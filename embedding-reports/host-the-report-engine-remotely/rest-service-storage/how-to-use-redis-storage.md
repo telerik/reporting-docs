@@ -36,7 +36,7 @@ For instructions on how to set up and use the Telerik NuGet feed, please check [
 
 ### Using the RedisStorage
 
-Provide an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) to the **Storage** property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration):
+Provide an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) to the **Storage** property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration).
 
 The [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) constructor accepts as a parameter a `StackExchange.Redis.ConnectionMultiplexer` object, which should be reused for the application lifetime:
 

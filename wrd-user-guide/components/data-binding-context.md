@@ -12,7 +12,7 @@ position: 9
 
 # Data Scope
 
-When you design a report in the Telerik Web Report Designer, every item (such as a table, chart, text box, or list) works within a **data context**. Data Context (often called data scope) refers to the underlying data object that a report item is bound to while the report is being processed. That scope is determined by where the item lives in the report hierarchy (report level, group level, table/crosstab cells, etc.) and by the data item (Report, Table, Crosstab, Graph, Map) and its groups. 
+When you build a report in the Telerik Web Report Designer, every item—like a table, chart, or text box—needs to know which data it can see and display. This is called *data scope* (also known as data context). What data an item can see and display is defined by the item's type and its place in the report hierarchy.
 
 ##  Data Scope Levels
 

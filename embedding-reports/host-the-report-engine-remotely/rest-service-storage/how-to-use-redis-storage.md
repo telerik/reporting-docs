@@ -1,9 +1,9 @@
 ---
 title: Redis Storage
 page_title: Configuring a Redis Storage
-description: "Learn how to Configure and Use a Redis Storage for the Telerik Reporting REST Service in this step-by-step Tutorial."
+description: "Learn how to configure and use a Redis Storage for the Telerik Reporting REST Service in this step-by-step Tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage
-tags: how,to,use,redis,storage,tutorial
+tags: how, use,redis, storage, tutorial
 published: True
 reportingArea: RESTService, RESTServiceCore
 position: 2
@@ -26,9 +26,9 @@ For instructions on how to set up and use the Telerik NuGet feed, please check [
 
 #### Using the Telerik Reporting installation bin folder:
 
-1. In your application project, add reference to the [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis) NuGet package with version **2.8.16 or greater**. This will add an assembly reference to `StackExchange.Redis.dll`.
+1. In your application project, add a reference to the [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis) NuGet package with version **2.8.16 or greater**. This will add an assembly reference to `StackExchange.Redis.dll`.
 
-   > When using greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced DLL version.
+   > When using a greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced DLL version.
 
 1. Add a reference to the `Telerik.Reporting.Cache.StackExchangeRedis` assembly, which you can get from the following location:
    - .NET Framework projects - `{Telerik Reporting installation folder}/Bin`.
@@ -38,7 +38,7 @@ For instructions on how to set up and use the Telerik NuGet feed, please check [
 
 Provide an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) to the **Storage** property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration):
 
-The [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) constructor accepts as parameter a `StackExchange.Redis.ConnectionMultiplexer` object, which should be reused for the application lifetime:
+The [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) constructor accepts as a parameter a `StackExchange.Redis.ConnectionMultiplexer` object, which should be reused for the application lifetime:
 
 * .NET Framework 4.6.2+
 

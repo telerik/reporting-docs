@@ -16,7 +16,7 @@ When you build a report in the Telerik Web Report Designer, every item—like a 
 
 ##  Data Scope Levels
 
-Think of a scope as data layers:
+Think of data scope like a set of nested containers—each one holds a smaller slice of data than the one around it, and each data scope sits on a different level:
 
 1. **Report scope**&mdash;The top-level report has its own DataSource and Parameters. The Report item (e.g., “Report1”) defines a top-level scope that includes all rows returned by its data source (after filtering/sorting). Everything inside the report but outside nested data items uses that scope by default. Expressions at this level can use: 
     * =Fields.* (if the report has a DataSource)

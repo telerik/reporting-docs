@@ -14,57 +14,76 @@ previous_url: /telerik-reporting-rest-howto-use-mssql-storage,/embedding-reports
 
 This article explains how to configure an MSSQL Database for the Reporting REST Service storage.
 
-1. Ensure a database instance is available for Reporting REST Service storage. This may be a dedicated database or a shared database for both app data and Reporting REST Service storage.
+## Storage Setup
 
-	1. Start the **Telerik Database Cache Configurator** tool located in the _{Telerik Reporting installation folder}/Tools_ folder.
-	1. In the _Choose database usage_ combo-box, select the "Configure REST service storage database" option.
-	1. In the _Choose target backend_ combo-box, select the "Microsoft SQL Server" option.
-	1. In the _Specify connection string_ text box, enter the connection string that references the target database. You can also click the _Build_ button and create the connection string using the _Connection properties_ form.
-	1. Click on the _Create schema_ button to start the database schema creation.
-	1. A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing an instance of [MsSqlServerStorage](/api/Telerik.Reporting.Cache.MsSqlServerStorage) in your application.
-	1. In case you want to clean up the storage tables in an existing database, use the button _Clear cache data_.
+Before an MSSQL Server database can be used by the Reporting REST Service, the service-related tables and stored procedures must be added to it.
 
-1. Configure your Telerik Reporting REST Service to use the database storage we just prepared. You may do this in the configuration file of the project as elaborated in the article [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}), or when instantiating the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration). Here are samples for both scenarios when targeting `.NET Framework` or `.NET`:
+You may use a dedicated database or a shared database for both application data and Reporting REST Service Storage.
 
-	* .NET Framework 4.6.2+
+The following steps will walk you through the process of preparing the database for the Reporting REST Service:
 
-		- Through code when passing [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) instance to the REST Service.
+1. Start the **Telerik Database Cache Configurator** tool located in the _{Telerik Reporting installation folder}/Tools_ folder.
+1. In the _Choose database usage_ combo-box, select the "Configure REST service storage database" option.
+1. In the _Choose target backend_ combo-box, select the "Microsoft SQL Server" option.
+1. In the _Specify connection string_ text box, enter the connection string that references the target database. You can also click the _Build_ button and create the connection string using the _Connection properties_ form.
+1. Click on the _Create schema_ button to start the database schema creation.
+1. A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing an instance of [MsSqlServerStorage](/api/Telerik.Reporting.Cache.MsSqlServerStorage) in your application.
+1. In case you want to clean up the storage tables in an existing database, use the button _Clear cache data_.
 
-			The **ReportSourceResolver** and **Storage** configuration settings are required. See the [IReportServiceConfiguration](/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details.
+## Project Setup
 
-			{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=MSSqlReportsControllerImplementation}}
-			{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=MSSqlReportsControllerImplementation}}
+The Reporting REST Service can be set up to use the database storage by using one of the following approaches:
 
-		- Through a configuration file:
+- Setting up the connection when instantiating the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) at runtime.
+- Providing the connection string from the configuration file of the project via the [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
 
-			1. You need to pass a [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) instance to the REST Service:
+Here are samples for both scenarios when targeting `.NET Framework` or `.NET`:
 
-				{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
-				{{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
+### Option 1 - Runtime via the ReportServiceConfiguration
 
-			1. Set the corresponding property values in the REST Service XML configuration file:
+The connection string that the service will use to connect to the database can be provided through code when passing a [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) instance to the Reporting REST Service.
 
-				{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfig.xml region=ReportsControllerConfigSection}}
+The **ReportSourceResolver** and **Storage** configuration settings are required. See the [IReportServiceConfiguration](/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details.
 
-	* .NET 8+
+* .NET Framework 4.6.2+
 
-		- Through code when passing [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) instance to the REST Service.
+	{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=MSSqlReportsControllerImplementation}}
+	{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=MSSqlReportsControllerImplementation}}
 
-			The **ReportSourceResolver** and **Storage** configuration settings are required. See the [IReportServiceConfiguration](/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details.
+* .NET 8+
 
-			{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestConfigImplementation}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestConfigImplementation}}
 
-		- Through a configuration file:
+### Option 2 - Runtime via the Configuration
 
-			1. You need to pass a [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) instance to the REST Service:
+Pass a [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) instance to the Reporting REST Service:
 
-				{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
+* .NET Framework 4.6.2+
 
-			1. Set the corresponding property values in the REST Service JSON configuration file:
+	{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
+	{{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
 
-				{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ReportsControllerConfigSection}}
+* .NET 8+
 
-	>important The properties from the `ConfigSectionReportServiceConfiguration` initialization block would override the values obtained from the configuration file.
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
+
+>important The properties from the `ConfigSectionReportServiceConfiguration` initialization block would override the values obtained from the configuration files below.
+
+### Option 3 - Configuration File
+
+Set the corresponding property values in the REST Service configuration file:
+
+* .NET Framework 4.6.2+
+
+	XML configuration (_web.config_):
+	
+	{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfig.xml region=ReportsControllerConfigSection}}
+
+* .NET 8+
+
+	JSON configuration file (_appsettings.json_):
+	
+	{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ReportsControllerConfigSection}}
 
 > Since the [2025 Q1 (19.0.25.211) release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211), the MSSQL storage relies on `System.Data.SqlClient` to connect to the provided database in .NET Framework applications, and on `Microsoft.Data.SqlClient` in .NET applications. In previous versions, the `System.Data.SqlClient` data provider was used for each target framework.
 

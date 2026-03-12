@@ -89,4 +89,4 @@ Set the corresponding property values in the REST Service configuration file:
 
 ## See Also
 
-- [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
+- [REST Service Storage Overview](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview)

@@ -1,7 +1,7 @@
 ---
 title: Data Scope
 page_title: Data Scope - Web Report Designer User Guide
-description: "Learn how data context works in Telerik Reporting, how it is inherited,and how parent–child data item relationships affect it."
+description: "Learn how data scopes work in Telerik Reporting, how they are inherited, and how parent–child data item relationships affect them."
 slug: data-scope
 tags: report, bind, context, data, scope
 published: True

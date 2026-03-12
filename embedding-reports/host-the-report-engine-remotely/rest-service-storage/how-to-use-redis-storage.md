@@ -36,20 +36,20 @@ For instructions on how to set up and use the Telerik NuGet feed, please check [
 
 ### Using the RedisStorage
 
-To use the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage), for example, in an ASP.NET Core web application, an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) needs to be provided to the **Storage** property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration).
+Provide an instance of the [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) to the **Storage** property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration):
 
-The [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) constructor accepts as a parameter an `StackExchange.Redis.ConnectionMultiplexer` object, which should be reused for the application lifetime:
+The [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) constructor accepts as parameter a `StackExchange.Redis.ConnectionMultiplexer` object, which should be reused for the application lifetime:
 
-```C#
-builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-    new ReportServiceConfiguration
-    {
-        Storage = new RedisStorage(ConnectionMultiplexer.Connect("localhost")),
-        ...
-    });
-```
+* .NET Framework 4.6.2+
 
-In ASP.NET Framework projects, the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) can be provided in the `ReportsController` class that implements [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase).
+	In ASP.NET Framework projects, the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) can be provided in the `ReportsController` class that implements [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase):
+
+	{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=RedisReportsControllerImplementation}}
+	{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=RedisReportsControllerImplementation}}
+
+* .NET 8+
+
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestRedisStorage}}
 
 ## See Also
 

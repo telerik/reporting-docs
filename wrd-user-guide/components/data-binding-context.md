@@ -12,7 +12,7 @@ position: 9
 
 # Data Scope
 
-When you build a report in the Telerik Web Report Designer, every item—like a table, chart, or text box—needs to know which data it can see and display. This is called *data scope* (also known as data context). What data an item can see and display is defined by the item's type and its place in the report hierarchy.
+When you build a report in the Telerik Web Report Designer, every item—like a table, chart, or text box—needs to know which data it can see and display. This is called **data scope** (also known as data context). What data an item can see and display is defined by the item's type and its place in the report hierarchy.
 
 ##  Data Scope Levels
 

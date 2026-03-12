@@ -18,14 +18,14 @@ When you build a report in the Telerik Web Report Designer, every item—like a 
 
 Think of data scope like a set of nested containers—each one holds a smaller slice of data than the one around it, and each data scope sits on a different level:
 
-* Report scope&mdash;The top-level report has its own DataSource and Parameters. The Report item (e.g., “Report1”) defines a top-level scope that includes all rows returned by its data source (after filtering/sorting). Everything inside the report but outside nested data items uses that scope by default. Expressions at this level can use: 
+* Report scope&mdash;The top-level report has its own data source and parameters. The report item (for example, “Report1”) defines the top-level data scope that includes all rows returned by its data source (after filtering and sorting). Everything inside the report, but outside nested data items, uses that scope by default. Expressions at this level can use: 
     * =Fields.* (if the report has a data source)
     * =Parameters.*
     * Aggregates (for exampple, =Sum(Fields.Amount))
 
-* Data item scope (for example, Table, List, Crosstab, Graph)&mdash;Each data item can define its own DataSource and groups (Row/Column groups). Inside the item, =Fields.* refers to the current row/group context of that item. Since Telerik Reporting uses hierarchical data scopes and each data item (Table, List, Group, etc.) creates its own scope, you can use the `Parent` keyword when you're inside a nested item and need access to values from an outer scope (for example,  =Parent.Fields.OrderID).
+* Data item scope (for example, Table, List, Crosstab, Graph)&mdash;Each data item can define its own data source and groups (Row/Column groups). Inside the item, =Fields.* refers to the current row/group context of that item. Since Telerik Reporting uses hierarchical data scopes and each data item (Table, List, Group, etc.) creates its own scope, you can use the `Parent` keyword when you're inside a nested item and need access to values from an outer scope (for example,  =Parent.Fields.OrderID).
 
-* Group scope&mdash;Groups create nested (inner) scopes—Report groups, table/column/row groups, crosstab groups, and detail sections partition the data into smaller sets. Expressions inside a group are evaluated against just that group’s rows. The innermost “detail” is typically a single record. In group headers/footers and detail cells, =Fields.* resolves in the group’s context. Aggregates can target specific scopes by name: =Sum(Fields.Amount, "groupName").
+* Group scope&mdash;Groups create nested (inner) scopes—Report groups, table/column/row groups, crosstab groups, and detail sections partition the data into smaller sets. Expressions inside a group are evaluated only against that group’s rows. The innermost “detail” is typically a single record. In group headers/footers and detail cells, `=Fields.*` resolves in the group’s context. Aggregates can target specific scopes by name: `=Sum(Fields.Amount, "groupName")`.
 
 * SubReport scope&mdash;A SubReport in Telerik Reporting does not inherit its data scope automatically from its parent report or parent data item. A SubReport always has its own data source, defined entirely by its ReportSource. This means that a SubReport is an isolated report that you load inside a parent report, and you control its data by passing parameters or by assigning it an explicit data source.
 The Available Options for passing data to a SubReport are:
@@ -34,13 +34,15 @@ The Available Options for passing data to a SubReport are:
 
     * Pass Data from the Parent&mdash;You can also use a DataObject as a data source for nested data items. Meaning the child item’s entire data source can derive from the parent. The most common scenario is when a parent data row contains a JSON column with child items. A similar approach is demonstrated in [Creating Nested Hierarchy with SubReports]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%})
 
->note **Default scope**: If you don’t specify a scope in an expression, the Reporting engine looks up the nearest ancestor that defines a data scope and evaluates the expression there.
+>note If you don’t specify a data scope in an expression, the **default data scope** is always the data scope of the closest enclosing data item or group.
 
 ## Data Scope in Expressions
 
-* **Field access** and **simple expressions** (like =Fields.Amount) run in the default scope, so inside a detail row it refers to the current record; inside a group footer it refers to the current group instance.
+The data scope directly affects how expressions behave. The same expression can produce different results depending on where it is placed in the report:
 
-* **Aggregates** (like =Sum(Fields.Amount)) aggregate over the current scope unless you explicitly point them elsewhere. That is why =Sum(Fields.Amount) in a group footer returns the group subtotal, while the same in the report footer returns the grand total.
+* **Field access** and **simple expressions** (like `=Fields.Amount`) run in the default scope, so inside a detail row it refers to the current record; inside a group footer it refers to the current group instance.
+
+* **Aggregates** (like `=Sum(Fields.Amount)`) calculate over the current data scope by default. That is why the same `=Sum(Fields.Amount)` expression returns a group subtotal when placed in a group footer, but returns the grand total when placed in the report footer.
 
 The Reporting engine provides the [Exec]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) aggregate function to perform calculations outside the current data or item scope. Unlike typical aggregate functions such as Sum, Avg, or Count, which operate only on the current data scope, Exec allows you to reference another report item’s scope and retrieve its aggregated value.
 This makes Exec extremely useful when you need to display aggregated values in headers, footers, textboxes, or other parts of the report where normal aggregates are not allowed.
@@ -64,45 +66,37 @@ The following example shows how to display Total Sales in a TextBox placed in th
 * **Exec** evaluates the Sum expression as if it were inside the table.
 * You get the correct total even though you are in the header.
 
-## Inheriting Data Context
+## Data Scope Inheritance
 
-When the item does not specify a DataSource, the data context is inherited between report items. Items inside larger items inherit the data of their parent automatically. This is the default behavior for most textboxes, panels, etc. In other words, non-data items looks up the nearest ancestor that defines a data scope and use it.This means you often don’t have to manually connect each item to a database. The designer passes data downward for you. Every report starts with a top‑level data source. When the report runs, this data becomes the parent data context.
-If you add items inside other items (for example, a table inside a report section), each nested item automatically receives the data of its parent. This behavior is defined as the ability to reuse the data from the parent, instead of creating a new data source.
+By default, when a report item does not have its own data source, it automatically uses the data context of its parent. That's why you do not need to connect every item to a data source manually—the Web Report Designer passes data downward through the report's items and data scope levels for you.
+
+Every report starts with a top-level data source. Items placed directly in the report use that data. Items nested inside other items (for example, a text box inside a table cell) inherit the data context of the item they are placed in. This lets you reuse the parent's data without creating a new data source for each child item.
 
 <img style="border: 1px solid gray;" src="images/inherited-data-context.png" /> 
 
->note Data context does not flow “sideways”&mdash;Items next to each other (e.g., two sibling panels) do not share context unless they share the same parent data item.</br>
+>note The data scope is inherited only downward, not sideways. Two report items placed next to each other (siblings) do not share each other's data scope. Each item only inherits from its own parent.
 
-## Own Data Context
+## Independent Data Scope
 
-When a data item sets its own DataSource, this creates an independent scope for that item. The item’s children inherit its data context.
-Typical patterns:
+When a data item has its own data source, it creates an independent data scope. Its children inherit that scope, not the parent report's data scope. This means the item's data is completely unaffected by the parent's filtering or grouping, making it easy to reuse tables, graphs, and SubReports across different parent reports.
 
-1. Master-Detail (Parent-Child)
-    * Parent Table uses **DataSource A**
-    * Inside the detail row, a child Table/List/Graph sets its own **DataSource B** that filters by parent key:
-        * Pass parent fields to DataSource parameters: e.g., =ReportItem.DataObject.CustomerId or =Fields.CustomerId
-        * Result: the child item shows only rows linked to the current parent row.
+Two common patterns for using an independent data context are:
 
-1. SubReport
-    * SubReport is designed to be independent. You pass parameters from the parent (e.g., OrderId) and the subreport uses its own data source filtered by that parameter.
-    * This is ideal if the subreport is reused in multiple parent reports.
+* Master-Detail (Parent-Child)&mdash;A parent Table uses **DataSource A**. Inside the detail row, a child Table, List, or Graph sets its own **DataSource B**, filtered by a key from the parent row. To pass the parent row's value to the child data source, use `=ReportItem.DataObject.CustomerId` or `=Fields.CustomerId` as a data source parameter. The child item then shows only the rows that match the current parent row.
+
+* SubReport&mdash;A SubReport is self-contained by design. You pass a parameter from the parent (for example, an `OrderId`) and the SubReport uses its own data source filtered by that parameter. This pattern is ideal when the same SubReport is reused across multiple parent reports.
 
 >note See the [Creating Master-Detail Reports]({%slug  web-report-designer-user-guide-creating-master-detail-report%}) tutorial.
 
-By using own DataSource the child item’s data is unaffected by the parent’s filtering/grouping. Thus, SubReports and self-contained tables/graphs can be dropped into other reports.
-
 <img style="border: 1px solid gray;" src="images/own-data-context.png" /> 
 
-### Example of Data Scope Inheritance
+### Data Scope Inheritance: A Quick Example
 
-This tutorial builds a sample report to demonstrate scope inheritance. 
+By following the steps below, you can build a sample report that will help you understand how the data scope inheritance works.
 
-You will need a working data source (SQL, CSV, etc.) with at least:
-* a numeric field (e.g., Amount)
-* a grouping field (e.g., Category)
+1. Create a new report in the Web Report Designer.
 
-We will use a CSVDataSource in this tutorial with the following records: 
+1. Add a CSV Data Source to the report with the following data:
 
 ````CSV
 Product,Category,Amount
@@ -112,17 +106,25 @@ Tablet,Electronics,400
 Headphones,Accessories,150
 Monitor,Electronics,300
 ````
+If you explicitly set the DataSource property of  your report, it will define a `Report-level` data scope, containing all rows returned. It would define the outermost scope. However, for this example, we will leave the Report.DataSource empty.
 
-1. Create a new report in the Web Report Designer.
-
-1. Add a CSV Data Source to the report with the above data. If you explicitly set the DataSource property of  your report, it will define a `Report-level` data scope, containing all rows returned. It would define the outermost scope. However, for this example, we will leave the Report.DataSource empty.
-
-1. Add a Table: From the Components pane drag a Table onto the design surface and bind it to your data source. A Table is a data item, so it switches scope to its own data source (`Data item-level` scope). Everything inside its detail section is evaluated per row.
+1. Add a Table: from the Components pane, drag a Table onto the design surface and bind it to your data source. A Table is a data item, so it switches scope to its own data source (data item-level scope). Everything inside its detail section is evaluated per row.
 
 1. Add fields to columns: 
-    * Column 1: =Fields.Product
-    * Column 2: =Fields.Category
-    * Column 3: =Fields.Amount
+    * Column 1: 
+        ````
+        =Fields.Product
+        ````
+
+    * Column 2: 
+        ````
+        =Fields.Category
+        ````
+
+    * Column 3: 
+        ````
+        =Fields.Amount
+        ````
 
     At this point Fields.Amount in detail row = value from the current record and Default scope = Table row (inner-most detail scope).
 
@@ -132,12 +134,12 @@ Monitor,Electronics,300
 
     <img style="border: 1px solid gray;" src="images/preview-table-without-groups.png" /> 
 
-1. Add a Row Group by **Category** using the [Table Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-context-menu%})
+1. Add a Row Group by **Category** using the [Table Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-context-menu%}).
 
     <img style="border: 1px solid gray;" src="images/table-context-menu.png" />  
     <img style="border: 1px solid gray;" src="images/table-add-group.png" /> 
 
-1. Save the group. This creates a new `Group-level` scope (subset of rows that share the same Category). Here, default scope = current group instance, so all fields refer to that group’s first record unless aggregated.
+1. Save the group. This creates a new `Group-level` scope (subset of rows that share the same Category). Here, the default scope is the current group instance, so all fields refer to that group’s first record unless aggregated.
 
     <img style="border: 1px solid gray;" src="images/table-group-scope.png" />  
 
@@ -149,7 +151,7 @@ Monitor,Electronics,300
 
     <img style="border: 1px solid gray;" src="images/group-footer-sum.png" />  
 
-    Sum() automatically aggregates over the group scope, not the entire dataset. This is because the nearest ancestor defining a data scope is the group. For **Accessories** we have *Subtotal Amount = 150* and for **Electronics** the *SubTotal Amount = 2700*:
+    `Sum()` automatically aggregates over the group scope, not the entire dataset. This is because the nearest ancestor defining a data scope is the group. For **Accessories**, *Subtotal Amount is 150* and for **Electronics**, the *SubTotal Amount is 2700*:
 
     <img style="border: 1px solid gray;" src="images/preview-group-footer-sum.png" />   
 

@@ -12,7 +12,7 @@ position: 9
 
 # Data Scope
 
-When you build a report in the Telerik Web Report Designer, every item—like a table, chart, or text box—needs to know which data it can see and display. This is called **data scope** (also known as data context). What data an item can see and display is defined by the item's type and its place in the report hierarchy.
+When you build a report in the Telerik Web Report Designer, every item (like a table, chart, or text box) needs to know which data it can see and display. This is called **data scope** (also known as data context). What data an item can see and display is defined by the item's type and its place in the report hierarchy.
 
 ##  Data Scope Levels
 
@@ -21,7 +21,7 @@ Think of data scope like a set of nested containers—each one holds a smaller s
 * Report scope&mdash;The top-level report has its own data source and parameters. The report item (for example, “Report1”) defines the top-level data scope that includes all rows returned by its data source (after filtering and sorting). Everything inside the report, but outside nested data items, uses that scope by default. Expressions at this level can use: 
     * =Fields.* (if the report has a data source)
     * =Parameters.*
-    * Aggregates (for exampple, =Sum(Fields.Amount))
+    * Aggregates (for example, `=Sum(Fields.Amount)`)
 
 * Data item scope (for example, Table, List, Crosstab, Graph)&mdash;Each data item can define its own data source and groups (Row/Column groups). Inside the item, =Fields.* refers to the current row/group context of that item. Since Telerik Reporting uses hierarchical data scopes and each data item (Table, List, Group, etc.) creates its own scope, you can use the `Parent` keyword when you're inside a nested item and need access to values from an outer scope (for example,  =Parent.Fields.OrderID).
 
@@ -30,9 +30,9 @@ Think of data scope like a set of nested containers—each one holds a smaller s
 * SubReport scope&mdash;A SubReport in Telerik Reporting does not inherit its data scope automatically from its parent report or parent data item. A SubReport always has its own data source, defined entirely by its ReportSource. This means that a SubReport is an isolated report that you load inside a parent report, and you control its data by passing parameters or by assigning it an explicit data source.
 The Available Options for passing data to a SubReport are:
 
-    * Own DataSource&mdash;When the SubReport refers to a separate report (.trdp file) that has its own DataSource and you pass parameters and let the SubReport query its own DataSource. This is the most common method. A similar approach is demonstrated in [Creating Master-Detail Reports]({%slug  web-report-designer-user-guide-creating-master-detail-report%}) where the master report (CategoriesProducts.trdp) contains a table with Northwind Categories data. The SubReport (ProductsReport.trdp) displays Northwind Products records filtered by the respective CategoryID.
+    * Own DataSource&mdash;When the SubReport refers to a separate report (.trdp file) that has its own data source and you pass parameters and let the SubReport query its own data. This is the most common method. A similar approach is demonstrated in [Creating Master-Detail Reports]({%slug  web-report-designer-user-guide-creating-master-detail-report%}) where the master report contains a table with Categories data. The SubReport displays Products records filtered by the respective CategoryID.
 
-    * Pass Data from the Parent&mdash;You can also use a DataObject as a data source for nested data items. Meaning the child item’s entire data source can derive from the parent. The most common scenario is when a parent data row contains a JSON column with child items. A similar approach is demonstrated in [Creating Nested Hierarchy with SubReports]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%})
+    * Pass Data from the Parent&mdash;You can also use a DataObject as a data source for nested data items. Meaning the child item’s entire data source can derive from the parent. The most common scenario is when a parent data row contains a JSON column with child items. A similar approach is demonstrated in [Creating Nested Hierarchy with SubReports]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%}).
 
 >note If you don’t specify a data scope in an expression, the **default data scope** is always the data scope of the closest enclosing data item or group.
 
@@ -106,7 +106,7 @@ Tablet,Electronics,400
 Headphones,Accessories,150
 Monitor,Electronics,300
 ````
-If you explicitly set the DataSource property of  your report, it will define a `Report-level` data scope, containing all rows returned. It would define the outermost scope. However, for this example, we will leave the Report.DataSource empty.
+If you explicitly set the DataSource property of  your report, it will define a report-level data scope, containing all rows. It would define the outermost scope. However, for this example, we will leave the Report.DataSource empty.
 
 1. Add a Table: from the Components pane, drag a Table onto the design surface and bind it to your data source. A Table is a data item, so it switches scope to its own data source (data item-level scope). Everything inside its detail section is evaluated per row.
 
@@ -126,7 +126,7 @@ If you explicitly set the DataSource property of  your report, it will define a 
         =Fields.Amount
         ````
 
-    At this point Fields.Amount in detail row = value from the current record and Default scope = Table row (inner-most detail scope).
+    At this point Fields.Amount in detail row represents the value from the current record and the default scope is the Table row (inner-most detail scope).
 
     <img style="border: 1px solid gray;" src="images/bound-table.png" />  
 
@@ -139,7 +139,7 @@ If you explicitly set the DataSource property of  your report, it will define a 
     <img style="border: 1px solid gray;" src="images/table-context-menu.png" />  
     <img style="border: 1px solid gray;" src="images/table-add-group.png" /> 
 
-1. Save the group. This creates a new `Group-level` scope (subset of rows that share the same Category). Here, the default scope is the current group instance, so all fields refer to that group’s first record unless aggregated.
+1. Save the group. This creates a new group-level scope (subset of rows that share the same Category). Here, the default scope is the current group instance, so all fields refer to that group’s first record unless aggregated.
 
     <img style="border: 1px solid gray;" src="images/table-group-scope.png" />  
 

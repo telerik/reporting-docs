@@ -3,7 +3,7 @@ title: Redis Storage
 page_title: Configuring a Redis Storage
 description: "Learn how to configure and use a Redis Storage for the Telerik Reporting REST Service in this step-by-step Tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage
-tags: how, use,redis, storage, tutorial
+tags: how, use, redis, storage, tutorial
 published: True
 reportingArea: RESTService, RESTServiceCore
 position: 2

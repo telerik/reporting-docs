@@ -3,7 +3,7 @@ title: Implement Send Mail Message
 page_title: Implementing the Send Mail Message Tutorial
 description: "Learn how to implement the Send Mail Message in Telerik Reporting Report Viewers that work with REST Service."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message
-tags: implement,send,mail,message
+tags: implement, send, mail, message
 published: True
 position: 7
 previous_url: /telerik-reporting-rest-implement-send-mail-message,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message
@@ -25,43 +25,11 @@ When the Reporting REST Service has been implemented using controllers, [overrid
 
 When the Reporting REST Service has been implemented using [Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api), first implement a method that sends the [MailMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.mailmessage) object via the [SmtpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient):
 
-```C#
-public static HttpStatusCode MyMailSender(MailMessage message)
-{
-    try
-    {
-        using (var smtpClient = new SmtpClient("tests.com", 26))
-        {
-            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtpClient.Credentials = new NetworkCredential("user", "pass");
-            smtpClient.EnableSsl = true;
-            smtpClient.Send(message);
-        }
-        return HttpStatusCode.OK;
-    }
-    catch
-    {
-        return HttpStatusCode.InternalServerError;
-    }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=Method_MailMessageSender}}
 
-Then, this method can be passed alongside the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) of the Reporting REST Service when adding it in `Program.cs`:
+Then, this method can be passed alongside the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) of the Reporting REST Service when adding it in the starting point of the application, for example, the `Program.cs` file:
 
-```C#
-var mailContext = new MailContext(MyMailSender);
-var reportServiceConfiguration = new ReportServiceConfiguration
-{
-    ReportingEngineConfiguration = builder.Configuration,
-    HostAppId = "Reporting",
-    Storage = new FileStorage(),
-    ReportSourceResolver = new TypeReportSourceResolver()
-                                .AddFallbackResolver(
-                                    new UriReportSourceResolver("C:\\Reports"))
-};
-
-builder.Services.AddRazorPages().AddTelerikReporting(reportServiceConfiguration, mailContext);
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportServiceConfiguration_MailMessageSender}}
 
 ## See Also
 

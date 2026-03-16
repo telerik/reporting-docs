@@ -1,9 +1,9 @@
 ---
 title: Hosting in .NET with Minimal API
 page_title: Hosting the Reporting REST Service in ASP.NET Core with Minimal API
-description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 8 and above with Minimal API in this step by step tutorial."
+description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 8 and above with Minimal API in this step-by-step tutorial."
 slug: how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api
-tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements
+tags: host, reports, service, asp.net, core, minimal
 tag: updated
 published: True
 reportingArea: RESTServiceCore
@@ -13,7 +13,7 @@ previous_url: /telerik-reporting-rest-service-net6-minimal-api,/embedding-report
 
 # Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API
 
-This article guides you how to host a Reporting REST Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET {{site.mindotnetversion}}+ Web Application with Minimal APIs.
+This article guides you on how to host a Reporting REST Service to expose the Reports Generation Engine to an ASP.NET Core in .NET {{site.mindotnetversion}}+ Web Application with Minimal APIs.
 
 Check the [Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview) article for general details on the approach.
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step.
@@ -25,7 +25,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Using the REST Service Project Template
 
-In Visual Studio open the **Add New Project** dialog and select _Telerik Reporting REST Service_ project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
+In Visual Studio, open the **Add New Project** dialog and select the _Telerik Reporting REST Service_ project template. After clicking `Create`, a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
@@ -42,8 +42,8 @@ First, you need to create a new ASP.NET Core project:
 1. Open **Visual Studio 2022**.
 1. From the **File** menu, select **New** > **Project**.
 1. In the **Create a new project** dialog select **ASP.NET Core Web App** project template and click **Next**.
-1. In the **Configure your new project** dialog choose a name and location for the project and click **Next**.
-1. In the **Additional information** dialog select from the drop down **.NET {{site.mindotnetversion}}.0 (Long-term support)** or a higher .NET version. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on **Create**.
+1. In the **Configure your new project** dialog, choose a name and location for the project and click **Next**.
+1. In the **Additional information** dialog select from the drop down **.NET {{site.mindotnetversion}}.0 (Long-term support)** or a higher .NET version. If you configure the project for HTTPS, make sure to have a proper certificate assigned. Click on **Create**.
 
 ### Add Report Definitions
 
@@ -51,22 +51,22 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Find the sample reports in _{Telerik Reporting installation path}\Report Designer\Examples_.
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
-1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
+1. Later in the tutorial, we will make sure that the ReportsController can resolve the definitions for the requested reports from this project folder.
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
 
 ### Add the Required Dependencies
 
 This guide applies the recommended NuGet package references approach to add the dependencies:
 
 1. Reference the **Telerik.Reporting.Services.AspNetCore** package.
-1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the **Telerik.Reporting.OpenXmlRendering** NuGet package.
+1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX, and PPTX) as export options, reference the **Telerik.Reporting.OpenXmlRendering** NuGet package.
 
-   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management.
+   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project, bringing easier dependency management.
 
-   Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
+   Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of the Telerik Reporting installation directory. However, this would require manually adding all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
-   > note You need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the [GDI+ API](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) which is available on the Windows OS. On Linux and macOS we use the [SkiaSharp](https://github.com/mono/SkiaSharp) 2D Graphics Library based on Google's [Skia](https://skia.org/) Graphics Library.
+   > note You need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the [GDI+ API](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start), which is available on the Windows OS. On Linux and macOS, we use the [SkiaSharp](https://github.com/mono/SkiaSharp) 2D Graphics Library based on Google's [Skia](https://skia.org/) Graphics Library.
 
 ### Setup the Program.cs file as a starting point of the Reporting REST Service project with Minimal APIs
 
@@ -76,62 +76,31 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver):
 
-   ```C#
-   var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
-   builder.Services.AddRazorPages().AddTelerikReporting("ReportingNet", reportsPath);
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_AddTelerikReporting}}
 
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method:
 
-   ```C#
-   app.UseTelerikReporting();
-   app.UseRouting();
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_UseTelerikReporting}}
 
 ### Adding Connection Strings to the Configuration
 
-The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) for this purpose.
+The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility for the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) for this purpose.
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/) file named by default `appSettings.json`. The default `ReportingEngineConfiguration` will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-All Reporting-related configurations should be placed in the JSON configuraion file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
+All Reporting-related configurations should be placed in the JSON configuration file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
-```JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ConnectionStrings_Variant_1}}
 
 The above type of connection string lacks information about the data provider and will use [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient) as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-```JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\RC_Config.json region=ConnectionStrings_Variant_2}}
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.
 
 The last supported type of `ConnectionStrings` configuration uses an array to provide information about each connection string:
 
-```JSON
-{
-	"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-}
-```
+{{source=CodeSnippets\Blazor\Docs\RC_Config_MultiConnectionStrings.json region=ConnectionStrings_Variant_3}}
 
 ### Test the Service Implementation
 
@@ -146,23 +115,11 @@ You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.
 
 Add the following service to the **Program.cs** file to add a new CORS policy for the REST Service:
 
-```C#
-builder.Services.AddCors(corsOption => corsOption.AddPolicy(
-	"ReportingRestPolicy",
-	corsBuilder =>
-	{
-		corsBuilder.AllowAnyOrigin()
-				   .AllowAnyMethod()
-			       .AllowAnyHeader();
-	}
-));
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddCors}}
 
 Activate the above policy for the application by adding the code below in the application configuration part of the **Program.cs** file:
 
-```C#
-app.UseCors("ReportingRestPolicy");
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceUseCors}}
 
 ## Demo project
 

@@ -76,17 +76,11 @@ The [`ConfigureServices`](https://learn.microsoft.com/en-us/dotnet/api/microsoft
 
 1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver):
 
-   ```C#
-   var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
-   services.AddTelerikReporting("ReportingNet", reportsPath);
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_AddTelerikReporting}}
 
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method:
 
-   ```C#
-   app.UseTelerikReporting();
-   app.UseRouting();
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_UseTelerikReporting}}
 
 ### Adding Connection Strings to the Configuration
 
@@ -96,43 +90,17 @@ The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/e
 
 All Reporting-related configurations should be placed in the JSON configuraion file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
-```JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ConnectionStrings_Variant_1}}
 
 The above type of connection string lacks information about the data provider and will use [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient) as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-```JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\RC_Config.json region=ConnectionStrings_Variant_2}}
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.
 
 The last supported type of `ConnectionStrings` configuration uses an array to provide information about each connection string:
 
-```JSON
-{
-	//...
-	"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-}
-```
+{{source=CodeSnippets\Blazor\Docs\RC_Config_MultiConnectionStrings.json region=ConnectionStrings_Variant_3}}
 
 ### Test the service implementation
 
@@ -147,23 +115,11 @@ You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.
 
 Add the following code to the _ConfigureServices_ method of the _Startup.cs_ file to add a new CORS policy for the REST Service:
 
-```C#
-services.AddCors(corsOption => corsOption.AddPolicy(
-	"ReportingRestPolicy",
-	corsBuilder =>
-	{
-		corsBuilder.AllowAnyOrigin()
-			.AllowAnyMethod()
-			.AllowAnyHeader();
-	}
-));
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddCors}}
 
 Activate the above policy for the application by adding the next code in the `Configure` method of the `Startup.cs` file:
 
-```C#
-app.UseCors("ReportingRestPolicy");
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceUseCors}}
 
 ## See Also
 

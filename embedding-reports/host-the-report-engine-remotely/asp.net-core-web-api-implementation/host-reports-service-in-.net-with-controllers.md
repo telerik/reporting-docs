@@ -74,36 +74,15 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 1. Make sure the application is configured for WebAPI controllers using the [AddControllers()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addcontrollers) extension method:
 
-   ```C#
-   builder.Services.AddControllers();
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddControllers}}
 
 1. Add the dedicated [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object needed from the Reports Service in the dependency container. Note how the report source resolver will target the `Reports` folder we created earlier.
 
-   ```C#
-   // Configure dependencies for ReportsController.
-   builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-   	new ReportServiceConfiguration
-   	{
-   		// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
-   		ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
-   		// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
-   		//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-   		HostAppId = "ReportingNet8",
-   		Storage = new FileStorage(),
-   		ReportSourceResolver = new UriReportSourceResolver(System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
-   	});
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestWithCustomConfig}}
 
 1. Make sure the endpoints are configured for API controllers by adding the following line in the lambda expression argument after the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) call:
 
-   ```C#
-   app.UseEndpoints(endpoints =>
-   {
-   	endpoints.MapControllers();
-   	//...
-   });
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingRestServiceAppUseEndpoints}}
 
 ### Add Configuration Settings to the Program.cs file (Optional)
 
@@ -111,9 +90,7 @@ The report generation engine can retrieve SQL Connection Strings and specific Re
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
-```C#
-ReportingEngineConfiguration = sp.GetService<IConfiguration>();
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingEngineConfiguration}}
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
@@ -121,57 +98,21 @@ To activate JSON file configuration with a different name, for example, `reporti
 
 In this guide we will create a helper method loading the json-formatted setting:
 
-```C#
-static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
-{
-	// If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
-	var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
-	return new ConfigurationBuilder()
-		.AddJsonFile(reportingConfigFileName, true)
-		.Build();
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ResolveSpecificReportingConfiguration}}
 
 Finally, all configurations should be placed in the JSON configuraion file (add one in the project root if such does not exist). For example, **ConnectionStrings** setting should be configured in JSON-based format like this:
 
-```JSON
-{
-	//...
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ReportsControllerConfig.json region=ConnectionStrings_Variant_1}}
 
 The above type of connection string lacks information about the data provider and will use _System.Data.SqlClient_ as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-```JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\RC_Config.json region=ConnectionStrings_Variant_2}}
 
 The two types of connection string notations specified above can coexist in a single `ConnectionStrings` section.
 
 The last supported type of **ConnectionStrings** configuration uses an array to provide information about each connection string:
 
-```JSON
-{
-	//...
-	"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-}
-```
+{{source=CodeSnippets\Blazor\Docs\RC_Config_MultiConnectionStrings.json region=ConnectionStrings_Variant_3}}
 
 ### Setting up the Reporting REST service
 
@@ -179,39 +120,7 @@ The last supported type of **ConnectionStrings** configuration uses an array to 
 1. Implement a Reports controller. Right-click on the `Controllers` folder and add a new item: **Add** > **New item** > **API Controller - Empty** item. Name it `ReportsController`. This will be our Telerik Reporting REST service in the project.
 1. Inherit the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like:
 
-   ```C#
-   namespace TopLevelStatements.Controllers
-   {
-   	using System.Net;
-   	using System.Net.Mail;
-   	using Microsoft.AspNetCore.Mvc;
-   	using Telerik.Reporting.Services;
-   	using Telerik.Reporting.Services.AspNetCore;
-
-   	[Route("api/[controller]")]
-   	[ApiController]
-   	public class ReportsController : ReportsControllerBase
-   	{
-   		public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-   		: base(reportServiceConfiguration)
-   		{
-   		}
-
-   		protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
-   		{
-   			throw new System.NotImplementedException("This method should be implemented in order to send mail messages");
-
-   			// using (var smtpClient = new SmtpClient("smtp01.mycompany.com", 25))
-   			// {
-   			//     smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-   			//     smtpClient.EnableSsl = false;
-   			//     smtpClient.Send(mailMessage);
-   			// }
-   			// return HttpStatusCode.OK;
-   		}
-   	}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs}}
 
 ### Test the service implementation
 
@@ -226,23 +135,11 @@ You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.
 
 Add the following service to the _Program.cs_ file to add a new CORS policy for the REST Service:
 
-```C#
-builder.Services.AddCors(corsOption => corsOption.AddPolicy(
-	"ReportingRestPolicy",
-	corsBuilder =>
-	{
-		corsBuilder.AllowAnyOrigin()
-			.AllowAnyMethod()
-			.AllowAnyHeader();
-	}
-));
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddCors}}
 
 Activate the above policy for the application by adding the code below in the application configuration part of the `Program.cs` file:
 
-```C#
-app.UseCors("ReportingRestPolicy");
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceUseCors}}
 
 ## Demo project
 

@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization of the HTML5 ReportViewer Explained
-description: "Learn how to Localize the HTML5 ReportViewer for use with multiple languages in Telerik Reporting."
+description: "Learn how to localize the HTML5-based Report Viewers for use with multiple languages in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization
 tags: localization
 published: True
@@ -28,7 +28,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
    {{source=Source\Code\Telerik.ReportViewer.Web\jquery-viewer\src\sr.js}}
 
-2. Wrap the code from the following step in an **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)** (Immediately Invoked Function Expression), which will help avoid polluting the global namespace with the intermediate `sr` variable:
+2. Wrap the code from the previous step in an **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)** (Immediately Invoked Function Expression), which will help avoid polluting the global namespace with the intermediate `sr` variable:
 
    ```JavaScript
    (function () {
@@ -55,7 +55,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
    <script src="/api/reports/resources/js/telerikReportViewer"></script>
    ```
 
-> To modify the HTML5 Viewer's HTML template that contains the toolbar, preview, parameters and document map areas, and so on, you will need to create a custom template, which you can provide to the viewer through its `templateUrl` property.
+> To modify the HTML5 Viewer's HTML template that contains the toolbar, preview, parameters, and document map areas, and so on, you will need to create a custom template, which you can provide to the viewer through its `templateUrl` property.
 > <br/>  
 > For more details on this, please check [Providing Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates%}).
 

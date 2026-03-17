@@ -109,7 +109,7 @@ Imagine a main report and a subreport referenced inside it. When you use a Custo
 
 ## How to assign a data source dynamically to a report and a subreport referenced in it
 
-Let's consider a common scenario, where the main report definition XML would be fetched from a database. It contains a SubReport item with XML definition also held in the database. In addition, we need to set the data source run-time for both the main report and its subreport, and for a table in the subreport.
+Let's consider a common scenario, where the main report definition XML would be fetched from a database. It contains a SubReport item with XML definition also held in the database. In addition, we need to set the data source at run time for both the main report and its subreport, and for a table in the subreport.
 
 How would the Reporting engine resolve the subreport in this case? Usually, the subreport would be referenced in a SubReport item as a server-side ReportSource, for example, a TRDP report with a relative path. This would represent the most common scenario when the reports were designed with the Standalone or Web Report designer. In this case, the Reporting engine will try to resolve the subreport's UriReportSource in the context of the application.
 

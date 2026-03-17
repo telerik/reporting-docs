@@ -40,6 +40,13 @@ Use the `TelerikLicensingVerbosity` configuration in your project file to enable
 </Project>
 ```
 
+Here are the possible values for `TelerikLicensingVerbosity`:
+* `quiet` / `q` - the lowest verbosity level;
+* `verbose` / `v` - the normal/middle verbosity level;
+* `diagnostics` / `diagnostic` / `diag` / `d` - the highest verbosity level;
+
+The default value, when not explicitly set, generates logs with verbosity between 'quiet' and 'verbose'.
+
 ### Runtime Diagnostics
 
 Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that does runtime diagnostics.

@@ -329,6 +329,7 @@ meta:
   embedding-reports/host-the-report-engine-remotely/servicestack-implementation:
     position: 12
     title: "ServiceStack Implementation"
+    hidden: true
   embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver:
     position: 13
     title: "REST Service Report Source Resolver"

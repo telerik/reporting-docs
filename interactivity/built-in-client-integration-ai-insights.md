@@ -29,8 +29,8 @@ To follow the steps from this tutorial, you must have:
   - [Ollama](https://docs.ollama.com/quickstart)
 
 > tip You can also connect to LLM providers that are not supported out of the box. 
-> </br> To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. 
-> </br> For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
+> <br /> To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. 
+> <br /> For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
 
 ## Using AI-Powered Insights with a REST service
 
@@ -43,7 +43,7 @@ To enable the AI-powered insights, follow these steps:
    - `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`&mdash;for Ollama
 
    > These packages depend on other NuGet packages that are currently in prerelease versions. .NET Framework projects using the `packages.config` format cannot automatically resolve prerelease dependencies, which may cause installation errors. 
-   > </br> To resolve this, first manually install the required prerelease packages using the NuGet Package Manager UI with the ["Include prerelease" option enabled](https://learn.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages), then install the Telerik Reporting AI package.
+   > <br /> To resolve this, first manually install the required prerelease packages using the NuGet Package Manager UI with the ["Include prerelease" option enabled](https://learn.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages), then install the Telerik Reporting AI package.
 
 1. Add the [AIClient element]({%slug telerikreporting/aiclient-element%}) to the report engine configuration in your application's configuration file. 
 
@@ -96,5 +96,5 @@ In this case, the `friendlyName` attribute identifies the LLM provider to the re
 
 - [AI-Powered Insights Overview](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights)
 - [Enable AI-Powered Insights with Custom AI Client](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client)
-- [Customizing AI-Powered Insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights:)
+- [Customizing AI-Powered Insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights)
 - [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

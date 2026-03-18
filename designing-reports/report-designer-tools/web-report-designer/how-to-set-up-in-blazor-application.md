@@ -58,10 +58,7 @@ Alternatively, instead of using the item template, the Designer REST service and
 1. Make sure the endpoints configuration inside the **Program.cs** file is configured for API controllers by adding the following line in the lambda expression argument:
 
    ```C#
-   app.UseEndpoints(endpoints =>
-   {
-   	endpoints.MapControllers();
-   });
+   app.MapControllers();
    ```
 
 1. If not already present, add the following line in the **Program.cs** to ensure that the application can serve static files:

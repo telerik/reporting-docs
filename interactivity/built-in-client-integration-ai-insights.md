@@ -28,7 +28,9 @@ To follow the steps from this tutorial, you must have:
   - [OpenAI](https://platform.openai.com/docs/models)
   - [Ollama](https://docs.ollama.com/quickstart)
 
-> tip You can also connect to LLM providers that are not supported out of the box. To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
+> tip You can also connect to LLM providers that are not supported out of the box. 
+> <br /> To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. 
+> <br /> For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
 
 ## Using AI-Powered Insights with a REST service
 
@@ -40,42 +42,46 @@ To enable the AI-powered insights, follow these steps:
    - `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI`&mdash;for OpenAI
    - `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`&mdash;for Ollama
 
-   > These packages depend on other NuGet packages that are currently in prerelease versions. .NET Framework projects using the `packages.config` format cannot automatically resolve prerelease dependencies, which may cause installation errors. To resolve this, first manually install the required prerelease packages using the NuGet Package Manager UI with the ["Include prerelease" option enabled](https://learn.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages), then install the Telerik Reporting AI package.
+   > These packages depend on other NuGet packages that are currently in prerelease versions. .NET Framework projects using the `packages.config` format cannot automatically resolve prerelease dependencies, which may cause installation errors. 
+   > <br /> To resolve this, first manually install the required prerelease packages using the NuGet Package Manager UI with the ["Include prerelease" option enabled](https://learn.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages), then install the Telerik Reporting AI package.
 
-1. Add the [AIClient element]({%slug telerikreporting/aiclient-element%}) to the report engine configuration in your application's configuration file. This element allows you to specify the AI model, endpoint, and authentication credentials. The following example demonstrates a basic Azure OpenAI configuration:
+1. Add the [AIClient element]({%slug telerikreporting/aiclient-element%}) to the report engine configuration in your application's configuration file. 
 
-```JSON
-{
-    "telerikReporting": {
-        "AIClient": {
-            "friendlyName": "MicrosoftExtensionsAzureOpenAI",
-            "model": "gpt-4o-mini",
-            "endpoint": "https://ai-explorations.openai.azure.com/",
-            "credential": "YOUR_API_KEY"
-        }
-    }
-}
-```
+    This element allows you to specify the AI model, endpoint, and authentication credentials. 
+    
+    The following example demonstrates a basic Azure OpenAI configuration:
 
-```XML
-<configuration>
-    <configSections>
-        <section
-            name="Telerik.Reporting"
-            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-            allowLocation="true"
-            allowDefinition="Everywhere"/>
-    </configSections>
-    <Telerik.Reporting>
-        <AIClient
-            friendlyName="MicrosoftExtensionsAzureOpenAI"
-            model="gpt-4o-mini"
-            endpoint="https://ai-explorations.openai.azure.com/"
-            credential="YOUR_API_KEY">
-        </AIClient>
-    </Telerik.Reporting>
-</configuration>
-```
+   ```JSON
+   {
+       "telerikReporting": {
+           "AIClient": {
+               "friendlyName": "MicrosoftExtensionsAzureOpenAI",
+               "model": "gpt-4o-mini",
+               "endpoint": "https://ai-explorations.openai.azure.com/",
+               "credential": "YOUR_API_KEY"
+           }
+       }
+   }
+   ```
+   ```XML
+   <configuration>
+       <configSections>
+           <section
+               name="Telerik.Reporting"
+               type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+               allowLocation="true"
+               allowDefinition="Everywhere"/>
+       </configSections>
+       <Telerik.Reporting>
+           <AIClient
+               friendlyName="MicrosoftExtensionsAzureOpenAI"
+               model="gpt-4o-mini"
+               endpoint="https://ai-explorations.openai.azure.com/"
+               credential="YOUR_API_KEY">
+           </AIClient>
+       </Telerik.Reporting>
+   </configuration>
+   ```
 
 > tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
 
@@ -88,7 +94,7 @@ In this case, the `friendlyName` attribute identifies the LLM provider to the re
 
 ## See Also
 
-- [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-- [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
-- [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
+- [AI-Powered Insights Overview](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights)
+- [Enable AI-Powered Insights with Custom AI Client](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client)
+- [Customizing AI-Powered Insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights)
 - [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

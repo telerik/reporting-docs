@@ -10,21 +10,9 @@ position: 3
 reportingArea: General
 ---
 
-<style>
-	code {
-		font-size: 1rem @important;
-		font-weight: 700 !important;
-	}
-	
-	th {
-		font-weight: 700 !important;
-		font-size: large !important;
-	}
-</style>
-
 # AI Prompt Library
 
-The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant]({%slug ai-coding-assistant%}). When you run them in the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
+The prompts provided here are intended and optimized for use with Telerik Reporting [AI Coding Assistant](slug:ai-coding-assistant). When you run them in the [Telerik Reporting MCP Server](slug:ai-mcp-server), these prompts will help you kick-start your app development, speed up the component configuration process, and troubleshoot your code.
 
 You can use the provided prompts as they are or modify them to fit your use case. For consistency and accurate handling, all prompts must be prefixed with the required identifier(`#telerik-reporting-assistant `).
 
@@ -45,466 +33,332 @@ Quick Start Guide:
 
 ## Report Viewer Prompts
 
-#### Blazor Report Viewers
+### Blazor Report Viewers
 
-<table>
-	<tr>
-		<th>Blazor Report Viewer</th>
-		<th>Native Blazor Report Viewer</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">Blazor Report Viewer</p>
+<p style="text-align: center;">Native Blazor Report Viewer</p>
+
+```prompt
 #telerik-reporting-assistant How to connect the Blazor Report Viewer to a Telerik Report Server?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the displayed report on a button click in the Native Blazor Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to pass a bearer token through the Blazor Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the culture of the rendered report in the Native Blazor Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to show ComboBox editors for the report parameters in the Blazor Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the date format in the displayed report in the Native Blazor Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the displayed report on a button click in the Blazor Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to connect the Native Blazor Report Viewer to a Telerik Report Server?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to move the parameters area inside the Blazor Report Viewer to be on the left side instead of the right?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to hide the export button in the Native Blazor Report Viewer's toolbar?
-			</code></pre>
-		</td>
-	</tr> 	
-</table>
+```
 
-#### Angular Report Viewers
+</div>
 
-<table>
-	<tr>
-		<th>Angular Report Viewer</th>
-		<th>Native Angular Report Viewer</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+### Angular Report Viewers
+
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">Angular Report Viewer</p>
+<p style="text-align: center;">Native Angular Report Viewer</p>
+
+```prompt
 #telerik-reporting-assistant How to connect the Angular Report Viewer to a Telerik Report Server?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to use a DropDown editor for the report parameters of the Native Angular Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to pass a bearer token through the Angular Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to hide the export button from the Native Angular Report Viewer's toolbar?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to show DateTimePicker editors for report parameters of type DateTime in the Angular Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to print the report from the Native Angular Report Viewer using client-side code?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the displayed report on a button click in the Angular Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to display a custom indicator in the UI when an error is encountered in the Native Angular Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to move the parameters area inside the Angular Report Viewer to be on the left side instead of the right?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to set the reportSource of the Native Angular Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 	
-</table>
+```
 
-#### HTML5 & React Report Viewers
+</div>
 
-<table>
-	<tr>
-		<th>HTML5 Report Viewer</th>
-		<th>React Report Viewer</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+### HTML5 & React Report Viewers
+
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">HTML5 Report Viewer</p>
+<p style="text-align: center;">React Report Viewer</p>
+
+```prompt
 #telerik-reporting-assistant How to connect the HTML5 Report Viewer to a Telerik Report Server?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the displayed report on a button click in the React Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to pass a bearer token through the HTML5 Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to add a custom indicator in the UI when an error is encountered in the React Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to display ComboBox editors for the report parameters in the HTML5 Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to connect the React Report Viewer to a Telerik Report Server?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the displayed report on a button click in the HTML5 Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to show ComboBox editors for report parameters in the React Report Viewer?
-			</code></pre>
-		</td>
-	</tr> 
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to move the parameters area inside the HTML5 Report Viewer to be on the left side instead of the right?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant The document map panel is missing in the React Report Viewer. How to display it?
-			</code></pre>
-		</td>
-	</tr> 	
-</table>
+```
 
-#### MVC & WebForms Viewers
+</div>
 
-<table>
-	<tr>
-		<th>MVC Viewer</th>
-		<th>WebForms Viewer</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+### MVC & WebForms Viewers
+
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">MVC Viewer</p>
+<p style="text-align: center;">WebForms Viewer</p>
+
+```prompt
 #telerik-reporting-assistant Add Report Viewer.
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant Can I use the report viewer without the Reporting REST Service?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How do I set the report source of the Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How do I localize the Report Viewer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to print the report using client-side code?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to hide the export button in the Report Viewer's toolbar.
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to use dropdowns for report parameters?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
-			</code></pre>
-		</td>
-	</tr>	
-</table>
+```
 
-#### WinForms & WPF Viewers
+</div>
 
-<table>
-	<tr>
-		<th>WinForms Viewer</th>
-		<th>WPF Viewer</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+### WinForms & WPF Viewers
+
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">WinForms Viewer</p>
+<p style="text-align: center;">WPF Viewer</p>
+
+```prompt
 #telerik-reporting-assistant Add Telerik Report Viewer to my application. Generate the code that embeds the viewer and uses the local Reporting engine.
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the displayed report on a button click?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant Can I use the report viewer without the Reporting REST Service?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to add a custom indicator in the UI when an error is encountered in the Report Viewer.
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How do I localize the Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to connect the Report Viewer to Telerik Report Server.
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How do I set the report source of the Report Viewer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant The document map panel is missing in the Report Viewer.
-			</code></pre>
-		</td>
-	</tr>	
-</table>
+```
 
-#### WRD API - .NET Framework & WRD API - .NET
+</div>
 
-<table>
-	<tr>
-		<th>WRD API - .NET Framework</th>
-		<th>WRD API - .NET</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+### WRD API - .NET Framework & WRD API - .NET
+
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">WRD API - .NET Framework</p>
+<p style="text-align: center;">WRD API - .NET</p>
+
+```prompt
 #telerik-reporting-assistant Can I use a database as a storage for my Web Report Designer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant Can I use a database as a storage for my Web Report Designer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How can I pass pre-defined SQL connections to the web report designer so that users can use them when setting up SQLDataSource components?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to change the directory for where my reports are stored to Telerik-Reports.
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to change the directory for where my reports are stored to Telerik-Reports.
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to prevent users from creating new SQLDataSource components.
-			</code></pre>
-		</td>
-	</tr>
-</table>
+```
 
-#### WRD Blazor & WRD HTML 5
+</div>
 
-<table>
-	<tr>
-		<th>WRD Blazor</th>
-		<th>WRD HTML 5</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+### WRD Blazor & WRD HTML 5
+
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+
+<p style="text-align: center;">WRD Blazor</p>
+<p style="text-align: center;">WRD HTML 5</p>
+
+```prompt
 #telerik-reporting-assistant How to change the size of the Web Report Designer widget?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to change the size of the Web Report Designer widget?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to dynamically set the initially loaded report in the Blazor Web Report Designer?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to disable the onboarding experience in the Web Report Designer?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to start the Blazor Web Report Designer in preview mode?
-			</code></pre>
-		</td>
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How to dynamically set the initially loaded report in the Web Report Designer?
-			</code></pre>
-		</td>
-	</tr>
-</table>
+```
+
+</div>
 
 ## Reporting Service Prompts
 
-<table>
-	<tr>
-		<th>Telerik Reporting REST Service</th>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+<div style="display: grid; gap: 10px; grid-template-columns: 1fr;">
+
+<p style="text-align: center;">Telerik Reporting REST Service</p>
+
+```prompt
 #telerik-reporting-assistant How do I set up the Telerik Reporting REST Service in an ASP.NET Core project that targets .NET 9?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant How do I set up the Telerik Reporting REST Service in an ASP.NET Framework project that targets .NET Framework 4.8?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant I want to email the report as an email attachment, how do I do that? Explain it step-by-step.
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
-#telerik-reporting-assistant Can I pass a List object from my Web API controller directly to a report’s DataSource? Explain how and give me an example.
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
+#telerik-reporting-assistant Can I pass a List object from my Web API controller directly to a report's DataSource? Explain how and give me an example.
+```
+
+```prompt
 #telerik-reporting-assistant In production, the report viewer displays `Client with ID 'xxxxxx' not found. Expired `. In a local environment, it loads the reports as expected. How could I resolve this?
-			</code></pre>
-		</td>
-	</tr>
-	<tr>  
-		<td>
-			<pre><code>
+```
+
+```prompt
 #telerik-reporting-assistant Can I use a database as a storage for my report files in the Reporting REST service? Show me an example.
-			</code></pre>
-		</td>
-	</tr>
-</table>
+```
+
+</div>
 
 ## See Also
 

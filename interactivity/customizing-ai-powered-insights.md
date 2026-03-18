@@ -40,7 +40,6 @@ In enterprise environments where AI usage policies are already established or wh
     }
 }
 ```
-
 ```XML
 <configuration>
     <configSections>
@@ -77,7 +76,6 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
     }
 }
 ```
-
 ```XML
 <configuration>
     <configSections>
@@ -135,17 +133,21 @@ For a complete reference of all available `AIClient` options, check the article 
 
 ## Overriding ReportsControllerBase Methods
 
-While the [declarative configuration](#configuring-the-report-engine) handles most common scenarios, some advanced use cases require programmatic customization. You can achieve this by overriding specific methods of the [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase) class in your `ReportsController`. This approach allows you to implement dynamic logic based on user context, report properties, or business rules.
+While the [declarative configuration](#configuring-the-report-engine) handles most common scenarios, some advanced use cases require programmatic customization. You can achieve this by overriding specific methods of the [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase) class in your `ReportsController`. 
+
+This approach allows you to implement dynamic logic based on user context, report properties, or business rules.
 
 You can override the methods described in the following sections and customize different aspects of the AI-powered insights workflow.
 
 ### CreateAIThread(string, string, ClientReportSource)
 
-The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) method is called when the AI Prompt dialog is about to be displayed. You can override this method to disable the AI-powered insights functionality entirely. The logic can be tailored based on the currently previewed report, which is represented by the `ClientReportSource` parameter. For modifying dialog properties like consent messages or predefined prompts, use the [UpdateAIPrompts](#updateaipromptsclientreportsource-aithreadinfo) method instead, which provides direct access to the `AIThreadInfo` object.
+The [CreateAIThread(string, string, ClientReportSource)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateAIThread_System_String_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) method is called when the AI Prompt dialog is about to be displayed. 
 
-#### .NET
+You can override this method to disable the AI-powered insights functionality entirely. The logic can be tailored based on the currently previewed report, which is represented by the `ClientReportSource` parameter. 
 
-```C#
+For modifying dialog properties like consent messages or predefined prompts, use the [UpdateAIPrompts](#updateaipromptsclientreportsource-aithreadinfo) method instead, which provides direct access to the `AIThreadInfo` object.
+
+```C# .NET
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
 /// </summary>
@@ -169,10 +171,7 @@ public override IActionResult CreateAIThread(string clientID, string instanceID,
     return base.CreateAIThread(clientID, instanceID, reportSource);
 }
 ```
-
-#### .NET Framework
-
-```C#
+```C# .NET Framework
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
 /// </summary>
@@ -198,11 +197,24 @@ public override HttpResponseMessage CreateAIThread(string clientID, string insta
 
 ### UpdateAIPrompts(ClientReportSource, AIThreadInfo)
 
-The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) method is called internally during the execution of `CreateAIThread()`. This is the recommended method for modifying dialog properties like consent messages and predefined prompts, as it provides direct access to the `AIThreadInfo` object without requiring type casting or result checking.
+The [UpdateAIPrompts(ClientReportSource, AIThreadInfo)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_UpdateAIPrompts_Telerik_Reporting_Services_WebApi_ClientReportSource_Telerik_Reporting_Services_Engine_AIThreadInfo_) method is called internally during the execution of `CreateAIThread()`. 
 
-#### .NET
+This is the recommended method for modifying dialog properties like consent messages and predefined prompts, as it provides direct access to the `AIThreadInfo` object without requiring type casting or result checking.
 
-```C# Changing·Consent·Message
+#### Changing Consent Message
+
+```C# .NET
+/// <summary>
+/// Overrides the default user consent message.
+/// </summary>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+```
+```C# .NET Framework
 /// <summary>
 /// Overrides the default user consent message.
 /// </summary>
@@ -214,7 +226,9 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 }
 ```
 
-```C# Setting·Predefined·Prompts·Dynamically
+#### Setting Predefined Prompts Dynamically
+
+```C# .NET
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
@@ -228,22 +242,7 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
 ```
-
-#### .NET Framework
-
-```C# Changing·Consent·Message
-/// <summary>
-/// Overrides the default user consent message.
-/// </summary>
-protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
-{
-    aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
-
-    base.UpdateAIPrompts(reportSource, aiThreadInfo);
-}
-```
-
-```C# Setting·Predefined·Prompts·Dynamically
+```C# .NET Framework
 /// <summary>
 /// Modifies the collection of predefined prompts.
 /// </summary>
@@ -260,11 +259,15 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
 
 ### GetAIResponse(string, string, string, string, AIQueryArgs)
 
-The [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetAIResponse_System_String_System_String_System_String_System_String_Telerik_Reporting_Services_Engine_AIQueryArgs_) method is called every time a prompt is sent to the AI model. This method provides control over the AI request workflow, allowing you to intercept, modify, and validate requests before they reach the LLM. Below are examples of common customization scenarios.
+The [GetAIResponse(string, string, string, string, AIQueryArgs)](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetAIResponse_System_String_System_String_System_String_System_String_Telerik_Reporting_Services_Engine_AIQueryArgs_) method is called every time a prompt is sent to the AI model. 
 
-#### .NET
+This method provides control over the AI request workflow, allowing you to intercept, modify, and validate requests before they reach the LLM. 
 
-```C# Modifying·Outgoing·Prompts
+Below are examples of common customization scenarios.
+
+#### Modifying Outgoing Prompts
+
+```C# .NET
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
 /// </summary>
@@ -276,8 +279,43 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
 ```
+```C# .NET Framework
+/// <summary>
+/// Modifies the prompt sent from the client before passing it to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    args.Query += $"{Environment.NewLine}Keep your response concise.";
 
-```C# Token·Usage·Validation
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+```
+
+#### Token Usage Validation
+
+```C# .NET
+/// <summary>
+/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    const int MAX_TOKEN_COUNT = 500;
+    args.ConfirmationCallBack = (AIRequestInfo info) =>
+    {
+        if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
+        {
+            return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
+        }
+
+        return ConfirmationResult.ContinueResult();
+    };
+
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+```
+```C# .NET Framework
 /// <summary>
 /// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
 /// </summary>
@@ -299,7 +337,11 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 }
 ```
 
-```C# RAG·Optimization·Monitoring
+#### RAG Optimization Monitoring
+
+> The RAG functionality is available only in .NET and .NET Standard configurations.
+
+```C#
 /// <summary>
 /// Examines whether the RAG optimization is applied for the current prompt.
 /// </summary>
@@ -320,48 +362,9 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
 }
 ```
 
-#### .NET Framework
-
-> The RAG Optimization Monitoring example is not included in this section because RAG functionality is available only in .NET and .NET Standard configurations.
-
-```C# Modifying·Outgoing·Prompts
-/// <summary>
-/// Modifies the prompt sent from the client before passing it to the LLM.
-/// </summary>
-/// <returns></returns>
-public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
-{
-    args.Query += $"{Environment.NewLine}Keep your response concise.";
-
-    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-}
-```
-
-```C# Token·Usage·Validation
-/// <summary>
-/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
-/// </summary>
-/// <returns></returns>
-public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
-{
-    const int MAX_TOKEN_COUNT = 500;
-    args.ConfirmationCallBack = (AIRequestInfo info) =>
-    {
-        if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
-        {
-            return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
-        }
-
-        return ConfirmationResult.ContinueResult();
-    };
-
-    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
-}
-```
-
 ## See Also
 
-- [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-- [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
-- [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%})
+- [AI-Powered Insights Overview](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights)
+- [Enable AI-Powered Insights with Built-in AI Client](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client)
+- [Enable AI-Powered Insights with Custom AI Client](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client)
 - [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

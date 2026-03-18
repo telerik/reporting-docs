@@ -43,12 +43,14 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
    services.AddControllers();
    ```
 
-1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument:
+1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` is configured for API controllers by adding routing and endpoint configuration:
 
    ```C#
+   app.UseRouting();
+
    app.UseEndpoints(endpoints =>
    {
-   	endpoints.MapControllers();
+       endpoints.MapControllers();
    });
    ```
 

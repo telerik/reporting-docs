@@ -19,12 +19,12 @@ avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
 pdf-cover-png-path: ./images/pdf-cover.png
 code-snippets-basePath: ../reporting
-img-max-width: 100%
+img-max-width: 80%
 
 # tables and colors
 primary-color:
-  light: "#1D8800"
-  dark: "#68BF51"
+  light: "#D04500"
+  dark: "#FF6F00"
 enable-tabbed-code-blocks: true
 table-layout: fixed
 
@@ -40,7 +40,7 @@ markdown-replacements:
   ## API REF REPLACEMENT
   ##  pointing (/api) links to the live api reference
   # - pattern: \[(?:`?(.*?)`?)\]\(\/api\/([^)]+)\)
-  #   replacement: "[$1](https://docs.telerik.com/reporting/api/$2)"
+  #   replacement: "[$1](https://www.telerik.com/products/reporting/documentation/api/$2)"
 
 # liquid variables
 liquid-output-delimiter-left: "{{"

@@ -26,10 +26,11 @@ To follow the steps from this tutorial, you must have:
 
 To enable a custom AI client implementation, follow these steps:
 
-1. Create a class that implements the `Telerik.Reporting.AI.IClient` interface. The following example demonstrates an Azure OpenAI integration for illustration purposes, though you can use any LLM provider:
-   - .NET
+1. Create a class that implements the `Telerik.Reporting.AI.IClient` interface. 
 
-   ```C#
+   The following example demonstrates an Azure OpenAI integration for illustration purposes, though you can use any LLM provider:
+
+   ```C# .NET
    using Azure.AI.OpenAI;
    using Microsoft.Extensions.AI;
    using System.ClientModel;
@@ -114,10 +115,7 @@ To enable a custom AI client implementation, follow these steps:
        }
    }
    ```
-
-   - . NET Framework
-
-   ```C#
+   ```C# .NET Framework
    using Azure.AI.OpenAI;
    using Microsoft.Extensions.AI;
    using System;
@@ -226,12 +224,13 @@ To enable a custom AI client implementation, follow these steps:
    }
    ```
 
-   > This Azure OpenAI example uses `Azure.AI.OpenAI` version `2.2.0-beta.4` and `Microsoft.Extensions.AI.OpenAI` version `9.4.3-preview.1.25230.7` for demonstration purposes. For your implementation, you will typically use different packages specific to your LLM provider. Focus on the implementation structure, which is further detailed in the [Understanding the IClient Interface](#understanding-the-iclient-interface) section.
+   > This Azure OpenAI example uses `Azure.AI.OpenAI` version `2.2.0-beta.4` and `Microsoft.Extensions.AI.OpenAI` version `9.4.3-preview.1.25230.7` for demonstration purposes. 
+   >
+   > For your implementation, you will typically use different packages specific to your LLM provider. Focus on the implementation structure, which is further detailed in the [Understanding the IClient Interface](#understanding-the-iclient-interface) section.
 
 1. Register the custom client in your `ReportServiceConfiguration`:
-   - .NET
 
-   ```C#
+   ```C# .NET
    builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
    {
        HostAppId = "MyApp",
@@ -239,10 +238,7 @@ To enable a custom AI client implementation, follow these steps:
        // ...
    });
    ```
-
-   - .NET Framework
-
-   ```C#
+   ```C# .NET Framework
    public class CustomResolverReportsController : ReportsControllerBase
    {
        static ReportServiceConfiguration configurationInstance;
@@ -261,7 +257,7 @@ To enable a custom AI client implementation, follow these steps:
 
 You can further customize the AI client to enable additional features like RAG optimization, predefined prompts, and user consent settings.
 
-For more details, refer to [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}).
+For more details, refer to [Customizing AI-Powered Insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights).
 
 ## Understanding the IClient Interface
 
@@ -299,7 +295,7 @@ When RAG is disabled, the method is called only once without the report metadata
 
 ## See Also
 
-- [AI-Powered Insights Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-- [Enable AI-Powered Insights with Built-in AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
-- [Customizing AI-Powered Insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
+- [AI-Powered Insights Overview](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights)
+- [Enable AI-Powered Insights with Built-in AI Client](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client)
+- [Customizing AI-Powered Insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights)
 - [AI Insights Report Demo](https://demos.telerik.com/reporting/ai-insights)

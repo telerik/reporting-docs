@@ -46,10 +46,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument:
 
    ```C#
-   app.UseEndpoints(endpoints =>
-   {
-   	endpoints.MapControllers();
-   });
+   app.MapControllers();
    ```
 
 1. Assure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:

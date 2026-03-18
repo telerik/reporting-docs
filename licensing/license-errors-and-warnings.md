@@ -18,7 +18,7 @@ If a valid license cannot be found:
 - A watermark appears on each document page in the report.
 - A [warning message](#license-errors-and-warnings) appears in the build log:
 
-```
+```exception
 Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License file found.
     Telerik and Kendo UI Licensing warning TKL002: The following locations were searched:
     Telerik and Kendo UI Licensing warning TKL002:  * TELERIK_LICENSE (EnvironmentVariable)
@@ -61,16 +61,59 @@ An invalid license can be caused by any of the following:
 
 Using the Telerik Reporting in a project with an expired or missing license, the `Telerik.Licensing` build task will indicate the following errors or conditions:
 
-| Condition or Error                                                                                | Message Code   | Solution                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `No Telerik and Kendo UI License file found`                                                      | TKL002         | [Set up a license key]({%slug license-key%}) to activate Telerik Reporting and remove the error message.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `Corrupted Telerik and Kendo UI License Key content in: [file path or environment variable name]` | TKL003         | <ul><li>If you use a telerik-license.txt file to activate the components, [download a new license key file]({%slug license-key%}#downloading-the-license-key) and place it in your home directory. Make sure to use a license key and not a script key.</li><li>If you use the TELERIK_LICENSE environment variable to store your license key, [download a new license key]({%slug license-key%}#downloading-the-license-key), update the content of the environment variable, and make sure it contains the entire key.</li></ul> |
-| `Unable to locate licenses for all products`                                                      | TKL004         | Your license is not valid for all Telerik and Kendo products added to your project. If you have already purchased the required license, then [update your license key]({%slug license-key%}).                                                                                                                                                                                                                                                                                                                                      |
-| `Your subscription has expired`                                                                   | TKL103; TKL104 | Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key).                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `Your current license has expired`                                                                | TKL102         | You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: <ul><li>Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key)</li><li>Downgrade to a Telerik Reporting version covered by your perpetual license, as specified in the message.</li></ul>                                                                                                                             |
-| `Your trial expired`                                                                              | TKL105         | Purchase a commercial license to continue using the product.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| `Telerik Reporting is not listed in your current license file`                                    | TKL101         | Review the purchase options for the listed products.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| `No Telerik or Kendo UI product references detected in project.`                                  | TKL001         | If you use Telerik products and see this message, update the `Telerik.Licensing` package to version `1.4.9` or later. If you do not use Telerik products, remove the `Telerik.Licensing` NuGet reference from your project                                                                                                                                                                                                                                                                                                         |
+### TKL001: No Telerik or Kendo UI Product References Detected in Project
+
+**Condition:** `No Telerik or Kendo UI product references detected in project.`
+
+**Solution:** If you use Telerik products and see this message, update the `Telerik.Licensing` package to version `1.4.9` or later. If you do not use Telerik products, remove the `Telerik.Licensing` NuGet reference from your project.
+
+### TKL002: No Telerik and Kendo UI License File Found
+
+**Condition:** `No Telerik and Kendo UI License file found`
+
+**Solution:** [Set up a license key]({%slug license-key%}) to activate Telerik Reporting and remove the error message.
+
+### TKL003: Corrupted License Key Content
+
+**Condition:** `Corrupted Telerik and Kendo UI License Key content in: [file path or environment variable name]`
+
+**Solution:**
+
+- If you use a telerik-license.txt file to activate the components, [download a new license key file]({%slug license-key%}#downloading-the-license-key) and place it in your home directory. Make sure to use a license key and not a script key.
+- If you use the TELERIK_LICENSE environment variable to store your license key, [download a new license key]({%slug license-key%}#downloading-the-license-key), update the content of the environment variable, and make sure it contains the entire key.
+
+### TKL004: Unable to Locate Licenses for All Products
+
+**Condition:** `Unable to locate licenses for all products`
+
+**Solution:** Your license is not valid for all Telerik and Kendo products added to your project. If you have already purchased the required license, then [update your license key]({%slug license-key%}).
+
+### TKL101: Telerik Reporting Is Not Listed in Your Current License File
+
+**Condition:** `Telerik Reporting is not listed in your current license file`
+
+**Solution:** Review the purchase options for the listed products.
+
+### TKL102: Your Current License Has Expired
+
+**Condition:** `Your current license has expired`
+
+**Solution:** You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following:
+
+- Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key).
+- Downgrade to a Telerik Reporting version covered by your perpetual license, as specified in the message.
+
+### TKL103/TKL104: Your Subscription Has Expired
+
+**Condition:** `Your subscription has expired`
+
+**Solution:** Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key).
+
+### TKL105: Your Trial Expired
+
+**Condition:** `Your trial expired`
+
+**Solution:** Purchase a commercial license to continue using the product.
 
 ## See Also
 

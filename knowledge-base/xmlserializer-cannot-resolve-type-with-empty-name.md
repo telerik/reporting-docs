@@ -24,7 +24,7 @@ res_type: kb
 
 When deserializing a TRDX report definition using `ReportXmlSerializer.Deserialize(XmlReader)` with a custom `XmlReader`, the following exception is thrown:
 
-```
+```Exception
 Telerik.Reporting.Serialization.SerializerException
 Message=An error has occurred during serialization. The xml serializer cannot resolve type with name:
 ```
@@ -37,7 +37,7 @@ The issue occurs when the `XmlReader` passed to `ReportXmlSerializer.Deserialize
 
 Without this setting, the `XmlReader` returns whitespace-only text nodes between XML elements. The report serializer interprets these whitespace nodes as elements with an empty name and attempts to resolve a type from that empty string, which fails with the exception shown above.
 
-When `ReportXmlSerializer` creates its own `XmlReader` internally (e.g. when deserializing from a `Stream`, `TextReader`, or file path), it automatically configures `IgnoreWhitespace = true`. However, when a pre-created `XmlReader` is passed directly, the serializer uses it as-is and relies on the caller to configure it correctly.
+When `ReportXmlSerializer` creates its own `XmlReader` internally (e.g., when deserializing from a `Stream`, `TextReader`, or file path), it automatically configures `IgnoreWhitespace = true`. However, when a pre-created `XmlReader` is passed directly, the serializer uses it as-is and relies on the caller to configure it correctly.
 
 ## Solution
 

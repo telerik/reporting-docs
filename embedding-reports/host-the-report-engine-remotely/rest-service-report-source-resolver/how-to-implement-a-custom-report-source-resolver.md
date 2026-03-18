@@ -40,7 +40,7 @@ This article explains how to create a custom report source resolver for the **Te
 
 1. Request the report from the HTML5 Report Viewer on the client:
 
-	{{source=CodeSnippets\Blazor\Docs\index.html region=RequestCustomReportIdentifierFromHtml5Viewer}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5Viewer.html region=RequestCustomReportIdentifierFromHtml5Viewer}}
 
 1. To create the database, use the following script:
 

@@ -1,7 +1,7 @@
 ---
 title: Customizing AI-Powered Insights
 page_title: How to Customize the AI-Powered Insights
-description: "Learn how to configure the AI-powered insights functionality to handle common and not so much use cases."
+description: "Learn how to configure the AI-powered insights functionality to handle common and advanced cases."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights
 tags: telerik, reporting, ai, configuration
 tag: new
@@ -40,7 +40,6 @@ In enterprise environments where AI usage policies are already established or wh
     }
 }
 ```
-
 ```XML
 <configuration>
     <configSections>
@@ -77,7 +76,6 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
     }
 }
 ```
-
 ```XML
 <configuration>
     <configSections>
@@ -173,7 +171,6 @@ public override IActionResult CreateAIThread(string clientID, string instanceID,
     return base.CreateAIThread(clientID, instanceID, reportSource);
 }
 ```
-
 ```C# .NET Framework
 /// <summary>
 /// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
@@ -217,7 +214,6 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
 ```
-
 ```C# .NET Framework
 /// <summary>
 /// Overrides the default user consent message.
@@ -246,7 +242,6 @@ protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThrea
     base.UpdateAIPrompts(reportSource, aiThreadInfo);
 }
 ```
-
 ```C# .NET Framework
 /// <summary>
 /// Modifies the collection of predefined prompts.
@@ -284,7 +279,6 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
 ```
-
 ```C# .NET Framework
 /// <summary>
 /// Modifies the prompt sent from the client before passing it to the LLM.
@@ -302,7 +296,7 @@ public override async Task<HttpResponseMessage> GetAIResponse(string clientID, s
 
 ```C# .NET
 /// <summary>
-/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
+/// Examines the approximate token count and determines whether the prompt should be sent to the LLM.
 /// </summary>
 /// <returns></returns>
 public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
@@ -321,10 +315,9 @@ public override async Task<IActionResult> GetAIResponse(string clientID, string 
     return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
 }
 ```
-
 ```C# .NET Framework
 /// <summary>
-/// Examines the approximate tokens count and determines whether the prompt should be sent to the LLM.
+/// Examines the approximate token count and determines whether the prompt should be sent to the LLM.
 /// </summary>
 /// <returns></returns>
 public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)

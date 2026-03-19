@@ -371,7 +371,7 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 
 ### Usage Limits
 
-A Telerik [Subscription](https://www.telerik.com/purchase.aspx?filter=web) or Trial license is required to use the Telerik Reporting AI Coding Assistant. Perpetual licenses do not include access to the AI Coding Assistant. See the [Usage Limits]({%slug ai-coding-assistant%}#usage-limits) section for details.
+A Telerik [Subscription](https://www.telerik.com/purchase.aspx?filter=web) or Trial license is required to use the Telerik Reporting AI Coding Assistant. Perpetual licenses do not include access, but you can [start a free trial](https://www.telerik.com/mcp-servers-reporting/thank-you) to evaluate it. See the [Usage Limits]({%slug ai-coding-assistant%}#usage-limits) section for details.
 
 ### Connect to Local AI Model
 

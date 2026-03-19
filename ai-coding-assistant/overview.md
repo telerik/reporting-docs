@@ -112,7 +112,7 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 
 <p style="font-style: italic; color: #666; margin-top: 12px; line-height: 1.5;">
 <em>
-*  All AI tools are available with a <a href="https://www.telerik.com/mcp-servers-reporting/thank-you">30-day AI Tools trial</a> or <a href="https://www.telerik.com/try/reporting">a Telerik UI trial</a>.
+*  All AI tools are available with a <a href="https://www.telerik.com/mcp-servers-reporting/thank-you">30-day AI Tools trial</a> or <a href="https://www.telerik.com/try/reporting">a Telerik Reporting trial</a>.
 </em> <br/>
 </p>
 

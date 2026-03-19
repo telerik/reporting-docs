@@ -57,11 +57,11 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 
    - For Windows: `%AppData%\Telerik\telerik-license.txt`
    - For Mac/Linux: `~/.telerik/telerik-license.txt`
-   - Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
+   - Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control, as this is your personal license key.
 
 ## Activating Telerik Reporting Automatically
 
-By default, the activation of the Telerik Reporting library is automatic when your license key file is already downloaded and the Visual Studio project has access to `www.nuget.org`.
+By default, the activation of the Telerik Reporting library is automatic when your license key file is already downloaded, and the Visual Studio project has access to `www.nuget.org`.
 
 If the automatic product activation fails, and you see licensing-related error messages, you need to [activate the product manually](#activating-telerik-reporting-manually).
 
@@ -125,7 +125,7 @@ Once you have the new license key, use it to [activate Telerik Reporting](#activ
 ## See Also
 
 - [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-- [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
+- [Adding the License Key to CI Services]({%slug license-key-ci-services%})
 - [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
 - [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version]({%slug upgrade-q1-2025-trial-to-q2-2025-purchase-license%})
 - [Licensing before 2025]({%slug telerikreporting/licensing%})

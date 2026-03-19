@@ -20,7 +20,11 @@ Each editor is a `ParameterEditor` instance which contains two string properties
 
 The `match` method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, _allowNull_, _availableValues_, _multiValue_, _type_, etc.
 
-The main work for creating and utilizing the parameter editor is done in the `createEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The returned result is a new object containing the `beginEdit` method which is the entry point for creating the editor from the viewer.
+The main work for creating and utilizing the parameter editor is done in the `createEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The returned result is a new object containing the following methods:
+
+* `beginEdit(param)` - *(Required)* The entry point for creating the editor. Receives the report parameter object.
+* `addAccessibility(param)` - *(Required when `enableAccessibility` is `true`)* Called after `beginEdit` to configure accessibility attributes on the editor element.
+* `setAccessibilityErrorState(param)` - *(Required when `enableAccessibility` is `true`)* Called when the parameter value changes to update the accessibility error state.
 
 This global variable with the _match_ and _createEditor_ methods can be initialized in `\_Host.cshtml/\_Layout.cshtml` for the Blazor Server project and for Blazor WebAssembly can be used in the `wwwroot/index.html` file.
 
@@ -34,22 +38,20 @@ The following example uses the **Dashboard** example report that we ship with th
 
     <script>
         window.trvParameterEditors = {
-
             matchFunction: function (parameter) {
-             return Boolean(parameter.availableValues) && !parameter.multivalue;
+                return Boolean(parameter.availableValues) && !parameter.multivalue;
             },
 
             createEditorFunction: function createEditorFunction(placeholder, options) {
-
                 let dropDownListElement = $(placeholder).html('<input style="width: 50px;" />');
                 let valueChangedCallback = options.parameterChanged;
                 let parameter;
 
-                    function onChange(e) {
-                        var years = $(dropDownListElement).data("kendoDropDownList");
-                        var val = years.value();
-                        valueChangedCallback(parameter, val);
-                    }
+                function onChange(e) {
+                    var years = $(dropDownListElement).data("kendoDropDownList");
+                    var val = years.value();
+                    valueChangedCallback(parameter, val);
+                }
 
                 return {
                     beginEdit: function (param) {
@@ -61,6 +63,20 @@ The following example uses the **Dashboard** example report that we ship with th
                     });
 
                     dropDownList = $(dropDownListElement).data("kendoDropDownList");
+                },
+                addAccessibility: function (param) {
+                    if (dropDownList) {
+                        dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
+                    }
+                },
+                setAccessibilityErrorState: function (param) {
+                    if (dropDownList) {
+                        if (param.Error) {
+                            dropDownList.wrapper.attr("aria-invalid", "true");
+                        } else {
+                            dropDownList.wrapper.removeAttr("aria-invalid");
+                        }
+                    }
                 }
             };
         }

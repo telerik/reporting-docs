@@ -20,7 +20,11 @@ Each editor is an object which contains two methods: `match` and `createEditor`.
 
 The `match` method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, allowNull, availableValues, multiValue, type, etc.
 
-The main work for creating and utilizing the parameter editor is done in the `createEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The return result is a new object containing the `beginEdit` method which is the entry point for creating the editor from the viewer.
+The main work for creating and utilizing the parameter editor is done in the `createEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The return result is a new object containing the following methods:
+
+* `beginEdit(param)` - *(Required)* The entry point for creating the editor. Receives the report parameter object and should initialize the editor UI with the parameter's current value and available values.
+* `addAccessibility(param)` - *(Required when `enableAccessibility` is `true`)* Called after `beginEdit` to configure accessibility attributes (e.g., `aria-label`) on the editor element. The `param` argument is the report parameter. If this method is missing and accessibility is enabled, the parameters area will fail to render.
+* `setAccessibilityErrorState(param)` - *(Required when `enableAccessibility` is `true`)* Called when the parameter value changes to update the accessibility error state on the editor element. The `param` argument is the report parameter and its `Error` property contains the validation error (if any). If this method is missing and accessibility is enabled, changing parameter values will produce console errors.
 
 The following example illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values:
 
@@ -51,6 +55,20 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 					change: onChange
 				});
 				dropDownList = $(dropDownElement).data("kendoDropDownList");
+			},
+			addAccessibility: function (param) {
+				if (dropDownList) {
+					dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
+				}
+			},
+			setAccessibilityErrorState: function (param) {
+				if (dropDownList) {
+					if (param.Error) {
+						dropDownList.wrapper.attr("aria-invalid", "true");
+					} else {
+						dropDownList.wrapper.removeAttr("aria-invalid");
+					}
+				}
 			}
 		};
 	}
@@ -86,6 +104,20 @@ Passing the parameter editor to the viewer:
 							change: onChange
 						});
 						dropDownList = $(dropDownElement).data("kendoDropDownList");
+					},
+					addAccessibility: function (param) {
+						if (dropDownList) {
+							dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
+						}
+					},
+					setAccessibilityErrorState: function (param) {
+						if (dropDownList) {
+							if (param.Error) {
+								dropDownList.wrapper.attr("aria-invalid", "true");
+							} else {
+								dropDownList.wrapper.removeAttr("aria-invalid");
+							}
+						}
 					}
 				};
 			}

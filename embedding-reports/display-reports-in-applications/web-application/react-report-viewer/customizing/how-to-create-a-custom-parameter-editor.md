@@ -22,6 +22,12 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
 
 1.  Each editor is an object which contains two methods: match and createEditor.
 
+    The `createEditor` method returns an object with the following methods:
+
+    * `beginEdit(param)` - *(Required)* The entry point for creating the editor.
+    * `addAccessibility(param)` - *(Required when `enableAccessibility` is `true`)* Called after `beginEdit` to configure accessibility attributes on the editor element.
+    * `setAccessibilityErrorState(param)` - *(Required when `enableAccessibility` is `true`)* Called when the parameter value changes to update the accessibility error state.
+
     ```JavaScript
     function match(parameter) {
     	return parameter.type === "System.DateTime";
@@ -40,7 +46,6 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
 
     	return {
     		beginEdit: function (param) {
-
     			parameter = param;
 
     			$(dateTimePicker).find("input").kendoDateTimePicker({
@@ -52,6 +57,22 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
     			});
 
     			dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
+    		},
+    		addAccessibility: function (param) {
+    			var input = $(dateTimePicker).find("input");
+    			if (input.length) {
+    				input.attr("aria-label", param.text + ". Date time parameter.");
+    			}
+    		},
+    		setAccessibilityErrorState: function (param) {
+    			var input = $(dateTimePicker).find("input");
+    			if (input.length) {
+    				if (param.Error) {
+    					input.attr("aria-invalid", "true");
+    				} else {
+    					input.removeAttr("aria-invalid");
+    				}
+    			}
     		}
     	};
     }

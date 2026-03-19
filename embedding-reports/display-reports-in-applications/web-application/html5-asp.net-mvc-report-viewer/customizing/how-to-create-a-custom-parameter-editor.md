@@ -49,6 +49,20 @@ function createSingleSelectEditor(placeholder, options) {
                 change: onChange
             });
             dropDownList = $(dropDownElement).data("kendoDropDownList");
+        },
+        addAccessibility: function (param) {
+            if (dropDownList) {
+                dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
+            }
+        },
+        setAccessibilityErrorState: function (param) {
+            if (dropDownList) {
+                if (param.Error) {
+                    dropDownList.wrapper.attr("aria-invalid", "true");
+                } else {
+                    dropDownList.wrapper.removeAttr("aria-invalid");
+                }
+            }
         }
     };
 }
@@ -68,7 +82,11 @@ If the predefined parameter types are not covering your scenario you can define 
 
 The `customMatch` method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like `name`, `allowNull`, `availableValues`, `multiValue`, `type` and etc.
 
-The main work for creating and utilizing the parameter editor is done in the `createCustomEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The return result is a new object containing the `beginEdit` method which is the entry point for creating the editor from the viewer.
+The main work for creating and utilizing the parameter editor is done in the `createCustomEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The return result is a new object containing the following methods:
+
+* `beginEdit(param)` - *(Required)* The entry point for creating the editor. Receives the report parameter object.
+* `addAccessibility(param)` - *(Required when `enableAccessibility` is `true`)* Called after `beginEdit` to configure accessibility attributes on the editor element.
+* `setAccessibilityErrorState(param)` - *(Required when `enableAccessibility` is `true`)* Called when the parameter value changes to update the accessibility error state.
 
 The following example illustrates how to use the [`Kendo DropDownList`](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget for a boolean single parameter value parameter editor which also has available values:
 
@@ -98,6 +116,20 @@ function createCustomEditor(placeholder, options) {
                 change: onChange
             });
             dropDownList = $(dropDownElement).data("kendoDropDownList");
+        },
+        addAccessibility: function (param) {
+            if (dropDownList) {
+                dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
+            }
+        },
+        setAccessibilityErrorState: function (param) {
+            if (dropDownList) {
+                if (param.Error) {
+                    dropDownList.wrapper.attr("aria-invalid", "true");
+                } else {
+                    dropDownList.wrapper.removeAttr("aria-invalid");
+                }
+            }
         }
     };
 }

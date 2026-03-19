@@ -698,6 +698,9 @@ redirects:
   - from: "/using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting"
     to: "/knowledge-base/wpf-viewer-not-visible-on-running-app"
     type: Permanent
+  - from: "knowledge-base/html5-viewer-custom-parameter-editors-disappear-when-accessibility-is-enabled"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor"
+    type: Permanent
 
   # API Reference redirects
   - from: "^/(e-|f-|events-t-|fields-t-|methods-t-|properties-t-|constructors-t-|t-|m-|p-|overload-|ctor-)telerik-.*"

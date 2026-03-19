@@ -80,6 +80,20 @@ Configure the `parameterEditors` option in the HTML5 Report Viewer to define the
                                         change: onChange
                                     });
                                     comboBox = $(comboBoxElement).data("kendoComboBox");
+                                },
+                                addAccessibility: function (param) {
+                                    if (comboBox) {
+                                        comboBox.element.attr("aria-label", param.text + ". Combo box parameter.");
+                                    }
+                                },
+                                setAccessibilityErrorState: function (param) {
+                                    if (comboBox) {
+                                        if (param.Error) {
+                                            comboBox.element.attr("aria-invalid", "true");
+                                        } else {
+                                            comboBox.element.removeAttr("aria-invalid");
+                                        }
+                                    }
                                 }
                             };
                         }

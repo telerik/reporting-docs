@@ -26,7 +26,7 @@ To use the Telerik Reporting AI Coding Assistant, you need:
 * A [Telerik user account](https://www.telerik.com/account/).
 * An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web), or a [Telerik Reporting trial](https://www.telerik.com/reporting).
 * An application that uses [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
-* A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik Reporting AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited number of requests per year.
+* A Telerik [Subscription](https://www.telerik.com/purchase/faq/licensing-purchasing) or Trial license is required. Perpetual licenses do not include access to the AI Coding Assistant. See [Usage Limits](#usage-limits) for details.
 
 ## Intended Use
 
@@ -80,22 +80,15 @@ In this section, you may find the lists with the _Report Viewers_, _Reporting Se
 
 Access to the AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase.aspx?filter=web):
 
-### Subscription License
+| License Type | AI Coding Assistant Access |
+|---|---|
+| Subscription License | Yes |
+| Trial License | Yes |
+| Perpetual License | No* |
 
-* A Subscription is the primary license that grants full access to the AI Coding Assistant.
-* Intended for ongoing and high-volume usage within a fair use threshold.
+* All AI tools are available with a [30-day AI Tools trial](https://www.telerik.com/mcp-servers-reporting/thank-you) or a [Telerik Reporting trial](https://www.telerik.com/reporting).
 
-### Perpetual License (Limited Access)
-* Perpetual licenses have no access to the AI Coding Assistants. Start a trial license in order to use the AI coding tools.
-
-### Trial License
-* Reactivating the same trial for a new release does not grant additional requests.
-* Designed for evaluating the feature before purchasing.
-
-### New users
-* New users will get a license for trying out the AI coding tools automatically when a trial for the selected product is activated.
-
-> All Telerik AI tools share a common 30-day trial and a single request quota for your Telerik account. Complex prompts in the MCP server may consume multiple requests.
+> Complex prompts in the MCP server may consume multiple requests.
 
 
 ## Privacy

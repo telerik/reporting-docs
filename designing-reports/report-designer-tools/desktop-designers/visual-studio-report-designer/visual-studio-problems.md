@@ -17,7 +17,7 @@ reportingArea: General
 When Visual Studio crashes while working with Telerik Reporting, for example, when opening a Report in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). The way to determine what has caused the problem is described in the following steps:
 
 - Upgrade to the latest version of the product in case the reason for the crash has been fixed.
-- Try the reproduce the crash on another machine to exclude machine-specific problems e.g., corrupted Telerik Reporting installation.
+- Try to reproduce the crash on another machine to exclude machine-specific problems e.g., corrupted Telerik Reporting installation.
 - Provide us with a log file containing detailed information about the Visual Studio crash. To create the log file, turn on tracing for the Visual Studio IDE and perform the actions that caused the crash. Below is the XML you need to add to the `devenv.exe.config` file to enable tracing:
 
   ```XML

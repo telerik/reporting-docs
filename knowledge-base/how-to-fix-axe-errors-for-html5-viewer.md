@@ -33,7 +33,7 @@ When providing accessibility for the report viewer we were guided by [Section 50
 The implemented approach was tested using [Microsoft Narrator](https://en.wikipedia.org/wiki/Microsoft_Narrator) and [JAWS](https://www.freedomscientific.com/products/software/jaws/)
 screen readers.
 
-As there is no specific stardard for implementing the accessibility for web applications some of the accessibility testing tools might 
+As there is no specific standard for implementing the accessibility for web applications some of the accessibility testing tools might 
 have additional guidelines for implementing accessibility which are not respected by HTML5 Report Viewer.
 
 ## Error Messages

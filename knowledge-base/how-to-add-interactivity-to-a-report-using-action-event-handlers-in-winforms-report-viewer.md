@@ -24,7 +24,7 @@ res_type: kb
 	</tbody>
 </table>
 
-## Desciption
+## Description
 
 The report viewers provide handlers for three types of events that are associated with interactive actions – `Executing`, `Enter` and `Leave`.
 
@@ -176,7 +176,7 @@ This approach can be used in all the current report viewers with slight modifica
 
 ## See Also
 
-- [Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
-- [Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
-- [Add Interactivity to Report in WPF Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer%})
-- [Add Interactivity to Report in HTML5-based Viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})
+* [Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
+* [Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
+* [Add Interactivity to Report in WPF Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer%})
+* [Add Interactivity to Report in HTML5-based Viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})

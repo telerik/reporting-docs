@@ -2,7 +2,7 @@
 title: How to Expand the PDF Reader's Bookmarks pane on opening a PDF file produced by Telerik Reporting
 description: How to Open the PDF Reader's Bookmarks pane when opening a PDF file created using Telerik Reporting.
 type: how-to
-page_title: How to Display the PDF Reader's Bookmarks pane wgen a PDF created with Telerik Reporting is opened
+page_title: How to Display the PDF Reader's Bookmarks pane when a PDF created with Telerik Reporting is opened
 slug: how-to-expand-the-pdf-reader-s-bookmarks-pane-on-opening-a-pdf-file-produced-by-telerik-reporting
 res_type: kb
 ---

@@ -23,7 +23,7 @@ The Map supports the following map types:
 
 ## Point
 
-Similar to the [Scatter chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}) of the Graph, the Point map type is used to display a correlations between two sets of values. The main difference is that the set of the first values is defined by geographical coordinates which will position every data point onto the Map. The set of he second values is used as a measure and displays a bubble of a variable size depending on the measured value, that is, the differences between the data points are based on the size of the point. The larger the point is, the greater the difference between the two data points becomes.
+Similar to the [Scatter chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}) of the Graph, the Point map type is used to display a correlations between two sets of values. The main difference is that the set of the first values is defined by geographical coordinates which will position every data point onto the Map. The set of the second values is used as a measure and displays a bubble of a variable size depending on the measured value, that is, the differences between the data points are based on the size of the point. The larger the point is, the greater the difference between the two data points becomes.
 
 ![An image of a Map Point Chart](../images/Map/MapPointChart.png)
 

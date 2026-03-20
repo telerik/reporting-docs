@@ -24,7 +24,7 @@ res_type: kb
 	</tbody>
 </table>
 
-## Desciption
+## Description
 
 The report viewers provide handlers for three types of events that are associated with interactive actions – `Executing`, `Enter` and `Leave`. In this article, we will show how to use these events to add more interactivity and allow further customization for your reports. We will use the demo projects that are shipped with your Telerik Reporting installation and is part of the `CSharp.ReportExamples.VSxxxx` solution that can be found by default in `%PROGRAMFILES(X86)%\Telerik\Reporting <Version>\Examples\{CSharp or VB}\` folder.
 

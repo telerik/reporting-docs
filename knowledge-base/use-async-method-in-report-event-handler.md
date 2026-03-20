@@ -38,7 +38,7 @@ MyMethodAsync().ConfigureAwait(false).GetAwaiter().GetResult();
 
 In the above code, _ConfigureAwait(false)_ configures the task so that continuation after the _await_ does not have to be run in the caller/UI context, therefore 
 avoiding deadlocks.
-When everyting runs fine and there are no exceptions, the _myTask.GetAwaiter().GetResult();_ is equivallent to _myTask.Result;_. However, with the latter apporach,
+When everything runs fine and there are no exceptions, the _myTask.GetAwaiter().GetResult();_ is equivalent to _myTask.Result;_. However, with the latter approach,
 the potential exception will be wrapped in an [AggregateException](https://docs.microsoft.com/en-us/dotnet/api/system.aggregateexception?view=net-5.0), whereas 
 the former approach throws the direct exception. This makes the syntax from the code snippet the most preferable with respect to deadlock prevention and error handling.
 ## See Also

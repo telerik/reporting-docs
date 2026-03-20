@@ -22,7 +22,7 @@ To create a new report with this wizard:
 
 - Visual Studio:
 
-  - Create a new class library or use an existing one. Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported.
+  - Create a new class library or use an existing one. Verify that the targeted .NET framework version is .NET 4(+), Full profile as Client profile is not supported.
   - **Right-click** the project context menu and select **Add | New Item | Telerik Report**. Enter a name for the report class and click the **Add** button to close the dialog. Select report wizard form opens.
   - Select the **Band Report Wizard** option from the list and click **OK**.
 

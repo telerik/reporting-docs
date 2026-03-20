@@ -126,7 +126,7 @@ static class ConfigurationHelper
 }
 ```
 
-Finally, all configurations should be placed in the JSON configuraion file (add one in the project root if such does not exist). For example, **ConnectionStrings** setting should be configured in JSON-based format like this:
+Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such does not exist). For example, **ConnectionStrings** setting should be configured in JSON-based format like this:
 
 ```JSON
 {
@@ -243,4 +243,4 @@ A full example can be found in the installation folder of Telerik Reporting:
 
 ## See Also
 
-- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
+* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})

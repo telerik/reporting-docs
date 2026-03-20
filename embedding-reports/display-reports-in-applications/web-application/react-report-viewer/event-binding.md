@@ -40,4 +40,4 @@ export class AppComponent {
 
 ## See Also
 
-* [React Report Viwer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})
+* [React Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})

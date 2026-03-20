@@ -1,5 +1,5 @@
 ---
-title: Мigrate ASP.NET Core project from .NET Framework to .NET
+title: Migrate ASP.NET Core project from .NET Framework to .NET
 description: "Learn how to migrate an existing ASP.NET Core Telerik Reporting project from the .NET Framework to .NET Core or .NET."
 type: troubleshooting
 page_title: Мigrate existing ASP.NET Core project from .NET Framework 4 to .NET

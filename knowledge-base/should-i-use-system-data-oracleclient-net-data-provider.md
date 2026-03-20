@@ -19,7 +19,7 @@ res_type: kb
 		<td>SqlDataSource</td>
 	</tr>
 	<tr>
-		<td>Data Providere</td>
+		<td>Data Provider</td>
 		<td>System.Data.OracleClient</td>
 	</tr>
 </table>

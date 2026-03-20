@@ -16,9 +16,9 @@ reportingArea: General
 
 When the Standalone Report Designer crashes while working with Telerik Reporting, the way to determine what has caused the problem is described in the following steps:
 
-- Upgrade to the latest version of the product in case the reason for the crash has been fixed.
-- Try the reproduce the crash on another machine to exclude machine-specific problems e.g., corrupted Telerik Reporting installation.
-- Provide us with a log file containing detailed information about the Standalone Report Designer crash. To create the log file, turn on tracing for the Standalone Report Designer and perform the actions that caused the crash. Below is the XML you need to add to the designer's configuration file to enable tracing:
+* Upgrade to the latest version of the product in case the reason for the crash has been fixed.
+* Try to reproduce the crash on another machine to exclude machine-specific problems e.g., corrupted Telerik Reporting installation.
+* Provide us with a log file containing detailed information about the Standalone Report Designer crash. To create the log file, turn on tracing for the Standalone Report Designer and perform the actions that caused the crash. Below is the XML you need to add to the designer's configuration file to enable tracing:
 
   - For the `.NET Framework` Standalone Designer version
 

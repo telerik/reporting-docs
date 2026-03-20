@@ -9,6 +9,7 @@ published: True
 position: 5
 reportingArea: General
 ---
+<style> img[alt$="><"] { border: 1px solid lightgrey; } </style>
 
 # Adding the Telerik NuGet Feed to Your System
 
@@ -40,7 +41,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
    > caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed
 
-   ![Telerik Nuget Feed in Visual Studio NuGet Package Manager](images/nuged-feed-in-npm.png)
+   ![Telerik Nuget Feed in Visual Studio NuGet Package Manager ><](images/nuged-feed-in-npm.png)
 
 1. Create or load your project.
 1. Go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for solution**.
@@ -50,7 +51,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
    > caption Enter your Telerik.com credentials to access the Telerik NuGet feed
 
-   ![Telerik.com credentials form to access the Telerik NuGet Feed](images/vs-nuget-auth-window.png)
+   ![Telerik.com credentials form to access the Telerik NuGet Feed ><](images/vs-nuget-auth-window.png)
 
 After adding the Telerik server, all packages licensed to the authenticated user become available in the Visual Studio NuGet package manager.
 
@@ -78,8 +79,27 @@ If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set
     -StorePasswordInClearText
    ```
 
+## Setup in JetBrains Rider
+
+1. Open JetBrains Rider
+1. From the main menu, select `Tools` > `NuGet` > `NuGet Quick List` or press the shortcut `Alt+Shift+N`
+1. Choose `Show NuGet Packages`
+
+   ![JetBrains Rider menu path for opening the NuGet Packages window ><](images/ShowNuGetPackagesJetBrainsRider.png)
+
+1. At the top of the NuGet tool window, switch to the `Sources` tab.
+1. In the left panel, select a specific NuGet.Config file (for example: C:\Users\username\AppData\Roaming\NuGet\NuGet.Config)
+1. After selecting a concrete NuGet.Config file, the Feeds list will appear on the right.
+1. From this view, you can:
+   * Add new package sources (feeds)
+   * Edit existing feeds
+   * Enable or disable feeds
+   * Review feed URLs and configuration
+
+   ![How to Configure a NuGet Feed in JetBrains Rider ><](images/ConfigNuGetFeedJetBrainsRider.png)
+
 ## See Also
 
-- [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
-- [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({%slug nuget-feed-returned-unexpected-401-status-error%})
-- [Setup a Local NuGet Package Feed]({%slug setup-local-nuget-feed%})
+* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
+* [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({%slug nuget-feed-returned-unexpected-401-status-error%})
+* [Setup a Local NuGet Package Feed]({%slug setup-local-nuget-feed%})

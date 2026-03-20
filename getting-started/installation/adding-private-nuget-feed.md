@@ -88,7 +88,7 @@ If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set
    ![JetBrains Rider menu path for opening the NuGet Packages window ><](images/ShowNuGetPackagesJetBrainsRider.png)
 
 1. At the top of the NuGet tool window, switch to the `Sources` tab.
-1. In the left panel, select a specific NuGet.Config file (for example: C:\Users\<username>\AppData\Roaming\NuGet\NuGet.Config)
+1. In the left panel, select a specific NuGet.Config file (for example: C:\Users\username\AppData\Roaming\NuGet\NuGet.Config)
 1. After selecting a concrete NuGet.Config file, the Feeds list will appear on the right.
 1. From this view, you can:
    * Add new package sources (feeds)

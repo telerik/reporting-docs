@@ -22,7 +22,7 @@ To fix the above warning, you may:
 * Decrease the Report `Width`
 * Increase the Report Page Width in one of the following ways:
 	+ Change the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperKind` to a bigger one that will accommodate the content;
-	+ Inrease the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperSize` > `Width` for `Custom` paper kind;
+	+ Increase the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `PaperSize` > `Width` for `Custom` paper kind;
 	+ Decrease the Report [`PageSettings`](/api/telerik.reporting.drawing.pagesettings) > `Margins` > `Left` and/or `Right`.
 
 Check for [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) and [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) that may be altering the report layout only at runtime.
@@ -130,6 +130,3 @@ The [Visual Studio Report Designer for .NET Framework]({%slug telerikreporting/d
 * [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
 * [Basic Design Considerations for Report Items]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Properties and Settings of the Report Definition]({%slug report_item_properties_settings%})
-
-
-

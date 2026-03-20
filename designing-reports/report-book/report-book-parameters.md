@@ -50,7 +50,7 @@ In the sample pictures below, you will see in a few steps how to set a value for
 
 ![How to set the name and value of the parameter](images/HowToSetTheNameAndValueOfTheParameter.png)
 
-## Passing Values for Report Parameters in a Reportbook through ReportSource Programatically
+## Passing Values for Report Parameters in a Reportbook through ReportSource Programmatically
 
 * __When report parameters have unique names or the target parameters are merged:__ If a parameter is distinguishable by its Name property or the Name denotes several merged parameters, refer to the parameter directly by the value of its Name property.
 

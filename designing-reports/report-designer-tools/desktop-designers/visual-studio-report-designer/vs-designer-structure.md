@@ -87,7 +87,7 @@ This option allows you to drag objects on the design surface and have them snap 
 
 When this option is enabled, it allows you to drag objects on the design surface and snap them to the margins or alignment lines (red dashed line) of other objects within the same container element such as a layout panel, column, and row dividers in a grid panel. If a container has padding applied, it will be taken into account when snapping an object inside the container.
 
-![Visual Studio Report Designer's snapping to snaplines functinality helping with the report items alignment.](images/snapGrid2.png)
+![Visual Studio Report Designer's snapping to snaplines functionality helping with the report items alignment.](images/snapGrid2.png)
 
 ### Show/Hide Dimensions
 

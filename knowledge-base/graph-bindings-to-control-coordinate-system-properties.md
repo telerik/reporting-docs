@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-How can I use bindings to control the coordinate system properties in the Grpah?
+How can I use bindings to control the coordinate system properties in the Graph?
 
 ## Solution 
 

@@ -11,7 +11,7 @@ position: 3
 
 # Using Send Mail Message Functionality in Native Blazor Report Viewer
 
-The native Blazor Report Viewer provides the capability to send the currently displaced report in the specified document format with an e-mail message.
+The native Blazor Report Viewer provides the capability to send the currently displayed report in the specified document format with an e-mail message.
 
 ## Enabling the send mail message functionality
 
@@ -66,4 +66,4 @@ The settings are populated from a `SendEmailDialogSettings` tag, that sits insid
 
 ## See Also
 
-- [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})
+* [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})

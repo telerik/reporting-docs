@@ -18,7 +18,7 @@ res_type: kb
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>Report Desginer</td>
+			<td>Report Designer</td>
 			<td>Web Report Designer</td>
 		</tr>
 	</tbody>

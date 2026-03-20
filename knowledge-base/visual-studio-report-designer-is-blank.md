@@ -31,7 +31,7 @@ On opening a **CS**/**VB** report in the VS Designer, the report is blank. If th
 ## Solution 
   
 1. Check whether the report class has a default *parameterless* constructor and add such, if needed. *Verify* that the **InitializeComponent** method is called in that constructor.
-2. Verify  thatTelerik Reporting is installed on the machine, and the *Telerik Reporting** assemblies are referenced in the project. Then exclude the report files from the project and re-add only the report's *CS|VB** file. Visual Studio should auto-detect the related Designer.CS|VB and RESX files.  
+2. Verify that Telerik Reporting is installed on the machine, and the *Telerik Reporting** assemblies are referenced in the project. Then exclude the report files from the project and re-add only the report's *CS|VB** file. Visual Studio should auto-detect the related Designer.CS|VB and RESX files.  
 
 ## Notes
 

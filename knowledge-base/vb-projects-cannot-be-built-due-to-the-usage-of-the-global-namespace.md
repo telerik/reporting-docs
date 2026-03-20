@@ -1,6 +1,6 @@
 ---
 title: VB Projects cannot be built due to the usage of the Global Namespace.
-description: VB Projects cannot be built whenf the Global Namespace is being used.
+description: VB Projects cannot be built when the Global Namespace is being used.
 type: how-to
 page_title: VB Projects cannot be built when using the Global Namespace.
 slug: vb-projects-cannot-be-built-due-to-the-usage-of-the-global-namespace

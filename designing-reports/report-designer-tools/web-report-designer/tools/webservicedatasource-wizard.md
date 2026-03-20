@@ -61,7 +61,7 @@ In the third step of the wizard, the account credentials for basic authenticatio
 
 > note This step is skipped unless `2-Step` authentication is chosen in the first step of the wizard.
 
-In the fourth step of the wizard step, the necesary settings for the `WebServiceDataSource` component to complete the 2-step (Bearer) authentication can be set.
+In the fourth step of the wizard step, the necessary settings for the `WebServiceDataSource` component to complete the 2-step (Bearer) authentication can be set.
 The following OAuth 2.0 authorization mechanisms are supported out-of-the-box:
 
 - [Password Grant](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/)
@@ -103,5 +103,5 @@ In the last step of the wizard, if the configurations on the previous steps were
 
 ## See Also
 
-- [WebServiceDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
-- [Using Parameters with the WebServiceDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component%})
+* [WebServiceDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
+* [Using Parameters with the WebServiceDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component%})

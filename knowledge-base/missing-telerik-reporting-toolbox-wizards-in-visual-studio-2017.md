@@ -29,7 +29,7 @@ After installing Telerik Reporting, the Visual Studio 2017 Toolbox does not cont
 
 ## Cause\Possible Cause(s)
 
-Тhe assembly that initializes our wizards called **Telerik.Reporting.Design.Components** hasn't got an available path that should be taken from.
+The assembly that initializes our wizards called **Telerik.Reporting.Design.Components** hasn't got an available path that should be taken from.
 
 ## Solution
 

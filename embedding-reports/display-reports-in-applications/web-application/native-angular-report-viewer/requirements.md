@@ -82,8 +82,8 @@ The Native Angular Report Viewer is built with version [{{site.angularsubsetvers
 	</tr>
 </table>
 
-Tha Native Angular Report Viewer supports the major browsers just as Angular does. For more details, refer to the [Browser Support](https://angular.dev/reference/versions#browser-support) article in the official Angular documentation.
+The Native Angular Report Viewer supports the major browsers just as Angular does. For more details, refer to the [Browser Support](https://angular.dev/reference/versions#browser-support) article in the official Angular documentation.
 
 ## See Also
 
-[Update Angular to v16](https://v17.angular.io/guide/update-to-version-16)
+* [Update Angular to v16](https://v17.angular.io/guide/update-to-version-16)

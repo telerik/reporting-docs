@@ -18,7 +18,7 @@ This topic explains how to setup the WPF Report Viewer to work with [Telerik Rep
 
 * Installed and running [Telerik Report Server](https://docs.telerik.com/report-server/introduction) `R2 2016 (2.1.16.x) or higher version`.
 * A valid (enabled) user account - the built-in __Guest__ user account can be used as well.
-* In case you are not using [Item Templates](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project), add references to all the assemblies listed in the article [Requirements For Desktop Viewers Using Remote Report Sources](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources).
+* In case you are not using [Item Templates](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project), add references to all the assemblies listed in the article [Requirements For Desktop Viewers Using Remote Report Sources](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources).
 
 ## Configuring the WPF Report Viewer to work with Report Server
 

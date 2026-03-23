@@ -27,13 +27,13 @@ The Desktop Report Viewers may be embedded in .NET and .NET Framework projects. 
 
 #### Implementing in projects targeting .NET {{site.mindotnetversion}} and above
 
-* [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project)
+* [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-core-project)
 * [Integrating the WPF Report Viewer in .NET](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project)
 * [Integrating the WinUI Report Viewer in .NET {{site.mindotnetversion}}](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application)
 
 #### Implementing in projects targeting .NET Framework 4.6.2 and above
 
-* [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
+* [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project)
 * [Integrating the WPF Report Viewer in .NET Framework](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project)
 
 ## Generating Reports in Desktop Reporting Applications

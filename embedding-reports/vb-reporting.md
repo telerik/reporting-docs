@@ -41,14 +41,14 @@ The Desktop Report Viewers may be embedded in .NET Framework and .NET Visual Bas
 
 Here are the Desktop Report Viewers that may be embedded in VB desktop projects targeting the .NET Framework through the Visual Studio templates we provide, or manually:
 
-- [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
+- [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project)
 - [Integrating the WPF Report Viewer in .NET Framework](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project)
 
 ##### Implementing in VB projects targeting .NET {{site.mindotnetversion}}.0 and above
 
 The following Desktop Report Viewers may be configured manually in VB desktop projects targeting .NET. There are no Visual Studio Reporting templates available for Visual Basic projects targeting .NET:
 
-- [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project)
+- [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-core-project)
 
   The following code adds the Windows Forms Report Viewer control to the form named 'MyDotNetForm' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
 

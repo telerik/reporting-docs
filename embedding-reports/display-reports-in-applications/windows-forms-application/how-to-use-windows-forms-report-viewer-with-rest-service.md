@@ -17,11 +17,11 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 ## Prerequisites
 
 - Running [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) instance.
-- In case you are not using [Item Templates](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project), add references to all the assemblies listed in the article [Requirements For Desktop Viewers Using Remote Report Sources](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources).
+- In case you are not using [Item Templates](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project), add references to all the assemblies listed in the article [Requirements For Desktop Viewers Using Remote Report Sources](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources).
 
 ## Configuring the Windows Forms Report Viewer to work with REST Service
 
-1. To create a form and host the report viewer in it, you can either use the item template, as explained in the article [How to Add report viewer to a Windows Forms .NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project), or place it yourself through drag-and-drop from the toolbox.
+1. To create a form and host the report viewer in it, you can either use the item template, as explained in the article [How to Add report viewer to a Windows Forms .NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project), or place it yourself through drag-and-drop from the toolbox.
 1. As soon as the report viewer is on your form, select it and locate the **ReportEngineConnection** property. Invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:
 
    ![Image of the Windows Forms Connection Editor window, showing the REST Service option.](images/WinformsConnectionEditor_REST.png)

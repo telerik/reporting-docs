@@ -122,7 +122,7 @@ The Windows Forms Report Viewer supports the following keyboard and mouse comman
 
 ## See Also
 
-* [Adding the Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
+* [Adding the Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project)
 * [Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization)
 * [Windows Forms Applications](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
 * [Rendering and Paging](slug:telerikreporting/designing-reports/rendering-and-paging/overview)

@@ -41,7 +41,7 @@ Ensure you have assigned the `DataSource` property of your Report or other [data
 
 Alternatively, you may use [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for the `DataSource` property to display the data only at runtime. With this approach, the Binding will override the `DataSource` property Value at runtime.
 
-When displaying data in a TextBox or other report item, ensure it is in the correct [data scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-). This means that its parent data item should have as a DataSource the corresponding source of data, for example, [DataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview).
+When displaying data in a TextBox or other report item, ensure it is in the correct [data scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope). This means that its parent data item should have as a DataSource the corresponding source of data, for example, [DataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview).
 
 ### Data is Multiplying at Runtime
 
@@ -70,7 +70,7 @@ If the SQL query parameters are not passed correctly to the database, ensure the
 
 ### Expression Values
 
-Use a temporary `TextBox` in the same [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) or [report section](slug:report_structure_groups_sections#report-sections), ensuring the same [scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-) to display the actually evaluated content in the [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) or other [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview).
+Use a temporary `TextBox` in the same [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) or [report section](slug:report_structure_groups_sections#report-sections), ensuring the same [scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope) to display the actually evaluated content in the [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) or other [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview).
 
 ### Object is Not Defined in the Current Context
 

@@ -38,4 +38,4 @@ The HTML5 Report Viewer is an HTML, CSS, and JavaScript control, which gets the 
 
 ## Solution  
 
-To solve this issue, refer to the article on [using the `InstanceReportSource` property with the HTML5 Report Viewer]({% slug how-to-display-a-report-via-instancereportsource-in-the-html5-viewer ).
+To solve this issue, refer to the article on [using the `InstanceReportSource` property with the HTML5 Report Viewer](slug: how-to-display-a-report-via-instancereportsource-in-the-html5-viewer ).

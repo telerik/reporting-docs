@@ -81,7 +81,7 @@ The symbol that you are trying to render in the report is not allowed in XML, wh
 ## Solution
 
 The solution is to modify the incoming data for the report items so that they do not contain invalid (in the context of XML) symbols.
-This may be done through a [User Function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions ) that validates the data, for example:
+This may be done through a [User Function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions ) that validates the data, for example:
 
 ````C#
 public static string ReplaceHexadecimalSymbols(string txt)

@@ -21,7 +21,7 @@ This guide targets [users who want to build custom reports and, then, present th
 
 At the end, you'll be able to see the report in the web browser, export it in different formats, and print it.
 
-For the first-steps scenario on designing a Telerik Report and exporting it to PDF, refer to the getting started guide on [designing a report]({% slug telerikreporting/getting-started/first-steps).
+For the first-steps scenario on designing a Telerik Report and exporting it to PDF, refer to the getting started guide on [designing a report](slug: telerikreporting/getting-started/first-steps).
 
 ## Prerequisites
 
@@ -92,6 +92,6 @@ That was it! Now you are ready to deep-dive into Telerik Reporting and take full
 
 ## Next Steps
 
-- [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview )
+- [Designing Reports Overview](slug: telerikreporting/designing-reports/overview )
 - [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
 - [Report Parameter](slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)

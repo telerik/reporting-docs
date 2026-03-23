@@ -84,7 +84,7 @@ Installing the Telerik Reporting NuGet packages involves three steps:
 
 ### Step 1: Generating an API Key
 
-As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI]({% slug using-nuget-keys #using-only-cli-commands) or the [`NuGet.Config` file]({% slug using-nuget-keys #using-a-nugetconfig-file-with-your-projects).
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI](slug: using-nuget-keys #using-only-cli-commands) or the [`NuGet.Config` file](slug: using-nuget-keys #using-a-nugetconfig-file-with-your-projects).
 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.

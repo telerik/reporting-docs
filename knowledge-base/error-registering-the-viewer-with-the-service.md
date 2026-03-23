@@ -34,7 +34,7 @@ Where **NAME** is the name of the application and **VERSION** is the currently i
 
 ## Cause\Possible Cause(s)
 
-The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview ) cannot access the configured file storage. By default, the user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 
+The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview ) cannot access the configured file storage. By default, the user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 
 
 ## Solution
 

@@ -88,7 +88,7 @@ The same approach can be applied for `.NET Core MVC 3.0` project.
    }
    ```
 
-1. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 #setup-the-startup-cs-file-for-the-reports-service):
+1. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 #setup-the-startup-cs-file-for-the-reports-service):
 
    ```C#
    public class Startup

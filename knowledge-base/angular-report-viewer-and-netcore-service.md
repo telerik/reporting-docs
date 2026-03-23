@@ -31,7 +31,7 @@ res_type: kb
 
 ## Description
 
-How can I create a .NET Core 3 project which will be used as a service in the [Angular Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview )?
+How can I create a .NET Core 3 project which will be used as a service in the [Angular Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview )?
 
 ## Solution
 

@@ -170,6 +170,6 @@ Download the final Vue.js application from [Sample Vite + Vue3 Application](http
 
 - [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
 - [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
-- [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview )
+- [Reporting REST Service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview )
 - [Telerik Reporting online demos](https://demos.telerik.com/reporting)
 - [Vue.js](https://vuejs.org/)

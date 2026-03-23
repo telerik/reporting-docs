@@ -19,7 +19,7 @@ res_type: kb
 </table>
 
 ## Solution
-Usually grouping is used to group the data together by some criteria. To allow different sets of data within a single report you can use [SubReport](slug: telerikreporting/designing-reports/report-structure/subreport) items or [Table/CrossTab/List]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview ) items. Each of those items can have a separate data source and use its own groupings.
+Usually grouping is used to group the data together by some criteria. To allow different sets of data within a single report you can use [SubReport](slug: telerikreporting/designing-reports/report-structure/subreport) items or [Table/CrossTab/List](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview ) items. Each of those items can have a separate data source and use its own groupings.
 
 For more details, see:
 

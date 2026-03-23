@@ -42,6 +42,6 @@ The legacy ASP.NET WebForms ReportViewer displays content delivered by its `Tele
 
 To solve this issue, use the following approaches:
 
-* Make sure that the handler is registered correctly and that the [browser proxy and security settings allow it to deliver content]({% slug the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up ).         
+* Make sure that the handler is registered correctly and that the [browser proxy and security settings allow it to deliver content](slug: the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up ).         
 
 * If you are using authorization, verify that [the path of the `Telerik.ReportViewer.axd` handler is allowed for the user](https://support.microsoft.com/en-us/kb/316871).

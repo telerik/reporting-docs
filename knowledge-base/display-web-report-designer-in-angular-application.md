@@ -36,7 +36,7 @@ With the [Telerik® Reporting R3 2019](https://www.telerik.com/support/whats-new
 
 Here are the major steps for integrating the jQuery-based Telerik Web Report Designer and HTML5 Report Viewer in an Angular application:
 
-- Add a reference to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites) in the main html page of the application. In the demo project linked below, this is `index.html`:
+- Add a reference to all required [Telerik Web Report Designer resources](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#prerequisites) in the main html page of the application. In the demo project linked below, this is `index.html`:
 
   ```HTML
   <head>
@@ -100,7 +100,7 @@ npm start
 
 Several things that you should keep in mind when using Telerik Web Report Designer in your projects.
 
-1. [Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) does not support theming. The Web Designer is built to use a customized version of the Kendo SASS Default theme. The Designer loads all styles that are required by itself. There is no additional option that could prevent it. The required styles are added to the body header of the document. If the application uses another Kendo theme, there will be conflicts between the two themes.
+1. [Telerik Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) does not support theming. The Web Designer is built to use a customized version of the Kendo SASS Default theme. The Designer loads all styles that are required by itself. There is no additional option that could prevent it. The required styles are added to the body header of the document. If the application uses another Kendo theme, there will be conflicts between the two themes.
 
 1. Because the Telerik Web Report Designer loads all required styles when the designer widget is created, and in the latest version there is no check, if the resources are already loaded, you will need to clean up the duplicated resources. See `designer.component.ts` in the demo project for more details.
 
@@ -108,4 +108,4 @@ Several things that you should keep in mind when using Telerik Web Report Design
 
 ## See Also
 
-- [Test whether Web Report Designer Service is Responding]({%slug test-web-report-designer-service%})
+- [Test whether Web Report Designer Service is Responding](slug: test-web-report-designer-service)

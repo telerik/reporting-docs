@@ -59,4 +59,4 @@ Here is how you may register some alternative rendering extension with the built
 
 ## See Also
 
-* [How to Create Custom Rendering Extension]({%slug custom-rendering-extension%})
+* [How to Create Custom Rendering Extension](slug: custom-rendering-extension)

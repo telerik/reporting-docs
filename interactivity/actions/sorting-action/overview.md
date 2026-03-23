@@ -18,7 +18,7 @@ With that being said, you can add an interactive sorting button to any report it
 
 ## Add Interactive Sorting Action
 
-When you create an interactive sorting action, in the [Edit Action dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) you must specify what to sort (target data item/group) and what to sort by (data field or expression).
+When you create an interactive sorting action, in the [Edit Action dialog](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog) you must specify what to sort (target data item/group) and what to sort by (data field or expression).
 
 When you view the report, items that trigger interactive sorting action have arrow icons that change to indicate the sort order.
 
@@ -42,6 +42,6 @@ The items can hold only one action. If you need to add multiple actions, for exa
 
 ## See Also
 
-- [How to sort the data rows in a column]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details%})
-- [How to sort the data rows in a Crosstab column]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-total%})
-- [How to sort the items in a graph]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-graph%})
+- [How to sort the data rows in a column](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details)
+- [How to sort the data rows in a Crosstab column](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-total)
+- [How to sort the items in a graph](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-graph)

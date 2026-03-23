@@ -63,11 +63,11 @@ To create the Bar chart by using the Bar Chart Wizard:
 
 	1. Drag the __Category__ field to **Series**.
 	1. Drag the __OrderDate.Year__ field to **Categories**.
-	1. Drag the __LineTotal__ field to the **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __LineTotal__ field to the **Values**. The wizard will automatically apply the `Sum` [aggregate function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions).
 
 	![Arrange the Bar Chart Series, Categories and Values from the Wizard in the Standalone Report Designer](images/BarChartWizardArrangeFields.png)
 
-1. The `LineTotal` value is large, so let's change the `Data > X` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `barSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
+1. The `LineTotal` value is large, so let's change the `Data > X` [expression](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) of `barSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
 To see the full implementation of the sample report, refer to the [BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp) project on GitHub.
 
@@ -77,7 +77,7 @@ This section will show how to manually create a Bar chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({%slug graph_item_get_started%}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item](slug: graph_item_get_started).
 
 ### 2. Set the SeriesGroups Hierarchy
 
@@ -120,7 +120,7 @@ In this step, you will configure the series of the chart:
 
 ### 6. Style the Appearance
 
-To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}).
+To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph](slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
 
 ## Design Considerations
 

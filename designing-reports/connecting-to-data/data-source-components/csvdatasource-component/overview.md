@@ -31,7 +31,7 @@ Multiple formats are supported through configuring the CsvDataSource settings.
 |`Has headers`|Defines if the CsvDataSource has headers. If true the first non-comment row of the CSV document is used for field names and is not considered as data (i.e. will be omitted from the data output).|
 |`Field separators (column delimiters)`|Configures the list of separators by which the document is split to fields (columns) based on a delimiter.|
 |`Record separators (row delimiters)`|Configures the list of separators by which the document is split to records (rows) based on a delimiter.|
-|`Escape format`|Defines how the special symbols are escaped, like field and record separators and the escape symbols themselves. For more information please check [CsvDataSource Escape Formats]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats%})|
+|`Escape format`|Defines how the special symbols are escaped, like field and record separators and the escape symbols themselves. For more information please check [CsvDataSource Escape Formats](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats)|
 |`Quote`|Configures the text qualifier if Quotes (RFC 4180 standard is applied to the CSV document) or Quotes Mixed (same as Quotes, but the escape symbol is escaped with a backslash) Escape format is used.|
 |`Comment token`| By providing a comment token for the CsvDataSource comments can be supported and omitted from the data output.|
 

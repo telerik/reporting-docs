@@ -26,13 +26,13 @@ res_type: kb
 
 In the [Reporting R3 2021 SP1](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2021-sp1-15-2-21-1110) release of Telerik Reporting, we introduced to the [Report Class](/reporting/api/Telerik.Reporting.Report) the method [GetDataSources](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_GetDataSources).
 
-The `GetDataSources` method allows you to access and/or modify any [data source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) in the report definition, regardless of whether they are referenced by a data item or a report parameter.
+The `GetDataSources` method allows you to access and/or modify any [data source component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) in the report definition, regardless of whether they are referenced by a data item or a report parameter.
 
 An example in which this method will be useful is when the connection string, used by the report data sources, has to change dynamically at runtime.
 
 ## Solution
 
-Let's assume that the report file is with the `TRDP` extension, then the following code could be used to [unpackage]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}#unpackaging) the report and then to edit its connection and even the SQL query:
+Let's assume that the report file is with the `TRDP` extension, then the following code could be used to [unpackage](slug: telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition#unpackaging) the report and then to edit its connection and even the SQL query:
 
 ````C#
 var query = "SQL_QUERY_HERE";
@@ -80,5 +80,5 @@ If the above code is to be used for modifying reports displayed by an **HTML5-ba
 
 ## See Also
 
-* [Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
-* [How to display a report via InstanceReportSource in the HTML5 Viewer]({%slug how-to-display-a-report-via-instancereportsource-in-the-html5-viewer%})
+* [Embedded Report Engine](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)
+* [How to display a report via InstanceReportSource in the HTML5 Viewer](slug: how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)

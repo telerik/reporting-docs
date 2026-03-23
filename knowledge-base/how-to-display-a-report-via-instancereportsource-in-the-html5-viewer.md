@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-The [HTML5 Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview %}) and [Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) use client-server technology, different than the MVC model. Whole data objects cannot be sent in a request to the server. Even if the content is serialized, it may reach technology limitations in the size of requests. The HTML5 viewer sends short string messages describing which report, what parameters, and the rendering format to be used on the server. Reports are processed and rendered on the server.
+The [HTML5 Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview ) and [Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview ) use client-server technology, different than the MVC model. Whole data objects cannot be sent in a request to the server. Even if the content is serialized, it may reach technology limitations in the size of requests. The HTML5 viewer sends short string messages describing which report, what parameters, and the rendering format to be used on the server. Reports are processed and rendered on the server.
 
 The available MVC and WebForms wrappers of the HTML5 Viewer let you specify which report to display through the viewer's *ReportSource.Report*and *ReportSource.Parameters,* in code in a declarative manner.
 
@@ -58,11 +58,11 @@ The following is an example of how to update a **TRDP** report's **DataSource** 
 
 ## Notes
 
-Each HTML5 Viewer provides means to let you send a custom string and parameters collection, in case of using a [custom resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) for the reporting rest service. Such a resolver is required if you need to create/customize a report before displaying it.
+Each HTML5 Viewer provides means to let you send a custom string and parameters collection, in case of using a [custom resolver](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview) for the reporting rest service. Such a resolver is required if you need to create/customize a report before displaying it.
 
 After creating/modifying the report on the server, you can return an [InstanceReportSource](/api/telerik.reporting.instancereportsource) instance from the resolver's [Resolve method](/api/telerik.reporting.services.ireportsourceresolver#collapsible-Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__).
 
 ## See Also
 
-- [How to Set ReportSource for Report Viewers.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
-- [How to Implement a Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%})
+- [How to Set ReportSource for Report Viewers.](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
+- [How to Implement a Custom Report Source Resolver](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver)

@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-The ODBC connections are supported in the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}). For .NET Framework applications this comes out-of-the-box. In .NET and .NET Core 3.1+ they are supported as long as the `System.Data.ODBC` classes are supported.
+The ODBC connections are supported in the [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview). For .NET Framework applications this comes out-of-the-box. In .NET and .NET Core 3.1+ they are supported as long as the `System.Data.ODBC` classes are supported.
 
 ## Solution for .NET and .NET Core applications
 
@@ -54,7 +54,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 }
 ````
 
-The [How to register a DbProviderFactory in a .NET Core project]({%slug how-to-register-db-provider-factory-in-net-core-project%}) KB article explains how to register a `DbProviderFactory` instance in .NET and .NET Core apps.
+The [How to register a DbProviderFactory in a .NET Core project](slug: how-to-register-db-provider-factory-in-net-core-project) KB article explains how to register a `DbProviderFactory` instance in .NET and .NET Core apps.
 
 ## Solution for .NET Framework applications
 
@@ -62,6 +62,6 @@ If you use the Web Report Designer in .NET Framework application, there should b
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 * [OdbcConnection Class](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc.odbcconnection?view=dotnet-plat-ext-3.1)
-* [How to register a DbProviderFactory in a .NET Core project]({%slug how-to-register-db-provider-factory-in-net-core-project%})
+* [How to register a DbProviderFactory in a .NET Core project](slug: how-to-register-db-provider-factory-in-net-core-project)

@@ -26,12 +26,12 @@ The Data Source Wizard allows you to select from one of the available data sourc
 
 and selecting one of those choices, starts the respective wizard:
 
-* [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})
-* [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%})
-* [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%})
-* [OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%})
-* [CubeDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard%})
-* [OpenClientDataSource Wizard]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/how-to-configure-the-openclientdatasource-component%})
+* [SqlDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview)
+* [ObjectDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard)
+* [EntityDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard)
+* [OpenAccessDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard)
+* [CubeDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard)
+* [OpenClientDataSource Wizard](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/how-to-configure-the-openclientdatasource-component)
 
 There are two ways to start the Data Source wizard:
 
@@ -43,7 +43,7 @@ There are two ways to start the Data Source wizard:
 
 	![Invoking the DataSource Wizard of the Report Designer from the DataSource property of the data item](images/DataSourceWizard2.png)
 
-1. From the [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}), [Table and CrossTab Wizards]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}), Graph Wizard or Map Wizard: 
+1. From the [Report Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview), [Table and CrossTab Wizards](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards), Graph Wizard or Map Wizard: 
 
 	+ Navigate to __Choose Data Source__ page of the Wizard
 	+ click the __Add New Data Source__ button

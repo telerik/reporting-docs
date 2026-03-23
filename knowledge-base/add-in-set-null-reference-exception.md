@@ -71,13 +71,13 @@ The error message might mean that either the file storage got corrupted, or the 
 
 Depending on the environment specifications, you can approach the issue in the following ways:
 
-- In web farm environments, it is recommended to change the storage to use an `MsSqlServerStorage` or `RedisStorage` implementation. For further details, refer to the article on [IStorage implementation suitable for deploying in Web Farms]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
+- In web farm environments, it is recommended to change the storage to use an `MsSqlServerStorage` or `RedisStorage` implementation. For further details, refer to the article on [IStorage implementation suitable for deploying in Web Farms](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview).
 - In single-instance environments, reset the report viewer storage data by deleting the contents of the file storage folder. By default, the REST Service is using the temporary folder of the current user. If you are using the Telerik Report Server, the default file storage is placed in the product installation folder, that is, in `C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data`. Delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact.
 
 > tip It is recommended that you create a backup before resetting the storage.
 
 ## See Also
 
-- [REST Service Storage Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
-- [Configuring MS SQL Database Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage%})
-- [Using Redis Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage%})
+- [REST Service Storage Overview](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview)
+- [Configuring MS SQL Database Storage](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage)
+- [Using Redis Storage](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage)

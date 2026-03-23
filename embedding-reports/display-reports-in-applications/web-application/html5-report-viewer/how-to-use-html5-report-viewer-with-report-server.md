@@ -16,7 +16,7 @@ The quickest way to add an HTML5 Report Viewer to your web project is with the *
 
 ## Prerequisites
 
-1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
+1. Review the HTML5 Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support).
 1. Installed and running [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 1. Report Server's built-in **Guest** user should be enabled.
 1. Report Server should contain at least one report that can be accessed by the Guest user account.
@@ -43,7 +43,7 @@ The VS item template will integrate the HTML5 Report Viewer in a.html page and w
 
       ![The Visual Studio item template Add new Report Viewer on the page Setup Report Source for Report Server](images/item-template-report-source-rs.png)
 
-  1.  **'Configure Report Viewer'** exposes the option to enable [accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) for the report viewer.
+  1.  **'Configure Report Viewer'** exposes the option to enable [accessibility](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility) for the report viewer.
 
       ![The Visual Studio item template Add new Report Viewer on the page Configure Report Viewer for Enabling Accessibility](images/item-template-accessibility.png)
 
@@ -57,7 +57,7 @@ After finishing, the item template automatically does the following:
 
 Although the fastest and most convenient way to get a working HTML5 viewer in your application is to use the Visual Studio item templates, the same result can be achieved using manual configuration.
 
-1. Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working. Examine the produced HTML page and especially the section that configures the viewer:
+1. Follow the steps described in [HTML5 Viewer Manual Setup](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) article to get your HTML5 viewer working. Examine the produced HTML page and especially the section that configures the viewer:
 
    ```JavaScript
    $("#reportViewer1")
@@ -125,7 +125,7 @@ The most common reasons for failure are related to the authentication against th
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
+- [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [How To: Use HTML5 Report Viewer With REST Service](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service)
 - [Telerik Report Server](https://docs.telerik.com/report-server/introduction)
 - [How to: Add New Project Items](<https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)>)

@@ -23,20 +23,20 @@ Depending on the new features and changes in each new Telerik Reporting release,
 To upgrade Telerik Reporting:
 
 1. Check for any new features, fixes, breaking or dependency changes in the Telerik Reporting [Release History](https://www.telerik.com/support/whats-new/reporting/release-history).
-1. Install the desired Telerik Reporting version by using the Telerik Control Panel or [through the MSI installer file]({%slug telerikreporting/installation%}).
+1. Install the desired Telerik Reporting version by using the Telerik Control Panel or [through the MSI installer file](slug: telerikreporting/installation).
 1. Upgrade all projects that use Telerik Reporting as described in this article.
-1. Check for any updates between your current and desired versions in the articles with the specific changes in each Telerik Reporting release. For example, if your project currently targets Q3 2013, to upgrade to Q1 2014, review the articles for [Q3 2013]({%slug telerikreporting/upgrade/2013/q3-2013%}) and [Q1 2014]({%slug telerikreporting/upgrade/2014/q1-2014%}).
+1. Check for any updates between your current and desired versions in the articles with the specific changes in each Telerik Reporting release. For example, if your project currently targets Q3 2013, to upgrade to Q1 2014, review the articles for [Q3 2013](slug: telerikreporting/upgrade/2013/q3-2013) and [Q1 2014](slug: telerikreporting/upgrade/2014/q1-2014).
 
 For any persisting issues, use either of the following options: 
 
-* Refer to the article on [troubleshooting installation and upgrade issues]({%slug unable-to-upgrade-after-wizard%}) in Telerik Reporting.
+* Refer to the article on [troubleshooting installation and upgrade issues](slug: unable-to-upgrade-after-wizard) in Telerik Reporting.
 * Send the issue through the [dedicated Telerik Reporting support system](https://www.telerik.com/support/reporting) together with your project or solution in a `.zip` file.
 
 ## Major and Minor Releases
 
 Telerik Reporting supports the following types of releases:
 
-* Major versions&mdash; Can simultaneously coexist on the same machine. For example, major versions are the [Q3 2013]({%slug telerikreporting/upgrade/2013/q3-2013%}) and [Q1 2014]({%slug telerikreporting/upgrade/2014/q1-2014%}) releases.
+* Major versions&mdash; Can simultaneously coexist on the same machine. For example, major versions are the [Q3 2013](slug: telerikreporting/upgrade/2013/q3-2013) and [Q1 2014](slug: telerikreporting/upgrade/2014/q1-2014) releases.
 * Minor versions, or Service Packs (SP)&mdash; A major version can coexist on the same machine with only a single minor version from the same release. For example, when you upgrade the major Q1 2014 release to the later minor Q1 2014 SP1 release, the installer will first uninstall the Q1 2014 version and then install Q1 2014 SP1.
 
 If the new Telerik Reporting version is a major release, it will be installed next to the earlier releases. If the new Telerik Reporting version is a minor release, it will replace the corresponding major release.
@@ -45,7 +45,7 @@ If the new Telerik Reporting version is a major release, it will be installed ne
 
 ## Upgrading Projects Automatically
 
-To automatically upgrade your project to a later Telerik Reporting version, use the [Telerik Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).
+To automatically upgrade your project to a later Telerik Reporting version, use the [Telerik Upgrade Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).
 
 The Telerik Upgrade Wizard does not support website projects because [websites handle the assembly references in a different way](https://learn.microsoft.com/en-us/previous-versions/aspnet/dd547590(v=vs.110)). To upgrade your website project automatically, transform it into a web application. Alternatively, [upgrade your website project manually](#upgrading-website-projects-manually).
 
@@ -75,7 +75,7 @@ You can manually upgrade class library and website projects, and desktop and web
 	+ `telerikReportViewer-x.x.x.x(.min).js`―The JavaScript files of the HTML5 Report Viewer where `x.x.x.x` is the HTML5 Report Viewer and Telerik Reporting version (for example, `8.1.14.816`).
 	+ `telerikReportViewerTemplate.html`―The default HTML template page of the HTML5 Report Viewer.
 
-	(For WPF applications only) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any. For more information, refer to the article on [manually setting up the WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}). Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
+	(For WPF applications only) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any. For more information, refer to the article on [manually setting up the WPF ReportViewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project). Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
 
 1. Open all report resource files as XML―each `.resx` file appears under the respective report file. Locate all occurrences of a Telerik Reporting Assembly and update the version number to the new one. Unlike the version name (for example, `Q1 2008`), the version number is a technical identifier (for example, `2.5.8.414`).
 1. Restart Visual Studio and rebuild all updated projects.

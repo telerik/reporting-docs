@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-When you add a [List data item]({%slug table_template_items%}#list) in the report designer, it contains only a detail group with a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) inside:
+When you add a [List data item](slug: table_template_items#list) in the report designer, it contains only a detail group with a [Panel](slug: telerikreporting/designing-reports/report-structure/panel) inside:
 
 ![List item when added to a new report in the Standalone Report Designer.](images/AddList.png)
 
@@ -32,13 +32,13 @@ In many scenarios, you may need to add and display Headers in the List that repe
 
 ## Solution
 
-The List is a variation of the Table as explained in the article [Template Variations of the Table Report Item]({%slug table_template_items%}) and exposes the property [ColumnHeadersPrintOnEveryPage](/api/telerik.reporting.table#Telerik_Reporting_Table_ColumnHeadersPrintOnEveryPage). The property lets you print the Table Header on every page where the table/list appears.
+The List is a variation of the Table as explained in the article [Template Variations of the Table Report Item](slug: table_template_items) and exposes the property [ColumnHeadersPrintOnEveryPage](/api/telerik.reporting.table#Telerik_Reporting_Table_ColumnHeadersPrintOnEveryPage). The property lets you print the Table Header on every page where the table/list appears.
 
 By default, the List lacks the Table Header, so we must add it to use the property and display a header on every page. Here are the necessary steps:
 
 1. Insert a Row into the List:
 
-	* Right-click over the List to open the [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%})
+	* Right-click over the List to open the [Context Menu](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu)
 	* Select `Insert Row` -> `Outside Group - Above`
 
 	![Insert a row to the List in the Standalone Report Designer.](images/AddRowToList.png)
@@ -47,7 +47,7 @@ By default, the List lacks the Table Header, so we must add it to use the proper
 
 1. Add a Parent Group to the Column group defined by the just inserted row:
 
-	* Select the List and go to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}). Ensure the Group Explorer is in _Extended Mode_ that displays the static groups.
+	* Select the List and go to the [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer). Ensure the Group Explorer is in _Extended Mode_ that displays the static groups.
 	* Right-click over the column group to open the Context Menu
 	* Select `Add Group` -> `Parent Group`. This opens the Table Group wizard:
 
@@ -63,6 +63,6 @@ By default, the List lacks the Table Header, so we must add it to use the proper
 
 ## See Also
 
-* [Table Overview]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
-* [Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
-* [Table Cells, Rows, and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})
+* [Table Overview](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
+* [Crosstab Areas](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas)
+* [Table Cells, Rows, and Columns](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns)

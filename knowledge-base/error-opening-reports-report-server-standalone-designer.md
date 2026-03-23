@@ -26,7 +26,7 @@ ticketid: 1691680
 
 ## Description
 
-I encounter an error when attempting to open a report stored on [Telerik Report Server](https://www.telerik.com/report-server) in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). The error mentions a conflict in the HTTP controller due to multiple actions matching the same request.
+I encounter an error when attempting to open a report stored on [Telerik Report Server](https://www.telerik.com/report-server) in the [Standalone Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). The error mentions a conflict in the HTTP controller due to multiple actions matching the same request.
 
 ## Error Message
 

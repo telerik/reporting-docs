@@ -17,11 +17,11 @@ ticketid: 1680822
 
 ## Description
 
-This tutorial shows how to create and utilize custom [user functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+This tutorial shows how to create and utilize custom [user functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) in the [Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 
 ## Solution
 
-Let's start with creating a Class library (**.NET Framework**) project and add a **Report** class using the [Item Templates]({%slug reporting-integration-with-visual-studio%}) in Visual Studio.
+Let's start with creating a Class library (**.NET Framework**) project and add a **Report** class using the [Item Templates](slug: reporting-integration-with-visual-studio) in Visual Studio.
 
 ### User Functions Defined in the Report class
 
@@ -81,5 +81,5 @@ The custom function accepts an image URL and returns an Image object that can be
 
 ## See Also
 
-- [Visual Studio Templates]({%slug reporting-integration-with-visual-studio%})
-- [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+- [Visual Studio Templates](slug: reporting-integration-with-visual-studio)
+- [Custom User Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)

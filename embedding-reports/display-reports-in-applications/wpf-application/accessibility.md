@@ -36,7 +36,7 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 
 Since the accessibility uses the theme template, the modification of the accessibility key map must be done after the template is loaded. We recommend using the report viewer's [Loaded](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.loaded) event handler.
 
-All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [WPF Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).
+All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [WPF Report Viewer Localization](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization).
 
 > The additional markup, added to the report content when the accessibility is enabled, might result in a *small* performance penalty, especially on machines with outdated hardware. For best experience, we recommend enabling the accessibility features conditionally according to your user's needs.
 

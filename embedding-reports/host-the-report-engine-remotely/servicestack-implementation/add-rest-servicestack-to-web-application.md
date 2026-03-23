@@ -26,10 +26,10 @@ This article describes the steps required to host the **Telerik Reporting Servic
 
 1. Add references to the following Telerik Reporting assemblies (optional):
 
-   - `Telerik.Reporting.Cache.Database.dll` - only if [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended. For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}). The assembly has dependencies on Telerik Data Access which can be checked in the version corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});
-   - `Telerik.Reporting.OpenXmlRendering.dll` - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
+   - `Telerik.Reporting.Cache.Database.dll` - only if [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended. For more details check [Reporting REST Service Storage](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview). The assembly has dependencies on Telerik Data Access which can be checked in the version corresponding [Upgrade article](slug: telerikreporting/upgrade/overview);
+   - `Telerik.Reporting.OpenXmlRendering.dll` - depends on [Third-Party Dependencies](slug: telerikreporting/using-reports-in-applications/third-party-dependencies). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
    - `Telerik.Reporting.XpsRendering.dll` - required if you need to export in XPS format;
-   - `Telerik.Reporting.Adomd.dll` - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports. The assembly has dependencies on _Microsoft.AnalysisServices.AdomdClient.dll_ v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
+   - `Telerik.Reporting.Adomd.dll` - required if you use [CubeDataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview) components in reports. The assembly has dependencies on _Microsoft.AnalysisServices.AdomdClient.dll_ v.10.0.0.0 or [above with proper binding redirects](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services);
 
 1. Create a new class which derives from`ReportsHostBas`. It could be called _ReportsHost_ for example:
 
@@ -107,7 +107,7 @@ This article describes the steps required to host the **Telerik Reporting Servic
     End Class
      ```
 
-     Then, add the **restReportService** configuration element containing the service settings to the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
+     Then, add the **restReportService** configuration element containing the service settings to the [Telerik Reporting Configuration Section](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview).
 
      ```XML
      <Telerik.Reporting>
@@ -118,7 +118,7 @@ This article describes the steps required to host the **Telerik Reporting Servic
      </Telerik.Reporting>
      ```
 
-     For more information, see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
+     For more information, see [restReportService Element](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
 
 1. Add a new or use the existing **Global Application Class** `global.asax` to create and initialize the ServiceStack reports service in the `Application_Start` method:
 
@@ -161,12 +161,12 @@ This article describes the steps required to host the **Telerik Reporting Servic
 
    `http://localhost:[portnumber]/api/reports/formats`
 
-   If the request is successful you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
+   If the request is successful you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats).
 
 ## See Also
 
 - [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver)
 - [TypeReportSourceResolver](/api/Telerik.Reporting.Services.TypeReportSourceResolver)
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})
-- [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+- [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [Overview](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview)
+- [Manual Setup](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup)

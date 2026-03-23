@@ -48,4 +48,4 @@ There are two possible ways to fix the error:
 
 ## Notes
 
-Another possible reason to get this error message is if the jQuery script is loaded multiple times on the page. Please make sure that jQuery script is loaded only once, and that the application meets the [viewer requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}#requirements).
+Another possible reason to get this error message is if the jQuery script is loaded multiple times on the page. Please make sure that jQuery script is loaded only once, and that the application meets the [viewer requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview#requirements).

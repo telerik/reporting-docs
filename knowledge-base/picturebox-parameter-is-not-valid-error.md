@@ -26,13 +26,13 @@ res_type: kb
 
 ## Description
 
-I have embedded an image within the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item, however, in place of the image there is an error message about the parameter not being valid.
+I have embedded an image within the [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) report item, however, in place of the image there is an error message about the parameter not being valid.
 
 ![An image of how the error with the PictureBox appears within the Web Report Designer](images/invalid-image-data-picturebox.png)
 
 ## Steps to Reproduce
 
-Try to embed an image whose type is not supported by the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item, for example, a [`.webp`](https://en.wikipedia.org/wiki/WebP) image.
+Try to embed an image whose type is not supported by the [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) report item, for example, a [`.webp`](https://en.wikipedia.org/wiki/WebP) image.
 
 ## Error Message
 
@@ -63,10 +63,10 @@ Telerik Reporting utilizes the [GDI+](https://learn.microsoft.com/en-us/windows/
 ## Suggested Workarounds
 
 * Convert the images to one of the supported formats before using them
-* Implement a [custom User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that will handle the conversion of the `.webp` images to the supported formats at runtime.
+* Implement a [custom User Function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that will handle the conversion of the `.webp` images to the supported formats at runtime.
 
 ## See Also
 
-* [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})
+* [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox)
 * [Using Image Encoders and Decoders in Managed GDI+](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi?view=netframeworkdesktop-4.8)
-* [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}).
+* [User Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions).

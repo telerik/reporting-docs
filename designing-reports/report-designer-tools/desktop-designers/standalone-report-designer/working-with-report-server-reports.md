@@ -96,8 +96,8 @@ Use this procedure to save a report that is already opened from another location
 
 Another report from the server can be referenced using the *[CategoryName]/[ReportName]* path for the URI. Do not include the extension, i.e. _trdp_. For example: `Samples/Product Sales`. If the report's category is omitted then the category from the master report is inferred.
 
-A reference to another report can be used by the [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) passed to the:
+A reference to another report can be used by the [ReportSource](slug: telerikreporting/designing-reports/report-sources/overview) passed to the:
 
-* [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%})
-* [NavigateToReport action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
-* [ReportBook]({%slug telerikreporting/designing-reports/report-book/overview%})
+* [SubReport item](slug: telerikreporting/designing-reports/report-structure/subreport)
+* [NavigateToReport action](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action)
+* [ReportBook](slug: telerikreporting/designing-reports/report-book/overview)

@@ -20,7 +20,7 @@ This tutorial shows how to enable and configure AI-powered insights using built-
 
 To follow the steps from this tutorial, you must have:
 
-- A running application that hosts a [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+- A running application that hosts a [Telerik Reporting REST service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 - A report viewer connected to that REST service.
 - An active subscription (or local runtime) for an LLM model provider with API access. The supported out of the box ones are:
   - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/deployments-overview)
@@ -30,7 +30,7 @@ To follow the steps from this tutorial, you must have:
 
 > tip You can also connect to LLM providers that are not supported out of the box. 
 > <br /> To do this, create a custom `Telerik.Reporting.AI.IClient` implementation to integrate the provider into Reporting and enable the AI-powered insights functionality. 
-> <br /> For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client%}).
+> <br /> For more details, refer to the article [Enable AI-Powered Insights with Custom AI Client](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-custom-client).
 
 ## Using AI-Powered Insights with a REST service
 
@@ -45,7 +45,7 @@ To enable the AI-powered insights, follow these steps:
    > These packages depend on other NuGet packages that are currently in prerelease versions. .NET Framework projects using the `packages.config` format cannot automatically resolve prerelease dependencies, which may cause installation errors. 
    > <br /> To resolve this, first manually install the required prerelease packages using the NuGet Package Manager UI with the ["Include prerelease" option enabled](https://learn.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages), then install the Telerik Reporting AI package.
 
-1. Add the [AIClient element]({%slug telerikreporting/aiclient-element%}) to the report engine configuration in your application's configuration file. 
+1. Add the [AIClient element](slug: telerikreporting/aiclient-element) to the report engine configuration in your application's configuration file. 
 
     This element allows you to specify the AI model, endpoint, and authentication credentials. 
     
@@ -83,7 +83,7 @@ To enable the AI-powered insights, follow these steps:
    </configuration>
    ```
 
-> tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
+> tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) to get familiar with this topic.
 
 In this case, the `friendlyName` attribute identifies the LLM provider to the report engine. Each provider has specific configuration requirements:
 

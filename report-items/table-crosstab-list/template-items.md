@@ -45,12 +45,12 @@ You are not limited to your initial template choice. As you add groups, totals,
 
 You can also continue to develop a Table, CrossTab, or List by adding any table feature. Table features include displaying detail data or aggregates for grouped data in rows and columns. You can create nested groups, independent adjacent groups, or recursive groups. You can filter and sort grouped data, and combine groups by including multiple group expressions in a group definition.
 
-> You cannot use [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) in page sections ([**PageHeaderSection** or **PageFooterSection**]({%slug telerikreporting/designing-reports/overview%})), because page sections are processed after the report data&mdash;at that moment, the report data source is no longer available.
+> You cannot use [data items](slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview) in page sections ([**PageHeaderSection** or **PageFooterSection**](slug: telerikreporting/designing-reports/overview)), because page sections are processed after the report data&mdash;at that moment, the report data source is no longer available.
 
 ## See Also
 
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
-* [Table Cells, Rows, and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})
-* [CrossTab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
+* [Table Cells, Rows, and Columns](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns)
+* [CrossTab Areas](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas)
 * [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

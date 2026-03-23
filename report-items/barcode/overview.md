@@ -18,12 +18,12 @@ The Barcode report item automatically generates barcodes directly from numeric o
 
 ## Key Features 
 
-* [Support for one-dimensional (1D) Barcodes]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types%})—The Barcode report item supports linear barcode types such as EAN13, EAN8, UPC-A, UPC-E, and Code39.
-* [Support for two-dimensional (2D) Barcodes]({%slug 2d_barcodes_overview%})—The Barcode report item also supports matrix barcode types such as Data Matrix, QR Code, Swiss QR Code, and PDF417.
+* [Support for one-dimensional (1D) Barcodes](slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types)—The Barcode report item supports linear barcode types such as EAN13, EAN8, UPC-A, UPC-E, and Code39.
+* [Support for two-dimensional (2D) Barcodes](slug: 2d_barcodes_overview)—The Barcode report item also supports matrix barcode types such as Data Matrix, QR Code, Swiss QR Code, and PDF417.
 
 ## Next Steps
 
-* [Getting Started with the Barcode Report Item]({%slug barcode_item_get_started%})
+* [Getting Started with the Barcode Report Item](slug: barcode_item_get_started)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 

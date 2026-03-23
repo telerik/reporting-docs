@@ -24,7 +24,7 @@ when evaluated will result in:
 
 `Hi Mr. Smith, John!`
 
-If you want part of the expression to be put on another line, you have to insert a new line character in a string literal. For example, here is how the expression should look in the [Expression Editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}):
+If you want part of the expression to be put on another line, you have to insert a new line character in a string literal. For example, here is how the expression should look in the [Expression Editor](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog):
 
 ````
 ='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!

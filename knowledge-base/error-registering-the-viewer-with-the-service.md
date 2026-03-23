@@ -34,7 +34,7 @@ Where **NAME** is the name of the application and **VERSION** is the currently i
 
 ## Cause\Possible Cause(s)
 
-The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) cannot access the configured file storage. By default, the user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 
+The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview ) cannot access the configured file storage. By default, the user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 
 
 ## Solution
 
@@ -100,4 +100,4 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 Make sure that the IIS process has read/write access for the folder used by the storage. To give access to the folder go to Properties - Sharing|Security options or change the used application pool's Identity through IIS Manager.
 
 In case of different instances of the application running, set a unique **HostAppId** for each instance of the Reporting REST Service. Another approach is using MsSqlStorage or Redis, which are suitable for multiple instance environments. The settings must be added in the ReportsController.cs.
-The appropriate cache storage options should be considered depending on the hosting environment. Please check the available options in [REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
+The appropriate cache storage options should be considered depending on the hosting environment. Please check the available options in [REST Service Storage](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview).

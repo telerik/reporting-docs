@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-I want to embed the report document inside the mail message sent by the [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) functionality instead of sending it as an attachment.
+I want to embed the report document inside the mail message sent by the [Send Mail Message](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message) functionality instead of sending it as an attachment.
 
 ## Solution
 
@@ -195,7 +195,7 @@ The default method used for sending the email is [CreateMailMessage(SendDocument
    }
    ```
 
-1. The last step lies in using the [sendEmailBegin(e, args)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)%}) to stop the default handling of the send mail functionality and instead make a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) request to the new endpoint for the case where the selected option is `Embedded`:
+1. The last step lies in using the [sendEmailBegin(e, args)](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)) to stop the default handling of the send mail functionality and instead make a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) request to the new endpoint for the case where the selected option is `Embedded`:
 
    ```JS
    $("#reportViewer1")
@@ -243,6 +243,6 @@ The default method used for sending the email is [CreateMailMessage(SendDocument
 
 ## See Also
 
-- [Generating Reports Programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
-- [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%})
-- [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})
+- [Generating Reports Programmatically](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)
+- [Send Mail Message](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message)
+- [Implement Send Mail Message](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message)

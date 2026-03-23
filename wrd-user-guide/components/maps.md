@@ -40,8 +40,8 @@ The Maps are suitable for a variety of use cases:
 
 The Web Report Designer provides two main types of map components:
 
-* [Map]({%slug web-report-designer-user-guide-components-maps%}#map)&mdash;Displays data in various formats determined by the chosen Map Type: Point, Pie, or Column charts positioned on geographical locations.
-* [Choropleth]({%slug web-report-designer-user-guide-components-maps%}#choropleth)&mdash;A [thematic map](https://en.wikipedia.org/wiki/Choropleth_map) that uses graded color differences to display a measure over predefined regions or areas, making it one of the most popular ways to visualize how a measure varies across a geographic area.
+* [Map](slug: web-report-designer-user-guide-components-maps#map)&mdash;Displays data in various formats determined by the chosen Map Type: Point, Pie, or Column charts positioned on geographical locations.
+* [Choropleth](slug: web-report-designer-user-guide-components-maps#choropleth)&mdash;A [thematic map](https://en.wikipedia.org/wiki/Choropleth_map) that uses graded color differences to display a measure over predefined regions or areas, making it one of the most popular ways to visualize how a measure varies across a geographic area.
 
 >important Currently, the Web Report Designer allows only **displaying an already created** report (for example, using the Standalone Report Designer) that contains a Choropleth report item and simple fine-tuning. It is not possible to build a Choropleth from scratch in the Web Report Designer.
 
@@ -97,7 +97,7 @@ Since this tutorial uses the **AzureLocationProvider**, an Azure Maps subscripti
 
 ### Step 1: Adding the Data Source
 
-Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item with a connection to the AdventureWorks database. This data will be used to create the Pie Charts that are positioned on the map. Paste the following query in the `SELECT` statement box:
+Add a new [SQL Data Source](slug: web-report-designer-user-guide-components-data-sources) item with a connection to the AdventureWorks database. This data will be used to create the Pie Charts that are positioned on the map. Paste the following query in the `SELECT` statement box:
 
 ```SQL
 SELECT
@@ -185,7 +185,7 @@ The Choropleth below shows the 100 most populated countries:
 
 1. Set up the data binding:
 
-   * Bind your map to a data source containing values for each region, for example, [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}). Use the sample [PopulationData.csv](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its content to a folder.
+   * Bind your map to a data source containing values for each region, for example, [CSV Data Source](slug: web-report-designer-user-guide-components-data-sources). Use the sample [PopulationData.csv](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its content to a folder.
 
    * Configure a color scale based on your data values.
 
@@ -200,8 +200,8 @@ The Choropleth below shows the 100 most populated countries:
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Map Overview]({%slug map_report_item_overview%})
-* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
-* [Adding Choropleth Maps to the Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
+* [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Map Overview](slug: map_report_item_overview)
+* [Data Sources](slug: web-report-designer-user-guide-components-data-sources)
+* [Adding Choropleth Maps to the Report](slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard)
 * [Population Density Demo Report with Choropleth](https://demos.telerik.com/reporting/population-density)

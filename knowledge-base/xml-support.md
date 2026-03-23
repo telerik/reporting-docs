@@ -60,7 +60,7 @@ Let's imagine that you have a **BooksData.xml** file with the following content:
 </BooksDataSet>
 ```
 
-The XML data above can be integrated in the report by programmatically reading it and creating a [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset) object from it, which can be used via the [ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}).
+The XML data above can be integrated in the report by programmatically reading it and creating a [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset) object from it, which can be used via the [ObjectDataSource Component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview).
 
 To implement such a solution, you may follow the steps below:
 
@@ -190,11 +190,11 @@ To implement such a solution, you may follow the steps below:
    }
    ```
 
-1. Build the project, and then reference its assembly in the [Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net).
+1. Build the project, and then reference its assembly in the [Standalone Report Designer for .NET](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net).
 
-   Follow [Update the Designer Configuration File through the UI]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}#update-the-designer-configuration-file-through-the-ui) for instructions on how to reference the assembly.
+   Follow [Update the Designer Configuration File through the UI](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer#update-the-designer-configuration-file-through-the-ui) for instructions on how to reference the assembly.
 
-1. Start the [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%}) and select one of three methods to invoke and pull the data.
+1. Start the [ObjectDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard) and select one of three methods to invoke and pull the data.
 
    If the wizard finishes successfully, you will be able to continue designing the report with the XML data being parsed programmatically.
 
@@ -204,5 +204,5 @@ To implement such a solution, you may follow the steps below:
 
 ## See Also
 
-- [Update the Designer Configuration File through the UI]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}#update-the-designer-configuration-file-through-the-ui)
-- [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%})
+- [Update the Designer Configuration File through the UI](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer#update-the-designer-configuration-file-through-the-ui)
+- [ObjectDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard)

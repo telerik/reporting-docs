@@ -19,7 +19,7 @@ This tutorial demonstrates how to add the Angular Report Viewer component to a n
 The following list describes the prerequisites for this tutorial:
 
 - [Angular CLI](https://angular.io/cli).
-- Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
+- Review the Angular Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview#requirements).
 - A running instance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 
 ## Using Angular Report Viewer in Angular application
@@ -86,7 +86,7 @@ The following list describes the prerequisites for this tutorial:
     </tr-viewer>
     ```
 
-    For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
+    For all available report viewer options refer to [Options](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options).
 
 1.  Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _index.html_:
 
@@ -114,5 +114,5 @@ The following list describes the prerequisites for this tutorial:
 
 - [Telerik Report Server](https://docs.telerik.com/report-server/introduction)
 - [Angular CLI](https://angular.io/cli)
-- [Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%})
-- [Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements)
+- [Angular Report Viewer Options](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options)
+- [Angular Report Viewer Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview#requirements)

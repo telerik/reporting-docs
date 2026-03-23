@@ -25,7 +25,7 @@ res_type: kb
 In some reports, you may need to display each data field character/digit in a separate TextBox surrounded by borders.
 
 ## Solution
-You may achieve the requirement with a List with a Rotated layout, in which `DataSource` is set to the array of the characters of the corresponding data field. You may use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `DataSource` of the List with the following [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}):
+You may achieve the requirement with a List with a Rotated layout, in which `DataSource` is set to the array of the characters of the corresponding data field. You may use [Bindings](slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for the `DataSource` of the List with the following [Expression](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview):
 
 ````
 = Fields.Value.ToCharArray()

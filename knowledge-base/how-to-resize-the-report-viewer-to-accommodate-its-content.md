@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-When the report page displayed in the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is too long, a vertical scrollbar appears inside the viewer. This behavior aids in viewer-exclusive webpages, but may not look perfect in more complex user applications which might have their own containers with scrollbars, or even a scrollbar appearing in the browser. Multiple scrollbars inside a single webpage may deteriorate the overall user experience.
+When the report page displayed in the [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) is too long, a vertical scrollbar appears inside the viewer. This behavior aids in viewer-exclusive webpages, but may not look perfect in more complex user applications which might have their own containers with scrollbars, or even a scrollbar appearing in the browser. Multiple scrollbars inside a single webpage may deteriorate the overall user experience.
 
 ## Solution
 

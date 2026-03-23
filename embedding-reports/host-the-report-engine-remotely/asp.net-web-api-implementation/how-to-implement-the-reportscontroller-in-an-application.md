@@ -23,10 +23,10 @@ This abstract class requires [IReportSourceResolver](/api/Telerik.Reporting.Serv
 
 1.  Add references to the following Telerik Reporting assemblies (optional) and set their **Copy Local** properties to true in Visual Studio:
 
-    - Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended. For more details, check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}). The assembly has dependencies on Telerik Data Access, which can be checked in the version corresponding to [Upgrade article]({%slug telerikreporting/upgrade/overview%});
-    - Telerik.Reporting.OpenXmlRendering.dll - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
+    - Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended. For more details, check [Reporting REST Service Storage](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview). The assembly has dependencies on Telerik Data Access, which can be checked in the version corresponding to [Upgrade article](slug: telerikreporting/upgrade/overview);
+    - Telerik.Reporting.OpenXmlRendering.dll - depends on [Third-Party Dependencies](slug: telerikreporting/using-reports-in-applications/third-party-dependencies). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
     - Telerik.Reporting.XpsRendering.dll - required if you need to export in XPS format;
-    - Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports. The assembly has dependencies on _Microsoft.AnalysisServices.AdomdClient.dll_ v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
+    - Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview) components in reports. The assembly has dependencies on _Microsoft.AnalysisServices.AdomdClient.dll_ v.10.0.0.0 or [above with proper binding redirects](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services);
 
     > Without setting Telerik Reporting references' _Copy Local_ to true, the assemblies may not be loaded correctly when running the application.
 
@@ -59,10 +59,10 @@ This abstract class requires [IReportSourceResolver](/api/Telerik.Reporting.Serv
         {{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
         {{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
 
-    Then add the **restReportService** configuration element containing the service settings to the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
+    Then add the **restReportService** configuration element containing the service settings to the [Telerik Reporting Configuration Section](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview).
 
     {{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
 
 ## See Also
 
-- [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+- [restReportService Element](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element)

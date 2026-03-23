@@ -21,9 +21,9 @@ table th:nth-of-type(2) {
 
 # Table Group Dialog Overview
 
-The Table Group dialog allows you to add and configure row and column groups for Table, Crosstab, and List items in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+The Table Group dialog allows you to add and configure row and column groups for Table, Crosstab, and List items in the [Standalone Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and [Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 
-You can invoke the Table Group dialog when adding a new group through the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
+You can invoke the Table Group dialog when adding a new group through the [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 
 ## Dialog Configuration Options
 
@@ -53,7 +53,7 @@ Configure whether and how the group header appears.
 | Option | Description |
 | ------ | ----------- |
 | **Add Header** | Adds a group header row (for row groups) or column (for column groups). The header displays once at the beginning of each group. |
-| **Repeat On Every Page** | Repeats the group header on every page where the group appears. This option is only enabled when **Add Header** is selected. Useful for multi-page reports where a group spans multiple pages. When this option is enabled, the content of the repeated header can be controlled with the [`ReportItem.IsRepeated`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportitem) property in expressions to display different content for the first and subsequent appearances. To change the repeat behavior after group creation, see [Edit the Repeat On Every Page Behavior]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}#edit-the-repeat-on-every-page-behavior). |
+| **Repeat On Every Page** | Repeats the group header on every page where the group appears. This option is only enabled when **Add Header** is selected. Useful for multi-page reports where a group spans multiple pages. When this option is enabled, the content of the repeated header can be controlled with the [`ReportItem.IsRepeated`](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects#reportitem) property in expressions to display different content for the first and subsequent appearances. To change the repeat behavior after group creation, see [Edit the Repeat On Every Page Behavior](slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item#edit-the-repeat-on-every-page-behavior). |
 
 ### Group Footer Options
 
@@ -64,13 +64,13 @@ Configure whether and how the group footer appears.
 | Option | Description |
 | ------ | ----------- |
 | **Add Footer** | Adds a group footer row (for row groups) or column (for column groups). The footer displays once at the end of each group. |
-| **Repeat On Every Page** | Repeats the group footer on every page where the group appears. This option is only enabled when **Add Footer** is selected. When this option is enabled, the content of the repeated footer can be controlled with the [`ReportItem.IsRepeated`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportitem) property in expressions. To change the repeat behavior after group creation, see [Edit the Repeat On Every Page Behavior]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}#edit-the-repeat-on-every-page-behavior). |
+| **Repeat On Every Page** | Repeats the group footer on every page where the group appears. This option is only enabled when **Add Footer** is selected. When this option is enabled, the content of the repeated footer can be controlled with the [`ReportItem.IsRepeated`](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects#reportitem) property in expressions. To change the repeat behavior after group creation, see [Edit the Repeat On Every Page Behavior](slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item#edit-the-repeat-on-every-page-behavior). |
 
 >caution Repeatable headers and footers are not compatible with the `PageBreak` property. If any group in the table has a `PageBreak` value other than `None`, repeatable headers and footers will not be processed and rendered, even if `PrintOnEveryPage` is enabled.
 
 ## See Also
 
-* [Adding Groups to Tables]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%})
-* [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
-* [Table Group Dialog (Web Report Designer)]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-group-dialog%})
-* [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%})
+* [Adding Groups to Tables](slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item)
+* [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
+* [Table Group Dialog (Web Report Designer)](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-group-dialog)
+* [Display Continued Text for Repeated Table Group Headers](slug: display-different-content-for-repeated-table-group-headers)

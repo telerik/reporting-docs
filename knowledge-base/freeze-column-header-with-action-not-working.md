@@ -27,11 +27,11 @@ res_type: kb
 
 ## Description
 
-When you [Freeze Column Headers]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-header-freezing%}) of a Table/Crosstab and apply an [Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) to a Table Header Cell, the headers don't freeze in the web viewers.
+When you [Freeze Column Headers](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-header-freezing) of a Table/Crosstab and apply an [Action](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview) to a Table Header Cell, the headers don't freeze in the web viewers.
 
 ## Suggested Workarounds
 
-Add the TextBox with the Action in a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) rather than directly in the Table/Crosstab cell. This sets the action on an item that is not directly in the Table/Crosstab and allows the header to freeze as expected in the Html5 Report Viewer and its wrappers.
+Add the TextBox with the Action in a [Panel](slug: telerikreporting/designing-reports/report-structure/panel) rather than directly in the Table/Crosstab cell. This sets the action on an item that is not directly in the Table/Crosstab and allows the header to freeze as expected in the Html5 Report Viewer and its wrappers.
 
 ## See Also
 

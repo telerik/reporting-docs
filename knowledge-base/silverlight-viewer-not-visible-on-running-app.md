@@ -42,4 +42,4 @@ As of Telerik Reporting Q1 2014, the Silverlight ReportViewer uses implicit styl
 
 ## Solution  
 
-To solve the issue, double-check if the XAML resources are loaded in the application. For more details about the settings required by the Silverlight ReportViewer, refer to the article on [adding the report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).
+To solve the issue, double-check if the XAML resources are loaded in the application. For more details about the settings required by the Silverlight ReportViewer, refer to the article on [adding the report viewer to a Silverlight application](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application).

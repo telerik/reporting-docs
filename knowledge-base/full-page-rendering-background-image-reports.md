@@ -34,14 +34,14 @@ This knowledge base article also answers the following questions:
 
 To ensure the background image covers the entire page, use one of the following approaches:
 
-* Use [Watermarks]({%slug telerikreporting/designing-reports/rendering-and-paging/watermarks%}) instead of setting the background image in the Style property of the Report or its Detail section. Watermarks are part of the PageSettings and are drawn on the entire page, ensuring the background appears fully even on pages with minimal data.
+* Use [Watermarks](slug: telerikreporting/designing-reports/rendering-and-paging/watermarks) instead of setting the background image in the Style property of the Report or its Detail section. Watermarks are part of the PageSettings and are drawn on the entire page, ensuring the background appears fully even on pages with minimal data.
 * Alternatively, set the `PageSettings > Style > Background Image` property. This will render the image on the entire page.
 
 Both above settings are respected only in hard pagination formats like PrintPreview or PDF.
 
-This means that in Interactive View Mode of the Report Viewer (see [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})), the background image/watermark won't be visible. To overcome this, you may switch the `viewMode` of your Viewer to `PRINT_PREVIEW`. The PageSettings, including Watermarks and Background Image, are respected in this mode.
+This means that in Interactive View Mode of the Report Viewer (see [Interactive and Print Layouts](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout)), the background image/watermark won't be visible. To overcome this, you may switch the `viewMode` of your Viewer to `PRINT_PREVIEW`. The PageSettings, including Watermarks and Background Image, are respected in this mode.
 
 ## See Also
 
-* [Watermarks Documentation]({%slug telerikreporting/designing-reports/rendering-and-paging/watermarks%})
-* [Styling Report Items Documentation]({%slug telerikreporting/designing-reports/styling-reports/styling-report-items%})
+* [Watermarks Documentation](slug: telerikreporting/designing-reports/rendering-and-paging/watermarks)
+* [Styling Report Items Documentation](slug: telerikreporting/designing-reports/styling-reports/styling-report-items)

@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).  
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
 
 The old ASP.NET WebForms ReportViewer does not display reports after refresh.
 
@@ -42,8 +42,8 @@ The old ASP.NET WebForms ReportViewer displays content delivered by its `Telerik
 
 To solve the issue, try the following approaches:
 
-* Verify that the `Telerik.ReportViewer.axd` handler is [registered in both the `system.Web` and `system.webServer` sections]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%}).
+* Verify that the `Telerik.ReportViewer.axd` handler is [registered in both the `system.Web` and `system.webServer` sections](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page).
 
-* Make sure that the viewer is added in a valid [AJAX scenario]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%}).         
+* Make sure that the viewer is added in a valid [AJAX scenario](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support).         
 
 * If you are using Visual Studio 2013 or later, [disable the BrowserLink feature](http://www.asp.net/visual-studio/overview/2013/using-browser-link).

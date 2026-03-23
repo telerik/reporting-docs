@@ -42,5 +42,5 @@ To extract and save the original image embedded in a PictureBox within a Telerik
 
 ## See Also
 
-- [Telerik Reporting Documentation]({%slug telerikreporting/welcome-to-telerik-reporting!%})
-- [How to Add a PictureBox to a Report]({%slug telerikreporting/designing-reports/report-structure/picturebox%})
+- [Telerik Reporting Documentation](slug: telerikreporting/welcome-to-telerik-reporting!)
+- [How to Add a PictureBox to a Report](slug: telerikreporting/designing-reports/report-structure/picturebox)

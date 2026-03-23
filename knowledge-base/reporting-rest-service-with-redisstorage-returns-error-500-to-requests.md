@@ -106,4 +106,4 @@ If you use a newer version of *StackExchange.Redis.dll*, you will need a [bind
 
 ## See Also
 
-[How to: Use Redis storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage%}). 
+[How to: Use Redis storage](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage). 

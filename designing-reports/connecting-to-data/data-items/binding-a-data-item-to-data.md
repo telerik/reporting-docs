@@ -20,30 +20,30 @@ To perform the binding, you need to set the data item's **DataSource** property 
 
 ## Binding to data at design-time
 
-Data Source Components are used to connect to data at design-time. Having valid data source attached to a [Data Source Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) at design-time allows you to take advantage of all design time features and work with the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}).
+Data Source Components are used to connect to data at design-time. Having valid data source attached to a [Data Source Component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) at design-time allows you to take advantage of all design time features and work with the [Data Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
 
-For more information please see [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) and [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}).
+For more information please see [Data Source Components](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) and [DataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard).
 
 After you create and configure a data source component via its wizard you can assign it to the data item's **DataSource** property using the **Properties** window in the report designer.
 
 ## Binding to data at run-time
 
-To bind a data item to data at run-time, you need to access the **DataSource** property of the data item and set its value programmatically. For more information on how to access data items please see [Access Report Items Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%}).
+To bind a data item to data at run-time, you need to access the **DataSource** property of the data item and set its value programmatically. For more information on how to access data items please see [Access Report Items Programmatically](slug: telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically).
 
 ## Binding to data from the parent data item
 
 Oftentimes the data needed for your Table, Chart, or another data item will already be present in the parent's data source e.g., the report's data source. In such cases, you can improve the report performance by reusing the data from the parent, instead of creating and configuring a new data source component to retrieve the data anew.
 
-You can reuse the data by adding a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the data item's **DataSource** property, which sets the following expression:
+You can reuse the data by adding a [Binding](slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to the data item's **DataSource** property, which sets the following expression:
 
 `= ReportItem.DataObject`
 
 ![Image showing the bindings applied to a list.](./images/DataItems/ReportItemDataObjectBinding.png)
 
-The **DataObject** property is an object instance representing the data that an item is bound to when processed. Depending on the [Data Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope%}) in which the data item is present, **DataObject** may return all of the parent's data or a selection of its data rows.
+The **DataObject** property is an object instance representing the data that an item is bound to when processed. Depending on the [Data Scope](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope) in which the data item is present, **DataObject** may return all of the parent's data or a selection of its data rows.
 
 For example, binding a Graph located inside a report group will result in the Graph retrieving data only for the current report group instance.
 
 > To reach the data of an item that is higher in the hierarchy, you can use **Parent** keyword: `= ReportItem.Parent.DataObject`. Parent keyword can be used as many times as neccessary in order to reach the required item.
 
-For more information please see [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}).
+For more information please see [How to use the ReportItem.DataObject property in expressions](slug: telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions).

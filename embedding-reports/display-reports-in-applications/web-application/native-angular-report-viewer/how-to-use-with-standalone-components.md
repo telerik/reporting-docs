@@ -17,9 +17,9 @@ This tutorial demonstrates how to add the native Angular Report Viewer component
 
 The following list describes the prerequisites for completing the tutorial:
 
-- Review the Native Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%}).
+- Review the Native Angular Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements).
 - [Angular CLI Project](https://angular.dev/tools/cli).
-- A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+- A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 
 ### Steps:
 
@@ -115,8 +115,8 @@ The following list describes the prerequisites for completing the tutorial:
 ## See Also
 
 - [Angular CLI](https://angular.dev/tools/cli)
-- [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
-- [Enabling CORS for the Reporting REST Service]({%slug cannot-access-the-reporting-rest-service%})
-- [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
-- [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-- [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})
+- [Native Angular Report Viewer Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements)
+- [Enabling CORS for the Reporting REST Service](slug: cannot-access-the-reporting-rest-service)
+- [Native Angular Report Viewer Options](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options)
+- [Native Angular Report Viewer Commands](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands)
+- [Native Angular Report Viewer Events](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events)

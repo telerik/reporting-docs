@@ -30,9 +30,9 @@ A key milestone in report authoring is designing the report, which takes place i
 
 Telerik Reporting provides three distinct report designers to accommodate any use case:
 
-* [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Integrated Report Designer for Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
+* [Standalone Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+* [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Integrated Report Designer for Visual Studio](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
 
 All three Telerik report designers provide options for:
 
@@ -44,7 +44,7 @@ All three Telerik report designers provide options for:
 
 The report definition is the model that contains the declarations of all the report items, data-binding components and rules, and styling options that build the report.
 
-To create a report, you need to generate a report definition file by using the supported [Telerik Report Designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
+To create a report, you need to generate a report definition file by using the supported [Telerik Report Designers](slug: telerikreporting/designing-reports/report-designer-tools/overview).
 
 * If you design a report in the Report Designer for Visual Studio, the result is a class inheriting `Telerik.Reporting.Report`. These are the so-called __Type Report Definitions__. They may be referenced also as _CLR_ (Common Language Runtime), _CS_ (C Sharp), or _VB_ (Visual Basic) report definitions. These separate CLR types may be passed to the Reporting engine through the built-in [TypeReportSource](/api/telerik.reporting.typereportsource).
 * If you design a report through the Standalone Report Designer, the result is a `TRDX` or `TRDP` file containing a `Telerik.Reporting.Report` object serialized in plain or compressed XML. These reports are referenced as __Declarative Report Definitions__. They may be passed to the Reporting engine with the built-in [UriReportSource](/api/Telerik.Reporting.UriReportSource).
@@ -52,13 +52,13 @@ To create a report, you need to generate a report definition file by using the s
 
 When designing a report, you can either start from scratch with an empty report, or use one of the report template wizards that are tailored to fit a particular scenario, for example, a band report, an invoice, a product catalog, and so on. Report Designers add sections and items on your command, resulting in a template that you can further process by the Reporting engine.
 
-The Report Designers provide a design-time preview in both [Interactive and Print previews]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}) to verify the designed template and how it will look with data.
+The Report Designers provide a design-time preview in both [Interactive and Print previews](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout) to verify the designed template and how it will look with data.
 
 ### Connecting to Data
 
 During the design stage, the report author has to configure the rules on how the data will be provided to the report. The components that are handling this task are the so-called data source components.
 
-The data source components are designed for specific scenarios and their purpose is to fetch data from the remote data set and deliver it to the [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) that is used in the report, for example, `Table`, `Crosstab`, `Graph`, `Map`, or the report itself.
+The data source components are designed for specific scenarios and their purpose is to fetch data from the remote data set and deliver it to the [data item](slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview) that is used in the report, for example, `Table`, `Crosstab`, `Graph`, `Map`, or the report itself.
 
 * To connect to a database through the ADO.NET, ODBC, or OleDB data provider, use a `SqlDataSource` component.
 * To get data by using an MDX query from an OLAP cube model in a multi-dimensional data set, use a `CubeDataSource` component.
@@ -74,8 +74,8 @@ You can control the connection information that is used by the data sources exte
 
 The Report Designers support the conversion of report definition types to their own type. For example:
 
-* If you have used the Web Report Designer or the Standalone Report Designer to create a `TRDX` or `TRDP` file, you can import the file into the Visual Studio Report Designer by using a dedicated [Import Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
-* The opposite process is also supported. You can convert an assembly containing `Telerik.Reporting.Report` classes into a set of `TRDX` or `TRDP` files by using the [Import Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer%}) of the Standalone Report Designer.
+* If you have used the Web Report Designer or the Standalone Report Designer to create a `TRDX` or `TRDP` file, you can import the file into the Visual Studio Report Designer by using a dedicated [Import Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer).
+* The opposite process is also supported. You can convert an assembly containing `Telerik.Reporting.Report` classes into a set of `TRDX` or `TRDP` files by using the [Import Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) of the Standalone Report Designer.
 
 When authoring reports in Visual Studio, it is recommended that you create a separate `ClassLibrary` project or use the Report Library project template to hold your reports designed in Visual Studio. This approach will facilitate the maintenance and usage of the reports in different projects.
 
@@ -83,7 +83,7 @@ The Visual Studio Project provides templates and a wizard that will guide you in
 
 If you choose to use the Visual Studio Report Designer and store your reports as .NET/.NET Framework classes, the most efficient way to structure your reporting solution is to first create a class library that contains your reports. Then, you can reference this class library in applications that view the reports. You can have any number of Windows or Web viewing applications that are re-using the same class library. This solution structure decouples your program logic from the report and its data.
 
-Since the Standalone Report Designer and the Visual Studio Report Designer share a lot of common code, their [wizards]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) and dialogs look and behave the same way. The Web Report Designer, which is a JavaScript widget, preserves a lot of this behavior for consistency but upgrades it further to achieve better UX and provide higher productivity to the report authors.
+Since the Standalone Report Designer and the Visual Studio Report Designer share a lot of common code, their [wizards](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview) and dialogs look and behave the same way. The Web Report Designer, which is a JavaScript widget, preserves a lot of this behavior for consistency but upgrades it further to achieve better UX and provide higher productivity to the report authors.
 
 ## Viewing Reports with Report Viewers
 
@@ -97,4 +97,4 @@ The Report Viewer usually needs only a Report Source that points to your report 
 
 ## See Also
 
-* [Web Report Designer User Guide]({%slug user-guide/overview%})
+* [Web Report Designer User Guide](slug: user-guide/overview)

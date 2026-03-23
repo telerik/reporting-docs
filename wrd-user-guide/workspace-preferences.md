@@ -50,4 +50,4 @@ The `GENERAL` settings section provides options that control how the application
 
 ## See Also
 
-* [Web Report Designer]({%slug user-guide/overview%})
+* [Web Report Designer](slug: user-guide/overview)

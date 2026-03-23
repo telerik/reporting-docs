@@ -18,7 +18,7 @@ The report identifier and all required parameter values for it are packed in a `
 
 ## Example of using the setReportSource command
 
-The following example will demonstrate how a [select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) control outside of the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) can have its `selected` value passed to the report viewer's `reportSource`:
+The following example will demonstrate how a [select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) control outside of the [Native Angular Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) can have its `selected` value passed to the report viewer's `reportSource`:
 
 ```HTML
 <select #orderNumber [value]="'SO51081'" (change)="onChange(orderNumber.value)">
@@ -53,9 +53,9 @@ export class AppComponent {
 
 ## See Also
 
-- [How to Use the Native Angular Report Viewer with Reporting Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service%})
-- [How to Use the Native Angular Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server%})
-- [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
-- [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
-- [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-- [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})
+- [How to Use the Native Angular Report Viewer with Reporting Service](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service)
+- [How to Use the Native Angular Report Viewer with Report Server](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server)
+- [Native Angular Report Viewer Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements)
+- [Native Angular Report Viewer Options](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options)
+- [Native Angular Report Viewer Commands](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands)
+- [Native Angular Report Viewer Events](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events)

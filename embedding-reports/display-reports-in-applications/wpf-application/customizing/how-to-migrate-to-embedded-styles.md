@@ -12,7 +12,7 @@ previous_url: /wpf-report-viewer-migrate-to-embedded-styles, /embedding-reports/
 
 # Migrating to Embedded Styling
 
-With [Telerik Reporting R2 2018 SP1(12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620), we have introduced implicit XAML styles embedded in the new `Telerik.ReportViewer.Wpf.Themes` assembly. This will further simplify the update process, and no manual XAML styles replacement will be required. Once the project is migrated to *embedded* XAML style, the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) will automatically update the `Telerik.ReportViewer.Wpf.Themes` assembly.
+With [Telerik Reporting R2 2018 SP1(12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620), we have introduced implicit XAML styles embedded in the new `Telerik.ReportViewer.Wpf.Themes` assembly. This will further simplify the update process, and no manual XAML styles replacement will be required. Once the project is migrated to *embedded* XAML style, the [Upgrade Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) will automatically update the `Telerik.ReportViewer.Wpf.Themes` assembly.
 
 > Migration to embedded XAML styles is only possible for the default implicit XAML styles that haven't been previously modified.
 

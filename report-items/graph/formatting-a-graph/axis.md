@@ -33,7 +33,7 @@ You can also choose not to render the axes elements and, as a result, the axes v
 
 > * When you work with discrete values, such as DatetimeScale, NumericalScale, LogarithmicScale, you need at least two data points to have a properly calculated axis range and visible data.
 > * Setting the **Minimum** and **Maximum** properties of the scale can resolve issues related to insufficient data.
-> * To have the axis range set based on data, use [bindings to control the coordinate system properties]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties%}).
+> * To have the axis range set based on data, use [bindings to control the coordinate system properties](slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties).
 
 ## Labels
 
@@ -92,7 +92,7 @@ Note that using this feature may ignore some of the scale properties, such as __
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
+* [Structure and Elements of the Graph](slug: telerikreporting/designing-reports/report-structure/graph/structure)
 * [GraphAxis](/api/Telerik.Reporting.GraphAxis)
 * [LabelFormat](/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)
 * [LabelPlacement](/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)

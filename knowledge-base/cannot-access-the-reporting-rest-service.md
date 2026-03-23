@@ -29,11 +29,11 @@ res_type: kb
 
 ## Cause\Possible Cause(s)
 
-The error indicates that the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is not working properly or cannot be accessed by the viewer.
+The error indicates that the [Telerik Reporting REST Service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is not working properly or cannot be accessed by the viewer.
 
 ## Solution
 
-There are two main reasons for this error. To identify that, check the response to `/api/reports/formats` GET request that should return the available document formats - see [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}) article.
+There are two main reasons for this error. To identify that, check the response to `/api/reports/formats` GET request that should return the available document formats - see [Get Available Document Formats](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats) article.
 
 1. **The REST Service is missing or not configured correctly**:
 
@@ -41,12 +41,12 @@ There are two main reasons for this error. To identify that, check the response 
 
 	* Check whether the `ReportsController` is configured correctly
 
-		+ In ASP.NET as explained in the articles under [ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%})
-		+ In ASP.NET Core as explained in the articles under [ASP.NET Core Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%}).
+		+ In ASP.NET as explained in the articles under [ASP.NET Web API Implementation](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview)
+		+ In ASP.NET Core as explained in the articles under [ASP.NET Core Web API Implementation](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview).
 
-	* Check the viewer's [serviceUrl]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and adjust the relative path
+	* Check the viewer's [serviceUrl](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) and adjust the relative path
 	* Test adding `~` or remove the first `/` - [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN)
-	* The issue might be related to WebAPI controllers duplicating routes, which can be avoided by [changing the registered by default Telerik Reporting REST Web API routes]({%slug how-to-change-reporting-rest-web-api-routes-registered-by-default%}).
+	* The issue might be related to WebAPI controllers duplicating routes, which can be avoided by [changing the registered by default Telerik Reporting REST Web API routes](slug: how-to-change-reporting-rest-web-api-routes-registered-by-default).
 
 1. **CORS is not configured correctly**: If the REST Service is returning the available export formats, the report viewer client may not be able to access the service due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) limitations. When such an issue is present you will see a CORS-related error message in the browser's developer tools console (press `F12` to open it). When hosting the service in a separate application you will need to enable CORS as explained in [Enable cross-origin requests in ASP.NET Web API 2 article](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api).
 
@@ -60,5 +60,5 @@ If the problem persists, [record a SAZ file](https://docs.telerik.com/fiddler/sa
 
 To help troubleshoot the issue, you may also record a trace listener log:
 
-* For ASP.NET Core application, see the [Troubleshooting reporting implementation into ASP.NET Core application]({%slug how-to-troubleshoot-errors-in-asp-net-core-applications%}) article.
+* For ASP.NET Core application, see the [Troubleshooting reporting implementation into ASP.NET Core application](slug: how-to-troubleshoot-errors-in-asp-net-core-applications) article.
 * For .NET Framework application, see the [Create and Initialize Trace Listeners](https://learn.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) Microsoft article.

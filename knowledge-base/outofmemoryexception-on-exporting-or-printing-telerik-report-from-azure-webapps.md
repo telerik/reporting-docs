@@ -45,8 +45,8 @@ The reason for the error is that Windows Azure Web Apps restricts applications f
 
 	For the purpose:
 
-	* Declare [Telerik.Reporting Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-	* Add the setting for the [DOCX]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings%}), [PPTX]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings%}), [XLSX]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings%}), and [RTF]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings%}) rendering extensions:
+	* Declare [Telerik.Reporting Section](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+	* Add the setting for the [DOCX](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings), [PPTX](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings), [XLSX](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings), and [RTF](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings) rendering extensions:
 
 		````XML
 <configuration> 
@@ -127,9 +127,9 @@ The reason for the error is that Windows Azure Web Apps restricts applications f
 ## See Also
 
 * [Report Viewer Control - Fix for export to PDF available?](https://social.msdn.microsoft.com/forums/azure/en-US/d14bc4fa-256e-4f8f-9682-432ab556f74d/report-viewer-control-fix-for-export-to-pdf-available?forum=windowsazurewebsitespreview)
-* [Telerik.Reporting Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-* [DOCX Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings%})
-* [PPTX Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings%})
-* [XLSX Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings%})
-* [RTF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings%})
-* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})
+* [Telerik.Reporting Section](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+* [DOCX Device Information Settings](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings)
+* [PPTX Device Information Settings](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings)
+* [XLSX Device Information Settings](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings)
+* [RTF Device Information Settings](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings)
+* [Problems When Rendering Teleik Reports in Azure](slug: azure-reporting-problems)

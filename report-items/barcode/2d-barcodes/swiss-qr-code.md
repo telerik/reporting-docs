@@ -36,7 +36,7 @@ The most important characteristics of the Swiss QR Barcode are:
 
 ## Settings
 
-Since the Swiss QR barcode is an extension of the QR barcode symbology, some of the [settings applicable to QR barcode]({% slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview %}#settings) are also applicable to the Swiss QR barcode.
+Since the Swiss QR barcode is an extension of the QR barcode symbology, some of the [settings applicable to QR barcode]({% slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview #settings) are also applicable to the Swiss QR barcode.
 
 ### Bill Data
 

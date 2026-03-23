@@ -71,6 +71,6 @@ Then, save the configuration file and restart your report designer.
 
 ### Step 3: Convert Your ActiveReports
 
-Use the [Import Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%}) and select **ActiveReports** from the list of available converters to start the converter.
+Use the [Import Report Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard) and select **ActiveReports** from the list of available converters to start the converter.
 
 > "ActiveReports" is a trademark of **Data Dynamics**.

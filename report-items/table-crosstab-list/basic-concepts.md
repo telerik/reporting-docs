@@ -24,7 +24,7 @@ As you define groups for a Table, CrossTab, or List, the Report Designer adds ro
 
 Detail data is all the data that comes back from the table data source. Detail data is essentially what you see in the query designer results pane when you run a database query.
 
-The actual detail data includes, and is restricted by, filters that are set on the data source, [data region]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), and details group. To display detail data on a detail row, use a simple expression such as `=Fields.ProductCategory`. When the report runs, the detail row repeats once for each row in the query results at runtime.
+The actual detail data includes, and is restricted by, filters that are set on the data source, [data region](slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview), and details group. To display detail data on a detail row, use a simple expression such as `=Fields.ProductCategory`. When the report runs, the detail row repeats once for each row in the query results at runtime.
 
 Grouped data is detail data that is organized by a value that you specify in the group definition, for example, `=Fields.ProductCategory`. To display grouped data in group rows and columns, use a simple expressions that aggregates the grouped data such as `=Sum(Fields.Quantity)`. The result will be the sum of all quantity values with the same product category as the current group.
 
@@ -39,7 +39,7 @@ A tree structure represents nested row and column groups that have a parent/chil
 A Table consists of the following areas:
 
 * (Mandatory) Table Body&mdash;The Table Body area always exists. Its cells display detail and group data.
-* (Optional) Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
+* (Optional) Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table Areas](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas).
 * (Optional) Row Group&mdash;The cells in the Row Group area are created automatically when you create a row group. These are row group header cells and display row group instance values by default.
 
 	For example, when you group by `=Fields.ProductCategory`, group instance values are the individual product categories by which you are grouping the data.
@@ -52,7 +52,7 @@ A Table consists of the following areas:
 
 A Table item organizes cells in rows and columns that are associated with groups. Because group structures for row and column groups are identical, the documentation refers to them as row groups and you can apply the same concepts to column groups.
 
-A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and aggregates. If you don't specify an [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in a static row cell, the Table will use the `First` function by default.
+A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and aggregates. If you don't specify an [aggregate function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in an [Expression](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) in a static row cell, the Table will use the `First` function by default.
 
 A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row and column group to which the cell belongs.
 
@@ -60,8 +60,8 @@ Dynamic detail rows are associated with the details group that is automatically 
 
 ## See Also
 
-* [Getting Started with the Crosstab Report Item]({%slug crosstab_item_get_started%})
-* [Manually Adjusting the CrossTab]({%slug manual_adjustment_crosstab%})
+* [Getting Started with the Crosstab Report Item](slug: crosstab_item_get_started)
+* [Manually Adjusting the CrossTab](slug: manual_adjustment_crosstab)
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
 * [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
 * [Table Class API Reference](/api/telerik.reporting.table)

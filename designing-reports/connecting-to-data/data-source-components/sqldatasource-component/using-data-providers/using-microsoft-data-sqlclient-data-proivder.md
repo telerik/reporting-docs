@@ -47,7 +47,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
    }
    ```
 
-1. If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
+1. If the [SqlDataSource component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
    ```JSON
    {
@@ -82,7 +82,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
    }
    ```
 
-1. If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
+1. If the [SqlDataSource component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
    ```JSON
    {
@@ -98,7 +98,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 
 ## See Also
 
-- [How to Use Microsoft.Data.SqlClient Data Provider in Web Report Designer]({%slug connecting-to-microsoft-data-sqlclient-in-web-report-designer%})
-- [Adding External Data Provider to .NET Standalone Designer]({%slug adding-external-data-provider-to-dotnet-standalone-designer%})
-- [How to register a DbProviderFactory in a .NET Core project]({%slug how-to-register-db-provider-factory-in-net-core-project%})
+- [How to Use Microsoft.Data.SqlClient Data Provider in Web Report Designer](slug: connecting-to-microsoft-data-sqlclient-in-web-report-designer)
+- [Adding External Data Provider to .NET Standalone Designer](slug: adding-external-data-provider-to-dotnet-standalone-designer)
+- [How to register a DbProviderFactory in a .NET Core project](slug: how-to-register-db-provider-factory-in-net-core-project)
 - [Microsoft SqlClient Data Provider for SQL Server connection strings](https://www.connectionstrings.com/microsoft-data-sqlclient/)

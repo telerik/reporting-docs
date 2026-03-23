@@ -35,7 +35,7 @@ How can I show the **Scroll** mode button of the page in the HTML5 Viewer toolba
 
 ## Solution
 
-To achieve the required scenario, accomplish the following steps. Note that you have to adapt all path references in the article according to your project setup. For more information, refer to the [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) MSDN article. The mentioned Report Viewer Template files are provided with your [Telerik Reporting Installation]({%slug telerikreporting/installation%}#directories-and-asemblies).
+To achieve the required scenario, accomplish the following steps. Note that you have to adapt all path references in the article according to your project setup. For more information, refer to the [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) MSDN article. The mentioned Report Viewer Template files are provided with your [Telerik Reporting Installation](slug: telerikreporting/installation#directories-and-asemblies).
 
 1. Find the Telerik Report Viewer template in your installation folder located in `C:\Program Files (x86)\Progress\Telerik Reporting R1 2022\Html5\ReportViewer\templates`.
 
@@ -71,4 +71,4 @@ To achieve the required scenario, accomplish the following steps. Note that you 
 
 ## See Also
 
-* [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%})
+* [Styling and Appearance](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview)

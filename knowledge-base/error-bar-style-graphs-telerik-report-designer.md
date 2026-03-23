@@ -50,5 +50,5 @@ Test the [ErrorBarStyleGraphReport.trdx](https://github.com/telerik/reporting-sa
 
 ## See Also
 
-- [OHLC Chart Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})
-- [Creating and Customizing Scatter Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})
+- [OHLC Chart Overview](slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview)
+- [Creating and Customizing Scatter Charts](slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview)

@@ -23,11 +23,11 @@ To add Text Watermarks to the Report use the following steps:
 1. Open a report in __Design__ view.
 1. You can open the Watermarks collection editor in two ways:
 
-	+ Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window. Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.
+	+ Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). This makes the report active in the Properties window. Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.
 	+ Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface. Both actions will display the Watermarks collection editor, which is empty by default.
 
 1. Click __Add__ button and select TextWatermark.
-1. In __Text__ , type or click the ellipsis to enter text or an [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that represents the Text Watermark.
+1. In __Text__ , type or click the ellipsis to enter text or an [Expressions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) that represents the Text Watermark.
 1. Format the text by setting __Color__ and __Font__ attributes.
 1. Set __Opacity__.
 1. Set __Position__. Available options are __Behind__ and __Front__. Default is __Behind__.
@@ -47,12 +47,12 @@ To add Picture Watermarks to the Report use the following steps:
 1. Open a report in __Design__ view.
 1. You can open the Watermarks collection editor in two ways:
 
-	+ Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window. Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.
+	+ Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). This makes the report active in the Properties window. Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.
 	+ Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface. Both actions will display the Watermarks collection editor, which is empty by default.
 
 1. Click the small arrow on the right side of the __Add__ button and select PictureWatermark from the drop-down menu.
-1. In __Image__ , browse for an image file on your hard drive, input an URI (local path or URL) or an [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that evaluates to an image.The __Image__ field also accepts a string that represents a Base64-encoded image.
-1. Set __Sizing__ mode. Available options are Center, Stretch, ScaleProportional and TopLeft. See [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) article for more information on the modes.
+1. In __Image__ , browse for an image file on your hard drive, input an URI (local path or URL) or an [Expressions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) that evaluates to an image.The __Image__ field also accepts a string that represents a Base64-encoded image.
+1. Set __Sizing__ mode. Available options are Center, Stretch, ScaleProportional and TopLeft. See [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) article for more information on the modes.
 1. Set __Opacity__.
 1. Set __Position__. Available options are __Behind__ and __Front__. Default is __Behind__.
 1. Specify whether it will be displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ).
@@ -73,12 +73,12 @@ To add Background Overlay to the Report use the following steps:
 1. Open a report in __Design__ view.
 1. You can open the Watermarks collection editor in two ways:
 
-	+ Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window. Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.
+	+ Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). This makes the report active in the Properties window. Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.
 	+ Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface. Both actions will display the Watermarks collection editor, which is empty by default.
 
 1. Click the small arrow on the right side of the __Add__ button and select BackgroundOverlay from the drop-down menu.
-1. In __Image__ , browse for an image file on your hard drive, input an URI (local path or URL) or an [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that evaluates to an image. The __Image__ field also accepts a string that represents a Base64-encoded image.
-1. Set __Sizing__ mode. Available options are Center, Stretch, ScaleProportional and TopLeft. The Background Overlay sets TopLeft as its default Sizing value, which means the image will be displayed without being resized, and positioned in the top left corner of the page area. See [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) article for more information on the modes.
+1. In __Image__ , browse for an image file on your hard drive, input an URI (local path or URL) or an [Expressions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) that evaluates to an image. The __Image__ field also accepts a string that represents a Base64-encoded image.
+1. Set __Sizing__ mode. Available options are Center, Stretch, ScaleProportional and TopLeft. The Background Overlay sets TopLeft as its default Sizing value, which means the image will be displayed without being resized, and positioned in the top left corner of the page area. See [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) article for more information on the modes.
 1. Set __Opacity__. By default the Opacity of the Background Overlay is set to 1.
 1. Specify whether it will be rendered in the output report document. The default value is *false*  which means the Background Overlay will be visible only during design-time.
 1. Specify whether it will be displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ). These options are overridden by the __RenderInReportDocument__ option, i.e. if it is set to *false* , the __PrintOnFirstPage__ and __PrintOnLastPage__ options will not be respected.

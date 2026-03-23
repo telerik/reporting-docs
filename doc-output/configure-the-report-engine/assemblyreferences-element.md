@@ -23,7 +23,7 @@ table th:nth-of-type(2) {
 
 Defines a collection of assembly references used by the Reporting Engine during the processing stage to resolve names of user functions, user aggregate functions, and types used by the ObjectDataSource component and Report Event Handlers.
 
-The types from the assemblies included in the _assemblyReferences_ element do not need to be registered explicitly in the [_typeReferences_ Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) as all types in the assembly will be permitted to be used by the Reporting Engine.
+The types from the assemblies included in the _assemblyReferences_ element do not need to be registered explicitly in the [_typeReferences_ Element](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) as all types in the assembly will be permitted to be used by the Reporting Engine.
 
 ````XML
 <configuration>
@@ -111,5 +111,5 @@ The following code example demonstrates how to configure the reporting engine to
 * [Specifying an Assembly's Location](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/specify-assembly-location)
 * [<probing> Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
 * [Application Configuration Files](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-configuration-files)
-* [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
-* [User Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})
+* [User Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
+* [User Aggregate Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions)

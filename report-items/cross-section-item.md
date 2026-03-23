@@ -48,7 +48,7 @@ In most scenarios, the `Begin` and `End` sections have matching types and hierar
 
 Since the Cross-section item can refer to more than one report sections, its parent is the [`Report`](/api/Telerik.Reporting.Report) item. Therefore, you can drag the Cross-section item from the designer toolbox onto the designer surface without selecting any report section before that. When the Cross-section item is moved or resized on the report designer surface, its `Begin`- and `End`-related properties are automatically calculated based on its current location and size, and are displayed in the **Properties** window.
 
-You can select a Cross-section item through the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) tool window or by clicking the graphical primitive displayed by the item. If its `Type` is set to `Line`, the selectable area of the item will be on both sides of the displayed vertical line and will span to at least six pixels. If `Type` is set to `Rectangle`, the selectable area can be any of its sides and will again span to at least six pixels.
+You can select a Cross-section item through the [Report Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) tool window or by clicking the graphical primitive displayed by the item. If its `Type` is set to `Line`, the selectable area of the item will be on both sides of the displayed vertical line and will span to at least six pixels. If `Type` is set to `Rectangle`, the selectable area can be any of its sides and will again span to at least six pixels.
 
 >* In the Standalone Report Designer and Visual Studio Report Designer, the Cross-section report item provides complete design-time support.
 >* Currently, the Web Report Designer delivers basic designing capabilities and some of the Cross-section properties cannot be edited through the dedicated property editors.
@@ -72,11 +72,11 @@ The Cross-section item uses the data context of the report and cannot be evaluat
 
 The Cross-section item is designed to aid the production of form-type reports and attempts to preserve its location and size that are set at design-time. The report item will not expand when the report or any report sections expand horizontally. Therefore, the Cross-section won't be rendered on a page that is generated as a result of such horizontal paging. However, in a multi-column report, the Cross-section item will be generated per each report column that is shown on a page.
 
-Not all rendering extensions [support the Cross-section report item]({% slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout %}).
+Not all rendering extensions [support the Cross-section report item]({% slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout ).
 
 ## Next Steps
 
-* [Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+* [Pagination](slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 

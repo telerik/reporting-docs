@@ -15,14 +15,14 @@ The article explains how to set up the HTML5 Report Viewer to work with the Tele
 
 ## Prerequisites
 
-1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
+1. Review the HTML5 Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support).
 1. Installed and running [Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview).
 1. Report Server for .NET's User that will connect from the viewer should have at least one enabled Token.
 1. Report Server for .NET should contain at least one report that can be accessed by the User account.
 
 ## Configuring the HTML5 Report Viewer to work with the Report Server for .NET
 
-Follow the steps below to set up your HTML5 Report Viewer to work with the Telerik Report Server for .NET as a backend instead of [using a Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).
+Follow the steps below to set up your HTML5 Report Viewer to work with the Telerik Report Server for .NET as a backend instead of [using a Reporting REST Service](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service).
 
 1. Use the following code instead of `serviceUrl: "/api/reports/",` to connect to the Report Server for .NET rather than to a Reporting REST Service:
 
@@ -102,7 +102,7 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
+- [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [How To: Use HTML5 Report Viewer With REST Service](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service)
 - [Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview)
 - [Tokens Authentication in Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/token-authentication)

@@ -18,4 +18,4 @@ The __Edit Sorting__ dialog controls the order that records are displayed in. Th
 
 ## Using the Edit Sorting Dialog
 
-For more information on sorting [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), please refer to the [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%}) help topic.
+For more information on sorting [Data Items](slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview), please refer to the [Ordering Data](slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview) help topic.

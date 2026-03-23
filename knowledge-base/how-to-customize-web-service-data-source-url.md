@@ -24,12 +24,12 @@ Sometimes it is necessary to modify the WebServiceDataSource URL dynamically, fo
 
 ## Solution
 
-1. The **Service Url** property of the _WebServiceDataSource_ should be set as an inline parameter **@Url**, i.e. in _Configure data retrieval_ dialog of the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}):
+1. The **Service Url** property of the _WebServiceDataSource_ should be set as an inline parameter **@Url**, i.e. in _Configure data retrieval_ dialog of the [WebServiceDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard):
 	
 	_Service Url:_| __@Url__
 	---|---
 
-1. The value of _@Url_ should be provided as an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) (i.e., taken from a Report Parameter) so that its value can be evaluated at run time in the _Configure request parameters_ dialog of the Wizard: 
+1. The value of _@Url_ should be provided as an [Expression](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) (i.e., taken from a Report Parameter) so that its value can be evaluated at run time in the _Configure request parameters_ dialog of the Wizard: 
 
 	_Name_|_Type_|_Value_|_Design-Time Value_
 	---|---|---|---

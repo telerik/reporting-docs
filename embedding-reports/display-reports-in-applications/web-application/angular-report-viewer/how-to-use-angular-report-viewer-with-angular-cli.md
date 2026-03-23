@@ -21,8 +21,8 @@ The app's settings are similar to the settings of the local Angular Report Viewe
 The following list describes the prerequisites for this tutorial:
 
 - [Angular CLI](https://angular.io/cli).
-- Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
-- A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+- Review the Angular Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview#requirements).
+- A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 - Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the `web.config`/`appsettings.json` file of the project hosting the Reporting REST service.
 
@@ -111,7 +111,7 @@ The following list describes the prerequisites for this tutorial:
     </tr-viewer>
     ```
 
-    For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
+    For all available report viewer options refer to [Options](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options).
 
 1.  Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _index.html_:
 
@@ -137,4 +137,4 @@ The following list describes the prerequisites for this tutorial:
 
 ## See Also
 
-- [Make sure the service address is correct and enable CORS]({%slug cannot-access-the-reporting-rest-service%})
+- [Make sure the service address is correct and enable CORS](slug: cannot-access-the-reporting-rest-service)

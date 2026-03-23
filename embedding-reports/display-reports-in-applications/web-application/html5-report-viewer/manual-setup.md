@@ -14,18 +14,18 @@ previous_url: /html5-report-viewer-embedding
 
 In this article, you will learn how to manually add the HTML5 Report Viewer to an HTML page and display a report. This approach allows for full control over the configuration.
 
-If you are looking for a less complicated approach, consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).
+If you are looking for a less complicated approach, consider using the [Visual Studio item templates](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service).
 
 ## Prerequisites
 
 Before you continue, make sure that the following prerequisites are met:
 
-1. Familiarity with the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
-1. A running application that hosts a Reporting REST service at address _/api/reports_. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+1. Familiarity with the HTML5 Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support).
+1. A running application that hosts a Reporting REST service at address _/api/reports_. For more information, see [Telerik Reporting REST Services](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 1. A script with the custom [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) distribution for Telerik Reporting (located in the **[TelerikReporting_InstallDir]\Html5\ReportViewer\js** folder) or with the mainstream Kendo UI distribution downloaded locally or via the [Kendo UI CDN service](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service).
-1. (Optional) If [programmatic type reports]({%slug telerikreporting/designing-reports/overview%}#programmatic-types) are used, add a reference from the project that hosts the Reporting REST service to the `Reports Library` project with the reports.
+1. (Optional) If [programmatic type reports](slug: telerikreporting/designing-reports/overview#programmatic-types) are used, add a reference from the project that hosts the Reporting REST service to the `Reports Library` project with the reports.
 
-   > You must load only one version of [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) styles and scripts on the page - [Kendo Widgets Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#KendoWidgetsRequirements).
+   > You must load only one version of [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) styles and scripts on the page - [Kendo Widgets Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#KendoWidgetsRequirements).
 
 ## Utilizing the HTML5 Report Viewer
 
@@ -142,7 +142,7 @@ The following steps produce an HTML page with settings similar to these in the i
     </script>
     ```
 
-    > The viewer's **reportSource** consists of report and parameters attributes, where **report** is the string description of the report that will be displayed, and **parameters** is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
+    > The viewer's **reportSource** consists of report and parameters attributes, where **report** is the string description of the report that will be displayed, and **parameters** is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview).
 
 1.  Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
 
@@ -199,4 +199,4 @@ The following steps produce an HTML page with settings similar to these in the i
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

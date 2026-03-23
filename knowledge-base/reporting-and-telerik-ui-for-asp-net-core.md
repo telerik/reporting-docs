@@ -50,6 +50,6 @@ For more information, you may have a look at the [ASP.NET Core JSON Serializatio
 ## See Also
 
 - [ASP.NET Core JSON Serialization - Telerik UI for ASP.NET Core](https://docs.telerik.com/aspnet-core/installation/json-serialization#configure-json-serialization-in-aspnet-core-6-and-the-minimal-hosting-model)
-- [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 7 with Top-Level Statements]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
-- [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6 and .NET 7 with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
-- [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%})
+- [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 7 with Top-Level Statements](slug: how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
+- [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6 and .NET 7 with Startup.cs](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5)
+- [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET Core 3.1](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1)

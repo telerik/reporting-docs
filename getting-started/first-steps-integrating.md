@@ -21,7 +21,7 @@ This guide targets [users who want to build custom reports and, then, present th
 
 At the end, you'll be able to see the report in the web browser, export it in different formats, and print it.
 
-For the first-steps scenario on designing a Telerik Report and exporting it to PDF, refer to the getting started guide on [designing a report]({% slug telerikreporting/getting-started/first-steps%}).
+For the first-steps scenario on designing a Telerik Report and exporting it to PDF, refer to the getting started guide on [designing a report]({% slug telerikreporting/getting-started/first-steps).
 
 ## Prerequisites
 
@@ -31,11 +31,11 @@ The following prerequisites are required for accomplishing the scenario in this 
 
 ## Step 1: Install Telerik Reporting
 
-The steps to accomplish the installation of the Telerik Reporting controls and services are fully described in the [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-1-install-telerik-reporting).
+The steps to accomplish the installation of the Telerik Reporting controls and services are fully described in the [first steps guide on designing the Telerik report](slug: telerikreporting/getting-started/first-steps#step-1-install-telerik-reporting).
 
 ## Step 2: Create, Populate, and Style the Sample Report
 
-Next, create the report that you will integrate in your web application. The steps required to create, populate with data, and style the report are described in the [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report).
+Next, create the report that you will integrate in your web application. The steps required to create, populate with data, and style the report are described in the [first steps guide on designing the Telerik report](slug: telerikreporting/getting-started/first-steps#step-2-create-the-sample-report).
 
 Once you have your report, save it as `DemoReport.trdp`. In the next step, you will integrate the TRDP report in the application.
 
@@ -92,6 +92,6 @@ That was it! Now you are ready to deep-dive into Telerik Reporting and take full
 
 ## Next Steps
 
-- [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview %})
-- [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
-- [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})
+- [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview )
+- [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
+- [Report Parameter](slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)

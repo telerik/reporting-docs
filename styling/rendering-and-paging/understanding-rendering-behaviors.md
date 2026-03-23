@@ -20,7 +20,7 @@ Depending on the renderer you select, certain rules are applied when rendering t
 * The width and height of the page.
 * Renderer-specific support for paging.
 
-This topic discusses the general rules that are applied by Telerik Reporting. For more information, see [Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}).
+This topic discusses the general rules that are applied by Telerik Reporting. For more information, see [Design Considerations for Report Item Layout](slug: telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout).
 
 ## General Behaviors for Logical Page Renderers
 
@@ -57,7 +57,7 @@ Please, consider the following specifics of this rendering behavior:
 
 * If a Subreport is missing from the final output, it might be because it contains errors. In that case, try setting the __SkipBlankPages__ property to __False__ in order to examine the actual error.
 * The algorithm does not consider the content of the PageHeader, PageFooter and Watermarks as significant. The report’s body must contain significant content for the page to get rendered.
-* All [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) and paged export formats (without RTF-Table mode) conform to this behavior.
+* All [Report Viewers](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/overview) and paged export formats (without RTF-Table mode) conform to this behavior.
 * The viewers show a dedicated message in the report area when it appears that the report has no pages to display.
 
 ## Page Header and Footer sections
@@ -66,13 +66,13 @@ The following rules apply to page headers and footers when rendered on the page:
 
 * The header or footer is rendered at the top and bottom of every page within the usable page area (when present).
 * When the page header or footer section is hidden on certain pages, it gets collapsed and its height is used from the rest of the report content.
-* The header and footer do not grow or shrink based on their content. They are rendered on every page at the height specified when you created the respective page section, or the one set with Binding as explained in the article [The Basic Structure of the Report]({%slug report_structure_groups_sections%}) - section [Page Header]({%slug report_structure_groups_sections%}#page-header).
+* The header and footer do not grow or shrink based on their content. They are rendered on every page at the height specified when you created the respective page section, or the one set with Binding as explained in the article [The Basic Structure of the Report](slug: report_structure_groups_sections) - section [Page Header](slug: report_structure_groups_sections#page-header).
 * If the contents of the header or footer grow beyond the boundaries of the header or footer, the contents are clipped. Any report item that doesn't fit entirely in the section is removed, i.e. not rendered at all.
 * Page sections of report used as SubReport get neglected. Only page sections of the main report are rendered.
 * In multi-column reports (supported only in Physical paging), there is only one page header and footer per page, regardless of the number of columns.
-* Page Footer section Visibility should NOT depend on [PageCount]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}). The total page count depends on the Visibility of the Page Footer section as this changes the available space for the rest of the report content. Hence, if the Visibility of the Page Footer is set to depend on the PageCount, uncertainty will be introduced. The result will be incorrect PageCount.
+* Page Footer section Visibility should NOT depend on [PageCount](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions). The total page count depends on the Visibility of the Page Footer section as this changes the available space for the rest of the report content. Hence, if the Visibility of the Page Footer is set to depend on the PageCount, uncertainty will be introduced. The result will be incorrect PageCount.
 
 ## See Also
 
-* [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
-* [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+* [Rendering and Paging](slug: telerikreporting/designing-reports/rendering-and-paging/overview)
+* [Understanding Pagination](slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)

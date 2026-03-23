@@ -33,7 +33,7 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).
 
 I want to show my report in a ReportViewer control, but when I click the arrow in the **ReportSource** property from the property grid, it does not show available reports. What is wrong?
 
@@ -43,7 +43,7 @@ I want to show my report in a ReportViewer control, but when I click the arrow
 
 ## Solution  
 
-Follow the Telerik Reporting [best practices]({%slug on-telerik-reporting%}) and specify the report in a separate class library that is referenced in the application or website. Check if the class library containing the report is referenced in your application or website and that you have rebuilt the project.
+Follow the Telerik Reporting [best practices](slug: on-telerik-reporting) and specify the report in a separate class library that is referenced in the application or website. Check if the class library containing the report is referenced in your application or website and that you have rebuilt the project.
 
 The most reliable way to handle this scenario is to programmatically specify a report for the ReportViewer. For example, if you're using the ASP.NET ReportViewer, state the following in the `Page_Load` event of the page:         
 

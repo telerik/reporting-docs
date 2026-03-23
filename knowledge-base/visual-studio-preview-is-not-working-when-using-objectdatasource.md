@@ -31,18 +31,18 @@ Make sure the following are correctly set up:
 
   As described in MSDN, the [ConfigurationManager.ConnectionStrings property](https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.connectionstrings?redirectedfrom=MSDN&view=net-5.0#System_Configuration_ConfigurationManager_ConnectionStrings) gets the *ConnectionStringsSection* data for the current application's default configuration. 
   
-  In case of Visual Studio, this is *devenv.exe.config*. The [SqlDataSource component]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) is particularly designed to use the current's project configuration file. However, if your custom Data Access Layer (DAL) is reading the **ConfigurationManager**.ConnectionStrings from the report that is previewed you get all connection strings defined in the devenv.exe.config file. In order to avoid the error you have several options:  
+  In case of Visual Studio, this is *devenv.exe.config*. The [SqlDataSource component]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview ) is particularly designed to use the current's project configuration file. However, if your custom Data Access Layer (DAL) is reading the **ConfigurationManager**.ConnectionStrings from the report that is previewed you get all connection strings defined in the devenv.exe.config file. In order to avoid the error you have several options:  
 
     1. Hard code the ConnectionString in your Data Access Layer(**DAL**);
     2. Use a desktop application with a report viewer(WinForms/WPF) to view your reports in runtime instead of the VS Previews;
     3. Add the required **ConnectionString** in **devenv.exe.config**;
-    4. Use the [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) component instead of the [ObjectDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview %}) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
+    4. Use the [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview ) component instead of the [ObjectDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview ) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
 
 > For VS 2017 and higher, the devenv.exe.config's default location is C:\Program Files (x86)\Microsoft Visual Studio\*year*\Professional|Community\Common7\IDE.
 
 - Assembly References
 
-    The [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}#-telerik-reporting-configuration-section) section contains assembly descriptions that are used to resolve the necessary assemblies during design and/or processing stage. When designing a report that uses ObjectDataSource in Visual Studio Designer, the engine will add the necessary AssemblyReferences entries in the configuration file of the current project. However, when you preview the report in a standalone application, you need to add these entries in the application configuration file so the processing engine would be able to resolve the necessary types.
+    The [AssemblyReferences](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview#-telerik-reporting-configuration-section) section contains assembly descriptions that are used to resolve the necessary assemblies during design and/or processing stage. When designing a report that uses ObjectDataSource in Visual Studio Designer, the engine will add the necessary AssemblyReferences entries in the configuration file of the current project. However, when you preview the report in a standalone application, you need to add these entries in the application configuration file so the processing engine would be able to resolve the necessary types.
 
 ## Notes
 
@@ -56,6 +56,6 @@ To debug the data access layer while using the Visual Studio Report Designer, yo
 
 [The Connection Strings Reference](https://www.connectionstrings.com/)
 
-[Visual Studio Problems]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})
+[Visual Studio Problems](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems)
 
-[ObjectDataSource Component Problems]({%slug telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems%}#objectdatasource-component)
+[ObjectDataSource Component Problems](slug: telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems#objectdatasource-component)

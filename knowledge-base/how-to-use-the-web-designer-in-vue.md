@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is built upon HTML5, CSS, JavaScript, jQuery and Kendo.
+The [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) is built upon HTML5, CSS, JavaScript, jQuery and Kendo.
 
 This allows the viewer to be used in virtually any JavaScript framework, such as [Vue.js](https://vuejs.org/).
 
@@ -62,9 +62,9 @@ The solution we are about to examine is a very basic approach to create a new Vu
 
   The component calls the `telerik_webReportDesiger` method to initialize the web report designer widget with the specified configuration options.
 
-  It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}).
+  It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview ).
 
-  How to implement this service is described in the article [How to Host Reports Service in ASP.NET Core 3.1]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}).
+  How to implement this service is described in the article [How to Host Reports Service in ASP.NET Core 3.1]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 ).
 
   ```HTML
   <template>

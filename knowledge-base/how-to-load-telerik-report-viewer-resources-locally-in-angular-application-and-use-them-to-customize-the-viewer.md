@@ -31,7 +31,7 @@ res_type: kb
 
 ## Description
 
-I want to customize the [Angular Wrapper Report Viewer's]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) default layout and behavior by loading a custom template, stylesheet, or JS resource.
+I want to customize the [Angular Wrapper Report Viewer's](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) default layout and behavior by loading a custom template, stylesheet, or JS resource.
 
 ## Prerequisites
 
@@ -127,4 +127,4 @@ I would like to change the default styling of the viewer widget.
 ## See Also
 
 - [Angular workspace configuration](https://angular.io/guide/workspace-config)
-- [Using Angular Wrapper Report Viewer with Angular CLI]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli %})
+- [Using Angular Wrapper Report Viewer with Angular CLI]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli )

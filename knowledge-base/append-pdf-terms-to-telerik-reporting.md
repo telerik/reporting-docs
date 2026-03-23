@@ -26,13 +26,13 @@ This article demonstrates how to append a PDF, containing general terms and cond
 
 To achieve this functionality, use:
 
-* [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}) to generate PDF reports.
+* [Telerik Reporting](slug: telerikreporting/welcome-to-telerik-reporting!) to generate PDF reports.
 * [Telerik Document Processing](https://docs.telerik.com/devtools/document-processing/introduction) to manipulate the PDF and add some extra content.
 
 Follow these steps:
 
 1. **Generate the Report PDF using Telerik Reporting**  
-   Use Telerik Reporting to render the report as a PDF file. Refer to the [Generating Reports Locally with Code]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) article for more details on generating reports locally.
+   Use Telerik Reporting to render the report as a PDF file. Refer to the [Generating Reports Locally with Code](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine) article for more details on generating reports locally.
 1. **Import and Modify the PDF Report using Telerik Document Processing**  
    Use Telerik Document Processing's [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library to [import](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#import) the generated PDF, append a new page with the terms and conditions and export the final document. 
 

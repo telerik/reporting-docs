@@ -20,7 +20,7 @@ To define a hyperlink add a [NavigateToUrlAction](/api/Telerik.Reporting.Navigat
 
 You can also specify whether the URL is opened in the same or a new browser window using the [Target](/api/Telerik.Reporting.NavigateToUrlAction#Telerik_Reporting_NavigateToUrlAction_Target) property.
 
-> Opening URL in the same window is only applicable for the [legacy ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}). For the others, the [NavigateToUrlAction](/api/Telerik.Reporting.NavigateToUrlAction) would be opened in a new window.
+> Opening URL in the same window is only applicable for the [legacy ASP.NET Web Forms Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview). For the others, the [NavigateToUrlAction](/api/Telerik.Reporting.NavigateToUrlAction) would be opened in a new window.
 
 # How to Add a Hyperlink Action
 
@@ -46,7 +46,7 @@ You can add a hyperlink to a URL to any item that has an Action property.
 
 ## See Also
 
-- [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
-- [Bookmark Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action%})
-- [Expressions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
-- [Data Items Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
+- [Drillthrough Report Action](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action)
+- [Bookmark Action](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action)
+- [Expressions Overview](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview)
+- [Data Items Overview](slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview)

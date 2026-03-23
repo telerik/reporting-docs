@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-Telerik Reporting is an embedded reporting engine developed on top of Microsoft’s .NET framework. As such the reports are CLR objects and can be used by the developers following the basic concepts of the programming language and the .NET platform. With the introduction of the **XML** report definition, the reports can exist not only as **CLR** types and objects in the memory but as XML markup stored in different ways (file, database, etc.). As we do not want to limit the users to work with only objects or files, the need for a unified way for referencing reports in the applications emerged - [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).
+Telerik Reporting is an embedded reporting engine developed on top of Microsoft’s .NET framework. As such the reports are CLR objects and can be used by the developers following the basic concepts of the programming language and the .NET platform. With the introduction of the **XML** report definition, the reports can exist not only as **CLR** types and objects in the memory but as XML markup stored in different ways (file, database, etc.). As we do not want to limit the users to work with only objects or files, the need for a unified way for referencing reports in the applications emerged - [Report Sources](slug: telerikreporting/designing-reports/report-sources/overview).
 
 While the **Pre-Q2 2012** reports still work we strongly advise migrating your applications to the new concept.  This article describes the affected APIs of Telerik Reporting and what steps to be taken in order to start using the new ReportSource objects.
 
@@ -39,7 +39,7 @@ The available report sources are:
 - [UriReportSource](/api/telerik.reporting.urireportsource) - The URI report source allows you to load a report document either from a file path or from an Url.
 - [XmlReportSource](/api/telerik.reporting.xmlreportsource) - The report source allows you to load a report from XML markup (in the form of String, Stream or TextReader).
 
-In general, the report source represents a pointer to the report (object reference, assembly qualified type name, a URI to a file or XML markup) and [parameters](/api/telerik.reporting.reportsource#collapsible-Telerik_Reporting_ReportSource_Parameters). When provided, the values of the ReportSource parameters are applied to the Report parameters at run-time. Prior to Q2 2012, these Report parameters were part of the [NavigateToReportAction](/api/telerik.reporting.navigatetoreportaction) (drill-through action) and the [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) item (master-detail scenario).
+In general, the report source represents a pointer to the report (object reference, assembly qualified type name, a URI to a file or XML markup) and [parameters](/api/telerik.reporting.reportsource#collapsible-Telerik_Reporting_ReportSource_Parameters). When provided, the values of the ReportSource parameters are applied to the Report parameters at run-time. Prior to Q2 2012, these Report parameters were part of the [NavigateToReportAction](/api/telerik.reporting.navigatetoreportaction) (drill-through action) and the [SubReport](slug: telerikreporting/designing-reports/report-structure/subreport) item (master-detail scenario).
 
 ## Solution
 
@@ -50,7 +50,7 @@ The properties below of the SubReport item are now obsolete and when used the co
 - Telerik.Reporting.SubReport.ReportSource property is now of type Telerik.Reporting.ReportSource. Please, use Telerik.Reporting.InstanceReportSource to build existing reports.
 - Telerik.Reporting.SubReport.Parameters property is now obsolete. Please, set a Telerik.Reporting.InstanceReportSource object for the Telerik.Reporting.SubReport.ReportSource property instead and add the parameters to its Parameters collection.
 
-The following is a sample snippet that demonstrates how to specify a report for the [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) item and its corresponding report parameters:
+The following is a sample snippet that demonstrates how to specify a report for the [SubReport](slug: telerikreporting/designing-reports/report-structure/subreport) item and its corresponding report parameters:
 
 **Pre-Q2 2012:**
 
@@ -327,4 +327,4 @@ What’s more, editing a report in the VS report designer will use the new objec
 
 ## See Also
 
-[Report Source Overview]({%slug telerikreporting/designing-reports/report-sources/overview%})
+[Report Source Overview](slug: telerikreporting/designing-reports/report-sources/overview)

@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 # JsonDataSource Component
 
-The [JsonDataSource](/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file or saved directly into the report while using no code. At design time the component can be configured using the [JsonDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard%}). At run time the JsonDataSource automatically parses the JSON data.
+The [JsonDataSource](/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file or saved directly into the report while using no code. At design time the component can be configured using the [JsonDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard). At run time the JsonDataSource automatically parses the JSON data.
 
 The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties. Due to this, no errors will be shown in the report if an undefined data field name is used inside an expression.
 
@@ -36,14 +36,14 @@ The data field names for this data source are **case-sensitive**. It is required
 | Setting       | Description                                                                                                                                                                                                                                                                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Source        | The external data file containing the data. The URI to the file might be relative or absolute. Required if inline data string is not set.                                                                                                                                                                                                             |
-| Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}) |
+| Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data) |
 
 **Inline Data String Configuration:**
 
 | Setting       | Description                                                                                                                                                                                                                                                                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Source        | The inline data string containing the data. Required if external data file is not set.                                                                                                                                                                                                                                                                |
-| Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}) |
+| Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data) |
 
 ## Supported developer platforms
 

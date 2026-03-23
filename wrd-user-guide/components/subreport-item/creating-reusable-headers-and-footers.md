@@ -120,6 +120,6 @@ Here are the steps to pass a title from the main report to a TextBox in the SubR
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
-* [Report Sections]({%slug user-guide/components/report-sections%})
+* [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Data Sources](slug: web-report-designer-user-guide-components-data-sources)
+* [Report Sections](slug: user-guide/components/report-sections)

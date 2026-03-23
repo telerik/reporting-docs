@@ -27,7 +27,7 @@ The values of this parameter type replace the corresponding part of the `Service
 
 ### Using Inline Parameters in Service Url
 
-In the [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%}), the Service URL can be provided as __constantUrl__, for example:
+In the [GraphQLDataSource Wizard](slug: desktop-graphqldatasource-wizard), the Service URL can be provided as __constantUrl__, for example:
 
 ![The ServiceUrl of the GraphQL configured with an inline parameter](images/GraphQLDataSourceUrl.png)
 
@@ -105,6 +105,6 @@ In this case, the GraphQLDataSource component automatically sends consecutive re
 
 ## See Also
 
-* [GraphQLDataSource Component Overview]({%slug graphqldatasource%})
-* [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%})
-* [Using JSONPath to Filter JSON data]({%slug graphqldatasource-filter-json-data%})
+* [GraphQLDataSource Component Overview](slug: graphqldatasource)
+* [GraphQLDataSource Wizard](slug: desktop-graphqldatasource-wizard)
+* [Using JSONPath to Filter JSON data](slug: graphqldatasource-filter-json-data)

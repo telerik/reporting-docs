@@ -12,7 +12,7 @@ reportingArea: General
 
 # Reuse Data Source Components Across Reports
 
-The article elaborates how to reuse a [Data Source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) across multiple reports.
+The article elaborates how to reuse a [Data Source component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) across multiple reports.
 
 ## Reuse data source components across reports in Visual Studio
 
@@ -39,11 +39,11 @@ You can create a custom component, inheriting a Telerik Reporting Data Source co
 
 ## Reuse data source components across reports in the Standalone Report Designer
 
-The Standalone Report Designer can load data from external assemblies, which excludes custom data source components. For more details, check [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
+The Standalone Report Designer can load data from external assemblies, which excludes custom data source components. For more details, check [Extending Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer).
 
-Instead, you can create **templates** with initial settings like configured data source components and layout elements - [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}).
+Instead, you can create **templates** with initial settings like configured data source components and layout elements - [Report Templates](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates).
 
 ## See Also
 
-- [Expressions with ReportItem.DataObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%})
-- [How to Databind to Collection Properties (data-binding via expressions)]({%slug how-to-databind-to-collection-properties%})
+- [Expressions with ReportItem.DataObject](slug: telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions)
+- [How to Databind to Collection Properties (data-binding via expressions)](slug: how-to-databind-to-collection-properties)

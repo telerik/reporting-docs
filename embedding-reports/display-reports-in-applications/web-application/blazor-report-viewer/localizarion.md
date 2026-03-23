@@ -11,4 +11,4 @@ position: 5
 
 # Localization of the Blazor HTML5 Report Viewer
 
-The Blazor HTML5 Report Viewer is based on the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and is using the same `Localization` mechanism - [Localization of the HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).
+The Blazor HTML5 Report Viewer is based on the [pure HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and is using the same `Localization` mechanism - [Localization of the HTML5-based Report Viewers](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization).

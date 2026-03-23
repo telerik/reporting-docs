@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-Consider the following steps when experiencing problems while working with Telerik Reporting. For example, if you receive [Errors in Reports, Report Viewers and Services]({%slug error-handling-in-reports-and-report-viewers%}); error messages in the browser console; unexpected slowdown in performance; incorrect fonts; etc.
+Consider the following steps when experiencing problems while working with Telerik Reporting. For example, if you receive [Errors in Reports, Report Viewers and Services](slug: error-handling-in-reports-and-report-viewers); error messages in the browser console; unexpected slowdown in performance; incorrect fonts; etc.
 
 ## Steps to Troubleshoot
 
@@ -39,7 +39,7 @@ Consider the following steps when experiencing problems while working with Teler
 - **Hard refresh the browser** to ensure there are no cached Report Viewer resources with older versions.
 	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running the same version.` In this particular case, you may have upgraded successfully, the viewer and the service from `19.3.26.121` to `20.0.26.211`. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
 - **Record a server-side log** file containing detailed information about the error:
-	To create the log file, go to the project that hosts the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), add the below method, and then call it from the startup point of the application, for example, the `Program.cs` file:
+	To create the log file, go to the project that hosts the [Reporting REST Service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview), add the below method, and then call it from the startup point of the application, for example, the `Program.cs` file:
 
 	```C#
 	static void EnableTracing()

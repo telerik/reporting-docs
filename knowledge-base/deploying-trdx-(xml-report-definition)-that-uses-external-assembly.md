@@ -28,7 +28,7 @@ Without extending the application to load the external assembly, you will get th
 
 To avoid the error, follow the next steps:
 
-- Add the Telerik.Reporting configuration section to the `<configSections>` element. Notice that the section type attribute may differ according to the version. For the exact details check [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
+- Add the Telerik.Reporting configuration section to the `<configSections>` element. Notice that the section type attribute may differ according to the version. For the exact details check [Telerik Reporting Configuration Section](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview).
 
 - Add `<Telerik.Reporting>` section element and `<AssemblyReferences>` element in it, like in the Report Designer configuration file.
 
@@ -64,7 +64,7 @@ The entire configuration for extending an application with MyAssembly.dll conta
 
 	Where **x.x.x.x** stands for the used Telerik Reporting assembly version, e.g. 7.1.13.802.
 
-- Show the report definition in a report viewer control. For this you may find useful the [Using Telerik Reporting in Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) help article.
+- Show the report definition in a report viewer control. For this you may find useful the [Using Telerik Reporting in Applications](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/overview) help article.
 
 > **Important**
 > <br>
@@ -76,7 +76,7 @@ Without extending the application to load the external assembly, CLR objects use
 
 - Add a reference to the external DLL in the project. If the reporting data source components refer to the CLR object by ​its [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0), the Reporting Engine will be able to use [Reflection](https://learn.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/reflection) and use the types since the assembly is already referenced and loaded in the application.
 
-- Extend the application to load the assembly via Telerik.Reporting section as illustrated above for [Reports using external assemblies with User-defined functions]({%slug deploying-trdx-(xml-report-definition)-that-uses-external-assembly%}#reports-using-external-assemblies-with-user-defined-functions). With this approach, you will have to manually copy the DLL in the application's execution folder, and thus you can skip adding a reference in the project. The configuration will let know the reporting engine that it has to load the assembly.
+- Extend the application to load the assembly via Telerik.Reporting section as illustrated above for [Reports using external assemblies with User-defined functions](slug: deploying-trdx-(xml-report-definition)-that-uses-external-assembly#reports-using-external-assemblies-with-user-defined-functions). With this approach, you will have to manually copy the DLL in the application's execution folder, and thus you can skip adding a reference in the project. The configuration will let know the reporting engine that it has to load the assembly.
 
 > **Important**
 > <br>

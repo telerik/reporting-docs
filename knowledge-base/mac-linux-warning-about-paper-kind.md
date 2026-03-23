@@ -50,6 +50,6 @@ The warning cannot be avoided unless Microsoft decides to remove the attribute o
 
 ## See Also
 
-* [System.Drawing.Common is not supported on non-Windows platforms - .NET 6 and .NET 7 under Linux and MacOS]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
+* [System.Drawing.Common is not supported on non-Windows platforms - .NET 6 and .NET 7 under Linux and MacOS](slug: system-drawing-common-is-not-supported-on-non-windows-platforms)
 * [System.Drawing.Printing namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0)
 * [PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-7.0)

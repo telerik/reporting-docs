@@ -28,9 +28,9 @@ When using the [Mercator projection](#projection), the meridians are distributed
 
 ## Data Points
 
-Data points are produced by the defined Map series groups and geolocation groups. Their position is uniquely identified by the latitude and longitude coordinates that are returned either from a [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) or from an expression.
+Data points are produced by the defined Map series groups and geolocation groups. Their position is uniquely identified by the latitude and longitude coordinates that are returned either from a [location provider](slug: telerikreporting/designing-reports/report-structure/map/structure/location-providers) or from an expression.
 
-The data point can display one or more measures, for example, when using a [Point map series]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}), the **Size** property can represent some scalar value.
+The data point can display one or more measures, for example, when using a [Point map series](slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard), the **Size** property can represent some scalar value.
 
 ## Labels
 
@@ -40,7 +40,7 @@ Data point labels are used to display the exact value represented by a data poin
 
 Series represent a number of data points that show individual measurements. Depending on the groups they use and the data points they display, the series in the Map report item can be divided into two major categories.
 
-- [`LocationMapSeries`](/api/Telerik.Reporting.LocationMapSeries)&mdash; To determine its data points' position on the map, this category uses [`GeoLocationMapGroup`](/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude and longitude coordinates, or to query the defined [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). Location map series are the Point, Pie, and Column map types because they present similar data points each one on a single location on the map.
+- [`LocationMapSeries`](/api/Telerik.Reporting.LocationMapSeries)&mdash; To determine its data points' position on the map, this category uses [`GeoLocationMapGroup`](/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude and longitude coordinates, or to query the defined [location provider](slug: telerikreporting/designing-reports/report-structure/map/structure/location-providers). Location map series are the Point, Pie, and Column map types because they present similar data points each one on a single location on the map.
 - [`ShapeMapSeries`](/api/Telerik.Reporting.ShapeMapSeries)&mdash; This category uses a set of coordinates to determine the shape of the data point itself. In this case, the engine does not use a `LocationProvider` or a `GeoLocationMapGroup` because the data points are not determined by a single location on the map surface.
 
 The Map series can share existing `GeoLocation`, `ShapeMap`, and `Series` groups.
@@ -53,7 +53,7 @@ The Map title sets a header over the report item. You can move the title to vari
 
 ## Legend
 
-The Map legend is a collection of legend items that are used to distinguish the map series and supports numerous [styling and expression capabilities that are resolved in a hierarchical way]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}).
+The Map legend is a collection of legend items that are used to distinguish the map series and supports numerous [styling and expression capabilities that are resolved in a hierarchical way](slug: telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding).
 
 ## Scale
 
@@ -106,15 +106,15 @@ To reset the Map extent to its automatically calculated bounds, right-click outs
 
 ## Tile Provider
 
-The Tile Provider requests and downloads the imagery data for the specified map extent. For more information, refer to the dedicated article on the [tile provider Map element]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}).
+The Tile Provider requests and downloads the imagery data for the specified map extent. For more information, refer to the dedicated article on the [tile provider Map element](slug: telerikreporting/designing-reports/report-structure/map/structure/tile-providers).
 
 ## Location Provider
 
-The Location Provider matches the addresses or locations with geographical coordinates. For more information, refer to the dedicated article on the [location provider Map element]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).
+The Location Provider matches the addresses or locations with geographical coordinates. For more information, refer to the dedicated article on the [location provider Map element](slug: telerikreporting/designing-reports/report-structure/map/structure/location-providers).
 
 ## Layers and Hierarchy
 
-The Map report item is a data item and allows you to present aggregated data by two hierarchical dimensions or groups. For more information, refer to the dedicated article on the [layers and hierarchy Map elements]({%slug telerikreporting/designing-reports/report-structure/map/connecting-to-data%}).
+The Map report item is a data item and allows you to present aggregated data by two hierarchical dimensions or groups. For more information, refer to the dedicated article on the [layers and hierarchy Map elements](slug: telerikreporting/designing-reports/report-structure/map/connecting-to-data).
 
 ## Precision
 

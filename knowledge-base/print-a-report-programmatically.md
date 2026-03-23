@@ -28,7 +28,7 @@ The ability to print a report is widely used feature that a Reporting product ca
 
 ### HTML5 Report Viewers
 
-For the HTML5-based report viewers, you could use the `print` [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}). For example:
+For the HTML5-based report viewers, you could use the `print` [command](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands). For example:
 
 ````JavaScript
 $('#printButton').click(function () {
@@ -57,7 +57,7 @@ reportProcessor.PrintReport(new TypeReportSource() { TypeName = typeof(BarcodesR
 
 ### Legacy ASP.NET WebForms Report Viewer
 
-To print a report through the [Legacy ASP.NET ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}), you need to use the built-in print functionality. It depends on the **Adobe Acrobat Reader PDF plugin** (you need it installed to take advantage of true print and not the browsers' printing capabilities) and you have the option to select a printer from a list.
+To print a report through the [Legacy ASP.NET ReportViewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview), you need to use the built-in print functionality. It depends on the **Adobe Acrobat Reader PDF plugin** (you need it installed to take advantage of true print and not the browsers' printing capabilities) and you have the option to select a printer from a list.
 
 On the client side, you can invoke the print through the ReportViewer client object's `PrintReport()` method:
 
@@ -72,6 +72,6 @@ On the client side, you can invoke the print through the ReportViewer client obj
 
 ## See Also
 
-* [HTML5 Report Viewer - Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
-* [Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
-* [Print a report directly at client-side without displaying it in a Viewer]({%slug print-a-report-directly-at-client-side-without-displaying-it-in-a-viewer%})
+* [HTML5 Report Viewer - Printing Reports](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports)
+* [Embedded Report Engine](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)
+* [Print a report directly at client-side without displaying it in a Viewer](slug: print-a-report-directly-at-client-side-without-displaying-it-in-a-viewer)

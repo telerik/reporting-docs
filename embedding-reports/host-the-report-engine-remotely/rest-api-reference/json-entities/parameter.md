@@ -65,6 +65,6 @@ Represents a report parameter with its value and settings.
 |`autoRefresh`|`Boolean`|`true`|Specifies whether changes of the parameter value should trigger a report refresh|
 |`hasChildParameters`|`Boolean`|`true`|Specifies whether the current parameter has other parameters depending on it|
 |`childParameters`|`Array`|`false`|Specifies the child parameters IDs. Contains String objects|
-|`availableValues`|`Array`|`false`|Parameter values to choose from. Contains[ParameterValue]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parametervalue%})objects|
+|`availableValues`|`Array`|`false`|Parameter values to choose from. Contains[ParameterValue](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parametervalue)objects|
 |`value`|`Array / Boolean / Date / Number / String`|`true`|The value of the parameter. Its type should match the type in the definition. If multivalue is set to true it must be an Array|
 |`label`|`String`|`true`|Specifies the label of the parameter. If availableValues are set, the label value is replaced by the name of the currently selected ParameterValue|

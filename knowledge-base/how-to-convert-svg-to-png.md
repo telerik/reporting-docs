@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-Currently, the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) can hold only the formats supported by GDI+ (BMP, GIF, JPEG, EXIF, PNG, and TIFF).
+Currently, the [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) can hold only the formats supported by GDI+ (BMP, GIF, JPEG, EXIF, PNG, and TIFF).
 
 This KB article demonstrates how to convert SVG graphics to PNG picture and to set it as a value of the picturebox. Note that a NuGet package called [Svg](https://www.nuget.org/packages/Svg/) should be added to the project.
 
@@ -33,7 +33,7 @@ The approach is approperiate for reports which are designed in the Standalone De
 
 ## Solution
 
-1. A [UserFunction]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) should be implemented through the code snippet below
+1. A [UserFunction](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) should be implemented through the code snippet below
 
    ```C#
    public static Bitmap ConvertToBitmap(string url)
@@ -46,7 +46,7 @@ The approach is approperiate for reports which are designed in the Standalone De
    }
    ```
 
-2. Register the user function as explained in [Extending Report Designer article]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}). A reference to the Svg.dll should be also attached.
+2. Register the user function as explained in [Extending Report Designer article](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer). A reference to the Svg.dll should be also attached.
 
 3. Then the value of the picture box should be set to the following expression:
 

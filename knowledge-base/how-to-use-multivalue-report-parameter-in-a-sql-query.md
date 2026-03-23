@@ -26,7 +26,7 @@ This KB article explains how to use MultiValue Report Parameter in a SQL query.
 
 ## Solution
 
-A multivalue report parameter's value is evaluated as an **array of objects** - [Using Multivalue Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%}).
+A multivalue report parameter's value is evaluated as an **array of objects** - [Using Multivalue Parameters](slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters).
 
 - The value can be used directly in **SQL Text commands**. For example:
 
@@ -35,7 +35,7 @@ A multivalue report parameter's value is evaluated as an **array of objects** - 
   WHERE (COALESCE(@SelectedValues,Null) IS NULL) OR DepartmentID IN (@SelectedValues)
   ```
 
-  On configuring SqlDataSource component with the above Text command, you can map directly the `@SelectedValues` SQL parameter to a multivalue report parameter - [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}#wizard) (step 4).
+  On configuring SqlDataSource component with the above Text command, you can map directly the `@SelectedValues` SQL parameter to a multivalue report parameter - [SqlDataSource Wizard](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview#wizard) (step 4).
 
   > The *COALESCE* function is used as the multivalue parameter cannot be evaluated directly against NULL.
 
@@ -99,11 +99,11 @@ A multivalue report parameter's value is evaluated as an **array of objects** - 
 
 ## Notes
 
-On configuring the SqlDataSource component, you can join the selected values of the multivalue report parameter into a single string by using the [Join built-in function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}).
+On configuring the SqlDataSource component, you can join the selected values of the multivalue report parameter into a single string by using the [Join built-in function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions).
 
 For example - `= If(Parameters.SelectedValues.Value Is Null, Null, Join(',', Parameters.SelectedValues.Value))`.
 
 ## See Also
 
-- [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
-- [Configuring Stored Procedure with Temporary Tables]({%slug use-temporary-tables-in-stored-procedure%})
+- [Using Parameters with the SqlDataSource component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
+- [Configuring Stored Procedure with Temporary Tables](slug: use-temporary-tables-in-stored-procedure)

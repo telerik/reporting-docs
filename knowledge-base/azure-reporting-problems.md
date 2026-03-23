@@ -30,10 +30,10 @@ The purpose of this article is to list the already known issues when deploying T
 
 ## Known Issues on Azure
 
-* [The Report Item is Rendered with an Incorrect Font on the First Render in Azure]({%slug font-is-incorrect-on-first-render-azure%})
-* [Preview Reports in Desktop Viewers Using REST Service Deployed in Azure]({%slug preview-reports-using-rest-service-deployed-in-azure.md%})
-* [SqlDataSource Connects to the Database when Running Locally but Fails on Azure]({%slug sql-data-source-cannot-connect-on-azure%})
-* [Unable to Print Reports from Azure Environment]({%slug unable-to-print-reports-from-azure-environment%})
-* [GDI+ Error or OutOfMemoryException on Exporting or Printing Telerik Report from Azure Web Apps]({%slug outofmemoryexception-on-exporting-or-printing-telerik-report-from-azure-webapps%})
-* [WebRole Starts Cycling after Deploying on Windows Azure]({%slug webrole-starts-cycling-after-deploying-to-windows-azure%})
-* [Operation Could Destabilize the Runtime Exception Occurs when Running on Windows Azure]({%slug operation-could-destabilize-the-runtime-exception-occurs-when-running-on-windows-azure%})
+* [The Report Item is Rendered with an Incorrect Font on the First Render in Azure](slug: font-is-incorrect-on-first-render-azure)
+* [Preview Reports in Desktop Viewers Using REST Service Deployed in Azure](slug: preview-reports-using-rest-service-deployed-in-azure.md)
+* [SqlDataSource Connects to the Database when Running Locally but Fails on Azure](slug: sql-data-source-cannot-connect-on-azure)
+* [Unable to Print Reports from Azure Environment](slug: unable-to-print-reports-from-azure-environment)
+* [GDI+ Error or OutOfMemoryException on Exporting or Printing Telerik Report from Azure Web Apps](slug: outofmemoryexception-on-exporting-or-printing-telerik-report-from-azure-webapps)
+* [WebRole Starts Cycling after Deploying on Windows Azure](slug: webrole-starts-cycling-after-deploying-to-windows-azure)
+* [Operation Could Destabilize the Runtime Exception Occurs when Running on Windows Azure](slug: operation-could-destabilize-the-runtime-exception-occurs-when-running-on-windows-azure)

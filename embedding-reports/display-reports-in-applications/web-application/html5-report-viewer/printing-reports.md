@@ -25,13 +25,13 @@ The print functionality requires:
 
 > In **Google Chrome 77+** [printing is allowed only in response to a user gesture](https://pdfium.googlesource.com/pdfium.git/+/2021804f1b414c97667c03d7ab19daf66f6a19ef). This prevents the print dialog from opening automatically when a PDF is embedded in a web page and the user needs to click on the print button manually to invoke the print preview dialog.
 
-> In **Chromium-based** browsers, there is an option to always and automatically download PDF documents in the `pdfDocuments` settings. If enabled, it prevents the print dialog from opening and must be disabled for the printing functionality to work as expected - [Troubleshooting TelerikReportViewer execCommand JavaScript Error]({%slug troubleshooting-telerikreportviewer-execcommand-javascript-error-edge%}).
+> In **Chromium-based** browsers, there is an option to always and automatically download PDF documents in the `pdfDocuments` settings. If enabled, it prevents the print dialog from opening and must be disabled for the printing functionality to work as expected - [Troubleshooting TelerikReportViewer execCommand JavaScript Error](slug: troubleshooting-telerikreportviewer-execcommand-javascript-error-edge).
 
 > In **Firefox 19+** the default viewing option for PDF files is the **PDF.js**, which is not added as a plug-in and Firefox does not expose the content type viewing preferences - [Firefox bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=840439). Thus the Adobe PDF plug-in is always active whether or not it is the preferred viewing option. To ensure the print operation in Firefox will be accomplished, clicking the print button will export the report to PDF which will be printed with the available client viewing tools.
 
 By default, the viewer widget tries to use the PDF plug-in of the browser for printing. When it is not available or not supported, the widget falls back to exporting to a PDF file containing a special 'print' script. The purpose of this script is to open the Print dialog of the PDF reader right after the file has been opened.
 
-You can manually control the printing behavior through the [printMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) option when creating the report viewer widget.
+You can manually control the printing behavior through the [printMode](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) option when creating the report viewer widget.
 
 When the value is set to _telerikReportViewer.PrintModes.FORCE_PDF_FILE_ the widget will always export the report document to a PDF file with the special 'print' script. When the value is set to _telerikReportViewer.PrintModes.FORCE_PDF_PLUGIN_ the widget will always try to use the PDF plug-in. In this case, if the browser doesn't have a PDF plug-in or it does not support the 'print' script nothing will happen.
 
@@ -56,5 +56,5 @@ $("#reportViewer1")
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [Troubleshooting TelerikReportViewer execCommand JavaScript Error]({%slug troubleshooting-telerikreportviewer-execcommand-javascript-error-edge%})
+- [HTML5 Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [Troubleshooting TelerikReportViewer execCommand JavaScript Error](slug: troubleshooting-telerikreportviewer-execcommand-javascript-error-edge)

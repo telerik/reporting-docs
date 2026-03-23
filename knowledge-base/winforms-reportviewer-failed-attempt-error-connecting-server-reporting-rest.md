@@ -42,4 +42,4 @@ The WinForms ReportViewer requires [`Microsoft.AspNet.WebApi.Client`](https://ww
 
 ## Solution  
 
-Install the `Microsoft.AspNet.WebApi.Client` trough the [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console). For more information, refer to the article on [using the WinForms Report Viewer with the Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%}).
+Install the `Microsoft.AspNet.WebApi.Client` trough the [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console). For more information, refer to the article on [using the WinForms Report Viewer with the Report Server](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server).

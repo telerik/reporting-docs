@@ -23,11 +23,11 @@ res_type: kb
 
 ## Description
 
-Sometimes you want to avoid adding the Report Server's credentials in the initialization of the viewer. This can be done by the usage of [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}).
+Sometimes you want to avoid adding the Report Server's credentials in the initialization of the viewer. This can be done by the usage of [Custom Report Source Resolver](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver).
 
 ## Solution
 
-In this scenario, you need to render the reports in a custom Reporting REST Service rather than in the Report Server. You will need a Custom ReportSource Resolver, in which to download the report definition from the server and return it wrapped in the proper [server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}).
+In this scenario, you need to render the reports in a custom Reporting REST Service rather than in the Report Server. You will need a Custom ReportSource Resolver, in which to download the report definition from the server and return it wrapped in the proper [server-side ReportSource](slug: telerikreporting/designing-reports/report-sources/overview).
 
 1. You need to add references to the `Telerik.ReportServer.Services.Models` and `Telerik.ReportServer.HttpClient` assemblies that are distributed with the Report Server assembly.
 1. In the `Resolve` method of the `CustomReportSourceResolver`, firstly, you should create a setting for the Report Server connection. Then based on the passed category and report name from the viewer, you need to get the report from the Report Server and return it as an [InstanceReportSource](/api/telerik.reporting.instancereportsource):
@@ -87,4 +87,4 @@ public class CustomReportSourceResolver : IReportSourceResolver
 
 ## See Also
 
-* [Displaying Complex Report Documents from Report Server through Custom ReportSource Resolver]({%slug displaying-reportbooks-and-reports-with-subreports-from-report-server-using-custom-report-source-resolver%})
+* [Displaying Complex Report Documents from Report Server through Custom ReportSource Resolver](slug: displaying-reportbooks-and-reports-with-subreports-from-report-server-using-custom-report-source-resolver)

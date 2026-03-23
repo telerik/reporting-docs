@@ -40,8 +40,8 @@ The graphical Query Builder in the Web Report Designer has the following advanta
 
 To create a query using the Query Builder in the Web Report Designer:
 
-1. [Create]({%slug web-report-designer-user-guide-getting-started%}) an new report.
-2. Add an [SQL Data Source item]({%slug web-report-designer-user-guide-components-data-sources%}#sql-data-source).
+1. [Create](slug: web-report-designer-user-guide-getting-started) an new report.
+2. Add an [SQL Data Source item](slug: web-report-designer-user-guide-components-data-sources#sql-data-source).
 3. Connect to the desired SQL Data Source.
 
    > To follow along the steps below, use the AdventureWorks database.
@@ -176,7 +176,7 @@ The following options are available:
 
 ## Query Builder State
 
-When you click Save, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) Select Statement will be replaced by the new SQL query that was generated.
+When you click Save, the [SqlDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) Select Statement will be replaced by the new SQL query that was generated.
 
 The Query Builder keeps your current settings. But if you change the SQL query manually and then use the Query Builder again, it will replace your changes with its own version.
 
@@ -198,6 +198,6 @@ null,Production,ProductCategory
 
 * [Getting Started Video Tutorial Part 1](https://www.youtube.com/embed/L-utkcB8-5c?si=bmJU9ggpSOykHdLK&amp;start=188)
 * [Getting Started Video Tutorial Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU)
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
-* [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})
+* [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [WebServiceDataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
+* [WebServiceDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard)

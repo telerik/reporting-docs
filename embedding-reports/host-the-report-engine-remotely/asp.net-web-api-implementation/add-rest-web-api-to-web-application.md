@@ -61,7 +61,7 @@ The project has a preconfigured implementation of the reports controller that us
 	- System.Net.Http.dll
 	- System.Net.Http.Formatting.dll
 
-1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
+1. [Implement the reports controller](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application)
 1. (_Only for Empty Web Application_) Add a new item "Global Application Class".
 1. Invoke [RegisterRoutes](/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) at the beginning of the `Global.Application_Start (Global.asax)` method:
 
@@ -73,7 +73,7 @@ The project has a preconfigured implementation of the reports controller that us
 
 	`http://localhost:[portnumber]/api/reports/formats`
 
-	If the request is successful, you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
+	If the request is successful, you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats).
 
 	> The call to `http://localhost:[portnumber]/api/reports/formats` does not require authorization by design, as this request is for test purposes, i.e., to check whether the REST Service is running.
 
@@ -92,4 +92,4 @@ The project has a preconfigured implementation of the reports controller that us
 
 ## See Also
 
-- [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
+- [Localization](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization)

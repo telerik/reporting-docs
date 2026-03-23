@@ -34,7 +34,7 @@ res_type: kb
 
 ## Description
 
-Azure websites restrict the usage of certain GDI APIs we use for image rendering. When working with a desktop client (WinForms or WPF report viewer), the printing process essentially is rendering the report using the [ImageRendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) extension in a Metafile. We use Metafile, because it is a vector format, hence supports scaling/zooming without quality loss. However, metafiles are not supported in Azure.
+Azure websites restrict the usage of certain GDI APIs we use for image rendering. When working with a desktop client (WinForms or WPF report viewer), the printing process essentially is rendering the report using the [ImageRendering](slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) extension in a Metafile. We use Metafile, because it is a vector format, hence supports scaling/zooming without quality loss. However, metafiles are not supported in Azure.
 
 ## Solution
 
@@ -58,9 +58,9 @@ This setting will be respected when initiating printing from a WPF or WinForms v
 
 ## Notes
 
-Please consider that the default resolution of printed image is *96 DPI*. If the image appears pixelated when printed, try increase the resolution, setting the parameters *DpiX* and *DpiY* of **ImagePrint** extension. You can read more about the available extension settings in [Image Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/image-device-information-settings%}) help article.
+Please consider that the default resolution of printed image is *96 DPI*. If the image appears pixelated when printed, try increase the resolution, setting the parameters *DpiX* and *DpiY* of **ImagePrint** extension. You can read more about the available extension settings in [Image Device Information Settings](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/image-device-information-settings) help article.
 
 ## See Also
 
-* [Preview Reports in Desktop Viewers Using REST Service Deployed in Azure]({%slug preview-reports-using-rest-service-deployed-in-azure.md%})
-* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})
+* [Preview Reports in Desktop Viewers Using REST Service Deployed in Azure](slug: preview-reports-using-rest-service-deployed-in-azure.md)
+* [Problems When Rendering Teleik Reports in Azure](slug: azure-reporting-problems)

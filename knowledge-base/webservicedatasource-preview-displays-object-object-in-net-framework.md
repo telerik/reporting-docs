@@ -52,5 +52,5 @@ public override IHttpActionResult PreviewWebServiceData(DataSourceInfo dataSourc
 
 ## See Also
 
-* [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
-* [Web Report Designer - WebServiceDataSource Wizard Tutorial]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/WebServiceDataSource-wizard%})
+* [Configuring the Web Report Designer in ASP.NET Framework application](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application)
+* [Web Report Designer - WebServiceDataSource Wizard Tutorial](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/WebServiceDataSource-wizard)

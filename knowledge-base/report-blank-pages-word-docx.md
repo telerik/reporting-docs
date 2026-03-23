@@ -31,7 +31,7 @@ Telerik Reporting Word rendering pages the report according to the report page s
 ## Suggested Workarounds
 
 In Telerik Reporting R2 2018 SP1 we have made some improvements to the Word rendering to better supports __PageSettings.ContinuousPaper__ and
-we have introduced to the expressions [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) `RenderingFormat.Name`. Thus now we can avoid the first paging with the following [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}):
+we have introduced to the expressions [Global Object](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) `RenderingFormat.Name`. Thus now we can avoid the first paging with the following [Binding](slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings):
 
 <table>
 	<tr>
@@ -50,4 +50,4 @@ The `PageNumber` and `PageCount` expressions will evaluate to 1 on all pages.
 
 ## See Also
 
-[Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
+[Bindings](slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)

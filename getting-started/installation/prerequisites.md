@@ -19,10 +19,10 @@ This article lists the system requirements that include operating system, .NET, 
 
 The SkiaSharp-based graphics engine introduced with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) may be embedded in cross-platform applications targeting .NET {{site.mindotnetversion}}.0 or higher.
 
-To ensure the smooth functioning of the Telerik Reporting features when deploying ADOMD.NET and Open XML, refer to the article on [Telerik Reporting third-party dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}).
+To ensure the smooth functioning of the Telerik Reporting features when deploying ADOMD.NET and Open XML, refer to the article on [Telerik Reporting third-party dependencies](slug: telerikreporting/using-reports-in-applications/third-party-dependencies).
 
 ## See Also
 
-* [Telerik Reporting Installation Approaches]({%slug telerikreporting/installation%})
-* [Included Assemblies]({%slug included-assemblies%})
+* [Telerik Reporting Installation Approaches](slug: telerikreporting/installation)
+* [Included Assemblies](slug: included-assemblies)
 * [System Requirements](https://www.telerik.com/products/reporting/system-requirements)

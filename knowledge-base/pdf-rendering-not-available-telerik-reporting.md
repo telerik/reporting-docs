@@ -34,12 +34,12 @@ The root cause of the issue is missing or incorrect references to Telerik Report
 
 ## Solution
 
-1. **Use Telerik Reporting NuGet Packages:** Instead of directly referencing assemblies, install the `Telerik.Reporting` NuGet packages which includes the PDF rendering extension. For instructions on setting up the Telerik private NuGet feed, refer to [Adding Telerik NuGet Feed to VS with Package Manager or CLI - Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. **Use Telerik Reporting NuGet Packages:** Instead of directly referencing assemblies, install the `Telerik.Reporting` NuGet packages which includes the PDF rendering extension. For instructions on setting up the Telerik private NuGet feed, refer to [Adding Telerik NuGet Feed to VS with Package Manager or CLI - Telerik Reporting](slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. **Correct Assembly Locations:** If using assembly references, ensure that the Telerik Reporting assemblies are sourced from the appropriate directory for .NET applications, typically found in `C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q1\Bin\netstandard2.0`.
-1. **Include All Sub-Dependencies/Packages:** Manually verify that all necessary sub-dependencies are included in the project. Detailed requirements can be found in the [Using Telerik Reporting with .NET 6+ or Standard]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) article.
+1. **Include All Sub-Dependencies/Packages:** Manually verify that all necessary sub-dependencies are included in the project. Detailed requirements can be found in the [Using Telerik Reporting with .NET 6+ or Standard](slug: telerikreporting/using-reports-in-applications/dot-net-core-support#requirements) article.
 1. **Address Dependency Conflicts:** If the `System.Configuration.ConfigurationManager` package version **8.0.0** is present, downgrade it to version 7.0.0 as it is known to cause the aforementioned error. This package may have been installed as a sub-dependency by other packages, such as `Microsoft.Data.SqlClient`.
 
 ## See Also
 
-- [Adding Telerik NuGet Feed to VS with Package Manager or CLI - Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})
-- [Using Telerik Reporting with .NET 6+ or Standard]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements)
+- [Adding Telerik NuGet Feed to VS with Package Manager or CLI - Telerik Reporting](slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio)
+- [Using Telerik Reporting with .NET 6+ or Standard](slug: telerikreporting/using-reports-in-applications/dot-net-core-support#requirements)

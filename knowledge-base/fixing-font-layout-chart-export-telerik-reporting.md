@@ -30,7 +30,7 @@ To resolve font and layout differences in chart exports:
 
 1. **Ensure Font Availability on Target Systems**:
    * The OpenXML formats (PPTX, XLSX, and DOCX) rely on the target system to have the specified fonts (e.g., Calibri) installed. If the font is unavailable, a fallback font is used.
-   * Verify that Calibri is installed on the machine where the exported files are opened. For more details, refer to [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%}).
+   * Verify that Calibri is installed on the machine where the exported files are opened. For more details, refer to [Fonts Requirements](slug: telerikreporting/designing-reports/rendering-and-paging/fonts-requirements).
 
 1. **Embed Fonts in PPTX Files**:
    * Open the generated PPTX file on a machine with the Calibri font.
@@ -38,7 +38,7 @@ To resolve font and layout differences in chart exports:
 
 1. **Check for Overriding Styles**:
    * Review the report definition (`report.designer.cs`) and any external stylesheets to ensure no conflicting or default font settings override the intended style for Graph items.
-   * Refer to [Styling Reports]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}) for more information.
+   * Refer to [Styling Reports](slug: telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets) for more information.
 
 1. **Reduce Extra Space in Office Exports**:
    * Office formats process layout and padding differently for Graph items, which may cause additional space.
@@ -50,5 +50,5 @@ To resolve font and layout differences in chart exports:
 ## See Also
 
 * [Text Truncated after Exporting to PowerPoint](https://www.onepager.com/support/faq.php?id=104) 
-* [Telerik Reporting Overview]({%slug telerikreporting/welcome-to-telerik-reporting!%})
+* [Telerik Reporting Overview](slug: telerikreporting/welcome-to-telerik-reporting!)
 * [Graph Item API Reference](/api/telerik.reporting.graph)

@@ -26,7 +26,7 @@ CEO
  │    │    ├── Accountants
 </pre>
 
-The approach demonstrated here uses a recursive [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) to construct a hierarchy from flat data. The main report references itself in a SubReport item, and each SubReport filters its data using a report parameter passed from its parent. This process continues recursively, building the hierarchy until no more child items remain:
+The approach demonstrated here uses a recursive [SubReport](slug: web-report-designer-user-guide-components-subreport) to construct a hierarchy from flat data. The main report references itself in a SubReport item, and each SubReport filters its data using a report parameter passed from its parent. This process continues recursively, building the hierarchy until no more child items remain:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LqzBHDsm2UY?si=ExWqRqawzTKRVL8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -34,9 +34,9 @@ To create the Organizational Hierarchy, follow the steps:
 
 1. Create a new report (`OrgStructure.trdp`), which you will use as a report to show the employees.
 
-1. Delete the Header and Footer. Leave only the [Detail Section]({%slug user-guide/components/report-sections%}).
+1. Delete the Header and Footer. Leave only the [Detail Section](slug: user-guide/components/report-sections).
 
-1. Create a [CSV data source]({%slug web-report-designer-user-guide-components-data-sources%}#csv-data-source) item using the self-referencing flat data for the employees. Every data record contains own EmployeeID and the ID of the manager this person reports to, forming the chain-of-command up to the company CEO:
+1. Create a [CSV data source](slug: web-report-designer-user-guide-components-data-sources#csv-data-source) item using the self-referencing flat data for the employees. Every data record contains own EmployeeID and the ID of the manager this person reports to, forming the chain-of-command up to the company CEO:
 
     ```CSV
     EmployeeID,Name,JobTitle,ManagerID,Department,Location
@@ -103,5 +103,5 @@ To create the Organizational Hierarchy, follow the steps:
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Data Sources](slug: web-report-designer-user-guide-components-data-sources)

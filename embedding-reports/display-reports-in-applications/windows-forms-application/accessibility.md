@@ -31,7 +31,7 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsViewerAccessibilityKeyMapSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsViewerAccessibilityKeyMapSnippet}}
 
-All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).
+All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [Report Viewer Localization](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization).
 
 > Please note that the meta-information, added to the report content when the accessibility is enabled, might result in a small performance penalty, especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.
 

@@ -54,9 +54,9 @@ For that reason Blazor WASM projects don't support the System.Drawing.Common fun
 
 ## Suggested Workarounds
 
-The ReportProcessor or the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) should be hosted in a different project type, for example, [Blazor Server](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-7.0#blazor-server), which supports System.Drawing.Common.
+The ReportProcessor or the [Reporting REST Service](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) should be hosted in a different project type, for example, [Blazor Server](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-7.0#blazor-server), which supports System.Drawing.Common.
 
-The generated reports may be displayed in the [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) or [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) hosted in a Blazor WebAssembly project.
+The generated reports may be displayed in the [Blazor Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) or [Native Blazor Report Viewer](slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) hosted in a Blazor WebAssembly project.
 
 ## Notes
 

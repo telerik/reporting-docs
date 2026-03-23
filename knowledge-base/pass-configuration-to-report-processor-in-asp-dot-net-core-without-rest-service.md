@@ -33,7 +33,7 @@ res_type: kb
 
 If you want to export a report in ASP.NET Core application with the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) without using the _Telerik Reporting REST Service_, you may need the configuration settings from the `appsettings.json` file.
 
-For example, when the report uses external user functions, their assembly should be registered in the **telerikReporting** section of the configuration file - [Extending Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%}).
+For example, when the report uses external user functions, their assembly should be registered in the **telerikReporting** section of the configuration file - [Extending Expressions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview).
 
 ## Solution
 
@@ -76,7 +76,7 @@ For example, when the report uses external user functions, their assembly should
    }
    ```
 
-   For more details about the above settings, you may check [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC]({%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%}).
+   For more details about the above settings, you may check [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](slug: how-to-implement-telerik-reporting-in-asp-net-core-mvc).
 
 3. The next step is to use the _ReportProcessor_ with its overload specific for .NET Standard that takes as an argument the configuration - in an MVC controller you may inject it in the constructor of the controller:
 

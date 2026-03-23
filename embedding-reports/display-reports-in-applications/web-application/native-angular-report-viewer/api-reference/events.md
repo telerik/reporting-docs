@@ -303,7 +303,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 ### reportLoadProgress
 
-The `reportLoadProgress` event will be emitted after each successful [`Get Document Info`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info%}) request until the report rendering is complete.
+The `reportLoadProgress` event will be emitted after each successful [`Get Document Info`](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info) request until the report rendering is complete.
 
 ````HTML
 <reporting-angular-viewer
@@ -544,7 +544,7 @@ import { PageInfo } from '@progress/telerik-common-report-viewer'
 
 ### navigateToReport
 
-The `navigateToReport` event will be emitted when the viewer navigates to a new report through the [`Drillthrough/Navigate To Report Action`]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}).
+The `navigateToReport` event will be emitted when the viewer navigates to a new report through the [`Drillthrough/Navigate To Report Action`](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action).
 
 ````HTML
 <reporting-angular-viewer
@@ -867,7 +867,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 ### parametersLoaded
 
-The `parametersLoaded` event will be emitted after the [`Get Report Parameters `]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters%}) is made.
+The `parametersLoaded` event will be emitted after the [`Get Report Parameters `](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters) is made.
 
 ````HTML
 <reporting-angular-viewer

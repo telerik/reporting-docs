@@ -112,6 +112,6 @@ This code prevents saving reports with a `.trdp` extension and returns a custom 
 
 ## See Also
 
-* [Web Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Customizing via Permissions in the Web Report Designer]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%})
+* [Web Report Designer Overview](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Customizing via Permissions in the Web Report Designer](slug: telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization)
 

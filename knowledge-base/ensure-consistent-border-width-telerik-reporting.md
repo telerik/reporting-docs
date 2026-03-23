@@ -42,5 +42,5 @@ This approach addresses the root cause of the issue by aligning the rendering be
 
 ## See Also
 
-- [Telerik Reporting Table Item]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
-- [Styling Report Items]({%slug telerikreporting/designing-reports/styling-reports/styling-report-items%})
+- [Telerik Reporting Table Item](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
+- [Styling Report Items](slug: telerikreporting/designing-reports/styling-reports/styling-report-items)

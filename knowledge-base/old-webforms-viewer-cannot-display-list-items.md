@@ -30,14 +30,14 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).  
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
 
 The old ASP.NET Webforms ReportViewer does not display a report that uses `Table`, `List`, or `Crosstab` items in Internet Explorer.
 
 ## Cause
 
-If the data visualized by the [`Table`, `List`, or `Crosstab` item]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) results in a great number of HTML elements, Internet Explorer may fail to visualize the content of the report.  
+If the data visualized by the [`Table`, `List`, or `Crosstab` item](slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) results in a great number of HTML elements, Internet Explorer may fail to visualize the content of the report.  
 
 ## Solution  
 
-To solve this issue, refer to the solutions suggested in the [Design Considerations for HTML Rendering (Browsers Limitations)]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}) article.         
+To solve this issue, refer to the solutions suggested in the [Design Considerations for HTML Rendering (Browsers Limitations)](slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations) article.         

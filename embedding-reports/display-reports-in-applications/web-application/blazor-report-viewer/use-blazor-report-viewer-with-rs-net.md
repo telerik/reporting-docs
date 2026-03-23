@@ -27,13 +27,13 @@ The Blazor Report Viewer item template allows you to quickly [add the Blazor Rep
 
 Make sure that you select **Blazor Report Viewer page**, instead of **HTML5 Report Viewer page** when adding a new item to your project, and follow the steps in the **'Add new Report Viewer'** dialog.
 
-Refer to the [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates) section in the [How to Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}) documentation article, again, making sure that you select the **Blazor Report Viewer page** in the [Add New Item](<https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)>) dialog box.
+Refer to the [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates) section in the [How to Use HTML5 Report Viewer with Report Server](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server) documentation article, again, making sure that you select the **Blazor Report Viewer page** in the [Add New Item](<https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)>) dialog box.
 
 After creating the Blazor Report Viewer, we need some manual adjustments to make it work with the Report Server for .NET as explained in the section [Connect to the Report Server for .NET instance](#connect-to-the-report-server-for-net-instance).
 
 ## Adding the Blazor Report Viewer component manually
 
-1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET {{site.mindotnetversion}}+ is used) can serve static files:
 
    ```C#
@@ -150,5 +150,5 @@ If you prefer to use hardcoded credentials, use the following snippet to place t
 
 - [Report Server for .NET Introduction](https://docs.telerik.com/report-server/dotnet-docs/overview)
 - [Configuring the Report Server for .NET for Authentication with JWT Tokens](https://docs.telerik.com/report-server/dotnet-docs/token-authentication)
-- [Integrating the Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%})
+- [Integrating the Blazor Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer)
 - [Blazor Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting) documentation article.

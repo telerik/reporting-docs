@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).  
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
 
 The old ASP.NET Webforms ReportViewer does not display reports or the page area is messed on iPad and other mobile devices.
 
@@ -40,4 +40,4 @@ The old ASP.NET WebForms ReportViewer displays content in the browser by using `
 
 ## Solution  
 
-To solve this issue, [use an older `DOCTYPE` declaration]({% slug blank-report-in-asp.net-reportviewer-on-ipad-iphone %}).         
+To solve this issue, [use an older `DOCTYPE` declaration]({% slug blank-report-in-asp.net-reportviewer-on-ipad-iphone ).         

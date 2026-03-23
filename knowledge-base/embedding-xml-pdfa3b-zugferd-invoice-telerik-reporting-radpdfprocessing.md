@@ -27,7 +27,7 @@ This article demonstrates how to embed [ZUGFeRD](https://de.wikipedia.org/wiki/Z
 
 The recommended workflow is:
 
-1. [Generate the PDF Report using Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}).
+1. [Generate the PDF Report using Telerik Reporting](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine).
 1. [Import the PDF into RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#import).
 1. [Embed the ZUGFeRD XML file](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/embedded-file-streams/embedded-file-streams#creating-an-embedded-electronic-zugferd-invoice).
 1. [Export the final PDF](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/pdfformatprovider#export).

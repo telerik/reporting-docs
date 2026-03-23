@@ -52,10 +52,10 @@ In the above code, `LC_ALL` stands for all locales, and `LANG` stands for the la
 
 ### Other Environments
 
-1. You may wrap your textbox's __Value__ expression in the __FormatWithCulture(cultureName, format, args)__ [text function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) to ensure that the textbox will be formatted with that specific culture.
+1. You may wrap your textbox's __Value__ expression in the __FormatWithCulture(cultureName, format, args)__ [text function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions) to ensure that the textbox will be formatted with that specific culture.
 1. You may set the [Report.Culture](/api/telerik.reporting.report) to a specific culture that will be used whenever the report is rendered.
 
 ## See Also
 
-* [Report Globalization]({%slug telerikreporting/designing-reports/report-globalization%})
-* [Text Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%})
+* [Report Globalization](slug: telerikreporting/designing-reports/report-globalization)
+* [Text Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions)

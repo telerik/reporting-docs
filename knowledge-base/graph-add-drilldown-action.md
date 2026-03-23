@@ -23,25 +23,25 @@ res_type: kb
 
 ## Description
 
-How can I create a [Column chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}) and add [drill-down capabilities]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%}) to its category groups by using the [Graph](/reporting/api/Telerik.Reporting.Graph) item and the [AdventureWorks](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)) sample database? 
+How can I create a [Column chart](slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview) and add [drill-down capabilities](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action) to its category groups by using the [Graph](/reporting/api/Telerik.Reporting.Graph) item and the [AdventureWorks](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)) sample database? 
 
 ## Solution 
 
 The demonstrated solution includes a chart that will display the amount of sales by product categories per year, and the attached drill-down actions provide a more detailed view over the sales, showing the subcategories for the selected product category. 
 
-For the purposes of the suggested solution, use either the [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [integrated Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). 
+For the purposes of the suggested solution, use either the [Standalone Telerik Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [integrated Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). 
 
 1. Start the report designer and create a new report: 
 
 	+ (Standalone Report Designer) **File** > **New** > **Blank Report** 
 	+ (Visual Studio Report Designer) **File** > **New Project** > **Telerik Report Library {{site.suiteversion}}** > **Blank Report**. 
 
-1. Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}): 
+1. Add a new [SqlDataSource component](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview): 
 
 	* (Standalone Report Designer) Double-click the SqlDataSource in the __Data tab__. 
 	* (Visual Studio Report Designer) Double-click the SqlDataSource item in the VS Toolbox.
 
-	As a result, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) will start.
+	As a result, the [SqlDataSource Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) will start.
 
 1. On the **Choose Data Connection** page, either select an existing connection to the __AdventureWorks__ database, or create a new one by specifying the SqlClient Data Provider and a valid connection string to an AdventureWorks database. 
 
@@ -78,7 +78,7 @@ For the purposes of the suggested solution, use either the [Standalone Telerik R
 
 	Click **Next** and, then, the __Execute Query...__ button to make sure that everything is fine with your data connection and that the data is fetched from the database. Click __Finish__ when ready to close the SqlDataSource Wizard. 
 
-1. Select the report in the Report Designer and increase its Width to `11in`. To provide more space for the content in the designed report, open the [**PageSettings** properties]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) of the report and set the following configurations: 
+1. Select the report in the Report Designer and increase its Width to `11in`. To provide more space for the content in the designed report, open the [**PageSettings** properties](slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination) of the report and set the following configurations: 
 
 	+ `Landscape` to `True`.
 

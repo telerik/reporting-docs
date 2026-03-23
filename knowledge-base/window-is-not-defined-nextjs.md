@@ -34,7 +34,7 @@ The NextJS application cannot render the page with the `React Report Viewer`. In
 
 ## Steps to Reproduce
 
-Create a new NextJS application through `create-next-app`, then add the [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) to a page and try to load that page.
+Create a new NextJS application through `create-next-app`, then add the [React Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) to a page and try to load that page.
 
 ## Error Message
 
@@ -44,11 +44,11 @@ ReferenceError: window is not defined
 
 ## Cause
 
-[Next.js](https://nextjs.org/) is universal, which means it executes code first server-side, then client-side. The [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) object is only present client-side which is a problem because our [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) interacts with it.
+[Next.js](https://nextjs.org/) is universal, which means it executes code first server-side, then client-side. The [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) object is only present client-side which is a problem because our [React Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) interacts with it.
 
 ## Solution
 
-Render the [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) in a [NextJS Client Component](https://nextjs.org/docs/app/building-your-application/rendering/client-components) which you may enable with the [use client](https://nextjs.org/docs/app/api-reference/directives/use-client) directive, for example:
+Render the [React Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) in a [NextJS Client Component](https://nextjs.org/docs/app/building-your-application/rendering/client-components) which you may enable with the [use client](https://nextjs.org/docs/app/api-reference/directives/use-client) directive, for example:
 
 ```JavaScript
 "use client"

@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 By default, the report viewer shows all the supported rendering extensions in its export dropdown. The available rendering extensions 
-are listed in the [Rendering Extensions]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) help article.
+are listed in the [Rendering Extensions](slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats) help article.
 
 Sometimes, it is necessary to limit export formats to certain formats only.
 
@@ -72,4 +72,4 @@ example below shows an JSON-based configuration file that hides the RTF renderin
   ```
 
 ## See Also
-[Configuring Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+[Configuring Telerik Reporting](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)

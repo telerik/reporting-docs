@@ -16,7 +16,7 @@ The quickest way to add a HTML5 MVC Report Viewer to your web project is with th
 
 ## Prerequisites
 
-1. Review the HTML5 MVC Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}#requirements).
+1. Review the HTML5 MVC Report Viewer [Requirements](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview#requirements).
 1. The project must target [ASP.NET 4.0 MVC](https://dotnet.microsoft.com/apps/aspnet/mvc) or a newer framework.
 1. Installed and running [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 1. Report Server's built-in __Guest__ user should be enabled.
@@ -44,7 +44,7 @@ The VS item template will integrate HTML5 MVC Report Viewer in a.cshtml page and
 
 		![An image of the Setup Report Source for Report Server step of the HTML5 MVC Report Viewer item template wizard](images/item-template-report-source-rs.png)
 
-	1. __'Configure Report Viewer'__ exposes the option to enable [accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) for the report viewer.
+	1. __'Configure Report Viewer'__ exposes the option to enable [accessibility](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility) for the report viewer.
 
 		![An image of the Configure Report Viewer final step of the HTML5 MVC Report Viewer item template wizard with accessibility disabled](images/item-template-accessibility.png)
 
@@ -61,5 +61,5 @@ To display the newly added MVC page, you will need to use your own MVC controlle
 
 ## See Also
 
-* [How To: Use HTML5 ASP.NET MVC Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
+* [How To: Use HTML5 ASP.NET MVC Report Viewer With REST Service](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service)
 * [How to: Add New Project Items](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))

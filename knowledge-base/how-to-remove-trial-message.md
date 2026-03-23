@@ -26,9 +26,9 @@ res_type: kb
 
 ## Description
 
-This tutorial explains in detail how to upgrade your Telerik [Trial]({%slug telerikreporting/licensing%}) to a Licensed version of [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).
+This tutorial explains in detail how to upgrade your Telerik [Trial](slug: telerikreporting/licensing) to a Licensed version of [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).
 
-> Starting with [Telerik Reporting version Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), you must activate the product through a [license key]({%slug license-key%}) (trial or commercial). To upgrade from a Trial to a Developer (or commercial) license, purchase a license and then download a new license key, without re-installing the product.
+> Starting with [Telerik Reporting version Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), you must activate the product through a [license key](slug: license-key) (trial or commercial). To upgrade from a Trial to a Developer (or commercial) license, purchase a license and then download a new license key, without re-installing the product.
 
 Let's start with having a trial version installed on your machine and a project that uses the trial version. Access to the Trial version of product files in the Downloads section of your Telerik account: 
 
@@ -46,7 +46,7 @@ Once you purchase a Telerik license, you will have access to the **Purchase Lice
 
 ## Upgrade the Trial Assemblies
 
-1. Download the DEV .msi file for the Purchase version: [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#msi-installation).
+1. Download the DEV .msi file for the Purchase version: [How to download Telerik Reporting installer](slug: telerikreporting/installation#msi-installation).
 1. Uninstall the already installed Trial version, e.g. from the Windows Control Panel >> Programs and Features.
 1. Install the downloaded .msi file in step 1.
 1. Update the references in your project with the assemblies from the licensed installation. It is necessary to delete the old trial assemblies first:
@@ -63,7 +63,7 @@ Once you purchase a Telerik license, you will have access to the **Purchase Lice
 
 1. Rebuild your project, close Visual Studio, and open it again to make sure that no references are kept in the memory by Visual Studio.
 
-For additional details, you may also check the [Upgrading Trial to Purchase]({%slug telerikreporting/licensing%}#upgrading-from-trial-to-developer) article section.
+For additional details, you may also check the [Upgrading Trial to Purchase](slug: telerikreporting/licensing#upgrading-from-trial-to-developer) article section.
 
 ## Upgrade the Trial NuGet packages
 
@@ -82,4 +82,4 @@ For additional details, you may also check the [Upgrading Trial to Purchase]({%s
 
 ## See Also
 
-* [Telerik Reporting Licensing before 2025]({%slug telerikreporting/licensing%})
+* [Telerik Reporting Licensing before 2025](slug: telerikreporting/licensing)

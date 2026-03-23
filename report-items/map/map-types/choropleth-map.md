@@ -15,7 +15,7 @@ This article demonstrates how to add a Choropleth map to your report by using th
 
 The suggested approach will create and set up a Choropleth map that will show the world population for each country and coloring its area depending on the population density value.
 
-You will use a [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) for the analytical data and an [ESRI Shapefile](https://en.wikipedia.org/wiki/Shapefile) for the spatial data.
+You will use a [CSV Data Source](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard) for the analytical data and an [ESRI Shapefile](https://en.wikipedia.org/wiki/Shapefile) for the spatial data.
 
 The analytical data will be obtained from the [List of sovereign states and dependent territories by population density](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density) Wikipedia article.
 
@@ -29,7 +29,7 @@ The analytical data will be obtained from the [List of sovereign states and depe
 
 ## 2. Add the Data Source 
 
-Now, you will add a new [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) and name it __populationData__. This data source will hold the information about the countries, their area, population, and density along with some additional data.
+Now, you will add a new [CSV Data Source](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard) and name it __populationData__. This data source will hold the information about the countries, their area, population, and density along with some additional data.
 
 Although you can copy the data directly from the Wikipedia page mentioned above, for your convenience pass the ready-to-use `CSV` file and pass it to the CSV data source.
 
@@ -98,9 +98,9 @@ This example demonstrated how to create a simple Choropleth map by using data fr
 
 ## See Also
 
-* [Adding ShapeMapSeries Instances to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
-* [Adding LocationMapSeries Instances to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
-* [Creating BarChart Series and CSV Data Source Maps]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
+* [Adding ShapeMapSeries Instances to the Map](slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item)
+* [Adding LocationMapSeries Instances to the Map](slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item)
+* [Creating BarChart Series and CSV Data Source Maps](slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 * [Map Class API Reference](/api/telerik.reporting.map)

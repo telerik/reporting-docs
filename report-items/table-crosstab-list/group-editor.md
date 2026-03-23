@@ -13,7 +13,7 @@ reportingArea: General
 
 The Table report item allows you to modify the properties of the selected group.
 
-To invoke the context menu with the available options, choose a dynamic group from the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
+To invoke the context menu with the available options, choose a dynamic group from the [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 
 To control the **Filters**, **Grouping**, and **Sorting** properties and specify the **GroupKeepTogether** option, choose the **Group** properties option. As a result, the **Edit Table Group** dialog with the available settings will open.
 
@@ -21,6 +21,6 @@ To control the **Filters**, **Grouping**, and **Sorting** properties and specify
 
 ## See Also
 
-* [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
+* [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
 * [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

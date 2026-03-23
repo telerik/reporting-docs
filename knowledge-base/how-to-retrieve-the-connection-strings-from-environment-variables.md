@@ -65,4 +65,4 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ## See Also
 
-* [How to Connect to a SQL Database]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/how-to-connect-to-a-sql-database%})
+* [How to Connect to a SQL Database](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/how-to-connect-to-a-sql-database)

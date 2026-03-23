@@ -76,4 +76,4 @@ $(function () {
 
 ## See Also
 
-* [Report Viewer Initialization]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization %})
+* [Report Viewer Initialization]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization )

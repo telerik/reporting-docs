@@ -23,7 +23,7 @@ previous_url: /asp-net-report-viewer-clientAPI
 
 # Client-Side API Overview
 
-> This is a legacy report viewer and for new projects our recommendation is to use the latest WebForms Report Viewer - [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+> This is a legacy report viewer and for new projects our recommendation is to use the latest WebForms Report Viewer - [HTML5 Web Forms Report Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
 
 ## Accessing the client-side report viewer object
 
@@ -43,7 +43,7 @@ var viewer = `<%=ReportViewer1.ClientID%>`
 |get_TotalPages()|N/A|Returns the total count of document pages.|
 |CanMoveToPage(pageNumber)| __pageNumber__ : the number of the page(starts from 1).|Checks whether it is possible to navigate to the specified page.|
 |RefreshReport()|N/A|Refreshes the report.|
-|ExportReport(format)|The available formats are listed in the [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) article.|Exports the document to one of the specified formats.|
+|ExportReport(format)|The available formats are listed in the [Export Formats](slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats) article.|Exports the document to one of the specified formats.|
 |PrintAs(format)| __format:__<ul><li>__"PDF":__ uses the Adobe PDF Reader add-on.</li><li>__"Default":__ uses the default printing capabilities of the browser.</li></ul>|Forces the viewer to print the document according to the specified print *format*.|
 |ShowDocumentMap()|N/A|Shows the Document Map|
 |HideDocumentMap()|N/A|Hides the Document Map|

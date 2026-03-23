@@ -19,9 +19,9 @@ This article explains how to customize the AI-powered insights functionality for
 
 ## Configuring the Report Engine
 
-The declarative configuration approach handles most common customization scenarios through the [AIClient element]({%slug telerikreporting/aiclient-element%}) in your application's configuration file. It allows you to customize user consent, custom and predefined prompts, and RAG optimization without writing any code.
+The declarative configuration approach handles most common customization scenarios through the [AIClient element](slug: telerikreporting/aiclient-element) in your application's configuration file. It allows you to customize user consent, custom and predefined prompts, and RAG optimization without writing any code.
 
-> tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) to get familiar with this topic.
+> tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) to get familiar with this topic.
 
 ### User Consent Configuration
 
@@ -129,7 +129,7 @@ Below is an example that takes advantage of the table splitting and automatic en
 }
 ```
 
-For a complete reference of all available `AIClient` options, check the article [AIClient Element Overview]({%slug telerikreporting/aiclient-element%}).
+For a complete reference of all available `AIClient` options, check the article [AIClient Element Overview](slug: telerikreporting/aiclient-element).
 
 ## Overriding ReportsControllerBase Methods
 

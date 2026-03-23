@@ -27,8 +27,8 @@ In many reporting scenarios, you would like to have page breaks between report g
 the last Group Footer. Here we explain how to avoid the last page break.
 
 ## Suggested Workarounds
-You may use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the __PageBreak__ property of the [Group Header or Footer]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) conditionally.
-The exact conditional [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) will depend on the data that is grouped.  
+You may use [Bindings](slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to set the __PageBreak__ property of the [Group Header or Footer](slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report) conditionally.
+The exact conditional [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview ) will depend on the data that is grouped.  
 
 For example, in the following Expression, we compare the last value in the group with the last value of the entire report data, and if they coincide, 
 the Group Footer PageBreak is set to "None".
@@ -40,4 +40,4 @@ the Group Footer PageBreak is set to "None".
 
 The Expression assumes that the data sorting/filtering is not modified in the group. If there is sorting or 
 additional filtering in the data, you must take this into account in the Expression. The Expression assumes also that the last data values don't repeat among the groups.
-We use the _Exec_ [data function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions %}) to access the data scope of the Report that is parent for the Report Group.
+We use the _Exec_ [data function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions ) to access the data scope of the Report that is parent for the Report Group.

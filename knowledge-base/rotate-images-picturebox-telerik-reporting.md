@@ -23,7 +23,7 @@ ticketid: 1554867
 
 ## Description
 
-Images captured with mobile devices sometimes appear rotated in the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) item by 90, 180, or 270 degrees. This happens because mobile devices save orientation data into an [Exif](https://en.wikipedia.org/wiki/Exif) tag in the image metadata, which is then read by the PictureBox item.
+Images captured with mobile devices sometimes appear rotated in the [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) item by 90, 180, or 270 degrees. This happens because mobile devices save orientation data into an [Exif](https://en.wikipedia.org/wiki/Exif) tag in the image metadata, which is then read by the PictureBox item.
 
 This knowledge base article also answers the following questions:
 - How can I rotate images in a PictureBox in Telerik Reporting?
@@ -34,7 +34,7 @@ This knowledge base article also answers the following questions:
 
 To rotate an image in the Telerik Reporting PictureBox and reset its Exif orientation, follow these steps:
 
-1. Implement a [Custom User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to programmatically rotate the image. Use the following code example with the `RotateImageAndResetExif` function:
+1. Implement a [Custom User Function](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) to programmatically rotate the image. Use the following code example with the `RotateImageAndResetExif` function:
 
     ````C#
 public static class ImageHelper
@@ -87,7 +87,7 @@ public static class ImageHelper
 ````
 
 
-1. Register and load the assembly containing the `RotateImageAndResetExif` function in the Telerik Report Designer or Reporting REST Service using the [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}).
+1. Register and load the assembly containing the `RotateImageAndResetExif` function in the Telerik Report Designer or Reporting REST Service using the [assemblyReferences Element](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element).
 1. Use the function in your report expressions with the syntax:
 
    ```
@@ -100,6 +100,6 @@ public static class ImageHelper
 
 ## See Also
 
-- [Custom User Functions Explained - Telerik Reporting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+- [Custom User Functions Explained - Telerik Reporting](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
 - [RotateFlipType Documentation](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.rotatefliptype?view=windowsdesktop-9.0)
 - [EXIF Tags Documentation](https://exiftool.org/TagNames/EXIF.html)

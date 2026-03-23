@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-I have created a new ASP.NET Core project using the Visual Studio project templates targetting `.NET 8+` and upon integrating the HTML5 Report [Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})/[Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) on one of the pages of the web application, the below error is displayed on the page instead of the specified report.
+I have created a new ASP.NET Core project using the Visual Studio project templates targetting `.NET 8+` and upon integrating the HTML5 Report [Viewer](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)/[Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) on one of the pages of the web application, the below error is displayed on the page instead of the specified report.
 
 ## Steps to Reproduce
 

@@ -19,9 +19,9 @@ When working with the Telerik Reporting HtmlTextBox report item, note the follow
 * The HtmlTextBox doesn't support RTL (Right-to-Left) rendering.
 * The HyperLink HTML tag (`<a>`) is interactive (acts as an actual hyperlink) only under an HTML rendering extension.
 
-	To add links in PDF, XLSX, DOCX, and PPTX files, and HTML, XAML, and IMAGE renderings for the different Report Viewers, use a [hyperlink action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}).
+	To add links in PDF, XLSX, DOCX, and PPTX files, and HTML, XAML, and IMAGE renderings for the different Report Viewers, use a [hyperlink action](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action).
 
-For more information about all limitations of the HtmlTextBox in specific export formats, refer to the articles in the section on [design considerations for report rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%}).
+For more information about all limitations of the HtmlTextBox in specific export formats, refer to the articles in the section on [design considerations for report rendering](slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview).
 
 ## See Also
 

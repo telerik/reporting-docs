@@ -20,7 +20,7 @@ res_type: kb
 
 
 ## Description
-The following article demonstrates how to use the [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) to create a chart with plot bands that separate the plot area into regions, using additional AreaSeries
+The following article demonstrates how to use the [Graph item](slug: telerikreporting/designing-reports/report-structure/graph/overview) to create a chart with plot bands that separate the plot area into regions, using additional AreaSeries
 
 ## Solution
 We are assuming that the chart you're creating, needs to be divided horizontally into three areas, colored in red, yellow and green. 
@@ -28,7 +28,7 @@ These areas will help to visually distinguish each column and easily determine i
 A sample image is shown below:
 ![Graph, showing customer satisfaction by store department](images/plot-band-rankings.png)
 
-1. Create a column chart using the wizard. Creating such chart is a straightforward process, explained here: [How To: Create Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}) and we won't discuss it in details.
+1. Create a column chart using the wizard. Creating such chart is a straightforward process, explained here: [How To: Create Column Chart](slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview) and we won't discuss it in details.
 2. Create a second coordinate system, that will use the existing Y axis and have new X axis with Numerical scale.
 3. Add an area series that uses the second coordinate system and the previously created category and series groups.
 4. Set the new area series' X property to _=ColumnNumber('graph1')-1_. This would create a data point for each index of the graph's category grouping.

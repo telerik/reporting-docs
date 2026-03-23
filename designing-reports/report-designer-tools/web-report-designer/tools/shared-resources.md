@@ -28,9 +28,9 @@ The primary benefit of using the Assets manager is to keep all needed resources 
 
 All stored resources reside in the __Assets__ root folder of the Assets Manager. By default, there are three subfolders of the Assets folder initially created by the Web Report Designer to organize your assets:
 
-* __Data__ - to contain all the data files used as data sources in the reports like [CSV]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}), [JSON]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard%}), and [shape file used in a Map item]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%});
-* __Images__ - to contain all the images referenced in [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})-es, backgrounds, etc.;
-* __Styles__ - to contain all the style sheets that can be used to achieve [common stylization]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) of your reports.
+* __Data__ - to contain all the data files used as data sources in the reports like [CSV](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard), [JSON](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard), and [shape file used in a Map item](slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item);
+* __Images__ - to contain all the images referenced in [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox)-es, backgrounds, etc.;
+* __Styles__ - to contain all the style sheets that can be used to achieve [common stylization](slug: telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports) of your reports.
 
 These predefined folders cannot be renamed and deleted from the end-users. However, the developer implementing the Web Report Designer can configure different predefined folders on the backend as needed. The end-users can only create and manage the subfolders of those predefined folders.
 
@@ -40,10 +40,10 @@ The available reports on the server are listed in the Assets Manager as well. Th
 
 ### Shared Data Sources organization
 
-The available [`SharedDataSource`]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}) components are also listed in the Asset Manager. From here, they can be `Downloaded`, `Renamed` or `Deleted`.
+The available [`SharedDataSource`](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component) components are also listed in the Asset Manager. From here, they can be `Downloaded`, `Renamed` or `Deleted`.
 
 ## Resources usage
 
 When a resource is needed to be referenced in a report as a value of a property, the Assets Manager may be opened by the respective property editor. Such properties are, for example, the `Value` property of the PictureBox item and the `Style` -> `BackgroundImage` property of any report item. If not already available, the needed resource can be uploaded and then selected for usage.
 
-Naturally, the properties that need to reference a report, e.g., the target report of a [NavigateToreport interactive action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}), also trigger the Assets Manager to do the job.
+Naturally, the properties that need to reference a report, e.g., the target report of a [NavigateToreport interactive action](slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action), also trigger the Assets Manager to do the job.

@@ -73,7 +73,7 @@ The wizard requires access permissions to the solution folder and its files. If 
 
 Once you open a solution, the Upgrade Wizard will check what version of Telerik Reporting is used and if you have a newer one installed, it will offer to upgrade your application. Visual Studio would automatically popup the `Upgrade Wizard` as shown below:
 
-If you do not want it to pop up automatically, simply check the "Do not start this wizard" checkbox at the bottom. If at a later stage, you decide that you want to upgrade your solution, simply use the [Telerik Reporting Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu%}) and select _Upgrade Wizard_ from it.
+If you do not want it to pop up automatically, simply check the "Do not start this wizard" checkbox at the bottom. If at a later stage, you decide that you want to upgrade your solution, simply use the [Telerik Reporting Menu](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) and select _Upgrade Wizard_ from it.
 
 The next step is to specify which project from the solution you want to upgrade and if you have multiple versions of Telerik Reporting installed - select the one you would like to upgrade/downgrade to:
 
@@ -89,7 +89,7 @@ Once your solution is opened in the IDE, it will notify you with a _File Modific
 
 ## In case you receive compilation errors and/or warnings
 
-Run the `Upgrade Wizard` to upgrade your _ReportLibrary_ projects hosting the reports created with the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+Run the `Upgrade Wizard` to upgrade your _ReportLibrary_ projects hosting the reports created with the [Visual Studio Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 
 This wizard __will not__ change any of your current code. As a result __you may receive compilation errors and/or warnings__ for properties, methods, and events marked as obsolete. In this case, a manual update of your code is required. The [Release Notes](https://www.telerik.com/support/whats-new/reporting/release-history) contain the complete list of obsolete and deleted properties, methods, and events including information on what to be used instead, and why. Please, review the release notes of all Telerik Reporting versions starting from the version you upgraded from to the version you upgraded to, including the ones in between for information on how to update your project.
 
@@ -97,4 +97,4 @@ Feel free to contact us via the [support ticketing system](https://www.telerik.c
 
 ## See Also
 
-* [Missing Telerik menu in Visual Studio]({%slug missing-telerik-menu-in-visual-studio%})
+* [Missing Telerik menu in Visual Studio](slug: missing-telerik-menu-in-visual-studio)

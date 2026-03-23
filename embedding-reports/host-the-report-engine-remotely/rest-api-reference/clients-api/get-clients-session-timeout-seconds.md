@@ -12,7 +12,7 @@ previous_url: /telerik-reporting-rest-api-get-clients-session-timeout-seconds,/e
 
 # `Get Clients Session Timeout Seconds` Overview
 
-The request is performed only if the [viewer's option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) `keepClientAlive` is set to `true`. The response returns a time in seconds that is used by the viewer to determine how often to perform the request [Keep Client Alive]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/keep-client-alive%}).
+The request is performed only if the [viewer's option](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) `keepClientAlive` is set to `true`. The response returns a time in seconds that is used by the viewer to determine how often to perform the request [Keep Client Alive](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/keep-client-alive).
 
 ## Request
 

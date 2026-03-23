@@ -31,7 +31,7 @@ When the authorization attribute is set to the entire ReportsController, the met
 
 Thus, we can suggest two possible approaches:
 
-1. Set the authorize attribute for the ReportsController methods - [REST service methods]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%}), instead of the whole class.
+1. Set the authorize attribute for the ReportsController methods - [REST service methods](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview), instead of the whole class.
 
    These methods are virtual and you can override them like the following:
 
@@ -65,4 +65,4 @@ How to use the authorize attribute is not related to Telerik Reporting directly.
 
 ## See Also
 
-- [Request to '/api/reports/.../{documentId}' Is Not Authorized]({%slug why-get-document-request-is-unauthorized%})
+- [Request to '/api/reports/.../{documentId}' Is Not Authorized](slug: why-get-document-request-is-unauthorized)

@@ -20,7 +20,7 @@ table th:nth-of-type(2) {
 
 # GraphQLDataSource Wizard Overview
 
-The GraphQLDataSource Wizard allows you to create new or edit existing [GraphQLDataSource components]({%slug graphqldatasource%}) in the [Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}).
+The GraphQLDataSource Wizard allows you to create new or edit existing [GraphQLDataSource components](slug: graphqldatasource) in the [Telerik Web Report Designer](slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview).
 
 ## Wizard Flow Summary
 
@@ -50,7 +50,7 @@ Define the GraphQL query to be sent to the service. You can write a static query
 
 ### Configure Request Parameters
 
-Define parameters for the HTTP request. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({%slug graphqldatasource-parameters%}).
+Define parameters for the HTTP request. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource](slug: graphqldatasource-parameters).
 
 !["Configure request parameters" window of the GraphQLDataSource Wizard. Includes 5 pre-configured parameters: a header parameter for the HTTP header "Authorization" and three inline parameters, named "data", "status", and "name".](images/graphqldatasource/configure-request-parameters.png)
 
@@ -95,7 +95,7 @@ Specify parameters for the authentication HTTP request. The supported types are 
 
 ### Choose Design-Time Data
 
-Choose the source of design-time data (used, for example, to display available data source fields in the [Edit Expression dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%})). The available options are:
+Choose the source of design-time data (used, for example, to display available data source fields in the [Edit Expression dialog](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog)). The available options are:
 
 - **Use real data while designing the report** – HTTP requests are sent to the GraphQL service during design time to retrieve the data.
 - **Upload JSON file** – Use an external JSON file for the data. The URI can be relative or absolute.
@@ -113,10 +113,10 @@ Preview the data returned based on the current configuration. Optionally, specif
 
 | Setting       | Description                                                                                                                                                                                                             |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}). |
+| Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data](slug: graphqldatasource-filter-json-data). |
 
 ## See Also
 
-- [GraphQLDataSource Component Overview]({%slug graphqldatasource%})
-- [Using JSONPath to Filter JSON data]({%slug graphqldatasource-filter-json-data%})
-- [Using Parameters with GraphQLDataSource]({%slug graphqldatasource-parameters%})
+- [GraphQLDataSource Component Overview](slug: graphqldatasource)
+- [Using JSONPath to Filter JSON data](slug: graphqldatasource-filter-json-data)
+- [Using Parameters with GraphQLDataSource](slug: graphqldatasource-parameters)

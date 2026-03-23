@@ -23,7 +23,7 @@ res_type: kb
 Sometimes it is necessary to determine the rank of a category value (e.g. competitor ID) based on some aggregate value (e.g. total score from several competitions).
 
 ## Solution
-It is necessary to create a [Custom Aggregate]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) that achieves such requirement. Here is a sample code :
+It is necessary to create a [Custom Aggregate](slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions) that achieves such requirement. Here is a sample code :
 
 ```CSharp
 using System.Collections.Generic;
@@ -168,7 +168,7 @@ Note that with the above implementation the equal values will be ranked equally 
  - Values [2.2, 2.2, 0] -> Ranks [1, 1, 3]
  - Values [2, 2.2, 0] -> Ranks [2, 1, 3]
 
-The aggregate function can be used in an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) like :
+The aggregate function can be used in an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview ) like :
 ```
 = Exec('crosstab1', RankByCategory(Fields.AssociateName, CDbl(Fields.CalculatedScore))).GetRank(Fields.AssociateName)
 ```

@@ -362,5 +362,5 @@ Quick Start Guide:
 
 ## See Also
 
-- [Telerik Reporting AI Tooling Overview]({%slug ai-coding-assistant%})
-- [Telerik Reporting MCP Server]({%slug ai-mcp-server%})
+- [Telerik Reporting AI Tooling Overview](slug: ai-coding-assistant)
+- [Telerik Reporting MCP Server](slug: ai-mcp-server)

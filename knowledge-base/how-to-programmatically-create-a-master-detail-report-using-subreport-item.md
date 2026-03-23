@@ -26,9 +26,9 @@ res_type: kb
 
 ## Description
 
-Using the SubReport Item with Parameters in a Master-Detail Report is described in the KB article [Create Master-Detail Reports by Using SubReport Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%}). 
+Using the SubReport Item with Parameters in a Master-Detail Report is described in the KB article [Create Master-Detail Reports by Using SubReport Items](slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item). 
 
-You may do this by [Embedding the Reporting Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) as well.
+You may do this by [Embedding the Reporting Engine](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine) as well.
 
 ## Solution
 
@@ -175,5 +175,5 @@ End Module
 
 ## See Also
 
-* [How to: Create a Master-Detail Report Using a SubReport Item]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
-* [Embedding the Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
+* [How to: Create a Master-Detail Report Using a SubReport Item](slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item)
+* [Embedding the Engine](slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)

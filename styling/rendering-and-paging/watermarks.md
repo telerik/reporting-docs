@@ -12,7 +12,7 @@ reportingArea: General
 
 # Report Watermarks
 
-__Watermarks__ are text or pictures that appear commingled with the report content. They often add interest or identify status, such as marking a generated report as a Draft. You can see watermarks in Print Preview Layout of the report viewers and when printing or exporting. You have the ability to set the __Opacity__ of the text or image, specify its __Position__ and whether it is displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ).
+__Watermarks__ are text or pictures that appear commingled with the report content. They often add interest or identify status, such as marking a generated report as a Draft. You can see watermarks in Print Preview Layout of the report viewers and when printing or exporting. You have the ability to set the __Opacity__ of the text or image, specify its __Position__ and whether it is displayed on first (__PrintOnFirstPage__) and last page (__PrintOnLastPage__).
 
 Watermarks are [PageSettings](/api/Telerik.Reporting.Drawing.PageSettings) member, processed during the paging of the report. At this moment the report data source is not available anymore, and thus data fields used in expressions would not be evaluated.
 
@@ -32,7 +32,7 @@ To add Text Watermarks to the Report use the following steps:
 1. Set __Opacity__.
 1. Set __Position__. Available options are __Behind__ and __Front__. Default is __Behind__.
 1. Set __Orientation__. Available options are __Horizontal__ , __Vertical__ and __Diagonal__. Default is __Horizontal__.
-1. Specify whether it will be displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ).
+1. Specify whether it will be displayed on first (__PrintOnFirstPage__) and last page (__PrintOnLastPage__).
 1. Click __OK__.
 
 ## Add Text Watermark programmatically
@@ -55,7 +55,7 @@ To add Picture Watermarks to the Report use the following steps:
 1. Set __Sizing__ mode. Available options are Center, Stretch, ScaleProportional and TopLeft. See [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) article for more information on the modes.
 1. Set __Opacity__.
 1. Set __Position__. Available options are __Behind__ and __Front__. Default is __Behind__.
-1. Specify whether it will be displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ).
+1. Specify whether it will be displayed on first (__PrintOnFirstPage__) and last page (__PrintOnLastPage__).
 1. Click __OK__.
 
 ## Add Picture Watermark programmatically
@@ -81,7 +81,7 @@ To add Background Overlay to the Report use the following steps:
 1. Set __Sizing__ mode. Available options are Center, Stretch, ScaleProportional and TopLeft. The Background Overlay sets TopLeft as its default Sizing value, which means the image will be displayed without being resized, and positioned in the top left corner of the page area. See [PictureBox](slug: telerikreporting/designing-reports/report-structure/picturebox) article for more information on the modes.
 1. Set __Opacity__. By default the Opacity of the Background Overlay is set to 1.
 1. Specify whether it will be rendered in the output report document. The default value is *false*  which means the Background Overlay will be visible only during design-time.
-1. Specify whether it will be displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ). These options are overridden by the __RenderInReportDocument__ option, i.e. if it is set to *false* , the __PrintOnFirstPage__ and __PrintOnLastPage__ options will not be respected.
+1. Specify whether it will be displayed on first (__PrintOnFirstPage__) and last page (__PrintOnLastPage__). These options are overridden by the __RenderInReportDocument__ option, i.e. if it is set to *false* , the __PrintOnFirstPage__ and __PrintOnLastPage__ options will not be respected.
 1. Click __OK__. The design surface should display the selected Background Overlay image.
 
 ## Add Background Overlay programmatically

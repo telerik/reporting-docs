@@ -11,7 +11,7 @@ reportingArea: General
 
 # Manually Adjusting the Crosstab
 
-Once you have [added the CrossTab to your report, designed it in the Standalone Report Designer, and closed the wizard](slug: crosstab_item_get_started ), you can further adjust the configuration and rendering of the report item by manually setting its required specifics and achieve the following result.
+Once you have [added the CrossTab to your report, designed it in the Standalone Report Designer, and closed the wizard](slug: crosstab_item_get_started), you can further adjust the configuration and rendering of the report item by manually setting its required specifics and achieve the following result.
 
 ![The Preview of the final Crosstab created with the Standalone Report Designer](images/CrosstabFinal.png)
 

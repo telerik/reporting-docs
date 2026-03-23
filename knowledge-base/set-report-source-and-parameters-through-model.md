@@ -95,4 +95,4 @@ This is in case you use the default MapRoute : url: "{controller}/{action}/{id}"
 
 Then the URL might look: http://localhost:XXXXX/Home/Report/SampleReport?parameter1=Item3&parameter2=Value3
 
-The demo application could be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/ModelMvc). Run the [Upgrade Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard ) before starting the application.
+The demo application could be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/ModelMvc). Run the [Upgrade Wizard](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) before starting the application.

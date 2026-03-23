@@ -200,7 +200,7 @@ The same approach can be applied for `.NET Core MVC 3.0` project.
    }
    ```
 
-1. If you are using [SQL DataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview ) with Named/Shared connection string, add the connection string in the `appsettings.json` file.
+1. If you are using [SQL DataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with Named/Shared connection string, add the connection string in the `appsettings.json` file.
 
    Here is a sample for the MSSQL database:
 

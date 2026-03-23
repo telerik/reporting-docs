@@ -16,7 +16,7 @@ You can work with a data item by binding it to a data source component such as a
 
 To perform the binding, you need to set the data item's **DataSource** property to point to a data source component. When a data-bound item is bound to a data source component, little or no additional code is required for data operations, because the data-bound item can automatically take advantage of the data services provided by the data source component.
 
-> For backwards compatibility reasons Telerik Reporting supports binding directly to **IEnumberable** / **IListSource** objects (incl. arrays, collections, **DataSet**, **DataTable**, **DataView**, and **DbDataAdapter** ). Instead consider using the **ObjectDataSource** that can handle these types of data sources.
+> For backwards compatibility reasons Telerik Reporting supports binding directly to **IEnumberable** / **IListSource** objects (incl. arrays, collections, **DataSet**, **DataTable**, **DataView**, and **DbDataAdapter**). Instead consider using the **ObjectDataSource** that can handle these types of data sources.
 
 ## Binding to data at design-time
 

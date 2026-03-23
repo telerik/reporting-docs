@@ -63,7 +63,7 @@ The TextBox is used for titles, labels, and within tables. It can display both s
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y9cbOmE_FvI?si=8ON7egqC8JxYosjh&rel=0" title="Adding a TextBox Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the TextBox item, see the [TextBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/textbox ).
+To learn more about working with the TextBox item, see the [TextBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/textbox).
 
 ## HtmlTextBox
 
@@ -71,7 +71,7 @@ The HtmlTextBox allows you to insert and display HTML-formatted text within a re
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LPROFL_R0wc?si=faI9cLYYoyy-aSO2&rel=0" title="Adding an HtmlTextBox Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the HtmlTextBox item, see the [HtmlTextBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/htmltextbox/overview ).
+To learn more about working with the HtmlTextBox item, see the [HtmlTextBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/htmltextbox/overview).
 
 ## PictureBox
 
@@ -79,7 +79,7 @@ The PictureBox displays images within a report. It is ideal for product images, 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IjvThILDWnY?si=75If-CbYw6fJg8M1&rel=0" title="Adding a PictureBox in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the PictureBox item, see the [PictureBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/picturebox ).
+To learn more about working with the PictureBox item, see the [PictureBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/picturebox).
 
 ## CheckBox
 
@@ -87,7 +87,7 @@ The Checkbox displays a check mark alongside text in a report. It visually repre
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GIugyCC2iAo?si=Uzbzpn5IpWT7bB6R&rel=0" title="Adding a Table with Checkboxes in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the CheckBox item, see the [CheckBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/checkbox ).
+To learn more about working with the CheckBox item, see the [CheckBox article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/checkbox).
 
 ## Barcode
 
@@ -95,7 +95,7 @@ The Barcode item allows you to automatically generate barcodes from numeric or c
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dyOEeuXXUdI?si=6FkSmFJJ4je_i6xo&rel=0" title="Adding a Barcode Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the Barcode item, see the [Barcode article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/barcode/overview ).
+To learn more about working with the Barcode item, see the [Barcode article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/barcode/overview).
 
 ## Shape
 
@@ -103,7 +103,7 @@ The Shape item displays a single, predefined geometric shape (such as lines, arr
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5sc9UoACoD0?si=bkcmfEvn-selVzkX&rel=0" title="Adding a Shape Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the Shape item, see the [Shape article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/shape ).
+To learn more about working with the Shape item, see the [Shape article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/shape).
 
 ## Panel
 
@@ -111,7 +111,7 @@ The Panel is a container used to group or separate multiple report items for lay
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TB6YbXP377c?si=Dmydual09-hLW4U8&rel=0" title="Adding a Panel Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the Panel item, see the [Panel article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/panel ).
+To learn more about working with the Panel item, see the [Panel article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/panel).
 
 ## Gauge
 
@@ -133,4 +133,4 @@ Depending on the gauge's orientation and range, you can create horizontal, verti
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jeH5TNl2Ok0?si=Kgn7voJ5sLzZxzEN&rel=0" title="Adding a Linear Gauge Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-To learn more about working with the Gauge item, see the [Gauge article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/gauge/overview ).
+To learn more about working with the Gauge item, see the [Gauge article in the main Telerik Reporting documentation](slug: telerikreporting/designing-reports/report-structure/gauge/overview).

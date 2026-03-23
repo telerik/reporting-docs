@@ -58,7 +58,7 @@ The PageNumber function has an overload which takes a PageExec function as a sin
 
 ![using First and Last aggregates in the aggregateFunction parameter to specify which page sequence to use to display the page number](images/ResetPageLastFirst.png)
 
-> Using PageNumber or PageCount functions inside conditional statements implemented with the [Conditional and Null-coalescing operators](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators) ( `?:` and `??` ) may prevent these functions from executing for a particular page. This will disrupt the current page sequence and the functions may produce unexpected results. In this case it is recommended to use the [Conditional Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions) instead of the above operators.
+> Using PageNumber or PageCount functions inside conditional statements implemented with the [Conditional and Null-coalescing operators](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators) ( `?:` and `??`) may prevent these functions from executing for a particular page. This will disrupt the current page sequence and the functions may produce unexpected results. In this case it is recommended to use the [Conditional Functions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions) instead of the above operators.
 
 ## PageCount
 

@@ -39,7 +39,7 @@ class Products
 ```
 3. Run the project and close it.
 4. Copy the built assembly to clipboard - navigate to the project folder -> **bin** -> **Debug** and copy the dll file.
-5. Navigate to the installation folder of the Report designer (for example: *C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Report Designer* ) and paste the .dll file.
+5. Navigate to the installation folder of the Report designer (for example: *C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Report Designer*) and paste the .dll file.
 6. Open the **Telerik.ReportDesigner.exe.config** file through an editor and add a reference for the assembly. For example:
 
 ```

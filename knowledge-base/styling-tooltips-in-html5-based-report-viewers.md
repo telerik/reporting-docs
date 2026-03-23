@@ -34,7 +34,7 @@ In this article, we will demonstrate some ways to control its properties and sty
 
 ### Styling the tooltips using the Report Viewer template
 
-- The HTML5 report viewer markup is provided using [a template file](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview ), which is obtained through a [Telerik Reporting REST service instance](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview ).
+- The HTML5 report viewer markup is provided using [a template file](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview), which is obtained through a [Telerik Reporting REST service instance](slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 
   If you want to modify the template file, you need to copy it from _{Telerik Reporting installation directory}\Html5\ReportViewer\templates_ folder to your project and reference it in your report viewer initialization script as shown below:
 

@@ -96,7 +96,7 @@ The default behavior of the viewer can be changed so the viewer is resized autom
    		let viewer = $("#reportViewer1");
    		let viewerHeight = viewer.height();
 
-   		if (viewerHeight !== pageHeight ) {
+   		if (viewerHeight !== pageHeight) {
    			viewer.height(pageHeight);
    			let documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
    			documentMapSplitter.resize(true);
@@ -148,7 +148,7 @@ The default behavior of the viewer can be changed so the viewer is resized autom
    		let	viewer = $("#reportViewer1");
    		let	viewerHeight = viewer.height();
 
-   		if (viewerHeight !== pageHeight ) {
+   		if (viewerHeight !== pageHeight) {
    			viewer.height(pageHeight);
    			var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
    			documentMapSplitter.resize(true);

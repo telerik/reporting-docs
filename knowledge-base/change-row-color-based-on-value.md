@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-How we can change row color, or any other styling characteristic, using [conditional formatting](slug: telerikreporting/designing-reports/styling-reports/conditional-formatting )?
+How we can change row color, or any other styling characteristic, using [conditional formatting](slug: telerikreporting/designing-reports/styling-reports/conditional-formatting)?
 
 ## Solution
 

@@ -89,7 +89,7 @@ The ObjectDataSource component can wrap any business object, where most issues a
 
   When the above message appears, this means that the type used by the ObjectDataSource component is declared in another assembly, different from the assembly that contains the report.
 
-  In this case, the application configuration file (_app.config/web.config_ ) have to be modified and the name of the assembly containing the ObjectDataSource type have to be added in [AssemblyReferences](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) element, as explained in **Configuration** section of [ObjectDataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview) article.
+  In this case, the application configuration file (_app.config/web.config_) have to be modified and the name of the assembly containing the ObjectDataSource type have to be added in [AssemblyReferences](slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) element, as explained in **Configuration** section of [ObjectDataSource](slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview) article.
 
   Additional information can be found in [Telerik Reporting R3 2016 - Upgrade Issues with ObjectDataSource Component](slug: telerik-reporting-r3-2016---upgrade-issues-with-objectdatasource-component).
 

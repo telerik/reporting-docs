@@ -40,4 +40,4 @@ The old ASP.NET WebForms ReportViewer displays content in the browser by using `
 
 ## Solution  
 
-To solve this issue, [use an older `DOCTYPE` declaration](slug: blank-report-in-asp.net-reportviewer-on-ipad-iphone ).         
+To solve this issue, [use an older `DOCTYPE` declaration](slug: blank-report-in-asp.net-reportviewer-on-ipad-iphone).         

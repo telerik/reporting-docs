@@ -31,7 +31,7 @@ When a style is defined as a `TypeSelector`, the formatting for that style is au
 
 An `AttributeSelector` applies to all report items with a particular attribute (such as Color=Red).
 
-Using an `AttributeSelector` Style Rule, you could specify that any report item on the report that has children (for example. where the value of the `HasChildren` property is equal to `True` ) should be `Bold`.
+Using an `AttributeSelector` Style Rule, you could specify that any report item on the report that has children (for example. where the value of the `HasChildren` property is equal to `True`) should be `Bold`.
 
 ### StyleSelector
 

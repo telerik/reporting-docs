@@ -26,7 +26,7 @@ At the end, you'll be able to achieve the following result.
 
 ![Preview of the final version of the Demo Report](images/DemoReport.PNG)
 
-For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application](slug: first-steps-integrating-reports ).
+For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application](slug: first-steps-integrating-reports).
 
 ## Prerequisites
 
@@ -178,9 +178,9 @@ That was it! Now you are ready to deep-dive into Telerik Reporting and take full
 
 ## Next Steps
 
-* [First Steps Guide: Integrating Reports in Applications](slug: first-steps-integrating-reports )
-* [Designing Reports Overview](slug: telerikreporting/designing-reports/overview )
-* [About Telerik Reporting](slug: on-telerik-reporting )
+* [First Steps Guide: Integrating Reports in Applications](slug: first-steps-integrating-reports)
+* [Designing Reports Overview](slug: telerikreporting/designing-reports/overview)
+* [About Telerik Reporting](slug: on-telerik-reporting)
 
 ## See Also
 

@@ -92,6 +92,6 @@ That was it! Now you are ready to deep-dive into Telerik Reporting and take full
 
 ## Next Steps
 
-- [Designing Reports Overview](slug: telerikreporting/designing-reports/overview )
+- [Designing Reports Overview](slug: telerikreporting/designing-reports/overview)
 - [Group Explorer](slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
 - [Report Parameter](slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)

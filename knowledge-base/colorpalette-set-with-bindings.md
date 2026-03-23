@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-The **ColorPalette** property does not support [Expressions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview ) and its value can be set directly only to a constant value.
+The **ColorPalette** property does not support [Expressions](slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview) and its value can be set directly only to a constant value.
 
 ## Solution
 

@@ -127,4 +127,4 @@ I would like to change the default styling of the viewer widget.
 ## See Also
 
 - [Angular workspace configuration](https://angular.io/guide/workspace-config)
-- [Using Angular Wrapper Report Viewer with Angular CLI](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli )
+- [Using Angular Wrapper Report Viewer with Angular CLI](slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli)

@@ -67,9 +67,9 @@ Use the settings in the following table to configure the Telerik Reporting MCP s
 
 An active Telerik Reporting license is required to use the Telerik Reporting MCP server.
 
-- When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug: license-key ) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux). No additional action is required.
-- When using the .NET tooling, but your [license key file](slug: license-key ) is not in the default directory, use one of the options below to configure your license.
-- When using Node.js, add your [license key file](slug: license-key ) as an environment variable in your `mcp.json` file using one of the options below:
+- When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug: license-key) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux). No additional action is required.
+- When using the .NET tooling, but your [license key file](slug: license-key) is not in the default directory, use one of the options below to configure your license.
+- When using Node.js, add your [license key file](slug: license-key) as an environment variable in your `mcp.json` file using one of the options below:
   - As a license file path (recommended):
 
     ```JSON

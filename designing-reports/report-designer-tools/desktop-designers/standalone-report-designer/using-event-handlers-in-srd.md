@@ -1,7 +1,7 @@
 ---
 title: Event handlers in the Standalone Report Designer
 page_title: Using event handlers in reports created with the Standalone Report Designer
-description: "Learn how to use report event handlers in declarattive report definitions created with the Standalone Report Designer."
+description: "Learn how to use report event handlers in declarative report definitions created with the Standalone Report Designer."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd
 tags: crating,using,event,handlers,standalone,report,designer
 published: True
@@ -50,4 +50,4 @@ Assuming you have a [__programmatic report definition__]({%slug telerikreporting
 
 ## See Also
 
-- [Coded Reports in the Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions%})
+* [Coded Reports in the Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions%})

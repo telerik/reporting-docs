@@ -47,9 +47,9 @@ For example, if there is a Report Book of two reports - `Report1.trdp` that uses
 - Report1.trdp - 5 total pages
 - Report2.trdp - 1 total page
 
-In such a case, when the total page count is being counted and the reporting engine goes to the second report, since it uses `PageNumberingStyle.Continue`, the total `PageCount` will be added to that of the `Report1.trdp` report and if it has a total of _5 pages_, and `Report2.trdp` is one page, the `PageCount` object will return `6` for both reports(only when rendered in the context of a Report Book).
+In such a case, when the total page count is being counted and the reporting engine goes to the second report, since it uses `PageNumberingStyle.Continue`, the total `PageCount` will be added to that of the `Report1.trdp` report and if it has a total of _5 pages_, and `Report2.trdp` is one page, the `PageCount` object will return `6` for both reports (only when rendered in the context of a Report Book).
 
-On the other hand, if the order of the two reports is switched and now `Report2.trdp` is first, since the next report(`Report1.trdp`) uses `PageNumberingStyle.ResetNumberingAndCount`, when the counting gets to it the `PageCount` will be restarted and it will now return the total page count of `5`.
+On the other hand, if the order of the two reports is switched and now `Report2.trdp` is first, since the next report (`Report1.trdp`) uses `PageNumberingStyle.ResetNumberingAndCount`, when the counting gets to it the `PageCount` will be restarted and it will now return the total page count of `5`.
 
 ## See Also
 

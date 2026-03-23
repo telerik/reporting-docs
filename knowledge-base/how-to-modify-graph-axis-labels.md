@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-This article explains how to customize the Axis labels when using a Graph item. For example, if you want to use a special expression for the category sccale or apply special formatting for other scale types.
+This article explains how to customize the Axis labels when using a Graph item. For example, if you want to use a special expression for the category scale or apply special formatting for other scale types.
 
 ## Solution For Category Scale
 For Category Scale, using [CategoryGroup.Label](/api/telerik.reporting.graphgroup#Telerik_Reporting_GraphGroup_Label) property would be most useful to modify the labels.

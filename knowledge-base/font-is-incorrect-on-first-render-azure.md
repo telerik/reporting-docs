@@ -29,7 +29,7 @@ res_type: kb
 
 When viewing a report that is rendered in **Azure** environment, the font is replaced on the first instance of that report item/section with the default font for the OS.
 
-The rest of the report is rendered with the custom font as expected. The same report renders correctly(including the first instance) locally.
+The rest of the report is rendered with the custom font as expected. The same report renders correctly (including the first instance) locally.
 
 ## Cause
 
@@ -69,9 +69,9 @@ Host a .NET Core web application project on Azure, then use it to render a repor
 
 ## See Also
 
-- [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
-- [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%})
-- [privateFonts Element Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})
-- [First Few Report Items Have an Incorrect Font]({%slug inconsistent-font-of-the-first-few-report-items%})
-- [Custom Fonts not working on Azure App Service](https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4398)
-- [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})
+* [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
+* [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%})
+* [privateFonts Element Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})
+* [First Few Report Items Have an Incorrect Font]({%slug inconsistent-font-of-the-first-few-report-items%})
+* [Custom Fonts not working on Azure App Service](https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4398)
+* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

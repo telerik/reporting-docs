@@ -70,8 +70,8 @@ To enforce the use of the license key file, unset the environment variable.
 
 ## My team has more than one license holder. Which key do we have to use?
 
-- To activate Telerik Reporting on your development machine, use the key associated with your personal account.
-- To activate Telerik Reporting in a CI/CD environment, use any of the license keys in your team.
+* To activate Telerik Reporting on your development machine, use the key associated with your personal account.
+* To activate Telerik Reporting in a CI/CD environment, use any of the license keys in your team.
 
 ## Are earlier versions of Telerik Reporting affected?
 
@@ -81,11 +81,11 @@ No, versions released prior to January 2025 do not require a license key.
 
 This depends on your license:
 
-- If you have a perpetual license, you can build the application with Telerik Reporting.
-- If you have an expired subscription license, the build will generate warnings.
+* If you have a perpetual license, you can build the application with Telerik Reporting.
+* If you have an expired subscription license, the build will generate warnings.
 
 ## See Also
 
-- [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-- [Setting Up Your License Key]({%slug license-key%}))
-- [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
+* [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
+* [Setting Up Your License Key]({%slug license-key%})
+* [Adding the License Key to CI Services]({%slug license-key-ci-services%})

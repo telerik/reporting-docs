@@ -31,7 +31,7 @@ The Graph supports the following Line chart types:
 
 In this section, you will learn how to create a Line chart with our Line Chart Wizard.
 We are going to create a `Line` Chart without Markers that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
-In the general case, you may select `Stacked Line` or `100% Stacked Line` with or without Markers. The requiered settings are basically the same.
+In the general case, you may select `Stacked Line` or `100% Stacked Line` with or without Markers. The required settings are basically the same.
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 

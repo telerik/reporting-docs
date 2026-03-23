@@ -24,7 +24,7 @@ res_type: kb
 	</tbody>
 </table>
 
-## Desciption
+## Description
 
 The report viewers provide handlers for three types of events that are associated with interactive actions – `Executing`, `Enter` and `Leave`.
 
@@ -40,7 +40,7 @@ Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikrep
 
 ## Solution
 
-- Start Visual Studio, open the solution file and locate the `CSharp.ReportLibrary` project. Navigate to `Choropleth/PopulationDensity.cs` file and open it. Add the following code snippet in the report _constructor_ right after the `InitializeComponent()` call:
+* Start Visual Studio, open the solution file and locate the `CSharp.ReportLibrary` project. Navigate to `Choropleth/PopulationDensity.cs` file and open it. Add the following code snippet in the report _constructor_ right after the `InitializeComponent()` call:
 
   ```C#
   textBoxTitle.Action = new NavigateToUrlAction()
@@ -61,14 +61,14 @@ Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikrep
 
   > Modifying the report definition programmatically is _not recommended_. and we use it here for demonstration purpose - otherwise we strongly advise to use the Report Designer for such tasks.
 
-- Open the `CSharp.NetFramework.WpfIntegrationDemo` project and locate `Window1.xaml.cs` file. Add the following two private fields to the `Window1` body (we will explain about them later):
+* Open the `CSharp.NetFramework.WpfIntegrationDemo` project and locate `Window1.xaml.cs` file. Add the following two private fields to the `Window1` body (we will explain about them later):
 
   ```C#
   System.Windows.Media.Brush fillBrush;
   System.Windows.Media.Brush stroke;
   ```
 
-- Add the following code snippet in the report viewer _constructor_ after `InitializeComponent()` line:
+* Add the following code snippet in the report viewer _constructor_ after `InitializeComponent()` line:
 
   ```C#
   // This code block sets the report viewer's ReportSource property and creates the handlers to the interactive actions.
@@ -82,7 +82,7 @@ Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikrep
   this.ReportViewer1.InteractiveActionExecuting += Choropleth_ActionExecuting;
   ```
 
-- To create the method for the `Choropleth\_ActionEnter` handler, add the following code snippet to the `.cs` file:
+* To create the method for the `Choropleth\_ActionEnter` handler, add the following code snippet to the `.cs` file:
 
   ```C#
   void Choropleth_ActionEnter( object sender, Telerik.ReportViewer.Wpf.InteractiveActionEventArgs args)
@@ -129,7 +129,7 @@ Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikrep
 
   In any other case, the event should be raised when the cursor is over a _map data point_, which means that the current element will be of a `System.Windows.Shapes.Path` type. The current shape fill and stroke is preserved in the fields created earlier so they will be restored when the mouse cursor leaves the current shape. The action in the arguments is cast to `CustomAction` and the current element’s tooltip is set to the output of the `GetCountryInfo()` method.
 
-- To create the method for the `Choropleth\_ActionLeave` handler, add the following code snippet to the `.cs` file:
+* To create the method for the `Choropleth\_ActionLeave` handler, add the following code snippet to the `.cs` file:
 
   ```C#
   // The code here restores the default state of the framework elements, changed during the Choropleth\_ActionEnter  event.
@@ -156,7 +156,7 @@ Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikrep
   }
   ```
 
-- To create the method for the `Choropleth\_ActionExecuting` handler, add the following code snippet to the `.cs` file:
+* To create the method for the `Choropleth\_ActionExecuting` handler, add the following code snippet to the `.cs` file:
 
   ```C#
   void Choropleth_ActionExecuting( object sender, Telerik.ReportViewer.Wpf.InteractiveActionCancelEventArgs args)
@@ -196,7 +196,7 @@ In this article we demonstrated how to add interactivity and customizations to a
 
 ## See Also
 
-- [Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
-- [Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
-- [Add Interactivity to Report in WinForms Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer%})
-- [Add Interactivity to Report in HTML5-based Viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})
+* [Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
+* [Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
+* [Add Interactivity to Report in WinForms Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer%})
+* [Add Interactivity to Report in HTML5-based Viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})

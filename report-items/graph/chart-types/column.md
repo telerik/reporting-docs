@@ -31,7 +31,7 @@ The Graph supports the following Column chart types:
 
 In this section, you will learn how to create a Column chart with our Column Chart Wizard.
 We are going to create a `Clustered Column` Chart that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
-In the general case, you may select `Stacked Column` or `100% Stacked Column`. The requiered settings are basically the same.
+In the general case, you may select `Stacked Column` or `100% Stacked Column`. The required settings are basically the same.
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 

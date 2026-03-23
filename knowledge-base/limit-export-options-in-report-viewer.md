@@ -23,7 +23,7 @@ res_type: kb
 By default, the report viewer shows all the supported rendering extensions in its export dropdown. The available rendering extensions 
 are listed in the [Rendering Extensions]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) help article.
 
-Sometimes, it is neccessary to limit export formats to certain formats only.
+Sometimes, it is necessary to limit export formats to certain formats only.
 
 ## Solution
 In Telerik Reporting, device information settings are used to pass rendering parameters to a rendering extension. 

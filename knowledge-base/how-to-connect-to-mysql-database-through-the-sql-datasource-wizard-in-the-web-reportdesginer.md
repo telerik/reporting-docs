@@ -1,8 +1,8 @@
 ---
-title: Connection unsuccessfull when Trying to Connect to MySQL Database in the Web Report Desginer
-description: Connecting to MySQL Database through the SQL DataSource Wizard in the Web Report Desginer 
+title: Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Designer
+description: Connecting to MySQL Database through the SQL DataSource Wizard in the Web Report Designer 
 type: troubleshooting
-page_title: How to Connect to MySQL Database through the SQL DataSource Wizard in the Web Report Desginer?
+page_title: How to Connect to MySQL Database through the SQL DataSource Wizard in the Web Report Designer?
 slug: how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer
 position: 
 tags: 
@@ -29,10 +29,10 @@ res_type: kb
 
 > Visit the updated [Integrating the MySQL Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider%}) article for a how-to on connecting to MySQL Databases.
 
-The error below is thrown when tring to connect to MySQL Database through the SQL DataSource Wizard in the Web Report Desginer.
+The error below is thrown when trying to connect to MySQL Database through the SQL DataSource Wizard in the Web Report Designer.
 
 ## Error Message
-Connection unsuccessfull.Check the connection string and try again. Keyword not supported:'port'.
+Connection unsuccessful.Check the connection string and try again. Keyword not supported:'port'.
 
 ## Cause\Possible Cause(s)
 The problem is caused by an issue in the SQL DataSource Wizard that doesn't provide the correct Data Provider name. 

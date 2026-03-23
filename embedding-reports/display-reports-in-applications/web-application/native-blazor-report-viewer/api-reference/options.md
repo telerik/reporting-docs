@@ -108,7 +108,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 								authenticating with the report server.</li>
 							<li><strong>Password</strong> - (string, required) Defines the Password to be used for
 								authenticating with the report server.</li>
-							<li><strong>GetPersonalAccessToken</strong> (`Task<string>`, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance as a *string* wrapped in a [Task](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task). </li>
+							<li><strong>GetPersonalAccessToken</strong> (`Task<string>`, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance as a *string* wrapped in a <a href="https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank">Task</a>.</li>
 						</ul>
 					</li>
 					<li><strong>SendEmailDialogSettings</strong> - Represents the predefined settings for the Send Email
@@ -170,7 +170,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 				<ul>
 					<li><strong>ViewMode.Interactive</strong> - enables drill-down interactivity, etc;</li>
 					<li><strong>ViewMode.PrintPreview</strong> - the report is paged according to the page settings;
-						For more information please see [Interactive vs. Print Layout](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout).
+						For more information please see <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout" target="_blank">Interactive vs. Print Layout</a>.
 						<br />
 						Default value is: <strong>ViewMode.Interactive</strong>
 					</li>
@@ -194,7 +194,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>PrintMode</td>
 			<td>
-				<p>Specifies how the viewer should [print reports](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports).</p>
+				<p>Specifies how the viewer should <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports" target="_blank">print reports</a>.</p>
 				<p>The available values are:</p>
 				<ul>
 					<li><strong>PrintMode.AutoSelect</strong> - specifies that the viewer should automatically decide
@@ -211,8 +211,8 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 			<td>ParametersAreaVisible</td>
 			<td>
 				<p><i>boolean, optional;</i></p>
-				<p>Determines whether the viewer's parameters area is initially displayed if any parameter editor exists. The user can expand the parameters area even if it is hidden initially, either through the splitter control or from the toolbar menu. Additionally, the property determines only whether the element, with the *visible* report parameters, will be visible on the page. Even when the setting is **False**, and the parameters area is not visible on the page, it would still be rendered to the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
-				For that reason, if you have a report parameter that contains sensitive information that must not be accessible publicly, set its [Visible](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible) property to **False** instead. This way, the report parameter will not be rendered in the DOM regardless of the __parametersAreaVisible__ setting.</p>
+				<p>Determines whether the viewer's parameters area is initially displayed if any parameter editor exists. The user can expand the parameters area even if it is hidden initially, either through the splitter control or from the toolbar menu. Additionally, the property determines only whether the element, with the *visible* report parameters, will be visible on the page. Even when the setting is **False**, and the parameters area is not visible on the page, it would still be rendered to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">Document Object Model (DOM)</a>.
+				For that reason, if you have a report parameter that contains sensitive information that must not be accessible publicly, set its <a href="/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible" target="_blank">Visible</a> property to **False** instead. This way, the report parameter will not be rendered in the DOM regardless of the <strong>parametersAreaVisible</strong> setting.</p>
 				<p>Default value: <strong>false</strong></p>
 			</td>
 		</tr>
@@ -261,7 +261,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 			<td>
 				<p><i>List&lt;IReportViewerTool&gt;, optional;</i></p>
 				<p>A collection of tools that will be displayed in the toolbar.</p>
-				<p>By default populates <strong>all available tools</strong> as listed in the [Customize the Toolbar of the Blazor Native Report Viewer](slug:native-blazor-report-viewer/toolbar-customization) article.</p>
+				<p>By default populates <strong>all available tools</strong> as listed in the <a href="slug:native-blazor-report-viewer/toolbar-customization" target="_blank">Customize the Toolbar of the Blazor Native Report Viewer</a> article.</p>
 			</td>
 		</tr>
 		<tr>
@@ -269,7 +269,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 			<td>
 				<p><i>string, optional;</i></p>
 				<p>If provided, a *Bearer* token will be set in the *Authorization* header for requests to the REST service.</p>
-				<p>The token is not sent only when requesting [document resources](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource). The reason is that the resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
+				<p>The token is not sent only when requesting <a href="slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource" target="_blank">document resources</a>. The reason is that the resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
 			</td>
 		</tr>
 	</table>

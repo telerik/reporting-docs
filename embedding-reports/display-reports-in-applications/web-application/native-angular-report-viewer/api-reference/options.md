@@ -91,10 +91,10 @@ import { ReportSourceOptions } from '@progress/telerik-common-report-viewer'
 			<br/>
 			Available properties: 
 				<ul>
-					<li>__url__ (*string*, *required*) - the URL to the Telerik Report Server instance.</li>
-					<li>__getPersonalAccessToken__ (*callback function*, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).</li>
-					<li>__username__ (*string*, *optional*) - a registered username in the Report Server that will be used to get access to the reports. If omitted when connecting to the Report Server for .NET Framework 4.6.2, the built-in __Guest__ account will be used;</li>
-					<li>__password__ (*string*, *optional*) - the password for the provided username. Can be omitted only when connecting with the __Guest__ account of the Report Server for .NET Framework 4.6.2.</li>
+					<li><strong>url</strong> (*string*, *required*) - the URL to the Telerik Report Server instance.</li>
+					<li><strong>getPersonalAccessToken</strong> (*callback function*, *optional*, *RS.NET specific*) - specifies the callback function that should return the Token for authentication against the Telerik Report Server for .NET instance wrapped in a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a>.</li>
+					<li><strong>username</strong> (*string*, *optional*) - a registered username in the Report Server that will be used to get access to the reports. If omitted when connecting to the Report Server for .NET Framework 4.6.2, the built-in <strong>Guest</strong> account will be used;</li>
+					<li><strong>password</strong> (*string*, *optional*) - the password for the provided username. Can be omitted only when connecting with the <strong>Guest</strong> account of the Report Server for .NET Framework 4.6.2.</li>
 				</ul>
 			</td>
 		</tr>
@@ -206,8 +206,8 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 			<td>parametersAreaVisible</td>
 			<td>
 				<p><i>boolean, optional;</i></p>
-				<p>Determines whether the viewer's parameters area is initially displayed if any parameter editor exists. The user can expand the parameters area even if it is hidden initially, either through the splitter control or from the toolbar menu. Additionally, the property determines only whether the element, with the *visible* report parameters, will be visible on the page. Even when the setting is **False**, and the parameters area is not visible on the page, it would still be rendered to the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
-				For that reason, if you have a report parameter that contains sensitive information that must not be accessible publicly, set its [Visible](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible) property to **False** instead. This way, the report parameter will not be rendered in the DOM regardless of the __parametersAreaVisible__ setting.</p>
+				<p>Determines whether the viewer's parameters area is initially displayed if any parameter editor exists. The user can expand the parameters area even if it is hidden initially, either through the splitter control or from the toolbar menu. Additionally, the property determines only whether the element, with the *visible* report parameters, will be visible on the page. Even when the setting is **False**, and the parameters area is not visible on the page, it would still be rendered to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">Document Object Model (DOM)</a>.
+				For that reason, if you have a report parameter that contains sensitive information that must not be accessible publicly, set its <a href="/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible" target="_blank">Visible</a> property to **False** instead. This way, the report parameter will not be rendered in the DOM regardless of the <strong>parametersAreaVisible</strong> setting.</p>
 				<p>Default value: <strong>true</strong></p>
 			</td>
 		</tr>
@@ -247,7 +247,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 			<td>contentTabIndex</td>
 			<td>
 				<p><i>number, optional;</i></p>
-				<p>Controls what value will be set on the [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) attribute of the `reportng-angular-viewer` component.</p>
+				<p>Controls what value will be set on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank">tabindex</a> attribute of the `reportng-angular-viewer` component.</p>
 				<p> Default value is <strong>1000.</strong></p>
 			</td>
 		</tr>

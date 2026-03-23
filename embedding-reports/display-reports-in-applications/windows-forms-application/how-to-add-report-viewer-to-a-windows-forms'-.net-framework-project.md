@@ -49,7 +49,7 @@ If the current application has to be declared as DPI-aware, an additional elemen
 ## See Also
 
 - [How to: Add New Project Items](<https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)>)
-- [How to Add manually report viewer to a Windows Forms'.NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project)
+- [How to Add manually report viewer to a Windows Forms'.NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms-net-framework-project)
 - [Windows Forms Application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
 - [On Telerik Reporting](slug:on-telerik-reporting)
 - [Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization)

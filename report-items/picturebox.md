@@ -41,7 +41,7 @@ This document explains how to add an image to a report with the help of the Pict
 
 ## Setting the Value
 
-As its value, the PictureBox accepts an [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) that can contain any of the following:
+As its value, the PictureBox accepts an [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) that can contain any of the following:
 
 - Binary image data.
 - A URI (local path or URL) that points to a bitmap or an SVG file.
@@ -67,11 +67,11 @@ When you add values to the PictureBox, note the following:
 To set an expression as a PictureBox value in the Report Designer:
 
 1. Right-click the item. Choose **Expression...**.
-1. Enter the expression in the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
+1. Enter the expression in the [**Edit Expression** dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog).
 
 ## Binding to Data
 
-To bind an image data to a PictureBox when using a Report Designer is a straightforward process. You need to connect to a data source and drag the image field from the [**Data Explorer**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) window to your report. As a result, the report designer tool will associate each field based on its data type.
+To bind an image data to a PictureBox when using a Report Designer is a straightforward process. You need to connect to a data source and drag the image field from the [**Data Explorer**](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) window to your report. As a result, the report designer tool will associate each field based on its data type.
 
 Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](https://learn.microsoft.com/en-us/dotnet/api/system.object) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
 
@@ -99,13 +99,13 @@ Dim image2 As Image = Image.FromStream(imageStream)
 Me.PictureBox2.Value = image2
 ```
 
-While in design-time within the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox:
+While in design-time within the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox:
 
 ```C#
 this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
 ```
 
-When the database field contains a relative path, either a file path or a URI, you can utilize the [user functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to specify the correct path to the image and then set the `Value` to the correct `=LoadImage(Fields.YourImagePathColumn)` expression.
+When the database field contains a relative path, either a file path or a URI, you can utilize the [user functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) to specify the correct path to the image and then set the `Value` to the correct `=LoadImage(Fields.YourImagePathColumn)` expression.
 
 ```C#
 public static Image LoadImage(string imageLocation)
@@ -125,7 +125,7 @@ End Function
 
 Alternatively, you can assign a string value to the `Value` property. This string value can be any of the following:
 
-- An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash; When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
+- An [item binding expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)&mdash; When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
 - A [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)&mdash; The `Value` property supports both absolute and relative URIs.
 - A string representing a Base64-encoded image or a valid SVG markup&mdash; For optimization, the engine initially checks the length of the string value.
 
@@ -204,14 +204,14 @@ The SVG images are rendered in vector format where the rendering extension suppo
 - In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF), the SVG is rendered in a vector format by default, but can be rendered in a raster format if the `deviceInfo` setting `UseMetafile` is set to `false`.
 - In the rest of the rendering extensions, the SVG is rendered as a raster image, but the size of the item is always taken into account for quality.
 
-> Since version `18.3.24.1112` of Telerik Reporting, the PictureBox item now supports [**NoDataMessage**](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_NoDataMessage). For more information, refer to the [Setting a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%}) article.
+> Since version `18.3.24.1112` of Telerik Reporting, the PictureBox item now supports [**NoDataMessage**](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_NoDataMessage). For more information, refer to the [Setting a No Data Message](slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message) article.
 
 ## Next Steps
 
 - [(Demo) Product Catalog Report with a PictureBox](https://demos.telerik.com/reporting/product-catalog)
-- [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
-- [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
-- [Setting a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})
+- [Using Styles to Customize Reports](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
+- [Using Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)
+- [Setting a No Data Message](slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message)
 - [(API) PictureBox](/api/Telerik.Reporting.PictureBox)
 - [(API) Sizing](/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

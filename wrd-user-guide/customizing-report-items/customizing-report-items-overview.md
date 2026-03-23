@@ -19,21 +19,21 @@ img[alt$="><"] {
 Customization of report items involves changing their properties to achieve both functional and aesthetic goals. These changes can be applied in two ways:
 
 - Static customization: Properties are set once and remain unchanged throughout the report’s lifecycle.
-- Dynamic customization: Properties adjust based on data or variables, such as the current date or logged-in user (see [Expressions]({%slug expression-editor-web-report-designer-user-guide%})).
+- Dynamic customization: Properties adjust based on data or variables, such as the current date or logged-in user (see [Expressions](slug:expression-editor-web-report-designer-user-guide)).
 
 The most important aspect of customization is styling. Styling report items ensures visual consistency (e.g., using themes or style rules), which improves readability, clarity, and brand alignment. Applying different colors, fonts, or layouts can distinguish sections and highlight key information, making reports more engaging and easier to interpret.
 
 To customize or style report items in the Telerik Web Report Designer, you can use its
 
-* [Conditional Formatting]({%slug wrd-conditional-formatting%}) options
-* Built-in CSS-like [styling model]({%slug wrd-stylesheet-formatting%})
+* [Conditional Formatting](slug:wrd-conditional-formatting) options
+* Built-in CSS-like [styling model](slug:wrd-stylesheet-formatting)
 * Properties Area.
 
 ## Properties Area
 
 The **Properties Area** represents the section on the right-side where you can view and edit the properties of the currently selected report item. This area lets you control how each report item looks and behaves. Whether you are working with a TextBox, Table, Chart, or Image, this panel gives you access to all the relevant settings in one place:
 
-* **Appearance**: Change fonts, colors, borders, background, padding, and more. Apply [conditional formatting]({%slug wrd-conditional-formatting%}): dynamically change appearance based on data values.
+* **Appearance**: Change fonts, colors, borders, background, padding, and more. Apply [conditional formatting](slug:wrd-conditional-formatting): dynamically change appearance based on data values.
 * **Data**: Connect report items to fields or expressions from your data source.
 * **Layout**: Modify size, position, alignment, and visibility.
 * **Behavior**: Set actions like navigation, visibility rules, or interactivity.
@@ -67,5 +67,5 @@ To facilitate the easier styling of your report, the Properties Panel offers sev
 
 ## See Also
 
-* [Conditional Formatting]({%slug wrd-conditional-formatting%})
-* [Stylesheet Formatting]({%slug wrd-stylesheet-formatting%})
+* [Conditional Formatting](slug:wrd-conditional-formatting)
+* [Stylesheet Formatting](slug:wrd-stylesheet-formatting)

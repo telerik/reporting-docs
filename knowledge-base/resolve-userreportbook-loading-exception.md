@@ -26,11 +26,11 @@ ticketid: 1666256
 
 ## Description
 
-After installing version `18.2.24.924` of Telerik Reporting, an exception occurs when trying to open a [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%}) in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or a custom application. The error message indicates that the reporting engine prevents loading types not listed as trusted or essentially needed.
+After installing version `18.2.24.924` of Telerik Reporting, an exception occurs when trying to open a [Report Book](slug:telerikreporting/designing-reports/report-book/overview) in the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or a custom application. The error message indicates that the reporting engine prevents loading types not listed as trusted or essentially needed.
 
 ## Cause
 
-The issue is due to type restriction changes introduced in Telerik Reporting version `18.2.24.924`. These changes enhance application security by preventing the loading of untrusted or unnecessary types - [Type Restrictions in Telerik Reporting]({%slug telerikreporting/upgrade/2024/2024-q3-18-2-24-924%}#type-restrictions).
+The issue is due to type restriction changes introduced in Telerik Reporting version `18.2.24.924`. These changes enhance application security by preventing the loading of untrusted or unnecessary types - [Type Restrictions in Telerik Reporting](slug:telerikreporting/upgrade/2024/2024-q3-18-2-24-924#type-restrictions).
 
 ## Error Message
 
@@ -58,7 +58,7 @@ To help improve the application's security, the reporting engine prevents loadin
 
 ## Solution
 
-To resolve this issue and use Report Books with version `18.2.24.924`, register the type `Telerik.Reporting.UserReportBook` from the `Telerik.Reporting` assembly in the [typeReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) element in the configuration file of the project (e.g., `appsettings.json`, `App.config`, `Web.config`). 
+To resolve this issue and use Report Books with version `18.2.24.924`, register the type `Telerik.Reporting.UserReportBook` from the `Telerik.Reporting` assembly in the [typeReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) element in the configuration file of the project (e.g., `appsettings.json`, `App.config`, `Web.config`). 
 
 ````JSON
 "telerikReporting": {
@@ -91,5 +91,5 @@ This configuration explicitly declares the `Telerik.Reporting.UserReportBook` ty
 
 ## See Also
 
-- [Type Restrictions in Telerik Reporting]({%slug telerikreporting/upgrade/2024/2024-q3-18-2-24-924%}#type-restrictions)
-- [TypeReferences Element Configuration - Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%})
+- [Type Restrictions in Telerik Reporting](slug:telerikreporting/upgrade/2024/2024-q3-18-2-24-924#type-restrictions)
+- [TypeReferences Element Configuration - Telerik Reporting](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element)

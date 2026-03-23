@@ -40,10 +40,10 @@ How to reposition the windows for single monitor without connecting with the 2nd
 
 1. Press the `M` key to select the `Move` option. Now you should be able to move the focused window with the arrow keys, or by dragging it with the mouse.
 
-Alternatively, for the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you may delete the user configuration file to reset to positions of the popup windows locations. Details on the approach may be found in the KB article [How to edit connection strings saved by the Standalone Report Designer?]({%slug how-to-edit-connection-strings-saved-by-the-standalone-report-designer%}).
+Alternatively, for the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview), you may delete the user configuration file to reset to positions of the popup windows locations. Details on the approach may be found in the KB article [How to edit connection strings saved by the Standalone Report Designer?](slug:how-to-edit-connection-strings-saved-by-the-standalone-report-designer).
 
 ## See Also
 
-* [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
-* [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
-* [How to edit connection strings saved by the Standalone Report Designer?]({%slug how-to-edit-connection-strings-saved-by-the-standalone-report-designer%})
+* [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+* [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
+* [How to edit connection strings saved by the Standalone Report Designer?](slug:how-to-edit-connection-strings-saved-by-the-standalone-report-designer)

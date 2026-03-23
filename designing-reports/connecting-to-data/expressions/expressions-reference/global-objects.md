@@ -13,25 +13,25 @@ reportingArea: General
 
 # Global Objects Overview
 
-Telerik script language provides the following intrinsic (or "built-in") objects that may be used in [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) inside the report definition.
+Telerik script language provides the following intrinsic (or "built-in") objects that may be used in [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) inside the report definition.
 
 ## Fields
 
 The `Fields` collection represents the set of fields specified by the report data source plus any additional calculated fields that you create. It is a __function__ that requires a string argument with the name of the data field and not an __object__ like `ReportItem.DataObject`.
 
-After you create a data source for a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (Report, Table, Crosstab, List, Chart), the field collection appears in the [Data Explorer toolbox]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}).
+After you create a data source for a [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) (Report, Table, Crosstab, List, Chart), the field collection appears in the [Data Explorer toolbox](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
 
 Example: `Fields.ProductID` - returns the value of the field ProductID in the current data scope instance. If the data source does not contain the referenced column, an error is thrown. If the report has no data source set, the expression result is null (Nothing)
 
 >note If the data source field name is not a valid name in terms of programming languages (contains spaces, punctuation marks, etc.) enclose its name in square brackets, for example =Fields.[My Column]; Because brackets are special characters, you must use a backslash (`\\`) to escape the bracket, if it is part of a data field name. For example, a data field named `Field[1]` would be referenced as `Fields.[Field\\[1\\]]`.
 
-Another option for accessing the values in the fields collection is the global function [Fields(fieldName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
+Another option for accessing the values in the fields collection is the global function [Fields(fieldName)](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview).
 
 When the DataSource is a collection of objects that don't contain named fields, for example, an array of integers/strings, you may access the collection items in the Report Expressions as `= Fields.Item` or `= Fields("Item")`.
 
 ## Parameters
 
-Represents the collection of report parameters, each of which can be single-value or multi-value. See [Adding Parameters to Report]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).
+Represents the collection of report parameters, each of which can be single-value or multi-value. See [Adding Parameters to Report](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview).
 
 Examples: 
 
@@ -39,7 +39,7 @@ Examples:
 * `=Parameters.Product.Label` - when the parameter Product has AvailableValues, returns its property `AvailableValues.DisplayMember`. When there are no AvailableValues or the DisplayMember is not specified, it falls back to the actual `Value` of the parameter.
 * `=Parameters.Product.Text` - returns the property `Text` of the report parameter with the name Product. When Text is not specified it displays the `Name` of the parameter, in this example, _Product_.
 
-Another option for accessing the report parameters' collection is the global function [Parameters(parameterName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions%}).
+Another option for accessing the report parameters' collection is the global function [Parameters(parameterName)](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions).
 
 ## Environment
 
@@ -76,9 +76,9 @@ It is strongly recommended to use this property only for report visual output cu
 
 The current processing item in which context the expression is evaluated. The object is not evaluated when the processing item is not available, i.e. when using it in report parameters.
 
-The `ReportItem` is an __object__ passed from each item to its children. The `ReportItem.DataObject` in particular holds the data of the parent item, which makes it available to its children. If the parent item is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) with groups, only the group data is passed as `ReportItem.DataObject` to the corresponding groups and the items within these groups.
+The `ReportItem` is an __object__ passed from each item to its children. The `ReportItem.DataObject` in particular holds the data of the parent item, which makes it available to its children. If the parent item is a [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) with groups, only the group data is passed as `ReportItem.DataObject` to the corresponding groups and the items within these groups.
 
-When the child is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), it passes as `ReportItem.DataObject` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent to its children.
+When the child is a [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview), it passes as `ReportItem.DataObject` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent to its children.
 
 For example, the `Fields` from a Table DataSource are passed as `ReportItem.DataObject` to its cells' items, e.g. TextBoxes. Therefore, in these no-data items, the Expression `=Fields.fieldName` is equivalent to the Expression `=ReportItem.DataObject.fieldName`.
 
@@ -86,7 +86,7 @@ On the Table item, though, the `ReportItem.DataObject` comes from its parent, fo
 
 The `ReportItem.IsRepeated` property, introduced in version `20.0.26.211`, is available for report items (such as TextBoxes) placed within Table, Crosstab, and List group headers or footers. It indicates whether the group containing the item is being repeated on a page (for example, when a group header or footer is configured to repeat on every page). This property returns `True` when the group is repeated, and `False` otherwise. This is useful for conditionally displaying content based on whether the group appears for the first time or as a repeated instance.
 
-For example, `=Fields.ProductCategory + IIf(ReportItem.IsRepeated, ".........", "")` displays "Category Name........." when the group header is repeated. For detailed instructions on implementing this functionality, see [Display Continued Text for Repeated Table Group Headers]({%slug display-different-content-for-repeated-table-group-headers%}).
+For example, `=Fields.ProductCategory + IIf(ReportItem.IsRepeated, ".........", "")` displays "Category Name........." when the group header is repeated. For detailed instructions on implementing this functionality, see [Display Continued Text for Repeated Table Group Headers](slug:display-different-content-for-repeated-table-group-headers).
 
 For information regarding the available processing ReportItem properties, check out the corresponding processing item API reference.
 

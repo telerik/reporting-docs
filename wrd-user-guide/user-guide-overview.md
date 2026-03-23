@@ -20,9 +20,9 @@ position: 0
 
 # Web Report Designer User Guide: An Overview
 
-The [Web Report Designer](https://demos.telerik.com/reporting/designer) User Guide is intended to assist the end users of business applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide is business application users.
+The [Web Report Designer](https://demos.telerik.com/reporting/designer) User Guide is intended to assist the end users of business applications that integrate [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!). This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide is business application users.
 
-> If you are a developer who integrates Telerik Reporting into web applications, see the [application developer section]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) of the Web Report Designer documentation or the [Getting Started tutorial]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}). 
+> If you are a developer who integrates Telerik Reporting into web applications, see the [application developer section](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) of the Web Report Designer documentation or the [Getting Started tutorial](slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report). 
 
 ## What is the Web Report Designer?
 
@@ -42,13 +42,13 @@ The Web Report Designer is a tool developed to let business application users de
 
 ## What's in this User Guide?
 
-This user guide contains articles that describe common scenarios related to designing and configuring reports. You will also find conceptual information and videos that illustrate basic reporting principles, for example, how to [structure a report]({%slug user-guide/report-structure%}).
+This user guide contains articles that describe common scenarios related to designing and configuring reports. You will also find conceptual information and videos that illustrate basic reporting principles, for example, how to [structure a report](slug:user-guide/report-structure).
 
 ## Next Steps
 
-* [Take an App Tour]({%slug user-guide/app-tour%})
-* [Create a Simple Report]({%slug web-report-designer-user-guide-getting-started%})
-* [Explore the Structure of a Report]({%slug user-guide/report-structure%})
+* [Take an App Tour](slug:user-guide/app-tour)
+* [Create a Simple Report](slug:web-report-designer-user-guide-getting-started)
+* [Explore the Structure of a Report](slug:user-guide/report-structure)
 
 {% if false == true %}
 {% include cta-panel-small.html %}

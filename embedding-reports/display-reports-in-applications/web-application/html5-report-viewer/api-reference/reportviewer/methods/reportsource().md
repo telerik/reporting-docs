@@ -28,7 +28,7 @@ Returns: an object with properties:
 
 | Property | Description |
 | ------ | ------ |
-| __report__ |the report. For more information please see jQuery.fn.telerik_ReportViewer’s reportSource option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options).|
+| __report__ |the report. For more information please see jQuery.fn.telerik_ReportViewer’s reportSource option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#options).|
 | __parameters__ |an object with properties the names of which are the report parameters’ IDs, and values - the report parameters’ values.|
 
 ````JavaScript
@@ -39,4 +39,4 @@ var rs = reportViewer.reportSource();
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

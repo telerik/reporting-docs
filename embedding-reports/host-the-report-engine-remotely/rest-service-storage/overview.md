@@ -24,11 +24,11 @@ This requires selecting a suitable interface implementation when embedding the R
 
 The following implementations of the IStorage interface allow service multiple instances support. Those implementations also offer a better overall performance.
 
-- [MsSqlServerStorage](/api/Telerik.Reporting.Cache.MsSqlServerStorage) - [How to Configure an MSSQL Database Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage%}).
+- [MsSqlServerStorage](/api/Telerik.Reporting.Cache.MsSqlServerStorage) - [How to Configure an MSSQL Database Storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage).
 
   It supports storage server-side locks to achieve inter-machine resources serialized access by its Sql Server transactions feature.
 
-- [RedisStorage](/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) - [How to Use Redis storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage%}).
+- [RedisStorage](/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) - [How to Use Redis storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage).
 
   It supports storage server-side locks to achieve inter-machine resources serialized access by its distributed locks feature.
 
@@ -46,7 +46,7 @@ For the locking mechanism, they use OS-specific synchronization primitives, whic
 
 - [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) - Use the [DatabaseStorage constructor](/api/Telerik.Reporting.Cache.Database.DatabaseStorage#Telerik_Reporting_Cache_Database_DatabaseStorage_#ctor) to create a storage instance.
 
-  This storage option requires reference to **Telerik.Reporting.Cache.Database.dll** that has dependencies on **Telerik Data Access**, which can be checked in the version corresponding to the [Upgrade article]({%slug telerikreporting/upgrade/overview%}).
+  This storage option requires reference to **Telerik.Reporting.Cache.Database.dll** that has dependencies on **Telerik Data Access**, which can be checked in the version corresponding to the [Upgrade article](slug:telerikreporting/upgrade/overview).
 
 > note If one of those storages is used in a multi-instance(e.g., multiple [PODs](https://kubernetes.io/docs/concepts/workloads/pods/)) environment, ensure that connections from a particular client are passed to the same Pod each time by configuring [Session affinity](https://kubernetes.io/docs/reference/networking/virtual-ips/#session-affinity)(in other words - **Sticky Sessions**) based on the client's IP address.
 
@@ -90,5 +90,5 @@ Thus, there will be two clients holding reference to this _document refresh_, an
 
 ## See Also
 
-- [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
-- [How to Add Telerik Reporting REST ServiceStack to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%})
+- [How to implement the ReportsController in an application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application)
+- [How to Add Telerik Reporting REST ServiceStack to Web Application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application)

@@ -12,7 +12,7 @@ previous_url: /web-report-designer-setup-in-dot-net-framework
 
 # Configuring the Web Report Designer in ASP.NET Framework application
 
-This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in an ASP.NET application.
+This article shows how to integrate our [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in an ASP.NET application.
 
 ## Prerequisites
 
@@ -22,9 +22,9 @@ The following list describes the prerequisites for this guide:
 1. Add the *Telerik.WebReportDesigner.Services* NuGet package. It has dependencies on other Telerik Reporting NuGet packages but they will be automatically added to your project.
 1. Update the *Microsoft.AspNet.WebApi.WebHost* NuGet package to version 5.2.7 or later.
 
-When you use NuGet packages, the dependencies will be automatically resolved. Otherwise, you need to add them manually to the project. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+When you use NuGet packages, the dependencies will be automatically resolved. Otherwise, you need to add them manually to the project. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 
-> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/) and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions, see [Deploying Open XML]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}#deploying-open-xml).
+> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/) and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions, see [Deploying Open XML](slug:telerikreporting/using-reports-in-applications/third-party-dependencies#deploying-open-xml).
 
 ## Setting up the Report Designer REST service:
 

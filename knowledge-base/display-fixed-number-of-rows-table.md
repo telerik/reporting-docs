@@ -35,14 +35,14 @@ To achieve a fixed number of detail lines in a Telerik Reporting table layout, f
 ### Solution 1: Using Dummy Rows with Conditional Formatting
 
 1. **Add Dummy Rows**: Manually add five dummy rows to your table.
-1. **Apply Conditional Formatting**: Use [conditional formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) to make the dummy rows invisible by default.
+1. **Apply Conditional Formatting**: Use [conditional formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) to make the dummy rows invisible by default.
 1. **Show Dummy Rows Based on Data Count**: Adjust the visibility conditionally based on the number of actual data entries. For example, if your dataset returns fewer than 10 rows, the conditional formatting will reveal enough dummy rows to ensure the table always displays 10 rows.
 
 ![The conditional formating for fixed table rows](images/fixed-table-rows.png)
 
 ### Solution 2: Creating a Custom ObjectDataSource
 
-1. **Create a Custom ObjectDataSource**: Implement a custom [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%}) that ensures your dataset always includes a minimum of 10 records. This might involve adding empty or placeholder records to the data returned by your data source.
+1. **Create a Custom ObjectDataSource**: Implement a custom [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source) that ensures your dataset always includes a minimum of 10 records. This might involve adding empty or placeholder records to the data returned by your data source.
 1. **Bind to the Table**: Use this ObjectDataSource as the data source for your table in the report.
 
 ## Additional Resources
@@ -51,5 +51,5 @@ Download a [Sample Report](https://github.com/telerik/reporting-samples/blob/mas
  
 ## See Also
 
-* [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
-* [ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
+* [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting)
+* [ObjectDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source)

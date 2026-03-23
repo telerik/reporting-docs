@@ -32,7 +32,7 @@ To achieve the desired scenario:
 1. [Create the master report](#creating-the-master-report)
 1. [Configure the SubReport item](#configuring-the-subreport-item)
 
-The master report data in this example consists of product categories from the AdventureWorks database. The detail report displays product names and numbers. The example uses the [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) to filter the detail report by a product category.
+The master report data in this example consists of product categories from the AdventureWorks database. The detail report displays product names and numbers. The example uses the [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to filter the detail report by a product category.
 
 ### Creating the Detail Report in Visual Studio Report Designer
 
@@ -42,7 +42,7 @@ The master report data in this example consists of product categories from the A
 
 1. Add a new Telerik Report item to the project through **Add New item** -> **Reporting** -> **Telerik Reporting [VERSION] Wizard** -> **Blank Report**. Name it `DetailReport`.
 1. From the upper left corner of design surface, click the report selector to select the report.
-1. Navigate to the `DataSource` property of the report, open it, select **Add New Data Source** and choose [**SqlDataSource Component**]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}).
+1. Navigate to the `DataSource` property of the report, open it, select **Add New Data Source** and choose [**SqlDataSource Component**](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview).
 1. Set up the data connection to the AdventureWorks database, save it so you can use it later on when creating the master report. Click **Next**. Enter the following SQL statement. Click **Finish** in the DataSource wizard.
 
    ```SQL
@@ -57,7 +57,7 @@ The master report data in this example consists of product categories from the A
    	AND PS.ProductCategoryID=PC.ProductCategoryID
    ```
 
-1. Remove the page header and page footer sections. Open the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) and add the **ProductNumber** and **Name** fields to the detail section of the report.
+1. Remove the page header and page footer sections. Open the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and add the **ProductNumber** and **Name** fields to the detail section of the report.
 
 The detail report in the designer will now look like the following.
 
@@ -84,8 +84,8 @@ Now, create a report parameter and a filter that uses the report parameter. The 
 The master report will contain only a simple listing of product categories.
 
 1. Add a new report item to the project and name it **MasterReport**.
-1. The [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) will show automatically when you select **Telerik Report [VERSION] Wizard - Band Report Wizard**.
-1. On the **Choose Data Source** page of the wizard, click the **Add New Data Source** button and select [**SqlDataSource Component**]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the **Choose Your Data Connection** page of the wizard, select the saved database connection you created for the detail report. Click the **Next** button.
+1. The [Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview) will show automatically when you select **Telerik Report [VERSION] Wizard - Band Report Wizard**.
+1. On the **Choose Data Source** page of the wizard, click the **Add New Data Source** button and select [**SqlDataSource Component**](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview). On the **Choose Your Data Connection** page of the wizard, select the saved database connection you created for the detail report. Click the **Next** button.
 1. Enter the SQL statement below and click the **Next** button.
 
    ```SQL
@@ -101,8 +101,8 @@ This step ties both reports together by using a `SubReport` to display the detai
 The detail report uses the parameter to filter the data to products for the specified product category only.
 
 1. Resize the detail section to create some vertical room for a `SubReport` item.
-1. Drag a [`SubReport`]({%slug telerikreporting/designing-reports/report-structure/subreport%}) from the Toolbox to the detail section of the report.
-1. In the **Properties** window for the `SubReport`, open the [**ReportSource**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%}) dialog, select **Type name** ([`TypeReportSource`](/reporting/api/Telerik.Reporting.TypeReportSource)), and set it to the **DetailReport**. Note that you have to build the project first in order for the types to appear in the wizard.
+1. Drag a [`SubReport`](slug:telerikreporting/designing-reports/report-structure/subreport) from the Toolbox to the detail section of the report.
+1. In the **Properties** window for the `SubReport`, open the [**ReportSource**](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog) dialog, select **Type name** ([`TypeReportSource`](/reporting/api/Telerik.Reporting.TypeReportSource)), and set it to the **DetailReport**. Note that you have to build the project first in order for the types to appear in the wizard.
 1. Click the **Edit Parameters** button to display the **Edit Parameters** dialog.
 1. Click the **New** button to define a parameter.
 1. Set the **Parameter Name** to **ProductCategoryID** and the parameter value to **=Fields.ProductCategoryID**.

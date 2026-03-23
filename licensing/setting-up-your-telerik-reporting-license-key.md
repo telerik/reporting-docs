@@ -13,7 +13,7 @@ reportingArea: General
 
 Telerik Reporting requires activation through a license key—for both trial and commercial versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
 
-An invalid license results in [errors and warnings]({%slug license-errors-and-warnings%}), such as watermarks and banners during build, test, and publish.
+An invalid license results in [errors and warnings](slug:license-errors-and-warnings), such as watermarks and banners during build, test, and publish.
 
 > This document applies to Telerik Reporting version [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) and later. Earlier versions do not require activation.
 
@@ -44,7 +44,7 @@ To install your Telerik License key by using the Visual Studio extensions for Te
 
    ![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
 
-The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you may have used another [installation method]({%slug telerikreporting/installation%}) or deselected them during the setup.
+The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you may have used another [installation method](slug:telerikreporting/installation) or deselected them during the setup.
 
 ### Downloading Manually
 
@@ -124,8 +124,8 @@ Once you have the new license key, use it to [activate Telerik Reporting](#activ
 
 ## See Also
 
-- [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-- [Adding the License Key to CI Services]({%slug license-key-ci-services%})
-- [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
-- [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version]({%slug upgrade-q1-2025-trial-to-q2-2025-purchase-license%})
-- [Licensing before 2025]({%slug telerikreporting/licensing%})
+- [License Activation Errors and Warnings](slug:license-errors-and-warnings)
+- [Adding the License Key to CI Services](slug:license-key-ci-services)
+- [Frequently Asked Questions about Your Telerik Reporting License Key](slug:license-frequently-asked-questions)
+- [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version](slug:upgrade-q1-2025-trial-to-q2-2025-purchase-license)
+- [Licensing before 2025](slug:telerikreporting/licensing)

@@ -14,7 +14,7 @@ previous_url: /html5-report-viewer-howto-custom-parameters
 
 This article explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default implementation of the parameters area.
 
-The report and all required parameters for it are packed in a `ReportSource` object. To update the report source, the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
+The report and all required parameters for it are packed in a `ReportSource` object. To update the report source, the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)) method is used.
 
 To give an example we will use the [Invoice](https://demos.telerik.com/reporting/invoice) report from our examples and will update its **OrderNumber** parameter from a custom parameter UI.
 
@@ -66,7 +66,7 @@ To give an example we will use the [Invoice](https://demos.telerik.com/reporting
     </div>
     ```
 
-1.  Now, initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Note that the value from the custom UI is used to set the **OrderNumber** report parameter initially:
+1.  Now, initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization). Note that the value from the custom UI is used to set the **OrderNumber** report parameter initially:
 
     ```JavaScript
     $(document).ready(function () {
@@ -157,5 +157,5 @@ To give an example we will use the [Invoice](https://demos.telerik.com/reporting
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [Custom Parameter Editors]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+- [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [Custom Parameter Editors](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

@@ -34,9 +34,9 @@ This knowledge base article also answers the following questions:
 
 ### Using Report Parameters
 
-Use [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) to retrieve values from the report. Connect the report parameter to the desired field of the [data source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) whose data you need to access.
+Use [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to retrieve values from the report. Connect the report parameter to the desired field of the [data source component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) whose data you need to access.
 
-1. [Create a report parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) in the report designer, connect it to the needed [data source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}), and bind its [Value](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_Value) and [ValueMember](/api/telerik.reporting.reportparameteravailablevalues#Telerik_Reporting_ReportParameterAvailableValues_ValueMember) properties to the required field. You may use the same expression for both properties - `= Fields.MyField`.
+1. [Create a report parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) in the report designer, connect it to the needed [data source component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview), and bind its [Value](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_Value) and [ValueMember](/api/telerik.reporting.reportparameteravailablevalues#Telerik_Reporting_ReportParameterAvailableValues_ValueMember) properties to the required field. You may use the same expression for both properties - `= Fields.MyField`.
 1. Access the report parameter value in the application code through the viewer's [ReportSource](/api/telerik.reportviewer.winforms.reportviewerbase#Telerik_ReportViewer_WinForms_ReportViewerBase_ReportSource) property:
 
 
@@ -55,7 +55,7 @@ private void Button1_Click(object sender, EventArgs e)
 
 ### Using Report Events
 
-For scenarios requiring multiple values from the processed report, use [report events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}). For TRDP/TRDX files, they must be unpackaged/deserialized in order to assign custom event handlers to the reports.
+For scenarios requiring multiple values from the processed report, use [report events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview). For TRDP/TRDX files, they must be unpackaged/deserialized in order to assign custom event handlers to the reports.
 
 ````C#
         private void MainForm_Load(object sender, System.EventArgs e)
@@ -167,5 +167,5 @@ End Sub
 
 ## See Also
 
-* [Report Parameters Overview]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})
-* [Report Events Overview]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%})
+* [Report Parameters Overview](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
+* [Report Events Overview](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview)

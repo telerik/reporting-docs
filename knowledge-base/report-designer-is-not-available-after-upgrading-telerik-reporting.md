@@ -35,7 +35,7 @@ A possible reason for this problem is that your project uses "*stale*" assembl
    
 ## Solution
  
- * Go through the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) 
+ * Go through the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) 
  * Delete the project's `bin` and `obj` folders as described below:
    
     - Back up your project

@@ -34,11 +34,11 @@ The data-retrieval method is executed in a different context where the current u
 
 ## Description
 
-`HttpContext.Current.User` is not available in the data-retrieval method executed by an [ObjectDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}). This is a result of the data-retrieval method being executed in a different context where the current user's information is not available.
+`HttpContext.Current.User` is not available in the data-retrieval method executed by an [ObjectDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview). This is a result of the data-retrieval method being executed in a different context where the current user's information is not available.
 
 ## Solution
 
-You can parameterize the data-retrieval method and pass the `ID` of the user (as `Integer` or `String`) via report parameter e.g. [Using Parameters with the ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component%}). In the data-retrieval method you can use the passed `ID` or re-retrieve the users' information.
+You can parameterize the data-retrieval method and pass the `ID` of the user (as `Integer` or `String`) via report parameter e.g. [Using Parameters with the ObjectDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component). In the data-retrieval method you can use the passed `ID` or re-retrieve the users' information.
 
 ## Notes
 
@@ -48,4 +48,4 @@ If you are using the HTML5 Viewer and Reporting REST WebAPI based service, to se
 
 * [How To Enable HTTPS In ASP.NET Web API](https://www.c-sharpcorner.com/article/how-to-enable-https-in-asp-net-web-api/)
 * [Working with SSL in Web API](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/working-with-ssl-in-web-api)
-* [How to use information from HttpContext in Custom Report Resolver]({%slug how-to-pass-information-from-httpcontext-to-reporting-engine%})
+* [How to use information from HttpContext in Custom Report Resolver](slug:how-to-pass-information-from-httpcontext-to-reporting-engine)

@@ -42,6 +42,6 @@ The following screenshot shows what the bar would look like with borders.
 
 ## See Also
 
-- [Telerik Reporting Documentation]({%slug telerikreporting/welcome-to-telerik-reporting!%})
-- [Change the Gap between the Bars in the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars%})
-- [Add Series to the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-series%})
+- [Telerik Reporting Documentation](slug:telerikreporting/welcome-to-telerik-reporting!)
+- [Change the Gap between the Bars in the Graph](slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars)
+- [Add Series to the Graph](slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-series)

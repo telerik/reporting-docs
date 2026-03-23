@@ -21,7 +21,7 @@ Style Rules are defined as one of the following four types:
 * A __StyleSelector__ applies to all report items with a particular style name.
 * A __DescendantSelector__ applies to all report items descended from another report item, which in turn can be specified by any type of selector.
 
-See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%}) for more information about the types of Style Rules.
+See [Understanding Style Selectors](slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors) for more information about the types of Style Rules.
 
 ## Creating Rules Using the StyleRule Collection Editor
 

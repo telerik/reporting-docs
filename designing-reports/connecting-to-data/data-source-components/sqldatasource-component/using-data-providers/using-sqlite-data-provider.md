@@ -48,7 +48,7 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider
 
 The [System.Data.SQLite](https://system.data.sqlite.org/) data provider is automatically registered in the `Telerik.Reporting.Processing.Data.DbProviderFactories`. To use this data provider, it should be enough to install the [System.Data.SQLite](https://www.nuget.org/packages/System.Data.SQLite/) NuGet package to the project.
 
-If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
+If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
 ```JSON
 {
@@ -63,6 +63,6 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 
 ## See Also
 
-- [How to configure SQLite ADO.NET Provider for Standalone Report Designer]({%slug configure-the-stand-alone-report-designer-sqlite-data-provider%})
-- [Integrating SQLite Databases with Telerik Web Report Designer]({%slug integrate-sqlite-databases-telerik-web-report-designer%})
+- [How to configure SQLite ADO.NET Provider for Standalone Report Designer](slug:configure-the-stand-alone-report-designer-sqlite-data-provider)
+- [Integrating SQLite Databases with Telerik Web Report Designer](slug:integrate-sqlite-databases-telerik-web-report-designer)
 - [SQLite connection strings](https://www.connectionstrings.com/sqlite/)

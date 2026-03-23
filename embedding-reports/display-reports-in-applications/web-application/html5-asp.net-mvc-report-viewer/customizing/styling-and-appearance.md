@@ -12,4 +12,4 @@ previous_url: /html5-mvc-report-viewer-customizing-styling-and-appearance
 
 # Styling and Appearance Overview
 
-The HTML5 MVC Report Viewer is based on the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and is using the same [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}) mechanism.
+The HTML5 MVC Report Viewer is based on the [pure HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and is using the same [Styling and Appearance](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview) mechanism.

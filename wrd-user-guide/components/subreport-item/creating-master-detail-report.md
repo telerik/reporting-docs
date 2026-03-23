@@ -18,7 +18,7 @@ img[alt$="><"] {
 
 # Creating Master-Detail Reports with SubReports
 
-Using [SubReports]({%slug web-report-designer-user-guide-components-subreport%}) in the Web Report Designer allows you to embed reports within other reports for creating master-detail hierarchies and reusable report components.
+Using [SubReports](slug:web-report-designer-user-guide-components-subreport) in the Web Report Designer allows you to embed reports within other reports for creating master-detail hierarchies and reusable report components.
 
 The following example demonstrates how to create a master-detail report using SubReports. The master report (*CategoriesProducts.trdp*) contains a table with Northwind **Categories** data. The SubReport (*ProductsReport.trdp*) displays Northwind **Products** records filtered by the respective `CategoryID`.
 
@@ -34,7 +34,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
     ![SubReport ><](images/wrd-components-subreport-new-report.png)
 
-1. Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) populated with the `Northwind.Products` table:
+1. Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-sources) populated with the `Northwind.Products` table:
 
     Here is the SQL query that selects the respective data:
 
@@ -99,7 +99,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
 1. Create a new blank report (*CategoriesProducts.trdp*).
 
-1. Add a new [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) filled with the `Northwind.Categories` table:
+1. Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-sources) filled with the `Northwind.Categories` table:
 
     ```SQL
     SELECT
@@ -110,7 +110,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
     FROM [dbo].[Categories]
     ```
 
-1. Select the report's Detail section and use the [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}) to add a table bound to the just added SQLDataSource:
+1. Select the report's Detail section and use the [Table Wizard](slug:web-report-designer-user-guide-components-tables) to add a table bound to the just added SQLDataSource:
 
     ![Create Categories Table ><](images/wrd-components-subreport-create-categories-table.png)
 
@@ -138,5 +138,5 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Data Sources](slug:web-report-designer-user-guide-components-data-sources)

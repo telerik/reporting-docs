@@ -41,4 +41,4 @@ To display content, the WinForms ReportViewer uses Image rendering. The error me
 
 ## Solution  
 
-To solve this issue, refer to the suggestions in the article on [performance considerations]({%slug telerikreporting/designing-reports/performance-considerations%}).
+To solve this issue, refer to the suggestions in the article on [performance considerations](slug:telerikreporting/designing-reports/performance-considerations).

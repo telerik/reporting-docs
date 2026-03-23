@@ -12,7 +12,7 @@ previous_url: /how-to-blazor-web-report-designer
 
 # How to set up the Blazor Wrapper of the Web Report Designer
 
-> The following article will guide you on how to use the **Blazor Wrapper** for [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in a [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) web application.
+> The following article will guide you on how to use the **Blazor Wrapper** for [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in a [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) web application.
 
 The quickest way to add the **Blazor Web Report Designer** to a Blazor project is with the **Telerik Blazor Report Designer** item template in Visual Studio. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target .NET project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "_Telerik Blazor Report Designer_" and select the item template that corresponds to your project type.
 
@@ -26,9 +26,9 @@ Alternatively, instead of using the item template, the Designer REST service and
 
 ## Adding the Report Designer REST Service and Configuration
 
-> note If **Blazor WebAssembly** project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core with Top-Level Statements Explained`]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
+> note If **Blazor WebAssembly** project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core with Top-Level Statements Explained`](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
 
-1. Use the NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Use the NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Add the required settings in the **Program.cs** file. Make sure the application is configured for WebAPI controllers:
 
    ```C#
@@ -87,7 +87,7 @@ Alternatively, instead of using the item template, the Designer REST service and
 
 ## Adding the Blazor Web Report Designer component
 
-1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Add JavaScript dependencies to the **head** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
    ```HTML

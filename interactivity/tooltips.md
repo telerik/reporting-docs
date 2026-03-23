@@ -18,13 +18,13 @@ Tooltips are added since Telerik Reporting `R1 2017`. The feature allows you add
 
 Each Report section and item has a `Tooltip` property where you can configure the `Text` you want to appear on hover. You can also specify a `Title` for the tooltip's box.         
 
-The Series collection of the [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) also has support for tooltips.         
+The Series collection of the [Graph item](slug:telerikreporting/designing-reports/report-structure/graph/overview) also has support for tooltips.         
 
 ## Settings in Viewers
 
 The HTML5-based Report Viewers, WinForms ReportViewer and WPF ReportViewer controls have `ToolTipOpening` events. In those events you can modify tooltips content:     
 
-* __HTML5 Report Viewer:__ [viewerToolTipOpening(e, args)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)%})
+* __HTML5 Report Viewer:__ [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args))
 
 * __WPF ReportViewer control:__  [ViewerToolTipOpening](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ViewerToolTipOpening)  event.             
 
@@ -35,10 +35,10 @@ The HTML5-based Report Viewers, WinForms ReportViewer and WPF ReportViewer contr
 
 ## See Also
 
- * [Styling Tooltips in HTML5-based Report Viewers]({%slug styling-tooltips-in-html5-based-report-viewers%})
+ * [Styling Tooltips in HTML5-based Report Viewers](slug:styling-tooltips-in-html5-based-report-viewers)
  
- * [How to add interactivity to a report using action event handlers in WPF Report Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer%})
+ * [How to add interactivity to a report using action event handlers in WPF Report Viewer](slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer)
  
- * [How to add interactivity to a report using action event handlers in HTML5-based report viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})
+ * [How to add interactivity to a report using action event handlers in HTML5-based report viewers](slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers)
  
- * [How to add interactivity to a report using action event handlers in WinForms Report Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer%})
+ * [How to add interactivity to a report using action event handlers in WinForms Report Viewer](slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer)

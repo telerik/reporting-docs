@@ -46,4 +46,4 @@ In order Telerik Reporting WebAPI REST service to function correctly you have to
 ## See Also
 
 * [Debugging a Published Cloud Service with IntelliTrace and Visual Studio](https://learn.microsoft.com/en-us/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)
-* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})
+* [Problems When Rendering Teleik Reports in Azure](slug:azure-reporting-problems)

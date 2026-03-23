@@ -24,7 +24,7 @@ res_type: kb
 	</tr>
 </table>
 
-> This article relates to the [Legacy ASP.NET Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}).
+> This article relates to the [Legacy ASP.NET Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview).
 
 ## Description
 
@@ -40,8 +40,8 @@ Using an older DOCTYPE declaration such as `HTML4.1` resolves the issue with the
 
 ## Notes
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) introduced in **Telerik Reporting Q3 2013** also provides solution for the issue. The viewer uses HTML5/JS/CSS3 technologies and is HTML5 browsers compliant.
+The [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) introduced in **Telerik Reporting Q3 2013** also provides solution for the issue. The viewer uses HTML5/JS/CSS3 technologies and is HTML5 browsers compliant.
 
 ## See Also
 
-[Migrate to the HTML5 Viewer from the old ASP.NET WebForms ReportViewer control]({%slug migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control%})
+[Migrate to the HTML5 Viewer from the old ASP.NET WebForms ReportViewer control](slug:migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control)

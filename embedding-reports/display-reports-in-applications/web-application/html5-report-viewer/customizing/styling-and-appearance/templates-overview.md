@@ -12,7 +12,7 @@ previous_url: /html5-report-viewer-template
 
 # Templates of the HTML5 Report Viewer
 
-The article elaborates on the structure of the HTML template file of the HTML5 Report Viewer. The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation - [Installation Directories]({%slug telerikreporting/installation%}#directories-and-asemblies).
+The article elaborates on the structure of the HTML template file of the HTML5 Report Viewer. The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation - [Installation Directories](slug:telerikreporting/installation#directories-and-asemblies).
 
 The default viewer's template is divided into three areas:
 
@@ -46,4 +46,4 @@ Using this declarative approach of describing the report viewer’s layout and b
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

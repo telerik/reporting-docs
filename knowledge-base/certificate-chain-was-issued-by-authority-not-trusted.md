@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-When attempting to use the [Query Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}) in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) or in the other [Report Designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}) when explicitly having selected the `Microsoft.Data.SqlClient` data provider, the connection fails during the login process.
+When attempting to use the [Query Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer) in the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) or in the other [Report Designers](slug:telerikreporting/designing-reports/report-designer-tools/overview) when explicitly having selected the `Microsoft.Data.SqlClient` data provider, the connection fails during the login process.
 
 ## Error Message
 

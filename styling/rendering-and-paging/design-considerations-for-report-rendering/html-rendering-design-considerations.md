@@ -16,7 +16,7 @@ The HTML rendering extension renders a report into __HTML5__ or __MHTML__ format
 
 ## HTML Output
 
-The HTML5 rendering extension is based on the Image rendering extension, with some differences. For information common to both output formats, see [Image Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}). This topic describes features that are specific to the HTML output format.
+The HTML5 rendering extension is based on the Image rendering extension, with some differences. For information common to both output formats, see [Image Rendering Design Considerations](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations). This topic describes features that are specific to the HTML output format.
 
 ### Rendering
 
@@ -26,7 +26,7 @@ The HTML5 rendering extension is based on the Image rendering extension, with so
 * The strings are measured using [GDI+](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) on Windows and [Skia](https://skia.org/) on non-Windows systems. This can lead to differences between Image rendering and previewing in web browsers. Additionally, justified text may require to be adjusted due to the difference in the measurement algorithms.
 * In Interactive preview the Table/Crosstab/List item is rendered on a **single page without page breaks**.
 * Lines thinner than `1px` may not be rendered consistently.
-* By default the Graph, Map, and Barcode items are rendered as `SVG` elements. In older browsers without support for SVG, the items are rendered automatically as [Bitmap](https://en.wikipedia.org/wiki/Bitmap) objects displayed in [IMG elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). The usage of SVG elements can be explicitly controlled through the [HTML5]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings%}) and [HTML5Interactive]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings%}) device information settings. More details on how to apply the settings are available in the [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) overview.
+* By default the Graph, Map, and Barcode items are rendered as `SVG` elements. In older browsers without support for SVG, the items are rendered automatically as [Bitmap](https://en.wikipedia.org/wiki/Bitmap) objects displayed in [IMG elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). The usage of SVG elements can be explicitly controlled through the [HTML5](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings) and [HTML5Interactive](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings) device information settings. More details on how to apply the settings are available in the [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview) overview.
 
 >note If the subreport report `BackgroundColor` is not `Transparent` (by default is White), subreport item borders may not be rendered. This can be avoided by setting the subreport report `BackgroundColor` to `Transparent`.
 
@@ -36,7 +36,7 @@ Page size is calculated based on whether the report is rendered for __Interactiv
 
 ### Interactivity
 
-All [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) are supported.
+All [Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview) are supported.
 
 The legacy ASP.NET viewer renders tooltips on SVG elements using the `<title>` attribute and browsers support it in a different manner, that's why the tooltips on SVG elements are rendered as a single line.
 
@@ -65,6 +65,6 @@ The following rendering specifics apply to MHTML:
 
 ## See Also
 
-* [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
-* [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-* [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+* [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+* [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+* [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

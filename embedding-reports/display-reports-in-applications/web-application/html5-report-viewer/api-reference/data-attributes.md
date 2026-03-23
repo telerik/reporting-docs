@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 # The `data attributes` of the HTML5 Report Viewer
 
-Behavior can be added to HTML DOM elements either with `data-` attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer.
+Behavior can be added to HTML DOM elements either with `data-` attributes or through the [commands](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands) property of the report viewer.
 
 The `data-` attributes allow for adding flexibility to the application since commands can be attached to HTML elements only by adding a `data-command` attribute along with a `data-target-report-viewer` to target the specific report viewer (since there can exist multiple report viewers on a single page):
 
@@ -84,4 +84,4 @@ Depending on the report and the history of browsed reports, some of the buttons 
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

@@ -157,8 +157,8 @@ The property *ParameterEditors* of the ReportViewer should be set in the body se
 
 ## Notes
 
-In Telerik Reporting ,the default element for editing DateTime Parameters is **kendoDatePicker**. Its default DateTime format depends on the [culture]({%slug telerikreporting/designing-reports/report-globalization%}) settings of the environment.
+In Telerik Reporting ,the default element for editing DateTime Parameters is **kendoDatePicker**. Its default DateTime format depends on the [culture](slug:telerikreporting/designing-reports/report-globalization) settings of the environment.
 
 ## See Also
 
-* [How to Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}).
+* [How to Create a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor).

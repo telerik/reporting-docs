@@ -12,9 +12,9 @@ reportingArea: General
 
 # Filtering Data Overview
 
-In Telerik Reporting the expressions are the main tool for describing the run-time behavior of the report. They are used to determine the number of records in the [Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) or the number of Group members. In Conditional Formatting rules filters are used to express the conditions on which the styling rules are applied. Filters are predicate expressions that should be evaluated as True or False.
+In Telerik Reporting the expressions are the main tool for describing the run-time behavior of the report. They are used to determine the number of records in the [Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) or the number of Group members. In Conditional Formatting rules filters are used to express the conditions on which the styling rules are applied. Filters are predicate expressions that should be evaluated as True or False.
 
-You can determine where you want to set a filter by the effect you want to achieve in your report. At run time, the report processor applies the defined filters in the following order: on the [Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}), and then on the DataItem, and then on Groups from the top down in each Group hierarchy. On a Crosstab, Table, and List, filters for row groups, column groups, and adjacent groups are applied independently. On a Graph, filters for CategoryGroups and SeriesGroups are applied independently. When the report processor calculates a filter, all filter equations are applied in the order they are defined in the Filters collection which is the equivalent of combining them with Boolean AND operations.
+You can determine where you want to set a filter by the effect you want to achieve in your report. At run time, the report processor applies the defined filters in the following order: on the [Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview), and then on the DataItem, and then on Groups from the top down in each Group hierarchy. On a Crosstab, Table, and List, filters for row groups, column groups, and adjacent groups are applied independently. On a Graph, filters for CategoryGroups and SeriesGroups are applied independently. When the report processor calculates a filter, all filter equations are applied in the order they are defined in the Filters collection which is the equivalent of combining them with Boolean AND operations.
 
 ## Filter DataSource records
 
@@ -44,11 +44,11 @@ To apply the Style of report items dynamically Telerik Reporting uses Filter exp
 
 ## See Also
 
-* [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
-* [Using Parameters with the ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component%})
-* [Using parameters with the EntityDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/using-parameters-with-the-entitydatasource-component%})
-* [Using parameters with the OpenAccessDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/using-parameters-with-the-openaccessdatasource-component%})
-* [Specifying query parameters with the CubeDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/specifying-query-parameters-with-the-cubedatasource-component%})
-* [How to Add filtering to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%})
-* [How to Add filtering to Table item and Crosstab item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item%})
-* [How to Add filtering to Graph item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item%})
+* [Using Parameters with the SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
+* [Using Parameters with the ObjectDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component)
+* [Using parameters with the EntityDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/using-parameters-with-the-entitydatasource-component)
+* [Using parameters with the OpenAccessDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/using-parameters-with-the-openaccessdatasource-component)
+* [Specifying query parameters with the CubeDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/specifying-query-parameters-with-the-cubedatasource-component)
+* [How to Add filtering to Report](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report)
+* [How to Add filtering to Table item and Crosstab item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item)
+* [How to Add filtering to Graph item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item)

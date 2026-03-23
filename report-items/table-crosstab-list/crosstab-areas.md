@@ -40,7 +40,7 @@ The following list describes each CrossTab area and its characteristics:
 
 	By default, cells in a group row or column that contain simple expressions that do not include an aggregate function evaluate to the first value in the group. In the following image, the cells display the aggregate totals and grand totals for line totals for all sales orders.
 
-When the report runs, column groups expand to the right for as many columns as there are unique values for the grouping expression. Row groups expand down the page. For more information, refer to the article on the [Table cells, rows, and columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}).
+When the report runs, column groups expand to the right for as many columns as there are unique values for the grouping expression. Row groups expand down the page. For more information, refer to the article on the [Table cells, rows, and columns](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns).
 
 The following image shows the CrossTab in Preview:
 

@@ -13,7 +13,7 @@ reportingArea: General
 
 The Telerik Reporting Crosstab is a template variation of the Telerik Reporting Table report item, the difference between the two being that the Crosstab uses grouped data. As a result, the Crosstab is more frequently used in real-case scenarios and its Wizard provides more options for manipulating its data than the Table Wizard does.
 
-Therefore, this guide shows how to create and use the Telerik Reporting Crosstab report item in reports with the [Telerik Reporting Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). Note that the Crosstab Wizard of the Standalone Report Designer is identical to the Table Wizard, except for the grouping and total aggregates options, and, if required, you can add a Table instead of a Crosstab to your report by following the same steps from this guide.
+Therefore, this guide shows how to create and use the Telerik Reporting Crosstab report item in reports with the [Telerik Reporting Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). Note that the Crosstab Wizard of the Standalone Report Designer is identical to the Table Wizard, except for the grouping and total aggregates options, and, if required, you can add a Table instead of a Crosstab to your report by following the same steps from this guide.
 
 - First, you will add a Crosstab item in an empty report created with the Standalone Designer. You will use the Crosstab Wizard for this purpose.
 - Following the instructions in the wizard, you will create an SqlDataSource to feed the Crosstab with data.
@@ -29,7 +29,7 @@ After the completion of this guide, you will also be able to configure a Crossta
 To add the Crosstab report item to your report:
 
 1. Open the Standalone Report Designer.
-1. [Add a new **Blank** report item]({%slug report_item_get_started%}).
+1. [Add a new **Blank** report item](slug:report_item_get_started).
 1. Select the **Detail** section of the new report and, from the Standalone Designer Menu, select `Insert`.
 1. Use the **Crosstab** button from the toolbar and, then, the **Crosstab Wizard** option from the drop-down to open the CrossTab wizard:
 
@@ -40,7 +40,7 @@ To add the Crosstab report item to your report:
 ## Configuring the CrossTab SqlDataSource
 
 1. From the list with the available DataSource components, select **SqlDataSource** and name it **crosstabSqlDataSource**.
-1. [Populate the report with data]({%slug telerikreporting/getting-started/first-steps%}#step-3-populate-the-report-with-data).
+1. [Populate the report with data](slug:telerikreporting/getting-started/first-steps#step-3-populate-the-report-with-data).
 
    For the purposes of this demo, you will use the following query from the **AdventureWorks** sample database:
 
@@ -74,7 +74,7 @@ To add the Crosstab report item to your report:
 
    - `ProductSubCategory` to the **Row Groups**.
    - `OrderDate.Year` to the **Column Groups**.
-   - `ProductName` to the **Detail Values**. This will automatically apply the `Count` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) to the value.
+   - `ProductName` to the **Detail Values**. This will automatically apply the `Count` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) to the value.
    - `LineTotal` to the **Detail Values**. This will automatically apply the `Sum` aggregate function to the value.
 
    The following screenshot shows this configuration step:
@@ -107,17 +107,17 @@ You can also delete the **PageHeader** and **PageFooter** sections that were add
 
 ## Next Steps
 
-- [Manually Adjusting the CrossTab]({%slug manual_adjustment_crosstab%})
+- [Manually Adjusting the CrossTab](slug:manual_adjustment_crosstab)
 - [(Demo) Product Sales Report with a Crosstab Summary](https://demos.telerik.com/reporting/product-sales)
 - [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
-- [Basic Concepts of the Table, Crosstab, and List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
+- [Basic Concepts of the Table, Crosstab, and List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts)
 - [Table Class API Reference](/api/telerik.reporting.table)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 - [Knowledge Base Section](/knowledge-base)
 
 ## See Also
 
-- [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
-- [Report Getting Started]({%slug report_item_get_started%})
-- [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
-- [Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
+- [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+- [Report Getting Started](slug:report_item_get_started)
+- [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
+- [Aggregate Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions)

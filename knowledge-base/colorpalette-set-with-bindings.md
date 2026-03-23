@@ -23,16 +23,16 @@ res_type: kb
 
 ## Description
 
-The **ColorPalette** property does not support [Expressions]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) and its value can be set directly only to a constant value.
+The **ColorPalette** property does not support [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) and its value can be set directly only to a constant value.
 
 ## Solution
 
-You may set the ColorPalette with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}):
+You may set the ColorPalette with [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings):
 
 `Property Path	|	Expression
 ColorPalette	|	= MyUserFunctionName(MyColor1, MyColor2, ...)`
 
-The above [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) should return an object of type [Telerik.Reporting.Drawing.IColorPalette](/api/telerik.reporting.drawing.icolorpalette). A sample implementation in C# may look like:
+The above [User Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) should return an object of type [Telerik.Reporting.Drawing.IColorPalette](/api/telerik.reporting.drawing.icolorpalette). A sample implementation in C# may look like:
 
 ```C#
 public static IColorPalette UserColorPalette(params string[] hexColors)
@@ -69,4 +69,4 @@ and with all colors concatenated in a single string:
 
 In both cases, you may add more colors.
 
-> note If you use the Standalone Report Designer, it will be necessary to extend it with the function as explained in the [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}) article.
+> note If you use the Standalone Report Designer, it will be necessary to extend it with the function as explained in the [Extending Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer) article.

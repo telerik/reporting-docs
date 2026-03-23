@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-The culture of the Kendo widgets, such as the [Kendo DatePicker](https://docs.telerik.com/kendo-ui/controls/datepicker/overview) is controlled outside of the [HTML5-based Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and must be set separately.
+The culture of the Kendo widgets, such as the [Kendo DatePicker](https://docs.telerik.com/kendo-ui/controls/datepicker/overview) is controlled outside of the [HTML5-based Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and must be set separately.
 
 This KB article gives a brief description of how to set up the Kendo widgets to work with another language. The example will demonstrate the date representation in `Spanish`.
 

@@ -10,7 +10,7 @@ ticketid: 1682367
 ---
 
 ## Description
-When designing reports, aligning the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) legend's mark and text correctly is crucial for readability and aesthetics. This knowledge-based article explains how to adjust the legend text alignment in a graph within Telerik Reporting. Also answers the following questions:
+When designing reports, aligning the [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview) legend's mark and text correctly is crucial for readability and aesthetics. This knowledge-based article explains how to adjust the legend text alignment in a graph within Telerik Reporting. Also answers the following questions:
 
 - How do I center align the legend mark in Telerik Reporting?
 - What property adjusts the legend mark alignment in a graph?
@@ -34,7 +34,7 @@ When designing reports, aligning the [Graph]({%slug telerikreporting/designing-r
 
 To center align the legend text in a graph component, follow these steps:
 
-1. Select the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item in the report.
+1. Select the [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview) item in the report.
 1. Expand to the [Series](/api/telerik.reporting.graphseries) collection proeprty of the graph.
 1. Choose the series for which you want to adjust the Legend mark alignment.
 1. From the [LegendItem](/api/telerik.reporting.graphseriesbase#Telerik_Reporting_GraphSeriesBase_LegendItem) dropdown, select the [MarkStyle](/api/telerik.reporting.legenditem#Telerik_Reporting_LegendItem_MarkStyle) property.
@@ -43,6 +43,6 @@ To center align the legend text in a graph component, follow these steps:
 ![How to center align a Graph's Legend Mark](images/centerAlignLegendText.png)
 
 ## See Also
-* [Graph Product Documentation]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
-* [Styling the Graph]({%slug add-pattern-styles-graph-column-stack-bars-telerik-reporting%})
-* [Report Items Overview]({%slug telerikreporting/designing-reports/report-structure/overview%})
+* [Graph Product Documentation](slug:telerikreporting/designing-reports/report-structure/graph/overview)
+* [Styling the Graph](slug:add-pattern-styles-graph-column-stack-bars-telerik-reporting)
+* [Report Items Overview](slug:telerikreporting/designing-reports/report-structure/overview)

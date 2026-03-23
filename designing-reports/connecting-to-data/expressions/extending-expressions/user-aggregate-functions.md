@@ -39,6 +39,6 @@ You can use a custom aggregate within expressions the same way you invoke an bui
 
 ## Extending Reporting Engine with User Functions
 
-If your custom aggregate functions are linked from an external assembly, in order the Standalone designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}). To run the report in other project use the same approach - add the assembly to the root folder from where the application is executed and configure it to load the external assembly by extending the configuration.
+If your custom aggregate functions are linked from an external assembly, in order the Standalone designer to recognize them, you will have to [extend the configuration of the start application](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer). To run the report in other project use the same approach - add the assembly to the root folder from where the application is executed and configure it to load the external assembly by extending the configuration.
 
 > Custom aggregates are not supported when you preview the report in Visual Studio. To see the aggregate output, use a __ReportViewer__ control.

@@ -11,7 +11,7 @@ position: 1
 
 # `Get Configuration` Overview
 
-The public interface for retrieving Telerik Reporting REST Service configuration information, including details about version, license status, and available functionality, such as [AI-powered insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}). Intended usage: internal purposes only.
+The public interface for retrieving Telerik Reporting REST Service configuration information, including details about version, license status, and available functionality, such as [AI-powered insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights). Intended usage: internal purposes only.
 
 ## Request
 
@@ -25,7 +25,7 @@ The public interface for retrieving Telerik Reporting REST Service configuration
 
 __Response Body__
 
-A configuration object that includes details about version, license status, and available functionality, such as [AI-powered insights]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%}).
+A configuration object that includes details about version, license status, and available functionality, such as [AI-powered insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights).
 
 ## Sample
 

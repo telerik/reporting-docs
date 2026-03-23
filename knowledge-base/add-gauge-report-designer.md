@@ -24,7 +24,7 @@ res_type: kb
 	</tbody>
 </table>
 
-> With [R2 2023 (17.1.23.606)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-17-1-23-606) we introduced the [Gauge report item]({%slug telerikreporting/designing-reports/report-structure/gauge/overview%}).
+> With [R2 2023 (17.1.23.606)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-17-1-23-606) we introduced the [Gauge report item](slug:telerikreporting/designing-reports/report-structure/gauge/overview).
 
 ## Description
 
@@ -34,7 +34,7 @@ I need to add a dynamic gauge that represents a specific value to my report.
 
 ### After R2 2023 (17.1.23.606)
 
-Use the built-in [Gauge report item]({%slug telerikreporting/designing-reports/report-structure/gauge/overview%}).
+Use the built-in [Gauge report item](slug:telerikreporting/designing-reports/report-structure/gauge/overview).
 
 ### Before R2 2023 (17.1.23.606)
 
@@ -44,9 +44,9 @@ Alternatively, you can use another tool to render the gauge with the desired val
 
 1. Render the desired value in a gauge tool of your choice.
 1. Capture or export the image.
-1. Use the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) item to display the image in your report.
+1. Use the [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) item to display the image in your report.
 
 ## See Also
 
-* [Gauge Overview]({%slug telerikreporting/designing-reports/report-structure/gauge/overview%})
-* [Radial Gauge]({%slug telerikreporting/designing-reports/report-structure/gauge/radial-gauge%})
+* [Gauge Overview](slug:telerikreporting/designing-reports/report-structure/gauge/overview)
+* [Radial Gauge](slug:telerikreporting/designing-reports/report-structure/gauge/radial-gauge)

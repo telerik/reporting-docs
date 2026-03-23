@@ -14,7 +14,7 @@ reportingArea: General
 
 __Telerik Reporting__ uses a dedicated cache management system to store and cache rendered pages and some large resources such as images on external storage. This cache management system is utilized by the Reporting Engine that processes and renders the reports.
 
-> The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Report Viewer__ or its Angular, WebForms, MVC, and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}).
+> The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Report Viewer__ or its Angular, WebForms, MVC, and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services).
 
 The report viewers with embedded Reporting Engine use the cache management system automatically as shown in the following illustration:
 
@@ -24,10 +24,10 @@ Here is the list of Report Viewers that work with embedded Reporting Engine:
 
 * __WinForms ReportViewer__ - settings must be applied in the application configuration file. By default the viewer keeps the report state in memory;
 * __WPF ReportViewer__ - settings must be applied in the application configuration file. By default the viewer keeps the report state in memory;
-* __Silverlight ReportViewer (not supported since R1 2023 SP1)__ - settings must be applied in the [Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) application configuration file. By default the viewer keeps the report state in memory;
+* __Silverlight ReportViewer (not supported since R1 2023 SP1)__ - settings must be applied in the [Reporting WCF service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview) application configuration file. By default the viewer keeps the report state in memory;
 * __ASP.NET WebForms ReportViewer (obsolete web viewer)__ - settings must be applied in the application configuration file. By default the viewer keeps the report state in the ASP.NET Session;
 
-The Reporting REST Service that serves report documents to the HTML5-based Report Viewers hosts a Reporting Engine that also utilizes the cache management system while rendering the report documents. After finishing with the rendering, the REST Service moves the prepared document or document pages and all the needed resources, for example, the images for the HTML renderings to the [REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}) and releases the cache.
+The Reporting REST Service that serves report documents to the HTML5-based Report Viewers hosts a Reporting Engine that also utilizes the cache management system while rendering the report documents. After finishing with the rendering, the REST Service moves the prepared document or document pages and all the needed resources, for example, the images for the HTML renderings to the [REST Service Storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview) and releases the cache.
 
 The utilization of the cache management system constitutes an important difference between the viewers working with embedded Reporting Engine and with Reporting REST Service. The former reuse the processing report, hence fetching and processing the data only once for a report, storing the necessary processing objects in the cache. The REST Service processes the report again with each new rendering.
 
@@ -43,7 +43,7 @@ Such cache management implementation offers the following key benefits:
 
 ## See Also
 
-* [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
-* [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
-* [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})
-* [Configuring Custom Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider%})
+* [Configuring Cache](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache)
+* [Configuring the File Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider)
+* [Configuring the Database Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider)
+* [Configuring Custom Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider)

@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-As of [R3 2016]({%slug telerikreporting/upgrade/2016/r3-2016%}#api-breaking-changes) we provide stricter rules for external assemblies used by reports to get data. This is a breaking change that may lead to the following error on preview, even after running the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}). 
+As of [R3 2016](slug:telerikreporting/upgrade/2016/r3-2016#api-breaking-changes) we provide stricter rules for external assemblies used by reports to get data. This is a breaking change that may lead to the following error on preview, even after running the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard). 
 
 ## Error Message
 
@@ -43,9 +43,9 @@ System.Security.SecurityException: The assembly "EXTERNAL_ASSEMBLY_TYPE" is not 
 
 ## Solution
 
- The ObjectDataSource component is designed to read the assembly information from the current project's configuration file. Thus, the assembly to be used by the [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) component must be referenced in the **AssemblyReferences** element in the **Telerik.Reporting configuration section** of your application configuration file.     
+ The ObjectDataSource component is designed to read the assembly information from the current project's configuration file. Thus, the assembly to be used by the [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview) component must be referenced in the **AssemblyReferences** element in the **Telerik.Reporting configuration section** of your application configuration file.     
 
-1. The Standalone Report Designer tool's configuration file, if you intend to use an ObjectDataSource component - [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%});
+1. The Standalone Report Designer tool's configuration file, if you intend to use an ObjectDataSource component - [Extending Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer);
 
 2. The configuration file of the project containing the Telerik Reports.  
 
@@ -53,11 +53,11 @@ System.Security.SecurityException: The assembly "EXTERNAL_ASSEMBLY_TYPE" is not 
 
 ## Notes
 
-It is recommended to keep reports in a separate project e.g. ClassLibrary project. *The ObjectDataSource component's settings can be added automatically by re-running the [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%}) in Visual Studio Report Designer.*
+It is recommended to keep reports in a separate project e.g. ClassLibrary project. *The ObjectDataSource component's settings can be added automatically by re-running the [ObjectDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard) in Visual Studio Report Designer.*
 
 ## See Also
 
-[Connecting the ObjectDataSource component to a Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
+[Connecting the ObjectDataSource component to a Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source)
 
-[ObjectDataSource: Configuration]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}#configuration)
+[ObjectDataSource: Configuration](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview#configuration)
 

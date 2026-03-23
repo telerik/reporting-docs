@@ -24,7 +24,7 @@ I want to create a crosstab/table in Telerik Reporting with no horizontal/vertic
 To achieve this, you can use the `Style` > `BorderStyle` property in Telerik Reporting. Follow these steps:
 
 * Set all border styles for the Crosstab __cells__ to `None`. Keep the Crosstab item borders with the default `Solid` style to get the borders around the entire Crosstab.
-* Add a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `Style` > `BorderStyle` > `Top` property and set it to `Solid` conditionally when the previous grouping value differs from the current one.
+* Add a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for the `Style` > `BorderStyle` > `Top` property and set it to `Solid` conditionally when the previous grouping value differs from the current one.
 
 The next sections discuss the particular Binding Expression for the top border style based on the scenario.
 
@@ -89,7 +89,7 @@ One easy approach is through the following steps that are implemented in the sam
 
 The above solution will result in a small whitespace below each group of content, as the table row has a minimal allowed height.
 
-An alternative workaround for the bottom table border when wrapping the table on a new page would be to use the `Last` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in the Binding for setting the Border Style. If the current value is equal to the Last for the group, we may draw the bottom border. This will work only if there is a data field with unique values. Otherwise, the comparison with the Last value may return True for some of the inner records and draw an unwanted border in the middle of the group.
+An alternative workaround for the bottom table border when wrapping the table on a new page would be to use the `Last` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in the Binding for setting the Border Style. If the current value is equal to the Last for the group, we may draw the bottom border. This will work only if there is a data field with unique values. Otherwise, the comparison with the Last value may return True for some of the inner records and draw an unwanted border in the middle of the group.
 
 ## Sample Reports
 
@@ -100,5 +100,5 @@ An alternative workaround for the bottom table border when wrapping the table on
 
 ## See Also
 
-* [Data Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%})
-* [Styling Report Items]({%slug telerikreporting/designing-reports/styling-reports/styling-report-items%})
+* [Data Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions)
+* [Styling Report Items](slug:telerikreporting/designing-reports/styling-reports/styling-report-items)

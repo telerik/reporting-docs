@@ -35,7 +35,7 @@ The following steps will walk you through the process of preparing the database 
 The Reporting REST Service can be set up to use the database storage by using one of the following approaches:
 
 - Setting up the connection when instantiating the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) at runtime.
-- Providing the connection string from the configuration file of the project via the [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
+- Providing the connection string from the configuration file of the project via the [restReportService Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
 
 Here are samples for both scenarios when targeting `.NET Framework` or `.NET`:
 

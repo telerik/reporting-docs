@@ -32,16 +32,16 @@ This article explains how to include HTTP headers—such as authorization tokens
 
 It applies to the following viewers:
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
-- [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
-- [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
-- [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-- [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
+- [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [HTML5 MVC Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview)
+- [HTML5 WebForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
+- [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)
+- [ReactJS Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview)
+- [Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview)
 
 ## Solution 1
 
-All HTML5-based report viewers support an authentication token configuration option that automatically appends a `Bearer` token to the `Authorization` header of each request sent to the Telerik Reporting REST service. For example, the HTML5 Report Viewer includes an [`authenticationToken` option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). 
+All HTML5-based report viewers support an authentication token configuration option that automatically appends a `Bearer` token to the `Authorization` header of each request sent to the Telerik Reporting REST service. For example, the HTML5 Report Viewer includes an [`authenticationToken` option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization). 
 
 >note The exact casing or naming of this option may vary across different viewer implementations. For accurate usage, refer to the specific documentation for the viewer you are integrating.
 
@@ -119,4 +119,4 @@ Before the [2025 Q2 release](https://www.telerik.com/support/whats-new/reporting
 
 ## See Also
 
-* [Add Custom Headers to Responses of the Reporting REST Service]({%slug add-custom-headers-to-responses-of-rests-service%})
+* [Add Custom Headers to Responses of the Reporting REST Service](slug:add-custom-headers-to-responses-of-rests-service)

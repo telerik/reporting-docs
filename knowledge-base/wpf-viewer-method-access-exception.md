@@ -45,4 +45,4 @@ The most common reason for this exception is an incorrect version of the web cli
 
 ## Solution  
 
-Install the assemblies required by the WPF viewer through the Visual Studio NuGet Package Manager or  with the [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console). For more details, refer to the article on [using the WPF ReportViewer with the Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}).         
+Install the assemblies required by the WPF viewer through the Visual Studio NuGet Package Manager or  with the [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console). For more details, refer to the article on [using the WPF ReportViewer with the Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server).         

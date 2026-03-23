@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-In different scenarios, data may not an have exact schema to be used for designing a report. In such cases, you can use the fact that the [Table/List/Crosstab item]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) can visualize 3D data.
+In different scenarios, data may not an have exact schema to be used for designing a report. In such cases, you can use the fact that the [Table/List/Crosstab item](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) can visualize 3D data.
 
 ## Solution
 
@@ -50,9 +50,9 @@ Then, you can add a Table/List/Crosstab item with dynamic row and column groups 
 
 ## Notes
 
-- The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) of Telerik Reporting R1 2017 and later.
+- The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) of Telerik Reporting R1 2017 and later.
 
-- The scenarios, requiring you to create or modify a report at run-time, are discussed in [Modifying or Creating a report at Run-Time]({% slug modifying-or-creating-a-report-at-run-time %}).
+- The scenarios, requiring you to create or modify a report at run-time, are discussed in [Modifying or Creating a report at Run-Time](slug:modifying-or-creating-a-report-at-run-time).
 
 ## Additional Resources
 
@@ -60,8 +60,8 @@ Then, you can add a Table/List/Crosstab item with dynamic row and column groups 
 
 ## See Also
 
-[Basic Concepts]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts %})
+[Basic Concepts](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts)
 
-[Understanding Crosstab Areas]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas %})
+[Understanding Crosstab Areas](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas)
 
-[Understanding table Cells, Rows and Columns]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns %})
+[Understanding table Cells, Rows and Columns](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns)

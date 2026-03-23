@@ -36,7 +36,7 @@ Add a folder (e.g. **Themes**) in the WPF Viewer project and copy the XAML files
 
 The themes can be referred directly in the `App.xaml` file, or alternatively in the _code behind_.
 
-1. In the `App.xaml` instead of content of the `<ResourceDictionary.MergedDictionaries>` element from step 4 in the [WPF Report Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}) article use the following (the example uses the _Material_ theme):
+1. In the `App.xaml` instead of content of the `<ResourceDictionary.MergedDictionaries>` element from step 4 in the [WPF Report Viewer Manual Setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project) article use the following (the example uses the _Material_ theme):
 
    ```XML
    <Application.Resources >

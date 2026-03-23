@@ -23,11 +23,11 @@ res_type: kb
 
 ## Description
 
-By default, the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item will render the first page of the TIFF image file. This can be a problem when a multipage TIFF file is used as there would be no way to display any of the other pages.
+By default, the [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) report item will render the first page of the TIFF image file. This can be a problem when a multipage TIFF file is used as there would be no way to display any of the other pages.
 
 ## Solution
 
-In order to render a certain page from the TIFF file, a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that selects that image is required. The function may look as bellow:
+In order to render a certain page from the TIFF file, a [custom user function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that selects that image is required. The function may look as bellow:
 
 ````CSharp
 public static Image GetPageFromTiff(string path, int page)
@@ -65,4 +65,4 @@ Then, in the Report Designer, to call the function we need to provide a path to 
 
 ## See Also
 
-* [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+* [Custom User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)

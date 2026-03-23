@@ -20,7 +20,7 @@ The `SqlDataSource` component supports parameterized SQL queries by associating 
 
 The syntax used for the placeholders varies, depending on the type of the database. If you are working with __SQL Server__, the parameter name begins with the *'@'* character, and its name corresponds to the name of the parameter object in the Parameters collection. For __Oracle__ databases the parameters are prefixed with the *':'* character instead, and are referenced by name in the `Parameters` collection as well. If you are working with an `ODBC` or `OLE DB` database, parameters in a parameterized statement are not named and instead are specified with the placeholder character *'?'*.
 
-> The [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) can detect SQL parameters listed in the SQL query, and it will ask you to provide values for them at __Configure Data Source Parameters__ step. The information is provided by the selected.NET data provider, which implementation is important for determining what SQL syntax can be used for the SQL query.
+> The [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) can detect SQL parameters listed in the SQL query, and it will ask you to provide values for them at __Configure Data Source Parameters__ step. The information is provided by the selected.NET data provider, which implementation is important for determining what SQL syntax can be used for the SQL query.
 
 ## Using Parameters with the SqlClient Provider
 

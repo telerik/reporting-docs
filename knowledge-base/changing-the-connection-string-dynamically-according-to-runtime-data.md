@@ -25,9 +25,9 @@ res_type: kb
 
 The approach described in the **solution** section below is suitable for viewers using embedded Reporting engine, e.g. Desktop Viewers and the obsolete ASP.NET Web Forms Report Viewer.
 
-In other cases, the recommended approach for modifying the connection string dynamically is through dedicated Report Parameter - check the KB article [Change Connection String dynamically through a report parameter]({%slug how-to-pass-connectionstring-to-report-dynamically-through-report-parameter%}).
+In other cases, the recommended approach for modifying the connection string dynamically is through dedicated Report Parameter - check the KB article [Change Connection String dynamically through a report parameter](slug:how-to-pass-connectionstring-to-report-dynamically-through-report-parameter).
 
-For the viewers using the Telerik Reporting REST Service check the KB article [Action NavigateToReport does not work after updating the Connection String dynamically in a Custom Report Resolver]({%slug navigate-to-report-not-working-when-custom-report-resolver-changes-connectionstring-dynamically%}).
+For the viewers using the Telerik Reporting REST Service check the KB article [Action NavigateToReport does not work after updating the Connection String dynamically in a Custom Report Resolver](slug:navigate-to-report-not-working-when-custom-report-resolver-changes-connectionstring-dynamically).
 
 ## Solution
 

@@ -23,9 +23,9 @@ You can share and reuse:
 
 * **Stylesheets** (for consistent report styling): Styles created in a report can be exported and then used in other reports. 
 
-* **Shared Data Sources** (predefined connections to data): Enable report designers to easily create and reuse a data source component across multiple reports. Read more in [Shared Data Source]({%slug shared-data-source-web-report-designer-user-guide%}).
+* **Shared Data Sources** (predefined connections to data): Enable report designers to easily create and reuse a data source component across multiple reports. Read more in [Shared Data Source](slug:shared-data-source-web-report-designer-user-guide).
 
-* **Report Templates** (.trtx file): Offer initial report layout and styling, and allow creating reports with consistent look and feel. Read more in [Creating and Using Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%}).
+* **Report Templates** (.trtx file): Offer initial report layout and styling, and allow creating reports with consistent look and feel. Read more in [Creating and Using Report Templates in Web Report Designer](slug:web-report-designer-report-templates).
 
 Once uploaded, you can reuse the assets in multiple reports, ensuring consistency and reducing duplication. For example, updating a company logo in the Assets Manager updates it across all reports using that asset.
 
@@ -55,7 +55,7 @@ The main root folder contains three predefined subfolders:
 
 * `Images`&mdash;Contains image files used in PictureBox items, backgrounds, logos, and so on.
 
-* `Styles`&mdash;Holds [stylesheets]({%slug wrd-stylesheet-formatting%}) (for example, `.xml`) used for consistent styling across reports.
+* `Styles`&mdash;Holds [stylesheets](slug:wrd-stylesheet-formatting) (for example, `.xml`) used for consistent styling across reports.
 
 You can create subfolders within these categories to better organize their assets.
 
@@ -65,11 +65,11 @@ The `Reports` folder is a dedicated folder for storing report definitions, which
 
 ## Shared Data Sources
 
-The [Shared Data Sources]({%slug shared-data-source-web-report-designer-user-guide%}) folder within the Assets Manager contains reusable data source definitions (.sdsx files) that can be shared across multiple reports. Each .sdsx file encapsulates the configuration for a data source, including: connection strings, queries or endpoints, parameters, metadata (e.g., name, description).
+The [Shared Data Sources](slug:shared-data-source-web-report-designer-user-guide) folder within the Assets Manager contains reusable data source definitions (.sdsx files) that can be shared across multiple reports. Each .sdsx file encapsulates the configuration for a data source, including: connection strings, queries or endpoints, parameters, metadata (e.g., name, description).
 
 ## Report Templates
 
-The report templates enable rapid, consistent report creation by providing reusable layouts, styling, and structure. Read more in [Creating and Using Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%}).
+The report templates enable rapid, consistent report creation by providing reusable layouts, styling, and structure. Read more in [Creating and Using Report Templates in Web Report Designer](slug:web-report-designer-report-templates).
 
 ## Enhanced UI Features
 
@@ -95,4 +95,4 @@ To help you manage your shared resources with ease and flexibility, the Assets M
 
 ## See Also
 
-* [Web Report Designer]({%slug user-guide/overview%})
+* [Web Report Designer](slug:user-guide/overview)

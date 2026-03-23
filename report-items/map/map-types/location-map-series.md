@@ -31,9 +31,9 @@ When all the properties are set, the `LocationMapSeries` instance will look simi
 
 ## See Also
 
-* [Adding Choropleth Maps to Reports with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
-* [Adding ShapeMapSeries Instances to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
-* [Creating BarChart Series and CSV Data Source Maps]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
+* [Adding Choropleth Maps to Reports with the Map Wizard](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard)
+* [Adding ShapeMapSeries Instances to the Map](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item)
+* [Creating BarChart Series and CSV Data Source Maps](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 * [Map Class API Reference](/api/telerik.reporting.map)

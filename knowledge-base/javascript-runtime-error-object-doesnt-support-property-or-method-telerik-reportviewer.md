@@ -32,7 +32,7 @@ res_type: kb
 
 ## Possible Cause
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML\CSS\JS client-side widget. The viewer requires a link to **jQuery v1.9.1. or above**, which may be in contradiction with other components loading jQuery on their own. 
+The [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) is an HTML\CSS\JS client-side widget. The viewer requires a link to **jQuery v1.9.1. or above**, which may be in contradiction with other components loading jQuery on their own. 
   
 ## Solution
  

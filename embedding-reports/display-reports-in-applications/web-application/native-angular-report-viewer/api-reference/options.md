@@ -124,7 +124,7 @@ reportSource: ReportSourceOptions = { report: "Dashboard.trdx", parameters: { Re
 				</code></pre>
 				<p>To set the ReportSource to a <a href="/api/Telerik.Reporting.TypeReportSource" target="_blank">type definition</a>:</p>
 				<ol>
-					<li>Make sure that the <a href="{%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}" target="_blank">Reporting REST Service</a> project references the project containing the type definition.</li>
+					<li>Make sure that the <a href="slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview" target="_blank">Reporting REST Service</a> project references the project containing the type definition.</li>
 					<li>Pass the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0" target="_blank">assembly qualified name</a> <i>(format: "<strong>{type}, {assembly}</strong>")</i> of the report's type to the <strong>Report</strong> property of the ReportSourceOptions object.</li>
 				</ol>
 				<pre><code>
@@ -165,7 +165,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 				<ul>
 					<li><strong>interactive</strong> - enables drill-down interactivity, etc;</li>
 					<li><strong>printPreview</strong> - the report is paged according to the page settings;
-						For more information please see <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout %}" target="_blank">Interactive vs. Print Layout</a>.
+						For more information please see <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout" target="_blank">Interactive vs. Print Layout</a>.
 						<br />
 						Default value is: <strong>interactive</strong>
 					</li>
@@ -189,7 +189,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 		<tr>
 			<td>printMode</td>
 			<td>
-				<p>Specifies how the viewer should <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports %}" target="_blank">print reports</a>.</p>
+				<p>Specifies how the viewer should <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports" target="_blank">print reports</a>.</p>
 				<p>The available values are:</p>
 				<ul>
 					<li><strong>autoSelect</strong> - specifies that the viewer should automatically decide
@@ -255,7 +255,7 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 			<td>authenticationToken</td>
 			<td>
 				<p><i>string, optional;</i></p>
-				<p> If provided, a `Bearer` token will be set in the `Authorization` header for requests to the Reporting REST service. The token is not sent only when requesting <a href="{% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource %}" target="_blank">document resources</a>. The reason is that resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
+				<p> If provided, a `Bearer` token will be set in the `Authorization` header for requests to the Reporting REST service. The token is not sent only when requesting <a href="slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource" target="_blank">document resources</a>. The reason is that resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
 			</td>
 		</tr>
 	</table>

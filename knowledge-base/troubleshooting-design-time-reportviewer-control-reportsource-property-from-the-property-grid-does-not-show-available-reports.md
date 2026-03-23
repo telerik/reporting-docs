@@ -25,7 +25,7 @@ I want to show my report in a ReportViewer control, but when I click on the arro
 
 ## Solution
 
-Follow our [best practices]({%slug on-telerik-reporting%}) and have the report in a separate class library that is referenced in the application or website. Check if the class library containing the report is referenced in your application/website and that you have rebuilt the application/website.
+Follow our [best practices](slug:on-telerik-reporting) and have the report in a separate class library that is referenced in the application or website. Check if the class library containing the report is referenced in your application/website and that you have rebuilt the application/website.
 
 The most reliable way to specify a report for the ReportViewer is to do this programmatically. For example, if you're using the ASP.NET Web Forms Report Viewer, on the Page_Load event of the page:
 

@@ -70,7 +70,7 @@ report.Items.AddRange(new Telerik.Reporting.ReportItemBase[] { pageHeaderSection
 
 ### 3. Preparing the Data Source
 
-Telerik Reporting supports various data sources including JSON, CSV, SQL, business objects, and others. For more information, check the article [Data Source Components at a Glance]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) This example uses an [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}):
+Telerik Reporting supports various data sources including JSON, CSV, SQL, business objects, and others. For more information, check the article [Data Source Components at a Glance](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) This example uses an [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview):
 
 ````csharp
 string selectCommand = "SELECT * FROM production.productphoto;";

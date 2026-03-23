@@ -65,7 +65,7 @@ To create the Scatter chart by using the Scatter Chart Wizard:
 
 	1. Drag the __SalesPersonName__ field to **Series**.
 	1. Leave **Categories** empty.
-	1. Drag the __SubTotal__ field to **X**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
+	1. Drag the __SubTotal__ field to **X**. The wizard will automatically apply the `Sum` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions)
 	1. Drag the __SubTotal__ field to **Y**.
 	1. Drag the __SubTotal__ field to **Size**.
 
@@ -93,7 +93,7 @@ This section will show how to manually create a Bubble chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({%slug graph_item_get_started%}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item](slug:graph_item_get_started).
 
 ### 2. Set the SeriesGroups Hierarchy
 
@@ -137,7 +137,7 @@ In this step, you will configure the series of the chart:
 
 ### 6. Style the Appearance
 
-To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}).
+To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
 
 ## Design Considerations 
 

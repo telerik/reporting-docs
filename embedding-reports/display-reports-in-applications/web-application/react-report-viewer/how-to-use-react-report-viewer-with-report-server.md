@@ -18,7 +18,7 @@ This tutorial demonstrates how to add the React Report Viewer component to a new
 
 The following list describes the prerequisites for this tutorial:
 
-- Review the React Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}#requirements).
+- Review the React Report Viewer [Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview#requirements).
 - A running intance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 
 ## Using React Report Viewer in React application
@@ -88,5 +88,5 @@ The following list describes the prerequisites for this tutorial:
 ## See Also
 
 - [Telerik Report Server](https://docs.telerik.com/report-server/introduction)
-- [React Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-- [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%})
+- [React Report Viewer Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview)
+- [How to Use React Report Viewer with REST Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service)

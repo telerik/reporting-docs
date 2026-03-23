@@ -46,4 +46,4 @@ Adding an action to a series group is identical to the approach shown above.
 
 - [Action](/api/Telerik.Reporting.GraphGroup#collapsible-Telerik_Reporting_GraphGroup_Action)
 
-- [Actions Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
+- [Actions Overview](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview)

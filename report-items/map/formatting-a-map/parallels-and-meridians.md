@@ -40,5 +40,5 @@ To change the style of the parallels or meridians:
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [(API) GraticuleLine](/api/Telerik.Reporting.GraticuleLine)
 * [(API) Style](/api/Telerik.Reporting.Drawing.Style)
-* [Structure and Elements of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Structure and Elements of the Map Report Item](slug:telerikreporting/designing-reports/report-structure/map/structure/overview)
 * [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

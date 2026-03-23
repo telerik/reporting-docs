@@ -37,12 +37,12 @@ The Web Report Designer consists of the following areas:
 
 	The purpose of this analytical data is to gather general details on the usage of the designer's components and wizards/tools. The reason we want to analyse this data is to improve the web designer based on its actual usage feedback.
 
-	For example, here is part of the data we collect for the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) and [its wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}):
+	For example, here is part of the data we collect for the [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) and [its wizard](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard):
 	+ How often do the report creators use the _SqlDataSource_ and its wizard?
 	+ How much time do the users spend working with the wizard: the time between the opening and closing of the wizard. Too much time may mean the wizard is not very intuitive and needs adjustments to facilitate data source creation.
 	+ Did the wizard complete successfully, i.e. with click on _Finish_ (successfully) or _Cancel_ (failure). Frequent failures in a particular step may indicate a need to improve it.
 
-	By default, the `Help us improve!` window is allowed. The developers may disallow it by setting the [option]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization%})) __skipCollectingUsageDataPrompt__ to __true__ (the default is _false_). The setting will force the onboarding guide to skip this window.
+	By default, the `Help us improve!` window is allowed. The developers may disallow it by setting the [option](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization)) __skipCollectingUsageDataPrompt__ to __true__ (the default is _false_). The setting will force the onboarding guide to skip this window.
 
 	The user may start/stop providing analytical data at any time. The current state of the agreement is kept by the general option __Collect non-personal usage data__ of the _Workspace Preferences_ menu item. Unchecking the option stops the collection of analytical data.
 
@@ -116,10 +116,10 @@ gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepic
 
 ## Learn More
 
-- [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
-- [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
+- [Configure Web Report Designer and Create a Basic Report](slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report)
+- [Implement a Common Master-Detail Report Scenario with the Web Report Designer](slug:telerikreporting/getting-started/web-designer/improving-basic-report)
 
 ## See Also
 
-- [How to set up in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
-- [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
+- [How to set up in .NET applications](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
+- [How to set up in .NET Framework application](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application)

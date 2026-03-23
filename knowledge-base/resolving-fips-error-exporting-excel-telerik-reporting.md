@@ -33,8 +33,8 @@ When exporting reports to Excel 97-2003(XLS), the error message `'This implement
 
 To resolve the issue, render the reports into the Excel 2007(XLSX) format instead. The `XLSX` renderer does not rely on the same cryptographic routines as the `XLS` renderer and is fully compatible with **FIPS-enabled environments**. Follow these steps to enable the `XLSX` export format in your application:
 
-1. Install the required dependencies for **OpenXML** formats (DOCX, XLSX, PPTX). Refer to the [OpenXML and XPS options missing]({%slug missing-docx-xlsx-pptx-xps-export-options%}) article for instructions on enabling **OpenXML** formats.
-1. (*Optional*) Configure the report export settings to hide the **XLS** format through the [extension element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}) so that users cannot trigger an export in that format.
+1. Install the required dependencies for **OpenXML** formats (DOCX, XLSX, PPTX). Refer to the [OpenXML and XPS options missing](slug:missing-docx-xlsx-pptx-xps-export-options) article for instructions on enabling **OpenXML** formats.
+1. (*Optional*) Configure the report export settings to hide the **XLS** format through the [extension element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element) so that users cannot trigger an export in that format.
 
     ````XML
 <configuration>
@@ -55,5 +55,5 @@ To resolve the issue, render the reports into the Excel 2007(XLSX) format instea
 
 ## See Also
 
-* [Excel Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations%})
-* [OpenXML and XPS Options Not Visible]({%slug missing-docx-xlsx-pptx-xps-export-options%})
+* [Excel Rendering Design Considerations](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations)
+* [OpenXML and XPS Options Not Visible](slug:missing-docx-xlsx-pptx-xps-export-options)

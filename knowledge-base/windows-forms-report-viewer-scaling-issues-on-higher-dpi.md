@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-When using [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}) on a machine with a DPI scale factor higher than 96 (100%), Windows will resize the bitmap images in the application according to the current DPI value.
+When using [Windows Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) on a machine with a DPI scale factor higher than 96 (100%), Windows will resize the bitmap images in the application according to the current DPI value.
 
 This makes the report viewer and the report content blurry or incorrectly sized in many common usage scenarios. Also, when printing the report, the application will scale the report contents incorrectly, because it cannot detect the current machine's DPI settings, and the DPI value will always be reported as 96 dots per inch.
 
@@ -103,5 +103,5 @@ For reference, check our demos located in the Telerik Reporting installation fol
 
 ## See Also
 
-- [Windows Forms Application - Declaring the application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware)
+- [Windows Forms Application - Declaring the application as DPI-aware](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware)
 - [Writing DPI-Aware Desktop and Win32 Applications](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)

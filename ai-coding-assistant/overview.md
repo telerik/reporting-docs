@@ -11,13 +11,13 @@ reportingArea: General
 
 # Telerik Reporting AI Coding Assistant
 
-Telerik Reporting offers an **AI Coding Assistant** that leverages AI to enhance developer experience and boost productivity when building web applications with [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}) integration.
+Telerik Reporting offers an **AI Coding Assistant** that leverages AI to enhance developer experience and boost productivity when building web applications with [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!) integration.
 
 The AI Coding Assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples.
 
-The **AI Coding Assistant** is integrated in the [Telerik Reporting MCP server]({%slug ai-mcp-server%}) - A powerful tool for running complex or multi-step prompts that integrates with any MCP-enabled client.
+The **AI Coding Assistant** is integrated in the [Telerik Reporting MCP server](slug:ai-mcp-server) - A powerful tool for running complex or multi-step prompts that integrates with any MCP-enabled client.
 
->tip We recommend the [Telerik Reporting MCP Server]({%slug ai-mcp-server%}) for **Agent** mode when using Visual Studio or Visual Studio Code.
+>tip We recommend the [Telerik Reporting MCP Server](slug:ai-mcp-server) for **Agent** mode when using Visual Studio or Visual Studio Code.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ To use the Telerik Reporting AI Coding Assistant, you need:
 
 * A [Telerik user account](https://www.telerik.com/account/).
 * An active [DevCraft or Telerik Reporting license](https://www.telerik.com/purchase.aspx?filter=web), or a [Telerik Reporting trial](https://www.telerik.com/reporting).
-* An application that uses [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}).
+* An application that uses [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!).
 * A Telerik [Subscription](https://www.telerik.com/purchase/faq/licensing-purchasing) or Trial license is required. Perpetual licenses do not include access to the AI Coding Assistant. See [Usage Limits](#usage-limits) for details.
 
 ## Intended Use
@@ -53,28 +53,28 @@ In this section, you may find the lists with the _Report Viewers_, _Reporting Se
 
 ### Report Viewers
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})
-- [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
-- [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
-- [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%})
-- [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-- [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
-- [HTML5 ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
-- [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
-- [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+- [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview)
+- [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
+- [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)
+- [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview)
+- [React Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview)
+- [HTML5 ASP.NET MVC Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview)
+- [HTML5 ASP.NET Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
+- [WPF Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview)
+- [Windows Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
 
 ### Services
 
-- [Telerik Reporting REST Service - ASP.NET Core Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
-- [Telerik Reporting REST Service - ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%})
-- [Web Report Designer REST Service - ASP.NET Core Web API Implementation]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#setting-up-the-report-designer-rest-service)
-- [Web Report Designer REST Service - ASP.NET Web API Implementation]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}#setting-up-the-report-designer-rest-service)
+- [Telerik Reporting REST Service - ASP.NET Core Web API Implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
+- [Telerik Reporting REST Service - ASP.NET Web API Implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview)
+- [Web Report Designer REST Service - ASP.NET Core Web API Implementation](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications#setting-up-the-report-designer-rest-service)
+- [Web Report Designer REST Service - ASP.NET Web API Implementation](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application#setting-up-the-report-designer-rest-service)
 
 ### Web Report Designers
 
-- [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#adding-the-web-report-designer)
-- [Blazor Wrapper of the Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application%}#adding-the-blazor-web-report-designer-component)
+- [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications#adding-the-web-report-designer)
+- [Blazor Wrapper of the Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application#adding-the-blazor-web-report-designer-component)
 
 ## Usage Limits
 
@@ -132,10 +132,10 @@ Please make sure you are familiar with the terms and privacy policy of your sele
  
 ## Next Steps
 
-* [Getting Started with the Telerik Reporting MCP Server]({%slug ai-mcp-server%})
-* [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
+* [Getting Started with the Telerik Reporting MCP Server](slug:ai-mcp-server)
+* [Telerik Reporting Prompt Library](slug:ai-prompt-library)
  
 ## See Also
 
-* [Telerik Reporting AI Coding Assistant Getting Started]({%slug ai-mcp-server%})
-* [Telerik Reporting Prompt Library]({%slug ai-prompt-library%})
+* [Telerik Reporting AI Coding Assistant Getting Started](slug:ai-mcp-server)
+* [Telerik Reporting Prompt Library](slug:ai-prompt-library)

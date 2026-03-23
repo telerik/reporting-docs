@@ -50,7 +50,7 @@ Any of the following data sources can be assigned to the DataSource property of 
 
 ## See Also
 
-* [Connecting the ObjectDataSource component to a Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
-* [How to Add ObjectDataSource in a Report Designed in the Standalone Designer?]({%slug steps-on-how-to-add-objectdatadource-in-a-report-designed-in-the-standalone-designer%})
-* [AssemblyReferences element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
-* [Data Source Components Problems]({%slug telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems%})
+* [Connecting the ObjectDataSource component to a Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source)
+* [How to Add ObjectDataSource in a Report Designed in the Standalone Designer?](slug:steps-on-how-to-add-objectdatadource-in-a-report-designed-in-the-standalone-designer)
+* [AssemblyReferences element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element)
+* [Data Source Components Problems](slug:telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems)

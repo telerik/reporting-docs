@@ -12,7 +12,7 @@ reportingArea: General
 
 # Using the Report Wizard to Create a Band Report
 
-In this article we will discuss how to create a band layout report with the [Band Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}).
+In this article we will discuss how to create a band layout report with the [Band Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview).
 
 To create a new report with this wizard:
 
@@ -27,14 +27,14 @@ To create a new report with this wizard:
   - Select the **Band Report Wizard** option from the list and click **OK**.
 
 - On the **Choose Data Source page** of the Report Wizard, select **Add New Data Source.**
-- The [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}) is started. Select the **[SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})** icon and click the OK button.
+- The [DataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard) is started. Select the **[SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)** icon and click the OK button.
 - On the **Choose Your Data Connection** page select a connection for the AdventureWorks database from the drop down list. If there is no existing connection, choose a data provider and click **Browse** to create a new connection. When done click the **Next** button.
 - **The Save the Connection String** step appears, where you can save the connection string in the application configuration file if you want with the name you want. Click **Next**.
 - The **Configure Data Source Command** step will display next.
 
   - Click the **Query Builder** button.
 
-    > The Query Builder is part of Visual Studio and is available only in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). As of Telerik Reporting Q3 2014 SQL queries can be built in the Standalone Designer with the [Query Designer in the Standalone Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}). If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) use the following select query and click Next:
+    > The Query Builder is part of Visual Studio and is available only in the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). As of Telerik Reporting Q3 2014 SQL queries can be built in the Standalone Designer with the [Query Designer in the Standalone Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer). If you are using the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) use the following select query and click Next:
 
     ```SQL
     SELECT Production.Product.Name, Production.Product.ProductNumber, Production.Product.ReorderPoint,
@@ -51,7 +51,7 @@ To create a new report with this wizard:
   - Click the **OK** button to close the dialog.
   - The **Configure Data Source Command** step would show the generated statement. Clicking the **Next** button would lead you to the **Preview Data Source Results** step, where you can preview the data. Click finish to return to the **Choose Data Source** page of the Report Wizard. On the next page choose **Standard Report Type** and click the **Next** button.
 
-  > The [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) article provides additional steps how to use parameterized SQL query.
+  > The [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) article provides additional steps how to use parameterized SQL query.
 
 - The **Design Data Layout** page of the Report Wizard allows you to assign database fields to sections of the report. The Report Wizard automatically places and formats the database fields in the appropriate report sections.
 
@@ -75,4 +75,4 @@ To create a new report with this wizard:
 
 From here you can continue with the following quickstart tutorials:
 
-- [How to extend a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-extend-a-band-report%}) - to include [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}), [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}) and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report items. This topic also introduces in-place editing, copying and pasting styles, using the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) and [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}).
+- [How to extend a Band Report](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-extend-a-band-report) - to include [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting), [Shape](slug:telerikreporting/designing-reports/report-structure/shape) and [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) report items. This topic also introduces in-place editing, copying and pasting styles, using the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer).

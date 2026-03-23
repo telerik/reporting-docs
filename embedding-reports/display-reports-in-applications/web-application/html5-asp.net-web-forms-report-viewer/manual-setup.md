@@ -14,7 +14,7 @@ previous_url: /html5-webforms-report-viewer-manual-setup
 
 ## Prerequisites
 
-- Review the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
+- Review the HTML5 Report Viewer [System Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support).
 - Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the **web.config** file of the project hosting the Reporting REST service:
 
@@ -26,7 +26,7 @@ previous_url: /html5-webforms-report-viewer-manual-setup
   </connectionStrings>
   ```
 
-* (Optional) [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service]({%slug telerikreporting/getting-started/installation/cdn-assets%}). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#kendo-widgets-requirements).
+* (Optional) [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service](slug:telerikreporting/getting-started/installation/cdn-assets). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#kendo-widgets-requirements).
 
 ## Using HTML5 ASP.NET Web Forms Report Viewer in a web application
 
@@ -119,7 +119,7 @@ The following steps produce a view with settings similar to these of the local `
    -->
    ```
 
-1. Switch to the `Design` view of the Web Form and drag the viewer from Visual Studio Toolbox onto the designer surface. The [ReportsController]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%}) will be automatically added to your project, along with references to the required **Telerik Reporting** assemblies.
+1. Switch to the `Design` view of the Web Form and drag the viewer from Visual Studio Toolbox onto the designer surface. The [ReportsController](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application) will be automatically added to your project, along with references to the required **Telerik Reporting** assemblies.
 1. Configure the HTML5 ASP.NET Web Forms Report Viewer's `ReportSource` using Visual Studio Property Grid. For this, you can use the "Product Catalog.trdp" report file.
 
    > If you use an `UriReportSource`, the `Identifier` must point to a TRDP/TRDX file's path that will be mapped to the folder used by the [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service implementation.

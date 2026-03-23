@@ -56,7 +56,7 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 	+ System.Net.Http.dll
 	+ System.Net.Http.Formatting.dll
 
-1. Implement the reports controller as explained in the article [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
+1. Implement the reports controller as explained in the article [How to implement the ReportsController in an application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application)
 1. Implement the starting point of the application:
 
 	{{source=CodeSnippets\MvcCS\SelfHostedSnippets\Program.cs region=SelfHostedRestService}}
@@ -67,7 +67,7 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 
 	`http://localhost: [portnumber]/api/reports/formats`
 
-	If the request succeeds, you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
+	If the request succeeds, you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats).
 
 1. When you are finished self-hosting, be sure to delete the reservation:
 
@@ -75,5 +75,5 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 
 ## See Also
 
-* [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
+* [Localization](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization)
 * [Hosting ASP.NET Web API](https://learn.microsoft.com/en-us/aspnet/web-api/overview/hosting-aspnet-web-api/)

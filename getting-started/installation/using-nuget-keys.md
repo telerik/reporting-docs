@@ -108,5 +108,5 @@ If you just start using the Telerik NuGet server in your CI or inter-department 
 
 ## See Also
 
-- [Telerik Reporting Installation Approaches]({%slug telerikreporting/installation%})
-- [Included Assemblies]({%slug included-assemblies%})
+- [Telerik Reporting Installation Approaches](slug:telerikreporting/installation)
+- [Included Assemblies](slug:included-assemblies)

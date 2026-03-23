@@ -38,7 +38,7 @@ Here is the desired output:
 To achieve the desired vertical alignment of the data point label at the top of the horizontal bar, use a workaround with a dummy series to simulate the label position. Follow these steps:
 
 1. Duplicate the original series to create a new dummy series specifically for the data point label. Name this series, for example, `TextSeries`.
-1. Apply [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) to make the dummy series transparent:
+1. Apply [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) to make the dummy series transparent:
 
 	- Set the `BackgroundColor` property of the dummy series to `Transparent`:
 
@@ -62,7 +62,7 @@ Download the [demo report BarChartWithDataPointLabelAbove.trdx](https://github.c
 
 ## See Also
 
-- [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%})
-- [Creating and Customizing Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})
-- [Designing Reports]({%slug telerikreporting/designing-reports/overview%})
-- [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
+- [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting)
+- [Creating and Customizing Bar Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview)
+- [Designing Reports](slug:telerikreporting/designing-reports/overview)
+- [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview)

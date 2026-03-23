@@ -27,7 +27,7 @@ Starting with [Telerik Reporting R1 2019](https://www.telerik.com/support/whats-
 
 Prior to that, the only available workaround was to switch the .NET Core application's target framework to full .NET Framework.
 
-Now, how to migrate the existing ASP.NET Core project from full .NET Framework back to .NET or .NET Core? In this article we would show you step-by-step and we would assume that the [Telerik Rest Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is configured within that application (hosted on the same domain).
+Now, how to migrate the existing ASP.NET Core project from full .NET Framework back to .NET or .NET Core? In this article we would show you step-by-step and we would assume that the [Telerik Rest Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is configured within that application (hosted on the same domain).
 
 ## Solution
 
@@ -41,7 +41,7 @@ Now, how to migrate the existing ASP.NET Core project from full .NET Framework b
 
    The above setting is for .NET Core 2.2. Change it correspondingly for the other target frameworks.
 
-1. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages]({%slug telerikreporting/installation%}#step-3-installing-telerik-reporting).
+1. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages](slug:telerikreporting/installation#step-3-installing-telerik-reporting).
 1. Update `Microsoft.AspNetCore` libraries to newer version (if needed).
 1. Application configuration in ASP.NET Core uses the new SDK-style project and utilizes `appsettings.json` as a configuration file. The `ConnectionStrings` setting should be configured in JSON-based format like for example:
 
@@ -97,4 +97,4 @@ A sample demo can be downloaded from the [Reporting-Samples GitHub repository](h
 
 ## See Also
 
-- [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
+- [.NET Core Support](slug:telerikreporting/using-reports-in-applications/dot-net-core-support)

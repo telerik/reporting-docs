@@ -81,7 +81,7 @@ Embed the SVG of the AI icon directly in your CSS with the following syntax:
 
 ## See Also
 
-* [AI-Powered Insights in Report Preview - Telerik Reporting]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights%})
-* [How to Customize the AI-Powered Insights - Telerik Reporting]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%})
+* [AI-Powered Insights in Report Preview - Telerik Reporting](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights)
+* [How to Customize the AI-Powered Insights - Telerik Reporting](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights)
 * [Font Icons in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/iconography/font-icons/)
 * [List of Icons in the Telerik and Kendo UI Web Components Icons System](https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/)

@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-By design, the borders of the [Table item]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) will be drawn to the end of the page to indicate that the table is continued to the next page.
+By design, the borders of the [Table item](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) will be drawn to the end of the page to indicate that the table is continued to the next page.
 When the table is paged vertically the vertical borders will be extended to the bottom of the page. When the table is paged horizontally 
 the horizontal borders will be extended to the right end of the page.
 
@@ -36,4 +36,4 @@ In this case, only the borders of each cell (TextBox item) will be visualized.
 
 ## See Also
 
-[Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+[Using Styles to Customize Reports](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)

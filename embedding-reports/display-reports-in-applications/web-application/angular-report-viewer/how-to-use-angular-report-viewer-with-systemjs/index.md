@@ -22,8 +22,8 @@ This article elaborates on how to add the Angular Report Viewer component to an 
 
 The following list describes the prerequisites for this tutorial:
 
-- Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
-- A running application that hosts a Reporting REST service at address /api/reports. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+- Review the Angular Report Viewer [Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview#requirements).
+- A running application that hosts a Reporting REST service at address /api/reports. For more information, see [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 - Copy of the "Product Catalog.trdp" report file from `[TelerikReporting_InstallDir]\ReportDesigner\Examples` in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the `web.config`/`appsettings.json` file of the project hosting the Reporting REST service.
 
@@ -137,7 +137,7 @@ npm install
    </tr-viewer>
    ```
 
-   For all available report viewer options, refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
+   For all available report viewer options, refer to [Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options).
 
 1. Style the viewer using the desired Kendo UI theme (еither using [LESS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) or [SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview)): Add references to the LESS-based CSS files in the `<head>` element of `index.html`:
 

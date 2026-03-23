@@ -19,7 +19,7 @@ To access the NuGet server, you need an active license for Telerik Reporting (tr
 
 ## Generate an API Key
 
-As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI]({% slug using-nuget-keys %}#using-only-cli-commands) or the [`NuGet.Config` file]({% slug using-nuget-keys %}#using-a-nugetconfig-file-with-your-projects).
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI](slug:using-nuget-keys#using-only-cli-commands) or the [`NuGet.Config` file](slug:using-nuget-keys#using-a-nugetconfig-file-with-your-projects).
 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
@@ -100,6 +100,6 @@ If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set
 
 ## See Also
 
-* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
-* [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({%slug nuget-feed-returned-unexpected-401-status-error%})
-* [Setup a Local NuGet Package Feed]({%slug setup-local-nuget-feed%})
+* [Restoring NuGet Packages in Your CI Workflow](slug:using-nuget-keys)
+* [NuGet V2 Feed Error about Returned Unexpected 401 Status Code](slug:nuget-feed-returned-unexpected-401-status-error)
+* [Setup a Local NuGet Package Feed](slug:setup-local-nuget-feed)

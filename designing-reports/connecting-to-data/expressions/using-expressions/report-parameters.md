@@ -18,11 +18,11 @@ The `AvailableValues.ValueMember`  and `AvailableValues.DisplayMember` are usual
 
 `='Mr. ' + Fields.LastName + ', ' + Fields.FirstName`
 
-You may also use [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}):
+You may also use [embedded expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions):
 
 `Mr. {Fields.LastName}, {Fields.FirstName}`
 
 ## See Also
 
-* [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})
-* [Using Report Parameters in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%})
+* [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
+* [Using Report Parameters in Expressions](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions)

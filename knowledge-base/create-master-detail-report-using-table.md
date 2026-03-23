@@ -33,15 +33,15 @@ To achieve the desired scenario:
 
 The master report data in this example consists of product categories from the AdventureWorks database. The detail table displays product names and numbers.
 
-The example uses the [`ReportItem.DataObject`]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) to filter the detail table by a product category.
+The example uses the [`ReportItem.DataObject`](slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions) to filter the detail table by a product category.
 
 ## Creating the Master Report
 
 The master report will contain only a simple listing of product categories.
 
-1. Create a new [Telerik Report Library]({%slug on-telerik-reporting%}) to contain the report. As a result, the **Choose Report Type** dialog opens.
+1. Create a new [Telerik Report Library](slug:on-telerik-reporting) to contain the report. As a result, the **Choose Report Type** dialog opens.
 1. Select **Band Report Wizard** and enter a name for the report class.
-1. On the **Choose Data Source** page of the Band Report Wizard, click the **Add New Data Source** button and select the [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the **Choose Your Data Connection** page of the wizard, set up the data connection to the AdventureWorks database, save it so you can use it later when creating the Table item. Click **Next**.
+1. On the **Choose Data Source** page of the Band Report Wizard, click the **Add New Data Source** button and select the [SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview). On the **Choose Your Data Connection** page of the wizard, set up the data connection to the AdventureWorks database, save it so you can use it later when creating the Table item. Click **Next**.
 
 1. Enter the SQL statement below and click the **Next** button.
 
@@ -55,7 +55,7 @@ The master report will contain only a simple listing of product categories.
 
 1. Resize the detail section to create some vertical space for the Table item.
 1. Drag the **Table Wizard** item from the Visual Studio Toolbox to the detail section of the report.
-1. On the **Choose Data Source** page of the Table Wizard, click the **Add New Data Source** button and select the [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the **Choose Your Data Connection** page of the wizard, select the already created data connection and click **Next**.
+1. On the **Choose Data Source** page of the Table Wizard, click the **Add New Data Source** button and select the [SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview). On the **Choose Your Data Connection** page of the wizard, select the already created data connection and click **Next**.
 1. Enter the following SQL statement. Click **Finish**.
 
    ```SQL
@@ -74,7 +74,7 @@ The master report will contain only a simple listing of product categories.
 
 ## Configuring the Table Filter
 
-This step creates a filter that uses the [`ReportItem.DataObject`]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) property to pass in the current `ProductCategoryID` for each record and the detail table prints all products that have that `ProductCategoryID`.
+This step creates a filter that uses the [`ReportItem.DataObject`](slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions) property to pass in the current `ProductCategoryID` for each record and the detail table prints all products that have that `ProductCategoryID`.
 
 1. Select the Table item.
 1. In the **Property** window, navigate to the **Filters** property and click the ellipses.
@@ -88,4 +88,4 @@ Click the **Preview** button to preview the report. Note that product numbers an
 
 ![The Preview result in the Visual Studio Report Designer for the category Accessories](images/MasterDetailTable0002.png)
 
-> tip You can create the same report layout with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
+> tip You can create the same report layout with the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).

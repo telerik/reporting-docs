@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-Currently, the .NET frameworks do not support the design time components we need for the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). Without these components we cannot provide a quality design-time experience. 
+Currently, the .NET frameworks do not support the design time components we need for the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). Without these components we cannot provide a quality design-time experience. 
 
 This KB article describes a workaround for using the Visual Studio Report Designer to edit C Sharp reports hosted in a .NET ClassLibrary project.
 
@@ -59,7 +59,7 @@ Let's assume that we already have a ReportLibrary project in .NET Framework. Her
 
 A demo solution demonstrating the approach may be found in our GitHub repo - [VS Designer in .NET](https://github.com/telerik/reporting-samples/tree/master/VS%20designer%20Core)
 
-> If you add [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) or [NavigatToReport Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) to your CLR reports in Visual Studio Report Designer and select [TypeReportSource](/api/telerik.reporting.typereportsource) suggested by the Wizard, it will include a reference to the corresponding .NET Framework ReportLibrary Report Class. You need to make sure the AssemblyQualifiedName is identical when resolved from the .NET ClassLibrary project or correct it manually. Otherwise, you may receive an exception for `Invalid report type`.
+> If you add [SubReport](slug:telerikreporting/designing-reports/report-structure/subreport) or [NavigatToReport Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) to your CLR reports in Visual Studio Report Designer and select [TypeReportSource](/api/telerik.reporting.typereportsource) suggested by the Wizard, it will include a reference to the corresponding .NET Framework ReportLibrary Report Class. You need to make sure the AssemblyQualifiedName is identical when resolved from the .NET ClassLibrary project or correct it manually. Otherwise, you may receive an exception for `Invalid report type`.
 
 ## See Also
 

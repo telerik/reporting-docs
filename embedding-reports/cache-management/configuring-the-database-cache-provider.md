@@ -12,7 +12,7 @@ reportingArea: General
 
 # Configuring the Database Cache Provider
 
-> The cache settings mentioned in this article are not obligatory, and they do not apply to the **HTML5 Report Viewer** or its Angular, WebForms, MVC and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}) and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
+> The cache settings mentioned in this article are not obligatory, and they do not apply to the **HTML5 Report Viewer** or its Angular, WebForms, MVC and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services) and [REST Service Storage Settings](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview).
 
 The database cache provider stores the rendered pages and resources in database. This is useful in web farm applications where different computers can serve different requests to the same report, so a common storage is necessary to hold the shared resources.
 
@@ -43,7 +43,7 @@ Two cache providers are available:
 
   Here the "ProviderName" parameter specifies the **ADO.NET** provider, and the "ConnectionString" specifies the connection string to the database.
 
-- **Telerik Data Access** cache provider. Add the requires reference to _Telerik.OpenAccess.dll_, _Telerik.OpenAccess.35.Extensions.dll_ and _Telerik.OpenAccess.Runtime.dll_. It is necessary to configure the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet to configure this provider in application’s configuration file:
+- **Telerik Data Access** cache provider. Add the requires reference to _Telerik.OpenAccess.dll_, _Telerik.OpenAccess.35.Extensions.dll_ and _Telerik.OpenAccess.Runtime.dll_. It is necessary to configure the [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) first and then use the following XML snippet to configure this provider in application’s configuration file:
 
   ```XML
   <Telerik.Reporting>
@@ -86,6 +86,6 @@ Two cache providers are available:
 
 ## See Also
 
-- [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
-- [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
-- [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+- [Configuring Cache](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache)
+- [Configuring the File Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider)
+- [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)

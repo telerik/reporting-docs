@@ -28,7 +28,7 @@ How can I access the properties of an Angular component from the report viewer e
 
 ## Cause
 
-Inside the [Angular Report Viewer events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/event-binding%}), the `this` value will point to the report viewer object. This makes the properties of any Angular component inaccessible in report viewer events.
+Inside the [Angular Report Viewer events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/event-binding), the `this` value will point to the report viewer object. This makes the properties of any Angular component inaccessible in report viewer events.
 
 Consider the following example:
 

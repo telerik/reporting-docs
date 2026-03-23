@@ -38,7 +38,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
     </configuration>
     ```
 
-    More details about the .NET Framework Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article. `Telerik.ReportDesigner.exe.config` resides in the **[InstallDir]/Report Designer** directory by default (it is recommended to create a backup copy before modifying it).
+    More details about the .NET Framework Standalone Report Designer's configuration file are available in the [Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview) article. `Telerik.ReportDesigner.exe.config` resides in the **[InstallDir]/Report Designer** directory by default (it is recommended to create a backup copy before modifying it).
 
   - For the `.NET` Standalone Designer version
 
@@ -61,7 +61,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
     If you provide a custom `type`, you need to copy its assembly in the designer's folder (see its path below). You need also to provide the assembly name _CustomListenersAssembly_ along with the full type name _CustomListenersNamespace.CustomListener_.
 
-    More details about the .NET Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article. `Telerik.ReportDesigner.Net.dll.config` resides in the **[InstallDir]/Report Designer/.NET** directory by default (it is recommended to create a backup copy before modifying it).
+    More details about the .NET Standalone Report Designer's configuration file are available in the [Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview) article. `Telerik.ReportDesigner.Net.dll.config` resides in the **[InstallDir]/Report Designer/.NET** directory by default (it is recommended to create a backup copy before modifying it).
 
 - Check the event viewer logs for any log entries related to the problem.
 - Use Visual Studio Debugger to attach to the **Telerik.ReportDesigner.exe** running process before it crashes, in order to pinpoint where the error occurs.
@@ -70,12 +70,12 @@ After you generate the log files from the above steps, archive them and attach t
 
 ## The report cannot be opened in the Standalone Report Designer
 
-Please refer to the information from the following KB article: [The report cannot be opened in the Standalone Report Designer]({%slug report-cannot-be-opened-in-standalone-report-designer%})
+Please refer to the information from the following KB article: [The report cannot be opened in the Standalone Report Designer](slug:report-cannot-be-opened-in-standalone-report-designer)
 
 ## The Standalone Report Designer cannot recognize custom assemblies
 
 If the Standalone Report Designer is not able to resolve and display in design time the assemblies that you would like to use for custom User Functions or ObjectDataSources, please, check the following resources:
 
-- [Using External Assemblies with Custom CLR Objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})
-- [ObjectDataSource Assembly Not Loaded by Standalone Designer]({%slug objectdatasource-assembly-not-loaded-by-standalone-report-designer%})
-- [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]({%slug how-to-load-dot-net-7-assemblies-in-srd-dot-net%})
+- [Using External Assemblies with Custom CLR Objects in the Report Designer](slug:how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer)
+- [ObjectDataSource Assembly Not Loaded by Standalone Designer](slug:objectdatasource-assembly-not-loaded-by-standalone-report-designer)
+- [Loading .NET 7 assemblies in the Standalone Report Designer for .NET](slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net)

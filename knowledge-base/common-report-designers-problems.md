@@ -22,7 +22,7 @@ res_type: kb
 
 ## Font is missing in report designers
 
-Please refer to the information from the following KB article: [Font is missing in report designers.]({%slug font-is-missing-in-report-designers%}).
+Please refer to the information from the following KB article: [Font is missing in report designers.](slug:font-is-missing-in-report-designers).
 
 ## Report designers don't work on Windows Server platforms
 

@@ -13,7 +13,7 @@ position: 4
 
 The article elaborates on how to change the default editors for visible parameters in the Blazor Report Viewer's Parameters Area.
 
-Custom parameter editors are defined through the `ParameterEditors` ([Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})) array of `ParameterEditor` objects passed as an option when creating the report viewer widget.
+Custom parameter editors are defined through the `ParameterEditors` ([Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization)) array of `ParameterEditor` objects passed as an option when creating the report viewer widget.
 Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.
 
 Each editor is a `ParameterEditor` instance which contains two string properties: `Match` and `CreateEditor`. These strings should point to a global JS variable defined on the [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) object. This variable should have a _match_ and _createEditor_ javascript methods.
@@ -104,4 +104,4 @@ The following example uses the **Dashboard** example report that we ship with th
 
 ## See Also
 
-- [Blazor Report Viewer Event Binding]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/event-binding%})
+- [Blazor Report Viewer Event Binding](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/event-binding)

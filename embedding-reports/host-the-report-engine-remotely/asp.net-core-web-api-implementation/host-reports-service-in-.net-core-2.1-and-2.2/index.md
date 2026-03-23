@@ -40,11 +40,11 @@ In this tutorial, the resulting service will use the sample report definitions d
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
 
-   It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET Core projects.
+   It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET Core projects.
 
    Existing .NET Framework report libraries can be migrated to declarative report definitions as well. The other available approach is designing reports in a separate Telerik Report Library created against .NET Framework 4.0+ which later must be migrated to a .NET Standard or .NET Core library.
 
-   For more information, please refer to [Guidance for using reports from an existing .NET Framework 4+ report library in a .NET Core application]({%slug use-existing-report-library-in-net-core-app%}) knowledge base article. Design-time support is not yet provided for .NET Core Telerik Report Library (Class Library) projects storing the report definitions.
+   For more information, please refer to [Guidance for using reports from an existing .NET Framework 4+ report library in a .NET Core application](slug:use-existing-report-library-in-net-core-app) knowledge base article. Design-time support is not yet provided for .NET Core Telerik Report Library (Class Library) projects storing the report definitions.
 
 ## Add the required dependencies
 
@@ -53,9 +53,9 @@ This guide applies the recommended NuGet package references approach to add the 
 1. Reference the **Telerik.Reporting.Services.AspNetCore** package.
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the **Telerik.Reporting.OpenXmlRendering** NuGet package.
 
-   The Telerik Reporting engine and services assemblies are built against **.NET Standard 2.0 framework** where applicable, which ensures compatibility with a greater variety of frameworks and applications. The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add all indirect dependencies to your project bringing easier dependency management. Alternatively, the assemblies are available in the `\Bin\netstandard2.0\` folder of Telerik Reporting installation directory.
+   The Telerik Reporting engine and services assemblies are built against **.NET Standard 2.0 framework** where applicable, which ensures compatibility with a greater variety of frameworks and applications. The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio) and reference the dependencies as NuGet packages. This would also add all indirect dependencies to your project bringing easier dependency management. Alternatively, the assemblies are available in the `\Bin\netstandard2.0\` folder of Telerik Reporting installation directory.
 
-   However, this would require to manually add all indirect dependencies listed in [.NET Core Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
+   However, this would require to manually add all indirect dependencies listed in [.NET Core Support - Requirements](slug:telerikreporting/using-reports-in-applications/dot-net-core-support#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
    > note You need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.
 
@@ -178,9 +178,9 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 To ensure that the service operates, run the application and navigate to either of the General REST Service API URLs `{applicationRoot}/api/reports/formats` or `{applicationRoot}/api/reports/version`.
 
-- The first should return a [JSON representing the supported rendering extensions]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})
-- The second should return the [version of the Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%}).
+- The first should return a [JSON representing the supported rendering extensions](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats)
+- The second should return the [version of the Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version).
 
 ## See Also
 
-- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
+- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications](slug:asp-net-core-reporting)

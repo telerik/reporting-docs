@@ -48,4 +48,4 @@ The possible causes are the following:
 
 ## Solution
 
-Double-check if the XAML resources are loaded in the application and [if the dependencies between Telerik Reporting and Telerik UI for Silverlight are considered]({%slug telerikreporting/upgrade/overview%}). For more details about the settings required by the Silverlight ReportViewer, refer to the article on [adding the report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).
+Double-check if the XAML resources are loaded in the application and [if the dependencies between Telerik Reporting and Telerik UI for Silverlight are considered](slug:telerikreporting/upgrade/overview). For more details about the settings required by the Silverlight ReportViewer, refer to the article on [adding the report viewer to a Silverlight application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application).

@@ -40,6 +40,6 @@ Supported in all of the themes available to the WPF Report Viewer.
 
 ## See Also
 
-* [Migrate to using embedded styles in the WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-migrate-to-embedded-styles%})
-* [Setting the Theme of WPF Report Viewer (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
-* [WPF Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/report-viewer-localization%})
+* [Migrate to using embedded styles in the WPF Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-migrate-to-embedded-styles)
+* [Setting the Theme of WPF Report Viewer (Using Implicit Styles)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles))
+* [WPF Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/report-viewer-localization)

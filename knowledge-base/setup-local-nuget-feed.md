@@ -54,5 +54,5 @@ Remember to place all necessary dependencies in your local NuGet folder, avoidin
 
 ## See Also
 
-- [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
-- [Adding the Private Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})
+- [Restoring NuGet Packages in Your CI Workflow](slug:using-nuget-keys)
+- [Adding the Private Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio)

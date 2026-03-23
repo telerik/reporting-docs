@@ -26,7 +26,7 @@ ticketid: 1690218
 
 ## Description
 
-I cannot get the [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) to refresh the report based on new parameter values after displaying the report with default parameters. When I update parameters programmatically. For example, using a dropdown—the report does not refresh, even though the [OnParametersSetAsync](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync) method executes with the new parameter values.
+I cannot get the [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) to refresh the report based on new parameter values after displaying the report with default parameters. When I update parameters programmatically. For example, using a dropdown—the report does not refresh, even though the [OnParametersSetAsync](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync) method executes with the new parameter values.
 
 However, if I use the parameter input area in the Report Viewer interface, the report refreshes properly with the updated values. I need a way to programmatically pass new parameters and redisplay the report with these values.
 
@@ -38,7 +38,7 @@ This knowledge-base article also answers the following questions:
 
 ## Solution
 
-To refresh the [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})  programmatically with new parameter values, ensure that you create a new `ReportSourceOptions` object when updating the `ReportSource` property. Modifying the existing object will not trigger the refresh. Below is an example demonstrating this approach.
+To refresh the [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)  programmatically with new parameter values, ensure that you create a new `ReportSourceOptions` object when updating the `ReportSource` property. Modifying the existing object will not trigger the refresh. Below is an example demonstrating this approach.
 
 ### Example
 
@@ -74,5 +74,5 @@ protected override async Task OnParametersSetAsync()
 
 ## See Also
 
-* [Native Blazor Report Viewer Documentation]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
-* [Embedding Reports in Blazor Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%})
+* [Native Blazor Report Viewer Documentation](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
+* [Embedding Reports in Blazor Applications](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer)

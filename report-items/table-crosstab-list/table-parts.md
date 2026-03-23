@@ -14,7 +14,7 @@ reportingArea: General
 
 To control the way the cells, rows, and columns of the Table report item display their report data, you need to specify rows and columns for detail data, for group data, and for labels and totals.
 
-Usually, you can use the default Table templates of the [Table, CrossTab, or List variations]({%slug table_template_items%}) to display your data.
+Usually, you can use the default Table templates of the [Table, CrossTab, or List variations](slug:table_template_items) to display your data.
 
 ## Displaying Data in Rows and Columns
 
@@ -29,7 +29,7 @@ This section elaborates on the specifics when you work with the Table rows and c
 
 ## Table Cells
 
-Each Table cell belongs to one of the available Table areas, namely, the Body, Row Group, Column Group, or Corner areas. Although each cell can potentially display any value from the data source, the default function for each cell is determined by its location. For detailed information, refer to the article on [CrossTab areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
+Each Table cell belongs to one of the available Table areas, namely, the Body, Row Group, Column Group, or Corner areas. Although each cell can potentially display any value from the data source, the default function for each cell is determined by its location. For detailed information, refer to the article on [CrossTab areas](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas).
 
 Each Table area comes with the following specifics that affect the cells inside:
 
@@ -39,7 +39,7 @@ Each Table area comes with the following specifics that affect the cells inside:
 
 ## See Also
 
-* [CrossTab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
-* [Template Variations of the Table Report Items]({%slug table_template_items%})
+* [CrossTab Areas](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas)
+* [Template Variations of the Table Report Items](slug:table_template_items)
 * [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

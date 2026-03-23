@@ -129,4 +129,4 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
 
 ## See Also
 
-- [How to Create a Custom Parameter Editor in the Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+- [How to Create a Custom Parameter Editor in the Html5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

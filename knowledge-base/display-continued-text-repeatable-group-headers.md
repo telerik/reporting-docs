@@ -31,7 +31,7 @@ This article demonstrates how to create a table group with a repeatable header a
 ### Step 1: Add a Group with Repeatable Header
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), right-click an existing group.
+1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click an existing group.
 1. Click **Add Group**, and then click **Parent Group** or **Child Group** depending on your needs. The **Table Group** dialog box opens.
 1. In the **Group by** section, click **New**.
 1. Enter an expression for the grouping criteria (for example, `= Fields.Category`).
@@ -65,6 +65,6 @@ For a complete working example that demonstrates this functionality, download th
 
 ## See Also
 
-* [Adding Groups to Tables]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%})
-* [Global Objects - ReportItem]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportitem)
-* [Table Group Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog%})
+* [Adding Groups to Tables](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item)
+* [Global Objects - ReportItem](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects#reportitem)
+* [Table Group Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog)

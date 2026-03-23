@@ -70,5 +70,5 @@ Telerik.Reporting.Report report = (Telerik.Reporting.Report)
 
 ## See Also
 
-- [Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})
+- [Serialize Report Definition in XML](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml)
 - [ReportXmlSerializer API Reference](/api/telerik.reporting.xmlserialization.reportxmlserializer)

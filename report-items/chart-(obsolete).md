@@ -12,10 +12,10 @@ reportingArea: General
 
 # (Obsolete) Chart Report Item Overview
 
->* The Chart report item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item. The Graph is most often used for building powerful OLAP and Pivot charts. 
+>* The Chart report item is now superseded by the more advanced [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview) report item. The Graph is most often used for building powerful OLAP and Pivot charts. 
 >* The Chart report item is not supported in .NET projects and in projects deployed on Azure. 
 >* The complete Chart report item documentation is available as a `CHM` file up to Telerik Reporting version 8.2.14.1204, and can be downloaded from [your Telerik account](https://www.telerik.com/account/downloads/product-download?product=REPORTING).
->* If your reports utilize the Chart item, you need to add a [typeReference]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) in your configuration to explicitly allow the element to be processed: `<add typeName="Telerik.Reporting.Processing.Chart" assemblyName="Telerik.Reporting" publicKeyToken="a9d7983dfcc261be" />`. This is required due to vulnerabilities in the item code.
+>* If your reports utilize the Chart item, you need to add a [typeReference](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) in your configuration to explicitly allow the element to be processed: `<add typeName="Telerik.Reporting.Processing.Chart" assemblyName="Telerik.Reporting" publicKeyToken="a9d7983dfcc261be" />`. This is required due to vulnerabilities in the item code.
 
 The Chart report item is used to display a chart on a report. 
 
@@ -54,7 +54,7 @@ To customize the Chart, right-click the item and select **Properties** from the
 
 * Automatic text-wrapping&mdash;Text elements in the Chart can be wrapped automatically.
 
-* Data-binding&mdash;The obsolete Chart item is a [Data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and uses the [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) to bind to data. Once you define the data source, you can use the Property Editor or code to select which data columns will be used to populate the Chart.
+* Data-binding&mdash;The obsolete Chart item is a [Data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) and uses the [Data Source Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) to bind to data. Once you define the data source, you can use the Property Editor or code to select which data columns will be used to populate the Chart.
 
 * Wizard&mdash;The Chart Wizard provides the most commonly used properties of the Chart in an intuitive way and enables you to quickly set up the basic structure of the report item. To invoke the Chart Wizard, use the context menu that appears when you right-click the Chart report item and select **Properties**.
 

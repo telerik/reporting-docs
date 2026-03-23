@@ -27,7 +27,7 @@ ticketid: 1693434
 
 ## Description
 
-I upgraded my Telerik Reporting project, which uses the [Blazor Native Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}). After the upgrade, I encountered the following error:
+I upgraded my Telerik Reporting project, which uses the [Blazor Native Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview). After the upgrade, I encountered the following error:
 
 ````
 System.InvalidOperationException: Object of type 'Telerik.Blazor.Components.TelerikWindow' does not have a property matching the name 'Centered'.
@@ -49,7 +49,7 @@ Downgrade the `Telerik.UI.for.Blazor` package in your project to version `7.1.0`
 
 ### Switch to Blazor Report Viewer
 
-Use the [Blazor HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) instead of the Blazor Native Viewer. The Blazor Report Viewer acts as a wrapper for the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and does not depend on Telerik UI for Blazor components.
+Use the [Blazor HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) instead of the Blazor Native Viewer. The Blazor Report Viewer acts as a wrapper for the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and does not depend on Telerik UI for Blazor components.
 
 ### Wait for Updated Dependencies
 
@@ -60,4 +60,4 @@ The Reporting team plans to update the `Telerik.UI.for.Blazor` dependency in the
 * [Breaking Changes in 9.0.0: Window](https://www.telerik.com/blazor-ui/documentation/upgrade/breaking-changes/9-0-0#window)
 * [Forum: TelerikWindow does not have a property matching the name 'Centered'](https://www.telerik.com/forums/telerik-blazor-components-telerikwindow-does-not-have-a-property-matching-the-name-centered?_gl=1*1ky0ygo*_ga_9JSNBCSF54*czE3NTMwODAxMjUkbzEzJGcxJHQxNzUzMDg2ODQzJGo3JGwwJGgw)
 * [Feature Request: Native Blazor Viewer Throws Error Related to 'Centered'](https://feedback.telerik.com/reporting/1693306-native-blazor-viewer-throws-telerik-blazor-components-telerikwindow-does-not-have-a-property-matching-the-name-centered?_gl=1*18c1v11*_gcl_au*MTU2NDQxNzkuMTc1MzA4NzAzMQ..*_ga*MzAyODQwMTI5LjE3NTMwODcwMzE.*_ga_9JSNBCSF54*czE3NTMwODAxMjUkbzEzJGcxJHQxNzUzMDg3MzA3JGozMyRsMCRoMA..)
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

@@ -11,7 +11,7 @@ position: 2
 
 # Creating Nested Hierarchy with SubReports
 
-Using a **DataSource** in the [SubReport]({%slug web-report-designer-user-guide-components-subreport%}) item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reduces using parameters for building the hierarchical structure. This approach of implementing a master-detail report scenario does not use different data sources in both reports, as demonstrated in the [Creating Master-Detail Reports]({%slug web-report-designer-user-guide-creating-master-detail-report%}) article. 
+Using a **DataSource** in the [SubReport](slug:web-report-designer-user-guide-components-subreport) item allows you to bind the child report directly to a filtered subset of the parent's data, making the hierarchy more intuitive and reduces using parameters for building the hierarchical structure. This approach of implementing a master-detail report scenario does not use different data sources in both reports, as demonstrated in the [Creating Master-Detail Reports](slug:web-report-designer-user-guide-creating-master-detail-report) article. 
 
 The main benefits of this approach are:
 
@@ -29,9 +29,9 @@ To design a report that represents a hierarchy:
 
 1. Create a new report (for example, `CategoriesReport.trdp`). You will use it as the main (parent) report to display categories.
 
-1. Create a [JSONDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#json-data-source) item using the nested JSON collection for Categories and Products.
+1. Create a [JSONDataSource](slug:web-report-designer-user-guide-components-data-sources#json-data-source) item using the nested JSON collection for Categories and Products.
 
-1. Use the [Table Wizard]({%slug web-report-designer-user-guide-components-tables%}#using-the-table-wizard) to create a table bound to the JSON source.
+1. Use the [Table Wizard](slug:web-report-designer-user-guide-components-tables#using-the-table-wizard) to create a table bound to the JSON source.
 
     <img style="border: 1px solid gray;" src="images/sub-report-default-table.png" alt="Categories Products Default Table" caption="Categories Products Default Table" /> 
 
@@ -61,5 +61,5 @@ To design a report that represents a hierarchy:
 
 ## See Also
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Data Sources](slug:web-report-designer-user-guide-components-data-sources)

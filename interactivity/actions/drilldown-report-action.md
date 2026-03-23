@@ -47,7 +47,7 @@ A report item can initially display or be hidden when a user views a report. The
 
 ## Adding a drilldown action to a Table, CrossTab or ListBox group using the Report Designer
 
-1. In Design view, click the Table, CrossTab or ListBox to select it. The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
+1. In Design view, click the Table, CrossTab or ListBox to select it. The [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 
 1. Locate the __Display Mode__  combo in the title bar of the Group Explorer and select Extended Mode. This toggles to show the underlying display structure for rows and columns.
 
@@ -84,6 +84,6 @@ A report item can initially display or be hidden when a user views a report. The
 
  * [ToggleVisibilityAction](/api/Telerik.Reporting.ToggleVisibilityAction)
  
- * [Drilldown Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})
+ * [Drilldown Report Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action)
 
- * [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
+ * [Drillthrough Report Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action)

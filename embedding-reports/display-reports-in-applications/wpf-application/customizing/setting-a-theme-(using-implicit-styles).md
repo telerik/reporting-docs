@@ -52,7 +52,7 @@ Currently, to change an existing Report Viewer theme, you can simply copy the or
 
 ## Setting Embedded Implicit Style for the WPF Report Viewer Example
 
-We will apply embedded implicit styles for the Fluent theme in our example project. The embedded implicit styles are upgradable with the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).
+We will apply embedded implicit styles for the Fluent theme in our example project. The embedded implicit styles are upgradable with the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).
 
 - Replace the referenced Telerik UI for WPF assemblies with assemblies from the `Binaries.NoXaml` folder.
 

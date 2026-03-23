@@ -11,7 +11,7 @@ previous_url: /asp-net-report-viewer-outproc-using report-params-to-retrieve-spe
 
 # How to Using Report Parameters to Retrieve Specific data
 
-> This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer - [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+> This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer - [HTML5 Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
 
 The goal is to retrieve a name depending on the selected year from a drop down list: 
 

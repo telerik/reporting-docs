@@ -33,7 +33,7 @@ Based on the used report viewer, the arguments can contain also:
 
 For more information please refer to the related articles about each report viewer:
 
-* [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+* [WinForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
 
 | Event Handler | Event Arguments |
 | ------ | ------ |
@@ -41,7 +41,7 @@ For more information please refer to the related articles about each report view
 | [InteractiveActionEnter](/api/Telerik.ReportViewer.WinForms.ReportViewerBase#Telerik_ReportViewer_WinForms_ReportViewerBase_InteractiveActionEnter)| [InteractiveActionEventArgs](/api/Telerik.ReportViewer.Common.InteractiveActionEventArgs)|
 | [InteractiveActionLeave](/api/Telerik.ReportViewer.WinForms.ReportViewerBase#Telerik_ReportViewer_WinForms_ReportViewerBase_InteractiveActionLeave)| [InteractiveActionEventArgs](/api/Telerik.ReportViewer.Common.InteractiveActionEventArgs)|
 
-* [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+* [WPF Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview)
 
 | Event Handler | Event Arguments |
 | ------ | ------ |
@@ -49,11 +49,11 @@ For more information please refer to the related articles about each report view
 | [InteractiveActionEnter](/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_InteractiveActionEnter)| [InteractiveActionEventArgs](/api/Telerik.ReportViewer.Wpf.InteractiveActionEventArgs)|
 | [InteractiveActionLeave](/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_InteractiveActionLeave)| [InteractiveActionEventArgs](/api/Telerik.ReportViewer.Wpf.InteractiveActionEventArgs)|
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) (applies also to its wrappers for other Frameworks)
+* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) (applies also to its wrappers for other Frameworks)
 
 |  |  |
 | ------ | ------ |
  Event Handler |
-| [InteractiveActionExecuting]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)%})|
-| [InteractiveActionEnter]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)%})|
-| [InteractiveActionLeave]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)%})|
+| [InteractiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args))|
+| [InteractiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args))|
+| [InteractiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args))|

@@ -56,8 +56,8 @@ Telerik Reporting provides the following Linear Gauge report item presets out of
 
 ## Next Steps
 
-* [Getting Started with the Radial Gauge Report Item]({%slug telerikreporting/designing-reports/report-structure/gauge/radial-gauge%})
-* [Getting Started with the Linear Gauge Report Item]({%slug telerikreporting/designing-reports/report-structure/gauge/linear-gauge%})
+* [Getting Started with the Radial Gauge Report Item](slug:telerikreporting/designing-reports/report-structure/gauge/radial-gauge)
+* [Getting Started with the Linear Gauge Report Item](slug:telerikreporting/designing-reports/report-structure/gauge/linear-gauge)
 * [RadialGauge Class API Reference](/api/Telerik.Reporting.RadialGauge)
 * [LinearGauge Class API Reference](/api/Telerik.Reporting.LinearGauge)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

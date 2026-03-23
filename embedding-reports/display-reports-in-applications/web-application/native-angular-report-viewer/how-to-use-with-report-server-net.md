@@ -17,7 +17,7 @@ The user account that will authenticate with the Report Server may be any User, 
 
 ## Prerequisites
 
-- Review the Native Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%}).
+- Review the Native Angular Report Viewer [Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements).
 - Installed and running [Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview).
 - Report Server for .NET's User that will connect from the viewer should have at least one enabled Token.
 - Report Server for .NET should contain at least one report that can be accessed by the User account.
@@ -118,6 +118,6 @@ The user account that will authenticate with the Report Server may be any User, 
 ## See Also
 
 - [Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview)
-- [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
-- [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-- [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})
+- [Native Angular Report Viewer Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options)
+- [Native Angular Report Viewer Commands](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands)
+- [Native Angular Report Viewer Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events)

@@ -17,7 +17,7 @@ The native Blazor Report Viewer provides the capability to send the currently di
 
 By default, the **send mail message** button is hidden. This is because the [SendMailMessage](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_SendMailMessage) (or the respective method for ServiceStack, ASP.NET Core, etc.) should be implemented first so that the e-mail messages can be sent server-side.
 
-Web browsers cannot initiate the sending of e-mail messages containing attachments as a security measure. More information on how to implement the necessary server-side code is available at [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%}).
+Web browsers cannot initiate the sending of e-mail messages containing attachments as a security measure. More information on how to implement the necessary server-side code is available at [Implement Send Mail Message](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message).
 
 Once ready, the send mail message toolbar button can be enabled through the `EnableSendEmail` initialization option.
 
@@ -66,4 +66,4 @@ The settings are populated from a `SendEmailDialogSettings` tag, that sits insid
 
 ## See Also
 
-* [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})
+* [Implement Send Mail Message](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message)

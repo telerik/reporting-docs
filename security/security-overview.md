@@ -67,6 +67,6 @@ We closely monitor the [OWASP Top 10](https://owasp.org/www-project-top-ten/) li
 
 ## Redistributing Telerik Reporting
 
-[Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}) is part of several Telerik bundles and is licensed under the terms under which you've obtained the product. In this article, you can find technical guidelines for protecting the Telerik Reporting binaries when redistributing them with your integrated product.
+[Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!) is part of several Telerik bundles and is licensed under the terms under which you've obtained the product. In this article, you can find technical guidelines for protecting the Telerik Reporting binaries when redistributing them with your integrated product.
 
-For more detailed answers to common security-related questions, please refer to our [Security FAQ page]({%slug security-faq%}).
+For more detailed answers to common security-related questions, please refer to our [Security FAQ page](slug:security-faq).

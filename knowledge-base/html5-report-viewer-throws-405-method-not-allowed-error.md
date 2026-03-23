@@ -27,8 +27,8 @@ Upon navigating to the page with the report viewer, the below error is thrown.
 
 ## Possible Causes
 
-* The [`WebDavModule`](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/webdav/) is used by IIS. The [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) requires `PUT` and `DELETE` verbs. Those verbs might be blocked by the `WebDavModule`.
-* The [`Get Clients Session Timeout Seconds`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds%}) endpoint is failing with a status code of [405(Method Not Allowed)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405) due to a greedy route in the routes configuration.
+* The [`WebDavModule`](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/webdav/) is used by IIS. The [Telerik Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) requires `PUT` and `DELETE` verbs. Those verbs might be blocked by the `WebDavModule`.
+* The [`Get Clients Session Timeout Seconds`](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds) endpoint is failing with a status code of [405(Method Not Allowed)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405) due to a greedy route in the routes configuration.
 
 ## Solutions
 
@@ -48,7 +48,7 @@ To resolve the issue with the`WebDavModule`, it may be removed from the configur
 
 ### Solution 2
 
-To resolve the problem when the [`Get Clients Session Timeout Seconds`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds%}) failing, move the registration of the reporting routes before the default ones, for example:
+To resolve the problem when the [`Get Clients Session Timeout Seconds`](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds) failing, move the registration of the reporting routes before the default ones, for example:
 
 ````CSharp
 Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);

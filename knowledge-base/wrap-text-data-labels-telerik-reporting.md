@@ -17,11 +17,11 @@ ticketid: 1656974
 
 ## Description
 
-When using the [Graph Report Item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) with the [Column chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}) type, sometimes the text in data labels is too long, and it exceeds the column's width. This KB article demonstrates how to wrap text in data labels for a Graph Report Item or how to format long text in data labels to fit within a column in a graph report.
+When using the [Graph Report Item](slug:telerikreporting/designing-reports/report-structure/graph/overview) with the [Column chart](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview) type, sometimes the text in data labels is too long, and it exceeds the column's width. This KB article demonstrates how to wrap text in data labels for a Graph Report Item or how to format long text in data labels to fit within a column in a graph report.
 
 ## Solution
 
-To wrap text in data labels for a Column chart in the Graph Report Item, use the [built-in text functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) to insert a new line character in the `DataPointLabels` text. 
+To wrap text in data labels for a Column chart in the Graph Report Item, use the [built-in text functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions) to insert a new line character in the `DataPointLabels` text. 
 
 1. Select the `BarSeries`.
 1. Set the `DataPointLabel` with the appropriate `Replace` function to insert a new line character where needed. For example:
@@ -38,7 +38,7 @@ To wrap text in data labels for a Column chart in the Graph Report Item, use the
 
   This function replaces spaces with a new line character, effectively wrapping the text.
 
-Additionally, consider extending expressions for more complex formatting needs. For more details, refer to the [Extending Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%}) section in the documentation.
+Additionally, consider extending expressions for more complex formatting needs. For more details, refer to the [Extending Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview) section in the documentation.
 
 An alternative approach is to **rotate** the labels and center the text to fit the data labels within the column's width.
 
@@ -55,7 +55,7 @@ An alternative approach is to **rotate** the labels and center the text to fit t
 
 ## See Also
 
-* [Graph Report Item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) 
-* [Column Chart Type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})
-* [Text Functions in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) 
-* [Extending Expressions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%})
+* [Graph Report Item](slug:telerikreporting/designing-reports/report-structure/graph/overview) 
+* [Column Chart Type](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview)
+* [Text Functions in Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions) 
+* [Extending Expressions Overview](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview)

@@ -81,7 +81,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 				</code></pre>
 				<p>To set the ReportSource to a <a href="/api/Telerik.Reporting.TypeReportSource" target="_blank">type definition</a>:</p>
 				<ol>
-					<li>Make sure that the <a href="{%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}" target="_blank">Reporting REST Service</a> project references the project containing the type definition.</li>
+					<li>Make sure that the <a href="slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview" target="_blank">Reporting REST Service</a> project references the project containing the type definition.</li>
 					<li>Pass the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0" target="_blank">assembly qualified name</a> <i>(format: "<strong>{type}, {assembly}</strong>")</i> of the report's type to the <strong>Report</strong> property of the ReportSourceOptions object.</li>
 				</ol>
 				<pre><code>
@@ -170,8 +170,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 				<ul>
 					<li><strong>ViewMode.Interactive</strong> - enables drill-down interactivity, etc;</li>
 					<li><strong>ViewMode.PrintPreview</strong> - the report is paged according to the page settings;
-						For more information please see [Interactive vs. Print Layout]({%slug
-						telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).
+						For more information please see [Interactive vs. Print Layout](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout).
 						<br />
 						Default value is: <strong>ViewMode.Interactive</strong>
 					</li>
@@ -195,8 +194,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>PrintMode</td>
 			<td>
-				<p>Specifies how the viewer should [print reports]({%slug
-				telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).</p>
+				<p>Specifies how the viewer should [print reports](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports).</p>
 				<p>The available values are:</p>
 				<ul>
 					<li><strong>PrintMode.AutoSelect</strong> - specifies that the viewer should automatically decide
@@ -263,7 +261,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 			<td>
 				<p><i>List&lt;IReportViewerTool&gt;, optional;</i></p>
 				<p>A collection of tools that will be displayed in the toolbar.</p>
-				<p>By default populates <strong>all available tools</strong> as listed in the [Customize the Toolbar of the Blazor Native Report Viewer]({%slug native-blazor-report-viewer/toolbar-customization%}) article.</p>
+				<p>By default populates <strong>all available tools</strong> as listed in the [Customize the Toolbar of the Blazor Native Report Viewer](slug:native-blazor-report-viewer/toolbar-customization) article.</p>
 			</td>
 		</tr>
 		<tr>
@@ -271,7 +269,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 			<td>
 				<p><i>string, optional;</i></p>
 				<p>If provided, a *Bearer* token will be set in the *Authorization* header for requests to the REST service.</p>
-				<p>The token is not sent only when requesting [document resources]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource%}). The reason is that the resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
+				<p>The token is not sent only when requesting [document resources](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource). The reason is that the resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
 			</td>
 		</tr>
 	</table>

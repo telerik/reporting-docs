@@ -42,4 +42,4 @@ To solve this issue, use the following approaches:
 
 * Verify the Reporting REST service has an unique [`HostAppId`](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) in its configuration.
 
-* Make sure that the application has read-and-write access to the folder [specified by the `FileStorage` instance]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}) in the Reporting REST service configuration.         
+* Make sure that the application has read-and-write access to the folder [specified by the `FileStorage` instance](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview) in the Reporting REST service configuration.         

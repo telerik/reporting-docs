@@ -186,4 +186,4 @@ End Class
 
 ## See Also
 
-[Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
+[Embedded Report Engine](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)

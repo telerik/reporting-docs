@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-Out of the box, Telerik Reporting offers the [FileDefinitionStorage](/api/telerik.webreportdesigner.services.filedefinitionstorage) class which can be used to store the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) report definitions in a local directory.
+Out of the box, Telerik Reporting offers the [FileDefinitionStorage](/api/telerik.webreportdesigner.services.filedefinitionstorage) class which can be used to store the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) report definitions in a local directory.
 
 In certain cases, one may want to instead store the report definitions in a custom place, for example, a database. For this reason, we have exposed the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface. By implementing this interface, one will be able to store the report definitions in any place, be it SQL or NoSQL database, [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs/), etc.
 
@@ -510,7 +510,7 @@ In this article, we will demonstrate how the report definitions can be stored in
    }
    ```
 
-1. The custom `ReportSourceResolver` defined above will be sufficient for most scenario, however, when there are [`SubReports`]({%slug telerikreporting/designing-reports/report-structure/subreport%}) inserted in the report or when the [`NavigateToReport`]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) action is triggered, the engine will try to resolve those reports using the default `ReportDocumentResolver` which will try to resolve them by URI. That won't work in our case because the reports are stored in the database, thus, we need a custom implementation that may look as follows:
+1. The custom `ReportSourceResolver` defined above will be sufficient for most scenario, however, when there are [`SubReports`](slug:telerikreporting/designing-reports/report-structure/subreport) inserted in the report or when the [`NavigateToReport`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) action is triggered, the engine will try to resolve those reports using the default `ReportDocumentResolver` which will try to resolve them by URI. That won't work in our case because the reports are stored in the database, thus, we need a custom implementation that may look as follows:
 
    ```CSharp
    using Microsoft.EntityFrameworkCore;
@@ -662,5 +662,5 @@ The operation can be triggered in the initialization of the application, for exa
 
 ## See Also
 
-- [Using Custom Report Definition Storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%})
-- [Implementing Custom ReportSource and ReportDocument Resolvers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})
+- [Using Custom Report Definition Storage](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage)
+- [Implementing Custom ReportSource and ReportDocument Resolvers](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver)

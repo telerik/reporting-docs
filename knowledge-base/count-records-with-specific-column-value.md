@@ -25,7 +25,7 @@ res_type: kb
 I would like to add a total count depending on the value that I have in the "Category" field. I need to know how many Category = "A" and how many Category = "B" are there in the data.
 
 ## Solution
-You may utilize the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}), and pass it as an argument either 1 or 0, depending on the value of the field, e.g. 'Category'. 
+You may utilize the `Sum` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions), and pass it as an argument either 1 or 0, depending on the value of the field, e.g. 'Category'. 
 
 Here is a sample Expression that would return the count of the rows with Category = "A": `= Sum(IIF(Fields.Category = "A", 1, 0))`.
 

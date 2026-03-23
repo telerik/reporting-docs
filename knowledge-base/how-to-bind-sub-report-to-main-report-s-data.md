@@ -27,7 +27,7 @@ This article provides the required steps for binding the SubReport to the Main R
 
 ## Solution
 
-- Open the report that will be used as a subreport in the designer and use the following [binding to the report's DataSource property]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}): 
+- Open the report that will be used as a subreport in the designer and use the following [binding to the report's DataSource property](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings): 
 
 ````
 Property path: DataSource
@@ -45,8 +45,8 @@ Expression: =ReportItem.Parent.Parent.DataObject
 
 ## Notes
 
-In case you need to display data in a tabular format, another approach for organizing the main report's layout can be found in [How to Databind to Collection Properties]({%slug how-to-databind-to-collection-properties%}).
+In case you need to display data in a tabular format, another approach for organizing the main report's layout can be found in [How to Databind to Collection Properties](slug:how-to-databind-to-collection-properties).
 
 ## See Also
 
-[How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}). 
+[How to use the ReportItem.DataObject property in expressions](slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions). 

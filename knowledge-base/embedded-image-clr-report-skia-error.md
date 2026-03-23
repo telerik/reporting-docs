@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-I have a CLR report definition created with the [Visual Studio Report Designer for the .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+I have a CLR report definition created with the [Visual Studio Report Designer for the .NET Framework](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 
 I received an error message `You can assign System.String, IImage, System.Drawing.Image (for GDI rendering), or SKBitmap (for Skia rendering) instances only` when using Telerik Reporting with the Skia graphics engine.
 

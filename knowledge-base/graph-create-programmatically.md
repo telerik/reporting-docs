@@ -27,7 +27,7 @@ How can I programmatically create a chart in the Graph?
 
 ## Solution 
 
-The suggested approach demonstrates how to programmatically create a minimal chart definition with the Graph item. The example is an alternative to using the Report Designer for creating a chart. If applicable for your scenario, create your chart in the designer either with the Graph Wizard or [manually]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-step-by-step%}). 
+The suggested approach demonstrates how to programmatically create a minimal chart definition with the Graph item. The example is an alternative to using the Report Designer for creating a chart. If applicable for your scenario, create your chart in the designer either with the Graph Wizard or [manually](slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-step-by-step). 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\GraphSnippets.cs region=AddNewGraphColumnChartType}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\GraphSnippets.vb region=AddNewGraphColumnChartType}}

@@ -10,9 +10,9 @@ res_type: kb
 
 ## Description
 
-On previewing the report in a report viewer, an Oracle error **'ORA-01008: Not all variables are bound'** is thrown. Sometimes, the report will display without errors in the [Standalone Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) but the error gets thrown when displaying that same report in a report viewer.
+On previewing the report in a report viewer, an Oracle error **'ORA-01008: Not all variables are bound'** is thrown. Sometimes, the report will display without errors in the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) but the error gets thrown when displaying that same report in a report viewer.
 
-The exception is thrown when a parameter with the same name is used more than once in the query used by the [SqlDataSource component]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) and the data provider being used is the **Oracle.ManagedDataAccess(or Oracle.ManagedDataAccess.Core)** provider.
+The exception is thrown when a parameter with the same name is used more than once in the query used by the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) and the data provider being used is the **Oracle.ManagedDataAccess(or Oracle.ManagedDataAccess.Core)** provider.
 
 However, the error may not be thrown in all such cases, so far it has been reported under specific circumstances such as having _nested select clauses_ used in the query.
 
@@ -46,4 +46,4 @@ There are three approaches that can be taken in this case:
 
 ## See Also
 
-- [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
+- [Using Parameters with the SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)

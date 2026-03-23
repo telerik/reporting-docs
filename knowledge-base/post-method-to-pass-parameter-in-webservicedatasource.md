@@ -31,13 +31,13 @@ The attached project demonstrates using a REST Web Service with `Post` Method fo
 
 ## Solution
 
-Configuration of the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) in the report:
+Configuration of the [WebServiceDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview) in the report:
 
-1. There are two [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})- `NameParameter` and `SurnameParameter`.
+1. There are two [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)- `NameParameter` and `SurnameParameter`.
 
    The `MultiValue` property of the second one is set to `True`.
 
-   The `AvailableValues` come from a [CSV DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}). Note that the single values include quotes so that the corresponding JSON values can be properly configured.
+   The `AvailableValues` come from a [CSV DataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview). Note that the single values include quotes so that the corresponding JSON values can be properly configured.
 
 1. Set the `Value` property of the parameters with the default values.
 1. Add the WebServiceDataSource and set the `Method` to `Post`.

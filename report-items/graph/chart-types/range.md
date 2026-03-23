@@ -60,7 +60,7 @@ To create the Range chart by using the Range Chart Wizard:
 
 	1. Leave **Series** empty.
 	1. Drag the __TerritoryName__ field to **Categories**.
-	1. Drag the __TotalDue__ field to **Value0**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __TotalDue__ field to **Value0**. The wizard will automatically apply the `Sum` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions).
 	1. Drag the __TotalDue__ field also to **Value1**. Later, you will edit both **Value** fields manually to display the required information.
 
 	![Arrange the Range Chart Series, Categories, Value0 and Value1 from the Wizard in the Standalone Report Designer](images/RangeChartWizardArrangeFields.png)
@@ -70,7 +70,7 @@ To create the Range chart by using the Range Chart Wizard:
 	* `Y`:	`=Sum(IIF(Fields.OrderDate.Year=2002, Fields.TotalDue, 0)) / 1000.0`
 	* `Y0`:	`=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0)) / 1000.0`
 
-	The above [expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) set the range value of the Range Area Chart to be the difference between years 2002 and 2003.
+	The above [expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) set the range value of the Range Area Chart to be the difference between years 2002 and 2003.
 
 	The `TotalDue` value is large, so you have to also change the areaSeries to display the value in thousands.
 
@@ -86,7 +86,7 @@ This section will show how to manually create a Range Area chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({%slug graph_item_get_started%}).
+To add a new Graph report item to the report, refer to the article [getting started with the Graph report item](slug:graph_item_get_started).
 
 ### 2. Set the SeriesGroups Hierarchy
 
@@ -126,7 +126,7 @@ In this step, you will configure the series of the chart:
 
 ### 6. Style the Appearance
 
-To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}).
+To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
 
 ## Design Considerations
 

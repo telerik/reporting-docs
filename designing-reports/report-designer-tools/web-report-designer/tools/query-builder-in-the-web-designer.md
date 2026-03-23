@@ -17,7 +17,7 @@ The following figure shows the graphical query builder.
 
 ![The Graphical SQL Query Builder Form of the Web Report Designer.](images/SqlQueryBuilderForm.png)
 
-Use the graphical query builder to explore the database tables and views, interactively build SQL SELECT statements, and view the result. The select statement specifies the database tables, views and columns from which to retrieve data for an [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). If you choose multiple related tables, you need to specify the relationship between each set of two tables.
+Use the graphical query builder to explore the database tables and views, interactively build SQL SELECT statements, and view the result. The select statement specifies the database tables, views and columns from which to retrieve data for an [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview). If you choose multiple related tables, you need to specify the relationship between each set of two tables.
 
 ## Schema Restrictions
 
@@ -114,12 +114,12 @@ The following options are available:
 
 ## Query Builder State
 
-After clicking _Save_, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) Select Statement will be replaced with the currently generated SQL query.
+After clicking _Save_, the [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) Select Statement will be replaced with the currently generated SQL query.
 
 The Query Builder keeps the current setup state. However, if you modify the SQL query outside it and then use the Query Builder, it will override the manual SQL query modifications.
 
-> The functionalities of the __Web Report Designer Query Builder__ and [__Standalone Report Designer Query Builder__]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}) are not identical. Thus, if a report that has been edited by the Query Builder of the Web Report Designer is opened in the Query Builder of the Standalone Report Designer, an error message about an inconsistent query state may be shown.
+> The functionalities of the __Web Report Designer Query Builder__ and [__Standalone Report Designer Query Builder__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer) are not identical. Thus, if a report that has been edited by the Query Builder of the Web Report Designer is opened in the Query Builder of the Standalone Report Designer, an error message about an inconsistent query state may be shown.
 
 ## See Also
 
-* [Web Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)

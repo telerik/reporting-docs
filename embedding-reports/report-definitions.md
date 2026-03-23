@@ -16,7 +16,7 @@ The article elaborates on how to specify which report definition to be used by t
 
 ## Report Source
 
-To specify and pass a report definition to the report engine it is required to use a wrapper in the form of a report source object. This wrapper contains information about how to fetch the report definition and what parameter values to use when the report is processed. It is important to know the different report source types and when/how to use them. Please refer to [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) for detailed information.
+To specify and pass a report definition to the report engine it is required to use a wrapper in the form of a report source object. This wrapper contains information about how to fetch the report definition and what parameter values to use when the report is processed. It is important to know the different report source types and when/how to use them. Please refer to [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview) for detailed information.
 
 ## Reference Reports in Report Viewers
 
@@ -26,7 +26,7 @@ When working with an embedded report engine, the report source property accepts 
 
 When working with a remote report engine via a service, the [ReportSource](/api/Telerik.Reporting.ReportSource) type might not be available, especially in client-server scenarios where the report engine is hosted in a different application. In such scenarios an intermediate report source has to be described (JSON object, custom C# type, etc). The service which is responsible for accessing the report engine will try to translate this intermediate report source to an actual [ReportSource](/api/Telerik.Reporting.ReportSource) object.
 
-For more details and examples on the different report sources, please refer to [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}).
+For more details and examples on the different report sources, please refer to [How to Set ReportSource for Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers).
 
 ## Reference Reports in Report Processor
 
@@ -42,4 +42,4 @@ The examples with the UriReportSource (section -2-) that specifies the path to a
 
 ## See Also
 
-* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+* [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview)

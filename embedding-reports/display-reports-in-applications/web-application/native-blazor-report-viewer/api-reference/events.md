@@ -43,7 +43,7 @@ This event has one argument of type `RenderingBeginEventArgs` which represents t
 ## OnRenderingEnd
 
 Occurs after the rendering of the report finishes. _The event is triggered only on preview. The export operation has a dedicated event._
-This event has one argument of type `RenderingEndEventArgs` which represents the returned [DocumentInfo entity]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo%}) at the end of the report rendering.
+This event has one argument of type `RenderingEndEventArgs` which represents the returned [DocumentInfo entity](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo) at the end of the report rendering.
 
 Sample usage:
 

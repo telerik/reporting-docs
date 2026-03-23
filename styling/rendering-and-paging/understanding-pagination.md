@@ -54,7 +54,7 @@ Margins are specified by changing the `Top`, `Bottom`, `Left` and `Right` proper
 
 ### Multi-columns (Newsletter-Style Columns)
 
-When a report is divided into multiple columns, physical pages are divided vertically into columns, each of which is considered a logical page. Suppose you have two columns on a physical page - the content of your report fills the first column and then the second column. If the report does not fit entirely within the first two columns, the report fills the first column and then the second column on the next page. Columns continue to be filled, from left to right, top to bottom until all report items are rendered. For more information, see [How to Create a Multi-Column Report]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%}).
+When a report is divided into multiple columns, physical pages are divided vertically into columns, each of which is considered a logical page. Suppose you have two columns on a physical page - the content of your report fills the first column and then the second column. If the report does not fit entirely within the first two columns, the report fills the first column and then the second column on the next page. Columns continue to be filled, from left to right, top to bottom until all report items are rendered. For more information, see [How to Create a Multi-Column Report](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report).
 
 ### Print on continuous (roll) paper
 
@@ -93,7 +93,7 @@ By default, Table item is kept together. To force nested table to break set `Kee
 >_Example_: Report group has `GroupKeepTogether = FirstDetail`, this means that the summary height of the group header, height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the KeepTogether algorithm to work and move the whole Group on a new page.
 
 >One may change the Page sections' `Height` and `Visible` properties for particular pages applying 
-[Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}).
+[Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
 This results in taller or shorter available space for the rest of the report content on the affected pages. 
 The paging logic respects the changed space when it fits content on the current page.
 However, it cannot predict if a change in the available space will occur on the next page.
@@ -121,5 +121,5 @@ Report sections automatically grow and can shrink (controlled by property) to ac
 
 ## See Also
 
-* [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
-* [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})
+* [Rendering and Paging](slug:telerikreporting/designing-reports/rendering-and-paging/overview)
+* [Understanding Rendering Behaviors](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors)

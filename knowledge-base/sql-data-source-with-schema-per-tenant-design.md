@@ -35,17 +35,17 @@ The database feeding the report with data may use a schema-per-tenant design, i.
 
 ## Solution
 
-1. Declare the SqlDataSource that should use 'schema-per-tenant'. Set its `ConnectionString`. Note that this can be done [dynamically through a report parameter]({%slug how-to-pass-connectionstring-to-report-dynamically-through-report-parameter%}). Assign the DataSource to the corresponding [Data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}).
+1. Declare the SqlDataSource that should use 'schema-per-tenant'. Set its `ConnectionString`. Note that this can be done [dynamically through a report parameter](slug:how-to-pass-connectionstring-to-report-dynamically-through-report-parameter). Assign the DataSource to the corresponding [Data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview).
 
 1. Declare a Report Parameter (i.e. 'Schema') to provide the name of the user schema.
 
-1. Use the [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) property of the Data item to provide the `SelectCommand` property:
+1. Use the [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) property of the Data item to provide the `SelectCommand` property:
 
 | Property path | Expression |
 | ------ | ------ |
 | `DataSource.SelectCommand` | `= Format("SELECT {0}.[Production].[Product].[Name],{0}.[Production].[Product].[ProductNumber],{0}.[Production].[Product].[ListPrice],{0}.[Production].[Product].[StandardCost] FROM {0}.[Production].[Product]", Parameters.Schema.Value)` |
 
-The `DataSource.SelectCommand` property path is not listed in the dropdown and must be typed manually. The sample code uses the _Format_ [Text function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) to integrate the schema name in the query string.
+The `DataSource.SelectCommand` property path is not listed in the dropdown and must be typed manually. The sample code uses the _Format_ [Text function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions) to integrate the schema name in the query string.
 
 You may provide also the entire _SelectCommand_ as a value taken from a Report parameter:
 
@@ -60,4 +60,4 @@ You may provide also the entire _SelectCommand_ as a value taken from a Report p
 
 ## See Also
 
-[Change Connection String dynamically through a report parameter]({%slug how-to-pass-connectionstring-to-report-dynamically-through-report-parameter%})
+[Change Connection String dynamically through a report parameter](slug:how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)

@@ -39,5 +39,5 @@ To view the app tour again, type `Start onboarding` in the search box.
 
 ## See Also
 
-* [Create a Simple Report]({%slug web-report-designer-user-guide-getting-started%})
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Create a Simple Report](slug:web-report-designer-user-guide-getting-started)
+* [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)

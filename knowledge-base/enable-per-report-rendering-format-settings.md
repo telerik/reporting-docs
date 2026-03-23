@@ -38,7 +38,7 @@ Besides setting the export parameters for particular extension, it allows hiding
 
 The property in question can be set up from the report designer tools as well as through code.
 
-> For [Report Books]({%slug telerikreporting/designing-reports/report-book/overview%}) only the RuntimeSettings of the first report will be respected.
+> For [Report Books](slug:telerikreporting/designing-reports/report-book/overview) only the RuntimeSettings of the first report will be respected.
 
 ## Solution
 
@@ -68,5 +68,5 @@ The respective method takes a [HashTable](https://learn.microsoft.com/en-us/dotn
 
 ## See Also
 
-* [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
-* [How to limit export options in the report viewer]({%slug limit-export-options-in-report-viewer%})
+* [extensions Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element)
+* [How to limit export options in the report viewer](slug:limit-export-options-in-report-viewer)

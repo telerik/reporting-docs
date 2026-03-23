@@ -86,11 +86,11 @@ Instead of a hard-coded string, the property can be set in a *method*/*contructo
 
 * [TextResources](/api/Telerik.ReportViewer.Wpf.TextResources)
 
-* [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+* [WPF Application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview)
 
-* [How to Add report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+* [How to Add report viewer to a WPF.NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project)
 
-* [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
+* [Setting a Theme (Using Implicit Styles)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles))
 
 * [Hierarchical Organization of Resources for Localization](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)))
 

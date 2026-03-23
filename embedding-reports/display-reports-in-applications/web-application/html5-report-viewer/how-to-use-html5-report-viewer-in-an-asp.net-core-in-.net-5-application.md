@@ -22,20 +22,20 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 - A service that runs in a Telerik Report Server instance.
 - A service that is hosted locally in the same application.
 
-In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in .NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}).
+In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in .NET](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5).
 
 ## Integrating the HTML5 Report Viewer component using the VS Item Templates
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) can be integrated into [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) applications with one the following two item templates:
+The [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) can be integrated into [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) applications with one the following two item templates:
 
 - `Telerik Razor Report Viewer Page {{site.suiteversion}}`
 - `Telerik HTML5 Report Viewer Page {{site.suiteversion}}`
 
 The first template should be used when the project uses [Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/), while the second can be used in all other scenarios. The item templates allow you to quickly and easily add the HTML5 Report Viewer to the application. The wizards are the same for both item templates.
 
-If you wish to connect the Report Viewer to a REST service, you can follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
+If you wish to connect the Report Viewer to a REST service, you can follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service) documentation article.
 
-If you wish to connect the Report Viewer to a Report Server instance, refer to the article section [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates).
+If you wish to connect the Report Viewer to a Report Server instance, refer to the article section [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates).
 
 ## Manual Configuration of the HTML5 Report Viewer
 
@@ -48,7 +48,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1.  Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization.
 
-    For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
+    For a detailed explanation, check the HTML5 Report Viewer [Manual Setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
 
     By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
 
@@ -108,5 +108,5 @@ A full example can be found in the installation folder of Telerik Reporting, by 
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
 - [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)

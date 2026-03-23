@@ -38,4 +38,4 @@ The WinForms ReportViewer requires you to call its `RefreshReport` method after 
 
 ## Solution  
 
-To solve this issue, refer to [Assign report to the viewer programatically]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%}) article.
+To solve this issue, refer to [Assign report to the viewer programatically](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms-net-framework-project) article.

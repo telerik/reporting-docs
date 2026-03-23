@@ -26,7 +26,7 @@ res_type: kb
 
 The following article applies to Telerik Reporting versions before R1 2019. It elaborates on how to host the Telerik Reporting REST Service and add an HTML5 Report Viewer in an ASP.NET Core web application.
 
-As of [Telerik Reporting R1 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), we support report rendering runtime targeting .NET Core 2.1+ applications. For more information on how to use reports in a .NET Core application for Windows and Linux platforms, please refer to [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) help article.
+As of [Telerik Reporting R1 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), we support report rendering runtime targeting .NET Core 2.1+ applications. For more information on how to use reports in a .NET Core application for Windows and Linux platforms, please refer to [.NET Core Support](slug:telerikreporting/using-reports-in-applications/dot-net-core-support) help article.
 
 ## Description
 
@@ -49,6 +49,6 @@ When the service and the viewer are hosted in different domains it will be requi
 
 ## See Also
 
-* [HTML5 Report Viewer in ASP.NET Core 2]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
-* [Hosting the Telerik Reporting REST Service in an ASP.NET Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})
-* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET Core 2.1 and 2.2]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2%})
+* [HTML5 Report Viewer in ASP.NET Core 2](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application)
+* [Hosting the Telerik Reporting REST Service in an ASP.NET Application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application)
+* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET Core 2.1 and 2.2](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2)

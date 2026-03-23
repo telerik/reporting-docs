@@ -36,6 +36,6 @@ If issues persist, check the `kendo.version` in the browser console to ensure th
 
 ## See Also
 
-* [Web Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 * [Kendo UI for jQuery Release History](https://www.telerik.com/support/whats-new/kendo-ui/release-history/kendo-ui-for-jquery-2025-1-227)
 * [Kendo UI for jQuery Theme Compatibility](https://www.telerik.com/kendo-jquery-ui/documentation/styles-and-layout/sass-themes/compatibility)

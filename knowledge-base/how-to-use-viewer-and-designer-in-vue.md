@@ -25,7 +25,7 @@ previous_url: /knowledge-base/how-to-use-html5-viewer-in-vue-js
 
 ## Description
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) are built upon HTML5, CSS, and JavaScript. This allows using them in virtually any JavaScript framework including [Vue.js](https://vuejs.org/).
+The [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) are built upon HTML5, CSS, and JavaScript. This allows using them in virtually any JavaScript framework including [Vue.js](https://vuejs.org/).
 
 The solution we are about to examine is a very basic approach to create a new Vue application, include the viewer and designer dependencies, and display them in separate views.
 
@@ -62,9 +62,9 @@ The following guide assumes previous knowledge of Vue:
 
    The new component contains a `div` element to hold the report viewer object and applies CSS to this element.
 
-   The component calls the [`telerik_ReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) method to create the report viewer with the specified configuration options.
+   The component calls the [`telerik_ReportViewer`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) method to create the report viewer with the specified configuration options.
 
-   It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}):
+   It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview):
 
    ```HTML
    <template>
@@ -114,9 +114,9 @@ The following guide assumes previous knowledge of Vue:
 
    The new component contains a `div` element to hold the report designer object and applies CSS to this element.
 
-   The component calls the [`telerik_WebReportDesigner`]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization%}) method to create the report viewer with the specified configuration options.
+   The component calls the [`telerik_WebReportDesigner`](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization) method to create the report viewer with the specified configuration options.
 
-   It is important that the `serviceUrl` option points to the URL of a working [Report Designer REST Service]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#setting-up-the-report-designer-rest-service).
+   It is important that the `serviceUrl` option points to the URL of a working [Report Designer REST Service](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications#setting-up-the-report-designer-rest-service).
 
    ```HTML
    <template>
@@ -168,8 +168,8 @@ Download the final Vue.js application from [Sample Vite + Vue3 Application](http
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-- [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %})
+- [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+- [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+- [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview)
 - [Telerik Reporting online demos](https://demos.telerik.com/reporting)
 - [Vue.js](https://vuejs.org/)

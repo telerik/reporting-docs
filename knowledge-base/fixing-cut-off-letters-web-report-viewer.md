@@ -39,7 +39,7 @@ I noticed that some letters are cut off when viewing reports in the Web Report V
 
 ## Solution
 
-To resolve the issue, adjust the size and properties of the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) controls in your report:
+To resolve the issue, adjust the size and properties of the [TextBox](slug:telerikreporting/designing-reports/report-structure/textbox) controls in your report:
 
 1. Switch the measurement units for your report to pixels (`px`). Using pixels minimizes inaccuracies that can occur when switching between units at runtime.
 1. Increase the size of each `TextBox` element to ensure adequate space for text rendering.
@@ -47,5 +47,5 @@ To resolve the issue, adjust the size and properties of the [TextBox]({%slug tel
    
 ## See Also
 
-* [TextBox Documentation]({%slug telerikreporting/designing-reports/report-structure/textbox%})
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [TextBox Documentation](slug:telerikreporting/designing-reports/report-structure/textbox)
+* [HTML5 Report Viewer Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

@@ -22,7 +22,7 @@ res_type: kb
 
 Sometimes it is sufficient to generate and download reports in certain formats without displaying them in a report viewer.
 
-One way to achieve this is by creating a custom class that internally uses the [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient) to perform the necessary requests to the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to get the desired reports rendered on the server.
+One way to achieve this is by creating a custom class that internally uses the [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient) to perform the necessary requests to the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in order to get the desired reports rendered on the server.
 
 ## Solutions
 
@@ -499,6 +499,6 @@ One way to achieve this is by creating a custom class that internally uses the [
 
 ## See Also
 
-- [Reporting REST Service API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
+- [Reporting REST Service API](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview)
 - [HttpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient)
 - [HttpContent does not contain a definition for "ReadAsAsync"](https://stackoverflow.com/questions/58956527/migrating-net-core-2-to-net-core-3-httpcontent-does-not-contain-a-definition)

@@ -67,5 +67,5 @@ Use the followig CSS to move the **Preview** button to the top of the parameters
 
 ## See Also
 
-* [Localization of the HTML5 Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%})
-* [Move Preview Button at the Top of Parameters Area]({%slug how-to-move-preview-button-at-the-top-of-parameters-area%})
+* [Localization of the HTML5 Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization)
+* [Move Preview Button at the Top of Parameters Area](slug:how-to-move-preview-button-at-the-top-of-parameters-area)

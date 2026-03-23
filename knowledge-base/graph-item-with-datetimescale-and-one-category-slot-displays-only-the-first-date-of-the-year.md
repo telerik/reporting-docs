@@ -28,4 +28,4 @@ The [DateTime](/reporting/api/telerik.reporting.datetimescale) scale is designed
 
 ## Solution 
 
-Set the `Minimum` and `Maximum` of the scale dynamically using [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) and the approach from the KB article [Use Bindings to Control the Coordinate System Properties in the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties%}).
+Set the `Minimum` and `Maximum` of the scale dynamically using [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) and the approach from the KB article [Use Bindings to Control the Coordinate System Properties in the Graph](slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties).

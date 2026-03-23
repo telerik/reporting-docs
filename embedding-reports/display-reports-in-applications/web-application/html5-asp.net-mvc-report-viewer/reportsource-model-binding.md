@@ -12,13 +12,13 @@ previous_url: /mvc-report-viewer-reportsource-model-binding
 
 # ReportSource Model Binding Overview
 
-The HTML5 Report Viewer comes with an MVC wrapper that does the JavaScript configuration of the report viewer, where you can type the initial settings of the viewer in `C#` or `VB.NET`. The settings include `Id`, `ServiceUrl`, `templateUrl`, client-side `ReportSource`, and more - [HTML5 Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
+The HTML5 Report Viewer comes with an MVC wrapper that does the JavaScript configuration of the report viewer, where you can type the initial settings of the viewer in `C#` or `VB.NET`. The settings include `Id`, `ServiceUrl`, `templateUrl`, client-side `ReportSource`, and more - [HTML5 Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
 
-> The MVC project appears as a client for the Reporting REST Service serving the HTML5 Viewer, even if the service is in the same project. The HTML5 Report Viewer and Reporting REST Service operates in a client-server model that is not related to the MVC architecture of the project. Modifications in reports and run-time data-bindings can be performed only by the Reporting REST Service, on the server where the Reporting REST Service is running. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
+> The MVC project appears as a client for the Reporting REST Service serving the HTML5 Viewer, even if the service is in the same project. The HTML5 Report Viewer and Reporting REST Service operates in a client-server model that is not related to the MVC architecture of the project. Modifications in reports and run-time data-bindings can be performed only by the Reporting REST Service, on the server where the Reporting REST Service is running. For more details, check [REST Service Report Source Resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview).
 
 ## Getting started
 
-In case all you need is a report viewer that is used to display various reports, you can have a simple model to create a strongly typed view - you need to use a [client-side report source]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}), like this ([`TypeReportSource`](/api/telerik.reporting.typereportsource) or [`UriReportSource`](/api/telerik.reporting.urireportsource)):
+In case all you need is a report viewer that is used to display various reports, you can have a simple model to create a strongly typed view - you need to use a [client-side report source](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers), like this ([`TypeReportSource`](/api/telerik.reporting.typereportsource) or [`UriReportSource`](/api/telerik.reporting.urireportsource)):
 
 ````C#
 @model Telerik.Reporting.UriReportSource
@@ -72,7 +72,7 @@ The view can also be strongly typed:
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedCustomModelBinding.vbhtml region=Example}}
 
 
-Finally, on the server side, your [custom IReportSourceResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) can implement the custom logic that will take into consideration the ID and create a report source as per your needs:
+Finally, on the server side, your [custom IReportSourceResolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver) can implement the custom logic that will take into consideration the ID and create a report source as per your needs:
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
 {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}

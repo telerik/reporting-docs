@@ -52,7 +52,7 @@ The **GraphQL Data Source Wizard** allows you to create new or edit existing **G
 
    !["Configure GraphQL Query" window of the GraphQLDataSource Wizard. Includes a pre-configured query that utilizes inline parameters.](images/DataSources/graphql/configure-graphql-query.png)
 
-1. **Configure request parameters**: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({%slug graphqldatasource-parameters%}).
+1. **Configure request parameters**: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource](slug:graphqldatasource-parameters).
 
    !["Configure request parameters" window of the GraphQLDataSource Wizard. Includes 5 pre-configured parameters: a header parameter for the HTTP header "Authorization" and four inline parameters, named "data", "status", "name", and "endpoint".](images/DataSources/graphql/configure-request-parameters.png)
 
@@ -87,10 +87,10 @@ The **GraphQL Data Source Wizard** allows you to create new or edit existing **G
 
    | Setting       | Description                                                                                                                                                                                                                            |
    | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string, which will be used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}). |
+   | Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string, which will be used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data](slug:graphqldatasource-filter-json-data). |
 
 ## See Also
 
-- [GraphQLDataSource Component Overview]({%slug graphqldatasource%})
-- [Using JSONPath to Filter JSON data]({%slug graphqldatasource-filter-json-data%})
-- [Using Parameters with GraphQLDataSource]({%slug graphqldatasource-parameters%})
+- [GraphQLDataSource Component Overview](slug:graphqldatasource)
+- [Using JSONPath to Filter JSON data](slug:graphqldatasource-filter-json-data)
+- [Using Parameters with GraphQLDataSource](slug:graphqldatasource-parameters)

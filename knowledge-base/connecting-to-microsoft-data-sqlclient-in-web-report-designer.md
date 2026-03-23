@@ -26,18 +26,18 @@ res_type: kb
 
 ## Description
 
-> Visit the updated [Integrating the Microsoft SQL Client Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-microsfost-data-sqlclient-data-provider%}) article for a how-to on connecting to MS SQL Databases.
+> Visit the updated [Integrating the Microsoft SQL Client Data Provider](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-microsfost-data-sqlclient-data-provider) article for a how-to on connecting to MS SQL Databases.
 
 The Telerik Reporting engine is extensible and it provides options to register virtually any DbProvider to be used in your application.
 For .NET Framework this is done in the application configuration file,
 as explained in this article: 
-[Registering SqlDataSource data providers without installing driver]({%slug how-to-register-sqldatasource-data-providers-without-driver-installation%}).
+[Registering SqlDataSource data providers without installing driver](slug:how-to-register-sqldatasource-data-providers-without-driver-installation).
 
 ## Solution
 For .NET Core applications, the approach is a bit different. 
 Our assemblies are targeting .NET Standard 2.0 where DbProviderFactories class does not exist. 
 Internally we have our own implementation of that class and this article explains how to register a new DbProvider in one line:
-[How to register a DbProviderFactory in a .NET Core project]({%slug how-to-register-db-provider-factory-in-net-core-project%}).
+[How to register a DbProviderFactory in a .NET Core project](slug:how-to-register-db-provider-factory-in-net-core-project).
 
 However, the application configuration file needs to be modified too. The connection string should contain information which provider to use. 
 If no provider is mentioned, the default one: **System.Data.SqlClient** will be used. 

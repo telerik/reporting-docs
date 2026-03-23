@@ -46,7 +46,7 @@ You can create the Shape at runtime and add it to a report item container (Secti
 ## Next Steps 
 
 * [(Demo) Crypto Dashboard Report with a Shape](https://demos.telerik.com/reporting/crypto-dashboard)
-* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+* [Using Styles to Customize Reports](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
 * [(API) Shape](/api/Telerik.Reporting.Shape)
 * [(API) ShapeType](/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)
 * [(API) Stretch](/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)

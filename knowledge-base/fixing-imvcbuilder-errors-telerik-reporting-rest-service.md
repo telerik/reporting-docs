@@ -72,5 +72,5 @@ builder.Services.AddMvc().AddNewtonsoftJson().AddTelerikReporting("TelerikReport
 
 ## See Also
 
-- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%})
+- [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
 - [IMvcBuilder Interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder?view=aspnetcore-9.0)

@@ -26,9 +26,9 @@ res_type: kb
 
 ## Description
 
-As of the **R1 2017** release, adding reports to the [ReportBook.Reports](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_Reports) collection is **obsolete** - [API Breaking Changes]({%slug telerikreporting/upgrade/2017/r1-2017%}#api-breaking-changes).
+As of the **R1 2017** release, adding reports to the [ReportBook.Reports](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_Reports) collection is **obsolete** - [API Breaking Changes](slug:telerikreporting/upgrade/2017/r1-2017#api-breaking-changes).
 
-To allow integration with Standalone Designer, [ReportBook]({%slug telerikreporting/designing-reports/report-book/overview%}) was updated to use [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) objects for adding the reports.
+To allow integration with Standalone Designer, [ReportBook](slug:telerikreporting/designing-reports/report-book/overview) was updated to use [ReportSource](slug:telerikreporting/designing-reports/report-sources/overview) objects for adding the reports.
 
 An updated approach includes adding the necessary `ReportSources` to the [`ReportBook.ReportSources`](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_ReportSources) collection.
 
@@ -64,5 +64,5 @@ reportBook.ReportSources.Add(typeReportSource)
 
 ## See Also
 
-* [How to migrate your project to utilize the new ReportSource objects]({%slug how-to-migrate-your-project-to-utilize-the-new-reportsource-objects%})
-* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+* [How to migrate your project to utilize the new ReportSource objects](slug:how-to-migrate-your-project-to-utilize-the-new-reportsource-objects)
+* [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview)

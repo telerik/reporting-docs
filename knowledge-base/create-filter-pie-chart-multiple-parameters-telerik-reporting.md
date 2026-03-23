@@ -27,22 +27,22 @@ Creating a pie chart that supports filtering with a multivalue report parameter 
 
 To create and filter a pie chart with multiple parameters in Telerik Reporting, follow these steps:
 
-1. **Create a Pie Chart:** Refer to the [Creating and Customizing Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}) documentation for detailed instructions on how to create a sample Pie chart.
-1. **Add Report Parameters:** These parameters will be connected to the graph filter for dynamic data visualization. For guidance on adding report parameters, refer to - [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}).
-1. **Configure the Parameters with the [Report Parameter Collection Editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor%}):** We will create a `MultiValue` report parameter that will be used to filter the data but all values will be selected initially. In the "Report Parameter Collection Editor", set the `MultiValue` option to `True` and adjust the `Value`. Use the `Edit Expression` dialog to select `"Functions" -> "Aggregates" -> "AllDistinctValues"`. The expression for the `Value` property of the report parameter will look like `= AllDistinctValue(Fields.StoreName)`. This configuration allows the parameter to accept multiple values for filtering and select all distinct options for the `ValueMember`.
+1. **Create a Pie Chart:** Refer to the [Creating and Customizing Pie Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview) documentation for detailed instructions on how to create a sample Pie chart.
+1. **Add Report Parameters:** These parameters will be connected to the graph filter for dynamic data visualization. For guidance on adding report parameters, refer to - [Approaches for Adding Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters).
+1. **Configure the Parameters with the [Report Parameter Collection Editor](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor):** We will create a `MultiValue` report parameter that will be used to filter the data but all values will be selected initially. In the "Report Parameter Collection Editor", set the `MultiValue` option to `True` and adjust the `Value`. Use the `Edit Expression` dialog to select `"Functions" -> "Aggregates" -> "AllDistinctValues"`. The expression for the `Value` property of the report parameter will look like `= AllDistinctValue(Fields.StoreName)`. This configuration allows the parameter to accept multiple values for filtering and select all distinct options for the `ValueMember`.
 
     ![An image of the setup of the MultiValue Report Parameter used for the Pie Chart filter](images/report-parameter-multivalue-setup-for-graph-filter.png)
 
-1. **Connect the Parameter to the Pie Chart Filter:** To enable filtering based on the parameter, access the pie chart's `Edit Filters` option and set the `Operator` to `In`. This connects the report parameter to the chart, enabling end-user selection and filtering - [Adding Filtering to Graph Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item%}).
+1. **Connect the Parameter to the Pie Chart Filter:** To enable filtering based on the parameter, access the pie chart's `Edit Filters` option and set the `Operator` to `In`. This connects the report parameter to the chart, enabling end-user selection and filtering - [Adding Filtering to Graph Item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item).
 
     ![An image of the filter applied to the Pie Chart](images/pie-chart-sample-filter-for-multivalue-parameter.png)
 
-In the end, when previewed(for example in the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})), the pie chart will look as follows:
+In the end, when previewed(for example in the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)), the pie chart will look as follows:
 
 ![An image of the pie chart with the filtered applied to it and previewed in the HTML5 Report Viewer](images/pie-chart-filtered-view-in-web-report-viewer.png)
 
 ## See Also
 
-- [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
-- [Creating and Customizing Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})
-- [Adding Filtering to Graph Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item%})
+- [Approaches for Adding Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters)
+- [Creating and Customizing Pie Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview)
+- [Adding Filtering to Graph Item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item)

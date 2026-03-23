@@ -230,7 +230,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 				None
 			</td>
 			<td>
-				Toggles between <strong>Print Preview</strong> and <strong>Interactive<strong> view modes - <a href="{%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}" target="_blank">Interactive vs Print Layout</a>
+				Toggles between <strong>Print Preview</strong> and <strong>Interactive<strong> view modes - <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout" target="_blank">Interactive vs Print Layout</a>
 			</td>
 		</tr>
 		<tr>
@@ -265,4 +265,4 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 
 ## See Also
 
-- [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})
+- [Native Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)

@@ -26,7 +26,7 @@ At the end, you'll be able to achieve the following result.
 
 ![Preview of the final version of the Demo Report](images/DemoReport.PNG)
 
-For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application]({% slug first-steps-integrating-reports %}).
+For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application](slug:first-steps-integrating-reports).
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ Next, you'll need to create the report:
 
 ## Step 3: Populate the Report with Data
 
-In this step, you'll add the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) and present the fetched data into a table item.
+In this step, you'll add the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) and present the fetched data into a table item.
 
 This guide uses the **AdventureWorks** sample database that may be deployed optionally with the installation of Telerik Reporting examples. The data sources that will be added to the report will generate their data representations.
 
@@ -118,7 +118,7 @@ Now, you may add some styling to the table and define its title.
 
    - Select the table header and set the **Color** property to `White`.
 
-1. To set the title of the table, add a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) above it:
+1. To set the title of the table, add a [TextBox](slug:telerikreporting/designing-reports/report-structure/textbox) above it:
 
    - Click the **detailSection** and select **Insert** > **Text Box**.
 
@@ -126,7 +126,7 @@ Now, you may add some styling to the table and define its title.
 
    - Center the text by setting **Style** > **TextAlign** to `Center`.
 
-1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title:
+1. Let's insert two [Shapes](slug:telerikreporting/designing-reports/report-structure/shape) on the sides of the title:
 
    - Select **Insert** > **Shape** from the **Report Items** section.
 
@@ -156,11 +156,11 @@ After the report header is all set, let's move on to the footer of the report:
 
 1. Click the **pageFooterSection**. Add a Textbox which will display the current date and time.
 
-1. Set the **Expression** of the **Value** property to the `=Now()` [Date and Time function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%}).
+1. Set the **Expression** of the **Value** property to the `=Now()` [Date and Time function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions).
 
 1. To add a barcode item, select **Insert** > **Barcode** from the toolbar.
 
-1. Place the link `{{ site.url | remove_first: site.baseurl }}{%slug telerikreporting/designing-reports/report-structure/barcode/overview%}` in the **Value** field of the **Barcode**. If you receive an error stating that the barcode is too large, change the **Encoder** to `QRCode`.
+1. Place the link `{{ site.url | remove_first: site.baseurl }}(slug:telerikreporting/designing-reports/report-structure/barcode/overview)` in the **Value** field of the **Barcode**. If you receive an error stating that the barcode is too large, change the **Encoder** to `QRCode`.
 
 1. Set the **BackgroundColor** of the footer to `242, 242, 242`.
 
@@ -178,10 +178,10 @@ That was it! Now you are ready to deep-dive into Telerik Reporting and take full
 
 ## Next Steps
 
-* [First Steps Guide: Integrating Reports in Applications]({% slug first-steps-integrating-reports %})
-* [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview %})
-* [About Telerik Reporting]({% slug on-telerik-reporting %})
+* [First Steps Guide: Integrating Reports in Applications](slug:first-steps-integrating-reports)
+* [Designing Reports Overview](slug:telerikreporting/designing-reports/overview)
+* [About Telerik Reporting](slug:on-telerik-reporting)
 
 ## See Also
 
-* [Web Report Designer User Guide]({%slug user-guide/overview%})
+* [Web Report Designer User Guide](slug:user-guide/overview)

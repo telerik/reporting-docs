@@ -35,7 +35,7 @@ This article lists the required steps for setting MS Access Database and using i
 
 	![Preview of a Sample Access Database](resources/AccessDB.PNG)
 
-2. [Create a new report]({%slug telerikreporting/designing-reports/overview%}) and insert **SQL Data Source**.
+2. [Create a new report](slug:telerikreporting/designing-reports/overview) and insert **SQL Data Source**.
 3. Click on **Build new data connection** and select **OleDB Data Provider** from the dropdown.
 4. The data source has to be a **Microsoft Access Database File (OLE DB)**.
 5. Browse to the file’s location.

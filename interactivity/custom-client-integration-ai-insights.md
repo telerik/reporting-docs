@@ -18,7 +18,7 @@ While Telerik Reporting provides built-in support for popular LLM providers like
 
 To follow the steps from this tutorial, you must have:
 
-- A running application that hosts a [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+- A running application that hosts a [Telerik Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 - A report viewer connected to that REST service.
 - An active subscription (or local runtime) for an LLM model provider with API access.
 
@@ -273,7 +273,7 @@ public interface IClient
 
 ### Key Properties and Methods
 
-- **Model**—Specifies the model name used for tokenization encoding. This should match the actual model being used for accurate token counting. For more information on its impact, check the `tokenizationEncoding` option in the [RAG Configuration]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights%}#retrieval-augmented-generation-rag-configuration) section.
+- **Model**—Specifies the model name used for tokenization encoding. This should match the actual model being used for accurate token counting. For more information on its impact, check the `tokenizationEncoding` option in the [RAG Configuration](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/configuring-ai-powered-insights#retrieval-augmented-generation-rag-configuration) section.
 - **SupportsSystemPrompts**—Indicates whether the LLM supports system role messages. When `false`, all messages in the `query` argument from the `GetResponseAsync` method are converted to user role to prevent invalid message types from being unintentionally passed to the LLM client during type conversion.
 - **GetResponseAsync**—The core method that processes AI queries and returns responses.
 

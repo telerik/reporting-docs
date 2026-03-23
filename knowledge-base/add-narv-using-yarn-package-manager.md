@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-After adding the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) to my project that uses the [yarn](https://yarnpkg.com/) package manager, the project does not build and there are warnings about unresolved peer dependencies and packages with incorrect versions.
+After adding the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) to my project that uses the [yarn](https://yarnpkg.com/) package manager, the project does not build and there are warnings about unresolved peer dependencies and packages with incorrect versions.
 
 ## Solution
 

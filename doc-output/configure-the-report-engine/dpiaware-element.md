@@ -53,7 +53,7 @@ The following list explains how the DPI awareness is respected in applications t
 
 ### Windows Forms Report Viewer
 
-The Windows Forms applications are __not__ DPI-aware by default. The recommended approach for declaring an application as DPI-aware is adding a `dpiAware` element to its application manifest, as shown in the article [Windows Forms Application Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware).
+The Windows Forms applications are __not__ DPI-aware by default. The recommended approach for declaring an application as DPI-aware is adding a `dpiAware` element to its application manifest, as shown in the article [Windows Forms Application Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware).
 
 ### WPF Report Viewer
 
@@ -65,7 +65,7 @@ The HTML5-based report viewers use the Telerik Reporting REST Service, which is 
 
 ## See Also
 
-* [Declaring Windows Forms Application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware)
+* [Declaring Windows Forms Application as DPI-aware](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware)
 * [Creating a DPI-Aware Application](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ms701681(v=vs.85))
 * [High DPI Desktop Application Development on Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)
 * [SetProcessDpiAwareness](https://learn.microsoft.com/en-us/windows/win32/api/shellscalingapi/nf-shellscalingapi-setprocessdpiawareness)

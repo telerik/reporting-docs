@@ -56,4 +56,4 @@ Update the [`Newtonsoft.Json`](https://www.nuget.org/packages/newtonsoft.json/) 
 
 ## See Also
 
-- [Requirements for using Telerik Reporting REST WebAPI service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements%})
+- [Requirements for using Telerik Reporting REST WebAPI service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements)

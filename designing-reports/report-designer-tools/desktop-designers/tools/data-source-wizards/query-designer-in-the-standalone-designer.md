@@ -32,7 +32,7 @@ The following figure shows the graphical query designer.
 
 ![The Graphical SQL Query Designer Form of the Standalone Report Designer](images/SqlQueryDesignerForm.png)
 
-Use the graphical query designer to explore the database tables and views, interactively build SQL SELECT statements, and view the result. The select statement specifies the database tables, views, and columns from which to retrieve data for a [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). If you choose multiple related tables, the query designer describes the relationship between sets of two tables.
+Use the graphical query designer to explore the database tables and views, interactively build SQL SELECT statements, and view the result. The select statement specifies the database tables, views, and columns from which to retrieve data for a [SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview). If you choose multiple related tables, the query designer describes the relationship between sets of two tables.
 
 ## Schema Restrictions
 
@@ -119,16 +119,16 @@ The __Data Preview__ pane displays the results for the automatically generated q
 
 The data is not saved in the report definition. The actual data in the report is retrieved when the report is processed.
 
-Sort order in the result set is determined by the order the data is retrieved from the database. The sort order can be changed after the data is retrieved for the report data item by adding sorting expressions with the [Edit Sorting Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%}).
+Sort order in the result set is determined by the order the data is retrieved from the database. The sort order can be changed after the data is retrieved for the report data item by adding sorting expressions with the [Edit Sorting Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog).
 
-You can group the data and use aggregates after the data is retrieved using the report data item grouping abilities and [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).
+You can group the data and use aggregates after the data is retrieved using the report data item grouping abilities and [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
 
 ## Query Designer State
 
-Clicking OK the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) Select Statement will be replaced with the currently generated SQL query. The OK button is only enabled if the query is valid.
+Clicking OK the [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) Select Statement will be replaced with the currently generated SQL query. The OK button is only enabled if the query is valid.
 
 The Query Designer keeps the current setup state. However, if you modify the SQL query outside it and then use the Query Designer, it will override the SQL query manually made modification.
 
 ## See Also
 
-* [Standalone Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
+* [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)

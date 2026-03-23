@@ -52,6 +52,6 @@ This forces browsers to reload the updated files.
 
 ## See Also
 
-* [Setting Up Your Telerik Reporting License Key]({%slug license-key%})
-* [Frequently Asked Questions]({%slug license-frequently-asked-questions%})
-* [Errors and Warnings in Telerik Reporting Licensing]({%slug license-errors-and-warnings%})
+* [Setting Up Your Telerik Reporting License Key](slug:license-key)
+* [Frequently Asked Questions](slug:license-frequently-asked-questions)
+* [Errors and Warnings in Telerik Reporting Licensing](slug:license-errors-and-warnings)

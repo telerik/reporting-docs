@@ -50,16 +50,16 @@ And the steps and the layout after applying the non-breaking spaces:
 
 1. Place a `List` or `Table` report item next to the chart.
 1. Bind the `List` or `Table` representing the legend to the corresponding data.
-1. Configure the Table/List cells to display the required marks and text. For the former, you may use [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) or [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}). Consider also [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) and [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the styles.
+1. Configure the Table/List cells to display the required marks and text. For the former, you may use [PictureBox]slug:telerikreporting/designing-reports/report-structure/picturebox) or [Shape]slug:telerikreporting/designing-reports/report-structure/shape). Consider also [Conditional Formatting]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) and [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for the styles.
 
 ### Using a User Function
 
-1. Create a user function to pad legend item text to equal lengths. Refer to the [User Functions documentation]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}).
+1. Create a user function to pad legend item text to equal lengths. Refer to the [User Functions documentation]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions).
 1. Apply the function to each legend item to adjust alignment. Note that this option does not guarantee vertical stacking but may improve the layout.
 
 ## See Also
 
-- [Graph Overview]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
-- [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+- [Graph Overview]slug:telerikreporting/designing-reports/report-structure/graph/overview)
+- [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
 - [Non-breaking Space](https://en.wikipedia.org/wiki/Non-breaking_space)
 

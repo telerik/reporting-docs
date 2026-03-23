@@ -84,7 +84,7 @@ This article explains the steps needed to create an application which uses the S
 
      `Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"`
 
-   Review [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}) topic for information on creating a **Telerik Report**.
+   Review [How to use the Report Wizard to create a Band Report]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report) topic for information on creating a **Telerik Report**.
 
    The _MainPage.xaml_ should look similar:
 
@@ -107,5 +107,5 @@ This article explains the steps needed to create an application which uses the S
 
 ## See Also
 
-- [Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
-- [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%})
+- [Silverlight Application]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview)
+- [Using Custom Bindings]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings)

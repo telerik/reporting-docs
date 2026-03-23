@@ -45,7 +45,7 @@ table th:nth-of-type(3) {
 
 # Toolbar Icons Overview
 
-The [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) uses [Kendo SVG Icons](https://www.telerik.com/design-system/docs/foundation/iconography/svg-icons/) for the icons displayed in its toolbar. The default toolbar icons can be changed with any SVG icon from the [Kendo SVG Icons List](https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/).
+The [Native Angular Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) uses [Kendo SVG Icons](https://www.telerik.com/design-system/docs/foundation/iconography/svg-icons/) for the icons displayed in its toolbar. The default toolbar icons can be changed with any SVG icon from the [Kendo SVG Icons List](https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/).
 
 ## Setting a new Kendo SVG Icon on the toolbar
 
@@ -187,9 +187,9 @@ import { xOutlineIcon } from '@progress/kendo-svg-icons'
 
 ## See Also
 
-* [How to Use the Native Angular Report Viewer with Reporting Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service%})
-* [How to Use the Native Angular Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server%})
-* [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
-* [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
-* [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-* [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})
+* [How to Use the Native Angular Report Viewer with Reporting Service]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service)
+* [How to Use the Native Angular Report Viewer with Report Server]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server)
+* [Native Angular Report Viewer Requirements]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements)
+* [Native Angular Report Viewer Options]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options)
+* [Native Angular Report Viewer Commands]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands)
+* [Native Angular Report Viewer Events]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events)

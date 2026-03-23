@@ -38,8 +38,8 @@ This message may appear in projects which use a Telerik Reporting Q2 2012 or lat
 
 ## Solution
 
-To fix this issue, refer to the article on [migrating your project to utilize the new `ReportSource` objects]({%slug how-to-migrate-your-project-to-utilize-the-new-reportsource-objects%}).
+To fix this issue, refer to the article on [migrating your project to utilize the new `ReportSource` objects]slug:how-to-migrate-your-project-to-utilize-the-new-reportsource-objects).
 
 ## See Also
 
-* [Migrating your project to utilize the ReportSource object]({%slug how-to-migrate-your-project-to-utilize-the-new-reportsource-objects%})
+* [Migrating your project to utilize the ReportSource object]slug:how-to-migrate-your-project-to-utilize-the-new-reportsource-objects)

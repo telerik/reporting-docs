@@ -27,7 +27,7 @@ Parameters:
 
 | Parameter | Description |
 | ------ | ------ |
-| __token__ |string; the authentication token. For more information please see jQuery.fn.telerik_ReportViewer’s authenticationToken option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#Options);|
+| __token__ |string; the authentication token. For more information please see jQuery.fn.telerik_ReportViewer’s authenticationToken option in [Report Viewer Initialization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#Options);|
 
 
 Returns: the current *ReportViewer* object.
@@ -40,4 +40,4 @@ reportViewer.authenticationToken("bad18eba1ff45jk7858b8ae88a77fa30");
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

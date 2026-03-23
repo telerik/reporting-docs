@@ -64,7 +64,7 @@ At run-time, the reporting engine evaluates the expressions and constructs a fin
 
 ## See Also
 
-* [Functions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%})
-* [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%})
-* [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}#web-report-designer)
-* [Aggregate Functions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
+* [Functions Overview]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview)
+* [Data Sources]slug:web-report-designer-user-guide-components-data-sources)
+* [Approaches for Adding Report Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters#web-report-designer)
+* [Aggregate Functions Overview]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions)

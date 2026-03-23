@@ -33,7 +33,7 @@ I want to remove the darker, solid border around bars in a graph with a bar seri
 
 To remove the darker border around the bars:
 
-1. Select the graph in the [Report Designer tool]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}) of choice.
+1. Select the graph in the [Report Designer tool]slug:telerikreporting/designing-reports/report-designer-tools/overview) of choice.
 1. Expand the **Series** property.
 1. Locate and expand the [DataPointStyle](/api/telerik.reporting.graphseriesbase#Telerik_Reporting_GraphSeriesBase_DataPointStyle) property of the [GraphSeries](/api/telerik.reporting.graphseries).
 1. Set the **LineWidth** property to **0pt**.
@@ -44,6 +44,6 @@ This removes the darker border around the bars, ensuring they appear without ove
 
 ## See Also
 
-* [Bar Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})
-* [Getting Started with the Graph Report Item]({%slug graph_item_get_started%})
-* [Series of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%})
+* [Bar Chart]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview)
+* [Getting Started with the Graph Report Item]slug:graph_item_get_started)
+* [Series of the Graph]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series)

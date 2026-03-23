@@ -27,22 +27,22 @@ How can I use bindings to control the coordinate system properties in the Graph?
 
 ## Solution 
 
-The suggested solution shows how to set up the axes and scales of the coordinate system at runtime by using bindings. This approach is really useful when your scenario involves nested Graph items and you need to adjust more precisely its properties. For more information about the nested data items subject, refer to the article on [using the `ReportItem.DataObject` property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}). 
+The suggested solution shows how to set up the axes and scales of the coordinate system at runtime by using bindings. This approach is really useful when your scenario involves nested Graph items and you need to adjust more precisely its properties. For more information about the nested data items subject, refer to the article on [using the `ReportItem.DataObject` property in expressions]slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions). 
 
 The nested Graph data will show the sales of some of the most popular electric vehicles models over the last years. The data will be grouped by vehicle model, presenting the amount of sales for each model in a separate chart. The data sample used to create the charts is taken from [Model 3](http://jpwhitenissanleaf.com/) and you can read the whole article in [March 2013 sets several records for EV Sales](http://jpwhitenissanleaf.com/2013/04/06/march-2013-sets-several-records-for-ev-sales/). 
 
-The suggested solution is valid for both the Telerik Reporting [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), and can also be reproduced with code. 
+The suggested solution is valid for both the Telerik Reporting [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview), and can also be reproduced with code. 
 
 ### 1. Add a Blank Report
 
 1. Open the Telerik Report Designer of your choice and create a new blank report. 
-1. Since you will not be using the page header and footer, [remove them]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%}).
+1. Since you will not be using the page header and footer, [remove them]slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections).
 
 ### 2. Connect to Data 
 
 1. Expand the `DataSource` property of the report and click the __Add new DataSource...__ link at the bottom. 
 
-1. Select the [**CSV Data Source**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) icon to add a new DataSource. Name it __dsEVSalesData__. This data source will contain information about the vehicles and the amount of their sales for a particular month. 
+1. Select the [**CSV Data Source**]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard) icon to add a new DataSource. Name it __dsEVSalesData__. This data source will contain information about the vehicles and the amount of their sales for a particular month. 
 
 1. Download the [`EVSalesData.csv` file](http://blogs.telerik.com/docs/default-source/reporting/evsalesinus.csv?sfvrsn=2), save it locally, and insert its path into the **Select a file to import** textbox. 
 
@@ -60,7 +60,7 @@ The suggested solution is valid for both the Telerik Reporting [Standalone Repor
 
 ### 3. Configure the Groupings 
 
-1. Define the groupings for a data item by using the [**GroupExplorer** tool window]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}). If it is not visible, activate it with the __Telerik Reporting menu__ in Visual Studio or the __View tab__ in the Standalone Report Designer. 
+1. Define the groupings for a data item by using the [**GroupExplorer** tool window]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer). If it is not visible, activate it with the __Telerik Reporting menu__ in Visual Studio or the __View tab__ in the Standalone Report Designer. 
 
 1. Select the report, right-click the __Detail__ group, displayed in the __Group Explorer__, and select **Add Parent Group** from the context menu. This will show the __Edit Grouping__ dialog. 
 

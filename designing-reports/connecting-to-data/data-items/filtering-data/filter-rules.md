@@ -20,15 +20,15 @@ table th:nth-of-type(2) {
 
 # Filtering Rules
 
-Filters are used to limit the number of records in a report based on specified filter rules. If the conditions of the rules are met the record is included in the report. Multiple rules can be defined that make up a filter. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}).
+Filters are used to limit the number of records in a report based on specified filter rules. If the conditions of the rules are met the record is included in the report. Multiple rules can be defined that make up a filter. Filters are defined using the [Edit Filter Dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog).
 
 ## Creating Filter Rules
 
 Each filter rule is made up of an `Expression`, `Operator` and `Value`.
 
-* `Expression` can be a data field from the __Fields__ collection or defined using the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
+* `Expression` can be a data field from the __Fields__ collection or defined using the [Edit Expression Dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog).
 * `Operator` can be simple comparison operators but can also include __Like__ and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the table of operators below.
-* `Value` can be a literal value, "`<blank>`" or an expression defined in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
+* `Value` can be a literal value, "`<blank>`" or an expression defined in the [Edit Expression Dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog).
 
 |   |   |
 | ------ | ------ |

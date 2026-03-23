@@ -12,7 +12,7 @@ reportingArea: General
 
 # Configure Web Report Designer and Create a Basic Report
 
-This is a step-by-step tutorial that shows how to integrate the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET {{site.mindotnetversion}}` ASP.NET Core application in Visual Studio 2022.
+This is a step-by-step tutorial that shows how to integrate the [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in `.NET {{site.mindotnetversion}}` ASP.NET Core application in Visual Studio 2022.
 
 * First, you will create a Web Application and add the Telerik Web Report Designer through its Visual Studio Item Template.
 * Next, you'll create and style a new report.
@@ -72,27 +72,27 @@ Our next goal is to create a brand new report with the just configured Web Repor
 1. Go to the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens and lets you:
 
 	1. Enter the `File Name`. Let's name the report `ProductSales`.
-	1. Select the `Type`. Leave the `Type` to be `TRDP`, standing for _Telerik Report Definition Packed_, the recommended Declarative [Report Definition]({%slug on-telerik-reporting%}#report-definition).
+	1. Select the `Type`. Leave the `Type` to be `TRDP`, standing for _Telerik Report Definition Packed_, the recommended Declarative [Report Definition]slug:on-telerik-reporting#report-definition).
 	1. Enter `Location`. Type `Demo` to place the report in the _Demo_ subfolder.
 	1. Click `Save` to apply the settings.
 
 	![The 'Create Report' dialog of the web designer with the above settings for our new report.](images/create-trdp-report-web-designer.png)
 
 1. The new empty report should open in the designer with its default Page Header, Detail, and Page Footer sections. Let's delete the page sections by selecting them and pressing the `Delete` key on the keyboard.
-1. Next, we want to add a [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}). Press `Ctrl+F` to focus the Search box, type `Report Header`, and press `Enter` key to focus the report section in the `Components` menu. Click the item to add the section to the report.
+1. Next, we want to add a [Report Header]slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections). Press `Ctrl+F` to focus the Search box, type `Report Header`, and press `Enter` key to focus the report section in the `Components` menu. Click the item to add the section to the report.
 
 	![Searching for the 'Report Header' and locating it in the web designer's 'Components' menu.](images/locate-report-header-component.png)
 
 1. Let's add the company logo to the report.
 
-	1. We need to add a [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) to the Report Header. You may search for the report item, drag it to the Report Header, and adjust its size and position as needed.
-	1. To upload the logo, search for the `Value` property in the PictureBox, and click on the icon beside it. It opens the `Select File...` dialog, which represents the [Assets Manager]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
+	1. We need to add a [PictureBox]slug:telerikreporting/designing-reports/report-structure/picturebox) to the Report Header. You may search for the report item, drag it to the Report Header, and adjust its size and position as needed.
+	1. To upload the logo, search for the `Value` property in the PictureBox, and click on the icon beside it. It opens the `Select File...` dialog, which represents the [Assets Manager]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
 
 		![The 'Select file...' dialog of the web designer opened when adding a value for the PictureBox.](images/select-image-for-picturebox-web-designer.png)
 
 	1. Select the `Images` folder and click the `Upload` button to upload the image. Click on the `Browse` button to find the image on your system and open it. Add the selected image by clicking on the `Upload` button. Now the image is in the Assets Manager, and you may click `Save`. The value should be populated, and the image should be displayed in the PictureBox.
 
-1. Add a title to the report. You may use the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report item.
+1. Add a title to the report. You may use the [TextBox]slug:telerikreporting/designing-reports/report-structure/textbox) report item.
 
 	1. Search in the global search box of the designer and drag the item from the `Components` menu to the Report Header.
 	1. You may change the text inline. Double-click on the item to enter it and type `Sales by Category`.
@@ -101,7 +101,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 	![The TextBox 'Sales by Category' styled and aligned in the web designer.](images/style-and-align-textbox-web-designer.png)
 
-1. Our next step would be to add a [DataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) to the Report. Let it be the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) fetching data from a remote source.
+1. Our next step would be to add a [DataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) to the Report. Let it be the [WebServiceDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview) fetching data from a remote source.
 
 	1. Search for the component and add it to the report. It opens the _Configure Web Service DataSource_ wizard.
 	1. For `ServiceUrl`, we will add the known URL to our demo site `https://demos.telerik.com/reporting/api/data/ProductSales.min`. It points to a reliable JSON data file. Leave the other options with their default values.
@@ -116,7 +116,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 	1. The wizard closes, and in the designer's `Explorer` tab, you should see the new WebServiceDataSource component with its data fields listed.
 
-1. Next, lets add the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item that is going to show the sales data.
+1. Next, lets add the [Graph]slug:telerikreporting/designing-reports/report-structure/graph/overview) item that is going to show the sales data.
 
 	1. Search for `Column` and drag the Column chart from the `Explorer` menu to the report Detail section. This will open a chart configurator in the right pane.
 	1. Select the WebServiceDataSource from the dropdown of the Graph DataSource property. The fields will be listed.
@@ -139,9 +139,9 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
-* [Implement a Common Master-Detail Report Scenario]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-* [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
+* [Implement a Common Master-Detail Report Scenario]slug:telerikreporting/getting-started/web-designer/improving-basic-report)
+* [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 * [Reporting Forums](https://www.telerik.com/forums/reporting)
@@ -150,4 +150,4 @@ Our next goal is to create a brand new report with the just configured Web Repor
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
-* [Web Report Designer User Guide]({%slug user-guide/overview%})
+* [Web Report Designer User Guide]slug:user-guide/overview)

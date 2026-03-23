@@ -51,10 +51,10 @@ To resolve the invalid license watermark issue:
 
 Please verify that the script key includes all purchased Telerik licenses. If other Telerik products are used in the project, their **Script keys** must also be added to the same `TelerikLicense.vb`/`TelerikLicense.cs` file.
 
-If there are further issues, please refer to the [Fixing License Errors in Telerik Reporting Runtime]({%slug resolving-invalid-license-telerik-reporting%}) article.
+If there are further issues, please refer to the [Fixing License Errors in Telerik Reporting Runtime]slug:resolving-invalid-license-telerik-reporting) article.
 
 ## See Also
 
-* [Fixing License Errors in Telerik Reporting Runtime]({%slug resolving-invalid-license-telerik-reporting%})
-* [Adding a License Key to Projects without NuGet References]({%slug license-key%})
-* [Telerik Reporting Overview]({%slug telerikreporting/welcome-to-telerik-reporting!%})
+* [Fixing License Errors in Telerik Reporting Runtime]slug:resolving-invalid-license-telerik-reporting)
+* [Adding a License Key to Projects without NuGet References]slug:license-key)
+* [Telerik Reporting Overview]slug:telerikreporting/welcome-to-telerik-reporting!)

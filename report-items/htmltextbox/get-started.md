@@ -11,7 +11,7 @@ reportingArea: General
 
 # Getting Started with the HtmlTextBox
 
-This guide shows how to create and use the Telerik Reporting HtmlTextBox report item in reports with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
+This guide shows how to create and use the Telerik Reporting HtmlTextBox report item in reports with the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
 
 - First, you will add an HtmlTextBox item in an empty Report created with the Standalone Designer.
 - Then, you will fill the HtmlTextBox with some styled content.
@@ -23,7 +23,7 @@ After the completion of this guide, you will also be able to configure the HtmlT
 
 ## Adding the HtmlTextBox
 
-1. Select the [Report Section]({%slug report_structure_groups_sections%}#report-sections) where you want to add the HtmlTextBox. For the purposes of this guide, you will choose the `Detail` section.
+1. Select the [Report Section]slug:report_structure_groups_sections#report-sections) where you want to add the HtmlTextBox. For the purposes of this guide, you will choose the `Detail` section.
 
 1. From the **Designer** menu, select the `Insert` tab. As a result, the available items will be displayed in the toolbar below the main menu.
 
@@ -84,7 +84,7 @@ You can also embed images in the HtmlTextBox using the `<img>` tag. To add an im
 
 ![Preview mode of the Standalone Report Designer where a hypertext and an image are visible.](images/HtmlTextBox-ContentWithImage.png)
 
->tip For more information about image support including supported attributes and CSS styling options, see [Image Support]({%slug htmltextbox_formatting_and_styling%}#image-support).
+>tip For more information about image support including supported attributes and CSS styling options, see [Image Support]slug:htmltextbox_formatting_and_styling#image-support).
 
 ## Next Steps
 
@@ -94,7 +94,7 @@ You can also embed images in the HtmlTextBox using the `<img>` tag. To add an im
 
 ## See Also
 
-- [Editing]({%slug htmltextbox_editing%})
-- [Styling and Formatting]({%slug htmltextbox_formatting_and_styling%})
-- [Embedded Expressions]({%slug htmltextbox_embedded_expressions%})
-- [Known Limitations]({%slug htmltextbox_known_limitations%})
+- [Editing]slug:htmltextbox_editing)
+- [Styling and Formatting]slug:htmltextbox_formatting_and_styling)
+- [Embedded Expressions]slug:htmltextbox_embedded_expressions)
+- [Known Limitations]slug:htmltextbox_known_limitations)

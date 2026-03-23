@@ -12,9 +12,9 @@ reportingArea: General
 
 # Extending Report Designer to Recognize Custom Assemblies
 
-It is a common requirement to add your own [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) or bind to custom CLR objects, data models (such as a Telerik Data Access model), external assemblies with custom data source objects, data feeds (including OData), and web services.
+It is a common requirement to add your own [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) or bind to custom CLR objects, data models (such as a Telerik Data Access model), external assemblies with custom data source objects, data feeds (including OData), and web services.
 
-To expose your data, so it can be utilized by the Object/OpenAccess/Entity [data source components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}), or extend the default behavior of the Telerik Reporting engine with custom User Functions, you have to use the [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) of the Telerik.Reporting configuration section to reference your custom assembly:
+To expose your data, so it can be utilized by the Object/OpenAccess/Entity [data source components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview), or extend the default behavior of the Telerik Reporting engine with custom User Functions, you have to use the [assemblyReferences Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) of the Telerik.Reporting configuration section to reference your custom assembly:
 
 ````XML
 <configuration>
@@ -38,7 +38,7 @@ This can be achieved either by manually editing the configuration file or by usi
 
 ## Update the Designer Configuration File through the UI
 
-As of **Q4 2024** the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})'s **Options** page contains a new section: **Assembly References**:
+As of **Q4 2024** the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)'s **Options** page contains a new section: **Assembly References**:
 
 ![Assembly Reference in the Standalone Report Designer's Options](images/srd-assembly-reference-ui.png)  
 
@@ -85,7 +85,7 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 
 ## See Also
 
-* [How to use external assemblies with custom CLR objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})
-* [Previewing a report definition that uses an external assembly]({%slug deploying-trdx-(xml-report-definition)-that-uses-external-assembly%})
-* [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%})
-* [Report Designer Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration%})
+* [How to use external assemblies with custom CLR objects in the Report Designer]slug:how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer)
+* [Previewing a report definition that uses an external assembly]slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly)
+* [Configuration]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview)
+* [Report Designer Configuration]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration)

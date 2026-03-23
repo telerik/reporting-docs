@@ -26,7 +26,7 @@ I would like the crosstab to occupy always the entire page width. The crosstab c
 
 ## Solution
 
-You may achieve the requirement with the [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the column Width. You may take the number of columns to be generated from the column grouping [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}). The Page width may also be taken from the [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) [ReportDefinition]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#reportdefinition).
+You may achieve the requirement with the [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) of the column Width. You may take the number of columns to be generated from the column grouping [Expression]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview). The Page width may also be taken from the [Global Object]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) [ReportDefinition]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects#reportdefinition).
 
 Here is a sample Expression:
 
@@ -44,6 +44,6 @@ A demo report demonstrating the approach may be found in our Reporting Samples G
 
 ## See Also
 
-* [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
-* [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
-* [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%})
+* [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
+* [Expression]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)
+* [Global Object]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects)

@@ -115,4 +115,4 @@ public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resourc
 
 ## See Also
 
-[How to implement a report definition storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%}).
+[How to implement a report definition storage]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage).

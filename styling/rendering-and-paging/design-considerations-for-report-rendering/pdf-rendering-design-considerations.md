@@ -23,7 +23,7 @@ table th:nth-of-type(2) {
 
 The PDF Rendering Extension of Telerik Reporting produces a version **1.6 PDF file**. The file can be opened with **Adobe Acrobat 7.0** or later. The file is compressed using the FlateDecode filter. The PDF rendering extension is a physical page renderer and, thus has pagination behavior that differs from other rendering extensions such as HTML and Excel, which are not page-oriented. PDF and Image Export Formats share the same high-level layout engine. Therefore all rules and design considerations that apply for the **Image Rendering Extension** apply for **PDF** as well.
 
-The **PDF rendering** extension is based on the Image rendering extension, with some differences. For information common to the Image rendering extension and the PDF rendering extension, see [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}). This topic describes features that are specific to the PDF rendering extension.
+The **PDF rendering** extension is based on the Image rendering extension, with some differences. For information common to the Image rendering extension and the PDF rendering extension, see [Design Considerations for Image Rendering]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations). This topic describes features that are specific to the PDF rendering extension.
 
 ## PDF Viewers
 
@@ -35,7 +35,7 @@ The PDF rendering extension embeds fonts by default.
 
 > The font author may have restricted FontEmbedding. In this case, the Reporting engine will not embed the font in the PDF document. See [OS/2 fsType](https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fstype) for more information.
 
-The font embedding functionality is controlled by the [FontEmbedding]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}) device information setting. Fonts that are used in a report must be installed on the machine where the application is running or [privateFonts]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) must be configured, so the PDF rendering can embed them.
+The font embedding functionality is controlled by the [FontEmbedding]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings) device information setting. Fonts that are used in a report must be installed on the machine where the application is running or [privateFonts]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element) must be configured, so the PDF rendering can embed them.
 
 If you disable font embedding, the fonts used in the report must be installed on the client computers used to view the report. When the report engine generates a report in PDF format, it uses the information stored in the font to measure and create character mappings within the PDF file.
 
@@ -51,7 +51,7 @@ To view the list of fonts that are embedded in a PDF file, open the file in Adob
 
 The PDF rendering extension supports three versions of the standard – PDF/A-1b (2005), PDF/A-2b (2011), PDF/A-3b (2013). The compliance level is defined with the rendering extension device info.
 
-For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).
+For more information see: [PDF Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings).
 
 ### PDF/A Limitations
 
@@ -67,7 +67,7 @@ Font embedding of a `subset` or `full` is required. The default option is a `sub
 
 The PDF rendering extension allows password protection with document content encryption. You can specify the owner password and user password. The user password gives read-only permissions. The passwords are defined with the rendering extension device info.
 
-For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).
+For more information see: [PDF Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings).
 
 ## Digital Signature
 
@@ -75,7 +75,7 @@ The digital signature feature enables you to sign and validate a PDF document. A
 
 In the PDF document model, the validation is performed per signature. A signed document is considered valid when it has not been changed after the signing and all of its certificates have a valid trusted root certificate.
 
-To sign a PDF document a path to a X.509 certificate is specified in the rendering extension device info. For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).
+To sign a PDF document a path to a X.509 certificate is specified in the rendering extension device info. For more information see: [PDF Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings).
 
 > important You need to reference a `.PFX` file. The reason is that it includes both the public and private keys that are required for the associated certificate. A '.cer' file embeds only the public key.
 
@@ -85,8 +85,8 @@ The PDF rendering extension writes the following information to the PDF file:
 
 | PDF property | Value                                                                                                                                                                                                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Creator      | If a custom value is not specified with [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}), the default value is Telerik Reporting product name and version. |
-| Producer     | If a custom value is not specified with [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}), the default value is Telerik Reporting product name and version. |
+| Creator      | If a custom value is not specified with [PDF Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings), the default value is Telerik Reporting product name and version. |
+| Producer     | If a custom value is not specified with [PDF Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings), the default value is Telerik Reporting product name and version. |
 | CreationDate | Report execution time                                                                                                                                                                                                                                                                  |
 
 The metadata contents are written with ASCII encoding by default. In case the metadata fields contain special characters like accented characters or umlauts, they might not be persisted and displayed correctly. The PDF compliance standards impose using UTF-8 for the document metadata, so using any of the supported compliance levels (A-1b, A-2b, A-3b) or enabling the accessibility features will persist the special characters correctly.
@@ -95,7 +95,7 @@ The metadata contents are written with ASCII encoding by default. In case the me
 
 ### Bookmarks
 
-The PDF rendering extension supports [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}) interactive feature which is rendered as PDF Bookmarks. You can use the Bookmarks by opening the Bookmarks pane in Acrobat Reader to navigate inside the report.
+The PDF rendering extension supports [Document Map]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview) interactive feature which is rendered as PDF Bookmarks. You can use the Bookmarks by opening the Bookmarks pane in Acrobat Reader to navigate inside the report.
 
 ### Hyperlinks
 
@@ -127,7 +127,7 @@ If **EnableAccessibility** is set to **true**, the produced PDF document will co
 
 Below are listed the most important characteristics of a PDF document generated by the Telerik Reporting engine:
 
-- _Tagged contents_ - All items in the report will have corresponding specific entries in the PDF structure that will contain the actual text recognized by the screen readers and other assistive technologies. The rules to generate the text in tagged contents are the same used to generate the metadata in [report viewers with enabled accessibility.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/accessibility%})
+- _Tagged contents_ - All items in the report will have corresponding specific entries in the PDF structure that will contain the actual text recognized by the screen readers and other assistive technologies. The rules to generate the text in tagged contents are the same used to generate the metadata in [report viewers with enabled accessibility.]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/accessibility)
 - _Description for non-textual items_ - The PictureBox, Graph, and Map items should provide meaningful accessible descriptions in the report definition. This description will be persisted and used in tag elements with configured actual and alternate text. Other graphical primitives like borders will be treated as non-informational elements and will be added to the PDF document structure as _artifacts_.
 - _Annotations_ - all the links in the document will have a respective link annotation object in the PDF structure.
 - _Document Title_ - The title should be provided from the device information settings object. In case it is unavailable, the [DocumentName](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_DocumentName) property of the report will be used instead.
@@ -146,11 +146,11 @@ The SVG rendering mode is controlled by a key in the device information settings
 
 ## Watermark
 
-The PDF rendering extension does support [Report Watermarks]({%slug telerikreporting/designing-reports/rendering-and-paging/watermarks%}), however, when it comes to `Text` Watermarks, [newline](https://en.wikipedia.org/wiki/Newline) characters are not respected. Thus, displaying multiline text with the `Watermark` property is not possible.
+The PDF rendering extension does support [Report Watermarks]slug:telerikreporting/designing-reports/rendering-and-paging/watermarks), however, when it comes to `Text` Watermarks, [newline](https://en.wikipedia.org/wiki/Newline) characters are not respected. Thus, displaying multiline text with the `Watermark` property is not possible.
 
 ## See Also
 
-- [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
-- [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-- [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
-- [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%})
+- [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+- [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+- [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+- [PDF Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings)

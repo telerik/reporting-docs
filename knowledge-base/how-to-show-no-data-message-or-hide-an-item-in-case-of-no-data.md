@@ -29,13 +29,13 @@ In this article, we will explain how to show '*No Data Message*' or hide a repor
 - **For Table/List/Crosstab, Graph and Map items**.  
 
 You can use the *'NoDataMessage'* feature. Once the data item's NoDataMessage property is set, the message will appear if the item's DataSource gets no records from its source. You can also use the NoDataStyle properties to style the message or hide the item entirely.  
-For more details, check [How to: Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%}).
+For more details, check [How to: Set a No Data Message]slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message).
 
 - **For Report.**  
 
-If the report's DataSource retrieves no records, static sections like [ReportHeaderSection]({% slug telerikreporting/designing-reports/report-structure/overview %}) and [static groups' sections]({% slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview %}) are rendered, allowing you to add a message and display it.  
+If the report's DataSource retrieves no records, static sections like [ReportHeaderSection]slug:telerikreporting/designing-reports/report-structure/overview) and [static groups' sections]slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview) are rendered, allowing you to add a message and display it.  
 
-For example, you can add a TextBox item in the ReportHeaderSection and set its Visible property to false. By using [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}), you can make the TextBox item visible in case an expression like "=Count(1)==0" points there are no visualized data records by the report.
+For example, you can add a TextBox item in the ReportHeaderSection and set its Visible property to false. By using [conditional formatting]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting), you can make the TextBox item visible in case an expression like "=Count(1)==0" points there are no visualized data records by the report.
 
 - **For Sub Report.**  
  
@@ -52,4 +52,4 @@ Expression: = Count(1)>0
 
 ## See Also
 
-[How to Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})
+[How to Set a No Data Message]slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message)

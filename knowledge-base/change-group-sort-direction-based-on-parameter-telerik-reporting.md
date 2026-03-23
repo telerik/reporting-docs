@@ -45,15 +45,15 @@ To dynamically control the sort direction of a group based on a parameter, follo
 
 For more information on sorting data in reports and using report parameters, refer to the following Telerik Documentation articles:
 
-- [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})
-- [How to Add Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
+- [Ordering Data]slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)
+- [How to Add Report Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters)
 
 ## Notes
 
-- Interactive sorting, allowing users to toggle between ascending and descending order (without any parameter), can also be achieved using sorting actions. For more details, see [Sorting Action Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/overview%}).
+- Interactive sorting, allowing users to toggle between ascending and descending order (without any parameter), can also be achieved using sorting actions. For more details, see [Sorting Action Overview]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/overview).
 
 ## See Also
 
-- [Report Parameters Documentation]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
-- [Sorting Data in Reports]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})
-- [Sorting Action in Reports]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/overview%})
+- [Report Parameters Documentation]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters)
+- [Sorting Data in Reports]slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)
+- [Sorting Action in Reports]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/overview)

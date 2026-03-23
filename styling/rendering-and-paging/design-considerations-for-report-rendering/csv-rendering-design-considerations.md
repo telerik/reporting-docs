@@ -32,7 +32,7 @@ When rendered using the default settings, a CSV report has the following charact
 
 * The default field delimiter string is a comma (,).
 
-   >note You can change the field delimiter to any character that you want, by changing the device information settings. For more information, see [CSV Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings%}).
+   >note You can change the field delimiter to any character that you want, by changing the device information settings. For more information, see [CSV Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings).
 
 * The record delimiter string is taken from the environment. It is the newline character for the corresponding operating system (OS). For example, for Windows OS this is the carriage return and line feed '\r\n'. For Linux OS this is the '\n' character.
 
@@ -95,8 +95,8 @@ This rendering extension does not support any interactive features.
 
 ## See Also
 
- * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
+ * [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
 
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+ * [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
 
- * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+ * [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

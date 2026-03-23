@@ -19,7 +19,7 @@ __Telerik Reporting__ supports serialization/deserialization of the report defin
 
 The report serialization/deserialization is useful in various scenarios and opens many possibilities that are not easily accomplished otherwise. For example, this allows adding or modifying reports in your application without recompiling or redeploying it. Another typical scenario is saving/loading dynamically generated report definitions or transferring them over the network.
 
-> To better handle report definition resources we also provide a [ReportPackager](/api/Telerik.Reporting.ReportPackager) that serializes the report definition in XML and packages it together with its resources in a file with zip compression. For more information see [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}).
+> To better handle report definition resources we also provide a [ReportPackager](/api/Telerik.Reporting.ReportPackager) that serializes the report definition in XML and packages it together with its resources in a file with zip compression. For more information see [Package Report Definition]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition).
 
 ## Class Report Definition
 

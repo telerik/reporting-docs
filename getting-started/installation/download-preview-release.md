@@ -39,5 +39,5 @@ The following image shows the name of the Preview generated on the 22nd of Decem
 
 ## See Also
 
-* [Installation Approaches for Telerik Reporting]({%slug telerikreporting/installation%})
-* [Telerik Reporting Licensing]({%slug telerikreporting/licensing%})  
+* [Installation Approaches for Telerik Reporting]slug:telerikreporting/installation)
+* [Telerik Reporting Licensing]slug:telerikreporting/licensing)  

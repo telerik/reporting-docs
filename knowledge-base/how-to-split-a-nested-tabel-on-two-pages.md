@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-By default, [Table/CrossTab/List item]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) is kept together when the report is paged. 
+By default, [Table/CrossTab/List item]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) is kept together when the report is paged. 
 However, a common requirement when using *nested* tables in the report is to force them to break between pages. In this article, we will explain how to achieve that behavior.  
   
 ## Solution
@@ -41,5 +41,5 @@ If the nested table contains report items that do not have *KeepTogether* proper
 
 ## See Also
 
-[Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}).
+[Understanding Pagination]slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination).
 

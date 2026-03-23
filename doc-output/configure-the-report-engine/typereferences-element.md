@@ -95,4 +95,4 @@ If the type is correctly resolvable at runtime, it will be permitted to be used 
 ## See Also
 
 * [Application Configuration Files](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-configuration-files)
-* [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
+* [ObjectDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)

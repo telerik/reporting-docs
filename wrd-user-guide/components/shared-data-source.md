@@ -17,7 +17,7 @@ img[alt$="><"] {
 
 # Sharing and Reusing a Data Source
 
-Instead of configuring a data connection every time you build a report, the Shared [Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) component lets you set it up once and reuse it across multiple reports. This saves you time, reduces errors, and keeps your data connections consistent. Whether you're pulling data from a database, a file, or a web service, this approach helps you stay organized and efficient.
+Instead of configuring a data connection every time you build a report, the Shared [Data Source]slug:web-report-designer-user-guide-components-data-sources) component lets you set it up once and reuse it across multiple reports. This saves you time, reduces errors, and keeps your data connections consistent. Whether you're pulling data from a database, a file, or a web service, this approach helps you stay organized and efficient.
 
 Here are the key benefits of using Shared Data Sources in Telerik's Web Report Designer:
 
@@ -27,15 +27,15 @@ Here are the key benefits of using Shared Data Sources in Telerik's Web Report D
 
 * Security Layer & Hiding Connection Details—Shared Data Sources store sensitive information (like connection strings) on the server, preventing users from seeing them in the report definition. This enhances security and credential management.
 
-* Centralized Access via Asset Manager—Shared Data Sources appear as assets in the Web Report Designer's Explorer (via the [Asset Manager]({%slug web-report-designer-user-guide-assets-manager%}). This makes them discoverable to all report authors that are granted permissions.
+* Centralized Access via Asset Manager—Shared Data Sources appear as assets in the Web Report Designer's Explorer (via the [Asset Manager]slug:web-report-designer-user-guide-assets-manager). This makes them discoverable to all report authors that are granted permissions.
 
 You can easily connect your reports to a variety of data sources — giving you flexibility to work with the formats you already use, such as:
 
-  * [SqlDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#sql-data-source)
-  * [WebServiceDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#web-service-data-source)
-  * [ObjectDataSource]({%slug  web-report-designer-user-guide-components-data-sources%}#object-data-source)
-  * [JsonDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#json-data-source)
-  * [CsvDataSource]({%slug web-report-designer-user-guide-components-data-sources%}#csv-data-source)
+  * [SqlDataSource]slug:web-report-designer-user-guide-components-data-sources#sql-data-source)
+  * [WebServiceDataSource]slug:web-report-designer-user-guide-components-data-sources#web-service-data-source)
+  * [ObjectDataSource]slug: web-report-designer-user-guide-components-data-sources#object-data-source)
+  * [JsonDataSource]slug:web-report-designer-user-guide-components-data-sources#json-data-source)
+  * [CsvDataSource]slug:web-report-designer-user-guide-components-data-sources#csv-data-source)
 
 ## Configuring a Shared Data Source
 
@@ -50,7 +50,7 @@ After saving a data source as shared, the Web Report Designer generates an `.sds
 
    ![Creating a SDSX file ><](images/CreatingSdsxFile.png)
 
-To view all existing Shared Data Sources, open the [Assets Manager]({%slug web-report-designer-user-guide-assets-manager%}) from the main menu.
+To view all existing Shared Data Sources, open the [Assets Manager]slug:web-report-designer-user-guide-assets-manager) from the main menu.
 
    ![Use Assets Manager to view your Shared Data Sources ><](images/AllSharedDataSources.png)
 
@@ -72,6 +72,6 @@ In the Web Report Designer, both Data Source and Shared Data Source are used to 
 
 ## See Also
 
-* [Web Report Designer User Guide: An Overview]({%slug user-guide/overview%})
-* [App Tour of the Web Report Designer]({%slug user-guide/app-tour%})
-* [Create a Simple Report]({%slug web-report-designer-user-guide-getting-started%})
+* [Web Report Designer User Guide: An Overview]slug:user-guide/overview)
+* [App Tour of the Web Report Designer]slug:user-guide/app-tour)
+* [Create a Simple Report]slug:web-report-designer-user-guide-getting-started)

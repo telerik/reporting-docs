@@ -29,7 +29,7 @@ How can I create a Graph with Column and Line series?
 
 The suggested approach demonstrates how to create a Graph with both column and line series and displaying the maximum and the average amount of sales on a monthly basis based on the __AdventureWorks__ sample database.
 
-The sample scenario is valid when you are working with the Telerik Reporting [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+The sample scenario is valid when you are working with the Telerik Reporting [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 
 1. Start the Graph Wizard:
 
@@ -39,7 +39,7 @@ The sample scenario is valid when you are working with the Telerik Reporting [St
 
 	+ (For the Visual Studio Report Designer) Initiate the Graph Wizard from the __Visual Studio toolbox__. Then, select the __Clustered Column__ chart type and click __OK__. As a result, the Graph Wizard starts.
 
-1. Click the __Add New Data Source...__ button and select __[SQL Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__:
+1. Click the __Add New Data Source...__ button and select __[SQL Data Source]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview)__:
 
 	1. Set the connection string to the demo AdventureWorks database.
 	1. Set the query to the following one:

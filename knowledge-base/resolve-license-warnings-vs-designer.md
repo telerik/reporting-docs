@@ -52,5 +52,5 @@ After completing these steps, exporting reports from the Visual Studio Report De
 
 ## See Also
 
-- [Visual Studio Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
-- [Troubleshoot License Problems]({%slug license-troubleshoot%})
+- [Visual Studio Report Designer Overview]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
+- [Troubleshoot License Problems]slug:license-troubleshoot)

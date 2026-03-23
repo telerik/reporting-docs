@@ -18,7 +18,7 @@ The **JSON Data Source Wizard** allows you to create a new or edit an existing *
 
    ![Choose a JSON Source dialog of the JsonDataSource Wizard of the Report Designer](images/DataSources/JsonDataSourceSource.png)
 
-   Optionally use the data selector to query and filter the JSON data.The data selector is a [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).
+   Optionally use the data selector to query and filter the JSON data.The data selector is a [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) string which will be used to query the data. For more information please refer to [How to Use JSONPath to filter JSON data]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data).
 
 1. **Preview Data Source Results** Preview the result set returned by the data source.
 

@@ -24,13 +24,13 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 - A service that runs in a Telerik Report Server instance.
 - A service that is hosted locally in the same application.
 
-In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 2.1 and 2.2]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2%}).
+In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 2.1 and 2.2]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2).
 
 ## Adding the HTML5 Report Viewer
 
 1. This tutorial uses the **Barcodes Report.trdp** report definitions file that must be located in a **Reports** folder inside the project.
 
-   Follow [these steps]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2%}#add-report-definitions) to make the **Barcodes Report.trdp** file available in your project.
+   Follow [these steps]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2#add-report-definitions) to make the **Barcodes Report.trdp** file available in your project.
 
 1. Make sure that the app configuration inside the **Configure** method of the **Startup.cs** can serve static files:
 
@@ -40,7 +40,7 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
 
 1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**.
 
-   Name the file **index.html** and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.
+   Name the file **index.html** and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) help article.
 
    The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below. Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to `wwwroot`.
 
@@ -99,4 +99,4 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

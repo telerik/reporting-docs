@@ -35,13 +35,13 @@ Set @localVariable='SELECT * FROM MYTABLE'
 Exec(@localVariable)
 ````
  
-- If the above is set as SQL text, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) will return an error like:  
+- If the above is set as SQL text, the [SqlDataSource Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview) will return an error like:  
 
 `The variable name '@localVariable' has already been declared. Variable names must be unique within a query batch or stored procedure.`
   
 ## Solution  
 
-On configuring a SqlDataSource component you can map SQL parameters to report parameters - [SqlDataSource Wizard - step 4]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). 
+On configuring a SqlDataSource component you can map SQL parameters to report parameters - [SqlDataSource Wizard - step 4]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview). 
  
 SQL queries relying on local variables can be turned into **stored procedures**. 
 
@@ -53,4 +53,4 @@ The syntax of the SQL query must be considered with the specification of the sel
   
 ## See Also
 
-* [Using Parameters with the SqlDataSource component.]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})  
+* [Using Parameters with the SqlDataSource component.]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)  

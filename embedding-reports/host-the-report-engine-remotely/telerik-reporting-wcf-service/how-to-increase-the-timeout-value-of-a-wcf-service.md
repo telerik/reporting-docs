@@ -48,7 +48,7 @@ ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
 }
 ```
 
-For more information, see [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%}).
+For more information, see [Using Custom Bindings]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings).
 
 ## Timeouts when hosted in ASP.NET
 

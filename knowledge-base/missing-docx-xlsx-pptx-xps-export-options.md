@@ -42,7 +42,7 @@ where {X} is DOCX, XLSX, PPTX, or XPS.
 
 ## Possible Cause
 
-Usually, this is related to not having the Telerik Reporting rendering format specific assemblies referenced in the project or the rendering format being unavailable altogether due to limitations in .NET Core projects - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
+Usually, this is related to not having the Telerik Reporting rendering format specific assemblies referenced in the project or the rendering format being unavailable altogether due to limitations in .NET Core projects - [.NET Core Support]slug:telerikreporting/using-reports-in-applications/dot-net-core-support).
 
 ## Solution
 
@@ -55,7 +55,7 @@ The `XPS` rendering extension requires the `Telerik.Reporting.XpsRendering.dll` 
 The `DOCX/PPTX/XLSX` rendering extensions are OpenXML formats and require two components:
 
 1. A Telerik Reporting OpenXML rendering assembly
-1. The [Open XML SDK]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (`DocumentFormat.OpenXml.dll`)
+1. The [Open XML SDK]slug:telerikreporting/using-reports-in-applications/third-party-dependencies) (`DocumentFormat.OpenXml.dll`)
 
 The specific assembly/package you need depends on your project type and the version of `DocumentFormat.OpenXml` you are using.
 
@@ -88,20 +88,20 @@ You can also reference assemblies directly, which is common in .NET Framework pr
 
 Binding redirects apply to .NET Framework apps that load assemblies via `app.config` or `web.config`. If your `DocumentFormat.OpenXml` version differs from the one the Telerik assembly was compiled against, add a binding redirect. 
 
-See [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%}) for details.
+See [Deploy Telerik Reporting with newer OpenXML SDK version]slug:deploy-telerik-reporting-with-newer-openxml-sdk-version) for details.
 
 ### Where to Add References
 
 Add the assembly/package references to the project that handles report processing:
 
 * If the project uses [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) instance, add the references to that project.
-* If the project uses a viewer that operates via [Telerik Reporting Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), add the references to the service project.
-* If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}), add the references to the viewer project.
+* If the project uses a viewer that operates via [Telerik Reporting Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview), add the references to the service project.
+* If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview), add the references to the viewer project.
 
 > important When deploying the application, verify that the above-listed assemblies are copied into the `bin` folder. For this purpose, select the references in Visual Studio and set their `CopyLocal` to `true`.
 
 ## See Also
 
-* [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})
-* [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%})
-* [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
+* [Third-Party Dependencies]slug:telerikreporting/using-reports-in-applications/third-party-dependencies)
+* [Deploy Telerik Reporting with newer OpenXML SDK version]slug:deploy-telerik-reporting-with-newer-openxml-sdk-version)
+* [.NET Core Support]slug:telerikreporting/using-reports-in-applications/dot-net-core-support)

@@ -14,15 +14,15 @@ reportingArea: General
 
 This document describes the main uses of report parameters, report parameter properties, and parameter values. Report parameters allow you to control the report's content, connect related reports, or use them as arguments in functions.
 
-To design a report that uses parameters effectively, you need to understand how parameters and [Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) components work together, how parameters and expressions work together, and how to manage parameters.
+To design a report that uses parameters effectively, you need to understand how parameters and [Data Source]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) components work together, how parameters and expressions work together, and how to manage parameters.
 
 ## Main Usage of Report Parameters
 
 Parameters may contain single or multiple values. In case they have pre-defined values (i.e. Available Values), the latter may be static or dynamic (e.g. query-based) collections. The parameters may be allowed to have BLANK and NULL values. Other usages of the report parameters are:
 
-* in data binding - to vary report data retrieved from a [Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) component
-* in [expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%}) - to directly provide a value
-* in [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) filtering, sorting or grouping criteria
+* in data binding - to vary report data retrieved from a [Data Source]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) component
+* in [expressions]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions) - to directly provide a value
+* in [data item]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) filtering, sorting or grouping criteria
 
 After a report parameter is created, you can modify the default values and other parameter properties, such as visibility.
 
@@ -46,7 +46,7 @@ Report parameters can have the following properties:
 
 	+ __Integer__
 
-		In some scenarios you may need to convert the Integer Parameter Value to `System.Int32` i.e. `int`, for example, to pass it to a User Function, DataSource parameter, etc. In these cases, apply the [Conversion Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions%}) `CInt` to the parameter before passing the value to avoid the potential failure of the cast from `System.Int64` to `System.Int32`.
+		In some scenarios you may need to convert the Integer Parameter Value to `System.Int32` i.e. `int`, for example, to pass it to a User Function, DataSource parameter, etc. In these cases, apply the [Conversion Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions) `CInt` to the parameter before passing the value to avoid the potential failure of the cast from `System.Int64` to `System.Int32`.
 
 * [Name](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Name)
 
@@ -62,7 +62,7 @@ Report parameters can have the following properties:
 
 	Specifies the text for the parameter to be displayed in the report viewer as a prompt to the end user. It can be blank, string, or Expression. May be accessed in Expressions with the Global Object `=Parameters.[Parameter Name].Text`. If not set, the `Name` of the parameter will be used instead.
 
-	> When you use an Expression to set the property, data fields should not be used and respectively they are not listed in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
+	> When you use an Expression to set the property, data fields should not be used and respectively they are not listed in the [Edit Expression Dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog).
 
 * [Visible](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible) 
 
@@ -84,14 +84,14 @@ Report parameters can have the following properties:
 
 	The available values, or valid values, are a set of predefined values which are acceptable as the value of the parameter. Each available value may have a label that will be displayed if the parameter is visible. To define available values for a parameter you need to set the following nested properties:
 
-	+ `DataSource` – a data source for the value/label pairs. The same data sources are supported as for the [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%}), including the Telerik Reporting [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
+	+ `DataSource` – a data source for the value/label pairs. The same data sources are supported as for the [Data Items]slug:telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data), including the Telerik Reporting [Data Source Components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview).
 
 		> The optimization for reusing the raw data from the same DataSource component introduced with [R3 2019 (13.2.19.918)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2019-13-2-19-918) is valid only for __data items__. It doesn't concern the Report Parameters with [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) relying on DataSource components. Even if several parameters fetch their [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) from the same DataSource, the latter will be called once for each parameter.
 
 	+ `ValueMember` – a column name, expression, or embedded expression based on the __DataSource__ schema. It is used as `Value` in the value/label pair. May be accessed in Expressions with the Global Object `=Parameters.[Parameter Name].Value`.
 	+ `DisplayMember` – a column name, expression, or embedded expression based on the __DataSource__ schema. It is used as `Label` in the value/label pair. May be accessed in Expressions with the Global Object `=Parameters.[Parameter Name].Label`. If omitted the `ValueMember` will be used as `DisplayMember` as well. Optional.
 
-	At design time, you can use the [Data Source Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}) to select an existing or to create a new data source.
+	At design time, you can use the [Data Source Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard) to select an existing or to create a new data source.
 
 * [Mergeable](/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Mergeable)
 
@@ -117,10 +117,10 @@ A Parameter is populated by setting its `Value` property. You may set this prope
 
 Report Parameters' value can be populated in one of the following ways:
 
-* At design time through the [ReportParameter Collection editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor%})
+* At design time through the [ReportParameter Collection editor]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor)
 * Using the automatic user interface that each Report Viewer provides.
 * Programmatically by using the `ReportParameters` collection.
-* Using a [SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%}) `Parameters` collection.
+* Using a [SubReports]slug:telerikreporting/designing-reports/report-structure/subreport) `Parameters` collection.
 
 ## Cascading (dependent) parameters
 
@@ -128,8 +128,8 @@ Cascading parameters provide a way of creating dependencies between parameters t
 
 For example, the first parameter could present a list of product categories. When the user selects a category, the second parameter is updated with a list of subcategories within the category. A third parameter could then display a list of products within the selected subcategory. The value for the product parameter is used to filter the report to a particular product. The parameters whose values depend on other parameter values are known as cascading, dependent, or hierarchical parameters. For more details on how to use cascading parameters, see the following documents:
 
-* [How to Cascade Parameters with applied filtering on Report level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-report-level%})
-* [How to Cascade Parameters with applied filtering on data source level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
+* [How to Cascade Parameters with applied filtering on Report level]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-report-level)
+* [How to Cascade Parameters with applied filtering on data source level]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level)
 
 >note The Report Parameter is processed as a whole entity. Its evaluation starts after all its dependencies, for example, other Report Parameter values have been evaluated. If, for example, the *Text* property is set with an Expression that can be evaluated and the *Value* property depends on another Report Parameter, whose value is unknown/invalid, neither the Text nor the Value property will be set.
 
@@ -139,7 +139,7 @@ When at least one report parameter has its `Visible` property turned on, a param
 
 ## See Also
 
-* [Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
-* [Using Report Parameters in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%})
-* [Using Report Parameters programmatically]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-programmatically%})
-* [Using Multivalue Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%})
+* [Adding Report Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters)
+* [Using Report Parameters in Expressions]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions)
+* [Using Report Parameters programmatically]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-programmatically)
+* [Using Multivalue Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters)

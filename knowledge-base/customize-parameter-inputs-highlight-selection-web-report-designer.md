@@ -19,7 +19,7 @@ ticketid: 1674196
 
 Customizing the style of the report parameters area and highlighting selections can enhance the usability and visual appeal of the Web Report Designer. This article demonstrates how to adjust the layout of CheckBox parameters and apply a darker color to selected items in the parameters area.
 
-This knowledge base article explains how to customize the parameters area in the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) using **CSS** and **JavaScript**.
+This knowledge base article explains how to customize the parameters area in the [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) using **CSS** and **JavaScript**.
 
 ## Solution
 
@@ -100,8 +100,8 @@ These adjustments will improve the layout and visual feedback in the parameters 
 
 ## See Also
 
-- [Web Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
-- [Kendo Widgets Requirements]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#kendo-widgets-requirements)
-- [ViewerInitializing Event]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization%}#viewerinitializing)
-- [PageReady Event]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)%})
+- [Web Report Designer Overview]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+- [Kendo Widgets Requirements]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#kendo-widgets-requirements)
+- [ViewerInitializing Event]slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization#viewerinitializing)
+- [PageReady Event]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args))
 - [CSS Flexbox Container](https://www.w3schools.com/css/css3_flexbox_container.asp)

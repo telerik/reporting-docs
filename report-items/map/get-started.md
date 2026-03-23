@@ -14,7 +14,7 @@ reportingArea: General
 
 This guide shows how to add the Telerik Reporting Map report item to reports.
 
-The suggested implementation demonstrates how to create a Map which will present the sales distribution by products among several states using the **Adventure Works** sample database and the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). The steps are valid for the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) as well and can be reproduced with code too.
+The suggested implementation demonstrates how to create a Map which will present the sales distribution by products among several states using the **Adventure Works** sample database and the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). The steps are valid for the [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) as well and can be reproduced with code too.
 
 After the completion of this guide, you will be able to achieve the following result.
 
@@ -23,7 +23,7 @@ After the completion of this guide, you will be able to achieve the following re
 ## Prerequisites
 
 - Obtain a valid Location Provider key to authenticate your geocoding requests.
-- If you don't want to use a location provider, provide the geographical coordinates of your points yourself and set up the `MapSeries` accordingly. For more information, refer to the article on [location providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).
+- If you don't want to use a location provider, provide the geographical coordinates of your points yourself and set up the `MapSeries` accordingly. For more information, refer to the article on [location providers]slug:telerikreporting/designing-reports/report-structure/map/structure/location-providers).
 
 ## Adding the Map
 
@@ -37,7 +37,7 @@ After the completion of this guide, you will be able to achieve the following re
 
 ## Adding the Data Source
 
-On the `Choose Data Source` page, add a new [SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}).
+On the `Choose Data Source` page, add a new [SqlDataSource]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview).
 
 1. Set the connection string to the demo AdventureWorks database.
 1. Paste the following query in the **Select Statement** box:
@@ -103,10 +103,10 @@ You may download the demo report from our Reporting Samples GitHub repository - 
 
 ## See Also
 
-- [Adding LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
-- [Adding ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
-- [Creating Maps with BarCharts]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
-- [Adding a Choropleth Map to the Report with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
-- [(KB) Adding a Choropleth Map to the Report with the Choropleth Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report%})
-- [(KB) Creating Maps with Custom Polygons]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons%})
-- [(KB) Setting Up a Map Manually]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually%})
+- [Adding LocationMapSeries to the Map]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item)
+- [Adding ShapeMapSeries to the Map]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item)
+- [Creating Maps with BarCharts]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source)
+- [Adding a Choropleth Map to the Report with the Map Wizard]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard)
+- [(KB) Adding a Choropleth Map to the Report with the Choropleth Wizard]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report)
+- [(KB) Creating Maps with Custom Polygons]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons)
+- [(KB) Setting Up a Map Manually]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually)

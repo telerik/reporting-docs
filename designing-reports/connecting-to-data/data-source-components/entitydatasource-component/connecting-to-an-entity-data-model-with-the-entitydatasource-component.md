@@ -16,7 +16,7 @@ This section discusses how to connect the `EntityDataSource` component to an __E
 
 ![The structure of the Entity Data Model of the Adventure Works sample database we are going to use in the examples](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
-The simplest way to configure `EntityDataSource` in __Report Designer__ is to use the [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%}). That wizard is started automatically when you create a new `EntityDataSource`, but you can invoke it manually at any time from the context menu associated with the data source by choosing `Configure`:
+The simplest way to configure `EntityDataSource` in __Report Designer__ is to use the [EntityDataSource Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard). That wizard is started automatically when you create a new `EntityDataSource`, but you can invoke it manually at any time from the context menu associated with the data source by choosing `Configure`:
 
 ![The context menu of the EntityDataSource component with the Configure option chosen](images/DataSources/EntityDataSourceConfigure.png)
 

@@ -30,7 +30,7 @@ res_type: kb
 > <br/>
 > If you need to use `NewtonsoftJson` in non-reporting controllers, that would still be possible with the [Local](#local) approach demonstrated below. See [The type or namespace name NewtonsoftJsonOutputFormatter could not be found](slug:type-or-namespace-newtonsoftjsonoutputformatter-could-not-be-found) for more information on the topic.
 
-A common requirement is to use [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-7.0) for serialization, instead of the required by the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) serialization package [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/).
+A common requirement is to use [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-7.0) for serialization, instead of the required by the [Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) serialization package [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/).
 
 ## Suggested Workarounds
 

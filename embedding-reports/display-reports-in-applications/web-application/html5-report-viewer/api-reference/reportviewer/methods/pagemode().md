@@ -12,7 +12,7 @@ previous_url: /html5-report-viewer-reportviewer-methods-pagemode, /embedding-rep
 
 # The `pageMode()` method of the HTML5 Report Viewer
 
-Gets the current page mode. For more information please see jQuery.fn.telerik_ReportViewer’s pageMode option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options).
+Gets the current page mode. For more information please see jQuery.fn.telerik_ReportViewer’s pageMode option in [Report Viewer Initialization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#options).
 
 Returns: string.
 
@@ -24,4 +24,4 @@ var psm = reportViewer.pageMode();
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

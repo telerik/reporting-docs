@@ -29,7 +29,7 @@ The detail rows of the table may grow vertically to accommodate their content. T
 
 One way to work around the issue is to ensure the detail cell content always fits in a single row. This should guarantee the same height for all detail rows.
 
-If the incoming data doesn't let predicting whether it will fit within a single row in design time, you may use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the height of the table detail row. Here is the [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) that is used to demonstrate the approach in the demo report you may find in the [Reporting Samples GitHub repository](https://github.com/telerik/reporting-samples/blob/master/TableEqualRowHeight.trdp):
+If the incoming data doesn't let predicting whether it will fit within a single row in design time, you may use [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to set the height of the table detail row. Here is the [Expression]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) that is used to demonstrate the approach in the demo report you may find in the [Reporting Samples GitHub repository](https://github.com/telerik/reporting-samples/blob/master/TableEqualRowHeight.trdp):
 
 ````
 = Ifs(Exec("table1", Max(Len(Fields.data))) <= 13, "0.2in",
@@ -38,11 +38,11 @@ If the incoming data doesn't let predicting whether it will fit within a single 
 ````
 The idea is to take the longest data field and based on its maximum length calculate the number of rows that are needed to fit its content within the cell.
 
-If the scenario is more complicated and the [built-in user functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) don't fit your needs, you may create a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to return the detail row height.
+If the scenario is more complicated and the [built-in user functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview) don't fit your needs, you may create a [custom user function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) to return the detail row height.
 
 ## See Also
 
-* [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
-* [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
-* [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%})
-* [Creating a Custom User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+* [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
+* [Expressions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)
+* [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview)
+* [Creating a Custom User Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)

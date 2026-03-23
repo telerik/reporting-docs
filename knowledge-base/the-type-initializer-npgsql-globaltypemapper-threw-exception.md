@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-The connection to the PostgreSQL database fails despite the connection string being correct. This can happen while configuring the [`SqlDataSource`]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component's connection in the designer or when displaying the report in areport viewer.
+The connection to the PostgreSQL database fails despite the connection string being correct. This can happen while configuring the [`SqlDataSource`]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) component's connection in the designer or when displaying the report in areport viewer.
 
 ## Error Message
 
@@ -35,10 +35,10 @@ Method 'DisposeAsync' in type 'Npgsql.NpgsqlBinaryExporter' from assembly 'Npgsq
 
 ## Solution
 
-This is an issue introduced with version `4.1.3` of the `Npgsql` data provider. We recommend using version >=`4.1.10` of the `Npgsql` data provider instead - [Configuring the Npgsql data provider]({%slug configuring-postgres-with-npgsql%}).
+This is an issue introduced with version `4.1.3` of the `Npgsql` data provider. We recommend using version >=`4.1.10` of the `Npgsql` data provider instead - [Configuring the Npgsql data provider]slug:configuring-postgres-with-npgsql).
 
 ## See Also
 
-* [Configuring the Npgsql data provider]({%slug configuring-postgres-with-npgsql%})
-* [Registering .NET Framework data provider without installing its driver]({%slug how-to-register-sqldatasource-data-providers-without-driver-installation%})
+* [Configuring the Npgsql data provider]slug:configuring-postgres-with-npgsql)
+* [Registering .NET Framework data provider without installing its driver]slug:how-to-register-sqldatasource-data-providers-without-driver-installation)
 * ["Method 'DisposeAsync' in type 'Npgsql.NpgsqlBinaryImporter' does not have an implementation](https://github.com/npgsql/npgsql/issues/2923)

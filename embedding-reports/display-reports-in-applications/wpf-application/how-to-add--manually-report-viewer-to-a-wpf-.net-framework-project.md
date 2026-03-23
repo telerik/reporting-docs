@@ -48,7 +48,7 @@ This article explains the steps needed to manually create an application that us
 
    For the above sample, we have used the **Fluent** theme. The WPF Report Viewer supports all the Telerik UI for WPF themes. To style the viewer with another theme, change the above XAML snippet **Fluent** with the desired theme name.
 
-1. Set the `ReportSource` for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}). This can be done either declaratively or programmatically:
+1. Set the `ReportSource` for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers). This can be done either declaratively or programmatically:
 
    - Specifying a report source declaratively, we would use type report source for this example:
 
@@ -85,4 +85,4 @@ In case you use _Telerik UI for WPF_ version greater than the **latest official 
 
 ## See Also
 
-- [Adding Report Viewer to a WPF .NET Framework Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+- [Adding Report Viewer to a WPF .NET Framework Project]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project)

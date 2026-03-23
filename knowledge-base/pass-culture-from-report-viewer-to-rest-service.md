@@ -52,6 +52,6 @@ The HTML5-based report viewers also have a [renderingBegin(e, args) event](/api/
     }
 ```
 ## Notes
-You need to have the [Report localized]({%slug telerikreporting/designing-reports/localizing-reports%}) for the corresponding "yourCulture".  
+You need to have the [Report localized]slug:telerikreporting/designing-reports/localizing-reports) for the corresponding "yourCulture".  
 
-Another approach you may use is through a [custom User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) - see the article section [Centralizing the localization of reports]({%slug telerikreporting/designing-reports/localizing-reports%}#centralizing-the-localization-of-reports) for details.
+Another approach you may use is through a [custom User Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) - see the article section [Centralizing the localization of reports]slug:telerikreporting/designing-reports/localizing-reports#centralizing-the-localization-of-reports) for details.

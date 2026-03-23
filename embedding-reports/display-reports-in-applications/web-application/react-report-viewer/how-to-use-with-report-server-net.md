@@ -21,7 +21,7 @@ The article explains how to set up the HTML5 Report Viewer to work with the Tele
 
 ## Prerequisites
 
-- Review the React Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}#requirements).
+- Review the React Report Viewer [Requirements]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview#requirements).
 - Installed and running [Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview).
 - Report Server for .NET's User that will connect from the viewer should have at least one enabled Token.
 - Report Server for .NET should contain at least one report that can be accessed by the User account.
@@ -113,5 +113,5 @@ The article explains how to set up the HTML5 Report Viewer to work with the Tele
 ## See Also
 
 - [Telerik Report Server](https://docs.telerik.com/report-server/introduction)
-- [React Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-- [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%})
+- [React Report Viewer Overview]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview)
+- [How to Use React Report Viewer with REST Service]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service)

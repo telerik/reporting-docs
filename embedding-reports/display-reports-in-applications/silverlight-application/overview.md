@@ -13,7 +13,7 @@ previous_url: /silverlight-report-viewer-intro, /embedding-reports/display-repor
 
 > The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
 
-The Silverlight Report Viewer allows developers to deliver reports produced by Telerik Reporting to any rich application developed with Silverlight. The Silverlight viewer lives entirely on the client side, while the reports and the rendering engine are on the server side (accessible through the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%})). 
+The Silverlight Report Viewer allows developers to deliver reports produced by Telerik Reporting to any rich application developed with Silverlight. The Silverlight viewer lives entirely on the client side, while the reports and the rendering engine are on the server side (accessible through the [Telerik Reporting WCF Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview)). 
 
   ![](images/SilverlightViewer1.png)
 
@@ -37,11 +37,11 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 * Go to last page
 
-* Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info. 
+* Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]slug:telerikreporting/designing-reports/rendering-and-paging/overview) for more info. 
 
-* Print: use `Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting` to switch between Silverlight native print and [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}). 
+* Print: use `Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting` to switch between Silverlight native print and [True Print]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print). 
 
-* Export: see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) for available export formats. 
+* Export: see [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats) for available export formats. 
 
 * Show/Hide document map
 
@@ -55,7 +55,7 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 * `Telerik.ReportViewer.Silverlight.ReportViewer.Report` - the [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname) of the Report type for the viewer to display; 
 
-* `Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting` - Specifies whether to use native Silverlight printing or [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}). Default value is _true_. 
+* `Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting` - Specifies whether to use native Silverlight printing or [True Print]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print). Default value is _true_. 
 
 In order to use our Silverlight Report Viewer, you need a Silverlight application. In order to create such, you need the following tools installed:
 
@@ -69,18 +69,18 @@ In order to use our Silverlight Report Viewer, you need a Silverlight applicati
 
 * (optional) Expression Blend.
 
-> The Silverlight ReportViewer requires the Telerik Reporting WCF Service. For more information: [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}). 
+> The Silverlight ReportViewer requires the Telerik Reporting WCF Service. For more information: [Telerik Reporting WCF Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview). 
 
 ## How it works
 
 The Silverlight ReportViewer control is a composite of Telerik UI for Silverlight controls. The viewer's functionality resides in _Telerik.ReportViewer.Silverlight.dll_ and the viewer's UI in _Telerik.ReportViewer.Silverlight.xaml_. 
 
-> The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file and the `Silverlight ReportViewer`. 
+> The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [Telerik.ReportViewer.Silverlight.xaml]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)) file and the `Silverlight ReportViewer`. 
 
 The purpose of the Silverlight ReportViewer control is to display Telerik Reports and allow the user to interact with them. Reports are processed and rendered on the server where __Telerik Reporting engine__ and __Telerik WCF service__ run. The __Telerik Reporting WCF Service__ serves reports to the Silverlight ReportViewer, and is responsible for managing the reports state and their resources as images. The report in the viewer is rendered as standard XAML elements, as Canvas and TextBlock, through Telerik Reporting XAML for Silverlight rendering mechanism. 
 
 ## See Also
 
-* [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
+* [How to Add report viewer to a Silverlight application]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application)
 
-* [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%})
+* [Using Custom Bindings]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings)

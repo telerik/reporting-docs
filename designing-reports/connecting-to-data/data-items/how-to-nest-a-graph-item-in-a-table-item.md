@@ -16,9 +16,9 @@ The Telerik Reporting data items are used to present data by two dimensions (the
 
 This can be achieved with simply nesting data items. In this case the nested data item will get its data from the "master" data item, binding its data source to the master item's DataObject.
 
-As a real life scenario, in the current example we will list the top 5 performing agents and the amount of their sales divided by product categories on a yearly basis, presented in a pie chart. We will use a [Crosstab item]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) as a master data item and it will define the dimensions "Sales Person Name" and "Year". For a nested data item we will use a [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) which will add the dimension "Product Category".
+As a real life scenario, in the current example we will list the top 5 performing agents and the amount of their sales divided by product categories on a yearly basis, presented in a pie chart. We will use a [Crosstab item]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas) as a master data item and it will define the dimensions "Sales Person Name" and "Year". For a nested data item we will use a [Graph item]slug:telerikreporting/designing-reports/report-structure/graph/structure) which will add the dimension "Product Category".
 
-We will use the **AdventureWorks** sample database and the [Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
+We will use the **AdventureWorks** sample database and the [Telerik Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
 
 ## Steps for Nesting a Graph item in a Table item
 
@@ -62,7 +62,7 @@ We will use the **AdventureWorks** sample database and the [Telerik Report Desig
 
    If you preview the report, you will notice that the chart data stays the same on every row and column of the crosstab. That's why we connected it to the whole dataset. In order to connect it to the current row group data, defined by the expression `"Fields.SalesPersonName"`, we have to bind the graph data source to the current report item's data object.
 
-1. Open the Graph's [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) editor and create a new binding for the DataSource property as shown below:
+1. Open the Graph's [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) editor and create a new binding for the DataSource property as shown below:
 
    ![Setting the Nested Graph DataSource through Bindings in the Editor of the Report Designer](images/DataItems/di_NestGraphInTable_BindingsEditor.png)
 
@@ -80,6 +80,6 @@ The same approach is used in the `Product Sales` example report which is also sh
 
 ## See Also
 
-- [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
-- [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
-- [How to use the ReportItem.DataObject in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%})
+- [Table/Crosstab/List]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
+- [Graph Structure]slug:telerikreporting/designing-reports/report-structure/graph/structure)
+- [How to use the ReportItem.DataObject in expressions]slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions)

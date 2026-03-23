@@ -74,7 +74,7 @@ services.AddControllersWithViews(options =>
 
 As a result the viewer shows the exception message `Error registering the viewer with the service.`.
 
-And, in the browser console the [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}) request returns `400 Bad Request` with the following error message:
+And, in the browser console the [Register Client]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client) request returns `400 Bad Request` with the following error message:
 
 ```TEXT
 Failed to load resource: the server responded with a status of 400 (Bad Request)

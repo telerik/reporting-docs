@@ -53,7 +53,7 @@ For busy reports that will need to break the item into two pages, reconsider usi
 
 ## Using In-Place Editing
 
-The in-place editor for the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report item allows you to quickly enter text directly into the designer.
+The in-place editor for the [TextBox]slug:telerikreporting/designing-reports/report-structure/textbox) report item allows you to quickly enter text directly into the designer.
 
 To activate the in-place editor:
 
@@ -68,13 +68,13 @@ The following image shows a TextBox with an activated in-place editor.
 
 ## Using the Expression Editor
 
-For more information about how to use the Expression editor, refer to the article on the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). Note that when pressing the `Enter` key inserts a new line in the expression. To insert a new line in the string resulting from the evaluated expression, enclose the new line within double quotes (`"..."`).
+For more information about how to use the Expression editor, refer to the article on the [**Edit Expression** dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog). Note that when pressing the `Enter` key inserts a new line in the expression. To insert a new line in the string resulting from the evaluated expression, enclose the new line within double quotes (`"..."`).
 
 ![The Expression Editor used to Enter Value in a TextBox in the Report Designer](images/UI014.png)
 
 ## Embedded Expressions
 
-The TextBox report item supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}) to provide a mail merge functionality. Embedded expressions enable you to get and insert data-driven information directly into the TextBox report item to produce customized reports and mail merging.
+The TextBox report item supports [embedded expressions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions) to provide a mail merge functionality. Embedded expressions enable you to get and insert data-driven information directly into the TextBox report item to produce customized reports and mail merging.
 
 ## Considerations and Known Issues
 
@@ -85,11 +85,11 @@ Before you apply a TextBox format, consider the following:
 * If you specify a custom format string, it will prevail over the culture-specific default settings. For example, if you set a custom format string of `#,###` to render 1234 as `1,234`, users in different parts of the world may interpret it in different ways. Before specifying a custom format, consider how the chosen format will affect users of different cultures viewing the report.
 * If you specify an invalid format string, it will override the actual `Value`.
 
-For more information, refer to the article about the [**Format Builder** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%}).
+For more information, refer to the article about the [**Format Builder** dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog).
 
 ## Next Steps 
 
-* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+* [Using Styles to Customize Reports]slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
 * [(API) TextBox](/api/Telerik.Reporting.TextBox)
 * [(API) Angle](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)
 * [(API) Format](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)

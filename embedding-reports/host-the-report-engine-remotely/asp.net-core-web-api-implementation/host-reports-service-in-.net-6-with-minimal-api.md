@@ -53,7 +53,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
 1. Later in the tutorial, we will make sure that the ReportsController can resolve the definitions for the requested reports from this project folder.
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
 
 ### Add the Required Dependencies
 
@@ -62,15 +62,15 @@ This guide applies the recommended NuGet package references approach to add the 
 1. Reference the **Telerik.Reporting.Services.AspNetCore** package.
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX, and PPTX) as export options, reference the **Telerik.Reporting.OpenXmlRendering** NuGet package.
 
-   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project, bringing easier dependency management.
+   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project, bringing easier dependency management.
 
-   Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of the Telerik Reporting installation directory. However, this would require manually adding all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
+   Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of the Telerik Reporting installation directory. However, this would require manually adding all indirect dependencies listed in [.NET Support - Requirements]slug:telerikreporting/using-reports-in-applications/dot-net-core-support#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
    > note You need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the [GDI+ API](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start), which is available on the Windows OS. On Linux and macOS, we use the [SkiaSharp](https://github.com/mono/SkiaSharp) 2D Graphics Library based on Google's [Skia](https://skia.org/) Graphics Library.
 
 ### Setup the Program.cs file as a starting point of the Reporting REST Service project with Minimal APIs
 
-> When the [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) approach for hosting the Reporting REST Service is used, exceptions thrown by the service are propagated to and displayed in the Report Viewer. If this is undesired, set up the service using the 'Controllers' approach - [Hosting the Reporting REST Service in ASP.NET Core with Controllers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
+> When the [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) approach for hosting the Reporting REST Service is used, exceptions thrown by the service are propagated to and displayed in the Report Viewer. If this is undesired, set up the service using the 'Controllers' approach - [Hosting the Reporting REST Service in ASP.NET Core with Controllers]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers)
 
 Modify the `Program.cs` file in the project to enable the Reports Service functionality.
 
@@ -106,8 +106,8 @@ The last supported type of `ConnectionStrings` configuration uses an array to pr
 
 To ensure that the service operates, run the application and navigate to either of the General REST Service API URLs `{applicationRoot}/api/reports/formats` or `{applicationRoot}/api/reports/version`.
 
-- The first should return a [JSON representing the supported rendering extensions]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})
-- The second should return the [version of the Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%}).
+- The first should return a [JSON representing the supported rendering extensions]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats)
+- The second should return the [version of the Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version).
 
 ### Enable Cross-Origin Resource Sharing (CORS) (Optional)
 
@@ -129,4 +129,4 @@ A full example can be found in the installation folder of Telerik Reporting:
 
 ## See Also
 
-- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
+- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]slug:asp-net-core-reporting)

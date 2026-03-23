@@ -265,4 +265,4 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 
 ## See Also
 
-- [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})
+- [Native Blazor Report Viewer Options]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)

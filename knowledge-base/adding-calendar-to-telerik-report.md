@@ -26,7 +26,7 @@ I need to create a calendar within a Telerik Report that visually represents spe
 
 ## Solution
 
-To generate a calendar layout in Telerik Report, use a **List** item with the approach described in the KB article [Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%}). Each cell represents a day, with weeks laid out as rows. 
+To generate a calendar layout in Telerik Report, use a **List** item with the approach described in the KB article [Multi-Column Report - Across the Page and Then Down]slug:how-to-create-multi-column-report---across-the-page-and-then-down). Each cell represents a day, with weeks laid out as rows. 
 
 Additionally, you may create an outer grid with the Months of the Year using the same approach and an outer List, whose detail section will host the Months.
 

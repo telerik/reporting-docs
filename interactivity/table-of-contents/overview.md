@@ -46,9 +46,9 @@ The properties and styles of a particular level in the Levels collection will be
 
 When the Report hierarchy is deeper (has more levels) than the number of levels defined in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection, the style of the last TOC level in the collection will be applied to the remaining TOC entries.
 
-> When using a report book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the report book, you need to configure a [Report Book Table of Contents]({%slug telerikreporting/designing-reports/report-book/report-book-table-of-contents%}).
+> When using a report book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the report book, you need to configure a [Report Book Table of Contents]slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
 
-> note TOC navigational links are handled internally as [Bookmark Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action%}). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book), otherwise the TOC navigational links may not work correctly.
+> note TOC navigational links are handled internally as [Bookmark Actions]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book), otherwise the TOC navigational links may not work correctly.
 
 ## Levels
 
@@ -73,13 +73,13 @@ You can add a table of contents to the report and click on entries in the table 
 
 > note The order of entries in the table of contents is according to the order of the report items in the report items' collection, and not by the order in which the items appear in the report. Thus, to build a hierarchical table of contents, it is recommended to set the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) of report/table groups instead of report items.
 >
-> Alternatively, use the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) to reorder the items in the corresponding container, so that they appear in the TOC in the desired sequence.
+> Alternatively, use the [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) to reorder the items in the corresponding container, so that they appear in the TOC in the desired sequence.
 
 ## Adding a Report Group to the Table of Contents
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
-1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
+1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Select a report group that you want to appear in the table of contents. The properties for the selected group appear in the **Properties** pane.
 1. In the [TocText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
 1. Click **OK**.
@@ -91,7 +91,7 @@ You can add a table of contents to the report and click on entries in the table 
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
-1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
+1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the **Group Explorer** shows the respective groups.
 1. Select a group you want to add to the table of contents, right-click it, and select **Group Properties**. The properties for the selected group appear in the **Edit Table Group** dialog.
 1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
@@ -102,4 +102,4 @@ You can add a table of contents to the report and click on entries in the table 
 
 ## See Also
 
-- [How to Add a Table of Contents to Report Book]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book%})
+- [How to Add a Table of Contents to Report Book]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book)

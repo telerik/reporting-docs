@@ -13,25 +13,25 @@ reportingArea: General
 
 > The following article applies to.NET Core projects that target the **full.NET Framework 4.0+**. If the project targets.NET Core 2.1+ please refer to the following articles:
 >
-> - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
+> - [.NET Core Support]slug:telerikreporting/using-reports-in-applications/dot-net-core-support)
 > - [Using Telerik Reporting in.NET Core Applications](https://www.telerik.com/blogs/using-telerik-reporting-in-net-core-applications)
-> - [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
-> - [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application]({%slug use-existing-report-library-in-net-core-app%})
-> - [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC]({%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%})
+> - [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application.]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application)
+> - [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application]slug:use-existing-report-library-in-net-core-app)
+> - [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC]slug:how-to-implement-telerik-reporting-in-asp-net-core-mvc)
 
 In case you are not familiar with ASP.NET Core, check it out on the [official page](https://www.asp.net/core).
 
 Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release. They are built against the **full.NET Framework**.
 
-Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}). The packages do not include design-time support.
+Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview). The packages do not include design-time support.
 
 ## Before you start
 
 The Reporting engine relies on the GDI+ API available only on WindowsOS machines. Without the GDI+ API reports cannot be rendered.
 
-If you need to have your ASP.NET Core Application targeting more platforms, you can add the [HTML5 Viewer as a JavaScript widget]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}), which does not require any Telerik NuGet packages. The Reporting REST service can be hosted separately on a Windows OS machine, where the HTML5 Viewer will need the address of the service to display content produced on the remote machine.
+If you need to have your ASP.NET Core Application targeting more platforms, you can add the [HTML5 Viewer as a JavaScript widget]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup), which does not require any Telerik NuGet packages. The Reporting REST service can be hosted separately on a Windows OS machine, where the HTML5 Viewer will need the address of the service to display content produced on the remote machine.
 
-More details about hosting the Reporting REST Service are available in [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}) and [How to Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}).
+More details about hosting the Reporting REST Service are available in [How to Add Telerik Reporting REST Web API to Web Application]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application) and [How to Self Host Telerik Reporting REST Web API]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api).
 
 > You might exprience issues with displaying images in the report if using ASP.NET Core **1.1.0** due to the way the requests are handled. It is recommended to upgrade to a newer version of ASP.NET Core - [.NET Core releases](https://github.com/dotnet/core/releases)
 
@@ -136,7 +136,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the [DocumentF
 
    Then add a new **MVC View Page** named **Report**. We want the Report action in the HomeController to target this view.
 
-1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article in the online documentation.
+1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) help article in the online documentation.
 
    The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below. Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.
 
@@ -242,6 +242,6 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the [DocumentF
 
 ## Connection Strings and Engine Configuration
 
-Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine. Thus if you have any named connectionstrings or Telerik Reporting configuration you have to add **app.config** configuration file to the project's root. For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
+Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine. Thus if you have any named connectionstrings or Telerik Reporting configuration you have to add **app.config** configuration file to the project's root. For more information see: [Overview]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview).
 
 Finally, run the project and navigate to the **Report** view to see the report.

@@ -32,11 +32,11 @@ group2,20
 group3,30
 ```
 
-When I use the normal `=Sum(Fields.total)` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}), the total sum ends up being 80 because it does not take into account that the second `group2` is a duplicate, and adds its total to the absolute total. How can I avoid this and get the correct total sum?
+When I use the normal `=Sum(Fields.total)` [aggregate function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions), the total sum ends up being 80 because it does not take into account that the second `group2` is a duplicate, and adds its total to the absolute total. How can I avoid this and get the correct total sum?
 
 ## Solution
 
-In order to ignore any repeated group values, we need to implement a [custom aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) that keeps a list of all groups that we have already passed through so that any duplicate values are ignored. For example:
+In order to ignore any repeated group values, we need to implement a [custom aggregate function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions) that keeps a list of all groups that we have already passed through so that any duplicate values are ignored. For example:
 
 ````CSharp
 [AggregateFunction(Description = "Disctinct Sum Aggregate", Name = "DisctinctSumAggregate")]
@@ -91,6 +91,6 @@ Then, in the report definition, the function may be called with the following ex
 
 ## See Also
 
-* [Custom User Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})
-* [Extending Report Designer to Recognize Custom Assemblies]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
-* [Accumulate an Expression Value from Group Total in an Overall Total]({%slug accumulate-expression-from-group-total-in-overall-total%})
+* [Custom User Aggregate Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions)
+* [Extending Report Designer to Recognize Custom Assemblies]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
+* [Accumulate an Expression Value from Group Total in an Overall Total]slug:accumulate-expression-from-group-total-in-overall-total)

@@ -54,8 +54,8 @@ For example here is a sample JSON data:
 
 ## Solution 1
 
-We use one report that references itself through a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}). The _DataSource_ of each subreport is set to the collection field (the field "List" in the above JSON) from the parent Report _DataSource_. This way, the report structure will be reproduced hierarchically based on the data, and the bottom of the recursion will be hit when the collection fields are no longer available.
-The solution is demonstrted in the [HierarchyFromNestedCollections.trdp](https://github.com/telerik/reporting-samples/blob/master/HierarchyFromNestedCollections.trdp) demo report. Next I have outlined the main points when designing the report. The report has a _DataSource_ assigned as a property - the [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%}) with hierarchical nested data collection, and a _DataSource_ assigned with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) through the following [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}):
+We use one report that references itself through a [SubReport item]slug:telerikreporting/designing-reports/report-structure/subreport). The _DataSource_ of each subreport is set to the collection field (the field "List" in the above JSON) from the parent Report _DataSource_. This way, the report structure will be reproduced hierarchically based on the data, and the bottom of the recursion will be hit when the collection fields are no longer available.
+The solution is demonstrted in the [HierarchyFromNestedCollections.trdp](https://github.com/telerik/reporting-samples/blob/master/HierarchyFromNestedCollections.trdp) demo report. Next I have outlined the main points when designing the report. The report has a _DataSource_ assigned as a property - the [JsonDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component) with hierarchical nested data collection, and a _DataSource_ assigned with [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) through the following [Expression]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview):
 
 ````
 Property path	|	Expression
@@ -63,7 +63,7 @@ DataSource	|	= ReportItem.Parent is Null ? ReportItem.DataSource : ReportItem.Pa
 ````
 
 This way, if the Report doesn't have a parent, like the root report of the hierarchy representation, the default _DataSource_ will be the _JsonDataSource_ assigned as a property, otherwise, the _List_ field of the parent report will become the corresponding data source for each child report in the hierarchy representation. 
-The _SubReport_ item has a [ReportSource]({%slug telerikreporting/designing-reports/report-structure/subreport%}#setting-the-report-source) set both directly as a property, and with the following _Binding_:
+The _SubReport_ item has a [ReportSource]slug:telerikreporting/designing-reports/report-structure/subreport#setting-the-report-source) set both directly as a property, and with the following _Binding_:
 
 ````
 Property path		|	Expression
@@ -78,4 +78,4 @@ can be downloaded from our GitHub repository: [HierarchicalDataRepresentation.zi
 
 ## See Also
 
-* [How to Create a Report that Displays Hierarchical Flat Data]({%slug hierarchical-report-from-flat-data%})
+* [How to Create a Report that Displays Hierarchical Flat Data]slug:hierarchical-report-from-flat-data)

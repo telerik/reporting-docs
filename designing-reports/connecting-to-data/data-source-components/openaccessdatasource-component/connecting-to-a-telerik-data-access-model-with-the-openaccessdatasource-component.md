@@ -16,7 +16,7 @@ This section discusses how to connect the `OpenAccessDataSource` component to a 
 
 ![The structure of the Telerik Data Access Model of the Adventure Works sample database we are going to use in the examples](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
-The simplest way to configure `OpenAccessDataSource` in __Report Designer__ is to use the [OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%}). That wizard is started automatically when you create a new `OpenAccessDataSource`, but you can invoke it manually at any time from the context menu associated with the data source by choosing `"Configure"`:
+The simplest way to configure `OpenAccessDataSource` in __Report Designer__ is to use the [OpenAccessDataSource Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard). That wizard is started automatically when you create a new `OpenAccessDataSource`, but you can invoke it manually at any time from the context menu associated with the data source by choosing `"Configure"`:
 
 ![The context menu of the OpenAccessDataSource component with the Configure option chosen](images/DataSources/OpenAccessDataSourceConfigure.png)
 

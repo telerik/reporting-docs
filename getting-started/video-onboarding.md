@@ -39,4 +39,4 @@ If you wish to learn more and continue with the video onboarding, [enroll in the
 
 ## See Also
 
-* [Web Report Designer User Guide]({%slug user-guide/overview%})
+* [Web Report Designer User Guide]slug:user-guide/overview)

@@ -23,13 +23,13 @@ res_type: kb
 
 ## Description
 
-I am using the [ReportPackager](/api/telerik.reporting.reportpackager) class to [unpackage]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}#unpackaging) and modify my `TRDP` report in code, however, the errors listed below are thrown upon doing so.
+I am using the [ReportPackager](/api/telerik.reporting.reportpackager) class to [unpackage]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition#unpackaging) and modify my `TRDP` report in code, however, the errors listed below are thrown upon doing so.
 
 ## Steps to Reproduce
 
 1. The project targets `.NET` or `.NET Core`.
 1. The `Telerik.Reporting.dll` built for `.NET Framework` is referenced in the project.
-1. A `TRDP` file is being unpackaged in code as shown in the [Packaging and Unpackaging Report Definitions]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) article.
+1. A `TRDP` file is being unpackaged in code as shown in the [Packaging and Unpackaging Report Definitions]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition) article.
 
 ## Error Message
 
@@ -74,5 +74,5 @@ Alternatively, if assembly references must be used, use the `Telerik.Reporting.d
 
 ## See Also
 
-* [Adding the Telerik Private NuGet Feed to VS]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})
-* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
+* [Adding the Telerik Private NuGet Feed to VS]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio)
+* [Restoring NuGet Packages in Your CI Workflow]slug:using-nuget-keys)

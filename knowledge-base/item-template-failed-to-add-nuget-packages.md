@@ -75,4 +75,4 @@ You can use a newer WebAPI version by updating the corresponding ([Microsoft.Asp
 
 ## See Also
 
-- [How To: Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})
+- [How To: Add Telerik Reporting REST Web API to Web Application]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application)

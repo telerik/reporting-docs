@@ -15,15 +15,15 @@ ticketid: 1659115
 
 ## Description
 
-The project's connection strings are stored encrypted in the `appsettings.json` configuration file and when the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component attempts to connect using a *shared* connection resolved from the configuration, it fails due to the connection string being encrypted.
+The project's connection strings are stored encrypted in the `appsettings.json` configuration file and when the [SqlDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) component attempts to connect using a *shared* connection resolved from the configuration, it fails due to the connection string being encrypted.
 
-In this article, we will demonstrate how to use encrypted connection strings with [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) (including those that are used within [SharedDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%})) in both the [HTML5 Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}).
+In this article, we will demonstrate how to use encrypted connection strings with [SqlDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) (including those that are used within [SharedDataSource components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component)) in both the [HTML5 Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and the [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview).
 
 ## Solution
 
 ### Decrypting Connection Strings for SqlDataSource Components - HTML5 Report Viewers
 
-To assign a decrypted connection string to the [ConnectionString](/api/telerik.reporting.sqldatasource#Telerik_Reporting_SqlDataSource_ConnectionString) property of a [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}), it will be necessary to implement a custom [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) in whose's [Resolve](/api/telerik.reporting.services.ireportsourceresolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__) method, we can [unpackage]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}#unpackaging) or [deserialize]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#deserialize-from-xml) our TRDP/TRDX report. This will create a [Telerik.Reporting.Report](/api/telerik.reporting.report) instance upon which we can invoke the [GetDataSources()](/api/telerik.reporting.report#Telerik_Reporting_Report_GetDataSources) method to get references of all data source components in the report and filter them by the `SqlDataSource` type:
+To assign a decrypted connection string to the [ConnectionString](/api/telerik.reporting.sqldatasource#Telerik_Reporting_SqlDataSource_ConnectionString) property of a [SqlDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview), it will be necessary to implement a custom [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) in whose's [Resolve](/api/telerik.reporting.services.ireportsourceresolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__) method, we can [unpackage]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition#unpackaging) or [deserialize]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml#deserialize-from-xml) our TRDP/TRDX report. This will create a [Telerik.Reporting.Report](/api/telerik.reporting.report) instance upon which we can invoke the [GetDataSources()](/api/telerik.reporting.report#Telerik_Reporting_Report_GetDataSources) method to get references of all data source components in the report and filter them by the `SqlDataSource` type:
 
 ````CSharp
 using Microsoft.Extensions.Configuration;
@@ -78,7 +78,7 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ### Decrypting Connection Strings for SqlDataSource Components in SubReports/Navigate To Report Action - HTML5 Report Viewers
 
-To use the decrypted connection strings in [SqlDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) of reports that are used as [SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%}) or those who are loaded with the [Navigate To Report]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) action, it is necessary to also implement the [IReportDocumentResolver](/api/telerik.reporting.services.ireportdocumentresolver) interface since it handles those cases. We can use the approach from the previous section:
+To use the decrypted connection strings in [SqlDataSource components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) of reports that are used as [SubReports]slug:telerikreporting/designing-reports/report-structure/subreport) or those who are loaded with the [Navigate To Report]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) action, it is necessary to also implement the [IReportDocumentResolver](/api/telerik.reporting.services.ireportdocumentresolver) interface since it handles those cases. We can use the approach from the previous section:
 
 ````CSharp
 using System.IO;
@@ -147,7 +147,7 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ### Decrypting Connection Strings for SqlDataSource Components - Web Report Designer
 
-When using the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), if connection strings stored in the configuration file (e.g. `appsettings.json`) are encrypted, it will be necessary to use a custom implementation of the [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage) interface to return decrypted connections.
+When using the [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview), if connection strings stored in the configuration file (e.g. `appsettings.json`) are encrypted, it will be necessary to use a custom implementation of the [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage) interface to return decrypted connections.
 
 In the [ISettingsStorage.GetConnections()](/api/telerik.webreportdesigner.services.isettingsstorage#collapsible-Telerik_WebReportDesigner_Services_ISettingsStorage_GetConnections) method, we must return a list of the connections with *decrypted* connection strings. This list will be used by the Web Report Designer on the client to send the connections to the server, and retrieve data.
 
@@ -285,7 +285,7 @@ builder.Services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new 
 
 ### Decrypting Connection Strings for SharedDataSource Components
 
-For reports utilizing the [SharedDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}), the solution is a custom implementation of the [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) interface:
+For reports utilizing the [SharedDataSource components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component), the solution is a custom implementation of the [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) interface:
 
 ````CSharp
 public class CustomSharedDataSourceResolver : ISharedDataSourceResolver
@@ -323,7 +323,7 @@ Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processin
 }
 ````
 
-> For more detailed instructions on how to register the custom resolver, refer to the [Configuring the processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#shareddatasourceresolver) article.
+> For more detailed instructions on how to register the custom resolver, refer to the [Configuring the processing Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element#shareddatasourceresolver) article.
 
 ### Notes
 
@@ -332,6 +332,6 @@ Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processin
 
 ## See Also
 
-* [Implementing Custom IReportSourceResolver and IReportDocumentResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})
+* [Implementing Custom IReportSourceResolver and IReportDocumentResolver]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver)
 * [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage)
-* [Configuring the SharedDataSourceResolver via the Processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#shareddatasourceresolver)
+* [Configuring the SharedDataSourceResolver via the Processing Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element#shareddatasourceresolver)

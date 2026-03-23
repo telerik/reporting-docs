@@ -11,7 +11,7 @@ previous_url: /installation-trial-license-limitation
 
 Before Q2 2025, Telerik Reporting was distributed in two versions: Trial and Developer (commercial), each having its own assets. Starting with Q2 2025, Telerik Reporting comes in a unified installation package regardless of whether you have a developer (commercial) or a trial license.
 
-> Starting with [Telerik Reporting version Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), you must activate the product through a [license key]({%slug license-key%}) (trial or commercial). To upgrade from a Trial to a Developer (or commercial) license, purchase a license and then download a new license key, without re-installing the product.
+> Starting with [Telerik Reporting version Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), you must activate the product through a [license key]slug:license-key) (trial or commercial). To upgrade from a Trial to a Developer (or commercial) license, purchase a license and then download a new license key, without re-installing the product.
 
 ## Trial Licenses
 
@@ -39,9 +39,9 @@ To upgrade the trial version of your license to a developer license:
 
 1. Back up your Telerik Reporting files and folders, especially if your project uses the settings that are included in them.
 1. Uninstall the **Trial** version either by using the **Start Menu** shortcut or the **Add/Remove Programs** dialog.
-1. Obtain the new **Dev** installer and [install Telerik Reporting]({%slug telerikreporting/installation%}).
+1. Obtain the new **Dev** installer and [install Telerik Reporting]slug:telerikreporting/installation).
 
-> note More information is available in the following KB article: [How to Upgrade Trial to Licensed Version]({%slug how-to-remove-trial-message%}).
+> note More information is available in the following KB article: [How to Upgrade Trial to Licensed Version]slug:how-to-remove-trial-message).
 
 ## .NET Licensing Mechanism
 

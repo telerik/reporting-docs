@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-> Visit the updated [Integrating the MySQL Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider%}) article for a how-to on connecting to MySQL Databases.
+> Visit the updated [Integrating the MySQL Data Provider]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider) article for a how-to on connecting to MySQL Databases.
 
 The error below is thrown when trying to connect to MySQL Database through the SQL DataSource Wizard in the Web Report Designer.
 

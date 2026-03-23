@@ -22,7 +22,7 @@ To use Telerik Reports in Windows Forms application, you need the Windows Forms 
 
 1. Add reference to the class library that contains your reports in the windows form application.
 1. Build the application.
-1. Set the __ReportSource__ for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}).
+1. Set the __ReportSource__ for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers).
 1. To run the report in the viewer, call __ReportViewer.RefreshReport()__ from your application code.
 
 ## Assign report to the viewer programmatically
@@ -32,10 +32,10 @@ In the __Form_Load__ event handler you create an instance report source and set 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=Winviewer_SetReportSource}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=Winviewer_SetReportSource}}
 
-If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained in the article [Declaring the application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware).
+If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained in the article [Declaring the application as DPI-aware]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware).
 
 ## See Also
 
-* [On Telerik Reporting]({%slug on-telerik-reporting%})
-* [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
-* [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
+* [On Telerik Reporting]slug:on-telerik-reporting)
+* [Windows Forms Application]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
+* [Report Viewer Localization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization)

@@ -38,6 +38,6 @@ The HTML5 WebForms Report Viewer is a wrapper of the HTML5 JavaScript Report Vie
 
 ## Solution  
 
-To solve this issue, update the viewer in the page by using ite [exposed Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}).
+To solve this issue, update the viewer in the page by using ite [exposed Client-Side API]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)).
 
 Alternatively, make a full post-back to recreate the viewer object.         

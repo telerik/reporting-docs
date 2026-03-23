@@ -15,7 +15,7 @@ The ServiceStack implementation of the Telerik Reporting REST Service is a __RES
 
 In order to utilize the service, you have to create a new class that inherits from the abstract `ReportsHostBase` class. The *ReportsHostBase* class contains one important property needed by the reporting engine: `ReportServiceConfiguration`.
 
-The service can be hosted on [IIS]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%}) or self-hosted.
+The service can be hosted on [IIS]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application) or self-hosted.
 
 As Telerik Reporting ServiceStack REST service is a pure HTTP web service, it can be accessed with any HTTP-capable client. For example, you can create one of the following clients in order to utilize the service:
 
@@ -23,7 +23,7 @@ As Telerik Reporting ServiceStack REST service is a pure HTTP web service, it ca
 * C# client
 * Silverlight client
 
-The service can be used from the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), [Windows Forms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%}) and [WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}) as well.
+The service can be used from the [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview), [Windows Forms ReportViewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server) and [WPF ReportViewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server) as well.
 
 The current ServiceStack implementation is based on [ServiceStack](https://servicestack.net/) V3 __(3.9.70.0)__
 
@@ -31,5 +31,5 @@ The current ServiceStack implementation is based on [ServiceStack](https://servi
 
 ## See Also
 
-* [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [REST API Reference]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview)
+* [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

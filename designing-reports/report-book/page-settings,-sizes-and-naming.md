@@ -34,6 +34,6 @@ You can use the `DocumentName`  property of a Report Book to suggest a file name
 
 ## See Also
 
- * [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%})
+ * [Report Book Parameters]slug:telerikreporting/designing-reports/report-book/report-book-parameters)
 
- * [Report Book Paging]({%slug telerikreporting/designing-reports/report-book/report-book-paging%})
+ * [Report Book Paging]slug:telerikreporting/designing-reports/report-book/report-book-paging)

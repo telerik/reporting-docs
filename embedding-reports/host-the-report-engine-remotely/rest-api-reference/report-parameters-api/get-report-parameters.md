@@ -32,11 +32,11 @@ __Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-|`clientId`|String|ID of the service client. Returned by [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
+|`clientId`|String|ID of the service client. Returned by [Register Client]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client).|
 
 __Request Body__
 
-[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%}) object. Represent a report and its current parameter values.
+[ReportSource]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource) object. Represent a report and its current parameter values.
 
 ## Response
 
@@ -49,7 +49,7 @@ __Request Body__
 
 __Response Body__
 
-Array containing [Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%}) objects representing the report parameters that should be used to prompt the user.
+Array containing [Parameter]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter) objects representing the report parameters that should be used to prompt the user.
 
 ## Sample
 

@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 # WebServiceDataSource Wizard Overview
 
-The WebServiceDataSource Wizard allows you to create a new or edit an existing [WebServiceDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) in the [Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}).
+The WebServiceDataSource Wizard allows you to create a new or edit an existing [WebServiceDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview) in the [Telerik Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview).
 
 ### Configure Data Retrieval
 
@@ -36,7 +36,7 @@ This is the first step of the wizard. Here, setup the properties of the `HTTP` r
 | Encoding            | Data encoding. Default is UTF-8.                                                                                                                                                                                                                                                                                                                             |
 | Method              | HTTP request method. GET and POST are the supported methods.                                                                                                                                                                                                                                                                                                 |
 | Body                | The body of the POST method. Applicable only for POST HTTP request method.                                                                                                                                                                                                                                                                                   |
-| Data Selector       | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string which will be used to query the data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}). |
+| Data Selector       | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string which will be used to query the data. For more information please refer to [How to Use JSONPath to filter JSON data]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data). |
 
 ### Configure Request Parameters
 
@@ -103,5 +103,5 @@ In the last step of the wizard, if the configurations on the previous steps were
 
 ## See Also
 
-* [WebServiceDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
-* [Using Parameters with the WebServiceDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component%})
+* [WebServiceDataSource Component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
+* [Using Parameters with the WebServiceDataSource Component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component)

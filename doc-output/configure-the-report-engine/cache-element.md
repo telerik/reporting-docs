@@ -55,7 +55,7 @@ The Provider element specifies a cache provider to register for use in the appli
 
 ## Examples
 
-All parameters and attributes for the available cache providers may be seen in the article [Configuring the Cache Management System]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%}).
+All parameters and attributes for the available cache providers may be seen in the article [Configuring the Cache Management System]slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache).
 
 ### The Auto Cache Provider
 

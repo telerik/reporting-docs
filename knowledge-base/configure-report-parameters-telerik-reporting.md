@@ -17,7 +17,7 @@ ticketid: 1655580
 
 ## Description
 
-While using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), I encountered an error during the preview: "The expression contains object 'InspectionId' that is not defined in the current context." 
+While using the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview), I encountered an error during the preview: "The expression contains object 'InspectionId' that is not defined in the current context." 
 
 ![Object Not Defined ](images/report-parameter-not-defined-error.png)   
 
@@ -30,15 +30,15 @@ I have configured a parameter, and my select statement includes this parameter. 
 
 To resolve the issue where a report parameter is not recognized in the report preview, ensure that the report parameter is correctly defined in the report's parameters collection and linked to the SqlDataSource component.
 
-1. Verify that the report parameter is added to the report parameters collection. Refer to the [Report Parameters Overview]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) for guidance on defining report parameters.
+1. Verify that the report parameter is added to the report parameters collection. Refer to the [Report Parameters Overview]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) for guidance on defining report parameters.
 
     >caption Report Parameter
 
     ![SqlDataSourceParameter](images/report-parameter.png)      
 
-    For detailed steps on adding and configuring report parameters, consult the [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) guide.
+    For detailed steps on adding and configuring report parameters, consult the [Approaches for Adding Report Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) guide.
 
-1. Ensure that each SqlDataSource parameter is linked to an expression, such as a report parameter value, in the report definition. SqlDataSource parameters cannot directly receive values from the ReportSource.Parameters collection. Review the [Using Parameters with the SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%}) for more details.
+1. Ensure that each SqlDataSource parameter is linked to an expression, such as a report parameter value, in the report definition. SqlDataSource parameters cannot directly receive values from the ReportSource.Parameters collection. Review the [Using Parameters with the SqlDataSource Component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component) for more details.
 
     >caption SqlDataSourceParameter
 
@@ -48,7 +48,7 @@ By following these steps, you ensure that your report parameters are correctly r
 
 ## See Also
 
-- [Report Parameters Overview]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})
-- [Using Parameters with the SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
-- [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
-- [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
+- [Report Parameters Overview]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
+- [Using Parameters with the SqlDataSource Component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
+- [Approaches for Adding Report Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters)
+- [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)

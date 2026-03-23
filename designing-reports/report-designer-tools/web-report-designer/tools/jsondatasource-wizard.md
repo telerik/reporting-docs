@@ -11,7 +11,7 @@ position: 2
 
 # JsonDataSource Wizard Overview
 
-The Json Data Source Wizard allows you to create a new or edit an existing [`JsonDataSource`]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%}) component in the Telerik Web Report Designer. This article describes the steps you can follow when the wizard appears, after being invoked from the Report Designer toolbox. 
+The Json Data Source Wizard allows you to create a new or edit an existing [`JsonDataSource`]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component) component in the Telerik Web Report Designer. This article describes the steps you can follow when the wizard appears, after being invoked from the Report Designer toolbox. 
 
 1. __Choose a JSON source__ Select how the json source should be retrieved for the component. 
 

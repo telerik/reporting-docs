@@ -88,7 +88,7 @@ Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that do
    Console.WriteLine(Telerik.Licensing.TelerikLicensing.Diagnostics);
    ```
 
-   For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]({%slug how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api%}), you can collect the log after creating the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in the _Program.cs_ file:
+   For example, if you use a Report Viewer with [REST Service in .NET with Minimal API]slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api), you can collect the log after creating the [Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in the _Program.cs_ file:
 
    ```C#
    // ...
@@ -112,8 +112,8 @@ Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that do
 
 ## See Also
 
-- [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
-- [Setting Up Your License Key]({%slug license-key%})
-- [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
-- [Adding the License Key to CI Services]({%slug license-key-ci-services%})
+- [License Activation Errors and Warnings]slug:license-errors-and-warnings)
+- [Setting Up Your License Key]slug:license-key)
+- [Frequently Asked Questions about Your Telerik Reporting License Key]slug:license-frequently-asked-questions)
+- [Adding the License Key to CI Services]slug:license-key-ci-services)
 - [License Agreement](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)

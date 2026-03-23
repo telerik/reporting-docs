@@ -40,11 +40,11 @@ The possible causes for this issues depend on the scenario:
 
 ## Solution
 
-* For the default template and styles scenario&mdash;Web-based viewers are widgets that get content produced on the server by the [Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}). Make sure that latest assemblies are referenced in the Rest Service project.
+* For the default template and styles scenario&mdash;Web-based viewers are widgets that get content produced on the server by the [Reporting REST service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview). Make sure that latest assemblies are referenced in the Rest Service project.
 * For the custom template and styles scenario&mdash;All local loaded Telerik Report Viewer resources have to be manually updated on upgrade to include the new changes. The resources are located in the default Telerik Reporting installation folder, for example, at `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer`.
 * For either the default or custom template&mdash;After updating the assemblies or merging the latest changes, make sure that the browser cache is cleared. Browsers often cache HTML and CSS files to optimize the page loading. Sometimes they do not detect modified files.
 
 ## See Also
 
-* [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%})
-* [Providing Custom Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates%})
+* [Styling and Appearance]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview)
+* [Providing Custom Templates]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates)

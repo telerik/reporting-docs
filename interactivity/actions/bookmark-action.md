@@ -42,10 +42,10 @@ You can add multiple bookmark actions to the same bookmark. To define a bookmark
 
 ## See Also
 
-- [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
+- [Drillthrough Report Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action)
 
-- [Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%})
+- [Hyperlink Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action)
 
-- [Expressions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
+- [Expressions Overview]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)
 
-- [Data Items Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
+- [Data Items Overview]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)

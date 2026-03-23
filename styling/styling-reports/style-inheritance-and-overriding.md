@@ -14,7 +14,7 @@ reportingArea: General
 
 Telerik Reporting Styling is similar to CSS (Cascading Style Sheets), of which many web developers are familiar.
 
-Styles can be defined globally using the [StyleRules]({%slug telerikreporting/designing-reports/styling-reports/creating-style-rules%}). They can be inherited from parent report items. They can also be explicitly defined in a report item's Style properties.
+Styles can be defined globally using the [StyleRules]slug:telerikreporting/designing-reports/styling-reports/creating-style-rules). They can be inherited from parent report items. They can also be explicitly defined in a report item's Style properties.
 
 ## General Inheritance Rules
 
@@ -28,7 +28,7 @@ Child report items placed within another report item always derive their styli
 
 ## Global Styles and Precedence
 
-Styles defined with **Style Rules** will be applied globally in a report based on the definition of the Style Rule. A **Style Rule** can be defined by using one of the [Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%}).
+Styles defined with **Style Rules** will be applied globally in a report based on the definition of the Style Rule. A **Style Rule** can be defined by using one of the [Style Selectors]slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors).
 
 The **Style Sectors** have the following precedence:
 

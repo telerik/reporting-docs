@@ -43,5 +43,5 @@ This workaround manipulates the visual appearance of the bars to create the illu
 
 ## See Also
 
-* [Telerik Reporting Documentation]({%slug telerikreporting/welcome-to-telerik-reporting!%})
-* [BarSeries Properties]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})
+* [Telerik Reporting Documentation]slug:telerikreporting/welcome-to-telerik-reporting!)
+* [BarSeries Properties]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview)

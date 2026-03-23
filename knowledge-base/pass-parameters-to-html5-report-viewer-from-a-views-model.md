@@ -32,7 +32,7 @@ The following article describes a general approach that can be used to both achi
 
 ## Solution
 
-1. Since the parameters dictionary is a child element of the `reportSource` property, as shown in the [HTML5 Report Viewer API Reference]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}), we will create a custom model that represents the `reportSource` property:
+1. Since the parameters dictionary is a child element of the `reportSource` property, as shown in the [HTML5 Report Viewer API Reference]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization), we will create a custom model that represents the `reportSource` property:
 
    ```C#
    public class ReportSourceModel
@@ -93,4 +93,4 @@ You can find a sample project that implements the above in the [following GitHub
 
 ## See Also
 
-- [How to use Visual Studio Report Designer to edit CS Reports in .Net Core Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})
+- [How to use Visual Studio Report Designer to edit CS Reports in .Net Core Projects]slug:how-to-use-vs-designer-in-dotnet-core)

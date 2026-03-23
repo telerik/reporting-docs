@@ -16,7 +16,7 @@ previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applic
 
 1. Required Service:
 
-	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.
+	+ The viewer requires a running instance of [Telerik Reporting REST Services]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.
 
 1. Required JavaScript libraries and files:
 
@@ -31,9 +31,9 @@ previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applic
 * __The HTML5 Viewer is designed to request its HTML template, HTML5 Report Viewer widget implementation, and Kendo UI for jQuery widgets subset from the resources of the Reporting REST Service.__
 * The required CSS and JS files must be loaded before creating the HTML5 Viewer widget on the page.
 * jQuery must be loaded *only once* by the page with the HTML5 Viewer and before the `telerikReportViewer` script.
-* The `telerikReportViewer` script must be referenced after any other Kendo UI for jQuery widgets or bundles. If no Kendo widgets are utilized in the page the report viewer will automatically register a custom Kendo subset to enable the required Kendo widgets. For more information on how the final page will look, check the last step of [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article.
+* The `telerikReportViewer` script must be referenced after any other Kendo UI for jQuery widgets or bundles. If no Kendo widgets are utilized in the page the report viewer will automatically register a custom Kendo subset to enable the required Kendo widgets. For more information on how the final page will look, check the last step of [Manual Setup]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) article.
 * If you use a CDN to load the required CSS and JS files, verify whether the links are running over HTTP or HTTPS depending on the hosting of the application.
-* If you do not add changes in the default template, you *do not* have to specify the `templateUrl` property. The HTML template includes links to the HTML5 Viewer's CSS template file and icon fonts, also available through the resources of the HTML5 Viewer. For more details, check [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}). 
+* If you do not add changes in the default template, you *do not* have to specify the `templateUrl` property. The HTML template includes links to the HTML5 Viewer's CSS template file and icon fonts, also available through the resources of the HTML5 Viewer. For more details, check [Styling and Appearance]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview). 
 * The viewer depends on the Promise object and will not load successfully if it is not available. Check [Promises/A+](https://promisesaplus.com/). Most modern browsers have native implementation and support for this object (see Browser Compatibility at [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)).
 
 ## Kendo Widgets Requirements
@@ -81,4 +81,4 @@ The list of Browsers covering the above requirements includes:
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

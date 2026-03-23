@@ -25,7 +25,7 @@ ticketid: 1692750
 
 I encounter the `Could not load file or assembly Microsoft.mshtml` error when working with Telerik Report Designer.
 
-This happens consistently while updating or designing reports, particularly when adding a subreport and using an [HTMLTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) for a different SQL query.
+This happens consistently while updating or designing reports, particularly when adding a subreport and using an [HTMLTextBox]slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview) for a different SQL query.
 
 The error forces the system to shut down, requiring a restart.
 

@@ -17,7 +17,7 @@ ticketid: 1655171
 
 ## Description
 
-After implementing the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in an ASP.NET Framework application - [Telerik Reporting REST Service ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}), when the application starts, the error page is displayed with details about a problem with the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase).
+After implementing the [Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in an ASP.NET Framework application - [Telerik Reporting REST Service ASP.NET Web API Implementation]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview), when the application starts, the error page is displayed with details about a problem with the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase).
 
 ## Error Message
 
@@ -64,6 +64,6 @@ For example, "api" is the default literal path segment in the "api/{controller}"
 
 ## See Also
 
-- [How to change the registered by default Telerik Reporting REST Web API routes]({%slug how-to-change-reporting-rest-web-api-routes-registered-by-default%})
+- [How to change the registered by default Telerik Reporting REST Web API routes]slug:how-to-change-reporting-rest-web-api-routes-registered-by-default)
 - [Multiple actions were found that match the request in Web API - Stack Overflow](https://stackoverflow.com/questions/14534167/multiple-actions-were-found-that-match-the-request-in-web-api)
-- [Hosting Telerik Reporting REST Service in ASP.NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})
+- [Hosting Telerik Reporting REST Service in ASP.NET]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application)

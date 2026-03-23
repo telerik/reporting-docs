@@ -18,7 +18,7 @@ One common problem is that your machine (PC or DevOps agent) is behind a proxy. 
 
 https://nuget.telerik.com/v3/search?q=reporting
 
-In the authentication window, enter `api-key` in the **User name** field and your [API key]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}#generate-an-api-key) in the **Password** field. After the successful authentication, you should see a JSON search result containing a list of all the __Telerik Reporting__ packages available with your license.
+In the authentication window, enter `api-key` in the **User name** field and your [API key]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio#generate-an-api-key) in the **Password** field. After the successful authentication, you should see a JSON search result containing a list of all the __Telerik Reporting__ packages available with your license.
 
 ## Issue: The NuGet Package Takes Too Long to Install or Update on Visual Studio
 
@@ -36,7 +36,7 @@ After changing your Telerik password, you get `[Telerik Nuget] The V2 feed at '.
 
 Update your credentials and use an API key instead of a password. Using an API key instead of a password is a more secure approach:
 
-1. [Generate an API key]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}#generate-an-api-key).
+1. [Generate an API key]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio#generate-an-api-key).
 1. Update the credentials for the Telerik NuGet feed by running `dotnet nuget update source "TelerikNuget" --source "https://nuget.telerik.com/v3/index.json" --username "api-key" --password "YOUR-API-KEY" --store-password-in-clear-text`. Ensure updating the name of the Nuget source "TelerikNuget" and the api key "YOUR-API-KEY".
 
 As an alternative, you can [reset your Telerik NuGet Feed credentials from the Windows Credentials Manager](#solution-2-windows-credentials-manager)
@@ -72,12 +72,12 @@ Alternatively, use Windows Credentials Manager to remove the saved credentials:
 
 	![Remove credentials from Windows Credential Manager](images/windows-credential-manager.png)
 
-1. [Add the Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) again, and then enter the correct credentials. For more details, see the [Installing with Nuget]({%slug telerikreporting/installation%}#using-nuget-packages) article section.
+1. [Add the Telerik NuGet Feed]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio) again, and then enter the correct credentials. For more details, see the [Installing with Nuget]slug:telerikreporting/installation#using-nuget-packages) article section.
 1. If desired, verify the NuGet credentials by inspecting the `NuGet.config` file located in `%AppData%\NuGet\NuGet.config`.
 1. Reopen Visual Studio and access the Telerik NuGet server.
 
 ## See Also
 
-* [Adding the Telerik Private NuGet Feed to VS]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})
-* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
-* [Installing with NuGet]({%slug telerikreporting/installation%}#installing-with-nuget)
+* [Adding the Telerik Private NuGet Feed to VS]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio)
+* [Restoring NuGet Packages in Your CI Workflow]slug:using-nuget-keys)
+* [Installing with NuGet]slug:telerikreporting/installation#installing-with-nuget)

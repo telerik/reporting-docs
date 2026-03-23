@@ -25,10 +25,10 @@ res_type: kb
 
 ## Solution
 
-The problem and the solution are described in the KB [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']({%slug cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error%}).
+The problem and the solution are described in the KB [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']slug:cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error).
 
 ## See Also
 
-* [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']({%slug cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error%})
-* [Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
-* [How to display a report via InstanceReportSource in the HTML5 Viewer]({%slug how-to-display-a-report-via-instancereportsource-in-the-html5-viewer%})
+* [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']slug:cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error)
+* [Set ReportSource for Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
+* [How to display a report via InstanceReportSource in the HTML5 Viewer]slug:how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)

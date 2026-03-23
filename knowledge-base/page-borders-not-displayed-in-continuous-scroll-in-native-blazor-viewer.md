@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-In the [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) when the `PageMode` is set to `ContinuousScroll` the borders around the pages are not displayed correctly.
+In the [Native Blazor Report Viewer]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) when the `PageMode` is set to `ContinuousScroll` the borders around the pages are not displayed correctly.
 
 ## Suggested Workarounds
 
@@ -45,4 +45,4 @@ Add the following code in the page with the viewer:
 
 ## See Also
 
-* [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
+* [Native Blazor Report Viewer]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)

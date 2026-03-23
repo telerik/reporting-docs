@@ -14,13 +14,13 @@ reportingArea: General
 
 You can design a report so that different styles are applied to items based on the data in the report. For example, you can display negative numbers in red or change the background colors on a table cell.
 
-To make styles conditional, use an expression instead of a static value for the style properties of the report item. The two examples below demonstrate how to make a **TextBox** render negative values in red for a field called Profit. You can achieve this with the **Conditional Formatting Editor** in Report Designer or by using [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}).
+To make styles conditional, use an expression instead of a static value for the style properties of the report item. The two examples below demonstrate how to make a **TextBox** render negative values in red for a field called Profit. You can achieve this with the **Conditional Formatting Editor** in Report Designer or by using [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
 
 ### Using Conditional Formatting Editor
 
 1. In Report Designer, right-click on a **Text Box** report item.
 1. In the context menu, select **Conditional Formating**.
-1. The [__Conditional Formatting Rules...__]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog%}) dialog appears on the screen.
+1. The [__Conditional Formatting Rules...__]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog) dialog appears on the screen.
 1. Enter the conditional expression:
 
    `=Fields.Profit`
@@ -65,5 +65,5 @@ To make styles conditional, use an expression instead of a static value for the 
 
 ## See Also
 
-- [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
-- [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
+- [Conditional Formatting]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting)
+- [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)

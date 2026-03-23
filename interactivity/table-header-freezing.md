@@ -33,7 +33,7 @@ To keep the table headers visible while scrolling:
 
 ## Settings in the Report Viewers
 
-The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})__ when it is enabled from the designers. The picture below shows a report with frozen row and column headers:           
+The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout)__ when it is enabled from the designers. The picture below shows a report with frozen row and column headers:           
 
   ![An image demonstrating how the table headers freezing looks in the Report Viewers](images/TableFreezeHeadersViewer.png)
 
@@ -48,10 +48,10 @@ When `PageBreak` is set to a group, `FreezeRowHeaders` and `FreezeColumnHeaders`
 ## See Also
 
 
- * [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
+ * [Interactive vs. Print Layout]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout)
 
- * [Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
+ * [Understanding Crosstab Areas]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas)
 
- * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+ * [Understanding Pagination]slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)
 
- * [HTML Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%})
+ * [HTML Rendering Design Considerations]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations)

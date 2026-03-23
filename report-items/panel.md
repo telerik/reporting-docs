@@ -24,14 +24,14 @@ The Panel enables you to set global properties, such as __Visible__, which affec
 
 When you move the Panel, the items that are contained within it move along with it.
 
-The following image shows a Panel which contains two [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report items.
+The following image shows a Panel which contains two [TextBox]slug:telerikreporting/designing-reports/report-structure/textbox) report items.
 
 ![A Panel with two TextBox report items](images/Panel.png)
 
 ## Next Steps 
 
-* [Organizing the Report Layout with the Panel]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
-* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+* [Organizing the Report Layout with the Panel]slug:telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout)
+* [Using Styles to Customize Reports]slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
 * [(API) Panel](/api/Telerik.Reporting.Panel)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)

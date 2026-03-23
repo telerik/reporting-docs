@@ -31,7 +31,7 @@ This article shows how to set the report source and report parameters from the c
 
 ## Solution
 
-1. The report contains 2 [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})- **Parameter1** and **Parameter2**. The initial value of the first one is "Item1" and of the second one is "Value1".
+1. The report contains 2 [report parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)- **Parameter1** and **Parameter2**. The initial value of the first one is "Item1" and of the second one is "Value1".
 
 2. Add a new Model called **ReportModel**. It has 2 properties - a string which holds the **ReportName** and **Dictionary** for the parameters:
 
@@ -95,4 +95,4 @@ This is in case you use the default MapRoute : url: "{controller}/{action}/{id}"
 
 Then the URL might look: http://localhost:XXXXX/Home/Report/SampleReport?parameter1=Item3&parameter2=Value3
 
-The demo application could be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/ModelMvc). Run the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}) before starting the application.
+The demo application could be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/ModelMvc). Run the [Upgrade Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) before starting the application.

@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-> Visit the updated [Integrating the ODP.NET Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-odpnet-data-provider%}) article for a how-to on connecting to Oracle Databases.
+> Visit the updated [Integrating the ODP.NET Data Provider]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-odpnet-data-provider) article for a how-to on connecting to Oracle Databases.
 
 `System.Data.OracleClient` is a Microsoft .NET Framework data provider allowing you to connect to an Oracle database. The provider is deprecated and it should not be used - [Oracle and ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/oracle-and-adonet).
 
@@ -34,7 +34,7 @@ res_type: kb
 
 We recommend the usage of the [Oracle Data Provider for .NET/ODP.NET](https://www.oracle.com/database/technologies/appdev/dotnet/odp.html). More .NET Framework data providers and how they can be used for connecting to an Oracle database can be found in the [Oracle connection strings](https://www.connectionstrings.com/oracle/) article.
 
-You may also check out [Data provider is missing in the SqlDataSource wizard]({%slug data-provider-is-missing-in-the-sqldatasource-wizard%}).
+You may also check out [Data provider is missing in the SqlDataSource wizard]slug:data-provider-is-missing-in-the-sqldatasource-wizard).
 
 ## Notes
 

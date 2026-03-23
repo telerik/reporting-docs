@@ -27,7 +27,7 @@ ticketid: 1703027
 
 ## Description
 
-I want to use the built-in _MicrosoftExtensionsOpenAI_ AI Client in Telerik Reporting as explained in the article [Using AI-Powered Insights with a REST Service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%}).
+I want to use the built-in _MicrosoftExtensionsOpenAI_ AI Client in Telerik Reporting as explained in the article [Using AI-Powered Insights with a REST Service]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client).
 
 After configuring the `<AIClient>` element in the `web.config` file and adding the required dependencies as NuGet packages, the AI client is not functioning as expected.
 
@@ -100,5 +100,5 @@ Such errors may occur due to mismatched assembly versions or missing assemblies 
 
 ## See Also
 
-- [Using AI-Powered Insights with a REST Service]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client%})
+- [Using AI-Powered Insights with a REST Service]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights-builtin-client)
 - [Understanding Exceptions while debugging with Visual Studio](https://devblogs.microsoft.com/devops/understanding-exceptions-while-debugging-with-visual-studio/)

@@ -23,7 +23,7 @@ ticketid: 1703567
 
 ## Description
 
-When exporting reports to CSV with the ReportProcessor class in Telerik Reporting, currency values formatted using a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})'s `Format` property (e.g., `"{0:C2}"`) include group separators and currency symbols. This formatting prevents Excel from recognizing the exported values as numbers. Contrary to expectations, the CSV rendering extension respects the `Format` property of report items, which is intentional behavior. Adjusting the `Culture` object does not resolve this issue due to changes in the report processing pipeline.
+When exporting reports to CSV with the ReportProcessor class in Telerik Reporting, currency values formatted using a [TextBox]slug:telerikreporting/designing-reports/report-structure/textbox)'s `Format` property (e.g., `"{0:C2}"`) include group separators and currency symbols. This formatting prevents Excel from recognizing the exported values as numbers. Contrary to expectations, the CSV rendering extension respects the `Format` property of report items, which is intentional behavior. Adjusting the `Culture` object does not resolve this issue due to changes in the report processing pipeline.
 
 ## Solution
 
@@ -65,6 +65,6 @@ This approach removes formatting applied to the TextBox items, ensuring the expo
 
 ## See Also
 
-* [CSV Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations%})
-* [TextBox Report Item Overview]({%slug telerikreporting/designing-reports/report-structure/textbox%})
-* [Device Information Settings for the CSV rendering format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings%})
+* [CSV Rendering Design Considerations]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations)
+* [TextBox Report Item Overview]slug:telerikreporting/designing-reports/report-structure/textbox)
+* [Device Information Settings for the CSV rendering format]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings)

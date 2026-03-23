@@ -40,6 +40,6 @@ The error message indicates that the ID of the Report Viewer cannot be found in 
 
 To solve this issue, use the following approaches:
 
-* Check if the [time set as the `ClientSessionTimeout` of the Reporting REST service has expired]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}).
+* Check if the [time set as the `ClientSessionTimeout` of the Reporting REST service has expired]slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services).
 
-* Alternatively, fix the [`Storage` of the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}), if it is not set according to the hosting environment.         
+* Alternatively, fix the [`Storage` of the Reporting REST service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview), if it is not set according to the hosting environment.         

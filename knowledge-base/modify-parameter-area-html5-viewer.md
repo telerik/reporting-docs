@@ -42,4 +42,4 @@ Apply custom CSS to the **Parameters Area** containers. For example:
 
 ## See Also
 
-[Customizing the HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview%})
+[Customizing the HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview)

@@ -15,19 +15,19 @@ The steps below will demonstrate how to add the Telerik Reporting Radial Gauge r
 
 ## Adding a Radial Gauge to the Report
 
-* [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) - The Gauge item can be inserted from the `Insert Ribbon`:
+* [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) - The Gauge item can be inserted from the `Insert Ribbon`:
 
 	![The Standalone Report Designer Insert Ribbon with the Gauge Report Item in .NET Reporting](../images/standalone-ribbon-gauge-item.png)
 
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) - The Gauge item can be inserted using the `Components Tab`:
+* [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) - The Gauge item can be inserted using the `Components Tab`:
 
 	![The Web Report Designer Components Tab with the Gauge Report Item in .NET Reporting](../images/web-report-designer-gauge-component.png)
 
-* [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) - The Gauge item can be inserted from the [Visual Studio Toolbox](https://learn.microsoft.com/en-us/visualstudio/ide/reference/toolbox)
+* [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) - The Gauge item can be inserted from the [Visual Studio Toolbox](https://learn.microsoft.com/en-us/visualstudio/ide/reference/toolbox)
 
 ## Properties of the Gauge Report Item
 
-The Gauge Report Item is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and as such inherits the properties of the [Telerik.Reporting.DataItem](/api/telerik.reporting.dataitem) class.
+The Gauge Report Item is a [data item]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) and as such inherits the properties of the [Telerik.Reporting.DataItem](/api/telerik.reporting.dataitem) class.
 
 ### Properties specific to the Appearance
 
@@ -64,5 +64,5 @@ The Gauge Report Item is a [data item]({%slug telerikreporting/designing-reports
 
 ## See Also
 
-* [Gauge Report Item Overview]({%slug telerikreporting/designing-reports/report-structure/gauge/overview%})
-* [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
+* [Gauge Report Item Overview]slug:telerikreporting/designing-reports/report-structure/gauge/overview)
+* [Data Items]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)

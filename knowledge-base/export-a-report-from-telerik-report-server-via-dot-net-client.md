@@ -150,5 +150,5 @@ Please note that this is not an end solution, but an example illustrating how to
 ## See Also
 
 - [REST API Reference](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/api-reference)
-- [Displaying Reports From Report Server Through Custom Report Source Resolver]({%slug displaying-reports-from-report-server-through-custom-report-source-resolver%})
-- [Displaying Complex Report Documents from Report Server through Custom ReportSource Resolver]({%slug displaying-reportbooks-and-reports-with-subreports-from-report-server-using-custom-report-source-resolver%})
+- [Displaying Reports From Report Server Through Custom Report Source Resolver]slug:displaying-reports-from-report-server-through-custom-report-source-resolver)
+- [Displaying Complex Report Documents from Report Server through Custom ReportSource Resolver]slug:displaying-reportbooks-and-reports-with-subreports-from-report-server-using-custom-report-source-resolver)

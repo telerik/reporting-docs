@@ -42,7 +42,7 @@ You can create your own strings to use as bookmarks, or, for groups, you can set
 
 ### Adding a bookmark to a Report group
 
-1. In **Design view**, right click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}). Select a report group to which you want to add a bookmark. The properties for the selected group appear in the **Properties** pane.
+1. In **Design view**, right click outside the report sections, select View and open up the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer). Select a report group to which you want to add a bookmark. The properties for the selected group appear in the **Properties** pane.
 1. In the [BookmarkId](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_BookmarkId) property, type a string that is the label for this bookmark. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to text. Typically for a group, the expression you type should be the group expression.
 
 > note The [BookmarkId](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_BookmarkId) can be any string, but it must be unique in the report. If the `BookmarkID` is not unique, an action to the bookmark finds the first matching bookmark.
@@ -57,11 +57,11 @@ After you create bookmarks, you can add report items that the user can click to 
 
 ### Adding a bookmark to a Table group
 
-1. In **Design view**, right click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}). Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the **Group Explorer** shows the respective groups. Select a group to which you want to add a bookmark, right click on it and select **Group Properties**. The properties for the selected group appear in the **Edit Table Group** dialog.
+1. In **Design view**, right click outside the report sections, select View and open up the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer). Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the **Group Explorer** shows the respective groups. Select a group to which you want to add a bookmark, right click on it and select **Group Properties**. The properties for the selected group appear in the **Edit Table Group** dialog.
 1. In the [BookmarkId](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId) property, type a string that is the label for this bookmark. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to text. Typically for a group, the expression you type should be the group expression.
 
 > note The [BookmarkId](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId) can be any string, but it must be unique in the report. If the `BookmarkID` is not unique, an action to the bookmark finds the first matching bookmark.
 
 ## See Also
 
-- [Bookmark Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action%})
+- [Bookmark Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action)

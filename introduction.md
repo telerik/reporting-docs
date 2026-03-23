@@ -62,9 +62,9 @@ The Report Designers are responsible for the designing process.
 
 | Report Designer                                                                                                                                          | Specifics                                                                                                                                                                                                                                                      |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Standalone desktop designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})   | <ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>          |
-| [Web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})                                    | <ul><li>An HTML-, CSS-, JavaScript-and-jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul> |
-| [Designer for Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) | <ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET Framework only.</li></ul>                                                                                      |
+| [Standalone desktop designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)   | <ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>          |
+| [Web report designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)                                    | <ul><li>An HTML-, CSS-, JavaScript-and-jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul> |
+| [Designer for Visual Studio]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) | <ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET Framework only.</li></ul>                                                                                      |
 
 ### Report Viewers
 
@@ -75,23 +75,23 @@ The Report Viewers are UI components that are tailored to a specific technology.
 
 | Report Viewer                                                                                                                                                                          | App Type | Essentials                                                                                               |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------------------------------- |
-| [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})                            | Web      | An HTML, CSS, JavaScript, and jQuery client-side targeting all web applications working with JavaScript. |
-| [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})            | Web      | A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications.             |
-| [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) | Web      | A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.        |
-| [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%})          | Web      | A fully native Angular widget built with Telerik UI for Angular components.                              |
-| [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})  | Web      | An Angular component wrapping the HTML5 Report Viewer.                                                   |
-| [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})      | Web      | A React component wrapping the HTML5 Report Viewer.                                                      |
-| [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})                          | Web      | A Blazor component wrapping the HTML5 Report Viewer.                                                     |
-| [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})                        | Web      | A fully native Blazor widget built with Telerik UI for Blazor components.                                |
-| [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})                                   | Desktop  | A composite of standard Windows Forms controls targeting WinForms and WPF projects.                      |
-| [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})                                                  | Desktop  | A composite of Telerik UI for WPF controls targeting WPF and WinForms projects.                          |
-| [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%})                                    | Desktop  | A composite of Telerik UI for WinUI controls targeting WinUI3 projects.                                  |
+| [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)                            | Web      | An HTML, CSS, JavaScript, and jQuery client-side targeting all web applications working with JavaScript. |
+| [HTML5 MVC Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview)            | Web      | A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications.             |
+| [HTML5 WebForms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview) | Web      | A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.        |
+| [Native Angular Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview)          | Web      | A fully native Angular widget built with Telerik UI for Angular components.                              |
+| [Angular Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)  | Web      | An Angular component wrapping the HTML5 Report Viewer.                                                   |
+| [ReactJS Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview)      | Web      | A React component wrapping the HTML5 Report Viewer.                                                      |
+| [Blazor Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview)                          | Web      | A Blazor component wrapping the HTML5 Report Viewer.                                                     |
+| [Native Blazor Report Viewer]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)                        | Web      | A fully native Blazor widget built with Telerik UI for Blazor components.                                |
+| [WinForms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)                                   | Desktop  | A composite of standard Windows Forms controls targeting WinForms and WPF projects.                      |
+| [WPF Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview)                                                  | Desktop  | A composite of Telerik UI for WPF controls targeting WPF and WinForms projects.                          |
+| [WinUI Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview)                                    | Desktop  | A composite of Telerik UI for WinUI controls targeting WinUI3 projects.                                  |
 
 ## About the Demos
 
 The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provides a set of pre-built live demos designed to demonstrate the Telerik Reporting capabilities. The demos use the HTML5-based web report viewers.
 
-If you install Telerik Reporting by using the [MSI file or the Control Panel]({%slug telerikreporting/installation%}), the sample reports will also be available as Visual Studio projects. The examples for Visual Studio contain applications for all supported platforms. To open the projects:
+If you install Telerik Reporting by using the [MSI file or the Control Panel]slug:telerikreporting/installation), the sample reports will also be available as Visual Studio projects. The examples for Visual Studio contain applications for all supported platforms. To open the projects:
 
 1. Navigate to the **Start** menu.
 1. Select **Telerik** > **Reporting** > **Visual Studio Examples** > **C#/VB.NET Solution**.
@@ -112,7 +112,7 @@ Note that sharing quality feedback and ideas will not only benefit the community
 
 ## Learning Resources
 
-- [Video Onboarding (Training Courses for Registered Users)]({%slug getting-started/video-onboarding%})
+- [Video Onboarding (Training Courses for Registered Users)]slug:getting-started/video-onboarding)
 - [Online Demos for Telerik Reporting](https://demos.telerik.com/reporting)
 - [Telerik Reporting Videos](https://www.telerik.com/videos/reporting)
 - [Telerik Blog on Telerik Reporting](https://www.telerik.com/blogs/tag/reporting)
@@ -121,10 +121,10 @@ Note that sharing quality feedback and ideas will not only benefit the community
 
 ## Next Steps
 
-* [First Steps with Telerik Reporting]({%slug telerikreporting/getting-started/first-steps%})
-* [Setting Up Your Telerik Reporting License Key]({%slug license-key%})
-* [Licensing Frequently Asked Questions]({%slug license-frequently-asked-questions%})
+* [First Steps with Telerik Reporting]slug:telerikreporting/getting-started/first-steps)
+* [Setting Up Your Telerik Reporting License Key]slug:license-key)
+* [Licensing Frequently Asked Questions]slug:license-frequently-asked-questions)
 
 ## See Also
 
-* [Web Report Designer User Guide]({%slug user-guide/overview%})
+* [Web Report Designer User Guide]slug:user-guide/overview)

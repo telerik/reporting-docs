@@ -43,6 +43,6 @@ These steps ensure that the monthly totals appear at the top of each column and 
 
 ## See Also
 
-* [Reporting Overview]({%slug telerikreporting/welcome-to-telerik-reporting!%})
-* [Date and Time Functions Overview]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%})
-* [Group Explorer of the Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) 
+* [Reporting Overview]slug:telerikreporting/welcome-to-telerik-reporting!)
+* [Date and Time Functions Overview]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions)
+* [Group Explorer of the Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) 

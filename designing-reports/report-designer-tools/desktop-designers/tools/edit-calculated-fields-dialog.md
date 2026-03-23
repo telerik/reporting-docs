@@ -18,10 +18,10 @@ Calculated fields can be used to create new values that do not exist in the data
 
 You specify a calculated field manually by creating an expression. The Edit Calculated Fields dialog is available in the property grid of our DataSource components:
 
-* [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
-* [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
-* [EntityDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%})
-* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%})
+* [SqlDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
+* [ObjectDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
+* [EntityDataSource]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard)
+* [OpenAccessDataSource]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard)
 
 by clicking on the ellipsis of the __CalculatedFields__ property.
 

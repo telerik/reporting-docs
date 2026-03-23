@@ -28,7 +28,7 @@ table th:nth-of-type(3) {
 
 The commands property is a collection of different commands.
 
-Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the **exec()** method being the one that actually triggers the command. The other two methods, **enabled()** and **checked()** return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be.
+Each [command]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command) is an object with the **exec()** method being the one that actually triggers the command. The other two methods, **enabled()** and **checked()** return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be.
 
 ```JSX
 let viewer;
@@ -39,7 +39,7 @@ ReactDOM.render(
 	</>
 ```
 
-The example above creates a Print button and in the click event handler invokes report viewer **print** command. Note that the **exec()** method of the command needs to be called. For more information please check the [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) article.
+The example above creates a Print button and in the click event handler invokes report viewer **print** command. Note that the **exec()** method of the command needs to be called. For more information please check the [command]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command) article.
 
 The following table is a list of all commands:
 

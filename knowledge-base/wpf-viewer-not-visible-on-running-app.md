@@ -40,4 +40,4 @@ As of Telerik Reporting Q1 2014, the WPF ReportViewer uses implicit styles. When
 
 ## Solution  
 
-Double-check if the XAML resources are loaded in the application. For more details about the required WPF ReportViewer settings, refer to the article on the [manual setup of the viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).
+Double-check if the XAML resources are loaded in the application. For more details about the required WPF ReportViewer settings, refer to the article on the [manual setup of the viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project).

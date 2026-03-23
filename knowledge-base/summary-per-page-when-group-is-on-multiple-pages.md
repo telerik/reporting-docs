@@ -31,7 +31,7 @@ Here is how this can be done with Telerik Reporting.
 
 ## Solution
 
-Next, you may find two [custom user aggregate functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) that can be used to accomplish the requirement.
+Next, you may find two [custom user aggregate functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions) that can be used to accomplish the requirement.
 
 The fields in the classes need to be static because for each page we create a new instance of the aggregate and we need to preserve the data from all pages. On the other hand, the fields are marked with _[ThreadStatic]_ so that if two report renderings occur simultaneously (like in a web application) they do not interfere.
 
@@ -86,7 +86,7 @@ class PageFooterSumUntilNow : IAggregateFunction
 
 The aggregate _PageFooterSumUntilNow_ accumulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to the current point, which is the end of the group or the end of the current page when the group finishes on the current page.
 
-The second custom aggregate is for the [Page Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%}):
+The second custom aggregate is for the [Page Header]slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections):
 
 ```C#
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageHeaderSumFromPrevPage")]
@@ -174,7 +174,7 @@ The idea derives from the page footer aggregate, but we take into account that t
 
 The Page Header aggregate may be used only in a page section as it requires the PageNumber that is available only there.
 
-For example, in the following [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) inside the Page Header section:
+For example, in the following [Expression]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) inside the Page Header section:
 
 ```TEXT
 = IIf(
@@ -214,7 +214,7 @@ The fact that the main variables that accumulate the result and the transitional
 
    In this case, the aggregated values are carried over from the first to the second report. That said, the values from the previous rendering are carried over to the next rendering. To overcome this, you need to modify the logic of the functions. For example, when the report is a new one, you may reset the static values.
 
-   The particular workaround we suggest is to pass the **ReportDefinition** [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) that is unique for each report generation as another argument of the functions and use it as an indicator that we are in a new report rendering. Here is a sample code with the changes suggested for the _PageHeaderSumFromPrevPage_ function:
+   The particular workaround we suggest is to pass the **ReportDefinition** [Global Object]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that is unique for each report generation as another argument of the functions and use it as an indicator that we are in a new report rendering. Here is a sample code with the changes suggested for the _PageHeaderSumFromPrevPage_ function:
 
    ```C#
    //...
@@ -256,7 +256,7 @@ The fact that the main variables that accumulate the result and the transitional
 
    The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument.
 
-3. If you use the [Page Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) **PageCount** in the report along with our custom page footer function, the totals may be wrong.
+3. If you use the [Page Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) **PageCount** in the report along with our custom page footer function, the totals may be wrong.
 
    The reason for this is the additional pass through the report pages that our algorithm makes when it is necessary to display the total pages per report.
 

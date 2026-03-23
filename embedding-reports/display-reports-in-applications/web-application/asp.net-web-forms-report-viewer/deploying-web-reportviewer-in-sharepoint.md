@@ -11,7 +11,7 @@ previous_url: /asp-net-report-viewer-deploying-web-reportViewer-in-MOSS
 
 # Deploying on SharePoint Overview
 
-> This is a legacy report viewer and for new projects our recommendation is to use the latest WebForms Report Viewer - [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+> This is a legacy report viewer and for new projects our recommendation is to use the latest WebForms Report Viewer - [HTML5 Web Forms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
 
 This topic outlines the required steps that need to be taken to deploy the web ReportViewer prior to implementing it within an existing `MOSS` web site.
 
@@ -49,10 +49,10 @@ This topic outlines the required steps that need to be taken to deploy the web 
 
 ## See Also
 
-* [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
+* [ASP.NET Web Forms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview)
 
-* [How to Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})
+* [How to Add report viewer to a web page]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page)
 
-* [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
+* [Medium Trust Support]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support)
 
-* [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
+* [AJAX support]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support)

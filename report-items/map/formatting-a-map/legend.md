@@ -21,11 +21,11 @@ A legend always contains one or more legend items where each legend item consist
 
 ## Setting the Order
 
-Legend items are ordered according to the order in which they are processed by the processing engine. To change their order, change the [`Sortings`]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%}) [`Expression`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) or `Direction` of the MapGroup.
+Legend items are ordered according to the order in which they are processed by the processing engine. To change their order, change the [`Sortings`]slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview) [`Expression`]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) or `Direction` of the MapGroup.
 
 ## Modifying the Text and Text Style
 
-To modify the text of the legend items, change the `Map.MapSeries` Legend [`Expression`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).
+To modify the text of the legend items, change the `Map.MapSeries` Legend [`Expression`]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
 
 > When you use the [`ShapeMapSeries`](/api/Telerik.Reporting.ShapeMapSeries), the `LegendItem.Value` expression allows you to apply the `RangeMin` and `RangeMax` specific references, which determine the minimum and maximum values of the respective data range.
 
@@ -39,11 +39,11 @@ If you are using the Standalone Report Designer, you can use the ribbon format a
 
 ## Changing the Color
 
-The colored box displayed for each legend item is inherited from the fill color of its corresponding series. To change the color displayed in a legend item, you will have to change the color of the corresponding series. For more information, refer to the article about [series]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%}).
+The colored box displayed for each legend item is inherited from the fill color of its corresponding series. To change the color displayed in a legend item, you will have to change the color of the corresponding series. For more information, refer to the article about [series]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series).
 
 ## Removing Extra Legend Items
 
-The legend is always connected to a series. If a legend item appears in the legend but the corresponding series is not displayed in the chart, the most likely cause is that the series does not contain any values. To remove the legend item from the legend, you must remove this series. To remove a series from your chart, you have to set up a [Filter]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) for the corresponding `SeriesGroup`.
+The legend is always connected to a series. If a legend item appears in the legend but the corresponding series is not displayed in the chart, the most likely cause is that the series does not contain any values. To remove the legend item from the legend, you must remove this series. To remove a series from your chart, you have to set up a [Filter]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) for the corresponding `SeriesGroup`.
 
 ## Positioning
 
@@ -88,5 +88,5 @@ The automatic sizing partially depends on the positioning of the legend as follo
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [(API) MapLegend](/api/Telerik.Reporting.MapLegend)
 * [(API) Legends](/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends) 
-* [Structure and Elements of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Structure and Elements of the Map Report Item]slug:telerikreporting/designing-reports/report-structure/map/structure/overview)
 * [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

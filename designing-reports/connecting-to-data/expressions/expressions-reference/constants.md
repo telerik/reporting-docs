@@ -37,7 +37,7 @@ or
 |'It"s my birthday'|It"s my birthday|
 |"It's my birthday"|It's my birthday|
 
-Some report item properties allow the usage of [ Embedded Expressions ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}), which provide easy concatenation of string literals with expression terms.
+Some report item properties allow the usage of [ Embedded Expressions ]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions), which provide easy concatenation of string literals with expression terms.
 
 ## Numeric constants
 

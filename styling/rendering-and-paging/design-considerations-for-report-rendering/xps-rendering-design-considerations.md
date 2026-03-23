@@ -18,7 +18,7 @@ An XPS document is a paginated set of related pages. The pages have a fixed layo
 
 XPS and Image rendering extensions share the same high-level layout engine. Therefore all rules and design considerations that apply for the Image Rendering Extension apply for XPS as well.
 
-For information common to the Image rendering extension and the XPS rendering extension, see [Image Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}). This topic describes features that are specific to the XPS rendering extension.
+For information common to the Image rendering extension and the XPS rendering extension, see [Image Rendering Design Considerations]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations). This topic describes features that are specific to the XPS rendering extension.
 
 ## Styling
 
@@ -33,6 +33,6 @@ This rendering extension does not support any interactive features.
 
 ## See Also
 
- * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
- * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+ * [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+ * [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+ * [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

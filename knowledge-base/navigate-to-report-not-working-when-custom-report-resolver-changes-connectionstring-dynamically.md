@@ -20,7 +20,7 @@ res_type: kb
 
 
 ## Description
-Sometimes it is necessary to change the connection string dynamically, in the code. The approach described in  [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%}) KB article is suitable for Desktop Viewers.
+Sometimes it is necessary to change the connection string dynamically, in the code. The approach described in  [Changing the connection string dynamically according to runtime data]slug:changing-the-connection-string-dynamically-according-to-runtime-data) KB article is suitable for Desktop Viewers.
 It can be applied also for the Html5 Web Viewers __with some modifications__. The connection string should be changed in the `Resolve()` method of the Custom Report Resolver.
 
 When there is a `NavigateToReport` Action set for any report item, the action will not work after updating the connection string.
@@ -325,4 +325,4 @@ End Class
 ## Notes
 When navigating to a Standalone designer report (.trdp, .trdx, .trbp) the paths to the reports will be resolved with respect to the application, not with respect to the main report. This may cause broken _NavigateToReport_ Actions when the report is not in the main folder of the application. To resolve the issue it will be necessary to replace the base path from the UriReportSource.Uri with the actual one (path to the application main folder).
 
-Connection string can be modified run time without extra code, based on Report Parameter: [Change Connection String dynamically through a report parameter]({%slug how-to-pass-connectionstring-to-report-dynamically-through-report-parameter%}).
+Connection string can be modified run time without extra code, based on Report Parameter: [Change Connection String dynamically through a report parameter]slug:how-to-pass-connectionstring-to-report-dynamically-through-report-parameter).

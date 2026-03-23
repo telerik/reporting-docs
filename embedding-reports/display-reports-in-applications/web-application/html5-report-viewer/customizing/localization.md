@@ -57,7 +57,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 > To modify the HTML5 Viewer's HTML template that contains the toolbar, preview, parameters, and document map areas, and so on, you will need to create a custom template, which you can provide to the viewer through its `templateUrl` property.
 > <br/>  
-> For more details on this, please check [Providing Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates%}).
+> For more details on this, please check [Providing Templates]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates).
 
 ## See Also
 

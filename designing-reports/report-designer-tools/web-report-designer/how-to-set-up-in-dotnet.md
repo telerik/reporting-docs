@@ -12,7 +12,7 @@ previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-
 
 # Setting up the Web Report Designer in .NET applications
 
-This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET {{site.mindotnetversion}}+` applications.
+This article shows how to integrate our [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in `.NET {{site.mindotnetversion}}+` applications.
 
 The quickest way to add the web report designer to a web project is with the **Telerik Web Report Designer** item template in Visual Studio. The item template is compatible with projects targetting `.NET {{site.mindotnetversion}}+`. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "_Telerik Web Report Designer_" and select the item template which corresponds to your project type.
 
@@ -27,11 +27,11 @@ For full control, instead of using the item template, you can manually configure
    - `Telerik.Reporting.JsonSerialization`
    - `Telerik.Reporting`
 
-When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 
 If you don't use NuGet packages, along with the above assemblies, you need to add all their dependencies manually to the project.
 
-> note If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX, and PPTX), you must install the [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/) and `the Telerik.Reporting.OpenXmlRendering` NuGet packages. For more information about the required package versions, see [Deploying Open XML]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}#deploying-open-xml).
+> note If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX, and PPTX), you must install the [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/) and `the Telerik.Reporting.OpenXmlRendering` NuGet packages. For more information about the required package versions, see [Deploying Open XML]slug:telerikreporting/using-reports-in-applications/third-party-dependencies#deploying-open-xml).
 
 ## Add Required Settings in the `Startup.cs` file
 
@@ -118,7 +118,7 @@ To activate JSON file configuration with a different name, for example, `reporti
 
 The REST service works as a backend and is responsible for storage operations like creating, opening, or saving report definitions. The following steps describe how to configure it:
 
-1. Make sure that a key-value JSON-based file is available in your project and add the required [configuration settings in it]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}#json-based-configuration), for example, the `ConnectionStrings`.
+1. Make sure that a key-value JSON-based file is available in your project and add the required [configuration settings in it]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview#json-based-configuration), for example, the `ConnectionStrings`.
 1. Implement a Report Designer controller. Right-click on the `Controllers` folder and add a new item: Add > New item... > **Web API Controller Class** item. Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the project.
 1. Inherit the [`ReportDesignerControllerBase`](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the [`ReportServiceConfiguration`](/api/telerik.reporting.services.reportserviceconfiguration) there is another configuration instance named [`ReportDesignerServiceConfiguration`](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), which will initialize the definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is how a basic implementation of the controller should look like:
 
@@ -199,5 +199,5 @@ You may find the complete example setup of the Web Report Designer in the _Html5
 
 ## See Also
 
-- [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
+- [Configure Web Report Designer and Create a Basic Report]slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report)
 - [YouTube video tutorial Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c)

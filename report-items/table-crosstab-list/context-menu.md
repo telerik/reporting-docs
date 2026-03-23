@@ -11,7 +11,7 @@ reportingArea: General
 
 # Using the Table Context Menu
 
-When you click a Table or Crosstab cell, you select a TextBox item. Although this is a standard TextBox report item, when it is in the context of a Table, CrossTab, or List item, its context menu will show settings for the Table, CrossTab, or List item besides the [usual TextBox attributes it displays]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}).
+When you click a Table or Crosstab cell, you select a TextBox item. Although this is a standard TextBox report item, when it is in the context of a Table, CrossTab, or List item, its context menu will show settings for the Table, CrossTab, or List item besides the [usual TextBox attributes it displays]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu).
 
 To see an option, click either an item, or the row or column handlers (the gray rectangles appearing when the whole Table item is selected).
 

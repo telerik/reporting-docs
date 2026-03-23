@@ -10,7 +10,7 @@ reportingArea: General
 
 # Layers and Hierarchy of the Map
 
-The Map report item is a data item that is similar to the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item, and allows you to present aggregated data by two hierarchical dimensions or groups.
+The Map report item is a data item that is similar to the [Graph]slug:telerikreporting/designing-reports/report-structure/graph/overview) report item, and allows you to present aggregated data by two hierarchical dimensions or groups.
 
 The __GeoLocationGroup__ defines the geographical component of your data, and the __SeriesGroups__ allows you to group your data in a hierarchical way and display one or more measures over the defined geographical reference. Like the other Telerik Reporting data items, the Map connects to a single data source and provides additional options for sorting and filtering the input data, binding, conditional formatting, and so on.
 
@@ -32,7 +32,7 @@ The Map item series display aggregated data to visualize one or more measures. A
 
 ## ShapeMapSeries Data
 
-The `ShapeMapSeries` that is used in the Choropleth map does not use the series group hierarchy the way it is used in the `LocationMapSeries`. The series grouping is intended to be used when having a [static group]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview%}) because the `ShapeMapSeries` defines its own grouping over properties that are specific only to this series type such as [`ColorData`](/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorData) and [`ColorsCount`](/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount).
+The `ShapeMapSeries` that is used in the Choropleth map does not use the series group hierarchy the way it is used in the `LocationMapSeries`. The series grouping is intended to be used when having a [static group]slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview) because the `ShapeMapSeries` defines its own grouping over properties that are specific only to this series type such as [`ColorData`](/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorData) and [`ColorsCount`](/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount).
 
 Therefore, the `ShapeMapSeries` data points are created for each category group member and their coordinates are obtained through an external source depending on the series [`SourceType`](/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_SourceType) property. The values of the data points determine their presentation colors and are a result from grouping the values into these `ShapeMapSeries`-specific groups previously mentioned.
 
@@ -47,7 +47,7 @@ Therefore, the `ShapeMapSeries` data points are created for each category group 
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Overview of the Graph Report Item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
+* [Overview of the Graph Report Item]slug:telerikreporting/designing-reports/report-structure/graph/overview)
 * [(API) GeoLocationMapGroup](/api/Telerik.Reporting.GeoLocationMapGroup)
 * [(API) ShapeMapSeries](/api/Telerik.Reporting.ShapeMapSeries)
 * [(API) Location](/api/Telerik.Reporting.Location)

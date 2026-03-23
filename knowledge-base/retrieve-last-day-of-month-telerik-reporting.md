@@ -48,4 +48,4 @@ Suppose the parameter `Parameter1` has a value of `"2025-06-17"`. The formula wi
 
 ## See Also
 
-* [Date and Time Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%})
+* [Date and Time Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions)

@@ -163,7 +163,7 @@ Step by step instructions follow:
 
 1. Set Table **Width** and **Styles** (as _StyleNames_ defined in the _StyleRules_ in the report _StyleSheet_ property). Leave only one column in the Table - we will use it to carry the _Styles_ of the header and detail cells.
 
-   Check the [Creating Style Rules]({%slug telerikreporting/designing-reports/styling-reports/creating-style-rules%}) article for details on style rules.
+   Check the [Creating Style Rules]slug:telerikreporting/designing-reports/styling-reports/creating-style-rules) article for details on style rules.
 
 1. Use the following sample code to add DataSource and the necessary columns to the Table:
 
@@ -316,7 +316,7 @@ The demo exports the report definition as `NewReport.trdx` and a PDF report docu
 
 ## See also
 
-- [How to Create a Dynamic Table, Crosstab, or List Item]({%slug how-to-create-a-dynamic-table-crosstab-list-item%})
-- [How to add multiple tables dynamically based on the data source]({%slug how-to-add-multiple-tables-dynamically-based-on-data-source%})
-- [Basic Concepts when Working with Tables]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
+- [How to Create a Dynamic Table, Crosstab, or List Item]slug:how-to-create-a-dynamic-table-crosstab-list-item)
+- [How to add multiple tables dynamically based on the data source]slug:how-to-add-multiple-tables-dynamically-based-on-data-source)
+- [Basic Concepts when Working with Tables]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts)
 - [(Example) DynamicTablePresetStylesDemo](https://github.com/telerik/reporting-samples/tree/master/DynamicTablePresetStylesExample)

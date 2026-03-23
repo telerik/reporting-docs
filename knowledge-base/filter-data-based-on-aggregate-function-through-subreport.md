@@ -24,7 +24,7 @@ res_type: kb
 
 Imagine the following scenario.
 
-We want to group a report, and in each group to show a table that is filtered to show only records with a specific field value, for example, set as a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) value. We also want the table to be with a different layout depending on the number of records it will display. Here are the more specific requirements for clarity:
+We want to group a report, and in each group to show a table that is filtered to show only records with a specific field value, for example, set as a [Report Parameter]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) value. We also want the table to be with a different layout depending on the number of records it will display. Here are the more specific requirements for clarity:
 
 We want to show all groups and a different table in each group:
 
@@ -32,21 +32,21 @@ We want to show all groups and a different table in each group:
 * Case 2 - only for those with specific `Fields.Type` and 2 records to show.
 * Case 3 - only for those with specific `Fields.Type` and 1 record to show.
 
-Filtering by the value of the `Fields.Type` is possible, however, it is not possible to filter on the count of the filtered items or another [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}). The latter leads to the error message in the report stating that `DataItem Filtering expression should not contain aggregate functions.`
+Filtering by the value of the `Fields.Type` is possible, however, it is not possible to filter on the count of the filtered items or another [aggregate function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions). The latter leads to the error message in the report stating that `DataItem Filtering expression should not contain aggregate functions.`
 
 Aggregates may be used on the group filtering level, however, this will take into account the entire report data and not only the data shown in the group.
 
 ## Solution
 
-Let's use a [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) in the [Report Group Header or Footer]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) instead of a Table. We will bind its DataSource to its parent DataSource, which is the group data. The idea is to apply the filtering by the value of `Fields.Type` in the subreport and pass different DataSources with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to different Tables that are going to represent each case.
+Let's use a [SubReport]slug:telerikreporting/designing-reports/report-structure/subreport) in the [Report Group Header or Footer]slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections) instead of a Table. We will bind its DataSource to its parent DataSource, which is the group data. The idea is to apply the filtering by the value of `Fields.Type` in the subreport and pass different DataSources with [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to different Tables that are going to represent each case.
 
-We simulate the filtering with an aggregate function with a Binding for the inner [Data Items']({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) DataSources.
+We simulate the filtering with an aggregate function with a Binding for the inner [Data Items']slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) DataSources.
 
 Here are the sample steps for implementation:
 
 1. Add a `SubReport` item in the Report Group Header and use Bindings to set its DataSource to `ReportItem.DataObject`. 
 1. Create a new report definition and use it as a ReportSource of the main report SubReport. 
-1. Add a new `Filter` to the subreport with [Filtering Rule]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules%}) to display only particular Types. 
+1. Add a new `Filter` to the subreport with [Filtering Rule]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules) to display only particular Types. 
 1. Set the subreport Report Header/Footer `CanShrink` to `True` to allow the section to shrink when some of its items are hidden. 
 1. Add 3 (three) tables in the subreport Report Header/Footer - one for each case. For each table configure the following properties: 
 
@@ -68,8 +68,8 @@ Download the sample main report and subreport from our Reporting Samples GitHub 
 
 ## See Also
 
-* [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
-* [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
-* [Adding Filtering to Table and Crosstab Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item%})
-* [Adding Filtering to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%})
-* [SubReport Item]({%slug telerikreporting/designing-reports/report-structure/subreport%})
+* [Data Items]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)
+* [Filtering Data]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
+* [Adding Filtering to Table and Crosstab Items]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item)
+* [Adding Filtering to Report]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report)
+* [SubReport Item]slug:telerikreporting/designing-reports/report-structure/subreport)

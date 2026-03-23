@@ -41,5 +41,5 @@ By applying the `[DontWrapResult]` attribute, the REST API will return the versi
 
 ## See Also
 
-* [Report Viewer and Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
-* [Telerik Reporting REST Service Documentation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
+* [Report Viewer and Reporting REST Service]slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services)
+* [Telerik Reporting REST Service Documentation]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview)

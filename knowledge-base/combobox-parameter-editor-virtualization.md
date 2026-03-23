@@ -29,11 +29,11 @@ ticketid: 1701118
 
 ## Description
 
-I am experiencing performance issues with the ComboBox parameter editor in the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). When the ComboBox is bound to a large dataset, the UI becomes slow. Clicking the ComboBox to open or select a value results in a noticeable delay. I need a solution to optimize the loading of the ComboBox when handling large data sources.
+I am experiencing performance issues with the ComboBox parameter editor in the [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview). When the ComboBox is bound to a large dataset, the UI becomes slow. Clicking the ComboBox to open or select a value results in a noticeable delay. I need a solution to optimize the loading of the ComboBox when handling large data sources.
 
 ## Solution
 
-To address slow performance with large datasets, implement a [custom parameter editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}) using the [Kendo UI for jQuery ComboBox with virtualization](https://www.telerik.com/kendo-jquery-ui/documentation/controls/combobox/virtualization). Virtualization renders records dynamically as you scroll, significantly improving load times.
+To address slow performance with large datasets, implement a [custom parameter editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor) using the [Kendo UI for jQuery ComboBox with virtualization](https://www.telerik.com/kendo-jquery-ui/documentation/controls/combobox/virtualization). Virtualization renders records dynamically as you scroll, significantly improving load times.
 
 Configure the `parameterEditors` option in the HTML5 Report Viewer to define the custom parameter editor:
 
@@ -105,6 +105,6 @@ Configure the `parameterEditors` option in the HTML5 Report Viewer to define the
 
 ## See Also
 
-* [How to Create a Custom Parameter Editor in the Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+* [How to Create a Custom Parameter Editor in the Html5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)
 * [Kendo UI for jQuery ComboBox Documentation](https://demos.telerik.com/kendo-ui/combobox/index)
 * [ComboBox Virtualization](https://www.telerik.com/kendo-jquery-ui/documentation/controls/combobox/virtualization)

@@ -27,7 +27,7 @@ ticketid: 1691214
 
 ## Description
 
-I encounter a `NullReferenceException` when attempting to display a report using the [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}). My NET WinForms application utilizes the embedded report engine and includes the proper `Telerik.Licensing` and WinForms Report Viewer NuGet packages. 
+I encounter a `NullReferenceException` when attempting to display a report using the [WinForms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview). My NET WinForms application utilizes the embedded report engine and includes the proper `Telerik.Licensing` and WinForms Report Viewer NuGet packages. 
 
 While the build confirms a valid Telerik Reporting license, running the form crashes at `UILicenseProvider.cs` in the `ShowWatermark` method due to `base.LicenseInfo` being null.
 
@@ -77,7 +77,7 @@ To resolve the issue, ensure that the WinForms Report Viewer control is added to
 
 ## See Also
 
-* [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+* [WinForms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
 * [RefreshReport() Method](/api/telerik.reportviewer.winforms.reportviewerbase#Telerik_ReportViewer_WinForms_ReportViewerBase_RefreshReport)
 * [Controls Collection in WinForms](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controls?view=windowsdesktop-9.0)
 * [Bug Report: NullReferenceException Thrown by WinForms Report Viewer](https://feedback.telerik.com/reporting/1691310-nullreferenceexception-thrown-by-the-winforms-report-viewer-when-there-is-no-parent-form)

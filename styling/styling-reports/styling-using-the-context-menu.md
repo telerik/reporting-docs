@@ -40,5 +40,5 @@ If a report item's style properties were modified, clicking Reset Style will rem
 
 ## See Also
 
-* [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
-* [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
+* [Style Inheritance and Overriding]slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding)
+* [Understanding Style Selectors]slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors)

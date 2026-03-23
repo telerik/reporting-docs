@@ -30,7 +30,7 @@ often used to demonstrate how an initial value is affected by a series of interm
 
 Such chart can be easily created when the data source already has the values for Y and Y0 precalculated, but in case we have only the intermediate values, the scenario gets a bit more challenging.
 
-The key is to use the **RunningValue()** and **Exec()** [data functions]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions %}), which provide aggregates calculation for a given scope.
+The key is to use the **RunningValue()** and **Exec()** [data functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions), which provide aggregates calculation for a given scope.
 
 In our scenario the data would look like this:
 
@@ -47,7 +47,7 @@ Total,0
 
 The steps, needed to produce a waterfall chart are listed below:
 
-1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}).
+1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview).
 2. When arranging the graph fields, drag the **Item** field for _Categories_ box and **Value** field for _Values_ box.
 3. Remove the sorting from the category group to ensure the data will be ordered as it is in the data source.
 4. Select a datapoint from the produced column series and set its Y property to
@@ -68,7 +68,7 @@ The steps, needed to produce a waterfall chart are listed below:
 
    Otherwise subtracts the current datapoint value from the accumulated sum to calculate the bottom coordinate of the datapoint.
 
-5. Assign the desired colors to the graph series using [Conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) rules.
+5. Assign the desired colors to the graph series using [Conditional formatting]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) rules.
 
 ## See Also
 

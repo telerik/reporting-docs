@@ -34,7 +34,7 @@ res_type: kb
 
 The issue is described in the bug report [Several icons are not visualized in the toolbar and search dialog of the Native Blazor Report Viewer](https://feedback.telerik.com/reporting/1594670-several-icons-are-not-visualized-in-the-toolbar-and-search-dialog-of-the-native-blazor-report-viewer).
 
-The [Blazor Native Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) with version _17.0.23.118_ or lower is built with _Telerik.UI.forBlazor 3.7.0_ components.
+The [Blazor Native Report Viewer]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) with version _17.0.23.118_ or lower is built with _Telerik.UI.forBlazor 3.7.0_ components.
 
 With [Telerik.UI.forBlazor 4.0.0](https://www.telerik.com/support/whats-new/blazor-ui/release-history/ui-for-blazor-4-0-0) the Telerik Blazor UI team introduced a breaking change in _Icon_ names. Instead of _String_, they should be referenced as the newly introduced _Enum_ values - see [Icons List](https://docs.telerik.com/blazor-ui/common-features/icons#icons-list).
 
@@ -98,6 +98,6 @@ The relevant part of the code in the CSHTML file should look like:
 
 ## See Also
 
-* [Blazor Native Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
+* [Blazor Native Report Viewer]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
 * [Telerik Blazor UI Icons List](https://docs.telerik.com/blazor-ui/common-features/icons#icons-list)
 * [Telerik.UI.forBlazor 4.0.0](https://www.telerik.com/support/whats-new/blazor-ui/release-history/ui-for-blazor-4-0-0)

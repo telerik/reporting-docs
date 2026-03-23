@@ -14,7 +14,7 @@ previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 
 This topic explains how to use the custom parameters UI to update the report parameters instead of using the HTML5 Web Forms report viewer's default implementation of the parameters area. 
 
-The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
+The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)) method is used.
 
 To give an example, we will use the Invoice report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI.
 
@@ -30,7 +30,7 @@ To give an example, we will use the Invoice report from our examples and will up
 	
 	Add a reference to the `ReportLibrary` project in the Web Forms project.
 
-1. Then, use the [HTML5 Web Forms Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%}) and name the web page with the viewer __InvoiceParameters.aspx__. 
+1. Then, use the [HTML5 Web Forms Report Viewer Item Template]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service) and name the web page with the viewer __InvoiceParameters.aspx__. 
 
 	On __'Configure report source'__ step select __'Existing report definition'__, then select __'Select type report definition created in Visual Studio'__ and browse *Invoice* report class. 
 	
@@ -101,7 +101,7 @@ To give an example, we will use the Invoice report from our examples and will up
     </div>
     ```
 
-1.  Now, initialize the report viewer. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
+1.  Now, initialize the report viewer. We will use the minimal set of all [possible options]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
 
     ```HTML
     <telerik:ReportViewer ID="reportViewer1" Width="1300px" Height="900px" EnableAccessibility="false" runat="server">
@@ -236,4 +236,4 @@ To give an example, we will use the Invoice report from our examples and will up
 
 ## See Also
 
-- [Creating Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+- [Creating Custom Parameter Editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

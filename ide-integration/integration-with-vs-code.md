@@ -37,5 +37,5 @@ To create a new test app, you can use the Angular CLI:
 
 ## See Also
 
-* [Adding the Native Angular Report Viewer with the Project Item Generator]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/integrating-with-project-item-generator%}) 
+* [Adding the Native Angular Report Viewer with the Project Item Generator]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/integrating-with-project-item-generator) 
 

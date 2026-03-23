@@ -60,4 +60,4 @@ As explained in the ["Values" section of the aforementioned Microsoft documentat
 
 * [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
 * [Understanding .NET versioning](https://learn.microsoft.com/en-us/dotnet/core/versions/#semantic-versioning)
-* [Using external assemblies with custom CLR objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})
+* [Using external assemblies with custom CLR objects in the Report Designer]slug:how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer)

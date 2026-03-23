@@ -42,9 +42,9 @@ To help improve the application's security, the reporting engine prevents loadin
 
 ## Solution
 
-The Chart report item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item. It is highly recommended to migrate your reports from the obsolete Chart item to the Graph item.
+The Chart report item is now superseded by the more advanced [Graph]slug:telerikreporting/designing-reports/report-structure/graph/overview) report item. It is highly recommended to migrate your reports from the obsolete Chart item to the Graph item.
 
-If you need to continue using the obsolete Chart item, explicitly register the type by adding a [typeReference]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}) in your application's configuration file:
+If you need to continue using the obsolete Chart item, explicitly register the type by adding a [typeReference]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) in your application's configuration file:
 
 ````xml
 <configuration>
@@ -64,6 +64,6 @@ After adding this configuration, the Chart item should render without the type l
 
 ## See Also
 
-- [Chart Report Item Overview (Obsolete)]({%slug telerikreporting/designing-reports/report-structure/chart-(obsolete)%})
-- [Graph Report Item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
-- [TypeReferences Configuration Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%})
+- [Chart Report Item Overview (Obsolete)]slug:telerikreporting/designing-reports/report-structure/chart-(obsolete))
+- [Graph Report Item]slug:telerikreporting/designing-reports/report-structure/graph/overview)
+- [TypeReferences Configuration Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element)

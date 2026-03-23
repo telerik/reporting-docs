@@ -45,4 +45,4 @@ The Telerik Report Designer searches for and automatically loads templates from 
 
 ## See Also
 
-* [Report Templates in Web Report Designer]({%slug web-report-designer-report-templates%})
+* [Report Templates in Web Report Designer]slug:web-report-designer-report-templates)

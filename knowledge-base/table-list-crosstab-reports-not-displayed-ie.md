@@ -34,8 +34,8 @@ The HTML5 Report Viewer does not display a report that uses `Table`, `List`, or 
 
 ## Cause
 
-If the data that is visualized by the [`Table`, `List`, or `Crosstab` item]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) results in a great number of HTML elements, Internet Explorer may fail to visualize the content.
+If the data that is visualized by the [`Table`, `List`, or `Crosstab` item]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) results in a great number of HTML elements, Internet Explorer may fail to visualize the content.
 
 ## Solution  
 
-To solve this issue, refer to the solutions suggested in the article on [designing considerations for HTML rendering (browsers limitations)]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).
+To solve this issue, refer to the solutions suggested in the article on [designing considerations for HTML rendering (browsers limitations)]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations).

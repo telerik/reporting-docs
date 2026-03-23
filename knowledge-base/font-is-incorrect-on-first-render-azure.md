@@ -33,7 +33,7 @@ The rest of the report is rendered with the custom font as expected. The same re
 
 ## Cause
 
-Our reporting engine requires the fonts to either be installed in the hosting environment or to be referenced through the use of the [privateFonts element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}).
+Our reporting engine requires the fonts to either be installed in the hosting environment or to be referenced through the use of the [privateFonts element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element).
 
 Installing a font on an Azure app service can sometimes be not an easy task, so people end up using the `privateFonts` variant.
 
@@ -70,8 +70,8 @@ Host a .NET Core web application project on Azure, then use it to render a repor
 ## See Also
 
 * [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
-* [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%})
-* [privateFonts Element Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})
-* [First Few Report Items Have an Incorrect Font]({%slug inconsistent-font-of-the-first-few-report-items%})
+* [Fonts Requirements]slug:telerikreporting/designing-reports/rendering-and-paging/fonts-requirements)
+* [privateFonts Element Overview]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element)
+* [First Few Report Items Have an Incorrect Font]slug:inconsistent-font-of-the-first-few-report-items)
 * [Custom Fonts not working on Azure App Service](https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4398)
-* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})
+* [Problems When Rendering Teleik Reports in Azure]slug:azure-reporting-problems)

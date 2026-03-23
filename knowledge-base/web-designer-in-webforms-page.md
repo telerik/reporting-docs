@@ -69,9 +69,9 @@ It is necessary to extract the `<div>` place holder of the designer outside the 
 </body>
 ````
 
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is a pure HTML5/CSS3/jQuery widget and we recommend to host it outside the ASPX Form in order to behave as expected, without making post-back requests.
+The [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) is a pure HTML5/CSS3/jQuery widget and we recommend to host it outside the ASPX Form in order to behave as expected, without making post-back requests.
 
 ## See Also
 
-* [Congfiguring in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
-* [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Congfiguring in ASP.NET Framework application]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application)
+* [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)

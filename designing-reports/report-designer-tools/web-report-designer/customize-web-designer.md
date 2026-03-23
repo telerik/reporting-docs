@@ -67,4 +67,4 @@ The code above denies the users (all in this case) to add _PictureBox_ and _HTML
 
 ## See Also
 
-* [Customizing Report Parameters Area in Web Report Designer using CSS and JavaScript]({%slug customize-report-parameters-area-web-report-designer%})
+* [Customizing Report Parameters Area in Web Report Designer using CSS and JavaScript]slug:customize-report-parameters-area-web-report-designer)

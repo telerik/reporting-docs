@@ -27,7 +27,7 @@ res_type: kb
 ## Description
 This article demonstrates how to hide the option for adding a new SQL connection in the SQL DataSource Wizard in the Web Report Designer.
 
-> In newer versions, it is possible to intercept the `/api/reportdesigner/connectionspermissions` request and modify the response returned from it to hide this option. For more information, check [How to Disable "Build new data connections" in the SqlDataSource Wizard of the Web Report Designer]slug:restricting-build-new-data-connections-report-designer).
+> In newer versions, it is possible to intercept the `/api/reportdesigner/connectionspermissions` request and modify the response returned from it to hide this option. For more information, check [How to Disable "Build new data connections" in the SqlDataSource Wizard of the Web Report Designer](slug:restricting-build-new-data-connections-report-designer).
 
 ## Suggested Workarounds
 Currently, such functionality can be achieved through a workaround. You can add some extra JS and Jquery code that hides the option to create a new SQL connection. 

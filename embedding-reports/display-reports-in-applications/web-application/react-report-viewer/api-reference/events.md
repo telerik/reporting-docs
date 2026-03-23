@@ -44,4 +44,4 @@ Below is a list of all available report viewer events.
 
 ## See Also
 
-[HTML5 Report Viewer Events]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args))
+[HTML5 Report Viewer Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args))

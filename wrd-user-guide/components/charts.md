@@ -17,7 +17,7 @@ img[alt$="><"] {
 
 # Charts
 
-The Chart components in the Web Report Designer allow users to visualize data records from different [Data Source]slug:web-report-designer-user-guide-components-data-sources) storages. Charts transform numerical data into visual representations, making it easier to identify patterns, trends, and relationships in your data.
+The Chart components in the Web Report Designer allow users to visualize data records from different [Data Source](slug:web-report-designer-user-guide-components-data-sources) storages. Charts transform numerical data into visual representations, making it easier to identify patterns, trends, and relationships in your data.
 
 You can use Charts to represent:
 
@@ -34,12 +34,12 @@ You can use Charts to represent:
 
 The Web Report Designer provides the following chart types:
 
-* [Bar Chart]slug:web-report-designer-user-guide-components-charts#adding-a-bar-chart)—Displays data series as sets of horizontal bars, ideal for comparing amounts or values between different categories.
-* [Line Chart]slug:web-report-designer-user-guide-components-charts#adding-a-line-chart)—Displays series as sets of points connected by lines, perfect for showing trends over continuous periods.
-* [Area Chart]slug:web-report-designer-user-guide-components-charts#adding-an-area-chart)—Shows data as filled areas under lines, emphasizing volume and cumulative totals.
-* [Column Chart]slug:web-report-designer-user-guide-components-charts#adding-a-column-chart)—Displays data series as sets of vertical bars that are grouped by category.
-* [Pie Chart]slug:web-report-designer-user-guide-components-charts#adding-a-pie-or-doughnut-chart)—Shows the contribution of fractional parts to a whole, commonly used for proportion comparisons.
-* [Doughnut Chart]slug:web-report-designer-user-guide-components-charts#adding-a-pie-or-doughnut-chart)—Similar to Pie Chart but with an open space in the center, allowing for additional information display.
+* [Bar Chart](slug:web-report-designer-user-guide-components-charts#adding-a-bar-chart)—Displays data series as sets of horizontal bars, ideal for comparing amounts or values between different categories.
+* [Line Chart](slug:web-report-designer-user-guide-components-charts#adding-a-line-chart)—Displays series as sets of points connected by lines, perfect for showing trends over continuous periods.
+* [Area Chart](slug:web-report-designer-user-guide-components-charts#adding-an-area-chart)—Shows data as filled areas under lines, emphasizing volume and cumulative totals.
+* [Column Chart](slug:web-report-designer-user-guide-components-charts#adding-a-column-chart)—Displays data series as sets of vertical bars that are grouped by category.
+* [Pie Chart](slug:web-report-designer-user-guide-components-charts#adding-a-pie-or-doughnut-chart)—Shows the contribution of fractional parts to a whole, commonly used for proportion comparisons.
+* [Doughnut Chart](slug:web-report-designer-user-guide-components-charts#adding-a-pie-or-doughnut-chart)—Similar to Pie Chart but with an open space in the center, allowing for additional information display.
 
 ## Chart Categories
 
@@ -206,6 +206,6 @@ Based on the Pie Chart type that you select during the configuration, one of the
 
 ## See Also
 
-* [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
-* [Overview of the Graph Report Item]slug:telerikreporting/designing-reports/report-structure/graph/overview)
-* [Data Sources]slug:web-report-designer-user-guide-components-data-sources)
+* [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Overview of the Graph Report Item](slug:telerikreporting/designing-reports/report-structure/graph/overview)
+* [Data Sources](slug:web-report-designer-user-guide-components-data-sources)

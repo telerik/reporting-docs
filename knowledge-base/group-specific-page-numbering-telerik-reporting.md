@@ -49,6 +49,6 @@ To implement group-specific page numbering, follow these steps:
 
 ## See Also
 
-* [Page Functions Explained - Telerik Reporting]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions)
-* [Grouping Data]slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview) 
-* [Adding Groups to Report]slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report)
+* [Page Functions Explained - Telerik Reporting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions)
+* [Grouping Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview) 
+* [Adding Groups to Report](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report)

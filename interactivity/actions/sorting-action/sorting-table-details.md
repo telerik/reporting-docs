@@ -18,7 +18,7 @@ This document demonstrates how to enable interactive sorting with the `Standalon
 
 To follow the steps in this guide, you need the following:
 
-- A Telerik Reporting installation with an enabled [Examples feature]slug:telerikreporting/installation)
+- A Telerik Reporting installation with an enabled [Examples feature](slug:telerikreporting/installation)
 - Microsoft SQL Server with AdventureWorks
 
 ### Procedure

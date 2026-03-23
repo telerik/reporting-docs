@@ -64,7 +64,7 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 				<li>viewMode</li>
 				<li>reportSourceParameters</li>
 			</ul>
-			Additional information about how these options affect the embedded Report Viewer can be found at the <a href="{% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization %}">HTML5 Report Viewer Initialization</a> documentation article.
+			Additional information about how these options affect the embedded Report Viewer can be found at the <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization">HTML5 Report Viewer Initialization</a> documentation article.
 			</td>
 		</tr>
 		<tr>

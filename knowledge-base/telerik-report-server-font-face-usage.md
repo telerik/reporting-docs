@@ -26,7 +26,7 @@ ticketid: 1688723
 
 ## Description
 
-To ensure that reports stored in the [Telerik Report Server](https://www.telerik.com/report-server) and displayed in a web report viewer, such as the [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview), consistently use a font, even when the font is not installed on client machines. The issue occurs when the Report Viewer defaults to a generic sans-serif font for users who do not have the custom font installed locally. Exporting the report to PDF correctly embeds the intended font because the font is available on the server.
+To ensure that reports stored in the [Telerik Report Server](https://www.telerik.com/report-server) and displayed in a web report viewer, such as the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview), consistently use a font, even when the font is not installed on client machines. The issue occurs when the Report Viewer defaults to a generic sans-serif font for users who do not have the custom font installed locally. Exporting the report to PDF correctly embeds the intended font because the font is available on the server.
 
 This knowledge base article also answers the following questions:
 

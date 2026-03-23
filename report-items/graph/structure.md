@@ -26,7 +26,7 @@ The following image shows a Rose (Bar) chart in a Graph item with a Polar coordi
 
 ## Graph vs. Table
 
-The Graph is a data report item and, similarly to the [Table]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) item, allows you to summarize data by the __CategoryGroups__ and __SeriesGroups__ hierarchical dimensions.
+The Graph is a data report item and, similarly to the [Table](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) item, allows you to summarize data by the __CategoryGroups__ and __SeriesGroups__ hierarchical dimensions.
 
 The following images visually compare the data representation offered by the Graph and Table report items:
 
@@ -98,7 +98,7 @@ An axis consists of the following elements:
 * __Title__&mdash;The title of the axis, usually a brief description of the dimension.
 * __Grid lines__&mdash;Within the Graph, a grid of lines may appear to aid the visual alignment of data. You can enhance the grid by visually emphasizing the lines at regular or significant graduations. The emphasized lines are then called major grid lines and the remainder are minor grid lines.
 
-For more information on styling the axes, refer to the article on [formatting the axes of the Graph report item]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis).
+For more information on styling the axes, refer to the article on [formatting the axes of the Graph report item](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis).
 
 ## Scales
 
@@ -115,7 +115,7 @@ According to the type of the input data, the Graph supports the following scale 
 
 A Graph Series represents a series of data points that constitute an individual measurement. This section lists the series types supported by the Graph report item.
 
-Graph Series support [Tooltips]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips). The Tooltips are related to the data points of the Series. Therefore, in LineSeries, the `DataPointStyle.Visible` should be `True` and the Data Point Marker `MarkerSize` should be non-zero to have the Tooltips appear in the preview.
+Graph Series support [Tooltips](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips). The Tooltips are related to the data points of the Series. Therefore, in LineSeries, the `DataPointStyle.Visible` should be `True` and the Data Point Marker `MarkerSize` should be non-zero to have the Tooltips appear in the preview.
 
 ### Bar Charts
 
@@ -144,23 +144,23 @@ When an Area series is projected on a Polar coordinate system, the result is als
 
 ### Range Bar Charts
 
-[Range Bar charts]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview) are similar to the Bar series. However, the bars do not start from the axis but at a given value. The Range Bar emphasizes the distance between two values or measures.
+[Range Bar charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview) are similar to the Bar series. However, the bars do not start from the axis but at a given value. The Range Bar emphasizes the distance between two values or measures.
 
 ### Range Area Charts
 
-[Range Area charts]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview) are similar to the Area series. However, the bottom point does not start from the axis but at a given value. The Range Area emphasizes the distance between two values/measures.
+[Range Area charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview) are similar to the Area series. However, the bottom point does not start from the axis but at a given value. The Range Area emphasizes the distance between two values/measures.
 
 ## Legend
 
 When the data appearing in a chart contains multiple variables, the chart may include a legend. The legend contains a list of the displayed chart variables and an example of their appearance. Legend content allows the user to identify the data from each variable in the Graph.
 
-For more information on styling the legend, refer to the article on [formatting the legend of the Graph report item]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend).
+For more information on styling the legend, refer to the article on [formatting the legend of the Graph report item](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend).
 
 ## Title
 
 The Graph report item can have one or more titles that provide a brief description of what the displayed data refers to.
 
-For more information on styling the title, refer to the article on [formatting the title of the Graph report item]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title).
+For more information on styling the title, refer to the article on [formatting the title of the Graph report item](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title).
 
 ## See Also
 

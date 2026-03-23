@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
 
 The legacy ASP.NET WebForms ReportViewer report does not display data or changes that are made in the events.
 
@@ -40,4 +40,4 @@ The legacy ASP.NET WebForms ReportViewer depends on the ASP.NET Session.
 
 ## Solution  
 
-Depending on the  [session state mode](https://msdn.microsoft.com/en-us/library/ms178586.aspx)  of the application, the report may require additional settings as described in the [Design Considerations for Out-proc Session State]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview) article.
+Depending on the  [session state mode](https://msdn.microsoft.com/en-us/library/ms178586.aspx)  of the application, the report may require additional settings as described in the [Design Considerations for Out-proc Session State](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview) article.

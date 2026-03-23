@@ -16,7 +16,7 @@ In the Chart item the sorting is performed at data item level and sets the order
 
 ## Adding sorting to Table/Crosstab data item using Report Designer
 
-1. In the[Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
+1. In the[Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
 
 1. Click the Sorting ellipsis.
 

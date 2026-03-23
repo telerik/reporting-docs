@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-Upon installing the `Telerik.ReportViewer.BlazorNative` package and following the [Integrating Native Blazor Viewer in Blazor Server or WebAssembly App]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer) article, I am met with the below error when I start the project.
+Upon installing the `Telerik.ReportViewer.BlazorNative` package and following the [Integrating Native Blazor Viewer in Blazor Server or WebAssembly App](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer) article, I am met with the below error when I start the project.
 
 ## Error Message
 

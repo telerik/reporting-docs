@@ -17,7 +17,7 @@ When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet pack
 
 The license activation process in a CI/CD environment involves the following steps:
 
-1. [Download]slug:license-key#downloading-the-license-key) a license key from [your Telerik account](https://www.telerik.com/account/your-licenses/license-keys).
+1. [Download](slug:license-key#downloading-the-license-key) a license key from [your Telerik account](https://www.telerik.com/account/your-licenses/license-keys).
 1. [Create an environment variable](#creating-an-environment-variable) named `TELERIK_LICENSE` and add your Telerik Reporting license key as a value. Alternatively, use the [Azure Secure files approach](#using-secure-files-on-azure-devops).
 
 ## Creating an Environment Variable

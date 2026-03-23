@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-Utilizing reporting solution in UWP both with a WebView with integrated fully functional [Telerik HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and creating report document by invoking [Telerik Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) endpoints.
+Utilizing reporting solution in UWP both with a WebView with integrated fully functional [Telerik HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and creating report document by invoking [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) endpoints.
 
 ## Solution
 
@@ -46,5 +46,5 @@ The solution contains 5 projects:
 * [Example solution archive](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/Telerik.Reporting.UWP.Examples.zip)
 * [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview?view=winrt-19041)
 * [WebView.AddWebAllowedObject(String, Object) Method.](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject?view=winrt-19041#Windows_UI_Xaml_Controls_WebView_AddWebAllowedObject_System_String_System_Object_)
-* [Telerik Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview)
-* [Telerik HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+* [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview)
+* [Telerik HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

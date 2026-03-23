@@ -23,7 +23,7 @@ table th:nth-of-type(2) {
 
 **Telerik Reporting** produces Excel files in:
 
-- Microsoft Excel 2007 and above (OpenXML 2.0). This rendering extension requires [Third-Party Dependencies]slug:telerikreporting/using-reports-in-applications/third-party-dependencies).
+- Microsoft Excel 2007 and above (OpenXML 2.0). This rendering extension requires [Third-Party Dependencies](slug:telerikreporting/using-reports-in-applications/third-party-dependencies).
 - Microsoft Excel 97-2003 (BIFF, v.8)
 
 Telerik Reporting does not rely on Microsoft Office being installed to export to both formats. **Microsoft Excel 97-2003** files can be opened by Microsoft Excel 97 for Windows and later.
@@ -39,7 +39,7 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 ## Report Item Layout
 
-- The layout of the generated Excel document is controlled by the device info parameter [SplitWorksheetOnPageBreak]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview). By default, the entire report is rendered into a single Excel worksheet and the paging is not applied. If the _SplitWorksheetOnPageBreak_ is set to **true**, a new worksheet gets generated on each page break configured in the report definition.
+- The layout of the generated Excel document is controlled by the device info parameter [SplitWorksheetOnPageBreak](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview). By default, the entire report is rendered into a single Excel worksheet and the paging is not applied. If the _SplitWorksheetOnPageBreak_ is set to **true**, a new worksheet gets generated on each page break configured in the report definition.
 - Overlapping items are not supported and will be moved down/right by the Excel renderer so that they do not overlap.
 - When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines.
 
@@ -54,7 +54,7 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 ## Page Headers and Footers
 
-The page header and footer render differently depending on the [Excel 2003 Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings).
+The page header and footer render differently depending on the [Excel 2003 Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings).
 
 The page header can be rendered in two ways: as a sequence of frozen rows at the top of the worksheet, or in the native Excel page header.
 
@@ -104,7 +104,7 @@ If sorting is important for your exported Excel reports, the guidelines below ca
 
 - The most common cause of merged cells is improper or missing left/right alignment of report items. Make sure the left and right edges of all report items line up with one another. The alignment and applying the same width to report items will usually solve the problem.
 - Aligning items precisely might not be enough, and in some rare cases, columns might continue to be merged. This is likely caused by internal unit conversion and rounding when the Excel worksheet is rendered. In the report definition, you can specify location and size in different measurement units such as inches, pixels, centimeters, and points, but internally Excel uses points. So to minimize conversion and the potential inaccuracy of rounding when converting inches and centimeters to points, consider specifying all measurements in points (one inch is 72 points).
-- The Page Header of the report interferes with the exported columns in Excel. A horizontal page break (see [Understanding Pagination]slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)) that splits a report item into two parts will result in an additional Excel column in the item. For that reason, you need to make sure that the report's physical page is wide enough to accommodate the entire report content so that there is no horizontal page break introduced. The report designers indicate when the report is wider than the physical page through a yellow warning triangle at the top left corner of the report. You may check the warning message by hovering over the triangle.
+- The Page Header of the report interferes with the exported columns in Excel. A horizontal page break (see [Understanding Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)) that splits a report item into two parts will result in an additional Excel column in the item. For that reason, you need to make sure that the report's physical page is wide enough to accommodate the entire report content so that there is no horizontal page break introduced. The report designers indicate when the report is wider than the physical page through a yellow warning triangle at the top left corner of the report. You may check the warning message by hovering over the triangle.
 
 ## Page Settings
 
@@ -230,6 +230,6 @@ Excel places limitations on exported reports due to the format capabilities. The
 
 ## See Also
 
-- [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
-- [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
-- [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+- [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+- [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+- [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

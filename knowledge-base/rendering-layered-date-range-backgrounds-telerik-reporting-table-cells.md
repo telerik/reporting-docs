@@ -23,7 +23,7 @@ ticketid: 1703676
 
 ## Description
 
-I need to display overlapping date ranges inside a [Crosstab/Table/List]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) report item. Each row represents a unit, and each monthly cell should visually depict three date ranges with distinct background colors. 
+I need to display overlapping date ranges inside a [Crosstab/Table/List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) report item. Each row represents a unit, and each monthly cell should visually depict three date ranges with distinct background colors. 
 
 The ranges overlap, and their rendering should follow a layered approach, with the outermost range appearing behind the inner ones. I need guidance on calculating pixel positions dynamically and rendering layered backgrounds within each cell.
 
@@ -31,10 +31,10 @@ The ranges overlap, and their rendering should follow a layered approach, with t
 
 To achieve layered background rendering for overlapping date ranges:
 
-1. Use a [Crosstab]slug:crosstab_item_get_started) item to represent the data in a tabular format.
-1. Place a [Panel]slug:telerikreporting/designing-reports/report-structure/panel) inside the crosstab cells where you need to display the date ranges. The panel will occupy the entire cell and act as a *container* for other elements, such as **TextBox** items. This approach allows you to configure the textboxes as needed, since a single textbox alone would otherwise fill the entire cell.
-1. Add multiple [TextBox]slug:telerikreporting/designing-reports/report-structure/textbox) items inside the panel to represent the date ranges. Each TextBox should correspond to a single date range color.
-1. Bind the [Location](/api/telerik.reporting.reportitem#Telerik_Reporting_ReportItem_Location) and [Width](/api/telerik.reporting.reportitem#Telerik_Reporting_ReportItem_Width) of each TextBox dynamically using [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). This ensures the rectangles are rendered proportionally based on the date range extracted from the data.
+1. Use a [Crosstab](slug:crosstab_item_get_started) item to represent the data in a tabular format.
+1. Place a [Panel](slug:telerikreporting/designing-reports/report-structure/panel) inside the crosstab cells where you need to display the date ranges. The panel will occupy the entire cell and act as a *container* for other elements, such as **TextBox** items. This approach allows you to configure the textboxes as needed, since a single textbox alone would otherwise fill the entire cell.
+1. Add multiple [TextBox](slug:telerikreporting/designing-reports/report-structure/textbox) items inside the panel to represent the date ranges. Each TextBox should correspond to a single date range color.
+1. Bind the [Location](/api/telerik.reporting.reportitem#Telerik_Reporting_ReportItem_Location) and [Width](/api/telerik.reporting.reportitem#Telerik_Reporting_ReportItem_Width) of each TextBox dynamically using [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). This ensures the rectangles are rendered proportionally based on the date range extracted from the data.
 
 ### Example
 
@@ -58,8 +58,8 @@ Download the [rendering-layered-date-range-backgrounds.trdp](https://github.com/
 
 ## See Also
 
-* [Telerik Reporting Crosstab Overview]slug:crosstab_item_get_started)
-* [Telerik Reporting Panel Overview]slug:telerikreporting/designing-reports/report-structure/panel)
-* [Telerik Reporting TextBox Overview]slug:telerikreporting/designing-reports/report-structure/textbox)
-* [Using Expressions in Telerik Reporting]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)
-* [How to Display Reports with Alternating Style Rows]slug:how-to-display-alternating-style-rows)
+* [Telerik Reporting Crosstab Overview](slug:crosstab_item_get_started)
+* [Telerik Reporting Panel Overview](slug:telerikreporting/designing-reports/report-structure/panel)
+* [Telerik Reporting TextBox Overview](slug:telerikreporting/designing-reports/report-structure/textbox)
+* [Using Expressions in Telerik Reporting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)
+* [How to Display Reports with Alternating Style Rows](slug:how-to-display-alternating-style-rows)

@@ -13,14 +13,14 @@ reportingArea: General
 
 In this article, you will learn how to create a Map report item with a BarChart series.
 
-The suggested scenario will demonstrate how to create a Map which will present the [countries with the most medals won in Olympic Games](https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table) divided by their continental [Association of National Olympic Committees](https://olympics.com/ioc/national-olympic-committees). The example will also add some interactivity to the report, enabling the user to choose which countries will be displayed on the Map, highlighting the currently selected country, and displaying an additional chart with detailed information about it. The suggested implementation uses the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and does not require the writing of any code.
+The suggested scenario will demonstrate how to create a Map which will present the [countries with the most medals won in Olympic Games](https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table) divided by their continental [Association of National Olympic Committees](https://olympics.com/ioc/national-olympic-committees). The example will also add some interactivity to the report, enabling the user to choose which countries will be displayed on the Map, highlighting the currently selected country, and displaying an additional chart with detailed information about it. The suggested implementation uses the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and does not require the writing of any code.
 
 The suggested implementation corresponds to the sample `OlympicMedalsByNationalTeams.trdp` report definition that may be found in the installation folder of the Telerik Reporting product. By default, this is `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples`.
 
 ## Prerequisites
 
 - Obtain a valid Location Provider key that will authenticate your geocoding requests.
-- If you don't want to use a location provider, provide the geographical coordinates of your points yourself and configure the `MapSeries` accordingly. For more information, refer to the article on [location providers]slug:telerikreporting/designing-reports/report-structure/map/structure/location-providers).
+- If you don't want to use a location provider, provide the geographical coordinates of your points yourself and configure the `MapSeries` accordingly. For more information, refer to the article on [location providers](slug:telerikreporting/designing-reports/report-structure/map/structure/location-providers).
 
 ## 1. Start the Map Wizard
 
@@ -34,7 +34,7 @@ The suggested implementation corresponds to the sample `OlympicMedalsByNationalT
 
 ## 2. Add the Data Source
 
-Now, you'll add a new [CSV data source]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard) and name it **medalsData**. This data source will hold the information about the countries, the ID of their respective Olympic association, which place and how many times they have occupied it.
+Now, you'll add a new [CSV data source](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard) and name it **medalsData**. This data source will hold the information about the countries, the ID of their respective Olympic association, which place and how many times they have occupied it.
 
 1. Copy the data from the **medalsData** CsvDataSource of the sample `OlympicMedalsByNationalTeams.trdp` report definition, save it locally, and insert its path into the **Select a file to import** textbox. The information in this file is a sample data set that shows how many times a national Olympic team had occupied a first, a second, or a third place in the Olympic Games. It has also a relation with the Association of National Olympic Committees table that you will build later.
 1. Click **Next** until you get to the **CSV Headers** page. Note that the CSV file has headers and you have to check the **The CSV has headers** checkbox.
@@ -98,7 +98,7 @@ The Map needs some more configuration and styling to improve its rendering. Sele
 1. Set the [`DataPointLabel`](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel) expression to `=Fields.Team` to display the name of the national team above the point.
 1. Set the [`DataPointLabelStyle`](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle). [Visible](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Visible) property to `True`.
 1. Select the **columnMapSeries1** item from the **Members:** pane and set its [`MarkerMinSize`](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_MarkerMinSize) to `6mm` and [`MarkerMaxSize`](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_MarkerMaxSize) to `10mm`.
-1. To match the column series colors with the real world medal colors, [define a custom ColorPalette]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series). The following screenshot illustrates the colors used in this example:
+1. To match the column series colors with the real world medal colors, [define a custom ColorPalette](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series). The following screenshot illustrates the colors used in this example:
 
    ![Configured Color Palette for the Medals in the Color Collection Editor of the Standalone Report Designer](images/MedalsColorCodes.png)
 
@@ -110,7 +110,7 @@ The Map needs some more configuration and styling to improve its rendering. Sele
 
 As you may have noticed, the information about the occupied places is present in the CSV data as integer numbers, that's why the legend displays it this way. But the report will look better if the information about the places is displayed with medal names - **Gold**, **Silver**, and **Bronze**.
 
-To achieve the desired scenario, you may use an expression for the [`LegendItem`](/reporting/api/Telerik.Reporting.LegendItem) [`Value`](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value). In our demo though, we will use a [calculated field]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields) added to the CSV data source. The benefit of this approach is that you can use the calculated field as any other field, without having to use an expression every time you need to address it.
+To achieve the desired scenario, you may use an expression for the [`LegendItem`](/reporting/api/Telerik.Reporting.LegendItem) [`Value`](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value). In our demo though, we will use a [calculated field](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields) added to the CSV data source. The benefit of this approach is that you can use the calculated field as any other field, without having to use an expression every time you need to address it.
 
 1. Select the **medalsData** data source, add a calculated field named **Medal** of type `String` to it and set its expression in the following way:
 
@@ -120,7 +120,7 @@ To achieve the desired scenario, you may use an expression for the [`LegendItem`
 
 ## 8. Reduce the Displayed Information
 
-To reduce the amount of displayed information on the Map, use the [report parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) and apply [filtering]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules). In this case, the filtering criteria will be based on the **AssociationId** field. To display the meaningful names of the Olympic associations, you will add another CSV data source, which has a relation with the current `AssociationId` field of the data source and will be used only for displaying the report parameters.
+To reduce the amount of displayed information on the Map, use the [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) and apply [filtering](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules). In this case, the filtering criteria will be based on the **AssociationId** field. To display the meaningful names of the Olympic associations, you will add another CSV data source, which has a relation with the current `AssociationId` field of the data source and will be used only for displaying the report parameters.
 
 1. Add a new CSV data source, select the **Enter CSV as text** tab, and paste the following text in the box:
 
@@ -159,7 +159,7 @@ Since the column charts on the Map are not suitable to display any labels on the
 
 1. On the **Choose Layout** page select _Blocked layout, subtotals below_ option and select **Finish** if you do not need to choose from any predefined stylings.
 1. Once the `Crosstab Wizard` is closed, your crosstab is done, but now it needs to be filtered the same way as the Map item. Apply the same filter rule as you did in the previous step (`=Fields.AssociationId` In `=Parameters.associationParam.Value`).
-1. If you want to apply a different color for any of the medals columns, you have to set up three [ConditionalFormatting Rules]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) to the textbox with the value `=Fields.Medal`, as shown below:
+1. If you want to apply a different color for any of the medals columns, you have to set up three [ConditionalFormatting Rules](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) to the textbox with the value `=Fields.Medal`, as shown below:
 
    ![Medals configured in the Conditional Formatting Rules Dialog in the Standalone Report Designer](images/MedalsConditionalFormattingRulesDialog.png)
 
@@ -173,7 +173,7 @@ Since the column charts on the Map are not suitable to display any labels on the
 In this step, you will add some interactivity to your report, allowing the user to select a national team from the crosstab and changing the Map extent according to its selection. The drill-through action will use an invisible report parameter which will store the selected team name and utilize it in conditional formatting and filtering options.
 
 1. Add new report parameter named **teamParam**. Set its `AllowNull` property to `True` and leave the other properties as set by its default constructor.
-1. If you haven't saved your report so far, save it now. Select the crosstab textbox that displays the team name and [add a __Navigate to Report__ action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview). Click the **Select a Report Source** button, select the **URL or File** option. From the **Select a file or enter a valid URL:** drop-down list, click the `< Select a file >` option.
+1. If you haven't saved your report so far, save it now. Select the crosstab textbox that displays the team name and [add a __Navigate to Report__ action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview). Click the **Select a Report Source** button, select the **URL or File** option. From the **Select a file or enter a valid URL:** drop-down list, click the `< Select a file >` option.
 1. From the **Open file** dialog, select the report you're currently working on. This will cause the report to call itself every time this action is performed.
 1. Click the **Edit Parameters...** button, which will bring up the **Edit Parameters** dialog. When you click the **New** toolbar button, the **associationParam** and **teamParam** report parameters will be loaded in the **Parameter Name** drop-down list.
 1. From the **Parameter Name** drop-down list, select `associationParam` and choose `=Parameters.associationParam.Value` for the **Parameter Value**. From the **Parameter Name** drop-down list, select `teamParam` and add the `=ReportItem.Text` expression as a **Parameter Value**.
@@ -190,7 +190,7 @@ In this step, you will add some interactivity to your report, allowing the user 
 
 ## 11. Add a Graph
 
-Finally, you will add a small Graph showing a [Column Chart]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview) that will be used to display the amount of medals won by each team.
+Finally, you will add a small Graph showing a [Column Chart](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview) that will be used to display the amount of medals won by each team.
 
 1. From the **Insert** toolbar of the Standalone Report Designer, start the Graph Wizard by selecting **Column** > **Clustered Column**.
 1. Select **medalsData** as the data source of the Graph.
@@ -206,9 +206,9 @@ Finally, you will add a small Graph showing a [Column Chart]slug:telerikreportin
 
 ## See Also
 
-- [Adding Choropleth Maps to Reports with the Map Wizard]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard)
-- [Adding ShapeMapSeries Instances to the Map]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item)
-- [Adding LocationMapSeries Instances to the Map]slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item)
+- [Adding Choropleth Maps to Reports with the Map Wizard](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard)
+- [Adding ShapeMapSeries Instances to the Map](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item)
+- [Adding LocationMapSeries Instances to the Map](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 - [Knowledge Base Section](/knowledge-base)
 - [Map Class API Reference](/api/telerik.reporting.map)

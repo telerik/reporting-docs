@@ -20,11 +20,11 @@ Telerik Reporting provides many built-in functions and also lets you create user
 
 ## See Also
 
-* [Aggregate Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions)
-* [Conversion Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions)
-* [Data Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions)
-* [Date and Time Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions)
-* [Conditional Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions)
-* [Math Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/math-functions)
-* [Report Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions)
-* [Text Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions)
+* [Aggregate Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions)
+* [Conversion Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions)
+* [Data Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions)
+* [Date and Time Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions)
+* [Conditional Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions)
+* [Math Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/math-functions)
+* [Report Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions)
+* [Text Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions)

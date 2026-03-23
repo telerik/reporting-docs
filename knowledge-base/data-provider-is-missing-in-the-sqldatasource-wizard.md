@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-The [SqlDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) would list and work with any [ADO.NET provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview) that is correctly registered on the device.
+The [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) would list and work with any [ADO.NET provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview) that is correctly registered on the device.
 
 The list with ADO.NET providers is taken as described in [Obtaining the DbProviderFactory](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory) article and lists all of the provider factories registered in the `machine.config`.
 
@@ -34,4 +34,4 @@ If it is not listed in Visual Studio either, then most likely your installation 
 
 ## See Also
 
-* [How to register SqlDataSource data providers without driver installation]slug:how-to-register-sqldatasource-data-providers-without-driver-installation)
+* [How to register SqlDataSource data providers without driver installation](slug:how-to-register-sqldatasource-data-providers-without-driver-installation)

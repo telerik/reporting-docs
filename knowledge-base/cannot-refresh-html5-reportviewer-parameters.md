@@ -42,4 +42,4 @@ To solve this issue, use the following approaches:
 
 * Try to update the JSON.NET NuGet package to the latest official version through the [Visual Studio NuGet Package Manager Dialog](https://docs.nuget.org/consume/package-manager-dialog).
 
-* Verify that the HTML5 Viewer [`persisSession`]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) is set to `false`.         
+* Verify that the HTML5 Viewer [`persisSession`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) is set to `false`.         

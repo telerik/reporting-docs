@@ -12,9 +12,9 @@ reportingArea: General
 
 # Working With Report Items
 
-Report items are used in the report depending on the data that will be displayed, for example, a [TextBox]slug:telerikreporting/designing-reports/report-structure/textbox) item for static or data-bound text, a [PictureBox]slug:telerikreporting/designing-reports/report-structure/picturebox) for displaying images, a [Barcode]slug:telerikreporting/designing-reports/report-structure/barcode/overview) for showing barcode in a label report, and so on.
+Report items are used in the report depending on the data that will be displayed, for example, a [TextBox](slug:telerikreporting/designing-reports/report-structure/textbox) item for static or data-bound text, a [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) for displaying images, a [Barcode](slug:telerikreporting/designing-reports/report-structure/barcode/overview) for showing barcode in a label report, and so on.
 
-Every report item is an instance of the [`ReportItemBase`](/api/Telerik.Reporting.ReportItemBase) class. Report items can reside inside report sections or containers such as [Panel]slug:telerikreporting/designing-reports/report-structure/panel) or [Table, Crosstab, or List]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) items.
+Every report item is an instance of the [`ReportItemBase`](/api/Telerik.Reporting.ReportItemBase) class. Report items can reside inside report sections or containers such as [Panel](slug:telerikreporting/designing-reports/report-structure/panel) or [Table, Crosstab, or List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) items.
 
 ## Arranging Report Items
 
@@ -46,7 +46,7 @@ There are several approaches for selecting a report item or section depending on
 * The report item/section is on the surface, i.e. doesn't serve as a parent or container for other items:
 
 	* Hover over the item/section in the __Report Sections__ area of the designer and when the cross hair cursor appears, click on it.
-	* Find the report section or item in the report definition tree in the [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) of the designer and click on it to select it also in the __Report Sections__ area.
+	* Find the report section or item in the report definition tree in the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) of the designer and click on it to select it also in the __Report Sections__ area.
 	
 * The report item/section contains and is covered by other report items:
 
@@ -55,7 +55,7 @@ There are several approaches for selecting a report item or section depending on
 		1. Select any of the report items within the desired one.
 		1. Press `Esc` button to move the focus one level up to the parent element. You may need to repeat this step until you reach the needed report item or section.
 
-	* From the [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) of the designer:
+	* From the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) of the designer:
 
 		Find the report section or item in the report definition tree and click on it. It will be automatically selected also in the __Report Sections__ area of the designer. You may need to expand the parent section or items if the desired report item is child of any. To expand the container, click on the _plus_ sign beside it in the _Report Explorer_.
 

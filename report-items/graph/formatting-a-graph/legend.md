@@ -23,7 +23,7 @@ You cannot add images, extra columns, or other supplementary items to the legend
 
 The colored box displayed for each legend item is inherited from the fill color of its corresponding series.
 
-To change the color displayed in a legend item, modify the color of the corresponding [series]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series).
+To change the color displayed in a legend item, modify the color of the corresponding [series](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series).
 
 You can also use the **ConditionalFormatting** and **MarkConditionalFormatting** collections of the **LegendItem** to style items based on the Graph data.
 
@@ -41,17 +41,17 @@ Note that if you are using the Standalone Report Designer, you can use the Graph
 
 Legend items are ordered according to the order in which their corresponding series are processed by the processing engine.
 
-To change the order, configure the [**Sortings**]slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)[**Expression**]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) of the **Graph.SeriesGroups**.
+To change the order, configure the [**Sortings**](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)[**Expression**](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) of the **Graph.SeriesGroups**.
 
 ## Modifying the Text
 
-You can change the text of the legend item by modifying each **Graph.Series** properties of the **LegendItem**. To set the __LegendItem.Value property__, use [**Expression**]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
+You can change the text of the legend item by modifying each **Graph.Series** properties of the **LegendItem**. To set the __LegendItem.Value property__, use [**Expression**](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
 
 ## Removing Extra Legends
 
 The legend is always connected to a series. If a legend item appears in the legend but the corresponding series is not displayed in the chart, most likely the series does not contain any values.
 
-To remove the legend item, remove the series from the chart by setting up a [**Filter**]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) for the corresponding **SeriesGroup**.
+To remove the legend item, remove the series from the chart by setting up a [**Filter**](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) for the corresponding **SeriesGroup**.
 
 To visually hide a legend item, use the __Graph.Series.LegendItem.Style.Visible__ property.
 

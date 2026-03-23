@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-> Visit the updated [Integrating the SQLite Data Provider]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider) article for a how-to on connecting to SQLite Databases.
+> Visit the updated [Integrating the SQLite Data Provider](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider) article for a how-to on connecting to SQLite Databases.
 
 Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the steps below to get this working.
 
@@ -73,7 +73,7 @@ The Telerik Reporting directory will look like the following:
  
 ![sqlite net designer install folder](resources/sqlite_net_designer_install.png)
 
-The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is no need to edit the configuration of the .NET Report Designer - [Differences between the .NET and .NET Framework designers' functionality]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#differences-between-the-net-and-net-framework-designers-functionality)
+The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is no need to edit the configuration of the .NET Report Designer - [Differences between the .NET and .NET Framework designers' functionality](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#differences-between-the-net-and-net-framework-designers-functionality)
 
 ## See Also
 

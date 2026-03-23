@@ -30,7 +30,7 @@ The article elaborates on how to localize the messages displayed by the Angular 
    }
    ```
 
-   The file can contain all or only part of the string resources which would be localized. For a full list of the report viewer string resources which could be localized, please refer to [HTML5 Report Viewer Localization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization).
+   The file can contain all or only part of the string resources which would be localized. For a full list of the report viewer string resources which could be localized, please refer to [HTML5 Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization).
 
 1. Import the new file with the localized strings in the component where the viewer is used:
 

@@ -16,7 +16,7 @@ To create cascading report parameters with applied filtering on data source leve
 
 ## Cascading Parameters with applied filtering on Datasource level
 
-1. Using the [Data Source Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard), bind the report to **SqlDataSource** with query:
+1. Using the [Data Source Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard), bind the report to **SqlDataSource** with query:
 
    ```SQL
    SELECT

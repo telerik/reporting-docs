@@ -29,7 +29,7 @@ The reason for this is that if the __AutoRefresh__ of the corresponding Report P
 automatically refreshed on each item selection, which may be overhead.
 
 ## Suggested Workarounds
-Here is a sample code you may apply in the [renderingEnd]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)) event handler of the viewer:
+Here is a sample code you may apply in the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)) event handler of the viewer:
 ```JavaScript
 $("#reportViewer1")
     .telerik_ReportViewer({

@@ -36,7 +36,7 @@ To add a pattern style to graph column stack bars in Telerik Reporting, use the 
 1. Create a small image (e.g., 10x10 pixels) using an image editing tool like Paint. This image will serve as the pattern. 
 1. Save the image in an accessible location for your Telerik Report project.
 1. In your Telerik Report Designer, select the graph column stack bar you wish to style. 
-1. Set the `BackgroundImage` property of the graph column stack bar to the path of your created image. You can use [Conditional Formatting]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) if you have a series group and you want different groups to have different patterns.
+1. Set the `BackgroundImage` property of the graph column stack bar to the path of your created image. You can use [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) if you have a series group and you want different groups to have different patterns.
 
     ![Adding Pattern Styles to Graph Column Stack Bars](images/CustomPatternsGraph.png)
    
@@ -51,6 +51,6 @@ By following these steps, you can achieve a pattern style similar to the desired
 
 ## See Also
 
-* [Telerik Reporting Graphs]slug:telerikreporting/designing-reports/report-structure/graph/overview)
-* [Create a Graph with Column and Line Series]slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-graph-with-column-and-line-series)
-* [Change the Gap between the Bars in the Graph]slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars)
+* [Telerik Reporting Graphs](slug:telerikreporting/designing-reports/report-structure/graph/overview)
+* [Create a Graph with Column and Line Series](slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-graph-with-column-and-line-series)
+* [Change the Gap between the Bars in the Graph](slug:telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars)

@@ -23,13 +23,13 @@ Telerik Reporting is currently able to convert reports from:
 
 * __XtraReports__ - requires build 8.1.6.0
 
-To convert reports, start the [Import Report Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard).
+To convert reports, start the [Import Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard).
 
 The converters are compiled against the 3rd party product version specified above. If you have upgraded to a newer version of Crystal or Active Reports, you will need to add an assembly binding redirect statement to your Visual Studio configuration file. More info on this process is available in the following articles:
 
-* [Converting reports from Crystal Reports]slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter)
+* [Converting reports from Crystal Reports](slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter)
 
-* [Converting reports from Active Reports]slug:converting-reports-from-activereports)  
+* [Converting reports from Active Reports](slug:converting-reports-from-activereports)  
 
 Converting from XtraReports does not require any additional steps. It is built against the version described in the right-hand panel of the information panel of the "Report Choice Page" of the "Report Wizard".
 

@@ -16,7 +16,7 @@ To define a sorting for the __Table__ or __Crosstab__ items use the following st
 
 ## Adding sorting to Table/Crosstab data item using Report Designer
 
-1. In the [Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
+1. In the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 1. Click the Sorting ellipsis.
 1. For each sort expression, follow these steps:
 
@@ -28,8 +28,8 @@ To define a sorting for the __Table__ or __Crosstab__ items use the following st
 
 ## Adding sorting to Table/Crosstab Group (Row/Column Group) using Report Designer
 
-1. Open the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
-1. In the [Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview), select the Table/Crosstab. This makes the selected item active in the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
+1. Open the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
+1. In the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview), select the Table/Crosstab. This makes the selected item active in the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Choose a Row/Column Group and click its Sorting ellipsis.
 1. For each sort expression, follow these steps:
 
@@ -49,4 +49,4 @@ To define a sorting for the __Table__ or __Crosstab__ items use the following st
 * [Table](/api/Telerik.Reporting.Table)
 * [Sorting](/api/Telerik.Reporting.Sorting)
 * [SortingCollection](/api/Telerik.Reporting.SortingCollection)
-* [How to Add groups to Table item and Crosstab item]slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item)
+* [How to Add groups to Table item and Crosstab item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item)

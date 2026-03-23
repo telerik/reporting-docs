@@ -118,5 +118,5 @@ This structure is provided only for transparency. You do not need to modify it, 
 
 ## See Also
 
-* [Web Report Designer]slug:user-guide/overview)
-* [Styling the Report]slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
+* [Web Report Designer](slug:user-guide/overview)
+* [Styling the Report](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)

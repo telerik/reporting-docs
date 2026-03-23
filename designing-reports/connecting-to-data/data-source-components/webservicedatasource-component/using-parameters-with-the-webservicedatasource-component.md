@@ -20,7 +20,7 @@ The values of this parameter type replace the corresponding part of the `Service
 
 ### Using Inline Parameters in Service Url
 
-In the [WebServiceDataSource Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard), the Service URL can be provided as __constantUrl__, for example:
+In the [WebServiceDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard), the Service URL can be provided as __constantUrl__, for example:
 
 ![The ServiceUrl of the WebServiceDataSource configured with an inline parameter](images/WebServiceDataSourceUrlx750.png)
 
@@ -84,4 +84,4 @@ for its design-time values will result in a request with a `Cookie` Header as ca
 
 ## See Also
 
-* [Using Parameters with Data Source objects]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects)
+* [Using Parameters with Data Source objects](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects)

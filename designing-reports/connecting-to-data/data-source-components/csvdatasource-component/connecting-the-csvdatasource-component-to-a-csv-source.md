@@ -21,7 +21,7 @@ When you configure the CsvDataSource component the settings below are obligatory
 Optional settings for the proper functioning of the CsvDataSource you need to consider:
 
 * `Has headers` - configures if the CSV source has a header row, by default is false;
-* `Escape format` - for more information please check [CsvDataSource Escape Formats]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats); default value is None;
+* `Escape format` - for more information please check [CsvDataSource Escape Formats](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats); default value is None;
 * `Quote` - if the Escape format is Quotes or Quotes Mixed then the Quote property must be set.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CsvDataSourceSnippets.cs region=ConfiguringCsvDataSource_RequiredSetting}}

@@ -11,12 +11,12 @@ reportingArea: General
 
 # Implement a Common Master-Detail Report Scenario
 
-In this step-by-step tutorial, we will improve the basic report created in the previous tutorial [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report]slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report) by adding a common business requirement to click a data series to show more details in a child report.
+In this step-by-step tutorial, we will improve the basic report created in the previous tutorial [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report](slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report) by adding a common business requirement to click a data series to show more details in a child report.
 
 * First, we will create a second report to display the detailed data.
-* Then, we will learn how to add a [SharedDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component) to share a data source between reports.
-* Next, we will add and configure a [PieChart]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview) to the detailed report.
-* Finally, we will learn how to add a [Drillthrough/Navigate To Report Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) to the master report Column Chart.
+* Then, we will learn how to add a [SharedDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component) to share a data source between reports.
+* Next, we will add and configure a [PieChart](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview) to the detailed report.
+* Finally, we will learn how to add a [Drillthrough/Navigate To Report Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) to the master report Column Chart.
 * At the end, we will have a master report able to navigate to a child report with detailed data for the selected **Product Category**.
 
 ## Creating a Child Report
@@ -31,7 +31,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 	1. Click `Save` to apply the settings.
 
 1. We'll remove the Page Header and Footer sections again.
-1. We can add the same [Report Header]slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections) as in the main report. We will copy it from the latter:
+1. We can add the same [Report Header](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections) as in the main report. We will copy it from the latter:
 
 	1. Search for the `report header` in the Search box and add it to the child report.
 	1. If necessary, increase its Height.
@@ -46,9 +46,9 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 	1. Adjust the pasted items' positions, if necessary.
 
-1. Next, we'll [add a Report Parameter]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) that will receive the Category from the parent report.
+1. Next, we'll [add a Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) that will receive the Category from the parent report.
 
-	We will use the parameter to filter the data from the [WebServiceDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview).
+	We will use the parameter to filter the data from the [WebServiceDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview).
 
 	1. Search for the `report parameter` in the Search box.
 	1. Select `+` to open the `Add New Item` dialog that lets you add a new parameter to the collection.
@@ -75,7 +75,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 1. Configure the child report to reuse the DataSource from the main report:
 
-	1. Convert the `WebServiceDataSource` from the main report to a [SharedDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component):
+	1. Convert the `WebServiceDataSource` from the main report to a [SharedDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component):
 
 		1. Navigate to the main report.
 		1. Select its WebServiceDataSource from the `Explorer` tab of the Menu.
@@ -141,7 +141,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 	![The final pie chart in design time view of the child report.](images/design-view-child-report.png)
 
-1. Connect the main and the child report with the [Drillthrough Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action):
+1. Connect the main and the child report with the [Drillthrough Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action):
 
 	1. Navigate to the main report.
 	1. Search for `category group` in the Search box and select the `productCategoryGroup1`.
@@ -156,7 +156,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 1. Test how the reports interact:
 
 	1. Navigate from the main report to the child report by clicking on a particular **Product Category** column in the Column Chart.
-	1. Navigate back to the main report from the child report through the [Viewer's Toolbar]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview#toolbar) button __Navigate back in history__.
+	1. Navigate back to the main report from the child report through the [Viewer's Toolbar](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview#toolbar) button __Navigate back in history__.
 
 	![The child report in the web designer preview opened by clicking on the 'Accessories' category of the column chart in the main report.](images/child-report-opened-by-clicking-on-accessories-category-in-main-report.png)
 
@@ -166,8 +166,8 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
-* [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report]slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report)
-* [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report](slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report)
+* [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 * [Reporting Forums](https://www.telerik.com/forums/reporting)

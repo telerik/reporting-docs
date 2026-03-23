@@ -15,17 +15,17 @@ After you have opened a report in the Telerik Visual Studio Report Designer, you
 
 ## Telerik Reporting Menu
 
-The [menu]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) is accessible through the __Extensions Menu --> Telerik --> Reporting__ for Visual Studio 2019 and later.
+The [menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) is accessible through the __Extensions Menu --> Telerik --> Reporting__ for Visual Studio 2019 and later.
 
 If you use Visual Studio versions up to 2017, you may find it in the __Telerik Menu --> Reporting__.
 
 The menu lets you trigger the following functionalities:
 
-* [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer)
-* [Data Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer)
-* [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
-* [Report Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview)
-* [Upgrade Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard)
+* [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer)
+* [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer)
+* [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer)
+* [Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview)
+* [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard)
 
 ## Design Views Buttons
 
@@ -49,13 +49,13 @@ The high-level report design consists of report sections for the report header, 
 
 ## Component Tray
 
-Shows the [DataSource components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) that are used in this report.
+Shows the [DataSource components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) that are used in this report.
 
 ![Visual Studio Report Designer's component tray.](images/Designer/vs-designer-component-tray.png)
 
 ## Context Menu
 
-The [Context Menu]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu) will conditionally display contents depending on the area that was right-clicked. In the figure below the menu is invoked in the area next to the report design surface.
+The [Context Menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu) will conditionally display contents depending on the area that was right-clicked. In the figure below the menu is invoked in the area next to the report design surface.
 
 ![Visual Studio Report Designer's main areas/functionalities.](images/Designer/visual-studio-report-designer-2017.png)
 
@@ -124,7 +124,7 @@ The Visual Studio Report Designer features also `Properties Explorer`, `Report E
 
 ## See Also
 
-* [Visual Studio Report Designer Overview]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
-* [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects]slug:how-to-use-vs-designer-in-dotnet-core)
-* [Standalone Report Designer Overview]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
-* [Web Report Designer Overview]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Visual Studio Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
+* [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects](slug:how-to-use-vs-designer-in-dotnet-core)
+* [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+* [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)

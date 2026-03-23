@@ -31,13 +31,13 @@ res_type: kb
 
 ## Description
 
-I have a PostgreSQL database and I am using the [Npgsql](https://www.npgsql.org/) data provider to connect to said database. I filter the query by *date* and also have a [Report Parameter]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) of type `DateTime` that I pass to the [SqlDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) component. On previewing the report, there are red error messages in place of my data items.
+I have a PostgreSQL database and I am using the [Npgsql](https://www.npgsql.org/) data provider to connect to said database. I filter the query by *date* and also have a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) of type `DateTime` that I pass to the [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) component. On previewing the report, there are red error messages in place of my data items.
 
 ## Steps to Reproduce
 
 1. Install or add without installation, the [Npgsql data provider with version 6.0](https://www.npgsql.org/doc/release-notes/6.0.html) or newer.
 1. Create a SqlDataSource with a query that has a parameter with `DbType=DateTime` and map it to the value of a Report Parameter of `Type=DateTime`
-1. Set the SqlDataSource as the data source of the report or a [data item]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) inside the report, and preview it.
+1. Set the SqlDataSource as the data source of the report or a [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) inside the report, and preview it.
 
 ## Error Message
 
@@ -57,6 +57,6 @@ For example:
 
 ## See Also
 
-* [How to Configure Postgres with Npgsql?]slug:configuring-postgres-with-npgsql)
+* [How to Configure Postgres with Npgsql?](slug:configuring-postgres-with-npgsql)
 * [Npgsql 6.0 Release Notes](https://www.npgsql.org/doc/release-notes/6.0.html)
 * [Github Issue - "Cannot write DateTime with Kind=Unspecified" is confusing](https://github.com/npgsql/npgsql/issues/4279)

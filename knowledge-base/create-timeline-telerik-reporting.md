@@ -36,7 +36,7 @@ This knowledge-base article also answers the following questions:
 
 ## Solution
 
-To create a timeline graphic, use a combination of [PictureBox]slug:telerikreporting/designing-reports/report-structure/picturebox) and [List]slug:table_template_items#list) items. Below are the steps to achieve the desired result:
+To create a timeline graphic, use a combination of [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) and [List](slug:table_template_items#list) items. Below are the steps to achieve the desired result:
 
 1. **Create PictureBox for Scale**:
 
@@ -110,7 +110,7 @@ To create a timeline graphic, use a combination of [PictureBox]slug:telerikrepor
 
    - Add two Lists—one for "Detail" and one for "Attendance".
    - Ensure the Lists have the smallest possible Width as they can only grow in runtime.
-   - [Bind]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) each List DataSource to its respective field (`Details` and `Attendance`) from the main data source.
+   - [Bind](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) each List DataSource to its respective field (`Details` and `Attendance`) from the main data source.
    - Set the List's `RowGrouping` to a constant value (e.g., `1`) to ensure a single row.
    - Configure `ColumnGrouping` to the `Index` field for dynamic column generation based on the data. Since each Index is unique, there will be as many columns as records in the "Detail" and "Attendance".
 
@@ -129,5 +129,5 @@ A sample report may be downloaded from our Reporting-Samples repo [TimeLineChart
 
 ## See Also
 
-- [PictureBox Documentation]slug:telerikreporting/designing-reports/report-structure/picturebox)
-- [List Item Documentation]slug:table_template_items#list)
+- [PictureBox Documentation](slug:telerikreporting/designing-reports/report-structure/picturebox)
+- [List Item Documentation](slug:table_template_items#list)

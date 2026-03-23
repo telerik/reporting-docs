@@ -32,13 +32,13 @@ We will create the desired layout combining two different approaches for the lef
 - You can use the Table Row Groups feature in Telerik Reporting to achieve the required merging on the left side of the Crosstab. It comes automatically with the grouping. Here are the steps:
 
   1.  Open or create the report in Telerik Report Designer.
-  1.  Use the [Crosstab Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards) to add a Crosstab to your report.
+  1.  Use the [Crosstab Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards) to add a Crosstab to your report.
   1.  Group the Crosstab on the corresponding columns from the Crosstab DataSource. In the context of the sample TRDP report, these are the fields `questName`, `questDetail`, and `risk`. The designer will create the necessary groupings and merge the corresponding cells automatically.
 
-- The second part is to merge the cells with identical content in the detail part of the Crosstab, including those that belong to different groups. Let's apply different styles to the table borders to mimic this merging. We will use proper [Expressions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) for the Values of the merged cells to avoid content multiplication in the merged cell:
+- The second part is to merge the cells with identical content in the detail part of the Crosstab, including those that belong to different groups. Let's apply different styles to the table borders to mimic this merging. We will use proper [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) for the Values of the merged cells to avoid content multiplication in the merged cell:
 
   - Set all `Bottom` borders to `None`.
-  - Set the `Top` border of a repeated value to `None` and the one of a new value to `Solid`. Here is a sample expression for the [Binding]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) of the property `Style.BorderStyle.Top` of the last column in our sample:
+  - Set the `Top` border of a repeated value to `None` and the one of a new value to `Solid`. Here is a sample expression for the [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) of the property `Style.BorderStyle.Top` of the last column in our sample:
 
   ```Expression
   = If(Previous(Fields.responsibilityAgency) is Not Null,
@@ -68,9 +68,9 @@ We will create the desired layout combining two different approaches for the lef
   				Fields.responsibilityAgency)))
   ```
 
-  We used the `Previous` [Data Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions) to check whether a value repeats the previous one in the column group.
+  We used the `Previous` [Data Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions) to check whether a value repeats the previous one in the column group.
 
-  When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in these cases.
+  When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in these cases.
 
   More precisely, the function `Previous` finds the previous instance of the specified scope - the corresponding table group, for example, `risk`. If there is no such instance, i.e. the current group instance is the first one, the returned value is `Null`. If the previous group instance is found, the `Last` function returns the last value of the particular field in this (i.e. previous) group instance. The value is compared with the field value in the current group instance, which is the first for the current group.
 

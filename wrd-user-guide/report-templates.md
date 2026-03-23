@@ -91,4 +91,4 @@ Now, you are ready to continue crafting your report loaded from a template.
 
 ## See Also
 
-* [How to Edit a Report Template]slug:web-report-designer-how-to-edit-a-report-template)
+* [How to Edit a Report Template](slug:web-report-designer-how-to-edit-a-report-template)

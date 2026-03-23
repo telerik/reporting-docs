@@ -14,7 +14,7 @@ reportingArea: General
 
 Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET projects and enable you to use Telerik reports in .NET applications on Windows, Linux, and macOS platforms.
 
-The NuGet packages are available in the [Telerik NuGet feed]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
+The NuGet packages are available in the [Telerik NuGet feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
 
 The assemblies target .NET Standard 2.0 and the desktop viewers target .NET {{site.mindotnetversion}} or above, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
 
@@ -52,7 +52,7 @@ On Windows, the reporting engine still relies on the GDI+ library because it pro
 
 Most of the processing and rendering features that work on Windows and use .NET Framework 4 or later are also supported in .NET projects with the new .NET Standard assemblies.
 
-As a downside, the report item designers are not .NET Standard-compatible. As a result, no design-time support in Visual Studio is available, and type reports are not supported. Therefore, you are recommended to [convert]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) such reports to `.trdx` or `.trdp` definitions with the Standalone Report Designer.
+As a downside, the report item designers are not .NET Standard-compatible. As a result, no design-time support in Visual Studio is available, and type reports are not supported. Therefore, you are recommended to [convert](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) such reports to `.trdx` or `.trdp` definitions with the Standalone Report Designer.
 
 Also, you can use these classes as runtime-created report instances. You can use report definitions created in Visual Studio as report instances in .NET applications, but their code must not include any calls to CodeDOM-specific classes like `ResourceManager`.
 
@@ -64,19 +64,19 @@ Telerik Reporting supports the following functionalities:
 - The supported report definition types are `TRDX`, `TRDP`, and report classes created in Visual Studio without the VS designer-specific code.
 - Telerik Reporting supports the following Data Source components:
 
-  - [SqlDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
-  - [CsvDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview)
-  - [WebServiceDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
-  - [JsonDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component)
-  - [ObjectDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
+  - [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
+  - [CsvDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview)
+  - [WebServiceDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
+  - [JsonDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component)
+  - [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
 
-- The [JSON-based reporting configuration]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) is also supported. For CLI projects, the JSON configuration has precedence over the current XML-based reporting configuration.
+- The [JSON-based reporting configuration](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) is also supported. For CLI projects, the JSON configuration has precedence over the current XML-based reporting configuration.
 
 ## Deploying on Linux
 
 ### Using `SkiaSharp`
 
-Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 When using SkiaSharp, reference the `Telerik.Drawing.Skia` NuGet package or assembly.
 
@@ -90,7 +90,7 @@ sudo apt-get install -y libfontconfig1
 
 ### Using System.Drawing(`libgdiplus`)
 
-> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms]slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
+> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
 
 When deploying to a Linux machine, make sure you have the [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) library installed. The library is a Mono implementation of the GDI+ API for non-Windows operating systems.
 
@@ -108,7 +108,7 @@ sudo apt-get install libgdiplus
 
 ### Common Configurations
 
-Since the `libgdiplus` and `SkiaSharp` libraries are not perfect replacements for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
+Since the `libgdiplus` and `SkiaSharp` libraries are not perfect replacements for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
 
 The following JSON configuration snippet hides the Image rendering extension from the list of available rendering extensions:
 
@@ -123,19 +123,19 @@ The following JSON configuration snippet hides the Image rendering extension fro
 }
 ```
 
-On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element) configuration element.
+On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element) configuration element.
 
 ## Deploying on macOS
 
 ### Using `SkiaSharp`
 
-Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 To use .NET on macOS:
 
 1. Install [.NET for macOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos).
 1. Create your .NET application or copy an existing one from a Windows machine.
-1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Install the `Telerik.Drawing.Skia` NuGet package.
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
@@ -146,7 +146,7 @@ To use .NET on macOS:
 
 ### Using System.Drawing(`libgdiplus`)
 
-> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms]slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
+> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
 
 To use .NET on macOS:
 
@@ -158,7 +158,7 @@ To use .NET on macOS:
    ```
 
 1. Create your .NET application or copy an existing one from a Windows machine.
-1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed]slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
 
@@ -182,7 +182,7 @@ The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ 
 
 ### Linux Docker Container with `SkiaSharp`
 
-Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 When using SkiaSharp, reference the `Telerik.Drawing.Skia` NuGet package or assembly.
 
@@ -287,6 +287,6 @@ ENTRYPOINT ["dotnet", "CSharp.Net8.ReportingRestServiceCorsDemo.dll"]
 
 ## See Also
 
-- [ASP.NET Core Web API Implementation Overview]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
-- [Adding Report Viewers to Windows Forms .NET Projects]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project)
-- [Adding Report Viewers to WPF .NET Projects]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project)
+- [ASP.NET Core Web API Implementation Overview](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
+- [Adding Report Viewers to Windows Forms .NET Projects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project)
+- [Adding Report Viewers to WPF .NET Projects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project)

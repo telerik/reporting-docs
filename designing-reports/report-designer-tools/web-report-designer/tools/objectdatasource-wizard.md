@@ -12,7 +12,7 @@ previous_url: /web-report-designer-tools-objectdatasource-wizard
 
 # ObjectDataSource Wizard Overview
 
-The Object Data Source Wizard allows you to create a new or edit an existing [ObjectDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview) in the Telerik Web Report Designer. This article describes how to create a project with business objects and how to add them by using the Object Data Source Wizard that you can invoke from the Report Designer toolbox with components.
+The Object Data Source Wizard allows you to create a new or edit an existing [ObjectDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview) in the Telerik Web Report Designer. This article describes how to create a project with business objects and how to add them by using the Object Data Source Wizard that you can invoke from the Report Designer toolbox with components.
 
 ## Creating the DataSource
 
@@ -149,5 +149,5 @@ As a final step, let's display the data from the ObjectDataSource in the report.
 
 ## See Also
 
-- [ObjectDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
-- [Connecting the ObjectDataSource component to a Data Source from desktop report designer]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source)
+- [ObjectDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
+- [Connecting the ObjectDataSource component to a Data Source from desktop report designer](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source)

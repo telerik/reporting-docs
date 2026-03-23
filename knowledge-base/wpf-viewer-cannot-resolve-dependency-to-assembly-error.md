@@ -42,6 +42,6 @@ The WPf ReportViewer is built against a specific version of Telerik UI for WPF o
 
 ## Solution  
 
-[Check the dependencies for the Telerik Reporting version you are using]slug:telerikreporting/upgrade/overview) and update the assembly references accordingly or add [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx).         
+[Check the dependencies for the Telerik Reporting version you are using](slug:telerikreporting/upgrade/overview) and update the assembly references accordingly or add [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx).         
 
-For more details about the settings required by the WPF ReportViewer, refer to the article on the [WPF ReportViewer manual setup]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project).
+For more details about the settings required by the WPF ReportViewer, refer to the article on the [WPF ReportViewer manual setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project).

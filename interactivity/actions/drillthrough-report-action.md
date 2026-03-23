@@ -26,7 +26,7 @@ To define a drill-through action add a [NavigateToReportAction](/api/Telerik.Rep
 
 A report can contain links to other reports. The report that opens when you click the link in the main report is known as a drillthrough report. Drillthrough reports must be published to the same report server as the main report, but they can be in different folders. You can add a drillthrough link to any item that has an `Action` property.
 
-> We recommend the usage of `TypeReportSource` ('Type name' option) or `UriReportSource` ('Url or file' option) in the [Load Report Dialog]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog)) on configuring the target report. `InstanceReportSource` ('Object instance' option) is only supported for WinForms and WPF Report Viewers in Embedded mode.
+> We recommend the usage of `TypeReportSource` ('Type name' option) or `UriReportSource` ('Url or file' option) in the [Load Report Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog)) on configuring the target report. `InstanceReportSource` ('Object instance' option) is only supported for WinForms and WPF Report Viewers in Embedded mode.
 
 ### Adding a drillthrough action using the Report Designer
 
@@ -44,9 +44,9 @@ A report can contain links to other reports. The report that opens when you clic
 
 ## Setting ReportSource for Drillthrough/Navigate To Report Action
 
-This article includes details on how to specify a __target report__ for a [Navigate to Report (Drill-through) Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action). You will need a [ReportSource]slug:telerikreporting/designing-reports/report-sources/overview) object.
+This article includes details on how to specify a __target report__ for a [Navigate to Report (Drill-through) Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action). You will need a [ReportSource](slug:telerikreporting/designing-reports/report-sources/overview) object.
 
-> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) ensure using the *[CategoryName]/[ReportName]* path for the URI as specified in the article [Working with Report Server Reports]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports).
+> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) ensure using the *[CategoryName]/[ReportName]* path for the URI as specified in the article [Working with Report Server Reports](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports).
 
 ### Setting the ReportSource through the Report Designer
 
@@ -61,10 +61,10 @@ This article includes details on how to specify a __target report__ for a [Navig
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToReportSnippet}}
 
-The [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) you can use all available [Report Sources]slug:telerikreporting/designing-reports/report-sources/overview).
+The [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) you can use all available [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview).
 
 >tip If the report will be displayed in an HTML5-based Report Viewer, the main report is rendered in HTML and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.
 
-The [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) you can use all available [Report Sources]slug:telerikreporting/designing-reports/report-sources/overview).
+The [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) you can use all available [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview).
 
 >tip If the report will be displayed in an HTML5-based Report Viewer or the Silverlight ReportViewer, the main report is rendered in HTML (or XAML respectively) and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.

@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-Both the [Visual Studio Report Designer] slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) and [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) applications allow converting a single Crystal Reports file to a Telerik Reporting report definition, but do not support converting multiple reports at once.
+Both the [Visual Studio Report Designer] slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) and [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) applications allow converting a single Crystal Reports file to a Telerik Reporting report definition, but do not support converting multiple reports at once.
 
 ## Solution
 
@@ -167,7 +167,7 @@ In the steps below, we will showcase how to build a simple console application t
   - CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
   - CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
 
-  In case you have installed a different version of Crystal Reports runtime, you have to add binding redirect rules to the application configuration file. Check the [Converting SAP Crystal Reports]slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter) article, section **Configuring the Report Designer to Use the Converter** for the binding redirect snippets.
+  In case you have installed a different version of Crystal Reports runtime, you have to add binding redirect rules to the application configuration file. Check the [Converting SAP Crystal Reports](slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter) article, section **Configuring the Report Designer to Use the Converter** for the binding redirect snippets.
 
 - _"System.IO.FileNotFoundException: 'Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.'"_
 
@@ -183,4 +183,4 @@ The application references Telerik Reporting version 19.0.25.211. Please adjust 
 
 ## See Also
 
-- [Converting SAP Crystal Reports]slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter)
+- [Converting SAP Crystal Reports](slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter)

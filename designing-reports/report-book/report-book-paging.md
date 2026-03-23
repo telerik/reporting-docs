@@ -53,5 +53,5 @@ On the other hand, if the order of the two reports is switched and now `Report2.
 
 ## See Also
 
-* [Report Book Parameters]slug:telerikreporting/designing-reports/report-book/report-book-parameters)
-* [Page Settings, Sizes and Naming]slug:telerikreporting/designing-reports/report-book/page-settings,-sizes-and-naming)
+* [Report Book Parameters](slug:telerikreporting/designing-reports/report-book/report-book-parameters)
+* [Page Settings, Sizes and Naming](slug:telerikreporting/designing-reports/report-book/page-settings,-sizes-and-naming)

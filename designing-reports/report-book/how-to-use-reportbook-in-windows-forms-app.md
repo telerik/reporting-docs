@@ -16,7 +16,7 @@ reportingArea: General
 
 Report Books can be created either at design-time or on the fly at run-time. Follow these steps to create a Report Book at design-time:
 
-1. Add a ReportViewer to your form by following the help topic: [Embedding the Windows Forms Report Viewer on a Form]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
+1. Add a ReportViewer to your form by following the help topic: [Embedding the Windows Forms Report Viewer on a Form](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
 
 1. Add a ReportBook component from the "Telerik Reporting" tab of the `Visual Studio Toolbox` to the design surface.  
 

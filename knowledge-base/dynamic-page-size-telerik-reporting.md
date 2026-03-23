@@ -42,5 +42,5 @@ When this expression is used, the `PageSettings.PageSize` property will dynamica
 
 ## See Also
 
-* [Using Expressions in Binding]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
-* [Report Parameters Overview]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
+* [Using Expressions in Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
+* [Report Parameters Overview](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)

@@ -40,7 +40,7 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 |__Next page__|Displays the respective page of the current report.
 |__Last page__|Displays the respective page of the current report.
 |__Switch the View mode__|Switches the report view between the __Logical__ and __Physical__. __Logical__ provides a convenient on-screen preview experience. __Physical__ provides an exact preview of the eventual print operation.
-|__Export__|Initiates an export operation. For more information, refer to the article on [export formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats). 
+|__Export__|Initiates an export operation. For more information, refer to the article on [export formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats). 
 |__Print__|Initiates printing of the current report.
 |__Send Email__|Displays the Send Email dialog.
 |__Show/Hide document map__|Allows the user to hide the document map tree if map nodes were defined in the report.
@@ -49,7 +49,7 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 |__Zoom Out__|Allows the user to decrease the zoom level of the report content.
 |__Switch the Scale mode__|Switches the report view scale mode between fitting the report to the entire page view port or to the viewer's view port.
 |__Search__|Allows searching in the report content.
-|__AI Prompt__|Toggles the AI Prompt Dialog when the [AI-Powered Insights]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights) functionality has been enabled.
+|__AI Prompt__|Toggles the AI Prompt Dialog when the [AI-Powered Insights](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights) functionality has been enabled.
 
 ## Requirements
 
@@ -59,7 +59,7 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 
 1. Required Service:
 
-	+ The viewer requires a running instance of [Telerik Reporting REST Services]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) to display reports. It can be hosted either in the same Blazor application or the viewer can reference a service hosted in another origin. In the latter case make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1) in the REST Service project.
+	+ The viewer requires a running instance of [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) to display reports. It can be hosted either in the same Blazor application or the viewer can reference a service hosted in another origin. In the latter case make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1) in the REST Service project.
 
 1. Required UI libraries:
 
@@ -69,7 +69,7 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 
 ## Comparison with Blazor Html5 Wrapper Report Viewer
 
-The current release of the Native Blazor Report Viewer component is missing only the `Accessibility` functionality which is present in its [`Blazor Wrapper Report Viewer`]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) counterpart.
+The current release of the Native Blazor Report Viewer component is missing only the `Accessibility` functionality which is present in its [`Blazor Wrapper Report Viewer`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) counterpart.
 
 > The above functionality will be added in a future release of the Native Blazor Report Viewer.
 

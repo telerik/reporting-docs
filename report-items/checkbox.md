@@ -28,7 +28,7 @@ To allow a CheckBox to shrink based on its contents, set the [`CanShrink`](/api/
 
 ## Embedded Expressions
 
-The textual part of the Checkbox report item supports [embedded expressions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) for mail merge functionality.
+The textual part of the Checkbox report item supports [embedded expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) for mail merge functionality.
 
 Embedded expressions enable you to get and insert data-driven information directly into the `CheckBox.Text` property to produce customized reports and mail merging.
 
@@ -56,7 +56,7 @@ In this case, it is more convenient to use those values directly instead of tryi
 
 ## Next Steps 
 
-* [Using Embedded Expressions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)
+* [Using Embedded Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview)
 * [(API) Telerik.Reporting.CheckBox](/api/Telerik.Reporting.CheckBox)
 * [(API) CanGrow](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)
 * [(API) CanShrink](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)

@@ -32,9 +32,9 @@ __Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-|`clientId`|String|ID of the service client. Returned by [Register Client]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client).|
-|`instanceId`|String|ID of the report instance. Returned by [Resolve Report Instance]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance).|
-|`documentId`|String|ID of the report document. Returned by [Resolve Document]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document).|
+|`clientId`|String|ID of the service client. Returned by [Register Client](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client).|
+|`instanceId`|String|ID of the report instance. Returned by [Resolve Report Instance](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance).|
+|`documentId`|String|ID of the report document. Returned by [Resolve Document](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document).|
 |`resourceId`|String|ID of the requested resource. Requested by the page content.|
 
 ## Response

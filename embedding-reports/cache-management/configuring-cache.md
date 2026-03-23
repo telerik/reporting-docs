@@ -24,9 +24,9 @@ table th:nth-of-type(3) {
 
 # Configuring the Cache Management System
 
-> The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Report Viewer__ or its Angular, WebForms, MVC and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services]slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services) and [REST Service Storage Settings]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview).
+> The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Report Viewer__ or its Angular, WebForms, MVC and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services) and [REST Service Storage Settings](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview).
 
-The cache management system can be configured by specifying one or more cache providers in the [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) of the application’s configuration file. For example, the following XML snippet configures the cache to store the rendered pages and resources in the file system:
+The cache management system can be configured by specifying one or more cache providers in the [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) of the application’s configuration file. For example, the following XML snippet configures the cache to store the rendered pages and resources in the file system:
 
 ````XML
 <Telerik.Reporting>
@@ -70,6 +70,6 @@ The individual providers are registered by adding one or more "Provider" element
 
 ## See Also
 
-* [Configuring the File Cache Provider]slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider)
-* [Configuring the Database Cache Provider]slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider)
-* [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+* [Configuring the File Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider)
+* [Configuring the Database Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider)
+* [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)

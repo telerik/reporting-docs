@@ -12,12 +12,12 @@ previous_url: /html5-mvc-report-viewer-embedding
 
 # Manual Setup Overview
 
-This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in `ASP.NET MVC 4|5` applications. To add the HTML5 MVC Report Viewer via the Visual Studio item template check the [Quick Start]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service) article.
+This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in `ASP.NET MVC 4|5` applications. To add the HTML5 MVC Report Viewer via the Visual Studio item template check the [Quick Start](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service) article.
 
 ## Prerequisites
 
-- Review the HTML5 Report Viewer [System Requirements]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support).
-- A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
+- Review the HTML5 Report Viewer [System Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support).
+- A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 - Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the `web.config` file of the project hosting the Reporting REST service:
 
@@ -29,7 +29,7 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in `ASP
   </connectionStrings>
   ```
 
-* [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service]slug:telerikreporting/getting-started/installation/cdn-assets). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#kendo-widgets-requirements).
+* [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service](slug:telerikreporting/getting-started/installation/cdn-assets). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#kendo-widgets-requirements).
 
 Depending on the used Visual Studio project template, CSS and JS files can be linked in:
 
@@ -157,7 +157,7 @@ The following steps produce a view with settings similar to these of the local `
 
    > note The above example uses deferred loading of the viewer to allow scripts to be handled properly, in case jQuery is not yet loaded on the page at the time the view is created. The used relative paths must be considered with the project's structure.
 
-   > The viewer's `ReportSource` has four overloads allowing to specify report declaratively in code. The generated report's string description is sent and handled on the server by the [report source resolver used in the Reporting REST service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview). The above example uses `UriReportSource` and a path to TRDP file (report created in the Standalone Report Designer). This string description will be handled automatically by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver).
+   > The viewer's `ReportSource` has four overloads allowing to specify report declaratively in code. The generated report's string description is sent and handled on the server by the [report source resolver used in the Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview). The above example uses `UriReportSource` and a path to TRDP file (report created in the Standalone Report Designer). This string description will be handled automatically by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver).
 
 1. Render the deferred initialization statement for the Report Viewer scripts (remember that they must be rendered after jQuery): In case that you do not need the script tag to be rendered just set to false the default argument.
 

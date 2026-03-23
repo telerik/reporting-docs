@@ -95,9 +95,9 @@ As a result, in the Report Viewer's drop-down with the available export formats,
         
 ## See Also  
  
-[Configuring Telerik Reporting]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+[Configuring Telerik Reporting](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
 
-[Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+[Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
 
 [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/)
 

@@ -32,4 +32,4 @@ Learn about the latest changes, improvements, and bug fixes in the Telerik Repor
 
 ## See Also
 
-- [Telerik Reporting AI Tooling Overview]slug:ai-coding-assistant)
+- [Telerik Reporting AI Tooling Overview](slug:ai-coding-assistant)

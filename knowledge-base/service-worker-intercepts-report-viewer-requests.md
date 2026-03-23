@@ -74,5 +74,5 @@ The key addition is `&& !event.request.url.includes('/api/reports/')`, which ens
 
 ## See Also
 
-- [How to Change the Reporting REST Web API Routes]slug:how-to-change-reporting-rest-web-api-routes-registered-by-default)
-- [Hosting the Reporting REST Service in ASP.NET Core]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
+- [How to Change the Reporting REST Web API Routes](slug:how-to-change-reporting-rest-web-api-routes-registered-by-default)
+- [Hosting the Reporting REST Service in ASP.NET Core](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)

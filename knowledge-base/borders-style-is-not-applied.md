@@ -41,5 +41,5 @@ This can produce unexpected result in some rendering formats.
 
 ## See Also
 
-* [Using Styles to Customize Reports]slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
-* [Style Inheritance and Overriding]slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding)
+* [Using Styles to Customize Reports](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
+* [Style Inheritance and Overriding](slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding)

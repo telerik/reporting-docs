@@ -25,7 +25,7 @@ The following `HtmlTextBoxVarious` formatting options are available and provide 
 * Text organization in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, and `<center>`).
 * Images (`<img>`) - for embedding inline images within HTML content.
 
-While the HtmlTextBox does not support the `table` tag, you can use the native Telerik Reporting [Table, Crosstab, and List]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) report items instead.
+While the HtmlTextBox does not support the `table` tag, you can use the native Telerik Reporting [Table, Crosstab, and List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) report items instead.
 
 ## Image Support
 

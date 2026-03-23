@@ -26,7 +26,7 @@ ticketid: 1667172
 
 ## Description
 
-After updating to Telerik Reporting version `18.2.24.924`, an error occurs when retrieving data using the [SqlDataSource component]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with **Stored Procedures** when using a data provider different from the default [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient). 
+After updating to Telerik Reporting version `18.2.24.924`, an error occurs when retrieving data using the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with **Stored Procedures** when using a data provider different from the default [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient). 
 
 For example, the below error indicates that the type `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
 
@@ -61,7 +61,7 @@ System.ArgumentException: Object of type 'MySql.Data.MySqlClient.MySqlCommand' c
 
 ## Cause
 
-The issue is caused by changes related to the [Type Restrictions]slug:telerikreporting/upgrade/2024/2024-q3-18-2-24-924#type-restrictions) introduced with the [Telerik Reporting 2024 Q3(18.2.24.924)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q3-(18-2-24-924)) release.
+The issue is caused by changes related to the [Type Restrictions](slug:telerikreporting/upgrade/2024/2024-q3-18-2-24-924#type-restrictions) introduced with the [Telerik Reporting 2024 Q3(18.2.24.924)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q3-(18-2-24-924)) release.
 
 Inline SQL queries work as expected, but Stored Procedures throw a conversion error for any data provider other than [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient).
 

@@ -35,13 +35,13 @@ An `Error loading the report viewer's templates. (Template = /api/reports/resour
 
 ## Cause
 
-The error message indicates that the [Reporting REST service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is not responding.
+The error message indicates that the [Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is not responding.
 
 ## Solution
 
 To solve the issue, use the following approaches:
 
-* Check the HTML5 Viewer [`serviceUrl`]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) and adjust the relative path.
+* Check the HTML5 Viewer [`serviceUrl`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) and adjust the relative path.
 * Try [adding `~` or removing the first `.`](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)).
-* It is recommended to test the service by address in the browser as described in the article on [adding the Telerik Reporting REST web API to web applications]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application).
-* The issue might be related to duplicating routes of the WebAPI controllers. To avoid such a possibility, [change the Telerik Reporting REST Web API routes registered byu default]slug:how-to-change-reporting-rest-web-api-routes-registered-by-default).
+* It is recommended to test the service by address in the browser as described in the article on [adding the Telerik Reporting REST web API to web applications](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application).
+* The issue might be related to duplicating routes of the WebAPI controllers. To avoid such a possibility, [change the Telerik Reporting REST Web API routes registered byu default](slug:how-to-change-reporting-rest-web-api-routes-registered-by-default).

@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-I have a blank RadForm. In the `KeyDown` event I am able to detect `Ctrl-S`. As soon as I place a [WinForms ReportViewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) on the Form, I am not longer able to detect `Ctrl-S`. I have tried both the Form `KeyDown` event and the ReportViewer `KeyDown` event.
+I have a blank RadForm. In the `KeyDown` event I am able to detect `Ctrl-S`. As soon as I place a [WinForms ReportViewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) on the Form, I am not longer able to detect `Ctrl-S`. I have tried both the Form `KeyDown` event and the ReportViewer `KeyDown` event.
 
 How do I detect when the user presses the `Ctrl-S` key combination after the ReportViewer is added to the Form?
 
@@ -67,7 +67,7 @@ Regarding the Mouse events you may use the approach suggested in the StackOverfl
 
 ## See Also
 
-* [Windows Forms Application Overview]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
+* [Windows Forms Application Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
 * [Form.KeyPreview Property](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.keypreview?view=netframework-4.8)
 * [Form.ProcessCmdKey(Message, Keys) Method](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.processcmdkey?view=netframework-4.8)
 * [Capture mouse click anywhere on Form (without IMessageFilter)](https://stackoverflow.com/questions/21312587/capture-mouse-click-anywhere-on-form-without-imessagefilter)

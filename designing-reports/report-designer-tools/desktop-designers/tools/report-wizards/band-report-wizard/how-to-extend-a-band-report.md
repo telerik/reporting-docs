@@ -12,7 +12,7 @@ reportingArea: General
 
 # Extending a Band Report in Few Easy Steps
 
-This topic will extend the example [Creating a Simple Report]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report) to show several unique Telerik Reporting features including:
+This topic will extend the example [Creating a Simple Report](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report) to show several unique Telerik Reporting features including:
 
 * In Place Editing.
 * Copying and pasting styles.
@@ -23,7 +23,7 @@ This topic will extend the example [Creating a Simple Report]slug:telerikreport
 * Using the Data Explorer.
 * Using the Report Explorer.
 
-Use the report design created in [Creating a Simple Report]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report) as a starting point.
+Use the report design created in [Creating a Simple Report](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report) as a starting point.
 
 1. Double click the "ProductList" TextBox report item in the report header. This will activate the "in place" editor, allowing you to enter text right in the designer without having to find the appropriate property in the Property Window. Add a space so the TextBox reads "Product List".
 
@@ -31,11 +31,11 @@ Use the report design created in [Creating a Simple Report]slug:telerikreportin
 
 1. __Zoom__ to 150% from the __Zoom Combo Box__ in the lower left corner of the design surface.
 
-	+ For [Visual Studio Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview): From the __ToolBox__ window drag a __TextBox__ item to the report header just to the right of the "Quantity" column. While dragging the TextBox, the __Snap Lines__ will aid you in positioning it so it aligns nicely with its neighbors.
+	+ For [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview): From the __ToolBox__ window drag a __TextBox__ item to the report header just to the right of the "Quantity" column. While dragging the TextBox, the __Snap Lines__ will aid you in positioning it so it aligns nicely with its neighbors.
 
 		![Dragging the TextBox item from Visual Studio item template to the report in the Visual Studio Report Designer](images/QuickStart023.png)
 
-	+ For [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview): Select the target [report section]slug:telerikreporting/designing-reports/report-structure/overview) and from the Insert tab click on the TextBox item. The TextBox item is added to the selected report section and with dragging you can position the TextBox in the correct location. Double-click the __TextBox__ and enter "Reorder".
+	+ For [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview): Select the target [report section](slug:telerikreporting/designing-reports/report-structure/overview) and from the Insert tab click on the TextBox item. The TextBox item is added to the selected report section and with dragging you can position the TextBox in the correct location. Double-click the __TextBox__ and enter "Reorder".
 
 1. Select the "Quantity" TextBox and copy the style rule applied in the __StyleName__ property. Select the "Reorder" field and paste the style rule in its __StyleName__ property.
 1. In these next steps you define a circle Shape item that reacts to changes in the data so that when inventory falls below 50% of the "reorder point" quantity the circle will be filled in red. Add a new __Shape__ item to the detail section just below the "Reorder" column. In the __Properties__ window set the __Size.Width__ property to "0.1in" and the __Size.Height__ property to "0.1in". Right click the __Shape__ item and select __Conditional Formatting__ from the context menu.
@@ -64,16 +64,16 @@ Use the report design created in [Creating a Simple Report]slug:telerikreportin
 
 	![Preview of the just created report](images/QuickStart028.png)
 
-1. The last set of steps to building this report design add an image item to the report and format the page footer. These last steps also use the [Data Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and the [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer). From the [Telerik Reporting menu]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) select the [Data Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
+1. The last set of steps to building this report design add an image item to the report and format the page footer. These last steps also use the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer). From the [Telerik Reporting menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) select the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
 
 	![Adding the image in a PictureBox by dragging the image field from the Data Explorer](images/QuickStart029.png)
 
-1. Select the "ThumbNailPhoto" column from the [Data Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) list and drag it to the detail section of the report designer, just to the right of the "Reorder" column. Notice that this step automatically creates a [PictureBox]slug:telerikreporting/designing-reports/report-structure/picturebox) report item.
+1. Select the "ThumbNailPhoto" column from the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) list and drag it to the detail section of the report designer, just to the right of the "Reorder" column. Notice that this step automatically creates a [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) report item.
 1. After dropping the ThumbNailPhoto the DetailSection will be automatically resized to accommodate the entire PictureBox item:
 
 	![Automatic Resizing of the DetailSection of the report](images/QuickStart030.png)
 
-1. The [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) provides a hierarchical view of all the report sections and items in the report design. This allows you to easily locate items that might otherwise be difficult to find in a visually complex report. From the [Telerik Reporting menu]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) select the [Report Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer).
+1. The [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) provides a hierarchical view of all the report sections and items in the report design. This allows you to easily locate items that might otherwise be difficult to find in a visually complex report. From the [Telerik Reporting menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) select the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer).
 1. Click "pageFooterSection1" to select the report page footer.
 
 	![Selecting the PageFooterSection from the Report Explorer](images/QuickStart031.png)

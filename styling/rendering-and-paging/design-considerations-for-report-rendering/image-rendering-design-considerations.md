@@ -22,7 +22,7 @@ The Image rendering extension processes the report by assembling all elements of
 
 ## Rendering
 
-Rendering takes into consideration the rules defined in [General Behaviors for PDF, Image, HTML and Print]slug:telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors) topic.
+Rendering takes into consideration the rules defined in [General Behaviors for PDF, Image, HTML and Print](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors) topic.
 
 Report item's solid type borders will use miter joints when two adjacent border segments have different color, or their color is transparent.
 
@@ -38,7 +38,7 @@ Rendering reports with many items with justified text may be slower.
 
 ## Pagination
 
-Paging takes into consideration the rules defined in [Understanding Pagination]slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination) topic.
+Paging takes into consideration the rules defined in [Understanding Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination) topic.
 
 ## Interactivity
 
@@ -46,6 +46,6 @@ This rendering extension does not support any interactive features.
 
 ## See Also
 
- * [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats) 
- * [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) 
- * [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+ * [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats) 
+ * [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) 
+ * [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

@@ -39,4 +39,4 @@ This error might occur if you are using a WebSite project and you have the repor
 
 ## Solution
 
-The issue is due to the fact that when using a WebSite, after rebuild, the following will always be different and it will not match with the originally assigned report: `App_Code.__unch8s_n__`. It is recommended that you follow the [best practices]slug:on-telerik-reporting) and have the report in a separate class library that is referenced in the application or WebSite.
+The issue is due to the fact that when using a WebSite, after rebuild, the following will always be different and it will not match with the originally assigned report: `App_Code.__unch8s_n__`. It is recommended that you follow the [best practices](slug:on-telerik-reporting) and have the report in a separate class library that is referenced in the application or WebSite.

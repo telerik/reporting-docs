@@ -17,9 +17,9 @@ ticketid: 1655822
 
 ## Description
 
-> Visit the updated [Integrating the SQLite Data Provider]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider) article for a how-to on connecting to SQLite Databases.
+> Visit the updated [Integrating the SQLite Data Provider](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider) article for a how-to on connecting to SQLite Databases.
 
-When attempting to use the [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) with an SQLite database in a Blazor or ASP.NET Core project, the SQLite option is available in the SqlDataSource dropdown list of providers. However, attempting to connect to a local SQLite database file results in an error.
+When attempting to use the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) with an SQLite database in a Blazor or ASP.NET Core project, the SQLite option is available in the SqlDataSource dropdown list of providers. However, attempting to connect to a local SQLite database file results in an error.
 
 ![SQLiteFactory Error](images/sqlite-web-report-designer-error.png)   
 
@@ -64,7 +64,7 @@ Following these steps should allow the Web Report Designer to successfully conne
 
 ## See Also
 
-- [Introduction to Telerik Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+- [Introduction to Telerik Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 - [System.Data.SQLite NuGet Package](https://www.nuget.org/packages/System.Data.SQLite/)
-- [How to register a DbProviderFactory in a .NET Core project]slug:how-to-register-db-provider-factory-in-net-core-project)
-- [How to configure SQLite ADO.NET Provider for Stand-alone Report Designer]slug:configure-the-stand-alone-report-designer-sqlite-data-provider)
+- [How to register a DbProviderFactory in a .NET Core project](slug:how-to-register-db-provider-factory-in-net-core-project)
+- [How to configure SQLite ADO.NET Provider for Stand-alone Report Designer](slug:configure-the-stand-alone-report-designer-sqlite-data-provider)

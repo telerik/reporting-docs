@@ -31,7 +31,7 @@ res_type: kb
 
 ## Description
 
-In this article, you will see how to display a Telerik Reporting report into a .NET MAUI and .NET MAUI Blazor applications by using the [Html5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and the [Blazor Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview).
+In this article, you will see how to display a Telerik Reporting report into a .NET MAUI and .NET MAUI Blazor applications by using the [Html5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and the [Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview).
 
 > note You may preview but cannot print or export the reports with this solution. The reason for the limitations is that the `MAUI WebView` is not a full-blown browser and printing and downloading do not come out-of-the-box. For the supported functionality, you can check the [WebView description in the MS documentation](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/webview?pivots=devices-android).
 
@@ -45,7 +45,7 @@ If you develop on `Mac`, then you will need **Visual Studio 2022 for Mac 17.4 Pr
 
 ## Telerik Reporting REST Service and Telerik Report Server
 
-Our HTML-based Report Viewers require a running instance of the [Telerik Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) or the [Telerik Report Server](https://www.telerik.com/report-server) to display reports. Keep in mind that the report service should be hosted outside of the mobile app.
+Our HTML-based Report Viewers require a running instance of the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) or the [Telerik Report Server](https://www.telerik.com/report-server) to display reports. Keep in mind that the report service should be hosted outside of the mobile app.
 
 The project that hosts the Telerik Reporting REST service can target .NET Framework, .NET or .NET Core. You can find demos of the service in the installation folder of Telerik Reporting - `Examples\CSharp` subfolder.
 
@@ -126,7 +126,7 @@ You can also put the page of the viewer into a separate html file and refer it i
 
 ## Embedding Telerik Reporting into a .NET MAUI Blazor App
 
-In this scenario, we will use the Blazor wrapper of the Html5 Report Viewer. For details, check the article [How to Use Blazor Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer).
+In this scenario, we will use the Blazor wrapper of the Html5 Report Viewer. For details, check the article [How to Use Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer).
 
 You may also check our Native Blazor Report Viewer released in [R3 2022](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-16-2-22-914).
 

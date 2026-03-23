@@ -12,7 +12,7 @@ reportingArea: General
 
 # Localization Overview
 
-This article elaborates on localizing the Standalone Report Designer application. For more information on localizing reports see [Localizing Reports]slug:telerikreporting/designing-reports/localizing-reports).
+This article elaborates on localizing the Standalone Report Designer application. For more information on localizing reports see [Localizing Reports](slug:telerikreporting/designing-reports/localizing-reports).
 
 Application internationalization involves improving the experience, and decreasing the learning curve, for all non-English speakers. To enable Report Designer localization, we provide resource files. The string resources include keys for all UI areas. This includes all backstage items, ribbon items, wizards, editors, enum descriptions, and properties.
 

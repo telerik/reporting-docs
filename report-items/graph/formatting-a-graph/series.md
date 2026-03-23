@@ -15,9 +15,9 @@ The series is a sequence of data points that represents individual measurements.
 
 ## Setting the Style
 
-The styles of the series items relate and affect each other in a hierarchical way. The relations among the styles are visually explained in the article on [series style propagation and resolving fallback algorithm]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
+The styles of the series items relate and affect each other in a hierarchical way. The relations among the styles are visually explained in the article on [series style propagation and resolving fallback algorithm](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
 
-Data points, data point labels, legend marks, and legend items declare their own style that inherits the style and the base series color of the series. However, if these items have an explicitly set property, it will [override the series style property]slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding).
+Data points, data point labels, legend marks, and legend items declare their own style that inherits the style and the base series color of the series. However, if these items have an explicitly set property, it will [override the series style property](slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding).
 
 The Area and the Line series have an additional pair of properties named respectively **AreaStyle** and **LineStyle**, and **ConditionalFormatting**. They affect the way the series is drawn, defining the line color, style and width, and the background color for the Area Series.
 
@@ -119,7 +119,7 @@ To define a custom monochromatic palette:
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Structure and Elements of the Graph]slug:telerikreporting/designing-reports/report-structure/graph/structure)
-* [Conditional Formatting]slug:telerikreporting/designing-reports/styling-reports/conditional-formatting)
-* [Style Inheritance and Overriding]slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding) 
+* [Structure and Elements of the Graph](slug:telerikreporting/designing-reports/report-structure/graph/structure)
+* [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting)
+* [Style Inheritance and Overriding](slug:telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding) 
 * [GraphSeries](/api/Telerik.Reporting.GraphSeries)

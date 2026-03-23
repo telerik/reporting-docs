@@ -20,7 +20,7 @@ In some scenarios, you may need to quickly export a bunch of small reports. You 
 
 ## Solution
 
-You can achieve that using [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview) by loading the `Telerik.Reporting` assembly, as well as any other assemblies your report may depend on, and generating the report with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor), as described in the [Generate Reports Programmatically]slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine) article.
+You can achieve that using [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview) by loading the `Telerik.Reporting` assembly, as well as any other assemblies your report may depend on, and generating the report with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor), as described in the [Generate Reports Programmatically](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine) article.
 
 The following PowerShell script illustrates how you can export a report to PDF:
 
@@ -56,4 +56,4 @@ If you encounter any errors, you can add the following snippet at the beginning 
 
 * [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview)
 * [ReportProcessor](/api/telerik.reporting.processing.reportprocessor)
-* [Generate Reports Programmatically]slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)
+* [Generate Reports Programmatically](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)

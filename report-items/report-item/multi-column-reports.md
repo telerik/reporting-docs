@@ -57,4 +57,4 @@ The following specifics are visible from the preview:
 
 ## See Also
 
-* [Creating Multi-Column Report across and down the Page]slug:how-to-create-multi-column-report---across-the-page-and-then-down)
+* [Creating Multi-Column Report across and down the Page](slug:how-to-create-multi-column-report---across-the-page-and-then-down)

@@ -37,4 +37,4 @@ or
 ## Solution
 This is a known issue fixed in internal build v9.1.15.702. It can be downloaded after logging into your [Telerik account](https://www.telerik.com/account). Once you log in, you should go to the *Downloads* page, locate *Progress Telerik Reporting* product and when you click on it, a download page should appear, showing the last main build and the latest internal build. 
 
-After installing you will have to run the [Upgrade Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).
+After installing you will have to run the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).

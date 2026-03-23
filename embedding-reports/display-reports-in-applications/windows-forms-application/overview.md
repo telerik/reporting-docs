@@ -45,7 +45,7 @@ The Windows Forms Report Viewer renders buttons and inputs in the dedicated tool
 |__Page Setup...__|Opens a dialog to set up the paper size, orientation, and margins of the current report. On closing, the dialog refreshes the report to match the preferences.
 |__Switch to Print Preview__|Switches the report view between the __Logical__ and __Physical__. __Logical__ provides a convenient on-screen preview experience. __Physical__ provides an exact preview of the eventual print operation.
 |__Print__|Initiates printing of the current report.
-|__Export__|Initiates an export operation. For more information, refer to the article on [export formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats).
+|__Export__|Initiates an export operation. For more information, refer to the article on [export formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats).
 |__Zoom__|Allows the user to view and change the zoom level of the report content.
 |__Show/Hide parameters area__|Allows the user to hide the report parameter inputs if any.
 |__Show/Hide document map__|Allows the user to hide the document map tree if map nodes were defined in the report.
@@ -62,12 +62,12 @@ The Windows Forms Report Viewer control requires an implementation as a composit
 
 > The toolbar of the Windows Forms Report Viewer is not customizable. To introduce custom commands or strip existing commands, hide the built-in toolbar and use the [API](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer) to add a custom UI that triggers the commands on the Viewer.
 
-Depending on the configuration of the Viewer, the report generates its pages through the [Telerik Reporting Image Rendering]slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) as vector or raster images. 
+Depending on the configuration of the Viewer, the report generates its pages through the [Telerik Reporting Image Rendering](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) as vector or raster images. 
 
 To process and render the report, use any of the following locations:
 
 * On the client machine with the report generation engine embedded in the desktop application.
-* On a server machine with the report generation engine embedded in a web application and exposed as [Telerik Reporting REST Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
+* On a server machine with the report generation engine embedded in a web application and exposed as [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 * On a [Telerik Report Server](https://www.telerik.com/report-server) instance.
 
 ## Declaring the Application as DPI-Aware
@@ -122,7 +122,7 @@ The Windows Forms Report Viewer supports the following keyboard and mouse comman
 
 ## See Also
 
-* [Adding the Report Viewer to a Windows Forms .NET Framework Project]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
-* [Report Viewer Localization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization)
-* [Windows Forms Applications]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
-* [Rendering and Paging]slug:telerikreporting/designing-reports/rendering-and-paging/overview)
+* [Adding the Report Viewer to a Windows Forms .NET Framework Project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project)
+* [Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization)
+* [Windows Forms Applications](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
+* [Rendering and Paging](slug:telerikreporting/designing-reports/rendering-and-paging/overview)

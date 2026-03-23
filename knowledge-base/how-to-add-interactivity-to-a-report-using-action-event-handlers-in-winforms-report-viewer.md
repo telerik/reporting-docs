@@ -34,9 +34,9 @@ We will use the `CSharp.NetFramework.WinFormsIntegrationDemo` project that is sh
 
 The report we chose for the demo is part of our `ReportLibrary` and is called `EmployeeSalesSummary`. It consists of two graph items, showing yearly and category sales, and a crosstab, showing a list of orders during the selected period.
 
-We will show how to add a tooltip with relevant information to the bar chart, using a [Custom]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action) action dialog.
+We will show how to add a tooltip with relevant information to the bar chart, using a [Custom](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action) action dialog.
 
-Additionally, we will show you how to cancel a [NavigateToReport]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) action before it is executed, depending on a confirmation dialog.
+Additionally, we will show you how to cancel a [NavigateToReport](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) action before it is executed, depending on a confirmation dialog.
 
 ## Solution
 
@@ -176,7 +176,7 @@ This approach can be used in all the current report viewers with slight modifica
 
 ## See Also
 
-* [Designing Reports - Actions]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview)
-* [Custom Action]slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action)
-* [Add Interactivity to Report in WPF Viewer]slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer)
-* [Add Interactivity to Report in HTML5-based Viewers]slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers)
+* [Designing Reports - Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview)
+* [Custom Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action)
+* [Add Interactivity to Report in WPF Viewer](slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer)
+* [Add Interactivity to Report in HTML5-based Viewers](slug:how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers)

@@ -25,13 +25,13 @@ category: knowledge-base
 
 ## Description
 
-This article provides the required steps to use external assemblies with custom user functions in [Telerik Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
+This article provides the required steps to use external assemblies with custom user functions in [Telerik Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
 
-It is a common requirement to add your own [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) or bind to custom CLR objects, data models (such as an OpenAccess ORM model), external assemblies with custom data source objects, data feeds (including OData) and web services.
+It is a common requirement to add your own [User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) or bind to custom CLR objects, data models (such as an OpenAccess ORM model), external assemblies with custom data source objects, data feeds (including OData) and web services.
 
 ## Solution
 
-To expose your data, so it can be utilized by the Object/OpenAccess/Entity [data source components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview), or extend the default behavior of the Telerik Reporting engine with custom user functions, you have to use the [AssemblyReferences Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) of the Telerik.Reporting configuration section to reference your custom assembly.
+To expose your data, so it can be utilized by the Object/OpenAccess/Entity [data source components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview), or extend the default behavior of the Telerik Reporting engine with custom user functions, you have to use the [AssemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) of the Telerik.Reporting configuration section to reference your custom assembly.
 
 ### Create an Assembly with Custom User Functions
 
@@ -189,14 +189,14 @@ For more information check out the [CodeBase Element](https://learn.microsoft.co
 
 If the external assembly extending the Report Designer depends on other assemblies, all related assemblies have to be placed in the folder where the Report Designer is located.
 
-In order to deploy a report that uses external assembly check out the KB article [Deploying trdx (XML report definition) that uses external assembly]slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly).
+In order to deploy a report that uses external assembly check out the KB article [Deploying trdx (XML report definition) that uses external assembly](slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly).
 
-Use the .NET version of the Standalone Designer when your custom assemblies target .NET assemblies. Check the KB arricle [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net) if you experience issues with .NET 7/8.
+Use the .NET version of the Standalone Designer when your custom assemblies target .NET assemblies. Check the KB arricle [Loading .NET 7 assemblies in the Standalone Report Designer for .NET](slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net) if you experience issues with .NET 7/8.
 
 ## See Also
 
-- [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
-- [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
-- [AssemblyReferences Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element)
-- [Deploying trdx (XML report definition) that uses external assembly]slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly)
-- [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net)
+- [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+- [User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
+- [AssemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element)
+- [Deploying trdx (XML report definition) that uses external assembly](slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly)
+- [Loading .NET 7 assemblies in the Standalone Report Designer for .NET](slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net)

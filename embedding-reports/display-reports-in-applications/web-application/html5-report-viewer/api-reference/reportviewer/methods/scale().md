@@ -12,7 +12,7 @@ previous_url: /html5-report-viewer-reportviewer-methods-scale, /embedding-report
 
 # The `scale()` method of the HTML5 Report Viewer
 
-Gets the viewer’s scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in [Report Viewer Initialization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#options).
+Gets the viewer’s scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#options).
 
 Returns: object, with properties:
 
@@ -27,4 +27,4 @@ var scale = reportViewer.scale();
 
 ## See Also
 
-* [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

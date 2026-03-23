@@ -27,7 +27,7 @@ To create a style sheet for a report, follow these steps:
 	![Image of the StyleRule Collection Editor window, showing the existing style rules on the left-hand side, and the properties of the currently selected style rule on the right-hand side](images/Style1.png)
 
 1. Click in the __Selectors__ property, and click the ellipsis button to open the TypeSelector Collection Editor.
-1. Click the drop-down arrow on the __Add__ button and select the type of selector to add. See the type of selectors in [Understanding Style Selectors]slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors)
+1. Click the drop-down arrow on the __Add__ button and select the type of selector to add. See the type of selectors in [Understanding Style Selectors](slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors)
 1. Use the properties area of the TypeSelector Collection Editor to customize the new selector. For example, the screenshot below shows a __StyleSelector__ named __DataField__ which applies to __TextBox__ report items only.
 
 	![Image of the TypeSelector Collection Editor window, showing the existing selectors on the left-hand side, and the properties of the currently selected type selector on the right-hand side](images/Style2.png)
@@ -43,6 +43,6 @@ To apply a style that uses a __StyleSelector__ to a report item, select the repo
 
 ## See Also
 
-* [Understanding Style Selectors]slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors)
-* [Creating Style Rules]slug:telerikreporting/designing-reports/styling-reports/creating-style-rules)
-* [Exporting and Reusing Style Sheets]slug:telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets)
+* [Understanding Style Selectors](slug:telerikreporting/designing-reports/styling-reports/understanding-style-selectors)
+* [Creating Style Rules](slug:telerikreporting/designing-reports/styling-reports/creating-style-rules)
+* [Exporting and Reusing Style Sheets](slug:telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets)

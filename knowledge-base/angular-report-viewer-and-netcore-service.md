@@ -31,12 +31,12 @@ res_type: kb
 
 ## Description
 
-How can I create a .NET Core 3 project which will be used as a service in the [Angular Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)?
+How can I create a .NET Core 3 project which will be used as a service in the [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)?
 
 ## Solution
 
 1. To create a .NET Core project with an Angular application for the client, follow the steps in the article on [implementing an Angular project with ASP.NET Core](https://dev.to/diogenespolanco/implementing-a-angular-project-with-aspnet-core-2ik).
-1. Create the Angular Report Viewer as explained in the article on [using the Angular Report Viewer with Angular CLI]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli).
+1. Create the Angular Report Viewer as explained in the article on [using the Angular Report Viewer with Angular CLI](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli).
 
 ## Demo Project
 

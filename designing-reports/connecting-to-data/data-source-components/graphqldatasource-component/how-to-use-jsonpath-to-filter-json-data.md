@@ -120,6 +120,6 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 
 ## See Also
 
-- [GraphQLDataSource Component Overview]slug:graphqldatasource)
-- [GraphQLDataSource Wizard]slug:desktop-graphqldatasource-wizard)
-- [Using Parameters with GraphQLDataSource]slug:graphqldatasource-parameters)
+- [GraphQLDataSource Component Overview](slug:graphqldatasource)
+- [GraphQLDataSource Wizard](slug:desktop-graphqldatasource-wizard)
+- [Using Parameters with GraphQLDataSource](slug:graphqldatasource-parameters)

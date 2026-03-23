@@ -35,6 +35,6 @@ To edit an existing Report Template (.trtx file), follow the steps:
 
 ## See Also
 
-- [Setting up the Web Report Designer in .NET applications]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
-- [Web Report Designer Customization]slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization)
-- [Report Templates in Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates)
+- [Setting up the Web Report Designer in .NET applications](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
+- [Web Report Designer Customization](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization)
+- [Report Templates in Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates)

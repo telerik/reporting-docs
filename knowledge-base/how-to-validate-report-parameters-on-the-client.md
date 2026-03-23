@@ -26,7 +26,7 @@ res_type: kb
 
 Sometimes we need to validate the input data so that it will match our requirements and rules. The validation could be on the Client or on the Server.
 
-The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview) based on the value of another report parameter.
+The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview) based on the value of another report parameter.
 
 If you want to see this feature implemented on the Server-side, vote for it on [our public feedback portal](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).
 
@@ -52,13 +52,13 @@ The approach could be applied to any other HTML5 Report Viewer and with little c
    )
    ```
 
-   > You’ll need to create a [custom editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor) for each parameter type that will be validating.
+   > You’ll need to create a [custom editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor) for each parameter type that will be validating.
 
 1. In this example, we have a single select editor with available values and a number parameter that has to be validated based on the first parameter value. That means that we are going to need a combobox editor and simple input editor.
 
    In this case, we have both UI elements that we are needing to represent our editors.
 
-   The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support) scripts and simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp).
+   The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support) scripts and simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp).
 
    If you wish to use some Kendo widget, that is not included in a subset of the used by default Kendo UI widgets from Telerik Reporting, you need to add manually the scripts for the additional widget or add [kendo.all.js](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service).
 
@@ -146,4 +146,4 @@ The approach could be applied to any other HTML5 Report Viewer and with little c
 
 ## See Also
 
-- [Cascading (dependent) parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview#cascading-dependent-parameters)
+- [Cascading (dependent) parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview#cascading-dependent-parameters)

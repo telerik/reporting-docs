@@ -80,5 +80,5 @@ For the below example, we will be using the Dashboard report - [Dashboard Report
 
 ## See Also
 
-- [Integrating Native Blazor Viewer in Blazor Server or WebAssembly App]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer)
+- [Integrating Native Blazor Viewer in Blazor Server or WebAssembly App](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer)
 - [ASP.NET Core Blazor routing and navigation](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing)

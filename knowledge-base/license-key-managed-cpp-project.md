@@ -27,7 +27,7 @@ res_type: kb
 ## Description
 
 I use Telerik Reporting in a managed C++/CLI project. My project contains `.cpp` and `.h` files and a `.vcxproj` project file instead of a `.csproj`. 
-The [standard license key setup]slug:license-key) does not activate the product, and I see license-related warnings and watermarks.
+The [standard license key setup](slug:license-key) does not activate the product, and I see license-related warnings and watermarks.
 
 How do I add the Telerik Reporting license key to a managed C++/CLI project?
 
@@ -74,5 +74,5 @@ Rebuild the project. The license warnings and watermarks should no longer appear
 
 ## See Also
 
-* [Setting Up Your Telerik Reporting License Key]slug:license-key)
-* [License Errors and Warnings]slug:license-errors-and-warnings)
+* [Setting Up Your Telerik Reporting License Key](slug:license-key)
+* [License Errors and Warnings](slug:license-errors-and-warnings)

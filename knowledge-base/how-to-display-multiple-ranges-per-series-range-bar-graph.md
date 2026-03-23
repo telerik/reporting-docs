@@ -55,7 +55,7 @@ Start,End,Category
 
 	![OverlappedGraphSeries](images/OverlappedGraphSeries.PNG)
 
-- Because of the `SeriesGroup` that we created, all ranges will now have their own colors. To fix that, we may create a new [ColorPalette]slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series#defining-custom-palettes) with only one color.
+- Because of the `SeriesGroup` that we created, all ranges will now have their own colors. To fix that, we may create a new [ColorPalette](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series#defining-custom-palettes) with only one color.
 
 - Considering that we have an empty series group, we may hide the `GraphLegend` by selecting it and then from `Style` setting `Visible` to `False`.
 

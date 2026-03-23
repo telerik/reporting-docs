@@ -29,12 +29,12 @@ res_type: kb
 
 ## Description
 
-This KB article lists all necessary steps for integrating our [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in .NET Core MVC 3.1 project.
+This KB article lists all necessary steps for integrating our [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in .NET Core MVC 3.1 project.
 
 It is based on the following articles:
 
-- [How To Host Reports Service In ASP.NET Core 3+]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1)
-- [How to Set Up the WebReportDesigner in .NET Core Applications]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application).
+- [How To Host Reports Service In ASP.NET Core 3+](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1)
+- [How to Set Up the WebReportDesigner in .NET Core Applications](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application).
 
 The same approach can be applied for `.NET Core MVC 3.0` project.
 
@@ -88,7 +88,7 @@ The same approach can be applied for `.NET Core MVC 3.0` project.
    }
    ```
 
-1. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1#setup-the-startup-cs-file-for-the-reports-service):
+1. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1#setup-the-startup-cs-file-for-the-reports-service):
 
    ```C#
    public class Startup
@@ -200,7 +200,7 @@ The same approach can be applied for `.NET Core MVC 3.0` project.
    }
    ```
 
-1. If you are using [SQL DataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with Named/Shared connection string, add the connection string in the `appsettings.json` file.
+1. If you are using [SQL DataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with Named/Shared connection string, add the connection string in the `appsettings.json` file.
 
    Here is a sample for the MSSQL database:
 

@@ -28,7 +28,7 @@ res_type: kb
 ## Description
 The article describes how to change the culture of the Kendo DatePicker widget used in the Angular Report Viewer.
 
-The general solution of the problem for localizing the DatePicker of the [pure Html5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) is described in the [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer]slug:how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer) article. 
+The general solution of the problem for localizing the DatePicker of the [pure Html5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) is described in the [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer](slug:how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer) article. 
 
 To also change the culture of the report viewer, it is required to import the necessary Kendo culture on the page with the report viewer.
 
@@ -61,7 +61,7 @@ export class ReportViewerComponent implements AfterViewInit {
 }
 ````
 
-Then the actual change of the kendo current culture can happen in the [renderingBegin]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)) event:
+Then the actual change of the kendo current culture can happen in the [renderingBegin](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)) event:
 
 ````TypeScript
 renderingBegin() {
@@ -81,4 +81,4 @@ renderingBegin() {
 
 
 ## See Also
-- [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer]slug:how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer) 
+- [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer](slug:how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer) 

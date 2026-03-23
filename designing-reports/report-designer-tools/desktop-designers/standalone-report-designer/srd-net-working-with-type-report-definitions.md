@@ -11,7 +11,7 @@ reportingArea: General
 
 # Coded Reports in the Standalone Report Designer for .NET
 
-Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) (SRD.NET) supports opening, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET. This feature addresses a long-standing limitation: the Visual Studio-integrated report designer does not support SDK-style projects or .NET Core/.NET 5+ targets. Due to architectural constraints, it could not be extended to support these project types. SRD.NET now provides a smooter alternative for working with type report definitions.
+Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) (SRD.NET) supports opening, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET. This feature addresses a long-standing limitation: the Visual Studio-integrated report designer does not support SDK-style projects or .NET Core/.NET 5+ targets. Due to architectural constraints, it could not be extended to support these project types. SRD.NET now provides a smooter alternative for working with type report definitions.
 
 While this workflow is fully supported, we recommend using declarative (XML-based) report definitions for most scenarios. Declarative reports offer broader tooling support, easier maintenance, and easier integration across Telerik Reporting tools.
 
@@ -66,7 +66,7 @@ Use the standard `Home`->`Preview` tool to view the report based on the **.desig
 
 ![The .NET Report Tools tab in the Standalone Report Designer for .NET's toolbar.](./images/srd-net-type-reports/srd-net-preview-options.png)
 
-- `Build & Preview`: Builds the C# project and previews the report with custom code-behind logic (e.g., [report events]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview)).
+- `Build & Preview`: Builds the C# project and previews the report with custom code-behind logic (e.g., [report events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview)).
 - `Build`: Builds only the report project and updates the assembly in the assets folder. Dependencies are reused from the initial build. If build errors occur, they are displayed in the UI:
 
   ![Error thrown by a failing build in the .NET Report Tools tab in the Standalone Report Designer for .NET.](./images/srd-net-type-reports/srd-net-build-error.png)
@@ -119,7 +119,7 @@ For demonstration purposes, the following steps will assume that a type report h
 
 ## Creating and Using Custom Functions
 
-For demonstration purposes, the following steps will assume that a type report has already been created inside a [.NET Class Library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries), the report is named "SampleReport" and the goal is to implement a [custom user function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that returns the last day of the month.
+For demonstration purposes, the following steps will assume that a type report has already been created inside a [.NET Class Library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries), the report is named "SampleReport" and the goal is to implement a [custom user function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that returns the last day of the month.
 
 1. In the report class, create a new **public static** method that looks as follows:
 
@@ -192,6 +192,6 @@ Below is a list of the temporary assets folder contents:
 ## See Also
 
 - [.NET Coded Report Design, No IDE Strings Attached](https://www.telerik.com/blogs/net-coded-report-design-no-ide-strings-attached)
-- [Extending Report Designer to Recognize Custom Assemblies]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
-- [Using event handlers in the Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd)
-- [Custom User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
+- [Extending Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
+- [Using event handlers in the Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd)
+- [Custom User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)

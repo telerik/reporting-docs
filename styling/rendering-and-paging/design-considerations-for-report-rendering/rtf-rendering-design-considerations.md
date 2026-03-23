@@ -81,6 +81,6 @@ This rendering extension does not support any interactive features.
 
 ## See Also
 
- * [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
- * [Telerik Reporting Configuration Section]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
- * [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+ * [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+ * [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+ * [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

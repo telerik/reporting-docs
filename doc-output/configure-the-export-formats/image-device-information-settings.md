@@ -40,7 +40,7 @@ The following table lists the device information settings for rendering in __IMA
 |TiffCompression|String|Specifies the compression scheme of the output TIFF file. Respected only when __OutputFormat__ is set to __TIFF__. Supported compression kinds are: __LZW__, __CCITT3__, __CCITT4__, __RLE__, or __NONE__. The default value is __LZW__.|
 |TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.text.textrenderinghint?view=dotnet-plat-ext-7.0) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://learn.microsoft.com/en-us/typography/cleartype/) enabled, then __ClearTypeGridFit__ will be used. Otherwise, the rendering algorithm will use __AntiAliasGridFit__ hinting. If text rendering hinting is not supported, the __SystemDefault__ value will be used.|
 
-For a detailed example of how to set up the settings for a rendering extension, see [extensions Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element). 
+For a detailed example of how to set up the settings for a rendering extension, see [extensions Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element). 
 
 ## Example
 
@@ -130,5 +130,5 @@ The following example demonstrates how to configure the settings for __IMAGE__, 
 
 ## See Also
 
-* [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
-* [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+* [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+* [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)

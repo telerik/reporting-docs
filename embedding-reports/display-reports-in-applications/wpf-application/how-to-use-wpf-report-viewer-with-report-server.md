@@ -18,11 +18,11 @@ This topic explains how to setup the WPF Report Viewer to work with [Telerik Rep
 
 * Installed and running [Telerik Report Server](https://docs.telerik.com/report-server/introduction) `R2 2016 (2.1.16.x) or higher version`.
 * A valid (enabled) user account - the built-in __Guest__ user account can be used as well.
-* In case you are not using [Item Templates]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project), add references to all the assemblies listed in the article [Requirements For Desktop Viewers Using Remote Report Sources]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources).
+* In case you are not using [Item Templates](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project), add references to all the assemblies listed in the article [Requirements For Desktop Viewers Using Remote Report Sources](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources).
 
 ## Configuring the WPF Report Viewer to work with Report Server
 
-1. To create a window and host the report viewer in it, you can either use the item template, as explained in the article [How to Add report viewer to a WPF .NET Framework project]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project), or place it yourself through drag-and-drop from the toolbox.
+1. To create a window and host the report viewer in it, you can either use the item template, as explained in the article [How to Add report viewer to a WPF .NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project), or place it yourself through drag-and-drop from the toolbox.
 1. As soon as the report viewer is on your form, select it and locate the `ReportEngineConnection` property. Invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:
 
 	![An image ofthe Report Engine Connection dialog with Report Server option selected](images/wpf-connection-editor-report-server.png)
@@ -68,8 +68,8 @@ The most common reasons for failure are related with the authentication against 
 
 ## See Also
 
-* [How to Construct a string to connect to Report Engine]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine)
-* [How to Use WPF Report Viewer With REST Service]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service)
+* [How to Construct a string to connect to Report Engine](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine)
+* [How to Use WPF Report Viewer With REST Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service)
 * [EmbeddedConnectionInfo](/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)
 * [ReportServerConnectionInfo](/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)
 * [RestServiceConnectionInfo](/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)

@@ -113,7 +113,7 @@ table th:nth-of-type(2) {
 	</tr>
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
-		<td>Toggles the AI Prompt Dialog when the <a href="{% slug telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights %}" target="_blank">AI-Powered Insights</a> functionality has been enabled.</td>
+		<td>Toggles the AI Prompt Dialog when the <a href="slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights" target="_blank">AI-Powered Insights</a> functionality has been enabled.</td>
 	</tr>	
 	<tr>
 		<td><svg style="height: 35px; padding: 5px;" viewBox="0 0 512 512"><path d="M448 32H32v448h448V32h-32zm0 416H64V64h384v384zM96 96h96v320H96z"></path></svg></td>
@@ -137,7 +137,7 @@ The currently released version of the `Native Angular Report Viewer` component i
 - Parameter Editors Customization
 - Parameters Area Repositioning
 
-> The above functionalities will be implemented in future releases of the `Native Angular Report Viewer` and are already available in the [wrapper Angular Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) component.
+> The above functionalities will be implemented in future releases of the `Native Angular Report Viewer` and are already available in the [wrapper Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) component.
 
 ## Demo
 
@@ -145,9 +145,9 @@ A complete example with the native Angular Report Viewer can be found in the ins
 
 ## See Also
 
-- [How to Use the Native Angular Report Viewer with Reporting Service]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service)
-- [How to Use the Native Angular Report Viewer with Report Server]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server)
-- [Native Angular Report Viewer Requirements]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements)
-- [Native Angular Report Viewer Options]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options)
-- [Native Angular Report Viewer Commands]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands)
-- [Native Angular Report Viewer Events]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events)
+- [How to Use the Native Angular Report Viewer with Reporting Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service)
+- [How to Use the Native Angular Report Viewer with Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server)
+- [Native Angular Report Viewer Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements)
+- [Native Angular Report Viewer Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options)
+- [Native Angular Report Viewer Commands](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands)
+- [Native Angular Report Viewer Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events)

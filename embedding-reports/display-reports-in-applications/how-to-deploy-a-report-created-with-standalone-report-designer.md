@@ -12,11 +12,11 @@ reportingArea: General
 
 # Deploying Reports Created with the Standalone and Web Report Designers
 
-The [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) supports Telerik Reporting XML report definitions (.TRDP) in a zip package and in a plain XML format (.TRDX legacy option).
+The [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) supports Telerik Reporting XML report definitions (.TRDP) in a zip package and in a plain XML format (.TRDX legacy option).
 
 ## Display TRDP or TRDX file in a Report Viewer
 
-To show a report created with the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview), you have the following options:
+To show a report created with the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview), you have the following options:
 
 * __Use [UriReportSource](/api/Telerik.Reporting.UriReportSource)__ and a path to the TRDX|TRDP file:
 
@@ -28,14 +28,14 @@ To show a report created with the [Standalone Report Designer]slug:telerikreport
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateXmlReportSourceSnippet}}
 
-* __Deserialize the XML report definition from a TRDX file__ : If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed following the basic concepts of the programming language and the.NET platform. For example you can create an InstanceReportSource and and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) for more information.
-* __Unpackaging the XML report definition from a TRDP file__ : If you need to obtain a Telerik Report instance in code from a TRDP file, you can unpackage the content in code. Then create an InstanceReportSource and set its ReportDocument property to the unpackaged report object. See [Package Report Definition]slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition) for more information.
+* __Deserialize the XML report definition from a TRDX file__ : If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed following the basic concepts of the programming language and the.NET platform. For example you can create an InstanceReportSource and and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) for more information.
+* __Unpackaging the XML report definition from a TRDP file__ : If you need to obtain a Telerik Report instance in code from a TRDP file, you can unpackage the content in code. Then create an InstanceReportSource and set its ReportDocument property to the unpackaged report object. See [Package Report Definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition) for more information.
 
 The only thing left to do is assign the resulting report sources to the report viewer's ReportSource property.
 
 ## See Also
 
-* [Report Sources]slug:telerikreporting/designing-reports/report-sources/overview)
-* [Reference Report Definitions in Applications]slug:telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications)
-* [How to Set ReportSource for Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
-* [Previewing a report definition that uses an external assembly]slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly)
+* [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview)
+* [Reference Report Definitions in Applications](slug:telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications)
+* [How to Set ReportSource for Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
+* [Previewing a report definition that uses an external assembly](slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly)

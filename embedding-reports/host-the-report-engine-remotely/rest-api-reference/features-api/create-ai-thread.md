@@ -21,12 +21,12 @@ __Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-|`clientId`|String|The ID of the service client that started the AI thread. Returned by [Register Client]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client).|
-|`instanceId`|String|The ID of the report instance used for the AI thread. Returned by [Resolve Report Instance]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance).|
+|`clientId`|String|The ID of the service client that started the AI thread. Returned by [Register Client](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client).|
+|`instanceId`|String|The ID of the report instance used for the AI thread. Returned by [Resolve Report Instance](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance).|
 
 __Request Body__
 
-[ReportSource]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource) object identifying the report instance.
+[ReportSource](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource) object identifying the report instance.
 
 ## Response
 
@@ -36,7 +36,7 @@ __Request Body__
 
 __Response Body__
 
-[AiThread]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/aithread) object that can be used to start a conversation with an AI assistant.
+[AiThread](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/aithread) object that can be used to start a conversation with an AI assistant.
 
 ## Sample
 

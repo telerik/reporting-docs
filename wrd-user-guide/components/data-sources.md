@@ -45,12 +45,12 @@ Data Sources are essential for:
 
 The Web Report Designer provides the following data source types:
 
-* [SQL Data Source]slug:web-report-designer-user-guide-components-data-sources#sql-data-source)—Connects to relational databases including Microsoft SQL Server, Oracle, MySQL, and other databases through OLE DB and ODBC connections.
-* [CSV Data Source]slug:web-report-designer-user-guide-components-data-sources#csv-data-source)—Imports data from CSV documents, including files (*.csv, *.tsv, *.txt), inline strings, or data streams.
-* [Web Service Data Source]slug:web-report-designer-user-guide-components-data-sources#web-service-data-source)—Retrieves JSON data from REST APIs and web services.
-* [GraphQL Data Source]slug:web-report-designer-user-guide-components-data-sources#graphql-data-source)—Connects to GraphQL services to retrieve structured JSON data.
-* [JSON Data Source]slug:web-report-designer-user-guide-components-data-sources#json-data-source)—Processes JSON data from local files or embedded content within reports.
-* [Object Data Source]slug:web-report-designer-user-guide-components-data-sources#object-data-source)—Binds report items to .NET business objects and custom data providers.
+* [SQL Data Source](slug:web-report-designer-user-guide-components-data-sources#sql-data-source)—Connects to relational databases including Microsoft SQL Server, Oracle, MySQL, and other databases through OLE DB and ODBC connections.
+* [CSV Data Source](slug:web-report-designer-user-guide-components-data-sources#csv-data-source)—Imports data from CSV documents, including files (*.csv, *.tsv, *.txt), inline strings, or data streams.
+* [Web Service Data Source](slug:web-report-designer-user-guide-components-data-sources#web-service-data-source)—Retrieves JSON data from REST APIs and web services.
+* [GraphQL Data Source](slug:web-report-designer-user-guide-components-data-sources#graphql-data-source)—Connects to GraphQL services to retrieve structured JSON data.
+* [JSON Data Source](slug:web-report-designer-user-guide-components-data-sources#json-data-source)—Processes JSON data from local files or embedded content within reports.
+* [Object Data Source](slug:web-report-designer-user-guide-components-data-sources#object-data-source)—Binds report items to .NET business objects and custom data providers.
 
 >note Web Report Designer offers a **SharedDataSource** component which enables report designers to easily create and reuse a data source component across multiple reports. Existing data source components can be configured into SharedDataSource components via the **Explorer tab** in the Web Report Designer. Left-clicking the data source component will open the context menu from which the option *Save As Shared Data Source* can be chosen.
 
@@ -74,7 +74,7 @@ The following table lists all the steps that the wizard offers:
 |----|----|
 |1. Choose data connection|Select an existing or build a new data connection.|
 |2. Data connection options|Specify whether to use the connection as shared or embed it in the report.|
-|3. Configure data source command|Specify a *select statement* or a *stored procedure* to retrieve data from the data source. The [Query Builder]slug:web-report-designer-query-builder) helps you create queries to retrieve data from a relational database for a SqlDataSource component.|
+|3. Configure data source command|Specify a *select statement* or a *stored procedure* to retrieve data from the data source. The [Query Builder](slug:web-report-designer-query-builder) helps you create queries to retrieve data from a relational database for a SqlDataSource component.|
 |4. Configure data source parameters|This step occurs if you select *Stored procedure* in step 3. Specify a database type and a default value or an expression to evaluate for each data source parameter.|
 |5. Configure design time parameters|Specify an appropriate design time value for each data source parameter.|
 |6. Preview data source results|Preview the result set returned by this data source.|
@@ -104,7 +104,7 @@ The following table lists all the steps that the wizard offers:
 |1. Choose a CSV source|Select an existing or select a new CSV file or use inline CSV data.|
 |2. Modify your CSV file|If you upload a CSV file, you can make the selected file inline and modify its content.|
 |3. Configure CSV Data Source - Separators|Specify the column/row separators and whether the data include headers or not.|
-|4. Configure CSV Data Source - Escape Format|Specifies the [escape format]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats).|
+|4. Configure CSV Data Source - Escape Format|Specifies the [escape format](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats).|
 |5. Map Columns to Type|Specify the columns types as by default they come in string type.|
 |6. Preview data source results|Preview the result set returned by this data source.|
 
@@ -247,5 +247,5 @@ Once a Data Source component is configured, it can be modified later by selectin
 
 ## See Also
 
-* [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
-* [Data Source Components Overview]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview)
+* [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
+* [Data Source Components Overview](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview)

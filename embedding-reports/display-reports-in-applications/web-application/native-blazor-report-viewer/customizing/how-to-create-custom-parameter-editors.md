@@ -14,7 +14,7 @@ previous_url: /embedding-reports/display-reports-in-applications/web-application
 
 ## Overview of the Parameter Template Structure
 
-Telerik [Report Parameters]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) come in many shapes and forms, for example, a report parameter can be a `String` which can be displayed with a simple [`Textbox`](https://demos.telerik.com/blazor-ui/textbox/overview) editor, it can also be a `DateTime` which can be displayed with a [`DatePicker`](https://demos.telerik.com/blazor-ui/datepicker/overview) widget or it can even have [`AvailableValues`](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) requiring a more complex widget such as the [`DropDownList`](https://demos.telerik.com/blazor-ui/dropdownlist/overview).
+Telerik [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) come in many shapes and forms, for example, a report parameter can be a `String` which can be displayed with a simple [`Textbox`](https://demos.telerik.com/blazor-ui/textbox/overview) editor, it can also be a `DateTime` which can be displayed with a [`DatePicker`](https://demos.telerik.com/blazor-ui/datepicker/overview) widget or it can even have [`AvailableValues`](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) requiring a more complex widget such as the [`DropDownList`](https://demos.telerik.com/blazor-ui/dropdownlist/overview).
 
 Considering the variety of types of report parameters, we have created a `ParameterTemplate` for each type, allowing for easy singular customization:
 

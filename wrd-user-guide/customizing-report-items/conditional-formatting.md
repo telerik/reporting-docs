@@ -70,5 +70,5 @@ The following video shows how to achieve alternating row style which prevents mi
 
 ## See Also
 
-* [Web Report Designer]slug:user-guide/overview)
-* [Styling the Report]slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
+* [Web Report Designer](slug:user-guide/overview)
+* [Styling the Report](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)

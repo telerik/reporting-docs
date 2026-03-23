@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview).  
 
 The legacy ASP.NET Webforms ReportViewer messes up the styles of its toolbar and content area.
 
@@ -42,6 +42,6 @@ The legacy ASP.NET WebForms ReportViewer displays content delivered by its `Tele
 
 To solve this issue, use the following approaches:
 
-* Make sure that the handler is registered correctly and that the [browser proxy and security settings allow it to deliver content]slug:the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up).         
+* Make sure that the handler is registered correctly and that the [browser proxy and security settings allow it to deliver content](slug:the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up).         
 
 * If you are using authorization, verify that [the path of the `Telerik.ReportViewer.axd` handler is allowed for the user](https://support.microsoft.com/en-us/kb/316871).

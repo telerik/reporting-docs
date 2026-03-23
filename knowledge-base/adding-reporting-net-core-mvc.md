@@ -34,7 +34,7 @@ How can I integrate a Telerik Report in a .NET Core MVC 3.1 project?
 
 ## Solution
 
-The demonstrated approach to solve this issue is based on the [Host Reports Service In ASP.NET Core 3+]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1) article.
+The demonstrated approach to solve this issue is based on the [Host Reports Service In ASP.NET Core 3+](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1) article.
 
 You can also apply the same approach to .NET Core MVC 3.1 project.
 
@@ -97,7 +97,7 @@ You can also apply the same approach to .NET Core MVC 3.1 project.
    }
    ```
 
-1. Add the required configurations in the `Startup.cs` from the [Set Up the Startup.cs File for the Reports Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1#setup-the-startup-cs-file-for-the-reports-service) article:
+1. Add the required configurations in the `Startup.cs` from the [Set Up the Startup.cs File for the Reports Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1#setup-the-startup-cs-file-for-the-reports-service) article:
 
    ```C#
    public class Startup
@@ -222,7 +222,7 @@ You can also apply the same approach to .NET Core MVC 3.1 project.
    }
    ```
 
-1. If you are using an [SQL DataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with a Shared connection string, add a connection string in the `appsettings.json` file:
+1. If you are using an [SQL DataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with a Shared connection string, add a connection string in the `appsettings.json` file:
 
    ```JSON
    "ConnectionStrings": [

@@ -34,7 +34,7 @@ To address the issue:
 
 1. Confirm the licensing status of Telerik Reporting in your environment.
    * Ensure your account or your employer's account has a valid license for Telerik Reporting.
-   * Refer to the official guide on [Fixing License Errors in Telerik Reporting Runtime]slug:resolving-invalid-license-telerik-reporting) for additional steps to resolve licensing issues.
+   * Refer to the official guide on [Fixing License Errors in Telerik Reporting Runtime](slug:resolving-invalid-license-telerik-reporting) for additional steps to resolve licensing issues.
 
 1. If licensing validation is not the issue, roll back to the last working version (e.g., **1.6.15**) of the Telerik.Licensing NuGet package as a temporary workaround.
    * Test the report generation process with the older version to confirm SVG rendering works correctly.
@@ -45,6 +45,6 @@ To address the issue:
 
 ## See Also
 
-* [Telerik Reporting Documentation]slug:telerikreporting/welcome-to-telerik-reporting!)
+* [Telerik Reporting Documentation](slug:telerikreporting/welcome-to-telerik-reporting!)
 * [Telerik.Licensing NuGet Package](https://www.nuget.org/packages/Telerik.Licensing)
-* [Fixing License Errors in Telerik Reporting Runtime]slug:resolving-invalid-license-telerik-reporting)
+* [Fixing License Errors in Telerik Reporting Runtime](slug:resolving-invalid-license-telerik-reporting)

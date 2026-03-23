@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-The Telerik [Web Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) is an HTML5/JavaScript/CSS3 jQuery-based widget that allows integration into your web applications built on virtually any JavaScript framework.
+The Telerik [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) is an HTML5/JavaScript/CSS3 jQuery-based widget that allows integration into your web applications built on virtually any JavaScript framework.
 
 With it, users can create or modify existing declarative (TRDX, TRDP, and TRBP) reports directly from inside the React application.
 
@@ -50,9 +50,9 @@ The following guide assumes previous knowledge of React:
 
 2. Create a new .NET or .NET Core Web Application that will host the Rest Service for the web report designer. The required steps depending on the framework can be found in:
 
-   - [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
+   - [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
 
-   - [How to set up the Web Report Designer service in .NET Framework application]slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application)
+   - [How to set up the Web Report Designer service in .NET Framework application](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application)
 
    You can also find demo projects with the .NET Core implementation in the installation folder of `Telerik Reporting` -> `Examples` -> `CSharp` -> `.NET 6` -> `ReportingRestServiceCorsDemo` subfolder.
 

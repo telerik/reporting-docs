@@ -27,17 +27,17 @@ I want to use [Markdown](https://en.wikipedia.org/wiki/Markdown) content from Az
 
 ## Solution
 
-Telerik Reporting does not have native support for rendering markdown syntax directly. However, you can use the [HtmlTextBox]slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview) report item to display HTML content, which supports a limited set of HTML tags and CSS attributes. Follow these steps:
+Telerik Reporting does not have native support for rendering markdown syntax directly. However, you can use the [HtmlTextBox](slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview) report item to display HTML content, which supports a limited set of HTML tags and CSS attributes. Follow these steps:
 
 ### Externally Convert to HTML 
 
 1. Use an external MD -> HTML converter(e.g. [Convert Markdown to HTML](https://markdowntohtml.com/)) to transform the `MD` content into `HTML`.
-1. Pass the converted HTML content to the [HtmlTextBox]slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview) report item in your Telerik report.
-1. Ensure that the HTML content uses only the [supported HTML tags and CSS attributes]slug:htmltextbox_formatting_and_styling).
+1. Pass the converted HTML content to the [HtmlTextBox](slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview) report item in your Telerik report.
+1. Ensure that the HTML content uses only the [supported HTML tags and CSS attributes](slug:htmltextbox_formatting_and_styling).
 
 ### Convert to HTML via User Functions
 
-If the `MD` content cannot be converted to `HTML` beforehand, create a [User Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that accepts the Markdown input and returns the corresponding HTML output. You may refer to the sample code below as a guideline.
+If the `MD` content cannot be converted to `HTML` beforehand, create a [User Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that accepts the Markdown input and returns the corresponding HTML output. You may refer to the sample code below as a guideline.
 
 > To use the `Markdown.ToHtml` function, install the following NuGet package in the project with the user function - [Markdig](https://www.nuget.org/packages/Markdig/0.44.0?_src=template)
 
@@ -99,5 +99,5 @@ Done!
 
 ## See Also
 
-* [HtmlTextBox Overview]slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview)
-* [Styling and Formatting the HtmlTextBox Report Item]slug:htmltextbox_formatting_and_styling)
+* [HtmlTextBox Overview](slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview)
+* [Styling and Formatting the HtmlTextBox Report Item](slug:htmltextbox_formatting_and_styling)

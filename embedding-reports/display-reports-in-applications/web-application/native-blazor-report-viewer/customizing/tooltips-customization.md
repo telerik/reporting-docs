@@ -48,5 +48,5 @@ The following example shows how to set a tooltip template. It is a direct copy o
 
 ## See Also
 
-- [Blazor Report Viewer Options]slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options#options)
+- [Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options#options)
 - [Blazor Tooltip component](https://docs.telerik.com/blazor-ui/components/tooltip/overview)

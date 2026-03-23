@@ -12,7 +12,7 @@ reportingArea: General
 
 # Understanding Report Events
 
-Delivering a Telerik Report to the end user is a process involving several stages. Knowledge of the [Report Life Cycle]slug:telerikreporting/designing-reports/understanding-the-report-lifecycle) is crucial to understanding how events work in Telerik Reporting.
+Delivering a Telerik Report to the end user is a process involving several stages. Knowledge of the [Report Life Cycle](slug:telerikreporting/designing-reports/understanding-the-report-lifecycle) is crucial to understanding how events work in Telerik Reporting.
 
 ## Report Definition
 
@@ -42,8 +42,8 @@ After the processing item has been data bound the **ItemDataBound** event is rai
 
 ## Report Rendering
 
-After processing is over, the processed report is ready for rendering in one of the available formats, see [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats). There are no events triggered during this stage of the report generation.
+After processing is over, the processed report is ready for rendering in one of the available formats, see [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats). There are no events triggered during this stage of the report generation.
 
 ## See Also
 
-- [Understanding the Report Lifecycle]slug:telerikreporting/designing-reports/understanding-the-report-lifecycle)
+- [Understanding the Report Lifecycle](slug:telerikreporting/designing-reports/understanding-the-report-lifecycle)

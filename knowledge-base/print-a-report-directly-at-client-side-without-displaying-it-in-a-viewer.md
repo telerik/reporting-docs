@@ -100,7 +100,7 @@ The result PDF file rendered on the server is returned with **Content-Dispositio
 
 ## See Also
 
-- [Printing Reports]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports)
+- [Printing Reports](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports)
 - [ASP.NET Core Client Print Example](https://github.com/telerik/reporting-samples/tree/master/PrintReportDirectlyAtClientSide)
 - [MVC WebForms Client Print Example](resources/mvc-webforms-clientprint.zip)
 - [VB Client Print Example](resources/clientprintingvb.zip)

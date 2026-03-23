@@ -20,15 +20,15 @@ res_type: kb
 
 ## Description
 
-Out of the box, Telerik Reporting offers multi-column reports with data flow - down the page and then across. How to set up this report layout is elaborated in the help article [How to: Create a Multi-Column Report]slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report). However, in some cases you may need a multi-column report layout with data flow across the page and then down.
+Out of the box, Telerik Reporting offers multi-column reports with data flow - down the page and then across. How to set up this report layout is elaborated in the help article [How to: Create a Multi-Column Report](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report). However, in some cases you may need a multi-column report layout with data flow across the page and then down.
 
-Due to the data driven nature of Telerik Reporting this can be easily achieved with our [Table/Crosstab/List]slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) item and indexed data.
+Due to the data driven nature of Telerik Reporting this can be easily achieved with our [Table/Crosstab/List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) item and indexed data.
 
 ## Solution
 
 1. Add a List to your report definition;
-1. Set the List.DataSource according to your datasource. For more info see: [Connecting to Data]slug:telerikreporting/designing-reports/connecting-to-data/overview) help articles;
-1. Open the [Group Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) in extended mode;
+1. Set the List.DataSource according to your datasource. For more info see: [Connecting to Data](slug:telerikreporting/designing-reports/connecting-to-data/overview) help articles;
+1. Open the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) in extended mode;
 	![Screenshot showing the Group Explorer in extended mode](./images/GroupExplorerExtended.png)
 1. Set the (Detail) row group Grouping expression to: `=Fields.MyDataIndex/3`, where the number (i.e. 3) should equal the number of expected columns;
 1. Set the (Static) column group Grouping expression to: `=Fields.MyDataIndex%3`, where the number (i.e. 3) should equal the number of expected columns;

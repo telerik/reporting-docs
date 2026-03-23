@@ -34,6 +34,6 @@ To troubleshoot and potentially resolve login issues on the Telerik website, fol
 
 ## See Also
 
-- [Telerik Reporting Documentation]slug:telerikreporting/welcome-to-telerik-reporting!)
+- [Telerik Reporting Documentation](slug:telerikreporting/welcome-to-telerik-reporting!)
 - [How to Enable JavaScript in Your Browser](https://www.enable-javascript.com/)
 - [How to Clear Cache and Cookies in Major Browsers](https://www.pcworld.com/article/242939/how-to-delete-cookies.html)

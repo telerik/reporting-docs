@@ -41,9 +41,9 @@ The following table lists the device information settings for rendering in CSV f
 |WriteBOM|Boolean|Indicates whether to write the [byte order marks (BOM)](https://learn.microsoft.com/en-us/windows/win32/intl/using-byte-order-marks) at the beginning of the output stream. Applicable only when the selected encoding is [Unicode](https://learn.microsoft.com/en-us/windows/win32/intl/unicode). The default value is __false__.|
 |FormulaPrefix|String|When the exported CSV file is to be opened in a spreadsheet application (Microsoft Excel, Google Sheets, etc.), it is recommended to escape CSV values with a prefix in order to prevent the spreadsheet application from automatically executing malicious formula injection attacks. The recommended formula prefix string which is not visually present in spreadsheet applications is the tab character `\t`. Other popular prefix strings are `'`, `\`, empty string.<br/>The __default value__ is an empty string and the default behavior is to keep the original CSV data intact. This option is very useful when the exported CSV file will be read by a non-spreadsheet application and there is no risk of formula injection attacks.<br/>Besides formula injection attacks the prefix will also prevent automatic execution of CSV values which incidentally resemble a spreadsheet formula. For example: `=1+1`<br/>The CSV value above will be visualised as `2` when the CSV file is opened in Excel. A formula prefix, such as an apostrophe `'`, will prevent this behavior and display: `'=1+1`|
 
-For an example of how to set up the settings for a rendering extension, see [extensions Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element).
+For an example of how to set up the settings for a rendering extension, see [extensions Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element).
 
 ## See Also
 
-* [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
-* [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+* [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+* [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)

@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-One of the most common problems that users encounter when working with the [Map]slug:telerikreporting/designing-reports/report-structure/map/structure/overview) item is how to set the map zoom level when there is only one data point displayed.
+One of the most common problems that users encounter when working with the [Map](slug:telerikreporting/designing-reports/report-structure/map/structure/overview) item is how to set the map zoom level when there is only one data point displayed.
 
 The Map item doesn’t provide a way to directly set the zoom level, because it depends on the used tile provider and the current map extent. The item automatically calculates its extent based on the displayed data points and it needs at least two points with different coordinates to determine this extent (hence the appropriate zoom level).
 
@@ -42,7 +42,7 @@ This approach can be easy to develop if your data is a collection of business ob
 In short, this approach involves adding two more series, each one containing a virtual data point that is offset from the coordinates of the original data point. To create such a report, follow the steps described below:
 
 1. Open the Standalone Report Designer, create a new blank report and add a new Map item.
-1. When the Choose Data Source dialog appears, create new [CSV Data Source]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview) named **csvData** and enter the following sample data:
+1. When the Choose Data Source dialog appears, create new [CSV Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview) named **csvData** and enter the following sample data:
 
    ```TEXT
    Country,City,Lat,Long,Value
@@ -87,6 +87,6 @@ Additionally you can make the virtual datapoints invisible and apply some additi
 
 ## See Also
 
-- [Map]slug:telerikreporting/designing-reports/report-structure/map/structure/overview)
+- [Map](slug:telerikreporting/designing-reports/report-structure/map/structure/overview)
 - [PointMapSeries Class](/api/telerik.reporting.pointmapseries)
 - [GeoLocation](/api/telerik.reporting.geolocationmapgroup)

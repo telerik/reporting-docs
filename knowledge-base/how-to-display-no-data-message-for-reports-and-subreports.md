@@ -68,4 +68,4 @@ The Property path has to be typed manually, where the `Parent` keyword can be us
 
 ## See Also
 
-* [How to: Set a No Data Message]slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message)
+* [How to: Set a No Data Message](slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message)

@@ -38,4 +38,4 @@ The system cannot find the specified file. During the installation of Telerik Re
 
 ## Solution
 
-You need to make sure that the assemblies physically exist in the `bin` folder of your application. For the full details, refer to the [Deploying Web Applications]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications) article.
+You need to make sure that the assemblies physically exist in the `bin` folder of your application. For the full details, refer to the [Deploying Web Applications](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications) article.

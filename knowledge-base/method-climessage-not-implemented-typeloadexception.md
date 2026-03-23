@@ -27,11 +27,11 @@ ticketid: 1708840
 
 ## Description
 
-I encountered a [500 Internal Server Error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/500) on the [/configuration]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration) endpoint after deploying changes to production. 
+I encountered a [500 Internal Server Error](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/500) on the [/configuration](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration) endpoint after deploying changes to production. 
 
 ## Error Messages
 
-The response to the [/configuration]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration) endpoint is the following:
+The response to the [/configuration](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration) endpoint is the following:
 
 ````json
 {

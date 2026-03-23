@@ -44,7 +44,7 @@ The error is caused by the absence of necessary fonts in the Alpine Docker image
 
 ## Solution
 
-To fix this issue, install the fonts used by your reports to your Alpine Docker container. You can install any supported TrueType font _(see [Fonts Requirements]slug:telerikreporting/designing-reports/rendering-and-paging/fonts-requirements))_ but if a report uses a different font, it will be substituted with whatever is available.
+To fix this issue, install the fonts used by your reports to your Alpine Docker container. You can install any supported TrueType font _(see [Fonts Requirements](slug:telerikreporting/designing-reports/rendering-and-paging/fonts-requirements))_ but if a report uses a different font, it will be substituted with whatever is available.
 For example, you can install the commonly used Microsoft TrueType fonts using the commands below.
 
 ````bash
@@ -61,7 +61,7 @@ These commands update the package list, upgrade existing packages, and install F
 
 ## See Also
 
-* [Fonts Requirements]slug:telerikreporting/designing-reports/rendering-and-paging/fonts-requirements)
+* [Fonts Requirements](slug:telerikreporting/designing-reports/rendering-and-paging/fonts-requirements)
 * [Telerik Reporting Documentation](https://docs.telerik.com/reporting)
 * [Alpine Linux Package Management](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management)
 * [Docker Official Documentation](https://docs.docker.com/)

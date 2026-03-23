@@ -25,7 +25,7 @@ I need to use aggregate data from two data sources within a single table in Tele
 
 ## Solution
 
-To achieve this, you can use a [SubReport]slug:telerikreporting/designing-reports/report-structure/subreport) as a workaround since there is no built-in mechanism for combining data across different data sources in Telerik Reporting. Follow these steps:
+To achieve this, you can use a [SubReport](slug:telerikreporting/designing-reports/report-structure/subreport) as a workaround since there is no built-in mechanism for combining data across different data sources in Telerik Reporting. Follow these steps:
 
 1. Create a subreport definition that will contain the logic to calculate the difference between the two totals.
 1. Reference the subreport in a SubReport item that is placed in the Table Header/Footer of the main report table that uses the first data source. Let the SubReport item have the second source as a DataSource in the main report definition, or set the DataSource directly in the subreport definition.

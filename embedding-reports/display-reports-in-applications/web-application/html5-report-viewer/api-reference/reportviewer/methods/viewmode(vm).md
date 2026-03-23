@@ -27,7 +27,7 @@ Parameters:
 
 | Parameter | Description |
 | ------ | ------ |
-| __vm__ |string; the view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [Report Viewer Initialization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#options);|
+| __vm__ |string; the view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#options);|
 
 Returns: the current *ReportViewer* object.
 
@@ -39,4 +39,4 @@ reportViewer.viewMode(telerikReportViewer.PrintModes.PRINT_PREVIEW);
 
 ## See Also
 
-* [HTML5 Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

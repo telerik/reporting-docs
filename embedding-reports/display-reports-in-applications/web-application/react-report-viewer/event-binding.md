@@ -12,7 +12,7 @@ previous_url: /react-report-viewer-event-binding
 
 # Binding to Events
 
-The React Report Viewer exposes these [Events]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events) as input properties of the viewer component.
+The React Report Viewer exposes these [Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events) as input properties of the viewer component.
 
 ## Bind to a report viewer event
 
@@ -40,4 +40,4 @@ export class AppComponent {
 
 ## See Also
 
-* [React Report Viewer Events]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events)
+* [React Report Viewer Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events)

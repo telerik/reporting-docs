@@ -61,12 +61,12 @@ End Sub
 
 ## Notes
 
-The [HTML5 WebForms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview) works with a client-side report source which is of type `Telerik.ReportViewer.Html5.WebForms.ReportSource`.
+The [HTML5 WebForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview) works with a client-side report source which is of type `Telerik.ReportViewer.Html5.WebForms.ReportSource`.
 
-* `ReportSource.IdentifierType` property specifies which [resolver]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview#overview) will be used for resolving the report description string on the server.
-* `ReportSource.Identifier` property accepts a string that contains information about the report. This string can be a path to a `TRDP` or `TRDX` file that can be resolved by [ReportFileResolver](/api/telerik.reporting.services.webapi.reportfileresolver), an assembly-qualified name of the report class which can be resolved by [ReportTypeResolver](/api/telerik.reporting.services.webapi.reporttyperesolver) or custom information which can be resolved by [custom report resolver]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview#custom-report-resolver-implementations).
+* `ReportSource.IdentifierType` property specifies which [resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview#overview) will be used for resolving the report description string on the server.
+* `ReportSource.Identifier` property accepts a string that contains information about the report. This string can be a path to a `TRDP` or `TRDX` file that can be resolved by [ReportFileResolver](/api/telerik.reporting.services.webapi.reportfileresolver), an assembly-qualified name of the report class which can be resolved by [ReportTypeResolver](/api/telerik.reporting.services.webapi.reporttyperesolver) or custom information which can be resolved by [custom report resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview#custom-report-resolver-implementations).
 
 ## See Also
 
-* [Set ReportSource for Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
-* [How to display a report via InstanceReportSource in the HTML5 Viewer]slug:how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)
+* [Set ReportSource for Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
+* [How to display a report via InstanceReportSource in the HTML5 Viewer](slug:how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)

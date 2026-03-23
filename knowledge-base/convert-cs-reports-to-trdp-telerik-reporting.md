@@ -34,7 +34,7 @@ The project targets .NET Framework 4.6.2 or higher:
 
 >note For projects targeting .NET, use the Standalone Report Designer for .NET.
 
-To convert a `.cs` report to a `.trdp` report, use the [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). This tool allows for importing `.dll` files produced from projects containing types inheriting `Telerik.Reporting.Report`, facilitating the conversion process.
+To convert a `.cs` report to a `.trdp` report, use the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). This tool allows for importing `.dll` files produced from projects containing types inheriting `Telerik.Reporting.Report`, facilitating the conversion process.
 
 ### Steps for Conversion
 
@@ -43,12 +43,12 @@ To convert a `.cs` report to a `.trdp` report, use the [Standalone Report Design
 
 	![Same Folder](images/same-folder.png)
 
-1. **Open Standalone Report Designer**: Launch the Telerik [Standalone Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
-1. **Add an Assembly Reference** to the Standalone Report Designer: [Extending Report Designer to Recognize Custom Assemblies]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer).
+1. **Open Standalone Report Designer**: Launch the Telerik [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
+1. **Add an Assembly Reference** to the Standalone Report Designer: [Extending Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer).
 
 	![Assembly Reference](images/assembly-reference.png)
 
-1. **Import the DLL**: From the Report Designer, select to import reports, and navigate to the `.dll` file produced by your project from the first step above. The Standalone Report Designer will launch the [Import Report Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard) and will list all reports available in the `.dll` for import. Follow the wizard:
+1. **Import the DLL**: From the Report Designer, select to import reports, and navigate to the `.dll` file produced by your project from the first step above. The Standalone Report Designer will launch the [Import Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard) and will list all reports available in the `.dll` for import. Follow the wizard:
 
 	![Start Import Report Wizard](images/select-dll.png)
 
@@ -64,6 +64,6 @@ To convert a `.cs` report to a `.trdp` report, use the [Standalone Report Design
 
 ## See Also
 
-- [Standalone Report Designer Overview]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
-- [How to Import Reports Created with the VS Report Designer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer)
-- [Extending Report Designer at a Glance]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
+- [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+- [How to Import Reports Created with the VS Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer)
+- [Extending Report Designer at a Glance](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)

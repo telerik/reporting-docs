@@ -23,4 +23,4 @@ The file extensions **.trdp**, **.trdx**, **.trtx**, **.trbp**, and .NET type re
 
 ## See Also
 
-* [Report Designer Tools]slug:telerikreporting/designing-reports/report-designer-tools/overview)
+* [Report Designer Tools](slug:telerikreporting/designing-reports/report-designer-tools/overview)

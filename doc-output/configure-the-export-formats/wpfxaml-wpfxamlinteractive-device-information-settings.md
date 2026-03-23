@@ -39,9 +39,9 @@ This rendering extension is used by the WPF Report Viewer and by default is not 
 |BitmapScalingMode|string|Specifies the algorithm used to scale bitmap images. The value must be a [BitmapScalingMode](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.bitmapscalingmode?view=windowsdesktop-7.0) enumeration member. By default it is set to __Unspecified__, which results in better performance, but produces a low quality scaling.|
 |ValidateXmlCharacters|boolean|Specifies whether Unicode characters that are not XML compliant, should be allowed in the report.|
 
-For an example of how to set up the settings for a rendering extension, see [extensions Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element).
+For an example of how to set up the settings for a rendering extension, see [extensions Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element).
 
 ## See Also
 
-* [Device Information Settings]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
-* [Export Formats]slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+* [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+* [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)

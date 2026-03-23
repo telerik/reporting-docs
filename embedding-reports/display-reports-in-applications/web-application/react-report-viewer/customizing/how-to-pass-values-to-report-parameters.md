@@ -14,7 +14,7 @@ previous_url: /react-report-viewer-how-to-pass-values-to-report-parameters
 
 This topic explains how to update the report parameters with values passed from a custom UI instead of using the report viewer's default parameters area.
 The report identifier and all required parameters values for it are packed in a **ReportSource** object.
-To update the report source, the [reportSource(rs)]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)) method is used.
+To update the report source, the [reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)) method is used.
 
 ## Pass values to report parameters from the application UI
 
@@ -92,5 +92,5 @@ export function ReportViewer() {
 
 ## See Also
 
-- [How to Use React Report Viewer with REST Service]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service)
-- [How to Use React Report Viewer with Report Server]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-report-server)
+- [How to Use React Report Viewer with REST Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service)
+- [How to Use React Report Viewer with Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-report-server)

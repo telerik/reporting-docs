@@ -69,6 +69,6 @@ installation folder, for example, `C:\Program Files (x86)\Progress\Telerik Repor
 >If you use this approach, you must modify the `telerikReportViewer-version.css` file and copy it to the local folder whenever you upgrade Report Viewer to a new version.
 
 ## See Also
-[How to Change the Parameter Editor's Type]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-change-parameter-editors-type)
+[How to Change the Parameter Editor's Type](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-change-parameter-editors-type)
 
-[How to Create a Custom Parameter Editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor)
+[How to Create a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

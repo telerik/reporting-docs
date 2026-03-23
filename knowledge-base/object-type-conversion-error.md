@@ -38,11 +38,11 @@ The possible reason for the issue is that not all Telerik Reporting assemblies a
 
 ## Solution
 
-1. Run the [Upgrade Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).
+1. Run the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).
 1. Restart Visual Studio.
-1. Manually verify that all Telerik Reporting assemblies are upgraded to the same version. For more information, refer to the article on [upgrading Telerik Reporting projects]slug:telerikreporting/upgrade/overview).
+1. Manually verify that all Telerik Reporting assemblies are upgraded to the same version. For more information, refer to the article on [upgrading Telerik Reporting projects](slug:telerikreporting/upgrade/overview).
 
 ## See Also
 
-* [Upgrade Wizard]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard)
-* [Upgrading Telerik Reporting Projects]slug:telerikreporting/upgrade/overview)
+* [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard)
+* [Upgrading Telerik Reporting Projects](slug:telerikreporting/upgrade/overview)

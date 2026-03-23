@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-I want to set the default file name of the [ReportBook]slug:telerikreporting/designing-reports/report-book/overview) exported from the viewer with an [Expression]slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview), for example, to a [Report Parameter]slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) value.
+I want to set the default file name of the [ReportBook](slug:telerikreporting/designing-reports/report-book/overview) exported from the viewer with an [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview), for example, to a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) value.
 
 ## Solution
 
@@ -30,10 +30,10 @@ The [DocumentName of the ReportBook](/api/telerik.reporting.reportbook#Telerik_R
 
 The Report Book is a collection of Reports that implements the [IReportDocument interface](/api/telerik.reporting.ireportdocument). The implicit implementation of the property [ReportParameters](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_Telerik_Reporting_IReportDocument_ReportParameters) obtains its value by merging the parameters of individual reports that have their `Mergeable` property set to `true` plus adding all non-mergeable parameters.
 
-The `DocumentName` of the ReportBook may be set to an Expression like `=Parameters.ParameterName.Value`. _ParameterName_ should be a valid parameter name from any of the reports in the ReportBook. You need to type manually the expression as it won't be displayed in the designer's wizard. You may use also more complex `Expressions` based on all report parameters throughout the reports in the ReportBook, and [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview).
+The `DocumentName` of the ReportBook may be set to an Expression like `=Parameters.ParameterName.Value`. _ParameterName_ should be a valid parameter name from any of the reports in the ReportBook. You need to type manually the expression as it won't be displayed in the designer's wizard. You may use also more complex `Expressions` based on all report parameters throughout the reports in the ReportBook, and [User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview).
 
 ## See Also
 
-* [Report Book]slug:telerikreporting/designing-reports/report-book/overview)
+* [Report Book](slug:telerikreporting/designing-reports/report-book/overview)
 * [Interface IReportDocument](/api/telerik.reporting.ireportdocument)
 * [Class ReportBook](/api/telerik.reporting.reportbook)

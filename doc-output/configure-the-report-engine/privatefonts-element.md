@@ -35,7 +35,7 @@ Defines a collection that allows the Reporting Engine to use a private version o
 
 The private fonts are used for all rendering extensions. Still the font rendering on the client computer depends on the viewer configuration and document format specifications:
 
-* PDF: The rendering extension embeds fonts by default. This functionality is controlled by the [FontEmbedding device information setting]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings);
+* PDF: The rendering extension embeds fonts by default. This functionality is controlled by the [FontEmbedding device information setting](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings);
 * HTML5 Rendering: In order web browser to render HTML with private fonts you have to set up font-face rules. For more information see the [W3.org article for font-face rules](https://www.w3.org/TR/css-fonts-3/#font-face-rule);
 * WPF XAML rendering: embeds private fonts by default;
 * Silverlight XAML rendering: In addition to add the private fonts as content to the WCF hosting project you have to add the fonts as resources to the Silverlight project with the same relative path;
@@ -119,5 +119,5 @@ The following example demonstrates how to configure the reporting engine to use 
 
 ## See Also
 
-* [Configure the Report Engine Overview]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
-* [Rendering and Paging Overview]slug:telerikreporting/designing-reports/rendering-and-paging/overview)
+* [Configure the Report Engine Overview](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+* [Rendering and Paging Overview](slug:telerikreporting/designing-reports/rendering-and-paging/overview)

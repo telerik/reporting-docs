@@ -48,7 +48,7 @@ As of 2025 Q1 (19.0.25.211), the __User Function__ resolution behavior has been 
 
 ## User Function Discovery
 
-The automatic user function discovery applies only to assemblies that are explicitly configured through [assemblyReferences]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) or [typeReferences]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) in the application configuration. This behavior prevents potential security vulnerabilities where malicious actors could exploit report definitions to invoke unintended methods from the host application.
+The automatic user function discovery applies only to assemblies that are explicitly configured through [assemblyReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) or [typeReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) in the application configuration. This behavior prevents potential security vulnerabilities where malicious actors could exploit report definitions to invoke unintended methods from the host application.
 
 Even functions defined directly in the executing assembly are not automatically discovered. This behavior is intentional to prevent issues in scenarios where the Reporting engine is embedded in applications with many publicly accessible classes and methods. For example, in applications that host the Web Report Designer, automatically loading all functions from the executing assembly could clutter the function list with unintended methods.
 
@@ -77,7 +77,7 @@ To invoke this function, set the following expression:
 
 ## Extending Reporting Engine with User Functions
 
-If your custom user functions are linked from an external assembly, for the designer to recognize them, you will have to [extend the configuration of the start application]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer).
+If your custom user functions are linked from an external assembly, for the designer to recognize them, you will have to [extend the configuration of the start application](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer).
 
 For the Visual Studio Report Designer this is the 'devenv.exe.config' file that resides in 'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE' by default (it is recommended to create a backup copy before modifying it). You can type the expression by specifying the full assembly qualified name of the function and passing a parameter of the expected type.
 

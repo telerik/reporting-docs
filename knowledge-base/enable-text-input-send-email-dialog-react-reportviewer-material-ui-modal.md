@@ -26,7 +26,7 @@ ticketid: 1662132
 
 ## Description
 
-When using the [React Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) in a React application with the [Material UI Modal component](https://mui.com/material-ui/react-modal/), the text fields in the "Send Email" dialog become uneditable, although dropdowns can still be modified.
+When using the [React Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) in a React application with the [Material UI Modal component](https://mui.com/material-ui/react-modal/), the text fields in the "Send Email" dialog become uneditable, although dropdowns can still be modified.
 
 ## Cause
 

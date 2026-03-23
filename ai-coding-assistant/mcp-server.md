@@ -24,7 +24,7 @@ To use the Telerik Reporting MCP Server, you need:
 - An [MCP-compatible client (IDE, code editor, or app)](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended). For example, the latest [Visual Studio Code](https://code.visualstudio.com/).
 - A [Telerik user account](https://www.telerik.com/account/).
 - An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
-- An application that uses the [Telerik Reporting]slug:telerikreporting/welcome-to-telerik-reporting!).
+- An application that uses the [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!).
 
 ## Installation
 
@@ -67,9 +67,9 @@ Use the settings in the following table to configure the Telerik Reporting MCP s
 
 An active Telerik Reporting license is required to use the Telerik Reporting MCP server.
 
-- When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file]slug:license-key) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux). No additional action is required.
-- When using the .NET tooling, but your [license key file]slug:license-key) is not in the default directory, use one of the options below to configure your license.
-- When using Node.js, add your [license key file]slug:license-key) as an environment variable in your `mcp.json` file using one of the options below:
+- When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux). No additional action is required.
+- When using the .NET tooling, but your [license key file](slug:license-key) is not in the default directory, use one of the options below to configure your license.
+- When using Node.js, add your [license key file](slug:license-key) as an environment variable in your `mcp.json` file using one of the options below:
   - As a license file path (recommended):
 
     ```JSON
@@ -87,7 +87,7 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
     }
     ```
 
-> Using a license file path is recommended unless you're sharing settings across different systems. Remember to [update your license key]slug:license-key#updating-your-license-key) when necessary.
+> Using a license file path is recommended unless you're sharing settings across different systems. Remember to [update your license key](slug:license-key#updating-your-license-key) when necessary.
 
 ## Visual Studio Configuration
 
@@ -367,11 +367,11 @@ The following examples demonstrate useful prompts for the Telerik Reporting MCP 
 - "`#telerik-reporting-assistant` Add a Telerik Report Viewer to my native Angular application."
 - "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
-> tip Visit the [Telerik Reporting Prompt Library]slug:ai-prompt-library) for more sample prompts.
+> tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
 
 ### Usage Limits
 
-A Telerik [Subscription](https://www.telerik.com/purchase.aspx?filter=web) or Trial license is required to use the Telerik Reporting AI Coding Assistant. Perpetual licenses do not include access, but you can [start a free trial](https://www.telerik.com/mcp-servers-reporting/thank-you) to evaluate it. See the [Usage Limits]slug:ai-coding-assistant#usage-limits) section for details.
+A Telerik [Subscription](https://www.telerik.com/purchase.aspx?filter=web) or Trial license is required to use the Telerik Reporting AI Coding Assistant. Perpetual licenses do not include access, but you can [start a free trial](https://www.telerik.com/mcp-servers-reporting/thank-you) to evaluate it. See the [Usage Limits](slug:ai-coding-assistant#usage-limits) section for details.
 
 ### Connect to Local AI Model
 
@@ -385,7 +385,7 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 
 ### See Also
 
-- [AI Coding Assistant Overview]slug:ai-coding-assistant)
-- [Telerik Reporting Prompt Library]slug:ai-prompt-library)
+- [AI Coding Assistant Overview](slug:ai-coding-assistant)
+- [Telerik Reporting Prompt Library](slug:ai-prompt-library)
 - [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server)
 - [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server)

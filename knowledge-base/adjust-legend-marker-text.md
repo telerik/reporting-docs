@@ -47,4 +47,4 @@ This image demonstrates how to customize the left padding of the legend item's s
 ## See Also
 
 - [API Reference: GraphSeriesBase.LegendItem Property](/api/telerik.reporting.graphseriesbase#collapsible-Telerik_Reporting_GraphSeriesBase_LegendItem)
-- [Formatting a Map Legend in Telerik Reporting]slug:telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend)
+- [Formatting a Map Legend in Telerik Reporting](slug:telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend)

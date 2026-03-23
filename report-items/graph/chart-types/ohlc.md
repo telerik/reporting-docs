@@ -68,11 +68,11 @@ The `date` field is a DateTime with the `dd.MM.yyyy` format. The rest of the fie
 
 	1. Leave **Series** empty.
 	1. Drag the __date__ field to **Categories**.
-	1. Drag the __open__ field to **Open**. The wizard will automatically apply the `Sum` [aggregate function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions).
+	1. Drag the __open__ field to **Open**. The wizard will automatically apply the `Sum` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions).
 	1. Drag the __high__ field to **High**.
 	1. Drag the __low__ field to **Low**.
 	1. Drag the __close__ field to **Close**.
-	1. If you click the **Set default datapoint styling** checkbox, the wizard will add [conditional formatting]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rules that will change the color of the data point depending on the open-close values.
+	1. If you click the **Set default datapoint styling** checkbox, the wizard will add [conditional formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rules that will change the color of the data point depending on the open-close values.
 
 	![Arrange the OHLC Chart Series, Categories and Open, High, Low and Close values from the Wizard in the Standalone Report Designer](images/OhlcChartWizardArrangeFields.png)
 

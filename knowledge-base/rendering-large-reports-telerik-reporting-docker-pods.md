@@ -40,17 +40,17 @@ To render large reports effectively, follow these steps:
 1. **Follow Best Practices for Report Design**  
    - Limit the data processed and displayed in a single report.  
    - Use filtering and aggregation to reduce the dataset size.  
-   - Split data into smaller batches for export if needed and render it into multiple reports, combined in a [Report Book]slug:telerikreporting/designing-reports/report-book/overview).
+   - Split data into smaller batches for export if needed and render it into multiple reports, combined in a [Report Book](slug:telerikreporting/designing-reports/report-book/overview).
 
 
 ### Recommended Resources for Report Optimization
-* [Performance Factors at a Glanceg]slug:telerikreporting/designing-reports/performance-considerations)
-* [Filtering Data at a Glance]slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
+* [Performance Factors at a Glanceg](slug:telerikreporting/designing-reports/performance-considerations)
+* [Filtering Data at a Glance](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
 * [Best Practices for Data Retrieval](https://www.telerik.com/blogs/best-practices-data-retrieval-telerik-reporting)
 
 By allocating sufficient resources and following these optimization practices, you can reduce pod restarts and improve report rendering reliability.
 
 ## See Also
 
-* [Telerik Reporting Overview]slug:telerikreporting/welcome-to-telerik-reporting!)
-* [Data Source Components]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview)
+* [Telerik Reporting Overview](slug:telerikreporting/welcome-to-telerik-reporting!)
+* [Data Source Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview)

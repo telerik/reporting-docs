@@ -27,7 +27,7 @@ How can I change the chart type when working with the Graph?
 
 ## Solution 
 
-It is important to select the correct [chart type]slug:telerikreporting/designing-reports/report-structure/graph/chart-types/overview) for your data so that it can be interpreted correctly. 
+It is important to select the correct [chart type](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/overview) for your data so that it can be interpreted correctly. 
 
 When you display multiple series on a graph, you may want to change the chart type of an individual series. You can only change the chart type of an individual series if the chart type is Area, Column, Line, or Scatter. For all other chart types, all series in your chart will be changed to the selected chart type. 
 

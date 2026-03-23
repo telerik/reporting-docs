@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-> note Preliminary knowledge about implementing custom parameter editors is expected in order to fully understand and implement the approach showcased in this article - [How to Create a Custom Parameter Editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)
+> note Preliminary knowledge about implementing custom parameter editors is expected in order to fully understand and implement the approach showcased in this article - [How to Create a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)
 
 In some scenarios, one might want to set the [Max](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/configuration/max) date of a `DateTime` report parameter based on the selected date of another `DateTime` report parameter, essentially creating a range of dates that an end-user can pick from.
 
@@ -41,7 +41,7 @@ Let's imagine a report that has two `DateTime` Report Parameters with the follow
 
 In order to add a range between those two DateTime report parameters, it is necessary to have access to the current value of the `Start date` report parameter. That is because the `max date` of the second report parameter will depend on the value of the first. 
 
-The only way to have access to the value of the first parameter every time that it changes is to create our own parameter editors as shown in the [How to Create a Custom Parameter Editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor) article. We can re-use the kendo [DatePIcker](https://demos.telerik.com/kendo-ui/datepicker/index) since it comes with the ability to specify a [max](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/methods/max) date out of the box.
+The only way to have access to the value of the first parameter every time that it changes is to create our own parameter editors as shown in the [How to Create a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor) article. We can re-use the kendo [DatePIcker](https://demos.telerik.com/kendo-ui/datepicker/index) since it comes with the ability to specify a [max](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/methods/max) date out of the box.
 
 ## Solution
 
@@ -137,7 +137,7 @@ $("#reportViewer1")
 
 ## Notes
 
-Looking at the code in the solution, one might wonder why do we need to both set the max of the second DatePicker in both the [`change`](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/events/change) event of the start date widget and in the [`renderingEnd`]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)) event of the report viewer.
+Looking at the code in the solution, one might wonder why do we need to both set the max of the second DatePicker in both the [`change`](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/events/change) event of the start date widget and in the [`renderingEnd`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)) event of the report viewer.
 
 The reason is that this article's goal is to make sure it works in preferably all scenarios. If both report parameters have their [`AutoRefresh`](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AutoRefresh) property set to `True`, when the start date is updated, the report viewer will re-render and thus `renderingEnd` will be fired and the max date of the second date parameter will update. In such a scenario, the custom parameter editor is most likely unnecessary.
 
@@ -147,4 +147,4 @@ What is certain is that in any case, the `renderingEnd` event function is necess
 
 ## See Also
 
-* [How to Create a Custom Parameter Editor]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)
+* [How to Create a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

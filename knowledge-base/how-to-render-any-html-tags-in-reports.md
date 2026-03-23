@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-A frequently asked question is _how to render HTML tags and CSS attributes that are not supported by [HtmlTextBox item]slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview)_ in reports.
+A frequently asked question is _how to render HTML tags and CSS attributes that are not supported by [HtmlTextBox item](slug:telerikreporting/designing-reports/report-structure/htmltextbox/overview)_ in reports.
 
 The most requested tags that can, currently, be displayed only through this article's workaround are the [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) and [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) HTML tags.
 
-The workaround that this article will demonstrate is to render the HTML/CSS content as a [Bitmap](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.bitmap) or [Image](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) in an [User Function]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) and then have that function invoked on the [Value](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_Value) property of a [PictureBox item]slug:telerikreporting/designing-reports/report-structure/picturebox).
+The workaround that this article will demonstrate is to render the HTML/CSS content as a [Bitmap](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.bitmap) or [Image](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) in an [User Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) and then have that function invoked on the [Value](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_Value) property of a [PictureBox item](slug:telerikreporting/designing-reports/report-structure/picturebox).
 
 ## Solution
 
@@ -50,7 +50,7 @@ The workaround that this article will demonstrate is to render the HTML/CSS cont
    ```
 
 1. Build the project, then copy the project assembly as well as the `HtmlRenderer.WinForms.dll` and `HtmlRenderer.dll` assemblies from the project's `bin` folder to the folder where the Report Designer exe is located, e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
-1. Open the `Telerik.ReportDesigner.exe.config` file and use the [assemblyReferences Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) to add references to the Class Library project's assembly and the `HtmlRenderer.WinForms.dll` assembly:
+1. Open the `Telerik.ReportDesigner.exe.config` file and use the [assemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) to add references to the Class Library project's assembly and the `HtmlRenderer.WinForms.dll` assembly:
 
    ```XML
    <Telerik.Reporting>
@@ -61,7 +61,7 @@ The workaround that this article will demonstrate is to render the HTML/CSS cont
    </Telerik.Reporting>
    ```
 
-1. Start the Report Designer and open/create a report, then create a [PictureBox item]slug:telerikreporting/designing-reports/report-structure/picturebox) and set the following expression as its [Value](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_Value):
+1. Start the Report Designer and open/create a report, then create a [PictureBox item](slug:telerikreporting/designing-reports/report-structure/picturebox) and set the following expression as its [Value](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_Value):
 
    `= UserFunctions.Functions.HtmlToImage(HTML)`
 
@@ -69,9 +69,9 @@ The workaround that this article will demonstrate is to render the HTML/CSS cont
 
 ## Notes
 
-To display a report that uses this approach in a separate application, the assembly of the Class Library project, the `HtmlRenderer.dll` and the `HtmlRenderer.WinForms.dll` assemblies should be referenced in the project where Reporting will be used - [Configuration for the Report Viewer/Web Report Designer]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source#configuration-for-the-report-viewerweb-report-designer).
+To display a report that uses this approach in a separate application, the assembly of the Class Library project, the `HtmlRenderer.dll` and the `HtmlRenderer.WinForms.dll` assemblies should be referenced in the project where Reporting will be used - [Configuration for the Report Viewer/Web Report Designer](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source#configuration-for-the-report-viewerweb-report-designer).
 
 ## See Also
 
-- [User Functions]slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
+- [User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
 - [HTML-Renderer GitHub repo](https://github.com/ArthurHub/HTML-Renderer)

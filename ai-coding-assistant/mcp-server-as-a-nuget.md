@@ -25,7 +25,7 @@ Additional requirements:
 
 - A [Telerik user account](https://www.telerik.com/account/).
 - An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
-- An application that uses the [Telerik Reporting]slug:telerikreporting/welcome-to-telerik-reporting!).
+- An application that uses the [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!).
 
 ## Summary of Installation Approaches
 
@@ -123,7 +123,7 @@ To enable the server globally for all projects, add the `.mcp.json` file to your
 
 ### Telerik Visual Studio Extension Setup:
 
-The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension]slug:reporting-integration-with-visual-studio) menu in Visual Studio.
+The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension](slug:reporting-integration-with-visual-studio) menu in Visual Studio.
 
 ![An image showcasing the available MCP-related functionalities of the Telerik Reporting VS extension](images/mcp-images/vs-reporting-mcp-extension.png)
 
@@ -135,7 +135,7 @@ The `Add/Update GitHub Copilot Instructions` option is visible only if you have 
 
 ## License Configuration
 
-Add your [Telerik license key]slug:license-key) using one of these options in the `env` section.
+Add your [Telerik license key](slug:license-key) using one of these options in the `env` section.
 
 **Option 1: License File Path (Recommended)**
 
@@ -157,7 +157,7 @@ The `THE_PATH_TO_YOUR_LICENSE_FILE` should point to the `telerik-license.txt` fi
 }
 ```
 
-> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key]slug:license-key#updating-your-license-key) when necessary.
+> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key](slug:license-key#updating-your-license-key) when necessary.
 
 ## Visual Studio Usage
 
@@ -191,5 +191,5 @@ Examples you can try:
 
 ## See Also
 
-- [AI Coding Assistant Overview]slug:ai-coding-assistant)
-- [npm-based Telerik Reporting MCP Server]slug:ai-mcp-server)
+- [AI Coding Assistant Overview](slug:ai-coding-assistant)
+- [npm-based Telerik Reporting MCP Server](slug:ai-mcp-server)

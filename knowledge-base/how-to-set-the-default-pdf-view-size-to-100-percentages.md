@@ -38,7 +38,7 @@ The default PDF viewer zoom level could be changed in three ways:
 
 2. Change the settings programmatically with Telerik.Reporting configuration section in application configuration file
 
-   This setting could be added to [Telerik.Reporting Configuration Section Extension Element]slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element) by using _JavaScript_ as name attribute and value _this.zoom=100_ like the following code snippet:
+   This setting could be added to [Telerik.Reporting Configuration Section Extension Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element) by using _JavaScript_ as name attribute and value _this.zoom=100_ like the following code snippet:
 
    ```XML
    <Telerik.Reporting>
@@ -56,7 +56,7 @@ The default PDF viewer zoom level could be changed in three ways:
 
 3. With the using of the [ReportProcessor.RenderReport Method](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) to render the report in the specified format
 
-   There is a parameter called **deviceInfo** that contains parameters to pass to the rendering extension. Based on the [Export Report Programmatically: Exporting a report to a single document format]slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine#exporting-a-report-to-a-single-document-format) example, is created the following code snippet for this case:
+   There is a parameter called **deviceInfo** that contains parameters to pass to the rendering extension. Based on the [Export Report Programmatically: Exporting a report to a single document format](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine#exporting-a-report-to-a-single-document-format) example, is created the following code snippet for this case:
 
    ```C#
    Telerik.Reporting.Processing.ReportProcessor reportProcessor =

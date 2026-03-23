@@ -35,14 +35,14 @@ This depends on the Telerik Reporting [license type (perpetual, subscription, or
 If none of the above conditions are met, the following behaviors occur:
 
 - A watermark appears on each report document page.
-- A [warning message]slug:license-errors-and-warnings) appears in the application's build log.
+- A [warning message](slug:license-errors-and-warnings) appears in the application's build log.
 
 ## I updated the version of the Telerik Reporting packages in my project and the invalid license errors have appeared. What is the cause of this behavior?
 
 The most likely cause is that the newly installed Telerik Reporting was released after the expiration date of your current license. To fix this issue:
 
-1. [Download a new license key]slug:license-key#downloading-the-license-key).
-1. [Activate the new license key]slug:license-key#activating-telerik-reporting) in your project.
+1. [Download a new license key](slug:license-key#downloading-the-license-key).
+1. [Activate the new license key](slug:license-key#activating-telerik-reporting) in your project.
 
 ## Can I use the same license key in multiple builds?
 
@@ -58,7 +58,7 @@ No, the license activation and validation are performed entirely offline.
 
 No, you do not have to add the `telerik-license.txt` license key file or its contents to source control.
 
-Build servers must use the `TELERIK_LICENSE` environment variable described in [Adding the License Key to CI Services]slug:license-key-ci-services).
+Build servers must use the `TELERIK_LICENSE` environment variable described in [Adding the License Key to CI Services](slug:license-key-ci-services).
 
 > Do not store the license key in plaintext, for example, in a GitHub Actions Workflow definition.
 
@@ -86,6 +86,6 @@ This depends on your license:
 
 ## See Also
 
-* [License Activation Errors and Warnings]slug:license-errors-and-warnings)
-* [Setting Up Your License Key]slug:license-key)
-* [Adding the License Key to CI Services]slug:license-key-ci-services)
+* [License Activation Errors and Warnings](slug:license-errors-and-warnings)
+* [Setting Up Your License Key](slug:license-key)
+* [Adding the License Key to CI Services](slug:license-key-ci-services)

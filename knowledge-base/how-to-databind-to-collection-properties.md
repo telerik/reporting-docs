@@ -16,11 +16,11 @@ res_type: kb
 
 ## Description
 
-A common scenario is to set a [Data Item]slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)'s **DataSource** property to a custom Business object. 
+A common scenario is to set a [Data Item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)'s **DataSource** property to a custom Business object. 
 
-Depending on the underlying data structure [ObjectDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview), [EntityDataSource]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview), etc. components can be used to expose the properties of the Business object to the report. However, if the data schema is **not flat** and some of the properties represent child (nested) data collections, you may need to bind a report to the hierarchical data.
+Depending on the underlying data structure [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview), [EntityDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview), etc. components can be used to expose the properties of the Business object to the report. However, if the data schema is **not flat** and some of the properties represent child (nested) data collections, you may need to bind a report to the hierarchical data.
 
-To use hierarchical data, you can take advantage of the [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) functionality. It lets you bind declaratively the data item's [DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property to a given collection property from your business object and the data item will display all collection items.
+To use hierarchical data, you can take advantage of the [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) functionality. It lets you bind declaratively the data item's [DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property to a given collection property from your business object and the data item will display all collection items.
 
 This tutorial shows a sample approach how to create a hierarchical Report Table using a collection of business objects that contain a collection property.
 
@@ -72,7 +72,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 	````
 
 1. Build the project to ensure that **ContactsClassLibrary.dll** is produced in the **bin** folder.
-1. [Extend the Report Designer to Recognize the Custom Assembly]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
+1. [Extend the Report Designer to Recognize the Custom Assembly](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
 1. Create a brand new report and add an **ObjectDataSource** data item bound to the ContactsCollection.**AllContacts** property:
 
 	![Binding ObjectDataSource](images/binding-object-data-source.png) 
@@ -103,7 +103,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 
 ## Notes
 
-The expressions are evaluated only during the report processing. Thus, the data schema for the nested data item (Table) will not be available in the [Data Explorer]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and the wizards.
+The expressions are evaluated only during the report processing. Thus, the data schema for the nested data item (Table) will not be available in the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and the wizards.
 
 You can use additional data source components bound to the nested business objects to help yourself with creating the report layout. After applying the required bindings, you may remove the helper object data source components.
 
@@ -111,8 +111,8 @@ The extra data sources may remain in the report definition to help with future c
 
 ## See Also
 
-* [Extending Report Designer to Recognize Custom Assemblies]slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
-* [Bind to a BusinessObject]slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject)
-* [Bindings]slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
-* [Data Binding Problems]slug:telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-binding-problems)
-* [How to use the ReportItem.DataObject property in expressions]slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions)
+* [Extending Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
+* [Bind to a BusinessObject](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject)
+* [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
+* [Data Binding Problems](slug:telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-binding-problems)
+* [How to use the ReportItem.DataObject property in expressions](slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions)

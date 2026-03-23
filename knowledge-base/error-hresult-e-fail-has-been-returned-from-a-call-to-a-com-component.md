@@ -23,7 +23,7 @@ res_type: kb
 </table>
 
 ## Description
-Reports that contain [subreport item]slug:telerikreporting/designing-reports/report-structure/subreport) are failing to open in Visual Studio Report Designer.
+Reports that contain [subreport item](slug:telerikreporting/designing-reports/report-structure/subreport) are failing to open in Visual Studio Report Designer.
 
 ## Steps to Reproduce
 
@@ -69,4 +69,4 @@ Our recommendation is to use the **"Type name"** option for .NET type report def
 
 ## See Also
 
-* [Set ReportSource for SubReport]slug:telerikreporting/designing-reports/report-structure/subreport#setting-the-report-source)
+* [Set ReportSource for SubReport](slug:telerikreporting/designing-reports/report-structure/subreport#setting-the-report-source)

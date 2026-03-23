@@ -23,9 +23,9 @@ res_type: kb
 
 ## Description
 
-Sometimes you want to be able to render reports stored in your Report Server in a **custom Reporting REST Service**, rather than in your Report Server's instance. This can be done through the use of a [`Custom IReportSourceResolver`]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver), as shown in the [Displaying Reports From Report Server Through Custom Report Source Resolver]slug:displaying-reports-from-report-server-through-custom-report-source-resolver) KB article.
+Sometimes you want to be able to render reports stored in your Report Server in a **custom Reporting REST Service**, rather than in your Report Server's instance. This can be done through the use of a [`Custom IReportSourceResolver`](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver), as shown in the [Displaying Reports From Report Server Through Custom Report Source Resolver](slug:displaying-reports-from-report-server-through-custom-report-source-resolver) KB article.
 
-Even though the aforementioned article covers the base scenario, when you are working with a more complex report, for example a [Report Book]slug:telerikreporting/designing-reports/report-book/overview) or a Report that contains [SubReport]slug:telerikreporting/designing-reports/report-structure/subreport) items, you may encounter additional difficulties.
+Even though the aforementioned article covers the base scenario, when you are working with a more complex report, for example a [Report Book](slug:telerikreporting/designing-reports/report-book/overview) or a Report that contains [SubReport](slug:telerikreporting/designing-reports/report-structure/subreport) items, you may encounter additional difficulties.
 
 To cover these scenarios we will implement a `Custom Report Source Resolver` that retrieves a ReportBook containing Reports which have Sub Reports in their definitions.
 
@@ -129,4 +129,4 @@ The general idea behind this solution is the following:
 
 ## See Also
 
-- [Displaying Reports From Report Server through Custom ReportSource Resolver]slug:displaying-reports-from-report-server-through-custom-report-source-resolver)
+- [Displaying Reports From Report Server through Custom ReportSource Resolver](slug:displaying-reports-from-report-server-through-custom-report-source-resolver)

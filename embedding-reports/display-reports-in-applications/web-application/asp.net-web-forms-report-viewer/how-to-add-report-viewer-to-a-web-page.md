@@ -11,7 +11,7 @@ previous_url: /asp-net-report-viewer-embedding
 
 # Using the ASP.NET WebForms Report Viewer
 
-> This is a legacy report viewer and for new projects our recommendation is to use the latest WebForms Report Viewer - [HTML5 Web Forms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
+> This is a legacy report viewer and for new projects our recommendation is to use the latest WebForms Report Viewer - [HTML5 Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview)
 
 ## Assign report to the viewer in design time
 
@@ -50,7 +50,7 @@ To use Telerik Reports in web application, you need the Web report viewer:
 
 1. Add reference to the class library that contains your reports in the web application/site.
 1. Build the application
-1. Set the `ReportSource` for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
+1. Set the `ReportSource` for the report viewer. For more information, see [How to Set ReportSource for Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
 
 ## Assign report to the viewer programatically
 
@@ -61,12 +61,12 @@ In the `Page_Load` event handler, create an [TypeReportSource](/api/telerik.repo
 
 ## See Also
 
-- [Report Sources]slug:telerikreporting/designing-reports/report-sources/overview)
+- [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview)
 
-- [ASP.NET Web Forms Report Viewer]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview)
+- [ASP.NET Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview)
 
-- [Report Viewer Localization]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization)
+- [Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization)
 
-- [Deploying Web ReportViewer in SharePoint]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-reportviewer-in-sharepoint)
+- [Deploying Web ReportViewer in SharePoint](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-reportviewer-in-sharepoint)
 
-- [Medium Trust Support]slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support)
+- [Medium Trust Support](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support)

@@ -34,7 +34,7 @@ In the following article are presented steps for exporting a report in Silverlig
 
 To export a Telerik report from a Silverlight application without a Silverligh Report Viewer you have to instantiate the
 `Telerik.Reporting.Service.SilverlightClient.ReportServiceClient` class,
-which plays the role of proxy to the [Telerik Reporting WCF Service]slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview).
+which plays the role of proxy to the [Telerik Reporting WCF Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview).
 
 To specify that you want to render the report we use the `RenderAsync` method of the `Telerik.Reporting.Service.SilverlightClient.ReportServiceClient`, which invokes the respective method on the server (remember that it serves as proxy) that would return the rendered report.
 

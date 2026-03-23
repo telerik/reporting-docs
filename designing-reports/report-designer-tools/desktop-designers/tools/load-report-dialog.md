@@ -40,7 +40,7 @@ Reports can be stored in different locations and in different formats so use the
 
 ## See Also
 
-* [Report Sources]slug:telerikreporting/designing-reports/report-sources/overview)
+* [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview)
 * [UriReportSource](/api/Telerik.Reporting.UriReportSource)
 * [TypeReportSource](/api/Telerik.Reporting.TypeReportSource)
 * [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource)

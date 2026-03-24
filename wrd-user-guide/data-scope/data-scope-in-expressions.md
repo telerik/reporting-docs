@@ -60,7 +60,7 @@ By following the steps below, you can build a sample report that will help you u
     <img style="border: 1px solid gray;" src="images/table-context-menu.png" alt="Table Context Menu" />  
     <img style="border: 1px solid gray;" src="images/table-add-group.png" alt="Table Add Group" /> 
 
-1. Save the group. This creates a new group-level scope (subset of rows that share the same Category). Here, the default scope is the current group instance, so all fields refer to that group’s first record unless aggregated.
+1. Save the group. This creates a new group-level scope (subset of rows that share the same Category). Here, the default scope is the current group instance, so all fields refer to that group’s records.
 
     <img style="border: 1px solid gray;" src="images/table-group-scope.png" alt="Table Group Scope" />  
 

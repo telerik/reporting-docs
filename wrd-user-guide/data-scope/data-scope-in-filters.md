@@ -18,9 +18,9 @@ This article builds on the example demonstrated in [Data Scope in Expressions]({
 
 <img style="border: 1px solid gray;" src="images/preview-add-group-grand-total-sum.png" alt="Preview Grand Total" />
 
-Filters applied at a certain data level change the data scope. Whichever records remain after filtering form the current data scope. All aggregates (Sum, Avg, Count, etc.) operate only on that scope.
+Filters applied at a certain data level change the visible data records. Whichever records remain after filtering form the current data scope. All aggregates (Sum, Avg, Count, etc.) operate only on that scope.
 
-Report-level filters affect all the data in the report, including all nested data items bound to the same source. Data-item-level filters affect only the data item (and its child items), not the whole report.
+Report-level filtering affects only the report data and the data it passes to its children. Data-item-level filters affect only the data item (and its child items), not the whole report.
 
 ## Filtering the Table
 
@@ -41,7 +41,7 @@ Filter the table to show only the products belonging to the "Electronics" catego
 
 ## Filtering the Group 
 
-Filter the groups now to show products with greater amount than 500:
+Filter the groups now to show products with a greater amount than 500:
 
 1. Select the detail table group in the Explorer pane and add a filter: 
 
@@ -51,7 +51,7 @@ Filter the groups now to show products with greater amount than 500:
 
     <img style="border: 1px solid gray;" src="images/filter-detail-group.png" alt="Detail Group Filter" />  
 
-1. Preview the report. Now, you can see only products whose amount is greater than 500. The Grand Total remains 2700 because it uses the table's data scope which is filtered by showing only Electronics. The Subtotal also remains 2700 because the Category group's scope still contains all Electronics rows (1200 + 800 + 400 + 300). Filtering the detail group level (Amount > 500) does not change the data scope for group-level aggregates, so the subtotal in the group footer continues to include all records in the group, regardless of the detail filter. Group aggregates (such as Sum, Count, etc.) are evaluated over the group’s data records as defined by the group expression, not by the filtered detail rows. Filtering at the detail group level only affects which detail rows are displayed, but does not alter the underlying data set used for group-level calculations.
+1. Preview the report. Now, you can see only products whose amount is greater than 500. The Grand Total remains 2700 because it **uses the table's data scope** which is filtered by showing only Electronics. The Subtotal also remains 2700 because the Category group's scope still contains all Electronics rows (1200 + 800 + 400 + 300). Filtering the detail group level (Amount > 500) does not change the data scope for group-level aggregates, so the subtotal in the group footer continues to include all records in the group, regardless of the detail filter. Group aggregates (such as Sum, Count, etc.) are evaluated over the group’s data records as defined by the group expression, not by the filtered detail rows. Filtering at the detail group level only affects which detail rows are displayed, but does not alter the underlying data set used for group-level calculations.
 
     >important It is possible to add a filter at the category group level, but a Category Group filter does **not** remove individual detail rows. It only determines if the entire category group should appear or not. So, if a group contains at least one record with amount greater than 500, it will remain visible. 
 

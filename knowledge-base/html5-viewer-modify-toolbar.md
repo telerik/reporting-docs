@@ -38,7 +38,7 @@ Let's start with the steps required to remove or hide a toolbar component. The e
 <button data-role="toggle-button" data-icon="toggle-full-screen-mode" data-command="telerik_ReportViewer_toggleZoomMode" title="menuPageStateTitle" aria-label="ariaLabelMenuPageState"></button>
 ````
 
-Alternatively, to hide an element programatically or based on a condition you can use the `ready` function of the `telerik_ReportViewer` object. The `data-command` attribute can be used as a reliable selector for which element to manipulate, but you can also use the `aria-label` or `title` attributes with the same success. Here is the example on how to hide the print button:
+Alternatively, to hide an element programmatically or based on a condition you can use the `ready` function of the `telerik_ReportViewer` object. The `data-command` attribute can be used as a reliable selector for which element to manipulate, but you can also use the `aria-label` or `title` attributes with the same success. Here is the example on how to hide the print button:
 
 ````JavaScript
 var reportViewer = $("#report-viewer").telerik_ReportViewer({

@@ -29,7 +29,7 @@ To add filters to the Report use the following steps:
 1. In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
 1. Click __OK__.
 
-## Adding filters to Report programatically
+## Adding filters to Report programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewFilterSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewFilterSnippet}}

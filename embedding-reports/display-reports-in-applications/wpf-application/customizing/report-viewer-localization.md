@@ -20,7 +20,7 @@ In the WPF Report Viewer, localized resources are stored in separate `RESX` res
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 * Below those are the resources for any specific cultures. A specific culture is associated with a language and a region. For example, French Canadian ("fr-CA") is a specific culture.
 
-When the __Report Viewer__ tries to load any localized resource and does not find it it will travel up the hierarchy until it finds a resource file containing the requested resource.
+When the __Report Viewer__ tries to load any localized resource and does not find it, it will travel up the hierarchy until it finds a resource file containing the requested resource.
 
 The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the **French Belgian ("fr-BE")** culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __Report Viewer__ will look for a `RESX` file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
 
@@ -77,7 +77,7 @@ The other way to localize the WPF __Report Viewer__ in a more flexible manner is
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationSnippetStart}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetStart}}
 
-Instead of a hard-coded string, the property can be set in a *method*/*contructor* or to be created a method that returns string and implements a cutsom logic, for example, retreives the resource key from a database.
+Instead of a hard-coded string, the property can be set in a *method*/*constructor* or to be created a method that returns string and implements a custom logic, for example, retrieves the resource key from a database.
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationUsingMethodsSnippetStart}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetStart}}
@@ -86,11 +86,11 @@ Instead of a hard-coded string, the property can be set in a *method*/*contructo
 
 * [TextResources](/api/Telerik.ReportViewer.Wpf.TextResources)
 
-* [WPF Application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview)
+* [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
-* [How to Add report viewer to a WPF.NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project)
+* [How to Add report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
 
-* [Setting a Theme (Using Implicit Styles)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles))
+* [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
 
 * [Hierarchical Organization of Resources for Localization](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)))
 

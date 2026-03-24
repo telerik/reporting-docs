@@ -55,7 +55,7 @@ If the data object above is bound to a [data item]({%slug telerikreporting/desig
 
 ## Use parent data item data for child data item datasource parameter
 
-In the context of data item ReportItem.DataObject references the parent's data item data. Thus the ReportItem.DataObject.MyField retrieves the MyField data from the parent data item datasource. This way you can make use of of the datasource relations capability. For example when SqlDataSourceReport is set to the report and SqlDataSourceTable is set to a table. You can bind the SqlDataSourceTable datasource parameter to a SqlDataSourceReport data field as shown in the following datasource parameter example:
+In the context of data item ReportItem.DataObject references the parent's data item data. Thus the ReportItem.DataObject.MyField retrieves the MyField data from the parent data item datasource. This way you can make use of the datasource relations capability. For example when SqlDataSourceReport is set to the report and SqlDataSourceTable is set to a table. You can bind the SqlDataSourceTable datasource parameter to a SqlDataSourceReport data field as shown in the following datasource parameter example:
 
 | Name         | Type   | Value                           |
 | ------------ | ------ | ------------------------------- |
@@ -144,7 +144,7 @@ The following screenshot shows the expected report output that should be created
 
    Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report, so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).
 
-1. Add a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the crosstab using `DataSource` as a `PropertyPath` and `=ReportItem.DataObject` as an `Expression`, as shown in the following screenshot. This means that when the crosstab is processed its data source will be replaced with the result of the binding expression evaluation. This way it will be populated with the data of the current group insance.
+1. Add a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the crosstab using `DataSource` as a `PropertyPath` and `=ReportItem.DataObject` as an `Expression`, as shown in the following screenshot. This means that when the crosstab is processed its data source will be replaced with the result of the binding expression evaluation. This way it will be populated with the data of the current group instance.
 
    ![Setting of the Crosstab DataSource with Binding through the Editor of the Report Designer](images/DataItems/dataobject-edit-bindings.png)
 

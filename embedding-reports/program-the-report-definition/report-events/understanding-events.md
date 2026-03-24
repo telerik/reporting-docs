@@ -18,7 +18,7 @@ Delivering a Telerik Report to the end user is a process involving several stage
 
 The Report Definition is created during the first stage of the life cycle. This is the actual.NET class that represents the report. It is an instance of **Telerik.Reporting.Report** or an instance of a subclass of the **Telerik.Reporting.Report** and contains information about report items and their properties. Each item contained in the report gets added to a tree structure formed from the Items property of the Report (the root) and the Items properties of its child items. Additionally, if you are using the Visual Studio Report Designer, for each added report item, by default the newly added item is also added as a private field of the report definition class, in order to be easily accessible after the InitializeComponent method call.
 
-Let's illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
+Let's illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitializeComponent method of the report class.
 
 > The **InitializeComponent** method initializes (creates) a Report and its child items. It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
 

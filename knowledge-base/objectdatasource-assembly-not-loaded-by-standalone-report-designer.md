@@ -52,7 +52,7 @@ Here we demonstrate the approach step-by-step with an [ObjectDataSource]({%slug 
 1. Add the assembly (e.g. `ClassLibrary2`) with the DataSource/DataMember of the ObjectDataSource in the Standalone Report Designer folder and register it in the designer configuration file - [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 1. Open the Standalone Report Designer and start the [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%}) to configure it. If `ClassLibrary2` is not discovered by the wizard, as shown below:
 
-	![Data Source Types Not Found message in teh ObjectDataSource Wizard of the Standalone Report Designer](images/datasourcesnotfound.png)
+	![Data Source Types Not Found message in the ObjectDataSource Wizard of the Standalone Report Designer](images/datasourcesnotfound.png)
 
 	the Fuslogvw should have logged a failure in the `{specified folder}\Default\Telerik.ReportDesigner.exe`, in our case `C:\temp\Default\Telerik.ReportDesigner.exe`. The particular log file is `Microsoft.EntityFrameworkCore, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60.HTM` and indicates that this assembly was not found.
 

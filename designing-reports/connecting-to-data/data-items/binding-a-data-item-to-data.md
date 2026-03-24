@@ -44,6 +44,6 @@ The **DataObject** property is an object instance representing the data that an 
 
 For example, binding a Graph located inside a report group will result in the Graph retrieving data only for the current report group instance.
 
-> To reach the data of an item that is higher in the hierarchy, you can use **Parent** keyword: `= ReportItem.Parent.DataObject`. Parent keyword can be used as many times as neccessary in order to reach the required item.
+> To reach the data of an item that is higher in the hierarchy, you can use **Parent** keyword: `= ReportItem.Parent.DataObject`. Parent keyword can be used as many times as necessary in order to reach the required item.
 
 For more information please see [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}).

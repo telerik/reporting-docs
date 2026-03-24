@@ -30,7 +30,7 @@ For each sort expression, follow these steps:
 
 1. Click OK.
 
-## Adding sorting to Chart data item programatically
+## Adding sorting to Chart data item programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ChartSnippets.cs region=AddNewSortSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ChartSnippets.vb region=AddNewSortSnippet}}

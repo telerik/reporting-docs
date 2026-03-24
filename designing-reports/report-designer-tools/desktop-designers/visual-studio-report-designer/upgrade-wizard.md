@@ -55,11 +55,11 @@ This wizard will upgrade the following:
 
 	![Review Changes in Upgrade Wizard](images/review-step-upgrade-wizard.png)   
 
-1. The Complete step indicates whether the upgrade process is completed for all the projects successfully. It also indicates if any errors occured and the user is promped to decide whether to proceed or revert the changes:
+1. The Complete step indicates whether the upgrade process is completed for all the projects successfully. It also indicates if any errors occurred and the user is prompted to decide whether to proceed or revert the changes:
 
 	![Errors in Upgrade Wizard](images/errors-in-upgrade-wizard.png)   
 
-1. The Licensing step was added with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release of the product. It allows for seemlessly downloading the license key from your [Telerik account](https://www.telerik.com/account/) and putting it in the `%AppData%\Telerik` directory.
+1. The Licensing step was added with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release of the product. It allows for seamlessly downloading the license key from your [Telerik account](https://www.telerik.com/account/) and putting it in the `%AppData%\Telerik` directory.
 
 	![The Licensing step of the Reporting extension's Upgrade Wizard](images/licensing-step-upgrade-wizard.png)
 

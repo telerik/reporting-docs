@@ -1,7 +1,7 @@
 ---
 title: Sorting Tables
 page_title: Adding sorting to Table and Crosstab items and groups
-description: "Learn How to Add sorting to Table and Crosstab items and their groups with the Report Designer and programatically."
+description: "Learn How to Add sorting to Table and Crosstab items and their groups with the Report Designer and programmatically."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-table-item-and-crosstab-item
 tags: how,to,add,sorting,to,table,item,and,crosstab,item
 published: True
@@ -39,7 +39,7 @@ To define a sorting for the __Table__ or __Crosstab__ items use the following st
 
 1. Click OK.
 
-## Adding sorting to Table/Crosstab data item programatically
+## Adding sorting to Table/Crosstab data item programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewSortSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewSortSnippet}}

@@ -109,7 +109,7 @@ The following steps produce a view with settings similar to these of the local `
    <script src="~/api/reports/resources/js/telerikReportViewer"></script>
    ```
 
-   The report viewer JavaScript should be referenced after any other Kendo widgets or bundles. If no Kendo widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is prefered, please make sure the following widgets are referenced:
+   The report viewer JavaScript should be referenced after any other Kendo widgets or bundles. If no Kendo widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, please make sure the following widgets are referenced:
 
    ```HTML
    <!--

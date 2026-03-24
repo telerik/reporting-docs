@@ -50,7 +50,7 @@ The VS item template will integrate HTML5 WebForms Report Viewer in an.aspx page
 
 After finishing, the item template automatically do the following:
 
-* Configures the NuGet packages, if nessesary.
+* Configures the NuGet packages, if necessary.
 * Adds an __ASPX page with the configured HTML5 WebForms Report Viewer__.
 * Displays a __summary log__ that list all of the made changes.
 

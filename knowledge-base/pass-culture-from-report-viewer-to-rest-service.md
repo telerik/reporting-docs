@@ -42,7 +42,7 @@ private void ReportViewer1_RenderingBegin(object sender, Telerik.ReportViewer.Co
 ```
 
 ### HTML5-based Report Viewers
-The HTML5-based report viewers also have a [renderingBegin(e, args) event](/api/telerik.reportviewer.common.renderingbegineventargs) with second argument(*args*) that has a **deviceInfo** propery that may be used to pass the culture to the report. For example:
+The HTML5-based report viewers also have a [renderingBegin(e, args) event](/api/telerik.reportviewer.common.renderingbegineventargs) with second argument(*args*) that has a **deviceInfo** property that may be used to pass the culture to the report. For example:
 
 ```js
     renderingBegin(e, { deviceInfo }) {

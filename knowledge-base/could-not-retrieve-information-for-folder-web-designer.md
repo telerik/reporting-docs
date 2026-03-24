@@ -60,7 +60,7 @@ Open the `.csproj` file of your project and add the following setting:
 
 ### Override ReportDesignerControllerBase Actions To Include Nullable? Annotations
 
-The methods of the `ReportDesignerControllerBase` class are `virtual` and thus, they can be `overriden`.  In this case, the following method can be overriden to fix the error:
+The methods of the `ReportDesignerControllerBase` class are `virtual` and thus, they can be `overridden`.  In this case, the following method can be overridden to fix the error:
 
 ````C#
 public override IActionResult GetFolderModel([FromQuery] string? uri)

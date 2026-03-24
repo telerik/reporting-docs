@@ -79,9 +79,9 @@ To change the size of a report item:
 
 ## Controlling the Height
 
-To remove blank vertical space in a container, such as a report section or panel item, whenever you control the visibility of report items in runtime, set its respective height to a very small value, for exampe, `1mm`.
+To remove blank vertical space in a container, such as a report section or panel item, whenever you control the visibility of report items in runtime, set its respective height to a very small value, for example, `1mm`.
 
-A Section or a Panel item can expand to accommodate their children but cannot shrink or take space that is no longer occupied. To make a section or a panel to shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `IntializeComponent()` method call.
+A Section or a Panel item can expand to accommodate their children but cannot shrink or take space that is no longer occupied. To make a section or a panel to shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `InitializeComponent()` method call.
 
 ## Next Steps
 

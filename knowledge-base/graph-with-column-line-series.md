@@ -86,7 +86,7 @@ SELECT SOD.LineTotal, SOH.OrderDate
 
 	![Change the Category Group of the lineSeries1 in the Properties pane of the Standalone Report Designer](images/Graph/HowToBarLineSeries/ChangeCategoryGroup.png)
 
-1. Name the legend items of the series accordingly by using the [`Value`](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) propety of `LegendItem` for both of your series.
+1. Name the legend items of the series accordingly by using the [`Value`](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) property of `LegendItem` for both of your series.
 
 The following image shows the final look of your Graph.
 

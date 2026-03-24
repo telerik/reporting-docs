@@ -1,6 +1,6 @@
 ---
 title: TypeError Argument 8 of StorageEvent.initStorageEvent does not implement interface Storage
-description: This article elaborates on the error message recieved in the browser console prior to version 9.1.15.702
+description: This article elaborates on the error message received in the browser console prior to version 9.1.15.702
 type: troubleshooting
 page_title: TypeError Failed to execute 'initStorageEvent' on 'StorageEvent' parameter 8 is not of type 'Storage'
 slug: error-failed-to-execute-initstorageevent-on-storageevent

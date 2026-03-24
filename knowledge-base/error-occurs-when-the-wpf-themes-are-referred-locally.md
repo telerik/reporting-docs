@@ -32,4 +32,4 @@ res_type: kb
 The XAML designer locks the theme files and they cannot be accessed by the application.
 
 ## Solution
-To prevent the undesired outcome, navigate to **Tools** -> **Options** ->**XAML Desginer** -> uncheck **Enable XAML Designer**. Restart the Visual Studio afterward. 
+To prevent the undesired outcome, navigate to **Tools** -> **Options** ->**XAML Designer** -> uncheck **Enable XAML Designer**. Restart the Visual Studio afterward. 

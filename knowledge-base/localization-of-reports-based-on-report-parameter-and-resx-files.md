@@ -40,9 +40,9 @@ The following article explains how to create localizable reports according to re
 
 ## Solution
 Such application could be easily created following these steps:
-- Create new ReportLibrary project that would contain the report and it's corresponding resource files.
+- Create new ReportLibrary project that would contain the report and its corresponding resource files.
 - Configure new DataSource (for this example we are using CSVDataSourceWizard) which should contain two properties - **Language** (the names of languages) and **Culture** (their culture strings).
-- Create two new report parameters for the report. The first will be for the Language, so map the csvDataSource as **AvaliableValues** of the parameter. Let **DisplayMemeber** be *= Fields.Language* and **ValueMember** - *= Fields.Culture*. Finally, set it's **Visibility** to *True*. The second report parameter will give information about the base path
+- Create two new report parameters for the report. The first will be for the Language, so map the csvDataSource as **AvailableValues** of the parameter. Let **DisplayMember** be *= Fields.Language* and **ValueMember** - *= Fields.Culture*. Finally, set its **Visibility** to *True*. The second report parameter will give information about the base path
 the resources are searched at (check the report viewer's initialization file - *Index.cshtml*, that demonstrates how to get current base path for web applications).
 - Create Resource files with localized strings for each language according to report items values.
 - Create new user function that will get the localized value of the report item, based on the chosen parameter value. For example:

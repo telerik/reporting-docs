@@ -22,7 +22,7 @@ res_type: kb
     </tbody>
 </table>  
 
-## Desciption  
+## Description  
 
 Telerik products, including Telerik Reporting, can be used via Nuget packages. To access Nuget packages, you need Telerik account allowing you to connect to the private Telerik Nuget feed - <a href="https://www.telerik.com/blogs/we-maintain-a-telerik-nuget-feed" target="_blank">We Maintain a Telerik NuGet Feed</a>. 
 

@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-The purpose of this article is to list the already known issues when deploying Telerik Reporting on Azure environments, and let you find the link to the specific resource with the explaination and workaround for the particular problem. 
+The purpose of this article is to list the already known issues when deploying Telerik Reporting on Azure environments, and let you find the link to the specific resource with the explanation and workaround for the particular problem. 
 
 ## Known Issues on Azure
 

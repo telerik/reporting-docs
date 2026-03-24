@@ -67,7 +67,7 @@ The [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-t
 
 After [installing Telerik Reporting]({%slug telerikreporting/installation%}) you can benefit the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) in a .NET Framework project which facilitates the creation of new reports and importing reports from other formats in the Designer.
 
-During the [installation process]({%slug telerikreporting/installation%}) of Telerik Reporting on your machine, the Telerik assemblies are added to Global Assemby Cache (GAC) as well. This enables the respective items in the Visual Studio Toolbox for a .NET Framework project as well:
+During the [installation process]({%slug telerikreporting/installation%}) of Telerik Reporting on your machine, the Telerik assemblies are added to Global Assembly Cache (GAC) as well. This enables the respective items in the Visual Studio Toolbox for a .NET Framework project as well:
 
 ![Toolbox Items](images/toolbox-items.png)
 

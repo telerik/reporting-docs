@@ -23,7 +23,7 @@ The `GraphQLDataSource` component can request data in JSON format from a running
 
 ## Inline Parameters
 
-The values of this parameter type replace the corresponding part of the `Service URL`, and can be included in the the GraphQL query of the request.
+The values of this parameter type replace the corresponding part of the `Service URL`, and can be included in the GraphQL query of the request.
 
 ### Using Inline Parameters in Service Url
 

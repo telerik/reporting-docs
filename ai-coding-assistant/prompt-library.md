@@ -1,7 +1,7 @@
 ---
 title: Prompt Library
 page_title: Telerik Reporting AI Prompt Library Overview
-description: "Learn about the Telerik Reporting AI Prompt Library  – a collection of reusable prompts to boost productivity and output quality."
+description: "Learn about the Telerik Reporting AI Prompt Library – a collection of reusable prompts to boost productivity and output quality."
 slug: ai-prompt-library
 tags: ai, telerik, reporting, prompt, library
 tag: updated

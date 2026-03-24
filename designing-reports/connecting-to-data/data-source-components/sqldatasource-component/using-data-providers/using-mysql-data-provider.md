@@ -73,7 +73,7 @@ The workaround is to avoid using the SQL DataSource wizard and edit the data sou
 
 ## See Also
 
-- [Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Desginer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
+- [Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Designer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
 - [MySQL connection strings](https://www.connectionstrings.com/mysql/)
 - [Installing Connector/NET on Windows](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-windows.html)
 - [Installing Connector/NET Using the Standalone Installer](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-binary-windows-installer.html)

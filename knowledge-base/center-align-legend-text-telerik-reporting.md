@@ -35,7 +35,7 @@ When designing reports, aligning the [Graph]({%slug telerikreporting/designing-r
 To center align the legend text in a graph component, follow these steps:
 
 1. Select the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item in the report.
-1. Expand to the [Series](/api/telerik.reporting.graphseries) collection proeprty of the graph.
+1. Expand to the [Series](/api/telerik.reporting.graphseries) collection property of the graph.
 1. Choose the series for which you want to adjust the Legend mark alignment.
 1. From the [LegendItem](/api/telerik.reporting.graphseriesbase#Telerik_Reporting_GraphSeriesBase_LegendItem) dropdown, select the [MarkStyle](/api/telerik.reporting.legenditem#Telerik_Reporting_LegendItem_MarkStyle) property.
 1. Adjust the [VerticalAlign](/api/telerik.reporting.drawing.style#Telerik_Reporting_Drawing_Style_VerticalAlign) property within [MarkStyle](/api/telerik.reporting.legenditem#Telerik_Reporting_LegendItem_MarkStyle) to set the alignment box to the middle, vertically aligning the legend mark in the center within the legend box.

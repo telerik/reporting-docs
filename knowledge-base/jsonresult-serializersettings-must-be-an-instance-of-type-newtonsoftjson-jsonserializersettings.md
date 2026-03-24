@@ -80,7 +80,7 @@ If **NewtonsoftJson** is used only in the Reporting-related controllers, you can
 
 ### Case 2 - Keep NewtonsoftJson Globally
 
-If you need to keep the **NewtonsoftJson** because it is used in other controllers in the project, you can remove the Reporting controllers, and you can instead implement the Telerik Reporing Service as a _minimal API_.
+If you need to keep the **NewtonsoftJson** because it is used in other controllers in the project, you can remove the Reporting controllers, and you can instead implement the Telerik Reporting Service as a _minimal API_.
 
 Please refer to the [Hosting the Reporting REST Service in ASP.NET Core with Minimal API](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api) article for instructions on how to do that.
 

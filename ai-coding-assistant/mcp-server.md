@@ -353,7 +353,7 @@ If the Reporting Area cannot be determined automatically, the MCP Server will di
 
 After clicking on the 'Respond' button, the MCP Server will display a drop-down list with all the areas and wait for selecting the corresponding Reporting Area. If there is no applicable entry, please select the 'General' entry at the end of the list.
 
-![Select a Reporing Area from the dropdown](images/mcp-server-select-reporting-area.png)
+![Select a Reporting Area from the dropdown](images/mcp-server-select-reporting-area.png)
 
 **Custom Instructions**: To increase the likelihood of the Telerik MCP server being used, or to call it without the need to mention "telerik-reporting" explicitly, add custom instructions to your AI tool:
 

@@ -25,7 +25,7 @@ res_type: kb
 I want to create a report containing a Table/List with multiple countries, or in the general case, other main objects. I should use an endpoint that provides me 
 with all the countries names. 
 I should then get a list of countries data objects with some detail data in it (e.g. "name", "region", "population", etc. for the particular country or other main object).
-The country name, or in the general case another unique field, can be sent as a parameter to another endpoint to retreive the detailed information about the country or the main object. 
+The country name, or in the general case another unique field, can be sent as a parameter to another endpoint to retrieve the detailed information about the country or the main object. 
 
 The problem is that the data I need in my table is split into these two endpoints: 
 * the first one gives me a list of the main objects

@@ -28,7 +28,7 @@ res_type: kb
 
 The Telerik Converter from CrystalReports is built against version `10.2.3600.0` of CrystalReports that comes with the installation of `MS Visual Studio 2005`.
 
-> Telerik Reporting R2 2018 now provides two Crystal Reports converters. To convert reports from Crystal Reports 13 or newer use the converter that is build with Crystal Reports 13.0.20.2399.
+> Telerik Reporting R2 2018 now provides two Crystal Reports converters. To convert reports from Crystal Reports 13 or newer use the converter that is built with Crystal Reports 13.0.20.2399.
 
 If you do not have this version installed, you can still use the converter if you have any newer version of the product that has .NET support, such as `Crystal Reports XI R2`, `Crystal Reports Basic for Visual Studio 2008`, `Crystal Reports 2008`. All you need to do is to define <a href="https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions" target="_blank">binding redirection</a> rules in the configuration file of the Visual Studio you are using or in the configuration of the Standalone Report Designer application.
 

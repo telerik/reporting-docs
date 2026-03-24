@@ -28,7 +28,7 @@ This article explains the steps needed to create an application which uses the S
 
    The corresponding XAML resources can be found in _C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Silverlight\Themes_.
 
-   The Silverlight ReportViewer is build with the latest official release of Telerik UI for Silverlight. In this way we provide trouble free upgrade for most of the users. This means that you can use the latest version of Telerik UI for Silverlight in your project and report viewer.
+   The Silverlight ReportViewer is built with the latest official release of Telerik UI for Silverlight. In this way we provide trouble free upgrade for most of the users. This means that you can use the latest version of Telerik UI for Silverlight in your project and report viewer.
 
    > The files part of Telerik Reporting are the _Telerik.ReportViewer.Silverlight.dll_ and _Telerik.ReportViewer.Silverlight.xaml_. The rest DLLs and XAML resources must be updated from Telerik UI for Silverlight product folder.
 

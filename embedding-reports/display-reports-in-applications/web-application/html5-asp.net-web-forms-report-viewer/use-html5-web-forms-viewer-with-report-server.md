@@ -16,7 +16,7 @@ The quickest way to add a HTML5 Web Forms Report Viewer to your web project is w
 
 ## Prerequisites
 
-1. Review the HTML5 WebForms Report Viewer [Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview#requirements).
+1. Review the HTML5 WebForms Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}#requirements).
 1. The project must target [ASP.NET 4.0 Web Forms](https://learn.microsoft.com/en-us/aspnet/web-forms/) or newer framework.
 1. Installed and running [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 1. Report Server's built-in __Guest__ user should be enabled.
@@ -44,17 +44,17 @@ The VS item template will integrate HTML5 WebForms Report Viewer in an.aspx page
 
 		![The Visual Studio item template Add new Report Viewer on the page Setup Report Source for Report Server](images/item-template-report-source-rs.png)
 
-	1. __'Configure Report Viewer'__ exposes the option to enable [accessibility](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility) for the report viewer.
+	1. __'Configure Report Viewer'__ exposes the option to enable [accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) for the report viewer.
 
 		![The Visual Studio item template Add new Report Viewer on the page Configure Report Viewer for Enabling Accessibility](images/item-template-accessibility.png)
 
 After finishing, the item template automatically do the following:
 
-* Configures the NuGet packages, if nessesary.
+* Configures the NuGet packages, if necessary.
 * Adds an __ASPX page with the configured HTML5 WebForms Report Viewer__.
 * Displays a __summary log__ that list all of the made changes.
 
 ## See Also
 
-* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With REST Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service)
+* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 * [How to: Add New Project Items](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))

@@ -3,7 +3,7 @@ title: Filtering the Graph
 page_title: Filtering the Graph Item At a Glance
 description: "Learn how to add filtering to the Graph item with the Report Designers or dynamically with custom code."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item
-tags: how,to,add,filtering,to,graph,item,designer,programatically,code,report
+tags: how,to,add,filtering,to,graph,item,designer,programmatically,code,report
 published: True
 position: 4
 previous_url: /data-items-how-to-add-filtering-to-chart-item
@@ -27,7 +27,7 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 1. In the **Value** box, type the expression or value against which you want the filter to evaluate the value in Expression.
 1. Click **OK**.
 
-## Adding filters to Graph programatically
+## Adding filters to Graph programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\GraphSnippets.cs region=AddNewFilterSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\GraphSnippets.vb region=AddNewFilterSnippet}}

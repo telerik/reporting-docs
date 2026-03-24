@@ -23,7 +23,7 @@ category: knowledge-base
 
 In PrintPreview mode, the report engine might render blank pages. Note that the pages are not actually blank. Rather there is some content that cannot fit on the current page and is carried over to the next page. There are several cases when this happens:
 
-- Report Width is greater than than the available page space (Page Width - Left Margin - Right Margin).
+- Report Width is greater than the available page space (Page Width - Left Margin - Right Margin).
 - There is a sub-report, which contains a report that is too wide, and while at design-time that is not obvious, at run-time it might cause the carry-over to occur.
 - There is a report item with boundaries going out to the right from its parent section.
 - There is an error in the report, where the error message is rendered in a red box, which goes beyond the set size of the report.

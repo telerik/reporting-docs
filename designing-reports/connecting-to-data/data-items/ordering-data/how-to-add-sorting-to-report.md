@@ -1,7 +1,7 @@
 ---
 title: Sorting Report
 page_title: Adding Sorting to Report Item
-description: "Learn how to add sorting to Telerik Reports and Report Groups with the Report Designers and programatically."
+description: "Learn how to add sorting to Telerik Reports and Report Groups with the Report Designers and programmatically."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report
 tags: how,to,add,sorting,to,report
 published: True
@@ -35,7 +35,7 @@ reportingArea: General
 
 1. Click OK.
 
-## Adding sorting to Report programatically
+## Adding sorting to Report programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewSortSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewSortSnippet}}

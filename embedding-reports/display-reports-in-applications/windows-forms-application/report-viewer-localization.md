@@ -20,7 +20,7 @@ In the Windows Report Viewer, localized resources are stored in separate __RESX
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 * Below those are the resources for any specific cultures. A specific culture is associated with a language and a region. For example, French Canadian ("fr-CA") is a specific culture.
 
-When the __Report Viewer__ tries to load any localized resource and does not find it it will travel up the hierarchy until it finds a resource file containing the requested resource.
+When the __Report Viewer__ tries to load any localized resource and does not find it, it will travel up the hierarchy until it finds a resource file containing the requested resource.
 
 The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the French Belgian ("fr-BE") culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __Report Viewer__ will look for a __RESX__  file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
 
@@ -66,8 +66,8 @@ In order to distribute an application that uses __Telerik Reporting__ with a loc
 
 ## See Also
 
-* [Windows Forms Application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)
-* [How to Add report viewer to a Windows Forms'.NET Framework project](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-framework-project)
+* [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+* [How to Add report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 * [Setting the Culture for Windows Forms Globalization](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentculture?view=net-7.0)
 * [Setting the UI Culture for Windows Forms Globalization](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-7.0)
 * [Localized Satellite Assemblies](https://learn.microsoft.com/en-us/dotnet/core/extensions/create-satellite-assemblies)

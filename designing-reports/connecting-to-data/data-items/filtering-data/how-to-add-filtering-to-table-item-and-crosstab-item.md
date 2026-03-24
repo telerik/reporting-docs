@@ -27,7 +27,7 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 1. In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
 1. Click __OK__.
 
-## Adding filters to Table or Crosstab item programatically
+## Adding filters to Table or Crosstab item programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewFilterSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewFilterSnippet}}

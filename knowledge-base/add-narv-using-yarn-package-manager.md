@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-After adding the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) to my project that uses the [yarn](https://yarnpkg.com/) package manager, the project does not build and there are warnings about unresolved peer dependencies and packages with incorrect versions.
+After adding the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) to my project that uses the [yarn](https://yarnpkg.com/) package manager, the project does not build and there are warnings about unresolved peer dependencies and packages with incorrect versions.
 
 ## Solution
 
@@ -66,7 +66,7 @@ After adding the [Native Angular Report Viewer](slug:telerikreporting/using-repo
    }
    ```
 
-1. Some of the viewer's peer dependencies have their own dependencies that have to be manually added. The following command can be used to install the necesary packages:
+1. Some of the viewer's peer dependencies have their own dependencies that have to be manually added. The following command can be used to install the necessary packages:
 
    ```powershell
    yarn add @angular-devkit/schematics @angular-devkit/core @progress/kendo-angular-upload @progress/kendo-drawing @progress/kendo-svg-icons

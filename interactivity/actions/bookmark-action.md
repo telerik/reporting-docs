@@ -35,7 +35,7 @@ You can add multiple bookmark actions to the same bookmark. To define a bookmark
    helpful to change the style of the text to indicate to the user that the text is a link. For example,
    change the color to blue and the effect to underline by setting the corresponding Font properties of the TextBox.
 
-## Adding a bookmark action programatically
+## Adding a bookmark action programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToBookMarkSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToBookMarkSnippet}}

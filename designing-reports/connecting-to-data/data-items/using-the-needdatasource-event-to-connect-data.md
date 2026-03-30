@@ -31,17 +31,7 @@ private void Report1_NeedDataSource(object sender, System.EventArgs e)
 	(sender as Telerik.Reporting.Processing.Report).DataSource = dataSet;
 }
 ````
-````VB
-Private Sub Report1_NeedDataSource(ByVal sender As Object, ByVal e As System.EventArgs)
-	Dim sql As String = "SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product"
-	Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
-	Dim adapter As New SqlDataAdapter(sql, connectionString)
-	Dim dataSet As New DataSet()
-	adapter.Fill(dataSet)
-	TryCast(sender, Telerik.Reporting.Processing.Report).DataSource = dataSet
-End Sub
-````
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ReportNeedDataSource}}
 ## See Also
 
 * [Connecting to Data](slug:telerikreporting/designing-reports/connecting-to-data/overview)

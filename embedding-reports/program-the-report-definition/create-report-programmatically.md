@@ -21,13 +21,7 @@ string connectionString = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=Adven
 Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource(connectionString, selectCommand);
 report.DataSource = sqlDataSource;
 ````
-````VB.NET
-Dim report As New Telerik.Reporting.Report()
-Dim selectCommand As String = "SELECT * FROM Sales.Store"
-Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
-Dim sqlDataSource As New Telerik.Reporting.SqlDataSource(connectionString, selectCommand)
-report.DataSource = sqlDataSource
-````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=CreateReportWithDataSource}}
 
 ## Next Steps
 

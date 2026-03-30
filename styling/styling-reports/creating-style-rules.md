@@ -76,19 +76,7 @@ myStyleRule.Style.Font.Name = "Courier New";
 //Add rule to Style Sheet
 this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {myStyleRule});
 ````
-````VB.NET
-'Create a StyleRule
-Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule
-'Add a TypeSelector
-MyStyleRule.Selectors.AddRange(New Telerik.Reporting.Drawing.ISelector() _ 
-{New Telerik.Reporting.Drawing.TypeSelector(GetType(Telerik.Reporting.TextBox))})
-'Add formatting
-MyStyleRule.Style.BackgroundColor = System.Drawing.Color.LinenMyStyleRule.Style.Color = System.Drawing.Color.DodgerBlue
-MyStyleRule.Style.Font.Name = "Courier New"
-'Add rule to Style Sheet
-Me.StyleSheet.AddRange(New Telerik.Reporting.Drawing.StyleRule() {MyStyleRule})
-````
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\StyleRuleCreationSnippets.vb region=CreateTypeSelectorStyleRule}}
 ## Creating a StyleSelector StyleRule
 
 ### Using the StyleRule Collection Editor
@@ -126,20 +114,7 @@ myStyleRule.Style.Font.Name = "Courier New";
 //Add rule to Style Sheet
 this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {myStyleRule});
 ````
-````VB.NET
-'Create a StyleRule
-Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule 
-'Add a StyleSelector
-MyStyleRule.Selectors.AddRange(New Telerik.Reporting.Drawing.ISelector() _
-{New Telerik.Reporting.Drawing.StyleSelector("CaptionStyle")})
-'Add(formatting)
-MyStyleRule.Style.BackgroundColor = System.Drawing.Color.Linen
-MyStyleRule.Style.Color = System.Drawing.Color.DodgerBlue
-MyStyleRule.Style.Font.Name = "Courier New"                   
-'Add rule to Style Sheet
-Me.StyleSheet.AddRange(New Telerik.Reporting.Drawing.StyleRule() {MyStyleRule})
-````
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\StyleRuleCreationSnippets.vb region=CreateStyleSelectorStyleRule}}
 ### Applying StyleSelector StyleRules
 
 Each report item has a __StyleName__ property.
@@ -216,22 +191,4 @@ myStyleRule.Style.Font.Name = "Arial";
 //Add rule to Style Sheet
 this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {myStyleRule});
 ````
-````VB.NET
-'Create StyleRule and DescendantSelector
-Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule
-Dim MyDescendantSelector As Telerik.Reporting.Drawing.DescendantSelector = _ 
-New Telerik.Reporting.Drawing.DescendantSelector
-'Define the Selectors and Types of the DescendantSelector
-MyDescendantSelector.Selectors.AddRange(New Telerik.Reporting.Drawing.ISelector() _ 
-{New Telerik.Reporting.Drawing.TypeSelector(GetType(Telerik.Reporting.ReportHeaderSection)), _  
-New Telerik.Reporting.Drawing.TypeSelector(GetType(Telerik.Reporting.TextBox))})
-'Add the DescendantSelector to the StyleRule
-MyStyleRule.Selectors.AddRange(New Telerik.Reporting.Drawing.ISelector() {DescendantSelector1})
-'Apply formatting
-MyStyleRule.Style.BorderStyle.Default = Telerik.Reporting.Drawing.BorderType.Ridge
-MyStyleRule.Style.Color = System.Drawing.Color.Navy
-MyStyleRule.Style.Font.Name = "Arial"
-'Add the StyleRule to the Style Sheet
-Me.StyleSheet.AddRange(New Telerik.Reporting.Drawing.StyleRule() {MyStyleRule})
-````
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\StyleRuleCreationSnippets.vb region=CreateDescendantSelectorStyleRule}}

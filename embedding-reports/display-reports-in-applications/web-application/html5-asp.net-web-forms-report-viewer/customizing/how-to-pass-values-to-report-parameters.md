@@ -59,13 +59,7 @@ To give an example, we will use the Invoice report from our examples and will up
     	}
     }
     ```
-    ```VB
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-    	If Not Page.IsPostBack Then
-    		Me.reportViewer1.ReportSource.Parameters.Add("OrderNumber", Me.invoiceId.Value)
-    	End If
-    End Sub
-    ```
+    {{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
 
 1.  Add the required scripts and stylesheets:
 

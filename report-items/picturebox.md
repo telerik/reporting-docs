@@ -91,14 +91,7 @@ this.pictureBox1.Value = image1;
 Image image2 = Image.FromStream(imageStream);
 this.pictureBox2.Value = image2;
 ```
-```VB
-Imports System.Drawing
-Dim image1 As Image = Image.FromFile("C:\MyPictures\MyPicture.jpg")
-Me.PictureBox1.Value = image1
-Dim image2 As Image = Image.FromStream(imageStream)
-Me.PictureBox2.Value = image2
-```
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=BindPictureBoxBinaryImages}}
 While in design-time within the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox:
 
 ```C#
@@ -114,13 +107,7 @@ public static Image LoadImage(string imageLocation)
 	return Image.FromFile(absoluteLocation);
 }
 ```
-```VB
-Public Shared Function LoadImage(imageLocation As String) As Image
-	Dim absoluteLocation As String = "C:\" + imageLocation
-	Return Image.FromFile(absoluteLocation)
-End Function
-```
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=LoadImageFromPath}}
 ### Binding to Expressions, URIs, Base64, and SVG
 
 Alternatively, you can assign a string value to the `Value` property. This string value can be any of the following:
@@ -143,15 +130,7 @@ this.pictureBox4.Value = @"C:\MyPictures\MySVGImage.svg";//absolute file path to
 this.pictureBox5.Value = @".\images\MyPicture.png";//relative path
 this.pictureBox6.Value = "https://www.mysite.com/images/img1.gif";//absolute URL
 ```
-```VB
-Me.PictureBox1.Value = "=Fields.MyImageBinary" 'a binary data column
-Me.PictureBox2.Value = "=Fields.MyImageURI" 'a data column containing an URI
-Me.PictureBox3.Value = "C:\MyPictures\MyPicture.png" 'absolute file path to a PNG image
-Me.PictureBox4.Value = "C:\MyPictures\MySVGImage.svg" 'absolute file path to an SVG file
-Me.PictureBox5.Value = ".\images\MyPicture.png" 'relative path
-Me.PictureBox6.Value = "https://www.mysite.com/images/img1.gif" 'absolute URL
-```
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=BindPictureBoxExpressions}}
 ## Clipping, Rendering, and Positioning
 
 The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` and `ImageAlignment` properties.

@@ -25,10 +25,7 @@ You can create a custom component, inheriting a Telerik Reporting Data Source co
    ```C#
    public partial class Component1 : Telerik.Reporting.SqlDataSource
    ```
-   ```VB
-   Partial Class Component1
-   Inherits Telerik.Reporting.SqlDataSource
-   ```
+   {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ReuseDataSourceComponent}}
 
 1. **Save** and **Rebuild** the project.
 1. Right click the component class ->**View Designer**.

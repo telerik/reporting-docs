@@ -40,8 +40,5 @@ When the connection string is stored in the configuration file, you need to spec
 
 The `SqlDataSource` component retrieves data using a SQL statement defined through the `SelectCommand` property. If the data source component connects to a database that supports stored procedures, you can specify the name of a stored procedure in place of the SQL statement. You can create parameterized commands that include placeholders for values to be supplied at run time. The following example shows a typical parameterized SQL select command:
 
-```SQL
-SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
-```
-
+{{source=CodeSnippets\CS\SQL\SelectCustomersByCity.sql}}
 You can create parameter objects that specify where the command should get parameter values from at run time. You can also use expressions which values will be evaluated when processing the report or pass specific values programmatically.

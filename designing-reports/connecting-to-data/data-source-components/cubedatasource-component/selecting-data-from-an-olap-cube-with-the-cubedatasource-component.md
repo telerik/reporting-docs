@@ -16,13 +16,7 @@ You can specify an __MDX__ query for the `CubeDataSource` component to execute b
 
 The following example demonstrates an __MDX__ query that retrieves a result set consisting of product sales grouped by category and subcategory:
 
-````SQL
-select non empty { [Measures].[Sales Amount] } on columns,
-	non empty { [Product].[Category].[Category] *
-	[Product].[Subcategory].[Subcategory] } on rows
-from [Adventure Works]
-````
-
+{{source=CodeSnippets\CS\SQL\MdxSalesAmountByCategory.sql}}
 The next code sample illustrates how to set the `ConnectionString` and `SelectCommand` properties of a `CubeDataSource` component to retrieve the data from the above __MDX__ query:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=SelectCommandSnippet}}

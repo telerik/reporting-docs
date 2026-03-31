@@ -48,13 +48,7 @@ To create a query using the Query Builder in the Web Report Designer:
 
 4. In the **Select statement** section, use the following query:
 
-  ````SQL
-     SELECT
-          [Production].[ProductCategory].[ProductCategoryID],
-          [Production].[ProductCategory].[Name]
-          FROM [Production].[ProductCategory]
-  ````
-
+  {{source=CodeSnippets\CS\SQL\SelectProductCategoryIdAndName.sql}}
 5. (Optional) Apply any schema restrictions that apply to your chosen SQL Data Source.
 6. Click the **Query Builder** button.
 7. In the new window, build your SELECT statement:

@@ -16,18 +16,7 @@ To create cascading report parameters with applied filtering on report level fol
 
 1. Using the [DataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard), bind the report to SqlDataSource with query:
 
-   ```SQL
-   SELECT
-   	Production.Product.ProductNumber,
-   	Production.Product.Name AS ProductName,
-   	Production.Product.ProductSubcategoryID,
-   	Production.ProductSubcategory.Name AS SubcategoryName
-   FROM
-   	Production.Product
-   	INNER JOIN Production.ProductSubcategory
-   		ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectProductsWithSubcategoryName.sql}}
 1. Click the ellipses on the **Report.ReportParameters** property. This invokes the **ReportParameter Collection editor**.
 1. Add new Report Parameter.
 1. **Name** it **ProductCategoryID**.
@@ -35,14 +24,7 @@ To create cascading report parameters with applied filtering on report level fol
 1. Expand the **AvailableValues**.
 1. Set the **DataSource** using the **Data Source Wizard** to SqlDataSource with query:
 
-   ```SQL
-   SELECT
-   	ProductCategoryID,
-   	Name AS CategoryName
-   FROM
-   	Production.ProductCategory
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectProductCategories.sql}}
 1. It is not compulsory to set the **DataMember** property when the data source contains only one table.
 1. Set the **DisplayMember** to **= Fields.CategoryName** column.
 1. Set the **ValueMember** to **= Fields.ProductCategoryID**.
@@ -54,15 +36,7 @@ To create cascading report parameters with applied filtering on report level fol
 1. Expand the **AvailableValues**.
 1. Set the **DataSource** using the **Data Source Wizard** to SqlDataSource with query:
 
-   ```SQL
-   SELECT
-   	ProductCategoryID,
-   	ProductSubcategoryID,
-   	Name AS SubcategoryName
-   FROM
-   	Production.ProductSubcategory
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectSubcategoriesAll.sql}}
 1. It is not compulsory to set the **DataMember** property when the data source contains only one table.
 1. Set the **DisplayMember** to **= Fields.SubcategoryName** column.
 1. Set the **ValueMember** to **= Fields.ProductSubcategoryID**.

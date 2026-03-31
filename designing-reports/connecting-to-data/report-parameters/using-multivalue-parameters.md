@@ -29,19 +29,10 @@ The [Data Source Components](slug:telerikreporting/designing-reports/connecting-
 
 The example below shows the use of the IN keyword in the WHERE clause of a T-SQL statement. For more information about the IN keyword or the results returned by this query, see [IN (Transact-SQL)](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2005/ms177682(v=sql.90)).
 
-````SQL
-SELECT ProductID, Name, Color
-FROM Production.Product
-WHERE ProductID IN (@ProductID)
-````
-
+{{source=CodeSnippets\CS\SQL\SelectProductsByMultiValueParam.sql}}
 To test the approach in a report, add [SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) using this query. Create a new report parameter and set it as the value for the _@ProductID__ data source parameter. Set its `MultiValue` and `Visible` properties to True, and its `Type` property to Integer. Using the `AvailableValues` properties, configure the DataSource for the parameter to a new [SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with the following query:
 
-````SQL
-SELECT ProductID, Name
-FROM Production.Product
-````
-
+{{source=CodeSnippets\CS\SQL\SelectProductIdAndName.sql}}
 Set the `ValueMember` property to `= Fields.ProductID` and the `DisplayMember` property to `= Fields.Name`. Run the report and select different values for the report parameter in order to show a particular selection of data rows based on the selected report parameter values.
 
 >note The report engine rewrites queries for data sources that cannot process parameters as an array. The rewrite logic is triggered when a parameter is defined as multivalue and the database query uses an IN statement to specify the parameter.

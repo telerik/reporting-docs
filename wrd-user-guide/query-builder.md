@@ -3,7 +3,7 @@ title: Building SQL Queries
 page_title: Query Builder in the Web Report Designer
 description: "Learn more about the Query Builder in the Web Report Designer and how to use it to create basic queries easily in Telerik Reporting."
 slug: user-guide/query-builder
-tags: query,builder,web,report,designer
+tags: query, builder, web, report, designer
 tag: new
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
@@ -24,7 +24,7 @@ The Web Report Designer lets you build SQL queries in two ways:
 * By using a visual tool (where you click and select options)
 * By using a text tool (where you type the query)
 
-A query is just a set of instructions that specify what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with the most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
+A query is just a set of instructions that specifies what data you want from a database. By using a query, you connect your report only to the data you need. The Web Report Designer works with the most common data providers (like ADO.NET, ODBC, or OLEDB) as long as they can share details about the columns in the database using a feature called `GetSchema`.
 
 ![The Graphical SQL Query Builder Form of the Web Report Designer ><](images/QueryBuilderWRD.png)
 
@@ -44,34 +44,28 @@ To create a query using the Query Builder in the Web Report Designer:
 2. Add an [SQL Data Source item](slug:web-report-designer-user-guide-components-data-sources#sql-data-source).
 3. Connect to the desired SQL Data Source.
 
-   > To follow along the steps below, use the AdventureWorks database.
+   > To follow along with the steps below, use the AdventureWorks database.
 
 4. In the **Select statement** section, use the following query:
 
   {{source=CodeSnippets\CS\SQL\SelectProductCategoryIdAndName.sql}}
+  
 5. (Optional) Apply any schema restrictions that apply to your chosen SQL Data Source.
 6. Click the **Query Builder** button.
 7. In the new window, build your SELECT statement:
    
-   7.1. In the left pane (the DataBase view), select the `Name` field from the `ProductCategory` and the `ProductSubcategory` tables.
-   
-   7.2. In the **Add relationship** window, select the fields (`ProductCategoryID`) that link the two tables and click **Save**.
-   
-   7.3. Select the `Name` field from the `Product` table.
-   
-   7.4. Define the relationship between the `ProductSubcategory` and `Product` tables through the `ProductCategoryID` fields and then click **Save**.
-   
-   7.5. Select the `ListPrice` field from the `Product` table.
-   
-   7.6. Set the alias (display name) for each column.
-   
-   7.7. To reduce the number of records that will be displayed, add a filter. For example, products with list price between 100 and 500.
+   7.1. In the left pane (the DataBase view), select the `Name` field from the `ProductCategory` and the `ProductSubcategory` tables.   
+   7.2. In the **Add relationship** window, select the fields (`ProductCategoryID`) that link the two tables and click **Save**.   
+   7.3. Select the `Name` field from the `Product` table.   
+   7.4. Define the relationship between the `ProductSubcategory` and `Product` tables through the `ProductCategoryID` fields and then click **Save**.   
+   7.5. Select the `ListPrice` field from the `Product` table.   
+   7.6. Set the alias (display name) for each column.   
+   7.7. To reduce the number of records that will be displayed, add a filter. For example, products with a list price between 100 and 500.
 
 8. To preview the query and the resulting data, expand the **RESULT** section and click **Preview**.
-
 9. Click **Save** to confirm your query.
 
-The following video shows a step-by-step guide of the described scenario above:
+The following video shows a step-by-step guide to the scenario described above:
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GGRL1Bt1DxQ?si=xDGdlsVg9VOMwsGh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -176,7 +170,7 @@ The Query Builder keeps your current settings. But if you change the SQL query m
 
 ### Schema Restrictions
 
-The Web Report Designer’s Query Builder has an option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the needed information and makes loading faster.
+The Web Report Designer’s Query Builder has an option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the information needed and makes loading faster.
 
 ````
 null,Production,ProductCategory

@@ -58,7 +58,7 @@ Use the settings in the following table to configure the Telerik Reporting MCP s
 An active Telerik Reporting license is required to use the Telerik Reporting MCP server.
 
 - When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (**%AppData%\Telerik\telerik-license.txt** on Windows and **~/.telerik/telerik-license.txt** on Linux).
-- When using the .NET tooling, but your [license key file](slug:license-key) is not in the default directory, add the [license key file](slug:license-key) as an environment variable in the `mcp.json` file using one of the following options:
+- When using the .NET tooling, if your [license key file](slug:license-key) is not in the default directory, you can add the [license key file](slug:license-key) as an environment variable in the `mcp.json` file using one of the following options:
 
   ```JSON Path
   "env": {
@@ -71,7 +71,7 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
   }
   ```
 
-> tip Using a license file path is _recommended_ unless you're sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when necessary.
+> tip Using a license file path is _recommended_ unless you are sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when renewing.
 
 ## Visual Studio Configuration
 
@@ -162,7 +162,7 @@ The `.mcp.json` file can be created and updated by using the [Telerik Visual Stu
 
 ![An image showcasing the available MCP-related functionalities of the Telerik Reporting VS extension](images/mcp-images/vs-reporting-mcp-extension.png)
 
-The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds the Telerik server entry.
+The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds the Telerik Reporting server entry.
 
 The `Configure MCP Server for Solution` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) the `.mcp.json` file in the solution directory.
 
@@ -192,7 +192,7 @@ The basic setup in Visual Studio Code involves the following steps:
 1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
 1. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup).
 
-The settings below let you use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
+The settings below allow you to use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
 
 ```JSON .NET 10
 {

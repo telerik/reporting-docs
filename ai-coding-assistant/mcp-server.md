@@ -45,13 +45,13 @@ Next, make sure the configuration in your `mcp.json` is [correct](#configuring-m
 
 Use the settings in the following table to configure the Telerik Reporting MCP server in the [`mcp.json` file](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) of your code editor. Select the correct value based on your development environment.
 
-| Setting Name | .NET 10 Value                      | .NET 8/9 Value                                 |
-| ------------ | ---------------------------------- | ---------------------------------------------- |
-| Package Name | `"Telerik.Reporting.MCP"`          | `"Telerik.Reporting.MCP"`                      |
-| Type         | `"stdio"`                          | `"stdio"`                                      |
-| Command      | `"dnx"`                            | `"dotnet"`                                     |
-| Arguments    | `"Telerik.Reporting.MCP", "--yes"` | `"tool", "run", "telerik-reporting-assistant"` |
-| Server Name  | `"telerik-reporting-assistant"`    | `"telerik-reporting-assistant"`                |
+| Setting Name | .NET 10 Value                                | .NET 8/9 Value                                         |
+| ------------ | -------------------------------------------- | ------------------------------------------------------ |
+| Package Name | `"Telerik.Reporting.MCP"`                    | `"Telerik.Reporting.MCP"`                              |
+| Type         | `"stdio"`                                    | `"stdio"`                                              |
+| Command      | `"dnx"`                                      | `"dotnet"`                                             |
+| Arguments    | `["Telerik.Reporting.MCP", "--yes"]`         | `["tool", "run", "telerik-reporting-assistant"]`       |
+| Server Name  | `"telerik-reporting-assistant"`              | `"telerik-reporting-assistant"`                        |
 
 ### Configuring Your License
 

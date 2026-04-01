@@ -41,18 +41,7 @@ The report will display the daily changes in a financial marker and its final fo
 
 The sample report will use a pre-defined CsvDataSource with the following data:
 
-````CSV
-date,open,high,low,close
-03.07.2017,18.2,18.6,18.1,18.4
-04.07.2017,18.3,18.6,18.1,18.4
-05.07.2017,18.5,19,18.3,18.7
-06.07.2017,18.9,19,18.2,18.3
-07.07.2017,18.3,18.9,18.3,18.7
-10.07.2017,18.8,19.2,18.3,18.4
-11.07.2017,18.2,19.2,18.1,18.8
-12.07.2017,18.3,18.6,18.2,18.6
-13.07.2017,18.4,19.4,18.3,18.7
-````
+{{source=CodeSnippets\CS\CSV\OhlcStockPrices.csv}}
 
 The `date` field is a DateTime with the `dd.MM.yyyy` format. The rest of the fields are decimal.
 

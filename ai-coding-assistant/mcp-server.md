@@ -308,7 +308,7 @@ After clicking on the 'Respond' button, the MCP Server will display a drop-down 
 
 The following examples demonstrate useful prompts for the Telerik Reporting MCP Server:
 
-- "`#telerik-reporting-assistant` Add a Native Angular Report Viewer to my angular application."
+- "`#telerik-reporting-assistant` Add a Native Angular Report Viewer to my Angular application."
 - "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
 > tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.

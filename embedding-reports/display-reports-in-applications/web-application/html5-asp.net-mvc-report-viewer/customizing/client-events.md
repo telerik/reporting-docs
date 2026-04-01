@@ -34,17 +34,7 @@ To attach a client event handler you have to set the proper `ClientEvents` widge
 	}
 </script>
 ````
-````CSHTML
-@(Html.TelerikReporting().ReportViewer()
-	.ClientEvents(
-		events => events
-		.RenderingBegin("onRenderingBegin")
-		.RenderingEnd("onRenderingEnd")
-	)
-)
-````
-
-
+{{source=CodeSnippets\MvcCS\Views\Home\ClientEvents.cshtml region=ClientEventsExample}}
 The following table list the available client events:
 
 | __Event__ | __Description__ |

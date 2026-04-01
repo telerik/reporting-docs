@@ -31,18 +31,7 @@ The Blazor Native Report Viewer provides two data attributes, which hold informa
 
 The following example shows how to set a tooltip template. It is a direct copy of the default tooltip template:
 
-```RAZOR
-<ReportViewer
-	ServiceUrl="/api/reports"
-	...>
-	<TooltipTemplate>
-		<div class="trv-pages-area-kendo-tooltip">
-			<div class="trv-pages-area-kendo-tooltip-title">@context.DataAttributes["tooltipTitle"]</div>
-			<div class="trv-pages-area-kendo-tooltip-text">@context.DataAttributes["tooltipText"]</div>
-		</div>
-	</TooltipTemplate>
-</ReportViewer>
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerTooltipsCustomization.razor region=NativeViewerCustomTooltip}}
 
 > note There is a bug in the [Blazor Tooltip component](https://docs.telerik.com/blazor-ui/components/tooltip/overview) that's used in the viewer, which causes the tooltip not to be shown when hovering over adjacent elements.
 

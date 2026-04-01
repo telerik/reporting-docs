@@ -20,13 +20,8 @@ The HTML5 Report Viewer comes with an MVC wrapper that does the JavaScript confi
 
 In case all you need is a report viewer that is used to display various reports, you can have a simple model to create a strongly typed view - you need to use a [client-side report source](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers), like this ([`TypeReportSource`](/api/telerik.reporting.typereportsource) or [`UriReportSource`](/api/telerik.reporting.urireportsource)):
 
-````C#
-@model Telerik.Reporting.UriReportSource
-````
-````VB
-@ModelType Telerik.Reporting.UriReportSource
-````
-
+{{source=CodeSnippets\MvcCS\Views\Home\SimpleModelBinding.cshtml region=modelUriReportSource}}
+{{source=CodeSnippets\MvcVB\Views\Home\SimpleModelBinding.vbhtml region=modelUriReportSource}}
 
 Then you can use it directly when you are initializing the report viewer:
 

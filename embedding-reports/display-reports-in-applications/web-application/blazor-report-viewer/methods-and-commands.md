@@ -20,21 +20,4 @@ To call report viewer methods and execute commands, first get a reference to the
 
 For example, refresh and print of the current report can be triggered like this:
 
-```RAZOR
-<button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
-<button type="button" class="btn btn-light btn-sm" @onclick="Print">Print Report</button>
-
-<ReportViewer @ref="reportViewer1"
-
-@code {
-	ReportViewer reportViewer1;
-	async void RefreshReport()
-	{
-		await reportViewer1.RefreshReportAsync();
-	}
-	async void Print()
-	{
-		await reportViewer1.Commands.Print.ExecuteAsync();
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerMethodsAndCommands.razor region=BlazorViewerRefreshAndPrint}}

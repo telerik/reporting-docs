@@ -598,6 +598,10 @@ redirects:
     to: "/importing-reports/$1"
     type: Permanent
 
+  - from: "/ai-coding-assistant/mcp-server-as-a-nuget"
+    to: "/ai-coding-assistant/mcp-server"
+    type: Permanent
+
   # User Guide redirects
   - from: "/user-guide/user-guide-overview"
     to: "/wrd-user-guide/user-guide-overview"

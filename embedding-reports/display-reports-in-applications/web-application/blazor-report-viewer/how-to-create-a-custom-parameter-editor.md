@@ -86,21 +86,7 @@ The following example uses the **Dashboard** example report that we ship with th
 
 - Then in the Blazor Report Viewer Initialization:
 
-```RAZOR
-<ReportViewer @ref="reportViewer1"
-              ViewerId="rv1"
-              ServiceUrl="/api/reports"
-              ReportSource="@(new ReportSourceOptions
-                              {
-                                  Report = "Dashboard.trdp",
-                              })"
-              ParameterEditors="@(new ParameterEditor[] {
-                new ParameterEditor() {
-                    CreateEditor = "trvParameterEditors.createEditorFunction",
-                    Match = "trvParameterEditors.matchFunction" }
-                })"
-              />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerCustomParameterEditor.razor region=BlazorViewerParameterEditors}}
 
 ## See Also
 

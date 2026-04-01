@@ -42,34 +42,7 @@ All commands, except for the `Export` command, require a single argument for thi
 
 For example, the `Refresh` and `Export` commands of the current report can be triggered like this:
 
-```RAZOR
-<button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
-<button type="button" class="btn btn-light btn-sm" @onclick="Export">Export Report to PDF</button>
-<button type="button" class="btn btn-light btn-sm" @onclick="UpdateToken">Update Authentication Token</button>
-
-<ReportViewer
-	ServiceUrl="/api/reports"
-	@ref="@ViewerInstance"
-</ReportViewer>
-
-@code {
-	public ReportViewer ViewerInstance { get; set; }
-
-	void RefreshReport()
-	{
-		ViewerInstance.ExecuteCommand("Refresh");
-	}
-	void Export()
-	{
-		ViewerInstance.ExecuteCommand("Export", "PDF");
-	}
-
-	void SetToken()
-	{
-		ViewerInstance.ExecuteCommand("SetAuthenticationToken", "SAMPLE_TOKEN");
-	}
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerCommands.razor region=NativeViewerExecuteCommand}}
 
 ## Commands List
 

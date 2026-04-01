@@ -37,12 +37,12 @@ Another common problem is related to the lazy loading feature of the  [ADO.NET E
 
 The above expression relies upon the built-in lazy loading mechanism to obtain the `ProductSubcategory` entity for the current `Product` entity via the corresponding relation property, and then the `ProductCategory` entity for the current `ProductSubcategory` entity. While convenient, lazy loading requires additional round-trips to the database for the entities that are not present in memory. If this happens frequently it might significantly impact the performance of the report. To overcome this you can try performing eager loading of the entities instead. For example, the following statement uses the Include method to preload the `ProductSubcategory` and the `ProductCategory` entities while retrieving the `Product` entities:
 
-````C#
+```C#
 this.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList();
-````
-````VB
+```
+```VB.NET
 Me.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList()
-````
+```
 
 However in certain scenarios eager loading might be costly too. Given the previous example, we materialize all `ProductSubcategory` and `ProductCategory` entities only to show the category name of each product. This means a lot of unnecessary data is downloaded from database just to be discarded later. The most flexible and efficient method for retrieving data from the __Entity Data Model__ is to execute a custom query against the entities. The following sample method uses a __LINQ__ query to obtain only the necessary data for the report and then packs it into a collection of __POCOs:__
 
@@ -53,4 +53,3 @@ The sample code that binds the EntityDataSource component to that method is show
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=LinqBindingSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=LinqBindingSnippet}}
-

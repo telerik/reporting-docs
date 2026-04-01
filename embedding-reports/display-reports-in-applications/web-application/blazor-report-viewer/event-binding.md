@@ -22,13 +22,7 @@ The event handler functions can be implemented inside the **wwwroot/index.html**
 
 For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events of the viewer:
 
-```RAZOR
-<ReportViewer
-	ClientEvents="@(new ClientEventsOptions() {
-		ExportBegin = "trvEventHandlers.exportBegin",
-		ExportEnd = "trvEventHandlers.exportEnd"
-	})" />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerEventBinding.razor region=BlazorViewerClientEvents}}
 
 Then, we can create the event handler functions in the **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server):
 

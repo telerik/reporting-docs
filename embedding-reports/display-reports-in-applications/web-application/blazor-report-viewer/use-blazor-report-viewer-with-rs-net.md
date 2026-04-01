@@ -69,27 +69,7 @@ The Report Server for .NET provides two approaches for authenticating from the T
 
 Use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`:
 
-```RAZOR
-@page "/"
-@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-@* @rendermode InteractiveServer *@
-@using Telerik.ReportViewer.Blazor
-<style>
-	#rv1 {
-		position: relative;
-		width: 1200px;
-		height: 600px;
-	}
-</style>
-<ReportViewer ViewerId="rv1"
-			  ReportServer="@(new ReportServerOptions {  Url = "https://yourReportServerUrl:port", GetPersonalAccessToken="trvCallbacks.getPersonalAccessToken" })"
-			  ReportSource="@(new ReportSourceOptions()
-							  {
-									Report = "Published/Dashboard"
-							  })"
-			  ScaleMode="@(ScaleMode.Specific)"
-			  Scale="1.0" />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerTokenAuth.razor region=BlazorViewerTokenAuth}}
 
 > caution The `serviceUrl` option shouldn't be present, or the viewer would default to no authentication scheme utilizing the Report Server for .NET as a regular Reporting REST Service.
 
@@ -122,27 +102,7 @@ app.MapGet("/rs-token", (HttpContext context) =>
 
 If you prefer to use hardcoded credentials, use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`.
 
-```RAZOR
-@page "/"
-@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-@* @rendermode InteractiveServer *@
-@using Telerik.ReportViewer.Blazor
-<style>
-	#rv1 {
-		position: relative;
-		width: 1200px;
-		height: 600px;
-	}
-</style>
-<ReportViewer ViewerId="rv1"
-			  ReportServer="@(new ReportServerOptions {  Url = "https://yourReportServerUrl:port", Username = "demouser", Password = "demopass" })"
-			  ReportSource="@(new ReportSourceOptions()
-							  {
-									Report = "Published/Dashboard"
-							  })"
-			  ScaleMode="@(ScaleMode.Specific)"
-			  Scale="1.0" />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerReportServerAuth.razor region=BlazorViewerUsernamePasswordAuth}}
 
 > caution The **Guest User** may connect to the Report Server for .NET only with a **Token**. It doesn't have a password and cannot connect to the Report Server for .NET with Null credentials, as the Report Server for .NET Framework 4.6.2.
 

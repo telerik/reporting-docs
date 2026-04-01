@@ -118,9 +118,9 @@ The steps below describe the sample procedure for configuring the Telerik Report
    {
    	"servers": {
    		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "dnx",
-   		"args": ["Telerik.Reporting.MCP", "--yes"],
+	   		"type": "stdio",
+	   		"command": "dnx",
+	   		"args": ["Telerik.Reporting.MCP", "--yes"]
    		}
    	}
    }
@@ -129,9 +129,9 @@ The steps below describe the sample procedure for configuring the Telerik Report
    {
    	"servers": {
    		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "dotnet",
-   		"args": ["tool", "run", "telerik-reporting-assistant"],
+	   		"type": "stdio",
+	   		"command": "dotnet",
+	   		"args": ["tool", "run", "telerik-reporting-assistant"]
    		}
    	}
    }
@@ -198,9 +198,9 @@ The settings below let you use the `#telerik-reporting-assistant` handle to call
 {
 	"servers": {
 		"telerik-reporting-assistant": {
-		"type": "stdio",
-		"command": "dnx",
-		"args": ["Telerik.Reporting.MCP", "--yes"],
+			"type": "stdio",
+			"command": "dnx",
+			"args": ["Telerik.Reporting.MCP", "--yes"]
 		}
 	}
 }
@@ -209,9 +209,9 @@ The settings below let you use the `#telerik-reporting-assistant` handle to call
 {
 	"servers": {
 		"telerik-reporting-assistant": {
-		"type": "stdio",
-		"command": "dotnet",
-		"args": ["tool", "run", "telerik-reporting-assistant"],
+			"type": "stdio",
+			"command": "dotnet",
+			"args": ["tool", "run", "telerik-reporting-assistant"]
 		}
 	}
 }
@@ -239,9 +239,9 @@ Create a `.cursor/mcp.json` file in your workspace root (or user folder for glob
 {
 "mcpServers": {
 	"telerik-reporting-assistant": {
-		"type": "stdio",
-		"command": "dnx",
-		"args": ["Telerik.Reporting.MCP", "--yes"],
+			"type": "stdio",
+			"command": "dnx",
+			"args": ["Telerik.Reporting.MCP", "--yes"]
 		}
 	}
 }
@@ -250,9 +250,9 @@ Create a `.cursor/mcp.json` file in your workspace root (or user folder for glob
 {
 	"mcpServers": {
 		"telerik-reporting-assistant": {
-		"type": "stdio",
-		"command": "dotnet",
-		"args": ["tool", "run", "telerik-reporting-assistant"],
+			"type": "stdio",
+			"command": "dotnet",
+			"args": ["tool", "run", "telerik-reporting-assistant"]
 		}
 	}
 }

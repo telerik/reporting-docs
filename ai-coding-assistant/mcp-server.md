@@ -36,7 +36,7 @@ Depending on your environment, you can install the Telerik Reporting MCP server 
 dnx Telerik.Reporting.MCP
 ```
 ```bash .NET 8/9
-dotnet tool install Telerik.Reporting.MCP
+dotnet tool install -g Telerik.Reporting.MCP
 ```
 
 Next, make sure the configuration in your `mcp.json` is [correct](#configuring-mcp-json), and then [add your Telerik license](#configuring-your-license).

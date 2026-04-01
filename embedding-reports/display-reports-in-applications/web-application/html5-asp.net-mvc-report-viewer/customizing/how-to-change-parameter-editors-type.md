@@ -18,16 +18,7 @@ The parameters editors types are defined through the Parameters method when crea
 
 The following example illustrates how to set the Parameters method to the Telerik Report Viewer widget.
 
-```CSHTML
-@(Html.TelerikReporting().ReportViewer()
-    .Parameters(new Parameters {
-        Editors = new Editors {
-            SingleSelect = EditorTypes.ComboBox,
-            MultiSelect = EditorTypes.ComboBox
-            }
-        }
-    ))
-```
+{{source=CodeSnippets\MvcCS\Views\Home\ParameterEditorsType.cshtml region=ParameterEditorsTypeExample}}
 
 > The `.Parameters` method is optional. If not used, the Telerik Report Viewer will fall back to the [default values](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
 

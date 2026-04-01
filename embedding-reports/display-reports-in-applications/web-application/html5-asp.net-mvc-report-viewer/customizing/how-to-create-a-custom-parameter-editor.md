@@ -67,16 +67,7 @@ function createSingleSelectEditor(placeholder, options) {
     };
 }
 ````
-````CSHTML
-@(Html.TelerikReporting().ReportViewer()
-     .Id("reportViewer1")
-     .ParameterEditors(
-                    editors => editors
-                     .SingleSelectEditor("createSingleSelectEditor")
-         )
-)
-````
-
+{{source=CodeSnippets\MvcCS\Views\Home\CustomParameterEditors.cshtml region=SingleSelectEditorExample}}
 
 If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor. Each custom editor requires two JavaScript functions provided as attributes: `MatchFunction` and `CreateEditorFunction`.
 
@@ -138,20 +129,7 @@ function createCustomEditor(placeholder, options) {
 
 Passing the parameter editor to the viewer:
 
-````CSHTML
-@(Html.TelerikReporting().ReportViewer()
-     .Id("reportViewer1")
-     .ParameterEditors(
-                    editors => editors
-                     .CustomEditors(new CustomParameterEditor
-                        {
-                            MatchFunction = "customMatch",
-                            CreateEditorFunction = "createCustomEditor"
-                        })
-         )
-)
-````
-
+{{source=CodeSnippets\MvcCS\Views\Home\CustomParameterEditors.cshtml region=CustomEditorExample}}
 
 > You can use any other custom UI covering the requirements of the `createEditor` method.
 

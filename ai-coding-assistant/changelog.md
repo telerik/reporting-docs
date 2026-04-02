@@ -14,7 +14,7 @@ Learn about the latest changes, improvements, and bug fixes in the Telerik Repor
 
 ## January, 2026
 
-- **NuGet distribution** - The MCP server is now distributed via NuGet instead of npm.
+- **NuGet distribution** - The MCP server is now distributed via NuGet. The `npm` distribution channel is no longer supported.
 - **Automatic License Recognition** - The MCP server automatically detects your Telerik license when configured globally, simplifying the setup process.
 
 ## November, 2025

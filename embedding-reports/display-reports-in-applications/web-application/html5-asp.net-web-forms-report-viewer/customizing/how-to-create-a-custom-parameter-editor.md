@@ -67,7 +67,7 @@ function createSingleSelectEditor(placeholder, options) {
 	};
 }
 ```
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerMarkup.html region=WebFormsViewerSingleSelectEditor}}
+{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=WebFormsViewerSingleSelectEditor}}
 
 The viewer is using a special Kendo subset that contains only the required widgets and the [DropDownList](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget is not part of the subset, additionally the viewer adds jQuery but this happens late in the viewer initialization. Thus, add the following tags to the web page head element as shown in the following code snippet:
 
@@ -132,6 +132,6 @@ function createCustomEditor(placeholder, options) {
 
 Passing the parameter editor to the viewer:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerMarkup.html region=WebFormsViewerCustomEditorRegistration}}
+{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=WebFormsViewerCustomEditorRegistration}}
 
 > You can use any other custom UI covering the requirements of the _CreateEditorFunction_ method.

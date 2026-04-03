@@ -101,13 +101,7 @@ The user account that will authenticate with the Report Server may be any User, 
 
 1. In the HTML template of the component, define the `<reporting-angular-viewer>` element, and pass the defined properties to their corresponding properties of the Native Angular Report Viewer:
 
-   ```HTML
-   <reporting-angular-viewer
-   	serviceType="reportServer"
-   	[reportServer]="reportServer"
-   	[reportSource]="reportSource">
-   </reporting-angular-viewer>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerUseWithReportServerNet.html region=NativeAngularViewerSteps}}
 
 1. Run the application:
 

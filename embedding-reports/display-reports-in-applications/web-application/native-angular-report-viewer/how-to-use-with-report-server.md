@@ -58,22 +58,7 @@ The following list describes the prerequisites for this tutorial:
 
 1. Use the report viewer selector - `reporting-angular-viewer` in the component's template:
 
-   ```HTML
-   <reporting-angular-viewer
-   	serviceType="reportServer"
-   	[reportServer]="{
-   		url:'http://localhost:83/',
-   		username:'username',
-   		password: 'password'
-   	}"
-   	[reportSource]="{
-   		report: 'Samples/Invoice',
-   		parameters: {}
-   	}"
-   	viewMode="interactive"
-   	[keepClientAlive]="true">
-   </reporting-angular-viewer>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerUseWithReportServer.html region=NativeAngularViewerSteps2}}
 
 1. Install the Angular `localize` package - [Add the localize package](https://angular.io/guide/i18n-common-add-package#add-the-localize-package). This is required for the report viewer's localization functionality
 

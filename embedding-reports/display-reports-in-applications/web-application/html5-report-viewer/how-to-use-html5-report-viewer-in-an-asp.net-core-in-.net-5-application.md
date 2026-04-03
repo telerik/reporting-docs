@@ -52,52 +52,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
     By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
 
-    ```HTML
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-      <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET {{site.mindotnetversion}}+</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-      <link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
-      <script src="/api/reports/resources/js/telerikReportViewer"> </script>
-
-      <style>
-    	  #reportViewer1 {
-    		  position: absolute;
-    		  inset: 5px;
-    		  overflow: hidden;
-    		  font-family: Verdana, Arial;
-    	  }
-      </style>
-    </head>
-    <body>
-      <div id="reportViewer1">
-    	  loading...
-      </div>
-      <script>
-    	  $(document).ready(function () {
-    		  $("#reportViewer1")
-    		   .telerik_ReportViewer({
-    				  serviceUrl: "api/reports/",
-    				  reportSource: {
-    					  report: "Barcodes Report.trdp",
-    					  parameters: {}
-    				  },
-    				  viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
-    				  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
-    				  scale: 1.0,
-    				  enableAccessibility: false,
-    				  sendEmail: { enabled: true }
-    			  });
-    	  	});
-      </script>
-    </body>
-    </html>
-    ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerUseHtml5ReportViewerInAnAspnetCoreInNet5Application.html region=Html5ViewerManualConfigurationOfTheHtml5ReportViewer}}
 
 1.  Set the _launchSettings.json_ `launchUrl` to the new HTML page.
 1.  Finally, run the project to see the report.

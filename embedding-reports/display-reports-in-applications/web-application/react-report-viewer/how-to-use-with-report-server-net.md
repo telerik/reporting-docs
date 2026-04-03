@@ -36,9 +36,7 @@ The article explains how to set up the HTML5 Report Viewer to work with the Tele
 
 1. Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _public/index.html_:
 
-   ```HTML
-   <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
 
    > note To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
 

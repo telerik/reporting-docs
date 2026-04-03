@@ -158,37 +158,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Add a new HTML Page for the Web Report Designer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file `index.html`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-   ```HTML
-   <!DOCTYPE html>
-   <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-   	<title>Telerik Web Report Designer</title>
-   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-   </head>
-   <body>
-   	<div id="webReportDesigner">
-   		loading...
-   	</div>
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   	<script src="https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.kendo.min.js"></script>
-   	<script src="/api/reportdesigner/resources/js/telerikReportViewer/"></script>
-   	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
-   	<script type="text/javascript">
-   		$(document).ready(function () {
-   			$("#webReportDesigner").telerik_WebReportDesigner({
-   				toolboxArea: {
-   					layout: "list" // Change to "grid" to display the contents of the Components area in a flow grid layout.
-   				},
-   				serviceUrl: "/api/reportdesigner",
-   				report: "Barcodes Report.trdp"
-   			}).data("telerik_WebDesigner");
-   		});
-   	</script>
-   </body>
-   </html>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInDotnet.html region=WebReportDesignerAddingTheWebReportDesigner}}
 
 1. To set up the `index.html` as a startup page check [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the _launchUrl_ to _index.html_ in `launchSettings.json`.
 1. Finally, run the project to preview the web designer.

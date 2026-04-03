@@ -59,7 +59,7 @@ In the .NET Framework version, it can hold binding redirect to the latest versio
 	<dependentAssembly>
 		<!-- Required for interoperability with older versions of Telerik Reporting -->
 		<assemblyIdentity name="Telerik.Reporting" culture="neutral" publicKeyToken="a9d7983dfcc261be"/>
-		<bindingRedirect oldVersion="0.0.0.0-{{buildversion}}" newVersion="{{buildversion}}"/>
+		<bindingRedirect oldVersion="0.0.0.0-{{site.buildversion}}" newVersion="{{site.buildversion}}"/>
 	</dependentAssembly>
 </assemblyBinding>
 </runtime>
@@ -99,7 +99,7 @@ The following code example shows the default `Telerik.ReportDesigner.exe.config`
 			<dependentAssembly>
 				<!-- Required for interoperability with older versions of Telerik Reporting -->
 				<assemblyIdentity name="Telerik.Reporting" culture="neutral" publicKeyToken="a9d7983dfcc261be"/>
-				<bindingRedirect oldVersion="0.0.0.0-{{buildversion}}" newVersion="{{buildversion}}"/>
+				<bindingRedirect oldVersion="0.0.0.0-{{site.buildversion}}" newVersion="{{site.buildversion}}"/>
 			</dependentAssembly>
 		</assemblyBinding>
 	</runtime>

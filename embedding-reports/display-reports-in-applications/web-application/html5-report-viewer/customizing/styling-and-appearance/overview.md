@@ -25,7 +25,7 @@ For reference, you can use the templates located in **%programfiles(x86)%\Progre
 	$("#reportViewer1")
 	.telerik_ReportViewer({
 		serviceUrl: "/api/reports/",
-		templateUrl: "/custom-templates-directory/templates/telerikReportViewerTemplate-{{buildversion}}.html"
+		templateUrl: "/custom-templates-directory/templates/telerikReportViewerTemplate-{{site.buildversion}}.html"
 	});
 </script>
 ```

@@ -18,9 +18,7 @@ This topic explains how to update the report parameters with values passed from 
 
 1. Add the custom UI in your application. For example:
 
-   ```HTML
-   <button (click)="onButtonClick(value)">Update parameter value</button>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerPassValuesToReportParameters.html region=AngularViewerPassValuesToReportParametersFromTheApplicationUi}}
 
 1. Declare the variable for the viewer and update the viewer's report source with a new parameter value:
 

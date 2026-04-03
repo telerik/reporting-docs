@@ -18,7 +18,7 @@ The parameters editors types are defined through the Parameters element when cre
 
 The following example illustrates how to set the Parameters method to the Telerik Report Viewer widget.
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerMarkup.html region=WebFormsViewerParameterEditorsType}}
+{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=WebFormsViewerParameterEditorsType}}
 
 > The Telerik Report Viewer `Parameters` element is optional. If not used, the Telerik Report Viewer will fall back to the default values.
 

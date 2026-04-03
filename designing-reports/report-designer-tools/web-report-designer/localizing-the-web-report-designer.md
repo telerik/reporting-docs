@@ -34,13 +34,7 @@ This article elaborates on how to localize the strings used and displayed by the
 
    On the page containing the Web Report Designer and its initialization script, add in the following snippet of JavaScript to load in the strings.
 
-   ```HTML
-   <script type="text/javascript">
-   	import("/Scripts/WebReportDesignerStringsBase-{{site.buildversion}}.js").then((result) => {
-   		window.telerikWebDesignerResources = new result.WebReportDesignerStringsBase();
-   	});
-   </script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerLocalizingTheWebReportDesigner.html region=WebReportDesignerSetup}}
 
    > note The localization file must be loaded on the page after the **jQuery** and **Web Report Designer** scripts have been loaded.
 

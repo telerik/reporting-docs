@@ -42,22 +42,15 @@ After creating the Blazor Report Viewer, we need some manual adjustments to make
 
 1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-   ```HTML
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="https://yourReportServerUrl:port/api/reports/resources/js/telerikReportViewer"></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewerWithRsNet.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually3}}
 
 1. Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the **@** symbol as **@@**:
 
-   ```HTML
-   <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
 
 1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-   ```HTML
-   <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually2}}
 
 ## Connect to the Report Server for .NET instance
 

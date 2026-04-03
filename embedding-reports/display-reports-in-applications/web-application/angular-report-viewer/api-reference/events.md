@@ -40,17 +40,7 @@ table th:nth-of-type(2) {
 
 1. In the `.HTML` component file, assing the handler to the corresponding event:
 
-   ```HTML
-   <tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59657/api/reports/'"
-   	[reportSource]="{
-   		report: 'Report1.trdp',
-   		parameters: {}
-   	}"
-   	[ready]="ready"
-   	[viewerToolTipOpening]="viewerToolTipOpening"
-   	[enableAccessibility]="false">
-   </tr-viewer>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerEvents.html region=AngularViewerHowToUseTheEvents}}
 
 Below is a list of all available report viewer events.
 

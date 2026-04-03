@@ -74,6 +74,7 @@ meta:
   wrd-user-guide:
     position: 12
     title: "Web Designer - User Guide"
+    pdfHidden: true
   ide-integration:
     position: 15
     title: "IDE Integration"

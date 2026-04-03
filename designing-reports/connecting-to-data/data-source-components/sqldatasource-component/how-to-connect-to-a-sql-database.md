@@ -80,10 +80,7 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
 
    In this tutorial we will use the **Select Statement** option. Type the following SQL query:
 
-   ```SQL
-   SELECT * FROM [HumanResources].[Department] WHERE [HumanResources].[Department].[DepartmentID]=@ID
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectDepartmentById.sql}}
    > If the SQL query returns more than one set of data, only the first result will be used. Test running the SQL query on the SQL server database to verify the syntax.
 
 1. If the entered SQL query contains SQL parameters, recognizable by the.NET data provider, clicking the Next button will navigate you to the **Configure data source parameters** step. You should see listed the recognized SQL parameters and their DbType in a grid. In the Value column you can specify static value, report parameter, field, or other expression which once evaluated will be passed to the SQL query.

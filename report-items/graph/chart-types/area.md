@@ -33,15 +33,7 @@ In this section, you will learn how to create an Area Chart with the Telerik Rep
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
-````SQL
-SELECT
-	[Sales].[SalesOrderHeader].[OrderDate],
-	[Sales].[SalesOrderDetail].[LineTotal]
-FROM
-	[Sales].[SalesOrderDetail] INNER JOIN
-	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
-````
-
+{{source=CodeSnippets\CS\SQL\SelectSalesOrdersByDate.sql}}
 To create the Stacked Area chart by using the Area Chart Wizard: 
 
 1. Add a Stacked Area chart:

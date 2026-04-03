@@ -26,9 +26,7 @@ All these elements of the HTML5 Report Viewer are provided through the __trv-rep
 
 While loading the template content, the widget looks for elements marked with the data-role attribute and maps its value to a [jQuery plugin function](https://plugins.jquery.com/) that provides the element behavior. For example:
 
-````HTML
-<div class="trv-parameters-area k-widget" data-role="telerik_ReportViewer_ParametersArea"> … </div>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerTemplates.html region=Html5ViewerTemplateDataRole}}
 
 is mapped to:
 

@@ -32,75 +32,11 @@ The following example uses the **Dashboard** example report that we ship with th
 
 - In the shared `HTML`/`CSHTML` file:
 
-```HTML
-<!--Kendo all is needed for the DropDownList widget itself-->
-    <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
-
-    <script>
-        window.trvParameterEditors = {
-            matchFunction: function (parameter) {
-                return Boolean(parameter.availableValues) && !parameter.multivalue;
-            },
-
-            createEditorFunction: function createEditorFunction(placeholder, options) {
-                let dropDownListElement = $(placeholder).html('<input style="width: 50px;" />');
-                let valueChangedCallback = options.parameterChanged;
-                let parameter;
-
-                function onChange(e) {
-                    var years = $(dropDownListElement).data("kendoDropDownList");
-                    var val = years.value();
-                    valueChangedCallback(parameter, val);
-                }
-
-                return {
-                    beginEdit: function (param) {
-                    parameter = param;
-
-                    $(dropDownListElement).kendoDropDownList({
-                        dataSource: param.availableValues.map((el) => el.value),
-                        change: onChange
-                    });
-
-                    dropDownList = $(dropDownListElement).data("kendoDropDownList");
-                },
-                addAccessibility: function (param) {
-                    if (dropDownList) {
-                        dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
-                    }
-                },
-                setAccessibilityErrorState: function (param) {
-                    if (dropDownList) {
-                        if (param.Error) {
-                            dropDownList.wrapper.attr("aria-invalid", "true");
-                        } else {
-                            dropDownList.wrapper.removeAttr("aria-invalid");
-                        }
-                    }
-                }
-            };
-        }
-    }
-</script>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerScripts.html region=BlazorViewerCustomParameterEditor}}
 
 - Then in the Blazor Report Viewer Initialization:
 
-```RAZOR
-<ReportViewer @ref="reportViewer1"
-              ViewerId="rv1"
-              ServiceUrl="/api/reports"
-              ReportSource="@(new ReportSourceOptions
-                              {
-                                  Report = "Dashboard.trdp",
-                              })"
-              ParameterEditors="@(new ParameterEditor[] {
-                new ParameterEditor() {
-                    CreateEditor = "trvParameterEditors.createEditorFunction",
-                    Match = "trvParameterEditors.matchFunction" }
-                })"
-              />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerCustomParameterEditor.razor region=BlazorViewerParameterEditors}}
 
 ## See Also
 

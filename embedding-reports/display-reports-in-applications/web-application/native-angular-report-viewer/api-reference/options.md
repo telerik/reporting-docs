@@ -34,15 +34,7 @@ Below is the list of all options available during initialization for the Native 
 
 The options can be set from the `.HTML`/`.TS` component file or both(combined):
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="reportSource"
-	[serviceUrl]="serviceUrl"
-	viewMode="interactive"
-	[keepClientAlive]="true">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerOptions.html region=NativeAngularViewerOptionsInit}}
 ````TypeScript
 import { Component, ViewChild  } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'

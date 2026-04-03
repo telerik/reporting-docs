@@ -34,66 +34,7 @@ A custom editor can be set for one or more parameter templates. Each parameter t
 
 The following examples use the default editors that we ship the report viewer with.
 
-```RAZOR
-<ReportViewer
-	ServiceUrl="/api/reports"
-	@bind-ReportSource="@ReportSource"
-	ServiceType="@ReportViewerServiceType.REST"
-	Height="800px"
-	Width="100%">
-	<ParameterIntegerTemplate>
-		<TelerikNumericTextBox Value="@((long)context.Value)"
-							ValueChanged="@((long value) => context.Value = value)">
-		</TelerikNumericTextBox>
-	</ParameterIntegerTemplate>
-	<ParameterDoubleTemplate>
-		<TelerikNumericTextBox Value="@((double)context.Value)"
-							ValueChanged="@((double value) => context.Value = value)">
-		</TelerikNumericTextBox>
-	</ParameterDoubleTemplate>
-	<ParameterDateTimeTemplate>
-		<TelerikDatePicker Value="@((DateTime)context.Value)"
-						ValueChanged="@((DateTime value) => context.Value = value)">
-		</TelerikDatePicker>
-	</ParameterDateTimeTemplate>
-	<ParameterBooleanTemplate>
-		<TelerikCheckBox Value="@((bool)context.Value)"
-						ValueChanged="@((bool value) => context.Value = value)">
-		</TelerikCheckBox>
-	</ParameterBooleanTemplate>
-	<ParameterStringTemplate>
-		<TelerikTextBox Value="@((string)context.Value)"
-						ValueChanged="@((string value) => context.Value = value)">
-		</TelerikTextBox>
-	</ParameterStringTemplate>
-	<ParameterSingleSelectTemplate>
-		<TelerikDropDownList Data="@context.Parameter.AvailableValues"
-							Value="@context.Value"
-							DefaultText=""
-							TItem="ReportParameterValue"
-							TValue="object"
-							TextField="Name"
-							ValueField="Value"
-							OnChange="@((object value) => context.Value = value)">
-		</TelerikDropDownList>
-	</ParameterSingleSelectTemplate>
-	<ParameterMultiSelectTemplate>
-		@{ var selectedValue = ((IEnumerable)context.Parameter.Value).Cast<object>().ToList(); }
-
-		<TelerikMultiSelect Data="@context.Parameter.AvailableValues"
-							Value="@selectedValue"
-							Filterable="true"
-							FilterOperator="@StringFilterOperator.Contains"
-							TItem="ReportParameterValue"
-							TValue="object"
-							TextField="Name"
-							ValueField="Value"
-							ClearButton="false"
-							OnChange="@((object value) => context.Value = value)">
-		</TelerikMultiSelect>
-	</ParameterMultiSelectTemplate>
-</ReportViewer>
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerCustomParameterEditors.razor region=NativeViewerDefaultParameterTemplates}}
 
 > note The example serves to give example for each parameter template, since these are the default editors that we already ship with, there is no need to implement this.
 
@@ -101,60 +42,7 @@ The following examples use the default editors that we ship the report viewer wi
 
 Let's try to use a widget that the Native Blazor Report Viewer is not able to use out of the box. For this example, we will use the Telerik Blazor UI's [`ListView`](https://demos.telerik.com/blazor-ui/listview/overview) widget. The code is as follows:
 
-```RAZOR
-<ReportViewer
-	ServiceUrl="/api/reports"
-	@bind-ReportSource="@ReportSource"
-	ServiceType="@ReportViewerServiceType.REST"
-	Height="800px"
-	Width="100%">
-	<ParameterSingleSelectTemplate>
-		<TelerikListView Data="@context.Parameter.AvailableValues">
-			<Template Context="listViewContext">
-				@{
-					var isSelected = context.Value?.Equals(listViewContext.Value) ?? false;
-					var className = (isSelected ? "k-selected" : string.Empty) + " k-list-item";
-				}
-				<div class="@className" @onclick="@(()=> context.Value = listViewContext.Value)">@listViewContext.Name</div>
-			</Template>
-		</TelerikListView>
-	</ParameterSingleSelectTemplate>
-	<ParameterMultiSelectTemplate>
-		@{
-			var selectedValue = ((IEnumerable)context.Parameter.Value)?.Cast<object>()?.ToList();
-		}
-		<TelerikListView Data="@context.Parameter.AvailableValues">
-			<Template Context="listViewContext">
-				@{
-					var isSelected = selectedValue?.Contains(listViewContext.Value) ?? false;
-					var className = (isSelected ? "k-selected" : string.Empty) + " k-list-item";
-				}
-				<div class="@className" @onclick="@(()=> MultiSelectParameterTemplateItemClick(context, listViewContext.Value))">@listViewContext.Name</div>
-			</Template>
-		</TelerikListView>
-	</ParameterMultiSelectTemplate>
-</ReportViewer>
-
-@code {
-	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Dashboard.trdp", new Dictionary<string, object>{});
-
-	void MultiSelectParameterTemplateItemClick(ReportParameterContext reportParameterContext, object reportParameterValue)
-	{
-		var selectedValue = ((IEnumerable)reportParameterContext.Parameter.Value).Cast<object>().ToList();
-
-		if (selectedValue.Contains(reportParameterValue))
-		{
-			selectedValue.Remove(reportParameterValue);
-		}
-		else
-		{
-			selectedValue.Add(reportParameterValue);
-		}
-
-		reportParameterContext.Value = selectedValue;
-	}
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerCustomParameterEditors.razor region=NativeViewerListViewParameterEditor}}
 
 In this example, we set the `ListView` widget to be used for both the `ParameterSingleSelectTemplate` and `ParameterMultiSelectTemplate` templates which means that all report parameters with available values will be rendered using the `ListView` widget, regardless of the type of the report parameter(string, DateTime, etc.)
 

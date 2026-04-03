@@ -61,21 +61,7 @@ To give an example we will use the Invoice report from our local examples and wi
     		new { id = "invoiceId", title = "Select the Invoice ID" })
     </div>
     ```
-    ```VBHTML
-    @ModelType MyMVCProject.InvoiceViewModel
-
-    <div id="invoiceIdSelector">
-    	@Html.LabelFor( Function(m) m.SelectedInvoiceId)
-    	@Html.DropDownListFor(
-    		Function(m) m.SelectedInvoiceId,
-    		Model.InvoiceItems,
-    		New With {
-    			Key.id = "invoiceId",
-    			Key.title = "Select the Invoice ID"
-    			}
-    	)
-    </div>
-    ```
+    {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameterSelector.vbhtml region=InvoiceParameterSelectorExample}}
 
 1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization). Please note how the value from the custom UI is used to set the **OrderNumber** report parameter initially:
 

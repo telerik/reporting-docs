@@ -18,11 +18,7 @@ The React Report Viewer exposes these [Events](slug:telerikreporting/using-repor
 
 To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property of the viewer component. For example, we can attach to the __ready__ and __viewerToolTipOpening__ events of the viewer:
 
-````HTML
-<TelerikReportViewer
-	ready='myReadyHandler'
-	viewerToolTipOpening='myViewerToolTipOpeningHandler' />
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\ReactViewerMarkup.html region=ReactViewerEventBinding}}
 
 Then, we create the event handler functions in the component where the viewer is used:
 

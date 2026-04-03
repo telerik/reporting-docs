@@ -19,26 +19,7 @@ Occurs before rendering the report. _The event is triggered only on preview. The
 
 This event has one argument of type `RenderingBeginEventArgs` which represents the device information settings that will be used for the rendering of the report in the `HTML5`/`HTML5Interactive` format. Sample usage:
 
-```RAZOR
-<ReportViewer @ref="reportViewer1"
-	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-	@bind-ReportSource="@ReportSource"
-	ServiceType="@ReportViewerServiceType.REST"
-	Height="800px"
-	Width="100%"
-	OnRenderingBegin="@RenderingBegin"></ReportViewer>
-
-@code {
-	ReportViewer reportViewer1;
-	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-
-	void RenderingBegin(RenderingBeginEventArgs args)
-	{
-		// Enable search in the rendered document
-		args.EnableSearch = true; //default value
-	}
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnRenderingBegin.razor region=NativeViewerOnRenderingBegin}}
 
 ## OnRenderingEnd
 
@@ -47,26 +28,7 @@ This event has one argument of type `RenderingEndEventArgs` which represents the
 
 Sample usage:
 
-```RAZOR
-<ReportViewer @ref="reportViewer1"
-	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-	@bind-ReportSource="@ReportSource"
-	ServiceType="@ReportViewerServiceType.REST"
-	Height="800px"
-	Width="100%"
-	OnRenderingEnd="@RenderingEnd"></ReportViewer>
-
-@code {
-	ReportViewer reportViewer1;
-	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-
-	async Task RenderingEnd(RenderingEndEventArgs args)
-	{
-		// Display alert with the page count of the rendered report
-		await JsRuntime.InvokeVoidAsync("alert", $"The total page count of rendered report is: {args.PageCount}");
-	}
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnRenderingEnd.razor region=NativeViewerOnRenderingEnd}}
 
 ## OnExportStart
 
@@ -78,30 +40,7 @@ Occurs before exporting the report. This event has one argument of type `ExportS
 
 Sample usage:
 
-```RAZOR
-<ReportViewer @ref="reportViewer1"
-	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-	@bind-ReportSource="@ReportSource"
-	ServiceType="@ReportViewerServiceType.REST"
-	Height="800px"
-	Width="100%"
-	OnExportStart="@ExportStart"></ReportViewer>
-
-@code {
-	ReportViewer reportViewer1;
-	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-
-	async Task ExportStart(ExportStartEventArgs args)
-	{
-		// Cancel CSV exporting
-		if(args.Format == "CSV")
-		{
-			args.IsCancelled = true;
-			await JsRuntime.InvokeVoidAsync("alert", $"Exporting the report in the {args.Format} format is disabled");
-		}
-	}
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnExportStart.razor region=NativeViewerOnExportStart}}
 
 ## OnExportEnd
 
@@ -114,29 +53,7 @@ Occurs after exporting the report. This event has one argument of type `ExportEn
 
 Sample usage:
 
-```RAZOR
-<ReportViewer @ref="reportViewer1"
-	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-	@bind-ReportSource="@ReportSource"
-	ServiceType="@ReportViewerServiceType.REST"
-	Height="800px"
-	Width="100%"
-	OnExportEnd="@ExportEnd"></ReportViewer>
-
-@code {
-	ReportViewer reportViewer1;
-	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>{});
-
-	void ExportEnd(ExportEndEventArgs args)
-	{
-		// Change the window's open target
-		if(args.Format == "PDF")
-		{
-			args.WindowOpenTarget = "_blank";
-		}
-	}
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnExportEnd.razor region=NativeViewerOnExportEnd}}
 
 ## See Also
 

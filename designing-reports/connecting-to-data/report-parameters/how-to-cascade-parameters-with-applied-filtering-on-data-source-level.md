@@ -18,18 +18,7 @@ To create cascading report parameters with applied filtering on data source leve
 
 1. Using the [Data Source Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard), bind the report to **SqlDataSource** with query:
 
-   ```SQL
-   SELECT
-   	Production.Product.ProductNumber, Production.Product.Name AS ProductName,
-   	Production.ProductSubcategory.Name AS SubcategoryName
-   FROM
-   	Production.Product
-   	INNER JOIN Production.ProductSubcategory
-   		ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
-   WHERE
-   	(Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectProductsBySubcategoryParam.sql}}
    Note that there is a **WHERE** clause that filters the datasource based on the _ProductSubcategoryID_ parameter.
 
 1. Click the **Next** button and the **"Configure Data Source Parameters"** step of the **SqlDataSource** appears. Set the **DbType** of the ProductSubcategoryID
@@ -42,16 +31,7 @@ To create cascading report parameters with applied filtering on data source leve
 1. Expand the **AvailableValues**.
 1. Start the Data Source Wizard and set the DataSource for the parameter to the following query:
 
-   ```SQL
-   SELECT
-   	ProductSubcategoryID,
-   	Name AS SubcategoryName
-   FROM
-   	Production.ProductSubcategory
-   WHERE
-   	(ProductCategoryID = @ProductCategoryID)
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectSubcategoriesByCategoryParam.sql}}
    Note that there is a **WHERE** clause that filters the datasource based on the _ProductSubcategoryID_ parameter.
 
 1. Click the **Next** button and the **"Configure Data Source Parameters"** step of the **SqlDataSource** appears. Set the **DbType** of the **ProductCategoryID** parameter to **Int32** and select "**New Report Parameter**" for the **Value**.
@@ -63,14 +43,7 @@ To create cascading report parameters with applied filtering on data source leve
 1. Expand the AvailableValues.
 1. Start the **Data Source Wizard** and set the DataSource for the parameter to the following query:
 
-   ```SQL
-   SELECT
-   	ProductCategoryID,
-   	Name AS CategoryName
-   FROM
-   	Production.ProductCategory
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectProductCategories.sql}}
 1. Click **Next** and **Finish** the Data Source Wizard.
 1. Set the DisplayMember to **= Fields.CategoryName** column.
 1. Set the ValueMember to **= Fields.ProductCategoryID**.

@@ -35,20 +35,7 @@ In the general case, you may select `Stacked Column` or `100% Stacked Column`. T
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
-````SQL
-SELECT
-	[Production].[ProductCategory].[Name] AS 'Category',
-	[Sales].[SalesOrderHeader].[OrderDate],
-	[Sales].[SalesOrderDetail].[LineTotal]
-FROM
-	[Production].[Product] INNER JOIN
-	[Production].[ProductSubcategory] ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID] INNER JOIN
-	[Production].[ProductCategory] ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID] INNER JOIN
-	[Sales].[SalesOrderDetail] ON [Production].[Product].[ProductID] = [Sales].[SalesOrderDetail].[ProductID] INNER JOIN
-	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND 
-	[Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
-````
-
+{{source=CodeSnippets\CS\SQL\SelectSalesByCategoryAndDate.sql}}
 To create the Column chart by using the Column Chart Wizard:
 
 1. Add Clustered Column Chart as shown in the image below:

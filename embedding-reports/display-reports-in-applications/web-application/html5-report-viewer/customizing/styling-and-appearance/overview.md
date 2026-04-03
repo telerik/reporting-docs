@@ -25,22 +25,18 @@ For reference, you can use the templates located in **%programfiles(x86)%\Progre
 	$("#reportViewer1")
 	.telerik_ReportViewer({
 		serviceUrl: "/api/reports/",
-		templateUrl: "/custom-templates-directory/templates/telerikReportViewerTemplate-{{buildversion}}.html"
+		templateUrl: "/custom-templates-directory/templates/telerikReportViewerTemplate-{{site.buildversion}}.html"
 	});
 </script>
 ```
 
 The template relies on the [Kendo UI SASS Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to provide layout settings and the color schema for the HTML5 Report Viewer:
 
-```HTML
-<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
 The default report viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display. For the media queries to be activated properly, the browser’s viewport needs to be configured as follows:
 
-```HTML
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerViewportMeta}}
 
 ## See Also
 

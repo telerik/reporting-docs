@@ -28,20 +28,7 @@ $("#reportViewer1").telerik_ReportViewer({
 
 The HTML template file is essentially a page that includes HTML document fragments nested inside __template__ tags. For example, this is what the report parameter template looks like:
 
-````HTML
-    <template id="trv-parameter">
-        <div class="trv-parameter-container k-card">
-            <div class="trv-parameter-header k-card-header">
-                <div class="trv-parameter-title k-card-title"></div>
-            </div>
-            <div class="trv-parameter-error k-notification k-notificaiton-error">
-                <span class="k-notification-status k-icon k-i-x-outline"></span>
-                <span class="trv-parameter-error-message k-notification-content"></span>
-            </div>
-            <div class="trv-parameter-value k-card-body"></div>
-        </div>
-    </template>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerTemplates.html region=Html5ViewerParameterTemplate}}
 
 The templates are loaded during the initialization of the __telerik_ReportViewer__ widget. Since this is an asynchronous network operation(the template HTML is loaded with an `HTTP GET` request) that takes an unpredictable amount of time, the widget is not functional until the template is loaded successfully. 
 

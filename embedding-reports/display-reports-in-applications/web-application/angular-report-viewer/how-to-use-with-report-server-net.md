@@ -52,9 +52,7 @@ The user account that will authenticate with the Report Server may be any User, 
 
 1. Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _index.html_:
 
-   ```HTML
-   <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
 
    > To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
 
@@ -103,13 +101,7 @@ The user account that will authenticate with the Report Server may be any User, 
 
 1. In the HTML template of the component, define the `<tr-viewer>` element, and pass the defined properties to their corresponding properties of the Angular Wrapper Report Viewer:
 
-   ```HTML
-   <tr-viewer
-   	[containerStyle]="viewerContainerStyle"
-   	[reportServer]="reportServer"
-   	[reportSource]="reportSource" >
-   </tr-viewer>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps4}}
 
 1. Run the application:
 

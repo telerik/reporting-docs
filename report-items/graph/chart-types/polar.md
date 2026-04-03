@@ -34,20 +34,7 @@ We are going to display the LineTotal of the Product Categories by Years. The fi
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
-````SQL
-SELECT
-	[Production].[ProductCategory].[Name] AS 'Category',
-	[Sales].[SalesOrderHeader].[OrderDate],
-	[Sales].[SalesOrderDetail].[LineTotal]
-FROM
-	[Production].[Product] INNER JOIN
-	[Production].[ProductSubcategory] ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID] INNER JOIN
-	[Production].[ProductCategory] ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID] INNER JOIN
-	[Sales].[SalesOrderDetail] ON [Production].[Product].[ProductID] = [Sales].[SalesOrderDetail].[ProductID] INNER JOIN
-	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND 
-	[Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
-````
-
+{{source=CodeSnippets\CS\SQL\SelectSalesByCategoryAndDate.sql}}
 To create the Polar chart by using the Polar Chart Wizard: 
 
 1. Add Rose Chart as shown in the image below:

@@ -82,18 +82,7 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 
 1. On the screen that loads, fill in the **Select Statement** field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on.
 
-   ```SQL
-   SELECT
-   	[HumanResources].[vEmployee].[EmployeeID] ,
-   	[HumanResources].[vEmployee].[FirstName],
-   	[HumanResources].[vEmployee].[LastName],
-   	[HumanResources].[vEmployee].[JobTitle],
-   	[HumanResources].[vEmployee].[Phone]
-   FROM [HumanResources].[vEmployee]
-   WHERE [HumanResources].[vEmployee].[EmployeeID] <= 14
-   ORDER BY 1 ASC
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectEmployees.sql}}
 1. Click **Next** to execute the query and the **Execute Query...** button on the next screen to preview the result. Then, click **Finish**.
 
 1. In the **Properties** pane (**Property Browser**) on the right, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report.

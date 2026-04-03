@@ -21,9 +21,7 @@ Web browsers cannot initiate the sending of e-mail messages containing attachmen
 
 Once ready, the send mail message toolbar button can be enabled through the `EnableSendEmail` initialization option.
 
-```RAZOR
-<ReportViewer ... EnableSendEmail="false" />
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerSendMail.razor region=NativeViewerEnableSendEmail}}
 
 ## Send Mail Message Dialog
 
@@ -37,23 +35,7 @@ The settings are populated from a `SendEmailDialogSettings` tag, that sits insid
 
 ### Markup Example
 
-```RAZOR
-<ReportViewer
-	ServiceUrl="/api/reports"
-	@bind-ReportSource="@ReportSource"
-	EnableSendEmail="true">
-	<ReportViewerSettings>
-		<SendEmailDialogSettings
-			From="from@mail.com"
-			To="to@mail.com"
-			Cc="Cc"
-			Subject=""
-			Body=""
-			Format="CSV">
-		</SendEmailDialogSettings>
-	</ReportViewerSettings>
-</ReportViewer>
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerSendMail.razor region=NativeViewerSendEmailDialogSettings}}
 
 ### Setting Fields
 

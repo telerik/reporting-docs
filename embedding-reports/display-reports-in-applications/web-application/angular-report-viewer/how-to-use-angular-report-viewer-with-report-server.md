@@ -68,31 +68,13 @@ The following list describes the prerequisites for this tutorial:
 
 1.  Use the report viewer selector in the AppComponent template:
 
-    ```HTML
-    <tr-viewer
-        [containerStyle]="viewerContainerStyle"
-        [reportServer]="{
-            url: 'http://localhost:83/',
-            username: 'myusername',
-            password: 'mypass'
-        }"
-        [reportSource]="{
-            report: 'Samples/Dashboard',
-            parameters: {}
-        }"
-        [viewMode]="'INTERACTIVE'"
-        [scaleMode]="'SPECIFIC'"
-        [scale]="1.0">
-    </tr-viewer>
-    ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseAngularReportViewerWithReportServer.html region=AngularViewerSteps2}}
 
     For all available report viewer options refer to [Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options).
 
 1.  Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _index.html_:
 
-    ```HTML
-    <link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-    ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
     > To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
 

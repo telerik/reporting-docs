@@ -24,27 +24,8 @@ This article explains how to attach client event handlers to an HTML5 MVC Report
 
 To attach a client event handler you have to set the proper `ClientEvents` widget method as shown below:
 
-````HTML
-<script>
-	function onRenderingBegin() {
-		console.log("rendering begin!");
-	}
-	function onRenderingEnd() {
-		console.log("rendering end!");
-	}
-</script>
-````
-````CSHTML
-@(Html.TelerikReporting().ReportViewer()
-	.ClientEvents(
-		events => events
-		.RenderingBegin("onRenderingBegin")
-		.RenderingEnd("onRenderingEnd")
-	)
-)
-````
-
-
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\MvcViewerClientEvents.html region=MvcViewerRenderingEvents}}
+{{source=CodeSnippets\MvcCS\Views\Home\ClientEvents.cshtml region=ClientEventsExample}}
 The following table list the available client events:
 
 | __Event__ | __Description__ |

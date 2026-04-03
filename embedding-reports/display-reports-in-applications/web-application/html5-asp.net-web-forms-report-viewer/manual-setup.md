@@ -48,76 +48,29 @@ The following steps produce a view with settings similar to these of the local `
 
 1. To ensure that the browser will start in the latest rendering mode verify the page is using the following `DOCTYPE` directive:
 
-   ```HTML
-   <!DOCTYPE html>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\MvcViewerManualSetup.html region=MvcViewerUsingHtml5AspnetMvcReportViewer}}
 
    > The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the [Defining document compatibility](<https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)>) Microsoft article.
 
 1. Initialize the browser’s viewport in the `<head>` element:
 
-   ```HTML
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerViewportMeta}}
 
    The viewport META tag is used to control layout on mobile browsers.
 
 1. (Optional) The default viewer implementation depends externally on **jQuery**. Add link to jQuery in the `<head>` element:
 
-   ```HTML
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerManualSetup.html region=WebFormsViewerUsingHtml5AspnetWebFormsReportViewerInAWebApplicat}}
 
    > jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded.
 
 1. Add a reference to a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) in the `<head>` element:
 
-   ```HTML
-   <link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
 1. (Optional) Add references to the [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) scripts in the `<head>` element:
 
-   ```HTML
-   <!--If Kendo CDN is prefered here are the required Kendo widgets and bundles
-   The minimum required widgets:
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.core.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.data.odata.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.data.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.userevents.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.selectable.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.calendar.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.fx.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.draganddrop.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.scroller.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.virtuallist.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.popup.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.list.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.combobox.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.datepicker.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.resizable.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.dropdownlist.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.multiselect.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.splitter.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.window.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.color.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.slider.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.button.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.colorpicker.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.editor.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.listview.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.menu.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.panelbar.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.tooltip.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.treeview.min.js"></script>>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.touch.min.js"></script>>
-   Widgets bundles:
-   kendo.all.min.js can be used as well instead of kendo.web.min.js and kendo.mobile.min.js
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js"></script>>
-   kendo.mobile.min.js - optional, if gestures/touch support is required
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.min.js"></script>>
-   -->
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerManualSetup.html region=WebFormsViewerUsingHtml5AspnetWebFormsReportViewerInAWebApplicat2}}
 
 1. Switch to the `Design` view of the Web Form and drag the viewer from Visual Studio Toolbox onto the designer surface. The [ReportsController](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application) will be automatically added to your project, along with references to the required **Telerik Reporting** assemblies.
 1. Configure the HTML5 ASP.NET Web Forms Report Viewer's `ReportSource` using Visual Studio Property Grid. For this, you can use the "Product Catalog.trdp" report file.
@@ -135,41 +88,4 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Finally, the `WebForm` may look like the following:
 
-   ```HTML
-   <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
-   <!DOCTYPE html>
-   <html xmlns="http://www.w3.org/1999/xhtml">
-   <head runat="server">
-   	<title>Telerik HTML5 Web Forms Report Viewer Demo</title>
-   	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.8.1/jquery.min.js"></script>>
-
-   	<style>
-   		#reportViewer1
-   		{
-   			position: absolute;
-   			inset: 5px;
-   			overflow: hidden;
-   			font-family: Verdana, Arial;
-   		}
-   	</style>
-   </head>
-   <body>
-   	<form runat="server">
-   		<telerik:ReportViewer
-   			ID="reportViewer1"
-   			ServiceUrl="/api/reports/"
-   			Deferred="true"
-   			runat="server">
-   		  <ReportSource Identifier="Product Catalog.trdp" IdentifierType="UriReportSource">
-   				<Parameters>
-   					<telerik:Parameter Name="CultureID" Value="fr" />
-   				</Parameters>
-   		  </ReportSource>
-   		</telerik:ReportViewer>
-   		<telerik:DeferredScripts runat="server"></telerik:DeferredScripts>
-   	</form>
-   </body>
-   </html>
-   ```
+{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerManualSetup.aspx region=WebFormsViewerUsingHtml5AspnetWebFormsReportViewerInAWebApplicat3}}

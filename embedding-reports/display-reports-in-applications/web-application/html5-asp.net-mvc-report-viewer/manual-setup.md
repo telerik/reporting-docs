@@ -47,17 +47,13 @@ The following steps produce a view with settings similar to these of the local `
 
 1. To ensure that the browser will start in the latest rendering mode verify the view's layout page is using the following `DOCTYPE` directive:
 
-   ```HTML
-   <!DOCTYPE html>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\MvcViewerManualSetup.html region=MvcViewerUsingHtml5AspnetMvcReportViewer}}
 
    > The above `DOCTYPE` directive should be considered with your custom requirements. More details about the one used in the tutorial settings for the page can be found in the [Defining document compatibility](<https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)>) MSDN article.
 
 1. Initialize the browser’s viewport in the `<head>` element:
 
-   ```HTML
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerViewportMeta}}
 
    The viewport `META` tag is used to control layout on mobile browsers.
 
@@ -74,9 +70,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Add a reference to a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) in the `<head>` element:
 
-   ```HTML
-   <link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
 1. Add references to the following assemblies and set their **Copy Local** properties to **true** in Visual Studio:
 
@@ -105,50 +99,11 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Add references to the HTML5 Report Viewer’s JavaScript file in the view:
 
-   ```HTML
-   <script src="~/api/reports/resources/js/telerikReportViewer"></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\MvcViewerManualSetup.html region=MvcViewerUsingHtml5AspnetMvcReportViewer2}}
 
    The report viewer JavaScript should be referenced after any other Kendo widgets or bundles. If no Kendo widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is prefered, please make sure the following widgets are referenced:
 
-   ```HTML
-   <!--
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.core.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.data.odata.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.data.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.userevents.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.selectable.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.calendar.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.fx.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.draganddrop.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.scroller.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.virtuallist.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.popup.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.list.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.combobox.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.datepicker.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.resizable.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.dropdownlist.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.multiselect.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.splitter.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.window.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.color.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.slider.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.button.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.colorpicker.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.editor.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.listview.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.menu.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.panelbar.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.tooltip.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.treeview.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.touch.min.js"></script>
-   kendo.mobile.min.js - optional, if gestures/touch support is required
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.min.js"></script>
-   kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js"></script>
-   -->
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\MvcViewerManualSetup.html region=MvcViewerUsingHtml5AspnetMvcReportViewer3}}
 
 1. Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 
@@ -166,15 +121,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Make the viewer fill the entire browser window. Add the following style in the correspondingly named section in the view:
 
-   ```HTML
-   <style>
-   	#reportViewer1 {
-   	  position: absolute;
-   	  inset: 5px;
-   	  overflow: hidden;
-   	}
-   </style>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\MvcViewerManualSetup.html region=MvcViewerUsingHtml5AspnetMvcReportViewer4}}
 
    > The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in other container use relative position, and provide witdh and height values.
 

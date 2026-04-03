@@ -36,7 +36,7 @@ This article elaborates on how to localize the strings used and displayed by the
 
    ```HTML
    <script type="text/javascript">
-   	import("/Scripts/WebReportDesignerStringsBase-{{buildversion}}.js").then((result) => {
+   	import("/Scripts/WebReportDesignerStringsBase-{{site.buildversion}}.js").then((result) => {
    		window.telerikWebDesignerResources = new result.WebReportDesignerStringsBase();
    	});
    </script>

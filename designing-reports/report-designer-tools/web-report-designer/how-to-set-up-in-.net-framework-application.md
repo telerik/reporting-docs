@@ -110,7 +110,7 @@ The REST service works as a backend and is responsible for storage operations li
 			loading...
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
+		<script src="https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.kendo.min.js"></script>
 		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 		<script type="text/javascript">

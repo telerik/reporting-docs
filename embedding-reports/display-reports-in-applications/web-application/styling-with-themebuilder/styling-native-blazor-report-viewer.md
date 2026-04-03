@@ -52,10 +52,7 @@ After finalizing your customizations, you can export your theme. Click **Export 
 
 For example, copy the CSS file from the `css` folder in the exported package and add it to your project. In the report viewer file, replace the existing references to Telerik and Kendo UI themes with the ThemeBuilder-exported theme:
 
-````HTML
-@* <link rel="stylesheet" href="https://unpkg.com/@@progress/kendo-theme-utils@@10.0.1/dist/all.css"  /> *@
-<link rel="stylesheet" href="/css/tb-theme.css" />
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\ThemeBuilderStyling.html region=ThemeBuilderBlazorViewerCss}}
 
 ## Next Steps
 

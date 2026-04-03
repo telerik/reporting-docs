@@ -48,15 +48,11 @@ The following HTML attributes control the image source, dimensions, and accessib
 
 Basic image with dimensions and styling:
 
-````html
-<img src="https://example.com/logo.png" width="200" height="100" alt="Company Logo" style="display: block; margin: auto;" />
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\HtmlTextBoxImages.html region=HtmlTextBoxImageWithDimensions}}
 
 Data-driven image with embedded expressions:
 
-````html
-<img src="{Fields.ProductImage}" width="150" alt="{Fields.ProductName}" style="margin: 10px;" />
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\HtmlTextBoxImages.html region=HtmlTextBoxDataDrivenImage}}
 
 ## Supported CSS Attributes
 

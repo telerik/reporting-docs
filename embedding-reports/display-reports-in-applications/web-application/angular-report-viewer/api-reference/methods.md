@@ -23,10 +23,7 @@ table th:nth-of-type(3) {
 
 Each method can be called using a reference to the report viewer component.
 
-```HTML
-<tr-viewer #viewer1 />
-<button (click)="viewer1.refreshReport()">Refresh</button>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerApi.html region=AngularViewerRefreshMethod}}
 
 The example above refreshes the report viewer.
 

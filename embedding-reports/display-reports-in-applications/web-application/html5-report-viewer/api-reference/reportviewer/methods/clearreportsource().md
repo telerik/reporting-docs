@@ -16,9 +16,7 @@ Clears the current reportSource from the viewer's internal state and its persist
 
 Returns: a reference for the reportViewer object.
 
-````HTML
-<input id="buttonChangeReportSource" type="submit" value="Change Report Source" />
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerApi.html region=Html5ViewerClearReportSourceButton}}
 ````JavaScript
 $(document).ready(function () {
 	$("#buttonChangeReportSource").on("click", function () {

@@ -53,18 +53,7 @@ In the component with the report viewer, `import` the [`@progress/kendo-svg-icon
 
 In the below example, we will demonstrate how to change the 'Stop Rendering' button's default icon:
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Report Catalog.trdx',
-		parameters: {}
-	}"
-	serviceUrl="https://demos.telerik.com/reporting/api/reports"
-	viewMode="interactive"
-	[keepClientAlive]="true">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerCustomizing.html region=NativeAngularViewerToolbarIcons}}
 ````TypeScript
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'

@@ -27,18 +27,7 @@ Below is a list of all options available during initialization.
 
 The report viewer options can be set from the `.HTML`/`.TS` component file or both(combined):
 
-````HTML
-<tr-viewer #viewer1
-	[containerStyle]="viewerContainerStyle"
-	[serviceUrl]="'http://localhost:59657/api/reports/'"
-	[reportSource]="{
-		report: 'Report1.trdp',
-		parameters: {}
-	}"
-	[viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
-	[viewerToolTipOpening]="viewerToolTipOpening" [enableAccessibility]="false">
-</tr-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerApi.html region=AngularViewerOptions}}
 ````TypeScript
 export class ReportViewerComponent implements AfterViewInit {
 	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;

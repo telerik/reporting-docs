@@ -29,25 +29,7 @@ The Native Angular Report Viewer exposes the ability to trigger various commands
 
 The following example illustrates a list of all the available commands in the viewer, and how they may be invoked:
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[contentTabIndex]="2001"
-	[reportSource]="reportSource"
-	[serviceUrl]="serviceUrl"
-	viewMode="interactive"
-	[keepClientAlive]="true">
-</reporting-angular-viewer>
-
-<div class="func-btn-wrapper">
-	<button
-		kendoButton
-		class="func-btn"
-		*ngFor="let button of buttons"
-		(click)="execute(button.commandName, button.commandValue)"> {{button.name}}
-	</button>
-</div>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerCommands.html region=NativeAngularViewerCommandButtons}}
 ````TypeScript
 import { Component, ViewChild  } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'

@@ -25,11 +25,7 @@ This article explains how to attach client event handlers to an `WebForms` wrapp
 
 To attach a client event handler you have to set the proper `ClientEvents` tag as shown below:
 
-````HTML
-<telerik:ReportViewer ID="reportViewer1" runat="server">
-	<ClientEvents RenderingBegin="onRenderingBegin" />
-</telerik:ReportViewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerMarkup.html region=WebFormsViewerClientEvents}}
 ````JavaScript
 function onRenderingBegin() {
 	console.log("rendering begin!");

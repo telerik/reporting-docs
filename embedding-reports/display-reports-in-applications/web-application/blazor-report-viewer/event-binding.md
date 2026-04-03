@@ -26,16 +26,4 @@ For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events 
 
 Then, we can create the event handler functions in the **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server):
 
-```HTML
-<script>
-	window.trvEventHandlers = {
-		exportBegin: function (e, args) {
-			console.log("This event handler will be called before exporting the report in " + args.format + " format.");
-		},
-		exportEnd: function (e, args) {
-			console.log("This event handler will be called after exporting the report.");
-			console.log("The exported report can be found at: " + window.location.origin + args.url);
-		}
-	}
-</script>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerScripts.html region=BlazorViewerEventHandlers}}

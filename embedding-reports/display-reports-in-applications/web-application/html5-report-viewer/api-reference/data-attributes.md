@@ -25,9 +25,7 @@ Behavior can be added to HTML DOM elements either with `data-` attributes or thr
 
 The `data-` attributes allow for adding flexibility to the application since commands can be attached to HTML elements only by adding a `data-command` attribute along with a `data-target-report-viewer` to target the specific report viewer (since there can exist multiple report viewers on a single page):
 
-````HTML
-<button id="printButton" data-command="telerik_ReportViewer_print" data-target-report-viewer="#reportViewer1">Print report</button>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerApi.html region=Html5ViewerDataCommandButton}}
 
 When initializing the report viewer, the selector used in `data-target-report-viewer` has to be explicitly provided as an option:
 

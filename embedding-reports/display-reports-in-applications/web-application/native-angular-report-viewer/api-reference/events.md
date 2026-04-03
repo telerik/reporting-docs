@@ -28,19 +28,7 @@ In this article, we will go over each of the currently available events, showcas
 
 The `updateUI` event will be emitted when the state of the viewer changes.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(updateUI)="updateUI()">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerUpdateUIEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -67,19 +55,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `printStarted` event will be emitted when the printing starts.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(printStarted)="printStarted($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerPrintStartedEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -107,19 +83,7 @@ import { PrintStartedEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `printDocumentReady` event will be emitted after the viewer finishes printing the report.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(printDocumentReady)="printDocumentReady($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerPrintDocumentReadyEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -147,19 +111,7 @@ import { PrintDocumentReadyEventArgs } from '@progress/telerik-common-report-vie
 
 The `exportStarted` event will be emitted when an export operation is triggered.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(exportStarted)="exportStarted($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerExportStartedEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -187,19 +139,7 @@ import { ExportStartedEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `exportDocumentReady` event will be emitted after the viewer finishes exporting the report.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(exportDocumentReady)="exportDocumentReady($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerExportDocumentReadyEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -227,19 +167,7 @@ import { ExportDocumentReadyEventArgs } from '@progress/telerik-common-report-vi
 
 The `beforeLoadReport` event will be emitted before the rendering of a report begins.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(beforeLoadReport)="beforeLoadReport()">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerBeforeLoadReportEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -266,19 +194,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `beginLoadReport` event will be emitted after the rendering of a report begins.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(beginLoadReport)="beginLoadReport()">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerBeginLoadReportEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -305,19 +221,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `reportLoadProgress` event will be emitted after each successful [`Get Document Info`](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info) request until the report rendering is complete.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(reportLoadProgress)="reportLoadProgress($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerReportLoadProgressEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -346,19 +250,7 @@ import { DocumentInfo } from '@progress/telerik-common-report-viewer'
 
 The `reportLoadComplete` event will be emitted after the rendering of a report ends.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(reportLoadComplete)="reportLoadComplete($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerReportLoadCompleteEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -387,19 +279,7 @@ import { DocumentInfo } from '@progress/telerik-common-report-viewer'
 
 The `renderingStopped` event will be emitted when report rendering is cancelled.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(renderingStopped)="renderingStopped()">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerRenderingStoppedEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -426,19 +306,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `error` event will be emitted when viewer encounters an error.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(error)="error($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerErrorEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -466,19 +334,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `loadedReportChange` event will be emitted when the previewed report is __changed__ or __refreshed__.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(loadedReportChange)="loadedReportChange()">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerLoadedReportChangeEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -505,19 +361,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `pageReady` event will be emitted when the viewer content has been loaded from the template and is ready to display reports or perform any other operations on it.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(pageReady)="pageReady($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerPageReadyEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -546,19 +390,7 @@ import { PageInfo } from '@progress/telerik-common-report-viewer'
 
 The `navigateToReport` event will be emitted when the viewer navigates to a new report through the [`Drillthrough/Navigate To Report Action`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action).
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(navigateToReport)="navigateToReport($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerNavigateToReportEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -585,19 +417,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `currentPageChanged` event will be emitted when the viewer changes its currently displayed page.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(currentPageChanged)="currentPageChanged($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerCurrentPageChangedEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -626,19 +446,7 @@ import { CurrentPageChangedEventArgs } from '@progress/telerik-common-report-vie
 
 The `interactiveActionEnter` event will be emitted when the cursor hovers over an interactive action.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(interactiveActionEnter)="interactiveActionEnter($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerInteractiveActionEnterEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -667,19 +475,7 @@ import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `interactiveActionExecuting` event will be emitted before an interactive action is executed.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(interactiveActionExecuting)="interactiveActionExecuting($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerInteractiveActionExecutingEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -707,19 +503,7 @@ import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `interactiveActionLeave` event will be emitted when the cursor leaves the interactive action area.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(interactiveActionLeave)="interactiveActionLeave($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerInteractiveActionLeaveEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -748,19 +532,7 @@ import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `toolTipOpening` event will be emitted when a tooltip is opened.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(toolTipOpening)="toolTipOpening($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerToolTipOpeningEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -789,19 +561,7 @@ import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `toolTipClosing` event will be emitted when a tooltip is closed.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(toolTipClosing)="toolTipClosing($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerToolTipClosingEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -830,19 +590,7 @@ import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
 
 The `reportVersionMismatch` event will be emitted when there is a mismatch between the version of the viewer and the reporting service.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(reportVersionMismatch)="reportVersionMismatch()">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerReportVersionMismatchEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
@@ -869,19 +617,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-nativ
 
 The `parametersLoaded` event will be emitted after the [`Get Report Parameters `](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters) is made.
 
-````HTML
-<reporting-angular-viewer
-	#viewer
-	[reportSource]="{
-		report: 'Dashboard.trdx', 
-		parameters: { ReportYear: 2004 }
-	}"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports'"
-	viewMode="interactive"
-	[keepClientAlive]="true"
-	(parametersLoaded)="parametersLoaded($event)">
-</reporting-angular-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerParametersLoadedEvent}}
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
 import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'

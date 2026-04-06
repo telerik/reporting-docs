@@ -4,7 +4,7 @@ description: "Learn the recommended approaches for setting up authorization in t
 type: how-to
 page_title: Setting up authorization in Reporting REST Service controller
 slug: reporting-rest-service-authorization
-tags: REST, Service, Viewers
+tags: RestService, Viewers
 res_type: kb
 ---
 

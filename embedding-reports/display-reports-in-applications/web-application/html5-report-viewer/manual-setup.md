@@ -25,65 +25,65 @@ Before you continue, make sure that the following prerequisites are met:
 1. A script with the custom [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) distribution for Telerik Reporting (located in the **[TelerikReporting_InstallDir]\Html5\ReportViewer\js** folder) or with the mainstream Kendo UI distribution downloaded locally or via the [Kendo UI CDN service](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service).
 1. (Optional) If [programmatic type reports](slug:telerikreporting/designing-reports/overview#programmatic-types) are used, add a reference from the project that hosts the Reporting REST service to the `Reports Library` project with the reports.
 
-   > You must load only one version of [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) styles and scripts on the page - [Kendo Widgets Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#KendoWidgetsRequirements).
+	> You must load only one version of [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) styles and scripts on the page - [Kendo Widgets Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#KendoWidgetsRequirements).
 
 ## Utilizing the HTML5 Report Viewer
 
 The following steps produce an HTML page with settings similar to these in the integration demo projects installed by default under `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\`:
 
-1.  Create an HTML5 page:
+1. Create an HTML5 page:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup.html region=Html5ViewerUtilizingTheHtml5ReportViewer}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup.html region=Html5ViewerUtilizingTheHtml5ReportViewer}}
 
-1.  Initialize the browser’s viewport in the `<head>` element:
+1. Initialize the browser’s viewport in the `<head>` element:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerViewportMeta}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerViewportMeta}}
 
-    The viewport `META` tag is used to control the layout on mobile browsers.
+	The viewport `META` tag is used to control the layout on mobile browsers.
 
-1.  Add a reference to jQuery in the `<head>` element:
+1. Add a reference to jQuery in the `<head>` element:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerManualSetup.html region=WebFormsViewerUsingHtml5AspnetWebFormsReportViewerInAWebApplicat}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerManualSetup.html region=WebFormsViewerUsingHtml5AspnetWebFormsReportViewerInAWebApplicat}}
 
-    > jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
+	> jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
-    > jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
+	> jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
-1.  Add references to the Kendo UI Sass styles in the `<head>` element:
+1. Add references to the Kendo UI Sass styles in the `<head>` element:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
-1.  Add references to the HTML5 Report Viewer JavaScript file in the `<head>` element:
+1. Add references to the HTML5 Report Viewer JavaScript file in the `<head>` element:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer2}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer2}}
 
-    > The report viewer JavaScript must be referenced after any other Kendo UI for jQuery widgets or bundles.
+	> The report viewer JavaScript must be referenced after any other Kendo UI for jQuery widgets or bundles.
 
-    If no **Kendo** widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
+	If no **Kendo** widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer3}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer3}}
 
-1.  Add a `<div>` element to the `<body>` element that will serve as a placeholder for the viewer’s widget. The `<div>` element's ID attribute serves as a key(Id) for the viewer object. Its content (_loading..._) will be displayed while the viewer’s content is being loaded (from the template):
+1. Add a `<div>` element to the `<body>` element that will serve as a placeholder for the viewer’s widget. The `<div>` element's ID attribute serves as a key(Id) for the viewer object. Its content (_loading..._) will be displayed while the viewer’s content is being loaded (from the template):
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerPassValuesToReportParameters.html region=Html5ViewerPassValuesToReportParameters3}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerPassValuesToReportParameters.html region=Html5ViewerPassValuesToReportParameters3}}
 
-1.  Add the following script element at the bottom of the `<body>` element and initialize the HTML5 Report Viewer widget through the reportViewer1 `<div>` element that we added above:
+1. Add the following script element at the bottom of the `<body>` element and initialize the HTML5 Report Viewer widget through the reportViewer1 `<div>` element that we added above:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer4}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer4}}
 
-    > The viewer's **reportSource** consists of report and parameters attributes, where **report** is the string description of the report that will be displayed, and **parameters** is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview).
+	> The viewer's **reportSource** consists of report and parameters attributes, where **report** is the string description of the report that will be displayed, and **parameters** is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview).
 
-1.  Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
+1. Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer5}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_01.html region=Html5ViewerUtilizingTheHtml5ReportViewer5}}
 
-    > The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use _position:relative_ and provide width and height values.
+	> The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use _position:relative_ and provide width and height values.
 
-    > The above CSS rule will be applied to the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use _position:relative_ and provide width and height values.
+	> The above CSS rule will be applied to the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use _position:relative_ and provide width and height values.
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_02.html region=Html5ViewerUtilizingTheHtml5ReportViewer6}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerManualSetup_02.html region=Html5ViewerUtilizingTheHtml5ReportViewer6}}
 
-1.  Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.
+1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.
 
 ## See Also
 

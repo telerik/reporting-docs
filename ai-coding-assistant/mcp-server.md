@@ -60,16 +60,16 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 - When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (**%AppData%\Telerik\telerik-license.txt** on Windows and **~/.telerik/telerik-license.txt** on Linux).
 - When using the .NET tooling, if your [license key file](slug:license-key) is not in the default directory, you can add the [license key file](slug:license-key) as an environment variable in the `mcp.json` file using one of the following options:
 
-  ```JSON Path
-  "env": {
-  	"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
-  }
-  ```
-  ```JSON Inline
-  "env": {
-  	"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
-  }
-  ```
+	```JSON Path
+	"env": {
+		"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+	}
+	```
+	```JSON Inline
+	"env": {
+		"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
+	}
+	```
 
 > tip Using a license file path is _recommended_ unless you are sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when renewing.
 
@@ -83,59 +83,59 @@ The Telerik Reporting MCP server is available as a NuGet package: https://www.nu
 ### Automatic Configuration through the Visual Studio UI
 
 1. Open the Configure MCP server menu in Visual Studio
-   - Open the [Visual Studio GitHub Copilot Chat](https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-get-started?view=vs-2022)
-   - Click on the button at the bottom right corner to open the _Select tools_ context menu.
-   - Click on the `+` button at the top right corner of the menu to open the _Configure MCP server_ menu.
-
-   ![Steps to open the Configure MCP server menu in the Visual Studio GitHub Copilot Chat](images/vs-autoinstall-open-mcp-configuration-menu.png)
+	- Open the [Visual Studio GitHub Copilot Chat](https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-get-started?view=vs-2022)
+	- Click on the button at the bottom right corner to open the _Select tools_ context menu.
+	- Click on the `+` button at the top right corner of the menu to open the _Configure MCP server_ menu.
+	
+	![Steps to open the Configure MCP server menu in the Visual Studio GitHub Copilot Chat](images/vs-autoinstall-open-mcp-configuration-menu.png)
 
 1. Use the following values for the configuration fields:
-   - In `Destination` select either _Global-Available in all solutions_ or _Solution-Available in this solution_.
-   - For `Server ID` use _telerik-reporting-assistant_.
-   - Select _stdio_ as `Type`.
-   - The `Command (with optional arguments)` field should contain _dnx Telerik.Reporting.MCP --yes_.
-   - Click on the `Save` button to preserve the configuration.
-
-   ![Steps to configure the MCP server in the Visual Studio](images/vs-autoinstall-configure-mcp-server.png)
+	- In `Destination` select either _Global-Available in all solutions_ or _Solution-Available in this solution_.
+	- For `Server ID` use _telerik-reporting-assistant_.
+	- Select _stdio_ as `Type`.
+	- The `Command (with optional arguments)` field should contain _dnx Telerik.Reporting.MCP --yes_.
+	- Click on the `Save` button to preserve the configuration.
+	
+	![Steps to configure the MCP server in the Visual Studio](images/vs-autoinstall-configure-mcp-server.png)
 
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
-   The `telerik-reporting-assistant` tool should now appear in the _Select tools_ context menu. Check it to enable the Telerik Reporting AI Coding Assistant:
-
-   ![Enable the just added `telerik-reporting-assistant` tool in the Visual Studio](images/vs-autoinstall-enable-reporting-assistant.png)
+	The `telerik-reporting-assistant` tool should now appear in the _Select tools_ context menu. Check it to enable the Telerik Reporting AI Coding Assistant:
+	
+	![Enable the just added `telerik-reporting-assistant` tool in the Visual Studio](images/vs-autoinstall-enable-reporting-assistant.png)
 
 ### Manual Configuration
 
 The steps below describe the sample procedure for configuring the Telerik Reporting MCP server in Visual Studio.
 
 1. Add an `.mcp.json` file to either of the following locations:
-   - For a workspace-specific setup, add the file to the solution's folder.
-   - For a global setup, add the file to your user directory, `%USERPROFILE%` (for example, `C:\Users\YourName\.mcp.json`).
+	- For a workspace-specific setup, add the file to the solution's folder.
+	- For a global setup, add the file to your user directory, `%USERPROFILE%` (for example, `C:\Users\YourName\.mcp.json`).
 
 1. Add the following configuration to the `.mcp.json` file:
 
-   ```JSON .NET 10
-   {
-   	"servers": {
-   		"telerik-reporting-assistant": {
-	   		"type": "stdio",
-	   		"command": "dnx",
-	   		"args": ["Telerik.Reporting.MCP", "--yes"]
-   		}
-   	}
-   }
-   ```
-   ```JSON .NET 8/9
-   {
-   	"servers": {
-   		"telerik-reporting-assistant": {
-	   		"type": "stdio",
-	   		"command": "dotnet",
-	   		"args": ["tool", "run", "telerik-reporting-assistant"]
-   		}
-   	}
-   }
-   ```
+	```JSON .NET 10
+	{
+		"servers": {
+			"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dnx",
+				"args": ["Telerik.Reporting.MCP", "--yes"]
+			}
+		}
+	}
+	```
+	```JSON .NET 8/9
+	{
+		"servers": {
+			"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dotnet",
+				"args": ["tool", "run", "telerik-reporting-assistant"]
+			}
+		}
+	}
+	```
 
 1. Restart Visual Studio.
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
@@ -173,8 +173,8 @@ The `Add/Update GitHub Copilot Instructions` option is visible only if you have 
 After configuration and restart:
 
 1. Open Copilot Chat.
-2. Enable the `telerik-reporting-assistant` tool.
-3. Grant permissions when prompted (_per session, workspace, or always_).
+1. Enable the `telerik-reporting-assistant` tool.
+1. Grant permissions when prompted (_per session, workspace, or always_).
 
 ![An image demonstrating how to allow the usage of the Telerik Reporting MCP tool in the VS Copilot Chat](images/mcp-images/vs-allow-reporting-mcp-tool.png)
 
@@ -192,38 +192,38 @@ The basic setup in Visual Studio Code involves the following steps:
 1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
 1. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup).
 
-The settings below allow you to use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
+	The settings below allow you to use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
 
-```JSON .NET 10
-{
-	"servers": {
-		"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dnx",
-			"args": ["Telerik.Reporting.MCP", "--yes"]
+	```JSON .NET 10
+	{
+		"servers": {
+			"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dnx",
+				"args": ["Telerik.Reporting.MCP", "--yes"]
+			}
 		}
 	}
-}
-```
-```JSON .NET 8/9
-{
-	"servers": {
-		"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dotnet",
-			"args": ["tool", "run", "telerik-reporting-assistant"]
+	```
+	```JSON .NET 8/9
+	{
+		"servers": {
+			"telerik-reporting-assistant": {
+				"type": "stdio",
+				"command": "dotnet",
+				"args": ["tool", "run", "telerik-reporting-assistant"]
+			}
 		}
 	}
-}
-```
+	```
 
 1. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
-   ```JSON
-   {
-     "chat.mcp.discovery.enabled": true
-   }
-   ```
+	```JSON
+	{
+	"chat.mcp.discovery.enabled": true
+	}
+	```
 
 1. Restart Visual Studio Code.
 
@@ -269,9 +269,9 @@ To use the Telerik Reporting MCP Server:
 1. Choose your preferred mode and model.<br/>At the time of publishing, **Claude Sonnet 4** and **GPT-5** produce optimal results.
 1. Start your prompt with `#telerik-reporting-assistant` (or with '#' followed by your [custom MCP server name](#configuration), if set):
 1. Inspect the output and verify that the MCP server is used. Look for messages similar to the ones below:
-   - Visual Studio: `Running telerik-reporting-assistant`
-   - Visual Studio Code: `Running telerik-reporting-assistant`
-   - Cursor: `Calling MCP tool telerik-reporting-assistant`
+	- Visual Studio: `Running telerik-reporting-assistant`
+	- Visual Studio Code: `Running telerik-reporting-assistant`
+	- Cursor: `Calling MCP tool telerik-reporting-assistant`
 
 1. If the Telerik Reporting MCP server is not used even though it's installed and enabled, double-check the server name in your configuration and try rephrasing your prompt.
 1. If requested, grant the Telerik Reporting MCP Server permissions to run for this session, workspace, or always.

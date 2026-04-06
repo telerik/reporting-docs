@@ -20,13 +20,13 @@ To show a report created with the [Standalone Report Designer](slug:telerikrepor
 
 * __Use [UriReportSource](/api/Telerik.Reporting.UriReportSource)__ and a path to the TRDX|TRDP file:
 
-{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
-{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
+	{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
 
 * __Use [XmlReportSource](/api/Telerik.Reporting.XmlReportSource)__ and read the plain XML of a TRDX file:
 
-{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
-{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateXmlReportSourceSnippet}}
+	{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateXmlReportSourceSnippet}}
 
 * __Deserialize the XML report definition from a TRDX file__ : If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed following the basic concepts of the programming language and the.NET platform. For example you can create an InstanceReportSource and and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) for more information.
 * __Unpackaging the XML report definition from a TRDP file__ : If you need to obtain a Telerik Report instance in code from a TRDP file, you can unpackage the content in code. Then create an InstanceReportSource and set its ReportDocument property to the unpackaged report object. See [Package Report Definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition) for more information.

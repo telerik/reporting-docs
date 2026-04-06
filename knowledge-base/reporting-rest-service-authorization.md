@@ -55,7 +55,7 @@ Thus, we can suggest two possible approaches:
    }
    ```
 
-2. It would also be possible to introduce some custom logic that adds the appropriate header (Token) to the requests for formats and resources.
+1. It would also be possible to introduce some custom logic that adds the appropriate header (Token) to the requests for formats and resources.
 
    For example, the [jQuery ajaxPrefilter](http://api.jquery.com/jquery.ajaxprefilter/) event to add the appropriate header - [Add custom auth headers to html reportviewer](https://www.telerik.com/forums/add-custom-auth-headers-to-html-reportviewer-0aafdd471455).
 

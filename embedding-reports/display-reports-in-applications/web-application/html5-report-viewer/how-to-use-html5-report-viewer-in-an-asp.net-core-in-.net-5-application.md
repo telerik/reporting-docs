@@ -39,23 +39,23 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Manual Configuration of the HTML5 Report Viewer
 
-1.  This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
-1.  Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
+1. This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
+1. Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
-    ```C#
-    app.UseStaticFiles();
-    ```
+	```C#
+	app.UseStaticFiles();
+	```
 
-1.  Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization.
+1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization.
 
-    For a detailed explanation, check the HTML5 Report Viewer [Manual Setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
+	For a detailed explanation, check the HTML5 Report Viewer [Manual Setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
 
-    By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
+	By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerUseHtml5ReportViewerInAnAspnetCoreInNet5Application.html region=Html5ViewerManualConfigurationOfTheHtml5ReportViewer}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerUseHtml5ReportViewerInAnAspnetCoreInNet5Application.html region=Html5ViewerManualConfigurationOfTheHtml5ReportViewer}}
 
-1.  Set the _launchSettings.json_ `launchUrl` to the new HTML page.
-1.  Finally, run the project to see the report.
+1. Set the _launchSettings.json_ `launchUrl` to the new HTML page.
+1. Finally, run the project to see the report.
 
 ## Demo project
 

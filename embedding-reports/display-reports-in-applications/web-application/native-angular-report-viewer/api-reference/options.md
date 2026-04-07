@@ -35,26 +35,7 @@ Below is the list of all options available during initialization for the Native 
 The options can be set from the `.HTML`/`.TS` component file or both(combined):
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerOptions.html region=NativeAngularViewerOptionsInit}}
-````TypeScript
-import { Component, ViewChild  } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { ReportSourceOptions } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-	
-		reportSource: ReportSourceOptions = { report: "Dashboard.trdx", parameters: { ReportYear: 2004 } };
-		serviceUrl: string = "https://demos.telerik.com/reporting/api/reports";
-	}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerOptions.ts region=NativeAngularViewerOptions}}
 
 ## Options
 

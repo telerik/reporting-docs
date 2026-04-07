@@ -29,615 +29,151 @@ In this article, we will go over each of the currently available events, showcas
 The `updateUI` event will be emitted when the state of the viewer changes.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerUpdateUIEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		updateUI() {
-			console.log("This event handler will be called when the state of the viewer changes.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_updateUI.ts region=NativeAngularViewerEvents_updateUI}}
 
 ### printStarted
 
 The `printStarted` event will be emitted when the printing starts.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerPrintStartedEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { PrintStartedEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		printStarted(printStartedEventArgs: PrintStartedEventArgs) {
-			console.log("This event will be emitted when the printing starts.", printStartedEventArgs);
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_printStarted.ts region=NativeAngularViewerEvents_printStarted}}
 
 ### printDocumentReady
 
 The `printDocumentReady` event will be emitted after the viewer finishes printing the report.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerPrintDocumentReadyEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { PrintDocumentReadyEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		printDocumentReady(printDocumentReadyEventArgs: PrintDocumentReadyEventArgs) {
-			console.log("This event will be emitted after the viewer finishes printing the report.", printDocumentReadyEventArgs);
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_printDocumentReady.ts region=NativeAngularViewerEvents_printDocumentReady}}
 
 ### exportStarted
 
 The `exportStarted` event will be emitted when an export operation is triggered.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerExportStartedEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { ExportStartedEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		exportStarted(exportStartedEventArgs: ExportStartedEventArgs) {
-			console.log("This event will be emitted when an export operation is triggered.", exportStartedEventArgs);
-    	};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_exportStarted.ts region=NativeAngularViewerEvents_exportStarted}}
 
 ### exportDocumentReady
 
 The `exportDocumentReady` event will be emitted after the viewer finishes exporting the report.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerExportDocumentReadyEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { ExportDocumentReadyEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		exportDocumentReady(exportDocumentReadyEventArgs: ExportDocumentReadyEventArgs) {
-		console.log("This event will be emitted after the viewer finishes exporting the report.", exportDocumentReadyEventArgs);
-    	};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_exportDocumentReady.ts region=NativeAngularViewerEvents_exportDocumentReady}}
 
 ### beforeLoadReport
 
 The `beforeLoadReport` event will be emitted before the rendering of a report begins.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerBeforeLoadReportEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		beforeLoadReport() {
-			console.log("This event will be emitted before the rendering of a report begins.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_beforeLoadReport.ts region=NativeAngularViewerEvents_beforeLoadReport}}
 
 ### beginLoadReport
 
 The `beginLoadReport` event will be emitted after the rendering of a report begins.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerBeginLoadReportEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		beginLoadReport() {
-			console.log("This event will be emitted after the rendering of a report begins.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_beginLoadReport.ts region=NativeAngularViewerEvents_beginLoadReport}}
 
 ### reportLoadProgress
 
 The `reportLoadProgress` event will be emitted after each successful [`Get Document Info`](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info) request until the report rendering is complete.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerReportLoadProgressEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { DocumentInfo } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		reportLoadProgress(e: DocumentInfo) {
-			console.log("The e parameter will contain the current information for the report rendering progress.", e);
-			console.log("This event will be emitted after each successful Get Document Info request until the report rendering is complete.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_reportLoadProgress.ts region=NativeAngularViewerEvents_reportLoadProgress}}
 
 ### reportLoadComplete
 
 The `reportLoadComplete` event will be emitted after the rendering of a report ends.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerReportLoadCompleteEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { DocumentInfo } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		reportLoadComplete(e: DocumentInfo) {
-			console.log("The document information such as the page count, where it has document map, etc. will ve sent via the e object.", e);
-			console.log("This event will be emitted after the rendering of a report ends.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_reportLoadComplete.ts region=NativeAngularViewerEvents_reportLoadComplete}}
 
 ### renderingStopped
 
 The `renderingStopped` event will be emitted when report rendering is cancelled.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerRenderingStoppedEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		renderingStopped() {
-			console.log("This event will be emitted when report rendering is cancelled.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_renderingStopped.ts region=NativeAngularViewerEvents_renderingStopped}}
 
 ### error
 
 The `error` event will be emitted when viewer encounters an error.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerErrorEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		error(e: string) {
-			console.log("This event will be emitted when viewer encounters an error.");
-			console.log("The error message", e);
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_error.ts region=NativeAngularViewerEvents_error}}
 
 ### loadedReportChange
 
 The `loadedReportChange` event will be emitted when the previewed report is __changed__ or __refreshed__.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerLoadedReportChangeEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		loadedReportChange() {
-			console.log("This event will be emitted when the loaded report is changed.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_loadedReportChange.ts region=NativeAngularViewerEvents_loadedReportChange}}
 
 ### pageReady
 
 The `pageReady` event will be emitted when the viewer content has been loaded from the template and is ready to display reports or perform any other operations on it.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerPageReadyEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { PageInfo } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		pageReady(e: PageInfo) {
-			console.log("The current page information such as the page number, the page content, etc.", e)
-			console.log("This event will be emitted when the viewer content has been loaded from the template and is ready to display reports or perform any other operations on it.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_pageReady.ts region=NativeAngularViewerEvents_pageReady}}
 
 ### navigateToReport
 
 The `navigateToReport` event will be emitted when the viewer navigates to a new report through the [`Drillthrough/Navigate To Report Action`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action).
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerNavigateToReportEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		navigateToReport(e: any) {
-			console.log("The report source object of the newly loaded report", e)
-			console.log("This event will be emitted when the viewer navigates to a new report through the Drillthrough/Navigate To Report action.");
-		};
-	}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_navigateToReport.ts region=NativeAngularViewerEvents_navigateToReport}}
 
 ### currentPageChanged
 
 The `currentPageChanged` event will be emitted when the viewer changes its currently displayed page.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerCurrentPageChangedEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { CurrentPageChangedEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		currentPageChanged(currentPageChangedEventArgs: CurrentPageChangedEventArgs) {
-		console.log("The page number and document id.", currentPageChangedEventArgs);
-		console.log("This event will be emitted when the viewer changes its currently displayed page.");
-    	};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_currentPageChanged.ts region=NativeAngularViewerEvents_currentPageChanged}}
 
 ### interactiveActionEnter
 
 The `interactiveActionEnter` event will be emitted when the cursor hovers over an interactive action.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerInteractiveActionEnterEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		interactiveActionEnter(interactiveActionArgs: PageActionEventArgs) {
-			console.log("The interactive action arguments.", interactiveActionArgs);
-			console.log("This event will be emitted when the cursor hovers over an interactive action.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_interactiveActionEnter.ts region=NativeAngularViewerEvents_interactiveActionEnter}}
 
 ### interactiveActionExecuting
 
 The `interactiveActionExecuting` event will be emitted before an interactive action is executed.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerInteractiveActionExecutingEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		interactiveActionExecuting(pageActionEventArgs: PageActionEventArgs) {
-			console.log("This event will be emitted before an interactive action is executed.", pageActionEventArgs);
-    	};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_interactiveActionExecuting.ts region=NativeAngularViewerEvents_interactiveActionExecuting}}
 
 ### interactiveActionLeave
 
 The `interactiveActionLeave` event will be emitted when the cursor leaves the interactive action area.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerInteractiveActionLeaveEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { PageActionEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		interactiveActionLeave(interactiveActionArgs: PageActionEventArgs) {
-			console.log("The interactive action arguments.", interactiveActionArgs);
-			console.log("This event will be emitted when the cursor leaves the interactive action area.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_interactiveActionLeave.ts region=NativeAngularViewerEvents_interactiveActionLeave}}
 
 ### toolTipOpening
 
 The `toolTipOpening` event will be emitted when a tooltip is opened.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerToolTipOpeningEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		toolTipOpening(tooltipEventArgs: TooltipEventArgs) {
-        	console.log("The tooltip arguments.", tooltipEventArgs);
-		console.log("This event will be emitted when a tooltip is opened.");
-    	};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_toolTipOpening.ts region=NativeAngularViewerEvents_toolTipOpening}}
 
 ### toolTipClosing
 
 The `toolTipClosing` event will be emitted when a tooltip is closed.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerToolTipClosingEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { TooltipEventArgs } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		toolTipClosing(tooltipEventArgs: TooltipEventArgs) {
-			console.log("The tooltip arguments.", tooltipEventArgs);
-			console.log("This event will be emitted when a tooltip is closed.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_toolTipClosing.ts region=NativeAngularViewerEvents_toolTipClosing}}
 
 ### reportVersionMismatch
 
 The `reportVersionMismatch` event will be emitted when there is a mismatch between the version of the viewer and the reporting service.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerReportVersionMismatchEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		reportVersionMismatch() {
-			console.log("This event will be emitted when there is mismatch between the version of the viewer and the reporting service.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_reportVersionMismatch.ts region=NativeAngularViewerEvents_reportVersionMismatch}}
 
 ### parametersLoaded
 
 The `parametersLoaded` event will be emitted after the [`Get Report Parameters `](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters) is made.
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerEvents.html region=NativeAngularViewerParametersLoadedEvent}}
-````TypeScript
-import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { ReportParameterInfo } from '@progress/telerik-common-report-viewer'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-		parametersLoaded(e: ReportParameterInfo[]) {
-			console.log("An array of the parameter values is sent via the event object.", e);
-			console.log("This event will be emitted after the Get Report Parameters request is made.");
-		};
-	}
-````
-
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerEvents_parametersLoaded.ts region=NativeAngularViewerEvents_parametersLoaded}}

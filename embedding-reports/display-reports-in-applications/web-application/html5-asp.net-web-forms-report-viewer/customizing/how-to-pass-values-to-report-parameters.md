@@ -38,52 +38,52 @@ To give an example, we will use the Invoice report from our examples and will up
 
 1. Add a connectionStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's `web.config` file. For example:
 
-    ```XML
-    <connectionStrings>
-    	<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-    		connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-    		providerName="System.Data.SqlClient" />
-    </connectionStrings>
-    ```
+	```XML
+	<connectionStrings>
+		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+			connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+			providerName="System.Data.SqlClient" />
+	</connectionStrings>
+	```
 
-    At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at **[host]/InvoiceParameters.aspx** without any modifications.
+	At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at **[host]/InvoiceParameters.aspx** without any modifications.
 
-1.  Add code for updating the `ReportSource.Parameters` collection in the code behind:
+1. Add code for updating the `ReportSource.Parameters` collection in the code behind:
 
-    ```C#
-    protected void Page_Load(object sender, EventArgs e)
-    {
-    	if (!IsPostBack)
-    	{
-    		this.reportViewer1.ReportSource.Parameters.Add("OrderNumber", this.invoiceId.Value);
-    	}
-    }
-    ```
-    {{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
+	```C#
+	protected void Page_Load(object sender, EventArgs e)
+	{
+		if (!IsPostBack)
+		{
+			this.reportViewer1.ReportSource.Parameters.Add("OrderNumber", this.invoiceId.Value);
+		}
+	}
+	```
+	{{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
 
-1.  Add the required scripts and stylesheets:
+1. Add the required scripts and stylesheets:
 
-{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters}}
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters}}
 
-1.  Add the custom parameter UI - a dropdown selector with a few values:
+1. Add the custom parameter UI - a dropdown selector with a few values:
 
-{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters2}}
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters2}}
 
-1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
+1. Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
 
-{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters3}}
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters3}}
 
-1.  Add code that updates the ReportSource parameters collection with the selected **Invoice Id** from the dropdown box:
+1. Add code that updates the ReportSource parameters collection with the selected **Invoice Id** from the dropdown box:
 
-{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters4}}
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters4}}
 
-1.  The HTML page that we have just created should looks like this:
+1. The HTML page that we have just created should looks like this:
 
-{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_01.aspx region=WebFormsViewerPassValuesToReportParameters5}}
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_01.aspx region=WebFormsViewerPassValuesToReportParameters5}}
 
 1. The HTML page that we have just created should look like this:
 
-{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_02.aspx region=WebFormsViewerPassValuesToReportParameters6}}
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_02.aspx region=WebFormsViewerPassValuesToReportParameters6}}
 
 
 1. Run the project and verify that the __Invoice Id__ selection really updates the report.

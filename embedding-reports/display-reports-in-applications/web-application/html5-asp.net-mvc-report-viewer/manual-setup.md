@@ -59,12 +59,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. The default viewer implementation depends externally on **jQuery**. Create a section named **scripts** and add link to jQuery in the view:
 
-	```CSHTML
-	@section scripts
-	{
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	}
-	```
+	{{source=CodeSnippets\MvcCS\Views\Home\LayoutRenderSections_1.cshtml region=JQuerySectionExample}}
 
 	> jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application (layout page, section or bundle).
 
@@ -127,57 +122,14 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Open the layout page and call the `RenderSection` helper method in the `<head>` element. The method must be called for each named section in the view with the viewer - _scripts section_ and _styles section_.
 
-	```CSHTML
-	@RenderSection("styles", required: false)
-	@RenderSection("scripts", required: false)
-	```
+	{{source=CodeSnippets\MvcCS\Views\Home\LayoutRenderSections_1.cshtml region=RenderSectionsExample}}
 
 1. Finally the layout page should look like this:
 
-	```CSHTML
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Demo</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-			@RenderSection("styles", required: false)
-			@RenderSection("scripts", required: false)
-		</head>
-		<body>
-			@RenderBody()
-		</body>
-	</html>
-	```
+	{{source=CodeSnippets\MvcCS\Views\Home\LayoutRenderSections.cshtml region=LayoutPageExample}}
 
 	The page with the HTML5 ASP.NET MVC Report Viewer should look like this:
 
-	```CSHTML
-	@section styles
-	{
-		<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-
-		<style>
-		#reportViewer1 {
-				position: absolute;
-				inset: 5px;
-				overflow: hidden;
-			}
-		</style>
-	}
-
-	@section scripts
-	{
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="~/api/reports/resources/js/telerikReportViewer"></script>
-		@(Html.TelerikReporting().DeferredScripts())
-	}
-	@(Html.TelerikReporting().ReportViewer()
-		.Id("reportViewer1")
-		.ServiceUrl("/api/reports/")
-		.ReportSource(new UriReportSource() { Uri = "Product Catalog.trdp" })
-		.Deferred()
-	)
-	```
+	{{source=CodeSnippets\MvcCS\Views\Home\MvcViewerFullPage.cshtml region=MvcViewerFullPageExample}}
 
 1. Run the project and navigate to the view with the HTML5 ASP.NET MVC Report Viewer that we have just created.

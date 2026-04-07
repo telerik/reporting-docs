@@ -92,42 +92,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Navigate to `Views` -> `Home` and add a new CSHTML Page for the Web Report Designer. Name the file `Index.cshtml`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-	````CSHTML
-	@using Telerik.Reporting
-	@{
-		Layout = null;
-	}
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Telerik Web Report Designer Demo</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div id="webReportDesigner">
-			loading...
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.kendo.min.js"></script>
-		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
-		<script type="text/javascript">
-			$(document).ready(function () {
-				$("#webReportDesigner").telerik_WebReportDesigner({
-					persistSession: false,
-					toolboxArea: {
-						layout: "list"
-					},
-					serviceUrl: "/api/reportdesigner/",
-					report: "SampleReport.trdp"
-				}).data("telerik_WebDesigner");
-			});
-		</script>
-	</body>
-	</html>
-	````
+	{{source=CodeSnippets\MvcCS\Views\Home\WebReportDesignerSetup.cshtml region=WebReportDesignerExample}}
 	{{source=CodeSnippets\MvcVB\Views\Home\WebReportDesignerSetup.vbhtml region=WebReportDesignerExample}}
 
 

@@ -30,71 +30,7 @@ The Native Angular Report Viewer exposes the ability to trigger various commands
 The following example illustrates a list of all the available commands in the viewer, and how they may be invoked:
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerCommands.html region=NativeAngularViewerCommandButtons}}
-````TypeScript
-import { Component, ViewChild  } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { ReportSourceOptions } from '@progress/telerik-common-report-viewer'
-	
-interface commandButtons {
-	name: string;
-	commandName: string;
-	commandValue?: any
-}
-
-@Component({
-	selector: 'app-root',
-	styles: [`.func-btn-wrapper {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 1rem;
-		padding: 2rem;
-		padding-top: 0.5rem;
-		margin-top: 2rem;
-		justify-content: center;
-		align-items: center;
-		border-top: 1px solid #7e7d7d;
-	}`],
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
-})
-	
-export class AppComponent {
-	title = 'Native Angular Report Viewer Demo';
-
-	@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-
-	reportSource: ReportSourceOptions = { report: "Dashboard.trdx", parameters: { ReportYear: 2004 } };
-	serviceUrl: string = "https://demos.telerik.com/reporting/api/reports";
-
-	public buttons: Array<commandButtons> = [
-		{ name: 'navigateBackward', commandName: 'navigateBackward' },
-		{ name: 'navigateForward', commandName: 'navigateForward' },
-		{ name: 'stopRendering', commandName: 'stopRendering' },
-		{ name: 'refreshReport', commandName: 'refreshReport' },
-		{ name: 'navigateToFirstPage', commandName: 'navigateToFirstPage' },
-		{ name: 'navigateToPrevPage', commandName: 'navigateToPrevPage' },
-		{ name: 'navigateToNextPage', commandName: 'navigateToNextPage' },
-		{ name: 'navigateToLastPage', commandName: 'navigateToLastPage' },
-		{ name: 'toggleDocumentMap', commandName: 'toggleDocumentMap' },
-		{ name: 'toggleParametersSection', commandName: 'toggleParametersSection' },
-		{ name: 'setViewMode', commandName: 'setViewMode' },
-		{ name: 'zoomIn', commandName: 'zoomIn' },
-		{ name: 'zoomOut', commandName: 'zoomOut' },
-		{ name: 'setScaleMode', commandName: 'setScaleMode', commandValue: { scale: 3, scaleMode: 'Specific' } },
-		{ name: 'setReportSource', commandName: 'setReportSource', commandValue: { report: 'Invoice.trdx', parameters: { OrderNumber: 'SO51088' }}},
-		{ name: 'exportReport', commandName: 'exportReport', commandValue: 'csv'  },
-		{ name: 'setAuthenticationToken', commandName: 'setAuthenticationToken', commandValue: 'Sample Authentication Token'  },
-		{ name: 'printReport', commandName: 'printReport' },
-		{ name: 'toggleSearchWindow', commandName: 'toggleSearchWindow' },
-		{ name: 'toggleAiPromptWindow', commandName: 'toggleAiPromptWindow' },
-	]
-
-	public execute(commandName: string, commandValue?: any): void {
-		this.viewer.executeCommand(commandName, commandValue);
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerCommands.ts region=NativeAngularViewerCommands}}
 
 ## Commands List
 

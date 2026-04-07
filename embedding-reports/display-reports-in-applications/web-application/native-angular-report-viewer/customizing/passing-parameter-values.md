@@ -21,20 +21,7 @@ The report identifier and all required parameter values for it are packed in a `
 The following example will demonstrate how a [select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) control outside of the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) can have its `selected` value passed to the report viewer's `reportSource`:
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerCustomizing.html region=NativeAngularViewerPassingParameters}}
-```TypeScript
-export class AppComponent {
-	@ViewChild('report') public report: ReportingAngularViewerComponent;
-
-	onChange(OrderNumber: string) {
-		this.report.executeCommand("setReportSource", {
-			report: "Invoice.trdx",
-			parameters: {
-				OrderNumber
-			}
-		})
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\TypeScript\CustomizeNativeAngularViewer.ts region=CustomizeNativeAngularViewer_PassingParameterValues}}
 
 ## See Also
 

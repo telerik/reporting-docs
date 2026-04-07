@@ -54,28 +54,7 @@ In the component with the report viewer, `import` the [`@progress/kendo-svg-icon
 In the below example, we will demonstrate how to change the 'Stop Rendering' button's default icon:
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerCustomizing.html region=NativeAngularViewerToolbarIcons}}
-````TypeScript
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
-import { ReportSourceOptions } from '@progress/telerik-common-report-viewer'
-import { xOutlineIcon } from '@progress/kendo-svg-icons'
-	
-	@Component({
-		selector: 'app-root',
-		templateUrl: './app.component.html',
-		styleUrls: ['./app.component.scss']
-	})
-	
-	export class AppComponent implements AfterViewInit {
-		title = 'Native Angular Report Viewer Demo';
-	
-		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-	
-		ngAfterViewInit(){
-			this.viewer.xCircleIcon = xOutlineIcon;
-		}
-	}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\CustomizeNativeAngularViewer.ts region=CustomizeNativeAngularViewer_ToolbarIcons}}
 
 ## Toolbar Icons List
 

@@ -22,16 +22,7 @@ To attach an event handler to the viewer, specify the name of your function when
 
 Then, we can create the event handler functions in the component where the viewer is used: 
 
-````TypeScript
-export class AppComponent {
-	myReadyHandler() {
-		console.log('The viewer is ready!');
-	}
-	myViewerToolTipOpeningHandler(e: any, args: any) {
-		console.log('Tooltip shows: ' + args.toolTip.text);
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularHtml5Viewer.ts region=AngularViewerEventHandlers_Ready}}
 
 ## See Also
 

@@ -47,6 +47,6 @@ A newer version of Telerik Reporting is required for compatibility.
 
 ## Solution
 
-To resolve the issue, update the Reporting packages/assemblies in the project to **Progress® Telerik® Reporting 2026 Q1 (20.0.26.211)**, which is compatible with Telerik.Licensing version **1.7.0**. Ensure that all relevant dependencies are updated to avoid compatibility issues.
+To resolve the issue, update the Reporting packages/assemblies in the project to **Progress® Telerik® Reporting 2026 Q1 (20.0.26.304)**, which is compatible with Telerik.Licensing version **1.7.0**. Ensure that all relevant dependencies are updated to avoid compatibility issues.
 
 If you do not wish to update the Reporting dependencies right now, revert to using version 1.6.40 of the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) NuGet package.

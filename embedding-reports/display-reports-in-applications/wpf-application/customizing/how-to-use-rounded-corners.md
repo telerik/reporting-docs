@@ -20,20 +20,7 @@ public MainWindow()
 	this.ReportViewer1.CornerRadius = new CornerRadius(15);
 }
 ````
-````XAML
-<tr:ReportViewer.ReportSource>
-	<telerikReporting:UriReportSource Uri="..\..\..\..\..\..\..\Report Designer\Examples\Report Catalog.trdp" />
-				</tr:ReportViewer.ReportSource>
-				<tr:ReportViewer.Style>
-					<Style TargetType="tr:ReportViewer" BasedOn="{StaticResource {x:Type tr:ReportViewer}}">
-						<Setter Property="CornerRadius" Value="5"/>
-						<Setter Property="Padding" Value="5"/>
-						<Setter Property="BorderThickness" Value="3"/>
-						<Setter Property="BorderBrush" Value="Yellow"/>
-					</Style>
-				</tr:ReportViewer.Style>
-</tr:ReportViewer>
-````
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WindowRoundCorners.xaml region=WpfViewerRoundCorners}}
 
 
 Supported in all of the themes available to the WPF Report Viewer.

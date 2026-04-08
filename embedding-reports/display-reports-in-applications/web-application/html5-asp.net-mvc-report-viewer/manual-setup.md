@@ -59,7 +59,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. The default viewer implementation depends externally on **jQuery**. Create a section named **scripts** and add link to jQuery in the view:
 
-	{{source=CodeSnippets\MvcCS\Views\Home\LayoutRenderSections_1.cshtml region=JQuerySectionExample}}
+	{{source=CodeSnippets\MvcCS\Views\Home\LayoutRenderSections_2.cshtml region=JQuerySectionExample}}
 
 	> jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application (layout page, section or bundle).
 

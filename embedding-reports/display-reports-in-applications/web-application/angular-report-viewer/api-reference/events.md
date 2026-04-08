@@ -25,22 +25,11 @@ table th:nth-of-type(2) {
 
 1. Create a handler function in the component's `.TS` file:
 
-   ```TypeScript
-   export class ReportViewerComponent implements AfterViewInit {
-   	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-
-   	ready() {
-   		console.log('ready');
-   	}
-   	viewerToolTipOpening(e: any, args: any) {
-   		console.log('viewerToolTipOpening ' + args.toolTip.text);
-   	}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerEvents.ts region=AngularViewerEventHandlers}}
 
 1. In the `.HTML` component file, assing the handler to the corresponding event:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerEvents.html region=AngularViewerHowToUseTheEvents}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerEvents.html region=AngularViewerHowToUseTheEvents}}
 
 Below is a list of all available report viewer events.
 

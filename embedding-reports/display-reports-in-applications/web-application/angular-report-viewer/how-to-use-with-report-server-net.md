@@ -26,88 +26,55 @@ The user account that will authenticate with the Report Server may be any User, 
 
 1. Install the Telerik Angular Report Viewer NPM package by running:
 
-   ```powershell
-   npm install @progress/telerik-angular-report-viewer
-   ```
+	```powershell
+	npm install @progress/telerik-angular-report-viewer
+	```
 
-   > If you receive a _403 Forbidden Error_, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
-   >
-   > ```powershell
-   > npm login --registry=https://registry.npmjs.org --scope=@progress
-   > ```
+	> If you receive a _403 Forbidden Error_, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
+	>
+	> ```powershell
+	> npm login --registry=https://registry.npmjs.org --scope=@progress
+	> ```
 
 1. Once installed, import the `TelerikReportingModule` in [your application root module](https://angular.io/guide/ngmodules#!#angular-modularity) or [standalone component](https://angular.dev/guide/components):
 
-   ```TypeScript
-   import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
-
-   @Component({
-   	selector: 'app-root',
-   	standalone: true,
-   	imports: [TelerikReportingModule],
-   	templateUrl: './app.component.html',
-   	styleUrl: './app.component.scss'
-   })
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerWithReportServerNet.ts region=AngularViewerImportWithReportServerNet}}
 
 1. Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _index.html_:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
 
-   > To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
+	> To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
 
-   If you use the **styleUrls** attribute to reference the CSS, it is required to set the view encapsulation to **None**:
+	If you use the **styleUrls** attribute to reference the CSS, it is required to set the view encapsulation to **None**:
 
-   ```TS
-   import { Component, ViewEncapsulation } from '@angular/core';
-   	@Component({
-   		encapsulation: ViewEncapsulation.None
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerWithReportServerNet_1.ts region=AngularViewerImportWithReportServerNetDisableEncapsulation}}
 
 1. In the class of the component(e.g. `AppComponent`) where the viewer will be displayed, define a `viewerContainerStyle` object property that will be used to set the container styling:
 
-   ```TS
-   export class AppComponent {
-   	viewerContainerStyle = {
-   		position: 'relative',
-   		width: '1000px',
-   		height: '800px',
-   		['font-family']: 'ms sans serif'
-   	};
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerWithReportServerNet.ts region=AngularViewerImportWithReportServerNetContainerStyle}}
 
 1. In the same component class, define a `reportSource` object property specifying the category and the name of the report that will be displayed. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
 
-   ```TS
-   reportSource = {
-   	report: 'Samples/Dashboard',
-   	parameters: {}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerWithReportServerNet_1.ts region=AngularViewerImportWithReportServerRestService}}
 
 1. In the same component class, define a `reportServer` object property with a `url` string pointing to the Report Server for .NET, and a `getPersonalAccessToken` callback, which will be executed when the report viewer requests from the server to render the report.
 
-   ```TS
-   reportServer = {
-   	url: 'http://dnikolovlap:81/',
-   	getPersonalAccessToken: () => fetch('/rs-token').then(response => response.text())
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerWithReportServerNet_1.ts region=AngularViewerImportWithReportServerReportServer}}
 
-   In this example, the `getPersonalAccessToken` callback makes a request to a _/rs-token_ endpoint that returns the token used to authorize access to using the Report Server for .NET REST API.
+	In this example, the `getPersonalAccessToken` callback makes a request to a _/rs-token_ endpoint that returns the token used to authorize access to using the Report Server for .NET REST API.
 
-   This is the **recommended** approach, but if an endpoint cannot be exposed, the token can be hardcoded in the callback: `getPersonalAccessToken: () => Promise.resolve('TOKEN_STRING')`
+	This is the **recommended** approach, but if an endpoint cannot be exposed, the token can be hardcoded in the callback: `getPersonalAccessToken: () => Promise.resolve('TOKEN_STRING')`
 
 1. In the HTML template of the component, define the `<tr-viewer>` element, and pass the defined properties to their corresponding properties of the Angular Wrapper Report Viewer:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps4}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps4}}
 
 1. Run the application:
 
-   ```powershell
-   ng serve
-   ```
+	```powershell
+	ng serve
+	```
 
 ## See Also
 

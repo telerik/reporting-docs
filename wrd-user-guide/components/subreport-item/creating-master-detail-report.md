@@ -26,7 +26,7 @@ The following example demonstrates how to create a master-detail report using Su
 
 The next video demonstrates how to create master-detail reports by using SubReports in the Telerik Web Report Designer.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GnZi9PP9EK8?si=qaBfIZnbUu1fQzyK&rel=0" title="Adding a SubReport Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/GnZi9PP9EK8?si=qaBfIZnbUu1fQzyK&rel=0" title="Adding a SubReport Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Step 1: Building the Child Report
 

@@ -177,7 +177,7 @@ The HTML5 Report Viewer's content is rendered in **DIV** elements. The HTML repo
 ## How to display the HTML5 Report Viewer in Web Applications
 
 <div style="position: relative; width: 80%; height: 500px;">
-    <iframe src="https://www.youtube.com/embed/GeCUGTgZziI" 
+    <iframe loading="lazy" src="https://www.youtube.com/embed/GeCUGTgZziI" 
             title="Setting up Telerik Html5 Report Viewer with an external Telerik Reporting REST Service in .NET" frameborder="0" allowfullscreen
             allow="accelerometer; autoplay; picture-in-picture" 
             style="position: absolute; width: 100%; height: 100%;">

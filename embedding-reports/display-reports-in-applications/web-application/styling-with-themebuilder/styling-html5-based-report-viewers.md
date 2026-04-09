@@ -63,10 +63,7 @@ After finalizing your customizations, you can export your theme. Click **Export 
 
 For example, copy the CSS file from the `css` folder in the exported package and add it to your project. In the report viewer file, replace the existing reference to the Telerik and Kendo UI theme with the ThemeBuilder-exported theme:
 
-```HTML
-<!--<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" id="theme-css" />-->
-<link rel="stylesheet" href="/css/tb-theme.css" />
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\ThemeBuilderStyling.html region=ThemeBuilderHtml5ViewersCss}}
 
 > In JavaScript-based projects, if preferred, you can instead utilize the files from the `scss` folder as an NPM package. Further information on this approach can be found at [Using the ThemeBuilder Output as an NPM Package](https://docs.telerik.com/themebuilder/using-exported-styles/exported-package#using-the-themebuilder-output-as-an-npm-package).
 

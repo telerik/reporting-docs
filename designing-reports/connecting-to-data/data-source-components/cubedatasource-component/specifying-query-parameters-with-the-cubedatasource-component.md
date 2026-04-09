@@ -18,14 +18,7 @@ The `CubeDataSource` component supports parameterized __MDX__ queries by associa
 
 When creating a parameterized query, you identify the parameter name by prefixing the name with the *"@"* character. For example, *"@Year"* would be a valid parameter name. __MDX__ supports only parameters for literal or scalar values. To create a parameter that references a member, set, or tuple, you would have to use a function such as __StrToMember__ or __StrToSet__. To illustrate this, let us define a simple __MDX__ query that selects product sales grouped by category and subcategory, and define a slicing axis by year, where the chosen year is specified as a parameter. Since the *"@Year"* parameter is passed as a string literal value, we need to use the __StrToMember__ function to convert that value to a valid member of the cube as shown below:
 
-````SQL
-select non empty { [Measures].[Sales Amount] } on columns,
-	non empty { [Product].[Category].[Category] *
-	[Product].[Subcategory].[Subcategory] } on rows
-from [Adventure Works]
-where StrToMember(@Year)
-````
-
+{{source=CodeSnippets\CS\SQL\MdxSalesAmountFilterByMember.sql}}
 The following code sample illustrates how to pass a value to the *"@Year"* parameter of the query using the `Parameters` collection of the `CubeDataSource` component:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=SingleValueParameterSnippet}}
@@ -33,14 +26,7 @@ The following code sample illustrates how to pass a value to the *"@Year"* param
 
 When you need to pass multiple values as a single parameter to the query, use the __StrToSet__ function instead. For example, to pass several years for the slicing axis at once, we can modify the previous query as shown below:
 
-````SQL
-select non empty { [Measures].[Sales Amount] } on columns,
-	non empty { [Product].[Category].[Category] *
-	[Product].[Subcategory].[Subcategory] } on rows
-from [Adventure Works]
-where StrToSet(@Year)
-````
-
+{{source=CodeSnippets\CS\SQL\MdxSalesAmountFilterBySet.sql}}
 Now it is possible to assign an array of years to the data source parameter:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=MultiValueParameterSnippet}}

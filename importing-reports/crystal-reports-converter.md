@@ -1,4 +1,4 @@
----
+﻿---
 title: SAP Crystal Reports
 page_title: Converting reports created with SAP Crystal Reports
 description: "Learn how to convert an existing report, created with the 'SAP Crystal Reports' reporting solution, into a 'Telerik Reporting' report definition."
@@ -61,37 +61,7 @@ The Global Assembly Cache contains the following assemblies:
 
 The output from the _gacutil.exe_ above shows that the current version of the installed Crystal Reports runtime assemblies is **13.0.3500.0**. Here is what the configuration file with added binding redirects will look like:
 
-```XML
-<runtime>
-	<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-		<dependentAssembly>
-			<assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" publicKeyToken="692fbea5521e1304" culture="neutral"/>
-			<bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-		</dependentAssembly>
-		<dependentAssembly>
-			<assemblyIdentity name="CrystalDecisions.Shared" publicKeyToken="692fbea5521e1304" culture="neutral"/>
-			<bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-		</dependentAssembly>
-		<dependentAssembly>
-			<assemblyIdentity name="CrystalDecisions.Enterprise.Framework" publicKeyToken="692fbea5521e1304" culture="neutral"/>
-			<bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-		</dependentAssembly>
-		<dependentAssembly>
-			<assemblyIdentity name="CrystalDecisions.Enterprise.InfoStore" publicKeyToken="692fbea5521e1304" culture="neutral"/>
-			<bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-		</dependentAssembly>
-		<dependentAssembly>
-			<assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>
-			<bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-		</dependentAssembly>
-		<dependentAssembly>
-			<assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>
-			<bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-		</dependentAssembly>
-	</assemblyBinding>
-</runtime>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CrystalReportsConfiguration.xml region=CrystalReportsConfiguration}}
 During the conversion process, the engine outputs warnings and information messages for the converted items in the Summary page. After reviewing the messages, the produced report can be edited further to achieve the desired functionality.
 
 ## See Also

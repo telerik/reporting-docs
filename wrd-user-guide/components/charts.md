@@ -65,22 +65,7 @@ The next sections in this article demonstrate how to add each of the available [
 
 For this tutorial, use the following sample CSV data to create a CSV Data Source that will be used throughout this article:
 
-```csv
-Category,Year,Value
-Accessories,2003,230
-Accessories,2004,340
-Bikes,2001,150
-Bikes,2002,195
-Bikes,2003,340
-Bikes,2004,265
-Clothing,2002,80
-Clothing,2003,120
-Clothing,2004,110
-Components,2001,230
-Components,2002,140
-Components,2003,280
-Components,2004,310
-```
+{{source=CodeSnippets\CS\CSV\CategorySalesData.csv}}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TNRInBruNOk?si=2k43jJPrsFnrBGNX&rel=0" title="Adding a CSV Data Source in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

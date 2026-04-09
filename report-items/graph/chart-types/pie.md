@@ -30,16 +30,7 @@ We are going to displays the SubTotal for the Top 10 performing Stores as a perc
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
-````SQL
-SELECT
-	[Sales].[Store].[Name] AS 'StoreName',
-	[Sales].[SalesOrderHeader].[SubTotal]
-FROM
-	[Sales].[SalesOrderDetail] INNER JOIN
-	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] INNER JOIN
-	[Sales].[Store] ON [Sales].[SalesOrderHeader].[CustomerID] = [Sales].[Store].[CustomerID]
-````
-
+{{source=CodeSnippets\CS\SQL\SelectStoreSalesSubtotal.sql}}
 To create the Pie chart by using the Pie Chart Wizard:
 
 1. Add Pie Chart as shown in the image below:

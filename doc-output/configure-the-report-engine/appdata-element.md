@@ -1,4 +1,4 @@
----
+﻿---
 title: appData Element
 page_title: appData Element Configuration 
 description: "Learn how to use the appData Element to choose where temporary application settings will be stored on the file system"
@@ -35,16 +35,7 @@ __`<appData>` element__
 
 ### Windows
 
-````XML
-<configuration>
-  <configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-    <Telerik.Reporting>
-        <appData path="C:\temp" />
-    </Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration.xml region=AppDataElementConfiguration}}
 ````JSON
 "telerikReporting": {
   "appData": {
@@ -55,16 +46,7 @@ __`<appData>` element__
 
 ### Unix(Linux/Mac):
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-    <Telerik.Reporting>
-        <appData path="/tmp/reportingAppData" />
-    </Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration_2.xml region=AppDataElementConfiguration_2}}
 ````JSON
 "telerikReporting": {
   "appData": {

@@ -1,4 +1,4 @@
----
+﻿---
 title: Styling Reports Using Style Sheets
 page_title: Web Report Designer - Styling Reports Using Style Sheets
 description: Learn how to customize the visuals of your report using the fine-grained, built-in styling model, similar to the Cascading Style Sheets (CSS) model.
@@ -90,26 +90,7 @@ Still, the raw XML representation can be helpful for reviewing which style prope
 
 Here's an example that styles all TextBox items with a light gray background, dark blue text, and bold Arial font:
 
-```XML
-
-<StyleSheet>
-<StyleRule>
-  <Selectors>
-    <TypeSelector Type="Telerik.Reporting.TextBox" />
-  </Selectors>
-  <Style>
-    <BackgroundColor>LightGray</BackgroundColor>
-    <Color>DarkBlue</Color>
-    <Font>
-      <Name>Arial</Name>
-      <Size>10pt</Size>
-      <Bold>true</Bold>
-    </Font>
-  </Style>
-</StyleRule>
-</StyleSheet>
-
-```
+{{source=CodeSnippets\MvcCS\XmlConfiguration\StylesheetConfiguration.xml region=StylesheetConfiguration}}
 And here's how it looks in the report preview:
 
 ![Preview External StyleSheet ><](images/wrd-preview-external-stylesheet.png)  

@@ -1,4 +1,4 @@
----
+﻿---
 title: AIClient Element
 page_title: AIClient Element Configuration
 description: "Learn how to utilize the AIClient Element to configure the AI model used for GenAI-powered insights during report preview."
@@ -63,28 +63,7 @@ __`<ragSettings>` element__
 
 The following code example demonstrates how to configure the Reporting engine with an Azure OpenAI client that uses the GPT-4o mini model variant. In addition, the AI functionality is limited to a few predefined prompts that enable it to summarize and translate the report.
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<AIClient
-			friendlyName="MicrosoftExtensionsAzureOpenAI"
-			model="gpt-4o-mini"
-			endpoint="https://ai-explorations.openai.azure.com/"
-			credential="..."
-			requireConsent="true"
-			allowCustomPrompts="false">
-			<predefinedPrompts>
-				<add text="Generate an executive summary of this report."/>
-				<add text="Translate the document into German."/>
-			</predefinedPrompts>
-		</AIClient>
-	</Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AiClientElementConfiguration.xml}}
 ````JSON
 "telerikReporting": {
 	"AIClient": {

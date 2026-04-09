@@ -34,18 +34,7 @@ The Range Chart is a modification of the more general Area Chart. That's why, it
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
-````SQL
-SELECT
-	[Sales].[SalesTerritory].[Name] AS 'TerritoryName',
-	[Sales].[SalesOrderHeader].[OrderDate],
-	[Sales].[SalesOrderHeader].[TotalDue]
-FROM
-	[Sales].[SalesOrderHeader] INNER JOIN
-	[Sales].[SalesTerritory] ON [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID]
-WHERE
-	YEAR([Sales].[SalesOrderHeader].[OrderDate]) IN (2002, 2003)
-````
-
+{{source=CodeSnippets\CS\SQL\SelectTerritorySalesByDate.sql}}
 To create the Range chart by using the Range Chart Wizard:
 
 1. Add Range Chart as shown in the image below:

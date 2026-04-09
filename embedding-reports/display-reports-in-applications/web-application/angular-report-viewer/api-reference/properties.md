@@ -32,10 +32,7 @@ Each [command](slug:telerikreporting/using-reports-in-applications/display-repor
 
 The other two methods, `enabled()` and `checked()` return a boolean value and can be used before executing a command or to find in what state the UI for the command should be.
 
-```HTML
-<tr-viewer #viewer1 />
-<button (click)="viewer1.commands.print.exec()">Print</button>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerApi.html region=AngularViewerPrintCommand}}
 
 The example above creates a _Print_ button and in the click event handler invokes report viewer `print` command.
 

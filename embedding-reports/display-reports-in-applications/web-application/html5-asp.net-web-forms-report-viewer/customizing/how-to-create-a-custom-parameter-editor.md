@@ -67,19 +67,11 @@ function createSingleSelectEditor(placeholder, options) {
 	};
 }
 ```
-```HTML
-</telerik:ReportViewer>
-	<ParameterEditors SingleSelectEditor="createSingleSelectEditor"/>
-</telerik:ReportViewer>
-```
+{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=WebFormsViewerSingleSelectEditor}}
 
 The viewer is using a special Kendo subset that contains only the required widgets and the [DropDownList](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget is not part of the subset, additionally the viewer adds jQuery but this happens late in the viewer initialization. Thus, add the following tags to the web page head element as shown in the following code snippet:
 
-```HTML
-<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
-<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerMarkup.html region=WebFormsViewerKendoDependencies}}
 
 If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor. Each custom editor requires two JavaScript functions provided as attributes: **MatchFunction** and **CreateEditorFunction**.
 
@@ -140,14 +132,6 @@ function createCustomEditor(placeholder, options) {
 
 Passing the parameter editor to the viewer:
 
-```HTML
-</telerik:ReportViewer>
-	<ParameterEditors>
-		<CustomEditors>
-			<telerik:CustomParameterEditor MatchFunction="customMatch" CreateEditorFunction="createCustomEditor"></telerik:CustomParameterEditor>
-		</CustomEditors>
-	</ParameterEditors>
-</telerik:ReportViewer>
-```
+{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=WebFormsViewerCustomEditorRegistration}}
 
 > You can use any other custom UI covering the requirements of the _CreateEditorFunction_ method.

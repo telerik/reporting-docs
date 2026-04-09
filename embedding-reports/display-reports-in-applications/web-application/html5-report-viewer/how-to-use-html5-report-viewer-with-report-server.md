@@ -63,7 +63,7 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
    $("#reportViewer1")
    	.telerik_ReportViewer({
    		serviceUrl: "/api/reports/",
-   		templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+   		templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html',
    		reportSource: {
    			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
    			parameters: {
@@ -97,7 +97,7 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
    			username: null,
    			password: null
    		},
-   		//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+   		//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html',
    		reportSource: {
    			// The report value should contain the Category and ReportName in the following format
    			// {Category/ReportName}

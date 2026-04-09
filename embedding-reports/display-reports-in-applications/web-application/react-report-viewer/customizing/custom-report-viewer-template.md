@@ -21,9 +21,7 @@ The React Report Viewer is based on the [HTML5 Report Viewer](slug:telerikreport
 1. Make the required changes in the file.
 1. Set the **templateUrl** property of the viewer:
 
-```HTML
-    <TelerikReportViewer templateUrl="/api/customtemplates/customTelerikReportViewerTemplate/"/>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\ReactViewerMarkup.html region=ReactViewerCustomTemplate}}
 
 ## See Also
 

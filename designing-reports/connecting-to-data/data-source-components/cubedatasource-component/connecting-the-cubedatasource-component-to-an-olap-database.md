@@ -1,4 +1,4 @@
----
+﻿---
 title: Connecting to OLAP Database
 page_title: Connecting CubeDataSource to OLAP Database
 description: "Learn how to use the configured Telerik Reporting CubeDataSource component to connect to an OLAP database."
@@ -21,16 +21,7 @@ The sample code below illustrates how to connect a `CubeDataSource` component to
 
 Instead of setting connection strings as property settings in the __CubeDataSource__ object, you can store them centrally as part of your application's configuration settings using the `connectionStrings` configuration element. This enables you to manage connection strings independently of your reports, including encrypting them using __Protected Configuration__. The following example shows how to connect to the __Adventure Works DW 2008R2__ sample database using a connection string which stored in the `connectionStrings` configuration element named __MyAdventureWorksDW__:
 
-````XML
-<configuration>
-	<connectionStrings>
-		<add name="MyAdventureWorksDW"
-		connectionString="Data Source=localhost;Initial Catalog=Adventure Works DW 2008R2"
-		providerName="Microsoft.AnalysisServices.AdomdClient" />
-	</connectionStrings>
-</configuration>
-````
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CubeDataSourceConfiguration.xml region=CubeDataSourceConfiguration}}
 When the connection string is stored in the configuration file you need to specify the name of the configuration element as a value for the `ConnectionString` property of the `CubeDataSource` component:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=ConnectionNameSnippet}}

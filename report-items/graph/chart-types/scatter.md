@@ -36,21 +36,7 @@ The Bubble Chart is a variation of the more general Scatter Chart and its wizard
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
-````SQL
-SELECT
-	[Person].[Contact].[FirstName] + ' ' + [Person].[Contact].[LastName] AS 'SalesPersonName',
-	[Sales].[SalesOrderHeader].[OrderDate],
-	[Sales].[SalesOrderHeader].[SubTotal]
-FROM
-	[Person].[Address] INNER JOIN
-	[Sales].[SalesOrderHeader] ON [Person].[Address].[AddressID] = [Sales].[SalesOrderHeader].[BillToAddressID] AND 
-		[Person].[Address].[AddressID] = [Sales].[SalesOrderHeader].[ShipToAddressID] INNER JOIN
-	[Person].[Contact] ON [Sales].[SalesOrderHeader].[ContactID] = [Person].[Contact].[ContactID] 
-WHERE
-	YEAR([Sales].[SalesOrderHeader].[OrderDate]) IN (2003, 2004) AND
-	[Person].[Address].[City] = 'Toronto'
-````
-
+{{source=CodeSnippets\CS\SQL\SelectSalesPersonOrdersByCity.sql}}
 To create the Scatter chart by using the Scatter Chart Wizard: 
 
 1. Add Bubble Chart as shown in the image below:

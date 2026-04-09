@@ -1,4 +1,4 @@
----
+﻿---
 title: cache Element
 page_title: cache Element Configuration
 description: "Learn how to change the cache Element settings to control the cache management system used by the report viewers"
@@ -61,23 +61,7 @@ All parameters and attributes for the available cache providers may be seen in t
 
 This is the default cache provider. When the `Cache` section is omitted from the `Telerik.Reporting` configuration, or the `BasePath` is not specified, the Reporting engine utilizes the temporary folder of the current user.
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="Auto">
-			<providers>
-				<provider name="AutoProviderName">
-					<parameters>
-						<parameter name="BasePath" value="C:\MyDataCache" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAutoConfiguration.xml region=CacheElementAutoConfiguration}}
 ````JSON
 "telerikReporting": {
 	"cache": {
@@ -101,23 +85,7 @@ This is the default cache provider. When the `Cache` section is omitted from the
 
 When the `BasePath` is not specified, the Reporting engine utilizes the temporary folder of the current user.
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="File">
-			<providers>
-				<provider name="FileProviderName">
-					<parameters>
-						<parameter name="BasePath" value="C:\MyDataCache" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementFileConfiguration.xml region=CacheElementFileConfiguration}}
 ````JSON
 "telerikReporting": {
 	"cache": {
@@ -139,19 +107,7 @@ When the `BasePath` is not specified, the Reporting engine utilizes the temporar
 
 ### The Memory Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="Memory">
-			<providers>
-				<provider name="MemoryProviderName" />
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementMemoryConfiguration.xml region=CacheElementMemoryConfiguration}}
 ````JSON
 "telerikReporting": {
 	"cache": {
@@ -167,19 +123,7 @@ When the `BasePath` is not specified, the Reporting engine utilizes the temporar
 
 ### The IsolatedStorage Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="IsolatedStorage">
-			<providers>
-				<provider name="IsolatedStorageProviderName" />
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementIsolatedStorageConfiguration.xml region=CacheElementIsolatedStorageConfiguration}}
 ````JSON
 "telerikReporting": {
 	"cache": {
@@ -195,24 +139,7 @@ When the `BasePath` is not specified, the Reporting engine utilizes the temporar
 
 ### The Database Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="Database">
-			<providers>
-				<provider name="DatabaseProviderName">
-					<parameters>
-						<parameter name="BackendName" value="DatabaseProviderBackendName" />
-						<parameter name="ConnectionString" value="DatabaseProviderConnectionString" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementDatabaseConfiguration.xml region=CacheElementDatabaseConfiguration}}
 ````JSON
 "telerikReporting": {
 	"cache": {
@@ -238,24 +165,7 @@ When the `BasePath` is not specified, the Reporting engine utilizes the temporar
 
 ### The ADO.NET Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="ADO.NET">
-			<providers>
-				<provider name="ADONETProviderName">
-					<parameters>
-						<parameter name="ProviderName" value="ADONETProviderProviderName" />
-						<parameter name="ConnectionString" value="ADONETProviderConnectionString" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAdoNetConfiguration.xml region=CacheElementAdoNetConfiguration}}
 ````JSON
 "telerikReporting": {
 	"cache": {

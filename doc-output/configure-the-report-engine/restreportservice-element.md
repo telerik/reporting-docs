@@ -1,4 +1,4 @@
----
+﻿---
 title: restReportService Element
 page_title: Configuring the restReportService Element
 description: "Learn how to set the Reporting REST Service configuration settings from the configuration file of the running project via the restReportService configuration element."
@@ -64,35 +64,7 @@ __`<storage>` element__
 
 ## Examples
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<restReportService hostAppId="Application1" workerCount="4" reportSharingTimeout="10" clientSessionTimeout="10" exceptionsVerbosity="detailed">
-			<reportResolver provider="type" />
-			<storage provider="file">
-				<parameters>
-					<parameter name="directory" value="C:\Temp\RestServiceStorage" />
-				</parameters>
-			</storage>
-			<!--<storage provider="Redis">
-				<parameters>
-					<parameter name="configuration" value="localhost:10001" />
-					<parameter name="databaseNumber" value="1" />
-				</parameters>
-			</storage>-->
-			<!--<storage provider="MSSQLServer">
-				<parameters>
-					<parameter name="connectionString" value="Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI" />
-					<parameter name="commandTimeout" value="60" />
-				</parameters>
-			</storage>-->
-		</restReportService>
-	</Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\RestReportServiceElementConfiguration.xml region=RestReportServiceElementConfiguration}}
 ````JSON
 "telerikReporting": {
 	"restReportService": {

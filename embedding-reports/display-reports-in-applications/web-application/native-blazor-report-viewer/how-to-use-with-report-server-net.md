@@ -28,22 +28,11 @@ The user account that will authenticate with the Report Server may be any User, 
 1. Add NuGet package reference to the **Telerik.ReportViewer.BlazorNative** package hosted on the Progress Telerik proprietary NuGet feed. Ensure that the Telerik NuGet feed is added to the NuGet Package Sources by following [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. (Optional) The [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) depends on version **9.1.0** of the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) product. If [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) is already used in your Blazor application, this step can be skipped. Otherwise, add the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) JS and its [Kendo theme](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-   ```HTML
-   <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
-
-   @* The version of the Kendo Utils should be updated according to the version of the Kendo theme used by the Telerik UI for Blazor package. *@
-   @* The version of the Kendo Theme can be seen in the release notes of the Telerik UI for Blazor version - https://www.telerik.com/support/whats-new/blazor-ui/release-history. *@
-   <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.0.1/utils/all.css" />
-   <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
-   <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-font-icons/font-icons.css" />
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseWithReportServerNet.html region=NativeBlazorViewerConfiguringForRSNET}}
 
 1. Add the [Native Blazor Report Viewer's](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) JS and CSS dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App).
 
-   ```HTML
-   <link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />
-   <script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js"></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually2}}
 
 1. Configure the project to recognize all Telerik components without explicit **@using** statements on every **.razor** file by adding the following code to your **~/\_Imports.razor**:
 

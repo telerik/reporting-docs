@@ -1,4 +1,4 @@
----
+﻿---
 title: Extending Report Designer
 page_title: Extending Report Designer at a Glance
 description: "Learn how to make the Telerik Reporting Standalone Designer recognize custom CLR public methods and properties to be used as User functions and ObjectDataSources."
@@ -16,24 +16,7 @@ It is a common requirement to add your own [User Functions](slug:telerikreportin
 
 To expose your data, so it can be utilized by the Object/OpenAccess/Entity [data source components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview), or extend the default behavior of the Telerik Reporting engine with custom User Functions, you have to use the [assemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) of the Telerik.Reporting configuration section to reference your custom assembly:
 
-````XML
-<configuration>
-	<configSections>
-		<section
-			name="Telerik.Reporting"
-			type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-			allowLocation="true"
-			allowDefinition="Everywhere"/>
-	</configSections>
-	...
-	<Telerik.Reporting>
-		<AssemblyReferences>
-			<add name="MyCustomAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
-		</AssemblyReferences>
-	</Telerik.Reporting>
-</configuration>
-````
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ExtendingReportDesignerAssemblyConfiguration.xml region=ExtendingReportDesignerAssemblyConfiguration}}
 This can be achieved either by manually editing the configuration file or by using the Standalone Report Designer's **Options** page.
 
 ## Update the Designer Configuration File through the UI
@@ -66,23 +49,7 @@ The section should be added to the designer configuration file, __Telerik.Report
 
 To instruct the Report Designer to look for assemblies in other locations as well, use the [`<probing>` Element](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/823z9h8w(v=vs.80)). For more information, see [Locating the Assembly through Codebases or Probing](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/15hyw9x3(v=vs.100)):
 
-````XML
-<configuration>
-...
-	<runtime>
-		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-			<probing privatePath="MyDir;MyDir2\SubDir"/>
-		</assemblyBinding>
-	</runtime>
-	<Telerik.Reporting>
-		<AssemblyReferences>
-			<add name="MyCustomAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
-		</AssemblyReferences>
-	</Telerik.Reporting>
-...
-</configuration>
-````
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ExtendingReportDesignerProbingConfiguration.xml region=ExtendingReportDesignerProbingConfiguration}}
 ## See Also
 
 * [How to use external assemblies with custom CLR objects in the Report Designer](slug:how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer)

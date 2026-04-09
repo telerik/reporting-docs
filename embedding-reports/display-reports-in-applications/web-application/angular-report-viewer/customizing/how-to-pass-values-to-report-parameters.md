@@ -18,30 +18,13 @@ This topic explains how to update the report parameters with values passed from 
 
 1. Add the custom UI in your application. For example:
 
-   ```HTML
-   <button (click)="onButtonClick(value)">Update parameter value</button>
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerPassValuesToReportParameters.html region=AngularViewerPassValuesToReportParametersFromTheApplicationUi}}
 
 1. Declare the variable for the viewer and update the viewer's report source with a new parameter value:
 
-   ```TypeScript
-   import { Component, ViewChild } from '@angular/core';
-   import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerPassParameters.ts region=AngularViewerPassValuesToReportParameters}}
 
-   export class AppComponent {
-   	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-
-   	onButtonClick(param: string) {
-   		var rs = {
-   			report: 'Invoice.trdp',
-   			parameters: { OrderNumber: param }
-   		};
-   		this.viewer.setReportSource(rs);
-   	}
-   }
-   ```
-
-   The `setReportSource(rs)` method will automatically refresh the report with the new parameter values.
+	The `setReportSource(rs)` method will automatically refresh the report with the new parameter values.
 
 ## See Also
 

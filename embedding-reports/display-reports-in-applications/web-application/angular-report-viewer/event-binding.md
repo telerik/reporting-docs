@@ -18,25 +18,11 @@ The Angular Report Viewer exposes these [Events](slug:telerikreporting/using-rep
 
 To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property of the viewer component. For example, we can attach to the `ready` and `viewerToolTipOpening` events of the viewer:
 
-````HTML
-<tr-viewer
-	[ready]="myReadyHandler"
-	[viewerToolTipOpening]="myViewerToolTipOpeningHandler">
-</tr-viewer>
-````
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerApi.html region=AngularViewerEventBinding}}
 
 Then, we can create the event handler functions in the component where the viewer is used: 
 
-````TypeScript
-export class AppComponent {
-	myReadyHandler() {
-		console.log('The viewer is ready!');
-	}
-	myViewerToolTipOpeningHandler(e: any, args: any) {
-		console.log('Tooltip shows: ' + args.toolTip.text);
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularHtml5Viewer.ts region=AngularViewerEventHandlers_Ready}}
 
 ## See Also
 

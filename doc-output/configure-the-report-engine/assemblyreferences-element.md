@@ -1,4 +1,4 @@
----
+﻿---
 title: assemblyReferences Element
 page_title: assemblyReferences Element Configuration
 description: "Learn how to set up the assemblyReferences Element to use custom user functions in the report and create ObjectDataSource components"
@@ -25,20 +25,7 @@ Defines a collection of assembly references used by the Reporting Engine during 
 
 The types from the assemblies included in the _assemblyReferences_ element do not need to be registered explicitly in the [_typeReferences_ Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) as all types in the assembly will be permitted to be used by the Reporting Engine.
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<assemblyReferences>
-			<add />
-			<clear />
-			<remove />
-		</assemblyReferences>
-	</Telerik.Reporting>	
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AssemblyReferencesElementConfiguration.xml region=AssemblyReferencesElementConfiguration}}
 ````JSON
 "telerikReporting": {
 	"assemblyReferences": [
@@ -72,24 +59,7 @@ The following code example demonstrates how to configure the reporting engine to
 
 > The [probing](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element) element is not supported in the .NET Standalone Designer
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<runtime>
-		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-			  <probing privatePath="MyDir; MyDir2\SubDir"/>
-		</assemblyBinding>
-	</runtime>
-	<Telerik.Reporting>
-		<assemblyReferences>
-			<add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
-		</assemblyReferences>
-	</Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AssemblyReferencesElementConfiguration_2.xml}}
 ````JSON
 "telerikReporting": {
 	"assemblyReferences": [

@@ -1,4 +1,4 @@
----
+﻿---
 title: Troubleshooting
 page_title: "Learn how to troubleshoot problems with Licensing in Telerik Reporting."
 description: "Learn about Troubleshooting License problems in Telerik Reporting after the 2025 Q1 (19.0.25.211) release."
@@ -24,22 +24,7 @@ In rare scenarios, clients keep getting Licensing watermarks in some environment
 
 Use the `TelerikLicensingVerbosity` configuration in your project file to enable detailed licensing diagnostics during build. A sample configuration of the proj file is shown below:
 
-```XML
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>MyProjNamespace</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <TelerikLicensingVerbosity>diagnostic</TelerikLicensingVerbosity>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Telerik.Reporting" Version="19.3.25.1001" />
-  </ItemGroup>
-</Project>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\LicenseConfiguration.xml region=LicenseConfiguration}}
 Here are the possible values for `TelerikLicensingVerbosity`:
 * `quiet` / `q` - the lowest verbosity level;
 * `verbose` / `v` - the normal/middle verbosity level;

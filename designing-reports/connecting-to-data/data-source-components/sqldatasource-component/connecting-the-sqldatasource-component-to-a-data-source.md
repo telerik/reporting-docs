@@ -1,4 +1,4 @@
----
+﻿---
 title: Connecting to a Data Source
 page_title: Connect the SqlDataSource to Database
 description: "Learn how to set up the SqlDataSource component to connect to a Data Source in .NET Framework and in .NET Core through the configuration file and code."
@@ -21,16 +21,7 @@ Instead of setting connection strings at design time as property settings in the
 
 The following example shows how to connect to the **SQL Server AdventureWorks** sample database using a connection string which stored in the `connectionStrings` configuration element named `MyAdventureWorksDB`:
 
-```XML
-<configuration>
-	<connectionStrings>
-		<add name="MyAdventureWorksDB"
-			connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
-			providerName="System.Data.SqlClient" />
-	</connectionStrings>
-</configuration>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\SqlDataSourceConfiguration.xml region=SqlDataSourceConfiguration}}
 .NET Framework applications use configuration files in XML format, while .NET Core and .NET applications usually have a JSON-based configuration file, called `appsettings.json`. The configuration of the connection strings section in .NET is explained in the following documentation article: [How to Host Reports Service in ASP.NET Core in .NET {{site.mindotnetversion}}](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api).
 
 When the connection string is stored in the configuration file, you need to specify the name of the configuration element as a value for the `ConnectionString` property of `SqlDataSource`. Specifying a value for the `ProviderName` property is no longer necessary, since that information is already present in the configuration element itself.

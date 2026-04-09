@@ -1,4 +1,4 @@
----
+﻿---
 title: Custom Cache Providers
 page_title: Configuring Custom Cache Providers for the Reporting engine
 description: "Learn how to configure a custom cache provider for the Reporting engine when working with Telerik Reporting."
@@ -26,21 +26,7 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 To register this new provider set the __provider__ attribute of the "Cache" element to the class name which implements ICacheProvider. Under "Providers" child element of the "Cache" element, create a "Provider" element with the same __name__ attribute as the __provider__ attribute of the "Cache" element. The __type__ attribute should be the [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0#System_Type_AssemblyQualifiedName) of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider:
 
-````XML
-<Telerik.Reporting>
-	<Cache provider="MyCacheProvider">
-		<Providers>
-			<Provider name="MyCacheProvider" type="MyNameSpace.MyCacheProvider, AssemblyName, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-				<Parameters>
-					<Parameter />
-				</Parameters>
-			</Provider>
-		</Providers>
-	</Cache>
-</Telerik.Reporting>
-````
-
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheManagementCustomProviderConfiguration.xml region=CacheManagementCustomProviderConfiguration}}
 ## See Also
 
 * [Configuring Cache](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Image Device Information Settings
 page_title: Image Device Information Settings at a glance
 description: "Find detailed information about the different Image rendering settings available, and understand their XML-based and JSON-based configuration file formats."
@@ -46,38 +46,7 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__, and __IMAGEPrint__ formats.
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<extensions>
-			<render>
-				<extension name="IMAGE">
-					<parameters>
-						<parameter name="OutputFormat" value="TIFF"/>
-						<parameter name="TiffCompression" value="RLE"/>
-					</parameters>
-				</extension>
-				<extension name="IMAGEPrintPreview">
-					<parameters>
-						<parameter name="OutputFormat" value="JPEG"/>
-					</parameters>
-				</extension>
-				<extension name="IMAGEPrint">
-					<parameters>
-						<parameter name="OutputFormat" value="PNG"/>
-						<parameter name="TextRenderingHint" value="AntiAliasGridFit"/>
-						<parameter name="DpiX" value="1200"/>
-						<parameter name="DpiY" value="1200"/>
-					</parameters>
-				</extension>
-			</render>
-		</extensions>
-	</Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ImageDeviceInfoConfiguration.xml region=ImageDeviceInfoConfiguration}}
 ````JSON
 "telerikReporting": {
 	"extensions": [

@@ -1,4 +1,4 @@
----
+﻿---
 title: Cache Management
 page_title: Configuring the Cache Management System of the Reporting Engine
 description: "Learn how to configure the cache management system of the Reporting engine by specifying a cache provider when working with Telerik Reporting."
@@ -28,12 +28,7 @@ table th:nth-of-type(3) {
 
 The cache management system can be configured by specifying one or more cache providers in the [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) of the application’s configuration file. For example, the following XML snippet configures the cache to store the rendered pages and resources in the file system:
 
-````XML
-<Telerik.Reporting>
-	<Cache provider="File" />
-</Telerik.Reporting>
-````
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheManagementFileConfiguration.xml region=CacheManagementFileConfiguration}}
 The "provider" attribute of the "Cache" element specifies the name of the current cache provider used by the viewers. There are several preconfigured providers that can be used by applications without any additional setup: 
 
 | Provider | Description | Parameters |
@@ -53,21 +48,7 @@ The "provider" attribute of the "Cache" element specifies the name of the curren
 
 The individual providers are registered by adding one or more "Provider" elements. The "name" attribute specifies the friendly name of the provider and the "type" attribute specifies the assembly-qualified type name of that provider. It is not necessary to specify the "type" for the preconfigured providers in the table above. If the provider requires additional parameters, these can be specified under the "Parameters" child element of the "Provider" element. The individual parameters are specified by adding one or more "Parameter" elements. The "name" attribute specifies the name of the parameter and the "value" attribute specifies the value of that parameter.
 
-````XML
-<Telerik.Reporting>
-	<Cache provider="File">
-		<Providers>
-			<Provider name="File">
-				<Parameters>
-					<Parameter name="BasePath" value="C:\MyDataCache" />
-				</Parameters>
-			</Provider>
-		</Providers>
-	</Cache>
-</Telerik.Reporting>
-````
-
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheManagementFilePathConfiguration.xml region=CacheManagementFilePathConfiguration}}
 ## See Also
 
 * [Configuring the File Cache Provider](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider)

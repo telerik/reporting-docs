@@ -1,4 +1,4 @@
----
+﻿---
 title: typeReferences Element
 page_title: typeReferences Element Configuration
 description: "Learn how to set up the typeReferences Element, allowing you to use custom user functions in the report and create ObjectDataSource components."
@@ -26,20 +26,7 @@ Defines a collection of type references used by the Reporting Engine to resolve 
 
 XML-based configuration file:
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<typeReferences>
-			<add />
-			<clear />
-			<remove />
-		</typeReferences>
-	</Telerik.Reporting>	
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\TypeReferencesElementConfiguration.xml region=TypeReferencesElementConfiguration}}
 ````JSON
 "telerikReporting": {
 	"typeReferences": [
@@ -65,19 +52,7 @@ The following code example demonstrates how to configure the Reporting Engine to
 
 If the type is correctly resolvable at runtime, it will be permitted to be used as a source for the ObjectDataSource's data retrieval. This configuration element also allows listing custom types that are allowed in the report definition.
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<typeReferences>
-			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken="my-assembly-public-key-token" />
-		</typeReferences>
-	</Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\TypeReferencesElementConfiguration_2.xml}}
 ````JSON
 "telerikReporting": {
 	"typeReferences": [

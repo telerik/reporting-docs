@@ -1,4 +1,4 @@
----
+﻿---
 title: fontLibrary Element
 page_title: fontLibrary Element Configuration
 description: "Learn how to configure which folders the rendering engine will traverse when searching for a specific font through the fontLibrary configuration element."
@@ -54,21 +54,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares which folder will be used for font resolving. 
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-    <Telerik.Reporting>
-		<fontLibrary useDefaultLocations ="false">
-			<fontLocations>
-				<add path="/usr/customFonts/trueType" searchSubfolders="true"></add>
-			</fontLocations>
-		</fontLibrary>
-  </Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\FontLibraryElementConfiguration.xml}}
 ````JSON
 "telerikReporting": {
 	"fontLibrary": {

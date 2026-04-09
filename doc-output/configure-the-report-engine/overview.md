@@ -1,4 +1,4 @@
----
+﻿---
 title: Configure the Report Engine
 page_title: Basic Configuration of the Reporting Engine
 description: "Learn how to use the Telerik.Reporting root element to configure the reporting engine for your needs."
@@ -45,83 +45,10 @@ The snippets in this section show the `<Telerik.Reporting>` configuration used i
 
 The settings for the Telerik Reporting engine are stored in a custom configuration section called `Telerik.Reporting`. The declaration of this section has to be included in a `<configSections>` element which should be the **first child element** of `<configuration>`, like this:
 
-```XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-</configuration>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ReportEngineConfigSectionConfiguration.xml region=ReportEngineConfigSectionConfiguration}}
 The custom configuration section's content:
 
-```XML
-<Telerik.Reporting>
-	<extensions>
-		<render>
-			<extension>
-				<parameters>
-					<parameter/>
-				</parameters>
-			</extension>
-		</render>
-	</extensions>
-
-	<cache>
-		<providers>
-			<provider>
-				<parameters>
-					<parameter/>
-				</parameters>
-			</provider>
-		</providers>
-	</cache>
-
-	<processing>
-		<graphicsEngine>
-		</graphicsEngine>
-		<resourceResolver>
-			<parameters>
-				<parameter/>
-			</parameters>
-		</resourceResolver>
-		<sharedResourceResolver>
-			<parameters>
-				<parameter/>
-			</parameters>
-		</sharedResourceResolver>
-	</processing>
-
-	<restReportService>
-		<reportResolver/>
-		<storage>
-			<parameters>
-				<parameter/>
-			</parameters>
-		</storage>
-	</restReportService>
-
-	<assemblyReferences>
-		<add />
-		<clear />
-		<remove />
-	</assemblyReferences>
-
-	<privateFonts>
-		<add />
-	</privateFonts>
-
-	<fontLibrary>
-	</fontLibrary>
-
-	<dpiAware>
-	</dpiAware>
-
-	<appData>
-	</appData>
-</Telerik.Reporting>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ReportEngineSchemaConfiguration.xml region=ReportEngineSchemaConfiguration}}
 ## JSON-based Configuration
 
 The JSON-based configuration structure used in `appsettings.json` or other key-value-based files looks like the following:

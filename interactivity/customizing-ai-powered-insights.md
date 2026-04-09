@@ -1,4 +1,4 @@
----
+﻿---
 title: Customizing AI-Powered Insights
 page_title: How to Customize the AI-Powered Insights
 description: "Learn how to configure the AI-powered insights functionality to handle common and advanced cases."
@@ -40,23 +40,7 @@ In enterprise environments where AI usage policies are already established or wh
     }
 }
 ```
-```XML
-<configuration>
-    <configSections>
-        <section
-            name="Telerik.Reporting"
-            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-            allowLocation="true"
-            allowDefinition="Everywhere"/>
-    </configSections>
-    <Telerik.Reporting>
-        <AIClient
-            requireConsent="false">
-        </AIClient>
-    </Telerik.Reporting>
-</configuration>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AiInsightsConfiguration.xml region=AiInsightsConfiguration}}
 ### Prompts Configuration
 
 By default, users can create their own custom prompts to ask any questions about their reports. While this provides maximum flexibility, it can lead to unpredictable token usage costs and potentially inconsistent results. In these cases, you can provide the users with predefined prompts that are designed to handle specific tasks.
@@ -76,27 +60,7 @@ To restrict users to predefined prompts only, you set `allowCustomPrompts` to `f
     }
 }
 ```
-```XML
-<configuration>
-    <configSections>
-        <section
-            name="Telerik.Reporting"
-            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-            allowLocation="true"
-            allowDefinition="Everywhere"/>
-    </configSections>
-    <Telerik.Reporting>
-        <AIClient
-            allowCustomPrompts="false">
-            <predefinedPrompts>
-                <add text="Generate a summary of the report." />
-                <add text="Translate the report into German." />
-            </predefinedPrompts>
-        </AIClient>
-    </Telerik.Reporting>
-</configuration>
-```
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AiInsightsConfiguration_2.xml region=AiInsightsConfiguration_2}}
 You can also add predefined prompts without disabling custom ones, giving users both curated options and the flexibility to create their own queries.
 
 ### Retrieval-Augmented Generation (RAG) Configuration

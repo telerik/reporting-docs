@@ -1,4 +1,4 @@
----
+﻿---
 title: ImageInteractive Device Information Settings
 page_title: ImageInteractive Device Information Settings at a glance
 description: "Find detailed information about the different ImageInteractive rendering settings available, and understand their XML-based and JSON-based configuration file formats."
@@ -41,25 +41,7 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 XML-based configuration file:
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<extensions>
-			<render>
-				<extension name="IMAGEInteractive">
-					<parameters>
-						<parameter name="OutputFormat" value="PNG"/>
-						<parameter name="TextRenderingHint" value="AntiAliasGridFit"/>
-					</parameters>
-				</extension>
-			</render>
-		</extensions>
-	</Telerik.Reporting>
-</configuration>
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ImageInteractiveDeviceInfoConfiguration.xml region=ImageInteractiveDeviceInfoConfiguration}}
 ````JSON
 "telerikReporting": {
 	"extensions": [

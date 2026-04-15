@@ -12,7 +12,7 @@ previous_url: /wpf-report-viewer-howto-use-it-with-rest-service
 
 # Integrating the WPF Report Viewer With REST Service
 
-This topic explains how to set up the WPF Report Viewer to work with the Telerik Reporting REST Service
+This topic explains how to set up the WPF Report Viewer to work with the Telerik Reporting REST Service.
 
 ## Prerequisites
 

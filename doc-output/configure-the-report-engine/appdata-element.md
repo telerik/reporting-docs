@@ -1,4 +1,4 @@
-﻿---
+---
 title: appData Element
 page_title: appData Element Configuration 
 description: "Learn how to use the appData Element to choose where temporary application settings will be stored on the file system"
@@ -36,22 +36,10 @@ __`<appData>` element__
 ### Windows
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration.xml region=AppDataElementConfiguration}}
-````JSON
-"telerikReporting": {
-  "appData": {
-    "path": "C:\\temp"
-  }
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\AppDataConfig.json region=AppDataWindows}}
 
 ### Unix(Linux/Mac):
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration_2.xml region=AppDataElementConfiguration_2}}
-````JSON
-"telerikReporting": {
-  "appData": {
-    "path": "/tmp/reportingAppData"
-  }
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\AppDataLinuxConfig.json region=AppDataLinux}}
 

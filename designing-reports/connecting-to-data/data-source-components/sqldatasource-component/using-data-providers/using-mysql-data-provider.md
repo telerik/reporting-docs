@@ -52,16 +52,7 @@ The [MySQL Connector/NET](https://dev.mysql.com/doc/connector-net/en/) data prov
 
 If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
-```JSON
-{
-	"ConnectionStrings":{
-		"mysql":{
-			"connectionString":"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;",
-			"providerName":"MySql.Data.MySqlClient"
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\DataProviderConfig.json region=MySqlConnectionString}}
 
 ## Web Report Designer
 

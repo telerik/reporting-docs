@@ -1,4 +1,4 @@
-﻿---
+---
 title: privateFonts Element
 page_title: Configuring the privateFonts Element 
 description: "Learn how to use any TrueType font, without having to install it on the host machine, through the privateFonts configuration element."
@@ -70,26 +70,7 @@ The following sections describe attributes, child elements, and parent elements.
 The following example demonstrates how to configure the reporting engine to use Ubuntu and Courier New fonts. The fonts are part of the project with the following properties:
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\PrivateFontsElementConfiguration_2.xml}}
-````JSON
-"telerikReporting": {
-	"privateFonts": [
-		{
-			"fontFamily": "ubuntu",
-			"path": "Ubuntu-R.ttf",
-		},
-		{
-			"fontFamily": "Courier New",
-			"path": "CourI.ttf",
-			"fontStyle": "Italic"
-		},
-		{
-			"fontFamily": "CourBI",
-			"path": "CourBI.ttf",
-			"fontStyle": "Bold,Italic"
-		}
-	]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\PrivateFontsConfig.json region=PrivateFontsConfig}}
 
 ## See Also
 

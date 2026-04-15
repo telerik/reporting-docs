@@ -28,14 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-searchinfo,/embedding-report
 
 The info object passed to the report engine to perform a search.
 
-````JSON
-{
-	"searchToken": "foo",
-	"matchCase": false,
-	"matchWholeWord": false,
-	"useRegularExpressions": true
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiSearchInfo.json region=SearchInfo}}
 
 >caption Fields
 

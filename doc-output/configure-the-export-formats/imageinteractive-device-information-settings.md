@@ -1,4 +1,4 @@
-﻿---
+---
 title: ImageInteractive Device Information Settings
 page_title: ImageInteractive Device Information Settings at a glance
 description: "Find detailed information about the different ImageInteractive rendering settings available, and understand their XML-based and JSON-based configuration file formats."
@@ -42,25 +42,7 @@ For a detailed example of how to set up the settings for a rendering extension, 
 XML-based configuration file:
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ImageInteractiveDeviceInfoConfiguration.xml region=ImageInteractiveDeviceInfoConfiguration}}
-````JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": "IMAGEInteractive",
-			"parameters": [
-				{
-					"Name": "OutputFormat",
-					"Value": "PNG"
-				},
-				{
-					"Name": "TextRenderingHint",
-					"Value": "AntiAliasGridFit"
-				}
-			]
-		}
-	]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\ImageInteractiveDeviceInfoConfig.json region=ImageInteractiveDeviceInformation}}
 
 ## See Also
 

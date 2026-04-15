@@ -70,47 +70,17 @@ No manual install step is needed. The `dnx` command will download and execute th
 
 Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global usage):
 
-```json
-{
-  "servers": {
-    "telerik-reporting-assistant": {
-      "type": "stdio",
-      "command": "dotnet",
-      "args": ["telerik-reporting-assistant"],
-      "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
-      }
-    }
-  }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerVsCodeConfig}}
 
 If you prefer embedding the license string directly:
 
-```json
-"env": {
-	"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicenseKeyEnvConfig.json region=McpServerLicenseKeyEnv}}
 
 ### .NET 10 Configuration (`.mcp.json`)
 
 Use these settings when configuring the server in your MCP client:
 
-```json
-{
-  "servers": {
-    "telerik-reporting-assistant": {
-      "type": "stdio",
-      "command": "dnx",
-      "args": ["Telerik.Reporting.MCP", "--yes"],
-      "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
-      }
-    }
-  }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerNpxConfig.json region=McpServerNpxConfig}}
 
 You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (_see [License Configuration](#license-configuration) section below for details and recommendations_). The `inputs` array is optional and not required for the current functionality.
 
@@ -140,11 +110,7 @@ Add your [Telerik license key](slug:license-key) using one of these options in t
 
 **Option 1: License File Path (Recommended)**
 
-```json
-"env": {
-	"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicensePathEnvConfig.json region=McpServerLicensePathEnv}}
 
 The `THE_PATH_TO_YOUR_LICENSE_FILE` should point to the `telerik-license.txt` file, usually in the AppData folder. Often it will look like:
 
@@ -152,11 +118,7 @@ The `THE_PATH_TO_YOUR_LICENSE_FILE` should point to the `telerik-license.txt` fi
 
 **Option 2: Direct License Key**
 
-```json
-"env": {
-	"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicenseKeyEnvAltConfig.json region=McpServerLicenseKeyEnvAlt}}
 
 > Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key](slug:license-key#updating-your-license-key) when necessary.
 

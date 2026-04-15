@@ -1,4 +1,4 @@
-﻿---
+---
 title: processing Element
 page_title: Configuring the processing Element
 description: "Learn how to configure the processing options of the reporting engine, such as whether the definition properties should be cached, or to set up custom SharedDataSource and Resources resolvers."
@@ -34,68 +34,7 @@ The Processing element specifies the configuration settings that will be applied
 ### Example
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ProcessingElementConfiguration.xml region=ProcessingElementConfiguration}}
-````JSON
-"telerikReporting": {
-	"processing": {
-		// The element below sets the graphics engine used for measurement and rendering. Available values for engineName: "Skia", "Gdi", "PlatformDependent". Default value: PlatformDependent.
-		"graphicsEngine": {
-			"engineName": "PlatformDependent" 
-		},
-
-		// The element below represents a collection of explicitly allowed UNC (network) paths for report document resolution when the attribute validateReportPaths is enabled (default):
-		"externalReportPaths": [
-			"\\\\fileserver\\reports",
-			"\\\\backupserver\\shared\\reporting"
-		],
-		"cacheDefinitionProperties": "false",
-		"resourceResolver": {
-			// The element below represents a Path resource resolver:
-			//"provider": "path",
-			//"parameters": [
-			//	{
-			//		"name": "directory",
-			//		"value": "C:\\Temp\\RestServiceStorage"
-			//	}
-			//]
-			// The element below represents a custom implementation of a resource resolver
-			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"
-			"provider": "custom",
-			"parameters": [
-				{
-					"name": "typeName",
-					"value": "Namespace.CustomResourceResolverClass, AssemblyName"
-				},
-				{
-					"name": "constructorParameter1",
-					"value": "constructorParameterValue1"
-				}
-			]
-		},
-		"sharedDataSourceResolver": {
-			// The element below represents an implementation of a SharedDataSource resolver that uses a path provider:
-			//"provider": "path",
-			//"parameters": [
-			//  {
-			//    "name": "directory",
-			//    "value": "c:\\CommonSharedDataSources\\"
-			//  }
-			//],
-
-			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider
-			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
-			"provider": "custom",
-				"parameters": [
-				{
-					"name": "typename",
-					"value": "Namespace.CustomSharedDataSourceResolverClass, AssemblyName"
-				}
-			]
-		}
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\ProcessingConfig.json region=ProcessingConfig}}
 
 ### CacheDefinitionProperties
 

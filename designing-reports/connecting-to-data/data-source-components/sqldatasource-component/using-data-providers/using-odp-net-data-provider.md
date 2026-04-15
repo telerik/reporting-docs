@@ -35,16 +35,7 @@ The [Oracle Data Provider for .NET (ODP.NET)](https://www.oracle.com/database/te
 
 If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
-````JSON
-{
-	"ConnectionStrings":{
-		"oracle":{
-			"connectionString":"Data Source=TORCL;User Id=myUsername;Password=myPassword;",
-			"providerName":"Oracle.ManagedDataAccess.Client"
-			}
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\OdpNetDataProviderConfig.json region=OdpNetConnectionString}}
 
 ## See Also
 

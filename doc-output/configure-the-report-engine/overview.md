@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure the Report Engine
 page_title: Basic Configuration of the Reporting Engine
 description: "Learn how to use the Telerik.Reporting root element to configure the reporting engine for your needs."
@@ -53,116 +53,7 @@ The custom configuration section's content:
 
 The JSON-based configuration structure used in `appsettings.json` or other key-value-based files looks like the following:
 
-```JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": null,
-			"parameters": [
-				{
-					"name": null,
-					"value": null
-				}
-			]
-		}
-	],
-	"cache": {
-		"provider": null,
-		"providers": [
-			{
-				"name": null,
-				"parameters": [
-					{
-						"Name": null,
-						"Value": null
-					}
-				]
-			}
-		]
-	},
-	"processing": {
-		"graphicsEngine": {
-			"engineName": null
-		},
-		"cacheDefinitionProperties": null,
-		"resourceResolver": {
-			"provider": null,
-			"parameters": [
-				{
-					"name": null,
-					"value": null
-				},
-				{
-					"name": null,
-					"value": null
-				}
-			]
-		},
-		"sharedDataSourceResolver": {
-			"provider": null,
-				"parameters": [
-				{
-					"name": null,
-					"value": null
-				}
-			]
-		}
-	},
-	"restReportService": {
-		"hostAppId": null,
-		"workerCount": 0,
-		"reportSharingTimeout": 0,
-		"clientSessionTimeout": 0,
-		"reportResolver": {
-			"provider": null,
-			"parameters": [
-				{
-					"name": null,
-					"value": null
-				}
-			]
-		},
-		"storage": {
-			"provider": null,
-			"parameters": [
-				{
-					"name": null,
-					"value": null
-				}
-			]
-		}
-	},
-	"assemblyReferences": [
-		{
-			"name": null,
-			"version": null,
-			"culture": null
-		}
-	],
-	"privateFonts": [
-		{
-			"fontFamily": null,
-			"path": null,
-			"fontStyle": null
-		}
-	],
-	"fontLibrary":{
-		"useDefaultLocations": "true",
-		"fontLocations": [
-			{
-				"path": null,
-				"searchSubfolders": null
-			}
-		]
-	},
-	"dpiAware": {
-		"dpiAwareness": null
-	},
-	"appData": {
-		"Path": null
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\ReportEngineConfig.json region=ReportEngineFullSchema}}
 
 ## See Also
 

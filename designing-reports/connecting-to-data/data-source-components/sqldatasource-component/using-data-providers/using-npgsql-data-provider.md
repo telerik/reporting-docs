@@ -102,16 +102,7 @@ The [Npgsql](https://www.npgsql.org/) data provider is automatically registered 
 
 If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
-```JSON
-{
-	"ConnectionStrings":{
-		"postgres":{
-			"connectionString":"Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=myUsername;Password=myPassword;",
-			"providerName":"Npgsql"
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\NpgsqlDataProviderConfig.json region=NpgsqlConnectionString}}
 
 ## See Also
 

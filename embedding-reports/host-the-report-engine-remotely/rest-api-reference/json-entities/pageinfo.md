@@ -30,22 +30,11 @@ Page info representing the state of a single document page and its content.
 
 When the page is not available:
 
-````JSON
-{
-	"pageReady": false,
-	"pageNumber": 1,
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiPageInfoNotReady.json region=PageInfoNotReady}}
 
 When the page is  available: 
 
-````JSON
-{
-	"pageReady": true,
-	"pageNumber": 1,
-	"pageContent": "<html>My page content</html>",
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiPageInfoReady.json region=PageInfoReady}}
 
 >caption Fields
 

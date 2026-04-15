@@ -90,16 +90,7 @@ Since the `SkiaSharp` library is not a perfect replacement for the Windows graph
 
 The following JSON configuration snippet hides the Image rendering extension from the list of available rendering extensions:
 
-```JSON
-"telerikReporting": {
-	"extensions": [
-		{
-		 "name": "IMAGE",
-		 "visible": "false"
-		}
-	]
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\DotNetCoreExtensionsConfig.json region=DotNetCoreHideExtension}}
 
 On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element) configuration element.
 

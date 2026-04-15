@@ -1,4 +1,4 @@
-﻿---
+---
 title: restReportService Element
 page_title: Configuring the restReportService Element
 description: "Learn how to set the Reporting REST Service configuration settings from the configuration file of the running project via the restReportService configuration element."
@@ -65,29 +65,7 @@ __`<storage>` element__
 ## Examples
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\RestReportServiceElementConfiguration.xml region=RestReportServiceElementConfiguration}}
-````JSON
-"telerikReporting": {
-	"restReportService": {
-		"hostAppId": "Application1",
-		"workerCount": 4,
-		"reportSharingTimeout": 10,
-		"clientSessionTimeout": 10,
-		"exceptionsVerbosity": "detailed",
-		"reportResolver": {
-			"provider": "type"
-		},
-		"storage": {
-			"provider": "file",
-			"parameters": [
-				{
-					"name": "directory",
-					"value": "c:\\temp"
-				}
-			]
-		}
-	},
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestReportServiceConfig.json region=RestReportServiceConfig}}
 
 ## See Also
 

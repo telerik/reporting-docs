@@ -1,4 +1,4 @@
-﻿---
+---
 title: dpiAware Element
 page_title: dpiAware Element Configuration
 description: "Learn how to change the DPI awareness settings of the application through the dpiAware configuration element."
@@ -35,13 +35,7 @@ The following snippet demonstrates how to set the current application's DPI awar
 XML-based configuration file:
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\DpiAwareElementConfiguration.xml region=DpiAwareElementConfiguration}}
-````JSON
-"telerikReporting": {
-	"dpiAware": {
-		"dpiAwareness": "PROCESS_SYSTEM_DPI_AWARE"
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\DpiAwareConfig.json region=DpiAwareConfig}}
 
 ## DPI Awareness in Report Viewers
 

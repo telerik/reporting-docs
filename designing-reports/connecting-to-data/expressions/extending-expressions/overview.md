@@ -1,4 +1,4 @@
-﻿---
+---
 title: Overview
 page_title: Extending Expressions Explained
 description: "Learn how to Extend the Expressions with custom User functions and User aggregate functions in Telerik Reporting."
@@ -17,16 +17,7 @@ Expressions can easily be extended by providing user functions written in any .N
 In order to expose your custom functions, so they can be utilized by the Reporting engine, you have to add a reference to the assembly they are defined in. This can be done through the [assemblyReferences element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) in the application's configuration file.
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ExtendingExpressionsConfiguration.xml region=ExtendingExpressionsConfiguration}}
-````JSON
-"telerikReporting": {
-    "assemblyReferences": [
-        {
-            "name": "MyCustomAssembly",
-            "version": "1.0.0.0"
-        }
-    ]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\ExtendingExpressionsConfig.json region=ExtendingExpressionsAssemblyRef}}
 
 ## See Also
 

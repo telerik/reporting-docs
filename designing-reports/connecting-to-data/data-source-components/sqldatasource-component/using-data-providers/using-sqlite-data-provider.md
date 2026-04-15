@@ -50,16 +50,7 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) data provider is autom
 
 If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g., `appsettings.json`), the provider name must be specified in the connection. For example:
 
-```JSON
-{
-	"ConnectionStrings":{
-		"sqlite":{
-			"connectionString":"Data Source=c:\mydb.db;Version=3;",
-			"providerName":"System.Data.SQLite"
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\SqliteDataProviderConfig.json region=SqliteConnectionString}}
 
 ## See Also
 

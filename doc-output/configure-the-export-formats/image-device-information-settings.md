@@ -1,4 +1,4 @@
-﻿---
+---
 title: Image Device Information Settings
 page_title: Image Device Information Settings at a glance
 description: "Find detailed information about the different Image rendering settings available, and understand their XML-based and JSON-based configuration file formats."
@@ -47,55 +47,7 @@ For a detailed example of how to set up the settings for a rendering extension, 
 The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__, and __IMAGEPrint__ formats.
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ImageDeviceInfoConfiguration.xml region=ImageDeviceInfoConfiguration}}
-````JSON
-"telerikReporting": {
-	"extensions": [
-	{
-		"name": "IMAGE",
-		"parameters": [
-		{
-			"Name": "OutputFormat",
-			"Value": "TIFF"
-		},
-		{
-			"Name": "TiffCompression",
-			"Value": "RLE"
-		}
-	]
-	},
-	{
-		"name": "IMAGEPrintPreview",
-		"parameters": [
-		{
-			"Name": "OutputFormat",
-			"Value": "JPEG"
-		}
-	]
-	},
-	{
-		"name": "IMAGEPrint",
-		"parameters": [
-		{
-			"Name": "OutputFormat",
-			"Value": "PNG"
-		},
-		{
-			"Name": "TextRenderingHint",
-			"Value": "AntiAliasGridFit"
-		},
-		{
-			"Name": "DpiX",
-			"Value": "1200"
-		},
-		{
-			"Name": "DpiY",
-			"Value": "1200"
-		},
-	]
-	}
-  ]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\ImageDeviceInfoConfig.json region=ImageDeviceInformation}}
 
 ## See Also
 

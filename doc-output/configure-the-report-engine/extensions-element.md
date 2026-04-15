@@ -1,4 +1,4 @@
-﻿---
+---
 title: extensions Element
 page_title: extensions Element Configuration 
 description: "Learn how to configure the device info settings for all report rendering formats through the extensions configuration element."
@@ -75,22 +75,7 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 ## Example
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ExtensionsElementRenderConfiguration.xml region=ExtensionsElementRenderConfiguration}}
-````JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": "PDF",
-			"description":  "PDF Description",
-			"parameters": [
-				{
-					"Name": "DocumentAuthor",
-					"Value": "John Doe"
-				}
-			]
-		}
-	]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\ExtensionsConfig.json region=ExtensionsPdfConfig}}
 
 ## Configuring Multiple Entries for a Rendering Extension
 
@@ -101,23 +86,7 @@ You should also specify the `description` attribute of the Extension element. Th
 The following example illustrates how to use the default Image rendering extension (which produces `TIFF` output) alongside a second instance that outputs reports in `EMF`. Notice that the extension name distinguishes one instance from the other: 
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ExtensionsElementTiffConfiguration.xml region=ExtensionsElementTiffConfiguration}}
-````JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": "TIFF_CCITT4",
-			"type": "Telerik.Reporting.ImageRendering.ImageReport, Telerik.Reporting, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
-			"description":  "TIFF file (CCITT Group 4)",
-			"parameters": [
-				{
-					"Name": "TiffCompression",
-					"Value": "ccitt4"
-				}
-			]
-		}
-	]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\ExtensionsTiffConfig.json region=ExtensionsTiffConfig}}
 
 > The code samples have the version listed as Version=x.x.x.x, and you should change that with the exact assembly version you use before proceeding. 
 

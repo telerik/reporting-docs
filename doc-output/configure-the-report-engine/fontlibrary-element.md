@@ -1,4 +1,4 @@
-﻿---
+---
 title: fontLibrary Element
 page_title: fontLibrary Element Configuration
 description: "Learn how to configure which folders the rendering engine will traverse when searching for a specific font through the fontLibrary configuration element."
@@ -55,19 +55,7 @@ The following sections describe attributes, child elements, and parent elements.
 The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares which folder will be used for font resolving. 
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\FontLibraryElementConfiguration.xml}}
-````JSON
-"telerikReporting": {
-	"fontLibrary": {
-		"useDefaultLocations": "false",
-		"fontLocations": [
-			{
-				"path": "/usr/customFonts/trueType",
-				"searchSubfolders": "true"
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\FontLibraryConfig.json region=FontLibraryConfig}}
 
 
 ## See Also

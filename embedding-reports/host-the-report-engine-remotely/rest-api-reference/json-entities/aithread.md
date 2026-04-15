@@ -27,18 +27,7 @@ position: 0
 
 An AI thread that can be used to start a conversation with an AI assistant.
 
-```JSON
-{
-    "threadId": "57fc76d2cf8",
-    "predefinedPrompts": [
-        "Generate an executive summary of this report.",
-        "Translate the document in German."
-    ],
-    "requireConsent": true,
-    "consentMessage": "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>",
-    "allowCustomPrompts": true
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiEntities.json region=AiThread}}
 
 > caption Fields
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: cache Element
 page_title: cache Element Configuration
 description: "Learn how to change the cache Element settings to control the cache management system used by the report viewers"
@@ -62,130 +62,32 @@ All parameters and attributes for the available cache providers may be seen in t
 This is the default cache provider. When the `Cache` section is omitted from the `Telerik.Reporting` configuration, or the `BasePath` is not specified, the Reporting engine utilizes the temporary folder of the current user.
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAutoConfiguration.xml region=CacheElementAutoConfiguration}}
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "Auto",
-		"providers": [
-			{
-				"name": "AutoProviderName",
-				"parameters": [
-					{
-						"name": "BasePath",
-						"value": "c:\\MyDataCache"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheConfig.json region=CacheAutoProvider}}
 
 ### The File Cache Provider
 
 When the `BasePath` is not specified, the Reporting engine utilizes the temporary folder of the current user.
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementFileConfiguration.xml region=CacheElementFileConfiguration}}
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "File",
-		"providers": [
-			{
-				"name": "FileProviderName",
-				"parameters": [
-					{
-						"name": "BasePath",
-						"value": "c:\\MyDataCache"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheFileProviderConfig.json region=CacheFileProvider}}
 
 ### The Memory Cache Provider
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementMemoryConfiguration.xml region=CacheElementMemoryConfiguration}}
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "Memory",
-		"providers": [
-			{
-				"name": "MemoryProviderName"
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheMemoryProviderConfig.json region=CacheMemoryProvider}}
 
 ### The IsolatedStorage Cache Provider
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementIsolatedStorageConfiguration.xml region=CacheElementIsolatedStorageConfiguration}}
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "IsolatedStorage",
-		"providers": [
-			{
-				"name": "IsolatedStorageProviderName"
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheIsolatedStorageProviderConfig.json region=CacheIsolatedStorageProvider}}
 
 ### The Database Cache Provider
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementDatabaseConfiguration.xml region=CacheElementDatabaseConfiguration}}
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "Database",
-		"providers": [
-			{
-				"name": "DatabaseProviderName",
-				"parameters": [
-					{
-						"name": "BackendName",
-						"value": "DatabaseProviderBackendName"
-					},
-					{
-						"name": "ConnectionString",
-						"value": "DatabaseProviderConnectionString"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheDatabaseProviderConfig.json region=CacheDatabaseProvider}}
 
 ### The ADO.NET Cache Provider
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAdoNetConfiguration.xml region=CacheElementAdoNetConfiguration}}
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "ADO.NET",
-		"providers": [
-			{
-				"name": "ADONETProviderName",
-				"parameters": [
-					{
-						"name": "ProviderName",
-						"value": "ADONETProviderProviderName"
-					},
-					{
-						"name": "ConnectionString",
-						"value": "ADONETProviderConnectionString"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheAdoNetProviderConfig.json region=CacheAdoNetProvider}}
 

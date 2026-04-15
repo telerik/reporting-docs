@@ -2,7 +2,7 @@
 title: Events
 page_title: Events of the HTML5 ASP.NET WebForms Report Viewer
 description: Complete list of events available in the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/events
 tags: events
 published: True
 reportingArea: WebForms

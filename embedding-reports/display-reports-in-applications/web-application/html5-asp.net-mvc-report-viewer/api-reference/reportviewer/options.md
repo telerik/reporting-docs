@@ -2,7 +2,7 @@
 title: Options
 page_title: Options of the HTML5 ASP.NET MVC Report Viewer
 description: Complete list of options available in the HTML5 ASP.NET MVC Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/options
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/options
 tags: options
 published: True
 reportingArea: MVCWrapper
@@ -17,7 +17,7 @@ Sets the key mappings used in accessibility mode for keyboard navigation. Custom
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap)
+[`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap)
 
 ### Example
 
@@ -167,7 +167,7 @@ Specifies where the Document Map Area should be displayed.
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.DocumentMapAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#documentmapareaposition)
+[`Telerik.ReportViewer.Mvc.DocumentMapAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#documentmapareaposition)
 
 ### Example
 
@@ -317,7 +317,7 @@ Specifies whether the viewer is in Continuous scroll or Single page mode.
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#pagemode)
+[`Telerik.ReportViewer.Mvc.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#pagemode)
 
 ### Example
 
@@ -372,7 +372,7 @@ Configures the report parameters display and interaction options. Controls how r
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.Parameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#parameters)
+[`Telerik.ReportViewer.Mvc.Parameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#parameters)
 
 ### Example
 
@@ -405,7 +405,7 @@ Specifies where the Parameters Area should be displayed.
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.ParametersAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#parametersareaposition)
+[`Telerik.ReportViewer.Mvc.ParametersAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#parametersareaposition)
 
 ### Example
 
@@ -478,7 +478,7 @@ Sets the print mode of the viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#printmode)
+[`Telerik.ReportViewer.Mvc.PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#printmode)
 
 ### Example
 
@@ -504,7 +504,7 @@ Sets the connection data for the Telerik Report Server that hosts the reports. U
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.ReportServer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#reportserver)
+[`Telerik.ReportViewer.Mvc.ReportServer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#reportserver)
 
 ### Example
 
@@ -552,7 +552,7 @@ Sets the report source as a string identifier for the report displayed in the vi
 
 ### ReportSource(TypeReportSource)
 
-Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource) for the report displayed in the viewer. Used for reports that are implemented as .NET classes and referenced by their type information.
+Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource) for the report displayed in the viewer. Used for reports that are implemented as .NET classes and referenced by their type information.
 
 #### Example
 
@@ -579,7 +579,7 @@ Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug teleri
 
 ### ReportSource(UriReportSource)
 
-Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) for the report displayed in the viewer. Used for reports stored as files that are referenced by their file system or web URI location.
+Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) for the report displayed in the viewer. Used for reports stored as files that are referenced by their file system or web URI location.
 
 #### Example
 
@@ -654,7 +654,7 @@ Sets the scale mode of the viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#scalemode)
+[`Telerik.ReportViewer.Mvc.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#scalemode)
 
 ### Example
 
@@ -700,7 +700,7 @@ Configures the send email functionality options for the report viewer. Enables u
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.SendEmail`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#sendemail)
+[`Telerik.ReportViewer.Mvc.SendEmail`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#sendemail)
 
 ### Example
 
@@ -773,7 +773,7 @@ Specifies whether the viewer is in interactive or print preview mode.
 
 ### Type
 
-[`Telerik.ReportViewer.Mvc.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#viewmode)
+[`Telerik.ReportViewer.Mvc.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#viewmode)
 
 ### Example
 

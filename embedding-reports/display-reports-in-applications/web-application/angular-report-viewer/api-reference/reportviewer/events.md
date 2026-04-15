@@ -15,7 +15,7 @@ position: 4
 
 ## error
 
-Callback function executed when an error occurs in the report viewer. The event handler receives the event object and an arguments object containing error details.  error
+Callback function executed when an error occurs in the report viewer. The event handler receives the event object and an arguments object containing error details.
 
 ### Example
 
@@ -34,7 +34,7 @@ error(e: any, args: any) {
 
 ## exportBegin
 
-Callback function executed prior to starting the report export command. The event handler receives the event object and an arguments object containing export arguments.  exportBegin
+Callback function executed prior to starting the report export command. The event handler receives the event object and an arguments object containing export arguments.
 
 ### Example
 
@@ -53,7 +53,7 @@ exportBegin(e: any, args: any) {
 
 ## exportEnd
 
-Callback function executed when the exported document is ready for download, but prior to the actual downloading. The event handler receives the event object and an arguments object containing export arguments.  exportEnd
+Callback function executed when the exported document is ready for download, but prior to the actual downloading. The event handler receives the event object and an arguments object containing export arguments.
 
 ### Example
 
@@ -72,7 +72,7 @@ exportEnd(e: any, args: any) {
 
 ## interactiveActionEnter
 
-Callback function executed when the mouse cursor enters the area of an interactive action. The event handler receives the event object and an arguments object containing interactive action arguments.  interactiveActionEnter
+Callback function executed when the mouse cursor enters the area of an interactive action. The event handler receives the event object and an arguments object containing interactive action arguments.
 
 ### Example
 
@@ -91,7 +91,7 @@ interactiveActionEnter(e: any, args: any) {
 
 ## interactiveActionExecuting
 
-Callback function executed before an interactive action is executed, providing the ability to cancel the execution. The event handler receives the event object and an arguments object containing interactive action arguments.  interactiveActionExecuting
+Callback function executed before an interactive action is executed, providing the ability to cancel the execution. The event handler receives the event object and an arguments object containing interactive action arguments.
 
 ### Example
 
@@ -110,7 +110,7 @@ interactiveActionExecuting(e: any, args: any) {
 
 ## interactiveActionLeave
 
-Callback function executed when the mouse cursor leaves the area of an interactive action. The event handler receives the event object and an arguments object containing interactive action arguments.  interactiveActionLeave
+Callback function executed when the mouse cursor leaves the area of an interactive action. The event handler receives the event object and an arguments object containing interactive action arguments.
 
 ### Example
 
@@ -129,7 +129,7 @@ interactiveActionLeave(e: any, args: any) {
 
 ## pageReady
 
-Callback function executed every time a page from the report is rendered and ready for display. The event handler receives the event object and an arguments object containing page ready arguments.  pageReady
+Callback function executed every time a page from the report is rendered and ready for display. The event handler receives the event object and an arguments object containing page ready arguments.
 
 ### Example
 
@@ -148,7 +148,7 @@ pageReady(e: any, args: any) {
 
 ## printBegin
 
-Callback function executed prior to starting the print report command. The event handler receives the event object and an arguments object containing print arguments.  printBegin
+Callback function executed prior to starting the print report command. The event handler receives the event object and an arguments object containing print arguments.
 
 ### Example
 
@@ -167,7 +167,7 @@ printBegin(e: any, args: any) {
 
 ## printEnd
 
-Callback function executed when the print document (PDF) is ready for download, but prior to being sent to the printer. The event handler receives the event object and an arguments object containing print arguments.  printEnd
+Callback function executed when the print document (PDF) is ready for download, but prior to being sent to the printer. The event handler receives the event object and an arguments object containing print arguments.
 
 ### Example
 
@@ -186,7 +186,7 @@ printEnd(e: any, args: any) {
 
 ## ready
 
-Callback function executed when the viewer content has been loaded and is ready. The function is executed in the context of the ReportViewer object.  ready
+Callback function executed when the viewer content has been loaded and is ready. The function is executed in the context of the ReportViewer object.
 
 ### Example
 
@@ -205,7 +205,7 @@ ready() {
 
 ## renderingBegin
 
-Callback function executed when the rendering of the report begins. The event handler receives the event object and an arguments object containing rendering arguments. The arguments object has a deviceInfo property which is a dictionary containing information used for rendering.  renderingBegin
+Callback function executed when the rendering of the report begins. The event handler receives the event object and an arguments object containing rendering arguments. The arguments object has a deviceInfo property which is a dictionary containing information used for rendering.
 
 ### Example
 
@@ -228,7 +228,7 @@ renderingBegin(e: any, args: any) {
 
 ## renderingEnd
 
-Callback function executed when the rendering of the report ends. The event handler receives the event object and an arguments object containing rendering arguments.  renderingEnd
+Callback function executed when the rendering of the report ends. The event handler receives the event object and an arguments object containing rendering arguments.
 
 ### Example
 
@@ -247,7 +247,7 @@ renderingEnd(e: any, args: any) {
 
 ## sendEmailBegin
 
-Callback function executed before the report is exported and the email message is sent. The event handler receives the event object and an arguments object containing send email arguments.  sendEmailBegin
+Callback function executed before the report is exported and the email message is sent. The event handler receives the event object and an arguments object containing send email arguments.
 
 ### Example
 
@@ -266,7 +266,7 @@ sendEmailBegin(e: any, args: any) {
 
 ## sendEmailEnd
 
-Callback function executed after the report is exported and before the email message is sent. The event handler receives the event object and an arguments object containing send email arguments.  sendEmailEnd
+Callback function executed after the report is exported and before the email message is sent. The event handler receives the event object and an arguments object containing send email arguments.
 
 ### Example
 
@@ -285,7 +285,7 @@ sendEmailEnd(e: any, args: any) {
 
 ## updateUi
 
-Callback function executed every time the UI needs an update. Can be used for changing the UI of the report viewer while interacting with reports. The event handler receives the event object.  updateUi
+Callback function executed every time the UI needs an update. Can be used for changing the UI of the report viewer while interacting with reports. The event handler receives the event object.
 
 ### Example
 
@@ -304,7 +304,7 @@ updateUi(e: any) {
 
 ## viewerToolTipOpening
 
-Callback function executed when a tooltip is being opened. The event handler receives the event object and a tooltip arguments object containing containing tooltip information.  viewerToolTipOpening
+Callback function executed when a tooltip is being opened. The event handler receives the event object and a tooltip arguments object containing tooltip information.
 
 ### Example
 

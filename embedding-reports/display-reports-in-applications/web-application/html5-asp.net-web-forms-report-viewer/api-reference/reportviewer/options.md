@@ -2,7 +2,7 @@
 title: Options
 page_title: Options of the HTML5 ASP.NET WebForms Report Viewer
 description: Complete list of options available in the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/options
 tags: options
 published: True
 reportingArea: WebForms
@@ -17,7 +17,7 @@ Gets or sets the keyboard mappings used when accessibility mode is enabled in th
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap)
+[`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap)
 
 ### Example
 
@@ -198,7 +198,7 @@ Gets or sets the positioning of the document map area within the HTML5 viewer in
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.DocumentMapAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#documentmapareaposition)
+[`Telerik.ReportViewer.Html5.WebForms.DocumentMapAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#documentmapareaposition)
 
 ### Example
 
@@ -423,7 +423,7 @@ Gets or sets the viewer's page mode.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#pagemode)
+[`Telerik.ReportViewer.Html5.WebForms.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#pagemode)
 
 ### Example
 
@@ -497,7 +497,7 @@ Gets or sets the parameter editors configuration that defines JavaScript functio
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ParameterEditors`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#parametereditors)
+[`Telerik.ReportViewer.Html5.WebForms.ParameterEditors`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#parametereditors)
 
 ### Example
 
@@ -533,7 +533,7 @@ Gets or sets the parameters display configuration that defines the visual appear
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.Parameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#parameters)
+[`Telerik.ReportViewer.Html5.WebForms.Parameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#parameters)
 
 ### Example
 
@@ -568,7 +568,7 @@ Gets or sets the positioning of the parameters area within the HTML5 viewer inte
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ParametersAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#parametersareaposition)
+[`Telerik.ReportViewer.Html5.WebForms.ParametersAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#parametersareaposition)
 
 ### Example
 
@@ -683,7 +683,7 @@ Gets or sets the print mode of the viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#printmode)
+[`Telerik.ReportViewer.Html5.WebForms.PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#printmode)
 
 ### Example
 
@@ -718,7 +718,7 @@ Gets or sets the connection data of the report server that hosts the report. The
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.Common.ReportServer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#reportserver)
+[`Telerik.ReportViewer.Html5.Common.ReportServer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#reportserver)
 
 ### Example
 
@@ -743,11 +743,11 @@ Gets or sets the connection data of the report server that hosts the report. The
 
 ## ReportSource
 
-Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#reportsource) for the report displayed in the HTML5 viewer. Specifies the report to be displayed including its identifier, parameters, and source type for proper report loading and processing in the HTML5 environment.
+Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#reportsource) for the report displayed in the HTML5 viewer. Specifies the report to be displayed including its identifier, parameters, and source type for proper report loading and processing in the HTML5 environment.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#reportsource)
+[`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#reportsource)
 
 ### Example
 
@@ -822,7 +822,7 @@ Gets or sets the scale mode of the viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#scalemode)
+[`Telerik.ReportViewer.Html5.WebForms.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#scalemode)
 
 ### Example
 
@@ -894,7 +894,7 @@ Gets or sets the email functionality configuration including enabled state, form
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.SendEmail`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#sendemail)
+[`Telerik.ReportViewer.Html5.WebForms.SendEmail`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#sendemail)
 
 ### Example
 
@@ -989,7 +989,7 @@ Gets or sets the viewer's view mode.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#viewmode)
+[`Telerik.ReportViewer.Html5.WebForms.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#viewmode)
 
 ### Example
 

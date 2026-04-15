@@ -2,7 +2,7 @@
 title: Enumerations
 page_title: Enumerations of the HTML5 ASP.NET MVC Report Viewer
 description: Enumeration constants used by the HTML5 ASP.NET MVC Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations
 tags: enumerations
 published: True
 reportingArea: MVCWrapper

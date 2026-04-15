@@ -2,7 +2,7 @@
 title: Methods
 page_title: Methods of the HTML5 ASP.NET WebForms Report Viewer
 description: Complete list of methods available in the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/methods
 tags: methods
 published: True
 reportingArea: WebForms

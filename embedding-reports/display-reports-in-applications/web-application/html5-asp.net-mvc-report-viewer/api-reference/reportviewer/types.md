@@ -2,7 +2,7 @@
 title: Types
 page_title: Types of the HTML5 ASP.NET MVC Report Viewer
 description: Object types and interfaces used by the HTML5 ASP.NET MVC Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types
 tags: types
 published: True
 reportingArea: MVCWrapper
@@ -22,7 +22,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
 | CONFIRM_KEY | `System.Byte` | Key code for executing report actions and applying report parameters |
 | CONTENT_AREA_KEY | `System.Byte` | Key code for navigating to report contents area, when pressed together with CTRL + ALT |
 | DOCUMENT_MAP_AREA_KEY | `System.Byte` | Key code for navigating to document map area, when pressed together with CTRL + ALT |
-| Default | [`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) | Returns an instance, initialized with the default key mapping |
+| Default | [`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) | Returns an instance, initialized with the default key mapping |
 | Equals(System.Object) | `System.Boolean` | Internal use only |
 | Equals(Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap) | `System.Boolean` | Internal use only |
 | GetHashCode | `System.Int32` | Internal use only |
@@ -110,8 +110,8 @@ Provides configuration options for parameter editor types used in the MVC Report
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| MultiSelect | [`Telerik.ReportViewer.Mvc.EditorTypes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#editortypes) | Gets or sets the editor type used for parameters that have available values and allow multiple selections.<br>Determines whether multi-select parameters with predefined values use ListView or ComboBox input controls. |
-| SingleSelect | [`Telerik.ReportViewer.Mvc.EditorTypes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/enumerations%}#editortypes) | Gets or sets the editor type used for parameters that have available values and allow only single selection.<br>Determines whether single-select parameters with predefined values use ListView or ComboBox input controls. |
+| MultiSelect | [`Telerik.ReportViewer.Mvc.EditorTypes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#editortypes) | Gets or sets the editor type used for parameters that have available values and allow multiple selections.<br>Determines whether multi-select parameters with predefined values use ListView or ComboBox input controls. |
+| SingleSelect | [`Telerik.ReportViewer.Mvc.EditorTypes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/enumerations%}#editortypes) | Gets or sets the editor type used for parameters that have available values and allow only single selection.<br>Determines whether single-select parameters with predefined values use ListView or ComboBox input controls. |
 
 ### Example
 
@@ -162,13 +162,13 @@ A class that contains a collection of all Telerik Reporting widgets
 
 ## InstanceReportSource
 
-This report source is used when you have a reference to an already instantiated report  (`Telerik.Reporting.Report` instance). For better performance and compatibility use [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource).  Represents a report source that contains a reference to an instance of  `Telerik.Reporting.IReportDocument`.
+This report source is used when you have a reference to an already instantiated report  (`Telerik.Reporting.Report` instance). For better performance and compatibility use [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource).  Represents a report source that contains a reference to an instance of  `Telerik.Reporting.IReportDocument`.
 
 ### Constructors
 
 | Constructor | Description |
 | ------ | ------ |
-| InstanceReportSource() | Initializes a new instance of the [`Telerik.Reporting.InstanceReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#instancereportsource) class. |
+| InstanceReportSource() | Initializes a new instance of the [`Telerik.Reporting.InstanceReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#instancereportsource) class. |
 
 ### Properties
 
@@ -214,7 +214,7 @@ Provides configuration options for report parameters display and behavior within
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Editors | [`Telerik.ReportViewer.Mvc.Editors`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#editors) | Gets or sets the parameter editors configuration that defines the types of input controls used for different parameter scenarios.<br>Configures whether parameters with available values use ListView or ComboBox editors for single and multi-select scenarios. |
+| Editors | [`Telerik.ReportViewer.Mvc.Editors`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#editors) | Gets or sets the parameter editors configuration that defines the types of input controls used for different parameter scenarios.<br>Configures whether parameters with available values use ListView or ComboBox editors for single and multi-select scenarios. |
 
 ### Example
 
@@ -315,7 +315,7 @@ Provides the base class for a report source. This is an abstract class that cont
 
 ## ReportSourceCollection
 
-Represents a collection of  [`Telerik.Reporting.InstanceReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#reportsource) objects.
+Represents a collection of  [`Telerik.Reporting.InstanceReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#reportsource) objects.
 
 ### Properties
 
@@ -401,7 +401,7 @@ Represents a report source that allows a report document to be instantiated from
 
 | Constructor | Description |
 | ------ | ------ |
-| TypeReportSource() | Initializes a new instance of the [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource) class. |
+| TypeReportSource() | Initializes a new instance of the [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource) class. |
 
 ### Properties
 
@@ -442,13 +442,13 @@ Represents a report source that loads a report document from a URI. The URI must
 
 | Constructor | Description |
 | ------ | ------ |
-| UriReportSource() | Initializes a new instance of the [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) class. |
+| UriReportSource() | Initializes a new instance of the [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) class. |
 
 ### Properties
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Create(System.String,System.String) | [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) | Creates a UriReportSource by resolving the relative report path against the base path. |
+| Create(System.String,System.String) | [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) | Creates a UriReportSource by resolving the relative report path against the base path. |
 | Equals(System.Object) | `System.Boolean` | Determines whether this instance and a specified object have the same value. |
 | GetHashCode | `System.Int32` | Returns the hash code for this UriReportSource. |
 | ToString | `System.String` | Returns a string that represents the current UriReportSource. |
@@ -477,7 +477,7 @@ Represents a report source that contains the XML markup of a report document.
 
 | Constructor | Description |
 | ------ | ------ |
-| XmlReportSource() | Initializes a new instance of the [`Telerik.Reporting.XmlReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#xmlreportsource) class. |
+| XmlReportSource() | Initializes a new instance of the [`Telerik.Reporting.XmlReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer/types%}#xmlreportsource) class. |
 
 ### Properties
 

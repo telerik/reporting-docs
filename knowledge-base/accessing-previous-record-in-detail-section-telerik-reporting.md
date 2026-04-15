@@ -10,23 +10,9 @@ res_type: kb
 ticketid: 1710935
 ---
 
-## Environment
-<table>
-   <tbody>
-         <tr>
-            <td>Product</td>
-            <td>Reporting</td>
-         </tr>
-         <tr>
-            <td>Version</td>
-            <td>20.0.26.211</td>
-         </tr>
-   </tbody>
-</table>
-
 ## Description
 
-I want to display the previous record in the detail section of my Telerik Reporting report. Using the Previous function directly in the detail section does not allow retrieving the previous group's value. I need this functionality to manipulate the data starting from the second record. I am open to saving the previous value into a variable if necessary.
+I want to display the previous record in the detail section of my Telerik Reporting report. Using the Previous function directly in the detail section does not allow retrieving the previous group's value, because the function requires an explicit scope to be evaluated. I need this functionality to manipulate the data starting from the second record. I am open to saving the previous value into a variable if necessary.
 
 ## Solution
 
@@ -35,7 +21,7 @@ To achieve this functionality, use the `Exec` function combined with the `Previo
 1. Use the following expression to get the previous group's value:
 
    ```
-   = Exec("group", Previous(Fields.Column1))
+   = Previous("group", Fields.Column1)
    ```
 
    Replace `"group"` with the name of your group and `Fields.Column1` with the field you want to retrieve.
@@ -43,7 +29,7 @@ To achieve this functionality, use the `Exec` function combined with the `Previo
 3. To avoid displaying an empty value for the first record, use the `IsNull` function. This ensures a default value, such as `0`, is shown for the first record:
 
    ```
-   = IsNull(Exec("group", Previous(Fields.Column1)), 0)
+   = IsNull(Previous("group", Fields.Column1),0)
    ```
 
 ### Notes

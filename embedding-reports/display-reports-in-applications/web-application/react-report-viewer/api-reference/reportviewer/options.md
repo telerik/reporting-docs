@@ -71,12 +71,14 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 ### Example
 
 ````JavaScript
+{% raw %}
 // Place document map on the right
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   documentMapAreaPosition="RIGHT"
 />
+{% endraw %}
 ````
 
 
@@ -91,12 +93,14 @@ Determines whether the viewer's document map is displayed if any bookmark is def
 ### Example
 
 ````JavaScript
+{% raw %}
 // Show document map
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   documentMapVisible={true}
 />
+{% endraw %}
 ````
 
 
@@ -111,6 +115,7 @@ Determines whether the viewer should provide support for accessibility features.
 ### Example
 
 ````JavaScript
+{% raw %}
 // Enable accessibility features
 // Use with component: enableAccessibility={true}
 <TelerikReportViewer
@@ -118,6 +123,7 @@ Determines whether the viewer should provide support for accessibility features.
   reportSource={{ report: "Dashboard.trdp" }}
   enableAccessibility={true}
 />
+{% endraw %}
 ````
 
 
@@ -132,12 +138,14 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set a custom viewer ID
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   id="myUniqueViewer"
 />
+{% endraw %}
 ````
 
 
@@ -152,12 +160,14 @@ The image URL for the PageArea background image. Used only when the parameter va
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set a background image for empty page area
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   initialPageAreaImageUrl="/images/reportBackground.png"
 />
+{% endraw %}
 ````
 
 
@@ -172,12 +182,14 @@ Determines whether the client will be kept alive. Default value is true.
 ### Example
 
 ````JavaScript
+{% raw %}
 // Keep client alive
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   keepClientAlive={true}
 />
+{% endraw %}
 ````
 
 
@@ -192,12 +204,14 @@ Sets if the report is displayed in Single page or Continuous scroll mode. Availa
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set page mode to single page
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   pageMode="SINGLE_PAGE"
 />
+{% endraw %}
 ````
 
 
@@ -232,6 +246,7 @@ Allows the user to define parameter options for the report parameters.
 ### Example
 
 ````JavaScript
+{% raw %}
 // Configure parameter editors
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -243,6 +258,7 @@ Allows the user to define parameter options for the report parameters.
     }
   }}
 />
+{% endraw %}
 ````
 
 
@@ -257,12 +273,14 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 ### Example
 
 ````JavaScript
+{% raw %}
 // Place parameters area on the left
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   parametersAreaPosition="LEFT"
 />
+{% endraw %}
 ````
 
 
@@ -277,12 +295,14 @@ Determines whether the viewer's parameters area is displayed if any parameter ed
 ### Example
 
 ````JavaScript
+{% raw %}
 // Hide parameters area
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   parametersAreaVisible={false}
 />
+{% endraw %}
 ````
 
 
@@ -297,6 +317,7 @@ Sets whether the viewer's client session is persisted between page refreshes (e.
 ### Example
 
 ````JavaScript
+{% raw %}
 // Enable session persistence
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -304,6 +325,7 @@ Sets whether the viewer's client session is persisted between page refreshes (e.
   persistSession={true}
   id="myConstantId"
 />
+{% endraw %}
 ````
 
 
@@ -334,6 +356,7 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
 ### Example
 
 ````JavaScript
+{% raw %}
 // Use Report Server authentication with Token (recommended for RS.NET)
 <TelerikReportViewer
   reportServer={{
@@ -344,9 +367,11 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
   }}
   reportSource={{ report: "Samples/Dashboard" }}
 />
+{% endraw %}
 ````
 
 ````JavaScript
+{% raw %}
 // Use Report Server authentication with username/password (not recommended)
 <TelerikReportViewer
   reportServer={{
@@ -356,6 +381,7 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
   }}
   reportSource={{ report: "Finance/Dashboard" }}
 />
+{% endraw %}
 ````
 
 
@@ -370,14 +396,17 @@ Sets the report and initial report parameter values for the viewer to be display
 ### Example
 
 ````JavaScript
+{% raw %}
 // Basic report source
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
 />
+{% endraw %}
 ````
 
 ````JavaScript
+{% raw %}
 // Report source with parameters
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -386,14 +415,17 @@ Sets the report and initial report parameter values for the viewer to be display
     parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }
   }}
 />
+{% endraw %}
 ````
 
 ````JavaScript
+{% raw %}
 // Report Server format
 <TelerikReportViewer
   reportServer={{ url: "https://myserver/" }}
   reportSource={{ report: "Finance/MonthlyReport" }}
 />
+{% endraw %}
 ````
 
 
@@ -408,6 +440,7 @@ Sets the scale factor for the report pages. The scale takes effect when scaleMod
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set zoom to 150%
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -415,6 +448,7 @@ Sets the scale factor for the report pages. The scale takes effect when scaleMod
   scale={1.5}
   scaleMode="SPECIFIC"
 />
+{% endraw %}
 ````
 
 
@@ -429,12 +463,14 @@ Sets how the report pages are scaled. Available options: "FIT_PAGE_WIDTH" (pages
 ### Example
 
 ````JavaScript
+{% raw %}
 // Fit page width
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   scaleMode="FIT_PAGE_WIDTH"
 />
+{% endraw %}
 ````
 
 
@@ -449,12 +485,14 @@ Determines whether the search metadata will be delivered on demand (true) or by 
 ### Example
 
 ````JavaScript
+{% raw %}
 // Enable search metadata on demand
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   searchMetadataOnDemand={true}
 />
+{% endraw %}
 ````
 
 
@@ -485,6 +523,7 @@ Configuration for the Send Mail Message feature.
 ### Example
 
 ````JavaScript
+{% raw %}
 // Enable send email with default values
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -497,6 +536,7 @@ Configuration for the Send Mail Message feature.
     format: "PDF"
   }}
 />
+{% endraw %}
 ````
 
 
@@ -511,11 +551,13 @@ Sets the address of the Report REST Service. Required if reportServer is not pro
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set the service URL for the report viewer
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
 />
+{% endraw %}
 ````
 
 
@@ -530,12 +572,14 @@ Sets the address of the html page that contains the viewer templates. If omitted
 ### Example
 
 ````JavaScript
+{% raw %}
 // Use a custom template
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   templateUrl="/templates/customViewer.html"
 />
+{% endraw %}
 ````
 
 
@@ -550,6 +594,7 @@ CSS styles to apply to the viewer container div.
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set container styles
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -560,6 +605,7 @@ CSS styles to apply to the viewer container div.
     border: '1px solid #ccc'
   }}
 />
+{% endraw %}
 ````
 
 
@@ -574,11 +620,13 @@ Sets if the report is displayed in interactive mode or in print preview. Availab
 ### Example
 
 ````JavaScript
+{% raw %}
 // Set view mode to print preview
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   viewMode="PRINT_PREVIEW"
 />
+{% endraw %}
 ````
 

@@ -20,6 +20,7 @@ Called when an error occurs. Receives two parameters: `e` (the event object) and
 ### Example
 
 ````JavaScript
+{% raw %}
 // Error handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -28,6 +29,7 @@ Called when an error occurs. Receives two parameters: `e` (the event object) and
     console.log("The error message is: " + args);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -38,6 +40,7 @@ Called before exporting the report. Receives two parameters: `e` (the event obje
 ### Example
 
 ````JavaScript
+{% raw %}
 // Export begin handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -46,6 +49,7 @@ Called before exporting the report. Receives two parameters: `e` (the event obje
     console.log("Exporting report in format: " + args.format);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -56,6 +60,7 @@ Called after exporting the report. Receives two parameters: `e` (the event objec
 ### Example
 
 ````JavaScript
+{% raw %}
 // Export end handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -65,6 +70,7 @@ Called after exporting the report. Receives two parameters: `e` (the event objec
     console.log("The exported report can be found at " + args.url);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -75,6 +81,7 @@ Called when entering an interactive action area. Receives two parameters: `e` (t
 ### Example
 
 ````JavaScript
+{% raw %}
 // Interactive action enter handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -85,6 +92,7 @@ Called when entering an interactive action area. Receives two parameters: `e` (t
     }
   }}
 />
+{% endraw %}
 ````
 
 
@@ -95,6 +103,7 @@ Called before an interactive action executes, allowing cancellation. Receives tw
 ### Example
 
 ````JavaScript
+{% raw %}
 // Interactive action executing handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -106,6 +115,7 @@ Called before an interactive action executes, allowing cancellation. Receives tw
     }
   }}
 />
+{% endraw %}
 ````
 
 
@@ -116,6 +126,7 @@ Called when leaving an interactive action area. Receives two parameters: `e` (th
 ### Example
 
 ````JavaScript
+{% raw %}
 // Interactive action leave handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -126,6 +137,7 @@ Called when leaving an interactive action area. Receives two parameters: `e` (th
     }
   }}
 />
+{% endraw %}
 ````
 
 
@@ -136,6 +148,7 @@ Called after a page of the report is ready. Receives two parameters: `e` (the ev
 ### Example
 
 ````JavaScript
+{% raw %}
 // Page ready handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -144,6 +157,7 @@ Called after a page of the report is ready. Receives two parameters: `e` (the ev
     console.log("The content of the page is: " + args.pageContent);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -154,6 +168,7 @@ Called before printing the report. Receives two parameters: `e` (the event objec
 ### Example
 
 ````JavaScript
+{% raw %}
 // Print begin handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -162,6 +177,7 @@ Called before printing the report. Receives two parameters: `e` (the event objec
     console.log("About to print the report.");
   }}
 />
+{% endraw %}
 ````
 
 
@@ -172,6 +188,7 @@ Called after printing the report. Receives two parameters: `e` (the event object
 ### Example
 
 ````JavaScript
+{% raw %}
 // Print end handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -180,6 +197,7 @@ Called after printing the report. Receives two parameters: `e` (the event object
     console.log("The printed report can be found at " + args.url);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -190,12 +208,14 @@ A callback function that is called when the viewer content has been loaded from 
 ### Example
 
 ````JavaScript
+{% raw %}
 // Ready callback
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   ready={() => console.log("Report viewer is ready")}
 />
+{% endraw %}
 ````
 
 
@@ -206,6 +226,7 @@ Called before rendering the report (preview only, not for export or print). Rece
 ### Example
 
 ````JavaScript
+{% raw %}
 // Rendering begin handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -218,6 +239,7 @@ Called before rendering the report (preview only, not for export or print). Rece
     console.log("About to render the report.");
   }}
 />
+{% endraw %}
 ````
 
 
@@ -228,6 +250,7 @@ Called after rendering the report. Receives two parameters: `e` (the event objec
 ### Example
 
 ````JavaScript
+{% raw %}
 // Rendering end handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -237,6 +260,7 @@ Called after rendering the report. Receives two parameters: `e` (the event objec
     console.log("The rendered report has " + args.pageCount + " pages.");
   }}
 />
+{% endraw %}
 ````
 
 
@@ -247,6 +271,7 @@ Called before the report is exported and the E-mail message is sent. Receives tw
 ### Example
 
 ````JavaScript
+{% raw %}
 // Send email begin handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -255,6 +280,7 @@ Called before the report is exported and the E-mail message is sent. Receives tw
     console.log("About to export and send report in format: " + args.format);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -265,6 +291,7 @@ Called after the report is exported and before the E-mail message is sent. Recei
 ### Example
 
 ````JavaScript
+{% raw %}
 // Send email end handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -274,6 +301,7 @@ Called after the report is exported and before the E-mail message is sent. Recei
     console.log("The exported report can be found at " + args.url);
   }}
 />
+{% endraw %}
 ````
 
 
@@ -284,6 +312,7 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the ev
 ### Example
 
 ````JavaScript
+{% raw %}
 // Update UI handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -292,6 +321,7 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the ev
     console.log("Viewer UI state changed.");
   }}
 />
+{% endraw %}
 ````
 
 
@@ -302,6 +332,7 @@ Called before a tooltip is opened, allowing cancellation. Receives two parameter
 ### Example
 
 ````JavaScript
+{% raw %}
 // Viewer tooltip opening handler
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -311,5 +342,6 @@ Called before a tooltip is opened, allowing cancellation. Receives two parameter
     args.cancel = (/2004/i.test(args.toolTip.title));
   }}
 />
+{% endraw %}
 ````
 

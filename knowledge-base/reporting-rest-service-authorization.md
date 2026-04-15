@@ -1,10 +1,10 @@
 ---
 title: Authorization in REST Service Controller
-description: "Learn the recommended approaches for setting up authorization in Telerik Reporting REST Service controller."
+description: "Learn the recommended approaches for setting up authorization in the Telerik Reporting REST Service controller."
 type: how-to
 page_title: Setting up authorization in Reporting REST Service controller
 slug: reporting-rest-service-authorization
-tags: RESTService,Viewers
+tags: RestService, Viewers
 res_type: kb
 ---
 
@@ -23,22 +23,22 @@ On an attempt to add the `[Authorize]` attribute above the ReportsController cla
 
 ## Solution
 
-By design, the ReportsController methods for the resources are marked with the `[AllowAnonymous]` attribute _(i.e. they do not require authorization)_.
+By design, the ReportsController methods for the resources are marked with the `[AllowAnonymous]` attribute _(i.e., they do not require authorization)_.
 
-The resource requests are left unauthorized because they are made by the browser and an authentication token for them cannot be sent by the viewers. However, all resources are generated with unique random IDs that cannot be guessed directly.
+The resource requests remain unauthorized because they are made by the browser, and an authentication token for them cannot be sent by the viewers. However, all resources are generated with unique random IDs that cannot be guessed directly.
 
-When the authorization attribute is set to the entire ReportsController, the methods not requiring authentication by default will be overridden and will require an authorization token that is not sent by the viewer when requesting formats or resources.
+When the authorization attribute is set to the entire ReportsController, methods that do not require authentication by default will be overridden and require an authorization token that the viewer does not send when requesting formats or resources.
 
 Thus, we can suggest two possible approaches:
 
 1. Set the authorize attribute for the ReportsController methods - [REST service methods](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview), instead of the whole class.
 
-   These methods are virtual and you can override them like the following:
+   These methods are virtual, and you can override them like the following:
 
    For **ASP.NET Core**
 
    ```C#
-   [RESTAuthorize]
+   [Authorize]
    public override IActionResult CreateDocument(string clientID, string instanceID, [FromBody] CreateDocumentArgs args)
    {
    	return base.CreateDocument(clientID, instanceID, args);
@@ -48,14 +48,14 @@ Thus, we can suggest two possible approaches:
    For **ASP.NET**
 
    ```C#
-   [RESTAuthorize]
+   [Authorize]
    public override HttpResponseMessage CreateDocument(string clientID, string instanceID, CreateDocumentArgs args)
    {
    	return base.CreateDocument(clientID, instanceID, args);
    }
    ```
 
-1. It would be also possible to introduce some custom logic that adds the appropriate header (Token) to the requests for formats and resources.
+1. It would also be possible to introduce some custom logic that adds the appropriate header (Token) to the requests for formats and resources.
 
    For example, the [jQuery ajaxPrefilter](http://api.jquery.com/jquery.ajaxprefilter/) event to add the appropriate header - [Add custom auth headers to html reportviewer](https://www.telerik.com/forums/add-custom-auth-headers-to-html-reportviewer-0aafdd471455).
 

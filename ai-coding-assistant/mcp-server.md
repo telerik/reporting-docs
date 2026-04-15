@@ -14,40 +14,30 @@ reportingArea: General
 
 The Telerik Reporting [MCP (Model Context Protocol) server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik Reporting.
 
-This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs. You can ask complex questions about integrating Telerik Reporting in web applications, request specific implementations, and generate comprehensive code solutions.
+This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) APIs.
+
+You can ask complex questions about integrating Telerik Reporting in web applications, request specific implementations, and generate comprehensive code solutions.
 
 ## Prerequisites
 
 To use the Telerik Reporting MCP Server, you need:
 
-- [.NET](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview) 8 or later, or [Node.js](https://nodejs.org/en) 18 or later.
-- An [MCP-compatible client (IDE, code editor, or app)](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended). For example, the latest [Visual Studio Code](https://code.visualstudio.com/).
+- [.NET 8+](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview) SDK.
 - A [Telerik user account](https://www.telerik.com/account/).
 - An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
 - An application that uses the [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!).
+- An [MCP-compatible client (IDE, Code Editor, or App)](https://modelcontextprotocol.io/clients) that supports MCP tools. For example, the latest [Visual Studio 2026](https://visualstudio.microsoft.com/).
 
 ## Installation
 
 Depending on your environment, you can install the Telerik Reporting MCP server in any of the following ways:
 
-- By using the `dnx` script (.NET 10 or later only) or the `dotnet` CLI (.NET 8 and .NET 9):
-  - .NET 10:
-
-  ```bash
-  dnx Telerik.Reporting.MCP
-  ```
-
-  - .NET 8 and .NET 9:
-
-  ```bash
-  dotnet tool install Telerik.Reporting.MCP
-  ```
-
-- By using npm:
-
-  ```bash
-  npm i @progress/telerik-reporting-mcp
-  ```
+```bash .NET 10
+dnx Telerik.Reporting.MCP
+```
+```bash .NET 8/9
+dotnet tool install -g Telerik.Reporting.MCP
+```
 
 Next, make sure the configuration in your `mcp.json` is [correct](#configuring-mcp-json), and then [add your Telerik license](#configuring-your-license).
 
@@ -55,39 +45,33 @@ Next, make sure the configuration in your `mcp.json` is [correct](#configuring-m
 
 Use the settings in the following table to configure the Telerik Reporting MCP server in the [`mcp.json` file](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) of your code editor. Select the correct value based on your development environment.
 
-| Setting Name | .NET 10 Value                      | .NET 8/9 Value                                 | Node.js Value                     |
-| ------------ | ---------------------------------- | ---------------------------------------------- | --------------------------------- |
-| Package Name | `"Telerik.Reporting.MCP"`          | `"Telerik.Reporting.MCP"`                      | `@progress/telerik-reporting-mcp` |
-| Type         | `"stdio"`                          | `"stdio"`                                      | `stdio`                           |
-| Command      | `"dnx"`                            | `"dotnet"`                                     | `npx`                             |
-| Arguments    | `"Telerik.Reporting.MCP", "--yes"` | `"tool", "run", "telerik-reporting-assistant"` | `-y`                              |
-| Server Name  | `"telerik-reporting-assistant"`    | `"telerik-reporting-assistant"`                | `telerik-reporting-assistant`     |
+| Setting Name | .NET 10 Value                                | .NET 8/9 Value                                         |
+| ------------ | -------------------------------------------- | ------------------------------------------------------ |
+| Package Name | `"Telerik.Reporting.MCP"`                    | `"Telerik.Reporting.MCP"`                              |
+| Type         | `"stdio"`                                    | `"stdio"`                                              |
+| Command      | `"dnx"`                                      | `"dotnet"`                                             |
+| Arguments    | `["Telerik.Reporting.MCP", "--yes"]`         | `["tool", "run", "telerik-reporting-assistant"]`       |
+| Server Name  | `"telerik-reporting-assistant"`              | `"telerik-reporting-assistant"`                        |
 
 ### Configuring Your License
 
 An active Telerik Reporting license is required to use the Telerik Reporting MCP server.
 
-- When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (`%AppData%\Telerik\telerik-license.txt` on Windows and `~/.telerik/telerik-license.txt` on Linux). No additional action is required.
-- When using the .NET tooling, but your [license key file](slug:license-key) is not in the default directory, use one of the options below to configure your license.
-- When using Node.js, add your [license key file](slug:license-key) as an environment variable in your `mcp.json` file using one of the options below:
-  - As a license file path (recommended):
+- When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (**%AppData%\Telerik\telerik-license.txt** on Windows and **~/.telerik/telerik-license.txt** on Linux).
+- When using the .NET tooling, if your [license key file](slug:license-key) is not in the default directory, you can add the [license key file](slug:license-key) as an environment variable in the `mcp.json` file using one of the following options:
 
-    ```JSON
-    "env": {
-    	"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
-    }
-    ```
+  ```JSON Path
+  "env": {
+  	"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+  }
+  ```
+  ```JSON Inline
+  "env": {
+  	"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
+  }
+  ```
 
-* Option 2: Direct License Key
-  - As a license key value:
-
-    ```JSON
-    "env": {
-    	"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
-    }
-    ```
-
-> Using a license file path is recommended unless you're sharing settings across different systems. Remember to [update your license key](slug:license-key#updating-your-license-key) when necessary.
+> tip Using a license file path is _recommended_ unless you are sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when renewing.
 
 ## Visual Studio Configuration
 
@@ -129,48 +113,25 @@ The steps below describe the sample procedure for configuring the Telerik Report
    - For a global setup, add the file to your user directory, `%USERPROFILE%` (for example, `C:\Users\YourName\.mcp.json`).
 
 1. Add the following configuration to the `.mcp.json` file:
-   - In .NET 10:
 
-   ```JSON
+   ```JSON .NET 10
    {
    	"servers": {
    		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "dnx",
-   		"args": ["Telerik.Reporting.MCP", "--yes"],
+	   		"type": "stdio",
+	   		"command": "dnx",
+	   		"args": ["Telerik.Reporting.MCP", "--yes"]
    		}
    	}
    }
    ```
-
-   - In .NET 8 and .NET 9:
-
-   ```JSON
+   ```JSON .NET 8/9
    {
    	"servers": {
    		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "dotnet",
-   		"args": ["tool", "run", "telerik-reporting-assistant"],
-   		}
-   	}
-   }
-   ```
-
-   - In Node.js:
-
-   ```JSON
-   {
-   	"servers": {
-   		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "npx",
-   		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-   		"env": {
-   				"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-   				// or
-   				"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-   			}
+	   		"type": "stdio",
+	   		"command": "dotnet",
+	   		"args": ["tool", "run", "telerik-reporting-assistant"]
    		}
    	}
    }
@@ -179,8 +140,9 @@ The steps below describe the sample procedure for configuring the Telerik Report
 1. Restart Visual Studio.
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
-> warning **Known Issue: Hanging tool calls in Visual Studio** 
-> <br/> <br/> When using Telerik AI tools in Visual Studio, GitHub Copilot may:  <br/>
+> warning **Known Issue: Hanging tool calls in Visual Studio**
+> <br/> <br/> When using Telerik AI tools in Visual Studio, GitHub Copilot may: <br/>
+>
 > - **hang** during tool invocation;
 > - show UI for a successful tool response, but actually **fail silently**;
 > - continue generation without waiting for **parallel tool calls**.
@@ -193,6 +155,33 @@ The steps below describe the sample procedure for configuring the Telerik Report
 > <br/> <br/>
 > Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
 
+
+### Telerik Visual Studio Extension Setup:
+
+The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension](slug:reporting-integration-with-visual-studio) menu in Visual Studio.
+
+![An image showcasing the available MCP-related functionalities of the Telerik Reporting VS extension](images/mcp-images/vs-reporting-mcp-extension.png)
+
+The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds the Telerik Reporting server entry.
+
+The `Configure MCP Server for Solution` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) the `.mcp.json` file in the solution directory.
+
+The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) a [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) file in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
+
+### Visual Studio Usage
+
+After configuration and restart:
+
+1. Open Copilot Chat.
+2. Enable the `telerik-reporting-assistant` tool.
+3. Grant permissions when prompted (_per session, workspace, or always_).
+
+![An image demonstrating how to allow the usage of the Telerik Reporting MCP tool in the VS Copilot Chat](images/mcp-images/vs-allow-reporting-mcp-tool.png)
+
+Start fresh sessions for unrelated prompts to avoid context pollution. You can check the Output pane of Visual Studio for diagnostics (select output from **GitHub Copilot**).
+
+![An image demonstrating sample output from the GitHub Copilot Output window](images/mcp-images/vs-github-copilot-output.png)
+
 ## Visual Studio Code
 
 > - Visual Studio Code 1.102.1 or later is required to use the Telerik Reporting MCP Server.
@@ -201,53 +190,32 @@ The steps below describe the sample procedure for configuring the Telerik Report
 The basic setup in Visual Studio Code involves the following steps:
 
 1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
-1. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup). The settings below let you use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
-   - In .NET 10:
+1. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup).
 
-   ```JSON
-   {
-   	"servers": {
-   		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "dnx",
-   		"args": ["Telerik.Reporting.MCP", "--yes"],
-   		}
-   	}
-   }
-   ```
+The settings below allow you to use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
 
-   - In .NET 8 and .NET 9:
-
-   ```JSON
-   {
-   	"servers": {
-   		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "dotnet",
-   		"args": ["tool", "run", "telerik-reporting-assistant"],
-   		}
-   	}
-   }
-   ```
-
-   - In Node.js:
-
-   ```JSON
-   {
-   	"servers": {
-   		"telerik-reporting-assistant": {
-   		"type": "stdio",
-   		"command": "npx",
-   		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-   		"env": {
-   				"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-   				// or
-   				"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-   			}
-   		}
-   	}
-   }
-   ```
+```JSON .NET 10
+{
+	"servers": {
+		"telerik-reporting-assistant": {
+			"type": "stdio",
+			"command": "dnx",
+			"args": ["Telerik.Reporting.MCP", "--yes"]
+		}
+	}
+}
+```
+```JSON .NET 8/9
+{
+	"servers": {
+		"telerik-reporting-assistant": {
+			"type": "stdio",
+			"command": "dotnet",
+			"args": ["tool", "run", "telerik-reporting-assistant"]
+		}
+	}
+}
+```
 
 1. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
@@ -267,52 +235,28 @@ The basic setup in Visual Studio Code involves the following steps:
 
 Create a `.cursor/mcp.json` file in your workspace root (or user folder for global setup):
 
-- In .NET 10:
-
-  ```JSON
-  {
-  "mcpServers": {
-  	"telerik-reporting-assistant": {
-  		"type": "stdio",
-  		"command": "dnx",
-  		"args": ["Telerik.Reporting.MCP", "--yes"],
-  		}
-  	}
-  }
-  ```
-
-- In .NET 8 and .NET 9:
-
-  ```JSON
-  {
-  	"mcpServers": {
-  		"telerik-reporting-assistant": {
-  		"type": "stdio",
-  		"command": "dotnet",
-  		"args": ["tool", "run", "telerik-reporting-assistant"],
-  		}
-  	}
-  }
-  ```
-
-- In Node.js:
-
-  ```JSON
-  {
-  	"mcpServers": {
-  		"telerik-reporting-assistant": {
-  		"type": "stdio",
-  		"command": "npx",
-  		"args": ["-y", "@progress/telerik-reporting-mcp@latest"],
-  		"env": {
-  				"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-  				// or
-  				"TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-  			}
-  		}
-  	}
-  }
-  ```
+```JSON .NET 10
+{
+"mcpServers": {
+	"telerik-reporting-assistant": {
+			"type": "stdio",
+			"command": "dnx",
+			"args": ["Telerik.Reporting.MCP", "--yes"]
+		}
+	}
+}
+```
+```JSON .NET 8/9
+{
+	"mcpServers": {
+		"telerik-reporting-assistant": {
+			"type": "stdio",
+			"command": "dotnet",
+			"args": ["tool", "run", "telerik-reporting-assistant"]
+		}
+	}
+}
+```
 
 This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 
@@ -364,14 +308,18 @@ After clicking on the 'Respond' button, the MCP Server will display a drop-down 
 
 The following examples demonstrate useful prompts for the Telerik Reporting MCP Server:
 
-- "`#telerik-reporting-assistant` Add a Telerik Report Viewer to my native Angular application."
+- "`#telerik-reporting-assistant` Add a Native Angular Report Viewer to my Angular application."
 - "`#telerik-reporting-assistant` Connect the Telerik Report Viewer to my Telerik Report Server instance."
 
 > tip Visit the [Telerik Reporting Prompt Library](slug:ai-prompt-library) for more sample prompts.
 
 ### Usage Limits
 
-A Telerik [Subscription](https://www.telerik.com/purchase.aspx?filter=web) or Trial license is required to use the Telerik Reporting AI Coding Assistant. Perpetual licenses do not include access, but you can [start a free trial](https://www.telerik.com/mcp-servers-reporting/thank-you) to evaluate it. See the [Usage Limits](slug:ai-coding-assistant#usage-limits) section for details.
+A Telerik [Subscription](https://www.telerik.com/purchase.aspx?filter=web) or Trial license is required to use the Telerik Reporting AI Coding Assistant. 
+
+Perpetual licenses do not include access, but you can [start a free trial](https://www.telerik.com/mcp-servers-reporting/thank-you) to evaluate it. 
+
+See the [Usage Limits](slug:ai-coding-assistant#usage-limits) section for details.
 
 ### Connect to Local AI Model
 
@@ -387,5 +335,4 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 
 - [AI Coding Assistant Overview](slug:ai-coding-assistant)
 - [Telerik Reporting Prompt Library](slug:ai-prompt-library)
-- [Kendo UI for Angular MCP Server](https://www.telerik.com/kendo-angular-ui/components/ai-assistant/mcp-server)
 - [Telerik Blazor MCP Server](https://www.telerik.com/blazor-ui/documentation/ai/mcp-server)

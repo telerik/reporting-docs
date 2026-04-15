@@ -88,8 +88,6 @@ To activate JSON file configuration with a different name, for example, `reporti
 
 1. Add the required services in the `ConfigureServices` method
 
-1. Add the required services in the `ConfigureServices` method
-
    ```C#
    public void ConfigureServices(IServiceCollection services)
    {
@@ -120,7 +118,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Make sure that a key-value JSON-based file is available in your project and add the required [configuration settings in it](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview#json-based-configuration), for example, the `ConnectionStrings`.
 1. Implement a Report Designer controller. Right-click on the `Controllers` folder and add a new item: Add > New item... > **Web API Controller Class** item. Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the project.
-1. Inherit the [`ReportDesignerControllerBase`](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the [`ReportServiceConfiguration`](/api/telerik.reporting.services.reportserviceconfiguration) there is another configuration instance named [`ReportDesignerServiceConfiguration`](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), which will initialize the definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is how a basic implementation of the controller should look like:
+1. Inherit the [`ReportDesignerControllerBase`](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the [`ReportServiceConfiguration`](/api/telerik.reporting.services.reportserviceconfiguration), there is another configuration instance named [`ReportDesignerServiceConfiguration`](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), which will initialize the definition storage. This is the class responsible for opening, editing, and saving the report definitions. This is how a basic implementation of the controller should look like the following:
 
    ```C#
    namespace CSharp.AspNetCoreDemo.Controllers
@@ -190,7 +188,7 @@ The REST service works as a backend and is responsible for storage operations li
    </html>
    ```
 
-1. To set up the `index.html` as a startup page check [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the _launchUrl_ to _index.html_ in `launchSettings.json`.
+1. To set up the `index.html` as a startup page, check [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the _launchUrl_ to _index.html_ in `launchSettings.json`.
 1. Finally, run the project to preview the web designer.
 
 ## Examples

@@ -12,19 +12,20 @@ position: 4
 
 Learn about the latest changes, improvements, and bug fixes in the Telerik Reporting AI Coding Assistant. The updates are structured in chronological order, with the newest ones appearing first.
 
-## November, 2025 Changelog
+## January, 2026
+
+- **NuGet distribution** - The MCP server is now distributed via NuGet. The `npm` distribution channel is no longer supported.
+- **Automatic License Recognition** - The MCP server automatically detects your Telerik license when configured globally, simplifying the setup process.
+
+## November, 2025
 
 > [Microsoft sunset GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
 
-### Highlights
-
 - Added support for the HTML5 MVC, HTML5 WebForms, WinForms, and WPF Report Viewers.
 - Added support for the Web Report Designer, its Blazor wrapper, and the Designer REST service.
-- Refined the MCP tool's output formatting to better align with Claude Sonnet 4/4.5 and GPT-5 best practices, improving the LLM's ability to follow the exact provided instructions more closely.
+- Refined the MCP tool's output formatting to better align with Claude Sonnet 4/4.5+ and GPT-5+ best practices, improving the LLM's ability to follow the exact provided instructions more closely.
 
-## August, 2025 Changelog
-
-### Highlights
+## August, 2025
 
 - Initial launch of the AI Coding Assistant for Telerik Reporting.
 - Provided intelligent code suggestions, context-aware documentation, and quick access to APIs for the HTML5, React, Blazor Wrapper and Native, Angular Wrapper and Native Report Viewers.

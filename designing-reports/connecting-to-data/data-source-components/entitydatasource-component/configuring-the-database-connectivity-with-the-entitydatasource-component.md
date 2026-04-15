@@ -31,13 +31,7 @@ partial class AdventureWorksContext
 	public AdventureWorksContext(string connectionString) : base(connectionString) {}
 }
 ````
-````VB
-Partial Class AdventureWorksContext
-	Public Sub New(connectionString As String)
-		MyBase.New(connectionString)
-	End Sub
-End Class
-````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=AdventureWorksDbContextConstructor}}
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=ConnectionStringSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=ConnectionStringSnippet}}

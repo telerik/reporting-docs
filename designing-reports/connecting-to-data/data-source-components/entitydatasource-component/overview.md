@@ -26,13 +26,7 @@ The `EntityDataSource` component enables data items to connect to an [ADO.NET En
   	public AdventureWorksContext(string connectionString) : base(connectionString) {}
   }
   ```
-  ```VB
-  Partial Class AdventureWorksContext
-  	Public Sub New(connectionString As String)
-  		MyBase.New(connectionString)
-  	End Sub
-  End Class
-  ```
+  {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=AdventureWorksDbContextConstructor}}
 
 > In order to use the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) and [Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview) the Entity Data Model should be located in a separate class library. The connectionString to the database should be copied to the config file of the report class library for the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and Preview to work.
 

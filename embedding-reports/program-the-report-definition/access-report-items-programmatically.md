@@ -44,13 +44,7 @@ protected void Button1_Click(object sender, EventArgs e)
 	Telerik.Reporting.TextBox txt = report.Items.Find("productNameDataTextBox", true)[0] as Telerik.Reporting.TextBox;
 }
 ````
-````VB.NET
-Protected Sub Button1_Click(sender As Object, e As EventArgs)
-	Dim instanceReportSource As Telerik.Reporting.InstanceReportSource = DirectCast(Me.reportViewer1.ReportSource, Telerik.Reporting.InstanceReportSource)
-	Dim report As Telerik.Reporting.Report = DirectCast(instanceReportSource.ReportDocument, Telerik.Reporting.Report)
-	Dim txt As Telerik.Reporting.TextBox = TryCast(report.Items.Find("productNameDataTextBox", True)(0), Telerik.Reporting.TextBox)
-End Sub
-````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=AccessReportItemFromApp}}
 
 ## Access report fields from a Table item
 
@@ -69,16 +63,4 @@ private void tableTextBox_ItemDataBinding(object sender, EventArgs eventArgs)
 	textBox.Value = detail.DataObject["Data"];
 }
 ````
-````VB.NET
-Private Sub tableTextBox_ItemDataBinding(sender As Object, eventArgs As EventArgs)
-	'get the textbox from the sender object
-	Dim textBox As Telerik.Reporting.Processing.TextBox = DirectCast(sender, Telerik.Reporting.Processing.TextBox)
-	'get the table object
-	Dim table As Telerik.Reporting.Processing.Table = DirectCast(textBox.Parent, Telerik.Reporting.Processing.Table)
-	'get the detail section
-	Dim detail As Telerik.Reporting.Processing.DetailSection = DirectCast(table.Parent, Telerik.Reporting.Processing.DetailSection)
-	'get the raw value from the Report datasource directly
-	textBox.Value = detail.DataObject("Data")
-End Sub
-````
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=AccessTableFieldFromDataBinding}}

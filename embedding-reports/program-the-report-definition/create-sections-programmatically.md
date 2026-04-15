@@ -30,14 +30,7 @@ this.detail.Height = new Telerik.Reporting.Drawing.Unit(3.0, Telerik.Reporting.D
 this.detail.Name = "detail";
 report.Items.Add((Telerik.Reporting.ReportItemBase)detail);
 ````
-````VB.NET
-Dim detail As New Telerik.Reporting.DetailSection()
-Me.detail.Height = New Telerik.Reporting.Drawing.Unit(3, Telerik.Reporting.Drawing.UnitType.Inch)
-Me.detail.Name = "detail";
-report.Items.Add(DirectCast(detail, Telerik.Reporting.ReportItemBase))
-````
-
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=CreateDetailSection}}
 ## See Also
 
 * [ReportHeaderSection](/api/Telerik.Reporting.ReportHeaderSection)

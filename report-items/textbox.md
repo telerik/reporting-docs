@@ -41,10 +41,7 @@ The layout of the tilted text starts from the corner of the client item rectangl
 ````C#
 this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
 ````
-````VB
-Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
-````
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=SetTextBoxValueWithLineBreaks}}
 The item grows vertically to accommodate a full tilted line from the left to the right edge, which may produce a significant growth of the item, especially for angles nearing 90 degrees. To avoid this behavior, set the [`CanGrow`](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to `false`.
 
 For angles in the 90-270 degree range, the item will grow until the whole text is fitted on a single line. To control this behavior, use the [`CanGrow`](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property.

@@ -13,42 +13,42 @@ position: 5
 
 ## Export
 
-Gets the Export command. Execute to export the report in the respective format.
+Gets the Export command. Execute to export the report in the specified format.
 
 
 ## GoToFirstPage
 
-Gets the GoToFirstPage command. Execute to go to the first page of the report.
+Gets the GoToFirstPage command. Execute to navigate to the first page of the report.
 
 
 ## GoToLastPage
 
-Gets the GoToLastPage command. Execute to go to the last page of the report.
+Gets the GoToLastPage command. Execute to navigate to the last page of the report.
 
 
 ## GoToNextPage
 
-Gets the GoToNextPage command. Execute to go to the next page of the report.
+Gets the GoToNextPage command. Execute to navigate to the next page of the report.
 
 
 ## GoToPage
 
-Gets the GoToPage command. Execute to go to a specific page of the report.
+Gets the GoToPage command. Execute to navigate to a specific page of the report.
 
 
 ## GoToPrevPage
 
-Gets the GoToPrevPage command. Execute to go to the previous page of the report.
+Gets the GoToPrevPage command. Execute to navigate to the previous page of the report.
 
 
 ## HistoryBack
 
-Gets the HistoryBack command. Execute to go back to the previously rendered report from history.
+Gets the HistoryBack command. Execute to navigate back to the previously rendered report from history.
 
 
 ## HistoryForward
 
-Gets the HistoryForward command. Execute to go forward to the previously rendered report from history.
+Gets the HistoryForward command. Execute to navigate forward to the next report from history.
 
 
 ## Print
@@ -59,6 +59,11 @@ Gets the Print command. Execute to print the report.
 ## Refresh
 
 Gets the Refresh command. Execute to refresh the report.
+
+
+## ToggleAiPromptDialog
+
+Gets the ToggleAiPromptDialog command. Execute to show or hide the AI prompt dialog.
 
 
 ## ToggleDocumentMap
@@ -81,9 +86,9 @@ Gets the TogglePrintPreview command. Execute to toggle between Print Preview and
 Gets the ToggleSearchDialog command. Execute to show or hide the search dialog.
 
 
-## ToggleSideMenu
+## ToggleSendEmailDialog
 
-Gets the ToggleSideMenu command. Execute to show or hide the side menu.
+Gets the ToggleSendEmailDialog command. Execute to show or hide the send email dialog.
 
 
 ## ToggleZoomMode
@@ -93,15 +98,15 @@ Gets the ToggleZoomMode command. Execute to change the zoom mode of the report.
 
 ## Zoom
 
-Gets the Zoom command. Execute to zoom the report with a specified ratio.
+Gets the Zoom command. Execute to zoom the report to a specified ratio.
 
 
 ## ZoomIn
 
-Gets the ZoomIn command. Execute to zoom the report in.
+Gets the ZoomIn command. Execute to zoom in the report.
 
 
 ## ZoomOut
 
-Gets the ZoomOut command. Execute to zoom the report out.
+Gets the ZoomOut command. Execute to zoom out the report.
 

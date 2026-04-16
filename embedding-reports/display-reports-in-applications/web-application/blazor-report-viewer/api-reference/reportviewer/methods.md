@@ -19,8 +19,8 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | - |
-| eventHandlerName | `System.String` | No | - |
+| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | The event name to bind to. |
+| eventHandlerName | `System.String` | No | The name of the event handler function. |
 
 ### Example
 
@@ -40,7 +40,7 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 
 ## ClearReportSourceAsync
 
-Clears the current reportSource from the viewer internal state and from its persisted session in the browser.
+Clears the current report source from the viewer's internal state and from its persisted session in the browser.
 
 ### Example
 
@@ -60,9 +60,14 @@ Clears the current reportSource from the viewer internal state and from its pers
 ````
 
 
+## Dispose
+
+Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+
+
 ## GetAccessibilityKeyMapAsync
 
-Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap), used when the report viewer is in accessible mode.
+Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) used when the report viewer is in accessible mode.
 
 ### Example
 
@@ -173,7 +178,7 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
 
 ## GetReportSourceAsync
 
-Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#reportsourceoptions) containing the report identifier and report parameters values.
+Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#reportsourceoptions) containing the report identifier and report parameter values.
 
 ### Example
 
@@ -217,7 +222,7 @@ Gets the report viewer's scale factor.
 
 ## GetScaleModeAsync
 
-Gets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode).
+Gets the report viewer's current [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode).
 
 ### Example
 
@@ -261,6 +266,17 @@ Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreportin
 ````
 
 
+## OnAfterRenderAsync
+
+Method invoked after each time the component has been rendered.
+
+### Parameters
+
+| Parameter | Type | Optional | Description |
+|-----------|------|----------|-------------|
+| firstRender | `System.Boolean` | No | Set to <code>true</code> if this is the first time <xref href="Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)" data-throw-if-not-resolved="false"></xref> has been invoked on this component instance; otherwise <code>false</code>. |
+
+
 ## RefreshReportAsync
 
 Reloads/refreshes the current report.
@@ -283,13 +299,13 @@ Reloads/refreshes the current report.
 
 ## SetAccessibilityKeyMapAsync
 
-Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap), used when the report viewer is in accessible mode.
+Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) used when the report viewer is in accessible mode.
 
 ### Parameters
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| keyMap | [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) | No | - |
+| keyMap | [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) | No | The accessibility key map to set. |
 
 ### Example
 
@@ -316,7 +332,7 @@ Sets the authentication token.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| token | `System.String` | No | - |
+| token | `System.String` | No | The encoded authentication token to set. |
 
 ### Example
 
@@ -342,7 +358,7 @@ Sets the [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| pageMode | [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#pagemode) | No | - |
+| pageMode | [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#pagemode) | No | The page mode to set. |
 
 ### Example
 
@@ -368,7 +384,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| reportSourceOptions | [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#reportsourceoptions) | No | - |
+| reportSourceOptions | [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#reportsourceoptions) | No | The report source options to set. |
 
 ### Example
 
@@ -397,7 +413,7 @@ Sets the report viewer's scale factor.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| scale | `System.Double` | No | - |
+| scale | `System.Double` | No | The scale factor to set. |
 
 ### Example
 
@@ -423,7 +439,7 @@ Sets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| scaleMode | [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode) | No | - |
+| scaleMode | [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode) | No | The scale mode to set. |
 
 ### Example
 
@@ -449,7 +465,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| viewMode | [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#viewmode) | No | - |
+| viewMode | [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#viewmode) | No | The view mode to set. |
 
 ### Example
 
@@ -469,13 +485,13 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
 
 ## UnbindAsync
 
-Unbinds all event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) including anonymous ones.
+Unbinds all event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event), including anonymous ones.
 
 ### Parameters
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | - |
+| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | The event name to unbind all handlers from. |
 
 ### Example
 
@@ -501,8 +517,8 @@ Unbinds event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`](
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | - |
-| eventHandlerName | `System.String` | No | - |
+| eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | The event name to unbind from. |
+| eventHandlerName | `System.String` | No | The name of the event handler function to unbind. |
 
 ### Example
 

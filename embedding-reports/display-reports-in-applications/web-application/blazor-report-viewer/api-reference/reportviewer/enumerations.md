@@ -19,8 +19,8 @@ Specifies where the Document Map Area should be displayed.
 
 | Value | Description |
 | ------ | ------ |
-| Left | Displays Document Map Area on the <strong>left</strong> of the page view. |
-| Right | Displays Document Map Area on the <strong>right</strong> of the page view. |
+| Left | Displays the Document Map Area on the left side of the page view. |
+| Right | Displays the Document Map Area on the right side of the page view. |
 
 
 ## EditorType
@@ -55,22 +55,22 @@ Specifies the available built-in events that can be used with [`BindAsync`]({%sl
 | Ready | Occurs when the viewer content has been loaded from the template and is ready to display reports or perform any other <br>operations on it. The function is executed in the context of the ReportViewer object that is available through this object. |
 | RenderingBegin | Occurs before rendering the report. |
 | RenderingEnd | Occurs after rendering the report. |
-| SendEmailBegin | Occurs before the report is exported and the e-mail message is sent. |
-| SendEmailEnd | Occurs after the report is exported and before the e-mail message is sent. |
+| SendEmailBegin | Occurs before the report is exported and the email message is sent. |
+| SendEmailEnd | Occurs after the report is exported and the email message is sent. |
 | UpdateUi | Occurs when the UI state of the viewer changes. |
-| ViewerTooltipOpening | The event occurs before a tooltip is opened, providing the ability to cancel its opening. |
+| ViewerTooltipOpening | Occurs before a tooltip is opened, providing the ability to cancel its opening. |
 
 
 ## PageMode
 
-Specifies the page mode for the ReportViewer control.
+Specifies the page mode for the report viewer control.
 
 ### Values
 
 | Value | Description |
 | ------ | ------ |
-| ContinuousScroll | Displays large amount of report pages by appending additional pages on demand. |
-| SinglePage | Displays only one report page in the PageArea container. |
+| ContinuousScroll | Displays a large number of report pages by appending additional pages on demand. |
+| SinglePage | Displays only one report page in the page area container. |
 
 
 ## ParametersAreaPosition
@@ -81,10 +81,10 @@ Specifies where the Parameters Area should be displayed.
 
 | Value | Description |
 | ------ | ------ |
-| Bottom | Displays Parameters Area on the <strong>bottom</strong> of the page view. |
-| Left | Displays Parameters Area on the <strong>left</strong> of the page view. |
-| Right | Displays Parameters Area on the <strong>right</strong> of the page view. |
-| Top | Displays Parameters Area on the <strong>top</strong> of the page view. |
+| Bottom | Displays the Parameters Area on the bottom of the page view. |
+| Left | Displays the Parameters Area on the left side of the page view. |
+| Right | Displays the Parameters Area on the right side of the page view. |
+| Top | Displays the Parameters Area on the top of the page view. |
 
 
 ## PrintMode
@@ -95,14 +95,14 @@ Specifies the printing behavior of the report viewer.
 
 | Value | Description |
 | ------ | ------ |
-| AutoSelect | Specifies that the viewer should automatically determine how to print: through the browser's PDF plug-in or through export to a PDF file. |
+| AutoSelect | Specifies that the viewer should automatically determine how to print: through the browser's PDF plug-in or by exporting to a PDF file. |
 | ForcePDFFile | Specifies that the viewer should always export the report document to PDF format with the 'print' script enabled. |
-| ForcePDFPlugin | Specifies that the viewer should always use the PDF plugin regardless of the browser's version and settings. |
+| ForcePDFPlugin | Specifies that the viewer should always use the PDF plug-in regardless of the browser's version and settings. |
 
 
 ## ScaleMode
 
-Sets the scale mode of the viewer.
+Specifies the scale mode of the report viewer.
 
 ### Values
 
@@ -110,17 +110,17 @@ Sets the scale mode of the viewer.
 | ------ | ------ |
 | FitPage | The whole report will fit on the page (will zoom in or out), regardless of its width and height. |
 | FitPageWidth | The report will be zoomed in or out so that the width of the screen and the width of the report match. |
-| Specific | Uses the scale property to zoom the report in and out. |
+| Specific | Uses the scale property to zoom the report in or out. |
 
 
 ## ViewMode
 
-Specifies whether the viewer is in interactive or print preview mode.
+Specifies whether the report viewer is in interactive or print preview mode.
 
 ### Values
 
 | Value | Description |
 | ------ | ------ |
-| Interactive | Displays the report in its original width and height with no paging. Additionally interactivity is enabled. |
-| PrintPreview | Displays the paginated report as if it is printed on paper. Interactivity is not enabled. |
+| Interactive | Displays the report in its original width and height with no paging. Interactivity is enabled. |
+| PrintPreview | Displays the paginated report as if it is printed on paper. Interactivity is disabled. |
 

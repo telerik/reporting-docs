@@ -13,7 +13,7 @@ position: 2
 
 ## AccessibilityKeyMap
 
-Gets or sets the key shortcuts map, used when the report viewer is in accessible mode.
+Gets or sets the key shortcuts map used when the report viewer is in accessible mode.
 
 ### Type
 
@@ -43,7 +43,7 @@ Gets or sets the encoded authentication token used to authenticate the requests.
 
 ## CheckedButtonClass
 
-Gets or sets the class to be used by buttons in the checked state.
+Gets or sets the CSS class to be used by buttons in the checked state.
 
 ### Type
 
@@ -58,7 +58,7 @@ Gets or sets the class to be used by buttons in the checked state.
 
 ## ClientEvents
 
-Gets or sets the viewer's event handler function names as strings. The function name should be fully qualified, e.g. "window.trvEventHandlers.exportBegin", or just "trvEventHandlers.exportBegin" ("window" qualifier is optional). The event handler functions should be implemented inside wwwroot/index.html (Blazor WebAssembly) or Pages/_Host.cshtml (Blazor Server). The JavaScript API of the event handlers is available in  https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready.
+Gets or sets the viewer's event handler function names as strings. The function name should be fully qualified, e.g., "window.trvEventHandlers.exportBegin", or just "trvEventHandlers.exportBegin" ("window" qualifier is optional). The event handler functions should be implemented inside wwwroot/index.html (Blazor WebAssembly) or Pages/_Host.cshtml (Blazor Server). The JavaScript API of the event handlers is available at https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready.
 
 ### Type
 
@@ -121,7 +121,7 @@ Gets the available report viewer commands.
 
 ## DisabledButtonClass
 
-Gets or sets the class to be used by buttons in the disabled state.
+Gets or sets the CSS class to be used by buttons in the disabled state.
 
 ### Type
 
@@ -136,7 +136,7 @@ Gets or sets the class to be used by buttons in the disabled state.
 
 ## DocumentMapAreaPosition
 
-Gets or sets the document map area position. Left (Default). Right.
+Gets or sets the document map area position. Available positions: Left (Default). Right.
 
 ### Type
 
@@ -151,7 +151,7 @@ Gets or sets the document map area position. Left (Default). Right.
 
 ## DocumentMapVisible
 
-Gets or sets  a value indicating whether the viewer's document map is initially visible.
+Gets or sets a value indicating whether the viewer's document map is initially visible.
 
 ### Type
 
@@ -198,9 +198,9 @@ Gets or sets the image URL for the PageArea background image. Used only when the
 
 Gets or sets a value indicating whether the client will be kept alive.
 
-When set to true a request will be sent to the server to stop the client from expiring, determined by the ClientSessionTimeout server configuration
+When set to true, a request will be sent to the server to stop the client from expiring, as determined by the ClientSessionTimeout server configuration.
 
-When set to false, the client will be left to be expired
+When set to false, the client will be left to expire.
 
 ### Type
 
@@ -217,6 +217,7 @@ When set to false, the client will be left to be expired
 
 Gets or sets the page mode.
 
+- Available modes:
 - SinglePage - Displays a single report page.
 - ContinuousScroll - Displays multiple report pages. Pages are loaded on-demand while scrolling.
 
@@ -233,7 +234,7 @@ Gets or sets the page mode.
 
 ## ParameterEditors
 
-Gets or sets the user-defined custom editors for the report parameters. Each custom editor requires a function name for its `Telerik.ReportViewer.Blazor.ParameterEditor.Match` and `Telerik.ReportViewer.Blazor.ParameterEditor.CreateEditor` properties. The function names should be fully qualified, e.g. "window.trvDateTimeCustomEditor.match", or just "trvDateTimeCustomEditor.match" ("window" qualifier is optional). The functions should be implemented inside the wwwroot/index.html (Blazor WebAssembly) or Pages/_Host.cshtml (Blazor Server).
+Gets or sets the user-defined custom editors for the report parameters. Each custom editor requires a function name for its `Telerik.ReportViewer.Blazor.ParameterEditor.Match` and `Telerik.ReportViewer.Blazor.ParameterEditor.CreateEditor` properties. The function names should be fully qualified, e.g., "window.trvDateTimeCustomEditor.match", or just "trvDateTimeCustomEditor.match" ("window" qualifier is optional). The functions should be implemented inside the wwwroot/index.html (Blazor WebAssembly) or Pages/_Host.cshtml (Blazor Server).
 
 ### Type
 
@@ -296,7 +297,7 @@ Gets or sets the options of the built-in parameter editors.
 
 ## ParametersAreaPosition
 
-Gets or sets the parameters area position. Right (Default). Left. Top. Bottom.
+Gets or sets the parameters area position. Available positions: Right (Default). Left. Top. Bottom.
 
 ### Type
 
@@ -343,8 +344,8 @@ Gets or sets a value indicating whether the viewer's client state will be persis
 
 Gets or sets the print mode of the viewer.
 
-- Three modes exist currently:
-- AutoSelect - The viewer automatically determinse how to print: via the browser's PDF plug-in or exporting to a PDF file.
+- Available modes:
+- AutoSelect - The viewer automatically determines how to print: via the browser's PDF plug-in or exporting to a PDF file.
 - ForcePDFPlugin - The viewer always uses the PDF plugin regardless of the browser's version and settings.
 - ForcePDFFile - The viewer always exports the report document to PDF format with 'automatic print on open' script enabled.
 
@@ -361,7 +362,7 @@ Gets or sets the print mode of the viewer.
 
 ## ReportServer
 
-Gets or sets the connection data of the report server that hosts the reports. When a Report Server connection is used, the ServiceUrl property should not be set. For more information see http://www.telerik.com/help/reporting/html5-report-viewer-howto-use-it-with-reportserver.html.
+Gets or sets the connection data of the report server that hosts the reports. When a Report Server connection is used, the ServiceUrl property should not be set. For more information, see http://www.telerik.com/help/reporting/html5-report-viewer-howto-use-it-with-reportserver.html.
 
 ### Type
 
@@ -422,7 +423,7 @@ Gets or sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
 
 ## Scale
 
-Gets or sets zoom ratio of the report. ScaleMode needs to be set to Specific for this property to take effect. 1.0 is equal to 100%, i.e. the original size of the report.
+Gets or sets the zoom ratio of the report. ScaleMode needs to be set to Specific for this property to take effect. 1.0 is equal to 100%, i.e., the original size of the report.
 
 ### Type
 
@@ -439,7 +440,7 @@ Gets or sets zoom ratio of the report. ScaleMode needs to be set to Specific for
 
 Gets or sets the scale mode of the viewer.
 
-- Three modes exist currently:
+- Available modes:
 - FitPage - The whole report will fit on the page (will zoom in or out), regardless of its width and height.
 - FitPageWidth - The report will be zoomed in or out so that the width of the screen and the width of the report match.
 - Specific - Uses the scale to zoom the report in and out.
@@ -472,7 +473,7 @@ Gets or sets a value indicating whether the search metadata will be delivered on
 
 ## Selector
 
-Gets or sets a selector that is used in conjunction with data attributes (https://docs.telerik.com/reporting/html5-report-viewer-data-attributes). Whenever a command is attached to an element outside of the report viewer via a data-attribute this selector must be provided.
+Gets or sets a selector that is used in conjunction with data attributes (see https://docs.telerik.com/reporting/html5-report-viewer-data-attributes). Whenever a command is attached to an element outside of the report viewer via a data-attribute, this selector must be provided.
 
 ### Type
 
@@ -510,7 +511,7 @@ Gets or sets the default send e-mail message options.
 
 ## ServiceUrl
 
-Gets or sets the URL of the service which will provide the report viewer with reports (relative or absolute). The service must be properly configured so that the report viewer can successfully communicate with the server. For more information on how to configure the service please check http://www.telerik.com/help/reporting/telerik-reporting-rest-conception.html.
+Gets or sets the URL of the service which will provide the report viewer with reports (relative or absolute). The service must be properly configured so that the report viewer can successfully communicate with the server. For more information on how to configure the service, please check http://www.telerik.com/help/reporting/telerik-reporting-rest-conception.html.
 
 ### Type
 
@@ -525,7 +526,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ## TemplateUrl
 
-Gets or sets the url for the report viewer template. A customized template can be provided as described in http://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
+Gets or sets the URL for the report viewer template. A customized template can be provided as described in http://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
 
 ### Type
 
@@ -557,6 +558,7 @@ Gets or sets the unique identifier of the ReportViewer instance.
 
 Gets or sets the view mode.
 
+- Available modes:
 - PrintPreview - Displays the paginated report as if it is printed on paper. Interactivity is disabled.
 - Interactive - Displays the report in its original width and height with no paging. Interactivity is enabled.
 

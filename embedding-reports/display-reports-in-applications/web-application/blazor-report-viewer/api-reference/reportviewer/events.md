@@ -60,7 +60,7 @@ Gets or sets the viewer's printEnd event handler function name. Occurs after pri
 
 ## Ready
 
-Gets or sets the viewer's ready event handler function name. Called when the viewer content has been loaded from the template and is ready to display reports or perform any other  operations on it. The function is executed in the context of the ReportViewer object that is available through the this object.
+Gets or sets the viewer's ready event handler function name. Called when the viewer content has been loaded from the template and is ready to display reports or perform any other  operations. The function is executed in the context of the ReportViewer object that is available through the 'this' reference.
 
 
 ## RenderingBegin
@@ -75,12 +75,12 @@ Gets or sets the viewer's renderingEnd event handler function name. Occurs after
 
 ## SendEmailBegin
 
-Gets or sets the viewer's sendEmailBegin event handler function name. Occurs before the report is exported and the e-mail message is sent.
+Gets or sets the viewer's sendEmailBegin event handler function name. Occurs before the report is exported and the email message is sent.
 
 
 ## SendEmailEnd
 
-Gets or sets the viewer's sendEmailEnd event handler function name. Occurs after the report is exported and before the e-mail message is sent.
+Gets or sets the viewer's sendEmailEnd event handler function name. Occurs after the report is exported and the email message is sent.
 
 
 ## UpdateUi
@@ -90,5 +90,5 @@ Gets or sets the viewer's updateUi event handler function name. Occurs when the 
 
 ## ViewerToolTipOpening
 
-Gets or sets the viewer's viewerToolTipOpening event handler function name. The event occurs before a tooltip is opened, providing the ability to cancel its opening.
+Gets or sets the viewer's viewerToolTipOpening event handler function name. Occurs before a tooltip is opened, providing the ability to cancel its opening.
 

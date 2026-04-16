@@ -1,9 +1,9 @@
 ---
 title: Retrieving Previous Record in Detail Section
-description: Learn how to retrieve the previous record in the detail section of a Telerik Reporting report.
+description: Learn how to retrieve the previous record in the detail section of a Telerik Reporting Report.
 type: how-to
-page_title: Accessing Previous Record in Detail Section of Telerik Reporting
-meta_title: Accessing Previous Record in Detail Section of Telerik Reporting
+page_title: Accessing Previous Record in the Detail Section of Telerik Reporting
+meta_title: Accessing Previous Record in the Detail Section of Telerik Reporting
 slug: accessing-previous-record-in-detail-section-telerik-reporting
 tags: reporting, detail-section, previous, isnull, expressions
 res_type: kb
@@ -24,15 +24,16 @@ To achieve this functionality, use the `Previous` function. It allows retrieving
    = Previous("group", Fields.Column1)
    ```
 
-   Replace `"group"` with the name of your group and `Fields.Column1` with the field you want to retrieve.
+   Replace `group` with the name of your group and `Fields.Column1` with the field you want to retrieve.
 
-3. To avoid displaying an empty value for the first record, use the `IsNull` function. This ensures a default value, such as `0`, is shown for the first record:
+1. To avoid displaying an empty value for the first record, use the `IsNull` function. This ensures a default value, such as `0`, is shown for the first record:
 
    ```
-   = IsNull(Previous("group", Fields.Column1),0)
+   = IsNull(Previous("group", Fields.Column1), 0)
    ```
 
 ### Notes
+
 * Ensure the group name passed as the scope argument to the `Previous` function matches your report design.
 
 ## Sample Report
@@ -41,6 +42,6 @@ To achieve this functionality, use the `Previous` function. It allows retrieving
 
 ## See Also
 
-* [Previous functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%})
-* [IsNull function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions%})
-* [Expressions in Telerik Reporting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
+* [Previous functions]({slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions})
+* [IsNull function]({slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions})
+* [Expressions in Telerik Reporting]({slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview})

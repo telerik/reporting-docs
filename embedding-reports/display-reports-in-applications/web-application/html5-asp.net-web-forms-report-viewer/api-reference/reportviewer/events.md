@@ -2,7 +2,7 @@
 title: Events
 page_title: Events of the HTML5 ASP.NET WebForms Report Viewer
 description: Complete list of events available in the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/events
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events
 tags: events
 published: True
 reportingArea: WebForms
@@ -13,7 +13,7 @@ position: 4
 
 ## Error
 
-Gets or sets the name of the JavaScript function that will be called when an error occurs. The error event is triggered when any error occurs during report processing, rendering, or viewer operations in the HTML5 ReportViewer.
+Gets or sets the name of the JavaScript function that will be called when an error occurs.
 
 ### Example
 
@@ -48,7 +48,7 @@ Gets or sets the name of the JavaScript function that will be called when an err
 
 ## ExportBegin
 
-Gets or sets the name of the JavaScript function that will be called prior to starting the report export command. The export begin event is triggered before the HTML5 ReportViewer starts generating the export document.
+Gets or sets the name of the JavaScript function that will be called prior to starting the report export command.
 
 ### Example
 
@@ -83,7 +83,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
 
 ## ExportEnd
 
-Gets or sets the name of the JavaScript function that will be called when the exported document is ready for download, but prior to the actual downloading. The export end event is triggered when the export document is ready but before the download starts.
+Gets or sets the name of the JavaScript function that will be called when the exported document is ready for download, but prior to the actual downloading.
 
 ### Example
 
@@ -117,7 +117,7 @@ Gets or sets the name of the JavaScript function that will be called when the ex
 
 ## InteractiveActionEnter
 
-Gets or sets the name of the JavaScript function that will be called when the mouse cursor enters the area of a report item's action. The interactive action enter event is triggered when the mouse hovers over interactive report elements in the HTML5 viewer.
+Gets or sets the name of the JavaScript function that will be called when the mouse cursor enters the area of a report item's action.
 
 ### Example
 
@@ -151,7 +151,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
 
 ## InteractiveActionExecuting
 
-Gets or sets the name of the JavaScript function that will be called when an interactive action is being executed. The interactive action executing event is triggered when user clicks on interactive elements like drill-through links or toggle buttons in the HTML5 viewer.
+Gets or sets the name of the JavaScript function that will be called when an interactive action is being executed.
 
 ### Example
 
@@ -188,7 +188,7 @@ This property specifies the name of the JavaScript function to be called when an
 
 ## InteractiveActionLeave
 
-Gets or sets the name of the JavaScript function that will be called when the mouse cursor leaves the area of a report item's action. The interactive action leave event is triggered when the mouse cursor moves away from interactive report elements in the HTML5 viewer.
+Gets or sets the name of the JavaScript function that will be called when the mouse cursor leaves the area of a report item's action.
 
 ### Example
 
@@ -227,7 +227,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
 
 ## PageReady
 
-Gets or sets the name of the JavaScript function that will be called every time a page from the report is rendered and ready for display. The page ready event is triggered when each individual report page completes rendering and is ready for display in the HTML5 viewer.
+Gets or sets the name of the JavaScript function that will be called every time a page from the report is rendered and ready for display.
 
 ### Example
 
@@ -262,7 +262,7 @@ Gets or sets the name of the JavaScript function that will be called every time 
 
 ## PrintBegin
 
-Gets or sets the name of the JavaScript function that will be called prior to starting the print report command. The print begin event is triggered before the HTML5 ReportViewer starts generating the print document.
+Gets or sets the name of the JavaScript function that will be called prior to starting the print report command.
 
 ### Example
 
@@ -297,7 +297,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
 
 ## PrintEnd
 
-Gets or sets the name of the JavaScript function that will be called when the print document (Adobe PDF) is ready for download, but prior to being sent to the printer. The print end event is triggered when the PDF print document is ready but before actual printing occurs.
+Gets or sets the name of the JavaScript function that will be called when the print document (Adobe PDF) is ready for download, but prior to being sent to the printer.
 
 ### Example
 
@@ -332,7 +332,7 @@ Gets or sets the name of the JavaScript function that will be called when the pr
 
 ## Ready
 
-Gets or sets the name of the JavaScript function that will be called when the report viewer template is loaded. The ready event is triggered when the HTML5 ReportViewer template and UI components are fully loaded and initialized.
+Gets or sets the name of the JavaScript function that will be called when the report viewer template is loaded.
 
 ### Example
 
@@ -366,7 +366,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ## RenderingBegin
 
-Gets or sets the name of the JavaScript function that will be called when the rendering of the report begins. The rendering begin event is triggered when the HTML5 ReportViewer starts processing and rendering the report content.
+Gets or sets the name of the JavaScript function that will be called when the rendering of the report begins.
 
 ### Example
 
@@ -405,7 +405,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ## RenderingEnd
 
-Gets or sets the name of the JavaScript function that will be called when the rendering of the report ends. The rendering end event is triggered when the HTML5 ReportViewer completes processing and rendering the report content.
+Gets or sets the name of the JavaScript function that will be called when the rendering of the report ends.
 
 ### Example
 
@@ -439,7 +439,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ## UpdateUi
 
-Gets or sets the name of the JavaScript function that will be called every time the UI needs an update; can be used for changing the UI of the report viewer while interacting with reports. The UI update event is triggered whenever the HTML5 ReportViewer interface needs to refresh during user interactions.
+Gets or sets the name of the JavaScript function that will be called every time the UI needs an update; can be used for changing the UI of the report viewer while interacting with reports.
 
 ### Example
 
@@ -477,7 +477,7 @@ The UpdateUi property specifies the JavaScript function to call on UI updates. -
 
 ## ViewerToolTipOpening
 
-Gets or sets the name of the JavaScript function that will be called when a tooltip is being opened. The tooltip opening event is triggered when tooltips are about to be displayed for report elements or viewer controls in the HTML5 viewer.
+Gets or sets the name of the JavaScript function that will be called when a tooltip is being opened.
 
 ### Example
 

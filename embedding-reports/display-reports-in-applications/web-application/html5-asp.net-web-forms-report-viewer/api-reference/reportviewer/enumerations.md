@@ -2,7 +2,7 @@
 title: Enumerations
 page_title: Enumerations of the HTML5 ASP.NET WebForms Report Viewer
 description: Enumeration constants used by the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations
 tags: enumerations
 published: True
 reportingArea: WebForms
@@ -13,7 +13,7 @@ position: 7
 
 ## DocumentMapAreaPosition
 
-Specifies the positioning options for the Document Map Area within the HTML5 WebForms ReportViewer interface. Used to configure the placement of the document map navigation panel relative to the report content area for optimal user experience and interface layout. Controls the visual placement of the document map panel to accommodate different screen sizes and layout preferences in HTML5 report viewing scenarios.
+Specifies the positioning options for the Document Map Area within the HTML5 WebForms ReportViewer interface. Used to configure the placement of the document map navigation panel relative to the report content area for optimal user experience and interface layout.
 
 ### Values
 
@@ -25,7 +25,7 @@ Specifies the positioning options for the Document Map Area within the HTML5 Web
 
 ## EditorTypes
 
-Specifies the available parameter editor types for rendering parameter input controls in the HTML5 WebForms ReportViewer. Used to define the visual style and interaction behavior of parameter input controls. Each editor type provides different user experience and visual presentation for parameter value selection.
+Specifies the available parameter editor types for rendering parameter input controls in the HTML5 WebForms ReportViewer. Used to define the visual style and interaction behavior of parameter input controls.
 
 ### Values
 
@@ -37,7 +37,7 @@ Specifies the available parameter editor types for rendering parameter input con
 
 ## IdentifierType
 
-Specifies the identifier type options used in the HTML5 WebForms ReportViewer ReportSource configuration. Used to determine how report identifiers are interpreted and resolved when loading reports in the HTML5 viewer. Controls the report resolution strategy based on the type of identifier provided, enabling support for different report source configurations in HTML5 viewing scenarios.
+Specifies the identifier type options used in the HTML5 WebForms ReportViewer ReportSource configuration. Used to determine how report identifiers are interpreted and resolved when loading reports in the HTML5 viewer.
 
 ### Values
 
@@ -50,7 +50,7 @@ Specifies the identifier type options used in the HTML5 WebForms ReportViewer Re
 
 ## PageMode
 
-Specifies the page display mode options for the HTML5 WebForms ReportViewer control to determine how report pages are presented and navigated. Used to configure whether the viewer displays reports in continuous scrolling mode with progressive loading or single page mode for focused viewing. Controls the page rendering behavior and user navigation experience within the HTML5 report viewer interface.
+Specifies the page display mode options for the HTML5 WebForms ReportViewer control to determine how report pages are presented and navigated. Used to configure whether the viewer displays reports in continuous scrolling mode with progressive loading or single page mode for focused viewing.
 
 ### Values
 
@@ -62,7 +62,7 @@ Specifies the page display mode options for the HTML5 WebForms ReportViewer cont
 
 ## ParametersAreaPosition
 
-Specifies the positioning options for the Parameters Area within the HTML5 WebForms ReportViewer interface. Used to configure the placement of the parameter input controls relative to the report content area for optimal user experience and interface layout. Controls the visual placement of the parameters panel to accommodate different screen sizes and layout preferences in HTML5 report viewing scenarios.
+Specifies the positioning options for the Parameters Area within the HTML5 WebForms ReportViewer interface. Used to configure the placement of the parameter input controls relative to the report content area for optimal user experience and interface layout.
 
 ### Values
 
@@ -76,7 +76,7 @@ Specifies the positioning options for the Parameters Area within the HTML5 WebFo
 
 ## PrintMode
 
-Specifies the print handling strategy options for the HTML5 WebForms ReportViewer control. Used to determine how the viewer processes print commands and handles PDF generation for optimal printing experience across different browsers and environments. Controls the print workflow strategy to accommodate different browser capabilities and user preferences for PDF handling in HTML5 report viewing scenarios.
+Specifies the print handling strategy options for the HTML5 WebForms ReportViewer control. Used to determine how the viewer processes print commands and handles PDF generation for optimal printing experience across different browsers and environments.
 
 ### Values
 
@@ -89,7 +89,7 @@ Specifies the print handling strategy options for the HTML5 WebForms ReportViewe
 
 ## ScaleMode
 
-Specifies the scaling strategy options for the HTML5 WebForms ReportViewer control to determine how reports are sized and displayed within the viewer area. Used to configure automatic sizing behavior and zoom level management for optimal report display and readability in HTML5 viewing scenarios. Controls the report sizing strategy to optimize readability and user experience based on viewer dimensions and content requirements in HTML5 environments.
+Specifies the scaling strategy options for the HTML5 WebForms ReportViewer control to determine how reports are sized and displayed within the viewer area. Used to configure automatic sizing behavior and zoom level management for optimal report display and readability in HTML5 viewing scenarios.
 
 ### Values
 
@@ -102,7 +102,7 @@ Specifies the scaling strategy options for the HTML5 WebForms ReportViewer contr
 
 ## ViewMode
 
-Specifies the display mode options for the HTML5 WebForms ReportViewer control to determine how reports are presented and how users interact with them. Used to configure whether the viewer displays reports in interactive mode with full functionality or print preview mode optimized for printing. Controls the report presentation style and interaction capabilities to optimize user experience for different viewing scenarios in HTML5 environments.
+Specifies the display mode options for the HTML5 WebForms ReportViewer control to determine how reports are presented and how users interact with them. Used to configure whether the viewer displays reports in interactive mode with full functionality or print preview mode optimized for printing.
 
 ### Values
 

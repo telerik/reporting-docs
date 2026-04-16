@@ -254,7 +254,7 @@ Represents the value of a report parameter in the viewer.
 
 ## ReportServerSettings
 
-Specifies the configuration details for connecting to a Telerik Report Server instance. Report Server for .NET supports Token (GetPersonalAccessToken) or username/password authentication. Report Server for .NET Framework 4.6.2 supports username/password or Guest account (Url only, if enabled).
+Specifies the configuration details for connecting to a Telerik Report Server instance.
 
 ### Properties
 

@@ -180,13 +180,11 @@ Reloads/refreshes the current report.
 ### Example
 
 ````JavaScript
-{% raw %}
 // Using ref to call refreshReport
 const reportViewerRef = useRef();
 <TelerikReportViewer ref={reportViewerRef} serviceUrl="api/reports/" reportSource={{ report: "Dashboard.trdp" }} />
 // ...
 reportViewerRef.current.refreshReport();
-{% endraw %}
 ````
 
 

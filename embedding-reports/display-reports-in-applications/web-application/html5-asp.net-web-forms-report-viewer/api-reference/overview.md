@@ -2,7 +2,7 @@
 title: API Reference Overview
 page_title: HTML5 ASP.NET WebForms Report Viewer API Reference Overview
 description: Complete API reference for the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/overview
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/overview
 tags: api,reference
 published: True
 reportingArea: WebForms
@@ -15,27 +15,27 @@ This section provides a comprehensive API reference for the HTML5 ASP.NET WebFor
 
 ## Methods
 
-For a complete list of methods, see [Methods]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/methods%}).
+For a complete list of methods, see [Methods]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods%}).
 
 ## Options
 
-For a complete list of options, see [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/options%}).
+For a complete list of options, see [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options%}).
 
 ## Events
 
-For a complete list of events, see [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/events%}).
+For a complete list of events, see [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events%}).
 
 ## Types
 
-For a complete list of types, see [Types]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}).
+For a complete list of types, see [Types]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}).
 
 ## Enumerations
 
-For a complete list of enumerations, see [Enumerations]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}).
+For a complete list of enumerations, see [Enumerations]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}).
 
 ## See Also
 
-* [Methods]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/methods%})
-* [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/options%})
-* [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/events%})
+* [Methods]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods%})
+* [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options%})
+* [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/events%})
 

@@ -2,7 +2,7 @@
 title: Methods
 page_title: Methods of the HTML5 ASP.NET WebForms Report Viewer
 description: Complete list of methods available in the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/methods
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/methods
 tags: methods
 published: True
 reportingArea: WebForms
@@ -13,7 +13,7 @@ position: 1
 
 ## GetReportParameters
 
-Gets the processed report parameters as a dictionary of parameter names and string values. Provides access to the current parameter values that have been processed and applied to the report in the HTML5 viewer.
+Gets the processed report parameters as a dictionary of parameter names and string values.
 
 ### Example
 
@@ -46,7 +46,7 @@ namespace CSharp.NetFramework.WebFormsIntegrationDemo
 
 ## RenderDesignTimeHtml
 
-Renders the HTML5 ReportViewer control for design-time display in Visual Studio designer. Generates a simplified HTML representation of the HTML5 viewer for Visual Studio design surface display, showing the control dimensions and identification.
+Renders the HTML5 ReportViewer control for design-time display in Visual Studio designer.
 
 ### Parameters
 
@@ -57,5 +57,5 @@ Renders the HTML5 ReportViewer control for design-time display in Visual Studio 
 
 ## ToString
 
-Converts the HTML5 ReportViewer control to its HTML string representation with all configuration options and client-side initialization. Generates the final HTML output by populating viewer options and using ReportViewerWriter to create the complete HTML5 viewer structure with JavaScript initialization.
+Converts the HTML5 ReportViewer control to its HTML string representation with all configuration options and client-side initialization.
 

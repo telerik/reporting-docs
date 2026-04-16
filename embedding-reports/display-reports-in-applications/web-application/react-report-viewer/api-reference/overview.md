@@ -2,7 +2,7 @@
 title: API Reference Overview
 page_title: React Report Viewer API Reference Overview
 description: Complete API reference for the React Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/overview
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/overview
 tags: api,reference
 published: True
 reportingArea: React

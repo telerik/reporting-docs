@@ -2,7 +2,7 @@
 title: API Reference Overview
 page_title: Native Blazor Report Viewer API Reference Overview
 description: Complete API reference for the Native Blazor Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/overview
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/overview
 tags: api,reference
 published: True
 reportingArea: NativeBlazor

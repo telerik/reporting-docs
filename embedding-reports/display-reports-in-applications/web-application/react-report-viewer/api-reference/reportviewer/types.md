@@ -117,7 +117,6 @@ Defines options for configuring report parameter editors in the React Report Vie
 ### Example
 
 ````JavaScript
-{% raw %}
 // React: Specify editor types for report parameters
 
 <TelerikReportViewer
@@ -130,7 +129,6 @@ Defines options for configuring report parameter editors in the React Report Vie
     }
   }}
 />
-{% endraw %}
 ````
 
 
@@ -169,7 +167,6 @@ The authentication method depends on the Report Server version:
 ### Example
 
 ````JavaScript
-{% raw %}
 // Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication
 <TelerikReportViewer
   reportServer={{
@@ -185,7 +182,6 @@ The authentication method depends on the Report Server version:
     }
   }}
 />
-{% endraw %}
 ````
 
 
@@ -203,7 +199,6 @@ Configuration object that identifies the report to be displayed and provides ini
 ### Example
 
 ````JavaScript
-{% raw %}
 // Example: Using ReportSource with the React Report Viewer
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -215,7 +210,6 @@ Configuration object that identifies the report to be displayed and provides ini
     }
   }}
 />
-{% endraw %}
 ````
 
 
@@ -256,7 +250,6 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 ### Example
 
 ````JavaScript
-{% raw %}
 // Enable Send Email with default values and PDF as the default format
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -271,11 +264,9 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
     format: "PDF"
   }}
 />
-{% endraw %}
 ````
 
 ````JavaScript
-{% raw %}
 // Basic email configuration with minimal options
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -285,6 +276,5 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
     from: "noreply@company.com"
   }}
 />
-{% endraw %}
 ````
 

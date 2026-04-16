@@ -223,6 +223,31 @@ keepClientAlive: boolean = false;
 ````
 
 
+## localizationResources
+
+An object containing all or a subset of the viewer's localization resources in a chosen language.
+
+### Type
+
+`any`
+
+### Example
+
+````html
+<tr-viewer
+  [localizationResources]="localizationResources">
+</tr-viewer>
+````
+
+````typescript
+localizationResources: any = {
+  loadingFormats: "Loading...",
+  loadingReport: "Loading report...",
+  loadingParameters: "Loading parameters...",
+}
+````
+
+
 ## pageMode
 
 Sets if the report is displayed in single page or continuous scroll mode.

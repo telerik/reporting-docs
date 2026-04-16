@@ -2,7 +2,7 @@
 title: Options
 page_title: Options of the HTML5 ASP.NET WebForms Report Viewer
 description: Complete list of options available in the HTML5 ASP.NET WebForms Report Viewer
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/options
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/options
 tags: options
 published: True
 reportingArea: WebForms
@@ -13,11 +13,11 @@ position: 2
 
 ## AccessibilityKeyMap
 
-Gets or sets the keyboard mappings used when accessibility mode is enabled in the HTML5 viewer. Defines custom key combinations for accessibility navigation including content area, document map, menu, and parameters area access when accessibility features are enabled.
+Gets or sets the keyboard mappings used when accessibility mode is enabled in the HTML5 viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap)
+[`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap)
 
 ### Example
 
@@ -45,7 +45,7 @@ Gets or sets the keyboard mappings used when accessibility mode is enabled in th
 
 ## AuthenticationToken
 
-Gets or sets the encoded authentication token used to secure and authenticate requests between the HTML5 viewer and the reporting service. Provides security for report access and ensures that only authorized users can view reports through the HTML5 viewer interface.
+Gets or sets the encoded authentication token used to secure and authenticate requests between the HTML5 viewer and the reporting service.
 
 ### Type
 
@@ -80,7 +80,7 @@ Gets or sets the encoded authentication token used to secure and authenticate re
 
 ## CheckedButtonClass
 
-Gets or sets the CSS class applied to toolbar buttons when they are in the checked or active state. Enables custom styling of checked buttons in the HTML5 viewer toolbar for consistent visual design and user experience.
+Gets or sets the CSS class applied to toolbar buttons when they are in the checked or active state.
 
 ### Type
 
@@ -115,7 +115,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the check
 
 ## Deferred
 
-Gets or sets a value indicating whether the HTML5 viewer's JavaScript initialization is deferred until a specific point in the page lifecycle. When enabled, allows for more controlled initialization timing of the HTML5 viewer, which can be useful for complex page scenarios or custom loading sequences.
+Gets or sets a value indicating whether the HTML5 viewer's JavaScript initialization is deferred until a specific point in the page lifecycle.
 
 ### Type
 
@@ -152,7 +152,7 @@ This property controls whether the viewer's JavaScript initialization is deferre
 
 ## DisabledButtonClass
 
-Gets or sets the CSS class applied to toolbar buttons when they are in the disabled state. Enables custom styling of disabled buttons in the HTML5 viewer toolbar for consistent visual design and user experience.
+Gets or sets the CSS class applied to toolbar buttons when they are in the disabled state.
 
 ### Type
 
@@ -194,11 +194,11 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the disab
 
 ## DocumentMapAreaPosition
 
-Gets or sets the positioning of the document map area within the HTML5 viewer interface. Controls the placement of the document map navigation panel relative to the report content area for optimal user experience and interface layout in HTML5 scenarios.
+Gets or sets the positioning of the document map area within the HTML5 viewer interface.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.DocumentMapAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#documentmapareaposition)
+[`Telerik.ReportViewer.Html5.WebForms.DocumentMapAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#documentmapareaposition)
 
 ### Example
 
@@ -231,7 +231,7 @@ Gets or sets the positioning of the document map area within the HTML5 viewer in
 
 ## DocumentMapVisible
 
-Gets or sets a value indicating whether the document map navigation panel is initially visible in the HTML5 viewer. Controls the initial visibility state of the document map that provides hierarchical navigation through report bookmarks and sections. The document map is shown only if the report contains bookmarks. The document map works both in the interactive and print preview view modes.
+Gets or sets a value indicating whether the document map navigation panel is initially visible in the HTML5 viewer.
 
 ### Type
 
@@ -268,7 +268,7 @@ Gets or sets a value indicating whether the document map navigation panel is ini
 
 ## EnableAccessibility
 
-Gets or sets a value indicating whether accessibility features are enabled for the HTML5 report viewer and its contents. When enabled, provides enhanced accessibility support including keyboard navigation, screen reader compatibility, and ARIA attributes for improved usability with assistive technologies.
+Gets or sets a value indicating whether accessibility features are enabled for the HTML5 report viewer and its contents.
 
 ### Type
 
@@ -340,7 +340,7 @@ Gets or sets the height of the HTML5 ReportViewer control.
 
 ## InitialPageAreaImageUrl
 
-Gets or sets the background image URL displayed in the page area when parameter values are missing or invalid. Provides visual feedback to users when the HTML5 viewer cannot display report content due to missing or invalid parameter values.
+Gets or sets the background image URL displayed in the page area when parameter values are missing or invalid.
 
 ### Type
 
@@ -378,7 +378,7 @@ Gets or sets the background image URL displayed in the page area when parameter 
 
 ## KeepClientAlive
 
-Gets or sets a value indicating whether the HTML5 viewer client session is kept alive through periodic server requests. When enabled, prevents client session expiration by sending keep-alive requests to the server based on the ClientSessionTimeout configuration. When disabled, the client session may expire naturally.
+Gets or sets a value indicating whether the HTML5 viewer client session is kept alive through periodic server requests.
 
 ### Type
 
@@ -419,11 +419,10 @@ Gets or sets the viewer's page mode.
 
 - SinglePage - Displays only one report page in PageArea container.
 - ContinuousScroll - Displays large amount of report pages by appending additional pages on demand.
-- ContinuousScroll mode enables seamless scrolling through multiple pages with on-demand loading, while SinglePage mode displays one page at a time for focused viewing.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#pagemode)
+[`Telerik.ReportViewer.Html5.WebForms.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#pagemode)
 
 ### Example
 
@@ -456,7 +455,7 @@ Gets or sets the viewer's page mode.
 
 ## PageNumber
 
-Gets or sets the current page number of the report displayed in the HTML5 viewer. Determines which page is initially displayed when the report loads in the HTML5 viewer interface.
+Gets or sets the current page number of the report displayed in the HTML5 viewer.
 
 ### Type
 
@@ -493,11 +492,11 @@ Gets or sets the current page number of the report displayed in the HTML5 viewer
 
 ## ParameterEditors
 
-Gets or sets the parameter editors configuration that defines JavaScript functions for handling different parameter types in the HTML5 viewer. Enables customization of parameter input controls by specifying JavaScript editor functions for different parameter scenarios including single-select, multi-select, and type-specific editors.
+Gets or sets the parameter editors configuration that defines JavaScript functions for handling different parameter types in the HTML5 viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ParameterEditors`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#parametereditors)
+[`Telerik.ReportViewer.Html5.WebForms.ParameterEditors`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#parametereditors)
 
 ### Example
 
@@ -529,11 +528,11 @@ Gets or sets the parameter editors configuration that defines JavaScript functio
 
 ## Parameters
 
-Gets or sets the parameters display configuration that defines the visual appearance and behavior of parameter input controls. Controls the parameter editor types and visual presentation styles for both single-select and multi-select parameter scenarios in the HTML5 viewer interface.
+Gets or sets the parameters display configuration that defines the visual appearance and behavior of parameter input controls.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.Parameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#parameters)
+[`Telerik.ReportViewer.Html5.WebForms.Parameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#parameters)
 
 ### Example
 
@@ -564,11 +563,11 @@ Gets or sets the parameters display configuration that defines the visual appear
 
 ## ParametersAreaPosition
 
-Gets or sets the positioning of the parameters area within the HTML5 viewer interface. Controls the placement of parameter input controls relative to the report content area for optimal user experience and interface layout in HTML5 scenarios.
+Gets or sets the positioning of the parameters area within the HTML5 viewer interface.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ParametersAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#parametersareaposition)
+[`Telerik.ReportViewer.Html5.WebForms.ParametersAreaPosition`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#parametersareaposition)
 
 ### Example
 
@@ -600,7 +599,7 @@ Gets or sets the positioning of the parameters area within the HTML5 viewer inte
 
 ## ParametersAreaVisible
 
-Gets or sets a value indicating whether the parameters area is initially visible in the HTML5 viewer. Controls the initial visibility state of the parameters input area for reports that contain parameters requiring user input.
+Gets or sets a value indicating whether the parameters area is initially visible in the HTML5 viewer.
 
 ### Type
 
@@ -636,7 +635,7 @@ Gets or sets a value indicating whether the parameters area is initially visible
 
 ## PersistSession
 
-Gets or sets a value indicating whether the HTML5 viewer's client state is persisted between page refreshes and postbacks. When enabled, the viewer state is stored in the browser's sessionStorage and maintained for the duration of the page session, preserving user settings and navigation state.
+Gets or sets a value indicating whether the HTML5 viewer's client state is persisted between page refreshes and postbacks.
 
 ### Type
 
@@ -678,12 +677,10 @@ Gets or sets the print mode of the viewer.
 - AutoSelect - Specifies that the viewer should automatically determine how to print: through the browser's PDF plug-in or through export to a PDF file.
 - ForcePDFPlugin - Specifies that the viewer should always use the PDF plugin regardless of the browser's version and settings.
 - ForcePDFFile - Specifies that the viewer should always export the report document to PDF format with the 'print' script enabled.
-- Controls the printing workflow to ensure optimal print experience across different browsers and PDF plugin configurations in HTML5 environments.
-- Available modes include AutoSelect for intelligent method selection, ForcePDFPlugin for direct plugin usage, and ForcePDFFile for download-based printing.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#printmode)
+[`Telerik.ReportViewer.Html5.WebForms.PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#printmode)
 
 ### Example
 
@@ -714,11 +711,11 @@ Gets or sets the print mode of the viewer.
 
 ## ReportServer
 
-Gets or sets the connection data of the report server that hosts the report. The report server can have its Guest account enabled and with configured permissions for accessing the report without permisions. Used when the viewer is connected to a Telerik Report Server instance (takes precedence over the ServiceUrl property) The Report Server must have appropriate user accounts configured with necessary permissions for accessing and viewing reports in the HTML5 viewer environment. Connecting to Telerik Report Server for .NET is not supported. For more information see https://www.telerik.com/help/reporting/html5-report-viewer-howto-use-it-with-reportserver.html.
+Gets or sets the connection data of the report server that hosts the report. The report server can have its Guest account enabled and with configured permissions for accessing the report without permisions.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.Common.ReportServer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#reportserver)
+[`Telerik.ReportViewer.Html5.Common.ReportServer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#reportserver)
 
 ### Example
 
@@ -743,11 +740,11 @@ Gets or sets the connection data of the report server that hosts the report. The
 
 ## ReportSource
 
-Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#reportsource) for the report displayed in the HTML5 viewer. Specifies the report to be displayed including its identifier, parameters, and source type for proper report loading and processing in the HTML5 environment.
+Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#reportsource) for the report displayed in the HTML5 viewer.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#reportsource)
+[`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#reportsource)
 
 ### Example
 
@@ -777,7 +774,7 @@ Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug tel
 
 ## Scale
 
-Gets or sets the zoom level of the report where 1.0 equals 100% of the original report size. Provides precise control over report magnification in the HTML5 viewer when using specific scaling mode or custom zoom requirements.
+Gets or sets the zoom level of the report where 1.0 equals 100% of the original report size.
 
 ### Type
 
@@ -818,11 +815,10 @@ Gets or sets the scale mode of the viewer.
 - FitPage - The whole report will fit on the page (will zoom in or out), regardless of its width and height.
 - FitPageWidth - The report will be zoomed in or out so that the width of the screen and the width of the report match.
 - Specific - Uses the scale to zoom in and out the report.
-- Controls automatic report scaling behavior including FitPage for complete page visibility, FitPageWidth for width-based scaling, and Specific for custom scale values.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#scalemode)
+[`Telerik.ReportViewer.Html5.WebForms.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#scalemode)
 
 ### Example
 
@@ -855,7 +851,7 @@ Gets or sets the scale mode of the viewer.
 
 ## SearchMetadataOnDemand
 
-Gets or sets a value indicating whether search metadata is delivered on-demand or preloaded with the report in the HTML5 viewer. When enabled, search metadata is loaded only when needed, reducing initial load time but potentially increasing search operation latency. When disabled, search metadata is preloaded for faster search operations.
+Gets or sets a value indicating whether search metadata is delivered on-demand or preloaded with the report in the HTML5 viewer.
 
 ### Type
 
@@ -890,11 +886,11 @@ Gets or sets a value indicating whether search metadata is delivered on-demand o
 
 ## SendEmail
 
-Gets or sets the email functionality configuration including enabled state, format selection, and default recipients. Configures the send email feature within the HTML5 viewer toolbar, including preselected rendering formats and default email addresses for enhanced user experience.
+Gets or sets the email functionality configuration including enabled state, format selection, and default recipients.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.SendEmail`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/types%}#sendemail)
+[`Telerik.ReportViewer.Html5.WebForms.SendEmail`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#sendemail)
 
 ### Example
 
@@ -925,7 +921,7 @@ Gets or sets the email functionality configuration including enabled state, form
 
 ## ServiceUrl
 
-Gets or sets the URL of the service which will provide the report viewer with reports. The service must be properly configured so that the report viewer can successfully communicate with the server. For more information on how to configure the service please check https://docs.telerik.com/reporting/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview.
+Gets or sets the URL of the service which will provide the report viewer with reports.
 
 ### Type
 
@@ -954,7 +950,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ## TemplateUrl
 
-Gets or sets the URL for the report viewer template. The template can be edited - new functionalities can be added and not needed ones can be removed. For more information please check https://www.telerik.com/help/reporting/html5-report-viewer-templates.html. Enables customization of the HTML5 viewer interface by specifying a custom template URL. If left empty, the default template is used for standard viewer functionality.
+Gets or sets the URL for the report viewer template. The template can be edited - new functionalities can be added and not needed ones can be removed. For more information please check https://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
 
 ### Type
 
@@ -985,11 +981,10 @@ Gets or sets the viewer's view mode.
 
 - PrintPreview - Displays the paginated report as if it is printed on paper. Interactivity is not enabled.
 - Interactive - Displays the report in its original width and height with no paging. Additionally interactivity is enabled.
-- Interactive mode enables full report interactivity and navigation, while PrintPreview mode optimizes the display for print layout without interactive features.
 
 ### Type
 
-[`Telerik.ReportViewer.Html5.WebForms.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer/enumerations%}#viewmode)
+[`Telerik.ReportViewer.Html5.WebForms.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/enumerations%}#viewmode)
 
 ### Example
 

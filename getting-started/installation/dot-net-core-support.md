@@ -139,7 +139,7 @@ Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new
 
 With Linux Docker Container you must use the SkiaSharp graphics engine, so reference the `Telerik.Drawing.Skia` NuGet package or assembly in your project hosting Reporting service or engine.
 
-The next libraries should also be referenced as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
+The following libraries should also be installed in the Docker image as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
 ```DOCKERFILE
 FROM microsoft/dotnet:7.0-runtime AS base

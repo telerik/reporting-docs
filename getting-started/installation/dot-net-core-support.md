@@ -87,7 +87,7 @@ sudo apt-get install -y libfreetype6
 sudo apt-get install -y libfontconfig1
 ```
 
-Since the `SkiaSharp` library is not perfect replacements for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
+Since the `SkiaSharp` library is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
 
 The following JSON configuration snippet hides the Image rendering extension from the list of available rendering extensions:
 

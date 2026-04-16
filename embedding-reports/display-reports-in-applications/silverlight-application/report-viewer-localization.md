@@ -197,8 +197,8 @@ End Class
 
 ## See Also
 
-- [Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
-- [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
+- [Silverlight Application]({slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
+- [How to Add report viewer to a Silverlight application]({slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
 - [Hierarchical Organization of Resources for Localization](<http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx>)
 - [Silverlight Globalization and Localization Overview](<http://msdn.microsoft.com/en-us/library/cc838238(v=vs.95).aspx>)
 - [Security and Localized Satellite Assemblies](<http://msdn2.microsoft.com/en-us/library/ff8dk041(VS.71).aspx>)

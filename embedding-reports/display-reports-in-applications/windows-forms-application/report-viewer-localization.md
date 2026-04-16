@@ -66,8 +66,8 @@ In order to distribute an application that uses __Telerik Reporting__ with a loc
 
 ## See Also
 
-* [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
-* [How to Add report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
+* [Windows Forms Application]({slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+* [How to Add report viewer to a Windows Forms'.NET Framework project]({slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 * [Setting the Culture for Windows Forms Globalization](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentculture?view=net-7.0)
 * [Setting the UI Culture for Windows Forms Globalization](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-7.0)
 * [Localized Satellite Assemblies](https://learn.microsoft.com/en-us/dotnet/core/extensions/create-satellite-assemblies)

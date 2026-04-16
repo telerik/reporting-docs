@@ -31,7 +31,7 @@ res_type: kb
 
 When deploying Telerik Reporting applications on Linux or macOS using the System.Drawing graphics engine, the [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) library is required. The library is a Mono implementation of the GDI+ API for non-Windows operating systems.
 
-> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms). For .NET 8+, use the [SkiaSharp graphics engine](slug:telerikreporting/using-reports-in-applications/dot-net-core-support) instead.
+> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and macOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms). For .NET 8+, use the [SkiaSharp graphics engine](slug:telerikreporting/using-reports-in-applications/dot-net-core-support) instead.
 
 ## Solution
 

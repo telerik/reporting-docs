@@ -3,7 +3,7 @@ title: Get Version
 page_title: Get Version Request Revealed
 description: "Learn how to make the Get Version request to the Telerik Reporting REST Service and what response to expect."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version
-tags: get,version
+tags: get, version
 published: True
 reportingArea: RESTService, RESTServiceCore
 position: 2
@@ -14,7 +14,7 @@ previous_url: /embedding-reports/host-the-report-engine-remotely/telerik-reporti
 
 The public interface for retrieving the Telerik Reporting REST Service version.
 
->caution Starting with release 2025 Q2 (version 19.1.25.521), the `Get Version` endpoint has been marked as obsolete. To retrieve the version of the Telerik Reporting REST Service, use the [Get Configuration endpoint](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration) instead.
+>caution Starting with the [2025 Q2 (version 19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release, the `Get Version` endpoint has been marked as obsolete. To retrieve the version of the Telerik Reporting REST Service, use the [Get Configuration endpoint](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-configuration) instead.
 
 ## Request
 

@@ -79,7 +79,7 @@ Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new
 For .NET 8+ applications on Linux, you must use the SkiaSharp graphics engine, so reference the `Telerik.Drawing.Skia` NuGet package or assembly in your project hosting the Reporting service or engine.
 
 For .NET 6 and earlier on Linux, see the libgdiplus/System.Drawing deployment guidance in the [Deploying on Linux with libgdiplus KB article](https://docs.telerik.com/reporting/knowledge-base/deploying-on-linux).
-The next libraries should also be referenced as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
+The following libraries should also be installed as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
 ```bash
 sudo apt-get update

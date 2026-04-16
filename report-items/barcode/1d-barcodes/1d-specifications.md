@@ -201,10 +201,7 @@ If you have a multi-part GS1-128 barcode that requires the FNC1 control characte
 ```C#
 this.Barcode1.Value = "1234" + "\u00F7" + "5678";
 ```
-```VB
-Me.Barcode1.Value = "1234" & ChrW(&HF7) & "5678"
-```
-
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=SetBarcodeValue}}
 ## See Also
 
 * [1D Barcode Overview](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types)

@@ -6,11 +6,12 @@ slug: ai-mcp-server-as-a-nuget
 tag: new
 tags: telerik,reporting,ai,server,dotnet,coding assistant,nuget
 position: 2
+hidden: true
 ---
 
 # Telerik Reporting MCP Server (NuGet)
 
-The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package.
+The Telerik Reporting [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package.
 
 Beginning with **.NET 10**, it can be executed directly via the `dnx` command. For **.NET 8 and .NET 9** (where `dnx` is not available), you can [install it as a global dotnet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install) and invoke its executable.
 
@@ -192,4 +193,4 @@ Examples you can try:
 ## See Also
 
 - [AI Coding Assistant Overview](slug:ai-coding-assistant)
-- [npm-based Telerik Reporting MCP Server](slug:ai-mcp-server)
+- [Getting Started](slug:ai-mcp-server)

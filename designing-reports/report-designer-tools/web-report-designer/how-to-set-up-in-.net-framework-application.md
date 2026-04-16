@@ -85,49 +85,7 @@ The REST service works as a backend and is responsible for storage operations li
 		}
 	}
 	````
-	````VB
-	Imports System.IO
-	Imports Telerik.Reporting.Services
-	Imports Telerik.WebReportDesigner.Services
-	Imports Telerik.WebReportDesigner.Services.Controllers
-
-	'The class name determines the service URL.
-	Public Class ReportDesignerController
-		Inherits ReportDesignerControllerBase
-
-		Shared ReadOnly configurationInstance As ReportServiceConfiguration
-		Shared ReadOnly designerConfigurationInstance As ReportDesignerServiceConfiguration
-
-		Shared Sub New()
-			'This is the folder that contains the report definitions
-			'In this case this is the Reports folder
-			Dim appPath = HttpContext.Current.Server.MapPath("~/")
-			Dim reportsPath = Path.Combine(appPath, "Reports")
-			'Add report source resolver for trdx/trdp report definitions,
-			'then add resolver for class report definitions as fallback resolver;
-			'finally create the resolver and use it in the ReportServiceConfiguration instance.
-			Dim resolver = New UriReportSourceResolver(reportsPath).AddFallbackResolver(New TypeReportSourceResolver())
-
-			Dim reportServiceConfiguration As New ReportServiceConfiguration()
-			reportServiceConfiguration.HostAppId = "Html5App"
-			reportServiceConfiguration.ReportSourceResolver = resolver
-			reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
-			configurationInstance = reportServiceConfiguration
-
-			Dim designerServiceConfiguration As New ReportDesignerServiceConfiguration()
-			designerServiceConfiguration.DefinitionStorage = New FileDefinitionStorage(reportsPath)
-			designerServiceConfiguration.SettingsStorage = New FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
-			designerConfigurationInstance = designerServiceConfiguration
-		End Sub
-
-		Public Sub New()
-			'nitialize the service configuration
-			Me.ReportServiceConfiguration = configurationInstance
-			Me.ReportDesignerServiceConfiguration = designerConfigurationInstance
-
-		End Sub
-	End Class
-	````
+	{{source=CodeSnippets\MvcVB\Controllers\WebReportDesignerControllerSnippet.vb region=WebReportDesignerController}}
 
 
 ## Adding the Web Report Designer:
@@ -223,25 +181,7 @@ The REST service works as a backend and is responsible for storage operations li
 		BundleConfig.RegisterBundles(BundleTable.Bundles);
 	}
 	````
-	````VB
-	Imports System.Web.Optimization
-	
-	Public Class MvcApplication
-		Inherits System.Web.HttpApplication
-
-		Sub Application_Start()
-			AreaRegistration.RegisterAllAreas()
-			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters)
-
-			Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration)
-			Telerik.WebReportDesigner.Services.WebApi.ReportDesignerControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration)
-
-			RouteConfig.RegisterRoutes(RouteTable.Routes)
-			BundleConfig.RegisterBundles(BundleTable.Bundles)
-		End Sub
-	End Class
-	````
-
+	{{source=CodeSnippets\MvcVB\Global.asax.vb region=RegisterReportDesignerRoutes}}
 
 1. In case the reports shown in the viewer need access to a database, add the necessary connection strings to the `web.config` file.
 1. Finally, run the project to preview the web designer.

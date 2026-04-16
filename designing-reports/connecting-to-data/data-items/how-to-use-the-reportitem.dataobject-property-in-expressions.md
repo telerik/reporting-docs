@@ -34,24 +34,9 @@ public class Phone
 	}
 }
 ```
-```VB
-Public Class Phone
-	Public Property Number() As String
-		Get
-			Return _Number
-		End Get
-		Set
-			_Number = Value
-		End Set
-	End Property
-	Private _Number As String
-	Public Function GetFormattedNumber() As String
-		Return Number.Replace(" ", "-")
-	End Function
-End Class
-```
+{{source=CodeSnippets\VB\API\Telerik\Reporting\DataObjectExpressionSnippets.vb region=PhoneDataObjectClass}}
 
-If the data object above is bound to a [data item]({slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), `=ReportItem.DataObject.RawData` will return the exact data object of type **Phone**. This allows you to use the GetFormattedNumber method in an expression by calling `=ReportItem.DataObject.RawData.GetFormattedNumber()`, or use a property of the type e.g., `=ReportItem.DataObject.RawData.Number`.
+If the data object above is bound to a [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview), `=ReportItem.DataObject.RawData` will return the exact data object of type **Phone**. This allows you to use the GetFormattedNumber method in an expression by calling `=ReportItem.DataObject.RawData.GetFormattedNumber()`, or use a property of the type e.g., `=ReportItem.DataObject.RawData.Number`.
 
 ## Use parent data item data for child data item datasource parameter
 

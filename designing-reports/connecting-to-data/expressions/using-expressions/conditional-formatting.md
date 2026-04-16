@@ -49,14 +49,7 @@ To make styles conditional, use an expression instead of a static value for the 
    	return Color.Transparent;
    }
    ```
-   ```VB
-   Public Shared Function ColorFromName(ByVal colorName As String) As Color
-   	If Not String.IsNullOrEmpty(colorName) Then
-   		Return Color.FromName(colorName)
-   	End If
-   	Return Color.Transparent
-   End Function
-   ```
+   {{source=CodeSnippets\VB\API\Telerik\Reporting\DataObjectExpressionSnippets.vb region=ColorFromNameFunction}}
 
 1. In the **Bindings Editor** select the **Style.BackGroundColor** property.
 1. Enter the next expression:

@@ -93,7 +93,7 @@ To use .NET on macOS:
 The following `dockerfile` snippet demonstrates how to achieve the desired outcome. When these three libraries are installed, Telerik Reporting will run on the produced Docker image.
 
 ```DOCKERFILE
-FROM microsoft/dotnet:6.0-runtime AS base
+FROM mcr.microsoft.com/dotnet/runtime:6.0 AS base
 RUN apt-get update \
 	&& apt-get install -y --allow-unauthenticated \
 		libc6-dev \

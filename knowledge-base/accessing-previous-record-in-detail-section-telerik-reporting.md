@@ -5,7 +5,7 @@ type: how-to
 page_title: Accessing Previous Record in Detail Section of Telerik Reporting
 meta_title: Accessing Previous Record in Detail Section of Telerik Reporting
 slug: accessing-previous-record-in-detail-section-telerik-reporting
-tags: reporting, detail-section, previous, exec, isnull, expressions
+tags: reporting, detail-section, previous, isnull, expressions
 res_type: kb
 ticketid: 1710935
 ---
@@ -41,6 +41,6 @@ To achieve this functionality, use the `Previous` function. It allows retrieving
 
 ## See Also
 
-* [Previous and Exec functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%})
+* [Previous functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%})
 * [IsNull function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions%})
 * [Expressions in Telerik Reporting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})

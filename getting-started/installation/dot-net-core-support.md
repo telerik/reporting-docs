@@ -74,13 +74,11 @@ Telerik Reporting supports the following functionalities:
 
 ## Deploying on Linux
 
-### Using `SkiaSharp`
-
 Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
-When using SkiaSharp, reference the `Telerik.Drawing.Skia` NuGet package or assembly.
+For .NET 8+ applications on Linux, you must use the SkiaSharp graphics engine, so reference the `Telerik.Drawing.Skia` NuGet package or assembly in your project hosting the Reporting service or engine.
 
-The next libraries should also be referenced when using SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
+The following libraries should also be installed as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
 ```bash
 sudo apt-get update
@@ -88,27 +86,7 @@ sudo apt-get install -y libfreetype6
 sudo apt-get install -y libfontconfig1
 ```
 
-### Using System.Drawing(`libgdiplus`)
-
-> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
-
-When deploying to a Linux machine, make sure you have the [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) library installed. The library is a Mono implementation of the GDI+ API for non-Windows operating systems.
-
-The following snippet demonstrates how to update and install the necessary libraries on Ubuntu or Debian:
-
-```bash
-sudo apt-get update
-sudo apt-get install libc6-dev
-sudo apt-get install libgdiplus
-```
-
-> note The library [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) returns as a Family Font Name the `Preferred Family` rather than the `Family` name from the font meta information. Details may be found in [Font.Name returns incorrect results on Linux](https://github.com/mono/libgdiplus/issues/617). The two names may be different in the general case. In such a scenario, the font should be referenced with its `Family` name for Windows and `Preferred Family` name for Linux.
->
-> In the rare case when the `Preferred Family` name of two fonts coincide and the `Family` names are different, on Linux, only the second font registered as private would be respected, as it will override the first one.
-
-### Common Configurations
-
-Since the `libgdiplus` and `SkiaSharp` libraries are not perfect replacements for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
+Since the `SkiaSharp` library is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
 
 The following JSON configuration snippet hides the Image rendering extension from the list of available rendering extensions:
 
@@ -127,8 +105,6 @@ On the Linux machine, you also need to install the fonts you use in the reports.
 
 ## Deploying on macOS
 
-### Using `SkiaSharp`
-
 Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 To use .NET on macOS:
@@ -144,35 +120,11 @@ To use .NET on macOS:
    dotnet build
    ```
 
-### Using System.Drawing(`libgdiplus`)
-
-> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft, as explained in [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
-
-To use .NET on macOS:
-
-1. Install [.NET for macOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos).
-1. Install [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) by using [Homebrew](https://brew.sh/).
-
-   ```zsh
-   brew install mono-libgdiplus
-   ```
-
-1. Create your .NET application or copy an existing one from a Windows machine.
-1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
-1. Add a section in the `appsettings.json` file for any font fallback.
-1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
-
-   ```zsh
-   dotnet build
-   ```
-
 ## Using Container Platforms
 
 You can use Telerik Reporting in a Docker image if it meets the graphics engine requirements.
 
 To use Telerik Reporting in a Windows container, target a Windows-based image with GDI support. The same approach is [recommended by Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image).
-
-The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ graphics library. However, their size is significantly bigger than the size of the .NET runtime in a Linux container. Such a container requires you to install only the libgdiplus library and its accompanying libraries.
 
 > tip Some Docker Containers are created with **invariant culture**. This means that the locales like currency symbol ('$' in 'en-US') may appear unexpected. Use the following code in the Dockerfile to add your culture ('en-US' in the example) to the container:
 >
@@ -180,32 +132,18 @@ The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ 
 >
 > **LC_ALL** stands for all locales, and **LANG** stands for the language.
 
-### Linux Docker Container with `SkiaSharp`
+### Linux Docker Container
 
 Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
-When using SkiaSharp, reference the `Telerik.Drawing.Skia` NuGet package or assembly.
+In Linux containers (for .NET 8+), use the SkiaSharp graphics engine, so reference the `Telerik.Drawing.Skia` NuGet package or assembly in your project hosting the Reporting service or engine.
 
-The next libraries should also be referenced when using SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
+The following libraries should also be installed in the Docker image as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
 ```DOCKERFILE
 FROM microsoft/dotnet:7.0-runtime AS base
 RUN apt-get update && \
     apt-get install -y libfreetype6 libfontconfig1
-```
-
-### Linux Docker Container with System.Drawing(`libgdiplus`)
-
-The following `dockerfile` snippet demonstrates how to achieve the desired outcome. When these three libraries are installed, Telerik Reporting will run on the produced Docker image.
-
-```DOCKERFILE
-FROM microsoft/dotnet:6.0-runtime AS base
-RUN apt-get update \
-	&& apt-get install -y --allow-unauthenticated \
-		libc6-dev \
-		libgdiplus \
-		libx11-dev \
-	&& rm -rf /var/lib/apt/lists/*
 ```
 
 ### Windows Docker Container with System.Drawing

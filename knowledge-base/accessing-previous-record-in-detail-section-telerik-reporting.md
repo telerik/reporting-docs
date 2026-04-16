@@ -12,11 +12,11 @@ ticketid: 1710935
 
 ## Description
 
-I want to display the previous record in the detail section of my Telerik Reporting report. Using the Previous function directly in the detail section does not allow retrieving the previous group's value, because the function requires an explicit scope to be evaluated. I need this functionality to manipulate the data starting from the second record. I am open to saving the previous value into a variable if necessary.
+I want to display the previous record in the detail section of my Telerik Reporting report. Using the Previous function directly in the detail section does not allow retrieving the previous group's value, because the function requires an explicit scope to be evaluated. I need this functionality to manipulate the data starting from the second record.
 
 ## Solution
 
-To achieve this functionality, use the `Exec` function combined with the `Previous` function. The `Exec` function allows retrieving values from the previous group within the detail section.
+To achieve this functionality, use the `Previous` function. It allows retrieving values from the previous record or group within the detail section by specifying the appropriate scope.
 
 1. Use the following expression to get the previous group's value:
 
@@ -33,8 +33,7 @@ To achieve this functionality, use the `Exec` function combined with the `Previo
    ```
 
 ### Notes
-* Ensure the group name in the `Exec` function matches your report design.
-* The `Previous` function retrieves the previous detail section's value by default.
+* Ensure the group name passed as the scope argument to the `Previous` function matches your report design.
 
 ## Sample Report
 

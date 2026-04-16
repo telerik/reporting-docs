@@ -78,7 +78,6 @@ Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new
 
 For .NET 8+ applications on Linux, you must use the SkiaSharp graphics engine, so reference the `Telerik.Drawing.Skia` NuGet package or assembly in your project hosting the Reporting service or engine.
 
-For .NET 6 and earlier on Linux, see the libgdiplus/System.Drawing deployment guidance in the [Deploying on Linux with libgdiplus KB article](https://docs.telerik.com/reporting/knowledge-base/deploying-on-linux).
 The following libraries should also be installed as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
 ```bash
@@ -138,8 +137,6 @@ To use Telerik Reporting in a Windows container, target a Windows-based image wi
 Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), we introduced a SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the **engineName** element of the [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element), which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
 
 In Linux containers (for .NET 8+), use the SkiaSharp graphics engine, so reference the `Telerik.Drawing.Skia` NuGet package or assembly in your project hosting the Reporting service or engine.
-
-For .NET 6 and earlier on Linux containers, see the libgdiplus/System.Drawing deployment guidance in the [Deploying on Linux with libgdiplus KB article](https://docs.telerik.com/reporting/knowledge-base/deploying-on-linux).
 
 The following libraries should also be installed in the Docker image as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 

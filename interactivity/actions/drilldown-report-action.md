@@ -74,7 +74,7 @@ A report item can initially display or be hidden when a user views a report. The
 >note The report item must either be in the same group as the item that is being hidden or in an ancestor group.
 
 
-## Adding a drilldown action programatically
+## Adding a drilldown action programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewToggleVisibilitySnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewToggleVisibilitySnippet}}

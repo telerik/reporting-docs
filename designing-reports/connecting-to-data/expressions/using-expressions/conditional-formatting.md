@@ -19,7 +19,7 @@ To make styles conditional, use an expression instead of a static value for the 
 ### Using Conditional Formatting Editor
 
 1. In Report Designer, right-click on a **Text Box** report item.
-1. In the context menu, select **Conditional Formating**.
+1. In the context menu, select **Conditional Formatting**.
 1. The [__Conditional Formatting Rules...__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog) dialog appears on the screen.
 1. Enter the conditional expression:
 

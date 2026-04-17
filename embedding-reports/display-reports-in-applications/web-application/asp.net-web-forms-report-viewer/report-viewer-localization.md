@@ -21,7 +21,7 @@ In the ASP.NET WebForms Report Viewer, localized resources are stored in separa
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, __French ("fr")__ is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 * Below those are the resources for any specific cultures. A specific culture is associated with a language and a region. For example, __French Canadian ("fr-CA")__ is a specific culture.
 
->note When the __Report Viewer__ tries to load any localized resource and does not find it it will travel up the hierarchy until it finds a resource file containing the requested resource.
+>note When the __Report Viewer__ tries to load any localized resource and does not find it, it will travel up the hierarchy until it finds a resource file containing the requested resource.
 
 The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the __French Belgian ("fr-BE")__ culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the __French Canadian__ culture. The __Report Viewer__ will look for a `RESX` file named `fr-CA`, it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
 

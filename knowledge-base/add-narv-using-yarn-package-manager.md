@@ -66,7 +66,7 @@ After adding the [Native Angular Report Viewer](slug:telerikreporting/using-repo
    }
    ```
 
-1. Some of the viewer's peer dependencies have their own dependencies that have to be manually added. The following command can be used to install the necesary packages:
+1. Some of the viewer's peer dependencies have their own dependencies that have to be manually added. The following command can be used to install the necessary packages:
 
    ```powershell
    yarn add @angular-devkit/schematics @angular-devkit/core @progress/kendo-angular-upload @progress/kendo-drawing @progress/kendo-svg-icons

@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-Telerik.Reporting.Wpf is build with Telerik UI for WPF assemblies for .NET 4.0. When referencing the Telerik UI for WPF assemblies build with .NET 4.5 an exception is thrown "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.`40`". Note that the required version of the Telerik.Windows assemblies depends on the particular Reporting version and may change.
+Telerik.Reporting.Wpf is built with Telerik UI for WPF assemblies for .NET 4.0. When referencing the Telerik UI for WPF assemblies build with .NET 4.5 an exception is thrown "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.`40`". Note that the required version of the Telerik.Windows assemblies depends on the particular Reporting version and may change.
 
 ## Solution
 

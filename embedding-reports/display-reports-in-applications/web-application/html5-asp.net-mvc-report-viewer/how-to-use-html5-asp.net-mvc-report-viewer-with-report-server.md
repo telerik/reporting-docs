@@ -50,7 +50,7 @@ The VS item template will integrate HTML5 MVC Report Viewer in a.cshtml page and
 
 After finishing, the item template automatically does the following:
 
-* Configures the NuGet packages, if nessesary.
+* Configures the NuGet packages, if necessary.
 * Adds a `CSHTML` page with the configured __HTML5 MVC Report Viewer__.
 * Displays a __summary log__ that list all of the made changes.
 

@@ -20,7 +20,7 @@ In the Windows Report Viewer, localized resources are stored in separate __RESX
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 * Below those are the resources for any specific cultures. A specific culture is associated with a language and a region. For example, French Canadian ("fr-CA") is a specific culture.
 
-When the __Report Viewer__ tries to load any localized resource and does not find it it will travel up the hierarchy until it finds a resource file containing the requested resource.
+When the __Report Viewer__ tries to load any localized resource and does not find it, it will travel up the hierarchy until it finds a resource file containing the requested resource.
 
 The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the French Belgian ("fr-BE") culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __Report Viewer__ will look for a __RESX__  file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
 
@@ -36,9 +36,9 @@ __The Report Viewer__ uses the following naming convention when searching for l
 
 * The names of the __RESX__ localization resource files should have the following format: _Telerik.ReportViewer.WinForms.Resources.[culture].resx_, where __[culture]__ is the name of the culture for the specified localization resource. For example, to provide a localization resource for the French Belgian culture, the corresponding resource file should be named as follows: _Telerik.ReportViewer.WinForms.Resources.fr-BE.resx_
 * Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should be named as follows: _Telerik.ReportViewer.WinForms.Resources.fr.resx_
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the __Report Viewer__. In that case the resource file should be named as follows: _Telerik.ReportViewer.WinForms.Resources.resx_
+* It is possible to override the default resources for the language-neutral culture, which are stored in the assembly of the __Report Viewer__. In that case, the resource file should be named as follows: _Telerik.ReportViewer.WinForms.Resources.resx_
 
-As described above, if for example the current UI culture is set to French Belgian, the __Report Viewer__ will search for localized __RESX__ resource files inside the main application folder in the following order:
+As described above, if, for example, the current UI culture is set to French Belgian, the __Report Viewer__ will search for localized __RESX__ resource files inside the main application folder in the following order:
 
 1. Telerik.ReportViewer.WinForms.Resources.__fr-BE__.resx
 1. Telerik.ReportViewer.WinForms.Resources.__fr__.resx

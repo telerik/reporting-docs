@@ -21,7 +21,7 @@ Localization is used to display the reports in the language of a specific cultur
 
 - [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) - The Web Report Designer doesn't support localization.
 
-  > important **known issue**: The Web Report Designer doesn't expose the _Localizable_ and _Language_ properties of the Report. If you modify the Report in the web designer and save it, it will serialize it without these properties. For that reason, the Report localization informaton will be entirely removed.
+  > important **known issue**: The Web Report Designer doesn't expose the _Localizable_ and _Language_ properties of the Report. If you modify the Report in the web designer and save it, it will serialize it without these properties. For that reason, the Report localization information will be entirely removed.
 
 Telerik Reporting uses a similar methodology for localization as Visual Studio uses for Windows Forms. The designer lets you define static text for the report (e.g. column headings, titles) in each language that you specify. A resource file is automatically created for each language to store translated text.
 

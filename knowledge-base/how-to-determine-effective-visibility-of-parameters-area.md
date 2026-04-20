@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-In the Angular Report Viewer component, one may successfully control the visibility of the parameter area with the means of the _parametersAreaVisible_ [option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options#available-options). However, it cannot be used to determine the current state of the parameters area visibility that may have changed due to user interaction with the viewer.
+In the Angular Report Viewer component, one may successfully control the visibility of the parameter area with the means of the _parametersAreaVisible_ [option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/options#available-options). However, it cannot be used to determine the current state of the parameters area visibility that may have changed due to user interaction with the viewer.
 
 ## Suggested Workarounds
 

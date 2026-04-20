@@ -25,32 +25,8 @@ Defines a collection of assembly references used by the Reporting Engine during 
 
 The types from the assemblies included in the _assemblyReferences_ element do not need to be registered explicitly in the [_typeReferences_ Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) as all types in the assembly will be permitted to be used by the Reporting Engine.
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<assemblyReferences>
-			<add />
-			<clear />
-			<remove />
-		</assemblyReferences>
-	</Telerik.Reporting>	
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"assemblyReferences": [
-		{
-			"name": "",
-			"version": "",
-			"culture": "",
-			"publicKeyToken": ""
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AssemblyReferencesElementConfiguration.xml region=AssemblyReferencesElementConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\AssemblyReferencesConfig.json region=AssemblyReferencesSchema}}
 
 ## Attributes and Elements
 
@@ -72,36 +48,8 @@ The following code example demonstrates how to configure the reporting engine to
 
 > The [probing](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element) element is not supported in the .NET Standalone Designer
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<runtime>
-		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-			  <probing privatePath="MyDir; MyDir2\SubDir"/>
-		</assemblyBinding>
-	</runtime>
-	<Telerik.Reporting>
-		<assemblyReferences>
-			<add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
-		</assemblyReferences>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"assemblyReferences": [
-		{
-			"name": "MyUserFunctionsAssembly",
-			"version": "1.0.0.0",
-			"culture": "neutral",
-			"publicKeyToken": "null"
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AssemblyReferencesElementConfiguration_2.xml}}
+{{source=CodeSnippets\Blazor\Docs\JSON\AssemblyReferencesExampleConfig.json region=AssemblyReferencesExample}}
 
 > When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
 

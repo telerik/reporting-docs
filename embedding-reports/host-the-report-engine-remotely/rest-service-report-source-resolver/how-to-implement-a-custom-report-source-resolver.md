@@ -52,8 +52,8 @@ This article explains how to create a custom report source resolver for the **Te
 
 1. Add to your IReportSourceResolver implementation a constructor with the parameter IReportSourceResolver parentResolver. Then use the parentResolver if the custom report source resolving mechanism fails.
 
-   {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportSourceResolverFallBack_Implementation}}
-   {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportSourceResolverFallBack_Implementation}}
+	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportSourceResolverFallBack_Implementation}}
+	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportSourceResolverFallBack_Implementation}}
 
 1. Add to the `ReportServiceConfiguration` the `IReportSourceResolver` implementations in a chain. Thus, the custom one will be executed first, if it fails the second one, and so on.
 

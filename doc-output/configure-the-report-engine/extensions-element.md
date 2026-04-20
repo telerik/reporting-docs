@@ -74,40 +74,8 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 
 ## Example
 
-````XML
-<configuration>
-    <configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-    <Telerik.Reporting>
-        <extensions>
-            <render>
-                <extension name="PDF" description="PDF Description">
-                    <parameters>
-                        <parameter name="DocumentAuthor" value="John Doe"/>
-                    </parameters>
-                </extension>
-            </render>
-        </extensions>
-    </Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": "PDF",
-			"description":  "PDF Description",
-			"parameters": [
-				{
-					"Name": "DocumentAuthor",
-					"Value": "John Doe"
-				}
-			]
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ExtensionsElementRenderConfiguration.xml region=ExtensionsElementRenderConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\ExtensionsConfig.json region=ExtensionsPdfConfig}}
 
 ## Configuring Multiple Entries for a Rendering Extension
 
@@ -117,38 +85,8 @@ You should also specify the `description` attribute of the Extension element. Th
 
 The following example illustrates how to use the default Image rendering extension (which produces `TIFF` output) alongside a second instance that outputs reports in `EMF`. Notice that the extension name distinguishes one instance from the other: 
 
-````XML
-<Telerik.Reporting>
-    <extensions>
-        <render>
-            <extension name="TIFF_CCITT4"
-                                 type="Telerik.Reporting.ImageRendering.ImageReport, Telerik.Reporting, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
-                                 description="TIFF file (CCITT Group 4)">
-                <parameters>
-                    <parameter name="TiffCompression" value="ccitt4" />
-                </parameters>
-            </extension>
-        </render>
-    </extensions>
-</Telerik.Reporting>
-````
-````JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": "TIFF_CCITT4",
-			"type": "Telerik.Reporting.ImageRendering.ImageReport, Telerik.Reporting, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
-			"description":  "TIFF file (CCITT Group 4)",
-			"parameters": [
-				{
-					"Name": "TiffCompression",
-					"Value": "ccitt4"
-				}
-			]
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ExtensionsElementTiffConfiguration.xml region=ExtensionsElementTiffConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\ExtensionsTiffConfig.json region=ExtensionsTiffConfig}}
 
 > The code samples have the version listed as Version=x.x.x.x, and you should change that with the exact assembly version you use before proceeding. 
 

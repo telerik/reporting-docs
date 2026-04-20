@@ -61,221 +61,33 @@ All parameters and attributes for the available cache providers may be seen in t
 
 This is the default cache provider. When the `Cache` section is omitted from the `Telerik.Reporting` configuration, or the `BasePath` is not specified, the Reporting engine utilizes the temporary folder of the current user.
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="Auto">
-			<providers>
-				<provider name="AutoProviderName">
-					<parameters>
-						<parameter name="BasePath" value="C:\MyDataCache" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "Auto",
-		"providers": [
-			{
-				"name": "AutoProviderName",
-				"parameters": [
-					{
-						"name": "BasePath",
-						"value": "c:\\MyDataCache"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAutoConfiguration.xml region=CacheElementAutoConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheConfig.json region=CacheAutoProvider}}
 
 ### The File Cache Provider
 
 When the `BasePath` is not specified, the Reporting engine utilizes the temporary folder of the current user.
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="File">
-			<providers>
-				<provider name="FileProviderName">
-					<parameters>
-						<parameter name="BasePath" value="C:\MyDataCache" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "File",
-		"providers": [
-			{
-				"name": "FileProviderName",
-				"parameters": [
-					{
-						"name": "BasePath",
-						"value": "c:\\MyDataCache"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementFileConfiguration.xml region=CacheElementFileConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheFileProviderConfig.json region=CacheFileProvider}}
 
 ### The Memory Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="Memory">
-			<providers>
-				<provider name="MemoryProviderName" />
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "Memory",
-		"providers": [
-			{
-				"name": "MemoryProviderName"
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementMemoryConfiguration.xml region=CacheElementMemoryConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheMemoryProviderConfig.json region=CacheMemoryProvider}}
 
 ### The IsolatedStorage Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="IsolatedStorage">
-			<providers>
-				<provider name="IsolatedStorageProviderName" />
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "IsolatedStorage",
-		"providers": [
-			{
-				"name": "IsolatedStorageProviderName"
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementIsolatedStorageConfiguration.xml region=CacheElementIsolatedStorageConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheIsolatedStorageProviderConfig.json region=CacheIsolatedStorageProvider}}
 
 ### The Database Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="Database">
-			<providers>
-				<provider name="DatabaseProviderName">
-					<parameters>
-						<parameter name="BackendName" value="DatabaseProviderBackendName" />
-						<parameter name="ConnectionString" value="DatabaseProviderConnectionString" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "Database",
-		"providers": [
-			{
-				"name": "DatabaseProviderName",
-				"parameters": [
-					{
-						"name": "BackendName",
-						"value": "DatabaseProviderBackendName"
-					},
-					{
-						"name": "ConnectionString",
-						"value": "DatabaseProviderConnectionString"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementDatabaseConfiguration.xml region=CacheElementDatabaseConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheDatabaseProviderConfig.json region=CacheDatabaseProvider}}
 
 ### The ADO.NET Cache Provider
 
-````XML
-<configuration>
-	…
-	<Telerik.Reporting>
-		<cache provider="ADO.NET">
-			<providers>
-				<provider name="ADONETProviderName">
-					<parameters>
-						<parameter name="ProviderName" value="ADONETProviderProviderName" />
-						<parameter name="ConnectionString" value="ADONETProviderConnectionString" />
-					</parameters>
-				</provider>
-			</providers>
-		</cache>
-	</Telerik.Reporting>
-	…
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"cache": {
-		"provider": "ADO.NET",
-		"providers": [
-			{
-				"name": "ADONETProviderName",
-				"parameters": [
-					{
-						"name": "ProviderName",
-						"value": "ADONETProviderProviderName"
-					},
-					{
-						"name": "ConnectionString",
-						"value": "ADONETProviderConnectionString"
-					}
-				]
-			}
-		]
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAdoNetConfiguration.xml region=CacheElementAdoNetConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\CacheAdoNetProviderConfig.json region=CacheAdoNetProvider}}
 

@@ -26,26 +26,8 @@ Defines a collection of type references used by the Reporting Engine to resolve 
 
 XML-based configuration file:
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<typeReferences>
-			<add />
-			<clear />
-			<remove />
-		</typeReferences>
-	</Telerik.Reporting>	
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"typeReferences": [
-	],
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\TypeReferencesElementConfiguration.xml region=TypeReferencesElementConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\TypeReferencesConfig.json region=TypeReferencesSchema}}
 
 ## Attributes and Elements
 
@@ -65,30 +47,8 @@ The following code example demonstrates how to configure the Reporting Engine to
 
 If the type is correctly resolvable at runtime, it will be permitted to be used as a source for the ObjectDataSource's data retrieval. This configuration element also allows listing custom types that are allowed in the report definition.
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<typeReferences>
-			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken="my-assembly-public-key-token" />
-		</typeReferences>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"typeReferences": [
-		{
-			"typeName": "MyNamespace.MyClassName",
-			"assemblyName": "MyAssemblyName",
-			"publicKeyToken": "my-assembly-public-key-token"
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\TypeReferencesElementConfiguration_2.xml}}
+{{source=CodeSnippets\Blazor\Docs\JSON\TypeReferencesExampleConfig.json region=TypeReferencesExample}}
 
 > When adding the `Telerik.Reporting` section manually, do not forget to register it in the `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
 

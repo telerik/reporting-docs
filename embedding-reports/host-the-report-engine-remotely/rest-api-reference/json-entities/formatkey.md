@@ -28,15 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-formatkey,/embedding-reports
 
 The document format and settings forming a key: 
 
-````JSON
-{
-	"format": "HTML5",
-	"deviceInfo": { "UseSVG": true },
-	"useCache": true,
-	"baseDocumentId": "xxxx",
-	"actionId": "xxxx"
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiFormatKey.json region=FormatKey}}
 
 >caption Fields
 

@@ -31,72 +31,16 @@ By default, the **AI Prompt** dialog requests explicit consent from users before
 
 In enterprise environments where AI usage policies are already established or when working with trusted internal models, you may want to streamline the user experience by disabling this consent requirement. In these cases, you can set the `requireConsent` option to `false`:
 
-```JSON
-{
-    "telerikReporting": {
-        "AIClient": {
-            "requireConsent": false
-        }
-    }
-}
-```
-```XML
-<configuration>
-    <configSections>
-        <section
-            name="Telerik.Reporting"
-            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-            allowLocation="true"
-            allowDefinition="Everywhere"/>
-    </configSections>
-    <Telerik.Reporting>
-        <AIClient
-            requireConsent="false">
-        </AIClient>
-    </Telerik.Reporting>
-</configuration>
-```
-
+{{source=CodeSnippets\Blazor\Docs\JSON\AiClientRequireConsentConfig.json region=AiClientRequireConsent}}
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AiInsightsConfiguration.xml region=AiInsightsConfiguration}}
 ### Prompts Configuration
 
 By default, users can create their own custom prompts to ask any questions about their reports. While this provides maximum flexibility, it can lead to unpredictable token usage costs and potentially inconsistent results. In these cases, you can provide the users with predefined prompts that are designed to handle specific tasks.
 
 To restrict users to predefined prompts only, you set `allowCustomPrompts` to `false` and add the predefined prompts through the `predefinedPrompts` option:
 
-```JSON
-{
-    "telerikReporting": {
-        "AIClient": {
-            "allowCustomPrompts": false,
-            "predefinedPrompts": [
-                { "text": "Generate a summary of the report." },
-                { "text": "Translate the report into German." }
-            ],
-        }
-    }
-}
-```
-```XML
-<configuration>
-    <configSections>
-        <section
-            name="Telerik.Reporting"
-            type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-            allowLocation="true"
-            allowDefinition="Everywhere"/>
-    </configSections>
-    <Telerik.Reporting>
-        <AIClient
-            allowCustomPrompts="false">
-            <predefinedPrompts>
-                <add text="Generate a summary of the report." />
-                <add text="Translate the report into German." />
-            </predefinedPrompts>
-        </AIClient>
-    </Telerik.Reporting>
-</configuration>
-```
-
+{{source=CodeSnippets\Blazor\Docs\JSON\AiClientPredefinedPromptsConfig.json region=AiClientPredefinedPrompts}}
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AiInsightsConfiguration_2.xml region=AiInsightsConfiguration_2}}
 You can also add predefined prompts without disabling custom ones, giving users both curated options and the flexibility to create their own queries.
 
 ### Retrieval-Augmented Generation (RAG) Configuration
@@ -117,17 +61,7 @@ You can also configure the RAG behavior through the `ragSettings` option:
 
 Below is an example that takes advantage of the table splitting and automatic encoding inference, but reduces the token limits:
 
-```JSON
-"telerikReporting": {
-	"AIClient": {
-		"ragSettings": {
-			"modelMaxInputTokenLimit": 12000,
-			"maxNumberOfEmbeddingsSent": 10,
-			"maxTokenSizeOfSingleEmbedding": 2000
-		}
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\AiClientRagSettingsConfig.json region=AiClientRagSettings}}
 
 For a complete reference of all available `AIClient` options, check the article [AIClient Element Overview](slug:telerikreporting/aiclient-element).
 

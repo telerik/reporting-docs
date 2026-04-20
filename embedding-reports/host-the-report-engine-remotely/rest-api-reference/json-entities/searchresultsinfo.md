@@ -11,15 +11,15 @@ previous_url: /telerik-reporting-rest-json-entities-searchresultsinfo,/embedding
 ---
 
 <style>
+    table th:nth-of-type(1) {
+		width: 20%;
+	}
+
     table th:nth-of-type(2) {
-		width: 10%;
+		width: 20%;
 	}
 
     table th:nth-of-type(3) {
-		width: 10%;
-	}
-
-    table th:nth-of-type(4) {
 		width: 60%;
 	}
 </style>
@@ -28,13 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-searchresultsinfo,/embedding
 
 The info object that contains the search results returned from the engine.
 
-````JSON
-{
-	"description": "Quarterly Sales Dashboard for 2003",
-	"id": "a082030a03fa4e349abe183d161a35ea",
-	"page": 1
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiSearchResultsInfo.json region=SearchResultsInfo}}
 
 >caption Fields
 

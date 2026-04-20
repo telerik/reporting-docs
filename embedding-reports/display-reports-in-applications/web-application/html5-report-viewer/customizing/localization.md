@@ -50,10 +50,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 4. Translate the texts for the specified culture
 5. Load the `JS` file with the translated text before loading the report viewer:
 
-   ```HTML
-   <script src="/Scripts/stringResources.fr-BE.js"></script>
-   <script src="/api/reports/resources/js/telerikReportViewer"></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerLocalization.html region=Html5ViewerSetup}}
 
 > To modify the HTML5 Viewer's HTML template that contains the toolbar, preview, parameters, and document map areas, and so on, you will need to create a custom template, which you can provide to the viewer through its `templateUrl` property.
 > <br/>  

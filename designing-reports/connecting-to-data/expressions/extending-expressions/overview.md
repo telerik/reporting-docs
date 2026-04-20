@@ -16,33 +16,8 @@ Expressions can easily be extended by providing user functions written in any .N
 
 In order to expose your custom functions, so they can be utilized by the Reporting engine, you have to add a reference to the assembly they are defined in. This can be done through the [assemblyReferences element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) in the application's configuration file.
 
-````XML
-<configuration>
-	<configSections>
-		<section
-			name="Telerik.Reporting"
-			type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-			allowLocation="true"
-			allowDefinition="Everywhere"/>
-	</configSections>
-	…
-	<Telerik.Reporting>
-		<assemblyReferences>
-			<add name="MyCustomAssembly" version="1.0.0.0" />
-		</assemblyReferences>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-    "assemblyReferences": [
-        {
-            "name": "MyCustomAssembly",
-            "version": "1.0.0.0"
-        }
-    ]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ExtendingExpressionsConfiguration.xml region=ExtendingExpressionsConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\ExtendingExpressionsConfig.json region=ExtendingExpressionsAssemblyRef}}
 
 ## See Also
 

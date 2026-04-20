@@ -46,87 +46,8 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__, and __IMAGEPrint__ formats.
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<extensions>
-			<render>
-				<extension name="IMAGE">
-					<parameters>
-						<parameter name="OutputFormat" value="TIFF"/>
-						<parameter name="TiffCompression" value="RLE"/>
-					</parameters>
-				</extension>
-				<extension name="IMAGEPrintPreview">
-					<parameters>
-						<parameter name="OutputFormat" value="JPEG"/>
-					</parameters>
-				</extension>
-				<extension name="IMAGEPrint">
-					<parameters>
-						<parameter name="OutputFormat" value="PNG"/>
-						<parameter name="TextRenderingHint" value="AntiAliasGridFit"/>
-						<parameter name="DpiX" value="1200"/>
-						<parameter name="DpiY" value="1200"/>
-					</parameters>
-				</extension>
-			</render>
-		</extensions>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"extensions": [
-	{
-		"name": "IMAGE",
-		"parameters": [
-		{
-			"Name": "OutputFormat",
-			"Value": "TIFF"
-		},
-		{
-			"Name": "TiffCompression",
-			"Value": "RLE"
-		}
-	]
-	},
-	{
-		"name": "IMAGEPrintPreview",
-		"parameters": [
-		{
-			"Name": "OutputFormat",
-			"Value": "JPEG"
-		}
-	]
-	},
-	{
-		"name": "IMAGEPrint",
-		"parameters": [
-		{
-			"Name": "OutputFormat",
-			"Value": "PNG"
-		},
-		{
-			"Name": "TextRenderingHint",
-			"Value": "AntiAliasGridFit"
-		},
-		{
-			"Name": "DpiX",
-			"Value": "1200"
-		},
-		{
-			"Name": "DpiY",
-			"Value": "1200"
-		},
-	]
-	}
-  ]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ImageDeviceInfoConfiguration.xml region=ImageDeviceInfoConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\ImageDeviceInfoConfig.json region=ImageDeviceInformation}}
 
 ## See Also
 

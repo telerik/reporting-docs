@@ -64,58 +64,8 @@ __`<storage>` element__
 
 ## Examples
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<restReportService hostAppId="Application1" workerCount="4" reportSharingTimeout="10" clientSessionTimeout="10" exceptionsVerbosity="detailed">
-			<reportResolver provider="type" />
-			<storage provider="file">
-				<parameters>
-					<parameter name="directory" value="C:\Temp\RestServiceStorage" />
-				</parameters>
-			</storage>
-			<!--<storage provider="Redis">
-				<parameters>
-					<parameter name="configuration" value="localhost:10001" />
-					<parameter name="databaseNumber" value="1" />
-				</parameters>
-			</storage>-->
-			<!--<storage provider="MSSQLServer">
-				<parameters>
-					<parameter name="connectionString" value="Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI" />
-					<parameter name="commandTimeout" value="60" />
-				</parameters>
-			</storage>-->
-		</restReportService>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"restReportService": {
-		"hostAppId": "Application1",
-		"workerCount": 4,
-		"reportSharingTimeout": 10,
-		"clientSessionTimeout": 10,
-		"exceptionsVerbosity": "detailed",
-		"reportResolver": {
-			"provider": "type"
-		},
-		"storage": {
-			"provider": "file",
-			"parameters": [
-				{
-					"name": "directory",
-					"value": "c:\\temp"
-				}
-			]
-		}
-	},
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\RestReportServiceElementConfiguration.xml region=RestReportServiceElementConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\RestReportServiceConfig.json region=RestReportServiceConfig}}
 
 ## See Also
 

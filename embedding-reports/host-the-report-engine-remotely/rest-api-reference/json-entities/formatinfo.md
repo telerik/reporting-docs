@@ -28,12 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-formatinfo,/embedding-report
 
 Format info object representing a document format that can be used for document creation.
 
-````JSON
-{
-	"name": "PDF",
-	"localizedName": "Acrobat (PDF) file"
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiFormatInfo.json region=FormatInfo}}
 
 >caption Fields
 

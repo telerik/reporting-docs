@@ -28,12 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-reportsource,/embedding-repo
 
 Represents a report document identifier, consisting of a report and values for its parameters.
 
-````JSON
-{
-	"report": "Report1.trdp",
-	"parameterValues": { "City": "Sofia" }
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiReportSource.json region=ReportSource}}
 
 >caption Fields
 

@@ -28,14 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-bookmarknode,/embedding-repo
 
 Bookmark node representing a node in a document map.
 
-````JSON
-{
-	"id": "Bikes",
-	"text": "Bikes",
-	"page": 3,
-	"items": [{ "id": "Bikes", "text": "Bikes", "page": 3 }]
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiBookmarkNode.json region=BookmarkNode}}
 
 >caption Fields
 

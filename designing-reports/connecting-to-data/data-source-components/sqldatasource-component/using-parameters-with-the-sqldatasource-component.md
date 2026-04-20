@@ -26,10 +26,7 @@ The syntax used for the placeholders varies, depending on the type of the databa
 
 The `System.Data.SqlClient` provider supports named parameters as placeholders, as shown in the following example:
 
-````SQL
-SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName
-````
-
+{{source=CodeSnippets\CS\SQL\SelectContactsByNamedParams.sql}}
 With named parameters, the order in which the parameters are specified in the command's parameters collection is not important. However, you must ensure that the parameter names that you use in your SQL command correspond to the names of the parameters in the associated collection. The following example shows how to use named parameters in an SQL command for a `SqlDataSource` component that uses the `System.Data.SqlClient` provider:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=NamedParametersSnippet}}
@@ -39,10 +36,7 @@ With named parameters, the order in which the parameters are specified in the co
 
 The `System.Data.OleDb` and `System.Data.Odbc` providers support only positional parameters identified by the *'?'* character, as shown in the following example:
 
-````SQL
-SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?
-````
-
+{{source=CodeSnippets\CS\SQL\SelectContactsByPositionalParams.sql}}
 When you use the `System.Data.OleDb` and `System.Data.Odbc` providers with parameterized SQL query statements, the order in which you specify the parameter placeholders must match exactly the order of the parameter objects in the `Parameters` collection of the `SqlDataSource` component. Specifying names for the parameters in this case is only for informative purposes, these names are not used when binding the parameter values to the SQL query statement.
 
 The following example shows how to specify parameters for a `SqlDataSource` component that uses the `System.Data.OleDb` provider:

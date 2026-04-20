@@ -38,21 +38,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
     Here is the SQL query that selects the respective data:
 
-    ```SQL
-    SELECT
-        [dbo].[Products].[ProductID], 
-        [dbo].[Products].[ProductName], 
-        [dbo].[Products].[Discontinued], 
-        [dbo].[Products].[SupplierID], 
-        [dbo].[Products].[CategoryID], 
-        [dbo].[Products].[QuantityPerUnit], 
-        [dbo].[Products].[UnitPrice], 
-        [dbo].[Products].[UnitsInStock], 
-        [dbo].[Products].[UnitsOnOrder], 
-        [dbo].[Products].[ReorderLevel]
-    FROM [dbo].[Products]
-    ```
-
+    {{source=CodeSnippets\CS\SQL\SelectAllProducts.sql}}
 1. Set the **DataSource** of the report using the created SQLDataSource:
 
     ![Report DataSource ><](images/wrd-components-subreport-report-data-source.png)
@@ -75,22 +61,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
 1. Update the `SELECT` query of the added SQLDataSource and add a `WHERE` clause using an SQL parameter (which is mapped to the previously created report parameter):
 
-    ```SQL
-    SELECT
-        [dbo].[Products].[ProductID], 
-        [dbo].[Products].[ProductName], 
-        [dbo].[Products].[Discontinued], 
-        [dbo].[Products].[SupplierID], 
-        [dbo].[Products].[CategoryID], 
-        [dbo].[Products].[QuantityPerUnit], 
-        [dbo].[Products].[UnitPrice], 
-        [dbo].[Products].[UnitsInStock], 
-        [dbo].[Products].[UnitsOnOrder], 
-        [dbo].[Products].[ReorderLevel]
-    FROM [dbo].[Products]
-    WHERE [dbo].[Products].[CategoryID]=@sqlParamCategoryId
-    ```
-
+    {{source=CodeSnippets\CS\SQL\SelectProductsByCategoryParam.sql}}
     ![Update SQL Select ><](images/wrd-components-subreport-update-sql-select.png)
 
 1. Save the report (*ProductsReport.trdp*). You will use it as a child report.
@@ -101,15 +72,7 @@ The next video demonstrates how to create master-detail reports by using SubRepo
 
 1. Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-sources) filled with the `Northwind.Categories` table:
 
-    ```SQL
-    SELECT
-        [dbo].[Categories].[CategoryID], 
-        [dbo].[Categories].[CategoryName], 
-        [dbo].[Categories].[Description], 
-        [dbo].[Categories].[Picture]
-    FROM [dbo].[Categories]
-    ```
-
+    {{source=CodeSnippets\CS\SQL\SelectAllCategories.sql}}
 1. Select the report's Detail section and use the [Table Wizard](slug:web-report-designer-user-guide-components-tables) to add a table bound to the just added SQLDataSource:
 
     ![Create Categories Table ><](images/wrd-components-subreport-create-categories-table.png)

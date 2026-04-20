@@ -28,12 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-parametervalue,/embedding-re
 
 Represents a single value of the parameter available values.       
 
-````JSON 
-{
-	"name": "Sofia",
-	"value": 1
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiParameterValue.json region=ParameterValue}}
 
 >caption Fields
 

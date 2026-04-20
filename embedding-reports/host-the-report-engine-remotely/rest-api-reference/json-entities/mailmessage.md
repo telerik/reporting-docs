@@ -28,15 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-mailmessage,/embedding-repor
 
 Mail message
 
-````JSON
-{
-	"from": "john.doe@mycompany.com",
-	"to": "jane.doe@mycompany.com",
-	"cc": "john.doe.jr@mycompany.com",
-	"subject": "my mail subject",
-	"body": "my mail body",
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiMailMessage.json region=MailMessage}}
 
 >caption Fields
 

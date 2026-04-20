@@ -90,19 +90,11 @@ Alternatively, instead of using the item template, the Designer REST service and
 1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Add JavaScript dependencies to the **head** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
-   ```HTML
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
-   <script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-   <script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent}}
 
 1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the **body** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or in `App Razor` (Blazor Web App):
 
-   ```HTML
-   <script src="_content/Telerik.WebReportDesigner.Blazor/telerikWebReportDesignerInterop.js" defer></script>
-   ```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent2}}
 
 1. Use the following snippet to place the designer component in a razor page like `Pages/Index.razor`.
 

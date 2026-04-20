@@ -26,91 +26,54 @@ The following list describes the prerequisites for completing the tutorial:
 1. Create a new Angular application using the [Angular CLI](https://angular.dev/tools/cli).
 1. Enable Angular Animations in the project by following the [Enabling the animations module](https://angular.dev/guide/animations#enabling-the-animations-module) article. For example, the `provideAnimations` function can be invoked in the `bootstrapApplication` function call in `app.config.ts`:
 
-   ```TypeScript
-   import { ApplicationConfig } from '@angular/core';
-   import { provideRouter } from '@angular/router';
-   import { routes } from './app.routes';
-   import { provideAnimations } from '@angular/platform-browser/animations';
-
-   export const appConfig: ApplicationConfig = {
-   	providers: [provideRouter(routes), provideAnimations()]
-   };
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerStandaloneAppConfig.ts region=NativeAngularViewerStandaloneAppConfig}}
 
 1. Install the `Native Angular Report Viewer` NPM package with the following command:
 
-   ```powershell
-   npm install @progress/telerik-angular-native-report-viewer
-   ```
+	```powershell
+	npm install @progress/telerik-angular-native-report-viewer
+	```
 
-   > If you receive a _403 Forbidden Error_, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
-   >
-   > ```powershell
-   > npm login --registry=https://registry.npmjs.org --scope=@progress
-   > ```
+	> If you receive a _403 Forbidden Error_, you need to register and log in at [npmjs.com](https://www.npmjs.com/) before performing this step.
+	>
+	> ```powershell
+	> npm login --registry=https://registry.npmjs.org --scope=@progress
+	> ```
 
 1. Once installed, `import` the `ReportingAngularViewerModule` in one of your standalone components of choice - [Importing in Standalone components](https://angular.dev/guide/components/importing#standalone-components):
 
-   ```TypeScript
-   import { Component, ViewChild } from '@angular/core';
-   import { RouterOutlet } from '@angular/router';
-   import { ReportingAngularViewerComponent, ReportingAngularViewerModule } from '@progress/telerik-angular-native-report-viewer'
-
-   @Component({
-   	selector: 'app-root',
-   	standalone: true,
-   	imports: [RouterOutlet, ReportingAngularViewerModule],
-   	templateUrl: './app.component.html',
-   	styleUrl: './app.component.scss'
-   	})
-   	export class AppComponent {
-   	title = 'Native Angular Report Viewer Demo';
-
-   	@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\NativeAngularViewerStandaloneAppComponent.ts region=NativeAngularViewerStandaloneAppComponent}}
 
 1. Use the report viewer selector - `reporting-angular-viewer` in the component's template:
 
-   ```HTML
-   <reporting-angular-viewer
-   	#report
-   	[reportSource]="{
-   		report: 'Report Catalog.trdx',
-   		parameters: {}
-   	}"
-   	serviceUrl="https://demos.telerik.com/reporting/api/reports"
-   	viewMode="interactive"
-   	[keepClientAlive]="true">
-   </reporting-angular-viewer>
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerUseWithStandaloneComponents.html region=NativeAngularViewerSteps4}}
 
 1. Install the Angular `localize` package - [Add the localize package](https://angular.io/guide/i18n-common-add-package#add-the-localize-package). This is required for the report viewer's localization functionality
 
-   ```powershell
-   ng add @angular/localize
-   ```
+	```powershell
+	ng add @angular/localize
+	```
 
 1. Install one of the [Kendo UI for Angular themes](https://www.telerik.com/kendo-angular-ui/components/styling/), e.g. the [Default Theme](https://www.telerik.com/kendo-angular-ui/components/styling/theme-default/)
 
-   ```powershell
-   npm install --save @progress/kendo-theme-default
-   ```
+	```powershell
+	npm install --save @progress/kendo-theme-default
+	```
 
 1. Reference the theme in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
 
-   ```JSON
-   "styles": [
-   	"src/styles.scss",
-   	"node_modules/@progress/kendo-theme-default/dist/default-ocean-blue.scss"
-   ],
-   ```
+	```JSON
+	"styles": [
+		"src/styles.scss",
+		"node_modules/@progress/kendo-theme-default/dist/default-ocean-blue.scss"
+	],
+	```
 
 1. Run the application `start` script:
 
-   ```powershell
-   npm run start
-   ```
+	```powershell
+	npm run start
+	```
 
 ## See Also
 

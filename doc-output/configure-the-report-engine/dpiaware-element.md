@@ -34,18 +34,8 @@ The following snippet demonstrates how to set the current application's DPI awar
 
 XML-based configuration file:
 
-````XML
-<Telerik.Reporting>
-	<dpiAware dpiAwareness="PROCESS_SYSTEM_DPI_AWARE"></dpiAware>
-</Telerik.Reporting>
-````
-````JSON
-"telerikReporting": {
-	"dpiAware": {
-		"dpiAwareness": "PROCESS_SYSTEM_DPI_AWARE"
-	}
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\DpiAwareElementConfiguration.xml region=DpiAwareElementConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\DpiAwareConfig.json region=DpiAwareConfig}}
 
 ## DPI Awareness in Report Viewers
 

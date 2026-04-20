@@ -89,7 +89,7 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
 
         function loadScript(callback) {
         	const script = document.createElement("script");
-        	script.src = "https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js";
+        	script.src = "https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/js/kendo.all.min.js";
         	script.async = true;
         	script.onload = callback;
         	document.body.appendChild(script);

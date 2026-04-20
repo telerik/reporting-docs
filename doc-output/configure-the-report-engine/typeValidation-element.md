@@ -26,15 +26,8 @@ As Telerik Reporting consumes report definitions, they are a potential attack ve
 
 To prevent that, the Reporting engine validates the serialization types of the report definition and the expression types used in the report. The `typeValidation` element defines the configuration settings for this validation.
 
-```XML
-<typeValidation validateExpressionTypes="true" validateSerializationTypes="true" />
-```
-```JSON
-"typeValidation": {
-	"validateExpressionTypes": "true",
-	"validateSerializationTypes": "true"
-}
-```
+{{source=CodeSnippets\MvcCS\XmlConfiguration\TypeValidationElementOnlyConfiguration.xml region=TypeValidationElementOnlyConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\TypeValidationConfig.json region=TypeValidationStandalone}}
 
 ## Attributes and Elements
 
@@ -51,25 +44,8 @@ The following code example demonstrates how to disable the type validation perfo
 
 > warning The type validation of the Reporting engine is an important security feature, and disabling it can make you vulnerable to attacks! Proceed at your own risk, only if you are confident in the security of your environment.
 
-```XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<typeValidation validateExpressionTypes="false" validateSerializationTypes="false" />
-	</Telerik.Reporting>
-</configuration>
-```
-```JSON
-"telerikReporting": {
-	"typeValidation": {
-		"validateExpressionTypes": "false",
-		"validateSerializationTypes": "false"
-	}
-}
-```
+{{source=CodeSnippets\MvcCS\XmlConfiguration\TypeValidationFullConfiguration.xml}}
+{{source=CodeSnippets\Blazor\Docs\JSON\TypeValidationFullConfig.json region=TypeValidationFull}}
 
 > When adding the `Telerik.Reporting` section manually, do not forget to register it in the `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: _Configuration system failed to initialize_.
 

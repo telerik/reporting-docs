@@ -28,32 +28,7 @@ previous_url: /telerik-reporting-rest-json-entities-documentinfo,/embedding-repo
 
 Document info indicating the status of the document resource.
 
-````JSON
-{
-	"documentReady": true,
-	"pageCount": 10,
-	"documentMapAvailable": false,
-	"BookmarkNodes": [
-		{
-			"id": "Bikes",
-			"text": "Bikes",
-			"page": 3,
-			"items": [
-				{
-				"id": "Bikes",
-				"text": "Bikes",
-				"page": 3,
-				}
-			]
-		},
-		{
-			"id": "Bikes",
-			"text": "Bikes",
-			"page": 3,
-		},
-	],
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JSON\RestApiDocumentInfo.json region=DocumentInfo}}
 
 >caption Fields
 

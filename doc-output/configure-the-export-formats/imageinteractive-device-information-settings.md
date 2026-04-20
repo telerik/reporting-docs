@@ -41,44 +41,8 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 XML-based configuration file:
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<extensions>
-			<render>
-				<extension name="IMAGEInteractive">
-					<parameters>
-						<parameter name="OutputFormat" value="PNG"/>
-						<parameter name="TextRenderingHint" value="AntiAliasGridFit"/>
-					</parameters>
-				</extension>
-			</render>
-		</extensions>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"extensions": [
-		{
-			"name": "IMAGEInteractive",
-			"parameters": [
-				{
-					"Name": "OutputFormat",
-					"Value": "PNG"
-				},
-				{
-					"Name": "TextRenderingHint",
-					"Value": "AntiAliasGridFit"
-				}
-			]
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\ImageInteractiveDeviceInfoConfiguration.xml region=ImageInteractiveDeviceInfoConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\ImageInteractiveDeviceInfoConfig.json region=ImageInteractiveDeviceInformation}}
 
 ## See Also
 

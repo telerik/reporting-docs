@@ -20,26 +20,7 @@ Very often the JSON data returned from a web service contains a single parent ob
 
 > caption Example
 
-```JSON
-{
-	"store": {
-		"book": [
-			{
-				"category": "reference",
-				"author": "Nigel Rees",
-				"title": "Sayings of the Century",
-				"price": 8.95
-			},
-			{
-				"category": "fiction",
-				"author": "Evelyn Waugh",
-				"title": "Sword of Honour",
-				"price": 12.99
-			}
-		]
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\JsonPathBookStore.json region=JsonPathBookStore}}
 
 > caption JSONPath
 
@@ -47,22 +28,7 @@ Very often the JSON data returned from a web service contains a single parent ob
 
 > caption Result
 
-```JSON
-[
-	{
-		"category": "reference",
-		"author": "Nigel Rees",
-		"title": "Sayings of the Century",
-		"price": 8.95
-	},
-	{
-		"category": "fiction",
-		"author": "Evelyn Waugh",
-		"title": "Sword of Honour",
-		"price": 12.99
-	}
-]
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\JsonPathFilterResult.json region=JsonPathFilterResult}}
 
 ## JSONPath Filter Arrays
 
@@ -70,26 +36,7 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 
 > caption Example
 
-```JSON
-{
-	"store": {
-		"book": [
-			{
-				"category": "reference",
-				"author": "Nigel Rees",
-				"title": "Sayings of the Century",
-				"price": 8.95
-			},
-			{
-				"category": "fiction",
-				"author": "Evelyn Waugh",
-				"title": "Sword of Honour",
-				"price": 12.99
-			}
-		]
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\JsonPathBookStore.json region=JsonPathBookStore}}
 
 > caption JSONPath
 
@@ -97,25 +44,6 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 
 > caption Result
 
-```JSON
-{
-   "store":{
-      "book":[
-         {
-            "category":"reference",
-            "price":8.95
-         },
-         {
-            "category":"fiction",
-            "price":5.99
-         },
-         {
-            "category":"fiction",
-            "price":9.50
-         }
-      ]
-   }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\JsonPathFilteredBookStore.json region=JsonPathFilteredBookStore}}
 
 > tip When testing for equality in JSONPath filter, use `==` for equality and `!=` for inequality.

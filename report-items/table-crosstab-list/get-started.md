@@ -44,24 +44,7 @@ To add the Crosstab report item to your report:
 
    For the purposes of this demo, you will use the following query from the **AdventureWorks** sample database:
 
-   ```SQL
-   SELECT
-   	[Production].[Product].[Name] AS 'ProductName',
-   	[Production].[ProductCategory].[Name] AS 'ProductCategory',
-   	[Production].[ProductSubcategory].[Name] AS 'ProductSubCategory',
-   	[Sales].[SalesOrderDetail].[LineTotal],
-   	[Sales].[SalesOrderHeader].[OrderDate]
-   FROM (((([Sales].[SalesOrderDetail]
-   	INNER JOIN [Sales].[SalesOrderHeader]
-   	ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID])
-   	INNER JOIN [Production].[Product]
-   	ON [Sales].[SalesOrderDetail].[ProductID] = [Production].[Product].[ProductID])
-   	INNER JOIN [Production].[ProductSubcategory]
-   	ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID])
-   	INNER JOIN [Production].[ProductCategory]
-   	ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID])
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectProductSalesByCategoryDate.sql}}
 1. Preview the returned data and close the SqlDataSource wizard.
 
 ## Configuring the Crosstab

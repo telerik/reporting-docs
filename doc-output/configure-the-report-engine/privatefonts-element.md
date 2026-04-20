@@ -44,19 +44,7 @@ The private fonts are used for all rendering extensions. Still the font renderin
 
 As with most types of software, font files are licensed, rather than sold, and licenses that govern the use of fonts vary from vendor to vendor. As a developer it is your responsibility to ensure that you have the required license rights for any font you use as private font, or otherwise redistribute.
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<privateFonts>
-			<add />
-		</privateFonts>
-	</Telerik.Reporting>	
-</configuration>
-````
-
+{{source=CodeSnippets\MvcCS\XmlConfiguration\PrivateFontsElementConfiguration.xml region=PrivateFontsElementConfiguration}}
 ## Attributes and Elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -81,41 +69,8 @@ The following sections describe attributes, child elements, and parent elements.
 
 The following example demonstrates how to configure the reporting engine to use Ubuntu and Courier New fonts. The fonts are part of the project with the following properties:
 
-````XML
-<?xml version="1.0"?>
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-	<Telerik.Reporting>
-		<privateFonts>
-			<add fontFamily="Courier New" path="CourBI.ttf" fontStyle="Bold, Italic" />
-			<add fontFamily="ubuntu" path="Ubuntu-R.ttf" />
-			<add fontFamily="Courier New" path="CourI.ttf" fontStyle="Italic" />
-		</privateFonts>
-	</Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-	"privateFonts": [
-		{
-			"fontFamily": "ubuntu",
-			"path": "Ubuntu-R.ttf",
-		},
-		{
-			"fontFamily": "Courier New",
-			"path": "CourI.ttf",
-			"fontStyle": "Italic"
-		},
-		{
-			"fontFamily": "CourBI",
-			"path": "CourBI.ttf",
-			"fontStyle": "Bold,Italic"
-		}
-	]
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\PrivateFontsElementConfiguration_2.xml}}
+{{source=CodeSnippets\Blazor\Docs\JSON\PrivateFontsConfig.json region=PrivateFontsConfig}}
 
 ## See Also
 

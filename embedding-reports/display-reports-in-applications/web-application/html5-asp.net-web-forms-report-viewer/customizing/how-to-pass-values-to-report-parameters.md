@@ -38,192 +38,52 @@ To give an example, we will use the Invoice report from our examples and will up
 
 1. Add a connectionStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's `web.config` file. For example:
 
-    ```XML
-    <connectionStrings>
-    	<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-    		connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-    		providerName="System.Data.SqlClient" />
-    </connectionStrings>
-    ```
+	```XML
+	<connectionStrings>
+		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+			connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+			providerName="System.Data.SqlClient" />
+	</connectionStrings>
+	```
 
-    At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at **[host]/InvoiceParameters.aspx** without any modifications.
+	At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at **[host]/InvoiceParameters.aspx** without any modifications.
 
-1.  Add code for updating the `ReportSource.Parameters` collection in the code behind:
+1. Add code for updating the `ReportSource.Parameters` collection in the code behind:
 
-    ```C#
-    protected void Page_Load(object sender, EventArgs e)
-    {
-    	if (!IsPostBack)
-    	{
-    		this.reportViewer1.ReportSource.Parameters.Add("OrderNumber", this.invoiceId.Value);
-    	}
-    }
-    ```
-    {{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
+	```C#
+	protected void Page_Load(object sender, EventArgs e)
+	{
+		if (!IsPostBack)
+		{
+			this.reportViewer1.ReportSource.Parameters.Add("OrderNumber", this.invoiceId.Value);
+		}
+	}
+	```
+	{{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
 
-1.  Add the required scripts and stylesheets:
+1. Add the required scripts and stylesheets:
 
-    ```HTML
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
-    	<title>Telerik HTML5 Web Forms Report Viewer Form</title>
-    	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters}}
 
-    	<style>
-    		#reportViewer1 {
-    			position: absolute;
-    			inset: 5px;
-    			overflow: hidden;
-    			font-family: Verdana, Arial;
-    		}
-    	</style>
-    </head>
-    ```
+1. Add the custom parameter UI - a dropdown selector with a few values:
 
-1.  Add the custom parameter UI - a dropdown selector with a few values:
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters2}}
 
-    ```HTML
-    <div id="invoiceIdSelector" runat="server">
-    	<label for="invoiceId">Invoices</label>
-    	<select id="invoiceId" title="Select the Invoice ID" runat="server">
-    		<option value="SO51081">SO51081</option>
-    		<option value="SO51082" selected="selected">SO51082</option>
-    		<option value="SO51083">SO51083</option>
-    	</select>
-    </div>
-    ```
+1. Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
 
-1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters3}}
 
-    ```HTML
-    <telerik:ReportViewer ID="reportViewer1" Width="1300px" Height="900px" EnableAccessibility="false" runat="server">
-    	<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, Charp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-    	</ReportSource>
-    </telerik:ReportViewer>
-    ```
+1. Add code that updates the ReportSource parameters collection with the selected **Invoice Id** from the dropdown box:
 
-1.  Add code that updates the ReportSource parameters collection with the selected **Invoice Id** from the dropdown box:
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters4}}
 
-	````HTML
-	<telerik:ReportViewer ID="reportViewer1" Width="1300px" Height="900px" EnableAccessibility="false" runat="server">
-		<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-		</ReportSource>
-	</telerik:ReportViewer>
-	````
+1. The HTML page that we have just created should looks like this:
 
-1.  The HTML page that we have just created should looks like this:
-
-    ```HTML
-    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvoiceParameters.aspx.cs" Inherits="WebFormsDocumentation.InvoiceParameters" %>
-    //for VB <%@ Page Language="vb" AutoEventWireup="false" CodeBehind="InvoiceParameters.aspx.vb" Inherits="WebFormsDocVB._InvoiceParameters" %>
-    <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
-
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
-    	<title>Telerik HTML5 Web Forms Report Viewer Form</title>
-    	<link href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
-
-    	<style>
-    		#reportViewer1 {
-    			position: absolute;
-    			inset: 5px;
-    			overflow: hidden;
-    			font-family: Verdana, Arial;
-    		}
-    	</style>
-    </head>
-    <body>
-    	<form runat="server">
-    		<div id="invoiceIdSelector" runat="server">
-    			<label for="invoiceId">Invoices</label>
-    			<select id="invoiceId" title="Select the Invoice ID" runat="server">
-    				<option value="SO51081">SO51081</option>
-    				<option value="SO51082" selected="selected">SO51082</option>
-    				<option value="SO51083">SO51083</option>
-    			</select>
-    		</div>
-    		<telerik:ReportViewer
-    			ID="reportViewer1"
-    			Width="1300px"
-    			Height="900px"
-    			EnableAccessibility="false"
-    			runat="server">
-    			<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, Charp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-    			</ReportSource>
-    		</telerik:ReportViewer>
-    	</form>
-    	<script type="text/javascript">
-    			$('#invoiceId').change(function () {
-    				var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-    				reportViewer.reportSource({
-    					report: reportViewer.reportSource().report,
-    					parameters: { OrderNumber: $(this).val() }
-    				});
-    			});
-    	</script>
-    </body>
-    </html>
-    ```
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_01.aspx region=WebFormsViewerPassValuesToReportParameters5}}
 
 1. The HTML page that we have just created should look like this:
 
-	````HTML
-	<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvoiceParameters.aspx.cs" Inherits="WebFormsDocumentation.InvoiceParameters" %>
-	//for VB <%@ Page Language="vb" AutoEventWireup="false" CodeBehind="InvoiceParameters.aspx.vb" Inherits="WebFormsDocVB._InvoiceParameters" %>
-	<%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
-	
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head runat="server">
-		<title>Telerik HTML5 Web Forms Report Viewer Form</title>
-		<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
-		
-		<style>
-			#reportViewer1 {
-				position: absolute;
-				inset: 5px;
-				overflow: hidden;
-				font-family: Verdana, Arial;
-			}
-		</style>
-	</head>
-	<body>
-		<form runat="server">
-			<div id="invoiceIdSelector" runat="server">
-				<label for="invoiceId">Invoices</label>
-				<select id="invoiceId" title="Select the Invoice ID" runat="server">
-					<option value="SO51081">SO51081</option>
-					<option value="SO51082" selected="selected">SO51082</option>
-					<option value="SO51083">SO51083</option>
-				</select>
-			</div>
-			<telerik:ReportViewer
-				ID="reportViewer1"
-				Width="1300px"
-				Height="900px"
-				EnableAccessibility="false"
-				runat="server">
-				<ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-				</ReportSource>>
-			</telerik:ReportViewer>
-		</form>
-		<script type="text/javascript">
-				$('#invoiceId').change(function () {
-					var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-					reportViewer.reportSource({
-						report: reportViewer.reportSource().report,
-						parameters: { OrderNumber: $(this).val() }
-					});
-				});
-		</script>
-	</body>
-	</html>
-	````
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_02.aspx region=WebFormsViewerPassValuesToReportParameters6}}
 
 
 1. Run the project and verify that the __Invoice Id__ selection really updates the report.

@@ -56,12 +56,7 @@ When complicated logic should be applied or.NET framework routines need to be ut
 1. Add an SqlDataSource connected to **AdventureWorks** sample database and set it as a report's datasource.
 1. Put the following text in the SqlDataSource's SelectCommand value:
 
-   ```SQL
-   select Contact.*
-   from Person.Contact
-   where Contact.AdditionalContactInfo is not null
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectContactsWithAdditionalInfo.sql}}
 1. Place two textboxes on your report’s detail section.
 1. Set the first textbox's expression to
 
@@ -94,13 +89,7 @@ The following screenshot shows the expected report output that should be created
 1. Create or open an existing report.
 1. Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
 
-   ```SQL
-   select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
-   from Production.Product
-   where Product.Color is not null
-   order by Product.Name, Product.Color
-   ```
-
+   {{source=CodeSnippets\CS\SQL\SelectTop100ColoredProducts.sql}}
 1. Place two textboxes on your report's detail section and set their expressions to
 
    `= Fields.Name`

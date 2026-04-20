@@ -35,41 +35,11 @@ __`<appData>` element__
 
 ### Windows
 
-````XML
-<configuration>
-  <configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-    <Telerik.Reporting>
-        <appData path="C:\temp" />
-    </Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-  "appData": {
-    "path": "C:\\temp"
-  }
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration.xml region=AppDataElementConfiguration}}
+{{source=CodeSnippets\Blazor\Docs\JSON\AppDataConfig.json region=AppDataWindows}}
 
 ### Unix(Linux/Mac):
 
-````XML
-<configuration>
-	<configSections>
-		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-	</configSections>
-    <Telerik.Reporting>
-        <appData path="/tmp/reportingAppData" />
-    </Telerik.Reporting>
-</configuration>
-````
-````JSON
-"telerikReporting": {
-  "appData": {
-    "path": "/tmp/reportingAppData"
-  }
-}
-````
+{{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration_2.xml region=AppDataElementConfiguration_2}}
+{{source=CodeSnippets\Blazor\Docs\JSON\AppDataLinuxConfig.json region=AppDataLinux}}
 

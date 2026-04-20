@@ -86,6 +86,7 @@ function createEditor(placeholder, options) {
 }
 ```
 
+{% raw %}
 ```JavaScript
 // Registering a custom parameter editor
 <TelerikReportViewer
@@ -94,6 +95,7 @@ function createEditor(placeholder, options) {
   parameterEditors={[{ match, createEditor }]}
 />
 ```
+{% endraw %}
 
 
 ## ParameterEditorInstance
@@ -128,6 +130,7 @@ Defines options for configuring report parameter editors in the React Report Vie
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Specify editor types for report parameters
 <TelerikReportViewer
@@ -141,6 +144,7 @@ Defines options for configuring report parameter editors in the React Report Vie
   }}
 />
 ```
+{% endraw %}
 
 
 ## ReportParameters
@@ -177,6 +181,7 @@ The authentication method depends on the Report Server version:
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Complete initialization with Report Server for .NET using Token authentication
 <TelerikReportViewer
@@ -194,6 +199,7 @@ The authentication method depends on the Report Server version:
   }}
 />
 ```
+{% endraw %}
 
 
 ## ReportSource
@@ -209,6 +215,7 @@ Configuration object that identifies the report to be displayed and provides ini
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Using ReportSource with the React Report Viewer
 <TelerikReportViewer
@@ -222,6 +229,7 @@ Configuration object that identifies the report to be displayed and provides ini
   }}
 />
 ```
+{% endraw %}
 
 
 ## ReportViewerCommand
@@ -260,6 +268,7 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Enable Send Email with default values and PDF as the default format
 <TelerikReportViewer
@@ -276,7 +285,9 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
   }}
 />
 ```
+{% endraw %}
 
+{% raw %}
 ```JavaScript
 // Basic email configuration with minimal options
 <TelerikReportViewer
@@ -288,4 +299,5 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
   }}
 />
 ```
+{% endraw %}
 

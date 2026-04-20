@@ -19,6 +19,7 @@ Called when an error occurs. Receives two parameters: `e` (the event object) and
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Error handler
 <TelerikReportViewer
@@ -29,6 +30,7 @@ Called when an error occurs. Receives two parameters: `e` (the event object) and
   }}
 />
 ```
+{% endraw %}
 
 
 ## exportBegin
@@ -37,6 +39,7 @@ Called before exporting the report. Receives two parameters: `e` (the event obje
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Export begin handler
 <TelerikReportViewer
@@ -47,6 +50,7 @@ Called before exporting the report. Receives two parameters: `e` (the event obje
   }}
 />
 ```
+{% endraw %}
 
 
 ## exportEnd
@@ -55,6 +59,7 @@ Called after exporting the report. Receives two parameters: `e` (the event objec
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Export end handler
 <TelerikReportViewer
@@ -66,6 +71,7 @@ Called after exporting the report. Receives two parameters: `e` (the event objec
   }}
 />
 ```
+{% endraw %}
 
 
 ## interactiveActionEnter
@@ -74,6 +80,7 @@ Called when entering an interactive action area. Receives two parameters: `e` (t
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Interactive action enter handler
 <TelerikReportViewer
@@ -86,6 +93,7 @@ Called when entering an interactive action area. Receives two parameters: `e` (t
   }}
 />
 ```
+{% endraw %}
 
 
 ## interactiveActionExecuting
@@ -94,6 +102,7 @@ Called before an interactive action executes, allowing cancellation. Receives tw
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Interactive action executing handler
 <TelerikReportViewer
@@ -107,6 +116,7 @@ Called before an interactive action executes, allowing cancellation. Receives tw
   }}
 />
 ```
+{% endraw %}
 
 
 ## interactiveActionLeave
@@ -115,6 +125,7 @@ Called when leaving an interactive action area. Receives two parameters: `e` (th
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Interactive action leave handler
 <TelerikReportViewer
@@ -127,6 +138,7 @@ Called when leaving an interactive action area. Receives two parameters: `e` (th
   }}
 />
 ```
+{% endraw %}
 
 
 ## pageReady
@@ -135,6 +147,7 @@ Called after a page of the report is ready. Receives two parameters: `e` (the ev
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Page ready handler
 <TelerikReportViewer
@@ -145,6 +158,7 @@ Called after a page of the report is ready. Receives two parameters: `e` (the ev
   }}
 />
 ```
+{% endraw %}
 
 
 ## printBegin
@@ -153,6 +167,7 @@ Called before printing the report. Receives two parameters: `e` (the event objec
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Print begin handler
 <TelerikReportViewer
@@ -163,6 +178,7 @@ Called before printing the report. Receives two parameters: `e` (the event objec
   }}
 />
 ```
+{% endraw %}
 
 
 ## printEnd
@@ -171,6 +187,7 @@ Called after printing the report. Receives two parameters: `e` (the event object
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Print end handler
 <TelerikReportViewer
@@ -181,6 +198,7 @@ Called after printing the report. Receives two parameters: `e` (the event object
   }}
 />
 ```
+{% endraw %}
 
 
 ## ready
@@ -189,6 +207,7 @@ A callback function that is called when the viewer content has been loaded from 
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Ready callback
 <TelerikReportViewer
@@ -197,6 +216,7 @@ A callback function that is called when the viewer content has been loaded from 
   ready={() => console.log("Report viewer is ready")}
 />
 ```
+{% endraw %}
 
 
 ## renderingBegin
@@ -205,6 +225,7 @@ Called before rendering the report (preview only, not for export or print). Rece
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Rendering begin handler
 <TelerikReportViewer
@@ -217,6 +238,7 @@ Called before rendering the report (preview only, not for export or print). Rece
   }}
 />
 ```
+{% endraw %}
 
 
 ## renderingEnd
@@ -225,6 +247,7 @@ Called after rendering the report. Receives two parameters: `e` (the event objec
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Rendering end handler
 <TelerikReportViewer
@@ -236,6 +259,7 @@ Called after rendering the report. Receives two parameters: `e` (the event objec
   }}
 />
 ```
+{% endraw %}
 
 
 ## sendEmailBegin
@@ -244,6 +268,7 @@ Called before the report is exported and the E-mail message is sent. Receives tw
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Send email begin handler
 <TelerikReportViewer
@@ -254,6 +279,7 @@ Called before the report is exported and the E-mail message is sent. Receives tw
   }}
 />
 ```
+{% endraw %}
 
 
 ## sendEmailEnd
@@ -262,6 +288,7 @@ Called after the report is exported and before the E-mail message is sent. Recei
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Send email end handler
 <TelerikReportViewer
@@ -273,6 +300,7 @@ Called after the report is exported and before the E-mail message is sent. Recei
   }}
 />
 ```
+{% endraw %}
 
 
 ## updateUi
@@ -281,6 +309,7 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the ev
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Update UI handler
 <TelerikReportViewer
@@ -291,6 +320,7 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the ev
   }}
 />
 ```
+{% endraw %}
 
 
 ## viewerToolTipOpening
@@ -299,6 +329,7 @@ Called before a tooltip is opened, allowing cancellation. Receives two parameter
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Viewer tooltip opening handler
 <TelerikReportViewer
@@ -310,4 +341,5 @@ Called before a tooltip is opened, allowing cancellation. Receives two parameter
   }}
 />
 ```
+{% endraw %}
 

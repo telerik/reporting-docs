@@ -179,6 +179,7 @@ Reloads/refreshes the current report.
 
 ### Example
 
+{% raw %}
 ```JavaScript
 // Using ref to call refreshReport
 const reportViewerRef = useRef();
@@ -186,6 +187,7 @@ const reportViewerRef = useRef();
 // ...
 reportViewerRef.current.refreshReport();
 ```
+{% endraw %}
 
 
 ## setAccessibilityKeyMap

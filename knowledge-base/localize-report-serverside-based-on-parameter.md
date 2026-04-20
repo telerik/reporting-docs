@@ -64,7 +64,7 @@ The idea is to introduce a static string property, set its value in the `CreateI
 
 >note The ReportsController gets instantiated on each request. Therefore, if the variable holding the culture name is not static, the value will be lost between the requests.
 
-If you need to localize also the Text specifying the names of the Report Parameter editors in the Html5 Viewers, you need to use the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event to select the parameter editor's element and change its text based on the selected culture. Here is a sample jQuery code for the event handler:
+If you need to localize also the Text specifying the names of the Report Parameter editors in the Html5 Viewers, you need to use the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#renderingend) event to select the parameter editor's element and change its text based on the selected culture. Here is a sample jQuery code for the event handler:
 
 ````JavaScript
 renderingEnd: function (e, args) {

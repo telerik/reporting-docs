@@ -29,7 +29,7 @@ Let's start with some theory before showing two basic examples.
 
 ## How does the REST Service know which report definition to use and what parameter values to apply?
 
-The Report Viewer sends a [client-side reportSource](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods) to the REST Service. It is an object with two properties described next:
+The Report Viewer sends a [client-side reportSource](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods#reportsource) to the REST Service. It is an object with two properties described next:
 
 * The __string__ property __report__
 

@@ -36,7 +36,7 @@ $(function () {
 });
 ````
 
-For a complete list of event handler options please check [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events).
+For a complete list of event handler options please check [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview#options) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events).
 
 The report viewer passes one argument to the event handler, the `Event` object. This is the [Event](https://api.jquery.com/category/events/event-object/) object implemented by the [jQuery](https://jquery.com/) library. The sender of the event is passed through [jQuery's event.data](https://api.jquery.com/event.data/) - `e.data.sender` and for all events, this is the report viewer.
 

@@ -54,6 +54,6 @@ For more information please refer to the related articles about each report view
 |  |  |
 | ------ | ------ |
  Event Handler |
-| [InteractiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events)|
-| [InteractiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events)|
-| [InteractiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events)|
+| [InteractiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionexecuting)|
+| [InteractiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionenter)|
+| [InteractiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionleave)|

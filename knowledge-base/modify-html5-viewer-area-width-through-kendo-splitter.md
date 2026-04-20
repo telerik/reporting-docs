@@ -33,7 +33,7 @@ In the Telerik HTML5 Report Viewer, we have added a [Kendo Splitter](https://dem
 
 ## Solution
   
-To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) or [pageReady](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event of the viewer:   
+To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#renderingend) or [pageReady](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#pageready) event of the viewer:   
   
 ### Solution for Document Map
 

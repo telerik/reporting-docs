@@ -103,5 +103,5 @@ These adjustments will improve the layout and visual feedback in the parameters 
 - [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 - [Kendo Widgets Requirements](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#kendo-widgets-requirements)
 - [ViewerInitializing Event](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization#viewerinitializing)
-- [PageReady Event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events)
+- [PageReady Event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#pageready)
 - [CSS Flexbox Container](https://www.w3schools.com/css/css3_flexbox_container.asp)

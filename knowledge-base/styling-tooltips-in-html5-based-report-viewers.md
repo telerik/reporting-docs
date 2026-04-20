@@ -108,7 +108,7 @@ You can also provide styling for the tooltips directly on the page via the [styl
 
 ### Styling the tooltips at runtime using JavaScript
 
-Using the [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event, we can make changes to the tooltip right before it is displayed.
+Using the [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#viewertooltipopening) event, we can make changes to the tooltip right before it is displayed.
 
 For example, if we wish to display a multi-line text in the tooltip's `text` element, the `\n` characters will have to be replaced with the `<br />` element. This is where the event will come in handy, for example:
 
@@ -146,7 +146,7 @@ In case you need a custom solution for your tooltips, you can create your own on
 
 If the above links become non-functional, consider replacing them with working ones. Here is a link to the [jQuery UI – Releases](https://releases.jquery.com/ui/).
 
-- Then you need to subscribe to an appropriate event that will be raised from the report viewer. In this case, the [pageReady()](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event is suitable, because all the content will be ready and we can select the report items by their data-tooltip attributes. We will also add a handler to the [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event and explain its usage later:
+- Then you need to subscribe to an appropriate event that will be raised from the report viewer. In this case, the [pageReady()](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event is suitable, because all the content will be ready and we can select the report items by their data-tooltip attributes. We will also add a handler to the [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#viewertooltipopening) event and explain its usage later:
 
   ```HTML
   <script type="text/javascript">

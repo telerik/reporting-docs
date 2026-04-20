@@ -44,7 +44,7 @@ There are two main reasons for this error. To identify that, check the response 
 		+ In ASP.NET as explained in the articles under [ASP.NET Web API Implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview)
 		+ In ASP.NET Core as explained in the articles under [ASP.NET Core Web API Implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview).
 
-	* Check the viewer's [serviceUrl](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) and adjust the relative path
+	* Check the viewer's [serviceUrl](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview#options) and adjust the relative path
 	* Test adding `~` or remove the first `/` - [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN)
 	* The issue might be related to WebAPI controllers duplicating routes, which can be avoided by [changing the registered by default Telerik Reporting REST Web API routes](slug:how-to-change-reporting-rest-web-api-routes-registered-by-default).
 

@@ -46,7 +46,7 @@ When the Report hierarchy is deeper (has more levels) than the number of levels 
 
 > When using a report book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the report book, you need to configure a [Report Book Table of Contents](slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
 
-> note TOC navigational links are handled internally as [Bookmark Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book), otherwise the TOC navigational links may not work correctly.
+> note TOC navigational links are handled internally as [Bookmark Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book); otherwise, the TOC navigational links may not work correctly.
 
 ### Levels
 
@@ -88,7 +88,7 @@ You can add a table of contents to the report and click on entries in the table 
 1. In **Design view**, make sure the Properties pane is visible. Select the report item you want to add to the table of contents. In the Properties pane, type the text that you want to appear in the table of contents in the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property, or enter an expression that evaluates to a text.
 1. Repeat step 1 for every report item you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.
-1. Click **Preview**. The report runs and the table of contents displays the text you created. Click any link to jump to the report page and the exact location of that item.
+1. Click **Preview**. The report runs, and the table of contents displays the text you created. Click any link to jump to the report page and the exact location of that item.
 
 > note Report items positioned in the Page Header/Page Footer section of the report cannot be used to create entries in the table of contents. Setting the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property of such an item will have no effect.
 
@@ -100,9 +100,9 @@ You can add a table of contents to the report and click on entries in the table 
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
-1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
+1. In **Design view**, right-click outside the report sections, select View, and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Select a report group that you want to appear in the table of contents. The properties for the selected group appear in the **Properties** pane.
-1. In the [TocText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
+1. In the [TocText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically, for a group, the expression you type should match the group expression.
 1. Click **OK**.
 1. Repeat steps 1-4 for every group you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.
@@ -112,10 +112,10 @@ You can add a table of contents to the report and click on entries in the table 
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
-1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
+1. In **Design view**, right-click outside the report sections, select View, and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the **Group Explorer** shows the respective groups.
 1. Select a group you want to add to the table of contents, right-click it, and select **Group Properties**. The properties for the selected group appear in the **Edit Table Group** dialog.
-1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
+1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically, for a group, the expression you type should match the group expression.
 1. Click **OK**.
 1. Repeat steps 1-5 for every group you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.

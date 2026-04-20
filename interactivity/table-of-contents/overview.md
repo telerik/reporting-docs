@@ -40,23 +40,25 @@ The table of contents definition contains a title and a hierarchy of levels. The
 
 The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property contains the properties and styles for each TOC level.
 
+The properties and styles of a particular level in the Levels collection will be applied only to TOC entries for report sections/items/groups having the same level.
+
+> When using a Report Book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the Report Book, you need to configure a [Report Book Table of Contents](slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
+
+> note TOC navigational links are handled internally as [Bookmark Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book); otherwise, the TOC navigational links may not work correctly.
+
+### Hierarchy
+
 #### Default TOC Hierarchy
 
 The default hierarchy of levels corresponds to the hierarchical structure of the report sections, items, and groups for which the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property is set.
+
+When the Report hierarchy is deeper (has more levels) than the number of levels defined in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection, the style of the last TOC level in the collection will be applied to the remaining TOC entries.
 
 #### Controlled TOC Hierarchy
 
 Starting with [Telerik Reporting 2026 Q1 (20.0.26.422)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-422)), the report authors can explicitly specify the level at which report sections/items/groups appear in the Table of Contents, instead of relying solely on the report hierarchy. This provides greater control over TOC structure and enables consistent, meaningful outlines across Reports and Report Books. The report creators can promote/demote specific items, align TOC depth with business semantics, and get consistent TOC levels across differently structured reports.
 
 The functionality provides explicit TOC level control through the optional property `TocLevel` for report items, sections, and groups so authors can override the level at which an element appears in the Table of Contents, instead of relying solely on the automatic mapping from report hierarchy to TOC levels. The Reporting Engine respects the optional `TocLevel` value (or expression) on supported elements and maps them to the appropriate level definition in the TocSection, including in Report Book TOCs.
-
-The properties and styles of a particular level in the Levels collection will be applied only to TOC entries for report sections/items/groups having the same level in the Report hierarchy.
-
-When the Report hierarchy is deeper (has more levels) than the number of levels defined in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection, the style of the last TOC level in the collection will be applied to the remaining TOC entries.
-
-> When using a Report Book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the Report Book, you need to configure a [Report Book Table of Contents](slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
-
-> note TOC navigational links are handled internally as [Bookmark Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book); otherwise, the TOC navigational links may not work correctly.
 
 ### Levels
 

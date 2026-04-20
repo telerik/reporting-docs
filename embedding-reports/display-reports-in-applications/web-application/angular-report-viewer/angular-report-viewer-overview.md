@@ -54,7 +54,7 @@ The Angular viewer is based on the [HTML5 Report Viewer](slug:telerikreporting/u
 
 The Angular Report Viewer can display both `declarative` and `type` [report definitions](slug:on-telerik-reporting)#report-definition). All report definitions must be accessible server-side by the Reporting REST Service.
 
-Report definitions created at runtime, fetched from custom storage, may also be displayed in the viewer. This requires a [Custom IReportSourceResolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver) associating the [client-side ReportSource](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()) `Report` property with the [server-side ReportSource](slug:telerikreporting/designing-reports/report-sources/overview#available-report-sources) passed to the Reporting engine.
+Report definitions created at runtime, fetched from custom storage, may also be displayed in the viewer. This requires a [Custom IReportSourceResolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver) associating the [client-side ReportSource](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods) `Report` property with the [server-side ReportSource](slug:telerikreporting/designing-reports/report-sources/overview#available-report-sources) passed to the Reporting engine.
 
 ## Preview, Export, Print, and Share Reports
 
@@ -69,7 +69,7 @@ The Parameters Area provides an intuitive UI for user interactions. The HTML5-ba
 List of the default widgets for different report parameter types:
 
 - DateTime: [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview). Even though the time part cannot be selected via the Kendo UI DatePicker widget UI, it is still passed to the report engine as a default time part (`12:00:00 AM`) with the `DateTime` value. If needed, the viewer can be [customized](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview) to use a [Kendo UI DateTimePicker](https://demos.telerik.com/kendo-ui/datetimepicker/index) or another widget, which allows selecting the time part explicitly. When a `DateTime` value is selected in the parameters area of the HTML5 Report Viewer, it is interpreted as UTC `DateTime` on the server where the report is processed and rendered. For example, entering 1/1/2000 12:00:00 AM in a DateTimePicker report parameter widget and rendering the report will result in the following `DateTime` value on the server and in the rendered report - 1/1/2000 12:00:00 AM considered as a UTC time.
-- Integer | Float | String: [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview). The default editor could be easily changed to [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) (for single select parameters) and [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) (for multi-select parameters) editors. For more information, check **parameters** option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) article.
+- Integer | Float | String: [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview). The default editor could be easily changed to [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) (for single select parameters) and [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) (for multi-select parameters) editors. For more information, check **parameters** option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) article.
 
 When one or more [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have their `Visible` property turned on, a parameter area is shown as part of the report viewer. This helps the report developer to easily provide input methods for the end users. Based on the type of parameters, a suitable editor UI is created.
 
@@ -85,10 +85,10 @@ The Angular Report Viewer may be localized with the mechanism provided by the _H
 
 The Angular Report Viewer exposes the following client APIs:
 
-- [Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options)
-- [Properties](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties)
-- [Methods](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods)
-- [Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events)
+- [Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/options)
+- [Properties](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/read-only-properties)
+- [Methods](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/methods)
+- [Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/events)
 
 ## See Also
 

@@ -137,7 +137,7 @@ npm install
    </tr-viewer>
    ```
 
-   For all available report viewer options, refer to [Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options).
+   For all available report viewer options, refer to [Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer/options).
 
 1. Style the viewer using the desired Kendo UI theme (еither using [LESS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) or [SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview)): Add references to the LESS-based CSS files in the `<head>` element of `index.html`:
 

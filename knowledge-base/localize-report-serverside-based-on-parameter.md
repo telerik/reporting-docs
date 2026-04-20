@@ -26,8 +26,7 @@ In my scenario, the users would select the Report culture as a value of a Report
 
 ## Solution
 
-The [CreateInstance](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateInstance_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) and [CreateDocument](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateDocument_System_String_System_String_Telerik_Reporting_Services_WebApi_CreateDocumentArgs_) virtual methods are called always when you need to render the report in a viewer that utilizes the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) for generating reports. In the former you have the [client reportSource](slug:
-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)), hence you may take the selected culture from the corresponding parameter. In the latter, you may provide the culture to the Reporting engine through the `DeviceInfo` dictionary in the [CreateDocumentArgs](/api/Telerik.Reporting.Services.WebApi.CreateDocumentArgs) `args` argument. 
+The [CreateInstance](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateInstance_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) and [CreateDocument](/api/telerik.reporting.services.webapi.reportscontrollerbase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateDocument_System_String_System_String_Telerik_Reporting_Services_WebApi_CreateDocumentArgs_) virtual methods are called always when you need to render the report in a viewer that utilizes the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) for generating reports. In the former you have the [client reportSource](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods), hence you may take the selected culture from the corresponding parameter. In the latter, you may provide the culture to the Reporting engine through the `DeviceInfo` dictionary in the [CreateDocumentArgs](/api/Telerik.Reporting.Services.WebApi.CreateDocumentArgs) `args` argument. 
 
 Here is sample code, which assumes that the Report has a parameter called _lang_ that holds the selected culture name:
 
@@ -65,7 +64,7 @@ The idea is to introduce a static string property, set its value in the `CreateI
 
 >note The ReportsController gets instantiated on each request. Therefore, if the variable holding the culture name is not static, the value will be lost between the requests.
 
-If you need to localize also the Text specifying the names of the Report Parameter editors in the Html5 Viewers, you need to use the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)) event to select the parameter editor's element and change its text based on the selected culture. Here is a sample jQuery code for the event handler:
+If you need to localize also the Text specifying the names of the Report Parameter editors in the Html5 Viewers, you need to use the [renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event to select the parameter editor's element and change its text based on the selected culture. Here is a sample jQuery code for the event handler:
 
 ````JavaScript
 renderingEnd: function (e, args) {
@@ -86,5 +85,5 @@ The reason for this is that the Parameters area of the viewer gets rendered with
 
 * [How to pass culture via AJAX call from the HTML5 Report Viewer](slug:how-to-send-culture-from-client-to-service)
 * [Localization of reports based on report parameter and RESX files](slug:localization-of-reports-based-on-report-parameter-and-resx-files)
-* [Html5 Report Viewer event renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args))
+* [Html5 Report Viewer event renderingEnd](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events)
 * [Reporting REST Service Get Report Parameters request](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters)

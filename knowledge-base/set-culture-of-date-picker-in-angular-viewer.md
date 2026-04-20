@@ -61,7 +61,7 @@ export class ReportViewerComponent implements AfterViewInit {
 }
 ````
 
-Then the actual change of the kendo current culture can happen in the [renderingBegin](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)) event:
+Then the actual change of the kendo current culture can happen in the [renderingBegin](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event:
 
 ````TypeScript
 renderingBegin() {

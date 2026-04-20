@@ -12,7 +12,7 @@ previous_url: /mvc-report-viewer-howto-custom-parameters
 
 # Passing Values to Report Parameters from Components Outside the MVC Report Viewer
 
-This topic explains how to use custom parameters UI to update the report parameters instead of using the MVC report viewer's default implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)) method is used.
+This topic explains how to use custom parameters UI to update the report parameters instead of using the MVC report viewer's default implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods) method is used.
 
 To give an example we will use the Invoice report from our local examples and will update its **OrderNumber** parameter from a custom parameter UI.
 
@@ -77,7 +77,7 @@ To give an example we will use the Invoice report from our local examples and wi
     </div>
     ```
 
-1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization). Please note how the value from the custom UI is used to set the **OrderNumber** report parameter initially:
+1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview). Please note how the value from the custom UI is used to set the **OrderNumber** report parameter initially:
 
     {{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
     {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}

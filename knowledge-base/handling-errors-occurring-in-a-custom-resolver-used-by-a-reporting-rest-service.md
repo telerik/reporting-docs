@@ -25,7 +25,7 @@ Handling errors occurring in a Custom Resolver used by a Reporting REST Service.
 
 ## Solution
 
-In general, a **.CS** Type Report has an [Error event](/api/telerik.reporting.report#collapsible-Telerik_Reporting_Report_Error) which fires due to problems with the report processing. Such errors can be handled in the report's Error event or/and in the HTML5 Viewer's [error event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization#examples).  
+In general, a **.CS** Type Report has an [Error event](/api/telerik.reporting.report#collapsible-Telerik_Reporting_Report_Error) which fires due to problems with the report processing. Such errors can be handled in the report's Error event or/and in the HTML5 Viewer's [error event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview#examples).  
 
  For example:  
 

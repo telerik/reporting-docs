@@ -91,4 +91,4 @@ $("#reportViewer1")
        }
 });
 ```
-The above code will hide Navigate Back button using the callback function set as [viewer's ready option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
+The above code will hide Navigate Back button using the callback function set as [viewer's ready option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview).

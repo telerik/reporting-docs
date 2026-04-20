@@ -137,7 +137,7 @@ $("#reportViewer1")
 
 ## Notes
 
-Looking at the code in the solution, one might wonder why do we need to both set the max of the second DatePicker in both the [`change`](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/events/change) event of the start date widget and in the [`renderingEnd`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)) event of the report viewer.
+Looking at the code in the solution, one might wonder why do we need to both set the max of the second DatePicker in both the [`change`](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker/events/change) event of the start date widget and in the [`renderingEnd`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) event of the report viewer.
 
 The reason is that this article's goal is to make sure it works in preferably all scenarios. If both report parameters have their [`AutoRefresh`](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AutoRefresh) property set to `True`, when the start date is updated, the report viewer will re-render and thus `renderingEnd` will be fired and the max date of the second date parameter will update. In such a scenario, the custom parameter editor is most likely unnecessary.
 

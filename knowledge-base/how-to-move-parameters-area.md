@@ -65,7 +65,7 @@ function updateDocumentMapArea(condition, marginType) {
 	}
 }
 ```
-Then apply these functions in callback function *updateUi* that will be called every time the UI needs an update (for more information, please check [the full list of options during viewer's initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization)):
+Then apply these functions in callback function *updateUi* that will be called every time the UI needs an update (for more information, please check [the full list of options during viewer's initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview):
 ``` JavaScript
 updateUi: function (e) {
     var rv = e.data.sender;

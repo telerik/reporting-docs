@@ -24,7 +24,7 @@ The Series collection of the [Graph item](slug:telerikreporting/designing-report
 
 The HTML5-based Report Viewers, WinForms ReportViewer and WPF ReportViewer controls have `ToolTipOpening` events. In those events you can modify tooltips content:     
 
-* __HTML5 Report Viewer:__ [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args))
+* __HTML5 Report Viewer:__ [viewerToolTipOpening(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events)
 
 * __WPF ReportViewer control:__  [ViewerToolTipOpening](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ViewerToolTipOpening)  event.             
 

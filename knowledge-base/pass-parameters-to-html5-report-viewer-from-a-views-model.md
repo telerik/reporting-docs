@@ -32,7 +32,7 @@ The following article describes a general approach that can be used to both achi
 
 ## Solution
 
-1. Since the parameters dictionary is a child element of the `reportSource` property, as shown in the [HTML5 Report Viewer API Reference](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization), we will create a custom model that represents the `reportSource` property:
+1. Since the parameters dictionary is a child element of the `reportSource` property, as shown in the [HTML5 Report Viewer API Reference](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview), we will create a custom model that represents the `reportSource` property:
 
    ```C#
    public class ReportSourceModel

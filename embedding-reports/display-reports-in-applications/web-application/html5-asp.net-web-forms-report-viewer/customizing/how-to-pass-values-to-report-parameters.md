@@ -14,7 +14,7 @@ previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 
 This topic explains how to use the custom parameters UI to update the report parameters instead of using the HTML5 Web Forms report viewer's default implementation of the parameters area. 
 
-The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)) method is used.
+The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods) method is used.
 
 To give an example, we will use the Invoice report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI.
 
@@ -95,7 +95,7 @@ To give an example, we will use the Invoice report from our examples and will up
     </div>
     ```
 
-1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
+1.  Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview).
 
     ```HTML
     <telerik:ReportViewer ID="reportViewer1" Width="1300px" Height="900px" EnableAccessibility="false" runat="server">

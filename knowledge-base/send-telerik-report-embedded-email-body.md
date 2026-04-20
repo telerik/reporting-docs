@@ -195,7 +195,7 @@ The default method used for sending the email is [CreateMailMessage(SendDocument
    }
    ```
 
-1. The last step lies in using the [sendEmailBegin(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)) to stop the default handling of the send mail functionality and instead make a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) request to the new endpoint for the case where the selected option is `Embedded`:
+1. The last step lies in using the [sendEmailBegin(e, args)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) to stop the default handling of the send mail functionality and instead make a [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) request to the new endpoint for the case where the selected option is `Embedded`:
 
    ```JS
    $("#reportViewer1")

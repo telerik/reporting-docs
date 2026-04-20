@@ -34,7 +34,7 @@ The report we chose for the demo is part of our `ReportLibrary` and is called [P
 
 ### HTML5 Report Viewer
 
-Open the project and navigate to the `Index.html` file. Add the following code snippet to the [report viewer initialization script](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization):
+Open the project and navigate to the `Index.html` file. Add the following code snippet to the [report viewer initialization script](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview):
 
 
 ````JavaScript
@@ -57,8 +57,8 @@ interactiveActionLeave: function (e, args) {
 
 This code block adds three handlers to the interactive action events.
 
-1. [interactiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)) - is triggered when the mouse cursor is over the HTML element, associated with an interactive action. In this case we check the type of the action and if it equals "*navigateToReport*", a confirmation message is displayed, asking if you want to leave the page, navigating to another report. The dialog result is assigned to the cancel argument and will be processed by the engine, determining if we decided to cancel navigation or not.
-1. The other two handlers - [interactiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)) and [interactiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)) are raised when the mouse cursor enters or leaves the bounds of the HTML element, associated with an interactive action. We check the type of the action again (which could be unnecessary in case you only have one type of actions in your report) and change or restore the CSS style, applied on the element.
+1. [interactiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) - is triggered when the mouse cursor is over the HTML element, associated with an interactive action. In this case we check the type of the action and if it equals "*navigateToReport*", a confirmation message is displayed, asking if you want to leave the page, navigating to another report. The dialog result is assigned to the cancel argument and will be processed by the engine, determining if we decided to cancel navigation or not.
+1. The other two handlers - [interactiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) and [interactiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events) are raised when the mouse cursor enters or leaves the bounds of the HTML element, associated with an interactive action. We check the type of the action again (which could be unnecessary in case you only have one type of actions in your report) and change or restore the CSS style, applied on the element.
 
 The same approach can be used in all the HTML5-based report viewers with slight modifications, as shown below.
 

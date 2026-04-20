@@ -28,7 +28,7 @@ The ability to print a report is widely used feature that a Reporting product ca
 
 ### HTML5 Report Viewers
 
-For the HTML5-based report viewers, you could use the `print` [command](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands). For example:
+For the HTML5-based report viewers, you could use the `print` [command](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/commands). For example:
 
 ````JavaScript
 $('#printButton').click(function () {

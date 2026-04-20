@@ -7,6 +7,7 @@ tags: options
 published: True
 reportingArea: NativeBlazor
 position: 2
+previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options
 ---
 
 # Options of the Native Blazor Report Viewer

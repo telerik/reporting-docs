@@ -7,6 +7,7 @@ tags: read-only,properties
 published: True
 reportingArea: AngularWrapper
 position: 3
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties
 ---
 
 # Read-Only Properties of the Angular Report Viewer

@@ -7,6 +7,7 @@ tags: options
 published: True
 reportingArea: AngularWrapper
 position: 2
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 ---
 
 # Options of the Angular Report Viewer

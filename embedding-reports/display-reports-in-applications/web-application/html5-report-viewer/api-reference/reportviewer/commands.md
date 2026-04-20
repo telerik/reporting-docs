@@ -7,6 +7,7 @@ tags: commands
 published: True
 reportingArea: HTML5
 position: 5
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands
 ---
 
 # Commands of the HTML5 Report Viewer

@@ -7,6 +7,7 @@ tags: methods
 published: True
 reportingArea: AngularWrapper
 position: 1
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
 ---
 
 # Methods of the Angular Report Viewer

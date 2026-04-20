@@ -7,6 +7,7 @@ tags: events
 published: True
 reportingArea: React
 position: 4
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events
 ---
 
 # Events of the React Report Viewer

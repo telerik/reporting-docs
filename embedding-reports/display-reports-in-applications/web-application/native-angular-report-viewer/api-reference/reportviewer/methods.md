@@ -7,6 +7,7 @@ tags: methods
 published: True
 reportingArea: NativeAngular
 position: 1
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands
 ---
 
 # Methods of the Native Angular Report Viewer

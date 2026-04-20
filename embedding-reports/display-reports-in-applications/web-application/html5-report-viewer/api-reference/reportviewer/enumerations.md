@@ -7,6 +7,7 @@ tags: enumerations
 published: True
 reportingArea: HTML5
 position: 7
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/printmodes
 ---
 
 # Enumerations of the HTML5 Report Viewer

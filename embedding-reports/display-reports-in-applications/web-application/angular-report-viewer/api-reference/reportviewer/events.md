@@ -7,6 +7,7 @@ tags: events
 published: True
 reportingArea: AngularWrapper
 position: 4
+previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
 ---
 
 # Events of the Angular Report Viewer

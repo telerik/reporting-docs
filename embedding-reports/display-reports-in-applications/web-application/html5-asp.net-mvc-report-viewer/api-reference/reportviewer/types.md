@@ -31,7 +31,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Html5.Common.Options
 
 
@@ -41,7 +41,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
     // Example of creating an AccessibilityKeyMap
     .AccessibilityKeyMap(new AccessibilityKeyMap())
 )
-````
+```
 
 
 ## CustomParameterEditor
@@ -57,7 +57,7 @@ Represents a custom parameter editor configuration for the MVC Report Viewer, en
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -70,7 +70,7 @@ Represents a custom parameter editor configuration for the MVC Report Viewer, en
         MatchFunction = "function (parameter) { return parameter.name === 'MyParameter'; }"
     };
 }
-````
+```
 
 
 ## DeferredScripts
@@ -91,7 +91,7 @@ Represents a container for deferred JavaScript initialization statements for MVC
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 <!-- Example: Rendering all deferred scripts for the Telerik MVC Report Viewer in a Razor view -->
@@ -99,7 +99,7 @@ Represents a container for deferred JavaScript initialization statements for MVC
 {
     @(Html.TelerikReporting().DeferredScripts())
 }
-````
+```
 
 
 ## Editors
@@ -115,7 +115,7 @@ Provides configuration options for parameter editor types used in the MVC Report
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -134,7 +134,7 @@ Provides configuration options for parameter editor types used in the MVC Report
     // Set the Editors configuration for parameters
     .Parameters(new Parameters { Editors = editors })
 )
-````
+```
 
 
 ## HtmlHelpers
@@ -149,7 +149,7 @@ A class that contains a collection of all Telerik Reporting widgets
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -157,7 +157,7 @@ A class that contains a collection of all Telerik Reporting widgets
     // This provides access to the Telerik Reporting widgets for embedding in your view.
     var telerikReportingHelper = HtmlHelpers.TelerikReporting(Html);
 }
-````
+```
 
 
 ## InstanceReportSource
@@ -181,7 +181,7 @@ This report source is used when you have a reference to an already instantiated 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 @{
@@ -197,7 +197,7 @@ This report source is used when you have a reference to an already instantiated 
         // Using InstanceReportSource to pass an already instantiated report.
         .ReportSource(new InstanceReportSource { ReportDocument = new Report() })
 )
-````
+```
 
 
 ## Parameters
@@ -218,7 +218,7 @@ Provides configuration options for report parameters display and behavior within
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -232,7 +232,7 @@ Provides configuration options for report parameters display and behavior within
     // Configures parameters using the Parameters class
     .Parameters(new Parameters())
 )
-````
+```
 
 
 ## ReportServer
@@ -255,7 +255,7 @@ Provides configuration data for connecting to a Telerik Report Server instance f
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -275,7 +275,7 @@ Provides configuration data for connecting to a Telerik Report Server instance f
     // For Report Server, set the report path (e.g., "[Category]/[ReportName]"). Example shown with placeholder value.
     .ReportSource("Samples/Dashboard")
 )
-````
+```
 
 
 ## ReportSource
@@ -299,7 +299,7 @@ Provides the base class for a report source. This is an abstract class that cont
 
 ### Example
 
-````C#
+```C#
 @* This example demonstrates how to assign an abstract Telerik.Reporting.ReportSource (via a derived type, e.g., UriReportSource) as the report source for the HTML5 Report Viewer. *@
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
@@ -310,7 +310,7 @@ Provides the base class for a report source. This is an abstract class that cont
     // Using UriReportSource, which inherits from ReportSource (ReportSource is abstract)
     .ReportSource(new UriReportSource { Uri = "" })
 )
-````
+```
 
 
 ## ReportSourceCollection
@@ -325,7 +325,7 @@ Represents a collection of  [`Telerik.Reporting.InstanceReportSource`]({%slug te
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 
 @* Example demonstrating creation and usage of Telerik.Reporting.ReportSourceCollection *@
@@ -339,7 +339,7 @@ Represents a collection of  [`Telerik.Reporting.InstanceReportSource`]({%slug te
     // Add the ReportSource to the collection
     reportSources.Add(reportSource);
 }
-````
+```
 
 
 ## SendEmail
@@ -366,7 +366,7 @@ Provides a class for the send e-mail message options. Contains the enabled prope
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -390,7 +390,7 @@ Provides a class for the send e-mail message options. Contains the enabled prope
         Format = "PDF" // Sets default format (e.g. PDF, XLSX)
     })
 )
-````
+```
 
 
 ## TypeReportSource
@@ -414,7 +414,7 @@ Represents a report source that allows a report document to be instantiated from
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 @{
@@ -431,7 +431,7 @@ Represents a report source that allows a report document to be instantiated from
           TypeName = "Namespace.ReportClassName, AssemblyName"
       })
 )
-````
+```
 
 
 ## UriReportSource
@@ -456,7 +456,7 @@ Represents a report source that loads a report document from a URI. The URI must
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -466,7 +466,7 @@ Represents a report source that loads a report document from a URI. The URI must
     .ServiceUrl(Url.Content("~/api/reports/"))
     .ReportSource(new UriReportSource { Uri = "/Reports/SampleReport.trdp" })
 )
-````
+```
 
 
 ## XmlReportSource
@@ -490,7 +490,7 @@ Represents a report source that contains the XML markup of a report document.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -513,5 +513,5 @@ Represents a report source that contains the XML markup of a report document.
     .ServiceUrl(Url.Content("~/api/reports/"))
     .ReportSource(xmlReportSource)
 )
-````
+```
 

@@ -21,7 +21,7 @@ Gets or sets the keyboard mappings used when accessibility mode is enabled in th
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -40,7 +40,7 @@ Gets or sets the keyboard mappings used when accessibility mode is enabled in th
     </form>
 </body>
 </html>
-````
+```
 
 
 ## AuthenticationToken
@@ -53,7 +53,7 @@ Gets or sets the encoded authentication token used to secure and authenticate re
 
 ### Example
 
-````C#
+```C#
 <!-- Example of setting the report viewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -75,7 +75,7 @@ Gets or sets the encoded authentication token used to secure and authenticate re
     </form>
 </body>
 </html>
-````
+```
 
 
 ## CheckedButtonClass
@@ -88,7 +88,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the check
 
 ### Example
 
-````C#
+```C#
 <!-- Example of setting the report viewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -110,7 +110,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the check
     </form>
 </body>
 </html>
-````
+```
 
 
 ## Deferred
@@ -123,7 +123,7 @@ Gets or sets a value indicating whether the HTML5 viewer's JavaScript initializa
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating the use of the Deferred property of the Telerik HTML5 WebForms ReportViewer.
 This property controls whether the viewer's JavaScript initialization is deferred. -->
 
@@ -147,7 +147,7 @@ This property controls whether the viewer's JavaScript initialization is deferre
     </form>
 </body>
 </html>
-````
+```
 
 
 ## DisabledButtonClass
@@ -160,7 +160,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the disab
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the DisabledButtonClass property to apply a custom CSS class for disabled toolbar buttons in the ReportViewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -189,7 +189,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the disab
     </form>
 </body>
 </html>
-````
+```
 
 
 ## DocumentMapAreaPosition
@@ -202,7 +202,7 @@ Gets or sets the positioning of the document map area within the HTML5 viewer in
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the DocumentMapAreaPosition property on the Telerik HTML5 ReportViewer -->
 
 <!DOCTYPE html>
@@ -226,7 +226,7 @@ Gets or sets the positioning of the document map area within the HTML5 viewer in
     </form>
 </body>
 </html>
-````
+```
 
 
 ## DocumentMapVisible
@@ -239,7 +239,7 @@ Gets or sets a value indicating whether the document map navigation panel is ini
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the DocumentMapVisible property on the Telerik ReportViewer -->
 
 <!DOCTYPE html>
@@ -263,7 +263,7 @@ Gets or sets a value indicating whether the document map navigation panel is ini
     </form>
 </body>
 </html>
-````
+```
 
 
 ## EnableAccessibility
@@ -276,7 +276,7 @@ Gets or sets a value indicating whether accessibility features are enabled for t
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set EnableAccessibility property to true for the Report Viewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -299,7 +299,7 @@ Gets or sets a value indicating whether accessibility features are enabled for t
     </form>
 </body>
 </html>
-````
+```
 
 
 ## Height
@@ -312,7 +312,7 @@ Gets or sets the height of the HTML5 ReportViewer control.
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the Height property of the Telerik HTML5 ReportViewer control in a WebForms page -->
 
 <!DOCTYPE html>
@@ -335,7 +335,7 @@ Gets or sets the height of the HTML5 ReportViewer control.
     </form>
 </body>
 </html>
-````
+```
 
 
 ## InitialPageAreaImageUrl
@@ -348,7 +348,7 @@ Gets or sets the background image URL displayed in the page area when parameter 
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating the use of InitialPageAreaImageUrl property in Telerik ReportViewer -->
 
 
@@ -373,7 +373,7 @@ Gets or sets the background image URL displayed in the page area when parameter 
     </form>
 </body>
 </html>
-````
+```
 
 
 ## KeepClientAlive
@@ -386,7 +386,7 @@ Gets or sets a value indicating whether the HTML5 viewer client session is kept 
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating the use of the KeepClientAlive property for the Telerik HTML5 ReportViewer in WebForms -->
 
 <!DOCTYPE html>
@@ -410,7 +410,7 @@ Gets or sets a value indicating whether the HTML5 viewer client session is kept 
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PageMode
@@ -427,7 +427,7 @@ Gets or sets the viewer's page mode.
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating the use of the PageMode property for the Telerik ReportViewer in WebForms -->
 
 <!DOCTYPE html>
@@ -451,7 +451,7 @@ Gets or sets the viewer's page mode.
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PageNumber
@@ -464,7 +464,7 @@ Gets or sets the current page number of the report displayed in the HTML5 viewer
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the PageNumber property of the Telerik HTML5 ReportViewer in Web Forms -->
 
 <!DOCTYPE html>
@@ -488,7 +488,7 @@ Gets or sets the current page number of the report displayed in the HTML5 viewer
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ParameterEditors
@@ -501,7 +501,7 @@ Gets or sets the parameter editors configuration that defines JavaScript functio
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the ParameterEditors property of the ReportViewer in WebForms -->
 
 <!DOCTYPE html>
@@ -524,7 +524,7 @@ Gets or sets the parameter editors configuration that defines JavaScript functio
     </form>
 </body>
 </html>
-````
+```
 
 
 ## Parameters
@@ -537,7 +537,7 @@ Gets or sets the parameters display configuration that defines the visual appear
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating usage of the ReportViewer.Parameters property -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -559,7 +559,7 @@ Gets or sets the parameters display configuration that defines the visual appear
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ParametersAreaPosition
@@ -572,7 +572,7 @@ Gets or sets the positioning of the parameters area within the HTML5 viewer inte
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the ParametersAreaPosition property of the ReportViewer in WebForms -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -595,7 +595,7 @@ Gets or sets the positioning of the parameters area within the HTML5 viewer inte
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ParametersAreaVisible
@@ -608,7 +608,7 @@ Gets or sets a value indicating whether the parameters area is initially visible
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the ParametersAreaVisible property of the ReportViewer in WebForms -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -631,7 +631,7 @@ Gets or sets a value indicating whether the parameters area is initially visible
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PersistSession
@@ -644,7 +644,7 @@ Gets or sets a value indicating whether the HTML5 viewer's client state is persi
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating the use of the PersistSession property on Telerik.ReportViewer.Html5.WebForms.ReportViewer. When set to true, the viewer's client state is persisted between page refreshes and postbacks. -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -667,7 +667,7 @@ Gets or sets a value indicating whether the HTML5 viewer's client state is persi
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PrintMode
@@ -687,7 +687,7 @@ Gets or sets the print mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the PrintMode property of the Telerik HTML5 ReportViewer to ForcePDFFile -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -709,7 +709,7 @@ Gets or sets the print mode of the viewer.
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ReportServer
@@ -722,7 +722,7 @@ Gets or sets the connection data of the report server that hosts the report. The
 
 ### Example
 
-````C#
+```C#
 <%-- Example: Setting the ReportServer property for Telerik HTML5 Web Forms Report Viewer --%>
 
 <!DOCTYPE html>
@@ -738,7 +738,7 @@ Gets or sets the connection data of the report server that hosts the report. The
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ReportSource
@@ -751,7 +751,7 @@ Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug tel
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the ReportSource property of the Telerik ReportViewer to ForcePDFFile -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -772,7 +772,7 @@ Gets or sets the [`Telerik.ReportViewer.Html5.WebForms.ReportSource`]({%slug tel
     </form>
 </body>
 </html>
-````
+```
 
 
 ## Scale
@@ -785,7 +785,7 @@ Gets or sets the zoom level of the report where 1.0 equals 100% of the original 
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the Scale property of the Telerik ReportViewer to 1.0 -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -807,7 +807,7 @@ Gets or sets the zoom level of the report where 1.0 equals 100% of the original 
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ScaleMode
@@ -826,7 +826,7 @@ Gets or sets the scale mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating how to set the ScaleMode property of Telerik.ReportViewer.Html5.WebForms.ReportViewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -850,7 +850,7 @@ Gets or sets the scale mode of the viewer.
     </form>
 </body>
 </html>
-````
+```
 
 
 ## SearchMetadataOnDemand
@@ -863,7 +863,7 @@ Gets or sets a value indicating whether search metadata is delivered on-demand o
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the SearchMetadataOnDemand property to enable on-demand search metadata delivery in the HTML5 WebForms ReportViewer. -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -885,7 +885,7 @@ Gets or sets a value indicating whether search metadata is delivered on-demand o
     </form>
 </body>
 </html>
-````
+```
 
 
 ## SendEmail
@@ -898,7 +898,7 @@ Gets or sets the email functionality configuration including enabled state, form
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the SendEmail property to enable the Send Email functionality in the HTML5 WebForms ReportViewer. -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -920,7 +920,7 @@ Gets or sets the email functionality configuration including enabled state, form
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ServiceUrl
@@ -933,7 +933,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -949,7 +949,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
     </form>
 </body>
 </html>
-````
+```
 
 
 ## TemplateUrl
@@ -962,7 +962,7 @@ Gets or sets the URL for the report viewer template. The template can be edited 
 
 ### Example
 
-````C#
+```C#
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSharp.NetFramework.WebFormsIntegrationDemo.Default" %>
 
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
@@ -976,7 +976,7 @@ Gets or sets the URL for the report viewer template. The template can be edited 
         TemplateUrl="/CustomTemplates/CustomReportViewerTemplate.html">
     </telerik:ReportViewer>
 </form>
-````
+```
 
 
 ## ViewMode
@@ -993,7 +993,7 @@ Gets or sets the viewer's view mode.
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Set the ViewMode property to PrintPreview to display the paginated report as if printed on paper -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -1015,7 +1015,7 @@ Gets or sets the viewer's view mode.
     </form>
 </body>
 </html>
-````
+```
 
 
 ## Width
@@ -1028,7 +1028,7 @@ Gets or sets the width of the HTML5 ReportViewer control.
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the Width property of the ReportViewer control -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -1051,5 +1051,5 @@ Gets or sets the width of the HTML5 ReportViewer control.
     </form>
 </body>
 </html>
-````
+```
 

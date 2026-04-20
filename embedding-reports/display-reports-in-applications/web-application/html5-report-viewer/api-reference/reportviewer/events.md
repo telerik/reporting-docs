@@ -19,7 +19,7 @@ Called when an error occurs. Receives two parameters: `e` (the jQuery.Event obje
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -31,7 +31,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("The error message is: " + args);
   }
 });
-````
+```
 
 
 ## exportBegin
@@ -40,7 +40,7 @@ Called before exporting the report. Receives two parameters: `e` (the jQuery.Eve
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -53,7 +53,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("Exporting report in format: " + args.format);
   }
 });
-````
+```
 
 
 ## exportEnd
@@ -62,7 +62,7 @@ Called after exporting the report. Receives two parameters: `e` (the jQuery.Even
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -76,7 +76,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("The exported report can be found at " + args.url);
   }
 });
-````
+```
 
 
 ## pageReady
@@ -85,7 +85,7 @@ Called after a page of the report is ready. Receives two parameters: `e` (the jQ
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -98,7 +98,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("The content of the page is: " + args.pageContent);
   }
 });
-````
+```
 
 
 ## printBegin
@@ -107,7 +107,7 @@ Called before printing the report. Receives two parameters: `e` (the jQuery.Even
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -120,7 +120,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("About to print the report.");
   }
 });
-````
+```
 
 
 ## printEnd
@@ -129,7 +129,7 @@ Called after printing the report. Receives two parameters: `e` (the jQuery.Event
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -142,7 +142,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("The printed report can be found at " + args.url);
   }
 });
-````
+```
 
 
 ## ready
@@ -151,7 +151,7 @@ A callback function that is called when the viewer content has been loaded from 
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -161,7 +161,7 @@ $("#reportViewer1").telerik_ReportViewer({
     // 'this' refers to the ReportViewer instance
   }
 });
-````
+```
 
 
 ## renderingBegin
@@ -170,7 +170,7 @@ Called before rendering the report (preview only, not for export or print). Rece
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -187,7 +187,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("About to render the report.");
   }
 });
-````
+```
 
 
 ## renderingEnd
@@ -196,7 +196,7 @@ Called after rendering the report. Receives two parameters: `e` (the jQuery.Even
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -215,7 +215,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("The rendered report has " + args.bookmarkNodes.length + " nodes");
   }
 });
-````
+```
 
 
 ## sendEmailBegin
@@ -224,7 +224,7 @@ Called before the report is exported and the E-mail message is sent. Receives tw
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -237,7 +237,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("About to export and send report in format: " + args.format);
   }
 });
-````
+```
 
 
 ## sendEmailEnd
@@ -246,7 +246,7 @@ Called after the report is exported and before the E-mail message is sent. Recei
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -260,7 +260,7 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("The exported report can be found at " + args.url);
   }
 });
-````
+```
 
 
 ## updateUi
@@ -269,7 +269,7 @@ Called when the state of the viewer changes. Receives one parameter: `e` (the jQ
 
 ### Example
 
-````JavaScript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
   serviceUrl: "api/reports/",
   reportSource: {
@@ -281,5 +281,5 @@ $("#reportViewer1").telerik_ReportViewer({
     console.log("Viewer UI state changed.");
   }
 });
-````
+```
 

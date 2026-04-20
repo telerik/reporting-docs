@@ -17,7 +17,7 @@ Gets or sets a value for the callback that will be called when the value of Docu
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     DocumentMapVisibleChanged="@OnDocumentMapVisibleChanged">
 </ReportViewer>
@@ -27,7 +27,7 @@ Gets or sets a value for the callback that will be called when the value of Docu
     {
     }
 }
-````
+```
 
 
 ## OnExportEnd
@@ -36,7 +36,7 @@ Event triggered when the export process has finished.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     OnExportEnd="@OnExportEnd">
 </ReportViewer>
@@ -46,7 +46,7 @@ Event triggered when the export process has finished.
     {
     }
 }
-````
+```
 
 
 ## OnExportStart
@@ -55,7 +55,7 @@ Occurs when the export process is starting.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     OnExportStart="@OnExportStart">
 </ReportViewer>
@@ -65,7 +65,7 @@ Occurs when the export process is starting.
     {
     }
 }
-````
+```
 
 
 ## OnRenderingBegin
@@ -74,7 +74,7 @@ Occurs when the report rendering process begins, allowing for custom actions or 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer
     OnRenderingBegin="@OnRenderingBegin">
 </ReportViewer>
@@ -84,7 +84,7 @@ Occurs when the report rendering process begins, allowing for custom actions or 
     {
     }
 }
-````
+```
 
 
 ## OnRenderingEnd
@@ -93,7 +93,7 @@ Occurs when the rendering of the report has ended. This event can be used to per
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     OnRenderingEnd="@OnRenderingEnd">
 </ReportViewer>
@@ -103,7 +103,7 @@ Occurs when the rendering of the report has ended. This event can be used to per
     {
     }
 }
-````
+```
 
 
 ## ParametersAreaVisibleChanged
@@ -112,7 +112,7 @@ Gets or sets a value for the callback that will be called when the value of Para
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ParametersAreaVisibleChanged="@OnParametersAreaVisibleChanged">
 </ReportViewer>
@@ -122,7 +122,7 @@ Gets or sets a value for the callback that will be called when the value of Para
     {
     }
 }
-````
+```
 
 
 ## ReportSourceChanged
@@ -131,7 +131,7 @@ Gets or sets a value for the callback that will be called when the value of Repo
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ReportSourceChanged="@OnReportSourceChanged">
 </ReportViewer>
@@ -141,7 +141,7 @@ Gets or sets a value for the callback that will be called when the value of Repo
     {
     }
 }
-````
+```
 
 
 ## ScaleChanged
@@ -150,7 +150,7 @@ Gets or sets a value for the callback that will be called when the value of Scal
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ScaleChanged="@OnScaleChanged">
 </ReportViewer>
@@ -160,7 +160,7 @@ Gets or sets a value for the callback that will be called when the value of Scal
     {
     }
 }
-````
+```
 
 
 ## ScaleModeChanged
@@ -169,7 +169,7 @@ Gets or sets a value for the callback that will be called when the value of Scal
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ScaleModeChanged="@OnScaleModeChanged">
 </ReportViewer>
@@ -179,7 +179,7 @@ Gets or sets a value for the callback that will be called when the value of Scal
     {
     }
 }
-````
+```
 
 
 ## ViewModeChanged
@@ -188,7 +188,7 @@ Gets or sets a value for the callback that will be called when the value of View
 
 ### Example
 
-````C#
+```C#
 <ReportViewer
     ViewModeChanged="@OnViewModeChanged">
 </ReportViewer>
@@ -198,5 +198,5 @@ Gets or sets a value for the callback that will be called when the value of View
     {
     }
 }
-````
+```
 

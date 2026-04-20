@@ -21,11 +21,11 @@ Gets or sets the authentication (bearer) token that is passed in the Authorizati
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     AuthenticationToken="your-auth-token">
 </ReportViewer>
-````
+```
 
 
 ## DocumentMapVisible
@@ -38,11 +38,11 @@ Gets or sets  a value indicating whether the viewer's document map is initially 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     DocumentMapVisible="true">
 </ReportViewer>
-````
+```
 
 
 ## EnableAccessibility
@@ -55,11 +55,11 @@ Enables or disables the accessibility features of the report viewer and its cont
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     EnableAccessibility="true">
 </ReportViewer>
-````
+```
 
 
 ## EnableSendEmail
@@ -72,11 +72,11 @@ Determines whether the send Email functionality is enabled. If set to false, the
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     EnableSendEmail="true">
 </ReportViewer>
-````
+```
 
 
 ## Height
@@ -89,11 +89,11 @@ The width of the component.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     Height="500px">
 </ReportViewer>
-````
+```
 
 
 ## KeepClientAlive
@@ -110,11 +110,11 @@ When set to false, the client will be left to be expired
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     KeepClientAlive="true">
 </ReportViewer>
-````
+```
 
 
 ## PageMode
@@ -127,11 +127,11 @@ Sets if the report is displayed in Single page or Continuous scroll mode.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     PageMode="@PageMode.SinglePage">
 </ReportViewer>
-````
+```
 
 
 ## ParameterBooleanTemplate
@@ -144,7 +144,7 @@ Template used to render boolean report viewer parameter editors. Allows for decl
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterBooleanTemplate>
         <TelerikCheckBox Value="@((bool)context.Value)"
@@ -152,7 +152,7 @@ Template used to render boolean report viewer parameter editors. Allows for decl
         </TelerikCheckBox>
     </ParameterBooleanTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParameterDateTimeTemplate
@@ -165,7 +165,7 @@ Template used to render DateTime report viewer parameter editors. Allows for dec
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterDateTimeTemplate>
         <TelerikDatePicker Value="@((DateTime)context.Value)"
@@ -173,7 +173,7 @@ Template used to render DateTime report viewer parameter editors. Allows for dec
         </TelerikDatePicker>
     </ParameterDateTimeTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParameterDoubleTemplate
@@ -186,7 +186,7 @@ Template used to render double report viewer parameter editors. Allows for decla
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterDoubleTemplate>
         <TelerikNumericTextBox Value="@((double)context.Value)"
@@ -194,7 +194,7 @@ Template used to render double report viewer parameter editors. Allows for decla
         </TelerikNumericTextBox>
     </ParameterDoubleTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParameterIntegerTemplate
@@ -207,7 +207,7 @@ Template used to render integer report viewer parameter editors. Allows for decl
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterIntegerTemplate>
         <TelerikNumericTextBox Value="@((long)context.Value)"
@@ -215,7 +215,7 @@ Template used to render integer report viewer parameter editors. Allows for decl
         </TelerikNumericTextBox>
     </ParameterIntegerTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParameterMultiSelectTemplate
@@ -228,7 +228,7 @@ Template used to render multi-select report viewer parameter editors. Allows for
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterMultiSelectTemplate>
         @{ var selectedValue = ((IEnumerable<object>)context.Parameter.Value).Cast<object>().ToList(); }
@@ -246,7 +246,7 @@ Template used to render multi-select report viewer parameter editors. Allows for
         </TelerikMultiSelect>
     </ParameterMultiSelectTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParametersAreaVisible
@@ -259,11 +259,11 @@ Gets or sets a value indicating whether the viewer's parameters area is initiall
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ParametersAreaVisible="true">
 </ReportViewer>
-````
+```
 
 
 ## ParameterSingleSelectTemplate
@@ -276,7 +276,7 @@ Template used to render single-select report viewer parameter editors. Allows fo
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterSingleSelectTemplate>
         <TelerikDropDownList Data="@context.Parameter.AvailableValues"
@@ -290,7 +290,7 @@ Template used to render single-select report viewer parameter editors. Allows fo
         </TelerikDropDownList>
     </ParameterSingleSelectTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParameterStringTemplate
@@ -303,7 +303,7 @@ Template used to render string report viewer parameter editors. Allows for decla
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterStringTemplate>
         <TelerikTextBox Value="@((string)context.Value)"
@@ -311,7 +311,7 @@ Template used to render string report viewer parameter editors. Allows for decla
         </TelerikTextBox>
     </ParameterStringTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ParameterTemplate
@@ -324,7 +324,7 @@ Generic template used to render report viewer parameter editors. Allows for decl
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ParameterTemplate>
         @if (context.Parameter.AvailableValues?.Count > 0)
@@ -379,7 +379,7 @@ Generic template used to render report viewer parameter editors. Allows for decl
         }
     </ParameterTemplate>
 </ReportViewer>
-````
+```
 
 
 ## PrintMode
@@ -397,11 +397,11 @@ Gets or sets the print mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     PrintMode="@PrintMode.ForcePDFFile">
 </ReportViewer>
-````
+```
 
 
 ## ReportSource
@@ -414,7 +414,7 @@ Gets or sets the [`Telerik.ReportViewer.BlazorNative.ReportSourceOptions`]({%slu
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     @bind-ReportSource="@ReportSource">
 </ReportViewer>
@@ -429,7 +429,7 @@ Gets or sets the [`Telerik.ReportViewer.BlazorNative.ReportSourceOptions`]({%slu
         }
     );
 }
-````
+```
 
 
 ## ReportViewerSettings
@@ -442,7 +442,7 @@ Defines a renderfragment that contains all settings for the Report Viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ReportViewerSettings>
         <ReportServerSettings
@@ -460,7 +460,7 @@ Defines a renderfragment that contains all settings for the Report Viewer.
         </SendEmailDialogSettings>
     </ReportViewerSettings>
 </ReportViewer>
-````
+```
 
 
 ## Scale
@@ -473,11 +473,11 @@ Gets or sets zoom ratio of the report. 1.0 is equal to 100%, i.e. the original s
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     Scale="1.5">
 </ReportViewer>
-````
+```
 
 
 ## ScaleMode
@@ -495,11 +495,11 @@ Gets or sets the scale mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ScaleMode="@ScaleMode.FitPageWidth">
 </ReportViewer>
-````
+```
 
 
 ## ServiceType
@@ -512,11 +512,11 @@ Specifies the type of service the ReportViewer is using.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ServiceType="@ReportViewerServiceType.REST">
 </ReportViewer>
-````
+```
 
 
 ## ServiceUrl
@@ -529,11 +529,11 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ServiceUrl="https://myserver/api/reports">
 </ReportViewer>
-````
+```
 
 
 ## Tools
@@ -546,7 +546,7 @@ Represents the collection of tools available in the report viewer's toolbar. All
 
 ### Example
 
-````C#
+```C#
 <ReportViewer
     Tools="@Tools">
 </ReportViewer>
@@ -570,7 +570,7 @@ Represents the collection of tools available in the report viewer's toolbar. All
         new ToggleParametersArea()
     };
 }
-````
+```
 
 
 ## TooltipTemplate
@@ -583,7 +583,7 @@ Gets or sets the template for rendering tooltips in the ReportViewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <TooltipTemplate>
         <div class="trv-pages-area-kendo-tooltip">
@@ -592,7 +592,7 @@ Gets or sets the template for rendering tooltips in the ReportViewer.
         </div>
     </TooltipTemplate>
 </ReportViewer>
-````
+```
 
 
 ## ViewMode
@@ -608,11 +608,11 @@ Gets or sets the view mode.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     ViewMode="@ViewMode.PrintPreview">
 </ReportViewer>
-````
+```
 
 
 ## Width
@@ -625,9 +625,9 @@ The width of the component.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     Width="800px">
 </ReportViewer>
-````
+```
 

@@ -21,15 +21,15 @@ A bearer token to be added in the Authorization header of each request. Used for
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [authenticationToken]="authenticationToken">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 authenticationToken: string = "Bearer your-authentication-token";
-````
+```
 
 
 ## contentTabIndex
@@ -42,15 +42,15 @@ Sets the tab index for the report viewer content.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [contentTabIndex]="contentTabIndex">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 contentTabIndex: number = 1500;
-````
+```
 
 
 ## documentMapVisible
@@ -63,15 +63,15 @@ Controls the visibility of the document map panel if a document map is available
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [documentMapVisible]="documentMapVisible">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 documentMapVisible: boolean = false;
-````
+```
 
 
 ## enableSendEmail
@@ -84,15 +84,15 @@ Enables or disables the send email functionality.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [enableSendEmail]="enableSendEmail">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 enableSendEmail: boolean = true;
-````
+```
 
 
 ## height
@@ -105,15 +105,15 @@ Sets the height of the report viewer container.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer #viewerId
  [height]="height">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 height: string = '600px';
-````
+```
 
 
 ## keepClientAlive
@@ -126,15 +126,15 @@ Determines whether to keep the client session alive. When true, prevents the ses
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [keepClientAlive]="keepClientAlive">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 keepClientAlive: boolean = true;
-````
+```
 
 
 ## pageMode
@@ -147,15 +147,15 @@ Sets the page display mode of the viewer.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
   [pageMode]="pageMode">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 pageMode: PageMode = 'singlePage';
-````
+```
 
 
 ## parametersAreaVisible
@@ -168,15 +168,15 @@ Controls the visibility of the parameters area if the report has parameters.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
   [parametersAreaVisible]="parametersAreaVisible">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 parametersAreaVisible: boolean = false;
-````
+```
 
 
 ## persistSession
@@ -189,15 +189,15 @@ Determines whether to persist the viewer session across browser sessions.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
   [persistSession]="persistSession">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 persistSession: boolean = true;
-````
+```
 
 
 ## printMode
@@ -210,15 +210,15 @@ Sets the print mode for the report viewer.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
   [printMode]="printMode">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 printMode: PrintMode = 'forcePDFFile';
-````
+```
 
 
 ## reportServer
@@ -247,7 +247,7 @@ ReportServerSettings properties:
 
 ### Example
 
-````html
+```HTML
 <!-- Report Server for .NET - Token authentication (recommended) -->
 <reporting-angular-viewer
   [reportServer]="{
@@ -258,16 +258,16 @@ ReportServerSettings properties:
     report: 'Samples/Dashboard'
   }">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication (recommended)
 getPersonalAccessToken() {
   return Promise.resolve('<personal-access-token>');
 }
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET - Token authentication with secure endpoint -->
 <reporting-angular-viewer
   [reportServer]="{
@@ -278,17 +278,17 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication with secure endpoint
 getPersonalAccessToken() {
   return fetch('/rs-token')
     .then(response => response.text());
 }
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET - Token authentication with Guest user token -->
 <reporting-angular-viewer
   [reportServer]="{
@@ -299,16 +299,16 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication with Guest user token
 getPersonalAccessToken() {
   return Promise.resolve('<guest-user-token>');
 }
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication using ReportServerTokenSettings
 import { ReportServerTokenSettings } from '@progress/telerik-common-report-viewer';
 
@@ -316,9 +316,9 @@ reportServer: ReportServerTokenSettings = new ReportServerTokenSettings(
   'https://my-report-server-net/',
   () => Promise.resolve('<personal-access-token>')
 );
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET - Username/password authentication -->
 <reporting-angular-viewer
   [reportServer]="{
@@ -330,9 +330,9 @@ reportServer: ReportServerTokenSettings = new ReportServerTokenSettings(
     report: 'Samples/Dashboard'
   }">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Username/password authentication using ReportServerSettings
 import { ReportServerSettings } from '@progress/telerik-common-report-viewer';
 
@@ -341,9 +341,9 @@ reportServer: ReportServerSettings = new ReportServerSettings(
   'myUser',
   'myPassword'
 );
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET Framework 4.6.2 - Username/password authentication -->
 <reporting-angular-viewer
   [reportServer]="{
@@ -355,9 +355,9 @@ reportServer: ReportServerSettings = new ReportServerSettings(
     report: 'Samples/Dashboard'
   }">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET Framework 4.6.2 - Username/password authentication using ReportServerSettings
 import { ReportServerSettings } from '@progress/telerik-common-report-viewer';
 
@@ -366,9 +366,9 @@ reportServer: ReportServerSettings = new ReportServerSettings(
   'myUser',
   'myPassword'
 );
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET Framework 4.6.2 - Guest account (requires Guest enabled on server) -->
 <reporting-angular-viewer
   [reportServer]="{
@@ -378,9 +378,9 @@ reportServer: ReportServerSettings = new ReportServerSettings(
     report: 'Samples/Dashboard'
   }">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Complete example with Report Server for .NET using Token authentication
 import { Component } from '@angular/core';
 import { ReportServerTokenSettings, ReportSource } from '@progress/telerik-common-report-viewer';
@@ -406,7 +406,7 @@ export class AppComponent {
     return Promise.resolve('<personal-access-token>');
   }
 }
-````
+```
 
 
 ## reportSource
@@ -419,18 +419,18 @@ Specifies the report and initial report parameter values to be displayed. The re
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
   [reportSource]="reportSource">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 reportSource: ReportSourceOptions = {
  report: 'Dashboard.trdx', // or '{Category}/{ReportName}' when connected to a Report Server
  parameters: { ReportYear: 2004 }
 };
-````
+```
 
 
 ## scale
@@ -443,15 +443,15 @@ Sets the scale factor for the report pages. The scale takes effect when the scal
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [scale]="scale">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 scale: number = 1.5 // 150% scale
-````
+```
 
 
 ## scaleMode
@@ -464,15 +464,15 @@ Sets how the report pages are scaled.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [scaleMode]="scaleMode">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 scaleMode: ScaleMode = 'fitPageWidth';
-````
+```
 
 
 ## serviceType
@@ -485,15 +485,15 @@ Specifies the type of service that the report viewer will connect to.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [serviceType]="serviceType">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 serviceType: ServiceType = 'reportServer';
-````
+```
 
 
 ## serviceUrl
@@ -506,15 +506,15 @@ Sets the address of the Reporting REST Service. Required when serviceType is 'RE
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [serviceUrl]="serviceUrl">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 serviceUrl: string = 'https://demos.telerik.com/reporting/api/reports';
-````
+```
 
 
 ## viewMode
@@ -527,15 +527,15 @@ Sets the view mode of the report viewer.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [viewMode]="viewMode">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 viewMode: ViewMode = 'printPreview';
-````
+```
 
 
 ## width
@@ -548,13 +548,13 @@ Sets the width of the report viewer container.
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  [width]="width">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 width: string = '800px';
-````
+```
 

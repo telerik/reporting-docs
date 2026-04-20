@@ -43,9 +43,9 @@ List of available commands:
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.commands.print.exec(); // Execute print command
 viewer.commands.refresh.exec(); // Refresh report
 viewer.commands.goToPage.exec(3); // Go to page 3
-````
+```
 

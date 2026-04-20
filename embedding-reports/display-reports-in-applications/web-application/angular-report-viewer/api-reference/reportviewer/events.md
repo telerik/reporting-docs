@@ -19,17 +19,17 @@ Callback function executed when an error occurs in the report viewer. The event 
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [error]="error">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 error(e: any, args: any) {
   console.error('Report viewer error:', args);
 }
-````
+```
 
 
 ## exportBegin
@@ -38,17 +38,17 @@ Callback function executed prior to starting the report export command. The even
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [exportBegin]="exportBegin">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 exportBegin(e: any, args: any) {
   console.log('Export is about to begin:', args);
 }
-````
+```
 
 
 ## exportEnd
@@ -57,17 +57,17 @@ Callback function executed when the exported document is ready for download, but
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [exportEnd]="exportEnd">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 exportEnd(e: any, args: any) {
   console.log('Export has ended:', args);
 }
-````
+```
 
 
 ## interactiveActionEnter
@@ -76,17 +76,17 @@ Callback function executed when the mouse cursor enters the area of an interacti
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [interactiveActionEnter]="interactiveActionEnter">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 interactiveActionEnter(e: any, args: any) {
   console.log('Hovering over interactive action area:', args);
 }
-````
+```
 
 
 ## interactiveActionExecuting
@@ -95,17 +95,17 @@ Callback function executed before an interactive action is executed, providing t
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [interactiveActionExecuting]="interactiveActionExecuting">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 interactiveActionExecuting(e: any, args: any) {
   console.log('Interactive action is executing:', args);
 }
-````
+```
 
 
 ## interactiveActionLeave
@@ -114,17 +114,17 @@ Callback function executed when the mouse cursor leaves the area of an interacti
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [interactiveActionLeave]="interactiveActionLeave">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 interactiveActionLeave(e: any, args: any) {
   console.log('Leaving interactive action area:', args);
 }
-````
+```
 
 
 ## pageReady
@@ -133,17 +133,17 @@ Callback function executed every time a page from the report is rendered and rea
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [pageReady]="pageReady">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 pageReady(e: any, args: any) {
   console.log('Page is ready:', args);
 }
-````
+```
 
 
 ## printBegin
@@ -152,17 +152,17 @@ Callback function executed prior to starting the print report command. The event
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [printBegin]="printBegin">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 printBegin(e: any, args: any) {
   console.log('Print is about to begin:', args);
 }
-````
+```
 
 
 ## printEnd
@@ -171,17 +171,17 @@ Callback function executed when the print document (PDF) is ready for download, 
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [printEnd]="printEnd">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 printEnd(e: any, args: any) {
   console.log('Print has ended:', args);
 }
-````
+```
 
 
 ## ready
@@ -190,17 +190,17 @@ Callback function executed when the viewer content has been loaded and is ready.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [ready]="ready">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 ready() {
   console.log('Report viewer is ready');
 }
-````
+```
 
 
 ## renderingBegin
@@ -209,13 +209,13 @@ Callback function executed when the rendering of the report begins. The event ha
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [renderingBegin]="renderingBegin">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 renderingBegin(e: any, args: any) {
   // The deviceInfo property can be used to pass a specific culture to the REST Service so it renders the report with it.
   const culture = "yourCulture";
@@ -223,7 +223,7 @@ renderingBegin(e: any, args: any) {
   args.deviceInfo["CurrentUICulture"] = culture;
   console.log('Rendering has begun:', args);
 }
-````
+```
 
 
 ## renderingEnd
@@ -232,17 +232,17 @@ Callback function executed when the rendering of the report ends. The event hand
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [renderingEnd]="renderingEnd">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 renderingEnd(e: any, args: any) {
   console.log('Rendering has ended:', args);
 }
-````
+```
 
 
 ## sendEmailBegin
@@ -251,17 +251,17 @@ Callback function executed before the report is exported and the email message i
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [sendEmailBegin]="sendEmailBegin">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 sendEmailBegin(e: any, args: any) {
   console.log('Send email is about to begin:', args);
 }
-````
+```
 
 
 ## sendEmailEnd
@@ -270,17 +270,17 @@ Callback function executed after the report is exported and before the email mes
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [sendEmailEnd]="sendEmailEnd">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 sendEmailEnd(e: any, args: any) {
   console.log('Send email has ended:', args);
 }
-````
+```
 
 
 ## updateUi
@@ -289,17 +289,17 @@ Callback function executed every time the UI needs an update. Can be used for ch
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [updateUi]="updateUi">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 updateUi(e: any) {
   console.log('Update UI:', e);
 }
-````
+```
 
 
 ## viewerToolTipOpening
@@ -308,15 +308,15 @@ Callback function executed when a tooltip is being opened. The event handler rec
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [viewerToolTipOpening]="viewerToolTipOpening">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 viewerToolTipOpening(e: any, args: any) {
   console.log('Opening tooltip:', args);
 }
-````
+```
 

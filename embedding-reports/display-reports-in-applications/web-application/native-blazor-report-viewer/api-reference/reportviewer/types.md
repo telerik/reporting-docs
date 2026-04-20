@@ -267,7 +267,7 @@ Specifies the configuration details for connecting to a Telerik Report Server in
 
 ### Example
 
-````C#
+```C#
 @* Report Server for .NET - Token authentication (recommended) *@
 <ReportViewer>
     <ReportViewerSettings>
@@ -301,7 +301,7 @@ Specifies the configuration details for connecting to a Telerik Report Server in
         </ReportServerSettings>
     </ReportViewerSettings>
 </ReportViewer>
-````
+```
 
 
 ## ReportSourceOptions
@@ -317,7 +317,7 @@ Specifies a report and initial report parameter values.
 
 ### Example
 
-````C#
+```C#
 @code{
     public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Name.trdp",
         new Dictionary<string, object>
@@ -328,7 +328,7 @@ Specifies a report and initial report parameter values.
         }
     );
 }
-````
+```
 
 
 ## ReportViewer
@@ -391,7 +391,7 @@ Represents the Telerik Reporting Native Blazor Report Viewer component that allo
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Blazor
 @using Telerik.Blazor.Components
 @using Telerik.ReportViewer.BlazorNative
@@ -409,7 +409,7 @@ Represents the Telerik Reporting Native Blazor Report Viewer component that allo
         }
     );
 }
-````
+```
 
 
 ## Search
@@ -439,7 +439,7 @@ Represents the settings for the Send Email dialog in the Telerik Reporting Nativ
 
 ### Example
 
-````C#
+```C#
 <ReportViewer>
     <ReportViewerSettings>
         <SendEmailDialogSettings
@@ -452,7 +452,7 @@ Represents the settings for the Send Email dialog in the Telerik Reporting Nativ
         </SendEmailDialogSettings>
     </ReportViewerSettings>
 </ReportViewer>
-````
+```
 
 
 ## StopRendering

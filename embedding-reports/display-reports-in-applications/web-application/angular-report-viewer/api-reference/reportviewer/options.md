@@ -21,15 +21,15 @@ If provided, a Bearer token will be set in the Authorization header for every re
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [authenticationToken]="authenticationToken">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 authenticationToken: string = "your-authentication-token";
-````
+```
 
 
 ## checkedButtonClass
@@ -42,15 +42,15 @@ CSS class added to buttons when a command is in a checked state. Used with data 
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [checkedButtonClass]="checkedButtonClass">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 checkedButtonClass: string = "my-checked-button-class";
-````
+```
 
 
 ## containerStyle
@@ -63,13 +63,13 @@ CSS styles object for the report viewer's container element.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [containerStyle]="containerStyle">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 containerStyle: any = {
   position: 'absolute',
   left: '5px',
@@ -78,7 +78,7 @@ containerStyle: any = {
   bottom: '5px',
   overflow: 'hidden'
 }
-````
+```
 
 
 ## disabledButtonClass
@@ -91,15 +91,15 @@ CSS class added to buttons when a command is in a disabled state. Used with data
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [disabledButtonClass]="disabledButtonClass">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 disabledButtonClass: string = "my-disabled-button-class";
-````
+```
 
 
 ## documentMapAreaPosition
@@ -112,15 +112,15 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [documentMapAreaPosition]="documentMapAreaPosition">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 documentMapAreaPosition: string = "RIGHT";
-````
+```
 
 
 ## documentMapVisible
@@ -133,15 +133,15 @@ Determines whether the viewer's document map is displayed when bookmarks are def
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [documentMapVisible]="documentMapVisible">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 documentMapVisible: boolean = false;
-````
+```
 
 
 ## enableAccessibility
@@ -154,15 +154,15 @@ Determines whether the viewer should provide accessibility features support.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [enableAccessibility]="enableAccessibility">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 enableAccessibility: boolean = true;
-````
+```
 
 
 ## id
@@ -175,10 +175,10 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 
 ### Example
 
-````html
+```HTML
 <tr-viewer #viewerId>
 </tr-viewer>
-````
+```
 
 
 ## initialPageAreaImageUrl
@@ -191,15 +191,15 @@ The image URL for the PageArea background image. Used only when parameter values
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [initialPageAreaImageUrl]="initialPageAreaImageUrl">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 initialPageAreaImageUrl: string = "https://site.com/path/initialPageAreaImage.png";
-````
+```
 
 
 ## keepClientAlive
@@ -212,15 +212,15 @@ Determines whether the client will be kept alive. When true, prevents client exp
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [keepClientAlive]="keepClientAlive">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 keepClientAlive: boolean = false;
-````
+```
 
 
 ## localizationResources
@@ -233,19 +233,19 @@ An object containing all or a subset of the viewer's localization resources in a
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [localizationResources]="localizationResources">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 localizationResources: any = {
   loadingFormats: "Loading...",
   loadingReport: "Loading report...",
   loadingParameters: "Loading parameters...",
 }
-````
+```
 
 
 ## pageMode
@@ -261,15 +261,15 @@ Sets if the report is displayed in single page or continuous scroll mode.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [pageMode]="pageMode">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 pageMode: string = "SINGLE_PAGE";
-````
+```
 
 
 ## parameterEditors
@@ -323,13 +323,13 @@ The 'createEditor' method should return a parameter editor object with the follo
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [parameterEditors]="parameterEditors">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
   parameterEditors: any = [
   {
       match: function (parameter: any) {
@@ -365,7 +365,7 @@ The 'createEditor' method should return a parameter editor object with the follo
       }
   }
 ];
-````
+```
 
 
 ## parameters
@@ -384,20 +384,20 @@ The 'editors' object has two properties for the two parameter types:
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [parameters]="parameters">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 parameters: any = {
   editors: {
     singleSelect: 'COMBO_BOX',
     multiSelect: 'COMBO_BOX'
   }
 }
-````
+```
 
 
 ## parametersAreaPosition
@@ -410,15 +410,15 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [parametersAreaPosition]="parametersAreaPosition">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 parametersAreaPosition: string = "LEFT";
-````
+```
 
 
 ## parametersAreaVisible
@@ -431,15 +431,15 @@ Determines whether the viewer's parameters area is displayed by default when par
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [parametersAreaVisible]="parametersAreaVisible">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 parametersAreaVisible: boolean = false;
-````
+```
 
 
 ## persistSession
@@ -452,15 +452,15 @@ Sets whether the viewer's client session should be persisted between page refres
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [persistSession]="persistSession">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 persistSession: boolean = true;
-````
+```
 
 
 ## printMode
@@ -477,15 +477,15 @@ Specifies how the viewer should print reports.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [printMode]="printMode">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 printMode: string = "FORCE_PDF_FILE";
-````
+```
 
 
 ## reportServer
@@ -510,7 +510,7 @@ Required when not using serviceUrl.
 
 ### Example
 
-````html
+```HTML
 <!-- Report Server for .NET - Token authentication (recommended) -->
 <tr-viewer
   [reportServer]="{
@@ -521,16 +521,16 @@ Required when not using serviceUrl.
     report: 'Samples/Dashboard'
   }">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication (recommended)
 getPersonalAccessToken() {
   return Promise.resolve('<personal-access-token>');
 }
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET - Token authentication with secure endpoint -->
 <tr-viewer
   [reportServer]="{
@@ -541,17 +541,17 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication with secure endpoint
 getPersonalAccessToken() {
   return fetch('/rs-token')
     .then(response => response.text());
 }
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET - Token authentication with Guest user token -->
 <tr-viewer
   [reportServer]="{
@@ -562,16 +562,16 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Report Server for .NET - Token authentication with Guest user token
 getPersonalAccessToken() {
   return Promise.resolve('<guest-user-token>');
 }
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET - Username/password authentication -->
 <tr-viewer
   [reportServer]="{
@@ -583,9 +583,9 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </tr-viewer>
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET Framework 4.6.2 - Username/password authentication -->
 <tr-viewer
   [reportServer]="{
@@ -597,9 +597,9 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </tr-viewer>
-````
+```
 
-````html
+```HTML
 <!-- Report Server for .NET Framework 4.6.2 - Guest account (requires Guest enabled on server) -->
 <tr-viewer
   [reportServer]="{
@@ -609,9 +609,9 @@ getPersonalAccessToken() {
     report: 'Samples/Dashboard'
   }">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 // Complete example with Report Server for .NET using Token authentication
 export class AppComponent {
   reportServer = {
@@ -630,7 +630,7 @@ export class AppComponent {
     return Promise.resolve('<personal-access-token>');
   }
 }
-````
+```
 
 
 ## reportSource
@@ -647,13 +647,13 @@ Available properties:
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [reportSource]="reportSource">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 reportSource: any ={
   report: 'Report1.trdp', // or '{Category}/{ReportName}' when connected to a Report Server
   parameters: {
@@ -662,7 +662,7 @@ reportSource: any ={
     param3: true
   }
 }
-````
+```
 
 
 ## scale
@@ -675,15 +675,15 @@ Sets the scale factor for the report pages. Takes effect when scaleMode is set t
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [scale]="scale">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 scale: number = 1.5;
-````
+```
 
 
 ## scaleMode
@@ -700,15 +700,15 @@ Sets how the report pages should be scaled.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [scaleMode]="scaleMode">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 scaleMode: string = "SPECIFIC";
-````
+```
 
 
 ## searchMetadataOnDemand
@@ -721,15 +721,15 @@ Determines whether search metadata will be delivered on demand (true) or by defa
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [searchMetadataOnDemand]="searchMetadataOnDemand">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 searchMetadataOnDemand: boolean = true;
-````
+```
 
 
 ## selector
@@ -742,15 +742,15 @@ A selector used in conjunction with the data attributes. Required when commands 
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [selector]="selector">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 selector: string = ".my-custom-selector";
-````
+```
 
 
 ## sendEmail
@@ -772,13 +772,13 @@ Available properties:
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [sendEmail]="sendEmail">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 sendEmail: any = {
   enabled: true,
   from: 'sender@company.com',
@@ -788,7 +788,7 @@ sendEmail: any = {
   body: 'Please find the report attached.',
   format: 'PDF'
 }
-````
+```
 
 
 ## serviceUrl
@@ -801,15 +801,15 @@ Sets the address of the Report REST Service. Required when not using reportServe
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [serviceUrl]="serviceUrl">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 serviceUrl: string = 'https://demos.telerik.com/reporting/api/reports';
-````
+```
 
 
 ## templateUrl
@@ -822,15 +822,15 @@ Sets the address of the HTML page that contains the viewer templates. If omitted
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [templateUrl]="templateUrl">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 templateUrl: string = "https://site.com/path/reportViewerTemplate.html";
-````
+```
 
 
 ## viewMode
@@ -846,13 +846,13 @@ Sets if the report is displayed in interactive mode or print preview.
 
 ### Example
 
-````html
+```HTML
 <tr-viewer
   [viewMode]="viewMode">
 </tr-viewer>
-````
+```
 
-````typescript
+```TypeScript
 viewMode: string = "PRINT_PREVIEW";
-````
+```
 

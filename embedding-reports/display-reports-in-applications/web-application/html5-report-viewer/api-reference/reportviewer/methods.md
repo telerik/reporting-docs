@@ -23,13 +23,13 @@ Gets or sets the accessibility key map for keyboard navigation. Allows customiza
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current accessibility key map
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var keyMap = viewer.accessibilityKeyMap();
-````
+```
 
-````JavaScript
+```JavaScript
 // Set a custom accessibility key map
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.accessibilityKeyMap(
@@ -40,7 +40,7 @@ reportViewer.accessibilityKeyMap(
     MENU_AREA_KEY: 85, //U
     PARAMETERS_AREA_KEY: 80 //P
 });
-````
+```
 
 
 ## authenticationToken
@@ -55,11 +55,11 @@ Sets the authentication token. Used for service requests.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set the authentication token for the viewer
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.authenticationToken("YOUR_AUTH_TOKEN");
-````
+```
 
 
 ## bind
@@ -75,21 +75,21 @@ Binds event handlers to the specified event.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Bind to the 'pageReady' event
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.bind(telerikReportViewer.Events.PAGE_READY, function(e, args) {
   console.log("Page is ready!", args);
 });
-````
+```
 
-````JavaScript
+```JavaScript
 // Bind to the 'error' event
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.bind(telerikReportViewer.Events.ERROR, function(e, args) {
   alert("An error occurred: " + args);
 });
-````
+```
 
 
 ## clearReportSource
@@ -98,11 +98,11 @@ Clears the current reportSource from the viewer's internal state and its persist
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Clear the report source and force the viewer to respect a new reportSource on postback
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.clearReportSource();
-````
+```
 
 
 ## currentPage
@@ -111,11 +111,11 @@ Gets the viewer’s current page that is displayed.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current page number
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var page = viewer.currentPage();
-````
+```
 
 
 ## dispose
@@ -124,11 +124,11 @@ Disposes the viewer instance, cleaning up resources and event handlers. After ca
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Dispose the viewer instance when it is no longer needed
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.dispose();
-````
+```
 
 
 ## getReportParameters
@@ -137,12 +137,12 @@ Returns an object with properties, the names of which are the report parameters�
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get all report parameters and log them
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var parameters = viewer.getReportParameters();
 console.log(parameters);
-````
+```
 
 
 ## isReportAutoRun
@@ -151,11 +151,11 @@ Returns whether auto-run is enabled for the report (i.e., whether the report run
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Check if auto-run is enabled for the report
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var isReportAutoRun = viewer.isReportAutoRun();
-````
+```
 
 
 ## pageCount
@@ -164,11 +164,11 @@ Gets the total page count of the viewer’s currently displayed report.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the total number of pages in the current report
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var totalPages = viewer.pageCount();
-````
+```
 
 
 ## pageMode
@@ -183,17 +183,17 @@ Gets or sets the page mode (e.g., Single Page or Continuous Scroll).
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current page mode
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var pageMode = viewer.pageMode();
-````
+```
 
-````JavaScript
+```JavaScript
 // Set the page mode to Single Page
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
-````
+```
 
 
 ## parametersAreaVisible
@@ -208,17 +208,17 @@ Shows or hides the parameters area in the viewer UI.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Show the parameters area
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.parametersAreaVisible(true);
-````
+```
 
-````JavaScript
+```JavaScript
 // Hide the parameters area
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.parametersAreaVisible(false);
-````
+```
 
 
 ## printMode
@@ -233,17 +233,17 @@ Gets or sets the print mode for the viewer.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current print mode
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var printMode = viewer.printMode();
-````
+```
 
-````JavaScript
+```JavaScript
 // Set the print mode to Force PDF File
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.printMode(telerikReportViewer.PrintModes.FORCE_PDF_FILE);
-````
+```
 
 
 ## refreshReport
@@ -258,17 +258,17 @@ Refreshes the currently loaded report. Forces the viewer to reload the report fr
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Refresh the report, ignoring cache (default)
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.refreshReport();
-````
+```
 
-````JavaScript
+```JavaScript
 // Refresh the report, using cache if available
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.refreshReport(false);
-````
+```
 
 
 ## reportSource
@@ -283,26 +283,26 @@ Gets or sets the report source for the viewer. When called with an argument, set
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current report source
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var currentSource = viewer.reportSource();
-````
+```
 
-````JavaScript
+```JavaScript
 // Set a new report source
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.reportSource({
   report: "MyReport",
   parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }
 });
-````
+```
 
-````JavaScript
+```JavaScript
 // Clear the report source
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.reportSource(null);
-````
+```
 
 
 ## scale
@@ -319,17 +319,17 @@ Gets or sets the scale and scale mode for the viewer.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current scale and scale mode
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var scaleInfo = viewer.scale();
-````
+```
 
-````JavaScript
+```JavaScript
 // Set scale to 1.2 and scale mode to FIT_PAGE_WIDTH
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.scale({ scale: 1.2, scaleMode: telerikReportViewer.ScaleModes.FIT_PAGE_WIDTH });
-````
+```
 
 
 ## unbind
@@ -345,11 +345,11 @@ Unbinds an event handler from a viewer event.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Unbind all handlers from the 'error' event
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.unbind(telerikReportViewer.Events.ERROR);
-````
+```
 
 
 ## viewMode
@@ -364,15 +364,15 @@ Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get the current view mode
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 var mode = viewer.viewMode();
-````
+```
 
-````JavaScript
+```JavaScript
 // Set the view mode to Print Preview
 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
 viewer.viewMode(telerikReportViewer.ViewModes.PRINT_PREVIEW);
-````
+```
 

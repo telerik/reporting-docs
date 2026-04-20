@@ -24,11 +24,11 @@ Binds an event handler to a report viewer event.
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.bind('ready', () => {
   console.log('Report viewer is ready');
 });
-````
+```
 
 
 ## clearReportSource
@@ -37,9 +37,9 @@ Clears the current report source from the viewer's internal state and from its p
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.clearReportSource();
-````
+```
 
 
 ## currentPage
@@ -48,10 +48,10 @@ Gets the viewer's current page that is displayed. The current page number
 
 ### Example
 
-````typescript
+```TypeScript
 const currentPageNum = viewer.currentPage();
 console.log(`Current page: ${currentPageNum}`);
-````
+```
 
 
 ## dispose
@@ -60,9 +60,9 @@ Stops sending keep alive requests to the server and performs cleanup. Called aut
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.dispose();
-````
+```
 
 
 ## getAccessibilityKeyMap
@@ -79,11 +79,11 @@ JSON object containing accessibility key mappings
 
 ### Example
 
-````typescript
+```TypeScript
 const keyMap = viewer.getAccessibilityKeyMap();
 console.log(keyMap.CONFIRM_KEY); // Default: 13 (Enter)
 console.log(keyMap.MENU_AREA_KEY); // Default: 77 ('m')
-````
+```
 
 
 ## getPageMode
@@ -92,9 +92,9 @@ Gets the viewer's current page mode. The current page mode string ("SINGLE_PAGE"
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.getPageMode();
-````
+```
 
 
 ## getReportParameters
@@ -103,12 +103,12 @@ Returns an immutable array of name-value objects representing the current evalua
 
 ### Example
 
-````typescript
+```TypeScript
 const params = viewer.getReportParameters();
 params.forEach(param => {
   console.log(`${param.name}: ${param.value}`);
 });
-````
+```
 
 
 ## getReportSource
@@ -117,11 +117,11 @@ Gets the current report source (report and parameters). Object containing report
 
 ### Example
 
-````typescript
+```TypeScript
 const source = viewer.getReportSource();
 console.log(source.report); // Report identifier
 console.log(source.parameters); // Report parameters
-````
+```
 
 
 ## getScale
@@ -130,11 +130,11 @@ Gets the viewer's scale factor and scale mode. Object with scale and scaleMode p
 
 ### Example
 
-````typescript
+```TypeScript
 const scaleInfo = viewer.getScale();
 console.log(scaleInfo.scale); // e.g., 1.0
 console.log(scaleInfo.scaleMode); // e.g., "SPECIFIC"
-````
+```
 
 
 ## getViewMode
@@ -143,9 +143,9 @@ Gets the current view mode. The current view mode string ("INTERACTIVE" or "PRIN
 
 ### Example
 
-````typescript
+```TypeScript
 console.log(viewer.getViewMode());
-````
+```
 
 
 ## pageCount
@@ -154,10 +154,10 @@ Gets the total page count of the currently displayed report. The total number of
 
 ### Example
 
-````typescript
+```TypeScript
 const totalPages = viewer.pageCount();
 console.log(`Total pages: ${totalPages}`);
-````
+```
 
 
 ## refreshReport
@@ -166,9 +166,9 @@ Reloads/refreshes the current report. The current ReportViewer object
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.refreshReport();
-````
+```
 
 
 ## setAccessibilityKeyMap
@@ -191,13 +191,13 @@ The keys in the key map are:
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.setAccessibilityKeyMap({
   CONFIRM_KEY: 13,
   MENU_AREA_KEY: 77,
   CONTENT_AREA_KEY: 67
 });
-````
+```
 
 
 ## setAuthenticationToken
@@ -212,9 +212,9 @@ Sets the authentication token for REST service requests. The current ReportViewe
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.setAuthenticationToken("your-authentication-token");
-````
+```
 
 
 ## setPageMode
@@ -229,9 +229,9 @@ Sets the page mode and automatically reloads the current report. The current Rep
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.setPageMode("SINGLE_PAGE");
-````
+```
 
 
 ## setReportSource
@@ -246,12 +246,12 @@ Sets the report source (report and parameters). Automatically reloads the report
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.setReportSource({
   report: 'NewReport.trdp',
   parameters: { param1: 'value1' }
 });
-````
+```
 
 
 ## setScale
@@ -266,12 +266,12 @@ Sets the scale factor and scale mode. The current ReportViewer object
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.setScale({
   scale: 1.5,
   scaleMode: 'SPECIFIC'
 });
-````
+```
 
 
 ## setViewMode
@@ -286,9 +286,9 @@ Sets the view mode and automatically reloads the current report. The current Rep
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.setViewMode('PRINT_PREVIEW');
-````
+```
 
 
 ## unbind
@@ -304,9 +304,9 @@ Unbinds a specific event handler from a report viewer event.
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.unbind('ready', this.readyHandler);
-````
+```
 
 
 ## unbindAll
@@ -321,7 +321,7 @@ Unbinds all event handlers from a specific report viewer event.
 
 ### Example
 
-````typescript
+```TypeScript
 viewer.unbindAll('ready');
-````
+```
 

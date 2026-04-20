@@ -17,7 +17,7 @@ Attaches an event handler that will be called when an error occurs. The error ev
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example of using the Error method to handle report viewer errors *@
@@ -33,7 +33,7 @@ Attaches an event handler that will be called when an error occurs. The error ev
         alert("An error occurred in the report viewer.");
     }
 </script>
-````
+```
 
 
 ## ExportBegin
@@ -42,7 +42,7 @@ Attaches an event handler that will be called prior to starting the report expor
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -68,7 +68,7 @@ Attaches an event handler that will be called prior to starting the report expor
         }
     </script>
 }
-````
+```
 
 
 ## ExportEnd
@@ -77,7 +77,7 @@ Attaches an event handler that will be called when the exported document is read
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -103,7 +103,7 @@ Attaches an event handler that will be called when the exported document is read
     </script>
     @(Html.TelerikReporting().DeferredScripts())
 }
-````
+```
 
 
 ## InteractiveActionEnter
@@ -112,7 +112,7 @@ Attaches an event handler that will be called when the mouse cursor enters the a
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -140,7 +140,7 @@ Attaches an event handler that will be called when the mouse cursor enters the a
         }
     </script>
 }
-````
+```
 
 
 ## InteractiveActionExecuting
@@ -149,7 +149,7 @@ Attaches an event handler that will be called when an interactive action is exec
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -173,7 +173,7 @@ Attaches an event handler that will be called when an interactive action is exec
         }
     </script>
 }
-````
+```
 
 
 ## InteractiveActionLeave
@@ -182,7 +182,7 @@ Attaches an event handler that will be called when the mouse cursor leaves the a
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -210,7 +210,7 @@ Attaches an event handler that will be called when the mouse cursor leaves the a
         }
     </script>
 }
-````
+```
 
 
 ## PageReady
@@ -219,7 +219,7 @@ Attaches an event handler that will be called every time a page from the report 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -245,7 +245,7 @@ Attaches an event handler that will be called every time a page from the report 
         }
     </script>
 }
-````
+```
 
 
 ## PrintBegin
@@ -254,7 +254,7 @@ Attaches an event handler that will be called prior to starting the print report
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -277,7 +277,7 @@ Attaches an event handler that will be called prior to starting the print report
     </script>
     @(Html.TelerikReporting().DeferredScripts())
 }
-````
+```
 
 
 ## PrintEnd
@@ -286,7 +286,7 @@ Attaches an event handler that will be called when the print document (Adobe PDF
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 <!--
@@ -307,7 +307,7 @@ Attaches an event handler that will be called when the print document (Adobe PDF
         }
     </script>
 }
-````
+```
 
 
 ## Ready
@@ -316,7 +316,7 @@ Attaches an event handler that will be called when the report viewer template is
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -341,7 +341,7 @@ Attaches an event handler that will be called when the report viewer template is
     </script>
     @(Html.TelerikReporting().DeferredScripts())
 }
-````
+```
 
 
 ## RenderingBegin
@@ -350,7 +350,7 @@ Attaches an event handler that will be called when the rendering of the report b
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -376,7 +376,7 @@ Attaches an event handler that will be called when the rendering of the report b
     </script>
     @(Html.TelerikReporting().DeferredScripts())
 }
-````
+```
 
 
 ## RenderingEnd
@@ -385,7 +385,7 @@ Attaches an event handler that will be called when the rendering of the report e
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -410,7 +410,7 @@ Attaches an event handler that will be called when the rendering of the report e
     </script>
     @(Html.TelerikReporting().DeferredScripts())
 }
-````
+```
 
 
 ## UpdateUi
@@ -419,7 +419,7 @@ Attaches an event handler that will be called every time the UI needs an update;
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -443,7 +443,7 @@ Attaches an event handler that will be called every time the UI needs an update;
         }
     </script>
 }
-````
+```
 
 
 ## ViewerToolTipOpening
@@ -452,7 +452,7 @@ Attaches an event handler that will be called when a tooltip is being opened. Th
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -482,5 +482,5 @@ Attaches an event handler that will be called when a tooltip is being opened. Th
         }
     </script>
 }
-````
+```
 

@@ -21,9 +21,9 @@ Gets or sets the key shortcuts map used when the report viewer is in accessible 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer AccessibilityKeyMap="@(new AccessibilityKeyMap())" />
-````
+```
 
 
 ## AuthenticationToken
@@ -36,9 +36,9 @@ Gets or sets the encoded authentication token used to authenticate the requests.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer AuthenticationToken="your-token-here" />
-````
+```
 
 
 ## CheckedButtonClass
@@ -51,9 +51,9 @@ Gets or sets the CSS class to be used by buttons in the checked state.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer CheckedButtonClass="btn-checked" />
-````
+```
 
 
 ## ClientEvents
@@ -66,7 +66,7 @@ Gets or sets the viewer's event handler function names as strings. The function 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ClientEvents="@(new ClientEventsOptions
               {
                   Ready = "onReady",
@@ -82,7 +82,7 @@ Gets or sets the viewer's event handler function names as strings. The function 
         console.log(args);
     }
 </script>
-````
+```
 
 
 ## Commands
@@ -95,7 +95,7 @@ Gets the available report viewer commands.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"/>
 <button @onclick="ExportToPdf">Export to PDF</button>
 <button @onclick="GoToPageThree">Go to Page 3</button>
@@ -116,7 +116,7 @@ Gets the available report viewer commands.
         await reportViewer.Commands.Print.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## DisabledButtonClass
@@ -129,9 +129,9 @@ Gets or sets the CSS class to be used by buttons in the disabled state.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer DisabledButtonClass="btn-disabled" />
-````
+```
 
 
 ## DocumentMapAreaPosition
@@ -144,9 +144,9 @@ Gets or sets the document map area position. Available positions: Left (Default)
 
 ### Example
 
-````C#
+```C#
 <ReportViewer DocumentMapAreaPosition="DocumentMapAreaPosition.Right" />
-````
+```
 
 
 ## DocumentMapVisible
@@ -159,9 +159,9 @@ Gets or sets a value indicating whether the viewer's document map is initially v
 
 ### Example
 
-````C#
+```C#
 <ReportViewer DocumentMapVisible="true" />
-````
+```
 
 
 ## EnableAccessibility
@@ -174,9 +174,9 @@ Gets or sets a value indicating whether the accessibility features of the report
 
 ### Example
 
-````C#
+```C#
 <ReportViewer EnableAccessibility="true" />
-````
+```
 
 
 ## InitialPageAreaImageUrl
@@ -189,9 +189,9 @@ Gets or sets the image URL for the PageArea background image. Used only when the
 
 ### Example
 
-````C#
+```C#
 <ReportViewer InitialPageAreaImageUrl="/images/loading-background.png" />
-````
+```
 
 
 ## KeepClientAlive
@@ -208,9 +208,9 @@ When set to false, the client will be left to expire.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer KeepClientAlive="true" />
-````
+```
 
 
 ## PageMode
@@ -227,9 +227,9 @@ Gets or sets the page mode.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer PageMode="PageMode.SinglePage" />
-````
+```
 
 
 ## ParameterEditors
@@ -242,7 +242,7 @@ Gets or sets the user-defined custom editors for the report parameters. Each cus
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ParameterEditors="@(new ParameterEditor[]
               {
                   new ParameterEditor
@@ -283,7 +283,7 @@ Gets or sets the user-defined custom editors for the report parameters. Each cus
         }
     }
 </script>
-````
+```
 
 
 ## Parameters
@@ -305,9 +305,9 @@ Gets or sets the parameters area position. Available positions: Right (Default).
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ParametersAreaPosition="ParametersAreaPosition.Top" />
-````
+```
 
 
 ## ParametersAreaVisible
@@ -320,9 +320,9 @@ Gets or sets a value indicating whether the viewer's parameters area is initiall
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ParametersAreaVisible="true" />
-````
+```
 
 
 ## PersistSession
@@ -335,9 +335,9 @@ Gets or sets a value indicating whether the viewer's client state will be persis
 
 ### Example
 
-````C#
+```C#
 <ReportViewer PersistSession="true" />
-````
+```
 
 
 ## PrintMode
@@ -355,9 +355,9 @@ Gets or sets the print mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer PrintMode="PrintMode.ForcePDFPlugin" />
-````
+```
 
 
 ## ReportServer
@@ -370,7 +370,7 @@ Gets or sets the connection data of the report server that hosts the reports. Wh
 
 ### Example
 
-````C#
+```C#
 @* Report Server for .NET - Token authentication (recommended) *@
 <ReportViewer ReportServer="@(new ReportServerOptions
               {
@@ -399,7 +399,7 @@ Gets or sets the connection data of the report server that hosts the reports. Wh
               {
                   Url = "https://demos.telerik.com/report-server/"
               })" />
-````
+```
 
 
 ## ReportSource
@@ -412,13 +412,13 @@ Gets or sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ReportSource="@(new ReportSourceOptions("Invoice.trdp", new Dictionary<string, object>
               {
                   {"OrderNumber", "SO43659"},
                   {"ForYear", 2024}
               }))" />
-````
+```
 
 
 ## Scale
@@ -431,9 +431,9 @@ Gets or sets the zoom ratio of the report. ScaleMode needs to be set to Specific
 
 ### Example
 
-````C#
+```C#
 <ReportViewer Scale="1.5" />
-````
+```
 
 
 ## ScaleMode
@@ -451,9 +451,9 @@ Gets or sets the scale mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ScaleMode="ScaleMode.FitPageWidth" />
-````
+```
 
 
 ## SearchMetadataOnDemand
@@ -466,9 +466,9 @@ Gets or sets a value indicating whether the search metadata will be delivered on
 
 ### Example
 
-````C#
+```C#
 <ReportViewer SearchMetadataOnDemand="true" />
-````
+```
 
 
 ## Selector
@@ -481,9 +481,9 @@ Gets or sets a selector that is used in conjunction with data attributes (see ht
 
 ### Example
 
-````C#
+```C#
 <ReportViewer Selector="#myReportViewerSelector" />
-````
+```
 
 
 ## SendEmail
@@ -496,7 +496,7 @@ Gets or sets the default send e-mail message options.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer SendEmail="@(new SendEmailOptions
               {
                   Enabled = true,
@@ -506,7 +506,7 @@ Gets or sets the default send e-mail message options.
                   Body = "Please find the attached report.",
                   Format = "PDF"
               })" />
-````
+```
 
 
 ## ServiceUrl
@@ -519,9 +519,9 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports" />
-````
+```
 
 
 ## TemplateUrl
@@ -534,9 +534,9 @@ Gets or sets the URL for the report viewer template. A customized template can b
 
 ### Example
 
-````C#
+```C#
 <ReportViewer TemplateUrl="/custom-report-template.html" />
-````
+```
 
 
 ## ViewerId
@@ -549,9 +549,9 @@ Gets or sets the unique identifier of the ReportViewer instance.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ViewerId="MyReportViewer1" />
-````
+```
 
 
 ## ViewMode
@@ -568,7 +568,7 @@ Gets or sets the view mode.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ViewMode="ViewMode.PrintPreview" />
-````
+```
 

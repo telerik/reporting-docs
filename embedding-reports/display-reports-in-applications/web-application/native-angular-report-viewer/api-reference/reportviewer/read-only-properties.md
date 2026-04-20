@@ -21,11 +21,11 @@ Gets whether the report's AutoRun setting is enabled. true if the AutoRun settin
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.autoRunEnabled) {
  console.log("This report's AutoRun setting is enabled.");
 }
-````
+```
 
 
 ## displayDocumentMap
@@ -38,11 +38,11 @@ Gets whether the document map is displayed. true if the document map is displaye
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.displayDocumentMap) {
  console.log("This report's document map is displayed.");
 }
-````
+```
 
 
 ## displayParameterArea
@@ -55,11 +55,11 @@ Gets whether the parameter area is displayed. true if the parameter area is disp
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.displayParameterArea) {
  console.log("This report's parameter area is displayed.");
 }
-````
+```
 
 
 ## getDocumentMapNodes
@@ -72,9 +72,9 @@ Gets the current report's document map nodes if any. an array of DocumentMapNode
 
 ### Example
 
-````typescript
+```TypeScript
 console.log("Document map nodes:", JSON.stringify(this.viewer.getDocumentMapNodes));
-````
+```
 
 
 ## getRenderingExtensions
@@ -87,9 +87,9 @@ Gets the current report's rendering extensions. an array of RenderingExtension o
 
 ### Example
 
-````typescript
+```TypeScript
 console.log("Rendering extensions:", JSON.stringify(this.viewer.getRenderingExtensions));
-````
+```
 
 
 ## hasLazyParameters
@@ -102,11 +102,11 @@ Gets whether the current report has parameters that have AutoRefresh disabled. t
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.hasLazyParameters) {
  console.log("This report has lazy parameters.");
 }
-````
+```
 
 
 ## isAiPromptWindowOpen
@@ -119,11 +119,11 @@ Gets whether the AI prompt window is currently open. true if the AI assistant di
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.isAiPromptWindowOpen) {
  console.log("The AI prompt window is currently open.");
 }
-````
+```
 
 
 ## isDocumentMapAvailable
@@ -136,11 +136,11 @@ Gets whether the document map is available for the current report. True if the r
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.isDocumentMapAvailable) {
  console.log("This report has a document map.");
 }
-````
+```
 
 
 ## isInPrintViewMode
@@ -153,11 +153,11 @@ Gets whether the viewer is in print preview mode. true if the viewer is in print
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.isInPrintViewMode) {
  console.log("The viewer is currently in print preview mode.");
 }
-````
+```
 
 
 ## isParametersSectionAvailable
@@ -170,11 +170,11 @@ Gets whether the current report has visible parameters. true if the report has v
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.isParametersSectionAvailable) {
  console.log("This report has visible parameters.");
 }
-````
+```
 
 
 ## isRenderingInProgress
@@ -187,11 +187,11 @@ Gets whether the current report is still being rendered. true if the report rend
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.isRenderingInProgress) {
  console.log("This report is still being rendered.");
 }
-````
+```
 
 
 ## isSearchWindowOpen
@@ -204,11 +204,11 @@ Gets whether the search window is currently open. True if the search dialog is v
 
 ### Example
 
-````typescript
+```TypeScript
 if (this.viewer.isSearchWindowOpen) {
  console.log("The search window is currently open.");
 }
-````
+```
 
 
 ## totalPages
@@ -221,7 +221,7 @@ Gets the total number of pages in the current report. The total page count of th
 
 ### Example
 
-````typescript
+```TypeScript
 console.log("The total number of pages in the current report are.", this.viewer.totalPages);
-````
+```
 

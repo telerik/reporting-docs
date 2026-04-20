@@ -26,9 +26,9 @@ The available export options are:
 
 ### Type Definition
 
-````typescript
+```TypeScript
 type ExportFormat = "pdf" | "csv" | "xlsx" | "pptx" | "rtf" | "image" | "docx";
-````
+```
 
 
 ## PageMode
@@ -41,9 +41,9 @@ The available page modes are:
 
 ### Type Definition
 
-````typescript
+```TypeScript
 type PageMode = "continuousScroll" | "singlePage";
-````
+```
 
 
 ## PrintMode
@@ -58,9 +58,9 @@ and whether the PDF plug-in is available or not.
 
 ### Type Definition
 
-````typescript
+```TypeScript
 type PrintMode = "autoSelect" | "forcePDFPlugin" | "forcePDFFile";
-````
+```
 
 
 ## ScaleMode
@@ -74,9 +74,9 @@ The available scale modes are:
 
 ### Type Definition
 
-````typescript
+```TypeScript
 type ScaleMode = "fitPageWidth" | "fitPage" | "specific";
-````
+```
 
 
 ## ServiceType
@@ -89,9 +89,9 @@ The available service types are:
 
 ### Type Definition
 
-````typescript
+```TypeScript
 type ServiceType = "REST" | "reportServer";
-````
+```
 
 
 ## ViewMode
@@ -104,7 +104,7 @@ The available view modes are:
 
 ### Type Definition
 
-````typescript
+```TypeScript
 type ViewMode = "interactive" | "printPreview";
-````
+```
 

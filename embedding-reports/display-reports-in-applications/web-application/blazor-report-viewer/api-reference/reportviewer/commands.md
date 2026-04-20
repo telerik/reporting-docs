@@ -17,7 +17,7 @@ Gets the Export command. Execute to export the report in the specified format.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -30,7 +30,7 @@ Gets the Export command. Execute to export the report in the specified format.
         await reportViewer.Commands.Export.ExecuteAsync("PDF");
     }
 }
-````
+```
 
 
 ## GoToFirstPage
@@ -39,7 +39,7 @@ Gets the GoToFirstPage command. Execute to navigate to the first page of the rep
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -52,7 +52,7 @@ Gets the GoToFirstPage command. Execute to navigate to the first page of the rep
         await reportViewer.Commands.GoToFirstPage.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## GoToLastPage
@@ -61,7 +61,7 @@ Gets the GoToLastPage command. Execute to navigate to the last page of the repor
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -74,7 +74,7 @@ Gets the GoToLastPage command. Execute to navigate to the last page of the repor
         await reportViewer.Commands.GoToLastPage.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## GoToNextPage
@@ -83,7 +83,7 @@ Gets the GoToNextPage command. Execute to navigate to the next page of the repor
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -96,7 +96,7 @@ Gets the GoToNextPage command. Execute to navigate to the next page of the repor
         await reportViewer.Commands.GoToNextPage.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## GoToPage
@@ -105,7 +105,7 @@ Gets the GoToPage command. Execute to navigate to a specific page of the report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -118,7 +118,7 @@ Gets the GoToPage command. Execute to navigate to a specific page of the report.
         await reportViewer.Commands.GoToPage.ExecuteAsync(3);
     }
 }
-````
+```
 
 
 ## GoToPrevPage
@@ -127,7 +127,7 @@ Gets the GoToPrevPage command. Execute to navigate to the previous page of the r
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -140,7 +140,7 @@ Gets the GoToPrevPage command. Execute to navigate to the previous page of the r
         await reportViewer.Commands.GoToPrevPage.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## HistoryBack
@@ -149,7 +149,7 @@ Gets the HistoryBack command. Execute to navigate back to the previously rendere
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -162,7 +162,7 @@ Gets the HistoryBack command. Execute to navigate back to the previously rendere
         await reportViewer.Commands.HistoryBack.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## HistoryForward
@@ -171,7 +171,7 @@ Gets the HistoryForward command. Execute to navigate forward to the next report 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -184,7 +184,7 @@ Gets the HistoryForward command. Execute to navigate forward to the next report 
         await reportViewer.Commands.HistoryForward.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## Print
@@ -193,7 +193,7 @@ Gets the Print command. Execute to print the report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -206,7 +206,7 @@ Gets the Print command. Execute to print the report.
         await reportViewer.Commands.Print.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## Refresh
@@ -215,7 +215,7 @@ Gets the Refresh command. Execute to refresh the report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -228,7 +228,7 @@ Gets the Refresh command. Execute to refresh the report.
         await reportViewer.Commands.Refresh.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ToggleAiPromptDialog
@@ -237,7 +237,7 @@ Gets the ToggleAiPromptDialog command. Execute to show or hide the AI prompt dia
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -250,7 +250,7 @@ Gets the ToggleAiPromptDialog command. Execute to show or hide the AI prompt dia
         await reportViewer.Commands.ToggleAiPromptDialog.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ToggleDocumentMap
@@ -259,7 +259,7 @@ Gets the ToggleDocumentMap command. Execute to show or hide the document map.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -272,7 +272,7 @@ Gets the ToggleDocumentMap command. Execute to show or hide the document map.
         await reportViewer.Commands.ToggleDocumentMap.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ToggleParametersArea
@@ -281,7 +281,7 @@ Gets the ToggleParametersArea command. Execute to show or hide the parameters ar
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -294,7 +294,7 @@ Gets the ToggleParametersArea command. Execute to show or hide the parameters ar
         await reportViewer.Commands.ToggleParametersArea.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## TogglePrintPreview
@@ -303,7 +303,7 @@ Gets the TogglePrintPreview command. Execute to toggle between Print Preview and
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -316,7 +316,7 @@ Gets the TogglePrintPreview command. Execute to toggle between Print Preview and
         await reportViewer.Commands.TogglePrintPreview.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ToggleSearchDialog
@@ -325,7 +325,7 @@ Gets the ToggleSearchDialog command. Execute to show or hide the search dialog.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -338,7 +338,7 @@ Gets the ToggleSearchDialog command. Execute to show or hide the search dialog.
         await reportViewer.Commands.ToggleSearchDialog.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ToggleSendEmailDialog
@@ -347,7 +347,7 @@ Gets the ToggleSendEmailDialog command. Execute to show or hide the send email d
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -360,7 +360,7 @@ Gets the ToggleSendEmailDialog command. Execute to show or hide the send email d
         await reportViewer.Commands.ToggleSendEmailDialog.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ToggleZoomMode
@@ -369,7 +369,7 @@ Gets the ToggleZoomMode command. Execute to change the zoom mode of the report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -382,7 +382,7 @@ Gets the ToggleZoomMode command. Execute to change the zoom mode of the report.
         await reportViewer.Commands.ToggleZoomMode.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## Zoom
@@ -391,7 +391,7 @@ Gets the Zoom command. Execute to zoom the report to a specified ratio.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -404,7 +404,7 @@ Gets the Zoom command. Execute to zoom the report to a specified ratio.
         await reportViewer.Commands.Zoom.ExecuteAsync(0.5);
     }
 }
-````
+```
 
 
 ## ZoomIn
@@ -413,7 +413,7 @@ Gets the ZoomIn command. Execute to zoom in the report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -426,7 +426,7 @@ Gets the ZoomIn command. Execute to zoom in the report.
         await reportViewer.Commands.ZoomIn.ExecuteAsync();
     }
 }
-````
+```
 
 
 ## ZoomOut
@@ -435,7 +435,7 @@ Gets the ZoomOut command. Execute to zoom out the report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer"
               ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))" />
@@ -448,5 +448,5 @@ Gets the ZoomOut command. Execute to zoom out the report.
         await reportViewer.Commands.ZoomOut.ExecuteAsync();
     }
 }
-````
+```
 

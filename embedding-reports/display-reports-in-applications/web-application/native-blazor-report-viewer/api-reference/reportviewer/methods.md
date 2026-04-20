@@ -23,7 +23,7 @@ Executes a predefined command without passing any arguments. The available comma
 
 ### Example
 
-````C#
+```C#
 <ReportViewer
     @ref="reportViewer">
 </ReportViewer>
@@ -36,7 +36,7 @@ Executes a predefined command without passing any arguments. The available comma
         reportViewer.ExecuteCommand("ZoomOut");
     }
 }
-````
+```
 
 
 ## ExecuteCommand
@@ -57,7 +57,7 @@ Retrieves the report parameters for the currently loaded report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer 
     @ref="reportViewer">
 </ReportViewer>
@@ -70,5 +70,5 @@ Retrieves the report parameters for the currently loaded report.
         IDictionary<string, ReportParameterInfo> parameters = reportViewer.GetReportParameters();
     }
 }
-````
+```
 

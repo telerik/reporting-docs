@@ -17,17 +17,17 @@ Event emitted before the rendering of a report begins. Provides an opportunity t
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (beforeLoadReport)="beforeLoadReport()">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 beforeLoadReport() {
  console.log("This event will be emitted before the rendering of a report begins.");
 };
-````
+```
 
 
 ## beginLoadReport
@@ -36,17 +36,17 @@ Event emitted after the rendering of a report begins. Indicates that the report 
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (beginLoadReport)="beginLoadReport()">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 beginLoadReport() {
  console.log("This event will be emitted after the rendering of a report begins.");
 };
-````
+```
 
 
 ## currentPageChanged
@@ -55,18 +55,18 @@ Event emitted when the current page changes. Provides information about the new 
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (currentPageChanged)="currentPageChanged($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 currentPageChanged(currentPageChangedEventArgs: CurrentPageChangedEventArgs) {
  console.log("The page number and document id.", currentPageChangedEventArgs);
  console.log("This event will be emitted when the viewer changes its currently displayed page.");
 };
-````
+```
 
 
 ## error
@@ -77,12 +77,12 @@ Event emitted when an error occurs in the viewer. Provides error message details
 
 ### Example
 
-````typescript
+```TypeScript
 error(message: string) {
  console.log("The error message.", message);
  console.log("This event will be emitted when viewer encounters an error.");
 };
-````
+```
 
 
 ## exportDocumentReady
@@ -91,17 +91,17 @@ Event emitted after the viewer finishes exporting the report. Triggered when an 
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (exportDocumentReady)="exportDocumentReady($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 exportDocumentReady(exportDocumentReadyEventArgs: ExportDocumentReadyEventArgs) {
  console.log("This event will be emitted after the viewer finishes exporting the report.", exportDocumentReadyEventArgs);
 };
-````
+```
 
 
 ## exportStarted
@@ -110,17 +110,17 @@ Event emitted when an export operation is triggered. Fired at the start of any r
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (exportStarted)="exportStarted($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 exportStarted(exportStartedEventArgs: ExportStartedEventArgs) {
  console.log("This event will be emitted when an export operation is triggered.", exportStartedEventArgs);
 };
-````
+```
 
 
 ## interactiveActionEnter
@@ -129,18 +129,18 @@ Event emitted when the cursor hovers over an interactive action. Provides an obj
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (interactiveActionEnter)="interactiveActionEnter($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 interactiveActionEnter(interactiveActionArgs: PageActionEventArgs) {
  console.log("The interactive action arguments.", interactiveActionArgs);
  console.log("This event will be emitted when the cursor hovers over an interactive action.");
 };
-````
+```
 
 
 ## interactiveActionExecuting
@@ -149,17 +149,17 @@ Event emitted when an interactive action is being executed. Triggered for action
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (interactiveActionExecuting)="interactiveActionExecuting($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 interactiveActionExecuting(pageActionEventArgs: PageActionEventArgs) {
  console.log("This event will be emitted before an interactive action is executed.");
 };
-````
+```
 
 
 ## interactiveActionLeave
@@ -168,18 +168,18 @@ Event emitted when the cursor leaves the interactive action area. Provides an ob
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (interactiveActionLeave)="interactiveActionLeave($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 interactiveActionLeave(interactiveActionArgs: PageActionEventArgs) {
  console.log("The interactive action arguments.", interactiveActionArgs);
  console.log("This event will be emitted when the cursor leaves the interactive action area.");
 };
-````
+```
 
 
 ## loadedReportChange
@@ -188,17 +188,17 @@ Event emitted when the loaded report changes. Triggered during navigation betwee
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (loadedReportChange)="loadedReportChange()">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 loadedReportChange() {
  console.log("This event will be emitted when the loaded report is changed.");
 };
-````
+```
 
 
 ## navigateToReport
@@ -207,18 +207,18 @@ Event emitted when navigating to a different report. Triggered by interactive ac
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (navigateToReport)="navigateToReport($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 navigateToReport(reportSourceOptions: ReportSourceOptions) {
  console.log("The report source object of the newly loaded report.", reportSourceOptions);
  console.log("This event will be emitted when the viewer navigates to a new report through the Drillthrough/Navigate To Report action.");
 };
-````
+```
 
 
 ## pageReady
@@ -227,18 +227,18 @@ Event emitted when a report page is ready. Provides information about the render
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (pageReady)="pageReady($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 pageReady(pageInfo: PageInfo) {
  console.log("The current page information such as the page number, the page content, etc.", pageInfo);
  console.log("This event will be emitted when the viewer content has been loaded from the template and is ready to display reports or perform any other operations on it.");
 };
-````
+```
 
 
 ## parametersLoaded
@@ -247,18 +247,18 @@ Event emitted when report parameters are loaded. Provides an array of parameter 
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (parametersLoaded)="parametersLoaded($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 parametersLoaded(parameterInfos: ParameterInfo[]) {
  console.log("An array of the parameter values is sent via the parameterInfos object.", parameterInfos);
  console.log("This event will be emitted after the Get Report Parameters request is made.");
 };
-````
+```
 
 
 ## printDocumentReady
@@ -267,17 +267,17 @@ Event emitted after the viewer finishes printing the report. Indicates that the 
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (printDocumentReady)="printDocumentReady($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 printDocumentReady(printDocumentReadyEventArgs: PrintDocumentReadyEventArgs) {
  console.log("This event will be emitted after the viewer finishes printing the report.", printDocumentReadyEventArgs);
 };
-````
+```
 
 
 ## printStarted
@@ -286,17 +286,17 @@ Event emitted when printing starts. Triggered at the beginning of a print operat
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (printStarted)="printStarted($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 printStarted(printStartedEventArgs: PrintStartedEventArgs) {
  console.log("This event will be emitted when the printing starts.", printStartedEventArgs);
 };
-````
+```
 
 
 ## renderingStopped
@@ -305,17 +305,17 @@ Event emitted when report rendering is stopped. Triggered when the user stops an
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (renderingStopped)="renderingStopped()">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 renderingStopped() {
  console.log("This event will be emitted when report rendering is cancelled.");
 };
-````
+```
 
 
 ## reportAutoRunOff
@@ -324,18 +324,18 @@ Event emitted when report auto-run is disabled. Triggered when the report requir
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (reportAutoRunOff)="reportAutoRunOff()">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 reportAutoRunOff() {
  console.log("This event can be emitted once the report parameters are loaded.");
  console.log("This event is emitted if and only if the report's AutoRun setting is set to false.");
 };
-````
+```
 
 
 ## reportLoadComplete
@@ -344,18 +344,18 @@ Event emitted after the rendering of a report ends. Provides complete document i
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (reportLoadComplete)="reportLoadComplete($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 reportLoadComplete(documentInfo: DocumentInfo) {
  console.log("The document information such as the page count, whether it has a document map, etc. will be sent via the documentInfo object.", documentInfo);
  console.log("This event will be emitted after the rendering of a report ends.");
 };
-````
+```
 
 
 ## reportLoadProgress
@@ -364,18 +364,18 @@ Event emitted after each successful Get Document Info request until report rende
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (reportLoadProgress)="reportLoadProgress($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 reportLoadProgress(documentInfo: DocumentInfo) {
  console.log("The documentInfo parameter will contain the current information for the report rendering progress.", documentInfo);
  console.log("This event will be emitted after each successful Get Document Info request until the report rendering is complete.");
 };
-````
+```
 
 
 ## reportVersionMismatch
@@ -384,18 +384,18 @@ Event emitted when there's a version mismatch between the viewer and REST servic
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (reportVersionMismatch)="reportVersionMismatch($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 reportVersionMismatch(restVersion: string) {
  console.log("REST Service version.", restVersion);
  console.log("This event will be emitted when there is mismatch between the version of the viewer and the reporting service.");
 };
-````
+```
 
 
 ## toolTipClosing
@@ -404,18 +404,18 @@ Event emitted when a tooltip is closed. Provides an object containing informatio
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (toolTipClosing)="toolTipClosing($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 toolTipClosing(tooltipEventArgs: TooltipEventArgs) {
  console.log("The tooltip arguments.", tooltipEventArgs);
  console.log("This event will be emitted when a tooltip is closed.");
 };
-````
+```
 
 
 ## toolTipOpening
@@ -424,18 +424,18 @@ Event emitted when a tooltip is opened. Provides an object containing informatio
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (toolTipOpening)="toolTipOpening($event)">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 toolTipOpening(tooltipEventArgs: TooltipEventArgs) {
  console.log("The tooltip arguments.", tooltipEventArgs);
  console.log("This event will be emitted when a tooltip is opened.");
 };
-````
+```
 
 
 ## updateUI
@@ -444,15 +444,15 @@ Event emitted when the state of the viewer changes. This event is triggered duri
 
 ### Example
 
-````html
+```HTML
 <reporting-angular-viewer
  (updateUI)="updateUI()">
 </reporting-angular-viewer>
-````
+```
 
-````typescript
+```TypeScript
 updateUI() {
  console.log("This event handler will be called when the state of the viewer changes.");
 };
-````
+```
 

@@ -19,7 +19,7 @@ Gets or sets the viewer's error event handler function name. Called when an erro
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -32,7 +32,7 @@ Gets or sets the viewer's error event handler function name. Called when an erro
         console.error("An error occurred in the report viewer: " + args);
     }
 </script>
-````
+```
 
 
 ## ExportBegin
@@ -41,7 +41,7 @@ Gets or sets the viewer's exportBegin event handler function name. Occurs before
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -54,7 +54,7 @@ Gets or sets the viewer's exportBegin event handler function name. Occurs before
         console.log("Exporting the report in " + args.format + " format.");
     }
 </script>
-````
+```
 
 
 ## ExportEnd
@@ -63,7 +63,7 @@ Gets or sets the viewer's exportEnd event handler function name. Occurs after ex
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -76,7 +76,7 @@ Gets or sets the viewer's exportEnd event handler function name. Occurs after ex
         console.log("Export completed. Download URL: " + window.location.origin + args.url);
     }
 </script>
-````
+```
 
 
 ## InteractiveActionEnter
@@ -85,7 +85,7 @@ Gets or sets the viewer's interactiveActionEnter event handler function name. Oc
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -98,7 +98,7 @@ Gets or sets the viewer's interactiveActionEnter event handler function name. Oc
         console.log("Mouse cursor entered the area of an interactive action.");
     }
 </script>
-````
+```
 
 
 ## InteractiveActionExecuting
@@ -107,7 +107,7 @@ Gets or sets the viewer's interactiveActionExecuting event handler function name
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -121,7 +121,7 @@ Gets or sets the viewer's interactiveActionExecuting event handler function name
         // To cancel the action, set args.cancel = true;
     }
 </script>
-````
+```
 
 
 ## InteractiveActionLeave
@@ -130,7 +130,7 @@ Gets or sets the viewer's interactiveActionLeave event handler function name. Oc
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -143,7 +143,7 @@ Gets or sets the viewer's interactiveActionLeave event handler function name. Oc
         console.log("Mouse cursor left the area of an interactive action.");
     }
 </script>
-````
+```
 
 
 ## PageReady
@@ -152,7 +152,7 @@ Gets or sets the viewer's pageReady event handler function name. Occurs after a 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -165,7 +165,7 @@ Gets or sets the viewer's pageReady event handler function name. Occurs after a 
         console.log("Page " + args.pageNumber + " is ready for display.");
     }
 </script>
-````
+```
 
 
 ## PrintBegin
@@ -174,7 +174,7 @@ Gets or sets the viewer's printBegin event handler function name. Occurs before 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -187,7 +187,7 @@ Gets or sets the viewer's printBegin event handler function name. Occurs before 
         console.log("Printing the report.");
     }
 </script>
-````
+```
 
 
 ## PrintEnd
@@ -196,7 +196,7 @@ Gets or sets the viewer's printEnd event handler function name. Occurs after pri
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -209,7 +209,7 @@ Gets or sets the viewer's printEnd event handler function name. Occurs after pri
         console.log("Print document ready. URL: " + window.location.origin + args.url);
     }
 </script>
-````
+```
 
 
 ## Ready
@@ -218,7 +218,7 @@ Gets or sets the viewer's ready event handler function name. Called when the vie
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -231,7 +231,7 @@ Gets or sets the viewer's ready event handler function name. Called when the vie
         console.log("The viewer is ready to display the report: " + this.reportSource().report);
     }
 </script>
-````
+```
 
 
 ## RenderingBegin
@@ -240,7 +240,7 @@ Gets or sets the viewer's renderingBegin event handler function name. Occurs bef
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -253,7 +253,7 @@ Gets or sets the viewer's renderingBegin event handler function name. Occurs bef
         console.log("Rendering of the report has begun.");
     }
 </script>
-````
+```
 
 
 ## RenderingEnd
@@ -262,7 +262,7 @@ Gets or sets the viewer's renderingEnd event handler function name. Occurs after
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -275,7 +275,7 @@ Gets or sets the viewer's renderingEnd event handler function name. Occurs after
         console.log("Rendering completed. Total pages: " + args.pageCount);
     }
 </script>
-````
+```
 
 
 ## SendEmailBegin
@@ -284,7 +284,7 @@ Gets or sets the viewer's sendEmailBegin event handler function name. Occurs bef
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -297,7 +297,7 @@ Gets or sets the viewer's sendEmailBegin event handler function name. Occurs bef
         console.log("Sending the report via email in " + args.format + " format.");
     }
 </script>
-````
+```
 
 
 ## SendEmailEnd
@@ -306,7 +306,7 @@ Gets or sets the viewer's sendEmailEnd event handler function name. Occurs after
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -319,7 +319,7 @@ Gets or sets the viewer's sendEmailEnd event handler function name. Occurs after
         console.log("Report sent via email successfully.");
     }
 </script>
-````
+```
 
 
 ## UpdateUi
@@ -328,7 +328,7 @@ Gets or sets the viewer's updateUi event handler function name. Occurs when the 
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -341,7 +341,7 @@ Gets or sets the viewer's updateUi event handler function name. Occurs when the 
         console.log("The viewer UI state has changed.");
     }
 </script>
-````
+```
 
 
 ## ViewerToolTipOpening
@@ -350,7 +350,7 @@ Gets or sets the viewer's viewerToolTipOpening event handler function name. Occu
 
 ### Example
 
-````C#
+```C#
 <ReportViewer ServiceUrl="/api/reports"
               ReportSource="@(new ReportSourceOptions("Invoice.trdp"))"
               ClientEvents="@(new ClientEventsOptions
@@ -364,5 +364,5 @@ Gets or sets the viewer's viewerToolTipOpening event handler function name. Occu
         // To cancel the tooltip, set args.cancel = true;
     }
 </script>
-````
+```
 

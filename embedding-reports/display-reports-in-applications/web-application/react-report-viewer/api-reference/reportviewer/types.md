@@ -38,14 +38,14 @@ Describes a parameter editor for the Telerik Report Viewer parameters area.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Custom match function for single-select parameters
 function match(parameter) {
   return Boolean(parameter.availableValues) && !parameter.multivalue;
 }
-````
+```
 
-````JavaScript
+```JavaScript
 // Custom createEditor function using Kendo DateTimePicker
 function match(parameter) {
     return parameter.type === "System.DateTime";
@@ -84,16 +84,16 @@ function createEditor(placeholder, options) {
         }
     };
 }
-````
+```
 
-````JavaScript
+```JavaScript
 // Registering a custom parameter editor
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   parameterEditors={[{ match, createEditor }]}
 />
-````
+```
 
 
 ## ParameterEditorInstance
@@ -128,7 +128,7 @@ Defines options for configuring report parameter editors in the React Report Vie
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Specify editor types for report parameters
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -140,7 +140,7 @@ Defines options for configuring report parameter editors in the React Report Vie
     }
   }}
 />
-````
+```
 
 
 ## ReportParameters
@@ -149,13 +149,13 @@ An object where each property name corresponds to a report parameter's name, and
 
 ### Example
 
-````JavaScript
+```JavaScript
 {
   "StartDate": "2024-01-01",
   "EndDate": "2024-12-31",
   "Category": "Books"
 }
-````
+```
 
 
 ## ReportServer
@@ -177,7 +177,7 @@ The authentication method depends on the Report Server version:
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Complete initialization with Report Server for .NET using Token authentication
 <TelerikReportViewer
   reportServer={{
@@ -193,7 +193,7 @@ The authentication method depends on the Report Server version:
     }
   }}
 />
-````
+```
 
 
 ## ReportSource
@@ -209,7 +209,7 @@ Configuration object that identifies the report to be displayed and provides ini
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Using ReportSource with the React Report Viewer
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -221,7 +221,7 @@ Configuration object that identifies the report to be displayed and provides ini
     }
   }}
 />
-````
+```
 
 
 ## ReportViewerCommand
@@ -260,7 +260,7 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Enable Send Email with default values and PDF as the default format
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -275,9 +275,9 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
     format: "PDF"
   }}
 />
-````
+```
 
-````JavaScript
+```JavaScript
 // Basic email configuration with minimal options
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -287,5 +287,5 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
     from: "noreply@company.com"
   }}
 />
-````
+```
 

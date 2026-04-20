@@ -21,14 +21,14 @@ If provided, a Bearer token will be set in the Authorization header for every re
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set a Bearer authentication token for REST service requests
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   authenticationToken="YOUR_AUTH_TOKEN"
 />
-````
+```
 
 
 ## checkedButtonClass
@@ -41,7 +41,7 @@ A CSS class added to external command buttons (bound via data-attributes) when t
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Apply custom styling to checked/active command buttons
 <TelerikReportViewer
   id="rv1"
@@ -50,7 +50,7 @@ A CSS class added to external command buttons (bound via data-attributes) when t
   selector="#rv1"
   checkedButtonClass="btn-active"
 />
-````
+```
 
 
 ## disabledButtonClass
@@ -63,7 +63,7 @@ A CSS class added to external command buttons (bound via data-attributes) when t
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Apply custom styling to disabled command buttons
 <TelerikReportViewer
   id="rv1"
@@ -72,7 +72,7 @@ A CSS class added to external command buttons (bound via data-attributes) when t
   selector="#rv1"
   disabledButtonClass="btn-disabled"
 />
-````
+```
 
 
 ## documentMapAreaPosition
@@ -85,14 +85,14 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Place document map on the right
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   documentMapAreaPosition="RIGHT"
 />
-````
+```
 
 
 ## documentMapVisible
@@ -105,14 +105,14 @@ Determines whether the viewer's document map is displayed if any bookmark is def
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Show document map
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   documentMapVisible={true}
 />
-````
+```
 
 
 ## enableAccessibility
@@ -125,14 +125,14 @@ Determines whether the viewer should provide support for accessibility features.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Enable accessibility features
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   enableAccessibility={true}
 />
-````
+```
 
 
 ## id
@@ -145,14 +145,14 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set a custom viewer ID
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   id="myUniqueViewer"
 />
-````
+```
 
 
 ## initialPageAreaImageUrl
@@ -165,14 +165,14 @@ The image URL for the PageArea background image. Used only when the parameter va
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set a background image for empty page area
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   initialPageAreaImageUrl="/images/reportBackground.png"
 />
-````
+```
 
 
 ## keepClientAlive
@@ -185,14 +185,14 @@ Determines whether the viewer sends periodic keep-alive requests to the server t
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Keep client alive
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   keepClientAlive={true}
 />
-````
+```
 
 
 ## localizationResources
@@ -205,7 +205,7 @@ An object containing all or a subset of the viewer's localization resources in a
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set localization resources
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -216,7 +216,7 @@ An object containing all or a subset of the viewer's localization resources in a
      loadingParameters: "Loading parameters...",
   }}
 />
-````
+```
 
 
 ## pageMode
@@ -229,14 +229,14 @@ Sets if the report is displayed in Single page or Continuous scroll mode. Availa
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set page mode to single page
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   pageMode="SINGLE_PAGE"
 />
-````
+```
 
 
 ## parameterEditors
@@ -249,7 +249,7 @@ Allows the user to define custom editors for the report parameters.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Register custom parameter editors
 const customEditors = [{
   match: function(param) { return param.name === "MyParam"; },
@@ -273,7 +273,7 @@ const customEditors = [{
   reportSource={{ report: "Dashboard.trdp" }}
   parameterEditors={customEditors}
 />
-````
+```
 
 
 ## parameters
@@ -286,7 +286,7 @@ Allows the user to define parameter options for the report parameters.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Configure parameter editors
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -298,7 +298,7 @@ Allows the user to define parameter options for the report parameters.
     }
   }}
 />
-````
+```
 
 
 ## parametersAreaPosition
@@ -311,14 +311,14 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Place parameters area on the left
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   parametersAreaPosition="LEFT"
 />
-````
+```
 
 
 ## parametersAreaVisible
@@ -331,14 +331,14 @@ Determines whether the viewer's parameters area is displayed if any parameter ed
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Hide parameters area
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   parametersAreaVisible={false}
 />
-````
+```
 
 
 ## persistSession
@@ -351,7 +351,7 @@ Sets whether the viewer's client session is persisted between page refreshes (e.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Enable session persistence
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -359,7 +359,7 @@ Sets whether the viewer's client session is persisted between page refreshes (e.
   persistSession={true}
   id="myConstantId"
 />
-````
+```
 
 
 ## printMode
@@ -372,14 +372,14 @@ Specifies how the viewer should print reports. Available values: "AUTO_SELECT" (
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Force PDF file download for printing
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   printMode="FORCE_PDF_FILE"
 />
-````
+```
 
 
 ## reportServer
@@ -392,7 +392,7 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Use Report Server authentication with Token (recommended for RS.NET)
 <TelerikReportViewer
   reportServer={{
@@ -403,9 +403,9 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
   }}
   reportSource={{ report: "Samples/Dashboard" }}
 />
-````
+```
 
-````JavaScript
+```JavaScript
 // Use Report Server authentication with username/password (not recommended)
 <TelerikReportViewer
   reportServer={{
@@ -415,7 +415,7 @@ Sets the configuration details for Telerik Report Server. Required if serviceUrl
   }}
   reportSource={{ report: "Finance/Dashboard" }}
 />
-````
+```
 
 
 ## reportSource
@@ -428,15 +428,15 @@ Sets the report and initial report parameter values for the viewer to be display
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Basic report source
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
 />
-````
+```
 
-````JavaScript
+```JavaScript
 // Report source with parameters
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -445,15 +445,15 @@ Sets the report and initial report parameter values for the viewer to be display
     parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }
   }}
 />
-````
+```
 
-````JavaScript
+```JavaScript
 // Report Server format
 <TelerikReportViewer
   reportServer={{ url: "https://myserver/" }}
   reportSource={{ report: "Finance/MonthlyReport" }}
 />
-````
+```
 
 
 ## scale
@@ -466,7 +466,7 @@ Sets the scale factor for the report pages. The scale takes effect when scaleMod
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set zoom to 150%
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -474,7 +474,7 @@ Sets the scale factor for the report pages. The scale takes effect when scaleMod
   scale={1.5}
   scaleMode="SPECIFIC"
 />
-````
+```
 
 
 ## scaleMode
@@ -487,14 +487,14 @@ Sets how the report pages are scaled. Available options: "FIT_PAGE_WIDTH" (pages
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Fit page width
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   scaleMode="FIT_PAGE_WIDTH"
 />
-````
+```
 
 
 ## searchMetadataOnDemand
@@ -507,14 +507,14 @@ Determines whether the search metadata will be delivered on demand (true) or by 
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Enable search metadata on demand
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   searchMetadataOnDemand={true}
 />
-````
+```
 
 
 ## selector
@@ -527,7 +527,7 @@ A CSS selector that identifies the viewer's container element. Required when usi
 
 ### Example
 
-````JavaScript
+```JavaScript
 // The selector must match the viewer's own container id (same value used in data-target-report-viewer on external buttons)
 <TelerikReportViewer
   id="rv1"
@@ -540,7 +540,7 @@ A CSS selector that identifies the viewer's container element. Required when usi
 
 // External buttons reference the same selector in data-target-report-viewer:
 // <button data-command="telerik_ReportViewer_goToNextPage" data-target-report-viewer="#rv1">Next</button>
-````
+```
 
 
 ## sendEmail
@@ -553,7 +553,7 @@ Configuration for the Send Mail Message feature.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Enable send email with default values
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -566,7 +566,7 @@ Configuration for the Send Mail Message feature.
     format: "PDF"
   }}
 />
-````
+```
 
 
 ## serviceUrl
@@ -579,13 +579,13 @@ Sets the address of the Report REST Service. Required if reportServer is not pro
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set the service URL for the report viewer
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
 />
-````
+```
 
 
 ## templateUrl
@@ -598,14 +598,14 @@ Sets the address of the HTML page that contains the viewer templates. If omitted
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Use a custom template
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   templateUrl="/templates/customViewer.html"
 />
-````
+```
 
 
 ## viewerContainerStyle
@@ -618,7 +618,7 @@ CSS styles to apply to the viewer container div.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set container styles
 <TelerikReportViewer
   serviceUrl="api/reports/"
@@ -629,7 +629,7 @@ CSS styles to apply to the viewer container div.
     border: '1px solid #ccc'
   }}
 />
-````
+```
 
 
 ## viewMode
@@ -642,12 +642,12 @@ Sets if the report is displayed in interactive mode or in print preview. Availab
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set view mode to print preview
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
   viewMode="PRINT_PREVIEW"
 />
-````
+```
 

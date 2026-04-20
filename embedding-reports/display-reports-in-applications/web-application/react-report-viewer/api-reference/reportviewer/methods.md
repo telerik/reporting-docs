@@ -24,19 +24,19 @@ Binds an event handler to the specified event.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Bind to pageReady event
 reportViewerRef.current.bind("pageReady", (e, args) => {
   console.log("Page is ready!", args);
 });
-````
+```
 
-````JavaScript
+```JavaScript
 // Bind to error event
 reportViewerRef.current.bind("error", (e, args) => {
   console.error("Report viewer error:", args);
 });
-````
+```
 
 
 ## clearReportSource
@@ -45,11 +45,11 @@ Clears the current reportSource from the viewer internal state and from its pers
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Clear report source before setting a new one
 reportViewerRef.current.clearReportSource();
 reportViewerRef.current.setReportSource({ report: "NewReport" });
-````
+```
 
 
 ## currentPage
@@ -58,11 +58,11 @@ Gets the viewer’s current page that is displayed.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get current page number
 const currentPage = reportViewerRef.current.currentPage();
 console.log("Current page:", currentPage);
-````
+```
 
 
 ## dispose
@@ -71,10 +71,10 @@ Stops sending keep alive requests to the server, if keep client alive was enable
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Manually dispose the viewer
 reportViewerRef.current.dispose();
-````
+```
 
 
 ## getAccessibilityKeyMap
@@ -83,13 +83,13 @@ Gets the shortcut keys used when the report viewer is in accessible mode (enable
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get accessibility key map
 const keyMap = reportViewerRef.current.getAccessibilityKeyMap();
 if (keyMap) {
   console.log("Accessibility key map:", keyMap);
 }
-````
+```
 
 
 ## getPageMode
@@ -98,11 +98,11 @@ Gets the current page mode of the viewer.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get current page mode
 const pageMode = reportViewerRef.current.getPageMode();
 console.log("Current page mode:", pageMode);
-````
+```
 
 
 ## getReportParameters
@@ -111,13 +111,13 @@ Returns an immutable array of name-value objects representing the current evalua
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get current report parameters
 const parameters = reportViewerRef.current.getReportParameters();
 parameters.forEach(param => {
   console.log(`Parameter ${param.name}: ${param.value}`);
 });
-````
+```
 
 
 ## getReportSource
@@ -126,12 +126,12 @@ Gets the current ReportSource - report and parameters.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get current report source
 const reportSource = reportViewerRef.current.getReportSource();
 console.log("Current report:", reportSource.report);
 console.log("Current parameters:", reportSource.parameters);
-````
+```
 
 
 ## getScale
@@ -140,11 +140,11 @@ Gets the viewer’s scale factor and scale mode.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get current scale and scale mode
 const scaleInfo = reportViewerRef.current.getScale();
 console.log("Scale:", scaleInfo.scale, "Scale mode:", scaleInfo.scaleMode);
-````
+```
 
 
 ## getViewMode
@@ -153,11 +153,11 @@ Gets the current view mode.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get current view mode
 const viewMode = reportViewerRef.current.getViewMode();
 console.log("Current view mode:", viewMode);
-````
+```
 
 
 ## pageCount
@@ -166,11 +166,11 @@ Gets the total page count of viewer’s currently displayed report.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Get total page count
 const totalPages = reportViewerRef.current.pageCount();
 console.log("Total pages:", totalPages);
-````
+```
 
 
 ## refreshReport
@@ -179,13 +179,13 @@ Reloads/refreshes the current report.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Using ref to call refreshReport
 const reportViewerRef = useRef();
 <TelerikReportViewer ref={reportViewerRef} serviceUrl="api/reports/" reportSource={{ report: "Dashboard.trdp" }} />
 // ...
 reportViewerRef.current.refreshReport();
-````
+```
 
 
 ## setAccessibilityKeyMap
@@ -200,7 +200,7 @@ Sets the shortcut keys used when the report viewer is in accessible mode. Set th
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set custom accessibility key map
 reportViewerRef.current.setAccessibilityKeyMap({
   CONFIRM_KEY: 13,
@@ -209,7 +209,7 @@ reportViewerRef.current.setAccessibilityKeyMap({
   PARAMETERS_AREA_KEY: 80,
   DOCUMENT_MAP_AREA_KEY: 68
 });
-````
+```
 
 
 ## setAuthenticationToken
@@ -224,10 +224,10 @@ Sets the authentication token.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set authentication token
 reportViewerRef.current.setAuthenticationToken("YOUR_AUTH_TOKEN");
-````
+```
 
 
 ## setPageMode
@@ -242,10 +242,10 @@ Sets the page mode of the viewer.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set page mode to single page
 reportViewerRef.current.setPageMode("SINGLE_PAGE");
-````
+```
 
 
 ## setReportSource
@@ -260,13 +260,13 @@ Sets the report source - report and parameters. Automatically reloads the report
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set a new report source
 reportViewerRef.current.setReportSource({
   report: "SalesReport",
   parameters: { StartDate: "2024-01-01", EndDate: "2024-12-31" }
 });
-````
+```
 
 
 ## setScale
@@ -281,10 +281,10 @@ Sets the scale factor and scale mode.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set scale to 150% and mode to SPECIFIC
 reportViewerRef.current.setScale({ scale: 1.5, scaleMode: "SPECIFIC" });
-````
+```
 
 
 ## setViewMode
@@ -299,10 +299,10 @@ Sets the view mode and automatically reloads the current report into the new vie
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Set view mode to print preview
 reportViewerRef.current.setViewMode("PRINT_PREVIEW");
-````
+```
 
 
 ## unbind
@@ -318,15 +318,15 @@ Unbinds an event handler from the specified event.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Unbind specific handler
 reportViewerRef.current.unbind("error", myErrorHandler);
-````
+```
 
-````JavaScript
+```JavaScript
 // Unbind all handlers for an event
 reportViewerRef.current.unbind("pageReady");
-````
+```
 
 
 ## unbindAll
@@ -341,8 +341,8 @@ Unbinds all event handlers from the specified event.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Unbind all error handlers
 reportViewerRef.current.unbindAll("error");
-````
+```
 

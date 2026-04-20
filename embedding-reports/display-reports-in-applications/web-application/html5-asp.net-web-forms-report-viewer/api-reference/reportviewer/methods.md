@@ -17,7 +17,7 @@ Gets the processed report parameters as a dictionary of parameter names and stri
 
 ### Example
 
-````C#
+```C#
 namespace CSharp.NetFramework.WebFormsIntegrationDemo
 {
     using System;
@@ -41,7 +41,7 @@ namespace CSharp.NetFramework.WebFormsIntegrationDemo
         }
     }
 }
-````
+```
 
 
 ## RenderDesignTimeHtml

@@ -31,7 +31,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
 
 ### Example
 
-````C#
+```C#
 <!--Example: Using AccessibilityKeyMap with the ReportViewer's EnableAccessibility property-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -51,7 +51,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ClientEvents
@@ -229,7 +229,7 @@ Provides a configuration class for the report source used in the HTML5 WebForms 
 
 ### Example
 
-````C#
+```C#
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSharp.NetFramework.WebFormsIntegrationDemo.Default" %>
 
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
@@ -251,7 +251,7 @@ Provides a configuration class for the report source used in the HTML5 WebForms 
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ReportViewer
@@ -309,7 +309,7 @@ Represents the HTML5 WebForms ReportViewer control that provides comprehensive r
 
 ### Example
 
-````C#
+```C#
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSharp.NetFramework.WebFormsIntegrationDemo.Default" %>
 
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
@@ -327,7 +327,7 @@ Represents the HTML5 WebForms ReportViewer control that provides comprehensive r
                 Identifier="Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
             </ReportSource>
         </telerik:ReportViewer>
-````
+```
 
 
 ## SendEmail
@@ -354,7 +354,7 @@ Provides configuration options for the send email functionality within the HTML5
 
 ### Example
 
-````C#
+```C#
 <!--
     Example: How to use the SendEmail class to enable the Send Mail toolbar button in <telerik:ReportViewer>.
 -->
@@ -378,5 +378,5 @@ Provides configuration options for the send email functionality within the HTML5
     </form>
 </body>
 </html>
-````
+```
 

@@ -24,7 +24,7 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="BindEvent">Bind Event Handler</button>
 
@@ -35,7 +35,7 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
         await reportViewer.BindAsync(Event.ExportBegin, "myExportBeginHandler");
     }
 }
-````
+```
 
 
 ## ClearReportSourceAsync
@@ -44,7 +44,7 @@ Clears the current report source from the viewer's internal state and from its p
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="ClearSource">Clear Report Source</button>
 
@@ -57,7 +57,7 @@ Clears the current report source from the viewer's internal state and from its p
         await reportViewer.RefreshReportAsync();
     }
 }
-````
+```
 
 
 ## Dispose
@@ -71,7 +71,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug tele
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetKeyMap">Get Accessibility Key Map</button>
 
@@ -83,7 +83,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug tele
         // Use keyMap as needed
     }
 }
-````
+```
 
 
 ## GetCurrentPageAsync
@@ -92,7 +92,7 @@ Gets the page number of the report page currently displayed in the viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetCurrentPage">Get Current Page</button>
 <p>Current Page: @currentPage</p>
@@ -106,7 +106,7 @@ Gets the page number of the report page currently displayed in the viewer.
         StateHasChanged();
     }
 }
-````
+```
 
 
 ## GetPageCountAsync
@@ -115,7 +115,7 @@ Gets the total page count of the report displayed in the viewer.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetPageCount">Get Page Count</button>
 <p>Page Count: @pageCount</p>
@@ -129,7 +129,7 @@ Gets the total page count of the report displayed in the viewer.
         StateHasChanged();
     }
 }
-````
+```
 
 
 ## GetPageModeAsync
@@ -138,7 +138,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreportin
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetPageMode">Get Page Mode</button>
 <p>Page Mode: @pageMode</p>
@@ -152,7 +152,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreportin
         StateHasChanged();
     }
 }
-````
+```
 
 
 ## GetReportParameters
@@ -161,7 +161,7 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetParameters">Get Report Parameters</button>
 
@@ -173,7 +173,7 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
         // Use parameters as needed
     }
 }
-````
+```
 
 
 ## GetReportSourceAsync
@@ -182,7 +182,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetReportSource">Get Report Source</button>
 
@@ -194,7 +194,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
         // Use reportSource as needed
     }
 }
-````
+```
 
 
 ## GetScaleAsync
@@ -203,7 +203,7 @@ Gets the report viewer's scale factor.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetScale">Get Scale</button>
 <p>Scale: @scale</p>
@@ -217,7 +217,7 @@ Gets the report viewer's scale factor.
         StateHasChanged();
     }
 }
-````
+```
 
 
 ## GetScaleModeAsync
@@ -226,7 +226,7 @@ Gets the report viewer's current [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slu
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetScaleMode">Get Scale Mode</button>
 <p>Scale Mode: @scaleMode</p>
@@ -240,7 +240,7 @@ Gets the report viewer's current [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slu
         StateHasChanged();
     }
 }
-````
+```
 
 
 ## GetViewModeAsync
@@ -249,7 +249,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreportin
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="GetViewMode">Get View Mode</button>
 <p>View Mode: @viewMode</p>
@@ -263,7 +263,7 @@ Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreportin
         StateHasChanged();
     }
 }
-````
+```
 
 
 ## OnAfterRenderAsync
@@ -283,7 +283,7 @@ Reloads/refreshes the current report.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="RefreshReport">Refresh Report</button>
 
@@ -294,7 +294,7 @@ Reloads/refreshes the current report.
         await reportViewer.RefreshReportAsync();
     }
 }
-````
+```
 
 
 ## SetAccessibilityKeyMapAsync
@@ -309,7 +309,7 @@ Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikrepor
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetKeyMap">Set Accessibility Key Map</button>
 
@@ -321,7 +321,7 @@ Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikrepor
         await reportViewer.SetAccessibilityKeyMapAsync(keyMap);
     }
 }
-````
+```
 
 
 ## SetAuthenticationTokenAsync
@@ -336,7 +336,7 @@ Sets the authentication token.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetToken">Set Authentication Token</button>
 
@@ -347,7 +347,7 @@ Sets the authentication token.
         await reportViewer.SetAuthenticationTokenAsync("your-new-token");
     }
 }
-````
+```
 
 
 ## SetPageModeAsync
@@ -362,7 +362,7 @@ Sets the [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetPageMode">Set Page Mode to Single Page</button>
 
@@ -373,7 +373,7 @@ Sets the [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-
         await reportViewer.SetPageModeAsync(PageMode.SinglePage);
     }
 }
-````
+```
 
 
 ## SetReportSourceAsync
@@ -388,7 +388,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetReportSource">Set New Report Source</button>
 
@@ -402,7 +402,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
         await reportViewer.RefreshReportAsync();
     }
 }
-````
+```
 
 
 ## SetScaleAsync
@@ -417,7 +417,7 @@ Sets the report viewer's scale factor.
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetScale">Set Scale to 150%</button>
 
@@ -428,7 +428,7 @@ Sets the report viewer's scale factor.
         await reportViewer.SetScaleAsync(1.5);
     }
 }
-````
+```
 
 
 ## SetScaleModeAsync
@@ -443,7 +443,7 @@ Sets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetScaleMode">Set Scale Mode to Fit Page Width</button>
 
@@ -454,7 +454,7 @@ Sets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
         await reportViewer.SetScaleModeAsync(ScaleMode.FitPageWidth);
     }
 }
-````
+```
 
 
 ## SetViewModeAsync
@@ -469,7 +469,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="SetViewMode">Set View Mode to Print Preview</button>
 
@@ -480,7 +480,7 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
         await reportViewer.SetViewModeAsync(ViewMode.PrintPreview);
     }
 }
-````
+```
 
 
 ## UnbindAsync
@@ -495,7 +495,7 @@ Unbinds all event handlers from the specified [`Telerik.ReportViewer.Blazor.Even
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="UnbindEvent">Unbind All Event Handlers</button>
 
@@ -506,7 +506,7 @@ Unbinds all event handlers from the specified [`Telerik.ReportViewer.Blazor.Even
         await reportViewer.UnbindAsync(Event.ExportBegin);
     }
 }
-````
+```
 
 
 ## UnbindAsync
@@ -522,7 +522,7 @@ Unbinds event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`](
 
 ### Example
 
-````C#
+```C#
 <ReportViewer @ref="reportViewer" />
 <button @onclick="UnbindEvent">Unbind Event Handler</button>
 
@@ -533,5 +533,5 @@ Unbinds event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`](
         await reportViewer.UnbindAsync(Event.ExportBegin, "myExportBeginHandler");
     }
 }
-````
+```
 

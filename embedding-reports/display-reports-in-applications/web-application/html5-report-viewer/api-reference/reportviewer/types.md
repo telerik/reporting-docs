@@ -67,15 +67,15 @@ Describes a parameter editor for the Telerik Report Viewer parameter panel.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Example: Custom match function for single-select parameters
 var match = function(parameter) {
   // Use parameter properties to determine if this editor should be used
   return Boolean(parameter.availableValues) && !parameter.multivalue;
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Custom createEditor function using Kendo DropDownList
 var createEditor = function(placeholder, options) {
   var dropDownElement = $(placeholder).html('<div></div>');
@@ -100,15 +100,15 @@ var createEditor = function(placeholder, options) {
     }
   };
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Registering the custom ParameterEditor
 ParameterEditors.push({
   match: match,
   createEditor: createEditor
 });
-````
+```
 
 
 ## ParameterEditorInstance
@@ -141,7 +141,7 @@ Configuration options for report parameter editors and behavior.
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Specify editor types for parameters
 {
   editors: {
@@ -149,7 +149,7 @@ Configuration options for report parameter editors and behavior.
     multiSelect: "LIST_VIEW"
   }
 }
-````
+```
 
 
 ## ReportParameters
@@ -158,13 +158,13 @@ An object where each property name corresponds to a report parameter's name, and
 
 ### Example
 
-````JavaScript
+```JavaScript
 {
   "StartDate": "2024-01-01",
   "EndDate": "2024-12-31",
   "Category": "Books"
 }
-````
+```
 
 
 ## ReportServer
@@ -187,7 +187,7 @@ Authentication options:
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Example: Report Server for .NET - Token authentication (recommended)
 var reportServer = {
   url: "https://my-report-server-net/",
@@ -195,9 +195,9 @@ var reportServer = {
     return Promise.resolve("<personal-access-token>");
   }
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Report Server for .NET - Token authentication with a secure endpoint
 var reportServer = {
   url: "https://my-report-server-net/",
@@ -206,9 +206,9 @@ var reportServer = {
       .then(response => response.text());
   }
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Report Server for .NET - Token authentication with Guest user token
 var reportServer = {
   url: "https://my-report-server-net/",
@@ -216,34 +216,34 @@ var reportServer = {
     return Promise.resolve("<guest-user-token>");
   }
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Report Server for .NET - Username/password authentication
 var reportServer = {
   url: "https://my-report-server-net/",
   username: "myUser",
   password: "myPassword"
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Report Server for .NET Framework 4.6.2 - Username/password authentication
 var reportServer = {
   url: "https://my-report-server-framework/",
   username: "myUser",
   password: "myPassword"
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Report Server for .NET Framework 4.6.2 - Guest account (requires Guest enabled on server)
 var reportServer = {
   url: "https://my-report-server-framework/"
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication
 $("#reportViewer").telerik_ReportViewer({
   reportServer: {
@@ -259,7 +259,7 @@ $("#reportViewer").telerik_ReportViewer({
     }
   }
 });
-````
+```
 
 
 ## ReportSource
@@ -275,14 +275,14 @@ Defines the report source for the viewer, specifying which report to load and an
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Example: Minimal report source with only the report name
 var reportSource = {
   report: "MyReport"
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Report source with parameters
 var reportSource = {
   report: "SalesReport",
@@ -292,9 +292,9 @@ var reportSource = {
     Region: "North America"
   }
 };
-````
+```
 
-````JavaScript
+```JavaScript
 // Example: Using ReportSource with the Report Viewer initialization
 $("#reportViewer").telerik_ReportViewer({
   reportSource: {
@@ -305,7 +305,7 @@ $("#reportViewer").telerik_ReportViewer({
     }
   }
 });
-````
+```
 
 
 ## ReportViewerCommand
@@ -344,7 +344,7 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 
 ### Example
 
-````JavaScript
+```JavaScript
 // Enable Send Email with default values and PDF as the default format
 var sendEmailOptions = {
   enabled: true,
@@ -355,5 +355,5 @@ var sendEmailOptions = {
   body: "Please find the attached monthly sales report.",
   format: "PDF"
 };
-````
+```
 

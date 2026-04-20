@@ -17,7 +17,7 @@ Gets or sets the name of the JavaScript function that will be called when an err
 
 ### Example
 
-````C#
+```C#
 <!--Example: Using ClientEvents Error with the ReportViewer-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,7 +43,7 @@ Gets or sets the name of the JavaScript function that will be called when an err
         alert("A report error occurred: " + args.Message);
     }
 </script>
-````
+```
 
 
 ## ExportBegin
@@ -52,7 +52,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the ExportBegin client event in the ReportViewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -78,7 +78,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ExportEnd
@@ -87,7 +87,7 @@ Gets or sets the name of the JavaScript function that will be called when the ex
 
 ### Example
 
-````C#
+```C#
 <!-- Example: Setting the ExportEnd client event in the ReportViewer -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -112,7 +112,7 @@ Gets or sets the name of the JavaScript function that will be called when the ex
     </form>
 </body>
 </html>
-````
+```
 
 
 ## InteractiveActionEnter
@@ -121,7 +121,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -146,7 +146,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
     </form>
 </body>
 </html>
-````
+```
 
 
 ## InteractiveActionExecuting
@@ -155,7 +155,7 @@ Gets or sets the name of the JavaScript function that will be called when an int
 
 ### Example
 
-````C#
+```C#
 <!--Example demonstrating how to set the InteractiveActionExecuting property of ClientEvents in the Telerik HTML5 WebForms ReportViewer.
 This property specifies the name of the JavaScript function to be called when an interactive action is executed. -->
 
@@ -183,7 +183,7 @@ This property specifies the name of the JavaScript function to be called when an
     </form>
 </body>
 </html>
-````
+```
 
 
 ## InteractiveActionLeave
@@ -192,7 +192,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
 
 ### Example
 
-````C#
+```C#
 <!--Example demonstrating how to set the InteractiveActionLeave property of ClientEvents in the Telerik HTML5 WebForms ReportViewer. -->
 
 <!DOCTYPE html>
@@ -222,7 +222,7 @@ Gets or sets the name of the JavaScript function that will be called when the mo
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PageReady
@@ -231,7 +231,7 @@ Gets or sets the name of the JavaScript function that will be called every time 
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -257,7 +257,7 @@ Gets or sets the name of the JavaScript function that will be called every time 
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PrintBegin
@@ -266,7 +266,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -292,7 +292,7 @@ Gets or sets the name of the JavaScript function that will be called prior to st
     </form>
 </body>
 </html>
-````
+```
 
 
 ## PrintEnd
@@ -301,7 +301,7 @@ Gets or sets the name of the JavaScript function that will be called when the pr
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -327,7 +327,7 @@ Gets or sets the name of the JavaScript function that will be called when the pr
     </form>
 </body>
 </html>
-````
+```
 
 
 ## Ready
@@ -336,7 +336,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating how to set the ClientEvents.Ready property to specify a JavaScript function -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -361,7 +361,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
  </form>
 </body>
 </html>
-````
+```
 
 
 ## RenderingBegin
@@ -370,7 +370,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ### Example
 
-````C#
+```C#
 // Example demonstrating the usage of Telerik.ReportViewer.Html5.WebForms.ClientEvents.RenderingBegin property
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CSharp.NetFramework.WebFormsIntegrationDemo.Default" %>
 
@@ -400,7 +400,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
     </form>
 </body>
 </html>
-````
+```
 
 
 ## RenderingEnd
@@ -409,7 +409,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -434,7 +434,7 @@ Gets or sets the name of the JavaScript function that will be called when the re
     </form>
 </body>
 </html>
-````
+```
 
 
 ## UpdateUi
@@ -443,7 +443,7 @@ Gets or sets the name of the JavaScript function that will be called every time 
 
 ### Example
 
-````C#
+```C#
 <!-- Example demonstrating the use of the UpdateUi property in <telerik:ReportViewer>
 The UpdateUi property specifies the JavaScript function to call on UI updates. -->
 
@@ -472,7 +472,7 @@ The UpdateUi property specifies the JavaScript function to call on UI updates. -
     </form>
 </body>
 </html>
-````
+```
 
 
 ## ViewerToolTipOpening
@@ -481,7 +481,7 @@ Gets or sets the name of the JavaScript function that will be called when a tool
 
 ### Example
 
-````C#
+```C#
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -507,5 +507,5 @@ Gets or sets the name of the JavaScript function that will be called when a tool
     </form>
 </body>
 </html>
-````
+```
 

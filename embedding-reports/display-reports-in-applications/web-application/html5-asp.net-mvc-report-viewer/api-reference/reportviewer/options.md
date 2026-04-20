@@ -21,7 +21,7 @@ Sets the key mappings used in accessibility mode for keyboard navigation. Custom
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Html5.Common.Options
 
 <!-- Example demonstrating how to set the AccessibilityKeyMap for keyboard navigation accessibility -->
@@ -33,7 +33,7 @@ Sets the key mappings used in accessibility mode for keyboard navigation. Custom
         // For demonstration, custom key mapping properties are set using the default constructor and object initializer
     })
 )
-````
+```
 
 
 ## AuthenticationToken
@@ -46,7 +46,7 @@ Sets the encoded authentication token used to authenticate requests to the repor
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example of setting the AuthenticationToken for the Report Viewer *@
@@ -55,7 +55,7 @@ Sets the encoded authentication token used to authenticate requests to the repor
     .ServiceUrl(Url.Content("~/api/reports/"))
     .AuthenticationToken("encoded-auth-token-value")
 )
-````
+```
 
 
 ## CheckedButtonClass
@@ -68,7 +68,7 @@ Sets the CSS class to be applied to buttons when they are in checked state. Allo
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -79,7 +79,7 @@ Sets the CSS class to be applied to buttons when they are in checked state. Allo
     // Sets the CSS class to be applied to buttons when they are in checked state.
     .CheckedButtonClass("my-custom-checked-btn")
 )
-````
+```
 
 
 ## ClientEvents
@@ -92,7 +92,7 @@ Provides a fluent way to configure the client-side event handlers of the report 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -109,7 +109,7 @@ Provides a fluent way to configure the client-side event handlers of the report 
         // events.OnReportLoaded("onReportLoaded");
     })
 )
-````
+```
 
 
 ## Deferred
@@ -118,7 +118,7 @@ Defers the JavaScript initialization statement for the report viewer. Allows man
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example demonstrating the use of Deferred() to defer the script initialization statement of the report viewer *@
@@ -132,7 +132,7 @@ Defers the JavaScript initialization statement for the report viewer. Allows man
 {
     @Html.TelerikReporting().DeferredScripts()
 }
-````
+```
 
 
 ## DisabledButtonClass
@@ -145,7 +145,7 @@ Sets the CSS class to be applied to buttons when they are in disabled state. All
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example: Set a CSS class for disabled buttons in the report viewer *@
@@ -154,7 +154,7 @@ Sets the CSS class to be applied to buttons when they are in disabled state. All
     .ServiceUrl(Url.Content("~/api/reports/"))
     .DisabledButtonClass("my-disabled-button-class")
 )
-````
+```
 
 
 ## DocumentMapAreaPosition
@@ -171,7 +171,7 @@ Specifies where the Document Map Area should be displayed.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -184,7 +184,7 @@ Specifies where the Document Map Area should be displayed.
     .ServiceUrl(Url.Content("~/api/reports/"))
     .DocumentMapAreaPosition(DocumentMapAreaPosition.Right)
 )
-````
+```
 
 
 ## DocumentMapVisible
@@ -197,7 +197,7 @@ Sets the initial visibility state of the viewer's document map. Controls whether
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example: Set the document map to be initially visible in the report viewer *@
@@ -206,7 +206,7 @@ Sets the initial visibility state of the viewer's document map. Controls whether
     .ServiceUrl(Url.Content("~/api/reports/"))
     .DocumentMapVisible(true)
 )
-````
+```
 
 
 ## EnableAccessibility
@@ -219,7 +219,7 @@ Enables or disables the accessibility features of the report viewer and its cont
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 @{
@@ -233,7 +233,7 @@ Enables or disables the accessibility features of the report viewer and its cont
     // Enable the accessibility features in the viewer
     .EnableAccessibility(true)
 )
-````
+```
 
 
 ## Id
@@ -246,7 +246,7 @@ Sets the unique identifier for the MVC Report Viewer HTML element that will be u
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example: Sets the unique id of the Report Viewer HTML element *@
@@ -255,7 +255,7 @@ Sets the unique identifier for the MVC Report Viewer HTML element that will be u
     .Id("reportViewer1")
     .ServiceUrl(Url.Content("~/api/reports/"))
 )
-````
+```
 
 
 ## InitialPageAreaImageUrl
@@ -268,7 +268,7 @@ Sets the background image URL for the PageArea when parameter values are missing
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -279,7 +279,7 @@ Sets the background image URL for the PageArea when parameter values are missing
     // Sets the background image URL for the PageArea when parameter values are missing or invalid.
     .InitialPageAreaImageUrl(Url.Content("~/Content/images/empty-parameters.png"))
 )
-````
+```
 
 
 ## KeepClientAlive
@@ -292,7 +292,7 @@ Sets whether the client session will be kept alive by sending periodic requests 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -304,7 +304,7 @@ Sets whether the client session will be kept alive by sending periodic requests 
     .ServiceUrl(Url.Content("~/api/reports/"))
     .KeepClientAlive(true) // Enables sending periodic keep-alive requests
 )
-````
+```
 
 
 ## PageMode
@@ -321,7 +321,7 @@ Specifies whether the viewer is in Continuous scroll or Single page mode.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example: Set the viewer to ContinuousScroll PageMode *@
@@ -330,7 +330,7 @@ Specifies whether the viewer is in Continuous scroll or Single page mode.
     .ServiceUrl(Url.Content("~/api/reports/"))
     .PageMode(PageMode.ContinuousScroll)
 )
-````
+```
 
 
 ## ParameterEditors
@@ -343,7 +343,7 @@ Provides a fluent way to configure custom parameter editors for the report viewe
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -363,7 +363,7 @@ Provides a fluent way to configure custom parameter editors for the report viewe
         // For demonstration, we'll just show the call is possible
     })
 )
-````
+```
 
 
 ## Parameters
@@ -376,7 +376,7 @@ Configures the report parameters display and interaction options. Controls how r
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -390,7 +390,7 @@ Configures the report parameters display and interaction options. Controls how r
     // Example: Configure parameter editors, such as using ComboBox for single select parameter editors
     .Parameters(new Parameters { Editors = new Editors { SingleSelect = EditorTypes.ComboBox } })
 )
-````
+```
 
 
 ## ParametersAreaPosition
@@ -409,7 +409,7 @@ Specifies where the Parameters Area should be displayed.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 <!-- Example showing how to set the Parameters Area position to the right of the page view -->
@@ -418,7 +418,7 @@ Specifies where the Parameters Area should be displayed.
     .ServiceUrl(Url.Content("~/api/reports/"))
     .ParametersAreaPosition(ParametersAreaPosition.Right)
 )
-````
+```
 
 
 ## ParametersAreaVisible
@@ -431,7 +431,7 @@ Sets the initial visibility state of the viewer's parameters area. Controls whet
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 <!-- Example showing how to set the parameters area visibility in the HTML5 Report Viewer for MVC -->
@@ -441,7 +441,7 @@ Sets the initial visibility state of the viewer's parameters area. Controls whet
     // Makes the parameters area initially visible
     .ParametersAreaVisible(true)
 )
-````
+```
 
 
 ## PersistSession
@@ -454,7 +454,7 @@ Sets whether the viewer's client session should be persisted between page refres
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 <!-- Example: Set PersistSession to true to persist session between page refreshes -->
@@ -463,7 +463,7 @@ Sets whether the viewer's client session should be persisted between page refres
     .ServiceUrl(Url.Content("~/api/reports/"))
     .PersistSession(true)
 )
-````
+```
 
 
 ## PrintMode
@@ -482,7 +482,7 @@ Sets the print mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -495,7 +495,7 @@ Example: Set the print mode of the Telerik Reporting HTML5 MVC Report Viewer to 
     .ServiceUrl(Url.Content("~/api/reports/"))
     .PrintMode(PrintMode.ForcePDFPlugin)
 )
-````
+```
 
 
 ## ReportServer
@@ -508,7 +508,7 @@ Sets the connection data for the Telerik Report Server that hosts the reports. U
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example demonstrating how to set the connection data for the Telerik Report Server using the ReportServer method *@
@@ -521,7 +521,7 @@ Sets the connection data for the Telerik Report Server that hosts the reports. U
         Password = "adminpass"
     })
 )
-````
+```
 
 
 ## ReportSource
@@ -534,7 +534,7 @@ Sets the report source as a string identifier for the report displayed in the vi
 
 #### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 @{
     ViewBag.Title = "Telerik HTML5 Report Viewer MVC Demo - ReportSource(string)";
@@ -548,7 +548,7 @@ Sets the report source as a string identifier for the report displayed in the vi
     .ServiceUrl(Url.Content("~/api/reports/"))
     .ReportSource("MyReports/SampleReport") // Sets the report source by string
 )
-````
+```
 
 ### ReportSource(TypeReportSource)
 
@@ -556,7 +556,7 @@ Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug teleri
 
 #### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -575,7 +575,7 @@ Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug teleri
     // Set the report source as a TypeReportSource
     .ReportSource(typeReportSource)
 )
-````
+```
 
 ### ReportSource(UriReportSource)
 
@@ -583,7 +583,7 @@ Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerik
 
 #### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -594,7 +594,7 @@ Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerik
     // Set the report source as a UriReportSource
     .ReportSource(new UriReportSource { Uri = "Reports/MyReport.trdx" })
 )
-````
+```
 
 ### ReportSource(string,System.Collections.Generic.IDictionary<string,object>)
 
@@ -602,7 +602,7 @@ Sets the report source as a string identifier and provides parameter values for 
 
 #### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 @{
     ViewBag.Title = "Telerik HTML5 Report Viewer MVC Demo";
@@ -615,7 +615,7 @@ Sets the report source as a string identifier and provides parameter values for 
     // Set the report source using the report identifier and parameters
     .ReportSource("SampleReport", new Dictionary<string, object> { { "Parameter1", "Value1" } })
 )
-````
+```
 
 
 ## Scale
@@ -628,7 +628,7 @@ Sets the zoom scale factor for the report display when using Specific scale mode
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 <!--
@@ -639,7 +639,7 @@ Example demonstrating how to set the zoom scale factor for the report display us
     .ServiceUrl(Url.Content("~/api/reports/"))
     .Scale(1.0) // Sets the zoom scale to 100%
 )
-````
+```
 
 
 ## ScaleMode
@@ -658,7 +658,7 @@ Sets the scale mode of the viewer.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example: Set the scale mode of the viewer to FitPage *@
@@ -667,7 +667,7 @@ Sets the scale mode of the viewer.
     .ServiceUrl(Url.Content("~/api/reports/"))
     .ScaleMode(ScaleMode.FitPage)
 )
-````
+```
 
 
 ## SearchMetadataOnDemand
@@ -680,7 +680,7 @@ Determines whether the search metadata will be delivered on demand or generated 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -691,7 +691,7 @@ Determines whether the search metadata will be delivered on demand or generated 
     // Enables search metadata to be delivered on demand
     .SearchMetadataOnDemand(true)
 )
-````
+```
 
 
 ## SendEmail
@@ -704,7 +704,7 @@ Configures the send email functionality options for the report viewer. Enables u
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @* Example demonstrating how to use the SendEmail method to enable the send email functionality on the report viewer *@
@@ -713,7 +713,7 @@ Configures the send email functionality options for the report viewer. Enables u
     .ServiceUrl(Url.Content("~/api/reports/"))
     .SendEmail(new SendEmail { Enabled = true })
 )
-````
+```
 
 
 ## ServiceUrl
@@ -726,7 +726,7 @@ Sets the URL of the Telerik Reporting REST service that will provide the report 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.ReportViewer.Mvc
 
 @{
@@ -737,7 +737,7 @@ Sets the URL of the Telerik Reporting REST service that will provide the report 
     .Id("reportViewer1")
     .ServiceUrl("/api/reports/")
 )
-````
+```
 
 
 ## TemplateUrl
@@ -750,7 +750,7 @@ Sets the URL for the custom report viewer template that defines the viewer's UI 
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -760,7 +760,7 @@ Sets the URL for the custom report viewer template that defines the viewer's UI 
     .ServiceUrl("/api/reports/")
     .TemplateUrl("/ReportViewer/templates/customTemplate.html")
 )
-````
+```
 
 
 ## ViewMode
@@ -777,7 +777,7 @@ Specifies whether the viewer is in interactive or print preview mode.
 
 ### Example
 
-````C#
+```C#
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
 
@@ -790,5 +790,5 @@ This example demonstrates how to set the ViewMode of the Telerik Report Viewer t
     .ServiceUrl(Url.Content("~/api/reports/"))
     .ViewMode(ViewMode.Interactive)
 )
-````
+```
 

@@ -11,7 +11,9 @@ reportingArea: General
 
 # Configuring the MaxiCode Barcode in Reports
 
-MaxiCode is a fixed-size two-dimensional barcode originally created by the United Parcel Service (UPS) for automated package sorting and tracking. The symbology is defined by the ISO/IEC 16023 international standard. Telerik Reporting implements the MaxiCode encoder through the `MaxiCodeEncoder` class and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
+[MaxiCode](https://en.wikipedia.org/wiki/MaxiCode) is a fixed-size two-dimensional barcode originally created by the United Parcel Service (UPS) for automated package sorting and tracking. The symbology is defined by the [ISO/IEC 16023 international standard](https://www.iso.org/standard/29835.html).
+
+Telerik Reporting implements the MaxiCode encoder through the [MaxiCodeEncoder class](api/telerik.reporting.barcodes.maxicodeencoder) and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
 
 Unlike most 2D barcodes that use square modules, MaxiCode uses a 33×30 hexagonal grid of offset rows arranged around a central bull's-eye finder pattern. This design makes the barcode readable by high-speed scanners even on curved or irregular surfaces. A MaxiCode symbol is always 1 inch wide by 1 inch tall and contains 884 hexagonal modules organized in 33 rows.
 
@@ -19,7 +21,6 @@ Unlike most 2D barcodes that use square modules, MaxiCode uses a 33×30 hexagona
 
 The MaxiCode symbol consists of the following elements:
 
-<!-- TODO(author): add image -->
 ![The structure of a MaxiCode barcode symbol](images/Barcodes/barcode-maxicode-structure.png)
 
 - **Bull's-eye finder pattern**&mdash;The concentric circular pattern at the center of the symbol. It consists of three concentric circles (rings) used by the scanner to locate and orient the symbol. The finder pattern is the most recognizable feature of MaxiCode.
@@ -46,15 +47,15 @@ The MaxiCode barcode provides several settings you can use to fine-tune its beha
 
 ### Mode
 
-The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the `MaxiCodeMode` enum values described in the [Encoding Modes](#encoding-modes) section. The default value is `Mode4`, which allows general-purpose data encoding.
+The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the [MaxiCodeMode enum](api/telerik.reporting.barcodes.maxicodemode) values described in the [Encoding Modes](#encoding-modes) section. The default value is `Mode4`, which allows general-purpose data encoding.
 
 ### Structured Carrier Data (Modes 2 and 3)
 
 When you set the `Mode` property to `Mode2` or `Mode3`, the encoder expects a structured carrier message. Provide the following properties to configure the primary message:
 
-- `PostalCode`&mdash;The destination postal code. In Mode 2, the postal code must be a numeric value of up to nine digits. In Mode 3, the postal code can be an alphanumeric value of up to six characters.
-- `CountryCode`&mdash;A three-digit numeric code that identifies the destination country according to the ISO 3166 standard.
-- `ClassOfService`&mdash;A three-digit numeric code that identifies the service class for the shipment.
+- `PostalCode`&mdash;The destination postal code. In _Mode 2_, the postal code must be a __numeric value of up to nine digits__. In _Mode 3_, the postal code can be an __alphanumeric value of up to six characters__.
+- `CountryCode`&mdash;A __three-digit numeric__ code that identifies the destination country according to the [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) standard.
+- `ClassOfService`&mdash;A __three-digit numeric__ code that identifies the service class for the shipment.
 
 The secondary message is populated from the `Value` property of the barcode item and can contain up to 84 characters in Mode 2 or Mode 3.
 
@@ -62,7 +63,7 @@ The secondary message is populated from the `Value` property of the barcode item
 
 ### Error Correction
 
-MaxiCode uses Reed-Solomon error correction over GF(64) internally. The level of error correction is determined by the selected mode:
+MaxiCode uses internally [Reed-Solomon error correction](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction) over _GF(64), polynomial 0x43_. The level of error correction is determined by the selected mode:
 
 - Modes 2, 3, and 4 use a standard error correction level that allows recovery of the symbol even when up to 25% of the modules are damaged.
 - Mode 5 uses an enhanced error correction level that allows recovery of up to 50% of the modules at the cost of reduced data capacity.

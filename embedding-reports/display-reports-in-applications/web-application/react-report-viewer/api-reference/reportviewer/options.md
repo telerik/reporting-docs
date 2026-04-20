@@ -22,15 +22,18 @@ If provided, a Bearer token will be set in the Authorization header for every re
 ### Example
 
 ````JavaScript
-// Set authentication token
-const token = "YOUR_AUTH_TOKEN";
-// Use with component: authenticationToken={token}
+// Set a Bearer authentication token for REST service requests
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  authenticationToken="YOUR_AUTH_TOKEN"
+/>
 ````
 
 
 ## checkedButtonClass
 
-A class used in conjunction with the data- attributes. Whenever a command is in the checked state this class will be added to the respective button.
+A CSS class added to external command buttons (bound via data-attributes) when the command is in a checked state.
 
 ### Type
 
@@ -39,14 +42,20 @@ A class used in conjunction with the data- attributes. Whenever a command is in 
 ### Example
 
 ````JavaScript
-// Custom checked button styling
-// Use with component: checkedButtonClass="btn-active"
+// Apply custom styling to checked/active command buttons
+<TelerikReportViewer
+  id="rv1"
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  selector="#rv1"
+  checkedButtonClass="btn-active"
+/>
 ````
 
 
 ## disabledButtonClass
 
-A class used in conjunction with the data- attributes. Whenever a command is in the disabled state this class will be added to the respective button.
+A CSS class added to external command buttons (bound via data-attributes) when the command is in a disabled state.
 
 ### Type
 
@@ -55,8 +64,14 @@ A class used in conjunction with the data- attributes. Whenever a command is in 
 ### Example
 
 ````JavaScript
-// Custom disabled button styling
-// Use with component: disabledButtonClass="btn-disabled"
+// Apply custom styling to disabled command buttons
+<TelerikReportViewer
+  id="rv1"
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  selector="#rv1"
+  disabledButtonClass="btn-disabled"
+/>
 ````
 
 
@@ -112,7 +127,6 @@ Determines whether the viewer should provide support for accessibility features.
 
 ````JavaScript
 // Enable accessibility features
-// Use with component: enableAccessibility={true}
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
@@ -163,7 +177,7 @@ The image URL for the PageArea background image. Used only when the parameter va
 
 ## keepClientAlive
 
-Determines whether the client will be kept alive. Default value is true.
+Determines whether the viewer sends periodic keep-alive requests to the server to prevent the client session from expiring. Default value is true.
 
 ### Type
 
@@ -231,7 +245,7 @@ Allows the user to define custom editors for the report parameters.
 
 ### Type
 
-[`ParameterEditor`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#parametereditor)
+`Array.<ParameterEditor>`
 
 ### Example
 
@@ -239,9 +253,26 @@ Allows the user to define custom editors for the report parameters.
 // Register custom parameter editors
 const customEditors = [{
   match: function(param) { return param.name === "MyParam"; },
-  createEditor: function(placeholder, options) { return {}; }
+  createEditor: function(placeholder, options) {
+    return {
+      beginEdit: function(param) {
+        // Create and initialize the editor UI inside placeholder.
+      },
+      addAccessibility: function(accessibilityOptions) {
+        // Apply ARIA attributes and accessibility strings.
+      },
+      setAccessibilityErrorState: function(hasError) {
+        // Update accessibility error state on the editor.
+      }
+    };
+  }
 }];
-// Use with component: parameterEditors={customEditors}
+
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  parameterEditors={customEditors}
+/>
 ````
 
 
@@ -342,8 +373,12 @@ Specifies how the viewer should print reports. Available values: "AUTO_SELECT" (
 ### Example
 
 ````JavaScript
-// Force PDF file for printing
-// Use with component: printMode="FORCE_PDF_FILE"
+// Force PDF file download for printing
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  printMode="FORCE_PDF_FILE"
+/>
 ````
 
 
@@ -484,7 +519,7 @@ Determines whether the search metadata will be delivered on demand (true) or by 
 
 ## selector
 
-A selector used in conjunction with the data- attributes. Whenever a command is attached to an element outside of the report viewer via the data-attributes this selector must be provided.
+A CSS selector that identifies the viewer's container element. Required when using external command buttons via data-attributes. External buttons must set their `data-target-report-viewer` attribute to this same value so the viewer can resolve which instance to command and apply `disabledButtonClass` / `checkedButtonClass` toggling.
 
 ### Type
 
@@ -493,8 +528,18 @@ A selector used in conjunction with the data- attributes. Whenever a command is 
 ### Example
 
 ````JavaScript
-// Set a custom selector for external commands
-// Use with component: selector="#customToolbar"
+// The selector must match the viewer's own container id (same value used in data-target-report-viewer on external buttons)
+<TelerikReportViewer
+  id="rv1"
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  selector="#rv1"
+  disabledButtonClass="btn-disabled"
+  checkedButtonClass="btn-checked"
+/>
+
+// External buttons reference the same selector in data-target-report-viewer:
+// <button data-command="telerik_ReportViewer_goToNextPage" data-target-report-viewer="#rv1">Next</button>
 ````
 
 
@@ -545,7 +590,7 @@ Sets the address of the Report REST Service. Required if reportServer is not pro
 
 ## templateUrl
 
-Sets the address of the html page that contains the viewer templates. If omitted, the default template will be downloaded from the REST service. Note: Internally mapped to trvTemplateUrl property.
+Sets the address of the HTML page that contains the viewer templates. If omitted, the default template will be downloaded from the REST service.
 
 ### Type
 

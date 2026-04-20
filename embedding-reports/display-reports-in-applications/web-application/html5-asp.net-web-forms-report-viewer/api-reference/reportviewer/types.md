@@ -56,7 +56,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
 
 ## ClientEvents
 
-Represents a configuration class that provides properties for initializing client-side event handlers of the HTML5 WebForms ReportViewer control. Used to specify JavaScript function names that will be executed in response to various report viewer events during report rendering, printing, exporting, and user interaction.
+Represents a configuration class that provides properties for initializing client-side event handlers of the HTML5 WebForms ReportViewer control. Used to specify JavaScript function names that will be executed in response to various report viewer events during report rendering, printing, exporting, and user interaction. All event handler properties should contain JavaScript function names (without parentheses) that will be called when the corresponding events occur in the HTML5 ReportViewer.
 
 ### Properties
 
@@ -80,7 +80,7 @@ Represents a configuration class that provides properties for initializing clien
 
 ## CustomParameterEditor
 
-Represents a custom parameter editor configuration with JavaScript function references for parameter matching and editor creation in the HTML5 WebForms ReportViewer. Used to define custom parameter editors that provide specialized input controls for specific parameter types or scenarios.
+Represents a custom parameter editor configuration with JavaScript function references for parameter matching and editor creation in the HTML5 WebForms ReportViewer. Used to define custom parameter editors that provide specialized input controls for specific parameter types or scenarios. Enables extensibility of the parameter editing experience by allowing custom JavaScript functions to determine parameter applicability and create custom editor interfaces.
 
 ### Properties
 
@@ -92,7 +92,7 @@ Represents a custom parameter editor configuration with JavaScript function refe
 
 ## DeferredScripts
 
-Represents a WebForms control that renders deferred JavaScript initialization scripts for HTML5 ReportViewer components. Used to collect and output JavaScript initialization code at a specific location in the HTML document for optimal performance and loading behavior.
+Represents a WebForms control that renders deferred JavaScript initialization scripts for HTML5 ReportViewer components. Used to collect and output JavaScript initialization code at a specific location in the HTML document for optimal performance and loading behavior. Provides a way to defer script execution until a controlled point in the page rendering process, improving page load performance by separating script registration from script execution.
 
 ### Properties
 
@@ -105,7 +105,7 @@ Represents a WebForms control that renders deferred JavaScript initialization sc
 
 ## EditorsContainer
 
-Provides configuration container for parameter editor types used in single-select and multi-select scenarios within the HTML5 WebForms ReportViewer. Used to specify the visual presentation style for different parameter selection scenarios.
+Provides configuration container for parameter editor types used in single-select and multi-select scenarios within the HTML5 WebForms ReportViewer. Used to specify the visual presentation style for different parameter selection scenarios. Controls the editor type selection for parameters with available values in the HTML5 viewer interface.
 
 ### Properties
 
@@ -117,7 +117,7 @@ Provides configuration container for parameter editor types used in single-selec
 
 ## Parameter
 
-A parameter passed to the `Telerik.Reporting.IReportDocument` object when initialized
+A parameter passed to the `Telerik.Reporting.IReportDocument` object when initialized Contains automatic type conversion capabilities to ensure parameter values are properly formatted for report processing.
 
 ### Properties
 
@@ -129,7 +129,7 @@ A parameter passed to the `Telerik.Reporting.IReportDocument` object when initia
 
 ## ParameterCollection
 
-Represents a collection of [`Telerik.ReportViewer.Html5.WebForms.Parameter`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#parameter) objects used for configuring report parameters in the HTML5 WebForms ReportViewer. Used to manage parameter values that are passed to reports during initialization and processing.
+Represents a collection of [`Telerik.ReportViewer.Html5.WebForms.Parameter`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/webforms-report-viewer/api-reference/reportviewer/types%}#parameter) objects used for configuring report parameters in the HTML5 WebForms ReportViewer. Used to manage parameter values that are passed to reports during initialization and processing. The collection prevents duplicate parameter names by updating existing parameter values when adding parameters with matching names.
 
 ### Properties
 
@@ -150,7 +150,7 @@ Represents a collection of [`Telerik.ReportViewer.Html5.WebForms.Parameter`]({%s
 
 ## ParameterEditors
 
-Represents a configuration class that provides properties for initializing parameter editors of the HTML5 WebForms ReportViewer. Used to specify JavaScript function names that will handle different types of report parameters and create appropriate input controls in the HTML5 viewer interface.
+Represents a configuration class that provides properties for initializing parameter editors of the HTML5 WebForms ReportViewer. Used to specify JavaScript function names that will handle different types of report parameters and create appropriate input controls in the HTML5 viewer interface. Enables customization of parameter editing experience by allowing assignment of specific JavaScript editors for different parameter types and scenarios.
 
 ### Constructors
 
@@ -175,7 +175,7 @@ Represents a configuration class that provides properties for initializing param
 
 ## Parameters
 
-Provides configuration options for parameter editors within the HTML5 WebForms ReportViewer. Used to customize the display style and interaction behavior of parameter input controls in the HTML5 viewer interface.
+Provides configuration options for parameter editors within the HTML5 WebForms ReportViewer. Used to customize the display style and interaction behavior of parameter input controls in the HTML5 viewer interface. Contains settings for parameter editor types that control how parameter inputs are rendered and presented to users.
 
 ### Constructors
 
@@ -211,7 +211,7 @@ Provides a class for the report server data. Contains the URL to the report serv
 
 ## ReportSource
 
-Provides a configuration class for the report source used in the HTML5 WebForms ReportViewer. Contains the collection of parameter values, report identifier, and identifier type for configuring report loading and processing.
+Provides a configuration class for the report source used in the HTML5 WebForms ReportViewer. Contains the collection of parameter values, report identifier, and identifier type for configuring report loading and processing. Used to specify which report to display and provide parameter values for report initialization in HTML5 viewer scenarios.
 
 ### Constructors
 
@@ -256,7 +256,7 @@ Provides a configuration class for the report source used in the HTML5 WebForms 
 
 ## ReportViewer
 
-Represents the HTML5 WebForms ReportViewer control that provides comprehensive report viewing capabilities with modern HTML5-based rendering and interactive user interface. Used to display Telerik Reporting reports within ASP.NET WebForms applications with full JavaScript-based client-side functionality for report interaction, navigation, and management.
+Represents the HTML5 WebForms ReportViewer control that provides comprehensive report viewing capabilities with modern HTML5-based rendering and interactive user interface. Used to display Telerik Reporting reports within ASP.NET WebForms applications with full JavaScript-based client-side functionality for report interaction, navigation, and management. Provides a complete HTML5-based report viewing solution with responsive design, client-side processing, and extensive customization options for modern web applications.
 
 ### Constructors
 
@@ -332,7 +332,7 @@ Represents the HTML5 WebForms ReportViewer control that provides comprehensive r
 
 ## SendEmail
 
-Provides configuration options for the send email functionality within the HTML5 WebForms ReportViewer. Used to configure email settings including enabled state, preselected rendering format, and default email addresses for report sharing via email.
+Provides configuration options for the send email functionality within the HTML5 WebForms ReportViewer. Used to configure email settings including enabled state, preselected rendering format, and default email addresses for report sharing via email. Contains email message configuration properties that enable users to send reports directly from the HTML5 viewer toolbar with customizable default values.
 
 ### Constructors
 

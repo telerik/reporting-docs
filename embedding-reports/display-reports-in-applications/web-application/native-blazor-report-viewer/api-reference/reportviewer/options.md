@@ -387,7 +387,7 @@ Generic template used to render report viewer parameter editors. Allows for decl
 Gets or sets the print mode of the viewer.
 
 - Three modes exist currently:
-- AutoSelect - The viewer automatically determinse how to print: via the browser's PDF plug-in or exporting to a PDF file.
+- AutoSelect - The viewer automatically determines how to print: via the browser's PDF plug-in or exporting to a PDF file.
 - ForcePDFPlugin - The viewer always uses the PDF plugin regardless of the browser's version and settings.
 - ForcePDFFile - The viewer always exports the report document to PDF format with 'automatic print on open' script enabled.
 

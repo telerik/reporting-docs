@@ -13,7 +13,7 @@ position: 2
 
 ## AccessibilityKeyMap
 
-Sets the key mappings used in accessibility mode for keyboard navigation.
+Sets the key mappings used in accessibility mode for keyboard navigation. Customizes keyboard shortcuts for accessibility navigation to meet specific application or user requirements.
 
 ### Type
 
@@ -38,7 +38,7 @@ Sets the key mappings used in accessibility mode for keyboard navigation.
 
 ## AuthenticationToken
 
-Sets the encoded authentication token used to authenticate requests to the reporting service.
+Sets the encoded authentication token used to authenticate requests to the reporting service. Used for secured reporting services that require authentication tokens for request authorization.
 
 ### Type
 
@@ -60,7 +60,7 @@ Sets the encoded authentication token used to authenticate requests to the repor
 
 ## CheckedButtonClass
 
-Sets the CSS class to be applied to buttons when they are in checked state.
+Sets the CSS class to be applied to buttons when they are in checked state. Allows customization of checked button appearance to match application styling requirements.
 
 ### Type
 
@@ -84,7 +84,7 @@ Sets the CSS class to be applied to buttons when they are in checked state.
 
 ## ClientEvents
 
-Provides a fluent way to configure the client-side event handlers of the report viewer.
+Provides a fluent way to configure the client-side event handlers of the report viewer. Enables attachment of JavaScript functions to handle various viewer events such as rendering, printing, and user interactions.
 
 ### Type
 
@@ -114,7 +114,7 @@ Provides a fluent way to configure the client-side event handlers of the report 
 
 ## Deferred
 
-Defers the JavaScript initialization statement for the report viewer.
+Defers the JavaScript initialization statement for the report viewer. Allows manual control over when the viewer initialization script is executed for custom loading scenarios.
 
 ### Example
 
@@ -137,7 +137,7 @@ Defers the JavaScript initialization statement for the report viewer.
 
 ## DisabledButtonClass
 
-Sets the CSS class to be applied to buttons when they are in disabled state.
+Sets the CSS class to be applied to buttons when they are in disabled state. Allows customization of disabled button appearance to match application styling requirements.
 
 ### Type
 
@@ -163,6 +163,7 @@ Specifies where the Document Map Area should be displayed.
 
 - Right - Displays Document Map Area on the right of the page view.
 - Left - Displays Document Map Area on the left of the page view.
+- Controls the placement of the document map navigation panel for report bookmark and section navigation.
 
 ### Type
 
@@ -188,7 +189,7 @@ Specifies where the Document Map Area should be displayed.
 
 ## DocumentMapVisible
 
-Sets the initial visibility state of the viewer's document map.
+Sets the initial visibility state of the viewer's document map. Controls whether the document map navigation panel is visible when the viewer first loads. The document map is shown only if the report contains bookmarks. The document map works both in the interactive and print preview view modes.
 
 ### Type
 
@@ -210,7 +211,7 @@ Sets the initial visibility state of the viewer's document map.
 
 ## EnableAccessibility
 
-Enables or disables the accessibility features of the report viewer and its contents.
+Enables or disables the accessibility features of the report viewer and its contents. Accessibility features include ARIA attributes, keyboard navigation support, and screen reader compatibility.
 
 ### Type
 
@@ -237,7 +238,7 @@ Enables or disables the accessibility features of the report viewer and its cont
 
 ## Id
 
-Sets the unique identifier for the MVC Report Viewer HTML element that will be used by the initialization script to locate and initialize the viewer.
+Sets the unique identifier for the MVC Report Viewer HTML element that will be used by the initialization script to locate and initialize the viewer. This identifier is required for proper viewer initialization and must be unique within the page HTML structure.
 
 ### Type
 
@@ -259,7 +260,7 @@ Sets the unique identifier for the MVC Report Viewer HTML element that will be u
 
 ## InitialPageAreaImageUrl
 
-Sets the background image URL for the PageArea when parameter values are missing or invalid.
+Sets the background image URL for the PageArea when parameter values are missing or invalid. Provides visual feedback to users when the report cannot be displayed due to missing or invalid parameters.
 
 ### Type
 
@@ -283,7 +284,7 @@ Sets the background image URL for the PageArea when parameter values are missing
 
 ## KeepClientAlive
 
-Sets whether the client session will be kept alive by sending periodic requests to prevent session timeout.
+Sets whether the client session will be kept alive by sending periodic requests to prevent session timeout. Prevents client session expiration during extended report viewing sessions by maintaining server communication.
 
 ### Type
 
@@ -312,6 +313,7 @@ Specifies whether the viewer is in Continuous scroll or Single page mode.
 
 - SinglePage - Displays only one report page in PageArea container
 - ContinuousScroll - Displays large amount of report pages by appending additional pages on demand.
+- SinglePage shows only one report page at a time, while ContinuousScroll enables scrolling through multiple pages with progressive loading.
 
 ### Type
 
@@ -333,7 +335,7 @@ Specifies whether the viewer is in Continuous scroll or Single page mode.
 
 ## ParameterEditors
 
-Provides a fluent way to configure custom parameter editors for the report viewer.
+Provides a fluent way to configure custom parameter editors for the report viewer. Enables replacement of default parameter input controls with custom JavaScript-based editors for enhanced user experience.
 
 ### Type
 
@@ -366,7 +368,7 @@ Provides a fluent way to configure custom parameter editors for the report viewe
 
 ## Parameters
 
-Configures the report parameters display and interaction options.
+Configures the report parameters display and interaction options. Controls how report parameters are displayed and managed within the viewer interface.
 
 ### Type
 
@@ -399,6 +401,7 @@ Specifies where the Parameters Area should be displayed.
 - Left - Displays Parameters Area on the left of the page view.
 - Top - Displays Parameters Area on the top of the page view.
 - Bottom - Displays Parameters Area on the bottom of the page view.
+- Controls the placement of the parameters panel for optimal user experience and interface layout.
 
 ### Type
 
@@ -420,7 +423,7 @@ Specifies where the Parameters Area should be displayed.
 
 ## ParametersAreaVisible
 
-Sets the initial visibility state of the viewer's parameters area.
+Sets the initial visibility state of the viewer's parameters area. Controls whether the parameters panel is visible when the viewer first loads, regardless of parameter presence.
 
 ### Type
 
@@ -443,7 +446,7 @@ Sets the initial visibility state of the viewer's parameters area.
 
 ## PersistSession
 
-Sets whether the viewer's client session should be persisted between page refreshes using browser sessionStorage.
+Sets whether the viewer's client session should be persisted between page refreshes using browser sessionStorage. Session persistence maintains viewer state during postbacks and page refreshes for improved user experience.
 
 ### Type
 
@@ -471,6 +474,7 @@ Sets the print mode of the viewer.
 - AutoSelect - Specifies that the viewer should automatically determine how to print: through the browser's PDF plug-in or through export to a PDF file.
 - ForcePDFPlugin - Specifies that the viewer should always use the PDF plugin regardless of the browser's version and settings.
 - ForcePDFFile - Specifies that the viewer should always export the report document to PDF format with the 'print' script enabled.
+- Controls the printing mechanism based on browser capabilities and user requirements for optimal print experience.
 
 ### Type
 
@@ -496,7 +500,7 @@ Example: Set the print mode of the Telerik Reporting HTML5 MVC Report Viewer to 
 
 ## ReportServer
 
-Sets the connection data for the Telerik Report Server that hosts the reports.
+Sets the connection data for the Telerik Report Server that hosts the reports. Used when the viewer is connected to a Telerik Report Server instance (takes precedence over the ServiceUrl property) Connecting to Telerik Report Server for .NET is not supported.
 
 ### Type
 
@@ -526,7 +530,7 @@ The `ReportSource` option has multiple overloads to support different configurat
 
 ### ReportSource(string)
 
-Sets the report source as a string identifier for the report displayed in the viewer.
+Sets the report source as a string identifier for the report displayed in the viewer. Simplified method for specifying reports using string-based identification without additional configuration.
 
 #### Example
 
@@ -548,7 +552,7 @@ Sets the report source as a string identifier for the report displayed in the vi
 
 ### ReportSource(TypeReportSource)
 
-Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource) for the report displayed in the viewer.
+Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#typereportsource) for the report displayed in the viewer. Used for reports that are implemented as .NET classes and referenced by their type information.
 
 #### Example
 
@@ -575,7 +579,7 @@ Sets the report source as a [`Telerik.Reporting.TypeReportSource`]({%slug teleri
 
 ### ReportSource(UriReportSource)
 
-Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) for the report displayed in the viewer.
+Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) for the report displayed in the viewer. Used for reports stored as files that are referenced by their file system or web URI location.
 
 #### Example
 
@@ -594,7 +598,7 @@ Sets the report source as a [`Telerik.Reporting.UriReportSource`]({%slug telerik
 
 ### ReportSource(string,System.Collections.Generic.IDictionary<string,object>)
 
-Sets the report source as a string identifier and provides parameter values for the report displayed in the viewer.
+Sets the report source as a string identifier and provides parameter values for the report displayed in the viewer. Combines report identification with parameter initialization for streamlined report setup with predefined values.
 
 #### Example
 
@@ -616,7 +620,7 @@ Sets the report source as a string identifier and provides parameter values for 
 
 ## Scale
 
-Sets the zoom scale factor for the report display when using Specific scale mode.
+Sets the zoom scale factor for the report display when using Specific scale mode. Only effective when ScaleMode is set to Specific, allowing precise control over report magnification.
 
 ### Type
 
@@ -646,6 +650,7 @@ Sets the scale mode of the viewer.
 - FitPage - The whole report will fit on the page (will zoom in or out), regardless of its width and height.
 - FitPageWidth - The report will be zoomed in or out so that the width of the screen and the width of the report match.
 - Specific - Uses the scale to zoom in and out the report.
+- Determines how the report is sized within the viewer area to optimize readability and user experience.
 
 ### Type
 
@@ -667,7 +672,7 @@ Sets the scale mode of the viewer.
 
 ## SearchMetadataOnDemand
 
-Determines whether the search metadata will be delivered on demand or generated by default during report rendering.
+Determines whether the search metadata will be delivered on demand or generated by default during report rendering. Enabling search will notify the report engine to produce search metadata while rendering the report.  This metadata is used by the report viewer in search dialog and in the report viewer area for highlighting the found and selected items. Default value: false
 
 ### Type
 
@@ -691,7 +696,7 @@ Determines whether the search metadata will be delivered on demand or generated 
 
 ## SendEmail
 
-Configures the send email functionality options for the report viewer.
+Configures the send email functionality options for the report viewer. Enables users to email reports directly from the viewer interface with customizable email settings.
 
 ### Type
 
@@ -713,7 +718,7 @@ Configures the send email functionality options for the report viewer.
 
 ## ServiceUrl
 
-Sets the URL of the Telerik Reporting REST service that will provide the report viewer with reports and handle processing operations.
+Sets the URL of the Telerik Reporting REST service that will provide the report viewer with reports and handle processing operations. The service must be properly configured for successful communication between the viewer and server.
 
 ### Type
 
@@ -737,7 +742,7 @@ Sets the URL of the Telerik Reporting REST service that will provide the report 
 
 ## TemplateUrl
 
-Sets the URL for the custom report viewer template that defines the viewer's UI structure and appearance.
+Sets the URL for the custom report viewer template that defines the viewer's UI structure and appearance. Allows customization of the viewer interface by providing a custom template with modified functionality or styling.
 
 ### Type
 
@@ -764,6 +769,7 @@ Specifies whether the viewer is in interactive or print preview mode.
 
 - PrintPreview - Displays the paginated report as if it is printed on paper. Interactivity is not enabled.
 - Interactive - Displays the report in its original width and height with no paging. Additionally interactivity is enabled.
+- PrintPreview displays paginated reports as they would appear when printed, while Interactive enables full report interactivity.
 
 ### Type
 

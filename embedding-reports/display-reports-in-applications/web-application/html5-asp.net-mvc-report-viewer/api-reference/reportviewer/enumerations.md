@@ -13,7 +13,7 @@ position: 7
 
 ## DocumentMapAreaPosition
 
-Specifies the positioning options for the Document Map Area within the MVC Report Viewer interface. Used to configure the placement of the document map navigation panel relative to the report content area.
+Specifies the positioning options for the Document Map Area within the MVC Report Viewer interface. Used to configure the placement of the document map navigation panel relative to the report content area. The Document Map Area provides hierarchical navigation through report bookmarks and sections.
 
 ### Values
 
@@ -25,7 +25,7 @@ Specifies the positioning options for the Document Map Area within the MVC Repor
 
 ## EditorTypes
 
-Specifies the available parameter editor types for rendering parameter input controls in the MVC Report Viewer. Used to define the visual style and interaction behavior of parameter input controls.
+Specifies the available parameter editor types for rendering parameter input controls in the MVC Report Viewer. Used to define the visual style and interaction behavior of parameter input controls. Each editor type provides different user experience and visual presentation for parameter value selection.
 
 ### Values
 
@@ -37,7 +37,7 @@ Specifies the available parameter editor types for rendering parameter input con
 
 ## PageMode
 
-Specifies the page display mode options for the MVC Report Viewer control. Used to configure how report pages are presented and navigated within the viewer interface.
+Specifies the page display mode options for the MVC Report Viewer control. Used to configure how report pages are presented and navigated within the viewer interface. Controls the page rendering behavior and user navigation experience within the report viewer.
 
 ### Values
 
@@ -49,7 +49,7 @@ Specifies the page display mode options for the MVC Report Viewer control. Used 
 
 ## ParametersAreaPosition
 
-Specifies the positioning options for the Parameters Area within the MVC Report Viewer interface. Used to configure the placement of the parameters panel relative to the report content area for optimal user experience and interface layout.
+Specifies the positioning options for the Parameters Area within the MVC Report Viewer interface. Used to configure the placement of the parameters panel relative to the report content area for optimal user experience and interface layout. Controls the visual placement of the parameters input panel to accommodate different screen sizes and layout preferences.
 
 ### Values
 
@@ -63,7 +63,7 @@ Specifies the positioning options for the Parameters Area within the MVC Report 
 
 ## PrintMode
 
-Specifies the printing method options for the MVC Report Viewer control. Used to configure how the report viewer handles print operations and determines the optimal printing mechanism based on browser capabilities and requirements.
+Specifies the printing method options for the MVC Report Viewer control. Used to configure how the report viewer handles print operations and determines the optimal printing mechanism based on browser capabilities and requirements. Controls the printing behavior to ensure optimal print experience across different browsers and environments.
 
 ### Values
 
@@ -76,7 +76,7 @@ Specifies the printing method options for the MVC Report Viewer control. Used to
 
 ## ScaleMode
 
-Specifies the scale mode options for the MVC Report Viewer control to determine how reports are sized within the viewer area. Used to configure the automatic sizing behavior and zoom level management for optimal report display and readability.
+Specifies the scale mode options for the MVC Report Viewer control to determine how reports are sized within the viewer area. Used to configure the automatic sizing behavior and zoom level management for optimal report display and readability. Controls the report sizing strategy to optimize readability and user experience based on viewer dimensions and content requirements.
 
 ### Values
 
@@ -89,7 +89,7 @@ Specifies the scale mode options for the MVC Report Viewer control to determine 
 
 ## ViewMode
 
-Specifies the display mode options for the MVC Report Viewer control to determine how reports are presented and how users interact with them. Used to configure whether the viewer displays reports in interactive mode with full functionality or print preview mode optimized for printing.
+Specifies the display mode options for the MVC Report Viewer control to determine how reports are presented and how users interact with them. Used to configure whether the viewer displays reports in interactive mode with full functionality or print preview mode optimized for printing. Controls the report presentation style and interaction capabilities to optimize user experience for different viewing scenarios.
 
 ### Values
 

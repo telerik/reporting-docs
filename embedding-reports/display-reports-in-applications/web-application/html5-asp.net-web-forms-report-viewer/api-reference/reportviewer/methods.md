@@ -13,7 +13,7 @@ position: 1
 
 ## GetReportParameters
 
-Gets the processed report parameters as a dictionary of parameter names and string values.
+Gets the processed report parameters as a dictionary of parameter names and string values. Provides access to the current parameter values that have been processed and applied to the report in the HTML5 viewer.
 
 ### Example
 
@@ -46,7 +46,7 @@ namespace CSharp.NetFramework.WebFormsIntegrationDemo
 
 ## RenderDesignTimeHtml
 
-Renders the HTML5 ReportViewer control for design-time display in Visual Studio designer.
+Renders the HTML5 ReportViewer control for design-time display in Visual Studio designer. Generates a simplified HTML representation of the HTML5 viewer for Visual Studio design surface display, showing the control dimensions and identification.
 
 ### Parameters
 
@@ -57,5 +57,5 @@ Renders the HTML5 ReportViewer control for design-time display in Visual Studio 
 
 ## ToString
 
-Converts the HTML5 ReportViewer control to its HTML string representation with all configuration options and client-side initialization.
+Converts the HTML5 ReportViewer control to its HTML string representation with all configuration options and client-side initialization. Generates the final HTML output by populating viewer options and using ReportViewerWriter to create the complete HTML5 viewer structure with JavaScript initialization.
 

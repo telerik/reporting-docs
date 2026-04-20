@@ -46,7 +46,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
 
 ## CustomParameterEditor
 
-Represents a custom parameter editor configuration for the MVC Report Viewer, enabling custom UI components for report parameter input.
+Represents a custom parameter editor configuration for the MVC Report Viewer, enabling custom UI components for report parameter input. Both functions are executed in the client-side JavaScript context of the MVC Report Viewer.
 
 ### Properties
 
@@ -75,7 +75,7 @@ Represents a custom parameter editor configuration for the MVC Report Viewer, en
 
 ## DeferredScripts
 
-Represents a container for deferred JavaScript initialization statements for MVC Report Viewer components. Used to collect and render JavaScript initialization code at a specific location in the HTML document for optimal performance and loading behavior.
+Represents a container for deferred JavaScript initialization statements for MVC Report Viewer components. Used to collect and render JavaScript initialization code at a specific location in the HTML document for optimal performance and loading behavior. Implements IHtmlString to enable direct rendering in MVC views and provides control over script tag generation for flexible script placement.
 
 ### Constructors
 
@@ -104,7 +104,7 @@ Represents a container for deferred JavaScript initialization statements for MVC
 
 ## Editors
 
-Provides configuration options for parameter editor types used in the MVC Report Viewer. Used to specify which input control types should be used for single-select and multi-select parameter scenarios.
+Provides configuration options for parameter editor types used in the MVC Report Viewer. Used to specify which input control types should be used for single-select and multi-select parameter scenarios. Controls the visual appearance and interaction behavior of parameter input controls based on parameter configuration.
 
 ### Properties
 
@@ -202,7 +202,7 @@ This report source is used when you have a reference to an already instantiated 
 
 ## Parameters
 
-Provides configuration options for report parameters display and behavior within the MVC Report Viewer. Used to customize how parameter input controls are rendered and how users interact with report parameters.
+Provides configuration options for report parameters display and behavior within the MVC Report Viewer. Used to customize how parameter input controls are rendered and how users interact with report parameters. Contains editor configuration settings that control the appearance and functionality of parameter input controls.
 
 ### Constructors
 
@@ -237,7 +237,7 @@ Provides configuration options for report parameters display and behavior within
 
 ## ReportServer
 
-Provides configuration data for connecting to a Telerik Report Server instance from the MVC Report Viewer. Used to establish authenticated connections to Report Server for centralized report management and deployment scenarios. Connecting to Telerik Report Server for .NET is not supported.
+Provides configuration data for connecting to a Telerik Report Server instance from the MVC Report Viewer. Used to establish authenticated connections to Report Server for centralized report management and deployment scenarios. Connecting to Telerik Report Server for .NET is not supported. Contains connection details including server URL and authentication credentials for Report Server integration.
 
 ### Constructors
 

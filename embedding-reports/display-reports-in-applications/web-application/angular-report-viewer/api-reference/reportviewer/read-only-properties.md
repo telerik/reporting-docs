@@ -35,7 +35,6 @@ List of available commands:
 - zoomOut (no parameters): Zoom-out the report.
 - zoom (zoom ratio): Zoom with a specified ratio (float).
 - toggleZoomMode (no parameters): Changes the zoom mode of the report.
-- toggleSideMenu (no parameters): Shows or hides the side menu.
 - toggleSearchDialog (no parameters): Shows or hides the search dialog.
 
 ### Type

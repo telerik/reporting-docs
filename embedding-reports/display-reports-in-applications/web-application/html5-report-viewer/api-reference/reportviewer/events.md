@@ -79,65 +79,6 @@ $("#reportViewer1").telerik_ReportViewer({
 ````
 
 
-## interactiveActionEnter
-
-Called when entering an interactive action area.   Receives two parameters: `e` (the jQuery.Event object; `e.data.sender` is the report viewer instance)   and `args` (an object with properties: `element` (DOM element), `action` ([InteractiveAction]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types%}#interactiveaction))).
-
-### Example
-
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-  interactiveActionEnter: function(e, args) {
-    // args.action is an InteractiveAction object
-    if (args.action.Type === "sorting") {
-      // Custom logic for sorting action
-    }
-  }
-});
-````
-
-
-## interactiveActionExecuting
-
-Called before an interactive action executes, allowing cancellation.   Receives two parameters: `e` (the jQuery.Event object; `e.data.sender` is the report viewer instance)   and `args` (an object with properties: `element` (DOM element), `action` ([InteractiveAction]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types%}#interactiveaction)), and `cancel` (boolean, set to true to cancel the action)).
-
-### Example
-
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-  interactiveActionExecuting: function(e, args) {
-    // args.action is an InteractiveAction object
-    if (args.action.Type === "navigateToUrl") {
-      var url = args.action.Value.Url;
-      var target = args.action.Value.Target;
-    }
-    if (args.action.Type === "navigateToReport") {
-      var report = args.action.Value.report;
-      var parameters = args.action.Value.parameters;
-    }
-  }
-});
-````
-
-
-## interactiveActionLeave
-
-Called when leaving an interactive action area.   Receives two parameters: `e` (the jQuery.Event object; `e.data.sender` is the report viewer instance)   and `args` (an object with properties: `element` (DOM element), `action` ([InteractiveAction]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types%}#interactiveaction))).
-
-### Example
-
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-  interactiveActionLeave: function(e, args) {
-    // args.action is an InteractiveAction object
-    if (args.action.Type === "toggleVisibility") {
-      // Custom logic for toggleVisibility action
-    }
-  }
-});
-````
-
-
 ## pageReady
 
 Called after a page of the report is ready. Receives two parameters: `e` (the jQuery.Event object; `e.data.sender` is the report viewer instance) and `args` (an object with property: `pageContent` (string), the content of the rendered report page as a resource).
@@ -338,32 +279,6 @@ $("#reportViewer1").telerik_ReportViewer({
     // This event handler will be called when the state of the viewer changes.
     // 'e.data.sender' is the report viewer instance.
     console.log("Viewer UI state changed.");
-  }
-});
-
- /**
-````
-
-
-## viewerToolTipOpening
-
-Called before a tooltip is opened, allowing cancellation. Receives two parameters: `e` (the jQuery.Event object; `e.data.sender` is the report viewer instance) and `args` (an object with properties: `element` (DOM element), `toolTip` (object with `title` and `text`), and `cancel` (boolean, set to true to cancel the tooltip).
-
-### Example
-
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-  serviceUrl: "api/reports/",
-  reportSource: {
-    report: "Dashboard.trdp"
-  },
-  viewerToolTipOpening: function(e, args) {
-    // This event handler will be called before a tooltip is opened.
-    // 'e.data.sender' is the report viewer instance.
-    // 'args.toolTip.title' is the tooltip title.
-    // 'args.cancel' can be set to true to cancel the tooltip.
-    // Example: disable tooltip if title contains '2004'
-    args.cancel = (/2004/i.test(args.toolTip.title));
   }
 });
 ````

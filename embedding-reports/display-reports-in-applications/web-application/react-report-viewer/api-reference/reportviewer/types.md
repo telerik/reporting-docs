@@ -27,62 +27,72 @@ Describes an interactive action triggered by the user in the report viewer. The 
 
 ## ParameterEditor
 
-Describes a parameter editor for the Telerik Report Viewer parameter panel.
+Describes a parameter editor for the Telerik Report Viewer parameters area.
 
 ### Properties
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
 | match | `function` | Determines if the editor is suitable for the parameter. |
-| createEditor | `function` | Creates the editor UI. |
+| createEditor | `function` | Creates the editor UI and returns an editor instance. |
 
 ### Example
 
 ````JavaScript
-// Example: Custom match function for single-select parameters
-var match = function(parameter) {
-  // Use parameter properties to determine if this editor should be used
+// Custom match function for single-select parameters
+function match(parameter) {
   return Boolean(parameter.availableValues) && !parameter.multivalue;
-};
+}
 ````
 
 ````JavaScript
-// Example: Custom createEditor function using Kendo DateTimePicker
+// Custom createEditor function using Kendo DateTimePicker
 function match(parameter) {
     return parameter.type === "System.DateTime";
 }
 
 function createEditor(placeholder, options) {
-    var dateTimePicker = $(placeholder).html('<input type="datetime"/>'),
-    parameter,
-    valueChangedCallback = options.parameterChanged,
-    dropDownList;
+    const container = $(placeholder).html('<input type="datetime"/>');
+    let parameter;
+    const valueChangedCallback = options.parameterChanged;
+    let picker;
+
     function onChange() {
-        var val = dropDownList.value();
+        const val = picker.value();
         valueChangedCallback(parameter, val);
     }
+
     return {
         beginEdit: function (param) {
             parameter = param;
-            $(dateTimePicker).find("input").kendoDateTimePicker({
+            $(container).find("input").kendoDateTimePicker({
                 dataTextField: "name",
                 dataValueField: "value",
                 value: parameter.value,
                 dataSource: parameter.availableValues,
                 change: onChange
             });
-            dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
+            picker = $(container).find("input").data("kendoDateTimePicker");
+        },
+
+        addAccessibility: function (accessibilityOptions) {
+            // Apply ARIA attributes, labels, etc. to the editor input.
+        },
+
+        setAccessibilityErrorState: function (hasError) {
+            // Update ARIA error attributes on the editor input.
         }
     };
 }
 ````
 
 ````JavaScript
-// Example: Registering the custom ParameterEditor
-ParameterEditors.push({
-  match: match,
-  createEditor: createEditor
-});
+// Registering a custom parameter editor
+<TelerikReportViewer
+  serviceUrl="api/reports/"
+  reportSource={{ report: "Dashboard.trdp" }}
+  parameterEditors={[{ match, createEditor }]}
+/>
 ````
 
 
@@ -90,16 +100,18 @@ ParameterEditors.push({
 
 Represents the API of a parameter editor instance returned by createEditor.
 
+Implementations must provide `beginEdit`, `addAccessibility`, and `setAccessibilityErrorState`. The viewer calls `addAccessibility` / `setAccessibilityErrorState` when `enableAccessibility` is true. Optional members like `clearPendingChange` and `destroy` are lifecycle hooks for editors that manage external widgets or pending async updates.
+
 ### Properties
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
 | beginEdit | `function` | Creates the editor UI and populates it with the parameter settings. |
-| addAccessibility | `function` | Adds accessibility to the parameter editor and populates its string resources. |
-| setAccessibilityErrorState | `function` | Sets the error state of the parameter editor's accessibility functionality and its error attributes. |
-| enable | `function` | Enables or disables the parameter editor. |
-| clearPendingChange | `function` | Invoked when parameter changes (optional, not present on all editors). |
-| destroy | `function` | Invoked to destroy the parameter editor (optional, not present on all editors). |
+| addAccessibility | `function` | Adds accessibility to the parameter editor and populates its string resources. Called by the viewer when `enableAccessibility` is true. |
+| setAccessibilityErrorState | `function` | Sets the error state of the parameter editor's accessibility functionality and its error attributes. Called by the viewer when `enableAccessibility` is true and the user changes  value. |
+| enable | `function` | Enables or disables the parameter editor (e.g., when the "use default value" checkbox is toggled). |
+| clearPendingChange | `function` | Invoked when parameter changes. |
+| destroy | `function` | Invoked to destroy the parameter editor. |
 
 
 ## ParametersOptions
@@ -117,8 +129,7 @@ Defines options for configuring report parameter editors in the React Report Vie
 ### Example
 
 ````JavaScript
-// React: Specify editor types for report parameters
-
+// Specify editor types for report parameters
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{ report: "Dashboard.trdp" }}
@@ -159,15 +170,15 @@ The authentication method depends on the Report Server version:
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| url | `string` | The URL to the Telerik Report Server instance. (required) |
-| getPersonalAccessToken | `function` | A callback function that returns the Token for authentication against the Telerik Report Server for .NET instance wrapped in a Promise. This is the recommended authentication method for Report Server for .NET. The token can be from any user account, including the Guest user. Only supported by Report Server for .NET. (optional) |
-| username | `string` | A registered username in the Report Server that will be used to get access to the reports. Supported by both Report Server for .NET and Report Server for .NET Framework 4.6.2. If omitted when connecting to Report Server for .NET Framework 4.6.2 with Guest enabled, the built-in Guest account will be used. (optional) |
-| password | `string` | The password for the provided username. Supported by both Report Server for .NET and Report Server for .NET Framework 4.6.2. Can be omitted only when connecting with the Guest account to Report Server for .NET Framework 4.6.2. (optional) |
+| url | `string` | The URL of the Telerik Report Server instance. |
+| getPersonalAccessToken | `function` | A callback that returns a Promise resolving to a Personal Access Token for authentication. Recommended for Report Server for .NET. The token can be from any user account, including the Guest user. |
+| username | `string` | A registered username for Report Server authentication. Supported by both Report Server for .NET and Report Server for .NET Framework. When omitted with Report Server for .NET Framework and Guest enabled, the built-in Guest account is used. |
+| password | `string` | The password for the provided username. Can be omitted only when connecting with the Guest account to Report Server for .NET Framework. |
 
 ### Example
 
 ````JavaScript
-// Example: Complete Report Viewer initialization with Report Server for .NET using Token authentication
+// Complete initialization with Report Server for .NET using Token authentication
 <TelerikReportViewer
   reportServer={{
     url: "https://my-report-server-net/",
@@ -193,13 +204,13 @@ Configuration object that identifies the report to be displayed and provides ini
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| report | `string` | A string that represents a report on the server. On the server side, this string will be converted to a ReportSource through an IReportResolver. This may be an assembly qualified type name that can be converted to TypeReportSource, a path to a report definition file (.trdp/.trdx) as in the UriReportSource, or even a report id that a dedicated IReportSourceResolver will use to read the report definition stored in a database. When using the viewer with Report Server, the report should be provided in the format: "{Category}/{ReportName}". |
-| parameters | [`ReportParameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#reportparameters) | A JSON object with properties name/value equal to the report parameters' names and values used in the report definition. |
+| report | `string` | A string identifying the report to display. This can be a path to a report definition file (e.g., 'Dashboard.trdp' or 'Dashboard.trdx'), a type name, or a custom identifier resolved by the server-side report source resolver. For Report Server, use the format '{Category}/{ReportName}'. |
+| parameters | [`ReportParameters`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#reportparameters) | An object whose keys are report parameter names and values are the corresponding parameter values. |
 
 ### Example
 
 ````JavaScript
-// Example: Using ReportSource with the React Report Viewer
+// Using ReportSource with the React Report Viewer
 <TelerikReportViewer
   serviceUrl="api/reports/"
   reportSource={{
@@ -226,7 +237,7 @@ Each command is an object with the following methods:
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| exec | `function` | Executes the command. Some commands accept parameters (see below). |
+| exec | `function` | Executes the command. Some commands accept parameters (see each command's exec example). |
 | enabled | `function` | Returns whether the command is currently enabled. |
 | checked | `function` | Returns whether the command is in a checked state (for toggle commands). |
 
@@ -244,8 +255,8 @@ Configuration options for the Send Email feature in the Report Viewer. Allows cu
 | to | `string` | E-mail address used for the MailMessage TO value. |
 | cc | `string` | E-mail address used for the MailMessage Carbon Copy value. |
 | subject | `string` | A string used for the MailMessage Subject value. |
-| body | `string` | Sentences used for the MailMessage Content value. |
-| format | `string` | The preselected report document format. |
+| body | `string` | Text content for the email body. |
+| format | `string` | The preselected document format for the report attachment (e.g., 'PDF', 'XLSX'). |
 
 ### Example
 

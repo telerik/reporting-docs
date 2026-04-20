@@ -79,7 +79,7 @@ reportViewerRef.current.dispose();
 
 ## getAccessibilityKeyMap
 
-Gets the shortcut keys used when the report viewer is in accessible mode (enableAccessibility=true).
+Gets the shortcut keys used when the report viewer is in accessible mode (enableAccessibility={true}).
 
 ### Example
 
@@ -190,7 +190,7 @@ reportViewerRef.current.refreshReport();
 
 ## setAccessibilityKeyMap
 
-Sets the shortcut keys used when the report viewer is in accessible mode. It is recommended to set the new key map when the report rendering is complete, because the accessibility routines require the report viewer template to be loaded.
+Sets the shortcut keys used when the report viewer is in accessible mode. Set the new key map after the report rendering is complete, because the accessibility routines require the report viewer template to be loaded.
 
 ### Parameters
 
@@ -238,7 +238,7 @@ Sets the page mode of the viewer.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| psm | `string` | No | The page mode to set (use PageModes constants). |
+| pageMode | `string` | No | The page mode to set ("SINGLE_PAGE" or "CONTINUOUS_SCROLL"). |
 
 ### Example
 
@@ -256,7 +256,7 @@ Sets the report source - report and parameters. Automatically reloads the report
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| rs | `Object` | No | The report source object to set. Object with properties: report (string) and parameters (JSON). |
+| reportSource | `Object` | No | The report source object to set. Object with properties: report (string) and parameters (JSON). |
 
 ### Example
 
@@ -289,13 +289,13 @@ reportViewerRef.current.setScale({ scale: 1.5, scaleMode: "SPECIFIC" });
 
 ## setViewMode
 
-Sets the view mode and automatically reloads the current report (if any) into the new view.
+Sets the view mode and automatically reloads the current report into the new view.
 
 ### Parameters
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| vm | `string` | No | The view mode to set. |
+| viewMode | `string` | No | The view mode to set ("INTERACTIVE" or "PRINT_PREVIEW"). |
 
 ### Example
 

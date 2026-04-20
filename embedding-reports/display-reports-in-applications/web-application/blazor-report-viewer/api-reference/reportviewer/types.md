@@ -37,7 +37,7 @@ Provides a class for the key mapping used when report viewer accessibility is en
 
 ## ClientEventsOptions
 
-Specifies the viewer's event options. Please refer to the examples provided for each event handler property for more details.
+Specifies the viewer's event options. Each option can be assigned a JavaScript event handler function name.
 
 ### Constructors
 
@@ -233,7 +233,7 @@ Specifies the options for the two parameter editor types - `Telerik.ReportViewer
 
 ## ReportServerOptions
 
-Specifies the configuration details for connecting to a Telerik Report Server instance.
+Specifies the configuration details for connecting to a Telerik Report Server instance. Report Server for .NET supports Token (GetPersonalAccessToken) or username/password authentication. Report Server for .NET Framework 4.6.2 supports username/password or Guest account (Url only, if enabled).
 
 ### Constructors
 

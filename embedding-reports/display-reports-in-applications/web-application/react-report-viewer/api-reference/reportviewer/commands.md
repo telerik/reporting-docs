@@ -13,29 +13,26 @@ position: 5
 
 ## export
 
-Exports the report, using the respective rendering extension name. Accepts a rendering extension name as parameter: exec("PDF"), exec("XLSX"), etc.
+Exports the report. Pass the rendering extension name to exec() (e.g., "PDF", "XLSX", "CSV", "DOCX").
 
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.export.exec('PDF')}>Export PDF</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Export the report as PDF
+reportViewerRef.current.commands.export.exec("PDF");
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.export.enabled();
+const isEnabled = reportViewerRef.current.commands.export.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.export.checked();
+const isChecked = reportViewerRef.current.commands.export.checked();
 ````
 
 
@@ -46,24 +43,21 @@ Goes to the first page of the report.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.goToFirstPage.exec()}>First Page</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate to the first page
+reportViewerRef.current.commands.goToFirstPage.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.goToFirstPage.enabled();
+const isEnabled = reportViewerRef.current.commands.goToFirstPage.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.goToFirstPage.checked();
+const isChecked = reportViewerRef.current.commands.goToFirstPage.checked();
 ````
 
 
@@ -74,24 +68,21 @@ Goes to the last page of the report.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.goToLastPage.exec()}>Last Page</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate to the last page
+reportViewerRef.current.commands.goToLastPage.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.goToLastPage.enabled();
+const isEnabled = reportViewerRef.current.commands.goToLastPage.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.goToLastPage.checked();
+const isChecked = reportViewerRef.current.commands.goToLastPage.checked();
 ````
 
 
@@ -102,52 +93,46 @@ Goes to the next page of the report.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.goToNextPage.exec()}>Next</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate to the next page
+reportViewerRef.current.commands.goToNextPage.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.goToNextPage.enabled();
+const isEnabled = reportViewerRef.current.commands.goToNextPage.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.goToNextPage.checked();
+const isChecked = reportViewerRef.current.commands.goToNextPage.checked();
 ````
 
 
 ## goToPage
 
-Goes to a specific page of the report. Accepts a page number as parameter: exec(pageNumber).
+Goes to a specific page of the report. Pass the page number to exec().
 
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.goToPage.exec(5)}>Go to Page 5</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate to page 5
+reportViewerRef.current.commands.goToPage.exec(5);
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.goToPage.enabled();
+const isEnabled = reportViewerRef.current.commands.goToPage.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.goToPage.checked();
+const isChecked = reportViewerRef.current.commands.goToPage.checked();
 ````
 
 
@@ -158,24 +143,21 @@ Goes to the previous page of the report.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.goToPrevPage.exec()}>Previous</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate to the previous page
+reportViewerRef.current.commands.goToPrevPage.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.goToPrevPage.enabled();
+const isEnabled = reportViewerRef.current.commands.goToPrevPage.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.goToPrevPage.checked();
+const isChecked = reportViewerRef.current.commands.goToPrevPage.checked();
 ````
 
 
@@ -186,24 +168,21 @@ Goes back to the previously rendered report from history.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.historyBack.exec()}>Back</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate back to the previous report in history
+reportViewerRef.current.commands.historyBack.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.historyBack.enabled();
+const isEnabled = reportViewerRef.current.commands.historyBack.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.historyBack.checked();
+const isChecked = reportViewerRef.current.commands.historyBack.checked();
 ````
 
 
@@ -214,24 +193,21 @@ Goes forward to the next rendered report from history.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.historyForward.exec()}>Forward</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Navigate forward to the next report in history
+reportViewerRef.current.commands.historyForward.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.historyForward.enabled();
+const isEnabled = reportViewerRef.current.commands.historyForward.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.historyForward.checked();
+const isChecked = reportViewerRef.current.commands.historyForward.checked();
 ````
 
 
@@ -242,24 +218,21 @@ Triggers the report printing.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.print.exec()}>Print</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Print the current report
+reportViewerRef.current.commands.print.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.print.enabled();
+const isEnabled = reportViewerRef.current.commands.print.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.print.checked();
+const isChecked = reportViewerRef.current.commands.print.checked();
 ````
 
 
@@ -270,24 +243,21 @@ Refreshes the report.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.refresh.exec()}>Refresh</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Refresh the current report
+reportViewerRef.current.commands.refresh.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.refresh.enabled();
+const isEnabled = reportViewerRef.current.commands.refresh.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.refresh.checked();
+const isChecked = reportViewerRef.current.commands.refresh.checked();
 ````
 
 
@@ -298,24 +268,21 @@ Stops the rendering of the current report.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.stopRendering.exec()}>Stop Rendering</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Stop the current report rendering
+reportViewerRef.current.commands.stopRendering.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.stopRendering.enabled();
+const isEnabled = reportViewerRef.current.commands.stopRendering.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.stopRendering.checked();
+const isChecked = reportViewerRef.current.commands.stopRendering.checked();
 ````
 
 
@@ -326,24 +293,21 @@ Shows or hides the AI prompt dialog.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleAiPromptDialog.exec()}>Toggle AI Prompt</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Toggle the AI prompt dialog visibility
+reportViewerRef.current.commands.toggleAiPromptDialog.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.toggleAiPromptDialog.enabled();
+const isEnabled = reportViewerRef.current.commands.toggleAiPromptDialog.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.toggleAiPromptDialog.checked();
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Check if the command is checked (true when AI prompt dialog is visible)
+const isChecked = reportViewerRef.current.commands.toggleAiPromptDialog.checked();
 ````
 
 
@@ -354,24 +318,21 @@ Shows or hides the document map.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleDocumentMap.exec()}>Toggle Document Map</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Toggle the document map visibility
+reportViewerRef.current.commands.toggleDocumentMap.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.toggleDocumentMap.enabled();
+const isEnabled = reportViewerRef.current.commands.toggleDocumentMap.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.toggleDocumentMap.checked();
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Check if the command is checked (true when document map is visible)
+const isChecked = reportViewerRef.current.commands.toggleDocumentMap.checked();
 ````
 
 
@@ -382,24 +343,21 @@ Shows or hides the parameters area.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleParametersArea.exec()}>Toggle Parameters</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Toggle the parameters area visibility
+reportViewerRef.current.commands.toggleParametersArea.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.toggleParametersArea.enabled();
+const isEnabled = reportViewerRef.current.commands.toggleParametersArea.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.toggleParametersArea.checked();
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Check if the command is checked (true when parameters area is visible)
+const isChecked = reportViewerRef.current.commands.toggleParametersArea.checked();
 ````
 
 
@@ -410,24 +368,21 @@ Toggles between Print Preview and Interactive view modes.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.togglePrintPreview.exec()}>Toggle Print Preview</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Toggle between Print Preview and Interactive modes
+reportViewerRef.current.commands.togglePrintPreview.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.togglePrintPreview.enabled();
+const isEnabled = reportViewerRef.current.commands.togglePrintPreview.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.togglePrintPreview.checked();
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Check if the command is checked (true when in Print Preview mode)
+const isChecked = reportViewerRef.current.commands.togglePrintPreview.checked();
 ````
 
 
@@ -438,24 +393,21 @@ Shows or hides the search dialog.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleSearchDialog.exec()}>Toggle Search</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Toggle the search dialog visibility
+reportViewerRef.current.commands.toggleSearchDialog.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.toggleSearchDialog.enabled();
+const isEnabled = reportViewerRef.current.commands.toggleSearchDialog.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.toggleSearchDialog.checked();
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Check if the command is checked (true when search dialog is visible)
+const isChecked = reportViewerRef.current.commands.toggleSearchDialog.checked();
 ````
 
 
@@ -466,163 +418,120 @@ Shows or hides the send email dialog.
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleSendEmailDialog.exec()}>Toggle Send Email</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Toggle the send email dialog visibility
+reportViewerRef.current.commands.toggleSendEmailDialog.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.toggleSendEmailDialog.enabled();
+const isEnabled = reportViewerRef.current.commands.toggleSendEmailDialog.enabled();
 ````
 
 ````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.toggleSendEmailDialog.checked();
-````
-
-
-## toggleSideMenu
-
-Shows or hides the side menu.
-
-### Example
-
-````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleSideMenu.exec()}>Toggle Side Menu</button>
-    </>
-);
-````
-
-````JavaScript
-// Check if the command is enabled
-const isEnabled = viewer.commands.toggleSideMenu.enabled();
-````
-
-````JavaScript
-// Check if the command is checked
-const isChecked = viewer.commands.toggleSideMenu.checked();
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Check if the command is checked (true when send email dialog is visible)
+const isChecked = reportViewerRef.current.commands.toggleSendEmailDialog.checked();
 ````
 
 
 ## toggleZoomMode
 
-Changes the zoom mode of the report.
+Cycles the zoom mode of the report between FIT_PAGE_WIDTH, FIT_PAGE, and SPECIFIC.
 
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.toggleZoomMode.exec()}>Toggle Zoom Mode</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Cycle to the next zoom mode
+reportViewerRef.current.commands.toggleZoomMode.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.toggleZoomMode.enabled();
+const isEnabled = reportViewerRef.current.commands.toggleZoomMode.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.toggleZoomMode.checked();
+const isChecked = reportViewerRef.current.commands.toggleZoomMode.checked();
 ````
 
 
 ## zoom
 
-Zoom with a specified ratio. Accepts a zoom ratio as parameter: exec(1.5).
+Zooms to a specified ratio. Pass the zoom ratio to exec() (e.g., 1.5 for 150%).
 
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.zoom.exec(1.5)}>Zoom 150%</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Zoom to 150%
+reportViewerRef.current.commands.zoom.exec(1.5);
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.zoom.enabled();
+const isEnabled = reportViewerRef.current.commands.zoom.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.zoom.checked();
+const isChecked = reportViewerRef.current.commands.zoom.checked();
 ````
 
 
 ## zoomIn
 
-Zoom-in the report.
+Zooms in on the report.
 
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.zoomIn.exec()}>Zoom In</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Zoom in on the report
+reportViewerRef.current.commands.zoomIn.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.zoomIn.enabled();
+const isEnabled = reportViewerRef.current.commands.zoomIn.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.zoomIn.checked();
+const isChecked = reportViewerRef.current.commands.zoomIn.checked();
 ````
 
 
 ## zoomOut
 
-Zoom-out the report.
+Zooms out of the report.
 
 ### Example
 
 ````JavaScript
-// Execute the command
-let viewer;
-ReactDOM.render(
-    <>
-        <TelerikReportViewer />
-        <button onClick={() => viewer.commands.zoomOut.exec()}>Zoom Out</button>
-    </>
-);
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
+// Zoom out of the report
+reportViewerRef.current.commands.zoomOut.exec();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is enabled
-const isEnabled = viewer.commands.zoomOut.enabled();
+const isEnabled = reportViewerRef.current.commands.zoomOut.enabled();
 ````
 
 ````JavaScript
+// Assume reportViewerRef = useRef(null) and pass it to the component ref prop.
 // Check if the command is checked
-const isChecked = viewer.commands.zoomOut.checked();
+const isChecked = reportViewerRef.current.commands.zoomOut.checked();
 ````
 

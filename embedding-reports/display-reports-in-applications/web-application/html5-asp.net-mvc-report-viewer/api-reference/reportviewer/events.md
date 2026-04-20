@@ -13,7 +13,7 @@ position: 4
 
 ## Error
 
-Attaches an event handler that will be called when an error occurs.
+Attaches an event handler that will be called when an error occurs. The error event is triggered when any error occurs during report processing, rendering, or viewer operations.
 
 ### Example
 
@@ -38,7 +38,7 @@ Attaches an event handler that will be called when an error occurs.
 
 ## ExportBegin
 
-Attaches an event handler that will be called prior to starting the report export command.
+Attaches an event handler that will be called prior to starting the report export command. The export begin event is triggered before the report viewer starts generating the export document.
 
 ### Example
 
@@ -73,7 +73,7 @@ Attaches an event handler that will be called prior to starting the report expor
 
 ## ExportEnd
 
-Attaches an event handler that will be called when the exported document is ready for download, but prior to the actual downloading.
+Attaches an event handler that will be called when the exported document is ready for download, but prior to the actual downloading. The export end event is triggered when the export document is ready but before the download starts.
 
 ### Example
 
@@ -108,7 +108,7 @@ Attaches an event handler that will be called when the exported document is read
 
 ## InteractiveActionEnter
 
-Attaches an event handler that will be called when the mouse cursor enters the action's report item area.
+Attaches an event handler that will be called when the mouse cursor enters the action's report item area. The interactive action enter event is triggered when the mouse hovers over interactive report elements.
 
 ### Example
 
@@ -145,7 +145,7 @@ Attaches an event handler that will be called when the mouse cursor enters the a
 
 ## InteractiveActionExecuting
 
-Attaches an event handler that will be called when an interactive action is executed.
+Attaches an event handler that will be called when an interactive action is executed. The interactive action executing event is triggered when user clicks on interactive elements like drill-through links or toggle buttons.
 
 ### Example
 
@@ -178,7 +178,7 @@ Attaches an event handler that will be called when an interactive action is exec
 
 ## InteractiveActionLeave
 
-Attaches an event handler that will be called when the mouse cursor leaves the action's report item area.
+Attaches an event handler that will be called when the mouse cursor leaves the action's report item area. The interactive action leave event is triggered when the mouse cursor moves away from interactive report elements.
 
 ### Example
 
@@ -215,7 +215,7 @@ Attaches an event handler that will be called when the mouse cursor leaves the a
 
 ## PageReady
 
-Attaches an event handler that will be called every time a page from the report is rendered and ready for display.
+Attaches an event handler that will be called every time a page from the report is rendered and ready for display. The page ready event is triggered when each individual report page completes rendering and is ready for display.
 
 ### Example
 
@@ -250,7 +250,7 @@ Attaches an event handler that will be called every time a page from the report 
 
 ## PrintBegin
 
-Attaches an event handler that will be called prior to starting the print report command.
+Attaches an event handler that will be called prior to starting the print report command. The print begin event is triggered before the report viewer starts generating the print document.
 
 ### Example
 
@@ -282,7 +282,7 @@ Attaches an event handler that will be called prior to starting the print report
 
 ## PrintEnd
 
-Attaches an event handler that will be called when the print document (Adobe PDF) is ready for download, but prior to being sent to the printer.
+Attaches an event handler that will be called when the print document (Adobe PDF) is ready for download, but prior to being sent to the printer. The print end event is triggered when the PDF print document is ready but before actual printing occurs.
 
 ### Example
 
@@ -312,7 +312,7 @@ Attaches an event handler that will be called when the print document (Adobe PDF
 
 ## Ready
 
-Attaches an event handler that will be called when the report viewer template is loaded.
+Attaches an event handler that will be called when the report viewer template is loaded. The ready event is triggered when the report viewer template and UI components are fully loaded and initialized.
 
 ### Example
 
@@ -346,7 +346,7 @@ Attaches an event handler that will be called when the report viewer template is
 
 ## RenderingBegin
 
-Attaches an event handler that will be called when the rendering of the report begins.
+Attaches an event handler that will be called when the rendering of the report begins. The rendering begin event is triggered when the report viewer starts processing and rendering the report content.
 
 ### Example
 
@@ -381,7 +381,7 @@ Attaches an event handler that will be called when the rendering of the report b
 
 ## RenderingEnd
 
-Attaches an event handler that will be called when the rendering of the report ends.
+Attaches an event handler that will be called when the rendering of the report ends. The rendering end event is triggered when the report viewer completes processing and rendering the report content.
 
 ### Example
 
@@ -415,7 +415,7 @@ Attaches an event handler that will be called when the rendering of the report e
 
 ## UpdateUi
 
-Attaches an event handler that will be called every time the UI needs an update; can be used for changing the UI of the report viewer while interacting with reports.
+Attaches an event handler that will be called every time the UI needs an update; can be used for changing the UI of the report viewer while interacting with reports. The UI update event is triggered whenever the report viewer interface needs to refresh during user interactions.
 
 ### Example
 
@@ -448,7 +448,7 @@ Attaches an event handler that will be called every time the UI needs an update;
 
 ## ViewerToolTipOpening
 
-Attaches an event handler that will be called when a tooltip is being opened.
+Attaches an event handler that will be called when a tooltip is being opened. The tooltip opening event is triggered when tooltips are about to be displayed for report elements or viewer controls.
 
 ### Example
 

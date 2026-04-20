@@ -65,7 +65,7 @@ Report parts that expose the property `TocText` may be added to the Report Table
 * [Report Groups](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report);
 * [Table Groups](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item).
 
-The `TocText` default value is null/empty string. You need to set this property to a valid [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) if you want it to appear in the Report Table of Contents.
+The `TocText` default value is null/empty string. Set this property to static text or a valid [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview); as long as the value is not null or empty, it will appear in the Report Table of Contents.
 
 ### Adding a Report Section to the Table of Contents
 

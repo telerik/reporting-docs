@@ -27,7 +27,6 @@ The article elaborates on how to localize the messages displayed by the React Re
 1. Use the [useEffect hook](https://reactjs.org/docs/hooks-effect.html) to extend the viewer object with the string resources for the desired culture after the component has mounted:
 
 	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerLocalization.jsx region=ReactViewerLocalization}}
-	```
 
 ## See Also
 

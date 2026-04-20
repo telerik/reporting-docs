@@ -52,8 +52,6 @@ When the Report hierarchy is deeper (has more levels) than the number of levels 
 
 The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property of the TocSection contains a collection of levels. Each level has its own [LeaderSymbol](/api/Telerik.Reporting.TocLevel#Telerik_Reporting_TocLevel_LeaderSymbol) property, which defines a single character. This character is used to fill the space between the TOC text and the page number. The default character is a dot (.). To prevent the leader symbol from appearing between the text and the page number, you will need to delete this character. Each level also has a [Style](/api/Telerik.Reporting.Drawing#Telerik_Reporting_Drawing_Style) property. The style configured there will be applied to all of the TOC entry elements: text, leader symbol, and page number.
 
-The default character is a dot (.). To prevent the leader symbol from appearing between the text and the page number, you will need to delete this character. Each level also has a [Style](/api/Telerik.Reporting.Drawing#Telerik_Reporting_Drawing_Style) property. The style configured there will be applied to all of the TOC entry elements: text, leader symbol, and page number.
-
 When adding a TOC section to the report for the first time, the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection will be empty. In this case, the TOC entries will be styled with a default style and leader symbol.
 
 You can add levels and configure them by clicking on the ellipsis button of the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property to invoke the levels collection editor.

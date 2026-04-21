@@ -42,7 +42,7 @@ Sets the encoded authentication token used to authenticate requests to the repor
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -64,7 +64,7 @@ Sets the CSS class to be applied to buttons when they are in checked state. Allo
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -88,7 +88,7 @@ Provides a fluent way to configure the client-side event handlers of the report 
 
 ### Type
 
-`System.Action{Telerik.ReportViewer.Mvc.IClientEventsBuilder}`
+`System.Action<IClientEventsBuilder>`
 
 ### Example
 
@@ -141,7 +141,7 @@ Sets the CSS class to be applied to buttons when they are in disabled state. All
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -193,7 +193,7 @@ Sets the initial visibility state of the viewer's document map. Controls whether
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -215,7 +215,7 @@ Enables or disables the accessibility features of the report viewer and its cont
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -242,7 +242,7 @@ Sets the unique identifier for the MVC Report Viewer HTML element that will be u
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -264,7 +264,7 @@ Sets the background image URL for the PageArea when parameter values are missing
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -288,7 +288,7 @@ Sets whether the client session will be kept alive by sending periodic requests 
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -339,7 +339,7 @@ Provides a fluent way to configure custom parameter editors for the report viewe
 
 ### Type
 
-`System.Action{Telerik.ReportViewer.Mvc.IParameterEditorsBuilder}`
+`System.Action<IParameterEditorsBuilder>`
 
 ### Example
 
@@ -427,7 +427,7 @@ Sets the initial visibility state of the viewer's parameters area. Controls whet
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -450,7 +450,7 @@ Sets whether the viewer's client session should be persisted between page refres
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -624,7 +624,7 @@ Sets the zoom scale factor for the report display when using Specific scale mode
 
 ### Type
 
-`System.Double`
+`double`
 
 ### Example
 
@@ -676,7 +676,7 @@ Determines whether the search metadata will be delivered on demand or generated 
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -722,7 +722,7 @@ Sets the URL of the Telerik Reporting REST service that will provide the report 
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -746,7 +746,7 @@ Sets the URL for the custom report viewer template that defines the viewer's UI 
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 

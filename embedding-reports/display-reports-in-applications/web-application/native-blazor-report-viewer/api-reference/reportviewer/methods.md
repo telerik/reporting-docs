@@ -19,7 +19,7 @@ Executes a predefined command without passing any arguments. The available comma
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| commandName | `System.String` | No | The name of the command |
+| commandName | `string` | No | The name of the command |
 
 ### Example
 
@@ -47,13 +47,17 @@ Executes a predefined command with an additional value argument. The available c
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| commandName | `System.String` | No | The name of the command |
-| commandValue | `System.String` | No | The value of the command, if needed |
+| commandName | `string` | No | The name of the command |
+| commandValue | `string` | No | The value of the command, if needed |
 
 
 ## GetReportParameters
 
 Retrieves the report parameters for the currently loaded report.
+
+### Returns
+
+`System.Collections.Generic.IDictionary<string,ReportParameterInfo>`
 
 ### Example
 

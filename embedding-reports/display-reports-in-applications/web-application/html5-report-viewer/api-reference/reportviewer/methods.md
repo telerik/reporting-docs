@@ -22,6 +22,10 @@ Gets or sets the accessibility key map for keyboard navigation. Allows customiza
 |-----------|------|----------|-------------|
 | keyMap | `Object` | Yes | The key map object to set. If omitted, acts as a getter. |
 
+### Returns
+
+`Object`
+
 ### Example
 
 ```JavaScript
@@ -53,6 +57,10 @@ Sets the authentication token. Used for service requests.
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | token | `string` | Yes | The authentication token to set. |
+
+### Returns
+
+`ReportViewerInstance`
 
 ### Example
 
@@ -97,6 +105,10 @@ viewer.bind(telerikReportViewer.Events.ERROR, function(e, args) {
 
 Clears the current reportSource from the viewer's internal state and its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on a server postback.
 
+### Returns
+
+`ReportViewerInstance`
+
 ### Example
 
 ```JavaScript
@@ -109,6 +121,10 @@ viewer.clearReportSource();
 ## currentPage
 
 Gets the viewer’s current page that is displayed.
+
+### Returns
+
+`number`
 
 ### Example
 
@@ -136,6 +152,10 @@ viewer.dispose();
 
 Returns an object with properties, the names of which are the report parameters’ IDs, and values - the report parameters’ values. The values of multivalue parameters include their display and value members.
 
+### Returns
+
+`Array.<Object>`
+
 ### Example
 
 ```JavaScript
@@ -150,6 +170,10 @@ console.log(parameters);
 
 Returns whether auto-run is enabled for the report (i.e., whether the report runs automatically when parameters change).
 
+### Returns
+
+`boolean`
+
 ### Example
 
 ```JavaScript
@@ -162,6 +186,10 @@ var isReportAutoRun = viewer.isReportAutoRun();
 ## pageCount
 
 Gets the total page count of the viewer’s currently displayed report.
+
+### Returns
+
+`number`
 
 ### Example
 
@@ -181,6 +209,10 @@ Gets or sets the page mode (e.g., Single Page or Continuous Scroll).
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | psm | [`PageModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations%}#pagemodes) | Yes | The page mode to set. If omitted, returns the current page mode. |
+
+### Returns
+
+`string`
 
 ### Example
 
@@ -232,6 +264,10 @@ Gets or sets the print mode for the viewer.
 |-----------|------|----------|-------------|
 | pm | [`PrintModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations%}#printmodes) | Yes | The print mode to set. If omitted, returns the current print mode. |
 
+### Returns
+
+`string`
+
 ### Example
 
 ```JavaScript
@@ -257,6 +293,10 @@ Refreshes the currently loaded report. Forces the viewer to reload the report fr
 |-----------|------|----------|-------------|
 | ignoreCache | `boolean` | Yes | If true, the report is reloaded from the server, bypassing any cached data. |
 
+### Returns
+
+`ReportViewerInstance`
+
 ### Example
 
 ```JavaScript
@@ -281,6 +321,10 @@ Gets or sets the report source for the viewer. When called with an argument, set
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | rs | [`ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types%}#reportsource) | Yes | The report source object to set, or null to clear. If omitted, acts as a getter. |
+
+### Returns
+
+[`ReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/types%}#reportsource)
 
 ### Example
 
@@ -317,6 +361,10 @@ Gets or sets the scale and scale mode for the viewer.
 | args | `Object` | Yes | The scale settings to apply. Should contain 'scale' (number) and 'scaleMode' (string). |
 | args.scale | `number` | Yes | The zoom scale (e.g., 1.0 for 100%). |
 | args.scaleMode | [`ScaleModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations%}#scalemodes) | Yes | The scale mode (e.g., 'FIT_PAGE', 'FIT_PAGE_WIDTH', 'SPECIFIC'). |
+
+### Returns
+
+`Object`
 
 ### Example
 
@@ -362,6 +410,10 @@ Gets or sets the view mode of the viewer (e.g., Interactive or Print Preview).
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | vm | [`ViewModes`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/enumerations%}#viewmodes) | Yes | The view mode to set. If omitted, returns the current view mode. |
+
+### Returns
+
+`string`
 
 ### Example
 

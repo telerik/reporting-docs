@@ -56,6 +56,10 @@ reportViewerRef.current.setReportSource({ report: "NewReport" });
 
 Gets the viewer’s current page that is displayed.
 
+### Returns
+
+`number`
+
 ### Example
 
 ```JavaScript
@@ -81,6 +85,10 @@ reportViewerRef.current.dispose();
 
 Gets the shortcut keys used when the report viewer is in accessible mode (enableAccessibility={true}).
 
+### Returns
+
+`Object`
+
 ### Example
 
 ```JavaScript
@@ -96,6 +104,10 @@ if (keyMap) {
 
 Gets the current page mode of the viewer.
 
+### Returns
+
+`string`
+
 ### Example
 
 ```JavaScript
@@ -108,6 +120,10 @@ console.log("Current page mode:", pageMode);
 ## getReportParameters
 
 Returns an immutable array of name-value objects representing the current evaluated report parameters.
+
+### Returns
+
+`Array.<<name: string, value: any>>`
 
 ### Example
 
@@ -124,6 +140,10 @@ parameters.forEach(param => {
 
 Gets the current ReportSource - report and parameters.
 
+### Returns
+
+`Object`
+
 ### Example
 
 ```JavaScript
@@ -138,6 +158,10 @@ console.log("Current parameters:", reportSource.parameters);
 
 Gets the viewer’s scale factor and scale mode.
 
+### Returns
+
+`Object`
+
 ### Example
 
 ```JavaScript
@@ -150,6 +174,10 @@ console.log("Scale:", scaleInfo.scale, "Scale mode:", scaleInfo.scaleMode);
 ## getViewMode
 
 Gets the current view mode.
+
+### Returns
+
+`string`
 
 ### Example
 
@@ -164,6 +192,10 @@ console.log("Current view mode:", viewMode);
 
 Gets the total page count of viewer’s currently displayed report.
 
+### Returns
+
+`number`
+
 ### Example
 
 ```JavaScript
@@ -176,6 +208,10 @@ console.log("Total pages:", totalPages);
 ## refreshReport
 
 Reloads/refreshes the current report.
+
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
 
 ### Example
 
@@ -199,6 +235,10 @@ Sets the shortcut keys used when the report viewer is in accessible mode. Set th
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | keyMap | `Object` | No | The key map object with keyboard shortcuts. |
+
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
 
 ### Example
 
@@ -224,6 +264,10 @@ Sets the authentication token.
 |-----------|------|----------|-------------|
 | token | `string` | No | The authentication token to set. |
 
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
+
 ### Example
 
 ```JavaScript
@@ -242,6 +286,10 @@ Sets the page mode of the viewer.
 |-----------|------|----------|-------------|
 | pageMode | `string` | No | The page mode to set ("SINGLE_PAGE" or "CONTINUOUS_SCROLL"). |
 
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
+
 ### Example
 
 ```JavaScript
@@ -259,6 +307,10 @@ Sets the report source - report and parameters. Automatically reloads the report
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | reportSource | `Object` | No | The report source object to set. Object with properties: report (string) and parameters (JSON). |
+
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
 
 ### Example
 
@@ -281,6 +333,10 @@ Sets the scale factor and scale mode.
 |-----------|------|----------|-------------|
 | scale | `Object` | No | The scale object to set. |
 
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
+
 ### Example
 
 ```JavaScript
@@ -298,6 +354,10 @@ Sets the view mode and automatically reloads the current report into the new vie
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | viewMode | `string` | No | The view mode to set ("INTERACTIVE" or "PRINT_PREVIEW"). |
+
+### Returns
+
+[`TelerikReportViewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer/types%}#telerikreportviewer)
 
 ### Example
 

@@ -36,6 +36,10 @@ viewer.bind('ready', () => {
 
 Clears the current report source from the viewer's internal state and from its persisted session in the browser. Forces the viewer to respect newly set report source on next postback. The current ReportViewer object
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -46,6 +50,10 @@ viewer.clearReportSource();
 ## currentPage
 
 Gets the viewer's current page that is displayed. The current page number
+
+### Returns
+
+`number`
 
 ### Example
 
@@ -78,6 +86,10 @@ The keys in the key map are:
 - DOCUMENT_MAP_AREA_KEY: Key to focus the map area, if visible (default: 68, 'd')
 JSON object containing accessibility key mappings
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -91,6 +103,10 @@ console.log(keyMap.MENU_AREA_KEY); // Default: 77 ('m')
 
 Gets the viewer's current page mode. The current page mode string ("SINGLE_PAGE" or "CONTINUOUS_SCROLL")
 
+### Returns
+
+`string`
+
 ### Example
 
 ```TypeScript
@@ -101,6 +117,10 @@ viewer.getPageMode();
 ## getReportParameters
 
 Returns an immutable array of name-value objects representing the current evaluated report parameters. Array containing the name and value of each report parameter
+
+### Returns
+
+`any`
 
 ### Example
 
@@ -116,6 +136,10 @@ params.forEach(param => {
 
 Gets the current report source (report and parameters). Object containing report and parameters properties
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -128,6 +152,10 @@ console.log(source.parameters); // Report parameters
 ## getScale
 
 Gets the viewer's scale factor and scale mode. Object with scale and scaleMode properties
+
+### Returns
+
+`any`
 
 ### Example
 
@@ -142,6 +170,10 @@ console.log(scaleInfo.scaleMode); // e.g., "SPECIFIC"
 
 Gets the current view mode. The current view mode string ("INTERACTIVE" or "PRINT_PREVIEW")
 
+### Returns
+
+`string`
+
 ### Example
 
 ```TypeScript
@@ -152,6 +184,10 @@ console.log(viewer.getViewMode());
 ## pageCount
 
 Gets the total page count of the currently displayed report. The total number of pages
+
+### Returns
+
+`number`
 
 ### Example
 
@@ -164,6 +200,10 @@ console.log(`Total pages: ${totalPages}`);
 ## refreshReport
 
 Reloads/refreshes the current report. The current ReportViewer object
+
+### Returns
+
+`any`
 
 ### Example
 
@@ -190,6 +230,10 @@ The keys in the key map are:
 |-----------|------|----------|-------------|
 | keyMap | `any` | No | JSON object with key mappings |
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -211,6 +255,10 @@ Sets the authentication token for REST service requests. The current ReportViewe
 |-----------|------|----------|-------------|
 | token | `string` | No | The authentication token string |
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -228,6 +276,10 @@ Sets the page mode and automatically reloads the current report. The current Rep
 |-----------|------|----------|-------------|
 | psm | `string` | No | Page mode string ("SINGLE_PAGE" or "CONTINUOUS_SCROLL") |
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -244,6 +296,10 @@ Sets the report source (report and parameters). Automatically reloads the report
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | rs | `any` | No | Object with report and parameters properties |
+
+### Returns
+
+`any`
 
 ### Example
 
@@ -265,6 +321,10 @@ Sets the scale factor and scale mode. The current ReportViewer object
 |-----------|------|----------|-------------|
 | scale | `any` | No | Object with scale and scaleMode properties |
 
+### Returns
+
+`any`
+
 ### Example
 
 ```TypeScript
@@ -284,6 +344,10 @@ Sets the view mode and automatically reloads the current report. The current Rep
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | vm | `string` | No | View mode string ("INTERACTIVE" or "PRINT_PREVIEW") |
+
+### Returns
+
+`any`
 
 ### Example
 

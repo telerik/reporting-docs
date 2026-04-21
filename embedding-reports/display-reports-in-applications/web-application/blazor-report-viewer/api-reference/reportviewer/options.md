@@ -32,7 +32,7 @@ Gets or sets the encoded authentication token used to authenticate the requests.
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -47,7 +47,7 @@ Gets or sets the CSS class to be used by buttons in the checked state.
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -125,7 +125,7 @@ Gets or sets the CSS class to be used by buttons in the disabled state.
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -155,7 +155,7 @@ Gets or sets a value indicating whether the viewer's document map is initially v
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -170,7 +170,7 @@ Gets or sets a value indicating whether the accessibility features of the report
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -185,7 +185,7 @@ Gets or sets the image URL for the PageArea background image. Used only when the
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -204,7 +204,7 @@ When set to false, the client will be left to expire.
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -316,7 +316,7 @@ Gets or sets a value indicating whether the viewer's parameters area is initiall
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -331,7 +331,7 @@ Gets or sets a value indicating whether the viewer's client state will be persis
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -427,7 +427,7 @@ Gets or sets the zoom ratio of the report. ScaleMode needs to be set to Specific
 
 ### Type
 
-`System.Double`
+`double`
 
 ### Example
 
@@ -462,7 +462,7 @@ Gets or sets a value indicating whether the search metadata will be delivered on
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -477,7 +477,7 @@ Gets or sets a selector that is used in conjunction with data attributes (see ht
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -515,7 +515,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -530,7 +530,7 @@ Gets or sets the URL for the report viewer template. A customized template can b
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -545,7 +545,7 @@ Gets or sets the unique identifier of the ReportViewer instance.
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 

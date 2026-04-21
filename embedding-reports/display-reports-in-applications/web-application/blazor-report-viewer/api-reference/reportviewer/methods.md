@@ -20,7 +20,11 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | The event name to bind to. |
-| eventHandlerName | `System.String` | No | The name of the event handler function. |
+| eventHandlerName | `string` | No | The name of the event handler function. |
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -41,6 +45,10 @@ Binds event handlers to the specified [`Telerik.ReportViewer.Blazor.Event`]({%sl
 ## ClearReportSourceAsync
 
 Clears the current report source from the viewer's internal state and from its persisted session in the browser.
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -69,6 +77,10 @@ Performs application-defined tasks associated with freeing, releasing, or resett
 
 Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) used when the report viewer is in accessible mode.
 
+### Returns
+
+`System.Threading.Tasks.ValueTask<AccessibilityKeyMap>`
+
 ### Example
 
 ```C#
@@ -89,6 +101,10 @@ Gets the current [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug tele
 ## GetCurrentPageAsync
 
 Gets the page number of the report page currently displayed in the viewer.
+
+### Returns
+
+`System.Threading.Tasks.ValueTask<int>`
 
 ### Example
 
@@ -113,6 +129,10 @@ Gets the page number of the report page currently displayed in the viewer.
 
 Gets the total page count of the report displayed in the viewer.
 
+### Returns
+
+`System.Threading.Tasks.ValueTask<int>`
+
 ### Example
 
 ```C#
@@ -135,6 +155,10 @@ Gets the total page count of the report displayed in the viewer.
 ## GetPageModeAsync
 
 Gets the current [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#pagemode).
+
+### Returns
+
+`System.Threading.Tasks.ValueTask<PageMode>`
 
 ### Example
 
@@ -159,6 +183,10 @@ Gets the current [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreportin
 
 Gets the report viewer's current parameters as a dictionary of parameter name and value pairs.
 
+### Returns
+
+`System.Threading.Tasks.ValueTask<System.Collections.Generic.Dictionary<string,object>>`
+
 ### Example
 
 ```C#
@@ -180,6 +208,10 @@ Gets the report viewer's current parameters as a dictionary of parameter name an
 
 Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#reportsourceoptions) containing the report identifier and report parameter values.
 
+### Returns
+
+`System.Threading.Tasks.ValueTask<ReportSourceOptions>`
+
 ### Example
 
 ```C#
@@ -200,6 +232,10 @@ Gets the current [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug tele
 ## GetScaleAsync
 
 Gets the report viewer's scale factor.
+
+### Returns
+
+`System.Threading.Tasks.ValueTask<double>`
 
 ### Example
 
@@ -224,6 +260,10 @@ Gets the report viewer's scale factor.
 
 Gets the report viewer's current [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode).
 
+### Returns
+
+`System.Threading.Tasks.ValueTask<ScaleMode>`
+
 ### Example
 
 ```C#
@@ -246,6 +286,10 @@ Gets the report viewer's current [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slu
 ## GetViewModeAsync
 
 Gets the current [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#viewmode).
+
+### Returns
+
+`System.Threading.Tasks.ValueTask<ViewMode>`
 
 ### Example
 
@@ -274,12 +318,20 @@ Method invoked after each time the component has been rendered.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| firstRender | `System.Boolean` | No | Set to <code>true</code> if this is the first time <xref href="Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)" data-throw-if-not-resolved="false"></xref> has been invoked on this component instance; otherwise <code>false</code>. |
+| firstRender | `bool` | No | Set to <code>true</code> if this is the first time [`OnAfterRenderAsync`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/methods%}#onafterrenderasync) has been invoked on this component instance; otherwise <code>false</code>. |
+
+### Returns
+
+`System.Threading.Tasks.Task`
 
 
 ## RefreshReportAsync
 
 Reloads/refreshes the current report.
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -307,6 +359,10 @@ Sets the [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikrepor
 |-----------|------|----------|-------------|
 | keyMap | [`Telerik.ReportViewer.Blazor.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) | No | The accessibility key map to set. |
 
+### Returns
+
+`System.Threading.Tasks.ValueTask`
+
 ### Example
 
 ```C#
@@ -332,7 +388,11 @@ Sets the authentication token.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| token | `System.String` | No | The encoded authentication token to set. |
+| token | `string` | No | The encoded authentication token to set. |
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -360,6 +420,10 @@ Sets the [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-
 |-----------|------|----------|-------------|
 | pageMode | [`Telerik.ReportViewer.Blazor.PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#pagemode) | No | The page mode to set. |
 
+### Returns
+
+`System.Threading.Tasks.ValueTask`
+
 ### Example
 
 ```C#
@@ -385,6 +449,10 @@ Sets the [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikrepor
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | reportSourceOptions | [`Telerik.ReportViewer.Blazor.ReportSourceOptions`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/types%}#reportsourceoptions) | No | The report source options to set. |
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -413,7 +481,11 @@ Sets the report viewer's scale factor.
 
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
-| scale | `System.Double` | No | The scale factor to set. |
+| scale | `double` | No | The scale factor to set. |
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -441,6 +513,10 @@ Sets the report viewer's [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug teleri
 |-----------|------|----------|-------------|
 | scaleMode | [`Telerik.ReportViewer.Blazor.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode) | No | The scale mode to set. |
 
+### Returns
+
+`System.Threading.Tasks.ValueTask`
+
 ### Example
 
 ```C#
@@ -466,6 +542,10 @@ Sets the [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | viewMode | [`Telerik.ReportViewer.Blazor.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#viewmode) | No | The view mode to set. |
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 
@@ -493,6 +573,10 @@ Unbinds all event handlers from the specified [`Telerik.ReportViewer.Blazor.Even
 |-----------|------|----------|-------------|
 | eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | The event name to unbind all handlers from. |
 
+### Returns
+
+`System.Threading.Tasks.ValueTask`
+
 ### Example
 
 ```C#
@@ -518,7 +602,11 @@ Unbinds event handlers from the specified [`Telerik.ReportViewer.Blazor.Event`](
 | Parameter | Type | Optional | Description |
 |-----------|------|----------|-------------|
 | eventName | [`Telerik.ReportViewer.Blazor.Event`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer/enumerations%}#event) | No | The event name to unbind from. |
-| eventHandlerName | `System.String` | No | The name of the event handler function to unbind. |
+| eventHandlerName | `string` | No | The name of the event handler function to unbind. |
+
+### Returns
+
+`System.Threading.Tasks.ValueTask`
 
 ### Example
 

@@ -15,6 +15,10 @@ position: 1
 
 Gets the processed report parameters as a dictionary of parameter names and string values. Provides access to the current parameter values that have been processed and applied to the report in the HTML5 viewer.
 
+### Returns
+
+`System.Collections.Generic.IDictionary<string,string>`
+
 ### Example
 
 ```C#
@@ -58,4 +62,8 @@ Renders the HTML5 ReportViewer control for design-time display in Visual Studio 
 ## ToString
 
 Converts the HTML5 ReportViewer control to its HTML string representation with all configuration options and client-side initialization. Generates the final HTML output by populating viewer options and using ReportViewerWriter to create the complete HTML5 viewer structure with JavaScript initialization.
+
+### Returns
+
+`string`
 

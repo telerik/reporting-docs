@@ -18,7 +18,7 @@ Gets or sets the authentication (bearer) token that is passed in the Authorizati
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -35,7 +35,7 @@ Gets or sets  a value indicating whether the viewer's document map is initially 
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -52,7 +52,7 @@ Enables or disables the accessibility features of the report viewer and its cont
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -69,7 +69,7 @@ Determines whether the send Email functionality is enabled. If set to false, the
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -86,7 +86,7 @@ The width of the component.
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -107,7 +107,7 @@ When set to false, the client will be left to be expired
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -141,7 +141,7 @@ Template used to render boolean report viewer parameter editors. Allows for decl
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -162,7 +162,7 @@ Template used to render DateTime report viewer parameter editors. Allows for dec
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -183,7 +183,7 @@ Template used to render double report viewer parameter editors. Allows for decla
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -204,7 +204,7 @@ Template used to render integer report viewer parameter editors. Allows for decl
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -225,7 +225,7 @@ Template used to render multi-select report viewer parameter editors. Allows for
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -256,7 +256,7 @@ Gets or sets a value indicating whether the viewer's parameters area is initiall
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -273,7 +273,7 @@ Template used to render single-select report viewer parameter editors. Allows fo
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -300,7 +300,7 @@ Template used to render string report viewer parameter editors. Allows for decla
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -321,7 +321,7 @@ Generic template used to render report viewer parameter editors. Allows for decl
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.ReportViewer.BlazorNative.ReportParameterContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<ReportParameterContext>`
 
 ### Example
 
@@ -470,7 +470,7 @@ Gets or sets zoom ratio of the report. 1.0 is equal to 100%, i.e. the original s
 
 ### Type
 
-`System.Double`
+`double`
 
 ### Example
 
@@ -526,7 +526,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -543,7 +543,7 @@ Represents the collection of tools available in the report viewer's toolbar. All
 
 ### Type
 
-`System.Collections.Generic.List{Telerik.ReportViewer.BlazorNative.Tools.IReportViewerTool}`
+`System.Collections.Generic.List<IReportViewerTool>`
 
 ### Example
 
@@ -580,7 +580,7 @@ Gets or sets the template for rendering tooltips in the ReportViewer.
 
 ### Type
 
-`Microsoft.AspNetCore.Components.RenderFragment{Telerik.Blazor.Components.TooltipTemplateContext}`
+`Microsoft.AspNetCore.Components.RenderFragment<TooltipTemplateContext>`
 
 ### Example
 
@@ -622,7 +622,7 @@ The width of the component.
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 

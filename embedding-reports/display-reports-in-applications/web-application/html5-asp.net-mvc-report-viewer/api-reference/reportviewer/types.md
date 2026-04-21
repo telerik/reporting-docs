@@ -19,15 +19,15 @@ Provides a class for the key mapping used when report viewer accessibility is en
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| CONFIRM_KEY | `System.Byte` | Key code for executing report actions and applying report parameters |
-| CONTENT_AREA_KEY | `System.Byte` | Key code for navigating to report contents area, when pressed together with CTRL + ALT |
-| DOCUMENT_MAP_AREA_KEY | `System.Byte` | Key code for navigating to document map area, when pressed together with CTRL + ALT |
+| CONFIRM_KEY | `byte` | Key code for executing report actions and applying report parameters |
+| CONTENT_AREA_KEY | `byte` | Key code for navigating to report contents area, when pressed together with CTRL + ALT |
+| DOCUMENT_MAP_AREA_KEY | `byte` | Key code for navigating to document map area, when pressed together with CTRL + ALT |
 | Default | [`Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#accessibilitykeymap) | Returns an instance, initialized with the default key mapping |
-| Equals(System.Object) | `System.Boolean` | Internal use only |
-| Equals(Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap) | `System.Boolean` | Internal use only |
-| GetHashCode | `System.Int32` | Internal use only |
-| MENU_AREA_KEY | `System.Byte` | Key code for navigating to menu area, when pressed together with CTRL + ALT |
-| PARAMETERS_AREA_KEY | `System.Byte` | Key code for navigating to parameters area, when pressed together with CTRL + ALT |
+| Equals(System.Object) | `bool` | Internal use only |
+| Equals(Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap) | `bool` | Internal use only |
+| GetHashCode | `int` | Internal use only |
+| MENU_AREA_KEY | `byte` | Key code for navigating to menu area, when pressed together with CTRL + ALT |
+| PARAMETERS_AREA_KEY | `byte` | Key code for navigating to parameters area, when pressed together with CTRL + ALT |
 
 ### Example
 
@@ -52,8 +52,8 @@ Represents a custom parameter editor configuration for the MVC Report Viewer, en
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| CreateEditorFunction | `System.String` | Gets or sets the name of the JavaScript function that creates the custom parameter editor UI element. |
-| MatchFunction | `System.String` | Gets or sets the name of the JavaScript match function that determines whether to use this custom editor for a specific parameter. |
+| CreateEditorFunction | `string` | Gets or sets the name of the JavaScript function that creates the custom parameter editor UI element. |
+| MatchFunction | `string` | Gets or sets the name of the JavaScript match function that determines whether to use this custom editor for a specific parameter. |
 
 ### Example
 
@@ -87,7 +87,7 @@ Represents a container for deferred JavaScript initialization statements for MVC
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| ToHtmlString | `System.String` | Converts the deferred scripts collection into an HTML string containing the JavaScript initialization statements.<br>Called automatically when the DeferredScripts object is rendered in an MVC view, providing the final JavaScript output for report viewer initialization. |
+| ToHtmlString | `string` | Converts the deferred scripts collection into an HTML string containing the JavaScript initialization statements.<br>Called automatically when the DeferredScripts object is rendered in an MVC view, providing the final JavaScript output for report viewer initialization. |
 
 ### Example
 
@@ -145,7 +145,7 @@ A class that contains a collection of all Telerik Reporting widgets
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| TelerikReporting(System.Web.Mvc.HtmlHelper) | `Telerik.ReportViewer.Mvc.ITelerikReportingFactory` | A factory used to generate the javascript representation of Telerik Reporting widgets |
+| TelerikReporting(System.Web.Mvc.HtmlHelper) | `ITelerikReportingFactory` | A factory used to generate the javascript representation of Telerik Reporting widgets |
 
 ### Example
 
@@ -174,10 +174,10 @@ This report source is used when you have a reference to an already instantiated 
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Equals(System.Object) | `System.Boolean` | Determines whether this instance and a specified object have the same value. |
-| GetHashCode | `System.Int32` | Returns the hash code for this InstanceReportSource. |
-| ReportDocument | `Telerik.Reporting.IReportDocument` | Gets or sets the `Telerik.Reporting.IReportDocument` instance for the report source. |
-| ToString | `System.String` | Returns a string that represents the current InstanceReportSource. |
+| Equals(System.Object) | `bool` | Determines whether this instance and a specified object have the same value. |
+| GetHashCode | `int` | Returns the hash code for this InstanceReportSource. |
+| ReportDocument | `IReportDocument` | Gets or sets the `Telerik.Reporting.IReportDocument` instance for the report source. |
+| ToString | `string` | Returns a string that represents the current InstanceReportSource. |
 
 ### Example
 
@@ -249,9 +249,9 @@ Provides configuration data for connecting to a Telerik Report Server instance f
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Password | `System.String` | Gets or sets the password associated with the specified username for Report Server authentication.<br>Required when Username is specified for authenticated access to protected reports and resources. |
-| Url | `System.String` | Gets or sets the URL of the Telerik Report Server instance.<br>Must be a complete URL including protocol (http/https) pointing to the Report Server installation. |
-| Username | `System.String` | Gets or sets a valid username that exists in Report Server registered users, or null/empty to use the built-in Guest account.<br>When empty, uses the Guest account which requires appropriate server permissions for accessing reports. |
+| Password | `string` | Gets or sets the password associated with the specified username for Report Server authentication.<br>Required when Username is specified for authenticated access to protected reports and resources. |
+| Url | `string` | Gets or sets the URL of the Telerik Report Server instance.<br>Must be a complete URL including protocol (http/https) pointing to the Report Server installation. |
+| Username | `string` | Gets or sets a valid username that exists in Report Server registered users, or null/empty to use the built-in Guest account.<br>When empty, uses the Guest account which requires appropriate server permissions for accessing reports. |
 
 ### Example
 
@@ -292,10 +292,10 @@ Provides the base class for a report source. This is an abstract class that cont
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Equals(System.Object) | `System.Boolean` | Determines whether this instance and a specified object have the same value. |
-| GetHashCode | `System.Int32` | Returns the hash code for this ReportSource. |
-| Parameters | `Telerik.Reporting.ParameterCollection` | Gets the parameter values that are passed to the `Telerik.Reporting.IReportDocument` object when its instance is initialized.<br>The parameter name must match the name of the `Telerik.Reporting.ReportParameter` of the `Telerik.Reporting.IReportDocument`<br>in order the value to be passed correctly.<br>If a parameter (available in the report definition) is omitted in this collection, the report will be processed by evaluating the Value property of the Report Parameter in the report definition. |
-| ToString | `System.String` | Returns a string that represents the current ReportSource. |
+| Equals(System.Object) | `bool` | Determines whether this instance and a specified object have the same value. |
+| GetHashCode | `int` | Returns the hash code for this ReportSource. |
+| Parameters | `ParameterCollection` | Gets the parameter values that are passed to the `Telerik.Reporting.IReportDocument` object when its instance is initialized.<br>The parameter name must match the name of the `Telerik.Reporting.ReportParameter` of the `Telerik.Reporting.IReportDocument`<br>in order the value to be passed correctly.<br>If a parameter (available in the report definition) is omitted in this collection, the report will be processed by evaluating the Value property of the Report Parameter in the report definition. |
+| ToString | `string` | Returns a string that represents the current ReportSource. |
 
 ### Example
 
@@ -356,13 +356,13 @@ Provides a class for the send e-mail message options. Contains the enabled prope
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Body | `System.String` | A string used for the MailMessage Body value.<br>This field is optional.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified e-mail body. |
-| CC | `System.String` | A valid e-mail for the e-mail message CC address.<br>This field is optional.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified CC e-mail addresses. |
-| Enabled | `System.Boolean` | Indicates whether to show the send e-mail button |
-| Format | `System.String` | The preselected rendering format. <br>The users can modify this value in the Send Mail Message dialog. |
-| From | `System.String` | A valid e-mail for the e-mail message FROM address.<br>This field is required if empty the user should set it in the Send Mail Message dialog.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified FROM e-mail address. |
-| Subject | `System.String` | A string used for the MailMessage Subject value.<br>This field is optional.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified e-mail subject. |
-| To | `System.String` | A valid e-mail for the e-mail message TO address.<br>This field is required if empty the user should set it in the Send Mail Message dialog.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified TO e-mail address. |
+| Body | `string` | A string used for the MailMessage Body value.<br>This field is optional.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified e-mail body. |
+| CC | `string` | A valid e-mail for the e-mail message CC address.<br>This field is optional.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified CC e-mail addresses. |
+| Enabled | `bool` | Indicates whether to show the send e-mail button |
+| Format | `string` | The preselected rendering format. <br>The users can modify this value in the Send Mail Message dialog. |
+| From | `string` | A valid e-mail for the e-mail message FROM address.<br>This field is required if empty the user should set it in the Send Mail Message dialog.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified FROM e-mail address. |
+| Subject | `string` | A string used for the MailMessage Subject value.<br>This field is optional.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified e-mail subject. |
+| To | `string` | A valid e-mail for the e-mail message TO address.<br>This field is required if empty the user should set it in the Send Mail Message dialog.<br>The users can modify this value in the Send Mail Message dialog. <br>The SendMailMessage implementation should accept the specified TO e-mail address. |
 
 ### Example
 
@@ -407,10 +407,10 @@ Represents a report source that allows a report document to be instantiated from
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Equals(System.Object) | `System.Boolean` | Determines whether this instance and a specified object have the same value. |
-| GetHashCode | `System.Int32` | Returns the hash code for this TypeReportSource. |
-| ToString | `System.String` | Returns a string that represents the current TypeReportSource. |
-| TypeName | `System.String` | Gets or sets the assembly qualified type name of the report document.<br><br>Use this property to specify the type name of the report document.<br>Must be the assembly qualified name of the `System.Type` of the report.<br><br>The target type should implement the <br>`Telerik.Reporting.IReportDocument` interface <br>and should have a default (parameterless) constructor. <br>The default constructor is used from the reporting engine to create the report<br>instance.<br><br>This property can accept an expression when the report source is used in a `Telerik.Reporting.SubReport` item <br>or a `Telerik.Reporting.NavigateToReportAction` action. |
+| Equals(System.Object) | `bool` | Determines whether this instance and a specified object have the same value. |
+| GetHashCode | `int` | Returns the hash code for this TypeReportSource. |
+| ToString | `string` | Returns a string that represents the current TypeReportSource. |
+| TypeName | `string` | Gets or sets the assembly qualified type name of the report document.<br><br>Use this property to specify the type name of the report document.<br>Must be the assembly qualified name of the `System.Type` of the report.<br><br>The target type should implement the <br>`Telerik.Reporting.IReportDocument` interface <br>and should have a default (parameterless) constructor. <br>The default constructor is used from the reporting engine to create the report<br>instance.<br><br>This property can accept an expression when the report source is used in a `Telerik.Reporting.SubReport` item <br>or a `Telerik.Reporting.NavigateToReportAction` action. |
 
 ### Example
 
@@ -449,10 +449,10 @@ Represents a report source that loads a report document from a URI. The URI must
 | Property | Type | Description |
 | ------ | ------ | ------ |
 | Create(System.String,System.String) | [`Telerik.Reporting.UriReportSource`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/mvc-report-viewer/api-reference/reportviewer/types%}#urireportsource) | Creates a UriReportSource by resolving the relative report path against the base path. |
-| Equals(System.Object) | `System.Boolean` | Determines whether this instance and a specified object have the same value. |
-| GetHashCode | `System.Int32` | Returns the hash code for this UriReportSource. |
-| ToString | `System.String` | Returns a string that represents the current UriReportSource. |
-| Uri | `System.String` | Gets or sets the URI to load the report document from.<br><br>A URI.<br><br>This property can accept an expression when the report source is used in a `Telerik.Reporting.SubReport` item <br>or a `Telerik.Reporting.NavigateToReportAction` action. |
+| Equals(System.Object) | `bool` | Determines whether this instance and a specified object have the same value. |
+| GetHashCode | `int` | Returns the hash code for this UriReportSource. |
+| ToString | `string` | Returns a string that represents the current UriReportSource. |
+| Uri | `string` | Gets or sets the URI to load the report document from.<br><br>A URI.<br><br>This property can accept an expression when the report source is used in a `Telerik.Reporting.SubReport` item <br>or a `Telerik.Reporting.NavigateToReportAction` action. |
 
 ### Example
 
@@ -483,10 +483,10 @@ Represents a report source that contains the XML markup of a report document.
 
 | Property | Type | Description |
 | ------ | ------ | ------ |
-| Equals(System.Object) | `System.Boolean` | Determines whether this instance and a specified object have the same value. |
-| GetHashCode | `System.Int32` | Returns the hash code for this XmlReportSource. |
-| ToString | `System.String` | Returns a string that represents the current XmlReportSource. |
-| Xml | `System.String` | Gets or sets the XML markup of a `Telerik.Reporting.IReportDocument`.<br><br>This property can accept an expression when the report source is used in a `Telerik.Reporting.SubReport` item <br>or a `Telerik.Reporting.NavigateToReportAction`. |
+| Equals(System.Object) | `bool` | Determines whether this instance and a specified object have the same value. |
+| GetHashCode | `int` | Returns the hash code for this XmlReportSource. |
+| ToString | `string` | Returns a string that represents the current XmlReportSource. |
+| Xml | `string` | Gets or sets the XML markup of a `Telerik.Reporting.IReportDocument`.<br><br>This property can accept an expression when the report source is used in a `Telerik.Reporting.SubReport` item <br>or a `Telerik.Reporting.NavigateToReportAction`. |
 
 ### Example
 

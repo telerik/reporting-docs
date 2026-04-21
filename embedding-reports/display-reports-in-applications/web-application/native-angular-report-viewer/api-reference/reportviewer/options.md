@@ -41,6 +41,10 @@ Sets the tab index for the report viewer content.
 
 `number`
 
+### Default Value
+
+`1000`
+
 ### Example
 
 ```HTML
@@ -61,6 +65,10 @@ Controls the visibility of the document map panel if a document map is available
 ### Type
 
 `boolean`
+
+### Default Value
+
+`true`
 
 ### Example
 
@@ -83,6 +91,10 @@ Enables or disables the send email functionality.
 
 `boolean`
 
+### Default Value
+
+`false`
+
 ### Example
 
 ```HTML
@@ -103,6 +115,10 @@ Sets the height of the report viewer container.
 ### Type
 
 `string`
+
+### Default Value
+
+`'700px'`
 
 ### Example
 
@@ -125,6 +141,10 @@ Determines whether to keep the client session alive. When true, prevents the ses
 
 `boolean`
 
+### Default Value
+
+`false`
+
 ### Example
 
 ```HTML
@@ -145,6 +165,10 @@ Sets the page display mode of the viewer.
 ### Type
 
 [`PageMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types%}#pagemode)
+
+### Default Value
+
+`'continuousScroll'`
 
 ### Example
 
@@ -167,6 +191,10 @@ Controls the visibility of the parameters area if the report has parameters.
 
 `boolean`
 
+### Default Value
+
+`true`
+
 ### Example
 
 ```HTML
@@ -188,6 +216,10 @@ Determines whether to persist the viewer session across browser sessions.
 
 `boolean`
 
+### Default Value
+
+`false`
+
 ### Example
 
 ```HTML
@@ -208,6 +240,10 @@ Sets the print mode for the report viewer.
 ### Type
 
 [`PrintMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types%}#printmode)
+
+### Default Value
+
+`'autoSelect'`
 
 ### Example
 
@@ -442,6 +478,10 @@ Sets the scale factor for the report pages. The scale takes effect when the scal
 
 `number`
 
+### Default Value
+
+`1.0 (100% - original size of the report)`
+
 ### Example
 
 ```HTML
@@ -463,6 +503,10 @@ Sets how the report pages are scaled.
 
 [`ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types%}#scalemode)
 
+### Default Value
+
+`'specific'`
+
 ### Example
 
 ```HTML
@@ -483,6 +527,10 @@ Specifies the type of service that the report viewer will connect to.
 ### Type
 
 [`ServiceType`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types%}#servicetype)
+
+### Default Value
+
+`'REST'`
 
 ### Example
 
@@ -526,6 +574,10 @@ Sets the view mode of the report viewer.
 
 [`ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer/types%}#viewmode)
 
+### Default Value
+
+`'interactive'`
+
 ### Example
 
 ```HTML
@@ -546,6 +598,10 @@ Sets the width of the report viewer container.
 ### Type
 
 `string`
+
+### Default Value
+
+`'100%'`
 
 ### Example
 

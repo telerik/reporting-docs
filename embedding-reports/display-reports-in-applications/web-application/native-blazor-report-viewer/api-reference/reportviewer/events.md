@@ -15,6 +15,12 @@ position: 4
 
 Gets or sets a value for the callback that will be called when the value of DocumentMapVisible changes.
 
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | `bool` | The new value. |
+
 ### Example
 
 ```C#
@@ -34,6 +40,15 @@ Gets or sets a value for the callback that will be called when the value of Docu
 
 Event triggered when the export process has finished.
 
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| Format | `string` | Gets or sets the format of the exported report. |
+| Handled | `bool` | Gets or sets a value indicating whether the export process should be handled manually. |
+| Url | `string` | Represents the URL of the exported report in the ExportEnd event of the Telerik Report Viewer. |
+| WindowOpenTarget | `string` | Represents the target for opening the export window in the Telerik Report Viewer. |
+
 ### Example
 
 ```C#
@@ -52,6 +67,14 @@ Event triggered when the export process has finished.
 ## OnExportStart
 
 Occurs when the export process is starting.
+
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| DeviceInfo | [`Telerik.ReportViewer.BlazorNative.DeviceInfo`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/types%}#deviceinfo) | Represents device information settings used during the report export process. |
+| Format | `string` | Gets or sets the format the report should be exported to. |
+| IsCancelled | `bool` | Gets or sets a value indicating whether the export operation has been canceled. |
 
 ### Example
 
@@ -110,6 +133,12 @@ Occurs when the rendering of the report has ended. This event can be used to per
 
 Gets or sets a value for the callback that will be called when the value of ParametersAreaVisible changes.
 
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | `bool` | The new value. |
+
 ### Example
 
 ```C#
@@ -128,6 +157,13 @@ Gets or sets a value for the callback that will be called when the value of Para
 ## ReportSourceChanged
 
 Gets or sets a value for the callback that will be called when the value of ReportSource changes.
+
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| Parameters | `System.Collections.Generic.IDictionary<string,object>` | Gets or sets an object with properties name/value equal to the report parameters names and values used in the report ... |
+| Report | `string` | Gets or sets a string that uniquely identifies a report from the Reporting REST service or the Telerik Report Server.... |
 
 ### Example
 
@@ -148,6 +184,12 @@ Gets or sets a value for the callback that will be called when the value of Repo
 
 Gets or sets a value for the callback that will be called when the value of Scale changes.
 
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | `double` | The new value. |
+
 ### Example
 
 ```C#
@@ -167,6 +209,14 @@ Gets or sets a value for the callback that will be called when the value of Scal
 
 Gets or sets a value for the callback that will be called when the value of ScaleMode changes.
 
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| FitPage | [`Telerik.ReportViewer.BlazorNative.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode) | The whole report will fit on the page (will zoom in or out), regardless of its width and height. |
+| FitPageWidth | [`Telerik.ReportViewer.BlazorNative.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode) | The report will be zoomed in or out so that the width of the screen and the width of the report match. |
+| Specific | [`Telerik.ReportViewer.BlazorNative.ScaleMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations%}#scalemode) | Uses the scale to zoom in and out the report. |
+
 ### Example
 
 ```C#
@@ -185,6 +235,13 @@ Gets or sets a value for the callback that will be called when the value of Scal
 ## ViewModeChanged
 
 Gets or sets a value for the callback that will be called when the value of ViewMode changes.
+
+### Event Arguments
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| Interactive | [`Telerik.ReportViewer.BlazorNative.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations%}#viewmode) | Displays the report in its original width and height with no paging. Additionally interactivity is enabled. |
+| PrintPreview | [`Telerik.ReportViewer.BlazorNative.ViewMode`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/enumerations%}#viewmode) | Displays the paginated report as if it is printed on paper. Interactivity is not enabled. |
 
 ### Example
 

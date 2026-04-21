@@ -111,6 +111,10 @@ Specifies where the Document Map should be displayed. Available values: "RIGHT",
 
 `string`
 
+### Default Value
+
+`"LEFT"`
+
 ### Example
 
 ```HTML
@@ -131,6 +135,10 @@ Determines whether the viewer's document map is displayed when bookmarks are def
 ### Type
 
 `boolean`
+
+### Default Value
+
+`true`
 
 ### Example
 
@@ -153,6 +161,10 @@ Determines whether the viewer should provide accessibility features support.
 
 `boolean`
 
+### Default Value
+
+`false`
+
 ### Example
 
 ```HTML
@@ -173,6 +185,10 @@ Sets the unique identifier of the ReportViewer instance. If not specified, the i
 ### Type
 
 `string`
+
+### Default Value
+
+`"reportViewer1"`
 
 ### Example
 
@@ -210,6 +226,10 @@ Determines whether the client will be kept alive. When true, prevents client exp
 ### Type
 
 `boolean`
+
+### Default Value
+
+`true`
 
 ### Example
 
@@ -259,6 +279,10 @@ Sets if the report is displayed in single page or continuous scroll mode.
 ### Type
 
 `string`
+
+### Default Value
+
+`"CONTINUOUS_SCROLL"`
 
 ### Example
 
@@ -409,6 +433,10 @@ Specifies where the Parameters Area should be displayed. Available values: "RIGH
 
 `string`
 
+### Default Value
+
+`"RIGHT"`
+
 ### Example
 
 ```HTML
@@ -430,6 +458,10 @@ Determines whether the viewer's parameters area is displayed by default when par
 
 `boolean`
 
+### Default Value
+
+`true`
+
 ### Example
 
 ```HTML
@@ -450,6 +482,10 @@ Sets whether the viewer's client session should be persisted between page refres
 ### Type
 
 `boolean`
+
+### Default Value
+
+`false`
 
 ### Example
 
@@ -475,6 +511,10 @@ Specifies how the viewer should print reports.
 ### Type
 
 `string`
+
+### Default Value
+
+`"AUTO_SELECT"`
 
 ### Example
 
@@ -674,6 +714,10 @@ Sets the scale factor for the report pages. Takes effect when scaleMode is set t
 
 `number`
 
+### Default Value
+
+`1.0`
+
 ### Example
 
 ```HTML
@@ -699,6 +743,10 @@ Sets how the report pages should be scaled.
 
 `string`
 
+### Default Value
+
+`"FIT_PAGE"`
+
 ### Example
 
 ```HTML
@@ -719,6 +767,10 @@ Determines whether search metadata will be delivered on demand (true) or by defa
 ### Type
 
 `boolean`
+
+### Default Value
+
+`false`
 
 ### Example
 
@@ -844,6 +896,10 @@ Sets if the report is displayed in interactive mode or print preview.
 ### Type
 
 `string`
+
+### Default Value
+
+`"INTERACTIVE"`
 
 ### Example
 

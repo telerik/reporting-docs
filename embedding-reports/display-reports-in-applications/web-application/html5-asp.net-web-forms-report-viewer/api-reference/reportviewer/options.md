@@ -49,7 +49,7 @@ Gets or sets the encoded authentication token used to secure and authenticate re
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -84,7 +84,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the check
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -119,7 +119,7 @@ Gets or sets a value indicating whether the HTML5 viewer's JavaScript initializa
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -156,7 +156,7 @@ Gets or sets the CSS class applied to toolbar buttons when they are in the disab
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -235,7 +235,7 @@ Gets or sets a value indicating whether the document map navigation panel is ini
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -272,7 +272,7 @@ Gets or sets a value indicating whether accessibility features are enabled for t
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -344,7 +344,7 @@ Gets or sets the background image URL displayed in the page area when parameter 
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -382,7 +382,7 @@ Gets or sets a value indicating whether the HTML5 viewer client session is kept 
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -460,7 +460,7 @@ Gets or sets the current page number of the report displayed in the HTML5 viewer
 
 ### Type
 
-`System.Int32`
+`int`
 
 ### Example
 
@@ -604,7 +604,7 @@ Gets or sets a value indicating whether the parameters area is initially visible
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -640,7 +640,7 @@ Gets or sets a value indicating whether the HTML5 viewer's client state is persi
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -781,7 +781,7 @@ Gets or sets the zoom level of the report where 1.0 equals 100% of the original 
 
 ### Type
 
-`System.Double`
+`double`
 
 ### Example
 
@@ -859,7 +859,7 @@ Gets or sets a value indicating whether search metadata is delivered on-demand o
 
 ### Type
 
-`System.Boolean`
+`bool`
 
 ### Example
 
@@ -929,7 +929,7 @@ Gets or sets the URL of the service which will provide the report viewer with re
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 
@@ -958,7 +958,7 @@ Gets or sets the URL for the report viewer template. The template can be edited 
 
 ### Type
 
-`System.String`
+`string`
 
 ### Example
 

@@ -88,15 +88,11 @@ table th:nth-of-type(3) {
 
 **Example usage:**
 
-```powershell
-/mode install /targetpath "C:\Program Files\Progress\Telerik Reporting ODBC Drivers" /platform x86 /drivers "SQLS,ORA" /successToken "OK"
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=InstallDataDirectOdbcDriversCli}}
 
 Installs the 32-bit SQL Server and Oracle drivers to the target path and outputs "OK" if installation succeeds.
 
-```powershell
-/mode uninstall /platform x86 /drivers "SQLS,ORA" /successToken "OK"
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=UninstallDataDirectOdbcDriversCli}}
 
 Uninstalls the 32-bit  SQL Server and Oracle drivers and outputs "OK" if uninstallation succeeds.
 

@@ -51,13 +51,7 @@ To load the Crystal Reports assemblies needed for the conversion, proper binding
 
 The Crystal Reports assemblies are stored in the machine’s GAC (Global Assembly Cache). The GAC folder for .NET Framework v.4.0 and later is _%windir%\Microsoft.NET\assembly_, and for earlier versions is _%windir%\assembly_. Search the GAC for assemblies named _CrystalDecisions.Shared.dll_ or _CrystalDecisions.CrystalReports.Engine.dll_. The assembly version can be obtained either from the assembly subfolder name, or by using the [gacutil.exe](https://learn.microsoft.com/en-us/dotnet/framework/tools/gacutil-exe-gac-tool):
 
-```powershell
-C:\WINDOWS\system32>gacutil -l CrystalDecisions.Shared
-Microsoft (R).NET Global Assembly Cache Utility. Version 4.0.30319.0
-Copyright (c) Microsoft Corporation. All rights reserved.
-The Global Assembly Cache contains the following assemblies:
-	CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=ListCrystalReportsAssemblyInGac}}
 
 The output from the _gacutil.exe_ above shows that the current version of the installed Crystal Reports runtime assemblies is **13.0.3500.0**. Here is what the configuration file with added binding redirects will look like:
 

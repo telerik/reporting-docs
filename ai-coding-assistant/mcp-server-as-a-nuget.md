@@ -45,15 +45,11 @@ Additional requirements:
 
 Install the MCP server as a local tool in your solution root (or another chosen path):
 
-```powershell
-dotnet tool install -g Telerik.Reporting.MCP
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=InstallMcpServerGlobalTool}}
 
 If updating:
 
-```powershell
-dotnet tool update -g Telerik.Reporting.MCP
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=UpdateMcpServerGlobalTool}}
 
 These commands install/update the Telerik Reporting MCP [dotnet tool](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools) globally. Global tools are installed in the following directories by default when you specify the **-g** or **--global** option:
 

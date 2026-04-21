@@ -80,11 +80,7 @@ For .NET 8+ applications on Linux, you must use the SkiaSharp graphics engine, s
 
 The following libraries should also be installed as required by SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
-```bash
-sudo apt-get update
-sudo apt-get install -y libfreetype6
-sudo apt-get install -y libfontconfig1
-```
+{{source=CodeSnippets\CS\Terminal\BashSnippets.bash region=DeployFontLibrariesOnLinux}}
 
 Since the `SkiaSharp` library is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and alignment. These problems mostly affect the [Image rendering extension](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations) and, therefore, it is not recommended to use it.
 
@@ -107,9 +103,7 @@ To use .NET on macOS:
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
 
-   ```zsh
-   dotnet build
-   ```
+   {{source=CodeSnippets\CS\Terminal\ZshSnippets.zsh region=DotNetBuild}}
 
 ## Using Container Platforms
 

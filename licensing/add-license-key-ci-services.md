@@ -89,17 +89,11 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 
 The script to set the environment variable is quoted below:
 
-```powershell
-Write-Host "Setting TELERIK_LICENSE_PATH to $(telerikLicense.secureFilePath)"
-Write-Host "##vso[task.setvariable variable=TELERIK_LICENSE_PATH;]$(telerikLicense.secureFilePath)"
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=SetTelerikLicensePathVariable}}
 
 Alternatively, copy the file into the repository directory:
 
-```powershell
-echo "Copying $(telerikLicense.secureFilePath) to $(Build.Repository.LocalPath)/telerik-license.txt"
-Copy-Item -Path $(telerikLicense.secureFilePath) -Destination "$(Build.Repository.LocalPath)/telerik-license.txt" -Force
-```
+{{source=CodeSnippets\CS\Terminal\PowershellScripts.powershell region=CopyTelerikLicenseSecureFile}}
 
 ### Using TelerikLicensing.Register method
 

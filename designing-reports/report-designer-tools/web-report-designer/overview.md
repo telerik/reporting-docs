@@ -110,9 +110,7 @@ Required widgets:
 
 The subset may be built with the following command:
 
-```bash
-gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete,stepper
-```
+{{source=CodeSnippets\CS\Terminal\BashSnippets.bash region=BuildKendoSubset}}
 
 ## Learn More
 

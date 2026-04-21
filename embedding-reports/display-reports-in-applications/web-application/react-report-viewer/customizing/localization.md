@@ -24,9 +24,11 @@ The article elaborates on how to localize the messages displayed by the React Re
 
 	{{source=CodeSnippets\Blazor\Docs\TypeScript\ViewerLocalizationImport.ts region=ImportStringResources}}
 
-1. Use the [useEffect hook](https://reactjs.org/docs/hooks-effect.html) to extend the viewer object with the string resources for the desired culture after the component has mounted:
+1. Pass the localization resources to the viewer component through the `localizationResources` prop:
 
 	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerLocalization.jsx region=ReactViewerLocalization}}
+
+	The `localizationResources` prop passes the string resources to the viewer during initialization, ensuring that all viewer areas (toolbar, content area, info messages) are properly localized.
 
 ## See Also
 

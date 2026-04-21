@@ -24,6 +24,12 @@ The article elaborates on how to localize the messages displayed by the Angular 
 
 	{{source=CodeSnippets\Blazor\Docs\TypeScript\ViewerLocalizationImport.ts region=ImportStringResources}}
 
-1. Implement the `AfterViewInit` event and extend the viewer object with the string resources for the desired culture:
+1. In the component class, implement the `OnInit` lifecycle hook to set the localization resources for the desired culture:
 
 	{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerLocalization.ts region=AngularViewerLocalizationApply}}
+
+1. Bind the `localizationResources` property to the viewer component in the template:
+
+	{{source=CodeSnippets\Blazor\Docs\html\AngularViewerLocalizationTemplate.html region=AngularViewerLocalizationTemplate}}
+
+	The `localizationResources` input passes the string resources to the viewer during initialization, ensuring that all viewer areas (toolbar, content area, info messages) are properly localized.

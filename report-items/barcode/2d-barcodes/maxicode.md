@@ -9,7 +9,9 @@ position: 5
 reportingArea: General
 ---
 
-# Configuring the MaxiCode Barcode in Reports
+# Configuring the  MaxiCode Barcode in Reports
+
+> The MaxiCode Barcode is introduced in [Telerik Reporting 2026 Q1 (20.0.26.424)](https://www.telerik.com/products/reporting/documentation/upgrade/2026/2026-q1-20-0-26-424).
 
 [MaxiCode](https://en.wikipedia.org/wiki/MaxiCode) is a fixed-size two-dimensional barcode originally created by the United Parcel Service (UPS) for automated package sorting and tracking. The symbology is defined by the [ISO/IEC 16023 international standard](https://www.iso.org/standard/29835.html).
 

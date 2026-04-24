@@ -74,9 +74,9 @@ To configure SQLite as a DataSource in Telerik Reporting, follow these steps:
 1. Use the `System.Data.SQLite` provider as it includes the full ADO.NET implementation required for SqlDataSource.
 1. Install the [`System.Data.SQLite` NuGet package](https://www.nuget.org/packages/system.data.sqlite). Version 2.0.3 or later is recommended.
 1. Configure the connection string for your SQLite database. For example:
-   ```CSharp
-   var connectionString = "Data Source=your-database-file.db;Version=3;";
-   ```
+   
+   `Data Source=your-database-file.db;Version=3;`
+   
 1. Use the connection string in the SqlDataSource component of your Telerik report.
 1. If you encounter errors during runtime, enable tracing in the Reporting Engine to capture detailed logs. Refer to [Troubleshooting Reporting Implementation in ASP.NET Core Application](slug:how-to-troubleshoot-errors-in-asp-net-core-applications) for guidance.
 

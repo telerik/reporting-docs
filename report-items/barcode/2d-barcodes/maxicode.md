@@ -49,7 +49,7 @@ The MaxiCode barcode provides several settings you can use to fine-tune its beha
 
 ### Mode
 
-The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the [MaxiCodeMode enum](api/telerik.reporting.barcodes.maxicodemode) values described in the [Encoding Modes](#encoding-modes) section. The default value is `Mode4`, which allows general-purpose data encoding.
+The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the MaxiCodeMode enum values described in the [Encoding Modes](#encoding-modes) section. The default value is `Mode4`, which allows general-purpose data encoding.
 
 ### Structured Carrier Data (Modes 2 and 3)
 

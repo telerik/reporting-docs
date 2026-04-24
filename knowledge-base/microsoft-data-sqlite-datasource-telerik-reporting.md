@@ -26,7 +26,7 @@ Telerik Reporting can use SQLite as a DataSource for reports: [Using SQLite in R
 
 Issues may arise depending on the SQLite ADO.NET provider used. For example, when using the `Microsoft.Data.Sqlite` provider, errors such as "The requested collection 'DataSourceInformation' is not defined" may occur. This issue arises because `Microsoft.Data.Sqlite` is a lightweight provider that omits the `GetSchema` metadata collections required by the Telerik Reporting SqlDataSource for parameter and command parsing.
 ![Report fails with a red message exception due to Microsoft.Data.Sqlite provider that doesn't fully implement the ADO.NET interface.](images/microsoft-data-sqlite-provider-throws-in-report.png)
-Here is the stack trace of the expected error:
+Here is the stack trace of the server-side error:
 
 ```exception
 CSharp.Net8.Html5IntegrationDemo Error: 0 : An exception has occurred while processing 'Report1' item:

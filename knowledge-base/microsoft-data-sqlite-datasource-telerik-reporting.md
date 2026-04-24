@@ -85,7 +85,7 @@ To configure SQLite as a DataSource in Telerik Reporting, follow these steps:
 ### Additional Notes
 
 - The `Microsoft.Data.Sqlite` provider is not recommended for use with Telerik Reporting due to its lack of support for schema metadata.
-- The `System.Data.SQLite` provider is automatically registered by Telerik Reporting and does not require manual registration unless overridden.
+- Telerik Reporting includes a predefined `DbProviderFactories` entry for `System.Data.SQLite.SQLiteFactory`, but your application must still reference/install the `System.Data.SQLite` package so the provider type can be loaded. If you use a different invariant name or provider configuration, manual registration may still be required. For more information, see [How to Register a DbProviderFactory in a .NET Core Project](slug:how-to-register-db-provider-factory-in-net-core-project).
 
 ## See Also
 

@@ -15,7 +15,7 @@ reportingArea: General
 
 [MaxiCode](https://en.wikipedia.org/wiki/MaxiCode) is a fixed-size two-dimensional barcode originally created by the United Parcel Service (UPS) for automated package sorting and tracking. The symbology is defined by the [ISO/IEC 16023 international standard](https://www.iso.org/standard/29835.html).
 
-Telerik Reporting implements the MaxiCode encoder through the [MaxiCodeEncoder class](api/telerik.reporting.barcodes.maxicodeencoder) and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
+Telerik Reporting implements the MaxiCode encoder through the MaxiCodeEncoder class and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
 
 Unlike most 2D barcodes that use square modules, MaxiCode uses a 33×30 hexagonal grid of offset rows arranged around a central bull's-eye finder pattern. This design makes the barcode readable by high-speed scanners even on curved or irregular surfaces. A MaxiCode symbol is always 1 inch wide by 1 inch tall and contains 884 hexagonal modules organized in 33 rows.
 
@@ -26,7 +26,7 @@ The MaxiCode symbol consists of the following elements:
 ![The structure of a MaxiCode barcode symbol](images/Barcodes/barcode-maxicode-structure.png)
 
 - **Bull's-eye finder pattern**&mdash;The concentric circular pattern at the center of the symbol. It consists of three concentric circles (rings) used by the scanner to locate and orient the symbol. The finder pattern is the most recognizable feature of MaxiCode.
-- **Hexagonal modules**&mdash;The data-carrying elements arranged in a grid of 33 rows of alternating length. Even rows contain 30 modules and odd rows contain 29 modules, for a total of 884 modules.
+- **Hexagonal modules**&mdash;The data-carrying elements are arranged in a grid of 33 rows of alternating length. Even rows contain 30 modules and odd rows contain 29 modules, for a total of 884 modules.
 - **Orientation patterns**&mdash;A set of fixed modules located around the bull's-eye. These modules help the decoder determine the correct rotation of the symbol.
 - **Data and error correction**&mdash;The remaining modules encode the actual data together with Reed-Solomon error correction codewords. The error correction allows a scanner to recover the encoded data even if part of the symbol is damaged.
 - **Quiet zone**&mdash;A blank margin that surrounds the barcode on all sides. The specification requires a quiet zone of at least one module width.

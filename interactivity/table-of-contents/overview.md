@@ -12,13 +12,11 @@ reportingArea: General
 
 # Table of Contents Overview
 
-The table of contents (TOC) provides a summary/overview of the report structure and a set of navigational links to report items in the rendered report and displays the page numbers of the pages where these report items are located.
-
-The user can click the entries in the table of contents to navigate to the report page which displays that item. The table of contents is part of the report and can be displayed before or after the report header/footer section. As such it will be included in the page numbering of the report.
-
-The following image illustrates the table of contents section during design time and at run-time.
+The table of contents (TOC) provides a summary/overview of the report structure and a set of navigational links to report items in the rendered report, and displays the page numbers of the pages where these report items are located. The user can click the entries in the table of contents to navigate to the report page, which displays that item. The table of contents is part of the report and can be displayed before or after the report header/footer section. As such, it will be included in the page numbering of the report. The following image illustrates the table of contents section during design time and at run-time.
 
 ![A Preview image of how the TOC section appears in Design and in Run time](images/toc01.png)
+
+## Configuring a TOC Section on the Report
 
 The table of contents can be added to the report by enabling it from the report's context menu:
 
@@ -26,9 +24,9 @@ The table of contents can be added to the report by enabling it from the report'
 
 > note The TOC section is designed to be displayed at the top/bottom of the entire report document. For that reason, the TOC section of the subreport is ignored.
 
-## Structure
+### Structure
 
-The position of the TOC section in the report can be controlled via the [Position](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Position) property. This property can be switched between four different states which place the TOC before or after the report header or the report footer section.
+The position of the TOC section in the report can be controlled via the [Position](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Position) property. This property can be switched between four different states, which place the TOC before or after the report header or the report footer section.
 
 At run-time, the table of contents entries are defined by the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property of any report section/item/group. Valid values are static text, expressions, or text with embedded expressions.
 
@@ -40,34 +38,69 @@ The table of contents definition contains a title and a hierarchy of levels. The
 
 ![A Preview image of the TOC Context Menu that appears when the section is right-clicked](images/tocContextMenu.png)
 
-The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property contains the properties and styles for each TOC level. The hierarchy of levels corresponds to the hierarchical structure of the report sections, items, and groups for which the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property is set.
+The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property contains the properties and styles for each TOC level.
 
-The properties and styles of a particular level in the Levels collection will be applied only to TOC entries for report sections/items/groups having the same level in the Report hierarchy.
+The properties and styles of a particular level in the Levels collection will be applied only to TOC entries for report sections/items/groups having the same level.
+
+> When using a Report Book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the Report Book, you need to configure a [Report Book Table of Contents](slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
+
+> note TOC navigational links are handled internally as [Bookmark Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book); otherwise, the TOC navigational links may not work correctly.
+
+### Hierarchy
+
+#### Default TOC Hierarchy
+
+The default hierarchy of levels corresponds to the hierarchical structure of the report sections, items, and groups for which the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property is set.
 
 When the Report hierarchy is deeper (has more levels) than the number of levels defined in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection, the style of the last TOC level in the collection will be applied to the remaining TOC entries.
 
-> When using a report book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the report book, you need to configure a [Report Book Table of Contents](slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
+#### Controlled TOC Hierarchy
 
-> note TOC navigational links are handled internally as [Bookmark Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book), otherwise the TOC navigational links may not work correctly.
+Starting with [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-402)), the report authors can explicitly specify the level at which report sections/items/groups appear in the Table of Contents, instead of relying solely on the report hierarchy. This provides greater control over TOC structure and enables consistent, meaningful outlines across Reports and Report Books. The report creators can promote/demote specific items, align TOC depth with business semantics, and get consistent TOC levels across differently structured reports.
 
-## Levels
+The functionality provides explicit TOC level control through the optional property `TocLevel` for report items, sections, and groups, so authors can override the level at which an element appears in the Table of Contents, instead of relying solely on the automatic mapping from report hierarchy to TOC levels. The Reporting Engine respects the optional `TocLevel` value (or expression) on supported elements and maps them to the appropriate level definition in the TocSection, including in Report Book TOCs.
 
-The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property of the TocSection contains a collection of levels. Each level has its own [LeaderSymbol](/api/Telerik.Reporting.TocLevel#Telerik_Reporting_TocLevel_LeaderSymbol) property which defines a single character. This character is used to fill the space between the TOC text and the page number.
+>note When part of the report sections/items/groups in the TOC have their `TocLevel` set, and another part does not, the latter TOC level is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
 
-The default character is a dot (.). To prevent the leader symbol from appearing between the text and the page number, you will need to delete this character. Each level also has a [Style](/api/Telerik.Reporting.Drawing#Telerik_Reporting_Drawing_Style) property. The style configured there will be applied to all of the TOC entry elements: text, leader symbol, and page number.
+### Levels
+
+The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property of the TocSection contains a collection of levels. Each level has its own [LeaderSymbol](/api/Telerik.Reporting.TocLevel#Telerik_Reporting_TocLevel_LeaderSymbol) property, which defines a single character. This character is used to fill the space between the TOC text and the page number. The default character is a dot (.). To prevent the leader symbol from appearing between the text and the page number, you will need to delete this character. Each level also has a [Style](/api/Telerik.Reporting.Drawing#Telerik_Reporting_Drawing_Style) property. The style configured there will be applied to all of the TOC entry elements: text, leader symbol, and page number.
 
 When adding a TOC section to the report for the first time, the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection will be empty. In this case, the TOC entries will be styled with a default style and leader symbol.
 
 You can add levels and configure them by clicking on the ellipsis button of the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property to invoke the levels collection editor.
 
-## Adding a Report Item to the Table of Contents
+## Adding Content to the TOC Section
+
+Report parts that expose the property `TocText` may be added to the Report Table of Contents. These are:
+
+* [Report Sections](slug:report_structure_groups_sections#report-sections);
+* [Report Items](slug:telerikreporting/designing-reports/report-structure/overview), including the [Report itself](slug:report_item);
+* [Report Groups](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report);
+* [Table Groups](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item).
+
+The `TocText` default value is null/empty string. Set this property to static text or a valid [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview); as long as the value is not null or empty, it will appear in the Report Table of Contents.
+
+### Adding a Report Section to the Table of Contents
+
+By default, the Report Sections generate TOC entries on the first level of the Report table of contents.
+ 
+Set the `TocText` of the [Report Header and Footer Sections](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections) to generate an entry on the first level at the beginning (for the header) and at the end (for the footer) of the table of contents.
+
+The Detail Section is generated for each Report DataSource record. Therefore, when you set the `TocText` of a detail section, the Reporting Engine generates a Detail Section entry for each data record in the TOC.
+
+>note Although the [Page Sections](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections) expose the property TocText, they won't appear in the Table of Contents.
+
+The inner Report items with configured `TocText` by default generate child entries that appear on the next level in the TOC entry of the corresponding Report section.
+ 
+### Adding a Report Item to the Table of Contents
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
 1. In **Design view**, make sure the Properties pane is visible. Select the report item you want to add to the table of contents. In the Properties pane, type the text that you want to appear in the table of contents in the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property, or enter an expression that evaluates to a text.
 1. Repeat step 1 for every report item you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.
-1. Click **Preview**. The report runs and the table of contents displays the text you created. Click any link to jump to the report page and the exact location of that item.
+1. Click **Preview**. The report runs, and the table of contents displays the text you created. Click any link to jump to the report page and the exact location of that item.
 
 > note Report items positioned in the Page Header/Page Footer section of the report cannot be used to create entries in the table of contents. Setting the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property of such an item will have no effect.
 
@@ -75,26 +108,26 @@ You can add a table of contents to the report and click on entries in the table 
 >
 > Alternatively, use the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) to reorder the items in the corresponding container, so that they appear in the TOC in the desired sequence.
 
-## Adding a Report Group to the Table of Contents
+### Adding a Report Group to the Table of Contents
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
-1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
+1. In **Design view**, right-click outside the report sections, select View, and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Select a report group that you want to appear in the table of contents. The properties for the selected group appear in the **Properties** pane.
-1. In the [TocText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
+1. In the [TocText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically, for a group, the expression you type should match the group expression.
 1. Click **OK**.
 1. Repeat steps 1-4 for every group you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.
 1. Run the report - the table of contents displays the group values. Click any TOC entry to jump to the report page with that group instance.
 
-## Adding a Table Group to Table of Contents
+### Adding a Table Group to Table of Contents
 
 You can add a table of contents to the report and click on entries in the table of contents to jump to specific areas within a report.
 
-1. In **Design view**, right-click outside the report sections, select View and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
+1. In **Design view**, right-click outside the report sections, select View, and open up the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 1. Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the **Group Explorer** shows the respective groups.
 1. Select a group you want to add to the table of contents, right-click it, and select **Group Properties**. The properties for the selected group appear in the **Edit Table Group** dialog.
-1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
+1. In the [TocText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_TocText) property, type the text you want to appear in the table of contents. Alternatively, click the ellipsis to open the **Expression** dialog box to specify an expression that evaluates to a text. Typically, for a group, the expression you type should match the group expression.
 1. Click **OK**.
 1. Repeat steps 1-5 for every group you want to appear in the table of contents.
 1. Enable the table of contents section from the report's context menu.

@@ -29,12 +29,7 @@ All report templates are stored in a specific **Report Templates** folder. A def
 
 The [`ReportDesignerServiceConfiguration`](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications#add-configuration-settings-in-the-startupcs-file) class provides a configuration setting for specifying the `TemplateDefinitionStorage`. Thus, you can navigate to a specific folder that stores all report templates:
 
-````CSharp
-services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
-{
-	TemplateDefinitionStorage = new FileTemplateDefinitionStorage("templates_folder_path", new[] { "sub_folder_to_exclude" }),
-});
-````
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ConfigureServicesTemplates}}
 
 >note Report templates (.trtx files) can be stored only in the configured `Report Templates` folder. Other file formats are not allowed in the folder.
 
@@ -42,27 +37,13 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 
 To restrict specific actions or features for users on the client side, for example, to limit access to the `Report Templates` folder, use the [`DeniedPermissions`](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization) setting of the `ReportDesignerServiceConfiguration`. This setting allows developers to customize the designer experience by disabling certain tools, components, or capabilities based on application logic or user roles.
 
-````CSharp
-services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
-{
-    DeniedPermissions = ReportDesignerPermissionsBuilder.Build(
-        Permission.Commands_AssetsManager_ReportTemplates
-        )
-}));
-````
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ConfigureServicesPermissions}}
 
 >note You can override the [`GetDeniedPermissions`](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization) method in your custom implementation of the reporting service and apply different restrictions based on the currently logged-in user or other conditions.
 
 ## Allowed Operations for Restricted Users
 
-````CSharp
-services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
-{
-    DeniedPermissions = ReportDesignerPermissionsBuilder.Build(
-        Permission.Commands_AssetsManager_ReportTemplates
-        )
-}));
-````
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ConfigureServicesRestrictedUsers}}
 
 Once the end-user is **not** granted permissions for the Report Templates, the following actions are available:
 

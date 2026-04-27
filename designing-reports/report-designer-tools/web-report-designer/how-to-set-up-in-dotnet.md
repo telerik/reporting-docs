@@ -97,7 +97,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Add a new HTML Page for the Web Report Designer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file `index.html`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInDotnet.html region=WebReportDesignerAddingTheWebReportDesigner}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInDotnet.html region=WebReportDesignerAddingTheWebReportDesigner}}
 
 1. To set up the `index.html` as a startup page, check [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the _launchUrl_ to _index.html_ in `launchSettings.json`.
 1. Finally, run the project to preview the web designer.

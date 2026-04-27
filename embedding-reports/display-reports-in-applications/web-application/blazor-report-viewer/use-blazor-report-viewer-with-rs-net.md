@@ -83,7 +83,7 @@ Server-side, you may configure the endpoint '/rs-token', as shown below, after e
 
 ### Username and Password Authentication
 
-> caution Avoid this approach for security reasons.
+>caution Avoid this approach for security reasons.
 
 If you prefer to use hardcoded credentials, use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`.
 

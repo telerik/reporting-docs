@@ -39,26 +39,15 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 1. The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer Service functionality. Ensure that the application is configured for WebAPI controllers:
 
-   ```C#
-   services.AddControllers();
-   ```
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddControllers}}
 
 1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` is configured for API controllers by adding routing and endpoint configuration:
 
-   ```C#
-   app.UseRouting();
-
-   app.UseEndpoints(endpoints =>
-   {
-       endpoints.MapControllers();
-   });
-   ```
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=RestServiceUseUseRoutingAndEndpoints}}
 
 1. Assure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
-   ```C#
-   app.UseStaticFiles();
-   ```
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 ## Add Configuration Settings in the Startup.cs file
 
@@ -66,51 +55,19 @@ The report generation engine can retrieve Sql Connection Strings and specific Re
 
 The ASP.NET Core applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
-```C#
-ReportingEngineConfiguration = sp.GetService<IConfiguration>()
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingEngineConfiguration}}
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
 To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0). Here are the exact steps to follow:
 
-1. Add a new `ResolveSpecificReportingConfiguration` class as a separate file or in the `Startup.cs` file
+1. Add a new `ResolveSpecificReportingConfiguration` method as a separate class/file or in the `Startup.cs` file
 
-   ```C#
-   static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
-   {
-   	var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
-   	return new ConfigurationBuilder()
-   	 .AddJsonFile(reportingConfigFileName, true)
-   	 .Build();
-   }
-   ```
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ResolveSpecificReportingConfiguration}}
 
 1. Add the required services in the `ConfigureServices` method
 
-   ```C#
-   public void ConfigureServices(IServiceCollection services)
-   {
-   	services.AddControllers();
-   	services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-   		new ReportServiceConfiguration
-   		{
-   			ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-   			HostAppId = "ReportingCoreApp",
-   			Storage = new FileStorage(),
-   			ReportSourceResolver = new TypeReportSourceResolver().AddFallbackResolver
-   								   (new UriReportSourceResolver(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")))
-   		});
-   	services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
-   	{
-   		TemplateDefinitionStorage = new FileTemplateDefinitionStorage("templates_folder_path", new[] { "sub_folder_to_exclude" }), // introduced in Q4 2025
-   		DefinitionStorage = new FileDefinitionStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports"), new[] { "Resources", "Shared Data Sources" }),
-   		ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Resources")),
-   		SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
-   		SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
-   	});
-   }
-   ```
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ConfigureServicesMethod}}
 
 ## Setting up the Report Designer REST service:
 
@@ -120,23 +77,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Implement a Report Designer controller. Right-click on the `Controllers` folder and add a new item: Add > New item... > **Web API Controller Class** item. Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the project.
 1. Inherit the [`ReportDesignerControllerBase`](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the [`ReportServiceConfiguration`](/api/telerik.reporting.services.reportserviceconfiguration), there is another configuration instance named [`ReportDesignerServiceConfiguration`](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), which will initialize the definition storage. This is the class responsible for opening, editing, and saving the report definitions. This is how a basic implementation of the controller should look like the following:
 
-   ```C#
-   namespace CSharp.AspNetCoreDemo.Controllers
-   {
-   	using Microsoft.AspNetCore.Mvc;
-   	using Telerik.Reporting.Services;
-   	using Telerik.WebReportDesigner.Services;
-   	using Telerik.WebReportDesigner.Services.Controllers;
-   	[Route("api/reportdesigner")]
-   	public class ReportDesignerController : ReportDesignerControllerBase
-   	{
-   		public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
-   			: base(reportDesignerServiceConfiguration, reportServiceConfiguration)
-   		{
-   		}
-   	}
-   }
-   ```
+   {{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerControllerEmpty.cs region=ReportDesignerControllerEmpty}}
 
 1. To ensure the service operates, run the application and navigate to URL `{applicationRoot}/api/reportdesigner/cultureContext`. It should return a JSON representing the separators determined by the current culture, for example:
 

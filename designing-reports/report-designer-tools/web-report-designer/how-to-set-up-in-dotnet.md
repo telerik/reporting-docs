@@ -61,7 +61,7 @@ will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.js
 
 To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0). Here are the exact steps to follow:
 
-1. Add a new `ResolveSpecificReportingConfiguration` method as a separate class/file or in the `Startup.cs` file
+1. Add a `ResolveSpecificReportingConfiguration` method in a separate class/file or directly in the `Startup.cs` file
 
    {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ResolveSpecificReportingConfiguration}}
 

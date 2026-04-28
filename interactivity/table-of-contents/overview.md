@@ -68,9 +68,9 @@ The functionality is exposed through the optional [TocLevel](/api/Telerik.Report
 
 If the value cannot be evaluated to a valid `Integer`, the TOC level falls back to the [Default TOC Hierarchy](#default-toc-hierarchy). Values less than `1` are treated as `1` (the topmost TOC level).
 
->note `TocLevel` takes effect only when [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) is also set on the same item, section, or group. Setting `TocLevel` without `TocText` has no effect, because the element does not produce a TOC entry in the first place.
+> note `TocLevel` takes effect only when [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) is also set on the same item, section, or group. Setting `TocLevel` without `TocText` has no effect, because the element does not produce a TOC entry in the first place.
 
->note When part of the report sections/items/groups in the TOC have their `TocLevel` set and another part does not, the level of the elements without an explicit `TocLevel` is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
+> note When part of the report sections/items/groups in the TOC have their `TocLevel` set and another part does not, the level of the elements without an explicit `TocLevel` is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
 
 ### Levels
 

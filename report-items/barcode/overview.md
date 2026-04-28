@@ -12,7 +12,7 @@ reportingArea: General
 
 # Barcode Report Item Overview
 
-The Barcode report item automatically generates barcodes directly from numeric or character data. The symbology is selected through the [`Encoder`](/api/telerik.reporting.barcode#telerik_reporting_barcode_encoder) property, the encoded payload is supplied through the [`Value`](/api/telerik.reporting.barcode#telerik_reporting_barcode_value) property as either a static string or a report expression, and the resulting symbol is rendered in supported output formats such as PDF, image, HTML/SVG, XAML, DOCX, and RTF.
+The Barcode report item automatically generates barcodes directly from numeric or character data. The symbology is selected through the [`Encoder`](/api/telerik.reporting.barcode#telerik_reporting_barcode_encoder) property, the encoded payload is supplied through the [`Value`](/api/telerik.reporting.barcode#telerik_reporting_barcode_value) property as either a static string or a report expression, and the resulting symbol is rendered in supported output formats such as PDF, Image, HTML (rendered as SVG), XAML, DOCX, and RTF.
 
 ![Preview of the demo Barcodes Report from our examples](images/Barcodes/barcode-overview.png)
 

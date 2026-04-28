@@ -63,8 +63,7 @@ The functionality is exposed through the optional [TocLevel](/api/Telerik.Report
 `TocLevel` is a string property whose value should evaluate to an `Integer` greater than or equal to **1**. The value can be:
 
 * a literal integer (for example, `2`);
-* an [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) starting with `=` (for example, `= IIf(Fields.IsImportant, 1, 3)`);
-* a string with one or more [embedded expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions).
+* an [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) starting with `=` (for example, `= Fields.IsImportant ? 1 : 3`);
 
 If the value cannot be evaluated to a valid `Integer`, the TOC level falls back to the [Default TOC Hierarchy](#default-toc-hierarchy). Values less than `1` are treated as `1` (the topmost TOC level).
 

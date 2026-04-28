@@ -11,11 +11,11 @@ reportingArea: General
 
 # Configuring the  MaxiCode Barcode in Reports
 
-> The MaxiCode Barcode is introduced in [Telerik Reporting 2026 Q1 (20.0.26.424)](https://www.telerik.com/products/reporting/documentation/upgrade/2026/2026-q1-20-0-26-424).
+> The MaxiCode Barcode is introduced in [Telerik Reporting 2026 Q1 (20.0.26.424)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-424)).
 
 [MaxiCode](https://en.wikipedia.org/wiki/MaxiCode) is a fixed-size two-dimensional barcode originally created by the United Parcel Service (UPS) for automated package sorting and tracking. The symbology is defined by the [ISO/IEC 16023 international standard](https://www.iso.org/standard/29835.html).
 
-Telerik Reporting implements the MaxiCode encoder through the MaxiCodeEncoder class and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
+Telerik Reporting implements the MaxiCode encoder through the [Telerik.Reporting.Barcodes.MaxiCodeEncoder class](/api/telerik.reporting.barcodes.maxicodeencoder) and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
 
 Unlike most 2D barcodes that use square modules, MaxiCode uses a 33×30 hexagonal grid of offset rows arranged around a central bull's-eye finder pattern. This design makes the barcode readable by high-speed scanners even on curved or irregular surfaces. A MaxiCode symbol is always 1 inch wide by 1 inch tall and contains 884 hexagonal modules organized in 33 rows.
 
@@ -33,7 +33,7 @@ The MaxiCode symbol consists of the following elements:
 
 ## Encoding Modes
 
-MaxiCode defines six encoding modes. Each mode targets a specific use case and imposes its own rules on the encoded data. The following list describes the supported modes:
+MaxiCode defines five encoding modes. Each mode targets a specific use case and imposes its own rules on the encoded data. The following list describes the supported modes:
 
 - **Mode 2**&mdash;Used for structured carrier messages in the United States. Encodes a primary message that contains a ZIP code (up to nine digits), country code, and class of service, plus a secondary message with additional shipment data. This mode is the most common in the package-delivery industry.
 - **Mode 3**&mdash;Used for structured carrier messages outside the United States. Encodes a primary message that contains an alphanumeric postal code (up to six characters), country code, and class of service, plus a secondary message with additional shipment data.
@@ -49,19 +49,19 @@ The MaxiCode barcode provides several settings you can use to fine-tune its beha
 
 ### Mode
 
-The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the MaxiCodeMode enum values described in the [Encoding Modes](#encoding-modes) section. The default value is `Mode4`, which allows general-purpose data encoding.
+The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the [Telerik.Reporting.Barcodes.MaxiCodeMode enum](/api/telerik.reporting.barcodes.maxicodemode) values described in the [Encoding Modes](#encoding-modes) section. The default value is `MaxiCodeMode.Mode4`, which allows general-purpose data encoding.
 
 ### Structured Carrier Data (Modes 2 and 3)
 
 When you set the `Mode` property to `Mode2` or `Mode3`, the encoder expects a structured carrier message. Provide the following properties to configure the primary message:
 
-- `PostalCode`&mdash;The destination postal code. In _Mode 2_, the postal code must be a __numeric value of up to nine digits__. In _Mode 3_, the postal code can be an __alphanumeric value of up to six characters__.
-- `CountryCode`&mdash;A __three-digit numeric__ code that identifies the destination country according to the [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) standard.
-- `ClassOfService`&mdash;A __three-digit numeric__ code that identifies the service class for the shipment.
+- `PostalCode` (`string`, default empty)&mdash;The destination postal code. In _Mode 2_, the postal code must be __exactly nine numeric digits__ (for example, `"152382802"`). In _Mode 3_, the postal code must be __exactly six alphanumeric characters__ (for example, `"EC2A1N"`).
+- `CountryCode` (`int`, default `840`)&mdash;The numeric country code that identifies the destination country according to the [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) standard. _Mode 2_ is defined for US domestic shipments and expects `CountryCode` set to `840`. _Mode 3_ accepts any other valid three-digit country code (for example, `826` for the United Kingdom).
+- `ServiceClass` (`int`, default `1`)&mdash;A numeric code that identifies the service class for the shipment.
 
-The secondary message is populated from the `Value` property of the barcode item and can contain up to 84 characters in Mode 2 or Mode 3.
+The secondary message is populated from the `Value` property of the barcode item.
 
-> important When you use Mode 2 or Mode 3, you must provide valid values for `PostalCode`, `CountryCode`, and `ClassOfService`. Omitting these values or providing invalid data produces an error during report processing.
+> important When you use Mode 2 or Mode 3, you must provide valid values for `PostalCode`, `CountryCode`, and `ServiceClass`. Omitting these values or providing invalid data produces an error during report processing.
 
 ### Error Correction
 
@@ -83,7 +83,7 @@ The data capacity of a MaxiCode symbol depends on the selected encoding mode and
 | 4 | N/A | 138 characters | 93 characters |
 | 5 | N/A | 77 characters | 47 characters |
 
-> note The actual capacity may vary depending on the character set and the data compaction algorithm that the encoder applies automatically.
+> note The actual capacity may vary depending on the character set and the data compaction algorithm that the encoder applies automatically. For Modes 2 and 3 the secondary-message capacity in the table is the total payload before the primary message (postal code, country code, and service class) is deducted from the symbol.
 
 ## See Also
 

@@ -56,13 +56,20 @@ When the Report hierarchy is deeper (has more levels) than the number of levels 
 
 #### Controlled TOC Hierarchy
 
-Starting with [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-402)), the report authors can explicitly specify the level at which report sections/items/groups appear in the Table of Contents, instead of relying solely on the report hierarchy. This provides greater control over TOC structure and enables consistent, meaningful outlines across Reports and Report Books. The report creators can promote/demote specific items, align TOC depth with business semantics, and get consistent TOC levels across differently structured reports.
+Starting with [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-402)), report authors can explicitly specify the level at which report sections, items, and groups appear in the Table of Contents, instead of relying solely on the report hierarchy. This provides greater control over the TOC structure and enables consistent, meaningful outlines across Reports and Report Books. Report creators can promote or demote specific items, align the TOC depth with business semantics, and get consistent TOC levels across differently structured reports.
 
-The functionality provides explicit TOC level control through the optional property `TocLevel` for report items, sections, and groups, so authors can override the level at which an element appears in the Table of Contents, instead of relying solely on the automatic mapping from report hierarchy to TOC levels. The Reporting Engine respects the optional `TocLevel` value (or expression) on supported elements and maps them to the appropriate level definition in the TocSection, including in Report Book TOCs.
+The functionality is exposed through the optional [TocLevel](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocLevel) property on report items (and the corresponding [TocLevel](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocLevel) property on report and table groups). The Reporting Engine respects the value (or expression) set on supported elements and maps them to the matching level definition in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection of the `TocSection`, including in Report Book TOCs.
 
-The `TocLevel` must evaluate to an `Integer` greater than or equal to **1**. If the value cannot be evaluated to a valid _Integer_, the _TOC level_ will be set based on the [Default TOC Hierarchy](#default-toc-hierarchy).
+`TocLevel` is a string property whose value should evaluate to an `Integer` greater than or equal to **1**. The value can be:
 
->note When part of the report sections/items/groups in the TOC have their `TocLevel` set, and another part does not, the latter TOC level is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
+* a literal integer (for example, `2`);
+* an [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) starting with `=` (for example, `= Fields.IsImportant ? 1 : 3`);
+
+If the value cannot be evaluated to a valid `Integer`, the TOC level falls back to the [Default TOC Hierarchy](#default-toc-hierarchy). Values less than `1` are treated as `1` (the topmost TOC level).
+
+> note `TocLevel` takes effect only when [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) is also set on the same item, section, or group. Setting `TocLevel` without `TocText` has no effect, because the element does not produce a TOC entry in the first place.
+
+> note When part of the report sections/items/groups in the TOC have their `TocLevel` set and another part does not, the level of the elements without an explicit `TocLevel` is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
 
 ### Levels
 

@@ -27,7 +27,7 @@ After the completion of this guide, you will also be able to configure the Barco
 
 	![Configure the Encoder Property of a QR Barcode in the Report Designer](images/Barcodes/barcode-encoder-property.png)
 
-1. Now, you need to encode the Barcode value through the [`Value`](/api/telerik.reporting.barcode#telerik_reporting_barcode_value) property. `Value` can be a static string or an expression which is evaluated at runtime.
+1. Now, you need to encode the Barcode value through the [`Value`](/api/telerik.reporting.barcode#telerik_reporting_barcode_value) property. `Value` can be a static string or an expression that is evaluated at runtime.
 
 	![Configure the Value Property of a QR Barcode in the Report Designer](images/Barcodes/barcode-value-property.png)
 
@@ -45,7 +45,7 @@ After the completion of this guide, you will also be able to configure the Barco
 
 1. Rotate the Barcode through the [`Angle`](/api/telerik.reporting.barcode#telerik_reporting_barcode_angle) property.
 
-	Note that when the angle is not divisible by 90 degrees and the [`Stretch`](/api/telerik.reporting.barcode#telerik_reporting_barcode_stretch) property is `true`, the Barcode will be scaled down so that it fits into the item bounds.
+	Note that when the angle is not divisible by 90 degrees, and the [`Stretch`](/api/telerik.reporting.barcode#telerik_reporting_barcode_stretch) property is `true`, the Barcode will be scaled down so that it fits into the item bounds.
 
 	![The Effect of the Angle Property of the Barcode Item set to 90, 180 and 270](images/Barcodes/barcode-angle-property.png)
 

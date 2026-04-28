@@ -15,7 +15,7 @@ reportingArea: General
 
 [MaxiCode](https://en.wikipedia.org/wiki/MaxiCode) is a fixed-size two-dimensional barcode originally created by the United Parcel Service (UPS) for automated package sorting and tracking. The symbology is defined by the [ISO/IEC 16023 international standard](https://www.iso.org/standard/29835.html).
 
-Telerik Reporting implements the MaxiCode encoder through the [Telerik.Reporting.Barcodes.MaxiCodeEncoder class](/api/telerik.reporting.barcodes.maxicodeencoder) and supports all rendering extensions&mdash;PDF, Image, HTML/SVG, XAML, DOCX, and RTF.
+Telerik Reporting implements the MaxiCode encoder through the [MaxiCodeEncoder](/api/telerik.reporting.barcodes.maxicodeencoder) class and supports the rendering extensions&mdash;PDF, Image, HTML (the Barcode renders as SVG), XAML, DOCX, and RTF.
 
 Unlike most 2D barcodes that use square modules, MaxiCode uses a 33×30 hexagonal grid of offset rows arranged around a central bull's-eye finder pattern. This design makes the barcode readable by high-speed scanners even on curved or irregular surfaces. A MaxiCode symbol is always 1 inch wide by 1 inch tall and contains 884 hexagonal modules organized in 33 rows.
 
@@ -49,7 +49,7 @@ The MaxiCode barcode provides several settings you can use to fine-tune its beha
 
 ### Mode
 
-The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the [Telerik.Reporting.Barcodes.MaxiCodeMode enum](/api/telerik.reporting.barcodes.maxicodemode) values described in the [Encoding Modes](#encoding-modes) section. The default value is `MaxiCodeMode.Mode4`, which allows general-purpose data encoding.
+The `Mode` property determines the encoding mode of the MaxiCode symbol. Set this property to one of the [MaxiCodeMode](/api/telerik.reporting.barcodes.maxicodemode) enum values described in the [Encoding Modes](#encoding-modes) section. The default value is `MaxiCodeMode.Mode4`, which allows general-purpose data encoding.
 
 ### Structured Carrier Data (Modes 2 and 3)
 
@@ -83,7 +83,7 @@ The data capacity of a MaxiCode symbol depends on the selected encoding mode and
 | 4 | N/A | 138 characters | 93 characters |
 | 5 | N/A | 77 characters | 47 characters |
 
-> note The actual capacity may vary depending on the character set and the data compaction algorithm that the encoder applies automatically. For Modes 2 and 3 the secondary-message capacity in the table is the total payload before the primary message (postal code, country code, and service class) is deducted from the symbol.
+> note The actual capacity may vary depending on the character set and the data compaction algorithm that the encoder applies automatically. For Modes 2 and 3, the secondary-message capacity in the table is the total payload before the primary message (postal code, country code, and service class) is deducted from the symbol.
 
 ## See Also
 

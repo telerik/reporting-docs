@@ -12,7 +12,7 @@ reportingArea: General
 
 # Barcode Report Item Overview
 
-The Barcode report item automatically generates barcodes directly from numeric or character data. The symbology is selected through the [`Encoder`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_Encoder) property, the encoded payload is supplied through the [`Value`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_Value) property as either a static string or a report expression, and the resulting symbol is rendered by all Telerik Reporting export formats&mdash;PDF, image, HTML/SVG, XAML, DOCX, and RTF.
+The Barcode report item automatically generates barcodes directly from numeric or character data. The symbology is selected through the [`Encoder`](/api/telerik.reporting.barcode#telerik_reporting_barcode_encoder) property, the encoded payload is supplied through the [`Value`](/api/telerik.reporting.barcode#telerik_reporting_barcode_value) property as either a static string or a report expression, and the resulting symbol is rendered by all Telerik Reporting export formats&mdash;PDF, image, HTML/SVG, XAML, DOCX, and RTF.
 
 ![Preview of the demo Barcodes Report from our examples](images/Barcodes/barcode-overview.png)
 
@@ -22,9 +22,9 @@ The Barcode report item automatically generates barcodes directly from numeric o
 
 * [Support for one-dimensional (1D) Barcodes](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types)&mdash;The Barcode report item supports linear barcode types such as EAN13, EAN8, UPC-A, UPC-E, and Code39.
 * [Support for two-dimensional (2D) Barcodes](slug:2d_barcodes_overview)&mdash;The Barcode report item also supports matrix barcode types such as Data Matrix, QR Code, Swiss QR Code, PDF417, and MaxiCode.
-* **Configurable size and layout**&mdash;Set a fixed module width through the [`Module`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_Module) property, or let the symbol scale to the bounds of the item by setting the [`Stretch`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_Stretch) property to `true`. When `Stretch` is `false`, the [`BarAlign`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_BarAlign) property aligns the symbol horizontally inside the item.
-* **Rotation**&mdash;Rotate the rendered symbol through the [`Angle`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_Angle) property.
-* **Human-readable text and checksum**&mdash;Toggle the printed text under the symbol with the [`ShowText`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_ShowText) property, and append a checksum (where the symbology supports it) with the [`Checksum`](/api/telerik.reporting.barcode#Telerik_Reporting_Barcode_Checksum) property.
+* **Configurable size and layout**&mdash;Set a fixed module width through the [`Module`](/api/telerik.reporting.barcode#telerik_reporting_barcode_module) property, or let the symbol scale to the bounds of the item by setting the [`Stretch`](/api/telerik.reporting.barcode#telerik_reporting_barcode_stretch) property to `true`. When `Stretch` is `false`, the [`BarAlign`](/api/telerik.reporting.barcode#telerik_reporting_barcode_baralign) property aligns the symbol horizontally inside the item.
+* **Rotation**&mdash;Rotate the rendered symbol through the [`Angle`](/api/telerik.reporting.barcode#telerik_reporting_barcode_angle) property.
+* **Human-readable text and checksum**&mdash;Toggle the printed text under 1D symbols with the [`ShowText`](/api/telerik.reporting.barcodes.encoder1d#telerik_reporting_barcodes_encoder1d_showtext) property of the active [`Encoder1D`](/api/telerik.reporting.barcodes.encoder1d) instance, and append a checksum (where the symbology supports it) with the [`Checksum`](/api/telerik.reporting.barcode#telerik_reporting_barcode_checksum) property.
 
 ## Next Steps
 

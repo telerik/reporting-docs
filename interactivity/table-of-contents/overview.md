@@ -60,6 +60,8 @@ Starting with [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/
 
 The functionality provides explicit TOC level control through the optional property `TocLevel` for report items, sections, and groups, so authors can override the level at which an element appears in the Table of Contents, instead of relying solely on the automatic mapping from report hierarchy to TOC levels. The Reporting Engine respects the optional `TocLevel` value (or expression) on supported elements and maps them to the appropriate level definition in the TocSection, including in Report Book TOCs.
 
+The `TocLevel` must evaluate to an `Integer` greater than or equal to 1. If the value cannot be evaluated to an Integer, it defaults to `1`.
+
 >note When part of the report sections/items/groups in the TOC have their `TocLevel` set, and another part does not, the latter TOC level is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
 
 ### Levels

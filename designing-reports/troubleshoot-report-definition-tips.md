@@ -29,7 +29,7 @@ Check for [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/
 
 ## Troubleshooting Report Layout
 
-Use different __Styles__, for example, `Background Color` and `Borders`, to easily distinguish between report sections and items and identify which one is responsible for the observed inconsistency in the report layout. For complex reports, with many nested items, start by coloring the top-level containers first, and then dig deeper by coloring that container's nested items as well, until you find the item responsible for the issues.
+Use different **Styles**, for example, `Background Color` and `Borders`, to easily distinguish between report sections and items and identify which one is responsible for the observed inconsistency in the report layout. For complex reports, with many nested items, start by coloring the top-level containers first, and then dig deeper by coloring that container's nested items as well, until you find the item responsible for the issues.
 
 Here is an example with the detail section and the Panel inside it easily distinguishable due to the background colors:
 ![Report with detail section in light green and a panel in light blue in the Standalone Report Designer.](images/colored-detail-section-and-panel-standalone-designer.png)
@@ -71,6 +71,14 @@ If the SQL query parameters are not passed correctly to the database, ensure the
 ### Expression Values
 
 Use a temporary `TextBox` in the same [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) or [report section](slug:report_structure_groups_sections#report-sections), ensuring the same [scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope) to display the actually evaluated content in the [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) or other [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview).
+
+### Prefer Conditional Formatting for Presentational Style Logic
+
+When the runtime value you want to compute only affects how a report item looks, for example, the background color, font color, font weight, or border width, prefer a [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rule over a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
+
+[Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) rely on reflection at runtime to resolve and assign the target property, which adds processing overhead—especially in data-bound sections where many items re-evaluate Bindings on every rendered row. [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rules are evaluated through a more efficient code path and typically perform noticeably better in dense reports.
+
+Reserve [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression instead, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
 
 ### Object is Not Defined in the Current Context
 

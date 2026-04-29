@@ -25,6 +25,10 @@ When the report renders, the expression is evaluated and assigned to the bound p
 | Complex expressions for styling | Bindings | Full expression flexibility, cleaner for complex logic like `IIF(Fields.Amount > 1000, 'Red', 'Green')`. |
 | Setting DataSource, Visible, or other properties without native expression support | Bindings | Only bindings can dynamically set these properties. |
 
+> __Prefer Conditional Formatting over Bindings for Presentational Style Logic__ When a runtime value only affects how a report item looks, for example, the background color, font color, font weight, or border width, prefer a [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rule over a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). Bindings rely on reflection at runtime to resolve and assign the target property, which adds processing overhead. Conditional Formatting rules are evaluated through a more efficient code path and typically perform noticeably better in dense, data-bound sections that re-evaluate styling on every rendered row.
+>
+> Reserve [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
+
 ## Common Binding Scenarios
 
 | Property | Expression Example | Purpose |

@@ -113,6 +113,10 @@ Interrupting the report processing with events comes at a price. Instead, consid
 
 Hiding report items (setting their visibility to false) will not prevent the reporting engine from processing those items. It is required to process hidden items for other features of the report, such as [Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview), to work correctly. If such a report item is a [Data Item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview), it will still retrieve data from its data source and reduce the overall performance. Therefore, it is recommended to add [server-side filtering](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) based on the same condition that controls the visibility of the data item.
 
+### Number of Chart items
+
+The old __Chart item__ does not use the reporting data engine, but its own. As a result, showing many charts involves extra data processing. In Q1 2013, we introduced the [Graph item](slug:telerikreporting/designing-reports/report-structure/graph/overview). The new item utilizes the optimized reporting data engine. Thus, we highly recommend it over the obsolete Chart item. Still, if you have to use the obsolete Chart item, avoid using the IntelligentLabels function.
+
 ## For additional assistance
 
 If your case is not listed above, or you have tried all suggestions but still experience slow rendering, please open a [new support ticket](https://www.telerik.com/account/support-center/contact-us/technical-support) and send us the following so that we can investigate your case and check what is causing your troubles:

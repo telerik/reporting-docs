@@ -74,7 +74,7 @@ Use a temporary `TextBox` in the same [data item](slug:telerikreporting/designin
 
 ### Prefer Conditional Formatting for Presentational Style Logic
 
-When the runtime value you want to compute only affects how a report item looks—for example, the `Background` color, font color, font weight, or border width—prefer a [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rule over a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
+When the runtime value you want to compute only affects how a report item looks, for example, the background color, font color, font weight, or border width, prefer a [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rule over a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
 
 [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) rely on reflection at runtime to resolve and assign the target property, which adds processing overhead—especially in data-bound sections where many items re-evaluate Bindings on every rendered row. [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rules are evaluated through a more efficient code path and typically perform noticeably better in dense reports.
 

@@ -61,6 +61,12 @@ The [Interactive and Print Layouts](slug:telerikreporting/using-reports-in-appli
 
 The pagination is explained in more detail in the article [Understanding Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination).
 
+### Prefer Conditional Formatting over Bindings for Presentational Style Logic
+
+When a runtime value only affects how a report item looks—for example, the `Background` color, font color, font weight, or border width—favor a [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rule over a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). Bindings rely on reflection at runtime to resolve and assign the target property, which adds processing overhead. Conditional Formatting rules are evaluated through a more efficient code path and typically perform noticeably better in dense, data-bound sections that re-evaluate styling on every rendered row.
+
+Reserve [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
+
 ### Deliver Rendered Reports for Non-browser Formats
 
 To reduce the load on your reporting environment, you can use our Report Server, where one may schedule a report in off-peak hours and send it by mail when ready, thus avoiding the waiting, and this comes out of the box.

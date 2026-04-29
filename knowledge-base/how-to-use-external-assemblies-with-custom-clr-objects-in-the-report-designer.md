@@ -27,7 +27,7 @@ category: knowledge-base
 
 This article provides the required steps to use external assemblies with custom user functions in [Telerik Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview).
 
-It is a common requirement to add your own [User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) or bind to custom CLR objects, data models (such as an OpenAccess ORM model), external assemblies with custom data source objects, data feeds (including OData) and web services.
+It is a common requirement to add your own [User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) or bind to custom CLR objects, data models (such as an OpenAccess ORM model), external assemblies with custom data source objects, data feeds (including OData), and web services.
 
 ## Solution
 
@@ -38,7 +38,7 @@ To expose your data, so it can be utilized by the Object/OpenAccess/Entity [data
 The steps below can be used as an example of creating an assembly with custom user functions. We will use this assembly in the following sections of the current article.
 
 1. Open Visual Studio and create a new Class Library project named MyAssembly.
-1. Add a reference to `Telerik.Reporting.dll`. When the assembly is used in the Report Designer its version will be resolved according to the Report Designer version of Telerik Reporting assemblies.
+1. Add a reference to `Telerik.Reporting.dll`. When the assembly is used in the Report Designer, its version will be resolved according to the Report Designer version of Telerik Reporting assemblies.
 1. Create your custom objects:
 
    ```C#
@@ -85,7 +85,6 @@ The steps below can be used as an example of creating an assembly with custom us
    	}
    }
    ```
-
    ```VB
    Imports System.Collections
    Imports System.Collections.Generic
@@ -135,7 +134,7 @@ The steps below can be used as an example of creating an assembly with custom us
 
 ### Extend the Report Designer Configuration
 
-Once the assembly with our custom logic is built, it should be placed in the folder or a subfolder of the Report Designer executable file. The default installation folder is `C:\Program Files (x86)\Telerik\Reporting RX XXXX\Report Designer` (`C:\Program Files\Telerik\Reporting RX XXXX\Report Designer` on 32-bit machines), where 'RX XXXX' stands for the release version and year, e.g R1 2021.
+Once the assembly with our custom logic is built, it should be placed in the folder or a subfolder of the Report Designer executable file. The default installation folder is `C:\Program Files (x86)\Telerik\Reporting RX XXXX\Report Designer` (`C:\Program Files\Telerik\Reporting RX XXXX\Report Designer` on 32-bit machines), where 'RX XXXX' stands for the release version and year, e.g., R1 2021.
 
 1. Locate the Telerik Report Designer executable and its configuration file on your machine (`Telerik.ReportDesigner.exe` and `Telerik.ReportDesigner.exe.config`)
 1. Place `MyAssembly.dll` into the folder or a subfolder where `Telerik.ReportDesigner.exe` resides.
@@ -153,9 +152,9 @@ Once the assembly with our custom logic is built, it should be placed in the fol
    </Telerik.Reporting>
    ```
 
-   > Additionally you can add `culture` and `publicKeyToken` attributes to identify the assembly in the `<add>` element if necessary.
+   > Additionally, you can add `culture` and `publicKeyToken` attributes to identify the assembly in the `<add>` element if necessary.
 
-   Here is a possible configuration extending the Report Designer with the functionality in `MyAssembly.dll` assembly:
+   Here is a possible configuration extending the Report Designer with the functionality in the `MyAssembly.dll` assembly:
 
    ```XML
    <configuration>
@@ -179,19 +178,19 @@ Once the assembly with our custom logic is built, it should be placed in the fol
 
    ![Use object from MyAssembly.dll in the Standalone Report Designer.](./resources/useObjectFromMyAssembly.png)
 
-### Use Assembly Located in non-Relative Path
+### Use Assembly Located in Non-Relative Path
 
 Telerik.Reporting `AssemblyReferences` section is trying to load the assemblies according to the .NET Framework rules. Thus, in order to use a signed assembly located in a directory different from the application directory or GAC, you have to add a `dependentAssembly` section to point to the .NET Framework where to look for your assembly.
 
-For more information check out the [CodeBase Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Microsoft article.
+For more information, check out the [CodeBase Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Microsoft article.
 
 ## Notes
 
 If the external assembly extending the Report Designer depends on other assemblies, all related assemblies have to be placed in the folder where the Report Designer is located.
 
-In order to deploy a report that uses external assembly check out the KB article [Deploying trdx (XML report definition) that uses external assembly](slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly).
+To deploy a report that uses an external assembly, check out the KB article [Deploying trdx (XML report definition) that uses external assembly](slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly).
 
-Use the .NET version of the Standalone Designer when your custom assemblies target .NET assemblies. Check the KB arricle [Loading .NET 7 assemblies in the Standalone Report Designer for .NET](slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net) if you experience issues with .NET 7/8.
+Use the .NET version of the Standalone Designer when your custom assemblies target .NET assemblies. Check the KB article [Loading .NET 7 assemblies in the Standalone Report Designer for .NET](slug:how-to-load-dot-net-7-assemblies-in-srd-dot-net) if you experience issues with .NET 7/8.
 
 ## See Also
 

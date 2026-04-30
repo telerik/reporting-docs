@@ -39,14 +39,14 @@ The project has a preconfigured implementation of the reports controller that us
 
 1. Make sure that the project has the following assembly references:
 
-	- Newtonsoft.Json.dll
-	- System.Web.Http.dll
-	- System.Web.Http.WebHost.dll
-	- System.Net.Http.dll
-	- System.Net.Http.Formatting.dll
+	- `Newtonsoft.Json.dll`
+	- `System.Web.Http.dll`
+	- `System.Web.Http.WebHost.dll`
+	- `System.Net.Http.dll`
+	- `System.Net.Http.Formatting.dll`
 
 1. [Implement the `ReportsController` in your application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application)
-1. (Only for Empty Web Application) Add a new item "Global Application Class".
+1. (Only for Empty Web Application) Add a new item **Global Application Class**.
 1. Invoke [RegisterRoutes](/api/telerik.reporting.services.webapi.reportscontrollerconfiguration#telerik_reporting_services_webapi_reportscontrollerconfiguration_registerroutes_system_web_http_httpconfiguration_) at the beginning of the `Global.Application_Start (Global.asax)` method:
 
 	{{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
@@ -66,7 +66,7 @@ The project has a preconfigured implementation of the reports controller that us
 1. Enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (_optional_)
 
 	1. Add the `Microsoft.AspNet.WebApi.Cors` NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.
-	1. Add the following code at the beginning of the `Global.Application_Start` (**Global.asax**) method:
+	1. Add the following code at the beginning of the `Global.Application_Start` (`Global.asax`) method:
 
 		{{source=CodeSnippets\MvcCS\Global.asax.cs region=EnableCors}}
 		{{source=CodeSnippets\MvcVB\Global.asax.vb region=EnableCors}}

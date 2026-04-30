@@ -10,10 +10,10 @@ position: 1
 previous_url: /telerik-reporting-rest-service-web-api-system-requirements,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements
 ---
 
-## Requirements for Using the Telerik Reporting REST WebAPI Service
+# Requirements for Telerik Reporting REST Service ASP.NET Web API
 
 1. Telerik Reports must be accessible by the application hosting the Reporting REST WebAPI service.
-1. Telerik Reporting ASP.NET Web API service implementation requires the following ASP.NET and third-party assemblies.
+1. Telerik Reporting ASP.NET Web API service implementation requires the following ASP.NET and third-party assemblies:
 
 	- [Microsoft ASP.NET](https://learn.microsoft.com/en-us/aspnet/overview) 4.0
 		- System.Web.dll (4.0.0.0)
@@ -23,11 +23,13 @@ previous_url: /telerik-reporting-rest-service-web-api-system-requirements,/embed
 		- System.Web.Http.dll (4.0.0.0)
 		- System.Web.Http.WebHost.dll (4.0.0.0) required for hosting in IIS
 		- System.Web.Http.SelfHost.dll (4.0.0.0) required for Self-Hosting
-	- [Newtonsoft.Json.dll](https://www.newtonsoft.com/json) 13.0.0.0 (latest available via NuGet is recommended) You can use a newer WebAPI version by updating the corresponding (Microsoft.AspNet.WebApi.WebHost and Microsoft.AspNet.WebApi.SelfHost) NuGet packages and applying the following bindingRedirects to your application configuration file. Just replace `5.1.0.0` in the sample code below with the exact version:
+	- [Newtonsoft.Json.dll](https://www.newtonsoft.com/json) 13.0.0.0 (the latest version available via NuGet is recommended).
+
+	You can use a newer Web API version by updating the corresponding `Microsoft.AspNet.WebApi.WebHost` and `Microsoft.AspNet.WebApi.SelfHost` NuGet packages and applying the following binding redirects to your application configuration file. Replace `5.1.0.0` in the sample code below with the exact version you are using:
 
 	{{source=CodeSnippets\MvcCS\AssemblyBinding.xml}}
 
-1. **_Optional assemblies_**:
+1. **Optional assemblies**:
 
 	These assemblies add up to the **Telerik Reporting Engine** functionality and should be used only if you need the specific feature. They are responsible for additional support formats or retrieving data from an OLAP cube. The assemblies must be deployed along with the application that hosts the **Telerik Reporting REST WebAPI Service**.
 	- XPS rendering extension requires **Telerik.Reporting.XpsRendering** assembly (Telerik.Reporting.XpsRendering.dll).

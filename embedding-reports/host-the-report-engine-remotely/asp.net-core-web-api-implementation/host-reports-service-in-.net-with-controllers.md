@@ -25,13 +25,13 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Using the REST Service Project Template
 
-In Visual Studio open the **Add New Project** dialog and select _Telerik Reporting REST Service_ project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
+In Visual Studio open the **Add New Project** dialog and select _Telerik Reporting REST Service_ project template. After clicking **Create** a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
 Set the Target Framework to .NET {{site.mindotnetversion}} or higher.
 
-Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
+Once you have configured the rest of the options to your liking, click **Finish** and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
 ## Manually configuring the Telerik.Reporting REST Service
 
@@ -53,7 +53,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
+> tip It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
 
 ### Add the Required Dependencies
 
@@ -118,7 +118,7 @@ The last supported type of **ConnectionStrings** configuration uses an array to 
 
 1. Create folder `Controllers`. Right-click on the project name and select **Add** > **New folder**. Name it `Controllers`.
 1. Implement a Reports controller. Right-click on the `Controllers` folder and add a new item: **Add** > **New item** > **API Controller - Empty** item. Name it `ReportsController`. This will be our Telerik Reporting REST service in the project.
-1. Inherit the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like:
+1. Inherit the [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like:
 
 	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs}}
 

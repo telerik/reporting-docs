@@ -11,7 +11,7 @@ position: 3
 previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-5
 ---
 
-# Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs
+# Hosting the Reporting REST Service in ASP.NET Core with Main Method
 
 This article guides you on how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project.
 
@@ -74,7 +74,7 @@ This guide applies the recommended NuGet package references approach to add the 
 
 The [`ConfigureServices`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.webhostbuilder.configureservices) method inside the `Startup.cs` file in the project should be modified in order to enable the Reports Service functionality.
 
-1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver):
+1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#telerik_reporting_services_reportserviceconfiguration_hostappid) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver):
 
 	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_AddTelerikReporting}}
 

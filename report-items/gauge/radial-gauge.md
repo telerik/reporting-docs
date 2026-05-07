@@ -31,18 +31,18 @@ The Gauge Report Item is a [data item](slug:telerikreporting/designing-reports/c
 
 ### Properties specific to the Appearance
 
-* [Value](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_value) - Represents the value of the gauge for the current instance.
-* [StartAngle](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_startangle) - Represents the number of degrees at which the full gauge arc will start.
-* [SweepAngle](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_sweepangle) - Represents the number of degrees, between `0` and `360`, that the scale will sweep in a circle.
-* [Needle](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_needle) - Represents the [RadialGaugeNeedle](/api/telerik.reporting.radialgaugeneedle) instance that defines the appearance of the gauge needle.
+* [`Value`](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_value) - Represents the value of the gauge for the current instance.
+* [`StartAngle`](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_startangle) - Represents the number of degrees at which the full gauge arc will start.
+* [`SweepAngle`](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_sweepangle) - Represents the number of degrees, between `0` and `360`, that the scale will sweep in a circle.
+* [`Needle`](/api/telerik.reporting.radialgauge#telerik_reporting_radialgauge_needle) - Represents the [`RadialGaugeNeedle`](/api/telerik.reporting.radialgaugeneedle) instance that defines the appearance of the gauge needle.
 
-	- [Length](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_length) - Represents the length of the needle as a percentage ratio to the total gauge radius. When the value is `100`, the tip of the needle touches the gauge range.
-	- [BackLength](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_backlength) - Represents the length of the needle's back (the part behind the pivot point) as a percentage ratio to the total gauge radius.
-	- [PointRadius](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_pointradius) - Represents the radius of the needle's pivot point as a percentage ratio to the total gauge radius.
-	- [Thickness](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_thickness) - Represents the thickness of the needle as a percentage ratio to the total gauge radius.
-	- [Style](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_style) - Represents a [Style](/api/telerik.reporting.drawing.style) object used to style the gauge needle.
+	- [`Length`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_length) - Represents the length of the needle as a percentage ratio to the total gauge radius. When the value is `100`, the tip of the needle touches the gauge range.
+	- [`BackLength`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_backlength) - Represents the length of the needle's back (the part behind the pivot point) as a percentage ratio to the total gauge radius.
+	- [`PointRadius`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_pointradius) - Represents the radius of the needle's pivot point as a percentage ratio to the total gauge radius.
+	- [`Thickness`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_thickness) - Represents the thickness of the needle as a percentage ratio to the total gauge radius.
+	- [`Style`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_style) - Represents a [`Style`](/api/telerik.reporting.drawing.style) object used to style the gauge needle.
 
-> note Starting with [Telerik Reporting R2 2023 SP1 (17.1.23.718)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-sp1-17-1-23-718), the needle settings are exposed in the `Needle` property through the dedicated [RadialGaugeNeedle](/api/telerik.reporting.radialgaugeneedle) class. The previous `NeedleLength`, `NeedlePointRadius`, `NeedleStyle`, and `NeedleThickness` properties on `RadialGauge` have been removed.
+> note Starting with [Telerik Reporting R2 2023 SP1 (17.1.23.718)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-sp1-17-1-23-718), the needle settings are exposed in the `Needle` property through the dedicated [`RadialGaugeNeedle`](/api/telerik.reporting.radialgaugeneedle) class. The previous `NeedleLength`, `NeedlePointRadius`, `NeedleStyle`, and `NeedleThickness` properties on `RadialGauge` have been removed.
 
 ### Properties specific to the Presentation
 

@@ -12,7 +12,7 @@ reportingArea: General
 
 # Gauge Report Item Overview
 
->note The Gauge Report Item was added with the R2 2023 Release.
+> note The Radial Gauge was introduced in [Telerik Reporting R2 2023 (17.1.23.606)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-17-1-23-606), and the Linear Gauge was introduced in [Telerik Reporting R2 2023 SP1 (17.1.23.718)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-sp1-17-1-23-718).
 
 The Gauge report item is used to display the key performance indicators (KPIs) that track the amount of progress made towards achieving the targets or goals.
 
@@ -48,18 +48,18 @@ Telerik Reporting provides the following Linear Gauge report item presets out of
 
 * Multi-Range Horizontal
 
-	![The default look of the Multi-Range Horizontal Linear Radial Gauge](../images/linear-horizontal-gauge-multi-range.png)
+	![The default look of the Multi-Range Horizontal Linear Gauge](../images/linear-horizontal-gauge-multi-range.png)
 
 * Multi-Range Vertical
 
-	![The default look of the Multi-Range Vertical Linear Radial Gauge](../images/linear-vertical-gauge-multi-range.png)
+	![The default look of the Multi-Range Vertical Linear Gauge](../images/linear-vertical-gauge-multi-range.png)
 
 ## Next Steps
 
 * [Getting Started with the Radial Gauge Report Item](slug:telerikreporting/designing-reports/report-structure/gauge/radial-gauge)
 * [Getting Started with the Linear Gauge Report Item](slug:telerikreporting/designing-reports/report-structure/gauge/linear-gauge)
-* [RadialGauge Class API Reference](/api/Telerik.Reporting.RadialGauge)
-* [LinearGauge Class API Reference](/api/Telerik.Reporting.LinearGauge)
+* [RadialGauge Class API Reference](/api/telerik.reporting.radialgauge)
+* [LinearGauge Class API Reference](/api/telerik.reporting.lineargauge)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 

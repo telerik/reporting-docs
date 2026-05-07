@@ -133,6 +133,8 @@ The following libraries should also be installed in the Docker image as required
 
 {{source=CodeSnippets\Blazor\Docs\Dockerfiles\LinuxDockerWithSkiaAddLibs.dockerfile}}
 
+> tip For the report to be rendered as close as possible in the container as it did on Windows, it is recommended that the fonts used within the report are installed on the image. See the [Installing Fonts In Docker Environment](slug:system-null-reference-exception-docker) article for more details.
+
 ### Windows Docker Container with System.Drawing
 
 Ensure the base image supports GDI+. For example, use the `windowsservercore` from the [Container Base Images](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images). The option is available from the `Add` > `Docker Support...` choice of the project's Context Menu:

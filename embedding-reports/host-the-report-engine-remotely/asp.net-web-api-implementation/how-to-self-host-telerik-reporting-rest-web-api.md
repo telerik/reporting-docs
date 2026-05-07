@@ -10,24 +10,26 @@ position: 3
 previous_url: /telerik-reporting-rest-host-http-service-using-self-hosting,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api
 ---
 
-# Self-Hosting the Telerik Reporting REST Service Web API in a Console Application
+# Self-Hosting the Telerik Reporting REST Web API
 
-ASP.NET Web API does not require IIS. You can self-host a Web API in your own host process. This tutorial shows how to host a Telerik Reporting REST Web API inside a console application. For more information on the hosting options, see: [Hosting ASP.NET Web API](https://learn.microsoft.com/en-us/aspnet/web-api/overview/hosting-aspnet-web-api/)
+ASP.NET Web API does not require IIS. You can self-host a Web API in your own host process. This tutorial shows how to host a Telerik Reporting REST Web API inside a console application. For more information on the hosting options, see [Hosting ASP.NET Web API](https://learn.microsoft.com/en-us/aspnet/web-api/overview/hosting-aspnet-web-api/).
 
-## To create a self-hosted HTTP service, follow the steps below:
+## Creating a Self-Hosted HTTP Service
 
-1. On an elevated console (“Run as administrator”), execute the following command, for example, to allow the running user to listen on port 8080:
+1. On an elevated console (**Run as administrator**), execute the following command, for example, to allow the running user to listen on port 8080:
 
 	`netsh http add urlacl url=http://+:8080/ user=DOMAIN\user`
 
-1. In Visual Studio, create a “Console Application” project
-1. Install the [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506) NuGet package
+1. In Visual Studio, create a **Console Application** project.
+1. Install the [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506) NuGet package.
 
-	>The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g., WebAPI 2)__ you have to redirect the `System.Web.Http` and `System.Net.Http.Formatting` to their newer version.
+	> note
 	>
-	>[Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) can add the required binding redirects automatically, if you update NuGet packages through it.
+	> The Reporting REST Web API Service is built against Web API 1. In case you have to use a **newer version of Microsoft.AspNet.WebApi.SelfHost (for example, Web API 2)**, you have to redirect the `System.Web.Http` and `System.Net.Http.Formatting` references to their newer version.
 	>
-	>Alternatively, you add the following `bindingRedirects` to your `web.config` and replace `5.1.0.0` in the sample code below with the exact version:
+	> [Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) can add the required binding redirects automatically if you update NuGet packages through it.
+	>
+	> Alternatively, you can add the following `bindingRedirects` to your `App.config` and replace `5.1.0.0` in the sample code below with the exact version:
 	>
 	>```XML
 	><?xml version="1.0" encoding="utf-8" ?>
@@ -56,16 +58,16 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 	+ System.Net.Http.dll
 	+ System.Net.Http.Formatting.dll
 
-1. Implement the reports controller as explained in the article [How to implement the ReportsController in an application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application)
+1. Implement the reports controller as explained in the article [How to implement the ReportsController in an application](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application).
 1. Implement the starting point of the application:
 
 	{{source=CodeSnippets\MvcCS\SelfHostedSnippets\Program.cs region=SelfHostedRestService}}
 	{{source=CodeSnippets\MvcVB\SelfHostedSnippets\Program.vb region=SelfHostedRestService}}
 
-1. Run the console app
+1. Run the console application.
 1. To verify whether the service works correctly, you can make a sample request for the available document formats using the following URL:
 
-	`http://localhost: [portnumber]/api/reports/formats`
+	`http://localhost:[portnumber]/api/reports/formats`
 
 	If the request succeeds, you should receive the document formats encoded in JSON. For more information, see: [Get Available Document Formats](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats).
 

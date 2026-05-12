@@ -54,6 +54,8 @@ To create a new item:
 1. Review the preview rendered with actual or sample data.
 1. Click **Accept** to add the item to the report, or refine the prompt to iterate.
 
+![Create a Graph in the Report through the AI Report Generator window through the AI Assist button.](images/ai-generated-barchart-in-wrd.png)
+
 ### Edit Flow
 
 The Edit flow runs when a supported Graph or Gauge item is selected. The agent receives both the JSON Schema and the current item state as JSON, and produces a new full item definition that reflects your prompt.

@@ -33,10 +33,10 @@ For every supported item, AI Assist follows the same pattern. It retrieves a JSO
 To start an AI Assist session, follow these steps:
 
 1. Open the report in the **Web Report Designer**.
-1. `TODO(author): describe the exact menu path or toolbar button that launches AI Assist (for example: click the AI Assist button on the main toolbar).`
-1. The **AI Assist** panel opens with a prompt input, a preview area for the proposed item, and an **Accept** action.
+1. Click on the AI Assist button at the bottom right corner of the Report area.
+1. The **AI Report Generator** window pops up, replacing the button.
 
-![TODO(author): add a descriptive sentence-style alt text for the screenshot of the AI Assist panel as it appears when first opened.](images/WRDAIAssist-Panel.png)
+![Open the AI Report Generator window through the AI Assist button.](images/web-designer-open-ai-assist.gif)
 
 ## Create and Edit Flows
 

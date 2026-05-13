@@ -127,7 +127,7 @@ You can group the data and use aggregates after the data is retrieved using the 
 
 By clicking the OK button of the [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview), the Select Statement will be replaced with the currently generated SQL query. The OK button is only enabled if the query is valid.
 
-The Query Designer keeps the current setup state. However, if you modify the SQL query outside of it and then use the Query Designer, it will override the SQL query with the manually made modifications.
+The Query Designer keeps the current setup state. However, if you modify the SQL query outside of it and then use the Query Designer, the Query Designer will overwrite the SQL query and discard the manual changes made outside of it.
 
 ## See Also
 

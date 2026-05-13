@@ -55,6 +55,7 @@ page_title: Full Descriptive Title for Browser Tab and SEO
 description: "One-sentence meta description around 150-160 characters that states what the reader will learn."
 slug: unique-meaningful-kebab-case-slug
 tags: lowercase,comma,separated,keywords
+tag: new
 published: True
 position: 1
 previous_url: /old-url-one,/old-url-two
@@ -67,11 +68,12 @@ Field rules:
 - `title` — short label used in navigation.
 - `page_title` — full descriptive title; must match the article's `#` heading verbatim.
 - `description` — quoted string, ~150-160 characters, starts with an action verb like "Learn", "Explore", "Configure".
-- `slug` — **required**; kebab-case; unique and meaningful for the article (no leading slash, no `.md`).
-- `tags` — comma-separated, lowercase, singular/plural as natural; 3-10 keywords.
+- `slug` — **required**; kebab-case; unique and meaningful for the article (no leading slash, no `.md`). The slug does **not** need to begin with `telerikreporting/...`; pick whatever short, descriptive kebab-case identifier best names the article. Match the slug style of neighboring articles in the target folder when possible.
+- `tags` — comma-separated, lowercase, singular/plural as natural; 3-10 keywords. Do **not** include `new` here — use the separate `tag` field below for that purpose.
+- `tag` — single-value meta field. **For brand-new articles, set `tag: new`** so the audit and release tooling can find them. Omit this field on every other article.
 - `published` — `True` unless the caller explicitly requests a draft.
 - `position` — integer; `0` for `overview.md`, otherwise sequential within the folder.
-- `previous_url` — optional; comma-separated legacy URLs to redirect.
+- `previous_url` — optional; comma-separated legacy URLs to redirect. **Do NOT add `previous_url` to a brand-new article** — the field is reserved for articles that are being moved or replacing an existing public URL.
 - `reportingArea` — optional; usually `General`. Omit if unknown.
 
 Forbidden keys in main articles: `res_type`, `type`, `ticketid`, `meta_title`.

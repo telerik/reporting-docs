@@ -129,6 +129,19 @@ Before finalizing your report:
    - Update your findings and re-verify until no new issues emerge
    - Document any ambiguities or edge cases you encountered
 
+### Phase 6: Deliver the Report
+
+After self-verification, save the final markdown audit report to a file in the current session's `files/` folder (e.g., `release-audit-{year}-{quarter}.md`) and open it in **Notepad++** for the user to review. Use the following PowerShell pattern, which falls back to `notepad.exe` if Notepad++ is not installed:
+
+```powershell
+$report = "<absolute path to saved report .md>"
+$npp = @("C:\Program Files\Notepad++\notepad++.exe","C:\Program Files (x86)\Notepad++\notepad++.exe") |
+    Where-Object { Test-Path $_ } | Select-Object -First 1
+if ($npp) { & $npp $report } else { Start-Process notepad $report }
+```
+
+Mention the file path in the chat response so the user can re-open it later.
+
 ## Output Format Requirements
 
 - **Primary output**: Structured markdown report as shown above

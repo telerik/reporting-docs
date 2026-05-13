@@ -12,7 +12,7 @@ reportingArea: General
 
 # Standalone Designer's Query Designer
 
-Standalone Report Designer provides both a graphical and a text-based query designer to help you create queries to retrieve data from a relational database for a SqlDataSource component. The Query Designer supports any ADO.NET/ODB/OLEDB data provider with a working implementation of `GetSchema` with COLUMN collection support. Automatic relations functionally require relational databases supported by [Telerik Data Access](https://www.telerik.com/data-access-sunsetting):
+Standalone Report Designer provides both a graphical and a text-based query designer to help you create queries to retrieve data from a relational database for a SqlDataSource component. The Query Designer supports any ADO.NET/ODBC/OLEDB data provider with a working implementation of `GetSchema` with COLUMN collection support. Automatic relations functionally require relational databases supported by [Telerik Data Access](https://www.telerik.com/data-access-sunsetting):
 
 * Microsoft SQL Server
 * Microsoft SQL Server Compact Edition
@@ -36,13 +36,13 @@ Use the graphical query designer to explore the database tables and views, inter
 
 ## Schema Restrictions
 
-As of 2025 Q1, the Query Builder of the Standalone Report Designer accepts a new property called [SchemaRestrictions](/api/telerik.reporting.sqldatasource#Telerik_Reporting_SqlDataSource_SchemaRestrictions). The value of this property is a comma-separated list of schema restrictions that will be used by the chosen data provider to query a subset of data from the database schema. This allows report creators to load only the necessary schema information and benefit from faster load times.
+As of [Telerik Reporting 2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211), the Query Builder of the Standalone Report Designer accepts a new property called [SchemaRestrictions](/api/telerik.reporting.sqldatasource#telerik_reporting_sqldatasource_schemarestrictions). The value of this property is a comma-separated list of schema restrictions that will be used by the chosen data provider to query a subset of data from the database schema. This allows report creators to load only the necessary schema information and benefit from faster load times.
 
 Behind the scenes, the Reporting engine calls the [ADO.NET GetSchema method](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/getschema-and-schema-collections) on the [columns collection](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/schema-restrictions#columns) and passes the schema restrictions specified by the user. The exact number and order of schema restriction arguments can vary depending on the selected data provider. For example, provided we have a connection to the Microsoft SQL Server AdventureWorks sample database, we can pass the following string to the schema restrictions field to instruct the Query Builder to load the schema of the ProductCategory table only.
 
-````
+```SQL
 null,Production,ProductCategory
-````
+```
 
 > note Schema restrictions are case-sensitive, and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .NET {{site.mindotnetversion}}+.
  

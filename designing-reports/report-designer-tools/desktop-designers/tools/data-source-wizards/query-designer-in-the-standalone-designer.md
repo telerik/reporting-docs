@@ -26,7 +26,7 @@ Standalone Report Designer provides both a graphical and a text-based query desi
 * SQLite
 * PostgreSQL
 
-> Please note that [Telerik Data Access is a discontinued product](https://www.telerik.com/data-access-sunsetting) and its supported databases list will not be appended. The versions of the supported database drivers will not be updated as well.
+> Please note that [Telerik Data Access is a discontinued product](https://www.telerik.com/data-access-sunsetting), and its supported databases list will not be updated. The versions of the supported database drivers will not be updated as well.
 
 The following figure shows the graphical query designer.
 

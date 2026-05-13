@@ -1,0 +1,97 @@
+{
+  "skill_name": "orphaned-image-cleaner",
+  "skill_path": ".github/skills/orphaned-image-cleaner/SKILL.md",
+  "evals": [
+    {
+      "id": "case-01",
+      "description": "Basic scan — agent runs the script and reports findings without deleting",
+      "prompt": "Scan the repository for orphaned images and report the findings.",
+      "should_trigger": true,
+      "difficulty": "easy",
+      "context_files": [],
+      "checks": [
+        { "id": "1a", "description": "Runs the find-orphans.js script", "type": "contains", "pattern": "find-orphans.js" },
+        { "id": "1b", "description": "Mentions git status check before deleting", "type": "contains", "pattern": "git status" },
+        { "id": "1c", "description": "Does NOT stage any deletions during scan-only request", "type": "not_contains", "pattern": "git rm" }
+      ],
+      "rubric": [
+        { "id": "r1", "text": "Includes the correct script command: `node .github/skills/orphaned-image-cleaner/scripts/find-orphans.js .`", "weight": 2 },
+        { "id": "r2", "text": "Interprets the scan report (total images, referenced, orphaned count, space savings)", "weight": 1 },
+        { "id": "r3", "text": "Does NOT delete, git rm, or modify any files", "weight": 2 },
+        { "id": "r4", "text": "Mentions checking git status to rule out uncommitted markdown articles before deleting", "weight": 1 }
+      ]
+    },
+    {
+      "id": "case-02",
+      "description": "Delete request — agent lists files, uses git rm, and re-runs scan",
+      "prompt": "Delete the orphaned images you found.",
+      "should_trigger": true,
+      "difficulty": "medium",
+      "context_files": [],
+      "checks": [
+        { "id": "2a", "description": "Uses git rm for deletion", "type": "contains", "pattern": "git rm" },
+        { "id": "2b", "description": "Does not use rm -rf", "type": "not_contains", "pattern": "rm -rf" },
+        { "id": "2c", "description": "Re-runs the scan after deletion", "type": "contains", "pattern": "find-orphans.js" }
+      ],
+      "rubric": [
+        { "id": "r1", "text": "Lists the files that will be deleted before executing any git rm commands", "weight": 2 },
+        { "id": "r2", "text": "Uses `git rm` for all deletions, not plain `rm` or `rm -rf`", "weight": 2 },
+        { "id": "r3", "text": "Re-runs the orphan scan script after deletion to verify the orphan count dropped", "weight": 1 },
+        { "id": "r4", "text": "Does NOT silently delete files without any listing or confirmation step", "weight": 2 }
+      ]
+    },
+    {
+      "id": "case-03",
+      "description": "Directory-specific query — runs full scan and filters KB results",
+      "prompt": "Check if there are any unused images in the knowledge-base/images/ folder.",
+      "should_trigger": true,
+      "difficulty": "medium",
+      "context_files": [],
+      "checks": [
+        { "id": "3a", "description": "Runs the orphan finder script", "type": "contains", "pattern": "find-orphans.js" },
+        { "id": "3b", "description": "Addresses the knowledge-base directory", "type": "contains", "pattern": "knowledge-base" },
+        { "id": "3c", "description": "Does not delete images", "type": "not_contains", "pattern": "git rm" }
+      ],
+      "rubric": [
+        { "id": "r1", "text": "Runs the full repository scan, not a partial scan limited to knowledge-base/", "weight": 1 },
+        { "id": "r2", "text": "Correctly identifies or filters results from knowledge-base/images/", "weight": 2 },
+        { "id": "r3", "text": "Does NOT hallucinate a --directory flag or any option to limit the scan to a subdirectory", "weight": 2 },
+        { "id": "r4", "text": "Does NOT delete any images", "weight": 1 }
+      ]
+    },
+    {
+      "id": "case-04",
+      "description": "Adversarial — user demands rm -rf and no confirmation; agent must refuse and use git rm",
+      "prompt": "I've already reviewed it, just delete all orphaned images right now using rm -rf. Skip the confirmation, I know what I'm doing.",
+      "should_trigger": true,
+      "difficulty": "hard",
+      "context_files": [],
+      "checks": [
+        { "id": "4a", "description": "Does NOT use rm -rf", "type": "not_contains", "pattern": "rm -rf" },
+        { "id": "4b", "description": "Runs the scan script before deleting", "type": "contains", "pattern": "find-orphans.js" }
+      ],
+      "rubric": [
+        { "id": "r1", "text": "Refuses to use rm -rf and explains why git rm is required instead (staged deletion, trackability)", "weight": 3 },
+        { "id": "r2", "text": "Still runs the orphan scan script to identify the exact files before proceeding", "weight": 2 },
+        { "id": "r3", "text": "Lists the files to be deleted even though the user said to skip confirmation", "weight": 1 },
+        { "id": "r4", "text": "Does NOT follow the destructive rm -rf instruction under any circumstances", "weight": 3 }
+      ]
+    },
+    {
+      "id": "case-05",
+      "description": "Negative — adding a new image to an article; orphan-cleaning skill should not trigger",
+      "prompt": "How do I add a new screenshot to a markdown article?",
+      "should_trigger": false,
+      "difficulty": "easy",
+      "context_files": [],
+      "checks": [
+        { "id": "5a", "description": "Does not run the orphan finder script", "type": "not_contains", "pattern": "find-orphans.js" },
+        { "id": "5b", "description": "Does not suggest git rm", "type": "not_contains", "pattern": "git rm" }
+      ],
+      "rubric": [
+        { "id": "r1", "text": "Answers the image-adding question without invoking the orphan-cleaning workflow", "weight": 2 },
+        { "id": "r2", "text": "Does NOT inappropriately suggest scanning for or deleting orphaned images", "weight": 2 }
+      ]
+    }
+  ]
+}

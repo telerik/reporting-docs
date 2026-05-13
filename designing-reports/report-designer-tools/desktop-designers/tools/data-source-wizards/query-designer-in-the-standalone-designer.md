@@ -18,7 +18,7 @@ Standalone Report Designer provides both a graphical and a text-based query desi
 * Microsoft SQL Server Compact Edition
 * Microsoft SQL Azure
 * Oracle
-* MySql
+* MySQL
 * Advantage Database Server
 * SQL Anywhere
 * Firebird

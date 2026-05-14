@@ -12,9 +12,9 @@ reportingArea: General
 
 # Using Parameters with the EntityCoreDataSource Component
 
-This article explains how to pass values from [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to a method or queryable property of a `DbContext` through the `EntityCoreDataSource` component. Parameter binding lets the report filter data on the database server rather than fetching the entire set into memory.
+This article explains how to pass values from [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to a method or queryable property of a `DbContext` through the `EntityCoreDataSource` component. Parameter binding lets the report filter data on the database server rather than fetching the entire set into memory.
 
-> The `EntityCoreDataSource` wizard detects parameters declared on the data-retrieval method and prompts you to provide values for them on the **Configure Data Source Parameters** page. The wizard is shared with the legacy [EntityDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard).
+> tip The `EntityCoreDataSource` wizard detects parameters declared on the data-retrieval method and prompts you to provide values for them on the **Configure Data Source Parameters** page.
 
 ## Defining a Parameterized ContextMember
 
@@ -32,7 +32,7 @@ public partial class AdventureWorksDbContext : DbContext
 
 ## Mapping Report Parameters to the Data Source
 
-Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [report parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) by setting the value to an expression such as `=Parameters.CategoryId.Value`:
+Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) by setting the value to an expression such as `=Parameters.CategoryId.Value`:
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
@@ -41,7 +41,7 @@ var dataSource = new Telerik.Reporting.EntityCoreDataSource
     ContextMember = "GetProductsByCategory"
 };
 
-dataSource.Parameters.Add("categoryId", typeof(int), "=Parameters.CategoryId.Value");
+dataSource.Parameters.Add("categoryId", typeof(int), "= Parameters.CategoryId.Value");
 ```
 
 You can also pass literal values when the data source must execute with a fixed argument:

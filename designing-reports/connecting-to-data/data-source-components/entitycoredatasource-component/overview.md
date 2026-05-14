@@ -12,9 +12,9 @@ reportingArea: General
 
 # EntityCoreDataSource Component Overview
 
-The `EntityCoreDataSource` component connects report data items to an [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) `DbContext`. It exposes business objects defined in EF Core models to report authors directly, without intermediate object data sources or hand-written code in code-behind. The toolbox label for the component is **Entity Framework Core Data Source**, and it is available in the [Standalone Report Designer (.NET)](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and the [Web Report Designer](slug:wrd-overview).
+The `EntityCoreDataSource` component was introduced with [2026 Q2 (20.1.26.520)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-520)). It connects report data items to an [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) `DbContext`. It exposes business objects defined in EF Core models to report authors directly, without intermediate object data sources or hand-written code in code-behind. The toolbox label for the component is **Entity Framework Core Data Source**, and it is available in the [Standalone Report Designer (.NET)](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview).
 
-The `EntityCoreDataSource` component derives from `EntityDataSourceBase`, which it shares with the legacy [EntityDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview). Both components expose the same `Context`, `ContextMember`, `ConnectionString`, and `Parameters` surface; the EF Core variant targets `Microsoft.EntityFrameworkCore.DbContext` derivatives, whereas the legacy variant targets the .NET Framework `ObjectContext` and EF6 `DbContext`.
+The `EntityCoreDataSource` component derives from `EntityDataSourceBase`, which it shares with its .NET Framework 4.6.2 equivallent, the [EntityDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview). Both components expose the same `Context`, `ContextMember`, `ConnectionString`, and `Parameters` surface; the EF Core variant targets `Microsoft.EntityFrameworkCore.DbContext` derivatives, whereas the old variant targets the .NET Framework `ObjectContext` and EF6 `DbContext`.
 
 ## Key Capabilities
 
@@ -53,33 +53,64 @@ To consume a `DbContext` with the `EntityCoreDataSource` component, the type mus
 
 - The `DbContext` is defined in a class library that is referenced by the report project so that the report designer can load the type.
 - The `DbContext` exposes the entity sets you want to report on as `DbSet<T>` properties, or projects them through `IQueryable<T>` properties.
-- The `DbContext` exposes either a parameterless constructor or a constructor that accepts a connection string. A constructor that accepts a connection string is required when the design-time and runtime connection strings differ, and is used by the component when you assign a value to `ConnectionString`.
+- The `DbContext` exposes a **parameterless constructor** and either a **constructor that accepts a connection string** (typical for the Code First approach) or a **constructor that accepts a `DbContextOptions<TContext>`** (typical for the Database First approach). A constructor that accepts a `string` is required when the design-time and runtime connection strings differ, because the component invokes it after assigning the value of `ConnectionString`.
 
-The following snippet shows the minimal `DbContext` shape that the component can consume in a Code First scenario:
+The following snippets show the minimal `DbContext` shape that the component can consume in:
 
-```CSharp
-public class AdventureWorksDbContext : DbContext
-{
-    public AdventureWorksDbContext()
-    {
-    }
+* Code First scenario:
 
-    public AdventureWorksDbContext(string connectionString)
-        : base(BuildOptions(connectionString))
-    {
-    }
+	```CSharp
+	public class AdventureWorksDbContext : DbContext
+	{
+		public AdventureWorksDbContext()
+		{
+		}
 
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Order> Orders { get; set; }
+		public AdventureWorksDbContext(string connectionString)
+			: base(BuildOptions(connectionString))
+		{
+		}
+		
+		public DbSet<Customer> Customers => Set<Customer>();
+		public DbSet<Order> Orders => Set<Order>();
 
-    private static DbContextOptions<AdventureWorksDbContext> BuildOptions(string connectionString)
-    {
-        return new DbContextOptionsBuilder<AdventureWorksDbContext>()
-            .UseSqlServer(connectionString)
-            .Options;
-    }
-}
-```
+		private static DbContextOptions<AdventureWorksDbContext> BuildOptions(string connectionString)
+		{
+			return new DbContextOptionsBuilder<AdventureWorksDbContext>()
+				.UseSqlServer(connectionString)
+				.Options;
+		}
+	}
+	```
+
+* Database First scenario:
+
+	```CSharp
+	public class AdventureWorksDbContext : DbContext
+	{
+		public AdventureWorksDbContext()
+		{
+		}
+
+		public AdventureWorksDbContext(DbContextOptions<AdventureWorksDbContext> options)
+			: base(options)
+		{
+		}
+
+		public DbSet<Customer> Customers => Set<Customer>();
+		public DbSet<Order> Orders => Set<Order>();
+
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			if (!optionsBuilder.IsConfigured)
+			{
+				// Replace the literal below with your own connection string or
+				// resolve it from configuration before calling UseSqlServer.
+				optionsBuilder.UseSqlServer("<your connection string>");
+			}
+		}
+	}
+	```
 
 ## Supported Developer Platforms
 
@@ -98,4 +129,4 @@ public class AdventureWorksDbContext : DbContext
 - [EntityDataSource Component Overview](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview)
 - [SharedDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component)
 - [Entity Framework Core Documentation](https://learn.microsoft.com/en-us/ef/core/)
-- [API Reference: EntityCoreDataSource](/api/Telerik.Reporting.EntityCoreDataSource)
+- [API Reference: EntityCoreDataSource](/api/telerik.reporting.entitycoredatasource)

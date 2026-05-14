@@ -20,7 +20,7 @@ EF Core navigation properties are loaded lazily through a proxy that captures a 
 
 `System.ObjectDisposedException: Cannot access a disposed context instance.`
 
-To avoid this, the `EntityCoreDataSource` keeps the context alive until the report engine completes processing the data items that depend on it.
+To avoid this, the `EntityCoreDataSource` keeps the context alive until the Reporting Engine completes processing the data items that depend on it.
 
 ## Letting the Component Own the Context (Recommended)
 

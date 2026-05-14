@@ -11,49 +11,375 @@ position: 2
 
 # Native Blazor Report Viewer Events Overview
 
-The Native Blazor Report Viewer exposes **events** that will be emitted at various points in the report rendering process such as when the rendering begins, ends, etc.
+The Native Blazor Report Viewer exposes **events** that are emitted at various points in the report lifecycle such as when the rendering begins, ends, when the user prints, exports, or interacts with report items.
 
-## OnRenderingBegin
+## Rendering Events
 
-Occurs before rendering the report. _The event is triggered only on preview. The export operation has a dedicated event._
+### OnRenderingBegin
+
+Occurs before rendering the report. The event is triggered only on preview. The export operation has a dedicated event.
 
 This event has one argument of type `RenderingBeginEventArgs` which represents the device information settings that will be used for the rendering of the report in the `HTML5`/`HTML5Interactive` format. Sample usage:
 
 {{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnRenderingBegin.razor region=NativeViewerOnRenderingBegin}}
 
-## OnRenderingEnd
+### OnRenderingEnd
 
-Occurs after the rendering of the report finishes. _The event is triggered only on preview. The export operation has a dedicated event._
+Occurs after the rendering of the report finishes. The event is triggered only on preview. The export operation has a dedicated event.
+
 This event has one argument of type `RenderingEndEventArgs` which represents the returned [DocumentInfo entity](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo) at the end of the report rendering.
 
 Sample usage:
 
 {{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnRenderingEnd.razor region=NativeViewerOnRenderingEnd}}
 
-## OnExportStart
+### OnPageReady
 
-Occurs before exporting the report. This event has one argument of type `ExportStartEventArgs` which is an object with the following properties:
+Occurs when a report page has been rendered and is ready for display. This event has one argument of type `PageReadyEventArgs` which is an object with the following properties:
 
-- DeviceInfo - The device info that will be used for the export operation.
-- Format - The document format of the exported report.
-- IsCancelled - Prevents the default render and export operation. Default value: `false`.
-
-Sample usage:
-
-{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnExportStart.razor region=NativeViewerOnExportStart}}
-
-## OnExportEnd
-
-Occurs after exporting the report. This event has one argument of type `ExportEndEventArgs` which is an object with the following properties:
-
-- Url - The url of the exported report as a resource.
-- Format - The document format of the exported report.
-- Handled - Prevents the default export operation. Default value: `false`.
-- WindowOpenTarget - Changes the `target` attribute specifying where to open the browser window. Default value is `self`.
+- `PageNumber` - The number of the page in order of appearance in the report.
+- `PageReady` - A value indicating whether the page has been rendered and is ready for display.
+- `PageStyles` - The CSS styles applied to the page.
+- `PageContent` - The HTML content of the page.
+- `PageActions` - A list of `PageAction` objects associated with the page, such as drilldowns or toggles. Each `PageAction` contains `Id`, `ReportItemName`, `Type`, and `Value` properties.
 
 Sample usage:
 
-{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerOnExportEnd.razor region=NativeViewerOnExportEnd}}
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnPageReady="@PageReady">
+</ReportViewer>
+
+@code {
+    async Task PageReady(PageReadyEventArgs args)
+    {
+        // Inspect the rendered page number and its actions.
+        var pageNumber = args.PageNumber;
+        var actions = args.PageActions;
+    }
+}
+```
+
+## Print Events
+
+### OnPrintStarted
+
+Occurs before the print operation begins. Setting `Handled` to `true` prevents the default print behavior. This event has one argument of type `PrintStartedEventArgs` which is an object with the following properties:
+
+- `DeviceInfo` - The device information settings used during the print operation.
+- `Handled` - Prevents the default print behavior. Default value: `false`.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnPrintStarted="@PrintStarted">
+</ReportViewer>
+
+@code {
+    async Task PrintStarted(PrintStartedEventArgs args)
+    {
+        // Prevent the default print behavior.
+        // args.Handled = true;
+    }
+}
+```
+
+### OnPrintDocumentReady
+
+Occurs when the print document has been prepared and its URL is ready. Setting `Handled` to `true` prevents the default print behavior. This event has one argument of type `PrintDocumentReadyEventArgs` which is an object with the following properties:
+
+- `Url` - The URL of the document prepared for printing.
+- `Handled` - Prevents the default print behavior. Default value: `false`.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnPrintDocumentReady="@PrintDocumentReady">
+</ReportViewer>
+
+@code {
+    async Task PrintDocumentReady(PrintDocumentReadyEventArgs args)
+    {
+        // Prevent the default print behavior.
+        // args.Handled = true;
+    }
+}
+```
+
+## Export Events
+
+### OnExportStarted
+
+Occurs when the export process is starting. Setting `Handled` to `true` prevents the default export behavior. This event has one argument of type `ExportStartedEventArgs` which is an object with the following properties:
+
+- `DeviceInfo` - The device information settings used during the export operation.
+- `Format` - The document format of the exported report.
+- `Handled` - Prevents the default export behavior. Default value: `false`.
+
+Sample usage:
+
+```razor
+@using System.Text.Json
+
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnExportStarted="@ExportStarted">
+</ReportViewer>
+
+@code {
+    async Task ExportStarted(ExportStartedEventArgs args)
+    {
+        // Set a format-specific device info property for CSV exports.
+        // if (args.Format == "CSV")
+        // {
+        //     args.DeviceInfo.AdditionalProperties["NoHeader"] = JsonDocument.Parse("true").RootElement;
+        // }
+
+        // Prevent the default export behavior.
+        // args.Handled = true;
+    }
+}
+```
+
+### OnExportDocumentReady
+
+Occurs when the exported document is ready and its URL is available. Setting `Handled` to `true` prevents the default behavior of opening the document URL. This event has one argument of type `ExportDocumentReadyEventArgs` which is an object with the following properties:
+
+- `Url` - The URL of the exported report as a resource.
+- `Format` - The document format of the exported report.
+- `Handled` - Prevents the default behavior of opening the document URL. Default value: `false`.
+- `WindowOpenTarget` - Changes the `target` attribute specifying where to open the browser window. Default value: `_self`.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnExportDocumentReady="@ExportDocumentReady">
+</ReportViewer>
+
+@code {
+    async Task ExportDocumentReady(ExportDocumentReadyEventArgs args)
+    {
+        // Open the exported document in a new browser tab.
+        // args.WindowOpenTarget = "_blank";
+
+        // Prevent the default behavior of opening the document URL.
+        // args.Handled = true;
+    }
+}
+```
+
+## Send Email Events
+
+### OnSendEmailStarted
+
+Occurs before the send-email flow begins. Setting `Handled` to `true` prevents the default send-email behavior. This event has one argument of type `SendEmailStartedEventArgs` which is an object with the following properties:
+
+- `DeviceInfo` - The device information settings used during the send-email operation.
+- `Format` - The document format used for the send-email operation.
+- `Handled` - Prevents the default send-email behavior. Default value: `false`.
+
+Sample usage:
+
+```razor
+@using System.Text.Json
+
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnSendEmailStarted="@SendEmailStarted">
+</ReportViewer>
+
+@code {
+    async Task SendEmailStarted(SendEmailStartedEventArgs args)
+    {
+        // Set a format-specific device info property for CSV exports.
+        // if (args.Format == "CSV")
+        // {
+        //     args.DeviceInfo.AdditionalProperties["NoHeader"] = JsonDocument.Parse("true").RootElement;
+        // }
+
+        // Prevent the default send-email behavior.
+        // args.Handled = true;
+    }
+}
+```
+
+### OnSendEmailDocumentReady
+
+Occurs when the email document has been prepared and is ready to be sent. Setting `Handled` to `true` prevents the default send behavior. The mutable `From`, `To`, `Cc`, `Subject`, and `Body` fields allow you to modify the email details before sending. This event has one argument of type `SendEmailDocumentReadyEventArgs` which is an object with the following properties:
+
+- `DeviceInfo` - The device information settings that were used during the send-email export. This property is read-only after construction.
+- `Url` - The URL of the document prepared for sending. This property is read-only after construction.
+- `Format` - The document format used for the send-email operation. This property is read-only after construction.
+- `Handled` - Prevents the default send behavior. Default value: `false`.
+- `From` - The sender email address.
+- `To` - The recipient email address.
+- `Cc` - The carbon-copy recipients.
+- `Subject` - The subject of the email.
+- `Body` - The body of the email.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnSendEmailDocumentReady="@SendEmailDocumentReady">
+</ReportViewer>
+
+@code {
+    async Task SendEmailDocumentReady(SendEmailDocumentReadyEventArgs args)
+    {
+        // Override the email subject before sending.
+        // args.Subject = "Overridden subject";
+
+        // Prevent the default send behavior and handle the send manually.
+        // args.Handled = true;
+    }
+}
+```
+
+## Interactive Action Events
+
+### OnInteractiveActionExecuting
+
+Occurs before an interactive action executes. Setting `Cancel` to `true` prevents the default execution of the action. This event has one argument of type `PageActionEventArgs` which is an object with the following properties:
+
+- `Action` - A `PageAction` object representing the action about to execute. The `PageAction` contains `Id`, `ReportItemName`, `Type` (for example, `navigateToReport`, `navigateToUrl`, `sorting`, `toggleVisibility`), and `Value` properties.
+- `Cancel` - Prevents the default execution of the action. Default value: `false`.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnInteractiveActionExecuting="@InteractiveActionExecuting">
+</ReportViewer>
+
+@code {
+    async Task InteractiveActionExecuting(PageActionEventArgs args)
+    {
+        // Cancel the default interactive action execution.
+        // args.Cancel = true;
+    }
+}
+```
+
+### OnInteractiveActionEnter
+
+Occurs when the mouse pointer enters a report item that defines an interactive action. This event has one argument of type `PageActionEventArgs` which is an object with the following properties:
+
+- `Action` - A `PageAction` object representing the action associated with the report item.
+- `Cancel` - Not used for this event.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnInteractiveActionEnter="@InteractiveActionEnter">
+</ReportViewer>
+
+@code {
+    async Task InteractiveActionEnter(PageActionEventArgs args)
+    {
+        // React to the mouse entering an item that defines an interactive action.
+    }
+}
+```
+
+### OnInteractiveActionLeave
+
+Occurs when the mouse pointer leaves a report item that defines an interactive action. This event has one argument of type `PageActionEventArgs` which is an object with the following properties:
+
+- `Action` - A `PageAction` object representing the action associated with the report item.
+- `Cancel` - Not used for this event.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnInteractiveActionLeave="@InteractiveActionLeave">
+</ReportViewer>
+
+@code {
+    async Task InteractiveActionLeave(PageActionEventArgs args)
+    {
+        // React to the mouse leaving an item that defines an interactive action.
+    }
+}
+```
+
+## Tooltip Events
+
+### OnTooltipOpening
+
+Occurs before a tooltip is displayed for a report item. This event has one argument of type `TooltipEventArgs` which is an object with the following properties:
+
+- `Text` - The text content of the tooltip.
+- `Title` - The title of the tooltip.
+
+Sample usage:
+
+```razor
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnTooltipOpening="@TooltipOpening">
+</ReportViewer>
+
+@code {
+    async Task TooltipOpening(TooltipEventArgs args)
+    {
+        // Override the tooltip title or text before it is shown.
+        // args.Title = "Custom title";
+    }
+}
+```
+
+## Error Events
+
+### OnError
+
+Occurs when an error is raised by the report viewer. This event has one argument of type `ErrorEventArgs` which is an object with the following properties:
+
+- `Message` - The error message describing the condition that caused the event.
+
+Sample usage:
+
+```razor
+@inject IJSRuntime JsRuntime
+
+<ReportViewer
+    ServiceUrl="/api/reports/"
+    @bind-ReportSource="@ReportSource"
+    OnError="@Error">
+</ReportViewer>
+
+@code {
+    async Task Error(Telerik.ReportViewer.BlazorNative.ErrorEventArgs args)
+    {
+        // React to a viewer error.
+        // await JsRuntime.InvokeVoidAsync("alert", $"OnError: {args.Message}");
+    }
+}
+```
 
 ## See Also
 

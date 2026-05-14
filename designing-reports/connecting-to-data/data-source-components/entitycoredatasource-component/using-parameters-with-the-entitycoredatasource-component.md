@@ -12,22 +12,20 @@ reportingArea: General
 
 # Using Parameters with the EntityCoreDataSource Component
 
-This article explains how to pass values from [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to a method on a `DbContext` through the `EntityCoreDataSource` component. Parameter binding lets the report filter data on the database server rather than fetching the entire set into memory.
+This article explains how to pass values from [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to a method or queryable property of a `DbContext` through the `EntityCoreDataSource` component. Parameter binding lets the report filter data on the database server rather than fetching the entire set into memory.
 
 > tip The `EntityCoreDataSource` wizard detects parameters declared on the data-retrieval method and prompts you to provide values for them on the **Configure Data Source Parameters** page.
 
 ## Defining a Parameterized ContextMember
 
-Add a method on the `DbContext` that accepts the values you need to filter by and returns a materialized `IEnumerable<T>` such as a `List<T>`. The `EntityCoreDataSource` component does not support `IQueryable<T>` properties or methods as a `ContextMember`, so the method must materialize the query before returning. The names and types of the data source parameters must match the names and types of the corresponding method arguments exactly; otherwise the component throws an exception at runtime.
+Add a method or queryable property on the `DbContext` that accepts the values you need to filter by. The names and types of the data source parameters must match the names and types of the corresponding method arguments exactly; otherwise the component throws an exception at runtime.
 
 ```CSharp
 public partial class AdventureWorksDbContext : DbContext
 {
-    public List<Product> GetProductsByCategory(int categoryId)
+    public IQueryable<Product> GetProductsByCategory(int categoryId)
     {
-        return this.Products
-                   .Where(p => p.CategoryId == categoryId)
-                   .ToList();
+        return this.Products.Where(p => p.CategoryId == categoryId);
     }
 }
 ```
@@ -54,9 +52,7 @@ dataSource.Parameters.Add("categoryId", typeof(int), 5);
 
 ## Pushing Filtering to the Server
 
-Compose the LINQ filter on the `DbSet<T>` (or the underlying `IQueryable<T>`) **before** materializing the result with `ToList()` or `ToArray()`. EF Core then translates the `Where` clause into SQL and the database returns only the matching rows, as shown in the example above. If you instead materialize the entire `DbSet<T>` first and apply `Where` to the resulting in-memory collection, the filter degrades to client-side evaluation and the entire set is loaded into memory, which negates the performance benefit of parameterized queries.
-
-> note The `EntityCoreDataSource` component does not enumerate `IQueryable<T>` results returned from a `ContextMember`. Always materialize the query inside the `DbContext` method and return an `IEnumerable<T>` (for example, a `List<T>`).
+When the `ContextMember` returns an `IQueryable<T>`, EF Core translates the filter into SQL and executes it on the database. Avoid materializing the result with `ToList()` or `ToArray()` inside the `DbContext` method, because the entire set is then loaded into memory and the filter degrades to client-side evaluation, which negates the performance benefit of parameterized queries.
 
 ## See Also
 

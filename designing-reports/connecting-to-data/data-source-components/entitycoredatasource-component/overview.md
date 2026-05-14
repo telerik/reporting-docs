@@ -19,9 +19,9 @@ The `EntityCoreDataSource` component derives from `EntityDataSourceBase`, which 
 ## Key Capabilities
 
 - **Dedicated design-time support:** the component has its own toolbox item, design-time editor, and a configuration wizard that is shared with the [EntityDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard). It populates the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) with the schema of the selected entity and supports live data preview.
-- **`DbContext` binding:** assign a `DbContext` type or instance to the `Context` property and the name of a `DbSet<T>` property or a method that returns an `IEnumerable<T>` to the `ContextMember` property; the component retrieves the data automatically when the report is processed.
+- **`DbContext` binding:** assign a `DbContext` type or instance to the `Context` property and the name of a `DbSet<T>` or queryable property to the `ContextMember` property; the component retrieves the data automatically when the report is processed.
 - **Connection-string injection:** assign a connection string to the `ConnectionString` property of the data source, or pass it through one of the constructor overloads. The configured value is forwarded to a `DbContext` constructor that accepts a `string`.
-- **Parameter passing:** add entries to the `Parameters` collection to invoke parameterized methods on the `DbContext`.
+- **Parameter passing:** add entries to the `Parameters` collection to invoke parameterized methods or queryable projections on the `DbContext`.
 - **Shared Data Source reuse:** promote an `EntityCoreDataSource` instance to a [Shared Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component) and reuse the same configuration across multiple reports.
 
 ## Public API
@@ -40,7 +40,7 @@ namespace Telerik.Reporting
         // Inherited from EntityDataSourceBase:
         public string ConnectionString { get; set; }
         public object Context { get; set; }            // DbContext type or instance
-        public string ContextMember { get; set; }      // DbSet<T> or method name
+        public string ContextMember { get; set; }      // DbSet<T> or method/property name
     }
 }
 ```
@@ -54,7 +54,7 @@ To consume a `DbContext` with the `EntityCoreDataSource` component, the type mus
 - Your Entity Framework Core (EFCore) assembly should be allowed and accessible by the Report Designer along with all its dependencies. For the custom EFCore assembly, you need to [Extend the Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer). Its dependencies, though, must be copied manually to the report designer's folder. You may take them from the `bin` folder of the corresponding project after building it.
 	> note It is a work in progress from our side to improve this behavior.
 - The `DbContext` is defined in a class library that is referenced by the report project so that the report designer can load the type.
-- The `DbContext` exposes the entity sets you want to report on as `DbSet<T>` properties. Custom projections must be returned from a method as a materialized `IEnumerable<T>` (for example, a `List<T>`); `IQueryable<T>` properties and methods are not supported as a `ContextMember`.
+- The `DbContext` exposes the entity sets you want to report on as `DbSet<T>` properties, or projects them through `IQueryable<T>` properties.
 - The `DbContext` exposes a **parameterless constructor** and either a **constructor that accepts a connection string** (typical for the Code First approach) or a **constructor that accepts a `DbContextOptions<TContext>`** (typical for the Database First approach). A constructor that accepts a `string` is required when the design-time and runtime connection strings differ, because the component invokes it after assigning the value of `ConnectionString`.
 
 The following snippets show the minimal `DbContext` shape that the component can consume in:

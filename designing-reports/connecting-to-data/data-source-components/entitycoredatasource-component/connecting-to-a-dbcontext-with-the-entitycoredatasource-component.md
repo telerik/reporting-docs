@@ -12,7 +12,7 @@ reportingArea: General
 
 # Connecting to a DbContext with the EntityCoreDataSource Component
 
-This article describes how to connect the `EntityCoreDataSource` component to an [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) `DbContext` for both the **Code First** and **Database First** workflows. The examples use an `AdventureWorksDbContext` that exposes a `Products` `DbSet<T>` and a custom data-retrieval method.
+This article describes how to connect the `EntityCoreDataSource` component to an [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) `DbContext` for both the **Code First** and **Database First** workflows. The examples use an `AdventureWorksDbContext` that exposes a `Products` `DbSet<T>` and a custom queryable projection.
 
 ## Configuring the Component in the Designer
 
@@ -30,7 +30,7 @@ The wizard walks you through the following pages:
 
 	![The 'Choose a DbContext' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer with a selected context.](images/configure-entity-core-ds-choose-dbcontext.png)
 
-1. **Choose a context member** Select the `DbSet<T>` or method that returns the data for the report. Methods must return a materialized `IEnumerable<T>` such as a `List<T>`; `IQueryable<T>` properties and methods are not supported.
+1. **Choose a context member** Select the `DbSet<T>`, queryable property, or method that returns the data for the report.
 
 	![The 'Choose a context member' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer with a selected existing DbSet.](images/configure-entity-core-ds-choose-context-member.png)
 
@@ -58,7 +58,7 @@ public EntityCoreDataSource(object context, string contextMember);
 public EntityCoreDataSource(string connectionString, object context, string contextMember);
 ```
 
-The simplest configuration uses the parameterless constructor and assigns at least the `Context` and `ContextMember` properties. Assign the `DbContext` type to `Context` and the name of the `DbSet<T>` or a data-retrieval method to `ContextMember`:
+The simplest configuration uses the parameterless constructor and assigns at least the `Context` and `ContextMember` properties. Assign the `DbContext` type to `Context` and the name of the `DbSet<T>`, queryable property, or method to `ContextMember`:
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource

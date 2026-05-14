@@ -51,6 +51,8 @@ The `Parameters` collection is inherited through `ObjectDataSourceBase` and acce
 
 To consume a `DbContext` with the `EntityCoreDataSource` component, the type must satisfy the following requirements:
 
+- Your Entity Framework Core (EFCore) assembly should be allowed and accessible by the Report Designer along with all its dependencies. For the custom EFCore assembly, you need to [Extend the Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer). Its dependencies, though, must be copied manually to the report designer's folder. You may take them from the `bin` folder of the corresponding project after building it.
+	> note It is a work in progress from our side to improve this behavior.
 - The `DbContext` is defined in a class library that is referenced by the report project so that the report designer can load the type.
 - The `DbContext` exposes the entity sets you want to report on as `DbSet<T>` properties, or projects them through `IQueryable<T>` properties.
 - The `DbContext` exposes a **parameterless constructor** and either a **constructor that accepts a connection string** (typical for the Code First approach) or a **constructor that accepts a `DbContextOptions<TContext>`** (typical for the Database First approach). A constructor that accepts a `string` is required when the design-time and runtime connection strings differ, because the component invokes it after assigning the value of `ConnectionString`.
@@ -111,6 +113,7 @@ The following snippets show the minimal `DbContext` shape that the component can
 		}
 	}
 	```
+
 
 ## Supported Developer Platforms
 

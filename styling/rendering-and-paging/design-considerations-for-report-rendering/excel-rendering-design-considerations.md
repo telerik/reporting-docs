@@ -96,9 +96,11 @@ Background images are not supported.
 
 ## SVG Rendering
 
-When the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting is enabled, the **Microsoft Excel 2007 and above** rendering extension embeds SVG images for Graph, Gauge, and Barcode report items using the Office 2019 SVGBlip extension. SVG images produce sharper, resolution-independent output compared to raster images.
+The Telerik Reporting engine supports two graphics engines: GDI (Windows only) and Skia (cross-platform). The GDI engine uses EMF (Metafile) images for graphical report items and is controlled by the `UseMetafile` setting. The Skia engine does not support EMF and renders Graph, Gauge, and Barcode report items as SVG images by default, embedded through the Office 2019 SVGBlip extension. SVG images produce sharper, resolution-independent output compared to raster images.
 
-A raster fallback image is included alongside the SVG by default to ensure compatibility with Office versions older than 2019. You can control this behavior through the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting.
+To disable SVG rendering with the Skia engine and use raster images instead, set the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting to **false**.
+
+By default, a raster fallback image is not included alongside the SVG to reduce the output file size. If you target Microsoft Excel versions older than 2019 that do not support the SVGBlip extension, set the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting to **true** to avoid broken images.
 
 > note SVG rendering is available only in the **Microsoft Excel 2007 and above** (XLSX) format. The **Microsoft Excel 97-2003** (XLS) format does not support SVG images.
 

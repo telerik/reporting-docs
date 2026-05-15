@@ -47,7 +47,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnPageReady="@PageReady">
 </ReportViewer>
@@ -55,9 +55,7 @@ Sample usage:
 @code {
     async Task PageReady(PageReadyEventArgs args)
     {
-        // Inspect the rendered page number and its actions.
-        var pageNumber = args.PageNumber;
-        var actions = args.PageActions;
+        // Called when each page has been rendered and is ready for display.
     }
 }
 ```
@@ -75,7 +73,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnPrintStarted="@PrintStarted">
 </ReportViewer>
@@ -83,7 +81,7 @@ Sample usage:
 @code {
     async Task PrintStarted(PrintStartedEventArgs args)
     {
-        // Prevent the default print behavior.
+        // Modify device info for the print document, or prevent the default print behavior.
         // args.Handled = true;
     }
 }
@@ -100,7 +98,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnPrintDocumentReady="@PrintDocumentReady">
 </ReportViewer>
@@ -108,7 +106,7 @@ Sample usage:
 @code {
     async Task PrintDocumentReady(PrintDocumentReadyEventArgs args)
     {
-        // Prevent the default print behavior.
+        // Access the URL of the document prepared for printing, or prevent the default print behavior.
         // args.Handled = true;
     }
 }
@@ -127,10 +125,8 @@ Occurs when the export process is starting. Setting `Handled` to `true` prevents
 Sample usage:
 
 ```razor
-@using System.Text.Json
-
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnExportStarted="@ExportStarted">
 </ReportViewer>
@@ -138,14 +134,11 @@ Sample usage:
 @code {
     async Task ExportStarted(ExportStartedEventArgs args)
     {
-        // Set a format-specific device info property for CSV exports.
+        // Inspect or change the format/device info for the export, or prevent the default behavior.
         // if (args.Format == "CSV")
         // {
-        //     args.DeviceInfo.AdditionalProperties["NoHeader"] = JsonDocument.Parse("true").RootElement;
+        //     args.Handled = true; // Prevent CSV export
         // }
-
-        // Prevent the default export behavior.
-        // args.Handled = true;
     }
 }
 ```
@@ -163,7 +156,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnExportDocumentReady="@ExportDocumentReady">
 </ReportViewer>
@@ -171,10 +164,11 @@ Sample usage:
 @code {
     async Task ExportDocumentReady(ExportDocumentReadyEventArgs args)
     {
-        // Open the exported document in a new browser tab.
-        // args.WindowOpenTarget = "_blank";
-
-        // Prevent the default behavior of opening the document URL.
+        // Access the exported document URL and format, change the window target, or prevent the default behavior.
+        // if (args.Format == "PDF")
+        // {
+        //     args.WindowOpenTarget = "_blank";
+        // }
         // args.Handled = true;
     }
 }
@@ -193,10 +187,8 @@ Occurs before the send-email flow begins. Setting `Handled` to `true` prevents t
 Sample usage:
 
 ```razor
-@using System.Text.Json
-
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnSendEmailStarted="@SendEmailStarted">
 </ReportViewer>
@@ -204,13 +196,7 @@ Sample usage:
 @code {
     async Task SendEmailStarted(SendEmailStartedEventArgs args)
     {
-        // Set a format-specific device info property for CSV exports.
-        // if (args.Format == "CSV")
-        // {
-        //     args.DeviceInfo.AdditionalProperties["NoHeader"] = JsonDocument.Parse("true").RootElement;
-        // }
-
-        // Prevent the default send-email behavior.
+        // Inspect or change the format/device info for the send-email export, or prevent the default behavior.
         // args.Handled = true;
     }
 }
@@ -234,7 +220,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnSendEmailDocumentReady="@SendEmailDocumentReady">
 </ReportViewer>
@@ -242,10 +228,8 @@ Sample usage:
 @code {
     async Task SendEmailDocumentReady(SendEmailDocumentReadyEventArgs args)
     {
-        // Override the email subject before sending.
-        // args.Subject = "Overridden subject";
-
-        // Prevent the default send behavior and handle the send manually.
+        // Access the email details and document URL, modify the email fields, or prevent the default send.
+        // args.Subject = "Modified Subject";
         // args.Handled = true;
     }
 }
@@ -264,7 +248,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnInteractiveActionExecuting="@InteractiveActionExecuting">
 </ReportViewer>
@@ -272,7 +256,7 @@ Sample usage:
 @code {
     async Task InteractiveActionExecuting(PageActionEventArgs args)
     {
-        // Cancel the default interactive action execution.
+        // Inspect or cancel the interactive action before it executes.
         // args.Cancel = true;
     }
 }
@@ -289,7 +273,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnInteractiveActionEnter="@InteractiveActionEnter">
 </ReportViewer>
@@ -297,7 +281,7 @@ Sample usage:
 @code {
     async Task InteractiveActionEnter(PageActionEventArgs args)
     {
-        // React to the mouse entering an item that defines an interactive action.
+        // React to the mouse entering a report item with an interactive action.
     }
 }
 ```
@@ -313,7 +297,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnInteractiveActionLeave="@InteractiveActionLeave">
 </ReportViewer>
@@ -321,7 +305,7 @@ Sample usage:
 @code {
     async Task InteractiveActionLeave(PageActionEventArgs args)
     {
-        // React to the mouse leaving an item that defines an interactive action.
+        // React to the mouse leaving a report item with an interactive action.
     }
 }
 ```
@@ -339,7 +323,7 @@ Sample usage:
 
 ```razor
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
     OnTooltipOpening="@TooltipOpening">
 </ReportViewer>
@@ -347,8 +331,9 @@ Sample usage:
 @code {
     async Task TooltipOpening(TooltipEventArgs args)
     {
-        // Override the tooltip title or text before it is shown.
-        // args.Title = "Custom title";
+        // Modify the tooltip title or text before it is displayed.
+        // args.Title = "Custom Title";
+        // args.Text = "Custom tooltip text";
     }
 }
 ```
@@ -364,19 +349,16 @@ Occurs when an error is raised by the report viewer. This event has one argument
 Sample usage:
 
 ```razor
-@inject IJSRuntime JsRuntime
-
 <ReportViewer
-    ServiceUrl="/api/reports/"
+    ServiceUrl="/api/reports"
     @bind-ReportSource="@ReportSource"
-    OnError="@Error">
+    OnError="@OnError">
 </ReportViewer>
 
 @code {
-    async Task Error(Telerik.ReportViewer.BlazorNative.ErrorEventArgs args)
+    async Task OnError(Telerik.ReportViewer.BlazorNative.ErrorEventArgs args)
     {
-        // React to a viewer error.
-        // await JsRuntime.InvokeVoidAsync("alert", $"OnError: {args.Message}");
+        // Handle errors raised by the report viewer.
     }
 }
 ```

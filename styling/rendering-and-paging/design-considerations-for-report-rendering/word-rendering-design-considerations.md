@@ -77,6 +77,16 @@ The following rules apply to rendered report items:
 - The [Cross-Section item](slug:telerikreporting/designing-reports/report-structure/cross-section-item) renders its graphical primitives as images. It is recommended to set the _Position_ property to `Front` to allow rendering it on top of the other items. Otherwise, the Word application may apply an undesired offset to it.
 - The [Checkbox item](slug:telerikreporting/designing-reports/report-structure/checkbox) is rendered in two parts. The _Checked_ status is shown as an image, and the _Text_ value is displayed as text beside it.
 
+## SVG Rendering
+
+When the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) device information setting is enabled, the Word rendering extension embeds SVG images for the following report items using the Office 2019 SVGBlip extension: Graph, Gauge, Barcode, and [Cross-Section item](slug:telerikreporting/designing-reports/report-structure/cross-section-item). SVG images produce sharper, resolution-independent output compared to raster images.
+
+A raster fallback image is included alongside the SVG by default to ensure compatibility with Office versions older than 2019. You can control this behavior through the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) device information setting.
+
+> note Shape items in the Word rendering extension already use native DrawingML vector paths and are not affected by the `UseSvgImages` setting.
+
+> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+
 ## Interactivity
 
 The supported interactivity actions are Navigate to URL and Navigate to Bookmark.

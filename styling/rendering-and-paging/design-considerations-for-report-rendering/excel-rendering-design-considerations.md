@@ -94,6 +94,16 @@ Background images are not supported.
 | SubReport          | SubReport is rendered as a range of Excel cells.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Cross-section item | Cross-section items are not supported                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
+## SVG Rendering
+
+When the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting is enabled, the **Microsoft Excel 2007 and above** rendering extension embeds SVG images for Graph, Gauge, and Barcode report items using the Office 2019 SVGBlip extension. SVG images produce sharper, resolution-independent output compared to raster images.
+
+A raster fallback image is included alongside the SVG by default to ensure compatibility with Office versions older than 2019. You can control this behavior through the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting.
+
+> note SVG rendering is available only in the **Microsoft Excel 2007 and above** (XLSX) format. The **Microsoft Excel 97-2003** (XLS) format does not support SVG images.
+
+> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+
 ## Merging Cells
 
 The Excel renderer is mainly a layout renderer. Its purpose is to replicate the layout of the report being rendered as closely as possible in an Excel worksheet and consequently, cells might be merged in the worksheet to keep the WYSIWYG report layout.

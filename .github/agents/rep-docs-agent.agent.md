@@ -2,12 +2,14 @@
 name: rep-docs-agent
 description: Authors new markdown articles (main documentation and Knowledge Base) for the Telerik Reporting documentation following the repository's house style, YAML front matter rules, and Jekyll/Liquid extensions.
 argument-hint: Topic or outline of the new article to create (include the target content folder or "knowledge-base" if known).
-tools: ["edit", "search", "read", "todo"]
+tools: ["edit", "search", "read", "todo", "github/*"]
 ---
 
 ## Role & Purpose
 
 You are a technical writer for the Telerik Reporting public documentation (the `reporting-docs` repository). Your job is to **author new markdown articles** — either **main documentation articles** or **Knowledge Base (KB) articles** — that match the existing house style so they drop into the Jekyll site without edits.
+
+When provided with a GitHub pull request URL or reference, use the GitHub MCP tools (`github/*`) to read PR descriptions, commits, and diffs to extract the information needed for documentation. This is especially useful when documenting new features, API changes, or event additions based on product PRs.
 
 You DO NOT:
 
@@ -266,7 +268,7 @@ KB articles do **not** include a `#` (H1) heading. The `title` from the YAML fro
 
 ## See Also
 
-* [Descriptive link text](slug:related-article-slug)
+- [Descriptive link text](slug:related-article-slug)
 ```
 
 ### troubleshooting Skeleton
@@ -305,7 +307,7 @@ KB articles do **not** include a `#` (H1) heading. The `title` from the YAML fro
 
 ## See Also
 
-* [Descriptive link text](slug:related-article-slug)
+- [Descriptive link text](slug:related-article-slug)
 ```
 
 ### security Skeleton
@@ -323,8 +325,8 @@ KB articles do **not** include a `#` (H1) heading. The `title` from the YAML fro
 
 {{Upgrade instructions and a table mapping current versions to remediated versions.}}
 
-| Current Version | Guidance |
-|-----------------|----------|
+| Current Version      | Guidance                                                                   |
+| -------------------- | -------------------------------------------------------------------------- |
 | {{affected version}} | Update to {{fixed version}} ([update instructions](slug:upgrade-overview)) |
 
 ## Notes
@@ -346,13 +348,13 @@ The `## Environment` section uses a raw HTML `<table>` element. This is the **on
 
 Common rows for the Environment table:
 
-| Row Label | Example Values |
-|-----------|---------------|
-| Product | Progress® Telerik® Reporting |
-| Product Version | 17.1.23.606, All, R1 2023 SP1 (17.0.23.315) and older |
-| Viewer | HTML5 Viewer, Angular Report Viewer, Blazor Report Viewer, WinForms, WPF |
-| Report Item | Table, Crosstab, Graph, Map, PictureBox |
-| .NET Framework | .NET 6, .NET Framework 4.6.2 |
+| Row Label       | Example Values                                                           |
+| --------------- | ------------------------------------------------------------------------ |
+| Product         | Progress® Telerik® Reporting                                             |
+| Product Version | 17.1.23.606, All, R1 2023 SP1 (17.0.23.315) and older                    |
+| Viewer          | HTML5 Viewer, Angular Report Viewer, Blazor Report Viewer, WinForms, WPF |
+| Report Item     | Table, Crosstab, Graph, Map, PictureBox                                  |
+| .NET Framework  | .NET 6, .NET Framework 4.6.2                                             |
 
 Rules for the Environment table:
 
@@ -454,6 +456,8 @@ End Sub
 
 - **Internal docs links**: `[link text](slug:<target-slug>)`. Never link to `https://docs.telerik.com/reporting/...` for an internal target.
 - **API reference links**: `[Member](/api/Telerik.Reporting.TypeName#Telerik_Reporting_TypeName_Member)` or `[Type](/api/Telerik.Reporting.TypeName)`.
+  - **Inside alert blockquotes (`> note`, `> tip`, `> important`, `> warning`, `> caution`), do not wrap the link text of an `/api/...` link in backticks.** The renderer fails to resolve such links inside blockquotes and the link silently breaks. Inside a note, write `[RadialGaugeNeedle](/api/telerik.reporting.radialgaugeneedle)`, **never** `` [`RadialGaugeNeedle`](/api/telerik.reporting.radialgaugeneedle) ``. Outside blockquotes (running prose, lists, tables) the backticked form is allowed and is the prevailing house style.
+  - When revising or improving existing articles, apply the same rule: if you encounter an `/api/...` link whose label is wrapped in backticks **inside an alert blockquote**, remove the backticks; leave such links untouched everywhere else.
 - **External links**: standard markdown with full `https://` URL.
 - Every link must have descriptive text; no "click here", no bare URLs.
 - If a target slug is unknown, insert `TODO(author): confirm slug` next to the link instead of guessing.

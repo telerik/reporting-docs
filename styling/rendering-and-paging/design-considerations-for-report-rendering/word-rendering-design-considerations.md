@@ -77,6 +77,18 @@ The following rules apply to rendered report items:
 - The [Cross-Section item](slug:telerikreporting/designing-reports/report-structure/cross-section-item) renders its graphical primitives as images. It is recommended to set the _Position_ property to `Front` to allow rendering it on top of the other items. Otherwise, the Word application may apply an undesired offset to it.
 - The [Checkbox item](slug:telerikreporting/designing-reports/report-structure/checkbox) is rendered in two parts. The _Checked_ status is shown as an image, and the _Text_ value is displayed as text beside it.
 
+## SVG Rendering
+
+The Telerik Reporting engine supports two graphics engines: GDI (Windows only) and Skia (cross-platform). The GDI engine uses EMF (Metafile) images for graphical report items and is controlled by the `UseMetafile` setting. The Skia engine does not support EMF and renders Graph, Gauge, Barcode, and [Cross-Section item](slug:telerikreporting/designing-reports/report-structure/cross-section-item) report items as SVG images by default, embedded through the Office 2019 SVGBlip extension. SVG images produce sharper, resolution-independent output compared to raster images.
+
+To disable SVG rendering with the Skia engine and use raster images instead, set the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) device information setting to **false**.
+
+By default, a raster fallback image is not included alongside the SVG to reduce the output file size. If you target Microsoft Word versions older than 2019 that do not support the SVGBlip extension, set the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) device information setting to **true** to avoid broken images.
+
+> note Shape items in the Word rendering extension already use native DrawingML vector paths and are not affected by the `UseSvgImages` setting.
+
+> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+
 ## Interactivity
 
 The supported interactivity actions are Navigate to URL and Navigate to Bookmark.

@@ -94,6 +94,18 @@ Background images are not supported.
 | SubReport          | SubReport is rendered as a range of Excel cells.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Cross-section item | Cross-section items are not supported                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
+## SVG Rendering
+
+The Telerik Reporting engine supports two graphics engines: GDI (Windows only) and Skia (cross-platform). The GDI engine uses EMF (Metafile) images for graphical report items and is controlled by the `UseMetafile` setting. The Skia engine does not support EMF and renders Graph, Gauge, and Barcode report items as SVG images by default, embedded through the Office 2019 SVGBlip extension. SVG images produce sharper, resolution-independent output compared to raster images.
+
+To disable SVG rendering with the Skia engine and use raster images instead, set the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting to **false**.
+
+By default, a raster fallback image is not included alongside the SVG to reduce the output file size. If you target Microsoft Excel versions older than 2019 that do not support the SVGBlip extension, set the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) device information setting to **true** to avoid broken images.
+
+> note SVG rendering is available only in the **Microsoft Excel 2007 and above** (XLSX) format. The **Microsoft Excel 97-2003** (XLS) format does not support SVG images.
+
+> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+
 ## Merging Cells
 
 The Excel renderer is mainly a layout renderer. Its purpose is to replicate the layout of the report being rendered as closely as possible in an Excel worksheet and consequently, cells might be merged in the worksheet to keep the WYSIWYG report layout.

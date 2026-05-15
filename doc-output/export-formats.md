@@ -45,6 +45,8 @@ By default Telerik Reporting outputs reports in the following formats:
 
 Interactive rendering extensions (`IMAGEInteractive`, `HTML5Interactive`, `XAMLInteractive`, `WPFXAMLInteractive`) are used internally by viewers to allow interaction with the content e.g., toggling the visibility of items/sections. Interactive rendering extensions are for Telerik Internal use only.
 
+Use the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) extension method [GetAvailableRenderingExtensions()](/api/telerik.reporting.processing.reportprocessor#telerik_reporting_processing_reportprocessor_getavailablerenderingextensions) to get the actually available and loaded rendering extensions for the particular environment.
+
 ### Device Information Settings
 
 You can specify rendering extension parameters in your application’s configuration file to override the default report rendering behavior. The rendering extension parameters are specified as device information settings.

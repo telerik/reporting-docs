@@ -456,6 +456,8 @@ End Sub
 
 - **Internal docs links**: `[link text](slug:<target-slug>)`. Never link to `https://docs.telerik.com/reporting/...` for an internal target.
 - **API reference links**: `[Member](/api/Telerik.Reporting.TypeName#Telerik_Reporting_TypeName_Member)` or `[Type](/api/Telerik.Reporting.TypeName)`.
+  - **Inside alert blockquotes (`> note`, `> tip`, `> important`, `> warning`, `> caution`), do not wrap the link text of an `/api/...` link in backticks.** The renderer fails to resolve such links inside blockquotes and the link silently breaks. Inside a note, write `[RadialGaugeNeedle](/api/telerik.reporting.radialgaugeneedle)`, **never** `` [`RadialGaugeNeedle`](/api/telerik.reporting.radialgaugeneedle) ``. Outside blockquotes (running prose, lists, tables) the backticked form is allowed and is the prevailing house style.
+  - When revising or improving existing articles, apply the same rule: if you encounter an `/api/...` link whose label is wrapped in backticks **inside an alert blockquote**, remove the backticks; leave such links untouched everywhere else.
 - **External links**: standard markdown with full `https://` URL.
 - Every link must have descriptive text; no "click here", no bare URLs.
 - If a target slug is unknown, insert `TODO(author): confirm slug` next to the link instead of guessing.

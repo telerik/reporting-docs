@@ -70,7 +70,13 @@ This section explains the differences between both versions of Standalone Report
     C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"
     ```
 
-For further information about controlling the `RollForward` behavior at runtime, check the related Microsoft documentation article section [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
+    If the latest installed .NET runtime is a **Preview**__** release, enable the [`DOTNET_ROLL_FORWARD_TO_PRERELEASE`](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-environment-variables#dotnet_roll_forward_to_prerelease) environment variable:
+
+    ```powershell
+    $env:DOTNET_ROLL_FORWARD_TO_PRERELEASE="1"
+    ```
+
+    For further information about controlling the `RollForward` behavior at runtime, check the related Microsoft documentation article section [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
 
 ## Major UI Elements in the Standalone Report Designer
 

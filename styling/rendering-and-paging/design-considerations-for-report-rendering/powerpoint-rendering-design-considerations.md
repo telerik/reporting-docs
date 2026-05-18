@@ -35,7 +35,7 @@ The following rules apply to rendered report items:
 - Color property is applied as color of the PowerPoint shape/table cell.
 - The BackgroundImage is applied as image in the PowerPoint shape/table cell.
 - When both **Color** and **BackgroundImage** are set – the **Color** is exported as separate PowerPoint shape. The BackgroundImage is applied as picture on top of the Color shape.
-- A PictureBox report item with **Color** and **BackgoundImage** applied, will be exported as a separate PowerPoint shape for the Color, a separate PowerPoint shape for the BackgroundImage on top of the Color shape and picture for the actual image, which would be on top of both.
+- A PictureBox report item with **Color** and **BackgroundImage** applied, will be exported as a separate PowerPoint shape for the Color, a separate PowerPoint shape for the BackgroundImage on top of the Color shape and picture for the actual image, which would be on top of both.
 - If a TextBox item with justified text is rendered on two or more pages, the last line of each page (except the last page) will be left-aligned due to the natural justification algorithm used in PowerPoint.
 - PowerPoint doesn't support Groove, Ridge, Inset and Outset border styles. If those styles are used the PowerPoint rendering fallbacks to Solid border style.
 

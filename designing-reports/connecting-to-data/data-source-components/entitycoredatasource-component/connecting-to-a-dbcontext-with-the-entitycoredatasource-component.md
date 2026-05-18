@@ -24,27 +24,27 @@ The wizard walks you through the following pages:
 
 1. **Choose Your Data Connection** Select the connection string source for the report — a literal value, a named entry from the configuration file, or none if the `DbContext` resolves its own connection.
 
-	![The 'Choose Your Data Connection' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer with a selected existing local data connection.](images/configure-entity-core-ds-choose-data-connection.png)
+	![The 'Choose Your Data Connection' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected existing local data connection.](images/configure-entity-core-ds-choose-data-connection.png)
 
 1. **Choose a DbContext** Select the `DbContext` type from the assemblies referenced by the report project.
 
-	![The 'Choose a DbContext' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer with a selected context.](images/configure-entity-core-ds-choose-dbcontext.png)
+	![The 'Choose a DbContext' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected context.](images/configure-entity-core-ds-choose-dbcontext.png)
 
 1. **Choose a context member** Select the `DbSet<T>`, queryable property, or method that returns the data for the report.
 
-	![The 'Choose a context member' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer with a selected existing DbSet.](images/configure-entity-core-ds-choose-context-member.png)
+	![The 'Choose a context member' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected existing DbSet.](images/configure-entity-core-ds-choose-context-member.png)
 
 1. **Configure Data Source Parameters** (_optional_) Map any method arguments to [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) or literal values.
 
-	![The optional 'Configure Data Source Parameters' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer.](images/configure-entity-core-ds-configure-parameters.png)
+	![The optional 'Configure Data Source Parameters' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](images/configure-entity-core-ds-configure-parameters.png)
 
 1. **Configure Design Time Parameters** (_optional_) Provide design-time values used to render the live preview.
 
-	![The optional 'Preview data source results' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer.](images/configure-entity-core-ds-configure-design-parameters.png)
+	![The optional 'Configure Design Time Parameters' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](images/configure-entity-core-ds-configure-design-parameters.png)
 
 1. **Preview data source results** Preview first 100 data rows based on the design-time parameter values.
 
-	![The 'Preview data source results' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer.](images/configure-entity-core-ds-preview.png)
+	![The 'Preview data source results' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](images/configure-entity-core-ds-preview.png)
 
 After the wizard completes, the component appears in the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) with the schema of the selected entity, and the report data items can bind to its fields.
 

@@ -62,7 +62,7 @@ Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("IBM.Data.
 In case the data provider does not provide a static instance, the provider can be registered with the factory assembly qualified name:
 
 ```CSharp
-Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("IBM.Data.Db2", "IBM.Data.Db2.DB2Factory, IBM.Data.Db2, Version=8.0.0.300");
+Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("IBM.Data.Db2", "IBM.Data.Db2.DB2Factory, IBM.Data.Db2");
 ```
 
 For web projects the recommended place to register the factory is the static constructor of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.

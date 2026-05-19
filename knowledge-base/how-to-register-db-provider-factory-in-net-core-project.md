@@ -42,7 +42,7 @@ To create a connection to a database, the Telerik Reporting engine targeting the
 Since this class does not exist in .NET Standard 2.0, the data processing engine provides a specific class named **Telerik.Reporting.Processing.Data.DbProviderFactories** which exposes a few static methods that can be used to register a new DbProviderFactory instance.
 
 These methods essentially modify the internal collection of DbProviderFactory types and provider invariant names. 
-This internal collection contains predefined entries for the most popular data providers that work out-of-the-box in .NET projects:
+This internal collection contains predefined entries for the most popular data providers that work out-of-the-box in .NET Core projects:
 
 |  Database  |  DbProviderFactory type name  |
 |------------|-------------------------------|

@@ -56,11 +56,11 @@ When the Report hierarchy is deeper (has more levels) than the number of levels 
 
 #### Controlled TOC Hierarchy
 
-Starting with [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-402)), report authors can explicitly specify the level at which report sections, items, and groups appear in the Table of Contents, instead of relying solely on the report hierarchy. This provides greater control over the TOC structure and enables consistent, meaningful outlines across Reports and Report Books. Report creators can promote or demote specific items, align the TOC depth with business semantics, and get consistent TOC levels across differently structured reports.
+Starting with [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-402)), you can explicitly set the level where report sections, items, and groups appear in the table of contents. This approach gives you direct control over the TOC structure instead of relying only on the report hierarchy.
 
-The functionality is exposed through the optional [TocLevel](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocLevel) property on report items (and the corresponding [TocLevel](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocLevel) property on report and table groups). The Reporting Engine respects the value (or expression) set on supported elements and maps them to the matching level definition in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection of the `TocSection`, including in Report Book TOCs.
+Use the optional [TocLevel](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocLevel) property on report items and the corresponding [TocLevel](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocLevel) property on report and table groups. The Reporting Engine uses this value (or expression result) and maps each entry to the matching level definition in the [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection of the `TocSection`. The same behavior applies when you use a [Report Book Table of Contents](slug:telerikreporting/designing-reports/report-book/report-book-table-of-contents).
 
-`TocLevel` is a string property whose value should evaluate to an `Integer` greater than or equal to **1**. The value can be:
+`TocLevel` is a string property whose value must evaluate to an `Integer` greater than or equal to **1**. The value can be:
 
 * a literal integer (for example, `2`);
 * an [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) that evaluates to an integer (for example, `= Fields.IsImportant ? 1 : 3`);
@@ -69,7 +69,53 @@ If the value cannot be evaluated to a valid `Integer`, the TOC level falls back 
 
 > note `TocLevel` takes effect only when [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) is also set on the same item, section, or group. Setting `TocLevel` without `TocText` has no effect, because the element does not produce a TOC entry in the first place.
 
-> note When part of the report sections/items/groups in the TOC have their `TocLevel` set and another part does not, the level of the elements without an explicit `TocLevel` is determined based on the default TOC hierarchy, i.e., based on their position in the Report hierarchy.
+> note When part of the report sections/items/groups in the TOC have their `TocLevel` set and another part does not, the level of the elements without an explicit `TocLevel` is determined based on the default TOC hierarchy, that is, based on their position in the Report hierarchy.
+
+##### How TOC Level Resolution Works
+
+The following table summarizes how the engine resolves TOC levels:
+
+| Configuration | Result |
+|---|---|
+| `TocText` is set and `TocLevel` is not set | The engine uses the element position from the default report hierarchy. |
+| `TocText` is set and `TocLevel` is a valid integer (`>= 1`) | The engine uses the specified level. |
+| `TocText` is set and `TocLevel` is less than `1` | The engine uses level `1`. |
+| `TocText` is set and `TocLevel` is invalid (for example, `abc`) | The engine falls back to the default report hierarchy. |
+| `TocLevel` is set and `TocText` is empty | The engine does not create a TOC entry. |
+
+##### Default and Controlled Hierarchy Example
+
+The following diagram shows the default hierarchy when `TocLevel` is not set:
+
+```text
+Report
+└─ Country (Group, TocText)
+   └─ City (Group, TocText)
+      └─ Store Name (TextBox, TocText)
+```
+
+The following diagram shows the same content after overriding levels with `TocLevel`:
+
+```text
+Level 1
+└─ Country (TocLevel=1)
+
+Level 2
+└─ Store Name (TocLevel=2)
+
+Level 3
+└─ City (TocLevel=3)
+```
+
+The following side-by-side diagram compares the hierarchy before and after the override:
+
+```text
+BEFORE (Default Hierarchy)          AFTER (Controlled Hierarchy)
+Report                               Country
+└─ Country                           └─ Store Name
+   └─ City                              └─ City
+      └─ Store Name
+```
 
 ### Levels
 

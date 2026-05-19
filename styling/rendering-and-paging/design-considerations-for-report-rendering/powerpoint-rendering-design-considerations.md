@@ -51,7 +51,7 @@ To disable SVG rendering with the Skia engine and use raster images instead, set
 
 By default, a raster fallback image is not included alongside the SVG to reduce the output file size. If you target Microsoft PowerPoint versions older than 2019 that do not support the SVGBlip extension, set the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings) device information setting to **true** to avoid broken images.
 
-> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+> note For report items that expose sizing-related properties, setting them to a value other than `Stretch` causes the rendering extension to fall back to raster images automatically due to SVG path limitations. For example, this applies to `Barcode.Sizing`, `Shape.BackgroundImage.Sizing`, and `CrossSection.BackgroundImage.Sizing`.
 
 ## Interactivity
 

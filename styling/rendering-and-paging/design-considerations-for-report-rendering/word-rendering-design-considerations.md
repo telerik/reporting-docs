@@ -81,9 +81,13 @@ The following rules apply to rendered report items:
 
 The Telerik Reporting engine supports two graphics engines: GDI (Windows only) and Skia (cross-platform). The GDI engine uses EMF (Metafile) images for graphical report items and is controlled by the `UseMetafile` setting. The Skia engine does not support EMF and renders Graph, Gauge, Barcode, and [Cross-Section item](slug:telerikreporting/designing-reports/report-structure/cross-section-item) report items as SVG images by default, embedded through the Office 2019 SVGBlip extension. SVG images produce sharper, resolution-independent output compared to raster images.
 
+> important Using **Microsoft Word 2019 or newer** is required for the exported documents with to open properly.
+
 To disable SVG rendering with the Skia engine and use raster images instead, set the [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) device information setting to **false**.
 
 By default, a raster fallback image is not included alongside the SVG to reduce the output file size. If you target Microsoft Word versions older than 2019 that do not support the SVGBlip extension, set the [`IncludeRasterFallback`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) device information setting to **true** to avoid broken images.
+
+> important The [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings) setting requires [DocumentFormat.OpenXml 3+](https://www.nuget.org/packages/documentformat.openxml). If an older version is loaded, the setting will be evaluated to **false**.
 
 > note Shape items in the Word rendering extension already use native DrawingML vector paths and are not affected by the `UseSvgImages` setting.
 

@@ -1,8 +1,8 @@
 ---
 title: How to register a DbProviderFactory in a .NET Core project
-description: "Learn how to extend the list of supported data providers in a .NET project."
+description: "Learn how to extend the list of supported data providers in a .NET Core project."
 type: how-to
-page_title: How to register a new DbProviderFactory instance in a .NET project
+page_title: How to register a new DbProviderFactory instance in a .NET Core project
 slug: how-to-register-db-provider-factory-in-net-core-project
 tags: .NET Core, Configuration
 ticketid: 1385458

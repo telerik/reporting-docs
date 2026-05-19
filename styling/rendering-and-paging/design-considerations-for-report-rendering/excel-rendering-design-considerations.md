@@ -104,7 +104,7 @@ By default, a raster fallback image is not included alongside the SVG to reduce 
 
 > note SVG rendering is available only in the **Microsoft Excel 2007 and above** (XLSX) format. The **Microsoft Excel 97-2003** (XLS) format does not support SVG images.
 
-> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+> note For **Barcode** items, when the item's `Sizing` property is set to a value other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations. **Graph** and **Gauge** items do not expose a public `Sizing` property.
 
 ## Merging Cells
 

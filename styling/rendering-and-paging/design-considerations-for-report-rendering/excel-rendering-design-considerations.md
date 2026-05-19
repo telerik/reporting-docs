@@ -104,7 +104,7 @@ By default, a raster fallback image is not included alongside the SVG to reduce 
 
 > important The [`UseSvgImages`](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings) setting requires [DocumentFormat.OpenXml 3+](https://www.nuget.org/packages/documentformat.openxml). If an older version is loaded, the setting will be evaluated to **false**.
 
-> note SVG rendering is available only in the **Microsoft Excel 2007 and above** (XLSX) format, and requires using Microsoft Excel 2019 or newer. The **Microsoft Excel 97-2003** (XLS) format does not support SVG images.
+> note SVG rendering is available only in the **Microsoft Excel 2007 and above** (XLSX) format, and requires opening the document in **Microsoft Excel 2019 or newer**. The **Microsoft Excel 97-2003** (XLS) format does not support SVG images.
 
 > note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
 

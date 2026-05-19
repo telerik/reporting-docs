@@ -22,6 +22,7 @@ The following `HtmlTextBoxVarious` formatting options are available and provide 
 * Subscript, Superscript (`<sub>` and `<sup>`).
 * HyperLink (`<a href target>`).
 * Lists (`<ol>`, `<ul>`, and `<li>`).
+  * The `start` attribute is supported for `<ol>` elements.  
 * Text organization in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, and `<center>`).
 * Images (`<img>`) - for embedding inline images within HTML content.
 

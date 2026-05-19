@@ -20,7 +20,7 @@ To export a report, you can use the **[RenderReport](/api/Telerik.Reporting.Proc
 
 The [RenderReport](/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method has two overloads, the first is used when rendering a single stream, the second when rendering multiple streams.
 
-The available extensions used as first argument of the [RenderReport](/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method are listed in the [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats) article.
+The supported extensions that may be used as first argument of the [RenderReport](/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method are listed in the [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats) article. Use the ReportProcessor extension method [GetAvailableRenderingExtensions()](/api/telerik.reporting.processing.reportprocessor#telerik_reporting_processing_reportprocessor_getavailablerenderingextensions) to get the actually available and loaded rendering extensions for the particular environment.
 
 ## Exporting a report to a single document format
 

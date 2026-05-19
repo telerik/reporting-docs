@@ -42,7 +42,7 @@ The Gauge Report Item is a [data item](slug:telerikreporting/designing-reports/c
 	- [`Thickness`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_thickness) - Represents the thickness of the needle as a percentage ratio to the total gauge radius.
 	- [`Style`](/api/telerik.reporting.radialgaugeneedle#telerik_reporting_radialgaugeneedle_style) - Represents a [`Style`](/api/telerik.reporting.drawing.style) object used to style the gauge needle.
 
-> note Starting with [Telerik Reporting R2 2023 SP1 (17.1.23.718)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-sp1-17-1-23-718), the needle settings are exposed in the `Needle` property through the dedicated [`RadialGaugeNeedle`](/api/telerik.reporting.radialgaugeneedle) class. The previous `NeedleLength`, `NeedlePointRadius`, `NeedleStyle`, and `NeedleThickness` properties on `RadialGauge` have been removed.
+> note Starting with [Telerik Reporting R2 2023 SP1 (17.1.23.718)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2023-sp1-17-1-23-718), the needle settings are exposed in the `Needle` property through the dedicated [RadialGaugeNeedle](/api/telerik.reporting.radialgaugeneedle) class. The previous `NeedleLength`, `NeedlePointRadius`, `NeedleStyle`, and `NeedleThickness` properties on `RadialGauge` have been removed.
 
 ### Properties specific to the Presentation
 

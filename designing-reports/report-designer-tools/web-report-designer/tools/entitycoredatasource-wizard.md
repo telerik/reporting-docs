@@ -23,7 +23,7 @@ When started, the application that hosts the Web Report Designer will try to res
 1. Add the `DbContext` class library as a reference to the host project, or copy it through a post-build action to the output directory of the application. If the assembly depends on other assemblies (for example, the Entity Framework Core runtime and its database provider), you must also make sure that the dependent assemblies are available next to it.
 1. Register the assembly in the application configuration file so the designer can discover the `DbContext` types it contains.
 
-	The default .NET applications configuration is the `appsettings.json` file:
+	The default .NET application's configuration is the `appsettings.json` file:
 
 	```JSON
 	"telerikReporting": {

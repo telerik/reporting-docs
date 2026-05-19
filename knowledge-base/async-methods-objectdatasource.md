@@ -1,7 +1,7 @@
 ---
 title: Using Async Methods with ObjectDataSource
 page_title: How to Use Async Methods with ObjectDataSource
-description: "Learn how to work with async methods in Telerik Reporting ObjectDataSource when binding data."
+description: "Learn how to work with async methods in Telerik Reporting ObjectDataSource when binding data. Async methods are natively supported as of 2026 Q1 (20.0.26.402)."
 slug: objectdatasource-does-not-support-async-methods
 tags: telerik, reporting, objectdatasource, async, await, task, data binding
 published: True
@@ -17,6 +17,10 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Version</td>
+			<td>Prior to 20.0.26.402</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -26,13 +30,15 @@ When configuring an [ObjectDataSource](slug:telerikreporting/designing-reports/c
 
 ## Cause
 
-The ObjectDataSource component does not currently support async methods. The reporting engine expects synchronous data retrieval and does not automatically await Task objects returned by async methods.
+In versions prior to 2026 Q1 (20.0.26.402), the ObjectDataSource component does not support async methods. The reporting engine expects synchronous data retrieval and does not automatically await `Task` objects returned by async methods.
+
+> As of [Telerik Reporting 2026 Q1 (20.0.26.402)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-402)), the ObjectDataSource component natively supports async methods that return `Task` and `ValueTask`. No workaround is needed for that version and later.
 
 ## Solution
 
-If possible, use synchronous methods for data retrieval with ObjectDataSource. 
+If you are using Telerik Reporting 2026 Q1 (20.0.26.402) or later, async methods returning `Task` and `ValueTask` are supported natively. No changes are required.
 
-If you need to work with existing async methods, you can create a synchronous wrapper method:
+If you are using an earlier version and cannot upgrade, use synchronous methods for data retrieval with ObjectDataSource. If you need to work with existing async methods, you can create a synchronous wrapper method:
 
 ````C#
 public class MyData

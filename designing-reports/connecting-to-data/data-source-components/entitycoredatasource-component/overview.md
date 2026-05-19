@@ -62,23 +62,22 @@ The following snippets show the minimal `DbContext` shape that the component can
 * Code First scenario:
 
 	```CSharp
-	public class AdventureWorksDbContext : DbContext
+	public class AppDbContext : DbContext
 	{
-		public AdventureWorksDbContext()
+		public AppDbContext()
 		{
 		}
 
-		public AdventureWorksDbContext(string connectionString)
+		public AppDbContext(string connectionString)
 			: base(BuildOptions(connectionString))
 		{
 		}
 		
-		public DbSet<Customer> Customers => Set<Customer>();
-		public DbSet<Order> Orders => Set<Order>();
+		public DbSet<Person> People => Set<Person>();
 
-		private static DbContextOptions<AdventureWorksDbContext> BuildOptions(string connectionString)
+		private static DbContextOptions<AppDbContext> BuildOptions(string connectionString)
 		{
-			return new DbContextOptionsBuilder<AdventureWorksDbContext>()
+			return new DbContextOptionsBuilder<AppDbContext>()
 				.UseSqlServer(connectionString)
 				.Options;
 		}
@@ -88,19 +87,18 @@ The following snippets show the minimal `DbContext` shape that the component can
 * Database First scenario:
 
 	```CSharp
-	public class AdventureWorksDbContext : DbContext
+	public class AppDbContext : DbContext
 	{
-		public AdventureWorksDbContext()
+		public AppDbContext()
 		{
 		}
 
-		public AdventureWorksDbContext(DbContextOptions<AdventureWorksDbContext> options)
+		public AppDbContext(DbContextOptions<AppDbContext> options)
 			: base(options)
 		{
 		}
 
-		public DbSet<Customer> Customers => Set<Customer>();
-		public DbSet<Order> Orders => Set<Order>();
+		public DbSet<Person> People => Set<Person>();
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{

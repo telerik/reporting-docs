@@ -12,7 +12,7 @@ reportingArea: General
 
 # Connecting to a DbContext with the EntityCoreDataSource Component
 
-This article describes how to connect the `EntityCoreDataSource` component to an [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) `DbContext` for both the **Code First** and **Database First** workflows. The examples use an `AdventureWorksDbContext` that exposes a `Products` `DbSet<T>` and a custom queryable projection.
+This article describes how to connect the `EntityCoreDataSource` component to an [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) `DbContext` for both the **Code First** and **Database First** workflows.
 
 ## Configuring the Component in the Designer
 
@@ -20,31 +20,9 @@ Ensure your project fulfills the [DbContext Requirements](slug:entitycoredatasou
 
 The simplest way to configure `EntityCoreDataSource` in either the [Standalone Report Designer (.NET)](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) is through the wizard. The wizard starts automatically when you create a new **Entity Framework Core Data Source** from the toolbox, and you can launch it again later from the **Configure** option of the data source context menu.
 
-The wizard walks you through the following pages:
-
-1. **Choose Your Data Connection** Select the connection string source for the report — a literal value, a named entry from the configuration file, or none if the `DbContext` resolves its own connection.
-
-	![The 'Choose Your Data Connection' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected existing local data connection.](../../../images/configure-entity-core-ds-choose-data-connection.png)
-
-1. **Choose a DbContext** Select the `DbContext` type from the assemblies referenced by the report project.
-
-	![The 'Choose a DbContext' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected context.](../../../images/configure-entity-core-ds-choose-dbcontext.png)
-
-1. **Choose a context member** Select the `DbSet<T>`, queryable property, or method that returns the data for the report.
-
-	![The 'Choose a context member' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected existing DbSet.](../../../images/configure-entity-core-ds-choose-context-member.png)
-
-1. **Configure Data Source Parameters** (_optional_) Map any method arguments to [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) or literal values.
-
-	![The optional 'Configure Data Source Parameters' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](../../../images/configure-entity-core-ds-configure-parameters.png)
-
-1. **Configure Design Time Parameters** (_optional_) Provide design-time values used to render the live preview.
-
-	![The optional 'Configure Design Time Parameters' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](../../../images/configure-entity-core-ds-configure-design-parameters.png)
-
-1. **Preview data source results** Preview first 100 data rows based on the design-time parameter values.
-
-	![The 'Preview data source results' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](../../../images/configure-entity-core-ds-preview.png)
+The wizard walks you through the process as explained in:
+* [Standalone Report Designer for .NET EntityCoreDataSource Wizard](slug:desktop-entitycoredatasource-wizard)
+* [Web Report Designer EntityCoreDataSource Wizard](slug:wrd-entitycoredatasource-wizard)
 
 After the wizard completes, the component appears in the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) with the schema of the selected entity, and the report data items can bind to its fields.
 
@@ -63,8 +41,8 @@ The simplest configuration uses the parameterless constructor and assigns at lea
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
 {
-    Context = typeof(AdventureWorksDbContext),
-    ContextMember = "Products"
+    Context = typeof(AppDbContext),
+    ContextMember = "People"
 };
 ```
 
@@ -72,9 +50,9 @@ Use the three-argument constructor when you also need to set a connection string
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource(
-    "Server=.;Database=AdventureWorks;Integrated Security=True;TrustServerCertificate=True",
-    typeof(AdventureWorksDbContext),
-    "Products");
+	"Server=.;Database=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True",
+	typeof(AppDbContext),
+	"People");
 ```
 
 ## Binding to a DbContext Type Versus an Instance
@@ -85,12 +63,12 @@ The `Context` property is typed as `object` and accepts either a `Type` referenc
 - When you supply an **instance**, the application owns the lifetime of the context. The component does not call `Dispose` on the supplied instance.
 
 ```CSharp
-var context = new AdventureWorksDbContext(connectionString);
+var context = new AppDbContext(connectionString);
 
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
 {
     Context = context,
-    ContextMember = "Products"
+    ContextMember = "People"
 };
 
 // You have to dispose the context explicitly when done with the report.

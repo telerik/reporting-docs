@@ -21,20 +21,20 @@ A typical EF Core `DbContext` reads its connection string from `appsettings.json
 To overcome this, the `EntityCoreDataSource` component exposes a `ConnectionString` property. The configured value is forwarded to the `DbContext` constructor that accepts a `string` argument at processing time. The `DbContext` must therefore expose such a constructor, as shown in the following Code First sample:
 
 ```CSharp
-public class AdventureWorksDbContext : DbContext
+public class AppDbContext : DbContext
 {
-    public AdventureWorksDbContext()
+    public AppDbContext()
     {
     }
 
-    public AdventureWorksDbContext(string connectionString)
+    public AppDbContext(string connectionString)
         : base(BuildOptions(connectionString))
     {
     }
 
-    private static DbContextOptions<AdventureWorksDbContext> BuildOptions(string connectionString)
+    private static DbContextOptions<AppDbContext> BuildOptions(string connectionString)
     {
-        return new DbContextOptionsBuilder<AdventureWorksDbContext>()
+        return new DbContextOptionsBuilder<AppDbContext>()
             .UseSqlServer(connectionString)
             .Options;
     }
@@ -48,17 +48,17 @@ Assign the connection string in code through either the property setter or the t
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
 {
-    Context = typeof(AdventureWorksDbContext),
-    ContextMember = "Products",
-    ConnectionString = "Server=.;Database=AdventureWorks;Integrated Security=True;TrustServerCertificate=True"
+    Context = typeof(AppDbContext),
+    ContextMember = "People",
+    ConnectionString = "Server=.;Database=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True"
 };
 ```
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource(
-    "Server=.;Database=AdventureWorks;Integrated Security=True;TrustServerCertificate=True",
-    typeof(AdventureWorksDbContext),
-    "Products");
+    "Server=.;Database=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True",
+    typeof(AppDbContext),
+    "People");
 ```
 
 The wizard writes the value as an attribute on the `EntityCoreDataSource` element of the `.trdp` or `.trdx` definition. To centralize the value, store it in the configuration file of the report-hosting process and read it at startup before assigning it to the `ConnectionString` property.

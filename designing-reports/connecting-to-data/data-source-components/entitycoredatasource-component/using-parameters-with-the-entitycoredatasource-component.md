@@ -21,33 +21,33 @@ This article explains how to pass values from [Report Parameters](slug:telerikre
 Add a method or queryable property on the `DbContext` that accepts the values you need to filter by. The names and types of the data source parameters must match the names and types of the corresponding method arguments exactly; otherwise the component throws an exception at runtime.
 
 ```CSharp
-public partial class AdventureWorksDbContext : DbContext
+public partial class AppDbContext : DbContext
 {
-    public IQueryable<Product> GetProductsByCategory(int categoryId)
+    public IQueryable<Person> QueryPeopleWithSalaryAbove(decimal threshold)
     {
-        return this.Products.Where(p => p.CategoryId == categoryId);
+        return this.Persons.Where(p => p.Salary > threshold);
     }
 }
 ```
 
 ## Mapping Report Parameters to the Data Source
 
-Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) by setting the value to an expression such as `=Parameters.CategoryId.Value`:
+Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) by setting the value to an expression such as `=Parameters.threshold.Value`:
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
 {
-    Context = typeof(AdventureWorksDbContext),
-    ContextMember = "GetProductsByCategory"
+    Context = typeof(AppDbContext),
+    ContextMember = "QueryPeopleWithSalaryAbove"
 };
 
-dataSource.Parameters.Add("categoryId", typeof(int), "= Parameters.CategoryId.Value");
+dataSource.Parameters.Add("threshold", typeof(decimal), "= Parameters.threshold.Value");
 ```
 
 You can also pass literal values when the data source must execute with a fixed argument:
 
 ```CSharp
-dataSource.Parameters.Add("categoryId", typeof(int), 5);
+dataSource.Parameters.Add("threshold", typeof(decimal), 60000);
 ```
 
 ## Pushing Filtering to the Server

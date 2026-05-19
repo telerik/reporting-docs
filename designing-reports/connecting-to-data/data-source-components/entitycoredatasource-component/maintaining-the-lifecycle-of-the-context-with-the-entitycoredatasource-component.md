@@ -33,8 +33,8 @@ When you assign a `Type` to the `Context` property (or pass one to the construct
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
 {
-    Context = typeof(AdventureWorksDbContext),
-    ContextMember = "Products"
+	Context = typeof(AppDbContext),
+	ContextMember = "People"
 };
 ```
 
@@ -43,12 +43,12 @@ var dataSource = new Telerik.Reporting.EntityCoreDataSource
 When you assign a live `DbContext` instance to the `Context` property, the application is responsible for disposing it. The component does not call `Dispose` on a context it did not create. Use this pattern when the context is wired into your application's dependency-injection container and must follow the container's scope.
 
 ```CSharp
-var context = serviceProvider.GetRequiredService<AdventureWorksDbContext>();
+var context = serviceProvider.GetRequiredService<AppDbContext>();
 
 var dataSource = new Telerik.Reporting.EntityCoreDataSource
 {
-    Context = context,
-    ContextMember = "Products"
+	Context = context,
+	ContextMember = "People"
 };
 
 // Use the data source while the context is alive, then dispose

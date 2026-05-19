@@ -57,7 +57,7 @@ To consume a `DbContext` with the `EntityCoreDataSource` component, the type mus
 - The `DbContext` exposes the entity sets you want to report on as `DbSet<T>` properties, or projects them through `IQueryable<T>` properties.
 - The `DbContext` exposes a **parameterless constructor** and either a **constructor that accepts a connection string** (typical for the Code First approach) or a **constructor that accepts a `DbContextOptions<TContext>`** (typical for the Database First approach). A constructor that accepts a `string` is required when the design-time and runtime connection strings differ, because the component invokes it after assigning the value of `ConnectionString`.
 
-The following snippets show the minimal `DbContext` shape that the component can consume in:
+The following snippets show the minimal `DbContext` shape that the component can consume:
 
 * Code First scenario:
 

@@ -18,6 +18,8 @@ The `ObjectDataSource` component accepts input parameters at run time and manage
 
 > The [ObjectDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard) can detect parameters of the data-retrieval method, and it will ask you to provide values for them at __Configure Data Source Parameters__ step.
 
+>caution Only simple built-in types (such as `string`, `int`, `double`, `decimal`, `DateTime`, `bool`) are supported as method parameter types. Methods with complex or custom parameter types cannot be configured through the wizard and will fail at runtime.
+
 Here is an example of programmatically setting the ObjectDataSource’s parameters:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToObjectDataSourceParameters}}

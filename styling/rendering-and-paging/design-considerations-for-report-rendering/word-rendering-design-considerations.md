@@ -87,7 +87,7 @@ By default, a raster fallback image is not included alongside the SVG to reduce 
 
 > note Shape items in the Word rendering extension already use native DrawingML vector paths and are not affected by the `UseSvgImages` setting.
 
-> note When an item uses a sizing mode other than `Stretch`, the rendering extension falls back to raster images automatically due to SVG path limitations.
+> note The rendering extension falls back to raster images when the SVG content cannot be stretched to the item bounds. For Barcode items, this means the [`Stretch`](slug:telerikreporting/designing-reports/report-structure/barcode/overview) property must remain enabled for SVG output. Graph, Gauge, and [Cross-Section items](slug:telerikreporting/designing-reports/report-structure/cross-section-item) do not expose a shared public `Sizing` property in their item docs; for those items, the fallback is renderer-driven when their generated SVG cannot be stretched to fit the item bounds.
 
 ## Interactivity
 

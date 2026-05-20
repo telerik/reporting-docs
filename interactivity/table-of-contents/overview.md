@@ -191,3 +191,4 @@ You can add a table of contents to the report and click on entries in the table 
 ## See Also
 
 - [How to Add a Table of Contents to Report Book](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book)
+- [Create a Feature Report with a Custom TOC Level](slug:create-feature-report-custom-toc-level)

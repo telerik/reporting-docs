@@ -71,7 +71,7 @@ var dataSource = new Telerik.Reporting.EntityCoreDataSource
     ContextMember = "People"
 };
 
-// You have to dispose the context explicitly when done with the report.
+// You have to dispose the context manually after rendering the report.
 ```
 
 ## Code First Versus Database First

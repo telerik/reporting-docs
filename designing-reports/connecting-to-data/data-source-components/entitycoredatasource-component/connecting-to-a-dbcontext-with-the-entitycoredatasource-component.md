@@ -59,7 +59,7 @@ var dataSource = new Telerik.Reporting.EntityCoreDataSource(
 
 The `Context` property is typed as `object` and accepts either a `Type` reference or a live `DbContext` instance:
 
-- When you supply a **type**, the component instantiates the `DbContext`, holds it for the duration of report processing, and disposes it automatically. This is the recommended pattern because it preserves [lazy loading](slug:entitycoredatasource-context-lifecycle) for the duration of report processing.
+- When you supply a **type**, the component instantiates the `DbContext`, holds it for the duration of report processing, and disposes it automatically. This is the recommended pattern because it preserves [lazy loading](slug:entitycoredatasource-context-lifecycle) throughout report processing.
 - When you supply an **instance**, the application owns the lifetime of the context. The component does not call `Dispose` on the supplied instance.
 
 ```CSharp
@@ -71,7 +71,7 @@ var dataSource = new Telerik.Reporting.EntityCoreDataSource
     ContextMember = "People"
 };
 
-// You have to dispose the context manually after rendering the report.
+// You have to dispose of the context manually after rendering the report.
 ```
 
 ## Code First Versus Database First

@@ -49,7 +49,7 @@ namespace Telerik.Reporting
 }
 ```
 
-The `Parameters` collection is inherited through `ObjectDataSourceBase` and accepts the standard fluent `Add(name, type, valueOrExpression)` overload used by every Telerik Reporting data source.
+The `Parameters` collection is available through the inherited `ObjectDataSourceBase` class. Use `Add(name, type, valueOrExpression)` to add entries.
 
 ## DbContext Requirements
 

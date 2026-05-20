@@ -18,7 +18,7 @@ The **EntityCoreDataSource** component allows you to connect report data items t
 
 The component is available both in the [Standalone Report Designer (.NET)](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) and the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) under the toolbox label **Entity Framework Core Data Source**.
 
-The `EntityCoreDataSource` component derives from `EntityDataSourceBase`, which it shares with its .NET Framework 4.6.2 equivalent, the [EntityDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview). Both components expose the same `Context`, `ContextMember`, `ConnectionString`, and `Parameters` surface; the EF Core variant targets `Microsoft.EntityFrameworkCore.DbContext` derivatives, whereas the old variant targets the .NET Framework `ObjectContext` and EF6 `DbContext`.
+> If your project targets .NET Framework, use the [EntityDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview) component instead. If you are migrating from EntityDataSource, the two components expose the same `Context`, `ContextMember`, `ConnectionString`, and `Parameters` properties, so your existing configuration carries over.
 
 ## Key Capabilities
 

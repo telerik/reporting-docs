@@ -17,7 +17,7 @@ This article explains how to specify the database connection used by the `Entity
 ## Why a Separate Connection String Is Often Required
 
 A typical EF Core `DbContext` reads its connection string from `appsettings.json` of the host application through `IConfiguration`. When the host is your own application, that file is loaded during report processing and the `DbContext` works as expected. When the host is the report designer (for example, the [Standalone Report Designer (.NET)](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)) the application's `appsettings.json` is not loaded and the connection string is no longer available.
-
+When the host is the Standalone Report Designer (.NET), the application's `appsettings.json` is not loaded and the connection string is no longer available. When the host is the Web Report Designer, `appsettings.json` is available, but the component instantiates the `DbContext` through reflection rather than dependency injection — so a `DbContext` that relies solely on injected `DbContextOptions` will also fail to connect.
 To overcome this, the `EntityCoreDataSource` component exposes a `ConnectionString` property. The configured value is forwarded to the `DbContext` constructor that accepts a `string` argument at processing time. The `DbContext` must therefore expose such a constructor, as shown in the following Code First sample:
 
 ```CSharp

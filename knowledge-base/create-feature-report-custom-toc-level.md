@@ -78,6 +78,6 @@ Level 3
 ## See Also
 
 - [Table of Contents Overview](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview)
-- [Controlled TOC Hierarchy](https://www.telerik.com/products/reporting/documentation/interactivity/table-of-contents/overview#controlled-toc-hierarchy)
-- [ReportItemBase.TocText API](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText)
-- [ReportItemBase.TocLevel API](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocLevel)
+- [Controlled TOC Hierarchy](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview#controlled-toc-hierarchy)
+- [ReportItemBase.TocText API](/api/telerik.reporting.reportitembase#telerik_reporting_reportitembase_toctext)
+- [ReportItemBase.TocLevel API](/api/telerik.reporting.reportitembase#telerik_reporting_reportitembase_toclevel)

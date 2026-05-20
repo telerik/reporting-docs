@@ -36,7 +36,7 @@ public EntityCoreDataSource(object context, string contextMember);
 public EntityCoreDataSource(string connectionString, object context, string contextMember);
 ```
 
-The simplest configuration uses the parameterless constructor and assigns at least the `Context` and `ContextMember` properties. Assign the `DbContext` type to `Context` and the name of the `DbSet<T>`, queryable property, or method to `ContextMember`:
+To create the simplest configuration, use the parameterless constructor and set the `Context` and `ContextMember` properties. Set `Context` to the `DbContext` type and `ContextMember` to the name of the `DbSet<T>`, queryable property, or method that retrieves the data:
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource

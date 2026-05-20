@@ -26,7 +26,7 @@ The component is available both in the [Standalone Report Designer (.NET)](slug:
 - **`DbContext` binding:** set the data source to a `DbContext` and specify which entity set, property, or method provides the report data. The wizard handles this through a selection UI; in code, set `Context` and `ContextMember` directly or use the relevant constructor.
 - **Connection-string injection:** configure which database connection the data source uses. Set it through the wizard, via the `ConnectionString` property in code, or as the first argument of the `EntityCoreDataSource(connectionString, context, contextMember)` constructor.
 - **Parameter passing:** add entries to the `Parameters` collection to invoke parameterized methods or queryable projections on the `DbContext`.
-- **Shared Data Source reuse:** promote an `EntityCoreDataSource` instance to a [Shared Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component) and reuse the same configuration across multiple reports.
+- **Shared Data Source reuse:** in the Web Report Designer, extract the created `EntityCoreDataSource` component to a [Shared Data Source](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component) and reuse the same configuration across multiple reports.
 
 ## Public API
 

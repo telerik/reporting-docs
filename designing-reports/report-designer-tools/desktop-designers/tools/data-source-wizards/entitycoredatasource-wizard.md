@@ -56,4 +56,4 @@ This is the last step of the wizard. After pressing the **Finish** button, the w
 
 * [DataSource Wizard Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard)
 * [EntityDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard)
-* [Standalone Report Designer for .NET](slug:standalone-report-designer-net)
+* [Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net)

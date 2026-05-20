@@ -46,7 +46,7 @@ var dataSource = new Telerik.Reporting.EntityCoreDataSource
 };
 ```
 
-Use the three-argument constructor when you also need to set a connection string in one expression:
+Use the three-argument constructor when you need to set the connection string, context type, and context member in a single call:
 
 ```CSharp
 var dataSource = new Telerik.Reporting.EntityCoreDataSource(

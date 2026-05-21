@@ -20,46 +20,16 @@ A typical EF Core `DbContext` reads its connection string from `appsettings.json
 
 To overcome this, the `EntityCoreDataSource` component exposes a `ConnectionString` property. When configuring the data source in the Web Report Designer or the Standalone Report Designer, the wizard prompts for the connection string and stores it in the report definition. At processing time, the component forwards the value to the `DbContext` constructor that accepts a `string` argument at processing time. The `DbContext` must therefore expose such a constructor, as shown in the following Code First sample:
 
-```CSharp
-public class AppDbContext : DbContext
-{
-    public AppDbContext()
-    {
-    }
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=CodeFirstAppDbContext}}
 
-    public AppDbContext(string connectionString)
-        : base(BuildOptions(connectionString))
-    {
-    }
-
-    private static DbContextOptions<AppDbContext> BuildOptions(string connectionString)
-    {
-        return new DbContextOptionsBuilder<AppDbContext>()
-            .UseSqlServer(connectionString)
-            .Options;
-    }
-}
-```
 
 ## Setting the ConnectionString Property
 
 To set the connection string in code, use either the property setter or the three-argument constructor:
 
-```CSharp
-var dataSource = new Telerik.Reporting.EntityCoreDataSource
-{
-    Context = typeof(AppDbContext),
-    ContextMember = "People",
-    ConnectionString = "Server=.;Database=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True"
-};
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringThreeArgConstructor_0}}
 
-```CSharp
-var dataSource = new Telerik.Reporting.EntityCoreDataSource(
-    "Server=.;Database=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True",
-    typeof(AppDbContext),
-    "People");
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringThreeArgConstructor_1}}
 
 The wizard stores the value as an attribute on the `EntityCoreDataSource` element of the `.trdp` or `.trdx` definition. To centralize the value and avoid embedding credentials in the file, use a named connection instead. Store it in the configuration file of the report-hosting process and read it at startup before assigning it to the `ConnectionString` property.
 

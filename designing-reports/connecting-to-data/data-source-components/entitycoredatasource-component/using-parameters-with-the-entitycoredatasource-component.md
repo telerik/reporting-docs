@@ -20,35 +20,17 @@ This article explains how to pass values from [Report Parameters](slug:telerikre
 
 Add a method or queryable property on the `DbContext` that accepts the values you need to filter by. The names and types of the data source parameters must match the names and types of the corresponding method arguments exactly; otherwise the component throws an exception at runtime.
 
-```CSharp
-public partial class AppDbContext : DbContext
-{
-    public IQueryable<Person> QueryPeopleWithSalaryAbove(decimal threshold)
-    {
-        return this.Persons.Where(p => p.Salary > threshold);
-    }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContextParameters.cs region=AppDbContextParameters}}
 
 ## Mapping Report Parameters to the Data Source
 
 Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) by setting the value to an expression such as `=Parameters.threshold.Value`:
 
-```CSharp
-var dataSource = new Telerik.Reporting.EntityCoreDataSource
-{
-    Context = typeof(AppDbContext),
-    ContextMember = "QueryPeopleWithSalaryAbove"
-};
-
-dataSource.Parameters.Add("threshold", typeof(decimal), "= Parameters.threshold.Value");
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringTwoArgConstructor_3}}
 
 You can also pass literal values when the data source must execute with a fixed argument:
 
-```CSharp
-dataSource.Parameters.Add("threshold", typeof(decimal), 60000);
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreFixedParameter}}
 
 ## Pushing Filtering to the Server
 

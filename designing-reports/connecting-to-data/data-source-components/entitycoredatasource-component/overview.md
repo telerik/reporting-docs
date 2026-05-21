@@ -69,56 +69,11 @@ The following snippets show the minimal `DbContext` shape that the component can
 
 * Code First scenario:
 
-	```CSharp
-	public class AppDbContext : DbContext
-	{
-		public AppDbContext()
-		{
-		}
-
-		public AppDbContext(string connectionString)
-			: base(BuildOptions(connectionString))
-		{
-		}
-		
-		public DbSet<Person> People => Set<Person>();
-
-		private static DbContextOptions<AppDbContext> BuildOptions(string connectionString)
-		{
-			return new DbContextOptionsBuilder<AppDbContext>()
-				.UseSqlServer(connectionString)
-				.Options;
-		}
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContextCodeFirst.cs region=CodeFirstAppDbContext}}
 
 * Database First scenario:
 
-	```CSharp
-	public class AppDbContext : DbContext
-	{
-		public AppDbContext()
-		{
-		}
-
-		public AppDbContext(DbContextOptions<AppDbContext> options)
-			: base(options)
-		{
-		}
-
-		public DbSet<Person> People => Set<Person>();
-
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		{
-			if (!optionsBuilder.IsConfigured)
-			{
-				// Replace the literal below with your own connection string or
-				// resolve it from configuration before calling UseSqlServer.
-				optionsBuilder.UseSqlServer("<your connection string>");
-			}
-		}
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContextDbFirst.cs region=DbFirstAppDbContext}}
 
 
 ## Supported Developer Platforms

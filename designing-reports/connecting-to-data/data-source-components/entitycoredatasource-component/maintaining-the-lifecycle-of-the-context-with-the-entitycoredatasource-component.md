@@ -36,7 +36,7 @@ When you assign a `Type` to the `Context` property (or pass one to the construct
 
 When you assign a live `DbContext` instance to the `Context` property, the application is responsible for disposing it. The component does not call `Dispose` on a context it did not create. Use this pattern when the context is wired into your application's dependency-injection container and must follow the container's scope.
 
-{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringThreeArgConstructor_2}}
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringTwoArgConstructor_2}}
 
 > warning Disposing the supplied `DbContext` before the report engine finishes processing the report breaks lazy loading and causes runtime exceptions. Coordinate the dispose call with the end of the report-processing pipeline.
 

@@ -38,22 +38,11 @@ public EntityCoreDataSource(string connectionString, object context, string cont
 
 To create the simplest configuration, use the parameterless constructor and set the `Context` and `ContextMember` properties. Set `Context` to the `DbContext` type and `ContextMember` to the name of the `DbSet<T>`, queryable property, or method that retrieves the data:
 
-```CSharp
-var dataSource = new Telerik.Reporting.EntityCoreDataSource
-{
-    Context = typeof(AppDbContext),
-    ContextMember = "People"
-};
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringTwoArgConstructor_0}}
 
 Use the three-argument constructor when you need to set the connection string, context type, and context member in a single call:
 
-```CSharp
-var dataSource = new Telerik.Reporting.EntityCoreDataSource(
-	"Server=.;Database=MSSQLLocalDB;Integrated Security=True;TrustServerCertificate=True",
-	typeof(AppDbContext),
-	"People");
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringThreeArgConstructor_1}}
 
 ## Binding to a DbContext Type Versus an Instance
 
@@ -62,17 +51,7 @@ The `Context` property is typed as `object` and accepts either a `Type` referenc
 - When you supply a **type**, the component instantiates the `DbContext`, holds it for the duration of report processing, and disposes it automatically. This is the recommended pattern because it preserves [lazy loading](slug:entitycoredatasource-context-lifecycle) throughout report processing.
 - When you supply an **instance**, the application owns the lifetime of the context. The component does not call `Dispose` on the supplied instance.
 
-```CSharp
-var context = new AppDbContext(connectionString);
-
-var dataSource = new Telerik.Reporting.EntityCoreDataSource
-{
-    Context = context,
-    ContextMember = "People"
-};
-
-// You have to dispose of the context manually after rendering the report.
-```
+{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringTwoArgConstructor_1}}
 
 ## Code First Versus Database First
 

@@ -25,15 +25,7 @@ When started, the application that hosts the Web Report Designer will try to res
 
 	The default .NET application's configuration is the `appsettings.json` file:
 
-	```JSON
-	"telerikReporting": {
-		"assemblyReferences": [
-			{
-				"name": "EFCoreExample"
-			}
-		]
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\efcore_appsettings.json region=RegisterEFCoreExample}}
 
 	Another option is a custom implementation of the [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) interface.
 

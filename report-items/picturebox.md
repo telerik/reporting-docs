@@ -84,30 +84,18 @@ The `Value` property accepts objects of type [`Image`](https://learn.microsoft.c
 
 You can directly assign a reference to an [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) to the `Value` property of a PictureBox.
 
-```C#
-using System.Drawing;
-Image image1 = Image.FromFile(@"C:\MyPictures\MyPicture.jpg");
-this.pictureBox1.Value = image1;
-Image image2 = Image.FromStream(imageStream);
-this.pictureBox2.Value = image2;
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=BindPictureBoxBinaryImages}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=BindPictureBoxBinaryImages}}
+
 While in design-time within the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox:
 
-```C#
-this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=Binding_to_Binary_Images}}
 
 When the database field contains a relative path, either a file path or a URI, you can utilize the [user functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) to specify the correct path to the image and then set the `Value` to the correct `=LoadImage(Fields.YourImagePathColumn)` expression.
 
-```C#
-public static Image LoadImage(string imageLocation)
-{
-	string absoluteLocation = "C:\\" + imageLocation;
-	return Image.FromFile(absoluteLocation);
-}
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=LoadImageFromPath}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=LoadImageFromPath}}
+
 ### Binding to Expressions, URIs, Base64, and SVG
 
 Alternatively, you can assign a string value to the `Value` property. This string value can be any of the following:
@@ -122,15 +110,9 @@ Alternatively, you can assign a string value to the `Value` property. This strin
 
 To sum it up, the data source column of the PictureBox can store the image object, its Base64 string representation, an SVG markup, or a relative or absolute URI pointing to the image:
 
-```C#
-this.pictureBox1.Value = "=Fields.MyImageBinary";//a binary data column
-this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
-this.pictureBox3.Value = @"C:\MyPictures\MyPicture.png";//absolute file path to a PNG file
-this.pictureBox4.Value = @"C:\MyPictures\MySVGImage.svg";//absolute file path to an SVG file
-this.pictureBox5.Value = @".\images\MyPicture.png";//relative path
-this.pictureBox6.Value = "https://www.mysite.com/images/img1.gif";//absolute URL
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=BindPictureBoxExpressions}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=BindPictureBoxExpressions}}
+
 ## Clipping, Rendering, and Positioning
 
 The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` and `ImageAlignment` properties.

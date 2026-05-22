@@ -75,7 +75,6 @@ The following snippets show the minimal `DbContext` shape that the component can
 
 	{{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContextDbFirst.cs region=DbFirstAppDbContext}}
 
-
 ## Supported Developer Platforms
 
 - .NET 8 and later

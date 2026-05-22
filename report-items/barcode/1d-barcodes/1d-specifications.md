@@ -111,41 +111,28 @@ You don't need to worry about this distinction—just use the same control chara
 
 By default, uppercase letters use Code A. To force Code B:
 
-````C#
-// Automatic: encodes "NUTMUF" as Code A, digits as Code C
-barcode.Value = "NUTMUF57156950013302";
-
-// Explicit: encodes "NUTMUF" as Code B, digits as Code C
-barcode.Value = "\u00FD" + "NUTMUF" + "\u00FE" + "57156950013302";
-````
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Code128_Force_Code_B}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Code128_Force_Code_B}}
 
 ##### Force Code A Explicitly
 
-````C#
-// Explicit Code A for letters, then Code C for digits
-barcode.Value = "\u00FC" + "NUTMUF" + "\u00FE" + "57156950013302";
-````
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Code128_Force_Code_A}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Code128_Force_Code_A}}
 
 ##### Multiple Mode Switches
 
-````C#
-// Code B → Code C → Code B
-barcode.Value = "\u00FD" + "Order" + "\u00FE" + "123456" + "\u00FD" + "Complete";
-````
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Code128_Multiple_Mode_Switches}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Code128_Multiple_Mode_Switches}}
 
 ##### Mixed Case Text (Code B Required)
 
-````C#
-// Code B is required for lowercase letters
-barcode.Value = "\u00FD" + "Hello World";
-````
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Code128_Mixed_Case_Text}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Code128_Mixed_Case_Text}}
 
 ##### Pure Numeric (Code C)
 
-````C#
-// Force Code C for maximum compression of numeric data
-barcode.Value = "\u00FE" + "1234567890";
-````
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Code128_Pure_Numeric}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Code128_Pure_Numeric}}
 
 > **Important:** Code C requires an even number of digits. If you have an odd number, the last digit cannot be encoded in Code C.
 
@@ -198,9 +185,7 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and Co
 
 If you have a multi-part GS1-128 barcode that requires the FNC1 control character as a delimiter between the different parts, you have to insert it manually.
 
-```C#
-this.Barcode1.Value = "1234" + "\u00F7" + "5678";
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=SetBarcodeValue}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=SetBarcodeValue}}
 ## See Also
 

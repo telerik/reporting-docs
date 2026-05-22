@@ -81,11 +81,11 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 
 1. Add a "Download secure file" task and set the output variable's name to `telerikLicense`.
 
-   ![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
+	![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
 
 1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable:
 
-   ![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
+	![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
 
 The script to set the environment variable is quoted below:
 
@@ -107,27 +107,7 @@ As of version **1.6.7**, [Telerik.Licensing](https://www.nuget.org/packages/Tele
 
 Invoke the `Register` method in the body of the function where Telerik Reporting code will be executed. This way, the Telerik license will be validated, and the watermark should not be printed (for licensed users) in the generated document:
 
-```C#
-namespace LicensingInLambda;
-
-public class Function
-{
-    public string FunctionHandler(string input, ILambdaContext context)
-    {
-        // Lambda function entry point
-
-        // This requires Telerik.Licensing to be added to the function project
-        TelerikLicensing.Register();
-
-        // TODO: Reporting - generate PDF here
-
-        var entryAssembly = Assembly.GetEntryAssembly();
-        var name = entryAssembly?.GetName();
-
-        return $"Entry assembly: {entryAssembly?.GetName()} ... {Class1.DoYourMagic()}";
-    }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\AddLicenseKey.cs region=Using_TelerikLicensing_Register_method}}
 
 ## See Also
 

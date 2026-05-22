@@ -22,10 +22,8 @@ You can create a custom component, inheriting a Telerik Reporting Data Source co
 1. In the **Add New Item** dialog box, choose a **Component Class** and click **Add**. The new file is added to the project and automatically opened in Visual Studio.
 1. Change the base class from `Component` to the appropriate Telerik Reporting Data Source component (`Telerik.Reporting.SqlDataSource`, `Telerik.Reporting.ObjectDataSource`, `Telerik.Reporting.EntityDataSource`, `Telerik.Reporting.OpenAccessDataSource`) as shown in the following code snippet:
 
-   ```C#
-   public partial class Component1 : Telerik.Reporting.SqlDataSource
-   ```
-   {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ReuseDataSourceComponent}}
+	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsControllerMicrosoftDataSqlClient.cs region=ReuseDataSourceComponent}}
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ReuseDataSourceComponent}}
 
 1. **Save** and **Rebuild** the project.
 1. Right click the component class ->**View Designer**.

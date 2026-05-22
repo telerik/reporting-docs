@@ -22,10 +22,10 @@ For full control, instead of using the item template, you can manually configure
 
 1. Create a sample ASP.NET Core Project targeting .NET {{site.mindotnetversion}}+ or higher. It may be an empty Web project or a Web API project.
 1. Add the required dependencies:
-   - `Telerik.WebReportDesigner.Services`
-   - `Telerik.Reporting.Services.AspNetCore`
-   - `Telerik.Reporting.JsonSerialization`
-   - `Telerik.Reporting`
+	- `Telerik.WebReportDesigner.Services`
+	- `Telerik.Reporting.Services.AspNetCore`
+	- `Telerik.Reporting.JsonSerialization`
+	- `Telerik.Reporting`
 
 When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 
@@ -39,15 +39,15 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 1. The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer Service functionality. Ensure that the application is configured for WebAPI controllers:
 
-   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddControllers}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddControllers}}
 
 1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` is configured for API controllers by adding routing and endpoint configuration:
 
-   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=RestServiceUseUseRoutingAndEndpoints}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=RestServiceUseUseRoutingAndEndpoints}}
 
 1. Assure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
-   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 ## Add Configuration Settings in the Startup.cs file
 
@@ -63,11 +63,11 @@ To activate JSON file configuration with a different name, for example, `reporti
 
 1. Add a `ResolveSpecificReportingConfiguration` method in a separate class/file or directly in the `Startup.cs` file
 
-   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ResolveSpecificReportingConfiguration}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ResolveSpecificReportingConfiguration}}
 
 1. Add the required services in the `ConfigureServices` method
 
-   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ConfigureServicesMethod}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ConfigureServicesMethod}}
 
 ## Setting up the Report Designer REST service:
 
@@ -77,7 +77,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Implement a Report Designer controller. Right-click on the `Controllers` folder and add a new item: Add > New item... > **Web API Controller Class** item. Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the project.
 1. Inherit the [`ReportDesignerControllerBase`](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the [`ReportServiceConfiguration`](/api/telerik.reporting.services.reportserviceconfiguration), there is another configuration instance named [`ReportDesignerServiceConfiguration`](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), which will initialize the definition storage. This is the class responsible for opening, editing, and saving the report definitions. This is how a basic implementation of the controller should look like the following:
 
-   {{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerControllerEmpty.cs region=ReportDesignerControllerEmpty}}
+	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerControllerEmpty.cs region=ReportDesignerControllerEmpty}}
 
 1. To ensure the service operates, run the application and navigate to URL `{applicationRoot}/api/reportdesigner/cultureContext`. It should return a JSON representing the separators determined by the current culture, for example:
 
@@ -89,11 +89,9 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Add TRDP or TRDX report definitions in the dedicated folder, specified in the DefinitionStorage and `UriReportSourceResolver` of the services configurations. In the sample code, this is
 
-   ```C#
-   Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports")
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=Adding_the_Web_Report_Designer}}
 
-   and corresponds to the folder _Reports_ in the _wwwroot_ folder. Add the latter to the main application folder if it doesn't exist. You may add to the _Reports_ folder one of our demo reports that can be found by default in _{Telerik Reporting installation path}\Report Designer\Examples_.
+	and corresponds to the folder _Reports_ in the _wwwroot_ folder. Add the latter to the main application folder if it doesn't exist. You may add to the _Reports_ folder one of our demo reports that can be found by default in _{Telerik Reporting installation path}\Report Designer\Examples_.
 
 1. Add a new HTML Page for the Web Report Designer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file `index.html`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 

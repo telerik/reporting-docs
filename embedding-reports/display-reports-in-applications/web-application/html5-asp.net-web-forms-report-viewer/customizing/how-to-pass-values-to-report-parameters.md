@@ -50,15 +50,7 @@ To give an example, we will use the Invoice report from our examples and will up
 
 1. Add code for updating the `ReportSource.Parameters` collection in the code behind:
 
-	```C#
-	protected void Page_Load(object sender, EventArgs e)
-	{
-		if (!IsPostBack)
-		{
-			this.reportViewer1.ReportSource.Parameters.Add("OrderNumber", this.invoiceId.Value);
-		}
-	}
-	```
+	{{source=CodeSnippets\MvcCS\Views\WebForms\InvoiceParameters.aspx.cs region=PageLoadPassReportParameters}}
 	{{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
 
 1. Add the required scripts and stylesheets:

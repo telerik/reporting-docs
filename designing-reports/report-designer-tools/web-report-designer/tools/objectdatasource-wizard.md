@@ -23,67 +23,11 @@ In this example, we will use a `.NET Standard 2.0 Class Library` which is suitab
 1. Open Visual Studio and create a new `.NET Standard 2.0 Class Library`. Name the project **CarObjects**.
 1. Add a new class named **Car** which will contain the model of the car.
 
-   ```C#
-   public class Car
-   {
-   	string manufacturer;
-   	string model;
-   	int year;
-   	string imageUrl;
-   	ArrayList availableColor;
-   	public Car(string manufacturer, string model, int year, string imageUrl, string[] availableColor)
-   	{
-   		this.manufacturer = manufacturer;
-   		this.model = model;
-   		this.year = year;
-   		this.imageUrl = imageUrl;
-   		this.AvailableColor = new ArrayList(availableColor);
-   	}
-   	public string Model
-   	{
-   		get { return this.model; }
-   		set { this.model = value; }
-   	}
-   	public string Manufacturer
-   	{
-   		get { return this.manufacturer; }
-   		set { this.manufacturer = value; }
-   	}
-   	public int Year
-   	{
-   		get { return this.year; }
-   		set { this.year = value; }
-   	}
-   	public string ImageUrl
-   	{
-   		get { return this.imageUrl; }
-   		set { this.imageUrl = value; }
-   	}
-   	public ArrayList AvailableColor
-   	{
-   		get { return this.availableColor; }
-   		set { this.availableColor = value; }
-   	}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\ObjectDsExamples.cs region=Creating_the_DataSource}}
 
 1. Add another class named **Cars**. It will contain a list with cars.
 
-   ```C#
-   public class Cars : List<Car>
-   {
-   	public Cars()
-   	{
-   		Car car;
-   		car = new Car("Honda", "NSX GT", 2003, "https://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
-   		, new string[] { "Black", "Red", "White", "Orange" });
-   		this.Add(car);
-   		car = new Car("Nissan", "Skyline R34 GT-R", 2005, "https://www.telerik.com/images/reporting/cars/EVLR34_1.jpg"
-   		, new string[] { "Black", "White" });
-   		this.Add(car);
-   	}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\ObjectDsExamples.cs region=Creating_the_DataSource_2}}
 
 1. Build the project.
 
@@ -96,7 +40,7 @@ When started, the application that hosts the Web Report Designer will try to res
 1. You need to add the assembly as a reference to the project or copy it through a post-build action to the output directory of the application. Note that if the assembly depends on other assemblies, you will also have to add the dependent assemblies to the working folder.
 1. In order to use the custom assembly for ObjectDataSource, it needs to be registered in the application's configuration file.
 
-   - For.NET Core applications, this is done in the `appsettings.json` file:
+	- For.NET Core applications, this is done in the `appsettings.json` file:
 
      ```JSON
      "telerikReporting": {
@@ -108,9 +52,9 @@ When started, the application that hosts the Web Report Designer will try to res
      }
      ```
 
-     Another option is by custom implementation of the [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-7.0) interface.
+	Another option is by custom implementation of the [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-7.0) interface.
 
-   - For.NET Framework projects, the configuration should be added to the `web.config` file.
+	- For.NET Framework projects, the configuration should be added to the `web.config` file.
 
      ```XML
      <configuration>
@@ -128,7 +72,7 @@ When started, the application that hosts the Web Report Designer will try to res
      </configuration>
      ```
 
-   We are ready with the configuration. Now, let's step to the wizard.
+	We are ready with the configuration. Now, let's step to the wizard.
 
 ## Adding the ObjectDataSource through the Wizard
 

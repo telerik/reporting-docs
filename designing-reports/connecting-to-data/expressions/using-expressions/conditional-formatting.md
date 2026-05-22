@@ -23,15 +23,15 @@ To make styles conditional, use an expression instead of a static value for the 
 1. The [__Conditional Formatting Rules...__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog) dialog appears on the screen.
 1. Enter the conditional expression:
 
-   `=Fields.Profit`
+	`=Fields.Profit`
 
 1. Enter the operator:
 
-   `<`
+	`<`
 
 1. Enter the value expression:
 
-   `=0`
+	`=0`
 
 1. In the **Edit Style** dialog select Red color for the Background.
 
@@ -39,22 +39,13 @@ To make styles conditional, use an expression instead of a static value for the 
 
 1. To use Bindings, we need to implement a helper User Function:
 
-   ```C#
-   public static Color ColorFromName(string colorName)
-   {
-   	if (!string.IsNullOrEmpty(colorName))
-   	{
-   		return Color.FromName(colorName);
-   	}
-   	return Color.Transparent;
-   }
-   ```
-   {{source=CodeSnippets\VB\API\Telerik\Reporting\DataObjectExpressionSnippets.vb region=ColorFromNameFunction}}
+	{{source=CodeSnippets\Blazor\Docs\Reports\SampleReport.Designer.cs region=ColorFromNameFunction}}
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\DataObjectExpressionSnippets.vb region=ColorFromNameFunction}}
 
 1. In the **Bindings Editor** select the **Style.BackGroundColor** property.
 1. Enter the next expression:
 
-   `=If(Fields.Profit < 0, ColorFromName("Red"), ColorFromName("White"))`
+	`=If(Fields.Profit < 0, ColorFromName("Red"), ColorFromName("White"))`
 
 ## See Also
 

@@ -18,15 +18,10 @@ The `EntityDataSource` component enables data items to connect to an [ADO.NET En
 - **Configuring database connectivity:** the `EntityDataSource` component offers an additional level of control over the database connectivity of the Entity Data Model. You can specify a connection string or a named connection from the configuration file of the main application or website. That ensures `EntityDataSource` can establish a valid database connection both at design time and when running the report in production.
 - **Maintaining ObjectContext/DbContext lifecycle:** the `EntityDataSource` component allows the option to maintain the entire lifecycle of the `ObjectContext` or `DbContext` automatically. It can create its own instance of one of the two contexts internally, keep it alive for the duration of the report generation process, and then destroy it automatically when it is no longer needed by the reporting engine.
 
-  > When using `DbContext` by default the context class generated (Database First or Model First) provides only a default (parameterless) constructor. However, for design time purposes a constructor with a connection string (string argument) is needed so that while processing the report the correct connection string can be passed. If Code First is used there is no need for a constructor with a string parameter. That is because this approach uses connection strings without metadata (which is needed for the mapping). This means that the connection string of the context can be directly set to this connection string, without the need to be resolved first. Adding the needed constructor is as simple as it is adding the snippet below:
+	> When using `DbContext` by default the context class generated (Database First or Model First) provides only a default (parameterless) constructor. However, for design time purposes a constructor with a connection string (string argument) is needed so that while processing the report the correct connection string can be passed. If Code First is used there is no need for a constructor with a string parameter. That is because this approach uses connection strings without metadata (which is needed for the mapping). This means that the connection string of the context can be directly set to this connection string, without the need to be resolved first. Adding the needed constructor is as simple as it is adding the snippet below:
 
-  ```C#
-  partial class AdventureWorksContext
-  {
-  	public AdventureWorksContext(string connectionString) : base(connectionString) {}
-  }
-  ```
-  {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=AdventureWorksDbContextConstructor}}
+	{{source=CodeSnippets\CS\API\Telerik\Reporting\DataSourceEventSnippets.cs region=AdventureWorksDbContextConstructor}}
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=AdventureWorksDbContextConstructor}}
 
 > In order to use the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) and [Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview) the Entity Data Model should be located in a separate class library. The connectionString to the database should be copied to the config file of the report class library for the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and Preview to work.
 

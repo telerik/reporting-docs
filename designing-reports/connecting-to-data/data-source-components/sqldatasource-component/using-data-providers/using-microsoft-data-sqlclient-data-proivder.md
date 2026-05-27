@@ -31,21 +31,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 1. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) NuGet package to it and `build` the project.
 1. Register the [SqlClientFactory.Instance](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlclientfactory.instance) in the `Telerik.Reporting.Processing.Data.DbProviderFactories` using the `RegisterFactory` method within the `static` constructor of the controller that inherits from [ReportDesignerControllerBase](/api/telerik.webreportdesigner.services.controllers.reportdesignercontrollerbase). For example:
 
-   ```C#
-   [Route("api/reportdesigner")]
-   public class ReportDesignerController : ReportDesignerControllerBase
-   {
-
-   		static ReportDesignerController()
-   		{
-   			Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", Microsoft.Data.SqlClient.SqlClientFactory.Instance);
-   		}
-   		public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
-   			: base(reportDesignerServiceConfiguration, reportServiceConfiguration)
-   		{
-   		}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerControllerMicrosoftDataSqlClient.cs region=NET_Application_with_the_Web_Report_Designer}}
 
 1. If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
@@ -66,21 +52,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 1. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) NuGet package to it and `build` the project.
 1. Register the [SqlClientFactory.Instance](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlclientfactory.instance) in the `Telerik.Reporting.Processing.Data.DbProviderFactories` using the `RegisterFactory` method within the `static` constructor of the controller that inherits from [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase). For example:
 
-   ```CSharp
-   [Route("api/reports")]
-   public class ReportsController : ReportsControllerBase
-   {
-
-   		static ReportsController()
-   		{
-   			Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", Microsoft.Data.SqlClient.SqlClientFactory.Instance);
-   		}
-   		public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-   			: base(reportServiceConfiguration)
-   		{
-   		}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsControllerMicrosoftDataSqlClient.cs region=NET_Application_with_Web_Report_Viewer}}
 
 1. If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 

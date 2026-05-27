@@ -42,9 +42,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 1. This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
 1. Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
-	```C#
-	app.UseStaticFiles();
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on _wwwroot_ and **Add > New Item... > HTML Page**. Name the file **index.html** and add the HTML5 Report Viewer's initialization.
 

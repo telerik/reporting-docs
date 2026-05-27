@@ -36,42 +36,11 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 1. This tutorial relies on having already created an **ASP.NET Core Razor Pages** application. If such is not present, follow the [Get started with Razor Pages in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start) as the first step.
 1. Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
-	```C#
-	app.UseStaticFiles();
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 1. Add a new razor page to the **Pages** directory of the _Razor Pages_ application, and create a `ReportSourceModel` class in the `.cshtml.cs` file, which will be used to provide the report name and parameters.
 
-	```C#
-	public class ReportSourceModel : PageModel
-	{
-		private static readonly JsonSerializerOptions serializerOptions = new JsonSerializerOptions()
-		{
-			DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-			PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-		};
-
-	private readonly ILogger<ReportSourceModel> _logger;
-
-	public required string Report { get; set; }
-
-	public Dictionary<string, object> Parameters { get; } = new Dictionary<string, object>();
-
-	public string Serialize()
-	{
-	return JsonSerializer.Serialize(new { this.Report, this.Parameters }, serializerOptions);
-	}
-
-		public ReportSourceModel(ILogger<ReportSourceModel> logger)
-		{
-			this._logger = logger;
-		}
-
-		public void OnGet()
-		{
-		}
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\RazorPagesReportViewer.cshtml.cs region=Manual_Configuration_in_Razor_Pages_Apps_2}}
 
 1. In the razor page's `.cshtml` file, initialize the HTML5 Report Viewer and pass the `ReportSourceModel` from the `@model`:
 

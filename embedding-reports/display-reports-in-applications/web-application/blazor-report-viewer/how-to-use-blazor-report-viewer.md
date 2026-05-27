@@ -37,29 +37,27 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Adding the Blazor Report Viewer component manually
 
-1.  Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 
-1.  Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET {{site.mindotnetversion}}+ is used) can serve static files:
+1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET {{site.mindotnetversion}}+ is used) can serve static files:
 
-    ```C#
-    app.UseStaticFiles();
-    ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
-1.  Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
+1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually}}
 
-1.  Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the **@** symbol as **@@**:
+1. Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the **@** symbol as **@@**:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
-1.  Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
+1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually2}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually2}}
 
-1.  When using the Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
+1. When using the Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
-    > note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service.
+	> note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service.
 
     ```RAZOR
     @page "/"
@@ -86,7 +84,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
         Scale="1.0" />
     ```
 
-1.  When displaying reports from a Report Server instance, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
+1. When displaying reports from a Report Server instance, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
     ```RAZOR
     @page "/"
@@ -112,7 +110,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
         Scale="1.0" />
     ```
 
-1.  Finally, run the project to see the rendered report.
+1. Finally, run the project to see the rendered report.
 
 ## See Also
 

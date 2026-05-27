@@ -55,13 +55,7 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 		Server-side, you may configure the endpoint, as shown below, after ensuring the EnvironmentVariable 'RS_NET_TOKEN' is set up correctly. We strongly recommend securing the endpoint:
 
-		```C#
-		app.MapGet("/rs-token", (HttpContext context) =>
-		{
-			return Environment.GetEnvironmentVariable("RS_NET_TOKEN") ?? string.Empty;
-		})
-		.RequireAuthorization();
-		```
+		{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Configuring_the_HTML5_Report_Viewer_to_work_with_the_Report_Server_for_NET}}
 
 	- (_not recommended_) Alternatively, you may use a hardcoded _username_ and _password_ instead of Token authentication. We do not recommend this for security reasons:
 

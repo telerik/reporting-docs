@@ -17,28 +17,16 @@ The Standalone Report Designer and Standalone Report Designer for .NET support a
 
 Provided you have a report created with the Standalone Report Designer, the steps below will show you how to handle one of its events. For demonstration purposes, let's assume the report is named "CityReport" and you wish to handle its `NeedDataSource` event:
 
-1.  Create a new empty class library and choose a target framework that is compatible with your [__version of the Standalone Report Designer__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#differences-between-the-net-and-net-framework-designers-functionality). The `.NET Standard 2.0` target framework should work in both versions of the designer.
-1.  Add the `Telerik.Reporting` NuGet package to the project.
-1.  Create a new class that inherits the [`Telerik.Reporting.Report`](/api/telerik.reporting.report) class and ensure its name matches the `(Name)` property of your report.
-1.  Add a handler method for the `NeedDataSource` event.
+1. Create a new empty class library and choose a target framework that is compatible with your [__version of the Standalone Report Designer__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#differences-between-the-net-and-net-framework-designers-functionality). The `.NET Standard 2.0` target framework should work in both versions of the designer.
+1. Add the `Telerik.Reporting` NuGet package to the project.
+1. Create a new class that inherits the [`Telerik.Reporting.Report`](/api/telerik.reporting.report) class and ensure its name matches the `(Name)` property of your report.
+1. Add a handler method for the `NeedDataSource` event.
 
-    ```C#
-    namespace ClassLibrary
-    {
-    	public class CityReport : Telerik.Reporting.Report
-    	{
-    		private void CityReport_NeedDataSource(object sender, System.EventArgs e)
-    		{
-    			var processingReport = (Telerik.Reporting.Processing.Report)sender;
-    			processingReport.DataSource = new string[] { "Sofia", "London", "Tokyo" };
-    		}
-    	}
-    }
-    ```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\ObjectDsExamples.cs region=Add_event_handlers_to_reports_created_with_the_Standalone_Report_Designer}}
 
-1.  Build the project, copy the generated assembly from the bin folder to the installation directory of the Standalone Report Designer, and extend the configuration of the designer using the steps listed in the [__Extending Report Designer__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer) article.
-1.  Open the "CityReport" report with the Standalone Report Designer and set its `NeedDataSource` property to the name of the method created in the previous steps - "CityReport_NeedDataSource".
-1.  Preview the report.
+1. Build the project, copy the generated assembly from the bin folder to the installation directory of the Standalone Report Designer, and extend the configuration of the designer using the steps listed in the [__Extending Report Designer__](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer) article.
+1. Open the "CityReport" report with the Standalone Report Designer and set its `NeedDataSource` property to the name of the method created in the previous steps - "CityReport_NeedDataSource".
+1. Preview the report.
 
 ## Use event handlers from imported programmatic report definitions in the Standalone Report Designer
 

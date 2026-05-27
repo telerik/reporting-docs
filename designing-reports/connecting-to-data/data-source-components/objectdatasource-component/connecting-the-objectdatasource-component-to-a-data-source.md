@@ -23,16 +23,16 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 1. Open **Visual Studio** and create a new [Class Library](https://learn.microsoft.com/en-us/cpp/mfc/class-library-overview?view=msvc-170).
 
-   > The Standalone Report Designer for .NET Framework is a WPF application built against **.NET
-   > Framework 4.0**. For that reason, it cannot load and resolve classes from assemblies built
-   > against .NET Standard 2.1 or .NET {{site.mindotnetversion}}+. You can see the [.NET Standard compatibility chart](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) which explains how and when the assemblies can be loaded in different framework versions.
+	> The Standalone Report Designer for .NET Framework is a WPF application built against **.NET
+	> Framework 4.0**. For that reason, it cannot load and resolve classes from assemblies built
+	> against .NET Standard 2.1 or .NET {{site.mindotnetversion}}+. You can see the [.NET Standard compatibility chart](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) which explains how and when the assemblies can be loaded in different framework versions.
 
 	>The new [.NET Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) is built for .NET 10 and can resolve assemblies built with `.NET Standard`, `.NET {{site.mindotnetversion}}` and later.
 
 1. Add the following piece of code from [Bind to a BusinessObject](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject).
 
-   {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
-   {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
+	{{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
 
 1. Build the project and close it.
 
@@ -43,10 +43,10 @@ For security reasons, the ObjectDataSource can resolve only types that are decla
 - Configuration in the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview): In this case, you will need to add a reference to the Class Library project or to the dll which contains the data source definition.
 - Configuration in the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview):
 
-  1.  Open the project folder of the Class Library -> **bin** -> **Debug** and copy the dll file.
-  1.  Paste it at the installation folder of the Report Designer `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
-  1.  Open Telerik.ReportDesigner.exe.config file with a text editor.
-  1.  Add an [AssemblyReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) in **Telerik.Reporting** section of application configuration file:
+	1. Open the project folder of the Class Library -> **bin** -> **Debug** and copy the dll file.
+	1. Paste it at the installation folder of the Report Designer `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
+	1. Open Telerik.ReportDesigner.exe.config file with a text editor.
+	1. Add an [AssemblyReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) in **Telerik.Reporting** section of application configuration file:
 
       ```XML
       <?xml version="1.0"?>
@@ -99,14 +99,8 @@ Here are the steps you may follow when referencing the assembly in the project s
 
 When rendering a report relying on custom assemblies with the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) class in a [.NET application](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet), it is necessary to manually pass an [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) instance to the constructor of the `ReportProcessor` class, for example:
 
-```C#
-IConfiguration configuration = new ConfigurationBuilder()
-	.SetBasePath(Directory.GetCurrentDirectory())
-	.AddJsonFile("appsettings.json")
-	.Build();
+{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs region=Configuration_for_the_ReportProcessor_in_NET}}
 
-var reportProcessor = new ReportProcessor(configuration);
-```
 
 The `appsettings.json` configuration file provided to the `ReportProcessor` must have the assembly registered in the [assemblyReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) section as shown in the section above.
 

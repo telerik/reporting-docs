@@ -24,13 +24,7 @@ In this step, you have to specify the business object to use for your data sourc
 
 	> When the **"Show data components only"** check box is checked, only the types marked with the DataObjectAttribute are listed. This is useful for distinguishing the types appropriate for data binding from the regular ones.
 
-	```C#
-	[System.ComponentModel.DataObject()]
-	public class Cars : List<Car>;
-	{
-		....
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\DataSources\ObjectDsExamples.cs region=CarsDataObjectClass}}
 	{{source=CodeSnippets\VB\API\Telerik\Reporting\DataObjectExpressionSnippets.vb region=CarsDataObjectClass}}
 
 - **Existing data source components** This tab lists all existing components in the current report that can be used with the **ObjectDataSource** component. That includes all components from the component tray in the designer that are not data source components themselves.

@@ -83,10 +83,53 @@ You can override this method to disable the AI-powered insights functionality en
 
 For modifying dialog properties like consent messages or predefined prompts, use the [UpdateAIPrompts](#updateaipromptsclientreportsource-aithreadinfo) method instead, which provides direct access to the `AIThreadInfo` object.
 
->caption .NET
-{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs region=CreateAIThread}}
->caption .NET Framework
-{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=CreateAIThread_2}}
+```C# .NET
+/// <summary>
+/// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
+/// </summary>
+/// <returns></returns>
+public override IActionResult CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
+{
+    if (reportSource.Report == "report-with-disabled-ai-insights.trdp")
+    {
+        return StatusCode(
+            StatusCodes.Status403Forbidden,
+            new
+            {
+                message = "An error has occurred.",
+                exceptionMessage = "AI Insights functionality is not allowed for this report.",
+                exceptionType = "Exception",
+                stackTrace = (string?)null
+            }
+        );
+    }
+
+    return base.CreateAIThread(clientID, instanceID, reportSource);
+}
+```
+```C# .NET Framework
+/// <summary>
+/// Disables the AI-powered insights functionality dynamically depending on the passed <see cref="ClientReportSource"/> parameter.
+/// </summary>
+/// <returns></returns>
+public override HttpResponseMessage CreateAIThread(string clientID, string instanceID, ClientReportSource reportSource)
+{
+    if (reportSource.Report == "SampleReport.trdp")
+    {
+        var errorResponse = new
+        {
+            message = "An error has occurred.",
+            exceptionMessage = "AI Insights functionality is not allowed for this report.",
+            exceptionType = "Exception",
+            stackTrace = (string)null
+        };
+
+        return this.Request.CreateResponse(HttpStatusCode.Forbidden, errorResponse);
+    }
+
+    return base.CreateAIThread(clientID, instanceID, reportSource);
+}
+```
 
 ### UpdateAIPrompts(ClientReportSource, AIThreadInfo)
 
@@ -96,17 +139,59 @@ This is the recommended method for modifying dialog properties like consent mess
 
 #### Changing Consent Message
 
->caption .NET
-{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs region=Changing_Consent_Message}}
->caption .NET Framework
-{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=Changing_Consent_Message_2}}
+```C# .NET
+/// <summary>
+/// Overrides the default user consent message.
+/// </summary>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+```
+```C# .NET Framework
+/// <summary>
+/// Overrides the default user consent message.
+/// </summary>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    aiThreadInfo.ConsentMessage = "By using this AI functionality, you authorize the processing of any data you provide, including your prompt, for the purposes of delivering the service to you. Your use of this functionality is governed by the Progress privacy policy, available at: <a href='https://www.progress.com/legal/privacy-policy'>Privacy Policy - Progress</a>.";
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+```
 
 #### Setting Predefined Prompts Dynamically
 
->caption .NET
-{{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerController.cs region=Setting_Predefined_Prompts_Dynamically}}
->caption .NET Framework
-{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=Setting_Predefined_Prompts_Dynamically_2}}
+```C# .NET
+/// <summary>
+/// Modifies the collection of predefined prompts.
+/// </summary>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
+    {
+        aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
+    }
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+```
+```C# .NET Framework
+/// <summary>
+/// Modifies the collection of predefined prompts.
+/// </summary>
+protected override void UpdateAIPrompts(ClientReportSource reportSource, AIThreadInfo aiThreadInfo)
+{
+    if (reportSource.Report == "report-suitable-for-markdown-output.trdp")
+    {
+        aiThreadInfo.PredefinedPrompts.Add("Create a summary of the report in Markdown (.md) format.");
+    }
+
+    base.UpdateAIPrompts(reportSource, aiThreadInfo);
+}
+```
 
 ### GetAIResponse(string, string, string, string, AIQueryArgs)
 
@@ -118,17 +203,75 @@ Below are examples of common customization scenarios.
 
 #### Modifying Outgoing Prompts
 
->caption .NET
-{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs region=Modifying_Outgoing_Prompts}}
->caption .NET Framework
-{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=Modifying_Outgoing_Prompts_2}}
+```C# .NET
+/// <summary>
+/// Modifies the prompt sent from the client before passing it to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    args.Query += $"{Environment.NewLine}Keep your response concise.";
+
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+```
+```C# .NET Framework
+/// <summary>
+/// Modifies the prompt sent from the client before passing it to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    args.Query += $"{Environment.NewLine}Keep your response concise.";
+
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+```
 
 #### Token Usage Validation
 
->caption .NET
-{{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerController.cs region=Token_Usage_Validation}}
->caption .NET Framework
-{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=Token_Usage_Validation_2}}
+```C# .NET
+/// <summary>
+/// Examines the approximate token count and determines whether the prompt should be sent to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<IActionResult> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    const int MAX_TOKEN_COUNT = 500;
+    args.ConfirmationCallBack = (AIRequestInfo info) =>
+    {
+        if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
+        {
+            return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
+        }
+
+        return ConfirmationResult.ContinueResult();
+    };
+
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+```
+```C# .NET Framework
+/// <summary>
+/// Examines the approximate token count and determines whether the prompt should be sent to the LLM.
+/// </summary>
+/// <returns></returns>
+public override async Task<HttpResponseMessage> GetAIResponse(string clientID, string instanceID, string documentID, string threadID, AIQueryArgs args)
+{
+    const int MAX_TOKEN_COUNT = 500;
+    args.ConfirmationCallBack = (AIRequestInfo info) =>
+    {
+        if (info.EstimatedTokensCount > MAX_TOKEN_COUNT)
+        {
+            return ConfirmationResult.CancelResult($"The estimated token count exceeds the allowed limit of {MAX_TOKEN_COUNT} tokens.");
+        }
+
+        return ConfirmationResult.ContinueResult();
+    };
+
+    return await base.GetAIResponse(clientID, instanceID, documentID, threadID, args);
+}
+```
 
 #### RAG Optimization Monitoring
 

@@ -89,10 +89,11 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerWithRest.razor region=NativeViewerWithRESTService}}
 
-	> [!CAUTION]
+	> warning
+	>
 	> The `ReportSource` of the viewer must be set using data binding as shown in the example above: `@bind-ReportSource="@ReportSource"`.
 	>
-	> Do NOT set the `ReportSource` directly, for example: `ReportSource="@(new ReportSourceOptions("Report Catalog.trdp", new Dictionary<string, object>()))"`.
+	> Do NOT set the `ReportSource` directly, for example: `ReportSource="@(new ReportSourceOptions(\"Report Catalog.trdp\", new Dictionary<string, object>()))"`.
 	>
 	> Direct assignment introduces a circular dependency that causes endless refreshes of the Report Viewer, leading to an infinite sequence of requests to the Reporting REST Service.
 

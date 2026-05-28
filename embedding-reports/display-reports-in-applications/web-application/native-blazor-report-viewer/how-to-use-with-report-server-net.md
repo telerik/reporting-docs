@@ -28,104 +28,37 @@ The user account that will authenticate with the Report Server may be any User, 
 1. Add NuGet package reference to the **Telerik.ReportViewer.BlazorNative** package hosted on the Progress Telerik proprietary NuGet feed. Ensure that the Telerik NuGet feed is added to the NuGet Package Sources by following [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. (Optional) The [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) depends on version **9.1.0** of the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) product. If [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) is already used in your Blazor application, this step can be skipped. Otherwise, add the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) JS and its [Kendo theme](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseWithReportServerNet.html region=NativeBlazorViewerConfiguringForRSNET}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseWithReportServerNet.html region=NativeBlazorViewerConfiguringForRSNET}}
 
 1. Add the [Native Blazor Report Viewer's](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) JS and CSS dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App).
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually2}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually2}}
 
 1. Configure the project to recognize all Telerik components without explicit **@using** statements on every **.razor** file by adding the following code to your **~/\_Imports.razor**:
 
-   ```C#
-   @using Telerik.Blazor
-   @using Telerik.Blazor.Components
-   @using Telerik.ReportViewer.BlazorNative
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\TelerikLayout.razor region=NativeViewerUsingsInImports}}
 
 1. Wrap the content of the main layout file(by default, the **~/Shared/MainLayout.razor** file in the Blazor project) with a razor component called **TelerikLayout.razor**:
 
-   ```RAZOR
-   @inherits LayoutComponentBase
-
-   <TelerikRootComponent>
-   	@Body
-   </TelerikRootComponent>
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\TelerikLayout.razor region=NativeViewerTelerikLayout}}
 
 1. Set up an endpoint on the server that will securely return the token used by the Report Server for .NET to authorize. For example, create an environment variable in the `launchSettins.json` file named **'RS_NET_TOKEN**, and store the token in it. Then, the endpoint can be configured to read and return the value of the environment variable:
 
-   ```C#
-   app.MapGet("/rs-token", () =>
-   {
-   	return Environment.GetEnvironmentVariable("RS_NET_TOKEN") ?? string.Empty;
-   })
-   .RequireAuthorization();
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\Program.cs region=Get_RS_NET_TOKEN}}
 
-   For Blazor Web Assembly applications where the server is not available, the token can be injected on the `.RAZOR` page at build-time. Use `appsettings.{Environment}.json` files (they are bundled at build time), and read the token from the configuration.
+	For Blazor Web Assembly applications where the server is not available, the token can be injected on the `.RAZOR` page at build-time. Use `appsettings.{Environment}.json` files (they are bundled at build time), and read the token from the configuration.
 
 1. Configure an `HttpClient` in the `Program.cs` file that will be injected on the `.RAZOR` page on the next step when we make an HTTP request to get the token from the server.
 
-   ```C#
-   builder.Services.AddHttpClient();
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\Program.cs region=AddHttpClient}}
 
 1. Create a method in the `RAZOR` or `RAZOR.CS` file of the Blazor component that returns a `Task<string>` with the token retrieved from the Report Server:
 
-   ```C#
-   @inject HttpClient Http
-   @inject NavigationManager Nav
-
-   @code {
-   	private string? _cachedRsToken;
-   	private static readonly SemaphoreSlim _tokenLock = new(1, 1);
-
-   	// /rs-token returns plain text: token
-   	async Task<string> GetRsNetAccessToken()
-   	{
-   		if (_cachedRsToken is not null)
-   			return _cachedRsToken;
-
-   		await _tokenLock.WaitAsync();
-   		try
-   		{
-   			if (_cachedRsToken is not null) // double-check after lock
-   				return _cachedRsToken;
-
-   			var uri = Nav.ToAbsoluteUri("/rs-token");
-   			try
-   			{
-   				var raw = await Http.GetStringAsync(uri);
-   				_cachedRsToken = raw?.Trim() ?? string.Empty;
-   			}
-   			catch (Exception)
-   			{
-   				_cachedRsToken = string.Empty;
-   			}
-   		}
-   		finally
-   		{
-   			_tokenLock.Release();
-   		}
-
-   		return _cachedRsToken;
-   	}
-   }
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerWithRsNet.razor region=GetRsNetAccessToken}}
 
 1. Use the `ReportServerSettings` fragment to provide the URL to the Report Server for .NET, and the `GetRsNetAccessToken` function that the Native Blazor Report Viewer will execute internally to retrieve the token.
 
-   ```RAZOR
-   <ReportViewer
-   	@bind-ReportSource="@ReportSource"
-   	ServiceType="@ReportViewerServiceType.ReportServer"
-   	Height="800px"
-   	Width="100%">
-   	<ReportViewerSettings>
-   		<ReportServerSettings Url="http://yourreportserver:port/" GetPersonalAccessToken="GetRsNetAccessToken" ></ReportServerSettings>
-   	</ReportViewerSettings>
-   </ReportViewer>
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerWithRsNet.razor region=UseReportServerSettings}}
 
 1. Finally, run the project to see the rendered report.
 

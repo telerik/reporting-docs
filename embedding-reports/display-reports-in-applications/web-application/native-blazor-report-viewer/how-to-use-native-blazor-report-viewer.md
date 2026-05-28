@@ -15,7 +15,7 @@ The Native Blazor Report Viewer is a component built entirely with Blazor and Te
 
 **Key Benefits:**
 
-- Pure Blazor implementation with no HTML5/JavaScript dependencies
+- Pure Blazor implementation (no HTML5 viewer wrapper; only the standard Telerik UI for Blazor JS/CSS dependencies)
 - Seamless integration with Telerik UI for Blazor applications  
 - Full support for both Blazor Server and WebAssembly hosting models
 - Can connect to either a Reporting REST Service or Report Server

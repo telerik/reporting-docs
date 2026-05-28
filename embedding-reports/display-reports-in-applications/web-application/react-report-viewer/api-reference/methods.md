@@ -2,9 +2,9 @@
 title: Methods
 page_title: Methods of the React Report Viewer
 description: "Find a list of all of the available React Report Viewer methods and an example how to call them. Understand what each method does, using the provided descriptions."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/methods
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/methods
 tags: react, report, viewer, methods
-published: True
+published: false
 reportingArea: React
 position: 2
 previous_url: /react-report-viewer-api-reference-methods

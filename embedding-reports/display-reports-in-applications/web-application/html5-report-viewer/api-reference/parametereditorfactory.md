@@ -2,9 +2,9 @@
 title: parameterEditorFactory
 page_title: parameterEditorFactory of the HTML5 Report Viewer explained
 description: "Learn what the parameterEditorFactory of the Telerik Reporting HTML5 Report Viewer does and how to use it."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditorfactory
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditorfactory
 tags: parametereditorfactory
-published: True
+published: false
 reportingArea: HTML5
 position: 5
 previous_url: /html5-report-viewer-api-parametereditorfactory

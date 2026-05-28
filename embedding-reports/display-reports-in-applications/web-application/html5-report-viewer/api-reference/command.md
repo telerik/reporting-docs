@@ -2,9 +2,9 @@
 title: command
 page_title: command of the HTML5 Report Viewer explained
 description: "Learn what the command represents in the Telerik Reporting HTML5 Report Viewer and how to use it."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command
 tags: command
-published: True
+published: false
 reportingArea: HTML5
 position: 7
 previous_url: /html5-report-viewer-api-command

@@ -2,9 +2,9 @@
 title: sendEmailEnd(e, args)
 page_title: The sendEmailEnd(e, args) Event of the HTML5 Report Viewer explained
 description: "Learn more about the sendEmailEnd(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
 tags: sendemailend,args
-published: True
+published: false
 reportingArea: HTML5
 position: 5
 previous_url:

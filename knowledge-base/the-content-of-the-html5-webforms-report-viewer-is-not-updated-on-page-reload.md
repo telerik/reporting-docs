@@ -32,7 +32,7 @@ You may experience the problem in an attempt to refresh the page fully or partia
  
 ## Solution
 
-The HTML5 ASP.NET WebForms Report Viewer has its [PersistSession property](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) hard-coded to **True**, allowing the displayed content to be preserved between requests. 
+The HTML5 ASP.NET WebForms Report Viewer has its [PersistSession property](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) hard-coded to **True**, allowing the displayed content to be preserved between requests. 
 
 > A **fix** is available in the **R1 2017** release, so if you are experiencing this problem, please consider upgrading or use the workaround suggested below.  
   

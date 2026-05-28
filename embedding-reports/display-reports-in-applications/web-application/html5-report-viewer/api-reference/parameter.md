@@ -2,9 +2,9 @@
 title: parameter
 page_title: The parameter of the HTML5 Report Viewer explained
 description: "Learn what is the parameter of the Telerik Reporting HTML5 Report Viewer and what are its properties."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parameter
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parameter
 tags: parameter
-published: True
+published: false
 reportingArea: HTML5
 position: 4
 previous_url: /html5-report-viewer-api-parameter

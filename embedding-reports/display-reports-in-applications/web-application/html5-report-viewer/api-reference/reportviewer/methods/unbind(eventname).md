@@ -2,9 +2,9 @@
 title: unbind(eventName)
 page_title: The unbind(eventName) method of the HTML5 Report Viewer explained
 description: "Learn more about the unbind(eventName) method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname)
 tags: unbind(eventname)
-published: True
+published: false
 reportingArea: HTML5
 position: 16
 previous_url: /html5-report-viewer-reportviewer-methods-unbind-en, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname)

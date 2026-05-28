@@ -2,9 +2,9 @@
 title: reportSource()
 page_title: The reportSource() method of the HTML5 Report Viewer explained
 description: "Learn more about the reportSource() method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()
 tags: reportsource()
-published: True
+published: false
 reportingArea: HTML5
 position: 12
 previous_url: /html5-report-viewer-reportviewer-methods-reportsource, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()

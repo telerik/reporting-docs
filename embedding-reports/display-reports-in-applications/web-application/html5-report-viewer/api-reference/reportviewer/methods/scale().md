@@ -2,9 +2,9 @@
 title: scale()
 page_title: The scale() method of the HTML5 Report Viewer explained
 description: "Learn more about the scale() method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/scale()
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/scale()
 tags: scale()
-published: True
+published: false
 reportingArea: HTML5
 position: 14
 previous_url: /html5-report-viewer-reportviewer-methods-scale, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/scale()

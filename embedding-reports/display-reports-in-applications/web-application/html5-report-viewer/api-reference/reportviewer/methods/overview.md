@@ -2,9 +2,9 @@
 title: Overview
 page_title: Methods of the HTML5 Report Viewer at a Glance
 description: "Learn more about the Methods of the HTML5 Report Viewer and how you may use them to customize its appearance and functionality."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview
 tags: overview
-published: True
+published: false
 reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-reportviewer-methods, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/

@@ -2,9 +2,9 @@
 title: pageMode()
 page_title: The pageMode() method of the HTML5 Report Viewer explained
 description: "Learn more about the pageMode() method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()
 tags: pagemode()
-published: True
+published: false
 reportingArea: HTML5
 position: 9
 previous_url: /html5-report-viewer-reportviewer-methods-pagemode, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()

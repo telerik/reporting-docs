@@ -2,9 +2,9 @@
 title: interactiveActionEnter(e, args)
 page_title: The interactiveActionEnter(e, args) Event of the HTML5 Report Viewer
 description: "Learn more about the interactiveActionEnter(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)
 tags: interactiveactionenter(e,,args)
-published: True
+published: false
 reportingArea: HTML5
 position: 13
 previous_url:

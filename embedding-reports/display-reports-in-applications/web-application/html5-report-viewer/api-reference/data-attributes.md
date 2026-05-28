@@ -2,9 +2,9 @@
 title: data attributes
 page_title: data attributes of the HTML5 Report Viewer explained
 description: "Learn what the data attributes represent in the Telerik Reporting HTML5 Report Viewer and how to use them."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
 tags: data,attributes
-published: True
+published: false
 reportingArea: HTML5
 position: 2
 previous_url: /html5-report-viewer-data-attributes

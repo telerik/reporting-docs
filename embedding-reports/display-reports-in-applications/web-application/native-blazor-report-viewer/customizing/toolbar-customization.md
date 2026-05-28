@@ -43,11 +43,11 @@ The predefined set of all available tools is accessible from the `Telerik.Report
 
 ## Implementing the Customized Toolbar
 
-Use the `Tools` [option of the viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options#options) to pass a custom ordered list of Tools for the Toolbar. For example, the below code removes the _Search_, _SendEmail_ and _zoom_ functionalities from the viewer and moves the _Refresh_ in the beginning of the toolbar:
+Use the `Tools` [option of the viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options#options) to pass a custom ordered list of Tools for the Toolbar. For example, the below code removes the _Search_, _SendEmail_ and _zoom_ functionalities from the viewer and moves the _Refresh_ in the beginning of the toolbar:
 
 {{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerToolbarCustomization.razor region=NativeViewerCustomToolbar}}
 
 ## See Also
 
 - [Blazor Editor component](https://www.telerik.com/blazor-ui/editor)
-- [Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options#options)
+- [Blazor Report Viewer Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options#options)

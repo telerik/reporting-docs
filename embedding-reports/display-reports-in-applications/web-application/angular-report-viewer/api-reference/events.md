@@ -2,9 +2,9 @@
 title: Events
 page_title: Angular Report Viewer Events
 description: "Learn about what are the events exposed by the Angular Report Viewer and how to use them in your application."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
 tags: events,angular,report,viewer
-published: True
+published: false
 reportingArea: AngularWrapper
 position: 1
 previous_url: /angular-report-viewer-api-events

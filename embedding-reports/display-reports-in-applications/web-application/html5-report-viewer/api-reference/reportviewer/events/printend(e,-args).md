@@ -2,9 +2,9 @@
 title: printEnd(e, args)
 page_title: The printEnd(e, args) Event of the HTML5 Report Viewer explained
 description: "Learn more about the printEnd(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printend(e,-args)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printend(e,-args)
 tags: printend,args
-published: True
+published: false
 reportingArea: HTML5
 position: 8
 previous_url:

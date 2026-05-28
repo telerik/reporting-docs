@@ -41,7 +41,7 @@ It applies to the following viewers:
 
 ## Solution 1
 
-All HTML5-based report viewers support an authentication token configuration option that automatically appends a `Bearer` token to the `Authorization` header of each request sent to the Telerik Reporting REST service. For example, the HTML5 Report Viewer includes an [`authenticationToken` option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization). 
+All HTML5-based report viewers support an authentication token configuration option that automatically appends a `Bearer` token to the `Authorization` header of each request sent to the Telerik Reporting REST service. For example, the HTML5 Report Viewer includes an [`authenticationToken` option](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview). 
 
 >note The exact casing or naming of this option may vary across different viewer implementations. For accurate usage, refer to the specific documentation for the viewer you are integrating.
 

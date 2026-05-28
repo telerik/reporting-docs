@@ -2,9 +2,9 @@
 title: sendEmailBegin(e, args)
 page_title: The sendEmailBegin(e, args) Event of the HTML5 Report Viewer explained
 description: "Learn more about the sendEmailBegin(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)
 tags: sendemailbegin,args
-published: True
+published: false
 reportingArea: HTML5
 position: 4
 previous_url:

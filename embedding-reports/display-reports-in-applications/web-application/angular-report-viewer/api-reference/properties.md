@@ -2,9 +2,9 @@
 title: Properties
 page_title: Angular Report Viewer Properties
 description: "Learn about what are the properties exposed by the Angular Report Viewer and how you may use them to perform certain operations in code."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties
 tags: properties
-published: True
+published: false
 reportingArea: AngularWrapper
 position: 3
 previous_url: /angular-report-viewer-api-properties

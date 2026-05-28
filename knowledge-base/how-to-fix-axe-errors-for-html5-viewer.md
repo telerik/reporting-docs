@@ -111,7 +111,7 @@ They can be fixed by applying high contrast colors to the report elements in the
 
 [Accessibility](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility)
 
-[HTML5 Report Viewer options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization)
+[HTML5 Report Viewer options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview)
 
 
 

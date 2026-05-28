@@ -2,9 +2,9 @@
 title: Initialization
 page_title: HTML5 Report Viewer Options Overview
 description: "Learn what options may be set when initializing the HTML5 Report Viewer and what functionalities they control."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization
 tags: report,viewer,initialization
-published: True
+published: false
 reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-jquery-fn-telerik-reportviewer, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/, /html5-report-viewer-api-reference

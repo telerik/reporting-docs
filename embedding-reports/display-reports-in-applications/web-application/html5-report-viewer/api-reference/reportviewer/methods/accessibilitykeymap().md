@@ -2,9 +2,9 @@
 title: accessibilityKeyMap()
 page_title: The accessibilityKeyMap() method of the HTML5 Report Viewer explained
 description: "Learn more about the accessibilityKeyMap() method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap()
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap()
 tags: accessibilitykeymap()
-published: True
+published: false
 reportingArea: HTML5
 position: 1
 previous_url: /html5-report-viewer-reportviewer-methods-accessibility-keymap, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap()

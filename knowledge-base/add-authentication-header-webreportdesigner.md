@@ -53,7 +53,7 @@ window.fetch = function (url, args) {
 
 The above workaround will supply the requests made by the Web Report Designer with the `Authorization` header. When the report is previewed, the designer will load the internal [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) which does not use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for making requests, instead, it uses the [jQuery.ajax()](https://api.jquery.com/jQuery.ajax/) function and thus the requests made by the report viewer will not be affected by the fetch override function.
 
-The **HTML5 Report Viewer** exposes a dedicated property for setting a token to be passed with its requests - [authenticationToken](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization), which may be set in the [viewerInitializing](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization#viewerinitializing) event of the Web Report Designer:
+The **HTML5 Report Viewer** exposes a dedicated property for setting a token to be passed with its requests - [authenticationToken](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview), which may be set in the [viewerInitializing](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization#viewerinitializing) event of the Web Report Designer:
 
 ````JavaScript
 $(document).ready(function () {

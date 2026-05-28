@@ -2,9 +2,9 @@
 title: Options
 page_title: Options of the React Report Viewer
 description: "Find a list of all options available during the initialization of the React Report Viewer component. Understand the purpose of each option using the provided descriptions."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
 tags: react, report, viewer, api, options
-published: True
+published: false
 reportingArea: React
 position: 0
 previous_url: /react-report-viewer-api-reference-options, /embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference/

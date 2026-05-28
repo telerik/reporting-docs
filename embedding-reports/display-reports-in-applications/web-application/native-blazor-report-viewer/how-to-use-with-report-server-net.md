@@ -11,9 +11,11 @@ position: 2
 
 # Using the Native Blazor Report Viewer with the Report Server for .NET
 
-The article explains how to set up the Native Blazor Report Viewer to work with the Telerik Report Server for .NET.
+This article explains how to configure the Native Blazor Report Viewer to connect to Telerik Report Server for .NET using token-based authentication.
 
-The user account that will authenticate with the Report Server may be any User, including the Guest User, provided there is an enabled Token in its [Tokens](https://docs.telerik.com/report-server/dotnet-docs/token-authentication) collection.
+[Telerik Report Server for .NET](https://docs.telerik.com/report-server/dotnet-docs/overview) is a server-based reporting solution that stores and manages reports centrally. Token authentication is the recommended security approach, as it provides better protection than username/password credentials and allows for token rotation without code changes.
+
+Any user account can authenticate with the Report Server, including the Guest User, provided there is an enabled token in the user's [token collection](https://docs.telerik.com/report-server/dotnet-docs/token-authentication). Personal tokens follow the JWT structure and are managed through the Report Server interface.
 
 ## Prerequisites
 
@@ -26,7 +28,7 @@ The user account that will authenticate with the Report Server may be any User, 
 ## Configuring the Native Blazor Report Viewer to work with the Report Server for .NET
 
 1. Add NuGet package reference to the **Telerik.ReportViewer.BlazorNative** package hosted on the Progress Telerik proprietary NuGet feed. Ensure that the Telerik NuGet feed is added to the NuGet Package Sources by following [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
-1. (Optional) The [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) depends on version **9.1.0** of the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) product. If [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) is already used in your Blazor application, this step can be skipped. Otherwise, add the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) JS and its [Kendo theme](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
+1. (Optional) The [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) depends on version **{{site.blazoruiversion}}** of the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) product. If [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) is already used in your Blazor application, this step can be skipped. Otherwise, add the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) JS and its [Kendo theme](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
 	{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseWithReportServerNet.html region=NativeBlazorViewerConfiguringForRSNET}}
 
@@ -42,11 +44,13 @@ The user account that will authenticate with the Report Server may be any User, 
 
 	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\TelerikLayout.razor region=NativeViewerTelerikLayout}}
 
-1. Set up an endpoint on the server that will securely return the token used by the Report Server for .NET to authorize. For example, create an environment variable in the `launchSettins.json` file named **'RS_NET_TOKEN**, and store the token in it. Then, the endpoint can be configured to read and return the value of the environment variable:
+1. Set up an endpoint on the server that will securely return the token used by the Report Server for .NET to authorize. For example, create an environment variable in the `launchSettings.json` file named **RS_NET_TOKEN** and store the token in it. Then, the endpoint can be configured to read and return the value of the environment variable:
 
 	{{source=CodeSnippets\BlazorNative\Docs\Program.cs region=Get_RS_NET_TOKEN}}
 
-	For Blazor Web Assembly applications where the server is not available, the token can be injected on the `.RAZOR` page at build-time. Use `appsettings.{Environment}.json` files (they are bundled at build time), and read the token from the configuration.
+	For Blazor WebAssembly applications where the server is not available, the token can be injected on the `.RAZOR` page at build-time. Use `appsettings.{Environment}.json` files (they are bundled at build time) and read the token from the configuration.
+
+	> important Never hardcode tokens directly in client-side code. Always retrieve them from a secure server endpoint or build-time configuration. Store tokens as environment variables or in secure configuration stores, and ensure the token endpoint is properly secured with authentication and authorization.
 
 1. Configure an `HttpClient` in the `Program.cs` file that will be injected on the `.RAZOR` page on the next step when we make an HTTP request to get the token from the server.
 
@@ -62,7 +66,30 @@ The user account that will authenticate with the Report Server may be any User, 
 
 1. Finally, run the project to see the rendered report.
 
+## Troubleshooting
+
+### Token Not Retrieved
+
+If the viewer cannot retrieve the token, verify:
+- The token endpoint is accessible from the client
+- The `HttpClient` is properly configured and injected
+- The environment variable `RS_NET_TOKEN` is set correctly
+- The token has not expired
+
+### CORS Issues
+
+If you encounter CORS errors when accessing the token endpoint:
+- Ensure CORS is properly configured in `Program.cs`
+- Verify the endpoint allows requests from your Blazor application's origin
+- Check browser console for specific CORS error messages
+
+### Guest User Access
+
+The Guest User can only authenticate using tokens. It does not have a password and cannot use username/password authentication. Ensure at least one enabled token is added to the Guest User account by an administrator.
+
 ## See Also
 
+- [Configuring the Report Server for .NET for Authentication with Personal Tokens](https://docs.telerik.com/report-server/dotnet-docs/token-authentication)
 - [Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting)
 - [Native Blazor Report Viewer Overview](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
+- [Native Blazor Report Viewer Requirements](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview#Requirements)

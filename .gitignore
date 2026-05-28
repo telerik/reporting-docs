@@ -40,3 +40,5 @@ search.html
 start-docs.sh
 watch.sh
 watch.sh/_assets/
+/.github/agents
+/.nia

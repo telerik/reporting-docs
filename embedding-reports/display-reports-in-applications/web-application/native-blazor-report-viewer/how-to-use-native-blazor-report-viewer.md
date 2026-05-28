@@ -37,110 +37,36 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 1. Add NuGet package reference to the **Telerik.ReportViewer.BlazorNative** package hosted on the Progress Telerik proprietary NuGet feed. Ensure that the Telerik NuGet feed is added to the NuGet Package Sources by following [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Use the configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET {{site.mindotnetversion}}+ with Top Level Statements is used) file to enable serving static files:
 
-   ```C#
-   app.UseStaticFiles();
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
-   > note When it comes to Blazor WebAssembly applications, the above step should be implemented in the project used as the _Server_ where the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is located. With the [ASP.NET Core Hosted](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0&pivots=windows) template, that would be the `Blazor.Server` project.
+
+	> note When it comes to Blazor WebAssembly applications, the above step should be implemented in the project used as the _Server_ where the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is located. With the [ASP.NET Core Hosted](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0&pivots=windows) template, that would be the `Blazor.Server` project.
 
 1. (Optional) The [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) depends on version **9.1.0** of the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) product. If [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) is already used in your Blazor application, this step can be skipped. Otherwise, add the [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) JS and its [Kendo theme](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually}}
 
 1. Add the [Native Blazor Report Viewer's](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) JS and CSS dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App).
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually2}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually2}}
 
 1. Configure the project to recognize all Telerik components without explicit **@using** statements on every **.razor** file by adding the following code to your **~/\_Imports.razor**:
 
-   ```C#
-   @using Telerik.Blazor
-   @using Telerik.Blazor.Components
-   @using Telerik.ReportViewer.BlazorNative
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\TelerikLayout.razor region=NativeViewerUsingsInImports}}
 
 1. Wrap the content of the main layout file(by default, the **~/Shared/MainLayout.razor** file in the Blazor project) with a razor component called **TelerikLayout.razor**:
 
-   ```RAZOR
-   @inherits LayoutComponentBase
-
-   <TelerikRootComponent>
-   	@Body
-   </TelerikRootComponent>
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\TelerikLayout.razor region=NativeViewerTelerikLayout}}
 
 1. If the report viewer should connect to a Reporting REST service (either locally hosted or in another application), use the following snippet to place the viewer component in a **.razor** page like **Pages/Index.razor**. Note that when referencing the Reporting REST service from another application, the `ServiceUrl` setting should be the absolute URL to the service.
 
-   ```RAZOR
-   @page "/"
-   @* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-   @* @rendermode InteractiveServer *@
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerWithRest.razor region=NativeViewerWithRESTService}}
 
-   <PageTitle>Report Viewer</PageTitle>
-
-   <ReportViewer
-   	ServiceType="@ReportViewerServiceType.REST"
-   	ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-   	@bind-ReportSource="@ReportSource"
-   	@bind-ScaleMode="@ScaleMode"
-   	@bind-ViewMode="@ViewMode"
-   	@bind-ParametersAreaVisible="@ParametersAreaVisible"
-   	@bind-DocumentMapVisible="@DocumentMapVisible"
-   	@bind-Scale="@Scale">
-   </ReportViewer>
-
-   @code {
-   	public ScaleMode ScaleMode { get; set; } = ScaleMode.Specific;
-   	public ViewMode ViewMode { get; set; } = ViewMode.Interactive;
-   	public bool ParametersAreaVisible { get; set; }
-   	public bool DocumentMapVisible { get; set; }
-   	public double Scale { get; set; } = 1.0;
-
-   	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx",
-   		new Dictionary<string, object>
-   		{
-   			// Add parameters if applicable
-   		});
-   }
-   ```
-
-   > The `ReportSource` of the viewer should be set as in the above example. i.e. with the binding `@bind-ReportSource="@ReportSource"`. Setting the `ReportSource` directly, for example, like `ReportSource="@(new ReportSourceOptions("Report Catalog.trdp", new Dictionary<string, object>()))"` introduces a circular dependency that causes endless refreshes of the Report Viewer that lead to an infinite sequence of requests to the Reporting REST Service.
+	> The `ReportSource` of the viewer should be set as in the above example. i.e. with the binding `@bind-ReportSource="@ReportSource"`. Setting the `ReportSource` directly, for example, like `ReportSource="@(new ReportSourceOptions("Report Catalog.trdp", new Dictionary<string, object>()))"` introduces a circular dependency that causes endless refreshes of the Report Viewer that lead to an infinite sequence of requests to the Reporting REST Service.
 
 1. If you need to display the reports from a Report Server instance, use the following snippet to place the viewer component in a **.razor** page like **Pages/Index.razor**. Remember to set the actual **ReportServer** and **ReportSource** settings:
 
-   ```RAZOR
-   @page "/"
-   @* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-   @* @rendermode InteractiveServer *@
-
-   <PageTitle>Report Viewer</PageTitle>
-
-   <ReportViewer
-   	ServiceType="@ReportViewerServiceType.ReportServer"
-   	@bind-ReportSource="@ReportSource"
-   	@bind-ScaleMode="@ScaleMode"
-   	@bind-ViewMode="@ViewMode"
-   	@bind-ParametersAreaVisible="@ParametersAreaVisible"
-   	@bind-DocumentMapVisible="@DocumentMapVisible"
-   	@bind-Scale="@Scale">
-   	<ReportViewerSettings>
-   		<ReportServerSettings Url="https://demos.telerik.com/report-server/" Username="demouser" Password="demopass"></ReportServerSettings>
-   	</ReportViewerSettings>
-   </ReportViewer>
-
-   @code {
-   	public ScaleMode ScaleMode { get; set; } = ScaleMode.Specific;
-   	public ViewMode ViewMode { get; set; } = ViewMode.Interactive;
-   	public bool ParametersAreaVisible { get; set; }
-   	public bool DocumentMapVisible { get; set; }
-   	public double Scale { get; set; } = 1.0;
-
-   	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Published/Dashboard", new Dictionary<string, object>
-   	{
-   		// Add parameters if applicable
-   	});
-   }
-   ```
+	{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerWithRS.razor region=NativeViewerWithReportServer}}
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to set up its appearance and behavior as desired.
 1. Finally, run the project to see the rendered report.

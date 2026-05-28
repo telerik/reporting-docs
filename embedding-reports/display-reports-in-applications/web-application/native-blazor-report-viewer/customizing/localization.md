@@ -71,6 +71,7 @@ This resource will contain the default `English` messages.
 	{{source=CodeSnippets\BlazorNative\Docs\CustomStringLocalizer.cs region=BlazorNativeViewerLocalization}}
 
 1. Register the custom localizer for the `ITelerikReportingStringLocalizer` interface, after registering the Telerik services
+
 	{{source=CodeSnippets\BlazorNative\Docs\Program.cs region=RegisterCustomStringLocalizer}}
 
 1. (_Optional_) Now to test that the localization is working, you may change the culture in the component with the report viewer through the following code:

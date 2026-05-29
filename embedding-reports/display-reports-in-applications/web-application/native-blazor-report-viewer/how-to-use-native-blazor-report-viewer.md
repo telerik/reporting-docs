@@ -104,6 +104,26 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 1. Use the rest of the parameters exposed on the Blazor viewer component to set up its appearance and behavior as desired.
 1. Finally, run the project to see the rendered report.
 
+## Blazor Render Mode Configuration (.NET 8+)
+
+For .NET 8+ Blazor Web Apps, the Native Blazor Report Viewer requires an interactive render mode. Add one of the following directives to your page:
+
+- `@rendermode InteractiveServer` - Renders on server, updates via SignalR
+- `@rendermode InteractiveWebAssembly` - Renders in browser WebAssembly
+- `@rendermode InteractiveAuto` - Server-side initially, then WebAssembly after download
+
+## Configuring CORS for Remote REST Service
+
+When the Reporting REST Service is hosted in a separate application from the Blazor app, configure CORS to allow requests from your Blazor app's origin.
+
+Add the CORS policy in the REST Service's `Program.cs`:
+
+{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddCors}}
+
+> caution **Security Note**: The example above uses `AllowAnyOrigin()` for development convenience. For production, restrict to specific origins:
+>
+> {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingRestServiceAddCors}}
+
 ## See Also
 
 - [Native Blazor Report Viewer Overview](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
@@ -111,5 +131,8 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 - [Native Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)
 - [Native Blazor Report Viewer Commands](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands)
 - [Native Blazor Report Viewer Events](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events)
+- [Customizing the Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing/how-to-customize-the-native-blazor-report-viewer)
 - [Hosting Telerik Reporting REST Service in ASP.NET Core](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
+- [Hosting Telerik Reporting REST Service in an ASP.NET Core Application with Startup.cs](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5)
 - [Telerik Blazor Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting)
+- [Enabling Cross-Origin Requests (CORS) in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/security/cors)

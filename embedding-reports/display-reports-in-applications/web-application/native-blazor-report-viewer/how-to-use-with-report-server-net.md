@@ -85,7 +85,7 @@ If you encounter CORS errors when accessing the token endpoint:
 
 ### Guest User Access
 
-The Guest User can only authenticate using tokens. It does not have a password and cannot use username/password authentication. Ensure at least one enabled token is added to the Guest User account by an administrator.
+The Guest User can only authenticate using tokens. It does not have a password and cannot use username/password authentication. Ensure at least one enabled token is added to the Guest User account by an administrator: [Guest User Administration](https://www.telerik.com/report-server/documentation/implementer-guide/user-management/guest-user).
 
 ## See Also
 

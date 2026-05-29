@@ -68,7 +68,7 @@ Any user account can authenticate with the Report Server, including the Guest Us
 
 ## Token Management Best Practices
 
-The token storage approach shown in step 6 (using `launchSettings.json` and environment variables) is suitable for development, but requires additional considerations for production environments.
+The token storage approach shown earlier in this article (using `launchSettings.json` and environment variables) is suitable for development, but requires additional considerations for production environments.
 
 ### Development
 

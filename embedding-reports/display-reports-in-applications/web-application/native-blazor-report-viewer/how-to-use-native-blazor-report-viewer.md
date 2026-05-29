@@ -34,16 +34,18 @@ This article guides you through integrating the Native Blazor Report Viewer into
 The Native Blazor Report Viewer supports two backend integration options:
 
 1. **Reporting REST Service** - Ideal when:
-   - You need full control over report generation
-   - Reports are stored as definition files (.trdp, .trdx) or cs/vb types.
-   - You want to host reports alongside your application
-   - You're building a new reporting solution
+
+	- You need full control over report generation
+	- Reports are stored as definition files (.trdp, .trdx) or cs/vb types.
+	- You want to host reports alongside your application
+	- You're building a new reporting solution
 
 2. **Report Server** - Ideal when:
-   - You have centralized report management needs
-   - Multiple applications share the same reports
-   - You need role-based access control
-   - You want browser-based report authoring
+
+	- You have centralized report management needs
+	- Multiple applications share the same reports
+	- You need role-based access control
+	- You want browser-based report authoring
 
 This article covers both approaches. Choose the one that fits your architecture.
 

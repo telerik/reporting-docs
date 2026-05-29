@@ -131,7 +131,7 @@ Add the CORS policy in the REST Service's `Program.cs`:
 - [Native Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)
 - [Native Blazor Report Viewer Commands](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands)
 - [Native Blazor Report Viewer Events](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events)
-- [Customizing the Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing/how-to-customize-the-native-blazor-report-viewer)
+- [Customize the Toolbar of the Blazor Native Report Viewer](slug:native-blazor-report-viewer/toolbar-customization)
 - [Hosting Telerik Reporting REST Service in ASP.NET Core](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
 - [Hosting Telerik Reporting REST Service in an ASP.NET Core Application with Startup.cs](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5)
 - [Telerik Blazor Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting)

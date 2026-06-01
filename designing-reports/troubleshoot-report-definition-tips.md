@@ -118,11 +118,17 @@ Consider reordering the items the way they must appear when using Accessibility 
 
 ![Reordering items in the Report Explorer of the Standalone Report Designer.](images/reorder-items-in-report-explorer-standalone-designer.gif)
 
+## Report Stops Rendering in the Report Viewer or Designer Preview
+
+The default _View Mode_ of the Report Viewers and Designers is the `Interactive` mode that uses soft pagination: [Interactive and Print Layouts](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout). When the report contains a large Table/Crosstab/List occupying multiple pages, the soft-pagination algorithm will render it on a single page. This may result in a large HTML (for the web viewers) or XAML (for the WPF and WinUI viewers). The generated huge script may be challenging for the corresponding browser or viewer to render fully.
+
+Switch to the `PrintPreview` mode to use the hard-pagination algorithm and let the viewers display the Table content split into pages.
+
 ## Troubleshoot Report Definitions Created or Modified Dynamically with Code
 
 If you manipulate or create a report definition with code before rendering the report, the result may differ from the expected layout.
 
-To investigate, consider saving the final report template with code to a `TRDX` or `TRDP` file before passing it to the _ReportProcessor_ if you render programmatically, or before returning it from the _Custom ReportSource Resolver_ if you use a _Reporting REST Service_. Use the serialization functionality Telerik Reporting provides out-of-the-box:
+To investigate, consider saving the final report template with code to a `TRDX` or `TRDP` file before passing it to the _ReportProcessor_ if you render programmatically, or before returning it from the _Custom ReportSource Resolver_ if you use a _Reporting REST Service_. Use the serialization functionality Telerik Reporting provides out of the box:
 * Produce `TRDX` report from the report instance as explained in the article section [Serializing and Deserializing Report Definitions: Serialize to XML](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml#serialize-to-xml)
 * Generate `TRDP` file from the report instance: [Packaging and Unpackaging Report Definitions: Packaging CLR report definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition#packaging-clr-report-definition)
 

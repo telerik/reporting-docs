@@ -120,7 +120,7 @@ Consider reordering the items the way they must appear when using Accessibility 
 
 ## Report Stops Rendering in the Report Viewer or Designer Preview
 
-The default _View Mode_ of the Report Viewers and Designers is the `Interactive` mode that uses soft pagination: [Interactive and Print Layouts](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout). When the report contains a large Table/Crosstab/List occupying multiple pages, the soft-pagination algorithm will render it on a single page. This may result in a large HTML (for the web viewers) or XAML (for the WPF and WinUI viewers). The generated huge script may be challenging for the corresponding browser or viewer to render fully.
+The default _View Mode_ of the Report Viewers and Designers is the `Interactive` mode that uses soft pagination (see [Interactive and Print Layouts](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout)). When the report contains a large Table/Crosstab/List occupying multiple pages, the soft pagination algorithm will render it on a single continuous page. This may result in very large HTML (for the web viewers) or XAML (for the WPF and WinUI viewers) output that can be challenging for the corresponding browser or viewer to render fully.
 
 Switch to the `PrintPreview` mode to use the hard-pagination algorithm and let the viewers display the Table content split into pages.
 

@@ -134,8 +134,3 @@ Please make sure you are familiar with the terms and privacy policy of your sele
 
 * [Getting Started with the Telerik Reporting MCP Server](slug:ai-mcp-server)
 * [Telerik Reporting Prompt Library](slug:ai-prompt-library)
- 
-## See Also
-
-* [Telerik Reporting AI Coding Assistant Getting Started](slug:ai-mcp-server)
-* [Telerik Reporting Prompt Library](slug:ai-prompt-library)

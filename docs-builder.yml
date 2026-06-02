@@ -415,7 +415,7 @@ meta:
     title: "API Reference"
   embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer:
     position: 10
-    title: "ReportViewer"
+    title: "reportViewer"
   embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events:
     position: 10
     title: "Events"
@@ -438,10 +438,19 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference:
     position: 14
     title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
 
   embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer:
     position: 3
     title: "Blazor Report Viewer"
+  embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/api-reference:
+    position: 14
+    title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
 
   embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer:
     position: 4
@@ -449,6 +458,9 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
     position: 15
     title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
   embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing:
     position: 14
     title: "Customizing"
@@ -466,6 +478,9 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
     position: 14
     title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
 
   embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
     position: 5
@@ -476,6 +491,9 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference:
     position: 14
     title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
 
   embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
     position: 6
@@ -483,13 +501,24 @@ meta:
   embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
     position: 15
     title: "Customizing"
-
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference:
+    position: 14
+    title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
   embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
     position: 7
     title: "HTML5 ASP.NET Web Forms Report Viewer"
   embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
     position: 15
     title: "Customizing"
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference:
+    position: 14
+    title: "API Reference"
+  embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/api-reference/reportviewer:
+    position: 10
+    title: "reportViewer"
 
   embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder:
     position: 8

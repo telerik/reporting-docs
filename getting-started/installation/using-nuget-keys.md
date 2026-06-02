@@ -20,7 +20,7 @@ When you need to restore Telerik NuGet packages as part of your CI, using API Ke
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
 
-   ![Manage API Keys](images/account-generate-api-key.png)
+	![Manage API Keys](images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 1. Click **Generate Key**.
@@ -59,21 +59,7 @@ For more information on how to use API keys in a build, check the [Announcing Nu
 
 1. In your `NuGet.Config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-   ```XML
-   <configuration>
-   	<packageSources>
-   		<clear/>
-   		<add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-   		<add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-   	</packageSources>
-   	<packageSourceCredentials>
-   		<MyTelerikFeed>
-   			<add key="Username" value="api-key" />
-   			<add key="ClearTextPassword" value="%MY_API_KEY%" />
-   		</MyTelerikFeed>
-   	</packageSourceCredentials>
-   </configuration>
-   ```
+	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\RestoringNugetPackagesInCi.xml region=UsingANugetConfigFileWithYourProjects}}
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 
@@ -86,16 +72,16 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 - To set the credentials in Azure DevOps:
 
 	````bash
-   dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_API_KEY)' --configfile './nuget.config' --store-password-in-clear-text
-   ````
+	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_API_KEY)' --configfile './nuget.config' --store-password-in-clear-text
+	````
 
 - To set the credentials in GitHub Actions:
 
 * To set the credentials in GitHub Actions:
 
 	````bash
-   dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_API_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-   ````
+	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_API_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
+	````
 
 
 ## Additional Resources

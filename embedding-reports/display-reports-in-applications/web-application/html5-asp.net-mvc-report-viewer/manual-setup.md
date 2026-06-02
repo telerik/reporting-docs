@@ -21,13 +21,7 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in `ASP
 - Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the `web.config` file of the project hosting the Reporting REST service:
 
-	```XML
-	<connectionStrings>
-	<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-		connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-		providerName="System.Data.SqlClient" />
-	</connectionStrings>
-	```
+	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\IntegratingWithAngularCli.xml region=Prerequisites}}
 
 * [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service](slug:telerikreporting/getting-started/installation/cdn-assets). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#kendo-widgets-requirements).
 
@@ -79,16 +73,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Update the `web.config` file in the **Views** folder to include the `Telerik.Reporting` and `Telerik.ReportViewer.Mvc` namespaces:
 
-	```XML
-	<system.web.webPages.razor>
-	<pages pageBaseType="System.Web.Mvc.WebViewPage">
-			<namespaces>
-			<add namespace="Telerik.Reporting" />
-			<add namespace="Telerik.ReportViewer.Mvc" />
-			</namespaces>
-	</pages>
-	</system.web.webPages.razor>
-	```
+	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ManualSetup.xml region=UsingHtml5AspNetMvcReportViewer}}
 
 	> Without registering the `Telerik.Reporting` and `Telerik.ReportViewer.Mvc` namespaces you will need to use [using Directive](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive) in the view.
 

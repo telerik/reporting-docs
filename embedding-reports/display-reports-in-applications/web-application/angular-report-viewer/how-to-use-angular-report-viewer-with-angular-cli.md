@@ -28,13 +28,7 @@ The following list describes the prerequisites for this tutorial:
 
 	XML-based configuration file:
 
-	```XML
-	<connectionStrings>
-	<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-		connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-		providerName="System.Data.SqlClient" />
-	</connectionStrings>
-	```
+	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\IntegratingWithAngularCli.xml region=Prerequisites}}
 
 	JSON-based configuration file:
 

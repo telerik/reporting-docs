@@ -18,13 +18,7 @@ previous_url: /html5-webforms-report-viewer-manual-setup
 - Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the **web.config** file of the project hosting the Reporting REST service:
 
-	```XML
-	<connectionStrings>
-		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-			connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-			providerName="System.Data.SqlClient" />
-	</connectionStrings>
-	```
+	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ReportParameterValues.xml region=Prerequisites}}
 
 * (Optional) [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) custom distribution for Telerik Reporting (located in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`) or [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) mainstream distribution downloaded locally or via the [Reporting CDN service](slug:telerikreporting/getting-started/installation/cdn-assets). You must load only one version of Kendo UI styles and scripts on the page. For more information, see [Kendo Widgets Requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#kendo-widgets-requirements).
 
@@ -82,9 +76,7 @@ The following steps produce a view with settings similar to these of the local `
 1. Set the report viewer `Width` and `Height`.
 1. (Optional) If you set the viewer's **Deferred** to **true**, render the deferred initialization statement for the Report Viewer (remember that they must be rendered after jQuery):
 
-	```XML
-	<telerik:DeferredScripts runat="server"></telerik:DeferredScripts>
-	```
+	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=DeferredScripts}}
 
 1. Finally, the `WebForm` may look like the following:
 

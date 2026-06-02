@@ -42,7 +42,7 @@ To install your Telerik License key by using the Visual Studio extensions for Te
 
 1. Go to **Extensions** > **Telerik** > **Licensing** and select **Download Key**.
 
-   ![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
+	![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
 
 The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you may have used another [installation method](slug:telerikreporting/installation) or deselected them during the setup.
 
@@ -51,13 +51,13 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 1. Click the **Download License Key** button.
 
-   ![Download License Key](images/download-license-key.png)
+	![Download License Key](images/download-license-key.png)
 
 1. Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
 
-   - For Windows: `%AppData%\Telerik\telerik-license.txt`
-   - For Mac/Linux: `~/.telerik/telerik-license.txt`
-   - Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control, as this is your personal license key.
+	- For Windows: `%AppData%\Telerik\telerik-license.txt`
+	- For Mac/Linux: `~/.telerik/telerik-license.txt`
+	- Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control, as this is your personal license key.
 
 ## Activating Telerik Reporting Automatically
 
@@ -73,27 +73,27 @@ If Telerik Reporting cannot be activated automatically:
 
 1. Add the `Telerik.Licensing` package from [NuGet.org](https://www.nuget.org/) as a project dependency:
 
-   - For **.NET projects**, edit the `.csproj` and add the following line:
+	- For **.NET projects**, edit the `.csproj` and add the following line:
 
-     ```XML
-     <PackageReference Include="Telerik.Licensing" Version="*" />
-     ```
+		```xml
+		<PackageReference Include="Telerik.Licensing" Version="*" />
+		```
 
-   - For older **.NET Framework projects**:
+	- For older **.NET Framework projects**:
 
-     1. Add package reference to the `packages.config` file:
+		1. Add package reference to the `packages.config` file:
 
-        ```XML
-        <package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
-        ```
+			```config
+			<package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
+			```
 
-     1. Update the `.csproj` file with the DLL reference:
+		1. Update the `.csproj` file with the DLL reference:
 
-        ```XML
-        <Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
-        	<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
-        </Reference>
-        ```
+			```xml
+			<Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
+				<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
+			</Reference>
+			```
 
 When you build the project, the `Telerik.Licensing` NuGet package locates the license file and uses it to activate Telerik Reporting.
 

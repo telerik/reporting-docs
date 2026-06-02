@@ -38,13 +38,7 @@ To give an example, we will use the Invoice report from our examples and will up
 
 1. Add a connectionStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's `web.config` file. For example:
 
-	```XML
-	<connectionStrings>
-		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-			connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-			providerName="System.Data.SqlClient" />
-	</connectionStrings>
-	```
+	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ReportParameterValues.xml region=Prerequisites}}
 
 	At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at **[host]/InvoiceParameters.aspx** without any modifications.
 

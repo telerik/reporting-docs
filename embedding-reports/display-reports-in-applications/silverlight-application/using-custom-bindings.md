@@ -23,7 +23,7 @@ The ReportViewer usually passes absolute [Uri](https://learn.microsoft.com/en-us
 
 The example below illustrates how to implement and use a custom __IReportServiceClientFactory__:
 
-````C#
+```C#
 using System;
 using System.ServiceModel;
 using System.Windows.Controls;
@@ -55,7 +55,7 @@ public partial class MainPage : UserControl, IReportServiceClientFactory
 
 	}
 }
-````
+```
 ````VB.NET
 Imports System
 Imports System.ServiceModel

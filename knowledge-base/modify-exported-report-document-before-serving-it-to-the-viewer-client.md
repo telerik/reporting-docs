@@ -30,7 +30,7 @@ In the following code snippets we demonstrate how to modify a report rendered in
 
 Open the Windows Form or WPF Window code behind (press `F7`) and handle report viewer event `ExportEnd` as shown in the following snippet:
 
-````C#
+```C#
 public ReportViewerFormOrWindow()
 {
 	InitializeComponent();
@@ -44,7 +44,7 @@ private void ReportViewer1ExportEnd(object sender, Telerik.ReportViewer.Common.E
 		//modify the rendered document in args.DocumentBytes 
 	}
 }
-````
+```
 ````VB
 Public Sub New()
 	InitializeComponent()
@@ -64,7 +64,7 @@ In case you use Web viewer you have to overide the Telerik Reporting service met
 
 #### Web API
 
-````C#
+```C#
 public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControllerBase
 {
 	protected override void OnGetDocument(Telerik.Reporting.Services.GetDocumentEventArgs args)
@@ -75,7 +75,7 @@ public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControl
 		}
 	}
 }
-````
+```
 ````VB
 Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
 	Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
@@ -88,7 +88,7 @@ End Class
 
 #### ServiceStack
 
-````C#
+```C#
 public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControllerBase
 {
 	protected override void OnGetDocument(Telerik.Reporting.Services.GetDocumentEventArgs args)
@@ -99,7 +99,7 @@ public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControl
 		}
 	}
 }
-````
+```
 ````VB
 Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
 	Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)

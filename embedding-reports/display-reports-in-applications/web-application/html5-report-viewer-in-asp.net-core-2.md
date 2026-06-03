@@ -101,7 +101,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the [DocumentF
 
 1. Implement a Reports controller. Right-click on the __Controllers__ folder and add a new item: Add - New item - __Web API Controller Class__ item. Name it ReportsController. This will be our Telerik Reporting REST service in the project. Inherit the __ReportsControllerBase__ type and provide proper settings for ReportSourceResolver and Storage. This is how a basic implementation of the controller should look like: 
     
-      ````c#
+      ```C#
 namespace WebApplication1.Controllers
 {
     using System.IO;
@@ -137,7 +137,7 @@ namespace WebApplication1.Controllers
         }
     }
 }
-````
+```
 
 ## Adding the HTML5 Report Viewer
 

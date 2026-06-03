@@ -29,7 +29,7 @@ In general, a **.CS** Type Report has an [Error event](/api/telerik.reporting.re
 
  For example:  
 
-````C#
+```C#
 //the report
 public partial class ReportTest : Telerik.Reporting.Report
     {
@@ -47,7 +47,7 @@ public partial class ReportTest : Telerik.Reporting.Report
             throw new Exception("Manually cancelled.");
         }
     }
-````
+```
 ````VB
 'the report
 Public Partial Class ReportTest
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
  For example:  
 
-````C#
+```C#
 public override System.Net.Http.HttpResponseMessage GetParameters(string clientID, ClientReportSource reportSource)
 {
     try {
@@ -106,7 +106,7 @@ public override System.Net.Http.HttpResponseMessage GetParameters(string clientI
         throw new Exception("Report resolving error.");
     }
 }
-````
+```
 ````VB
 Public Overrides Function GetParameters(clientID As String, reportSource As ClientReportSource) As System.Net.Http.HttpResponseMessage
     Try

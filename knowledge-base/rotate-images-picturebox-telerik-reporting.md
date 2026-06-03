@@ -36,7 +36,7 @@ To rotate an image in the Telerik Reporting PictureBox and reset its Exif orient
 
 1. Implement a [Custom User Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) to programmatically rotate the image. Use the following code example with the `RotateImageAndResetExif` function:
 
-    ````C#
+    ```C#
 public static class ImageHelper
 {
     public static Image RotateImageAndResetExif(string imagePath, int rotateFlipType)
@@ -84,7 +84,7 @@ public static class ImageHelper
         }
     }
 }
-````
+```
 
 
 1. Register and load the assembly containing the `RotateImageAndResetExif` function in the Telerik Report Designer or Reporting REST Service using the [assemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element).

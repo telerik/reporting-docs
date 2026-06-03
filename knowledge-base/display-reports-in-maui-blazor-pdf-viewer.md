@@ -60,7 +60,7 @@ In the web page, above the PDF Viewer component, there is a [TelerikDropDownList
 
 Initially, the page loads the available reports (in the method `ConfigureForService`) and shows the first one from the corresponding Reporting service:
 
-````C#
+```C#
 protected override async Task OnInitializedAsync()
 {
 	await ConfigureForService();
@@ -69,24 +69,24 @@ protected override async Task OnInitializedAsync()
 
 	await base.OnInitializedAsync();
 }
-````
+```
 
 On the change of the user selection, the SelectedReport and the PDF Viewer get updated:
 
-````C#
+```C#
 private async Task OnDropDownValueChanged(string newValue)
 {
 	SelectedReport = newValue;
 	await GetPdfAsync(newValue);
 
 }
-````
+```
 
 When the user has selected the Reporting online demos as a service, the report is requested in the method `ExportReportFromServiceAsync` through multiple requests to the Reporting REST Service of the demos. The approach is explained in the KB article [Using Reporting Service API with HttpClient](slug:how-to-use-reporting-rest-service-api-with-csharp-client#net-core-net).
 
 When the Reporting service is the custom one hosted in the project `ReportingWebApi`, the viewer simpy requests the PDF bytes with the Microsoft class [System.Net.Http.HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0). The report document itself is rendered with the [ReportProcessor.RenderReport](/api/telerik.reporting.processing.reportprocessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method in the project `RenderReports`. For more details, you may check also the article [Generating Reports Locally with Code](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine).
 
-````C#
+```C#
 private async Task GetPdfAsync(string reportName)
 {
 	switch (ReportingService)
@@ -106,7 +106,7 @@ private async Task GetPdfAsync(string reportName)
 			}
 	}
 }
-````
+```
 
 ## Platform Specific Settings
 

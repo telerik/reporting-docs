@@ -81,7 +81,7 @@ In order to distribute an application that uses __Telerik Reporting__ with a loc
 
 The other way to localize the Silverlight __Report Viewer__ in a more flexible manner is to create a class that implements the _ITextResources_ interface and to implement all its properties, which represent all tooltips and messages in the Report Viewer. After you implement ITextResources you have to pass an instance of your custom class to the TextResources property ot the report viewer. The logic is pretty simple, the property just has to return the correct translation for each resource key, as it is shown below:
 
-````C#
+```C#
 public class CustomResources : Telerik.ReportViewer.Silverlight.ITextResources
 {
 	public string AllFiles
@@ -110,7 +110,7 @@ public class CustomResources : Telerik.ReportViewer.Silverlight.ITextResources
 
 	//...... Implement the rest of the properties ......
 }
-````
+```
 ````VB
 Public Class CustomResources
 	Implements Telerik.ReportViewer.Silverlight.ITextResources

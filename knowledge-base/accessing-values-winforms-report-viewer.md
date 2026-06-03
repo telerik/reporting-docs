@@ -45,19 +45,19 @@ Use [report parameters](slug:telerikreporting/designing-reports/connecting-to-da
        Dim reportParameterValue = Me.ReportViewer1.ReportSource.Parameters("MyParameter").Value
    End Sub
 ````
-````C#
+```C#
 private void Button1_Click(object sender, EventArgs e)
 {
     var reportParameterValue = this.ReportViewer1.ReportSource.Parameters["MyParameter"].Value;
 }
-````
+```
 
 
 ### Using Report Events
 
 For scenarios requiring multiple values from the processed report, use [report events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview). For TRDP/TRDX files, they must be unpackaged/deserialized in order to assign custom event handlers to the reports.
 
-````C#
+```C#
         private void MainForm_Load(object sender, System.EventArgs e)
         {
             var uri = "C:\Path\To\Report.trdp";
@@ -82,7 +82,7 @@ For scenarios requiring multiple values from the processed report, use [report e
             this.reportViewer1.ReportSource = instanceReportSource;
             this.reportViewer1.RefreshReport();
         }
-````
+```
 ````VB
 Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
        Dim uri As String = "C:\Path\To\Report.trdp"
@@ -111,7 +111,7 @@ End Sub
 
 - Accessing data from a table
 
-````C#
+```C#
         private void Table_ItemDataBound(object sender, System.EventArgs e)
         {
             var processsingTable = sender as Telerik.Reporting.Processing.Table;
@@ -122,7 +122,7 @@ End Sub
                 Trace.WriteLine($"Row: {row.Index}, Cell: {firstCell.RowIndex}, Text: {textBoxItem.Value}");
             }
         }
-````  
+```
 ````VB
    Private Sub Table_ItemDataBound(sender As Object, e As EventArgs)
        Dim processingTable As Telerik.Reporting.Processing.Table = CType(sender, Telerik.Reporting.Processing.Table)
@@ -137,7 +137,7 @@ End Sub
 
 - Accessing data from a `textBox` item in the **detail** section of the report
 
-````C#
+```C#
         private void Report_ItemDataBound(object sender, System.EventArgs e)
         {
             var processingReport = sender as Telerik.Reporting.Processing.Report;
@@ -150,7 +150,7 @@ End Sub
                 Trace.WriteLine($"Detail Section: {((Telerik.Reporting.Processing.DetailSection)section).Name}, Job Title: {textBoxJobTitle.Value}");
             }
         }
-````
+```
 ````VB
 Private Sub Report_ItemDataBound(sender As Object, e As System.EventArgs)
     Dim processingReport As Report = CType(sender, Report)

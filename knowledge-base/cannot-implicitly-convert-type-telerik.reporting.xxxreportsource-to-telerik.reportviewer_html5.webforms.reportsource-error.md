@@ -36,7 +36,7 @@ Trying to set a report source of type Telerik.Reporting.XXXReportSource to the H
 
 Set the report viewer's **ReportSource** to an instance of the **Telerik.ReportViewer.Html5.WebForms.ReportSource** object type.
 
-````C#
+```C#
 protected void Page_Load(object sender, EventArgs e)
 {
 	if (!IsPostBack)
@@ -47,7 +47,7 @@ protected void Page_Load(object sender, EventArgs e)
 		reportViewer1.ReportSource = reportSource;
 	}
 }
-````
+```
 ````VB
 Protected Sub Page_Load(sender As Object, e As EventArgs)
 	If Not IsPostBack Then

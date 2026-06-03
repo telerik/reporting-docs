@@ -19,7 +19,7 @@ The goal is to retrieve a name depending on the selected year from a drop down l
 
 1. A method with a parameter to retrieve the relevant data only is used as report data source. 
     
-    ````C#
+    ```C#
 	static DataTable GetData(string year)
 	{
 		DataTable table = new DataTable();
@@ -34,7 +34,7 @@ The goal is to retrieve a name depending on the selected year from a drop down l
 		}
 		return table;
 	}
-	````
+	```
 	````VB
 	Private Shared Function GetData(ByVal year) As DataTable
 		Dim table As DataTable
@@ -59,13 +59,13 @@ The goal is to retrieve a name depending on the selected year from a drop down l
 
 1. Setting the report __DataSource__ to the GetData method in the __NeedDataSource__ event handler of the report: 
     
-    ````C#
+    ```C#
 	private void Report2_NeedDataSource(object sender, EventArgs e)
 	{
 		Telerik.Reporting.Processing.Report report = (Telerik.Reporting.Processing.Report)sender;
 		report.DataSource = GetData(report.Parameters["Year"].Value.ToString());
 	}
-	````
+	```
 	````VB
 	Private Sub Report2_NeedDataSource(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.NeedDataSource
 		Dim report As Telerik.Reporting.Processing.Report = DirectCast(sender, Telerik.Reporting.Processing.Report)
@@ -75,7 +75,7 @@ The goal is to retrieve a name depending on the selected year from a drop down l
 
 1. Attach the __SelectedIndexChanged__ event handler of the __DropDownList__. In the event handler, get the report assigned to the viewer (in the example the ReportSource is __InstanceReportSource__) and set the value of the report parameter to the selected item of the __DropDownList__ : 
     
-    ````C#
+    ```C#
 	protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
 	{
 		 InstanceReportSource reportsource = (InstanceReportSource)this.ReportViewer1.ReportSource;
@@ -83,7 +83,7 @@ The goal is to retrieve a name depending on the selected year from a drop down l
 		 report.ReportParameters["Year"].Value = ((DropDownList)sender).SelectedItem.Value;
 		 ReportViewer1.RefreshReport();
 	}
-	````
+	```
 	````VB
 	Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
 		 Dim reportsource As InstanceReportSource = DirectCast(Me.ReportViewer1.ReportSource, InstanceReportSource)

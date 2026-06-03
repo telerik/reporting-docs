@@ -46,7 +46,7 @@ To refresh the [Native Blazor Report Viewer](slug:telerikreporting/embedding-rep
 
 Use the following code snippet in the [OnParametersSetAsync](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync) lifecycle event:
 
-````C#
+```C#
 protected override async Task OnParametersSetAsync()
 {
     // Create a new ReportSourceOptions object with the updated parameters
@@ -64,7 +64,7 @@ protected override async Task OnParametersSetAsync()
 
     await base.OnParametersSetAsync();
 }
-````
+```
 
 ### Key Points
 

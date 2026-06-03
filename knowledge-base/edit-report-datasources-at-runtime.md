@@ -34,7 +34,7 @@ An example in which this method will be useful is when the connection string, us
 
 Let's assume that the report file is with the `TRDP` extension, then the following code could be used to [unpackage](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition#unpackaging) the report and then to edit its connection and even the SQL query:
 
-````C#
+```C#
 var query = "SQL_QUERY_HERE";
 var reportPackager = new ReportPackager();
 Telerik.Reporting.Report report = null;
@@ -53,7 +53,7 @@ foreach (var sqlDataSource in sqlDS)
 }
 
 var irs = new InstanceReportSource() { ReportDocument = report };
-````
+```
 ````VB.NET
 Dim query As String = "SQL_QUERY_HERE"
 Dim reportPackager As New ReportPackager()

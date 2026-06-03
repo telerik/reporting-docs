@@ -28,7 +28,7 @@ This article explains how to export a report to PDF without the need to go throu
 
 You can use the following code snippet to programmatically export the report into `PDF` format from a Web Site or Web Application project: 
 
-````C#
+```C#
 void ExportToPDF(Telerik.Reporting.Report reportToExport)
 {
 	ReportProcessor reportProcessor = new ReportProcessor();
@@ -52,7 +52,7 @@ void ExportToPDF(Telerik.Reporting.Report reportToExport)
 	Response.BinaryWrite(result.DocumentBytes);
 	Response.End();
 }
-````
+```
 ````VB.NET
 Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)
 
@@ -79,7 +79,7 @@ End Sub
 In ASP.NET Core, the `Response` object does not expose a `BinaryWrite` method. For that reason, the approach will need to change a little.
 We can instead use the document bytes of the result object returned by the `RenderReport` method to return a [FileContentResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.filecontentresult?view=aspnetcore-8.0):
 
-````C#
+```C#
         [Route("exportreport")]
         public IActionResult GenerateReportPDF(string reportName)
         {
@@ -90,7 +90,7 @@ We can instead use the document bytes of the result object returned by the `Rend
 
             return File(result.DocumentBytes, result.MimeType);
         }
-````
+```
 
 Then, we can make an AJAX request to our controller method to get the rendered report and return it as an attachment using [Blobs](https://developer.mozilla.org/en-US/docs/Web/API/Blob).
 

@@ -27,7 +27,7 @@ The goal is to change the value of a TextBox item in the report, according to th
 
 1. Attach the __SelectedIndexChanged__ event handler of the __DropDownList__. In the event handler, get the report assigned to the viewer (in the example the ReportSource is __InstanceReportSource__) and set the value of the report parameter to the selected item of the __DropDownList__ : 
     
-    ````C#
+    ```C#
 	protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
 	{
 		 InstanceReportSource reportsource = (InstanceReportSource)this.ReportViewer1.ReportSource;
@@ -35,7 +35,7 @@ The goal is to change the value of a TextBox item in the report, according to th
 		 report.ReportParameters["Year"].Value = ((DropDownList)sender).SelectedItem.Value;
 		 ReportViewer1.RefreshReport();
 	}
-	````
+	```
 	````VB
 	Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
 		 Dim reportsource As InstanceReportSource = DirectCast(Me.ReportViewer1.ReportSource, InstanceReportSource)

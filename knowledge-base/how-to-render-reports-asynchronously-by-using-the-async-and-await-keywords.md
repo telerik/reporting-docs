@@ -27,7 +27,7 @@ With the new .NET Framework (4.5), a new way to handle parallel programming has 
 
 First, we will have to start with the [*ReportProcessor*](/api/telerik.reporting.processing.reportprocessor) class and its [**RenderReport**](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method, which provides all the needed functionality for programmatic generation of reports. Since RenderReport returns [RenderingResult](/api/telerik.reporting.processing.renderingresult), in order to use it asynchronously, you will have to create a method that returns this result. However, since we want to achieve the task in an *async* manner, we will take advantage of the *Task* class:   
    
-````C#
+```C#
 public class AsyncWrappers
 {
     // Wrap the RenderingResult like this:
@@ -47,7 +47,7 @@ public class AsyncWrappers
         return await Task.Run(() => reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo));
     }
 }
-````
+```
 ````VB
 Public Class AsyncWrappers
     ' Wrap the RenderingResult like this:
@@ -72,7 +72,7 @@ End Class
  Besides declaring the return value to be Task&lt;RenderingResult&gt; we have marked the method as **async**. Also, we are invoking the *RenderReport* method using the **await** keyword. For the second part, we will use our method in an async manner: 
 
   
-````C#
+```C#
 //Use the wrapper in your code like this:
 public async Task<string> RenderReportAsync()
 {
@@ -96,7 +96,7 @@ public async Task<string> RenderReportAsync()
     // You can return void but that is not recommended
     return string.Format("Successfully rendered! File saved in {0}\n", filePath);
 }
-````
+```
 ````VB
 'Use the wrapper in your code like this:
 Public Function RenderReportAsync() As Task(Of String)
@@ -123,7 +123,7 @@ End Function
 
 Finally, we will invoke this method in a console application and check the results: 
 
-````C#
+```C#
 class Program
 {
     // A working example
@@ -152,7 +152,7 @@ class Program
         }
     }
 }
-````
+```
 ````VB
 Class Program
     ' A working example

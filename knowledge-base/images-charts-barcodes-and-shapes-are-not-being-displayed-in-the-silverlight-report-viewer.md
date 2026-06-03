@@ -48,7 +48,7 @@ Other reason for missing images in the rendered in XAML report is the usage of U
    
 Example:  
 
-````C#
+```C#
 namespace CSharp.SilverlightDemo.Web
 {
     using System;
@@ -77,7 +77,7 @@ namespace CSharp.SilverlightDemo.Web
         }
     }
 }
-````
+```
 ````VB
 Imports System.Collections.Generic
 Imports System.Web

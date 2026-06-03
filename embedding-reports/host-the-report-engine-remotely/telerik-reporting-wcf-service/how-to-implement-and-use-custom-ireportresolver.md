@@ -37,7 +37,7 @@ If you use the Silverlight report viewer the report description is provided by t
 
 	1. Implement the Telerik.Reporting.Service.IReportResolver
 
-		````C#
+		```C#
 class CustomReportService : ReportService
 		{
 			static readonly IReportResolver resolver = new ReportResolver();
@@ -47,7 +47,7 @@ class CustomReportService : ReportService
 				this.ReportResolver = resolver;
 			}
 		}
-````
+```
 		````VB.NET
 Class CustomReportService
 			Inherits ReportService
@@ -62,7 +62,7 @@ Class CustomReportService
 
 	1. In order to utilize your IReportResolver implementation, create a _Telerik.Reporting.Service_ subclass and in your subclass constructor pass your IReportResolver implementation to the _Telerik.Reporting.ServiceBase.ReportResolver_ property:
 
-		````C#
+		```C#
 class CustomReportService : ReportService
 		{
 			static readonly IReportResolver resolver = new ReportResolver();
@@ -72,7 +72,7 @@ class CustomReportService : ReportService
 				this.ReportResolver = resolver;
 			}
 		}
-````
+```
 		````VB.NET
 Class CustomReportService
 			Inherits ReportService
@@ -91,7 +91,7 @@ Class CustomReportService
 
 	1. Add to your IReportResolver implementation a constructor with parameter IReportDocument parentResolver. Then use the parentResolver if the custom report resolving mechanism fails.
 
-		````C#
+		```C#
 class ReportServiceWithResolverFallback : ReportService
 		{
 			static readonly IReportResolver resolvers = new ReportResolverWithFallBack(
@@ -102,7 +102,7 @@ class ReportServiceWithResolverFallback : ReportService
 				this.ReportResolver = resolvers;
 			}
 		}
-````
+```
 		````VB.NET
 Class ReportServiceWithResolverFallback
 			Inherits ReportService
@@ -116,7 +116,7 @@ Class ReportServiceWithResolverFallback
 
 	1. Add to Telerik.Reporting.Service subclass the IReportResolver implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on. 
 
-		````C#
+		```C#
 class ReportServiceWithResolverFallback : ReportService
 		{
 			static readonly IReportResolver resolvers = new ReportResolverWithFallBack(
@@ -127,7 +127,7 @@ class ReportServiceWithResolverFallback : ReportService
 				this.ReportResolver = resolvers;
 			}
 		}
-````
+```
 		````VB.NET
 Class ReportServiceWithResolverFallback
 			Inherits ReportService

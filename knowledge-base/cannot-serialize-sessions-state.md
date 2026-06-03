@@ -47,7 +47,7 @@ You can also use the `NeedDataSource` event of the report and assign the data so
 
 Another approach is to use a `DataSet` or `DataTable`:
 
-````C#
+```C#
 DataTable dt = new DataTable();
 DataColumn col = new DataColumn("ColumnName", typeof(string));
 //....
@@ -59,5 +59,5 @@ foreach (object Item in MyIList)
 	//.....
 	dt.Rows.Add(row);
 }
-````
+```
 

@@ -83,42 +83,42 @@ This article describes the steps required to host the **Telerik Reporting Servic
 
 	- Alternatively, you may **configure the Telerik Reporting REST service from the application configuration file**.
 
-	If you prefer this approach, set the value of the `ReportServiceConfiguration` property to an instance of the [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
+		If you prefer this approach, set the value of the `ReportServiceConfiguration` property to an instance of the [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
 
-     ```C#
-     public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-     {
-        public ReportsHost()
-        {
-            var reportServiceConfiguration = new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
-     
-            this.ReportServiceConfiguration = reportServiceConfiguration;
-        }
-     }
-     ```
-     ```VB.NET
-     Public Class ReportsHost
-        Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-        Public Sub New()
-            Dim reportServiceConfiguration = New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
-     
-            Me.ReportServiceConfiguration = reportServiceConfiguration
-        End Sub
-         End Class
-     ```
+		```C#
+		public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+		{
+		public ReportsHost()
+		{
+			var reportServiceConfiguration = new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
+		
+			this.ReportServiceConfiguration = reportServiceConfiguration;
+		}
+		}
+		```
+		```VB.NET
+		Public Class ReportsHost
+		Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+		Public Sub New()
+			Dim reportServiceConfiguration = New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
+		
+			Me.ReportServiceConfiguration = reportServiceConfiguration
+		End Sub
+			End Class
+		```
+		
+		Then, add the **restReportService** configuration element containing the service settings to the [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview).
+		
+		```XML
+		<Telerik.Reporting>
+		<restReportService hostAppId="Application1" reportSharingTimeout="10" clientSessionTimeout="10">
+			<reportResolver provider="type" />
+			<storage provider="file" />
+		</restReportService>
+		</Telerik.Reporting>
+		```
 
-     Then, add the **restReportService** configuration element containing the service settings to the [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview).
-
-     ```XML
-     <Telerik.Reporting>
-       <restReportService hostAppId="Application1" reportSharingTimeout="10" clientSessionTimeout="10">
-         <reportResolver provider="type" />
-         <storage provider="file" />
-       </restReportService>
-     </Telerik.Reporting>
-     ```
-
-     For more information, see [restReportService Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
+		For more information, see [restReportService Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
 
 1. Add a new or use the existing **Global Application Class** `global.asax` to create and initialize the ServiceStack reports service in the `Application_Start` method:
 

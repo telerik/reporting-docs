@@ -34,7 +34,7 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider
 
 	> note When updating the configuration file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\UsingTheSqliteDataProvider.xml region=SettingUpTheSystemDataSqliteDataProviderInTheNetFrameworkStandaloneReportDesigner}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\UsingTheSqliteDataProvider.xml region=SettingUpTheSystemDataSqliteDataProviderInTheNetFrameworkStandaloneReportDesigner}}
 
 ## Setting up the System.Data.SQLite Data Provider in .NET Applications
 

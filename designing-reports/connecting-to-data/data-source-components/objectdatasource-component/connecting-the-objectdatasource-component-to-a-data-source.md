@@ -48,7 +48,7 @@ For security reasons, the ObjectDataSource can resolve only types that are decla
 	1. Open Telerik.ReportDesigner.exe.config file with a text editor.
 	1. Add an [AssemblyReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element) in **Telerik.Reporting** section of application configuration file:
 
-		{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ConnectingToADataSource.xml region=Configuration}}
+		{{source=CodeSnippets\MvcCS\XmlConfiguration\ConnectingToADataSource.xml region=Configuration}}
 
 The additional attributes like **version**, **culture**, and **publicKeyToken** are not mandatory, because the .NET runtime can resolve the assembly only by its name. After modifying the configuration file, the application needs to be restarted so the new configuration settings will be read again.
 

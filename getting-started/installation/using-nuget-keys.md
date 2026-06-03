@@ -59,7 +59,7 @@ For more information on how to use API keys in a build, check the [Announcing Nu
 
 1. In your `NuGet.Config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\RestoringNugetPackagesInCi.xml region=UsingANugetConfigFileWithYourProjects}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\RestoringNugetPackagesInCi.xml region=UsingANugetConfigFileWithYourProjects}}
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 
@@ -71,25 +71,21 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 
 - To set the credentials in Azure DevOps:
 
-	````bash
+	```bash
 	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_API_KEY)' --configfile './nuget.config' --store-password-in-clear-text
-	````
+	```
 
 - To set the credentials in GitHub Actions:
 
-* To set the credentials in GitHub Actions:
-
-	````bash
+	```bash
 	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_API_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-	````
-
+	```
 
 ## Additional Resources
 
 If you just start using the Telerik NuGet server in your CI or inter-department workflows, check the two blog posts below. You will learn about the various use cases and find practical implementation details.
 
 - [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
-
 - [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
 
 ## See Also

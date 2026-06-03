@@ -63,7 +63,7 @@ To enable the AI-powered insights, follow these steps:
 		}
 	}
 	```
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\EnableAiPoweredInsightsWithBuiltInAiClient.xml region=UsingAiPoweredInsightsWithARestService}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\EnableAiPoweredInsightsWithBuiltInAiClient.xml region=UsingAiPoweredInsightsWithARestService}}
 
 > tip If you haven't configured the report engine previously, make sure to check the article [Report Engine Configuration Overview](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) to get familiar with this topic.
 

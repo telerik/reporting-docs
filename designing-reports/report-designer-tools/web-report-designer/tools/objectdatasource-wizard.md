@@ -56,7 +56,7 @@ When started, the application that hosts the Web Report Designer will try to res
 
 	- For.NET Framework projects, the configuration should be added to the `web.config` file.
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ObjectdatasourceWizard.xml region=ConfiguringTheDatasourceInTheWebreportdesigner}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ObjectdatasourceWizard.xml region=ConfiguringTheDatasourceInTheWebreportdesigner}}
 
 	We are ready with the configuration. Now, let's step to the wizard.
 

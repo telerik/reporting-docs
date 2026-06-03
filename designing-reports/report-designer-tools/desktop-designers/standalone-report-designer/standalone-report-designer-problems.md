@@ -24,7 +24,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 		The Trace Listener for `.NET Framework` is set in the `system.diagnostics` section of the designer's configuration file `Telerik.ReportDesigner.exe.config`:
 
-		{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\TroubleshootingStandaloneReportDesigner.xml region=StandaloneReportDesignerCrashes}}
+		{{source=CodeSnippets\MvcCS\XmlConfiguration\TroubleshootingStandaloneReportDesigner.xml region=StandaloneReportDesignerCrashes}}
 
 		More details about the .NET Framework Standalone Report Designer's configuration file are available in the [Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview) article. `Telerik.ReportDesigner.exe.config` resides in the **[InstallDir]/Report Designer** directory by default (it is recommended to create a backup copy before modifying it).
 
@@ -32,7 +32,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 		The Trace Listener for `.NET` is setup in the `Telerik.Reporting` section of the designer's configuration file `Telerik.ReportDesigner.Net.dll.config`.
 
-		{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\TroubleshootingSrdNet.xml region=StandaloneReportDesignerNetCrashes}}
+		{{source=CodeSnippets\MvcCS\XmlConfiguration\TroubleshootingSrdNet.xml region=StandaloneReportDesignerNetCrashes}}
 
 		The `type` specifies the Assembly Qualified Name of the Trace Listener type implementing the abstract class [System.Diagnostics.TraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelistener?view=net-6.0).
 		You may use its implementations in `System.Diagnosics` like [System.Diagnostics.TextWriterTraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.textwritertracelistener?view=net-6.0) and they will be discovered automatically even if you don't provide the assembly name specified as _CustomListenersAssembly_.

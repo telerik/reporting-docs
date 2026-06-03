@@ -42,7 +42,7 @@ reportingArea: General
 1. Open the `App.config` file of the application and copy the binding redirects;
 1. Open the configuration file of the Standalone designer (`Telerik.ReportDesigner.exe.config`) and add the binding redirects:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\UsingTheNpgsqlDataProvider.xml region=ManualConfiguration}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\UsingTheNpgsqlDataProvider.xml region=ManualConfiguration}}
 
 ## Setting up the Npgsql Data Provider in .NET Applications
 

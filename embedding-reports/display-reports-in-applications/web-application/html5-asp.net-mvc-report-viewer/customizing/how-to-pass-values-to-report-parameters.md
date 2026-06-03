@@ -27,7 +27,7 @@ To give an example we will use the Invoice report from our local examples and wi
 
 1. Add MVC Controller item under the project's **Controller** folder and name it `HomeController.cs|vb`, and add an `ActionResult` method named **InvoiceParameters**. Move the `InvoiceParameters.cshtml|vbhtml` file under the newly added **Views\Home** folder. Add a connectiongStrings entry with name `Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString` in the project's `web.config` file. For example:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ReportParameterValues.xml region=Prerequisites}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ReportParameterValues.xml region=Prerequisites}}
 
 	At this point you have a running MVC application that displays a report in the HTML5 MVC Viewer at **[host]/Home/InvoiceParameters** without any modifications.
 

@@ -36,7 +36,7 @@ The [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/) 
 1. Copy all of the content in the `v4.6.2` directory to the directory with the .NET Framework Standalone Report Designer - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\`.
 1. Open the `Telerik.ReportDesigner.exe.config` file in a text editor and add the following XML to register the MySQL data provider without installing
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\UsingTheMysqlDataProvider.xml region=UsingTheSourceCode}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\UsingTheMysqlDataProvider.xml region=UsingTheSourceCode}}
 
 	> The example was made with version `9.0.0` of the MySQL data provider; correct the version number in the above snippet if a newer/older version was downloaded instead.
 

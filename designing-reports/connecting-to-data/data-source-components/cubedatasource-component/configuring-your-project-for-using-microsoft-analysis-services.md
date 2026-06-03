@@ -30,6 +30,6 @@ Before utilizing the **CubeDataSource** component in your reports you need to co
 
 1. **Add an assembly binding redirect if necessary:** The current version of **Telerik Reporting** uses **ADOMD.NET** for **SQL Server 2008 R2**. Please, verify that the version of the **Microsoft.AnalysisServices.AdomdClient** assembly is _"10.0.0.0"_. If you have a greater version of that assembly you need to add an appropriate assembly binding redirect in the configuration file of the start application as illustrated below:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ConfiguringMicrosoftAnalysisServices.xml region=ConfigurationsForUsingMicrosoftAnalysisServices}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ConfiguringMicrosoftAnalysisServices.xml region=ConfigurationsForUsingMicrosoftAnalysisServices}}
 
 	Here `<Your Version>` is the actual version of your **Microsoft.AnalysisServices.AdomdClient** assembly. It should be either 12 or lower due to the security policy introduced with version 13. In the case of a ClassLibrary project containing report definitions, the binding redirects should be applied in Visual Studio configuration file (**devenv.exe.config**).

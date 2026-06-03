@@ -28,7 +28,7 @@ The following list describes the prerequisites for this tutorial:
 
 	XML-based configuration file:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\IntegratingWithAngularCli.xml region=Prerequisites}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\IntegratingWithAngularCli.xml region=Prerequisites}}
 
 	JSON-based configuration file:
 

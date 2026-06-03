@@ -30,7 +30,7 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 	> [Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) can add the required binding redirects automatically if you update NuGet packages through it.
 	>
 	> Alternatively, you can add the following `bindingRedirects` to your `App.config` and replace `5.1.0.0` in the sample code below with the exact version:
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\SelfHosting.xml region=CreatingASelfHostedHttpService}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\SelfHosting.xml region=CreatingASelfHostedHttpService}}
 
 1. Make sure that the project has the following assembly references:
 

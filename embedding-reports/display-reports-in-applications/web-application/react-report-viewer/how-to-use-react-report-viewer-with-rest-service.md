@@ -25,7 +25,7 @@ The following list describes the prerequisites for this tutorial:
 
 	**web.config** file:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ReportParameterValues.xml region=Prerequisites}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ReportParameterValues.xml region=Prerequisites}}
 
 	**appsettings.json** file:
 

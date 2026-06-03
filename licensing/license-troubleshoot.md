@@ -39,7 +39,7 @@ Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that do
 1. Install `Telerik.Licensing` library **1.6.24** or later from [NuGet](https://www.nuget.org/packages/Telerik.Licensing). We recommend the latest version of the package.
 
 	> If your project targets the `.NET Framework`, you may need to add a binding redirect to your configuration file. If you use a newer version, change the code accordingly:
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\Troubleshooting.xml region=RuntimeDiagnostics}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\Troubleshooting.xml region=RuntimeDiagnostics}}
 
 1. To enable the runtime diagnostics, please call the method `Telerik.Licensing.TelerikLicensing.EnableDiagnostics()` as early as possible before loading your Telerik Report Viewers:
 

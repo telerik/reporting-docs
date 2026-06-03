@@ -13,13 +13,13 @@ position: 0
 
 With the [2024 Q3 (18.2.24.806)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q3-18-2-24-806) release of Telerik Reporting, the border radius of the WPF Report Viewer's borders can be modified from the code behind or the XAML:
 
-````C#
+```C#
 public MainWindow()
 {
 	this.InitializeComponent();
 	this.ReportViewer1.CornerRadius = new CornerRadius(15);
 }
-````
+```
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WindowRoundCorners.xaml region=WpfViewerRoundCorners}}
 
 

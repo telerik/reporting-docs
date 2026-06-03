@@ -66,7 +66,7 @@ public class ReportsController : ReportsControllerBase
         }  
     }
 ````
-````vb
+```VB.NET
 Public Class ReportsController
     Inherits ReportsControllerBase
     Shared configurationInstance As ReportServiceConfiguration
@@ -97,7 +97,7 @@ Public Class ReportsController
         Me.ReportServiceConfiguration = configurationInstance
     End Sub
 End Class
-````
+```
 
 ## Notes
 

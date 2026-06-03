@@ -37,7 +37,7 @@ Type 'Telerik.Reporting.XXXX' is not defined.
 
 When you open the report's *Designer.VB* file you will find that lines like:  
 
-```vb
+```VB.NET
 Me.TextBox1 = New Telerik.Reporting.TextBox()
 ```
 
@@ -45,7 +45,7 @@ are underlined as error lines.
 
 Changing the line as follows should resolve the error:  
 
-```vb
+```VB.NET
 Me.TextBox1 = New Global.Telerik.Reporting.TextBox()
 ```  
 

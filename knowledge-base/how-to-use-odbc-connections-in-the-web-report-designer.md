@@ -38,7 +38,7 @@ The web app that hosts the Web Report Designer needs to have a reference to `Sys
 
 We advise to do this somewhere in the application start, or (even better) in the static constructor of `ReportDesignerController`, so it would look like this:
 
-````C#
+```C#
 [Route("api/reportdesigner")]
 public class ReportDesignerController : ReportDesignerControllerBase
 {
@@ -52,7 +52,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 	{
 	}
 }
-````
+```
 
 The [How to register a DbProviderFactory in a .NET Core project](slug:how-to-register-db-provider-factory-in-net-core-project) KB article explains how to register a `DbProviderFactory` instance in .NET and .NET Core apps.
 

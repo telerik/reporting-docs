@@ -29,7 +29,7 @@ In general, a **.CS** Type Report has an [Error event](/api/telerik.reporting.re
 
  For example:  
 
-````C#
+```C#
 //the report
 public partial class ReportTest : Telerik.Reporting.Report
     {
@@ -47,8 +47,8 @@ public partial class ReportTest : Telerik.Reporting.Report
             throw new Exception("Manually cancelled.");
         }
     }
-````
-````VB
+```
+```VB.NET
 'the report
 Public Partial Class ReportTest
     Inherits Telerik.Reporting.Report
@@ -63,7 +63,7 @@ Public Partial Class ReportTest
         Throw New Exception("Manually cancelled.")
     End Sub
 End Class
-````
+```
 
   
  **The HTML5 Viewer:**  
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
  For example:  
 
-````C#
+```C#
 public override System.Net.Http.HttpResponseMessage GetParameters(string clientID, ClientReportSource reportSource)
 {
     try {
@@ -106,8 +106,8 @@ public override System.Net.Http.HttpResponseMessage GetParameters(string clientI
         throw new Exception("Report resolving error.");
     }
 }
-````
-````VB
+```
+```VB.NET
 Public Overrides Function GetParameters(clientID As String, reportSource As ClientReportSource) As System.Net.Http.HttpResponseMessage
     Try
         Return MyBase.GetParameters(clientID, reportSource)
@@ -115,7 +115,7 @@ Public Overrides Function GetParameters(clientID As String, reportSource As Clie
         Throw New Exception("Report resolving error.")
     End Try
 End Function
-````
+```
 
 The above lines will override the default behavior of the **ReportsControllerBase.GetParameters method** (the Reporting REST service). 
 

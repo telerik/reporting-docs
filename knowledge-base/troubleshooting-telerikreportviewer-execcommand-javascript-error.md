@@ -55,7 +55,7 @@ To handle scenarios where the PDF viewer is disabled, you can create a custom en
 
 This endpoint is invoked manually whenever the PDF viewer is disabled according to the [navigator.pdfViewerEnabled](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/pdfViewerEnabled) value.
 
-````C#
+```C#
         public class ExportReportRequest
         {
             public string ReportName { get; set; }
@@ -84,7 +84,7 @@ This endpoint is invoked manually whenever the PDF viewer is disabled according 
             RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
             return File(result.DocumentBytes, result.MimeType);
         }
-````
+```
 
 On the client side, use the `printBegin(e, args)` event to handle this scenario. In the event handler, return the PDF as an attachment because the print dialog cannot be opened when the setting is configured to download PDFs.
 

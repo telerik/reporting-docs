@@ -52,7 +52,7 @@ The extra `MeasureTrailingSpaces` flag causes incorrect text measurement in Tele
 
 To resolve this issue, manually remove the `MeasureTrailingSpaces` flag from the `GenericTypographic` StringFormat after using Spire.Office operations and before rendering Telerik reports:
 
-````C#
+```C#
 using Telerik.Reporting;
 using Telerik.Reporting.Processing;
 
@@ -71,7 +71,7 @@ System.Drawing.StringFormat.GenericTypographic.FormatFlags &= ~System.Drawing.St
 
 // Telerik Reporting operations
 // ...
-````
+```
 
 ## Additional Information
 

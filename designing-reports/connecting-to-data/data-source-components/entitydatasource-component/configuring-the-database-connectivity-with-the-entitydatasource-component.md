@@ -25,12 +25,12 @@ When running the report in production the above code should work just fine. Howe
 
 > When using __DbContext__ by default the context class generated (Database First or Model First) provides only a default (parameterless) constructor. However for design time purposes a constructor with connection string (string argument) is needed so that while processing the report the correct connection string can be passed. If Code First is used there is no need for a constructor with string parameter. That is because this approach uses connection strings without metadata (which is needed for the mapping). This means that the connection string of the context can be directly set to this connection string, without the need to be resolved first. Adding the needed constructor is as simple as it is adding the snippet below:
 
-````C#
+```C#
 partial class AdventureWorksContext
 {
 	public AdventureWorksContext(string connectionString) : base(connectionString) {}
 }
-````
+```
 {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=AdventureWorksDbContextConstructor}}
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=ConnectionStringSnippet}}

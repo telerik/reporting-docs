@@ -54,57 +54,57 @@ If using the default serializer settings is not an option due to application req
 
 1. Implement the `JsonConfigFilterAttribute` [`ActionFilter`](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute):
 
-   ```C#
-   using Microsoft.AspNetCore.Mvc;
-   using Microsoft.AspNetCore.Mvc.Filters;
-   using Newtonsoft.Json;
-   using Newtonsoft.Json.Serialization;
-   using Microsoft.AspNetCore.Mvc.Formatters;
-   using System.Buffers;
-   using Microsoft.Extensions.Options;
+	```C#
+	using Microsoft.AspNetCore.Mvc;
+	using Microsoft.AspNetCore.Mvc.Filters;
+	using Newtonsoft.Json;
+	using Newtonsoft.Json.Serialization;
+	using Microsoft.AspNetCore.Mvc.Formatters;
+	using System.Buffers;
+	using Microsoft.Extensions.Options;
 
-   public class JsonConfigFilterAttribute : ActionFilterAttribute
-   {
-   	public override void OnResultExecuting(ResultExecutingContext context)
-   	{
-   		if (context.Result is ObjectResult objectResult)
-   		{
-   			var serializerSettings = new JsonSerializerSettings
-   			{
-   				NullValueHandling = NullValueHandling.Include,
-   				DateTimeZoneHandling = DateTimeZoneHandling.Unspecified,
-   				ContractResolver = new CamelCasePropertyNamesContractResolver()
-   			};
+	public class JsonConfigFilterAttribute : ActionFilterAttribute
+	{
+		public override void OnResultExecuting(ResultExecutingContext context)
+		{
+			if (context.Result is ObjectResult objectResult)
+			{
+				var serializerSettings = new JsonSerializerSettings
+				{
+					NullValueHandling = NullValueHandling.Include,
+					DateTimeZoneHandling = DateTimeZoneHandling.Unspecified,
+					ContractResolver = new CamelCasePropertyNamesContractResolver()
+				};
 
-   			var jsonOutputFormatter = new NewtonsoftJsonOutputFormatter(
-   				serializerSettings,
-   				ArrayPool<char>.Shared,
-   				new MvcOptions { },
-   				new MvcNewtonsoftJsonOptions()
-   				);
+				var jsonOutputFormatter = new NewtonsoftJsonOutputFormatter(
+					serializerSettings,
+					ArrayPool<char>.Shared,
+					new MvcOptions { },
+					new MvcNewtonsoftJsonOptions()
+					);
 
-   			objectResult.Formatters.Add(jsonOutputFormatter);
-   		}
+				objectResult.Formatters.Add(jsonOutputFormatter);
+			}
 
-   		base.OnResultExecuting(context);
-   	}
-   }
-   ```
+			base.OnResultExecuting(context);
+		}
+	}
+	```
 
 1. Annotate the `ReportsController` with the newly created `JsonConfigFilter` attribute:
 
-   ```C#
-   [Route("api/[controller]")]
-   [ApiController]
-   [JsonConfigFilter]
-   public class ReportsController : ReportsControllerBase
-   {
-   	public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-   	: base(reportServiceConfiguration)
-   		{
-   		}
-   }
-   ```
+	```C#
+	[Route("api/[controller]")]
+	[ApiController]
+	[JsonConfigFilter]
+	public class ReportsController : ReportsControllerBase
+	{
+		public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
+		: base(reportServiceConfiguration)
+			{
+			}
+	}
+	```
 
 ## See Also
 

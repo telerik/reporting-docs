@@ -41,7 +41,7 @@ If the `MD` content cannot be converted to `HTML` beforehand, create a [User Fun
 
 > To use the `Markdown.ToHtml` function, install the following NuGet package in the project with the user function - [Markdig](https://www.nuget.org/packages/Markdig/0.44.0?_src=template)
 
-````C#
+```C#
 namespace UserFunc
 {
     public class Class1
@@ -54,7 +54,7 @@ namespace UserFunc
             return Markdown.ToHtml(markdown);
         }
   
-````
+```
 
 - Input:
 

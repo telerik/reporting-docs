@@ -14,7 +14,7 @@ reportingArea: General
 
 To create a report item in code, instantiate a report item object, set its properties, and add it to the _Items_ collection of the section where you wish the control to appear. For example, this code will add one __TextBox__ report item in a __Panel__ inside the __detail__ section of the report:
 
-````C#
+```C#
 Telerik.Reporting.Panel panel1 = new Telerik.Reporting.Panel();
 Telerik.Reporting.TextBox textBox1 = new Telerik.Reporting.TextBox();
 // panel1
@@ -30,7 +30,7 @@ textBox1.StyleName = "Data";
 textBox1.Value = "=Fields.CustomerID";
 panel1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {textBox1});
 detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {panel1});
-````
+```
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=CreatePanelWithTextBox}}
 ## See Also
 

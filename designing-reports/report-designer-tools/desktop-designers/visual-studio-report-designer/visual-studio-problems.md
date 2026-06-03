@@ -20,22 +20,9 @@ When Visual Studio crashes while working with Telerik Reporting, for example, wh
 - Try to reproduce the crash on another machine to exclude machine-specific problems e.g., corrupted Telerik Reporting installation.
 - Provide us with a log file containing detailed information about the Visual Studio crash. To create the log file, turn on tracing for the Visual Studio IDE and perform the actions that caused the crash. Below is the XML you need to add to the `devenv.exe.config` file to enable tracing:
 
-  ```XML
-  <?xml version ="1.0"?>
-  <configuration>
-  	...
-  	<system.diagnostics>
-  		<trace autoflush="true" indentsize="4">
-  			<listeners>
-  				<add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="c:\temp\DEVENV.LOG" />
-  				<remove name="Default" />
-  			</listeners>
-  		</trace>
-  	</system.diagnostics>
-  </configuration>
-  ```
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\TroubleshootingVisualStudioReportDesigner.xml region=VisualStudioCrashes}}
 
-The `devenv.exe.config` file resides in `C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE` by default (it is recommended to create a backup copy before modifying it).
+	The `devenv.exe.config` file resides in `C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE` by default (it is recommended to create a backup copy before modifying it).
 
 - Start Visual Studio with the log switch: [/Log (devenv.exe)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/ide/reference/log-devenv-exe?view=vs-2015) which could also provide more info on the error.
 - Check the event viewer logs for any logs that could provide more info about the problem.

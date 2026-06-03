@@ -25,7 +25,7 @@ This approach is only applicable for desktop applications (WPF, Windows Forms an
 
 To prevent the print UI from appearing, you should specify valid printer settings and a standard print controller to this method. This example illustrates how to prevent the print UI from appearing in a batch print operation or when printing from a service.
 
-````C#
+```C#
 var reportName = "Telerik.Reporting.Examples.CSharp.Dashboard, CSharp.ReportLibrary";
 
 // Obtain the settings of the default printer
@@ -49,8 +49,8 @@ Telerik.Reporting.TypeReportSource typeReportSource =
 typeReportSource.TypeName = reportName;
 
 reportProcessor.PrintReport(typeReportSource, printerSettings);
-````
-````VB
+```
+```VB.NET
 Dim reportName = "ReportCatalog, VB.ReportLibrary"
 
 ' Obtain the settings of the default printer
@@ -69,7 +69,7 @@ typeReportSource.TypeName = reportName
 Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor
 reportProcessor.PrintController = standardPrintController
 reportProcessor.PrintReport(typeReportSource, printerSettings)
-````
+```
 
 ## See Also
 

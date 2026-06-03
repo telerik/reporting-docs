@@ -34,7 +34,7 @@ You may do this by [Embedding the Reporting Engine](slug:telerikreporting/using-
 
 In this case, the logic requires creating two InstanceReportSource objects and a Report Object from the Main Report.(cs|vb) class. Query the Main Report Object for the SubReport Item. Then set the Report Source of the SubReport Item to the SubReport Instance Report Source. See the below code snippets for more details.
 
-````C#
+```C#
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -108,8 +108,8 @@ static class Program
 		Console.ReadKey();
 	}
 }
-````
-````VB
+```
+```VB.NET
 Imports System.Reflection
 Imports Telerik.Reporting
 Imports Telerik.Reporting.Processing
@@ -171,7 +171,7 @@ Module Module1
 		Console.ReadKey()
 	End Sub
 End Module
-````
+```
 
 ## See Also
 

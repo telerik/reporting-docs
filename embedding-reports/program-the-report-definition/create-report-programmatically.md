@@ -14,13 +14,13 @@ reportingArea: General
 
 To create a Telerik report in code, you need to instantiate a [Telerik.Reporting.Report](/api/Telerik.Reporting.Report) object and set its properties. For example, this code will create a report and set up its data source:
 
-````C#
+```C#
 Telerik.Reporting.Report report = new Telerik.Reporting.Report();
 string selectCommand = @"SELECT * FROM Sales.Store";
 string connectionString = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True";
 Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource(connectionString, selectCommand);
 report.DataSource = sqlDataSource;
-````
+```
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=CreateReportWithDataSource}}
 
 ## Next Steps

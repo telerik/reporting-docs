@@ -23,89 +23,62 @@ The following list describes the prerequisites for this tutorial:
 - Copy of the "Product Catalog.trdp" report file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 - Entry with the default connection string used by Telerik Reporting sample reports in the configuration file of the project hosting the Reporting REST service. For example:
 
-  **web.config** file:
+	**web.config** file:
 
-  ```XML
-  <connectionStrings>
-    <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-        connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-        providerName="System.Data.SqlClient" />
-  </connectionStrings>
-  ```
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ReportParameterValues.xml region=Prerequisites}}
 
-  **appsettings.json** file:
+	**appsettings.json** file:
 
-  ```JSON
-  {
-  	"ConnectionStrings": [
-  	    {
-  		 "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-  		 "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-  		 "providerName": "System.Data.SqlClient"
-  		}
-  	]
-  }
-  ```
+	```JSON
+	{
+		"ConnectionStrings": [
+			{
+				"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+				"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+				"providerName": "System.Data.SqlClient"
+			}
+		]
+	}
+	```
 
 ## Using React Report Viewer in React application
 
 ### Steps:
 
-1.  Create new React application using the [Creating a React App](https://react.dev/learn/creating-a-react-app) tutorial.
+1. Create new React application using the [Creating a React App](https://react.dev/learn/creating-a-react-app) tutorial.
 
-    ```powershell
-    npx create-react-app my-app-with-viewer
-    cd my-app-with-viewer
-    ```
+	```powershell
+	npx create-react-app my-app-with-viewer
+	cd my-app-with-viewer
+	```
 
-1.  Install the `@progress/telerik-react-report-viewer` NPM package by running:
+1. Install the `@progress/telerik-react-report-viewer` NPM package by running:
 
-    ```powershell
-    npm install @progress/telerik-react-report-viewer
-    ```
+	```powershell
+	npm install @progress/telerik-react-report-viewer
+	```
 
-1.  Once installed, import the `TelerikReportViewer` component in the `index.js` file:
+1. Once installed, import the `TelerikReportViewer` component in the `index.js` file:
 
-    ```JavaScript
-    import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
-    ```
+	```JavaScript
+	import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
+	```
 
-1.  Add the React Report Viewer to the React component:
+1. Add the React Report Viewer to the React component:
 
-    ```JSX
-    export function ReportViewer() {
+	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerWithRest.jsx region=ReactViewerWithRest}}
 
-    let viewer;
-    const reportSource = { report: 'Report Catalog.trdp', parameters: {} };
-    const viewerContainerStyle = { position: 'absolute', inset: '5px' };
+1. Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _public/index.html_:
 
-    return (<>
-    	    <TelerikReportViewer
-    			ref={el => viewer = el}
-    			serviceUrl="http://localhost:59657/api/reports/"
-    			reportSource={reportSource}
-    			viewerContainerStyle={viewerContainerStyle}
-    			viewMode="INTERACTIVE"
-    			scaleMode="SPECIFIC"
-    			scale={1.0}
-    			enableAccessibility={false} />
-    	    <button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-    	    <button onClick={ () => viewer.commands.print.exec() }>Print</button>
-        </>)
-    }
-    ```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
-1.  Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _public/index.html_:
+	> note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
+1. Run the application:
 
-    > note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
-
-1.  Run the application:
-
-    ```powershell
-    npm run start
-    ```
+	```powershell
+	npm run start
+	```
 
 ## Sample Project
 

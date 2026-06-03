@@ -40,7 +40,7 @@ protected void Page_Load(object sender, EventArgs e)
 	}
 }
 ````
-````VB
+```VB.NET
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	If Not IsPostBack Then
 		Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
@@ -49,5 +49,5 @@ Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Han
 		ReportViewer1.RefreshReport()
 	End If
 End Sub
-````
+```
 

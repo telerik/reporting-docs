@@ -39,54 +39,54 @@ Here is sample approach you can use to achieve the above in an ASP.NET Core appl
 
 1. Creating a controller endpoint that returns the report exported in PDF format.
 
-   ```C#
-   public class HomeController : Controller
-   {
-   	private IWebHostEnvironment _environment;
+	```C#
+	public class HomeController : Controller
+	{
+		private IWebHostEnvironment _environment;
 
-   	public HomeController(IWebHostEnvironment environment)
-   	{
-   		_environment = environment;
-   	}
+		public HomeController(IWebHostEnvironment environment)
+		{
+			_environment = environment;
+		}
 
-   	public IActionResult GenerateReportPDF(string reportName)
-   	{
-   		ReportProcessor reportProcessor = new ReportProcessor();
-   		Telerik.Reporting.UriReportSource uriReportSource = new Telerik.Reporting.UriReportSource();
-   		uriReportSource.Uri = Path.Combine(_environment.ContentRootPath, "Reports", reportName);
-   		RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
+		public IActionResult GenerateReportPDF(string reportName)
+		{
+			ReportProcessor reportProcessor = new ReportProcessor();
+			Telerik.Reporting.UriReportSource uriReportSource = new Telerik.Reporting.UriReportSource();
+			uriReportSource.Uri = Path.Combine(_environment.ContentRootPath, "Reports", reportName);
+			RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
 
-   		return File(result.DocumentBytes, result.MimeType);
-   	}
-   }
-   ```
+			return File(result.DocumentBytes, result.MimeType);
+		}
+	}
+	```
 
 1. Loading the generated PDF file within a hidden iframe and opening the browser's print dialog.
 
-   ```JavaScript
-   function printReport() {
-   	fetch("/Home/GenerateReportPDF?reportName=Barcodes Report.trdp")
-   		.then(res => {
-   			if (res.status === 200) {
-   				return res.blob();
-   			} else {
-   				console.log("Could not retrieve PDF document.");
-   			}
-   		})
-   		.then(blob => {
-   			let objectURL = URL.createObjectURL(blob);
+	```JavaScript
+	function printReport() {
+		fetch("/Home/GenerateReportPDF?reportName=Barcodes Report.trdp")
+			.then(res => {
+				if (res.status === 200) {
+					return res.blob();
+				} else {
+					console.log("Could not retrieve PDF document.");
+				}
+			})
+			.then(blob => {
+				let objectURL = URL.createObjectURL(blob);
 
-   			var iframe = document.createElement("iframe");
-   			iframe.style.display = "none";
-   			iframe.src = objectURL;
-   			iframe.onload = function () {
-   				iframe.contentWindow.print();
-   			}
+				var iframe = document.createElement("iframe");
+				iframe.style.display = "none";
+				iframe.src = objectURL;
+				iframe.onload = function () {
+					iframe.contentWindow.print();
+				}
 
-   			document.body.appendChild(iframe);
-   		});
-   }
-   ```
+				document.body.appendChild(iframe);
+			});
+	}
+	```
 
 You can download the [ASP.NET Core Client Print Example](https://github.com/telerik/reporting-samples/tree/master/PrintReportDirectlyAtClientSide) to see the full solution.
 

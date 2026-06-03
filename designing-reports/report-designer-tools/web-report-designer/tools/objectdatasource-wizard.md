@@ -56,21 +56,7 @@ When started, the application that hosts the Web Report Designer will try to res
 
 	- For.NET Framework projects, the configuration should be added to the `web.config` file.
 
-     ```XML
-     <configuration>
-     	<configSections>
-     		<section name="Telerik.Reporting"
-     			type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-     			allowLocation="true"
-     			allowDefinition="Everywhere" />
-     	</configSections>
-     	<Telerik.Reporting>
-     		<AssemblyReferences>
-     			<add name="CarObjects"/>
-     		</AssemblyReferences>
-     	</Telerik.Reporting>
-     </configuration>
-     ```
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ObjectdatasourceWizard.xml region=ConfiguringTheDatasourceInTheWebreportdesigner}}
 
 	We are ready with the configuration. Now, let's step to the wizard.
 

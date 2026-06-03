@@ -48,7 +48,7 @@ Other reason for missing images in the rendered in XAML report is the usage of U
    
 Example:  
 
-````C#
+```C#
 namespace CSharp.SilverlightDemo.Web
 {
     using System;
@@ -77,8 +77,8 @@ namespace CSharp.SilverlightDemo.Web
         }
     }
 }
-````
-````VB
+```
+```VB.NET
 Imports System.Collections.Generic
 Imports System.Web
 Imports Telerik.Reporting.Service
@@ -103,6 +103,6 @@ Namespace CSharp.SilverlightDemo.Web
         End Property
     End Class
 End Namespace
-```` 
+```
    
 Finally, change the **ReportService.svc** and the **Web.config** files in order to use the modified service.  

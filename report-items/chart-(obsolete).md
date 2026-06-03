@@ -30,13 +30,13 @@ To bind the Chart report item, use either of the following approaches:
 
 When handling the `NeedDataSource` event, you have to process the Chart item, for example:
 
-````C#
+```C#
 private void chart1_NeedDataSource(object sender, System.EventArgs e)
 {
 	Telerik.Reporting.Processing.Chart procChart = (Telerik.Reporting.Processing.Chart)sender;
 	procChart.DataSource = your_datasource;
 }
-````
+```
 {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ChartNeedDataSource}}
 ## Customizing the Chart 
 

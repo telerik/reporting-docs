@@ -60,7 +60,7 @@ If you use the Silverlight report viewer the report description is provided by t
 		```
 
 
-	1. In order to utilize your IReportResolver implementation, create a _Telerik.Reporting.Service_ subclass and in your subclass constructor pass your IReportResolver implementation to the _Telerik.Reporting.ServiceBase.ReportResolver_ property:
+	1. To utilize your IReportResolver implementation, create a _Telerik.Reporting.Service_ subclass and in your subclass constructor pass your IReportResolver implementation to the _Telerik.Reporting.ServiceBase.ReportResolver_ property:
 
 		```C#
 		class CustomReportService : ReportService
@@ -113,7 +113,6 @@ If you use the Silverlight report viewer the report description is provided by t
 		End Class
 		```
 
-
 	1. Add to Telerik.Reporting.Service subclass the IReportResolver implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on. 
 
 		```C#
@@ -139,24 +138,24 @@ If you use the Silverlight report viewer the report description is provided by t
 		```
 
 
-		You can use for fallback the default IReportResolver implementations:
+		You can use the default IReportResolver implementations as a fallback:
 
 		+ ReportTypeResolver - Resolves IReportDocument from assembly qualified name
 		+ ReportFileResolver - Resolves IReportDocument from physical path to trdp or trdx file
-		+ ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
+		+ ReportFileResolverWeb - Resolves IReportDocument from a relative path to a trdp or trdx file
 
 1. __Hosting Telerik.Reporting.Service.ReportService subclass in IIS__
 
-	1. Add `.svc` file (e.g. `ReportService.svc`) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only:
+	1. Add `.svc` file (e.g., `ReportService.svc`) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only:
 
-		````XML
-<%@ServiceHost Service="CSharp.SilverlightDemo.Web.CustomReportService, CSharp.SilverlightDemo.Web" %>
-````
+		```XML
+		<%@ServiceHost Service="CSharp.SilverlightDemo.Web.CustomReportService, CSharp.SilverlightDemo.Web" %>
+		```
 
-	1. Register the Reporting Service endpoints with service name your Telerik.Reporting.Service.ReportService subclass in the `web.config`:
+	1. Register the Reporting Service endpoints with the service name your Telerik.Reporting.Service.ReportService subclass in the `web.config`:
 
-		````XML
-<?xml version="1.0" encoding="utf-8" ?>
+		```XML
+		<?xml version="1.0" encoding="utf-8" ?>
 		<configuration>
 			<system.serviceModel>
 				<services>
@@ -196,7 +195,6 @@ If you use the Silverlight report viewer the report description is provided by t
 				</behaviors>
 			</system.serviceModel>
 		</configuration>
-````
-
+		```
 
 The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g., changing report parameters' values or hitting refresh. To avoid unexpected results the recommended [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview) to work with are __UriReportSource__ and __TypeReportSource__.

@@ -61,7 +61,7 @@ Use the [ReportProcessor.RenderReport](/api/telerik.reporting.processing.reportp
   ```
   
   **VB**
-  ```VB
+  ```VB.NET
   Sub ExportToPDF(ByVal reportToExport As String)
     Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
     Dim typeReportSource As New Telerik.Reporting.TypeReportSource()

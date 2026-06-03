@@ -36,13 +36,13 @@ The goal is to change the value of a TextBox item in the report, according to th
 		 ReportViewer1.RefreshReport();
 	}
 	```
-	````VB
+	```VB.NET
 	Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
 		 Dim reportsource As InstanceReportSource = DirectCast(Me.ReportViewer1.ReportSource, InstanceReportSource)
 		 Dim report As Report = DirectCast(reportsource.ReportDocument, Report)
 		 report.ReportParameters("Year").Value = DirectCast(sender, DropDownList).SelectedItem.Value
 		 ReportViewer1.RefreshReport()
 	End Sub
-	````
+	```
 
 

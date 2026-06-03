@@ -45,10 +45,10 @@ app.execMenuItem('ShowHideBookmarks')
 var deviceInfo = new System.Collections.Hashtable();
 deviceInfo["JavaScript"] = "app.execMenuItem('ShowHideBookmarks')";
 ```
-````VB
+```VB.NET
 Dim deviceInfo As New System.Collections.Hashtable()
 deviceInfo.Add("JavaScript",  "app.execMenuItem('ShowHideBookmarks')")
-````
+```
 
 - When you export through a Report Viewer - [declare a Telerik Reporting section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) in the application's configuration file and set the JavaScript parameter of the [PDF extension](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element):  
   

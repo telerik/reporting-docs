@@ -34,11 +34,11 @@ public static Guid ConvertToGuid(string guid)
            return new Guid(guid);
 }
 ````
-````vb
+```VB.NET
 Public Shared Function ConvertToGuid(guid As String) As Guid
     Return New Guid(guid)
 End Function
-````  
+```
 
 Finally, set the value for the [DataSourceParameter](/api/telerik.reporting.datasourceparameter):   
 

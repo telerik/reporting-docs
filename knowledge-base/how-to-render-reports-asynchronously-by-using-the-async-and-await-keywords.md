@@ -48,7 +48,7 @@ public class AsyncWrappers
     }
 }
 ```
-````VB
+```VB.NET
 Public Class AsyncWrappers
     ' Wrap the RenderingResult like this:
     Public Function RenderReportAsync(reportType As Type) As Task(Of RenderingResult)
@@ -67,7 +67,7 @@ Public Class AsyncWrappers
         Return Await Task.Run(Function() reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo))
     End Function
 End Class
-````
+```
     
  Besides declaring the return value to be Task&lt;RenderingResult&gt; we have marked the method as **async**. Also, we are invoking the *RenderReport* method using the **await** keyword. For the second part, we will use our method in an async manner: 
 
@@ -97,7 +97,7 @@ public async Task<string> RenderReportAsync()
     return string.Format("Successfully rendered! File saved in {0}\n", filePath);
 }
 ```
-````VB
+```VB.NET
 'Use the wrapper in your code like this:
 Public Function RenderReportAsync() As Task(Of String)
     Dim asyncWrappers = New AsyncWrappers()
@@ -119,7 +119,7 @@ Public Function RenderReportAsync() As Task(Of String)
     ' You can return void but that is not recommended
     Return String.Format("Successfully rendered! File saved in {0}" & vbLf, filePath)
 End Function
-````  
+```
 
 Finally, we will invoke this method in a console application and check the results: 
 
@@ -153,7 +153,7 @@ class Program
     }
 }
 ```
-````VB
+```VB.NET
 Class Program
     ' A working example
     Private Shared Sub Main(args As String())
@@ -178,7 +178,7 @@ Class Program
         Next
     End Sub
 End Class
-````
+```
 
 ## Additional Resources
 

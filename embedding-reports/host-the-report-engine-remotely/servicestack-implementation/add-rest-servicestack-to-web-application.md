@@ -55,7 +55,7 @@ This article describes the steps required to host the **Telerik Reporting Servic
         }
      }
      ```
-     ```VB
+     ```VB.NET
      Imports Telerik.Reporting.Services
 
      Public Class ReportsHost
@@ -96,7 +96,7 @@ This article describes the steps required to host the **Telerik Reporting Servic
         }
      }
      ```
-     ```VB
+     ```VB.NET
      Public Class ReportsHost
         Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
         Public Sub New()
@@ -128,7 +128,7 @@ This article describes the steps required to host the **Telerik Reporting Servic
             new ReportsHost().Init();
         }
    ```
-   ```VB
+   ```VB.NET
    Protected Sub Application_Start()
         Dim reportsHost As New ReportsHost()
         reportsHost.Init()

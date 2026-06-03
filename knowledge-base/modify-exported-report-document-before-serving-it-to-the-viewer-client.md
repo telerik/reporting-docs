@@ -45,7 +45,7 @@ private void ReportViewer1ExportEnd(object sender, Telerik.ReportViewer.Common.E
 	}
 }
 ```
-````VB
+```VB.NET
 Public Sub New()
 	InitializeComponent()
 	AddHandler Me.reportViewer1.ExportEnd, AddressOf ReportViewer1ExportEnd
@@ -56,7 +56,7 @@ Private Sub ReportViewer1ExportEnd(sender As Object, args As Telerik.ReportViewe
 		'modify the rendered document in args.DocumentBytes
 	End If
 End Sub
-````
+```
 
 ### Web Viewers
 
@@ -76,7 +76,7 @@ public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControl
 	}
 }
 ```
-````VB
+```VB.NET
 Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
 	Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
 		If args.Extension = "PDF" Then
@@ -84,7 +84,7 @@ Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.Reports
 		End If
 	End Sub
 End Class
-````
+```
 
 #### ServiceStack
 
@@ -100,7 +100,7 @@ public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControl
 	}
 }
 ```
-````VB
+```VB.NET
 Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
 	Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
 		If args.Extension = "PDF" Then
@@ -108,5 +108,5 @@ Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.Reports
 		End If
 	End Sub
 End Class
-````
+```
 

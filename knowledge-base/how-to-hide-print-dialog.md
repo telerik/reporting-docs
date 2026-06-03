@@ -50,7 +50,7 @@ typeReportSource.TypeName = reportName;
 
 reportProcessor.PrintReport(typeReportSource, printerSettings);
 ```
-````VB
+```VB.NET
 Dim reportName = "ReportCatalog, VB.ReportLibrary"
 
 ' Obtain the settings of the default printer
@@ -69,7 +69,7 @@ typeReportSource.TypeName = reportName
 Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor
 reportProcessor.PrintController = standardPrintController
 reportProcessor.PrintReport(typeReportSource, printerSettings)
-````
+```
 
 ## See Also
 

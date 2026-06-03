@@ -56,7 +56,7 @@ public partial class MainPage : UserControl, IReportServiceClientFactory
 	}
 }
 ```
-````VB.NET
+```VB.NET
 Imports System
 Imports System.ServiceModel
 Imports System.Windows.Controls
@@ -88,5 +88,5 @@ Partial Public Class MainPage
 
 	End Function
 End Class
-````
+```
 

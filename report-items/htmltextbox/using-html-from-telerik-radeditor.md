@@ -80,7 +80,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 	```C#
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);
 	```
-	```VB
+	```VB.NET
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)
 	```
 
@@ -89,7 +89,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 	```C#
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);
 	```
-	```VB
+	```VB.NET
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 	```
 

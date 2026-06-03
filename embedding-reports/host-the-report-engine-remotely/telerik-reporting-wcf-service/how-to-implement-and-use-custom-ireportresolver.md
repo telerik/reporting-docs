@@ -48,7 +48,7 @@ class CustomReportService : ReportService
 			}
 		}
 ```
-		````VB.NET
+		```VB.NET
 Class CustomReportService
 			Inherits ReportService
 			Shared ReadOnly resolver As IReportResolver = New ReportResolver()
@@ -57,7 +57,7 @@ Class CustomReportService
 				Me.ReportResolver = resolver
 			End Sub
 		End Class
-````
+```
 
 
 	1. In order to utilize your IReportResolver implementation, create a _Telerik.Reporting.Service_ subclass and in your subclass constructor pass your IReportResolver implementation to the _Telerik.Reporting.ServiceBase.ReportResolver_ property:
@@ -73,7 +73,7 @@ class CustomReportService : ReportService
 			}
 		}
 ```
-		````VB.NET
+		```VB.NET
 Class CustomReportService
 			Inherits ReportService
 			Shared ReadOnly resolver As IReportResolver = New ReportResolver()
@@ -82,7 +82,7 @@ Class CustomReportService
 				Me.ReportResolver = resolver
 			End Sub
 		End Class
-````
+```
 
 
 	1. Even if you use your own IReportResolver implementation you can still fallback to the default IReportResolver implementations as shown in the following walkthrough.
@@ -103,7 +103,7 @@ class ReportServiceWithResolverFallback : ReportService
 			}
 		}
 ```
-		````VB.NET
+		```VB.NET
 Class ReportServiceWithResolverFallback
 			Inherits ReportService
 			Shared ReadOnly resolvers As IReportResolver = New ReportResolverWithFallBack(New ReportTypeResolver(New ReportFileResolverWeb(Nothing)))
@@ -111,7 +111,7 @@ Class ReportServiceWithResolverFallback
 				Me.ReportResolver = resolvers
 			End Sub
 		End Class
-````
+```
 
 
 	1. Add to Telerik.Reporting.Service subclass the IReportResolver implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on. 
@@ -128,7 +128,7 @@ class ReportServiceWithResolverFallback : ReportService
 			}
 		}
 ```
-		````VB.NET
+		```VB.NET
 Class ReportServiceWithResolverFallback
 			Inherits ReportService
 			Shared ReadOnly resolvers As IReportResolver = New ReportResolverWithFallBack(New ReportTypeResolver(New ReportFileResolverWeb(Nothing)))
@@ -136,7 +136,7 @@ Class ReportServiceWithResolverFallback
 				Me.ReportResolver = resolvers
 			End Sub
 		End Class
-````
+```
 
 
 		You can use for fallback the default IReportResolver implementations:

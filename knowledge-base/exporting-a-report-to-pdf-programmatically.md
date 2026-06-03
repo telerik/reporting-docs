@@ -53,7 +53,7 @@ void ExportToPDF(Telerik.Reporting.Report reportToExport)
 	Response.End();
 }
 ```
-````VB.NET
+```VB.NET
 Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)
 
 	Dim reportProcessor As New ReportProcessor()
@@ -71,7 +71,7 @@ Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)
 	Response.BinaryWrite(result.DocumentBytes)
 	Response.End()
 End Sub
-````
+```
 
 
 ### For ASP.NET Core

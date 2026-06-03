@@ -109,7 +109,7 @@ static class Program
 	}
 }
 ```
-````VB
+```VB.NET
 Imports System.Reflection
 Imports Telerik.Reporting
 Imports Telerik.Reporting.Processing
@@ -171,7 +171,7 @@ Module Module1
 		Console.ReadKey()
 	End Sub
 End Module
-````
+```
 
 ## See Also
 

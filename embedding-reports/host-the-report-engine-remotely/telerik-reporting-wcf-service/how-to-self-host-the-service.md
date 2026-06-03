@@ -64,7 +64,7 @@ The advantages of a Self-Hosted service:
    	}
    }
    ```
-   ```VB
+   ```VB.NET
    <System.Runtime.Serialization.KnownType(GetType(Object()))> _
    Class ReportService
    	Inherits Telerik.Reporting.Service.ReportServiceBase
@@ -105,7 +105,7 @@ The advantages of a Self-Hosted service:
    	}
    }
    ```
-   ```VB
+   ```VB.NET
    Public Class ReportServiceBaseSnippets
    	Public Shared Sub Main(ByVal args As String())
    		Dim host As New System.ServiceModel.ServiceHost(GetType(ReportService))

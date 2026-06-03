@@ -111,7 +111,7 @@ public class CustomResources : Telerik.ReportViewer.Silverlight.ITextResources
 	//...... Implement the rest of the properties ......
 }
 ```
-````VB
+```VB.NET
 Public Class CustomResources
 	Implements Telerik.ReportViewer.Silverlight.ITextResources
 
@@ -135,7 +135,7 @@ Public Class CustomResources
 
 	'...... Implement the rest of the properties ......
 End Class
-````
+```
 
 Instead of a hard-coded string the property can be set in a method/constructor or to be created a method that returns string and implements a custom logic, for example retrieves the resource key from a database.
 
@@ -169,7 +169,7 @@ public class CustomTextResources : Telerik.ReportViewer.Silverlight.ITextResourc
 	//...... Implement the rest of the properties ......
 }
 ```
-```VB
+```VB.NET
 Public Class CustomTextResources
 	Implements Telerik.ReportViewer.Silverlight.ITextResources
 

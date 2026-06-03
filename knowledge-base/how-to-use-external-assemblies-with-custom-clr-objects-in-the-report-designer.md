@@ -85,7 +85,7 @@ The steps below can be used as an example of creating an assembly with custom us
    	}
    }
    ```
-   ```VB
+   ```VB.NET
    Imports System.Collections
    Imports System.Collections.Generic
 

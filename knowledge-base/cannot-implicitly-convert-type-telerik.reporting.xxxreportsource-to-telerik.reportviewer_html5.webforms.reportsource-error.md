@@ -48,7 +48,7 @@ protected void Page_Load(object sender, EventArgs e)
 	}
 }
 ```
-````VB
+```VB.NET
 Protected Sub Page_Load(sender As Object, e As EventArgs)
 	If Not IsPostBack Then
 		Dim reportSource As New Telerik.ReportViewer.Html5.WebForms.ReportSource()
@@ -57,7 +57,7 @@ Protected Sub Page_Load(sender As Object, e As EventArgs)
 		reportViewer1.ReportSource = reportSource
 	End If
 End Sub
-````
+```
 
 ## Notes
 

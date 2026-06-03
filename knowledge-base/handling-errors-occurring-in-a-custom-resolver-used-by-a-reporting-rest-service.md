@@ -48,7 +48,7 @@ public partial class ReportTest : Telerik.Reporting.Report
         }
     }
 ```
-````VB
+```VB.NET
 'the report
 Public Partial Class ReportTest
     Inherits Telerik.Reporting.Report
@@ -63,7 +63,7 @@ Public Partial Class ReportTest
         Throw New Exception("Manually cancelled.")
     End Sub
 End Class
-````
+```
 
   
  **The HTML5 Viewer:**  
@@ -107,7 +107,7 @@ public override System.Net.Http.HttpResponseMessage GetParameters(string clientI
     }
 }
 ```
-````VB
+```VB.NET
 Public Overrides Function GetParameters(clientID As String, reportSource As ClientReportSource) As System.Net.Http.HttpResponseMessage
     Try
         Return MyBase.GetParameters(clientID, reportSource)
@@ -115,7 +115,7 @@ Public Overrides Function GetParameters(clientID As String, reportSource As Clie
         Throw New Exception("Report resolving error.")
     End Try
 End Function
-````
+```
 
 The above lines will override the default behavior of the **ReportsControllerBase.GetParameters method** (the Reporting REST service). 
 

@@ -54,7 +54,7 @@ foreach (var sqlDataSource in sqlDS)
 
 var irs = new InstanceReportSource() { ReportDocument = report };
 ```
-````VB.NET
+```VB.NET
 Dim query As String = "SQL_QUERY_HERE"
 Dim reportPackager As New ReportPackager()
 Dim report As Telerik.Reporting.Report = Nothing
@@ -71,7 +71,7 @@ For Each sqlDataSource As SqlDataSource In sqlDS
 Next
 
 Dim irs As New InstanceReportSource() With {.ReportDocument = report}
-````
+```
 
 
 ## Notes

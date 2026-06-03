@@ -53,7 +53,7 @@ protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
 	return base.ProcessCmdKey(ref msg, keyData);
 }
 ````
-````VB.NET
+```VB.NET
 Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
 	If (keyData = (Keys.S Or Keys.Control)) Then
 		'do my job
@@ -61,7 +61,7 @@ Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys
 
 	Return MyBase.ProcessCmdKey(msg, keyData)
 End Function
-````
+```
 
 Regarding the Mouse events you may use the approach suggested in the StackOverflow thread [Capture mouse click anywhere on Form (without IMessageFilter)](https://stackoverflow.com/questions/21312587/capture-mouse-click-anywhere-on-form-without-imessagefilter).
 

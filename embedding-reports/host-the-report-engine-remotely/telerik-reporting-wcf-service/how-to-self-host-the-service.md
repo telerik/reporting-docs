@@ -46,18 +46,18 @@ The advantages of a Self-Hosted service:
    class ReportService : Telerik.Reporting.Service.ReportServiceBase
    {
    	static readonly Uri baseUri = new Uri("http://localhost:54321/reportservice");
-
+   
    	protected override Uri BaseAddress
    	{
    		get { return baseUri; }
    	}
-
+   
    	protected override string ApplicationPath
    	{
    		get
    		{
    			//Make sure that the ApplicationPath property always returns a valid directory path that ends with a slash (/) or a backslash (\)
-
+   
    			return System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath) + "\\"; // for WinForms applications
    			//return HttpContext.Current.Request.PhysicalApplicationPath; // for ASP.NET applications
    		}
@@ -69,17 +69,17 @@ The advantages of a Self-Hosted service:
    Class ReportService
    	Inherits Telerik.Reporting.Service.ReportServiceBase
    	Shared ReadOnly baseUri As New Uri("http://localhost:54321/reportservice")
-
+   
    	Protected Overrides ReadOnly Property BaseAddress() As Uri
    		Get
    			Return baseUri
    		End Get
    	End Property
-
+   
    	Protected Overrides ReadOnly Property ApplicationPath As String
    		Get
    			'Make sure that the ApplicationPath property always returns a valid directory path that ends with a slash (/) or a backslash (\)
-
+   
    			Return System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath) & "\" ' for WinForms applications
    			'Return HttpContext.Current.Request.PhysicalApplicationPath ' for ASP.NET applications
    		End Get
@@ -96,11 +96,11 @@ The advantages of a Self-Hosted service:
    	{
    		System.ServiceModel.ServiceHost host = new System.ServiceModel.ServiceHost(typeof(ReportService));
    		host.Open();
-
+   
    		// Block the Main() method until the user presses a key; then close the host and exit the program
    		Console.WriteLine("Ready...");
    		Console.ReadLine();
-
+   
    		host.Close();
    	}
    }
@@ -110,11 +110,11 @@ The advantages of a Self-Hosted service:
    	Public Shared Sub Main(ByVal args As String())
    		Dim host As New System.ServiceModel.ServiceHost(GetType(ReportService))
    		host.Open()
-
+   
    		' Block the Main() method until the user presses a key; then close the host and exit the program
    		Console.WriteLine("Ready...")
    		Console.ReadLine()
-
+   
    		host.Close()
    	End Sub
    End Class

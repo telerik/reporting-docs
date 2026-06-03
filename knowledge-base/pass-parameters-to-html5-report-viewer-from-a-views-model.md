@@ -34,58 +34,58 @@ The following article describes a general approach that can be used to both achi
 
 1. Since the parameters dictionary is a child element of the `reportSource` property, as shown in the [HTML5 Report Viewer API Reference](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization), we will create a custom model that represents the `reportSource` property:
 
-   ```C#
-   public class ReportSourceModel
-   {
-   	public string Report { get; set; }
-   	public Dictionary<string, object> Parameters { get; set; }
-   }
-   ```
+	```C#
+	public class ReportSourceModel
+	{
+		public string Report { get; set; }
+		public Dictionary<string, object> Parameters { get; set; }
+	}
+	```
 
 1. Then we can create an instance of this model and conveniently pass all the necessary parameters in our controller:
 
-   ```C#
-   public class HomeController : Controller
-   {
-   	public IActionResult Index()
-   	{
-   		var reportSourceModel = new ReportSourceModel()
-   		{
-   			Report = "Product Line Sales.trdp",
-   			Parameters = new Dictionary<string, object>()
-   		};
-   		reportSourceModel.Parameters.Add("ProductCategory", "Clothing");
-   		reportSourceModel.Parameters.Add("ProductSubcategory", new string[] { "Caps", "Gloves", "Vests" });
+	```C#
+	public class HomeController : Controller
+	{
+		public IActionResult Index()
+		{
+			var reportSourceModel = new ReportSourceModel()
+			{
+				Report = "Product Line Sales.trdp",
+				Parameters = new Dictionary<string, object>()
+			};
+			reportSourceModel.Parameters.Add("ProductCategory", "Clothing");
+			reportSourceModel.Parameters.Add("ProductSubcategory", new string[] { "Caps", "Gloves", "Vests" });
 
-   		return View(reportSourceModel);
-   	}
-   }
-   ```
+			return View(reportSourceModel);
+		}
+	}
+	```
 
 1. Once this is done, it is important that **the value we provide to the Report Viewer widget is serialized to JSON, and any HTML encoding is removed**. We can use the `Json.Serialize()` and the `Html.Raw()` methods respectively to accomplish this:
 
-   ```CSHTML
-   @using Demo.Models
-   @model ReportSourceModel
+	```CSHTML
+	@using Demo.Models
+	@model ReportSourceModel
 
-   <div id="reportViewer1">
-   	loading...
-   </div>
+	<div id="reportViewer1">
+		loading...
+	</div>
 
-   @{
-   	var reportSource = Html.Raw(Json.Serialize(Model));
-   }
+	@{
+		var reportSource = Html.Raw(Json.Serialize(Model));
+	}
+	
+	<script type="text/javascript">
 
-   <script type="text/javascript">
-
-   	$("#reportViewer1")
-   		.telerik_ReportViewer({
-   			id: "reportviewer1",
-   			serviceUrl: "/api/reports/",
-   			reportSource: @reportSource
-   		});
-   </script>
-   ```
+		$("#reportViewer1")
+			.telerik_ReportViewer({
+				id: "reportviewer1",
+				serviceUrl: "/api/reports/",
+				reportSource: @reportSource
+			});
+	</script>
+	```
 
 ## Demo Project
 

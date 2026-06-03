@@ -40,43 +40,42 @@ For the below example, we will be using the Dashboard report - [Dashboard Report
 
 1. To catch the query string, we may use the [SupplyParameterFromQuery](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.supplyparameterfromqueryattribute) attribute with the [Parameter](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.parameterattribute) attribute to specify that a component parameter of a routable component can come from the query string. For example:
 
-   ```C#
-   [Parameter]
-   [SupplyParameterFromQuery(Name = "ReportName")]
-   public string? ReportName { get; set; }
-
-   [Parameter]
-   [SupplyParameterFromQuery(Name = "ReportYear")]
-   public int? ReportYear { get; set; }
-   ```
+	```C#
+	[Parameter]
+	[SupplyParameterFromQuery(Name = "ReportName")]
+	public string? ReportName { get; set; }
+	
+	[Parameter]
+	[SupplyParameterFromQuery(Name = "ReportYear")]
+	public int? ReportYear { get; set; }
+	```
 
 1. Since we can use those values only once the parameters have been set, we need to use an empty report source initially:
 
-   ```RAZOR
-   <ReportViewer @ref=rv1 ServiceUrl="/api/reports"
-   	@bind-ReportSource="@ReportSource"
-   	ServiceType="@ReportViewerServiceType.REST"
-   	Height="800px"
-   	Width="100%">
-   </ReportViewer>
+	```RAZOR
+	<ReportViewer @ref=rv1 ServiceUrl="/api/reports"
+		@bind-ReportSource="@ReportSource"
+		ServiceType="@ReportViewerServiceType.REST"
+		Height="800px"
+		Width="100%">
+	</ReportViewer>
 
-
-   @code {
-   	public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions();
-   }
-   ```
+	@code {
+		public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions();
+	}
+	```
 
 1. [After parameters are set (OnParametersSet{Async})](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-7.0#after-parameters-are-set-onparameterssetasync), we may update the `ReportSource` property:
 
-   ```C#
-   protected override Task OnParametersSetAsync()
-   {
-   	ReportSource.Report = ReportName ?? "Dashboard.trdp";
-   	ReportSource.Parameters.Add("ReportYear", ReportYear ?? 2002);
-
-   	return base.OnParametersSetAsync();
-   }
-   ```
+	```C#
+	protected override Task OnParametersSetAsync()
+	{
+		ReportSource.Report = ReportName ?? "Dashboard.trdp";
+		ReportSource.Parameters.Add("ReportYear", ReportYear ?? 2002);
+	
+		return base.OnParametersSetAsync();
+	}
+	```
 
 ## See Also
 

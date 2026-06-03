@@ -49,7 +49,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 		}
 		public BindingList<Contact> AllContacts { get { return _contacts; } }
 	}
-
+	
 	public class Contact
 	{
 		public Contact(string _name, BindingList<Phone> _phones)
@@ -60,7 +60,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 		public string Name { get; set; }
 		public BindingList<Phone> Phones { get; set; }
 	}
-
+	
 	public class Phone
 	{
 		public Phone(string _number)

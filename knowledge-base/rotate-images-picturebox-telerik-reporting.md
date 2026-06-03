@@ -13,12 +13,12 @@ ticketid: 1554867
 ## Environment
 
 <table>
-    <tbody>
-        <tr>
-            <td>Product</td>
-            <td>Telerik Reporting PictureBox</td>
-        </tr>
-    </tbody>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Telerik Reporting PictureBox</td>
+		</tr>
+	</tbody>
 </table>
 
 ## Description
@@ -36,66 +36,66 @@ To rotate an image in the Telerik Reporting PictureBox and reset its Exif orient
 
 1. Implement a [Custom User Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) to programmatically rotate the image. Use the following code example with the `RotateImageAndResetExif` function:
 
-    ```C#
-public static class ImageHelper
-{
-    public static Image RotateImageAndResetExif(string imagePath, int rotateFlipType)
-    {
-        const int OrientationId = 0x0112;
+	```C#
+	public static class ImageHelper
+	{
+		public static Image RotateImageAndResetExif(string imagePath, int rotateFlipType)
+		{
+			const int OrientationId = 0x0112;
+		
+			Image image = Image.FromFile(imagePath);
 
-        Image image = Image.FromFile(imagePath);
+			// Rotate the image pixels
+			image.RotateFlip(GetRotateFlipTypeFromInt(rotateFlipType));
 
-        // Rotate the image pixels
-        image.RotateFlip(GetRotateFlipTypeFromInt(rotateFlipType));
+			// Reset EXIF orientation to '1' (normal)
+			if (image.PropertyIdList.Contains(OrientationId))
+			{
+				PropertyItem prop = image.GetPropertyItem(OrientationId);
+				prop.Value = BitConverter.GetBytes((short)1);
+				image.SetPropertyItem(prop);
+			}
 
-        // Reset EXIF orientation to '1' (normal)
-        if (image.PropertyIdList.Contains(OrientationId))
-        {
-            PropertyItem prop = image.GetPropertyItem(OrientationId);
-            prop.Value = BitConverter.GetBytes((short)1);
-            image.SetPropertyItem(prop);
-        }
+			return image;
+		}
 
-        return image;
-    }
-
-    public static RotateFlipType GetRotateFlipTypeFromInt(int value)
-    {
-        switch (value)
-        {
-            case 0:
-                return RotateFlipType.RotateNoneFlipNone;
-            case 1:
-                return RotateFlipType.Rotate90FlipNone;
-            case 2:
-                return RotateFlipType.Rotate180FlipNone;
-            case 3:
-                return RotateFlipType.Rotate270FlipNone;
-            case 4:
-                return RotateFlipType.RotateNoneFlipX;
-            case 5:
-                return RotateFlipType.Rotate90FlipX;
-            case 6:
-                return RotateFlipType.Rotate180FlipX;
-            case 7:
-                return RotateFlipType.Rotate270FlipX;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(value), "Invalid rotation value");
-        }
-    }
-}
-```
+		public static RotateFlipType GetRotateFlipTypeFromInt(int value)
+		{
+			switch (value)
+			{
+				case 0:
+					return RotateFlipType.RotateNoneFlipNone;
+				case 1:
+					return RotateFlipType.Rotate90FlipNone;
+				case 2:
+					return RotateFlipType.Rotate180FlipNone;
+				case 3:
+					return RotateFlipType.Rotate270FlipNone;
+				case 4:
+					return RotateFlipType.RotateNoneFlipX;
+				case 5:
+					return RotateFlipType.Rotate90FlipX;
+				case 6:
+					return RotateFlipType.Rotate180FlipX;
+				case 7:
+					return RotateFlipType.Rotate270FlipX;
+				default:
+					throw new ArgumentOutOfRangeException(nameof(value), "Invalid rotation value");
+			}
+		}
+	}
+	```
 
 
 1. Register and load the assembly containing the `RotateImageAndResetExif` function in the Telerik Report Designer or Reporting REST Service using the [assemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element).
 1. Use the function in your report expressions with the syntax:
 
-   ```
-   = UserFunctions.ImageHelper.RotateImageAndResetExif("C:\images\img1.jpg", 1)
-   ```
+	```
+	= UserFunctions.ImageHelper.RotateImageAndResetExif("C:\images\img1.jpg", 1)
+	```
 
-   - The first parameter specifies the absolute path to the image.
-   - The second parameter is the rotation `RotateFlipType` that the image pixels should be rotated to. Review the available options in the official [RotateFlipType documentation](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.rotatefliptype).
+	- The first parameter specifies the absolute path to the image.
+	- The second parameter is the rotation `RotateFlipType` that the image pixels should be rotated to. Review the available options in the official [RotateFlipType documentation](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.rotatefliptype).
 
 
 ## See Also

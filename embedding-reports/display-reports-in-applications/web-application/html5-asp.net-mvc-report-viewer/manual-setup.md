@@ -73,7 +73,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Update the `web.config` file in the **Views** folder to include the `Telerik.Reporting` and `Telerik.ReportViewer.Mvc` namespaces:
 
-	{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ManualSetup.xml region=UsingHtml5AspNetMvcReportViewer}}
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\ManualSetup.xml region=UsingHtml5AspNetMvcReportViewer}}
 
 	> Without registering the `Telerik.Reporting` and `Telerik.ReportViewer.Mvc` namespaces you will need to use [using Directive](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive) in the view.
 

@@ -30,7 +30,7 @@ configurationInstance = new ConfigSectionReportServiceConfiguration
 {
 	HostAppId = "Html5DemoApp",
 	ReportSourceResolver = new UriReportSourceResolver("PATH_TO_REPORTS_FOLDER")
-		.AddFallbackResolver(new TypeReportSourceResolver());,
+		.AddFallbackResolver(new TypeReportSourceResolver());
 };
 ```
 

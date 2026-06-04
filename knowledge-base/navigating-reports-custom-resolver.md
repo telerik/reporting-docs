@@ -30,8 +30,8 @@ After upgrading to the [2026 Q2 (20.1.26.520)](https://www.telerik.com/support/w
 
 This knowledge base article also answers the following questions:
 
-- How to adjust a custom report resolver for NavigateToReport changes?
-- Why does `UriReportSourceResolver.ResolveReport` method return `null` for NavigateToReport action reports?
+- How to adjust a custom ReportSource resolver for the NavigateToReport action after the 2026 Q2 (20.1.26.520) changes?
+- Why does `UriReportSourceResolver.ResolveReport` method return `null` for the NavigateToReport action?
 - How to use subfolders in a custom ReportSource resolver?
 
 ## Solution
@@ -40,12 +40,12 @@ To adapt your custom ReportSource resolver for the changes:
 
 1. **Understand Changes when Resolving Report's Path in NavigateToReport Action**:
 
-	- The `report` parameter in the `ResolveReport` method now represents a hash-based string.
+	- The `report` argument in the `ResolveReport` method now represents a hash-based string.
 	- The hash-to-URI mapping is managed by the Reporting REST Service's storage.
 
 1. **Update the Custom ReportSource Resolver**:
 
-	- Use the `UriReportSourceResolver.ResolveReport(report)` method to resolve the hashed string.
+	- Use the base `UriReportSourceResolver.ResolveReport(report)` method to resolve the hashed string.
 	- Ensure your base UriReportSourceResolver is configured with the correct `reportsPath`.
 
 	Example:

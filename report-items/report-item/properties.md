@@ -55,7 +55,7 @@ The Report item exposes a set of properties that allow you to control some aspec
 
   When `AutoRun=False`:
 
-  * The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have [AutoRefresh](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
+  * The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have [AutoRefresh](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh) set to `True`.
 
   * If all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have valid values, the Report Viewer does not trigger report rendering and displays a prompt message in the Report Area to the end user with information on how they may trigger the rendering(_by clicking on the Preview button_).
 

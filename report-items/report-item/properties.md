@@ -35,7 +35,7 @@ The [PageNumberingStyle](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_
 
 ## Report Parameters
 
-The [Report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) are [global objects](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that can be used all over the Report. Their main application is for filtering the report data, and can also be used for passing external information to the Report and for other purposes.
+The [Report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) are [global objects](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that can be used all over the Report. Their main application is for filtering the report data, but they can also be used for passing external information to the Report and for other purposes.
 
 For more detailed information, refer to the following articles:
 

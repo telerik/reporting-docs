@@ -71,8 +71,8 @@ To adapt your custom ReportSource resolver for the changes:
 
 1. **Handle Subfolders**:
 
-	- Ensure subfolder name is part of the `reportSource.report` in the viewer, or `ReportSource.Uri` in the NavigateToReport action.
-	- For example, use `SubfolderName\ReportName.trdp` instead of just `ReportName.trdp`.
+	- Ensure subfolder name is part of the `reportSource.report` in the viewer, or `UriReportSource.Uri` in the NavigateToReport action.
+	- For example, use `SubfolderName/ReportName.trdp` instead of just `ReportName.trdp`.
 
 1. **Troubleshooting `base.ResolveReport` Returning Null**:
 

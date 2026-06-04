@@ -1,11 +1,11 @@
 ---
 title: Adapting NavigateToReport Action for Custom ReportSource Resolvers
-description: Learn how to adapt custom ReportSource resolvers inheriting UriReportSourceResolver for NavigateToReport actions after security changes in the 2026 Q2 (20.1.26.520) release.
+description: Learn how to adapt custom ReportSource resolvers, extending the UriReportSourceResolver for NavigateToReport actions after security changes in the 2026 Q2 (20.1.26.520) release.
 type: how-to
 page_title: Resolving NavigateToReport Issues with Custom Resolvers in Reporting
 meta_title: Resolving NavigateToReport Issues with Custom ReportSource Resolvers in Telerik Reporting
 slug: navigating-reports-custom-resolver
-tags: reporting,resolver,navigatetoreport,hash-uri
+tags: reporting, resolver, navigatetoreport, hash-uri
 res_type: kb
 ticketid: 1714961
 ---
@@ -26,7 +26,9 @@ ticketid: 1714961
 
 ## Description
 
-After upgrading to the [2026 Q2 (20.1.26.520)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-520)) release, NavigateToReport actions no longer pass the report name or path in the [ResolveReport(string report) method](/api/telerik.reporting.services.urireportsourceresolver#telerik_reporting_services_urireportsourceresolver_resolvereport_system_string_) of the UriReportSourceResolver as before. Instead, the method now receives a hash-based string. This change ensures better security and caching, but may break existing implementations of custom ReportSource resolvers overriding the `ResolveReport` method.
+> The article is relevant only to Custom ReportSource Resolvers extending the `UriReportSourceResolver`. 
+
+After upgrading to the [2026 Q2 (20.1.26.520)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-520)) release, NavigateToReport actions no longer pass the report name or path in the [ResolveReport(string report) method](/api/telerik.reporting.services.urireportsourceresolver#telerik_reporting_services_urireportsourceresolver_resolvereport_system_string_) of the UriReportSourceResolver as before. Instead, the method now receives a hash-based string. This change ensures better security, but may break existing implementations of custom ReportSource resolvers overriding the `ResolveReport` method.
 
 This knowledge base article also answers the following questions:
 

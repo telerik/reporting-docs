@@ -26,7 +26,7 @@ ticketid: 1714961
 
 ## Description
 
-After upgrading to the [2026 Q2 (20.1.26.520)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-520)) release, NavigateToReport actions no longer pass the report name or path in the [ResolveReport(string report) method](api/telerik.reporting.services.urireportsourceresolver#telerik_reporting_services_urireportsourceresolver_resolvereport_system_string_) of the UriReportSourceResolver as before. Instead, the method now receives a hash-based string. This change ensures better security and caching, but may break existing implementations of custom ReportSource resolvers overriding the `ResolveReport` method.
+After upgrading to the [2026 Q2 (20.1.26.520)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-520)) release, NavigateToReport actions no longer pass the report name or path in the [ResolveReport(string report) method](/api/telerik.reporting.services.urireportsourceresolver#telerik_reporting_services_urireportsourceresolver_resolvereport_system_string_) of the UriReportSourceResolver as before. Instead, the method now receives a hash-based string. This change ensures better security and caching, but may break existing implementations of custom ReportSource resolvers overriding the `ResolveReport` method.
 
 This knowledge base article also answers the following questions:
 

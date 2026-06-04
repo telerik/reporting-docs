@@ -3,7 +3,7 @@ title: Adapting NavigateToReport Action for Custom ReportSource Resolvers
 description: Learn how to adapt custom ReportSource resolvers inheriting UriReportSourceResolver for NavigateToReport actions after security changes in the 2026 Q2 (20.1.26.520) release.
 type: how-to
 page_title: Resolving NavigateToReport Issues with Custom Resolvers in Reporting
-meta_title: Resolving NavigateToReport Issues with Custom ReportSourceResolvers in Telerik Reporting
+meta_title: Resolving NavigateToReport Issues with Custom ReportSource Resolvers in Telerik Reporting
 slug: navigating-reports-custom-resolver
 tags: reporting,resolver,navigatetoreport,hash-uri
 res_type: kb

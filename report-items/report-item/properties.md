@@ -25,7 +25,7 @@ The Report item delivers the `PageSettings` and `PageNumberingStyle` settings fo
 
 ### PageSettings
 
-The [PageSettings](/api/Telerik.Reporting.Drawing.PageSettings) determines the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report), and so on.
+The [PageSettings](/api/Telerik.Reporting.Drawing.PageSettings) property determines the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report), and so on.
 
 The `PageSettings` are entirely respected in physical (hard) pagination formats, whereas some of them are ignored in soft pagination formats. The difference is explained in the article on [interactive and print layout](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout).
 

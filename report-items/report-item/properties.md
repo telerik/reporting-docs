@@ -15,7 +15,7 @@ The Report item contains several specific properties that control the design-tim
 
 ## DocumentName
 
-The [`DocumentName`](/api/telerik.reporting.report#Telerik_Reporting_Report_DocumentName) specifies the default document name when exporting from a Report Viewer. The Standalone Report Designer won't use `DocumentName` when exporting. It will rather use the Report `Name`.
+The [DocumentName](/api/telerik.reporting.report#Telerik_Reporting_Report_DocumentName) specifies the default document name when exporting from a Report Viewer. The Standalone Report Designer won't use `DocumentName` when exporting. It will rather use the Report `Name`.
 
 The `DocumentName` may be set to an [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) containing [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) and other [Global Objects](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects). The DataSource fields are not accessible at this Report level and cannot be used - see [Expression Scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope) for more details.
 
@@ -25,17 +25,17 @@ The Report item delivers the `PageSettings` and `PageNumberingStyle` settings fo
 
 ### PageSettings
 
-The [`PageSettings`](/api/Telerik.Reporting.Drawing.PageSettings) determine the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report), and so on.
+The [PageSettings](/api/Telerik.Reporting.Drawing.PageSettings) determines the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report), and so on.
 
 The `PageSettings` are entirely respected in physical (hard) pagination formats, whereas some of them are ignored in soft pagination formats. The difference is explained in the article on [interactive and print layout](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout).
 
 ### PageNumberingStyle
 
-The [`PageNumberingStyle`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle) property is related only to the [paging of report books](slug:telerikreporting/designing-reports/report-book/report-book-paging) and determines whether to restart the page count with each report.
+The [PageNumberingStyle](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle) property is related only to the [paging of report books](slug:telerikreporting/designing-reports/report-book/report-book-paging) and determines whether to restart the page count with each report.
 
 ## Report Parameters
 
-The [Report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) are [global objects](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that can be used all over the Report. Their main application is for filtering the report data and can also be used for passing external information to the Report and for other purposes.
+The [Report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) are [global objects](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that can be used all over the Report. Their main application is for filtering the report data, and can also be used for passing external information to the Report and for other purposes.
 
 For more detailed information, refer to the following articles:
 
@@ -49,25 +49,25 @@ For more detailed information, refer to the following articles:
 
 The Report item exposes a set of properties that allow you to control some aspects of its processing and rendering.
 
-* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the report author can control the initial automatic report rendering process by using the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
+* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the report author can control the initial automatic report rendering process by using the [AutoRun](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
 
   When `AutoRun=True`, the report loading behavior does not change: the report is automatically loaded if all parameters have valid values, or waits until all parameter values are valid.
 
   When `AutoRun=False`:
 
-  * The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have [`AutoRefresh`](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
+  * The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have [AutoRefresh](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
 
-  * If all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have valid values, the Report Viewer does not trigger report rendering and displays prompt message in the Report Area to the end user with information on how they may trigger the rendering(_by clicking on the Preview button_).
+  * If all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have valid values, the Report Viewer does not trigger report rendering and displays a prompt message in the Report Area to the end user with information on how they may trigger the rendering(_by clicking on the Preview button_).
 
-* `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [`SkipBlankPages`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
+* `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [SkipBlankPages](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
 
   For example, `SkipBlankPages` may be kept `True` to remove the empty pages due to horizontal page breaks. For more information, refer to the articles on [horizontal paging](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination#horizontal-paging) and on [skipping blank pages in the rendered report](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors#skip-blank-pages-in-the-rendered-report).
 
-* `RuntimeSettings`&mdash; As of [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify [device information settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview) per particular report as part of its definition by configuring the [`RuntimeSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
+* `RuntimeSettings`&mdash; As of [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify [device information settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview) per particular report as part of its definition by configuring the [RuntimeSettings](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
 
   Apart from setting the export parameters for a particular extension, `RuntimeSettings` allows you to hide it and change its description when listed to the end-user.
 
-* `ReportEngineSettings`&mdash; As of [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), you can set the property [CacheDefinitionProperties](/api/Telerik.Reporting.ReportEngineSettings#Telerik_Reporting_ReportEngineSettings_CacheDefinitionProperties) per particular report as part of its definition by configuring it as an element of the [`ReportEngineSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportEngineSettings) report property.
+* `ReportEngineSettings`&mdash; As of [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), you can set the property [CacheDefinitionProperties](/api/Telerik.Reporting.ReportEngineSettings#Telerik_Reporting_ReportEngineSettings_CacheDefinitionProperties) per particular report as part of its definition by configuring it as an element of the [ReportEngineSettings](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportEngineSettings) report property.
 
   The available values are described in the API Reference in [Enum CacheDefinitionProperties](/api/Telerik.Reporting.CacheDefinitionProperties). Setting the property to `Yes`/`No` would force the Reporting engine to enable/disable the property for the specific report. Selecting `Default` would let the Reporting engine use the 'cacheDefinitionProperties' key in the 'processing' element from the application configuration file - [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element).
 
@@ -79,7 +79,7 @@ The Report item exposes a set of properties that allow you to control some aspec
 
 The Report item exposes a set of properties that allow you to control styling and other design-time-related processes.
 
-* `StyleSheet`&mdash; Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as `Type`, `Attribute`, `Style`, and `Descendent`.
+* `StyleSheet`&mdash; Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as `Type`, `Attribute`, `Style`, and `Descendant`.
 
   For more information about the process, refer to the following articles:
 
@@ -90,7 +90,7 @@ The Report item exposes a set of properties that allow you to control styling an
 
 * `ExternalStyleSheets`&mdash; Imports StyleSheets previously created and stored in XML files. For more information, refer to the article on [exporting and reusing stylesheets](slug:telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets).
 
-* `UnitOfMeasure`&mdash; Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to _cm_, otherwise - _inch_.
+* `UnitOfMeasure`&mdash; Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [UnitType](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to _cm_, otherwise - _inch_.
 
 * `SnapGridSize`&mdash; Controls the step of the `Rulers` in the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 

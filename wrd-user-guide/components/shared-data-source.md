@@ -33,7 +33,7 @@ You can easily connect your reports to a variety of data sources — giving you 
 
   * [SqlDataSource](slug:web-report-designer-user-guide-components-data-sources#sql-data-source)
   * [WebServiceDataSource](slug:web-report-designer-user-guide-components-data-sources#web-service-data-source)
-  * [ObjectDataSource](slug: web-report-designer-user-guide-components-data-sources#object-data-source)
+  * [ObjectDataSource](slug:web-report-designer-user-guide-components-data-sources#object-data-source)
   * [JsonDataSource](slug:web-report-designer-user-guide-components-data-sources#json-data-source)
   * [CsvDataSource](slug:web-report-designer-user-guide-components-data-sources#csv-data-source)
 

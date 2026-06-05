@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-Both the [Visual Studio Report Designer] slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) and [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) applications allow converting a single Crystal Reports file to a Telerik Reporting report definition, but do not support converting multiple reports at once.
+Both the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) and [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) applications allow converting a single Crystal Reports file to a Telerik Reporting report definition, but do not support converting multiple reports at once.
 
 ## Solution
 

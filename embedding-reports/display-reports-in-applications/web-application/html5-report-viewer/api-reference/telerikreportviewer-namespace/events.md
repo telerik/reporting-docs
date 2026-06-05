@@ -2,9 +2,9 @@
 title: Events
 page_title: Events of the telerikReportViewer
 description: "Learn about the Events of the telerikReportViewer object in the Telerik Reporting HTML5 Report Viewer."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events
 tags: events
-published: True
+published: false
 reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-api-events, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/

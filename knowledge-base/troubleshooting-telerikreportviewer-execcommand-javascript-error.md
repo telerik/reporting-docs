@@ -47,7 +47,7 @@ Then, disable the `Download PDFs` setting so that the PDF documents are not auto
 
 ### Solution 2: Custom Export/Print Logic
 
-When changing the browser settings on each client isn't feasible, consider creating a dedicated endpoint. Use the [`printBegin(e, args)`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)) event to manually handle scenarios where the user has configured the browser's PDF document settings to download PDFs.
+When changing the browser settings on each client isn't feasible, consider creating a dedicated endpoint. Use the [`printBegin(e, args)`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#printbegin) event to manually handle scenarios where the user has configured the browser's PDF document settings to download PDFs.
 
 There is no direct JavaScript API to control this setting. However, the [navigator.pdfViewerEnabled](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/pdfViewerEnabled) property toggles between `true` and `false` when the setting changes. 
 
@@ -55,7 +55,7 @@ To handle scenarios where the PDF viewer is disabled, you can create a custom en
 
 This endpoint is invoked manually whenever the PDF viewer is disabled according to the [navigator.pdfViewerEnabled](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/pdfViewerEnabled) value.
 
-```C#
+````C#
         public class ExportReportRequest
         {
             public string ReportName { get; set; }
@@ -84,7 +84,7 @@ This endpoint is invoked manually whenever the PDF viewer is disabled according 
             RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
             return File(result.DocumentBytes, result.MimeType);
         }
-```
+````
 
 On the client side, use the `printBegin(e, args)` event to handle this scenario. In the event handler, return the PDF as an attachment because the print dialog cannot be opened when the setting is configured to download PDFs.
 

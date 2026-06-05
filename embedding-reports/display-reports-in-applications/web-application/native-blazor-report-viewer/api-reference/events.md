@@ -2,9 +2,9 @@
 title: Events
 page_title: Native Blazor Report Viewer Events
 description: "Learn about the events exposed by the Native Blazor Report Viewer and how they can be used to execute custom code when they are emitted."
-slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events
+slug: old-telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events
 tags: event,events,emit,fire,throw,execute,method,methods,blazor,native,report,viewer,api
-published: True
+published: false
 reportingArea: NativeBlazor
 position: 2
 ---

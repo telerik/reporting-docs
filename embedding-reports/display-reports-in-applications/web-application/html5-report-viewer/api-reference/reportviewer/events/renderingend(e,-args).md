@@ -2,9 +2,9 @@
 title: renderingEnd(e, args)
 page_title: The renderingEnd(e, args) Event of the HTML5 Report Viewer explained
 description: "Learn more about the renderingEnd(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)
 tags: renderingend,args
-published: True
+published: false
 reportingArea: HTML5
 position: 10
 previous_url:

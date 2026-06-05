@@ -2,9 +2,9 @@
 title: Commands
 page_title: Native Blazor Report Viewer Commands
 description: "Learn about the commands exposed by the Native Blazor Report Viewer and how they can be used to perform certain operations from code."
-slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands
+slug: old-telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands
 tags: command,commands,method,methods,blazor,native,report,viewer,api
-published: True
+published: false
 reportingArea: NativeBlazor
 position: 1
 ---

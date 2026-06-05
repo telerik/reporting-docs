@@ -2,9 +2,9 @@
 title: getReportParameters()
 page_title: The getReportParameters() method of the HTML5 Report Viewer explained
 description: "The getReportParameters() method of the Telerik Reporting HTML5 Report Viewer returns a collection of objects representing the evaluated report parameters."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/getreportparameters()
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/getreportparameters()
 tags: getreportparameters()
-published: True
+published: false
 reportingArea: HTML5
 position: 7
 previous_url: /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/getreportparameters()

@@ -2,9 +2,9 @@
 title: Options
 page_title: Angular Report Viewer Options
 description: "Learn about what are the initialization options exposed by the Angular Report Viewer and how to configure them."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 tags: options
-published: True
+published: false
 reportingArea: AngularWrapper
 position: 0
 previous_url: /angular-report-viewer-api-options, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference/

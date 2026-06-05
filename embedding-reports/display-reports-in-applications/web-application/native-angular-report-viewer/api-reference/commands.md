@@ -2,9 +2,9 @@
 title: Commands
 page_title: Native Angular Report Viewer Command 
 description: "Learn about what are the commands exposed by the Native Angular Report Viewer and how you may use them to perform certain operations in code."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands
 tags: commands
-published: True
+published: false
 reportingArea: NativeAngular
 position: 1
 ---

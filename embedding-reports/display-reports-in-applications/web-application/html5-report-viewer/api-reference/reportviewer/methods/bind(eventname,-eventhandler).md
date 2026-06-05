@@ -2,9 +2,9 @@
 title: bind(eventName, eventHandler)
 page_title: The bind(eventName, eventHandler) method of the HTML5 Report Viewer
 description: "Learn more about the bind(eventName, eventHandler) method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname,-eventhandler)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname,-eventhandler)
 tags: bind(eventname,,eventhandler)
-published: True
+published: false
 reportingArea: HTML5
 position: 4
 previous_url:

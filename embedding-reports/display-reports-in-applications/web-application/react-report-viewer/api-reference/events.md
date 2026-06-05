@@ -2,9 +2,9 @@
 title: Events
 page_title: Events of the React Report Viewer
 description: "Find a list of all of the available React Report Viewer events. Understand the purpose of each event, using the provided descriptions."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events
 tags: react, report, viewer, events
-published: True
+published: false
 reportingArea: React
 position: 1
 previous_url: /react-report-viewer-api-reference-events

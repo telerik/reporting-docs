@@ -62,7 +62,7 @@ The following guide assumes previous knowledge of Vue:
 
    The new component contains a `div` element to hold the report viewer object and applies CSS to this element.
 
-   The component calls the [`telerik_ReportViewer`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization) method to create the report viewer with the specified configuration options.
+   The component calls the [`telerik_ReportViewer`](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) method to create the report viewer with the specified configuration options.
 
    It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview):
 

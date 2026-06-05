@@ -2,9 +2,9 @@
 title: Methods
 page_title: Angular Report Viewer Methods
 description: "Learn about what are the methods exposed by the Angular Report Viewer and how they may be used in your application."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
 tags: methods,angular,report,viewer
-published: True
+published: false
 reportingArea: AngularWrapper
 position: 2
 previous_url: /angular-report-viewer-api-methods

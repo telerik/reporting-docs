@@ -20,10 +20,10 @@ The following example illustrates how to set the Parameters method to the Teleri
 
 {{source=CodeSnippets\MvcCS\Views\Home\ParameterEditorsType.cshtml region=ParameterEditorsTypeExample}}
 
-> The `.Parameters` method is optional. If not used, the Telerik Report Viewer will fall back to the [default values](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization).
+> The `.Parameters` method is optional. If not used, the Telerik Report Viewer will fall back to the [default values](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview).
 
 ## See Also
 
-- [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization)
+- [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview)
 
 - [How To: Create a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

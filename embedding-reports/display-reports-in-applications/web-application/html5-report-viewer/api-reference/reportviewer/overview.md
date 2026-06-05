@@ -2,9 +2,9 @@
 title: ReportViewer Object
 page_title: ReportViewer Object Explained
 description: "Learn what is the ReportViewer Object in the Telerik Reporting HTML5 Report Viewer and how to use its functionality."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview
 tags: overview
-published: True
+published: false
 reportingArea: HTML5
 position: 0
 previous_url: /html5-report-viewer-reportviewer, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/

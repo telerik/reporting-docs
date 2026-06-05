@@ -2,9 +2,9 @@
 title: updateUi(e)
 page_title: The updateUi(e) Event of the HTML5 Report Viewer explained
 description: "Learn more about the updateUi(e) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
 tags: updateui,viewer,html5
-published: True
+published: false
 reportingArea: HTML5
 position: 11
 previous_url: /html5-report-viewer-reportviewer-events-updateui, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)

@@ -2,9 +2,9 @@
 title: Properties
 page_title: Properties of the React Report Viewer
 description: "Find a list of all of the available React Report Viewer properties and an example how to use them. Understand what each property does, using the provided descriptions."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/properties
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/properties
 tags: react, report, viewer, properties, commands
-published: True
+published: false
 reportingArea: React
 position: 3
 previous_url: /react-report-viewer-api-reference-properties

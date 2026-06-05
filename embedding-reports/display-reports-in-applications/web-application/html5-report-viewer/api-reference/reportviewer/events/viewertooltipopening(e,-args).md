@@ -2,9 +2,9 @@
 title: viewerToolTipOpening(e, args)
 page_title: The viewerToolTipOpening(e, args) Event of the HTML5 Report Viewer
 description: "Learn more about the viewerToolTipOpening(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)
+slug: old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)
 tags: viewertooltipopening,args
-published: True
+published: false
 reportingArea: HTML5
 position: 15
 previous_url:

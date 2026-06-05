@@ -130,9 +130,9 @@ Add the CORS policy in the REST Service's `Program.cs`:
 
 - [Native Blazor Report Viewer Overview](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
 - [Using Native Blazor Report Viewer with Report Server for .NET](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-with-report-server-net)
-- [Native Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)
-- [Native Blazor Report Viewer Commands](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands)
-- [Native Blazor Report Viewer Events](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events)
+- [Native Blazor Report Viewer Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options)
+- [Native Blazor Report Viewer Commands](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/commands)
+- [Native Blazor Report Viewer Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/events)
 - [Customize the Toolbar of the Blazor Native Report Viewer](slug:native-blazor-report-viewer/toolbar-customization)
 - [Hosting Telerik Reporting REST Service in ASP.NET Core](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
 - [Hosting Telerik Reporting REST Service in an ASP.NET Core Application with Startup.cs](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5)

@@ -148,7 +148,7 @@ The Guest User can only authenticate using tokens. It does not have a password a
 - [Native Blazor Report Viewer Overview](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
 - [Native Blazor Report Viewer Requirements](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview#Requirements)
 - [Using Native Blazor Report Viewer in .NET](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer)
-- [Native Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)
+- [Native Blazor Report Viewer Options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/reportviewer/options)
 - [Report Server for .NET Overview](https://docs.telerik.com/report-server/dotnet-docs/overview)
 - [Guest User Administration](https://docs.telerik.com/report-server/dotnet-docs/implementer-guide/user-management/guest-user)
 - [Azure Key Vault Configuration Provider](https://learn.microsoft.com/en-us/aspnet/core/security/key-vault-configuration)

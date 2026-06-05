@@ -54,7 +54,7 @@ The issue arises because the WinForms Report Viewer requires a parent form in or
 
 To resolve the issue, ensure that the WinForms Report Viewer control is added to a parent form before it starts rendering the report. For example, the reference to the WinForms Report Viewer can be added to the `Controls` collection of the parent form before invoking the [RefreshReport()](/api/telerik.reportviewer.winforms.reportviewerbase#Telerik_ReportViewer_WinForms_ReportViewerBase_RefreshReport) method:
 
-````C#
+```C#
     private void Form1_Load(object sender, EventArgs e)
         {
             var reportSource1 = new UriReportSource();
@@ -72,7 +72,7 @@ To resolve the issue, ensure that the WinForms Report Viewer control is added to
 
             reportViewer.RefreshReport();
         }
-````
+```
 
 
 ## See Also

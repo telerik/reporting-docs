@@ -27,22 +27,14 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider
 1. Download the SQLite installer for `.NET Framework 4.6` from the [System.Data.SQLite (https://www.nuget.org/packages/system.data.sqlite/) Downloads page.
 1. Copy the `System.Data.SQLite.dll` and `SQLite.Interop.dll` assemblies from the System.Data.SQLite installation directory to the directory with the .NET Framework Standalone Report Designer - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\`.
 
-   SQLite Installation: `C:\Program Files\System.Data.SQLite\2015\bin`
-   Telerik Reporting Installation: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`
+	SQLite Installation: `C:\Program Files\System.Data.SQLite\2015\bin`
+	Telerik Reporting Installation: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`
 
 1. Add the DbProvider Factory declaration to the appropriate Standalone Report Designer configuration file. `Telerik.ReportDesigner.exe.config` is for 64-bit (x64) and `Telerik.ReportDesigner.x86.exe.config` is for 32-bit (x86).
 
-   > note When updating the configuration file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
+	> note When updating the configuration file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
 
-   ```XML
-   <system.data>
-   	<DbProviderFactories>
-   		<remove invariant="System.Data.SQLite" />
-   		<add name="SQLite Data Provider" invariant="System.Data.SQLite" description=".NET Framework Data Provider for SQLite"
-   			type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139" />
-   	</DbProviderFactories>
-   </system.data>
-   ```
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\UsingTheSqliteDataProvider.xml region=SettingUpTheSystemDataSqliteDataProviderInTheNetFrameworkStandaloneReportDesigner}}
 
 ## Setting up the System.Data.SQLite Data Provider in .NET Applications
 

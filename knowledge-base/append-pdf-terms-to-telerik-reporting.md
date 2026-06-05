@@ -40,7 +40,7 @@ Follow these steps:
 
 Below is a complete example demonstrating how to generate the report PDF and append a new page:
 
-````C#
+```C#
 using System.Diagnostics;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf;
 using Telerik.Windows.Documents.Fixed.Model;
@@ -129,7 +129,7 @@ namespace GeneratePDFReportsAndUpdate
         }
     }
 }
-````
+```
 
 ### Key Steps Explained:
 

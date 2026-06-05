@@ -33,7 +33,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Implement a Report Designer controller. Right-click on the `Controllers` folder and add a new item: __Add__ > __New item__ > __Web API Controller Class__ item. Name it `ReportDesignerController`. This will be our Telerik Web Report Designer REST service in the project.
 1. Inherit the [ReportDesignerControllerBase](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase)  type and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage. This is the class, responsible for opening, saving etc. the report definitions. This is how a basic implementation of the controller should look like:
 
-	````C#
+	```C#
 	namespace CSharp.MvcDemo.Controllers
 	{
 		using System;
@@ -45,7 +45,7 @@ The REST service works as a backend and is responsible for storage operations li
 		using Telerik.Reporting.Services.WebApi;
 		using Telerik.WebReportDesigner.Services;
 		using Telerik.WebReportDesigner.Services.Controllers;
-
+	
 		//The class name determines the service URL.
 		public class ReportDesignerController : ReportDesignerControllerBase
 		{
@@ -84,7 +84,7 @@ The REST service works as a backend and is responsible for storage operations li
 			}
 		}
 	}
-	````
+	```
 	{{source=CodeSnippets\MvcVB\Controllers\WebReportDesignerControllerSnippet.vb region=WebReportDesignerController}}
 
 
@@ -100,7 +100,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in the `Application_Start()` method of the `Global.asax` file. It is important to register them before the default routes as shown below:
 
-	````C#
+	```C#
 	protected void Application_Start()
 	{
 		AreaRegistration.RegisterAllAreas();
@@ -110,7 +110,7 @@ The REST service works as a backend and is responsible for storage operations li
 		RouteConfig.RegisterRoutes(RouteTable.Routes);
 		BundleConfig.RegisterBundles(BundleTable.Bundles);
 	}
-	````
+	```
 	{{source=CodeSnippets\MvcVB\Global.asax.vb region=RegisterReportDesignerRoutes}}
 
 1. In case the reports shown in the viewer need access to a database, add the necessary connection strings to the `web.config` file.

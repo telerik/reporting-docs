@@ -30,7 +30,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 
 1. Create a **ClassLibrary** project with the following definition:
 
-	````C#
+	```C#
 	public class ContactsCollection
 	{
 		BindingList<Contact> _contacts;
@@ -49,7 +49,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 		}
 		public BindingList<Contact> AllContacts { get { return _contacts; } }
 	}
-
+	
 	public class Contact
 	{
 		public Contact(string _name, BindingList<Phone> _phones)
@@ -60,7 +60,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 		public string Name { get; set; }
 		public BindingList<Phone> Phones { get; set; }
 	}
-
+	
 	public class Phone
 	{
 		public Phone(string _number)
@@ -69,7 +69,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 		}
 		public string Number { get; set; }
 	}
-	````
+	```
 
 1. Build the project to ensure that **ContactsClassLibrary.dll** is produced in the **bin** folder.
 1. [Extend the Report Designer to Recognize the Custom Assembly](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)

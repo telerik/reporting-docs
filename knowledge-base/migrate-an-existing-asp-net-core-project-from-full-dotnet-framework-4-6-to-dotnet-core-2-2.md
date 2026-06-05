@@ -33,63 +33,63 @@ Now, how to migrate the existing ASP.NET Core project from full .NET Framework b
 
 1. Unload the project and edit `.csproj` file's setting
 
-   ```XML
-   <TargetFramework>netcoreapp2.2</TargetFramework>
-   ```
+	```XML
+	<TargetFramework>netcoreapp2.2</TargetFramework>
+	```
 
-   and reload it back.
+	and reload it back.
 
-   The above setting is for .NET Core 2.2. Change it correspondingly for the other target frameworks.
+	The above setting is for .NET Core 2.2. Change it correspondingly for the other target frameworks.
 
 1. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages](slug:telerikreporting/installation#step-3-installing-telerik-reporting).
 1. Update `Microsoft.AspNetCore` libraries to newer version (if needed).
 1. Application configuration in ASP.NET Core uses the new SDK-style project and utilizes `appsettings.json` as a configuration file. The `ConnectionStrings` setting should be configured in JSON-based format like for example:
 
-   ```JSON
-   //appsettings.json
-   //Supported ConnectionStrings section configurations:
-   "ConnectionStrings": {
-   	//This connection string will use System.Data.SqlClient as data provider invariant name.
-   	//"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
+	```JSON
+	//appsettings.json
+	//Supported ConnectionStrings section configurations:
+	"ConnectionStrings": {
+		//This connection string will use System.Data.SqlClient as data provider invariant name.
+		//"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
 
-   	//This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
-   	"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-   		"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-   		"providerName": "System.Data.SqlClient"
-   	}
-   }
+		//This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
+		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
+			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+			"providerName": "System.Data.SqlClient"
+		}
+	}
 
-   //This type of connection string configuration is also supported.
-   //"ConnectionStrings": [
-   //	{
-   //		"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-   //		"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-   //		"providerName": "System.Data.SqlClient"
-   //	}
-   //]
-   ```
+	//This type of connection string configuration is also supported.
+	//"ConnectionStrings": [
+	//	{
+	//		"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+	//		"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+	//		"providerName": "System.Data.SqlClient"
+	//	}
+	//]
+	```
 
 1. In order to load the configuration from the `appsettings.json` file, an additional instance of type `ConfigurationService` needs to be created in `Startup.cs`. This class will add the appsettings.json as configuration file and will be used later in the ReportsController constructor:
 
-   ```C#
-   public class ConfigurationService
-   {
-   	public IConfiguration Configuration { get; private set; }
+	```C#
+	public class ConfigurationService
+	{
+		public IConfiguration Configuration { get; private set; }
 
-   	public IHostingEnvironment Environment { get; private set; }
-   	public ConfigurationService(IHostingEnvironment environment)
-   	{
-   		this.Environment = environment;
+		public IHostingEnvironment Environment { get; private set; }
+		public ConfigurationService(IHostingEnvironment environment)
+		{
+			this.Environment = environment;
 
-   		var configFileName = System.IO.Path.Combine(environment.ContentRootPath,"appsettings.json");
-   		var config = new ConfigurationBuilder()
-   						.AddJsonFile(configFileName, true)
-   						.Build();
+			var configFileName = System.IO.Path.Combine(environment.ContentRootPath,"appsettings.json");
+			var config = new ConfigurationBuilder()
+							.AddJsonFile(configFileName, true)
+							.Build();
 
-   		this.Configuration = config;
-   	}
-   }
-   ```
+			this.Configuration = config;
+		}
+	}
+	```
 
 ## Notes
 

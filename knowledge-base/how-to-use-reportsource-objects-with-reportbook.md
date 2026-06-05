@@ -36,31 +36,31 @@ An updated approach includes adding the necessary `ReportSources` to the [`Repor
 
 ### Solution for adding reports to a ReportBook *before* the R1 2017 release.
 
-````C#
+```C#
 Telerik.Reporting.ReportBook reportBook = new ReportBook();
 Telerik.Reporting.Report report = new Report1();
 reportBook.Reports.Add(report);
-````
-````VB
+```
+```VB.NET
 Dim reportBook As Telerik.Reporting.ReportBook = New ReportBook()
 Dim report As Telerik.Reporting.Report = New Report1()
 reportBook.Reports.Add(report)
-````
+```
 
 ### Solution for adding reports to a ReportBook *after* the R1 2017 release.
 
-````C#
+```C#
 Telerik.Reporting.ReportBook reportBook = new ReportBook();
 Telerik.Reporting.TypeReportSource typeReportSource = new TypeReportSource();
 typeReportSource.TypeName = typeof(Report1).AssemblyQualifiedName;
 reportBook.ReportSources.Add(typeReportSource);
-````
-````VB
+```
+```VB.NET
 Dim reportBook As Telerik.Reporting.ReportBook = New ReportBook()
 Dim typeReportSource As Telerik.Reporting.TypeReportSource = New TypeReportSource()
 typeReportSource.TypeName = GetType(Report1).AssemblyQualifiedName
 reportBook.ReportSources.Add(typeReportSource)
-````
+```
 
 ## See Also
 

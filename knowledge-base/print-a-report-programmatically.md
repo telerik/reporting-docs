@@ -50,10 +50,10 @@ Alternatively, the [ReportProcessor.PrintReport()](/api/telerik.reporting.proces
 
 For example, here is how to print the Barcodes Report from the `ReportLibrary` class library project that can be found in the installation folder of the product - `{installation folder}\Examples\CSharp\.NET Framework\ReportLibrary`.
 
-````C#
+```C#
 ReportProcessor reportProcessor = new ReportProcessor();
 reportProcessor.PrintReport(new TypeReportSource() { TypeName = typeof(BarcodesReport).AssemblyQualifiedName }, new PrinterSettings());
-````
+```
 
 ### Legacy ASP.NET WebForms Report Viewer
 

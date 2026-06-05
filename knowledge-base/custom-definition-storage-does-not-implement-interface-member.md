@@ -51,7 +51,7 @@ the existing ones.
 
 Implement the new interface methods:
 
-````C#
+```C#
 public Task<ResourceFolderModel> CreateFolderAsync(CreateFolderModel model)
 {
 	// Creates a folder using the provided model.
@@ -111,7 +111,7 @@ public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resourc
 	// Saves the raw data of a resource and returns its model.
 	throw new NotImplementedException();
 }
-````
+```
 
 ## See Also
 

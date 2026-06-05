@@ -35,21 +35,20 @@ The approach is approperiate for reports which are designed in the Standalone De
 
 1. A [UserFunction](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) should be implemented through the code snippet below
 
-   ```C#
-   public static Bitmap ConvertToBitmap(string url)
-   {
-   	var svgDocument = Svg.SvgDocument.Open(url);
-   	svgDocument.ShapeRendering = SvgShapeRendering.Auto;
+	```C#
+	public static Bitmap ConvertToBitmap(string url)
+	{
+		var svgDocument = Svg.SvgDocument.Open(url);
+		svgDocument.ShapeRendering = SvgShapeRendering.Auto;
+	
+		Bitmap bmp = svgDocument.Draw(120, 120); // Draw Bitmap in any Size you need - for example 120px x 120px
+		return bmp;
+	}
+	```
 
-   	Bitmap bmp = svgDocument.Draw(120, 120); // Draw Bitmap in any Size you need - for example 120px x 120px
-   	return bmp;
-   }
-   ```
+1. Register the user function as explained in [Extending Report Designer article](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer). A reference to the Svg.dll should be also attached.
+1. Then the value of the picture box should be set to the following expression:
 
-2. Register the user function as explained in [Extending Report Designer article](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer). A reference to the Svg.dll should be also attached.
-
-3. Then the value of the picture box should be set to the following expression:
-
-   `= UserFunctionClassName.ConvertToBitmap(Parameters.url.Value)`
+	`= UserFunctionClassName.ConvertToBitmap(Parameters.url.Value)`
 
 Note that the report parameter holds the URL for the picture.

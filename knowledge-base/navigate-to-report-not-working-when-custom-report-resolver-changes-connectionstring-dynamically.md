@@ -185,7 +185,7 @@ class ReportConnectionStringManager
 	}
 }
 ````
-````VB
+```VB.NET
 Imports Telerik.Reporting
   
 Class ReportConnectionStringManager
@@ -320,7 +320,7 @@ Class ReportConnectionStringManager
 		Next
 	End Sub
 End Class
-````
+```
 
 ## Notes
 When navigating to a Standalone designer report (.trdp, .trdx, .trbp) the paths to the reports will be resolved with respect to the application, not with respect to the main report. This may cause broken _NavigateToReport_ Actions when the report is not in the main folder of the application. To resolve the issue it will be necessary to replace the base path from the UriReportSource.Uri with the actual one (path to the application main folder).

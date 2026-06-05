@@ -40,9 +40,9 @@ Could not retrieve information for folder. Error: An error has occurred.
 
 The `ReportDesignerControllerBase` includes the following method:
 
-````C#
+```C#
 public override IActionResult GetFolderModel([FromQuery] string uri)
-````
+```
 
 
 The problem is that parameters on actions are treated as *required* if they do not have the nullable? annotation. 
@@ -62,10 +62,10 @@ Open the `.csproj` file of your project and add the following setting:
 
 The methods of the `ReportDesignerControllerBase` class are `virtual` and thus, they can be `overriden`.  In this case, the following method can be overriden to fix the error:
 
-````C#
+```C#
 public override IActionResult GetFolderModel([FromQuery] string? uri)
 {
     return base.GetFolderModel(uri);
 }
-````
+```
 

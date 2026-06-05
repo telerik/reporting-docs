@@ -40,7 +40,7 @@ If you are using Telerik Reporting 2026 Q1 (20.0.26.402) or later, async methods
 
 If you are using an earlier version and cannot upgrade, use synchronous methods for data retrieval with ObjectDataSource. If you need to work with existing async methods, you can create a synchronous wrapper method:
 
-````C#
+```C#
 public class MyData
 {
     public int Id { get; set; }
@@ -63,7 +63,7 @@ public class MyData
         return Task.FromResult(resultList);
     }
 }
-````
+```
 
 In the ObjectDataSource configuration or [ObjectDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard), use the synchronous `GetData()` method instead of `GetDataAsync()`.
 

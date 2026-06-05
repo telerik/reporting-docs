@@ -25,7 +25,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 
 1. Use the markup below for the `ToolsFile.xml` file.
 
-	```XML
+	```ASPX
 	<?xml version="1.0" encoding="utf-8" ?>
 	<root>
 		<modules>
@@ -80,7 +80,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 	```C#
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);
 	```
-	```VB
+	```VB.NET
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)
 	```
 
@@ -89,7 +89,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 	```C#
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);
 	```
-	```VB
+	```VB.NET
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 	```
 
@@ -98,7 +98,7 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 
 	The supported tags are `font`, `strong`, `b`, `em`, `i`, `u`, `a`, `ol`, `ul`, `li`, `sub`, `sup`, `div`, `span`, `p`, `br`, `center`, `img`.
 
-	```XML
+	```ASPX
 	<telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
 	</telerik:RadEditor>
 	```

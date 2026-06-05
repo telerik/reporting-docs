@@ -33,7 +33,7 @@ For the viewers using the Telerik Reporting REST Service check the KB article [A
 
 Telerik Reporting can resolve and work with named connection strings provided in the application configuration file (`web.config` or `app.config`). Thus providing the required connection string with the same name in the application configuration file should be enough for most of the scenarios. Still if this is not applicable for your scenario and you have to provide the connection strings in runtime you can use the following example:
 
-````C#
+```C#
 class ReportConnectionStringManager
 {
 	readonly string connectionString;
@@ -195,8 +195,8 @@ class ReportConnectionStringManager
 		}
 	}
 }
-````
-````VB
+```
+```VB.NET
 Imports Telerik.Reporting
 
 Class ReportConnectionStringManager
@@ -338,11 +338,11 @@ Class ReportConnectionStringManager
 		Next
 	End Sub
 End Class
-````
+```
 
 In order to set the connection strings at run-time you have to instantiate the _ReportConnectionStringManager_ with the new connection string you want to use. Then you have to invoke the _UpdateReportSource_ with a [ReportSource](/reporting/api/telerik.reporting.reportsource). This method returns an updated _ReportSource_ with the new connection string. The updated _ReportSource_ then can be used for _ReportViewer.ReportSource_ or for [ReportProcessor](/reporting/api/telerik.reporting.processing.reportprocessor). For example, check out the following sample:
 
-````C#
+```C#
 var connectionString = "Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI";
 var connectionStringHandler = new ReportConnectionStringManager(connectionString);
 var sourceReportSource = new UriReportSource { Uri = "Employee Sales Summary.trdx" };
@@ -350,8 +350,8 @@ var sourceReportSource = new UriReportSource { Uri = "Employee Sales Summary.trd
 var reportSource = connectionStringHandler.UpdateReportSource(sourceReportSource);
 this.reportViewer1.ReportSource = reportSource;
 this.reportViewer1.RefreshReport();
-````
-````VB
+```
+```VB.NET
 Dim connectionString = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 Dim connectionStringHandler = New ReportConnectionStringManager(connectionString)
 Dim sourceReportSource = New UriReportSource() With { _
@@ -361,7 +361,7 @@ Dim sourceReportSource = New UriReportSource() With { _
 Dim reportSource = connectionStringHandler.UpdateReportSource(sourceReportSource)
 Me.reportViewer1.ReportSource = reportSource
 Me.reportViewer1.RefreshReport()
-````
+```
 
 If you intend to use the above code for modifying reports displayed by an **HTML5 Viewer**, the code must be placed in the `Resolve` method of a custom resolver used by the **Reporting REST service**.
 

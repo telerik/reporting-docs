@@ -41,10 +41,10 @@ The following video shows how to build expressions in an easy way using the buil
 
 >tip You can add a new line as a string in the Expression with the `Edit Expression` dialog.
 >
->````
+>```Expression
 >= Fields.FirstLine + "
 >" + Fields.SecondLine
->````
+>```
 >
 >The result will be the values of the two fields being displayed one above the other in the corresponding report item.
 

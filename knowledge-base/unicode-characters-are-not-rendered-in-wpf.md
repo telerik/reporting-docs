@@ -83,13 +83,13 @@ The symbol that you are trying to render in the report is not allowed in XML, wh
 The solution is to modify the incoming data for the report items so that they do not contain invalid (in the context of XML) symbols.
 This may be done through a [User Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that validates the data, for example:
 
-````C#
+```C#
 public static string ReplaceHexadecimalSymbols(string txt)
 {
     string r = "[\x00-\x08\x0B\x0C\x0E-\x1F\x26]";
     return Regex.Replace(txt, r,"",RegexOptions.Compiled);
 }
-````
+```
 
 ## See Also
 

@@ -66,6 +66,60 @@ Any user account can authenticate with the Report Server, including the Guest Us
 
 1. Finally, run the project to see the rendered report.
 
+## Token Management Best Practices
+
+The token storage approach shown earlier in this article (using `launchSettings.json` and environment variables) is suitable for development, but requires additional considerations for production environments.
+
+### Development
+
+For local development, store the token in `launchSettings.json`:
+
+{{source=CodeSnippets\Blazor\Docs\JSON\launchSettings.json region=Set_RS_NET_TOKEN}}
+
+### Production
+
+> important **Do NOT use `launchSettings.json` in production.** This file is excluded from deployments and is intended for development only.
+
+Choose one of these approaches for production:
+
+1. **Environment Variables** (Azure App Service, IIS, Linux hosting):
+
+	- Set the `RS_NET_TOKEN` environment variable through your hosting platform's configuration UI
+	- Restart the application after changing the value
+	- Environment variables are read automatically by .NET configuration system
+
+1. **Azure Key Vault** (Recommended for Azure deployments):
+
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Add_RS_NET_TOKEN_AzureKeyVault}}
+
+1. **AWS Secrets Manager** (for AWS hosting):
+
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Add_RS_NET_TOKEN_AwsSecretsManager}}
+
+	Create the secret using AWS CLI:
+	```bash
+	aws secretsmanager create-secret \
+		--name RS_NET_TOKEN \
+		--secret-string "your-report-server-token-here"
+	```
+
+1. **User Secrets** (Development alternative to launchSettings.json):
+
+	```bash
+	dotnet user-secrets set "RS_NET_TOKEN" "your-token-here"
+	```
+
+### Token Rotation
+
+Report Server for .NET tokens should be rotated periodically:
+
+1. Create a new token in Report Server for .NET
+1. Update the environment variable or secret store with the new token
+1. Restart the application to load the new token
+1. Disable the old token in Report Server after confirming the new one works
+
+> note Multiple tokens can be enabled simultaneously for a single user account, allowing zero-downtime rotation. Enable the new token before disabling the old one.
+
 ## Troubleshooting
 
 ### Token Not Retrieved
@@ -85,7 +139,7 @@ If you encounter CORS errors when accessing the token endpoint:
 
 ### Guest User Access
 
-The **Guest User** can only authenticate using tokens. It does not have a password and cannot use username/password authentication. Ensure at least one enabled token is added to the Guest User account by an administrator. - [Guest User Administration](https://www.telerik.com/report-server/documentation/implementer-guide/user-management/guest-user).
+The Guest User can only authenticate using tokens. It does not have a password and cannot use username/password authentication. Ensure at least one enabled token is added to the Guest User account by an administrator: [Guest User Administration](https://www.telerik.com/report-server/documentation/implementer-guide/user-management/guest-user).
 
 ## See Also
 
@@ -93,3 +147,9 @@ The **Guest User** can only authenticate using tokens. It does not have a passwo
 - [Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting)
 - [Native Blazor Report Viewer Overview](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview)
 - [Native Blazor Report Viewer Requirements](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview#Requirements)
+- [Using Native Blazor Report Viewer in .NET](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer)
+- [Native Blazor Report Viewer Options](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options)
+- [Report Server for .NET Overview](https://docs.telerik.com/report-server/dotnet-docs/overview)
+- [Guest User Administration](https://docs.telerik.com/report-server/dotnet-docs/implementer-guide/user-management/guest-user)
+- [Azure Key Vault Configuration Provider](https://learn.microsoft.com/en-us/aspnet/core/security/key-vault-configuration)
+- [Safe Storage of App Secrets in Development](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets)

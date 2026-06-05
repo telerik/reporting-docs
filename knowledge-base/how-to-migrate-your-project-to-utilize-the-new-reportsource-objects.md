@@ -54,37 +54,37 @@ The following is a sample snippet that demonstrates how to specify a report for 
 
 **Pre-Q2 2012:**
 
-````C#
+```C#
 InvoiceReport report1 = new InvoiceReport();
 Telerik.Reporting.SubReport subReport1 = new Telerik.Reporting.SubReport();
 subReport1.ReportSource = report1;
 subReport1.Parameters.Add(new Telerik.Reporting.Parameter("SaledOrderID", "=Fields.SalesOrderID"));
-````
-````VB
+```
+```VB.NET
 Dim report1 As New InvoiceReport()
 Dim subReport1 As New Telerik.Reporting.SubReport()
 subReport1.ReportSource = report1
 subReport1.Parameters.Add(New Telerik.Reporting.Parameter("SaledOrderID", "=Fields.SalesOrderID"))
-````
+```
 
 **Q2 2012 and later:**
 
-````C#
+```C#
 InvoiceReport report1 = new InvoiceReport();
 Telerik.Reporting.SubReport subReport1 = new Telerik.Reporting.SubReport();
 Telerik.Reporting.InstanceReportSource instanceReportSource1 = new  Telerik.Reporting.InstanceReportSource();
 instanceReportSource1.ReportDocument = report1;
 instanceReportSource1.Parameters.Add(new Telerik.Reporting.Parameter("SaledOrderID", "=Fields.SalesOrderID"));
 subReport1.ReportSource = instanceReportSource1;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New InvoiceReport()
 Dim subReport1 As New Telerik.Reporting.SubReport()
 Dim instanceReportSource1 As New Telerik.Reporting.InstanceReportSource()
 instanceReportSource1.ReportDocument = report1
 instanceReportSource1.Parameters.Add(New Telerik.Reporting.Parameter("SaledOrderID", "=Fields.SalesOrderID"))
 subReport1.ReportSource = instanceReportSource1
-````
+```
 
 ### NavigateToReportAction
 
@@ -97,36 +97,36 @@ The following is a sample snippet that demonstrates how to specify a report for 
 
 **Pre-Q2 2012:**
 
-````C#
+```C#
 Telerik.Reporting.NavigateToReportAction reportAction1 = new Telerik.Reporting.NavigateToReportAction();
 reportAction1.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 reportAction1.ReportDocumentType = "ReportLibrary1.InvoiceReport, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null";
 textBox1.Action = reportAction1;
-````
-````VB
+```
+```VB.NET
 Dim reportAction1 As New Telerik.Reporting.NavigateToReportAction()
 reportAction1.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
 reportAction1.ReportDocumentType = "ReportLibrary1.InvoiceReport, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
 textBox1.Action = reportAction1
-````
+```
 
 **Q2 2012 and later:**
 
-````C#
+```C#
 Telerik.Reporting.TypeReportSource reportSource = new Telerik.Reporting.TypeReportSource();
 reportSource.TypeName = "ReportLibrary1.InvoiceReport, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null";
 reportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 Telerik.Reporting.NavigateToReportAction reportAction1 = new Telerik.Reporting.NavigateToReportAction();
 reportAction1.ReportSource = reportSource;
 textBox1.Action = reportAction1;
-````
-````VB
+```
+```VB.NET
 Dim reportSource As New TypeReportSource()
 reportSource.TypeName = "ReportLibrary1.InvoiceReport, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
 reportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
 Dim reportAction1 As New Telerik.Reporting.NavigateToReportAction()
 textBox1.Action = reportAction1
-````
+```
 
 ### Windows Forms Report Viewer
 
@@ -138,32 +138,32 @@ The following is a sample snippet that demonstrates how to assign a report to Wi
 
 **Pre-Q2 2012:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 // perform additional operations on the report object if needed
 ReportViewer1.Report = report1;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 ReportViewer1.Report = report1
-````
+```
 
 **Q2 2012 and later:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 // perform additional operations on the report object if needed            `
 Telerik.Reporting.InstanceReportSource instanceReportSource = new  Telerik.Reporting.InstanceReportSource();
 instanceReportSource.ReportDocument = report1;
 this.ReportViewer1.ReportSource = instanceReportSource;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 `perform additional operations on the report object if needed
 Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
 instanceReportSource.ReportDocument = report1
 Me.ReportViewer1.ReportSource = instanceReportSource
-````
+```
 
 ### ASP.NET Report Viewer
 
@@ -195,31 +195,31 @@ When settnig the report programmatically one should use an instance of the repor
 
 **Pre-Q2 2012:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 // perform additional operations on the report object if needed
 ReportViewer1.Report = report1;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 ReportViewer1.Report = report1
-````
+```
 
 **Q2 2012 and later:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 // perform additional operations on the report object if needed            `
 Telerik.Reporting.InstanceReportSource instanceReportSource = new  Telerik.Reporting.InstanceReportSource();
 instanceReportSource.ReportDocument = report1;
 this.ReportViewer1.ReportSource = instanceReportSource;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
 instanceReportSource.ReportDocument = report1
 Me.ReportViewer1.ReportSource = instanceReportSource
-````
+```
 
 ### WPF Report Viewer
 
@@ -249,33 +249,33 @@ Here is a sample code snippet that shows how to assign a report to the WPF repor
 
 **Pre-Q2 2012:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 // perform additional operations on the report object if needed
 ReportViewer1.Report = report1;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 'perform additional operations on the report object if needed
 ReportViewer1.Report = report1
-````
+```
 
 **Q2 2012 and later:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 // perform additional operations on the report object if needed
 Telerik.Reporting.InstanceReportSource instanceReportSource = new Telerik.Reporting.InstanceReportSource();
 instanceReportSource.ReportDocument = report1;
 this.ReportViewer1.ReportSource = instanceReportSource;
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 'perform additional operations on the report object if needed
 Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
 instanceReportSource.ReportDocument = report1
 Me.ReportViewer1.ReportSource = instanceReportSource
-````
+```
 
 ### Silverlight Report Viewer
 
@@ -287,33 +287,33 @@ When you use the report processor to directly print - [PrintReport Method](/api/
 
 **Pre-Q2 2012:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 Telerik.Reporting.Processing.ReportProcessor reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
 Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", report1, null);
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
 Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", report1, Nothing)
-````
+```
 
 **Q2 2012 and later:**
 
-````C#
+```C#
 Report1 report1 = new Report1();
 Telerik.Reporting.Processing.ReportProcessor reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
 Telerik.Reporting.InstanceReportSource instanceReportSource = new Telerik.Reporting.InstanceReportSource();
 instanceReportSource.ReportDocument = report1;
 Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", instanceReportSource, null);
-````
-````VB
+```
+```VB.NET
 Dim report1 As New Report1()
 Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
 Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
 instanceReportSource.ReportDocument = report1
 Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", instanceReportSource, Nothing)
-````
+```
 
 ## Conclusion
 

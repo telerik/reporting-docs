@@ -38,9 +38,9 @@ To change the text orientation in a TextBox item, use the [`Angle`](/api/Telerik
 
 The layout of the tilted text starts from the corner of the client item rectangle and fits the text until finished. This behavior produces short initial text lines, which can be avoided, if desired, by adding some empty lines at the beginning of the text or expression:
 
-````C#
+```C#
 this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
-````
+```
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=SetTextBoxValueWithLineBreaks}}
 The item grows vertically to accommodate a full tilted line from the left to the right edge, which may produce a significant growth of the item, especially for angles nearing 90 degrees. To avoid this behavior, set the [`CanGrow`](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to `false`.
 

@@ -49,7 +49,7 @@ For more detailed information, refer to the following articles:
 
 The Report item exposes a set of properties that allow you to control some aspects of its processing and rendering.
 
-* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the report author can control the initial automatic report rendering process by using the [AutoRun](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
+* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), the report author can control the initial automatic report rendering process by using the [AutoRun](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
 
   When `AutoRun=True`, the report loading behavior does not change: the report is automatically loaded if all parameters have valid values, or waits until all parameter values are valid.
 
@@ -59,7 +59,7 @@ The Report item exposes a set of properties that allow you to control some aspec
 
   * If all [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have valid values, the Report Viewer does not trigger report rendering and displays a prompt message in the Report Area to the end user with information on how they may trigger the rendering(_by clicking on the Preview button_).
 
-* `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [SkipBlankPages](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
+* `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [SkipBlankPages](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
 
   For example, `SkipBlankPages` may be kept `True` to remove the empty pages due to horizontal page breaks. For more information, refer to the articles on [horizontal paging](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination#horizontal-paging) and on [skipping blank pages in the rendered report](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors#skip-blank-pages-in-the-rendered-report).
 

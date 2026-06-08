@@ -37,7 +37,7 @@ After upgrading to [Telerik Reporting 2026 Q2 (20.1.26.520)](https://www.telerik
 
 ## Error
 
-![Error when adding the WPF Report Viewer 2026 Q2 to a .NET Framework WPF project via Item Template.](images\wpf-viewer-cannot-add-via-item-template-2026-q2.png)
+![Error when adding the WPF Report Viewer 2026 Q2 to a .NET Framework WPF project via Item Template.](images/wpf-viewer-cannot-add-via-item-template-2026-q2.png)
 
 ## Cause
 

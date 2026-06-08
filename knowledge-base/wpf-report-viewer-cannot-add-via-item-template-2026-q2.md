@@ -37,7 +37,7 @@ After upgrading to [Telerik Reporting 2026 Q2 (20.1.26.520)](https://www.telerik
 
 ## Error
 
-![Error when adding the WPF Report Viewer 2026 Q2 to a .NET Framework WPF project via Item Template.](images/wpf-viewer-cannot-add-via-item-template-2026-q2.png)
+![Error when adding the WPF Report Viewer 2026 Q2 to a .NET Framework WPF project via Item Template.](images\wpf-viewer-cannot-add-via-item-template-2026-q2.png)
 
 ## Cause
 
@@ -45,16 +45,16 @@ The **Telerik Report Viewer Window 2026 Q2 (.NET Framework)** item template ship
 
 Telerik Reporting distributes the required Telerik UI for WPF dependencies for the WPF Report Viewer with the Reporting installer. The viewer's item template gets the version of the Telerik UI for WPF packages it tries to install from the offline assemblies in the Reporting installation folder. This version is wrong, `2026.1.520` and the required WPF packages cannot be found. The correct version of the WPF controls is `2026.2.520`.
 
-## Solution
+## Solution 1: Use Item Template Wizard
 
-Add the WPF Report Viewer to your project manually instead of using the item template wizard. Use one of the following approaches to add the required Telerik UI for WPF dependencies:
+When adding the Telerik WPF Report Viewer to your project through the **item template wizard**, use one of the following approaches to add the required Telerik UI for WPF dependencies:
 
 * Ensure adding them as direct references from the Telerik Reporting installation folder, by default, 'C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q2\Bin\WpfViewerDependencies\Framework'.
 * Add manually the Telerik UI for WPF NuGet packages or assemblies with the correct version (`2026.2.520` or later) to your project. You may need binding redirects to the newer version as explained in the [Binding Redirects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project#binding-redirects) article section.
 
-> note This issue affects only the item template wizard in `2026 Q2 (20.1.26.520)` for projects targeting .NET Framework. The WPF Report Viewer assemblies and NuGet packages are fully functional. The manual setup produces the same result as the wizard.
+## Solution 2: Manual Setting
 
-For manual setup of your WPF Report Viewer, follow the steps in the article [Manually Setting Up the WPF Report Viewer in .NET Framework](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project).
+Add manually your Telerik WPF Report Viewer, following the steps in the article [Manually Setting Up the WPF Report Viewer in .NET Framework](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project).
 
 ## See Also
 

@@ -32,6 +32,14 @@ To use the Telerik Reporting MCP Server, you need:
 
 Depending on your environment, you can install the Telerik Reporting MCP server in any of the following ways:
 
+single command line sets up the MCP server for your IDE automatically:
+
+```powershell
+telerik mcp config reporting
+```
+
+This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config reporting --ide vscode`). For more details, see [Telerik CLI - Install Reporting MCP Server]({%slug reporting-telerik-cli%}#install-reporting-mcp-server).
+
 ```bash .NET 10
 dnx Telerik.Reporting.MCP
 ```

@@ -5,7 +5,7 @@ description: "Check the operating system requirements for working with Telerik R
 slug: system-requirements
 tags: telerik, reporting, prerequisites, system, requirements
 published: True
-position: 1
+position: 0
 reportingArea: General
 ---
 

@@ -18,7 +18,7 @@ The `WebServiceDataSource` component can request data in JSON format from a runn
 
 The values of this parameter type replace the corresponding part of the `Service URL`, and can be included in the body of a POST request.
 
-> The WebServiceDataSource's `Inline Parameter` names should start with `@` to distinguish them from the other content in the Service URL or the body of the request.
+> tip The WebServiceDataSource's `Inline Parameter` names should start with `@` to distinguish them from the other content in the Service URL or the body of the request.
 
 ### Using Inline Parameters in Service Url
 
@@ -56,11 +56,11 @@ The final request performed by the WebServiceDataSource component with the desig
 
 The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format `serviceUrl?queryParameterName1=value1&queryParameterName2=value2&...`.
 
-For example, in a Web Api project to call the Action `GetWithQueryParameters(int id, string category)`, the default service URL will be `http://localhost:50160/api/data/GetWithQueryParameters`. The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:
+For example, in a Web API project to call the Action `GetWithQueryParameters(int id, string category)`, the default service URL will be `http://localhost:50160/api/data/GetWithQueryParameters`. The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:
 
 ![Set the Query parameter values in the WebServiceDataSource Wizard](images/WebServiceDataSourceQueryParameterx750.png)
 
-And how will the generated final URL for the design-time parameter values look in Fiddler:
+The generated final URL for the design-time parameter values will look like this in Fiddler:
 
 ![The request performed by the WebServiceDataSource component with the design-time Query parameter values as seen in Fiddler](images/WebServiceDataSourceQueryParameterRequestUrlx750.png)
 

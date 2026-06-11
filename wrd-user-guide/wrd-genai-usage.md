@@ -76,7 +76,6 @@ When you select a proper Report Section/Item, the AI Report Generator switches t
 
 To create a new item:
 
-1. Select the Report (use the [report selector button](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#major-ui-elements-in-the-standalone-report-designer)), or an unsupported item.
 1. Open the [AI Report Generator](#opening-ai-report-generator).
 1. Type a prompt that describes the visualization you need, including the data fields, metric, and intended layout.
 1. The AI Generator will generate the Graph/Gauge and show it on the design surface, or ask for clarification.

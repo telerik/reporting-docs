@@ -10,7 +10,7 @@ position: 11
 reportingArea: WRDHTML5, WRDBlazorWrapper
 ---
 
-# AI Report Generator in Web report Designer
+# AI Report Generator in Web Report Designer
 
 The Web Report Designer includes an **AI Report Generator** experience that lets you create and edit [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview) and [Gauge](slug:telerikreporting/designing-reports/report-structure/gauge/overview) items from natural-language prompts. AI Report Generator combines an agentic workflow, on-the-fly JSON Schemas, and validation against the Telerik Reporting item model so the generated item is data-bound, valid, and ready to apply to the report.
 

@@ -47,17 +47,17 @@ liquid-output-delimiter-left: "{{"
 liquid-output-delimiter-right: "}}"
 liquid:
   suiteversion: "2026 Q2"
-  buildversion: "20.1.26.520"
-  reportserverversion: "12.1.26.520"
-  spaviewerversion: "29.26.520"
+  buildversion: "20.1.26.611"
+  reportserverversion: "12.1.26.611"
+  spaviewerversion: "29.26.611"
   nodeversion: "16.0.0"
   angularsubsetversion: "21.1.0"
   kendosubsetversion: "2025.4.1111"
   kendothemeversion: "12.3.0"
-  blazoruiversion: "9.1.0"
+  blazoruiversion: "13.1.0"
   mindotnetversion: "8"
   mindotnetoutputdir: "\\bin\\Debug\\net8.0"
-  dotnetversions: ".NET 8, .NET 9, and .NET 10"
+  dotnetversions: ".NET 8, .NET 9, .NET 10, and .NET 11 Preview 4"
 
 # table of contents and navigation
 meta:

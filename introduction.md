@@ -2,7 +2,7 @@
 title: Welcome to Telerik Reporting
 page_title: Telerik Reporting - Overview, Designers, Viewers, and Platforms
 description: "Learn how Telerik Reporting works, which designers and viewers to choose for your framework, and how to get started with .NET reporting."
-slug: telerikreporting/welcome-to-telerik-reporting
+slug: telerikreporting/welcome-to-telerik-reporting!
 tags: telerik, reporting, introduction, welcome
 published: True
 position: 0

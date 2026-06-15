@@ -82,7 +82,6 @@ Choose the designer based on where report authors work and whether they need a d
         subTitle="Report Designer"
         description="Windows desktop authoring tool packaged as a single .exe file. Suitable for report authors who need a dedicated report design environment outside Visual Studio.">
   </article-card>
-
   <article-card
         href="slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview"
         src="./images/web-report-designer.png"
@@ -91,7 +90,6 @@ Choose the designer based on where report authors work and whether they need a d
         subTitle="Report Designer"
         description="Browser-based designer that you can embed in web applications. Suitable when report authors work in a web portal and need in-browser preview with the HTML5 Report Viewer.">
   </article-card>
-
   <article-card
         href="slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview"
         src="./images/visual-studio-report-designer.png"
@@ -102,23 +100,14 @@ Choose the designer based on where report authors work and whether they need a d
   </article-card>
 </article-card-container>
 
-
-
-
-| Report Designer                                                                                                                                          | Specifics                                                                                                                                                                                                                                                      |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Standalone desktop designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)   | Windows desktop authoring tool packaged as a single `.exe` file. Suitable for report authors who need a dedicated report design environment outside Visual Studio. |
-| [Web report designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)                                    | Browser-based designer that you can embed in web applications. Suitable when report authors work in a web portal and need in-browser preview with the HTML5 Report Viewer. |
-| [Designer for Visual Studio](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) | Visual Studio integration for editing CLR report definitions in C# or VB. Available for .NET Framework projects. |
-
 ### Report Viewers
 
 Use a report viewer to display, print, search, navigate, and export reports inside an application.
 
 Choose the viewer that matches the technology stack of the application where end users consume reports.
 
-| Report Viewer                                                                                                                                                                          | App Type | Essentials                                                                                               |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------------------------------- |
+| Report Viewer | App Type | Essentials |
+| --- | --- | --- |
 | [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)                            | Web      | An HTML, CSS, JavaScript, and jQuery client-side viewer targeting all web applications. |
 | [HTML5 MVC Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview)            | Web      | A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications.             |
 | [HTML5 WebForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview) | Web      | A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.        |
@@ -130,6 +119,7 @@ Choose the viewer that matches the technology stack of the application where end
 | [WinForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview)                                   | Desktop  | A composite of standard Windows Forms controls targeting WinForms and WPF projects.                      |
 | [WPF Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview)                                                  | Desktop  | A composite of Telerik UI for WPF controls targeting WPF and WinForms projects.                          |
 | [WinUI Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview)                                    | Desktop  | A composite of Telerik UI for WinUI controls targeting WinUI3 projects.                                  |
+
 
 ### Export Formats
 

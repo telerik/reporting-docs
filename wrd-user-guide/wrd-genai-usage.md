@@ -14,7 +14,7 @@ reportingArea: WRDHTML5, WRDBlazorWrapper
 
 The Web Report Designer includes an **AI Report Generator** experience that lets you create and edit [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview) and [Gauge](slug:telerikreporting/designing-reports/report-structure/gauge/overview) items from natural-language prompts. AI Report Generator combines an agentic workflow, on-the-fly JSON Schemas, and validation against the Telerik Reporting item model so the generated item is data-bound, valid, and ready to apply to the report.
 
-> note AI Report Generator for `Graph` and `Gauge` items is available starting with the `2026 Q2 (20.1.26.612)` Telerik Reporting release.
+> note AI Report Generator for `Graph` and `Gauge` items is available starting with the `2026 Q2 (20.1.26.615)` Telerik Reporting release.
 
 ## Overview
 
@@ -105,7 +105,7 @@ When a request is unrelated to Telerik Reporting or falls outside the `Graph` an
 
 ## Speech-to-Text Support
 
-> note Speech-to-Text support in AI Report Generator is available starting with the `2026 Q2 (20.1.26.612)` Telerik Reporting release.
+> note Speech-to-Text support in AI Report Generator is available starting with the `2026 Q2 (20.1.26.615)` Telerik Reporting release.
 
 The AI Report Generator includes voice input for the AI Assist prompt. A **Microphone** icon appears next to the prompt text box. You can click the icon to start or stop listening. The transcribed text appears in the prompt text box, where you can edit it before submitting.
 

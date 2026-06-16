@@ -1,8 +1,8 @@
 ---
 title: How to render reports asynchronously by using the async and await keywords
-description: How to convert reports to another rendering format asynchronously by using the async and await keywords.
+description: "Learn how to render Telerik Reporting reports asynchronously using the async and await keywords, and how to pass report parameters programmatically."
 type: how-to
-page_title: How to export reports asynchronously by using the async and await keywords
+page_title: Render Reports Asynchronously with async and await
 slug: how-to-render-reports-asynchronously-by-using-the-async-and-await-keywords
 res_type: kb
 ---
@@ -21,13 +21,13 @@ res_type: kb
  
 ## Description
 
-With the new .NET Framework (4.5), a new way to handle parallel programming has been added - with the help of the **Task&lt;&gt;** class and the keywords **async** and **await**, parallel programming has become much easier. This raises the question, how can these features be used with Telerik Reporting?
- 
+.NET Framework 4.5 introduced the `Task<T>` class and the `async` and `await` keywords, which simplify parallel programming. This article explains how to use these features with the Telerik Reporting [`ReportProcessor`](/api/telerik.reporting.processing.reportprocessor) class to render reports asynchronously, and how to pass report parameters to reports that require them.
+
 ## Solution  
 
-First, we will have to start with the [*ReportProcessor*](/api/telerik.reporting.processing.reportprocessor) class and its [**RenderReport**](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method, which provides all the needed functionality for programmatic generation of reports. Since RenderReport returns [RenderingResult](/api/telerik.reporting.processing.renderingresult), in order to use it asynchronously, you will have to create a method that returns this result. However, since we want to achieve the task in an *async* manner, we will take advantage of the *Task* class:   
+The [`ReportProcessor`](/api/telerik.reporting.processing.reportprocessor) class and its [`RenderReport`](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method provide all the functionality needed for programmatic report generation. Because `RenderReport` returns a [`RenderingResult`](/api/telerik.reporting.processing.renderingresult), wrap the call in a method that returns `Task<RenderingResult>` to use it asynchronously:
    
-```C#
+```csharp
 public class AsyncWrappers
 {
     // Wrap the RenderingResult like this:
@@ -68,11 +68,10 @@ Public Class AsyncWrappers
     End Function
 End Class
 ```
-    
- Besides declaring the return value to be Task&lt;RenderingResult&gt; we have marked the method as **async**. Also, we are invoking the *RenderReport* method using the **await** keyword. For the second part, we will use our method in an async manner: 
 
-  
-```C#
+The method returns `Task<RenderingResult>` and is marked `async`. The `RenderReport` call is wrapped in `Task.Run` and awaited, offloading the blocking render work to a thread-pool thread. Use the wrapper in your application code:
+
+```csharp
 //Use the wrapper in your code like this:
 public async Task<string> RenderReportAsync()
 {
@@ -99,7 +98,7 @@ public async Task<string> RenderReportAsync()
 ```
 ```VB.NET
 'Use the wrapper in your code like this:
-Public Function RenderReportAsync() As Task(Of String)
+Public FuvVB.NETRenderReportAsync() As Task(Of String)
     Dim asyncWrappers = New AsyncWrappers()
  
     Console.WriteLine("Rendering started on: {0}", Thread.CurrentThread.ManagedThreadId)
@@ -121,7 +120,9 @@ Public Function RenderReportAsync() As Task(Of String)
 End Function
 ```
 
-Finally, we will invoke this method in a console application and check the results: 
+### Full Console Application Example
+
+The following example invokes the wrapper from a console application. While the report renders on a background thread, the main thread continues executing `Count()`:
 
 ```C#
 class Program
@@ -180,7 +181,106 @@ Class Program
 End Class
 ```
 
-## Additional Resources
+### Passing Report Parameters
+
+Some reports define parameters that must be supplied before rendering. The `TypeReportSource` class exposes a `Parameters` collection where you add [`Parameter`](/api/telerik.reporting.parameter) objects.
+
+Extend the wrapper method to accept a parameter dictionary, then populate the collection before the `Task.Run` call:
+
+```csharp
+public class AsyncWrappers
+{
+    public async Task<RenderingResult> RenderReportAsync(
+        Type reportType,
+        IDictionary<string, object> parameters = null)
+    {
+        ReportProcessor reportProcessor = new ReportProcessor();
+        Hashtable deviceInfo = new Hashtable();
+
+        TypeReportSource typeReportSource = new TypeReportSource();
+        typeReportSource.TypeName = reportType.AssemblyQualifiedName;
+
+        if (parameters != null)
+        {
+            foreach (var param in parameters)
+            {
+                typeReportSource.Parameters.Add(new Parameter(param.Key, param.Value));
+            }
+        }
+
+        return await Task.Run(() => reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo));
+    }
+}
+```
+```vb
+Public Class AsyncWrappers
+    Public Function RenderReportAsync(
+        reportType As Type,
+        Optional parameters As IDictionary(Of String, Object) = Nothing) As Task(Of RenderingResult)
+
+        Dim reportProcessor As New ReportProcessor()
+        Dim deviceInfo As New Hashtable()
+
+        Dim typeReportSource As New TypeReportSource()
+        typeReportSource.TypeName = reportType.AssemblyQualifiedName
+
+        If parameters IsNot Nothing Then
+            For Each param In parameters
+                typeReportSource.Parameters.Add(New Parameter(param.Key, param.Value))
+            Next
+        End If
+
+        Return Await Task.Run(Function() reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo))
+    End Function
+End Class
+```
+
+Call the extended wrapper with a parameter dictionary:
+
+```csharp
+var result = await asyncWrappers.RenderReportAsync(
+    typeof(MyReport),
+    new Dictionary<string, object>
+    {
+        { "StartDate", new DateTime(2024, 1, 1) },
+        { "EndDate", new DateTime(2024, 12, 31) }
+    });
+```
+```vb
+Dim result = Await asyncWrappers.RenderReportAsync(
+    GetType(MyReport),
+    New Dictionary(Of String, Object) From {
+        {"StartDate", New DateTime(2024, 1, 1)},
+        {"EndDate", New DateTime(2024, 12, 31)}
+    })
+```
+
+For reports that need direct access to the report instance — for example, to set properties in addition to parameters — use `InstanceReportSource` instead:
+
+```csharp
+var report = new MyReport(); // your report class
+report.ReportParameters["StartDate"].Value = new DateTime(2024, 1, 1);
+report.ReportParameters["EndDate"].Value = new DateTime(2024, 12, 31);
+
+InstanceReportSource instanceReportSource = new InstanceReportSource();
+instanceReportSource.ReportDocument = report;
+
+return await Task.Run(() => reportProcessor.RenderReport("PDF", instanceReportSource, deviceInfo));
+```
+```vb
+Dim report As New MyReport() ' your report class
+report.ReportParameters("StartDate").Value = New DateTime(2024, 1, 1)
+report.ReportParameters("EndDate").Value = New DateTime(2024, 12, 31)
+
+Dim instanceReportSource As New InstanceReportSource()
+instanceReportSource.ReportDocument = report
+
+Return Await Task.Run(Function() reportProcessor.RenderReport("PDF", instanceReportSource, deviceInfo))
+```
+
+>note If a report has no parameters, the simplified wrapper from the first example works without modification.
+
+## Notes
 
 [Download a sample console application](resources/AsyncAwaitDemo.zip).
 

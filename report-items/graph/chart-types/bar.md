@@ -1,7 +1,7 @@
 ---
 title: Bar Charts
-page_title: Bar Charts Overview
-description: "Learn more about the Telerik Reporting Bar Chart types supported by the Graph report item and how to create a Clustered Bar chart."
+page_title: Creating and Customizing Bar Charts - Telerik Reporting
+description: "Learn when to use Telerik Reporting bar charts, choose a bar chart type, and create clustered, stacked, or 100% stacked bar charts."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview
 tags: telerik, reporting, report, items, graph, bar, chart, overview, creating
 previous_url: /BarCharts, /GraphHowToCreateBarChart, /report-items/graph/chart-types/bar-charts/overview, /report-items/graph/chart-types/bar-charts/how-to-create-bar-chart
@@ -11,114 +11,147 @@ reportingArea: General
 
 # Creating and Customizing Bar Charts
 
-A Bar chart displays data series as sets of horizontal bars, graphically summarizes and renders data categories, and enables users to easily compare amounts or values between different categories.
+A bar chart displays data series as sets of horizontal bars. In Telerik Reporting, use a bar chart when you need to compare values across categories and the category labels need more horizontal space.
 
-Bar charts are also useful for comparing multiple series of data because they provide snapshots of data at specific times, and are popular for representing data that occurs over time, with a finite start and end date. Bar charts are also used to show categorical information because you can display the categories horizontally.
+Bar charts work well for category comparisons, rankings, and time-based summaries. If the same data reads better with vertical bars, use [Column Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview) instead.
 
-The following image shows a typical Bar chart which is well suited for the visualized data because all four series share a common time period and allow for valid comparisons.
+The following preview shows a clustered bar chart built from product category sales by year:
 
-![Preview of Graph Item with Clustered Bar Chart](images/BarChartWizardPreview.png)
+![Clustered bar chart preview showing product category sales by year](images/BarChartWizardPreview.png)
+
+## When to Use a Bar Chart
+
+Use a bar chart when you need to:
+
+- Compare values across categories.
+- Display long category names that would be hard to read on a column chart.
+- Compare multiple series that share the same set of categories.
+- Emphasize ranking or magnitude from left to right.
 
 ## Types
 
-The Graph supports the following Bar chart types: 
+The Graph item supports the following bar chart types:
 
-* __Clustered Bar Charts__&mdash;A Bar chart for displaying series as sets of horizontal bars.
-* __Stacked Bar Charts__&mdash;A Bar chart where multiple series are stacked vertically. Stacked Bar charts compare contributions of values to a total across categories. If there is only one series in your chart, the Stacked Bar chart will display in the same way as a Bar chart.
-* __100% Stacked Bar Charts__&mdash;A Bar chart where multiple series are stacked vertically to fit 100% of the chart area. 100% Stacked Bar Charts are used for three or more data series when you want to compare distributions within categories and at the same time display the differences between categories. Each bar represents 100% of the amounts for that category. If there is only one series in your chart, all the bars will fit to 100% of the chart area.
+| Type | Use it when | Result |
+|---|---|---|
+| Clustered Bar | You want to compare individual values across categories | Each series is displayed as a separate horizontal bar |
+| Stacked Bar | You want to compare both totals and each series contribution | Each category shows one stacked horizontal bar |
+| 100% Stacked Bar | You want to compare percentage distribution across categories | Each category fills 100% of the available bar length |
+
+If you only need one series, a stacked bar chart looks the same as a standard bar chart. Choose a stacked variation only when the contribution of each series matters.
 
 ## Creating Bar Charts with the Bar Chart Wizard
 
-In this section, you will learn how to create a Bar chart with the Telerik Reporting Bar Chart Wizard. You will create a Clustered Bar Chart that displays the **LineTotal** of the Product Categories by Years. The final report will look like the image above.
+This walkthrough creates a clustered bar chart that plots `LineTotal` by `Category` and `OrderDate.Year`. The same field mapping also works for stacked and 100% stacked bar charts.
 
-In the general case, you can select a Stacked Bar or a 100% Stacked Bar chart. The required settings are basically the same.
+### Before You Start
 
-The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
+Before you run the wizard, make sure that:
+
+- You have a report open in a Telerik Report Designer.
+- Your data source returns `Category`, `OrderDate.Year`, and `LineTotal`.
+- You know whether you want raw totals or values scaled to thousands for readability.
+
+The sample report uses a predefined `SqlDataSource` that connects to the AdventureWorks sample database. The query that returns the required fields is:
 
 {{source=CodeSnippets\CS\SQL\SelectSalesByCategoryAndDate.sql}}
-To create the Bar chart by using the Bar Chart Wizard:
 
-1. Add a Clustered Bar chart as shown in the image below:
+### Create the Chart
 
-	![Adding the Telerik Reporting Bar Chart Wizard from the Insert Menu Item of the Standalone Report Designer](images/BarChartWizardAdd.png)
+To create the bar chart by using the Bar Chart Wizard:
 
-1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
+1. In the designer, add a **Clustered Bar Chart**.
 
-	![Add DataSource to the Bar Chart with the Wizard of the Standalone Report Designer](images/BarChartWizardDataSource.png)
+	![Insert menu showing the Bar Chart wizard option](images/BarChartWizardAdd.png)
 
-1. Arrange the Bar Chart:
+1. Select the existing `SqlDataSource`, or click **Add New Data Source...** and create one by using the query above.
 
-	1. Drag the __Category__ field to **Series**.
-	1. Drag the __OrderDate.Year__ field to **Categories**.
-	1. Drag the __LineTotal__ field to the **Values**. The wizard will automatically apply the `Sum` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions).
+	![Bar Chart wizard data source step with a selected SqlDataSource](images/BarChartWizardDataSource.png)
 
-	![Arrange the Bar Chart Series, Categories and Values from the Wizard in the Standalone Report Designer](images/BarChartWizardArrangeFields.png)
+1. Drag `Category` to **Series**.
+1. Drag `OrderDate.Year` to **Categories**.
+1. Drag `LineTotal` to **Values**. The wizard automatically applies the `Sum` [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions).
 
-1. The `LineTotal` value is large, so let's change the `Data > X` [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) of `barSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
+	![Bar Chart wizard field arrangement step with Series, Categories, and Values mappings](images/BarChartWizardArrangeFields.png)
+
+1. Finish the wizard and preview the chart.
+1. If you want the value axis to display totals in thousands, select `barSeries` and change `Data > X` from `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`.
+
+This configuration creates one series per product category and one category group per year. Because bar charts use horizontal bars, the numerical value is plotted on the X axis.
+
+>tip
+> If you want a stacked or 100% stacked bar chart, choose that chart type in the first wizard step. The data source and field mapping steps stay the same.
 
 To see the full implementation of the sample report, refer to the [BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp) project on GitHub.
 
 ## Creating Bar Charts Manually
 
-This section will show how to manually create a Bar chart.
+Manual setup is useful when you want full control over the group hierarchy, coordinate system, and series properties.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item](slug:graph_item_get_started).
+To add a new Graph report item to the report, refer to [Getting Started with the Graph Report Item](slug:graph_item_get_started).
 
 ### 2. Set the SeriesGroups Hierarchy
 
-Now you can set the **SeriesGropus** hierarchy of the Bar chart:
+Use the `SeriesGroups` hierarchy to split the chart into separate series for each product category:
 
-1. Open the __SeriesGroups__ collection editor and click __Add__.
-1. Set the __Groupings__ to `=Fields.Category`.
-1. Set the __Sortings__ to `=Fields.Category`.
-1. Set the __Filter__ to `=Fields.Category <> Bikes`.
-1. Set the __Name__ to `seriesGroup1`.
+1. Open the `SeriesGroups` collection editor and click **Add**.
+1. Set `Groupings` to `=Fields.Category`.
+1. Set `Sortings` to `=Fields.Category`.
+1. Set `Name` to `seriesGroup1`.
+
+If you want the output to match a filtered sample, add a group filter that excludes the category you do not want to display.
 
 ### 3. Set the CategoryGroups Hierarchy
 
-Next, you will have to define the **CategoryGroups** hierarchy of the Bar chart:
+Use the `CategoryGroups` hierarchy to create one group for each year:
 
-1. Open the __CategoryGroups__ collection editor and click __Add__.
-1. Set the __Groupings__ to `=Fields.OrderDate.Year`.
-1. Set the __Sortings__ to `=Fields.OrderDate.Year`.
-1. Set the __Name__ to `categoryGroup1`.
+1. Open the `CategoryGroups` collection editor and click **Add**.
+1. Set `Groupings` to `=Fields.OrderDate.Year`.
+1. Set `Sortings` to `=Fields.OrderDate.Year`.
+1. Set `Name` to `categoryGroup1`.
 
 ### 4. Configure the Coordinate System
 
-Here you will specify the coordinate system details:
+Bar charts use a numerical X axis and a categorical Y axis because the bars are horizontal:
 
-1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
-1. Leave the __Name__ to `cartesianCoordinateSystem1`.
-1. Set the __XAxis__ to __New Axis with Numerical Scale__.
-1. Set the __YAxis__ to __New Axis with Category Scale__.
+1. Open the `CoordinateSystems` collection editor and click **Add** to create a new `CartesianCoordinateSystem`.
+1. Leave `Name` set to `cartesianCoordinateSystem1`.
+1. Set `XAxis` to **New Axis with Numerical Scale**.
+1. Set `YAxis` to **New Axis with Category Scale**.
 
 ### 5. Configure the Series
 
-In this step, you will configure the series of the chart:
+Add a `BarSeries` that uses the group hierarchy and coordinate system you just defined:
 
-1. Open the __Series__ collection editor and __Add__ new __BarSeries__.
-1. Set the __CategoryGroup__ to __categoryGroup1__.
-1. Set the __SeriesGroup__ to __seriesGroup1__.
-1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__.
-1. Set the __ArrangeMode__ to __Clustered__.
-1. Set the __X__ value to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`.
+1. Open the `Series` collection editor and click **Add** to create a new `BarSeries`.
+1. Set `CategoryGroup` to `categoryGroup1`.
+1. Set `SeriesGroup` to `seriesGroup1`.
+1. Set `CoordinateSystem` to `cartesianCoordinateSystem1`.
+1. Set `ArrangeMode` to `Clustered`.
+1. Set `X` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`.
 
 ### 6. Style the Appearance
 
-To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
+To set the color palette, format the labels, define the legend values, and configure other styling options, refer to [Formatting the Graph](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm).
 
 ## Design Considerations
 
-* Bar charts have reversed axes. The category axis is the vertical axis (Y axis) and the value axis is the horizontal axis (X axis). This means that in a Bar chart, you have more space for category labels to display along the Y axis as a list that reads from top to bottom.
-* Commonly, Bar and Column charts show comparisons between groups. If more than three series are present on the chart, consider using a Stacked Bar or Column chart.
-* A Bar chart displays values from left to right, which may be more intuitive when displaying data related to durations.
-* When a Bar chart renders data point labels, the labels are placed on the outside end of each bar (**OutsideEnd**). This behavior may result in a label that is overlapped by its corresponding bar when the bar takes up all of the allotted space within the chart area. To change the position of the data point labels displayed for each bar, set the [`DataPointLabelAlignment`](/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) property in the **Properties** tool window.
-* If there are many data points in your dataset that are relative to the size of your chart, the size of the bars and the spacing between them are reduced. To modify the width of the bars in a chart, consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default, the value is `1` which indicates equal widths of the bars and the free space. The greater the value, the more free space is reserved between the bars.
+Keep the following design considerations in mind:
+
+- Bar charts reverse the usual chart axes. The category axis is the vertical Y axis, and the value axis is the horizontal X axis.
+- Use a bar chart when category labels are long and would be hard to read on a column chart.
+- If your chart contains more than three series, consider a stacked bar chart to reduce visual clutter.
+- By default, data point labels are placed at the outside end of each bar. If labels overlap the bars, change [`DataPointLabelAlignment`](/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) in the **Properties** window.
+- If the bars become too thin, increase `SpacingSlotCount` on the category axis scale to reserve more space between bars.
 
 ## See Also
 
-* [(Demo) Product Line Sales Report with Bar Charts](https://demos.telerik.com/reporting/product-line-sales)
-* [(Demo) Dashboard Report with Bar Charts](https://demos.telerik.com/reporting/dashboard)
-* [(Demo TRDP Report) BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp)
+- [Chart Types Overview](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/overview)
+- [Column Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview)
+- [Getting Started with the Graph Report Item](slug:graph_item_get_started)
+- [Formatting the Graph](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm)
+- [(Demo) Product Line Sales Report with Bar Charts](https://demos.telerik.com/reporting/product-line-sales)
+- [(Demo) Dashboard Report with Bar Charts](https://demos.telerik.com/reporting/dashboard)
+- [(Demo TRDP Report) BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp)

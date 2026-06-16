@@ -1,7 +1,7 @@
 ---
 title: Setting Up Your License Key
-page_title: Setting Up Your License Key
-description: "Learn how to set up the required Telerik Reporting License Key after the 2025 Q1 (19.0.25.211) release."
+page_title: Setting Up a Telerik Reporting License Key
+description: "Download and activate your Telerik Reporting license key. Covers automatic and manual activation for .NET and .NET Framework projects."
 slug: license-key
 tags: license, key, telerik, reporting, licensing
 published: True
@@ -11,11 +11,11 @@ reportingArea: General
 
 # Setting Up Your Telerik Reporting License Key
 
-Telerik Reporting requires activation through a license key—for both trial and commercial versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
+Telerik Reporting requires activation through a license key for both, trial and commercial, versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
 
 An invalid license results in [errors and warnings](slug:license-errors-and-warnings), such as watermarks and banners during build, test, and publish.
 
-> This document applies to Telerik Reporting version [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) and later. Earlier versions do not require activation.
+> This article applies to Telerik Reporting version [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) and later. Earlier versions do not require activation.
 
 ## Downloading the License Key
 
@@ -44,7 +44,7 @@ To install your Telerik License key by using the Visual Studio extensions for Te
 
 	![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
 
-The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you may have used another [installation method](slug:telerikreporting/installation) or deselected them during the setup.
+The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you used an alternative [installation method](slug:telerikreporting/installation) or deselected them during setup.
 
 ### Downloading Manually
 
@@ -53,7 +53,7 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 
 	![Download License Key](images/download-license-key.png)
 
-1. Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
+1. Copy the `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
 
 	- For Windows: `%AppData%\Telerik\telerik-license.txt`
 	- For Mac/Linux: `~/.telerik/telerik-license.txt`
@@ -63,13 +63,13 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 
 By default, the activation of the Telerik Reporting library is automatic when your license key file is already downloaded, and the Visual Studio project has access to `www.nuget.org`.
 
-If the automatic product activation fails, and you see licensing-related error messages, you need to [activate the product manually](#activating-telerik-reporting-manually).
+If automatic activation fails and you see licensing-related error messages, [activate the product manually](#activating-telerik-reporting-manually).
 
 ## Activating Telerik Reporting Manually
 
 If Telerik Reporting cannot be activated automatically:
 
-1. Make sure the [license key file](#downloading-the-license-key) is available on your system.
+1. Ensure the [license key file](#downloading-the-license-key) is present on your system.
 
 1. Add the `Telerik.Licensing` package from [NuGet.org](https://www.nuget.org/) as a project dependency:
 
@@ -101,7 +101,7 @@ When you build the project, the `Telerik.Licensing` NuGet package locates the li
 
 ## Adding a License Key to Projects without NuGet References
 
-> caution Telerik strongly recommends the use of the `Telerik.Reporting` NuGet package whenever possible&mdash;it will add all required dependencies, such as `Telerik.Licensing`. Only include the license key as a code snippet (demonstrated in this section) when NuGet packages are not an option.
+>important Telerik strongly recommends using the `Telerik.Reporting` NuGet package whenever possible. It automatically adds all required dependencies, including `Telerik.Licensing`. Use the code snippet approach only when NuGet packages are unavailable in your project.
 
 If you cannot use NuGet packages in your project, add the license as a code snippet:
 
@@ -118,7 +118,7 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 Whenever you purchase a new Telerik Reporting license or renew an existing one, always [download](#downloading-the-license-key) and install a new license key.
 
-The new license key includes information about all previous license purchases. This process is referred to as a license key update.
+The new license key includes information about all previous license purchases.
 
 Once you have the new license key, use it to [activate Telerik Reporting](#activating-telerik-reporting-automatically).
 

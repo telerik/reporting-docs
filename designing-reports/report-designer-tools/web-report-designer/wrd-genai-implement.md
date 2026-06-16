@@ -18,36 +18,6 @@ For information on the AI Report Generator usage refer to the article [AI Report
 
 > note AI Report Generator for `Graph` and `Gauge` items is available starting with the `2026 Q2 (20.1.26.615)` Telerik Reporting release.
 
-## How It Works: Tools, Schema, and Validation
-
-The **AI Report Generator** is built on an agentic loop powered by `Microsoft.Extensions.AI` function tools. The agent has access to a small, focused tool surface that lets it inspect the current report and craft a valid item definition without inventing schema or data:
-
-| Tool | Purpose |
-|------|---------|
-| `ResolveMinimalSchemaSet` | Returns the JSON Schemas for one or more Telerik Reporting model types and recursively pulls in the schemas of their required, non-polymorphic property types. The agent calls this first to learn the shape of the item it must produce. |
-| `GetItemGuidance` | Returns curated, item-specific authoring guidance (for example, for `Graph`, `BarChart`, `LineChart`, `RadialGauge`, or `LinearGauge`) so the agent applies recommended defaults and avoids common pitfalls. |
-| `GetSkill` | Returns cross-cutting authoring skills that cover concerns such as [expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties), [conditional formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting), [bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), [aggregates](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions), and [sorting and filtering](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting). The agent loads only the skills relevant to the user's intent. |
-| `GetDataSources` | Returns the data sources defined on the current report along with their field names and types. The agent calls this before writing any field expression so it never invents tables or columns. |
-| `ValidateDefinitionDeep` | Validates the crafted JSON item definition in two stages: first against the JSON Schema for the given type, then by deserializing the definition into a live report item. The agent explicitly calls this tool after producing a candidate definition and receives any errors in natural language. It then revises the JSON and retries until both stages pass or a configured retry limit is reached. |
-
-After the agent crafts a candidate item, it calls `ValidateDefinitionDeep` to check the definition. If validation fails, the agent receives the errors in natural language and revises the JSON. This cycle repeats until the item passes both the schema check and deserialization, or the configured retry limit is reached.
-
-The transient JSON Schemas are generated on demand through reflection over the current report item model and are not versioned. After you accept the crafted item JSON, the Web Report Designer deserializes it into the standard Telerik Report Definition (TRDX) model and applies it through the same design-time logic that backs manual edits, including support for undo and redo.
-
-The schemas conform to [JSON Schema Draft 2020-12](https://json-schema.org/draft/2020-12) and follow conventions that maximize compatibility with language models:
-
-- Each property declares `type`, a natural-language `description`, and, where relevant, `enum`, `default`, `examples`, `minimum`, `maximum`, or `format`.
-- Required and optional properties are listed explicitly through `required` arrays.
-- Recommended value ranges and `do` and `do-not` guidance are encoded directly in the property descriptions.
-- Nested structures such as series, categories, axes, ranges, labels, and data bindings are expressed as plain nested objects and arrays in a single schema document.
-- Complex constructs such as `$ref` graphs, `allOf`, `anyOf`, and `not` are avoided. The `oneOf` keyword is used sparingly when a true union of small shapes is needed.
-
-## Data Source Usage
-
-> AI Report Generator does not pass business data to the LLM. It works only with schemas.
-
-**AI Report Generator** uses the `GetDataSources` tool to retrieve the available data sources from the current report definition and their field schemas, including calculated fields. The agent maps your natural-language intent to existing fields only and does not invent tables or columns. When required data is missing, the agent reports the gap and proposes alternatives.
-
 ## Configuring AI Report Generator in the Host Application
 
 AI Report Generator runs as a SignalR-backed service in the application that hosts the Web Report Designer. The host application controls which language model the agent uses, when chat sessions expire, and which users may invoke the feature.
@@ -55,7 +25,6 @@ AI Report Generator runs as a SignalR-backed service in the application that hos
 ### Prerequisites
 
 The AI Report Generator requires a valid `Subscription` or `Trial` license.
-
 ### Server-side Configuration
 
 To enable AI Report Generator, follow these steps:
@@ -201,6 +170,18 @@ The Web Report Designer requires `SignalR` version 10 or newer to run the AI Rep
 
 The **AI Report Generator** button does not appear in the designer without the SignalR reference.
 
+Add the minimum required Kendo UI for jQuery set from our CDN if your app is not already using it:
+
+```HTML
+<script src="https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.kendo.min.js"></script>
+```
+
+## Data Source Usage
+
+> AI Report Generator does not pass business data to the LLM. It works only with schemas.
+
+**AI Report Generator** uses the `GetDataSources` tool to retrieve the available data sources from the current report definition and their field schemas, including calculated fields. The agent maps your natural-language intent to existing fields only and does not invent tables or columns. When required data is missing, the agent reports the gap and proposes alternatives.
+
 ## Security, Privacy, and Limits
 
 **AI Report Generator** sends the user prompt, the relevant JSON Schema, and the necessary report metadata to the configured language model. Live data values are not sent unless the chat explicitly references them.
@@ -217,6 +198,30 @@ The current release has the following limits:
 - AI Report Generator does not generate full reports, data sources, parameters, or other report items.
 - The agent does not invent data fields. The bound data source must already expose the required tables and columns.
 - A configurable retry limit caps how many times the agent revises an invalid item before surfacing an error.
+
+## How It Works: Tools, Schema, and Validation
+
+The **AI Report Generator** is built on an agentic loop powered by `Microsoft.Extensions.AI` function tools. The agent has access to a small, focused tool surface that lets it inspect the current report and craft a valid item definition without inventing schema or data:
+
+| Tool | Purpose |
+|------|---------|
+| `ResolveMinimalSchemaSet` | Returns the JSON Schemas for one or more Telerik Reporting model types and recursively pulls in the schemas of their required, non-polymorphic property types. The agent calls this first to learn the shape of the item it must produce. |
+| `GetItemGuidance` | Returns curated, item-specific authoring guidance (for example, for `Graph`, `BarChart`, `LineChart`, `RadialGauge`, or `LinearGauge`) so the agent applies recommended defaults and avoids common pitfalls. |
+| `GetSkill` | Returns cross-cutting authoring skills that cover concerns such as [expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties), [conditional formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting), [bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), [aggregates](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions), and [sorting and filtering](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting). The agent loads only the skills relevant to the user's intent. |
+| `GetDataSources` | Returns the data sources defined on the current report along with their field names and types. The agent calls this before writing any field expression so it never invents tables or columns. |
+| `ValidateDefinitionDeep` | Validates the crafted JSON item definition in two stages: first against the JSON Schema for the given type, then by deserializing the definition into a live report item. The agent explicitly calls this tool after producing a candidate definition and receives any errors in natural language. It then revises the JSON and retries until both stages pass or a configured retry limit is reached. |
+
+After the agent crafts a candidate item, it calls `ValidateDefinitionDeep` to check the definition. If validation fails, the agent receives the errors in natural language and revises the JSON. This cycle repeats until the item passes both the schema check and deserialization, or the configured retry limit is reached.
+
+The transient JSON Schemas are generated on demand through reflection over the current report item model and are not versioned. After you accept the crafted item JSON, the Web Report Designer deserializes it into the standard Telerik Report Definition (TRDX) model and applies it through the same design-time logic that backs manual edits, including support for undo and redo.
+
+The schemas conform to [JSON Schema Draft 2020-12](https://json-schema.org/draft/2020-12) and follow conventions that maximize compatibility with language models:
+
+- Each property declares `type`, a natural-language `description`, and, where relevant, `enum`, `default`, `examples`, `minimum`, `maximum`, or `format`.
+- Required and optional properties are listed explicitly through `required` arrays.
+- Recommended value ranges and `do` and `do-not` guidance are encoded directly in the property descriptions.
+- Nested structures such as series, categories, axes, ranges, labels, and data bindings are expressed as plain nested objects and arrays in a single schema document.
+- Complex constructs such as `$ref` graphs, `allOf`, `anyOf`, and `not` are avoided. The `oneOf` keyword is used sparingly when a true union of small shapes is needed.
 
 ## See Also
 

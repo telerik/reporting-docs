@@ -31,7 +31,7 @@ The two tools that automatically download your Telerik license key file are the 
 
 To install your Telerik License key by using the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), start the application. It automatically downloads the `telerik-license.txt` license key file to your home directory:
 
-- On Windows: `%AppData%\Telerik` or `C:\Users\[windows_username]\%AppData%\Roaming\Telerik`.
+- On Windows: `%AppData%\Telerik\` or `C:\Users\[windows_username]\AppData\Roaming\Telerik\`.
 - On Mac/Linux: `~/.telerik/`.
 
 #### Using the Visual Studio Extensions

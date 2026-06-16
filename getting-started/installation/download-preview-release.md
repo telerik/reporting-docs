@@ -5,6 +5,7 @@ description: This article describes the Telerik Reporting Preview release and ho
 slug: installation-telerik-reporting-preview-releases
 tags: using,the,hotfix, lib, latest, internal, build, preview
 published: True
+hidden: True
 position: 8
 reportingArea: General
 ---

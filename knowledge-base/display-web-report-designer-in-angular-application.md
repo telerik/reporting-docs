@@ -38,47 +38,33 @@ The Telerik Web Report Designer is a jQuery-based HTML5/JavaScript/CSS3 widget t
 
 To follow the steps from this tutorial, you must have:
 
-- A running ASP.NET application that hosts both a [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) and a [Telerik Report Designer REST service]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#setting-up-the-report-designer-rest-service).
 - An Angular application where you want to embed the designer.
+
+>note This article uses the public Reporting demos services so you can quickly try a proof of concept. For production use or full control, host your own [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) and [Telerik Report Designer REST service]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#setting-up-the-report-designer-rest-service).
 
 ## Solution
 
 Follow these steps to integrate the Telerik Web Report Designer in your Angular application:
 
-1. Add references to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites) in your main HTML page (`index.html`). Replace `https://localhost:5000` with your actual ASP.NET application URL:
-
-	````HTML
-<head>
-		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-{{jqueryversion}}.min.js"></script>
-		<!-- Kendo UI for jQuery -->
-		<script src="https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js"></script>
-		<!-- Telerik Reporting resources -->
-		<script src="https://localhost:5000/api/reports/resources/js/telerikReportViewer"></script>
-		<script src="https://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner"></script>
-	</head>
-````
-
-
 1. Generate a new Angular component for the report designer:
 
-	````bash
+	```bash
 $ ng generate component report-designer
-````
+```
 
 
 1. In your `report-designer.component.html`, add a container element for the designer:
 
-	````HTML
+	```HTML
 <div id="webReportDesigner"></div>
-````
+```
 
 
-1. In your `report-designer.component.js(ts)`, declare jQuery and initialize the designer:
+1. In your `report-designer.component.js(ts)`, dynamically load all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites), then initialize the designer:
 
 	* JavaScript
 
-	````JavaScript
+	```JavaScript
 import { Component, OnInit } from '@angular/core';
 
 	@Component({
@@ -87,24 +73,50 @@ import { Component, OnInit } from '@angular/core';
 	  styleUrls: ['./report-designer.component.css']
 	})
 	export class ReportDesignerComponent {
+	  serviceUrl = 'https://demos.telerik.com/reporting/api/reportdesigner/';
+	  // For local services, use, for example: http://localhost:5000/api/reportdesigner/
+
 	  constructor() {}
 
 	  ngOnInit() {
-	    $("#webReportDesigner").telerik_WebReportDesigner({
-	      serviceUrl: "https://localhost:5000/api/reportdesigner/", // Replace with your service URL
-	      report: "SampleReport.trdp" // Replace with your report file
-	    }).data("telerik_WebDesigner");
+	    this.loadScripts().then(() => {
+	      $("#webReportDesigner").telerik_WebReportDesigner({
+	        serviceUrl: this.serviceUrl,
+	        report: "Product Line Sales.trdp"
+	      }).data("telerik_WebDesigner");
+	    });
+	  }
+
+	  loadScripts() {
+	    // For local services, use, for example:
+	    // http://localhost:5000/api/reports/resources/js/telerikReportViewer
+	    // http://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner
+	    return this.loadScript('https://code.jquery.com/jquery-{{jqueryversion}}.min.js')
+	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js'))
+	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/telerikReportViewer.min.js'))
+	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.min.js'));
+	  }
+
+	  loadScript(src) {
+	    return new Promise((resolve, reject) => {
+	      const script = document.createElement('script');
+	      script.type = 'text/javascript';
+	      script.src = src;
+	      script.onload = resolve;
+	      script.onerror = reject;
+	      document.body.appendChild(script);
+	    });
 	  }
 	}
-````
+```
 
 
 	* TypeScript
 
-	````TypeScript
+	```TypeScript
 import { Component, OnInit } from '@angular/core';
 
-	declare var $: any;
+	declare const $: any;
 
 	@Component({
 	  selector: 'app-report-designer',
@@ -112,16 +124,42 @@ import { Component, OnInit } from '@angular/core';
 	  styleUrls: ['./report-designer.component.css']
 	})
 	export class ReportDesignerComponent implements OnInit {
+	  private readonly serviceUrl = 'https://demos.telerik.com/reporting/api/reportdesigner/';
+	  // For local services, use, for example: http://localhost:5000/api/reportdesigner/
+
 	  private designer: any;
 
 	  ngOnInit(): void {
-	    this.designer = $("#webReportDesigner").telerik_WebReportDesigner({
-	      serviceUrl: "https://localhost:5000/api/reportdesigner/", // Replace with your service URL
-	      report: "SampleReport.trdp" // Replace with your report file
-	    }).data("telerik_WebDesigner");
+	    this.loadScripts().then(() => {
+	      this.designer = $("#webReportDesigner").telerik_WebReportDesigner({
+	        serviceUrl: this.serviceUrl,
+	        report: 'Product Line Sales.trdp'
+	      }).data("telerik_WebDesigner");
+	    });
+	  }
+
+	  private loadScripts(): Promise<void> {
+	    // For local services, use, for example:
+	    // http://localhost:5000/api/reports/resources/js/telerikReportViewer
+	    // http://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner
+	    return this.loadScript('https://code.jquery.com/jquery-{{jqueryversion}}.min.js')
+	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js'))
+	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/telerikReportViewer.min.js'))
+	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.min.js'));
+	  }
+
+	  private loadScript(src: string): Promise<void> {
+	    return new Promise((resolve, reject) => {
+	      const script = document.createElement('script');
+	      script.type = 'text/javascript';
+	      script.src = src;
+	      script.onload = () => resolve();
+	      script.onerror = () => reject(new Error(`Failed to load script: ${src}`));
+	      document.body.appendChild(script);
+	    });
 	  }
 	}
-````
+```
 
 
 ## Additional Resources
@@ -130,10 +168,10 @@ import { Component, OnInit } from '@angular/core';
 
 To run the example:
 
-````bash
+```bash
 $ npm install
 $ npm start
-````
+```
 
 ## Known Issues
 

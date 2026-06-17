@@ -55,7 +55,7 @@ When using reports that contain [WebServiceDataSource components](slug:telerikre
 	- [Request to '/api/reports/.../{documentId}' Is Not Authorized](slug:why-get-document-request-is-unauthorized)
 	- [Authorization in REST Service Controller](slug:reporting-rest-service-authorization)
 
-* All the users of the Web Report Designer REST Service have permissions for performing both destructive and non-destructive operations (`Read`/`Write`/`Delete`) on the designer's storage files and folders. It is the developer's responsibility to create a user- or role-based validation tier before performing destructive operations to protect the designer's storage.
+* By default, any user who can reach the Web Report Designer REST Service endpoint can perform both destructive and non-destructive operations (`Read`/`Write`/`Delete`) on the designer storage files and folders. It is the developer's responsibility to implement a user- or role-based authorization/validation layer before allowing destructive operations, to protect the designer storage.
 
 ### Allowing External Assemblies and Types when Extending the Reporting Engine
 

@@ -131,7 +131,7 @@ Export formats let users save the resulting report in the format that fits their
 * Microsoft Word and Microsoft Excel — for editable output that downstream processes or end users can modify.
 * Microsoft PowerPoint — for presentation-ready reports.
 * Image formats such as PNG and TIFF — for embedding report output in other applications.
-* CSV — for raw data export from tabular reports.
+* CSV 
 
 ## How to Choose the Right Starting Point
 
@@ -146,7 +146,7 @@ Start with the workflow that matches your role:
 
 ## About the Demos
 
-The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provide live examples of report viewers, report designers, and reporting scenarios. They are a good starting point when you want to see how the product behaves before you integrate it into an application.
+The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provide live examples of reporting scenarios and the web report designer. They are a good starting point when you want to see how the product behaves before you integrate it into an application.
 
 If you install Telerik Reporting by using the [MSI installer or the Control Panel](slug:telerikreporting/installation), sample reports are also available as Visual Studio projects. The examples cover multiple supported platforms. To open the projects:
 

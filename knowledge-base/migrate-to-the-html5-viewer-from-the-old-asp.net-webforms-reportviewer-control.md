@@ -55,7 +55,7 @@ Rendered reports are stored in the configured cache, allowing the service to reu
   
 ## Notes
 
-- To troubleshoot the HTML5 Viewer, use [Fiddler Jam](https://jam.getfiddler.com/) or another proxy tool to inspect requests to the Reporting REST Service, verify that URLs are correct, and confirm that relative paths resolve as expected.
+- To troubleshoot the HTML5 Viewer, use [Fiddler Everywhere Reporter]( https://www.telerik.com/fiddler/fiddler-everywhere-reporter) or another proxy tool to inspect requests to the Reporting REST Service, verify that URLs are correct, and confirm that relative paths resolve as expected.
  
 - Relative paths may need adjustment depending on how the application is hosted. See [ASP.NET Web Project Paths](https://docs.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN) for guidance.
 

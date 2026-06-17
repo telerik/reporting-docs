@@ -98,7 +98,7 @@ public async Task<string> RenderReportAsync()
 ```
 ```VB.NET
 'Use the wrapper in your code like this:
-Public FuvVB.NETRenderReportAsync() As Task(Of String)
+Public Function RenderReportAsync() As Task(Of String)
     Dim asyncWrappers = New AsyncWrappers()
  
     Console.WriteLine("Rendering started on: {0}", Thread.CurrentThread.ManagedThreadId)

@@ -12,11 +12,11 @@ reportingArea: General
 
 # SubReport Item Overview
 
-The Telerik Reporting SubReport item embeds a separate report definition inside a main report. Use it when the nested content needs its own layout, report source, parameters, or reusable design.
+The Telerik Reporting SubReport item embeds a separate report definition inside a main report. Use it when the nested content needs its own layout, data source, parameters, or reusable design.
 
 In this article, *main report* means the parent report that contains the SubReport item, and *subreport* means the child report loaded through the `ReportSource` property of that item.
 
-At design time, the SubReport item acts as a container in the main report. Each subreport can use different data and parameters, which lets you combine content such as product lists, sales summaries, and detail records in one document.
+At design time, the SubReport item acts as a placeholder in the main report. Each subreport can use different data and parameters, which lets you combine content such as product lists, sales summaries, and detail records in one document.
 
 ![SubReport report item in the Report Designer](images/Subreport.png)
 
@@ -25,7 +25,7 @@ At design time, the SubReport item acts as a container in the main report. Each 
 Use a SubReport when you need to:
 
 - Reuse the same child report in multiple parent reports.
-- Show nested content that has its own report source, parameters, or layout.
+- Show nested content that has its own data source, parameters, or layout.
 - Build a master-detail report in which each parent row renders a child report.
 
 If your goal is to create groups dynamically inside a Table or Crosstab, configure row groups or column groups in that data item instead of using a SubReport. A SubReport embeds another report definition; it does not create dynamic grouping inside a table data region.
@@ -149,8 +149,6 @@ Use the following resources to continue working with SubReport items:
 - [Knowledge Base Section](/knowledge-base)
 
 ## See Also
-
-Use the following resources for broader Telerik Reporting guidance:
 
 - [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 - [Reporting Forums](https://www.telerik.com/forums/reporting)

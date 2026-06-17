@@ -34,7 +34,7 @@ The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/cont
 
 You can install Telerik Reporting by using the `.msi` file for a full local installation. The installer adds Telerik Reporting to your computer under `Program Files/Progress`, creates the required virtual folders and projects, and provides all files needed for development with Telerik Reporting.
 
-The MSI installation wizard installs the product by default in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder on 32-bit machines, or in the `C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}` folder on 64-bit machines.
+The MSI installation wizard installs the product by default in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder. Only the ODBC drivers (optional) are installed in 'C:\Program Files (x86)\Progress'.
 
 The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine GAC for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
 
@@ -46,7 +46,6 @@ During the MSI installation process, note the following:
 * The latest package available for download has all updates and hotfixes applied. You do not need to update it further after installation.
 * The MSI installation does not overwrite previous Telerik Reporting installations unless the new installation is the same version. The installer keeps your existing installation and places new files in a separate folder.
 * The **Downloads** page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [**General Feedback**](https://www.telerik.com/account/support-tickets/general-feedback) thread.
-* To access the latest Telerik Reporting internal builds, log into your Telerik account and navigate to **Latest Internal Build** under **Downloads**. For internal builds from earlier releases, select the respective Telerik Reporting version.
 
 ### MSI Installation
 
@@ -79,7 +78,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 ## Using NuGet Packages
 
-You can add Telerik Reporting to a project by installing NuGet packages from the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting REST WebAPI-based service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview). You can also use them with the standard .NET 4.6.1 framework.
+You can add Telerik Reporting to a project by installing NuGet packages from the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting REST WebAPI-based service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview). You can also use them with the standard .NET 4.6.2+ framework.
 
 >note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
 

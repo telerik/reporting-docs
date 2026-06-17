@@ -12,7 +12,7 @@ reportingArea: General
 
 # Page Functions Overview
 
-Page functions are expression functions that work with the physical pages produced during report rendering. Use them when you need page-level values such as the current page number, the total page count, or a page-specific aggregate in the page header or page footer.
+Page functions are expression functions that work with the pages produced during report rendering. Use them when you need page-level values such as the current page number, the total page count, or a page-specific aggregate in the page header or page footer.
 
 >note Page aggregates should be used in page sections only (Page Header, Page Footer). Page aggregates are supported in page oriented formats only: IMAGE (TIFF, EMF, BMP, JPEG, GIF, Print), PDF, PPTX, DOCX, RTF, XPS.
 

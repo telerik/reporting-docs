@@ -109,9 +109,9 @@ import { Component, OnInit } from '@angular/core';
 ```
 
 
-* TypeScript
+	* TypeScript
 
-```TypeScript
+	```TypeScript
 import { Component, OnInit } from '@angular/core';
 
 	declare const $: any;

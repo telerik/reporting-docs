@@ -1,8 +1,8 @@
 ---
-title: Upgrade your ASP.NET WebForms ReportViewer control to the new HTML5 Report Viewer
-description: "Learn how to Replace the old ASP.NET WebForms ReportViewer control with the HTML5 WebForms Report Viewer."
+title: Migrate from the ASP.NET WebForms ReportViewer to the HTML5 Report Viewer
+description: "Step-by-step guide to replacing the deprecated ASP.NET WebForms ReportViewer with the HTML5 Web Forms Report Viewer in Telerik Reporting."
 type: how-to
-page_title: Switch to using the HTML5 Viewer instead of the old ASP.NET WebForms ReportViewer control
+page_title: ASP.NET WebForms ReportViewer to HTML5 Report Viewer Migration
 slug: migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control
 res_type: kb
 ---
@@ -28,21 +28,19 @@ res_type: kb
   
 ## Description
 
-> The **ASP.NET ReportViewer control is obsolete** as of [Telerik Reporting Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)). 
+>warning The ASP.NET WebForms ReportViewer control was declared obsolete in [Telerik Reporting Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)) and was removed from the product distribution starting with the [2024 Q4 release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112). Telerik strongly recommends migrating to the [HTML5 Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview), which includes the latest features, performance improvements, and security updates.
+  
+The HTML5 Report Viewer, introduced in Q3 2013, is suitable for any web application and receives ongoing development. Use the HTML5 Viewer from the latest available Telerik Reporting version.  
+  
+The HTML5 Viewer can display reports created by both existing [Report Designers](slug:telerikreporting/designing-reports/report-designer-tools/overview). See the **How It Works** section in the [HTML5 Report Viewer overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and [How to Set ReportSource for Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers#for-report-viewers-operating-via-telerik-reporting-services) for background on how the viewer resolves and displays reports.
+  
+The HTML5 Viewer is a client-side HTML/JavaScript/CSS widget that can be added to any web application. For .NET projects, MVC and WebForms wrappers simplify viewer configuration. The wrappers render the same JavaScript object in the page as the standalone widget.  
 
-> Starting with the [2024 Q4](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112) release, the ASP.NET WebForms Report Viewer will no longer be distributed with Telerik Reporting. We strongly recommend using its successor - the [HTML5 Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview), which includes the latest features, performance enhancements, and security improvements offered by both Microsoft and Telerik.
+The HTML5 Viewer communicates with a Reporting REST Service that processes and renders reports on the server. The viewer exchanges lightweight messages with the service; full data or report instances are never transferred across the wire.   
   
-In **Q3 2013** we introduced the HTML5 Report Viewer which is suitable for any web application and it will be further developed. It is recommended to use the HTML5 Viewer of the latest available Telerik Reporting version.  
+The service includes default report resolvers that resolve the viewer's `reportSource.Report` string as a `TypeReportSource` or a `UriReportSource`. You can also implement a custom report resolver to add logic for resolving a report by its string identifier. For details, see [REST Service Report Source Resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview).
   
-The HTML5 Viewer can display reports created by both existing [Report Designers](slug:telerikreporting/designing-reports/report-designer-tools/overview). Please check the *How it works* section in the overview of the [HTML5 Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and [How to: Set ReportSource for Report Viewers.](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers#for-report-viewers-operating-via-telerik-reporting-services)  
-  
-In general, it is a client-side HTML/JS/CSS based widget that can be added in any web application. For .NET projects there are MVC and WebForms wrappers to ease the configuration of the viewer, where wrappers render the same Javascript object in the page as the original widget will do.  
-
-The HTML5 Viewer can be separated from the Reporting REST service. The viewer sends short messages to get resources which are processed and rendered on the server. Whole data and/or report instances cannot be transferred in a message from the viewer to the server. It is the Reporting REST service that handles the messages and that generates/delivers the requested resources.   
-  
-The service comes with default report resolvers which attempt to resolve the viewer's *reportSource.Report* string as a **TypeReportSource** or a **UriReportSource**. You can use also a custom report resolver and add custom logic for getting a report by the received string description, and then create other type of report source object. For more details check [REST Service Report Resolver.](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview)  
-  
-Requested report are processed and rendered on the server. The service will place them in the configured cache storage and it will let you reuse the already rendered reports depending on the [service's cache settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services).  
+Rendered reports are stored in the configured cache, allowing the service to reuse already-rendered reports based on the [cache settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services).
   
 ## Solution  
   
@@ -57,10 +55,10 @@ Requested report are processed and rendered on the server. The service will plac
   
 ## Notes
 
-- The recommended troubleshooting approach for the HTML5 Viewer is to use [Fiddler Jam](https://jam.getfiddler.com/) or other proxy tool to check the requests, their responses and statuses. This will let you check requests to the Reporting REST service and if the URLs are correct, if relative paths are resolved correctly.  
+- To troubleshoot the HTML5 Viewer, use [Fiddler Everywhere Reporter]( https://www.telerik.com/fiddler/fiddler-everywhere-reporter) or another proxy tool to inspect requests to the Reporting REST Service, verify that URLs are correct, and confirm that relative paths resolve as expected.
  
-- Relative paths may need adjustment depending on how the application is hosted - [ASP.NET Web Project Paths](https://docs.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN).
+- Relative paths may need adjustment depending on how the application is hosted. See [ASP.NET Web Project Paths](https://docs.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN) for guidance.
 
 ## See Also
 
-[HTML5 Report Viewer and Reporting REST services](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services)
+- [HTML5 Report Viewer and Reporting REST Services](slug:telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services)

@@ -49,21 +49,19 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 1. Generate a new Angular component for the report designer:
 
 	```bash
-$ ng generate component report-designer
-```
+	$ ng generate component report-designer
+	```
 
 1. In your `report-designer.component.html`, add a container element for the designer:
 
 	```HTML
-<div id="webReportDesigner"></div>
-```
+	<div id="webReportDesigner"></div>
+	```
 
 1. In your `report-designer.component.js(ts)`, dynamically load all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites), then initialize the designer:
 
-	* JavaScript
-
 	```JavaScript
-import { Component, OnInit } from '@angular/core';
+	import { Component, OnInit } from '@angular/core';
 
 	@Component({
 	  selector: 'app-report-designer',
@@ -106,13 +104,9 @@ import { Component, OnInit } from '@angular/core';
 	    });
 	  }
 	}
-```
-
-
-	* TypeScript
-
+	```
 	```TypeScript
-import { Component, OnInit } from '@angular/core';
+	import { Component, OnInit } from '@angular/core';
 
 	declare const $: any;
 
@@ -157,7 +151,7 @@ import { Component, OnInit } from '@angular/core';
 	    });
 	  }
 	}
-```
+	```
 
 
 ## Additional Resources

@@ -128,7 +128,7 @@ Web viewers and web designers typically work with a reporting service that proce
 Export formats let users save the resulting report in the format that fits their workflow. Common output formats include:
 
 * PDF — for print-ready and archivable documents.
-* Microsoft Word and Microsoft Excel — for editable output that downstream processes or end users can modify.
+* Microsoft Word and Microsoft Excel
 * Microsoft PowerPoint — for presentation-ready reports.
 * Image formats such as PNG and TIFF — for embedding report output in other applications.
 * CSV 

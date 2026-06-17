@@ -55,6 +55,7 @@ liquid:
   kendosubsetversion: "2025.4.1111"
   kendothemeversion: "12.3.0"
   blazoruiversion: "13.1.0"
+  jqueryversion: "3.7.1"
   mindotnetversion: "8"
   mindotnetoutputdir: "\\bin\\Debug\\net8.0"
   dotnetversions: ".NET 8, .NET 9, .NET 10, and .NET 11 Preview 4"

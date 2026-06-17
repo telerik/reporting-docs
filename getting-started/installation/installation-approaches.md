@@ -34,7 +34,7 @@ The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/cont
 
 You can install Telerik Reporting by using the `.msi` file for a full local installation. The installer adds Telerik Reporting to your computer under `Program Files/Progress`, creates the required virtual folders and projects, and provides all files needed for development with Telerik Reporting.
 
-The MSI installation wizard installs the product by default in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder. Only the ODBC drivers (optional) are installed in 'C:\Program Files (x86)\Progress'.
+The MSI installation wizard installs the product by default in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder.
 
 The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine GAC for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
 

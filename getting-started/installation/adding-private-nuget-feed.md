@@ -145,7 +145,7 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
     * [`dotnet nuget remove source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-remove-source)
 1. Check if you have any credentials stored in `%AppData%\NuGet\Nuget.Config`. If so, remove them. Here is an example of how your `NuGet.Config` file can look like:
 
-   ````XML 
+   ```XML 
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
       <packageSources>
@@ -159,7 +159,7 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
       </TelerikOnlineFeed>
       </packageSourceCredentials>
    </configuration>
-   ````
+   ```
 1. Try to reset the Visual Studio user data by [forcing NuGet to ask for authentication](https://stackoverflow.com/questions/43550797/how-to-force-nuget-to-ask-for-authentication-when-connecting-to-a-private-feed).
 1. Restart Visual Studio.
 1. Add the Telerik NuGet package source again through Visual Studio or .NET CLI.

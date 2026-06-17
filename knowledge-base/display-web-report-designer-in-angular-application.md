@@ -40,7 +40,7 @@ To follow the steps from this tutorial, you must have:
 
 - An Angular application where you want to embed the designer.
 
->note This article uses the public Reporting demos services so you can quickly try a proof of concept. For production use or full control, host your own [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) and [Telerik Report Designer REST service]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}#setting-up-the-report-designer-rest-service).
+>note This article uses the public Reporting demos services so you can quickly try a proof of concept. For production use or full control, host your own [Telerik Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) and [Telerik Report Designer REST service](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications#setting-up-the-report-designer-rest-service).
 
 ## Solution
 
@@ -49,7 +49,7 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 1. Generate a new Angular component for the report designer:
 
 	```bash
-	$ ng generate component report-designer
+	ng generate component report-designer
 	```
 
 1. In your `report-designer.component.html`, add a container element for the designer:
@@ -58,7 +58,7 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	<div id="webReportDesigner"></div>
 	```
 
-1. In your `report-designer.component.js(ts)`, dynamically load all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites), then initialize the designer:
+1. In your `report-designer.component.js(ts)`, dynamically load all required [Telerik Web Report Designer resources](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#prerequisites), then initialize the designer:
 
 	```JavaScript
 	import { Component, OnInit } from '@angular/core';
@@ -69,8 +69,8 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	  styleUrls: ['./report-designer.component.css']
 	})
 	export class ReportDesignerComponent {
-	  serviceUrl = 'https://demos.telerik.com/reporting/api/reportdesigner/';
 	  // For local services, use, for example: http://localhost:5000/api/reportdesigner/
+	  serviceUrl = 'https://demos.telerik.com/reporting/api/reportdesigner/';
 
 	  constructor() {}
 
@@ -84,9 +84,6 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	  }
 
 	  loadScripts() {
-	    // For local services, use, for example:
-	    // http://localhost:5000/api/reports/resources/js/telerikReportViewer
-	    // http://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner
 	    return this.loadScript('https://code.jquery.com/jquery-{{jqueryversion}}.min.js')
 	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js'))
 	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/telerikReportViewer.min.js'))
@@ -116,8 +113,8 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	  styleUrls: ['./report-designer.component.css']
 	})
 	export class ReportDesignerComponent implements OnInit {
-	  private readonly serviceUrl = 'https://demos.telerik.com/reporting/api/reportdesigner/';
 	  // For local services, use, for example: http://localhost:5000/api/reportdesigner/
+	  private readonly serviceUrl = 'https://demos.telerik.com/reporting/api/reportdesigner/';
 
 	  private designer: any;
 
@@ -131,9 +128,6 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 	  }
 
 	  private loadScripts(): Promise<void> {
-	    // For local services, use, for example:
-	    // http://localhost:5000/api/reports/resources/js/telerikReportViewer
-	    // http://localhost:5000/api/reportdesigner/designerresources/js/webReportDesigner
 	    return this.loadScript('https://code.jquery.com/jquery-{{jqueryversion}}.min.js')
 	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/webReportDesigner.kendo.min.js'))
 	      .then(() => this.loadScript('https://reporting.cdn.telerik.com/{{buildversion}}/js/telerikReportViewer.min.js'))
@@ -161,20 +155,19 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 To run the example:
 
 ```bash
-$ npm install
-$ npm start
+npm install && npm start
 ```
 
 ## Known Issues
 
 Keep the following limitations in mind when using the Telerik Web Report Designer in Angular:
 
-1. Theming limitations—The [Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) does not support custom theming. It uses a customized version of the Kendo SASS Default theme that loads automatically. If your Angular application uses a different Kendo theme, style conflicts may occur between the two themes.
+1. Theming limitations—The [Telerik Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) does not support custom theming. It uses a customized version of the Kendo SASS Default theme that loads automatically. If your Angular application uses a different Kendo theme, style conflicts may occur between the two themes.
 
 1. Duplicate CSS resources—The Web Report Designer automatically loads its required CSS styles each time it is initialized, without checking if they are already present. This can result in duplicate `<style>` tags in your page's `<head>`. If you need to reinitialize the designer multiple times in your application, you may need to manually remove duplicate style elements. See the demo project's `designer.component.ts` file for implementation details.
 
-3. Angular Report Viewer compatibility—The Telerik Web Report Designer cannot coexist with the [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) in the same Angular application. While the designer includes its own built-in report viewer, if you need a standalone report viewer component, use either the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) or the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) instead.
+1. Angular Report Viewer compatibility—The Telerik Web Report Designer cannot coexist with the [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) in the same Angular application. While the designer includes its own built-in report viewer, if you need a standalone report viewer component, use either the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) or the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) instead.
 
 ## See Also
 
-* [Test whether Web Report Designer Service is Responding]({%slug test-web-report-designer-service%})
+* [Test whether Web Report Designer Service is Responding](slug:test-web-report-designer-service)

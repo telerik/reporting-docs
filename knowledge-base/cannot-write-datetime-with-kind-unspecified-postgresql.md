@@ -2,7 +2,7 @@
 title: Cannot Write DateTime with Kind=Unspecified to PostgreSQL
 description: "Using DateTime Report Parameters in expressions leads to errors when using the Npgsql data provider with version 6.0 or higher"
 type: troubleshooting
-page_title: DateTime Parameters throw errors when using Npgsql data provider
+page_title: DateTime Parameters throw errors when using the Npgsql data provider
 slug: cannot-write-datetime-with-kind-unspecified-postgresql
 tags: npgsql, postgresql
 ticketid: 1603919
@@ -28,10 +28,9 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
-I have a PostgreSQL database and I am using the [Npgsql](https://www.npgsql.org/) data provider to connect to said database. I filter the query by *date* and also have a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) of type `DateTime` that I pass to the [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) component. On previewing the report, there are red error messages in place of my data items.
+I have a PostgreSQL database, and I am using the [Npgsql](https://www.npgsql.org/) data provider to connect to said database. I filter the query by *date* and also have a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) of type `DateTime` that I pass to the [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) component. On previewing the report, there are red error messages in place of my data items.
 
 ## Steps to Reproduce
 
@@ -49,11 +48,13 @@ Starting with version 6.0 of the Npgsql data provider, UTC timestamps have been 
 
 ## Suggested Workarounds
 
-Since the Npgsql data provider now expects a UTC value, we can work around the problem by calling the [DateTime.ToUniversalTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.touniversaltime) method on the `Value` property of the DateTime Report Parameter.
+Since the Npgsql data provider now expects a UTC value, we can work around the problem by calling the [DateTime.ToUniversalTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.touniversaltime) method on the `Value` property of the DateTime Report Parameter 'MyDateTimeParameter'.
 
 For example:
 
-`= Parameters.Parameter1.Value.ToUniversalTime()`
+```Expression
+= Parameters.MyDateTimeParameter.Value.ToUniversalTime()`
+```
 
 ## See Also
 

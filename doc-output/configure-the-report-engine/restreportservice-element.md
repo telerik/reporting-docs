@@ -25,14 +25,8 @@ The `restReportService` element specifies the configuration settings for the Rep
 
 For example, initializing the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this:
 
-```C#
-configurationInstance = new ConfigSectionReportServiceConfiguration
-{
-	HostAppId = "Html5DemoApp",
-	ReportSourceResolver = new UriReportSourceResolver("PATH_TO_REPORTS_FOLDER")
-		.AddFallbackResolver(new TypeReportSourceResolver());
-};
-```
+{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ConfigSectionReportServiceConfiguration}}
+{{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ConfigSectionReportServiceConfiguration}}
 
 >note The initialization block does not have the [Storage](/api/Telerik.Reporting.Services.IReportServiceConfiguration#Telerik_Reporting_Services_IReportServiceConfiguration_Storage) property set, because it would override the values obtained from the configuration file.
 

@@ -31,11 +31,7 @@ To enable AI Report Generator, follow these steps:
 
 - Register the agent services in `Program.cs`. You must provide the `createClientCallback` implementation:
 
-	```CSharp
-	builder.Services.AddAIReportGenerator(
-				createClientCallback: GetChatClient
-	);
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=WRD_AddAIReportGenerator}}
 
 - Provide a custom `IChatClient` factory implementation for the `createClientCallback`.
 
@@ -43,101 +39,43 @@ To enable AI Report Generator, follow these steps:
 
 	- **Azure OpenAI**:
 
-		```CSharp
-		static IChatClient GetChatClient(IConfiguration configuration)
-		{
-			const string aiClientConfigSection = "telerikReporting:AIReportGenerator";
-			var aiClientCreds = configuration[$"{aiClientConfigSection}:credential"];
-			var endpoint = configuration[$"{aiClientConfigSection}:endpoint"];
-			var model = configuration[$"{aiClientConfigSection}:model"];
-
-			return new Azure.AI.OpenAI.AzureOpenAIClient(new Uri(endpoint),
-						new ApiKeyCredential(aiClientCreds))
-					.GetChatClient(model)
-					.AsIChatClient();
-		}
-		```
+		{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=AzureOpenAI_IChatClientImplementation}}
 
 	- **OpenAI**:
 
-		```CSharp
-		static IChatClient GetChatClient(IConfiguration configuration)
-		{
-			const string aiClientConfigSection = "telerikReporting:AIReportGenerator";
-			var aiClientCreds = configuration[$"{aiClientConfigSection}:credential"];
-			var model = configuration[$"{aiClientConfigSection}:model"];
-
-			return new OpenAI.Chat.ChatClient(model, aiClientCreds).AsIChatClient();
-		}
-		```
+		{{source=CodeSnippets\Blazor\Docs\WrdAiReportGenerator.cs region=OpenAI_IChatClientImplementation}}
 
 - Map the agent endpoint in `Program.cs`:
 
-	```CSharp
-	app.MapControllers();
-	app.UseAIAgentServices();
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=MapAgentEndpoint}}
 
 	`UseAIAgentServices` maps the agent SignalR hub at `/wrd-ai-report-generator`. The Web Report Designer client connects to this endpoint when the **AI Report Generator** button is invoked. If the host removes this registration, the **AI Report Generator** button does not appear in the designer.
 
 	To host the hub at a custom path, for example when the application is deployed under a virtual application path, pass the path to `UseAIAgentServices`:
 
-	```CSharp
-	app.UseAIAgentServices("/my-app/wrd-ai-report-generator");
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseAIAgentServices}}
 
 	When you override the hub path, set `reportDesignerHubUrl` in `reportGeneratorHubOptions` to the same path "/my-app/wrd-ai-report-generator" so that the Web Report Designer client connects to the correct endpoint:
 
-	```TypeScript
-	reportGeneratorHubOptions: {
-		reportDesignerHubUrl: "/my-app/wrd-ai-report-generator"
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptions}}
 
 	To require authorization for the **AIAgentServices** SignalR endpoint, call `.RequireAuthorization()` on `UseAIAgentServices`. This is sufficient for **cookie-based authentication**:
 
-	```C#
-	app.UseAIAgentServices().RequireAuthorization();
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseAIAgentServicesRequireAuthorization}}
 
 	The **bearer token authentication** requires additional back-end configuration: see [Authentication and authorization in ASP.NET Core SignalR: Bearer token authentication](https://learn.microsoft.com/en-us/aspnet/core/signalr/authn-and-authz?view=aspnetcore-10.0#bearer-token-authentication). For this scenario, you must also configure the `reportGeneratorHubOptions` property of the Web Report Designer. The property accepts an `accessTokenFactory` callback that returns a `string` or `Promise<string>`.
 
 	The following example reads the token from the `localStorage`:
 
-	```TypeScript
-	reportGeneratorHubOptions: {
-		accessTokenFactory: () => localStorage.getItem("access_token") ?? ""
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptionsLocalStorage}}
 
 	The following example retrieves the token asynchronously from the endpoint "/auth/token":
 
-	```TypeScript
-	reportGeneratorHubOptions: {
-		accessTokenFactory: () => fetch("/auth/token").then(r => r.text())
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptionsEndpoint}}
 
 As an alternative to passing delegates directly, call the `AddAIReportGenerator(IConfiguration)` overload to read the options from a `telerikReporting:AIReportGenerator` section in `appsettings.json`:
 
-```JSON
-{
-  "telerikReporting": {
-    "AIReportGenerator": {
-      "friendlyName": "MicrosoftExtensionsAzureOpenAI",
-      "credential": "YOUR_API_KEY",
-      "endpoint": "https://your-azure-openai-endpoint.cognitiveservices.azure.com",
-      "model": "gpt-4.1-mini",
-      "Store_SessionIdleTimeoutMinutes": 30,
-      "EnableConversationLogging": false,
-      "ConversationLogPath": null,
-      "ShowTokenUsage": false,
-      "RequestTimeout": 60,
-      "RequestMaxTokens": 100000
-    }
-  }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\WrdAiReportGenerator.json region=telerikReportingAIReportGenerator}}
 
 The available options are:
 
@@ -162,19 +100,15 @@ To restrict who can invoke AI Report Generator, gate the `Commands_AIAgent_Use` 
 
 ### Client-side Configuration
 
-The Web Report Designer requires `SignalR` version 10 or newer to run the AI Report Generator. For example, you may reference it from the official CDN:
+The Web Report Designer requires `SignalR` version 10 or newer to run the AI Report Generator. For example, you may reference it from the SignalR:
 
-```HTML
-<script src="https://unpkg.com/@microsoft/signalr@10.0.0/dist/browser/signalr.js"></script>
-```
+{{source=CodeSnippets\Blazor\Docs\html\WrdAiReportGenerator.html region=SignalR_OfficialCdn}}
 
 The **AI Report Generator** button does not appear in the designer without the SignalR reference.
 
 Add the minimum required Kendo UI for jQuery set from our CDN if your app is not already using it:
 
-```HTML
-<script src="https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.kendo.min.js"></script>
-```
+{{source=CodeSnippets\Blazor\Docs\html\WrdAiReportGenerator.html region=KendoUIforJQuery_ReportingCdn}}
 
 ## Data Source Usage
 

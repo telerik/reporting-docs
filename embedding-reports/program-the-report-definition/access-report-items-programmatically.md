@@ -36,31 +36,12 @@ In the examples below we show how to access a report item from within the report
 
 If we are in the context of a WinForm or WPF Window and we need to access an item from the Report that is shown in a ReportViewer control with an embedded Reporting engine, we can proceed directly following the report hierarchy. We use a report source object of the same type as the report source assigned to the ReportViewer control. Consider the following code:
 
-```C#
-protected void Button1_Click(object sender, EventArgs e)
-{
-	Telerik.Reporting.InstanceReportSource instanceReportSource = (Telerik.Reporting.InstanceReportSource)this.reportViewer1.ReportSource;
-	Telerik.Reporting.Report report = (Telerik.Reporting.Report)instanceReportSource.ReportDocument;
-	Telerik.Reporting.TextBox txt = report.Items.Find("productNameDataTextBox", true)[0] as Telerik.Reporting.TextBox;
-}
-```
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=AccessReportItemFromApp}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=AccessReportItemFromApp}}
 
 ## Access report fields from a Table item
 
 You can reference the report fields from a table item easily using the Report API hierarchy. Consider the following code:
 
-```C#
-private void tableTextBox_ItemDataBinding(object sender, EventArgs eventArgs)
-{
-	//get the textbox from the sender object
-	Telerik.Reporting.Processing.TextBox textBox = (Telerik.Reporting.Processing.TextBox)sender;
-	//get the table object
-	Telerik.Reporting.Processing.Table table = (Telerik.Reporting.Processing.Table)textBox.Parent;
-	//get the detail section
-	Telerik.Reporting.Processing.DetailSection detail = (Telerik.Reporting.Processing.DetailSection)table.Parent;
-	//get the raw value from the Report datasource directly
-	textBox.Value = detail.DataObject["Data"];
-}
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=AccessTableFieldFromDataBinding}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ProgrammaticReportCreationSnippets.vb region=AccessTableFieldFromDataBinding}}

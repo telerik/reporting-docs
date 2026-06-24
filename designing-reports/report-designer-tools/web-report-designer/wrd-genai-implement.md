@@ -14,7 +14,7 @@ reportingArea: WRDHTML5, WRDBlazorWrapper
 
 The article explains how to configure the **AI Report Generator** in the Web Report Designer embedded in your Reporting web application.
 
-For information on the AI Report Generator usage refer to the article [AI Report Generator](slug:wrd-genai-graph-gauge-design).
+For information on the AI Report Generator usage, refer to the article [AI Report Generator](slug:wrd-genai-graph-gauge-design).
 
 > note AI Report Generator for `Graph` and `Gauge` items is available starting with the `2026 Q2 (20.1.26.615)` Telerik Reporting release.
 
@@ -31,11 +31,7 @@ To enable AI Report Generator, follow these steps:
 
 - Register the agent services in `Program.cs`. You must provide the `createClientCallback` implementation:
 
-	```CSharp
-	builder.Services.AddAIReportGenerator(
-				createClientCallback: GetChatClient
-	);
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=WRD_AddAIReportGenerator}}
 
 - Provide a custom `IChatClient` factory implementation for the `createClientCallback`.
 
@@ -43,101 +39,43 @@ To enable AI Report Generator, follow these steps:
 
 	- **Azure OpenAI**:
 
-		```CSharp
-		static IChatClient GetChatClient(IConfiguration configuration)
-		{
-			const string aiClientConfigSection = "telerikReporting:AIReportGenerator";
-			var aiClientCreds = configuration[$"{aiClientConfigSection}:credential"];
-			var endpoint = configuration[$"{aiClientConfigSection}:endpoint"];
-			var model = configuration[$"{aiClientConfigSection}:model"];
-
-			return new Azure.AI.OpenAI.AzureOpenAIClient(new Uri(endpoint),
-						new ApiKeyCredential(aiClientCreds))
-					.GetChatClient(model)
-					.AsIChatClient();
-		}
-		```
+		{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=AzureOpenAI_IChatClientImplementation}}
 
 	- **OpenAI**:
 
-		```CSharp
-		static IChatClient GetChatClient(IConfiguration configuration)
-		{
-			const string aiClientConfigSection = "telerikReporting:AIReportGenerator";
-			var aiClientCreds = configuration[$"{aiClientConfigSection}:credential"];
-			var model = configuration[$"{aiClientConfigSection}:model"];
-
-			return new OpenAI.Chat.ChatClient(model, aiClientCreds).AsIChatClient();
-		}
-		```
+		{{source=CodeSnippets\Blazor\Docs\WrdAiReportGenerator.cs region=OpenAI_IChatClientImplementation}}
 
 - Map the agent endpoint in `Program.cs`:
 
-	```CSharp
-	app.MapControllers();
-	app.UseAIAgentServices();
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=MapAgentEndpoint}}
 
 	`UseAIAgentServices` maps the agent SignalR hub at `/wrd-ai-report-generator`. The Web Report Designer client connects to this endpoint when the **AI Report Generator** button is invoked. If the host removes this registration, the **AI Report Generator** button does not appear in the designer.
 
-	To host the hub at a custom path, for example when the application is deployed under a virtual application path, pass the path to `UseAIAgentServices`:
+	To host the hub at a custom path, for example, when the application is deployed under a virtual application path, pass the path to `UseAIAgentServices`:
 
-	```CSharp
-	app.UseAIAgentServices("/my-app/wrd-ai-report-generator");
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseAIAgentServices}}
 
 	When you override the hub path, set `reportDesignerHubUrl` in `reportGeneratorHubOptions` to the same path "/my-app/wrd-ai-report-generator" so that the Web Report Designer client connects to the correct endpoint:
 
-	```TypeScript
-	reportGeneratorHubOptions: {
-		reportDesignerHubUrl: "/my-app/wrd-ai-report-generator"
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptions}}
 
 	To require authorization for the **AIAgentServices** SignalR endpoint, call `.RequireAuthorization()` on `UseAIAgentServices`. This is sufficient for **cookie-based authentication**:
 
-	```C#
-	app.UseAIAgentServices().RequireAuthorization();
-	```
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseAIAgentServicesRequireAuthorization}}
 
 	The **bearer token authentication** requires additional back-end configuration: see [Authentication and authorization in ASP.NET Core SignalR: Bearer token authentication](https://learn.microsoft.com/en-us/aspnet/core/signalr/authn-and-authz?view=aspnetcore-10.0#bearer-token-authentication). For this scenario, you must also configure the `reportGeneratorHubOptions` property of the Web Report Designer. The property accepts an `accessTokenFactory` callback that returns a `string` or `Promise<string>`.
 
 	The following example reads the token from the `localStorage`:
 
-	```TypeScript
-	reportGeneratorHubOptions: {
-		accessTokenFactory: () => localStorage.getItem("access_token") ?? ""
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptionsLocalStorage}}
 
 	The following example retrieves the token asynchronously from the endpoint "/auth/token":
 
-	```TypeScript
-	reportGeneratorHubOptions: {
-		accessTokenFactory: () => fetch("/auth/token").then(r => r.text())
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptionsEndpoint}}
 
 As an alternative to passing delegates directly, call the `AddAIReportGenerator(IConfiguration)` overload to read the options from a `telerikReporting:AIReportGenerator` section in `appsettings.json`:
 
-```JSON
-{
-  "telerikReporting": {
-    "AIReportGenerator": {
-      "friendlyName": "MicrosoftExtensionsAzureOpenAI",
-      "credential": "YOUR_API_KEY",
-      "endpoint": "https://your-azure-openai-endpoint.cognitiveservices.azure.com",
-      "model": "gpt-4.1-mini",
-      "Store_SessionIdleTimeoutMinutes": 30,
-      "EnableConversationLogging": false,
-      "ConversationLogPath": null,
-      "ShowTokenUsage": false,
-      "RequestTimeout": 60,
-      "RequestMaxTokens": 100000
-    }
-  }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\WrdAiReportGenerator.json region=telerikReportingAIReportGenerator}}
 
 The available options are:
 
@@ -147,11 +85,11 @@ The available options are:
 | `endpoint` | The AI provider endpoint URL. For Azure OpenAI, this is your Azure Cognitive Services resource URL. Required when using the configuration-only overload. |
 | `credential` | The API key used to authenticate with the AI provider. Required when using the configuration-only overload. |
 | `model` | The deployment or model name to invoke (for example `gpt-4.1-mini`). Required when using the configuration-only overload. |
-| `Store_SessionIdleTimeoutMinutes` | Idle timeout, in minutes, for an AI Report Generator chat session. Defaults to 1 day (1 440 minutes) when omitted. |
+| `Store_SessionIdleTimeoutMinutes` | Idle timeout, in minutes, for an AI Report Generator chat session. Defaults to 1 day (1440 minutes) when omitted. |
 | `EnableConversationLogging` | When `true`, conversation transcripts are written to disk after each agent interaction. Defaults to `false`. |
 | `ConversationLogPath` | Base directory for conversation logs. Logs are organized into per-user, timestamped subfolders. When `null`, defaults to `{AppContext.BaseDirectory}/Conversations`. Used only when `EnableConversationLogging` is `true`. |
 | `ShowTokenUsage` | When `true`, the chat progress bubble in the designer shows token usage information after each interaction. Defaults to `false`. |
-| `RequestTimeout` | Timeout in seconds for a single agent interaction. When the request does not complete in the allotted time, it is cancelled and an error message is sent to the client. Defaults to `60`. |
+| `RequestTimeout` | Timeout in seconds for a single agent interaction. When the request does not complete in the allotted time, it is cancelled, and an error message is sent to the client. Defaults to `60`. |
 | `RequestMaxTokens` | Maximum total number of tokens (input and output) that a single agent interaction is allowed to consume. The interaction is terminated when the cumulative token count reaches this limit. Defaults to `100000`. |
 | `Hub_MaximumReceiveMessageSize` | Maximum size in bytes of a SignalR message received from the client. Increase this value when working with large report definitions. Defaults to `1048576` (1 MB). |
 | `Hub_ClientTimeoutInterval` | SignalR client timeout in seconds. When the client does not respond within this interval, the connection is dropped. Defaults to `60`. |
@@ -164,17 +102,13 @@ To restrict who can invoke AI Report Generator, gate the `Commands_AIAgent_Use` 
 
 The Web Report Designer requires `SignalR` version 10 or newer to run the AI Report Generator. For example, you may reference it from the official CDN:
 
-```HTML
-<script src="https://unpkg.com/@microsoft/signalr@10.0.0/dist/browser/signalr.js"></script>
-```
+{{source=CodeSnippets\Blazor\Docs\html\WrdAiReportGenerator.html region=SignalR_OfficialCdn}}
 
 The **AI Report Generator** button does not appear in the designer without the SignalR reference.
 
 Add the minimum required Kendo UI for jQuery set from our CDN if your app is not already using it:
 
-```HTML
-<script src="https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.kendo.min.js"></script>
-```
+{{source=CodeSnippets\Blazor\Docs\html\WrdAiReportGenerator.html region=KendoUIforJQuery_ReportingCdn}}
 
 ## Data Source Usage
 
@@ -208,7 +142,7 @@ The **AI Report Generator** is built on an agentic loop powered by `Microsoft.Ex
 | `ResolveMinimalSchemaSet` | Returns the JSON Schemas for one or more Telerik Reporting model types and recursively pulls in the schemas of their required, non-polymorphic property types. The agent calls this first to learn the shape of the item it must produce. |
 | `GetItemGuidance` | Returns curated, item-specific authoring guidance (for example, for `Graph`, `BarChart`, `LineChart`, `RadialGauge`, or `LinearGauge`) so the agent applies recommended defaults and avoids common pitfalls. |
 | `GetSkill` | Returns cross-cutting authoring skills that cover concerns such as [expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties), [conditional formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting), [bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), [aggregates](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions), and [sorting and filtering](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting). The agent loads only the skills relevant to the user's intent. |
-| `GetDataSources` | Returns the data sources defined on the current report along with their field names and types. The agent calls this before writing any field expression so it never invents tables or columns. |
+| `GetDataSources` | Returns the data sources defined on the current report along with their field names and types. The agent calls this before writing any field expression, so it never invents tables or columns. |
 | `ValidateDefinitionDeep` | Validates the crafted JSON item definition in two stages: first against the JSON Schema for the given type, then by deserializing the definition into a live report item. The agent explicitly calls this tool after producing a candidate definition and receives any errors in natural language. It then revises the JSON and retries until both stages pass or a configured retry limit is reached. |
 
 After the agent crafts a candidate item, it calls `ValidateDefinitionDeep` to check the definition. If validation fails, the agent receives the errors in natural language and revises the JSON. This cycle repeats until the item passes both the schema check and deserialization, or the configured retry limit is reached.

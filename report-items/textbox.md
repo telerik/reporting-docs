@@ -1,4 +1,4 @@
----
+﻿---
 title: TextBox
 page_title: TextBox Report Item at a Glance
 description: "Learn more about the Telerik Reporting TextBox report item, how to expand and shrink it depending on its contents, how to add embedded expressions in-place and through Expression editors."
@@ -38,9 +38,7 @@ To change the text orientation in a TextBox item, use the [`Angle`](/api/telerik
 
 The layout of the tilted text starts from the corner of the client item rectangle and fits the text until finished. This behavior produces short initial text lines, which can be avoided, if desired, by adding some empty lines at the beginning of the text or expression:
 
-```C#
-this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportItemValueSnippets.cs region=SetTextBoxValueWithLineBreaks}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportItemValueSnippets.vb region=SetTextBoxValueWithLineBreaks}}
 The item grows vertically to accommodate a full tilted line from the left to the right edge, which may produce a significant growth of the item, especially for angles nearing 90 degrees. To avoid this behavior, set the [`CanGrow`](/api/telerik.reporting.textitembase#telerik_reporting_textitembase_cangrow) property to `false`.
 

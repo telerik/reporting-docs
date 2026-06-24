@@ -20,17 +20,7 @@ This event is meant to be used only for providing data source for the report. On
 
 Below is an example that illustrates how to provide data source to the __Report__ item using the `Report.NeedDataSource` event.
 
-```C#
-private void Report1_NeedDataSource(object sender, System.EventArgs e)
-{
-	string sql = @"SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product";
-	string connectionString = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True";
-	SqlDataAdapter adapter = new SqlDataAdapter(sql, connectionString);
-	DataSet dataSet = new DataSet();
-	adapter.Fill(dataSet);
-	(sender as Telerik.Reporting.Processing.Report).DataSource = dataSet;
-}
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\DataSourceEventSnippets.cs region=ReportNeedDataSource}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ReportNeedDataSource}}
 ## See Also
 

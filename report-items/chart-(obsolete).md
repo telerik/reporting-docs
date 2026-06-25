@@ -1,4 +1,4 @@
----
+﻿---
 title: (Obsolete) Chart
 page_title: Chart Report Item Overview (Obsolete)
 description: "(Obsolete) Learn more about the Chart as a report item when using Telerik Reporting. Consider using the Graph item instead."
@@ -30,13 +30,7 @@ To bind the Chart report item, use either of the following approaches:
 
 When handling the `NeedDataSource` event, you have to process the Chart item, for example:
 
-```C#
-private void chart1_NeedDataSource(object sender, System.EventArgs e)
-{
-	Telerik.Reporting.Processing.Chart procChart = (Telerik.Reporting.Processing.Chart)sender;
-	procChart.DataSource = your_datasource;
-}
-```
+{{source=CodeSnippets\CS\API\Telerik\Reporting\DataSourceEventSnippets.cs region=ChartNeedDataSource}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\DataSourceEventSnippets.vb region=ChartNeedDataSource}}
 ## Customizing the Chart 
 

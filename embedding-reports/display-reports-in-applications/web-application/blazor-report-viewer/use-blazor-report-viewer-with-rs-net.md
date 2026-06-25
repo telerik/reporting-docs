@@ -36,7 +36,7 @@ After creating the Blazor Report Viewer, we need some manual adjustments to make
 1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
 1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET {{site.mindotnetversion}}+ is used) can serve static files:
 
-   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
+	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
@@ -68,14 +68,7 @@ Substitute the `https://yourReportServerUrl:port` with the actual url of your Re
 
 The `GetPersonalAccessToken` option should be set to a function returning the Token of the User who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
-```JavaScript
-window.trvCallbacks = {
-	getPersonalAccessToken: function () {
-		return fetch('/rs-token')
-			.then(response => response.text())
-	}
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JavaScript\getPersonalAccessToken.js region=getPersonalAccessToken}}
 
 Server-side, you may configure the endpoint '/rs-token', as shown below, after ensuring the environment variable "RS_NET_TOKEN" is set up correctly. We strongly recommend securing the endpoint:
 

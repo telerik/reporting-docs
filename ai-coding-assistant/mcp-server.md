@@ -1,4 +1,4 @@
----
+﻿---
 title: Getting Started
 page_title: Getting Started with the Telerik Reporting AI Coding Assistant
 description: "Learn how to add and use the Telerik Reporting MCP Server as a Reporting AI coding assistant and code generator for better developer productivity. The Telerik Reporting MCP server provides proprietary context about Telerik Reporting to AI-powered software."
@@ -68,16 +68,8 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 - When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (**%AppData%\Telerik\telerik-license.txt** on Windows and **~/.telerik/telerik-license.txt** on Linux).
 - When using the .NET tooling, if your [license key file](slug:license-key) is not in the default directory, you can add the [license key file](slug:license-key) as an environment variable in the `mcp.json` file using one of the following options:
 
-	```JSON Path
-	"env": {
-		"TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
-	}
-	```
-	```JSON Inline
-	"env": {
-		"TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicensePathEnvConfig.json region=McpServerLicensePathEnv}}
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicenseKeyEnvAltConfig.json region=McpServerLicenseKeyEnvAlt}}
 
 > tip Using a license file path is _recommended_ unless you are sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when renewing.
 

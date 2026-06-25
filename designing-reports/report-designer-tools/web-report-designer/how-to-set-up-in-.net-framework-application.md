@@ -33,58 +33,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Implement a Report Designer controller. Right-click on the `Controllers` folder and add a new item: __Add__ > __New item__ > __Web API Controller Class__ item. Name it `ReportDesignerController`. This will be our Telerik Web Report Designer REST service in the project.
 1. Inherit the [ReportDesignerControllerBase](/api/Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase)  type and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage. This is the class, responsible for opening, saving etc. the report definitions. This is how a basic implementation of the controller should look like:
 
-	```C#
-	namespace CSharp.MvcDemo.Controllers
-	{
-		using System;
-		using System.IO;
-		using System.Web;
-		using System.Web.Http;
-		using Telerik.Reporting.Cache.File;
-		using Telerik.Reporting.Services;
-		using Telerik.Reporting.Services.WebApi;
-		using Telerik.WebReportDesigner.Services;
-		using Telerik.WebReportDesigner.Services.Controllers;
-	
-		//The class name determines the service URL.
-		public class ReportDesignerController : ReportDesignerControllerBase
-		{
-			static ReportServiceConfiguration configurationInstance;
-			static ReportDesignerServiceConfiguration designerConfigurationInstance;
-			static ReportDesignerController()
-			{
-				//This is the folder that contains the report definitions
-				//In this case this is the Reports folder
-				var appPath = HttpContext.Current.Server.MapPath("~/");
-				var reportsPath = Path.Combine(appPath, "Reports");
-				//Add report source resolver for trdx/trdp report definitions,
-				//then add resolver for class report definitions as fallback resolver;
-				//finally create the resolver and use it in the ReportServiceConfiguration instance.
-				var resolver = new UriReportSourceResolver(reportsPath);
-					  //Setup the ReportServiceConfiguration
-				configurationInstance = new ReportServiceConfiguration
-				{
-					HostAppId = "Html5App",
-					Storage = new FileStorage(),
-					ReportSourceResolver = resolver,
-					ReportSharingTimeout = 1000,
-					ClientSessionTimeout = 20,
-				};
-				designerConfigurationInstance = new ReportDesignerServiceConfiguration
-				{
-					DefinitionStorage = new FileDefinitionStorage(reportsPath),
-					SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
-				};
-			}
-			public ReportDesignerController()
-			{
-					  //Initialize the service configuration
-				this.ReportServiceConfiguration = configurationInstance;
-				this.ReportDesignerServiceConfiguration = designerConfigurationInstance;
-			}
-		}
-	}
-	```
+	{{source=CodeSnippets\MvcCS\Controllers\ReportDesignerController.cs region=WebReportDesignerController}}
 	{{source=CodeSnippets\MvcVB\Controllers\WebReportDesignerControllerSnippet.vb region=WebReportDesignerController}}
 
 
@@ -100,17 +49,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in the `Application_Start()` method of the `Global.asax` file. It is important to register them before the default routes as shown below:
 
-	```C#
-	protected void Application_Start()
-	{
-		AreaRegistration.RegisterAllAreas();
-		FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-		Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
-		Telerik.WebReportDesigner.Services.WebApi.ReportDesignerControllerConfiguration.RegisterRoutes(System.Web.Http.GlobalConfiguration.Configuration);
-		RouteConfig.RegisterRoutes(RouteTable.Routes);
-		BundleConfig.RegisterBundles(BundleTable.Bundles);
-	}
-	```
+	{{source=CodeSnippets\MvcCS\Global.asax.cs region=RegisterReportDesignerRoutes}}
 	{{source=CodeSnippets\MvcVB\Global.asax.vb region=RegisterReportDesignerRoutes}}
 
 1. In case the reports shown in the viewer need access to a database, add the necessary connection strings to the `web.config` file.

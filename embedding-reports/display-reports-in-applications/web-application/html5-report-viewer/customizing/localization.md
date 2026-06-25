@@ -20,37 +20,30 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 1. Create a new `.js` file with the required string resources. Those resources will be stored in an object named `sr`. This object will be used to make those resources globally available for the report viewer.
 
-   You may use the resource file that comes with the installation of the product in:
+	You may use the resource file that comes with the installation of the product in:
 
-   `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}.js`
+	`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}.js`
 
-   Or the following code snippet:
+	Or the following code snippet:
 
-   {{source=Source\Code\Telerik.ReportViewer.Web\jquery-viewer\src\sr.js}}
+	{{source=Source\Code\Telerik.ReportViewer.Web\jquery-viewer\src\sr.js}}
 
-2. Wrap the code from the previous step in an **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)** (Immediately Invoked Function Expression), which will help avoid polluting the global namespace with the intermediate `sr` variable:
+1. Wrap the code from the previous step in an **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)** (Immediately Invoked Function Expression), which will help avoid polluting the global namespace with the intermediate `sr` variable:
 
-   ```JavaScript
-   (function () {
-     var sr = { ... };
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\CustomParameterEditors.js region=Html5ViewerLocalization}}
 
-     window.telerikReportViewer ||= {};
-     window.telerikReportViewer.sr ||= sr;
-   })();
-   ```
+1. Specify the name of the file using the following convention:
 
-3. Specify the name of the file using the following convention:
+	`stringResources.[culture].js` where _[culture]_ is the name of the culture for the specified localization resource.
 
-   `stringResources.[culture].js` where _[culture]_ is the name of the culture for the specified localization resource.
+	For example, to provide a localization resource for the French-Belgian culture, the corresponding resource file could be named as follows:
 
-   For example, to provide a localization resource for the French-Belgian culture, the corresponding resource file could be named as follows:
+	`stringResources.fr-BE.js`.
 
-   `stringResources.fr-BE.js`.
+1. Translate the texts for the specified culture
+1. Load the `JS` file with the translated text before loading the report viewer:
 
-4. Translate the texts for the specified culture
-5. Load the `JS` file with the translated text before loading the report viewer:
-
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerLocalization.html region=Html5ViewerSetup}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerLocalization.html region=Html5ViewerSetup}}
 
 > To modify the HTML5 Viewer's HTML template that contains the toolbar, preview, parameters, and document map areas, and so on, you will need to create a custom template, which you can provide to the viewer through its `templateUrl` property.
 > <br/>  

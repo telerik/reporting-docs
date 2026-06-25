@@ -55,18 +55,7 @@ To give an example we will use the Invoice report from our local examples and wi
 
 1. Add code that updates the ReportSource parameters collection with the selected **Invoice Id** from the dropdown box:
 
-	```JavaScript
-	$('#invoiceId').change(function () {
-		var viewer = $("#reportViewer1").data("telerik_ReportViewer");
-		viewer.reportSource({
-			report: viewer.reportSource().report,
-			parameters: { OrderNumber: $("#invoiceId :selected").text() }
-		});
-		//setting the HTML5 Viewer's reportSource, causes a refresh automatically
-		//if you need to force a refresh for other case, use:
-		//viewer.refreshReport();
-	});
-	```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\CustomParameterEditors.js region=PassValuesReportParameters}}
 
 1. Run the project and verify that the **Invoice Id** selection really updates the report.
 

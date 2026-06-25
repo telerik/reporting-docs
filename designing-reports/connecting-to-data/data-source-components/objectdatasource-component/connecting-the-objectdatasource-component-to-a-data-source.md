@@ -71,15 +71,7 @@ Here are the steps you may follow when referencing the assembly in the project s
 1. [Add a reference to the assembly](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager) used by the ObjectDataSource to the project hosting the Reporting engine. For example, when you use an HTML5-based Report Viewer, this would be the [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) project. Instead of referencing the built assembly itself, it is also possible to add a `Project Reference` to the project that the assembly is built from. It is required for the assembly to be available in the `bin` folder during the runtime of the application.
 1. Open the project's configuration file and add the same assembly reference as the one required for the Standalone designer. If the project is `.NET Framework`, this step will be simply copying the necessary XML, but for `.NET`, the XML has to be converted to JSON, for example:
 
-	```JSON
-	"telerikReporting": {
-		"assemblyReferences": [
-			{
-				"name": "yourAssemblyName"
-			}
-		]
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\JSON\AssemblyReferencesNameOnlyConfig.json region=AssemblyReferencesExample}}
 
 ## Configuration for the ReportProcessor in .NET
 

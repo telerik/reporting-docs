@@ -42,15 +42,7 @@ When started, the application that hosts the Web Report Designer will try to res
 
 	- For.NET Core applications, this is done in the `appsettings.json` file:
 
-     ```JSON
-     "telerikReporting": {
-     	"assemblyReferences": [
-     		{
-     			"name": "CarObjects"
-     		}
-     	]
-     }
-     ```
+	{{source=CodeSnippets\Blazor\Docs\JSON\AssemblyReferencesNameOnlyConfig.json region=AssemblyReferencesExample}}
 
 	Another option is by custom implementation of the [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-7.0) interface.
 

@@ -71,7 +71,6 @@ To give an example, we will use the Invoice report from our examples and will up
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_02.aspx region=WebFormsViewerPassValuesToReportParameters6}}
 
-
 1. Run the project and verify that the __Invoice Id__ selection really updates the report.
 
 ## See Also

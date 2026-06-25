@@ -62,33 +62,6 @@ Alternatively, instead of using the item template, the Designer REST service and
 
 1. Use the following snippet to place the designer component in a razor page like `Pages/Index.razor`.
 
-   ```RAZOR
-   @page "/"
-   @* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-   @* @rendermode InteractiveServer *@
-   @using Telerik.WebReportDesigner.Blazor
-
-   <style>
-   	#wrd1 {
-   		position: relative;
-   		width: 1300px;
-   		height: 880px;
-   		padding-right: 50px;
-   	}
-   </style>
-   @* Create the WebReportDesignerWidget *@
-   <WebReportDesigner DesignerId="wrd1"
-   			ServiceUrl="/api/reportdesigner"
-   			Report="SampleReport.trdp"
-   			ReportViewerOptions="@(new ReportViewerOptions() {
-   				templateUrl = "api/reportdesigner/resources/templates/telerikReportViewerTemplate.html",
-   				scaleMode = ScaleMode.Specific,
-   				scale = 1.0,
-   				pageMode = PageMode.ContinuousScroll,
-   				viewMode = ViewMode.Interactive
-   			})"
-   			ToolboxArea="new ToolboxAreaOptions() { Layout = ToolboxAreaLayout.List }"
-   			PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
-   ```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.razor region=BlazorWebDesigner}}
 
 1. The **Report** option will instruct the designer to look for _SampleReport.trdp_ inside the `Reports` folder on the first load. You can create this report definition in the folder or omit the **Report** option above. Finally, run the project.

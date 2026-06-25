@@ -32,18 +32,7 @@ The following list describes the prerequisites for this tutorial:
 
 	JSON-based configuration file:
 
-	```JSON
-	"ConnectionStrings": {
-		//This connection string will use System.Data.SqlClient as data provider invariant name.
-		//"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-
-		//This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\JSON\ConnectionStrings.json region=ConnectionStringsSqlClient}}
 
 ## Using Angular Report Viewer in Angular application
 

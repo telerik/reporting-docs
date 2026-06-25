@@ -1,4 +1,4 @@
----
+﻿---
 title: Event Binding
 page_title: Binding to the React Report Viewer's Events 
 description: "Learn how to bind to the different events exposed by the React Report Viewer component, using the provided examples."
@@ -22,16 +22,7 @@ To attach an event handler to the viewer, specify the name of your function when
 
 Then, we create the event handler functions in the component where the viewer is used:
 
-````JavaScript
-export class AppComponent {
-	myReadyHandler() {
-		console.log('The viewer is ready!');
-	}
-	myViewerToolTipOpeningHandler(e: any, args: any) {
-		console.log('Tooltip shows: ' + args.toolTip.text);
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularHtml5Viewer.ts region=AngularViewerEventHandlers_Ready}}
 
 
 ## See Also

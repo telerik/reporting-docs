@@ -28,103 +28,11 @@ The main work for creating and utilizing the parameter editor is done in the `cr
 
 The following example illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values:
 
-````JavaScript
-{
-	match: function (parameter) {
-		// Here you can use all of the parameter properties to
-		// create a more specific editor
-		return Boolean(parameter.availableValues) && !parameter.multivalue;
-	},
-	createEditor: function (placeholder, options) {
-		var dropDownElement = $(placeholder).html('<div></div>');
-		var parameter,
-			valueChangedCallback = options.parameterChanged,
-			dropDownList;
-		function onChange() {
-			var val = dropDownList.value();
-			valueChangedCallback(parameter, val);
-		}
-		return {
-			beginEdit: function (param) {
-				parameter = param;
-				$(dropDownElement).kendoDropDownList({
-					dataTextField: "name",
-					dataValueField: "value",
-					value: parameter.value,
-					dataSource: parameter.availableValues,
-					change: onChange
-				});
-				dropDownList = $(dropDownElement).data("kendoDropDownList");
-			},
-			addAccessibility: function (param) {
-				if (dropDownList) {
-					dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
-				}
-			},
-			setAccessibilityErrorState: function (param) {
-				if (dropDownList) {
-					if (param.Error) {
-						dropDownList.wrapper.attr("aria-invalid", "true");
-					} else {
-						dropDownList.wrapper.removeAttr("aria-invalid");
-					}
-				}
-			}
-		};
-	}
-}
-````
+{{source=CodeSnippets\Blazor\Docs\JavaScript\CustomParameterEditors.js region=Html5ViewerKendoDropDownList}}
 
 Passing the parameter editor to the viewer:
 
-````JavaScript
-<script type="text/javascript">
-	$("#reportViewer1").telerik_ReportViewer({
-		parameterEditors: [{
-			match: function (parameter) {
-				return Boolean(parameter.availableValues) && !parameter.multivalue;
-			},
-			createEditor: function (placeholder, options) {
-				var dropDownElement = $(placeholder).html('<div></div>'),
-					parameter,
-					valueChangedCallback = options.parameterChanged,
-					dropDownList;
-				function onChange() {
-					var val = dropDownList.value();
-					valueChangedCallback(parameter, val);
-				}
-				return {
-					beginEdit: function (param) {
-						parameter = param;
-						$(dropDownElement).kendoDropDownList({
-							dataTextField: "name",
-							dataValueField: "value",
-							value: parameter.value,
-							dataSource: parameter.availableValues,
-							change: onChange
-						});
-						dropDownList = $(dropDownElement).data("kendoDropDownList");
-					},
-					addAccessibility: function (param) {
-						if (dropDownList) {
-							dropDownList.wrapper.attr("aria-label", param.text + ". Drop-down list parameter.");
-						}
-					},
-					setAccessibilityErrorState: function (param) {
-						if (dropDownList) {
-							if (param.Error) {
-								dropDownList.wrapper.attr("aria-invalid", "true");
-							} else {
-								dropDownList.wrapper.removeAttr("aria-invalid");
-							}
-						}
-					}
-				};
-			}
-		}]
-	});
-</script>
-````
+{{source=CodeSnippets\Blazor\Docs\html\CustomParameterEditors.html region=PassParameterEditorToHtml5Viewer}}
 
 >tip You can use any other custom UI covering the requirements of the `createEditor` method.
 

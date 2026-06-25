@@ -35,17 +35,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 
 1. If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
-   ```JSON
-   {
-   "ConnectionStrings":{
-   	"mssql":
-   		{
-   			"connectionString":"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;",
-   			"providerName":"Microsoft.Data.SqlClient"
-   		}
-   	}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\JSON\MsSqlDataProviderConfig.json region=MsSqlConnectionString}}
 
 ### .NET Application with Web Report Viewer
 
@@ -56,17 +46,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 
 1. If the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
-   ```JSON
-   {
-   	"ConnectionStrings":{
-   		"mssql":
-   		{
-   			"connectionString":"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;",
-   			"providerName":"Microsoft.Data.SqlClient"
-   		}
-   	}
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\JSON\MsSqlDataProviderConfig.json region=MsSqlConnectionString}}
 
 ## See Also
 

@@ -26,12 +26,7 @@ This article explains how to attach client event handlers to an `WebForms` wrapp
 To attach a client event handler you have to set the proper `ClientEvents` tag as shown below:
 
 {{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerMarkup.aspx region=WebFormsViewerClientEvents}}
-````JavaScript
-function onRenderingBegin() {
-	console.log("rendering begin!");
-}
-````
-
+{{source=CodeSnippets\Blazor\Docs\JavaScript\CustomParameterEditors.js region=ClientEventsRenderingBegin}}
 
 The following table lists the available client events: 
 

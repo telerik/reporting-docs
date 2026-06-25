@@ -59,56 +59,11 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 	> note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service.
 
-    ```RAZOR
-    @page "/"
-    @_ For Blazor Web Apps, an interactive render mode should be used, for example: _@
-    @_ @rendermode InteractiveServer _@
-    @using Telerik.ReportViewer.Blazor
-
-    <style>
-        #rv1 {
-            position: relative;
-            width: 1200px;
-            height: 600px;
-        }
-    </style>
-
-    <ReportViewer ViewerId="rv1"
-        ServiceUrl="/api/reports"
-        ReportSource="@(new ReportSourceOptions()
-        {
-            Report = "SampleReport.trdp"
-        })"
-        Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
-        ScaleMode="@(ScaleMode.Specific)"
-        Scale="1.0" />
-    ```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerRestParameterEditors.razor region=BlazorViewerRestParameterEditors}}
 
 1. When displaying reports from a Report Server instance, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
-    ```RAZOR
-    @page "/"
-    @* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-    @* @rendermode InteractiveServer *@
-    @using Telerik.ReportViewer.Blazor
-    <style>
-    	#rv1 {
-    		position: relative;
-    		width: 1200px;
-    		height: 600px;
-    	}
-    </style>
-    <ReportViewer
-        ViewerId="rv1"
-        ReportServer="@(new ReportServerOptions {
-                     Url = "https://demos.telerik.com/report-server/",
-                     Username = "demouser",
-                     Password = "demopass"
-                    })"
-        ReportSource="@(new ReportSourceOptions() { Report = "Published/Dashboard" })"
-        ScaleMode="@(ScaleMode.Specific)"
-        Scale="1.0" />
-    ```
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerReportServerAuth.razor region=BlazorViewerUsernamePasswordAuth}}
 
 1. Finally, run the project to see the rendered report.
 

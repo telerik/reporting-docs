@@ -34,35 +34,15 @@ To give an example we will use the [Invoice](https://demos.telerik.com/reporting
 
 1.  Now, initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview). Note that the value from the custom UI is used to set the **OrderNumber** report parameter initially:
 
-    ```JavaScript
-    $(document).ready(function () {
-    	$("#reportViewer1").telerik_ReportViewer({
-    		serviceUrl: "api/reports/",
-    		reportSource: {
-    			report: "Invoice.trdp",
-    			parameters: {
-    				OrderNumber: $('#invoiceId option:selected').val()
-    				}
-    		}
-    	});
-    });
-    ```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\CustomParameterEditors.js region=Html5ViewerPassValuesReportParameters}}
 
 1. Add code that updates the `ReportSource` parameters collection with the selected **Invoice Id** from the dropdown selector:
 
-    ```JavaScript
-    $('#invoiceId').change(function () {
-    	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-    	reportViewer.reportSource({
-    		report: reportViewer.reportSource().report,
-    		parameters: { OrderNumber: $(this).val() }
-    	});
-    });
-    ```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\CustomParameterEditors.js region=Html5ViewerUpdateReportSource}}
 
 1. The HTML page that we have just created should look like this:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerPassValuesToReportParameters_01.html region=Html5ViewerPassValuesToReportParameters4}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerPassValuesToReportParameters_01.html region=Html5ViewerPassValuesToReportParameters4}}
 
 ## See Also
 

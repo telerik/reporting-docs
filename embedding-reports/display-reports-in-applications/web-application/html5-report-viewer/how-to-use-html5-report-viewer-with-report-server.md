@@ -29,23 +29,23 @@ The VS item template will integrate the HTML5 Report Viewer in a.html page and w
 - You will be prompted to accept building the project. Click 'OK'.
 - The item template will open the **'Add new Report Viewer'** dialog with the following steps:
 
-  1.  **'Configure reporting engine'** will configure the type of reporting engine that will process and render the reports. You have two options - REST service or Report server. Choose **Report Server** option. This way, the reports will be processed and rendered by the specified Report Server instance. On the right side of the dialog, there are two things that you should enter:
+	1. **'Configure reporting engine'** will configure the type of reporting engine that will process and render the reports. You have two options - REST service or Report server. Choose **Report Server** option. This way, the reports will be processed and rendered by the specified Report Server instance. On the right side of the dialog, there are two things that you should enter:
 
-      - **Report Server URI** - enter a valid Report Server URI.
-      - **Runtime credentials** - enter _Username_ and _Password_ for the Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.
+		- **Report Server URI** - enter a valid Report Server URI.
+		- **Runtime credentials** - enter _Username_ and _Password_ for the Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.
 
-      ![The Visual Studio item template Add new Report Viewer on the page Configure reporting engine with selected Report Server](images/item-template-reporting-engine-rs.png)
+		![The Visual Studio item template Add new Report Viewer on the page Configure reporting engine with selected Report Server](images/item-template-reporting-engine-rs.png)
 
-  1.  **'Setup Report Source for Report Server'** will choose a report definition for the report viewer. There are two things you should select, but in case you are using the _Guest_ account, you will have to fill in the fields manually. It is because the Guest user cannot read the available categories and reports for security reasons:
+	1. **'Setup Report Source for Report Server'** will choose a report definition for the report viewer. There are two things you should select, but in case you are using the _Guest_ account, you will have to fill in the fields manually. It is because the Guest user cannot read the available categories and reports for security reasons:
 
-      - **Category** - select a category from the drop-down menu that contains the desired report.
-      - **Report name** - select a report from the available reports.
+		- **Category** - select a category from the drop-down menu that contains the desired report.
+		- **Report name** - select a report from the available reports.
 
-      ![The Visual Studio item template Add new Report Viewer on the page Setup Report Source for Report Server](images/item-template-report-source-rs.png)
+		![The Visual Studio item template Add new Report Viewer on the page Setup Report Source for Report Server](images/item-template-report-source-rs.png)
 
-  1.  **'Configure Report Viewer'** exposes the option to enable [accessibility](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility) for the report viewer.
+	1. **'Configure Report Viewer'** exposes the option to enable [accessibility](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility) for the report viewer.
 
-      ![The Visual Studio item template Add new Report Viewer on the page Configure Report Viewer for Enabling Accessibility](images/item-template-accessibility.png)
+		![The Visual Studio item template Add new Report Viewer on the page Configure Report Viewer for Enabling Accessibility](images/item-template-accessibility.png)
 
 After finishing, the item template automatically does the following:
 
@@ -59,55 +59,19 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
 
 1. Follow the steps described in [HTML5 Viewer Manual Setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup) article to get your HTML5 viewer working. Examine the produced HTML page and especially the section that configures the viewer:
 
-   ```JavaScript
-   $("#reportViewer1")
-   	.telerik_ReportViewer({
-   		serviceUrl: "/api/reports/",
-   		templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html',
-   		reportSource: {
-   			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-   			parameters: {
-   				CultureID: "en"
-   			}
-   		}
-   	});
-   ```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerFromRestService}}
 
 1. Locate the line that sets the service URL: `serviceUrl: "/api/reports/",`. Comment it out or replace it with the following code:
 
-   ```JavaScript
-   reportServer: {
-   	url: "https://yourReportServerUrl:port",
-   	username: null,
-   	password: null
-   },
-   ```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerToReportServer}}
 
-   Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server instance along with the port if needed. Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an actual account, defined in the Report Server.
+	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server instance along with the port if needed. Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an actual account, defined in the Report Server.
 
 1. If you have modified the Telerik Report Viewer Template HTML file, you can leave the `templateUrl` option intact. Otherwise, it is recommended to delete the line `templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html'`, so the template will be downloaded automatically from the server.
 1. Locate the lines that set the report source's report definition (it should start with `report: "...`). Replace them with the following line: `report: "{Category}/{ReportName}"`, where `{Category}` and `{ReportName}` are the actual names of the category and report that can be accessed by the Guest user or by the user you have provided login credentials for. Set up the report parameters if needed.
 1. The initialization should look like the following:
 
-   ```JavaScript
-   $("#reportViewer1")
-   	.telerik_ReportViewer({
-   		reportServer: {
-   			url: "https://yourReportServerUrl:port",
-   			username: null,
-   			password: null
-   		},
-   		//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html',
-   		reportSource: {
-   			// The report value should contain the Category and ReportName in the following format
-   			// {Category/ReportName}
-   			report: "Samples/Dashboard"
-   			parameters: {
-   				ReportYear: 2004
-   			}
-   		}
-   	});
-   ```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerInitWithReportServer}}
 
 1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the [Troubleshooting](#Troubleshooting) section below.
 

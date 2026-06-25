@@ -26,14 +26,7 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 1. Use the following code instead of `serviceUrl: "/api/reports/",` to connect to the Report Server for .NET rather than to a Reporting REST Service:
 
-	```JavaScript
-	reportServer: {
-		url: "https://yourReportServerUrl:port",
-		getPersonalAccessToken: function() {
-			return Promise.resolve("<personal-access-token>");
-		}
-	},
-	```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerRSNet}}
 
 	> caution The `serviceUrl` option shouldn't be present, or the viewer would default to no authentication scheme utilizing the Report Server for .NET as a regular Reporting REST Service.
 
@@ -43,15 +36,7 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 	- (**recommended**) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
-		```JavaScript
-		reportServer: {
-			url: "https://yourReportServerUrl:port",
-			getPersonalAccessToken: function() {
-				return fetch('/rs-token')
-					.then(response => response.text())
-			}
-		},
-		```
+		{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerRSNetAuthWithFunction}}
 
 		Server-side, you may configure the endpoint, as shown below, after ensuring the EnvironmentVariable 'RS_NET_TOKEN' is set up correctly. We strongly recommend securing the endpoint:
 
@@ -59,38 +44,14 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 	- (_not recommended_) Alternatively, you may use a hardcoded _username_ and _password_ instead of Token authentication. We do not recommend this for security reasons:
 
-		```JavaScript
-		reportServer: {
-			url: "https://yourReportServerUrl:port",
-			username: "<hardcoded-username>",
-			password: "<hardcoded-password>"
-		},
-		```
+		{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerRSNetAuthWithCredentials}}
 
 		> caution The Guest User may connect to the Report Server for .NET only with a Token. It doesn't have a password and cannot connect to the Report Server for .NET with Null credentials, as the Report Server for .NET Framework 4.6.2.
 
 1. Locate the lines that set the report source's report definition (it should start with `report: "...`). Replace them with the following line: `report: "{Category}/{ReportName}"`, where `{Category}` and `{ReportName}` are the actual names of the category and report that can be accessed by the User you have provided Token or login credentials for. Set up the report parameters if needed.
 1. The initialization should look like the following:
 
-	```JavaScript
-	$("#reportViewer1")
-		.telerik_ReportViewer({
-			reportServer: {
-				url: "https://yourReportServerUrl:port",
-				getPersonalAccessToken: function() {
-					return Promise.resolve("<personal-access-token>");
-				}
-			},
-			reportSource: {
-				// The report value should contain the Category and ReportName in the following format
-				// {Category/ReportName}
-				report: "Samples/Dashboard",
-				parameters: {
-					ReportYear: 2004
-				}
-			}
-		});
-	```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerRSNetInit}}
 
 1. Run the project, and you should see the report configured in the previous step appearing in the Report Viewer.
 

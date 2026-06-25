@@ -18,23 +18,7 @@ The HTML5 Report Viewer exposes the events listed in [Events](slug:telerikreport
 
 The report viewer currently exposes two ways for binding event handlers to events. You may attach event handlers when you instantiate the report viewer, or after that, using the bind method. 
 
-````JavaScript
-// $(handler) is jQuery's shorthand for $(document).ready(handler)
-$(function () {
-	$("#reportViewer1").telerik_ReportViewer({
-		serviceUrl: "api/reports/",
-		reportSource: {
-			report: "Report Catalog.trdp"
-		},
-		pageReady: function(e) { console.log("this event handler was attached in the constructor"); }
-	});
-
-	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-	reportViewer.bind(telerikReportViewer.Events.PAGE_READY, function(e) {
-		console.log("this event handler was attached using the bind method");
-	});
-});
-````
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerEventBinding}}
 
 For a complete list of event handler options please check [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events).
 
@@ -44,24 +28,7 @@ The report viewer passes one argument to the event handler, the `Event` object. 
 
 To unbind from a given event you must keep a reference to the event handler function and call the unbind method with this reference as an argument.
 
-````JavaScript
-function onPageReady(e) {
-	console.log("page ready");
-}
-// $(handler) is jQuery's shorthand for $(document).ready(handler)
-$(function () {
-	$("#reportViewer1").telerik_ReportViewer({
-		serviceUrl: "api/reports/",
-		reportSource: {
-			report: "Report Catalog.trdp"
-		},
-		pageReady: onPageReady
-	});
-
-	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-	reportViewer.unbind(telerikReportViewer.Events.PAGE_READY, onPageReady);
-});
-````
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerUnbindingEvent}}
 
 To __unbind all event handlers__ from the event, call the unbind method with only one argument, the event name.
 

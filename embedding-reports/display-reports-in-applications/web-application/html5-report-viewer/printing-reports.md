@@ -39,20 +39,7 @@ By default when the value is not explicitly set, the widget will try to automati
 
 You can also implement a custom logic for dynamically specifying the print mode. For example:
 
-```JavaScript
-// Force the viewer to always use the PDF plug-in for printing in the Chrome browser.
-// In the other browsers the report document will be downloaded as a PDF file:
-var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase())
-	? telerikReportViewer.PrintModes.FORCE_PDF_PLUGIN
-	: telerikReportViewer.PrintModes.FORCE_PDF_FILE;
-
-$("#reportViewer1")
-	.telerik_ReportViewer({
-		serviceUrl: "api/reports/",
-		reportSource: { report: "product catalog.trdp" },
-		printMode: printMode
-	});
-```
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerPrinting}}
 
 ## See Also
 

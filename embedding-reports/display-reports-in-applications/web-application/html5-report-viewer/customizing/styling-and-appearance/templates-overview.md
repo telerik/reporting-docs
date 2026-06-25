@@ -30,9 +30,7 @@ While loading the template content, the widget looks for elements marked with th
 
 is mapped to:
 
-````JavaScript
-jQuery.fn.telerik_ReportViewer_ParametersArea(options)
-````
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerParametersAreaFunction}}
 
 If such a function exists, it is invoked onto the HTML element (that owns the data-role attribute) passing an options object with the following properties:
 

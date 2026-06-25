@@ -20,15 +20,7 @@ All viewer-related classes are supplied by a single CSS stylesheet that is refer
 
 For reference, you can use the templates located in **%programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Html5\ReportViewer\templates**:
 
-```JavaScript
-<script type="text/javascript">
-	$("#reportViewer1")
-	.telerik_ReportViewer({
-		serviceUrl: "/api/reports/",
-		templateUrl: "/custom-templates-directory/templates/telerikReportViewerTemplate-{{site.buildversion}}.html"
-	});
-</script>
-```
+{{source=CodeSnippets\Blazor\Docs\html\Html5ReportViewerCustomTemplate.html region=Html5ReportViewerCustomTemplate}}
 
 The template relies on the [Kendo UI SASS Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to provide layout settings and the color schema for the HTML5 Report Viewer:
 

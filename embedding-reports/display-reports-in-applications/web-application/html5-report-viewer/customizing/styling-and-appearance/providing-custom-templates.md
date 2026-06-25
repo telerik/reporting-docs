@@ -16,15 +16,7 @@ The article elaborates on how to use a customized HTML template for the HTML5 Re
 
 Once you create a custom HTML template, you can provide it to the HTML5 Report through the `templateUrl` property:
 
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "api/reports/",
-	templateUrl: '/custom-template-directory/telerikReportViewerTemplate.html',
-	reportSource: { 
-		report: "Product Catalog.trdp" 
-		}
-});
-````
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ReportViewerCustomTemplate}}
 
 The HTML template file is essentially a page that includes HTML document fragments nested inside __template__ tags. For example, this is what the report parameter template looks like:
 
@@ -34,18 +26,7 @@ The templates are loaded during the initialization of the __telerik_ReportViewer
 
 To find when the report viewer is loaded, provide an event handler function for the __telerik_ReportViewer__ widget's [ready()](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#ready) event:
 
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "api/reports/",
-	templateUrl: '/custom-template-directory/telerikReportViewerTemplate.html',
-	reportSource: { 
-		report: "Product Catalog.trdp" 
-		},
-	ready: function() {
-		// report viewer is now ready for action
-	}
-});
-````
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerCustomTemplateReadyEvent}}
 
 
 ## See Also

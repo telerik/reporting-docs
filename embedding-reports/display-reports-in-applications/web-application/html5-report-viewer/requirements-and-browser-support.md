@@ -40,7 +40,9 @@ previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applic
 
 Since the HTML5 Report Viewer uses [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) for its default template it is possible to use it even with a custom build instead of using the shipped Kendo bundle. There are two ways to create a custom build - with  [Kendo UI Custom Download Builder](https://www.telerik.com/download/custom-download) and using [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
 
-Below you can find the list of widgets that the HTML5 Report Viewer requires to work properly. In case you edit the template and remove a widget you can subtract it from this list as well. Note that the widgets have other dependencies. The Touch widget is required only for the gestures. All widgets except the TreeView can be found in [Kendo UI Core](https://www.telerik.com/download/kendo-ui-core). The TreeView is in [Kendo UI Professional](https://www.telerik.com/try/kendo-ui).
+Below you can find the list of widgets that the HTML5 Report Viewer requires to work properly. In case you edit the template and remove a widget, you can subtract it from this list as well.
+
+> The widgets have other dependencies. The Touch widget is required only for the gestures. All widgets except the TreeView can be found in [Kendo UI Core](https://www.telerik.com/download/kendo-ui-core). The TreeView is in [Kendo UI Professional](https://www.telerik.com/try/kendo-ui).
 
 Required widgets:
 
@@ -60,24 +62,23 @@ Required widgets:
 
 ## Browser Support
 
-The HTML5 Report Viewer requires an HTML5-compliant browser with support for JavaScript 1.8.5 (ECMAScript5) and CSS3. To ensure the report viewer's correct behavior, always mark the web page with the `<!DOCTYPE html>` declaration.
+The HTML5 Report Viewer requires an HTML5-compliant browser with support for JavaScript (ECMAScript 2019) and CSS3. To ensure the report viewer's correct behavior, always mark the web page with the `<!DOCTYPE html>` declaration.
 
-The list of Browsers covering the above requirements includes:
+The list of browsers covering the above requirements includes:
 
 * Desktop
 
 	+ Microsoft Edge
 	+ Google Chrome
+ 	+ Chromium-based Browsers 
 	+ Mozilla Firefox
-	+ Opera 15.0+
-	+ Safari 6.0+
+	+ Safari
 
 * Mobile
 
 	+ Safari for iOS
 	+ Google Chrome for iOS
 	+ Google Chrome for Android
-	+ Android Browser
 
 ## See Also
 

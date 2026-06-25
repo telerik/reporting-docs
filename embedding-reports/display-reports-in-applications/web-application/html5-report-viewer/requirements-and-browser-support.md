@@ -70,8 +70,9 @@ The list of browsers covering the above requirements includes:
 
 	+ Microsoft Edge
 	+ Google Chrome
+ 	+ Chromium-based Browsers 
 	+ Mozilla Firefox
-	+ Safari 16.4+
+	+ Safari
 
 * Mobile
 

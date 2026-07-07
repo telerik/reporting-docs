@@ -185,15 +185,18 @@ export class AppComponent {
 
 Pass the nonce as the `nonce` prop on the `<TelerikReportViewer>` component.
 
-```TypeScript
+```JSX
 import React from 'react';
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer';
 
 export function ReportViewerComponent({ nonce }: { nonce: string }) {
+
+    const reportSource = { report: 'Dashboard.trdp', parameters: {} };
+
     return (
         <TelerikReportViewer
             serviceUrl="api/reports/"
-            reportSource={{ report: 'Dashboard.trdp', parameters: {} }}
+            reportSource={reportSource}
             nonce={nonce}
         />
     );

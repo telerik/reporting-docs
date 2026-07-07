@@ -114,10 +114,10 @@ Register the middleware in `Program.cs` **before** the routing and static-assets
 using MyApp.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+var reportsPath = System.IO.Path.Combine(builder.Environment.ContentRootPath, "Reports");
 builder.Services
     .AddRazorPages()
     .AddTelerikReporting("ReportingNet", reportsPath);
-
 var app = builder.Build();
 
 app.UseMiddleware<CspMiddleware>();

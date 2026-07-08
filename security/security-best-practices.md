@@ -81,6 +81,10 @@ Don't expose sensitive information when working with the Report Viewers. Conside
 	
 	When using HTTPS, the requests are encrypted and generally considered secure. If you want an additional level of security, consider the [ReportSource Resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview) that resolves the client-side reportSource to a server-side one. For example, use as _reportSource.report_ insensitive identifiers that may be resolved to the actual ones in the resolver.
 
+* Content Security Policy (CSP) Compliance
+
+	Configure [Content Security Policy (CSP)](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/csp-compliance) for web applications that host HTML5-based viewers to prevent cross-site scripting (XSS) and data injection attacks. The nonce-based CSP approach allows the viewers to function securely without relaxing your CSP to allow `'unsafe-inline'` or `'unsafe-eval'` scripts and styles.
+
 ### Web Report Designer
 
 Use [Fine Tune the Customization in the Web Report Designer](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization#fine-tune-the-customization-in-the-web-report-designer) to limit the permissions per user.

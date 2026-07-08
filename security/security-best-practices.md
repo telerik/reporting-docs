@@ -83,7 +83,7 @@ Don't expose sensitive information when working with the Report Viewers. Conside
 
 * Content Security Policy (CSP) Compliance
 
-	Configure [Content Security Policy (CSP)](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/csp-compliance) for web applications that host HTML5-based viewers to prevent cross-site scripting (XSS) and data injection attacks. The nonce-based CSP approach allows the viewers to function securely without relaxing your CSP to allow `'unsafe-inline'` or `unsafe-eval` scripts and styles.
+	Configure [Content Security Policy (CSP)](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/csp-compliance) for web applications that host HTML5-based viewers to prevent cross-site scripting (XSS) and data injection attacks. The nonce-based CSP approach allows the viewers to function securely without relaxing your CSP to allow `'unsafe-inline'` or `'unsafe-eval'` scripts and styles.
 
 ### Web Report Designer
 

@@ -32,6 +32,8 @@ In the __Form_Load__ event handler you create an instance report source and set 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=Winviewer_SetReportSource}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=Winviewer_SetReportSource}}
 
+> note Calling `RefreshReport()` is mandatory to render the report. Without it, the viewer will remain blank even after the `ReportSource` is set.
+
 If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained in the article [Declaring the application as DPI-aware](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware).
 
 ## See Also

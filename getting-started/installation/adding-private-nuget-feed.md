@@ -36,7 +36,7 @@ Using an API key is more secure than using an account password, especially when 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
 
-   ![Telerik account page for generating a new API key](./images/account-generate-api-key.png)
+   ![Telerik Reporting account API Keys page for generating a private NuGet feed authentication key](./images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 1. Click **Generate Key**.

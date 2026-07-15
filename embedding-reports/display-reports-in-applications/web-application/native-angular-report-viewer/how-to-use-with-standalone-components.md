@@ -62,12 +62,7 @@ The following list describes the prerequisites for completing the tutorial:
 
 1. Reference the theme in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
 
-	```JSON
-	"styles": [
-		"src/styles.scss",
-		"node_modules/@progress/kendo-theme-default/dist/default-ocean-blue.scss"
-	],
-	```
+	{{source=CodeSnippets\Blazor\Docs\JSON\angular.json region=ThemeInAngularJson}}
 
 1. Run the application `start` script:
 

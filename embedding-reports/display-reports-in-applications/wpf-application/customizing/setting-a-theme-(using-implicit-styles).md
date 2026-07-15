@@ -56,12 +56,12 @@ We will apply embedded implicit styles for the Fluent theme in our example proje
 
 - Replace the referenced Telerik UI for WPF assemblies with assemblies from the `Binaries.NoXaml` folder.
 
-  If the Telerik UI for WPF assemblies are only used for the report viewer, use the Telerik UI for WPF assemblies available with the local demos. They are internally unlocked for the WPF Report Viewer, but can only be used with the report viewer. The .NET Framework assemblies containing _Telerik UI for WPF_ are located in `%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework`.
+	If the Telerik UI for WPF assemblies are only used for the report viewer, use the Telerik UI for WPF assemblies available with the local demos. They are internally unlocked for the WPF Report Viewer, but can only be used with the report viewer. The .NET Framework assemblies containing _Telerik UI for WPF_ are located in `%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework`.
 
 - Add reference to the Telerik.ReportViewer.Wpf.Themes assembly.
 - The next step is to merge these `ResourceDictionaries` in the `App.xaml` file:
 
-  {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\App.xaml}}
+	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\App.xaml}}
 
 ## Setting Customizable Implicit Style for the WPF Report Viewer Example
 
@@ -69,49 +69,12 @@ We will apply implicit styles for the `Vista` theme in our example project. Havi
 
 - Replace the referenced Telerik UI for WPF assemblies with assemblies from the `Binaries.NoXaml` folder.
 
-  If the Telerik UI for WPF assemblies are only used for the report viewer, use the Telerik UI for WPF assemblies available with the local demos. They are internally unlocked for the WPF Report Viewer, but can only be used with the report viewer. The Telerik UI for WPF assemblies are located in `%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework`.
+	If the Telerik UI for WPF assemblies are only used for the report viewer, use the Telerik UI for WPF assemblies available with the local demos. They are internally unlocked for the WPF Report Viewer, but can only be used with the report viewer. The Telerik UI for WPF assemblies are located in `%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework`.
 
 * Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for WPF) from `Themes.Implicit/../Vista/../Themes/` folder.
 * In the Themes folder of the project, add the respective Report Viewer theme (in our case Vista) from the `WPF/Themes` folder.
 * The next step is to merge these [`ResourceDictionaries`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.resourcedictionary?view=windowsdesktop-7.0) in the `App.xaml` file:
 
-  ```XAML
-  <Application x:Class="WpfApplication1.App"
-  		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-  		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  		StartupUri="MainWindow.xaml">
-   <Application.Resources>
-     <ResourceDictionary>
-  	 <ResourceDictionary.MergedDictionaries>
-  	   <ResourceDictionary Source="/Themes/System.Windows.xaml"/>
-  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
-  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
-  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.ConversationalUI.xaml"/>
-  	   <ResourceDictionary Source="/Themes/Telerik.ReportViewer.Wpf.xaml"/>
-  	 </ResourceDictionary.MergedDictionaries>
-     </ResourceDictionary>
-   </Application.Resources>
-  </Application>
-  ```
+	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\AppImplicitStyles.xaml}}
 
-> note For version older than [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813), the `Telerik.Windows.Controls.ConversationalUI` reference is unneeded, and the snippet above can be changed to:
->
-> ```XAML
-> <Application x:Class="WpfApplication1.App"
->  		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
->  		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
->  		StartupUri="MainWindow.xaml">
->  <Application.Resources>
->   <ResourceDictionary>
->  	 <ResourceDictionary.MergedDictionaries>
-> 	   <ResourceDictionary Source="/Themes/System.Windows.xaml"/>
->  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
->  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
->  	   <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
->  	   <ResourceDictionary Source="/Themes/Telerik.ReportViewer.Wpf.xaml"/>
->  	 </ResourceDictionary.MergedDictionaries>
->   </ResourceDictionary>
->  </Application.Resources>
-> </Application>
-> ```
+> note For version older than [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813), the `Telerik.Windows.Controls.ConversationalUI` reference is unneeded, and you may remove it from the snippet above.

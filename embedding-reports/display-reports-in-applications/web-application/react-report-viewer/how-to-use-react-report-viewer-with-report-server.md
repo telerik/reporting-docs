@@ -27,61 +27,36 @@ The following list describes the prerequisites for this tutorial:
 
 1.  Create new React application using the [Creating a React App](https://react.dev/learn/creating-a-react-app) tutorial.
 
-    ```powershell
-    npx create-react-app my-app-with-viewer
-    cd my-app-with-viewer
-    ```
+	```powershell
+	npx create-react-app my-app-with-viewer
+	cd my-app-with-viewer
+	```
 
 1.  Install the `@progress/telerik-react-report-viewer` NPM package by running:
 
-    ```powershell
-    npm install @progress/telerik-react-report-viewer
-    ```
+	```powershell
+	npm install @progress/telerik-react-report-viewer
+	```
 
 1.  Once installed, import the `TelerikReportViewer` component in the `index.js` file:
 
-    ```JSX
-    import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
-    ```
+	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerLocalization.jsx region=ImportTelerikReportViewer}}
 
 1.  Add the React Report Viewer to the page:
 
-    ```JSX
-    export function ReportViewer() {
-
-    let viewer;
-    const reportServer = { url: 'https://localhost:83/', username: 'myusername', password: 'mypass' };
-    const reportSource = { report: 'Samples/Dashboard.trdp', parameters: {} };
-    const viewerContainerStyle = { position: 'absolute', inset: '5px' };
-
-    return (
-    	<>
-    		<TelerikReportViewer
-    			ref={el => viewer = el}
-    			reportServer={reportServer}
-    			reportSource={reportSource}
-    			viewerContainerStyle={viewerContainerStyle}
-    			viewMode="INTERACTIVE"
-    			scaleMode="SPECIFIC"
-    			scale={1.0}
-    			enableAccessibility={false} />
-    		<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-    		<button onClick={ () => viewer.commands.print.exec() }>Print</button>
-    	</>)
-    }
-    ```
+	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerWithRS.jsx region=ReactViewerWithRS}}
 
 1.  Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _public/index.html_:
 
-{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
+	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
-    > note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
+	> note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
 
 1.  Run the application:
 
-    ```powershell
-    npm start
-    ```
+	```powershell
+	npm start
+	```
 
 ## See Also
 

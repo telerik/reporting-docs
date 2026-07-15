@@ -32,7 +32,7 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
 
 1.  The React Report Viewer is using a special [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) subset that contains only the required widgets and the Kendo DateTimePicker widget is not part of the subset.
 
-    For that reason, we need to load the Kendo All script. Note that currently, we need to use this special logic for loading the viewer to the fact that jQuery has to be loaded before Kendo All:
+    For that reason, we need to load the Kendo All script. Note that currently, we need this special loading logic because jQuery has to be loaded before Kendo All:
 
 	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerCustomParameterEditors.jsx region=ReactViewerCustomParameterEditors}}
 

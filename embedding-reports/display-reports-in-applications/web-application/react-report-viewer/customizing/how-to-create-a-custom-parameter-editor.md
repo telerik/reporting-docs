@@ -28,104 +28,13 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
     * `addAccessibility(param)` - *(Required when `enableAccessibility` is `true`)* Called after `beginEdit` to configure accessibility attributes on the editor element.
     * `setAccessibilityErrorState(param)` - *(Required when `enableAccessibility` is `true`)* Called when the parameter value changes to update the accessibility error state.
 
-    ```JavaScript
-    function match(parameter) {
-    	return parameter.type === "System.DateTime";
-    }
-
-    function createEditor(placeholder, options) {
-    	var dateTimePicker = $(placeholder).html('<input type="datetime"/>'),
-    	parameter,
-    	valueChangedCallback = options.parameterChanged,
-    	dropDownList;
-
-    	function onChange() {
-    		var val = dropDownList.value();
-    		valueChangedCallback(parameter, val);
-    	}
-
-    	return {
-    		beginEdit: function (param) {
-    			parameter = param;
-
-    			$(dateTimePicker).find("input").kendoDateTimePicker({
-    				dataTextField: "name",
-    				dataValueField: "value",
-    				value: parameter.value,
-    				dataSource: parameter.availableValues,
-    				change: onChange
-    			});
-
-    			dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
-    		},
-    		addAccessibility: function (param) {
-    			var input = $(dateTimePicker).find("input");
-    			if (input.length) {
-    				input.attr("aria-label", param.text + ". Date time parameter.");
-    			}
-    		},
-    		setAccessibilityErrorState: function (param) {
-    			var input = $(dateTimePicker).find("input");
-    			if (input.length) {
-    				if (param.Error) {
-    					input.attr("aria-invalid", "true");
-    				} else {
-    					input.removeAttr("aria-invalid");
-    				}
-    			}
-    		}
-    	};
-    }
-    ```
+	{{source=CodeSnippets\Blazor\Docs\JavaScript\ReactViewerCustomParameterEditors.js region=ReactCustomDateTimePicker}}
 
 1.  The React Report Viewer is using a special [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) subset that contains only the required widgets and the Kendo DateTimePicker widget is not part of the subset.
 
-    For that reason, we need to load the Kendo All script. Note that currently, we need to use this special logic for loading the viewer to the fact that jQuery has
-    to be loaded before Kendo All:
+    For that reason, we need to load the Kendo All script. Note that currently, we need this special loading logic because jQuery has to be loaded before Kendo All:
 
-    ```JavaScript
-        let viewer;
-        const reportSource = { report: 'Report.trdp' };
-
-        function loadScript(callback) {
-        	const script = document.createElement("script");
-        	script.src = "https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/js/kendo.all.min.js";
-        	script.async = true;
-        	script.onload = callback;
-        	document.body.appendChild(script);
-        }
-
-        class App2 extends Component {
-        	componentDidMount() {
-        		loadScript(() => {
-        			this.setState({ visible: true });
-        		});
-        	}
-
-        	render() {
-        		const parameterEditors = [
-        				{
-        					match: match,
-        					createEditor: createEditor
-        				}
-        			];
-
-
-        		return this.state?.visible
-        		? (
-        			<div>
-        				<TelerikReportViewer ref={ref => viewer = ref} reportSource={reportSource} parameterEditors={parameterEditors} />
-        			</div>
-        		  )
-        		: null;
-        	}
-        }
-
-        ReactDOM.render(
-        	<App2/>,
-        	document.getElementById('root')
-        );
-    ```
+	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerCustomParameterEditors.jsx region=ReactViewerCustomParameterEditors}}
 
 ## See Also
 

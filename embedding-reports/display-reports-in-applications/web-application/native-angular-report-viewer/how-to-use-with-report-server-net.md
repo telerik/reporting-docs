@@ -54,12 +54,7 @@ The user account that will authenticate with the Report Server may be any User, 
 
 1. Reference the theme in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration, which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
 
-	```JSON
-	"styles": [
-		"src/styles.scss",
-		"node_modules/@progress/kendo-theme-default/dist/default-ocean-blue.scss"
-	],
-	```
+	{{source=CodeSnippets\Blazor\Docs\JSON\angular.json region=ThemeInAngularJson}}
 
 1. In the class of the component(e.g. `AppComponent`) where the viewer will be displayed, define a `reportSource` object property specifying the category and the name of the report that will be displayed. For example, if the category is **Samples** and the report is **Dashboard**, the syntax will look as follows:
 

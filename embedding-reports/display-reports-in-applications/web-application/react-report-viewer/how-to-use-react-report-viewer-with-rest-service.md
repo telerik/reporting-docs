@@ -29,17 +29,7 @@ The following list describes the prerequisites for this tutorial:
 
 	**appsettings.json** file:
 
-	```JSON
-	{
-		"ConnectionStrings": [
-			{
-				"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-				"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-				"providerName": "System.Data.SqlClient"
-			}
-		]
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\RC_Config_MultiConnectionStrings.json region=ConnectionStrings_Variant_3}}
 
 ## Using React Report Viewer in React application
 
@@ -60,9 +50,7 @@ The following list describes the prerequisites for this tutorial:
 
 1. Once installed, import the `TelerikReportViewer` component in the `index.js` file:
 
-	```JavaScript
-	import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
-	```
+	{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerLocalization.jsx region=ImportTelerikReportViewer}}
 
 1. Add the React Report Viewer to the React component:
 

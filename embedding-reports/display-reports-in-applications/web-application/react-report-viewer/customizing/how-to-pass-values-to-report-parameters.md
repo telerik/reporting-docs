@@ -22,19 +22,7 @@ The following example demonstrates how to update the report viewer when the sele
 
 **index.js**:
 
-```JavaScript
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
-import {ReportViewer} from './ReportViewer.js';
-
-ReactDOM.render(
-	<ReportViewer/>,
-	document.getElementById('root')
-);
-```
+{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerCustomParameterEditors.jsx region=ReactViewerPassValuesToReportParameters}}
 
 **ReportViewer.js**:
 

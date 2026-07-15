@@ -49,22 +49,7 @@ This resource will contain the default `English` messages.
 	- Mark the `resx` files as `Embedded Resource` (right click > Properties > Build Action).
 	- Have the following in your `ProjectName.csproj` file so the designer file is generated. It should be added when you add the main messages file, or when you open and save it. Copy the snippet in case it is not added. If the `Designer` file does not get generated, open the `resx` file in Visual Studio and toggle its `Access Modifier` to `Public`.
 
-	```XML
-	<ItemGroup>
-		<Compile Update="Resources\Messages.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Messages.resx</DependentUpon>
-		</Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-		<EmbeddedResource Update="Resources\Messages.resx">
-			<Generator>PublicResXFileCodeGenerator</Generator>
-			<LastGenOutput>Messages.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
-	```
+	{{source=CodeSnippets\Blazor\Docs\XML\csproj.xml region=NativeBlazorViewerLocalize}}
 
 1. Create a custom localizer, that implements the `ITelerikReportingStringLocalizer` Interface. The localizer must provide strings based on keys. For this example, with `Messages.resx`, the localizer implementation might look as follows
 

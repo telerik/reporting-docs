@@ -50,7 +50,7 @@ The following list describes the prerequisites for this tutorial:
 
 	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
-	> note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
+	> note To get the Sass-based Kendo UI themes, you can use either the pre-built CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
 
 1.  Run the application:
 

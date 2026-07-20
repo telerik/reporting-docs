@@ -42,7 +42,7 @@ To install your Telerik License key by using the Visual Studio extensions for Te
 
 1. Go to **Extensions** > **Telerik** > **Licensing** and select **Download Key**.
 
-	![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
+	![Telerik Reporting Visual Studio extension Licensing menu with the Download Key command](images/vs-extension-download-key.png)
 
 The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you used an alternative [installation method](slug:telerikreporting/installation) or deselected them during setup.
 
@@ -51,7 +51,7 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 1. Click the **Download License Key** button.
 
-	![Download License Key](images/download-license-key.png)
+	![Telerik Reporting License Keys page with the Download License Key button](images/download-license-key.png)
 
 1. Copy the `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
 

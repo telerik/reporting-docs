@@ -26,11 +26,11 @@ Telerik Reporting provides the following Radial Gauge report item presets out of
 
 * Single-Range
 
-	![The default look of the Single-Range Radial Gauge](../images/radial-gauge-single-range.png)
+	![Telerik Reporting Radial Gauge report item single-range preset](../images/radial-gauge-single-range.png)
 
 * Multi-Range
 
-	![The default look of the Multi-Range Radial Gauge](../images/radial-gauge-multi-range.png)
+	![Telerik Reporting Radial Gauge report item multi-range preset](../images/radial-gauge-multi-range.png)
 	
 ### Linear
 
@@ -40,19 +40,19 @@ Telerik Reporting provides the following Linear Gauge report item presets out of
 
 * Single-Range Horizontal
 
-	![The default look of the Single-Range Horizontal Linear Gauge](../images/linear-horizontal-gauge-single-range.png)
+	![Telerik Reporting Linear Gauge report item single-range horizontal preset](../images/linear-horizontal-gauge-single-range.png)
 
 * Single-Range Vertical
 
-	![The default look of the Single-Range Vertical Linear Gauge](../images/linear-vertical-gauge-single-range.png)
+	![Telerik Reporting Linear Gauge report item single-range vertical preset](../images/linear-vertical-gauge-single-range.png)
 
 * Multi-Range Horizontal
 
-	![The default look of the Multi-Range Horizontal Linear Gauge](../images/linear-horizontal-gauge-multi-range.png)
+	![Telerik Reporting Linear Gauge report item multi-range horizontal preset](../images/linear-horizontal-gauge-multi-range.png)
 
 * Multi-Range Vertical
 
-	![The default look of the Multi-Range Vertical Linear Gauge](../images/linear-vertical-gauge-multi-range.png)
+	![Telerik Reporting Linear Gauge report item multi-range vertical preset](../images/linear-vertical-gauge-multi-range.png)
 
 ## Next Steps
 

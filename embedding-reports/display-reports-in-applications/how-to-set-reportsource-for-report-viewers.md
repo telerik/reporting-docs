@@ -48,6 +48,8 @@ The specified report is processed locally on the same machine where the Report V
 
 - **Set the Report Source programmatically**
 
+**C# and VB.NET example for setting a local ReportSource programmatically**
+
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
 

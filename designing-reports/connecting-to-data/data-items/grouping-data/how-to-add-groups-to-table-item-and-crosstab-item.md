@@ -108,7 +108,7 @@ To change the repeat behavior after group creation:
 1. Select the Table, Crosstab, or List item on the design surface.
 1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), switch to **Extended Mode**. Static groups are hidden in the default Standard Mode.
 
-	![A screenshot of the Group Explorer of the Standalone Report Designer, highlighting the Extended Mode option.](images/extended-mode-group-explorer.png)
+	![Telerik Reporting Standalone Report Designer Group Explorer highlighting the Extended Mode option for static and dynamic table groups.](images/extended-mode-group-explorer.png)
 
 1. Locate the leaf static group that represents the header or footer you want to modify. Static groups appear with a distinct icon and gray text.
 
@@ -134,7 +134,7 @@ To change the repeat behavior after group creation:
 
 	The screenshot below shows this hierarchy in the Group Explorer alongside the corresponding table rows on the design surface:
 
-	![A screenshot of the Group Explorer of the Standalone Report Designer in Extended Mode, and a table selected in the design view.](images/extended-mode-group-explorer-table.png)
+	![Telerik Reporting Standalone Report Designer Group Explorer in Extended Mode with a table selected to show repeatable header and footer group hierarchy.](images/extended-mode-group-explorer-table.png)
 
 1. Double-click the leaf static group to open the **Group Properties** editor.
 1. Set `PrintOnEveryPage` to `True` to repeat the header/footer on every page, or `False` to disable repeating.
@@ -156,6 +156,8 @@ To delete a group:
 1. Click **OK**.
 
 ## Add a Group Programmatically
+
+You can find below a C# and VB.NET example for adding a table group programmatically:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewGroupSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewGroupSnippet}}

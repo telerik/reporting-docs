@@ -17,7 +17,7 @@ After you install Telerik Reporting, the extensions are available from **Extensi
 
 Before you use any extension feature, make sure the extension is installed:
 
-![Visual Studio Extensions menu with Telerik Reporting tools](images/telerik-reporting-tools.png)
+![Visual Studio Extensions menu showing Telerik Reporting tools](images/telerik-reporting-tools.png)
 
 ## What the Extensions Add
 
@@ -36,7 +36,7 @@ Starting with the [Progress® Telerik® Reporting 2025 Q4 (19.3.25.1111)](https:
 
 Use this integration when you want GitHub Copilot or another Model Context Protocol (MCP)-compatible client to work with Telerik Reporting context directly from your development environment.
 
-![Visual Studio extension menu with Telerik Reporting MCP commands](images/vs-reporting-mcp-extension.png)
+![Visual Studio Extensions menu showing Telerik Reporting MCP Server configuration commands](images/vs-reporting-mcp-extension.png)
 
 ### Choose the Configuration Scope
 
@@ -64,7 +64,7 @@ After this setup, your MCP client can use the Telerik Reporting MCP Server confi
 
 After [installing Telerik Reporting](slug:telerikreporting/installation), the extensions add Telerik Reporting project templates to the **New Project** dialog in Visual Studio:
 
-![Visual Studio New Project dialog with Telerik Reporting project templates](images/new-project-templates.png)
+![Visual Studio New Project dialog showing Telerik Reporting project templates](images/new-project-templates.png)
 
 Use these templates when you want to start with a project that already contains the basic Telerik Reporting setup.
 
@@ -79,7 +79,7 @@ To create a project from a Telerik Reporting template:
 
 If you select **Telerik Reporting REST service**, the **REST Service Project Configuration** wizard opens:
 
-![REST Service Project Configuration wizard for Telerik Reporting](images/rest-service-project-configuration-wizard.png)
+![Telerik Reporting REST Service Project Configuration wizard in Visual Studio](images/rest-service-project-configuration-wizard.png)
 
 Use that wizard to configure the REST service properties for your project.
 
@@ -92,9 +92,9 @@ For hosting guidance after the project is created, refer to:
 
 With the [installation of Telerik Reporting](slug:telerikreporting/installation), several [report item](slug:report_item) templates are added to the **New Item** dialog of Visual Studio:
 
-![Visual Studio Add New Item dialog entry point for Telerik Reporting items](images/add-new-item.png)
+![Visual Studio project context menu opening Add New Item for Telerik Reporting items](images/add-new-item.png)
 
-![Visual Studio New Item dialog with Telerik Reporting item templates](images/new-item-templates.png)
+![Visual Studio New Item dialog showing Telerik Reporting item templates](images/new-item-templates.png)
 
 ### Add a New Reporting Item
 
@@ -107,7 +107,7 @@ To add a Telerik Reporting item to an existing project:
 
 If you choose a wizard-based report template, the New Report Wizard opens:
 
-![New Report Wizard selector in Visual Studio](images/report-wizard.png)
+![Visual Studio New Report Wizard selector for Telerik Reporting report templates](images/report-wizard.png)
 
 Depending on your selection, the corresponding report wizard is displayed, for example the [Band Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview).
 
@@ -117,7 +117,7 @@ The [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-too
 
 To start the wizard, select **Extensions > Telerik > Reporting > Upgrade Wizard**:
 
-![Visual Studio menu path for starting the Telerik Reporting Upgrade Wizard](images/start-upgrade-wizard.png)
+![Visual Studio Extensions menu path for starting the Telerik Reporting Upgrade Wizard](images/start-upgrade-wizard.png)
 
 Use the Upgrade Wizard when you need to align an existing .NET Framework project with a different installed Telerik Reporting version.
 
@@ -127,7 +127,7 @@ After [installing Telerik Reporting](slug:telerikreporting/installation), you ca
 
 During the [installation process](slug:telerikreporting/installation), Telerik Reporting assemblies are also added to the Global Assembly Cache (GAC). This enables the corresponding items in the Visual Studio Toolbox for .NET Framework projects:
 
-![Visual Studio Toolbox with Telerik Reporting items for .NET Framework projects](images/toolbox-items.png)
+![Visual Studio Toolbox showing Telerik Reporting items for .NET Framework projects](images/toolbox-items.png)
 
 If the Telerik Reporting Toolbox items do not appear as expected, refer to the [Troubleshooting](slug:telerik-reporting-toolbox-items-are-missing) article.
 

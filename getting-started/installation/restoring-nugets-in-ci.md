@@ -2,7 +2,8 @@
 title: Restoring NuGet Packages in CI
 page_title: Authenticating and Restoring NuGet Packages in CI
 description: "Learn how to use NuGet Keys to authenticate with the private Telerik NuGet server and restore Telerik Reporting packages in your Continuous Integration or desktop environment."
-slug: using-nuget-keys
+slug: restoring-nugets-in-ci
+previous_url: /getting-started/installation/using-nuget-keys
 tags: telerik, reporting, restore, nuget, packages, ci, continuous, integration, installation
 published: True
 position: 6
@@ -11,25 +12,37 @@ reportingArea: General
 
 # Restoring NuGet Packages in Your CI Workflow
 
-This article describes how to use token-based authentication for the Telerik NuGet feed. You will learn how to create and use NuGet API keys to restore Telerik NuGet packages in your Continuous Integration (CI) workflow.
+## (Recommended) Using NuGet.org
 
-When you need to restore Telerik NuGet packages as part of your CI, using API Keys provides a secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow. Unlike your Telerik credentials, an API Key has a limited scope and can be used only with the Telerik NuGet server. If any of your API Keys is compromised, you can quickly delete it and create a new one.
+As of the **Q3 2026** release, the Telerik Reporting NuGet packages are hosted on [NuGet.org](https://www.nuget.org/)
 
-## Generating API Keys
+For pipelines and self-hosted build agents, we recommend using [NuGet.org](https://www.nuget.org/) for current releases because it removes the need to configure private-feed credentials. Commit package references and, when needed, a repository-level `NuGet.Config` file, but keep any secrets outside source control.
+
+If your pipeline must restore from the Telerik NuGet server or another authenticated feed, store the API key or credentials in the pipeline secret store and inject them during restore.
+
+## Using the Telerik Feed and NuGet API Keys
+
+When working with releases before **Q3 2026**, it is necessary to use the priva token-based authentication for the Telerik NuGet feed. In this section, we will explain how to create and use NuGet API keys to restore Telerik NuGet packages in your CI/CD workflows.
+
+When you need to restore Telerik NuGet packages as part of your CI/CD, using API Keys provides a secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
+
+Unlike your Telerik credentials, an API Key has a limited scope and can be used only with the Telerik NuGet server. If any of your API Keys is compromised, you can quickly delete it and create a new one.
+
+### Generating API Keys
 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
 
-	![Manage API Keys](images/account-generate-api-key.png)
+   ![Manage API Keys](images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 1. Click **Generate Key**.
 1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
 1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
 
->API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+> API keys expire after _two years_. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
-## Storing API Keys
+### Storing API Keys
 
 > Never check in an API Key with your source code or leave it publicly visible in plain text, for example, as a raw key value in a `NuGet.Config` file. An API Key is valuable as bad actors can use it to access the NuGet packages that are licensed under your account. A potential key abuse could lead to a review of the affected account.
 
@@ -45,43 +58,43 @@ If you use Azure DevOps Service connection instead of secret environment variabl
 
 For more details on storing and protecting your API Key, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
 
-## Using an API Key
+### Using an API Key
 
 There are two popular ways to use the Telerik NuGet server in a build:
 
-* [Using a NuGet.Config file with your projects](#using-a-nugetconfig-file-with-your-projects)
+- [Using a NuGet.Config file with your projects](#using-a-nugetconfig-file-with-your-projects)
 
-- [Using only CLI commands](#using-only-cli-commands)
+* [Using only CLI commands](#using-only-cli-commands)
 
 For more information on how to use API keys in a build, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
 
-### Using a NuGet.Config File with Your Projects
+#### Using a NuGet.Config File with Your Projects
 
 1. In your `NuGet.Config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-	{{source=CodeSnippets\MvcCS\XmlConfiguration\RestoringNugetPackagesInCi.xml region=UsingANugetConfigFileWithYourProjects}}
+   {{source=CodeSnippets\MvcCS\XmlConfiguration\RestoringNugetPackagesInCi.xml region=UsingANugetConfigFileWithYourProjects}}
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 
 The exact steps to set the `MY_API_KEY` environment variable depend on your workflow. For more details, refer to the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
 
-### Using Only CLI Commands
+#### Using Only CLI Commands
 
 You can use the CLI `add source` (or `update source`) command to set the credentials of a package source. This CLI approach is applicable if your CI system doesn't support default environment variable secrets or if you do not use a custom `nuget.config`.
 
 - To set the credentials in Azure DevOps:
 
-	```bash
-	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_API_KEY)' --configfile './nuget.config' --store-password-in-clear-text
-	```
+  ```bash
+  dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_API_KEY)' --configfile './nuget.config' --store-password-in-clear-text
+  ```
 
 - To set the credentials in GitHub Actions:
 
-	```bash
-	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_API_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-	```
+  ```bash
+  dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_API_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
+  ```
 
-## Additional Resources
+### Additional Resources
 
 If you just start using the Telerik NuGet server in your CI or inter-department workflows, check the two blog posts below. You will learn about the various use cases and find practical implementation details.
 

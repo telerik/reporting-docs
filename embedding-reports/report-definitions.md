@@ -34,7 +34,7 @@ When the report engine is embedded in the current application (i.e. the *Telerik
 
 For this example we will use a TypeReportSource (section -1-). The TypeReportSource specifies the report by its [Assembly Qualified Name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0). The Reporting Engine uses [Reflection](https://learn.microsoft.com/en-us/dotnet/api/system.reflection?view=net-7.0) to create an instance of the report class through its default parameterless constructor.
 
-The examples with the UriReportSource (section -2-) that specifies the path to a declarative report definition (TRDP, TRDX or TRBP file) and the InstanceReportSource (section -3-) that passed a Report instance to the Reporting Engine are commented out in the snippets.
+The examples with the UriReportSource (section -2-) that specifies the path to a declarative report definition (TRDP, TRDX, TRDJ, or TRBP file) and the InstanceReportSource (section -3-) that passed a Report instance to the Reporting Engine are commented out in the snippets.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}

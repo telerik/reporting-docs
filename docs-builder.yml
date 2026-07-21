@@ -46,15 +46,15 @@ markdown-replacements:
 liquid-output-delimiter-left: "{{"
 liquid-output-delimiter-right: "}}"
 liquid:
-  suiteversion: "2026 Q2"
-  buildversion: "20.1.26.707"
-  reportserverversion: "12.1.26.707"
-  spaviewerversion: "30.26.707"
-  nodeversion: "16.0.0"
-  angularsubsetversion: "21.1.0"
-  kendosubsetversion: "2025.4.1111"
-  kendothemeversion: "12.3.0"
-  blazoruiversion: "13.1.0"
+  suiteversion: "2026 Q3"
+  buildversion: "20.2.26.812"
+  reportserverversion: "12.2.26.812"
+  spaviewerversion: "31.26.812"
+  nodeversion: "20.19.0"
+  angularsubsetversion: "24.1.0"
+  kendosubsetversion: "2026.2.520"
+  kendothemeversion: "14.3.0"
+  blazoruiversion: "14.0.0"
   jqueryversion: "3.7.1"
   mindotnetversion: "8"
   mindotnetoutputdir: "\\bin\\Debug\\net8.0"
@@ -210,7 +210,7 @@ meta:
     title: "Set Up in .NET Core 2.1"
     hidden: true
   designing-reports/report-designer-tools/web-report-designer/tools:
-    position: 10
+    position: 12
     title: "Tools"
   designing-reports/report-designer-tools/desktop-designers:
     position: 11

@@ -62,7 +62,7 @@ This guide applies the recommended NuGet package references approach to add the 
 1. Reference the **Telerik.Reporting.Services.AspNetCore** package.
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the **Telerik.Reporting.OpenXmlRendering** NuGet package.
 
-   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management.
+   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management.
 
    Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Support - Requirements](slug:telerikreporting/using-reports-in-applications/dot-net-core-support#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
@@ -74,15 +74,15 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 1. Make sure the application is configured for WebAPI controllers using the [AddControllers()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addcontrollers) extension method:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddControllers}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddControllers}}
 
 1. Add the dedicated [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object needed from the Reports Service in the dependency container. Note how the report source resolver will target the `Reports` folder we created earlier.
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestWithCustomConfig}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportsControllerRestWithCustomConfig}}
 
 1. Make sure the endpoints are configured for API controllers by adding the following line in the lambda expression argument after the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) call:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingRestServiceAppUseEndpoints}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingRestServiceAppUseEndpoints}}
 
 ### Add Configuration Settings to the Program.cs file (Optional)
 
@@ -120,7 +120,7 @@ The last supported type of **ConnectionStrings** configuration uses an array to 
 1. Implement a Reports controller. Right-click on the `Controllers` folder and add a new item: **Add** > **New item** > **API Controller - Empty** item. Name it `ReportsController`. This will be our Telerik Reporting REST service in the project.
 1. Inherit the [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like:
 
-	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs}}
+   {{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs}}
 
 ### Test the service implementation
 
@@ -149,4 +149,4 @@ A full example can be found in the installation folder of Telerik Reporting:
 
 ## See Also
 
-* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications](slug:asp-net-core-reporting)
+- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications](slug:asp-net-core-reporting)

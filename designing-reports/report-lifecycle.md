@@ -21,7 +21,7 @@ The lifecycle of a report includes the following stages:
 1. Defining the report. Depending on the report designer where you define the report, the produced report definition is of the following types:
 
 	+ A report class for [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)−The report resources are stored in a `.resx` .NET-managed resource file. Depending on the programming language that you used when defining the report, the report class consists of either visual C# class files (`.cs` and `.Designer.cs`) or visual basic class files (`.vb` and `.Designer.vb`).
-	+ A `.trdx`, `.trdp`, or `.trbp` XML file for [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). The XML can be stored as an XML definition and resources that are packaged in a `.zip` file (TRDP), in a plain XML format (TRDX), or as a collection of report definitions (report book) that are packaged in a `.zip` format.
+	+ A `.trdx`, `.trdj`, `.trdp`, or `.trbp` file for [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview). The definition can be stored in a plain XML format (TRDX), in a plain JSON format (TRDJ), as an XML or JSON definition and resources that are packaged in a `.zip` file (TRDP), or as a collection of report definitions (report book) that are packaged in a `.zip` format (TRBP).
 
 1. Processing the report definition.
 

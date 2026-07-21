@@ -44,9 +44,7 @@ Disregarding the data, which consists of the actual encoded data, along with the
 	This process is called masking, and the masking information is included in the format data to alert the decoder that certain modules have been inverted. The format data is encoded in 15 bits. One full copy of the format data is located around the upper left finder pattern. A second copy, divided into seven and eight bits, is located next to the other two finder patterns.
 
 * __Version Data__&mdash;The version data includes information on which version the QR code is. This data is encoded into 18 modules, in a six-by-three matrix. Two copies of the version data matrix are included in the QR code: one next to the upper right finder pattern, and the other next to the lower left one.
-* __Blank Space__&mdash;Additionally, each QR code contains an obligatory four-modules-wide white space area in its periphery.
-
-	![Blank Space in Barcode QR Code](images/Barcodes/barcode-qrcode-blankspace.png)
+* __Quiet Zone__&mdash;Additionally, each QR code contains an obligatory four-modules-wide white space area in its periphery.
 
 * __Data__&mdash;The data occupies all modules that are not occupied by any of the formatting data segments mentioned above. If the data is smaller than the capacity of the remaining modules, it is padded to ensure that all modules are used. Additionally, the data consists of the actual encoded data, entered by the user, and the error correction bits, calculated on that data.
 

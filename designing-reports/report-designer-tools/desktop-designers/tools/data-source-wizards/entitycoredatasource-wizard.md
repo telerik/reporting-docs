@@ -44,7 +44,7 @@ After the **EntityCoreDataSource** wizard appears, you have to perform the follo
 
 	![The optional 'Configure Design Time Parameters' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET.](images/configure-entity-core-ds-configure-design-parameters.png)
 
-	> Specifying design-time values for the parameters is necessary because the designer might need to execute the selected member to populate the schema displayed in the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) tool window and in the [Edit Expression Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog). These values do not affect the execution of the member at run time.
+	> Specifying design-time values for the parameters is necessary because the designer might need to execute the selected member to populate the schema displayed in the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) tool window and in the [Edit Expression Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog). These values do not affect the execution of the member at runtime.
 
 1. **Preview data source results** Preview first 100 data rows based on the design-time parameter values.
 

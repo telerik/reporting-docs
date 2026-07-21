@@ -18,7 +18,7 @@ The **EntityCoreDataSource Wizard** is available in the **Standalone Report Desi
 
 After the **EntityCoreDataSource** wizard appears, you have to perform the following steps:
 
-1. **Choose Your Data Connection**. In this step, you have to point the wizard to the connection string to the database that the Entity Framework Core `DbContext` you want to use at design time. The designer will use it to connect to the database when the connection string cannot be resolved from the code.
+1. **Choose Your Data Connection**. In this step, you select an existing data connection or create a new one. The wizard uses its connection string when it needs to connect to the database at design time (for example, to load the model or preview data).
 
 	![The 'Choose Your Data Connection' page of the Entity Framework Core Data Source Wizard in the Standalone Report Designer for .NET with a selected existing local data connection.](images/configure-entity-core-ds-choose-data-connection.png)
 

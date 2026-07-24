@@ -39,7 +39,7 @@ Consider the following steps when experiencing problems while working with Teler
 - **Hard refresh the browser** to ensure there are no cached Report Viewer resources with older versions.
 	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running the same version.` In this particular case, you may have upgraded the viewer and the service from `19.3.26.121` to `20.0.26.211` successfully. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
 - **Record a server-side log** file containing detailed information about the error:
-	+ Set the trace listener verbosity to the most detailed value `Verbose` as explained in the article [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element):
+	+ Set the reporting engine trace verbosity to the most detailed value `Verbose` as explained in the article [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element):
 
 		```JSON
 		"telerikReporting": {

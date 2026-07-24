@@ -14,39 +14,39 @@ previous_url: /telerik-reporting-rest-service-storage,/embedding-reports/host-th
 
 When configuring the REST Reporting Service, you must provide an [IStorage](/api/Telerik.Reporting.Cache.Interfaces.IStorage) interface implementation.
 
-An instance of the provided implementation will be used from the service to store its internal state (like active clients, interactivity state, and rendered reports).
+An instance of the provided implementation will be used by the service to store its internal state (like active clients, interactivity state, and rendered reports). The assets are serialized and saved as a [key-value store](https://en.wikipedia.org/wiki/Key%E2%80%93value_database).
 
-The interface also exposes a method called [AcquireLock](/api/Telerik.Reporting.Cache.Interfaces.IStorage#Telerik_Reporting_Cache_Interfaces_IStorage_AcquireLock_System_String_) which is used from the service to enforce serialized access to all stored resources from each thread of the application, and between the instances of the application, in case of a multi-instance environment (i.e., Web Farm).
+The interface exposes a method called [AcquireLock](/api/Telerik.Reporting.Cache.Interfaces.IStorage#Telerik_Reporting_Cache_Interfaces_IStorage_AcquireLock_System_String_) which is used by the service to enforce serialized access to all stored resources from each thread of the application, and between the instances of the application, in case of a multi-instance environment (i.e., Web Farm).
 
 This requires selecting a suitable interface implementation when embedding the Reporting REST Service within your application.
 
-## Multi and Single Instance Support
+## Multi- and Single-Instance Support
 
-The following implementations of the IStorage interface allow service multiple instances support. Those implementations also offer a better overall performance.
+The following implementations of the IStorage interface allow the service to support multiple instances.
 
 - [MsSqlServerStorage](/api/Telerik.Reporting.Cache.MsSqlServerStorage) - [How to Configure an MSSQL Database Storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage).
 
-  It supports storage server-side locks to achieve inter-machine resources serialized access by its Sql Server transactions feature.
+  It supports storage server-side locks to achieve inter-machine resources serialized access through its Sql Server transactions feature.
 
 - [RedisStorage](/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage) - [How to Use Redis storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage).
 
-  It supports storage server-side locks to achieve inter-machine resources serialized access by its distributed locks feature.
+  It supports storage server-side locks to achieve inter-machine resources serialized access through its distributed locks feature.
 
 ## Single Instance-Only Support
 
 The following implementations of the IStorage interface support the service to be deployed as a single instance only.
 
-For the locking mechanism, they use OS-specific synchronization primitives, which only enable inter-thread serialized resources access in the boundaries of a single machine.
+For the locking mechanism, they use OS-specific synchronization primitives, which only enable inter-thread serialized access to resources within a single machine.
 
 - [FileStorage](/api/Telerik.Reporting.Cache.File.FileStorage) - Use the [FileStorage constructor](/api/Telerik.Reporting.Cache.File.FileStorage#Telerik_Reporting_Cache_File_FileStorage_#ctor) to create a storage instance.
 
   All Visual Studio item templates for adding the Reporting REST service use the default **FileStorage** constructor.
 
-  The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for usage in a production environment.
+  The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for use in a production environment.
 
 - [DatabaseStorage](/api/Telerik.Reporting.Cache.Database.DatabaseStorage) - Use the [DatabaseStorage constructor](/api/Telerik.Reporting.Cache.Database.DatabaseStorage#Telerik_Reporting_Cache_Database_DatabaseStorage_#ctor) to create a storage instance.
 
-  This storage option requires reference to **Telerik.Reporting.Cache.Database.dll** that has dependencies on **Telerik Data Access**, which can be checked in the version corresponding to the [Upgrade article](slug:telerikreporting/upgrade/overview).
+  This storage option requires a reference to **Telerik.Reporting.Cache.Database.dll** that has dependencies on **Telerik Data Access**, which can be checked in the version corresponding to the [Upgrade article](slug:telerikreporting/upgrade/overview).
 
 > note If one of those storages is used in a multi-instance(e.g., multiple [PODs](https://kubernetes.io/docs/concepts/workloads/pods/)) environment, ensure that connections from a particular client are passed to the same Pod each time by configuring [Session affinity](https://kubernetes.io/docs/reference/networking/virtual-ips/#session-affinity)(in other words - **Sticky Sessions**) based on the client's IP address.
 
@@ -64,13 +64,13 @@ To prevent the storage from growing unnecessarily, when a client expires, the Re
 
 You can control the assets’ expiration using the [ClientSessionTimeout](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_ClientSessionTimeout) and [ReportSharingTimeout](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_ReportSharingTimeout) properties of the service configuration.
 
-When a viewer gets closed, there is no notification, and the service does not know about that. Therefore, periodically (_every 5 minutes_), the REST Service performs cleaning of the expired data. You can prevent the expiration of an active viewer by setting the viewer's option `keepClientAlive` to `true` (default).
+When a viewer is closed, there is no notification, and the service does not know about that. Therefore, periodically (_every 5 minutes_), the REST Service performs cleaning of the expired data. You can prevent the expiration of an active viewer by setting the viewer's option `keepClientAlive` to `true` (default).
 
 > important The service triggers this logic only when awakened by a request from an active client/viewer.
 
 ### Storage Structure
 
-The assets cached when a report gets rendered are generated in a hierarchical manner, with each resource holding a reference to its parent resource.
+The assets cached when a report gets rendered are generated hierarchically, with each resource holding a reference to its parent resource.
 
 To release a particular resource, the system counts the child resources that depend on this resource, and if there are none, it is considered expired and gets released.
 
@@ -86,7 +86,7 @@ You may reuse _document refreshes_ by assigning the `ReportSharingTimeout` a pos
 
 For example, when two clients request the same report with the same parameter values and states of its actions within `ReportSharingTimeout` minutes, the second client will reuse the _document refresh_ created upon the first client's request.
 
-Thus, there will be two clients holding reference to this _document refresh_, and the latter will remain even if one of these clients expires.
+Thus, there will be two clients holding a reference to this _document refresh_, and the latter will remain even if one of these clients expires.
 
 ## See Also
 

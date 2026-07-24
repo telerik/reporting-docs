@@ -37,20 +37,30 @@ Consider the following steps when experiencing problems while working with Teler
 	+ Missing basic functionality, for example, incomplete GDI+ or Skia graphics engines, or fonts on specific Windows Server or Linux distributions;
 	+ Insufficient user permissions for machine resources, databases, etc.
 - **Hard refresh the browser** to ensure there are no cached Report Viewer resources with older versions.
-	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running the same version.` In this particular case, you may have upgraded successfully, the viewer and the service from `19.3.26.121` to `20.0.26.211`. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
+	This would be the first step if you see an error message like `The version of the Report Viewer '19.3.26.121' does not match the version of the Reporting REST Service '20.0.26.211'. Please make sure both are running the same version.` In this particular case, you may have upgraded the viewer and the service from `19.3.26.121` to `20.0.26.211` successfully. However, the browser may have cached the viewer resources from the runs before the upgrade. Refreshing the browser should load the new resources and update the cache.
 - **Record a server-side log** file containing detailed information about the error:
-	To create the log file, go to the project that hosts the [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview), add the below method, and then call it from the startup point of the application, for example, the `Program.cs` file:
+	+ Set the reporting engine trace verbosity to the most detailed value `Verbose` as explained in the article [processing Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element):
 
-	```C#
-	static void EnableTracing()
-	{
-		System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.TextWriterTraceListener(File.CreateText("aspnetcoredemo.log")));
-		System.Diagnostics.Trace.AutoFlush = true;
-	}
-	```
+		```JSON
+		"telerikReporting": {
+			"processing": {
+				"traceVerbosity": "Verbose"
+			}
+		}
+		```
+
+	+ To create the log file, go to the project that hosts the [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview), add the method below, and then call it from the startup point of the application, for example, the `Program.cs` file:
+
+		```C#
+		static void EnableTracing()
+		{
+			System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.TextWriterTraceListener(File.CreateText("aspnetcoredemo.log")));
+			System.Diagnostics.Trace.AutoFlush = true;
+		}
+		```
 
 	Upon running the project and reproducing the error, it will generate an `aspnetcoredemo.log` file at the application root folder with the tracing information about the exceptions and performance. For example:
-	+ Server-side failures with stack traces, including refused or timed-out database connection, insufficient permissions to access local paths or resources, etc.
+	+ Server-side failures with stack traces, including refused or timed-out database connections, insufficient permissions to access local paths or resources, etc.
 	+ Time to process and render reports;
 	+ Font substitutions.
 
@@ -108,6 +118,6 @@ Consider the following steps when experiencing problems while working with Teler
 	
 	![The traffic between the HTML5 Report Viewer and the Reporting REST Service captured with Fiddler Everywhere.](images/fiddler-capture-reporting.png)
 	
-	If you need help, please send us the generated SAZ file in case you use Fiddler; [HAR file](https://docs.cloud.google.com/support/docs/capture-browser-trace) if you capture the traffic in the Chrome browser, etc.
+	If you need help, please send us the generated SAZ file if you use Fiddler; a [HAR file](https://docs.cloud.google.com/support/docs/capture-browser-trace) if you capture the traffic in the Chrome browser, etc.
 
 > important After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps to reproduce the issue, a sample report with data, or a runnable project.

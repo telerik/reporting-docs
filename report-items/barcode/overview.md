@@ -14,7 +14,7 @@ reportingArea: General
 
 The Barcode report item automatically generates barcodes directly from numeric or character data. The symbology is selected through the [`Encoder`](/api/telerik.reporting.barcode#telerik_reporting_barcode_encoder) property, the encoded payload is supplied through the [`Value`](/api/telerik.reporting.barcode#telerik_reporting_barcode_value) property as either a static string or a report expression, and the resulting symbol is rendered in supported output formats such as PDF, Image, HTML (rendered as SVG), XAML, DOCX, and RTF.
 
-![Preview of the demo Barcodes Report from our examples](images/Barcodes/barcode-overview.png)
+![Telerik Reporting Barcode report item demo preview showing supported barcode symbologies](images/Barcodes/barcode-overview.png)
 
 > note The MaxiCode 2D encoder was introduced in [Telerik Reporting 2026 Q1 (20.0.26.424)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-424)). For details, refer to [Configuring the MaxiCode Barcode in Reports](slug:barcode-maxicode-overview).
 

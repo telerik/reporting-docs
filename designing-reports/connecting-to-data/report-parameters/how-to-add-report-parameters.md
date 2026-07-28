@@ -33,7 +33,7 @@ There are several ways to add a Report Parameter to the Report depending on the 
 	* Right click on the `[Parameters]` node of the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer)
 	* From the __Configure Data Source Parameters__ step of the [DataSource Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview)
 
-	![The ReportParameter Collection editor of the Desktop Report Designers](images/ReportParameterEditor.png)
+	![Telerik Reporting Desktop Report Designer ReportParameter Collection editor for adding and configuring report parameters.](images/ReportParameterEditor.png)
 
 1. Click the __Add__ button to create a new parameter.
 
@@ -42,7 +42,7 @@ There are several ways to add a Report Parameter to the Report depending on the 
 1. Expand the `DATA` node of the Report Explorer properties to view the inner node `Report parameters`.
 1. Click on the `+` sign beside `Report parameters` to create a new parameter and open the dialog with its properties.
 
-![The Add New Item editor of the Web Report Designer for editint Report Parameter properties](images/WebDesignerReportParameterEditor.png)
+![Telerik Reporting Web Report Designer Add New Item dialog for creating and editing report parameter properties.](images/WebDesignerReportParameterEditor.png)
 
 ## Configure the Properties of a Report Parameter using Report Designer
 
@@ -67,10 +67,14 @@ Expand the `AvailableValues` property of the report parameter and fill in the fo
 
 ## Add a Report Parameter programmatically
 
+You can find below a C# and VB.NET example for adding a report parameter programmatically:
+
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewReportParameterSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewReportParameterSnippet}}
 
 ## Defining AvailableValues for ReportParameter’s UI programmatically
+
+Here is a C# and VB.NET example for defining AvailableValues for a report parameter programmatically:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=Define_AvailableValues_for_ReportParameter_Snippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=Define_AvailableValues_for_ReportParameter_Snippet}}

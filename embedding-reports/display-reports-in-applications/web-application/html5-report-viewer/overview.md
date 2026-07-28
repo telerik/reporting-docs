@@ -40,7 +40,7 @@ The HTML5 Report Viewer renders its content through the [Reporting HTML Renderin
 
 The layout and styling are based on pure HTML5 templates and CSS3 styles and are customizable. The default implementation supports mobile as well as desktop browsers. The responsive layout adapts itself to the device display for the best viewing experience. You can customize its visual appearance by using the [Kendo UI SASS Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview), introduced with [Telerik Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521).
 
-![The visual appearance of the HTML5-based Report Web Viewer with its main areas highlighted](images/html5-sass-viewer-overview.png)
+![Telerik Reporting HTML5 Report Viewer for jQuery showing the report pages area, toolbar, parameters area, and document map layout.](images/html5-sass-viewer-overview.png)
 
 ## Report Pages Area
 

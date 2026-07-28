@@ -31,7 +31,7 @@ This section explains the differences between both versions of Standalone Report
 - **Open, Design, and Preview Coded Reports** - Starting with the [2025 Q3](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the Standalone Report Designer for .NET can open, design, and preview coded reports. This is the recommended designer for editing coded(type) reports that are part of [.NET-based](https://dotnet.microsoft.com/en-us/) solutions - [Coded Reports in the Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions).
 - **Preview and Export using Skia Graphics Engine** - The Standalone Report Designer for .NET can switch between GDI+ and Skia graphics engines when previewing, printing, and exporting reports. This functionality, introduced with 2024 Q3 (18.2.24.806), is useful for report authors who design their reports on Windows machines but the target platform for their application is Linux or macOS, where the Skia library is used for processing and rendering. Since Skia does not support EMF format (vector drawing for image rendering), the previewed image may look blurry when zoomed in or out. Switching the state is applied to the Print Preview, Print, and Export functionalities. It affects all reports currently loaded in the Standalone Report Designer for .NET.
 
-  ![The switch button that toggles between GDI+ and Skia rendering engine. The button is placed at the rightmost end of the toolbar in Preview mode.](images/Designer/srd-net-skia-gdi-switch.png "The switch button that toggles between GDI+ and Skia rendering engines.")
+  ![Telerik Reporting Standalone Report Designer for .NET preview toolbar showing the switch between GDI+ and Skia graphics engines.](images/Designer/srd-net-skia-gdi-switch.png "The switch button that toggles between GDI+ and Skia rendering engines.")
 
 - **Automatic discovery of 3rd party ADO.NET Data Providers** - The Standalone Report Designer for the .NET Framework required manually adding an entry in the DbProviderFactories section in the application configuration file when needed to use a third-party ADO.NET provider. The Report Designer for .NET will try to discover and automatically load the available ADO.NET data providers when building a new SQL connection. The supported providers are: `Microsoft.Data.SqlClient`, `System.Data.SqlClient`, `Npgsql for PostgreSQL`, `System.Data.SQLite`, `MySql.Data.MySqlClient`, `Oracle.ManagedDataAccess.Client`. `ODBC` and `OleDB` data sources are also supported.
 
@@ -80,7 +80,7 @@ This section explains the differences between both versions of Standalone Report
 
 ## Major UI Elements in the Standalone Report Designer
 
-![The major UI elements in the Standalone Report Designer](images/Designer/standalone-report-designer-overview.png "The major UI elements of the Standalone Designer")
+![Telerik Reporting Standalone Report Designer highlighting the view tab, report selector, rulers, report sections, component tray, and preview controls.](images/Designer/standalone-report-designer-overview.png "The major UI elements of the Standalone Designer")
 
 The image above shows the major UI elements in the Standalone Report Designer:
 
@@ -98,37 +98,37 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
 - **ToolStrip**: This is a UI element that includes various buttons that are designed to ease you while you design reports. The `ToolStrip`, which is shown in the image below, is placed in the lower-left corner of the design surface.
 
-  ![The Standalone Designer ToolStrip, which is placed in the lower-left corner of the design surface.](images/Designer/report-designer-toolstrip.png "The Standalone Designer ToolStrip")
+  ![Telerik Reporting Standalone Report Designer ToolStrip in the lower-left corner of the design surface with zoom and design controls.](images/Designer/report-designer-toolstrip.png "The Standalone Designer ToolStrip")
 
   You will find the following buttons in the `ToolStrip`:
 
   - **Zoom** - the combo box enables you to easily specify the zoom percentage in which you see the design surface. You can do that by holding the Ctrl key and using the mouse wheel to zoom as well.
 
-    ![The Zoom combo box where you may specify the zoom percentage.](images/snapGrid.png "The Zoom combo box")
+    ![Telerik Reporting Standalone Report Designer ToolStrip zoom combo box for changing the design surface zoom percentage.](images/snapGrid.png "The Zoom combo box")
 
   - **Show/hide the snap grid** button switches on or off the displayed **snap grid**. The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will _snap_ or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel. Here is a workspace showing the snap grid turned on:
 
-    ![A Standalone Designer workspace showing the snap grid turned on.](images/snapGrid1.png "Snap grid turned on")
+    ![Telerik Reporting Standalone Report Designer workspace with the snap grid feature enabled on the design surface.](images/snapGrid1.png "Snap grid turned on")
 
   - **Turn on/off snapping to gridlines** - this option allows you to drag objects on the design surface and have them snap to the grid lines shown on the designer surface. The snapping will be applied regardless of the visibility of the snap grid.
   - **Turn on/off snapping to snaplines** - when this option is enabled, it allows you to drag objects on the design surface and snap them to the margins or alignment lines (red dashed line) of other objects within the same container element such as a layout panel, column and row dividers in a grid panel. If a container has padding applied, it will be taken into account when snapping an object inside the container.
 
-    ![A Standalone Designer workspace showing the snapping to snaplines turned on.](images/snapGrid2.png "Snapping to snaplines turned on")
+    ![Telerik Reporting Standalone Report Designer workspace with snapping to snaplines enabled for report item alignment.](images/snapGrid2.png "Snapping to snaplines turned on")
 
   - **Show/Hide Dimensions** - when enabled, the designer will show the distances from the currently selected object to the nearest elements.
 
-    ![A Standalone Designer workspace with Show Dimensions turned on.](images/snapGrid3.png "Show Dimensions turned on")
+    ![Telerik Reporting Standalone Report Designer workspace with the Show Dimensions feature enabled.](images/snapGrid3.png "Show Dimensions turned on")
 
   - **Show/Hide watermarks** - if enabled, the report watermarks will be shown in the designer. Note that the displayed watermarks are just for reference and their contents may not look the same as when rendered.
   - **Turn On/Off Pan** - this option allows you to switch between drag and pan mode in Designer. When enabled, the cursor is changed to a hand, and clicking and dragging on the designer surface will move the report contents. This tool is useful when working on higher zoom levels.
 
 - **Show/Hide the Report Map** - In the lower-right corner of the design surface, click on the magnifying glass to show or hide the **Report Map**. This element is especially useful when you have zoomed the report and want to focus on a specific element. To hide the map, click on the design surface to have it closed.
 
-  ![A Standalone Designer workspace showing the Report Map.](images/snapGrid4.png "Report Map")
+  ![Telerik Reporting Standalone Report Designer workspace showing the Report Map navigation feature.](images/snapGrid4.png "Report Map")
 
 - **Change the alignment of an element** Alignment determines how an element resizes. For example, a left-aligned element stretches to the right as the parent layout container gets resized. To change the alignment of an element use the `Layout` toolbar and do _one_ of the following:
 
-  ![The Layout Toolbar of the Standalone Report Designer.](images/Designer/standalone-designer-align-controls.png "Layout Toolbar")
+  ![Telerik Reporting Standalone Report Designer Layout toolbar for changing report item alignment and stretch behavior.](images/Designer/standalone-designer-align-controls.png "Layout Toolbar")
 
   - Select two report items and change their HorizontalAlignment by clicking `Left`, `Center`, `Right`, or `Stretch`.
   - Select two report items and change their VerticalAlignment by clicking `Top`, `Center`, `Bottom`, or `Stretch`. You can also change alignment by moving an element on the design surface.

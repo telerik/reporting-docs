@@ -20,7 +20,7 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 
 The Web Report Designer consists of the following areas:
 
-![Highlighting the Web Report Designer's main areas and functionalities.](images/Designer/wrd-sass-theming.png)
+![Telerik Reporting Web Report Designer for jQuery highlighting the design surface, menu, properties, components, explorer, and search areas.](images/Designer/wrd-sass-theming.png)
 
 * `Design surface` - shows the web design report layout. Provides tools for selecting, moving, resizing, and editing the report items.
 * `Menu area` - provides buttons for creating a new report and opening, saving, or previewing an already existing one. Also, allows switching between loaded reports and shows their saved state.
@@ -33,7 +33,7 @@ The Web Report Designer consists of the following areas:
 
 	The guide, by default, starts with the optional `Help us improve!` dialog asking the web designer user for agreement to collect non-personal usage data.
 
-	![The Help us improve dialog in the Web Report Designer Onboarding Guide.](images/web-report-designer-onboarding-help-us-improve.png)
+	![Telerik Reporting Web Report Designer onboarding guide showing the Help us improve dialog for non-personal usage data collection.](images/web-report-designer-onboarding-help-us-improve.png)
 
 	The purpose of this analytical data is to gather general details on the usage of the designer's components and wizards/tools. The reason we want to analyse this data is to improve the web designer based on its actual usage feedback.
 

@@ -18,7 +18,7 @@ previous_url: /silverlight-wcf-service-overview, /embedding-reports/host-the-rep
 
 Telerik Reporting WCF Service enables the remote access to the [ReportProcessor](/api/Telerik.Reporting.Processing.ReportProcessor). The service acts as a communication interface between the client programs and the reporting engine. The service is responsible for managing the reports state and resources. 
 
-![](images/WCFService.png)
+![Telerik Reporting WCF Service architecture diagram showing remote client access to the reporting engine through the WCF service.](images/WCFService.png)
 
 Telerik Reporting WCF Service exposes two contracts:
 

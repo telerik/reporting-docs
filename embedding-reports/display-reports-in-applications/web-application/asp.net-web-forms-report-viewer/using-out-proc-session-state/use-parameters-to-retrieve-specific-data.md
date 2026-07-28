@@ -15,7 +15,7 @@ previous_url: /asp-net-report-viewer-outproc-using report-params-to-retrieve-spe
 
 The goal is to retrieve a name depending on the selected year from a drop down list: 
 
-  ![](images/OutProc4.png)
+	![ASP.NET Web Forms Report Viewer page with a drop-down list used to retrieve year-specific Telerik Reporting data through report parameters.](images/OutProc4.png)
 
 1. A method with a parameter to retrieve the relevant data only is used as report data source.
 
@@ -51,11 +51,11 @@ The goal is to retrieve a name depending on the selected year from a drop down l
 
 1. Creating the report parameter: 
 
-	![](images/OutProc2.png)
+	![Telerik Reporting report designer parameter settings showing a report parameter used to filter data by year.](images/OutProc2.png)
 
 1. Setting Value for the TextBox items: 
 
-	![](images/OutProc5.png)
+	![Telerik Reporting report designer TextBox value expression using a report parameter to display year-specific data.](images/OutProc5.png)
 
 1. Setting the report __DataSource__ to the GetData method in the __NeedDataSource__ event handler of the report: 
 

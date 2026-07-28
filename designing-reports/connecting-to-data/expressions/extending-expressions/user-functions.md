@@ -32,7 +32,7 @@ There are two ways to utilize user functions:
 
 If the loaded assembly contains many __public static__ (__Public Shared__ in VB.NET) methods, this might produce some clutter in the Edit Expression dialog, when browsing for existing user functions. To overcome this problem, you can use the IsVisible attribute to hide any methods, which are not intended to be used as user functions. See the code sample below:
 
-__Example:__
+__Hiding user functions with the IsVisible attribute__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeIsVisibleSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeIsVisibleSnippet}}
@@ -66,7 +66,7 @@ __DescriptionAttribute__
 
 The `DescriptionAttribute` allows you to specify a description for the user function parameters. The description will be displayed in the _Edit Expression Dialog_ when you select a User Function.
 
-__Example:__
+__Providing user function metadata with DescriptionAttribute__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeSnippet}}

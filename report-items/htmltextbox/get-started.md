@@ -41,28 +41,23 @@ Now, you will add some styled content to your HtmlTextBox report item:
 
 1. Change the HtmlTextBox content by either of the following ways:
 
-   - Go to the property `Value` of the item in the **Properties** pane and click the ellipses.
-
-   - Right-click the item and select `Expression...` from the popped-up context menu.
-
-   As a result, the **Edit Expression** dialog of the HtmlTextBox will open in the **Design** view.
+	- Go to the property `Value` of the item in the **Properties** pane and click the ellipses.
+	- Right-click the item and select `Expression...` from the popped-up context menu.
+	As a result, the **Edit Expression** dialog of the HtmlTextBox will open in the **Design** view.
 
 1. In the **Design** view of the editor, type **Telerik Reporting**.
-
 1. Select the text and use the background color button from the toolbox to set an orange background.
-
 1. Use the last button from the toolbar of the editor to add a link to the Telerik Reporting online demos. As a result, a **Hyperlink Editor** will open and you can now type **https://demos.telerik.com/reporting/** as a **URL**, and select **\_blank** as **Target** to open the web page on a new browser tab like shown in the following image:
 
-   ![Add styled content with hyperlink to the HtmlTextBox with the Expression editor of the Report Designer](images/HtmlTextBox-ContentWithLink.png)
+	![Add styled content with hyperlink to the HtmlTextBox with the Expression editor of the Report Designer](images/HtmlTextBox-ContentWithLink.png)
 
 1. Switch to the **Html** view of the editor to see the generated HTML code. The code will look like the following:
 
-   ```HTML
-   <span style="background-color: #ff8000"><a href="https://demos.telerik.com/reporting/">Telerik Reporting</a></span>
-   ```
+	```HTML
+	<span style="background-color: #ff8000"><a href="https://demos.telerik.com/reporting/">Telerik Reporting</a></span>
+	```
 
 1. Click **OK** to close the HtmlTextBox editor dialog.
-
 1. Preview the report and test the link by clicking the **Telerik Reporting** orange text.
 
 ## Adding an Image
@@ -70,15 +65,13 @@ Now, you will add some styled content to your HtmlTextBox report item:
 You can also embed images in the HtmlTextBox using the `<img>` tag. To add an image:
 
 1. Right-click the HtmlTextBox and select `Expression...` to open the editor.
-
 1. Switch to the **Html** view.
-
 1. Add an image tag to your content. For example, you can modify the existing HTML to include an image:
 
-   ```html
-   <span style="background-color: #ff8040"><a href="https://demos.telerik.com/reporting/">Telerik Reporting</a></span>
-   <div><img style="margin: 10px auto; display: block" alt="Telerik Reporting Support Logo" src="https://demos.telerik.com/reporting/images/reporting-icons/reporting-icons_support-recources.png" width="100" height="100"/></div>
-   ```
+	```html
+	<span style="background-color: #ff8040"><a href="https://demos.telerik.com/reporting/">Telerik Reporting</a></span>
+	<div><img style="margin: 10px auto; display: block" alt="Telerik Reporting Support Logo" src="https://demos.telerik.com/reporting/images/reporting-icons/reporting-icons_support-recources.png" width="100" height="100"/></div>
+	```
 
 1. Click **OK** and preview the report to see the image displayed under the text.
 

@@ -36,7 +36,7 @@ Using an API key is more secure than using an account password, especially when 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
 
-   ![Telerik Reporting account API Keys page for generating a private NuGet feed authentication key](./images/account-generate-api-key.png)
+	![Telerik Reporting account API Keys page for generating a private NuGet feed authentication key](./images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 1. Click **Generate Key**.
@@ -57,7 +57,7 @@ Use this method when you install Telerik Reporting packages through the Visual S
 
    >caption The Visual Studio NuGet Package Manager and the Telerik NuGet feed
 
-   ![Visual Studio Package Sources settings showing the Telerik NuGet feed](images/nuged-feed-in-npm.png)
+	![Visual Studio Package Sources settings showing the Telerik NuGet feed](images/nuged-feed-in-npm.png)
 
 1. Create or load your project.
 1. Go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
@@ -67,7 +67,7 @@ Use this method when you install Telerik Reporting packages through the Visual S
 
    >caption Credential prompt for the Telerik NuGet feed in Visual Studio
 
-   ![Visual Studio credentials dialog for the Telerik NuGet feed](images/vs-nuget-auth-window.png)
+	![Visual Studio credentials dialog for the Telerik NuGet feed](images/vs-nuget-auth-window.png)
 
 After you authenticate successfully, the Telerik packages available to your account appear in the NuGet package list.
 
@@ -93,21 +93,21 @@ Use the NuGet CLI when you work in Visual Studio Code, on Linux or macOS, in CI 
 1. Open a command prompt and change to the directory that contains `nuget.exe`.
 1. Run the following command to store the Telerik feed definition and your API key in `%AppData%\NuGet\NuGet.config`.
 
-   ```powershell
-   NuGet Sources Add ^
-   -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-   -UserName "api-key" -Password "YOUR-API-KEY" ^
-   -StorePasswordInClearText
-   ```
+	```powershell
+	NuGet Sources Add ^
+	-Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
+	-UserName "api-key" -Password "YOUR-API-KEY" ^
+	-StorePasswordInClearText
+	```
 
 If you need to update expired or invalid credentials, run this command:
 
-   ```powershell
-   NuGet Sources Update ^
-   -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
-   -UserName "api-key" -Password "YOUR-API-KEY" ^
-   -StorePasswordInClearText
-   ```
+```powershell
+NuGet Sources Update ^
+-Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
+-UserName "api-key" -Password "YOUR-API-KEY" ^
+-StorePasswordInClearText
+```
 
 After you run the command, reopen Visual Studio, Rider, or any other NuGet client so it reloads the updated source configuration.
 
@@ -125,12 +125,12 @@ Use this method when you install packages through JetBrains Rider.
 1. In the left panel, select a specific `NuGet.Config` file, for example `C:\Users\username\AppData\Roaming\NuGet\NuGet.Config`.
 1. After selecting a concrete NuGet.Config file, the Feeds list will appear on the right.
 1. From this view, you can:
-   * Add new package sources.
-   * Edit existing feeds.
-   * Enable or disable feeds.
-   * Review feed URLs and configuration.
+	* Add new package sources.
+	* Edit existing feeds.
+	* Enable or disable feeds.
+	* Review feed URLs and configuration.
 
-   ![JetBrains Rider interface for configuring a NuGet feed](images/ConfigNuGetFeedJetBrainsRider.png)
+	![JetBrains Rider interface for configuring a NuGet feed](images/ConfigNuGetFeedJetBrainsRider.png)
 
 If Rider does not prompt for Telerik feed credentials, configure the feed first with the NuGet CLI and then reopen Rider.
 
@@ -141,25 +141,12 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
 1. Remove the saved credentials in the [Windows Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0). These credentials will appear as `nuget.telerik.com` or `VSCredentials_nuget.telerik.com` entries.
 1. Remove the Telerik NuGet package source from Visual Studio.
 1. If you have added the Telerik package source by using the .NET CLI, try to remove it by running the following commands:
-    * [`dotnet nuget list source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-list-source)
-    * [`dotnet nuget remove source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-remove-source)
+	* [`dotnet nuget list source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-list-source)
+	* [`dotnet nuget remove source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-remove-source)
 1. Check if you have any credentials stored in `%AppData%\NuGet\Nuget.Config`. If so, remove them. Here is an example of how your `NuGet.Config` file can look like:
 
-   ```XML 
-   <?xml version="1.0" encoding="utf-8"?>
-   <configuration>
-      <packageSources>
-      <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
-      <add key="TelerikOnlineFeed" value="https://nuget.telerik.com/v3/index.json" />
-      </packageSources>
-      <packageSourceCredentials>
-      <TelerikOnlineFeed>
-         <add key="Username" value="api-key" />
-         <add key="ClearTextPassword" value="Your API KEY" />
-      </TelerikOnlineFeed>
-      </packageSourceCredentials>
-   </configuration>
-   ```
+	{{source=CodeSnippets\Blazor\Docs\XML\NugetConfig.xml}}
+
 1. Try to reset the Visual Studio user data by [forcing NuGet to ask for authentication](https://stackoverflow.com/questions/43550797/how-to-force-nuget-to-ask-for-authentication-when-connecting-to-a-private-feed).
 1. Restart Visual Studio.
 1. Add the Telerik NuGet package source again through Visual Studio or .NET CLI.

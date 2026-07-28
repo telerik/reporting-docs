@@ -59,7 +59,6 @@ The Web Report Designer provides the following data source types:
 To add a new SQL Data Source:
 
 1. Click the **SQL Data Source** item in the **Components** tab.
-
 1. The SQL Data Source configuration wizard appears allowing you to use either an existing connection or build a new one by providing a `connection string` to connect to the database and define the SQL statement or the stored procedure to retrieve the data:
 
 >caption Existing vs New SQL Connection
@@ -88,7 +87,6 @@ The following table lists all the steps that the wizard offers:
 To add a new CSV Data Source:
 
 1. Click the **CSV Data Source** item in the **Components** tab.
-
 1. The CSV Data Source configuration wizard appears allowing you to use either an existing or a new CSV file, or use inline CSV text with the data:
 
 >caption Upload a CSV Source vs Inline
@@ -117,7 +115,6 @@ The following table lists all the steps that the wizard offers:
 To add a Web Service Data Source:
 
 1. Click the **Web Service Data Source** item in the **Components** tab.
-
 1. The Web Service Data Source configuration wizard appears allowing you to create new or edit an existing WebServiceDataSource component.
 
 >caption Setup Web Service Data Source
@@ -147,7 +144,6 @@ The following table lists all the steps that the wizard offers:
 To add a GraphQL Data Source:
 
 1. Click the **GraphQL Data Source** item in the **Components** tab.
-
 1. The GraphQL Data Source configuration wizard appears allowing you to create new or edit an existing GraphQLDataSource component.
 
 The wizard allows you to set up one of the following options:
@@ -158,41 +154,23 @@ The wizard allows you to set up one of the following options:
 
 The following configuration steps are available:
 
-1. Set up the **GraphQL Service URL** (e.g. `https://buybutton.store/graphql`)
-
+1. Set up the **GraphQL Service URL** (e.g. `https://buybutton.store/graphql`).
 1. Provide the **Query** for data retrieval:
 
-  ````SQL
-  query paginateProducts($cursor: String) {
-    site {
-    products(first: 5, after: $cursor) {
-        pageInfo {
-          endCursor
-          hasNextPage
-        }
-        edges {
-          node {
-            entityId
-            name
-          }
-        }
-      }
-    }
-  }
-  ````
+	{{source=CodeSnippets\CS\graphQL\QueryPaginateProducts.graphql}}
 
-  >caption Set up GraphQL Service URL and Configure the Query
+	>caption Set up GraphQL Service URL and Configure the Query
 
-  ![GraphQL Data Source ><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)
+	![GraphQL Data Source ><](images/wrd-components-tray-data-sources-graphql-data-source-http-request-query.png)
 
 1. Specify the parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time:
 
-  ![GraphQL Request Parameters ><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)
+	![GraphQL Request Parameters ><](images/wrd-components-tray-data-sources-graphql-request-parameters.png)
 
-2. Configure Authentication settings (occurs only if an authentication method is selected in the first step): Transmits credentials as username/password pairs, encoded using base64.
-3. As a final step, you can **Preview** the result:
+1. Configure Authentication settings (occurs only if an authentication method is selected in the first step): Transmits credentials as username/password pairs, encoded using base64.
+1. As a final step, you can **Preview** the result:
 
-  ![GraphQL Preview Data ><](images/wrd-components-tray-data-sources-graphql-preview-data.png)
+	![GraphQL Preview Data ><](images/wrd-components-tray-data-sources-graphql-preview-data.png)
 
 ## JSON Data Source
 
@@ -215,16 +193,15 @@ By clicking the **JSON Data Source** item in the **Components** tab, the JSON Da
 To add an `Object Data Source`:
 
 1. Click the **Object Data Source** item in the **Components** tab.
-
 1. The Object Data Source configuration wizard appears allowing you to use a business object or any other class (that was already defined) for data retrieval in the report:
 
-* Select Business object
+	* Select Business object
 
-    ![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source.png)
+		![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source.png)
 
-* Specify the Data member
+	* Specify the Data member
 
-    ![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-data-member.png)
+		![Object Data Source ><](images/wrd-components-tray-data-sources-object-data-source-data-member.png)
 
 The following table lists all the steps that the wizard offers:
 

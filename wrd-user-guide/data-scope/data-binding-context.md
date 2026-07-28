@@ -27,14 +27,12 @@ Telerik Reporting provides two main categories of report items:
 Think of data scope levels like a set of nested containers—each one holds a specific set of data than the one around it, and each data scope sits on a different level:
 
 * Report scope&mdash;The top-level report has its own data source and parameters. The report item (for example, “Report1”) defines the top-level data scope that includes all rows returned by its data source (after filtering and sorting). Everything inside the report, but outside nested data items, uses that scope by default. Expressions at this level can use: 
-    * `=Fields.*` (if the report has a data source)
-    * `=Parameters.*`
-    * Aggregates (for example, `=Sum(Fields.Amount)`)
+	+ `=Fields.*` (if the report has a data source)
+	+ `=Parameters.*`
+	+ Aggregates (for example, `=Sum(Fields.Amount)`)
 
 * Data item scope (for example, Table, List, Crosstab, Graph)&mdash;Each data item can define its own data source and groups (Row/Column groups). Inside the item, `=Fields.*` refers to the current row/group data scope of that item. Since Telerik Reporting uses hierarchical data scopes and each data item (Table, List, Group, etc.) creates its own scope, you can use the `Parent` keyword when you're inside a nested data item and need access to values from an outer scope (for example, `=ReportItem.Parent.DataObject.OrderID`).
-
 * Group scope&mdash;Groups create nested (inner) scopes—Report groups, table/column/row groups, crosstab groups, and detail sections partition the data into smaller sets. Expressions inside a group are evaluated only against that group’s rows. The innermost “detail” is typically a single record. In group headers/footers and detail cells, `=Fields.*` resolves in the group’s data scope.
-
 * SubReport scope&mdash;A SubReport in Telerik Reporting does not inherit its data scope automatically from its parent report or parent data item. A SubReport always has its own data source, defined entirely by its ReportSource. This means that a SubReport is an isolated report that you load inside a parent report, and you control its data by passing parameters or by assigning it an explicit data source.
 
 ### Passing Data to a SubReport
@@ -42,9 +40,7 @@ Think of data scope levels like a set of nested containers—each one holds a sp
 The Available Options for passing data to a SubReport are:
 
 * Own DataSource&mdash;When the SubReport refers to a separate report (.trdp file) that has its own data source and you pass parameters and let the SubReport query its own data. This is the most common method. A similar approach is demonstrated in [Creating Master-Detail Reports]({%slug  web-report-designer-user-guide-creating-master-detail-report%}) where the master report contains a table with Categories data. The SubReport displays Products records filtered by the respective CategoryID.
-
 * Setting the SubReport Data Source from the Parent Report&mdash;The SubReport item exposes a DataSource property that allows the parent report to supply data directly to the inner report. When this property is set on the SubReport item, the provided data source is used during report processing instead of the data source defined in the SubReport’s report definition.
-
 * Passing Data from the Parent&mdash;You can also use a DataObject as a data source for nested data items, meaning the child item’s entire data source can derive from the parent. A common scenario is when a parent data row contains a JSON column with child items. A similar approach is demonstrated in [Creating Nested Hierarchy with SubReports]({%slug wrd-user-guide-create-nested-hierarchy-with-subreport%}).
 
 ## Data Scope in Expressions
@@ -52,7 +48,6 @@ The Available Options for passing data to a SubReport are:
 The data scope directly affects how expressions behave. The same expression can produce different results depending on where it is placed in the report:
 
 * **Field access** and **simple expressions** (like `=Fields.Amount`) run in the default scope, so inside a detail row it refers to the current record; inside a group footer it refers to the current group instance.
-
 * **Aggregates** (like `=Sum(Fields.Amount)`) calculate over the current data scope by default. That is why the same `=Sum(Fields.Amount)` expression returns a group subtotal when placed in a group footer, but returns the grand total when placed in the report footer.
 
 The Reporting engine provides the [Exec]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) aggregate function to perform calculations outside the current data or item scope. Unlike typical aggregate functions such as Sum, Avg, or Count, which operate only on the current data scope, Exec allows you to reference another parent’s scope.
@@ -96,7 +91,6 @@ When a data item has its own data source, it creates an independent data scope. 
 Two common patterns for using an independent data scope are:
 
 * Master-Detail (Parent-Child)&mdash;A parent Table uses **DataSource A**. Inside the detail row, a child Table, List, or Graph sets its own **DataSource B**, filtered by a key from the parent row. To pass the parent row's value to the child data source, use `=ReportItem.DataObject.CustomerId` or `=Fields.CustomerId` as a data source parameter. The child item then shows only the rows that match the current parent row.
-
 * SubReport&mdash;A SubReport is self-contained by design. You pass a parameter from the parent (for example, an `OrderId`) and the SubReport uses its own data source filtered by that parameter. This pattern is ideal when the same SubReport is reused across multiple parent reports.
 
 >note See the [Creating Master-Detail Reports]({%slug  web-report-designer-user-guide-creating-master-detail-report%}) tutorial.

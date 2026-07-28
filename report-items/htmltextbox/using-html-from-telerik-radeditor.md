@@ -102,7 +102,6 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 	<telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
 	</telerik:RadEditor>
 	```
-
 	```HTML
 	<script type="text/javascript">
 		ReportingFilter = function()

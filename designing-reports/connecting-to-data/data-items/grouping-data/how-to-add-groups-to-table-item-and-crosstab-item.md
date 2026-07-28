@@ -134,7 +134,7 @@ To change the repeat behavior after group creation:
 
 	The screenshot below shows this hierarchy in the Group Explorer alongside the corresponding table rows on the design surface:
 
-	![Telerik Reporting Standalone Report Designer Group Explorer in Extended Mode with a table selected to show repeatable header and footer group hierarchy.](images/extended-mode-group-explorer-table.png)
+	![Telerik Reporting Standalone Report Designer Group Explorer in Extended Mode with a table selected to show header and footer group hierarchy.](images/extended-mode-group-explorer-table.png)
 
 1. Double-click the leaf static group to open the **Group Properties** editor.
 1. Set `PrintOnEveryPage` to `True` to repeat the header/footer on every page, or `False` to disable repeating.

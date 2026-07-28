@@ -75,25 +75,17 @@ If Telerik Reporting cannot be activated automatically:
 
 	- For **.NET projects**, edit the `.csproj` and add the following line:
 
-		```xml
-		<PackageReference Include="Telerik.Licensing" Version="*" />
-		```
+		{{source=CodeSnippets\Blazor\Docs\XML\csproj.xml region=LicensingAddPackageToCsproj}}
 
 	- For older **.NET Framework projects**:
 
 		1. Add package reference to the `packages.config` file:
 
-			```config
-			<package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
-			```
+			{{source=CodeSnippets\Blazor\Docs\XML\PackagesConfig.xml region=LicensingAddPackageToPackagesConfig}}
 
 		1. Update the `.csproj` file with the DLL reference:
 
-			```xml
-			<Reference Include="Telerik.Licensing.Runtime, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
-				<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.Runtime.dll</HintPath>
-			</Reference>
-			```
+			{{source=CodeSnippets\Blazor\Docs\XML\csproj.xml region=LicensingAddDllToCsproj}}
 
 When you build the project, the `Telerik.Licensing` NuGet package locates the license file and uses it to activate Telerik Reporting.
 

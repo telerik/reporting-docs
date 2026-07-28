@@ -14,9 +14,7 @@ reportingArea: General
 This guide targets [users who want to build custom reports and, then, present them in applications of their choice](https://www.telerik.com/products/reporting/embedded-reporting.aspx). For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application.
 
 - First, you will install Telerik Reporting.
-
 - Next, you will create a sample report by using the Standalone Report Designer.
-
 - Finally, you'll create from scratch an ASP.NET Core application and add an Html5 Report Viewer with the necessary Reporting REST Service through our Visual Studio item template.
 
 At the end, you'll be able to see the report in the web browser, export it in different formats, and print it.
@@ -44,49 +42,25 @@ Once you have your report, save it as `DemoReport.trdp`. In the next step, you w
 In this final step, you'll integrate your report in an ASP.NET Core web application in .NET {{site.mindotnetversion}} and display the project with the HTML5 Report Viewer.
 
 1. Open **Visual Studio 2022**. From the **Start** window, choose **Create a new project**.
-
 1. Select **ASP.NET Core Web App** and name it **TelerikWebApp**. In the **Additional information** window, select **.NET{{site.mindotnetversion}}.0 (Long-term support)** and leave the rest of the settings as default. Click **Create**.
-
 1. Right-click the project. Select **Add** > **New Item** > **Telerik HTML5 Report Viewer Page [version]**. Name the file `index.html`.
-
 1. In the **Configure reporting engine** dialog, leave the selections in the same way they are set by default, that is, **REST Service** > **Create new Rest Service**. Click **Next**.
 
-   ![Page for Configuring the Rest Srervice for the Report Viewer](images/RestSrervice.PNG)
+	![Page for Configuring the Rest Srervice for the Report Viewer](images/RestSrervice.PNG)
 
 1. Click **Sample report definition** and, then, **Next** > **Finish**.
-
 1. Run the project to make sure everything works as expected. Navigate to the `index.html` page to make sure you see the sample report.
-
 1. Let's add your own `DemoReport.trdp` report to the application. Note that the Visual Studio Item Template has created a `Reports` folder in your application which contains a default `SampleReport.trdp` report. To add the `DemoReport.trdp` to the same folder, right-click the folder, select **Add** > **Existing Item** and navigate to your report.
-
 1. Open the `index.html` file that hosts the HTML5 Report Viewer in the `wwwroot` folder. Find the `reportSource` property of the `#reportViewer1` element that is set up in the `document.ready` event handler of the page. Change its inner `report` element from `"SampleReport.trdp"` to `"DemoReport.trdp"`.
-
 1. Now, you have to include the connection string in the `appsettings.json` file because you added a named connection string to the report. If the report uses an embedded connection, you do not have to add it again to the Visual Studio project.
 
-   The JSON configuration file looks similar to the following:
+	The JSON configuration file looks similar to the following:
 
-   ```JSON
-   {
-   	"Logging": {
-   		"LogLevel": {
-   			"Default": "Information",
-   			"Microsoft.AspNetCore": "Warning"
-   		}
-   	},
-   	"AllowedHosts": "*",
-   	"ConnectionStrings": [
-   		{
-   		"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-   		"connectionString": "Data Source=(local)\\MSSQLSERVER01;Initial Catalog=AdventureWorks;Integrated Security=SSPI",
-   		"providerName": "System.Data.SqlClient"
-   		}
-   	]
-   }
-   ```
+	{{source=CodeSnippets\Blazor\Docs\JSON\BasicConfig.json}}
 
-   The following image shows how the viewer will display the report upon running the project and navigating to the `index.html` page in the browser.
+	The following image shows how the viewer will display the report upon running the project and navigating to the `index.html` page in the browser.
 
-   ![The Demo Report Previewed in the Report Viewer](images/DemoReportInViewer.PNG)
+	![The Demo Report Previewed in the Report Viewer](images/DemoReportInViewer.PNG)
 
 That was it! Now you are ready to deep-dive into Telerik Reporting and take full advantage of its more advanced functionalities!
 

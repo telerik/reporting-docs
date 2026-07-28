@@ -32,10 +32,7 @@ The recommended approach for providing your license key to the `Telerik.Licensin
 1. Set the name of the secret to `TELERIK_LICENSE` and paste the contents of the license file as a value.
 1. After running `npm install` or `yarn`, add a build step to activate the license:
 
-```yaml
-env:
-  TELERIK_LICENSE: ${{ secrets.TELERIK_LICENSE }}
-```
+	{{source=CodeSnippets\Blazor\Docs\yaml\licensing.yaml region=LicensingGitHubActions}}
 
 ### Azure Pipelines (YAML)
 
@@ -56,24 +53,7 @@ You have two options for the file-based approach. Set the `TELERIK_LICENSE_PATH`
 
 With a YAML pipeline, you can use the [DownloadSecureFile@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/download-secure-file-v1?view=azure-pipelines) task, then use `$(name.secureFilePath)` to reference it. For example:
 
-```yaml
-- task: DownloadSecureFile@1
-    name: DownloadTelerikLicenseFile # defining the 'name' is important
-    displayName: 'Download Telerik License Key File'
-    inputs:
-      secureFile: 'telerik-license.txt'
-
-- task: MSBuild@1
-    displayName: 'Build Project'
-    inputs:
-      solution: 'myapp.csproj'
-      platform: Any CPU
-      configuration: Release
-      msbuildArguments: '/p:RestorePackages=false'
-env:
-  # use the name.secureFilePath value to set TELERIK_LICENSE_PATH
-  TELERIK_LICENSE_PATH: $(DownloadTelerikLicenseFile.secureFilePath)
-```
+{{source=CodeSnippets\Blazor\Docs\yaml\licensing.yaml region=LicensingYamlPipeline}}
 
 ### Classic Pipeline
 
@@ -81,7 +61,7 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 
 1. Add a "Download secure file" task and set the output variable's name to `telerikLicense`.
 
-  ![Azure DevOps classic pipeline Download secure file task for the Telerik Reporting license key](images/download-telerik-license-secure-file.png)
+	![Azure DevOps classic pipeline Download secure file task for the Telerik Reporting license key](images/download-telerik-license-secure-file.png)
 
 1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable:
 

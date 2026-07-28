@@ -68,8 +68,11 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 - When installing the MCP server by using the .NET tooling (`dnx` or `dotnet tool install`), the [license key file](slug:license-key) will be retrieved automatically if it is present in the default directory on your system (**%AppData%\Telerik\telerik-license.txt** on Windows and **~/.telerik/telerik-license.txt** on Linux).
 - When using the .NET tooling, if your [license key file](slug:license-key) is not in the default directory, you can add the [license key file](slug:license-key) as an environment variable in the `mcp.json` file using one of the following options:
 
+	<TabStrip><TabStripTab title="License File Path">
 	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicensePathEnvConfig.json region=McpServerLicensePathEnv}}
+	</TabStripTab><TabStripTab title="License Key">
 	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicenseKeyEnvAltConfig.json region=McpServerLicenseKeyEnvAlt}}
+	</TabStripTab></TabStrip>	
 
 > tip Using a license file path is _recommended_ unless you are sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when renewing.
 
@@ -114,28 +117,11 @@ The steps below describe the sample procedure for configuring the Telerik Report
 
 1. Add the following configuration to the `.mcp.json` file:
 
-	```JSON .NET 10
-	{
-		"servers": {
-			"telerik-reporting-assistant": {
-				"type": "stdio",
-				"command": "dnx",
-				"args": ["Telerik.Reporting.MCP", "--yes"]
-			}
-		}
-	}
-	```
-	```JSON .NET 8/9
-	{
-		"servers": {
-			"telerik-reporting-assistant": {
-				"type": "stdio",
-				"command": "dotnet",
-				"args": ["tool", "run", "telerik-reporting-assistant"]
-			}
-		}
-	}
-	```
+	<TabStrip><TabStripTab title=".NET 10">
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerManualConfigNet10}}
+	</TabStripTab><TabStripTab title=".NET 8/9">
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerManualConfigNet89}}
+	</TabStripTab></TabStrip>
 
 1. Restart Visual Studio.
 1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
@@ -154,7 +140,6 @@ The steps below describe the sample procedure for configuring the Telerik Report
 > https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456
 > <br/> <br/>
 > Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
-
 
 ### Telerik Visual Studio Extension Setup:
 
@@ -194,36 +179,15 @@ The basic setup in Visual Studio Code involves the following steps:
 
 	The settings below allow you to use the `#telerik-reporting-assistant` handle to call the Telerik Reporting MCP server. To use a custom handle, change the server name in the `mcp.json`.
 
-	```JSON .NET 10
-	{
-		"servers": {
-			"telerik-reporting-assistant": {
-				"type": "stdio",
-				"command": "dnx",
-				"args": ["Telerik.Reporting.MCP", "--yes"]
-			}
-		}
-	}
-	```
-	```JSON .NET 8/9
-	{
-		"servers": {
-			"telerik-reporting-assistant": {
-				"type": "stdio",
-				"command": "dotnet",
-				"args": ["tool", "run", "telerik-reporting-assistant"]
-			}
-		}
-	}
-	```
+	<TabStrip><TabStripTab title=".NET 10">
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerVsCodeNet10}}
+	</TabStripTab><TabStripTab title=".NET 8/9">
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerVsCodeNet89}}
+	</TabStripTab></TabStrip>
 
 1. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
 
-	```JSON
-	{
-	"chat.mcp.discovery.enabled": true
-	}
-	```
+	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerVsCodeEnableChat}}
 
 1. Restart Visual Studio Code.
 
@@ -235,28 +199,11 @@ The basic setup in Visual Studio Code involves the following steps:
 
 Create a `.cursor/mcp.json` file in your workspace root (or user folder for global setup):
 
-```JSON .NET 10
-{
-"mcpServers": {
-	"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dnx",
-			"args": ["Telerik.Reporting.MCP", "--yes"]
-		}
-	}
-}
-```
-```JSON .NET 8/9
-{
-	"mcpServers": {
-		"telerik-reporting-assistant": {
-			"type": "stdio",
-			"command": "dotnet",
-			"args": ["tool", "run", "telerik-reporting-assistant"]
-		}
-	}
-}
-```
+<TabStrip><TabStripTab title=".NET 10">
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerCursorNet10}}
+</TabStripTab><TabStripTab title=".NET 8/9">
+{{source=CodeSnippets\Blazor\Docs\JSON\McpServerConfig.json region=McpServerCursorNet89}}
+</TabStripTab></TabStrip>
 
 This enables you to call the MCP Server with the `#telerik-reporting-assistant` handle. To use a custom handle, change the server name in the `mcp.json`.
 

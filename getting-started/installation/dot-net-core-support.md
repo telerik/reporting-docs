@@ -24,24 +24,26 @@ The assemblies target .NET Standard 2.0 and the desktop viewers target .NET {{si
 
 When using Telerik NuGet packages, the required dependencies are resolved automatically. If you reference the assemblies directly, add the following packages manually:
 
-| Package Name                                | Version  |
-| ------------------------------------------- | -------- |
-| `Microsoft.Extensions.Configuration`        | 2.1.2001 |
-| `Microsoft.Extensions.Configuration.Binder` | 2.1.2001 |
-| `Microsoft.Extensions.Configuration.Json`   | 2.1.2001 |
-| `System.Configuration.ConfigurationManager` | 4.5.2000 |
-| `System.Data.Common`                        | 4.3.2000 |
-| `System.Data.SqlClient`                     | 4.6.2000 |
-| `System.Drawing.Common`                     | 4.5.2001 |
-| `System.IO.Packaging`                       | 4.5.2000 |
-| `System.Reflection.Emit`                    | 4.3.2000 |
-| `System.Reflection.Emit.Lightweight`        | 4.3.2000 |
-| `System.Runtime.Loader`                     | 4.3.2000 |
-| `System.Security.Cryptography.Pkcs`         | 4.5.2001 |
-| `System.Security.Permissions`               | 4.5.2000 |
-| `System.Text.Encoding.CodePages`            | 4.5.2000 |
-| `System.Threading.AccessControl`            | 4.5.2000 |
-| `sqlite-net-pcl`                            | 1.8.116  |
+|                Package Name                 |    Version    |
+| ------------------------------------------- | ------------- |
+| `Microsoft.Extensions.Configuration`        |     9.0.11    |
+| `Microsoft.Extensions.Configuration.Binder` |     9.0.11    |
+| `Microsoft.Extensions.Configuration.Json`   |     9.0.11    |
+| `Microsoft.Data.SqlClient`                  |     6.1.4     |
+| `System.Configuration.ConfigurationManager` |     9.0.11    |
+| `System.Data.SqlClient`                     |     4.8.6     |
+| `System.Formats.Asn1`                       |     9.0.11    |
+| `System.IO.Packaging`                       |     6.0.1     |
+| `System.Reflection.Emit`                    |     4.3.0     |
+| `System.Reflection.Emit.Lightweight`        |     4.3.0     |
+| `System.Runtime.Loader`                     |     4.3.0     |
+| `System.Security.Cryptography.Pkcs`         |     9.0.11    |
+| `System.Security.Permissions`               |     6.0.1     |
+| `System.Text.Encoding.CodePages`            |     6.0.0     |
+| `System.Text.Json`                          |     9.0.11    |
+| `System.Text.RegularExpressions`            |     4.3.1     |
+| `System.Threading.AccessControl`            |     8.0.0     |
+| `sqlite-net-pcl`                            | 1.11.272-beta |
 
 ## Features and Limitations
 
@@ -64,11 +66,11 @@ Telerik Reporting supports the following functionalities:
 - The supported report definition types are `TRDX`, `TRDP`, and report classes created in Visual Studio without the VS designer-specific code.
 - Telerik Reporting supports the following Data Source components:
 
-  - [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
-  - [CsvDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview)
-  - [WebServiceDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
-  - [JsonDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component)
-  - [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
+	+ [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
+	+ [CsvDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview)
+	+ [WebServiceDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
+	+ [JsonDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component)
+	+ [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
 
 - The [JSON-based reporting configuration](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview) is also supported. For CLI projects, the JSON configuration has precedence over the current XML-based reporting configuration.
 
@@ -107,9 +109,9 @@ To use .NET on macOS:
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
 
-   ```zsh
-   dotnet build
-   ```
+	```zsh
+	dotnet build
+	```
 
 ## Using Container Platforms
 

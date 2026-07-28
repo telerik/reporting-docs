@@ -72,7 +72,7 @@ An active Telerik Reporting license is required to use the Telerik Reporting MCP
 	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicensePathEnvConfig.json region=McpServerLicensePathEnv}}
 	</TabStripTab><TabStripTab title="License Key">
 	{{source=CodeSnippets\Blazor\Docs\JSON\McpServerLicenseKeyEnvAltConfig.json region=McpServerLicenseKeyEnvAlt}}
-	</TabStripTab></TabStrip>	
+	</TabStripTab></TabStrip>
 
 > tip Using a license file path is _recommended_ unless you are sharing settings across different systems. Remember to [update the license key](slug:license-key#updating-your-license-key) when renewing.
 

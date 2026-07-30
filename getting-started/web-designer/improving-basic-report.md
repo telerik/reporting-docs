@@ -164,8 +164,8 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 ## See Also
 
-* [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
-* [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
+* [Video Tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
+* [Video Tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
 * [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report](slug:telerikreporting/getting-started/web-designer/set-up-and-create-basic-report)
 * [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

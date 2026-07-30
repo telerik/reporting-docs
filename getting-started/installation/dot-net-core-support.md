@@ -54,7 +54,7 @@ On Windows, the reporting engine still relies on the GDI+ library because it pro
 
 Most of the processing and rendering features that work on Windows and use .NET Framework 4 or later are also supported in .NET projects with the new .NET Standard assemblies.
 
-The report item designers are not .NET Standard-compatible. No design-time support in Visual Studio is available, and type reports are not supported. [Convert](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) such reports to `.trdx` or `.trdp` definitions with the Standalone Report Designer.
+The report item designers are not .NET Standard-compatible. No design-time support in Visual Studio is available, and type reports are not supported. [Import and convert VS Report Designer reports](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) to `.trdx` or `.trdp` definitions with the Standalone Report Designer.
 
 Also, you can use these classes as runtime-created report instances. You can use report definitions created in Visual Studio as report instances in .NET applications, but their code must not include any calls to CodeDOM-specific classes like `ResourceManager`.
 
@@ -117,7 +117,7 @@ To use .NET on macOS:
 
 You can use Telerik Reporting in a Docker image if it meets the graphics engine requirements.
 
-To use Telerik Reporting in a Windows container, target a Windows-based image with GDI support. The same approach is [recommended by Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image).
+To use Telerik Reporting in a Windows container, target a Windows-based image with GDI support. The same approach is [recommended in the Microsoft Windows container base image documentation](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image).
 
 >tip Some Docker containers are created with invariant culture, which means locale-dependent values such as currency symbols may appear differently than expected. Add the following environment variables to the Dockerfile to configure a specific culture ('en-US' in this example):
 >

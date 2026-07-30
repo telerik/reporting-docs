@@ -29,11 +29,11 @@ The following prerequisites are required for accomplishing the scenario in this 
 
 ## Step 1: Install Telerik Reporting
 
-The steps to accomplish the installation of the Telerik Reporting controls and services are fully described in the [first steps guide on designing the Telerik report](slug:telerikreporting/getting-started/first-steps#step-1-install-telerik-reporting).
+The steps to accomplish the installation of the Telerik Reporting controls and services are fully described in the [Telerik Reporting installation steps in the designing guide](slug:telerikreporting/getting-started/first-steps#step-1-install-telerik-reporting).
 
 ## Step 2: Create, Populate, and Style the Sample Report
 
-Next, create the report that you will integrate in your web application. The steps required to create, populate with data, and style the report are described in the [first steps guide on designing the Telerik report](slug:telerikreporting/getting-started/first-steps#step-2-create-the-sample-report).
+Next, create the report that you will integrate in your web application. The steps required to create, populate with data, and style the report are described in the [report creation and styling steps in the designing guide](slug:telerikreporting/getting-started/first-steps#step-2-create-the-sample-report).
 
 Once you have your report, save it as `DemoReport.trdp`. In the next step, you will integrate the TRDP report in the application.
 

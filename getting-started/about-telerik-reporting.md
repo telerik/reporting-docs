@@ -83,7 +83,7 @@ The Visual Studio Project provides templates and a wizard that will guide you in
 
 If you choose to use the Visual Studio Report Designer and store your reports as .NET/.NET Framework classes, the most efficient way to structure your reporting solution is to first create a class library that contains your reports. Then, you can reference this class library in applications that view the reports. You can have any number of Windows or Web viewing applications that are re-using the same class library. This solution structure decouples your program logic from the report and its data.
 
-Since the Standalone Report Designer and the Visual Studio Report Designer share a lot of common code, their [wizards](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview) and dialogs look and behave the same way. The Web Report Designer, which is a JavaScript widget, preserves a lot of this behavior for consistency but upgrades it further to achieve better UX and provide higher productivity to the report authors.
+Since the Standalone Report Designer and the Visual Studio Report Designer share a lot of common code, their [report design wizards](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview) and dialogs look and behave the same way. The Web Report Designer, which is a JavaScript widget, preserves a lot of this behavior for consistency but upgrades it further to achieve better UX and provide higher productivity to the report authors.
 
 ## Viewing Reports with Report Viewers
 

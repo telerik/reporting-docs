@@ -34,7 +34,7 @@ The following image shows a Panel which contains two [TextBox](slug:telerikrepor
 * [Using Styles to Customize Reports](slug:telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports)
 * [(API) Panel](/api/Telerik.Reporting.Panel)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

@@ -35,7 +35,7 @@ The wizard stores the value as an attribute on the `EntityCoreDataSource` elemen
 
 ## Configuring the Designer Connection String
 
-For the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and report preview to work in the desktop designers, store the design-time connection string with the report definition. For the Standalone Report Designer (.NET), this is typically a literal value set on the `EntityCoreDataSource` itself or a value loaded from the host application's `appsettings.json`. For the Web Report Designer, the connection string is read from the host service that exposes the [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
+For the [Report Designer Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) and report preview to work in the desktop designers, store the design-time connection string with the report definition. For the Standalone Report Designer (.NET), this is typically a literal value set on the `EntityCoreDataSource` itself or a value loaded from the host application's `appsettings.json`. For the Web Report Designer, the connection string is read from the host service that exposes the [Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 
 ## See Also
 

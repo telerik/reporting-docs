@@ -125,6 +125,6 @@ The Visual Studio Report Designer features also `Properties Explorer`, `Report E
 ## See Also
 
 * [Visual Studio Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
-* [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects](slug:how-to-use-vs-designer-in-dotnet-core)
+* [Edit CS reports in .NET projects with Visual Studio Report Designer](slug:how-to-use-vs-designer-in-dotnet-core)
 * [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
 * [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)

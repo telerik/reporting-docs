@@ -52,7 +52,7 @@ A Table consists of the following areas:
 
 A Table item organizes cells in rows and columns that are associated with groups. Because group structures for row and column groups are identical, the documentation refers to them as row groups and you can apply the same concepts to column groups.
 
-A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and aggregates. If you don't specify an [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in an [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) in a static row cell, the Table will use the `First` function by default.
+A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and aggregates. If you don't specify an [aggregate function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in a [report expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) in a static row cell, the Table will use the `First` function by default.
 
 A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row and column group to which the cell belongs.
 
@@ -66,4 +66,4 @@ Dynamic detail rows are associated with the details group that is automatically 
 * [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
 * [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)

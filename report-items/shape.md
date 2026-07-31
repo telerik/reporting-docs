@@ -51,7 +51,7 @@ You can create the Shape at runtime and add it to a report item container (Secti
 * [(API) ShapeType](/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)
 * [(API) Stretch](/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

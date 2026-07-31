@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 # JsonDataSource Component
 
-The [JsonDataSource](/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file or saved directly into the report while using no code. At design time the component can be configured using the [JsonDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard). At run time the JsonDataSource automatically parses the JSON data.
+The [JsonDataSource component](/api/Telerik.Reporting.JsonDataSource) enables data items to display JSON data located in a local file or saved directly into the report while using no code. At design time the component can be configured using the [JsonDataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard). At run time the JsonDataSource automatically parses the JSON data.
 
 The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties. Due to this, no errors will be shown in the report if an undefined data field name is used inside an expression.
 

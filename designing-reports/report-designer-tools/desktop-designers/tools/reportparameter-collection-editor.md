@@ -21,7 +21,7 @@ There are several ways to open the ReportParameter Collection Editor:
 * Click the ellipses on the __Report.ReportParameters__ property.
 * Select the __Report Parameters..__ option from the[Context Menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu).
 * Right click on the Parameters node of the[Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer).
-* From the __Configure Data Source Parameters__ step of the[DataSource Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview).
+ * From the __Configure Data Source Parameters__ step of the [data source components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview).
 
 ![ReportParameter Collection Editor of the Report Designer with Parameter1 AvailableValues expanded](images/ReportParameterEditor.png)
 

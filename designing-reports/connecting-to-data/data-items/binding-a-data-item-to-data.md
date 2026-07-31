@@ -20,7 +20,7 @@ To perform the binding, you need to set the data item's **DataSource** property 
 
 ## Binding to data at design-time
 
-Data Source Components are used to connect to data at design-time. Having valid data source attached to a [Data Source Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) at design-time allows you to take advantage of all design time features and work with the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
+Data Source Components are used to connect to data at design-time. Having valid data source attached to a [data source component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) at design-time allows you to take advantage of all design time features and work with the [Report Designer Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
 
 For more information please see [Data Source Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) and [DataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard).
 
@@ -34,7 +34,7 @@ To bind a data item to data at run-time, you need to access the **DataSource** p
 
 Oftentimes the data needed for your Table, Chart, or another data item will already be present in the parent's data source e.g., the report's data source. In such cases, you can improve the report performance by reusing the data from the parent, instead of creating and configuring a new data source component to retrieve the data anew.
 
-You can reuse the data by adding a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to the data item's **DataSource** property, which sets the following expression:
+You can reuse the data by adding a [binding to the data item's DataSource property](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings), which sets the following expression:
 
 `= ReportItem.DataObject`
 

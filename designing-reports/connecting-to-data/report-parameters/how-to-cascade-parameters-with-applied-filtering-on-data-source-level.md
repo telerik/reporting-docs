@@ -16,7 +16,7 @@ To create cascading report parameters with applied filtering on data source leve
 
 ## Cascading Parameters with applied filtering on Datasource level
 
-1. Using the [Data Source Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard), bind the report to **SqlDataSource** with query:
+1. Using the [DataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard), bind the report to **SqlDataSource** with query:
 
    {{source=CodeSnippets\CS\SQL\SelectProductsBySubcategoryParam.sql}}
    Note that there is a **WHERE** clause that filters the datasource based on the _ProductSubcategoryID_ parameter.

@@ -66,6 +66,6 @@ Each argument of the selected method corresponds to a data source parameter. Thi
 
 ## See Also
 
-- [Overview](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
+ - [ObjectDataSource component overview](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)
 - [assemblyReferences Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element)
-- [Data Source Components Problems](slug:telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems)
+ - [Troubleshoot Data Source Component Problems](slug:telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems)

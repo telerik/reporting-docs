@@ -26,7 +26,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 		{{source=CodeSnippets\MvcCS\XmlConfiguration\TroubleshootingStandaloneReportDesigner.xml region=StandaloneReportDesignerCrashes}}
 
-		More details about the .NET Framework Standalone Report Designer's configuration file are available in the [Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview) article. `Telerik.ReportDesigner.exe.config` resides in the **[InstallDir]/Report Designer** directory by default (it is recommended to create a backup copy before modifying it).
+		More details about the .NET Framework Standalone Report Designer's configuration file are available in the [Standalone Report Designer configuration guide](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview). `Telerik.ReportDesigner.exe.config` resides in the **[InstallDir]/Report Designer** directory by default (it is recommended to create a backup copy before modifying it).
 
 	- For the `.NET` Standalone Designer version
 
@@ -39,7 +39,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 		If you provide a custom `type`, you need to copy its assembly in the designer's folder (see its path below). You need also to provide the assembly name _CustomListenersAssembly_ along with the full type name _CustomListenersNamespace.CustomListener_.
 
-		More details about the .NET Standalone Report Designer's configuration file are available in the [Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview) article. `Telerik.ReportDesigner.Net.dll.config` resides in the **[InstallDir]/Report Designer/.NET** directory by default (it is recommended to create a backup copy before modifying it).
+		More details about the .NET Standalone Report Designer's configuration file are available in the [Standalone Report Designer configuration guide](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview). `Telerik.ReportDesigner.Net.dll.config` resides in the **[InstallDir]/Report Designer/.NET** directory by default (it is recommended to create a backup copy before modifying it).
 
 * Check the event viewer logs for any log entries related to the problem.
 * Use Visual Studio Debugger to attach to the **Telerik.ReportDesigner.exe** running process before it crashes, in order to pinpoint where the error occurs.

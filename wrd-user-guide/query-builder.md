@@ -40,7 +40,7 @@ The graphical Query Builder in the Web Report Designer has the following advanta
 
 To create a query using the Query Builder in the Web Report Designer:
 
-1. [Create](slug:web-report-designer-user-guide-getting-started) an new report.
+1. [Create a new report](slug:web-report-designer-user-guide-getting-started).
 2. Add an [SQL Data Source item](slug:web-report-designer-user-guide-components-data-sources#sql-data-source).
 3. Connect to the desired SQL Data Source.
 

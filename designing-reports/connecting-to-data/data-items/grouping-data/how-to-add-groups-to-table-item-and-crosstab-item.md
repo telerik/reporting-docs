@@ -15,7 +15,7 @@ reportingArea: General
 
 Table, Crosstab, and List items are template variations of the same Table data item and use row and column groups to organize data hierarchically. Unlike Report groups, table groups expand both horizontally (column groups) and vertically (row groups) to create flexible data layouts.
 
-Use the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) to add and manage groups in table items. You can create parent, child, adjacent, or details groups, and configure filtering, sorting, and aggregation settings for each group.
+Use the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) to add and manage groups in table items. You can create parent, child, adjacent, or details groups, and configure filtering, sorting, and aggregation settings for each group.
 
 >tip The instructions in this article apply to all three template variations: Table, Crosstab, and List items.
 
@@ -26,7 +26,7 @@ Use the [Group Explorer](slug:telerikreporting/designing-reports/report-designer
 To add a parent or child row/column group:
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click an existing group.
+1. In the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click an existing group.
 1. Click **Add Group**, and then click **Parent Group** or **Child Group** depending on where you want to add the group. The **Table Group** dialog box opens.
 1. In the **Group by** section, click the **New** button.
 1. Enter an expression for the grouping criteria (for example, `= Fields.Category`).
@@ -37,7 +37,7 @@ To add a parent or child row/column group:
 	>tip The **Repeat On Every Page** functionality for group headers and footers was introduced in version `20.0.26.211`.
 1. Click **OK**.
 
-The group is added to the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) hierarchy, and the corresponding rows or columns are added to the data item on the design surface.
+The group is added to the [Group Explorer grouping hierarchy](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), and the corresponding rows or columns are added to the data item on the design surface.
 
 >tip When using **Repeat On Every Page**, you can display different content for repeated instances of the header or footer. Use the [`ReportItem.IsRepeated`](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects#reportitem) property in expressions to conditionally modify the displayed content, for example, appending "(continued)" text. For more details, see [Display Continued Text for Repeated Table Group Headers](slug:display-different-content-for-repeated-table-group-headers).
 
@@ -46,7 +46,7 @@ The group is added to the [Group Explorer](slug:telerikreporting/designing-repor
 To add an adjacent row/column group:
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click an existing group.
+1. In the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click an existing group.
 1. Click **Add Group**, and then click **Adjacent Above** or **Adjacent Below** to specify where to add the group. The **Table Group** dialog box opens.
 1. In the **Group by** section, click the **New** button.
 1. Enter an expression for the grouping criteria (for example, `= Fields.Category`).
@@ -57,7 +57,7 @@ To add an adjacent row/column group:
 	>tip The **Repeat On Every Page** functionality for group headers and footers was introduced in version `20.0.26.211`.
 1. Click **OK**.
 
-The group is added to the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) at the specified position, and the corresponding rows or columns are added to the data item on the design surface.
+The group is added to the [Group Explorer grouping hierarchy](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) at the specified position, and the corresponding rows or columns are added to the data item on the design surface.
 
 >tip When using **Repeat On Every Page**, you can display different content for repeated instances of the header or footer. Use the [`ReportItem.IsRepeated`](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects#reportitem) property in expressions to conditionally modify the displayed content, for example, appending "(continued)" text. For more details, see [Display Continued Text for Repeated Table Group Headers](slug:display-different-content-for-repeated-table-group-headers).
 
@@ -70,19 +70,19 @@ A details group displays individual data records without grouping. For row group
 To add a details group:
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click the innermost child group.
+1. In the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click the innermost child group.
 1. Click **Add Group**, and then click **Child Group**. The **Table Group** dialog box opens.
 1. Select **Show detail data**.
 1. Click **OK**.
 
-The details group is added to the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) and displays the details group icon. A new row (for row groups) or column (for column groups) is added to the table to display the detail data.
+The details group is added to the [Group Explorer grouping hierarchy](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) and displays the details group icon. A new row (for row groups) or column (for column groups) is added to the table to display the detail data.
 
 ## Edit an Existing Group
 
 To edit an existing group's properties, including grouping expressions, sorting, filtering, and other settings:
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click the group, and then click **Group Properties**.
+1. In the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click the group, and then click **Group Properties**.
 1. Configure the group properties:
 
 	+ **GroupKeepTogether**&mdash;Specify the keep together options to control whether group content stays together across page breaks.
@@ -106,7 +106,7 @@ When you enable **Repeat On Every Page** for a header and/or footer while creati
 To change the repeat behavior after group creation:
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), switch to **Extended Mode**. Static groups are hidden in the default Standard Mode.
+1. In the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), switch to **Extended Mode**. Static groups are hidden in the default Standard Mode.
 
 	![Telerik Reporting Standalone Report Designer Group Explorer highlighting the Extended Mode option for static and dynamic table groups.](images/extended-mode-group-explorer.png)
 
@@ -147,7 +147,7 @@ To change the repeat behavior after group creation:
 To delete a group:
 
 1. Select the Table, Crosstab, or List item on the design surface.
-1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click the group, and then click **Delete Group**.
+1. In the [Group Explorer grouping pane](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), right-click the group, and then click **Delete Group**.
 1. In the **Delete Group** dialog box, select one of the following options:
 
 	+ **Delete group and related rows and columns**&mdash;Choose this option to delete the group definition and all related rows and columns that display group data. For the details group, if the same row or column belongs to both detail and group data, only the detail data rows and columns are deleted.

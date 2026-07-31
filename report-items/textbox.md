@@ -90,7 +90,7 @@ For more information, refer to the article about the [**Format Builder** dialog]
 * [(API) Format](/api/telerik.reporting.textitembase#telerik_reporting_textitembase_format)
 * [(API) HtmlTextBox](/api/telerik.reporting.htmltextbox)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also 
 

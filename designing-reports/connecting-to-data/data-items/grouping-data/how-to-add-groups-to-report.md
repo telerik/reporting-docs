@@ -16,7 +16,7 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 ## Adding a group to a Report using Report Designer
 
-1. Click the Report selector button located in the upper left hand of the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
+1. Click the Report selector button located in the upper left hand of the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
 1. Click the __Groups__ ellipsis.
 1. Follow these steps for each group:
 
@@ -44,11 +44,11 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 1. Click Ok twice to close the Edit Grouping and Group Collection dialogs.
 
-> You can add a group to the Report item by using the grouping pane in the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) as well. To do so right click on the detail and select __Add Parent Group__. If there are existing groups, you can create Parent or Child groups by right-clicking on any of the existing groups.
+> You can add a group to the Report item by using the grouping pane in the [Group Explorer tool](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) as well. To do so right click on the detail and select __Add Parent Group__. If there are existing groups, you can create Parent or Child groups by right-clicking on any of the existing groups.
 
 ## Edit a group in a Report using Report Designer
 
-1. In the __Report Designer__, click the Report selector button located in the upper left hand of the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) to make the report active in the Properties window. The Grouping pane in the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) displays the available groups (if any).
+1. In the __Report Designer__, click the Report selector button located in the upper left hand of the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) to make the report active in the Properties window. The Grouping pane in the [Group Explorer tool](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) displays the available groups (if any).
 1. Right-click the group, and then click __Group Properties__.
 1. In __Name__, type the name of the group.
 1. In __Grouping property__, type or select a simple expression, or click the `<Expression>` option to create a new group expression.
@@ -73,7 +73,7 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 ## Delete a group from a Report using Report Designer
 
-1. Click the Report selector button located in the upper left hand of the [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). This makes the report active in the Properties window. The grouping pane in the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) displays the available groups (if any).
+1. Click the Report selector button located in the upper left hand of the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). This makes the report active in the Properties window. The grouping pane in the [Group Explorer tool](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) displays the available groups (if any).
 1. Right-click on the group and select __Delete Group__.
 1. When prompted to delete it, __Select Yes__.
 

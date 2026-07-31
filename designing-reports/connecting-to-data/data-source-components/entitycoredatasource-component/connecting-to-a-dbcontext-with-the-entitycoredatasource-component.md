@@ -24,7 +24,7 @@ The wizard walks you through the process as explained in:
 * [Standalone Report Designer for .NET EntityCoreDataSource Wizard](slug:desktop-entitycoredatasource-wizard)
 * [Web Report Designer EntityCoreDataSource Wizard](slug:wrd-entitycoredatasource-wizard)
 
-After the wizard completes, the component appears in the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) with the schema of the selected entity, and the report data items can bind to its fields.
+After the wizard completes, the component appears in the [Report Designer Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer) with the schema of the selected entity, and the report data items can bind to its fields.
 
 ## Configuring the Component Programmatically
 

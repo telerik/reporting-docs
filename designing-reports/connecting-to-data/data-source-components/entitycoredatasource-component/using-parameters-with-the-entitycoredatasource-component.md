@@ -12,7 +12,7 @@ reportingArea: General
 
 # Using Parameters with the EntityCoreDataSource Component
 
-This article explains how to pass values from [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to a method or queryable property of a `DbContext` through the `EntityCoreDataSource` component. Parameter binding lets the report filter data on the database server rather than fetching the entire set into memory.
+This article explains how to pass values from [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to a method or queryable property of a `DbContext` through the `EntityCoreDataSource` component. Parameter binding lets the report filter data on the database server rather than fetching the entire set into memory.
 
 > tip The `EntityCoreDataSource` wizard detects parameters declared on the data-retrieval method and prompts you to provide values for them on the **Configure Data Source Parameters** page.
 
@@ -24,7 +24,7 @@ Add a method or queryable property on the `DbContext` that accepts the values yo
 
 ## Mapping Report Parameters to the Data Source
 
-Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) by setting the value to an expression such as `=Parameters.threshold.Value`:
+Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [report parameter value](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to an expression such as `=Parameters.threshold.Value`:
 
 {{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringTwoArgConstructor_3}}
 

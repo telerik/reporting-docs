@@ -13,25 +13,25 @@ reportingArea: General
 
 # Global Objects Overview
 
-Telerik script language provides the following intrinsic (or "built-in") objects that may be used in [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) inside the report definition.
+Telerik script language provides the following intrinsic (or "built-in") objects that may be used in [report expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) inside the report definition.
 
 ## Fields
 
 The `Fields` collection represents the set of fields specified by the report data source plus any additional calculated fields that you create. It is a __function__ that requires a string argument with the name of the data field and not an __object__ like `ReportItem.DataObject`.
 
-After you create a data source for a [data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) (Report, Table, Crosstab, List, Chart), the field collection appears in the [Data Explorer toolbox](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
+After you create a data source for a [report data item](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) (Report, Table, Crosstab, List, Chart), the field collection appears in the [Data Explorer tool](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer).
 
 Example: `Fields.ProductID` - returns the value of the field ProductID in the current data scope instance. If the data source does not contain the referenced column, an error is thrown. If the report has no data source set, the expression result is null (Nothing)
 
 >note If the data source field name is not a valid name in terms of programming languages (contains spaces, punctuation marks, etc.) enclose its name in square brackets, for example =Fields.[My Column]; Because brackets are special characters, you must use a backslash (`\\`) to escape the bracket, if it is part of a data field name. For example, a data field named `Field[1]` would be referenced as `Fields.[Field\\[1\\]]`.
 
-Another option for accessing the values in the fields collection is the global function [Fields(fieldName)](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview).
+Another option for accessing the values in the fields collection is the global [Fields function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview).
 
 When the DataSource is a collection of objects that don't contain named fields, for example, an array of integers/strings, you may access the collection items in the Report Expressions as `= Fields.Item` or `= Fields("Item")`.
 
 ## Parameters
 
-Represents the collection of report parameters, each of which can be single-value or multi-value. See [Adding Parameters to Report](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview).
+Represents the collection of report parameters, each of which can be single-value or multi-value. See [report parameter configuration](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview).
 
 Examples: 
 
@@ -39,14 +39,14 @@ Examples:
 * `=Parameters.Product.Label` - when the parameter Product has AvailableValues, returns its property `AvailableValues.DisplayMember`. When there are no AvailableValues or the DisplayMember is not specified, it falls back to the actual `Value` of the parameter.
 * `=Parameters.Product.Text` - returns the property `Text` of the report parameter with the name Product. When Text is not specified it displays the `Name` of the parameter, in this example, _Product_.
 
-Another option for accessing the report parameters' collection is the global function [Parameters(parameterName)](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions).
+Another option for accessing the report parameters' collection is the global [Parameters function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions).
 
 ## Environment
 
 Represents a read-only type that contains information about the environment in which the reporting engine works. Contains two properties: `OperatingSystem` and `GraphicsEngine`.
 
-* `OperatingSystem` returns the identifier of the operating system in which the current application is running, as provided by the [OperatingSystem.VersionString](https://learn.microsoft.com/en-us/dotnet/api/system.operatingsystem.versionstring) property (e.g. 'Microsoft Windows NT 6.2.9200.0').
-* `GraphicsEngine` returns a [GraphicsEngine](/api/telerik.drawing.contract.graphicsengine) member representing the currently used graphics engine. Available values: `Gdi` and `Skia`, accessible also through the **ReportingConstants.GraphicsEngine** options. Example: `=Switch(Environment.GraphicsEngine, GraphicsEngine.Gdi, "Using GDI", GraphicsEngine.Skia, "Using Skia", "N\A")`
+* `OperatingSystem` returns the identifier of the operating system in which the current application is running, as provided by the [OperatingSystem.VersionString property](https://learn.microsoft.com/en-us/dotnet/api/system.operatingsystem.versionstring) (e.g. 'Microsoft Windows NT 6.2.9200.0').
+* `GraphicsEngine` returns a [GraphicsEngine API member](/api/telerik.drawing.contract.graphicsengine) representing the currently used graphics engine. Available values: `Gdi` and `Skia`, accessible also through the **ReportingConstants.GraphicsEngine** options. Example: `=Switch(Environment.GraphicsEngine, GraphicsEngine.Gdi, "Using GDI", GraphicsEngine.Skia, "Using Skia", "N\A")`
 
 ## ExecutionTime
 
@@ -60,13 +60,13 @@ The current page number. It can be used only in the page header and footer.
 
 The total number of pages in the report that can be used only in the page header and footer.
 
->note The page numbering behavior in a report contained in a report book may be controlled through the [PageNumberingStyle](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle) property.
+>note The page numbering behavior in a report contained in a report book may be controlled through the [PageNumberingStyle property](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle).
 
 ## RenderingFormat
 
 Represents the runtime rendering extension currently used to render the report.
 
-For information regarding the available child properties, check out the [RenderingFormat](/api/Telerik.Reporting.Processing.RenderingFormat) API reference or use the Expression Builder dialog.
+For information regarding the available child properties, check out the [RenderingFormat API reference](/api/Telerik.Reporting.Processing.RenderingFormat) or use the Expression Builder dialog.
 
 This global object will be populated while rendering the report in any report viewer or programmatically. The object will not be available in the ReportParameters properties evaluation as the parameters get evaluated before the rendering operation gets started.
 
@@ -86,7 +86,7 @@ On the Table item, though, the `ReportItem.DataObject` comes from its parent, fo
 
 The `ReportItem.IsRepeated` property, introduced in version `20.0.26.211`, is available for report items (such as TextBoxes) placed within Table, Crosstab, and List group headers or footers. It indicates whether the group containing the item is being repeated on a page (for example, when a group header or footer is configured to repeat on every page). This property returns `True` when the group is repeated, and `False` otherwise. This is useful for conditionally displaying content based on whether the group appears for the first time or as a repeated instance.
 
-For example, `=Fields.ProductCategory + IIf(ReportItem.IsRepeated, ".........", "")` displays "Category Name........." when the group header is repeated. For detailed instructions on implementing this functionality, see [Display Continued Text for Repeated Table Group Headers](slug:display-different-content-for-repeated-table-group-headers).
+For example, `=Fields.ProductCategory + IIf(ReportItem.IsRepeated, ".........", "")` displays "Category Name........." when the group header is repeated. For detailed instructions on implementing this functionality, see [how to display continued text for repeated table group headers](slug:display-different-content-for-repeated-table-group-headers).
 
 For information regarding the available processing ReportItem properties, check out the corresponding processing item API reference.
 
@@ -94,7 +94,7 @@ For information regarding the available processing ReportItem properties, check 
 
 The current report definition.
 
-For information regarding the available Report definition properties, check out the [Report](/api/Telerik.Reporting.Report) API reference.
+For information regarding the available Report definition properties, check out the [Report API reference](/api/Telerik.Reporting.Report).
 
 ## UserIdentity
 
@@ -106,7 +106,7 @@ The ReportsController receives an HTTP request from the client asking for a repo
 
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each report rendering service by overriding the corresponding GetUserIdentity method.
 
-When exporting a report programmatically, the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
+When exporting a report programmatically, the global object can be populated by setting the static [UserIdentity.Current property](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
 
 ### UserIdentity Properties
 

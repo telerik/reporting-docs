@@ -21,5 +21,5 @@ In order to expose your custom functions, so they can be utilized by the Reporti
 
 ## See Also
 
-* [User functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
-* [User Aggregate functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions)
+* [Create User Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)
+* [Create User Aggregate Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions)

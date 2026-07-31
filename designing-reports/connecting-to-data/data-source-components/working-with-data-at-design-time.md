@@ -21,7 +21,7 @@ With the above in mind, there are two cases:
 
 ## Data sources available at design time
 
-The __Data Source Components__ designed and developed specifically for __Telerik Reports__, overcome most of the design time issues while providing the freedom to connect [Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) to a wide variety of data sources incl. databases, OR/mappers, Analysis Services' Cubes, etc. without requiring code. Data source components can only read the data and cannot modify it. Every data source component is an instance of the [DataSource](/reporting/api/Telerik.Reporting.DataSource) class. Having valid data source attached to [Data Source Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) at design time allows you to take advantage of all design time goodness and work with the [Data Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer). For more information please see [Data Source Components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) and [DataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard).
+The __Data Source Components__ designed and developed specifically for __Telerik Reports__, overcome most of the design time issues while providing the freedom to connect [report data items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) to a wide variety of data sources incl. databases, OR/mappers, Analysis Services' Cubes, etc. without requiring code. Data source components can only read the data and cannot modify it. Every data source component is an instance of the [DataSource class](/reporting/api/Telerik.Reporting.DataSource). Having valid data source attached to [data source components](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) at design time allows you to take advantage of all design time goodness and work with the [Data Explorer tool](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer). For more information please see [data source component documentation](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) and [the DataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard).
 
 ## Data source available only at runtime
 
@@ -29,9 +29,9 @@ This approach is useful when you cannot get the report's data source at design t
 
 ## See Also
 
-* [DataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard)
-* [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview)
-* [ObjectDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard)
-* [OpenAccessDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard)
-* [EntityDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard)
-* [CubeDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard)
+* [Configure a DataSource](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard)
+* [Configure a SqlDataSource](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview)
+* [Configure an ObjectDataSource](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard)
+* [Configure an OpenAccessDataSource](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard)
+* [Configure an EntityDataSource](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard)
+* [Configure a CubeDataSource](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard)

@@ -27,4 +27,4 @@ When you select several cells which belong to a single dynamic or static group,
 
 * [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)

@@ -22,7 +22,7 @@ A report definition file specifies the Telerik Reporting XML namespace for the v
 
 The Standalone Report Designer can open report container files created for a previous namespace. If the report is changed and saved the upgraded report definition is converted and saved with the newer schema. This is the only way to upgrade an XML report definition but it's not required because the report viewers, the report server and the [ReportProcessor](/api/Telerik.Reporting.Processing.ReportProcessor) can handle all previous XML report versions. The report definition itself is not upgraded when uploaded on the Report Server.
 
-The previous statements are valid only for reports authored in Standalone Report Designer. The compiled type reports authored in Visual Studio are upgraded with Upgrade Wizard. For more information, see [Overview](slug:telerikreporting/upgrade/overview).
+The previous statements are valid only for reports authored in Standalone Report Designer. The compiled type reports authored in Visual Studio are upgraded with Upgrade Wizard. For more information, see the [Telerik Reporting upgrade guide](slug:telerikreporting/upgrade/overview).
 
 ## Identifying the report definition schema version
 

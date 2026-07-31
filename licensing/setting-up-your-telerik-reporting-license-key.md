@@ -21,7 +21,7 @@ An invalid license results in [errors and warnings](slug:license-errors-and-warn
 
 To download a license key for Telerik Reporting, you must have either a commercial license or a trial license. If you are new to Telerik Reporting, sign up for a [free trial](https://www.telerik.com/try/reporting) first, and then follow the steps below.
 
-You can use tools that download your license key file [automatically](#downloading-automatically), or you can download it [manually](#downloading-manually).
+You can use tools that [automatically download your license key file](#downloading-automatically), or you can [download the license key file manually](#downloading-manually).
 
 ### Downloading Automatically
 
@@ -97,7 +97,7 @@ When you build the project, the `Telerik.Licensing` NuGet package locates the li
 
 If you cannot use NuGet packages in your project, add the license as a code snippet:
 
-1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
+1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 1. Click **View Script Keys**.
 1. From the dropdown, select **Progress® Telerik® Reporting**.
 1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.
@@ -108,7 +108,7 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 ## Updating Your License Key
 
-Whenever you purchase a new Telerik Reporting license or renew an existing one, always [download](#downloading-the-license-key) and install a new license key.
+Whenever you purchase a new Telerik Reporting license or renew an existing one, always [download a new license key](#downloading-the-license-key) and install it.
 
 The new license key includes information about all previous license purchases.
 

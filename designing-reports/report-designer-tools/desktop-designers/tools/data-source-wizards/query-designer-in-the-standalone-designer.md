@@ -121,7 +121,7 @@ The data is not saved in the report definition. The actual data in the report is
 
 Sort order in the result set is determined by the order in which the data is retrieved from the database. The sort order can be changed after the data is retrieved for the report data item by adding sorting expressions with the [Edit Sorting Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog).
 
-You can group the data and use aggregates after the data is retrieved using the report data item grouping abilities and [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
+You can group the data and use aggregates after the data is retrieved using the report data item grouping abilities and [report expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
 
 ## Query Designer State
 

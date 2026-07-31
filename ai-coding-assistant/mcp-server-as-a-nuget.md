@@ -25,7 +25,7 @@ Beginning with **.NET 10**, it can be executed directly via the `dnx` command. F
 Additional requirements:
 
 - A [Telerik user account](https://www.telerik.com/account/).
-- An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
+- An active [Telerik Reporting subscription license](https://www.telerik.com/purchase/individual/reporting.aspx).
 - An application that uses the [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!).
 
 ## Summary of Installation Approaches
@@ -155,4 +155,4 @@ Examples you can try:
 ## See Also
 
 - [AI Coding Assistant Overview](slug:ai-coding-assistant)
-- [Getting Started](slug:ai-mcp-server)
+- [Getting Started with the Telerik Reporting MCP Server](slug:ai-mcp-server)

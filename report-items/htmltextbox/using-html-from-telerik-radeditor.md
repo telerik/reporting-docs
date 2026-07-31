@@ -144,4 +144,4 @@ To format the HtmlTextBox with the Telerik UI for ASP.NET AJAX Editor:
 
 - [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)

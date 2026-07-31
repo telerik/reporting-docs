@@ -123,7 +123,7 @@ The Map report item is designed for scenarios which do not require great precisi
 ## Next Steps
 
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 - [Map Class API Reference](/api/telerik.reporting.map)
 
 ## See Also

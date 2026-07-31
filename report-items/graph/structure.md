@@ -26,7 +26,7 @@ The following image shows a Rose (Bar) chart in a Graph item with a Polar coordi
 
 ## Graph vs. Table
 
-The Graph is a data report item and, similarly to the [Table](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) item, allows you to summarize data by the __CategoryGroups__ and __SeriesGroups__ hierarchical dimensions.
+The Graph is a data report item and, similarly to the [Table report item](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) item, allows you to summarize data by the __CategoryGroups__ and __SeriesGroups__ hierarchical dimensions.
 
 The following images visually compare the data representation offered by the Graph and Table report items:
 

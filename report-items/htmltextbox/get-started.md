@@ -77,17 +77,17 @@ You can also embed images in the HtmlTextBox using the `<img>` tag. To add an im
 
 ![Preview mode of the Standalone Report Designer where a hypertext and an image are visible.](images/HtmlTextBox-ContentWithImage.png)
 
->tip For more information about image support including supported attributes and CSS styling options, see [Image Support](slug:htmltextbox_formatting_and_styling#image-support).
+>tip For more information about image support including supported attributes and CSS styling options, see [HTML image support](slug:htmltextbox_formatting_and_styling#image-support).
 
 ## Next Steps
 
 - [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 
-- [Editing](slug:htmltextbox_editing)
+- [Editting HtmlTextBox content](slug:htmltextbox_editing)
 - [Styling and Formatting](slug:htmltextbox_formatting_and_styling)
 - [Embedded Expressions](slug:htmltextbox_embedded_expressions)
 - [Known Limitations](slug:htmltextbox_known_limitations)

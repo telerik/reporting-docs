@@ -26,7 +26,7 @@ Depending on the grouping expressions, groups may be static, dynamic, or detaile
 * __Dynamic groups__ are defined by expressions that produce different results according to the current data (ex., `=Fields.County`). This way, the items of the data source are partitioned into groups according to the values of the grouping expressions.
 * __Details groups__ are defined by a single __Grouping__ object that has no expression (empty __Grouping__ ) and produces one member for each item of the data source. Detail groups can be applied to __Table__, __Crosstab__ or __List__ items; *for backward compatibility reasons, the Report item treats the detail groups as static groups*.
 
-Groups support filtering and sorting that allows you to limit and order the members of the group according to your needs. For more information see [Filtering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) and [Ordering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview).
+Groups support filtering and sorting that allows you to limit and order the members of the group according to your needs. For more information see [filtering data items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) and [ordering data items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview).
 
 Groups are internally organized as members of one or more hierarchies for each data item. A group hierarchy has parent/child groups that are nested and can have adjacent groups. As groups have names, the group hierarchy defines the named scope hierarchy for the report items and expressions.
 
@@ -43,5 +43,5 @@ Data items support groups in different ways according to their structure and app
 
 ## See Also
 
-* [Filtering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
-* [Ordering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)
+* [Filtering Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
+* [Ordering Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)

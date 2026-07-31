@@ -24,5 +24,5 @@ You may also use [embedded expressions](slug:telerikreporting/designing-reports/
 
 ## See Also
 
-* [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
-* [Using Report Parameters in Expressions](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions)
+* [Configure Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
+* [Use Report Parameters in Expressions](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions)

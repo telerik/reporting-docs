@@ -68,7 +68,7 @@ You can display some aggregate values in the CrossTab as well. For example, to a
 * [Basic Concepts of the Table, Crosstab, and List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts)
 * [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

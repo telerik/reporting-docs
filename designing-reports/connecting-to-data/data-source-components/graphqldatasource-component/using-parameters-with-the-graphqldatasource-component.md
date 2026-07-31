@@ -13,10 +13,10 @@ reportingArea: General
 
 The `GraphQLDataSource` component can request data in JSON format from a running GraphQL service. It requires the base URL of the service specified in the `Service URL` property, as well as a GraphQL query in the `Query` property. The GraphQLDataSource can take parameters. The supported data source parameter types are:
 
-* [Inline Parameters](#inline-parameters)
-* [Query Parameters](#query-parameters)
-* [Header Parameters](#header-parameters)
-* [Cookie Parameters](#cookie-parameters)
+* [Inline GraphQL parameters](#inline-parameters)
+* [GraphQL query parameters](#query-parameters)
+* [HTTP header parameters](#header-parameters)
+* [HTTP cookie parameters](#cookie-parameters)
 
 >caution Currently, Telerik Reporting supports variables only for the built-in pagination fields, for more information check the section [Cursor-Based Pagination Support](#cursor-based-pagination-support).
 > For other dynamic values in your GraphQL query, use [inline parameters](#inline-parameters) instead. 

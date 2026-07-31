@@ -21,13 +21,13 @@ When the report renders, the expression is evaluated and assigned to the bound p
 | Scenario | Use This | Reason |
 |--------------|--------------|------------|
 | Displaying field values in text boxes | Value expressions (e.g., `=Fields.Total`) | The `Value` property supports expressions natively. |
-| Styling multiple properties based on conditions | [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) | User-friendly interface, one rule can set multiple style properties. |
+| Styling multiple properties based on conditions | [Conditional Formatting Rules](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) | User-friendly interface, one rule can set multiple style properties. |
 | Complex expressions for styling | Bindings | Full expression flexibility, cleaner for complex logic like `IIF(Fields.Amount > 1000, 'Red', 'Green')`. |
 | Setting DataSource, Visible, or other properties without native expression support | Bindings | Only bindings can dynamically set these properties. |
 
-> __Prefer Conditional Formatting over Bindings for Presentational Style Logic__ When a runtime value only affects how a report item looks, for example, the background color, font color, font weight, or border width, prefer a [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rule over a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). Bindings rely on reflection at runtime to resolve and assign the target property, which adds processing overhead. Conditional Formatting rules are evaluated through a more efficient code path and typically perform noticeably better in dense, data-bound sections that re-evaluate styling on every rendered row.
+> __Prefer Conditional Formatting over Bindings for Presentational Style Logic__ When a runtime value only affects how a report item looks, for example, the background color, font color, font weight, or border width, prefer a [conditional formatting rule](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) over an [expression binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). Bindings rely on reflection at runtime to resolve and assign the target property, which adds processing overhead. Conditional Formatting rules are evaluated through a more efficient code path and typically perform noticeably better in dense, data-bound sections that re-evaluate styling on every rendered row.
 >
-> Reserve [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
+> Reserve [expression bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [report expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
 
 ## Common Binding Scenarios
 
@@ -48,12 +48,12 @@ When the report renders, the expression is evaluated and assigned to the bound p
 1. Enter the expression in the **Expression** field. The expression must return a value compatible with the property type.
 1. Click **OK** to apply the bindings.
 
->tip Not all item properties support expression bindings. Refer to the [Reporting API Reference](/api/) to verify if a specific property supports binding.
+>tip Not all item properties support expression bindings. Refer to the [Telerik Reporting API reference](/api/) to verify if a specific property supports binding.
 
 ![Edit Bindings Wizard](images/UI/Bindings.png)
 
 ## See Also
 
-* [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)
-* [Telerik.Reporting.Binding](/api/Telerik.Reporting.Binding)
-* [Telerik.Reporting.BindingCollection](/api/Telerik.Reporting.BindingCollection)
+* [Report Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)
+* [Binding class API reference](/api/Telerik.Reporting.Binding)
+* [BindingCollection class API reference](/api/Telerik.Reporting.BindingCollection)

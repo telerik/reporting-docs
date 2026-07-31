@@ -18,9 +18,9 @@ The Edit Filters dialog allows you to specify which records will be displayed. T
 
 ## Using the Edit Filters Dialog
 
-For more information on adding filters to [Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview), please refer to the [Filtering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) help topic.
+For more information on adding filters to [report data items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview), please refer to the [data item filtering guide](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview) help topic.
 
 ## See Also
 
-* [Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)
-* [Filtering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
+* [Configure Report Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)
+* [Filter Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)

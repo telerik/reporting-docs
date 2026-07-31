@@ -61,7 +61,7 @@ Telerik Reporting provides the following Linear Gauge report item presets out of
 * [RadialGauge Class API Reference](/api/telerik.reporting.radialgauge)
 * [LinearGauge Class API Reference](/api/telerik.reporting.lineargauge)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

@@ -12,7 +12,7 @@ reportingArea: General
 
 # Importing reports created with the VS Report Designer
 
-Should you need to import your existing reports created with the Visual Studio Report Designer to [Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) supported format, follow the approaches outlined below:
+Should you need to import your existing reports created with the Visual Studio Report Designer to a [supported Standalone Report Designer format](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview), follow the approaches outlined below:
 
 ## Import reports created with VS Report Designer using Standalone Designer
 

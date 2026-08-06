@@ -43,5 +43,5 @@ Data items support groups in different ways according to their structure and app
 
 ## See Also
 
-* [Filtering Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
-* [Ordering Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)
+* [Filtering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
+* [Ordering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview)

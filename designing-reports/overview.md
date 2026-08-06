@@ -62,7 +62,7 @@ Telerik Reporting supports the following programmatic report definitions:
 	+ `Arrow keys` Move the selected report item.
 	+ `Shift + Arrow keys` Increase or decrease the size of the selected report item.
 
- * To add multiple items to a Table cell, first add a [Panel report item](slug:telerikreporting/designing-reports/report-structure/panel), and then add the items. By default, each Table cell contains a [TextBox report item](slug:telerikreporting/designing-reports/report-structure/textbox). When you add a [Panel report item](slug:telerikreporting/designing-reports/report-structure/panel) to a cell, the Panel replaces the TextBox.
+* To add multiple items to a Table cell, first add a [Panel report item](slug:telerikreporting/designing-reports/report-structure/panel), and then add the items. By default, each Table cell contains a [TextBox report item](slug:telerikreporting/designing-reports/report-structure/textbox). When you add a [Panel report item](slug:telerikreporting/designing-reports/report-structure/panel) to a cell, the Panel replaces the TextBox.
 * Use the Zoom control to adjust your view of the design surface. You can work with the whole page or smaller sections of the page.
 * The Properties grid displays properties for the current selection.
 * To work with Table row groups and column groups, select the group from the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).

@@ -24,7 +24,7 @@ Add a method or queryable property on the `DbContext` that accepts the values yo
 
 ## Mapping Report Parameters to the Data Source
 
-Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [report parameter value](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) to an expression such as `=Parameters.threshold.Value`:
+Set the `ContextMember` property to the method name and add one entry to the `Parameters` collection of the data source for every method argument. The `Parameters` collection is inherited through `ObjectDataSourceBase` and exposes the same fluent overload used by every Telerik Reporting data source: `Add(name, type, valueOrExpression)`. Bind to a [report parameter value](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) with an expression such as `=Parameters.threshold.Value`:
 
 {{source=CodeSnippets\Blazor\Docs\DataSources\AppDbContext.cs region=EFCoreConnectionStringTwoArgConstructor_3}}
 

@@ -12,7 +12,7 @@ reportingArea: General
 
 # Using the NeedDataSource Event to Connect to Data
 
-In certain scenarios, you may find it impossible to connect to your data at design time. [Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) provide a suitable event to notify you that they are about to process so you may provide data for them to render, otherwise, they will be processed as unbound items.
+In certain scenarios, you may find it impossible to connect to your data at design time. [Data item components](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) provide a suitable event to notify you that they are about to process so you may provide data for them to render, otherwise, they will be processed as unbound items.
 
 The `NeedDataSource` event is raised by the reporting engine to inform you that the data item is about to be processed and still has no data source attached. The sender of the event is always the processing counterpart of the data item and it is the receiver of the data source.
 

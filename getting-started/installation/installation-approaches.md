@@ -111,7 +111,7 @@ To configure the Telerik NuGet feed in Visual Studio:
 1. Open Visual Studio.
 1. Go to **Tools > NuGet Package Manager > Package Manager Settings**.
 1. Select **Package Sources**, and then click the + button.
-1. In the **Source** field, enter `https://nuget.telerik.com/v3/index.json`. If you use a locally available NuGet package downloaded from <a href="https://www.telerik.com/account/" target="_blank">your account</a>, add the path to the local package instead of the URL.
+1. In the **Source** field, enter `https://nuget.telerik.com/v3/index.json`. If you use a locally available NuGet package downloaded from <a href="https://www.telerik.com/account/" target="_blank">your Telerik account</a>, add the path to the local package instead of the URL.
 1. Click **Update** and then **OK**.
 
 The Telerik NuGet feed is now available as a package source.

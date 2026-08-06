@@ -36,7 +36,7 @@ The default value, when not explicitly set, generates logs with verbosity betwee
 
 Starting with **Telerik.Licensing** version 1.6.24, we provide a utility that does runtime diagnostics.
 
-1. Install `Telerik.Licensing` library **1.6.24** or later from [NuGet](https://www.nuget.org/packages/Telerik.Licensing). We recommend the latest version of the package.
+1. Install `Telerik.Licensing` library **1.6.24** or later from the [NuGet.org Telerik.Licensing package page](https://www.nuget.org/packages/Telerik.Licensing). We recommend the latest version of the package.
 
 	> If your project targets the `.NET Framework`, you may need to add a binding redirect to your configuration file. If you use a newer version, change the code accordingly:
 	{{source=CodeSnippets\MvcCS\XmlConfiguration\Troubleshooting.xml region=RuntimeDiagnostics}}

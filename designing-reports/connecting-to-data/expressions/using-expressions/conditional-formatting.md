@@ -14,7 +14,7 @@ reportingArea: General
 
 You can design a report so that different styles are applied to items based on the data in the report. For example, you can display negative numbers in red or change the background colors on a table cell.
 
-To make styles conditional, use an expression instead of a static value for the style properties of the report item. The two examples below demonstrate how to make a **TextBox** render negative values in red for a field called Profit. You can achieve this with the **Conditional Formatting Editor** in Report Designer or by using [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
+To make styles conditional, use an expression instead of a static value for the style properties of the report item. The two examples below demonstrate how to make a **TextBox** render negative values in red for a field called Profit. You can achieve this with the **Conditional Formatting Editor** in Report Designer or by using [expression bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings).
 
 ### Using Conditional Formatting Editor
 
@@ -49,5 +49,5 @@ To make styles conditional, use an expression instead of a static value for the 
 
 ## See Also
 
-- [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting)
-- [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
+- [Configure Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting)
+- [Bind Expressions to Report Item Properties](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)

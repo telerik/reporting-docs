@@ -24,7 +24,7 @@ To use the Telerik Reporting MCP Server, you need:
 
 - [.NET 8+](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview) SDK.
 - A [Telerik user account](https://www.telerik.com/account/).
-- An active [license](https://www.telerik.com/purchase/individual/reporting.aspx) covering the usage of Telerik Reporting.
+- An active [Telerik Reporting subscription license](https://www.telerik.com/purchase/individual/reporting.aspx).
 - An application that uses the [Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!).
 - An [MCP-compatible client (IDE, Code Editor, or App)](https://modelcontextprotocol.io/clients) that supports MCP tools. For example, the latest [Visual Studio 2026](https://visualstudio.microsoft.com/).
 
@@ -124,7 +124,7 @@ The steps below describe the sample procedure for configuring the Telerik Report
 	</TabStripTab></TabStrip>
 
 1. Restart Visual Studio.
-1. Enable the `telerik-reporting-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+1. Enable the `telerik-reporting-assistant` tool in the [GitHub Copilot Chat's tool selection menu](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 > warning **Known Issue: Hanging tool calls in Visual Studio**
 > <br/> <br/> When using Telerik AI tools in Visual Studio, GitHub Copilot may: <br/>

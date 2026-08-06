@@ -15,7 +15,7 @@ The [System.Data.SQLite](https://system.data.sqlite.org/) is an ADO.NET provider
 
 ## Setting up the System.Data.SQLite Data Provider in the .NET Standalone Report Designer
 
-1. Download the **SQLite Binaries** built for `.NET Standard 2.0` or `.NET Standard 2.1` from the [System.Data.[SQLite](https://www.nuget.org/packages/system.data.sqlite/) Downloads page.
+1. Download the **SQLite Binaries** built for `.NET Standard 2.0` or `.NET Standard 2.1` from the [System.Data.SQLite downloads page](https://www.nuget.org/packages/system.data.sqlite/).
 1. Unpackage the zip with the binaries and copy the `System.Data.SQLite.dll` file to the .NET Standalone Report Designer installation directory, e.g., `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
 1. Download SQLite binaries built for `.NET Framework 4.X` from the [System.Data.SQLite](https://www.nuget.org/packages/system.data.sqlite/) page.
 1. Unpackage the archive and copy the `SQLite.Interop.dll` assembly to the .NET Standalone Report Designer installation directory, e.g., `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.

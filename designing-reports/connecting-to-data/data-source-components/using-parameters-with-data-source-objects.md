@@ -20,10 +20,10 @@ You can use parameterized data retrieval methods to supply search criteria and v
 
 ## See Also
 
-* [Filtering Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
-* [Using Parameters with the SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
-* [Using Parameters with the ObjectDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component)
-* [Using parameters with the EntityDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/using-parameters-with-the-entitydatasource-component)
-* [Using parameters with the OpenAccessDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/using-parameters-with-the-openaccessdatasource-component)
-* [Specifying query parameters with the CubeDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/specifying-query-parameters-with-the-cubedatasource-component)
-* [Configuring WebServiceDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
+* [Filter Data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview)
+* [Use Parameters with the SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
+* [Use Parameters with the ObjectDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component)
+* [Use Parameters with the EntityDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/using-parameters-with-the-entitydatasource-component)
+* [Use Parameters with the OpenAccessDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/using-parameters-with-the-openaccessdatasource-component)
+* [Specify Query Parameters with the CubeDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/specifying-query-parameters-with-the-cubedatasource-component)
+* [Configure the WebServiceDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)

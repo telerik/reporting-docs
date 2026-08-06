@@ -30,7 +30,7 @@ The __Edit Action__ offers the following choices:
 
 Depending on the purpose of the interactive actions you can choose the appropriate option which would open an additional pane below. For more information review the following articles:
 
-* [Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview)
+* [Configure Report Actions](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview)
 * [Document Map](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview)
 * [Drillthrough Report Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action)
 * [BookMark Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action)

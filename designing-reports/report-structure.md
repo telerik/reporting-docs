@@ -53,8 +53,8 @@ Since the paging of a report strongly depends on the format it is rendered to, t
 
   > note If the contents of the Page Header or Footer grows beyond its boundaries, the contents are clipped. Any report item that doesn't fit entirely in the section is removed, i.e. not rendered at all.
 
-- It is not possible to use [Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) in this section.
-- [Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) in this section are evaluated against the report [Data Scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope) defined by the data source of the report after the data has been filtered. To work with data from the current page, only you have to use the [`PageExec`](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) function or the other Page functions with a specified scope.
+ - It is not possible to use [report data items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview) in this section.
+ - [Report expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) in this section are evaluated against the report [data scope](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope) defined by the data source of the report after the data has been filtered. To work with data from the current page, only you have to use the [`PageExec`](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) function or the other Page functions with a specified scope.
 
 ### Table of Contents
 

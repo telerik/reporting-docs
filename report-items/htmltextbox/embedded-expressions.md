@@ -21,4 +21,4 @@ After the expression is evaluated or replaced, the value of the HtmlTextBox must
 
 * [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)

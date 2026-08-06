@@ -19,7 +19,7 @@ The `MySQL Connector/NET` is a fully managed ADO.NET data provider written in pu
 1. Install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package to it and `build` the project.
 1. Navigate to the `bin/Debug/net8.0` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
 1. Paste the assemblies in the .NET Standalone Report Designer installation directory, e.g., `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
-1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview), which should trigger the [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview). The `MySQL` data provider should now be listed among the rest of the data providers when building a new connection.
+1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview), which should trigger the [SqlDataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview). The `MySQL` data provider should now be listed among the rest of the data providers when building a new connection.
 
 ## Setting up the MySQL Connector/NET Data Provider in the .NET Framework Standalone Report Designer
 
@@ -50,7 +50,7 @@ If the [SqlDataSource component](slug:telerikreporting/designing-reports/connect
 
 ## Web Report Designer
 
-In the [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard) of the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview), on the first page, the `Data Provider` must be `MySql.Data.MySqlClient`, but the option is limited only to MySql.Data.
+In the [SqlDataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard) of the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview), on the first page, the `Data Provider` must be `MySql.Data.MySqlClient`, but the option is limited only to MySql.Data.
 
 Since the engine cannot determine the type of the data provider by that name, it falls back to `System.Data.SqlClient` and claims that `"Port" is not a supported keyword`.
 

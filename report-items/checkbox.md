@@ -62,7 +62,7 @@ In this case, it is more convenient to use those values directly instead of tryi
 * [(API) CanShrink](/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)
 * [(API) CheckAlign](/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

@@ -47,7 +47,7 @@ We will use the **AdventureWorks** sample database and the [Telerik Report Desig
 
    If you preview the report, you will notice that the chart data stays the same on every row and column of the crosstab. That's why we connected it to the whole dataset. In order to connect it to the current row group data, defined by the expression `"Fields.SalesPersonName"`, we have to bind the graph data source to the current report item's data object.
 
-1. Open the Graph's [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) editor and create a new binding for the DataSource property as shown below:
+1. Open the Graph's [data binding editor](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) and create a new binding for the DataSource property as shown below:
 
    ![Setting the Nested Graph DataSource through Bindings in the Editor of the Report Designer](images/DataItems/di_NestGraphInTable_BindingsEditor.png)
 
@@ -65,6 +65,6 @@ The same approach is used in the `Product Sales` example report which is also sh
 
 ## See Also
 
-- [Table/Crosstab/List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
-- [Graph Structure](slug:telerikreporting/designing-reports/report-structure/graph/structure)
+- [Table, Crosstab, and List Item Structure](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
+- [Graph Item Structure](slug:telerikreporting/designing-reports/report-structure/graph/structure)
 - [How to use the ReportItem.DataObject in expressions](slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions)

@@ -75,7 +75,7 @@ After you have added the Graph report item to your report, you can manually conf
 * [Supported Chart Types](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/overview)
 * [Graph Class API Reference](/api/telerik.reporting.graph)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

@@ -78,7 +78,7 @@ Not all rendering extensions [support the Cross-section report item](slug:teleri
 
 * [Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

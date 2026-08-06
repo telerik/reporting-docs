@@ -102,5 +102,5 @@ This example demonstrated how to create a simple Choropleth map by using data fr
 * [Adding LocationMapSeries Instances to the Map](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item)
 * [Creating BarChart Series and CSV Data Source Maps](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 * [Map Class API Reference](/api/telerik.reporting.map)

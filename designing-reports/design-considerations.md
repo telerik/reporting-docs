@@ -20,7 +20,7 @@ All report items grow from top to bottom and some (SubReport, and Table, Crossta
 
 If you have two report items positioned vertically with '1in' space between them, hiding the first report item results in the second item occupying the first item's height only. The '1in' space between the report items is preserved at all times.
 
-In Telerik Reporting versions before R3 2016, sections/Panel item can grow to accommodate their children but cannot shrink/take space that is no longer occupied. To remove such space in a container (report section or panel item), set its height to a very small value (for example '1mm', but not zero unit). If you want a section/panel to shrink only at runtime you can set its `Height` property in the report constructor or via expression. For the purpose, place the `Height` property assignment code after the `IntializeComponent()` method call or use a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to the item's `Height` property.
+In Telerik Reporting versions before R3 2016, sections/Panel item can grow to accommodate their children but cannot shrink/take space that is no longer occupied. To remove such space in a container (report section or panel item), set its height to a very small value (for example '1mm', but not zero unit). If you want a section/panel to shrink only at runtime you can set its `Height` property in the report constructor or via expression. For the purpose, place the `Height` property assignment code after the `IntializeComponent()` method call or use an [expression binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to the item's `Height` property.
 
 As of [`Telerik Reporting R3 2016`](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) report sections and Panel item have the `CanShrink` property. If the container’s content is hidden or shrunk, when `CanShrink` is turned on, the container will collapse accordingly.
 
@@ -30,7 +30,7 @@ As of [`Telerik Reporting R3 2016`](https://www.telerik.com/support/whats-new/re
 
 ## Showing and Hiding Report Items
 
-Report items can be hidden or displayed by default, or hidden or displayed conditionally using [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) or [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). Optionally, the visibility can be switched by clicking another report item ([Drilldown Report Action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action)).
+Report items can be hidden or displayed by default, or hidden or displayed conditionally using [conditional formatting rules](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) or [expression bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings). Optionally, the visibility can be switched by clicking another report item ([drilldown report action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action)).
 
 In a report with complex layout, changing the visibility of an item does not guarantee that the space it occupies is filled in by the items below or to the right of it.
 

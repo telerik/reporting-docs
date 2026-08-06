@@ -16,7 +16,7 @@ The `ObjectDataSource` component can call a business object method based on the 
 
 The `ObjectDataSource` component accepts input parameters at run time and manages them in a parameter collection. You can use the `Parameters` property to specify the parameters. For each parameter you can set a name and a default value or an expression. During the report processing the `ObjectDataSource` parameters’ values are used as argument values for the data method or the constructor of the business object. Because of this the order of the parameters is important and should exactly match the order of the arguments along with their types and names. Any discrepancy will result in a run-time exception.
 
-> The [ObjectDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard) can detect parameters of the data-retrieval method, and it will ask you to provide values for them at __Configure Data Source Parameters__ step.
+ > The [ObjectDataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard) can detect parameters of the data-retrieval method, and it will ask you to provide values for them at __Configure Data Source Parameters__ step.
 
 >caution Only simple built-in types (such as `string`, `int`, `double`, `decimal`, `DateTime`, `bool`) are supported as method parameter types. Methods with complex or custom parameter types cannot be configured through the wizard and will fail at runtime.
 

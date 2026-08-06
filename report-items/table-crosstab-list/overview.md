@@ -34,7 +34,7 @@ The Table report item is an individual [data region](slug:telerikreporting/desig
 - [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
 - [Table Class API Reference](/api/telerik.reporting.table)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

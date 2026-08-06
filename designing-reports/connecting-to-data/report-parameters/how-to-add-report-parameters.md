@@ -14,7 +14,7 @@ reportingArea: General
 
 ## What is a Report Parameter?
 
-[Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) allow you to control the report's content, connect related reports, or use them as arguments in functions. They typically filter report data that is retrieved from a [data source component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview). Filtering data at the data source can improve performance for processing and viewing a report. 
+[Report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) allow you to control the report's content, connect related reports, or use them as arguments in functions. They typically filter report data that is retrieved from a [data source component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview). Filtering data at the data source can improve performance for processing and viewing a report.
 
 For the times when you cannot filter data at the source, you can use parameters to [filter report data after it is retrieved](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview#client-side-filtering). You can also sort and group data in a report based on report parameters.
 

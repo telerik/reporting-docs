@@ -21,7 +21,7 @@ table th:nth-of-type(2) {
 
 The data source is introduced in [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211).
 
-The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQLDataSource Wizard](slug:desktop-graphqldatasource-wizard). At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
+The [GraphQLDataSource component](/api/Telerik.Reporting.GraphQLDataSource) enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQLDataSource configuration wizard](slug:desktop-graphqldatasource-wizard). At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
 
 The data field names for this data source are **case-sensitive**. It is required to use the correct data field names in expressions, otherwise, no data will be shown.
 

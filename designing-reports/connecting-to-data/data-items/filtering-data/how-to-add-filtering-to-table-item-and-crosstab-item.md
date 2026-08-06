@@ -32,7 +32,7 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewFilterSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewFilterSnippet}}
 
-> The Table/Crosstab/List item has a complex [structure](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns) built by Rows and Column groups, where each group has its own Filters. If you need to limit column, add filters to the corresponding column groups. If you need to limit rows, add filters to the corresponding row groups. The [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) can be used for checking the Table/Crosstab/List item's Row and Column groups.
+> The Table/Crosstab/List item has a complex [structure](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns) built by Rows and Column groups, where each group has its own Filters. If you need to limit column, add filters to the corresponding column groups. If you need to limit rows, add filters to the corresponding row groups. The [Group Explorer tool](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer) can be used for checking the Table/Crosstab/List item's Row and Column groups.
 
 ## See Also
 

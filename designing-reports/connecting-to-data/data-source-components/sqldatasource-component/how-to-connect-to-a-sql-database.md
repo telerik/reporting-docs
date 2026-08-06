@@ -16,7 +16,7 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
 
 ## To connect to a SQL database using the SqlDataSource component
 
-1. Open a Telerik Reporting in a [Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/overview)
+1. Open a Telerik Reporting report in a [Telerik Reporting report designer](slug:telerikreporting/designing-reports/report-designer-tools/overview)
 
    - **In Microsoft Visual Studio** : From the Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the SqlDataSource component and click on the design surface to add it to the Report.
    - **In the Standalone Report Designer** : Select _SQL Data Source_ from the _Data tab_.
@@ -36,7 +36,7 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
       - **Data source:** shows the type of data source that will be used, based on the selected.NET data provider. The value should be filled automatically, if a valid.NET provider is set through the **Data provider** drop-down.
       - **Data source box:** Shows the type of data source that will be used, based on the selected.NET data provider.
       - **Server name box:** Enter the address or name for your SQL Server instance.
-      - **Logon to the server/database** : Enter the logon credentials, or if it is supported by the.NET data provider, select to 'Use Windows Authentication'. Select the option that is appropriate for accessing and running the SQL Server database. The settings are turned into standard connection strings attributes. For more details, check [The Connection Strings Reference](https://www.connectionstrings.com/).
+      - **Logon to the server/database** : Enter the logon credentials, or if it is supported by the.NET data provider, select to 'Use Windows Authentication'. Select the option that is appropriate for accessing and running the SQL Server database. The settings are turned into standard connection strings attributes. For more details, check [the connection strings reference](https://www.connectionstrings.com/).
       - **Select or enter a database name:** The option depends on the selected.NET data provider and the required attributes for building the connection string. If the option is visible, enter a valid database on the server e.g. **AdventureWorks** (MSSQL database used by Telerik Reporting local examples).
 
    At the end, click `Test connection` to verify that your connection works. Click `OK`. You should see the connection string's attributes written in the **Connection string** text-box.
@@ -62,7 +62,7 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
 
    - Select **Use a shared connection**, which option saves the connection string by the name typed in the **Alias** box, in the current project's CONFIG file, under the `connectionStrings` element.
 
-     This will let you reuse the connection string for other SqlDataSource components. The Reporting Engine uses a [ConfigurationManager(msdn)](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager?view=dotnet-plat-ext-7.0) to search connection strings by name in the current project's configuration file.
+   This will let you reuse the connection string for other SqlDataSource components. The Reporting Engine uses the [ConfigurationManager class](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager?view=dotnet-plat-ext-7.0) to search connection strings by name in the current project's configuration file.
 
    - Select **Embed in the report definition**, which option saves the connection string the way it is written in the **Connection string** text-box as `SqlDataSource.ConnectionString` property.
 
@@ -74,7 +74,7 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
 
    - **Select Statement:** Use this option to type a standard SQL query. You can use the `Query Builder` button to design the SQL query through the available UI.
 
-     The Visual Studio Report Designer uses the IDE's Query Builder, where the Standalone Report Designer uses its own implementation of a [Query Builder](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer).
+   The Visual Studio Report Designer uses the IDE's Query Builder, where the Standalone Report Designer uses its own implementation of a [SQL query builder](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer).
 
    - **Stored Procedure:** Use this option to select a stored procedure existing in the connected SQL database. If the stored procedure is not discovered, you can type its name manually e.g. `dbo.GetNotes`.
 
@@ -89,7 +89,7 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
 
    - `Name` showing the SQL parameter's name, written in TSQL: `@ID`;
    - `DbType` showing the SQL parameter's discovered type: `String` (if no other specified). Change it to Int64 that can be mapped by an Integer report parameter.
-   - Click the cell under the `Value` column and select the _New Report Parameter_ option. In the [Report Parameter Editor](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor) will be loaded default information about the newly created report parameter, where you can set `Type=Integer` and `Visible=True`. Click `OK` to confirm the changes and to create the report parameter.
+   - Click the cell under the `Value` column and select the _New Report Parameter_ option. In the [report parameter editor](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor) will be loaded default information about the newly created report parameter, where you can set `Type=Integer` and `Visible=True`. Click `OK` to confirm the changes and to create the report parameter.
 
      Click `Next` to navigate to the **Configure design time parameters** step. Enter design-time (constant) value to evaluate the SQL query and get the data fields in the Report Designer e.g. type `1`.
 
@@ -100,9 +100,9 @@ You can connect to a SQL database using the Telerik `SqlDataSource` component. T
 
 ## See Also
 
-- [SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview)
-- [Using Parameters with the SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
+- [Configure the SqlDataSource Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview)
+- [Use Parameters with the SqlDataSource Component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component)
 - [The Connection Strings Reference](https://www.connectionstrings.com/)
-- [Data provider is missing in the SqlDataSource wizard](slug:data-provider-is-missing-in-the-sqldatasource-wizard)
-- [How to use MultiValue Report Parameter in a SQL query](slug:how-to-use-multivalue-report-parameter-in-a-sql-query)
-- [How to configure Stored Procedure with Temporary Tables for use with SqlDataSource component](slug:use-temporary-tables-in-stored-procedure)
+- [Resolve a Missing Data Provider in the SqlDataSource Wizard](slug:data-provider-is-missing-in-the-sqldatasource-wizard)
+- [Use a Multivalue Report Parameter in a SQL Query](slug:how-to-use-multivalue-report-parameter-in-a-sql-query)
+- [Configure a Stored Procedure with Temporary Tables for the SqlDataSource Component](slug:use-temporary-tables-in-stored-procedure)

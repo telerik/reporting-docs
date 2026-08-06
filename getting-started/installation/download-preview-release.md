@@ -14,7 +14,7 @@ reportingArea: General
 
 A preview release is a minor release with bug fixes that is published between the major releases (Q1, Q2, Q3, and Q4). Preview releases are published on demand and have no release cadence.
 
-If a preview version gets released, it remains available for download only until the release of the next official version. Once the official version is published, the preview that preceded it is removed from the [Downloads](https://www.telerik.com/account/downloads/product-download?product=REPORTING) section of your Telerik account.
+If a preview version gets released, it remains available for download only until the release of the next official version. Once the official version is published, the preview that preceded it is removed from the [Telerik account Downloads section](https://www.telerik.com/account/downloads/product-download?product=REPORTING).
 
 ## Downloading the Preview Release
 

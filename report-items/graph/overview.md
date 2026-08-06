@@ -25,9 +25,9 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 
 ## Key Features
 
-* [Structure and elements](slug:telerikreporting/designing-reports/report-structure/graph/structure)&mdash; You can utilize all available elements the visual structure of the Graph report item supports.
-* [Connecting to data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data)&mdash; The Graph report item allows you to bind it to a single data object where you can control what data and in what way is visualized through the Telerik Reporting Expression engine.
-* [Chart types](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/overview)&mdash; The Graph comes with rich design-time support, and enables you to create different charts and add a series of different chart types.
+* [Graph structure and elements](slug:telerikreporting/designing-reports/report-structure/graph/structure)&mdash; You can utilize all available elements the visual structure of the Graph report item supports.
+* [Bind the Graph to data](slug:telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data)&mdash; The Graph report item allows you to bind it to a single data object where you can control what data and in what way is visualized through the Telerik Reporting Expression engine.
+* [Configure Graph chart types](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/overview)&mdash; The Graph comes with rich design-time support, and enables you to create different charts and add a series of different chart types.
 * [Styling and formatting](slug:telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm)&mdash; The Graph delivers extensive settings for configuring the rendering of its axes, gridlines, legends, and other elements.
 
 ## Next Steps
@@ -36,7 +36,7 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 * [Graph Structure and Elements](slug:telerikreporting/designing-reports/report-structure/graph/structure)
 * [Graph Class API Reference](/api/telerik.reporting.graph)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

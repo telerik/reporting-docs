@@ -72,6 +72,6 @@ The Gauge Report Item is a [data item](slug:telerikreporting/designing-reports/c
 
 * [Gauge Report Item Overview](slug:telerikreporting/designing-reports/report-structure/gauge/overview)
 * [Linear Gauge Configuration and Usage](slug:telerikreporting/designing-reports/report-structure/gauge/linear-gauge)
-* [Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)
+* [Configure Report Data Items](slug:telerikreporting/designing-reports/connecting-to-data/data-items/overview)
 * [RadialGauge Class API Reference](/api/telerik.reporting.radialgauge)
 

@@ -86,7 +86,7 @@ A Section or a Panel item can expand to accommodate their children but cannot sh
 ## Next Steps
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

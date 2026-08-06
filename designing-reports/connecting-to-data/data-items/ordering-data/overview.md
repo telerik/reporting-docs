@@ -18,7 +18,7 @@ Sorting can be performed at the data item and group level through the __Sorting_
 
 You specify the sorting criteria by adding [Telerik.Reporting.Sorting](/api/Telerik.Reporting.Sorting) objects to the data items' or groups' Sorting collections. Each sorting is made up of an Expression and a Direction:
 
-* Expression can be a single data field or a combination of multiple expressions. See[Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
+* Expression can be a single data field or a combination of multiple expressions. See the [expressions overview](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview).
 * Direction can be either "Asc" (ascending) or "Desc" (descending).
 
 Data items and groups may contain one or more Sortings that are combined at runtime and applied together to the data.

@@ -146,7 +146,7 @@ Use the following resources to continue working with SubReport items:
 - [(API) ReportSource](/api/Telerik.Reporting.SubReport#Telerik_Reporting_SubReport_ReportSource)
 - [(API) DataItem.DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

@@ -87,7 +87,7 @@ The **GraphQL Data Source Wizard** allows you to create new or edit existing **G
 
    | Setting       | Description                                                                                                                                                                                                                            |
    | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string, which will be used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data](slug:graphqldatasource-filter-json-data). |
+   | Data Selector | The [JSONPath](https://www.rfc-editor.org/rfc/rfc9535) expression string, which will be used to query the data. For more information, refer to [filter JSON data with JSONPath](slug:graphqldatasource-filter-json-data). |
 
 ## See Also
 

@@ -78,7 +78,7 @@ You may download the demo report from our Reporting Samples GitHub repository - 
 - [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
 - [Map Class API Reference](/api/telerik.reporting.map)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

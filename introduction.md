@@ -139,8 +139,8 @@ Start with the workflow that matches your role:
 
 | Your Role | Recommended Starting Point |
 | :-------- | :------------------------- |
-| Evaluating Telerik Reporting | Review the [online demos](https://demos.telerik.com/reporting) and the supported framework table on this page to confirm product fit before installation. |
-| Developer embedding reports | Start with [installation](slug:telerikreporting/installation) and licensing, then pick the viewer or designer that matches your framework. |
+| Evaluating Telerik Reporting | Review the [Telerik Reporting live demos](https://demos.telerik.com/reporting) and the supported framework table on this page to confirm product fit before installation. |
+| Developer embedding reports | Start with the [Telerik Reporting installation guide](slug:telerikreporting/installation) and licensing, then pick the viewer or designer that matches your framework. |
 | Report author | Start with the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) based on your preferred authoring environment. |
 | Setting up a team environment | Review licensing, installation, and the reporting service hosting guidance before you build the integration. |
 
@@ -161,8 +161,8 @@ Sharing detailed feedback also helps improve the product and documentation.
 
 * Use the [Telerik Reporting support system](https://www.telerik.com/account/support-tickets) when you have an active license and need product support.
 * Use the [Telerik Reporting forum](https://www.telerik.com/forums/reporting) for general questions and community discussion.
-* Use the [Telerik Reporting feedback portal](https://feedback.telerik.com/reporting) and the [roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap) to review planned work and suggest new ideas.
-* Use the [release history](https://www.telerik.com/support/whats-new/reporting/release-history) to review delivered features and changes.
+* Use the [Telerik Reporting feedback portal](https://feedback.telerik.com/reporting) and the [Telerik Reporting product roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap) to review planned work and suggest new ideas.
+* Use the [Telerik Reporting release history](https://www.telerik.com/support/whats-new/reporting/release-history) to review delivered features and changes.
 * Use the article feedback form and the **Improve this article** link to report documentation issues or suggest improvements.
 * Use [Progress Services](https://www.progress.com/services) if you need a custom solution or implementation support.
 

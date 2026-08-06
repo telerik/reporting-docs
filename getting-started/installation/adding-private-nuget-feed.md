@@ -89,7 +89,7 @@ Use these checks and fallback options:
 
 Use the NuGet CLI when you work in Visual Studio Code, on Linux or macOS, in CI environments, or when Visual Studio does not show a credentials dialog.
 
-1. Download the latest [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1. Download the [latest NuGet CLI executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 1. Open a command prompt and change to the directory that contains `nuget.exe`.
 1. Run the following command to store the Telerik feed definition and your API key in `%AppData%\NuGet\NuGet.config`.
 

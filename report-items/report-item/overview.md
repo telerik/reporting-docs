@@ -34,7 +34,7 @@ For more information on the specific structure of the Report item, refer to the 
 - [Report Headers and Footers](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections)
 - [Creating Multi-Column Reports](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 
 ## See Also
 

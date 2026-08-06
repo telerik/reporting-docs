@@ -36,7 +36,7 @@ The Barcode report item automatically generates barcodes directly from numeric o
 
 * [(API) Telerik.Reporting.Barcode](/api/telerik.reporting.barcode)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 * [Reporting Forums](https://www.telerik.com/forums/reporting)
 * [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)

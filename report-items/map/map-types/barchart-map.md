@@ -210,5 +210,5 @@ Finally, you will add a small Graph showing a [Column Chart](slug:telerikreporti
 - [Adding ShapeMapSeries Instances to the Map](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item)
 - [Adding LocationMapSeries Instances to the Map](slug:telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-- [Knowledge Base Section](/knowledge-base)
+- [Telerik Reporting Knowledge Base](/knowledge-base)
 - [Map Class API Reference](/api/telerik.reporting.map)

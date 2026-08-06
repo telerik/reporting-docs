@@ -42,7 +42,7 @@ When you assign a live `DbContext` instance to the `Context` property, the appli
 
 ## Avoiding the ObjectDataSource Workaround
 
-Before the `EntityCoreDataSource` component was available, a common workaround was to wrap the EF Core query in a method on a business object and consume it through the [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview). That approach disposes the context as soon as the method returns, which prevents the report from following navigation properties. Migrate any such code to the `EntityCoreDataSource` component to take advantage of the managed lifetime.
+Before the `EntityCoreDataSource` component was available, a common workaround was to wrap the EF Core query in a method on a business object and consume it through the [ObjectDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview). That approach disposes the context as soon as the method returns, which prevents the report from following navigation properties. Migrate any such code to the `EntityCoreDataSource` component to take advantage of the managed lifetime.
 
 ## See Also
 

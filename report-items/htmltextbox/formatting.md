@@ -88,4 +88,4 @@ The following CSS attributes are supported for `<img>` tags:
 
 * [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Knowledge Base Section](/knowledge-base)
+* [Telerik Reporting Knowledge Base](/knowledge-base)

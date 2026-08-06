@@ -75,6 +75,6 @@ Once the end-user is **not** granted permissions for the Report Templates, the f
 
 ## See Also
 
-* [How to Edit a Report Template](slug:web-report-designer-how-to-edit-a-report-template)
+* [Edit a Web Report Designer Report Template](slug:web-report-designer-how-to-edit-a-report-template)
 * [Working with Report Templates](slug:web-report-designer-report-templates)
 * [Report Templates in Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates)

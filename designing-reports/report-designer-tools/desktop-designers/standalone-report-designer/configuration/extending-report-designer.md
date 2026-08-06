@@ -54,5 +54,5 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 
 * [How to use external assemblies with custom CLR objects in the Report Designer](slug:how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer)
 * [Previewing a report definition that uses an external assembly](slug:deploying-trdx-(xml-report-definition)-that-uses-external-assembly)
-* [Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview)
+* [Configure the Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview)
 * [Report Designer Configuration](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration)

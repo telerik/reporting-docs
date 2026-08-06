@@ -78,7 +78,7 @@ When the runtime value you want to compute only affects how a report item looks,
 
 [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) rely on reflection at runtime to resolve and assign the target property, which adds processing overhead—especially in data-bound sections where many items re-evaluate Bindings on every rendered row. [Conditional Formatting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting) rules are evaluated through a more efficient code path and typically perform noticeably better in dense reports.
 
-Reserve [data bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [report expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression instead, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
+Reserve [Bindings](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) for properties that do not accept [report expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) directly. Properties that already support Expressions—such as the `TextBox.Value`—should be set with an Expression instead, because wiring a Binding to them adds the reflection overhead without providing any additional capability.
 
 ### Object is Not Defined in the Current Context
 

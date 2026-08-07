@@ -11,18 +11,31 @@ reportingArea: General
 
 # Adding the License Key to CI/CD Services
 
-This article describes how to set up and activate your Telerik Reporting [license key](https://www.telerik.com/account/your-licenses/license-keys) across a few popular CI services by using environment variables.
+This article describes how to set up and activate your Telerik Reporting license across a few popular CI/CD services by using **deployment** keys.
 
-When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet package as a project dependency. This package activates Telerik Reporting at build time by using the provided license key.
+Deployment keys are a dedicated type of license key for build pipelines. They are tied to a specific application and the set of products that the application uses. 
 
-The license activation process in a CI/CD environment involves the following steps:
+> important Deployment keys cannot be used for application development.
 
-1. [Download a license key](slug:license-key#downloading-the-license-key) from [your Telerik account](https://www.telerik.com/account/your-licenses/license-keys).
-1. [Create an environment variable](#creating-an-environment-variable) named `TELERIK_LICENSE` and add your Telerik Reporting license key as a value. Alternatively, use the [Azure Secure files approach](#using-secure-files-on-azure-devops).
+> tip When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet package as a project dependency. This package activates Telerik Reporting at build time by using the provided license key.
+
+To activate your license in a CI/CD environment:
+
+1. Navigate to the [Deployment Keys]() page.
+2. Click **Add Application**. In the form that opens:
+	- Add the application name.
+	- Select the type of application—public or private.
+	- Select the set of products used in the application.
+3. Copy the key value and store it securely.
+4. [Create an environment variable](#creating-an-environment-variable) named **TELERIK_LICENSE** and set it to the obtained key value. 
+
+Alternatively, the key can be stored in a `telerik-license.txt` file, for example when using the [Azure Secure files approach](#using-secure-files-on-azure-devops).
 
 ## Creating an Environment Variable
 
-The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables. Each CI/CD platform has a different process for setting environment variables, and this article lists only some of the most popular examples.
+The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables.
+
+Each CI/CD platform has a different process for setting environment variables, and this article lists only some of the most popular examples.
 
 > If your CI/CD service is not listed in this article, don’t hesitate to contact the Telerik technical support.
 

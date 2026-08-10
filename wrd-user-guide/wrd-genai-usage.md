@@ -12,11 +12,11 @@ reportingArea: WRDHTML5, WRDBlazorWrapper
 
 # AI Report Generator in Web Report Designer
 
-The Web Report Designer includes an **AI Report Generator** experience that lets you create and edit [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview), [Gauge](slug:telerikreporting/designing-reports/report-structure/gauge/overview) and [Table](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) items from natural-language prompts. AI Report Generator combines an agentic workflow, on-the-fly JSON Schemas, and validation against the Telerik Reporting item model so the generated item is data-bound, valid, and ready to apply to the report.
+The Web Report Designer includes an **AI Report Generator** experience that lets you create and edit [Graph](slug:telerikreporting/designing-reports/report-structure/graph/overview), [Gauge](slug:telerikreporting/designing-reports/report-structure/gauge/overview), and [Table](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) items from natural-language prompts. AI Report Generator combines an agentic workflow, on-the-fly JSON Schemas, and validation against the Telerik Reporting item model so the generated item is data-bound, valid, and ready to apply to the report.
 
 > AI Report Generator for `Graph` and `Gauge` items is available starting with the [2026 Q2 (20.1.26.615)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-615)) Telerik Reporting release.
 
-> AI Report Generator for `Table` item is introduced with the [2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)) Telerik Reporting release.
+> AI Report Generator for the `Table` item is introduced with the [2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)) Telerik Reporting release.
 
 ## Overview
 
@@ -25,13 +25,13 @@ AI Report Generator targets the report items that are most time-consuming to wir
 - **Graph** — bar, line, area, pie, and other supported chart variations.
 - **Radial Gauge** — radial Key Performance Indicator (KPI) gauges with ranges, scales, and pointers.
 - **Linear Gauge** — linear KPI gauges with ranges, scales, and pointers.
-- **Table** — table structure with grid layout, totals and headers.
+- **Table** — table structure with grid layout, totals, and headers.
 - **Crosstab** — table structure with added row/column groupings, group headers/footers with totals and subtotals.
 - **List** — table structure with customized layout.
 
 For every supported item, AI Report Generator follows the same pattern. It retrieves a JSON Schema for the requested item type, asks the language model to craft a complete item definition that conforms to that schema, validates the result against the report model, and iterates until the item is valid. After you accept the proposal, the Web Report Designer applies the item through the same design-time logic that backs manual edits, including support for undo and redo.
 
-> important Currently, AI Report Generator generates only `Graph`, `Gauge` and `Table` items. It does not generate full reports, data sources, parameters, or other report items.
+> important Currently, AI Report Generator generates only `Graph`, `Gauge`, and `Table` items. It does not generate full reports, data sources, parameters, or other report items.
 
 ## Opening AI Report Generator
 
@@ -55,7 +55,7 @@ The following table lists prompt patterns for common scenarios:
 | Stacked bar chart | `Create a stacked bar chart of Revenue by Region, stacked by Product Category.` |
 | KPI radial gauge | `Create a radial gauge that shows the current Customer Satisfaction score on a scale from 0 to 100, with a green range above 80.` |
 | Linear gauge with thresholds | `Create a linear gauge for Server CPU usage from 0 to 100, with green up to 60, yellow up to 85, and red above 85.` |
-| Table with totals and subtotals | `Create a table showing Revenue by Quarter, Region and Product Category. Add sub-total per Region and Grand Total footer` |
+| Table with totals and subtotals | `Create a table showing Revenue by Quarter, Region, and Product Category. Add sub-total per Region and a grand total footer` |
 
 To refine a result, describe the change in a follow-up prompt. For example, after the agent generates a bar chart, send `Sort the categories descending by value.`
 
@@ -69,13 +69,13 @@ To refine a result, describe the change in a follow-up prompt. For example, afte
 
 AI Report Generator chooses between a **Create flow**, an **Edit flow**, and a **Question flow** based on the message you send and the current selection on the design surface when you open the chat window.
 
-The AI Report Generator uses the data schema of all defined data sources. It constructs a new item definition from scratch based on the recieved data context. It does not have access to the actual data rows.
+The AI Report Generator uses the data schema of all defined data sources. It constructs a new item definition from scratch based on the received data context. It does not have access to the actual data rows.
 
 ### Create Flow
 
-The **Create flow** runs when no supported `Graph`, `Gauge` and `Table` item is selected. You must select the Report, or a Report Section/Item that can host the `Graph`, `Gauge` and `Table`, for example, the Report Detail section, a Panel, etc.
+The **Create flow** runs when no supported `Graph`, `Gauge`, and `Table` item is selected. You must select the Report, or a Report Section/Item that can host the `Graph`, `Gauge`, and `Table`, for example, the Report Detail section, a Panel, etc.
 
-If you select an item or section that cannot host the `Graph`, `Gauge` or `Table`, the AI Report Generator will open in disabled state:
+If you select an item or section that cannot host the `Graph`, `Gauge`, or `Table`, the AI Report Generator will open in a disabled state:
 
 ![The AI Report Generator window opened in disabled state.](images/ai-generator-disabled.png)
 
@@ -94,21 +94,21 @@ When the item is created, the AI Report Generator transitions to Edit mode.
 
 ### Edit Flow
 
-The **Edit flow** runs when a supported `Graph`, `Gauge` or `Table` item is selected. The agent applies the changes to the currently selected item based on your prompt. Strive for descriptive prompts to create report items reflecting better your requirements.
+The **Edit flow** runs when a supported `Graph`, `Gauge`, or `Table` item is selected. The agent applies the changes to the currently selected item based on your prompt. Strive for descriptive prompts to create report items that better reflect your requirements.
 
 To edit an existing item:
 
-1. Select the `Graph`, `Gauge` or `Table` item on the design surface.
+1. Select the `Graph`, `Gauge`, or `Table` item on the design surface.
 1. Open the [AI Report Generator](#opening-ai-report-generator).
 1. Type a prompt that describes the change, for example: `Switch the series to a stacked bar and add a legend on the right.`
 1. The edited item is displayed on the design surface.
-1. Review the item and if the result is not as expected, select **Undo Changes** to revert it and refine your requirements.
+1. Review the item, and if the result is not as expected, select **Undo Changes** to revert it and refine your requirements.
 
 ### Question Flow
 
-In addition to authoring, the agent answers questions about `Graph`, `Gauge` and `Table` items. Use this flow for prompts such as `What is the difference between a Bar series and a StackedBar series?` or `Which scale type should I use for time-based data on the x-axis?`. The agent answers in plain text without modifying the report.
+In addition to authoring, the agent answers questions about `Graph`, `Gauge`, and `Table` items. Use this flow for prompts such as `What is the difference between a Bar series and a StackedBar series?` or `Which scale type should I use for time-based data on the x-axis?`. The agent answers in plain text without modifying the report.
 
-When a request is unrelated to Telerik Reporting or falls outside the `Graph`, `Gauge` and `Table` scope (for example, "add a TextBox" or "create a Map"), the agent declines politely and points you to the standard Web Report Designer tools instead.
+When a request is unrelated to Telerik Reporting or falls outside the `Graph`, `Gauge`, and `Table` scope (for example, "add a TextBox" or "create a Map"), the agent declines politely and points you to the standard Web Report Designer tools instead.
 
 ## Speech-to-Text Support
 
@@ -122,7 +122,7 @@ To dictate a prompt with voice input:
 
 1. Click the **Microphone** icon next to the AI Assist prompt text box. The icon and a short status label reflect the current state: **Idle**, **Listening**, or **Error**.
 
-	The browser may ask you for permission to use the microphone. You must allow, if you want to use Speech-to-Text.
+	The browser may ask you for permission to use the microphone. You must allow it if you want to use Speech-to-Text.
 
 1. Speak your prompt clearly.
 1. Click the **Microphone** icon again to stop listening.
@@ -131,7 +131,7 @@ To dictate a prompt with voice input:
 
 Speech recognition relies on browser-native capabilities such as the Web Speech API. No external speech provider configuration is required. When the browser or operating system does not support speech recognition, the **Microphone** icon is hidden or disabled and shows an explanatory tooltip. The rest of the AI Report Generator continues to work normally.
 
-If microphone permission is denied or revoked, a short non-blocking message appears and the control returns to the **Idle** state. If no speech is detected, a lightweight notification appears and you can retry immediately.
+If microphone permission is denied or revoked, a short non-blocking message appears, and the control returns to the **Idle** state. If no speech is detected, a lightweight notification appears, and you can retry immediately.
 
 The **Microphone** control is keyboard-accessible and exposes ARIA labels and status announcements for screen readers, consistent with the existing Web Report Designer accessibility support.
 

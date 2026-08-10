@@ -187,4 +187,4 @@ The following table lists the requirements to run the Telerik CLI.
 
 - [Setting Up Your License Key](slug:license-key)
 - [Install Telerik Reporting with NuGet Packages](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
-- [Restoring NuGet Packages in Your CI Workflow](slug: restoring-nugets-in-ci)
+- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)

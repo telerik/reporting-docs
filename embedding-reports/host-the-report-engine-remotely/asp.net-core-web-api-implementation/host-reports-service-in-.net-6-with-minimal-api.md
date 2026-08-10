@@ -62,7 +62,7 @@ This guide applies the recommended NuGet package references approach to add the 
 1. Reference the **Telerik.Reporting.Services.AspNetCore** package.
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX, and PPTX) as export options, reference the **Telerik.Reporting.OpenXmlRendering** NuGet package.
 
-   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project, bringing easier dependency management.
+   The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project, bringing easier dependency management.
 
    Alternatively, the assemblies are available in the `\Bin\net8.0\` and `\Bin\netstandard2.0\` folders of the Telerik Reporting installation directory. However, this would require manually adding all indirect dependencies listed in [.NET Support - Requirements](slug:telerikreporting/using-reports-in-applications/dot-net-core-support#requirements) section and also the following dependency package: [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
@@ -76,11 +76,11 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#telerik_reporting_services_reportserviceconfiguration_hostappid) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver):
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_AddTelerikReporting}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_AddTelerikReporting}}
 
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_UseTelerikReporting}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Call_UseTelerikReporting}}
 
 ### Adding Connection Strings to the Configuration
 

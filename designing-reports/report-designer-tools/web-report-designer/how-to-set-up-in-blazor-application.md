@@ -28,40 +28,40 @@ Alternatively, instead of using the item template, the Designer REST service and
 
 > note If **Blazor WebAssembly** project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core with Top-Level Statements Explained`](slug:how-to-host-reports-service-in-aspnet-core-in-net-6-with-minimal-api)
 
-1. Use the NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Use the NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
 1. Add the required settings in the **Program.cs** file. Make sure the application is configured for WebAPI controllers:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=WrdAddRazorPagesControllers}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=WrdAddRazorPagesControllers}}
 
 1. Add the required services in the **Program.cs** file as well. The sample configuration below uses a `Reports` folder located at the root of the project, thus the usage of the [ContentRootPath](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment.contentrootpath) property, to open and save report definitions. It is required to create the `Reports` folder manually in the root of the project, and optionally, add some report definitions inside.
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Adding_WRD_REST_Service_Config_2}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Adding_WRD_REST_Service_Config_2}}
 
 1. Make sure the endpoints configuration inside the **Program.cs** file is configured for API controllers by adding the following line in the lambda expression argument:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Adding_WRD_REST_Service_Config_3}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=Adding_WRD_REST_Service_Config_3}}
 
 1. If not already present, add the following line in the **Program.cs** to ensure that the application can serve static files:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 1. Implement a Report Designer controller. Add a **Controllers** folder to the application and right-click on it to add a new **Web API Controller Class** item. Name it `ReportDesignerController`, for example. This will be the Telerik Web Report Designer REST service in the project.
 
-	{{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerControllerEmpty.cs region=ReportDesignerControllerEmpty}}
+   {{source=CodeSnippets\Blazor\Docs\Controllers\ReportDesignerControllerEmpty.cs region=ReportDesignerControllerEmpty}}
 
 ## Adding the Blazor Web Report Designer component
 
-1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
 1. Add JavaScript dependencies to the **head** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent}}
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent}}
 
 1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the **body** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or in `App Razor` (Blazor Web App):
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent2}}
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent2}}
 
 1. Use the following snippet to place the designer component in a razor page like `Pages/Index.razor`.
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.razor region=BlazorWebDesigner}}
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.razor region=BlazorWebDesigner}}
 
 1. The **Report** option will instruct the designer to look for _SampleReport.trdp_ inside the `Reports` folder on the first load. You can create this report definition in the folder or omit the **Report** option above. Finally, run the project.

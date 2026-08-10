@@ -4,7 +4,7 @@ description: "Learn why the 'Seeking is not supported in a System.IO.Packaging.Z
 type: troubleshooting
 page_title: Seeking is not supported in a System.IO.Packaging.ZipWrappingStream when Unpackaging Report
 slug: seeking-is-not-supported-in-a-zipwrappingstream
-position: 
+position:
 tags: .NET Core, .NET
 ticketid: 1608604
 res_type: kb
@@ -33,7 +33,7 @@ I am using the [ReportPackager](/api/telerik.reporting.reportpackager) class to 
 
 ## Error Message
 
-````
+```
 Unhandled exception. System.NotSupportedException: Seeking is not supported in a System.IO.Packaging.ZipWrappingStream
 	at Telerik.Reporting.Utils.StreamExtensions.ToArray(Stream input)
 	at Telerik.Reporting.ReportSerialization.Current.ImageContainerHelper.ResolveValue(String image, IResourceHandler handler)
@@ -58,7 +58,7 @@ Unhandled exception. System.NotSupportedException: Seeking is not supported in a
 	at Telerik.Reporting.XmlSerialization.XmlSerializerBase.Deserialize(Stream stream, IResourceHandler resourceHandler)
 	at Telerik.Reporting.XmlSerialization.ReportXmlSerializer.Telerik.Reporting.ReportSerialization.IXmlSerializer.Deserialize(Stream stream, IResourceHandler resourceHandler)
 	at Telerik.Reporting.ReportPackager.UnpackageDocument(Stream packageStream)
-````
+```
 
 ## Cause
 
@@ -74,5 +74,5 @@ Alternatively, if assembly references must be used, use the `Telerik.Reporting.d
 
 ## See Also
 
-* [Adding the Telerik Private NuGet Feed to VS](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio)
-* [Restoring NuGet Packages in Your CI Workflow](slug:using-nuget-keys)
+- [Adding the Telerik Private NuGet Feed to VS](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
+- [Restoring NuGet Packages in Your CI Workflow](slug: restoring-nugets-in-ci)

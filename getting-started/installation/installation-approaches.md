@@ -90,5 +90,5 @@ Use one of the following installation paths for NuGet packages:
 ## See Also
 
 - [Install Telerik Reporting with NuGet Packages](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
-- [Restoring NuGet Packages in Your CI Workflow](slug: restoring-nugets-in-ci)
+- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)
 - [Troubleshooting Telerik NuGet](slug:troubleshooting-nuget)

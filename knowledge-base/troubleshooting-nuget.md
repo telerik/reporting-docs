@@ -78,5 +78,5 @@ Alternatively, use Windows Credentials Manager to remove the saved credentials:
 ## See Also
 
 - [Adding the Telerik Private NuGet Feed to VS](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
-- [Restoring NuGet Packages in Your CI Workflow](slug: restoring-nugets-in-ci)
+- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)
 - [Installing with NuGet](slug:telerikreporting/installation#installing-with-nuget)

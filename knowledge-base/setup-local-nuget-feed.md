@@ -37,7 +37,7 @@ To set up a Local NuGet package feed, follow these steps:
 
 1. Install the Packages: Now, you can select and install the desired packages from your local folder through the NuGet package manager.
 
-![Select Local Package Soure](images/select-local-package-source.png)
+![Select Local Package Source](images/select-local-package-source.png)
 
 Alternatively, you can update the `NuGet.Config` file ensuring that the file includes the local folder as a package source. Here is an example configuration:
 
@@ -53,5 +53,5 @@ Remember to place all necessary dependencies in your local NuGet folder, avoidin
 
 ## See Also
 
-- [Restoring NuGet Packages in Your CI Workflow](slug: restoring-nugets-in-ci)
+- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)
 - [Adding the Private Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)

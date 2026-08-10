@@ -120,7 +120,7 @@ Add the CORS policy in the REST Service's `Program.cs`:
 {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=ReportingRestServiceAddCors}}
 
 > caution **Security Note**: The example above uses `AllowAnyOrigin()` for development convenience. For production, restrict to specific origins:
-> {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingRestServiceAddCors}}
+{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=ReportingRestServiceAddCors}}
 
 ## See Also
 

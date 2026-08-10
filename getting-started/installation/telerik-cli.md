@@ -19,20 +19,20 @@ The Telerik CLI works on Windows, macOS, and Linux. It requires the .NET SDK (ve
 
 The following table lists all Telerik CLI commands with their purpose and usage.
 
-| Command | Description | Usage |
-|---|---|---|
-| `dotnet tool install -g Telerik.CLI` | Installs the Telerik CLI as a .NET global tool. | Run once to install the CLI on your machine. |
-| `dotnet tool update -g Telerik.CLI` | Updates the Telerik CLI to the latest version. | Run periodically to get the latest features and fixes. |
-| `telerik nuget config` | Configures the Telerik NuGet server to your package sources. | Run to set up the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
-| `telerik license get-key` | Downloads your Telerik license key and saves it as `telerik-license.txt`. | Run to download your license key file. |
-| `telerik mcp config` | Installs and configures the Telerik MCP Server for your IDE. | Run to set up AI coding assistance in Visual Studio, VS Code, or Cursor. |
-| `telerik login` | Authenticates with your Telerik account. | Run to store credentials for subsequent commands. |
-| `telerik whoami` | Displays the currently logged-in Telerik user account email. | Run to verify your authentication state. |
-| `telerik logout` | Logs out from the Telerik CLI. | Run to log out the credentials from your Telerik account. |
+| Command                              | Description                                                               | Usage                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `dotnet tool install -g Telerik.CLI` | Installs the Telerik CLI as a .NET global tool.                           | Run once to install the CLI on your machine.                                                  |
+| `dotnet tool update -g Telerik.CLI`  | Updates the Telerik CLI to the latest version.                            | Run periodically to get the latest features and fixes.                                        |
+| `telerik nuget config`               | Configures the Telerik NuGet server to your package sources.              | Run to set up the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
+| `telerik license get-key`            | Downloads your Telerik license key and saves it as `telerik-license.txt`. | Run to download your license key file.                                                        |
+| `telerik mcp config`                 | Installs and configures the Telerik MCP Server for your IDE.              | Run to set up AI coding assistance in Visual Studio, VS Code, or Cursor.                      |
+| `telerik login`                      | Authenticates with your Telerik account.                                  | Run to store credentials for subsequent commands.                                             |
+| `telerik whoami`                     | Displays the currently logged-in Telerik user account email.              | Run to verify your authentication state.                                                      |
+| `telerik logout`                     | Logs out from the Telerik CLI.                                            | Run to log out the credentials from your Telerik account.                                     |
 
 ## How to Install the Telerik CLI
 
-The [Telerik CLI NuGet](https://www.nuget.org/packages/Telerik.CLI) package is hosted on `nuget.org`. 
+The [Telerik CLI NuGet](https://www.nuget.org/packages/Telerik.CLI) package is hosted on `nuget.org`.
 
 To install the Telerik CLI .NET tool globally on your machine, run the following command in your preferred command shell:
 
@@ -41,9 +41,10 @@ dotnet tool install -g Telerik.CLI
 ```
 
 The `dotnet tool install` command provides a few ways for you to install .NET tools on your machine.
-* To install the Telerik CLI globally, use the `-g` option.
-* To install the Telerik CLI in a custom location, use the `--tool-path` option.
-* To install the Telerik CLI in the current folder only, omit the `-g` and `--tool-path` options.
+
+- To install the Telerik CLI globally, use the `-g` option.
+- To install the Telerik CLI in a custom location, use the `--tool-path` option.
+- To install the Telerik CLI in the current folder only, omit the `-g` and `--tool-path` options.
 
 #### Verify Telerik CLI Installation
 
@@ -60,16 +61,16 @@ To update to the latest version:
 ```powershell
 dotnet tool update -g Telerik.CLI
 ```
+
 #### Uninstall Telerik CLI
 
 To uninstall the Telerik CLI:
 
 ```powershell
-dotnet tool uninstall -g Telerik.CLI 
+dotnet tool uninstall -g Telerik.CLI
 ```
 
->note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET website</a>.
-
+> note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET website</a>.
 
 ## Log In to Your Telerik Account
 
@@ -79,14 +80,14 @@ Most Telerik CLI commands are related to your Telerik identity. It's recommended
 telerik login
 ```
 
-The `login` command opens `https://identity.telerik.com` in a browser window where you need to provide your Telerik account credentials. Then the browser makes a couple of redirects. 
+The `login` command opens `https://identity.telerik.com` in a browser window where you need to provide your Telerik account credentials. Then the browser makes a couple of redirects.
 
 The Telerik CLI stores a session token in:
 
-| Operating System | Path |
-| --- | --- |
-| Windows | `%AppData%\Telerik` |
-| macOS / Linux | `~/.telerik` |
+| Operating System | Path                |
+| ---------------- | ------------------- |
+| Windows          | `%AppData%\Telerik` |
+| macOS / Linux    | `~/.telerik`        |
 
 The session token is valid for one month.
 
@@ -118,7 +119,6 @@ telerik license get-key
 
 The `license get-key` command downloads your up-to-date Telerik license key and creates a `telerik-license.txt` file in your operating system user's folder.
 
-
 ## Install MCP Server
 
 To install the Telerik MCP server, use the `mcp config` command:
@@ -129,21 +129,21 @@ telerik mcp config
 
 By default, the command creates or updates the global `.mcp.json` configuration files of all supported IDEs with all available Telerik MCP servers for all Telerik products.
 
-| IDE | Operating System | Configuration File Path |
-| --- | --- | --- |
-| Visual Studio | Windows | `%USERPROFILE%\.mcp.json` |
-| VS Code | Windows | `%APPDATA%\Code\User\mcp.json`  |
-| VS Code | macOS | `~/Library/Application Support/Code/User/mcp.json` |
-| VS Code | Linux | `~/.config/Code/User/mcp.json`  |
-| Cursor  | Windows | `%USERPROFILE%\.cursor\mcp.json` |
-| Cursor | macOS, Linux | `~/.cursor/mcp.json` |
+| IDE           | Operating System | Configuration File Path                            |
+| ------------- | ---------------- | -------------------------------------------------- |
+| Visual Studio | Windows          | `%USERPROFILE%\.mcp.json`                          |
+| VS Code       | Windows          | `%APPDATA%\Code\User\mcp.json`                     |
+| VS Code       | macOS            | `~/Library/Application Support/Code/User/mcp.json` |
+| VS Code       | Linux            | `~/.config/Code/User/mcp.json`                     |
+| Cursor        | Windows          | `%USERPROFILE%\.cursor\mcp.json`                   |
+| Cursor        | macOS, Linux     | `~/.cursor/mcp.json`                               |
 
 ## Install Reporting MCP Server
 
 You can also fine-tune the process with the following options:
 
-* Specify which Telerik products you are interested in, for example, just `reporting`.
-* `--ide` specifies your preferred IDE. The supported values are `visualstudio`, `vscode`, `cursor`, and `all`.
+- Specify which Telerik products you are interested in, for example, just `reporting`.
+- `--ide` specifies your preferred IDE. The supported values are `visualstudio`, `vscode`, `cursor`, and `all`.
 
 ```powershell
 telerik mcp config reporting --ide visualstudio
@@ -153,7 +153,7 @@ This command installs and configures only the Telerik Reporting MCP server and t
 
 ## Set Up Telerik NuGet Feed
 
-To [add the Telerik NuGet server to your package sources]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}), use the `nuget config` command:
+To [add the Telerik NuGet server to your package sources]({%slug telerikreporting/using-reports-in-applications/install-with-nuget-packages%}), use the `nuget config` command:
 
 ```powershell
 telerik nuget config
@@ -165,9 +165,9 @@ By default, the `nuget config` command updates your [global `NuGet.Config` file]
 
 You can use the `nuget config` command with the following options:
 
-* `--scope project` and `--path` that points to the folder that contains the `NuGet.Config` file to modify. The default `--scope` value is `user`.
-* `--api-key` to provide an existing Telerik NuGet API key inline, otherwise the CLI generates a new one.
-* `--force` to overwrite any existing Telerik credentials in the `NuGet.Config` file.
+- `--scope project` and `--path` that points to the folder that contains the `NuGet.Config` file to modify. The default `--scope` value is `user`.
+- `--api-key` to provide an existing Telerik NuGet API key inline, otherwise the CLI generates a new one.
+- `--force` to overwrite any existing Telerik credentials in the `NuGet.Config` file.
 
 ```powershell
 telerik nuget config --scope project --path . --force
@@ -177,14 +177,14 @@ telerik nuget config --scope project --path . --force
 
 The following table lists the requirements to run the Telerik CLI.
 
-| Requirement | Minimum version | Notes |
-|---|---|---|
-| .NET SDK | 6.0 | Required to install and run .NET global tools. |
-| Operating system | Windows, macOS, or Linux | Any OS supported by the .NET SDK. |
-| Telerik account | N/A | Active Subscription or Trial license required. |
+| Requirement      | Minimum version          | Notes                                          |
+| ---------------- | ------------------------ | ---------------------------------------------- |
+| .NET SDK         | 6.0                      | Required to install and run .NET global tools. |
+| Operating system | Windows, macOS, or Linux | Any OS supported by the .NET SDK.              |
+| Telerik account  | N/A                      | Active Subscription or Trial license required. |
 
 ## See Also
 
-* [Setting Up Your License Key]({%slug license-key%})
-* [Adding the Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})
-* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
+- [Setting Up Your License Key](slug:license-key)
+- [Install Telerik Reporting with NuGet Packages](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
+- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)

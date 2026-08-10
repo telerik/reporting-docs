@@ -14,7 +14,9 @@ reportingArea: General
 
 Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET projects and enable you to use Telerik reports in .NET applications on Windows, Linux, and macOS platforms.
 
-The NuGet packages are available in the [Telerik NuGet feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
+The NuGet packages are available on [NuGet.org](https://www.nuget.org/). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
+
+> tip If you are using a release older than **Q3 2026**, the Telerik Reporting NuGet packages must be installed via the [Telerik NuGet feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server).
 
 The assemblies target .NET Standard 2.0 and the desktop viewers target .NET {{site.mindotnetversion}} or above, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
 
@@ -63,7 +65,6 @@ Telerik Reporting supports the following functionalities:
 - All report items except the obsolete Chart item are supported.
 - The supported report definition types are `TRDX`, `TRDP`, and report classes created in Visual Studio without the VS designer-specific code.
 - Telerik Reporting supports the following Data Source components:
-
   - [SqlDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
   - [CsvDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview)
   - [WebServiceDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)
@@ -102,7 +103,9 @@ To use .NET on macOS:
 
 1. Install [.NET for macOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos).
 1. Create your .NET application or copy an existing one from a Windows machine.
-1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+
+   > important If you are using a release before Q3 2026, it will be necessary to add a `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server).
+
 1. Install the `Telerik.Drawing.Skia` NuGet package.
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
@@ -117,7 +120,7 @@ You can use Telerik Reporting in a Docker image if it meets the graphics engine 
 
 To use Telerik Reporting in a Windows container, target a Windows-based image with GDI support. The same approach is [recommended by Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image).
 
->tip Some Docker containers are created with invariant culture, which means locale-dependent values such as currency symbols may appear differently than expected. Add the following environment variables to the Dockerfile to configure a specific culture ('en-US' in this example):
+> tip Some Docker containers are created with invariant culture, which means locale-dependent values such as currency symbols may appear differently than expected. Add the following environment variables to the Dockerfile to configure a specific culture ('en-US' in this example):
 >
 > `ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8`
 >
@@ -131,7 +134,7 @@ The following libraries should also be installed in the Docker image as required
 
 {{source=CodeSnippets\Blazor\Docs\Dockerfiles\LinuxDockerWithSkiaAddLibs.dockerfile}}
 
->tip Install the fonts used in your reports on the Docker image so reports render consistently with the Windows output. See [Installing Fonts in a Docker Environment](slug:system-null-reference-exception-docker) for details.
+> tip Install the fonts used in your reports on the Docker image so reports render consistently with the Windows output. See [Installing Fonts in a Docker Environment](slug:system-null-reference-exception-docker) for details.
 
 ### Windows Docker Container with System.Drawing
 
@@ -163,6 +166,6 @@ The Docker files may be found in the folder of the corresponding project. For ex
 
 ## See Also
 
-* [ASP.NET Core Web API Implementation Overview](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
-* [Adding Report Viewers to Windows Forms .NET Projects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-core-project)
-* [Adding Report Viewers to WPF .NET Projects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project)
+- [ASP.NET Core Web API Implementation Overview](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
+- [Adding Report Viewers to Windows Forms .NET Projects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms-net-core-project)
+- [Adding Report Viewers to WPF .NET Projects](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project)

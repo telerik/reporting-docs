@@ -20,14 +20,13 @@ The following list describes the prerequisites for this guide:
 
 1. Create a sample ASP.NET Core 2.1 Project.
 1. Add the required dependencies:
-
    - `Telerik.WebReportDesigner.Services`
    - `Telerik.Reporting.Services.AspNetCore`
    - `Telerik.Reporting.JsonSerialization`
    - `Telerik.Reporting.WebServiceDataSource`
    - `Telerik.Reporting`
 
-When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
 
 If you don't use NuGet packages, along with the above assemblies, you need to add also all their dependencies manually to the project.
 

@@ -2,7 +2,7 @@
 title: Restoring NuGet Packages in CI
 page_title: Authenticating and Restoring NuGet Packages in CI
 description: "Learn how to use NuGet Keys to authenticate with the private Telerik NuGet server and restore Telerik Reporting packages in your Continuous Integration or desktop environment."
-slug: using-nuget-keys
+slug: restoring-nugets-in-ci
 previous_url: /getting-started/installation/using-nuget-keys
 tags: telerik, reporting, restore, nuget, packages, ci, continuous, integration, installation
 published: True

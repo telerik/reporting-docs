@@ -31,7 +31,7 @@ AI Report Generator targets the report items that are most time-consuming to wir
 
 For every supported item, AI Report Generator follows the same pattern. It retrieves a JSON Schema for the requested item type, asks the language model to craft a complete item definition that conforms to that schema, validates the result against the report model, and iterates until the item is valid. After you accept the proposal, the Web Report Designer applies the item through the same design-time logic that backs manual edits, including support for undo and redo.
 
-> important Currently, AI Report Generator generates only `Graph`, `Gauge`, and `Table` items. It does not generate full reports, data sources, parameters, or other report items.
+> important Currently, AI Report Generator generates only `Graph`, `Gauge`, and `Table` items. It does not generate full reports, data sources, parameters, or other report items. It can work only with the Table as a structure and cannot add/edit individual elements inside the Table.
 
 ## Opening AI Report Generator
 

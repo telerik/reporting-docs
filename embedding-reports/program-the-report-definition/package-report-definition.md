@@ -12,7 +12,7 @@ reportingArea: General
 
 # Packaging and Unpackaging Report Definitions
 
-The [ReportPackager](/api/Telerik.Reporting.ReportPackager) serializes the report definition in XML and with a zip compression packages the definition and its resources. The resources are in their native format and archived for better performance. This way the definition is faster to handle and more compact. This is the default report document format for the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/overview#standalone-report-designer) and the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/overview#web-report-designer). 
+The [ReportPackager](/api/Telerik.Reporting.ReportPackager) serializes the report definition in XML or JSON and, with zip compression, packages the definition and its resources. The resources are in their native format and archived for better performance. This way, the definition is faster to handle and more compact. This is the default report document format for the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/overview#standalone-report-designer) and the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/overview#web-report-designer). 
 
 ## Packaging .TRDX report definition
 
@@ -20,6 +20,13 @@ The following sample code snippet demonstrates how to package a predefined .TRDX
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromXmlReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromXmlReportSnippet}}
+
+## Packaging .TRDJ report definition
+
+The following sample code snippet demonstrates how to package a predefined .TRDJ (JSON) report definition:
+
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromJsonReportSnippet}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromJsonReportSnippet}}
 
 ## Packaging CLR report definition
 

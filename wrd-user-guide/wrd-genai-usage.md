@@ -26,7 +26,7 @@ AI Report Generator targets the report items that are most time-consuming to wir
 - **Radial Gauge** — radial Key Performance Indicator (KPI) gauges with ranges, scales, and pointers.
 - **Linear Gauge** — linear KPI gauges with ranges, scales, and pointers.
 - **Table** — table structure with grid layout, totals and headers.
-- **Crosstab** — table structure with added row/column groupings, group headers/footers with totals.
+- **Crosstab** — table structure with added row/column groupings, group headers/footers with totals and subtotals.
 - **List** — table structure with customized layout.
 
 For every supported item, AI Report Generator follows the same pattern. It retrieves a JSON Schema for the requested item type, asks the language model to craft a complete item definition that conforms to that schema, validates the result against the report model, and iterates until the item is valid. After you accept the proposal, the Web Report Designer applies the item through the same design-time logic that backs manual edits, including support for undo and redo.

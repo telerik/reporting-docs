@@ -67,7 +67,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. (If **Examples Setup** was selected) In the **Setup Wizard** dialog, select your **Database Server** and the authentication for the connection. The Wizard detects all running instances and lists them in the input field.
 
-   > note To enable the wizard to detect all running SQL Server instances, start the [SQL Server Browser Service](<https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)>).
+   > note To enable the wizard to detect all running SQL Server instances, start the [SQL Server Browser Service](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)).
 
    ![The Setup Page for the Samples Database of the Telerik Reporting Installation Wizard](images/installWizard3.png)
 

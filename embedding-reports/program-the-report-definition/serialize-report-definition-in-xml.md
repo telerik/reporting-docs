@@ -52,6 +52,8 @@ and the resulting XML file would look like this:
 
 ## Serialize to JSON
 
+>note Serializing and deserializing JSON report definitions requires the 'Telerik.Reporting.JsonSerialization' assembly, which is not part of the 'Telerik.Reporting' assembly. To do this, install the 'Telerik.Reporting.JsonSerialization' NuGet package (or add a reference to 'Telerik.Reporting.JsonSerialization.dll') and make sure it is deployed next to 'Telerik.Reporting.dll'.
+
 The following sample code snippet demonstrates how to serialize the above report definition to a JSON file:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\JsonSerializationSnippets.cs region=StreamSerializationSnippet}}

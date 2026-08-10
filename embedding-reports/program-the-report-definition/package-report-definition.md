@@ -28,6 +28,8 @@ The following sample code snippet demonstrates how to package a predefined .TRDJ
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromJsonReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromJsonReportSnippet}}
 
+>note Packaging and unpackaging JSON report definitions requires the 'Telerik.Reporting.JsonSerialization' assembly, which is not part of the 'Telerik.Reporting' assembly. To do this, install the 'Telerik.Reporting.JsonSerialization' NuGet package (or add a reference to 'Telerik.Reporting.JsonSerialization.dll') and make sure it is deployed next to 'Telerik.Reporting.dll'.
+
 ## Packaging CLR report definition
 
 The following sample code snippet demonstrates how to package a predefined CLR (C# or VB) report definition:

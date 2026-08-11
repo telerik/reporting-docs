@@ -28,12 +28,12 @@ To export its reports in Open XML formats, such as `.docx`, `.xlsx`, or `.pptx`,
 
 The `DocumentFormat.OpenXml` assembly has two versions with different Public Key Tokens. To provide support for both, Telerik Reporting delivers the following `Telerik.Reporting.OpenXmlRendering` assemblies:
 
-* `Telerik.Reporting.OpenXmlRendering.dll`−Supports 2.0.5022.0 and 2.5.5631.0 `DocumentFormat.OpenXml.dll` versions.
-* `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`−Supports 2.7.2.0 and later `DocumentFormat.OpenXml.dll` versions up to version 3.x.x.x
-* `Telerik.Reporting.OpenXmlRendering.3.0.1.dll`−Supports 3.0.1.0 and later `DocumentFormat.OpenXml.dll` versions.
+- `Telerik.Reporting.OpenXmlRendering.dll`−Supports 2.0.5022.0 and 2.5.5631.0 `DocumentFormat.OpenXml.dll` versions.
+- `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`−Supports 2.7.2.0 and later `DocumentFormat.OpenXml.dll` versions up to version 3.x.x.x
+- `Telerik.Reporting.OpenXmlRendering.3.0.1.dll`−Supports 3.0.1.0 and later `DocumentFormat.OpenXml.dll` versions.
 
->To use later versions other than the versions previously listed, add [`bindingRedirect`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the .NET Framework applications.
+> To use later versions other than the versions previously listed, add [`bindingRedirect`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the .NET Framework applications.
 
 To download Open XML by using the NuGet feed, refer to the [`DocumentFormat.OpenXml` NuGet package](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 
-To avoid using the NuGet feed and download Open XML, download and install [Open XML SDK 2.0 for Microsoft Office](https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2010/bb456487(v=office.14)).
+To avoid using the NuGet feed and download Open XML, download and install [Open XML SDK 2.0 for Microsoft Office](https://learn.microsoft.com/en-us/office/open-xml/about-the-open-xml-sdk).

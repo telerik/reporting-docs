@@ -55,7 +55,7 @@ private void Button1_Click(object sender, EventArgs e)
 
 ### Using Report Events
 
-For scenarios requiring multiple values from the processed report, use [report events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview). For TRDP/TRDX files, they must be unpackaged/deserialized in order to assign custom event handlers to the reports.
+For scenarios requiring multiple values from the processed report, use [report events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview). For TRDP/TRDX/TRDJ files, they must be unpackaged/deserialized in order to assign custom event handlers to the reports.
 
 ```C#
         private void MainForm_Load(object sender, System.EventArgs e)

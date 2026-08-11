@@ -57,7 +57,7 @@ When you add values to the PictureBox, note the following:
 
   The **Relative Path** will be resolved as follows:
 
-  - For **declarative report definitions (TRDP and TRDX files)** - with respect to the report location.
+  - For **declarative report definitions (TRDP, TRDX, and TRDJ files)** - with respect to the report location.
   - For **type report definitions (CS and VB reports)** - with respect to the application starting point.
 
 - Clicking the ellipsis for `Value` will open a **Browse** dialog to navigate to a file on your hard drive. The engine will try to determine the type of the selected file and populate the `Value` property with descriptive text.

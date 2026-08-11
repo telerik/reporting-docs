@@ -5,7 +5,7 @@ description: Learn more about Report Templates in the Telerik Reporting Web Repo
 slug: web-report-designer-report-templates
 tags: web, report, designer, wrd, report, template, trtx
 published: True 
-position: 6
+position: 8
 ---
 
 <style>

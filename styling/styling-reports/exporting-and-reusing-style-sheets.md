@@ -51,9 +51,9 @@ When you add a new external style sheet to the collection it will be recorded vi
 
 The external style sheet file does not have to be a part of the project since it is referenced absolutely.
 
-## Relative Path/URL for trdp/trdx report definitions
+## Relative Path/URL for trdp/trdx/trdj report definitions
 
-When an external style sheet is referenced relatively, the path is relative to the __trdp/trdx report definition__.
+When an external style sheet is referenced relatively, the path is relative to the __trdp/trdx/trdj report definition__.
 
 When deploying the style sheet file should be added to the project and should have its __"Copy to Output Directory"="Copy Always"__.
 

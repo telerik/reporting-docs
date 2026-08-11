@@ -6,7 +6,7 @@ slug: telerikreporting/report-designer-tools/web-report-designer/web-report-desi
 tags: report,webreportdesigner,customization
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-position: 9
+position: 11
 ---
 
 # Web Report Designer Customization

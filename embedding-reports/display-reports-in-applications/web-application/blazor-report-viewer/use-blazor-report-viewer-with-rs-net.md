@@ -33,22 +33,22 @@ After creating the Blazor Report Viewer, we need some manual adjustments to make
 
 ## Adding the Blazor Report Viewer component manually
 
-1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
 1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET {{site.mindotnetversion}}+ is used) can serve static files:
 
-	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 
 1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewerWithRsNet.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually3}}
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewerWithRsNet.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually3}}
 
 1. Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the **@** symbol as **@@**:
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerUseWithReportServerNet.html region=AngularViewerSteps3}}
 
 1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually2}}
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually2}}
 
 ## Connect to the Report Server for .NET instance
 
@@ -76,7 +76,7 @@ Server-side, you may configure the endpoint '/rs-token', as shown below, after e
 
 ### Username and Password Authentication
 
->caution Avoid this approach for security reasons.
+> caution Avoid this approach for security reasons.
 
 If you prefer to use hardcoded credentials, use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`.
 

@@ -6,7 +6,7 @@ slug: wrd-genai-implement
 tags: ai,assist,genai,graph,gauge,web,report,designer
 tag: new
 published: True
-position: 10
+position: 13
 reportingArea: WRDHTML5, WRDBlazorWrapper
 ---
 

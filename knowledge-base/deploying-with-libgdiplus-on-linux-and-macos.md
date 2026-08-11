@@ -80,7 +80,7 @@ To use .NET on macOS:
    ```
 
 1. Create your .NET application or copy an existing one from a Windows machine.
-1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio).
+1. Add the `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.
 
@@ -104,7 +104,7 @@ RUN apt-get update \
 
 ## See Also
 
-* [.NET Support](slug:telerikreporting/using-reports-in-applications/dot-net-core-support)
-* [How to Build and Install Latest libgdiplus Library on Linux](slug:how-to-build-and-Install-libgdiplus-linux)
-* [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
-* [libgdiplus Docs](https://www.mono-project.com/docs/gui/libgdiplus/)
+- [.NET Support](slug:telerikreporting/using-reports-in-applications/dot-net-core-support)
+- [How to Build and Install Latest libgdiplus Library on Linux](slug:how-to-build-and-Install-libgdiplus-linux)
+- [System.Drawing.Common is not supported on non-Windows platforms](slug:system-drawing-common-is-not-supported-on-non-windows-platforms)
+- [libgdiplus Docs](https://www.mono-project.com/docs/gui/libgdiplus/)

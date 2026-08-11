@@ -13,7 +13,7 @@ reportingArea: WRDHTML5, WRDBlazorWrapper
 
 The [ThemeBuilder](https://www.telerik.com/themebuilder) is a powerful web-based tool designed to help you style Telerik and Kendo UI components effectively.
 
-It offers a user-friendly visual interface to customize colors, fonts, and various styling properties. Since the Web Report Designer and its Report viewer rely on such components internally, you can use ThemeBuilder to create a cohesive theme that extends to them.
+It offers a user-friendly visual interface to customize colors, fonts, and various styling properties. Since the Web Report Designer and its Report Viewer rely on such components internally, you can use ThemeBuilder to create a cohesive theme that extends to them.
 
 ## Creating a Theme
 
@@ -24,13 +24,13 @@ To create a theme using ThemeBuilder, follow these steps:
 1. Click **Create New Project** to open the project creation dialog.
 1. Enter a project name, choose **Font Icons** as the icon type, select a version and a base theme (e.g., Default), and click **Create New Project** to finalize your selections.
 
-> The Web Report Designer and its internal HTML5 Report Viewer uses [font icons](https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/), so it is essential to select the correct icon type. This ensures that your changes are correctly applied in the application later on.
+> The Web Report Designer and its internal HTML5 Report Viewer use [font icons](https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/), so it is essential to select the correct icon type. This ensures that your changes are correctly applied in the application later on.
 
 ## Customizing the Theme
 
 ### Modify Theme Variables
 
-Adjust predefined variables to effect global changes across colors, fonts, and other styling aspects. This approach is ideal for maintaining consistency and quickly applying broad changes.
+Adjust predefined variables to affect global changes across colors, fonts, and other styling aspects. This approach is ideal for maintaining consistency and quickly applying broad changes.
 
 The [Kendo UI Design System](https://www.telerik.com/design-system/docs/themes/get-started/introduction/) documentation is the recommended place for learning about the inner settings of the themes, and how to edit them:
 
@@ -52,13 +52,13 @@ For more details on the properties customizations, check [Exploring the Componen
 
 ### Customizing Existing Themes
 
-Another approach for using a custom theme is customizing one of the existing ones. The following documentation article are recommended as a starting point when such an approach is used:
+Another approach for using a custom theme is customizing one of the existing ones. The following documentation articles are recommended as a starting point when such an approach is used:
 
 - `Meridian` - [Telerik and Kendo UI Meridian Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/meridian/customization/)
 - `Bootstrap` - [Telerik and Kendo UI Bootstrap Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/bootstrap/customization/)
 - `Material` - [Telerik and Kendo UI Material Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/material/customization/)
 - `Fluent` - [Telerik and Kendo UI Fluent Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/fluent/customization/)
-- `Default` - [Telerik and Kendo UI Default Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/default/customization//)
+- `Default` - [Telerik and Kendo UI Default Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/default/customization/)
 - `Classic` - [Telerik and Kendo UI Classic Theme Customization](https://www.telerik.com/design-system/docs/themes/kendo-themes/classic/customization/)
 
 ## Using the Theme
@@ -86,7 +86,7 @@ Besides loading the custom stylesheet, the `useExternalTheme` property of the We
             },
             serviceUrl: "api/reportdesigner/",
             report: "Product Catalog.trdp",
-            startMode: "design",
+            startMode: "design"
         }).data("telerik_WebReportDesigner");
     });
 </script>

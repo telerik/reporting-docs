@@ -18,7 +18,7 @@ As of the **Q3 2026** release, the Telerik Reporting NuGet packages are hosted o
 
 For pipelines and self-hosted build agents, we recommend using [NuGet.org](https://www.nuget.org/) for current releases because it removes the need to configure private-feed credentials. Commit package references and, when needed, a repository-level `NuGet.Config` file, but keep any secrets outside source control.
 
-If your pipeline must restore from the Telerik NuGet server or another authenticated feed, store the API key or credentials in the pipeline secret store and inject them during restore. For CI-specific guidance, see the [CI workflow NuGet restore guide]({%slug using-nuget-keys%}).
+If your pipeline must restore from the Telerik NuGet server or another authenticated feed, store the API key or credentials in the pipeline secret store and inject them during restore.
 
 ## Using the Telerik Feed and NuGet API Keys
 

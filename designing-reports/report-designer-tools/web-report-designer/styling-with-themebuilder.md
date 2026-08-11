@@ -1,5 +1,5 @@
 ---
-title: Styling the Web Report Designer
+title: Styling with ThemeBuilder
 page_title: Styling the Web Report Designer with ThemeBuilder
 description: "Learn how to style the Web Report Designer with a custom theme using ThemeBuilder, a tool created by Progress Telerik and designed for customizing Telerik and Kendo UI components."
 slug: styling-the-web-report-designer-with-themebuilder
@@ -7,6 +7,7 @@ tags: styling, web, report, designer, themebuilder, custom, theme
 tag: new
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+position: 6
 ---
 
 # Styling the Web Report Designer with ThemeBuilder

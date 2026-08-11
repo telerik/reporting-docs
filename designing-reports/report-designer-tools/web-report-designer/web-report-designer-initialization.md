@@ -6,7 +6,7 @@ slug: telerikreporting/report-designer-tools/web-report-designer/web-report-desi
 tags: report,webreportdesigner,initialization
 published: True
 reportingArea: WRDHTML5
-position: 8
+position: 10
 ---
 
 <style>

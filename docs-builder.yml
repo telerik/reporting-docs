@@ -210,7 +210,7 @@ meta:
     title: "Set Up in .NET Core 2.1"
     hidden: true
   designing-reports/report-designer-tools/web-report-designer/tools:
-    position: 10
+    position: 12
     title: "Tools"
   designing-reports/report-designer-tools/desktop-designers:
     position: 11

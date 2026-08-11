@@ -6,7 +6,7 @@ slug: styling-the-web-report-designer
 tags: report,webreportdesigner,styling,theme,thememing,themebuilder
 published: True
 reportingArea: WRDHTML5
-position: 10
+position: 5
 ---
 
 # Styling the Web Report Designer

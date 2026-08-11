@@ -27,7 +27,8 @@ The declarative report definitions can be in plain text format or compressed in 
 Telerik Reporting supports the following declarative report definitions:
 
 * Telerik Report Definition XML (`.TRDX`) is a plain text file with XML content. It's easier to review the report definition with simple text editors but all embedded resources like images are encoded with Base64 encoding and don't support localization.
-* Telerik Report Definition Package (`.TRDP`) is compressed in a ZIP archive which contains the XML report definition and its resources. It's smaller in size, optimized for resource handling, and supports [report localization](slug:telerikreporting/designing-reports/localizing-reports).
+* Telerik Report Definition JSON (`.TRDJ`) is a plain text file with JSON content. Like `.TRDX`, it's easy to review with simple text editors, embeds resources like images as Base64-encoded strings, and doesn't support localization.
+* Telerik Report Definition Package (`.TRDP`) is compressed in a ZIP archive which contains the report definition (as XML or JSON) and its resources. It's smaller in size, optimized for resource handling, and supports [report localization](slug:telerikreporting/designing-reports/localizing-reports).
 * Telerik Report Book Package (`.TRBP`) is compressed in a ZIP archive report book XML definition.
 
 ### Programmatic Types

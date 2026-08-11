@@ -3,7 +3,7 @@ title: Basic Concepts in Telerik Reporting
 page_title: Basic Concepts and Logic
 description: "Learn more about the concepts and logic behind Telerik Reporting. Get general knowledge on what Telerik Reporting is, how you may create reports, connect them to data, and preview the results."
 slug: on-telerik-reporting
-tags: telerik, reporting, basic, concepts, explanations, logic
+tags: telerik, reporting, basic, concepts, explanations, logic, trdx, trdj, trdp
 published: True
 previous_url: /best-practices-solution-structure, /getting-started/
 position: 0
@@ -47,8 +47,11 @@ The report definition is the model that contains the declarations of all the rep
 To create a report, you need to generate a report definition file by using the supported [Telerik Report Designers](slug:telerikreporting/designing-reports/report-designer-tools/overview).
 
 * If you design a report in the Report Designer for Visual Studio, the result is a class inheriting `Telerik.Reporting.Report`. These are the so-called __Type Report Definitions__. They may be referenced also as _CLR_ (Common Language Runtime), _CS_ (C Sharp), or _VB_ (Visual Basic) report definitions. These separate CLR types may be passed to the Reporting engine through the built-in [TypeReportSource](/api/telerik.reporting.typereportsource).
-* If you design a report through the Standalone Report Designer, the result is a `TRDX` or `TRDP` file containing a `Telerik.Reporting.Report` object serialized in plain or compressed XML. These reports are referenced as __Declarative Report Definitions__. They may be passed to the Reporting engine with the built-in [UriReportSource](/api/Telerik.Reporting.UriReportSource).
-* If you design a report in code, the result is an instance of `Telerik.Reporting.Report` which is created at runtime or is a result of modifying an already designed report. These report definition instances may be passed to the Reporting engine with the built-in [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource). They may be serialized or packaged to an equivalent declarative report definition (TRDX or TRDP file).
+* If you design a report through the Standalone Report Designer, the result is a `TRDX`, `TRDJ`, or `TRDP` file containing a `Telerik.Reporting.Report` object serialized in plain or compressed XML or JSON. These reports are referenced as __Declarative Report Definitions__. They may be passed to the Reporting engine with the built-in [UriReportSource](/api/Telerik.Reporting.UriReportSource).
+
+	> TRDJ report definitions were introduced with [2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)) Telerik Reporting Release.
+
+* If you design a report in code, the result is an instance of `Telerik.Reporting.Report` which is created at runtime or is a result of modifying an already designed report. These report definition instances may be passed to the Reporting engine with the built-in [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource). They may be serialized or packaged to an equivalent declarative report definition (TRDX, TRDJ, or TRDP file).
 
 When designing a report, you can either start from scratch with an empty report, or use one of the report template wizards that are tailored to fit a particular scenario, for example, a band report, an invoice, a product catalog, and so on. Report Designers add sections and items on your command, resulting in a template that you can further process by the Reporting engine.
 
@@ -74,8 +77,8 @@ You can control the connection information that is used by the data sources exte
 
 The Report Designers support the conversion of report definition types to their own type. For example:
 
-* If you have used the Web Report Designer or the Standalone Report Designer to create a `TRDX` or `TRDP` file, you can import the file into the Visual Studio Report Designer by using a dedicated [Import Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer).
-* The opposite process is also supported. You can convert an assembly containing `Telerik.Reporting.Report` classes into a set of `TRDX` or `TRDP` files by using the [Import Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) of the Standalone Report Designer.
+* If you have used the Web Report Designer or the Standalone Report Designer to create a `TRDX`, `TRDJ`, or `TRDP` file, you can import the file into the Visual Studio Report Designer by using a dedicated [Import Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer).
+* The opposite process is also supported. You can convert an assembly containing `Telerik.Reporting.Report` classes into a set of `TRDX`, `TRDJ`, or `TRDP` files by using the [Import Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer) of the Standalone Report Designer.
 
 When authoring reports in Visual Studio, it is recommended that you create a separate `ClassLibrary` project or use the Report Library project template to hold your reports designed in Visual Studio. This approach will facilitate the maintenance and usage of the reports in different projects.
 

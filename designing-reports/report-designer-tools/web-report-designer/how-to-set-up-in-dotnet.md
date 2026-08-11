@@ -87,7 +87,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 ## Adding the Web Report Designer:
 
-1. Add TRDP or TRDX report definitions in the dedicated folder, specified in the DefinitionStorage and `UriReportSourceResolver` of the services configurations. In the sample code, this is
+1. Add TRDP, TRDX, or TRDJ report definitions in the dedicated folder, specified in the DefinitionStorage and `UriReportSourceResolver` of the services configurations. In the sample code, this is
 
    {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=Adding_the_Web_Report_Designer}}
 

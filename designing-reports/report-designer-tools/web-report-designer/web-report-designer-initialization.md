@@ -99,6 +99,10 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 			<td><strong>startMode</strong></td>
 			<td><i>string, optional</i>; Determines whether the widget will start in <strong>design</strong> or <strong>preview</strong> mode. <br />
 		</tr>
+		<tr>
+			<td><strong>useExternalTheme</strong></td>
+			<td><i>boolean, optional</i>; Sets a value indicating whether the Web Report Designer should skip loading its built-in Kendo UI theme and rely instead on a theme supplied by the host page. When not set or set to <i>false</i> (the default), the designer automatically loads its built-in theme. When set to <i>true</i>, the built-in theme is not loaded, and the host page must reference its own Kendo UI theme (a stock theme or a custom theme generated with ThemeBuilder) before the designer initializes. For more information, refer to <a href="slug:styling-the-web-report-designer">Styling the Web Report Designer</a>.</td>
+		</tr>
 	<tbody>
 </table>
 

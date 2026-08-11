@@ -121,3 +121,4 @@ The subset may be built with the following command:
 
 - [How to set up in .NET applications](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications)
 - [How to set up in .NET Framework application](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application)
+- [Styling the Web Report Designer](slug:styling-the-web-report-designer)

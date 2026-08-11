@@ -4,6 +4,7 @@ page_title: Styling the Web Report Designer
 description: "Learn how the Telerik Web Report Designer loads its built-in theme and how to replace it with a stock Kendo UI theme or a custom ThemeBuilder theme through the useExternalTheme option."
 slug: styling-the-web-report-designer
 tags: report,webreportdesigner,styling,theme,thememing,themebuilder
+tag: new
 published: True
 reportingArea: WRDHTML5
 position: 5

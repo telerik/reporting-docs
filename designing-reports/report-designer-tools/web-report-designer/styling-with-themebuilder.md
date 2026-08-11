@@ -25,7 +25,7 @@ To create a theme using ThemeBuilder, follow these steps:
 1. Click **Create New Project** to open the project creation dialog.
 1. Enter a project name, choose **Font Icons** as the icon type, select a version and a base theme (e.g., Default), and click **Create New Project** to finalize your selections.
 
-> The Web Report Designer and its internal HTML5 Report Viewer use [font icons](https://www.telerik.com/design-system/docs/foundation/iconography/icon-list/), so it is essential to select the correct icon type. This ensures that your changes are correctly applied in the application later on.
+> The Web Report Designer and its internal HTML5 Report Viewer use [font icons](https://www.telerik.com/design-system/docs/foundation/iconography/font-icons/), so it is essential to select the correct icon type. This ensures that your changes are correctly applied in the application later on.
 
 ## Customizing the Theme
 
@@ -37,7 +37,7 @@ The [Kendo UI Design System](https://www.telerik.com/design-system/docs/themes/g
 
 - `Colors` - [Relative Colors in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/color/relative-colors/)
 - `Spacing` - [Spacing in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/spacing/)
-- `Iconography` - [Visual Adjustments for Icons in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/iconography/visual-adjustments/)
+- `Iconography` - [Visual Adjustments for Icons in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/iconography/font-icons/)
 - `Typography` - [Typography in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/typography/)
 - `Border Radius` - [Border Radius in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/border-radius/)
 - `Elevation` - [Elevation in the Telerik and Kendo UI Design System](https://www.telerik.com/design-system/docs/foundation/elevation/)

@@ -58,6 +58,7 @@ After the completion of this guide, you will also be able to configure the Barco
 * [One-Dimensional Barcodes Overview](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types)
 * [Two-Dimensional Barcodes Overview](slug:2d_barcodes_overview)
 * [Configuring the MaxiCode Barcode in Reports](slug:barcode-maxicode-overview)
+* [Configuring the Aztec Code Barcode in Reports](slug:barcode-aztec-overview)
 * [(Demo) Barcodes Report](https://demos.telerik.com/reporting/barcodes-report)
 * [(Demo) Swiss QR Bill Report](https://demos.telerik.com/reporting/swiss-qr-bill-report)
 

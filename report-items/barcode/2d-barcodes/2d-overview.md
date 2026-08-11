@@ -33,3 +33,4 @@ Currently, the Barcode report item supports the following matrix barcode types:
 |[PDF417](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview)|A stacked linear 2D barcode used by U.S. Postal Services, Department of Homeland Security, airline industry and others.|
 |[Data Matrix](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview)|A 2D barcode mostly used to mark smaller areas due to its high data density. Recommended by the US Electronic Industries Alliance. |
 |[MaxiCode](slug:barcode-maxicode-overview)|A fixed-size 2D barcode originally created by UPS for automated package sorting and tracking, defined by the ISO/IEC 16023 standard.|
+|[Aztec Code](slug:barcode-aztec-overview)|A 2D barcode that does not require a surrounding quiet zone, making it well suited for tight print layouts such as transportation and event tickets.|

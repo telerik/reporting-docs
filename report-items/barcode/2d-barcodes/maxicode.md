@@ -91,4 +91,5 @@ The data capacity of a MaxiCode symbol depends on the selected encoding mode and
 * [QR Code Barcode](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview)
 * [Data Matrix Barcode](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview)
 * [PDF417 Barcode](slug:telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview)
+* [Aztec Code Barcode](slug:barcode-aztec-overview)
 * [Getting Started with the Barcode Report Item](slug:barcode_item_get_started)

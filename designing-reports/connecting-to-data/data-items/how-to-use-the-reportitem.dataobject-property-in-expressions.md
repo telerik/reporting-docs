@@ -16,7 +16,7 @@ This topic illustrates how to use the ReportItem.DataObject property in an expre
 
 DataObject is an object instance that represents the data that an item is bound to when processed. In the examples below we will illustrate how to use it in the most common scenarios.
 
-When used in the context of data item (table, subreport, grapth and etc.) expression ReportItem.DataObject references the parent's data item data.
+When used in the context of data item (table, subreport, graph and etc.) expression ReportItem.DataObject references the parent's data item data.
 
 ## Work with raw data type's methods and properties
 

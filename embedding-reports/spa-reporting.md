@@ -67,7 +67,7 @@ The [globalization-invariant mode](https://learn.microsoft.com/en-us/dotnet/core
 ### Implementation
 
 - Angular
-  - The article [Integrating the Angular Report Viewer with Angular CLI](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli) is s step-by-step tutorial on integrating the Angular HTML5 Report Viewer in an [Angular CLI application](https://angular.dev/tools/cli.
+  - The article [Integrating the Angular Report Viewer with Angular CLI](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli) is a step-by-step tutorial on integrating the Angular HTML5 Report Viewer in an [Angular CLI application](https://angular.dev/tools/cli.
 
   - Use the article [Integrating the Native Angular Report Viewer with the Reporting Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service) as a tutorial for embedding the Native Angular Report Viewer into your Angular Single Page Application.
 

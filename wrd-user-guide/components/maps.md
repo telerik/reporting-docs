@@ -57,7 +57,7 @@ Because of its architecture, the Map component requires two types of data source
 Before adding a Map report item:
 
 * Obtain a valid **Location Provider** key (for example, Azure key) to authenticate the requests to the location and tile provider. You must enter this key in the **ClientToken** property.
-* Alternaively, if using a location and tile provider is not an option, provide the geographical coordinates of your points manually, and set up the MapSeries accordingly.
+* Alternatively, if using a location and tile provider is not an option, provide the geographical coordinates of your points manually, and set up the MapSeries accordingly.
 
 ### Location and Tile Providers
 
@@ -106,7 +106,7 @@ Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-
 
 1. Select the **Detail** section of the report and from the **Components** tab add a **Map** component. Set the SQL data source you have already created as the **Data source** property. This data source provides the data required to build the Charts.
 
-1. Set up GeoLocationMapGroup. The Gelocation grouping you create defines the Chart locations&mdash;where the Charts appear on the Map. Using the `State` field in the data source will place the Chart on the corresponding federal state on the map. 
+1. Set up GeoLocationMapGroup. The Geolocation grouping you create defines the Chart locations&mdash;where the Charts appear on the Map. Using the `State` field in the data source will place the Chart on the corresponding federal state on the map. 
 
     2.1 Create a new GeoLocationMapGroup.
 

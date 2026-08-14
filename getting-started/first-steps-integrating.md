@@ -46,7 +46,7 @@ In this final step, you'll integrate your report in an ASP.NET Core web applicat
 1. Right-click the project. Select **Add** > **New Item** > **Telerik HTML5 Report Viewer Page [version]**. Name the file `index.html`.
 1. In the **Configure reporting engine** dialog, leave the selections in the same way they are set by default, that is, **REST Service** > **Create new Rest Service**. Click **Next**.
 
-	![Page for Configuring the Rest Srervice for the Report Viewer](images/RestSrervice.PNG)
+	![Page for Configuring the Rest Service for the Report Viewer](images/RestSrervice.PNG)
 
 1. Click **Sample report definition** and, then, **Next** > **Finish**.
 1. Run the project to make sure everything works as expected. Navigate to the `index.html` page to make sure you see the sample report.

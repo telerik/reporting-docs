@@ -29,7 +29,7 @@ When determining what Culture to use for formatting strings and text direction, 
 
 > tip The Culture of the CurrentThread is determined by the Regional Settings of the machine the application is running on. (Control Panel->Regional Settings->Regional Options->Standards And Formats)
 
-## Culture Dependant Properties
+## Culture Dependent Properties
 
 - **String Formatting**
 

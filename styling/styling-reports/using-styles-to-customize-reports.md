@@ -12,7 +12,7 @@ reportingArea: General
 
 # Customizing Reports using Styles
 
-Telerik Reporting uses a built-in styling model that is similar to CSS. The model provides for very fine-grained visual customization of all elements of a report directly in the Report designer. This CSS-like mechanism offers full control over such things as the background, colors, borders, and images for every item on your report. You can assign styles by using CSS selectors such as Type, Attribute, Style, and Descendent.
+Telerik Reporting uses a built-in styling model that is similar to CSS. The model provides for very fine-grained visual customization of all elements of a report directly in the Report designer. This CSS-like mechanism offers full control over such things as the background, colors, borders, and images for every item on your report. You can assign styles by using CSS selectors such as Type, Attribute, Style, and Descendant.
 
 ## Creating a Style Sheet for a Report
 

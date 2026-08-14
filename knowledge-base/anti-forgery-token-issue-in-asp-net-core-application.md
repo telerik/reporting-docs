@@ -1,6 +1,6 @@
 ---
 title: Anti-Forgery Token Issue in ASP.NET Core 2.1+ Applications
-page_title: Anti-Forgery Token Issue Occuring in ASP.NET Core 2.1+ Applications
+page_title: Anti-Forgery Token Issue Occurring in ASP.NET Core 2.1+ Applications
 description: "Learn how to handle an error thrown while configuring an ASP.NET Core 2.1+ application with anti-forgery token."
 type: troubleshooting
 slug: anti-forgery-token-issue-in-asp-net-core-application

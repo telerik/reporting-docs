@@ -83,7 +83,7 @@ If you do not have this version installed, you can still use the converter if yo
 
 ## Configuration Examples
 
-Here you can find some presets of the binding redirections you need according to the **Crystal Reports** version yo have installed:
+Here you can find some presets of the binding redirections you need according to the **Crystal Reports** version you have installed:
 
 ````XML
 <configuration>

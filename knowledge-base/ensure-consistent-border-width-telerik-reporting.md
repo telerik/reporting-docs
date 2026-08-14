@@ -34,7 +34,7 @@ To achieve consistent border widths across all table cells, ensure that the back
 Follow these steps to resolve the issue:
 
 1. Check the background color settings for each table cell. Identify if any cells have their background color explicitly set to 'White' or any other color, while others are left as default.
-1. Ensure the background colors of all table cells are either set to valid colors, or left to the default (transparrent) value:
+1. Ensure the background colors of all table cells are either set to valid colors, or left to the default (transparent) value:
 	* Reset any explicitly set background colors to their default value. This ensures that all cells have uniform background settings, eliminating discrepancies in border visibility.
 	* Alternatively, explicitly set a background color for all cells. This uniform application of background color will also ensure that the borders appear consistently across the table.
 

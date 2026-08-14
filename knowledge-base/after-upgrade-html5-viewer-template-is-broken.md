@@ -32,7 +32,7 @@ How can I fix the broken layout of the HTML5 ReportViewer after upgrading the Te
 
 ## Cause
 
-The possible causes for this issues depend on the scenario:
+The possible causes for this issue depend on the scenario:
 
 * Utilizing the default template and styles&mdash;As the default template comes from the Telerik reporting assembly, it is possible that you are using a previous version of the assemblies.
 * Utilizing a custom (local) template and styles&mdash;It is possible that the custom template is not containing the new changes from the latest release.

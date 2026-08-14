@@ -23,7 +23,7 @@ For full control, manually configure the REST service and add HTML5 Report Viewe
 
 ## Telerik HTML5 Report Viewer Page Item Template
 
-The item template adds.html page with HTML5 Report Viewer and if needed enables the [Telerik Reporting REST WebAPI Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview). The following describes the item template wizard steps:
+The item template adds an .html page with HTML5 Report Viewer and if needed enables the [Telerik Reporting REST WebAPI Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview). The following describes the item template wizard steps:
 
 * To start the item template wizard, in __Solution Explorer__, select the target project. On the __Project menu__, click __Add -> New Item__. In the [Add New Item](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)) dialog box, navigate to the __Web__ category and select the __Telerik HTML5 Report Viewer Page__ item.
 * Accept the project build prompt. Click 'OK'.

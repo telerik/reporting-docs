@@ -36,7 +36,7 @@ Add an interactive sorting button to crosstab total column header item (top-leve
 1. Click **New** to add a new target.
 1. Select for target from the drop down a dynamic row group over which data you want to apply sorting. In this case this is the SalesPersonFullName table group.
 1. Click **OK**.
-1. In the Sort expressions use the same aggregating expression as the one used in the items you want to sort. For this example, use the `=Sum(Fields.LineTotal)` expresion. Specifying a sort expression is required.
+1. In the Sort expressions use the same aggregating expression as the one used in the items you want to sort. For this example, use the `=Sum(Fields.LineTotal)` expression. Specifying a sort expression is required.
 1. Click **OK**.
 
 To verify the sorting action, preview the report, and then click the interactive sorting button.

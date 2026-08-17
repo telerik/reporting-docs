@@ -1,7 +1,7 @@
 ---
 title: Series
 page_title: Graph Report Item Series 
-description: "Learn how to style and format the series of the Telerik Reporting Graph report item, how to define custom pallettes and how to use conditional formatting with the Graph Series."
+description: "Learn how to style and format the series of the Telerik Reporting Graph report item, how to define custom palettes and how to use conditional formatting with the Graph Series."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series
 tags: telerik, reporting, report, items, graph, styling, formatting, series
 published: True

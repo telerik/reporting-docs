@@ -367,4 +367,4 @@ If you intend to use the above code for modifying reports displayed by an **HTML
 
 > **Note**
 > <br>
-> The *SetConnectionString method* must be updated to skip the check for Drill-trough report actions (NavigateToReportAction). In case of a navigation to other report, the string description of the target report will be received by the resolver's Resolve method and it will go through the same modifications.
+> The *SetConnectionString method* must be updated to skip the check for Drill-through report actions (NavigateToReportAction). In case of a navigation to other report, the string description of the target report will be received by the resolver's Resolve method and it will go through the same modifications.

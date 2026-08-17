@@ -29,7 +29,7 @@ res_type: kb
 
 I want to dynamically change the dropdown with the existing connections in the first step of the SqlDataSource wizard in the Web Report Designer.
 
-By default, the connections dropdown is populated based on the configuration file of the applicatino where the service of the Web Report Designer is running and also by the [ReportDesignerServiceConfiguration](/api/telerik.webreportdesigner.services.ireportdesignerserviceconfiguration).[SettingsStorage](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration#Telerik_WebReportDesigner_Services_ReportDesignerServiceConfiguration_SettingsStorage) property.
+By default, the connections dropdown is populated based on the configuration file of the application where the service of the Web Report Designer is running and also by the [ReportDesignerServiceConfiguration](/api/telerik.webreportdesigner.services.ireportdesignerserviceconfiguration).[SettingsStorage](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration#Telerik_WebReportDesigner_Services_ReportDesignerServiceConfiguration_SettingsStorage) property.
 
 I would like to be able to dynamically filter those connections, for example, based on the currently logged in user.
 

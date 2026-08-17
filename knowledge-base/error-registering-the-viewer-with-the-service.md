@@ -44,7 +44,7 @@ Test changing the default folder using the [second overload of the FileStorage](
 
 The changes need to be made in the `ReportsController.cs` file where the settings of the Reporting REST service are defined.
 
-Example of ReporsController which connects the REST Service and HTML5 Report Viewer:
+Example of ReportsController which connects the REST Service and HTML5 Report Viewer:
 
 ````CSharp
 public class ReportsController : ReportsControllerBase

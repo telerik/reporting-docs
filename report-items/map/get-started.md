@@ -33,7 +33,7 @@ After the completion of this guide, you will be able to achieve the following re
 
 - (For existing reports) Select the `Map` item from the `Insert` menu. This will start the **Map Wizard** which will guide you through the creation process.
 
-  ![Add Map Item to a Report from the Insert Tab of the Standalone Report Deisgner Menu](images/Map/InsertMenu_SelectMap.png)
+   ![Add Map Item to a Report from the Insert Tab of the Standalone Report Designer Menu](images/Map/InsertMenu_SelectMap.png)
 
 ## Adding the Data Source
 

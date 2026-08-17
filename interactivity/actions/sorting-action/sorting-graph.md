@@ -29,7 +29,7 @@ The examples are located in (Replace: Reporting X with your installation version
 Add an interactive sort button to a sibling or parent item to enable a user to click the item and sort the graph.
 
 1. Open in report design view the Dashboard example report
-1. In report design view, select a sibling or parent item to which you want to add an interactive sorting button. In this case we want to add the Sorting Action to a QUATERLY SALES DISTRIBUTION textbox located on the top of the `SalesPersonQuarterBar` graph item.
+1. In report design view, select a sibling or parent item to which you want to add an interactive sorting button. In this case we want to add the Sorting Action to a QUARTERLY SALES DISTRIBUTION textbox located on the top of the `SalesPersonQuarterBar` graph item.
 1. From **Properties window** open the **Actions** editor.
 1. Select **Sorting** option.
 1. Click **Edit sort targets** button to open Edit Sorting Action targets editor.

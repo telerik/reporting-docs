@@ -22,7 +22,7 @@ If your pipeline must restore from the Telerik NuGet server or another authentic
 
 ## Using the Telerik Feed and NuGet API Keys
 
-When working with releases before **Q3 2026**, it is necessary to use the priva token-based authentication for the Telerik NuGet feed. In this section, we will explain how to create and use NuGet API keys to restore Telerik NuGet packages in your CI/CD workflows.
+When working with releases before **Q3 2026**, it is necessary to use the private token-based authentication for the Telerik NuGet feed. In this section, we will explain how to create and use NuGet API keys to restore Telerik NuGet packages in your CI/CD workflows.
 
 When you need to restore Telerik NuGet packages as part of your CI/CD, using API Keys provides a secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
 
@@ -54,7 +54,7 @@ To protect the API Key, store it as a secret environment variable. The exact ste
 
 - In Azure DevOps YAML pipelines, save the key as a secret variable as well. Click the YAML editor's **Variables** button and complete the **New variable** form.
 
-If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username filed and the API Key as the password in the **New NuGet service connection** form editor.
+If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username field and the API Key as the password in the **New NuGet service connection** form editor.
 
 For more details on storing and protecting your API Key, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
 

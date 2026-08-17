@@ -34,7 +34,7 @@ The same JavaScript client can be written as a .NET client that executes request
 1. Create a custom .NET Framework, .NET Core or .NET client. The following solution demonstrates:
 
 	- How to Login to the Report Server through the .NET client;
-	- How to get a collection of all reports available on the report serve through the .NET client;
+	- How to get a collection of all reports available on the report server through the .NET client;
 	- How to export a report available on the report server through the .NET client;
 	- How to download the exported document through the .NET client;
 

@@ -29,7 +29,7 @@ The examples are located in (Replace: Reporting X with your installation version
 Add an interactive sorting button to a parent for all targets item to enable a user to click the item adorner and sort the target data items/groups by the selected expression.
 
 1. Open in report design view the Dashboard example report.
-1. Select item to which you want to add an interactive sorting button. The selected item should be parent to the target groups/data items. For this how to use the report header section text box with Quaterly Sales text.
+1. Select item to which you want to add an interactive sorting button. The selected item should be parent to the target groups/data items. For this how to use the report header section text box with Quarterly Sales text.
 1. From **Properties window** open the **Actions** editor.
 1. Select **Sorting** option.
 1. Click **Edit sort targets** button to open Edit Sorting Action targets editor.

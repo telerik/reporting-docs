@@ -66,7 +66,7 @@ By following the steps below, you can build a sample report that will help you u
 
 1. Preview the report and see the products grouped by category:
 
-    <img style="border: 1px solid gray;" src="images/preview-table-groups.png" alt="Preview Table Grops" />   
+    <img style="border: 1px solid gray;" src="images/preview-table-groups.png" alt="Preview Table Groups" />   
 
 1. Add a Group Subtotal: In the Group Footer, select the TextBox under the **Amount** column and set the Value to `=Sum(Fields.Amount)`:
 

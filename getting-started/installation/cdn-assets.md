@@ -17,7 +17,7 @@ you also have to add the designer's scripts.
 
 ## Previous Approach
 
-You could serve the files from the Telerik Reporting REST service or add them locally to your project by coping them from the installation folder
+You could serve the files from the Telerik Reporting REST service or add them locally to your project by copying them from the installation folder
 of Telerik Reporting:
 
 `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5`

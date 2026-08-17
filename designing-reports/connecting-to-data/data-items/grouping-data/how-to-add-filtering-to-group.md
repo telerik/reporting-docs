@@ -22,7 +22,7 @@ We will use the filter to hide/show the dynamic groups members. Additionally we 
 
 	>caption Group Explorer
 
-	![Show the Group Еxplorer in the Visual Studio Report Designer](images/DataItems/diGroupExplorer.PNG)
+	![Show the Group Explorer in the Visual Studio Report Designer](images/DataItems/diGroupExplorer.PNG)
 
 1. Define a new [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) _DetailsForYear_ as shown on the picture. Use the same DataSource as for the report. The parameter should be MultiValue.
 

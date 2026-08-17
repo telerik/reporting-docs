@@ -30,7 +30,7 @@ The suggested implementation corresponds to the sample `OlympicMedalsByNationalT
 
 - (For existing reports) Select the **Map** item from the **Insert** menu. As a result, the **Map Wizard** will appear and guide you through the creation process.
 
-  ![Add Map Item to a Report from the Insert Tab of the Standalone Report Deisgner Menu](images/InsertMenu_SelectMap.png)
+   ![Add Map Item to a Report from the Insert Tab of the Standalone Report Designer Menu](images/InsertMenu_SelectMap.png)
 
 ## 2. Add the Data Source
 

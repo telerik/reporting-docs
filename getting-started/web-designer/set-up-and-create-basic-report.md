@@ -45,7 +45,7 @@ Let's create an ASP.NET Core application in Visual Studio and embed the Telerik 
 
 	1. In the popped-up _Add new .NET Core Web Report Designer_ wizard, select `Create new REST service` as we don't have an existing one.
 
-		![Create new Web Report Desiger REST Service in the project through the wizard's 'Configure web report designer engine' page.](images/create-new-rest-service.png)
+		![Create new Web Report Designer REST Service in the project through the wizard's 'Configure web report designer engine' page.](images/create-new-rest-service.png)
 
 	1. On the next step, the wizard will ask for the initial report to load. Select the `Sample report definition` option to create a new sample report if you don't have any.
 

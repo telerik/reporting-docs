@@ -45,9 +45,9 @@ The following steps produce an HTML page with settings similar to these in the i
 
 	{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebFormsViewerManualSetup.html region=WebFormsViewerUsingHtml5AspnetWebFormsReportViewerInAWebApplicat}}
 
-	> jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
+	> jQuery must be loaded before creating the viewer object. jQuery must be loaded only once on the page.
 
-	> jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
+	> jQuery must be loaded before creating the viewer object. jQuery must be loaded only once on the page.
 
 1. Add references to the Kendo UI Sass styles in the `<head>` element:
 

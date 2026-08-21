@@ -1,9 +1,9 @@
 ---
 title: Accessibility
 page_title: Accessibility features in Telerik Reporting
-description: "Find out what accessibility features are suported in the HTML5-based viewers and HTML5-rendered report contents. Understand how to set up accessibility and what its known limitations are."
+description: "Find out what accessibility features are supported in the HTML5-based viewers and HTML5-rendered report contents, and use this information to support accessibility and VPAT reviews. Understand how to set up accessibility and what its known limitations are."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility
-tags: HTML5, accessibility
+tags: HTML5, accessibility, VPAT, Section 508, WCAG
 published: True
 position: 10
 previous_url: /html5-report-viewers-accessibility-support
@@ -19,6 +19,8 @@ table th:first-of-type {
 # Accessibility Overview
 
 Telerik Reporting aims to provide a reporting solution accessible to a wider user audience. This includes users with motor control restrictions and ones working with assistive technologies. In our product we follow the recommended practices in [Section 508 of the Rehabilitation Act](https://www.section508.gov/) and [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/), building our web content according to standards set by [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/).
+
+>tip This article provides product accessibility information that may support accessibility questionnaires and Voluntary Product Accessibility Template (VPAT) reviews. It is not a VPAT or a legal compliance statement.
 
 ## Setting up accessibility features in HTML5-based viewers
 

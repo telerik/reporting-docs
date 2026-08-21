@@ -12,7 +12,7 @@ res_type: kb
 ## Environment
 | Version | Product | Author | 
 | ---- | ---- | ---- | 
-| 20.2.26.812 | Telerik Web Report Designer |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
+| 20.2.26.812 | Telerik Reporting |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 

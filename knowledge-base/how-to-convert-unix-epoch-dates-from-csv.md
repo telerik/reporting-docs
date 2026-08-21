@@ -1,8 +1,8 @@
 ---
-title: Convert Unix Epoch Dates from a CSV File
-description: "Learn how to convert Unix epoch timestamps stored as seconds in a CSV file to DateTime values in Telerik Reporting."
+title: Convert Unix Epoch Timestamps to DateTime Values in Telerik Reporting
+description: "Learn how to convert Unix epoch timestamps stored as seconds to DateTime values in Telerik Reporting. This example uses a CSV data source."
 type: how-to
-page_title: Convert Unix Epoch Timestamps from CSV to DateTime
+page_title: Convert Unix Epoch Timestamps to DateTime Values in Telerik Reporting
 slug: how-to-convert-unix-epoch-dates-from-csv
 position: 
 tags: Unix epoch, CSV, DateTime, calculated fields
@@ -19,6 +19,8 @@ res_type: kb
 Unix epoch timestamps represent a date and time as the number of seconds elapsed since January 1, 1970, UTC. This article demonstrates how to convert Unix epoch timestamps stored as numeric values in a CSV file to `DateTime` values in Telerik Reporting.
 
 The example uses 10-digit timestamp values such as `1755772800`. These values are Unix timestamps in seconds, so the calculated field uses the `AddSeconds` expression function.
+
+Although this example uses a CSV data source, the same calculated field expression applies to any data source that exposes the Unix timestamp as a field named `UnixTimestamp`.
 
 ## Solution
 
@@ -64,7 +66,7 @@ EventID,EventName,UnixTimestamp
 The calculated field expression performs these operations:
 
 - `Date(1970, 1, 1)` creates the Unix epoch start date.
-- `Fields.UnixTimestamp` reads the timestamp from the current CSV record.
+- `Fields.UnixTimestamp` reads the timestamp from the current data record.
 - `CDbl(...)` converts the field to a numeric value accepted by the date function.
 - `AddSeconds(...)` adds the elapsed seconds to the epoch start date.
 

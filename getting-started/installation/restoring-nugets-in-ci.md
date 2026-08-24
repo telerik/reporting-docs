@@ -12,17 +12,9 @@ reportingArea: General
 
 # Restoring NuGet Packages in Your CI Workflow
 
-## (Recommended) Using NuGet.org
-
-As of the **Q3 2026** release, the Telerik Reporting NuGet packages are hosted on [NuGet.org](https://www.nuget.org/)
-
-For pipelines and self-hosted build agents, we recommend using [NuGet.org](https://www.nuget.org/) for current releases because it removes the need to configure private-feed credentials. Commit package references and, when needed, a repository-level `NuGet.Config` file, but keep any secrets outside source control.
-
-If your pipeline must restore from the Telerik NuGet server or another authenticated feed, store the API key or credentials in the pipeline secret store and inject them during restore.
-
 ## Using the Telerik Feed and NuGet API Keys
 
-When working with releases before **Q3 2026**, it is necessary to use the private token-based authentication for the Telerik NuGet feed. In this section, we will explain how to create and use NuGet API keys to restore Telerik NuGet packages in your CI/CD workflows.
+In this section, we will explain how to create and use NuGet API keys to restore Telerik NuGet packages in your CI/CD workflows.
 
 When you need to restore Telerik NuGet packages as part of your CI/CD, using API Keys provides a secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
 

@@ -77,13 +77,12 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 ## Using NuGet Packages
 
-You can add Telerik Reporting to a project by installing NuGet packages from [NuGet.org](https://www.nuget.org/) or the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting REST WebAPI-based service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
+You can add Telerik Reporting to a project by installing NuGet packages from the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting REST WebAPI-based service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
 
 > note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
 
 Use one of the following installation paths for NuGet packages:
 
-- [Install Telerik Reporting from NuGet.org](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-telerik-reporting-from-nuget-org)
 - [Install Telerik Reporting from the Telerik NuGet server](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server)
 - [Install Telerik Reporting from a local NuGet feed](slug:setup-local-nuget-feed)
 

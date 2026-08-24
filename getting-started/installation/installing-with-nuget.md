@@ -18,52 +18,12 @@ This article explains how to install Telerik Reporting with NuGet packages, choo
 
 Use one of the following installation paths:
 
-- [Install Telerik Reporting from NuGet.org](#how-to-install-telerik-reporting-from-nuget-org)
 - [Install Telerik Reporting from the Telerik NuGet server](#how-to-install-from-the-telerik-nuget-server)
 - [Install Telerik Reporting from a local NuGet feed](slug:setup-local-nuget-feed)
 
-## How to Choose the Right NuGet Installation Path
-
-For current Telerik Reporting releases, use [NuGet.org](https://www.nuget.org/). **NuGet.org** is the default package source in Visual Studio and the .NET CLI, so it requires the least configuration and avoids unnecessary package-source ambiguity.
-
-Use a [local NuGet feed](slug:setup-local-nuget-feed) when you need offline installation, reproducible restores inside a controlled network, or a mirrored package source for build agents.
-
-Use the **Telerik NuGet server** only when you need older package versions that predate the NuGet.org release or when your organization already standardizes on the Telerik private feed.
-
-## How to Install Telerik Reporting from NuGet.org
-
-As of **Q3 2026**, the Telerik Reporting packages are available on [NuGet.org package hosting](https://www.nuget.org/). This is the **recommended** installation path for new development because both Visual Studio and the .NET CLI use NuGet.org by default.
-
-### How to Install from NuGet.org in Visual Studio
-
-1. In Solution Explorer, right-click the project and select **Manage NuGet Packages...**.
-2. In **Package source**, verify that **nuget.org** is selected.
-3. In the **Browse** tab, search for the package you need, for example `Telerik.Reporting`.
-4. Select the package and then select **Install**.
-
-### How to Install from NuGet.org with the .NET CLI
-
-Use the .NET CLI when you want repeatable setup steps for local development, containers, or automation scripts.
-
-```bash
-dotnet add package Telerik.Reporting
-```
-
-### How to Install from NuGet.org with Package Manager Console
-
-Use the Visual Studio Package Manager Console when you manage packages inside Visual Studio and want PowerShell-based commands.
-
-```powershell
-Install-Package Telerik.Reporting
-```
-
 ## How to Install from the Telerik NuGet Server
 
-> important As of **Q3 2026**, NuGet.org is the recommended source for current Telerik Reporting packages. Use the Telerik NuGet server for backward compatibility, for older releases, or when your organization requires the Telerik private feed.
-
-The Telerik NuGet server provides authenticated access to Telerik packages and older versions that may not be part of your standard NuGet.org-based workflow.
-
-Before you add the Telerik NuGet server, please confirm these prerequisites:
+The Telerik NuGet server provides authenticated access to Telerik packages. Before you add the Telerik NuGet server, please confirm these prerequisites:
 
 - Your Telerik account has access to Telerik Reporting.
 - You can sign in to your Telerik account in a browser.

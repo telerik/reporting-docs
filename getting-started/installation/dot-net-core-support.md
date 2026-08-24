@@ -14,9 +14,7 @@ reportingArea: General
 
 Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET projects and enable you to use Telerik reports in .NET applications on Windows, Linux, and macOS platforms.
 
-The NuGet packages are available on [NuGet.org](https://www.nuget.org/). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
-
-> tip If you are using a release older than **Q3 2026**, the Telerik Reporting NuGet packages must be installed via the [Telerik NuGet feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server).
+The NuGet packages are available on [Telerik NuGet feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
 
 The assemblies target .NET Standard 2.0 and the desktop viewers target .NET {{site.mindotnetversion}} or above, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
 
@@ -106,7 +104,7 @@ To use .NET on macOS:
 1. Install [.NET for macOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos).
 1. Create your .NET application or copy an existing one from a Windows machine.
 
-   > important If you are using a release before Q3 2026, it will be necessary to add a `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server).
+   > important It will be necessary to add a `nuget.config` file with a path to your NuGet repository and [set up the Telerik NuGet Feed](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server).
 
 1. Install the `Telerik.Drawing.Skia` NuGet package.
 1. Add a section in the `appsettings.json` file for any font fallback.

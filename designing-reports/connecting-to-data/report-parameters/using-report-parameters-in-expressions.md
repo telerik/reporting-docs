@@ -12,6 +12,8 @@ reportingArea: General
 
 # Using Report Parameters in Expressions
 
+For a complete example of using a string report parameter to control a text box format, see [Bind the TextBox Format Property to a String Report Parameter](slug:bind-textbox-format-to-string-report-parameter).
+
 Report Parameters can be used in expressions that you display directly and can also be used with other elements in an expression. These expressions in turn can be used as criteria for [filters](slug:telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules), [sorting](slug:telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview) and [grouping](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview).
 
 ## Report Parameters in Expressions

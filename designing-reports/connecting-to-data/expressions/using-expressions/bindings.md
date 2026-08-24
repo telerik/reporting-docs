@@ -57,3 +57,4 @@ When the report renders, the expression is evaluated and assigned to the bound p
 * [Report Expressions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)
 * [Binding class API reference](/api/Telerik.Reporting.Binding)
 * [BindingCollection class API reference](/api/Telerik.Reporting.BindingCollection)
+* [Bind the TextBox Format Property to a String Report Parameter](slug:bind-textbox-format-to-string-report-parameter)

@@ -105,6 +105,55 @@ The [Visual Studio Report Designer](slug:telerikreporting/designing-reports/repo
 
 If you are using the HTML5 Report Viewer to preview the report, the main report will be rendered in HTML and loaded on the client. The subreport is considered part of the main report content, and its report source will be internally resolved without additional calls to the Reporting REST service.
 
+### Loading a Report from a Stream
+
+When a TRDX or TRDP report is stored as a project resource, obtain its resource stream in the application and load it with the serializer that matches the report format. Use `ReportXmlSerializer.Deserialize(Stream)` for a TRDX file and `ReportPackager.Unpackage(Stream)` for a TRDP file.
+
+The following example replaces a design-time `UriReportSource` with an `InstanceReportSource`. Assigning the new report source to the `SubReport.ReportSource` property is sufficient; you do not need to set the report source type separately.
+
+```csharp
+using System.IO;
+using Telerik.Reporting;
+using Telerik.Reporting.XmlSerialization;
+
+static Report LoadTrdx(Stream reportStream)
+{
+	var serializer = new ReportXmlSerializer();
+	return (Report)serializer.Deserialize(reportStream);
+}
+
+static Report LoadTrdp(Stream reportStream)
+{
+	var packager = new ReportPackager();
+	return packager.Unpackage(reportStream);
+}
+
+static void ConfigureSubReport(
+	SubReport subReportItem,
+	Stream reportStream,
+	bool isTrdp,
+	object parameterValue,
+	object replacementDataSource)
+{
+	var childReport = isTrdp
+		? LoadTrdp(reportStream)
+		: LoadTrdx(reportStream);
+
+	var reportSource = new InstanceReportSource
+	{
+		ReportDocument = childReport
+	};
+
+	reportSource.Parameters.Add("OrderId", parameterValue);
+	subReportItem.ReportSource = reportSource;
+	subReportItem.DataSource = replacementDataSource;
+}
+```
+
+Pass the `SubReport` item from the main report and the stream obtained from the project resource to `ConfigureSubReport`. The `OrderId` name must match a report parameter defined in the child report. Omit the `Parameters.Add` or `DataSource` assignment when the child report does not require them.
+
+For more information about loading report definitions, see [Serializing and Deserializing Report Definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) and [Packaging and Unpackaging Report Definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition).
+
 ## The property DataSource of the SubReport item
 
 Starting with `R3 2022 SP1 (16.2.22.1109)`, the `DataSource` property lets you feed the subreport directly with data from the main report.

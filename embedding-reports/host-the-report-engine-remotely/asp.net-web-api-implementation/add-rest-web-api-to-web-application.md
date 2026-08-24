@@ -52,6 +52,8 @@ The project has a preconfigured implementation of the reports controller that us
 	{{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
 	{{source=CodeSnippets\MvcVB\Global.asax.vb region=ReportsControllerConfiguration_RegisterRoutes}}
 
+	> important Register the Telerik Reporting routes only once. If the application also has a generic route such as `api/{controller}/{id}`, register it after the Reporting routes. A generic route registered first can match Reporting requests without an action constraint and cause a `Multiple actions were found that match the request` error.
+
 1. Run the application
 1. To verify whether the service works correctly, you can request the available document formats using the following URL:
 

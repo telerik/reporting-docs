@@ -17,7 +17,7 @@ The article explains how to configure the **AI Report Generator** in the Web Rep
 
 For information on the AI Report Generator usage, refer to the article [AI Report Generator](slug:wrd-genai-graph-gauge-design).
 
-> note AI Report Generator for `Graph` and `Gauge` items is available starting with the `2026 Q2 (20.1.26.615)` Telerik Reporting release.
+> note The AI Report Generator supports `Graph` and `Gauge` report items starting with Telerik Reporting 2026 Q2 (20.1.26.615). Support for `Table`-based report items was added in 2026 Q3 (20.2.26.812).
 
 ## Configuring AI Report Generator in the Host Application
 
@@ -25,27 +25,60 @@ AI Report Generator runs as a SignalR-backed service in the application that hos
 
 ### Prerequisites
 
+The AI Report Generator is provided in a separate NuGet package, `Telerik.WebReportDesigner.Services.AI`, which must be referenced by the host application. Since this package depends on the core Telerik Web Report Designer packages, the host application only needs to reference `Telerik.WebReportDesigner.Services.AI`.
+
 The AI Report Generator requires a valid `Subscription` or `Trial` license.
+
 ### Server-side Configuration
 
 To enable AI Report Generator, follow these steps:
 
-- Register the agent services in `Program.cs`. You must provide the `createClientCallback` implementation:
+- Register the agent services in `Program.cs`.
+  - Approach 1: Programmatically instantiate a IChatClient through the `createClientCallback` delegate:
 
 	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=WRD_AddAIReportGenerator}}
 
-- Provide a custom `IChatClient` factory implementation for the `createClientCallback`.
+    Optionally, use the following overload for detailed configuration:
+
+    {{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=WRD_AddAIReportGenerator_Detailed}}
+
+    Provide a custom `IChatClient` factory implementation for the `createClientCallback`.
 
 	The following snippets show the typical wiring with a custom `IChatClient` factory:
 
-	- **Azure OpenAI**:
+	  - **Azure OpenAI**:
 
-		{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=AzureOpenAI_IChatClientImplementation}}
+	  	{{source=CodeSnippets\Blazor\Docs\ProgramWithRestConfig.cs region=AzureOpenAI_IChatClientImplementation}}
 
-	- **OpenAI**:
+	  - **OpenAI**:
 
-		{{source=CodeSnippets\Blazor\Docs\WrdAiReportGenerator.cs region=OpenAI_IChatClientImplementation}}
+	  	{{source=CodeSnippets\Blazor\Docs\WrdAiReportGenerator.cs region=OpenAI_IChatClientImplementation}}
 
+  - Approach 2: Call the `AddAIReportGenerator(IConfiguration)` overload for initialization with the options from a `telerikReporting:AIReportGenerator` section in application's configuration:
+
+	{{source=CodeSnippets\Blazor\Docs\WrdAiReportGenerator.cs region=WRD_AddAIReportGenerator_IConfiguration}}
+
+    Here's a sample configuration section in `appsettings.json`:
+    
+    {{source=CodeSnippets\Blazor\Docs\JSON\WrdAiReportGenerator.json region=telerikReportingAIReportGenerator}}
+
+	The table below lists the available options and their values:
+
+	| Option | Description |
+	|--------|-------------|
+	| `friendlyName` | Name of the Telerik AI client provider to use. Supported values: `MicrosoftExtensionsAzureOpenAI`, `MicrosoftExtensionsOpenAI`, `MicrosoftExtensionsAzureAIInference`, `MicrosoftExtensionsOllama`. Required when using the `AddAIReportGenerator(IConfiguration)` overload without a `createClientCallback`. |
+	| `endpoint` | The AI provider endpoint URL. For Azure OpenAI, this is your Azure Cognitive Services resource URL. Required when using the configuration-only overload. |
+	| `credential` | The API key used to authenticate with the AI provider. Required when using the configuration-only overload. |
+	| `model` | The deployment or model name to invoke (for example `gpt-4.1-mini`). Required when using the configuration-only overload. |
+	| `Store_SessionIdleTimeoutMinutes` | Idle timeout, in minutes, for an AI Report Generator chat session. Defaults to 1 day (1440 minutes) when omitted. |
+	| `EnableConversationLogging` | When `true`, conversation transcripts are written to disk after each agent interaction. Defaults to `false`. |
+	| `ConversationLogPath` | Base directory for conversation logs. Logs are organized into per-user, timestamped subfolders. When `null`, defaults to `{AppContext.BaseDirectory}/Conversations`. Used only when `EnableConversationLogging` is `true`. |
+	| `ShowTokenUsage` | When `true`, the chat progress bubble in the designer shows token usage information after each interaction. Defaults to `false`. |
+	| `RequestTimeout` | Timeout in seconds for a single agent interaction. When the request does not complete in the allotted time, it is cancelled, and an error message is sent to the client. Defaults to `60`. |
+	| `RequestMaxTokens` | Maximum total number of tokens (input and output) that a single agent interaction is allowed to consume. The interaction is terminated when the cumulative token count reaches this limit. Defaults to `100000`. |
+	| `Hub_MaximumReceiveMessageSize` | Maximum size in bytes of a SignalR message received from the client. Increase this value when working with large report definitions. Defaults to `1048576` (1 MB). |
+	| `Hub_ClientTimeoutInterval` | SignalR client timeout in seconds. When the client does not respond within this interval, the connection is dropped. Defaults to `60`. |
+  
 - Map the agent endpoint in `Program.cs`:
 
 	{{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=MapAgentEndpoint}}
@@ -74,30 +107,7 @@ To enable AI Report Generator, follow these steps:
 
 	{{source=CodeSnippets\Blazor\Docs\TypeScript\WrdAiReportGenerator.ts region=reportGeneratorHubOptionsEndpoint}}
 
-As an alternative to passing delegates directly, call the `AddAIReportGenerator(IConfiguration)` overload to read the options from a `telerikReporting:AIReportGenerator` section in `appsettings.json`:
-
-{{source=CodeSnippets\Blazor\Docs\JSON\WrdAiReportGenerator.json region=telerikReportingAIReportGenerator}}
-
-The available options are:
-
-| Option | Description |
-|--------|-------------|
-| `friendlyName` | Name of the Telerik AI client provider to use. Supported values: `MicrosoftExtensionsAzureOpenAI`, `MicrosoftExtensionsOpenAI`, `MicrosoftExtensionsAzureAIInference`, `MicrosoftExtensionsOllama`. Required when using the `AddAIReportGenerator(IConfiguration)` overload without a `createClientCallback`. |
-| `endpoint` | The AI provider endpoint URL. For Azure OpenAI, this is your Azure Cognitive Services resource URL. Required when using the configuration-only overload. |
-| `credential` | The API key used to authenticate with the AI provider. Required when using the configuration-only overload. |
-| `model` | The deployment or model name to invoke (for example `gpt-4.1-mini`). Required when using the configuration-only overload. |
-| `Store_SessionIdleTimeoutMinutes` | Idle timeout, in minutes, for an AI Report Generator chat session. Defaults to 1 day (1440 minutes) when omitted. |
-| `EnableConversationLogging` | When `true`, conversation transcripts are written to disk after each agent interaction. Defaults to `false`. |
-| `ConversationLogPath` | Base directory for conversation logs. Logs are organized into per-user, timestamped subfolders. When `null`, defaults to `{AppContext.BaseDirectory}/Conversations`. Used only when `EnableConversationLogging` is `true`. |
-| `ShowTokenUsage` | When `true`, the chat progress bubble in the designer shows token usage information after each interaction. Defaults to `false`. |
-| `RequestTimeout` | Timeout in seconds for a single agent interaction. When the request does not complete in the allotted time, it is cancelled, and an error message is sent to the client. Defaults to `60`. |
-| `RequestMaxTokens` | Maximum total number of tokens (input and output) that a single agent interaction is allowed to consume. The interaction is terminated when the cumulative token count reaches this limit. Defaults to `100000`. |
-| `Hub_MaximumReceiveMessageSize` | Maximum size in bytes of a SignalR message received from the client. Increase this value when working with large report definitions. Defaults to `1048576` (1 MB). |
-| `Hub_ClientTimeoutInterval` | SignalR client timeout in seconds. When the client does not respond within this interval, the connection is dropped. Defaults to `60`. |
-
 To restrict who can invoke AI Report Generator, gate the `Commands_AIAgent_Use` permission in your `Telerik.WebReportDesigner.Services.Models.Permission` authorization configuration. Users who lack this permission do not see the **AI Report Generator** entry point.
-
-> note AI Report Generator is a separate NuGet package, `Telerik.WebReportDesigner.Services.AI`, which the host application must reference in addition to the standard Web Report Designer packages.
 
 ### Client-side Configuration
 

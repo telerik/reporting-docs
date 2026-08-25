@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /openclient-data-source-how-to-configure
 reportingArea: General
+components: [General]
 ---
 
 # Configuring the OpenClientDataSource Component

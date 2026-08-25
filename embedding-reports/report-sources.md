@@ -8,6 +8,7 @@ tags: telerik, reporting, embedding, reports, report, sources, overview
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Report Sources Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: manual,setup
 published: True
 reportingArea: HTML5
+components: [HTML5]
 position: 4
 previous_url: /html5-report-viewer-embedding
 ---

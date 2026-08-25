@@ -8,6 +8,7 @@ published: True
 position: 50
 previous_url: /report-items-chart, /featuressplineareas, /report-items/chart-(obsolete)
 reportingArea: General
+components: [General]
 ---
 
 # (Obsolete) Chart Report Item Overview

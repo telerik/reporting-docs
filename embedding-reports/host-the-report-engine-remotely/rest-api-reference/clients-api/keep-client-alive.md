@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: keep,client,alive
 published: True
 reportingArea: RESTService, RESTServiceCore
+components: [RESTService, RESTServiceCore]
 position: 2
 previous_url: /telerik-reporting-rest-api-keep-client-alive,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/keep-client-alive
 ---

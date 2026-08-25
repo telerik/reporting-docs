@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /standalone-report-designer-display-report-viewer
 reportingArea: General
+components: [General]
 ---
 
 # Deploying Reports Created with the Standalone and Web Report Designers

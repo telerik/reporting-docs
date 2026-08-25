@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /designing-reports-considerations-excel
 reportingArea: General
+components: [General]
 ---
 
 <style>

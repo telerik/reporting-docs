@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation, /getting-started/installation/, /installation-deploying-on-server
 reportingArea: General
+components: [General]
 ---
 
 # Installation Approaches for Telerik Reporting

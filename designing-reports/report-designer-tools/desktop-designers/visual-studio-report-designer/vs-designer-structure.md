@@ -7,6 +7,7 @@ tags: visual,studio,report,designer,tool,structure
 published: True
 position: 5
 reportingArea: General
+components: [General]
 ---
 
 # Structure of the Visual Studio Report Designer

@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /designing-reports-parameters-expressions
 reportingArea: General
+components: [General]
 ---
 
 # Using Report Parameters in Expressions

@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /GraphOverview, /designing-reports/report-structure/graph/overview, /report-items/graph/
 reportingArea: General
+components: [General]
 ---
 
 # Overview of the Graph Report Item

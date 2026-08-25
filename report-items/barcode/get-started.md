@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, barcode, getting, started
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Getting Started with the Barcode Report Item

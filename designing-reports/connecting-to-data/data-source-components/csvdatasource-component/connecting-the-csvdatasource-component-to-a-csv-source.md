@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /csvdatasource-connecting-the-csvdatasource-component-to-a-csv-data
 reportingArea: General
+components: [General]
 ---
 
 # Connecting the CsvDataSource Component to a CSV Source

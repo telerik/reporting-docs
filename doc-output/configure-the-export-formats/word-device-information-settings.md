@@ -8,6 +8,7 @@ published: True
 position: 12
 previous_url: /device-information-settings-word
 reportingArea: General
+components: [General]
 ---
 
 <style>

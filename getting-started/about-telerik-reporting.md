@@ -8,6 +8,7 @@ published: True
 previous_url: /best-practices-solution-structure, /getting-started/
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Basic Concepts in Telerik Reporting

@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /openaccessdatasource-retrieving-data-from-an-openaccess-model
 reportingArea: General
+components: [General]
 ---
 
 # Retrieving Data from a Telerik Data Access Model with the OpenAccessDataSource Component

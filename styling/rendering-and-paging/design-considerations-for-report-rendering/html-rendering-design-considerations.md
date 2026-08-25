@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /designing-reports-considerations-html
 reportingArea: General
+components: [General]
 ---
 
 # Design Considerations for the HTML Rendering

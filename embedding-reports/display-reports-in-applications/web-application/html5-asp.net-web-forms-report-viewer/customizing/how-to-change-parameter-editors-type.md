@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,change,parameter,editors,type
 published: True
 reportingArea: WebFormsWrapper
+components: [WebFormsWrapper]
 position: 3
 previous_url: /html5-webforms-report-viewer-change-parameters-editors-type
 ---

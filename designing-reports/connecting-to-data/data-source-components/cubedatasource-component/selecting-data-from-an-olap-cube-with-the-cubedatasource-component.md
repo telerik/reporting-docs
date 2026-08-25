@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /cubedatasource-selecting-data
 reportingArea: General
+components: [General]
 ---
 
 # Selecting Data from an OLAP Cube with the CubeDataSource Component

@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, styling, formatting, html,
 published: True
 position: 4
 reportingArea: General
+components: [General]
 ---
 
 # Styling and Formatting HtmlTextBox

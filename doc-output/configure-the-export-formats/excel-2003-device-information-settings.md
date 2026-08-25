@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /device-information-settings-excel
 reportingArea: General
+components: [General]
 ---
 
 <style>

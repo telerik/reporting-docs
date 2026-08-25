@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: deploying, windows, forms, applications
 published: True
 reportingArea: WinForms
+components: [WinForms]
 position: 5
 previous_url: /installation-deploying-on-windows-forms
 ---

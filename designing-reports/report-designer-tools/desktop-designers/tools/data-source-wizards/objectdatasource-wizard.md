@@ -8,6 +8,7 @@ published: True
 position: 60
 previous_url: /objectDataSource-Wizard
 reportingArea: General
+components: [General]
 ---
 
 # ObjectDataSource Wizard of the Report Designer

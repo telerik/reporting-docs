@@ -7,6 +7,7 @@ tags: Microsoft.Data.SqlClient,data,provider
 published: True
 position: 4
 reportingArea: General
+components: [General]
 ---
 
 # Using Microsoft.Data.SqlClient in Reporting

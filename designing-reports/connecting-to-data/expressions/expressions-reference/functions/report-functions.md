@@ -8,6 +8,7 @@ published: True
 position: 8
 previous_url: /expressions-report-functions
 reportingArea: General
+components: [General]
 ---
 <style>
 table th:first-of-type {

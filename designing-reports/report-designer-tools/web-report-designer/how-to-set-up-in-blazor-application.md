@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,set,up,web,report,designer,in,a,blazor,webapp,wasm,webassembly,server,application
 published: True
 reportingArea: WRDBlazorWrapper, WRDRestServiceCore
+components: [WRDBlazorWrapper, WRDRestServiceCore]
 position: 2
 previous_url: /how-to-blazor-web-report-designer
 ---

@@ -8,6 +8,7 @@ published: True
 position: 35
 previous_url: /data-source-how-to-add-project-data-source
 reportingArea: General
+components: [General]
 ---
 
 # Reuse Data Source Components Across Reports

@@ -8,6 +8,7 @@ published: True
 position: 14
 previous_url: /object-data-source-how-to-bind-to-data-set
 reportingArea: General
+components: [General]
 ---
 
 # Binding ObjectDataSource Component to a DataSet

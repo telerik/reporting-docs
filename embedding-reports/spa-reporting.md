@@ -7,6 +7,7 @@ tags: telerik, reporting, reports, web, spa, angular, react
 published: True
 position: 92
 reportingArea: General
+components: [General]
 ---
 
 # Embedding Telerik Reporting in Single Page Web Reporting Applications

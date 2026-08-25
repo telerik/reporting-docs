@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,set,up,in,.net,framework,application
 published: True
 reportingArea: WRDHTML5, WRDRestService
+components: [WRDHTML5, WRDRestService]
 position: 4
 previous_url: /web-report-designer-setup-in-dot-net-framework
 ---

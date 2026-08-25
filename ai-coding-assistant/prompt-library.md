@@ -8,6 +8,7 @@ tag: updated
 published: True
 position: 3
 reportingArea: General
+components: [General]
 ---
 
 # AI Prompt Library

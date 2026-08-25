@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /ai-coding-assistant/copilot-extension
 reportingArea: General
+components: [General]
 ---
 
 # Telerik Reporting MCP Server

@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /designing-reports-reportbook-toc
 reportingArea: General
+components: [General]
 ---
 
 # ReportBook Table of Contents Overview

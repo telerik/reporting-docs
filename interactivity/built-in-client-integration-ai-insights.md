@@ -8,6 +8,7 @@ tag: new
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Enable AI-Powered Insights with Built-in AI Client

@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /expressions-page-functions
 reportingArea: General
+components: [General]
 ---
 
 # Page Functions Overview

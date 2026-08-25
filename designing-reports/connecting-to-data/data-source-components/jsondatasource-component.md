@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /jsondatasource-component
 reportingArea: General
+components: [General]
 ---
 
 <style>

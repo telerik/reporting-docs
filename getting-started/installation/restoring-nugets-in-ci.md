@@ -8,6 +8,7 @@ tags: telerik, reporting, restore, nuget, packages, ci, continuous, integration,
 published: True
 position: 6
 reportingArea: General
+components: [General]
 ---
 
 # Restoring NuGet Packages in Your CI Workflow

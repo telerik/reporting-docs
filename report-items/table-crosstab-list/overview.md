@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, templates, overv
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Table Overview

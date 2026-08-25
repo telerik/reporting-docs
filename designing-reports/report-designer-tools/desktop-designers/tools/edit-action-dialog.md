@@ -8,6 +8,7 @@ published: True
 position: 13
 previous_url: /ui-action-dialog
 reportingArea: General
+components: [General]
 ---
 
 # Edit Action Dialog of the Report Designer

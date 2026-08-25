@@ -7,6 +7,7 @@ tags: query, builder, web, report, designer
 tag: new
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 200
 ---
 

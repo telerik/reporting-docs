@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /designing-reports-parameters-using-multivalue-parameter
 reportingArea: General
+components: [General]
 ---
 
 # Using Multivalue Parameters

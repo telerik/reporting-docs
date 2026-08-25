@@ -8,6 +8,7 @@ tags: telerik, reporting, dotnet, core, support, getting, started, download, and
 published: True
 position: 4
 reportingArea: General
+components: [General]
 ---
 
 # Available .NET Support for Operating Systems and Docker Containers

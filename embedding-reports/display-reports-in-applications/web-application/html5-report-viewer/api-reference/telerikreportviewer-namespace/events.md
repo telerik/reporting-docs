@@ -6,6 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: events
 published: false
 reportingArea: HTML5
+components: [HTML5]
 position: 0
 previous_url: /html5-report-viewer-api-events, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/
 ---

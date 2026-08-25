@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /standalone-report-designer-keyboard-shortcuts
 reportingArea: General
+components: [General]
 ---
 
 # Keyboard Support and Shortcuts Overview

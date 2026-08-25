@@ -6,6 +6,7 @@ slug: wrd-htmltextbox-editor
 tags: telerik, reporting, report, items, htmltextbox, editing, editor, web report designer
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 9
 ---
 

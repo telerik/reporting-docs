@@ -8,6 +8,7 @@ published: True
 position: 11
 previous_url: /report-items-shape
 reportingArea: General
+components: [General]
 ---
 
 # Shape Report Item Overview

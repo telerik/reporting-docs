@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: event,binding
 published: True
 reportingArea: AngularWrapper
+components: [AngularWrapper]
 position: 3
 previous_url: /angular-report-viewer-event-binding
 ---

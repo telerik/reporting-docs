@@ -8,6 +8,7 @@ published: True
 position: 8
 previous_url: /report-engine-connectionstring
 reportingArea: General
+components: [General]
 ---
 
 <style>

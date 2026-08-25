@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /import-report-wizard, /designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/
 reportingArea: General
+components: [General]
 ---
 
 # Import Report Wizard of the Report Designer

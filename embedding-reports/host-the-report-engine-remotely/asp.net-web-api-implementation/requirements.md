@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: requirements, rest, webapi, api, asp.net, application
 published: True
 reportingArea: RESTService
+components: [RESTService]
 position: 1
 previous_url: /telerik-reporting-rest-service-web-api-system-requirements,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements
 ---

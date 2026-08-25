@@ -8,6 +8,7 @@ previous_url: /MapChartTypes, /report-items/map/map-types, /report-items/map/map
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Map Types Overview

@@ -8,6 +8,7 @@ published: True
 position: 18
 previous_url: /installation-previewing-report
 reportingArea: General
+components: [General]
 ---
 
 # Previewing Reports with Real Data

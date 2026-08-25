@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /style-exportingand-reusing-style-sheets
 reportingArea: General
+components: [General]
 ---
 
 # Exporting and Reusing Style Sheets

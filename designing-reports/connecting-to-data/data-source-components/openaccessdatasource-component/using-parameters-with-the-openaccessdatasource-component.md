@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /openaccessdatasource-using-parameters
 reportingArea: General
+components: [General]
 ---
 
 # Using Parameters with the OpenAccessDataSource Component

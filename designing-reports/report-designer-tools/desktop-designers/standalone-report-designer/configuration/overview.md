@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /standalone-report-designer-configuration, /designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/
 reportingArea: General
+components: [General]
 ---
 
 # Standalone Report Designer Configuration File

@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /designing-reports-reportbook-paging
 reportingArea: General
+components: [General]
 ---
 
 # Report Book Paging

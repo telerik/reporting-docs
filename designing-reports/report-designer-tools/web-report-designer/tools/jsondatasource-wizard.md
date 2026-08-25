@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: jsondatasource,wizard
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 2
 ---
 

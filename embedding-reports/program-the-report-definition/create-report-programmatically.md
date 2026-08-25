@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /programmatic-creating-report
 reportingArea: General
+components: [General]
 ---
 
 # Create a Report Programmatically

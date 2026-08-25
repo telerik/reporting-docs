@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, location, providers
 previous_url: /MapLocationProviders
 published: True
 reportingArea: General
+components: [General]
 ---
 
 # Location Providers in the Map

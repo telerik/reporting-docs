@@ -8,6 +8,7 @@ previous_url: /designing-reports/report-structure/automatic-layout-\(dock-and-an
 published: True
 position: 16
 reportingArea: General
+components: [General]
 ---
 
 # Automatic Layout for Report Items

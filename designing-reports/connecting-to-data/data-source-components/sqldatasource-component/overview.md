@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /SqlDataSource,/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/
 reportingArea: General
+components: [General]
 ---
 
 <style>

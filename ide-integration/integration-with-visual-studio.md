@@ -7,6 +7,7 @@ tags: integration,visual,studio,reporting,configure,wizard, extension
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Visual Studio Extensions

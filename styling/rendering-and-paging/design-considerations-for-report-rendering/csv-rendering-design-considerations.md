@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /designing-reports-considerations-csv
 reportingArea: General
+components: [General]
 ---
 <style>
 table th:first-of-type {

@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /web-service-data-source-using-parameters
 reportingArea: General
+components: [General]
 ---
 
 # Using Parameters with the WebServiceDataSource Component

@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /standalone-report-designer-localization
 reportingArea: General
+components: [General]
 ---
 
 # Localization Overview

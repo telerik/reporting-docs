@@ -6,6 +6,7 @@ slug: wrd-conditional-formatting
 tags: web, report, design, customize, style, condition, formatting, properties, area 
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 1
 ---
 <style>

@@ -8,6 +8,7 @@ tag: new
 published: True
 position: 85
 reportingArea: General
+components: [General]
 ---
 
 # EntityCoreDataSource Wizard of the Standalone Report Designer for .NET

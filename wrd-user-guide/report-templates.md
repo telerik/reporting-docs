@@ -6,6 +6,7 @@ slug: user-guide-web-report-designer-report-templates
 tags: web, report, designer, wrd, report, template, trtx
 published: True 
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 9 
 ---
 

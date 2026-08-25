@@ -7,6 +7,7 @@ tags: aiclient,element,ai
 published: True
 position: 13
 reportingArea: General
+components: [General]
 ---
 
 <style>

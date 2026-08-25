@@ -8,6 +8,7 @@ published: True
 position: 99
 previous_url: /sql-datasource-query-designer,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer
 reportingArea: General
+components: [General]
 ---
 
 # Standalone Designer's Query Designer

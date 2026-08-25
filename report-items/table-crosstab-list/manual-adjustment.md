@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, crosstab, manual, configuration, config
 published: True
 position: 3
 reportingArea: General
+components: [General]
 ---
 
 # Manually Adjusting the Crosstab

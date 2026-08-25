@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /designing-reports-reportbook-win-viewer
 reportingArea: General
+components: [General]
 ---
 
 # How to Use ReportBook in Windows Forms Apps

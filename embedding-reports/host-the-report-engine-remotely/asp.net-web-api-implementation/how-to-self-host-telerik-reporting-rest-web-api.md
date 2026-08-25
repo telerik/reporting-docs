@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: self, host,telerik, reporting, rest, web,api
 published: True
 reportingArea: RESTService
+components: [RESTService]
 position: 3
 previous_url: /telerik-reporting-rest-host-http-service-using-self-hosting,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api
 ---

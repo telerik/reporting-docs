@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, templates
 published: True
 position: 4
 reportingArea: General
+components: [General]
 ---
 
 # Template Variations of the Table Report Item

@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, graph, getting, started
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Getting Started with the Graph Report Item

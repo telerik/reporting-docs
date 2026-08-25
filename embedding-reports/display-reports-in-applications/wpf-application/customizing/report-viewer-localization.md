@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: report,viewer,localization
 published: True
 reportingArea: WPF
+components: [WPF]
 position: 1
 previous_url: /report-viewer-localization2, /embedding-reports/display-reports-in-applications/wpf-application/report-viewer-localization
 ---

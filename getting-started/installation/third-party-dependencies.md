@@ -8,6 +8,7 @@ tags: third-party,dependencies
 published: True
 position: 7
 reportingArea: General
+components: [General]
 ---
 
 # External Dependencies for Enriched Functionality

@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /report-viewers-interactive-print-view
 reportingArea: General
+components: [General]
 ---
 
 # Interactive and Print Layouts Overview

@@ -6,6 +6,7 @@ slug: user-guide/components/report-items
 tags: telerik, reporting, report, items, components, building blocks, visualization
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 1
 ---
 

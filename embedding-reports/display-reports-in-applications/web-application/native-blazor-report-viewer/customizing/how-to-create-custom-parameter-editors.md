@@ -6,6 +6,7 @@ slug: telerikreporting/embedding-reports/display-reports-in-applications/web-app
 tags: custom,editor,widget,parameter,blazor
 published: True
 reportingArea: NativeBlazor
+components: [NativeBlazor]
 position: 3
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing/
 ---

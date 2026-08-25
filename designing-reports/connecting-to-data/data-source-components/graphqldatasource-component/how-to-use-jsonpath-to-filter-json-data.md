@@ -6,6 +6,7 @@ slug: graphqldatasource-filter-json-data
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Using JSONPath to Filter JSON data

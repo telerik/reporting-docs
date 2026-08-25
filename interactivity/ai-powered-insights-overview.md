@@ -9,6 +9,7 @@ published: True
 position: 1
 previous_url: /interactivity/ai-powered-insights
 reportingArea: General
+components: [General]
 ---
 
 # AI-Powered Insights Overview

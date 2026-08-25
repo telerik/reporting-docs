@@ -8,6 +8,7 @@ published: True
 position: 17
 previous_url: /ui-style-builder
 reportingArea: General
+components: [General]
 ---
 
 # Style Builder Dialog of the Report Designer

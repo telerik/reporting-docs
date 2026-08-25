@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,implement,a,report,definition,storage
 published: True
 reportingArea: WRDRestService, WRDRestServiceCore
+components: [WRDRestService, WRDRestServiceCore]
 position: 7
 previous_url: /how-to-implement-a-report-definition-storage
 ---

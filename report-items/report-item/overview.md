@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /report-items/report-item/
 reportingArea: General
+components: [General]
 ---
 
 # Report Item Overview

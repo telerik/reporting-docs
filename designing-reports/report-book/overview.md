@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /designing-reports-general-explanation, /designing-reports/report-book/
 reportingArea: General
+components: [General]
 ---
 
 # Report Book Overview

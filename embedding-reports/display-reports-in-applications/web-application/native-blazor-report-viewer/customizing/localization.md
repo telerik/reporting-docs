@@ -6,6 +6,7 @@ slug: telerikreporting/embedding-reports/display-reports-in-applications/web-app
 tags: localization,blazor
 published: True
 reportingArea: NativeBlazor
+components: [NativeBlazor]
 position: 2
 ---
 

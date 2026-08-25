@@ -7,6 +7,7 @@ tags: MySQL,data,provider
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Using MySQL Connector in Reporting

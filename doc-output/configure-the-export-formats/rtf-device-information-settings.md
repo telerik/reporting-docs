@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /device-information-settings-rtf
 reportingArea: General
+components: [General]
 ---
 
 <style>

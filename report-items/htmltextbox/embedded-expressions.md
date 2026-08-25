@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, embedded, expressions, mai
 published: True
 position: 6
 reportingArea: General
+components: [General]
 ---
 
 # Embedded Expressions in HtmlTextBox

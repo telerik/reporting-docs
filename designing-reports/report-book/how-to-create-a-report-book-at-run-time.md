@@ -8,6 +8,7 @@ published: True
 position: 6
 previous_url: /designing-reports-reportbook-creating-reportbook-run-time
 reportingArea: General
+components: [General]
 ---
 
 # How to Create a Report Book at Runtime

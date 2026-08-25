@@ -8,6 +8,7 @@ published: True
 position: 20
 previous_url: /interactive-sorting-action-crosstab-total
 reportingArea: General
+components: [General]
 ---
 
 # Ordering the Crosstab Total

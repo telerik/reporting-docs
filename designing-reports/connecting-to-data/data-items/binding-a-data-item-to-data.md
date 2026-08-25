@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /data-items-binding-a-data-item-to-data
 reportingArea: General
+components: [General]
 ---
 
 # Binding a Data Item to Data

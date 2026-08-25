@@ -8,6 +8,7 @@ published: True
 position: 6
 previous_url: /expressions-report-parameters
 reportingArea: General
+components: [General]
 ---
 
 # Expressions in Report Parameters

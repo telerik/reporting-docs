@@ -7,6 +7,7 @@ tags: telerik, reporting, security, best, practices
 published: True
 position: 4
 reportingArea: General
+components: [General]
 ---
 
 # Security Best Practices

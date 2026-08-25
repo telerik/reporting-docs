@@ -7,6 +7,7 @@ tags: get,started,video,onboarding,classroom,course,learning
 published: true
 position: 3
 reportingArea: General
+components: [General]
 ---
 
 # Video Onboarding for Telerik Reporting

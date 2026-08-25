@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: reports, controller, aspnet
 published: True
 reportingArea: RESTService
+components: [RESTService]
 position: 4
 previous_url: /telerik-reporting-rest-implementing-http-service,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application
 ---

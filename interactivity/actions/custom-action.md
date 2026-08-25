@@ -8,6 +8,7 @@ published: True
 position: 70
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action, /designing-reports-interactivity-custom-action, /designing-reports-interactivity-how-to-add-custom-action
 reportingArea: General
+components: [General]
 ---
 
 # Custom Actions Overview

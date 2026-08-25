@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how, use, redis, storage, tutorial
 published: True
 reportingArea: RESTService, RESTServiceCore
+components: [RESTService, RESTServiceCore]
 position: 2
 previous_url: /telerik-reporting-rest-howto-use-redis-storage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage
 ---

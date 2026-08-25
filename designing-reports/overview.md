@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /creating-the-report, /designing-reports/
 reportingArea: General
+components: [General]
 ---
 
 # Creating Reports Overview

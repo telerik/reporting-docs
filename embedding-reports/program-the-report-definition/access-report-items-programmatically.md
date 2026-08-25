@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /faq-accessing-items
 reportingArea: General
+components: [General]
 ---
 
 # Access Report Items Programmatically

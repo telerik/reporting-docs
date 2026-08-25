@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /expressions-user-functions
 reportingArea: General
+components: [General]
 ---
 
 # Custom User Functions Overview

@@ -7,6 +7,7 @@ tags: shared,data,source,web,report,designer,design,create,report,web
 published: True
 tag: new
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 8
 ---
 <style>

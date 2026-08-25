@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /report-items/barcode/2d-barcodes/
 reportingArea: General
+components: [General]
 ---
 <style>
 table th:first-of-type {

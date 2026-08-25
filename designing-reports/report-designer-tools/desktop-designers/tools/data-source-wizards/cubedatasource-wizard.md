@@ -8,6 +8,7 @@ published: True
 position: 90
 previous_url: /cubedatasource-wizard
 reportingArea: General
+components: [General]
 ---
 
 # CubeDataSource Wizard of the Report Designer

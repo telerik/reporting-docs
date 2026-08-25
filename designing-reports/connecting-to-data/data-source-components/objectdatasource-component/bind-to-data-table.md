@@ -8,6 +8,7 @@ published: True
 position: 11
 previous_url: /object-data-source-how-to-bind-to-data-table
 reportingArea: General
+components: [General]
 ---
 
 # Binding ObjectDataSource Component to a DataTable

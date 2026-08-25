@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: angular,report,viewer,overview
 published: True
 reportingArea: AngularWrapper
+components: [AngularWrapper]
 position: 0
 previous_url: /angular-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/
 ---

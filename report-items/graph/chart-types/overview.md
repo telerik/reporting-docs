@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /ChartTypes, /report-items/graph/chart-types/
 reportingArea: General
+components: [General]
 ---
 
 # Chart Types Overview

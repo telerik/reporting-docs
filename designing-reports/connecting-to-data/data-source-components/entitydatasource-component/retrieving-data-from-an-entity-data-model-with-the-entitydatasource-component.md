@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /entitydatasource-retrieving-data-from-an-entity-data-model
 reportingArea: General
+components: [General]
 ---
 
 # Retrieving Data from an Entity Data Model with the EntityDataSource Component

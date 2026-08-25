@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, radial, gauge, properties
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Using the Radial Gauge Report Item

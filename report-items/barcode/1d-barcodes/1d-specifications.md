@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, 1d, barcodes, specifications, settings,
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 <style>

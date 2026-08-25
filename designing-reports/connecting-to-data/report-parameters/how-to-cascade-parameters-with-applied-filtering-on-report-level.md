@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /designing-reports-parameters-cascading-report-parameters
 reportingArea: General
+components: [General]
 ---
 
 # Cascade Parameters with Applied Filtering on Report Level

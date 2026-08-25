@@ -8,6 +8,7 @@ published: False
 position: 4
 previous_url: /how-to-sqlDataSource-oracle
 reportingArea: General
+components: [General]
 ---
 
 # How to Connect to an Oracle Database

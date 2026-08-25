@@ -8,6 +8,7 @@ published: True
 position: 15
 previous_url: /ui-choose-reportsource, /designing-reports/report-designer-tools/desktop-designers/tools/
 reportingArea: General
+components: [General]
 ---
 
 # Edit Report Source Dialog of the Report Designer

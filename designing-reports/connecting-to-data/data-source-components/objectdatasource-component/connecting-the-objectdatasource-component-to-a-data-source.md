@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /objectdatasource-connecting
 reportingArea: General
+components: [General]
 ---
 
 # Connecting the ObjectDataSource Component to a Data Source

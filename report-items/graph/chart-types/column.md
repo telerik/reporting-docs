@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, graph, column, chart, overview, creatin
 previous_url: /ColumnCharts, /GraphHowToCreateColumnChart, /report-items/graph/chart-types/column-charts/overview, /report-items/graph/chart-types/column-charts/how-to-create-column-chart
 published: True
 reportingArea: General
+components: [General]
 ---
 
 # Creating and Customizing Column Charts

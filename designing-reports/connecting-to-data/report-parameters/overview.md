@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /designing-reports-parameters, /designing-reports/connecting-to-data/report-parameters/
 reportingArea: General
+components: [General]
 ---
 
 # Report Parameters Overview

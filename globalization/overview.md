@@ -8,6 +8,7 @@ tags: report,globalization,culture
 published: True
 position: 11
 reportingArea: General
+components: [General]
 ---
 
 # Report Globalization Overview

@@ -8,6 +8,7 @@ tags: telerik, reporting, embedding, reports, cache, management, system, overvie
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Cache Management System Overview

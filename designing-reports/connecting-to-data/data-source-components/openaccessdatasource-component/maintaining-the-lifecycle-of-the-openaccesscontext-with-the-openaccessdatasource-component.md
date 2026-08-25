@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /openaccessdatasource-maintaining-the-lifecycle-of-the-openaccesscontext
 reportingArea: General
+components: [General]
 ---
 
 # Maintaining the Lifecycle of the OpenAccessContext with the OpenAccessDataSource Component

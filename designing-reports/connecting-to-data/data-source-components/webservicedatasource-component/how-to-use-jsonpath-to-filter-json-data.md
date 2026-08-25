@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /how-to-use-jsonpath
 reportingArea: General
+components: [General]
 ---
 
 # Using JSONPath to Filter JSON data

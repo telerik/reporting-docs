@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /cubedatasource-configuring-project
 reportingArea: General
+components: [General]
 ---
 
 # Configurations for using Microsoft Analysis Services

@@ -63,7 +63,12 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 ## Adding the Native Blazor Report Viewer Component Manually
 
 1. Add NuGet package reference to the **Telerik.ReportViewer.BlazorNative** package hosted on the Progress Telerik proprietary NuGet feed. Ensure that the Telerik NuGet feed is added to the NuGet Package Sources by following [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
-1. Use the configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET {{site.mindotnetversion}}+ with Top Level Statements is used) file to enable serving static files:
+1. Modify the `Startup.cs` (or `Program.cs` if .NET {{site.mindotnetversion}}+ with Top Level Statements is used) file as follows:
+   - Add the registration for [Telerik Blazor Service](https://www.telerik.com/blazor-ui/documentation/getting-started/workflow-details#service):
+
+   {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=RegisterTelerikUIForBlazorService}}
+     
+   - Enable static files serving:
 
    {{source=CodeSnippets\Blazor\Docs\ProgramWithConfigSection.cs region=UseStaticFiles}}
 

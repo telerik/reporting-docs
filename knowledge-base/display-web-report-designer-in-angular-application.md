@@ -2,9 +2,9 @@
 title: Integrate the Web Report Designer in Angular
 description: "Learn how to embed the Telerik Reporting Web Report Designer in an Angular application in this step-by-step tutorial."
 type: how-to
-page_title: Displaying the Web Report Designer in Angular application
+page_title: Displaying the Web Report Designer in Angular applications
 slug: display-web-report-designer-in-angular-application
-tags: angular,web,designer
+tags: angular, web, designer
 ticketid: 1462933
 res_type: kb
 ---
@@ -164,9 +164,10 @@ Keep the following limitations in mind when using the Telerik Web Report Designe
 
 1. Theming limitations—The [Telerik Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) does not support custom theming. It uses a customized version of the Kendo SASS Default theme that loads automatically. If your Angular application uses a different Kendo theme, style conflicts may occur between the two themes.
 
-1. Duplicate CSS resources—The Web Report Designer automatically loads its required CSS styles each time it is initialized, without checking if they are already present. This can result in duplicate `<style>` tags in your page's `<head>`. If you need to reinitialize the designer multiple times in your application, you may need to manually remove duplicate style elements. See the demo project's `designer.component.ts` file for implementation details.
+	> tip Starting with the [Progress® Telerik® Reporting 2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)) release, custom theming is now supported in the Web Report Designer. See the [Styling the Web Report Designer](slug:styling-the-web-report-designer) article for instructions on how to use a custom theme.	
 
-1. Angular Report Viewer compatibility—The Telerik Web Report Designer cannot coexist with the [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) in the same Angular application. While the designer includes its own built-in report viewer, if you need a standalone report viewer component, use either the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) or the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) instead.
+2. Duplicate CSS resources—The Web Report Designer automatically loads its required CSS styles each time it is initialized, without checking if they are already present. This can result in duplicate `<style>` tags in your page's `<head>`. If you need to reinitialize the designer multiple times in your application, you may need to manually remove duplicate style elements. See the demo project's `designer.component.ts` file for implementation details.
+3. Angular Report Viewer compatibility—The Telerik Web Report Designer cannot coexist with the [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) in the same Angular application. While the designer includes its own built-in report viewer, if you need a standalone report viewer component, use either the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) or the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) instead.
 
 ## See Also
 

@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, group, editor
 published: True
 position: 8
 reportingArea: General
+components: [General]
 ---
 
 # Group Editor of the Table

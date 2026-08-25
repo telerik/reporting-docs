@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: apply,interactive,action,on,document
 published: True
 reportingArea: RESTService, RESTServiceCore
+components: [RESTService, RESTServiceCore]
 position: 6
 previous_url: /telerik-reporting-rest-documents-api-apply-interactive-action,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/apply-interactive-action-on-document
 ---

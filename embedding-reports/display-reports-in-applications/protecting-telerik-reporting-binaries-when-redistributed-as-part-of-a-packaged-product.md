@@ -8,6 +8,7 @@ published: False
 position: 10
 previous_url: /installation-protecting-assemblies
 reportingArea: General
+components: [General]
 ---
 
 # Protecting Telerik Reporting binaries when redistributed as part of a packaged product

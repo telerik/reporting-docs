@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /configuring-telerik-reporting-fontlibrary
 reportingArea: General
+components: [General]
 ---
 <style>
 table th:first-of-type {

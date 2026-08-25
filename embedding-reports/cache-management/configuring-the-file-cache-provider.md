@@ -8,6 +8,7 @@ tags: telerik, reporting, embedding, reports, cache, management, configuring, fi
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Configuring the File Cache Provider

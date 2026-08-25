@@ -7,6 +7,7 @@ tags: web,designer,report,navigate,action,shareddatasource
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Implement a Common Master-Detail Report Scenario

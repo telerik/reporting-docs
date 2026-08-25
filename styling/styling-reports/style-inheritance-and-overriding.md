@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /style-style-inheritence-priorty-overriding
 reportingArea: General
+components: [General]
 ---
 
 # Style Inheritance and Overriding

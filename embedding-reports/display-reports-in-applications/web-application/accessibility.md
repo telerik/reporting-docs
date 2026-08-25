@@ -8,6 +8,7 @@ published: True
 position: 10
 previous_url: /html5-report-viewers-accessibility-support
 reportingArea: General
+components: [General]
 ---
 
 <style>

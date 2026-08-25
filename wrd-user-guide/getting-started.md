@@ -6,6 +6,7 @@ slug: web-report-designer-user-guide-getting-started
 tags: web, report, design, tool, create, started 
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 2
 ---
 

@@ -7,6 +7,7 @@ tags: how,to,add,the,telerik,cdn,reportviewer,script
 published: True
 position: 9
 reportingArea: General
+components: [General]
 ---
 
 # HTML5 Report Viewer and Web Report Designer Assets

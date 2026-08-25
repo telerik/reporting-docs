@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /datadirect-odbc-drivers
 reportingArea: General
+components: [General]
 ---
 
 # Connect to Data Sources with the DataDirect ODBC Drivers

@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /ui-crosstab-table-wizard
 reportingArea: General
+components: [General]
 ---
 
 # Table and CrossTab Wizards of the Report Designer

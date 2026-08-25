@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, barcode, 2d, data, matrix, overview, se
 published: True
 position: 4
 reportingArea: General
+components: [General]
 ---
 
 <style>

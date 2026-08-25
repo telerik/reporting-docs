@@ -9,6 +9,7 @@ published: True
 position: 3
 previous_url: /expressions-global-objects
 reportingArea: General
+components: [General]
 ---
 
 # Global Objects Overview

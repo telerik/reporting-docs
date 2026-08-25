@@ -7,6 +7,7 @@ tags: typeReferences, element, user, function, ObjectDataSource
 published: True
 position: 11
 reportingArea: General
+components: [General]
 ---
 
 <style>

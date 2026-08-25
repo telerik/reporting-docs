@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: methods,and,commands,blazor,report,viewer
 published: True
 reportingArea: BlazorWrapper
+components: [BlazorWrapper]
 position: 3
 previous_url: /blazor-report-viewer-methods-and-commands
 ---

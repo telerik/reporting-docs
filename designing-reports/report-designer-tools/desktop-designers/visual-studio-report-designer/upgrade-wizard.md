@@ -8,6 +8,7 @@ published: True
 position: 31
 previous_url: /ui-upgrade-wizard
 reportingArea: General
+components: [General]
 ---
 
 # Upgrade Wizard Overview

@@ -7,6 +7,7 @@ tags: license, key, telerik, reporting, licensing
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Setting Up Your Telerik Reporting License Key

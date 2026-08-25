@@ -8,6 +8,7 @@ published: True
 position: 12
 previous_url: /object-data-source-how-to-bind-to-data-view
 reportingArea: General
+components: [General]
 ---
 
 # Binding ObjectDataSource Component to a DataView

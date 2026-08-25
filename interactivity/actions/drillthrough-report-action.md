@@ -8,6 +8,7 @@ tags: drillthrough,report,action
 published: True
 position: 30
 reportingArea: General
+components: [General]
 ---
 
 # Drillthrough/Navigate To Report Action

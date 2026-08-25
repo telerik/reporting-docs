@@ -8,6 +8,7 @@ published: False
 position: 5
 previous_url: /how-to-sqlDataSource-mySql
 reportingArea: General
+components: [General]
 ---
 
 # How to Connect to MySQL Database

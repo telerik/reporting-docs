@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /programmatic-creating-sections
 reportingArea: General
+components: [General]
 ---
 
 # Create Sections Programmatically

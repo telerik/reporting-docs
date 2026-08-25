@@ -8,6 +8,7 @@ tag: updated
 published: True
 position: 8
 reportingArea: General
+components: [General]
 ---
 
 # Troubleshoot License Problems

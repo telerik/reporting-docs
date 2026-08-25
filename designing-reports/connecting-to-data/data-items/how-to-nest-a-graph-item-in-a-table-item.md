@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /data-items-how-to-nest-Graph-in-Table
 reportingArea: General
+components: [General]
 ---
 
 # Hosting a Graph Item in a Table

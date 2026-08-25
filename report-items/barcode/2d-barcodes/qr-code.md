@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, barcode, 2d, qr, code, overview
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Configuring the Barcode QR Code in Reports

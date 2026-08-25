@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, legend, customize, style, format
 previous_url: /MapFormattingLegend, /MapFormattingAMap, /report-items/map/formatting-a-map/overview 
 published: True
 reportingArea: General
+components: [General]
 ---
 
 # Customizing Map Legend

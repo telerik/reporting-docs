@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, barcode, 2d, swiss, qr, code, overview
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Configuring the Swiss QR Code in Reports

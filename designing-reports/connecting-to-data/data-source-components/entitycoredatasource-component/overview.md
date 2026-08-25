@@ -8,6 +8,7 @@ tag: new
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # EntityCoreDataSource Component Overview

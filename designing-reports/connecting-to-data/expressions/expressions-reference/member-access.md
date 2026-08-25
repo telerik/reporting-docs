@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /expressions-member-access
 reportingArea: General
+components: [General]
 ---
 
 # Accessing Members

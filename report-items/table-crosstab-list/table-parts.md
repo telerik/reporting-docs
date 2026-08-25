@@ -8,6 +8,7 @@ previous_url: /table-understanding-cells-rows-columns, /report-items/table-cross
 published: True
 position: 6
 reportingArea: General
+components: [General]
 ---
 
 # Table Cells, Rows, and Columns

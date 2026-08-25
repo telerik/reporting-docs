@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /expressions-bindings
 reportingArea: General
+components: [General]
 ---
 
 # Bindings Overview

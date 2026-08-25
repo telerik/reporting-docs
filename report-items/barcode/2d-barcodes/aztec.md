@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, barcode, 2d, aztec, overview, settings
 published: True
 position: 6
 reportingArea: General
+components: [General]
 ---
 
 # Configuring the Aztec Code Barcode in Reports

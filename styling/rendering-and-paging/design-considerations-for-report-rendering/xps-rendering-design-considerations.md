@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /designing-reports-considerations-xps
 reportingArea: General
+components: [General]
 ---
 
 # Design Considerations for the XPS Rendering

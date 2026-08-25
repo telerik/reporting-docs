@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /data-items-how-to-add-sorting-to-table-item-and-crosstab-item
 reportingArea: General
+components: [General]
 ---
 
 # Add Sorting to Table and Crosstab Items

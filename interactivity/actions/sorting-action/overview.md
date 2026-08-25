@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /conditional_visibility_and_other_interactive_features, /interactive-sorting-action, /interactivity/actions/sorting-action/
 reportingArea: General
+components: [General]
 ---
 
 # Sorting Action Overview

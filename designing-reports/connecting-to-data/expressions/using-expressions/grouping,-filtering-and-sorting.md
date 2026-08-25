@@ -10,6 +10,7 @@ previous_url:
 - /expressions-grouping-filtering-sorting
 - /designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting
 reportingArea: General
+components: [General]
 ---
 
 # Grouping, Filtering and Sorting with Expressions

@@ -8,6 +8,7 @@ published: True
 position: 8
 previous_url: /device-information-settings-xps
 reportingArea: General
+components: [General]
 ---
 
 <style>

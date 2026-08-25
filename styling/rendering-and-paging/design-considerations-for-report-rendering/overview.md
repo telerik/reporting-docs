@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /designing-reports-considerations-overview, /styling/rendering-and-paging/design-considerations-for-report-rendering/
 reportingArea: General
+components: [General]
 ---
 
 # Overview of the Design Considerations for Report Rendering

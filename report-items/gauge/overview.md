@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /report-items/gauge/
 reportingArea: General
+components: [General]
 ---
 
 # Gauge Report Item Overview

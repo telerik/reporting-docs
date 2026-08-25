@@ -6,6 +6,7 @@ slug: graphqldatasource
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 <style>

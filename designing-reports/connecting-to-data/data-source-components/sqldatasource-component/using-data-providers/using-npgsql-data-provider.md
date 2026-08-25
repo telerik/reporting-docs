@@ -7,6 +7,7 @@ tags: Npgsql,data,provider,PostgreSQL
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Using Npgsql in Reporting

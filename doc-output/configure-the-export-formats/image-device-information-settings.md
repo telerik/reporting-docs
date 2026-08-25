@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /device-information-settings-image
 reportingArea: General
+components: [General]
 ---
 
 <style>

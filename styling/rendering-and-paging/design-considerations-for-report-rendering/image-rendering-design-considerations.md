@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /designing-reports-considerations-image
 reportingArea: General
+components: [General]
 ---
 
 # Design Considerations for the Image Rendering

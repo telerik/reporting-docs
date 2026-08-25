@@ -6,6 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: authenticationtoken(token)
 published: false
 reportingArea: HTML5
+components: [HTML5]
 position: 3
 previous_url: /html5-report-viewer-reportviewer-methods-authenticationtoken, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)
 ---

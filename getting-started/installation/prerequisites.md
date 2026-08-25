@@ -7,6 +7,7 @@ tags: telerik, reporting, prerequisites, system, requirements
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # List of Prerequisites

@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /crystal-reports-converter
 reportingArea: General
+components: [General]
 ---
 
 # Converting SAP Crystal Reports

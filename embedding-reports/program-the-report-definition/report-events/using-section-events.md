@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /using-section-events
 reportingArea: General
+components: [General]
 ---
 
 # Using the Events of the Sections

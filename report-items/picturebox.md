@@ -8,6 +8,7 @@ published: True
 position: 9
 previous_url: /report-items-picture-box, /designing-reports/report-structure/picturebox
 reportingArea: General
+components: [General]
 ---
 
 <style>

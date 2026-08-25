@@ -8,6 +8,7 @@ published: True
 position: 13
 previous_url: /device-information-settings-powerpoint
 reportingArea: General
+components: [General]
 ---
 
 <style>

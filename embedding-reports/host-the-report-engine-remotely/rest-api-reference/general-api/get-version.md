@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get, version
 published: True
 reportingArea: RESTService, RESTServiceCore
+components: [RESTService, RESTServiceCore]
 position: 2
 previous_url: /embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api/
 ---

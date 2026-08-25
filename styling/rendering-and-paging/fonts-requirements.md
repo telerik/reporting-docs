@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /rendering-fonts-in-reports
 reportingArea: General
+components: [General]
 ---
 
 # Fonts Requirements Overview

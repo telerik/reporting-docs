@@ -6,6 +6,7 @@ slug: native-blazor-report-viewer/toolbar-customization
 tags: custom,editor,widget,blazor,toolbar,menu
 published: True
 reportingArea: NativeBlazor
+components: [NativeBlazor]
 position: 4
 ---
 

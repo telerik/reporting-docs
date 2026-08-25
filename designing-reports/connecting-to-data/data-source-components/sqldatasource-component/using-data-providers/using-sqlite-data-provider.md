@@ -7,6 +7,7 @@ tags: System.Data.SQLite,SQLite,data,provider
 published: True
 position: 5
 reportingArea: General
+components: [General]
 ---
 
 # Using SQLite in Reporting

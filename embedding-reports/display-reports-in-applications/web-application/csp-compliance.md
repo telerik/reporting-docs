@@ -8,6 +8,7 @@ tag: new
 published: True
 position: 13
 reportingArea: General
+components: [General]
 ---
 
 # Content Security Policy (CSP) Compliance for HTML5-Based Report Viewers

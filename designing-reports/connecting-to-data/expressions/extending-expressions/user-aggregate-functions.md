@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /expressions-user-aggregate-functions
 reportingArea: General
+components: [General]
 ---
 
 # Custom User Aggregate Functions

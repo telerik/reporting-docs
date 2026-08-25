@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /report-items-barcode-general, /report-items/barcode/
 reportingArea: General
+components: [General]
 ---
 
 # Barcode Report Item Overview

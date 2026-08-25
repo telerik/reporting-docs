@@ -8,6 +8,7 @@ tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
 published: True
 position: 5
 reportingArea: General
+components: [General]
 ---
 
 <style> img[alt$="><"] { border: 1px solid lightgrey; } </style>

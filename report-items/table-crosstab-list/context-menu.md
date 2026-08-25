@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, table, crosstab, list, context, menu
 published: True
 position: 7
 reportingArea: General
+components: [General]
 ---
 
 # Using the Table Context Menu

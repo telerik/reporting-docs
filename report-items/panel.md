@@ -8,6 +8,7 @@ published: True
 position: 8
 previous_url: /report-items-panel, /reportitemspanel
 reportingArea: General
+components: [General]
 ---
 
 # Panel Report Item Overview

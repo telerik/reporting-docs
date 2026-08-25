@@ -7,6 +7,7 @@ tags: html5,report,viewer,in,asp.net,core
 published: False
 position: 8
 reportingArea: General
+components: [General]
 ---
 
 # HTML5 Report Viewer in ASP.NET Core

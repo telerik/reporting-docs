@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, Linear, gauge, properties
 published: True
 position: 2
 reportingArea: General
+components: [General]
 ---
 
 # Using the Linear Gauge Report Item

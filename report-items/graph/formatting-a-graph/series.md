@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, graph, styling, formatting, series
 published: True
 previous_url: /GraphFormatSeries
 reportingArea: General
+components: [General]
 ---
 
 # Series of the Graph

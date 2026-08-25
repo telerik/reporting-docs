@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /expressions-property-values
 reportingArea: General
+components: [General]
 ---
 
 # Expressions as Values of Item Properties

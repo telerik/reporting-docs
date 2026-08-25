@@ -8,6 +8,7 @@ published: True
 position: 14
 previous_url: /report-items-text-box
 reportingArea: General
+components: [General]
 ---
 
 # TextBox Report Item Overview

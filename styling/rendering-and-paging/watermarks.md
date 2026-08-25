@@ -8,6 +8,7 @@ published: True
 position: 3
 previous_url: /designing-reports-watermarks
 reportingArea: General
+components: [General]
 ---
 
 # Report Watermarks

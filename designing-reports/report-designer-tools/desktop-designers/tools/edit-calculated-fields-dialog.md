@@ -8,6 +8,7 @@ published: True
 position: 12
 previous_url: /ui-calculated-fields
 reportingArea: General
+components: [General]
 ---
 
 # Edit Calculated Fields Dialog of the Report Designer

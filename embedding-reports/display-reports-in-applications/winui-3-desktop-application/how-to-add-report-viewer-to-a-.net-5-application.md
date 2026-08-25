@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /winui-report-viewer-how-to-add-in-net5-app
 reportingArea: General
+components: [General]
 ---
 
 # Integrating the WinUI Report Viewer in .NET {{site.mindotnetversion}}

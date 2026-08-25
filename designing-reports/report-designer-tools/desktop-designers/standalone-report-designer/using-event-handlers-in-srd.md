@@ -7,6 +7,7 @@ tags: crating,using,event,handlers,standalone,report,designer
 published: True
 position: 8
 reportingArea: General
+components: [General]
 ---
 
 # Using event handlers in the Standalone Report Designer

@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, subreport
 published: True
 position: 12
 reportingArea: General
+components: [General]
 ---
 
 # SubReport Item Overview

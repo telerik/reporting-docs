@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /installation-upgrading-newer-version, /installation-upgrading-newer_version, /upgradepathoverview, /upgrade/
 reportingArea: General
+components: [General]
 ---
 
 # Upgrading Telerik Reporting

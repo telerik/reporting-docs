@@ -8,6 +8,7 @@ published: True
 position: 6
 previous_url: /report-packaging-trdp
 reportingArea: General
+components: [General]
 ---
 
 # Packaging and Unpackaging Report Definitions

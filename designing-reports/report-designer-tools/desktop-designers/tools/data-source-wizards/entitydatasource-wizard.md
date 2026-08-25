@@ -8,6 +8,7 @@ published: True
 position: 80
 previous_url: /entitydatasource-wizard
 reportingArea: General
+components: [General]
 ---
 
 # EntityDataSource Wizard of the Report Designer

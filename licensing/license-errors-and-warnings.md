@@ -7,6 +7,7 @@ tags: license, telerik, reporting, questions, errors, warnings
 published: True
 position: 7
 reportingArea: General
+components: [General]
 ---
 
 # License Activation Errors and Warnings

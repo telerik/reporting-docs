@@ -6,6 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: command
 published: false
 reportingArea: HTML5
+components: [HTML5]
 position: 7
 previous_url: /html5-report-viewer-api-command
 ---

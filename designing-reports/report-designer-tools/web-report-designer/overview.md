@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: overview,web,report,designer,tool,design,create,report,web reporting
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 0
 previous_url: /web-report-designer, /designing-reports/report-designer-tools/web-report-designer/
 ---

@@ -8,6 +8,7 @@ tags: telerik, reporting, embedding, reports, referencing, report, definitions, 
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Referencing Report Definitions in Applications

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,pass,values,to,report,parameters,in,native,angular,report,viewer
 published: True
 reportingArea: NativeAngular
+components: [NativeAngular]
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/
 ---

@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /ui-report-designer, /designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/, /reportitemsinplaceeditor
 reportingArea: General
+components: [General]
 ---
 
 # Visual Studio Report Designer Overview

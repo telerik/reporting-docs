@@ -8,6 +8,7 @@ previous_url: /report-items-html-text-box, /report-items/htmltextbox/
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 <style>

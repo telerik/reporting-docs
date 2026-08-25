@@ -8,6 +8,7 @@ published: True
 position: 40
 previous_url: /interactive-sorting-action-graph
 reportingArea: General
+components: [General]
 ---
 
 # Ordering the Graph Report Item

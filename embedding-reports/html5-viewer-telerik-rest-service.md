@@ -8,6 +8,7 @@ tags: telerik, reporting, embedding, reports, html5, report, viewer, reporting, 
 published: True
 position: 3
 reportingArea: General
+components: [General]
 ---
 
 # Telerik Report Viewer and Telerik Reporting REST Service

@@ -8,6 +8,7 @@ published: True
 position: 10
 previous_url: /ui-edit-grouping
 reportingArea: General
+components: [General]
 ---
 
 # Edit Grouping Dialog of the Report Designer

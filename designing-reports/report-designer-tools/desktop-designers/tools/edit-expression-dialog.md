@@ -8,6 +8,7 @@ published: True
 position: 7
 previous_url: /ui-edit-expression
 reportingArea: General
+components: [General]
 ---
 
 # Edit Expression Dialog of the Report Designer

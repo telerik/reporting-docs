@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /configuring-telerik-reporting-extensions
 reportingArea: General
+components: [General]
 ---
 <style>
 table th:first-of-type {

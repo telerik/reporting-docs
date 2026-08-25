@@ -7,6 +7,7 @@ tags: integration, vscode, report, viewer, angular
 published: True
 position: 1
 reportingArea: General
+components: [General]
 ---
 
 # Visual Studio Code Integration

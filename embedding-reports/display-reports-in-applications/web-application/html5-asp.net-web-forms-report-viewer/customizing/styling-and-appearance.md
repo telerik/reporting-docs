@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: styling,and,appearance
 published: True
 reportingArea: WebFormsWrapper
+components: [WebFormsWrapper]
 position: 1
 previous_url: /html5-webforms-report-viewer-customizing-styling
 ---

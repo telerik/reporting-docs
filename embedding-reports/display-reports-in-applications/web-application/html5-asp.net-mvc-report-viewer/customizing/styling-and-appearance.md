@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: styling,and,appearance
 published: True
 reportingArea: MVCWrapper
+components: [MVCWrapper]
 position: 1
 previous_url: /html5-mvc-report-viewer-customizing-styling-and-appearance
 ---

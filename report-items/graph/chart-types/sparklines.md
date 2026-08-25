@@ -8,6 +8,7 @@ published: True
 position: 90
 previous_url: /SparklinesAndDataBars
 reportingArea: General
+components: [General]
 ---
 
 # Sparklines Charts Overview

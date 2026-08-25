@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /designing-reports-page-layout-rendering-understanding-pagination
 reportingArea: General
+components: [General]
 ---
 
 # Understanding Pagination

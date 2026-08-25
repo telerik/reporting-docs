@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, parallels, and, meridians
 previous_url: /MapFormattingParallelsMeridians
 published: True
 reportingArea: General
+components: [General]
 ---
 
 # Configuring Parallels and Meridians

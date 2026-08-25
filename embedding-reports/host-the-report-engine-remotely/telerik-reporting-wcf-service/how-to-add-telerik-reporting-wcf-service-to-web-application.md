@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,add,telerik,reporting,wcf,service,to,web,application
 published: True
 reportingArea: RESTService
+components: [RESTService]
 position: 1
 previous_url: /silverlight-hosting-in-iis
 ---

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: printing,reports
 published: True
 reportingArea: HTML5
+components: [HTML5]
 position: 8
 previous_url: /html5-report-viewer-direct-print
 ---

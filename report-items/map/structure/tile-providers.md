@@ -7,6 +7,7 @@ tags: telerik, reporting, map, report, item, tile, providers
 previous_url: /MapTileProviders
 published: True
 reportingArea: General
+components: [General]
 ---
 
 # Tile Providers in the Map

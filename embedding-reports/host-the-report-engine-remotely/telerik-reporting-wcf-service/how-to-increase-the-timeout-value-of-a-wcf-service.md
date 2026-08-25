@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,increase,the,timeout,value,of,a,wcf,service
 published: True
 reportingArea: RESTService
+components: [RESTService]
 position: 5
 previous_url: /wcf-report-service-increasing-timeout
 ---

@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /expressions-date-time-functions
 reportingArea: General
+components: [General]
 ---
 
 # Date and Time Functions Overview

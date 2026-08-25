@@ -8,6 +8,7 @@ published: True
 position: 2
 previous_url: /report-items-checkbox
 reportingArea: General
+components: [General]
 ---
 
 # Checkbox Report Item Overview

@@ -8,6 +8,7 @@ tags: telerik, reporting, report, items, graph, styling, formatting, style, reso
 published: True
 position: 0
 reportingArea: General
+components: [General]
 ---
 
 # Propagation of the Graph Series Styles

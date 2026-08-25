@@ -7,6 +7,7 @@ tags: telerik, reporting, report, items, graph, ohlc, chart, overview, candlesti
 previous_url: /OhlcCharts, /GraphHowToCreateOhlcChart, /report-items/graph/chart-types/ohlc-charts/overview, /report-items/graph/chart-types/ohlc-charts/how-to-create-ohlc-chart
 published: True
 reportingArea: General
+components: [General]
 ---
 
 # Creating and Customizing OHLC Charts

@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /connecting-to-data-using-parameters
 reportingArea: General
+components: [General]
 ---
 
 # Using Parameters with Data Source Objects

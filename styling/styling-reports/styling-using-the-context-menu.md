@@ -8,6 +8,7 @@ published: True
 position: 5
 previous_url: /style-styling-context-menu, /stylestylingcontextmenu
 reportingArea: General
+components: [General]
 ---
 
 # Styling items using the Context Menu

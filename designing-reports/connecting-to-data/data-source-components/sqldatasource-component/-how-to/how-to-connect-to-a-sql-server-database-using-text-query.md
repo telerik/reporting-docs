@@ -8,6 +8,7 @@ published: False
 position: 0
 previous_url: /how-to-sqlDataSource-sct-Text
 reportingArea: General
+components: [General]
 ---
 
 # How to Connect to a SQL Server Database Using Text Query

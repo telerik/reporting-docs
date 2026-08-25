@@ -6,6 +6,7 @@ slug: web-report-designer-user-guide-components-tables
 tags: web, report, design, components, table, list, crosstab
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
+components: [WRDHTML5, WRDBlazorWrapper]
 position: 2
 ---
 

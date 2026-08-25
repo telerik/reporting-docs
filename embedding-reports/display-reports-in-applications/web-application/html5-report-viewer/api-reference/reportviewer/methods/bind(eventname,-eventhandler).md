@@ -6,6 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: bind(eventname,,eventhandler)
 published: false
 reportingArea: HTML5
+components: [HTML5]
 position: 4
 previous_url:
 - /html5-report-viewer-reportviewer-methods-bind-en-eh

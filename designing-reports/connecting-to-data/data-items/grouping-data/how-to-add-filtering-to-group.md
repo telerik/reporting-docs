@@ -8,6 +8,7 @@ published: True
 position: 1
 previous_url: /data-items-how-to-add-filtering-to-group
 reportingArea: General
+components: [General]
 ---
 
 # Adding Filtering to Group

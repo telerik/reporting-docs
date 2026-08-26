@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /table-of-contents-report-book
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # How to Add a Table of Contents to Report Book

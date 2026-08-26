@@ -7,7 +7,7 @@ tags: overview,document,map,bookmark
 published: True
 previous_url: /designing-reports-document-map, /designing-reports-interactivity-how-to-add-document-map, /interactivity/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Document Map Overview

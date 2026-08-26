@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: table/crosstab,wizard
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [WRDHTML5, WRDBlazorWrapper]
+components: [wrdhtml5, wrdblazorwrapper]
 position: 2
 previous_url: /web-report-designer-table-crosstab-wizard
 ---

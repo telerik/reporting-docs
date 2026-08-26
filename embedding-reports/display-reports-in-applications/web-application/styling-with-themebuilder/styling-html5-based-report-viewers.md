@@ -7,7 +7,7 @@ tags: styling,html5,viewer,themebuilder
 published: True
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Styling HTML5-Based Report Viewers with ThemeBuilder

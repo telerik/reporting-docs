@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: commands
 published: false
 reportingArea: NativeAngular
-components: [NativeAngular]
+components: [nativeangular]
 position: 1
 ---
 

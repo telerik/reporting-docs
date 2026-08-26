@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: reportsource
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [RESTService, RESTServiceCore]
+components: [restservice, restservicecore]
 position: 9
 previous_url: /telerik-reporting-rest-json-entities-reportsource,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities/
 ---

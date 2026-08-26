@@ -8,7 +8,7 @@ published: True
 position: 10
 previous_url: /interactive-sorting-action-table-details
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Ordering the Table Details

@@ -6,7 +6,7 @@ slug: user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [WRDHTML5, WRDBlazorWrapper]
+components: [wrdhtml5, wrdblazorwrapper]
 position: 0
 ---
 <style>

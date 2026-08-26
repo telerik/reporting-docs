@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /report-viewers-overview, /embedding-reports/display-reports-in-applications/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Displaying Reports Overview

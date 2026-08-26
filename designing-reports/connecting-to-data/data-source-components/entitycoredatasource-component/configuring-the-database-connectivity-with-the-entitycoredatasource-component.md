@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 3
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Configuring the Database Connectivity with the EntityCoreDataSource Component

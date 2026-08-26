@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /datasource-calculated-fields
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Calculated Fields Overview

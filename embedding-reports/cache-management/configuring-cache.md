@@ -8,7 +8,7 @@ tags: telerik, reporting, embedding, reports, cache, management, configuring
 published: True
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

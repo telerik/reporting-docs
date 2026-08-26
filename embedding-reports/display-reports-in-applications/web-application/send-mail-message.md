@@ -8,7 +8,7 @@ published: True
 position: 12
 previous_url: /html5-report-viewer-send-mail
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Send Mail Message in the HTML5-based Report Viewers

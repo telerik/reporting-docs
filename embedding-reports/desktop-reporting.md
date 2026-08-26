@@ -7,7 +7,7 @@ tags: telerik, reporting, reports, desktop, net
 published: True
 position: 95
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Developing Desktop Reporting Applications

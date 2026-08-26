@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 reportingArea: BlazorWrapper
-components: [BlazorWrapper]
+components: [blazorwrapper]
 position: 0
 previous_url: /blazor-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview, /embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/
 ---

@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /expressions-reference, /designing-reports/connecting-to-data/expressions/expressions-reference/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Expressions Reference Overview

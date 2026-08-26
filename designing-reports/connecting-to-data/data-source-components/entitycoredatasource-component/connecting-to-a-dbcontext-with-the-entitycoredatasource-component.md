@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Connecting to a DbContext with the EntityCoreDataSource Component

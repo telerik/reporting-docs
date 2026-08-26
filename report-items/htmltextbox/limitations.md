@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, considerations, known, lim
 published: True
 position: 20
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Known Limitations of the HtmlTextBox

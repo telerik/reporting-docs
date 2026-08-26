@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /winui-report-viewer, /embedding-reports/display-reports-in-applications/winui-3-desktop-application/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # WinUI Report Viewer Overview

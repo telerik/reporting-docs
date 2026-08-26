@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: windows, forms, report, viewer, localization
 published: True
 reportingArea: WinForms
-components: [WinForms]
+components: [winforms]
 position: 4
 previous_url: /report-viewer-localization
 ---

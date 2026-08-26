@@ -8,7 +8,7 @@ published: True
 hidden: True
 position: 8
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Preview Release

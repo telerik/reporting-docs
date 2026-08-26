@@ -7,7 +7,7 @@ tags: telerik, reporting, report, item, properties, settings
 published: True
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Major Properties and Settings of Report Item

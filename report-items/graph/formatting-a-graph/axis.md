@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, styling, formatting, axes, valid
 published: True
 previous_url: /GraphFormattingAxis
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Axes of the Graph

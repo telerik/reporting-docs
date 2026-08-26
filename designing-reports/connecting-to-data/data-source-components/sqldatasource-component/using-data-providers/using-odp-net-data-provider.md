@@ -7,7 +7,7 @@ tags: ODP.NET,data,provider,Oracle
 published: True
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using Oracle Data Provider for .NET in Reporting

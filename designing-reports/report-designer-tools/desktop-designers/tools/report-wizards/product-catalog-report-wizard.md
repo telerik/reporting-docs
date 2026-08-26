@@ -8,7 +8,7 @@ published: True
 position: 5
 previous_url: /ProductCatalogWizardWalkthrough
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Product Catalog Report Wizard of the Report Designer

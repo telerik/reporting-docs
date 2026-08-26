@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /report-events, /embedding-reports/program-the-report-definition/report-events/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Report Events

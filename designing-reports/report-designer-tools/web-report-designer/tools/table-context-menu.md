@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: context, menu, web, designer
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [WRDHTML5, WRDBlazorWrapper]
+components: [wrdhtml5, wrdblazorwrapper]
 position: 9
 ---
 

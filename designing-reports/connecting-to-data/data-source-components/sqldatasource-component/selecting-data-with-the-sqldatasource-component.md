@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /sql-data-source-selecting-data, /how-to-sqldatasource-sct-storedprocedure
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Selecting Data with the SqlDataSource Component

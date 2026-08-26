@@ -8,7 +8,7 @@ published: True
 position: 14
 previous_url: /designing-performance
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Factors Affecting Report Performance

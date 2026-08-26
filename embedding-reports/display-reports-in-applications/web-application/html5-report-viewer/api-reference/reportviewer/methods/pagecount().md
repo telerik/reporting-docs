@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: pagecount()
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 8
 previous_url: /html5-report-viewer-reportviewer-methods-pagecount, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagecount()
 ---

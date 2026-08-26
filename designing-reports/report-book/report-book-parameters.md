@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /designing-reports-reportbook-report-parameters
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Report Book Parameters Overview

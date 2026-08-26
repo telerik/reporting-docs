@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /designing-reports-parameters-cascading-paramerets-filtering-database-level
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Cascade Parameters with Applied Filtering on Data Source Level

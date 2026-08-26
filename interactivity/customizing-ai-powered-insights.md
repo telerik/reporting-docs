@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 4
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Customizing AI-Powered Insights

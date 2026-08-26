@@ -8,7 +8,7 @@ published: True
 position: 41
 previous_url: /troubleshooting-visual-studio-problems
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Troubleshooting Visual Studio Report Designer

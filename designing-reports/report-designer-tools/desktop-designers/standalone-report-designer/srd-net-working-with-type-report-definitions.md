@@ -7,7 +7,7 @@ tags: designing,using,opening,importing,previewing,type,reports,standalone,repor
 published: True
 position: 5
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Coded Reports in the Standalone Report Designer for .NET

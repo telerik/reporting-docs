@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /programmatic-creating-controls
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Create Report Items Programmatically

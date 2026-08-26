@@ -7,7 +7,7 @@ tags: using,parameters,with,the,graphqldatasource,component,inline,query,header,
 published: True
 position: 3
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using Parameters with the GraphQLDataSource Component

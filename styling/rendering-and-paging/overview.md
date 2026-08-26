@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /designing-reports-page-layout-rendering, /styling/rendering-and-paging/, /styling/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 table th:first-of-type {

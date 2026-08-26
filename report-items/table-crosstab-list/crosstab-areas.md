@@ -8,7 +8,7 @@ previous_url: /table-understanding-crosstab-areas, /report-items/table-crosstab-
 published: True
 position: 5
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Overview of the Crosstab Areas

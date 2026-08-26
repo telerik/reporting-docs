@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /EntityDataSource, /designing-reports/connecting-to-data/data-source-components/entitydatasource-component/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # EntityDataSource Component Overview

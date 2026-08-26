@@ -8,7 +8,7 @@ published: True
 position: 16
 previous_url: /asp-net-medium-trust-support
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Medium Trust Support Overview

@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /data-items-how-to-use-data-object
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Expressions with ReportItem.DataObject

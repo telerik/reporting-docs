@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /report-designers, /designing-reports/report-designer-tools/, /uireportdesigner
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Report Designer Tools Overview

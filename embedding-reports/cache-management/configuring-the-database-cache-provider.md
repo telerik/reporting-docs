@@ -8,7 +8,7 @@ tags: telerik, reporting, embedding, reports, cache, management, configuring, da
 published: True
 position: 3
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Configuring the Database Cache Provider

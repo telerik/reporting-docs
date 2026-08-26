@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 10
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [WRDHTML5, WRDBlazorWrapper]
+components: [wrdhtml5, wrdblazorwrapper]
 ---
 
 <style>

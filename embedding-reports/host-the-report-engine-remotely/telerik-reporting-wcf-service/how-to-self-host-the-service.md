@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,self,host,the,service
 published: True
 reportingArea: RESTService
-components: [RESTService]
+components: [restservice]
 position: 2
 previous_url: /self-hosted-telerik-reporting-wcf-service
 ---

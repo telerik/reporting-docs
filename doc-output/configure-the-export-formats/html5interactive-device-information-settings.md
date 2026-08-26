@@ -8,7 +8,7 @@ published: True
 position: 11
 previous_url: /device-information-settings-html5-interactive
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

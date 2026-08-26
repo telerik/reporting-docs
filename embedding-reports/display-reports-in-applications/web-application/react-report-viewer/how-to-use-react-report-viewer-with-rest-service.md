@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how, to, use, react, report, viewer, with, rest, service
 published: True
 reportingArea: React
-components: [React]
+components: [react]
 position: 1
 previous_url: /react-report-viewer-with-rest-service
 ---

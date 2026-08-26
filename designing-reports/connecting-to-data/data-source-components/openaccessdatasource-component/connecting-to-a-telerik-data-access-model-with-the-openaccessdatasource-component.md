@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /openaccessdatasource-connecting-to-an-openaccess-model
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Connecting to a Telerik Data Access Model with the OpenAccessDataSource Component

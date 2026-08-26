@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /OpenAccessDataSource, /designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # OpenAccessDataSource Component Overview

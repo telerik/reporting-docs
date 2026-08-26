@@ -8,7 +8,7 @@ published: True
 position: 60
 previous_url: /interactive-sorting-action-multiple-items
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Ordering Multiple Items/Groups

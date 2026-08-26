@@ -8,7 +8,7 @@ published: True
 position: 10
 previous_url: /expressions-utility-functions
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

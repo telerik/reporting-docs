@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: WebServiceDataSource,wizard
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [WRDHTML5, WRDBlazorWrapper]
+components: [wrdhtml5, wrdblazorwrapper]
 position: 4
 previous_url: /web-report-designer-tools-WebServiceDataSource-wizard
 ---

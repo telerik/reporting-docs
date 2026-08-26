@@ -9,7 +9,7 @@ position: 5
 previous_url: /configuring-telerik-reporting-restreportservice
 
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 table th:first-of-type {

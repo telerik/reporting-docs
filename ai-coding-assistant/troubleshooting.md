@@ -6,7 +6,7 @@ slug: ai-troubleshooting
 tags: AI, troubleshooting, issue
 position: 6
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

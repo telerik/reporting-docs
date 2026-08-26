@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /designing-reports-interactivity-actions, /interactivity/actions/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Actions Overview

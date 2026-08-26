@@ -8,7 +8,7 @@ published: True
 position: 30
 previous_url: /interactive-sorting-action-crosstab-top-level
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Ordering the Crosstab Top-Level Group

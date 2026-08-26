@@ -8,7 +8,7 @@ published: True
 position: 8
 previous_url: /designing-reports-considerations-word
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Design Considerations for the Word Rendering

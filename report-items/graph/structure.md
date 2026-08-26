@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /GraphStructure
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Composition and Functionality of the Graph Report Item

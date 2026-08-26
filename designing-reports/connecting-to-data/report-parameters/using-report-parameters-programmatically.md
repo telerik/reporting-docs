@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /designing-reports-parameters-programmatic-control
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using Report Parameters Programmatically

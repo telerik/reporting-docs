@@ -8,7 +8,7 @@ tags: understanding,the,report,lifecycle
 published: True
 position: 2
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # The Lifecycle of the Report

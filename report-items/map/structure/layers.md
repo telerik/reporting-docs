@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/connecting-to-data
 tags: telerik, reporting, map, report, item, layers, hierarchy, geolocation, shapemapgroup, seriesgroups
 published: True
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Layers and Hierarchy of the Map

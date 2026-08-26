@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, styling, formatting, legend, fil
 published: True
 previous_url: /GraphFormattingLegend
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Legend of the Graph

@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,angular,report,viewer,with,systemjs
 published: True
 reportingArea: AngularWrapper
-components: [AngularWrapper]
+components: [angularwrapper]
 position: 2
 previous_url: /angular-report-how-to-use-with-systemjs
 ---

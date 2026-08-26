@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,pass,values,to,report,parameters
 published: True
 reportingArea: MVCWrapper
-components: [MVCWrapper]
+components: [mvcwrapper]
 position: 5
 previous_url: /mvc-report-viewer-howto-custom-parameters
 ---

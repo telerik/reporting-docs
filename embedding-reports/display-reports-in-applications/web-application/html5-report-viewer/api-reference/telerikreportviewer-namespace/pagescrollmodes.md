@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: pagescrollmodes
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 2
 previous_url: /html5-report-viewer-api-pagescrollmodes
 ---

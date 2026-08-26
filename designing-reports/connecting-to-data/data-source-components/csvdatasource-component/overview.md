@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /csvdatasource-component, /designing-reports/connecting-to-data/data-source-components/csvdatasource-component/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 table th:first-of-type {

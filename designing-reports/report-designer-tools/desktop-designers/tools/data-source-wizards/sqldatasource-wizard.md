@@ -8,7 +8,7 @@ published: True
 position: 10
 previous_url: /sqlDataSource-wizard,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # SqlDataSource Wizard of the Report Designer

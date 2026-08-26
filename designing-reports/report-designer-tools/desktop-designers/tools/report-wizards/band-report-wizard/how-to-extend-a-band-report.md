@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /quick-start-class-lib-extending
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Extending a Band Report in Few Easy Steps

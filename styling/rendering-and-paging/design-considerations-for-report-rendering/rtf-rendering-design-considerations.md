@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /designing-reports-considerations-rtf
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Design Considerations for the RTF Rendering

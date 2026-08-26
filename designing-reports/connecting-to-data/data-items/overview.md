@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /data-items, /designing-reports/connecting-to-data/data-items/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Data Items Overview

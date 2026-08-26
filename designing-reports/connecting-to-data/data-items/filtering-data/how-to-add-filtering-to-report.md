@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /data-items-how-to-add-filtering-to-report-item
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Adding Filtering to Report

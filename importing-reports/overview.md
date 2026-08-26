@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /faq-available-converters, /importing-reports/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Importing Reports Overview

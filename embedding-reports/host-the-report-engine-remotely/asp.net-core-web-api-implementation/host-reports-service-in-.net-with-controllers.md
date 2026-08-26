@@ -7,7 +7,7 @@ tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,state
 tag: updated
 published: True
 reportingArea: RESTServiceCore
-components: [RESTServiceCore]
+components: [restservicecore]
 position: 3
 ---
 

@@ -8,7 +8,7 @@ tags: telerik, reporting, report, items, 1d, barcodes, overview, linear, one-dim
 published: True
 position: 0
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

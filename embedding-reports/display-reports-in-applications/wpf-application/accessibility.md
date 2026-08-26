@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: accessibility
 published: True
 reportingArea: WPF
-components: [WPF]
+components: [wpf]
 position: 8
 previous_url: /wpf-report-viewer-accessibility
 ---

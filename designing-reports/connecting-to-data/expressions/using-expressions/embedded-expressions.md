@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /expressions-embedded
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Embedded Expressions Overview

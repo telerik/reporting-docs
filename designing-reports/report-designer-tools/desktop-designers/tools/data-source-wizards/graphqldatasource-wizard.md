@@ -7,7 +7,7 @@ tags: graphqldatasource,wizard
 published: True
 position: 50
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

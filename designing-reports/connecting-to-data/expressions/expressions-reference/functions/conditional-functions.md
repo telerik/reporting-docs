@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /expressions-evaluation-flow-functions
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 table th:first-of-type {

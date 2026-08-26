@@ -8,7 +8,7 @@ previous_url: /report-items-html-text-box-validation
 published: True
 position: 2
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # XHTML Validation in HtmlTextBox

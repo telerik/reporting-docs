@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 14
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

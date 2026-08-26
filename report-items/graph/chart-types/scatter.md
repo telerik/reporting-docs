@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, scatter, bubble, chart, overview
 previous_url: /ScatterCharts, /GraphHowToCreateBubbleChart, /GraphHowToCreateScatterChart, /report-items/graph/chart-types/scatter-charts/overview, /report-items/graph/chart-types/scatter-charts/how-to-create-scatter-chart, /report-items/graph/chart-types/scatter-charts/how-to-create-bubble-chart
 published: True
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Creating and Customizing Scatter Charts

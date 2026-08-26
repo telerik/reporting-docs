@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: sendemailend,args
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 5
 previous_url:
 - /html5-report-viewer-reportviewer-events-sendemailend

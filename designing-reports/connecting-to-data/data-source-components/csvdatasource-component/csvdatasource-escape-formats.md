@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /csvdatasource-escape-formats
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 table th:first-of-type {

@@ -8,7 +8,7 @@ published: True
 position: 40
 previous_url: /webservicedatasource-wizard
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

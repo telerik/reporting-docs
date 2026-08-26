@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /style-understanding-style-selectors
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Understanding the Style Selectors

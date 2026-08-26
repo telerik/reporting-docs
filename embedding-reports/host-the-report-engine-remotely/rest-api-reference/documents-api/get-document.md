@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,document
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [RESTService, RESTServiceCore]
+components: [restservice, restservicecore]
 position: 2
 previous_url: /telerik-reporting-rest-documents-api-get-document,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document
 ---

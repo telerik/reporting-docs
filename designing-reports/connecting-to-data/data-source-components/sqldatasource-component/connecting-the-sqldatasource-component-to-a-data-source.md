@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /sql-data-source-connecting-to-data
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Connecting the SqlDataSource Component to Data Source

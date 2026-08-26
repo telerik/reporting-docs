@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,blazor,report,viewer
 published: True
 reportingArea: BlazorWrapper
-components: [BlazorWrapper]
+components: [blazorwrapper]
 position: 1
 previous_url: /blazor-report-viewer-how-to-use
 ---

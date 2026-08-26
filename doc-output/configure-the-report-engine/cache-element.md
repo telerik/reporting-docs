@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /configuring-telerik-reporting-cache
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, area, chart, overview, creating
 previous_url: /report-items/graph/chart-types/area-charts/how-to-create-area-chart, /report-items/graph/chart-types/area-charts/overview, /GraphHowToCreateAreaChart, /AreaCharts
 published: True
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Creating and Customizing Area Charts

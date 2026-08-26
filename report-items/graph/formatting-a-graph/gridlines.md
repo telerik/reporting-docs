@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, styling, formatting, gridlines, 
 published: True
 previous_url: /GraphFormattingGridLines
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Gridlines of the Graph

@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,host,reports,service,in,asp.net,core,3.1
 published: True
 reportingArea: RESTServiceCore
-components: [RESTServiceCore]
+components: [restservicecore]
 position: 4
 previous_url: /telerik-reporting-rest-service-aspnetcore-mvc-core3,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1
 ---

@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,pass,values,to,report,parameters
 published: True
 reportingArea: WebFormsWrapper
-components: [WebFormsWrapper]
+components: [webformswrapper]
 position: 5
 previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 ---

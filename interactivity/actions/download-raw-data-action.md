@@ -7,7 +7,7 @@ tags: raw,data,action
 published: True
 position: 80
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Download Raw Data

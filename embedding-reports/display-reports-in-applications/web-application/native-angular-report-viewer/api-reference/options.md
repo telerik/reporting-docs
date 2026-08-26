@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: options
 published: false
 reportingArea: NativeAngular
-components: [NativeAngular]
+components: [nativeangular]
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/
 ---

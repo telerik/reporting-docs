@@ -8,7 +8,7 @@ tags: telerik, reporting, embedding, reports, overview
 published: True
 position: 0
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Embedding Reports Overview

@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how, use, wpf, report, viewer, rest, service
 published: True
 reportingArea: WPF
-components: [WPF]
+components: [wpf]
 position: 10
 previous_url: /wpf-report-viewer-howto-use-it-with-rest-service
 ---

@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how, configure, mssql, database, storage, tutorial
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [RESTService, RESTServiceCore]
+components: [restservice, restservicecore]
 position: 1
 previous_url: /telerik-reporting-rest-howto-use-mssql-storage,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage
 ---

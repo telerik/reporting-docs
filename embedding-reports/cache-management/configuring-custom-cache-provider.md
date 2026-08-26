@@ -8,7 +8,7 @@ tags: telerik, reporting, embedding, reports, cache, management, configuring, cu
 published: True
 position: 4
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Configuring Custom Cache Providers

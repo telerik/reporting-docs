@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /report-structure-dataitem-set-no-data-message
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Setting a No Data Message

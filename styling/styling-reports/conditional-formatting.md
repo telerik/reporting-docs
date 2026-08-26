@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /styling-conditional-formatting
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Conditional Formatting Overview

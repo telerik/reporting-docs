@@ -19,6 +19,8 @@ The Blazor Report Viewer exposes methods and commands that allow to control its 
 
 To call report viewer methods and execute commands, first get a reference to the report viewer object using the `@ref` attribute. Then, use the **reportViewer1** object to access the report viewer API.
 
+To refresh the current report, call `reportViewer1.RefreshReportAsync()`. You can also execute the refresh command with `reportViewer1.Commands.Refresh.ExecuteAsync()`.
+
 For example, refresh and print of the current report can be triggered like this:
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerMethodsAndCommands.razor region=BlazorViewerRefreshAndPrint}}

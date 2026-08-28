@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /designing-reports-considerations-pdf
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

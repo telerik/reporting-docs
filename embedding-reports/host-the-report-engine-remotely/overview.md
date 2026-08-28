@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /telerik-reporting-rest-conception, /using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview,/telerik-reporting-services,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview, /embedding-reports/host-the-report-engine-remotely/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Telerik Reporting REST Services Overview

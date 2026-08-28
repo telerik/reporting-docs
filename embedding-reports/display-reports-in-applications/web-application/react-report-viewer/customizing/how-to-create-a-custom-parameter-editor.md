@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: react, report, viewer, how, to, create, custom, parameter, editor
 published: True
 reportingArea: React
-components: [React]
+components: [react]
 position: 1
 previous_url: /react-report-viewer-custom-parameter-editor, /embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing/
 ---

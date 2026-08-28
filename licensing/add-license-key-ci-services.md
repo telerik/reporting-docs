@@ -7,7 +7,7 @@ tags: license, key, telerik, reporting, ci, cd
 published: True
 position: 2
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Adding the License Key to CI/CD Services

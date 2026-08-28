@@ -8,7 +8,7 @@ published: False
 position: 1
 previous_url: /how-to-sqlDataSource-sct-storedProcedure
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # How to Connect to a SQL Server Database Using Stored Procedure

@@ -6,7 +6,7 @@ slug: old-telerikreporting/embedding-reports/display-reports-in-applications/web
 tags: event,events,emit,fire,throw,execute,method,methods,blazor,native,report,viewer,api
 published: false
 reportingArea: NativeBlazor
-components: [NativeBlazor]
+components: [nativeblazor]
 position: 2
 ---
 

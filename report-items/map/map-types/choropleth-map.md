@@ -7,7 +7,7 @@ tags: telerik, reporting, map, report, item, add, choropleth, with, designers, w
 previous_url: /ChoroplethHowToSetupAChoroplethWithCsvAndShapefile, /report-items/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard, /knowledge-base/map-add-choropleth-with-map-wizard-to-reports
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Adding Choropleth Maps to Reports with the Choropleth Wizard

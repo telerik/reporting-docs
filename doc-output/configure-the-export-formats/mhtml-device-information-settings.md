@@ -8,7 +8,7 @@ published: True
 position: 9
 previous_url: /device-information-settings-mhtml
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Device Information Settings for the MHTML rendering format

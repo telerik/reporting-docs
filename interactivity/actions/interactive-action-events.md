@@ -8,7 +8,7 @@ published: True
 position: 100
 previous_url: /designing-reports-interactive-action-events
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Interactive Action Events Overview

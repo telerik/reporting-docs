@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /expressions-extending-expressions, /designing-reports/connecting-to-data/expressions/extending-expressions/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Extending Expressions Overview

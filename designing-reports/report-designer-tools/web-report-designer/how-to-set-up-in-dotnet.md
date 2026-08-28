@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,set,up,in,.net,8,applications
 published: True
 reportingArea: WRDHTML5, WRDRestServiceCore
-components: [WRDHTML5, WRDRestServiceCore]
+components: [wrdhtml5, wrdrestservicecore]
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
 ---

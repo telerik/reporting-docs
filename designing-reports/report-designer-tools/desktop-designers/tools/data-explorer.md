@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /ui-data-explorer
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Data Explorer of the Report Designer

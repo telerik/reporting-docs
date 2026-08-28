@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /entitydatasource-maintaining-the-lifecycle-of-the-objectContext
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Maintaining the Lifecycle of the Context with the EntityDataSource Component

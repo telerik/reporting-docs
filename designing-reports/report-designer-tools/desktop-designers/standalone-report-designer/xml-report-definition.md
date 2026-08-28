@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /upgrading-xml-report-definition-versioning, /faq-xml-support
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Declarative Report Definition Overview

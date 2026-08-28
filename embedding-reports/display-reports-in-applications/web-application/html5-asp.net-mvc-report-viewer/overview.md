@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 reportingArea: MVCWrapper
-components: [MVCWrapper]
+components: [mvcwrapper]
 position: 0
 previous_url: /mvc-report-viewer-extension-overview, /embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/
 ---

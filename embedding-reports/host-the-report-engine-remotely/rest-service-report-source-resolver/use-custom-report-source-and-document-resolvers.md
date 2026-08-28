@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: custom, reportsource, resolver, document, modify, dynamically
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [RESTService, RESTServiceCore]
+components: [restservice, restservicecore]
 position: 2
 previous_url: /telerik-reporting-rest-using-custom-report-resolver-and-document-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/use-custom-report-source-and-document-resolvers
 ---

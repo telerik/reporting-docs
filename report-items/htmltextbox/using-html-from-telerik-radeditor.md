@@ -8,7 +8,7 @@ previous_url: /report-items-html-text-box-using-html-from-radeditor
 published: True
 position: 7
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using HTML from the Telerik UI for ASP.NET AJAX Editor

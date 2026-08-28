@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /object-data-source-using-expressions
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using Parameters with the ObjectDataSource Component

@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /device-information-settings-pdf
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

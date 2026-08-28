@@ -8,7 +8,7 @@ published: True
 position: 11
 previous_url: /how-to-import-reports-created-with-standalone-report-designer
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Importing Reports Created with the Standalone or Web Report Designer

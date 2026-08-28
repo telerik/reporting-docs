@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /ui-conditional-formatting
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Conditional Formatting Rules Dialog Overview

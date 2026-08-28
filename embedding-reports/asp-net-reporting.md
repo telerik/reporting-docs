@@ -7,7 +7,7 @@ tags: telerik, reporting, reports, web, asp, net
 published: True
 position: 93
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Embedding Reporting in ASP.NET Applications

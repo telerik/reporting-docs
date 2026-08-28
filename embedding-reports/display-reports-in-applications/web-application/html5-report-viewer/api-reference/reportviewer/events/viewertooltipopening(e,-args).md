@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: viewertooltipopening,args
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 15
 previous_url:
 - /html5-report-viewer-reportviewer-events-viewertooltipopening

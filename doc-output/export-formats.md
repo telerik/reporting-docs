@@ -8,7 +8,7 @@ tags: telerik, reporting, export, formats, document, output, overview
 published: True
 position: 0
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

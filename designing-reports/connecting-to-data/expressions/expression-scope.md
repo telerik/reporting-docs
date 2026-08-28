@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /expressions-scope
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Expression Scope

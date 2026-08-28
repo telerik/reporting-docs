@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: native, angular, report, viewer, toolbar, svg, icons
 published: True
 reportingArea: NativeAngular
-components: [NativeAngular]
+components: [nativeangular]
 position: 1
 ---
 

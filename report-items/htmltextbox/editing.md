@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, editing, inplace, designti
 published: True
 position: 3
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 img[alt="The HtmlTextBox Design View in the Expression editor of the Report Designer"],

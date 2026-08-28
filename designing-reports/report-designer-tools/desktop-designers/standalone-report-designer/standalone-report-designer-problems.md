@@ -8,7 +8,7 @@ published: True
 position: 9
 previous_url: /Troubleshooting-Standalone-Report-Designer-problems, troubleshooting-design-time
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Troubleshooting Standalone Report Designer

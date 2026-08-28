@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /connecting-to-data-data-source-components, /designing-reports/connecting-to-data/data-source-components/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Data Source Components Overview

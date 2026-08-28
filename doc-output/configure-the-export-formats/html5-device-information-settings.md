@@ -8,7 +8,7 @@ published: True
 position: 10
 previous_url: /device-information-settings-html
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

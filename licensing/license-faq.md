@@ -7,7 +7,7 @@ tags: license, telerik, reporting, faq, questions
 published: True
 position: 9
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Frequently Asked Questions

@@ -8,7 +8,7 @@ published: True
 position: 5
 previous_url: /data-items-need-data-source-event, /designing-reports-adding-data-source-needdatasource
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using the NeedDataSource Event to Connect to Data

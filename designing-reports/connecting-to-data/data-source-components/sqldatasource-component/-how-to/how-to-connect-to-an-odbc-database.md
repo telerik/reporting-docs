@@ -8,7 +8,7 @@ published: False
 position: 3
 previous_url: /how-to-sqlDataSource-odbc
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # How to Connect to an ODBC Database

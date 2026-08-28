@@ -8,7 +8,7 @@ published: True
 position: 8
 previous_url: /ui-edit-filter
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Edit Filter Dialog of the Report Designer

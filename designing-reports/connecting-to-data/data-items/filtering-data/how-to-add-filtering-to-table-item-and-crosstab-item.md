@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /data-items-how-to-add-filtering-to-table-item-and-crosstab-item
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Adding Filtering to Table and Crosstab Items

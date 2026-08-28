@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, barcode, 2d, maxicode, overview, settin
 published: True
 position: 5
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Configuring the  MaxiCode Barcode in Reports

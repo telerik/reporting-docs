@@ -6,7 +6,7 @@ slug: old-telerikreporting/embedding-reports/display-reports-in-applications/web
 tags: options,blazor,native,report,viewer,api,initialization
 published: false
 reportingArea: NativeBlazor
-components: [NativeBlazor]
+components: [nativeblazor]
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/
 ---

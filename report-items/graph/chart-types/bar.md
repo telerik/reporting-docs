@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, bar, chart, overview, creating
 previous_url: /BarCharts, /GraphHowToCreateBarChart, /report-items/graph/chart-types/bar-charts/overview, /report-items/graph/chart-types/bar-charts/how-to-create-bar-chart
 published: True
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Creating and Customizing Bar Charts

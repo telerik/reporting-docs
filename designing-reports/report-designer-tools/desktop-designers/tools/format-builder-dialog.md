@@ -8,7 +8,7 @@ published: True
 position: 14
 previous_url: /ui-format-builder
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Format Builder Dialog of the Report Designer

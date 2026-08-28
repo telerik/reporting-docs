@@ -6,7 +6,7 @@ slug: web-report-designer-user-guide-components-maps
 tags: web, report, design, components, map
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [WRDHTML5, WRDBlazorWrapper]
+components: [wrdhtml5, wrdblazorwrapper]
 position: 4
 ---
 

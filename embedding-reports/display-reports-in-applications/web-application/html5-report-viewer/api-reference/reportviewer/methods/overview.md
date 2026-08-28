@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: overview
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 0
 previous_url: /html5-report-viewer-reportviewer-methods, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/
 ---

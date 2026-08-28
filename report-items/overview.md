@@ -8,7 +8,7 @@ tags: telerik, reporting, report, items, overview
 published: True
 position: 0
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Working With Report Items

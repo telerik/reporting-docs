@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /ui-report-explorer
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Report Explorer of the Report Designer

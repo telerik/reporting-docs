@@ -8,7 +8,7 @@ published: True
 position: 13
 previous_url: /object-data-source-how-to-bind-to-data-adapter
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Binding ObjectDataSource Component to a DataAdapter

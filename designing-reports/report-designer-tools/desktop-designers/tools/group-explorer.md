@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /ui-group-explorer
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Group Explorer of the Report Designer

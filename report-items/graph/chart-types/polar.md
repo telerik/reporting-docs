@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, polar, chart, overview, creating
 previous_url: /PolarCharts, /GraphHowToCreatePolarChart, /report-items/graph/chart-types/polar-charts/overview, /report-items/graph/chart-types/polar-charts/how-to-create-polar-chart
 published: True
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Creating and Customizing Polar Charts

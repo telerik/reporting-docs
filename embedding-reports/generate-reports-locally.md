@@ -8,7 +8,7 @@ tags: telerik, reporting, embedding, reports, embedded, engine, generate, locall
 published: True
 position: 4
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Generating Reports Locally with Code

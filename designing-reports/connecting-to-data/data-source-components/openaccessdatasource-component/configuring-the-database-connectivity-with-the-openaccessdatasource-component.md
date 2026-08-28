@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /openaccessdatasource-configuring-the-database-connectivity
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Configuring the Database Connectivity with the OpenAccessDataSource Component

@@ -8,7 +8,7 @@ previous_url: /MapStructure, /report-items/map/structure/
 published: True
 position: 0
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Overview of the Map Structure and Elements

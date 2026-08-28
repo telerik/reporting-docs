@@ -7,7 +7,7 @@ tags: bookmarks,overview,internal,navigation,reports,links
 published: True
 previous_url: /designing-reports-interactivity-bookmarks
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Bookmarks Overview

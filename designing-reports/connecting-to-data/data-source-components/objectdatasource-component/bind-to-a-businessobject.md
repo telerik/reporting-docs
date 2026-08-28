@@ -8,7 +8,7 @@ published: True
 position: 10
 previous_url: /object-data-source-how-to-bind-to-business-object
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Binding ObjectDataSource Component to a BusinessObject

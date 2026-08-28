@@ -7,7 +7,7 @@ tags: styling,native,blazor,viewer,themebuilder
 published: True
 position: 5
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Styling the Native Blazor Report Viewer with ThemeBuilder

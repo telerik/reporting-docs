@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: error,args
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 1
 previous_url:
 - /html5-report-viewer-reportviewer-events-error

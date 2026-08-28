@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /configuring-telerik-reproting-privatefonts
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

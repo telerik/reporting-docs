@@ -8,7 +8,7 @@ published: True
 position: 9
 previous_url: /designing-reports-considerations-powerpoint
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Design Considerations for the PowerPoint Rendering

@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /how-to-sqldatasource-connect-sql-database
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Connecting the SqlDataSource Component to a SQL Database

@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /style-using-styles-to-customize-reports, /styling/styling-reports/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Customizing Reports using Styles

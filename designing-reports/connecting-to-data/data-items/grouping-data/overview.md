@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /data-items-grouping-data, /designing-reports/connecting-to-data/data-items/grouping-data/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Grouping Data Overview

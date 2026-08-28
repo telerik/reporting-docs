@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,create,a,custom,parameter,editor
 published: True
 reportingArea: WebFormsWrapper
-components: [WebFormsWrapper]
+components: [webformswrapper]
 position: 4
 previous_url: /html5-webforms-report-viewer-customizing-custom-parameter-editor
 ---

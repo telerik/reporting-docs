@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /getting-started/web-designer/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Configure Web Report Designer and Create a Basic Report

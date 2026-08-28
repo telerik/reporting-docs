@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /cubedatasource-specifying-parameters
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Specifying Query Parameters with the CubeDataSource Component

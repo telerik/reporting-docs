@@ -8,7 +8,7 @@ previous_url: /table-understanding-table-items
 published: True
 position: 2
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Basic Concepts when Working with Tables

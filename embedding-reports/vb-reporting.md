@@ -7,7 +7,7 @@ tags: telerik, reporting, reports, vb, net
 published: True
 position: 99
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Developing VB.NET Reporting Applications

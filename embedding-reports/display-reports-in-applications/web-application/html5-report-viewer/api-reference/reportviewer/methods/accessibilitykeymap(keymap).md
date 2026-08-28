@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: accessibilitykeymap(keymap)
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 2
 previous_url: /html5-report-viewer-reportviewer-methods-accessibility-keymap-km, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)
 ---

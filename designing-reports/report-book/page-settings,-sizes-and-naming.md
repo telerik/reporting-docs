@@ -10,7 +10,7 @@ previous_url:
 - /designing-reports-reportbook-settings
 - /designing-reports/report-book/page-settings,-sizes-and-naming
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Page Settings, Sizes and Naming in ReportBooks

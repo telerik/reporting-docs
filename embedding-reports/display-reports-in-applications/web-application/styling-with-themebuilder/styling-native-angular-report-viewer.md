@@ -7,7 +7,7 @@ tags: styling,native,angular,viewer,themebuilder
 published: True
 position: 10
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Styling the Native Angular Report Viewer with ThemeBuilder

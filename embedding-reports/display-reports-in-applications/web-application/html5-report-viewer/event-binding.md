@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: event,binding
 published: True
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 9
 previous_url: /html5-report-viewer-event-binding
 ---

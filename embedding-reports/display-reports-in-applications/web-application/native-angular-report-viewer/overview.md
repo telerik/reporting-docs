@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: angular,native,report,viewer,overview
 published: True
 reportingArea: NativeAngular
-components: [NativeAngular]
+components: [nativeangular]
 position: 0
 previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/
 ---

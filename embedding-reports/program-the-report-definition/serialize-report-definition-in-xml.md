@@ -8,7 +8,7 @@ published: True
 position: 7
 previous_url: /programmatic-xml-serialization
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Serializing and Deserializing Report Definitions

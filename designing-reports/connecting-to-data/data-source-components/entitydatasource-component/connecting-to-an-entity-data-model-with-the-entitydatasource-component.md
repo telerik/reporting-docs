@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /entitydatasource-connecting-to-entity-data-model
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Connecting to an Entity Data Model with the EntityDataSource Component

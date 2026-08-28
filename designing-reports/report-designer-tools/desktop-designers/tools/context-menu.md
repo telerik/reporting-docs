@@ -8,7 +8,7 @@ published: True
 position: 5
 previous_url: /ui-context-menu
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Report Designer Context Menu

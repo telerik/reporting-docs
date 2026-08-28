@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /quick-start-create-simple-report
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using the Report Wizard to Create a Band Report

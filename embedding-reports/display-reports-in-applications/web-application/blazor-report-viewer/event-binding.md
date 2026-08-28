@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: event,binding
 published: True
 reportingArea: BlazorWrapper
-components: [BlazorWrapper]
+components: [blazorwrapper]
 position: 2
 previous_url: /blazor-report-viewer-event-binding
 ---

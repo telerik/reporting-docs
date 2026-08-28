@@ -8,7 +8,7 @@ published: True
 position: 30
 previous_url: /csvdatasource-wizard
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # CsvDataSource Wizard of the Report Designer

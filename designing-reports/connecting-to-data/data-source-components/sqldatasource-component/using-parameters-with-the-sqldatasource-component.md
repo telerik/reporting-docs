@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /sql-data-source-using-parameters
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using Parameters with the SqlDataSource Component

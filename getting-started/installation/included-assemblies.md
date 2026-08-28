@@ -7,7 +7,7 @@ tags: telerik, reporting, included, assemblies, installation
 published: True
 position: 3
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Assemblies and Assets Included in the Installation

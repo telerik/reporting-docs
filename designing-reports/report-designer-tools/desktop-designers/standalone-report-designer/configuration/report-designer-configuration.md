@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /standalone-report-designer-default-configuration
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Standalone Report Designer Configuration Sections

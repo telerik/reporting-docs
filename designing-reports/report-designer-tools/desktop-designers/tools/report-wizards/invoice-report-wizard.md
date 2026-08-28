@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /InvoiceWizardWalkthrough, /quick-start-add-report-visual-studio, /ui-report-wizard
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Invoice Report Wizard of the Report Designer

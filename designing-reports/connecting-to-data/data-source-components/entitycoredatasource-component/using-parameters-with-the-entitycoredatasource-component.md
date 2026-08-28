@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 2
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using Parameters with the EntityCoreDataSource Component

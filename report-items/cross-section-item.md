@@ -8,7 +8,7 @@ published: True
 position: 3
 previous_url: /report-items-cross-section-item
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Cross-Section Report Item Overview

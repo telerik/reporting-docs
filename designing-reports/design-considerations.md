@@ -8,7 +8,7 @@ tags: telerik, reporting, report, items, design, considerations, layout, creatin
 published: True
 position: 15
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Basic Design Considerations for Report Items

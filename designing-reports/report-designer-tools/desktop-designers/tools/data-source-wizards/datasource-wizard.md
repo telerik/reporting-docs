@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /ui-datasource-wizard, /designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # DataSource Wizard Overview

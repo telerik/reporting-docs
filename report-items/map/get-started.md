@@ -8,7 +8,7 @@ published: True
 previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard, /knowledge-base/map-set-up-with-the-map-wizard, /mapconnectingtodata, /maphowtoaddseriestothemapitem
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Getting Started with the Map Report Item

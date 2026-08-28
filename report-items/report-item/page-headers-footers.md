@@ -8,7 +8,7 @@ tags: telerik, reporting, report, items, item, page, header, footer, section
 published: True
 position: 3
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Page Headers and Footers Overview

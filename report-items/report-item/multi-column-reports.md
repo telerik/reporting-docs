@@ -8,7 +8,7 @@ tags: telerik, reporting, report, items, item, creating, multi, column, reports
 published: True
 position: 2
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Creating Multi-Column Reports

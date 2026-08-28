@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /designing-reports-interactivity-tooltips
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Tooltips Overview

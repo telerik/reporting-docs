@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: properties
 published: false
 reportingArea: AngularWrapper
-components: [AngularWrapper]
+components: [angularwrapper]
 position: 3
 previous_url: /angular-report-viewer-api-properties
 ---

@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /standalone-report-designer-working-with-server-reports
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Working with Reports Stored in the Telerik Report Server

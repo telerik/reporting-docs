@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /configuring-telerik-reporting-assemblyreferences
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

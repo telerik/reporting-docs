@@ -8,7 +8,7 @@ published: True
 position: 20
 previous_url: /jsondatasource-wizard
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # JsonDataSource Wizard of the Report Designer

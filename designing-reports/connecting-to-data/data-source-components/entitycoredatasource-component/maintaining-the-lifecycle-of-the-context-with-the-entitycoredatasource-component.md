@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 4
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Maintaining the Lifecycle of the Context with the EntityCoreDataSource Component

@@ -8,7 +8,7 @@ published: False
 position: 0
 previous_url: /telerik-reporting-services
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Generating Reports Remotely Overview

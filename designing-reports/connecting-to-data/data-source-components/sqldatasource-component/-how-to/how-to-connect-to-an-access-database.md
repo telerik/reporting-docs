@@ -8,7 +8,7 @@ published: False
 position: 2
 previous_url: /how-to-sqlDataSource-access
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # How to Connect to an Access Database

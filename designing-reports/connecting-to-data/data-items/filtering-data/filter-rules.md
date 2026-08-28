@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /designing-reports-filtering
 reportingArea: General
-components: [General]
+components: [general]
 ---
 <style>
 table th:first-of-type {

@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: react, report, viewer, events
 published: false
 reportingArea: React
-components: [React]
+components: [react]
 position: 1
 previous_url: /react-report-viewer-api-reference-events
 ---

@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /expressions-aggregate-functions
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Aggregate Functions Overview

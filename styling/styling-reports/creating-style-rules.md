@@ -8,7 +8,7 @@ published: True
 position: 2
 previous_url: /style-creating-style-rules
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Creating Style Rules

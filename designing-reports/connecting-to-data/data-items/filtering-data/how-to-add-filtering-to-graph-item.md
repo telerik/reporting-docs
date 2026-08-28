@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /data-items-how-to-add-filtering-to-chart-item
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Adding Filtering to Graph Item

@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: interactiveactionexecuting(e,,args)
 published: false
 reportingArea: HTML5
-components: [HTML5]
+components: [html5]
 position: 12
 previous_url:
 - /html5-report-viewer-reportviewer-events-interactiveactionexecuting

@@ -8,7 +8,7 @@ published: True
 position: 7
 previous_url: /standalone-report-designer-import-clr-reports
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Importing reports created with the VS Report Designer

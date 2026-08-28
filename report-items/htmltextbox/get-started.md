@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, getting, started, designer
 published: True
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Getting Started with the HtmlTextBox

@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /getting-started/first-steps, /first-steps
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Designing Your First Telerik Report

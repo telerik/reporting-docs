@@ -8,7 +8,7 @@ tags: localizing,reports
 published: True
 position: 12
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Localizing Reports Overview

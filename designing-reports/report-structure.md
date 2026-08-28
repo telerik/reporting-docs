@@ -8,7 +8,7 @@ published: True
 previous_url: /report-items/understanding-report-sections-\(obsolete\), /designing-reports-understanding-report-sections
 position: 1
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # The Basic Structure of the Report

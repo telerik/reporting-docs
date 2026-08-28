@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: manual,setup
 published: True
 reportingArea: WebFormsWrapper
-components: [WebFormsWrapper]
+components: [webformswrapper]
 position: 3
 previous_url: /html5-webforms-report-viewer-manual-setup
 ---

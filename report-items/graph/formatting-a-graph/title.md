@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, graph, styling, formatting, title
 published: True
 previous_url: /GraphFormattingTitle, /report-items/graph/formatting-a-graph/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Graph Title

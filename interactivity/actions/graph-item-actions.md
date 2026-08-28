@@ -8,7 +8,7 @@ published: True
 position: 60
 previous_url: /designing-reports-interactivity-graph-item
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Graph Item Actions Overview

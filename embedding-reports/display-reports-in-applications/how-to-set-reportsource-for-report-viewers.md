@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /report-sources-viewers
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Setting ReportSource to Report Viewers Overview

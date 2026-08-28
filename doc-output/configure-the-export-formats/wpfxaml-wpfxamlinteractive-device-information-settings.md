@@ -8,7 +8,7 @@ published: True
 position: 14
 previous_url: /device-information-settings-wpfxamlinteractive
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 <style>

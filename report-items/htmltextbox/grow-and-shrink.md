@@ -7,7 +7,7 @@ tags: telerik, reporting, report, items, htmltextbox, growing, shrinking, accomm
 published: True
 position: 5
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Growing and Shrinking of HtmlTextBox

@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /understanding-events
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Understanding Report Events

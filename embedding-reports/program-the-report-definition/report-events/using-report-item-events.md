@@ -8,7 +8,7 @@ published: True
 position: 4
 previous_url: /using-report-item-events
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Using the Events of Report Items

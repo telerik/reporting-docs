@@ -8,7 +8,7 @@ published: True
 position: 5
 previous_url: /table-headers-freezing
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Table Header Freezing Overview

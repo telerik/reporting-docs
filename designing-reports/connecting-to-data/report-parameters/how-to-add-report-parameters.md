@@ -8,7 +8,7 @@ published: True
 position: 1
 previous_url: /designing-reports-parameters-adding-parameters
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Approaches for Adding Report Parameters

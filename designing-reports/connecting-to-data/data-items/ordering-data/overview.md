@@ -8,7 +8,7 @@ published: True
 position: 0
 previous_url: /data-items-ordering-data, /designing-reports/connecting-to-data/data-items/ordering-data/
 reportingArea: General
-components: [General]
+components: [general]
 ---
 
 # Ordering Data Overview

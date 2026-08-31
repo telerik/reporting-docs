@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: create,ai,thread
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [restservice, restservicecore]
+components: [restservice, restservicecore, general]
 position: 1
 ---
 

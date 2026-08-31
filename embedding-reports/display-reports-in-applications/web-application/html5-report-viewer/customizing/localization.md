@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: localization
 published: True
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 2
 previous_url: /html5-report-viewer-localization
 ---

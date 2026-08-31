@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: localization
 published: True
 reportingArea: AngularWrapper
-components: [angularwrapper]
+components: [angularwrapper, general]
 position: 1
 previous_url: /angular-report-viewer-localization
 ---

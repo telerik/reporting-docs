@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,clients,session,timeout,seconds
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [restservice, restservicecore]
+components: [restservice, restservicecore, general]
 position: 3
 previous_url: /telerik-reporting-rest-api-get-clients-session-timeout-seconds,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds
 ---

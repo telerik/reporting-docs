@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: events,angular,report,viewer
 published: false
 reportingArea: AngularWrapper
-components: [angularwrapper]
+components: [angularwrapper, general]
 position: 1
 previous_url: /angular-report-viewer-api-events
 ---

@@ -7,7 +7,7 @@ tags: styling, web, report, designer, themebuilder, custom, theme
 tag: new
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 6
 ---
 

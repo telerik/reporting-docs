@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,available,document,formats
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [restservice, restservicecore]
+components: [restservice, restservicecore, general]
 position: 0
 previous_url: /telerik-reporting-rest-general-api-get-document-formats,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats
 ---

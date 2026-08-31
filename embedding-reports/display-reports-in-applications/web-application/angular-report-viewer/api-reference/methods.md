@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: methods,angular,report,viewer
 published: false
 reportingArea: AngularWrapper
-components: [angularwrapper]
+components: [angularwrapper, general]
 position: 2
 previous_url: /angular-report-viewer-api-methods
 ---

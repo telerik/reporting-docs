@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview
 published: True
 reportingArea: RESTServiceCore
-components: [restservicecore]
+components: [restservicecore, general]
 position: 0
 previous_url: /telerik-reporting-rest-service-aspnetcore-mvc,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview, /embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/
 ---

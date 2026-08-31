@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: requirements,browser,support
 published: True
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 1
 previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support, /html5-report-viewer-widget-requirements
 ---

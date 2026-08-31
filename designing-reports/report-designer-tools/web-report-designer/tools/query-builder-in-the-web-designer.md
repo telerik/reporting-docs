@@ -6,7 +6,7 @@ slug: web-report-designer-query-builder
 tags: query,builder,web,report,designer
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 0
 ---
 

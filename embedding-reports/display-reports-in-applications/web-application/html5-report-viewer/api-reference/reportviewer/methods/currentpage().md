@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: currentpage()
 published: false
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 6
 previous_url: /html5-report-viewer-reportviewer-methods-currentpage, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/currentpage()
 ---

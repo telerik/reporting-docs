@@ -6,7 +6,7 @@ slug: web-report-designer-user-guide-components-data-sources
 tags: web, report, design, components, data, source
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 7
 ---
 

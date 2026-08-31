@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: options
 published: false
 reportingArea: AngularWrapper
-components: [angularwrapper]
+components: [angularwrapper, general]
 position: 0
 previous_url: /angular-report-viewer-api-options, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference/
 ---

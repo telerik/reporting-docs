@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: manual,setup
 published: True
 reportingArea: MVCWrapper
-components: [mvcwrapper]
+components: [mvcwrapper, general]
 position: 3
 previous_url: /html5-mvc-report-viewer-embedding
 ---

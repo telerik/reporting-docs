@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: resources,Assets Manager,sharing
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 6
 previous_url: /designing-reports/report-designer-tools/web-report-designer/tools/
 ---

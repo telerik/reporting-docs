@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: reportsource,model,binding
 published: True
 reportingArea: MVCWrapper
-components: [mvcwrapper]
+components: [mvcwrapper, general]
 position: 4
 previous_url: /mvc-report-viewer-reportsource-model-binding
 ---

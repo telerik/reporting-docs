@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: localizing,web,report,designer
 published: True
 reportingArea: WRDHTML5
-components: [wrdhtml5]
+components: [wrdhtml5, general]
 position: 9
 previous_url: /web-report-designer-localization
 ---

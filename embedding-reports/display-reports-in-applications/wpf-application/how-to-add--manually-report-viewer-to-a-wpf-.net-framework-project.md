@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,add,,manually,report,viewer,wpf,.net,framework,project
 published: True
 reportingArea: WPF
-components: [wpf]
+components: [wpf, general]
 position: 3
 previous_url: /wpf-report-viewer-manual-setup
 ---

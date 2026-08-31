@@ -6,7 +6,7 @@ slug: user-guide/app-tour
 tags: web, report, design, tool, create, report, web, structure 
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 1
 ---
 

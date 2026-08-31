@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: templates,overview,html5,reporting,telerik,files
 published: True
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 1
 previous_url: /html5-report-viewer-template
 ---

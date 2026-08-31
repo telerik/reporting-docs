@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,asp.net,mvc,report,viewer,with,report,server
 published: True
 reportingArea: MVCWrapper
-components: [mvcwrapper]
+components: [mvcwrapper, general]
 position: 2
 previous_url: /mvc-report-viewer-howto-use-it-with-reportserver
 ---

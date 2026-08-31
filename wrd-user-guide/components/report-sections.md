@@ -6,7 +6,7 @@ slug: user-guide/components/report-sections
 tags: telerik, reporting, report, sections, components, building blocks, layout
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 6
 ---
 

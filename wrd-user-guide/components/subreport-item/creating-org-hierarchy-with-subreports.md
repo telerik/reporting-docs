@@ -6,7 +6,7 @@ slug: wrd-user-guide-create-org-hierarchy-with-subreport
 tags: web, report, design, components, subreport, hierarchy, master, detail, self, reference, org
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 3
 ---
 

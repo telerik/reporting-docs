@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: localization
 published: True
 reportingArea: MVCWrapper
-components: [mvcwrapper]
+components: [mvcwrapper, general]
 position: 2
 previous_url: /html5-mvc-report-viewer-customizing-localization
 ---

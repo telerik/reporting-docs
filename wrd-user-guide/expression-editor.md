@@ -7,7 +7,7 @@ tags: expression,editor,web,report,designer,design,create,report,web
 published: True
 tag: new
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 100
 ---
 <style>

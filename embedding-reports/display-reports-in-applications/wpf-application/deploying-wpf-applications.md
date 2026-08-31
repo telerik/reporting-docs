@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: deploying,wpf,applications
 published: True
 reportingArea: WPF
-components: [wpf]
+components: [wpf, general]
 position: 7
 previous_url: /installation-deploying-on-wpf-application
 ---

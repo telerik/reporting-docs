@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: events,angular,report,viewer
 published: false
 reportingArea: NativeAngular
-components: [nativeangular]
+components: [nativeangular, general]
 position: 2
 ---
 

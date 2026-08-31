@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 reportingArea: WebFormsWrapper
-components: [webformswrapper]
+components: [webformswrapper, general]
 position: 0
 previous_url: /html5-webforms-report-viewer-customizing-overview, /embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/
 ---

@@ -8,7 +8,7 @@ published: True
 position: 6
 previous_url: /requirements-for-desktop-viewers-using-remote-report-sources
 reportingArea: WinForms, WPF
-components: [winforms, wpf]
+components: [winforms, wpf, general]
 ---
 
 # Requirements For the Desktop Viewers Connecting to a Reporting Engine hosted in a Remote Service

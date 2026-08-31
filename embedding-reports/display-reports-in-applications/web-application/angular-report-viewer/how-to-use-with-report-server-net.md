@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how, to, use, angular, wrapper, report, viewer, with, report, server. net
 published: True
 reportingArea: AngularWrapper
-components: [angularwrapper]
+components: [angularwrapper, general]
 position: 4
 ---
 

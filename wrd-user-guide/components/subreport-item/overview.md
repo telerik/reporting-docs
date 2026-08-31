@@ -6,7 +6,7 @@ slug: web-report-designer-user-guide-components-subreport
 tags: web, report, design, components, subreport, hierarchy, master, detail
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 0
 ---
 

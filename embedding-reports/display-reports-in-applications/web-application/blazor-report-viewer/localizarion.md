@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: localization, blazor, html5, report, viewer
 published: True
 reportingArea: BlazorWrapper
-components: [blazorwrapper]
+components: [blazorwrapper, general]
 position: 5
 ---
 

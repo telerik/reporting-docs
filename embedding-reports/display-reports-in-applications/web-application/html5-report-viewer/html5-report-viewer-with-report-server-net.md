@@ -6,7 +6,7 @@ slug: html5-report-viewer-with-report-server-net
 tags: how,use,html5,report,viewer,report,server,dotnet
 published: True
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 3
 ---
 

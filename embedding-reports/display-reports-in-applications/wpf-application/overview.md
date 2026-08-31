@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 reportingArea: WPF
-components: [wpf]
+components: [wpf, general]
 position: 0
 previous_url: /wpf-report-viewer-intro, /embedding-reports/display-reports-in-applications/wpf-application/, /wpf-report-viewer
 ---

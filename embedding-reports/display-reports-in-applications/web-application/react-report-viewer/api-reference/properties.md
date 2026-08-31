@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: react, report, viewer, properties, commands
 published: false
 reportingArea: React
-components: [react]
+components: [react, general]
 position: 3
 previous_url: /react-report-viewer-api-reference-properties
 ---

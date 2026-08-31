@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: windows, forms, accessibility
 published: True
 reportingArea: WinForms
-components: [winforms]
+components: [winforms, general]
 position: 6
 previous_url: /winforms-report-viewer-accessibility
 ---

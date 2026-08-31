@@ -7,7 +7,7 @@ tags: report,webreportdesigner,styling,theme,thememing,themebuilder
 tag: new
 published: True
 reportingArea: WRDHTML5
-components: [wrdhtml5]
+components: [wrdhtml5, general]
 position: 5
 ---
 

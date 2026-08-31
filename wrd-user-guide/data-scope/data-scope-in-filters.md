@@ -7,7 +7,7 @@ tags: report, bind, context, data, scope, filter
 published: True
 tag: new
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 2
 ---
 

@@ -7,7 +7,7 @@ tags: host, reports, service, asp.net, core, minimal
 tag: updated
 published: True
 reportingArea: RESTServiceCore
-components: [restservicecore]
+components: [restservicecore, general]
 position: 2
 previous_url: /telerik-reporting-rest-service-net6-minimal-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-6-with-minimal-api
 ---

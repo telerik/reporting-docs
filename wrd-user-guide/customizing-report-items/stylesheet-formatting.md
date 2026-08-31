@@ -6,7 +6,7 @@ slug: wrd-stylesheet-formatting
 tags: web, report, design, customize, style, condition, formatting, properties, area 
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 3
 ---
 <style>

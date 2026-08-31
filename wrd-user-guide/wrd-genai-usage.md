@@ -8,7 +8,7 @@ tag: new
 published: True
 position: 11
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 ---
 
 # AI Report Generator in Web Report Designer

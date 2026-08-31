@@ -6,7 +6,7 @@ slug: user-guide/report-structure
 tags: telerik, reporting, report, structure, groups, sections, items
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 10
 ---
 

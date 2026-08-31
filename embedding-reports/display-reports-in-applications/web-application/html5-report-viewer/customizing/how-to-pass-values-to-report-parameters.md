@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,pass,values,report,parameters
 published: True
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 4
 previous_url: /html5-report-viewer-howto-custom-parameters
 ---

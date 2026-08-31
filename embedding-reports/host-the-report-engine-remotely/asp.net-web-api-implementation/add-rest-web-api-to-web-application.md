@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: add, telerik, reporting, rest, web, api, application
 published: True
 reportingArea: RESTService
-components: [restservice]
+components: [restservice, general]
 position: 2
 previous_url: /telerik-reporting-rest-host-http-service-using-web-hosting,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/add-rest-web-api-to-web-application
 ---

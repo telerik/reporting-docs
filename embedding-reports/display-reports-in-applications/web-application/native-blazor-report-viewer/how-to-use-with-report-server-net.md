@@ -6,7 +6,7 @@ slug: telerikreporting/embedding-reports/display-reports-in-applications/web-app
 tags: how, to, use, native, blazor, report, viewer, server, webassembly, hybrid, report, server, net
 published: True
 reportingArea: NativeBlazor
-components: [nativeblazor]
+components: [nativeblazor, general]
 position: 2
 ---
 

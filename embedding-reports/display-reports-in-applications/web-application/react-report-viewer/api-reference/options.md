@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: react, report, viewer, api, options
 published: false
 reportingArea: React
-components: [react]
+components: [react, general]
 position: 0
 previous_url: /react-report-viewer-api-reference-options, /embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference/
 ---

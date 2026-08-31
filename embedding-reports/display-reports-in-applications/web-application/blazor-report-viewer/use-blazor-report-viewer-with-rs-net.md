@@ -6,7 +6,7 @@ slug: use-blazor-report-viewer-with-rs-net
 tags: use,blazor,report,viewer,rsnet
 published: True
 reportingArea: BlazorWrapper
-components: [blazorwrapper]
+components: [blazorwrapper, general]
 position: 5
 ---
 

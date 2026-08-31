@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how, to, use, windows, forms, report, viewer, with, rest, service
 published: True
 reportingArea: WinForms
-components: [winforms]
+components: [winforms, general]
 position: 8
 previous_url: /winforms-viewer-howto-use-it-with-rest-service
 ---

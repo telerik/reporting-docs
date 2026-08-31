@@ -6,7 +6,7 @@ slug: creating-reusable-headers-and-footers
 tags: web, report, design, components, subreport, header, footer, reuse
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 4
 ---
 

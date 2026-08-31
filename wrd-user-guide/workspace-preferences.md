@@ -7,7 +7,7 @@ tags: web, report, design, workspace, settings, preferences
 tag: new 
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 9
 ---
 

@@ -6,7 +6,7 @@ slug: telerikreporting/embedding-reports/display-reports-in-applications/web-app
 tags: send,email,message,blazor,viewer
 published: True
 reportingArea: NativeBlazor
-components: [nativeblazor]
+components: [nativeblazor, general]
 position: 3
 ---
 

@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: parametereditorfactory
 published: false
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 5
 previous_url: /html5-report-viewer-api-parametereditorfactory
 ---

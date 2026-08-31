@@ -6,7 +6,7 @@ slug: native-blazor-report-viewer/tooltips-customization
 tags: custom,editor,widget,blazor,tooltips
 published: True
 reportingArea: NativeBlazor
-components: [nativeblazor]
+components: [nativeblazor, general]
 position: 4
 ---
 

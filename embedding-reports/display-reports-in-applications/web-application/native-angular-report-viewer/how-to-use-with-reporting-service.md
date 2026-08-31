@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,angular,report,viewer,with,angular,cli
 published: True
 reportingArea: NativeAngular
-components: [nativeangular]
+components: [nativeangular, general]
 position: 3
 ---
 

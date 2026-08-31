@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: updateui,viewer,html5
 published: false
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 11
 previous_url: /html5-report-viewer-reportviewer-events-updateui, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
 ---

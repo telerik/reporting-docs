@@ -6,7 +6,7 @@ slug: web-report-designer-customizing-report-items
 tags: web, report, design, customize, style, condition, formatting, properties, area 
 published: True
 reportingArea: WRDHTML5, WRDBlazorWrapper
-components: [wrdhtml5, wrdblazorwrapper]
+components: [wrdhtml5, wrdblazorwrapper, general]
 position: 0
 ---
 <style>

@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,rounded,corners,border,radius
 published: True
 reportingArea: WPF
-components: [wpf]
+components: [wpf, general]
 position: 0
 ---
 

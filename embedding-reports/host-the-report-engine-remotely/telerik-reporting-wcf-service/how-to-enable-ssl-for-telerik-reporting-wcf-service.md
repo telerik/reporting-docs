@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,enable,ssl,for,telerik,reporting,wcf,service
 published: True
 reportingArea: RESTService
-components: [restservice]
+components: [restservice, general]
 position: 3
 previous_url: /silverlight-enable-ssl-for-telerik-reporting-wcf-service
 ---

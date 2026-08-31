@@ -6,7 +6,7 @@ slug: old-telerikreporting/using-reports-in-applications/display-reports-in-appl
 tags: printbegin,args
 published: false
 reportingArea: HTML5
-components: [html5]
+components: [html5, general]
 position: 7
 previous_url:
 - /html5-report-viewer-reportviewer-events-printbegin

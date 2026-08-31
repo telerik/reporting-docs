@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,asp.net,web,forms,report,viewer,with,report,server
 published: True
 reportingArea: WebFormsWrapper
-components: [webformswrapper]
+components: [webformswrapper, general]
 position: 2
 previous_url: /webforms-report-viewer-howto-use-it-with-reportserver
 ---

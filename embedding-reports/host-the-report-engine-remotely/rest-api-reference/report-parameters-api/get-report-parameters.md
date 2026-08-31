@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,report,parameters
 published: True
 reportingArea: RESTService, RESTServiceCore
-components: [restservice, restservicecore]
+components: [restservice, restservicecore, general]
 position: 0
 previous_url: /telerik-reporting-rest-report-parameters-api-get-report-parameters,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api/
 ---

@@ -9,6 +9,7 @@ contribute-url: https://github.com/telerik/reporting-docs/edit/master
 
 search-engine-id: 001595215763381649090:zzabynuukmu
 search-provider: nuclia
+gitLastCommitDateEnabled: true
 
 cta-overview: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out, sign up for a free 30-day trial."
 cta-intro: "@ProductLink is a complete .NET embedded reporting tool for web and desktop applications. To try it out, sign up for a free 30-day trial."

@@ -3,7 +3,7 @@ title: Coded Report Definition
 page_title: Using the Standalone Report Designer for .NET for Coded Reports
 description: "Learn how to use the Standalone Report Designer for .NET to load, design, and preview Coded(.CS) Reports."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions
-tags: designing,using,opening,importing,previewing,type,reports,standalone,report,designer,for,net
+tags: designing,opening,importing,previewing,type,reports,standalone,report,designer
 published: True
 position: 5
 reportingArea: General
@@ -12,7 +12,7 @@ components: [general]
 
 # Coded Reports in the Standalone Report Designer for .NET
 
-Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) (SRD.NET) supports opening, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET. This feature addresses a long-standing limitation: the Visual Studio-integrated report designer does not support SDK-style projects or .NET Core/.NET 5+ targets. Due to architectural constraints, it could not be extended to support these project types. SRD.NET now provides a smooter alternative for working with type report definitions.
+Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) (SRD.NET) supports opening, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET. This feature addresses a long-standing limitation: the Visual Studio-integrated report designer does not support SDK-style projects or .NET Core/.NET 5+ targets. Due to architectural constraints, it could not be extended to support these project types. SRD.NET now provides a smoother alternative for working with type report definitions.
 
 While this workflow is fully supported, we recommend using declarative (XML-based) report definitions for most scenarios. Declarative reports offer broader tooling support, easier maintenance, and easier integration across Telerik Reporting tools.
 
@@ -33,7 +33,7 @@ The designer's functionality for working with Coded Reports relies on [MSBuild](
 If you have Visual Studio 2017 or newer installed, the required MSBuild version will be available out of the box.
 
 > The .NET SDK corresponding to your project’s target framework must also be installed. 
-For example, if your report library targets .10, ensure the .NET 10 SDK is present.
+For example, if your report library targets .NET 10, ensure the .NET 10 SDK is present.
 Without it, SRD.NET will fail to compile the project.
 
 ## Opening Coded Reports
@@ -100,7 +100,7 @@ For demonstration purposes, the following steps will assume that a type report h
 
 ## Creating and Using Custom Functions
 
-For demonstration purposes, the following steps will assume that a type report has already been created inside a [.NET Class Library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries), the report is named "SampleReport" and the goal is to implement a [custom user function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that returns the last day of the month.
+For demonstration purposes, the following steps will assume that a type report has already been created inside a [.NET Class Library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries), the report is named "SampleReport", and the goal is to implement a [custom user function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that returns the last day of the month.
 
 1. In the report class, create a new **public static** method that looks as follows:
 
@@ -119,11 +119,11 @@ For demonstration purposes, the following steps will assume that a type report h
 
 Migrating a `.NET Framework` report library to a .NET (Core or .NET 8+) report library involves several steps to ensure compatibility and modernization. Here's a short list of the main steps to focus on for the migration process:
 
-1. Create a new .NET SDK style Class Library project - [Create a .NET class library using Visual Studio](https://learn.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio).
+1. Create a new .NET SDK-style Class Library project - [Create a .NET class library using Visual Studio](https://learn.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio).
 1. Copy all the report files (including the `.designer.cs` and the `.resx` files) to the new .NET project.
 1. Ensure all reports are included in the new project and build it in Visual Studio/Visual Studio Code.
 1. Open at least one report in the Standalone Report Designer for .NET and make sure it builds successfully.
-1. Apply changes, save the file, and use the `Build & Preview` button to preview the type report with code-begind.
+1. Apply changes, save the file, and use the `Build & Preview` button to preview the type report with code-behind.
 
 ## .NET Reports Design Workflow Explained (Advanced)
 

@@ -48,9 +48,9 @@ liquid-output-delimiter-left: "{{"
 liquid-output-delimiter-right: "}}"
 liquid:
   suiteversion: "2026 Q3"
-  buildversion: "20.2.26.812"
-  reportserverversion: "12.2.26.812"
-  spaviewerversion: "31.26.812"
+  buildversion: "20.2.26.1007"
+  reportserverversion: "12.2.26.1007"
+  spaviewerversion: "31.26.1007"
   nodeversion: "20.19.0"
   angularsubsetversion: "24.1.0"
   kendosubsetversion: "2026.2.520"
@@ -312,6 +312,9 @@ meta:
   designing-reports/report-book:
     position: 6
     title: "Report Book"
+  designing-reports/json-report-definitions:
+    position: 7
+    title: "JSON Report Definitions"
 
   ## Embedding Reports section:
   embedding-reports/host-the-report-engine-remotely:

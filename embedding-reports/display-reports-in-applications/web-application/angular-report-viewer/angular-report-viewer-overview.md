@@ -26,25 +26,20 @@ The Angular component is built on top of the [HTML5 Report Viewer](slug:telerikr
 To successfully integrate the Angular Report Viewer component, ensure the following are fulfilled in your Angular Reporting application:
 
 1. Required Application Version:
-
    - [Angular 19-21](https://angular.dev/tutorials/first-app) Application
 
 1. Required Service:
-
    - The viewer requires a running instance of [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project so that its routes are accessible from the Angular application.
 
 1. Required JavaScript libraries:
-
    - [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
-
    - `@angular/common: "19 - 21"`
    - `@angular/core: "19 - 21"`
    - `"jquery": "^1.10.0 || ^2.2.0 || ^3.7.0"`
 
 1. Required references to Telerik Kendo UI styles:
-
    - [Kendo UI Sass-Based Themes v{{site.kendothemeversion}}](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Browser Support

@@ -13,7 +13,7 @@ components: [general]
 
 # Design Considerations for the HTML Rendering
 
-The HTML rendering extension renders a report into __HTML5__ or __MHTML__ format.
+The HTML rendering extension renders a report into **HTML5** or **MHTML** format.
 
 ## HTML Output
 
@@ -21,19 +21,25 @@ The HTML5 rendering extension is based on the Image rendering extension, with so
 
 ### Rendering
 
-* All report items are rendered as separate absolute positioned `<div>` elements.
-* The TextBox with rotated text is rendered as an image and displayed in `<img>` element inside the `<div>` of the report item. This is necessary as the browsers do not support rotated text.
-* All output is generated with __UTF8 encoding.__
-* The strings are measured using [GDI+](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) on Windows and [Skia](https://skia.org/) on non-Windows systems. This can lead to differences between Image rendering and previewing in web browsers. Additionally, justified text may require to be adjusted due to the difference in the measurement algorithms.
-* In Interactive preview the Table/Crosstab/List item is rendered on a **single page without page breaks**.
-* Lines thinner than `1px` may not be rendered consistently.
-* By default the Graph, Map, and Barcode items are rendered as `SVG` elements. In older browsers without support for SVG, the items are rendered automatically as [Bitmap](https://en.wikipedia.org/wiki/Bitmap) objects displayed in [IMG elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). The usage of SVG elements can be explicitly controlled through the [HTML5](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings) and [HTML5Interactive](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings) device information settings. More details on how to apply the settings are available in the [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview) overview.
+- All report items are rendered as separate absolute positioned `<div>` elements.
+- The TextBox with rotated text is rendered as an image and displayed in `<img>` element inside the `<div>` of the report item. This is necessary as the browsers do not support rotated text.
+- All output is generated with **UTF8 encoding.**
+- The strings are measured using [GDI+](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) on Windows and [Skia](https://skia.org/) on non-Windows systems. This can lead to differences between Image rendering and previewing in web browsers. Additionally, justified text may require to be adjusted due to the difference in the measurement algorithms.
+- In Interactive preview the Table/Crosstab/List item is rendered on a **single page without page breaks**.
+- Lines thinner than `1px` may not be rendered consistently.
+- By default the Graph, Map, and Barcode items are rendered as `SVG` elements. In older browsers without support for SVG, the items are rendered automatically as [Bitmap](https://en.wikipedia.org/wiki/Bitmap) objects displayed in [IMG elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). The usage of SVG elements can be explicitly controlled through the [HTML5](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings) and [HTML5Interactive](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings) device information settings. More details on how to apply the settings are available in the [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview) overview.
 
->note If the subreport report `BackgroundColor` is not `Transparent` (by default is White), subreport item borders may not be rendered. This can be avoided by setting the subreport report `BackgroundColor` to `Transparent`.
+> note If the subreport report `BackgroundColor` is not `Transparent` (by default is White), subreport item borders may not be rendered. This can be avoided by setting the subreport report `BackgroundColor` to `Transparent`.
+
+### Accessibility
+
+To exclude a report item and its descendants from the HTML5 accessibility tree, set its [AccessibleRole](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleRole) property to `Ignored`. The value is case-insensitive. You can also use the [AccessibleRoles](/api/Telerik.Reporting.AccessibleRoles) reporting constant in an expression: `=AccessibleRoles.Ignored`.
+
+When HTML5 accessibility is enabled, ignored items remain visible in the report and in the DOM. Telerik Reporting adds `aria-hidden="true"` to every element in the ignored subtree, so screen readers skip the content. This applies to both HTML5 and `HTML5Interactive` output.
 
 ### Pagination
 
-Page size is calculated based on whether the report is rendered for __Interactive view__ or __Print Preview__.
+Page size is calculated based on whether the report is rendered for **Interactive view** or **Print Preview**.
 
 ### Interactivity
 
@@ -43,10 +49,10 @@ The legacy ASP.NET viewer renders tooltips on SVG elements using the `<title>` a
 
 ### Browsers and limitations
 
-* Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) Microsoft article.
-* Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) Microsoft article.
-* Internet Explorer has a limitation for the number of HTML elements that can be rendered on a single page. This limitation may prevent the displaying of reports with large amounts of items rendered without page breaks. Displaying the report in "Print Preview" will page the content.
-* Depending on the browser's layout engine fonts can be measured differently, which may lead to displaying clipped text in reports. The fonts used in the reports should be considered with the targeted browsers.
+- Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the [Defining document compatibility](<https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)>) Microsoft article.
+- Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the [Defining document compatibility](<https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)>) Microsoft article.
+- Internet Explorer has a limitation for the number of HTML elements that can be rendered on a single page. This limitation may prevent the displaying of reports with large amounts of items rendered without page breaks. Displaying the report in "Print Preview" will page the content.
+- Depending on the browser's layout engine fonts can be measured differently, which may lead to displaying clipped text in reports. The fonts used in the reports should be considered with the targeted browsers.
 
 ## MHTML Output
 
@@ -56,16 +62,16 @@ Reports can be output as MHTML (Web archive or "MIME Encapsulation of Aggregate 
 
 The following rendering specifics apply to MHTML:
 
-* Styles specified in report item properties are injected into the `HEAD` tag for use in the corresponding HTML elements.
-* The size of report items is the same as in design-time and the browser is responsible for sizing them.
+- Styles specified in report item properties are injected into the `HEAD` tag for use in the corresponding HTML elements.
+- The size of report items is the same as in design-time and the browser is responsible for sizing them.
 
 ### Interactivity
 
-* URL actions on report items are rendered as hyperlinks in HTML. When you click the hyperlink, the default Web browser opens and navigates to the specified URL.
-* Table of contents interactivity (navigational links to report items) is not supported.
+- URL actions on report items are rendered as hyperlinks in HTML. When you click the hyperlink, the default Web browser opens and navigates to the specified URL.
+- Table of contents interactivity (navigational links to report items) is not supported.
 
 ## See Also
 
-* [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
-* [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
-* [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+- [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+- [Telerik Reporting Configuration Section](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview)
+- [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)

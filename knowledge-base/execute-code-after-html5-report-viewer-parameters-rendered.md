@@ -94,7 +94,6 @@ The `parametersLoaded` handler receives the jQuery event object first, followed 
 
 ## See Also
 
-- [HTML5 Report Viewer Event Binding](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/event-binding)
-- [The ready() Event of the HTML5 Report Viewer](slug:old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready())
-- [The updateUi(e) Event of the HTML5 Report Viewer](slug:old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e))
-- [The renderingEnd(e, args) Event of the HTML5 Report Viewer](slug:old-telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args))
+- [The ready() Event of the HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#ready)
+- [The updateUi(e) Event of the HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#updateui)
+- [The renderingEnd(e, args) Event of the HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#renderingend)

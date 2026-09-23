@@ -19,7 +19,10 @@ table th:nth-of-type(2) {
 	width: 10%;
 }
 table th:nth-of-type(3) {
-	width: 75%;
+	width: 15%;
+}
+table th:nth-of-type(4) {
+	width: 60%;
 }
 </style>
 
@@ -29,18 +32,18 @@ The following table lists the device information settings for rendering in RTF f
 
 ## Available RTF Device Information Settings
 
-> The names of the properties in Device Information Settings are __Case-Sensitive__.
+> The names of the properties in Device Information Settings are **Case-Sensitive**.
 
-|__Name__|__Type__|__Description__|
-| ------ | ------ | ------ |
-|StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
-|EndPage|Integer|The last page of the report to render.|
-|RenderingMode|String|Specifies whether to use __Tables__ or __Frames__ to render the rtf file. Available modes are:<ul><li>__Auto__</li><li>__Tables__</li><li>__Frames__</li></ul>The default mode is __Auto__. If Table/List/Crosstab report items are used in the report, the mode automatically changes to Tables, if not it uses Frames. Setting it explicitly to different value than __Auto__ would force the RTF rendering extension to use the selected mode.|
-|UseMetafile|Boolean|A flag specifying whether to render Graph, Map and Barcode items as [Metafile (EMF)](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-metafiles-about) or [Bitmap](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-types-of-bitmaps-about) images. The default value is __true__.|
+| **Name**      | **Type** | **Group** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------- | -------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| StartPage     | Integer  | Paging    | The first page of the report to render. A value of **0** indicates that all pages are rendered.                                                                                                                                                                                                                                                                                                                                                   |
+| EndPage       | Integer  | Paging    | The last page of the report to render.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| RenderingMode | String   | Layout    | Specifies whether to use **Tables** or **Frames** to render the rtf file. Available modes are:<ul><li>**Auto**</li><li>**Tables**</li><li>**Frames**</li></ul>The default mode is **Auto**. If Table/List/Crosstab report items are used in the report, the mode automatically changes to Tables, if not it uses Frames. Setting it explicitly to different value than **Auto** would force the RTF rendering extension to use the selected mode. |
+| UseMetafile   | Boolean  | Graphics  | A flag specifying whether to render Graph, Map and Barcode items as [Metafile (EMF)](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-metafiles-about) or [Bitmap](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-types-of-bitmaps-about) images. The default value is **true**.                                                                                                                                |
 
 For an example of how to set up the settings for a rendering extension, see [extensions Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element).
 
 ## See Also
 
-* [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
-* [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)
+- [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview)
+- [Export Formats](slug:telerikreporting/using-reports-in-applications/export-and-configure/export-formats)

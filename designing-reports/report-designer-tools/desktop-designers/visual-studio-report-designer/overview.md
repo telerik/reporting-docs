@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Visual Studio Report Designer for .NET Framework
-description: "Create and edit CLR type report definitions in Visual Studio (.NET Framework) or design .NET coded reports using the Standalone Report Designer."
+page_title: Visual Studio Report Designer for .NET and .NET Framework
+description: "Create and edit coded reports with the Visual Studio Report Designers for .NET and .NET Framework, and compare their installation and design workflows."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview
 tags: overview,visual,studio,report,designer,tool,net,coded,standalone
 published: True
@@ -13,27 +13,46 @@ components: [general]
 
 # Visual Studio Report Designer Overview
 
-The Visual Studio Report Designer supports editing CLR type report definitions (that is, `CS` or `VB` files) in the Visual Studio environment. The Visual Studio designer targets `.NET Framework` projects only. Due to architectural constraints, it cannot be extended to support SDK-style projects or `.NET Core`/`.NET 5+` targets. For an alternative design workflow for `.NET` coded reports, see [Designing Coded Reports for .NET](#designing-coded-reports-for-net) in this article.
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+
+The Visual Studio Report Designer edits coded report definitions in Visual Studio. Telerik Reporting provides two designer implementations with different installation and user interface workflows:
+
+* **Visual Studio Report Designer for .NET** uses the `Telerik.Reporting.VSDesigner` NuGet package to edit C# and VB reports in SDK-style projects. It runs in a separate process.
+* **Visual Studio Report Designer for .NET Framework** uses the installed Telerik Reporting Visual Studio extension to edit C# and VB reports in .NET Framework projects.
+
+See [Structure of the Visual Studio Report Designer](slug:visual-studio-report-designer-structure#comparing-the-designers) for the feature and workflow differences.
 
 ## Designing Coded Reports for .NET
 
-Starting with [Progress® Telerik® Reporting 2025 Q3](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813), the Standalone Report Designer for .NET (SRD.NET) supports opening, designing, and previewing coded (`.CS`) report definitions in C# projects targeting `.NET`. This capability addresses the long-standing limitation that the Visual Studio Report Designer cannot support SDK-style or `.NET Core`/`.NET 5+` projects.
+To design coded reports in Visual Studio, [set up the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started). Select a package version that includes the new designer and configure the required project target and workload.
 
-For the full workflow — including prerequisites, code-behind support, event handlers, custom functions, and migration from `.NET Framework` — see [Coded Reports in the Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions).
+The Standalone Report Designer for .NET is an alternative outside Visual Studio. Starting with [Telerik Reporting 2025 Q3](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813), it supports coded C# report definitions.
+
+For its prerequisites, code-behind support, and migration workflow, see [Coded Reports in the Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions).
 
 ## Installation
 
-The Visual Studio Report Designer requires installation on a Windows machine.
+Both designers require Windows, but use different installation workflows.
 
-The designer gets installed automatically with the [installation of the Telerik Reporting product](slug:telerikreporting/installation). The installation process detects the installed Visual Studio versions on your Windows machine and lets you select which of the supported ones would be integrated with Telerik Reporting - see [System Requirements - IDE Support](https://www.telerik.com/products/reporting/system-requirements).
+### Installing the .NET Designer
 
-> The Visual Studio Report Designer works only with the last installed Reporting version. If you have multiple Reporting versions installed on the machine, you will be able to edit CS/VB Reports from the last installed version. Consider the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) for upgrading your ReportLibrary projects.
+Reference a `Telerik.Reporting` NuGet package version that includes the .NET designer. Its version follows your project's package reference, not the most recent Reporting installation.
+
+The current setup requires Visual Studio 2026, the .NET desktop development workload, and a `net10.0-windows` project with `UseWindowsForms=true`. See [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started) for setup, the prerelease installer, and the sample workflow.
+
+### Installing the .NET Framework Designer
+
+The .NET Framework designer is installed with the [Telerik Reporting product](slug:telerikreporting/installation). The installer detects your Visual Studio versions and lets you choose which supported versions to integrate. See [System Requirements - IDE Support](https://www.telerik.com/products/reporting/system-requirements).
+
+>note The .NET Framework designer works with the last installed Reporting version. Use the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) to upgrade ReportLibrary projects. This installation restriction does not apply to the NuGet-based .NET designer.
 
 ## Starting the Visual Studio Report Designer and Opening Reports
 
-To start/open the designer, open an existing CS/VB file containing the report definition, import or create it as explained below.
+For .NET projects, use the [opening procedure](slug:vs-report-designer-net-getting-started#opening-a-report) after you configure the package and project. The new designer does not supply Visual Studio report templates.
 
-### Creating New Reports and Importing Reports from other formats in the Designer
+The following template and import procedures apply to the **.NET Framework designer**.
+
+### Creating New Reports and Importing Reports from Other Formats in the Designer
 
 Create a new report through the Telerik Reporting Visual Studio Item Template:
 
@@ -60,17 +79,21 @@ Create a new report through the Telerik Reporting Visual Studio Item Template:
 
 	![Security Warning window in Visual Studio.](images/SecurityWarningVSDesigner.png)
 
-### Opening existing C#/VB Reports in the Designer
+### Opening Existing C#/VB Reports in the Designer
 
-Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) or right-click on it and select "View Designer" to invoke the Visual Studio Report Designer and open the corresponding report for editing.
+In a .NET Framework project, double-click the report type in [Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022), or right-click it and select **View Designer**.
+
+### Opening .NET Reports in the Designer
+
+In a configured .NET project, right-click the report's main `.cs` or `.vb` file in **Solution Explorer** and select **View Designer**. For an animation and details about the default editor, see [Opening a Report](slug:vs-report-designer-net-getting-started#opening-a-report).
 
 ## Key Features of the Visual Studio Report Designer
 
-Opening a report in the Telerik Visual Studio Report Designer lets you use its key features indicated in the following image:
+The following image shows the **.NET Framework designer** and its key features:
 
 ![Visual Studio Report Designer's key features.](images/Designer/visual-studio-report-designer-2017.png)
 
-The following key elements are available in the VS Report Designer. For detailed information about each element, see [Structure of the Visual Studio Report Designer](slug:visual-studio-report-designer-structure):
+The .NET Framework designer provides the following elements:
 
 * Telerik Reporting Menu
 * Design Views Buttons
@@ -87,7 +110,13 @@ The following key elements are available in the VS Report Designer. For detailed
 * Group Explorer
 * Data Explorer
 
-> If you are using **Visual Studio 2022**, ensure that the `Platform target` of your `Report Library` project is not set to `x86`, or you won't be able to preview your reports. This is because **Visual Studio 2022** is a 64-bit application and, by design, `.NET` does not allow mixing 32-bit and 64-bit assemblies in the same process.
+The .NET designer also provides report sections, rulers, a component tray, context menus, layout aids, and explorer windows. It has **Designer** and **Preview** tabs, but no HTML preview, document map area, or report minimap.
+
+Open its explorers from the [report context menu](slug:visual-studio-report-designer-structure#explorer-windows), not the Visual Studio Extensions menu. Report parameters and export options use dialogs, as described in [Previewing Reports in the .NET Designer](slug:vs-report-designer-net-preview).
+
+For details about each element and supported layout aids, see [Structure of the Visual Studio Report Designer](slug:visual-studio-report-designer-structure).
+
+>note For the .NET Framework designer in Visual Studio 2022, ensure that the report project's `Platform target` is not `x86`. Visual Studio 2022 is a 64-bit application and cannot preview 32-bit assemblies in its process.
 
 ## Working with Code
 
@@ -97,12 +126,14 @@ Add custom code to the _ReportName_ type in the `ReportName.cs` file, which cont
 
 ## Visual Studio Report Designer Troubleshooting
 
-To troubleshoot problems related to the Visual Studio Report Designer and Visual Studio Project/Item Templates, follow the suggestions in [Visual Studio Report Designer Troubleshooting](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems).
+For .NET setup and preview issues, or legacy extension and template issues, see [Visual Studio Report Designer Troubleshooting](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems).
 
 ## See Also
 
 * [Structure of the Visual Studio Report Designer](slug:visual-studio-report-designer-structure)
-* [Edit CS reports in .NET projects with Visual Studio Report Designer](slug:how-to-use-vs-designer-in-dotnet-core)
+* [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)
+* [Previewing Reports in the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-preview)
+* [Editing .NET Reports Through a .NET Framework Project (Legacy Workaround)](slug:how-to-use-vs-designer-in-dotnet-core)
 * [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
 * [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)
 * [.NET Coded Report Design, No IDE Strings Attached](https://www.telerik.com/blogs/net-coded-report-design-no-ide-strings-attached)

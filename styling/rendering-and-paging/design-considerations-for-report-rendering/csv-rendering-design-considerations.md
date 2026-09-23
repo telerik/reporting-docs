@@ -31,6 +31,10 @@ When rendered using the default settings, a CSV report has the following charact
 
 * All rows have the same number of columns.
 
+* Hidden report items are excluded from the output by default. Set the `RespectItemVisibility` device information setting to `false` to include them. For more information, see [CSV Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings).
+
+    > note The `RespectItemVisibility` setting is available starting with Telerik Reporting 2026 Q4 (20.3.26.1007). Before that release, hidden items were included by default in the generated CSV.
+
 * The default field delimiter string is a comma (,).
 
    >note You can change the field delimiter to any character that you want, by changing the device information settings. For more information, see [CSV Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings).
@@ -41,7 +45,7 @@ When rendered using the default settings, a CSV report has the following charact
 
 * If the text contains an embedded delimiter string or qualifier string, the text qualifier is placed around the text, and the embedded qualifier strings are doubled.
 
-* Formatting and layout are ignored.
+* Formatting and layout are ignored except for the `Visible` setting of the report items.
 
 
 The following items are ignored during processing:

@@ -1,43 +1,95 @@
 ---
-title: Localizing Reports
-page_title: Localize Report Definitions in Web Report Designer
-description: "Learn how to localize Telerik Reports for multiple languages in the Web Report Designer."
+title: Localize Reports
+page_title: Localize Reports in the Web Report Designer
+description: "Learn how to create and edit language-specific report content in the Telerik Web Report Designer."
 slug: wrd-localizing-reports
 tags: localizing,reports,web,designer
+tag: new
 published: True
 position: 15
 reportingArea: General
 components: [wrdhtml5, wrdblazorwrapper, general]
 ---
 
-# Localizing Reports in Web Report Designer
+# Localize Reports in the Web Report Designer
 
-Localization is used to display the reports in the language of a specific culture. The article elaborates how to localize reports in the Web Report Designer.
+Use report localization to create language-specific versions of the static content in a report. The Web Report Designer stores the language versions together with the report package and displays the version that matches the selected language.
 
-> The Web Report Designers support three report formats: XML report format (TRDX); JSON report format (TRDJ) and ZIPPED format (TRDP). The localization mechanism described here is supported only in the TRDP report format. For more details see [Localizing Reports Overview](slug telerikreporting/designing-reports/localizing-reports).
+> important Report localization in the Web Report Designer is supported only for TRDP report packages. TRDX and TRDJ reports cannot contain the localization resources.
 
-To localize a report:
+## Before You Start
 
-1. In the designer set the Report `Localizable` property to true. If at any point the `Localizable` property is set to false all the resource files are deleted and the report property values are filled with the currently selected language values.
-1. Select a `Language` property value from the drop-down list in the properties window.
-1. Set the target component Name property. Keeping the default auto generated name can result in new items inheriting deleted items localized values.
-1. Translate the static text into the desired language indicated by the `Language` property.
+Make sure that you have access to the following:
 
-> important Items cannot be added in localization mode. After localizing the report set the Language property to (Default) to add new items.
+* A running Web Report Designer where you can open and save reports.
+* A report saved in the TRDP format.
+* The cultures that you want to use in the report. The available cultures depend on the Web Report Designer configuration.
 
-The report's runtime localization depends on the current thread's culture UI setting and must be already set in order the report to be processed with the correct resources.
+## Enabling Report Localization
 
-The current thread's culture UI setting depends on the OS or the browser language settings.
+Enable localization before you add language-specific content:
 
-To run the localized report in a specific language that is different from the thread's current culture UI setting:
+1. Open the report in the **Web Report Designer**.
+1. Select the report. You can select the report on the design surface or in the **Report Explorer**.
+1. In the **Properties** panel, set the **Localizable** property to `True`.
 
-1. Add Threading and Globalization namespaces to your application.
-1. Set the current thread `CurrentUICulture` to a new instance of `CultureInfo`. The `CultureInfo` constructor takes the culture code of the language you want to display. For example "en-US" for United States English or "es-MX" for Mexican Spanish.
-1. Optionally you can set the `CurrentCulture` for the current thread to the culture code of the language you wish to display. `CurrentCulture` affects dynamic data such as date, time and money formats. The "Birth Date" column date format in the figure above shows Month/Day/Year in English, but in Day/Month/Year format in the Spanish example.
-1. Create a [report source object](slug:telerikreporting/designing-reports/report-sources/overview) to specify the report, and assign it to the `ReportViewer.ReportSource` property. If you are using a `ReportViewer` in a Windows application, call the `ReportViewer.RefreshReport()` method. If you are using a web viewer, let the page send the request for getting the rendered report.
+The **Language** property becomes available after you enable localization.
 
-> important Note that the culture settings must be applied before creating an instance of the report. This ensures the correct report's resource file will be used on processing the document.
+## Selecting a Language
 
-{{source=CodeSnippets\CS\API\Telerik\Reporting\LocalizationSnippets.cs region=SetThreadCulture}}
-{{source=CodeSnippets\VB\API\Telerik\Reporting\LocalizationSnippets.vb region=SetThreadCulture}}
+Select the language that you want to edit from the **Language** property:
 
+1. Select the report.
+1. In the **Properties** panel, open the **Language** drop-down list.
+1. Select a culture, such as `en-US` or `bg-BG`.
+
+The designer saves any unsaved changes before it changes the language. It then updates the report package and reloads the report with the selected language. Wait for the reload to finish before you continue editing.
+
+To return to the base report language, select `(Default)` from the **Language** drop-down list. The base language contains the report values that the report uses when no language-specific value exists.
+
+## Translating Report Content
+
+After you select a language, edit the report content that you want to translate:
+
+1. Select a report item that contains static content, such as a `TextBox`.
+1. In the **Properties** panel, edit the value that you want to translate. For example, edit the `Value` property of a text box.
+1. Repeat the process for each report item and localizable property.
+1. Select **Save** in the main menu to save the language-specific values.
+
+The designer applies the changes to the language that appears in the **Language** property. Changes that you make in one language do not overwrite the corresponding values in another language.
+
+> important You cannot add new report items while the **Language** property contains a language other than `(Default)`. Return to `(Default)` before you add new report items, then select the target language again.
+
+## Disabling Report Localization
+
+Disable localization when you no longer need language-specific values:
+
+1. Select the report.
+1. In the **Properties** panel, set **Localizable** to `False`.
+1. In the confirmation window, select **Yes**.
+1. Select **Save** in the main menu.
+
+Disabling localization permanently removes all language-specific resource values from the report. The report keeps the values from the active language as its regular report values.
+
+## Previewing the Localized Report
+
+Preview the report to verify the language-specific content:
+
+1. Select the language that you want to preview from the **Language** drop-down list.
+1. Select **Preview** in the upper-right corner of the designer.
+1. Review the static content and switch between the available languages to compare the translations.
+
+Return to design mode and select **(Default)** before you add new report items.
+
+## Next Steps
+
+After you localize the report, you can:
+
+* [Explore the Report Structure](slug:user-guide/report-structure)
+
+## See Also
+
+For related information, see:
+
+* [Create Your First Report in the Web Report Designer](slug:web-report-designer-user-guide-getting-started)
+* [Configure the User Preferences](slug:web-report-designer-user-guide-workspace-preferences)

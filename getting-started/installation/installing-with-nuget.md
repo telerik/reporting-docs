@@ -33,7 +33,7 @@ Use the **Telerik NuGet server** only when you need older package versions that 
 
 ## How to Install Telerik Reporting from NuGet.org
 
-As of **Q3 2026**, the Telerik Reporting packages are available on [NuGet.org package hosting](https://www.nuget.org/). This is the **recommended** installation path for new development because both Visual Studio and the .NET CLI use NuGet.org by default.
+As of **2026 Q3**, the Telerik Reporting packages are available on [NuGet.org package hosting](https://www.nuget.org/). This is the **recommended** installation path for new development because both Visual Studio and the .NET CLI use NuGet.org by default.
 
 ### How to Install from NuGet.org in Visual Studio
 
@@ -60,7 +60,7 @@ Install-Package Telerik.Reporting
 
 ## How to Install from the Telerik NuGet Server
 
-> important As of **Q3 2026**, NuGet.org is the recommended source for current Telerik Reporting packages. Use the Telerik NuGet server for backward compatibility, for older releases, or when your organization requires the Telerik private feed.
+> important As of **2026 Q3**, NuGet.org is the recommended source for current Telerik Reporting packages. Use the Telerik NuGet server for backward compatibility, for older releases, or when your organization requires the Telerik private feed.
 
 The Telerik NuGet server provides authenticated access to Telerik packages and older versions that may not be part of your standard NuGet.org-based workflow.
 

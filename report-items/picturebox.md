@@ -57,7 +57,6 @@ When you add values to the PictureBox, note the following:
 - When the `Value` property is a string that is not an expression (a string that doesn't start with `=`), the PictureBox assumes the value is a URI, a Base64-encoded image, or an SVG markup.
 
   The **Relative Path** will be resolved as follows:
-
   - For **declarative report definitions (TRDP, TRDX, and TRDJ files)** - with respect to the report location.
   - For **type report definitions (CS and VB reports)** - with respect to the application starting point.
 
@@ -168,6 +167,30 @@ The SVG images are rendered in vector format where the rendering extension suppo
 
 > Since version `18.3.24.1112` of Telerik Reporting, the PictureBox item now supports [**NoDataMessage**](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_NoDataMessage). For more information, refer to the [Setting a No Data Message](slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message) article.
 
+## Rotating Images
+
+Use the [`Rotation`](/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Rotation) property to rotate the image displayed in a PictureBox. The default value is `Auto`, which applies the image's EXIF orientation metadata to raster images.
+
+![A raster image rotates in the PictureBox when its rotation setting changes.](images/picturebox-rotation.gif)
+
+> important The `Rotation` property does not rotate SVG images.
+
+The following table lists the available `Rotation` values:
+
+| Value       | Description                                                                                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `None`      | Does not rotate the image and ignores EXIF orientation metadata.                                                                                                                                                |
+| `Auto`      | Automatically rotates or flips a raster image based on its EXIF orientation metadata. If the image has no applicable orientation metadata, the image keeps its original orientation. This is the default value. |
+| `Rotate90`  | Rotates the image 90 degrees clockwise.                                                                                                                                                                         |
+| `Rotate180` | Rotates the image 180 degrees.                                                                                                                                                                                  |
+| `Rotate270` | Rotates the image 270 degrees clockwise.                                                                                                                                                                        |
+
+To programmatically set the rotation of a raster image clockwise by 90 degrees, set `Rotation` to `Rotate90`:
+
+```CSharp
+this.pictureBox1.Rotation = Telerik.Reporting.Drawing.ImageRotation.Rotate90;
+```
+
 ## Next Steps
 
 - [(Demo) Product Catalog Report with a PictureBox](https://demos.telerik.com/reporting/product-catalog)
@@ -176,6 +199,7 @@ The SVG images are rendered in vector format where the rendering extension suppo
 - [Setting a No Data Message](slug:telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message)
 - [(API) PictureBox](/api/Telerik.Reporting.PictureBox)
 - [(API) Sizing](/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)
+- [(API) Rotation](/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Rotation)
 - [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 - [Telerik Reporting Knowledge Base](/knowledge-base)
 

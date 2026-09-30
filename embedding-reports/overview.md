@@ -13,9 +13,17 @@ components: [general]
 
 # Embedding Reports Overview
 
+This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting.
+
 You can add reports to diverse types of web and desktop applications. [The purpose of integrating Telerik Reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx) into applications is to deliver interactive reports directly to your business system. The integration allows users to view and effortlessly export the report document to various formats.
 
-This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting.
+To create a starter app with a preconfigured Report Viewer and Reporting REST service, install the [Telerik CLI](slug:reporting-telerik-cli) first. Run the following command, then select the template for your preferred Report Viewer and enter a project name:
+
+```powershell
+telerik create reporting --interactive
+```
+
+The wizard also prompts you to select a target framework. For details about the available templates and options, see [Telerik CLI](slug:reporting-telerik-cli).
 
 ## Displaying Reports in Applications
 
@@ -23,20 +31,20 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications](slug
 
 ### Web Applications
 
-* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) - an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript.
-* [HTML5 MVC Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.
-* [HTML5 WebForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.
-* [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) - a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components.
-* [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) - an Angular component that wraps the HTML5 Report Viewer.
-* [ReactJS Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) - A ReactJS component that wraps the HTML5 Report Viewer.
-* [Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) - a Blazor component that wraps the HTML5 Report Viewer.
-* [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) - a native Blazor component built with [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components.
+- [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) - an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript.
+- [HTML5 MVC Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.
+- [HTML5 WebForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.
+- [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) - a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components.
+- [Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview) - an Angular component that wraps the HTML5 Report Viewer.
+- [ReactJS Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview) - A ReactJS component that wraps the HTML5 Report Viewer.
+- [Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) - a Blazor component that wraps the HTML5 Report Viewer.
+- [Native Blazor Report Viewer](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) - a native Blazor component built with [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components.
 
 ### Desktop Applications
 
-* [WinForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) - a composite of standard Windows Forms controls that is suitable for WinForms and WPF projects.
-* [WPF Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview) - a composite of Telerik UI for WPF controls that is suitable for WPF and WinForms projects.
-* [WinUI Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects.
+- [WinForms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) - a composite of standard Windows Forms controls that is suitable for WinForms and WPF projects.
+- [WPF Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview) - a composite of Telerik UI for WPF controls that is suitable for WPF and WinForms projects.
+- [WinUI Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects.
 
 ### Requirements
 
@@ -60,21 +68,21 @@ Telerik Report Server is a server-based platform powered by Telerik Reporting th
 
 Connect the Report Viewer to the Telerik Report Server’s engine:
 
-* [Use HTML5 Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server)
-* [Use HTML5 ASP.NET MVC Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server)
-* [Use HTML5 ASP.NET Web Forms Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server)
-* [Use Windows Forms Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server)
-* [Use WPF Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server)
+- [Use HTML5 Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server)
+- [Use HTML5 ASP.NET MVC Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server)
+- [Use HTML5 ASP.NET Web Forms Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server)
+- [Use Windows Forms Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server)
+- [Use WPF Report Viewer With Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server)
 
 ## Generating Custom Reports
 
 [Program the Report Definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/overview) section provides information for advanced report authors on how to generate reports programmatically using the provided API:
 
-* [Create Report Programmatically](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-programmatically)
-* [Access Report Items Programmatically](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically)
-* [Use Report Events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview)
-* [Package Report Definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition)
-* [Serialize Report Definition in XML](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml)
+- [Create Report Programmatically](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-programmatically)
+- [Access Report Items Programmatically](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically)
+- [Use Report Events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview)
+- [Package Report Definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition)
+- [Serialize Report Definition in XML](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml)
 
 ## Next Steps
 
@@ -86,4 +94,4 @@ Are you into ASP.NET Core? See how to display reports in a .NET Core application
 
 ## See Also
 
-* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications](slug:asp-net-core-reporting)
+- [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications](slug:asp-net-core-reporting)

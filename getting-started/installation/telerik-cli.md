@@ -11,7 +11,13 @@ tag: new
 
 # Telerik CLI
 
-The Telerik CLI is a .NET global tool that automates common Telerik development tasks from the command line. Use the Telerik CLI to configure the Telerik NuGet package source, create new projects from Telerik templates, and update Telerik Reporting packages without opening Visual Studio.
+The Telerik CLI is a .NET global tool that can help you set up your Telerik Reporting development environment, including:
+
+- Installing or updating your [license key](#get-license-key).
+- Setting up the [Telerik NuGet feed](#set-up-telerik-nuget-feed).
+- [Creating Telerik Reporting apps](#create-telerik-reporting-apps).
+- Installing the [Telerik MCP Server](#install-mcp-server).
+- Configuring the [Telerik Reporting MCP server](#install-reporting-mcp-server).
 
 The Telerik CLI works on Windows, macOS, and Linux. It requires the .NET SDK (version 6.0 or later) and a valid Telerik account with an active Subscription or Trial license.
 
@@ -118,6 +124,29 @@ telerik license get-key
 ```
 
 The `license get-key` command downloads your up-to-date Telerik license key and creates a `telerik-license.txt` file in your operating system user's folder.
+
+## Create Telerik Reporting Apps
+
+Use the Telerik CLI's interactive project creation flow to select a Reporting template and configure the new app.
+
+Run the following command from the directory where you want to create the project:
+
+```powershell
+telerik create reporting --interactive
+```
+
+The interactive prompt lists these templates:
+
+| Template                                       | Generated project                                                        |
+| ---------------------------------------------- | ------------------------------------------------------------------------ |
+| Telerik Reporting HTML5 (jQuery) Report Viewer | ASP.NET Core app with the Reporting REST service and HTML5 viewer        |
+| Telerik Reporting Native Angular Report Viewer | Angular client with a companion ASP.NET Core Reporting service           |
+| Telerik Reporting Native Blazor Report Viewer  | Blazor Web App with the Reporting REST service and Native Blazor viewer  |
+| Telerik Reporting Web Report Designer          | ASP.NET Core app with the Web Report Designer and Reporting REST service |
+
+Select a template, enter a project name, and choose a target framework. The templates support `net8.0`, `net9.0`, and `net10.0`; `net10.0` is the default.
+
+For the Angular template, the target framework applies to the companion ASP.NET Core Reporting service.
 
 ## Install MCP Server
 

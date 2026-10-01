@@ -14,27 +14,9 @@ components: [general]
 
 The [Telerik Reporting Productivity Tools](https://marketplace.visualstudio.com/items?itemName=TelerikInc.telerik-reporting-productivity-tools) Extension for [Visual Studio Code](https://code.visualstudio.com/) provides scaffolding for the Telerik Reporting native Angular viewer.
 
-## Creating a Reporting App in VS Code
+To create a new test app, you can use the Angular CLI:
 
-Choose between creating a complete Reporting app and adding a Native Angular Report Viewer component to an Angular app.
-
-### Create a Complete App from a Reporting Template
-
-Install the [Telerik CLI](slug:reporting-telerik-cli), then run the following command in the VS Code integrated terminal:
-
-```powershell
-telerik create reporting --interactive
-```
-
-Select a template, enter a project name, and choose a target framework in the interactive prompts.
-
-### Add a Viewer to an Existing Angular App
-
-To create an Angular app for this workflow, use the Angular CLI:
-
-```powershell
-ng new ReportingAngularApp
-```
+`ng new ReportingAngularApp`
 
 > note The Telerik CLI includes a complete-app template for the Native Angular Report Viewer, in addition to the component generator described here. See the [Telerik CLI article](slug:reporting-telerik-cli) for details.
 

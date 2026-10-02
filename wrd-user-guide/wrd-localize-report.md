@@ -77,13 +77,14 @@ Disabling localization permanently removes all language-specific resource values
 
 ## Verifying the Localized Report
 
-Verify the language-specific content in **Design** mode of the web report designer:
+Verify the language-specific content in **Preview** mode of the web report designer:
 
-1. Select the language that you want to verify from the **Language** drop-down list.
+1. If you are in **Design** mode, click on the *Preview* button to switch to **Preview** mode.
+1. Select the language that you want to verify from the **Language** drop-down list beside the *Design* button.
+	> In **Preview** mode of the web report designer initially you will see the report with the culture corresponding to the currently selected culture in **Design** mode.
 1. Review the static content and switch between the available languages to compare the translations.
-1. Select **(Default)** language if you need to add new report items.
 
-> In **Preview** mode of the web report designer you will see the report with the culture corresponding to the current culture of the web designer application.
+<img style="border: 1px solid gray;" src="images/wrd-localized-report-preview.gif" alt="Verifying the localized TRDP report in Web Report Designer Preview mode." />
 
 ## Next Steps
 

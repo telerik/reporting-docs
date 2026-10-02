@@ -3,7 +3,7 @@ title: Localize Reports
 page_title: Localize Reports in the Web Report Designer
 description: "Learn how to create and edit language-specific report content in the Telerik Web Report Designer."
 slug: wrd-localizing-reports
-tags: localizing,reports,web,designer
+tags: localizing, reports, web, designer
 tag: new
 published: True
 position: 15
@@ -47,7 +47,7 @@ The designer saves any unsaved changes before it changes the language. It then u
 
 <img style="border: 1px solid gray;" src="images/wrd-localize.gif" alt="Enable Localization for a TRDP report in Web Report Designer and select a Language." />
 
-To return to the base report language, select `(Default)` from the **Language** drop-down list. The base language contains the report values that the report uses when no language-specific value exists.
+To return to the base report language, select `(Default)` from the **Language** drop-down list. The base language contains the report values, which will be used when no language-specific value exists.
 
 ## Translating Report Content
 
@@ -73,7 +73,7 @@ Disable localization when you no longer need language-specific values:
 
 Disabling localization permanently removes all language-specific resource values from the report. The report keeps the values from the active language as its regular report values.
 
-<img style="border: 1px solid gray;" src="images/wrd-disable-localization.gif" alt="Disabling Localization in the Web Report Designer with the confirmation window warning about removing all language-specifice values." />
+<img style="border: 1px solid gray;" src="images/wrd-disable-localization.gif" alt="Disabling Localization in the Web Report Designer with the confirmation window warning about removing all language-specific values." />
 
 ## Verifying the Localized Report
 
@@ -81,7 +81,7 @@ Verify the language-specific content in **Preview** mode of the web report desig
 
 1. If you are in **Design** mode, click on the *Preview* button to switch to **Preview** mode.
 1. Select the language that you want to verify from the **Language** drop-down list beside the *Design* button.
-	> In **Preview** mode of the web report designer initially you will see the report with the culture corresponding to the currently selected culture in **Design** mode.
+	> In **Preview** mode of the web report designer, initially, you will see the report with the culture corresponding to the currently selected culture in **Design** mode.
 1. Review the static content and switch between the available languages to compare the translations.
 
 <img style="border: 1px solid gray;" src="images/wrd-localized-report-preview.gif" alt="Verifying the localized TRDP report in Web Report Designer Preview mode." />

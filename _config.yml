@@ -423,6 +423,9 @@ navigation:
     designing-reports/report-book:
         position: 6
         title: "Report Book" 
+    designing-reports/json-report-definitions:
+        position: 7
+        title: "JSON Report Definitions"
     knowledge-base:
         position: 200
         title: "Knowledge Base"

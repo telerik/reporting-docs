@@ -35,9 +35,9 @@ $("#reportViewer1").telerik_ReportViewer({
     reportSource: {
         report: "Dashboard.trdp"
     },
-    parametersLoaded: function (e, parameters) {
-        var viewer = e.data.sender;
-        var parametersArea = document.querySelector(
+    parametersLoaded: function (e, ...parameters) {
+        const viewer = e.data.sender;
+        const parametersArea = document.querySelector(
             "#reportViewer1 .trv-parameters-area-content"
         );
 
@@ -45,12 +45,12 @@ $("#reportViewer1").telerik_ReportViewer({
             return;
         }
 
-        var visibleParameterCount = parameters.filter(function (parameter) {
+        const visibleParameterCount = parameters.filter(function (parameter) {
             return parameter.isVisible;
         }).length;
 
-        var runOnce = function () {
-            var renderedParameterCount = parametersArea.querySelectorAll(
+        const runOnce = function () {
+            const renderedParameterCount = parametersArea.querySelectorAll(
                 ".trv-parameter-container"
             ).length;
 
@@ -67,7 +67,7 @@ $("#reportViewer1").telerik_ReportViewer({
             return;
         }
 
-        var observer = new MutationObserver(function () {
+        const observer = new MutationObserver(function () {
             if (runOnce()) {
                 observer.disconnect();
             }
@@ -81,7 +81,7 @@ $("#reportViewer1").telerik_ReportViewer({
 });
 ```
 
-The `parametersLoaded` handler receives the loaded parameter collection as its second argument. The observer waits for the visible parameter containers in `.trv-parameters-area-content`, then disconnects after `afterParametersRendered` runs. The `data-parameters-handled` marker prevents the code from running again for the same viewer instance.
+The `parametersLoaded` handler receives the jQuery event object first, followed by one argument for each loaded parameter. The rest parameter collects those parameter arguments into an array. The observer waits for the visible parameter containers in `.trv-parameters-area-content`, then disconnects after `afterParametersRendered` runs. The `data-parameters-handled` marker prevents the code from running again for the same viewer instance.
 
 >note If the viewer can load a different report during the same page session and the code should run once for each report, remove or reset the `data-parameters-handled` marker when the report source changes.
 

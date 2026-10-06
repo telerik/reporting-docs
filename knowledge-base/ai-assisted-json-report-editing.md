@@ -42,7 +42,7 @@ The [helper project and AI skill in the samples repository](https://github.com/t
 The [AI-Assisted JSON Report Editing sample](https://github.com/telerik/reporting-samples/tree/master/AiAssistedJsonReportEditing) contains the following assets:
 
 * [Standalone helper project](https://github.com/telerik/reporting-samples/tree/master/AiAssistedJsonReportEditing/ReportingJsonTools)—A .NET console application for type discovery, schema retrieval, and JSON definition validation.
-* [Example AI skill](https://github.com/telerik/reporting-samples/blob/master/AiAssistedJsonReportEditing/reporting-json-author/SKILL.md)—Instructions for targeted edits to existing `.trdj` reports, including changes to text, style, layout, and report items.
+* [Example AI skill](https://github.com/telerik/reporting-samples/blob/master/AiAssistedJsonReportEditing/reporting-json-editor/SKILL.md)—Instructions for targeted edits to existing `.trdj` reports, including changes to text, style, layout, and report items.
 
 The sample's README covers package and licensing prerequisites, helper commands, skill installation, and an example prompt. The skill does not create complete reports or report books from scratch.
 

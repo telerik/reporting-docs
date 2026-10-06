@@ -146,6 +146,7 @@ The `x-netType-oneOf` annotation lists the reporting types supported by the `Col
 
 ## See Also
 
+* [Editing and Validating Existing JSON Reports with an AI Skill](slug:validate-ai-generated-json-report-definitions)
 * [Validating JSON Report Definitions](slug:json-validation-sdk)
 * [Serializing and Deserializing Report Definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml)
 * [Graph API reference](/api/telerik.reporting.graph)

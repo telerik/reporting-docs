@@ -129,6 +129,6 @@ Invalid reports are printed to standard output as a path followed by the validat
 
 ## See Also
 
-* [Authoring and Validating JSON Reports with an AI Skill](slug:validate-ai-generated-json-report-definitions)
+* [Editing and Validating Existing JSON Reports with an AI Skill](slug:validate-ai-generated-json-report-definitions)
 * [JSON Schema for Telerik Reporting Types](slug:json-schema)
 * [Serializing and Deserializing Report Definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml)

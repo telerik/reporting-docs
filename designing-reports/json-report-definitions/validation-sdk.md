@@ -110,7 +110,7 @@ For example, run the following commands from the `Tools` directory:
 ```powershell
 .\ReportDefinitionValidator.exe '.\reports\monthly.trdj'
 .\ReportDefinitionValidator.exe '.\reports' '.\archive\**\*.trdj'
-.\ReportDefinitionValida***.exe --help
+.\ReportDefinitionValidator.exe --help
 ```
 
 The first command validates a single report file. The second validates all `.trdj` files found under a directory and those that match a recursive glob pattern. The `--help` option displays usage information without validating inputs.

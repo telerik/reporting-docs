@@ -12,6 +12,8 @@ components: [general]
 
 # Structure of the Visual Studio Report Designer
 
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+
 The .NET and .NET Framework designers share report layout tools, but differ in setup, preview controls, and explorer access. The following sections identify those differences. Screenshots of the older designer illustrate the .NET Framework interface.
 
 ## Comparing the Designers

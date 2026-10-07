@@ -12,6 +12,8 @@ components: [general]
 
 # Previewing Reports in the Visual Studio Report Designer for .NET
 
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+
 The Visual Studio Report Designer for .NET provides **Designer** and **Preview** tabs. Unlike the .NET Framework designer, it uses dialogs for report parameters and export options.
 
 Before you preview a report, [set up the designer and open a coded report](slug:vs-report-designer-net-getting-started).

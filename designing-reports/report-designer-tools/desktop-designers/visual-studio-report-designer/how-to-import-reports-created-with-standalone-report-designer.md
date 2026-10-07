@@ -13,6 +13,8 @@ components: [general]
 
 # Importing Reports Created with the Standalone or Web Report Designer
 
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+
 >note The Visual Studio item-template Import Report Wizard belongs to the **.NET Framework designer**. The NuGet-based .NET designer does not supply this template.
 
 Should you need to import your existing reports created with the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) our recommendation is to use the TRDX|TRDP converter available in the [Import Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard).

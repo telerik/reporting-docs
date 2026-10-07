@@ -13,6 +13,8 @@ components: [general]
 
 # Telerik Reporting Menu Overview
 
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+
 The **Telerik Reporting menu** belongs to the installed Visual Studio extension used with the **.NET Framework designer**. In Visual Studio 2019 and later, open **Extensions > Telerik > Reporting**. Earlier versions expose **Telerik > Reporting**.
 
 When the .NET Framework report designer is active, the menu provides the following commands:

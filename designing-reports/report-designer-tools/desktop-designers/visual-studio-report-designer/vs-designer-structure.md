@@ -20,7 +20,7 @@ The following table compares the designer workflows and features:
 
 | Feature or workflow | .NET Framework designer | .NET designer |
 | ------ | ------ | ------ |
-| Distribution | Installed Telerik Reporting Visual Studio extension | Design-time assemblies in a `Telerik.Reporting` NuGet package version that includes the designer |
+| Distribution | Installed Telerik Reporting Visual Studio extension | `Telerik.Reporting.VSDesigner` NuGet package, referenced alongside the same-version `Telerik.Reporting` package |
 | Opening a report | Double-click the report or select **View Designer** | Select **View Designer**; double-click behavior depends on the default editor |
 | Visual Studio report templates | Available through the installed extension | Not supplied by the designer package |
 | Preview modes | **Designer**, **Preview**, and **Html Preview** | **Designer** and **Preview**; no HTML preview tab |

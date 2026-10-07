@@ -37,7 +37,7 @@ To use the designer in an existing report project:
 
 1. Make the packages available through a NuGet package source. If you received the packages as a download, see [Installing the Packages from a Download](#installing-the-packages-from-a-download).
 1. Set the target framework of the project to `net8.0-windows` or later, and set `UseWindowsForms` to `true`.
-1. Add references to the `Telerik.Reporting` and `Telerik.Reporting.VSDesigner` packages of the same version. Set `PrivateAssets` to `all` in the reference to the designer package.
+1. Add references to the `Telerik.Reporting` and `Telerik.Reporting.VSDesigner` packages of the same version. Set [PrivateAssets](https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets) to `all` in the reference to the designer package.
 1. If your reports use JSON, Web Service, or GraphQL data sources, add references to the matching data source packages of the same version.
 1. [Activate your Telerik Reporting license](slug:license-key).
 1. Restore the packages and build the project.
@@ -83,31 +83,31 @@ If you received the designer as a download, the download contains the following 
 * `packages` contains the `Telerik.Reporting`, `Telerik.Reporting.VSDesigner`, `Telerik.Reporting.WebServiceDataSource`, and `Telerik.Reporting.GraphQLDataSource` packages of the same version as `.nupkg` files.
 * `Sample` contains a report project that uses these packages. For more information, see [Trying the Bundled Sample](#trying-the-bundled-sample).
 
-To make the packages available to your projects, register a folder that contains them as a NuGet package source:
+To make the packages available to your projects, register a folder that contains them as a NuGet package source. For more details follow the KB article [Setup a Local NuGet Package Feed](slug:setup-local-nuget-feed), or the steps below:
 
 1. Extract the download.
 1. Create a permanent folder for the packages, for example, `%LOCALAPPDATA%\Telerik\VsDesigner\packages`. Copy the `.nupkg` files from the `packages` folder of the download into it.
 
-   Your projects restore the packages from this folder. Keep the folder while your projects reference these packages.
+	Your projects restore the packages from this folder. Keep the folder while your projects reference these packages.
 
 1. Register the folder as a package source by using one of the following options:
 
-   * In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager Settings** > **Package Sources**. Add a source, name it, for example, `Telerik Reporting VS Designer`, set its source to the package folder, and save the settings.
-   * In PowerShell, run the following command:
+	* In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager Settings** > **Package Sources**. Add a source, name it, for example, `Telerik Reporting VS Designer`, set its source to the package folder, and save the settings.
+	* In PowerShell, run the following command:
 
-     ```powershell
-     dotnet nuget add source "$env:LOCALAPPDATA\Telerik\VsDesigner\packages" --name "Telerik Reporting VS Designer"
-     ```
+		```powershell
+		dotnet nuget add source "$env:LOCALAPPDATA\Telerik\VsDesigner\packages" --name "Telerik Reporting VS Designer"
+		```
 
-   * In the `nuget.config` file of your solution, add the package folder to the `packageSources` element:
+	* In the `nuget.config` file of your solution, add the package folder to the `packageSources` element:
 
-     ```xml
-     <packageSources>
-       <add key="Telerik Reporting VS Designer" value="%LOCALAPPDATA%\Telerik\VsDesigner\packages" />
-     </packageSources>
-     ```
+		```xml
+		<packageSources>
+		<add key="Telerik Reporting VS Designer" value="%LOCALAPPDATA%\Telerik\VsDesigner\packages" />
+		</packageSources>
+		```
 
-   The first two options store the source in your user-level `NuGet.Config` file, so all your projects can use it. A source in the `nuget.config` file of a solution applies only to the projects in the folder of that file and its subfolders.
+	The first two options store the source in your user-level `NuGet.Config` file, so all your projects can use it. A source in the `nuget.config` file of a solution applies only to the projects in the folder of that file and its subfolders.
 
 1. [Configure your report project](#configuring-your-report-project) to reference the package version from the download.
 
@@ -177,7 +177,9 @@ Projects that still reference packages from the deleted folder cannot restore th
 
 ## Opening a Report
 
-To open a coded report in the designer:
+By default, Visual Studio opens the files of SDK-style projects in the code editor when you double-click them. The first time you open a report in the designer, the designer changes a Visual Studio setting. After that, double-click opens component files in their designer. The designer changes the setting only if you have never chosen a default editor for component files.
+
+### Open a Coded Report in the Designer from the Context Menu
 
 1. In **Solution Explorer**, locate the main `.cs` file of the report, not its `.Designer.cs` file.
 1. Right-click the file and select **View Designer**. You can also select the file and press `Shift+F7`.
@@ -186,16 +188,19 @@ The following animation shows the **View Designer** command and the report desig
 
 ![Visual Studio Solution Explorer shows the View Designer command that opens a coded report in the .NET designer.](images/Designer.NET/vs-designer-net-open-report.gif)
 
-By default, Visual Studio opens the files of SDK-style projects in the code editor when you double-click them. The first time you open a report in the designer, the designer changes a Visual Studio setting. After that, double-click opens component files in their designer. The designer changes the setting only if you have never chosen a default editor for component files.
+### Set Coded Reports to Open in the Designer with Double-Click
+
+1. In **Solution Explorer**, right-click a report file and select **Open With**.
+1. Select **Component (Windows Forms) Designer**, select **Set as Default**, and then select **OK**.
+
+### Make Double-Click Open Component Files in the Code Editor
 
 The setting is the same one that **Open With** > **Set as Default** changes. It applies to all component files in SDK-style projects, not only to reports.
-
-To make double-click open component files in the code editor again:
 
 1. In **Solution Explorer**, right-click a report file and select **Open With**.
 1. Select **C# Editor**, select **Set as Default**, and then select **OK**.
 
-Double-click also opens the code editor until Visual Studio recognizes the file as a component. In this case, use **View Designer**.
+## Open Report/Data/Group Explorer
 
 To open Report Explorer, Data Explorer, or Group Explorer, right-click the report design surface and select **View** > the explorer. For more information, see [Explorer Windows](slug:visual-studio-report-designer-structure#explorer-windows). To preview or export the report, see [Previewing Reports in the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-preview).
 

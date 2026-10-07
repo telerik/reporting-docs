@@ -13,6 +13,8 @@ components: [general]
 
 # Importing Reports Created with the Standalone or Web Report Designer
 
+>note The Visual Studio item-template Import Report Wizard belongs to the **.NET Framework designer**. The NuGet-based .NET designer does not supply this template.
+
 Should you need to import your existing reports created with the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) our recommendation is to use the TRDX|TRDP converter available in the [Import Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard).
 
 The Names of Report Items, Sections, Groups, and Components are converted to Report properties during conversion to CS/VB type. For that reason they must comply with the [C# identifier naming rules and conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names). The failure to meet these name requirements will result in an error like "Identifier '_ItemName_' is not valid".
@@ -26,3 +28,4 @@ The result will be a class inheriting `Telerik.Reporting.Report`, that can be lo
 ## See Also
 
 * [Report Designer Tools](slug:telerikreporting/designing-reports/report-designer-tools/overview)
+* [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)

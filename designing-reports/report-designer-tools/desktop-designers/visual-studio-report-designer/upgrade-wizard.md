@@ -40,6 +40,8 @@ This wizard will upgrade the following:
 >
 > * The HTML5 Report Viewer scripts
 
+For the NuGet-based Visual Studio Report Designer for .NET, follow [Updating the Designer Package](slug:vs-report-designer-net-getting-started#updating-the-designer-package). Its version follows the project's `Telerik.Reporting` package reference, not the extension's Upgrade Wizard.
+
 1. On the first step the wizard provides basic update process information:
 
 	![First Step in Upgrade Wizard](images/first-step-upgrade-wizard.png)  
@@ -99,3 +101,4 @@ Feel free to contact us via the [support ticketing system](https://www.telerik.c
 ## See Also
 
 * [Missing Telerik menu in Visual Studio](slug:missing-telerik-menu-in-visual-studio)
+* [Updating the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started#updating-the-designer-package)

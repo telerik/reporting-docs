@@ -12,11 +12,32 @@ components: [general]
 
 # Structure of the Visual Studio Report Designer
 
-After you have opened a report in the Telerik Visual Studio Report Designer, you may use the following elements it exposes:
+The .NET and .NET Framework designers share report layout tools, but differ in setup, preview controls, and explorer access. The following sections identify those differences. Screenshots of the older designer illustrate the .NET Framework interface.
+
+## Comparing the Designers
+
+The following table compares the designer workflows and features:
+
+| Feature or workflow | .NET Framework designer | .NET designer |
+| ------ | ------ | ------ |
+| Distribution | Installed Telerik Reporting Visual Studio extension | Design-time assemblies in a `Telerik.Reporting` NuGet package version that includes the designer |
+| Opening a report | Double-click the report or select **View Designer** | Select **View Designer**; double-click behavior depends on the default editor |
+| Visual Studio report templates | Available through the installed extension | Not supplied by the designer package |
+| Preview modes | **Designer**, **Preview**, and **Html Preview** | **Designer** and **Preview**; no HTML preview tab |
+| Report parameters | Parameters area in the preview viewer | **Report Parameters** dialog from the preview toolbar |
+| Export | Format menu in the preview viewer | **Export Report** dialog from the preview toolbar |
+| Document map area | Available in preview | Not available |
+| Report, Data, and Group Explorer | Telerik extension menu | Report context menu's **View** submenu; not the Extensions menu |
+| Zoom controls | Zoom combo box | Zoom-out and zoom-in buttons with a percentage label |
+| Snap grid, gridline snapping, and snaplines | Supported | Supported |
+| Dimensions, design-time watermarks, and panning | Supported | Supported |
+| Report minimap | Available | Not available |
+
+For project requirements and package configuration, see [Getting Started with the .NET Designer](slug:vs-report-designer-net-getting-started). For parameter and export procedures, see [Previewing Reports in the .NET Designer](slug:vs-report-designer-net-preview).
 
 ## Telerik Reporting Menu
 
-The [menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) is accessible through the __Extensions Menu --> Telerik --> Reporting__ for Visual Studio 2019 and later.
+For the **.NET Framework designer**, the [Telerik Reporting menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) is accessible through **Extensions > Telerik > Reporting** in Visual Studio 2019 and later.
 
 If you use Visual Studio versions up to 2017, you may find it in the __Telerik Menu --> Reporting__.
 
@@ -28,17 +49,39 @@ The menu lets you trigger the following functionalities:
 * [Report Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview)
 * [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard)
 
+The .NET designer does not use these extension-menu commands to open its explorers. Use the [report context menu](#explorer-windows) instead.
+
+## Explorer Windows
+
+Both designers provide **Properties**, **Report Explorer**, **Data Explorer**, and **Group Explorer** windows. Visual Studio supplies the **Properties** window.
+
+To open an explorer in the **.NET designer**:
+
+1. Open the report and select **Designer**.
+1. Right-click an unused area of the design surface to open the report context menu.
+1. Select **View**, then **Report Explorer**, **Data Explorer**, or **Group Explorer**.
+
+The following animation shows how to open and dock **Report Explorer** from the report context menu:
+
+![The .NET report designer context menu opens Report Explorer from the View submenu and docks it in Visual Studio.](images/Designer.NET/vs-designer-net-add-report-explorer.gif)
+
+These explorer windows are separate from the legacy extension's windows. Commands under **Extensions > Telerik > Reporting** do not open the .NET designer's explorers.
+
 ## Design Views Buttons
 
-Use these buttons to switch between __Design__, __Preview__, and __HTML__ view mode of the report.
+In the .NET designer, select **Designer** or **Preview**. Report parameters and export options open dialogs from the preview toolbar. The designer does not provide an HTML preview tab or document map area.
+
+The following image shows the **.NET Framework designer's** buttons for **Designer**, **Preview**, and **Html Preview**:
 
 ![Visual Studio Report Designer's design views buttons.](images/Designer/vs-design-views-buttons.png)
 
 ## Report Selector Button
 
-Located in the upper left-hand of the report designer. Clicking this button makes the report active in the __Properties__ window.
+In the .NET Framework designer, the report selector button is in the upper-left corner. Click it to select the report in **Properties**.
 
 ![Visual Studio Report Designer's report selector button.](images/Designer/vs-report-selector-button.png)
+
+In the .NET designer, click an unused area of the design surface to select the report and display its properties.
 
 ## Rulers
 
@@ -56,27 +99,33 @@ Shows the [DataSource components](slug:telerikreporting/designing-reports/connec
 
 ## Context Menu
 
-The [Context Menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu) will conditionally display contents depending on the area that was right-clicked. In the figure below the menu is invoked in the area next to the report design surface.
+The [context menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu) displays commands for the area you right-click. In the .NET designer, the report context menu also opens the [explorer windows](#explorer-windows).
+
+The following image shows the context menu beside the **.NET Framework designer's** report surface:
 
 ![Visual Studio Report Designer's main areas/functionalities.](images/Designer/visual-studio-report-designer-2017.png)
 
 ## Tooltip Buttons
 
-All the buttons in the tooltip, placed at the lower left corner of the designer, are designed to ease you in your Report designing experience.
+Both designers provide a toolbar at the bottom of the design surface for zoom and layout aids. The following image shows the **.NET Framework designer's** toolbar:
 
 ![Visual Studio Report Designer's toolstrip used to turn on/off functionalities.](images/Designer/report-designer-toolstrip.png)
 
-They toggle various options that help in aligning, snapping, and stretching the report items and also adjust different designer settings.
+In the .NET designer, the toolbar also supports the snap grid, snapping to gridlines and snaplines, dimensions, watermarks, and panning. The screenshots below illustrate these layout aids.
 
 ### Zoom
 
-The combo box enables you to easily specify the zoom percentage in which you see the design surface. You can do that by holding the `Ctrl` key and using the mouse wheel to zoom as well.
+The .NET designer uses zoom-out and zoom-in buttons with a percentage label instead of a combo box.
+
+In the .NET Framework designer, select the zoom percentage from the combo box. You can also hold `Ctrl` and use the mouse wheel. The following image shows this combo box:
 
 ![Visual Studio Report Designer Zoom configurations.](images/snapGrid.png)
 
 ### Show/Hide the Snap Grid
 
-The button switches on or off the displayed __snap grid__. The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap* or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel. Here is a workspace showing the snap grid turned on:
+The button shows or hides the **snap grid** in both designers. Grid visibility and snapping are separate options; use the gridline-snapping button to control whether objects snap to the grid.
+
+The following .NET Framework example shows the grid:
 
 ![Visual Studio Report Designer when snapping to grid is turned on.](images/snapGrid1.png)
 
@@ -92,7 +141,9 @@ When this option is enabled, it allows you to drag objects on the design surface
 
 ### Show/Hide Dimensions
 
-When enabled, the designer will show the distances from the currently selected object to the nearest elements.
+Use this option to display dimensions for the selected item. In the .NET designer, the dimensions show distances to the edges of the item's parent container. Location dimensions are not displayed for items inside a Table.
+
+The following .NET Framework example shows dimensions for a selected item:
 
 ![Report item dimension in the Visual Studio Report Designer when Show Dimensions is enabled.](images/snapGrid3.png)
 
@@ -106,7 +157,9 @@ This option allows you to switch between drag and pan mode in the designer. When
 
 ## Show/Hide the Report MiniMap
 
-In the lower-right corner of the design surface, click Show MiniMap. This element is especially useful when you have zoomed the report and want to focus on a specific element. To hide the map, click on the design surface to have it closed.
+The report minimap is available only in the **.NET Framework designer**. The .NET designer does not provide this feature.
+
+In the lower-right corner of the .NET Framework design surface, click **Show MiniMap** to navigate a zoomed report. Click the design surface to close the minimap.
 
 ![Report minimap when enabled in the Visual Studio Report Designer.](images/snapGrid4.png)
 
@@ -119,13 +172,15 @@ Alignment determines how an element resizes. For example, a left-aligned element
 * Select two report items and change their `HorizontalAlignment` by clicking __Left__, __Center__, __Right__, or __Stretch__.
 * Select two report items and change their `VerticalAlignment` by clicking __Top__, __Center__, __Bottom__, or __Stretch__. You can also change alignment by moving an element on the design surface.
 
-The Visual Studio Report Designer features also `Properties Explorer`, `Report Explorer`, `Group Explorer`, and `Data Explorer`. The first one is displayed by default in the Visual Studio. The other three can be opened from the Telerik Menu.
+For access to **Properties**, **Report Explorer**, **Group Explorer**, and **Data Explorer**, see [Explorer Windows](#explorer-windows).
 
-> If you are using **Visual Studio 2022**, ensure that the `Platform target` of your `Report Library` project is not set to `x86`, or you won't be able to preview your reports. This is because **Visual Studio 2022** is a 64-bit application and, by design, `.NET` does not allow mixing 32-bit and 64-bit assemblies in the same process.
+>note For the .NET Framework designer in Visual Studio 2022, ensure that the report project's `Platform target` is not `x86`. Visual Studio cannot preview 32-bit assemblies in its 64-bit process.
 
 ## See Also
 
 * [Visual Studio Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview)
-* [Edit CS reports in .NET projects with Visual Studio Report Designer](slug:how-to-use-vs-designer-in-dotnet-core)
+* [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)
+* [Previewing Reports in the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-preview)
+* [Editing .NET Reports Through a .NET Framework Project (Legacy Workaround)](slug:how-to-use-vs-designer-in-dotnet-core)
 * [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
 * [Web Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)

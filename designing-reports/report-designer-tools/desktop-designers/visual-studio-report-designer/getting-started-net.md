@@ -12,7 +12,7 @@ components: [general]
 
 # Getting Started with the Visual Studio Report Designer for .NET
 
-The Visual Studio Report Designer for .NET edits coded report definitions in SDK-style .NET projects. The designer is distributed as the `Telerik.Reporting.VSDesigner` NuGet package, which you reference next to the `Telerik.Reporting` package of the same version. The designer does not require the Telerik Reporting Visual Studio extension, a VSIX, or the Telerik Reporting installer.
+The Visual Studio Report Designer for .NET edits C# and VB coded report definitions in SDK-style .NET projects. The designer is distributed as the `Telerik.Reporting.VSDesigner` NuGet package, which you reference next to the `Telerik.Reporting` package of the same version. The designer does not require the Telerik Reporting Visual Studio extension, a VSIX, or the Telerik Reporting installer.
 
 The [.NET Framework designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview#installing-the-net-framework-designer) uses a different installation workflow.
 
@@ -181,7 +181,7 @@ By default, Visual Studio opens the files of SDK-style projects in the code edit
 
 ### Open a Coded Report in the Designer from the Context Menu
 
-1. In **Solution Explorer**, locate the main `.cs` file of the report, not its `.Designer.cs` file.
+1. In **Solution Explorer**, locate the report's main `.cs` file for C# or `.vb` file for VB, not its `.Designer.cs` or `.Designer.vb` file.
 1. Right-click the file and select **View Designer**. You can also select the file and press `Shift+F7`.
 
 The following animation shows the **View Designer** command and the report design surface:
@@ -198,7 +198,8 @@ The following animation shows the **View Designer** command and the report desig
 The setting is the same one that **Open With** > **Set as Default** changes. It applies to all component files in SDK-style projects, not only to reports.
 
 1. In **Solution Explorer**, right-click a report file and select **Open With**.
-1. Select **C# Editor**, select **Set as Default**, and then select **OK**.
+1. Select **C# Editor** for a C# report or the Visual Basic code editor for a VB report.
+1. Select **Set as Default**, and then select **OK**.
 
 ## Open Report/Data/Group Explorer
 

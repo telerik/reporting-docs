@@ -15,7 +15,7 @@ components: [general]
 
 The Visual Studio Report Designer edits coded report definitions in Visual Studio. Telerik Reporting provides two designer implementations with different installation and user interface workflows:
 
-* **Visual Studio Report Designer for .NET** uses the `Telerik.Reporting.VSDesigner` NuGet package and runs in a separate process for SDK-style projects.
+* **Visual Studio Report Designer for .NET** uses the `Telerik.Reporting.VSDesigner` NuGet package to edit C# and VB reports in SDK-style projects. It runs in a separate process.
 * **Visual Studio Report Designer for .NET Framework** uses the installed Telerik Reporting Visual Studio extension to edit C# and VB reports in .NET Framework projects.
 
 See [Structure of the Visual Studio Report Designer](slug:visual-studio-report-designer-structure#comparing-the-designers) for the feature and workflow differences.
@@ -83,7 +83,7 @@ In a .NET Framework project, double-click the report type in [Solution Explorer]
 
 ### Opening .NET Reports in the Designer
 
-In a configured .NET project, right-click the report's main `.cs` file in **Solution Explorer** and select **View Designer**. For an animation and details about the default editor, see [Opening a Report](slug:vs-report-designer-net-getting-started#opening-a-report).
+In a configured .NET project, right-click the report's main `.cs` or `.vb` file in **Solution Explorer** and select **View Designer**. For an animation and details about the default editor, see [Opening a Report](slug:vs-report-designer-net-getting-started#opening-a-report).
 
 ## Key Features of the Visual Studio Report Designer
 

@@ -29,7 +29,7 @@ Check the following requirements:
 * The project references the `Telerik.Reporting.VSDesigner` and `Telerik.Reporting` packages of exactly the same version.
 * A configured package source provides that version. If the `nuget.config` file of your solution clears or maps the package sources, it must include and map that source.
 * The packages restore without errors, and the project builds.
-* You open the main `.cs` file of the report, not its `.Designer.cs` file, with **View Designer** or `Shift+F7`.
+* You open the report's main `.cs` file for C# or `.vb` file for VB, not its `.Designer.cs` or `.Designer.vb` file, with **View Designer** or `Shift+F7`.
 
 If double-click opens the code editor, use **View Designer**. For details about the double-click behavior, see [Opening a Report](slug:vs-report-designer-net-getting-started#opening-a-report).
 

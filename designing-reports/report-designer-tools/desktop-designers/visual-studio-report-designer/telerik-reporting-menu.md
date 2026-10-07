@@ -38,7 +38,7 @@ For the procedure and an animation, see [Explorer Windows](slug:visual-studio-re
 
 ## Updating .NET Projects
 
-The extension's Upgrade Wizard does not upgrade .NET projects. Update the `Telerik.Reporting` package reference instead. For prerelease builds, follow [Updating the Designer Package](slug:vs-report-designer-net-getting-started#updating-the-designer-package).
+The extension's Upgrade Wizard does not upgrade .NET projects. Update all Telerik Reporting package references to the same version instead. For prerelease builds, follow [Updating the Designer Package](slug:vs-report-designer-net-getting-started#updating-the-designer-package).
 
 ## See Also
 

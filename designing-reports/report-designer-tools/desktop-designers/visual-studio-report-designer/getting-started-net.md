@@ -241,7 +241,7 @@ If you installed the feed with the script, remove the designer package reference
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Install-VsDesigner.ps1 -Uninstall
 ```
 
-Use the same `-FeedDirectory` if you installed to a custom folder.
+Use the same `-FeedDirectory` and `-SourceName` values if you customized them during installation.
 
 >warning Uninstall removes Telerik Reporting packages from the configured feed and their matching cached copies. Projects that still depend on that feed cannot restore those packages. The script does not remove package references from your projects.
 

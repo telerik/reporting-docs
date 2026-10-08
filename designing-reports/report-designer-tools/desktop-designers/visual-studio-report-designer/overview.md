@@ -24,7 +24,9 @@ See [Structure of the Visual Studio Report Designer](slug:visual-studio-report-d
 
 ## Designing Coded Reports for .NET
 
-To design coded reports in Visual Studio, [set up the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started). Select a package version that includes the new designer and configure the required project target and workload.
+Start with the [bundled sample](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample). Extract the complete bundle, open and build its solution, then open `SampleReport.cs` with **View Designer**. No installer or feed registration is required for the sample.
+
+For your own C# or VB reports, [configure an existing report project](slug:vs-report-designer-net-getting-started#configuring-your-report-project) with the required package references and project settings.
 
 The Standalone Report Designer for .NET is an alternative outside Visual Studio. Starting with [Telerik Reporting 2025 Q3](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813), it supports coded C# report definitions.
 
@@ -36,9 +38,11 @@ Both designers require Windows, but use different installation workflows.
 
 ### Installing the .NET Designer
 
-Reference a `Telerik.Reporting` NuGet package version that includes the .NET designer. Its version follows your project's package reference, not the most recent Reporting installation.
+Reference the `Telerik.Reporting.VSDesigner` NuGet package, which depends on the same-version `Telerik.Reporting` package. NuGet restores that dependency automatically. The designer version follows your project's package reference, not the most recent Reporting installation.
 
-The current setup requires Visual Studio 2026, the .NET desktop development workload, and a `net10.0-windows` project with `UseWindowsForms=true`. See [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started) for setup, the prerelease installer, and the sample workflow.
+The setup requires Visual Studio 2026 version 18.10 or later, the **.NET desktop development** workload, and `net8.0-windows` or later with `UseWindowsForms=true`. The bundled sample targets `net10.0-windows`.
+
+Follow the [bundle quick-start](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample) to open the prepared sample. Its `nuget.config` maps the designer to the bundle root and all other packages to nuget.org. The optional installer registers a permanent designer feed for your other projects; it does not modify or build the sample.
 
 ### Installing the .NET Framework Designer
 
@@ -49,6 +53,8 @@ The .NET Framework designer is installed with the [Telerik Reporting product](sl
 ## Starting the Visual Studio Report Designer and Opening Reports
 
 For .NET projects, use the [opening procedure](slug:vs-report-designer-net-getting-started#opening-a-report) after you configure the package and project. The new designer does not supply Visual Studio report templates.
+
+>note If Telerik Reporting is installed on your Windows machine with Visual Studio integration, its blank-report template can create a report for the .NET designer. You can ignore the template warning displayed before the blank report is created and continue. For project setup and template usage, see [Configuring Your Report Project](slug:vs-report-designer-net-getting-started#configuring-your-report-project).
 
 The following template and import procedures apply to the **.NET Framework designer**.
 

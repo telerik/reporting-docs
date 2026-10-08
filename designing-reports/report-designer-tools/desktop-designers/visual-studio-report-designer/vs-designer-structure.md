@@ -22,10 +22,10 @@ The following table compares the designer workflows and features:
 
 | Feature or workflow | .NET Framework designer | .NET designer |
 | ------ | ------ | ------ |
-| Distribution | Installed Telerik Reporting Visual Studio extension | `Telerik.Reporting.VSDesigner` NuGet package, referenced alongside the same-version `Telerik.Reporting` package |
+| Distribution | Installed Telerik Reporting Visual Studio extension | `Telerik.Reporting.VSDesigner` NuGet package, which depends on the same-version `Telerik.Reporting` package |
 | Report languages | C# and VB | C# and VB |
 | Opening a report | Double-click the report or select **View Designer** | Select **View Designer**; double-click behavior depends on the default editor |
-| Visual Studio report templates | Available through the installed extension | Not supplied by the designer package |
+| Visual Studio report templates | Available through the installed extension | Not supplied by the designer package; the blank-report template from an installed Telerik Reporting product can be used. See [project setup](slug:vs-report-designer-net-getting-started#configuring-your-report-project). |
 | Preview modes | **Designer**, **Preview**, and **Html Preview** | **Designer** and **Preview**; no HTML preview tab |
 | Report parameters | Parameters area in the preview viewer | **Report Parameters** dialog from the preview toolbar |
 | Export | Format menu in the preview viewer | **Export Report** dialog from the preview toolbar |

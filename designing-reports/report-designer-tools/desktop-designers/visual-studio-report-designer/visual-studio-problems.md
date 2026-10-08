@@ -28,18 +28,43 @@ Check the following requirements:
 * Visual Studio 2026 version 18.10 or later with the **.NET desktop development** workload is installed. To check your version, select **Help** > **About Microsoft Visual Studio**. Visual Studio 2022 and earlier versions of Visual Studio 2026 cannot load the designer.
 * The report project is an SDK-style project that targets `net8.0-windows` or later and sets `UseWindowsForms` to `true`.
 * The .NET Desktop Runtime of the .NET version that the project targets is installed. For example, a project that targets `net8.0-windows` requires the .NET 8 Desktop Runtime.
-* The project references the `Telerik.Reporting.VSDesigner` and `Telerik.Reporting` packages of exactly the same version.
+* The project references `Telerik.Reporting.VSDesigner` and restores its same-version `Telerik.Reporting` dependency. Any explicit engine reference must use that same version.
 * A configured package source provides that version. If the `nuget.config` file of your solution clears or maps the package sources, it must include and map that source.
 * The packages restore without errors, and the project builds.
 * You open the report's main `.cs` file for C# or `.vb` file for VB, not its `.Designer.cs` or `.Designer.vb` file, with **View Designer** or `Shift+F7`.
 
+The designer package depends on `Telerik.Reporting`, which NuGet restores automatically. An enabled source must provide this dependency; it does not need to be the designer feed. Keep an explicit engine reference for report libraries, as described in [Configuring Your Report Project](slug:vs-report-designer-net-getting-started#configuring-your-report-project).
+
 If double-click opens the code editor, use **View Designer**. For details about the double-click behavior, see [Opening a Report](slug:vs-report-designer-net-getting-started#opening-a-report).
+
+### The Bundled Sample Does Not Restore
+
+The [bundled sample](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample) restores without running the installer. Its `Sample\nuget.config` clears inherited sources and maps the designer to the bundle root and all other packages to [nuget.org](https://www.nuget.org/).
+
+Build the solution in Visual Studio to restore the packages. The script does not configure, restore, or build the sample.
+
+To resolve a restore failure:
+
+1. Open PowerShell in the `Sample` folder and run `dotnet nuget list source`.
+1. Verify that `Sample\nuget.config` is present and the `..\` source points to the bundle root.
+1. Keep `Telerik.Reporting.VSDesigner.<version>.nupkg` in that root folder. Check that its version matches the project's designer reference.
+1. Verify access to [nuget.org](https://www.nuget.org/) and availability of the requested engine, Web Service, GraphQL, and dependency package versions.
+1. If a required version is available only from another feed, add that feed and its package-source mappings to `Sample\nuget.config`. Do not mix Telerik Reporting package versions.
+1. Restore and build the solution again. Inspect the NuGet errors in Visual Studio's **Output** window.
+
+Selecting **All** in Visual Studio's NuGet Package Manager does not override the sample's `<clear />` entry or package-source mappings. Registering a user-level feed with the installer does not make that feed available to the sample unless you also add it to the sample configuration.
+
+For details, see [Restoring from Configured Package Sources](slug:vs-report-designer-net-getting-started#restoring-from-configured-package-sources).
+
+The sample targets `net10.0-windows`, so it requires the .NET 10 SDK and Desktop Runtime. Open `SampleReport.cs` with **View Designer** after the solution builds.
 
 ### The Previous Designer Build Still Loads
 
 NuGet caches every package version that it restores, and Visual Studio keeps shadow copies of the designer assemblies. If you install a different build that has the same version number, Visual Studio can continue to load the previous build.
 
-To load the new build:
+If you installed from a bundle, close Visual Studio and rerun the newer bundle's installer. It removes conflicting cached copies of the same version and clears the related designer cache when needed.
+
+For manual installations, follow these steps:
 
 1. Close all instances of Visual Studio.
 1. Find the NuGet global packages folder by running the following command. By default, the folder is `%USERPROFILE%\.nuget\packages`.
@@ -67,11 +92,13 @@ For more information about previewing reports, setting report parameters, and ex
 
 The following differences are by design and are not installation problems:
 
-* The `Telerik.Reporting.VSDesigner` package does not supply Visual Studio project, item, or report templates. Start with an existing coded report.
+* The `Telerik.Reporting.VSDesigner` package does not supply Visual Studio project, item, or report templates. Start with an existing coded report or the [bundled sample](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample).
 * The package does not install the **Telerik** menu of the Visual Studio extension. To open Report Explorer, Data Explorer, or Group Explorer, right-click the report design surface and select **View** > the explorer.
 * The designer does not provide an **Html Preview** tab. The **Preview** tab does not provide a document map.
 * The **Preview** tab opens the report parameters and the export options in the **Report Parameters** and **Export Report** dialogs.
 * The [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) does not upgrade .NET projects. Update the package references instead.
+
+>note If Telerik Reporting is installed on Windows with Visual Studio integration, you can use its blank-report template in a configured .NET project. You can ignore the template warning displayed before the blank report is created and continue. See [Configuring Your Report Project](slug:vs-report-designer-net-getting-started#configuring-your-report-project) for details.
 
 For a comparison of the supported features and workflows, see [Comparing the Designers](slug:visual-studio-report-designer-structure#comparing-the-designers).
 

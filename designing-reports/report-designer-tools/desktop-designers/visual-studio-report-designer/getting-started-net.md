@@ -1,7 +1,7 @@
 ---
 title: Getting Started with the Visual Studio Report Designer for .NET
 page_title: Setting Up the Visual Studio Report Designer for .NET
-description: "Set up the NuGet-based Visual Studio Report Designer for .NET, configure your report project, and install, update, or remove the designer packages."
+description: "Open the bundled sample directly in the Visual Studio Report Designer for .NET, or register the designer package for your existing report projects."
 slug: vs-report-designer-net-getting-started
 tags: visual,studio,report,designer,net,nuget,setup
 published: True
@@ -14,11 +14,49 @@ components: [general]
 
 >note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
 
-The Visual Studio Report Designer for .NET edits C# and VB coded report definitions in SDK-style .NET projects. The designer is distributed as the `Telerik.Reporting.VSDesigner` NuGet package, which you reference next to the `Telerik.Reporting` package of the same version. The designer does not require the Telerik Reporting Visual Studio extension, a VSIX, or the Telerik Reporting installer.
+The Visual Studio Report Designer for .NET edits C# and VB coded report definitions in SDK-style .NET projects. The designer is distributed as the `Telerik.Reporting.VSDesigner` NuGet package, which depends on the `Telerik.Reporting` package of the same version. NuGet restores `Telerik.Reporting` automatically as a dependency of the designer package. The designer does not require the Telerik Reporting Visual Studio extension, a VSIX, or the Telerik Reporting installer.
 
 The [.NET Framework designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview#installing-the-net-framework-designer) uses a different installation workflow.
 
->important Use the `Telerik.Reporting.VSDesigner` package only with the `Telerik.Reporting` package of exactly the same version. The examples in this article use version `{{site.buildversion}}`. Replace it with the version of your packages.
+## Trying the Bundled Sample
+
+Start with the download bundle to open a prepared report. The sample restores the designer package directly from the extracted bundle, so you do not need to run the installer or register a feed.
+
+The bundle contains the following files:
+
+| File or folder | Purpose |
+| ------ | ------ |
+| `Telerik.Reporting.VSDesigner.<version>.nupkg` | Provides the designer package. |
+| `Install-VsDesigner.ps1` | Optionally registers a local NuGet feed for your existing report projects. |
+| `README.md` | Describes installation and troubleshooting. |
+| `Sample` | Contains `ReportDesignerSample.slnx`, the coded `SampleReport`, and `nuget.config`. |
+
+The engine and other dependencies are not bundled. The sample's `nuget.config` restores them from [nuget.org](https://www.nuget.org/).
+
+To start the designer with the sample:
+
+1. Verify the [prerequisites](#prerequisites). The sample targets `net10.0-windows` and requires the .NET 10 SDK and Desktop Runtime.
+1. [Set up your Telerik Reporting license key](slug:license-key).
+1. Extract the complete download. Keep the designer `.nupkg` at the bundle root, immediately above the `Sample` folder.
+1. Open `Sample\ReportDesignerSample.slnx` in Visual Studio 2026.
+1. Select **Build > Build Solution**. Visual Studio restores the packages before the build. Resolve any restore or build errors before you continue.
+1. In **Solution Explorer**, right-click `SampleReport.cs` and select **View Designer**, or select the file and press `Shift+F7`.
+1. Select **Preview** to render the report. For parameter and export procedures, see [Previewing Reports in the .NET Designer](slug:vs-report-designer-net-preview).
+
+`SampleReport` contains visible .NET designer instructions and links to the documentation. Its **Date** parameter controls the date in the report header.
+
+>note Pressing `F5` runs an application that displays instructions to open the report in the designer. It does not host a runtime report viewer.
+
+The sample's `nuget.config` clears inherited package sources and defines the following mappings:
+
+* `Telerik.Reporting.VSDesigner` restores from `..\`, which points to the extracted bundle root.
+* All other packages restore from `https://api.nuget.org/v3/index.json`.
+
+The project references the designer, Web Service, and GraphQL data-source packages. NuGet restores `Telerik.Reporting` as a dependency of the designer package.
+
+>important Keep `Sample\nuget.config` and the designer package in their original relative locations. Selecting **All** in Visual Studio does not override this configuration or its mappings.
+
+For an existing report project, use [Installing the Packages from a Download](#installing-the-packages-from-a-download) to register a permanent feed, then [configure your project](#configuring-your-report-project).
 
 ## Prerequisites
 
@@ -28,7 +66,7 @@ To use the designer, you need the following:
 * An SDK-style project that targets `net8.0-windows` or later and sets `UseWindowsForms` to `true`.
 * A .NET SDK that supports the target framework of the project. The .NET 10 SDK, which Visual Studio 2026 installs, supports projects that target .NET 8, .NET 9, and .NET 10.
 * The .NET Desktop Runtime of the .NET version that the project targets. For example, a project that targets `net8.0-windows` requires the .NET 8 Desktop Runtime. You can download the runtimes from the [.NET download page](https://dotnet.microsoft.com/download/dotnet).
-* Access to the `Telerik.Reporting` and `Telerik.Reporting.VSDesigner` packages through a NuGet package source, and access to [nuget.org](https://www.nuget.org/) for their dependencies.
+* Access to enabled NuGet sources that provide `Telerik.Reporting`, `Telerik.Reporting.VSDesigner`, and their dependencies. Sources can include [nuget.org](https://www.nuget.org/), the Telerik NuGet feed, or a local feed.
 * A [Telerik Reporting license key](slug:license-key).
 
 The designer runs in a separate process on the target framework of the report project. The package contains the designer for .NET 8 and .NET 10. A project that targets .NET 9 uses the .NET 8 designer, and a project that targets .NET 10 or later uses the .NET 10 designer.
@@ -44,6 +82,8 @@ To use the designer in an existing report project:
 1. [Activate your Telerik Reporting license](slug:license-key).
 1. Restore the packages and build the project.
 1. [Open an existing coded report](#opening-a-report).
+
+Keep an explicit `Telerik.Reporting` reference for the report library's runtime dependency. The designer reference uses `PrivateAssets="all"`, so its dependencies do not flow to projects or packages that consume the library through that reference.
 
 The following project file configures a report library for the designer:
 
@@ -68,7 +108,7 @@ The following table describes the packages:
 | Package | Purpose |
 | ------ | ------ |
 | `Telerik.Reporting` | Provides the report engine that your reports and the designer use. |
-| `Telerik.Reporting.VSDesigner` | Provides the designer, which only Visual Studio uses. `PrivateAssets="all"` keeps the package out of the dependencies of projects and NuGet packages that consume your report project. |
+| `Telerik.Reporting.VSDesigner` | Provides the designer and depends on the same-version `Telerik.Reporting` package, which NuGet restores automatically. `PrivateAssets="all"` keeps the designer package out of the dependencies of projects and NuGet packages that consume your report project. |
 | `Telerik.Reporting.WebServiceDataSource` | Provides the runtime of the JSON and Web Service data sources. Without it, the designer cannot read the data of these data source types. |
 | `Telerik.Reporting.GraphQLDataSource` | Provides the runtime of the GraphQL data source. Without it, the designer cannot read the data of this data source type. |
 
@@ -78,19 +118,55 @@ Use the same version for all Telerik Reporting packages in the project. Do not m
 
 The package does not supply Visual Studio project or item templates. The report templates of the Telerik Reporting Visual Studio extension are not part of this setup. To start, use an existing coded report or the [sample from the download](#trying-the-bundled-sample).
 
+>note If Telerik Reporting is installed on your Windows machine with Visual Studio integration, you can also use its blank-report template. In your configured .NET project, select **Add > New Item** and choose the Telerik Reporting blank-report template. You can ignore the template warning displayed before the blank report is created and continue. Build the project, then open the report's main `.cs` or `.vb` file with **View Designer**.
+
 ## Installing the Packages from a Download
 
-If you received the designer as a download, the download contains the following folders:
+The [bundled sample](#trying-the-bundled-sample) does not require installation. To make the designer available to your other projects, use `Install-VsDesigner.ps1` to register a permanent local feed. The download contains the designer package at its root, not a `packages` folder with engine or optional data-source packages.
 
-* `packages` contains the `Telerik.Reporting`, `Telerik.Reporting.VSDesigner`, `Telerik.Reporting.WebServiceDataSource`, and `Telerik.Reporting.GraphQLDataSource` packages of the same version as `.nupkg` files.
-* `Sample` contains a report project that uses these packages. For more information, see [Trying the Bundled Sample](#trying-the-bundled-sample).
+To register the package with the script:
 
-To make the packages available to your projects, register a folder that contains them as a NuGet package source. For more details follow the KB article [Setup a Local NuGet Package Feed](slug:setup-local-nuget-feed), or the steps below:
+1. Extract the download and close all instances of Visual Studio.
+1. Open PowerShell in the extracted folder. Verify that the script comes from a trusted source, then run the following command:
+
+   ```powershell
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\Install-VsDesigner.ps1
+   ```
+
+   The execution policy applies only to this process. The script does not require administrator rights.
+
+1. [Configure your report project](#configuring-your-report-project) and build it.
+
+The script performs the following actions:
+
+* Checks the .NET SDK and Visual Studio requirements.
+* Verifies the designer package against the publisher certificate when the script carries a signing certificate.
+* Copies the package to `%LOCALAPPDATA%\Telerik\VsDesigner\packages` by default.
+* Registers that folder as `Telerik Reporting VS Designer` in your user-level `%APPDATA%\NuGet\NuGet.Config`.
+* Removes conflicting cached builds of the same package version and clears the related Visual Studio designer cache when needed.
+
+The script does not install a Visual Studio extension, modify projects, or restore and build the bundled sample. Keep the registered feed while your existing projects reference its packages.
+
+The following options customize the script:
+
+| Option | Purpose |
+| ------ | ------ |
+| `-Path` | Selects a designer package or a folder that contains it. |
+| `-FeedDirectory` | Sets the local package folder to register. |
+| `-SourceName` | Sets the name of the registered source. |
+| `-WhatIf` | Shows planned installation or removal changes without applying them. |
+| `-Uninstall` | Removes the registered feed, its Telerik Reporting packages, and matching cached copies. |
+
+### Installing Without the Script
+
+If you cannot use the script, register the designer package manually. For more details, see [Setup a Local NuGet Package Feed](slug:setup-local-nuget-feed).
+
+To register the feed and configure the project:
 
 1. Extract the download.
-1. Create a permanent folder for the packages, for example, `%LOCALAPPDATA%\Telerik\VsDesigner\packages`. Copy the `.nupkg` files from the `packages` folder of the download into it.
+1. Create a permanent folder, for example, `%LOCALAPPDATA%\Telerik\VsDesigner\packages`. Copy `Telerik.Reporting.VSDesigner.<version>.nupkg` from the extracted folder into it.
 
-	Your projects restore the packages from this folder. Keep the folder while your projects reference these packages.
+	Your projects restore the designer package from this folder. Keep the folder while your projects reference that package.
 
 1. Register the folder as a package source by using one of the following options:
 
@@ -111,35 +187,34 @@ To make the packages available to your projects, register a folder that contains
 
 	The first two options store the source in your user-level `NuGet.Config` file, so all your projects can use it. A source in the `nuget.config` file of a solution applies only to the projects in the folder of that file and its subfolders.
 
+1. Verify that enabled sources provide the same-version `Telerik.Reporting` package and the other dependencies.
 1. [Configure your report project](#configuring-your-report-project) to reference the package version from the download.
 
-If the `nuget.config` file of your solution clears the package sources with `<clear />`, add the package folder to that file. If the file uses package source mapping, map the four packages to the package folder and keep the existing mappings of your other sources:
+### Restoring from Configured Package Sources
+
+Your own projects use all enabled NuGet sources unless an applicable configuration restricts them. In Visual Studio's NuGet Package Manager, select **All** in the **Package source** list to browse those sources. This selection does not change the sources used for restore.
+
+The bundled sample has its own `nuget.config`. It clears inherited sources and maps the designer to the bundle root and all other packages to [nuget.org](https://www.nuget.org/).
+
+To review the effective sources, open PowerShell in the solution folder and run the following command:
+
+```powershell
+dotnet nuget list source
+```
+
+If a solution or parent `nuget.config` clears inherited sources with `<clear />`, add the designer feed to that file. If package-source mappings are present, map the designer package to the local feed:
 
 ```xml
 <packageSourceMapping>
   <packageSource key="Telerik Reporting VS Designer">
-    <package pattern="Telerik.Reporting" />
     <package pattern="Telerik.Reporting.VSDesigner" />
-    <package pattern="Telerik.Reporting.WebServiceDataSource" />
-    <package pattern="Telerik.Reporting.GraphQLDataSource" />
   </packageSource>
 </packageSourceMapping>
 ```
 
-NuGet uses the most specific matching pattern, so these package IDs take precedence over a broader pattern such as `Telerik.*`. The other dependencies of the packages, such as `Telerik.Licensing`, still require a source that provides them, for example, [nuget.org](https://www.nuget.org/).
+Keep the existing mappings for your other sources. Map `Telerik.Reporting`, optional data-source packages, and dependencies such as `Telerik.Licensing` to sources that provide them, not to the designer-only feed.
 
-## Trying the Bundled Sample
-
-The sample does not require you to register a package source. Its `nuget.config` file restores the Telerik Reporting packages from the `packages` folder of the download and the other dependencies from [nuget.org](https://www.nuget.org/).
-
-To open the sample:
-
-1. Extract the whole download and keep the `Sample` and `packages` folders side by side.
-1. Open `Sample\ReportDesignerSample.slnx` in Visual Studio 2026.
-1. Build the solution. Visual Studio restores the packages before the build.
-1. In **Solution Explorer**, double-click `Report1.cs`. You can also select the file and press `Shift+F7`.
-
-The sample targets `net10.0-windows` and contains one coded report, `Report1`. Its project file marks `Report1.cs` as a component, so double-click opens the designer from the start.
+NuGet uses the most specific matching pattern. The exact designer package ID takes precedence over a broader pattern such as `Telerik.*`. Disabled sources and package-source mappings still restrict restore.
 
 ## Updating the Designer Package
 
@@ -148,17 +223,29 @@ The designer version follows the `Telerik.Reporting.VSDesigner` package referenc
 To update to the packages from a newer download:
 
 1. Close Visual Studio.
-1. Copy the `.nupkg` files from the `packages` folder of the newer download into your package folder. You can delete the older packages that no project references.
+1. Extract the newer bundle and run its `Install-VsDesigner.ps1`. Use the same `-FeedDirectory` if you previously selected a custom folder.
 1. Update all Telerik Reporting package references of your project to the new version. Use the same version for all of them.
 1. Open the solution, build the project, and reopen the report in the designer.
 
->important If the newer download has the same version number as the previous one, Visual Studio continues to use the cached copies of the previous build. To load the new build, see [The Previous Designer Build Still Loads](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems#the-previous-designer-build-still-loads).
+The script does not update or build any projects. To try the newer sample, open the solution from the complete newer bundle and build it. If you installed the feed manually, copy the newer designer package into that feed before you update your project's references.
+
+>important For a different build with the same version number, rerun the installer to remove conflicting cached copies. For manual installations, see [The Previous Designer Build Still Loads](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems#the-previous-designer-build-still-loads).
 
 For packages from another package source, update all Telerik Reporting package references to the same newer version, and then restore and build the project. The [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) does not upgrade .NET projects.
 
 ## Removing the Designer
 
-To stop using the designer and remove the package folder:
+If you installed the feed with the script, remove the designer package reference from your projects and close Visual Studio. Then run the following command from the extracted bundle:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Install-VsDesigner.ps1 -Uninstall
+```
+
+Use the same `-FeedDirectory` if you installed to a custom folder.
+
+>warning Uninstall removes Telerik Reporting packages from the configured feed and their matching cached copies. Projects that still depend on that feed cannot restore those packages. The script does not remove package references from your projects.
+
+To stop using the designer and remove a manually registered feed:
 
 1. Remove the `Telerik.Reporting.VSDesigner` package reference from your projects. If your projects restore the other Telerik Reporting packages from the package folder, update them to a version from another package source, or remove them.
 1. Remove the package source by using the same option that you used to add it:

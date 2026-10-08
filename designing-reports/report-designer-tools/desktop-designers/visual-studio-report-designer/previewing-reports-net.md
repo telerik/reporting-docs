@@ -16,7 +16,7 @@ components: [general]
 
 The Visual Studio Report Designer for .NET provides **Designer** and **Preview** tabs. Unlike the .NET Framework designer, it uses dialogs for report parameters and export options.
 
-Before you preview a report, [set up the designer and open a coded report](slug:vs-report-designer-net-getting-started).
+To try the workflow, [start with the bundled sample](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample) and open `SampleReport.cs` with **View Designer**. For your own reports, [configure your report project](slug:vs-report-designer-net-getting-started#configuring-your-report-project).
 
 ## Previewing a Report
 
@@ -42,6 +42,8 @@ The following animation shows the parameters button and the **Report Parameters*
 ![The .NET designer preview toolbar opens the Report Parameters dialog to enter parameter values before preview.](images/Designer.NET/vs-designer-net-view-parameters-area.gif)
 
 Click **Cancel** to close the dialog without applying new values. If the report has no parameters to answer, the designer displays a message instead of the dialog.
+
+In the bundled `SampleReport`, change **Date** and click **Preview** to update the date in the report header. The report's instructions and documentation links are visible in the initial preview.
 
 ## Exporting Report Output
 

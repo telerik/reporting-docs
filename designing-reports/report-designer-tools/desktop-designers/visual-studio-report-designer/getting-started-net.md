@@ -223,7 +223,7 @@ The designer version follows the `Telerik.Reporting.VSDesigner` package referenc
 To update to the packages from a newer download:
 
 1. Close Visual Studio.
-1. Extract the newer bundle and run its `Install-VsDesigner.ps1`. Use the same `-FeedDirectory` if you previously selected a custom folder.
+1. Extract the newer bundle and run its `Install-VsDesigner.ps1`. Use the same `-FeedDirectory` and `-SourceName` values if you previously customized them.
 1. Update all Telerik Reporting package references of your project to the new version. Use the same version for all of them.
 1. Open the solution, build the project, and reopen the report in the designer.
 

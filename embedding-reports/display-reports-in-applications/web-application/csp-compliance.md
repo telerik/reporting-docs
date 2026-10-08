@@ -6,7 +6,7 @@ slug: telerikreporting/embedding-reports/display-reports-in-applications/web-app
 tags: csp, content security policy, html5 report viewer, angular report viewer, react report viewer, nonce, security
 tag: new
 published: True
-position: 13
+position: 12
 reportingArea: General
 components: [general]
 ---
@@ -39,7 +39,7 @@ The following HTML5-based viewers support the `nonce` option:
 Before you start, make sure that:
 
 - You have a working ASP.NET Core web application that hosts the [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
-- You have added one of the supported viewers to the application(*or in the frontend application in the cases of the Angular and React report viewers*).
+- You have added one of the supported viewers to the application(_or in the frontend application in the cases of the Angular and React report viewers_).
 
 ## Configuring CSP Compliance
 
@@ -175,6 +175,7 @@ Pass the nonce as the `[nonce]` input on the `<tr-viewer>` component. The nonce 
     [nonce]="nonceValue">
 </tr-viewer>
 ```
+
 ```TypeScript
 export class AppComponent {
     nonceValue: string = 'VALUE_FROM_SERVER';

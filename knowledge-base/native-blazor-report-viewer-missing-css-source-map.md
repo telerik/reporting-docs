@@ -1,7 +1,7 @@
 ---
 title: Resolving a Missing CSS Source Map in the Native Blazor Report Viewer
 page_title: Missing CSS Source Map Build Error in Native Blazor Report Viewer on .NET 9 and .NET 10
-description: "Resolve the missing CSS source map build error in Native Blazor Report Viewer 20.2.26.1007 by excluding the asset or copying the version-matched map into the NuGet cache."
+description: "Resolve the missing CSS source map build error in Native Blazor Report Viewer 20.2.26.1007 by excluding the asset or copying the source map into the NuGet cache."
 type: troubleshooting
 slug: native-blazor-report-viewer-missing-css-source-map
 tags: Blazor, NativeBlazorViewer, StaticWebAssets, SourceMap
@@ -70,7 +70,7 @@ In this case, the viewer CSS and JavaScript remain available. The map is not req
 
 ### Workaround 2: Adding the Source Map
 
-If you prefer not to exclude the asset, you can supply the version-matched file at the location that the package metadata expects. This workaround satisfies the existing asset declaration before the build processes static assets.
+If you prefer not to exclude the asset, you can supply the source map file at the location that the package metadata expects. This workaround satisfies the existing asset declaration before the build processes static assets.
 
 1. Create the file `wwwroot/css/reporting-blazor-viewer.css.map` in the application and copy the following JSON into it:
 

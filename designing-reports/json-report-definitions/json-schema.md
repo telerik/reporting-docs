@@ -19,7 +19,7 @@ These schemas are primarily intended to support AI-assisted interactions with re
 
 The package also provides validation APIs, which are covered in [Validating JSON Report Definitions](slug:json-validation-sdk).
 
-> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007))
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
 
 ## Installing the Schema Package
 

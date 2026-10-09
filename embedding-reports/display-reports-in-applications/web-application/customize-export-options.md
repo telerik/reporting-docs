@@ -15,6 +15,8 @@ components: [general]
 
 Configure rendering extension settings on the Reporting REST Service to set default values, make settings read-only, or hide settings in the Export Options dialog. The viewer displays the settings returned by the service.
 
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
+
 ## Prerequisites
 
 - An ASP.NET Core Reporting REST Service or a .NET Framework Web API service that uses a custom `ReportsController`.

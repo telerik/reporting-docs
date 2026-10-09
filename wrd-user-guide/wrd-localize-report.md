@@ -17,6 +17,8 @@ Use report localization to create language-specific versions of the static conte
 
 > important Report localization in the Web Report Designer is supported only for TRDP report packages. TRDX and TRDJ reports cannot contain the localization resources.
 
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
+
 ## Before You Start
 
 Make sure that you have access to the following:

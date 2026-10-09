@@ -15,7 +15,7 @@ components: [general]
 
 The `Telerik.Reporting.Schema` package includes APIs for validating JSON for Telerik Reporting model types. These APIs can be used to validate JSON fragments generated or modified with AI assistance before they are incorporated into a report definition. For complete `.trdj` report definitions, Telerik Reporting also includes the `ReportDefinitionValidator.exe` command-line tool. For an overview of the schemas used during validation, see [JSON Schema for Telerik Reporting Types](slug:json-schema).
 
-> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007))
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
 
 ## Validating in a .NET Application
 

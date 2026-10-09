@@ -15,7 +15,7 @@ components: [general]
 
 Set the `AccessibleRole` property to `Ignored` to keep a report item out of the accessibility tree without hiding it from the rendered report. This behavior applies to accessible PDF and HTML5 output.
 
-> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007))
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
 
 ## Overview
 

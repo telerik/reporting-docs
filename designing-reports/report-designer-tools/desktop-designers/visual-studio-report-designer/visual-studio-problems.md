@@ -13,7 +13,7 @@ components: [general]
 
 # Troubleshooting Visual Studio Report Designer
 
->note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting [2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
 
 Use the section for your designer. The Visual Studio Report Designer for .NET is installed through NuGet packages. Its problems differ from the problems of the Telerik Reporting Visual Studio extension and its .NET Framework designer.
 

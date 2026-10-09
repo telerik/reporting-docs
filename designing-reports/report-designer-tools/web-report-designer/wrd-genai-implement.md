@@ -17,7 +17,7 @@ The article explains how to configure the **AI Report Generator** in the Web Rep
 
 For information on the AI Report Generator usage, refer to the article [AI Report Generator](slug:wrd-genai-graph-gauge-design).
 
-> note The AI Report Generator supports `Graph` and `Gauge` report items starting with Telerik Reporting 2026 Q2 (20.1.26.615). Support for `Table`-based report items was added in 2026 Q3 (20.2.26.812).
+> note The AI Report Generator supports `Graph` and `Gauge` report items starting with Telerik Reporting [2026 Q2 (20.1.26.615)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q2-(20-1-26-615)). Support for `Table`-based report items was added in [2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)).
 
 ## Configuring AI Report Generator in the Host Application
 

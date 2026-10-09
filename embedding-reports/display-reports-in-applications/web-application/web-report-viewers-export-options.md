@@ -15,6 +15,8 @@ components: [general]
 
 The Export Options dialog lets users choose a rendering format and configure its available device settings before they export a report. This article describes the shared behavior and the configuration surfaces across Telerik Reporting web viewers.
 
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
+
 <p style="text-align: center;"><strong>Export Options Dialog</strong></p>
 
 <div style="max-width: 75%; margin: 0 auto; text-align: center;" markdown="1">

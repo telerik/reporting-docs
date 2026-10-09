@@ -169,6 +169,8 @@ The SVG images are rendered in vector format where the rendering extension suppo
 
 ## Rotating Images
 
+> The feature was introduced with [Telerik Reporting 2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
+
 Use the [`Rotation`](/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Rotation) property to rotate the image displayed in a PictureBox. The default value is `Auto`, which applies the image's EXIF orientation metadata to raster images.
 
 ![A raster image rotates in the PictureBox when its rotation setting changes.](images/picturebox-rotation.gif)

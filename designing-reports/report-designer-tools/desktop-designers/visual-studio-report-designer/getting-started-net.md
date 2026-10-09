@@ -4,6 +4,7 @@ page_title: Setting Up the Visual Studio Report Designer for .NET
 description: "Open the bundled sample directly in the Visual Studio Report Designer for .NET, or register the designer package for your existing report projects."
 slug: vs-report-designer-net-getting-started
 tags: visual,studio,report,designer,net,nuget,setup
+tag: new
 published: True
 position: 1
 reportingArea: General
@@ -12,7 +13,7 @@ components: [general]
 
 # Getting Started with the Visual Studio Report Designer for .NET
 
->note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting [2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
 
 The Visual Studio Report Designer for .NET edits C# and VB coded report definitions in SDK-style .NET projects. The designer is distributed as the `Telerik.Reporting.VSDesigner` NuGet package, which depends on the `Telerik.Reporting` package of the same version. NuGet restores `Telerik.Reporting` automatically as a dependency of the designer package. The designer does not require the Telerik Reporting Visual Studio extension, a VSIX, or the Telerik Reporting installer.
 

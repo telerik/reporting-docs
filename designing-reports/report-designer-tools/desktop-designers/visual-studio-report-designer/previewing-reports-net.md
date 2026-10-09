@@ -4,6 +4,7 @@ page_title: Previewing and Exporting Reports in the Visual Studio Report Designe
 description: "Preview coded reports in the Visual Studio Report Designer for .NET, enter parameter values in a dialog, and export the report output."
 slug: vs-report-designer-net-preview
 tags: visual,studio,report,designer,net,preview,parameters,export
+tag: new
 published: True
 position: 6
 reportingArea: General
@@ -12,7 +13,7 @@ components: [general]
 
 # Previewing Reports in the Visual Studio Report Designer for .NET
 
->note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting 2026 Q3 (20.2.26.1007).
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting [2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
 
 The Visual Studio Report Designer for .NET provides **Designer** and **Preview** tabs. Unlike the .NET Framework designer, it uses dialogs for report parameters and export options.
 

@@ -12,11 +12,13 @@ components: [general]
 
 # Coded Reports in the Standalone Report Designer for .NET
 
-Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) (SRD.NET) supports opening, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET. This feature addresses a long-standing limitation: the Visual Studio-integrated report designer does not support SDK-style projects or .NET Core/.NET 5+ targets. Due to architectural constraints, it could not be extended to support these project types. SRD.NET now provides a smoother alternative for working with type report definitions.
+> important Starting with the Telerik Reporting **2026 Q3 October release (20.2.26.1007)**, the **Visual Studio Report Designer for .NET (VSRD.NET)** is available as a **preview**. You can now edit and preview C# and VB coded reports directly in Visual Studio in supported SDK-style .NET projects. See [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started) for prerequisites and setup.
+
+Starting with the [Progress® Telerik® Reporting 2025 Q3 (19.2.25.813)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813) release, the [Standalone Report Designer for .NET](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview#starting-the-standalone-report-designer-for-net) (SRD.NET) supports opening, designing, and previewing Coded Report definitions hosted in CS projects targeting .NET. SRD.NET remains a supported alternative for working with type report definitions outside Visual Studio.
 
 While this workflow is fully supported, we recommend using declarative (XML-based) report definitions for most scenarios. Declarative reports offer broader tooling support, easier maintenance, and easier integration across Telerik Reporting tools.
 
-> This feature is only available for C# reports due to limitations in VB.NET's CodeDOM serialization.
+> This SRD.NET feature is only available for C# reports due to limitations in VB.NET's CodeDOM serialization. To design VB coded reports in supported SDK-style .NET projects, use the Visual Studio Report Designer for .NET preview.
 
 This article explains and visually demonstrates how to open, edit, and preview .NET coded (.CS) reports using the Standalone Report Designer for .NET.
 
@@ -154,6 +156,7 @@ Below is a list of the temporary assets folder contents:
 
 ## See Also
 
+- [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)
 - [.NET Coded Report Design, No IDE Strings Attached](https://www.telerik.com/blogs/net-coded-report-design-no-ide-strings-attached)
 - [Extending Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
 - [Using event handlers in the Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/using-event-handlers-in-srd)

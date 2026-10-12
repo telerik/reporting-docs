@@ -21,11 +21,17 @@ res_type: kb
 	</tr>
 </table>
 
+## Visual Studio Report Designer for .NET Preview
+
+> important Starting with the Telerik Reporting **2026 Q3 October release (20.2.26.1007)**, the **Visual Studio Report Designer for .NET (VSRD.NET)** is available as a **preview**. You can now migrate your existing C# or VB coded reports to a supported SDK-style .NET report library and continue editing and previewing them directly in Visual Studio, retaining their custom code.
+> <br/>
+> See [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started) for prerequisites and setup. The preview requires Visual Studio 2026 version 18.10 or later and a report project targeting `net8.0-windows` or later with `UseWindowsForms=true`.
+
 ## Description
 
-The class library that contains report definitions must target .NET Framework 4.0 or greater in order to provide design-time support in Visual Studio through the Visual Studio Report Designer. Such library cannot be referenced in a .NET Core project because .NET Core projects can reference only .NET Standard or .NET Core assemblies (see the post [How to reference a .NET Core library in WinForms - Or, .NET Standard Explained](https://www.hanselman.com/blog/how-to-reference-a-net-core-library-in-winforms-or-net-standard-explained) for detailed explanation).
+Existing .NET Framework report libraries must be migrated to a compatible .NET or .NET Standard class library, or converted to declarative report definitions, for use in a .NET application.
 
-Therefore the existing type report definitions must be migrated to a .NET Standard or .NET Core class library. The drawback is that there is no design-time support for .NET Core or .NET Standard and the Visual Studio Report Designer cannot be used in such projects. This is mainly because of the current limitations of the framework and Visual Studio toolset (for example, [ComponentDesigner](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.design.componentdesigner?view=netframework-4.7.2) class which is used as a base class for our components, is not yet supported by .NET Core framework).
+The .NET Framework Visual Studio Report Designer requires a .NET Framework report project. Before the VSRD.NET preview, retaining Visual Studio design-time support for migrated reports required a linked .NET Framework project. For supported SDK-style .NET projects, the preview removes that requirement. It does not add direct design-time support for .NET Standard projects or older .NET Core targets.
 
 ## Solution
 
@@ -37,14 +43,17 @@ There are two approaches to resolve the problem depending on the amount of custo
 
 	The produced `.TRDP`/`.TRDX` definitions can be used through a [UriReportSource](/api/telerik.reporting.urireportsource) in a .NET Core application.
 
-* If the custom code in the report definitions must be retained, reference the `.cs` and `.resx` files of your reports to a new .NET Standard or .NET Core library. The `.designer.cs` file will be added automatically with the `.cs` file. Add references to NuGet packages for the missing classes (i.e. `System.Drawing.Common` for the `PaperKind` class). Once the project compiles, the report classes it contains can be used through a [TypeReportSource](/api/telerik.reporting.typereportsource) or [InstanceReportSource](/api/telerik.reporting.instancereportsource) in a .NET Core application.
+* If the custom code in the report definitions must be retained, copy all report files (`.cs`, `.designer.cs`, and `.resx`, or their VB equivalents) to a new SDK-style .NET report library. To edit the migrated reports directly in Visual Studio with the VSRD.NET preview, [configure the report project](slug:vs-report-designer-net-getting-started#configuring-your-report-project) with the required target framework, project settings, and matching `Telerik.Reporting` and `Telerik.Reporting.VSDesigner` package versions. Restore the packages and build the project, then right-click the report's main `.cs` or `.vb` file in **Solution Explorer** and select **View Designer**.
 
-	If you need to be able to edit your existing CLR reports, follow the KB article [How to use Visual Studio Report Designer to edit CS Reports in .Net Core Projects](slug:how-to-use-vs-designer-in-dotnet-core).
+	Once the project compiles, the report classes it contains can be used through a [TypeReportSource](/api/telerik.reporting.typereportsource) or [InstanceReportSource](/api/telerik.reporting.instancereportsource) in a compatible .NET application. Ensure that the consuming application's target framework is compatible with the report library's Windows-specific target framework.
 
-It is recommended to use the first approach and migrate the reports to `.TRDP` or `.TRDX` report definitions, so the design-time support will be provided by the Standalone Report Designer.
+	For older Telerik Reporting releases or environments that do not meet the preview prerequisites, you can still link the C# report files to a .NET Standard or .NET Core library and edit them through a .NET Framework project, as described in [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects](slug:how-to-use-vs-designer-in-dotnet-core).
+
+Declarative `.TRDP` or `.TRDX` report definitions remain recommended when custom report code is not required. Converting to declarative reports is no longer necessary solely to retain design-time support after migrating to a supported SDK-style .NET project.
 
 ## See Also
 
+* [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)
 * [Telerik Reporting .NET Core support](slug:telerikreporting/using-reports-in-applications/dot-net-core-support)
 * [Port your code from .NET Framework to .NET Core](https://learn.microsoft.com/en-us/dotnet/core/porting/)
 * [How to use Visual Studio Report Designer to edit CS Reports in .Net Core Projects](slug:how-to-use-vs-designer-in-dotnet-core)

@@ -12,6 +12,8 @@ components: [general]
 
 # Developing VB.NET Reporting Applications
 
+> important Starting with the Telerik Reporting **2026 Q3 October release (20.2.26.1007)**, the **Visual Studio Report Designer for .NET (VSRD.NET)** is available as a **preview**. You can now edit and preview VB coded reports directly in Visual Studio in supported SDK-style .NET projects. See [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started) for prerequisites and setup.
+
 Microsoft provides different programming languages for its most popular `.NET` and `.NET Framework` environments. Visual Basic (VB or VB.NET) is an advanced programming language fully supported by Telerik Reporting.
 
 This article elaborates on developing Telerik Reporting [report definitions](slug:on-telerik-reporting#report-definition) with VB, and integrating Telerik Reporting into VB Desktop and Web Reporting applications.
@@ -22,7 +24,7 @@ The VB Type report definitions are VB Types inheriting the Telerik Reporting bas
 
 The easiest and recommended approach for creating such a report in the .NET Framework is with the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). The designer offers also a converter from declarative (TRDP and TRDX files) to VB type report definitions, as explained in the article [Importing Reports Created with the Standalone or Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer).
 
-VB reports are also supported in .NET. The Visual Studio Report Designer is not yet available for .NET, and the recommended approach for developing such reports is described in the KB article [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects](slug:how-to-use-vs-designer-in-dotnet-core).
+VB reports are also supported in .NET. Use the Visual Studio Report Designer for .NET preview to edit and preview VB reports in supported SDK-style projects. Follow [Configuring Your Report Project](slug:vs-report-designer-net-getting-started#configuring-your-report-project) to add the designer package and required project settings, then open the report's main `.vb` file with **View Designer**. The preview requires Visual Studio 2026 version 18.10 or later and a report project targeting `net8.0-windows` or later with `UseWindowsForms=true`.
 
 ## VB.NET Desktop Reporting Applications
 
@@ -137,6 +139,7 @@ The HTML5 Report Viewer requires a Reporting REST service, whose fully functiona
 
 ## See Also
 
+- [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)
 - [Report Definitions](slug:on-telerik-reporting#report-definition)
 - [Displaying Reports](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/overview)
 - [Report Sources](slug:telerikreporting/designing-reports/report-sources/overview)

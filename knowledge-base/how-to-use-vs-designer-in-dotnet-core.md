@@ -28,11 +28,17 @@ res_type: kb
 </table>
 
 
+## Visual Studio Report Designer for .NET Preview
+
+> important Starting with the Telerik Reporting **2026 Q3 October release (20.2.26.1007)**, the **Visual Studio Report Designer for .NET (VSRD.NET)** is available as a **preview**. You can now edit and preview C# and VB coded reports directly in Visual Studio in supported SDK-style .NET projects, without linking the report files to a .NET Framework project.
+> <br/>
+> See [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started) for prerequisites and setup. The preview requires Visual Studio 2026 version 18.10 or later and a report project targeting `net8.0-windows` or later with `UseWindowsForms=true`.
+
 ## Description
 
-Currently, the .NET frameworks do not support the design time components we need for the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview). Without these components we cannot provide a quality design-time experience. 
+The [Visual Studio Report Designer for .NET Framework](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview#installing-the-net-framework-designer) does not support editing reports directly in .NET projects. The Visual Studio Report Designer for .NET preview now supports this scenario for projects that meet its prerequisites.
 
-This KB article describes a workaround for using the Visual Studio Report Designer to edit C Sharp reports hosted in a .NET ClassLibrary project.
+The following legacy workaround lets you use the .NET Framework designer to edit C# reports hosted in a .NET ClassLibrary project when using an older Telerik Reporting release or an environment that does not meet the preview prerequisites.
 
 ## Suggested Workaround
 
@@ -63,4 +69,5 @@ A demo solution demonstrating the approach may be found in our GitHub repo - [VS
 
 ## See Also
 
+* [Getting Started with the Visual Studio Report Designer for .NET](slug:vs-report-designer-net-getting-started)
 * [Make Visual Studio designer work with .NET](https://feedback.telerik.com/reporting/1383925-make-visual-studio-designer-work-with-net-core-a-k-a-sdk-style-projects)

@@ -33,19 +33,11 @@ Use the Export Options dialog to configure rendering-format device settings befo
 
 Set `exportDialog.enabled` to `true` in the HTML5 Report Viewer initialization options:
 
-```JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: { report: "Report Catalog.trdp" },
-    exportDialog: { enabled: true }
-});
-```
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerExportOptions}}
 
 The setting defaults to `true`. To hide **Export Options** while keeping direct exports available, set `enabled` to `false`:
 
-```JavaScript
-exportDialog: { enabled: false }
-```
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerDoNotExport}}
 
 The command appears in the export menu only when the dialog is enabled and at least one available rendering extension has configurable settings.
 

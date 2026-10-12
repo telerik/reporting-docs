@@ -29,11 +29,9 @@ Filter the table to show only the products belonging to the "Electronics" catego
 
 1. Select the table in the Explorer pane and add a filter: 
 
-    ````
-    Fields.Category = "Electronics"
-    ````
+	`Fields.Category = "Electronics"`
 
-    <img style="border: 1px solid gray;" src="images/filter-table.png" alt="Table Filter" /> 
+	<img style="border: 1px solid gray;" src="images/filter-table.png" alt="Table Filter" /> 
 
 1. Preview the report. Both, the Grand Total (table data scope) and the Subtotal (groups data scope) values, are affected by the applied filter. Filters, applied to the parent data source, affect what records are available in the nested data items that inherit that data scope.
 
@@ -46,29 +44,25 @@ Filter the groups now to show products with a greater amount than 500:
 
 1. Select the detail table group in the Explorer pane and add a filter: 
 
-    ````
-    Fields.Amount >= 500
-    ````
+	`Fields.Amount >= 500`
 
-    <img style="border: 1px solid gray;" src="images/filter-detail-group.png" alt="Detail Group Filter" />  
+	<img style="border: 1px solid gray;" src="images/filter-detail-group.png" alt="Detail Group Filter" />  
 
 1. Preview the report. Now, you can see only products whose amount is greater than 500. The Grand Total remains 2700 because it **uses the table's data scope** which is filtered by showing only Electronics. The Subtotal also remains 2700 because the Category group's scope still contains all Electronics rows (1200 + 800 + 400 + 300). Filtering the detail group level (Amount > 500) does not change the data scope for group-level aggregates, so the subtotal in the group footer continues to include all records in the group, regardless of the detail filter. Group aggregates (such as Sum, Count, etc.) are evaluated over the group’s data records as defined by the group expression, not by the filtered detail rows. Filtering at the detail group level only affects which detail rows are displayed, but does not alter the underlying data set used for group-level calculations.
 
-    >important It is possible to add a filter at the category group level, but a Category Group filter does **not** remove individual detail rows. It only determines if the entire category group should appear or not. So, if a group contains at least one record with amount greater than 500, it will remain visible. 
+	>important It is possible to add a filter at the category group level, but a Category Group filter does **not** remove individual detail rows. It only determines if the entire category group should appear or not. So, if a group contains at least one record with amount greater than 500, it will remain visible. 
 
-    <img style="border: 1px solid gray;" src="images/preview-detail-group-filter.png" alt="Preview Detail " />  
+	<img style="border: 1px solid gray;" src="images/preview-detail-group-filter.png" alt="Preview Detail " />  
 
-    To achieve subtotals that reflect only the filtered records, you can adjust your report design to use a filtered data source for the group itself. An alternative approach is to use a conditional subtotal in the CategoryGroup footer which is demonstrated in the following step.
+	To achieve subtotals that reflect only the filtered records, you can adjust your report design to use a filtered data source for the group itself. An alternative approach is to use a conditional subtotal in the CategoryGroup footer which is demonstrated in the following step.
 
 1. Apply a conditional sum to the group's footer&mdash;use an aggregate expression that sums only the values meeting your condition. The recommended approach is to use the Sum aggregate with an IIF (immediate if) statement:
 
-    ````
-    =Sum(IIf(Fields.Amount > 500, Fields.Amount, 0))
-    ````
+	`=Sum(IIf(Fields.Amount > 500, Fields.Amount, 0))`
 
-    Now, the Subtotal shows the expected value 2000: 
+	Now, the Subtotal shows the expected value 2000: 
 
-    <img style="border: 1px solid gray;" src="images/conditional-sum.png" alt="Conditional Sum" />   
+	<img style="border: 1px solid gray;" src="images/conditional-sum.png" alt="Conditional Sum" />   
  
 
 ## See Also

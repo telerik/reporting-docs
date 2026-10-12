@@ -71,28 +71,7 @@ For example, copy the CSS file from the `css` folder in the exported package and
 
 Besides loading the custom stylesheet, the `useExternalTheme` property of the Web Report Designer widget must be set to `true` during its initialization.
 
-```HTML
-<!--<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css" id="theme-css" />-->
-<link rel="stylesheet" href="/css/tb-theme.css" />
-
-<div id="webReportDesigner">
-    Loading...
-</div>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#webReportDesigner").telerik_WebReportDesigner({
-            useExternalTheme: true, // Enable custom theming
-            toolboxArea: {
-                layout: "list"
-            },
-            serviceUrl: "api/reportdesigner/",
-            report: "Product Catalog.trdp",
-            startMode: "design"
-        }).data("telerik_WebReportDesigner");
-    });
-</script>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerStylingThemeBuilder.html region=WebReportDesignerStylingThemeBuilder}}
 
 > In JavaScript-based projects, if preferred, you can instead utilize the files from the `scss` folder as an NPM package. Further information on this approach can be found at [Using the ThemeBuilder Output as an NPM Package](https://docs.telerik.com/themebuilder/using-exported-styles/exported-package#using-the-themebuilder-output-as-an-npm-package).
 

@@ -33,21 +33,8 @@ Use the Export Options dialog to configure rendering-format device settings befo
 
 Configure the `exportDialog` input in the template and component:
 
-```HTML
-<reporting-angular-viewer
-  [serviceUrl]="serviceUrl"
-  [reportSource]="reportSource"
-  [exportDialog]="exportDialog"
->
-</reporting-angular-viewer>
-```
-```TypeScript
-export class AppComponent {
-  serviceUrl = "api/reports/";
-  reportSource = { report: "Report Catalog.trdp" };
-  exportDialog = { enabled: true };
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeAngularViewerOptions.html region=NativeAngularViewerExportOptions}}
+{{source=CodeSnippets\Blazor\Docs\TypeScript\CustomizeNativeAngularViewer.ts region=NativeAngularViewerExportOptions}}
 
 The setting defaults to `true`. Set `enabled` to `false` to hide **Export Options** while keeping direct exports available. The command appears only when the dialog is enabled and at least one available rendering extension has configurable settings.
 

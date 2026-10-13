@@ -38,54 +38,17 @@ Both methods return **JSON text** containing an `isValid` boolean flag and an `e
 
 The following C# example validates a JSON `TextBox` definition and prints the result:
 
-```csharp
-using Telerik.Reporting.Schema;
-
-string textBoxDefinitionJson = """
-{
-  "NetType": "TextBox",
-  "Width": "2.16in",
-  "Height": "0.22in",
-  "Left": "8.25in",
-  "Top": "0.22in",
-  "Value": "Quarterly Sales Summary",
-  "Name": "textBox6",
-  "Style": {
-    "Color": "195, 47, 11",
-    "TextAlign": "Right",
-    "Font": {
-      "Name": "Segoe UI"
-    }
-  }
-}
-""";
-
-// Example result for a valid definition: {"isValid":true,"errors":[]}
-Console.WriteLine(ReportSchemaService.ValidateDeep("TextBox", textBoxDefinitionJson));
-```
+{{source=CodeSnippets\Blazor\Docs\JsonSchemaValidation.cs region=ValidateSchemaForTextBox}}
 
 ### Result Format and Error Keywords
 
 An accepted definition returns the following JSON result:
 
-```json
-{"isValid":true,"errors":[]}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\JsonSchemaExamples.json region=AcceptedJsonDefinition}}
 
 When validation fails, `isValid` is `false`. Each entry in `errors` contains a `path` to the affected JSON value, a `keyword` that identifies the check, and a diagnostic `message`. For example, an unsupported property can produce an error like this:
 
-```json
-{
-  "isValid": false,
-  "errors": [
-    {
-      "path": "/NonExistentProperty",
-      "keyword": "additionalProperties",
-      "message": "Property 'NonExistentProperty' is not allowed."
-    }
-  ]
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\JsonSchemaExamples.json region=ErrorInJsonDefinition}}
 
 The following table lists common error keywords returned by the validator:
 

@@ -33,29 +33,7 @@ Use the Export Options dialog to configure rendering-format device settings befo
 
 Pass an `ExportDialogOptions` object to the viewer's `ExportDialog` parameter:
 
-```CSharp
-@using System.Collections.Generic
-@using Telerik.ReportViewer.BlazorNative
-
-<ReportViewer ServiceType="@ReportViewerServiceType.REST"
-              ServiceUrl="@ServiceUrl"
-              @bind-ReportSource="@ReportSource"
-              ExportDialog="@ExportDialog">
-</ReportViewer>
-
-@code {
-    private string ServiceUrl { get; set; } = "https://localhost:5001/api/reports";
-
-    private ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
-        "Report Catalog.trdp",
-        new Dictionary<string, object>());
-
-    private ExportDialogOptions ExportDialog { get; } = new ExportDialogOptions
-    {
-        Enabled = true
-    };
-}
-```
+{{source=CodeSnippets\BlazorNative\Docs\ReportViewers\NativeBlazorViewerExportDialogOptions.razor region=ExportDialogOptions}}
 
 The `Enabled` property defaults to `true`. Set it to `false` to hide **Export Options** while keeping direct exports available. The command appears only when the dialog is enabled and at least one available rendering extension has configurable settings.
 

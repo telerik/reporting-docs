@@ -36,46 +36,7 @@ The ASP.NET Core Reporting REST Service supports controller overrides and a call
 
 In an ASP.NET Core REST Service, override `GetExportOptions` in the `ReportsController` subclass. Call `base.GetExportOptions` to retain the default filtering behavior. This example sets PDF defaults, makes the document author read-only, and hides security-related settings:
 
-```CSharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Telerik.Reporting.Services.AspNetCore;
-using Telerik.Reporting.Services.Engine;
-
-protected override IEnumerable<ExtensionInfo> GetExportOptions(
-    IEnumerable<ExtensionInfo> exportOptions)
-{
-    var options = base.GetExportOptions(exportOptions).ToArray();
-    var pdfSettings = options.FirstOrDefault(option =>
-        string.Equals(option.Name, "PDF", StringComparison.OrdinalIgnoreCase))?.Settings;
-
-    foreach (var setting in pdfSettings ?? Array.Empty<RenderingExtensionSetting>())
-    {
-        if (string.Equals(setting.Group, "Security", StringComparison.OrdinalIgnoreCase)
-            || string.Equals(setting.Name, "JavaScript", StringComparison.OrdinalIgnoreCase))
-        {
-            setting.Hidden = true;
-        }
-
-        switch (setting.Name)
-        {
-            case "DocumentTitle":
-                setting.Value = "Sample Report";
-                break;
-            case "DocumentAuthor":
-                setting.Value = "Telerik Reporting";
-                setting.ReadOnly = true;
-                break;
-            case "StartPage":
-                setting.Value = 1;
-                break;
-        }
-    }
-
-    return options;
-}
-```
+{{source=CodeSnippets\Blazor\Docs\Controllers\ReportsController.cs region=Customize_GetExportOptions}}
 
 The sample changes only settings for the PDF rendering extension. Update the extension name and setting names to match the format you want to customize.
 
@@ -83,97 +44,13 @@ The sample changes only settings for the PDF rendering extension. Update the ext
 
 When you configure the Reporting REST Service through `AddTelerikReporting`, pass an `ExportOptionsContext` with a callback:
 
-```CSharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Extensions.DependencyInjection;
-using Telerik.Reporting.Services.AspNetCore;
-using Telerik.Reporting.Services.Engine;
-
-builder.Services.AddRazorPages()
-    .AddTelerikReporting(
-        "Reporting",
-        reportsPath,
-        new ExportOptionsContext(ConfigureExportOptions));
-
-// The callback receives and returns the available extensions. A custom callback
-// replaces the default filtering policy, so explicitly hide sensitive settings.
-static IEnumerable<ExtensionInfo> ConfigureExportOptions(
-    IEnumerable<ExtensionInfo> exportOptions)
-{
-    var options = exportOptions.ToArray();
-    var pdfSettings = options.FirstOrDefault(option =>
-        string.Equals(option.Name, "PDF", StringComparison.OrdinalIgnoreCase))?.Settings;
-
-    foreach (var setting in pdfSettings ?? Array.Empty<RenderingExtensionSetting>())
-    {
-        setting.Hidden = string.Equals(setting.Group, "Security", StringComparison.OrdinalIgnoreCase)
-            || string.Equals(setting.Name, "JavaScript", StringComparison.OrdinalIgnoreCase);
-
-        switch (setting.Name)
-        {
-            case "DocumentTitle":
-                setting.Value = "Sample Report";
-                break;
-            case "DocumentAuthor":
-                setting.Value = "Telerik Reporting";
-                setting.ReadOnly = true;
-                break;
-        }
-    }
-
-    return options;
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramGetExportOptions.cs region=ServiceRegistration_GetExportOptions}}
 
 ## .NET Framework
 
 In a .NET Framework Web API service, derive your controller from `Telerik.Reporting.Services.WebApi.ReportsControllerBase` and override `GetExportOptions`. The following example applies the same PDF policy as the ASP.NET Core example:
 
-```CSharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Telerik.Reporting.Services.Engine;
-using Telerik.Reporting.Services.WebApi;
-
-public class ReportsController : ReportsControllerBase
-{
-    protected override IEnumerable<ExtensionInfo> GetExportOptions(
-        IEnumerable<ExtensionInfo> exportOptions)
-    {
-        var options = base.GetExportOptions(exportOptions).ToArray();
-        var pdfSettings = options.FirstOrDefault(option =>
-            string.Equals(option.Name, "PDF", StringComparison.OrdinalIgnoreCase))?.Settings;
-
-        foreach (var setting in pdfSettings ?? Array.Empty<RenderingExtensionSetting>())
-        {
-            if (string.Equals(setting.Group, "Security", StringComparison.OrdinalIgnoreCase)
-                || string.Equals(setting.Name, "JavaScript", StringComparison.OrdinalIgnoreCase))
-            {
-                setting.Hidden = true;
-            }
-
-            switch (setting.Name)
-            {
-                case "DocumentTitle":
-                    setting.Value = "Sample Report";
-                    break;
-                case "DocumentAuthor":
-                    setting.Value = "Telerik Reporting";
-                    setting.ReadOnly = true;
-                    break;
-                case "StartPage":
-                    setting.Value = 1;
-                    break;
-            }
-        }
-
-        return options;
-    }
-}
-```
+{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerGetExportOptions.cs region=GetExportOptions}}
 
 The .NET Framework Web API controller uses the same `GetExportOptions` policy as ASP.NET Core. The service enforces hidden and read-only settings when it creates documents, including direct exports.
 

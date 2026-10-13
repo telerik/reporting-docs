@@ -173,9 +173,7 @@ The Query Builder keeps your current settings. But if you change the SQL query m
 
 The Web Report Designer’s Query Builder has an option called `Schema Restrictions`. This option lets you choose which parts of the database to load by listing them with commas. It helps report creators see only the information needed and makes loading faster.
 
-````
-null,Production,ProductCategory
-````
+`null,Production,ProductCategory`
 
 > Schema restrictions are sensitive to uppercase and lowercase letters, and empty values are allowed. If you need to set a value to nothing, use the word null as shown in the example. These rules only work with .NET 8 or newer.
 

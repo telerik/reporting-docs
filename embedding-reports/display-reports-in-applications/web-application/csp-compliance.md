@@ -53,47 +53,7 @@ CSP compliance requires three coordinated steps:
 
 Add a middleware class that generates the nonce, stores it in the `HttpContext`, and appends the CSP header before the response is sent to the browser.
 
-```C#
-namespace MyApp.Middleware
-{
-    using Microsoft.AspNetCore.Http;
-    using System;
-    using System.Security.Cryptography;
-    using System.Threading.Tasks;
-
-    public class CspMiddleware(RequestDelegate next)
-    {
-        public const string NonceKey = "CspNonce";
-
-        public async Task InvokeAsync(HttpContext context)
-        {
-            var nonce = GenerateNonce();
-            context.Items[NonceKey] = nonce;
-
-            context.Response.OnStarting(() =>
-            {
-                var csp =
-                    $"default-src 'self'; " +
-                    $"script-src 'self' 'nonce-{nonce}'; " +
-                    $"style-src 'self' 'nonce-{nonce}'; " +
-                    $"frame-src 'self' blob:; " +
-                    $"img-src 'self' data:;";
-                context.Response.Headers["Content-Security-Policy"] = csp;
-                return Task.CompletedTask;
-            });
-
-            await next(context);
-        }
-
-        private static string GenerateNonce()
-        {
-            Span<byte> bytes = stackalloc byte[32];
-            RandomNumberGenerator.Fill(bytes);
-            return Convert.ToBase64String(bytes);
-        }
-    }
-}
-```
+{{source=CodeSnippets\Blazor\Docs\CspMiddleware.cs region=CspMiddleware}}
 
 The CSP directives in the example above cover the requirements of the HTML5-based viewers:
 
@@ -111,56 +71,13 @@ The CSP directives in the example above cover the requirements of the HTML5-base
 
 Register the middleware in `Program.cs` **before** the routing and static-assets middleware so that the nonce is available for all requests.
 
-```C#
-using MyApp.Middleware;
-
-var builder = WebApplication.CreateBuilder(args);
-var reportsPath = System.IO.Path.Combine(builder.Environment.ContentRootPath, "Reports");
-builder.Services
-    .AddRazorPages()
-    .AddTelerikReporting("ReportingNet", reportsPath);
-var app = builder.Build();
-
-app.UseMiddleware<CspMiddleware>();
-app.MapStaticAssets();
-app.MapRazorPages().WithStaticAssets();
-app.UseTelerikReporting();
-app.UseRouting();
-
-app.Run();
-```
+{{source=CodeSnippets\Blazor\Docs\ProgramCspMiddleware.cs region=CspMiddleware}}
 
 ### Step 3: Apply the Nonce to Inline Elements and the Viewer
 
 In your Razor page, read the nonce from `HttpContext.Items` and apply it to every inline `<style>`, inline `<script>`, and the viewer's `nonce` option.
 
-```CSHTML
-@page
-@{
-    var nonce = ViewContext.HttpContext.Items["CspNonce"];
-}
-
-<style nonce="@nonce">
-    #reportViewer {
-        position: absolute;
-        inset: 5px;
-    }
-</style>
-
-<div id="reportViewer">
-    loading...
-</div>
-
-<script type="text/javascript" nonce="@nonce">
-    $("#reportViewer").telerik_ReportViewer({
-        nonce: "@Html.Raw(nonce)",
-        serviceUrl: "/api/reports/",
-        reportSource: {
-            report: "Report Catalog.trdp",
-        }
-    });
-</script>
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\RazorPagesCspNonce.cshtml region=ApplyNonceInlineElements}}
 
 The `nonce` option tells the viewer to stamp the same token on any inline element it injects after initialization. Without this option, the browser blocks viewer-injected styles and scripts even when the page itself is correctly configured.
 
@@ -168,42 +85,14 @@ The `nonce` option tells the viewer to stamp the same token on any inline elemen
 
 Pass the nonce as the `[nonce]` input on the `<tr-viewer>` component. The nonce value has to be generated server-side and made available to the Angular component — for example, via a Razor-hosted Angular application or a server-rendered initial state.
 
-```HTML
-<tr-viewer
-    [serviceUrl]="'api/reports/'"
-    [reportSource]="reportSource"
-    [nonce]="nonceValue">
-</tr-viewer>
-```
-
-```TypeScript
-export class AppComponent {
-    nonceValue: string = 'VALUE_FROM_SERVER';
-    reportSource = { report: 'Dashboard.trdp', parameters: {} };
-}
-```
+{{source=CodeSnippets\Blazor\Docs\ReportViewers\AngularViewerApplyNonce.html region=ApplyNonce}}
+{{source=CodeSnippets\Blazor\Docs\TypeScript\AngularViewerApplyNonce.ts region=ApplyNonce}}
 
 ## React Report Viewer
 
 Pass the nonce as the `nonce` prop on the `<TelerikReportViewer>` component.
 
-```JSX
-import React from 'react';
-import { TelerikReportViewer } from '@progress/telerik-react-report-viewer';
-
-export function ReportViewerComponent({ nonce }: { nonce: string }) {
-
-    const reportSource = { report: 'Dashboard.trdp', parameters: {} };
-
-    return (
-        <TelerikReportViewer
-            serviceUrl="api/reports/"
-            reportSource={reportSource}
-            nonce={nonce}
-        />
-    );
-}
-```
+{{source=CodeSnippets\Blazor\Docs\jsx\ReactViewerApplyNonce.jsx region=ApplyNonce}}
 
 ## See Also
 

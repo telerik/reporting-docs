@@ -38,19 +38,8 @@ To use your own Kendo UI theme instead of the built-in one:
 	- A stock Kendo UI theme (for example, Default, Material, Bootstrap, Classic, Meridian, or Fluent).
 	- A custom theme generated with [ThemeBuilder](https://themebuilderapp.telerik.com/) (see [Styling the Web Report Designer with ThemeBuilder](slug:styling-the-web-report-designer-with-themebuilder)).
 
-```html
-<!-- Reference your own Kendo UI theme before the designer initializes -->
-<link rel="stylesheet" href="path/to/your-theme.css" />
-```
-
-```javascript
-$("#reportDesigner").telerik_WebReportDesigner({
-	serviceUrl: "api/reports",
-	report: "SampleReport.trdp",
-	useExternalTheme: true
-	// ... other options
-});
-```
+{{source=CodeSnippets\Blazor\Docs\html\Html5ReportViewerCustomTemplate.html region=WrdUsingExternalTheme}}
+{{source=CodeSnippets\Blazor\Docs\JavaScript\wrd_events.js region=WrdUsingExternalTheme}}
 
 > If `useExternalTheme` is set to `true` but no external theme stylesheet is referenced on the page, the Web Report Designer will render unstyled, as it will not load its built-in theme and no replacement theme will be available.
 

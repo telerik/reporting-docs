@@ -44,11 +44,7 @@ The setting defaults to `true`. Set it to `false` to hide the command. Disabling
 
 Use the `exportDialog` object for JavaScript-based viewers:
 
-```JavaScript
-exportDialog: {
-    enabled: true
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerExportDialog}}
 
 The configuration surface depends on the viewer integration:
 

@@ -61,10 +61,7 @@ Use the `GetSchema` method to retrieve the JSON Schema document for a supported 
 
 The following example retrieves the schema for `TextBox`:
 
-```csharp
-string textBoxSchemaJson = ReportSchemaService.GetSchema("TextBox");
-Console.WriteLine(textBoxSchemaJson);
-```
+{{source=CodeSnippets\Blazor\Docs\JsonSchemaValidation.cs region=RetrieveSchemaForTextBox}}
 
 ### Discover Supported Types
 
@@ -79,18 +76,7 @@ The following methods can be used to discover the supported types:
 
 The following example prints the first five type names returned by `GetKnownTypeNames()`:
 
-```csharp
-using System;
-using System.Linq;
-using Telerik.Reporting.Schema;
-
-var availableTypeNames = ReportSchemaService.GetKnownTypeNames();
-
-foreach (string typeName in availableTypeNames.Take(5))
-{
-    Console.WriteLine(typeName);
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JsonSchemaValidation.cs region=PrintFirstFiveTypeNames}}
 
 ## Understanding the Retrieved Schema
 
@@ -109,37 +95,7 @@ The following table summarizes the most common standard JSON Schema keywords and
 
 For example, the following excerpt shows a simplified portion of the schema returned for the `Graph` reporting type:
 
-```json
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  ...
-  "properties": {
-    "NetType": {
-      "type": "string",
-      "const": "Graph"
-    },
-    ...
-    "ColorPalette": {
-      "type": "object",
-      "x-netType-oneOf": [
-        {
-          "type": "ColorPalette"
-        },
-        {
-          "type": "GradientPalette"
-        },
-        {
-          "type": "MonochromaticPalette"
-        }
-      ]
-    },
-    ...
-  },
-  "required": [
-    ...
-  ]
-}
-```
+{{source=CodeSnippets\Blazor\Docs\JSON\GraphJsonSchemaExample.json}}
 
 The standard JSON Schema `type` keyword indicates that the `ColorPalette` property is represented as a JSON object.
 

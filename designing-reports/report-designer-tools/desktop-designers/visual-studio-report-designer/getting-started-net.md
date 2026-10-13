@@ -88,21 +88,7 @@ Keep an explicit `Telerik.Reporting` reference for the report library's runtime 
 
 The following project file configures a report library for the designer:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net10.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Telerik.Reporting" Version="{{site.buildversion}}" />
-    <PackageReference Include="Telerik.Reporting.VSDesigner" Version="{{site.buildversion}}" PrivateAssets="all" />
-    <!-- Add the data source packages only if your reports use these data sources. -->
-    <PackageReference Include="Telerik.Reporting.WebServiceDataSource" Version="{{site.buildversion}}" />
-    <PackageReference Include="Telerik.Reporting.GraphQLDataSource" Version="{{site.buildversion}}" />
-  </ItemGroup>
-</Project>
-```
+{{source=CodeSnippets\Blazor\Docs\XML\VisualStudioDesignerNetCsproj.xml}}
 
 The following table describes the packages:
 
@@ -205,13 +191,7 @@ dotnet nuget list source
 
 If a solution or parent `nuget.config` clears inherited sources with `<clear />`, add the designer feed to that file. If package-source mappings are present, map the designer package to the local feed:
 
-```xml
-<packageSourceMapping>
-  <packageSource key="Telerik Reporting VS Designer">
-    <package pattern="Telerik.Reporting.VSDesigner" />
-  </packageSource>
-</packageSourceMapping>
-```
+{{source=CodeSnippets\Blazor\Docs\XML\NugetConfigVisualStudioDesignerNet.xml region=PackageSourceMapping}}
 
 Keep the existing mappings for your other sources. Map `Telerik.Reporting`, optional data-source packages, and dependencies such as `Telerik.Licensing` to sources that provide them, not to the designer-only feed.
 

@@ -70,7 +70,7 @@ In this case, the viewer CSS and JavaScript remain available. The map is not req
 
 ### Workaround 2: Adding the Source Map
 
-If you prefer not to exclude the asset, you can supply the source map file at the location that the package metadata expects. This workaround satisfies the existing asset declaration before the build processes static assets.
+If you prefer to keep the asset, you can supply the source map file at the location that the package metadata expects. This workaround satisfies the existing asset declaration before the build processes static assets.
 
 1. Download `css/reporting-blazor-viewer.css.map` from the [NativeBlazorViewerAssets folder](https://github.com/telerik/reporting-samples/tree/master/NativeBlazorViewerAssets). Place the file at `wwwroot/css/reporting-blazor-viewer.css.map` in the application.
 

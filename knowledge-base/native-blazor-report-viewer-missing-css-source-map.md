@@ -106,20 +106,20 @@ To restore the export icons:
 
 1. Copy that folder to `wwwroot/_content/Telerik.ReportViewer.BlazorNative/icons` in the application. Preserve the `export` subfolder and the SVG file names. The resulting structure is:
 
-        ```text
-        wwwroot/
-            _content/
-                Telerik.ReportViewer.BlazorNative/
-                    icons/
-                        export/
-                            csv.svg
-                            docx.svg
-                            image.svg
-                            options.svg
-                            pdf.svg
-                            pptx.svg
-                            rtf.svg
-                            xlsx.svg
-        ```
+	```text
+	wwwroot/
+		_content/
+			Telerik.ReportViewer.BlazorNative/
+				icons/
+					export/
+						csv.svg
+						docx.svg
+						image.svg
+						options.svg
+						pdf.svg
+						pptx.svg
+						rtf.svg
+						xlsx.svg
+	```
 
 1. Clean the application and rebuild.

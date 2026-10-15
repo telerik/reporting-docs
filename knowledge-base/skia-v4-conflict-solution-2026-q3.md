@@ -26,7 +26,7 @@ ticketid: 1719632
 
 ## Description
 
-I have updated the [SkiaSharp]()https://www.nuget.org/packages/SkiaSharp package in my project to **v4.153.1**. When I use the Skia graphics engine for previewing the report, I encounter a `System.MethodAccessException` when rendering reports in Telerik Reporting after upgrading to version **20.2.26.1007**. 
+I have updated the [SkiaSharp](https://www.nuget.org/packages/SkiaSharp) package in my project to **v4.153.1**. When I use the Skia graphics engine for previewing the report, I encounter a `System.MethodAccessException` when rendering reports in Telerik Reporting after upgrading to version **20.2.26.1007**. 
 
 ## Error Message
 
@@ -46,6 +46,7 @@ To resolve the issue, synchronize the versions of the `SkiaSharp` and `SkiaSharp
 2. If your application runs on Linux, update the "NativeAssets" dependencies for consistency. Update the following packages:
 
    ```xml
+   <PackageReference Include="SkiaSharp" Version="4.153.1" />
    <PackageReference Include="SkiaSharp.HarfBuzz" Version="4.153.1" />
    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="4.153.1" />
    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="4.153.1" />

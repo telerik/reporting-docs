@@ -121,3 +121,7 @@ Consider the following steps when experiencing problems while working with Teler
 	If you need help, please send us the generated SAZ file if you use Fiddler; a [HAR file](https://docs.cloud.google.com/support/docs/capture-browser-trace) if you capture the traffic in the Chrome browser, etc.
 
 > important After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps to reproduce the issue, a sample report with data, or a runnable project.
+
+## See Also
+
+* [Troubleshooting Instance 500 and Document 404 Errors in Native Blazor Viewer](slug:native-blazor-report-viewer-instance-500-document-404)

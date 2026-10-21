@@ -51,6 +51,12 @@ The following sections describe attributes, child elements, and parent elements.
 |Child elements|None|
 |Parent element|__fontLocations__|
 
+## Font Discovery and Application Restarts
+
+For the Linux/macOS GDI-based PDF font resolver, the configured font folders are scanned when the font library is first initialized. This initialization occurs on first use, not necessarily at application startup.
+
+During normal operation, the resolver reuses the in-memory font library and does not automatically rescan the folders when font files are added. Fonts added before the initial scan can be discovered by that scan. Fonts added after initialization are not automatically registered. Restart the hosting application or Reporting REST Service after adding fonts so that the library is rebuilt.
+
 ## Example
 
 The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares which folder will be used for font resolving. 

@@ -59,6 +59,8 @@ The REST Service Storage keeps all the information about the registered clients/
 
 For example, the generated report documents, the images embedded in the reports, etc. Therefore, with each generated report, the occupied storage space increases.
 
+For SQL database capacity planning, see [Estimating Storage Requirements](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage#estimating-storage-requirements).
+
 ### Preventing Storage Size Increases
 
 To prevent the storage from growing unnecessarily, when a client expires, the Reporting Service triggers a cleanup routine deleting its assets.
@@ -67,7 +69,7 @@ You can control the assets’ expiration using the [ClientSessionTimeout](/api/t
 
 When a viewer is closed, there is no notification, and the service does not know about that. Therefore, periodically (_every 5 minutes_), the REST Service performs cleaning of the expired data. You can prevent the expiration of an active viewer by setting the viewer's option `keepClientAlive` to `true` (default).
 
-> important The service triggers this logic only when awakened by a request from an active client/viewer.
+> important The service triggers this logic only when awakened by a request from an active client/viewer. Do not assume that expired assets are removed while the service is idle.
 
 ### Storage Structure
 

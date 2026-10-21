@@ -66,3 +66,4 @@ After creating/modifying the report on the server, you can return an [InstanceRe
 
 - [How to Set ReportSource for Report Viewers.](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers)
 - [How to Implement a Custom Report Source Resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver)
+- [Diagnosing InstanceReportSource Errors During Parameter Retrieval](slug:instancereportsource-parameter-retrieval-nullreferenceexception)

@@ -72,6 +72,7 @@ On the client side, you can invoke the print through the ReportViewer client obj
 
 ## See Also
 
+* [Print Reports Silently](slug:print-reports-silently)
 * [HTML5 Report Viewer - Printing Reports](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports)
 * [Embedded Report Engine](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)
 * [Print a report directly at client-side without displaying it in a Viewer](slug:print-a-report-directly-at-client-side-without-displaying-it-in-a-viewer)

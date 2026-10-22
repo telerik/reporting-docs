@@ -119,6 +119,7 @@ article on [extending the report designer](slug:telerikreporting/designing-repor
 
 ## See Also
 
+* [Calculate an Average of Group Averages](slug:average-of-group-averages)
 * [Custom User Aggregate Functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions)
 * [Extending Report Designer to Recognize Custom Assemblies](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer)
 * [Sum Distinct Values](slug:sum-disctinct-group-values)

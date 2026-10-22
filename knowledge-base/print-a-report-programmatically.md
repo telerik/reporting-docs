@@ -55,6 +55,22 @@ ReportProcessor reportProcessor = new ReportProcessor();
 reportProcessor.PrintReport(new TypeReportSource() { TypeName = typeof(BarcodesReport).AssemblyQualifiedName }, new PrinterSettings());
 ```
 
+#### Fit a Wider Report to Narrower Paper
+
+The `ReportProcessor.PrintReport` overloads do not expose a fit-to-page argument. Reducing `PageSettings.PaperSize.Width` changes the pagination width. It does not proportionally shrink the report content. For example, changing the paper width from 120 mm to 80 mm does not automatically scale the report items to fit. Content that exceeds the available width can continue onto additional horizontal pages.
+
+When adjusting the report layout, account for the available content width after margins, not only the nominal paper width. See [Understanding Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination) for details about physical pages, margins, and horizontal paging.
+
+The example in [Modify Report Physical Width Proportionally](slug:programmatically-modify-report-physical-width-proportionally) adjusts the report width, paper width, report item widths, and horizontal positions. It does not scale item heights, vertical positions, or font sizes. Treat it as a horizontal layout adjustment, not uniform scaling that preserves the aspect ratio of the entire report.
+
+For scaling by a PDF reader, see [Produce PDF Files Fitting the Physical Page on Printing](slug:how-to-produce-pdf-files-fitting-the-physical-page-on-printing). That approach delegates scaling to the reader, outside the reporting engine. Its example displays a print dialog and does not provide a silent replacement for direct `ReportProcessor.PrintReport` printing.
+
+#### Printing Without Dialogs
+
+Pass valid `PrinterSettings` when calling `ReportProcessor.PrintReport` to avoid a printer-selection dialog. Invalid printer settings can cause the method to request printer selection before printing begins.
+
+The `ReportProcessor.PrintController` property controls the print controller, including print-progress UI. Changing the print controller does not bypass printer validation. Handle invalid printer settings before calling `PrintReport` when the application must not display a printer-selection dialog.
+
 ### Legacy ASP.NET WebForms Report Viewer
 
 To print a report through the [Legacy ASP.NET ReportViewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview), you need to use the built-in print functionality. It depends on the **Adobe Acrobat Reader PDF plugin** (you need it installed to take advantage of true print and not the browsers' printing capabilities) and you have the option to select a printer from a list.

@@ -153,6 +153,10 @@ If you install Telerik Reporting by using the [MSI installer or the Control Pane
 1. Navigate to the **Start** menu.
 1. Select **Telerik** > **Reporting** > **Visual Studio Examples** > **C#/VB.NET Solution**.
 
+## Export Classification
+
+Telerik products, including Telerik Reporting, are classified as **EAR99** for export-control purposes. For more information about the EAR99 classification, see the [U.S. Department of Commerce guidance on ECCN and EAR99](https://www.trade.gov/eccn-and-export-administration-regulation-ear99).
+
 ## Support Options
 
 If you run into issues while working with Telerik Reporting, use the support channel that best matches the type of question.

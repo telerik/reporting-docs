@@ -16,14 +16,17 @@ jobs:
     runs-on: ubuntu-latest
 
     if: |
-      contains(github.event.issue.labels.*.name, 'Docs Feedback') ||
-      github.event.label.name == 'Docs Feedback'
+      (
+        contains(github.event.issue.labels.*.name, 'Docs Feedback') ||
+        github.event.label.name == 'Docs Feedback'
+      ) &&
+      github.event.issue.user.login == vars.DOCS_FEEDBACK_ALLOWED_USER
 
     steps:
       - name: Assign issue to Copilot
         env:
           GH_TOKEN: ${{ secrets.COPILOT_ASSIGNMENT_TOKEN }}
-          ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
           TARGET_REPOSITORY: ${{ github.repository }}
           BASE_BRANCH: ${{ github.event.repository.default_branch }}
         run: |

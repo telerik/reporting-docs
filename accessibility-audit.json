@@ -1,0 +1,833 @@
+{
+  "title": "Telerik Reporting Documentation Accessibility Audit",
+  "issue": "https://github.com/telerik/reporting-docs/issues/2279",
+  "audit_date": "2026-10-27",
+  "source_commit": "52620c957c66f814793b521fae1370b094249132",
+  "repository_root": "/home/runner/work/reporting-docs/reporting-docs",
+  "Executive Summary": {
+    "assessment": "The Markdown documentation has useful headings, named controls, numbered procedures, and many contextual image alternatives, but accessibility authoring is inconsistent. Some required instructions and reference values are available only in images. Headerless tables are a recurring source-level barrier.",
+    "scope": "Markdown source, article organization, authoring practices, and documentation assets referenced by articles only. This report does not evaluate Telerik Reporting functionality, accessibility features, generated reports, viewers, designers, product keyboard interaction, product screen-reader support, or the accuracy of product accessibility documentation.",
+    "main_risk_areas": [
+      "Instructions and tabular reference values that cannot be recovered from article text.",
+      "Empty table headers and HTML data tables without header cells.",
+      "Missing or insufficient image alternatives and animation-dependent procedures.",
+      "Inconsistent heading outlines, code annotations, and media descriptions."
+    ],
+    "most_common_measured_patterns": [
+      "622 HTML tables without th cells, from 642 HTML table matches.",
+      "134 unlabeled opening fences across 107 files.",
+      "40 entirely blank pipe-table header rows across 23 files.",
+      "17 heading-level jumps across 16 files."
+    ],
+    "estimated_content_quality_maturity": {
+      "level": "Developing / inconsistent",
+      "basis": "Many articles use accessible structural patterns, but repeated omissions and the absence of an accessibility checklist in contributor guidance indicate that these practices are not consistently enforced.",
+      "qualification": "Qualitative authoring assessment, not an organizational certification or statistically representative repository score. The four scored articles are purposive samples."
+    },
+    "severity_totals": {
+      "Critical": 0,
+      "High": 4,
+      "Medium": 16,
+      "Low": 7
+    },
+    "critical_assessment": "No Critical finding was established. Serious localized barriers are High; the audit did not establish a widespread barrier that prevents understanding across the repository.",
+    "deliverable": "Audit and remediation recommendations only. Existing articles, assets, publishing configuration, and product code are unchanged."
+  },
+  "Methodology and Coverage": {
+    "authoritative_guidance": "/home/runner/work/reporting-docs/reporting-docs/.github/skills/accessibility-doc-optimization/SKILL.md",
+    "rubric": {
+      "heading_structure": 0.20,
+      "alternative_text": 0.20,
+      "link_text_clarity": 0.15,
+      "table_accessibility": 0.10,
+      "plain_language": 0.15,
+      "formatting_independence": 0.10,
+      "callout_structure": 0.05,
+      "code_block_accessibility": 0.05
+    },
+    "scoring": "Per-article dimensions use the skill's 1–5 scale. Overall scores are the weighted sum rounded to one decimal. A dimension with no applicable source content receives 5 with an explicit not-applicable explanation; this is not evidence that uninspected rendered content passes.",
+    "severity_definitions": {
+      "Critical": "A demonstrated, widespread documentation barrier prevents understanding of content.",
+      "High": "A meaningful documentation barrier requires prompt remediation, including inaccessible required instructions or reference values.",
+      "Medium": "Reduced navigation, interpretation, or cognitive usability should be corrected during regular maintenance.",
+      "Low": "A best-practice or consistency improvement with limited immediate impact."
+    },
+    "inventory": {
+      "tracked_md_files": 1538,
+      "excluded_github_skill_files": 4,
+      "scanned_md_files_outside_github": 1534,
+      "knowledge_base_md_files": 673,
+      "designing_reports_md_files": 224,
+      "embedding_reports_md_files": 308,
+      "other_md_files": 329,
+      "coverage_note": "All Git-tracked .md files outside .github were included in source-pattern scans, including unpublished articles, templates, translations, and supporting README files. These counts describe the source repository, not the number of published pages."
+    },
+    "scan_method": [
+      "Enumerate tracked Markdown with git ls-files '*.md'; exclude .github from content metrics.",
+      "For headings, inline images, generic links, and code fences, skip initial YAML frontmatter and backtick/tilde fenced content. Trim whitespace when recognizing YAML delimiters. Recognize indented list fences and fences of three or more delimiters; count opening fences, not closing fences.",
+      "Count ATX headings outside fences. A jump is an increase of more than one from the preceding heading. Missing or multiple source H1 counts are triage signals, not proof of the rendered title structure.",
+      "For pipe tables, inspect the row before a separator and count headers whose cells are all blank. For HTML tables, inspect table elements for the absence of th cells.",
+      "Inspect actual HTML img tags separately from Markdown images; remove code/comment examples before missing-alt triage. Manually confirm the five missing-alt image tags.",
+      "For generic links, match exact case-insensitive labels: here, click here, this article, learn more, read more, more, link, this link, read this. Manually inspect same-page duplicate labels with different targets.",
+      "Manually read representative installation, tutorial, API-reference, configuration, chart, barcode, and knowledge-base articles. Inspect selected local assets, including the PDF417 error-correction table image and a SubReport parameter screenshot.",
+      "Apply the eight rubric dimensions to four fully read article samples. Use media and sensory-instruction checks as supplementary authoring checks requested by the issue."
+    ],
+    "measured_source_signals": [
+      {"signal": "Fenced code blocks", "occurrences": 1293},
+      {"signal": "Opening fences without a language or text label", "occurrences": 134, "files": 107},
+      {"signal": "Heading-level jumps", "occurrences": 17, "files": 16},
+      {"signal": "Files with multiple source ATX H1 headings", "files": 5},
+      {"signal": "Files with no source ATX H1 heading", "files": 677},
+      {"signal": "Entirely blank pipe-table header rows", "occurrences": 40, "files": 23},
+      {"signal": "HTML tables", "occurrences": 642, "files": 638},
+      {"signal": "HTML tables without th cells", "occurrences": 622},
+      {"signal": "Generic inline link-label candidates using the stated label set", "occurrences": 16, "files": 16},
+      {"signal": "Confirmed documentation HTML images without alt", "occurrences": 5, "files": 1},
+      {"signal": "Generic iframe title: YouTube video player", "occurrences": 12, "files": 10},
+      {"signal": "Image alternatives ending in the presentation suffix ><", "occurrences": 74, "files": 17},
+      {"signal": "Files containing external source-snippet inclusions", "files": 295}
+    ],
+    "limitations": [
+      "This is a repository-wide source-pattern inventory with manually verified representative findings, not a line-by-line human audit of every article. Counts are heuristic source matches, not counts of WCAG failures, and are not additive because categories overlap.",
+      "Lightweight scans are not a full Markdown or publishing-engine parser. Reference-style links, multiline HTML, comments, escaped delimiters, and generated content need separate validation.",
+      "The 677 files without a source ATX H1 include knowledge-base articles and fragments. Frontmatter and external templates may generate titles; no blanket missing-H1 defect or bulk title insertion is recommended.",
+      "Published HTML, the documentation accessibility tree, landmarks, heading transformations, table header associations, and assistive-technology output were not tested. Source Markdown cannot establish the semantics of the site shell.",
+      "External snippet bodies are not available in this repository. Their generated language labels, placeholders, and syntax-highlighting behavior were not assessed.",
+      "No video playback, caption, transcript availability in external players, audio description, or interactive embed keyboard behavior was tested. Missing transcript links in source are not reported as proven missing captions.",
+      "Only selected image assets were visually inspected. Findings about other assets describe missing source explanations without inventing image values or interface labels.",
+      "No confirmed color-only documentation-reading barrier was established. Examples teaching report colors are not defects in the documentation merely because they discuss color.",
+      "Readability was reviewed qualitatively; no repository-wide Flesch-Kincaid grade or acronym failure count is claimed.",
+      "Finding counts in the priority list count finding IDs, not individual repeated occurrences. A shared ID can cover primary and explicitly cited secondary locations, so per-article counts must not be summed as unique repository findings. Full per-article scores may provide additional rubric observations; they are not an exhaustive defect inventory."
+    ],
+    "existing_validation": {
+      "guidance": "/home/runner/work/reporting-docs/reporting-docs/README.md",
+      "observations": [
+        "The README's Running locally section delegates site generation to docs-seed.",
+        "The Gemfile lists documentation-rendering dependencies, but no dedicated documentation-accessibility test or lint configuration was found.",
+        "The visible GitHub workflow publishes knowledge-base content; this audit neither changes that workflow nor evaluates its security or execution.",
+        "No new dependencies, test framework, publishing rules, or product changes are needed for this report-only deliverable."
+      ],
+      "report_validation": "Check JSON parsing, rubric weights and arithmetic, finding-ID relationships, severity totals, and every quoted source range. Review the diff and run secret scanning before committing."
+    }
+  },
+  "Immediate Action Required": [
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-filtering-to-group.md",
+      "severity": "High",
+      "number_of_findings": 1,
+      "finding_ids": ["F02"],
+      "risks": "The required filter configuration is delegated to a screenshot.",
+      "immediate_actions": ["Transcribe the parameter settings and filter Expression, Operator, and Value into article text; retain screenshots as supplementary illustrations."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/pdf417.md",
+      "severity": "High",
+      "number_of_findings": 4,
+      "finding_ids": ["F03", "F09", "F16", "F26"],
+      "shared_finding_note": "F16 is a secondary occurrence documented under additional_evidence; its primary location is processing-element.md.",
+      "risks": "Reference tables are image-only; heading structure and an untyped notice reduce navigation and scanning usability.",
+      "immediate_actions": ["Replace all three table images with semantic data tables or equivalent accessible reference data.", "Demote Settings to H2, label the notice, and introduce the settings snippets."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/components/subreport-item/creating-reusable-headers-and-footers.md",
+      "severity": "High",
+      "number_of_findings": 1,
+      "finding_ids": ["F01"],
+      "risks": "Five instructional screenshots lack alt attributes.",
+      "immediate_actions": ["Add contextual alternatives for all five images and retain parameter names and values in prose.", "During the same editorial pass, label the expression fence and replace manually numbered pseudo-substeps with nested Markdown lists."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/doc-output/configure-the-report-engine/processing-element.md",
+      "severity": "High",
+      "number_of_findings": 4,
+      "finding_ids": ["F04", "F11", "F13", "F16"],
+      "shared_finding_note": "F11 is a secondary occurrence documented under additional_evidence; its primary location is get-ai-response.md.",
+      "risks": "Four tables lack meaningful headers; dense nested content, negative wording, and unlabeled subsections hinder interpretation.",
+      "immediate_actions": ["Name table columns or replace dense cells with structured reference sections.", "Confirm the intended resource-location condition and rewrite it positively.", "Use descriptive subsection headings and introduce external examples."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/getting-started.md",
+      "severity": "Medium",
+      "number_of_findings": 1,
+      "finding_ids": ["F19"],
+      "risks": "A first-report procedure relies on an animation for field selection and arrangement.",
+      "immediate_actions": ["Write the wizard sequence, example fields, column order, and completion action as numbered steps."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/expression-editor.md",
+      "severity": "Medium",
+      "number_of_findings": 1,
+      "finding_ids": ["F20"],
+      "risks": "The editor-opening procedure is illustrated rather than written.",
+      "immediate_actions": ["Add an Open the Expression Editor procedure using verified control names."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/assets-manager.md",
+      "severity": "Medium",
+      "number_of_findings": 2,
+      "finding_ids": ["F06", "F17"],
+      "shared_finding_note": "F17 is a secondary occurrence documented under additional_evidence; its primary location is conditional-formatting.md.",
+      "risks": "Screenshot-only view comparisons and a generically named video provide weak text alternatives.",
+      "immediate_actions": ["Describe Grid and List views in text, remove the layout table, and give the embedded tutorial a descriptive title."]
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/getting-started/installation/telerik-cli.md",
+      "severity": "Medium",
+      "number_of_findings": 1,
+      "finding_ids": ["F10"],
+      "risks": "Installation and account tasks skip heading levels.",
+      "immediate_actions": ["Change the five task-level H4 headings beneath H2 sections to H3."]
+    }
+  ],
+  "Detailed Findings": [
+    {
+      "id": "F01",
+      "severity": "High",
+      "category": "Images: missing alternatives",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/components/subreport-item/creating-reusable-headers-and-footers.md",
+      "evidence": [
+        {"lines": [79, 79], "quote": "<img style=\"border: 1px solid gray;\" src=\"images/subreport-title-report-parameter.png\" />"},
+        {"lines": [89, 89], "quote": "<img style=\"border: 1px solid gray;\" src=\"images/add-title-report-parameter.png\" />"},
+        {"lines": [112, 112], "quote": "<img style=\"border: 1px solid gray;\" src=\"images/add-title-report-paramete-in-main-report.png\" />"},
+        {"lines": [115, 115], "quote": "<img style=\"border: 1px solid gray;\" src=\"images/custom-title.png\" />"},
+        {"lines": [119, 119], "quote": "<img style=\"border: 1px solid gray;\" src=\"images/preview-custom-title.png\" />"}
+      ],
+      "impact": "Readers unable to see the screenshots receive no authored image alternatives for the parameter configuration and preview. Nearby text supplies some settings but does not identify each illustration.",
+      "recommended_remediation": "Add contextual alt text to all five instructional images. Keep parameter names, values, and actions in surrounding text rather than making long alternatives carry the whole procedure.",
+      "example_correction": "For the image at line 112: alt=\"Selected header SubReport with INNER REPORT expanded; add a Report source parameter using the Parameters control.\"",
+      "verification": "All five missing attributes are confirmed in source. The screenshot at line 112 was visually inspected; no product accessibility behavior was tested."
+    },
+    {
+      "id": "F02",
+      "severity": "High",
+      "category": "Images: screenshot-only instructions",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-filtering-to-group.md",
+      "evidence": [
+        {"lines": [28, 28], "quote": "as shown on the picture"},
+        {"lines": [34, 34], "quote": "Enter the filter expression as shown on next picture"},
+        {"lines": [38, 38], "quote": "![Set Filter to the Column group Qtr of the Crosstab in the Visual Studio Report Designer]"}
+      ],
+      "impact": "The required expression, operator, and value are absent from the article text and image alternative. A reader cannot reproduce this step from text alone.",
+      "recommended_remediation": "Transcribe all required parameter settings and the filter into a short list or an Expression / Operator / Value table. Verify the values against the screenshot before publishing.",
+      "example_correction": "Replace 'as shown on next picture' with a table naming the exact Expression, Operator, and Value, followed by the supplementary screenshot.",
+      "verification": "The complete article was read; no textual filter expression is supplied. Image values are not guessed in this report."
+    },
+    {
+      "id": "F03",
+      "severity": "High",
+      "category": "Images and tables: image-only reference data",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/pdf417.md",
+      "evidence": [
+        {"lines": [59, 59], "quote": "![Table with the Complete Set of Characters in Byte Mode in Barcode PDF 417](images/Barcodes/barcode-pdf417-table1-byte.png)"},
+        {"lines": [67, 67], "quote": "![Table with the Complete Set of Characters in Text Mode in Barcode PDF 417](images/Barcodes/barcode-pdf417-table2-text.png)"},
+        {"lines": [75, 75], "quote": "![Table with Error Correction Levels in Barcode PDF 417](images/Barcodes/barcode-pdf417-table3-error-correction.png)"}
+      ],
+      "impact": "Alternatives identify the tables but omit their values. Image-only rows cannot be navigated or associated with column headers as text.",
+      "recommended_remediation": "Provide semantic tables for the character mappings and error-correction values. Use text labels for control characters. Images may remain as optional illustrations, but do not attempt to put the full tables into alt text.",
+      "example_correction": "| Error correction level | Total error-correction codewords |\n| --- | --- |\n| 0 | 2 |\n| 1 | 4 |\nContinue with every remaining verified row.",
+      "assets": [
+        "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/images/Barcodes/barcode-pdf417-table1-byte.png",
+        "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/images/Barcodes/barcode-pdf417-table2-text.png",
+        "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/images/Barcodes/barcode-pdf417-table3-error-correction.png"
+      ],
+      "verification": "The Byte Mode table and error-correction table were visually inspected. The latter contains levels 0–8 and codeword counts 2–512. This evaluates access to the documentation data, not barcode functionality."
+    },
+    {
+      "id": "F04",
+      "severity": "High",
+      "category": "Tables: empty headers and dense cells",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/doc-output/configure-the-report-engine/processing-element.md",
+      "evidence": [
+        {"lines": [29, 33], "quote": "|   |   |"},
+        {"lines": [57, 59], "quote": "|   |   |"},
+        {"lines": [81, 85], "quote": "|   |   |"},
+        {"lines": [95, 99], "quote": "|   |   |"}
+      ],
+      "impact": "Four tables supply no meaningful column names. Long nested lists and parameter descriptions inside cells make linear reading and header-based navigation difficult.",
+      "recommended_remediation": "Use Configuration aspect / Description headers for short property tables. Move extensive attributes and supported-parameter lists into named subsections, with a lead-in explaining each remaining table.",
+      "example_correction": "| Configuration aspect | Description |\n| --- | --- |\n| Parent element | `Telerik.Reporting` specifies the root configuration element. |",
+      "verification": "Empty source header cells are confirmed; rendered header associations were not tested."
+    },
+    {
+      "id": "F05",
+      "severity": "Medium",
+      "category": "Tables: HTML data without header cells",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/knowledge-base/implement-database-definition-storage-efcore.md",
+      "evidence": [
+        {"lines": [14, 25], "quote": "<td>Product Version</td>"},
+        {"lines": [14, 25], "quote": "<td>Project Type</td>"}
+      ],
+      "impact": "Environment labels and values are all td cells. Readers cannot rely on programmatic row headers to identify each value, even though the small table remains understandable when read sequentially.",
+      "recommended_remediation": "Use a simple list for environment metadata, or th scope=\"row\" for the labels. Review the 622 no-th table matches before bulk conversion; not every HTML table necessarily represents data.",
+      "example_correction": "- Product version: 16.2.22.1109+\n- Project type: ASP.NET Core",
+      "verification": "The example table is confirmed in source. The repository count is a source-pattern count, not a rendered failure count."
+    },
+    {
+      "id": "F06",
+      "severity": "Medium",
+      "category": "Tables and images: visual layout without a textual comparison",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/assets-manager.md",
+      "evidence": [
+        {"lines": [80, 82], "quote": "|Grid View|List View|"},
+        {"lines": [82, 82], "quote": "alt=\"Assets Manager Grid View\""},
+        {"lines": [82, 82], "quote": "alt=\"Assets Manager List View\""}
+      ],
+      "impact": "A two-column table places screenshots side by side rather than comparing their characteristics in accessible text. Alternatives repeat the view names but do not communicate the comparison.",
+      "recommended_remediation": "Replace the layout table with two named subsections or a list. Describe the relevant differences and the actions illustrated in prose, then use contextual alternatives for supplementary screenshots.",
+      "example_correction": "### Grid view\nDescribe the verified grid characteristics and available controls.\n\n### List view\nDescribe the verified list characteristics and available controls.",
+      "verification": "Source-confirmed layout pattern. The screenshots' detailed differences require visual confirmation before writing the replacement descriptions."
+    },
+    {
+      "id": "F07",
+      "severity": "Medium",
+      "category": "Tables: ambiguous symbols and empty cells",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/graph/chart-types/overview.md",
+      "evidence": [
+        {"lines": [28, 41], "quote": "| Display ratio data | Display stock data | Display linear data | Display multi-value data |"},
+        {"lines": [30, 30], "quote": "|||&#x2713;||"}
+      ],
+      "impact": "A check mark and blank cells encode the comparison without explaining whether a blank means No, Not applicable, or Unknown. Symbol pronunciation varies.",
+      "recommended_remediation": "Confirm the intended values with the author and replace check marks and blanks with explicit Yes / No or Not applicable text. Retain the introductory context.",
+      "example_correction": "Use 'Yes' for a verified positive cell and the author-confirmed textual value for every previously blank cell; do not infer product capabilities from the blanks.",
+      "verification": "This finding concerns the table's encoding, not the suitability or capabilities of chart types."
+    },
+    {
+      "id": "F08",
+      "severity": "Medium",
+      "category": "Tables: spatial layout substituted for sequence",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/styling/rendering-and-paging/understanding-pagination.md",
+      "evidence": [
+        {"lines": [123, 126], "quote": "|page 1 (first part of table)|page 2 (second part)|page 3 (third part)|"},
+        {"lines": [126, 126], "quote": "|page 4 (another content here)|page 5 (empty)|page 6 (empty)|"}
+      ],
+      "impact": "A headerless table depicts a page arrangement. Readers must reconstruct the intended reading sequence from visual cell placement.",
+      "recommended_remediation": "Describe the six pages in an ordered list. If the spatial arrangement is important, retain a supplementary diagram with an equivalent explanation.",
+      "example_correction": "1. Page 1: First part of the table.\n2. Page 2: Second part.\n3. Page 3: Third part.\n4. Page 4: Additional content.\n5. Page 5: Empty.\n6. Page 6: Empty."
+    },
+    {
+      "id": "F09",
+      "severity": "Medium",
+      "category": "Heading structure: multiple H1s and skipped levels",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/pdf417.md",
+      "evidence": [
+        {"lines": [14, 14], "quote": "# Configuring Barcode PDF417 in Reports"},
+        {"lines": [41, 41], "quote": "# Settings"},
+        {"lines": [47, 47], "quote": "### Encoding Mode"}
+      ],
+      "impact": "Settings appears as a second document title, followed by H3 without an H2 parent, disrupting the source outline.",
+      "recommended_remediation": "Keep one H1. Make Settings H2 and retain its H3 subsections.",
+      "example_correction": "## Settings\n\nThe PDF417 barcode provides settings you can use to fine-tune its behavior.\n\n### Encoding Mode"
+    },
+    {
+      "id": "F10",
+      "severity": "Medium",
+      "category": "Heading structure: skipped task levels",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/getting-started/installation/telerik-cli.md",
+      "evidence": [
+        {"lines": [39, 39], "quote": "## How to Install the Telerik CLI"},
+        {"lines": [55, 55], "quote": "#### Verify Telerik CLI Installation"},
+        {"lines": [63, 63], "quote": "#### Update Telerik CLI"},
+        {"lines": [71, 71], "quote": "#### Uninstall Telerik CLI"},
+        {"lines": [100, 100], "quote": "#### Check Login State"},
+        {"lines": [110, 110], "quote": "#### Log Out from Your Telerik Account"}
+      ],
+      "impact": "Installation and account subsections use H4 beneath H2, implying a missing intermediate section.",
+      "recommended_remediation": "Change all five task-level H4 headings to H3.",
+      "example_correction": "### Verify Telerik CLI Installation"
+    },
+    {
+      "id": "F11",
+      "severity": "Medium",
+      "category": "Formatting independence: bold text substituted for structure",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api/get-ai-response.md",
+      "evidence": [
+        {"lines": [21, 21], "quote": "__Path parameters__"},
+        {"lines": [30, 30], "quote": "__Request Body__"},
+        {"lines": [40, 40], "quote": "__Response Body__"}
+      ],
+      "additional_evidence": [
+        {
+          "file": "/home/runner/work/reporting-docs/reporting-docs/doc-output/configure-the-report-engine/processing-element.md",
+          "lines": [84, 84],
+          "quote": "__Supported parameters for *path* provider__"
+        }
+      ],
+      "impact": "Visually emphasized API and configuration subsections are absent from heading navigation. Dense subsection labels inside table cells are especially difficult to locate.",
+      "recommended_remediation": "Use H3 labels beneath Request and Response. Move the supported-parameter descriptions out of dense table cells into appropriately nested named sections.",
+      "example_correction": "### Path parameters\n\n### Request body"
+    },
+    {
+      "id": "F12",
+      "severity": "Medium",
+      "category": "Plain language: unexplained acronyms",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/getting-started/installation/installation-approaches.md",
+      "evidence": [
+        {"lines": [26, 26], "quote": "automating installation in a CI/CD pipeline"},
+        {"lines": [40, 40], "quote": "in the machine GAC"}
+      ],
+      "impact": "Introductory installation content assumes deployment terminology that unfamiliar readers must research outside the task.",
+      "recommended_remediation": "Expand acronyms at first use, then use the abbreviations consistently. Choose the intended expansion of CD with the author.",
+      "example_correction": "Automating installation in a continuous integration and continuous delivery (CI/CD) pipeline.\n\nThe installer registers the required assemblies in the global assembly cache (GAC)."
+    },
+    {
+      "id": "F13",
+      "severity": "Medium",
+      "category": "Plain language: confusing negative condition",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/doc-output/configure-the-report-engine/processing-element.md",
+      "evidence": [
+        {"lines": [77, 77], "quote": "would not work in this scenario unless the necessary resources aren't placed"}
+      ],
+      "impact": "The nested negative obscures the condition the reader is meant to satisfy. Long surrounding sentences increase cognitive load.",
+      "recommended_remediation": "Ask the author to confirm the intended condition and state the successful setup positively in short sentences. Do not silently change the technical meaning.",
+      "example_correction": "If local relative paths are intended: 'Place resources in folders relative to the web application's root. Otherwise, use a custom resource resolver to retrieve them from storage.'",
+      "verification": "Confusing wording is confirmed. The technical condition is explicitly left for author confirmation rather than evaluated here."
+    },
+    {
+      "id": "F14",
+      "severity": "Medium",
+      "category": "Code examples: unlabeled fences",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties.md",
+      "evidence": [
+        {"lines": [30, 34], "quote": "````"},
+        {"lines": [38, 42], "quote": "````"}
+      ],
+      "additional_evidence": [
+        {
+          "file": "/home/runner/work/reporting-docs/reporting-docs/knowledge-base/accessing-previous-record-in-detail-section-telerik-reporting.md",
+          "lines": [23, 25],
+          "quote": "= Previous(\"group\", Fields.Column1)"
+        }
+      ],
+      "impact": "Readers and language-aware tools cannot identify the intended content type from the fence. The expression and its output are introduced clearly, but both are unannotated.",
+      "recommended_remediation": "Label expressions with a publishing-engine-supported language, or text when no dedicated lexer exists. Label output as text. Apply this review to the 134 unlabeled opening-fence matches.",
+      "example_correction": "````text\nHi Mr. Smith, John!\n\nHow are you today?\n````",
+      "verification": "No reliance on syntax-highlighting color alone was established; missing labels are the confirmed issue."
+    },
+    {
+      "id": "F15",
+      "severity": "Medium",
+      "category": "Code examples: long blocks without navigation guidance",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/knowledge-base/implement-database-definition-storage-efcore.md",
+      "evidence": [
+        {"lines": [215, 217], "quote": "we can now proceed with implementing"},
+        {"lines": [231, 231], "quote": "public class CustomDefinitionStorage : IDefinitionStorage"},
+        {"lines": [474, 476], "quote": "```"}
+      ],
+      "impact": "The 258-line block between opening line 217 and closing line 476 has a lead-in but no method-level roadmap. Linear reading requires traversing the entire implementation to locate relevant sections.",
+      "recommended_remediation": "Add a short roadmap of responsibilities and named method explanations before the block. Prefer smaller explained excerpts plus a clearly labeled complete example when feasible, without changing sample behavior.",
+      "example_correction": "Introduce the implementation's create, read, update, and folder operations in a navigable list, then explain each relevant method before its excerpt.",
+      "verification": "Length is a review trigger, not an automatic failure; the finding is the combination of length and insufficient navigation guidance."
+    },
+    {
+      "id": "F16",
+      "severity": "Low",
+      "category": "Code examples: external snippets lack local introductions",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/doc-output/configure-the-report-engine/processing-element.md",
+      "evidence": [
+        {"lines": [35, 38], "quote": "### Example"},
+        {"lines": [37, 37], "quote": "{{source=CodeSnippets\\MvcCS\\XmlConfiguration\\ProcessingElementConfiguration.xml region=ProcessingElementConfiguration}}"}
+      ],
+      "additional_evidence": [
+        {
+          "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/pdf417.md",
+          "lines": [85, 88],
+          "quote": "### Settings Examples"
+        }
+      ],
+      "impact": "A generic section label does not explain the purpose or outcome of each code inclusion. Raw-source readers also cannot inspect the externally stored snippet bodies.",
+      "recommended_remediation": "Use a descriptive example heading and a sentence explaining what each example demonstrates. Check generated language labels, placeholder explanations, and outcomes in the documentation build.",
+      "example_correction": "### Processing configuration examples\n\nThe following XML and JSON examples show how to configure the processing element.",
+      "verification": "This is a local-context finding. No missing language annotation or broken expansion is asserted for the external snippets."
+    },
+    {
+      "id": "F17",
+      "severity": "Medium",
+      "category": "Embedded content: indistinguishable frame titles",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/customizing-report-items/conditional-formatting.md",
+      "evidence": [
+        {"lines": [42, 42], "quote": "title=\"YouTube video player\""},
+        {"lines": [48, 48], "quote": "title=\"YouTube video player\""},
+        {"lines": [70, 70], "quote": "title=\"YouTube video player\""}
+      ],
+      "additional_evidence": [
+        {
+          "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/assets-manager.md",
+          "lines": [46, 46],
+          "quote": "title=\"YouTube video player\""
+        }
+      ],
+      "impact": "Frame navigation cannot distinguish the three different tutorials from their names. The Assets Manager embed likewise names the player rather than the content.",
+      "recommended_remediation": "Give every embed a topic-specific title, distinct within its article. Keep a useful introduction and a text alternative beside the video.",
+      "example_correction": "title=\"Conditional formatting for one table cell\"; title=\"Conditional formatting for items in a Panel\"; title=\"Alternating table row styles\"",
+      "verification": "Twelve generic-title occurrences across ten files were found. No claim is made about player controls or captions."
+    },
+    {
+      "id": "F18",
+      "severity": "Low",
+      "category": "Embedded content: text alternatives are not discoverable in source",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/getting-started/video-onboarding.md",
+      "evidence": [
+        {"lines": [21, 22], "quote": "The next video shares a glimpse of the format and structure"},
+        {"lines": [26, 27], "quote": "This video explains the details around the project"}
+      ],
+      "impact": "Short introductions are not equivalents of the tutorials. A reader needing text must discover an alternative through the external player or course, if one is available.",
+      "recommended_remediation": "Link a descriptive transcript or equivalent written tutorial beside each embed. Verify captions and any required descriptions of visual demonstrations as a follow-up media review.",
+      "example_correction": "Add links labeled 'Read the course overview transcript' and 'Read the project overview transcript' when the corresponding alternatives are available.",
+      "verification": "No transcript links occur in the article source. This is not a confirmed missing-caption or missing-transcript finding in YouTube or the external course."
+    },
+    {
+      "id": "F19",
+      "severity": "Medium",
+      "category": "Content accessibility: animation-dependent procedure",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/getting-started.md",
+      "evidence": [
+        {"lines": [76, 78], "quote": "Configure the table as illustrated in the animation below."}
+      ],
+      "impact": "The field-selection and column-arrangement sequence is delegated to an animation. Readers who cannot perceive the animation must infer the procedure.",
+      "recommended_remediation": "Write numbered steps naming the wizard controls, example fields, their order, and the completion action. Make the animation optional supplementary content.",
+      "example_correction": "Replace the animation-only step with a verified sequence: open the relevant wizard page, select the named example fields in order, and use the named completion command.",
+      "verification": "The missing written sequence is source-confirmed; animation frames were not inspected, so exact control labels are not invented."
+    },
+    {
+      "id": "F20",
+      "severity": "Medium",
+      "category": "Content accessibility: illustrated entry procedure",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/expression-editor.md",
+      "evidence": [
+        {"lines": [21, 23], "quote": "![How to create an Expression Editor ><]"}
+      ],
+      "impact": "The article explains expression concepts but does not provide an actionable written procedure for opening the editor. The screenshot alternative promises a how-to without supplying the steps.",
+      "recommended_remediation": "Add an Open the Expression Editor section naming the property and verified command or control. Retain the illustration as support.",
+      "example_correction": "Add a short numbered procedure for selecting the relevant item, locating its property, and invoking the editor, using visually verified names.",
+      "verification": "The complete article was reviewed. This concerns the instructions, not whether the product controls have accessible names."
+    },
+    {
+      "id": "F21",
+      "severity": "Medium",
+      "category": "Images: complex visualization without an equivalent takeaway",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/components/maps.md",
+      "evidence": [
+        {"lines": [154, 160], "quote": "The Choropleth below shows the 100 most populated countries:"},
+        {"lines": [154, 160], "quote": "![Choropleth map ><]"}
+      ],
+      "impact": "The alternative identifies a map type but does not convey its legend or the comparison the reader is meant to learn.",
+      "recommended_remediation": "Describe what the shading represents and summarize the important comparison. If values are needed, provide an accessible data table or clearly labeled data download.",
+      "example_correction": "Add a verified description of the legend and intended takeaway; do not use 'Choropleth map' as the only equivalent.",
+      "verification": "The source lacks a substantive equivalent. No specific map values or legend categories are asserted because the image was not inspected."
+    },
+    {
+      "id": "F22",
+      "severity": "Low",
+      "category": "Links: generic destination text",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/knowledge-base/right-to-left-in-table.md",
+      "evidence": [
+        {"lines": [64, 64], "quote": "[here](https://github.com/telerik/reporting-samples/tree/master/RightToLeftFormatInGroup)"}
+      ],
+      "impact": "The destination is unclear in an isolated links list, although the surrounding sentence supplies context.",
+      "recommended_remediation": "Describe the destination or action in the link itself. Review the other generic-label candidates manually rather than replacing labels without reading their context.",
+      "example_correction": "[Download the right-to-left table sample reports](https://github.com/telerik/reporting-samples/tree/master/RightToLeftFormatInGroup)",
+      "verification": "A label-quality issue, not an automatic WCAG 2.4.4 failure. Bare endpoint URLs and literal URLs in commands should not be rewritten merely because they look like URL-only links."
+    },
+    {
+      "id": "F23",
+      "severity": "Low",
+      "category": "Links: identical labels for different destinations",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/designing-reports/connecting-to-data/data-source-components/entitycoredatasource-component/overview.md",
+      "evidence": [
+        {"lines": [20, 20], "quote": "[Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview)"},
+        {"lines": [26, 26], "quote": "[Web Report Designer](slug:wrd-entitycoredatasource-wizard)"}
+      ],
+      "impact": "The same link label leads to the general designer overview and a specific wizard article, so a links list does not distinguish their purposes.",
+      "recommended_remediation": "Use topic-specific labels for the wizard destinations and retain the general labels for overview destinations. Apply the same review to the Standalone designer links in these lines.",
+      "example_correction": "[Entity Framework Core Data Source wizard in the Web Report Designer](slug:wrd-entitycoredatasource-wizard)",
+      "verification": "Distinct source targets are confirmed. Related-topic destinations may be understandable in context; severity reflects the limited standalone-label ambiguity."
+    },
+    {
+      "id": "F24",
+      "severity": "Low",
+      "category": "Images: presentation markers in alternatives",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/customizing-report-items/customizing-report-items-overview.md",
+      "evidence": [
+        {"lines": [13, 15], "quote": "img[alt$=\"><\"]"},
+        {"lines": [55, 67], "quote": "![Properties Area Global Search ><]"}
+      ],
+      "impact": "The >< suffix contributes no equivalent content and may introduce punctuation noise when alternatives are spoken or extracted.",
+      "recommended_remediation": "Move border/style selection to classes or a supported presentation mechanism. Remove suffixes only after updating the dependent selectors.",
+      "example_correction": "Use an image class for the border and a clean alternative such as 'Properties area search filtering available properties'.",
+      "verification": "Seventy-four alternatives across seventeen files use this suffix. Rendering or punctuation settings may change speech output, so these are cleanup candidates, not 74 proven spoken failures."
+    },
+    {
+      "id": "F25",
+      "severity": "Low",
+      "category": "Content accessibility: unnamed icon and relative location",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/getting-started/web-designer/set-up-and-create-basic-report.md",
+      "evidence": [
+        {"lines": [89, 92], "quote": "click on the icon beside it"}
+      ],
+      "impact": "The reader must visually identify an unnamed icon from its location rather than from the action or resulting dialog.",
+      "recommended_remediation": "Name the action and resulting dialog using verified terminology. Relative position may supplement a name but should not replace it.",
+      "example_correction": "After verifying the label: 'For the PictureBox Value property, open the asset picker (Select File...) to choose or upload the logo.'",
+      "verification": "This concerns sensory-dependent wording, not the accessibility of the product control itself."
+    },
+    {
+      "id": "F26",
+      "severity": "Medium",
+      "category": "Callouts: an important consequence is in an untyped quotation",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/pdf417.md",
+      "evidence": [
+        {"lines": [45, 45], "quote": "> Depending on the mode and error correction levels"},
+        {"lines": [45, 45], "quote": "will be discarded."}
+      ],
+      "impact": "The notice lacks a callout type or textual warning label, and its clause-heavy sentence makes the consequence easy to miss when scanning the article.",
+      "recommended_remediation": "Use the platform's typed warning pattern and short, self-contained sentences. Verify rendered callout semantics separately.",
+      "example_correction": ">warning Characters may be discarded. The selected mode and error-correction level determine which characters and how many symbols can be encoded. Invalid characters and characters beyond that limit are discarded.",
+      "verification": "No product behavior is independently evaluated; the existing notice's wording and structure are the subject of this finding."
+    },
+    {
+      "id": "F27",
+      "severity": "Low",
+      "category": "Callouts: inconsistent important-notice syntax",
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/1d-barcodes/1d-specifications.md",
+      "evidence": [
+        {"lines": [138, 138], "quote": "> **Important:** Code C requires an even number of digits."}
+      ],
+      "impact": "The explicit label is readable, but a generic blockquote may be identified differently from typed important notices by downstream tools.",
+      "recommended_remediation": "Standardize on the platform's supported typed important syntax while keeping the explicit constraint.",
+      "example_correction": ">important Code C requires an even number of digits. If the number of digits is odd, the last digit cannot be encoded in Code C.",
+      "verification": "Source-pattern inconsistency only; no claim that the current text is silent or inaccessible after rendering."
+    }
+  ],
+  "Repository-Wide Patterns": [
+    {
+      "pattern": "Critical information delegated to screenshots, animations, or rasterized tables",
+      "finding_ids": ["F02", "F03", "F19", "F20", "F21"],
+      "bulk_remediation": "Triage phrases such as 'as shown', 'in the picture', and 'in the animation'. Manually transcribe required values and actions; do not generate replacements from filenames.",
+      "automation_suitability": "Advisory text-pattern checks can identify candidates; equivalence requires editorial review."
+    },
+    {
+      "pattern": "Knowledge-base environment tables repeat all-td markup",
+      "finding_ids": ["F05"],
+      "bulk_remediation": "Review the shared authoring/template pattern, then convert verified label/value metadata to lists or row-header tables.",
+      "automation_suitability": "Detect HTML data tables without th cells, but distinguish actual article markup from code examples."
+    },
+    {
+      "pattern": "Configuration references use unnamed table columns and dense lists in cells",
+      "finding_ids": ["F04", "F11"],
+      "bulk_remediation": "Review all 40 blank-header candidates. Name meaningful columns and move nested reference content to sections.",
+      "automation_suitability": "Blank header cells are mechanically detectable; whether a table should become prose is an editorial decision."
+    },
+    {
+      "pattern": "Heading and callout patterns differ between articles",
+      "finding_ids": ["F09", "F10", "F11", "F26", "F27"],
+      "bulk_remediation": "Correct verified hierarchy jumps and multiple titles. Standardize notices without blindly changing admonition syntax or adding H1s to knowledge-base templates.",
+      "automation_suitability": "Heading checks must ignore YAML, code, snippets, and fragments. Callout checks need the actual publishing dialect."
+    },
+    {
+      "pattern": "Code-fence omissions coexist with externally included examples",
+      "finding_ids": ["F14", "F15", "F16"],
+      "bulk_remediation": "Classify each unlabeled block as code, expression, output, or plain text. Review long blocks for a roadmap, not an arbitrary length-only rejection.",
+      "automation_suitability": "Opening-fence labels can be enforced in source; expanded snippets and code tabs require build-output checks."
+    },
+    {
+      "pattern": "Alternative text doubles as a CSS styling hook",
+      "finding_ids": ["F24"],
+      "bulk_remediation": "Update selectors and alternatives together so removing presentation suffixes does not silently change styling.",
+      "automation_suitability": "Warn on filename-like alternatives, generic labels, and styling suffixes; do not demand nonempty alt on explicitly decorative images."
+    },
+    {
+      "pattern": "Links and embedded media are understandable in prose but weaker in isolated navigation",
+      "finding_ids": ["F17", "F18", "F22", "F23"],
+      "bulk_remediation": "Name destinations and tutorials explicitly. Place text alternatives adjacent to media and differentiate overview links from task-specific links.",
+      "automation_suitability": "Flag generic anchors, inconsistent destination labels, and duplicate frame titles for review; do not treat all duplicate topic labels as violations."
+    },
+    {
+      "pattern": "Long reference prose and unexplained acronyms increase cognitive load",
+      "finding_ids": ["F12", "F13"],
+      "bulk_remediation": "Prioritize installation and onboarding articles. Expand unfamiliar abbreviations on first use and split multi-condition sentences after author confirmation.",
+      "automation_suitability": "Sentence-length and acronym checks are advisory because API identifiers, code, and domain terminology need exceptions."
+    }
+  ],
+  "Recommendations": {
+    "Immediate (0-30 days)": [
+      "Assign documentation owners to the High-priority articles and remediate inaccessible required instructions and reference tables first.",
+      "Add alternatives to the five confirmed missing-alt screenshots; retain important settings in nearby text.",
+      "Correct the verified blank headers and heading skips in the priority articles.",
+      "Publish a contributor checklist covering all eight rubric dimensions and text alternatives for media.",
+      "Record source-only findings separately from rendered verification tasks; do not label this audit a WCAG conformance certification."
+    ],
+    "Short Term (1-3 months)": [
+      "Review all blank-header and no-th table candidates, then repair the shared authoring pattern to prevent new instances.",
+      "Triage all unlabeled fences, generic link candidates, and generic iframe titles with topic owners.",
+      "Add written equivalents to animation- and screenshot-led onboarding procedures.",
+      "Pilot advisory pull-request checks on changed Markdown, preserving a documented baseline for legacy findings.",
+      "Render representative articles with the real documentation pipeline and inspect heading outlines, landmarks, table associations, callouts, code tabs, and text alternatives.",
+      "Verify captions, transcripts, and descriptions for embedded tutorials with the media owners; link readable alternatives from the articles."
+    ],
+    "Long Term (3+ months)": [
+      "Complete rotating manual reviews across content areas rather than treating this sample as exhaustive.",
+      "Test published documentation reading workflows with screen readers, keyboard-only navigation, zoom, and high-contrast settings; keep this work distinct from product UI testing.",
+      "Track new-issue escape rate, remediation age, and the proportion of reviewed media with text equivalents. Do not use a heuristic match total as a conformance score.",
+      "Promote reliable checks to blocking policy after baseline cleanup and agreement on renderer-specific exceptions.",
+      "Include accessibility review in new article templates, media production, and periodic contributor training."
+    ]
+  },
+  "Authoring Guideline Improvements": {
+    "guidance_location": "/home/runner/work/reporting-docs/reporting-docs/README.md",
+    "current_guidance_evidence": [
+      {"lines": [56, 56], "quote": "please use only standard Markdown syntax"},
+      {"lines": [64, 64], "quote": "docs-seed"}
+    ],
+    "recommendations_only": true,
+    "accessibility_guidance": [
+      "Require every procedure to be completable without viewing a screenshot or animation. Give required expressions, values, control names, and outcomes in text.",
+      "Write contextual alt text for informative images; use explicit empty alt only for decorative images. Complex diagrams need a nearby extended description or accessible data.",
+      "Prohibit table screenshots as the sole source of reference values. Do not copy entire tables into image alternatives.",
+      "Name controls and actions; use direction or color only as supplementary context.",
+      "Provide descriptive media titles, a caption-verification process, and discoverable transcripts or equivalent written tutorials."
+    ],
+    "markdown_authoring_standards": [
+      "Define one article-level title with sequential descriptive headings, and document whether each published template supplies its own H1. Exempt intentional fragments.",
+      "Use real lists and headings instead of manual numbering, indentation, or bold-only section labels.",
+      "Use tables only for genuine data relationships. Supply meaningful headers, explicit values for blanks, and context for complex tables; prefer lists for simple metadata.",
+      "Require supported language tags on code fences and text labels on output or expressions without a dedicated lexer. Introduce examples, explain substitutions, and state expected outcomes when relevant.",
+      "Use the publishing platform's designated callout syntax with the correct severity and self-contained text; verify its rendered semantics.",
+      "Use descriptive, consistent link text. Distinguish different destinations with different labels and avoid URL-only prose links when a descriptive destination name is useful.",
+      "Expand unfamiliar acronyms at first use, prefer direct imperatives, and use the skill's target of mostly 25-word-or-shorter sentences as guidance rather than a mechanical limit."
+    ],
+    "documentation_review_process": [
+      "Add an eight-dimension accessibility checklist to editorial and pull-request review.",
+      "Require an author or reviewer to compare visual assets with their written equivalents.",
+      "Include source preview plus actual documentation-renderer preview for templates, raw HTML tables, callouts, snippet inclusions, and code tabs.",
+      "Review representative rendered articles through heading, link, frame, and table navigation in assistive technology.",
+      "Require explicit evidence and owner confirmation for corrections that could change the technical meaning of examples."
+    ],
+    "contributor_instructions": [
+      "Explain how repository-specific slug links, typed admonitions, included snippets, and knowledge-base templates affect accessibility; standard Markdown preview alone is insufficient.",
+      "Document what is automatically checked, what requires a human, and how to justify a narrow exception.",
+      "Keep documentation-reading accessibility separate from any claims about Telerik Reporting product functionality."
+    ]
+  },
+  "Automation Opportunities": [
+    {
+      "check": "Heading hierarchy and title count",
+      "mechanism": "Markdown linting with parser-aware heading increment and single-title checks, such as markdownlint MD001 and MD025; configure MD041 only after confirming generated-title behavior.",
+      "scope": "Changed article source first, with YAML/code exclusions and explicit template/fragment exceptions.",
+      "policy": "Baseline existing matches; block new verified structural regressions after configuration is validated.",
+      "manual_follow_up": "Descriptive labels, empty sections, rendered title generation, and landmark structure."
+    },
+    {
+      "check": "Image alternatives",
+      "mechanism": "Markdown image-alt checks such as MD045 plus HTML img attribute validation; advisory rules for generic alternatives, filenames, redundant captions, and >< suffixes.",
+      "scope": "Markdown images and real embedded HTML, excluding example code and intentional decorative images.",
+      "policy": "Block new informative images without authored alternatives; require a documented decorative exception where appropriate.",
+      "manual_follow_up": "Whether alternatives and nearby descriptions convey equivalent information."
+    },
+    {
+      "check": "Link purpose and label consistency",
+      "mechanism": "Documentation validation for generic anchors, URL-only prose labels, and same-page label-to-destination mappings. Normalize equivalent slug/URL representations before flagging duplicates.",
+      "scope": "Parsed prose links, excluding literal endpoints and code.",
+      "policy": "Advisory initially; allow contextual or intentional topic-label exceptions.",
+      "manual_follow_up": "Distinguish meaningful variations, different anchors in the same article, and genuinely ambiguous destinations."
+    },
+    {
+      "check": "Table semantics",
+      "mechanism": "Validate blank Markdown header cells and HTML data tables without th cells; inspect built HTML for header associations, scope, and irregular row structure.",
+      "scope": "Source and generated documentation, including environment metadata templates.",
+      "policy": "Block new blank data headers; warn on empty cells, excessive width, nested lists, and suspected layout tables.",
+      "manual_follow_up": "Whether the content is data, whether blank values have a legitimate meaning, and whether a list would be more usable."
+    },
+    {
+      "check": "Code annotation and context",
+      "mechanism": "Use a fenced-code-language rule such as markdownlint MD040 and a configured language allowlist; add advisory context and long-block checks.",
+      "scope": "Opening fences, indented code, and expanded snippets. Support this repository's actual language aliases before enforcement.",
+      "policy": "Require annotations for new fences; treat blocks over 80 lines as review candidates, not automatic failures.",
+      "manual_follow_up": "Introductions, placeholder explanations, method-level guidance, expected command outcomes, and independence from syntax colors."
+    },
+    {
+      "check": "Media context and alternatives",
+      "mechanism": "Validate nonempty topic-specific iframe titles and duplicate titles within articles; require a media-review field or checklist entry for transcript/equivalent tutorial and caption verification.",
+      "scope": "Documentation embeds only.",
+      "policy": "Block missing or generic titles on new embeds; do not infer missing captions from absent track elements on third-party iframes.",
+      "manual_follow_up": "Transcript equivalence, caption accuracy, visual descriptions, and documentation embed usability."
+    },
+    {
+      "check": "Plain language, sensory references, and callouts",
+      "mechanism": "Advisory checks for long sentences, unexplained acronym candidates, 'as shown' instructions, unnamed icons, and inconsistent typed notices.",
+      "scope": "Prose outside frontmatter and code; use domain terminology and publishing-dialect exceptions.",
+      "policy": "Human review required; no automatic rewrite of technical conditions or color-related product examples.",
+      "manual_follow_up": "Actual cognitive burden, whether location references supplement a control name, and correct callout severity."
+    },
+    {
+      "check": "Rendered documentation accessibility",
+      "mechanism": "In the existing documentation build pipeline, add a rendered-page accessibility validator such as axe-core or an equivalent approved tool, plus manual assistive-technology sampling.",
+      "scope": "Built documentation pages and their assets, not product demos or product UI.",
+      "policy": "Separate source lint from generated-output checks; pin and review any future dependencies before installation. No tool or workflow is installed by this audit.",
+      "manual_follow_up": "Landmarks, actual heading outline, table navigation, code tabs, reading order, and assistive-technology experience."
+    },
+    {
+      "check": "Repository governance",
+      "mechanism": "Require a documentation-accessibility review checklist, named owners for templates/media, and a reviewed baseline of existing findings.",
+      "scope": "Pull requests changing documentation or referenced assets.",
+      "policy": "Start with a changed-file policy to avoid blocking unrelated maintenance on legacy findings. Review exceptions periodically.",
+      "manual_follow_up": "Measure remediation and new regressions without conflating lint pass rates with WCAG conformance."
+    }
+  ],
+  "Article Scores": [
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/wrd-user-guide/assets-manager.md",
+      "overall_score": 4.0,
+      "dimensions": {
+        "heading_structure": {"score": 5, "rationale": "One H1 and sequential, descriptive H2 sections provide a navigable source outline.", "violations": []},
+        "alternative_text": {"score": 3, "rationale": "All six images have alternatives, but several name views without explaining the information or interaction shown.", "violations": ["Lines 80–82: Grid and List alternatives do not communicate their comparison (F06).", "Line 88: The animation alternative identifies View Details but not the demonstrated interaction."]},
+        "link_text_clarity": {"score": 5, "rationale": "Links identify their destinations, and repeated destinations use consistent or near-identical labels.", "violations": []},
+        "table_accessibility": {"score": 2, "rationale": "The table places screenshots side by side rather than presenting a textual data comparison.", "violations": ["Lines 80–82: Image-layout table (F06)."]},
+        "plain_language": {"score": 3, "rationale": "Instructions are direct, but explanatory paragraphs contain long sentences, passive constructions, and unexplained abbreviations.", "violations": ["Lines 14 and 50: Several ideas and conditions are combined into long sentences.", "Lines 22 and 74: CSV, JSON, and UI are not expanded."]},
+        "formatting_independence": {"score": 5, "rationale": "Named controls and semantic lists carry instructions without depending on color or emphasis alone.", "violations": []},
+        "callout_structure": {"score": 5, "rationale": "The permissions note uses the designated >note pattern and is a complete supplemental statement.", "violations": []},
+        "code_block_accessibility": {"score": 5, "rationale": "Not applicable: the article contains no code blocks.", "violations": []}
+      }
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/report-items/barcode/2d-barcodes/pdf417.md",
+      "overall_score": 3.0,
+      "dimensions": {
+        "heading_structure": {"score": 2, "rationale": "A second H1 and a skipped level disrupt the source outline.", "violations": ["Lines 41–47: Settings is H1 followed by an H3 subsection (F09)."]},
+        "alternative_text": {"score": 2, "rationale": "Alternatives name the reference tables without conveying their values or pointing to a textual equivalent.", "violations": ["Lines 59, 67, and 75: Table-image alternatives omit the reference values (F03)."]},
+        "link_text_clarity": {"score": 5, "rationale": "Not applicable: the article has no navigational text links.", "violations": []},
+        "table_accessibility": {"score": 1, "rationale": "Three reference tables are raster images rather than navigable data tables.", "violations": ["Lines 59, 67, and 75: No semantic equivalent for table headers and cells (F03)."]},
+        "plain_language": {"score": 3, "rationale": "PDF is expanded and settings are grouped, but some sentences are clause-heavy and specialist abbreviations are unexplained.", "violations": ["Lines 45 and 49: Long passive or repeated-clause wording.", "Lines 20 and 55: ISO and ASCII are not expanded."]},
+        "formatting_independence": {"score": 5, "rationale": "Named components and semantic lists explain the prose without requiring color or emphasis alone.", "violations": []},
+        "callout_structure": {"score": 3, "rationale": "The discarded-character notice is complete but uses an untyped quotation.", "violations": ["Line 45: Missing typed warning pattern (F26)."]},
+        "code_block_accessibility": {"score": 4, "rationale": "Settings inclusions have a heading but lack an introductory sentence. External snippet bodies and generated language labels are not assessed.", "violations": ["Lines 85–88: Examples lack a prose lead-in (F16)."]}
+      }
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/doc-output/configure-the-report-engine/processing-element.md",
+      "overall_score": 3.8,
+      "dimensions": {
+        "heading_structure": {"score": 4, "rationale": "One H1 and sequential headings organize the article, but the example label does not identify its configuration topic.", "violations": ["Line 35: Generic Example heading (F16)."]},
+        "alternative_text": {"score": 5, "rationale": "Not applicable: the article contains no images.", "violations": []},
+        "link_text_clarity": {"score": 5, "rationale": "Links identify types, related topics, releases, or configuration elements.", "violations": []},
+        "table_accessibility": {"score": 1, "rationale": "All four configuration tables have empty column headers and several contain extensive nested lists.", "violations": ["Lines 29, 57, 81, and 95: Blank table headers (F04)."]},
+        "plain_language": {"score": 2, "rationale": "Reference prose includes long multi-condition sentences and a confusing negative construction.", "violations": ["Line 77: 'would not work ... unless ... aren't placed' obscures the condition (F13).", "Lines 63 and 91: Long sentences combine multiple scenarios or operations.", "GDI, MSSQL, XML, and REST are not expanded at first use."]},
+        "formatting_independence": {"score": 4, "rationale": "Most meaning is independent of styling, but parameter subsections are bold-only labels in table cells.", "violations": ["Lines 84 and 98: Supported-parameter labels are not navigable headings (F11)."]},
+        "callout_structure": {"score": 5, "rationale": "Not applicable: there are no callout blocks.", "violations": []},
+        "code_block_accessibility": {"score": 4, "rationale": "The external examples lack a descriptive lead-in. Expanded language labels and snippet bodies cannot be assessed locally.", "violations": ["Lines 35–38: XML and JSON examples lack an introduction (F16)."]}
+      }
+    },
+    {
+      "file": "/home/runner/work/reporting-docs/reporting-docs/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties.md",
+      "overall_score": 4.7,
+      "dimensions": {
+        "heading_structure": {"score": 5, "rationale": "The short article has one descriptive H1 and no skipped or empty headings.", "violations": []},
+        "alternative_text": {"score": 5, "rationale": "The alternative identifies the expression-editing dialog, and surrounding text supplies the expression and result.", "violations": []},
+        "link_text_clarity": {"score": 5, "rationale": "The Expression Editor link identifies its destination.", "violations": []},
+        "table_accessibility": {"score": 5, "rationale": "The object-property table has descriptive headers, populated cells, and a clear introduction.", "violations": []},
+        "plain_language": {"score": 4, "rationale": "Concrete examples help comprehension, but some terminology and an indirect instruction could be simpler.", "violations": ["Line 16: 'strongly typed' and 'string literal' are not defined.", "Line 28: The newline instruction is lengthy and indirect."]},
+        "formatting_independence": {"score": 5, "rationale": "The prose names delimiters explicitly and does not rely on color-only instructions.", "violations": []},
+        "callout_structure": {"score": 5, "rationale": "Not applicable: there are no callout blocks.", "violations": []},
+        "code_block_accessibility": {"score": 2, "rationale": "Both fenced blocks have introductory context but neither has a language or text label.", "violations": ["Lines 30 and 38: Unlabeled expression and output fences (F14)."]}
+      }
+    }
+  ]
+}

@@ -20,7 +20,7 @@ To achieve this functionality, use the `Previous` function. It allows retrieving
 
 1. Use the following expression to get the previous group's value:
 
-   ```
+   ```text
    = Previous("group", Fields.Column1)
    ```
 
@@ -28,7 +28,7 @@ To achieve this functionality, use the `Previous` function. It allows retrieving
 
 1. To avoid displaying an empty value for the first record, use the `IsNull` function. This ensures a default value, such as `0`, is shown for the first record:
 
-   ```
+   ```text
    = IsNull(Previous("group", Fields.Column1), 0)
    ```
 
@@ -42,6 +42,6 @@ To achieve this functionality, use the `Previous` function. It allows retrieving
 
 ## See Also
 
-* [Previous functions]({slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions})
-* [IsNull function]({slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions})
-* [Expressions in Telerik Reporting]({slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview})
+* [Previous functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions)
+* [IsNull function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions)
+* [Expressions in Telerik Reporting](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)

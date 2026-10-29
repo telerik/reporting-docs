@@ -27,7 +27,7 @@ when evaluated will result in:
 
 If you want part of the expression to be put on another line, you have to insert a new line character in a string literal. For example, here is how the expression should look in the [Expression Editor](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog):
 
-````
+````text
 ='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!
 
 How are you today?'
@@ -35,7 +35,7 @@ How are you today?'
 
 The result would be:
 
-````
+````text
 Hi Mr. Smith, John!
 
 How are you today?

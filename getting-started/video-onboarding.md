@@ -21,10 +21,16 @@ In this course, you will use ASP.NET Core with Blazor and your job is to add a d
 The next video shares a glimpse of the format and structure of the whole training and provides a brief overview of what will be accomplished through the steps.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3hrlUfmTzSI?rel=0" title="Telerik Reporting - Overview of the Onboarding Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Open the [Course Overview video on YouTube](https://www.youtube.com/watch?v=3hrlUfmTzSI) to access **Show transcript** in the video description when a transcript is available. For a written outline of the course topics, see [Onboarding Modules](#onboarding-modules). To start with written instructions, follow the [Standalone Report Designer tutorial](slug:telerikreporting/getting-started/first-steps).
+
 ## Project Overview
 
 This video explains the details around the project you will be modifying&mdash;what it is, what needs to be added, and what the accomplished state will look like.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G60E03Cs5I8?rel=0" title="Telerik Reporting - Project Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Open the [Project Overview video on YouTube](https://www.youtube.com/watch?v=G60E03Cs5I8) to access **Show transcript** in the video description when a transcript is available. The project adds a dynamic report page to an existing tracking application: design the report in the Standalone Report Designer, then display it through the Blazor Report Viewer.
+
+For written, step-by-step guidance on these tasks, use the [Standalone Report Designer tutorial](slug:telerikreporting/getting-started/first-steps) and the [Blazor Report Viewer integration guide](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview).
 
 ## Onboarding Modules
 

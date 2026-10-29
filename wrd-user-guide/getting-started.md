@@ -40,13 +40,18 @@ Make sure you have access to:
 
 ## Creating the Report and Connecting It to Data
 
-1. Create a new empty report by clicking **New Report** in the main menu:
+1. Create a new empty report:
 
-    ![Animation showing how to create a new report from the main menu](images/wrd-create-new-report.gif)
+    1. Open **Menu** and select **New Report**.
+    1. In **Create a Report**, enter `MyFirstReport` in **File Name** and keep **Save as type** set to `trdp`.
+    1. Use the folder picker next to **Location** to choose a report folder. The animation creates a `NewReports` folder; you can also use an existing folder.
+    1. Select **Save**. The new report opens with empty page header, detail, and page footer sections.
+
+    ![Animation showing how to create a new report from the main menu ><](images/wrd-create-new-report.gif)
 
 1. On the **Components** tab, go to [Data Sources](slug:web-report-designer-user-guide-components-data-sources) and select **Web Service Data Source**:
 
-    ![Components tab with Web Service Data Source selected](images/wrd-create-web-service-data-source.png)  
+    ![Components tab with Web Service Data Source selected ><](images/wrd-create-web-service-data-source.png)  
 
     Alternatively, you can type "Web Service Data Source" in the **Search box** to let the designer locate the tool for you.
 
@@ -56,7 +61,7 @@ Make sure you have access to:
     https://demos.telerik.com/reporting/api/data/productsales
     ```
 
-    ![Configure Data Retrieval step with the demo web service URL entered](images/wrd-create-web-service-data-source-wizard-step1.png)
+    ![Configure Data Retrieval step with the demo web service URL entered ><](images/wrd-create-web-service-data-source-wizard-step1.png)
 
 Now you have a blank report that is connected to data. The design surface remains empty at this stage because you have not added any report items yet.
 
@@ -71,19 +76,23 @@ Next, design the report by adding a Table report item to display your data.
 
 1. Select the **Components** tab, and then click the [**Table Wizard**](slug:web-report-designer-user-guide-components-tables#using-the-table-wizard) button:  
 
-    ![Table Wizard button in the Components tab](images/wrd-table-wizard.png)
+    ![Table Wizard button in the Components tab ><](images/wrd-table-wizard.png)
 
-1. Configure the table as illustrated in the animation below. Select the fields you want to display and arrange them in the table columns:
+1. Configure the table. The animation demonstrates these steps:
 
-    ![Animation showing how to add fields and arrange columns in the Table Wizard](images/wrd-table-wizard-usage.gif)  
+    1. In **Configure Table**, select the web service data source you created from the **Data Source** list.
+    1. Add `ProductCategory`, `ProductName`, and `OrderDate` from **Data Source Fields** to **Fields Arrangement** > **Detail Values**, in that order.
+    1. Select **Create** to generate the table. It contains a header row and a detail row with expressions for the selected fields.
+
+    ![Animation showing how to add fields and arrange columns in the Table Wizard ><](images/wrd-table-wizard-usage.gif)  
 
 1. Optional: Style the table from the **APPEARANCE** section in the Properties panel:
 
-    ![Properties panel showing table appearance settings](images/wrd-table-style.png)
+    ![Properties panel showing table appearance settings ><](images/wrd-table-style.png)
 
 1. Click **Preview** in the upper-right corner to confirm that the report loads data from the web service and renders the table:
 
-    ![Preview of the completed report with product sales data in a table](images/wrd-preview-report.png) 
+    ![Preview of the completed report with product sales data in a table ><](images/wrd-preview-report.png) 
 
 If the preview is empty, confirm that the report uses the correct web service URL and that the Web Report Designer instance can reach that endpoint.
 

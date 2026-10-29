@@ -10,7 +10,11 @@ components: [wrdhtml5, wrdblazorwrapper, general]
 position: 0
 ---
 <style>
-img[alt$="><"] {
+img[src$="wrd-properties-area-categorized-area.png"],
+img[src$="wrd-properties-area-alphabetical-view.png"],
+img[src$="wrd-properties-area-indent-line-guides.png"],
+img[src$="wrd-properties-area-global-search.gif"],
+img[src$="wrd-properties-area-reset-button.gif"] {
   border: 1px solid lightgrey;
 }
 </style>
@@ -47,24 +51,25 @@ To facilitate the easier styling of your report, the Properties Panel offers sev
 
 * **Different Views**: Choose the layout that fits your style:
 
-  * **Categorized view**: Groups properties by function (like Appearance, Layout, Data), making it easier to find what you need.
-  * **Alphabetical view**: Lists everything in alphabetical order&mdash;perfect when you know exactly what you're looking for.
+    * **Categorized view**: Groups properties by function (like Appearance, Layout, Data), making it easier to find what you need.
 
-|Categorized|Alphabetical|
-|----|----|
-|![Properties Area Categorized View ><](images/wrd-properties-area-categorized-area.png) |![Properties Area Alphabetical View><](images/wrd-properties-area-alphabetical-view.png)|
+        ![Properties Area with properties grouped by category.](images/wrd-properties-area-categorized-area.png)
+
+    * **Alphabetical view**: Lists everything in alphabetical order&mdash;perfect when you know exactly what you're looking for.
+
+        ![Properties Area with properties listed alphabetically.](images/wrd-properties-area-alphabetical-view.png)
 
 * **Indent Guides**: When showing nested properties Indent Line Guides help you see how settings are structured, so you can navigate complex items with confidence: 
 
-![Indent Line Guides in Properties Area ><](images/wrd-properties-area-indent-line-guides.png)  
+    ![Indent guides showing nested properties in the Properties Area.](images/wrd-properties-area-indent-line-guides.png)
 
 * **Search Box**: Use the Global Search bar at the top to instantly locate any property or editor.
 
-![Properties Area Global Search ><](images/wrd-properties-area-global-search.gif)   
+    ![Using Global Search to locate properties in the Properties Area.](images/wrd-properties-area-global-search.gif)
 
 * **Reset Value**: If you have made a change you want to undo, note that each editable property has a `Reset button` next to it. Click it to revert that setting to its default - without affecting anything else.
 
-![Properties Area Reset Button ><](images/wrd-properties-area-reset-button.gif)    
+    ![Resetting a property to its default value in the Properties Area.](images/wrd-properties-area-reset-button.gif)
 
 ## See Also
 

@@ -13,7 +13,7 @@ components: [general]
 
 # Installation Approaches for Telerik Reporting
 
-Telerik Reporting supports three installation approaches: the [Control Panel](#using-the-control-panel), the [MSI installer](#using-the-msi-file), and [NuGet packages](#using-nuget-packages). Choose the approach based on whether you need design-time support and how you plan to manage the installation in your workflow.
+Telerik Reporting supports three installation approaches: the [Control Panel](#using-the-control-panel), the [Microsoft Installer (MSI) package](#using-the-msi-file), and [NuGet packages](#using-nuget-packages). Choose the approach based on whether you need design-time support and how you plan to manage the installation in your workflow.
 
 > note After installing the product, you need to [download and activate your Telerik Reporting License Key](slug:license-key).
 
@@ -23,7 +23,7 @@ Use this table to choose the approach that fits your workflow:
 | :---------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------ |
 | [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                | Yes                 |
 | [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer. | Yes                 |
-| [NuGet packages](#using-nuget-packages)   | Adding Telerik Reporting to an existing project or automating installation in a CI/CD pipeline.              | No                  |
+| [NuGet packages](#using-nuget-packages)   | Adding Telerik Reporting to an existing project or automating installation in a continuous integration and continuous delivery or deployment (CI/CD) pipeline. | No                  |
 
 ## Using the Control Panel
 
@@ -37,7 +37,7 @@ You can install Telerik Reporting by using the `.msi` file for a full local inst
 
 The MSI installation wizard installs the product by default in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder.
 
-The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine GAC for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
+The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine's Global Assembly Cache (GAC) for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
 
 ### Specifics
 
@@ -59,10 +59,10 @@ To install Telerik Reporting through the MSI automatic installer file:
    ![The Welcome Page of the Telerik Reporting Installation Wizard](images/installWizard1.png)
 
 1. In the dialog that opens, select the features you require.
-   - If Telerik Reporting does not locate a local SQL Server instance, or if the SQL Server Browser Service is stopped, the **Examples** dialog option installs the examples, but the application configuration files do not contain valid connection strings. You can still access working demos on the [Telerik Reporting demos page](https://demos.telerik.com/reporting).
+   - If Telerik Reporting does not locate a local Microsoft SQL Server instance (SQL stands for Structured Query Language), or if the SQL Server Browser Service is stopped, the **Examples** dialog option installs the examples, but the application configuration files do not contain valid connection strings. You can still access working demos on the [Telerik Reporting demos page](https://demos.telerik.com/reporting).
    - To set up the examples with a valid connection string, select **Examples Setup**. All local SQL Server 2005 and later instances are supported.
-   - The examples require the MS SQL Server [AdventureWorks database](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)). If the database is not already available on your machine, the wizard deploys it locally.
-   - To install AdventureWorks manually from the SQL script in the installer, navigate to `[InstallDir]/Examples/Data/AdventureWorks OLTP`. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the CSV data files in the same folder.
+   - The examples require the Microsoft SQL Server [AdventureWorks database](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)). If the database is not already available on your machine, the wizard deploys it locally.
+   - To install the AdventureWorks online transaction processing (OLTP) database manually from the SQL script in the installer, navigate to `[InstallDir]/Examples/Data/AdventureWorks OLTP`. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the comma-separated values (CSV) data files in the same folder.
 
    ![The Configuration Page of the Telerik Reporting Installation Wizard](images/installWizard2.png)
 
@@ -78,7 +78,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 ## Using NuGet Packages
 
-You can add Telerik Reporting to a project by installing NuGet packages from [NuGet.org](https://www.nuget.org/) or the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting REST WebAPI-based service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
+You can add Telerik Reporting to a project by installing NuGet packages from [NuGet.org](https://www.nuget.org/) or the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting Representational State Transfer (REST) service based on ASP.NET Web API (Application Programming Interface)](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
 
 > note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
 

@@ -10,12 +10,6 @@ components: [wrdhtml5, wrdblazorwrapper, general]
 position: 2
 ---
 
-<style>
-img[alt$="><"] {
-  border: 1px solid lightgrey;
-}
-</style>
-
 # Create Your First Report
 
 Use this tutorial to create your first report in the Web Report Designer. You will create an empty report, connect it to a web service, add a table, and verify the result in the preview.
@@ -40,7 +34,12 @@ Make sure you have access to:
 
 ## Creating the Report and Connecting It to Data
 
-1. Create a new empty report by clicking **New Report** in the main menu:
+1. Create a new empty report:
+
+    1. Open **Menu** and select **New Report**.
+    1. In **Create a Report**, enter `MyFirstReport` in **File Name** and keep **Save as type** set to `trdp`.
+    1. Use the folder picker next to **Location** to choose a report folder. The animation creates a `NewReports` folder; you can also use an existing folder.
+    1. Select **Save**. The new report opens with empty page header, detail, and page footer sections.
 
     ![Animation showing how to create a new report from the main menu](images/wrd-create-new-report.gif)
 
@@ -73,7 +72,11 @@ Next, design the report by adding a Table report item to display your data.
 
     ![Table Wizard button in the Components tab](images/wrd-table-wizard.png)
 
-1. Configure the table as illustrated in the animation below. Select the fields you want to display and arrange them in the table columns:
+1. Configure the table. The animation demonstrates these steps:
+
+    1. In **Configure Table**, select the web service data source you created from the **Data Source** list.
+    1. Add `ProductCategory`, `ProductName`, and `OrderDate` from **Data Source Fields** to **Fields Arrangement** > **Detail Values**, in that order.
+    1. Select **Create** to generate the table. It contains a header row and a detail row with expressions for the selected fields.
 
     ![Animation showing how to add fields and arrange columns in the Table Wizard](images/wrd-table-wizard-usage.gif)  
 

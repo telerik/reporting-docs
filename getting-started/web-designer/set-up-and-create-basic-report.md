@@ -87,7 +87,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 1. Let's add the company logo to the report.
 
 	1. We need to add a [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) to the Report Header. You may search for the report item, drag it to the Report Header, and adjust its size and position as needed.
-	1. To upload the logo, search for the `Value` property in the PictureBox, and click on the icon beside it. It opens the `Select File...` dialog, which represents the [Assets Manager](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
+	1. To upload the logo, search for the `Value` property in the PictureBox and open the asset picker (`Select File...`) using the button beside the property. This dialog is the [Assets Manager](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources#assets-manager), which contains report assets such as images and external stylesheets.
 
 		![Telerik Reporting Web Report Designer Assets Manager Select File dialog for a PictureBox image value](images/select-image-for-picturebox-web-designer.png)
 

@@ -18,7 +18,7 @@ The `Get AI Response` endpoint allows you to send a query to the AI assistant fo
 
     POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/ai/{threadId}/query
 
-__Path parameters__
+### Path Parameters
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -27,7 +27,7 @@ __Path parameters__
 |`documentId`|String|ID of the generated report document that is summarized. Returned by [Resolve Document](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document).|
 |`threadId`|String|ID of the AI thread for the current conversation. Returned by [Create AI Thread](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/features-api/create-ai-thread).|
 
-__Request Body__
+### Request Body
 
 A JSON object containing a query property.
 
@@ -37,7 +37,7 @@ A JSON object containing a query property.
 | ----- | ----- |
 |`202 Accepted`|The AI response is successfully generated.|
 
-__Response Body__
+### Response Body
 
 A JSON object containing the AI-generated response to the user's query.
 

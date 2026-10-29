@@ -16,7 +16,7 @@ The SubReport item is perfect for creating reusable report components that can b
 
 Here's a step-by-step tutorial for creating a reusable part of a report (for example, header and footer) using a SubReport:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BEfNQsuqzME?si=hSHQuYQ1IPvTYopW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BEfNQsuqzME?si=hSHQuYQ1IPvTYopW" title="Creating reusable report headers and footers with SubReport" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Creating the Header Report
 
@@ -70,53 +70,54 @@ Instead of using fixed data in the report headers/footers, it is possible to pas
 
 Here are the steps to pass a title from the main report to a TextBox in the SubReport:
 
-1. Define a parameter in the SubReport
+1. Define a parameter in the SubReport:
 
-    1.1. Open the SubReport report (HeaderReport.trdp) in the Report Designer.
+    1. Open `HeaderReport.trdp` in the Report Designer.
 
-    1.2. Go to Report >> Data >> Report Parameters.
+    1. Select the report and expand **Data** > **Report parameters**.
 
-    <img style="border: 1px solid gray;" src="images/subreport-title-report-parameter.png" /> 
+        <img style="border: 1px solid gray;" src="images/subreport-title-report-parameter.png" alt="HeaderReport properties with the Report parameters collection expanded and no items added." />
 
-    1.3. Add a new parameter:
+    1. Add a new parameter with these settings:
 
-    * Name: "title_parameter"
+        * **Name**: `title_parameter`
+        * **Type**: `String`
+        * **Allow null**: selected (optional)
+        * **Allow blank** and **Mergeable**: selected, as shown in the example
+        * **Auto-refresh**, **Multi-value**, and **Visible**: cleared
+        * **Text** and **Value**: empty
 
-    * Type: String
+        Select **Save** to add the parameter.
 
-    * Allow null: Yes (optional)
+        <img style="border: 1px solid gray;" src="images/add-title-report-parameter.png" alt="Add New Item dialog for the title_parameter report parameter." />
 
-    <img style="border: 1px solid gray;" src="images/add-title-report-parameter.png" /> 
+1. Bind a TextBox in the SubReport to that parameter:
 
-2. Bind a TextBox in the SubReport to that parameter
+    1. Select the TextBox inside `HeaderReport.trdp` where the title should appear.
 
-    2.1. Select the TextBox inside the SubReport report where the title should appear.
+    1. Set its **Value** to the following expression:
 
-    2.2. Set its Value to: 
+        ```text
+        =Parameters.title_parameter.Value
+        ```
 
-    ```
-    =Parameters.title_parameter.Value
-    ```
-    Now, the TextBox displays whatever the main report passes in.
+        The TextBox displays the title passed from the main report.
 
-3. Map the main report value to the SubReport parameter
+1. Map the main report value to the SubReport parameter:
 
-    3.1. Open the main report and select the SubReport header item.
+    1. Open the main report and select the SubReport header item.
 
-    3.2. Go to Inner Report and add a new parameter:
+    1. Expand **Inner Report** > **Report source** > **Parameters**. Keep **Type** set to `UriReportSource` and **Uri** set to `HeaderReport.trdp`.
 
-    * Name: "title_parameter"
+        <img style="border: 1px solid gray;" src="images/add-title-report-paramete-in-main-report.png" alt="Header SubReport properties with the report source Parameters collection expanded." />
 
-    * Value: "Your custom title"
+    1. Add a parameter with **Name** set to `title_parameter` and **Value** set to `Your custom title`, then select **Save**.
 
-    <img style="border: 1px solid gray;" src="images/add-title-report-paramete-in-main-report.png" />  
+        <img style="border: 1px solid gray;" src="images/custom-title.png" alt="Add New Item dialog mapping title_parameter to a custom title." />
 
+1. Preview the report. The header now displays `Your custom title` above the main report's sample text, `My First Report`.
 
-    <img style="border: 1px solid gray;" src="images/custom-title.png" />  
-
-4. Preview the report with your custom title:
-
-    <img style="border: 1px solid gray;" src="images/preview-custom-title.png" />      
+    <img style="border: 1px solid gray;" src="images/preview-custom-title.png" alt="Main report preview with the parameter-driven header above the report content and reusable footer." />
 
 
 ## See Also

@@ -25,22 +25,22 @@ The following table summarizes the specific chart features that affect the suita
 
 For examples of the described chart types, refer to the sample reports in the local demos located in `[InstallDir]\Examples`.
 
-In the table, "Yes" preserves an original checkmark, and "Not indicated" preserves an originally blank cell. "Not indicated" does not mean that the chart cannot display that data.
+>note "No" does not mean that the chart cannot display that data.
 
 | Chart type | Suitable for ratio data | Suitable for stock data | Suitable for linear data | Suitable for multi-value data |
 | ------ |:------:|:------:|:------:|:------:|
-| [Bar Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview)|Not indicated|Not indicated|Yes|Not indicated|
-| [Line Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview)|Not indicated|Not indicated|Yes|Not indicated|
-| [Area Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview)|Not indicated|Not indicated|Yes|Not indicated|
-| [Column Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview)|Not indicated|Not indicated|Yes|Not indicated|
-| [Pie Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview)|Yes|Not indicated|Not indicated|Not indicated|
-| [Doughnut Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview#pie-chart-variations)|Yes|Not indicated|Not indicated|Not indicated|
-| [Polar Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview)|Yes|Not indicated|Not indicated|Not indicated|
-| [Range Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview)|Not indicated|Not indicated|Yes|Yes|
-| [Scatter Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview)|Yes|Not indicated|Yes|Not indicated|
-| [Bubble Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview)|Yes|Not indicated|Yes|Not indicated|
+| [Bar Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview)|No|No|Yes|No|
+| [Line Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview)|No|No|Yes|No|
+| [Area Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview)|No|No|Yes|No|
+| [Column Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview)|No|No|Yes|No|
+| [Pie Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview)|Yes|No|No|No|
+| [Doughnut Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview#pie-chart-variations)|Yes|No|No|No|
+| [Polar Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview)|Yes|No|No|No|
+| [Range Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview)|No|No|Yes|Yes|
+| [Scatter Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview)|Yes|No|Yes|No|
+| [Bubble Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview)|Yes|No|Yes|No|
 | [Sparklines](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines)|Yes|Yes|Yes|Yes|
-| [OHLC Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview)|Not indicated|Yes|Yes|Yes|
+| [OHLC Charts](slug:telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview)|No|Yes|Yes|Yes|
 
 ## See Also
 

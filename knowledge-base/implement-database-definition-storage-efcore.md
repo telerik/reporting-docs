@@ -46,11 +46,11 @@ The implementation has seven steps:
 
 The code blocks show related parts of one implementation, not separate standalone programs. Use the [sample project](#sample-project) for the application structure.
 
-1. ### Define the Database Models
+### Define the Database Models
 
-	Create Entity Framework Core models for the report definitions and their folders. These models will be used later to create database tables. The `Report` model stores the report bytes and metadata:
+Create Entity Framework Core models for the report definitions and their folders. These models will be used later to create database tables. The `Report` model stores the report bytes and metadata:
 
-	```C#
+```C#
 	public class Report
 	{
 		[Column("Id")]
@@ -83,11 +83,11 @@ The code blocks show related parts of one implementation, not separate standalon
 		[Column("Uri")]
 		public string Uri { get; set; }
 	}
-	```
+```
 
-	The `ReportFolder` model stores folder metadata and parent-child relationships:
+The `ReportFolder` model stores folder metadata and parent-child relationships:
 
-	```C#
+```C#
 	public class ReportFolder
 	{
 
@@ -118,15 +118,15 @@ The code blocks show related parts of one implementation, not separate standalon
 		[Column("ModifiedOn")]
 		public DateTime ModifiedOn { get; set; }
 	}
-	```
+```
 
-1. ### Create the Database Context
+### Create the Database Context
 
-	Create a custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) for querying and saving data in the definition storage implementation.
+Create a custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) for querying and saving data in the definition storage implementation.
 
-	The following `SqlDefinitionStorageContext` exposes the report and folder collections. The connection string targets a local SQL Server Express `DefinitionStorage` database; use connection settings appropriate for your environment. The service registration in step 7 creates the tables with `EnsureCreated`.
+The following `SqlDefinitionStorageContext` exposes the report and folder collections. The connection string targets a local SQL Server Express `DefinitionStorage` database; use connection settings appropriate for your environment. The service registration in step 7 creates the tables with `EnsureCreated`.
 
-	```C#
+```C#
 	using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
 	using Microsoft.EntityFrameworkCore;
 	
@@ -150,13 +150,13 @@ The code blocks show related parts of one implementation, not separate standalon
 			}
 		}
 	}
-	```
+```
 
-1. ### Map Database Models to Designer Models
+### Map Database Models to Designer Models
 
-	Use the following extension class to convert between database models and [Telerik.WebReportDesigner.Services.Models](/api/telerik.webreportdesigner.services.models). The methods map report and folder metadata and create database entities from save and create-folder requests:
+Use the following extension class to convert between database models and [Telerik.WebReportDesigner.Services.Models](/api/telerik.webreportdesigner.services.models). The methods map report and folder metadata and create database entities from save and create-folder requests:
 
-	```C#
+```C#
 	using System;
 	using Telerik.WebReportDesigner.Services.Models;
 
@@ -230,15 +230,15 @@ The code blocks show related parts of one implementation, not separate standalon
 			}
 		}
 	}
-	```
+```
 
-1. ### Implement the Definition Storage
+### Implement the Definition Storage
 
-	Implement the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface with the database context and mapping methods from the previous steps.
+Implement the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface with the database context and mapping methods from the previous steps.
 
-	The following focused excerpt shows the read operation from `CustomDefinitionStorage`. `GetAsync` normalizes the resource URI and retrieves the stored report bytes. It throws `ReportNotFoundException` when no bytes are found. This method belongs to the complete class below; do not add it a second time.
+The following focused excerpt shows the read operation from `CustomDefinitionStorage`. `GetAsync` normalizes the resource URI and retrieves the stored report bytes. It throws `ReportNotFoundException` when no bytes are found. This method belongs to the complete class below; do not add it a second time.
 
-	```C#
+```C#
 	public Task<byte[]> GetAsync(string resourceName)
 	{
 		var reportBytes = this.GetDbReportModel(this.PrepareResourceUri(resourceName))?.Bytes;
@@ -507,13 +507,13 @@ The code blocks show related parts of one implementation, not separate standalon
 			}
 		}
 	}
-	```
+```
 
-1. ### Resolve Reports for Preview
+### Resolve Reports for Preview
 
-	Implement [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) to preview reports stored in the database. The following class looks up the report by URI, unpackages its bytes, and returns an `InstanceReportSource`:
+Implement [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) to preview reports stored in the database. The following class looks up the report by URI, unpackages its bytes, and returns an `InstanceReportSource`:
 
-	```C#
+```C#
 	public class CustomReportSourceResolver : IReportSourceResolver
 	{
 
@@ -544,13 +544,13 @@ The code blocks show related parts of one implementation, not separate standalon
 			return instanceReportSource;
 		}
 	}
-	```
+```
 
-1. ### Resolve Subreports and Drillthrough Reports
+### Resolve Subreports and Drillthrough Reports
 
-	For [`SubReports`](slug:telerikreporting/designing-reports/report-structure/subreport) and [`NavigateToReport`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) actions, the engine also uses a `ReportDocumentResolver`. The default resolver looks up reports by URI rather than querying this database. The following custom implementation returns the main report from its `InstanceReportSource` and retrieves reports referenced by `UriReportSource` from the database:
+For [`SubReports`](slug:telerikreporting/designing-reports/report-structure/subreport) and [`NavigateToReport`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) actions, the engine also uses a `ReportDocumentResolver`. The default resolver looks up reports by URI rather than querying this database. The following custom implementation returns the main report from its `InstanceReportSource` and retrieves reports referenced by `UriReportSource` from the database:
 
-	```CSharp
+```CSharp
 	using Microsoft.EntityFrameworkCore;
 	using SqlDefinitionStorageExample.EFCore;
 	using System;
@@ -587,13 +587,13 @@ The code blocks show related parts of one implementation, not separate standalon
 			}
 		}
 	}
-	```
+```
 
-1. ### Register the Storage and Resolvers
+### Register the Storage and Resolvers
 
-	Register `CustomDefinitionStorage`, `CustomReportSourceResolver`, and `CustomReportDocumentResolver` with the application services. The following startup code assigns them to the report service configuration and [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), then creates the database tables. `reportsPath` points to the sample project's Report Designer examples directory; adjust it to match your directory structure.
+Register `CustomDefinitionStorage`, `CustomReportSourceResolver`, and `CustomReportDocumentResolver` with the application services. The following startup code assigns them to the report service configuration and [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), then creates the database tables. `reportsPath` points to the sample project's Report Designer examples directory; adjust it to match your directory structure.
 
-	```C#
+```C#
 	var builder = WebApplication.CreateBuilder(args);
 
 	// Add services to the container.
@@ -642,7 +642,7 @@ The code blocks show related parts of one implementation, not separate standalon
 			.Database
 			.EnsureCreated();
 	}
-	```
+```
 
 ## Notes
 

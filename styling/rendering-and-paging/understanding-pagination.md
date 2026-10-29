@@ -120,12 +120,10 @@ If the report spans over several pages in width then its sections are stretched 
 
 >caution If your report item (table) is too wide to fit on the page it will cause a horizontal overflow and will continue on the next page. However whenever this happens if there is additional content below the table a blank page for each additional page (needed by the table) will be generated. To understand this better consider the following example: 
 
-1. Page 1 contains the first part of the table.
-1. Page 2 contains the second part of the table.
-1. Page 3 contains the third part of the table.
-1. Page 4 contains the content below the table.
-1. Page 5 is empty.
-1. Page 6 is empty.
+|Part 1|Part 2|Part 3|
+| ------ | ------ | ------ |
+|page 1 (first part of table)|page 2 (second part)|page 3 (third part)|
+|page 4 (another content here)|page 5 (empty)|page 6 (empty)|
 
 ## Report sections
 

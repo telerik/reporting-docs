@@ -2,7 +2,7 @@
 title: Pass parameter value to MVC report viewer
 description: Sometimes you need to set the report source and report parameters from the Home Controller, or you can also query them in the URL
 type: how-to
-page_title: How to set the report source and report parameters from the controller in an ASP.NET MVC project through a model?
+page_title: How to set the report source and report parameters from the controller in ASP.NET MVC project through a model?
 slug: set-report-source-and-parameters-through-model
 position:
 tags: HTML5 MVC Report Viewer

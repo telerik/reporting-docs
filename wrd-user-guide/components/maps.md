@@ -11,7 +11,13 @@ position: 4
 ---
 
 <style>
-img[alt$="><"] {
+img[src$="wrd-components-tray-maps-design-mode.png"],
+img[src$="wrd-components-tray-maps-map-data-source.png"],
+img[src$="wrd-components-tray-maps-geolocationmapgroup.png"],
+img[src$="wrd-components-tray-maps-series-map-group.png"],
+img[src$="wrd-components-tray-maps-piegraph-mapseries.png"],
+img[src$="wrd-components-tray-maps-location-tile-providers.png"],
+img[src$="wrd-components-tray-choropleth-map.png"] {
   border: 1px solid lightgrey;
 }
 
@@ -35,13 +41,13 @@ The Maps are suitable for a variety of use cases:
 * Performance comparison&mdash;Compare metrics across geographical regions using different chart types.
 * Distribution analysis&mdash;Understand how products, services, or resources are distributed geographically.
 
-![Maps Group ><](images/wrd-components-tray-maps-design-mode.png)
+![Map and Choropleth report items in the Components tab.](images/wrd-components-tray-maps-design-mode.png)
 
 ## Map Types
 
 The Web Report Designer provides two main types of map components:
 
-* [Map](slug:web-report-designer-user-guide-components-maps#map)&mdash;Displays data in various formats determined by the chosen Map Type: Point, Pie, or Column charts positioned on geographical locations.
+* [Map](slug:web-report-designer-user-guide-components-maps#creating-a-report-with-the-map-component)&mdash;Displays data in various formats determined by the chosen Map Type: Point, Pie, or Column charts positioned on geographical locations.
 * [Choropleth](slug:web-report-designer-user-guide-components-maps#choropleth)&mdash;A [thematic map](https://en.wikipedia.org/wiki/Choropleth_map) that uses graded color differences to display a measure over predefined regions or areas, making it one of the most popular ways to visualize how a measure varies across a geographic area.
 
 >important Currently, the Web Report Designer allows only **displaying an already created** report (for example, using the Standalone Report Designer) that contains a Choropleth report item and simple fine-tuning. It is not possible to build a Choropleth from scratch in the Web Report Designer.
@@ -90,7 +96,7 @@ The **Tile Provider** requests and downloads the imagery data for the specified 
 
 The following tutorial demonstrates how to create a Map that presents sales distribution by products across several states.
 
-> To follow along with the steps below, you need access to an instance of the [Adventure Works](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) database for [Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver17).
+>note To follow along with the steps below, you need access to an instance of the [Adventure Works](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) database for [Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver17).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o4LzrlBu1TU?si=I59bkzgld_iTCpDT&rel=0" title="Adding a Map Item in the Telerik Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -101,7 +107,10 @@ Since this tutorial uses the **AzureLocationProvider**, an Azure Maps subscripti
 Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-sources) item with a connection to the AdventureWorks database. This data will be used to create the Pie Charts that are positioned on the map. Paste the following query in the `SELECT` statement box:
 
 {{source=CodeSnippets\CS\SQL\SelectProductSalesByState.sql}}
-![Set up Map DataSource ><](images/wrd-components-tray-maps-map-data-source.png)
+
+The query returns `ProductSubCategory`, `State`, and `LineTotal`. The preview includes Road Bikes sales in Queensland, Australia (`LineTotal` of `2443.35`), and New South Wales, Australia (`LineTotal` of `1000.4375`). These are individual records; the map series will aggregate their values.
+
+![SQL Data Source wizard with the sales query and a preview of product subcategories, states, and line totals.](images/wrd-components-tray-maps-map-data-source.png)
 
 ### Step 2: Building the Map Charts
 
@@ -109,37 +118,39 @@ Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-
 
 1. Set up GeoLocationMapGroup. The Geolocation grouping you create defines the Chart locations&mdash;where the Charts appear on the Map. Using the `State` field in the data source will place the Chart on the corresponding federal state on the map. 
 
-    2.1 Create a new GeoLocationMapGroup.
+    1. Create a new GeoLocationMapGroup.
 
-    2.2 Add a new Grouping item. This lets you specify which data source field to use for generating the Chart's categories.
+    1. Add a new Grouping item. This lets you specify which data source field to use for generating the Chart's categories.
 
-    2.3 Set the Expression to the `State` field.
+    1. Set the Expression to the `State` field.
 
-    ![Adding a GeoLocationMapGroup ><](images/wrd-components-tray-maps-geolocationmapgroup.png)
+    ![GeoLocationMapGroup configuration for grouping chart locations by State.](images/wrd-components-tray-maps-geolocationmapgroup.png)
 
 1. Set up the Series Group using the `ProductSubCategory` field:
 
-    3.1 Create a new SeriesGroup.
+    1. Create a new SeriesGroup.
 
-    3.2 Add a new **ChildGroup** item. You use the **ChildGroup** type, as you define how to **subdivide** the data within each Pie Chart on the map.
+    1. Add a new **ChildGroup** item. You use the **ChildGroup** type, as you define how to **subdivide** the data within each Pie Chart on the map.
 
-    3.3 Add a new Grouping. In the **Groupings**, you specify the data source field for generating the Chart's series (the slices in the Pie).
+    1. Add a new Grouping. In the **Groupings**, you specify the data source field for generating the Chart's series (the slices in the Pie).
 
-    3.4 Set the Expression to the `ProductSubCategory` field.
+    1. Set the Expression to the `ProductSubCategory` field.
 
-    ![Adding a Series Map group ><](images/wrd-components-tray-maps-series-map-group.png)
+    ![Series group configuration for dividing each pie chart by ProductSubCategory.](images/wrd-components-tray-maps-series-map-group.png)
 
    Now that you've defined the data for the Pie Chart, you can continue by configuring the presentation of the data in the next step.
 
 1. Set up the **Series** type under the **PRESENTATION** section. The **Series** item will generate the pie slices.
 
-    4.1 Add a new **PieMapSeries**.
+    1. Add a new **PieMapSeries**.
 
-    4.2 Specify the LegendItem's Value.
+    1. Set **LegendItem** > **Value** to `= Fields.ProductSubCategory` to label the product subcategories in the legend.
 
-    4.3 Specify the series' **Size** and all other properties that the dialog offers. The **Size** property lets you adjust the dimensions of the generated Pie Charts.
+    1. Set **Size** to `= Sum(Fields.LineTotal)` to aggregate sales for each product subcategory at each location. You can also configure the other presentation properties in the dialog.
 
-    ![Adding a PieGraphMapSeries ><](images/wrd-components-tray-maps-piegraph-mapseries.png)
+    ![Pie map series properties with product subcategory legend labels and size based on the sum of line totals.](images/wrd-components-tray-maps-piegraph-mapseries.png)
+
+    The resulting map places a pie chart at each state location. Each slice represents a product subcategory's aggregated sales for that location.
 
 ### Step 3: Defining the Location and Tile Providers
 
@@ -149,15 +160,15 @@ Add a new [SQL Data Source](slug:web-report-designer-user-guide-components-data-
 
 1. Repeat the previous two steps for the **Tile provider**.
 
-![Defining the Location and Tile Providers ><](images/wrd-components-tray-maps-location-tile-providers.png)
+![Map properties for configuring the location and tile providers and their authentication tokens.](images/wrd-components-tray-maps-location-tile-providers.png)
 
 ## Choropleth
 
 A **Choropleth** map is a thematic map where areas are shaded or colored in proportion to a statistical variable (like population density, income levels, or voting results). This specialized map component colors geographical areas according to the data values they represent.
 
-The Choropleth below shows the 100 most populated countries:
+The Choropleth below shows population density for the 100 most populated countries. The legend measures people per square kilometer, not total population. Its ranges are 3–15, 15–32, 32–51, 51–75, 75–93, 93–121, 121–198, and 198–1,091 people per square kilometer. Countries in higher ranges have more people per unit of land area; the shading does not indicate which country has the largest total population.
 
-![Choropleth map ><](images/wrd-components-tray-choropleth-map.png)
+![World choropleth grouping countries into eight population-density ranges.](images/wrd-components-tray-choropleth-map.png)
 
 <!-- If you need to create a report with a Choropleth, download the [`PopulationData.zip`](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip) file, save it locally, and extract its contents in a folder. You can use it as a starting point for your own report.  -->
 

@@ -11,7 +11,7 @@ components: [wrdhtml5, wrdblazorwrapper, general]
 position: 100
 ---
 <style>
-img[alt$="><"] {
+img[src$="CreatingExpressionEditorWRD.png"] {
   border: 1px solid lightgrey;
 }
 </style>
@@ -20,7 +20,13 @@ img[alt$="><"] {
 
 Instead of manually entering fixed values, you can use expressions to make your report items smarter and more dynamic. This means your reports can automatically adapt to changing data or conditions—saving you time and reducing errors. The expression editor helps you build these expressions easily, offering ready-to-use elements and clear descriptions so you can focus on getting the result you need without digging through documentation.
 
-![How to create an Expression Editor ><](images/CreatingExpressionEditorWRD.png)
+## Open the Expression Editor
+
+1. Select the report item whose value you want to calculate, such as a TextBox.
+1. Locate its **Value** property in the **Properties Area**.
+1. Select the ellipsis (**...**) button next to **Value**. The **Edit Value** dialog opens.
+
+![Edit Value dialog with the expression = Fields.CategoryID and built-in expression elements.](images/CreatingExpressionEditorWRD.png)
 
 ## Designing Expressions with Built-in Elements
 
@@ -36,9 +42,16 @@ By using the predefined expression components in the Web Report Designers, you c
 | `Report Parameters` | Report-level inputs that control report content, filtering, or layout—often used to pass values, filter data, or link related reports |
 | `Reporting Constants` | Predefined values used to control report layout and styling—such as alignment, borders, image sizing, and page behavior |
 
-The following video shows how to build expressions in an easy way using the built-in elements: 
+To build an expression with the built-in elements in **Edit Value**:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V9pPYD3nDT0?si=vjX_Zj4WrJqT--34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+1. Select **Fields** for the connected data source and choose the field to use. For the screenshot's example, use a data source containing `CategoryID` and enter `= Fields.CategoryID` in the expression area.
+1. To extend the expression, browse **Functions**, **Operators**, or the other built-in categories. Select an element to read its description, parameters, and return type, then use it in your expression.
+1. Select **Save** to apply the expression.
+1. Preview the report to check the calculated value. For `= Fields.CategoryID`, the TextBox displays the category identifier for the current data row.
+
+The following video also demonstrates building expressions with the built-in elements:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V9pPYD3nDT0?si=vjX_Zj4WrJqT--34" title="Building expressions with built-in elements in the Web Report Designer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 >tip You can add a new line as a string in the Expression with the `Edit Expression` dialog.
 >

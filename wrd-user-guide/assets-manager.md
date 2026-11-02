@@ -43,7 +43,7 @@ To share a resource (e.g. an image), you need to invoke the **Assets Manager** i
 
 You do not always need to go through the menu. When you are editing a report item like a PictureBox, click the asset picker next to the `Value` field. This will instantly open the Assets Manager so you can select an image right away:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LQndIgOzb90?si=lvlq13vAtKLU_oMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LQndIgOzb90?si=lvlq13vAtKLU_oMG" title="Selecting a shared image with the Assets Manager" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Resource Folders
 
@@ -77,9 +77,15 @@ To help you manage your shared resources with ease and flexibility, the Assets M
 
 * **Choose Your View: Grid or List**&mdash;You can switch between Grid View and List View depending on your workflow. The Grid View also supports column resizing for better visibility.
 
-    |Grid View|List View|
-    |----|----|
-    |<img style="border: 1px solid gray;" src="images/wrd-assets-manager-grid-view.png" alt="Assets Manager Grid View" />|<img style="border: 1px solid gray;" src="images/wrd-assets-manager-list-view.png" alt="Assets Manager List View" />|
+    * **Grid View** displays resource metadata in columns: name, size, creation date, modification date, and location. The screenshot lists the `Data`, `Images`, and `Styles` folders.
+
+        <img style="border: 1px solid gray;" src="images/wrd-assets-manager-grid-view.png" alt="Shared resources displayed in the Assets Manager Grid View." />
+
+    * **List View** displays folder icons and names without the metadata columns. The screenshot shows the same `Data`, `Images`, and `Styles` folders.
+
+        <img style="border: 1px solid gray;" src="images/wrd-assets-manager-list-view.png" alt="Shared resources displayed in the Assets Manager List View." />
+
+    Both views retain the folder tree and **Recently used** entry, plus the **New Folder**, **Upload**, **Sort By**, **Search**, and **View Details** controls. With **View Details** on, the right panel shows information about the selected resource; both screenshots show `Assets` with an extension of `Folder`.
 
 * **Manage Files**&mdash;Upload, download, rename, move, or delete files and folders&mdash;all in one place. You can also drag and drop files directly into the manager for quick uploads.
 

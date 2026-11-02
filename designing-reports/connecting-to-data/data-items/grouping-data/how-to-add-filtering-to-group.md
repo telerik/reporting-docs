@@ -25,13 +25,21 @@ We will use the filter to hide/show the dynamic groups members. Additionally we 
 
 	![Show the Group Explorer in the Visual Studio Report Designer](images/DataItems/diGroupExplorer.PNG)
 
-1. Define a new [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) _DetailsForYear_ as shown on the picture. Use the same DataSource as for the report. The parameter should be MultiValue.
+1. Define a new [Report Parameter](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters) named _DetailsForYear_ with these settings:
+
+	* Set **Type** to `Integer`.
+	* Set **MultiValue** and **Visible** to `True`.
+	* Under **AvailableValues**, use the same **DataSource** as the report (`sqlDataSource1` in this example) and set **ValueMember** to `=OrderDate.Year`.
 
 	>caption Define Report Parameter
 
 	![Define a multivalue Report Parameter in the demo report ProductSales.cs in the Visual Studio Report Designer](images/DataItems/diReportParameter.PNG)
 
-1. Select the Crosstab (or any cell in it) and invoke the [Edit Filters dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog) for the _Qtr Column_ group. Enter the filter expression as shown on next picture
+1. Select the Crosstab (or any cell in it) and open the [Edit Filters dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog) for the _Qtr Column_ group. Add a filter with these settings:
+
+	| Expression | Operator | Value |
+	| --- | --- | --- |
+	| `=Fields.OrderDate.Year` | `In` | `=Parameters.DetailsForYear.Value` |
 
 	>caption Set Filter
 

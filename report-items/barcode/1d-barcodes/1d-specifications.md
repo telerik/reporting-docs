@@ -135,7 +135,7 @@ By default, uppercase letters use Code A. To force Code B:
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Code128_Pure_Numeric}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Code128_Pure_Numeric}}
 
-> **Important:** Code C requires an even number of digits. If you have an odd number, the last digit cannot be encoded in Code C.
+>important Code C requires an even number of digits. If you have an odd number, the last digit cannot be encoded in Code C.
 
 #### When to Use Explicit Encoding
 

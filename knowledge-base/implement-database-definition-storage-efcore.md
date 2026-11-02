@@ -14,11 +14,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>16.2.22.1109+</td>
 		</tr>
 		<tr>
-			<td>Project Type</td>
+			<th scope="row">Project Type</th>
 			<td>ASP.NET Core</td>
 		</tr>
 	</tbody>
@@ -34,9 +34,23 @@ In this article, we will demonstrate how the report definitions can be stored in
 
 ## Solution
 
-1. The first step is to create Entity Framework Core models for the Report definitions and their Folders. These models will be used later to create database tables.
+The implementation has seven steps:
 
-	```C#
+- [Define the database models](#define-the-database-models) for reports and folders.
+- [Create the database context](#create-the-database-context) for queries and updates.
+- [Map database models to designer models](#map-database-models-to-designer-models).
+- [Implement the definition storage](#implement-the-definition-storage) for report and folder operations.
+- [Resolve reports for preview](#resolve-reports-for-preview).
+- [Resolve subreports and drillthrough reports](#resolve-subreports-and-drillthrough-reports).
+- [Register the storage and resolvers](#register-the-storage-and-resolvers) with the application services.
+
+The code blocks show related parts of one implementation, not separate standalone programs. Use the [sample project](#sample-project) for the application structure.
+
+### Define the Database Models
+
+Create Entity Framework Core models for the report definitions and their folders. These models will be used later to create database tables. The `Report` model stores the report bytes and metadata:
+
+```C#
 	public class Report
 	{
 		[Column("Id")]
@@ -69,9 +83,11 @@ In this article, we will demonstrate how the report definitions can be stored in
 		[Column("Uri")]
 		public string Uri { get; set; }
 	}
-	```
+```
 
-	```C#
+The `ReportFolder` model stores folder metadata and parent-child relationships:
+
+```C#
 	public class ReportFolder
 	{
 
@@ -102,13 +118,15 @@ In this article, we will demonstrate how the report definitions can be stored in
 		[Column("ModifiedOn")]
 		public DateTime ModifiedOn { get; set; }
 	}
-	```
+```
 
-1. Next, we will create the custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) that the will be used for querying and saving the data from inside the definition storage implementation.
+### Create the Database Context
 
-	Additionally, we can have our `Report` and `ReportFolder` table created automatically:
+Create a custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) for querying and saving data in the definition storage implementation.
 
-	```C#
+The following `SqlDefinitionStorageContext` exposes the report and folder collections. The connection string targets a local SQL Server Express `DefinitionStorage` database; use connection settings appropriate for your environment. The service registration in step 7 creates the tables with `EnsureCreated`.
+
+```C#
 	using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
 	using Microsoft.EntityFrameworkCore;
 	
@@ -132,11 +150,13 @@ In this article, we will demonstrate how the report definitions can be stored in
 			}
 		}
 	}
-	```
+```
 
-1. We will need to convert the data of the database model to the [Telerik.WebReportDesigner.Services.Models](/api/telerik.webreportdesigner.services.models), and for that reason, it will be handy to have an _extension_ class handling those conversions for us. For example:
+### Map Database Models to Designer Models
 
-	```C#
+Use the following extension class to convert between database models and [Telerik.WebReportDesigner.Services.Models](/api/telerik.webreportdesigner.services.models). The methods map report and folder metadata and create database entities from save and create-folder requests:
+
+```C#
 	using System;
 	using Telerik.WebReportDesigner.Services.Models;
 
@@ -210,9 +230,23 @@ In this article, we will demonstrate how the report definitions can be stored in
 			}
 		}
 	}
+```
+
+### Implement the Definition Storage
+
+Implement the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface with the database context and mapping methods from the previous steps.
+
+The following focused excerpt shows the read operation from `CustomDefinitionStorage`. `GetAsync` normalizes the resource URI and retrieves the stored report bytes. It throws `ReportNotFoundException` when no bytes are found. This method belongs to the complete class below; do not add it a second time.
+
+```C#
+	public Task<byte[]> GetAsync(string resourceName)
+	{
+		var reportBytes = this.GetDbReportModel(this.PrepareResourceUri(resourceName))?.Bytes;
+		return reportBytes == null ? throw new ReportNotFoundException() : Task.FromResult(reportBytes);
+	}
 	```
 
-1. With all of the above prepared, we can now proceed with implementing the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface:
+	The complete implementation follows. Its methods create, list, rename, save, and delete reports and folders. The helper methods normalize URIs and update or delete nested folder contents:
 
 	```C#
 	using CSharp.Net7.Html5IntegrationDemo.EFCore;
@@ -473,11 +507,13 @@ In this article, we will demonstrate how the report definitions can be stored in
 			}
 		}
 	}
-	```
+```
 
-1. In order to be able to preview the reports stored in the database, the [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) interface also has to be implemented. Since we already have the `DbContext`, that will be pretty straightforward:
+### Resolve Reports for Preview
 
-	```C#
+Implement [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) to preview reports stored in the database. The following class looks up the report by URI, unpackages its bytes, and returns an `InstanceReportSource`:
+
+```C#
 	public class CustomReportSourceResolver : IReportSourceResolver
 	{
 
@@ -508,11 +544,13 @@ In this article, we will demonstrate how the report definitions can be stored in
 			return instanceReportSource;
 		}
 	}
-	```
+```
 
-1. The custom `ReportSourceResolver` defined above will be sufficient for most scenario, however, when there are [`SubReports`](slug:telerikreporting/designing-reports/report-structure/subreport) inserted in the report or when the [`NavigateToReport`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) action is triggered, the engine will try to resolve those reports using the default `ReportDocumentResolver` which will try to resolve them by URI. That won't work in our case because the reports are stored in the database, thus, we need a custom implementation that may look as follows:
+### Resolve Subreports and Drillthrough Reports
 
-	```CSharp
+For [`SubReports`](slug:telerikreporting/designing-reports/report-structure/subreport) and [`NavigateToReport`](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action) actions, the engine also uses a `ReportDocumentResolver`. The default resolver looks up reports by URI rather than querying this database. The following custom implementation returns the main report from its `InstanceReportSource` and retrieves reports referenced by `UriReportSource` from the database:
+
+```CSharp
 	using Microsoft.EntityFrameworkCore;
 	using SqlDefinitionStorageExample.EFCore;
 	using System;
@@ -549,11 +587,13 @@ In this article, we will demonstrate how the report definitions can be stored in
 			}
 		}
 	}
-	```
+```
 
-1. Lastly, the [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration) should be set to use the `CustomDefinitionStorage` class as well as the `CustomReportSourceResolver` and the `CustomReportDocumentResolver`:
+### Register the Storage and Resolvers
 
-	```C#
+Register `CustomDefinitionStorage`, `CustomReportSourceResolver`, and `CustomReportDocumentResolver` with the application services. The following startup code assigns them to the report service configuration and [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), then creates the database tables. `reportsPath` points to the sample project's Report Designer examples directory; adjust it to match your directory structure.
+
+```C#
 	var builder = WebApplication.CreateBuilder(args);
 
 	// Add services to the container.
@@ -602,7 +642,7 @@ In this article, we will demonstrate how the report definitions can be stored in
 			.Database
 			.EnsureCreated();
 	}
-	```
+```
 
 ## Notes
 
@@ -610,7 +650,7 @@ Since there will be no data in the database, initially, the [ReportNotFoundExcep
 
 One way to avoid this would be to, manually, insert a sample report when the application is started if the database table for the reports is empty.
 
-For this, the following extension class `ReportsInitializer` can be created:
+The following `ReportsInitializer` extension class inserts a sample report when the reports table is empty. `pathToSampleReport` represents the path to an existing TRDP report file; define it in your application before using this code.
 
 ```C#
 public static class ReportsInitializer
@@ -647,7 +687,7 @@ public static class ReportsInitializer
 	}
 ```
 
-The operation can be triggered in the initialization of the application, for example, in `Program.cs`:
+In `Program.cs`, call `app.Seed()` before `app.Run()` to insert the sample report before the application starts handling requests:
 
 ```C#
 // Add initial data to database

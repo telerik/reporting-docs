@@ -35,7 +35,7 @@ This knowledge base article also answers the following questions:
 
 ## Solution
 
-To prevent scientific notation in CSV exports and correctly display large numbers:
+To prevent scientific notation in CSV exports and correctly display large numbers, use any of the approaches below:
 
 1. **Modify Excel Import Settings**:  
    When opening the CSV file in Excel, disable automatic data type detection:

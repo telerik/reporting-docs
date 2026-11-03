@@ -42,7 +42,7 @@ To prevent scientific notation in CSV exports and correctly display large number
    - Open a blank workbook in Excel.
    - Go to the **Data** tab and click **From Text/CSV** (or **Get Data > From File > From Text/CSV**).
    - Select the CSV file and click **Import**.
-   - In the import window, set the data type for the column(s) containing large numbers to **Text**.
+   - In the import window, set the data type detection to **Do not detect data types** (or manually select **Text** for columns that need to preserve specific formatting).
    - Click **Load**.
 
 1. **Export to XLSX Instead of CSV**:  

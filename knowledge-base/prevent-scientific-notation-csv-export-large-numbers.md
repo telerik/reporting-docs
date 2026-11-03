@@ -51,7 +51,7 @@ To prevent scientific notation in CSV exports and correctly display large number
 1. **Manually Format Cells in Excel**:  
    If you already opened the CSV and see scientific notation, change the cell format to **Number**:
    - Select the column or cells containing the numbers.
-   - Right-click and choose **Format Cells**.
+   - Right-click and choose **Format Cells** or select it from the **Cells > Format** area in the menu.
    - Choose **Number** and specify the desired number of decimal places.
 
    ![Update cell format in Excel to Number<>](images/excel-format.gif)

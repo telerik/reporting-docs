@@ -54,6 +54,8 @@ To prevent scientific notation in CSV exports and correctly display large number
    - Right-click and choose **Format Cells**.
    - Choose **Number** and specify the desired number of decimal places.
 
+   ![Update cell format in Excel to Number<>](images/excel-format.gif)
+
 ## See Also
 
 - [Design Considerations for the CSV Rendering](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations)

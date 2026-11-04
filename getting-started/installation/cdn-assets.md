@@ -31,7 +31,7 @@ If your REST service uses a different path, replace `/api/reports` with that pat
 
 ## Web Report Designer
 
-Add the following scripts to the page in this order. Use the REST service that hosts your Web Report Designer:
+Load jQuery first (for example, `https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js`), then add the following scripts in order. Use the REST service that hosts your Web Report Designer:
 
 1. Kendo UI: `https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{site.kendosubsetversion}}/umd/kendo.all.min.js`
 1. Report Viewer: `/api/reportdesigner/resources/js/telerikReportViewer`

@@ -62,7 +62,7 @@ The following steps produce a view with settings similar to these of the local `
 
 	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 
-	In `.cshtml` and `.vbhtml` files, escape each `@` in the URL as `@@`, including the package scope and version separator.
+	In `.cshtml` and `.vbhtml` files, wrap each npm URL in an explicit Razor string expression, `@("...")`. Keep single `@` characters inside the string.
 
 1. Add references to the following assemblies and set their **Copy Local** properties to **true** in Visual Studio:
 

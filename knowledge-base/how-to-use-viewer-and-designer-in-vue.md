@@ -45,7 +45,7 @@ The following guide assumes previous knowledge of Vue:
    <body>
    	<div id="app"></div>
    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js"></script>
+   	<script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js"></script>
    	<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
    	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
    	<script type="module" src="/src/main.js"></script>

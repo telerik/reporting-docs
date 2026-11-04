@@ -54,7 +54,7 @@ The following guide assumes previous knowledge of React:
 
    ```HTML
    <head>
-                <link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{kendothemeversion}}/dist/default-main.css" rel="stylesheet" />
+   		<link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{kendothemeversion}}/dist/default-main.css" rel="stylesheet" />
    ```
 
 1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:

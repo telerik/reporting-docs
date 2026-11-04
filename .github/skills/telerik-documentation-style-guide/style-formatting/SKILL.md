@@ -177,7 +177,7 @@ page.Size = new Size(842, 595);
 
 ## Screenshots
 
-Screenshots complement text but do not replace it. Always describe the action or result in text before or after the screenshot.
+Screenshots complement text but do not replace it. Apply the image introduction requirements in the [style-structure skill](../style-structure/SKILL.md), under Figures and Captions.
 
 ### Screenshot Requirements
 
@@ -200,7 +200,7 @@ The **Export** dialog box provides options for the output format and file locati
 ![Export dialog box with format options highlighted](images/export-dialog.png)
 ```
 
-- Place screenshots **after** the text that describes them.
+- Place screenshots **immediately after** the introduction required by `style-structure`.
 - Use descriptive alt text that explains what the screenshot shows.
 - Store screenshot files in an `images/` subdirectory relative to the article.
 
@@ -242,5 +242,5 @@ When reviewing an article for formatting, verify:
 - [ ] Admonitions follow related text, are concise, and are not stacked
 - [ ] Code blocks specify the language identifier
 - [ ] Code comments are English, ≤80 chars, full sentences
-- [ ] Screenshots have descriptive alt text and are ≤1000px wide
+- [ ] Screenshots follow the image introduction requirements in `style-structure`, have descriptive alt text, and are ≤1000px wide
 - [ ] Tables have header rows and introductory text

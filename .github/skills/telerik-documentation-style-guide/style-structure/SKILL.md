@@ -1,6 +1,6 @@
 ---
 name: style-structure
-description: "Use this skill when structuring documentation articles, writing headings, creating lists, or organizing content hierarchy. Covers title case capitalization rules, heading levels (single H1, H2-H4 nesting), -ing forms in headings, parallel heading style, list formatting (intro sentences, capitalization, punctuation, parallel structure, nesting limits), and general article structure. Read this skill whenever creating a new article skeleton, reviewing heading hierarchy, formatting lists, checking title capitalization, or organizing article sections. Also use when asked to 'fix headings', 'restructure the article', 'check list formatting', 'fix capitalization', or 'organize the content'."
+description: "Use this skill when structuring documentation articles, writing headings, creating lists, or organizing content hierarchy. Covers title case capitalization rules, heading levels (single H1 for standard articles, no H1 for KB articles, H2-H4 nesting), -ing forms in headings, parallel heading style, list formatting (intro sentences, capitalization, punctuation, parallel structure, nesting limits), and general article structure. Read this skill whenever creating a new article skeleton, reviewing heading hierarchy, formatting lists, checking title capitalization, or organizing article sections. Also use when asked to 'fix headings', 'restructure the article', 'check list formatting', 'fix capitalization', or 'organize the content'."
 ---
 
 # Article Structure, Headings, and Lists
@@ -51,7 +51,7 @@ Content here.
 
 ### Structural Rules
 
-1. **One H1 per article** — The H1 (`#`) heading must appear exactly once and match the article's `title` metadata. When they differ, adjust the H1 to match the existing `title` value (do not modify the `title` metadata).
+1. **H1 usage by article type** — Standard documentation articles must have exactly one H1 (`#`) heading that matches the article's `title` metadata. When they differ, adjust the H1 to match the existing `title` value (do not modify the `title` metadata). Never introduce a second H1. If multiple H1 headings exist, retain the primary article title and downgrade additional H1 headings to the appropriate level within the document hierarchy. Knowledge Base (KB) articles must contain no H1 headings. Never add an H1 to KB content, including during remediation, and explicitly exclude KB articles from missing-H1 validation and review checks.
 2. **Text between heading and subheadings** — Always write at least one sentence between a heading and its first subheading. This gives readers context before they dive into subsections.
 3. **Minimum two subheadings** — If a section has subheadings, it must have at least two. A single subheading under a heading is a sign the content should be merged with the parent.
 4. **Heading levels do not skip** — Go from H2 to H3, not from H2 to H4. Every heading level must be one deeper than its parent.
@@ -211,9 +211,11 @@ The library supports the following formats:
 
 When inserting figures (images, diagrams, charts):
 
-1. Introduce the figure in the preceding text.
+1. Immediately precede every figure with either a concise, meaningful introductory sentence or a `>caption` element that explains what it illustrates or what the reader should observe. A blank line may separate the introduction and image, but no other content may intervene.
 2. Use descriptive alt text in the image tag.
-3. If the figure needs additional explanation, add a caption as italic text immediately after the image.
+3. If the figure needs additional explanation, add a caption as italic text immediately after the image. This does not replace the required introduction.
+
+Do not use headings or standalone bold text to introduce images. Replace these with a concise, descriptive sentence or `>caption` element, preserving valid introductions, surrounding content, and formatting. Apply the least invasive correction.
 
 ```markdown
 The following diagram shows the document processing pipeline:
@@ -223,11 +225,19 @@ The following diagram shows the document processing pipeline:
 *Figure 1: The document processing pipeline processes documents through three stages.*
 ```
 
+Alternatively, use a caption element:
+
+```markdown
+>caption Document processing pipeline
+
+![Document processing pipeline showing import, transformation, and export stages](images/pipeline-diagram.png)
+```
+
 ## Quick Checklist
 
 When reviewing an article for structure, verify:
 
-- [ ] Exactly one H1 heading that matches the title metadata (adjust the H1 if they differ; do not change the metadata)
+- [ ] Standard documentation articles have exactly one H1 matching the title metadata; KB articles have no H1 and are excluded from missing-H1 checks
 - [ ] Text between every heading and its first subheading
 - [ ] At least two subheadings per section (or none)
 - [ ] Heading levels do not skip (H2→H3, never H2→H4)
@@ -239,3 +249,4 @@ When reviewing an article for structure, verify:
 - [ ] List items use parallel grammatical structure
 - [ ] No single-item lists
 - [ ] Lists nested no deeper than three levels
+- [ ] Every image immediately follows an introductory sentence or `>caption` element, not a heading or standalone bold text

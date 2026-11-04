@@ -57,7 +57,7 @@ Source: `titles-and-headings.md`
 
 | Check | Pass condition |
 |---|---|
-| Single H1 | Exactly one `#` heading in the article |
+| H1 usage by article type | Standard articles have exactly one `#` heading; KB articles have no H1, and missing-H1 checks do not apply to them |
 | Title case | Nouns, verbs, adjectives, adverbs, pronouns, subordinating conjunctions capitalized; coordinating conjunctions (`and`, `but`, `or`), articles (`a`, `an`, `the`), prepositions (`at`, `on`, `in`, …) lowercased unless first/last word |
 | Heading hierarchy | No skipped levels (e.g., H2 directly to H4) |
 | Parallel same-level headings | All siblings share the same grammatical form |

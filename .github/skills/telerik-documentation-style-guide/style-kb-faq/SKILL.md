@@ -7,6 +7,8 @@ description: "Use this skill when writing, editing, or reviewing Knowledge Base 
 
 This skill defines how to write Knowledge Base (KB) articles and FAQ sections in Progress DevTools documentation. KB articles address specific user problems or tasks; FAQs answer common questions concisely.
 
+For KB heading requirements during creation, review, and remediation, follow the [style-structure skill](../style-structure/SKILL.md).
+
 ## KB Article Types
 
 There are three types of KB articles, each with a distinct purpose and structure.
@@ -32,8 +34,6 @@ page_title: Export Document to PDF with Custom Settings | Telerik Document Proce
 slug: kb-export-pdf-custom-settings
 tags: pdf, export, page-settings
 ---
-
-# Exporting a Document to PDF with Custom Page Settings
 
 ## Environment
 
@@ -87,8 +87,6 @@ page_title: Fix OutOfMemoryException in PDF Export | Telerik Document Processing
 slug: kb-pdf-export-oom-exception
 tags: pdf, export, outofmemoryexception, troubleshooting
 ---
-
-# PdfFormatProvider Throws OutOfMemoryException for Large Documents
 
 ## Environment
 
@@ -213,7 +211,7 @@ When reviewing a KB or FAQ article, verify:
 
 - [ ] Article type matches the content (how-to, troubleshooting, or CVE)
 - [ ] Title uses the correct format (-ing form for how-to, problem statement for troubleshooting)
-- [ ] All required sections are present (Environment, Description, Solution/Cause)
+- [ ] All required sections are present (Environment, Description, Solution/Cause), with no H1 in KB articles
 - [ ] Article is self-sufficient — no mandatory external dependencies
 - [ ] Code examples compile and run
 - [ ] No sensitive customer information

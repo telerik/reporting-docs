@@ -48,7 +48,13 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
    {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerUseBlazorReportViewer.html region=BlazorViewerAddingTheBlazorReportViewerComponentManually}}
 
-1. Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). In `.cshtml` and `.razor` files, wrap the URL in an explicit Razor string expression, `@("...")`, with single `@` characters inside the string. Use an ordinary URL in `.html` files:
+1. Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App).
+
+   For `.cshtml` and `.razor` files, use an explicit Razor string expression:
+
+   {{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=RazorViewerKendoThemeCss}}
+
+   For `.html` files, use the plain HTML snippet:
 
    {{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=Html5ViewerKendoThemeCss}}
 

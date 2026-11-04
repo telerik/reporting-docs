@@ -78,7 +78,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
    {{source=CodeSnippets\Blazor\Docs\ReportViewers\NativeBlazorViewerUseNativeBlazorReportViewer.html region=NativeBlazorViewerAddingTheNativeBlazorReportViewerComponentManually}}
 
-   In `.cshtml` and `.razor` files, escape each `@` in the URL as `@@`. Keep single `@` characters in `.html` files.
+   In `.cshtml` and `.razor` files, wrap each npm URL in an explicit Razor string expression, `@("...")`. Keep single `@` characters inside the string. Use ordinary URLs in `.html` files.
 
 1. Add the [Native Blazor Report Viewer's](slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview) JS and CSS dependencies to the **head** element of the **Pages/\_Layout.cshtml** (Blazor Server) or **wwwroot/index.html** (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App).
 

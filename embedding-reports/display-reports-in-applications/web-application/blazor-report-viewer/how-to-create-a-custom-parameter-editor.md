@@ -35,7 +35,7 @@ The following example uses the **Dashboard** example report that we ship with th
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerScripts.html region=BlazorViewerCustomParameterEditor}}
 
-In `.cshtml` and `.razor` files, escape each `@` in the URL as `@@`. Keep single `@` characters in `.html` files.
+In `.cshtml` and `.razor` files, wrap each npm URL in an explicit Razor string expression, `@("...")`. Keep single `@` characters inside the string. Use ordinary URLs in `.html` files.
 
 - Then in the Blazor Report Viewer Initialization:
 

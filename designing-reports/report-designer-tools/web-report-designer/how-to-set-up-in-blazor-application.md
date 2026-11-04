@@ -57,7 +57,7 @@ Alternatively, instead of using the item template, the Designer REST service and
 
    {{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent}}
 
-   In `.cshtml` and `.razor` files, escape each `@` in the URL as `@@`. Keep single `@` characters in `.html` files.
+   In `.cshtml` and `.razor` files, wrap each npm URL in an explicit Razor string expression, `@("...")`. Keep single `@` characters inside the string. Use ordinary URLs in `.html` files.
 
 1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the **body** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or in `App Razor` (Blazor Web App):
 

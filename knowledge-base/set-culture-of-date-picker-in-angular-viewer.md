@@ -55,7 +55,7 @@ export class ReportViewerComponent implements AfterViewInit {
 	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
 	
 	constructor() {
-                this.loadScript(`https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/cultures/kendo.culture.bg-BG.min.js`);
+		this.loadScript(`https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/cultures/kendo.culture.bg-BG.min.js`);
 	}
 	...
 }

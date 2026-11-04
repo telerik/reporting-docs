@@ -60,7 +60,7 @@ The following steps produce a view with settings similar to these of the local `
 
 1. Add a reference to a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) in the `<head>` element:
 
-	{{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=RazorViewerKendoThemeCss}}
+	{{source=CodeSnippets\MvcCS\Views\Home\MvcViewerFullPage.cshtml region=RazorViewerKendoThemeCss}}
 
 	In `.cshtml` and `.vbhtml` files, wrap each npm URL in an explicit Razor string expression, `@("...")`. Keep single `@` characters inside the string.
 

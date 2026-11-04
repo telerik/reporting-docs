@@ -85,8 +85,8 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 
 	  loadScripts() {
 	    return this.loadScript('https://code.jquery.com/jquery-{{jqueryversion}}.min.js')
-              .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js'))
-              .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@{{spaviewerversion}}/dist/js/telerikReportViewer.min.js'))
+	      .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js'))
+	      .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@{{spaviewerversion}}/dist/js/telerikReportViewer.min.js'))
 	      .then(() => this.loadScript(this.serviceUrl + 'designerresources/js/webReportDesigner'));
 	  }
 
@@ -129,8 +129,8 @@ Follow these steps to integrate the Telerik Web Report Designer in your Angular 
 
 	  private loadScripts(): Promise<void> {
 	    return this.loadScript('https://code.jquery.com/jquery-{{jqueryversion}}.min.js')
-              .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js'))
-              .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@{{spaviewerversion}}/dist/js/telerikReportViewer.min.js'))
+	      .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js'))
+	      .then(() => this.loadScript('https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@{{spaviewerversion}}/dist/js/telerikReportViewer.min.js'))
 	      .then(() => this.loadScript(this.serviceUrl + 'designerresources/js/webReportDesigner'));
 	  }
 

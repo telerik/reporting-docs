@@ -52,7 +52,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
    For `.cshtml` and `.razor` files, use an explicit Razor string expression:
 
-   {{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerStyling.html region=RazorViewerKendoThemeCss}}
+   {{source=CodeSnippets\MvcCS\Views\Home\MvcViewerFullPage.cshtml region=RazorViewerKendoThemeCss}}
 
    For `.html` files, use the plain HTML snippet:
 

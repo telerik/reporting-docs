@@ -68,8 +68,7 @@ If you are not much familiar with .NET, you can use the [Telerik Report Server](
    		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
    		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   		<link href="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-   		<link href="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
+                <link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{site.kendothemeversion}}/dist/default-ocean-blue.css" rel="stylesheet" id="skin-css" />
    		<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
    		<style>
    			body {
@@ -82,7 +81,7 @@ If you are not much familiar with .NET, you can use the [Telerik Report Server](
    			}
    		</style>
    	</head>
-   	<body>
+			<body>
 
    		<div id="reportViewer1">
    			loading...
@@ -139,7 +138,7 @@ An example can be found in the installation folder of Telerik Reporting, by defa
    ```HTML
    <head>
    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   	<script src="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/js/kendo.all.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{site.kendosubsetversion}}/umd/kendo.all.min.js"></script>
    	<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
    </head>
    <body>
@@ -164,7 +163,7 @@ An example can be found in the installation folder of Telerik Reporting, by defa
    	}
    </style>
 
-   <link rel="stylesheet" href="https://unpkg.com/@@progress/kendo-theme-default@5.0.1/dist/all.css" />
+	<link rel="stylesheet" href="https://unpkg.com/@@progress/kendo-theme-default@@5.0.1/dist/all.css" />
 
    <ReportViewer @ref="reportViewer1"
    	ViewerId="rv1"

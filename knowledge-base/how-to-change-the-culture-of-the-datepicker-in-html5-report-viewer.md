@@ -31,7 +31,7 @@ This KB article gives a brief description of how to set up another language. The
 1. Add the following script in the web page which holds the report viewer:
 
    ```HTML
-   <script src="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/cultures/kendo.culture.fr-FR.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/cultures/kendo.culture.fr-FR.min.js"></script>
    ```
 
    A list with all versions can be found in [Kendo Supported Versions](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support).

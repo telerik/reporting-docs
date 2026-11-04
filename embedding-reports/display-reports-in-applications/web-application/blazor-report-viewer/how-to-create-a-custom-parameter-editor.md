@@ -35,6 +35,8 @@ The following example uses the **Dashboard** example report that we ship with th
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerScripts.html region=BlazorViewerCustomParameterEditor}}
 
+In `.cshtml` and `.razor` files, escape each `@` in the URL as `@@`. Keep single `@` characters in `.html` files.
+
 - Then in the Blazor Report Viewer Initialization:
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\BlazorViewerCustomParameterEditor.razor region=BlazorViewerParameterEditors}}

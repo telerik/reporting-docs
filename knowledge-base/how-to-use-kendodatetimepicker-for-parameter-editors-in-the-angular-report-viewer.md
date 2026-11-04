@@ -65,7 +65,7 @@ This approach allows the selection of date and time for the `DateTime` [Report P
    	public visible: boolean = false;
 
    	ngOnInit(): void {
-   		this.loadScript("http://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js")
+                this.loadScript("https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js")
    		this.visible = true;
    	}
 

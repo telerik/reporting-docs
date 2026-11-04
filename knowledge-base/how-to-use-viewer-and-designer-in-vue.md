@@ -45,7 +45,7 @@ The following guide assumes previous knowledge of Vue:
    <body>
    	<div id="app"></div>
    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js"></script>
    	<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
    	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
    	<script type="module" src="/src/main.js"></script>
@@ -55,7 +55,7 @@ The following guide assumes previous knowledge of Vue:
 1. Then, add the default Kendo SASS theme again in `index.html`, inside the `head` element, to style the report viewer and designer:
 
    ```HTML
-   <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@10.2.0/dist/default-ocean-blue.css" />
    ```
 
 1. Create a new report viewer component(e.g. `ReportViewer.vue`) and configure the routes accordingly.

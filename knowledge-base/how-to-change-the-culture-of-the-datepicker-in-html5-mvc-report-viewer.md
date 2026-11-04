@@ -33,7 +33,7 @@ This KB article gives a brief description of how to set up the Kendo widgets to 
    ```HTML
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer-kendo"></script>
-   <script src="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/cultures/kendo.culture.es-PY.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@@progress/kendo-ui@@{{kendosubsetversion}}/umd/cultures/kendo.culture.es-PY.min.js"></script>
    <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
    ```
 

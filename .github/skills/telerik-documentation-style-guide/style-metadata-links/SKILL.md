@@ -17,7 +17,7 @@ Every documentation article starts with a YAML frontmatter block delimited by `-
 
 | Field | Purpose | Rules |
 |-------|---------|-------|
-| `title` | Display title in navigation and breadcrumbs | Title case; must match the H1 heading in the article body |
+| `title` | Display title in navigation and breadcrumbs | Title case; for standard documentation articles only, must match the H1 heading in the article body |
 | `page_title` | HTML `<title>` tag for SEO (also called `meta_title`) | Include the product name and key topic; may differ from `title` to include more SEO-relevant keywords; typically appended with " \| Product Name" |
 | `description` | HTML meta description for search engines | Between 120 and 150 characters; must be a complete, meaningful sentence; include primary keywords naturally |
 | `slug` | Unique URL identifier for the article | Lowercase, hyphen-separated; must be unique across the entire documentation site; used in cross-reference links |
@@ -139,7 +139,7 @@ Demo articles showcase product features and often appear in navigation as "Demos
 When reviewing an article for metadata and links, verify:
 
 - [ ] All four required metadata fields are present: `title`, `page_title`, `description`, `slug`
-- [ ] The `title` matches the H1 heading in the article body (if they differ, adjust the H1 — do not change the `title` metadata)
+- [ ] For standard documentation articles only, the `title` matches the H1 heading in the article body (if they differ, adjust the H1 — do not change the `title` metadata); exclude KB articles from this check
 - [ ] The `description` is between 120 and 150 characters, a complete sentence, and unique
 - [ ] The `slug` is lowercase, hyphen-separated, and unique
 - [ ] Internal links use the `{%slug ...%}` syntax

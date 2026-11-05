@@ -47,6 +47,26 @@ When using reports that contain [WebServiceDataSource components](slug:telerikre
 * __Inspect Service URLs__:	Check that Service URLs in WebServiceDataSource components point to approved API endpoints. Pay attention to reports that use parameter placeholders in URLs (indicated by {@parameterName} syntax) combined with user-editable Report Parameters, as this pattern allows the URL to be modified at runtime based on user input.
 * __Validate Before Deployment__: Deploy only reports from trusted sources into production environments. If using reports from external parties, review all data source configurations and test them in isolated environments first. Consider implementing network-level controls to limit which external services your reporting server can access.
 
+### Restricting Access to External Resources
+
+Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1111)) release.
+
+Implement `Telerik.Reporting.Interfaces.IStrictResourceResolver` to apply your application's rules to external report resources. Telerik Reporting does not provide a ready-to-use public implementation; define the allowed files and URLs in your custom code.
+
+The existing `IResourceResolver` handles selected references, including relative image paths. Other lookups, such as absolute image locations and map tiles, do not all pass through that interface.
+
+The strict interface extends resolution to external images, CSV/JSON sources, shapefiles, external stylesheets, and map resources. It covers relative paths, absolute paths, UNC paths, and URLs.
+
+Validate each reference before returning resource bytes or an approved location. Return `null` to deny a resource; strict consumers do not fall back to its original location.
+
+Keep `validateReportPaths` enabled for report definitions. Your custom resolver defines its resource rules; implementing the interface does not automatically apply the report-path settings to custom results.
+
+Register your implementation through the existing `resourceResolver` configuration with the `custom` provider. Existing `IResourceResolver` implementations remain supported; strict resolution is opt-in.
+
+Register the custom type in [typeReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) and retain type validation.
+
+For configuration details, refer to [Processing Configuration](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element). For a C# example, refer to [Restricting Access to Report Resources](slug:implementing-strict-resource-resolver). The sample demonstrates an approved local directory and PNG images directly in a trusted HTTPS folder, with unapproved local and remote images omitted.
+
 ### Reporting Services
 
 * The [Telerik Reporting REST Service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) is a Web API application. Use the Microsoft recommendations [ASP.NET Core security topics](https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-8.0) to ensure it is secure.
@@ -100,5 +120,3 @@ When using the [Report Converters](slug:telerikreporting/designing-reports/conve
 * [Security FAQ](slug:security-faq)
 * [Introduction to Telerik Reporting](slug:telerikreporting/welcome-to-telerik-reporting!)
 * [System Requirements](https://www.telerik.com/products/reporting/system-requirements)
-
-

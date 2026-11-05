@@ -34,7 +34,7 @@ The warning appears specifically on pages that contain only the Report Viewer or
 Example CDN reference in `_Layout.cshtml`:
 
 ```HTML
-<script src="https://kendo.cdn.telerik.com/2025.1.227/js/kendo.all.min.js"></script>
+<script src="@("https://cdn.jsdelivr.net/npm/@progress/kendo-ui@2025.1.227/umd/kendo.all.min.js")"></script>
 ```
 
 ## Cause

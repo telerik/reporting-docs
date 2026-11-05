@@ -37,7 +37,7 @@ This error occurs when a [Sass-based Kendo UI theme](https://www.telerik.com/des
 Include a valid Kendo UI theme in your page by adding a CSS reference such as:
 
 ````html
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@10.2.0/dist/default-ocean-blue.css" />
 ````
 
 For more information about available themes, see [Telerik and Kendo UI Themes Introduction](https://www.telerik.com/design-system/docs/themes/get-started/introduction/).

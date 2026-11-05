@@ -1,9 +1,9 @@
 ---
-title: Telerik Reporting CDN
-page_title: Using the Telerik Reporting CDN in Web Apps
-description: "Use the Telerik Reporting CDN to serve resources for the html5-based report viewers and the web report designer. Includes the minimal required kendo subsets."
+title: Web Reporting Assets
+page_title: Loading Report Viewer and Designer Assets
+description: "Learn how to load Kendo UI scripts and themes from public CDNs and Telerik Reporting scripts from REST services for the HTML5 viewer and Web Report Designer."
 slug: telerikreporting/getting-started/installation/cdn-assets
-tags: how,to,add,the,telerik,cdn,reportviewer,script
+tags: html5,reportviewer,webreportdesigner,kendo,cdn,assets
 published: True
 position: 9
 reportingArea: General
@@ -12,24 +12,29 @@ components: [general]
 
 # HTML5 Report Viewer and Web Report Designer Assets
 
-In order to run any of the [HTML5-based report viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/overview), you need to add a reference to the JavaScript file of the viewer.
-When it comes to the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview), in addition to the viewer's script,
-you also have to add the designer's scripts.
+The HTML5 Report Viewer and Web Report Designer require Kendo UI assets and Telerik Reporting scripts. This article lists the public CDN URLs for the Kendo UI assets and the REST service endpoints that serve the Reporting scripts.
 
-## Previous Approach
+> note The Kendo UI scripts from the public CDNs are not prelicensed. Apply your Kendo UI for jQuery license as described in [Setting Up Your License Key](https://www.telerik.com/kendo-jquery-ui/documentation/intro/installation/using-license-code).
 
-You could serve the files from the Telerik Reporting REST service or add them locally to your project by copying them from the installation folder
-of Telerik Reporting:
+## HTML5 Report Viewer
 
-`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5`
+Add the following Kendo UI assets to the page that hosts the viewer:
 
-## Current Recommendation
+- Kendo UI script: `https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{site.kendosubsetversion}}/umd/kendo.all.min.js`
+- Ocean Blue theme: `https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{site.kendothemeversion}}/dist/default-ocean-blue.css`
 
-Now, these resources are served also by the Telerik Reporting CDN and we recommend it as a first-choice option.
-To serve a resource from the CDN, you can construct the URL as follows:
+Load the Report Viewer script from the REST service that processes your reports:
 
-`https://reporting.cdn.telerik.com/{{site.buildversion}}/js/*NameOfFile*`
+`/api/reports/resources/js/telerikReportViewer`
 
-For example:
+If your REST service uses a different path, replace `/api/reports` with that path.
 
-`https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.min.js`
+## Web Report Designer
+
+Load jQuery first (for example, `https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js`), then add the following scripts in order. Use the REST service that hosts your Web Report Designer:
+
+1. Kendo UI: `https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{site.kendosubsetversion}}/umd/kendo.all.min.js`
+1. Report Viewer: `/api/reportdesigner/resources/js/telerikReportViewer`
+1. Web Report Designer: `/api/reportdesigner/designerresources/js/webReportDesigner`
+
+If your REST service uses a different path, replace `/api/reportdesigner` with that path.

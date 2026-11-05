@@ -20,7 +20,7 @@ If you already use Telerik Reporting, continue with [Working with Existing Repor
 
 Enable the Telerik Reporting extension and open a folder that you trust in VS Code. For extension requirements and licensing, see [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode).
 
-For this example, create a folder named `ReportingPlayground` and open it with **File** > **Open Folder**. Store the report and exported file in this folder.
+For this example, create a folder named `ReportingPlayground` and open it with **File** > **Open Folder**. Keeping the report and exported document in this folder gives you a workspace for the complete workflow without an existing application.
 
 Open the **Command Palette** with `Ctrl`+`Shift`+`P` on Windows or Linux, or `Cmd`+`Shift`+`P` on macOS. Search for `Telerik Reporting:` when a step names an extension command.
 
@@ -32,11 +32,11 @@ Create an empty report in the current workspace:
 2. Save the file as `HelloReporting.trdx` in `ReportingPlayground`.
 3. Wait for the designer to open in a VS Code tab.
 
-The command creates an empty XML report definition with a page header, detail section, and page footer. The extension starts its bundled local Reporting service automatically.
+The command creates an empty XML report definition with a page header, detail section, and page footer. The extension also starts its bundled local Reporting service, so you do not need to start a separate Reporting REST service.
 
 ## Adding Report Content
 
-Add a **TextBox** to the report's page header. A page header can display a fixed message without a data source.
+Add a **TextBox** to the report's page header. A page header can display a fixed message without a data source, which keeps this first example focused on report design.
 
 To add the message:
 
@@ -54,11 +54,11 @@ The report file contains the text box definition, not a rendered document. Previ
 
 ## Previewing the Report
 
-Use the designer's built-in preview to verify the layout and content. Confirm that the rendered page displays `Hello from Telerik Reporting` in its header.
+Use the designer's built-in preview when you want to switch quickly between the design surface and rendered output. Confirm that the rendered page displays `Hello from Telerik Reporting` in its header.
 
-To open a separate Report Viewer beside the designer, run **Telerik Reporting: View Report**. The viewer renders the report saved on disk. If the designer has pending edits, select **Save and View** to include them or **View Saved Version** to leave them unsaved.
+To keep the rendered report visible while you continue working in the designer, run **Telerik Reporting: View Report**. The separate viewer also provides parameter, paging, and export controls. It renders the report saved on disk, so if the designer has pending edits, select **Save and View** to include them or **View Saved Version** to leave them unsaved.
 
-If your preview displays a licensing watermark, follow [the license setup instructions](slug:reporting-vs-code-configuration-and-reference#configuring-a-license). You do not need to install the MSI to configure a license.
+If the preview displays a licensing watermark, follow [the license setup instructions](slug:reporting-vs-code-configuration-and-reference#configuring-a-license). You do not need to install the MSI to configure a license.
 
 ## Verifying a Report Change
 
@@ -68,7 +68,7 @@ Change the text to verify that the viewer displays saved changes:
 2. Save the report.
 3. Refresh the built-in preview or inspect the separate viewer. Confirm that the rendered document displays the updated value.
 
-An open viewer refreshes after the save when `telerik-reporting.liveViewerRefresh` is `true`, which is the default. This example verifies the complete edit, save, and render cycle without introducing a data-source dependency.
+When `telerik-reporting.liveViewerRefresh` is `true`, which is the default, an open separate viewer refreshes after you save. This step verifies the complete edit, save, and render cycle without introducing a data-source dependency.
 
 ## Exporting the Result
 
@@ -82,18 +82,20 @@ The suggested file name is `HelloReporting.pdf`, beside the report definition. Y
 
 ## Reopening the Report
 
-Close the designer tab, then reopen `HelloReporting.trdx` from the workspace. Confirm that the latest **TextBox** value is preserved. The report definition contains your saved changes, so you can continue to edit it after you export a document.
+Close the designer tab, then reopen `HelloReporting.trdx` from the workspace. Confirm that the latest **TextBox** value is preserved. The report definition contains your saved changes, so you can continue editing it after you export a document.
 
 ## Next Steps
 
-For existing reports and their data sources, see [Working with Existing Reports in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports). For model-assisted report authoring, see [Using AI-Assisted Report Design in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode-ai). For data connections, paths, and licensing, see [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference).
+Continue with the article that matches your next task:
+
+* To configure and edit a report from an existing solution, see [Working with Existing Reports in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports).
+* To generate report content with a Visual Studio Code language model, see [Using AI-Assisted Report Design in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode-ai).
+* To configure connections, paths, licensing, commands, and settings, see [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference).
 
 ## See Also
 
-For related guidance, see:
+The following articles provide related report-design guidance:
 
 * [Report Designer Tools Overview](slug:telerikreporting/designing-reports/report-designer-tools/overview)
 * [Report File Formats](slug:report-file-formats)
-* [VS Code Extension Workflows](slug:integration-with-vs-code)
-* [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference)
 * [Adding and Configuring Report Items](slug:user-guide/components/report-items)

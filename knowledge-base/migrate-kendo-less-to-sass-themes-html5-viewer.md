@@ -55,7 +55,7 @@ Each Telerik Reporting version depends on a specific version of the Kendo UI the
 For example, the [2026 Q1 (20.0.26.424)](slug:telerikreporting/upgrade/2026/2026-q1-20-0-26-424) upgrade article specifies **Telerik Kendo UI Themes (12.3.0)**. Use that version number in your CDN theme reference:
 
 ```html
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/12.3.0/default/default-ocean-blue.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@12.3.0/dist/default-ocean-blue.css" />
 ```
 
 ## See Also

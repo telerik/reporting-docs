@@ -42,7 +42,7 @@ We are assuming that you already have older libgdiplus which installed its depen
 
 https://www.mono-project.com/download/stable/#download-lin
 
-````
+````bash
 sudo apt install gnupg ca-certificates
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -62,14 +62,14 @@ On Debian-based distributions install prerequisites by running this command:
 
 Clone or download and unarchive libgdi repository: 
 
-````
+````bash
 git clone https://github.com/mono/libgdiplus.git
 cd libgdiplus
 ````
 
 Run build script (Optionally you can use --with-pango parameter if you want to use this library: 
 
-````
+````bash
 ./autogen.sh
 make 
 ````
@@ -92,7 +92,7 @@ If the first one fails because of missing rights.
 
 The `libgdiplus` library for __CentOS__ Linux distributions resides in the `Epel` package repository. For most of the __CentOS__ versions, this repository is available by default. __Amazon Linux__ is based on __CentOS__ but not all of its versions contain `Epel` by default. Below are the commands necessary for installing this repository. Note that they may vary depending on the exact distribution, version, etc. You may need to run the terminal as administrator or use `sudo` to authorize.
 
-````
+````bash
 yum install epel-release -y
 # Note: if 'yum install epel-release' doesn't work for you, try manually updating the source
 # rpm -ihv --nodeps https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
@@ -110,7 +110,7 @@ If it is indeed available, you may run the below command and install the package
 
 An exception with the following stack trace may occur in some cases:
 
-````
+````text
 Unhandled exception. System.TypeInitializationException: The type initializer for 'Telerik.Reporting.Processing.Common.FontContainer' threw an exception.
  ---> System.TypeInitializationException: The type initializer for 'Gdip' threw an exception.
  ---> System.DllNotFoundException: Unable to load shared library 'libdl' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: liblibdl: cannot open shared object file: No such file or directory

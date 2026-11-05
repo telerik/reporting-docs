@@ -42,12 +42,12 @@ Setting the height of the SubReport item to '0' would make it invisible in the r
 	3. Under _Property path_ choose _Visible_
 	4. Under _Expression_ type:
 	
-		```
+		```text
 			= Count(Fields.SomeFieldValue) > 0
 		```
 	
 + When the sub-report's data source is directly dependent on the main report's data source, i.e. it is set (using Bindings) with an expression like:
-	```
+	```text
 		= ReportItem.DataObject
 	```
 	you can use another Binding (also directly on the sub-report) to set its _Visible_ property to an expression evaluated to _True_ only when the sub-report data is not _null_/_empty_. For example, let's assume that _'SomeFieldValue'_ is a single string passed from the main report to the sub-report:
@@ -56,7 +56,7 @@ Setting the height of the SubReport item to '0' would make it invisible in the r
 	3. Under _Property path_ choose _Visible_
 	4. Under _Expression_ type:
 	
-		```
+		```text
 			= ReportItem.DataObject.SomeFieldValue <> ""
 		```
 	

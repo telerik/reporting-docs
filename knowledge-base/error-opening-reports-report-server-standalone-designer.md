@@ -51,11 +51,11 @@ GetClientsSessionTimeoutSeconds on type Telerik.ReportServer.Web.Controllers.Api
 1. Locate the [<dependentAssembly>](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/dependentassembly-element) element and add the following [<bindingRedirect>](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for the `System.Net.Http` assembly:
 
    ````XML
-<dependentAssembly>
-       <assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
-       <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0"/>
-   </dependentAssembly>
-````
+   <dependentAssembly>
+          <assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
+          <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0"/>
+      </dependentAssembly>
+   ````
 
 
 1. Save the `Web.config` file (*administrator permissions may be required*).
@@ -63,8 +63,8 @@ GetClientsSessionTimeoutSeconds on type Telerik.ReportServer.Web.Controllers.Api
 1. (*Optional*) If the error persists, try restarting the Internet Information Services (IIS) by executing the following command in a Command Prompt/PowerShell
 
    ````CMD
-iisreset
-````
+   iisreset
+   ````
 
 
 ## See Also

@@ -28,7 +28,7 @@ from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](slug:te
 ## Solution
 1. Load all Kendo scripts on the page and disable those embedded in the AJAX DLLs:
 
-```
+```html
 <head runat="server">
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.default-v2.min.css" />
     <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/jquery.min.js"></script>
@@ -37,7 +37,7 @@ from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](slug:te
 </head>
 ```
 
-```
+```html
 <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableEmbeddedjQuery="false">
     <Scripts>
         <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
@@ -49,7 +49,7 @@ from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](slug:te
 
 2. Add the Chart(HTML5):
 
-```
+```html
 <telerik:RadHtmlChart ID="RadHtmlChart1" runat="server">
     <PlotArea>
         <Series>
@@ -62,7 +62,7 @@ from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](slug:te
 
 3. Add the Telerik Report Viewer:
 
-```
+```html
 <telerik:ReportViewer
     ID="reportViewer1"
     Width="1300px"

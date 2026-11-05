@@ -33,7 +33,7 @@ The Blazor Report Viewer is nested inside a `div` element and will resize itself
 The article [How to Use Blazor Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer) demonstrates one possible approach: 
 a `style` element with the following code:
 
-```
+```html
 <style>
     #rv1 {
         position: relative;
@@ -45,7 +45,7 @@ a `style` element with the following code:
 ```
 Depending on your application's requirements, you can adjust the position, for example:
 
-```
+```html
 <style>
    #rv1 {
             width: 85%;

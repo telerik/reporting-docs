@@ -27,7 +27,7 @@ When the Crosstab contains both dynamic row groups and dynamic column groups, th
 [Conditional Formatting](slug:telerikreporting/designing-reports/styling-reports/conditional-formatting) set to an entire Crosstab row with an [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview)
 like:
 
-```
+```text
 = Fields.DataFieldName  =   SomeValue
 ```
 
@@ -43,6 +43,6 @@ it belongs to. When one of the groups has no data, the intersection is also empt
 The solution is in the formatting rule to take the data field value in the scope only of the group that contains data. For example,
 when this is the row group :
 
-```
+```text
 = Exec('rowGroupName', Fields.DataFieldName)  =   SomeValue
 ```

@@ -72,29 +72,29 @@ Manually invoking the **Stored Procedures** works for both scenarios - with and 
 - MySQL
 
   ````SQL
-CALL Stored_Procedure;
-````
+  CALL Stored_Procedure;
+  ````
 
 
 - Oracle
 
   ````SQL
-EXECUTE Stored_Procedure;
-````
+  EXECUTE Stored_Procedure;
+  ````
 
 
 - PostgreSQL
 
   ````SQL
-CALL Stored_Procedure();
-````
+  CALL Stored_Procedure();
+  ````
 
 
 - MSSQL
 
   ````SQL
-EXEC Stored_Procedure;
-````
+  EXEC Stored_Procedure;
+  ````
 
 
 ## See Also

@@ -43,14 +43,14 @@ To resolve this issue, ensure that the reporting routes are registered before th
 1. Register the reporting routes before any default or other custom routes in your Web API configuration:
 
     ````CSharp
-Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
+    Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
 
-    config.Routes.MapHttpRoute(
-        name: "DefaultApi",
-        routeTemplate: "api/{controller}/{action}/{id}",
-        defaults: new { id = RouteParameter.Optional }
-    );
-````
+        config.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "api/{controller}/{action}/{id}",
+            defaults: new { id = RouteParameter.Optional }
+        );
+    ````
 
 
 1. Verify that the [`routeTemplate`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.template.routetemplate?view=aspnetcore-8.0) includes the `{action}` part. Omitting this can cause issues due to multiple actions matching the same route template.

@@ -21,11 +21,11 @@ To define a drilldown action add a [ToggleVisibilityAction](/api/Telerik.Reporti
 
 >note The report item that you use for the __toggle visibility__ action must be in a containing scope that controls the item that you want to show or hide. Example: to hide a row group, the report item must be in a row group associated with the parent group or higher in the containment hierarchy. 
 
-# How to Add a Drilldown/Toggle Visibility Action
+## How to Add a Drilldown/Toggle Visibility Action
 
 A report item can initially display or be hidden when a user views a report. The toggle action applied on the report item that allows you to hide and display items interactively is known as drilldown action.
 
-## Adding a drilldown action to a report item using the Report Designer
+### Adding a drilldown action to a report item using the Report Designer
 
 1. In Design view, right-click a report item to which you want to add a toggle visibility action and then click __Properties__.
 
@@ -46,7 +46,7 @@ A report item can initially display or be hidden when a user views a report. The
 >note The report item must be in the same container hierarchy or higher (up to the report itself).
 
 
-## Adding a drilldown action to a Table, CrossTab or ListBox group using the Report Designer
+### Adding a drilldown action to a Table, CrossTab or ListBox group using the Report Designer
 
 1. In Design view, click the Table, CrossTab or ListBox to select it. The [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer).
 
@@ -75,7 +75,7 @@ A report item can initially display or be hidden when a user views a report. The
 >note The report item must either be in the same group as the item that is being hidden or in an ancestor group.
 
 
-## Adding a drilldown action programmatically
+### Adding a drilldown action programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewToggleVisibilitySnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewToggleVisibilitySnippet}}

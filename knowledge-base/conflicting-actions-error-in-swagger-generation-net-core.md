@@ -35,7 +35,7 @@ There may also be a short error on the page about being unable to fetch `swagger
 
 - Error message on client-side:
 
-````
+````text
 Fetch error
 
 response status is 500 https://localhost:{port}/swagger/v1/swagger.json
@@ -43,7 +43,7 @@ response status is 500 https://localhost:{port}/swagger/v1/swagger.json
 
 - Server-side exception when using `Swashbuckle`:
 
-````
+````text
 An unhandled exception has occurred while executing the request.
 
 	Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/ReportDesignerControllerBase" for actions - Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase.GetDesignerResource (Telerik.WebReportDesigner.Services),Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase.GetResource (Telerik.WebReportDesigner.Services). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
@@ -56,7 +56,7 @@ An unhandled exception has occurred while executing the request.
 
 - Server-side exception when using `NSwag`:
 
-````
+````text
 An unhandled exception has occurred while executing the request.
 
 System.InvalidOperationException: The method 'get' on path '/api/ReportDesignerControllerBase' is registered multiple times.

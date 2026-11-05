@@ -33,13 +33,13 @@ Using the WPF report viewer to display a report that uses odd unicode characters
 
 - In the report viewer:
 
-````
+````text
 Operation was canceled.
 ````
 
 - In the output:
 
-````
+````text
 ReportViewer Error: 0 : System.ArgumentException: 'character', hexadecimal value 0x10, is an invalid character.
    at System.Xml.XmlUtf8RawTextWriter.InvalidXmlChar(Int32 ch, Byte* pDst, Boolean entitize)
    at System.Xml.XmlUtf8RawTextWriter.WriteAttributeTextBlock(Char* pSrc, Char* pSrcEnd)

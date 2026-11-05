@@ -27,7 +27,7 @@ The appData element specifies the configuration settings for the temporary appli
 
 __`<appData>` element__ 
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|__path__ – string attribute. Specifies the absolute path to the folder that will be used to store temp data, such as Map tiles cache and SQLite assemblies.|
 |Parent element|__Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only one appData child element can be used inside the Telerik.Reporting root element.|
@@ -43,4 +43,3 @@ __`<appData>` element__
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\AppDataElementConfiguration_2.xml region=AppDataElementConfiguration_2}}
 {{source=CodeSnippets\Blazor\Docs\JSON\AppDataLinuxConfig.json region=AppDataLinux}}
-

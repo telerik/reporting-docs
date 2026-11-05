@@ -31,9 +31,8 @@ Each filter rule is made up of an `Expression`, `Operator` and `Value`.
 * `Operator` can be simple comparison operators but can also include __Like__ and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the table of operators below.
 * `Value` can be a literal value, "`<blank>`" or an expression defined in the [Edit Expression Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog).
 
-|   |   |
+| Operator | Description |
 | ------ | ------ |
- __Operator__ | __Description__ |
 |`>`| __Expression__ is greater than __Value__ |
 |`<`| __Expression__ is less than __Value__ |
 |`>=`| __Expression__ is greater than or equal to __Value__ |

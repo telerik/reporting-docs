@@ -28,7 +28,7 @@ The Cache element specifies the configuration settings for the cache management 
 
 __`<cache>` element__
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|__provider__ – required string attribute. Specifies the name of the current active cache provider used by the viewers. There are several preconfigured providers, although additional ones can be registered in this part of the configuration section. The following cache providers are available by default:<ul><li>__Auto__ - the actual provider is chosen automatically according to the characteristics of the stored resource and the permissions granted to the application;</li><li>__Memory__ – specifies that the rendered pages and resources are stored in memory;</li><li>__File__ – specifies that the rendered pages and resources are stored as temporary files in the file system;</li><li>__IsolatedStorage__ – specifies that the rendered pages and resources are stored as temporary files in the isolated storage.</li></ul>|
 |Child elements|__providers__ – specifies a collection of cache providers to register for use in the application. Only one Provider child element can be used inside the Cache parent element.|
@@ -38,7 +38,7 @@ __`<providers>` element__
 
 The Providers element specifies a collection of cache providers to register for use in the application.
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|No attributes are defined for this element.|
 |Child elements|__provider__ – specifies a cache provider to register for use in the application. Multiple Provider child elements can be used inside a single provider parent element.|
@@ -48,7 +48,7 @@ __`<provider>` element__
 
 The Provider element specifies a cache provider to register for use in the application.
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|__name__ – required string attribute. Specifies a unique name to identify the cache provider in the configuration section. The active cache provider specified by the provider attribute of the Cache element should match one of the names specified by this attribute.|
 |Child elements|__parameters__ – specifies a collection of parameters for the current cache provider. Only one parameter child element can be used in the provider parent element.|
@@ -91,4 +91,3 @@ When the `BasePath` is not specified, the Reporting engine utilizes the temporar
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\CacheElementAdoNetConfiguration.xml region=CacheElementAdoNetConfiguration}}
 {{source=CodeSnippets\Blazor\Docs\JSON\CacheAdoNetProviderConfig.json region=CacheAdoNetProvider}}
-

@@ -35,7 +35,7 @@ For the above reason, you need to use the _Page Sections_ to display the informa
 
 Let's consider we have only one group in the Report and each page may contain only 1 or 2 group instances. The first line of the following [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/overview) displays the name of the first group instance on the page. Note that the scope for the function is the name of the TextBox where we display the actual group detail value.
 
-````
+````text
 = PageExec("textBox2", Fields.Group) + 
 IIF(PageExec("group", Fields.Value) = PageExec("textBox2", Fields.Value), "", "-Continued ") + 
 IIF(PageExec("textBox2", Fields.Group) = PageExec("textBox2", Last(Fields.Group)), "", " / " + PageExec("textBox2", Last(Fields.Group)))
@@ -51,7 +51,7 @@ The demo report demonstrating this approach can be downloaded from our [Reportin
 
 For this scenario we have multiple nested Report groups in the Report. We are going to use Group Headers to display the Group information only for the first occurrence of the group instance. Therefore, we keep [`GroupHeader` > `PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#collapsible-Telerik_Reporting_GroupSection_PrintOnEveryPage) as `False`. If the group continues we will use the Page Header to display its customized group header information. Here is a sample _Expression_ that would display the grouping field/name followed by "-Continued":
 
-````
+````text
 = IIF(PageExec("group", Fields.Value) = PageExec("textBox2", Fields.Value), "", PageExec("textBox2", Fields.Group) + "-Continued ")
 ````
 

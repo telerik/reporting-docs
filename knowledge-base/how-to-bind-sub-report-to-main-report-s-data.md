@@ -29,7 +29,7 @@ This article provides the required steps for binding the SubReport to the Main R
 
 - Open the report that will be used as a subreport in the designer and use the following [binding to the report's DataSource property](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings): 
 
-````
+````text
 Property path: DataSource
 Expression: =ReportItem.DataObject
 ````
@@ -38,7 +38,7 @@ Expression: =ReportItem.DataObject
 
 - You can change the scope to a greater parent by using the [Parent keyword](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_Parent). For example:
 
-````
+````text
 Property path: DataSource
 Expression: =ReportItem.Parent.Parent.DataObject
 ````

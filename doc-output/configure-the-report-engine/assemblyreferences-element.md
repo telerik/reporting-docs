@@ -33,7 +33,7 @@ The types from the assemblies included in the _assemblyReferences_ element do no
 
 The following sections describe attributes, child elements, and parent elements.
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|None|
 |Child Elements|<ul><li>__add__ - Optional element. Adds an assembly reference to the collection.</li><li>__clear__ - Optional element. Removes all references to inherited assembly names, allowing only the references that are added by the current add element.</li><li>__remove__ - Optional element. Removes a reference to an inherited assembly name from the collection.</li></ul>|

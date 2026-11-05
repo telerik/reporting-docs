@@ -23,9 +23,9 @@ Here is an example of how to get the custom action's parameters in the [`Interac
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
 
 
-# How to Add a Custom Action
+## How to Add a Custom Action
 
-## Adding a custom action using the Report Designer
+### Adding a custom action using the Report Designer
 
 1. In the Design view, right-click the report item to which you want to add a link and then click __Properties__. 
 1. In The Properties dialog box for that report item, click __Action__. The [Edit Action dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog) will open. 
@@ -34,7 +34,7 @@ Here is an example of how to get the custom action's parameters in the [`Interac
 1. Click __OK__ when ready. 
 1. To test the action, preview the report and click the report item with the applied custom action. A message will appear, displaying information for the action's properties.             
 
-## Adding a custom action programmatically
+### Adding a custom action programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewCustomActionSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewCustomActionSnippet}}

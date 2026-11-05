@@ -24,13 +24,13 @@ res_type: kb
 
 When attempting to render a report that uses the obsolete `Telerik.Reporting.Chart` report item, an error occurs stating that the type cannot be loaded:
 
-````
+````text
 The type "Telerik.Reporting.Chart" contained in assembly "Telerik.Reporting, Version=X.X.X.X, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" cannot be loaded.
 ````
 
 or
 
-````
+````text
 The type "Telerik.Reporting.Processing.Chart" contained in assembly "Telerik.Reporting, Version=X.X.X.X, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" cannot be loaded.
 ````
 

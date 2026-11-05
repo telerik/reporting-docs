@@ -26,40 +26,18 @@ The Processing element specifies the configuration settings that will be applied
 
 ## `<processing>` element
 
-The following table summarizes the configuration parts of the `<processing>` element. The attributes and child elements are described in the sections below.
-
-| Configuration part | Description |
+|   |   |
 | ------ | ------ |
-|Attributes|See [Processing Attributes](#processing-attributes) for the optional processing settings.|
-|Child elements|See [Processing Child Elements](#processing-child-elements) for the optional resolvers, graphics engine, and external report paths.|
+|Attributes|<ul><li>__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.</li><li>__allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.</li><li>__traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **Info** by default. Determines the verbosity of the default trace output.</li><li>__validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the base path specified in the [UriReportSourceResolver when using Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview), or the base application path when using embedded Reporting Engine or [rendering with the ReportProcessor](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine). When enabled, only [UNC (network) paths](https://learn.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) listed in the _externalReportPaths_ child element would be allowed. Keeping it enabled is the recommended configuration in terms of security.</li></ul>
+|Child elements|<ul><li>__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.</li><li>__sharedDataSourceResolver__ – optional element. Changes the behavior of the default SharedDataSource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.</li><li>__graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine ` element can be used in the `<processing>` element.</li><li>__externalReportPaths__ - optional element. A collection of explicitly allowed UNC (network) paths for report document resolution. The collection is taken into account only when the optional attribute _validateReportPaths_ is _enabled_ (default).</li></ul>|
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
-### Processing Attributes
-
-The `<processing>` element supports the following attributes:
-
-* __cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.
-* __allowCultureDependentDataFieldNames__ - optional boolean attribute, disabled by default. Determines whether the processing engine uses culture-dependent string comparison. Keeping it disabled improves general processing performance.
-* __traceVerbosity__ - optional attribute of type [TraceLevel](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelevel), **Info** by default. Determines the verbosity of the default trace output.
-* __validateReportPaths__ - optional boolean attribute, **enabled** by default. Determines whether report source paths can be resolved outside the base path specified in the [UriReportSourceResolver when using Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview), or the base application path when using embedded Reporting Engine or [rendering with the ReportProcessor](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine). When enabled, only [UNC (network) paths](https://learn.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) listed in the _externalReportPaths_ child element would be allowed. Keeping it enabled is the recommended configuration in terms of security.
-
-### Processing Child Elements
-
-The `<processing>` element supports the following child elements:
-
-* __resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.
-* __sharedDataSourceResolver__ – optional element. Changes the behavior of the default SharedDataSource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.
-* __graphicsEngine__ – optional element. Sets the graphics engine used for processing and rendering the reports. Only one `graphicsEngine` element can be used in the `<processing>` element.
-* __externalReportPaths__ - optional element. A collection of explicitly allowed UNC (network) paths for report document resolution. The collection is taken into account only when the optional attribute _validateReportPaths_ is _enabled_ (default).
-
 ### Example
-
-The following XML and JSON examples show how to configure the report engine's processing settings.
 
 {{source=CodeSnippets\MvcCS\XmlConfiguration\ProcessingElementConfiguration.xml region=ProcessingElementConfiguration}}
 {{source=CodeSnippets\Blazor\Docs\JSON\ProcessingConfig.json region=ProcessingConfig}}
 
-## CacheDefinitionProperties
+### CacheDefinitionProperties
 
 We provide a mechanism for caching the report definition properties that boost performance. Naturally, it prevents modifying the report during the processing stage. The default value of the property is __True__.
 
@@ -67,7 +45,7 @@ The [Report Events](slug:telerikreporting/using-reports-in-applications/program-
 
 Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), `CacheDefinitionProperties` was exposed as a Report definition property in the `ReportEngineSettings` properties collection, so that you may specify it per Report. The property value may be set to `Default`, `True`, or `False`. The `Default`, which is the default value, lets you specify that the Reporting engine should respect the _cacheDefinitionProperties_ set in its configuration on the project level.
 
-## Graphics Engine
+### Graphics Engine
 
 The __graphicsEngine__ element was introduced with the Skia graphics engine in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010). It sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET {{site.mindotnetversion}} or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element, which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
 
@@ -76,21 +54,11 @@ Skia implementation is not available in applications that target the .NET Framew
 
 ### `<graphicsEngine>` element
 
-The following table describes the attribute of the `<graphicsEngine>` element. Its supported values are listed in the next section.
-
-| Configuration part | Description |
+|   |   |
 | ------ | ------ |
-|Attributes| __engineName__ – required string attribute. Determines the type of [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) used in the application.|
+|Attributes| __engineName__ – required string attribute. Determines the type of [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) used in the application. Available values:<ul><li>__PlatformDependent__ - the default value. On the Windows platform, the application will use the GDI graphics engine. On non-Windows platforms, the application will use the Skia graphics engine.</li><li>__Gdi__ - the application will use GDI+ graphics engine. On non-Windows platforms, this will cause runtime exceptions of type __PlatformNotSupported__ to be thrown. Available for applications that target either .NET Framework or .NET</li><li>__Skia__ - uses SkiaSharp for rendering. Can be used on Windows and non-Windows platforms in applications that target .NET (.NET Framework is not supported).</li></ul>|
 
-#### Engine Name Values
-
-The `engineName` attribute supports the following values:
-
-* __PlatformDependent__ - the default value. On the Windows platform, the application will use the GDI graphics engine. On non-Windows platforms, the application will use the Skia graphics engine.
-* __Gdi__ - the application will use GDI+ graphics engine. On non-Windows platforms, this will cause runtime exceptions of type __PlatformNotSupported__ to be thrown. Available for applications that target either .NET Framework or .NET.
-* __Skia__ - uses SkiaSharp for rendering. Can be used on Windows and non-Windows platforms in applications that target .NET (.NET Framework is not supported).
-
-## Validate Report Paths
+### Validate Report Paths
 
 By default, the declarative report definitions (TRDP, TRDX, and TRBP files) can be resolved only from paths within the application hosting the Reporting Engine when using ReportProcessor or embedded Reporting Engine with the desktop viewers; the `UriReportSourceResolver` when using Reporting REST Services; and those specified in the __externalReportPaths__ element. The attribute __validateReportPaths__ lets you allow all external paths by setting it to _false_ (the default is _true_).
 
@@ -98,7 +66,7 @@ By default, the declarative report definitions (TRDP, TRDX, and TRBP files) can 
 
 Add external [UNC (network) paths](https://learn.microsoft.com/en-us/dotnet/standard/io/file-path-formats#unc-paths) for report document resolution. The collection is taken into account only when the optional attribute _validateReportPaths_ is _enabled_ (default).
 
-## ResourceResolver
+### ResourceResolver
 
 __resourceResolver__ element allows to alter the default resource-resolving mechanism. This element determines which implementation of the [Telerik.Reporting.Interfaces.IResourceResolver](/api/Telerik.Reporting.Interfaces.IResourceResolver) interface will be used by the processing engine to resolve the resources that are specified in the report definition. Such resources are:
 
@@ -106,26 +74,61 @@ __resourceResolver__ element allows to alter the default resource-resolving mech
 * Elements from the report's [Telerik.Reporting.Drawing.ExternalStyleSheet](/api/Telerik.Reporting.Drawing.ExternalStyleSheet) collection, referenced by a relative path.
 * __Source__ property of [Telerik.Reporting.CsvDataSource](/api/Telerik.Reporting.CsvDataSource) and [Telerik.Reporting.JsonDataSource](/api/Telerik.Reporting.JsonDataSource) report items, referenced by a relative path.
 
-Use a custom __ResourceResolver__ to retrieve resources from storage other than a local file path. For example, Telerik Report Server can store its assets in files, an MSSQL database, or a Redis database. A custom resolver retrieves resources as byte arrays using the resource identifiers from the report definition.
+This __ResourceResolver__ is intended to be used in scenarios where the resources are not retrieved from a local file path but rather obtained from a different type of storage. As an example, Telerik Report Server persists its assets in storage that can be file-based or use an MSSQL or Redis database as a backend. Processing a report definition that has relative paths to its resources would not work in this scenario unless the necessary resources aren't placed in folders relative to the root of the Telerik Report Server web application. The custom resource resolver can be used here to provide specific logic that will retrieve the necessary resources as byte arrays using the resource identifier from the report definition.
 
-For file-based resources, the `path` provider described below resolves resources from the directory specified in its `<parameters>` element.
+### Restricting External Resource Access
+
+Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1111)) release.
+
+Implement `Telerik.Reporting.Interfaces.IStrictResourceResolver` to apply your own rules to all external report-resource references handled by the resource readers. This interface extends `IResourceResolver` and adds no members; implement `Resolve(string resourceUri)`.
+
+The existing interface handles selected references, including relative image paths. Absolute locations and resources such as map tiles do not all pass through it. The strict interface extends coverage across relative paths, absolute paths, UNC paths, and URLs.
+
+Strict resolution covers the following external resources:
+
+* Images, including external image references in HTML and SVG content.
+* CSV and JSON data source files.
+* Shapefiles and their companion DBF files.
+* External stylesheets.
+* Map tiles, metadata, and logos.
+
+The following table describes the authoritative result of `Resolve`:
+
+| Result | Behavior |
+| --- | --- |
+| `byte[]` | Uses the returned bytes as resource content. |
+| `string` | Reads the resource from the approved path or URL. |
+| `null` | Denies access without a fallback to the original resource location. |
+
+Telerik Reporting does not provide a ready-to-use public strict resolver implementation. Validate paths and URLs in your custom code before returning content or a location.
+
+Keep `validateReportPaths` enabled for report definitions. The strict interface does not supply a validation policy or automatically apply `validateReportPaths` and `externalReportPaths` to custom results.
+
+Inline content and assembly-embedded resources do not necessarily require an external lookup. Report-source selection and data-provider connections remain separate responsibilities.
+
+Register the strict implementation with the existing `custom` provider and its assembly-qualified `typeName`. No new provider or configuration switch is required. Existing `IResourceResolver` implementations remain supported.
+
+Register the custom type in [typeReferences](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element) so the engine can activate it with type validation enabled.
+
+For a complete C# implementation and XML/JSON registration examples, refer to [Restricting Access to Report Resources](slug:implementing-strict-resource-resolver). The sample permits files beneath one configured local directory and PNG images directly in a trusted HTTPS folder. Its REST service uses the built-in `UriReportSourceResolver` for a local TRDP with data-bound images; report-source resolution remains separate.
 
 ### `<resourceResolver>` element
 
-The following table summarizes the `<resourceResolver>` configuration. Provider choices and their supported parameters are described in the sections below.
-
-| Configuration part | Description |
+|   |   |
 | ------ | ------ |
-|Attributes| __provider__ – required string attribute. Determines the provider type of the ResourceResolver instance. Only `path` and `custom` are supported.|
-|Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<resourceResolver>` element. Only one __parameters__ element can be used in the `<resourceResolver>` element.|
+|Attributes| __provider__ – required string attribute. Determines the provider type of the ResourceResolver instance. Only two types are supported:<ul><li>__path__ - Specifies to use an internal ResourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.</li><li>__custom__ - Specifies to use a custom ResourceResolver instance that implements [Telerik.Reporting.Interfaces.IResourceResolver](/api/Telerik.Reporting.Interfaces.IResourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.</li></ul>|
+|Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<resourceResolver>` element. Only one __parameters__ element can be used in the `<resourceResolver>` element.<br/>__Supported parameters for *path* provider__<ul><li>__name__: _directory_</li><li>__value__: the path to the directory that contains the resources to be resolved.</li></ul>__Supported parameters for *custom* provider__<ul><li>__name__: _typeName_</li><li>__value__: the assembly qualified name of the type that implements the [Telerik.Reporting.Interfaces.IResourceResolver](/api/Telerik.Reporting.Interfaces.IResourceResolver) interface.</li></ul>The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.|
 |Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
 
+<<<<<<< Updated upstream
+### SharedDataSourceResolver
+=======
 #### Resource Resolver Providers
 
 The `provider` attribute supports the following types:
 
 * __path__ - Specifies to use an internal ResourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.
-* __custom__ - Specifies to use a custom ResourceResolver instance that implements [Telerik.Reporting.Interfaces.IResourceResolver](/api/Telerik.Reporting.Interfaces.IResourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.
+* __custom__ - Specifies a custom implementation of [Telerik.Reporting.Interfaces.IResourceResolver](/api/Telerik.Reporting.Interfaces.IResourceResolver), including implementations of `IStrictResourceResolver`. The engine instantiates it at runtime from the type name in the `<parameters>` element.
 
 #### Supported Parameters for the path Resource Resolver Provider
 
@@ -141,9 +144,10 @@ Set the following parameter in the `<parameters>` collection:
 * __name__: _typeName_
 * __value__: the assembly qualified name of the type that implements the [Telerik.Reporting.Interfaces.IResourceResolver](/api/Telerik.Reporting.Interfaces.IResourceResolver) interface.
 
-The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.
+The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. The provider excludes `typeName`, sorts the remaining entries by parameter name, and passes their values as positional string arguments. If no additional parameters are specified, the parameterless constructor will be used.
 
 ## SharedDataSourceResolver
+>>>>>>> Stashed changes
 
 __sharedDataSourceResolver__ element allows to alter the default shared DataSource(`.sdsx`)-resolving mechanism. This element determines which implementation of the [Telerik.Reporting.Processing.Data.ISharedDataSourceResolver](/api/Telerik.Reporting.Processing.Data.ISharedDataSourceResolver) interface will be used by the processing engine to resolve the shared DataSources references that are specified in the report definition.
 
@@ -151,36 +155,11 @@ This __SharedDataSourceResolver__ is intended to be used in scenarios where the 
 
 ### `<sharedDataSourceResolver>` element
 
-The following table summarizes the `<sharedDataSourceResolver>` configuration. Provider choices and their supported parameters are described in the sections below.
-
-| Configuration part | Description |
+|   |   |
 | ------ | ------ |
-|Attributes| __provider__ – required string attribute. Determines the provider type of the SharedDataSourceResolver instance. Only `path` and `custom` are supported.|
-|Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<sharedDataSourceResolver>` element. Only one __parameters__ element can be used in the `<sharedDataSourceResolver>` element.|
+|Attributes| __provider__ – required string attribute. Determines the provider type of the SharedDataSourceResolver instance. Only two types are supported:<ul><li>__path__ - Specifies to use an internal SharedDataSourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.</li><li>__custom__ - Specifies to use a custom SharedDataSourceResolver instance that implements [Telerik.Reporting.Processing.Data.ISharedDataSourceResolver](/api/Telerik.Reporting.Processing.Data.ISharedDataSourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.</li></ul>|
+|Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<sharedDataSourceResolver>` element. Only one __parameters__ element can be used in the `<sharedDataSourceResolver>` element.<br/>__Supported parameters for *path* provider__<ul><li>__name__: _directory_</li><li>__value__: the path to the directory that contains the resources to be resolved.</li></ul>__Supported parameters for *custom* provider__<ul><li>__name__: _typeName_</li><li>__value__: the assembly qualified name of the type that implements the [Telerik.Reporting.Processing.Data.ISharedDataSourceResolver](/api/Telerik.Reporting.Processing.Data.ISharedDataSourceResolver) interface.</li></ul>The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.|
 |Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
-
-#### Shared Data Source Resolver Providers
-
-The `provider` attribute supports the following types:
-
-* __path__ - Specifies to use an internal SharedDataSourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.
-* __custom__ - Specifies to use a custom SharedDataSourceResolver instance that implements [Telerik.Reporting.Processing.Data.ISharedDataSourceResolver](/api/Telerik.Reporting.Processing.Data.ISharedDataSourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.
-
-#### Supported Parameters for the path Shared Data Source Resolver Provider
-
-Set the following parameter in the `<parameters>` collection:
-
-* __name__: _directory_
-* __value__: the path to the directory that contains the resources to be resolved.
-
-#### Supported Parameters for the custom Shared Data Source Resolver Provider
-
-Set the following parameter in the `<parameters>` collection:
-
-* __name__: _typeName_
-* __value__: the assembly qualified name of the type that implements the [Telerik.Reporting.Processing.Data.ISharedDataSourceResolver](/api/Telerik.Reporting.Processing.Data.ISharedDataSourceResolver) interface.
-
-The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.
 
 ## See Also
 

@@ -60,6 +60,7 @@ Due to the XAML-based nature of WinUI, the WinUI report viewer reuses parts of t
 
 You may set the ReportSource of the WinUI Viewer as explained in the WinUI sections of the article [Setting ReportSource to Report Viewers](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers).
 
+
 ## Known Limitations
 
 Currently, the WinUI Report Viewer does not provide the following functionalities:

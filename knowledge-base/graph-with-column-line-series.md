@@ -44,7 +44,7 @@ The sample scenario is valid when you are working with the Telerik Reporting [St
 	1. Set the connection string to the demo AdventureWorks database.
 	1. Set the query to the following one:
 
-		````SQL
+		```SQL
 		SELECT SOD.LineTotal, SOH.OrderDate
 				FROM
 					Sales.SalesPerson S
@@ -52,13 +52,13 @@ The sample scenario is valid when you are working with the Telerik Reporting [St
 				INNER JOIN Sales.SalesOrderDetail SOD ON SOH.SalesOrderID = SOD.SalesOrderID
 				WHERE SOH.OrderDate between cast('2003-01-01' as datetime) and cast('2003-12-31' as datetime)
 					and S.SalesPersonId = 283
-		````
+		```
 
 
 	1. Click __Execute Query...__ to check if everything is fine with the database connection. Click __Finish__ when you are ready.
 
 1. From the **Available data sources** list,  select the data source you've already created and click __Next__.
-1. On the next page, select the fields which will be used to build the chart.
+1. On the next page, select the fields that will be used to build the chart.
 
 	Since the report will display aggregated sums of the order lines by month, you need the __LineTotal__ and __OrderDate__ fields. Select the __OrderDate__ field and drag it to the **Categories** box. Select the __LineTotal__ field and drag it to the **Values** box. It will be shown as __Sum(LineTotal)__ because the __Sum__ is the default aggregate function.
 

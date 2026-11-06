@@ -24,7 +24,7 @@ How can I exclude hidden report items from CSV when multiple reports use a share
 
 To exclude hidden report items from CSV, use the `RespectItemVisibility` device information setting. It defaults to `true`, so the CSV renderer respects the processed items' `Visible` state unless the setting is disabled. Each report can define its own visibility rules without report-specific table names or column indexes in a shared export method.
 
-> note `RespectItemVisibility` is available starting with Telerik Reporting 2026 Q4 (20.3.26.1007). Before that release, hidden report items were included in CSV by default. See [CSV Rendering Design Considerations](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations) for the version-specific behavior and format limitations.
+> note `RespectItemVisibility` is available starting with Telerik Reporting 2026 Q3 (20.2.26.1007). Before that release, hidden report items were included in CSV by default. See [CSV Rendering Design Considerations](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations) for the version-specific behavior and format limitations.
 
 Pass a separate `deviceInfo` collection for each rendering call. The following helper accepts a `ReportProcessor` and a configured `ReportSource`, so a shared export path can use different report definitions and parameters without a custom rendering extension.
 

@@ -121,6 +121,8 @@ If sorting is important for your exported Excel reports, the guidelines below ca
 - Aligning items precisely might not be enough, and in some rare cases, columns might continue to be merged. This is likely caused by internal unit conversion and rounding when the Excel worksheet is rendered. In the report definition, you can specify location and size in different measurement units such as inches, pixels, centimeters, and points, but internally Excel uses points. So to minimize conversion and the potential inaccuracy of rounding when converting inches and centimeters to points, consider specifying all measurements in points (one inch is 72 points).
 - The Page Header of the report interferes with the exported columns in Excel. A horizontal page break (see [Understanding Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination)) that splits a report item into two parts will result in an additional Excel column in the item. For that reason, you need to make sure that the report's physical page is wide enough to accommodate the entire report content so that there is no horizontal page break introduced. The report designers indicate when the report is wider than the physical page through a yellow warning triangle at the top left corner of the report. You may check the warning message by hovering over the triangle.
 
+For guidance on `Zero span range` warnings logged during Excel export, see [Diagnosing Zero Span Range Warnings](slug:excel-export-zero-span-range-warning).
+
 ## Page Settings
 
 The following standard paper kinds are supported:

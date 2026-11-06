@@ -34,7 +34,7 @@ XML-based configuration file:
 
 The following sections describe attributes, child elements, and parent elements.
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|<ul><li>__typeName__ – mandatory string attribute. Specifies the full name of the type, i.e., namespace and class name.</li><li>__assemblyName__ – mandatory string attribute. Specifies the name of the assembly that contains the type.</li><li>__publicKeyToken__ – optional string attribute. Specifies the public key token of the assembly. Can be omitted or can have an empty or null value.</li></ul>|
 |Child Elements|<ul><li>__add__ - Optional element. Adds a type reference to the collection.</li><li>__clear__ - Optional element. Removes all references to inherited type names, allowing only the references that are added by the current add element.</li><li>__remove__ - Optional element. Removes a reference to an inherited type name from the collection.</li></ul>|

@@ -32,7 +32,7 @@ When attempting to open the search dialog from Angular Report Viewer's toolbar i
 
 ## Error Message
 The stack trace of the error is:
-```
+```text
 ERROR TypeError: $inputBox.kendoComboBox is not a function
     at ensureInitialized (telerikReportViewer.js:5217)
     at toggle (telerikReportViewer.js:5196)
@@ -56,7 +56,7 @@ The fix for this error will be introduced with the next official version (R3 201
 There is a possible workaround by replacing the Kendo UI JavaScript distributed by Telerik Reporting with the content of the *telerikReportViewer.kendo.min.js* file which could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/telerikreportviewer-kendo-min.zip?sfvrsn=af62bd98_2). 
 The used subset can be found in the Telerik Angular Report Viewer NPM package, i.e. 
 
-```
+```text
 node_modules\@progress\telerik-angular-report-viewer\dist\dependencies\telerikReportViewer.kendo-<VERSION>.min.js.
 ```
 

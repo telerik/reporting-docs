@@ -52,7 +52,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 >caption `<privateFonts>` element
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
 |Attributes|None|
 |Child Elements|__add__ - Optional element. Adds a font to the collection.|
@@ -60,9 +60,9 @@ The following sections describe attributes, child elements, and parent elements.
 
 >caption `<add>` element
 
-|   |   |
+| Category | Description |
 | ------ | ------ |
-|Attribute|<table><colgroup><col span="1" style="width: 10%;"><col span="1" style="width: 90%;"></colgroup><tbody><tr><td><strong>fontFamily</strong></td><td>The attribute is required and case sensitive.</td></tr><tr><td><strong>path</strong></td><td>The attribute is required and is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see MSDN <a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.getcurrentdirectory?view=net-7.0#System_IO_Directory_GetCurrentDirectory">Directory.GetCurrentDirectory() method</a><br/>For web projects you can use ~ operator to specify a root-relative path for a font. For more informarion see MSDN <a href="https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)">ASP.NET Web Project Paths</a>.</td></tr><tr><td><strong>fontStyle</strong></td><td>The attribute is optional with valid values Regular, Bold, Italic, Strikeout and Underline. The default value is Regular. Specify this attribute if you have to specify font family with multiple font files for different style or if specified font file is not containing Regular style.</td></tr></tbody></table>|
+|Attribute|<table><colgroup><col span="1" style="width: 10%;"><col span="1" style="width: 90%;"></colgroup><thead><tr><th scope="col">Attribute</th><th scope="col">Description</th></tr></thead><tbody><tr><td><strong>fontFamily</strong></td><td>The attribute is required and case sensitive.</td></tr><tr><td><strong>path</strong></td><td>The attribute is required and is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see MSDN <a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.getcurrentdirectory?view=net-7.0#System_IO_Directory_GetCurrentDirectory">Directory.GetCurrentDirectory() method</a><br/>For web projects you can use ~ operator to specify a root-relative path for a font. For more informarion see MSDN <a href="https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)">ASP.NET Web Project Paths</a>.</td></tr><tr><td><strong>fontStyle</strong></td><td>The attribute is optional with valid values Regular, Bold, Italic, Strikeout and Underline. The default value is Regular. Specify this attribute if you have to specify font family with multiple font files for different style or if specified font file is not containing Regular style.</td></tr></tbody></table>|
 |Child elements|None|
 |Parent element|__privateFonts__|
 

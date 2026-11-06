@@ -45,7 +45,7 @@ The response error is the following:
 
 As of [Service Pack 14.0.20.219](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2020-sp1-14-0-20-219), you need to add a version to the web viewers and designer resources requests. Now the REST Service request for the viewer template will look like the following:
 
-```
+```text
 https://localhost:44332/api/reports/resources/templates/telerikReportViewerTemplate-14.0.20.219.html
 ```
 
@@ -55,11 +55,10 @@ Note that in the observed error the version is not included in the request for t
 
 Upgrade the Angular ReportViewer to the same version used by the REST Service by using any of the following commands:
 
-```
+```bash
 npm install @progress/telerik-angular-report-viewer
 npm install --save @progress/telerik-angular-report-viewer
 ```
-
 
 
 

@@ -29,12 +29,12 @@ Service.
 
 ## Solution
 Use the endpoint
-```
+```text
 api/reportdesigner/cultureContext
 ```
 
 If successful, it should return the separators determined by the current culture, for example:
-```
+```json
 {"decimalSeparator":".","listSeparator":","}
 ```
 

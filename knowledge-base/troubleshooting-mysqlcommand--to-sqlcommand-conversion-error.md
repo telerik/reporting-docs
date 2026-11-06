@@ -28,7 +28,7 @@ ticketid: 1667172
 
 After updating to Telerik Reporting version `18.2.24.924`, an error occurs when retrieving data using the [SqlDataSource component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) with **Stored Procedures** when using a data provider different from the default [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient). 
 
-For example, the below error indicates that the type `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
+For example, the error below indicates that the type `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
 
 ## Error Message
 
@@ -71,31 +71,27 @@ Manually invoking the **Stored Procedures** works for both scenarios - with and 
 
 - MySQL
 
-  ````SQL
-CALL Stored_Procedure;
-````
-
+  ```SQL
+  CALL Stored_Procedure;
+  ```
 
 - Oracle
 
-  ````SQL
-EXECUTE Stored_Procedure;
-````
-
+  ```SQL
+  EXECUTE Stored_Procedure;
+  ```
 
 - PostgreSQL
 
-  ````SQL
-CALL Stored_Procedure();
-````
-
+  ```SQL
+  CALL Stored_Procedure();
+  ```
 
 - MSSQL
 
-  ````SQL
-EXEC Stored_Procedure;
-````
-
+  ```SQL
+  EXEC Stored_Procedure;
+  ```
 
 ## See Also
 

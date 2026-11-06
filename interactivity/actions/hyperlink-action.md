@@ -23,7 +23,7 @@ You can also specify whether the URL is opened in the same or a new browser wind
 
 > Opening URL in the same window is only applicable for the [legacy ASP.NET Web Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview). For the others, the [NavigateToUrlAction](/api/Telerik.Reporting.NavigateToUrlAction) would be opened in a new window.
 
-# How to Add a Hyperlink Action
+## How to Add a Hyperlink Action
 
 Add a hyperlink to a URL when you want users to be able to click a link in a report and open a browser to the URL you specify.
 
@@ -31,7 +31,7 @@ You must ensure that the user has access to the URL that you provide i.e. it all
 
 You can add a hyperlink to a URL to any item that has an Action property.
 
-## Adding a Hyperlink action using Report Designer
+### Adding a Hyperlink action using Report Designer
 
 1. In the Design view, right-click a report item to which you want to add a link and then click **Properties**.
 1. In the Properties dialog box, click **Action**.
@@ -40,7 +40,7 @@ You can add a hyperlink to a URL to any item that has an Action property.
 1. Click **OK**.
 1. To test the link, run the report and click the report item with the applied **Action**. For TextBoxes, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline by setting the corresponding **Font** properties of the TextBox.
 
-## Adding a Hyperlink action programmatically
+### Adding a Hyperlink action programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToUrlSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToUrlSnippet}}

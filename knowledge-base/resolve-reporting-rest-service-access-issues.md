@@ -21,14 +21,14 @@ After implementing the [Reporting REST Service](slug:telerikreporting/using-repo
 
 ## Error Message
 
-````HTML
+```HTML
 <Error>
     <Message>An error has occurred.</Message>
     <ExceptionMessage>Multiple actions were found that match the request: Formats on type Controllers.ReportsController GetClientsSessionTimeoutSeconds on type Controllers.ReportsController Version on type     Controllers.ReportsController</ExceptionMessage>
     <ExceptionType>System.InvalidOperationException</ExceptionType>
     <StackTrace> at System.Web.Http.Controllers.ApiControllerActionSelector.ActionSelectorCacheItem.SelectAction(HttpControllerContext controllerContext) at System.Web.Http.ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken) at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()</StackTrace>
 </Error>
-````
+```
 
 ## Cause
 
@@ -42,15 +42,15 @@ To resolve this issue, ensure that the reporting routes are registered before th
 
 1. Register the reporting routes before any default or other custom routes in your Web API configuration:
 
-    ````CSharp
-Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
+    ```CSharp
+    Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
 
-    config.Routes.MapHttpRoute(
-        name: "DefaultApi",
-        routeTemplate: "api/{controller}/{action}/{id}",
-        defaults: new { id = RouteParameter.Optional }
-    );
-````
+        config.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "api/{controller}/{action}/{id}",
+            defaults: new { id = RouteParameter.Optional }
+        );
+    ```
 
 
 1. Verify that the [`routeTemplate`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.template.routetemplate?view=aspnetcore-8.0) includes the `{action}` part. Omitting this can cause issues due to multiple actions matching the same route template.

@@ -1,5 +1,5 @@
 ---
-title: How to Build and Install Latest libgdiplus library on Linux
+title: How to Build and Install the Latest libgdiplus Library on Linux
 description: Step-by-step installation description of libgdiplus on Linux
 type: how-to
 page_title: How to build and install the latest libgdiplus library on Linux
@@ -26,7 +26,7 @@ previous_url: /knowledge-base/how-to-install-libgdiplus-centos-amazon-linux
 
 ## Description
 
-Step-by-step article on how to build and install libgdiplus from source and prebuilt .deb package.
+Step-by-step article on how to build and install libgdiplus from source and a prebuilt .deb package.
 
 In a [special section](#solution-for-centos-and-amazon-linux) we will learn how to find the repository to download and install `libgdiplus` on __CentOS__ and its derived __Amazon Linux__ operating system.
 
@@ -34,7 +34,7 @@ In a [special section](#solution-for-centos-and-amazon-linux) we will learn how 
 
 **Prerequisites:**
 
-We are assuming that you already have older libgdiplus which installed its dependencies. More information and build and install instructions can be found here: https://github.com/mono/libgdiplus
+We are assuming that you already have an older libgdiplus installed with its dependencies. More information and build and install instructions can be found here: https://github.com/mono/libgdiplus
 
 `sudo apt install libgdiplus`
 
@@ -42,7 +42,7 @@ We are assuming that you already have older libgdiplus which installed its depen
 
 https://www.mono-project.com/download/stable/#download-lin
 
-````
+```bash
 sudo apt install gnupg ca-certificates
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -52,27 +52,27 @@ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | su
 sudo apt update
 
 sudo apt install libgdiplus
-````
+```
 
 **Harder method:**
 
-On Debian-based distributions install prerequisites by running this command:
+On Debian-based distributions, install prerequisites by running this command:
 
 `sudo apt-get install libgif-dev autoconf libtool automake build-essential gettext libglib2.0-dev libcairo2-dev libtiff-dev libexif-dev`
 
-Clone or download and unarchive libgdi repository: 
+Clone or download and unarchive the libgdi repository: 
 
-````
+```bash
 git clone https://github.com/mono/libgdiplus.git
 cd libgdiplus
-````
+```
 
-Run build script (Optionally you can use --with-pango parameter if you want to use this library: 
+Run the build script (optionally, you can use the --with-pango parameter if you want to use this library: 
 
-````
+```bash
 ./autogen.sh
 make 
-````
+```
 
 Then run unit tests to verify that all is correct: 
 
@@ -92,17 +92,17 @@ If the first one fails because of missing rights.
 
 The `libgdiplus` library for __CentOS__ Linux distributions resides in the `Epel` package repository. For most of the __CentOS__ versions, this repository is available by default. __Amazon Linux__ is based on __CentOS__ but not all of its versions contain `Epel` by default. Below are the commands necessary for installing this repository. Note that they may vary depending on the exact distribution, version, etc. You may need to run the terminal as administrator or use `sudo` to authorize.
 
-````
+```bash
 yum install epel-release -y
 # Note: if 'yum install epel-release' doesn't work for you, try manually updating the source
 # rpm -ihv --nodeps https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-````
+```
 
 After successfully installing the repository with the above instructions, you may ensure that you have the `Epel` repository listed with the output from the following command:
 
 `yum repolist`
 
-If it is indeed available, you may run the below command and install the package itself:
+If it is indeed available, you may run the command below and install the package itself:
 
 `yum install libgdiplus`
 
@@ -110,7 +110,7 @@ If it is indeed available, you may run the below command and install the package
 
 An exception with the following stack trace may occur in some cases:
 
-````
+```text
 Unhandled exception. System.TypeInitializationException: The type initializer for 'Telerik.Reporting.Processing.Common.FontContainer' threw an exception.
  ---> System.TypeInitializationException: The type initializer for 'Gdip' threw an exception.
  ---> System.DllNotFoundException: Unable to load shared library 'libdl' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: liblibdl: cannot open shared object file: No such file or directory
@@ -132,7 +132,7 @@ Unhandled exception. System.TypeInitializationException: The type initializer fo
    at Telerik.Reporting.Processing.ReportProcessor.RenderReport(String format, ReportSource reportSource, Hashtable deviceInfo, CancellationToken cancellationToken)
    at Telerik.Reporting.Processing.ReportProcessor.RenderReport(String format, ReportSource reportSource, Hashtable deviceInfo)
    at Program.<Main>$(String[] args) in /home/projects/ConsoleApp1/ConsoleApp1/Program.cs:line 10
-````
+```
 
 If you see the error, run the next command to fix it:
 

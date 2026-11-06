@@ -32,7 +32,7 @@ The HTML5 Viewer is a client-side widget consisting of **Kendo UI** widgets and 
 
 ## Error Message
  
- ```
+ ```text
  "Only secure content is displayed"  
  ```
  
@@ -44,7 +44,7 @@ The HTML5 Viewer is a client-side widget consisting of **Kendo UI** widgets and 
 
 The issue can be detected by running the page in Internet Explorer with opened Console ([F12 Developer Tools](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/gg589507(v=vs.85)?redirectedfrom=MSDN)). In the error logs you will see a message like the following:  
 
-```
+```text
 HTTPS security is compromised by http://kendo.cdn.telerik.com/2015.3.930/styles/kendo.common.min.css
 ```
 

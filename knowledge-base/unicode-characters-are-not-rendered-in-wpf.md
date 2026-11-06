@@ -27,19 +27,19 @@ res_type: kb
 
 ## Description
 
-Using the WPF report viewer to display a report that uses odd unicode characters result in the report not rendering and instead, the _'Operation was canceled.'_ error message is displayed inside the report viewer.
+Using the WPF report viewer to display a report that uses odd Unicode characters results in the report not rendering and instead, the _'Operation was canceled.'_ error message is displayed inside the report viewer.
 
 ## Error Message
 
 - In the report viewer:
 
-````
+```text
 Operation was canceled.
-````
+```
 
 - In the output:
 
-````
+```text
 ReportViewer Error: 0 : System.ArgumentException: 'character', hexadecimal value 0x10, is an invalid character.
    at System.Xml.XmlUtf8RawTextWriter.InvalidXmlChar(Int32 ch, Byte* pDst, Boolean entitize)
    at System.Xml.XmlUtf8RawTextWriter.WriteAttributeTextBlock(Char* pSrc, Char* pSrcEnd)
@@ -71,11 +71,11 @@ An error has occurred while rendering the report: System.OperationCanceledExcept
    at Telerik.Reporting.Paging.PageCompositionBase.CreatePages()
    at Telerik.Reporting.Paging.PagerBase.Telerik.Reporting.Paging.IPager.CreatePages(IPageHandler handler, LayoutElement root)
    at Telerik.Reporting.BaseRendering.RenderingExtensionBase.Render(LayoutElement root, Hashtable renderingContext, Hashtable deviceInfo, CreateStream createStreamCallback, EvaluateHeaderFooterExpressions evalHeaderFooterCallback, PageSettings pageSettings)
-````
+```
 
 ## Cause\Possible Cause(s)
 
-WPF applications use XAML, which is a declarative XML-based markup language. Hence, it is prone to all restrictions that the XML should obey.
+WPF applications use XAML, which is a declarative XML-based markup language. Hence, it is prone to all restrictions that XML should obey.
 The symbol that you are trying to render in the report is not allowed in XML, which causes the observed error.
 
 ## Solution

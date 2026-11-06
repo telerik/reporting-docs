@@ -52,9 +52,8 @@ For more information please refer to the related articles about each report view
 
 * [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) (applies also to its wrappers for other Frameworks)
 
-|  |  |
-| ------ | ------ |
- Event Handler |
-| [InteractiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionexecuting)|
-| [InteractiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionenter)|
-| [InteractiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionleave)|
+| Event Handler |
+| ------------- |
+| [InteractiveActionExecuting](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionexecuting) |
+| [InteractiveActionEnter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionenter) |
+| [InteractiveActionLeave](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#interactiveactionleave) |

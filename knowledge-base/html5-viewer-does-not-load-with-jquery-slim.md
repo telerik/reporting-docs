@@ -36,14 +36,14 @@ The error is displayed in the browser console when the report viewer loads.
 
 - On the page, in the report viewer:
 
-```
+```text
 Cannot access the Reporting REST service. (serviceUrl = '/api/reports'). 
 Make sure the service address is correct and enable CORS if needed. (https://enable-cors.org)
 ```
 
 - In the browser console:
 
-```
+```text
 Kendo could not be loaded automatically. Make sure 'options.serviceUrl' / 'options.reportServer.url' is correct and accessible.
 The error is: undefined
 ```

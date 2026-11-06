@@ -109,10 +109,13 @@ The details group repeats for each data record. To introduce additional page bre
 1. Right-click the details group and select **Group Properties**.
 1. Configure the group's `PageBreak` property. Its values are `None`, `Before`, `After`, and `BeforeAndAfter`.
 
-The page breaks will be applied to every row except for the last.
+| PageBreak Setting | Behavior |
+|---|---|
+| `Before` | Applies a page break before each row, except the first row. |
+| `After` | Applies a page break after each row, except the last row. |
+| `BeforeAndAfter` | Combines both behaviors: applies page breaks before and after each row. |
 
 > note The `TableGroup.PageBreak` is an enum property, and the `TableGroup` does not expose the report-item `Bindings` collection. The binding example in [Conditional Page Breaks](slug:conditional-page-breaks) applies to a report section. Do not transfer it directly to the TableGroup property.
-
 
 ### Edit the Repeat On Every Page Behavior
 

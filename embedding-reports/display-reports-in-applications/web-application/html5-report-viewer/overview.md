@@ -53,7 +53,6 @@ It has built-in support for end-user interactions such as drill-down and drill-t
 
 The toolbar of the HTML5 report viewer provides basic functionality for interacting with the currently loaded HTML report:
 
-<body>
 	<table>
 		<tr>
 			<th style="text-align: center">Icon</th>
@@ -132,7 +131,6 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 			<td>Toggles the AI Prompt Dialog when the <a href="slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights" target="_blank"> AI-Powered Insights</a> functionality has been enabled.</td>
 		</tr>
 	</table>
-</body>
 
 ## Parameters Area
 
@@ -155,7 +153,7 @@ To add links to the document map, you set the **DocumentMapText** property of th
 
 ## Report Page Modes
 
-The [page modes](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) are two. **Continuous scrolling** and **Single page**. The Single page mode renders only one page in the viewport. This mode does not hinder the browser with a lot of DOM objects, actions, or event listeners, but limits the report data that the user could read.
+The [page modes](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) are **Continuous scrolling** and **Single page**. The Single page mode renders only one page in the viewport. This mode does not burden the browser with many DOM objects, actions, or event listeners, but limits the report data that the user can read.
 
 The Continuous scroll mode gives the user the ability to read all HTML report pages at once. When the report is ready, in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down. If the user navigates to the 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport, before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part, will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.
 

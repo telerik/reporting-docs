@@ -100,6 +100,23 @@ To edit an existing group's properties, including grouping expressions, sorting,
 
 1. Click **OK**.
 
+### Page Breaks for Table Detail Rows
+
+The details group repeats for each data record. To introduce additional page breaks between rows, in the Standalone Report Designer:
+
+1. Select the Table item on the design surface. If you have selected an item or a cell inside the table, click the **Escape** key until the focus changes to the table item.
+1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), locate the details group under **Row Groups**. If the table needs a details group, follow [Add a Details Group Using the Report Designer](#add-a-details-group-using-the-report-designer).
+1. Right-click the details group and select **Group Properties**.
+1. Configure the group's `PageBreak` property. Its values are `None`, `Before`, `After`, and `BeforeAndAfter`.
+
+| PageBreak Setting | Behavior |
+|---|---|
+| `Before` | Applies a page break before each row, except the first row. |
+| `After` | Applies a page break after each row, except the last row. |
+| `BeforeAndAfter` | Combines both behaviors: applies page breaks before and after each row. |
+
+> note The `TableGroup.PageBreak` is an enum property, and the `TableGroup` does not expose the report-item `Bindings` collection. The binding example in [Conditional Page Breaks](slug:conditional-page-breaks) applies to a report section. Do not transfer it directly to the TableGroup property.
+
 ### Edit the Repeat On Every Page Behavior
 
 When you enable **Repeat On Every Page** for a header and/or footer while creating a [dynamic group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview) in the [Table Group Dialog](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/table-group-dialog), the designer sets the `PrintOnEveryPage` property to `True` on the corresponding [static group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview). Static groups have no grouping expressions&mdash;they represent fixed structural rows or columns that serve as group headers and footers.

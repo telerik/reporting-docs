@@ -26,7 +26,7 @@ The Angular component is built on top of the [HTML5 Report Viewer](slug:telerikr
 To successfully integrate the Angular Report Viewer component, ensure the following are fulfilled in your Angular Reporting application:
 
 1. Required Application Version:
-   - [Angular 19-21](https://angular.dev/tutorials/first-app) Application
+   - [Angular 20-22](https://angular.dev/tutorials/first-app) Application
 
 1. Required Service:
    - The viewer requires a running instance of [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project so that its routes are accessible from the Angular application.
@@ -35,9 +35,9 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
    - [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
-   - `@angular/common: "19 - 21"`
-   - `@angular/core: "19 - 21"`
-   - `"jquery": "^1.10.0 || ^2.2.0 || ^3.7.0"`
+   - `@angular/common: "20 - 22"`
+   - `@angular/core: "20 - 22"`
+   - `"jquery": "^3.7.0"`
 
 1. Required references to Telerik Kendo UI styles:
    - [Kendo UI Sass-Based Themes v{{site.kendothemeversion}}](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
@@ -64,7 +64,7 @@ The Parameters Area provides an intuitive UI for user interactions. The HTML5-ba
 
 List of the default widgets for different report parameter types:
 
-- DateTime: [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview). Even though the time part cannot be selected via the Kendo UI DatePicker widget UI, it is still passed to the report engine as a default time part (`12:00:00 AM`) with the `DateTime` value. If needed, the viewer can be [customized](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview) to use a [Kendo UI DateTimePicker](https://demos.telerik.com/kendo-ui/datetimepicker/index) or another widget, which allows selecting the time part explicitly. When a `DateTime` value is selected in the parameters area of the HTML5 Report Viewer, it is interpreted as UTC `DateTime` on the server where the report is processed and rendered. For example, entering 1/1/2000 12:00:00 AM in a DateTimePicker report parameter widget and rendering the report will result in the following `DateTime` value on the server and in the rendered report - 1/1/2000 12:00:00 AM considered as a UTC time.
+- DateTime: [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview). Even though the time part cannot be selected via the Kendo UI DatePicker widget UI, it is still passed to the report engine as a default time part (`12:00:00 AM`) with the `DateTime` value. If needed, the viewer can be [customized](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview) to use a [Kendo UI DateTimePicker](https://demos.telerik.com/kendo-ui/datetimepicker/index) or another widget, which allows selecting the time part explicitly. When a `DateTime` value is selected in the parameters area of the HTML5 Report Viewer, it is interpreted as UTC `DateTime` on the server where the report is processed and rendered. For example, entering 1/1/2000 12:00:00 AM in a DateTimePicker report parameter widget and rendering the report will result in the following `DateTime` value on the server and in the rendered report - 1/1/2000 12:00:00 AM, considered as a UTC time.
 - Integer | Float | String: [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview). The default editor could be easily changed to [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) (for single select parameters) and [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) (for multi-select parameters) editors. For more information, check **parameters** option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) article.
 
 When one or more [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have their `Visible` property turned on, a parameter area is shown as part of the report viewer. This helps the report developer to easily provide input methods for the end users. Based on the type of parameters, a suitable editor UI is created.

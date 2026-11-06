@@ -88,6 +88,22 @@ Set the corresponding property values in the REST Service configuration file:
 
 > Since the [2025 Q1 (19.0.25.211) release](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211), the MSSQL storage relies on `System.Data.SqlClient` to connect to the provided database in .NET Framework applications, and on `Microsoft.Data.SqlClient` in .NET applications. In previous versions, the `System.Data.SqlClient` data provider was used for each target framework.
 
+## Estimating Storage Requirements
+
+The SQL database space required by `MsSqlServerStorage` depends on your reporting workload. A fixed size estimate is not sufficient for capacity planning. Measure storage usage with representative reports and expected peak activity before choosing database capacity.
+
+The storage holds client state and rendering assets, including generated documents and images, rather than only report definitions or exported PDF files. Report content, the number of retained documents, concurrent viewers, and expiration settings affect the footprint. For details about retention and document reuse, see [Cleaning the Reporting REST Service Storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview#cleaning-the-reporting-rest-service-storage).
+
+Use the following procedure to estimate capacity:
+
+1. Prepare the storage schema and record its baseline space usage. If Reporting shares a database with application data, measure the Reporting tables separately so that unrelated data does not distort the estimate.
+1. Run a representative workload with the report content, parameter combinations, page counts, and export formats that users request. Include large reports and image-heavy reports used by your application.
+1. Exercise the expected peak number of concurrent viewers across the service instances and record the peak storage usage. Use the same client session and report sharing timeout settings that you plan to use in production.
+1. Stop activity from the test viewers and allow their sessions and documents to expire. Keep a separate viewer active to trigger the periodic cleanup, then measure storage usage again. Closing a viewer does not immediately release its assets, and cleanup is request-triggered rather than an independent background schedule.
+1. Choose capacity based on the measured peak, expected workload growth, and operational headroom agreed with your database administrator. Account for other application data when using a shared database.
+
+Monitor Reporting storage usage in production and repeat the measurement when report content, concurrency, export usage, or retention settings change. Review database allocation and transaction log requirements separately with your database administrator. The size of the Reporting data alone is not a complete database capacity estimate.
+
 ## See Also
 
 - [REST Service Storage Overview](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview)

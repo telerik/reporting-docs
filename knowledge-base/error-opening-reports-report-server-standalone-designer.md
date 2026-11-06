@@ -50,21 +50,21 @@ GetClientsSessionTimeoutSeconds on type Telerik.ReportServer.Web.Controllers.Api
 1. Open the `Web.config` file of the Report Server located at: `C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Web.config`.
 1. Locate the [<dependentAssembly>](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/dependentassembly-element) element and add the following [<bindingRedirect>](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for the `System.Net.Http` assembly:
 
-   ````XML
+   ```XML
    <dependentAssembly>
           <assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
           <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0"/>
       </dependentAssembly>
-   ````
+   ```
 
 
 1. Save the `Web.config` file (*administrator permissions may be required*).
 1. **Recycle the Application Pool** and restart the **Telerik Report Server** website from the [IIS Manager](https://learn.microsoft.com/en-us/iis/get-started/getting-started-with-iis/getting-started-with-the-iis-manager-in-iis-7-and-iis-8).
-1. (*Optional*) If the error persists, try restarting the Internet Information Services (IIS) by executing the following command in a Command Prompt/PowerShell
+1. (*Optional*) If the error persists, try restarting Internet Information Services (IIS) by executing the following command in Command Prompt/PowerShell
 
-   ````CMD
+   ```CMD
    iisreset
-   ````
+   ```
 
 
 ## See Also

@@ -32,9 +32,11 @@ res_type: kb
 
 An `Error Client with ID 'xxxxxx-xxxx' not found. Expired.` occurs when using the HTML5 Telerik Reporting ReportViewer.
 
+On the server, this failure can appear as `InvalidClientException` from the Reporting REST service.
+
 ## Cause
 
-The error message indicates that the ID of the Report Viewer cannot be found in the cache storage.
+The Reporting REST service cannot use the requested viewer client-session ID because the client is missing from its cache storage or the session has expired. `InvalidClientException` covers both conditions, so the exception alone does not prove that `ClientSessionTimeout` elapsed.
 
 ## Solution  
 

@@ -139,6 +139,8 @@ The following libraries should also be installed in the Docker image as required
 
 > tip Install the fonts used in your reports on the Docker image so reports render consistently with the Windows output. See [Installing Fonts in a Docker Environment](slug:system-null-reference-exception-docker) for details.
 
+For report resolution failures after enabling Skia, see [Troubleshoot Report Resolution Failures in Linux Docker with Skia](slug:troubleshoot-report-resolution-linux-docker-skia).
+
 ### Windows Docker Container with System.Drawing
 
 Ensure the base image supports GDI+. For example, use the `windowsservercore` from the [Container Base Images](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images). Select **Add** > **Docker Support...** from the project's context menu:

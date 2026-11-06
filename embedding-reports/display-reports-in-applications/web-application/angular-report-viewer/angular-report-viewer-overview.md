@@ -73,6 +73,21 @@ The parameter layout of the parameter area is formatted automatically. The order
 
 When one or more visible report parameters have the `AutoRefresh` property turned off, a **Preview** button appears. In this case, to preview the report, the end user can click the **Preview** button. If all parameters have default values, the report runs automatically on the first view. You can show or hide the parameters area from the **Parameters** button in the report viewer’s toolbar.
 
+### Multi-Column Parameter Dropdowns
+
+The Angular Report Viewer's built-in parameter editors do not provide a multi-column dropdown configuration. Selecting several parameter values with `MultiValue` is different from displaying several columns, such as customer code, name, and city, for each option.
+
+The standard available values contain a display name and a value, not a collection of fields with column definitions. You can use an expression in `AvailableValues.DisplayMember` to combine fields into one label, but this does not create separate display columns. For details, see [Report Parameter Properties](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview).
+
+If your application requires a multi-column selector, use one of these approaches:
+
+- Define a custom editor through the viewer's `parameterEditors` input. Follow the [HTML5 custom parameter editor contract](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor) to create the editor and notify the viewer when the selected parameter value changes. This is an editor factory API, not an Angular component template slot.
+- Place a custom selector outside the viewer and [pass its selected value to the report parameter](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/how-to-pass-values-to-report-parameters).
+
+Provide the additional display fields through your custom selector's data source. The standard parameter available values expose only `name` and `value`.
+
+These options apply to the Angular wrapper of the HTML5 Report Viewer. For the separate Native Angular Report Viewer, see [Using an External Parameter Selector](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/passing-parameter-values#using-an-external-parameter-selector).
+
 ## Localization
 
 The Angular Report Viewer may be localized with the mechanism provided by the _HTML5 Report Viewer_ that it wraps. Details may be found in the dedicated article [Angular Report Viewer Localization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization).

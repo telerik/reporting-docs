@@ -59,9 +59,9 @@ public static class CsvExport
 }
 ```
 
-Supply a `UriReportSource` for a file-based report or an `InstanceReportSource` for an existing report instance. Set the required report source parameters before calling the helper. The returned `RenderingResult.DocumentBytes` contains the CSV document.
+Supply a `UriReportSource` for a file-based report, a `TypeReportSource` for a type definition report, or an `InstanceReportSource` for an existing report instance. Set the required report source parameters before calling the helper. The returned `RenderingResult.DocumentBytes` contains the CSV document.
 
-For comparison, set `RespectItemVisibility` to `false` to include hidden items. The setting affects CSV rendering only; it does not change the report definition or its PDF output.
+For comparison, set `RespectItemVisibility` to `false` to include hidden items. The setting affects CSV rendering only. It does not change the report definition or its PDF output.
 
 ### Distinguish Visibility, Static Text, and Headers
 

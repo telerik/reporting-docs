@@ -46,3 +46,28 @@ Select, from the Printer Settings, a [`PaperKind`](/api/telerik.reporting.drawin
 For example, the physical label printer that we tested on is "Epson-TM-T20II-M267D". It supports a few 'Roll Paper' paper kinds with a length of **3276mm**. When we select such a paper kind, usually, the long reports with `ContinuousPaper = True` are printed as expected. However, selecting a shorter paper when printing the same report may cut it when the report's height is more than the printer paper size.
 
 If the printer doesn't support long paper, you need to set the report's `ContinuousPaper` to `False` and print the document paginated, with [`PaperKind`](/api/telerik.reporting.drawing.pagesettings#Telerik_Reporting_Drawing_PageSettings_PaperKind) and [`PaperSize`](/api/telerik.reporting.drawing.pagesettings#Telerik_Reporting_Drawing_PageSettings_PaperSize) that are supported by the specific printer.
+
+## Custom EMF Printing: Narrow or Distorted Output
+
+If you render a report with `ReportProcessor.RenderReport("IMAGE", ...)` and print the EMF streams through your own `System.Drawing.Printing.PrintDocument`, distinguish the rendered page settings from the settings and drawing rectangle used by that print document. The report's `PageSettings` do not automatically configure an independently created `PrintDocument`.
+
+For example, a custom handler that calls `e.Graphics.DrawImage(pageImage, e.MarginBounds)` scales the entire rendered page into the print document's margin rectangle. Removing a `DefaultPageSettings.PaperSize` assignment does not remove this scaling. Report margins are already part of the rendered page, so fitting that page inside another set of margins can reduce the content width again. If the destination rectangle has different proportions from the rendered page, the output can also appear stretched or compressed.
+
+The roll width, report content width, and driver-reported printable width are different measurements. For example, an 80 mm report page with left and right margins of 0.08 inches has approximately 75.94 mm of content width. The printer's printable area is a separate constraint. Selecting an 80 mm paper form does not guarantee printing to both physical edges.
+
+### Compare with Telerik-Managed Printing
+
+Use `ReportProcessor.PrintReport(reportSource, printerSettings)` with valid settings for the selected printer as a comparison with the custom EMF loop. See [Print a Report Programmatically](slug:print-a-report-programmatically) for the supported API and an example.
+
+Telerik's printing implementation applies page settings from the rendered page's layout information for each page. It then draws the page image to `PageBounds`, compensating for the printer's hard margins. It does not unconditionally leave all page settings at the printer defaults.
+
+For a custom print loop, keep the rendered page dimensions, physical page settings, drawing units, and destination rectangle consistent. Do not assume that printer defaults alone perform this mapping, and do not stretch the image independently in width and height to fill a differently proportioned rectangle. Changing the paper size or replacing `MarginBounds` with `PageBounds` alone is not a complete fix unless the page geometry and hard-margin handling also agree.
+
+### Diagnose the Width and Page-Length Mismatch
+
+1. Before printing, record the number of rendered EMF streams and their physical page dimensions. If rendering already produced multiple pages, inspect the effective report page settings and width before attributing the pagination to the driver.
+1. During the print job, record the effective paper size, margins, `PageBounds`, `MarginBounds`, and `HardMarginX` and `HardMarginY` values. Compare these with the rendered page dimensions using consistent units rather than treating image pixels as physical paper dimensions.
+1. Compare the same report on the same printer through Telerik-managed printing and the custom handler. If only the custom path is narrow or distorted, investigate its page-setting and drawing calculations before changing the report layout or driver.
+1. Verify the installed printer model and driver's supported paper forms, maximum length, printable area, and cutter configuration. The 3276 mm form tested on the TM-T20II does not establish that a TM-T88IV or another model supports the same form.
+
+The [continuous-paper pagination settings](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination#print-on-continuous-roll-paper) control the rendered page's content-driven height. They do not guarantee a particular physical cut position or override the printer's capabilities. A successful test with a different printer does not, by itself, validate the custom handler's page geometry on the target device.

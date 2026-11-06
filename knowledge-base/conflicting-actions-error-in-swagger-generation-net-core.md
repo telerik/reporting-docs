@@ -35,15 +35,15 @@ There may also be a short error on the page about being unable to fetch `swagger
 
 - Error message on client-side:
 
-````text
+```text
 Fetch error
 
 response status is 500 https://localhost:{port}/swagger/v1/swagger.json
-````
+```
 
 - Server-side exception when using `Swashbuckle`:
 
-````text
+```text
 An unhandled exception has occurred while executing the request.
 
 	Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/ReportDesignerControllerBase" for actions - Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase.GetDesignerResource (Telerik.WebReportDesigner.Services),Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase.GetResource (Telerik.WebReportDesigner.Services). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
@@ -52,11 +52,11 @@ An unhandled exception has occurred while executing the request.
 		at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
 		at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
 		at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-````
+```
 
 - Server-side exception when using `NSwag`:
 
-````text
+```text
 An unhandled exception has occurred while executing the request.
 
 System.InvalidOperationException: The method 'get' on path '/api/ReportDesignerControllerBase' is registered multiple times.
@@ -67,7 +67,7 @@ System.InvalidOperationException: The method 'get' on path '/api/ReportDesignerC
 	at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
 	at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
 	at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-````
+```
 
 ## Cause
 
@@ -79,20 +79,20 @@ There are conflicting methods/paths in the [ReportsController](/api/telerik.repo
 
 Configure the following Swagger UI Generation configuration in the **Program.cs**/**Startup.cs** file of the project:
 
-````CSharp
+```CSharp
 builder.Services.AddSwaggerGen(options => {
 	options.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
 	options.IgnoreObsoleteActions();
 	options.IgnoreObsoleteProperties();
 	options.CustomSchemaIds(type => type.FullName);
 });
-````
+```
 
 ### NSwag
 
 The [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) should work normally with **NSwag**. However, if the [ReportDesignerController](/api/telerik.webreportdesigner.services.controllers.reportdesignercontrollerbase) is used, it should be ignored by the Swagger generation tool by attaching to it the `[ApiExplorerSettings(IgnoreApi = true)]` attribute:  
 
-````CSharp
+```CSharp
 [ApiExplorerSettings(IgnoreApi = true)]
 [Route("api/reportdesigner")]
 public class ReportDesignerController : ReportDesignerControllerBase
@@ -102,7 +102,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
     {
     }
 }
-````
+```
 
 ## See Also
 

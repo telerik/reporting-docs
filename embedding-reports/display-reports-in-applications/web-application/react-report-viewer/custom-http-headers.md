@@ -20,16 +20,19 @@ Set the `httpHeaders` prop to add custom headers to requests that the React Repo
 Set `headers` to a string-to-string object or a function that returns an object. The function can return a Promise. The following example retrieves a bearer token from the application's authentication service:
 
 ```JSX
+const reportSource = { report: "Report Catalog.trdp" };
+const httpHeaders = {
+    headers: async () => ({
+        "X-Tenant-Id": "tenant-42",
+        "Authorization": "Bearer " + await getAccessToken()
+    }),
+    refreshInterval: 60
+};
+
 <TelerikReportViewer
     serviceUrl="/api/reports"
-    reportSource={{ report: "Sales.trdp" }}
-    httpHeaders={{
-        headers: async () => ({
-            "X-Tenant-Id": "tenant-42",
-            "Authorization": "Bearer " + await getAccessToken()
-        }),
-        refreshInterval: 60
-    }}
+    reportSource={reportSource}
+    httpHeaders={httpHeaders}
 />
 ```
 

@@ -12,36 +12,30 @@ components: [general]
 
 # Integration with VS Code
 
-The Telerik Reporting extension lets you design and preview reports directly in Visual Studio Code without installing the Telerik Reporting MSI. You can also generate a standalone Web Report Designer application or add the Native Angular Report Viewer to an Angular application.
+The Telerik Reporting extension supports two related but different tasks in Visual Studio Code: authoring report definitions and creating application projects that use Telerik Reporting. You can design and preview reports without an application project.
 
 ## Designing Reports in VS Code
 
-Use the hosted Web Report Designer when you want to create a report, continue working with an existing report definition, or use AI-assisted report authoring. The extension starts a bundled local Reporting service for design and preview, so you do not need to create an application or configure a separate Reporting REST service first.
-
-Start with [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode) to choose between the getting-started, existing-report, AI-assisted, and configuration workflows.
+If you want to create or edit report definitions, start with [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode). This article focuses on the application workflows: generating a standalone Web Report Designer application or adding the Native Angular Report Viewer to an Angular application.
 
 ## Preparing VS Code
 
-With the Telerik Reporting extension enabled, open a folder in VS Code and trust it only if you trust its contents. The extension requires a file-system workspace; it does not activate in untrusted or virtual workspaces.
+Open a trusted file-system folder before you run an extension command. The extension starts its bundled local Reporting service when you open a report. Because preview can access local files and run data-source queries, only open reports from sources you trust. The extension does not activate in untrusted or virtual workspaces.
 
-When you open a report, the extension starts its bundled local Reporting service. The packaged service does not require a separate .NET runtime or SDK installation. Because report preview can access files and execute data-source queries, open and preview reports only from sources that you trust.
+The application workflows have different prerequisites:
 
-Requirements depend on the task:
+* Generating a standalone Web Report Designer application requires the .NET 10 SDK and access to the Telerik NuGet feed.
+* Adding the Native Angular Report Viewer requires a supported Angular project and a Reporting REST service.
 
-* Local report design and preview use the backend included with the extension. You do not need a separate Reporting REST service, application project, or .NET SDK. Configure data access if the report uses external data.
-* Creating a standalone Web Report Designer application requires the .NET 10 SDK and access to the Telerik NuGet feed.
-* AI-assisted report generation requires a valid Telerik Reporting Subscription or Trial license and a compatible language model available through Visual Studio Code.
-* The Native Angular Report Viewer workflow requires supported Angular tooling and a Reporting REST service.
-
-The extension does not replace Telerik Reporting licensing. Configure your trial or subscription license for the local backend as described in [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference#configuring-a-license).
+For local report design, data connections, or AI-assisted authoring, see [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode) and choose the matching guide.
 
 To run an extension command, open the **Command Palette** with `Ctrl`+`Shift`+`P` on Windows or Linux, or `Cmd`+`Shift`+`P` on macOS. Search for `Telerik Reporting:` and select the command.
 
 ## Creating a Web Report Designer Application
 
-The local design experience is sufficient when you want to try Reporting or make a focused report change. When you need a complete project that you can continue developing, run **Telerik Reporting: Create Project**. The command generates a separate ASP.NET Core application with a Web Report Designer page and its built-in preview.
+You do not need an application to design or preview reports in VS Code. Generate a standalone app when you want to customize its host, keep application code in its own project, or run the Web Report Designer independently. **Telerik Reporting: Create Project** generates an ASP.NET Core application with a designer page and built-in preview.
 
-The generated application is optional. You do not need it before you can create or open a report in the extension. The command creates a new .NET 10 project from the Telerik Reporting Web Report Designer template; it does not add a viewer component to an existing application. Building the generated project requires the .NET 10 SDK and access to the Telerik NuGet feed.
+The command is optional; the extension can create and preview reports without it. It creates a separate .NET 10 project from the Web Report Designer template, not a viewer inside an existing application. Building it requires the .NET 10 SDK and access to the Telerik NuGet feed.
 
 For example, to bring the getting-started report into a new application:
 
@@ -62,19 +56,21 @@ From a terminal in `MyReportingApp`, start the application:
 dotnet run
 ```
 
-Open `http://localhost:5294` to use the Web Report Designer in a browser. This application runs independently of the extension's local backend.
+Open the localhost URL shown in the terminal to use the Web Report Designer in a browser. The address can vary with the generated project's launch settings. This application runs independently of the extension's local Reporting service.
 
 If the build check fails, the generated files remain in the target folder. Select **Show Logs** to inspect the cause. Correct the SDK or NuGet access issue, then run `dotnet build` in the generated project; you do not need to generate it again.
 
 ## Adding the Native Angular Report Viewer
 
-You can also use the Angular project item generator to add the Native Angular Report Viewer to an Angular application. This workflow is separate from report design in the Web Report Designer.
+Use this generator when you want a report-viewing page inside an Angular application. It adds the Native Angular Report Viewer component. The viewer requests report documents from a Telerik Reporting REST service. You can host the service in the same solution or separately. The project item generator does not create the service or a Web Report Designer.
 
-To create an Angular application, run Angular CLI:
+If you already have an Angular application, open its folder in VS Code. To create a new application for this workflow, run Angular CLI:
 
 ```bash
 ng new ReportingAngularApp
 ```
+
+Open the new application folder in a trusted VS Code workspace before you use the project item generator.
 
 > note The Telerik CLI also includes a complete-app template for the Native Angular Report Viewer. See the [Telerik CLI article](slug:reporting-telerik-cli) for details.
 

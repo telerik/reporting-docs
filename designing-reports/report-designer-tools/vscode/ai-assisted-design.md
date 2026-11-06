@@ -12,20 +12,20 @@ components: [general]
 
 # Using AI-Assisted Report Design in VS Code
 
-Use a language model available in Visual Studio Code to generate report content in the hosted Web Report Designer. If a compatible model is available through GitHub Copilot or another provider, you do not need to configure a separate model API key in Telerik Reporting.
+Use AI-assisted design when you want to add or revise report content from a prompt in the hosted Web Report Designer. The generator works with the same report definition as manual design; it does not create a separate report format or authoring environment.
 
-AI-assisted report generation has two separate requirements:
+AI-assisted report generation requires two independent forms of access:
 
-* Telerik Reporting requires a valid Subscription or Trial license for its AI Report Generator. A GitHub Copilot or other model subscription does not replace this Reporting license.
-* The selected model provider controls model availability, authentication, usage limits, and billing. The Reporting license does not provide model access.
+* A valid Telerik Reporting Subscription or Trial license to use the AI Report Generator.
+* A model that Visual Studio Code makes available through a provider, such as GitHub Copilot. The provider manages sign-in, usage limits, and billing.
 
-For Reporting license setup, see [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference#configuring-a-license). Selecting a model does not itself require a Telerik Reporting license; the AI Report Generator checks the license when you use it.
+Neither form of access replaces the other. You do not need to configure a separate model API key in Telerik Reporting. The AI Report Generator checks the Telerik Reporting license when you generate content, not when you select a model. For license setup, see [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference#configuring-a-license).
 
 ## Understanding Model Access
 
-The extension requests chat models through the Visual Studio Code Language Model API. It offers the models returned by VS Code without filtering by vendor or family. Because the AI Report Generator sends tool definitions with its request, support for those tools can affect whether generation succeeds with a particular model and provider.
+The extension uses chat models that providers make available through Visual Studio Code. Generation also depends on whether a model supports the capabilities required by the AI Report Generator. Availability and compatibility can vary by model and provider.
 
-For example, if you use GitHub Copilot, select a model available through your Copilot plan. Usage limits and request accounting depend on that model and the terms of your plan. Other VS Code providers can use their own accounts or subscriptions, so check the provider's current authentication, quota, and billing terms rather than assuming that every provider uses the same credit system.
+For example, if you use GitHub Copilot, select a model available through your Copilot plan. Usage limits and request accounting depend on the model and the terms of your plan. Other providers can use their own accounts or subscriptions, so check their current authentication, quota, and billing terms.
 
 ## Selecting a Language Model
 
@@ -41,7 +41,7 @@ The extension stores the selection as `telerik-reporting.ai.model`. If no model 
 
 ## Generating Content for a New Report
 
-Begin with a bounded request that describes both the report items and their intended placement. For example:
+The generator works best when you describe both the report items and where they belong. A focused request also makes the result easier to compare with what you intended. For example:
 
 ```text
 Create a report header with the title "Quarterly Sales" and a subtitle for the
@@ -49,11 +49,11 @@ selected date range. Below the header, add a table with Product, Region,
 Quantity, and Revenue columns.
 ```
 
-After generation completes, check the report structure, expressions, bindings, and styles. Preview it with representative data before you save the result.
+After the generator adds the requested items, check the report structure, expressions, bindings, and styles. Preview the result with representative data before you save it.
 
 ## Extending an Existing Report
 
-When you modify an existing report, identify both the requested change and where it belongs. For example:
+When you extend an existing report, describe both the change and where it belongs in the current layout. For example:
 
 ```text
 Add an overdue-payment section below the invoice totals. Include a heading,
@@ -65,15 +65,15 @@ Treat generated content as a starting point rather than a finished report. Check
 
 ## Reviewing Data and Generated Changes
 
-The model provider receives the prompt and the report context that the AI agent sends with its request. Review the provider's terms before you use customer or production reports.
+Model access also determines where request data goes: the selected provider receives your prompt and the report context included with the request. Before using customer or production reports, check that your organization permits the provider and review its data-handling terms.
 
-Before you send a request, confirm that your organization permits the selected provider and that the supplied context does not expose credentials, personal data, or confidential business information. Always review the generated content before you save or commit it.
+Before you send a request, confirm that the supplied context does not expose credentials, personal data, or confidential business information. Always review the generated content before you save or commit it.
 
 ## Troubleshooting AI Availability
 
 If the AI command or generator is unavailable, check these requirements in order:
 
-1. Confirm that a valid Telerik Reporting Subscription or Trial license is available to the extension backend.
+1. Confirm that the Telerik Reporting license is configured as described in [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference#configuring-a-license).
 2. Confirm that VS Code exposes a chat model and that you are signed in to its provider.
 3. Check that your provider plan or organization policy permits use of the selected model.
 4. Run **Telerik Reporting: Show Logs** and review the reported error.

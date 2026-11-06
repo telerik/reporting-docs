@@ -102,20 +102,17 @@ To edit an existing group's properties, including grouping expressions, sorting,
 
 ### Page Breaks for Table Detail Rows
 
-A table can have a details group even when its rows are not grouped by a business field. The details group repeats for each data record, so row pagination belongs to that group, not to a Panel or another report item inside a table cell.
+The details group repeats for each data record. To introduce additional page breaks between rows, in the Standalone Report Designer:
 
-In the Standalone Report Designer:
-
-1. Select the Table item on the design surface, not the Panel inside its cell.
+1. Select the Table item on the design surface. If you have selected an item or a cell inside the table, click the **Escape** key until the focus changes to the table item.
 1. In the [Group Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer), locate the details group under **Row Groups**. If the table needs a details group, follow [Add a Details Group Using the Report Designer](#add-a-details-group-using-the-report-designer).
 1. Right-click the details group and select **Group Properties**.
 1. Configure the group's `PageBreak` property. Its values are `None`, `Before`, `After`, and `BeforeAndAfter`.
 
-A [Panel](slug:telerikreporting/designing-reports/report-structure/panel) organizes the controls within the cell. Its `KeepTogether` property controls whether the content stays together when possible. It does not force a page break between repeated table rows. For the distinction between explicit breaks and keep-together behavior, see [Understanding Pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination).
+The page breaks will be applied to every row except for the last.
 
-`TableGroup.PageBreak` is an enum property, and TableGroup does not expose the report-item `Bindings` collection. The binding example in [Conditional Page Breaks](slug:conditional-page-breaks) applies to a report section. Do not transfer it directly to the TableGroup property.
+> note The `TableGroup.PageBreak` is an enum property, and the `TableGroup` does not expose the report-item `Bindings` collection. The binding example in [Conditional Page Breaks](slug:conditional-page-breaks) applies to a report section. Do not transfer it directly to the TableGroup property.
 
-For a requirement such as a break after every row except the last, verify the first and last instances with the complete report in PDF or print preview. Include preceding and following content in the test. A row-group break setting alone does not establish that the report has no unwanted leading or trailing page, or that each Panel fits on one page.
 
 ### Edit the Repeat On Every Page Behavior
 

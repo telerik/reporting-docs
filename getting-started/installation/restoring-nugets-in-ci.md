@@ -36,7 +36,7 @@ Unlike your Telerik credentials, an API Key has a limited scope and can be used 
 
    ![Manage API Keys](images/account-generate-api-key.png)
 
-1. In the **Key Note** field, add a note that describes the API key.
+1. In the **Key Note** field, add a note that describes the API key. For **Key Type** select `Nuget`.
 1. Click **Generate Key**.
 1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
 1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.

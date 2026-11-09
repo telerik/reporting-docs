@@ -19,7 +19,7 @@ res_type: kb
 
 ## Description
 
-When you add a global `AutoValidateAntiforgeryTokenAttribute` filter in `Startup.cs`, the HTML5 Report Viewer cannot register its client. The report does not load because the viewer sends requests to the Telerik Reporting REST service without the antiforgery token expected by the global filter.
+When you add a global `AutoValidateAntiforgeryTokenAttribute` filter in `Startup.cs`, the HTML5 Report Viewer cannot register its client. The report does not load because the viewer sends requests to the Telerik Reporting REST service without the antiforgery token in the header expected by the global filter.
 
 ## Error Messages
 
@@ -74,7 +74,7 @@ Uncaught (in promise) Invalid clientID
 
 ## Cause
 
-The global `AutoValidateAntiforgeryTokenAttribute` filter also validates requests handled by `ReportsController`. The Telerik Reporting REST service does not receive the token in the format required by that filter, so the `Register Client` request fails.
+The global `AutoValidateAntiforgeryTokenAttribute` filter also validates requests handled by `ReportsController`. The sample adds the token in the `__RequestVerificationToken` header, while ASP.NET Core expects the `RequestVerificationToken` header by default. Unless you configure ASP.NET Core to use the custom header name, the `Register Client` request fails because the filter cannot find the token in the expected header.
 
 ## Solution
 

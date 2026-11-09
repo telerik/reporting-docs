@@ -9,9 +9,11 @@ tags: licensing, reporting, license-key, watermark, aspnet, webforms, telerik-re
 res_type: kb
 ticketid: 1704846
 ---
-<style> img[alt$="><"] { border: 1px solid lightgrey; } </style>
+<style> img[alt^="Location of the TelerikLicense"] { border: 1px solid lightgrey; } </style>
 
 ## Environment
+
+The article applies to the following environment:
 
 | Property | Value |
 |---|---|

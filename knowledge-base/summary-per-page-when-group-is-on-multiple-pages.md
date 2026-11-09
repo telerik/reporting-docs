@@ -1,6 +1,6 @@
 ---
 title: How to Create a "Summary Per Page" When a Group is Printed on Multiple Pages
-description: Learn how to display a running page aggregate at the beginning and at the end of each page a group is printed on.
+description: Learn how to display running group totals in Telerik Reporting page headers and footers when a group spans multiple report pages.
 type: how-to
 page_title: Creating a "Summary Per Page" When a Group is Printed on More Than One Page
 slug: summary-per-page-when-group-is-on-multiple-pages
@@ -23,19 +23,19 @@ res_type: kb
 
 ## Description
 
-For clarity, I will explain the requirement in a particular context, as requested by a user.
+When a report lists account movements, one account can span multiple printed pages. You can display the running credit and debit totals in the page header and footer to help readers follow the account across pages.
 
-When generating a report that displays the list of movements for a list of accounts, it's possible (and quite frequent) for a single account to require multiple pages for printing. In order to help the users understand what they are seeing and potentially quickly find errors in their external documents (for instance, bank statements), it is convenient to print on the bottom of each page the total credit, and debit amount up to this point in the printout. The above should only be displayed when a group is printed on multiple pages and the current one is not the last page.
-
-Here is how this can be done with Telerik Reporting.
+The totals appear only when the account continues from the previous page or onto the next page.
 
 ## Solution
 
-Next, you may find two [custom user aggregate functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions) that can be used to accomplish the requirement.
+The following two [custom user aggregate functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions) implement this behavior.
 
-The fields in the classes need to be static because for each page we create a new instance of the aggregate and we need to preserve the data from all pages. On the other hand, the fields are marked with _[ThreadStatic]_ so that if two report renderings occur simultaneously (like in a web application) they do not interfere.
+The aggregate instances use static fields to preserve data across pages. The fields use `ThreadStatic` so simultaneous report renderings, such as those in a web application, do not share state across threads.
 
-The first aggregate is for the Page Footer:
+The examples assume that `Fields.account` is a string and `Fields.value` is a decimal. Replace the section names and fields with the names used in your report.
+
+The first aggregate is for the page footer:
 
 ```C#
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
@@ -84,9 +84,9 @@ class PageFooterSumUntilNow : IAggregateFunction
 }
 ```
 
-The aggregate _PageFooterSumUntilNow_ accumulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to the current point, which is the end of the group or the end of the current page when the group finishes on the current page.
+The `PageFooterSumUntilNow` aggregate accumulates the first argument within the group identified by the second argument. It includes data through the end of the group or the current page when the group continues to another page.
 
-The second custom aggregate is for the [Page Header](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections):
+The second custom aggregate is for the [page header](slug:telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections):
 
 ```C#
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageHeaderSumFromPrevPage")]
@@ -168,13 +168,13 @@ class PageHeaderSumFromPrevPage : IAggregateFunction
 }
 ```
 
-The aggregate _PageHeaderSumFromPrevPage_ accumulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to the end of the previous page. The current page is provided as the third argument.
+The `PageHeaderSumFromPrevPage` aggregate accumulates the first argument within the group identified by the second argument through the end of the previous page. The third argument provides the current page number.
 
-The idea derives from the page footer aggregate, but we take into account that the accumulation of the current page's data needs to be postponed after the current page hence we need the page number to be passed as well.
+This aggregate postpones accumulation of the current page's data, so it also requires the page number.
 
-The Page Header aggregate may be used only in a page section as it requires the PageNumber that is available only there.
+Use the page header aggregate only in a page section because `PageNumber` is available only there.
 
-For example, in the following [Expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) inside the Page Header section:
+Use the following [expression](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview) in the page header:
 
 ```TEXT
 = IIf(
@@ -184,11 +184,11 @@ PageExec("detailSection1", PageHeaderSumFromPrevPage(Fields.value, Fields.accoun
 "")
 ```
 
-The Expression checks whether the first 'account' value in the detail section scope is different from the first one in the group header scope on the same page, and if so, types the message that the account continues from the previous page and the corresponding accumulated sum.
+The expression compares the first `account` value in the detail-section scope with the first value in the group-header scope on the same page. When the values differ, it displays a message that the account continues from the previous page and shows the accumulated sum.
 
-> The message will be displayed also when there is no group header for the page, i.e. when the same account continues from the previous and also on the next page.
+>note The message also appears when the page has no group header, that is, when the same account continues from the previous page and onto the next page.
 
-Here is also the Expression for the Page Footer:
+Use the following expression in the page footer:
 
 ```TEXT
 = IIf(
@@ -198,23 +198,23 @@ PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account)))
 "")
 ```
 
-This expression compares the last 'account' values for the detail and the group footer scopes on the same page and types the message that the account continues on the next page and the accumulated sum when they differ, or there is no group footer on the page.
+This expression compares the last `account` values in the detail and group-footer scopes on the same page. When they differ, or when the page has no group footer, it displays a message that the account continues on the next page and shows the accumulated sum.
 
-A sample report definition and a ClassLibrary project with the custom aggregate functions demonstrating the approach may be found in our reporting samples GitHub repo - [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).
+A sample report definition and a `ClassLibrary` project with the custom aggregate functions are available in the reporting samples GitHub repository: [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).
 
 ## Important Notes
 
-The fact that the main variables that accumulate the result and the transitional values are thread static imposes the following limitations:
+The static fields that store the totals and transitional values impose the following limitations:
 
-1. The Custom Aggregates should be used only once in the same Report. If they are used more than once, the values will be aggregated from one call to another and the final outcomes will be incorrect. If you need to use twice or more any of the functions, you need to copy their content under a different name and use the function with a different name in the report.
+1. Use each custom aggregate only once in a report. If you use an aggregate more than once, values from separate calls are combined and the results are incorrect. To use an aggregate more than once, copy its implementation under a different name and use the new name in the report.
 
-1. The fact that the variables are static for the thread may not suffice in some scenarios utilizing the Reporting REST Service.
+1. Thread-static fields may not be sufficient in some scenarios that use the Reporting REST Service.
 
-	For example, when the report is refreshed from the Html5 Viewer, it may be rendered in the same thread as before.
+	For example, the HTML5 Viewer can refresh a report on the same thread as an earlier rendering.
 
-	In this case, the aggregated values are carried over from the first to the second report. That said, the values from the previous rendering are carried over to the next rendering. To overcome this, you need to modify the logic of the functions. For example, when the report is a new one, you may reset the static values.
+	In this case, the aggregate values carry over to the next report. Modify the functions to reset the static values when a new report starts.
 
-	The particular workaround we suggest is to pass the **ReportDefinition** [Global Object](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that is unique for each report generation as another argument of the functions and use it as an indicator that we are in a new report rendering. Here is a sample code with the changes suggested for the _PageHeaderSumFromPrevPage_ function:
+	The following workaround passes the [`ReportDefinition` global object](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) as another function argument and uses it to detect a new report rendering. The sample shows the changes for the `PageHeaderSumFromPrevPage` function:
 
 	```C#
 	//...
@@ -222,6 +222,7 @@ The fact that the main variables that accumulate the result and the transitional
 	{
 		result = 0;
 		currentPage = -1;
+		currentGroupByValue = null;
 		if (currentPageValues != null)
 		{
 		currentPageValues.Clear();
@@ -254,17 +255,17 @@ The fact that the main variables that accumulate the result and the transitional
 	}
 	```
 
-	The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument.
+	Use the same expression pattern, and add `ReportDefinition` as the last argument. Declare `processingOperationId` as a thread-static field in the class, alongside the other state fields.
 
-1. If you use the [Page Function](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) **PageCount** in the report along with our custom page footer function, the totals may be wrong.
+1. If you use the [page functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) `PageCount` in the report with the custom page footer function, the totals may be wrong.
 
-	The reason for this is the additional pass through the report pages that our algorithm makes when it is necessary to display the total pages per report.
+	The report makes an additional pass through the pages when it needs to display the total page count.
 
-	That said, the overall total gets accumulated during the additional pass, and in the final report, this becomes the starting value for accumulation.
+	The additional pass accumulates the overall total. The final report then uses that value as the starting point for accumulation.
 
-	The workaround for this is through passing the _PageNumber_. We need to store it in another static field. When the incoming page numbers become lower than the stored static page number in the function, we need to reset the result as this indicates that we start with the second pass after the page count has been estimated.
+	Pass `PageNumber` to the function and store it in another static field. When an incoming page number is lower than the stored page number, reset the result because the page-count pass has started again.
 
-	Here is the updated code of the function:
+	Use the following updated function:
 
 	```C#
 	[AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
@@ -339,9 +340,9 @@ The fact that the main variables that accumulate the result and the transitional
 	}
 	```
 
-	The problem in this approach would be when there is only one (1) page in the report, for example in the Interactive view. In this case, the condition (currentPage > page) won't be met, hence we need to define a separate result for this case.
+	This approach has a problem when the report has only one page, such as in the interactive view. The `currentPage > page` condition is not met, so define a separate result for this case.
 
-	The result for a single page though can be taken with the built-in function PageExec. Here is a new sample Expression:
+	Use the built-in `PageExec` function to get the result for a single page:
 
 	```TEXT
 	= IIF(PageCount = 1, PageExec("detailSection1", Sum(CDbl(Fields.value))),
@@ -353,11 +354,11 @@ The fact that the main variables that accumulate the result and the transitional
 		)
 	```
 
-	The same problem may occur also with the function _PageHeaderSumFromPrevPage_, for example, when the report has only one group.
+	The same problem can occur with the `PageHeaderSumFromPrevPage` function, such as when the report has only one group.
 
-	The reason for this would be that the _result_ is reset only when the group changes. To overcome this, we may apply the same approach.
+	The `result` field resets only when the group changes. Apply the same approach to reset it when the page-count pass starts.
 
-	Here is the needed modification in the Accumulate method of the implementation:
+	Apply the following modification to the `Accumulate` method:
 
 	```C#
 	//...
@@ -379,4 +380,4 @@ The fact that the main variables that accumulate the result and the transitional
 
 ## See Also
 
-- [Sample Report](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page)
+- [Summary per page sample report](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page)

@@ -43,5 +43,5 @@ In this scenario, add a reference to `Telerik.Reporting.dll` in the startup proj
 
 ## See Also
 
-* [Telerik Reporting license key setup](https://docs.telerik.com/reporting/licensing/setting-up-your-telerik-reporting-license-key)
+* [Telerik Reporting license key setup]({%slug license-key%})
 * [SDK-style project structure](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview)

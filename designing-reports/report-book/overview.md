@@ -26,7 +26,7 @@ Use a ReportBook when you need to:
 
 ## What Is a ReportBook
 
-The `Telerik.Reporting.ReportBook` class exposes a `ReportSources` collection for the reports in the book. Add TRDX or TRDP files with a `UriReportSource`. Add report classes that inherit from `Telerik.Reporting.Report` with a `TypeReportSource`. The Reporting engine processes each report according to its report source.
+The `Telerik.Reporting.ReportBook` class exposes a `ReportSources` collection for the reports in the book. Add TRDP, TRDX, or TRBP files with a `UriReportSource`. Add report classes that inherit from `Telerik.Reporting.Report` with a `TypeReportSource`. The Reporting engine processes each report according to its report source.
 
 >important Do not use `InstanceReportSource` or `XMLReportSource` with a ReportBook.
 

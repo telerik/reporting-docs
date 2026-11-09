@@ -47,6 +47,17 @@ Use the configuration that matches your target framework:
   </asmv1:assembly>
   ```
 
+  For .NET Framework 4.6 and later, also set
+  `EnableWindowsFormsHighDpiAutoResizing` to `true` in `app.config`.
+
+  ```XML
+  <configuration>
+    <runtime>
+      <AppContextSwitchOverrides value="Switch.System.Windows.Forms.EnableWindowsFormsHighDpiAutoResizing=true" />
+    </runtime>
+  </configuration>
+  ```
+
 * Modern .NET:
 
   Set the `ApplicationHighDpiMode` project property to `PerMonitorV2`:
@@ -61,6 +72,22 @@ Use the configuration that matches your target framework:
 
   ```C#
   Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+  ```
+
+  If you manage the manifest manually, include the Windows 10 compatibility
+  declaration and the following DPI setting:
+
+  ```XML
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
+    </windowsSettings>
+  </application>
   ```
 
   Modern .NET Windows Forms projects normally generate the required application

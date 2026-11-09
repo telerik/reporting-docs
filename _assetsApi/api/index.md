@@ -134,7 +134,7 @@ The following tables list the most used members of the different libraries.
 		<tr>
 			<td><a href="/reporting/api/Telerik.Reporting.Processing">Telerik.Reporting.Processing</a></td>
 			<td><a href="/reporting/api/Telerik.Reporting.Processing.ReportProcessor">ReportProcessor</a></td>
-			<td>The Reporting Engine class. Use to export and print reports programmatically</td>
+			<td>The embedded Reporting engine class for rendering and printing reports programmatically.</td>
 		</tr>
 	</tbody>
 </table>

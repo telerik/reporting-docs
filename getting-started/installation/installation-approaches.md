@@ -11,11 +11,11 @@ reportingArea: General
 components: [general]
 ---
 
-# Installation Approaches for Telerik Reporting
+# Installation Approaches
 
-Telerik Reporting supports three installation approaches: the [Control Panel](#using-the-control-panel), the [Microsoft Installer (MSI) package](#using-the-msi-file), and [NuGet packages](#using-nuget-packages). Choose the approach based on whether you need design-time support and how you plan to manage the installation in your workflow.
+Telerik Reporting supports three installation approaches: the [Control Panel](#using-the-control-panel), the [Microsoft Installer (MSI) package](#using-the-msi-file), and [NuGet packages](#using-nuget-packages). Choose an approach based on whether you need design-time support and how you plan to manage installation in your workflow.
 
-> note After installing the product, you need to [download and activate your Telerik Reporting License Key](slug:license-key).
+>note After installing the product, you need to [download and activate your Telerik Reporting License Key](slug:license-key).
 
 Use this table to choose the approach that fits your workflow:
 
@@ -23,7 +23,7 @@ Use this table to choose the approach that fits your workflow:
 | :---------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------ |
 | [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                | Yes                 |
 | [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer. | Yes                 |
-| [NuGet packages](#using-nuget-packages)   | Adding Telerik Reporting to an existing project or automating installation in a continuous integration and continuous delivery or deployment (CI/CD) pipeline. | No                  |
+| [NuGet packages](#using-nuget-packages)   | Adding current Telerik Reporting packages to an existing project or automating installation in a continuous integration and continuous delivery (CI/CD) pipeline. | No                  |
 
 ## Using the Control Panel
 
@@ -39,16 +39,12 @@ The MSI installation wizard installs the product by default in the `C:\Program F
 
 The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine's Global Assembly Cache (GAC) for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
 
-### Specifics
-
 During the MSI installation process, note the following:
 
-- For Telerik Reporting versions earlier than R3 2017, the default installation paths were `C:\Program Files\Telerik\` and `C:\Program Files (x86)\Telerik\`.
-- The latest package available for download has all updates and hotfixes applied. You do not need to update it further after installation.
-- The MSI installation does not overwrite previous Telerik Reporting installations unless the new installation is the same version. The installer keeps your existing installation and places new files in a separate folder.
-- The **Downloads** page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [**General Feedback**](https://www.telerik.com/account/support-tickets/general-feedback) thread.
-
-### MSI Installation
+* For Telerik Reporting versions earlier than R3 2017, the default installation paths were `C:\Program Files\Telerik\` and `C:\Program Files (x86)\Telerik\`.
+* The latest package available for download has all updates and hotfixes applied. You do not need to update it further after installation.
+* The MSI installation does not overwrite previous Telerik Reporting installations unless the new installation is the same version. The installer keeps your existing installation and places new files in a separate folder.
+* The **Downloads** page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [**General Feedback**](https://www.telerik.com/account/support-tickets/general-feedback) thread.
 
 To install Telerik Reporting through the MSI automatic installer file:
 
@@ -59,16 +55,16 @@ To install Telerik Reporting through the MSI automatic installer file:
    ![The Welcome Page of the Telerik Reporting Installation Wizard](images/installWizard1.png)
 
 1. In the dialog that opens, select the features you require.
-   - If Telerik Reporting does not locate a local Microsoft SQL Server instance (SQL stands for Structured Query Language), or if the SQL Server Browser Service is stopped, the **Examples** dialog option installs the examples, but the application configuration files do not contain valid connection strings. You can still access working demos on the [Telerik Reporting demos page](https://demos.telerik.com/reporting).
-   - To set up the examples with a valid connection string, select **Examples Setup**. All local SQL Server 2005 and later instances are supported.
-   - The examples require the Microsoft SQL Server [AdventureWorks database](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)). If the database is not already available on your machine, the wizard deploys it locally.
-   - To install the AdventureWorks online transaction processing (OLTP) database manually from the SQL script in the installer, navigate to `[InstallDir]/Examples/Data/AdventureWorks OLTP`. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the comma-separated values (CSV) data files in the same folder.
+   * If Telerik Reporting does not locate a local Microsoft SQL Server instance (SQL stands for Structured Query Language), or if the SQL Server Browser Service is stopped, the **Examples** dialog option installs the examples, but the application configuration files do not contain valid connection strings. You can still access working demos on the [Telerik Reporting demos page](https://demos.telerik.com/reporting).
+   * To set up the examples with a valid connection string, select **Examples Setup**. All local SQL Server 2005 and later instances are supported.
+   * The examples require the Microsoft SQL Server [AdventureWorks database](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)). If the database is not already available on your machine, the wizard deploys it locally.
+   * To install the AdventureWorks online transaction processing (OLTP) database manually from the SQL script in the installer, navigate to `[InstallDir]/Examples/Data/AdventureWorks OLTP`. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the comma-separated values (CSV) data files in the same folder.
 
    ![The Configuration Page of the Telerik Reporting Installation Wizard](images/installWizard2.png)
 
 1. (If **Examples Setup** was selected) In the **Setup Wizard** dialog, select your **Database Server** and the authentication for the connection. The Wizard detects all running instances and lists them in the input field.
 
-   > note To enable the wizard to detect all running SQL Server instances, start the [SQL Server Browser Service](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)).
+   >note To enable the wizard to detect all running SQL Server instances, start the [SQL Server Browser Service](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)).
 
    ![The Setup Page for the Samples Database of the Telerik Reporting Installation Wizard](images/installWizard3.png)
 
@@ -80,16 +76,18 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 You can add Telerik Reporting to a project by installing NuGet packages from [NuGet.org](https://www.nuget.org/) or the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting Representational State Transfer (REST) service based on ASP.NET Web API (Application Programming Interface)](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
 
-> note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
+For current Telerik Reporting releases, use [NuGet.org](https://www.nuget.org/), which Visual Studio and the .NET CLI use by default. Use the Telerik NuGet server for older releases or when your organization requires the private feed.
+
+>note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
 
 Use one of the following installation paths for NuGet packages:
 
-- [Install Telerik Reporting from NuGet.org](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-telerik-reporting-from-nuget-org)
-- [Install Telerik Reporting from the Telerik NuGet server](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server)
-- [Install Telerik Reporting from a local NuGet feed](slug:setup-local-nuget-feed)
+* [Install Telerik Reporting from NuGet.org](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-telerik-reporting-from-nuget-org)
+* [Install Telerik Reporting from the Telerik NuGet server](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages#how-to-install-from-the-telerik-nuget-server)
+* [Install Telerik Reporting from a local NuGet feed](slug:setup-local-nuget-feed)
 
 ## See Also
 
-- [Install Telerik Reporting with NuGet Packages](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
-- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)
-- [Troubleshooting Telerik NuGet](slug:troubleshooting-nuget)
+* [Install Telerik Reporting with NuGet Packages](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages)
+* [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)
+* [Troubleshooting Telerik NuGet](slug:troubleshooting-nuget)

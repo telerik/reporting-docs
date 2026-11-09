@@ -17,7 +17,7 @@ img[alt$="><"] {
 
 </style>
 
-# The Basic Structure of a Report
+# Report Structure
 
 Each report consists of sections that divide the report vertically and [report items](#report-items) that you place in each section. A report section represents a specific area on the report page and defines what items can be placed in that area and how these items will appear.
 
@@ -54,7 +54,7 @@ The Detail section is where you place the report items that constitute the main 
 
 ## Report Items
 
-[Report items](slug:web-report-designer-user-guide-components) are the individual elements or components that make up a report. They display various types of report data, such as barcodes, charts, tables, and so on. A sales report, for example, may contain the following items:
+[Report items](slug:user-guide/components/report-items) are the individual elements or components that make up a report. They display various types of report data, such as barcodes, charts, tables, and so on. A sales report, for example, may contain the following items:
 
 * Text boxes displaying the report title, date, and other descriptive information.
 * Images representing the company logo or brands.
@@ -78,7 +78,7 @@ Use the report header to place information typical for a cover page, such as log
 Use the report footer to print report totals or other summary information for the entire report. The Report Footer section is printed once at the end of the report:
 
 * If you place a Page Footer on the last page, the Report Footer will appear before it.
-* If the report has a TOC section, you can place it before or after the Report Header.
+* If the report has a TOC section, you can place it before or after the Report Footer.
 
 ## Report Groups
 

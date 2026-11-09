@@ -11,22 +11,22 @@ reportingArea: General
 components: [general]
 ---
 
-# Visual Studio Report Designer Overview
-
->note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting [2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
+# Overview
 
 The Visual Studio Report Designer edits coded report definitions in Visual Studio. Telerik Reporting provides two designer implementations with different installation and user interface workflows:
 
-* **Visual Studio Report Designer for .NET** uses the `Telerik.Reporting.VSDesigner` NuGet package to edit C# and VB reports in SDK-style projects. It runs in a separate process.
-* **Visual Studio Report Designer for .NET Framework** uses the installed Telerik Reporting Visual Studio extension to edit C# and VB reports in .NET Framework projects.
+>note The Visual Studio Report Designer for .NET is available as a preview starting with Telerik Reporting [2026 Q3 (20.2.26.1007)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-1007)).
+
+* **Visual Studio Report Designer for .NET** uses the `Telerik.Reporting.VSDesigner` NuGet package to edit C# and VB.NET reports in SDK-style projects. It runs in a separate process.
+* **Visual Studio Report Designer for .NET Framework** uses the installed Telerik Reporting Visual Studio extension to edit C# and VB.NET reports in .NET Framework projects.
 
 See [Structure of the Visual Studio Report Designer](slug:visual-studio-report-designer-structure#comparing-the-designers) for the feature and workflow differences.
 
 ## Designing Coded Reports for .NET
 
-Start with the [bundled sample](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample). Extract the complete bundle, open and build its solution, then open `SampleReport.cs` with **View Designer**. No installer or feed registration is required for the sample.
+Start with the [bundled sample](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample). Review the [prerequisites](slug:vs-report-designer-net-getting-started#prerequisites) and [set up your Telerik Reporting license key](slug:license-key). Extract the complete bundle, open and build its solution, then open `SampleReport.cs` with **View Designer**. No installer or feed registration is required for the sample.
 
-For your own C# or VB reports, [configure an existing report project](slug:vs-report-designer-net-getting-started#configuring-your-report-project) with the required package references and project settings.
+For your own C# or VB.NET reports, [configure an existing report project](slug:vs-report-designer-net-getting-started#configuring-your-report-project) with the required package references and project settings.
 
 The Standalone Report Designer for .NET is an alternative outside Visual Studio. Starting with [Telerik Reporting 2025 Q3](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q3-19-2-25-813), it supports coded C# report definitions.
 
@@ -40,9 +40,9 @@ Both designers require Windows, but use different installation workflows.
 
 Reference the `Telerik.Reporting.VSDesigner` NuGet package, which depends on the same-version `Telerik.Reporting` package. NuGet restores that dependency automatically. The designer version follows your project's package reference, not the most recent Reporting installation.
 
-The setup requires Visual Studio 2026 version 18.10 or later, the **.NET desktop development** workload, and `net8.0-windows` or later with `UseWindowsForms=true`. The bundled sample targets `net10.0-windows`.
+The setup requires Visual Studio 2026 version 18.10 or later, the **.NET desktop development** workload, and `net8.0-windows` or later with `UseWindowsForms=true`. Install the .NET Desktop Runtime for the target framework. The bundled sample targets `net10.0-windows` and requires the .NET 10 SDK and Desktop Runtime.
 
-Follow the [bundle quick-start](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample) to open the prepared sample. Its `nuget.config` maps the designer to the bundle root and all other packages to nuget.org. The optional installer registers a permanent designer feed for your other projects; it does not modify or build the sample.
+Follow the [bundle quick-start](slug:vs-report-designer-net-getting-started#trying-the-bundled-sample) to open the prepared sample. Its `nuget.config` maps the designer to the bundle root and all other packages to nuget.org. The optional installer registers a permanent designer feed for your other projects. It does not modify or build the sample.
 
 ### Installing the .NET Framework Designer
 
@@ -62,11 +62,11 @@ The following template and import procedures apply to the **.NET Framework desig
 
 Create a new report through the Telerik Reporting Visual Studio Item Template:
 
-1. Right-click over the project you want to add the new Report type to. We recommend the ReportLibrary or ClassLibrary project types. Select **Add > New Item...** from the context menu:
+1. Right-click the project where you want to add the report type. We recommend the ReportLibrary or ClassLibrary project types. Select **Add > New Item...** from the context menu:
 
 	![Add new item to a ReportLibrary project in Visual Studio.](images/AddNewReportVSDesigner.png)
 
-1. From the popped-up `Add New Item` Wizard, select the `Installed` > `C# Items` (for C# projects) or `Common Items` (for VB projects) > `Reporting` section. It gives you three choices:
+1. In the `Add New Item` wizard, select the `Installed` > `C# Items` (for C# projects) or `Common Items` (for VB.NET projects) > `Reporting` section. The wizard provides three choices:
 
 	![Select Blank Telerik Report from the Reporting submenu in Add New Item wizard of Visual Studio.](images/SelectBlankTelerikReport.png)
 
@@ -81,11 +81,11 @@ Create a new report through the Telerik Reporting Visual Studio Item Template:
 
 		![Select a report template for your new Telerik Report in Visual Studio.](images/ChooseReportTemplateVSDesigner.png)
 
-1. (optional) If the _Security Warning_ window pops up, click `Trust` to let the Visual Studio Report Designer create/open the selected report definition:
+1. (Optional) If the _Security Warning_ window pops up, click `Trust` to let the Visual Studio Report Designer create/open the selected report definition:
 
 	![Security Warning window in Visual Studio.](images/SecurityWarningVSDesigner.png)
 
-### Opening Existing C#/VB Reports in the Designer
+### Opening Existing C#/VB.NET Reports in the Designer
 
 In a .NET Framework project, double-click the report type in [Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022), or right-click it and select **View Designer**.
 
@@ -126,7 +126,7 @@ For details about each element and supported layout aids, see [Structure of the 
 
 ## Working with Code
 
-All Telerik Reporting CS/VB reports, for example, _ReportName.cs_ inherit from the base [Telerik.Reporting.Report](/api/telerik.reporting.report) type. The Visual Studio Report Designer generates automatically the code in the `InitializeComponent` method of the _ReportName_ type that resides in the `ReportName.designer.cs` file. It is a special method recognized and parsed by the Report Designer to display the report in design time.
+All Telerik Reporting C# and VB.NET reports, for example, _ReportName.cs_, inherit from the base [Telerik.Reporting.Report](/api/telerik.reporting.report) type. The Visual Studio Report Designer automatically generates the code in the `InitializeComponent` method of the _ReportName_ type. The method resides in the `ReportName.designer.cs` file and is recognized and parsed by the Report Designer to display the report at design time.
 
 Add custom code to the _ReportName_ type in the `ReportName.cs` file, which contains by default only the parameterless constructor of the _ReportName_ type. For example, add [Report Event Handlers](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events) and similar customizations.
 

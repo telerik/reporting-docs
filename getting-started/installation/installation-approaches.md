@@ -23,7 +23,7 @@ Use this table to choose the approach that fits your workflow:
 | :---------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------ |
 | [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                | Yes                 |
 | [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer. | Yes                 |
-| [NuGet packages](#using-nuget-packages)   | Adding Telerik Reporting to an existing project or automating installation in a continuous integration and continuous delivery or deployment (CI/CD) pipeline. | No                  |
+| [NuGet packages](#using-nuget-packages)   | Adding Telerik Reporting to an existing project or automating installation in a continuous integration and continuous delivery (CI/CD) pipeline. | No                  |
 
 ## Using the Control Panel
 

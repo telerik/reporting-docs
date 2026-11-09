@@ -1,7 +1,7 @@
 ---
 title: FAQs
 page_title: "Frequently Asked Questions about Telerik Reporting Licensing."
-description: "Learn the answers to the most Frequently Asked Questions about the Telerik Reporting License Key required after the 2025 Q1 (19.0.25.211) release."
+description: "Find answers about Telerik Reporting license keys, including expiration, activation, CI/CD use, source control, and earlier product versions."
 slug: license-frequently-asked-questions
 tags: license, telerik, reporting, faq, questions
 published: True
@@ -10,7 +10,7 @@ reportingArea: General
 components: [general]
 ---
 
-# Frequently Asked Questions
+# FAQs
 
 This article lists the answers to the most frequently asked questions (FAQs) about working with the Telerik Reporting license key.
 
@@ -18,8 +18,8 @@ This article lists the answers to the most frequently asked questions (FAQs) abo
 
 Yes, the license key expires at the end of your support subscription:
 
-- For trial users, this is at the end of your 30-day trial.
-- For commercial license holders, this is when your subscription term expires.
+* For trial users, this is at the end of your 30-day trial.
+* For commercial license holders, this is when your subscription term expires.
 
 You will need to obtain and install a new license key after starting a trial, renewing a license, or upgrading a license.
 
@@ -29,14 +29,14 @@ You will need to obtain and install a new license key after starting a trial, re
 
 This depends on the Telerik Reporting [license type (perpetual, subscription, or trial)](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing):
 
-- _Perpetual licenses_ function normally with an expired license key, as long as the application is using a Telerik Reporting version that was released before the expiration date of the license.
-- _Subscription licenses_ function normally in already deployed applications, but you cannot rebuild and republish the app.
-- _Trial licenses_ function normally only within the 30-day trial period.
+* _Perpetual licenses_ function normally with an expired license key, as long as the application is using a Telerik Reporting version that was released before the expiration date of the license.
+* _Subscription licenses_ function normally in already deployed applications, but you cannot rebuild and republish the app.
+* _Trial licenses_ function normally only within the 30-day trial period.
 
 If none of the above conditions are met, the following behaviors occur:
 
-- A watermark appears on each report document page.
-- A [warning message](slug:license-errors-and-warnings) appears in the application's build log.
+* A watermark appears on each report document page.
+* A [warning message](slug:license-errors-and-warnings) appears in the application's build log.
 
 ## I updated the version of the Telerik Reporting packages in my project and the invalid license errors have appeared. What is the cause of this behavior?
 
@@ -47,9 +47,9 @@ The most likely cause is that the newly installed Telerik Reporting was released
 
 ## Can I use the same license key in multiple builds?
 
-You can use your personal license key in multiple pipelines, builds, and environments.
+Use a deployment key for CI/CD environments. Deployment keys are tied to a specific application and the products that the application uses.
 
-However, each individual developer must use a unique personal license key.
+You can use your personal license key for development on your local machine.
 
 ## Do I need an Internet connection to activate the license?
 
@@ -59,9 +59,9 @@ No, the license activation and validation are performed entirely offline.
 
 No, you do not have to add the `telerik-license.txt` license key file or its contents to source control.
 
-Build servers must use the `TELERIK_LICENSE` environment variable described in [Adding the License Key to CI Services](slug:license-key-ci-services).
+For CI/CD environments, you can use the `TELERIK_LICENSE` environment variable described in [Adding the License Key to CI Services](slug:license-key-ci-services).
 
-> Do not store the license key in plaintext, for example, in a GitHub Actions Workflow definition.
+>important Do not store the license key in plaintext, for example, in a GitHub Actions workflow definition.
 
 ## What happens if both the environment variable and the license key file are present?
 
@@ -71,12 +71,14 @@ To enforce the use of the license key file, unset the environment variable.
 
 ## My team has more than one license holder. Which key do we have to use?
 
+Use the following keys:
+
 * To activate Telerik Reporting on your development machine, use the key associated with your personal account.
-* To activate Telerik Reporting in a CI/CD environment, use any of the license keys in your team.
+* To activate Telerik Reporting in a CI/CD environment, use a deployment key for the application.
 
 ## Are earlier versions of Telerik Reporting affected?
 
-No, versions released prior to January 2025 do not require a license key.
+No, versions released before 2025 Q1 do not require license-key activation.
 
 ## What happens if I make a change to non-Telerik parts of the code after the subscription expires?
 

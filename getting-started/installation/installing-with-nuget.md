@@ -19,8 +19,8 @@ This article explains how to install Telerik Reporting with NuGet packages, choo
 
 Use one of the following installation paths:
 
-- [Install Telerik Reporting from NuGet.org](#installing-telerik-reporting-from-nuget-org)
-- [Install Telerik Reporting from the Telerik NuGet server](#installing-from-the-telerik-nuget-server)
+- [Install Telerik Reporting from NuGet.org](#how-to-install-telerik-reporting-from-nugetorg)
+- [Install Telerik Reporting from the Telerik NuGet server](#how-to-install-from-the-telerik-nuget-server)
 - [Install Telerik Reporting from a local NuGet feed](slug:setup-local-nuget-feed)
 
 ## Choosing the Right NuGet Installation Path
@@ -31,7 +31,7 @@ Use a [local NuGet feed](slug:setup-local-nuget-feed) for offline installation, 
 
 Use the **Telerik NuGet server** for older package versions or when your organization requires the Telerik private feed.
 
-## Installing Telerik Reporting from NuGet.org
+## How to Install Telerik Reporting from NuGet.org
 
 Starting with the **2026 Q3** release, Telerik Reporting packages are available on [NuGet.org package hosting](https://www.nuget.org/). This is the recommended source for new development.
 
@@ -58,7 +58,7 @@ Use the Visual Studio Package Manager Console for PowerShell-based package comma
 Install-Package Telerik.Reporting
 ```
 
-## Installing from the Telerik NuGet Server
+## How to Install from the Telerik NuGet Server
 
 >important Starting with the **2026 Q3** release, NuGet.org is the recommended source for current Telerik Reporting packages. Use the Telerik NuGet server for older releases or when your organization requires the private feed.
 

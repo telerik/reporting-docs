@@ -25,7 +25,7 @@ The HTML template file is a page that contains HTML document fragments nested in
 
 The widget loads the templates during initialization. This asynchronous network operation sends an `HTTP GET` request for the template HTML and can take an unpredictable amount of time. The widget is not functional until the template loads successfully.
 
-To determine when the report viewer is loaded, provide an event handler for the `telerik_ReportViewer` widget's [the `ready()` event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#ready):
+To determine when the report viewer is loaded, provide an event handler for the `telerik_ReportViewer` widget's [ready() event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#ready):
 
 {{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerCustomTemplateReadyEvent}}
 

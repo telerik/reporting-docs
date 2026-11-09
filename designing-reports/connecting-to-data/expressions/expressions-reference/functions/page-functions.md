@@ -11,7 +11,7 @@ reportingArea: General
 components: [general]
 ---
 
-# Page Functions Overview
+# Page Functions
 
 Page functions are expression functions that work with the pages produced during report rendering. Use them when you need page-level values such as the current page number, the total page count, or a page-specific aggregate in the page header or page footer.
 
@@ -35,7 +35,7 @@ To specify the evaluation scope, pass the `Name` of a Group, Section, or Report 
 
 It takes two parameters:
 
-* `scope` – determines which data objects are included in the `PageExec` accumulation. For each instance of the Report Group, Section, or Item with the specified `Name` that occurs on the current page, its data object is accumulated. **Table**, **List**, **Crosstab**, and **Graph** groups cannot be used as the `scope` for page functions. For a workaround, see [Page Level Summary for Table Groups Data](slug:page-level-summary-for-table-groups).
+* `scope` – determines which data objects are included in the `PageExec` accumulation. For each instance of the Report Group, Section, or Item with the specified `Name` that occurs on the current page, its data object is accumulated. **Table**, **List**, **Crosstab**, and **Graph** groups cannot be used as the `scope` for page functions. For a workaround, see [Page Level Summary for Table Groups Data]({%slug page-level-summary-for-table-groups%}).
 * `aggregateFunction` – the aggregate that is accumulated for each page. The expression used as an argument of the aggregate function is evaluated against the collected data objects.
 
 For example, the expression
@@ -52,7 +52,7 @@ Use the `PageNumber` property when you want the current page number for the enti
 
 The `PageNumber(scope, aggregateFunction)` function is different. It resets the page number according to the data on the page. Use it when you need separate numbering sequences for each Group, Section, or Report Item occurrence, for `continues on next page` logic, or for report books that need both overall page numbering and per-report page numbering.
 
-### Why `PageNumber` Has Two Forms
+### Why PageNumber Has Two Forms
 
 The property form and the function form solve different problems:
 
@@ -70,8 +70,8 @@ Use the function in the page header or page footer. To specify where the aggrega
 
 It takes two parameters:
 
-* `scope` – determines which data objects are included in the `PageExec` accumulation. For each instance of the Group, Section, or Report Item with the specified `Name` that occurs on the current page, its data object is accumulated.
-* `aggregateFunction` – the aggregate expression evaluated against the collected data objects. If no aggregate function is specified, `First(expression)` is used by default.
+* `scope` – determines which data objects `PageExec` uses. For each instance of the Group, Section, or Report Item with the specified `Name` that occurs on the current page, its data object is accumulated.
+* `aggregateFunction` – the aggregate expression evaluated against the collected data objects. If you omit the aggregate function, Telerik Reporting uses `First` to evaluate the first value in the scope.
 
 For example, the expression
 
@@ -96,7 +96,7 @@ This lets you show values such as `Page 2 of 3 for the current customer group` w
 
 ![using First and Last aggregates in the aggregateFunction parameter to specify which page sequence to use to display the page number](images/ResetPageLastFirst.png)
 
->important Using `PageNumber` or `PageCount` inside conditional statements that use the [conditional and null-coalescing operators](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators) (`?:` and `??`) may prevent these functions from executing on a page. This can disrupt the current page sequence and produce unexpected results. In this case, use the [conditional functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions) instead.
+>important Using `PageNumber` or `PageCount` inside conditional statements that use the [conditional and null-coalescing operators]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators%}) (`?:` and `??`) may prevent these functions from executing on a page. This can disrupt the current page sequence and produce unexpected results. In this case, use the [conditional functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions%}) instead.
 
 ## PageCount
 
@@ -110,8 +110,8 @@ Use it in the page header or page footer. To specify where the aggregate express
 
 It takes two parameters:
 
-* `scope` – determines which data objects are included in the `PageExec` accumulation. For each instance of the Group, Section, or Report Item with the specified `Name` that occurs on the current page, its data object is accumulated.
-* `aggregateFunction` – the aggregate expression evaluated against the collected data objects. If no aggregate function is specified, `First(expression)` is used by default.
+* `scope` – determines which data objects `PageExec` uses. For each instance of the Group, Section, or Report Item with the specified `Name` that occurs on the current page, its data object is accumulated.
+* `aggregateFunction` – the aggregate expression evaluated against the collected data objects. If you omit the aggregate function, Telerik Reporting uses `First` to evaluate the first value in the scope.
 
 For example, the expression
 
@@ -130,3 +130,10 @@ To display numbering such as `Page 2 of 5` inside the current group sequence, us
 `= "Page " + PageNumber("group1", Fields.GroupName) + " of " + PageCount("group1", Fields.GroupName)`
 
 This expression does not show the overall report page number. It shows the page number and page count only for the current group sequence.
+
+## See Also
+
+* [Page-level summaries for table groups]({%slug page-level-summary-for-table-groups%})
+* [Numbering pages based on group scope]({%slug group-specific-page-numbering-telerik-reporting%})
+* [Repeating group labels across pages]({%slug repeat-report-group-names-on-each-page%})
+* [Displaying a page header only on the first page]({%slug how-to-display-page-header-on-first-page-only%})

@@ -44,7 +44,7 @@ Implement `getAccessToken()` with the authentication service used by your applic
 
 ## Update Headers at Runtime
 
-Get the viewer instance from the page, then call `httpHeaders(options)` to replace the header configuration. Pass `null` to clear the custom headers:
+Get the viewer instance from the page, then call `httpHeaders(options)` to replace the header configuration:
 
 ```JavaScript
 const viewer = $("#reportViewer1").data("telerik_ReportViewer");
@@ -53,8 +53,6 @@ viewer.httpHeaders({
     headers: { "X-Tenant-Id": "tenant-43" },
     refreshInterval: 60
 });
-
-viewer.httpHeaders(null);
 ```
 
 ## Header Scope and Security

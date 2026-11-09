@@ -45,15 +45,13 @@ For static values, set `headers` to an object instead of a function.
 
 ## Update Headers at Runtime
 
-Get a reference to the viewer component and call `setHttpHeaders(options)`. Pass `null` to clear the custom headers:
+Get a reference to the viewer component and call `setHttpHeaders(options)`:
 
 ```TypeScript
 this.reportViewer.setHttpHeaders({
     headers: { "X-Tenant-Id": "tenant-43" },
     refreshInterval: 60
 });
-
-this.reportViewer.setHttpHeaders(null);
 ```
 
 ## Header Scope and Security

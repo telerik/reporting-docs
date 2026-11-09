@@ -40,15 +40,13 @@ Implement `getAccessToken()` with the authentication service used by your applic
 
 ## Update Headers at Runtime
 
-Use a ref to call `setHttpHeaders(options)`. Pass `null` to clear the custom headers:
+Use a ref to call `setHttpHeaders(options)`:
 
 ```JavaScript
 reportViewerRef.current.setHttpHeaders({
     headers: { "X-Tenant-Id": "tenant-43" },
     refreshInterval: 60
 });
-
-reportViewerRef.current.setHttpHeaders(null);
 ```
 
 ## Header Scope and Security

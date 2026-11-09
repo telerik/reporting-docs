@@ -43,15 +43,13 @@ For static values, set `headers` to an object instead of a function.
 
 ## Update Headers at Runtime
 
-Call the `setHttpHeaders` command to replace the options. Pass `null` to clear the custom headers:
+Call the `setHttpHeaders` command to replace the options:
 
 ```TypeScript
 this.reportViewer.executeCommand("setHttpHeaders", {
     headers: { "X-Tenant-Id": "tenant-43" },
     refreshInterval: 60
 });
-
-this.reportViewer.executeCommand("setHttpHeaders", null);
 ```
 
 ## Header Scope and Security

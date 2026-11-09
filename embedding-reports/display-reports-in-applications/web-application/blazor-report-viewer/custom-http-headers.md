@@ -55,7 +55,7 @@ When you set both `Headers` and `GetHeaders`, the callback result takes preceden
 
 ## Update Headers at Runtime
 
-Use the component reference to call `SetHttpHeadersAsync(options)`. Pass `null` to clear the custom headers:
+Use the component reference to call `SetHttpHeadersAsync(options)`:
 
 ```CSharp
 await reportViewer.SetHttpHeadersAsync(new HttpHeadersOptions
@@ -66,8 +66,6 @@ await reportViewer.SetHttpHeadersAsync(new HttpHeadersOptions
     },
     RefreshInterval = 60
 });
-
-await reportViewer.SetHttpHeadersAsync(null);
 ```
 
 ## Header Scope and Security

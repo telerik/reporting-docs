@@ -14,7 +14,7 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>13.0.19.116+</td>
+			<td>20.2.26.1007+ for the .NET preview; earlier versions for the legacy workaround</td>
 		</tr>
 		<tr>
 			<td>Product</td>

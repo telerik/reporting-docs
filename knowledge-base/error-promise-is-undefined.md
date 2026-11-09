@@ -42,15 +42,10 @@ Please check [HTML5 Viewer: Important Settings](slug:telerikreporting/using-repo
   
 ## Solution
 
-If you do not have *polyfill Javascript for promises* on the page with the HTML5 Viewer, test to manually add a *script* tag with a link on the page with the viewer.   
-  
-In our documentation, we suggest adding the polyfill file of [Polyfill.io](https://polyfill.io/v2/docs/). The link with the content of the file can be previewed in a browser that does not have support for promises.
+If the page with the HTML5 Viewer does not include a Promise polyfill, add a maintained Promise polyfill to the page before the viewer scripts. Host the pinned polyfill with your application or use the distribution method recommended by its provider.
 
-## Notes
-
-If you open the [Polyfill.io](https://polyfill.io/v2/docs/) to retrieve the returned JS, the provided JS may not be correct since the endpoint has been opened by a browser that supports promises. Open the link with a browser that has no support for promises to ensure that the provided JS will work.
+Do not use the retired Polyfill.io service. Test the viewer in every supported browser after adding the polyfill.
   
 ## See Also
 
 [Promises - Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#browser_compatibility)
-

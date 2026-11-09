@@ -15,7 +15,7 @@ previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 
 This topic explains how to use a custom parameters UI to update report parameters instead of using the HTML5 Web Forms ReportViewer's default parameters area.
 
-The report and all its required parameters are stored in a `ReportSource` object. To update the report source, use the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods#reportsource) method.
+The report and all its required parameters are stored in a `ReportSource` object. To update the report source, use the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers) method.
 
 This example uses the Invoice report from the examples and updates its `OrderNumber` parameter from a custom parameters UI.
 
@@ -56,7 +56,7 @@ This example uses the Invoice report from the examples and updates its `OrderNum
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters2}}
 
-1. Initialize the report viewer with the minimal set of [available options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview).
+1. Initialize the report viewer with the minimal set of options described in the [HTML5 Report Viewer overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview).
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters3}}
 

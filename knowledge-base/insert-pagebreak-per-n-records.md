@@ -25,7 +25,7 @@ I want to insert a page break in the report after a fixed number of records. The
 
 Use the [`SqlDataSource` component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) to query the report data. Many databases provide functions that number rows in a result set, such as the [ROW_NUMBER function](https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql) in `SQL Server`.
 
-Use the `ROW_NUMBER` function to add a `GroupIdx` field to the result set. The following query returns 30 records and assigns the same `GroupIdx` value to each group of 10 records:
+Use the `ROW_NUMBER` function to add a `GroupIdx` field to the result set. The following query returns 30 records and assigns the same `GroupIdx` value to each group of 10 records. Replace `10` with the number of records you want to display on each page.
 
 ````SQL
 SELECT

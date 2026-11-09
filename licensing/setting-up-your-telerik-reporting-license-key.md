@@ -12,16 +12,19 @@ components: [general]
 
 # Setting Up Your Telerik Reporting License Key
 
-|Minimum Version|Q1 2025|
-|----|----|
-
-Telerik Reporting requires activation through a license key for both, trial and commercial, versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
+Telerik Reporting requires activation with a license key for both trial and commercial versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
 
 An invalid license results in [errors and warnings](slug:license-errors-and-warnings), such as watermarks and banners during build, test, and publish.
 
-> This article applies to Telerik Reporting version [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) and later. Earlier versions do not require activation.
+> This article applies to Telerik Reporting starting with version [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211). Earlier versions do not require activation.
 
 ## Downloading the License Key
+
+The following table shows the minimum Telerik Reporting version that requires a license key:
+
+| Minimum Version | Release |
+|---|---|
+| 19.0.25.211 | Q1 2025 |
 
 To download a license key for Telerik Reporting, you must have either a commercial license or a trial license. If you are new to Telerik Reporting, sign up for a [free trial](https://www.telerik.com/try/reporting) first, and then follow the steps below.
 
@@ -29,18 +32,18 @@ You can use tools that [automatically download your license key file](#downloadi
 
 ### Downloading Automatically
 
-The two tools that automatically download your Telerik license key file are the [Progress Control Panel](#using-the-progress-control-panel) and the [Visual Studio extensions](#using-the-visual-studio-extensions) for Telerik Reporting. These tools download and store your license key in your system's home directory. This makes it available for all projects you develop on your local machine.
+The [Progress Control Panel](#using-the-progress-control-panel) and [Visual Studio extensions](#using-the-visual-studio-extensions) automatically download your Telerik license key file. They store it in your system's home directory, making it available to all local projects.
 
 #### Using the Progress Control Panel
 
-To install your Telerik License key by using the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), start the application. It automatically downloads the `telerik-license.txt` license key file to your home directory:
+To install your Telerik license key with the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), start the application. It automatically downloads the `telerik-license.txt` license key file to your home directory:
 
-- On Windows: `%AppData%\Telerik\` or `C:\Users\[windows_username]\AppData\Roaming\Telerik\`.
-- On Mac/Linux: `~/.telerik/`.
+* On Windows: `%AppData%\Telerik\` or `C:\Users\[windows_username]\AppData\Roaming\Telerik\`.
+* On Mac/Linux: `~/.telerik/`.
 
 #### Using the Visual Studio Extensions
 
-To install your Telerik License key by using the Visual Studio extensions for Telerik Reporting:
+To install your Telerik license key with the Visual Studio extensions for Telerik Reporting:
 
 1. Open Visual Studio.
 
@@ -48,24 +51,24 @@ To install your Telerik License key by using the Visual Studio extensions for Te
 
 	![Telerik Reporting Visual Studio extension Licensing menu with the Download Key command](images/vs-extension-download-key.png)
 
-The extensions for Telerik Reporting are installed by default when using the MSI installer. If they are missing, you used an alternative [installation method](slug:telerikreporting/installation) or deselected them during setup.
+The extensions for Telerik Reporting are installed by default with the MSI installer. If they are missing, you either used an alternative [installation method](slug:telerikreporting/installation) or deselected them during setup.
 
 ### Downloading Manually
 
-1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
+1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account:
 1. Click the **Download License Key** button.
 
 	![Telerik Reporting License Keys page with the Download License Key button](images/download-license-key.png)
 
 1. Copy the `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
 
-	- For Windows: `%AppData%\Telerik\telerik-license.txt`
-	- For Mac/Linux: `~/.telerik/telerik-license.txt`
-	- Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control, as this is your personal license key.
+	* For Windows: `%AppData%\Telerik\telerik-license.txt`
+	* For Mac/Linux: `~/.telerik/telerik-license.txt`
+	* Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control, as this is your personal license key.
 
 ## Activating Telerik Reporting Automatically
 
-By default, the activation of the Telerik Reporting library is automatic when your license key file is already downloaded, and the Visual Studio project has access to `www.nuget.org`.
+By default, Telerik Reporting activates automatically when the license key file is downloaded and the Visual Studio project can access `www.nuget.org`.
 
 If automatic activation fails and you see licensing-related error messages, [activate the product manually](#activating-telerik-reporting-manually).
 
@@ -108,7 +111,7 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 1. Add the `TelerikLicense.cs` file to your project.
 1. Add an assembly reference to `Telerik.Licensing.Runtime.dll`.
 
-> Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
+>warning Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
 
 ## Updating Your License Key
 
@@ -120,8 +123,8 @@ Once you have the new license key, use it to [activate Telerik Reporting](#activ
 
 ## See Also
 
-- [License Activation Errors and Warnings](slug:license-errors-and-warnings)
-- [Adding the License Key to CI Services](slug:license-key-ci-services)
-- [Frequently Asked Questions about Your Telerik Reporting License Key](slug:license-frequently-asked-questions)
-- [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version](slug:upgrade-q1-2025-trial-to-q2-2025-purchase-license)
-- [Licensing before 2025](slug:telerikreporting/licensing)
+* [License Activation Errors and Warnings](slug:license-errors-and-warnings)
+* [Adding the License Key to CI Services](slug:license-key-ci-services)
+* [Frequently Asked Questions about Your Telerik Reporting License Key](slug:license-frequently-asked-questions)
+* [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version](slug:upgrade-q1-2025-trial-to-q2-2025-purchase-license)
+* [Licensing before 2025](slug:telerikreporting/licensing)

@@ -1,7 +1,7 @@
 ---
 title: Report Parameter Values
 page_title: Sending Parameter Values from outside the HTML5 WebForms ReportViewer
-description: "Learn How to pass Values to Report Parameters from Components Located Outside the HTML5 ASP.NET WebForms ReportViewer in Telerik Reporting."
+description: "Learn how to pass values to report parameters from a custom UI outside the HTML5 ASP.NET WebForms ReportViewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,to,pass,values,to,report,parameters
 published: True
@@ -11,39 +11,39 @@ position: 5
 previous_url: /html5-webforms-report-viewer-howto-custom-parameters
 ---
 
-# Passing Values to Report Parameters from Components Outside the HTML5 WebForms Report Viewer
+# Report Parameter Values
 
-This topic explains how to use the custom parameters UI to update the report parameters instead of using the HTML5 Web Forms report viewer's default implementation of the parameters area. 
+This topic explains how to use a custom parameters UI to update report parameters instead of using the HTML5 Web Forms ReportViewer's default parameters area.
 
-The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods#reportsource) method is used.
+The report and all its required parameters are stored in a `ReportSource` object. To update the report source, use the [ReportViewer.reportSource(rs)](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods#reportsource) method.
 
-To give an example, we will use the Invoice report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI.
+This example uses the Invoice report from the examples and updates its `OrderNumber` parameter from a custom parameters UI.
 
-## Pass values to report parameters
+## Passing Values to Report Parameters
 
-> All path references in the described steps should be adapted according to your project setup. For more information, please refer to the Microsoft article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140))
+>note Adapt all path references in these steps to your project setup. For more information, see the Microsoft article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)).
 
-1. Create a new ASP.NET Web Forms Empty Project. 
+1. Create a new ASP.NET Web Forms Empty Project.
 
-	We are going to use one of our demo Visual Studio reports. 
-	
-	For this purpose, add a new Telrik Report Library project to the solution from the VS item templates, name it *CSharp|VB.ReportLibrary*, add the existing __Invoice.cs__/__Invoice.vb__ report and its subreport __SalesOrderDetails.cs__/__SalesOrderDetails.vb__ from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples\CSharp|VB` folder and built the *CSharp|VB.ReportLibrary* project. 
+	Use one of the demo Visual Studio reports.
+
+	For this purpose, add a new Telerik Report Library project to the solution from the Visual Studio item templates. Name it *CSharp|VB.ReportLibrary*, add the existing `Invoice.cs`/`Invoice.vb` report and its subreport `SalesOrderDetails.cs`/`SalesOrderDetails.vb` from the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples\CSharp|VB` folder, and build the *CSharp|VB.ReportLibrary* project.
 	
 	Add a reference to the `ReportLibrary` project in the Web Forms project.
 
-1. Then, use the [HTML5 Web Forms Report Viewer Item Template](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service) and name the web page with the viewer __InvoiceParameters.aspx__. 
+1. Use the [HTML5 Web Forms Report Viewer Item Template](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service) and name the web page with the viewer `InvoiceParameters.aspx`.
 
-	On __'Configure report source'__ step select __'Existing report definition'__, then select __'Select type report definition created in Visual Studio'__ and browse *Invoice* report class. 
+	On the **Configure report source** step, select **Existing report definition**, then select **Select type report definition created in Visual Studio**, and browse to the *Invoice* report class.
 	
 	Finish the wizard.
 
-1. Add a connectionStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's `web.config` file. For example:
+1. Add a `connectionStrings` entry with the name `Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString` to the project's `web.config` file. For example:
 
 	{{source=CodeSnippets\MvcCS\XmlConfiguration\ReportParameterValues.xml region=Prerequisites}}
 
-	At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Report Viewer at **[host]/InvoiceParameters.aspx** without any modifications.
+	At this point, you have a running Web Forms application that displays a report in the HTML5 Web Forms ReportViewer at `[host]/InvoiceParameters.aspx` without any modifications.
 
-1. Add code for updating the `ReportSource.Parameters` collection in the code behind:
+1. Add code to update the `ReportSource.Parameters` collection in the code-behind:
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\InvoiceParameters.aspx.cs region=PageLoadPassReportParameters}}
 	{{source=CodeSnippets\MvcVB\Views\WebForms\Html5WebFormsViewer.aspx.vb region=PageLoadPassReportParameters}}
@@ -56,24 +56,22 @@ To give an example, we will use the Invoice report from our examples and will up
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters2}}
 
-1. Now, initialize the report viewer. We will use the minimal set of all [possible options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview).
+1. Initialize the report viewer with the minimal set of [available options](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview).
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters3}}
 
-1. Add code that updates the ReportSource parameters collection with the selected **Invoice Id** from the dropdown box:
+1. Add code that updates the `ReportSource` parameters collection with the **Invoice Id** selected in the dropdown box:
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters.aspx region=WebFormsViewerPassValuesToReportParameters4}}
 
-1. The HTML page that we have just created should looks like this:
+1. The completed HTML page should look like this:
 
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_01.aspx region=WebFormsViewerPassValuesToReportParameters5}}
 
-1. The HTML page that we have just created should look like this:
-
 	{{source=CodeSnippets\MvcCS\Views\WebForms\WebFormsViewerPassValuesToReportParameters_02.aspx region=WebFormsViewerPassValuesToReportParameters6}}
 
-1. Run the project and verify that the __Invoice Id__ selection really updates the report.
+1. Run the project and verify that the **Invoice Id** selection updates the report.
 
 ## See Also
 
-- [Creating Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor)
+* [Creating a Custom Parameter Editor](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor)

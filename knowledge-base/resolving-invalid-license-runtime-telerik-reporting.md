@@ -1,6 +1,6 @@
 ---
 title: Resolving "Invalid License" Issue during runtime in Telerik Reporting
-description: Learn how to address the "Invalid license" issue in Telerik Reporting when reports display licensing errors at runtime.
+description: Resolve the "Invalid license" message in Telerik Reporting at runtime by referencing the licensing package from the application startup project.
 type: how-to
 page_title: Fixing License Errors in Telerik Reporting Runtime
 slug: resolving-invalid-license-telerik-reporting
@@ -10,64 +10,38 @@ ticketid: 1688629
 ---
 
 ## Environment
-<table>
-   <tbody>
-      <tr>
-         <td>Product</td>
-         <td>Progress® Telerik® Reporting</td>
-      </tr>
-      <tr>
-         <td>Version</td>
-         <td>19.1.25.521+</td>
-      </tr>
-   </tbody>
-</table>
+| Product | Version |
+|---|---|
+| Progress® Telerik® Reporting | 19.1.25.521+ |
 
 ## Description
 
-When generating reports (e.g., PDF, XLSX) in Telerik Reporting, the output may display an "Invalid license" message. This issue can occur even if a valid license is detected during the build phase, as indicated by the build output. However, the debug output during runtime shows the license check failing. The problem often arises when the `Telerik.Licensing` NuGet package is not directly referenced in the startup project of the application.
+When Telerik Reporting generates a report, the output can display an "Invalid license" message even when the build detects a valid license. This issue can occur when the application startup project does not directly reference `Telerik.Licensing`.
 
-This knowledge base article also answers the following questions:
-- Why does Telerik Reporting display "Invalid license" at runtime?
-- How to resolve runtime licensing issues in Telerik Reporting?
-- What causes valid licenses in build but invalid runtime behavior in Telerik Reporting?
+The `Telerik.Reporting` NuGet package normally brings the required licensing dependencies. Add a direct `Telerik.Licensing` reference when the startup project does not receive that dependency or runtime activation still fails.
 
 ## Solution
 
 ### General Instructions for .NET and .NET Framework Projects
 
-To resolve this issue, ensure the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) NuGet package is directly referenced in the startup project of your application. Follow the steps below:
+To resolve this issue, add a direct reference to the [Telerik.Licensing NuGet package](https://www.nuget.org/packages/Telerik.Licensing) in the startup project when the transitive reference from `Telerik.Reporting` does not activate the license. Follow these steps:
 
-1. **Identify the Startup Project**: Determine which project serves as the entry point for your application. 
-1. **Add `Telerik.Licensing` NuGet Package**: Navigate to the startup project and add the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) NuGet package manually. You can do this using the NuGet Package Manager or the Package Manager Console.
+1. Identify the startup project that serves as the application entry point.
+2. Add the `Telerik.Licensing` NuGet package to the startup project by using the NuGet Package Manager or Package Manager Console.
 
-   Example using Package Manager Console - `Install-Package Telerik.Licensing -Version 1.6.5`
-   
-1. **Clean and Rebuild the Solution**: Perform a clean build of your solution to ensure all dependencies are correctly resolved.
-1. **Test the Application**: Run the application again and verify if the reports are correctly generated without displaying the "Invalid license" message.
+   For Package Manager Console, run `Install-Package Telerik.Licensing`. Use a package version compatible with the Telerik Reporting release in your application.
+3. Clean and rebuild the solution to resolve the package dependencies.
+4. Run the application and verify that reports no longer display the "Invalid license" message.
 
 ### .NET Framework-Specific Instructions
 
-For .NET Framework startup projects that do not use the [SDK-style project](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview) structure, ensure that there is one or more **Telerik Reporting** NuGet packages/assemblies referenced in the project.
+For .NET Framework startup projects that do not use the [SDK-style project](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview) structure, ensure that the project references at least one `Telerik.Reporting` NuGet package or assembly.
 
-If the startup project contains no **Telerik Reporting** references and is not defined as [SDK-style project](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview), and is instead referencing other projects that contain the Reporting-related code, our licensing mechanism cannot determine that any **Telerik** products are used, thus the license check will be `False` at runtime.
+If the startup project contains no `Telerik.Reporting` reference and instead references another project that contains the reporting code, the licensing build task cannot determine that the application uses Telerik Reporting. The runtime license check then returns `False`.
 
-In such scenarios, add a reference to the `Telerik.Reporting.dll` so that the licensing build task can determine that **Telerik Reporting** is used and generate the necessary files to use during runtime.
-
-Additionally, if a version newer than **1.6.5** of the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) NuGet package is installed, ensure that a binding redirect is present in the `App.config`/`Web.config` file of the startup project. For example:
-
-````XML
-  <runtime>
-    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-      <dependentAssembly>
-        <assemblyIdentity name="Telerik.Licensing.Runtime" publicKeyToken="98bb5b04e55c09ef" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-1.6.9.0" newVersion="1.6.9.0" />
-      </dependentAssembly>
-    </assemblyBinding>
-  </runtime>
-````
-
+In this scenario, add a reference to `Telerik.Reporting.dll` in the startup project. This reference lets the licensing build task identify Telerik Reporting and generate the files required at runtime.
 
 ## See Also
 
-* [SDK-Style Projects](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview) 
+* [Telerik Reporting license key setup](https://docs.telerik.com/reporting/licensing/setting-up-your-telerik-reporting-license-key)
+* [SDK-style project structure](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview)

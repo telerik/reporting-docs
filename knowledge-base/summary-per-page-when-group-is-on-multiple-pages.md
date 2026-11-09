@@ -124,7 +124,7 @@ class PageHeaderSumFromPrevPage : IAggregateFunction
 
     void AccumulateCore(object[] values)
     {
-        // The aggregate function expects one parameter
+        // The aggregate function expects two parameters
         object value = values[0];
 
         // null values are not aggregated
@@ -229,6 +229,9 @@ The static fields that store the totals and transitional values impose the follo
 		}
 	}
 	//...
+	[ThreadStatic]
+	static object processingOperationId;
+
 	public void Accumulate(object[] values)
 	{
 		var reportDefinition = values[3];

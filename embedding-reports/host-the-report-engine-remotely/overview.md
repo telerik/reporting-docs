@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Telerik Reporting REST Services Explained Briefly
-description: "Learn the basics about the Telerik Reporting REST Services, including what it is, how it works and how to configure it."
+description: "Learn how the Telerik Reporting REST service exposes report generation over HTTP, manages client sessions, and supports viewers and custom clients."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview
 tags: overview,rest,service,configure,reporting,basics
 published: True
@@ -11,46 +11,55 @@ reportingArea: General
 components: [general]
 ---
 
-# Telerik Reporting REST Services Overview
+# Overview
 
-The Telerik Reporting REST service provides an Application Programming Interface (API) over HTTP to the reports generation engine. This engine allows the exporting of report documents in all supported rendering formats. The server-client communication relies on simple [Data Transfer Objects](https://martinfowler.com/eaaCatalog/dataTransferObject.html) (DTOs). All DTOs are JSON encoded.
+The Telerik Reporting REST service exposes the report generation engine through an HTTP application programming interface (API). The engine renders report documents in all supported formats.
 
-The primary usage of the service is in the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) ecosystem. It leverages the pure client-side implementation of the viewer.
+The service uses simple [Data Transfer Objects](https://martinfowler.com/eaaCatalog/dataTransferObject.html) (DTOs) for client-server communication. All DTOs use JSON encoding.
 
-> You can use the Reporting REST service in a JavaScript application without the viewer. Refer to the _telerikReportViewer.ServiceClient_ class in the JavaScript API.
+The primary use of the service is with the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview), which has a client-side implementation.
 
-The service has several implementations targeting different web service frameworks which are described in this chapter.
+>note You can use the Reporting REST service in a JavaScript application without the viewer. Refer to the `telerikReportViewer.ServiceClient` class in the JavaScript API.
 
-## How it Works
+This chapter describes implementations for several web service frameworks.
+
+## How It Works
 
 The Reporting REST service exposes all report generation assets as web resources that can be accessed from specific web endpoints. These exposed assets include:
 
 * Report instances
 * Report documents
 * Images
-* Other rendered report meta-data
+* Other rendered report metadata
 
-To access these report generation assets, a client host issues a set of requests and wraps them in a client session identified by a `clientId`.
+To access these report generation assets, a client host issues a set of requests and wraps them in a client session identified by `clientId`.
 
 ### Serving a Request
 
 The following steps describe how the Reporting REST service serves a client's request:
 
-1. The client of the service requests a report by a JSON object called a __client report source__.
+1. The client requests a report by sending a JSON object called a *client report source*.
 1. The service resolves the request to a [.NET report source](slug:telerikreporting/designing-reports/report-sources/overview). To do that, it uses a [REST Service Report Source Resolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview).
 1. The service serves the rendered reports as web-accessible resources.
 1. The service caches all generated resources in a [REST Service Storage](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview) of choice.
 
 ## Configuration Hints
 
-You can configure the report service in the application's configuration file - either .config or .json for the different service implementations. For more details, see [restReportService Element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
+You can configure the report service in the application's `.config` or `.json` configuration file, depending on the service implementation. For more details, see the [`restReportService` element](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
 
-Furthermore, each of the steps listed above allows you additional configuration and customization, for example:
+You can also configure the following service behaviors:
 
-* The client session expires within a particular time, which can be configured. That said, within a single client session, the same request will always return the same cached resource.
+* The client session expires after a configurable period. Within a single client session, the same request returns the same cached resource.
 
-	>An exception is the [Register Client](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client) endpoint, which can enforce regeneration to support the Refresh Report functionality. To achieve that, add a useCache = false setting to the request's body.
+	>note The [Register Client](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client) endpoint can enforce regeneration for the Refresh Report functionality. Add `useCache = false` to the request body.
 
-* In some scenarios, you need to share the service with more than one app. For these, you may need to turn on [Cross-Origin Resource Sharing](https://fetch.spec.whatwg.org/).
-* If all new report requests get executed simultaneously, the host will get overloaded. To avoid this, the service executes the report generation requests in a task queue. The count of the simultaneously rendered reports is [configurable](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
-* In some scenarios, you need to host two or more report services in a single application. To achieve that, assign a unique HostAppId property to each implementing controller. This will produce a dedicated task queue for each service instance. Additionally, you must set the appropriate worker count for each queue to avoid system overload.
+* If you share the service with more than one app, enable [Cross-Origin Resource Sharing](https://fetch.spec.whatwg.org/).
+* The service executes report generation requests in a task queue. Configure the number of reports rendered at the same time in the [REST service configuration](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
+* To host two or more report services in one application, assign a unique `HostAppId` property to each controller. This creates a dedicated task queue for each service instance. Set the worker count for each queue to avoid system overload.
+
+## See Also
+
+* [Configure the ASP.NET Core Web API implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview)
+* [Configure the ASP.NET Web API implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview)
+* [Configure the ServiceStack implementation](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview)
+* [Use the REST API reference](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview)

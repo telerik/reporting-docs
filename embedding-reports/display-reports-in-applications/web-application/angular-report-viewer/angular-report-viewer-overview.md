@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Angular Report Viewer Integration - Telerik Reporting
-description: "Integrate the Angular Report Viewer component into your Angular apps, regardless of the module loader you use."
+description: "Learn how to integrate the Angular Report Viewer into Angular applications, review its requirements, and use its report viewing features."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview
 tags: angular,report,viewer,overview
 published: True
@@ -15,24 +15,24 @@ previous_url: /angular-report-viewer, /using-reports-in-applications/display-rep
 
 > The current Angular Report Viewer version is `{{site.spaviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
 
-Integrate the Angular Report Viewer component in your Angular Reporting applications regardless of the module loader that you use.
+Integrate the Angular Report Viewer component into Angular applications regardless of the module loader that you use.
 
 > note Check out the [Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview) built on top of [Telerik UI for Angular](https://www.telerik.com/kendo-angular-ui) components.
 
-The Angular component is built on top of the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview), which is the base for other Web-technologies report viewers as well.
+The Angular component is built on top of the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview), which also serves as the base for other web technology report viewers.
 
 ## Requirements
 
-To successfully integrate the Angular Report Viewer component, ensure the following are fulfilled in your Angular Reporting application:
+To integrate the Angular Report Viewer component, verify that your Angular application meets the following requirements:
 
 1. Required Application Version:
    - [Angular 20-22](https://angular.dev/tutorials/first-app) Application
 
 1. Required Service:
-   - The viewer requires a running instance of [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project so that its routes are accessible from the Angular application.
+   - The viewer requires a running instance of [Telerik Reporting REST Services](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) to display reports. [Enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project so the Angular application can access its routes.
 
-1. Required JavaScript libraries:
-   - [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
+1. Required development tools:
+   - [Node.js](https://nodejs.org/). Use the version required by your Angular project. See [Angular versions under active support](https://angular.io/guide/versions) for supported versions.
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
    - `@angular/common: "20 - 22"`
@@ -48,7 +48,7 @@ The Angular viewer is based on the [HTML5 Report Viewer](slug:telerikreporting/u
 
 ## Types of Reports
 
-The Angular Report Viewer can display both `declarative` and `type` [report definitions](slug:on-telerik-reporting)#report-definition). All report definitions must be accessible server-side by the Reporting REST Service.
+The Angular Report Viewer can display both `declarative` and `programmatic` [report definitions](slug:telerikreporting/designing-reports/overview#report-definition-types). All report definitions must be accessible server-side by the Reporting REST Service.
 
 Report definitions created at runtime, fetched from custom storage, may also be displayed in the viewer. This requires a [Custom IReportSourceResolver](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver) associating the [client-side ReportSource](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods#reportsource) `Report` property with the [server-side ReportSource](slug:telerikreporting/designing-reports/report-sources/overview#available-report-sources) passed to the Reporting engine.
 
@@ -56,11 +56,11 @@ Report definitions created at runtime, fetched from custom storage, may also be 
 
 The Angular Report Viewer enables users to Preview, Export, and Print their reports from your Angular Reporting application. The functionalities are triggered from the corresponding [Toolbar Menu buttons](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview#toolbar).
 
-The [Send Mail Message](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message) functionality gives the option to share the previewed report documents with anyone.
+The [Send Mail Message](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message) functionality lets users share previewed report documents.
 
 ## Report Parameters
 
-The Parameters Area provides an intuitive UI for user interactions. The HTML5-based Report Viewers use [Kendo UI widgets](https://www.telerik.com/kendo-ui) for parameter editors out of the box. Based on the type of the report parameter, a suitable editor UI is created.
+The Parameters Area provides an interface for user interactions. The HTML5-based Report Viewers use [Kendo UI widgets](https://www.telerik.com/kendo-ui) for parameter editors by default. Based on the type of the report parameter, the viewer creates a suitable editor.
 
 List of the default widgets for different report parameter types:
 

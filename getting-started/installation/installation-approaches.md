@@ -39,6 +39,8 @@ The MSI installation wizard installs the product by default in the `C:\Program F
 
 The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine's Global Assembly Cache (GAC) for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
 
+### MSI Installation Details
+
 During the MSI installation process, note the following:
 
 * For Telerik Reporting versions earlier than R3 2017, the default installation paths were `C:\Program Files\Telerik\` and `C:\Program Files (x86)\Telerik\`.
@@ -78,8 +80,11 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 You can add Telerik Reporting to a project by installing NuGet packages from [NuGet.org](https://www.nuget.org/) or the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting Representational State Transfer (REST) service based on ASP.NET Web API (Application Programming Interface)](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
 
+<<<<<<< HEAD
 For current Telerik Reporting releases, use [NuGet.org](https://www.nuget.org/), which Visual Studio and the .NET CLI use by default. Use the Telerik NuGet server for older releases or when your organization requires the private feed.
 
+=======
+>>>>>>> b66ea3f0 (Improve installation article clarity)
 >note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
 
 Use one of the following installation paths for NuGet packages:

@@ -18,6 +18,8 @@ The [Telerik Reporting Productivity Tools](https://marketplace.visualstudio.com/
 
 You can create, edit, preview, and export Telerik reports directly in Visual Studio Code without first creating a Reporting application.
 
+![A report open in the Telerik Reporting Web Report Designer in VS Code, with the report explorer and properties panel visible](../designing-reports/report-designer-tools/vscode/images/wrd-vscode.png)
+
 * Start with [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode) for installation, licensing, and an overview of the available workflows.
 * Follow [Getting Started with Reports in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/working-with-reports-in-vs-code) to create, preview, and export your first report.
 * See [Working with Existing Reports in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports) when you want to edit reports from an existing application or repository.

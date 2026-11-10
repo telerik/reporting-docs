@@ -16,6 +16,8 @@ The Telerik Reporting extension lets you create, edit, and preview reports direc
 
 The extension opens the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) in a VS Code editor and starts a local Reporting service for processing and previewing reports.
 
+![A report open in the Telerik Reporting Web Report Designer in VS Code, with the report explorer and properties panel visible](images/wrd-vscode.png)
+
 ## Installing the Extension
 
 Install [Telerik Reporting Productivity Tools](https://marketplace.visualstudio.com/items?itemName=TelerikInc.telerik-reporting-productivity-tools) from the Visual Studio Marketplace. You can also find the extension by name in the VS Code **Extensions** view and select **Install**.

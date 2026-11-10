@@ -15,7 +15,7 @@ components: [general]
 
 The Telerik Reporting extension provides settings for the configuration used by the Web Report Designer and its local Reporting service. Use this article to configure named database connections and licensing, troubleshoot the local service, and reference the extension's commands and settings.
 
-Reports that require application-level configuration, such as custom resource locations, assemblies with custom user functions, or additional control over the Reporting service, are better handled in a Web Report Designer application. See [Continuing in a Web Report Designer Application](slug:reporting-vs-code-configuration-and-reference#continuing-in-a-web-report-designer-application).
+Reports that require application-level configuration, such as custom resource locations, assemblies with custom user functions, or additional control over the Reporting service, are better handled in a Web Report Designer application. See [how to resolve application-specific report dependencies](slug:telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports#resolving-report-dependencies).
 
 ## Configuring a Data Connection
 

@@ -5,7 +5,7 @@ description: Create your first Telerik report in Visual Studio Code, add content
 slug: telerikreporting/designing-reports/report-designer-tools/working-with-reports-in-vs-code
 tags: reporting, vscode, report, tutorial
 published: True
-position: 1
+position: 2
 reportingArea: General
 components: [general]
 ---

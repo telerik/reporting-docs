@@ -5,7 +5,7 @@ description: Create and preview reports in Visual Studio Code, edit existing rep
 slug: telerikreporting/designing-reports/report-designer-tools/vscode
 tags: reporting, vscode, report, designer
 published: True
-position: 2
+position: 1
 reportingArea: General
 components: [general]
 ---

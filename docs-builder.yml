@@ -203,8 +203,11 @@ meta:
     position: 4
     title: "Report Designers"
   ### Report Designers subsection:
-  designing-reports/report-designer-tools/web-report-designer:
+  designing-reports/report-designer-tools/vscode:
     position: 10
+    title: "Visual Studio Code"
+  designing-reports/report-designer-tools/web-report-designer:
+    position: 11
     title: "Web Report Designer"
   designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application:
     position: 10
@@ -214,7 +217,7 @@ meta:
     position: 12
     title: "Tools"
   designing-reports/report-designer-tools/desktop-designers:
-    position: 11
+    position: 12
     title: "Desktop Designers"
   designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
     position: 10
@@ -237,10 +240,6 @@ meta:
   designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards:
     position: 11
     title: "Data Source Wizards"
-
-  designing-reports/report-designer-tools/vscode:
-    position: 12
-    title: "Visual Studio Code"
 
   ### Connecting to Data subsection:
   designing-reports/connecting-to-data:

@@ -42,7 +42,7 @@ Start with the guide that matches what you want to do:
 
 For named database connections, licensing, and common commands and settings, see [the VS Code configuration reference](slug:reporting-vs-code-configuration-and-reference).
 
-For resources, custom user functions, or other application-level configuration, [continue in a Web Report Designer application](slug:integration-with-vs-code#creating-a-web-report-designer-application).
+For resources, custom user functions, or other application-level configuration, see [how to continue in a Web Report Designer application](slug:telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports#resolving-report-dependencies).
 
 ## Licensing
 

@@ -238,6 +238,10 @@ meta:
     position: 11
     title: "Data Source Wizards"
 
+  designing-reports/report-designer-tools/vscode:
+    position: 12
+    title: "Visual Studio Code"
+
   ### Connecting to Data subsection:
   designing-reports/connecting-to-data:
     position: 5

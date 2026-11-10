@@ -17,7 +17,7 @@ The sample uses the following product and targets:
 | Product | Telerik Reporting |
 | Library target | .NET Standard 2.0 |
 | Intended hosts | .NET 10 and .NET Framework 4.6.2 on Windows |
-| Interface availability | Telerik Reporting [2026 Q4 (20.3.26.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1111)) and later |
+| Interface availability | Telerik Reporting [2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) and later |
 
 ## Description
 
@@ -25,7 +25,7 @@ How can I apply my own rules to external report resources, including images, thr
 
 The `IStrictResourceResolver` interface extends `IResourceResolver` without additional members. Implement `Resolve(string resourceUri)` to validate each external reference and return approved content or a location.
 
-Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1111)) release.
+Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) release.
 
 The existing interface handles selected references, including relative image paths. Absolute image locations and resources such as map tiles do not all pass through it. The strict interface extends resolution to external images, CSV/JSON sources, shapefiles, external stylesheets, and map resources. It covers relative paths, absolute paths, UNC paths, and URLs.
 

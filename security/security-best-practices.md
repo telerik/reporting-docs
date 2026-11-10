@@ -49,7 +49,7 @@ When using reports that contain [WebServiceDataSource components](slug:telerikre
 
 ### Restricting Access to External Resources
 
-Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1111)) release.
+Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) release.
 
 Implement `Telerik.Reporting.Interfaces.IStrictResourceResolver` to apply your application's rules to external report resources. Telerik Reporting does not provide a ready-to-use public implementation; define the allowed files and URLs in your custom code.
 

@@ -32,7 +32,7 @@ The Crystal Reports runtime should be installed on the machine.
 
 ## Changes Information
 
->note The Crystal Reports converter includes significant improvements in Telerik Reporting 2026 Q4 (20.3.26.1111). Some functionality described in this article is not available in earlier versions.
+>note The Crystal Reports converter includes significant improvements in Telerik Reporting 2026 Q4 (20.3.26.1110). Some functionality described in this article is not available in earlier versions.
 
 The latest Telerik Crystal Reports Converter is built against Crystal Reports 13.0.20.2399. It offers an improved conversion process, supports more report items, and provides a better user experience. It is actively developed and extended to cover more user scenarios.
 

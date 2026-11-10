@@ -78,7 +78,7 @@ This __ResourceResolver__ is intended to be used in scenarios where the resource
 
 ### Restricting External Resource Access
 
-Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1111)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1111)) release.
+Telerik Reporting introduced `IStrictResourceResolver` in the [2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) release.
 
 Implement `Telerik.Reporting.Interfaces.IStrictResourceResolver` to apply your own rules to all external report-resource references handled by the resource readers. This interface extends `IResourceResolver` and adds no members; implement `Resolve(string resourceUri)`.
 

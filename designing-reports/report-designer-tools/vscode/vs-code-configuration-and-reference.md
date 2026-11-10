@@ -4,7 +4,6 @@ page_title: VS Code Extension Configuration and Commands | Telerik Reporting
 description: Configure connections and licensing in the Telerik Reporting VS Code extension, and continue in an application for advanced configuration.
 slug: reporting-vs-code-configuration-and-reference
 tags: reporting, vscode, integration, configuration, commands, settings
-tag: new
 published: True
 position: 4
 reportingArea: General

@@ -4,7 +4,6 @@ page_title: Telerik Reporting in Visual Studio Code
 description: Create and preview reports in Visual Studio Code, edit existing reports, configure licensing, or generate a Web Report Designer application.
 slug: telerikreporting/designing-reports/report-designer-tools/vscode
 tags: reporting, vscode, integration, report, designer
-tag: new
 published: True
 position: 1
 reportingArea: General

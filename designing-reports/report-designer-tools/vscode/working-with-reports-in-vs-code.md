@@ -4,7 +4,6 @@ page_title: Getting Started with Telerik Reports in VS Code
 description: Create your first Telerik report in Visual Studio Code, add content, preview it, and export a PDF without an application project or database.
 slug: telerikreporting/designing-reports/report-designer-tools/working-with-reports-in-vs-code
 tags: reporting, vscode, integration, report, tutorial
-tag: new
 published: True
 position: 2
 reportingArea: General

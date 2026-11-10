@@ -4,7 +4,7 @@ page_title: Integration with VS Code
 description: The Telerik Reporting Productivity Tools Extension for Visual Studio Code provides scaffolding for the Telerik Reporting native Angular viewer.
 slug: integration-with-vs-code
 tags: integration, vscode, report, viewer, angular
-tag: new
+tag: update
 published: True
 position: 1
 reportingArea: General

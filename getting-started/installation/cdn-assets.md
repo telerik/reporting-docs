@@ -20,7 +20,7 @@ For applications that use only the default Reporting widgets, use the Reporting-
 
 ## HTML5 Report Viewer
 
-Add the following Kendo UI assets to the page that hosts the viewer:
+Load jQuery first (for example, `https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js`), then add the following Kendo UI assets to the page that hosts the viewer:
 
 - Kendo UI script: `https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{site.kendosubsetversion}}/umd/kendo.all.min.js`
 - Ocean Blue theme: `https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{site.kendothemeversion}}/dist/default-ocean-blue.css`

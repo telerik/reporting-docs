@@ -55,8 +55,7 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>>
-     <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-     <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+     <link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{kendothemeversion}}/dist/default-ocean-blue.css" rel="stylesheet" />
      <script src="/api/reports/resources/js/telerikReportViewer"></script>>
      <style>
    	  #reportViewer1 {

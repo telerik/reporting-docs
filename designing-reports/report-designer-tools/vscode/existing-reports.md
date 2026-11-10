@@ -3,7 +3,8 @@ title: Working with Existing Reports in VS Code
 page_title: Working with Existing Telerik Reports in VS Code
 description: Edit and preview existing Telerik reports in Visual Studio Code, configure common dependencies, and continue in a Web Report Designer application when application-level configuration is required.
 slug: telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports
-tags: reporting, vscode, report, designer
+tags: reporting, vscode, integration, report, designer
+tag: new
 published: True
 position: 2
 reportingArea: General

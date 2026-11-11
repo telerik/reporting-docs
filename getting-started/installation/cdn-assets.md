@@ -43,13 +43,13 @@ Add the following assets to the page in order. The Kendo UI script provides the 
 - Kendo UI script for the Report Viewer:
 
 	```html
-	<script src="https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@32.26.1110/dist/js/telerikReportViewer.kendo.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@{{site.spaviewerversion}}./dist/js/telerikReportViewer.kendo.min.js"></script>
 	```
 
 - Report Viewer script:
 
 	```html
-	<script src="https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@32.26.1110/dist/js/telerikReportViewer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@{{site.spaviewerversion}}./dist/js/telerikReportViewer.min.js"></script>
 	```
 
 ## Web Report Designer

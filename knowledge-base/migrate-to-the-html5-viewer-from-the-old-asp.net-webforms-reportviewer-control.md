@@ -11,11 +11,9 @@ res_type: kb
 
 The article applies to the following environment:
 
-| Property | Value |
-|---|---|
-| Product | Progress® Telerik® Reporting |
-| Project type | Web projects |
-| Report viewer | Legacy ASP.NET Report Viewer |
+| Product | Project type | Report viewer |
+|---|---|---|
+| Progress® Telerik® Reporting | Web projects | Legacy ASP.NET Report Viewer |
 
 ## Description
 

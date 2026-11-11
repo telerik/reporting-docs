@@ -12,12 +12,12 @@ components: [general]
 
 # Setting Up Your Telerik Reporting License Key
 
+|Minimum Version|Q1 2025|
+|----|----|
+
 Telerik Reporting requires activation with a license key for both trial and commercial versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
 
 The following table shows the minimum Telerik Reporting version that requires license activation:
-
-|Minimum Version|Q1 2025|
-|----|----|
 
 An invalid license results in [errors and warnings](slug:license-errors-and-warnings), such as watermarks and banners during build, test, and publish.
 

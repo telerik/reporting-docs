@@ -1,7 +1,7 @@
 ---
 title: Web Reporting Assets
 page_title: Loading Report Viewer and Designer Assets
-description: "Learn how to load Kendo UI scripts and themes from public CDNs and Telerik Reporting scripts from REST services for the HTML5 viewer and Web Report Designer."
+description: "Learn how to load Kendo UI and HTML5 Report Viewer scripts and themes from public CDNs, and Web Report Designer scripts from a Telerik Reporting REST service."
 slug: telerikreporting/getting-started/installation/cdn-assets
 tags: html5,reportviewer,webreportdesigner,kendo,cdn,assets
 published: True
@@ -12,24 +12,45 @@ components: [general]
 
 # HTML5 Report Viewer and Web Report Designer Assets
 
-The HTML5 Report Viewer and Web Report Designer require Kendo UI assets and Telerik Reporting scripts. This article lists the public CDN URLs for the Kendo UI assets and the REST service endpoints that serve the Reporting scripts.
+Use CDN-hosted scripts for the HTML5 Report Viewer. For the Web Report Designer, load its viewer and designer scripts from the REST service that hosts it.
 
-For applications that use only the default Reporting widgets, use the Reporting-supplied Kendo UI subsets instead of the full Kendo UI scripts listed below. The HTML5 Report Viewer loads its subset automatically from the Reporting REST Service when no Kendo UI bundle is present. For the Web Report Designer, replace the full Kendo UI script with a locally hosted copy of `webReportDesigner.kendo-{{site.buildversion}}.min.js`. Copy it from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportDesigner\js` and load it in the same position. Keep the theme and other Reporting scripts. See [why the Reporting subsets avoid separate Kendo license validation](slug:kendo-jquery-license-warning-aspnetcore-reporting#cause).
+For Web Report Designer applications that use only the default Reporting widgets, you can use the Reporting-supplied Kendo UI subset instead of the full Kendo UI script shown below. 
 
-> note The Kendo UI scripts from the public CDNs are not prelicensed. Apply your Kendo UI for jQuery license as described in [Setting Up Your License Key](https://www.telerik.com/kendo-jquery-ui/documentation/intro/installation/using-license-code).
+Replace it with a locally hosted copy of `webReportDesigner.kendo-{{site.buildversion}}.min.js`. 
+
+Copy the file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportDesigner\js` and load it in place of the Kendo UI script. Keep the theme and other Reporting scripts. 
+
+See [why the Reporting subsets avoid separate Kendo license validation](slug:kendo-jquery-license-warning-aspnetcore-reporting#cause).
+
+> note The separate Kendo UI script from the public CDN used for the Web Report Designer is not prelicensed. Apply your Kendo UI for jQuery license as described in [Setting Up Your License Key](https://www.telerik.com/kendo-jquery-ui/documentation/intro/installation/using-license-code).
 
 ## HTML5 Report Viewer
 
-Load jQuery first (for example, `https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js`), then add the following Kendo UI assets to the page that hosts the viewer:
+Add the following assets to the page in order. The Kendo UI script provides the viewer's Kendo UI assets, so do not also load a separate Kendo UI script.
 
-- Kendo UI script: `https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{site.kendosubsetversion}}/umd/kendo.all.min.js`
-- Ocean Blue theme: `https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{site.kendothemeversion}}/dist/default-ocean-blue.css`
+- Ocean Blue theme stylesheet:
 
-Load the Report Viewer script from the REST service that processes your reports:
+	```html
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{site.kendothemeversion}}/dist/default-ocean-blue.css">
+	```
 
-`/api/reports/resources/js/telerikReportViewer`
+- jQuery:
 
-If your REST service uses a different path, replace `/api/reports` with that path.
+	```html
+	<script src="https://code.jquery.com/jquery-{{site.jqueryversion}}.min.js"></script>
+	```
+
+- Kendo UI script for the Report Viewer:
+
+	```html
+	<script src="https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@32.26.1110/dist/js/telerikReportViewer.kendo.min.js"></script>
+	```
+
+- Report Viewer script:
+
+	```html
+	<script src="https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@32.26.1110/dist/js/telerikReportViewer.min.js"></script>
+	```
 
 ## Web Report Designer
 

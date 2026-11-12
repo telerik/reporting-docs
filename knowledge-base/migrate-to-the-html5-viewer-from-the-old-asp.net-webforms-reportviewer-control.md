@@ -26,7 +26,7 @@ The HTML5 Viewer is a client-side HTML, JavaScript, and CSS widget that you can 
 
 The HTML5 Viewer communicates with a Reporting REST Service that processes and renders reports on the server. The viewer exchanges lightweight messages with the service. Full data and report instances remain on the server.
 
-The service includes default report resolvers that interpret the viewer's `reportSource.Report` string as a `TypeReportSource` or `UriReportSource`. Implement a custom report resolver when you need to resolve a report by its string identifier. For details, see the [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
+The service includes default report resolvers that map report paths to a `UriReportSource` and assembly-qualified report type names to a `TypeReportSource`. Implement a custom report resolver when you need additional server-side logic or an identifier format that the built-in resolvers do not support. For details, see the [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
 
 The service stores rendered reports in the configured cache. It can reuse rendered reports according to the [HTML5 Viewer and Reporting REST Service cache settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}).
 

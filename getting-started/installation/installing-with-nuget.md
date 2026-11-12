@@ -145,8 +145,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 If you need to update expired or invalid credentials, run this command:
 
 ```cmd
-NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key"****** -StorePasswordInClearText
--UserName "api-key" -Password "YOUR-API-KEY" ^
+NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key" -Password "<API_KEY>" -StorePasswordInClearText
 ```
 
 After you run the command, reopen Visual Studio, Rider, or any other NuGet client so it reloads the updated source configuration.

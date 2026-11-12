@@ -537,7 +537,7 @@ function block_line(raw, line,    value, expanded, indent, marker, run, containe
 }
 
 function scan_links(text, offset,    rows, n, i, value, start, ending, label, href,
-                    position, line, current_line, c, j, tag, image, nextchar) {
+                    position, line, current_line, c, j, tag, image, nextchar, definition_end) {
     text = mask_special(expand_liquid_slugs(text))
     n = split(text, rows, "\n")
     for (i = 1; i <= n; i++) {
@@ -548,10 +548,17 @@ function scan_links(text, offset,    rows, n, i, value, start, ending, label, hr
             ending = closing_bracket(value, start)
             if (ending && substr(value, ending + 1, 1) == ":") {
                 label = reference_label(substr(value, start + 1, ending - start - 1))
+                definition_end = i
+                if (trim(substr(value, ending + 2)) == "" && i < n &&
+                    !html_lines[i + 1] && trim(rows[i + 1]) != "") {
+                    value = value "\n" rows[i + 1]
+                    definition_end++
+                }
                 if (destination(value, ending + 2) && destination_value != "") {
                     if (!(label in reference_definitions))
                         reference_definitions[label] = markdown_unescape(destination_value)
-                    rows[i] = blank(value)
+                    for (j = i; j <= definition_end; j++) rows[j] = blank(rows[j])
+                    i = definition_end
                 }
             }
         }
@@ -596,7 +603,7 @@ function scan_links(text, offset,    rows, n, i, value, start, ending, label, hr
         image = i > 1 && substr(text, i - 1, 1) == "!"
         label = reference_label(substr(text, i + 1, ending - i - 1))
         nextchar = substr(text, ending + 1, 1)
-        j = ending
+        j = 0
         href = ""
         if (nextchar == "(" && destination(text, ending + 2)) {
             href = markdown_unescape(destination_value)
@@ -608,10 +615,19 @@ function scan_links(text, offset,    rows, n, i, value, start, ending, label, hr
             if (position) {
                 value = substr(text, ending + 2, position - ending - 2)
                 if (value != "") label = reference_label(value)
-                if (label in reference_definitions) href = reference_definitions[label]
-                j = position
+                if (label in reference_definitions) {
+                    href = reference_definitions[label]
+                    j = position
+                }
             }
-        } else if (label in reference_definitions) href = reference_definitions[label]
+        } else if (label in reference_definitions) {
+            href = reference_definitions[label]
+            j = ending
+        }
+        if (!j) {
+            i++
+            continue
+        }
         if (!image && href != "") add_link(href, line)
         value = substr(text, i, j - i + 1)
         current_line += gsub(/\n/, "\n", value)

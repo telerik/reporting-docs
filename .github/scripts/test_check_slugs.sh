@@ -69,6 +69,117 @@ check 0
 contains '2 unique slugs, and 4 slug links; 0 error(s).'
 done_case
 
+new_case reference-destination-on-continuation-line
+write links.md <<'MD'
+[broken][target]
+
+[target]:
+  slug:missing
+MD
+check 1
+contains "links.md:1: Unknown slug 'missing'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case valid-reference-destination-continuations
+write scripts/generated-slugs.txt <<'TXT'
+viewer/methods
+TXT
+write target.md <<'MD'
+---
+slug: target
+---
+MD
+write links.md <<'MD'
+[full][target]
+[target][]
+[target]
+[liquid][dynamic]
+[angle][angle]
+
+[target]:
+  slug:target#anchor "A title"
+[dynamic]:
+    {%slug viewer/methods%}?query=1
+[angle]:
+  <slug:target>
+MD
+check 0
+contains '5 slug links; 0 error(s).'
+done_case
+
+new_case reference-continuations-do-not-cross-blank-lines-or-code
+write links.md <<'MD'
+[undefined][target]
+[undefined][fenced]
+[undefined][commented]
+
+[target]:
+
+  slug:missing
+
+~~~md
+[fenced]:
+  slug:code
+~~~
+
+<!--
+[commented]:
+  slug:comment
+-->
+
+[broken](slug:visible)
+MD
+check 1
+contains "links.md:19: Unknown slug 'visible'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case nested-links-in-literal-brackets
+write links.md <<'MD'
+[see [nested](slug:nested-missing)]
+[outer
+ with [nested]({%slug liquid-missing%})]
+[see [nested][target]]
+
+[target]: slug:reference-missing
+MD
+check 1
+contains "links.md:1: Unknown slug 'nested-missing'"
+contains "links.md:3: Unknown slug 'liquid-missing'"
+contains "links.md:4: Unknown slug 'reference-missing'"
+contains '3 slug links; 3 error(s).'
+done_case
+
+new_case nested-links-in-invalid-outer-links-and-images
+write links.md <<'MD'
+[see [nested](slug:invalid-outer)](not a valid destination)
+![see [nested](slug:invalid-image)]
+[see [nested](slug:undefined-reference)][undefined]
+MD
+check 1
+contains "links.md:1: Unknown slug 'invalid-outer'"
+contains "links.md:2: Unknown slug 'invalid-image'"
+contains "links.md:3: Unknown slug 'undefined-reference'"
+contains '3 slug links; 3 error(s).'
+done_case
+
+new_case recognized-links-and-images-still-skip-their-destinations
+write target.md <<'MD'
+---
+slug: target
+---
+MD
+write links.md <<'MD'
+[label [literal brackets]](slug:target)
+[external](https://example.com/[ignored](slug:external-destination))
+![see [ignored](slug:image-label)](image.png)
+![see [ignored](slug:empty-image-label)]()
+MD
+check 0
+contains '1 slug links; 0 error(s).'
+done_case
+
 new_case liquid-slug-links
 write scripts/generated-slugs.txt <<'TXT'
 viewer/methods

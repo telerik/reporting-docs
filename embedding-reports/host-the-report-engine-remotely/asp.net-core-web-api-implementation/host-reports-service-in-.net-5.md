@@ -56,7 +56,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
 1. Later in the tutorial, we will make sure that the `ReportsController` can resolve the definitions for the requested reports from this project folder.
 
->tip Use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) to take advantage of their design-time tooling. The Visual Studio integrated report designer tooling is not available in .NET projects.
+>tip Use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) or the [Web Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview) to take advantage of their design-time tooling. The [Visual Studio Report Designer for .NET preview](slug:vs-report-designer-net-getting-started#prerequisites) supports coded reports in Windows-targeted projects that meet its prerequisites.
 
 ### Adding the Required Dependencies
 

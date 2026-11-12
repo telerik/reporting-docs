@@ -1,7 +1,7 @@
 ---
 title: Hosting in .NET with Startup.cs
 page_title: Hosting the Reporting REST Service in ASP.NET Core with Startup.cs
-description: "Learn how to host the Telerik Reporting REST Service in an ASP.NET Core .NET 5 application with Startup.cs or the Visual Studio template."
+description: "Learn how to host the Telerik Reporting REST Service in an ASP.NET Core application with Startup.cs or the Visual Studio template."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5
 tags: host, reports, service, asp.net, core, .net
 tag: updated

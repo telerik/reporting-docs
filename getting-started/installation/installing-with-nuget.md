@@ -54,7 +54,7 @@ dotnet add package Telerik.Reporting
 
 Use the Visual Studio Package Manager Console when you manage packages inside Visual Studio and want PowerShell-based commands.
 
-```cmd
+```powershell
 Install-Package Telerik.Reporting
 ```
 

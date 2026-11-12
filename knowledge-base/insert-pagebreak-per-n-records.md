@@ -46,7 +46,7 @@ For report detail records, create a [report group](slug:telerikreporting/designi
 
 For records in a table, create a parent [table row group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item) around the details group. Set its grouping expression to `= Fields.GroupIdx` and its [`PageBreak`](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After`.
 
-Table group page breaks are incompatible with repeatable table headers and footers. If any table group has a `PageBreak` value other than `None`, repeatable headers and footers are not rendered, even with `PrintOnEveryPage` enabled.
+Table group page breaks are incompatible with repeatable group headers and footers controlled by `TableGroup.PrintOnEveryPage`. If any table group has a `PageBreak` value other than `None`, those group headers and footers are not rendered. This limitation does not apply to table row and column headers controlled by `RowHeadersPrintOnEveryPage` and `ColumnHeadersPrintOnEveryPage`.
 
 ## Additional Resources
 

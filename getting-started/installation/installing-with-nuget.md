@@ -133,7 +133,15 @@ Use these checks and fallback options:
 
 ### Setup with NuGet CLI
 
-Use the NuGet CLI on Windows when Visual Studio does not show a credentials dialog. For Linux, macOS, and CI environments, use the [.NET CLI commands for authenticated package sources](slug:restoring-nugets-in-ci#using-only-cli-commands).
+Use the NuGet CLI on Windows when Visual Studio does not show a credentials dialog.
+
+For Linux or macOS, use the .NET CLI with the .NET SDK installed. Run `dotnet nuget add source 'https://nuget.telerik.com/v3/index.json' --name 'telerik.com' --username 'api-key' --password '<API-KEY>' --store-password-in-clear-text`, and replace `<API-KEY>` with your generated API key.
+
+This command stores your API key in plain text. Use it only on a trusted machine, and do not commit or share the resulting configuration file.
+
+For CI environments, use a secret environment variable as described in the [NuGet configuration guidance for CI](slug:restoring-nugets-in-ci#using-a-nugetconfig-file-with-your-projects).
+
+To configure the feed with the NuGet CLI on Windows, follow these steps:
 
 1. Download the [latest NuGet CLI executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 1. Open a command prompt and change to the directory that contains `nuget.exe`.

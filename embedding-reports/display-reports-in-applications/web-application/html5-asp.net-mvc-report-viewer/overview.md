@@ -29,7 +29,7 @@ The HTML5 ASP.NET MVC Report Viewer has the following requirements:
 
 * ASP.NET MVC 4 or a later version, as described in the [ASP.NET MVC 4 documentation](https://learn.microsoft.com/en-us/aspnet/mvc/mvc4).
 * A reference to `Telerik.ReportViewer.Mvc.dll`.
-* The CSS and JavaScript files required by the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support), loaded before you create the viewer.
+* All [HTML5 Report Viewer requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support), including a running Reporting REST Service and the required browser capabilities. Load the required CSS and JavaScript files in the documented order before you create the viewer.
 
 ## Browser Support
 

@@ -84,7 +84,7 @@ Starting with Telerik Reporting R3 2016, report sections and `Panel` items suppo
 
 The following workaround applies only to versions before R3 2016 and excludes page headers and footers. To remove blank vertical space when you hide report items at runtime, set the container's `Height` to a small, nonzero value, such as `1mm`.
 
-A Section or a Panel item can expand to accommodate its children but cannot shrink or take space that is no longer occupied. To make a section or a panel shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `IntializeComponent()` method call.
+A Section or a Panel item can expand to accommodate its children but cannot shrink or take space that is no longer occupied. To make a section or a panel shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `InitializeComponent()` method call.
 
 ## Next Steps
 

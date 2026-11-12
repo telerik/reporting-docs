@@ -52,7 +52,7 @@ For the NuGet-based Visual Studio Report Designer for .NET, follow [Updating the
 
 	![Upgrade Wizard step for choosing projects and the target Telerik Reporting version](images/choose-project-step-upgrade-wizard.png)
 
-1. The next step lets you create a project backup.
+1. Create a project backup before you continue because the upgrade process is irreversible.
 
 	![Upgrade Wizard step for creating a project backup](images/backup-step-upgrade-wizard.png)
 

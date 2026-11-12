@@ -139,8 +139,7 @@ Use the NuGet CLI on Windows or when your automation requires `nuget.exe`. For L
 1. Replace `<API_KEY>` with the generated key, then run the following command to store the Telerik feed definition and credentials in `%AppData%\NuGet\NuGet.config`.
 
 ```cmd
-NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key"****** -StorePasswordInClearText
-	-UserName "api-key" -Password "YOUR-API-KEY" ^
+NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key" -Password "<API_KEY>" -StorePasswordInClearText
 ```
 
 If you need to update expired or invalid credentials, run this command:

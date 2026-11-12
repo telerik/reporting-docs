@@ -140,6 +140,7 @@ function mask_special(text,    result, i, run, j, size, ending, start, offset,
     result = ""
     block_fence = ""
     block_fence_size = 0
+    block_fence_container = ""
     block_html = 0
     block_persistent_html = ""
     block_list_depth = 0
@@ -147,6 +148,7 @@ function mask_special(text,    result, i, run, j, size, ending, start, offset,
     block_indented = 0
     for (key in block_list_markers) delete block_list_markers[key]
     for (key in block_list_columns) delete block_list_columns[key]
+    for (key in block_list_quotes) delete block_list_quotes[key]
     line = 1
     i = 1
     while (i <= length(text)) {
@@ -259,6 +261,26 @@ function markdown_unescape(value,    result, i, c, following) {
     return entities(result)
 }
 
+function expand_liquid_slugs(text,    result, prefix, ending, slug) {
+    result = ""
+    while (match(text, /\{%[ \t]*slug[ \t]+/)) {
+        prefix = RLENGTH
+        result = result substr(text, 1, RSTART - 1)
+        text = substr(text, RSTART)
+        ending = index(text, "%}")
+        if (!ending) break
+        slug = substr(text, prefix + 1, ending - prefix - 1)
+        if (slug ~ /[\r\n]/ || trim(slug) ~ /[ \t]/) {
+            result = result substr(text, 1, prefix)
+            text = substr(text, prefix + 1)
+        } else {
+            result = result "slug:" trim(slug)
+            text = substr(text, ending + 2)
+        }
+    }
+    return result text
+}
+
 function reference_label(value) {
     value = tolower(markdown_unescape(trim(value)))
     gsub(/[ \t\r\n]+/, " ", value)
@@ -352,6 +374,29 @@ function add_link(href, line,    slug, result, i, hex) {
     record("R", result, relative, line)
 }
 
+function html_tag_length(value) {
+    if (match(value, /^<[A-Za-z][A-Za-z0-9-]*([ \t\r\n]+[A-Za-z_:][A-Za-z0-9_.:-]*([ \t\r\n]*=[ \t\r\n]*([^ \t\r\n"'=<>`]+|'[^']*'|"[^"]*"))?)*[ \t\r\n]*\/?>/) ||
+        match(value, /^<\/[A-Za-z][A-Za-z0-9-]*[ \t\r\n]*>/)) return RLENGTH
+    return 0
+}
+
+function angle_span_length(value,    size, ending) {
+    size = html_tag_length(value)
+    if (size) return size
+    if (match(value, /^<[A-Za-z][A-Za-z0-9+.-]{1,31}:[^<>[:space:][:cntrl:]]*>/) ||
+        match(value, /^<[A-Za-z0-9.!#$%&'*+\/=?^_`{|}~-]+@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*>/) ||
+        match(value, /^<![A-Z]+[ \t\r\n]+[^>]*>/)) return RLENGTH
+    if (substr(value, 1, 2) == "<?") {
+        ending = index(value, "?>")
+        if (ending) return ending + 1
+    }
+    if (substr(value, 1, 9) == "<![CDATA[") {
+        ending = index(value, "]]>")
+        if (ending) return ending + 2
+    }
+    return 0
+}
+
 function html_link(tag, line,    rest, key, c, quote, value, i, j) {
     if (tolower(tag) !~ /^<a([ \t\r\n>]|$)/) return
     rest = substr(tag, 3)
@@ -380,19 +425,54 @@ function html_link(tag, line,    rest, key, c, quote, value, i, j) {
     }
 }
 
-function block_line(raw, line,    value, indent, marker, run) {
+function block_line(raw, line,    value, expanded, indent, marker, run, container,
+                    quotes, i, continued) {
     value = raw
     gsub(/\t/, "    ", value)
+    expanded = value
     if (block_fence != "") {
-        while (value ~ /^[ ]*>/) sub(/^[ ]*>[ ]?/, "", value)
-        marker = trim(value)
-        run = 0
-        while (substr(marker, run + 1, 1) == block_fence) run++
-        if (run >= block_fence_size && trim(substr(marker, run + 1)) == "") block_fence = ""
-        block_previous_blank = 1
-        return 1
+        continued = 1
+        quotes = 0
+        # A fence cannot outlive its quote markers or list-item indentation.
+        for (i = 1; i <= length(block_fence_container); i++) {
+            if (substr(block_fence_container, i, 1) == ">") {
+                if (!sub(/^[ ]{0,3}>[ ]?/, "", value)) {
+                    continued = 0
+                    break
+                }
+                quotes++
+            } else {
+                if (trim(value) != "" && substr(value, 1, 1) != " ") {
+                    continued = 0
+                    break
+                }
+                value = substr(value, 2)
+            }
+        }
+        if (continued) {
+            marker = trim(value)
+            run = 0
+            while (substr(marker, run + 1, 1) == block_fence) run++
+            if (value !~ /^    / && run >= block_fence_size &&
+                trim(substr(marker, run + 1)) == "") block_fence = ""
+            block_previous_blank = 1
+            return 1
+        }
+        block_fence = ""
+        while (block_list_depth && block_list_quotes[block_list_depth] > quotes) block_list_depth--
+        value = expanded
     }
-    while (value ~ /^[ ]{0,3}>/) sub(/^[ ]{0,3}>[ ]?/, "", value)
+    container = ""
+    quotes = 0
+    while (value ~ /^[ ]{0,3}>/) {
+        match(value, /^[ ]*/)
+        if (block_list_depth && block_list_quotes[block_list_depth] == quotes &&
+            RLENGTH >= block_list_columns[block_list_depth]) break
+        sub(/^[ ]{0,3}>[ ]?/, "", value)
+        container = container ">"
+        quotes++
+    }
+    while (block_list_depth && block_list_quotes[block_list_depth] > quotes) block_list_depth--
     match(value, /^[ ]*/)
     indent = RLENGTH
     if (match(value, /^[ ]*([-+*]|[0-9]+[.)])[ \t]+/)) {
@@ -400,12 +480,20 @@ function block_line(raw, line,    value, indent, marker, run) {
         if (!block_list_depth || indent != block_list_markers[block_list_depth]) block_list_depth++
         block_list_markers[block_list_depth] = indent
         block_list_columns[block_list_depth] = RLENGTH
+        block_list_quotes[block_list_depth] = quotes
+        container = container blank(substr(value, 1, RLENGTH))
         value = substr(value, RLENGTH + 1)
     } else if (trim(value) != "") {
         while (block_list_depth && indent < block_list_columns[block_list_depth]) block_list_depth--
-        if (block_list_depth) value = substr(value, block_list_columns[block_list_depth] + 1)
+        if (block_list_depth) {
+            container = container blank(substr(value, 1, block_list_columns[block_list_depth]))
+            value = substr(value, block_list_columns[block_list_depth] + 1)
+        }
     }
-    while (value ~ /^[ ]{0,3}>/) sub(/^[ ]{0,3}>[ ]?/, "", value)
+    while (value ~ /^[ ]{0,3}>/) {
+        sub(/^[ ]{0,3}>[ ]?/, "", value)
+        container = container ">"
+    }
     if (block_html) {
         html_lines[line] = 1
         if (block_persistent_html != "") {
@@ -426,9 +514,12 @@ function block_line(raw, line,    value, indent, marker, run) {
         block_fence = substr(marker, 1, 1)
         block_fence_size = 0
         while (substr(marker, block_fence_size + 1, 1) == block_fence) block_fence_size++
+        block_fence_container = container
         return 1
     }
-    if (tolower(value) ~ /^[ ]{0,3}<(address|article|aside|blockquote|div|dl|fieldset|figure|footer|form|h[1-6]|header|hr|iframe|main|nav|ol|p|pre|script|section|style|table|textarea|ul)([ \t>\/]|$)/) {
+    if (tolower(value) ~ /^[ ]{0,3}<(address|article|aside|blockquote|div|dl|fieldset|figure|footer|form|h[1-6]|header|hr|iframe|main|nav|ol|p|pre|script|section|style|table|textarea|ul)([ \t>\/]|$)/ ||
+        (block_previous_blank && value ~ /^[ ]{0,3}</ &&
+         html_tag_length(trim(value)) == length(trim(value)))) {
         block_html = 1
         html_lines[line] = 1
         if (tolower(value) ~ /^[ ]*<(pre|script|style|textarea)([ \t>]|$)/) {
@@ -446,8 +537,8 @@ function block_line(raw, line,    value, indent, marker, run) {
 }
 
 function scan_links(text, offset,    rows, n, i, value, start, ending, label, href,
-                    position, line, current_line, c, j, quote, tag, image, nextchar) {
-    text = mask_special(text)
+                    position, line, current_line, c, j, tag, image, nextchar) {
+    text = mask_special(expand_liquid_slugs(text))
     n = split(text, rows, "\n")
     for (i = 1; i <= n; i++) {
         value = rows[i]
@@ -482,22 +573,14 @@ function scan_links(text, offset,    rows, n, i, value, start, ending, label, hr
             continue
         }
         if (c == "<") {
-            quote = ""
-            for (j = i + 1; j <= length(text); j++) {
-                nextchar = substr(text, j, 1)
-                if (quote != "") {
-                    if (nextchar == quote) quote = ""
-                } else if (nextchar == "\"" || nextchar == "'") quote = nextchar
-                else if (nextchar == ">") break
-            }
-            if (j <= length(text)) {
-                tag = substr(text, i, j - i + 1)
+            ending = angle_span_length(substr(text, i))
+            if (ending) {
+                tag = substr(text, i, ending)
                 if (tag ~ /^<[sS][lL][uU][gG]:[^ \t\r\n<>]*>$/)
                     add_link(substr(tag, 2, length(tag) - 2), line)
                 else html_link(tag, line)
-                value = substr(text, i, j - i + 1)
-                current_line += gsub(/\n/, "\n", value)
-                i = j + 1
+                current_line += gsub(/\n/, "\n", tag)
+                i += ending
                 continue
             }
         }

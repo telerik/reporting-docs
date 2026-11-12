@@ -45,6 +45,68 @@ slug: source
         self.assertEqual({p.location.file for p in problems}, {"one.md", "two.md"})
         self.assertTrue(all("Duplicate slug 'same'" in p.message for p in problems))
 
+    def test_liquid_slug_links_resolve_in_markdown_references_and_html(self):
+        self.write(GENERATED_SLUGS, "viewer/methods\n")
+        self.write("target.md", "---\nslug: folder/hello!\n---\n")
+        self.write("links.md", """[inline]({%slug folder/hello!%})
+[spaced]({% slug folder/hello%21 %}?view=full#section "Title")
+[reference][target]
+<a href="{%slug viewer/methods%}#section">HTML</a>
+
+[target]: {%slug viewer/methods%}
+""")
+        _, problems, _, links = validate(self.root)
+        self.assertEqual(problems, [])
+        self.assertEqual(links, 4)
+
+    def test_unknown_liquid_slugs_preserve_source_lines(self):
+        self.write("links.md", """---
+slug: source
+---
+Paragraph introduction.
+[first]({%slug missing%}) and [second]({% slug other %}#section).
+[empty]({%slug %}).
+`code
+span` [last]({%slug last%}).
+<a
+ href="{%slug html-missing%}">HTML</a>
+""")
+        _, problems, _, links = validate(self.root)
+        self.assertEqual(links, 5)
+        self.assertEqual(
+            [(p.message, p.location.file, p.location.line) for p in problems],
+            [
+                ("Unknown slug 'missing'", "links.md", 5),
+                ("Unknown slug 'other'", "links.md", 5),
+                ("Unknown slug ''", "links.md", 6),
+                ("Unknown slug 'last'", "links.md", 8),
+                ("Unknown slug 'html-missing'", "links.md", 9),
+            ],
+        )
+
+    def test_liquid_slugs_in_code_comments_images_and_prose_are_not_links(self):
+        self.write("links.md", """`[ignored]({%slug inline-code%})`
+
+~~~md
+[ignored]({%slug fenced-code%})
+~~~
+
+    [ignored]({%slug indented-code%})
+
+<!-- [ignored]({%slug comment%})
+<a href="{%slug comment-html%}">ignored</a> -->
+
+![image]({%slug image%})
+Plain Liquid tag: {%slug prose%}.
+""")
+        self.write(
+            "draft.md",
+            "---\npublished: False\n---\n[ignored]({%slug unpublished%})\n",
+        )
+        _, problems, _, links = validate(self.root)
+        self.assertEqual(problems, [])
+        self.assertEqual(links, 0)
+
     def test_unpublished_articles_do_not_contribute_slugs_or_link_errors(self):
         self.write("live.md", "---\nslug: same\npublished: True\n---\n")
         for number, value in enumerate(("false", "False", "FALSE")):

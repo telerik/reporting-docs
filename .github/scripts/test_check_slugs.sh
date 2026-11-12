@@ -69,6 +69,75 @@ check 0
 contains '2 unique slugs, and 4 slug links; 0 error(s).'
 done_case
 
+new_case liquid-slug-links
+write scripts/generated-slugs.txt <<'TXT'
+viewer/methods
+TXT
+write target.md <<'MD'
+---
+slug: folder/hello!
+---
+MD
+write links.md <<'MD'
+[inline]({%slug folder/hello!%})
+[spaced]({% slug folder/hello%21 %}?view=full#section "Title")
+[reference][target]
+<a href="{%slug viewer/methods%}#section">HTML</a>
+
+[target]: {%slug viewer/methods%}
+MD
+check 0
+contains '2 unique slugs, and 4 slug links; 0 error(s).'
+done_case
+
+new_case unknown-liquid-slugs-preserve-source-lines
+write links.md <<'MD'
+---
+slug: source
+---
+Paragraph introduction.
+[first]({%slug missing%}) and [second]({% slug other %}#section).
+[empty]({%slug %}).
+`code
+span` [last]({%slug last%}).
+<a
+ href="{%slug html-missing%}">HTML</a>
+MD
+check 1
+contains "links.md:5: Unknown slug 'missing'"
+contains "links.md:5: Unknown slug 'other'"
+contains "links.md:6: Unknown slug ''"
+contains "links.md:8: Unknown slug 'last'"
+contains "links.md:9: Unknown slug 'html-missing'"
+contains '5 slug links; 5 error(s).'
+done_case
+
+new_case ignored-liquid-slugs
+write links.md <<'MD'
+`[ignored]({%slug inline-code%})`
+
+~~~md
+[ignored]({%slug fenced-code%})
+~~~
+
+    [ignored]({%slug indented-code%})
+
+<!-- [ignored]({%slug comment%})
+<a href="{%slug comment-html%}">ignored</a> -->
+
+![image]({%slug image%})
+Plain Liquid tag: {%slug prose%}.
+MD
+write draft.md <<'MD'
+---
+published: False
+---
+[ignored]({%slug unpublished%})
+MD
+check 0
+contains '0 slug links; 0 error(s).'
+done_case
+
 new_case duplicate-slugs
 write one.md <<'MD'
 ---
@@ -161,6 +230,62 @@ contains "Unknown slug 'missing'"
 contains "Unknown slug 'other'"
 contains "Unknown slug 'html-missing'"
 contains '3 slug links; 3 error(s).'
+done_case
+
+new_case literal-less-than-before-blockquote
+write links.md <<'MD'
+Values < 10: see [Link](slug:missing).
+
+> Note
+MD
+check 1
+contains "links.md:1: Unknown slug 'missing'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case malformed-angle-spans-do-not-hide-links
+write links.md <<'MD'
+Values < 10: see [first](slug:first) > 5.
+Invalid <123 [second](slug:second) >.
+Invalid <span data== [third](slug:third) >.
+Invalid </span extra [fourth](slug:fourth) >.
+MD
+check 1
+contains "links.md:1: Unknown slug 'first'"
+contains "links.md:2: Unknown slug 'second'"
+contains "links.md:3: Unknown slug 'third'"
+contains "links.md:4: Unknown slug 'fourth'"
+contains '4 slug links; 4 error(s).'
+done_case
+
+new_case literal-less-than-before-html-link
+write links.md <<'MD'
+Values < 10: see
+<a href="slug:html-missing">HTML</a> and [Link](slug:markdown-missing).
+MD
+check 1
+contains "links.md:2: Unknown slug 'html-missing'"
+contains "links.md:2: Unknown slug 'markdown-missing'"
+contains '2 slug links; 2 error(s).'
+done_case
+
+new_case valid-html-and-autolink-spans
+write links.md <<'MD'
+Inline <span title="> [ignored](slug:attribute-code)">text</span>.
+Inline <custom-tag
+ data-example='[ignored](slug:multiline-attribute-code)' />.
+External <https://example.com/[ignored](slug:url-code)>.
+External <https://example.com/'[ignored](slug:quoted-url-code)>.
+Email <someone@example.com>.
+Inline <?instruction [ignored](slug:processing-instruction)?>.
+Inline <![CDATA[ > [ignored](slug:cdata) ]]>.
+Inline <!DOCTYPE example [ignored](slug:declaration)>.
+<slug:missing> and <slug:missing-quote'>.
+MD
+check 1
+contains "links.md:10: Unknown slug 'missing'"
+contains "links.md:10: Unknown slug 'missing-quote''"
+contains '2 slug links; 2 error(s).'
 done_case
 
 new_case ignored-code-comments-and-external-links
@@ -407,6 +532,168 @@ MD
 check 1
 contains '1 slug links; 1 error(s).'
 contains "Unknown slug 'visible'"
+done_case
+
+new_case unclosed-blockquote-fence
+write links.md <<'MD'
+> ~~~md
+> [ignored](slug:quoted-code)
+
+[broken](slug:missing)
+MD
+check 1
+contains "links.md:4: Unknown slug 'missing'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case unclosed-nested-blockquote-fence
+write links.md <<'MD'
+> > ```md
+> > [ignored](slug:nested-code)
+>
+> [parent](slug:parent)
+
+[outside](slug:outside)
+MD
+check 1
+contains "links.md:4: Unknown slug 'parent'"
+contains "links.md:6: Unknown slug 'outside'"
+contains '2 slug links; 2 error(s).'
+done_case
+
+new_case unclosed-list-fence
+write links.md <<'MD'
+- ~~~md
+  [ignored](slug:list-code)
+
+  [still ignored](slug:list-code-after-blank)
+- [sibling](slug:sibling)
+
+[outside](slug:outside)
+MD
+check 1
+contains "links.md:5: Unknown slug 'sibling'"
+contains "links.md:7: Unknown slug 'outside'"
+contains '2 slug links; 2 error(s).'
+done_case
+
+new_case unclosed-ordered-list-fence
+write links.md <<'MD'
+1. ```md
+   [ignored](slug:ordered-code)
+2. [sibling](slug:sibling)
+MD
+check 1
+contains "links.md:3: Unknown slug 'sibling'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case unclosed-nested-list-fence
+write links.md <<'MD'
+- Parent item.
+
+  - ~~~md
+    [ignored](slug:nested-list-code)
+
+  [parent](slug:parent)
+
+[outside](slug:outside)
+MD
+check 1
+contains "links.md:6: Unknown slug 'parent'"
+contains "links.md:8: Unknown slug 'outside'"
+contains '2 slug links; 2 error(s).'
+done_case
+
+new_case unclosed-list-blockquote-fence
+write links.md <<'MD'
+1. Parent item.
+
+    > ~~~md
+    > [ignored](slug:quoted-list-code)
+
+    [parent](slug:parent)
+MD
+check 1
+contains "links.md:6: Unknown slug 'parent'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case unclosed-quote-fence-in-unordered-list
+write links.md <<'MD'
+- Parent item.
+
+  > ~~~md
+  > [ignored](slug:quoted-list-code)
+
+    [parent](slug:parent)
+MD
+check 1
+contains "links.md:6: Unknown slug 'parent'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case unclosed-quote-fence-in-quoted-list
+write links.md <<'MD'
+> - Parent item.
+>
+>   > ~~~md
+>   > [ignored](slug:quoted-list-code)
+>
+>     [parent](slug:parent)
+MD
+check 1
+contains "links.md:6: Unknown slug 'parent'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case unclosed-blockquote-list-fence
+write links.md <<'MD'
+> - ~~~md
+>   [ignored](slug:list-in-quote-code)
+
+    [indented code](slug:ignored-indented)
+
+[outside](slug:outside)
+MD
+check 1
+contains "links.md:6: Unknown slug 'outside'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case fence-closing-markers-must-match-container
+write links.md <<'MD'
+~~~md
+> ~~~
+[ignored](slug:root-code)
+~~~
+
+- ~~~md
+  > ~~~
+  [ignored](slug:list-code)
+  ~~~
+
+[outside](slug:outside)
+MD
+check 1
+contains "links.md:11: Unknown slug 'outside'"
+contains '1 slug links; 1 error(s).'
+done_case
+
+new_case html-block-after-unclosed-list-fence
+write links.md <<'MD'
+1. List item.
+
+    ````xml
+<configuration>
+    <item />
+````
+
+[outside](slug:outside)
+MD
+check 1
+contains "links.md:8: Unknown slug 'outside'"
+contains '1 slug links; 1 error(s).'
 done_case
 
 new_case tab-indented-nested-lists

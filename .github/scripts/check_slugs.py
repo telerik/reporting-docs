@@ -11,12 +11,34 @@ import re
 from urllib.parse import unquote
 
 from markdown_it import MarkdownIt
+from markdown_it.rules_inline import autolink, html_inline, link
 import yaml
 
 
 IGNORED_DIRECTORIES = {"node_modules", "vendor", "_site", "_build"}
 GENERATED_SLUGS = "scripts/generated-slugs.txt"
 MARKDOWN = MarkdownIt("commonmark")
+LIQUID_SLUG = re.compile(r"{%[ \t]*slug[ \t]+([^ \t\r\n]*?)[ \t]*%}")
+
+
+def with_source_line(rule):
+    def parse(state, silent):
+        start = state.pos
+        token_index = len(state.tokens)
+        matched = rule(state, silent)
+        if matched and not silent:
+            # The rule may flush pending text before emitting the link or HTML token.
+            for token in state.tokens[token_index:]:
+                if token.type in {"link_open", "html_inline"}:
+                    token.meta["source_line"] = state.src.count("\n", 0, start)
+                    break
+        return matched
+
+    return parse
+
+
+for name, rule in (("link", link), ("autolink", autolink), ("html_inline", html_inline)):
+    MARKDOWN.inline.ruler.at(name, with_source_line(rule))
 
 
 @dataclass(frozen=True)
@@ -81,18 +103,20 @@ def read_article(path, root):
 
 def article_links(body, offset):
     """Use Markdown tokens so code, comments, and ordinary text are not links."""
+    body = LIQUID_SLUG.sub(r"slug:\1", body)
     for block in MARKDOWN.parse(body):
         line = offset + (block.map[0] if block.map else 0) + 1
         tokens = block.children if block.type == "inline" else [block]
         for token in tokens:
+            token_line = line + token.meta.get("source_line", 0)
             if token.type == "link_open":
-                yield token.attrGet("href"), line
+                yield token.attrGet("href"), token_line
             elif token.type in {"html_inline", "html_block"}:
                 parser = HTMLLinks()
                 parser.feed(token.content)
                 parser.close()
                 for href, relative_line in parser.links:
-                    yield href, line + relative_line
+                    yield href, token_line + relative_line
 
 
 def validate(root):

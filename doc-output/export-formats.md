@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Document Output Overview
-description: "Learn more about export formats (rendering extensions or document outputs) in Telerik Reporting and how you may control the available ones in your project."
+description: "Learn how Telerik Reporting rendering extensions produce export formats and how to inspect and configure those formats in your application."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
 previous_url: /using-reports-in-applications/export-and-configure/export-formats, /configuring-rendering-extensions, /doc-output/
 tags: telerik, reporting, export, formats, document, output, overview
@@ -26,29 +26,30 @@ table th:nth-of-type(4) {
 }
 </style>
 
-# Overview of the Available Export Formats
+# Overview
 
-An export format is a component of the Telerik Reporting engine that transforms report data and layout into a device-specific format. The export formats are also referred to as rendering extensions because they render the report content into a specific output format and because they get plugged into the engine as extensions.
+An export format is a component of the Telerik Reporting engine that transforms report data and layout into a device-specific format. These formats are also called rendering extensions because they plug into the engine as extensions.
 
-By default Telerik Reporting outputs reports in the following formats:
+Telerik Reporting includes rendering extensions for the following output formats:
 
-- Image
-- PDF
-- HTML
-- MHTML
-- Excel 97-2003
-- XLSX
-- PPTX
-- DOCX
-- RTF
-- XAML
-- CSV
+* Image
+* PDF
+* HTML5
+* MHTML
+* Excel 97-2003
+* XPS
+* XLSX
+* PPTX
+* DOCX
+* RTF
+* XAML
+* CSV
 
-Interactive rendering extensions (`IMAGEInteractive`, `HTML5Interactive`, `XAMLInteractive`, `WPFXAMLInteractive`) are used internally by viewers to allow interaction with the content e.g., toggling the visibility of items/sections. Interactive rendering extensions are for Telerik Internal use only.
+Interactive rendering extensions (`IMAGEInteractive`, `HTML5Interactive`, `XAMLInteractive`, `WPFXAMLInteractive`) are used internally by viewers to allow interaction with the content, for example, toggling the visibility of items or sections. Interactive rendering extensions are for Telerik internal use only.
 
 Use the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) extension method [GetAvailableRenderingExtensions()](/api/telerik.reporting.processing.reportprocessor#telerik_reporting_processing_reportprocessor_getavailablerenderingextensions) to get the actually available and loaded rendering extensions for the particular environment.
 
-### Device Information Settings
+## Device Information Settings
 
 You can specify rendering extension parameters in your application’s configuration file to override the default report rendering behavior. The rendering extension parameters are specified as device information settings.
 
@@ -60,13 +61,13 @@ If you want to set rendering extension parameters for a specific report or rende
 
 For more information about specifying device information settings for a rendering operation, and to view the complete list of device information settings, see Telerik Reporting [Device Information Settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview).
 
-> note For Windows applications the configuration file is called `app.config` and for ASP.NET applications – `web.config`. For more information about configuring a .NET application, see [Configuring Apps by using Configuration Files](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/).
+>note For Windows applications, the configuration file is called `app.config`; for ASP.NET applications, it is called `web.config`. For more information about configuring a .NET application, see [Configuring Apps by Using Configuration Files](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/).
 
-> All configuration settings on Telerik Reporting engine are applied only at runtime, not in design-time.
+>important Telerik Reporting configuration settings apply only at runtime, not at design time.
 
-### Document Output Table
+## Document Output Table
 
-The following table describes the rendering extensions that are included with Telerik Reporting:
+The following table describes the rendering extensions included with Telerik Reporting:
 
 | Extension Name                                                                                                                                                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Optional Settings                                                                                                                                                                                      | Type                                                                                                                                                                               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

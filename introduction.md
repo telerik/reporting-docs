@@ -11,7 +11,7 @@ previous_url: /overview, /quick-start-overview
 
 # Welcome to Telerik Reporting
 
-Progress Telerik Reporting is a [.NET reporting solution](https://www.telerik.com/products/reporting.aspx) for designing, processing, exporting, and embedding reports in web, desktop, and cloud-based applications. It gives development teams the tools to build pixel-perfect reports and the viewers and services required to deliver those reports inside business applications.
+Progress® Telerik® Reporting is a [.NET reporting solution](https://www.telerik.com/products/reporting.aspx) for designing, processing, exporting, and embedding reports in web, desktop, and cloud-based applications. It gives development teams the tools to build pixel-perfect reports and the viewers and services required to deliver those reports inside business applications.
 
 Use Telerik Reporting when you need to create operational reports, invoices, statements, dashboards, or printable business documents that pull data from multiple sources and render consistently across technologies.
 
@@ -42,6 +42,8 @@ Telerik Reporting supports report design, processing, or viewing across the foll
 | Windows          | Full support for all components: the Standalone Report Designer, desktop report viewers, report service hosting, and web application integration. |
 | Linux            | Hosting report processing services and embedding HTML5-based viewers and designers in web applications. |
 | macOS            | Hosting report processing services and embedding HTML5-based viewers and designers in web applications. |
+
+Linux and macOS deployments use .NET and require the SkiaSharp graphics engine. Review the [cross-platform support requirements](slug:telerikreporting/using-reports-in-applications/dot-net-core-support) before deploying outside Windows.
 
 ## Supported Frameworks
 
@@ -123,7 +125,7 @@ Choose the viewer that matches the technology stack of the application where end
 
 ### Export Formats
 
-Web viewers and web designers typically work with a reporting service that processes report definitions and returns document output. You host this service in an ASP.NET Core application. The service receives a report definition, processes it with data, and returns the rendered result to the viewer or the export pipeline.
+Web viewers and web designers typically work with a [Telerik Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview) that processes report definitions and returns document output. You host this service in an ASP.NET Core application. The service processes the report with data and returns the rendered result to the viewer or export pipeline.
 
 Export formats let users save the resulting report in the format that fits their workflow. Common output formats include:
 
@@ -159,9 +161,7 @@ Telerik products, including Telerik Reporting, are classified as **EAR99** for e
 
 ## Support Options
 
-If you run into issues while working with Telerik Reporting, use the support channel that best matches the type of question.
-
-Sharing detailed feedback also helps improve the product and documentation.
+If you run into issues while working with Telerik Reporting, choose the support channel that matches your question. Use these options to get help, share feedback, or review product updates:
 
 * Use the [Telerik Reporting support system](https://www.telerik.com/account/support-tickets) when you have an active license and need product support.
 * Use the [Telerik Reporting forum](https://www.telerik.com/forums/reporting) for general questions and community discussion.

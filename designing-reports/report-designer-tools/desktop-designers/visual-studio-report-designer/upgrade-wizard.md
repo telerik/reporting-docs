@@ -1,7 +1,7 @@
 ---
 title: Upgrade Wizard
 page_title: Using the Upgrade Wizard
-description: "Learn how the Upgrade Wizard can be used to upgrade a .NET Framework project by following the wizard steps."
+description: "Learn how to use the Telerik Reporting Upgrade Wizard to update .NET Framework projects, references, configuration files, and resources."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard
 tags: upgrade,wizard
 published: True
@@ -11,92 +11,84 @@ reportingArea: General
 components: [general]
 ---
 
-# Upgrade Wizard Overview
+# Upgrade Wizard
 
-The Visual Studio Extensions offer the Project **Upgrade Wizard**. It will guide you through the process of upgrading **Telerik Reporting** projects to a newer (or older) version of Telerik Reporting. 
+The Visual Studio Extensions include the **Upgrade Wizard**, which guides you through upgrading or downgrading **Telerik Reporting** projects.
 
-Before starting the wizard, you can check what version of Telerik Reporting is currently referred in your project:
+Before starting the wizard, check which Telerik Reporting version your project references:
 
-![Check Version](images/check-referred-version.png)  
+![Visual Studio dialog showing the Telerik Reporting version referenced by the project](images/check-referred-version.png)
 
-The **Upgrade Wizard** can be started by using the **Extensions > Telerik > Reporting > Upgrade Wizard** menu item:
+Start the **Upgrade Wizard** from **Extensions** > **Telerik** > **Reporting** > **Upgrade Wizard**:
 
-![Start Upgrade Wizard](images/start-upgrade-wizard.png) 
+![Visual Studio menu showing the command for starting the Telerik Reporting Upgrade Wizard](images/start-upgrade-wizard.png)
 
-This wizard will upgrade the following:
+The wizard updates the following project items:
 
-* The references to Telerik Reporting assemblies to the selected version
-* The project’s `.config` file
-* All web page/user control files (`aspx`/`ascx`) with references to the Telerik Reporting assemblies
-* All resource files (`resx`) with references to the Telerik Reporting assemblies
+* References to Telerik Reporting assemblies
+* The project `.config` file
+* Web page and user control files (`aspx` and `ascx`) that reference Telerik Reporting assemblies
+* Resource files (`resx`) that reference Telerik Reporting assemblies
 
->note The wizard __will not__ change any code, or namespaces, nor will it remove obsolete properties, events, and methods. You may need to manually update your code after this wizard completes.
+>note The wizard does not change code or namespaces, and it does not remove obsolete properties, events, or methods. Update your code manually after the wizard completes.
 
-> Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently, and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically - [Web Application Projects versus Web Site Projects in Visual Studio](https://learn.microsoft.com/en-us/previous-versions/aspnet/dd547590(v=vs.110)).
+>warning Web Site projects are not supported by the Upgrade Wizard. Upgrade these projects manually or convert them to Web Application projects. For more information, see [Web Application Projects versus Web Site Projects in Visual Studio](https://learn.microsoft.com/en-us/previous-versions/aspnet/dd547590(v=vs.110)).
 
-> `.NET` and `.NET Core` projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:
+The wizard also does not support the following project types:
+
+>warning `.NET` and `.NET Core` projects are not supported by the Upgrade Wizard. Upgrade the following items manually:
 >
-> * The references to the Telerik Reporting assemblies or NuGet packages
+> * References to Telerik Reporting assemblies or NuGet packages.
 >
-> * The HTML5 Report Viewer scripts
+> * HTML5 Report Viewer scripts.
 
 For the NuGet-based Visual Studio Report Designer for .NET, follow [Updating the Designer Package](slug:vs-report-designer-net-getting-started#updating-the-designer-package). Its version follows the project's `Telerik.Reporting.VSDesigner` package reference, and all Telerik Reporting packages must use that same version.
 
-1. On the first step the wizard provides basic update process information:
+1. The first step provides basic information about the update process:
 
-	![First Step in Upgrade Wizard](images/first-step-upgrade-wizard.png)  
+	![First Upgrade Wizard step showing information about the update process](images/first-step-upgrade-wizard.png)
 
-1. On the next step, the wizard lists all projects from the solution, which use Telerik Reporting. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to.
+1. The next step lists all projects in the solution that use Telerik Reporting. Choose the projects to update and the target version. Upgrade all projects to the same version instead of updating only part of the solution.
 
-	![Choose Project in Upgrade Wizard](images/choose-project-step-upgrade-wizard.png)   
+	![Upgrade Wizard step for choosing projects and the target Telerik Reporting version](images/choose-project-step-upgrade-wizard.png)
 
-1. The next screen allows you to create a backup for the project.
+1. Create a project backup before you continue because the upgrade process is irreversible.
 
-	![Backup in Upgrade Wizard](images/backup-step-upgrade-wizard.png)    
+	![Upgrade Wizard step for creating a project backup](images/backup-step-upgrade-wizard.png)
 
-1. Review the changes.
+1. Review the changes before you continue.
 
-	![Review Changes in Upgrade Wizard](images/review-step-upgrade-wizard.png)   
+	![Upgrade Wizard step for reviewing the files that will change](images/review-step-upgrade-wizard.png)
 
-1. The Complete step indicates whether the upgrade process is completed for all the projects successfully. It also indicates if any errors occured and the user is promped to decide whether to proceed or revert the changes:
+1. The Complete step shows whether the wizard updated all projects successfully. If errors occur, choose whether to continue or revert the changes.
 
-	![Errors in Upgrade Wizard](images/errors-in-upgrade-wizard.png)   
+	![Upgrade Wizard completion step showing errors and options to continue or revert changes](images/errors-in-upgrade-wizard.png)
 
-1. The Licensing step was added with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release of the product. It allows for seemlessly downloading the license key from your [Telerik account](https://www.telerik.com/account/) and putting it in the `%AppData%\Telerik` directory.
+1. Starting with the [Progress® Telerik® Reporting 2025 Q2 (19.1.25.521)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q2-19-1-25-521) release, the Licensing step lets you download a license key from your [Telerik account](https://www.telerik.com/account/) and save it in `%AppData%\Telerik`.
 
-	![The Licensing step of the Reporting extension's Upgrade Wizard](images/licensing-step-upgrade-wizard.png)
+	![Licensing step of the Telerik Reporting Upgrade Wizard](images/licensing-step-upgrade-wizard.png)
 
-1. Finally, the wizard shows a log file with the changes:
+1. The final step shows a log file with the changes:
 
-	![Log in Upgrade Wizard](images/log-in-upgrade-wizard.png)    
+	![Upgrade Wizard log showing the changes made to the project](images/log-in-upgrade-wizard.png)
 
-The Upgrade Wizard works only with project items. It is registered in Visual Studio and keeps track of Telerik Reporting installation folders on the machine. Telerik Reporting references are updated by using the selected in the wizard version and the installation folder registered for that version. If Telerik Reporting assemblies are referenced from a custom location, not the installation folder, the Upgrade Wizard will not update the content of the custom folder and references will be pointed to the installation folder.
+The Upgrade Wizard works only with project items. It is registered in Visual Studio and tracks Telerik Reporting installation folders on the machine. The wizard updates references with the selected version from that version's registered installation folder. If assemblies use a custom location, the wizard does not update that folder and points the references to the registered installation folder.
 
-The wizard requires access permissions to the solution folder and its files. If the solution or some of its projects are under source control, make sure that the correct source control plug-in is active in Visual Studio and that no files are exclusively checked out by another user.
+The wizard requires access to the solution folder and its files. If the solution or projects are under source control, activate the correct source control plug-in in Visual Studio and make sure no files are exclusively checked out by another user.
 
-Once you open a solution, the Upgrade Wizard will check what version of Telerik Reporting is used and if you have a newer one installed, it will offer to upgrade your application. Visual Studio would automatically popup the `Upgrade Wizard` as shown below:
+When you open a solution, the wizard checks the Telerik Reporting version. If a newer version is installed, Visual Studio can open the wizard automatically. To turn off this behavior, select **Do not start this wizard**. You can start it later from the [Telerik Reporting menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) by choosing **Upgrade Wizard**.
 
-If you do not want it to pop up automatically, simply check the "Do not start this wizard" checkbox at the bottom. If at a later stage, you decide that you want to upgrade your solution, simply use the [Telerik Reporting Menu](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu) and select _Upgrade Wizard_ from it.
+Create a backup before you continue because the upgrade process is irreversible. After the wizard updates the files, review the results and reload the modified project when Visual Studio displays the **File Modification Detected** prompt.
 
-The next step is to specify which project from the solution you want to upgrade and if you have multiple versions of Telerik Reporting installed - select the one you would like to upgrade/downgrade to:
+![Visual Studio prompt to reload a project after the Upgrade Wizard modifies its files](images/upgwiz5.png)
 
-You would be then asked whether you would like to back up your solution before proceeding with the upgrade and specify where it should be backed up. We highly recommend that you back up your solution(s) because the upgrade process is irreversible. Once you make your choice, you will be presented with a confirmation step where you can review the files that are going to be changed during the upgrade.
+## Handling Compilation Errors and Warnings
 
-Choosing _Next_ from the wizard would proceed with the upgrade and you'll finish with a screen where all successfully upgraded projects/files will be shown with a green tick right next to them.
+Run the **Upgrade Wizard** to upgrade your _ReportLibrary_ projects hosting reports created with the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
 
-You can also review a detailed log of the upgrade once the solution is loaded into Visual Studio - to cancel this, you have to uncheck the _Show the upgrade log_ checkbox at the bottom.
+The wizard does not change your code. As a result, compilation errors or warnings can occur for obsolete properties, methods, and events. Update your code manually. The [Telerik Reporting release notes](https://www.telerik.com/support/whats-new/reporting/release-history) list obsolete and deleted members and explain what to use instead. Review the release notes for each Telerik Reporting version from the version you upgraded from through the target version, including intermediate versions.
 
-Once your solution is opened in the IDE, it will notify you with a _File Modification Detected_ prompt that your project(s) have been modified outside of the environment and you should press "Reload" to reload the updated project:
-
-![A preview of the dialog that is displayed when the Upgrade Wizard has finished updating the files](images/upgwiz5.png)
-
-## In case you receive compilation errors and/or warnings
-
-Run the `Upgrade Wizard` to upgrade your _ReportLibrary_ projects hosting the reports created with the [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview).
-
-This wizard __will not__ change any of your current code. As a result __you may receive compilation errors and/or warnings__ for properties, methods, and events marked as obsolete. In this case, a manual update of your code is required. The [Release Notes](https://www.telerik.com/support/whats-new/reporting/release-history) contain the complete list of obsolete and deleted properties, methods, and events including information on what to be used instead, and why. Please, review the release notes of all Telerik Reporting versions starting from the version you upgraded from to the version you upgraded to, including the ones in between for information on how to update your project.
-
-Feel free to contact us via the [support ticketing system](https://www.telerik.com/account/support-center/contact-us/technical-support) in case you still experience problems after the upgrade, and we will help you resolve any remaining issues. It will be faster and easier if you package your solution/project as a _ZIP_ file and send it to Telerik, together with information on the errors/warnings you see.
+If you still experience problems after the upgrade, contact us through the [Telerik Reporting technical support ticketing system](https://www.telerik.com/account/support-center/contact-us/technical-support). Include your solution or project as a `.zip` file and provide the errors or warnings you see.
 
 ## See Also
 

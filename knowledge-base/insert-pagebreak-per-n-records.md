@@ -42,7 +42,9 @@ WHERE [HumanResources].[vEmployee].[EmployeeID] <= 30
 ORDER BY 1 ASC
 ````
 
-Create a [report group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report) or [table group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report) based on the `GroupIdx` field. Set the group's [PageBreak](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After` so that a new page starts after each group of 10 records.
+For report detail records, create a [report group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report) with the expression `= Fields.GroupIdx`. Set the group footer section's [`PageBreak`](/api/telerik.reporting.reportsection#collapsible-Telerik_Reporting_ReportSection_PageBreak) property to `After`.
+
+For records in a table, create a parent [table row group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item) around the details group. Set its grouping expression to `= Fields.GroupIdx` and its [`PageBreak`](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After`.
 
 ## Additional Resources
 

@@ -11,9 +11,9 @@ res_type: kb
 
 ## Environment
 
-| Property | Value |
-|---|---|
-| Product | Progress® Telerik® Reporting |
+| Product |
+|---|
+| Progress® Telerik® Reporting |
 
 ## Description
 

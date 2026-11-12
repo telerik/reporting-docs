@@ -1,0 +1,37 @@
+name: Check article slugs
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-slugs:
+    if: >-
+      ${{ github.event_name == 'workflow_dispatch' ||
+          (github.repository_owner == 'telerik' &&
+           (github.event.pull_request.author_association == 'MEMBER' ||
+            github.event.pull_request.author_association == 'OWNER')) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Test validator
+        run: bash .github/scripts/test_check_slugs.sh
+
+      - name: Validate all article slugs and links
+        run: bash .github/scripts/check_slugs.sh --output slugs.json
+
+      - name: Upload slug inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: article-slugs
+          path: slugs.json
+          if-no-files-found: error

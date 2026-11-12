@@ -9,6 +9,11 @@ permissions:
 
 jobs:
   check-slugs:
+    if: >-
+      ${{ github.event_name == 'workflow_dispatch' ||
+          (github.repository_owner == 'telerik' &&
+           (github.event.pull_request.author_association == 'MEMBER' ||
+            github.event.pull_request.author_association == 'OWNER')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

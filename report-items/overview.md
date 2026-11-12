@@ -80,7 +80,9 @@ To change the size of a report item:
 
 ## Controlling the Height
 
-To remove blank vertical space in a container, such as a report section or panel item, whenever you control the visibility of report items at runtime, set its respective height to a very small value, for example, `1mm`.
+Starting with Telerik Reporting R3 2016, report sections and `Panel` items support the `CanShrink` property. Set `CanShrink` to `true` to collapse the container when its content is hidden or shrunk. Page headers and footers do not collapse or expand based on their content.
+
+The following workaround applies only to versions before R3 2016 and excludes page headers and footers. To remove blank vertical space when you hide report items at runtime, set the container's `Height` to a small, nonzero value, such as `1mm`.
 
 A Section or a Panel item can expand to accommodate its children but cannot shrink or take space that is no longer occupied. To make a section or a panel shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `IntializeComponent()` method call.
 

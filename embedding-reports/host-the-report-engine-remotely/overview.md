@@ -11,7 +11,7 @@ reportingArea: General
 components: [general]
 ---
 
-# Overview
+# Telerik Reporting REST Services Overview
 
 The Telerik Reporting REST service exposes the report generation engine through an HTTP application programming interface (API). The engine renders report documents in all supported formats.
 

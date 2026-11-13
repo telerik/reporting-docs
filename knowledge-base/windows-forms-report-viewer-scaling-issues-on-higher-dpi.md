@@ -58,7 +58,9 @@ Use the configuration that matches your target framework:
 
 * Modern .NET:
 
-  Set the `ApplicationHighDpiMode` project property to `PerMonitorV2`:
+  For .NET 6 and later C# applications, use this property when `Main` calls `ApplicationConfiguration.Initialize()` before any controls are created.
+  The generated initializer applies the property. For startup code without this call, use the `Application.SetHighDpiMode` alternative below.
+  Set `ApplicationHighDpiMode` to `PerMonitorV2` in the project file:
 
   ```XML
   <PropertyGroup>

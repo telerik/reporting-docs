@@ -232,5 +232,12 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 				<p> If provided, a `Bearer` token will be set in the `Authorization` header for requests to the Reporting REST service. The token is not sent only when requesting <a href="slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource" target="_blank">document resources</a>. The reason is that resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
 			</td>
 		</tr>
+		<tr>
+			<td>httpHeaders</td>
+			<td>
+				<p><i>HttpHeadersOptions, optional;</i></p>
+				<p>Sets static headers or a synchronous or asynchronous function that returns headers for requests to the REST Service origin. The default refresh interval is 300 seconds; set it to 0 to resolve headers before every request. A custom Authorization header takes precedence over <code>authenticationToken</code>. Not supported with Report Server. For details, see <a href="slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/custom-http-headers">Configuring Custom HTTP Headers in the Native Angular Report Viewer</a>.</p>
+			</td>
+		</tr>
 	</table>
 </body>

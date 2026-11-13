@@ -11,10 +11,9 @@ res_type: kb
 ---
 
 ## Environment
-| Property | Value |
+| Product | Report designer |
 |---|---|
-| Product | Progress® Telerik® Reporting |
-| Report designer | Web Report Designer |
+| Progress® Telerik® Reporting |  Web Report Designer |
 
 ## Description
 

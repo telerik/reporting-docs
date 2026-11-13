@@ -15,10 +15,9 @@ ticketid: 1704846
 
 The issue applies to the following environment:
 
-| Property | Value |
+| Area | Version |
 |---|---|
-| Area | Licensing |
-| Version | 19.0.25.211+ |
+| Licensing | 19.0.25.211+ |
 
 ## Description
 

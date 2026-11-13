@@ -54,7 +54,7 @@ The Detail section is where you place the report items that constitute the main 
 
 ## Report Items
 
-[Report items](slug:web-report-designer-user-guide-components) are the individual elements or components that make up a report. They display various types of report data, such as barcodes, charts, and tables. A sales report, for example, may contain the following items:
+[Report items](slug:user-guide/components/report-items) are the individual elements or components that make up a report. They display various types of report data, such as barcodes, charts, tables, and so on. A sales report, for example, may contain the following items:
 
 * Text boxes displaying the report title, date, and other descriptive information.
 * Images representing the company logo or brands.

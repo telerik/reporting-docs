@@ -71,8 +71,7 @@ const viewerContainerStyle = {
 export default function Home() {
   return (
     <>
-        <link href="https://kendo.cdn.telerik.com/{}kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-        <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{kendothemeversion}}/dist/default-ocean-blue.css" rel="stylesheet" />
 
       <ReactReportViewer
         serviceUrl="https://demos.telerik.com/reporting/api/reports/"

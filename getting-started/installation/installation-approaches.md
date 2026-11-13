@@ -1,7 +1,7 @@
 ---
 title: Installation Approaches
 page_title: Installing Telerik Reporting - Control Panel, MSI, and NuGet
-description: "Learn how to install Telerik Reporting using the Control Panel, the MSI installer, or NuGet packages, and choose the approach that fits your workflow."
+description: "Install Telerik Reporting with the Control Panel, MSI installer, or NuGet packages, and choose the approach that fits your workflow."
 slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
 published: True
@@ -11,11 +11,11 @@ reportingArea: General
 components: [general]
 ---
 
-# Installation Approaches for Telerik Reporting
+# Installation Approaches
 
 Telerik Reporting supports three installation approaches: the [Control Panel](#using-the-control-panel), the [Microsoft Installer (MSI) package](#using-the-msi-file), and [NuGet packages](#using-nuget-packages). Choose the approach based on whether you need design-time support and how you plan to manage the installation in your workflow.
 
-> note After installing the product, you need to [download and activate your Telerik Reporting License Key](slug:license-key).
+>note After installing the product, you need to [download and activate your Telerik Reporting License Key](slug:license-key).
 
 Use this table to choose the approach that fits your workflow:
 
@@ -54,21 +54,21 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. Log into your [Telerik account](https://www.telerik.com/account). Select the **Downloads** tab to view the available products and select **Telerik Reporting**.
 1. From the next page, download the MSI installation and documentation files. The source code is available for download only for commercial license holders.
-1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog that appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
+1. When the download completes, run `Telerik_Reporting_{{site.suiteversion}}.msi`. In the dialog that appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
 
    ![The Welcome Page of the Telerik Reporting Installation Wizard](images/installWizard1.png)
 
 1. In the dialog that opens, select the features you require.
    - If Telerik Reporting does not locate a local Microsoft SQL Server instance (SQL stands for Structured Query Language), or if the SQL Server Browser Service is stopped, the **Examples** dialog option installs the examples, but the application configuration files do not contain valid connection strings. You can still access working demos on the [Telerik Reporting demos page](https://demos.telerik.com/reporting).
-   - To set up the examples with a valid connection string, select **Examples Setup**. All local SQL Server 2005 and later instances are supported.
-   - The examples require the Microsoft SQL Server [AdventureWorks database](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)). If the database is not already available on your machine, the wizard deploys it locally.
-   - To install the AdventureWorks online transaction processing (OLTP) database manually from the SQL script in the installer, navigate to `[InstallDir]/Examples/Data/AdventureWorks OLTP`. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the comma-separated values (CSV) data files in the same folder.
+   - To set up the examples with a valid connection string, select **Examples Setup**. For supported SQL Server versions, see the [Telerik Reporting system requirements](https://www.telerik.com/products/reporting/system-requirements).
+   - The examples require the Microsoft SQL Server [AdventureWorks sample database](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure). If the database is not already available on your machine, the wizard deploys it locally.
+   - To install the AdventureWorks online transaction processing (OLTP) database manually from the SQL script in the installer, navigate to `[InstallDir]/Examples/Data/AdventureWorks OLTP`. For the script to run correctly, uncomment the `SET @data_path` statement and specify the path to the comma-separated values (CSV) data files in the same folder.
 
    ![The Configuration Page of the Telerik Reporting Installation Wizard](images/installWizard2.png)
 
 1. (If **Examples Setup** was selected) In the **Setup Wizard** dialog, select your **Database Server** and the authentication for the connection. The Wizard detects all running instances and lists them in the input field.
 
-   > note To enable the wizard to detect all running SQL Server instances, start the [SQL Server Browser Service](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)).
+   >note To enable the wizard to detect all running SQL Server instances, start the [SQL Server Browser service](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-browser-service).
 
    ![The Setup Page for the Samples Database of the Telerik Reporting Installation Wizard](images/installWizard3.png)
 

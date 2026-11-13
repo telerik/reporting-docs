@@ -11,11 +11,9 @@ res_type: kb
 
 ## Environment
 
-| Property | Value |
-|---|---|
-| Product | Progress® Telerik® Reporting |
-| Project type | ASP.NET Core, ASP.NET Core MVC |
-| Viewer type | HTML5 Report Viewer |
+| Product | Project type | Viewer type |
+|---|---|---|
+| Progress® Telerik® Reporting | ASP.NET Core, ASP.NET Core MVC | HTML5 Report Viewer |
 
 ## Description
 

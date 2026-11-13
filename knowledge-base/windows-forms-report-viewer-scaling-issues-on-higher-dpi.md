@@ -66,7 +66,7 @@ Use the configuration that matches your target framework:
   </PropertyGroup>
   ```
 
-  Alternatively, call `Application.SetHighDpiMode` before creating any controls:
+  Alternatively, for manual startup code, replace any existing `Application.SetHighDpiMode` call with the following code. Place it at the start of `Main`, before other DPI initialization or control creation. If startup uses `ApplicationConfiguration.Initialize()`, use the project property above instead.
 
   ```C#
   Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);

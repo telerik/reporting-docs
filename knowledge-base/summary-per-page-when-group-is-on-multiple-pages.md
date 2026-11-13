@@ -124,7 +124,7 @@ class PageHeaderSumFromPrevPage : IAggregateFunction
 
     void AccumulateCore(object[] values)
     {
-        // The aggregate function expects two parameters
+        // The aggregate function expects three parameters.
         object value = values[0];
 
         // null values are not aggregated

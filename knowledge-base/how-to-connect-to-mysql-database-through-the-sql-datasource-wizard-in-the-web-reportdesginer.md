@@ -1,6 +1,6 @@
 ---
 title: Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Designer
-description: Connecting to MySQL Database through the SQL DataSource Wizard in the Web Report Designer 
+description: Resolve the MySQL connection error in the Web Report Designer SQL Data Source Wizard by editing the data source properties directly.
 type: troubleshooting
 page_title: How to Connect to MySQL Database through the SQL DataSource Wizard in the Web Report Designer?
 slug: how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer
@@ -11,34 +11,29 @@ res_type: kb
 ---
 
 ## Environment
-<table>
-	<tbody>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-		</tr>
-    	<tr>
-			<td>Report designer</td>
-			<td>Web Report Designer</td>
-		</tr>
-	</tbody>
-</table>
-
+| Product | Report designer |
+|---|---|
+| Progress® Telerik® Reporting |  Web Report Designer |
 
 ## Description
 
-> Visit the updated [Integrating the MySQL Data Provider](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider) article for a how-to on connecting to MySQL Databases.
+For general MySQL connection instructions, see [the MySQL data provider article]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider%}).
 
-The error below is thrown when trying to connect to MySQL Database through the SQL DataSource Wizard in the Web Report Designer.
+The Web Report Designer SQL Data Source Wizard returns the following error when you try to connect to a MySQL database.
 
 ## Error Message
-Connection unsuccessful.Check the connection string and try again. Keyword not supported:'port'.
+`Connection unsuccessful. Check the connection string and try again. Keyword not supported: 'port'.`
 
-## Cause\Possible Cause(s)
-The problem is caused by an issue in the SQL DataSource Wizard that doesn't provide the correct Data Provider name. 
-In the wizard on the first page, the **Data Provider** must be **MySql.Data.MySqlClient**, but the option is limited only to MySql.Data. 
-Since the engine cannot determine the type of the data provider by that name, it falls back to **System.Data.SqlClient** and claims that "Port" is not a supported keyword.
+## Cause
+The SQL Data Source Wizard does not provide the correct data provider name. On the first wizard page, the required provider is `MySql.Data.MySqlClient`, but the wizard offers only `MySql.Data`.
 
-## Suggested Workarounds
-The workaround is to avoid using the SQL DataSource wizard and edit the data source properties directly in the properties grid. 
-The issue is logged in our [Feedback portal](https://feedback.telerik.com/reporting/1535638-connecting-to-mysql-from-the-sql-datasource-wizard-does-not-work-in-webreportdesginer), so you can vote for it and when it is fixed, you will get a notification.
+Because the engine cannot identify the provider, it falls back to `System.Data.SqlClient` and reports that `Port` is not a supported keyword.
+
+## Workaround
+Avoid the SQL Data Source Wizard for this connection and edit the data source properties directly in the properties grid:
+
+1. Open the SQL data source properties in the Web Report Designer properties grid.
+2. Set **Data Provider** to `MySql.Data.MySqlClient` instead of `MySql.Data`.
+3. Enter or verify the MySQL connection settings directly in the data source properties.
+
+The issue is tracked in the [Feedback Portal item for this MySQL connection problem](https://feedback.telerik.com/reporting/1535638-connecting-to-mysql-from-the-sql-datasource-wizard-does-not-work-in-webreportdesginer).

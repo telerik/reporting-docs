@@ -1,7 +1,7 @@
 ---
 title: Anti-Forgery Token Issue in ASP.NET Core 2.1+ Applications
 page_title: Anti-Forgery Token Issue Occurring in ASP.NET Core 2.1+ Applications
-description: "Learn how to handle an error thrown while configuring an ASP.NET Core 2.1+ application with anti-forgery token."
+description: "Resolve the Telerik Reporting HTML5 Report Viewer registration error caused by global ASP.NET Core anti-forgery validation in ASP.NET Core 2.1 and later."
 type: troubleshooting
 slug: anti-forgery-token-issue-in-asp-net-core-application
 tags: telerik, reporting, asp, net, core, 2.1+, html5, viewer, anti, forgery, token, error, occurs
@@ -11,46 +11,44 @@ res_type: kb
 
 ## Environment
 
-<table>
-	<tbody>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-		</tr>
-	<tr>
-			<td>Project Type</td>
-			<td>ASP.NET Core, ASP.NET Core MVC</td>
-		</tr>
-	<tr>
-			<td>Viewer Type</td>
-			<td>HTML5 Report Viewer</td>
-		</tr>
-	</tbody>
-</table>
+| Product | Project type | Viewer type |
+|---|---|---|
+| Progress® Telerik® Reporting | ASP.NET Core, ASP.NET Core MVC | HTML5 Report Viewer |
 
 ## Description
 
-When adding any of the following lines of code in the `Startup.cs` file, the report won't load and an error will be thrown.
+When you add a global `AutoValidateAntiforgeryTokenAttribute` filter in `Startup.cs`, the HTML5 Report Viewer cannot register its client. The report does not load because the viewer sends requests to the Telerik Reporting REST service without the antiforgery token in the header expected by the global filter.
 
 ## Error Messages
 
-One of the following error messages may occur:
+The viewer displays the following exception:
 
-```C#
-services.AddMvc(options =>
-	options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
+```text
+Error registering the viewer with the service.
 ```
 
-or
+The browser console shows a `400 Bad Request` response for the [Register Client API](/api/telerik.reporting.services.webapi.reportscontrollerbase) request and reports:
 
-```C#
-services.AddControllersWithViews(options =>
-	options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
+```text
+Failed to load resource: the server responded with a status of 400 (Bad Request)
+Uncaught (in promise) Invalid clientID
 ```
 
 ## Steps to Reproduce
 
-1. Implement the anti-forgery token. For example, in ASP.NET Core MVC application, create a new `GetAntiXsrfRequestToken()` function on the viewer page to get the request token:
+1. Add global antiforgery validation to `Startup.cs`. For example, use either of the following configurations:
+
+   ```C#
+   services.AddMvc(options =>
+       options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
+   ```
+
+   ```C#
+   services.AddControllersWithViews(options =>
+       options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
+   ```
+
+2. Implement an antiforgery token. In an ASP.NET Core MVC application, create a `GetAntiXsrfRequestToken()` function on the viewer page:
 
    ```C#
    @inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
@@ -62,7 +60,7 @@ services.AddControllersWithViews(options =>
    }
    ```
 
-1. Add the function to each request header:
+3. Add the token to each request header:
 
    ```HTML
    <script type="text/javascript">
@@ -72,22 +70,15 @@ services.AddControllersWithViews(options =>
    </script>
    ```
 
-As a result the viewer shows the exception message `Error registering the viewer with the service.`.
+## Cause
 
-And, in the browser console the [Register Client](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client) request returns `400 Bad Request` with the following error message:
+The global `AutoValidateAntiforgeryTokenAttribute` filter also validates requests handled by `ReportsController`. The sample adds the token in the `__RequestVerificationToken` header, while ASP.NET Core expects the `RequestVerificationToken` header by default. Unless you configure ASP.NET Core to use the custom header name, the `Register Client` request fails because the filter cannot find the token in the expected header.
 
-```TEXT
-Failed to load resource: the server responded with a status of 400 (Bad Request)
-Uncaught (in promise) Invalid clientID
-```
+## Solution
 
-## Solutions
+Exclude the Telerik Reporting REST service from the global filter. You can use the `IgnoreAntiforgeryToken` attribute with `ReportsController` in either of the following ways:
 
-The `AutoValidateAntiforgeryToken` is recommended by Microsoft for non-API scenarios. When using this approach, that requires manually adding anti-forgery attributes. If you forget the attribute, no error will occur and the `Controller`/`Action` will not be protected.
-
-For that reason, the automatic approach is generally less error-prone and easier to maintain, especially if there are large number of Controllers and Actions that need this protection. You can use the `AutoValidateAntiforgeryToken` with the `ReportsController` provided that you do one of the following things:
-
-- Add the [`IgnoreAntiforgeryToken`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to the ReportsController. For example:
+* Add the [`IgnoreAntiforgeryTokenAttribute`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute) attribute to `ReportsController`:
 
   ```C#
   [Route("api/reports")]
@@ -98,7 +89,7 @@ For that reason, the automatic approach is generally less error-prone and easier
   }
   ```
 
-- Override [all `ReportsController` public methods](/api/telerik.reporting.services.webapi.reportscontrollerbase) and add the [`IgnoreAntiforgeryToken`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
+* Override [the public methods in `ReportsController`](/api/telerik.reporting.services.webapi.reportscontrollerbase) and add the [`IgnoreAntiforgeryTokenAttribute`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute) attribute to them. You can skip the `GET` methods.
 
   ```C#
   [IgnoreAntiforgeryToken]
@@ -108,15 +99,13 @@ For that reason, the automatic approach is generally less error-prone and easier
   }
   ```
 
-Alternatively, remove the auto anti-forgery configuration and decorate each controller or action that has to be protected against anti-forgery with the [`AutoValidateAntiforgeryToken`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.autovalidateantiforgerytokenattribute?view=aspnetcore-3.1) or [`ValidateAntiforgeryToken`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.validateantiforgerytokenattribute?view=aspnetcore-3.1) attribute.
+Alternatively, remove the global antiforgery configuration and decorate each controller or action that requires protection with the [`AutoValidateAntiforgeryTokenAttribute`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.autovalidateantiforgerytokenattribute) or [`ValidateAntiforgeryTokenAttribute`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.validateantiforgerytokenattribute) attribute.
 
-The following configuration or its equivalent:
+Replace the following configuration, or its equivalent, with this configuration:
 
 ```C#
 services.AddMvc(options => { options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
 ```
-
-have to be replaced with the configuration:
 
 ```C#
 services.AddMvc();
@@ -125,6 +114,6 @@ services.AddAntiforgery(options => options.HeaderName = "__RequestVerificationTo
 
 ## See Also
 
-- [Prevent Cross-Site Request Forgery (XSRF/CSRF) attacks in ASP.NET Core (JavaScript, AJAX, and SPAs section)](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-7.0&viewFallbackFrom=aspnetcore-2.2#javascript-ajax-and-spas)
-- [AutoValidateAntiforgeryToken](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.autovalidateantiforgerytokenattribute?view=aspnetcore-3.1)
-- [ValidateAntiforgeryToken](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.validateantiforgerytokenattribute?view=aspnetcore-3.1)
+* [Prevent cross-site request forgery (XSRF/CSRF) attacks in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery#javascript-ajax-and-spas)
+* [`AutoValidateAntiforgeryTokenAttribute` API reference](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.autovalidateantiforgerytokenattribute)
+* [`ValidateAntiforgeryTokenAttribute` API reference](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.validateantiforgerytokenattribute)

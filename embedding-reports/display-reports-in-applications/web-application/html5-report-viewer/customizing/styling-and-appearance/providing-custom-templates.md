@@ -1,7 +1,7 @@
 ---
 title: Providing Custom Templates
 page_title: Providing Custom Templates for the HTML5 Report Viewer Explained
-description: "Learn how to provide Custom Templates for changing the layout of the HTML5 Report Viewer in Telerik Reporting."
+description: "Learn how to use custom HTML templates with the Telerik HTML5 Report Viewer to change its layout, appearance, and initialization behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates
 tags: providing,custom,templates
 published: True
@@ -11,25 +11,25 @@ position: 3
 previous_url: /html5-report-viewer-customizing-providing-template
 ---
 
-# Providing Custom Templates for the HTML5 Report Viewer
+# Providing Custom Templates
 
-The article elaborates on how to use a customized HTML template for the HTML5 Report Viewer.
+Use a custom HTML template to change the layout and appearance of the Telerik HTML5 Report Viewer.
 
-Once you create a custom HTML template, you can provide it to the HTML5 Report through the `templateUrl` property:
+After you create a custom HTML template, set the viewer's `templateUrl` property to its location:
 
 {{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ReportViewerCustomTemplate}}
 
-The HTML template file is essentially a page that includes HTML document fragments nested inside __template__ tags. For example, this is what the report parameter template looks like:
+The HTML template file is a page that contains HTML document fragments nested in `template` tags. The report parameter template has the following structure:
 
 {{source=CodeSnippets\Blazor\Docs\ReportViewers\Html5ViewerTemplates.html region=Html5ViewerParameterTemplate}}
 
-The templates are loaded during the initialization of the __telerik_ReportViewer__ widget. Since this is an asynchronous network operation(the template HTML is loaded with an `HTTP GET` request) that takes an unpredictable amount of time, the widget is not functional until the template is loaded successfully. 
+The widget loads the templates during initialization. This asynchronous network operation sends an `HTTP GET` request for the template HTML and can take an unpredictable amount of time. The widget is not functional until the template loads successfully.
 
-To find when the report viewer is loaded, provide an event handler function for the __telerik_ReportViewer__ widget's [ready()](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#ready) event:
+To determine when the report viewer is loaded, provide an event handler for the `telerik_ReportViewer` widget's [ready() event](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events#ready):
 
 {{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerCustomTemplateReadyEvent}}
 
 
 ## See Also
 
-* [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)
+* [HTML5 Report Viewer overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview)

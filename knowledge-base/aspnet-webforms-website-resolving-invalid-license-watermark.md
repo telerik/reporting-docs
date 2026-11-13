@@ -1,6 +1,6 @@
 ---
 title: Resolving Invalid License Watermark When Using Telerik Reporting in Website Projects
-description: "Learn how to resolve the invalid license watermark issue when using Telerik Reporting in Website projects, even after following licensing steps such as downloading the license key, using NuGet packages, and VB/CS script files."
+description: "Learn how to fix the invalid license watermark in Telerik Reporting reports in an ASP.NET Website project by adding the Script key file."
 type: how-to
 page_title: Fixing Invalid License Watermark in Website Projects
 meta_title: Fixing Invalid License Watermark in Website Projects
@@ -13,48 +13,41 @@ ticketid: 1704846
 
 ## Environment
 
-<table>
-	<tbody>
-		<tr>
-			<td> Area </td>
-			<td> Licensing </td>
-		</tr>
-		<tr>
-			<td> Version </td>
-			<td> 19.0.25.211+ </td>
-		</tr>
-	</tbody>
-</table>
+The issue applies to the following environment:
+
+| Area | Version |
+|---|---|
+| Licensing | 19.0.25.211+ |
 
 ## Description
 
-I have an older ASP.NET Website project that uses Telerik Reporting to generate reports. Despite following all licensing documentation, downloading the license key, using NuGet packages, and VB script files, the reports display an invalid license watermark. 
+An older ASP.NET Website project that uses Telerik Reporting to generate reports can display an invalid license watermark. This can happen despite following the licensing documentation, downloading the license key, using NuGet packages, and adding VB.NET script files.
 
-Other Telerik controls, such as grids, work without issues. Re-running the Reporting Upgrade Wizard completes without errors, and all files in the bin directory are updated to the latest versions.
+Other Telerik controls, such as grids, work without issues. The Reporting Upgrade Wizard completes without errors, and all files in the `bin` directory update to the latest versions.
 
 ## Solution
 
 To resolve the invalid license watermark issue:
 
-1. In the Website project, add a reference to the `Telerik.Licensing.Runtime.dll` assembly. A copy of it can be found in the **Bin** subfolder of the Telerik Reporting installation directory(e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Bin`).
+1. In the Website project, add a reference to the `Telerik.Licensing.Runtime.dll` assembly. Find a copy in the `Bin` subfolder of the Telerik Reporting installation directory, for example, `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Bin`.
 1. Navigate to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your **Telerik** account.
 1. Scroll down the page until you reach the Progress® Telerik® Reporting product. Open and copy the **Script key**.
-1. Add a `TelerikLicense.vb`/`TelerikLicense.cs` file to your project with the content of the copied **Script key**. This file must be placed in the **App_Code** folder.
+1. Add a `TelerikLicense.vb` or `TelerikLicense.cs` file to your project and paste the copied **Script key** as its content. Place this file in the `App_Code` folder.
 
-	![The TelerikLicense.vb/Telerik.License.cs file's location in the Website project><](images/TelerikLicenseFile.png)
+The following image shows where to place the `TelerikLicense.vb` or `TelerikLicense.cs` file in the Website project.
 
-	> The image shows where the **TelerikLicense** file (`TelerikLicense.vb` or `TelerikLicense.cs`) should be located in the Website project.
+![The location of the TelerikLicense.vb or TelerikLicense.cs file in the Website project><](images/TelerikLicenseFile.png)
 
-1. Rebuild the project and run it again to verify that the license has been applied correctly.
+1. Rebuild the project and run it again to verify that the license is applied.
 
 ## Notes
 
-Please verify that the script key includes all purchased Telerik licenses. If other Telerik products are used in the project, their **Script keys** must also be added to the same `TelerikLicense.vb`/`TelerikLicense.cs` file.
+Verify that the Script key includes all purchased Telerik licenses. If the project uses other Telerik products, add their **Script keys** to the same `TelerikLicense.vb` or `TelerikLicense.cs` file.
 
-If there are further issues, please refer to the [Fixing License Errors in Telerik Reporting Runtime](slug:resolving-invalid-license-telerik-reporting) article.
+If the issue persists, refer to the article about [fixing license errors in the Telerik Reporting runtime](slug:resolving-invalid-license-telerik-reporting).
 
 ## See Also
 
-* [Fixing License Errors in Telerik Reporting Runtime](slug:resolving-invalid-license-telerik-reporting)
-* [Adding a License Key to Projects without NuGet References](slug:license-key)
-* [Telerik Reporting Overview](slug:telerikreporting/welcome-to-telerik-reporting!)
+* [Resolving license errors in the Telerik Reporting runtime](slug:resolving-invalid-license-telerik-reporting)
+* [Adding license keys without NuGet references](slug:license-key)
+* [Telerik Reporting overview](slug:telerikreporting/welcome-to-telerik-reporting!)

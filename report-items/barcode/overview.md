@@ -19,7 +19,7 @@ The following image shows the Barcode report item with supported barcode symbolo
 
 ![Telerik Reporting Barcode report item demo preview showing supported barcode symbologies](images/Barcodes/barcode-overview.png)
 
-> note The MaxiCode 2D encoder was introduced in [Telerik Reporting 2026 Q1 (20.0.26.424)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-424)). For details, refer to [Configuring the MaxiCode Barcode in Reports](slug:barcode-maxicode-overview). The Aztec Code 2D encoder was introduced in [Telerik Reporting 2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)). For details, refer to [Configuring the Aztec Code Barcode in Reports](slug:barcode-aztec-overview).
+> note The [MaxiCode 2D encoder](slug:barcode-maxicode-overview) was introduced in [Telerik Reporting 2026 Q1 (20.0.26.424)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q1-(20-0-26-424)). The [Aztec Code 2D encoder](slug:barcode-aztec-overview) was introduced in [Telerik Reporting 2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)).
 
 ## Key Features
 

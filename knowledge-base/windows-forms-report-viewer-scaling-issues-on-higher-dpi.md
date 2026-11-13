@@ -11,11 +11,9 @@ res_type: kb
 
 ## Environment
 
-| Property | Value |
-|---|---|
-| Product | Progress® Telerik® Reporting |
-| Project Type | Windows Forms |
-| Report Viewer | WinForms Viewer |
+| Product | Project Type | Report Viewer |
+|---|---|---|
+| Progress® Telerik® Reporting | Windows Forms | WinForms Viewer |
 
 ## Description
 

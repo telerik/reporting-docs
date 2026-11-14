@@ -13,7 +13,7 @@ components: [general]
 
 # Working With Report Items
 
-Report items are used in the report depending on the data that will be displayed, for example, a [TextBox](slug:telerikreporting/designing-reports/report-structure/textbox) item for static or data-bound text, a [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) for displaying images, a [Barcode](slug:telerikreporting/designing-reports/report-structure/barcode/overview) for showing barcode in a label report, and so on.
+Report items are used in the report depending on the data that will be displayed, for example, a [TextBox](slug:telerikreporting/designing-reports/report-structure/textbox) item for static or data-bound text, a [PictureBox](slug:telerikreporting/designing-reports/report-structure/picturebox) for displaying images, a [Barcode](slug:telerikreporting/designing-reports/report-structure/barcode/overview) for showing a barcode in a label report, and so on.
 
 Every report item is an instance of the [`ReportItemBase`](/api/Telerik.Reporting.ReportItemBase) class. Report items can reside inside report sections or containers such as [Panel](slug:telerikreporting/designing-reports/report-structure/panel) or [Table, Crosstab, or List](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview) items.
 
@@ -44,7 +44,7 @@ To display and arrange the report items in the Standalone Designer:
 
 There are several approaches for selecting a report item or section depending on its position with respect to the other parts of the report definition.
 
-* The report item/section is on the surface, i.e. doesn't serve as a parent or container for other items:
+* The report item/section is on the surface, i.e., doesn't serve as a parent or container for other items:
 
 	* Hover over the item/section in the __Report Sections__ area of the designer and when the cross hair cursor appears, click on it.
 	* Find the report section or item in the report definition tree in the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) of the designer and click on it to select it also in the __Report Sections__ area.
@@ -58,14 +58,14 @@ There are several approaches for selecting a report item or section depending on
 
 	* From the [Report Explorer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer) of the designer:
 
-		Find the report section or item in the report definition tree and click on it. It will be automatically selected also in the __Report Sections__ area of the designer. You may need to expand the parent section or items if the desired report item is child of any. To expand the container, click on the _plus_ sign beside it in the _Report Explorer_.
+		Find the report section or item in the report definition tree and click on it. It will be automatically selected also in the __Report Sections__ area of the designer. You may need to expand the parent section or items if the desired report item is a child of any. To expand the container, click on the _plus_ sign beside it in the _Report Explorer_.
 
 ### Relocating Report Items
 
 To move a report item:
 
 1. Hover over the report item.
-1. When the cross hair cursor appears, click and drag the report item.
+1. When the crosshair cursor appears, click and drag the report item.
 
 ![Cross Hair Cursor in a Selected PictureBox item](images/ReportDesign002.png)
 
@@ -80,9 +80,11 @@ To change the size of a report item:
 
 ## Controlling the Height
 
-To remove blank vertical space in a container, such as a report section or panel item, whenever you control the visibility of report items in runtime, set its respective height to a very small value, for exampe, `1mm`.
+Starting with Telerik Reporting R3 2016, report sections and `Panel` items support the `CanShrink` property. Set `CanShrink` to `true` to collapse the container when its content is hidden or shrunk. Page headers and footers do not collapse or expand based on their content.
 
-A Section or a Panel item can expand to accommodate their children but cannot shrink or take space that is no longer occupied. To make a section or a panel to shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `IntializeComponent()` method call.
+The following workaround applies only to versions before R3 2016 and excludes page headers and footers. To remove blank vertical space when you hide report items at runtime, set the container's `Height` to a small, nonzero value, such as `1mm`.
+
+A Section or a Panel item can expand to accommodate its children but cannot shrink or take space that is no longer occupied. To make a section or a panel shrink only at runtime, set its `Height` property in the report constructor and place the `Height` property assignment code right after the `InitializeComponent()` method call.
 
 ## Next Steps
 

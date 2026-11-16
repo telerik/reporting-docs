@@ -11,6 +11,8 @@ previous_url: /overview, /quick-start-overview
 
 # Welcome to Telerik Reporting
 
+[test slug](slug:test).
+
 Progress Telerik Reporting is a [.NET reporting solution](https://www.telerik.com/products/reporting.aspx) for designing, processing, exporting, and embedding reports in web, desktop, and cloud-based applications. It gives development teams the tools to build pixel-perfect reports and the viewers and services required to deliver those reports inside business applications.
 
 Use Telerik Reporting when you need to create operational reports, invoices, statements, dashboards, or printable business documents that pull data from multiple sources and render consistently across technologies.

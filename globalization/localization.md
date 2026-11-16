@@ -1,5 +1,5 @@
 ---
-title: Localizing Reports
+title: Localizing Reportstestest
 page_title: Localization of the Reports Definitions
 description: "Learn how to localize Telerik Reports for multiple languages across all of the available Report Designer tools."
 slug: telerikreporting/designing-reports/localizing-reports

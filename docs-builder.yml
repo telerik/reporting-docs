@@ -1144,3 +1144,6 @@ redirects:
   - from: "^/upgrade/2026$"
     to: "/upgrade/2026/2026-q1-20-0-26-211"
     type: Permanent
+  - from: "^/ci-folder-landing-test$"
+    to: "/ci-folder-landing-test/article"
+    type: Permanent

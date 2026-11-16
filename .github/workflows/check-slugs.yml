@@ -9,6 +9,11 @@ permissions:
 
 jobs:
   check-slugs:
+    # Skips PRs whose author GitHub does not report as a telerik MEMBER/OWNER.
+    # This is only a filter: a fork PR can edit this file or add other workflows.
+    # To keep external contributors from running any workflow without approval, a repository admin must set
+    # Settings > Actions > General > "Approval for running fork pull request workflows from contributors"
+    # to "Require approval for all external contributors".
     if: >-
       ${{ github.event_name == 'workflow_dispatch' ||
           (github.repository_owner == 'telerik' &&

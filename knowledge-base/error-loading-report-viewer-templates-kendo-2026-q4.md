@@ -22,6 +22,10 @@ ticketid: 1720508
             <td> Version </td>
             <td> 20.3.26.1110 </td> 
         </tr>
+        <tr>
+            <td> Report Viewer </td>
+            <td> HTML5 Report Viewer and Wrappers </td> 
+        </tr>
     </tbody>
 </table>
 
@@ -29,7 +33,7 @@ ticketid: 1720508
 
 After I updated to my application to use [Progress® Telerik® Reporting 2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) and [Kendo UI for jQuery 2026.4.1111 (2026 Q4)](https://www.telerik.com/support/whats-new/kendo-ui/release-history/kendo-ui-for-jquery-2026-4-1111-(2026-q4)), the HTML5 Report Viewer no longer renders on the page. Instead, the error message pasted below is displayed in place of the report viewer.
 
-## Error Messsage
+## Error Message
 
 ```text
 Error loading the report viewer's templates
@@ -59,7 +63,7 @@ To resolve the issue, use one of the following solutions:
 
 The `GetResource` method of the `ReportsController` can be overridden. After getting the default response from the `base` implementation, you may replace the `x-outline` string in the response's content with `x-circle`. 
 
-For exampple:
+For example:
 
 ```C# .NET
  public override IActionResult GetResource(string folder, string resourceName)
@@ -126,8 +130,7 @@ app.Use(async (context, next) =>
         {
             using var reader = new StreamReader(buffer, Encoding.UTF8);
             var template = await reader.ReadToEndAsync(context.RequestAborted);
-            var content = Encoding.UTF8.GetBytes(
-                template.Replace("x-outline", "x-circle"));
+            var content = Encoding.UTF8.GetBytes(template.Replace("x-outline", "x-circle"));
 
             context.Response.ContentType = "text/html; charset=utf-8";
             context.Response.ContentLength = content.Length;
@@ -159,7 +162,7 @@ app.UseTelerikReporting();
 
 Example configuration for referencing the local template:
 
-```javascript
+```JavaScript
 $("#reportViewer1").telerik_ReportViewer({
     serviceUrl: "api/reports",
     templateUrl: "path-to-local-template/telerikReportViewerTemplate.html",
@@ -168,9 +171,3 @@ $("#reportViewer1").telerik_ReportViewer({
     }
 });
 ```
-
-
-
-## See Also
-
-- [Telerik Reporting Documentation](https://www.telerik.com/products/reporting/documentation/overview.aspx)

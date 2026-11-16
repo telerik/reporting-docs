@@ -154,7 +154,7 @@ app.UseTelerikReporting();
 ### Solution 3: Update the Template Locally
 
 1. Download the default template from the following URL or use the response template:
-   [Telerik Report Viewer Template](https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@20.3.26.1110/dist/templates/telerikReportViewerTemplate.html)
+   [Telerik Report Viewer Template](https://cdn.jsdelivr.net/npm/@progress/telerik-jquery-report-viewer@32.26.1110/dist/templates/telerikReportViewerTemplate.html)
 2. Save the template locally in your project directory.
 3. Open the downloaded template file and locate the line that specifies the `x-outline` icon (usually line 20).
 4. Replace `x-outline` with `x-circle`.

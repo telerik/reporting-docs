@@ -31,7 +31,7 @@ ticketid: 1720508
 
 ## Description
 
-After I updated to my application to use [Progress® Telerik® Reporting 2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) and [Kendo UI for jQuery 2026.4.1111 (2026 Q4)](https://www.telerik.com/support/whats-new/kendo-ui/release-history/kendo-ui-for-jquery-2026-4-1111-(2026-q4)), the HTML5 Report Viewer no longer renders on the page. Instead, the error message pasted below is displayed in place of the report viewer.
+After I updated my application to use [Progress® Telerik® Reporting 2026 Q4 (20.3.26.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q4-(20-3-26-1110)) and [Kendo UI for jQuery 2026.4.1111 (2026 Q4)](https://www.telerik.com/support/whats-new/kendo-ui/release-history/kendo-ui-for-jquery-2026-4-1111-(2026-q4)), the HTML5 Report Viewer no longer renders on the page. Instead, the error message pasted below is displayed in place of the report viewer.
 
 ## Error Message
 
@@ -49,14 +49,14 @@ To resolve the issue, use one of the following solutions:
 
 ### Solution 1: Use an Older Version of Kendo UI
 
-- Preferably, use the built-in custom kendo bundle that the report viewer loads automatically when no kendo is loaded on the page. The Kendo UI for jQuery version used in that release of Telerik Reporting is [Kendo UI for jQuery 2026.3.811 (2026 Q3)](https://www.telerik.com/support/whats-new/kendo-ui/release-history/kendo-ui-for-jquery-2026-3-811-(2026-q3))
+- Preferably, use the built-in custom Kendo bundle that the report viewer loads automatically when no Kendo is loaded on the page. The Kendo UI for jQuery version used in that release of Telerik Reporting is [Kendo UI for jQuery 2026.3.811 (2026 Q3)](https://www.telerik.com/support/whats-new/kendo-ui/release-history/kendo-ui-for-jquery-2026-3-811-(2026-q3))
 - If not, use the following URL to reference the previous Kendo UI version in your project:
 
    ```html
    <script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@2026.3.1015/umd/kendo.all.min.js"></script>
    ```
 
-> important If a Kendo other than the report viewer's built-in bundle is used, it is necessary to provide a valid license for the Kendo UI controls to render as expected - [Licensing in Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui/documentation/intro/installation/licensing/overview)   
+> important If a Kendo bundle other than the report viewer's built-in bundle is used, it is necessary to provide a valid license for the Kendo UI controls to render as expected - [Licensing in Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui/documentation/intro/installation/licensing/overview)   
 
 
 ### Solution 2: Replace Icon Name in GetResource Endpoint

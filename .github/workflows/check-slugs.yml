@@ -1,30 +1,67 @@
 name: Check article slugs
 
 on:
-  pull_request:
+  pull_request_target:
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
+  # Never check out PR code in this job. The base-branch workflow owns the gate.
+  verify-permissions:
+    if: ${{ github.repository_owner == 'telerik' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      allowed: ${{ steps.permissions.outputs.result }}
+    steps:
+      - name: Verify repository write access
+        id: permissions
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        env:
+          TRIGGERING_ACTOR: ${{ github.triggering_actor }}
+        with:
+          script: |
+            const author = context.payload.pull_request?.user?.login;
+            if (context.eventName === 'pull_request_target' && !author) {
+              throw new Error('The pull request author is missing.');
+            }
+            const users = new Set([
+              author,
+              context.actor,
+              process.env.TRIGGERING_ACTOR,
+            ].filter(Boolean));
+            for (const username of users) {
+              let response;
+              try {
+                response = await github.rest.repos.getCollaboratorPermissionLevel({
+                  ...context.repo,
+                  username,
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+                core.notice(`${username} has no qualifying repository access; slug checks will be skipped.`);
+                return false;
+              }
+              // GitHub maps Maintain to write and custom roles to their base permission.
+              if (!['write', 'admin'].includes(response.data.permission)) {
+                core.notice(`${username} requires Write, Maintain, or Admin access; slug checks will be skipped.`);
+                return false;
+              }
+            }
+            return true;
+
   check-slugs:
-    # Skips PRs whose author GitHub does not report as a telerik MEMBER/OWNER.
-    # This is only a filter: a fork PR can edit this file or add other workflows.
-    # To keep external contributors from running any workflow without approval, a repository admin must set
-    # Settings > Actions > General > "Approval for running fork pull request workflows from contributors"
-    # to "Require approval for all external contributors".
-    if: >-
-      ${{ github.event_name == 'workflow_dispatch' ||
-          (github.repository_owner == 'telerik' &&
-           (github.event.pull_request.author_association == 'MEMBER' ||
-            github.event.pull_request.author_association == 'OWNER')) }}
+    needs: verify-permissions
+    if: ${{ needs.verify-permissions.outputs.allowed == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
 
       - name: Test validator

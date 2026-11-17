@@ -42,7 +42,7 @@ In addition to the default sections above, you can also add:
 
 The Page Header section is printed at the top of every page. Use it to repeat content, such as the report title, on every page of a multipage report.
 
-> note The Page Header can display only the content that fits within the boundaries of the section. Any report item that does not fit entirely in the section is not rendered.
+> The Page Header cannot expand to fit content. Content that grows beyond its boundaries may be clipped or hidden, depending on the section's `KeepTogether` setting and the item's size. For details, see [why Page Header content may be cut off or hidden](slug:text-cut-or-hidden-in-page-header).
 
 ## Page Footer
 

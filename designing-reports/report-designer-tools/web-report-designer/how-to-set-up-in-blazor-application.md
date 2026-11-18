@@ -52,7 +52,7 @@ Alternatively, instead of using the item template, the Designer REST service and
 
 ## Adding the Blazor Web Report Designer component
 
-1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packagess).
+1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/isnstall-with-nuget-packagess).
 1. Add JavaScript dependencies to the **head** element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
    {{source=CodeSnippets\Blazor\Docs\ReportViewers\WebReportDesignerSetUpInBlazorApplication.html region=WebReportDesignerAddingTheBlazorWebReportDesignerComponent}}

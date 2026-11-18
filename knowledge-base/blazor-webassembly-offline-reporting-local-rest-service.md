@@ -28,7 +28,7 @@ This setup uses a local REST Service for report generation and a Blazor WebAssem
 1. Make the Blazor WebAssembly application files available on the device when Internet access is unavailable. This article does not cover how to package or cache those files.
 1. Create a separate ASP.NET Core application for the Reporting REST Service. The service and the WASM client must run as separate applications.
 1. Add the `Telerik.Reporting.Services.AspNetCore` NuGet package to the service project. Configure the Telerik NuGet feed if you have not added it yet. For details, see [adding the Telerik private NuGet feed to Visual Studio](slug:telerikreporting/using-reports-in-applications/install-with-nuget-packages).
-1. Add a `Reports` folder to the service project. Copy a report definition such as `SampleReport.trdp` into that folder. Ensure that the report's data source is also available without Internet access.
+1. Add a `Reports` folder to the service project. Copy a report definition such as `SampleReport.trdp` into that folder and set its **Copy to Output Directory** and **Copy to Publish Directory** properties to **Copy if newer** (or configure equivalent project-file metadata). Ensure that the report's data source is also available without Internet access.
 
 ### Configure the Local REST Service
 

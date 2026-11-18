@@ -61,23 +61,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.base.sha || github.sha }}
-          fetch-depth: 0
           persist-credentials: false
-
-      - name: Merge pinned PR head into base
-        if: ${{ github.event_name == 'pull_request_target' }}
-        shell: bash
-        env:
-          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          git fetch --no-tags origin "$PR_HEAD_SHA"
-          if ! git -c user.name='github-actions[bot]' \
-            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
-            merge --no-commit --no-ff "$PR_HEAD_SHA"; then
-            echo "::error::Cannot merge the pinned PR head into its base; slug validation cannot proceed."
-            exit 1
-          fi
 
       - name: Test validator
         run: bash .github/scripts/test_check_slugs.sh

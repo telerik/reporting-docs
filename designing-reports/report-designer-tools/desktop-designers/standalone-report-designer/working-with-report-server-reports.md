@@ -11,9 +11,28 @@ reportingArea: General
 components: [general]
 ---
 
-# Working with Reports Stored in the Telerik Report Server
+<a id="working-with-reports-stored-in-the-telerik-report-server"></a>
+
+# Working with Report Server Reports
 
 Standalone Report Designer is integrated with Telerik Report Server so you can create, open, lock, save, save as, publish and revert report changes.
+
+## Server and Designer Compatibility
+
+Use the Standalone Report Designer that matches your Report Server's framework. The following table lists the corresponding variants:
+
+| Report Server | Standalone Report Designer |
+| --- | --- |
+| Report Server for .NET Framework 4.6.2 | Standalone Report Designer for .NET Framework: `Telerik.ReportDesigner.exe` or `Telerik.ReportDesigner.x86.exe` |
+| Report Server for .NET | Standalone Report Designer for .NET: `Telerik.ReportDesigner.Net.exe` or `Telerik.ReportDesigner.Net.x86.exe` |
+
+Use the designer distributed with the target Report Server to match both the framework and the associated designer release. For download instructions, see [Accessing the Standalone Report Designer](https://docs.telerik.com/report-server/user-guide/report-designer#access).
+
+>important Do not mix the .NET Framework and .NET variants for direct server connections. Different serialization behavior can cause errors, including errors when you create a blank report on the server.
+
+A successful connection does not establish compatibility between the two variants. The designer must also use a [report-definition schema](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/xml-report-definition#xml-schema-versioning) that the server supports. The schema check during connection does not verify that the server and designer target the same framework.
+
+The framework requirement applies to direct communication, not all transfers of report files. Before you transfer a report between frameworks, verify its schema and format, supported features, and runtime dependencies, such as custom assemblies. Preview and validate the report in the destination environment. For format and schema details, see [Declarative Report Definition](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/xml-report-definition).
 
 ## Overview
 
@@ -102,3 +121,9 @@ A reference to another report can be used by the [ReportSource](slug:telerikrepo
 * [SubReport item](slug:telerikreporting/designing-reports/report-structure/subreport)
 * [NavigateToReport action](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action)
 * [ReportBook](slug:telerikreporting/designing-reports/report-book/overview)
+
+## See Also
+
+* [Standalone Report Designer Overview](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview)
+* [Standalone Report Designer in Report Server](https://docs.telerik.com/report-server/user-guide/report-designer)
+* [Declarative Report Definition](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/xml-report-definition)

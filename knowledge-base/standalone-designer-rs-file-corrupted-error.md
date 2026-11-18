@@ -74,7 +74,7 @@ The stack trace shows a failure while the designer reads a report package. The m
 
 ## Solution
 
-Use the Standalone Report Designer distributed with the target Report Server, or the one from lan independently downloaded Reporting version that matches both the framework variant and the server's release.
+Use the Standalone Report Designer distributed with the target Report Server, or the one from an independently downloaded Reporting version that matches both the framework variant and the server's release.
 
 The following table identifies the corresponding executables:
 

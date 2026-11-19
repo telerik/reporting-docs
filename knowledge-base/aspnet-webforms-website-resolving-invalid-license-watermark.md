@@ -34,9 +34,9 @@ To resolve the invalid license watermark issue:
 1. Scroll down the page until you reach the Progress® Telerik® Reporting product. Open and copy the **Script key**.
 1. Add a `TelerikLicense.vb` or `TelerikLicense.cs` file to your project and paste the copied **Script key** as its content. Place this file in the `App_Code` folder.
 
-The following image shows where to place the `TelerikLicense.vb` or `TelerikLicense.cs` file in the Website project.
+  The following image shows where to place the `TelerikLicense.vb` or `TelerikLicense.cs` file in the Website project.
 
-![The location of the TelerikLicense.vb or TelerikLicense.cs file in the Website project><](images/TelerikLicenseFile.png)
+  ![The location of the TelerikLicense.vb or TelerikLicense.cs file in the Website project><](images/TelerikLicenseFile.png)
 
 1. Rebuild the project and run it again to verify that the license is applied.
 

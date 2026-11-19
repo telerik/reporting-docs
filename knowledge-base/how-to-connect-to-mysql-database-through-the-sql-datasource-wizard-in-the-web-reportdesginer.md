@@ -1,5 +1,5 @@
 ---
-title: Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Designer
+title: Connection unsuccessful when trying to connect to MySQL Database in the Web Report Designer
 description: Resolve the MySQL connection error in the Web Report Designer SQL Data Source Wizard by editing the data source properties directly.
 type: troubleshooting
 page_title: How to Connect to MySQL Database through the SQL DataSource Wizard in the Web Report Designer?
@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-For general MySQL connection instructions, see [the MySQL data provider article]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider%}).
+For general MySQL connection instructions, see [the MySQL data provider article](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-mysql-data-provider).
 
 The Web Report Designer SQL Data Source Wizard returns the following error when you try to connect to a MySQL database.
 

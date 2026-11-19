@@ -68,15 +68,15 @@ The detail report in the designer will now look like the following.
 
 ### Configuring the Report Parameter and Filter
 
-Create a report parameter and a filter that uses the report parameter. The master report passes in the current **ProductCategoryID** for each record and the detail report displays all products with that **ProductCategoryID**.
+Create a report parameter and a filter that uses the report parameter. The master report passes in the current **ProductCategoryID** for each record, and the detail report displays all products with that **ProductCategoryID**.
 
 1. In the **Property Window**, navigate to the `ReportParameters` property and click the ellipses.
-1. In the ReportParameter Collection Editor, click the **Add** button. In the **Name** property for the parameter enter **ProductCategoryID**. Enter zero for the **Value**  property.
+1. In the ReportParameter Collection Editor, click the **Add** button. In the **Name** property for the parameter, enter **ProductCategoryID**. Enter zero for the **Value**  property.
 
    ![ReportParameter Collection Editor with the configured parameter ProductCategoryID](images/MasterDetail0011.png)
 
 1. In the **Property Window**, navigate to the `Filters` property and click the ellipses.
-1. Click the **New** button to create a new filter. In the **Expression** drop-down for the filter select **=Fields.ProductCategoryID**. Leave the operator at the default equals to (**=**) sign. In the **Value**  property drop-down, select the **=Parameters.ProductCategoryID.Value** report parameter you created earlier.
+1. Click the **New** button to create a new filter. In the **Expression** drop-down for the filter, select **=Fields.ProductCategoryID**. Leave the operator at the default equals to (**=**) sign. In the **Value**  property drop-down, select the **=Parameters.ProductCategoryID.Value** report parameter you created earlier.
 
    ![The Edit Filters dialog of the Visual Studio Report Designer configured for filtering on the ProductCategoryID parameter value](images/MasterDetail0013.png)
 
@@ -155,6 +155,6 @@ The Table renders one group header row per unique `CategoryName` value, with the
 
 ## See Also
 
-- [SubReport Item]({%slug telerikreporting/designing-reports/report-structure/subreport%})
-- [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})
-- [Creating Master-Detail Reports with SubReports in Web report designer]({%slug web-report-designer-user-guide-creating-master-detail-report%})
+- [SubReport Item](slug:telerikreporting/designing-reports/report-structure/subreport)
+- [Report Parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview)
+- [Creating Master-Detail Reports with SubReports in Web report designer](slug:web-report-designer-user-guide-creating-master-detail-report)

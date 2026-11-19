@@ -1,6 +1,6 @@
 ---
 title: Templates Structure
-page_title: HTML5 Report Viewer Templates Structure
+page_title: Templates Structure of the HTML5 Report Viewer Explained in details
 description: "Learn how the HTML5 Report Viewer templates are structured, where to find the template file, and what each template identifier controls."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure
 tags: templates,structure

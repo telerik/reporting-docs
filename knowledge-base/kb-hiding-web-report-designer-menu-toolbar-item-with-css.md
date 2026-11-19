@@ -24,7 +24,7 @@ img[alt$="><"] {
 
 ## Description
 
-This article shows how to hide the root **Menu** item and its dropdown in We Report Designer while keeping the other toolbar controls visible.
+This article shows how to hide the root **Menu** item and its dropdown in Web Report Designer while keeping the other toolbar controls visible.
 
 The following screenshot shows the default **Menu** item and its open dropdown.
 

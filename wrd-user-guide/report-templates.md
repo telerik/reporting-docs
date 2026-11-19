@@ -62,7 +62,7 @@ To create a report template, follow these steps:
 
     To save the currently open report, select **Save As...** from the menu:
 
-    ![Save As menu option](images/wrd-save-as-menu-option.png)  
+    ![Save As menu option ><](images/wrd-save-as-menu-option.png)  
 
     The designer presents the option to save the report as a **Report** (`.trdp` or `.trdx` file format) or a **Template** (`.trtx` file format).
 
@@ -70,7 +70,7 @@ To create a report template, follow these steps:
 
     |Save As Report|Save As Template|
     |----|----|
-    |![Save As Report dialog](images/web-report-designer-report-templates-save-as-report.png) |![Save As Template dialog](images/web-report-designer-report-templates-save-as-template.png)| 
+    |![Save As Report dialog ><](images/web-report-designer-report-templates-save-as-report.png) |![Save As Template dialog](images/web-report-designer-report-templates-save-as-template.png)| 
 
 ### Using Report Templates
 

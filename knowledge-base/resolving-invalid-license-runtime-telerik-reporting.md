@@ -17,7 +17,7 @@ ticketid: 1688629
 
 ## Description
 
-Starting with Telerik Reporting 2025 Q1 (19.0.25.211), an invalid or missing license can add a watermark to report pages and produce licensing warnings during build or runtime. A common cause is that the startup project does not directly reference `Telerik.Licensing`, or that the application cannot access a current `telerik-license.txt` file.
+Starting with Telerik Reporting 2025 Q1 (19.0.25.211), an invalid or missing license can add a watermark to report pages and produce licensing warnings during build or runtime. A common cause is that the startup project does not directly reference `Telerik.Licensing`, or that the build process cannot discover a current license key.
 
 ## Solution
 
@@ -25,7 +25,7 @@ Starting with Telerik Reporting 2025 Q1 (19.0.25.211), an invalid or missing lic
 
 Use the current [Telerik.Reporting NuGet package](https://www.nuget.org/packages/Telerik.Reporting) whenever possible. It adds the required dependencies, including `Telerik.Licensing`. If automatic activation fails, follow these steps to configure the startup project:
 
-1. Install a valid license key. Follow the [Telerik Reporting license key setup]({%slug license-key%}) instructions. Store `telerik-license.txt` in a location that the application can access, or configure the `TELERIK_LICENSE` environment variable.
+1. Install a valid license key. Follow the [Telerik Reporting license key setup]({%slug license-key%}) instructions. On the build machine, store `telerik-license.txt` in the project root or the build user's `%AppData%\Telerik\` (Windows) or `~/.telerik/` (macOS/Linux) directory. Alternatively, set the `TELERIK_LICENSE` environment variable to the complete license key contents and make it available to the build process. License discovery occurs at build time; copying the key only to the deployment machine does not activate the build.
 1. Identify the startup project. Determine which project serves as the application entry point.
 1. Add `Telerik.Licensing`. Add the [Telerik.Licensing NuGet package](https://www.nuget.org/packages/Telerik.Licensing) directly to the startup project. You can use the NuGet Package Manager or the Package Manager Console.
 

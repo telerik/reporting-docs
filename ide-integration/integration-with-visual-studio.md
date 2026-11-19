@@ -16,7 +16,7 @@ The Telerik Reporting Visual Studio extensions help you configure AI tooling. Th
 
 After you install Telerik Reporting, use **Extensions > Telerik > Reporting** to access the extension commands.
 
-To verify that the extension is installed, open **Extensions > Telerik > Manage Extensions**, select **Installed**, and search for `reporting`:
+To verify that the extension is installed and enabled, open **Extensions** > **Manage Extensions**, select **Installed**, search for `reporting`, and make sure **Telerik Reporting Tools** is enabled:
 
 ![Visual Studio Extension Manager showing Telerik Reporting Tools installed](images/telerik-reporting-tools.png)
 

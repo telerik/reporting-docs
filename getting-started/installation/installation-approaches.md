@@ -46,6 +46,8 @@ During the MSI installation process, note the following:
 * The MSI installation does not overwrite previous Telerik Reporting installations unless the new installation is the same version. The installer keeps your existing installation and places new files in a separate folder.
 * The **Downloads** page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [**General Feedback**](https://www.telerik.com/account/support-tickets/general-feedback) thread.
 
+<a id="msi-installation"></a>
+
 To install Telerik Reporting through the MSI automatic installer file:
 
 1. Log into your [Telerik account](https://www.telerik.com/account). Select the **Downloads** tab to view the available products and select **Telerik Reporting**.

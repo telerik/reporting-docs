@@ -260,7 +260,7 @@ The static fields that store the totals and transitional values impose the follo
 
 	Use the same expression pattern, and add `ReportDefinition` as the last argument. Declare `processingOperationId` as a thread-static field in the class, alongside the other state fields.
 
-1. If you use the [page functions](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) `PageCount` in the report with the custom page footer function, the totals may be wrong.
+1. If you use [`PageCount`](slug:telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions) in the report with the custom page footer function, the totals may be wrong.
 
 	The report makes an additional pass through the pages when it needs to display the total page count.
 

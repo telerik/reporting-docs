@@ -28,7 +28,7 @@ Use a ReportBook when you need to:
 
 The `Telerik.Reporting.ReportBook` class exposes a `ReportSources` collection for the reports in the book. Add TRDP, TRDX, or TRBP files with a `UriReportSource`. Add report classes that inherit from `Telerik.Reporting.Report` with a `TypeReportSource`. The Reporting engine processes each report according to its report source.
 
->important Do not use `InstanceReportSource` or `XMLReportSource` with a ReportBook.
+>important Do not add `InstanceReportSource` or `XmlReportSource` objects to the `ReportSources` collection. You can still wrap the entire ReportBook in an `InstanceReportSource` to pass it to a viewer or the Reporting engine.
 
 The [Report Book online demo](https://demos.telerik.com/reporting/report-book) shows a combined report. The demo is also available in the local Examples installed by default under `...Progress\Telerik Reporting {{site.suiteversion}}\Examples`. For code, see [how to create a report book at runtime](slug:telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time).
 

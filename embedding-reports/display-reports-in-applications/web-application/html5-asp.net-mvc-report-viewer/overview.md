@@ -21,7 +21,7 @@ The viewer communicates with the [Reporting REST Service](slug:telerikreporting/
 
 >important The **HTML5 ASP.NET MVC Report Viewer** works only in `ASP.NET Framework 4.6.2+` projects. For [ASP.NET Core applications](https://dotnet.microsoft.com/en-us/apps/aspnet), use the [HTML5 Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview).
 
->note In an MVC project, the MVC wrapper generates HTML and JavaScript that initialize the HTML5 Report Viewer in the browser. The browser widget acts as the client for the Reporting REST Service, which does not run in the MVC context even when hosted in the same project. If reports need data modified in the MVC context, save that data to a data source the service can access.
+In an MVC project, the MVC wrapper generates HTML and JavaScript that initialize the HTML5 Report Viewer in the browser. The browser widget acts as the client for the Reporting REST Service, which does not run in the MVC context even when hosted in the same project. If reports need data modified in the MVC context, save that data to a data source the service can access.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ The HTML5 ASP.NET MVC Report Viewer has the following requirements:
 
 * ASP.NET MVC 4 or a later version, as described in the [ASP.NET MVC 4 documentation](https://learn.microsoft.com/en-us/aspnet/mvc/mvc4).
 * A reference to `Telerik.ReportViewer.Mvc.dll`.
-* All [HTML5 Report Viewer requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support), including a running Reporting REST Service and the required browser capabilities. Load the required CSS and JavaScript files in the documented order before you create the viewer.
+* All [HTML5 Report Viewer requirements](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support), including the required browser capabilities and a running Reporting REST Service or [Telerik Report Server instance](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server). Load the required CSS and JavaScript files in the documented order before you create the viewer.
 
 ## Browser Support
 

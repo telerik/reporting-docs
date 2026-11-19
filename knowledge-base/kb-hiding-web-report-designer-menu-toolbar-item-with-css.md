@@ -34,7 +34,7 @@ The following screenshot shows the default **Menu** item and its open dropdown.
 
 Add the following `<style>` block to the `<head>` element of your `webReportDesigner.html` host page:
 
-```html .skip-repl
+```html
 <style>
   li.main-menu__item.root-menu {
     display: none !important;
@@ -54,4 +54,4 @@ The selector targets CSS classes in the Web Report Designer markup. Verify it af
 
 ## See Also
 
-* [Customizing individual Web Report Designer commands]({%slug telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization%})
+* [Customizing individual Web Report Designer commands](slug:telerikreporting/report-designer-tools/web-report-designer/web-report-designer-customization)

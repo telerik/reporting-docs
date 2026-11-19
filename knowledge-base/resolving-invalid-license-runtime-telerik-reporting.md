@@ -44,7 +44,7 @@ For .NET Framework startup projects that do not use the [SDK-style project](http
 
 If the startup project references only other projects that contain the reporting code, the licensing build task might not detect Telerik Reporting usage. In that case, add the `Telerik.Licensing` package and `Telerik.Reporting.dll` reference to the startup project.
 
-If the project uses a binding redirect, add one to the startup project's `App.config` or `Web.config`. Replace the placeholder versions with the version of the installed `Telerik.Licensing.Runtime` assembly:
+.NET Framework applications may need a binding redirect when they request an earlier `Telerik.Licensing.Runtime` version than the installed assembly. In that case, add or update the redirect in the startup project's `App.config` or `Web.config`. Place the following `<runtime>` element inside `<configuration>`, or merge the `<dependentAssembly>` entry into the existing `<runtime>/<assemblyBinding>` section. Replace both `X.Y.Z.0` placeholders with the installed assembly version:
 
 ````xml
   <runtime>

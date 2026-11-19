@@ -126,7 +126,7 @@ For details about each element and supported layout aids, see [Structure of the 
 
 ## Working with Code
 
-All Telerik Reporting C# and VB.NET reports, for example, _ReportName.cs_, inherit from the base [Telerik.Reporting.Report](/api/telerik.reporting.report) type. The Visual Studio Report Designer automatically generates the code in the `InitializeComponent` method of the _ReportName_ type. The method resides in the `ReportName.designer.cs` file and is recognized and parsed by the Report Designer to display the report at design time.
+All Telerik Reporting C# and VB.NET reports inherit from the base [`Telerik.Reporting.Report`](/api/telerik.reporting.report) type. The Visual Studio Report Designer automatically generates code in the report type's `InitializeComponent` method. This method resides in `ReportName.designer.cs` for C# or `ReportName.Designer.vb` for VB.NET. The designer parses this method to display the report at design time.
 
 Add custom code to the _ReportName_ type in the `ReportName.cs` file, which contains by default only the parameterless constructor of the _ReportName_ type. For example, add [Report Event Handlers](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events) and similar customizations.
 

@@ -3,7 +3,7 @@ title: Using with Report Server for .NET
 page_title: Using HTML5 Report Viewer with Telerik Report Server for .NET
 description: "Learn how to configure and use the Telerik Reporting HTML5 Report Viewer with a Telerik Report Server for .NET instance."
 slug: html5-report-viewer-with-report-server-net
-tags: how,use,html5,report,viewer,report,server,dotnet
+tags: how,use,html5,report,viewer,server,dotnet
 published: True
 reportingArea: HTML5
 components: [html5, general]
@@ -33,7 +33,7 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance, along with the port if needed.
 
-	To authenticate against the Report Server for .NET you have the following options:
+	To authenticate against the Report Server for .NET, you have the following options:
 
 	- (**recommended**) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
@@ -67,7 +67,7 @@ Providing `reportServer.getPersonalAccessToken` does not eliminate the authentic
 
 The application's token-supply endpoint and Report Server's `/PersonalToken` endpoint serve different purposes. The callback supplies the personal token. The viewer then exchanges it with Report Server for session tokens. You do not need to create a replacement `/PersonalToken` endpoint in your application.
 
-Set `reportServer.url` to the Report Server application's base URL, without appending `/api/reports/`. The viewer constructs both the authentication and report-service URLs from that base. Correcting the base URL changes the request addresses, but does not remove the expected `POST /PersonalToken` request. The `/PersonalToken` request does not indicate that the viewer has switched to standalone Reporting REST Service mode.
+Set `reportServer.url` to the Report Server application's base URL, without appending `/api/reports/`. The latter is the default Reporting REST Service endpoint. The viewer constructs both the authentication and report-service URLs from that base. Correcting the base URL changes the request addresses, but does not remove the expected `POST /PersonalToken` request.
 
 > caution Do not log personal access tokens, returned session tokens, or authorization headers in browser consoles, application logs, or support attachments. Keep the application endpoint that supplies the personal token secured.
 

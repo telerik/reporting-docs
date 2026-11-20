@@ -133,7 +133,14 @@ Use these checks and fallback options:
 
 ### Setting Up with NuGet CLI
 
-Use the NuGet CLI on Windows or when your automation requires `nuget.exe`. For Linux, macOS, and CI environments, use the .NET CLI or configure `NuGet.Config` directly.
+Use the NuGet CLI on Windows or when your automation requires `nuget.exe`.
+
+For Linux or macOS, install the .NET SDK. Run `dotnet nuget add source 'https://nuget.telerik.com/v3/index.json' --name 'telerik.com' --username 'api-key' --password '<API_KEY>' --store-password-in-clear-text`, replacing `<API_KEY>` with your generated API key.
+This command stores the key in plain text. Use it only on a trusted machine, and never commit or share the resulting configuration file.
+
+For CI environments, use a secret environment variable as described in the [NuGet configuration guidance for CI](slug:restoring-nugets-in-ci#using-a-nugetconfig-file-with-your-projects).
+
+To configure the feed with the NuGet CLI on Windows, follow these steps:
 
 1. Download the [latest NuGet CLI executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 1. Open a command prompt and change to the directory that contains `nuget.exe`.

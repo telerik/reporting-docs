@@ -68,7 +68,7 @@ The following image shows the parameter editor after the mapping is configured.
 
 ## Setting the Report Source
 
-To specify a subreport for a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}), you need a [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
+To specify a subreport for a [SubReport item](slug:telerikreporting/designing-reports/report-structure/subreport), you need a [ReportSource](slug:telerikreporting/designing-reports/report-sources/overview) object.
 
 Edit this property on the SubReport item in the **main report**. The report that you select becomes the child report rendered inside that item.
 
@@ -80,7 +80,7 @@ When you use a relative path to the report in the `UriReportSource` of the SubRe
 - In custom applications that render reports programmatically with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor), relative to the application starting point.
 
 >important
-> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction), use the `[CategoryName]/[ReportName]` path in the URI. Omit the `.trdp` extension. If you omit the category, the report inherits the category from the main report. For details, see [working with Report Server reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}).
+> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction), use the `[CategoryName]/[ReportName]` path in the URI. Omit the `.trdp` extension. If you omit the category, the report inherits the category from the main report. For details, see [working with Report Server reports](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports).
 
 ### Using a Report Designer
 
@@ -102,9 +102,9 @@ The first snippet uses C#; the second uses VB.NET.
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateInstanceReportSourceSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateInstanceReportSourceSnippet}}
 
-Due to the format of the produced reports, the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only `XmlReportSource` and `UriReportSource` options.
+Due to the format of the produced reports, the [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) includes only `XmlReportSource` and `UriReportSource` options.
 
-The [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) provides the [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) options.
+The [Visual Studio Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview) provides the [report sources](slug:telerikreporting/designing-reports/report-sources/overview) options.
 
 If you are using the HTML5 Report Viewer to preview the report, the main report will be rendered in HTML and loaded on the client. The subreport is considered part of the main report content, and its report source will be internally resolved without additional calls to the Reporting REST service.
 
@@ -155,7 +155,7 @@ static void ConfigureSubReport(
 
 Pass the `SubReport` item from the main report and the stream obtained from the project resource to `ConfigureSubReport`. The `OrderId` name must match a report parameter defined in the child report. Omit the `Parameters.Add` or `DataSource` assignment when the child report does not require them.
 
-For more information about loading report definitions, see [serializing and deserializing report definitions]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) and [packaging and unpackaging report definitions]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}).
+For more information about loading report definitions, see [serializing and deserializing report definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) and [packaging and unpackaging report definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition).
 
 ## Using the SubReport DataSource Property
 
@@ -163,9 +163,9 @@ Starting with `R3 2022 SP1 (16.2.22.1109)`, the `DataSource` property lets you f
 
 When you set this property, processing uses that data instead of the data configured in the subreport definition.
 
-All the [data sources]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) supported in the [DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property are applicable as a value of this property.
+All the [data sources](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/overview) supported in the [DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property are applicable as a value of this property.
 
-A common scenario is to feed the inner report with data that comes from the data context of the `SubReport` item. To do this, define a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to bind the `DataSource` property to a data field:
+A common scenario is to feed the inner report with data that comes from the data context of the `SubReport` item. To do this, define a [Binding](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings) to bind the `DataSource` property to a data field:
 
 1. Select the SubReport item and locate the `Bindings` property in the **Properties** window.
 1. Click the ellipsis button **[...]** to open the **Edit Bindings** dialog.
@@ -181,7 +181,7 @@ When working with the SubReport item, mind the following:
 * Page sections are not related to the report itself, but are relative to the paper or screen. Therefore, the child report's page header and page footer are ignored, and only the main report's page sections are visible.
 * The `PageSettings` are not related to the report itself, but to the paper or screen. For that reason, the subreport ignores them, and properties such as `ColumnCount` do not apply.
 * To render page sections that appear on each page, similar to page sections, consider using an unbound group (no grouping criteria specified) and set the [`PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#Telerik_Reporting_GroupSection_PrintOnEveryPage) property of its sections to `True`. Note that you cannot use the `PageCount` and `PageNumber` global objects in group sections.
-* The [Table of Contents (TOC) section]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%}) is designed to be displayed at the top/bottom of the entire report document. For that reason, the TOC section of the subreport is ignored.
+* The [Table of Contents (TOC) section](slug:telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview) is designed to be displayed at the top/bottom of the entire report document. For that reason, the TOC section of the subreport is ignored.
 * To remove blank vertical space in the detail section of a SubReport, set the `Height` of the child report's `DetailSection` to the height of its tallest item.
 * Sections can grow to accommodate their children, but they cannot shrink to hide empty spaces. To make the detail section shrink only at runtime, set the `Height` property of the child report's `DetailSection` in the report constructor. Place the `Height` property assignment code right after the `InitializeComponent()` method call.
 * The default styles used in subreports may be overridden by inherited styles from their parent reports.
@@ -197,8 +197,8 @@ When working with the SubReport item, mind the following:
 Use the following resources to continue working with SubReport items:
 
 - [(Demo) Invoice Report with a SubReport](https://demos.telerik.com/reporting/invoice)
-- [Using the ReportItem DataObject Property in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%})
-- [Creating bindings for report items]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
+- [Using the ReportItem DataObject Property in Expressions](slug:telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions)
+- [Creating bindings for report items](slug:telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings)
 - [(API) SubReport](/api/Telerik.Reporting.SubReport)
 - [(API) ReportSource](/api/Telerik.Reporting.SubReport#Telerik_Reporting_SubReport_ReportSource)
 - [(API) DataItem.DataSource](/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource)

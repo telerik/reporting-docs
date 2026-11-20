@@ -57,7 +57,7 @@ Ensure that a Sass-based Kendo UI theme is referenced in your project. For examp
 ```html
 <link
   rel="stylesheet"
-  href="https://kendo.cdn.telerik.com/themes/{{site.kendothemeversion}}/default/default-ocean-blue.css"
+  href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{site.kendothemeversion}}/dist/default-ocean-blue.css"
 />
 ```
 

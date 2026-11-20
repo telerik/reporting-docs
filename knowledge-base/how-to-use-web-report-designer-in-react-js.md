@@ -67,7 +67,7 @@ The following guide assumes previous knowledge of React:
 4. Also in the head, add a reference for Kendo all:
 
    ```HTML
-   <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@progress/kendo-ui@{{kendosubsetversion}}/umd/kendo.all.min.js"></script>
    ```
 
 5. Refer the JavaScript of the web report designer and the viewer also in `public/index.html` as:

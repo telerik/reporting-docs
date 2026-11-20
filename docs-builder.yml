@@ -47,14 +47,14 @@ markdown-replacements:
 liquid-output-delimiter-left: "{{"
 liquid-output-delimiter-right: "}}"
 liquid:
-  suiteversion: "2026 Q3"
-  buildversion: "20.2.26.1007"
-  reportserverversion: "12.2.26.1007"
-  spaviewerversion: "31.26.1007"
+  suiteversion: "2026 Q4"
+  buildversion: "20.3.26.1110"
+  reportserverversion: "12.3.26.1110"
+  spaviewerversion: "32.26.1110"
   nodeversion: "20.19.0"
   angularsubsetversion: "24.1.0"
-  kendosubsetversion: "2026.2.520"
-  kendothemeversion: "14.3.0"
+  kendosubsetversion: "2026.3.811"
+  kendothemeversion: "14.5.0"
   blazoruiversion: "14.0.0"
   jqueryversion: "3.7.1"
   mindotnetversion: "8"
@@ -203,8 +203,11 @@ meta:
     position: 4
     title: "Report Designers"
   ### Report Designers subsection:
-  designing-reports/report-designer-tools/web-report-designer:
+  designing-reports/report-designer-tools/vscode:
     position: 10
+    title: "Visual Studio Code"
+  designing-reports/report-designer-tools/web-report-designer:
+    position: 11
     title: "Web Report Designer"
   designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application:
     position: 10
@@ -214,7 +217,7 @@ meta:
     position: 12
     title: "Tools"
   designing-reports/report-designer-tools/desktop-designers:
-    position: 11
+    position: 12
     title: "Desktop Designers"
   designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
     position: 10

@@ -4,6 +4,7 @@ page_title: Integration with VS Code
 description: The Telerik Reporting Productivity Tools Extension for Visual Studio Code provides scaffolding for the Telerik Reporting native Angular viewer.
 slug: integration-with-vs-code
 tags: integration, vscode, report, viewer, angular
+tag: update
 published: True
 position: 1
 reportingArea: General
@@ -12,7 +13,22 @@ components: [general]
 
 # Visual Studio Code Integration
 
-The [Telerik Reporting Productivity Tools](https://marketplace.visualstudio.com/items?itemName=TelerikInc.telerik-reporting-productivity-tools) Extension for [Visual Studio Code](https://code.visualstudio.com/) provides scaffolding for the Telerik Reporting native Angular viewer.
+The [Telerik Reporting Productivity Tools](https://marketplace.visualstudio.com/items?itemName=TelerikInc.telerik-reporting-productivity-tools) extension provides report-authoring and application-development workflows for [Visual Studio Code](https://code.visualstudio.com/). Depending on what you want to build, use the following guides to continue.
+
+## Designing Reports in VS Code
+
+You can create, edit, preview, and export Telerik reports directly in Visual Studio Code without first creating a Reporting application.
+
+![A report open in the Telerik Reporting Web Report Designer in VS Code, with the report explorer and properties panel visible](../designing-reports/report-designer-tools/vscode/images/wrd-vscode.png)
+
+* Start with [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode) for installation, licensing, and an overview of the available workflows.
+* Follow [Getting Started with Reports in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/working-with-reports-in-vs-code) to create, preview, and export your first report.
+* See [Working with Existing Reports in VS Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode-existing-reports) when you want to edit reports from an existing application or repository.
+* Use [VS Code Configuration and Reference](slug:reporting-vs-code-configuration-and-reference) for named database connections, licensing, commands, and settings.
+
+## Adding the Native Angular Report Viewer
+
+The VS Code extension can also add the Native Angular Report Viewer to an Angular application. This workflow is intended for displaying reports in an application and is separate from report authoring with the Web Report Designer.
 
 To create a new test app, you can use the Angular CLI:
 

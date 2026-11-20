@@ -15,6 +15,8 @@ components: [general]
 
 Use [Report Designers](https://www.telerik.com/products/reporting/creating-reports.aspx) to create Telerik Reporting report definitions. We provide three different report designers. All report authoring environments include features such as WYSIWYG report design surface, enhanced support for expressions, and wizards for creating graphs, maps, crosstabs, tables, band, and label reports. Define interactive features such as parameters, bookmarks, drill-through, and drilldown actions.
 
+To design reports in VS Code without installing the product MSI, start with [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode). For other IDE workflows, see [Integration with VS Code](slug:integration-with-vs-code).
+
 This document gives a brief overview of the available Report Designers.
 
 ## Standalone Report Designer

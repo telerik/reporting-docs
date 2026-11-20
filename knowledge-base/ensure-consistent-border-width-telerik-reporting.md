@@ -1,6 +1,6 @@
 ---
 title: Ensuring Consistent Border Width in Table Cells in Telerik Reporting
-description: "Learn how to maintain uniform border widths across table cells in Telerik Reporting by managing background color settings."
+description: "Learn how to fix inconsistent table-cell borders in Telerik Reporting by setting a consistent background color for every cell."
 type: how-to
 page_title: How to Achieve Uniform Border Widths in Telerik Reporting Table Cells
 slug: ensure-consistent-border-width-telerik-reporting
@@ -11,36 +11,34 @@ ticketid: 1674842
 
 ## Environment
 
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-</tbody>
-</table>
+This article applies to the following product:
+
+| Product |
+|---|
+| Progress® Telerik® Reporting |
 
 ## Description
 
-In some cases, the borders of table cells in a Telerik Report may appear inconsistently, with some borders looking thicker than others, even though the border width is set uniformly. This issue persists across different rendering formats, including PDF exports. This knowledge base article also answers the following questions:
-- How to fix varying border widths in table cells?
-- How to ensure border consistency in Telerik Reporting tables?
-- What causes some table cell borders to appear thicker in Telerik Reporting?
+In some cases, table cell borders in a Telerik Reporting report can appear inconsistent. Some borders look thicker than others, even when you set the same border width. This issue can occur across rendering formats, including PDF exports. This article answers the following questions:
+
+* How do you fix varying border widths in table cells?
+* How do you ensure consistent borders in Telerik Reporting tables?
+* What causes some table cell borders to appear thicker in Telerik Reporting?
 
 ## Solution
 
-To achieve consistent border widths across all table cells, ensure that the background color of all cells is uniformly set. The issue with seemingly thicker borders arises from how borders and background colors are rendered. Part of the border is drawn inside the cell, and part outside. Then, the background color is applied, which can affect the visibility of the border's thickness.
+To achieve consistent border widths across table cells, set the background color consistently for every cell. Seemingly thicker borders result from how the renderer draws borders and applies background colors. Part of the border is drawn inside the cell, and part is drawn outside. The background color can then affect the visible border thickness.
 
 Follow these steps to resolve the issue:
 
-1. Check the background color settings for each table cell. Identify if any cells have their background color explicitly set to 'White' or any other color, while others are left as default.
-1. Ensure the background colors of all table cells are either set to valid colors, or left to the default (transparent) value:
-	* Reset any explicitly set background colors to their default value. This ensures that all cells have uniform background settings, eliminating discrepancies in border visibility.
-	* Alternatively, explicitly set a background color for all cells. This uniform application of background color will also ensure that the borders appear consistently across the table.
+1. Check the background color settings for each table cell. Identify cells with a background color explicitly set to `White` or another color while other cells use the default.
+1. Ensure that all table cells use either a valid background color or the default transparent value:
+   * Reset explicitly set background colors to the default. This gives all cells the same background settings and removes discrepancies in border visibility.
+   * Alternatively, set the same background color for every cell. This consistent setting makes the borders appear uniform across the table.
 
 This approach addresses the root cause of the issue by aligning the rendering behavior of borders and background colors, ensuring uniform border thickness visibility across your report.
 
 ## See Also
 
-- [Telerik Reporting Table Item](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
-- [Styling Report Items](slug:telerikreporting/designing-reports/styling-reports/styling-report-items)
+* [Table Item Overview](slug:telerikreporting/designing-reports/report-structure/table-crosstab-list/overview)
+* [Styling Report Items](slug:telerikreporting/designing-reports/styling-reports/styling-report-items)

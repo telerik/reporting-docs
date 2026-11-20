@@ -55,6 +55,44 @@ This topic explains how to set up the WPF Report Viewer to work with the Telerik
 1. Click __OK__ when ready. The dialog will close, and the resulting report source will be populated as a value of the __ReportSource__ property.
 1. Build and run your application. If your settings are configured correctly, you should see the report displayed in the report viewer of your WPF application. If not, check the [Troubleshooting](#Troubleshooting) section below.
 
+## Configure Custom HTTP Headers
+
+To send custom headers with REST Service requests, assign a `RestServiceConnectionInfo` instance with `HttpHeaders` set to the viewer's `ReportEngineConnectionInfo` property. You cannot store custom headers in the `ReportEngineConnection` string.
+
+The following example adds tenant information and retrieves an authorization token asynchronously:
+
+```CSharp
+var connection = new RestServiceConnectionInfo("https://example.com/api/reports")
+{
+	HttpHeaders = new HttpHeadersOptions
+	{
+		Headers = new Dictionary<string, string>
+		{
+			{ "X-Tenant-Id", "tenant-42" }
+		},
+		GetHeadersAsync = async () =>
+		{
+			var token = await GetAccessTokenAsync();
+			return new Dictionary<string, string>
+			{
+				{ "X-Tenant-Id", "tenant-42" },
+				{ "Authorization", "Bearer " + token }
+			};
+		},
+		RefreshInterval = 60
+	}
+};
+
+reportViewer.ReportEngineConnectionInfo = connection;
+reportViewer.RefreshReport();
+```
+
+`GetHeadersAsync` takes precedence over `Headers`. Return all required header values from the callback. Header callback results are cached for 300 seconds by default. Set `RefreshInterval` to another number of seconds, or set it to `0` to invoke the callback before every request.
+
+Assign a new `HttpHeadersOptions` instance to `connection.HttpHeaders` when you change the options. Changes to the same options instance are not applied until you assign it again. A custom `Authorization` header takes precedence over the connection's token.
+
+Custom headers apply to requests sent to the configured Reporting REST Service origin. They do not apply when the viewer connects to Report Server. Avoid redirects to another origin because they can forward custom headers to the destination.
+
 > When setting [ReportEngineConnection](/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection) with code, make sure you call the [RefreshReport()](/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_RefreshReport) method or set the [ReportSource](/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportSource) property afterwards, so the connection's new value will be respected.
 
 ## Troubleshooting

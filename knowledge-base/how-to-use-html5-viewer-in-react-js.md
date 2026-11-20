@@ -50,12 +50,11 @@ The following guide assumes previous knowledge of React:
    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
    ```
 
-1. Add the desired [Kendo UI Less-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) to `index.html` in order to style the viewer:
+1. Add a [Kendo UI theme](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) to `index.html` to style the viewer:
 
    ```HTML
    <head>
-   		<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-   		<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default.min.css" rel="stylesheet" />
+   		<link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{kendothemeversion}}/dist/default-main.css" rel="stylesheet" />
    ```
 
 1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:

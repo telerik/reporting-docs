@@ -1,7 +1,7 @@
 ---
 title: Installation Approaches
 page_title: Installing Telerik Reporting - Control Panel, MSI, and NuGet
-description: "Learn how to install Telerik Reporting using the Control Panel, the MSI installer, or NuGet packages, and choose the approach that fits your workflow."
+description: "Install Telerik Reporting with the Control Panel, MSI installer, or NuGet packages, and choose the approach that fits your workflow."
 slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
 published: True
@@ -52,7 +52,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. Log into your [Telerik account](https://www.telerik.com/account). Select the **Downloads** tab to view the available products and select **Telerik Reporting**.
 1. From the next page, download the MSI installation and documentation files. The source code is available for download only for commercial license holders.
-1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog that appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
+1. When the download completes, run the downloaded `Telerik_Reporting_<version>.msi` file. In the dialog that appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
 
    ![The Welcome Page of the Telerik Reporting Installation Wizard](images/installWizard1.png)
 

@@ -84,6 +84,7 @@ Using an API key is more secure than using an account password, especially when 
 	![Telerik Reporting account API Keys page for generating a private NuGet feed authentication key](./images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
+1. In the **Key Type** field, select **Nuget**.
 1. Click **Generate Key**.
 1. Select **Copy and Close**. After you close the window, you cannot copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
 1. Store the generated NuGet API key for the next steps. Use `api-key` as the username and the generated API key as the password when you authenticate with the Telerik NuGet server.
@@ -148,6 +149,8 @@ If you need to update expired or invalid credentials, run this command:
 NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "api-key" -Password "<API_KEY>" -StorePasswordInClearText
 ```
 
+Replace `<API-KEY>` with your generated API key. The `-StorePasswordInClearText` option stores credentials in `NuGet.Config` and should be used only on a trusted machine.
+
 After you run the command, reopen Visual Studio, Rider, or any other NuGet client so it reloads the updated source configuration.
 
 ### Setting Up in JetBrains Rider
@@ -155,8 +158,8 @@ After you run the command, reopen Visual Studio, Rider, or any other NuGet clien
 Use this method when you install packages through JetBrains Rider.
 
 1. Open JetBrains Rider.
-1. From the main menu, select `Tools` > `NuGet` > `NuGet Quick List`, or press `Alt+Shift+N`.
-1. Choose `Show NuGet Packages`.
+1. From the main menu, select **Tools** > **NuGet** > **NuGet Quick List**, or press `Alt+Shift+N`.
+1. Choose **Show NuGet Packages**.
 
    ![JetBrains Rider menu path for opening the NuGet Packages window](images/ShowNuGetPackagesJetBrainsRider.png)
 

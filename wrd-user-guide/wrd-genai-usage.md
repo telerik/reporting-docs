@@ -144,7 +144,7 @@ The feature follows the existing Web Report Designer security and telemetry patt
 
 - Prompt handling, schema generation, validation tooling, and data access were threat-modeled to prevent prompt-driven data exfiltration or unintended actions.
 - Basic usage telemetry is collected, subject to user consent and the existing Web Report Designer analytics configuration.
-- Administrators control availability through host-level service registration and the `Commands_AIAgent_Use` permission, as described in [Configuring AI Report Generator in the Host Application](#configuring-ai-report-generator-in-the-host-application).
+- Administrators control availability through host-level service registration and the `Commands_AIAgent_Use` permission, as described in [Configuring AI Report Generator in the Host Application](slug:wrd-genai-implement#configuring-ai-report-generator-in-the-host-application).
 
 The current release has the following limits:
 

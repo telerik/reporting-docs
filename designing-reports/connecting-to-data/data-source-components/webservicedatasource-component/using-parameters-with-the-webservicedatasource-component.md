@@ -21,7 +21,7 @@ The values of this parameter type replace the corresponding part of the `Service
 
 > tip The WebServiceDataSource's `Inline Parameter` names should start with `@` to distinguish them from the other content in the Service URL or the body of the request.
 
-### Using Inline Parameters in Service Url
+### Using Inline Parameters in Service URL
 
 In the [WebServiceDataSource configuration wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard), the Service URL can be provided as __constantUrl__, for example:
 
@@ -39,11 +39,21 @@ The entire Service URL can also be set to a WebServiceDataSource parameter, for 
 
 ### Using Inline Parameters in the Body of the POST request
 
-The single-value parameter should be surrounded by quotation marks. The multi-value parameter is provided as it is. For example, in the next setup, `@name` is a single-value parameter and `@surname` is a multi-value parameter:
+The single-value parameter should be surrounded by quotation marks when it is a string or a date. If the value is a number or a boolean, it should be written as-is in the request body, without quotation marks. For example:
+
+```json
+{
+  "name": "@name",
+  "isEnabled": @isEnabled,
+  "amount": @amount
+}
+```
+
+The multi-value parameter is provided as it is. For example, in the next setup, `@name` is a single-value parameter and `@surname` is a multi-value parameter:
 
 ![The ServiceUrl of the WebServiceDataSource configured as a constant and inline parameters provided in the body of the request](images/WebServiceDataSourceUrlBodyx750.png)
 
-It is necessary to provide an additional Header "Content-Type" with the value "application/json". Generally, the Header Names are case-insensitive. The 'Content-Type' header that is needed for the POST requests is case-sensitive.
+It is necessary to provide an additional Header `Content-Type` with the value `application/json`. Generally, the Header Names are case-insensitive. The `Content-Type` header that is needed for the POST requests **is** case-sensitive.
 
 The multi-value parameter run-time and design-time values should be surrounded in square brackets to indicate an array:
 
@@ -67,7 +77,7 @@ The generated final URL for the design-time parameter values will look like this
 
 ## Header Parameters
 
-The parameter will be included as a `Header` in the request with Header Name the name of the parameter, and Header Value the value of the parameter. A setup in the Web Service Data Source Wizard, like:
+The parameter will be included as a `Header` in the request with *Header Name* the name of the parameter, and *Header Value* the value of the parameter. A setup in the Web Service Data Source Wizard, like:
 
 ![Set the Header parameter value in the WebServiceDataSource Wizard](images/WebServiceDataSourceHeaderParameterx750.png)
 

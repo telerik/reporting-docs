@@ -131,8 +131,7 @@ npm install
 
 	```HTML
 	<!-- The required LESS-based styles -->
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/@progress/kendo-theme-default@{{kendothemeversion}}/dist/default-ocean-blue.css" rel="stylesheet" />
 	```
 
 	> To get the SASS-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).

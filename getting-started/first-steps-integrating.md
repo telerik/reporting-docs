@@ -1,7 +1,7 @@
 ---
 title: Integrating Reports in Apps (Guide)
 page_title: Step-by-Step Guide on Integrating Telerik Reports in Web Applications
-description: "Get up and running with Telerik Reporting and learn how to integrate your Telerik Report into a web application. Use the dedicated Visual Studio Item Templates that make your life easier and more productive."
+description: "Learn how to integrate Telerik Reporting into an ASP.NET Core web app with the HTML5 Report Viewer and Reporting REST Service."
 slug: first-steps-integrating-reports
 tags: telerik, reporting, first, steps, guide, integrate, a, report, in, application
 published: True
@@ -10,23 +10,23 @@ reportingArea: General
 components: [general]
 ---
 
-# Integrating Your Telerik Report in Web Applications
+# Integrating Reports in Apps (Guide)
 
-This guide targets [users who want to build custom reports and, then, present them in applications of their choice](https://www.telerik.com/products/reporting/embedded-reporting.aspx). For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application.
+This guide helps you build a sample report and display it in an application with [Telerik embedded reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx). This tutorial uses an ASP.NET Core application.
 
-- First, you will install Telerik Reporting.
-- Next, you will create a sample report by using the Standalone Report Designer.
-- Finally, you'll create from scratch an ASP.NET Core application and add an Html5 Report Viewer with the necessary Reporting REST Service through our Visual Studio item template.
+The tutorial covers the following tasks:
 
-At the end, you'll be able to see the report in the web browser, export it in different formats, and print it.
+- Install Telerik Reporting.
+- Create a sample report with the Standalone Report Designer.
+- Create an ASP.NET Core application and add an HTML5 Report Viewer with the required Reporting REST Service through the Visual Studio item template.
+
+At the end, you will be able to see the report in the web browser, export it in different formats, and print it.
 
 For the first-steps scenario on designing a Telerik Report and exporting it to PDF, refer to the getting started guide on [designing a report](slug:telerikreporting/getting-started/first-steps).
 
 ## Prerequisites
 
-The following prerequisites are required for accomplishing the scenario in this tutorial. For more information on the third-party tooling versions supported by Telerik Reporting, refer to the [list with system requirements](https://www.telerik.com/products/reporting/system-requirements).
-
-- Install Microsoft SQL Server Management Studio.
+Install Microsoft SQL Server Management Studio before you start. For more information about supported third-party tooling versions, see the [Telerik Reporting system requirements](https://www.telerik.com/products/reporting/system-requirements).
 
 ## Step 1: Install Telerik Reporting
 
@@ -40,20 +40,20 @@ Once you have your report, save it as `DemoReport.trdp`. In the next step, you w
 
 ## Step 3: Integrate and Display the Report
 
-In this final step, you'll integrate your report in an ASP.NET Core web application in .NET {{site.mindotnetversion}} and display the project with the HTML5 Report Viewer.
+In this final step, you integrate your report into an ASP.NET Core web application in .NET {{site.mindotnetversion}} and display it with the HTML5 Report Viewer.
 
 1. Open **Visual Studio 2022**. From the **Start** window, choose **Create a new project**.
-1. Select **ASP.NET Core Web App** and name it **TelerikWebApp**. In the **Additional information** window, select **.NET{{site.mindotnetversion}}.0 (Long-term support)** and leave the rest of the settings as default. Click **Create**.
-1. Right-click the project. Select **Add** > **New Item** > **Telerik HTML5 Report Viewer Page [version]**. Name the file `index.html`.
-1. In the **Configure reporting engine** dialog, leave the selections in the same way they are set by default, that is, **REST Service** > **Create new Rest Service**. Click **Next**.
+1. Select **ASP.NET Core Web App** and name it **TelerikWebApp**. In the **Additional information** window, select **.NET {{site.mindotnetversion}}.0 (Long-term support)** and leave the other settings at their defaults. Click **Create**.
+1. Right-click the project. Select **Add** > **New Item** > **Telerik HTML5 Report Viewer Page {{site.suiteversion}}**. Name the file `index.html`.
+1. In the **Configure reporting engine** dialog box, leave the default selections: **REST Service** > **Create new REST service**. Click **Next**.
 
-	![Page for Configuring the Rest Service for the Report Viewer](images/RestSrervice.PNG)
+	![Page for Configuring the REST Service for the Report Viewer](images/RestSrervice.PNG)
 
-1. Click **Sample report definition** and, then, **Next** > **Finish**.
-1. Run the project to make sure everything works as expected. Navigate to the `index.html` page to make sure you see the sample report.
-1. Let's add your own `DemoReport.trdp` report to the application. Note that the Visual Studio Item Template has created a `Reports` folder in your application which contains a default `SampleReport.trdp` report. To add the `DemoReport.trdp` to the same folder, right-click the folder, select **Add** > **Existing Item** and navigate to your report.
+1. Click **Sample report definition**, and then click **Next** > **Finish**.
+1. Run the project to verify the setup. Navigate to the `index.html` page and verify that the sample report appears.
+1. Add your `DemoReport.trdp` report to the application. The Visual Studio item template creates a `Reports` folder that contains a default `SampleReport.trdp` report. To add `DemoReport.trdp` to the same folder, right-click the folder, select **Add** > **Existing Item**, and navigate to your report.
 1. Open the `index.html` file that hosts the HTML5 Report Viewer in the `wwwroot` folder. Find the `reportSource` property of the `#reportViewer1` element that is set up in the `document.ready` event handler of the page. Change its inner `report` element from `"SampleReport.trdp"` to `"DemoReport.trdp"`.
-1. Now, you have to include the connection string in the `appsettings.json` file because you added a named connection string to the report. If the report uses an embedded connection, you do not have to add it again to the Visual Studio project.
+1. Because the report uses a named connection string, add the connection string to the `appsettings.json` file. If the report uses an embedded connection, you do not have to add it again to the Visual Studio project.
 
 	The JSON configuration file looks similar to the following:
 
@@ -63,7 +63,7 @@ In this final step, you'll integrate your report in an ASP.NET Core web applicat
 
 	![The Demo Report Previewed in the Report Viewer](images/DemoReportInViewer.PNG)
 
-That was it! Now you are ready to deep-dive into Telerik Reporting and take full advantage of its more advanced functionalities!
+You can now explore the advanced features of Telerik Reporting.
 
 ## Next Steps
 

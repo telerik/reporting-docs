@@ -49,6 +49,7 @@ The following example illustrates a list of all the available commands in the vi
 |setScaleMode| An object with `scaleMode`(and `scale` for'specific' scale mode is used)|Changes the viewer's scaleMode|
 |setReportSource| An object with `report` and `parameters` properties| Changes the report source and refreshes the viewer.|
 |setAuthenticationToken | authentication token| A bearer token to be added in the Authorization token of each request|
+|setHttpHeaders | `HttpHeadersOptions` or `null`| Sets or clears custom HTTP headers for requests to the REST Service origin. See [Configuring Custom HTTP Headers in the Native Angular Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/custom-http-headers) for details.|
 |exportReport|rendering extension name|Exports the report, using the respective rendering extension name.|
 |printReport|none|Triggers the report printing.|
 |toggleDocumentMap|none|Shows or hides the document map.|

@@ -4,7 +4,7 @@ page_title: Install Telerik Reporting with NuGet Packages
 description: "Learn how to install Telerik Reporting NuGet packages from NuGet.org, the Telerik private feed, or a local feed in Visual Studio and .NET."
 slug: telerikreporting/using-reports-in-applications/install-with-nuget-packages
 previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio, /add-the-telerik-private-nuget-feed-to-visual-studio, /getting-started/installation/adding-private-nuget-feed
-tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
+tags: how,add,telerik,private,nuget,feed,visual,studio
 published: True
 position: 5
 reportingArea: General
@@ -21,13 +21,13 @@ Use one of the following installation paths:
 
 - [Install Telerik Reporting from NuGet.org](#installing-telerik-reporting-from-nugetorg)
 - [Install Telerik Reporting from the Telerik NuGet server](#installing-from-the-telerik-nuget-server)
-- [Install Telerik Reporting from a local NuGet feed]({%slug setup-local-nuget-feed%})
+- [Install Telerik Reporting from a local NuGet feed](slug:setup-local-nuget-feed)
 
 ## Choosing the Right NuGet Installation Path
 
 For current Telerik Reporting releases, use [NuGet.org](https://www.nuget.org/). **NuGet.org** is the default package source in Visual Studio and the .NET CLI, so it requires the least configuration and avoids unnecessary package-source ambiguity.
 
-Use a [local NuGet feed]({%slug setup-local-nuget-feed%}) when you need offline installation, reproducible restores inside a controlled network, or a mirrored package source for build agents.
+Use a [local NuGet feed](slug:setup-local-nuget-feed) when you need offline installation, reproducible restores inside a controlled network, or a mirrored package source for build agents.
 
 Use the **Telerik NuGet server** only when you need older package versions that predate the NuGet.org release or when your organization already standardizes on the Telerik private feed.
 
@@ -39,7 +39,7 @@ Starting with **2026 Q3**, the Telerik Reporting packages are available on [NuGe
 
 1. In Solution Explorer, right-click the project and select **Manage NuGet Packages...**.
 2. In **Package source**, verify that **nuget.org** is selected.
-3. In the **Browse** tab, search for the package you need, for example `Telerik.Reporting`.
+3. In the **Browse** tab, search for the package you need, for example, `Telerik.Reporting`.
 4. Select the package and then select **Install**.
 
 ### Installing from NuGet.org with the .NET CLI
@@ -76,7 +76,7 @@ If Visual Studio does not show a sign-in dialog, configure the feed with the NuG
 
 The Telerik NuGet server requires authentication, so the first step is to generate an API key. Use the API key instead of a password when a NuGet client asks for credentials.
 
-Using an API key is more secure than using an account password, especially when you work with [.NET CLI]({%slug restoring-nugets-in-ci%}#using-only-cli-commands) or the [`NuGet.Config` file]({%slug restoring-nugets-in-ci%}#using-a-nugetconfig-file-with-your-projects).
+Using an API key is more secure than using an account password, especially when you work with [.NET CLI](slug:restoring-nugets-in-ci#using-only-cli-commands) or the [`NuGet.Config` file](slug:restoring-nugets-in-ci#using-a-nugetconfig-file-with-your-projects).
 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
@@ -124,7 +124,7 @@ Use these checks and fallback options:
 
 1. Make sure you selected the Telerik package source and clicked **Browse**. In many cases, Visual Studio asks for credentials only when it first queries the feed.
 1. If no dialog appears, close the package manager, reopen it, and select the Telerik source again.
-1. If the feed still shows no Telerik packages, configure the source with the NuGet CLI by following the steps in [setting up with NuGet CLI](#setting-up-with-nuget-cli). This path stores the credentials directly and does not depend on a Visual Studio popup.
+1. If the feed still shows no Telerik packages, configure the source with the NuGet CLI by following the steps in [setting up with NuGet CLI](#setting-up-with-nuget-cli). This path stores the credentials directly and does not depend on a Visual Studio pop-up.
 1. If cached credentials are incorrect or expired, update the Telerik source credentials with the NuGet CLI `Sources Update` command shown later in this article.
 1. If you still see only trial packages or no packages, verify that the API key belongs to a Telerik account with access to Telerik Reporting.
 
@@ -161,7 +161,7 @@ Use this method when you install packages through JetBrains Rider.
    ![JetBrains Rider menu path for opening the NuGet Packages window](images/ShowNuGetPackagesJetBrainsRider.png)
 
 1. At the top of the NuGet tool window, switch to the `Sources` tab.
-1. In the left panel, select a specific `NuGet.Config` file, for example `C:\Users\username\AppData\Roaming\NuGet\NuGet.Config`.
+1. In the left panel, select a specific `NuGet.Config` file, for example, `C:\Users\username\AppData\Roaming\NuGet\NuGet.Config`.
 1. After selecting a concrete NuGet.Config file, the Feeds list will appear on the right.
 1. From this view, you can:
    - Add new package sources.
@@ -179,10 +179,10 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
 
 1. Remove the saved credentials in the [Windows Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0). These credentials will appear as `nuget.telerik.com` or `VSCredentials_nuget.telerik.com` entries.
 1. Remove the Telerik NuGet package source from Visual Studio.
-1. If you have added the Telerik package source by using the .NET CLI, try to remove it by running the following commands:
+1. If you have added the Telerik package source using the .NET CLI, try to remove it by running the following commands:
    - [`dotnet nuget list source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-list-source)
    - [`dotnet nuget remove source`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-remove-source)
-1. Check if you have any credentials stored in `%AppData%\NuGet\Nuget.Config`. If so, remove them. Here is an example of how your `NuGet.Config` file can look like:
+1. Check if you have any credentials stored in `%AppData%\NuGet\Nuget.Config`. If so, remove them. Here is an example of what your `NuGet.Config` file can look like:
 
    {{source=CodeSnippets\Blazor\Docs\XML\NugetConfig.xml}}
 
@@ -211,6 +211,6 @@ Use the following checks when the feed still does not work:
 
 ## See Also
 
-- [Restoring NuGet Packages in Your CI Workflow]({%slug restoring-nugets-in-ci%})
-- [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({%slug nuget-feed-returned-unexpected-401-status-error%})
-- [Setting Up a Local NuGet Package Feed]({%slug setup-local-nuget-feed%})
+- [Restoring NuGet Packages in Your CI Workflow](slug:restoring-nugets-in-ci)
+- [NuGet V2 Feed Error about Returned Unexpected 401 Status Code](slug:nuget-feed-returned-unexpected-401-status-error)
+- [Setting Up a Local NuGet Package Feed](slug:setup-local-nuget-feed)

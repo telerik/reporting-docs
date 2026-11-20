@@ -17,13 +17,16 @@ Use [Telerik Reporting designers](https://www.telerik.com/products/reporting/cre
 
 This overview explains the supported report definition types and the main differences between the designers.
 
+To create, edit, and preview reports in VS Code without installing the product MSI or creating an application, see [Telerik Reporting in Visual Studio Code](slug:telerikreporting/designing-reports/report-designer-tools/vscode).
+
 ## Standalone Report Designer
 
 The [Standalone Report Designer](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview) is a desktop application that does not require Visual Studio. It is available for the .NET Framework and .NET:
 
 * The .NET Framework executable is `Telerik.ReportDesigner.exe`. The .NET executable is `Telerik.ReportDesigner.Net.exe`.
 * The product installer places the executables in the `Report Designer` folder. The .NET executable is in the `.NET` subfolder.
-* Works with XML report definitions packaged in a ZIP archive (`.TRDP`) or stored in the plain legacy format (`.TRDX`):
+* The Standalone Report Designer for .NET also supports [coded C# report definitions in .NET projects](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/srd-net-working-with-type-report-definitions).
+* Both versions work with XML report definitions packaged in a ZIP archive (`.TRDP`) or stored in the plain legacy format (`.TRDX`):
 
 	* You do not need to recompile a project when you modify the report definition.
 	* You can open an older report definition with a newer version of the Standalone Report Designer, report viewer, or report service. The definition is upgraded when you edit and save it.
@@ -43,7 +46,8 @@ The [Visual Studio Report Designer](slug:telerikreporting/designing-reports/repo
 	* When you upgrade Telerik Reporting in a .NET Framework project, use the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard).
 	* Coded reports support report events. For more information, see [report events](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview).
 
-* The designer opens when you double-click a `.cs` or `.vb` report definition that inherits from `Telerik.Reporting.Report`. Install the corresponding Telerik Reporting version on the machine.
+* In a .NET Framework project, the designer opens when you double-click a `.cs` or `.vb` report definition that inherits from `Telerik.Reporting.Report`. Install the corresponding Telerik Reporting version with Visual Studio integration.
+* For SDK-style .NET projects, [configure the NuGet-based designer](slug:vs-report-designer-net-getting-started), then right-click the report's main `.cs` or `.vb` file in **Solution Explorer** and select **View Designer**.
 * Visual Studio assembly caching can prevent a reliable designer preview when you use [ObjectDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview), [EntityDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview), or [OpenAccessDataSource](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview).
 
 ## Web Report Designer

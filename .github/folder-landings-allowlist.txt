@@ -1,0 +1,11 @@
+# Folders that the folder landing check (.github/scripts/check-folder-landings.mjs) does not require
+# to have a landing. A folder needs a landing so that its URL does not return 404.
+#
+# Format: one folder path per line, relative to the repository root, for example `designing-reports/styling`.
+# `*` matches one path segment, and a trailing `/**` matches the folder and all its subfolders.
+# Text after `#` is a comment. Entries that match no folder are reported as errors.
+#
+# Prefer adding an index.md or a redirect in docs-builder.yml over adding an entry here.
+
+# The viewer API reference articles are generated for each release, so their folders do not have a landing.
+embedding-reports/display-reports-in-applications/web-application/*/api-reference/**

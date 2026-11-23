@@ -1,6 +1,6 @@
 ---
 title: Windows Forms Report Viewer Scaling Issues on Higher DPI
-description: "Learn what may be causing scaling issues in the Windows Forms Report Viewer on higher DPI and how to fix them."
+description: "Learn why the Windows Forms Report Viewer renders blurry or incorrectly sized reports on high DPI displays and how to declare the app as DPI-aware."
 type: troubleshooting
 page_title: Reports do not render correctly on higher resolution
 slug: windows-forms-report-viewer-scaling-issues-on-higher-dpi
@@ -11,97 +11,93 @@ res_type: kb
 
 ## Environment
 
-<table>
-	<tr>
-		<td>Product</td>
-		<td>Progress® Telerik® Reporting</td>
-	</tr>
-	<tr>
-		<td>Project Type</td>
-		<td>Windows Forms</td>
-	</tr>
-	<tr>
-		<td>Report Viewer</td>
-		<td>WinForms Viewer</td>
-	</tr>
-</table>
+| Product | Project Type | Report Viewer |
+|---|---|---|
+| Progress® Telerik® Reporting | Windows Forms | WinForms Viewer |
 
 ## Description
 
-When using [Windows Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) on a machine with a DPI scale factor higher than 96 (100%), Windows will resize the bitmap images in the application according to the current DPI value.
+When the host application is DPI-unaware, Windows can bitmap-scale the [Windows Forms Report Viewer](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview) on a high-DPI display. This can make the viewer or report content blurry or incorrectly sized. A system-aware application can also appear blurry when it moves to a display with a different DPI than the display where it started.
 
-This makes the report viewer and the report content blurry or incorrectly sized in many common usage scenarios. Also, when printing the report, the application will scale the report contents incorrectly, because it cannot detect the current machine's DPI settings, and the DPI value will always be reported as 96 dots per inch.
+The report engine also uses the process DPI setting to size report items and images. An incorrect DPI setting can affect report rendering, preview, or printing. For details, see [Configuring the report engine DPI awareness](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element).
 
-## Cause\Possible Cause(s)
+## Cause
 
-By default, WinForms applications are declared as DPI-unaware. Declaring the application in which the Windows Forms Report Viewer is used as a `DPI-aware` application would resolve the issues.
+The effect of display scaling depends on the target framework and the application's DPI-awareness setting. Windows bitmap-scales DPI-unaware applications. Modern .NET Windows Forms templates default to `SystemAware`, not DPI-unaware. A system-aware application does not adjust its UI when it moves between displays with different DPI settings, so Windows can bitmap-scale the UI.
 
 ## Solution
 
-The recommended approach is to set the `dpiAware` element in your application to avoid further scaling, visual, or interaction issues. To do so, you have to add a manifest file at the root of the application with the following content:
+Use the configuration that matches the target framework of the Windows Forms application that hosts the viewer:
 
-- .NET Framework:
+* .NET Framework before 4.7: Declare per-monitor DPI awareness in the application manifest. Add the following element to the existing `app.manifest` file:
 
   ```XML
-  <?xml version="1.0" encoding="utf-8"?>
-  <asmv1:assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  	<assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
-  	<asmv3:application  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" >
-  	<asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
-  		<dpiAware>True/PM</dpiAware>
-  	</asmv3:windowsSettings>
-  	</asmv3:application>
-  </asmv1:assembly>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
+    </windowsSettings>
+  </application>
   ```
 
-- .NET:
-
-  Ensure Windows 10 compatibility in the manifest file, as elaborated in the Microsoft article [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms):
+  For applications that target .NET Framework 4.6, 4.6.1, or 4.6.2, also enable WinForms automatic DPI resizing in `app.config`:
 
   ```XML
-  <?xml version="1.0" encoding="utf-8"?>
-  <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
-    <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
-    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
-  	<security>
-  	  <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-  		<!-- UAC Manifest Options may be added if needed -->
-  		<requestedExecutionLevel level="asInvoker" uiAccess="false" />
-  	  </requestedPrivileges>
-  	</security>
-    </trustInfo>
+  <configuration>
+    <runtime>
+      <AppContextSwitchOverrides value="Switch.System.Windows.Forms.EnableWindowsFormsHighDpiAutoResizing=true" />
+    </runtime>
+  </configuration>
+  ```
 
-    <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
-  	<application>
-  	  <!-- Other Windows distributions may be added -->
+  The manifest declares the process as per-monitor DPI-aware. .NET Framework versions before 4.7 do not include the later high-DPI improvements. Test the viewer on the target runtime and handle any scaling issues in the application.
 
-  	  <!-- Windows 10 -->
-  	  <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+* .NET Framework 4.7 and later: Add the Windows 10 compatibility declaration to the application manifest and set `DpiAwareness` to `PerMonitorV2` in `app.config`. The compatibility declaration identifies the supported Windows version; the `app.config` setting enables WinForms high-DPI support. Ensure that `Application.EnableVisualStyles()` is the first method call in `Main`, before creating controls. Add the following elements:
 
-  	</application>
-    </compatibility>
-
-    <!-- Indicates that the application is DPI-aware and will not be automatically scaled by Windows at higher
-  	   DPIs. Windows Presentation Foundation (WPF) applications are automatically DPI-aware and do not need
-  	   to opt in. Windows Forms applications targeting .NET Framework 4.6 that opt into this setting, should
-  	   also set the 'EnableWindowsFormsHighDpiAutoResizing' setting to 'true' in their app.config. -->
-
-    <application xmlns="urn:schemas-microsoft-com:asm.v3">
-  	<windowsSettings>
-  	  <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
-  	</windowsSettings>
+  ```XML
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
     </application>
-
-    <!-- OTHER CONTENT FOLLOWS -->
-
-  </assembly>
+  </compatibility>
   ```
+
+  ```XML
+  <configuration>
+    <System.Windows.Forms.ApplicationConfigurationSection>
+      <add key="DpiAwareness" value="PerMonitorV2" />
+    </System.Windows.Forms.ApplicationConfigurationSection>
+  </configuration>
+  ```
+
+  The high-DPI enhancements for .NET Framework 4.7 and later require Windows 10 Creators Update or later. Do not set DPI awareness in the manifest for these versions; the manifest setting can override the `app.config` setting.
+
+* Modern .NET (C#): For Windows Forms applications that call `ApplicationConfiguration.Initialize()` from `Main`, set `ApplicationHighDpiMode` in the project file. The default is `SystemAware`; set it to `PerMonitorV2` to enable per-monitor DPI handling:
+
+  ```XML
+  <PropertyGroup>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+  </PropertyGroup>
+  ```
+
+  For manual startup code that does not call `ApplicationConfiguration.Initialize()`, call `Application.SetHighDpiMode` at the start of `Main`, before creating controls:
+
+  ```C#
+  Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+  ```
+
+  Configure DPI awareness through the project property or API, not through the application manifest. Starting with .NET 9, a DPI setting in the manifest produces warning `WFO0003`.
+
+  In Visual Basic, the project property configures the Visual Studio Designer but does not set the runtime DPI mode. Configure the runtime mode through the Visual Basic Application Framework settings or its startup event.
+
+The DPI configuration depends on the target framework of the Windows Forms application that hosts the viewer, not the target framework used to build the Telerik Reporting assemblies.
 
 ## Notes
 
-For reference, check our demos located in the Telerik Reporting installation folder, for example: _C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Examples\CSharp|VB\WinFormsDemo_. The `dpiAware.manifest` file is placed at the root of the application.
+For reference, check the demos in the Telerik Reporting installation folder. For example, see `C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Examples\CSharp|VB\WinFormsDemo`. Check the target framework before reusing a demo's DPI configuration.
+
+For more information, see [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms), [Compiler Warning WFO0003](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/compiler-messages/wfo0003), and [printing reports from a WinForms viewer without declaring the entire application DPI-aware](slug:print-report-correctly-from-winforms-viewer-without-declaring-entire-application-as-dpi-aware).
 
 ## See Also
 
-- [Windows Forms Application - Declaring the application as DPI-aware](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware)
-- [Writing DPI-Aware Desktop and Win32 Applications](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)
+* [Declaring a Windows Forms application as DPI-aware](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware)
+* [High DPI desktop application development on Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)

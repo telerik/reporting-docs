@@ -1,5 +1,5 @@
 ---
-title: Create a Strip Line Chart
+title: Creating a Strip Line Chart
 page_title: Create a Strip Line Chart with a Target Line in Telerik Reporting
 description: "Learn how to create a strip line chart in Telerik Reporting by combining monthly income columns and a horizontal target line in a single Graph report item."
 type: how-to

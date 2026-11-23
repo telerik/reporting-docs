@@ -15,7 +15,9 @@ components: [general]
 |Minimum Version|Q1 2025|
 |----|----|
 
-Telerik Reporting requires activation through a license key for both, trial and commercial, versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
+Telerik Reporting requires activation with a license key for both trial and commercial versions of the product. This article describes how to download your personal license key and use it to activate Telerik Reporting.
+
+The table above shows the minimum Telerik Reporting version that requires license activation.
 
 An invalid license results in [errors and warnings](slug:license-errors-and-warnings), such as watermarks and banners during build, test, and publish.
 
@@ -52,6 +54,8 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 
 ### Downloading Manually
 
+To download the license key manually, follow these steps:
+
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 1. Click the **Download License Key** button.
 
@@ -68,6 +72,8 @@ The extensions for Telerik Reporting are installed by default when using the MSI
 By default, the activation of the Telerik Reporting library is automatic when your license key file is already downloaded, and the Visual Studio project has access to `www.nuget.org`.
 
 If automatic activation fails and you see licensing-related error messages, [activate the product manually](#activating-telerik-reporting-manually).
+
+If a watermark remains at runtime after a successful build, review [troubleshooting steps for license problems](slug:license-troubleshoot).
 
 ## Activating Telerik Reporting Manually
 

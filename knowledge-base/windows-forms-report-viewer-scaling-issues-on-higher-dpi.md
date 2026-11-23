@@ -95,7 +95,7 @@ The DPI configuration depends on the target framework of the Windows Forms appli
 
 For reference, check the demos in the Telerik Reporting installation folder. For example, see `C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Examples\CSharp|VB\WinFormsDemo`. Check the target framework before reusing a demo's DPI configuration.
 
-For more information, see [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms), [Compiler Warning WFO0003](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/compiler-messages/wfo0003), and [printing reports from a WinForms viewer without declaring the entire application DPI-aware](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/print-report-correctly-from-winforms-viewer-without-declaring-entire-application-as-dpi-aware).
+For more information, see [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms), [Compiler Warning WFO0003](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/compiler-messages/wfo0003), and [printing reports from a WinForms viewer without declaring the entire application DPI-aware](slug:print-report-correctly-from-winforms-viewer-without-declaring-entire-application-as-dpi-aware).
 
 ## See Also
 

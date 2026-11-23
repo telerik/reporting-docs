@@ -51,7 +51,7 @@ Use the configuration that matches the target framework of the Windows Forms app
 
   The manifest declares the process as per-monitor DPI-aware. .NET Framework versions before 4.7 do not include the later high-DPI improvements. Test the viewer on the target runtime and handle any scaling issues in the application.
 
-* .NET Framework 4.7 and later: Add the Windows 10 compatibility declaration to the application manifest and set `DpiAwareness` to `PerMonitorV2` in `app.config`. The compatibility declaration identifies the supported Windows version; the `app.config` setting enables WinForms high-DPI support. Add the following elements:
+* .NET Framework 4.7 and later: Add the Windows 10 compatibility declaration to the application manifest and set `DpiAwareness` to `PerMonitorV2` in `app.config`. The compatibility declaration identifies the supported Windows version; the `app.config` setting enables WinForms high-DPI support. Ensure that `Application.EnableVisualStyles()` is the first method call in `Main`, before creating controls. Add the following elements:
 
   ```XML
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

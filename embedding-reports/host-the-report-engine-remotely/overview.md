@@ -51,7 +51,7 @@ You can also configure the following service behaviors:
 
 * The client session expires after a configurable period. Within a single client session, the same request returns the same cached resource.
 
-	>note The [Register Client](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client) endpoint can enforce regeneration for the Refresh Report functionality. Add `useCache = false` to the request body.
+	>note To regenerate a report for the Refresh Report functionality, set `"useCache": false` in the JSON request body sent to the [Resolve Document](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document) endpoint.
 
 * If you share the service with more than one app, enable [Cross-Origin Resource Sharing](https://fetch.spec.whatwg.org/).
 * The service executes report generation requests in a task queue. Configure the number of reports rendered at the same time in the [REST service configuration](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).

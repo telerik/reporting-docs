@@ -19,10 +19,10 @@ Telerik Reporting supports three installation approaches: the [Control Panel](#u
 
 Use this table to choose the approach that fits your workflow:
 
-| Approach                                  | Best For                                                                                                     | Design-Time Support |
-| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------ |
-| [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                | Yes                 |
-| [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer. | Yes                 |
+| Approach                                  | Best For                                                                                                                                                          | Design-Time Support |
+| :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ |
+| [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                                                                     | Yes                 |
+| [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer.                                                      | Yes                 |
 | [NuGet packages](#using-nuget-packages)   | Adding current Telerik Reporting packages to an existing project or automating installation in a continuous integration and continuous delivery (CI/CD) pipeline. | No                  |
 
 ## Using the Control Panel
@@ -38,6 +38,8 @@ You can install Telerik Reporting by using the `.msi` file for a full local inst
 The MSI installation wizard installs the product by default in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder.
 
 The MSI installer is the recommended approach for a full local installation. It automatically registers the required Telerik Reporting assemblies in the machine's Global Assembly Cache (GAC) for the Visual Studio Report Designer, configures the Project and Item Templates across all Visual Studio instances, and creates and populates the AdventureWorks sample database for the sample projects.
+
+### MSI Installation Details
 
 During the MSI installation process, note the following:
 

@@ -25,7 +25,7 @@ The **Telerik Reporting** or **Telerik.CommonPackage** extension is disabled or 
 
 ## Solution
 
-If another user installed the extension, Visual Studio might not load it when you run Visual Studio as an administrator. To allow per-user extensions:
+When you run Visual Studio as an administrator, it might not load extensions installed for your Windows user account. If the extension is installed only for another Windows user, install it for your account. To allow your per-user extensions to load when Visual Studio runs as an administrator:
 
 1. Select **Tools** > **Options** > **Environment** > **Extensions**.
 1. Select **Load per user extension when running as administrator**.

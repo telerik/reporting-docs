@@ -36,8 +36,8 @@ In the browser's console (**F12 Developer Tools**) you will see an error related
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
  
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <link href="http://kendo.cdn.telerik.com/2015.3.930/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-    <link href="http://kendo.cdn.telerik.com/2015.3.930/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
+    <link href="https://kendo.cdn.telerik.com/2015.3.930/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
+    <link href="https://kendo.cdn.telerik.com/2015.3.930/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
  
     <!--kendo.all.min.js can be used as well kendo.web.min.js and kendo.mobile.min.js-->
     <script src="/ReportViewer/js/kendo.subset.2015.3.930.min.js"></script>

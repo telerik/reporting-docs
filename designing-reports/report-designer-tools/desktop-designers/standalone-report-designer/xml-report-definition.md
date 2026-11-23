@@ -11,47 +11,49 @@ reportingArea: General
 components: [general]
 ---
 
-# Declarative Report Definition Overview
+# Declarative Report Definition
 
-The Standalone Report Designer supports:
+Declarative report definitions store report and report book definitions in XML or JSON files that the Standalone Report Designer can open and save. The Standalone Report Designer supports the following file formats:
 * `trdx` and `trbp` file formats that contain report and report book definitions serialized in XML.
 * `trdj` file format, which contains a report definition serialized in JSON. The format was introduced in [2026 Q3 (20.2.26.812)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2026-q3-(20-2-26-812)).
 * `trdp` file format, which contains a packed trdx or trdj report definition with images contained in separate files inside the zip archive.
 
-For more information about XML and JSON report definitions, see [Serializing and Deserializing Report Definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) and [Packaging and Unpackaging Report Definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition).
+For more information about XML and JSON report definitions, see [how to serialize report definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml) and [how to package report definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition).
 
 ## Report Definition Versions
 
 A report definition file specifies the Telerik Reporting XML namespace for the version of the report definition schema that is used by the Telerik Reporting XML serializer (Standalone Report Designer) to identify the XML content. The trdj (JSON) report definition uses the same schema version, stored under the `$schema` key at the root of the JSON document, instead of an XML namespace attribute.
 
-## Upgrade Declarative Reports
+## Upgrading Declarative Reports
 
-The Standalone Report Designer can open report container files created for a previous namespace. If the report is changed and saved, the upgraded report definition is converted and saved with the newer schema. This is the only way to upgrade a report definition, but it's not required because the report viewers, the report server, and the [ReportProcessor](/api/Telerik.Reporting.Processing.ReportProcessor) can handle all previous report definition versions. The report definition itself is not upgraded when uploaded to the Report Server.
+The Standalone Report Designer can open report definition files created with a previous namespace. When you change and save the report, the designer converts the report definition and saves it with the newer schema. This is the only way to upgrade a report definition.
 
-The previous statements are valid only for reports authored in Standalone Report Designer. The compiled type reports authored in Visual Studio are upgraded with the Upgrade Wizard. For more information, see [Upgrade Overview](slug:telerikreporting/upgrade/overview).
+Upgrading is not required because report viewers, the Report Server, and the [ReportProcessor](/api/Telerik.Reporting.Processing.ReportProcessor) can handle all previous report definition versions. Uploading a report definition to the Report Server does not upgrade it.
 
-## Identifying the report definition schema version
+These statements apply only to reports authored in the Standalone Report Designer. The Upgrade Wizard upgrades compiled-type reports authored in Visual Studio. For more information, see [Upgrade Overview](slug:telerikreporting/upgrade/overview).
+
+## Identifying the Report Definition Schema Version
 
 The schema version is used by the Standalone Report Designer to identify supported report definitions. The Standalone Report Designer supports the current XML schema version at the time of the designer release and all previous ones.
 
 1. Open the report definition:
 
-	+ For trdx extension: use an application such as Notepad to view the XML.
-	+ For trdj extension: use an application such as Notepad to view the JSON. The schema version is stored under the `$schema` key at the root of the document instead of an XML namespace.
-	+ For trdp and trbp extensions:
+	+ For the `trdx` extension, use an application such as Notepad to view the XML.
+	+ For the `trdj` extension, use an application such as Notepad to view the JSON. The schema version is stored under the `$schema` key at the root of the document.
+	+ For the `trdp` and `trbp` extensions:
 
 		1. Make a backup of the report definition.
 		1. Open the report definition with an archiving program that supports ZIP.
 		1. Right-click the report.
 		1. Select __Open with...__ option.
 		1. Choose a zip manager. For example, the free 7-Zip application.
-		1. Use an application such as Notepad in which you can view the XML or JSON to open the __definition.xml__ or __definition.json__ file, depending on the format the definition was packaged with.
+		1. Use an application such as Notepad to open the `definition.xml` or `definition.json` file, depending on the format used to package the definition.
 
-1. Check the xmlns attribute part of the Report element. It should look like this: `http://schemas.telerik.com/reporting/2017/3.1`. The above xmlns attribute means that this definition was introduced in 2017 R3 SP1. For more information, see [the following section](#xml-schema-versioning).
+1. For XML definitions, check the `xmlns` attribute of the `Report` element. It should look like this: `http://schemas.telerik.com/reporting/2017/3.1`. This `xmlns` value means that the definition was introduced in 2017 R3 SP1. For JSON definitions, check the `$schema` value at the root of the document. For more information, see [XML Schema Versioning](#xml-schema-versioning).
 
 ## XML Schema Versioning
 
-The XML schema versioning before 2017 R3 is incremental. To check when a specific XML schema version is introduced, see the following table:
+XML schema versioning before 2017 R3 is incremental. To check when a specific XML schema version was introduced, see the following table:
 
 | Schema | Introduced in release |
 | ------ | ------ |
@@ -71,11 +73,11 @@ The XML schema versioning before 2017 R3 is incremental. To check when a specifi
 |http://schemas.telerik.com/reporting/2012/4.1|2016 R3|
 |http://schemas.telerik.com/reporting/2012/4.2|2017 R1|
 
-From 2017 R3 on, the version numbering corresponds to the product release it was introduced in. The format is: `http://schemas.telerik.com/reporting/[year]/[release].[sp]`
+Starting with 2017 R3, version numbering corresponds to the product release that introduced the version. The format is `http://schemas.telerik.com/reporting/[year]/[release].[sp]`.
 
-For example, the version introduced in 2017 R3 will look as follows: `http://schemas.telerik.com/reporting/2017/3.0`
+For example, the version introduced in 2017 R3 is `http://schemas.telerik.com/reporting/2017/3.0`.
 
 ## See Also
 
-* [Package Report Definition](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition)
-* [ReportPackager](/api/Telerik.Reporting.ReportPackager)
+* [Packaging report definitions](slug:telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition)
+* [ReportPackager API reference](/api/Telerik.Reporting.ReportPackager)

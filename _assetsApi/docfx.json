@@ -1,22 +1,24 @@
 {
-  "metadata": [
-    {
-      "codeSourceBasePath": "./reporting",
-      "src": [
+    "metadata": [
         {
-          "files": [
-            "Bin/*.dll"
-          ],
-          "exclude": [
-            "Bin/Telerik.Reporting.GraphQL.Client.dll",
-            "Bin/WpfViewerDependencies/Net8/*.dll",
-            "Bin/WpfViewerDependencies/Framework/*.dll",
-            "Bin/WinUIViewerDependencies/Desktop/WinUI60/Telerik.WinUI.Controls.dll"
-          ]
+            "codeSourceBasePath": "./reporting",
+            "src": [
+                {
+                    "files": [
+                        "Bin/*.dll"
+                    ],
+                    "exclude": [
+                        "Bin/Telerik.Reporting.GraphQL.Client.dll",
+                        "Bin/Telerik.OpenAccess.dll",
+                        "Bin/Telerik.OpenAccess.Runtime.dll",
+                        "Bin/WpfViewerDependencies/Net8/*.dll",
+                        "Bin/WpfViewerDependencies/Framework/*.dll",
+                        "Bin/WinUIViewerDependencies/Desktop/WinUI60/Telerik.WinUI.Controls.dll"
+                    ]
+                }
+            ],
+            "dest": "metadata",
+            "filter": "filterConfig.yml"
         }
-      ],
-      "dest": "metadata",
-      "filter": "filterConfig.yml"
-    }
-  ]
+    ]
 }

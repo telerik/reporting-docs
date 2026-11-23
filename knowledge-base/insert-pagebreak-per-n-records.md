@@ -1,6 +1,6 @@
 ---
 title: Insert PageBreak per N Records
-description: "Learn how to insert a new page after N number of records in Telerik Reporting via grouping."
+description: "Learn how to insert page breaks after a fixed number of records in Telerik Reporting by creating a grouping field with SQL ROW_NUMBER."
 type: how-to
 page_title: Start a New Page After N Amount of Rows
 slug: insert-pagebreak-per-n-records
@@ -19,13 +19,15 @@ res_type: kb
 
 ## Description
 
-I want to insert a page break in the report after N amount of records. Currently, my report generates over 800 rows on a single page, but I want to display 100 rows per page. I don't have any applicable grouping field in my dataset, how can I achieve this?
+I want to insert a page break in the report after a fixed number of records. The report generates more than 800 rows on a single page, but I want to display 100 rows per page. The dataset does not contain a suitable grouping field.
 
 ## Solution
 
-The most commonly used data source component in reports is the [`SqlDataSource` component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview). Many databases offer functions for counting the sequential number of a row within a partition of a result set such as the [ROW_NUMBER](https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql) function in `SQL Server`.
+Use the [`SqlDataSource` component](slug:telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview) to query the report data. Many databases provide functions that number rows in a result set, such as the [ROW_NUMBER function](https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql) in `SQL Server`.
 
-The `ROW_NUMBER` function can be used to add a custom field to the result set - `GroupIdx` that is increased for each N number of records that we need to insert a page break after, for example, the following SQL query returns 30 records and the grouping field is increased per 10 records. 
+Use the `ROW_NUMBER` function to add a `GroupIdx` field to the result set. The following query returns 30 records and assigns the same `GroupIdx` value to each group of 10 records. Replace `10` with the desired number of records per group.
+
+This approach inserts an explicit page break after each group. For PDF/image output and printing, automatic page breaks can still split a group that exceeds the usable page area. Adjust the page size, margins, or row heights, and allow space for page headers and footers. See [how physical page size affects pagination](slug:telerikreporting/designing-reports/rendering-and-paging/understanding-pagination).
 
 ````SQL
 SELECT
@@ -40,11 +42,15 @@ WHERE [HumanResources].[vEmployee].[EmployeeID] <= 30
 ORDER BY 1 ASC
 ````
 
-Then, create a [report](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report)/[table](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report) group based on the `GroupIdx` field and set the group's [PageBreak](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After` so that a new page starts after each 10 records.
+For report detail records, create a [report group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report) with the expression `= Fields.GroupIdx`. Set the group footer section's [`PageBreak`](/api/telerik.reporting.reportsection#collapsible-Telerik_Reporting_ReportSection_PageBreak) property to `After`.
+
+For records in a table, create a parent [table row group](slug:telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item) around the details group. Set its grouping expression to `= Fields.GroupIdx` and its [`PageBreak`](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After`.
+
+Table group page breaks are incompatible with repeatable group headers and footers controlled by `TableGroup.PrintOnEveryPage`. If any table group has a `PageBreak` value other than `None`, those group headers and footers are not rendered. This limitation does not apply to table row and column headers controlled by `RowHeadersPrintOnEveryPage` and `ColumnHeadersPrintOnEveryPage`.
 
 ## Additional Resources
 
-Download the sample report from the [reporting-samples repo](https://github.com/telerik/reporting-samples/blob/master/PageBreakPerNRecords.trdx).
+Download the [PageBreakPerNRecords sample report](https://github.com/telerik/reporting-samples/blob/master/PageBreakPerNRecords.trdx).
 
 ## See Also
 

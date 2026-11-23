@@ -3,7 +3,7 @@ title: Using with Report Server for .NET
 page_title: Using HTML5 Report Viewer with Telerik Report Server for .NET
 description: "Learn how to configure and use the Telerik Reporting HTML5 Report Viewer with a Telerik Report Server for .NET instance."
 slug: html5-report-viewer-with-report-server-net
-tags: how,use,html5,report,viewer,report,server,dotnet
+tags: how,use,html5,report,viewer,server,dotnet
 published: True
 reportingArea: HTML5
 components: [html5, general]
@@ -33,7 +33,7 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 
 	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server for .NET instance, along with the port if needed.
 
-	To authenticate against the Report Server for .NET you have the following options:
+	To authenticate against the Report Server for .NET, you have the following options:
 
 	- (**recommended**) The `reportServer.getPersonalAccessToken` option should be set to a function returning the Token of the user who is logging in to the Report Server for .NET wrapped in a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Here is a sample implementation that relies on a dedicated secure endpoint '/rs-token' to return the token:
 
@@ -55,6 +55,34 @@ Follow the steps below to set up your HTML5 Report Viewer to work with the Teler
 	{{source=CodeSnippets\Blazor\Docs\JavaScript\Html5ReportViewerCustomTemplate.js region=Html5ViewerRSNetInit}}
 
 1. Run the project, and you should see the report configured in the previous step appearing in the Report Viewer.
+
+## How Personal Token Authentication Works
+
+Providing `reportServer.getPersonalAccessToken` does not eliminate the authentication request to Report Server for .NET. The viewer uses the following sequence:
+
+1. The viewer calls `getPersonalAccessToken`. The callback returns a Promise that resolves to the user's personal access token string. Your application can obtain that token from its own secured endpoint, such as `/rs-token` in the example.
+2. The viewer sends the returned token as a JSON string in a `POST` request to `{reportServer.url}/PersonalToken`.
+3. Report Server for .NET validates the personal token and returns short-lived access and refresh tokens for the session.
+4. The viewer uses the returned access token for authenticated report requests under `{reportServer.url}/api/reports`, including client registration and report rendering.
+
+The application's token-supply endpoint and Report Server's `/PersonalToken` endpoint serve different purposes. The callback supplies the personal token. The viewer then exchanges it with Report Server for session tokens. You do not need to create a replacement `/PersonalToken` endpoint in your application.
+
+Set `reportServer.url` to the Report Server application's base URL, without appending `/api/reports/`. The latter is the default Reporting REST Service endpoint. The viewer constructs both the authentication and report-service URLs from that base. Correcting the base URL changes the request addresses, but does not remove the expected `POST /PersonalToken` request.
+
+> caution Do not log personal access tokens, returned session tokens, or authorization headers in browser consoles, application logs, or support attachments. Keep the application endpoint that supplies the personal token secured.
+
+## Troubleshoot PersonalToken Requests
+
+The presence of a `/PersonalToken` request is not an error by itself. Inspect the browser's Network panel for the request method, destination, status, and response. Opening the URL in the address bar sends a `GET` request and does not test the viewer's `POST` authentication flow.
+
+| Observation | What to check |
+| --- | --- |
+| The callback fails before the token exchange | Verify that your secured application endpoint succeeds and that the callback returns a Promise resolving to the personal token string, not the entire service-response object. Do not log the token value. |
+| The request targets `/api/reports/PersonalToken` | Check that `reportServer.url` contains the Report Server application base URL, not the Reporting REST service path. |
+| `POST /PersonalToken` returns `404` | Confirm that the destination is the intended Report Server for .NET instance. Check the installed server and viewer versions, application base path, and any reverse-proxy routing. Do not diagnose a missing endpoint from the URL alone. |
+| `POST /PersonalToken` returns `401` | Check token validity and expiration, and confirm that both the token and its user account are enabled. Report Server validates these before issuing session tokens. |
+| The browser reports a transport or cross-origin failure | Investigate the specific browser error and the deployed connection configuration. The request URL alone does not identify the cause. |
+
 
 ## See Also
 

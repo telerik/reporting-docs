@@ -34,6 +34,8 @@ After upgrading Telerik Reporting and opening an existing report (created with 
 A possible reason for this problem is that your project uses "*stale*" assemblies from the previous Telerik Reporting version, which do not match the new DLL versions. In other words, the assemblies from the older missing version are still in your project's ***bin*** folder, and these assemblies do not comply with the new ones, leading to the error above.   
    
 ## Solution
+
+Before you troubleshoot assembly references, verify that your project targets .NET Framework 4.6.2 or later. Starting with Telerik Reporting 2024 Q2, all Telerik Reporting assets for .NET Framework, including distributed assemblies, NuGet packages, and the Standalone Report Designer, require this target. Retarget projects that use an earlier version, such as .NET Framework 4.5.2, to .NET Framework 4.6.2 or later. The [2024 Q2 release notes](slug:telerikreporting/upgrade/2024/2024-q2-18-1-24-709) also list the Standalone Report Designer as targeting .NET Framework 4.6.2.
  
  * Go through the [Upgrade Wizard](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard) 
  * Delete the project's `bin` and `obj` folders as described below:

@@ -1,0 +1,78 @@
+name: Check article slugs
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Never check out PR code in this job. The base-branch workflow owns the gate.
+  verify-permissions:
+    if: ${{ github.repository_owner == 'telerik' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      allowed: ${{ steps.permissions.outputs.result }}
+    steps:
+      - name: Verify repository write access
+        id: permissions
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        env:
+          TRIGGERING_ACTOR: ${{ github.triggering_actor }}
+        with:
+          script: |
+            const author = context.payload.pull_request?.user?.login;
+            if (context.eventName === 'pull_request_target' && !author) {
+              throw new Error('The pull request author is missing.');
+            }
+            const users = new Set([
+              author,
+              context.actor,
+              process.env.TRIGGERING_ACTOR,
+            ].filter(Boolean));
+            for (const username of users) {
+              let response;
+              try {
+                response = await github.rest.repos.getCollaboratorPermissionLevel({
+                  ...context.repo,
+                  username,
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+                core.notice(`${username} has no qualifying repository access; slug checks will be skipped.`);
+                return false;
+              }
+              // GitHub maps Maintain to write and custom roles to their base permission.
+              if (!['write', 'admin'].includes(response.data.permission)) {
+                core.notice(`${username} requires Write, Maintain, or Admin access; slug checks will be skipped.`);
+                return false;
+              }
+            }
+            return true;
+
+  check-slugs:
+    needs: verify-permissions
+    if: ${{ needs.verify-permissions.outputs.allowed == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Test validator
+        run: bash .github/scripts/test_check_slugs.sh
+
+      - name: Validate all article slugs and links
+        run: bash .github/scripts/check_slugs.sh --output slugs.json
+
+      - name: Upload slug inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: article-slugs
+          path: slugs.json
+          if-no-files-found: error

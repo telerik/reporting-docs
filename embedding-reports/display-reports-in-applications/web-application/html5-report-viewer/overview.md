@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: HTML5 Report Viewer at a Glance
-description: "HTML5 Report Viewer is an HTML5/JavaScript/CSS3 jQuery-based widget that displays Telerik reports in an HTML page."
+description: "Learn how the HTML5 Report Viewer displays reports, handles parameters and document maps, supports page modes, and integrates with web applications."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview
 tags: overview
 published: True
@@ -59,39 +59,39 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 			<th>Purpose</th>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path></svg></td>
 			<td>Navigates Backward</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path></svg></td>
 			<td>Navigates Forward</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path></svg></td>
 			<td>Stops Report Rendering</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M480 288c0 123.7-100.3 224-224 224S32 411.7 32 288 132.3 64 256 64V0l160 96-160 96v-64c-88.2 0-160 71.8-160 160s71.8 160 160 160 160-71.8 160-160c0-29.1-7.8-56.4-21.5-80l55.5-32c19.1 32.9 30 71.2 30 112z"></path></svg></td>
 			<td>Refreshes the Report Viewer</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M256 256 512 96v320L256 256zm0 160V96L0 256l256 160z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M256 256 512 96v320L256 256zm0 160V96L0 256l256 160z"></path></svg></td>
 			<td>Returns the Report to the first page</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="m160 256 192-128v256z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="m160 256 192-128v256z"></path></svg></td>
 			<td>Goes to the previous page</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M352 256 160 384V128z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M352 256 160 384V128z"></path></svg></td>
 			<td>Goes to the next page</td>
 		</tr>
 		<tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M0 416V96l256 160L0 416zm512-160L256 96v320l256-160z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M0 416V96l256 160L0 416zm512-160L256 96v320l256-160z"></path></svg></td>
 			<td>Navigates to the last page of the report</td>
 		</tr>
         <tr>
-			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M288 224H96v-64h192v64zm192 210.7L434.7 480 320 365.3v-22.7l-26.7-26.7C265.7 338.5 230.4 352 192 352c-88.4 0-160-71.6-160-160S103.6 32 192 32s160 71.6 160 160c0 38.4-13.5 73.7-36.1 101.3l26.7 26.7h22.7L480 434.7zM192 320c70.7 0 128-57.3 128-128S262.7 64 192 64 64 121.3 64 192s57.3 128 128 128z"></path></svg></td>
+			<td><svg aria-hidden="true" style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="M288 224H96v-64h192v64zm192 210.7L434.7 480 320 365.3v-22.7l-26.7-26.7C265.7 338.5 230.4 352 192 352c-88.4 0-160-71.6-160-160S103.6 32 192 32s160 71.6 160 160c0 38.4-13.5 73.7-36.1 101.3l26.7 26.7h22.7L480 434.7zM192 320c70.7 0 128-57.3 128-128S262.7 64 192 64 64 121.3 64 192s57.3 128 128 128z"></path></svg></td>
 			<td>Zooms in the Report</td>
 		</tr>
         <tr>
@@ -128,20 +128,20 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 		</tr>
 		<tr>
 			<td><svg style="height: 35px; padding: 5px; display: block; margin: auto;" viewBox="0 0 512 512"><path d="m320 32 54.3 137.7L512 224l-137.7 54.3L320 416l-54.3-137.7L128 224l137.7-54.3zM94 350 0 384l94 34 34 94 34-94 94-34-94-34-34-94zM70.6 70.6 0 96l70.5 25.5L96 192l25.5-70.5L192 96l-70.5-25.5L96 0 70.5 70.5Z"></path></svg></td>
-			<td>Toggles the AI Prompt Dialog when the <a href="slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights" target="_blank"> AI-Powered Insights</a> functionality has been enabled.</td>
+			<td>Toggles the AI Prompt Dialog when the <a href="slug:telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights">AI-Powered Insights</a> functionality has been enabled.</td>
 		</tr>
 	</table>
 
 ## Parameters Area
 
-The Parameters Area provides an intuitive UI for user interactions. The HTML5-based Report Viewers use [Kendo UI widgets](https://www.telerik.com/kendo-ui) for parameter editors out-of-the-box. Based on the type of the report parameter, a suitable editor UI is created.
+The Parameters Area lets users enter or select report parameter values. The HTML5 Report Viewer uses [Kendo UI widgets](https://www.telerik.com/kendo-ui) for parameter editors. Based on the type of the report parameter, the viewer creates a suitable editor UI.
 
 List of the default widgets for different report parameters' types:
 
 - DateTime: [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview). Even though the time part cannot be selected via the Kendo UI DatePicker widget UI it is still passed to the report engine as a default time part (12:00:00 AM) with the `DateTime` value. If needed, the viewer can be [customized](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview) to use a [Kendo UI DateTimePicker](https://demos.telerik.com/kendo-ui/datetimepicker/index) or another widget which allows selecting the time part explicitly. When a `DateTime` value is selected in the parameters area of the HTML5 Report Viewer it is interpreted as UTC `DateTime` on the server where the report is processed and rendered. For example, entering 1/1/2000 12:00:00 AM in a DateTimePicker report parameter widget and rendering the report will result in the following `DateTime` value on the server and in the rendered report - 1/1/2000 12:00:00 AM considered as a UTC time.
-- Integer | Float | String: [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview). The default editor could be easily changed to [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) (for single select parameters) and [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) (for multi-select parameters) editors. For more information, check **parameters** option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) article.
+- Integer | Float | String: [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview). The default editor can be changed to [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) for single-select parameters or [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) for multi-select parameters.
 
-When one or more [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have their `Visible` property turned on, a parameter area is shown as part of the report viewer. This helps the report developer to easily provide input methods for the end users. Based on the type of parameters, a suitable editor UI is created. The parameter layout on the parameter area is formatted automatically. The order is determined by the order in which parameters appear in the [ReportParameters collection editor](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor). The end user can enter or select values in the editors.
+When one or more [report parameters](slug:telerikreporting/designing-reports/connecting-to-data/report-parameters/overview) have their `Visible` property turned on, a parameter area is shown as part of the report viewer. The parameter layout is formatted automatically. The order is determined by the order in which parameters appear in the [ReportParameter Collection Editor](slug:telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor). The end user can enter or select values in the editors.
 
 When one or more visible report parameters have the `AutoRefresh` property turned off a **Preview** button appears. In this case, to preview the report, the end user can click the **Preview** button. If all parameters have default values, the report runs automatically on the first view. You can show or hide the parameters area from the **Parameters** button in the report viewer’s toolbar.
 
@@ -149,17 +149,17 @@ When one or more visible report parameters have the `AutoRefresh` property turne
 
 The document map pane provides a set of navigational links to report items in a rendered report. When you view a report that has a document map, a separate side pane appears next to the report preview area. A user can click a link in the document map to jump to the HTML report page that displays the corresponding item. Report sections and groups are arranged in the hierarchy of links. Clicking items in the document map refreshes the report preview and displays the area of the report that corresponds to the item in the document map.
 
-To add links to the document map, you set the **DocumentMapText** property of the report item to text that you create or to an expression that evaluates to the text that you want to be displayed in the document map.
+To add links to the document map, set the **DocumentMapText** property of the report item to text that you create or to an expression that evaluates to the text that you want to display in the document map.
 
 ## Report Page Modes
 
-The [page modes](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) are **Continuous scrolling** and **Single page**. The Single page mode renders only one page in the viewport. This mode does not burden the browser with many DOM objects, actions, or event listeners, but limits the report data that the user can read.
+The page modes are **Continuous scrolling** and **Single page**. The Single page mode renders only one page in the viewport. This mode does not burden the browser with many DOM objects, actions, or event listeners, but limits the report data that the user can read.
 
-The Continuous scroll mode gives the user the ability to read all HTML report pages at once. When the report is ready, in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down. If the user navigates to the 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport, before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part, will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.
+Continuous scrolling lets users read all HTML report pages in one view. When the report is ready, the viewer renders enough pages to fill the visible area. The viewer loads each adjacent page on demand as the user scrolls. For example, if the user navigates to the fifth page, the DOM tree contains the pages visible in the viewport before and after the target page, along with their actions and event listeners. The viewer does not load other pages until the user scrolls to them; skeleton pages mark their place until the actual pages are loaded.
 
-Continuous scroll mode is the default page mode. To change the page mode, check **pageMode** option in [Report Viewer Initialization](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview) article.
+Continuous scrolling is the default page mode. To change the page mode, check the **pageMode** option in the Report Viewer initialization options.
 
-## How does the HTML5 Report Viewer work?
+## HTML5 Report Viewer Architecture
 
 The HTML5 Report Viewer is a composite of [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) widgets, whose setup consists of three files:
 
@@ -171,13 +171,15 @@ The viewer can be styled and customized with standard JavaScript, CSS, and custo
 
 The purpose of the HTML5 Report Viewer is to display Telerik Reports and allow the user to interact with them. Reports are processed and rendered on the server where **Telerik Reporting engine** and **Reporting REST service** run. Reports and their resources are handled and delivered to the viewer through the [Reporting REST service](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview).
 
-The HTML5 Report Viewer's content is rendered in **DIV** elements. The HTML report in the viewer is rendered through the HTML rendering mechanism based on the [Design Considerations for HTML Rendering](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations).
+The HTML5 Report Viewer's content is rendered in `<div>` elements. The HTML report in the viewer is rendered through the HTML rendering mechanism based on the [Design Considerations for HTML Rendering](slug:telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations).
 
-## How to display the HTML5 Report Viewer in Web Applications
+## Displaying the HTML5 Report Viewer in Web Applications
+
+The following video demonstrates how to set up the HTML5 Report Viewer with an external Telerik Reporting REST service in an ASP.NET Core web application.
 
 <div style="position: relative; width: 80%; height: 500px;">
     <iframe src="https://www.youtube.com/embed/GeCUGTgZziI" 
-            title="Setting up Telerik Html5 Report Viewer with an external Telerik Reporting REST Service in .NET" frameborder="0" allowfullscreen
+            title="Setting up Telerik HTML5 Report Viewer with an external Telerik Reporting REST Service in .NET" frameborder="0" allowfullscreen
             allow="accelerometer; autoplay; picture-in-picture" 
             style="position: absolute; width: 100%; height: 100%;">
     </iframe>
@@ -189,4 +191,4 @@ The HTML5 Report Viewer's content is rendered in **DIV** elements. The HTML repo
 - [How to Use HTML5 Report Viewer with REST Service](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service)
 - [How to Use HTML5 Report Viewer with Report Server](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server)
 - [Manual Setup](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup)
-- [How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application)
+- [Using the HTML5 Report Viewer in an ASP.NET Core application](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application)

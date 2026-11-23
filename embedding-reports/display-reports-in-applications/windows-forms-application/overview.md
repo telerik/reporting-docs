@@ -75,7 +75,7 @@ To process and render the report, use any of the following locations:
 
 On high-DPI displays, a DPI-unaware Windows Forms application can appear blurry because Windows bitmap-scales it. A system-aware application can also appear blurry if it moves to a display with a different DPI than the display where it started.
 
-Configure DPI awareness based on the target framework of the Windows Forms application that hosts the viewer. For modern .NET, use the `ApplicationHighDpiMode` project property or `Application.SetHighDpiMode`. For .NET Framework 4.7 and later, use the `DpiAwareness` setting in `app.config`. For earlier .NET Framework targets, configure DPI awareness in the application manifest. See [Windows Forms Report Viewer scaling issues on higher DPI](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/windows-forms-report-viewer-scaling-issues-on-higher-dpi) for the configuration examples and limitations.
+Configure DPI awareness based on the target framework of the Windows Forms application that hosts the viewer. For modern .NET, use the `ApplicationHighDpiMode` project property or `Application.SetHighDpiMode`. For .NET Framework 4.7 and later, use the `DpiAwareness` setting in `app.config`. For earlier .NET Framework targets, configure DPI awareness in the application manifest. See [Windows Forms Report Viewer scaling issues on higher DPI](slug:windows-forms-report-viewer-scaling-issues-on-higher-dpi) for the configuration examples and limitations.
 
 * .NET Framework: declare a DPI-aware application by adding a `dpiAware` element to its application manifest:
 

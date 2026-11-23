@@ -53,7 +53,7 @@ You can also configure the following service behaviors:
 
 	>note To regenerate a report for the Refresh Report functionality, set `"useCache": false` in the JSON request body sent to the [Resolve Document](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document) endpoint.
 
-* If you share the service with more than one app, enable [Cross-Origin Resource Sharing](https://fetch.spec.whatwg.org/).
+* If a browser-based client is hosted on a different origin from the service, enable [Cross-Origin Resource Sharing (CORS)](https://fetch.spec.whatwg.org/) for the client's origin.
 * The service executes report generation requests in a task queue. Configure the number of reports rendered at the same time in the [REST service configuration](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element).
 * To host two or more report services in one application, assign a unique `HostAppId` property to each controller. This creates a dedicated task queue for each service instance. Set the worker count for each queue to avoid system overload.
 

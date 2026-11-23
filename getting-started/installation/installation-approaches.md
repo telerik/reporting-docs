@@ -19,10 +19,10 @@ Telerik Reporting supports three installation approaches: the [Control Panel](#u
 
 Use this table to choose the approach that fits your workflow:
 
-| Approach                                  | Best For                                                                                                     | Design-Time Support |
-| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------ |
-| [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                | Yes                 |
-| [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer. | Yes                 |
+| Approach                                  | Best For                                                                                                                                                          | Design-Time Support |
+| :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ |
+| [Control Panel](#using-the-control-panel) | Evaluating the product or managing multiple Telerik products on your machine.                                                                                     | Yes                 |
+| [MSI installer](#using-the-msi-file)      | Full local installation with Visual Studio integration, sample projects, and the Standalone Report Designer.                                                      | Yes                 |
 | [NuGet packages](#using-nuget-packages)   | Adding current Telerik Reporting packages to an existing project or automating installation in a continuous integration and continuous delivery (CI/CD) pipeline. | No                  |
 
 ## Using the Control Panel
@@ -80,11 +80,8 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 You can add Telerik Reporting to a project by installing NuGet packages from [NuGet.org](https://www.nuget.org/) or the Telerik NuGet server at `https://nuget.telerik.com/v3/index.json`. The packages contain the libraries for .NET Core projects, the Reporting Engine, and the [Reporting Representational State Transfer (REST) service based on ASP.NET Web API (Application Programming Interface)](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview).
 
-<<<<<<< HEAD
 For current Telerik Reporting releases, use [NuGet.org](https://www.nuget.org/), which Visual Studio and the .NET CLI use by default. Use the Telerik NuGet server for older releases or when your organization requires the private feed.
 
-=======
->>>>>>> b66ea3f0 (Improve installation article clarity)
 >note The Telerik Reporting NuGet packages do not include design-time support. If you need the Visual Studio Report Designer or the Standalone Report Designer, use the [MSI installer](#using-the-msi-file) instead.
 
 Use one of the following installation paths for NuGet packages:

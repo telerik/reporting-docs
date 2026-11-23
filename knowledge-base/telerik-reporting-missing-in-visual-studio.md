@@ -1,6 +1,6 @@
 ---
 title: Telerik Reporting Missing in Visual Studio
-description: This article shows how to add the Telerik Reporting items to Visual Studio if they are missing
+description: Learn how to restore missing Telerik Reporting items in Visual Studio by enabling extensions or reinstalling the Visual Studio templates.
 type: how-to
 page_title: Telerik Reporting Missing in Visual Studio
 slug: telerik-reporting-missing-in-visual-studio
@@ -11,50 +11,51 @@ res_type: kb
 
 ## Environment
 
-<table>
-	<tbody>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-		</tr>
-	</tbody>
-</table>
+| Environment | Details |
+|---|---|
+| Product | Progress® Telerik® Reporting |
 
 ## Description
 
-Sometimes you are unable to add any Telerik Reporting items in Visual Studio. This article provides steps on how to solve this issue.
+You cannot add Telerik Reporting items in Visual Studio when the required extensions are unavailable or the Visual Studio templates are not installed correctly. Use the solutions in this article to restore the items.
 
-## Cause\Possible Cause(s)
+## Possible Cause
 
-A possible reason for the issue can be that the **Telerik Reporting** and/or **Telerik.CommonPackage** extensions might be disabled or they are not installed.
+The **Telerik Reporting** or **Telerik.CommonPackage** extension might be disabled or missing.
 
-## Solutions
+## Solution
 
-You may experience the issue if you are running Visual Studio as an administrator, and the extension is installed by another user. In this case:
+If you run Visual Studio as an administrator and another user installed the extension, enable the per-user extension setting:
 
-Go to the menu `Tools`-> `Options` -> `Environment` -> `Extensions` / `Extensions and Updates`, and check **Load per user extension when running as administrator**.
+Open **Tools** > **Options** > **Environment** > **Extensions** or **Extensions and Updates**, and select **Load per user extension when running as administrator**.
 
 ## Visual Studio 2022/2026
 
-Occasionally, Visual Studio 2022/2026 tends to fail to install properly the templates deployed in its `\Common7\IDE` folders. This is due to a specific Visual Studio service that fails to stop while the Telerik Reporting installer installs its project/item templates. As a result, the templates cache is never being refreshed and the new templates are not accessible in Visual Studio.
+Visual Studio 2022/2026 can fail to install the templates in its `\Common7\IDE` folders. A Visual Studio service can remain active while the Telerik Reporting installer deploys the project and item templates. The template cache then is not refreshed, and the templates are unavailable in Visual Studio.
 
-There are two solutions:
+Use one of the following solutions:
 
-1. Uninstall the current Telerik Reporting installation. Restart your machine. Install Telerik Reporting again.
-1. Using the Developer Command Prompt for Visual Studio 2022/2026 (started as Administrator), type `devenv.exe /installvstemplates`. This should force Visual Studio to install the templates and invalidate the templates' cache.
-1. Follow this path:
-   * For Visual Studio 2022: `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2022`
-   * For Visual Studio 2026: `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2026`
-1. Run the `Telerik.Reporting.VsX.vsix` file. It should install all necessary extensions.
+1. Uninstall the current Telerik Reporting installation, restart the computer, and install Telerik Reporting again.
+2. Open the Developer Command Prompt for Visual Studio 2022/2026 as an administrator, and run `devenv.exe /installvstemplates`. This forces Visual Studio to install the templates and refresh the template cache.
+3. Navigate to the folder for your Visual Studio version:
+   * Visual Studio 2022: `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2022`
+   * Visual Studio 2026: `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2026`
+
+   Run the `Telerik.Reporting.VsX.vsix` file to install the required extensions.
 
 ## Visual Studio 2019
 
-Navigate to **Extensions** -> **Manage Extensions**. Under **Installed**,  find the aforementioned extensions and mark them as **Enabled**. 
+Navigate to **Extensions** > **Manage Extensions**. Under **Installed**, find the **Telerik Reporting** and **Telerik.CommonPackage** extensions, and mark them as **Enabled**.
 
-If there aren't any Telerik extensions, locate the `Telerik.Reporting.VsX.vsix` under `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2019` and run it. It should install all necessary extensions.
+If no Telerik extensions appear, locate `Telerik.Reporting.VsX.vsix` in `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2019`, and run it to install the required extensions.
 
 ## Visual Studio 2017 and 2015
 
-Navigating to **Tools** -> **Extensions and Updates**. Under **Installed**,  find the aforementioned extensions and mark them as **Enabled**.
+Navigate to **Tools** > **Extensions and Updates**. Under **Installed**, find the **Telerik Reporting** and **Telerik.CommonPackage** extensions, and mark them as **Enabled**.
 
-If there aren't any Telerik extensions, locate the `Telerik.Reporting.VsX.vsix` under ` %programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2017 ( or 2015)` and run it. It should install all necessary extensions.
+If no Telerik extensions appear, locate `Telerik.Reporting.VsX.vsix` in the folder for your Visual Studio version:
+
+* Visual Studio 2017: `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2017`
+* Visual Studio 2015: `%programfiles(x86)%\Progress\Telerik Reporting [Version]\Bin\VS2015`
+
+Run the file to install the required extensions.

@@ -31,9 +31,9 @@ Use the current [Telerik.Reporting NuGet package](https://www.nuget.org/packages
 
    Use the following command in the Package Manager Console:
 
-   ````powershell
+   ```powershell
    Install-Package Telerik.Licensing
-   ````
+   ```
 
 1. Clean and rebuild the solution. Perform a clean build so the project resolves all dependencies.
 1. Test the application. Run the application and verify that report pages no longer contain a licensing watermark and that the build and runtime logs contain no licensing warnings.
@@ -46,7 +46,7 @@ If the startup project references only other projects that contain the reporting
 
 .NET Framework applications may need a binding redirect when they request an earlier `Telerik.Licensing.Runtime` version than the installed assembly. In that case, add or update the redirect in the startup project's `App.config` or `Web.config`. Place the following `<runtime>` element inside `<configuration>`, or merge the `<dependentAssembly>` entry into the existing `<runtime>/<assemblyBinding>` section. Replace both `X.Y.Z.0` placeholders with the installed assembly version:
 
-````xml
+```xml
   <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
       <dependentAssembly>
@@ -55,7 +55,7 @@ If the startup project references only other projects that contain the reporting
       </dependentAssembly>
     </assemblyBinding>
   </runtime>
-````
+```
 
 If the issue persists, review the [Telerik Reporting license activation errors and warnings]({%slug license-errors-and-warnings%}) and [runtime licensing troubleshooting guidance]({%slug license-troubleshoot%}).
 

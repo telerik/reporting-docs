@@ -44,7 +44,9 @@ The following list explains how the DPI awareness is respected in applications t
 
 ### Windows Forms Report Viewer
 
-The Windows Forms applications are __not__ DPI-aware by default. The recommended approach for declaring an application as DPI-aware is adding a `dpiAware` element to its application manifest, as shown in the article [Windows Forms Application Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware).
+Configure DPI awareness in the Windows Forms application that hosts the viewer, using the option for its target framework. Modern .NET Windows Forms templates default to `SystemAware` and support configuration through the `ApplicationHighDpiMode` project property or `Application.SetHighDpiMode`. .NET Framework applications use the framework-specific configuration described in [Windows Forms Application Overview](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview#declaring-the-application-as-dpi-aware).
+
+The `<dpiAware>` report-engine setting calls `SetProcessDpiAwareness`, which can set process DPI awareness only once. Apply it before another startup setting establishes the process DPI mode. For Windows Forms applications, prefer the target-framework-specific startup configuration.
 
 ### WPF Report Viewer
 

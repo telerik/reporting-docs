@@ -73,15 +73,17 @@ To process and render the report, use any of the following locations:
 
 ## Declaring the Application as DPI-Aware
 
-When using Windows Forms Report Viewer on a machine with the Windows Vista (and later) operating system, and with a DPI scale factor higher than 96, the form content (labels, buttons, rendered report image, and so on) may render fuzzy, pixelated, or other types of visual artifacts. The reason for this behavior is that the application in which you are using the Windows Forms Report Viewer is not declared as DPI-aware.
+On high-DPI displays, a DPI-unaware Windows Forms application can appear blurry because Windows bitmap-scales it. A system-aware application can also appear blurry if it moves to a display with a different DPI than the display where it started.
 
-It is recommended that you declare a DPI-aware application by adding a `dpiAware` element to its application manifest:
+Configure DPI awareness based on the target framework of the Windows Forms application that hosts the viewer. For modern .NET, use the `ApplicationHighDpiMode` project property or `Application.SetHighDpiMode`. For .NET Framework 4.7 and later, use the `DpiAwareness` setting in `app.config`. For earlier .NET Framework targets, configure DPI awareness in the application manifest. See [Windows Forms Report Viewer scaling issues on higher DPI](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/windows-forms-report-viewer-scaling-issues-on-higher-dpi) for the configuration examples and limitations.
 
-{{source=CodeSnippets\MvcCS\XmlConfiguration\WindowsFormsDpiAwareConfiguration.xml region=WindowsFormsDpiAwareConfiguration}}
-For .NET applications, you need to ensure Windows 10 compatibility in the manifest file, as elaborated in the Microsoft article [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms):
+* .NET Framework: declare a DPI-aware application by adding a `dpiAware` element to its application manifest:
 
-{{source=CodeSnippets\MvcCS\XmlConfiguration\WindowsFormsCompatibilityConfiguration.xml region=WindowsFormsCompatibilityConfiguration}}
-As of Windows 10 Anniversary Update, the Windows runtime has improved the UX for Windows Forms applications that are not DPI-aware. However, this behavior may lead to incorrect calculations of the interactive item positions and it is recommended that you always declare the Windows Forms application as DPI-aware. For more information about DPI-aware desktop applications, refer to the [High DPI Desktop Application Development on Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows) MSDN article.
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\WindowsFormsDpiAwareConfiguration.xml region=WindowsFormsDpiAwareConfiguration}}
+
+* .NET: Ensure Windows 10 compatibility in the manifest file, as elaborated in the Microsoft article [High DPI support in Windows Forms](https://learn.microsoft.com/en-us/dotnet/desktop/winforms/high-dpi-support-in-windows-forms):
+
+	{{source=CodeSnippets\MvcCS\XmlConfiguration\WindowsFormsCompatibilityConfiguration.xml region=WindowsFormsCompatibilityConfiguration}}
 
 ## Keyboard Shortcuts
 

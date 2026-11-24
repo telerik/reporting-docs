@@ -69,7 +69,7 @@ The PDF device information settings may be provided also per report in the repor
 
 ## Notes
 
-`UriReportSource` accepts TRDX, TRDJ, TRDP, and TRBP report definition files. The documented built-in report converters do not include RDLC, RPT, or other non-Telerik report formats. Convert or recreate the report as a supported Telerik report before you use this example.
+`UriReportSource` accepts TRDX, TRDJ, TRDP, and TRBP report definition files, not RDLC or RPT files directly. The [built-in report converters](slug:telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview) support Crystal Reports, ActiveReports, and XtraReports, but do not include RDLC. Convert supported third-party reports or recreate RDLC reports as Telerik report definitions before you use this example.
 
 To add accessibility tags to an existing PDF document, use RadPdfProcessing as a separate workflow. See <a href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radpdfprocessing/features/accessibility-support/create-accessible-pdf-documents" target="_blank" rel="noopener">Creating Accessible PDF Documents with RadPdfProcessing</a>.
 

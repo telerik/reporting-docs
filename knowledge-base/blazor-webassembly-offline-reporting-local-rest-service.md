@@ -1,8 +1,8 @@
 ---
-title: Running Blazor WebAssembly Reports Offline with a Local REST Service
-description: Run a separate ASP.NET Core Reporting REST Service on the same device to generate Telerik reports offline from a Blazor WebAssembly application.
+title: Running Blazor Wrapper Viewer Offline with a Local REST Service
+description: "Learn how to run a separate ASP.NET Core Reporting REST Service on the same device to generate Telerik reports offline from a Blazor WebAssembly application using the Blazor Wrapper viewer."
 type: how-to
-page_title: Running Telerik Reporting Offline with a Local REST Service
+page_title: Running Blazor Wrapper Offline with a Local REST Service
 slug: blazor-webassembly-offline-reporting-local-rest-service
 tags: blazor, webassembly, wasm, offline, rest-service, report-generation
 ticketid:
@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-To generate reports offline in a Blazor WebAssembly application, run a separate ASP.NET Core Reporting REST Service on the same device. The WASM client cannot host the Reporting engine or REST Service in the browser.
+To generate reports offline in a Blazor WebAssembly application using the [Blazor Wrapper](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) report viewer, run a separate ASP.NET Core Reporting REST Service on the same device. The WASM client cannot host the Reporting engine or REST Service in the browser.
 
 ## Solution
 
@@ -36,7 +36,7 @@ This article assumes an already configured Blazor Report Viewer, including the `
 
 This example uses the Minimal API hosting pattern. Do not combine it with the controller-based REST Service setup. Configure the service to listen on a local HTTPS endpoint and set the CORS origin to the exact origin that serves the WASM client. This example serves the client from `https://localhost:5002` and the REST Service from `https://localhost:5001`.
 
-```csharp .skip-repl
+```C#
 using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -75,7 +75,7 @@ Publish the service for the target device and configure your deployment to start
 
 Set the viewer's `ServiceUrl` to the local service endpoint. A relative URL such as `/api/reports` points to the origin that serves the client. It does not start a service on the device.
 
-```razor .skip-repl
+```Razor
 @using Telerik.ReportViewer.Blazor
 
 <style>

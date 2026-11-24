@@ -1,7 +1,7 @@
 ---
 title: Generating Accessible PDF Reports
 page_title: Generating Accessible PDF Reports with Telerik Reporting
-description: Learn how to generate accessible PDF/UA files from Telerik report sources.
+description: Learn how to export accessible PDF documents with Telerik Reporting using ReportProcessor, PDF device settings, and report descriptions.
 type: how-to
 slug: kb-generating-accessible-pdf-reports
 tags: accessibility, pdf, pdfua, export

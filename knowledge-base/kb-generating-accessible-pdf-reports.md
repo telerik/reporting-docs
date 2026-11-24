@@ -22,7 +22,7 @@ Generate a PDF/UA document from a Telerik report source by setting the PDF devic
 
 Use a supported Telerik report definition, such as a TRDP file, as the input to `ReportProcessor.RenderReport`. Set `EnableAccessibility` in the device information table, then save the returned PDF bytes.
 
-The following example assumes that `C:\Reports\MyReport.trdp` exists:
+The following example assumes that `C:\Reports\MyReport.trdp` exists within the application's base directory. Default report-path validation rejects report definitions outside that directory.
 
 ```csharp
 using System;

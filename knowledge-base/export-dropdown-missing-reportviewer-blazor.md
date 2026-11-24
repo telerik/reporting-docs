@@ -31,7 +31,7 @@ The export dropdown options in the Blazor Report Viewers do not populate after u
 
 ## Cause
 
-The issue occurs because SignalR has a default maximum message size of **32 KB**, while the [Get Document Info](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info) request may exceed that size due to all the information about the export settings that it may contain.
+The document information returned by [Get Document Info](slug:telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info) can include export settings. In server-side Blazor, an incoming SignalR message carrying this data may exceed the default maximum receive message size of **32 KB**, disconnecting the circuit.
 
 ## Error Message
 

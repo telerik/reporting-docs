@@ -60,7 +60,9 @@ internal static class Program
 }
 ```
 
-The code creates `C:\Reports\AccessibleReport.pdf`. The `EnableAccessibility` PDF setting creates output according to the PDF/UA specification.
+The code creates `C:\Reports\AccessibleReport.pdf` with PDF accessibility tags enabled. This setting alone does not ensure that the report content is accessible.
+
+In the report definition, provide meaningful `AccessibleDescription` values for `PictureBox`, `Graph`, and `Map` items. Set appropriate `DocumentTitle` and `DocumentNaturalLanguage` values in the device information table. Alternatively, ensure that the report's `DocumentName` and `Culture` properties provide appropriate fallback values.
 
 ## Notes
 

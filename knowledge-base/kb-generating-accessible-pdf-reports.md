@@ -63,7 +63,9 @@ internal static class Program
 
 The code creates `C:\Reports\AccessibleReport.pdf` with PDF accessibility tags enabled. This setting alone does not ensure that the report content is accessible.
 
-In the report definition, provide meaningful `AccessibleDescription` values for `PictureBox`, `Graph`, and `Map` items. Set appropriate `DocumentTitle` and `DocumentNaturalLanguage` values in the device information table. Alternatively, ensure that the report's `DocumentName` and `Culture` properties provide appropriate fallback values.
+In the report definition, provide meaningful `AccessibleDescription` values for `PictureBox`, `Graph`, and `Map` items. Set appropriate `DocumentTitle` and `DocumentNaturalLanguage` values in the device information table. Alternatively, ensure that the report's `DocumentName` and `Culture` properties provide appropriate fallback values. Setting `WriteDefaultAccessibleDescription` to `false` (the default is `true`) in the device information forces the Reporting Engine to skip the default descriptions and rely on those provided by the report creator in the report definition. If necessary, you may exclude items from the accessibility tree: [Excluding Report Items from PDF and HTML5 Accessibility Trees](slug:telerikreporting/designing-reports/exclude-report-items-from-accessibility-tree).
+
+The PDF device information settings may be provided also per report in the report definition through the `ReportEngineSettings` [Report property](slug:report_item_properties_settings#rendering-and-processing).
 
 ## Notes
 

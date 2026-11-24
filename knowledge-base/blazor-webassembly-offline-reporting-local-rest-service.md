@@ -23,6 +23,8 @@ To generate reports offline in a Blazor WebAssembly application, run a separate 
 
 This setup uses a local REST Service for report generation and a Blazor WebAssembly client for display. It assumes the client application, report definitions, and data sources are available on the device without Internet access.
 
+This article assumes an already configured Blazor Report Viewer, including the `Telerik.ReportViewer.Blazor` NuGet package and its required JavaScript and CSS assets. Before you continue, follow the [Blazor Report Viewer client setup instructions](slug:telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer). Make all viewer assets available locally instead of using CDN URLs so the client works without Internet access.
+
 ### Prepare the Applications
 
 1. Make the Blazor WebAssembly application files available on the device when Internet access is unavailable. This article does not cover how to package or cache those files.

@@ -45,6 +45,7 @@ internal static class Program
 
         var deviceInfo = new Hashtable();
         deviceInfo["EnableAccessibility"] = true;
+        deviceInfo["WriteDefaultAccessibleDescription"] = false;
 
         var reportProcessor = new ReportProcessor();
         var result = reportProcessor.RenderReport("PDF", reportSource, deviceInfo);

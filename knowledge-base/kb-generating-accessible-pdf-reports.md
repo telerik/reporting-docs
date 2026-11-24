@@ -1,7 +1,7 @@
 ---
 title: Generating Accessible PDF Reports
 page_title: Generating Accessible PDF Reports with Telerik Reporting
-description: Learn how to generate accessible PDF/UA files from Telerik report sources and understand why raw RDLC files are not direct inputs.
+description: Learn how to generate accessible PDF/UA files from Telerik report sources.
 type: how-to
 slug: kb-generating-accessible-pdf-reports
 tags: accessibility, pdf, pdfua, export
@@ -10,9 +10,9 @@ published: True
 
 ## Environment
 
-| Version | Product | Author | 
-| ---- | ---- | ---- | 
-| 20.3.26.1110 | Telerik Reporting |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
+| Product | Author | 
+| ---- | ---- | 
+| Telerik Reporting |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 
@@ -66,12 +66,12 @@ In the report definition, provide meaningful `AccessibleDescription` values for 
 
 ## Notes
 
-`UriReportSource` accepts TRDX, TRDJ, TRDP, and TRBP report definition files. The documented built-in report converters do not include RDLC. Convert or recreate the report as a supported Telerik report before you use this example.
+`UriReportSource` accepts TRDX, TRDJ, TRDP, and TRBP report definition files. The documented built-in report converters do not include RDLC, RPT, or other non-Telerik report formats. Convert or recreate the report as a supported Telerik report before you use this example.
 
 To add accessibility tags to an existing PDF document, use RadPdfProcessing as a separate workflow. See <a href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radpdfprocessing/features/accessibility-support/create-accessible-pdf-documents" target="_blank" rel="noopener">Creating Accessible PDF Documents with RadPdfProcessing</a>.
 
 ## See Also
 
-* [PDF device information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%})
-* [Generating reports locally with code]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
-* [Report sources overview]({%slug telerikreporting/designing-reports/report-sources/overview%})
+* [PDF device information settings](slug:telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings)
+* [Generating reports locally with code](slug:telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)
+* [Report sources overview](slug:telerikreporting/designing-reports/report-sources/overview)

@@ -58,9 +58,9 @@ builder.Services.AddRazorPages()
 
 var app = builder.Build();
 
-app.UseTelerikReporting();
 app.UseRouting();
 app.UseCors("WasmClient");
+app.UseTelerikReporting();
 
 app.Run("https://localhost:5001");
 ```

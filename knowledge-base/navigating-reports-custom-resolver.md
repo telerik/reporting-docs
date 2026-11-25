@@ -81,6 +81,23 @@ To adapt your custom ReportSource resolver for the changes:
 	- If `base.ResolveReport(report)` returns `null`, the hash-to-URI mapping is not available in the Reporting REST Service Storage.
 	- Ensure that the `reportsPath` received by the UriReportSourceResolver constructor, when concatenated with the `reportSource.report` passed from the viewer, or from the NavigateToReport action, matches the expected path to your reports.
 
+1. **Resolve Reports from UNC Paths**:
+
+	- When report definitions are stored on a UNC (network) path and `validateReportPaths` is enabled, add the UNC report root to the `externalReportPaths` collection in the Reporting configuration.
+	- The `externalReportPaths` collection is used only when `validateReportPaths` is enabled. To allow all external paths instead, set `validateReportPaths` to `false`. Keeping path validation enabled and allowing only the required report roots is the recommended configuration.
+
+	```xml
+	<Telerik.Reporting>
+		<processing validateReportPaths="true">
+			<externalReportPaths>
+				<add value="\\server\reports" />
+			</externalReportPaths>
+		</processing>
+	</Telerik.Reporting>
+	```
+
+	- The configured path must be the UNC root that contains the report files. The application must also have access to the network share.
+
 ## See Also
 
 - [Telerik Reporting Documentation](slug:telerikreporting/welcome-to-telerik-reporting!)

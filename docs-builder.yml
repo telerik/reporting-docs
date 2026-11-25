@@ -753,3 +753,394 @@ redirects:
   - from: "^/(e-|f-|events-t-|fields-t-|methods-t-|properties-t-|constructors-t-|t-|m-|p-|overload-|ctor-)telerik-.*"
     to: "/api/"
     type: Permanent
+
+  # Folder landing redirects (REP-3660)
+  # Each folder URL without its own page redirects to the first visible article in the folder, in navigation order.
+  # Update these entries when you add, move, rename, or reorder folders. The "Check Folder Landings" workflow reports uncovered folders.
+  - from: "^/getting-started$"
+    to: "/getting-started/about-telerik-reporting"
+    type: Permanent
+  - from: "^/getting-started/web-designer$"
+    to: "/getting-started/web-designer/set-up-and-create-basic-report"
+    type: Permanent
+  - from: "^/getting-started/installation$"
+    to: "/getting-started/installation/prerequisites"
+    type: Permanent
+  - from: "^/ai-coding-assistant$"
+    to: "/ai-coding-assistant/overview"
+    type: Permanent
+  - from: "^/wrd-user-guide$"
+    to: "/wrd-user-guide/user-guide-overview"
+    type: Permanent
+  - from: "^/wrd-user-guide/data-scope$"
+    to: "/wrd-user-guide/data-scope/data-binding-context"
+    type: Permanent
+  - from: "^/wrd-user-guide/components$"
+    to: "/wrd-user-guide/components/components"
+    type: Permanent
+  - from: "^/wrd-user-guide/components/subreport-item$"
+    to: "/wrd-user-guide/components/subreport-item/overview"
+    type: Permanent
+  - from: "^/wrd-user-guide/customizing-report-items$"
+    to: "/wrd-user-guide/customizing-report-items/customizing-report-items-overview"
+    type: Permanent
+  - from: "^/ide-integration$"
+    to: "/ide-integration/integration-with-visual-studio"
+    type: Permanent
+  - from: "^/security$"
+    to: "/security/security-overview"
+    type: Permanent
+  - from: "^/report-items$"
+    to: "/report-items/overview"
+    type: Permanent
+  - from: "^/report-items/barcode$"
+    to: "/report-items/barcode/overview"
+    type: Permanent
+  - from: "^/report-items/barcode/1d-barcodes$"
+    to: "/report-items/barcode/1d-barcodes/1d-overview"
+    type: Permanent
+  - from: "^/report-items/barcode/2d-barcodes$"
+    to: "/report-items/barcode/2d-barcodes/2d-overview"
+    type: Permanent
+  - from: "^/report-items/gauge$"
+    to: "/report-items/gauge/overview"
+    type: Permanent
+  - from: "^/report-items/graph$"
+    to: "/report-items/graph/overview"
+    type: Permanent
+  - from: "^/report-items/graph/chart-types$"
+    to: "/report-items/graph/chart-types/overview"
+    type: Permanent
+  - from: "^/report-items/graph/formatting-a-graph$"
+    to: "/report-items/graph/formatting-a-graph/style-resolving-fallback-algorithm"
+    type: Permanent
+  - from: "^/report-items/htmltextbox$"
+    to: "/report-items/htmltextbox/overview"
+    type: Permanent
+  - from: "^/report-items/map$"
+    to: "/report-items/map/overview"
+    type: Permanent
+  - from: "^/report-items/map/structure$"
+    to: "/report-items/map/structure/overview"
+    type: Permanent
+  - from: "^/report-items/map/formatting-a-map$"
+    to: "/report-items/map/formatting-a-map/legend"
+    type: Permanent
+  - from: "^/report-items/report-item$"
+    to: "/report-items/report-item/overview"
+    type: Permanent
+  - from: "^/report-items/table-crosstab-list$"
+    to: "/report-items/table-crosstab-list/overview"
+    type: Permanent
+  - from: "^/designing-reports$"
+    to: "/designing-reports/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools$"
+    to: "/designing-reports/report-designer-tools/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/vscode$"
+    to: "/designing-reports/report-designer-tools/vscode/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/web-report-designer$"
+    to: "/designing-reports/report-designer-tools/web-report-designer/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/web-report-designer/tools$"
+    to: "/designing-reports/report-designer-tools/web-report-designer/tools/query-builder-in-the-web-designer"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/tools$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards$"
+    to: "/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data$"
+    to: "/designing-reports/connecting-to-data/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components$"
+    to: "/designing-reports/connecting-to-data/data-source-components/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/sqldatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers$"
+    to: "/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-npgsql-data-provider"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/csvdatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/objectdatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/entitycoredatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/entitycoredatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/entitydatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/cubedatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component$"
+    to: "/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-items$"
+    to: "/designing-reports/connecting-to-data/data-items/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-items/filtering-data$"
+    to: "/designing-reports/connecting-to-data/data-items/filtering-data/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-items/ordering-data$"
+    to: "/designing-reports/connecting-to-data/data-items/ordering-data/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/data-items/grouping-data$"
+    to: "/designing-reports/connecting-to-data/data-items/grouping-data/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/expressions$"
+    to: "/designing-reports/connecting-to-data/expressions/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/expressions/using-expressions$"
+    to: "/designing-reports/connecting-to-data/expressions/using-expressions/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/expressions/expressions-reference$"
+    to: "/designing-reports/connecting-to-data/expressions/expressions-reference/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/expressions/expressions-reference/functions$"
+    to: "/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/expressions/extending-expressions$"
+    to: "/designing-reports/connecting-to-data/expressions/extending-expressions/overview"
+    type: Permanent
+  - from: "^/designing-reports/connecting-to-data/report-parameters$"
+    to: "/designing-reports/connecting-to-data/report-parameters/overview"
+    type: Permanent
+  - from: "^/designing-reports/report-book$"
+    to: "/designing-reports/report-book/overview"
+    type: Permanent
+  - from: "^/designing-reports/json-report-definitions$"
+    to: "/designing-reports/json-report-definitions/json-schema"
+    type: Permanent
+  - from: "^/embedding-reports$"
+    to: "/embedding-reports/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely$"
+    to: "/embedding-reports/host-the-report-engine-remotely/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/asp\\.net-web-api-implementation$"
+    to: "/embedding-reports/host-the-report-engine-remotely/asp.net-web-api-implementation/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/asp\\.net-core-web-api-implementation$"
+    to: "/embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-service-storage$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-service-storage/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/overview"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/clients-api$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/clients-api/register-client"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api/get-report-parameters"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-instances-api$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-instances-api/resolve-report-instance"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api/resolve-document"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api/get-available-document-formats"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities/aithread"
+    type: Permanent
+  - from: "^/embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api$"
+    to: "/embedding-reports/host-the-report-engine-remotely/rest-api-reference/features-api/create-ai-thread"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications$"
+    to: "/embedding-reports/display-reports-in-applications/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/web-report-viewers-export-options"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing/localization"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/passing-parameter-values"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/angular-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing/how-to-pass-values-to-report-parameters"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/react-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing/custom-report-viewer-template"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-asp\\.net-mvc-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-asp\\.net-mvc-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-asp\\.net-web-forms-report-viewer$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/html5-asp\\.net-web-forms-report-viewer/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder$"
+    to: "/embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder/styling-html5-based-report-viewers"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/windows-forms-application$"
+    to: "/embedding-reports/display-reports-in-applications/windows-forms-application/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/wpf-application$"
+    to: "/embedding-reports/display-reports-in-applications/wpf-application/overview"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/wpf-application/customizing$"
+    to: "/embedding-reports/display-reports-in-applications/wpf-application/customizing/how-to-use-rounded-corners"
+    type: Permanent
+  - from: "^/embedding-reports/display-reports-in-applications/winui-3-desktop-application$"
+    to: "/embedding-reports/display-reports-in-applications/winui-3-desktop-application/overview"
+    type: Permanent
+  - from: "^/embedding-reports/cache-management$"
+    to: "/embedding-reports/cache-management/overview"
+    type: Permanent
+  - from: "^/embedding-reports/program-the-report-definition$"
+    to: "/embedding-reports/program-the-report-definition/overview"
+    type: Permanent
+  - from: "^/embedding-reports/program-the-report-definition/report-events$"
+    to: "/embedding-reports/program-the-report-definition/report-events/overview"
+    type: Permanent
+  - from: "^/importing-reports$"
+    to: "/importing-reports/overview"
+    type: Permanent
+  - from: "^/styling/styling-reports$"
+    to: "/styling/styling-reports/using-styles-to-customize-reports"
+    type: Permanent
+  - from: "^/styling/rendering-and-paging$"
+    to: "/styling/rendering-and-paging/overview"
+    type: Permanent
+  - from: "^/styling/rendering-and-paging/design-considerations-for-report-rendering$"
+    to: "/styling/rendering-and-paging/design-considerations-for-report-rendering/overview"
+    type: Permanent
+  - from: "^/interactivity$"
+    to: "/interactivity/ai-powered-insights-overview"
+    type: Permanent
+  - from: "^/interactivity/actions$"
+    to: "/interactivity/actions/overview"
+    type: Permanent
+  - from: "^/interactivity/actions/sorting-action$"
+    to: "/interactivity/actions/sorting-action/overview"
+    type: Permanent
+  - from: "^/interactivity/table-of-contents$"
+    to: "/interactivity/table-of-contents/overview"
+    type: Permanent
+  - from: "^/globalization$"
+    to: "/globalization/overview"
+    type: Permanent
+  - from: "^/doc-output$"
+    to: "/doc-output/export-formats"
+    type: Permanent
+  - from: "^/doc-output/configure-the-report-engine$"
+    to: "/doc-output/configure-the-report-engine/overview"
+    type: Permanent
+  - from: "^/doc-output/configure-the-export-formats$"
+    to: "/doc-output/configure-the-export-formats/overview"
+    type: Permanent
+  - from: "^/upgrade$"
+    to: "/upgrade/overview"
+    type: Permanent
+  - from: "^/upgrade/2013$"
+    to: "/upgrade/2013/q3-2013"
+    type: Permanent
+  - from: "^/upgrade/2014$"
+    to: "/upgrade/2014/q1-2014"
+    type: Permanent
+  - from: "^/upgrade/2015$"
+    to: "/upgrade/2015/q1-2015"
+    type: Permanent
+  - from: "^/upgrade/2016$"
+    to: "/upgrade/2016/q1-2016"
+    type: Permanent
+  - from: "^/upgrade/2017$"
+    to: "/upgrade/2017/r1-2017"
+    type: Permanent
+  - from: "^/upgrade/2018$"
+    to: "/upgrade/2018/r1-2018"
+    type: Permanent
+  - from: "^/upgrade/2019$"
+    to: "/upgrade/2019/r1-2019"
+    type: Permanent
+  - from: "^/upgrade/2020$"
+    to: "/upgrade/2020/r1-2020"
+    type: Permanent
+  - from: "^/upgrade/2021$"
+    to: "/upgrade/2021/r1-2021"
+    type: Permanent
+  - from: "^/upgrade/2022$"
+    to: "/upgrade/2022/r1-2022"
+    type: Permanent
+  - from: "^/upgrade/2023$"
+    to: "/upgrade/2023/r1-2023"
+    type: Permanent
+  - from: "^/upgrade/2024$"
+    to: "/upgrade/2024/2024-q1"
+    type: Permanent
+  - from: "^/upgrade/2025$"
+    to: "/upgrade/2025/2025-q1-19-0-25-212"
+    type: Permanent
+  - from: "^/upgrade/2026$"
+    to: "/upgrade/2026/2026-q1-20-0-26-211"
+    type: Permanent
